@@ -1,114 +1,154 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ClinicNote by Najm AI</title>
+<title>ClinicNote by Najm AI - OPD Notes, Structured in Seconds</title>
 <style>
-:root{--primary:#0a6e6e;--primary-light:#0d8a8a;--primary-dark:#075252;--primary-bg:#e8f5f5;--gray-50:#f9fafb;--gray-100:#f3f4f6;--gray-200:#e5e7eb;--gray-300:#d1d5db;--gray-400:#9ca3af;--gray-500:#6b7280;--gray-600:#4b5563;--gray-700:#374151;--gray-800:#1f2937;--gray-900:#111827;--amber:#f59e0b;--amber-bg:#fffbeb;--amber-border:#fcd34d;--red:#dc2626;--red-bg:#fef2f2;--red-border:#fca5a5;--radius:8px;--shadow:0 1px 3px rgba(0,0,0,0.1),0 1px 2px rgba(0,0,0,0.06);--shadow-md:0 4px 6px rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.06);--shadow-lg:0 10px 15px rgba(0,0,0,0.1),0 4px 6px rgba(0,0,0,0.05);--font-sans:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;--font-mono:'SF Mono','Fira Code','Cascadia Code',Consolas,monospace}
+:root{--primary:#0d7a7a;--primary-light:#109494;--primary-dark:#095b5b;--primary-bg:#e6f4f4;--primary-glow:rgba(13,122,122,0.12);--bg:#f6f8fa;--white:#fff;--gray-50:#f9fafb;--gray-100:#f0f2f5;--gray-200:#e2e5ea;--gray-300:#c5c9d0;--gray-400:#8e95a0;--gray-500:#636b78;--gray-600:#4a5260;--gray-700:#323946;--gray-800:#1d232f;--gray-900:#0f131d;--amber:#d97706;--amber-bg:#fffbeb;--amber-border:#fbbf24;--red:#dc2626;--red-bg:#fef2f2;--red-border:#fca5a5;--green:#16a34a;--radius:10px;--radius-lg:14px;--radius-xl:20px;--shadow:0 1px 3px rgba(0,0,0,0.07),0 1px 2px rgba(0,0,0,0.04);--shadow-md:0 4px 12px rgba(0,0,0,0.07);--shadow-lg:0 10px 30px rgba(0,0,0,0.08);--font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;--font-mono:'SF Mono','Fira Code','Cascadia Code',Consolas,monospace;--max-w:1120px}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:var(--font-sans);color:var(--gray-800);background:var(--gray-50);line-height:1.6}
+body{font-family:var(--font);color:var(--gray-800);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
 a{color:var(--primary);text-decoration:none}
 a:hover{color:var(--primary-light)}
-.safety-banner{background:var(--red-bg);border-bottom:2px solid var(--red-border);color:var(--red);text-align:center;padding:8px 16px;font-size:13px;font-weight:500;line-height:1.4}
-nav{background:white;border-bottom:1px solid var(--gray-200);position:sticky;top:0;z-index:100}
-.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:60px}
-.nav-logo{display:flex;align-items:center;gap:8px;font-weight:700;font-size:18px;color:var(--gray-900);cursor:pointer}
-.nav-logo span{color:var(--primary)}
-.nav-links{display:flex;align-items:center;gap:4px}
-.nav-links a{padding:6px 12px;border-radius:var(--radius);font-size:14px;font-weight:500;color:var(--gray-600);cursor:pointer;transition:all .15s}
+.safety-banner{background:var(--red-bg);border-bottom:2px solid var(--red-border);color:var(--red);text-align:center;padding:10px 16px;font-size:12px;font-weight:500;line-height:1.4;letter-spacing:0.01em}
+nav{background:rgba(255,255,255,0.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--gray-200);position:sticky;top:0;z-index:100}
+.nav-inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:62px}
+.nav-logo{display:flex;align-items:center;gap:8px;font-weight:700;font-size:17px;color:var(--gray-900);cursor:pointer;white-space:nowrap}
+.nav-logo .star{color:var(--primary);font-size:20px}
+.nav-logo .sub{font-weight:400;color:var(--gray-400);font-size:13px}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{padding:6px 12px;border-radius:8px;font-size:13px;font-weight:500;color:var(--gray-600);cursor:pointer;transition:all .15s;white-space:nowrap}
 .nav-links a:hover{background:var(--primary-bg);color:var(--primary)}
 .nav-links a.active{background:var(--primary);color:white}
-.nav-cta{background:var(--primary);color:white!important;padding:8px 18px!important;border-radius:999px!important;font-weight:600}
+.nav-cta{background:var(--primary);color:white!important;padding:7px 18px!important;border-radius:999px!important;font-weight:600!important;font-size:13px!important}
 .nav-cta:hover{background:var(--primary-light)!important}
-.container{max-width:1200px;margin:0 auto;padding:0 20px}
-.page{display:none}
+.nav-toggle{display:none;background:none;border:none;padding:8px;cursor:pointer;color:var(--gray-600);font-size:24px;line-height:1}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 24px}
+.page{display:none;animation:fadeIn .25s ease}
 .page.active{display:block}
-.hero{text-align:center;padding:80px 20px 60px;background:linear-gradient(180deg,#fff 0%,var(--primary-bg) 100%)}
-.hero h1{font-size:44px;font-weight:800;color:var(--gray-900);max-width:700px;margin:0 auto 16px;line-height:1.2}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.hero{text-align:center;padding:80px 20px 60px}
+.hero h1{font-size:44px;font-weight:800;color:var(--gray-900);max-width:720px;margin:0 auto 14px;line-height:1.15;letter-spacing:-0.02em}
 .hero h1 span{color:var(--primary)}
-.hero p{font-size:18px;color:var(--gray-500);max-width:600px;margin:0 auto 32px}
-.hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border-radius:var(--radius);font-weight:600;font-size:15px;cursor:pointer;border:none;transition:all .15s}
+.hero p{font-size:17px;color:var(--gray-500);max-width:560px;margin:0 auto 28px;line-height:1.6}
+.hero-ctas{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border-radius:var(--radius);font-weight:600;font-size:14px;cursor:pointer;border:none;transition:all .15s;font-family:inherit}
 .btn-primary{background:var(--primary);color:#fff}
-.btn-primary:hover{background:var(--primary-light)}
+.btn-primary:hover{background:var(--primary-light);box-shadow:var(--shadow-md)}
 .btn-outline{background:#fff;color:var(--primary);border:2px solid var(--primary)}
 .btn-outline:hover{background:var(--primary-bg)}
-.btn-sm{padding:6px 14px;font-size:13px}
-.section{padding:60px 0}
-.section-title{font-size:28px;font-weight:700;text-align:center;margin-bottom:8px;color:var(--gray-900)}
-.section-sub{text-align:center;color:var(--gray-500);margin-bottom:40px;font-size:16px}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
-.card{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:24px;transition:box-shadow .15s,transform .15s}
-.card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
-.card h3{font-size:18px;margin-bottom:8px;color:var(--gray-900)}
-.card p{font-size:14px;color:var(--gray-500);line-height:1.5}
+.btn-ghost{background:transparent;color:var(--gray-600);border:1px solid var(--gray-200)}
+.btn-ghost:hover{background:var(--gray-50);border-color:var(--gray-300)}
+.btn-sm{padding:6px 14px;font-size:12px;border-radius:8px}
+.btn-xs{padding:4px 10px;font-size:11px;border-radius:6px}
+.section{padding:56px 0}
+.section-title{font-size:28px;font-weight:700;text-align:center;margin-bottom:6px;color:var(--gray-900);letter-spacing:-0.01em}
+.section-sub{text-align:center;color:var(--gray-500);margin-bottom:36px;font-size:15px;max-width:600px;margin-left:auto;margin-right:auto}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:24px;transition:box-shadow .2s,transform .2s;cursor:default}
+.card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.card h3{font-size:17px;margin-bottom:6px;color:var(--gray-900)}
+.card p{font-size:13px;color:var(--gray-500);line-height:1.5}
 .card-icon{width:44px;height:44px;border-radius:10px;background:var(--primary-bg);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px;color:var(--primary)}
-.steps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
-.step-card{text-align:center;padding:28px 16px}
+.trust-strip{background:#fff;border-top:1px solid var(--gray-200);border-bottom:1px solid var(--gray-200);padding:28px 24px}
+.trust-grid{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.trust-item{text-align:center}
+.trust-item .icon{font-size:22px;margin-bottom:6px}
+.trust-item .label{font-size:12px;font-weight:600;color:var(--gray-700)}
+.trust-item .desc{font-size:11px;color:var(--gray-400);margin-top:2px}
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.step-card{text-align:center;padding:28px 12px;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg)}
 .step-num{width:40px;height:40px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;margin:0 auto 12px}
-.product-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
-.product-item{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:20px;text-align:center}
-.product-item.launched{border-color:var(--primary);background:var(--primary-bg)}
-.product-item h4{font-size:16px;margin-bottom:4px}
-.product-item p{font-size:13px;color:var(--gray-500)}
-.product-item .badge{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;margin-top:6px}
-.badge-live{background:var(--primary);color:#fff}
-.badge-future{background:var(--gray-200);color:var(--gray-600)}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
-@media(max-width:768px){.two-col{grid-template-columns:1fr}.nav-links{display:none}.hero h1{font-size:32px}}
-.form-group{margin-bottom:16px}
-.form-group label{display:block;font-size:13px;font-weight:600;color:var(--gray-700);margin-bottom:4px}
-.form-group select,.form-group input,.form-group textarea{width:100%;padding:8px 12px;border:1px solid var(--gray-300);border-radius:var(--radius);font-size:14px;font-family:inherit;background:#fff;transition:border-color .15s}
-.form-group select:focus,.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(10,110,110,0.1)}
-textarea.code{font-family:var(--font-mono);font-size:13px;min-height:100px;resize:vertical}
-.output-box{background:var(--gray-900);color:#e2e8f0;font-family:var(--font-mono);font-size:13px;padding:16px;border-radius:var(--radius);min-height:200px;max-height:600px;overflow-y:auto;white-space:pre-wrap;word-wrap:break-word;line-height:1.5}
-.output-box .placeholder{color:var(--gray-500);font-family:var(--font-sans);font-style:italic}
-.output-actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-.prompts-box{background:var(--amber-bg);border:1px solid var(--amber-border);border-radius:var(--radius);padding:14px;font-size:13px;color:var(--gray-700)}
-.prompts-box h4{font-size:13px;margin-bottom:6px;color:var(--gray-800)}
-.prompts-box ul{padding-left:18px}
-.prompts-box li{margin-bottom:2px}
-.about-section,.safety-section{max-width:800px;margin:0 auto}
-.about-section h2,.safety-section h2{font-size:28px;font-weight:700;margin-bottom:20px;color:var(--gray-900)}
-.about-section h3,.safety-section h3{font-size:20px;font-weight:600;margin:28px 0 12px;color:var(--gray-800)}
-.about-section p,.safety-section p{font-size:15px;color:var(--gray-600);margin-bottom:12px;line-height:1.7}
-.list-check,.list-cross{list-style:none;padding:0;margin:12px 0}
-.list-check li,.list-cross li{padding:6px 0 6px 28px;position:relative;font-size:14px;color:var(--gray-700)}
+.input-col .form-group{margin-bottom:14px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-size:12px;font-weight:600;color:var(--gray-700);margin-bottom:3px}
+.form-group select,.form-group input,.form-group textarea{width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;background:#fff;transition:border-color .15s,box-shadow .15s;color:var(--gray-800)}
+.form-group select:focus,.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
+textarea.code{font-family:var(--font-mono);font-size:12px;min-height:80px;resize:vertical}
+.phi-warning{display:none;background:var(--red-bg);border:1px solid var(--red-border);color:var(--red);padding:8px 12px;border-radius:8px;font-size:12px;font-weight:500;margin-bottom:10px}
+.phi-warning.show{display:block}
+.note-phi-warn{background:var(--amber-bg);border:1px solid var(--amber-border);color:var(--gray-700);padding:8px 12px;border-radius:8px;font-size:11px;font-weight:500;margin-bottom:8px;line-height:1.4}
+.output-card{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden}
+.output-header{display:flex;align-items:center;gap:4px;padding:8px 14px;border-bottom:1px solid var(--gray-200);background:var(--gray-50);flex-wrap:wrap}
+.output-tab{padding:5px 10px;border-radius:6px;font-size:11px;font-weight:600;color:var(--gray-500);cursor:pointer;border:none;background:none;font-family:inherit;transition:all .15s}
+.output-tab:hover{background:var(--gray-200);color:var(--gray-700)}
+.output-tab.active{background:var(--primary);color:#fff}
+.output-body{background:var(--gray-900);color:#e2e8f0;font-family:var(--font-mono);font-size:12px;padding:16px;min-height:280px;max-height:500px;overflow-y:auto;white-space:pre-wrap;word-wrap:break-word;line-height:1.6}
+.output-body .placeholder{color:var(--gray-500);font-family:var(--font);font-style:italic;font-size:13px}
+.output-footer{padding:8px 14px;border-top:1px solid var(--gray-200);font-size:10px;color:var(--gray-400);text-align:center;background:var(--gray-50)}
+.output-actions{display:flex;gap:6px;padding:8px 14px;border-top:1px solid var(--gray-200);flex-wrap:wrap}
+.prompts-box{background:var(--amber-bg);border:1px solid var(--amber-border);border-radius:var(--radius);padding:12px 14px;font-size:12px;color:var(--gray-700);display:none}
+.prompts-box h4{font-size:12px;margin-bottom:4px;color:var(--gray-800)}
+.prompts-box ul{padding-left:16px}
+.prompts-box li{margin-bottom:1px;font-size:12px}
+.gen-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.content-page{max-width:720px;margin:0 auto}
+.content-page h2{font-size:26px;font-weight:700;margin-bottom:16px;color:var(--gray-900)}
+.content-page h3{font-size:18px;font-weight:600;margin:28px 0 10px;color:var(--gray-800)}
+.content-page p{font-size:14px;color:var(--gray-600);margin-bottom:10px;line-height:1.7}
+.content-page ul{list-style:none;padding:0;margin:10px 0}
+.content-page li{padding:5px 0 5px 24px;position:relative;font-size:13px;color:var(--gray-700)}
 .list-check li::before{content:"\2713";position:absolute;left:0;color:var(--primary);font-weight:700}
 .list-cross li::before{content:"\2717";position:absolute;left:0;color:var(--red);font-weight:700}
-.amber-box{background:var(--amber-bg);border:1px solid var(--amber-border);border-radius:var(--radius);padding:20px;margin:16px 0;font-size:14px;color:var(--gray-700);line-height:1.6}
+.rules-list li{padding:8px 0 8px 26px;border-bottom:1px solid var(--gray-100);font-size:13px}
+.rules-list li::before{content:"!";position:absolute;left:0;color:var(--red);font-weight:700;font-size:15px}
+.amber-box{background:var(--amber-bg);border:1px solid var(--amber-border);border-radius:var(--radius);padding:16px 18px;margin:14px 0;font-size:13px;color:var(--gray-700);line-height:1.6}
 .amber-box strong{color:var(--gray-900)}
-.rules-list{list-style:none;padding:0}
-.rules-list li{padding:10px 0 10px 28px;position:relative;font-size:14px;color:var(--gray-700);border-bottom:1px solid var(--gray-100)}
-.rules-list li::before{content:"!";position:absolute;left:0;color:var(--red);font-weight:700;font-size:16px}
-footer{background:var(--gray-900);color:var(--gray-400);padding:32px 20px;text-align:center;font-size:13px;margin-top:60px}
-footer a{color:var(--gray-300)}
+.presets-spec{margin-bottom:32px}
+.presets-spec h2{font-size:21px;font-weight:700;margin-bottom:12px;color:var(--gray-900)}
+.presets-card{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px}
+.presets-card h3{font-size:15px;margin-bottom:6px;color:var(--primary)}
+.presets-card ul{padding-left:16px;margin:0}
+.presets-card li{font-size:12px;color:var(--gray-600);margin-bottom:1px}
+.product-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.product-item{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius);padding:18px 14px;text-align:center}
+.product-item.launched{border-color:var(--primary);background:var(--primary-bg)}
+.product-item h4{font-size:15px;margin-bottom:3px}
+.product-item p{font-size:12px;color:var(--gray-500)}
+.badge{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:999px;margin-top:5px}
+.badge-live{background:var(--primary);color:#fff}
+.badge-future{background:var(--gray-200);color:var(--gray-600)}
+.status-bar{display:flex;gap:6px;align-items:center;font-size:11px;color:var(--gray-500)}
+.status-dot{width:7px;height:7px;border-radius:50%;background:#22c55e;display:inline-block}
+.page-header{padding:32px 0 20px}
+.page-header h2{font-size:26px;font-weight:700;color:var(--gray-900)}
+.page-header p{color:var(--gray-500);font-size:14px;margin-top:2px}
+footer{background:var(--gray-900);color:var(--gray-400);padding:28px 24px;text-align:center;font-size:12px;margin-top:48px}
+footer a{color:var(--gray-300);cursor:pointer}
 footer a:hover{color:#fff}
-footer .footer-links{display:flex;justify-content:center;gap:20px;margin-bottom:12px}
-.status-bar{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--gray-500);margin-top:8px}
-.status-dot{width:8px;height:8px;border-radius:50%;background:#22c55e}
-.page-header{padding:40px 0 24px}
-.page-header h2{font-size:28px;font-weight:700;color:var(--gray-900)}
-.page-header p{color:var(--gray-500);font-size:15px;margin-top:4px}
+footer .footer-links{display:flex;justify-content:center;gap:20px;margin-bottom:10px;flex-wrap:wrap}
+footer .footer-links a{font-weight:500}
+@media(max-width:900px){.two-col{grid-template-columns:1fr}.steps-grid{grid-template-columns:repeat(2,1fr);gap:12px}.trust-grid{grid-template-columns:repeat(2,1fr);gap:12px}.hero h1{font-size:32px}.hero{padding:56px 16px 40px}.section{padding:40px 0}.page-header{padding:24px 0 16px}}
+@media(max-width:640px){.nav-links{display:none;position:absolute;top:62px;left:0;right:0;background:rgba(255,255,255,0.98);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--gray-200);flex-direction:column;padding:8px 16px 16px;gap:4px}.nav-links.open{display:flex}.nav-links a{padding:10px 14px;width:100%}.nav-links a.nav-cta{text-align:center}.nav-toggle{display:block}.hero h1{font-size:26px}.hero p{font-size:14px}.card-grid{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr;gap:10px}.trust-grid{grid-template-columns:repeat(2,1fr);gap:10px}.container{padding:0 14px}.section-title{font-size:22px}.section-sub{font-size:13px}.output-body{min-height:200px;font-size:11px}.presets-card{padding:12px}}
 </style>
 </head>
-<body><div class="safety-banner">Do not enter patient names, IDs, or contact information. ClinicNote by Najm AI does not store or transmit any data.</div><nav>
+<body><div class="safety-banner">Do not enter patient names, IDs, or contact information. ClinicNote by Najm AI does not store or transmit any data.</div>
+
+<nav>
 <div class="nav-inner">
-<div class="nav-logo" onclick="showPage('home')">&#11088; <span>Najm AI</span> (ClinicNote)</div>
+<div class="nav-logo" data-nav="home">
+<span class="star">&#11088;</span> Najm AI <span class="sub">(ClinicNote)</span>
+</div>
+<button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
 <div class="nav-links" id="navLinks">
-<a data-page="home" class="active" onclick="showPage('home')">Home</a>
-<a data-page="opd" data-nav="opd">OPD Builder</a>
-<a data-page="referral" onclick="showPage('referral')">Referral</a>
-<a data-page="instructions" onclick="showPage('instructions')">Instructions</a>
-<a data-page="presets" data-nav="presets">Presets</a>
-<a data-page="about" onclick="showPage('about')">About</a>
-<a data-page="safety" onclick="showPage('safety')">Safety</a>
+<a data-page="home">Home</a>
+<a data-page="opd">OPD Builder</a>
+<a data-page="referral">Referral</a>
+<a data-page="instructions">Instructions</a>
+<a data-page="presets">Presets</a>
+<a data-page="about">About</a>
+<a data-page="safety">Safety</a>
 <a class="nav-cta" data-nav="opd">Try ClinicNote</a>
 </div>
 </div>
-</nav><div class="container"><div id="page-home" class="page active">
+</nav>
+
+<div class="container">
+
+<div id="page-home" class="page active">
 
 <section class="hero">
 <h1>OPD notes, structured <span>in seconds.</span></h1>
@@ -119,27 +159,36 @@ footer .footer-links{display:flex;justify-content:center;gap:20px;margin-bottom:
 </div>
 </section>
 
-<section class="section">
-<h2 class="section-title">Specialty Presets</h2>
-<p class="section-sub">Choose a specialty to see its predefined visit types and prompts</p>
-<div class="card-grid">
-<div class="card specialty-card" data-spec="gen" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='gen';upVT();upP()},100)"><div class="card-icon">&#x1f0a1;</div><h3>General Medicine / GP</h3><p>Fever, cough, headaches, abdominal pain, diabetes and hypertension follow-ups, fatigue, general consultations.</p></div>
-<div class="card specialty-card" data-spec="ortho" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='ortho';upVT();upP()},100)"><div class="card-icon">&#x1f9b4;</div><h3>Orthopedics / MSK</h3><p>Knee and low back pain, shoulder and neck pain, fracture and post-op follow-ups.</p></div>
-<div class="card specialty-card" data-spec="peds" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='peds';upVT();upP()},100)"><div class="card-icon">&#x1f476;</div><h3>Pediatrics</h3><p>Fever, cough/cold, vomiting/diarrhea, rash, poor feeding, and pediatric follow-ups.</p></div>
-<div class="card specialty-card" data-spec="ent" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='ent';upVT();upP()},100)"><div class="card-icon">&#x1f442;</div><h3>ENT</h3><p>Sore throat, ear pain, nasal congestion, dizziness, hearing complaints.</p></div>
-<div class="card specialty-card" data-spec="derm" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='derm';upVT();upP()},100)"><div class="card-icon">&#x1f9f4;</div><h3>Dermatology</h3><p>Rash, acne, eczema, fungal infections, wound reviews.</p></div>
-<div class="card specialty-card" data-spec="obgyn" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='obgyn';upVT();upP()},100)"><div class="card-icon">&#x1f469;</div><h3>OB/GYN</h3><p>Antenatal follow-ups, irregular bleeding, pelvic pain, discharge, contraception counseling.</p></div>
+<div class="trust-strip">
+<div class="trust-grid">
+<div class="trust-item"><div class="icon">&#x1f468;&#x200d;&#x2695;&#xfe0f;</div><div class="label">Doctor-controlled</div><div class="desc">You enter your own notes</div></div>
+<div class="trust-item"><div class="icon">&#x1f512;</div><div class="label">No patient data storage</div><div class="desc">Everything stays on device</div></div>
+<div class="trust-item"><div class="icon">&#x1f4cb;</div><div class="label">Copy-ready outputs</div><div class="desc">One click to your EMR</div></div>
+<div class="trust-item"><div class="icon">&#x1f3e5;</div><div class="label">Built for OPD workflow</div><div class="desc">Specialty-specific templates</div></div>
 </div>
-</section>
+</div>
 
-<section class="section" style="background:#fff;border-radius:var(--radius);padding:40px 20px">
+<section class="section">
 <h2 class="section-title">How It Works</h2>
 <p class="section-sub">Four simple steps from note to structured output</p>
 <div class="steps-grid">
-<div class="card step-card"><div class="step-num">1</div><h3>Select Specialty</h3><p>Choose from 6 clinical specialties plus general follow-up.</p></div>
-<div class="card step-card"><div class="step-num">2</div><h3>Enter Your Note</h3><p>Type or paste your de-identified clinical note in the input area.</p></div>
-<div class="card step-card"><div class="step-num">3</div><h3>Review Prompts</h3><p>Check specialty-specific documentation reminders.</p></div>
-<div class="card step-card"><div class="step-num">4</div><h3>Generate Output</h3><p>Produce a SOAP note, short EMR note, referral, or patient instructions.</p></div>
+<div class="step-card"><div class="step-num">1</div><h3>Select Specialty</h3><p style="font-size:12px;color:var(--gray-500)">Choose from 7 presets including General Medicine, Orthopedics and Pediatrics.</p></div>
+<div class="step-card"><div class="step-num">2</div><h3>Enter Your Note</h3><p style="font-size:12px;color:var(--gray-500)">Type or paste your de-identified clinical note in the structured input area.</p></div>
+<div class="step-card"><div class="step-num">3</div><h3>Review Prompts</h3><p style="font-size:12px;color:var(--gray-500)">Check specialty-specific documentation reminders to guide your input.</p></div>
+<div class="step-card"><div class="step-num">4</div><h3>Generate Output</h3><p style="font-size:12px;color:var(--gray-500)">Produce a SOAP note, short EMR note, referral, or patient instructions.</p></div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Specialty Presets</h2>
+<p class="section-sub">Choose a specialty to see its predefined visit types and prompts</p>
+<div class="card-grid" id="homePresets">
+<div class="card" data-spec="gen"><div class="card-icon">&#x1f0a1;</div><h3>General Medicine / GP</h3><p>Fever, cough, headaches, abdominal pain, diabetes and hypertension follow-ups, fatigue, general consultations.</p></div>
+<div class="card" data-spec="ortho"><div class="card-icon">&#x1f9b4;</div><h3>Orthopedics / MSK</h3><p>Knee and low back pain, shoulder and neck pain, fracture and post-op follow-ups.</p></div>
+<div class="card" data-spec="peds"><div class="card-icon">&#x1f476;</div><h3>Pediatrics</h3><p>Fever, cough/cold, vomiting/diarrhea, rash, poor feeding, and pediatric follow-ups.</p></div>
+<div class="card" data-spec="ent"><div class="card-icon">&#x1f442;</div><h3>ENT</h3><p>Sore throat, ear pain, nasal congestion, dizziness, hearing complaints.</p></div>
+<div class="card" data-spec="derm"><div class="card-icon">&#x1f9f4;</div><h3>Dermatology</h3><p>Rash, acne, eczema, fungal infections, wound reviews.</p></div>
+<div class="card" data-spec="obgyn"><div class="card-icon">&#x1f469;</div><h3>OB/GYN</h3><p>Antenatal follow-ups, irregular bleeding, pelvic pain, discharge, contraception counseling.</p></div>
 </div>
 </section>
 
@@ -153,18 +202,21 @@ footer .footer-links{display:flex;justify-content:center;gap:20px;margin-bottom:
 </div>
 </section>
 
-</div><div id="page-opd" class="page">
+</div>
+<div id="page-opd" class="page">
 <div class="page-header">
-<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
 <div><h2>OPD Builder</h2><p>Enter your de-identified note and generate structured clinical outputs.</p></div>
 <div class="status-bar"><span class="status-dot"></span><span>All data stays on your device.</span></div>
 </div>
 </div>
+
 <div class="two-col">
-<div>
+<div class="input-col">
+
 <div class="form-group">
 <label for="specialty">Specialty</label>
-<select id="specialty" onchange="upVT();upP()">
+<select id="specialty">
 <option value="gen">General Medicine / GP</option>
 <option value="ortho">Orthopedics / MSK</option>
 <option value="peds">Pediatrics</option>
@@ -174,60 +226,97 @@ footer .footer-links{display:flex;justify-content:center;gap:20px;margin-bottom:
 <option value="genfup">General follow-up</option>
 </select>
 </div>
+
 <div class="form-group">
 <label for="visitType">Visit Type</label>
-<select id="visitType" onchange="upP()"><option value="">Select a visit type</option></select>
+<select id="visitType"><option value="">Select a visit type</option></select>
 </div>
-<div id="promptsContainer" class="prompts-box" style="display:none;"><h4>Documentation Reminders</h4><ul id="promptsList"></ul></div>
+
+<div id="promptsContainer" class="prompts-box">
+<h4>Documentation Reminders</h4>
+<ul id="promptsList"></ul>
+</div>
+
+<div class="note-phi-warn">Do not enter identifiable patient information (name, ID, DOB, contact info).</div>
+
 <div class="form-group"><label for="clinicalNote">Rough de-identified note</label><textarea id="clinicalNote" class="code" placeholder="Enter a de-identified clinical note. No patient names or IDs."></textarea></div>
+<div id="phiWarning" class="phi-warning">Potential patient-identifiable information detected. Please remove names, IDs, dates of birth, phone numbers, or email addresses.</div>
+
 <div class="form-group"><label for="duration">Duration</label><input id="duration" type="text" placeholder="e.g. 3 days, 2 weeks"></div>
 <div class="form-group"><label for="symptoms">Main Symptoms</label><input id="symptoms" type="text" placeholder="e.g. fever, cough, fatigue"></div>
 <div class="form-group"><label for="history">Relevant History</label><input id="history" type="text" placeholder="e.g. diabetes, hypertension, smoker"></div>
 <div class="form-group"><label for="exam">Examination Findings</label><textarea id="exam" class="code" placeholder="e.g. Temp 38.2, chest clear, throat erythematous"></textarea></div>
 <div class="form-group"><label for="investigations">Investigations</label><input id="investigations" type="text" placeholder="e.g. CBC normal, CRP elevated"></div>
 <div class="form-group"><label for="impression">Working Impression (doctor-entered)</label><input id="impression" type="text" placeholder="e.g. Viral URTI"></div>
-<div class="form-group"><label for="plan">Plan (doctor-entered)</label><textarea id="plan" class="code" placeholder="e.g. Symptomatic treatment with paracetamol, rest, increased fluids. Review in 3 days if no improvement."></textarea></div>
+<div class="form-group"><label for="plan">Plan (doctor-entered)</label><textarea id="plan" class="code" placeholder="e.g. Symptomatic treatment with paracetamol, rest, increased fluids."></textarea></div>
 <div class="form-group"><label for="followupInterval">Follow-up Interval</label><input id="followupInterval" type="text" placeholder="e.g. 3 days, 2 weeks, 1 month"></div>
 <div class="form-group"><label for="doctorNotes">Doctor Notes</label><textarea id="doctorNotes" class="code" placeholder="Any additional notes from the doctor"></textarea></div>
-<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
-<button class="btn btn-primary btn-sm" onclick="gO('soap')">SOAP Note</button>
-<button class="btn btn-primary btn-sm" onclick="gO('emr')">Short EMR Note</button>
-<button class="btn btn-primary btn-sm" onclick="gO('fup')">Follow-up Note</button>
-<button class="btn btn-primary btn-sm" onclick="gO('ref')">Referral Letter</button>
-<button class="btn btn-primary btn-sm" onclick="gO('pt')">Patient Instructions</button>
+
+<div class="gen-row">
+<button class="btn btn-primary btn-sm" data-gen="soap">SOAP Note</button>
+<button class="btn btn-primary btn-sm" data-gen="emr">Short EMR Note</button>
+<button class="btn btn-primary btn-sm" data-gen="fup">Follow-up Note</button>
+<button class="btn btn-primary btn-sm" data-gen="ref">Referral Letter</button>
+<button class="btn btn-primary btn-sm" data-gen="pt">Patient Instructions</button>
 </div>
+
 </div>
+
 <div>
-<label style="display:block;font-size:13px;font-weight:600;color:var(--gray-700);margin-bottom:4px">Output</label>
-<div id="outputBox" class="output-box"><span class="placeholder">Select a specialty and visit type, enter your de-identified note, then click a generate button to create structured output.</span></div>
-<div class="output-actions"><button class="btn btn-outline btn-sm" onclick="cp('outputBox')">Copy</button><button class="btn btn-outline btn-sm" onclick="clearOutput()">Clear</button></div>
+<div class="output-card">
+<div class="output-header">
+<button class="output-tab active" data-output-tab="soap">SOAP</button>
+<button class="output-tab" data-output-tab="emr">EMR</button>
+<button class="output-tab" data-output-tab="fup">Follow-up</button>
+<button class="output-tab" data-output-tab="ref">Referral</button>
+<button class="output-tab" data-output-tab="pt">Instructions</button>
+</div>
+<div id="outputBox" class="output-body"><span class="placeholder">Select a specialty and visit type, enter your de-identified note, then click a generate button to create structured output.</span></div>
+<div class="output-actions">
+<button class="btn btn-outline btn-xs" data-copy="outputBox">Copy</button>
+<button class="btn btn-ghost btn-xs" id="clearOutputBtn">Clear</button>
+</div>
+<div class="output-footer">Draft generated from doctor-entered information. Review before use.</div>
 </div>
 </div>
-</div><div id="page-referral" class="page">
+
+</div>
+</div>
+<div id="page-referral" class="page">
 <div class="page-header"><h2>Referral Builder</h2><p>Generate structured referral letters, short notes, and handover summaries.</p></div>
 <div class="two-col">
 <div>
 <div class="form-group"><label for="refSpecialty">Referred Specialty</label><input id="refSpecialty" type="text" placeholder="e.g. Orthopedics, Cardiology"></div>
-<div class="form-group"><label for="refReason">Reason for Referral</label><textarea id="refReason" class="code" placeholder="e.g. Persistent knee pain not responding to conservative management"></textarea></div>
+<div class="form-group"><label for="refReason">Reason for Referral</label><textarea id="refReason" class="code" placeholder="e.g. Persistent knee pain not responding to conservative mangement"></textarea></div>
 <div class="form-group"><label for="refHistory">Relevant History</label><textarea id="refHistory" class="code" placeholder="e.g. 55yo with 3-month hx of knee pain. Known hypertension. No trauma."></textarea></div>
 <div class="form-group"><label for="refExam">Examination Findings</label><textarea id="refExam" class="code" placeholder="e.g. Mild effusion, reduced ROM, medial joint line tenderness"></textarea></div>
 <div class="form-group"><label for="refInvestigations">Investigations</label><textarea id="refInvestigations" class="code" placeholder="e.g. X-ray: mild medial compartment narrowing"></textarea></div>
 <div class="form-group"><label for="refImpression">Working Impression</label><input id="refImpression" type="text" placeholder="e.g. Possible medial meniscus tear"></div>
 <div class="form-group"><label for="refManagement">Current Management</label><textarea id="refManagement" class="code" placeholder="e.g. NSAIDs, physiotherapy x 6 weeks"></textarea></div>
 <div class="form-group"><label for="refAction">Requested Action</label><textarea id="refAction" class="code" placeholder="e.g. Please assess for possible arthroscopy"></textarea></div>
-<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
-<button class="btn btn-primary btn-sm" onclick="gRef('formal')">Formal Letter</button>
-<button class="btn btn-primary btn-sm" onclick="gRef('short')">Short Note</button>
-<button class="btn btn-primary btn-sm" onclick="gRef('handover')">Handover Summary</button>
+<div class="gen-row">
+<button class="btn btn-primary btn-sm" data-ref="formal">Formal Letter</button>
+<button class="btn btn-primary btn-sm" data-ref="short">Short Note</button>
+<button class="btn btn-primary btn-sm" data-ref="handover">Handover Summary</button>
 </div>
 </div>
 <div>
-<label style="display:block;font-size:13px;font-weight:600;color:var(--gray-700);margin-bottom:4px">Output</label>
-<div id="refOutputBox" class="output-box"><span class="placeholder">Enter referral details and click a format button.</span></div>
-<div class="output-actions"><button class="btn btn-outline btn-sm" onclick="cp('refOutputBox')">Copy</button></div>
+<div class="output-card">
+<div class="output-header">
+<button class="output-tab active" data-ref-tab="formal">Formal</button>
+<button class="output-tab" data-ref-tab="short">Short</button>
+<button class="output-tab" data-ref-tab="handover">Handover</button>
+</div>
+<div id="refOutputBox" class="output-body"><span class="placeholder">Enter referral details and click a format button.</span></div>
+<div class="output-actions">
+<button class="btn btn-outline btn-xs" data-copy="refOutputBox">Copy</button>
+</div>
+<div class="output-footer">Draft generated from doctor-entered information. Review before use.</div>
 </div>
 </div>
-</div><div id="page-instructions" class="page">
+</div>
+</div>
+<div id="page-instructions" class="page">
 <div class="page-header"><h2>Patient Instructions</h2><p>Generate patient-friendly instructions in English, Arabic, or WhatsApp style.</p></div>
 <div class="two-col">
 <div>
@@ -237,24 +326,36 @@ footer .footer-links{display:flex;justify-content:center;gap:20px;margin-bottom:
 <div class="form-group"><label for="instActivity">Activity Advice</label><textarea id="instActivity" class="code" placeholder="e.g. Light activity only. No sports for 1 week."></textarea></div>
 <div class="form-group"><label for="instRedFlags">Red Flags (when to return)</label><textarea id="instRedFlags" class="code" placeholder="e.g. High fever not responding to medication, difficulty breathing"></textarea></div>
 <div class="form-group"><label for="instFollowup">Follow-up Timing</label><input id="instFollowup" type="text" placeholder="e.g. Review in 3 days or earlier if symptoms worsen"></div>
-<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
-<button class="btn btn-primary btn-sm" onclick="gInst('en')">English</button>
-<button class="btn btn-primary btn-sm" onclick="gInst('ar')">Arabic (simple)</button>
-<button class="btn btn-primary btn-sm" onclick="gInst('wa')">WhatsApp-style</button>
+<div class="gen-row">
+<button class="btn btn-primary btn-sm" data-inst="en">English</button>
+<button class="btn btn-primary btn-sm" data-inst="ar">Arabic (simple)</button>
+<button class="btn btn-primary btn-sm" data-inst="wa">WhatsApp-style</button>
 </div>
 </div>
 <div>
-<label style="display:block;font-size:13px;font-weight:600;color:var(--gray-700);margin-bottom:4px">Output</label>
-<div id="instOutputBox" class="output-box"><span class="placeholder">Enter patient instruction details and click a format button.</span></div>
-<div class="output-actions"><button class="btn btn-outline btn-sm" onclick="cp('instOutputBox')">Copy</button></div>
+<div class="output-card">
+<div class="output-header">
+<button class="output-tab active" data-inst-tab="en">English</button>
+<button class="output-tab" data-inst-tab="ar">Arabic</button>
+<button class="output-tab" data-inst-tab="wa">WhatsApp</button>
+</div>
+<div id="instOutputBox" class="output-body"><span class="placeholder">Enter patient instruction details and click a format button.</span></div>
+<div class="output-actions">
+<button class="btn btn-outline btn-xs" data-copy="instOutputBox">Copy</button>
+</div>
+<div class="output-footer">Draft generated from doctor-entered information. Review before use.</div>
 </div>
 </div>
-</div><div id="page-presets" class="page">
+</div>
+</div>
+<div id="page-presets" class="page">
 <div class="page-header"><h2>Specialty Presets</h2><p>Browse all predefined visit types and documentation prompts by specialty.</p></div>
 <div id="presetsContent"></div>
-</div><div id="page-about" class="page">
+</div>
+
+<div id="page-about" class="page">
 <div class="page-header"><h2>About Najm AI</h2></div>
-<div class="about-section">
+<div class="content-page">
 <p>Najm AI is a healthtech brand focused on building practical, safe, and accessible tools for healthcare professionals. We believe in technology that empowers clinicians without replacing their judgment or compromising patient privacy.</p>
 <h3>ClinicNote</h3>
 <p>ClinicNote is our first product. It is a documentation assistance tool that helps clinicians structure their de-identified clinical notes into standard formats like SOAP notes, short EMR entries, referral letters, and patient instructions. It is not a full AI scribe. It does not use audio recording or natural language processing to generate notes from conversation. Instead, it provides a structured interface where doctors enter their own notes and choose from predefined output formats.</p>
@@ -281,9 +382,11 @@ footer .footer-links{display:flex;justify-content:center;gap:20px;margin-bottom:
 <h3>Safety Commitment</h3>
 <p>Protecting patient privacy is our top priority. ClinicNote is designed from the ground up with safety as a core principle, not an afterthought. Every design decision prioritizes clinician control and patient data protection.</p>
 </div>
-</div><div id="page-safety" class="page">
+</div>
+
+<div id="page-safety" class="page">
 <div class="page-header"><h2>Safety</h2></div>
-<div class="safety-section">
+<div class="content-page">
 <h3>Non-Negotiable Rules</h3>
 <ul class="rules-list">
 <li>No patient-identifiable information (PHI) may be entered into ClinicNote</li>
@@ -312,14 +415,19 @@ footer .footer-links{display:flex;justify-content:center;gap:20px;margin-bottom:
 </ul>
 <p>ClinicNote is designed for educational and productivity purposes only. It does not interpret clinical data, provide diagnoses, recommend treatments, or replace any aspect of clinical practice.</p>
 </div>
-</div></div><footer>
+</div>
+
+</div>
+
+<footer>
 <div class="footer-links">
-<a onclick="showPage('safety')">Safety</a>
-<a onclick="showPage('about')">About</a>
+<a data-nav="safety">Safety</a>
+<a data-nav="about">About</a>
 </div>
 <div>&copy; 2026 Najm AI. All rights reserved. ClinicNote is an educational documentation assistance tool. Not a medical device.</div>
 </footer>
-<script>var SD = {
+<script>
+var SD = {
   gen: { name: "General Medicine / GP", types: {} },
   ortho: { name: "Orthopedics / MSK", types: {} },
   peds: { name: "Pediatrics", types: {} },
@@ -327,7 +435,8 @@ footer .footer-links{display:flex;justify-content:center;gap:20px;margin-bottom:
   derm: { name: "Dermatology", types: {} },
   obgyn: { name: "OB/GYN", types: {} },
   genfup: { name: "General follow-up", types: {} }
-};// General Medicine types
+};
+
 SD.gen.types["Fever"] = ["Duration?", "Temp documented?", "Associated symptoms?", "Sick contacts?", "Red flags?", "Doctor impression?", "Doctor plan?"];
 SD.gen.types["Cough/URTI"] = ["Duration?", "Fever?", "Sputum?", "Sore throat?", "Breathing difficulty?", "Doctor impression?", "Doctor plan?"];
 SD.gen.types["Headache"] = ["Duration?", "Location?", "Severity?", "Aura?", "Nausea/vomiting?", "Neurological symptoms?", "Doctor impression?"];
@@ -336,8 +445,9 @@ SD.gen.types["Diabetes f/u"] = ["Last HbA1c?", "Blood glucose trend?", "Medicati
 SD.gen.types["Hypertension f/u"] = ["Last BP reading?", "Medication compliance?", "Side effects?", "Lifestyle changes?", "Target BP?", "Medication adjustments?"];
 SD.gen.types["Fatigue"] = ["Duration?", "Sleep quality?", "Stress?", "Weight changes?", "Mood?", "Lab findings?", "Doctor impression?"];
 SD.gen.types["General f/u"] = ["Interval since last visit?", "New complaints?", "Medication review?", "Vitals?", "Plan?"];
+SD.gen.types["Chronic disease f/u"] = ["Disease?", "Current status?", "Medication compliance?", "Latest labs?", "Plan?"];
+SD.gen.types["Lab results review"] = ["Which labs?", "Results?", "Abnormal values?", "Clinical correlation?", "Plan?"];
 
-// Ortho types
 SD.ortho.types["Knee pain"] = ["Trauma?", "Swelling?", "Instability?", "Locking?", "Pain location?", "Worse with walking/stairs?"];
 SD.ortho.types["Low back pain"] = ["Trauma?", "Fever?", "Cancer history?", "Weight loss?", "Neuro deficit?", "Saddle anesthesia?", "Bladder/bowel symptoms?"];
 SD.ortho.types["Shoulder pain"] = ["Trauma?", "Pain radiation?", "ROM limited?", "Night pain?", "Weakness?", "Previous shoulder issues?"];
@@ -345,46 +455,43 @@ SD.ortho.types["Neck pain"] = ["Trauma?", "Radicular symptoms?", "Headache?", "N
 SD.ortho.types["Fracture f/u"] = ["Bone involved?", "Immobilization type?", "Pain level?", "X-ray findings?", "Healing progress?"];
 SD.ortho.types["Post-op f/u"] = ["Procedure?", "Date of surgery?", "Wound status?", "Pain control?", "Weight bearing?", "Complications?"];
 
-// Peds types
 SD.peds.types["Fever"] = ["Age?", "Temp?", "Duration?", "Feeding?", "Activity?", "Wet diapers?", "Rash?", "Breathing difficulty?", "Seizure?", "Parent concerns?"];
 SD.peds.types["Cough/cold"] = ["Duration?", "Fever?", "Appetite?", "Sleep?", "Breathing difficulty?", "Nasal congestion?", "Ear pain?"];
 SD.peds.types["Vomiting/diarrhea"] = ["Duration?", "Frequency?", "Fever?", "Hydration status?", "Urine output?", "Blood in stool/vomit?", "Weight?"];
 SD.peds.types["Rash"] = ["Duration?", "Itching?", "Fever?", "Distribution?", "Appearance?", "Triggers?", "New medications?"];
 SD.peds.types["Poor feeding"] = ["Duration?", "Weight trend?", "Breastfeeding/formula?", "Vomiting?", "Behavioral changes?", "Growth percentiles?"];
-SD.peds.types["Follow-up"] = ["Interval?", "Progress?", "New concerns?", "Growth parameters?", "Immunizations up to date?"];
+SD.peds.types["Well-baby f/u"] = ["Interval?", "Weight?", "Feeding?", "Milestones?", "Immunizations?", "Parent concerns?"];
 
-// ENT types
 SD.ent.types["Sore throat"] = ["Duration?", "Fever?", "Dysphagia?", "Voice change?", "Cough?", "Tonsillar exam?", "Lymphadenopathy?"];
 SD.ent.types["Ear pain"] = ["Duration?", "Fever?", "Discharge?", "Hearing change?", "Dizziness?", "Exam findings?"];
 SD.ent.types["Nasal congestion"] = ["Duration?", "Fever?", "Sinus pain?", "Discharge?", "Allergies?", "Previous treatments?"];
 SD.ent.types["Dizziness"] = ["Duration?", "Vertigo?", "Timing?", "Triggers?", "Nausea/vomiting?", "Hearing loss?", "Neurological symptoms?"];
 SD.ent.types["Hearing complaint"] = ["Duration?", "Sudden or gradual?", "Unilateral/bilateral?", "Tinnitus?", "Ear fullness?", "Previous hearing issues?"];
 
-// Derm types
 SD.derm.types["Rash"] = ["Duration?", "Itching?", "Pain?", "Fever?", "New medication?", "Exposure?", "Distribution?", "Description?"];
 SD.derm.types["Acne"] = ["Duration?", "Severity?", "Previous treatments?", "Triggers?", "Scarring?", "Face/back/chest?"];
 SD.derm.types["Eczema"] = ["Duration?", "Itching?", "Distribution?", "Triggers?", "Previous treatments?", "Sleep affected?"];
 SD.derm.types["Fungal infection"] = ["Duration?", "Location?", "Itching?", "Appearance?", "Previous treatments?", "Recurrence?"];
 SD.derm.types["Wound review"] = ["Cause?", "Location?", "Size?", "Signs of infection?", "Dressing type?", "Healing progress?"];
 
-// OBGYN types
 SD.obgyn.types["Antenatal f/u"] = ["Gestational age?", "Fundal height?", "Fetal movements?", "BP?", "Urine protein?", "Weight?", "Complaints?"];
 SD.obgyn.types["Irregular bleeding"] = ["LMP?", "Pregnancy status?", "Cycle pattern?", "Duration?", "Amount?", "Pain?", "Previous investigations?"];
 SD.obgyn.types["Pelvic pain"] = ["LMP?", "Pregnancy status?", "Bleeding?", "Discharge?", "Fever?", "Urinary symptoms?", "Doctor impression?"];
 SD.obgyn.types["Vaginal discharge"] = ["Duration?", "Color?", "Odor?", "Itching?", "Pain?", "Recurrent?", "Previous treatments?"];
 SD.obgyn.types["Contraception counseling"] = ["Current method?", "Satisfaction?", "Side effects?", "Desired method?", "Medical contraindications?"];
 
-// General follow-up types
 SD.genfup.types["Routine f/u"] = ["Interval?", "New complaints?", "Vitals?", "Medication review?", "Plan?"];
 SD.genfup.types["Post-hospital f/u"] = ["Reason for admission?", "Discharge date?", "Current symptoms?", "Medication changes?", "Follow-up plan?"];
 SD.genfup.types["Chronic disease f/u"] = ["Disease?", "Current status?", "Medication compliance?", "Latest labs?", "Plan?"];
 SD.genfup.types["Lab results review"] = ["Which labs?", "Results?", "Abnormal values?", "Clinical correlation?", "Plan?"];
+
 function showPage(pageId) {
   var pages = document.querySelectorAll(".page");
   for (var i = 0; i < pages.length; i++) {
     pages[i].classList.remove("active");
   }
-  document.getElementById("page-" + pageId).classList.add("active");
+  var target = document.getElementById("page-" + pageId);
+  if (target) target.classList.add("active");
   var links = document.querySelectorAll(".nav-links a[data-page]");
   for (var i = 0; i < links.length; i++) {
     links[i].classList.remove("active");
@@ -392,6 +499,7 @@ function showPage(pageId) {
       links[i].classList.add("active");
     }
   }
+  document.getElementById("navLinks").classList.remove("open");
 }
 
 function upVT() {
@@ -400,16 +508,12 @@ function upVT() {
   vt.innerHTML = "";
   var types = SD[spec].types;
   var keys = Object.keys(types);
-  if (keys.length === 0) {
-    vt.innerHTML = "<option value="">No visit types available</option>";
-  } else {
-    vt.innerHTML = "<option value="">Select a visit type</option>";
-    for (var i = 0; i < keys.length; i++) {
-      var opt = document.createElement("option");
-      opt.value = keys[i];
-      opt.textContent = keys[i];
-      vt.appendChild(opt);
-    }
+  vt.innerHTML = "<option value="">Select a visit type</option>";
+  for (var i = 0; i < keys.length; i++) {
+    var opt = document.createElement("option");
+    opt.value = keys[i];
+    opt.textContent = keys[i];
+    vt.appendChild(opt);
   }
   upP();
 }
@@ -440,11 +544,32 @@ function val(id) {
   return v || "[not documented]";
 }
 
+function detectPHI(text) {
+  if (!text || text.trim() === "") return false;
+  var phonePattern = /(\+?\d{1,4}[-.\s]?\d{5,15})|(\d{3}[-.\s]?\d{3}[-.\s]?\d{4})/;
+  var emailPattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
+  var dobPattern = /(DOB|date\s*of\s*birth|d\.?\s*o\.?\s*b\.?)/i;
+  var ptNamePattern = /(patient\s*name|pt\.?\s*name|name\s*:\s*[A-Z][a-z]+)/i;
+  return phonePattern.test(text) || emailPattern.test(text) || dobPattern.test(text) || ptNamePattern.test(text);
+}
+
+function checkPHI() {
+  var text = document.getElementById("clinicalNote").value;
+  var warn = document.getElementById("phiWarning");
+  if (detectPHI(text)) {
+    warn.classList.add("show");
+  } else {
+    warn.classList.remove("show");
+  }
+}
+
 function gO(type) {
   var spec = document.getElementById("specialty");
   var specName = SD[spec.value] ? SD[spec.value].name : spec.value;
   var vt = document.getElementById("visitType").value || "Not specified";
-  var disclaim = "Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";
+  var disclaim = "Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.
+
+";
 
   var cn = val("clinicalNote");
   var dur = val("duration");
@@ -457,65 +582,141 @@ function gO(type) {
   var fupInt = val("followupInterval");
   var drNotes = val("doctorNotes");
 
+  var imprVal = document.getElementById("impression");
+  var impressionText = (imprVal && imprVal.value.trim()) ? imprVal.value.trim() : "[doctor impression not documented]";
+
+  var planVal = document.getElementById("plan");
+  var planText = (planVal && planVal.value.trim()) ? planVal.value.trim() : "[doctor plan not documented]";
+
   var output = "";
   if (type === "soap") {
-    output = disclaim + "SOAP NOTE\n";
-    output += "Specialty: " + specName + " | Visit: " + vt + "\n\n";
-    output += "SUBJECTIVE:\n";
-    if (dur !== "[not documented]") output += "Duration: " + dur + "\n";
-    if (symp !== "[not documented]") output += "Main symptoms: " + symp + "\n";
-    if (hx !== "[not documented]") output += "Relevant history: " + hx + "\n";
-    if (cn !== "[not documented]") output += "Patient report: " + cn + "\n";
-    if (dur === "[not documented]" && symp === "[not documented]" && hx === "[not documented]" && cn === "[not documented]") output += "[not documented]\n";
-    output += "\nOBJECTIVE:\n";
-    if (exam !== "[not documented]") output += "Examination: " + exam + "\n";
-    if (inv !== "[not documented]") output += "Investigations: " + inv + "\n";
-    if (exam === "[not documented]" && inv === "[not documented]") output += "[not documented]\n";
-    output += "\nASSESSMENT:\n" + impr + "\n\n";
-    output += "PLAN:\n" + plan + "\n";
-    if (fupInt !== "[not documented]") output += "\nFollow-up: " + fupInt + "\n";
-    if (drNotes !== "[not documented]") output += "\nDoctor notes: " + drNotes + "\n";
+    output = disclaim + "SOAP NOTE
+";
+    output += "Specialty: " + specName + " | Visit: " + vt + "
+
+";
+    output += "SUBJECTIVE:
+";
+    if (dur !== "[not documented]") output += "Duration: " + dur + "
+";
+    if (symp !== "[not documented]") output += "Main symptoms: " + symp + "
+";
+    if (hx !== "[not documented]") output += "Relevant history: " + hx + "
+";
+    if (cn !== "[not documented]") output += "Patient report: " + cn + "
+";
+    if (dur === "[not documented]" && symp === "[not documented]" && hx === "[not documented]" && cn === "[not documented]") output += "[not documented]
+";
+    output += "
+OBJECTIVE:
+";
+    if (exam !== "[not documented]") output += "Examination: " + exam + "
+";
+    if (inv !== "[not documented]") output += "Investigations: " + inv + "
+";
+    if (exam === "[not documented]" && inv === "[not documented]") output += "[not documented]
+";
+    output += "
+ASSESSMENT:
+" + impressionText + "
+
+";
+    output += "PLAN:
+" + planText + "
+";
+    if (fupInt !== "[not documented]") output += "
+Follow-up: " + fupInt + "
+";
+    if (drNotes !== "[not documented]") output += "
+Doctor notes: " + drNotes + "
+";
   } else if (type === "emr") {
-    output = disclaim + "SHORT EMR NOTE\n";
-    output += "Specialty: " + specName + " | Visit: " + vt + "\n\n";
-    output += "CC: " + symp + "\n";
-    output += "HPI: " + dur + ". " + cn + "\n";
-    output += "PMH: " + hx + "\n";
-    output += "Exam: " + exam + "\n";
-    output += "Investigations: " + inv + "\n";
-    output += "Impression: " + impr + "\n";
-    output += "Plan: " + plan + "\n";
-    if (fupInt !== "[not documented]") output += "Follow-up: " + fupInt + "\n";
+    output = disclaim + "SHORT EMR NOTE
+";
+    output += "Specialty: " + specName + " | Visit: " + vt + "
+
+";
+    output += "CC: " + symp + "
+";
+    output += "HPI: " + dur + ". " + cn + "
+";
+    output += "PMH: " + hx + "
+";
+    output += "Exam: " + exam + "
+";
+    output += "Investigations: " + inv + "
+";
+    output += "Impression: " + impressionText + "
+";
+    output += "Plan: " + planText + "
+";
+    if (fupInt !== "[not documented]") output += "Follow-up: " + fupInt + "
+";
   } else if (type === "fup") {
-    output = disclaim + "FOLLOW-UP NOTE\n";
-    output += "Specialty: " + specName + " | Visit: " + vt + "\n\n";
-    output += "Interval: " + fupInt + "\n";
-    output += "Current status: " + cn + "\n";
-    output += "Symptoms: " + symp + "\n";
-    output += "History: " + hx + "\n";
-    output += "Examination: " + exam + "\n";
-    if (inv !== "[not documented]") output += "Investigations: " + inv + "\n";
-    output += "Impression: " + impr + "\n";
-    output += "Plan: " + plan + "\n";
-    if (drNotes !== "[not documented]") output += "Notes: " + drNotes + "\n";
+    output = disclaim + "FOLLOW-UP NOTE
+";
+    output += "Specialty: " + specName + " | Visit: " + vt + "
+
+";
+    output += "Interval: " + fupInt + "
+";
+    output += "Current status: " + cn + "
+";
+    output += "Symptoms: " + symp + "
+";
+    output += "History: " + hx + "
+";
+    output += "Examination: " + exam + "
+";
+    if (inv !== "[not documented]") output += "Investigations: " + inv + "
+";
+    output += "Impression: " + impressionText + "
+";
+    output += "Plan: " + planText + "
+";
+    if (drNotes !== "[not documented]") output += "Notes: " + drNotes + "
+";
   } else if (type === "ref") {
-    output = disclaim + "REFERRAL LETTER\n";
-    output += "Specialty: " + specName + " | Visit: " + vt + "\n\n";
-    output += "Reason for referral: " + cn + "\n";
-    output += "History: " + hx + "\n";
-    output += "Exam findings: " + exam + "\n";
-    if (inv !== "[not documented]") output += "Investigations: " + inv + "\n";
-    output += "Working impression: " + impr + "\n";
-    output += "Current plan: " + plan + "\n";
-    output += "Request: Please see and advise.\n";
+    output = disclaim + "REFERRAL LETTER
+";
+    output += "Specialty: " + specName + " | Visit: " + vt + "
+
+";
+    output += "Reason for referral: " + cn + "
+";
+    output += "History: " + hx + "
+";
+    output += "Exam findings: " + exam + "
+";
+    if (inv !== "[not documented]") output += "Investigations: " + inv + "
+";
+    output += "Working impression: " + impressionText + "
+";
+    output += "Current plan: " + planText + "
+";
+    output += "Request: Please see and advise.
+";
   } else if (type === "pt") {
-    output = disclaim + "PATIENT INSTRUCTIONS\n\n";
-    output += "Diagnosis: " + impr + "\n\n";
-    output += "Doctor advice: " + plan + "\n\n";
-    output += "Medications: " + val("plan") + "\n\n";
-    output += "Activity: " + drNotes + "\n\n";
-    output += "When to seek help: " + exam + "\n\n";
-    output += "Follow-up: " + fupInt + "\n";
+    output = disclaim + "PATIENT INSTRUCTIONS
+
+";
+    output += "Diagnosis: " + impressionText + "
+
+";
+    output += "Doctor advice: " + planText + "
+
+";
+    output += "Medications: " + planText + "
+
+";
+    output += "Activity: " + drNotes + "
+
+";
+    output += "When to seek help: " + exam + "
+
+";
+    output += "Follow-up: " + fupInt + "
+";
   }
   document.getElementById("outputBox").innerHTML = output;
 }
@@ -622,7 +823,14 @@ function clearOutput() {
   document.getElementById("outputBox").innerHTML = "<span class=\"placeholder\">Select a specialty and visit type, enter your de-identified note, then click a generate button to create structured output.</span>";
 }
 
-// Build presets page
+function cl() {
+  var inputs = document.querySelectorAll("#page-opd input, #page-opd textarea");
+  for (var i = 0; i < inputs.length; i++) {
+    inputs[i].value = "";
+  }
+  clearOutput();
+}
+
 function buildPresets() {
   var container = document.getElementById("presetsContent");
   if (!container) return;
@@ -630,16 +838,16 @@ function buildPresets() {
   var keys = Object.keys(SD);
   for (var i = 0; i < keys.length; i++) {
     var spec = SD[keys[i]];
-    html += "<div class=\"section\"><h2 style=\"font-size:22px;font-weight:700;margin-bottom:16px;color:var(--gray-900)\">" + spec.name + "</h2>";
+    html += "<div class=\"presets-spec\"><h2>" + spec.name + "</h2>";
     var types = Object.keys(spec.types);
     for (var j = 0; j < types.length; j++) {
       var t = types[j];
       var prompts = spec.types[t];
-      html += "<div class=\"card\" style=\"margin-bottom:12px;padding:16px\">";
-      html += "<h3 style=\"font-size:16px;margin-bottom:8px;color:var(--primary)\">" + t + "</h3>";
-      html += "<ul style=\"padding-left:18px;margin:0\">";
+      html += "<div class=\"presets-card\">";
+      html += "<h3>" + t + "</h3>";
+      html += "<ul>";
       for (var k = 0; k < prompts.length; k++) {
-        html += "<li style=\"font-size:13px;color:var(--gray-600);margin-bottom:2px\">" + prompts[k] + "</li>";
+        html += "<li>" + prompts[k] + "</li>";
       }
       html += "</ul></div>";
     }
@@ -649,23 +857,106 @@ function buildPresets() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+
   buildPresets();
   upVT();
-  document.querySelectorAll("[data-page]").forEach(function(el){
-    el.addEventListener("click",function(e){e.preventDefault();showPage(el.getAttribute("data-page"))})
+
+  document.querySelectorAll("[data-page]").forEach(function(el) {
+    el.addEventListener("click", function(e) {
+      e.preventDefault();
+      showPage(el.getAttribute("data-page"));
+    });
   });
-  document.querySelectorAll("[data-nav]").forEach(function(el){
-    el.addEventListener("click",function(){showPage(el.getAttribute("data-nav"))})
+
+  document.querySelectorAll("[data-nav]").forEach(function(el) {
+    el.addEventListener("click", function() {
+      showPage(el.getAttribute("data-nav"));
+    });
   });
-  document.querySelectorAll(".specialty-card").forEach(function(el){
-    el.addEventListener("click",function(){
+
+  document.querySelectorAll("#homePresets .card").forEach(function(el) {
+    el.addEventListener("click", function() {
       showPage("opd");
-      var s=document.getElementById("specialty");
-      s.value=el.getAttribute("data-spec");
-      upVT();upP()
-    })
-  })
+      var s = document.getElementById("specialty");
+      s.value = el.getAttribute("data-spec");
+      upVT();
+      upP();
+    });
+  });
+
+  document.getElementById("specialty").addEventListener("change", function() {
+    upVT();
+    upP();
+  });
+
+  document.getElementById("visitType").addEventListener("change", function() {
+    upP();
+  });
+
+  document.querySelectorAll("[data-gen]").forEach(function(el) {
+    el.addEventListener("click", function() {
+      gO(el.getAttribute("data-gen"));
+    });
+  });
+
+  document.querySelectorAll("[data-ref]").forEach(function(el) {
+    el.addEventListener("click", function() {
+      gRef(el.getAttribute("data-ref"));
+    });
+  });
+
+  document.querySelectorAll("[data-inst]").forEach(function(el) {
+    el.addEventListener("click", function() {
+      gInst(el.getAttribute("data-inst"));
+    });
+  });
+
+  document.querySelectorAll("[data-copy]").forEach(function(el) {
+    el.addEventListener("click", function() {
+      cp(el.getAttribute("data-copy"));
+    });
+  });
+
+  var clearBtn = document.getElementById("clearOutputBtn");
+  if (clearBtn) {
+    clearBtn.addEventListener("click", clearOutput);
+  }
+
+  document.getElementById("navToggle").addEventListener("click", function() {
+    document.getElementById("navLinks").classList.toggle("open");
+  });
+
+  document.querySelectorAll("[data-output-tab]").forEach(function(el) {
+    el.addEventListener("click", function() {
+      document.querySelectorAll("[data-output-tab]").forEach(function(b) { b.classList.remove("active"); });
+      el.classList.add("active");
+    });
+  });
+
+  document.querySelectorAll("[data-ref-tab]").forEach(function(el) {
+    el.addEventListener("click", function() {
+      document.querySelectorAll("[data-ref-tab]").forEach(function(b) { b.classList.remove("active"); });
+      el.classList.add("active");
+    });
+  });
+
+  document.querySelectorAll("[data-inst-tab]").forEach(function(el) {
+    el.addEventListener("click", function() {
+      document.querySelectorAll("[data-inst-tab]").forEach(function(b) { b.classList.remove("active"); });
+      el.classList.add("active");
+    });
+  });
+
+  document.getElementById("clinicalNote").addEventListener("input", checkPHI);
+
+  window.addEventListener("resize", function() {
+    if (window.innerWidth > 640) {
+      document.getElementById("navLinks").classList.remove("open");
+    }
+  });
+
 });
 
-</script></body>
+</script>
+</body>
 </html>
