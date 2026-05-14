@@ -1,5 +1,5 @@
-// Najm AI ClinicNote - Expanded Speed Mode Visit Library
-// 75 visit types across 8 specialties
+// Najm AI ClinicNote - Complete Visit Library
+// Auto-generated. Do not edit manually.
 
 var VISIT_LIBRARY = {
  "General Medicine / GP": {
@@ -14,1150 +14,907 @@ var VISIT_LIBRARY = {
     "chills",
     "loss of appetite",
     "sneezing",
-    "malaise",
-    "nasal congestion"
+    "malaise"
    ],
    "negatives": [
-    "no chest pain",
     "no SOB",
-    "no wheezing",
-    "no hemoptysis",
-    "no vomiting",
-    "no rash",
+    "no chest pain",
+    "no persistent vomiting",
     "no neck stiffness",
-    "no photophobia",
-    "no confusion"
+    "no confusion",
+    "no rash"
    ],
    "exam": [
-    "Temp 38.7",
-    "HR 92",
-    "BP 125/80",
-    "RR 18",
-    "O2 sat 98%",
-    "Pharynx injected",
-    "Tonsils enlarged",
-    "Chest clear"
+    "afebrile",
+    "febrile",
+    "throat congested",
+    "chest clear",
+    "no distress",
+    "hydration adequate"
    ],
    "redFlags": [
-    "High fever >40",
-    "Stiff neck",
-    "Petechial rash",
-    "Altered mental status",
-    "Respiratory distress"
+    "breathing difficulty",
+    "fever >5 days",
+    "confusion",
+    "neck stiffness",
+    "dehydration"
    ],
    "planPhrases": [
-    "Antipyretics as needed",
-    "Increased oral fluids and rest",
-    "Symptomatic treatment for congestion",
-    "Salt water gargle",
-    "Return if fever persists >72h"
+    "supportive care",
+    "fluids",
+    "rest",
+    "antipyretic per plan",
+    "return precautions",
+    "sick leave"
    ],
    "followUp": [
-    "5-7 days if no improvement",
-    "Return for persistent fever >72h",
-    "If worsening"
+    "3-5 days if not improved",
+    "return if fever >5 days"
    ]
   },
   "Cough": {
    "symptoms": [
-    "cough",
-    "productive cough",
     "dry cough",
-    "sputum",
-    "dyspnea",
-    "wheezing",
-    "chest tightness",
+    "productive cough",
     "fever",
-    "night sweats",
-    "weight loss"
+    "sore throat",
+    "runny nose",
+    "fatigue",
+    "wheeze",
+    "chest tightness"
    ],
    "negatives": [
     "no hemoptysis",
+    "no chest pain",
     "no night sweats",
     "no weight loss",
-    "no chest pain",
-    "no fever",
-    "no orthopnea",
-    "no PND",
-    "no edema"
+    "no smoking"
    ],
    "exam": [
-    "RR 16",
-    "O2 sat 97% RA",
-    "Chest clear",
-    "No wheeze",
-    "No crackles",
-    "Throat normal",
-    "No lymphadenopathy"
+    "chest clear",
+    "mild wheeze",
+    "crackles",
+    "throat congested",
+    "afebrile"
    ],
    "redFlags": [
-    "Hemoptysis",
-    "Weight loss",
-    "Night sweats",
-    "Chest pain",
-    "Cough >3 weeks"
+    "hemoptysis",
+    "weight loss",
+    "night sweats",
+    "fever >3 weeks",
+    "chest pain"
    ],
    "planPhrases": [
-    "Cough suppressant",
-    "Expectorant",
-    "Increase fluids",
-    "Avoid smoke/irritants",
-    "Chest Xray if prolonged",
-    "Return if cough >3 weeks or hemoptysis"
+    "cough suppressant per plan",
+    "steam inhalation",
+    "fluids",
+    "avoid smoke/dust"
    ],
    "followUp": [
-    "7-10 days",
-    "CXR for cough >3 weeks",
-    "Earlier if worsening"
+    "1-2 weeks",
+    "return if hemoptysis"
    ]
   },
   "Sore throat": {
    "symptoms": [
     "sore throat",
-    "painful swallowing",
+    "difficulty swallowing",
     "fever",
-    "headache",
-    "malaise",
-    "enlarged tonsils",
-    "hoarse voice",
-    "ear pain",
-    "loss of appetite"
+    "fatigue",
+    "swollen glands",
+    "headache"
    ],
    "negatives": [
     "no cough",
-    "no runny nose",
     "no rash",
-    "no abdominal pain",
-    "no difficulty breathing",
+    "no breathing difficulty",
     "no drooling",
-    "no muffled voice",
-    "no trismus"
+    "no muffled voice"
    ],
    "exam": [
-    "Temp 38.2",
-    "Pharynx erythematous",
-    "Tonsils enlarged with exudate",
-    "Cervical lymphadenopathy",
-    "Tympanic membranes normal"
+    "throat congested",
+    "tonsillar erythema",
+    "exudate",
+    "cervical lymphadenopathy"
    ],
    "redFlags": [
-    "Drooling/muffled voice",
-    "Trismus",
-    "Stridor",
-    "Respiratory distress"
+    "airway compromise",
+    "drooling",
+    "trismus",
+    "peritonsillar abscess"
    ],
    "planPhrases": [
-    "Analgesics",
-    "Salt water gargle",
-    "Warm fluids",
-    "Antibiotics if Centor >=3",
-    "Complete course",
-    "Return if difficulty swallowing"
+    "analgesia per plan",
+    "fluids",
+    "rest",
+    "antibiotics if bacterial",
+    "warm saline gargles"
    ],
    "followUp": [
-    "48-72h",
-    "Earlier if severe/dehydration",
-    "If abscess suspected"
+    "3-5 days",
+    "return if difficulty swallowing"
    ]
   },
   "Headache": {
    "symptoms": [
     "headache",
-    "throbbing",
-    "pressure",
+    "nausea",
     "photophobia",
     "phonophobia",
-    "nausea",
-    "vomiting",
-    "visual changes",
-    "aura",
-    "neck stiffness",
+    "visual aura",
+    "tension",
+    "neck pain",
     "fatigue"
    ],
    "negatives": [
     "no fever",
-    "no neck stiffness",
-    "no photophobia",
-    "no focal deficit",
-    "no vision loss",
-    "no head trauma",
-    "no confusion",
-    "no seizure"
+    "no trauma",
+    "no vomiting",
+    "no focal weakness",
+    "no speech difficulty"
    ],
    "exam": [
-    "BP 125/82",
-    "HR 76",
-    "Neuro exam normal",
-    "Cranial nerves intact",
-    "Fundoscopy normal",
-    "No meningeal signs",
-    "No sinus tenderness"
+    "neuro exam normal",
+    "gait normal",
+    "fundoscopy normal",
+    "no meningism",
+    "vitals stable"
    ],
    "redFlags": [
-    "Thunderclap headache",
-    "Neck stiffness/fever",
-    "Focal deficit",
-    "Head trauma",
-    "Vision changes",
-    "New onset >50 years"
+    "thunderclap onset",
+    "fever with neck stiffness",
+    "trauma",
+    "focal deficit",
+    "new onset >50"
    ],
    "planPhrases": [
-    "Simple analgesics",
-    "Triptans if migraine",
-    "Rest in dark quiet room",
-    "Hydration",
-    "Sleep hygiene",
-    "Return if new/worsening"
+    "analgesia per plan",
+    "rest",
+    "avoid triggers",
+    "hydrate",
+    "follow-up if worsening"
    ],
    "followUp": [
-    "2-4 weeks recurring",
-    "ER if sudden severe",
-    "If pattern changes"
+    "1-2 weeks",
+    "return if sudden severe"
    ]
   },
   "Dizziness": {
    "symptoms": [
     "dizziness",
-    "vertigo",
     "lightheadedness",
-    "imbalance",
+    "vertigo",
     "nausea",
-    "vomiting",
-    "tinnitus",
-    "hearing loss",
-    "headache",
-    "blurred vision",
-    "palpitations"
+    "unsteady gait",
+    "presyncope"
    ],
    "negatives": [
-    "no focal weakness",
-    "no speech difficulty",
+    "no syncope",
     "no chest pain",
     "no palpitations",
-    "no trauma",
-    "no fever",
-    "no diplopia",
-    "no numbness"
+    "no focal weakness",
+    "no trauma"
    ],
    "exam": [
-    "BP 118/76 supine 112/72 standing",
-    "HR 72",
-    "Neuro normal",
-    "Nystagmus absent",
-    "Dix-Hallpike negative",
-    "Romberg negative",
-    "Ears normal"
+    "orthostatic vitals checked",
+    "neuro exam normal",
+    "gait normal",
+    "nystagmus absent"
    ],
    "redFlags": [
-    "Focal deficit CVA/TIA",
-    "Syncope/cardiac",
-    "Head trauma",
-    "Meningeal signs",
-    "Chest pain/palpitations"
+    "syncope",
+    "chest pain",
+    "focal neurology",
+    "ataxia",
+    "head trauma",
+    "anticoagulation"
    ],
    "planPhrases": [
-    "Vestibular suppressants",
-    "Antiemetics",
-    "Epley if BPPV",
-    "Fall precautions",
-    "Avoid driving",
-    "Hydration if orthostatic",
-    "Return if focal symptoms or syncope"
+    "labyrinthine suppressant per plan",
+    "hydration",
+    "avoid sudden head movements",
+    "fall precautions"
    ],
    "followUp": [
-    "3-5 days",
-    "Balance exercises chronic",
-    "Neuro referral indicated"
+    "1-2 weeks",
+    "return if syncope"
    ]
   },
   "Fatigue": {
    "symptoms": [
     "fatigue",
     "low energy",
-    "sleepiness",
     "poor concentration",
+    "sleepiness",
     "muscle weakness",
-    "mood changes",
-    "weight changes",
     "headache",
-    "palpitations",
-    "SOB on exertion"
+    "irritability"
    ],
    "negatives": [
     "no fever",
     "no night sweats",
     "no weight loss",
-    "no chest pain",
-    "no joint pain",
-    "no rash",
-    "no depression",
-    "no suicidal thoughts"
+    "no SOB",
+    "no palpitations"
    ],
    "exam": [
-    "BP 120/78",
-    "HR 76",
-    "Temp 36.8",
-    "Pallor absent",
-    "Thyroid normal",
-    "Chest clear",
-    "CVS normal",
-    "Abdomen soft"
+    "vitals normal",
+    "exam unremarkable",
+    "pallor absent",
+    "thyroid normal"
    ],
    "redFlags": [
-    "Weight loss",
-    "Night sweats",
-    "FUO",
-    "Lymphadenopathy",
-    "Pallor",
-    "Thyroid mass",
-    "Depression/suicidal"
+    "unintentional weight loss",
+    "night sweats",
+    "fever",
+    "lymphadenopathy",
+    "pallor"
    ],
    "planPhrases": [
-    "Labs: CBC, TSH, ferritin, B12, vit D, glucose",
-    "Screen PHQ-9",
-    "Sleep hygiene",
-    "Exercise balanced diet",
-    "Caffeine reduction",
-    "Return for lab review"
+    "sleep hygiene",
+    "balanced diet",
+    "exercise",
+    "stress management",
+    "follow-up labs"
    ],
    "followUp": [
-    "1 week lab results",
-    "Monthly improving",
-    "If persists >3 months"
+    "after lab results",
+    "2-4 weeks",
+    "return if worsening"
    ]
   },
   "Abdominal pain": {
    "symptoms": [
     "abdominal pain",
-    "cramping",
-    "bloating",
     "nausea",
     "vomiting",
+    "bloating",
+    "heartburn",
     "diarrhea",
     "constipation",
-    "heartburn",
-    "loss of appetite",
-    "early satiety"
+    "cramping"
    ],
    "negatives": [
     "no fever",
-    "no hematemesis",
-    "no melena",
-    "no hematochezia",
+    "no blood in vomitus/stool",
     "no jaundice",
-    "no dysuria",
     "no trauma",
-    "no peritoneal signs"
+    "no pregnancy"
    ],
    "exam": [
-    "BP 125/82",
-    "HR 78",
-    "Temp 36.9",
-    "Abdomen soft",
-    "No distension",
-    "No guarding",
-    "No rebound",
-    "Bowel sounds present",
-    "No organomegaly"
+    "abdomen soft",
+    "mildly tender",
+    "no guarding",
+    "no rebound",
+    "bowel sounds present"
    ],
    "redFlags": [
-    "Severe localized pain",
-    "Hematemesis/melena",
-    "Fever with pain",
-    "Jaundice",
-    "Weight loss",
-    "Palpable mass"
+    "severe pain",
+    "fever with tenderness",
+    "hematemesis",
+    "melena",
+    "weight loss",
+    "peritoneal signs"
    ],
    "planPhrases": [
-    "Antispasmodic",
-    "PPI if dyspepsia",
-    "Antiemetic",
-    "BRAT diet",
-    "Avoid NSAIDs",
-    "Return if severe/worsening",
-    "US abdomen if biliary"
+    "dietary modification",
+    "antacid per plan",
+    "analgesia",
+    "avoid NSAIDs",
+    "follow-up"
    ],
    "followUp": [
-    "3-5 days",
-    "US abdomen",
-    "Gastro referral chronic"
+    "1-2 weeks",
+    "return if severe pain or fever"
    ]
   },
-  "Nausea / vomiting": {
+  "Nausea / Vomiting": {
    "symptoms": [
     "nausea",
     "vomiting",
     "abdominal discomfort",
     "loss of appetite",
     "dizziness",
-    "headache",
-    "diarrhea",
-    "fever",
-    "sweating",
-    "weakness"
+    "belching",
+    "reflux"
    ],
    "negatives": [
-    "no hematemesis",
-    "no melena",
-    "no severe pain",
-    "no head trauma",
-    "no meningitis signs",
-    "no focal deficit",
-    "no known pregnancy"
+    "no fever",
+    "no headache",
+    "no blood in vomitus",
+    "no diarrhea",
+    "no pregnancy"
    ],
    "exam": [
-    "BP 115/75",
-    "HR 84",
-    "Temp 36.9",
-    "Mucous membranes dry",
-    "Skin turgor normal",
-    "Abdomen soft",
-    "Neuro normal"
+    "hydration adequate",
+    "mildly dehydrated",
+    "abdomen soft",
+    "bowel sounds present"
    ],
    "redFlags": [
-    "Hematemesis",
-    "Severe abdominal pain",
-    "Head trauma",
-    "Meningeal signs",
-    "Dehydration",
-    "Electrolyte imbalance"
+    "hematemesis",
+    "vomiting >24h",
+    "severe dehydration",
+    "altered mental status"
    ],
    "planPhrases": [
-    "Antiemetic",
-    "Clear liquid diet",
-    "BRAT diet",
-    "Oral rehydration",
-    "Small frequent meals",
-    "IV fluids if unable"
+    "antiemetic per plan",
+    "clear fluids",
+    "small frequent sips",
+    "avoid heavy meals"
    ],
    "followUp": [
-    "24-48h",
-    "IV fluids dehydrated",
-    "Recurrent episodes"
+    "return if >24h or unable to tolerate fluids"
    ]
   },
   "Diarrhea": {
    "symptoms": [
-    "diarrhea",
-    "watery stools",
-    "frequent stools",
-    "urgency",
-    "cramping",
-    "bloating",
+    "watery diarrhea",
+    "loose stools",
+    "frequency increased",
+    "cramps",
     "nausea",
-    "vomiting",
-    "fever",
-    "dehydration",
-    "malaise"
+    "bloating",
+    "fever"
    ],
    "negatives": [
     "no blood in stool",
     "no mucus",
-    "no melena",
-    "no severe pain",
-    "no fever >38.5",
-    "no recent antibiotics",
-    "no travel history",
-    "no known IBD"
+    "no severe dehydration",
+    "no recent abx",
+    "no travel"
    ],
    "exam": [
-    "BP 120/78",
-    "HR 80",
-    "Temp 37.5",
-    "Mucous slightly dry",
-    "Cap refill <2 sec",
-    "Abdomen mild tenderness",
-    "Bowel sounds hyperactive"
+    "hydration adequate",
+    "mildly dehydrated",
+    "abdomen soft",
+    "bowel sounds hyperactive"
    ],
    "redFlags": [
-    "Bloody diarrhea",
-    "High fever >38.5",
-    "Severe dehydration",
-    "Recent antibiotics",
-    "Travel endemic",
-    "Immunocompromised"
+    "bloody diarrhea",
+    "severe dehydration",
+    "high fever",
+    "IBD history",
+    "immunocompromised"
    ],
    "planPhrases": [
+    "rehydration",
     "ORS",
-    "BRAT diet",
-    "Antidiarrheal if no blood/fever",
-    "Probiotics",
-    "Avoid dairy/fatty",
-    "Return if bloody stool/high fever",
-    "Stool culture if prolonged"
+    "dietary modification",
+    "antidiarrheal per plan",
+    "avoid dairy"
    ],
    "followUp": [
-    "48-72h",
-    "Stool culture",
-    "IV fluids"
+    "return if >3 days or bloody stools"
    ]
   },
   "Constipation": {
    "symptoms": [
-    "constipation",
-    "infrequent stools",
+    "infrequent BMs",
     "hard stools",
     "straining",
     "incomplete evacuation",
     "bloating",
-    "abdominal discomfort",
-    "nausea",
-    "laxative dependency",
-    "hemorrhoids"
+    "discomfort"
    ],
    "negatives": [
-    "no blood in stool",
-    "no melena",
+    "no blood",
     "no weight loss",
     "no fever",
-    "no severe pain",
-    "no colon cancer family hx",
-    "no change >6 weeks"
+    "no obstruction hx",
+    "no vomiting"
    ],
    "exam": [
-    "Abdomen soft",
-    "Mild distension",
-    "No guarding",
-    "Bowel sounds present",
-    "No masses",
-    "Rectal exam normal"
+    "abdomen soft",
+    "mild LLQ tenderness",
+    "bowel sounds present",
+    "no mass",
+    "no fissure"
    ],
    "redFlags": [
-    "Blood in stool",
-    "Weight loss",
-    "Severe pain",
-    "Colon cancer family hx",
-    "Change >6 weeks >50 years",
-    "Iron deficiency anemia"
+    "blood with stool",
+    "weight loss",
+    "obstruction",
+    "age >50 new onset",
+    "family hx colon ca"
    ],
    "planPhrases": [
-    "Increase fiber and fluids",
-    "Regular exercise",
-    "Bulk-forming laxatives",
-    "Osmotic laxatives if needed",
-    "Avoid chronic stimulant use",
-    "Return if blood or severe pain"
+    "fiber increase",
+    "fluids",
+    "exercise",
+    "laxative per plan",
+    "consistent routine"
    ],
    "followUp": [
-    "2-4 weeks lifestyle",
-    "Earlier if alarming",
-    "Gastro referral chronic"
+    "2-4 weeks",
+    "colonoscopy referral if indicated"
    ]
   },
   "Chest pain": {
    "symptoms": [
     "chest pain",
-    "tightness",
     "pressure",
+    "tightness",
     "burning",
-    "radiating pain",
-    "dyspnea",
+    "SOB",
     "palpitations",
     "nausea",
-    "sweating",
-    "dizziness"
+    "fatigue"
    ],
    "negatives": [
     "no radiation to arm/jaw",
-    "no dyspnea at rest",
-    "no palpitations",
+    "no diaphoresis",
     "no syncope",
-    "no fever/cough",
-    "no trauma",
-    "no known CAD"
+    "no relation to exertion"
    ],
    "exam": [
-    "BP 128/82",
-    "HR 76",
-    "O2 sat 98%",
-    "CVS S1S2 normal",
-    "No murmurs",
-    "Chest clear",
-    "Chest wall nontender",
-    "Epigastrium soft"
+    "CVS normal",
+    "chest clear",
+    "vitals stable",
+    "no chest wall tenderness",
+    "ECG normal"
    ],
    "redFlags": [
-    "Exertional chest pain",
-    "Radiation arm/jaw/back",
-    "Dyspnea/syncope",
-    "Hemodynamic instability",
+    "exertional angina",
+    "hemodynamic instability",
     "ECG changes",
-    "Known CAD/risk factors"
+    "troponin elevation",
+    "syncope"
    ],
    "planPhrases": [
-    "Urgent ECG",
-    "Cardiac enzymes",
-    "Anti-anginal if ischemic",
-    "PPI if GERD",
-    "Chest wall analgesia MSK",
-    "Risk factor modification",
-    "Return if worsening"
+    "analgesia per plan",
+    "reassessment",
+    "avoid NSAIDs if cardiac",
+    "cardiology referral"
    ],
    "followUp": [
-    "ER acute cardiac suspicion",
-    "Cardiology referral",
-    "PPI trial GERD"
+    "return if worsening",
+    "ER if severe/angina"
    ]
   },
   "Palpitations": {
    "symptoms": [
     "palpitations",
     "racing heart",
-    "skipped beats",
+    "missed beats",
     "fluttering",
     "dizziness",
-    "lightheadedness",
-    "chest discomfort",
-    "SOB",
-    "anxiety",
-    "sweating",
-    "fatigue"
+    "anxiety"
    ],
    "negatives": [
     "no syncope",
     "no chest pain",
-    "no dyspnea at rest",
-    "no known heart disease",
-    "no family sudden death",
-    "no thyroid disease",
-    "no excessive caffeine"
+    "no SOB",
+    "no arrhythmia hx",
+    "no stimulant use"
    ],
    "exam": [
-    "BP 122/78",
-    "HR 82",
-    "CVS S1S2 normal",
-    "No murmurs",
-    "Thyroid normal",
-    "Chest clear"
+    "regular pulse",
+    "irregular pulse",
+    "vitals stable",
+    "CVS normal",
+    "thyroid normal",
+    "anxiety noted"
    ],
    "redFlags": [
-    "Syncope/near-syncope",
-    "Chest pain with palpitations",
-    "Known structural heart disease",
-    "Family sudden death",
-    "Sustained tachycardia",
-    "Hemodynamic instability"
+    "syncope",
+    "family hx sudden death",
+    "structural heart disease",
+    "AF hx"
    ],
    "planPhrases": [
-    "ECG",
-    "Holter monitor",
-    "Echo to assess structure",
-    "Avoid caffeine/stimulants",
-    "Stress reduction",
-    "Beta blocker if benign",
-    "Return if syncope or chest pain"
+    "avoid caffeine/stimulants",
+    "sleep hygiene",
+    "stress management",
+    "beta blocker per plan"
    ],
    "followUp": [
-    "After Holter 1-2 weeks",
-    "Cardiology referral",
-    "EP if needed"
+    "after Holter",
+    "return if syncope",
+    "cardiology referral"
    ]
   },
   "Shortness of breath": {
    "symptoms": [
-    "SOB",
-    "dyspnea on exertion",
+    "SOB exertion",
+    "SOB rest",
     "orthopnea",
     "PND",
-    "wheezing",
+    "wheeze",
     "cough",
-    "sputum",
     "chest tightness",
-    "fatigue",
-    "leg swelling",
-    "palpitations"
+    "fatigue"
    ],
    "negatives": [
-    "no chest pain",
-    "no syncope",
-    "no hemoptysis",
+    "no cough",
     "no fever",
-    "no known COPD/asthma",
-    "no smoking",
-    "no known DVT"
+    "no leg swelling",
+    "no known asthma/COPD",
+    "no smoking"
    ],
    "exam": [
-    "RR 20",
-    "O2 sat 95%",
-    "BP 135/85",
-    "HR 88",
-    "Chest dec breath sounds",
-    "Wheeze expiratory",
-    "No crackles",
-    "JVP not elevated",
-    "No leg edema"
+    "RR",
+    "SpO2 normal",
+    "chest clear",
+    "air entry equal",
+    "no wheeze",
+    "no crackles"
    ],
    "redFlags": [
-    "Acute severe dyspnea",
-    "Chest pain",
-    "Hemoptysis",
-    "Hypoxia",
-    "Stridor",
-    "Anaphylaxis",
-    "Pneumothorax"
+    "acute severe SOB",
+    "low SpO2",
+    "hemodynamic instability",
+    "stridor",
+    "cyanosis"
    ],
    "planPhrases": [
-    "Bronchodilators if obstructive",
-    "O2 if hypoxic",
-    "Chest Xray",
-    "PFTs if chronic",
-    "Echo if cardiac",
-    "Smoking cessation",
-    "Return if worsening"
+    "bronchodilator per plan",
+    "positioning",
+    "smoking cessation",
+    "rescue inhaler reviewed"
    ],
    "followUp": [
-    "1-2 weeks after treatment",
-    "PFTs chronic",
-    "Cardiology/pulmonology referral"
+    "return if worsening",
+    "ER if acute severe"
    ]
   },
-  "HTN f/u": {
+  "Hypertension follow-up": {
    "symptoms": [
-    "asymptomatic",
+    "routine follow-up",
+    "home BP reviewed",
     "headache",
     "dizziness",
-    "vision changes",
-    "chest pain",
-    "dyspnea",
-    "palpitations",
-    "edema",
     "fatigue",
-    "epistaxis"
+    "edema"
    ],
    "negatives": [
     "no chest pain",
-    "no dyspnea",
-    "no palpitations",
-    "no syncope",
-    "no vision changes",
-    "no edema",
-    "no claudication",
-    "no end organ damage"
+    "no SOB",
+    "no visual symptoms",
+    "no neuro symptoms",
+    "no med side effects"
    ],
    "exam": [
-    "BP 148/92 seated",
-    "BP 144/90 right",
-    "HR 76",
-    "BMI 28",
-    "CVS S1S2 normal",
-    "No murmurs",
-    "No bruit",
-    "Fundoscopy normal",
-    "Chest clear"
+    "BP recorded",
+    "CVS exam documented",
+    "no acute distress",
+    "vitals reviewed"
    ],
    "redFlags": [
-    "BP >180/120 crisis",
-    "Vision changes",
-    "Chest pain",
-    "Dyspnea",
-    "Neurologic symptoms",
-    "Renal impairment",
-    "End-organ damage"
+    "BP >180/110",
+    "chest pain",
+    "SOB",
+    "visual disturbance",
+    "neuro symptoms",
+    "resistant HTN"
    ],
    "planPhrases": [
-    "Continue antihypertensives",
-    "DASH diet low sodium",
-    "Exercise",
-    "Weight management",
-    "Limit alcohol",
-    "Home BP monitoring",
-    "Return if >160/100"
+    "lifestyle advice",
+    "medication adherence",
+    "home BP monitoring",
+    "low salt diet",
+    "follow-up"
    ],
    "followUp": [
-    "3-6 months stable",
-    "2-4 weeks med adjustment",
-    "ER if >180/120"
+    "1-3 months",
+    "return if BP >180/110",
+    "sooner if med adjusted"
    ]
   },
-  "DM f/u": {
+  "Diabetes follow-up": {
    "symptoms": [
-    "asymptomatic",
+    "routine follow-up",
+    "home glucose reviewed",
     "polyuria",
     "polydipsia",
     "fatigue",
-    "blurred vision",
-    "weight changes",
-    "frequent infections",
-    "slow healing",
-    "neuropathy",
-    "hypoglycemia"
+    "weight change"
    ],
    "negatives": [
-    "no hypoglycemic episodes",
-    "no DKA symptoms",
-    "no vision changes",
-    "no chest pain",
+    "no hypoglycemia",
     "no foot ulcers",
-    "no infections",
-    "no known nephropathy"
+    "no acute infection",
+    "no visual changes",
+    "no neuro symptoms"
    ],
    "exam": [
-    "BP 130/82",
-    "HR 78",
-    "BMI 29",
-    "Fundoscopy mild NPDR",
-    "CVS normal",
-    "Foot exam normal",
-    "Skin no infections"
+    "vitals reviewed",
+    "foot check if performed",
+    "no acute distress",
+    "glucose recorded"
    ],
    "redFlags": [
-    "Severe hypoglycemia",
-    "DKA/HHS signs",
-    "New vision changes",
-    "Foot ulcer",
-    "Chest pain",
-    "Rapid weight loss",
-    "Worsening renal function"
+    "hypoglycemia episodes",
+    "foot ulcer",
+    "vision changes",
+    "uncontrolled glucose",
+    "DKA symptoms"
    ],
    "planPhrases": [
-    "Continue metformin/regimen",
-    "HbA1c target <7%",
-    "Dietary counseling",
-    "Exercise 150 min/week",
-    "Foot care daily",
-    "Glucose monitoring",
-    "Return for lab review"
+    "lifestyle advice",
+    "medication adherence",
+    "glucose monitoring",
+    "labs per plan",
+    "foot care"
    ],
    "followUp": [
-    "3 months HbA1c",
-    "Annual eye foot renal exam",
-    "1-2 weeks med adjustment"
+    "3-6 months",
+    "sooner if uncontrolled",
+    "return if hypoglycemia"
    ]
   },
-  "Thyroid f/u": {
+  "Thyroid follow-up": {
    "symptoms": [
+    "follow-up",
     "fatigue",
     "weight changes",
-    "temp intolerance",
-    "mood changes",
+    "temperature intolerance",
     "palpitations",
-    "tremor",
-    "constipation",
-    "diarrhea",
-    "skin/hair changes",
-    "neck fullness"
+    "mood changes",
+    "tremor"
    ],
    "negatives": [
     "no palpitations",
-    "no chest pain",
-    "no vision changes",
-    "no dysphagia",
-    "no voice changes",
-    "no neck mass growth"
+    "no anxiety",
+    "no visual changes",
+    "no neck swelling",
+    "no hoarseness"
    ],
    "exam": [
-    "BP 122/76",
-    "HR 74",
-    "Thyroid normal no nodules",
-    "No goiter",
-    "Eyes normal",
-    "Skin normal",
-    "Tremor absent",
-    "Reflexes normal"
+    "vitals stable",
+    "HR regular",
+    "no tremor",
+    "no proptosis",
+    "thyroid normal",
+    "reflexes normal"
    ],
    "redFlags": [
-    "Thyroid nodule >1cm",
-    "Rapidly growing mass",
-    "Hoarseness/dysphagia",
-    "Thyroid eye disease",
-    "A.fib",
-    "Myxedema/thyrotoxicosis"
+    "nodule increase",
+    "visual changes",
+    "dysphagia",
+    "hoarseness",
+    "significant symptom change"
    ],
    "planPhrases": [
-    "Continue levothyroxine/antithyroid",
-    "Empty stomach 30min before breakfast",
-    "Monitor TSH 6-12 weeks after dose change",
-    "Avoid soy/calcium/iron within 4h",
-    "Return if hyper/hypothyroid"
+    "medication dose adjusted per TSH",
+    "adherence discussed",
+    "follow-up arranged"
    ],
    "followUp": [
-    "6-12 weeks after dose",
-    "6-12 months stable",
-    "Annual TSH"
+    "6-12 weeks after dose change",
+    "return if symptomatic",
+    "annual US if nodule"
    ]
   },
-  "Dyslipidemia f/u": {
+  "Dyslipidemia follow-up": {
    "symptoms": [
+    "follow-up",
+    "lipid panel reviewed",
     "asymptomatic",
-    "fatigue",
-    "chest pain",
-    "claudication",
-    "xanthomas",
-    "xanthelasma",
-    "corneal arcus"
+    "medication tolerance reviewed"
    ],
    "negatives": [
     "no chest pain",
-    "no claudication",
-    "no TIA/stroke",
-    "no known CAD",
-    "no pancreatitis"
+    "no SOB",
+    "no statin side effects",
+    "no muscle pain",
+    "no jaundice"
    ],
    "exam": [
-    "BP 125/80",
-    "HR 74",
-    "BMI 27",
     "CVS normal",
-    "No carotid bruit",
-    "Peripheral pulses intact"
+    "no xanthomas",
+    "vitals normal"
    ],
    "redFlags": [
-    "Very high LDL >190",
-    "Triglycerides >500",
-    "Known CAD",
-    "DM with high LDL",
-    "Family premature CAD"
+    "statin intolerance",
+    "high LDL",
+    "known CAD",
+    "diabetes with dyslipidemia"
    ],
    "planPhrases": [
-    "Continue statin",
-    "Reduce saturated fats",
-    "Exercise 150 min/week",
-    "Weight management",
-    "Ezetimibe if needed",
-    "Check lipids 3-6 months"
+    "lifestyle modification",
+    "medication adherence",
+    "dietary advice",
+    "follow-up",
+    "statins per plan"
    ],
    "followUp": [
-    "3-6 months lipids",
-    "Annual stable",
-    "Cardiology if high risk"
+    "3-6 months",
+    "return if side effects",
+    "follow lipids per guideline"
    ]
   },
-  "Medication refill": {
+  "Medication refill / Chronic follow-up": {
    "symptoms": [
+    "medication refill needed",
     "asymptomatic",
-    "stable on meds",
-    "running out",
-    "mild side effects",
-    "general wellbeing"
+    "stable",
+    "no new complaints"
    ],
    "negatives": [
-    "no new symptoms",
     "no side effects",
-    "no drug interactions",
-    "no pregnancy",
-    "no status change"
+    "no new symptoms",
+    "no interval illness",
+    "no changes needed"
    ],
    "exam": [
-    "BP 125/80",
-    "HR 76",
-    "Temp 36.8",
-    "General exam unremarkable",
-    "CVS normal",
-    "Chest clear",
-    "Abdomen soft"
+    "vitals stable",
+    "exam unremarkable",
+    "adherence discussed"
    ],
    "redFlags": [
-    "Non-compliance",
-    "Adverse reaction",
-    "Dose adjustment needed",
-    "Drug interaction",
-    "New diagnosis"
+    "new symptoms",
+    "significant non-adherence",
+    "medication adjustment needed"
    ],
    "planPhrases": [
-    "Refill as prescribed",
-    "Emphasize adherence",
-    "Review medication list",
-    "Discuss side effects",
-    "Plan next lab monitoring"
+    "medications refilled per plan",
+    "adherence discussed",
+    "next scheduled appointment"
    ],
    "followUp": [
-    "Per chronic disease schedule",
-    "Earlier if new symptoms",
-    "Annual medication review"
+    "per chronic disease schedule",
+    "annual comprehensive review"
    ]
   },
   "Lab result review": {
    "symptoms": [
     "asymptomatic",
-    "concerned about results",
-    "fatigue",
-    "general checkup"
+    "lab results reviewed",
+    "incidental findings",
+    "trend assessment"
    ],
    "negatives": [
     "no new symptoms",
-    "no acute complaints",
+    "no medication issues",
+    "no interval events"
+   ],
+   "exam": [
+    "vitals reviewed",
+    "no significant findings"
+   ],
+   "redFlags": [
+    "critical values",
+    "significant change",
+    "liver/renal impairment"
+   ],
+   "planPhrases": [
+    "labs reviewed",
+    "abnormal results explained",
+    "management plan",
+    "repeat labs",
+    "referral if needed"
+   ],
+   "followUp": [
+    "per lab result urgency",
+    "return for repeat labs"
+   ]
+  },
+  "General wellness check": {
+   "symptoms": [
+    "routine check-up",
+    "no complaints",
+    "preventive screening",
+    "health maintenance"
+   ],
+   "negatives": [
+    "no acute symptoms",
+    "no interval illness",
     "no medication changes"
    ],
    "exam": [
-    "BP 122/78",
-    "HR 74",
-    "Temp 36.8",
-    "General exam unremarkable"
-   ],
-   "redFlags": [
-    "Critical lab values",
-    "Rapid worsening",
-    "Urgent intervention",
-    "Lab error suspected"
-   ],
-   "planPhrases": [
-    "Results discussed with patient",
-    "Continue current management",
-    "Adjust meds based on trends",
-    "Schedule repeat labs"
-   ],
-   "followUp": [
-    "Per lab recommendation",
-    "3-6 months routine",
-    "1-2 weeks if adjusted"
-   ]
-  },
-  "Wellness check": {
-   "symptoms": [
-    "asymptomatic",
-    "annual checkup",
-    "health maintenance",
-    "vaccination update",
-    "cancer screening",
-    "preventive counseling"
-   ],
-   "negatives": [
-    "no acute complaints",
-    "no new symptoms",
-    "no concerning family hx"
-   ],
-   "exam": [
-    "BP 122/76",
-    "HR 72",
-    "Temp 36.8",
-    "BMI 26",
+    "vitals recorded",
+    "general exam",
+    "BMI",
     "CVS normal",
-    "Chest clear",
-    "Abdomen soft",
-    "Skin normal",
-    "Thyroid normal"
+    "respiratory normal",
+    "abdomen normal"
    ],
    "redFlags": [
-    "New abnormal vitals",
-    "New mass/lesion",
-    "Abnormal screening",
-    "High risk behaviors"
+    "abnormal vitals",
+    "incidental finding",
+    "significant risk factor identified"
    ],
    "planPhrases": [
-    "Age-appropriate cancer screening",
-    "Vaccination update",
-    "Lipid panel glucose",
-    "Counseling diet exercise smoking",
-    "Update history",
-    "Next check 1 year"
+    "health maintenance",
+    "screening recommendations",
+    "lifestyle counseling",
+    "vaccinations reviewed"
    ],
    "followUp": [
-    "1 year wellness check",
-    "Follow up abnormal screens",
-    "Address concerns"
+    "annual check-up",
+    "sooner if new symptoms"
    ]
   }
  },
  "Orthopedics / MSK": {
   "Low back pain": {
    "symptoms": [
-    "low back pain",
-    "radiating leg pain",
-    "numbness",
-    "tingling",
-    "weakness",
+    "lower back pain",
+    "radiating pain",
     "stiffness",
+    "worse with movement",
     "muscle spasm",
-    "pain movement",
-    "difficulty standing",
-    "morning stiffness"
+    "sciatica"
    ],
    "negatives": [
+    "no bowel/bladder symptoms",
     "no saddle anesthesia",
-    "no bowel/bladder",
     "no fever",
-    "no weight loss",
-    "no night pain",
     "no trauma",
-    "no IV drug use",
-    "no prior spinal surgery"
+    "no progressive weakness"
    ],
    "exam": [
-    "Lumbar reduced ROM flexion",
-    "Paraspinal tenderness",
-    "No step-off",
+    "gait normal",
+    "lumbar tenderness",
+    "ROM limited",
     "SLR negative",
-    "Motor 5/5",
-    "Sensation intact",
-    "Reflexes intact",
-    "Hip normal"
+    "power intact",
+    "sensation intact"
    ],
    "redFlags": [
-    "Cauda equina",
-    "Fever/back pain infection",
-    "Weight loss malignancy",
-    "Trauma fracture",
-    "IV drug use",
-    "Osteoporosis",
-    "Night pain"
+    "trauma",
+    "fever",
+    "cancer hx",
+    "weight loss",
+    "neuro deficit",
+    "saddle anesthesia",
+    "bowel/bladder symptoms"
    ],
    "planPhrases": [
-    "NSAIDs",
-    "Muscle relaxants",
-    "Normal activities within pain limits",
-    "Avoid prolonged bed rest",
-    "PT core strengthening",
-    "Heat/cold therapy",
-    "Return if leg weakness or incontinence"
+    "activity modification",
+    "physiotherapy referral",
+    "analgesia per plan",
+    "red flags explained",
+    "avoid bed rest"
    ],
    "followUp": [
-    "1-2 weeks if no improvement",
-    "Earlier if red flags",
-    "Ortho/neuro if radicular"
+    "1-2 weeks",
+    "return if progressive weakness",
+    "return if bladder symptoms"
    ]
   },
   "Neck pain": {
    "symptoms": [
     "neck pain",
     "stiffness",
+    "radiating to arm",
     "headache",
     "shoulder pain",
-    "arm pain",
     "numbness",
-    "tingling",
-    "weakness",
-    "limited ROM",
-    "pain movement",
-    "muscle spasm"
+    "tingling"
    ],
    "negatives": [
     "no trauma",
     "no fever",
-    "no weight loss",
-    "no night pain",
-    "no bowel/bladder",
-    "no gait difficulty",
-    "no prior neck surgery"
+    "no bilateral arm symptoms",
+    "no gait disturbance",
+    "no myelopathy hx"
    ],
    "exam": [
-    "Cervical limited ROM",
-    "Paraspinal tenderness",
-    "Spurling negative",
-    "Motor 5/5 upper",
-    "Sensation intact",
-    "Reflexes 2+",
-    "Shoulder normal"
+    "neck tenderness",
+    "ROM limited",
+    "upper limb power intact",
+    "sensation intact",
+    "reflexes normal"
    ],
    "redFlags": [
-    "Myelopathy signs",
-    "Trauma fracture",
-    "Fever infection",
-    "Weight loss malignancy",
-    "Radicular weakness",
-    "Bowel/bladder symptoms"
+    "trauma",
+    "myelopathic signs",
+    "bilateral paresthesia",
+    "gait disturbance",
+    "fever"
    ],
    "planPhrases": [
-    "NSAIDs",
-    "Muscle relaxants",
-    "Gentle neck ROM exercises",
-    "Posture correction",
-    "Heat therapy",
-    "Return if arm weakness or gait difficulty"
+    "analgesia per plan",
+    "activity modification",
+    "physiotherapy",
+    "neck exercises",
+    "ergonomic advice"
    ],
    "followUp": [
-    "2 weeks no improvement",
-    "PT chronic",
-    "Ortho/neuro if radicular"
+    "2 weeks",
+    "return if neuro symptoms"
    ]
   },
   "Knee pain": {
@@ -1165,106 +922,88 @@ var VISIT_LIBRARY = {
     "knee pain",
     "swelling",
     "stiffness",
-    "locking",
-    "buckling",
     "instability",
-    "difficulty weight bearing",
-    "crepitus",
-    "morning stiffness",
-    "pain stairs",
-    "pain squatting"
+    "locking",
+    "pain stairs/walking",
+    "crepitus"
    ],
    "negatives": [
-    "no acute trauma",
+    "no trauma",
+    "no fever",
     "no locking",
     "no giving way",
-    "no fever",
     "no redness",
-    "no known gout",
-    "no prior knee surgery"
+    "no known inflammatory arthritis"
    ],
    "exam": [
-    "Knee mild effusion",
-    "ROM 0-120",
-    "No erythema",
-    "McMurray negative",
-    "Lachman negative",
-    "Collateral ligaments stable",
-    "Patellofemoral positive"
+    "no effusion",
+    "mild effusion",
+    "ROM reduced",
+    "joint line tenderness",
+    "stable ligament",
+    "McMurray neg"
    ],
    "redFlags": [
-    "Acute locked knee",
-    "Septic arthritis",
-    "Unable to bear weight",
-    "Ligament instability",
-    "Joint replacement concerns"
+    "trauma unable to bear weight",
+    "fever with swelling",
+    "acute locking",
+    "rapid swelling",
+    "septic signs"
    ],
    "planPhrases": [
-    "Activity modification rest",
-    "Ice therapy",
-    "NSAIDs",
-    "Quad strengthening",
-    "Weight management",
-    "Knee sleeve",
-    "Return if acute swelling or locking"
+    "rest and ice",
+    "elevation",
+    "analgesia per plan",
+    "physiotherapy",
+    "avoid impact"
    ],
    "followUp": [
-    "2-4 weeks conservative",
-    "MRI meniscal/ligament injury",
-    "Ortho if chronic"
+    "2-4 weeks",
+    "return if acute worsening",
+    "return if locking persists"
    ]
   },
   "Shoulder pain": {
    "symptoms": [
     "shoulder pain",
     "limited ROM",
-    "night pain",
     "overhead pain",
+    "night pain",
     "weakness",
-    "stiffness",
-    "clicking",
-    "grinding",
-    "instability",
-    "previous injury"
+    "clicking"
    ],
    "negatives": [
-    "no acute trauma",
-    "no dislocation",
+    "no trauma",
     "no fever",
-    "no swelling",
-    "no numbness",
-    "no neck pain",
-    "no known rotator cuff pathology"
+    "no dislocation hx",
+    "no cervical spine symptoms",
+    "no numbness"
    ],
    "exam": [
-    "Shoulder active ROM limited 120",
-    "Passive ROM mildly limited",
-    "Neer positive",
-    "Hawkins positive",
-    "Drop arm negative",
-    "Painful arc 60-120",
-    "Cervical normal"
+    "tenderness anterior/lateral shoulder",
+    "impingement +",
+    "empty can test",
+    "apprehension neg",
+    "ROM limited"
    ],
    "redFlags": [
-    "Acute rotator cuff tear",
-    "Dislocation/fracture",
-    "Septic arthritis",
-    "Adhesive capsulitis",
-    "Cervical radiculopathy",
-    "Tumor night pain weight loss"
+    "trauma with deformity",
+    "fever",
+    "acute weakness",
+    "posterior dislocation suspected",
+    "frozen shoulder"
    ],
    "planPhrases": [
-    "NSAIDs",
-    "PT rotator cuff strengthening",
-    "Avoid overhead lifting",
-    "Ice after activity",
-    "Corticosteroid injection if severe",
-    "Return if acute weakness"
+    "rest",
+    "activity modification",
+    "analgesia per plan",
+    "physiotherapy",
+    "sling for comfort"
    ],
    "followUp": [
-    "4-6 weeks PT",
-    "MRI rotator cuff tear",
-    "Ortho surgery eval"
+    "2-4 weeks",
+    "return if no improvement",
+    "return if acute worsening"
    ]
   },
   "Hip pain": {
@@ -1272,105 +1011,91 @@ var VISIT_LIBRARY = {
     "hip pain",
     "groin pain",
     "buttock pain",
-    "limited motion",
     "stiffness",
-    "limping",
-    "pain weight bearing",
-    "difficulty walking",
-    "night pain",
-    "clicking"
+    "limp",
+    "pain walking/weight bearing"
    ],
    "negatives": [
-    "no acute trauma",
+    "no trauma",
     "no fever",
-    "no known AVN",
-    "no prior hip surgery",
-    "no hip dysplasia",
-    "no corticosteroid use"
+    "no avascular necrosis hx",
+    "no fall",
+    "no knee pain referred"
    ],
    "exam": [
-    "Hip ROM limited internal rotation",
-    "Pain arc flexion/rotation",
-    "Trendelenburg negative",
-    "Leg lengths equal",
-    "Gait antalgic",
-    "Lumbar normal"
+    "antalgic gait",
+    "hip ROM reduced",
+    "internal rotation painful",
+    "FABER test",
+    "Trendelenburg neg"
    ],
    "redFlags": [
-    "Unable to bear weight",
-    "Septic arthritis",
-    "AVN risk",
-    "Fracture",
-    "Rapid onset severe"
+    "trauma elderly",
+    "fever",
+    "unable to bear weight",
+    "prolonged steroid use",
+    "AVN risk"
    ],
    "planPhrases": [
-    "Activity modification",
-    "NSAIDs",
-    "PT hip strengthening",
-    "Walking aid if needed",
-    "Weight management",
-    "Return if unable to bear weight"
+    "rest",
+    "analgesia per plan",
+    "physiotherapy",
+    "activity modification",
+    "walking aid considered"
    ],
    "followUp": [
-    "4-6 weeks PT",
-    "Xray/MRI suspected OA/AVN",
-    "Ortho severe OA"
+    "4-6 weeks",
+    "return if unable to bear weight"
    ]
   },
-  "Ankle / foot pain": {
+  "Ankle / Foot pain": {
    "symptoms": [
     "ankle pain",
     "foot pain",
     "swelling",
     "difficulty walking",
-    "bruising",
     "instability",
-    "pain weight bearing",
-    "stiffness",
-    "numbness",
-    "tingling"
+    "bruising",
+    "tenderness"
    ],
    "negatives": [
-    "no acute trauma",
-    "no open wound",
+    "no trauma",
     "no fever",
-    "no known gout",
-    "no DVT symptoms",
-    "no diabetes",
-    "no prior ankle surgery"
+    "no known fracture",
+    "no redness",
+    "no DVT hx",
+    "no diabetic foot"
    ],
    "exam": [
-    "Ankle mild swelling",
-    "Erythema absent",
-    "ROM limited",
-    "Lateral ligament tenderness",
-    "Anterior drawer test",
-    "Squeeze test",
-    "Neurovascular intact"
+    "edema present",
+    "tenderness over area",
+    "ROM reduced",
+    "anterior drawer test",
+    "no deformity",
+    "pulses palpable"
    ],
    "redFlags": [
-    "Unable to bear weight",
-    "Open fracture",
-    "Septic joint",
-    "DVT suspicion",
-    "Compartment syndrome",
-    "Gout flare"
+    "unable to bear weight",
+    "deformity",
+    "open wound",
+    "fever",
+    "suspected DVT",
+    "diabetic foot infection"
    ],
    "planPhrases": [
     "RICE protocol",
-    "NSAIDs",
-    "Weight bearing as tolerated",
-    "Ankle brace if instability",
-    "PT balance strength",
-    "Return if unable to bear weight or infection"
+    "elevation",
+    "analgesia per plan",
+    "compression",
+    "partial weight bearing",
+    "physiotherapy"
    ],
    "followUp": [
     "1-2 weeks",
-    "Xray fracture suspected",
-    "Ortho chronic instability"
+    "return if unable to bear weight"
    ]
   },
-  "Wrist / hand pain": {
+  "Wrist / Hand pain": {
    "symptoms": [
     "wrist pain",
     "hand pain",
@@ -1379,291 +1104,250 @@ var VISIT_LIBRARY = {
     "numbness",
     "tingling",
     "weakness",
-    "decreased grip",
-    "pain movement",
-    "clicking",
-    "triggering"
+    "reduced grip"
    ],
    "negatives": [
-    "no acute trauma",
+    "no trauma",
     "no fever",
+    "no known fracture",
+    "no redness",
     "no known RA",
-    "no known OA",
-    "no prior wrist surgery",
-    "no diabetes"
+    "no carpal tunnel hx"
    ],
    "exam": [
-    "Wrist mild swelling",
+    "tenderness over site",
     "ROM limited",
-    "No deformity",
-    "Finkelstein test",
-    "Phalen negative",
-    "Tinel negative",
-    "Grip strength reduced"
+    "Phalen test",
+    "Tinel sign",
+    "grip strength reduced",
+    "sensation intact"
    ],
    "redFlags": [
-    "Acute fracture",
-    "Septic arthritis",
-    "Compartment syndrome",
-    "Acute carpal tunnel severe",
-    "Tendon rupture"
+    "trauma with deformity",
+    "fever with swelling",
+    "compartment syndrome",
+    "pulselessness"
    ],
    "planPhrases": [
-    "Splint rest activity mod",
-    "NSAIDs",
-    "PT strengthening",
-    "Carpal tunnel exercises",
-    "Ergonomic modifications",
-    "Return if acute trauma"
+    "rest and splint",
+    "analgesia per plan",
+    "activity modification",
+    "physiotherapy",
+    "ergonomic assessment"
    ],
    "followUp": [
-    "2 weeks conservative",
-    "EMG if carpal tunnel",
-    "Hand surgery chronic"
+    "2-4 weeks",
+    "return if no improvement"
    ]
   },
   "Acute sprain": {
    "symptoms": [
-    "pain",
+    "pain after injury",
     "swelling",
     "bruising",
     "limited motion",
-    "difficulty weight bearing",
-    "instability",
-    "tenderness",
-    "warmth"
+    "pain with use",
+    "tenderness"
    ],
    "negatives": [
-    "no open wound",
     "no deformity",
-    "no neurovascular compromise",
-    "no prior injury same site",
-    "no ligament laxity"
+    "no unable to bear weight",
+    "no known fracture",
+    "no open wound",
+    "no neuro deficit"
    ],
    "exam": [
-    "Localized swelling",
-    "Ecchymosis",
-    "Tenderness over ligament",
-    "ROM limited by pain",
-    "Ligament stress test",
-    "No crepitus",
-    "Neurovascular intact"
+    "swelling graded",
+    "tenderness",
+    "ROM reduced",
+    "stress test",
+    "stability assessed",
+    "neurovascular intact"
    ],
    "redFlags": [
-    "Unable to bear weight",
-    "Open fracture",
-    "Neurovascular compromise",
-    "Joint dislocation",
-    "Compartment syndrome"
+    "fracture suspected",
+    "dislocation",
+    "neurovascular compromise",
+    "open injury"
    ],
    "planPhrases": [
-    "RICE first 48h",
-    "NSAIDs",
-    "Weight bearing as tolerated",
-    "Compression bandage",
-    "Elevation",
-    "PT rehabilitation",
-    "Return if unable to bear weight"
+    "RICE protocol",
+    "analgesia per plan",
+    "activity modification",
+    "compression",
+    "elevation",
+    "physiotherapy"
    ],
    "followUp": [
-    "1 week reassess",
-    "PT referral",
-    "Xray if fracture suspected"
+    "1-2 weeks",
+    "return if no improvement"
    ]
   },
-  "Fracture f/u": {
+  "Fracture follow-up": {
    "symptoms": [
-    "f/u post fracture",
-    "pain improving",
-    "swelling decreasing",
-    "ROM improving",
-    "weight bearing progress",
-    "cast condition",
-    "activity limitations"
+    "pain at fracture site",
+    "swelling",
+    "limited use",
+    "cast check",
+    "wound check",
+    "range improving"
    ],
    "negatives": [
-    "no new trauma",
-    "no wound issues",
+    "no infection",
+    "no neurovascular compromise",
     "no cast complications",
-    "no neuro symptoms",
-    "no DVT symptoms"
+    "no new trauma"
    ],
    "exam": [
-    "Cast intact dry",
-    "No pressure sores",
-    "Fingers/toes pink warm",
-    "Cap refill <2 sec",
-    "Sensation intact",
-    "Motor intact",
-    "Swelling mild"
+    "cast intact",
+    "wound dry if surgical",
+    "edema present",
+    "distal neurovascular intact",
+    "movement improving"
    ],
    "redFlags": [
-    "Cast complications",
-    "Neurovascular compromise",
-    "Non-union/malunion",
-    "Infection signs",
-    "DVT/PE"
+    "infection signs",
+    "cast complications",
+    "non-union suspicion",
+    "neurovascular compromise"
    ],
    "planPhrases": [
-    "Continue immobilization",
-    "Weight bearing as instructed",
-    "Monitor for cast complications",
-    "Elevate when resting",
-    "PT after cast removal",
-    "Return if severe pain or cast issues"
+    "analgesia per plan",
+    "cast care",
+    "elevation",
+    "weight bearing as tolerated",
+    "follow-up imaging"
    ],
    "followUp": [
-    "Per fracture protocol",
-    "Xray healing",
-    "Ortho as scheduled"
+    "per ortho plan",
+    "return if cast problems",
+    "return if fever"
    ]
   },
-  "Post-op f/u": {
+  "Post-op follow-up": {
    "symptoms": [
-    "post-operative f/u",
+    "surgical site pain",
+    "limited mobility",
     "wound healing",
-    "pain control",
-    "ROM progress",
-    "weight bearing",
-    "swelling",
-    "drainage",
-    "activity restrictions"
+    "rehabilitation",
+    "return to activity"
    ],
    "negatives": [
     "no fever",
     "no wound drainage",
-    "no excessive pain",
-    "no neuro symptoms",
-    "no DVT symptoms",
-    "no wound dehiscence"
+    "no erythema",
+    "no significant swelling",
+    "no DVT symptoms"
    ],
    "exam": [
-    "Wound clean dry intact",
-    "Suture line well-approximated",
-    "No erythema",
-    "No discharge",
-    "ROM per protocol",
-    "Swelling mild",
-    "Distal neurovascular intact"
+    "wound healing well",
+    "clean dry",
+    "sutures intact",
+    "no discharge",
+    "ROM improving"
    ],
    "redFlags": [
-    "Wound infection",
-    "Dehiscence",
-    "DVT/PE",
-    "Excessive pain",
-    "Neurovascular compromise"
+    "wound infection",
+    "dehiscence",
+    "DVT signs",
+    "uncontrolled pain",
+    "fever"
    ],
    "planPhrases": [
-    "Continue wound care",
-    "Progress ROM per PT",
-    "Weight bearing per protocol",
-    "Pain managed with prescribed meds",
-    "Return if fever or wound drainage"
+    "wound care reinforced",
+    "activity restrictions",
+    "analgesia per plan",
+    "rehabilitation plan"
    ],
    "followUp": [
-    "Per surgical protocol",
-    "PT f/u",
-    "Surgeon f/u scheduled"
+    "per surgical plan",
+    "return if wound infection",
+    "return if DVT symptoms"
    ]
   },
-  "OA f/u": {
+  "Osteoarthritis follow-up": {
    "symptoms": [
     "joint pain",
-    "stiffness",
-    "worsening over time",
-    "morning stiffness <30 min",
-    "crepitus",
-    "limited ROM",
-    "functional limitation",
-    "pain activity",
-    "relief with rest"
+    "morning stiffness",
+    "activity-related pain",
+    "swelling",
+    "reduced function",
+    "crepitus"
    ],
    "negatives": [
-    "no acute trauma",
-    "no effusion",
+    "no acute injury",
     "no fever",
+    "no redness",
     "no night pain",
-    "no joint instability",
-    "no locking"
+    "no recent fall"
    ],
    "exam": [
-    "Joint mild-moderate crepitus",
-    "ROM limited",
-    "No effusion",
-    "Joint line tenderness",
-    "No instability",
-    "Gait antalgic"
+    "joint effusion absent/mild",
+    "ROM reduced",
+    "crepitus",
+    "varus/valgus deformity",
+    "stable joint"
    ],
    "redFlags": [
-    "Rapid worsening",
-    "Acute effusion",
-    "Locking",
-    "Giving way",
-    "Severe functional limitation"
+    "acute worsening",
+    "fever",
+    "joint redness",
+    "new deformity",
+    "neuro symptoms"
    ],
    "planPhrases": [
-    "Continue analgesics PRN",
-    "PT strengthening and ROM",
-    "Weight management",
-    "Walking aid",
-    "Joint protection",
-    "Consider intra-articular injection",
-    "Referral joint replacement evaluation"
+    "analgesia per plan",
+    "lifestyle modification",
+    "exercise",
+    "weight reduction",
+    "joint protection",
+    "physiotherapy"
    ],
    "followUp": [
     "3-6 months",
-    "Xray progression",
-    "Ortho surgical eval"
+    "return if acute worsening",
+    "ortho referral if progression"
    ]
   },
   "Sports injury": {
    "symptoms": [
-    "sports injury",
-    "acute injury",
+    "injury during sport",
+    "pain with activity",
     "swelling",
-    "bruising",
     "limited motion",
     "weakness",
-    "instability",
-    "clicking",
-    "locking",
-    "pop sensation"
+    "instability"
    ],
    "negatives": [
-    "no open wound",
-    "no fracture deformity",
-    "no neurovascular deficit",
-    "no prior surgery same site",
-    "no chronic condition"
+    "no deformity",
+    "no unable to bear weight",
+    "no fracture suspected",
+    "no prior injury"
    ],
    "exam": [
-    "Swelling ecchymosis",
-    "Tenderness localized",
+    "tenderness",
     "ROM limited",
-    "Ligament stress test",
-    "Special tests per joint",
-    "Muscle strength",
-    "Neurovascular intact"
+    "stress test",
+    "stability assessed",
+    "swelling graded",
+    "functional testing limited"
    ],
    "redFlags": [
-    "Fracture/dislocation",
-    "Complete tendon rupture",
-    "Neurovascular compromise",
-    "Compartment syndrome",
-    "Concussion head injury"
+    "fracture suspected",
+    "dislocation",
+    "neurovascular compromise",
+    "full thickness tear suspected"
    ],
    "planPhrases": [
     "RICE protocol",
-    "NSAIDs",
-    "Activity restriction",
-    "PT referral",
-    "Gradual return to sport",
-    "Return if severe pain or instability"
+    "analgesia per plan",
+    "activity modification",
+    "sports physiotherapy",
+    "return to play guidelines"
    ],
    "followUp": [
-    "1 week reassess",
-    "PT rehabilitation",
-    "Ortho/sports med severe"
+    "1-2 weeks",
+    "sports med referral if persistent"
    ]
   }
  },
@@ -1672,498 +1356,461 @@ var VISIT_LIBRARY = {
    "symptoms": [
     "fever",
     "irritability",
-    "decreased feeding",
+    "reduced intake",
+    "decreased activity",
     "vomiting",
     "diarrhea",
-    "rash",
     "cough",
-    "runny nose",
-    "ear pain",
-    "lethargy",
-    "poor sleep"
+    "ear pain"
    ],
    "negatives": [
     "no stiff neck",
-    "no petechiae",
+    "no persistent vomiting",
+    "no rash with fever",
     "no seizure",
-    "no dehydration",
-    "no difficulty breathing",
-    "no known sick contact",
-    "immunizations up to date"
+    "no breathing difficulty"
    ],
    "exam": [
-    "Temp 38.9 C",
-    "HR 130",
-    "RR 28",
-    "O2 sat 99%",
-    "Well appearing",
-    "Hydrated",
-    "Throat mildly injected",
-    "Ears normal",
-    "Chest clear",
-    "Cap refill <2 sec"
+    "afebrile",
+    "febrile",
+    "hydrated",
+    "mildly dehydrated",
+    "throat congested",
+    "chest clear",
+    "TM normal"
    ],
    "redFlags": [
-    "Fever >40 C",
-    "Lethargy/irritable",
-    "Petechial/purpuric rash",
-    "Stiff neck",
-    "Seizure",
-    "Dehydration",
-    "Age <3 months fever"
+    "high fever >39.5",
+    "petechial rash",
+    "neck stiffness",
+    "seizure",
+    "dehydration",
+    "<3mo infant",
+    "immunocompromised"
    ],
    "planPhrases": [
-    "Antipyretics paracetamol/ibuprofen",
-    "Encourage feeds hydration",
-    "Dress lightly",
-    "Monitor urine output",
-    "Return if fever >72h or worsening"
+    "antipyretic per plan",
+    "hydration",
+    "monitoring",
+    "return precautions"
    ],
    "followUp": [
-    "48-72h if no improvement",
-    "If fever >5 days",
-    "If new symptoms"
+    "return if fever >72h",
+    "return if child looks sick",
+    "return if new rash"
    ]
   },
-  "Pediatric cough/cold": {
+  "Pediatric cough / cold": {
    "symptoms": [
     "cough",
     "runny nose",
     "nasal congestion",
-    "fever",
     "sneezing",
-    "sore throat",
-    "decreased appetite",
-    "irritability",
-    "difficulty sleeping",
-    "ear pulling"
-   ],
-   "negatives": [
-    "no difficulty breathing",
-    "no wheezing",
-    "no stridor",
-    "no cyanosis",
-    "no dehydration",
-    "no ear discharge",
-    "no known asthma"
-   ],
-   "exam": [
-    "Temp 37.8",
-    "Well appearing",
-    "Nasal congestion",
-    "Throat mildly injected",
-    "Tympanic normal",
-    "Chest clear",
-    "No lymphadenopathy"
-   ],
-   "redFlags": [
-    "Respiratory distress",
-    "Stridor",
-    "Wheezing",
-    "Cyanosis",
-    "Dehydration",
-    "Poor feeding",
-    "Apnea"
-   ],
-   "planPhrases": [
-    "Nasal saline drops suction",
-    "Antipyretics if fever",
-    "Encourage fluids",
-    "Humidified air",
-    "Honey if >1 year for cough",
-    "Return if difficulty breathing or dehydration"
-   ],
-   "followUp": [
-    "5-7 days",
-    "If respiratory distress",
-    "If poor feeding"
-   ]
-  },
-  "Vomiting / diarrhea": {
-   "symptoms": [
-    "vomiting",
-    "diarrhea",
-    "abdominal cramps",
     "fever",
-    "decreased appetite",
-    "lethargy",
-    "dry mouth",
-    "decreased urine",
-    "crying",
+    "reduced feeding",
     "irritability"
    ],
    "negatives": [
-    "no blood in stool",
-    "no bilious vomiting",
-    "no severe pain",
-    "no seizure",
-    "no head trauma",
-    "no known food allergy"
+    "no breathing difficulty",
+    "no wheezing",
+    "no ear pain",
+    "no rash",
+    "no conjunctivitis"
    ],
    "exam": [
-    "Temp 37.5",
-    "HR 120",
-    "Mildly dry mucous membranes",
-    "Cap refill <2 sec",
-    "Abdomen soft",
-    "Bowel sounds hyperactive",
-    "Skin turgor normal",
-    "Fontanelle normal"
+    "afebrile",
+    "nasal congestion",
+    "chest clear",
+    "no respiratory distress",
+    "alert",
+    "hydrated"
    ],
    "redFlags": [
-    "Bilious vomiting",
-    "Bloody stool",
-    "Severe dehydration",
-    "Lethargy",
-    "Seizure",
-    "Abdominal distension",
-    "Intussusception signs"
+    "respiratory distress",
+    "stridor",
+    "wheezing",
+    "dehydration",
+    "fever >5 days"
    ],
    "planPhrases": [
-    "ORS small frequent sips",
-    "Continue breastmilk/formula",
-    "BRAT diet if age appropriate",
-    "Antipyretics",
-    "Monitor wet diapers",
-    "Return if bilious vomiting or bloody stool"
+    "supportive care",
+    "nasal saline drops",
+    "humidifier",
+    "hydration",
+    "antipyretic if febrile"
    ],
    "followUp": [
-    "24-48h",
-    "ER severe dehydration",
-    "If unable to tolerate oral"
+    "return if breathing difficulty",
+    "return if fever persists"
    ]
   },
-  "Rash": {
+  "Vomiting / Diarrhea": {
    "symptoms": [
-    "rash",
+    "vomiting",
+    "diarrhea",
+    "abdominal cramping",
+    "reduced intake",
     "fever",
-    "itching",
-    "irritability",
-    "decreased sleep",
-    "cough",
-    "coryza",
-    "conjunctivitis",
-    "joint pain",
-    "malaise"
+    "fatigue"
    ],
    "negatives": [
-    "no fever >40",
-    "no petechiae",
-    "no blistering",
-    "no mucosal involvement",
-    "no joint swelling",
-    "no known allergy",
-    "immunizations up to date"
+    "no blood in vomitus",
+    "no blood in stool",
+    "no severe pain",
+    "no altered mental status",
+    "no sick contacts"
    ],
    "exam": [
-    "Temp 37.2",
-    "Well appearing",
-    "Mild pruritic maculopapular rash trunk",
-    "No petechiae",
-    "No vesicles",
-    "Mucous membranes clear",
-    "No lymphadenopathy"
+    "hydration adequate",
+    "mildly dehydrated",
+    "moderately dehydrated",
+    "abdomen soft",
+    "bowel sounds increased"
    ],
    "redFlags": [
-    "Petechiae/purpura",
-    "Blistering rash",
-    "Mucosal involvement",
-    "High fever with rash",
-    "Toxic appearance",
-    "Meningococcemia signs"
+    "severe dehydration",
+    "bloody stools",
+    "bilious vomiting",
+    "lethargy",
+    "<6mo infant",
+    "abdominal distension"
    ],
    "planPhrases": [
-    "Antihistamine itching",
-    "Topical calamine",
-    "Antipyretics",
-    "Cool compresses",
-    "Avoid scratching",
-    "Return if high fever or petechiae"
+    "ORS",
+    "clear fluids",
+    "antiemetic per plan",
+    "small frequent feeds",
+    "return precautions",
+    "step-up diet"
    ],
    "followUp": [
-    "3-5 days",
-    "If fever persists",
-    "If rash spreads"
+    "return if unable to tolerate fluids",
+    "return if bloody stools",
+    "return if lethargy"
+   ]
+  },
+  "Pediatric rash": {
+   "symptoms": [
+    "rash",
+    "itching",
+    "fever",
+    "irritability",
+    "reduced sleep",
+    "scratching"
+   ],
+   "negatives": [
+    "no high fever",
+    "no blistering",
+    "no mucosal involvement",
+    "no joint pain",
+    "no known allergen"
+   ],
+   "exam": [
+    "erythematous rash",
+    "maculopapular",
+    "vesicular",
+    "well circumscribed",
+    "no secondary infection",
+    "afebrile"
+   ],
+   "redFlags": [
+    "petechial",
+    "purpuric",
+    "rash with high fever",
+    "mucosal involvement",
+    "blistering",
+    "rapid spread"
+   ],
+   "planPhrases": [
+    "emollient",
+    "antihistamine per plan",
+    "topical steroid per plan",
+    "avoid irritants",
+    "monitor"
+   ],
+   "followUp": [
+    "return if rash spreads",
+    "return if fever",
+    "return if child looks unwell"
    ]
   },
   "Poor feeding": {
    "symptoms": [
     "poor feeding",
-    "decreased appetite",
-    "weight loss/poor gain",
-    "fussiness",
-    "crying with feeds",
-    "vomiting",
-    "reflux",
-    "constipation",
-    "diarrhea",
-    "fatigue"
+    "reduced milk intake",
+    "irritability during feeds",
+    "fatigue",
+    "weight concern",
+    "fussiness"
    ],
    "negatives": [
     "no fever",
-    "no vomiting",
     "no diarrhea",
     "no respiratory distress",
-    "no known medical conditions",
-    "birth history normal"
+    "no known GI issues",
+    "no formula change"
    ],
    "exam": [
-    "Well appearing",
-    "Hydrated",
-    "Weight on growth curve",
-    "Abdomen soft",
-    "Normal oromotor function",
-    "Oral mucosa normal"
+    "alert",
+    "hydrated",
+    "mildly dehydrated",
+    "weight plotted",
+    "abdomen soft",
+    "no thrush"
    ],
    "redFlags": [
-    "Significant weight loss",
-    "Dehydration",
-    "Projectile vomiting",
-    "Respiratory distress",
-    "Cyanosis with feeds"
+    "weight loss",
+    "dehydration",
+    "lethargy",
+    "bilious vomiting",
+    "respiratory distress"
    ],
    "planPhrases": [
-    "Frequent small feeds",
-    "Burp well during/after feeds",
-    "Position upright after feeds",
-    "Monitor wet diapers",
-    "Growth chart monitoring",
-    "Return if poor weight gain or dehydration"
+    "feeding technique",
+    "positioning",
+    "schedule review",
+    "wet diaper count",
+    "weight monitoring"
    ],
    "followUp": [
-    "1-2 weeks weight check",
-    "Weight loss continues",
-    "Pediatric GI referral"
+    "weight check 1-2 weeks",
+    "return if worsening",
+    "return if dehydration signs"
    ]
   },
-  "Ear pain": {
+  "Pediatric ear pain": {
    "symptoms": [
     "ear pain",
-    "fever",
+    "tugging at ear",
     "irritability",
-    "pulling at ear",
-    "difficulty hearing",
-    "congestion",
-    "cough",
-    "runny nose",
-    "decreased appetite",
-    "poor sleep"
+    "fever",
+    "reduced hearing",
+    "crying"
    ],
    "negatives": [
     "no ear discharge",
-    "no dizziness",
-    "no head trauma",
-    "no known ear problems",
-    "no foreign body"
+    "no trauma",
+    "no foreign body",
+    "no known perforation"
    ],
    "exam": [
-    "Temp 38.0",
-    "TM erythematous bulging",
-    "Decreased mobility",
-    "Throat normal",
-    "Nasal congestion",
-    "Cervical lymph nodes normal"
+    "TM normal",
+    "TM injected",
+    "TM erythematous",
+    "TM bulging",
+    "ear canal clear"
    ],
    "redFlags": [
-    "Post-auricular swelling mastoiditis",
-    "Ear discharge >2 weeks",
-    "Fever >40",
-    "Severe pain",
-    "Hearing loss"
+    "high fever with ear pain",
+    "mastoid tenderness",
+    "post-auricular swelling",
+    "discharge >48h"
    ],
    "planPhrases": [
-    "Analgesics",
-    "Antipyretics",
-    "Observation if >6 months non-severe",
-    "Antibiotics if <6 months or severe",
-    "Return if worsening or ear discharge"
+    "analgesia per plan",
+    "antibiotics per plan if AOM",
+    "follow-up",
+    "return precautions"
    ],
    "followUp": [
-    "48-72h",
-    "If ear discharge",
-    "ENT recurrent OM"
+    "return if fever persists",
+    "return if ear discharge",
+    "follow-up 2-3 days if AOM"
    ]
   },
   "Pediatric abdominal pain": {
    "symptoms": [
     "abdominal pain",
     "cramping",
+    "nausea",
     "vomiting",
     "diarrhea",
     "constipation",
     "fever",
-    "decreased appetite",
-    "pallor",
-    "lethargy",
-    "pain movement"
+    "reduced appetite"
    ],
    "negatives": [
-    "no bilious vomiting",
     "no blood in stool",
-    "no severe localized pain",
+    "no bilious vomiting",
+    "no weight loss",
     "no dysuria",
-    "no known chronic condition",
-    "no abdominal distension"
+    "no trauma"
    ],
    "exam": [
-    "Temp 37.0",
-    "Well or mildly uncomfortable",
-    "Abdomen soft",
-    "No guarding/rebound",
-    "Bowel sounds present",
-    "No masses",
-    "No hernias"
+    "abdomen soft",
+    "mild tenderness",
+    "no guarding",
+    "no rebound",
+    "bowel sounds present",
+    "child comfortable"
    ],
    "redFlags": [
-    "Bilious vomiting",
-    "Bloody stool",
-    "Severe localized pain RLQ",
-    "Abdominal distension",
-    "Peritoneal signs",
-    "Intussusception"
+    "severe pain",
+    "peritoneal signs",
+    "bilious vomiting",
+    "blood in stool",
+    "fever with tenderness",
+    "pallor"
    ],
    "planPhrases": [
-    "BRAT diet",
-    "Encourage fluids",
-    "Antipyretics",
-    "Pain monitoring",
-    "Return if severe pain or bilious vomiting"
+    "dietary modification",
+    "analgesia per plan",
+    "hydration",
+    "return precautions",
+    "follow-up"
    ],
    "followUp": [
-    "24-48h",
-    "RLQ pain",
-    "Pediatric surgery if appy"
+    "return if severe pain",
+    "return if bilious vomiting",
+    "return if fever"
    ]
   },
-  "Routine pediatric f/u": {
+  "Routine pediatric follow-up": {
    "symptoms": [
-    "routine check-up",
-    "growth monitoring",
-    "development assessment",
+    "check-up",
+    "growth assessment",
+    "development review",
     "vaccination review",
-    "feeding concerns",
-    "sleep patterns",
-    "behavior"
+    "feeding review"
    ],
    "negatives": [
     "no acute illness",
-    "no fever",
-    "no concerning symptoms",
-    "development on track"
+    "no growth concerns",
+    "no developmental concerns",
+    "no new symptoms"
    ],
    "exam": [
-    "Growth parameters on chart",
-    "Weight height head circumference",
-    "Development age appropriate",
-    "Heart sounds normal",
-    "Lungs clear",
-    "Abdomen soft",
-    "Hips stable"
+    "weight/height/head circ plotted",
+    "development age-appropriate",
+    "vitals normal",
+    "alert"
    ],
    "redFlags": [
-    "Growth faltering",
-    "Developmental delay",
-    "Abnormal vitals",
-    "Significant findings"
+    "weight crossing percentiles",
+    "developmental delay",
+    "failure to thrive",
+    "abnormal vitals"
    ],
    "planPhrases": [
-    "Growth development on track",
-    "Next vaccines due",
-    "Anticipatory guidance per age",
-    "Accident prevention",
-    "Nutrition advice",
-    "Next well-child visit"
+    "growth reviewed",
+    "milestones discussed",
+    "feeding discussed",
+    "vaccination reviewed",
+    "next scheduled"
    ],
    "followUp": [
-    "Per vaccination schedule",
-    "3-6 months routine",
-    "Earlier if concerns"
+    "next well-child per schedule",
+    "return if concerns"
    ]
   },
   "Vaccination visit": {
    "symptoms": [
     "routine vaccination",
-    "vaccine due",
-    "well child",
-    "no acute illness",
-    "parental questions",
-    "previous vaccine reactions"
+    "scheduled immunization",
+    "vaccine review"
    ],
    "negatives": [
     "no fever",
     "no acute illness",
-    "no known vaccine allergy",
-    "no severe reaction history",
-    "no contraindications"
+    "no known allergy",
+    "no prior adverse reaction",
+    "no immunocompromise"
    ],
    "exam": [
-    "Well appearing",
-    "Temp 36.8",
-    "Growth parameters stable",
-    "Development age appropriate",
-    "Vaccines administered per schedule"
+    "child well",
+    "afebrile",
+    "no signs of acute illness"
    ],
    "redFlags": [
-    "Severe allergic reaction history",
-    "Encephalopathy",
-    "Active severe illness",
-    "Immunocompromised",
-    "Specific contraindications per vaccine"
+    "fever today",
+    "acute illness",
+    "known allergic reaction",
+    "immunocompromise",
+    "recent immunoglobulin"
    ],
    "planPhrases": [
-    "Vaccines administered per national schedule",
-    "Parental consent obtained",
-    "Observation for 15-30 min post-vaccination",
-    "Counsel on expected side effects and management",
-    "Schedule next vaccination",
-    "Return for fever or severe reactions"
+    "vaccine administered",
+    "information discussed",
+    "side effects explained",
+    "next scheduled"
    ],
    "followUp": [
-    "Per schedule",
-    "Next dose due date",
-    "If adverse reaction"
+    "return for next vaccination",
+    "return if severe reaction"
    ]
   },
-  "School / sick note": {
+  "School / Sick note": {
    "symptoms": [
-    "request for medical note",
-    "school absence",
-    "sick days",
-    "clearance to return",
-    "sports clearance"
+    "school note needed",
+    "absence documentation",
+    "return clearance"
    ],
    "negatives": [
-    "no ongoing concerning symptoms",
+    "no ongoing fever",
     "no active infection",
-    "no unaddressed issues",
-    "fit to resume activities"
+    "no ongoing symptoms requiring exclusion"
    ],
    "exam": [
-    "Temp normal",
-    "General exam unremarkable",
-    "No findings on targeted exam"
+    "child well appearing",
+    "no signs acute illness",
+    "vitals normal"
    ],
    "redFlags": [
-    "Persistent unexplained symptoms",
-    "Undiagnosed condition",
-    "Chronic illness need school accommodation"
+    "ongoing fever",
+    "active contagious illness",
+    "unresolved symptoms"
    ],
    "planPhrases": [
-    "Exam normal",
-    "Fit to resume school/activity",
-    "Note provided",
-    "Recommend follow-up with school nurse if needed",
-    "Return if symptoms recur"
+    "sick note provided",
+    "return date documented",
+    "exclusion period discussed"
    ],
    "followUp": [
-    "PRN",
-    "Earlier if new symptoms",
-    "Per request"
+    "return to school per note"
+   ]
+  },
+  "Feeding and growth concern": {
+   "symptoms": [
+    "poor weight gain",
+    "slow growth",
+    "reduced appetite",
+    "fussiness",
+    "faltering growth"
+   ],
+   "negatives": [
+    "no vomiting",
+    "no diarrhea",
+    "no fever",
+    "no medical condition",
+    "no developmental delay"
+   ],
+   "exam": [
+    "weight crossing percentiles",
+    "alert",
+    "hydrated",
+    "abdomen soft",
+    "feeding observed"
+   ],
+   "redFlags": [
+    "faltering despite intervention",
+    "vomiting",
+    "dehydration",
+    "underlying medical condition"
+   ],
+   "planPhrases": [
+    "feeding plan",
+    "weight monitoring",
+    "dietitian referral",
+    "growth chart follow-up"
+   ],
+   "followUp": [
+    "weight check 2-4 weeks",
+    "pediatric referral if persistent"
    ]
   }
  },
  "ENT": {
-  "Ear pain": {
+  "Ear pain / Otitis": {
    "symptoms": [
     "ear pain",
     "ear fullness",
@@ -2171,1723 +1818,1631 @@ var VISIT_LIBRARY = {
     "discharge",
     "dizziness",
     "fever",
-    "itching ear",
-    "tinnitus",
-    "otalgia"
+    "itching"
    ],
    "negatives": [
     "no trauma",
     "no foreign body",
     "no known perforation",
     "no tinnitus",
-    "no vertigo",
-    "no recent swimming"
+    "no vertigo"
    ],
    "exam": [
-    "Canal normal",
-    "Canal erythematous",
-    "Canal edematous",
+    "canal normal",
+    "canal erythematous",
     "TM normal",
     "TM injected",
+    "TM bulging",
     "TM perforation",
-    "Discharge present",
-    "No mastoid tenderness"
+    "discharge present"
    ],
    "redFlags": [
-    "Post-auricular swelling",
-    "Fever with ear pain",
-    "Discharge with pain",
-    "Hearing loss sudden",
-    "Facial nerve palsy"
+    "post-auricular swelling",
+    "fever",
+    "hearing loss",
+    "mastoid tenderness",
+    "discharge with pain"
    ],
    "planPhrases": [
-    "Analgesics",
-    "Aural hygiene",
-    "Keep ear dry",
-    "Topical antibiotics if AOE",
-    "Oral antibiotics if AOM",
-    "Return if severe pain or discharge"
+    "analgesia per plan",
+    "aural hygiene",
+    "keep ear dry",
+    "antibiotics per plan",
+    "follow-up"
    ],
    "followUp": [
-    "48-72h",
-    "If discharge",
-    "ENT referral"
+    "return if severe pain or discharge"
    ]
   },
-  "Hearing complaint": {
+  "Sore throat / Pharyngitis": {
    "symptoms": [
-    "hearing loss",
-    "gradual hearing loss",
-    "sudden hearing loss",
-    "unilateral loss",
-    "bilateral loss",
-    "ear fullness",
-    "tinnitus",
-    "difficulty understanding speech",
-    "asking repeats"
+    "sore throat",
+    "pain swallowing",
+    "fever",
+    "fatigue",
+    "swollen glands",
+    "hoarseness"
    ],
    "negatives": [
-    "no ear pain",
-    "no discharge",
-    "no dizziness",
-    "no trauma",
-    "no known noise exposure",
-    "no recent infections"
+    "no breathing difficulty",
+    "no cough >2w",
+    "no rash",
+    "no joint pain"
    ],
    "exam": [
-    "Canal clear",
-    "TM normal",
-    "TM retracted",
-    "TM perforated",
-    "Rinne test",
-    "Weber test",
-    "Whispered voice test"
+    "throat erythematous",
+    "tonsillar exudate",
+    "cervical lymphadenopathy",
+    "afebrile",
+    "febrile"
    ],
    "redFlags": [
-    "Sudden sensorineural loss",
-    "Unilateral loss",
-    "Trauma",
-    "Conductive with middle ear signs",
-    "Sudden worsening"
+    "airway compromise",
+    "drooling",
+    "peritonsillar abscess",
+    "trismus",
+    "unilateral severe pain"
    ],
    "planPhrases": [
-    "Audiometry referral",
-    "Hearing aid evaluation",
-    "Ear wax removal if impacted",
-    "Middle ear assessment",
-    "Return if sudden loss or trauma"
+    "analgesia per plan",
+    "fluids",
+    "rest",
+    "antibiotics if bacterial",
+    "warm saline gargles"
    ],
    "followUp": [
-    "Audiogram",
-    "ENT referral if SNHL",
-    "Hearing aid eval"
+    "3-5 days",
+    "return if swallowing difficulty worsens"
+   ]
+  },
+  "Nasal congestion / Sinusitis": {
+   "symptoms": [
+    "nasal congestion",
+    "facial pain",
+    "fever",
+    "headache",
+    "purulent discharge",
+    "reduced smell",
+    "postnasal drip"
+   ],
+   "negatives": [
+    "no fever >5d",
+    "no visual changes",
+    "no periorbital edema",
+    "no trauma"
+   ],
+   "exam": [
+    "nasal mucosa swollen",
+    "purulent discharge",
+    "sinus tenderness",
+    "afebrile",
+    "febrile"
+   ],
+   "redFlags": [
+    "periorbital edema",
+    "vision changes",
+    "severe headache",
+    "fever >5d",
+    "frontal swelling"
+   ],
+   "planPhrases": [
+    "decongestant per plan",
+    "saline rinse",
+    "analgesia",
+    "antibiotics if bacterial",
+    "steam inhalation"
+   ],
+   "followUp": [
+    "1-2 weeks",
+    "return if worsening"
+   ]
+  },
+  "Dizziness / Vertigo": {
+   "symptoms": [
+    "vertigo",
+    "dizziness",
+    "nausea",
+    "vomiting",
+    "unsteady",
+    "tinnitus",
+    "hearing loss"
+   ],
+   "negatives": [
+    "no focal weakness",
+    "no headache",
+    "no trauma",
+    "no syncope"
+   ],
+   "exam": [
+    "nystagmus",
+    "Dix-Hallpike +/-",
+    "neurological exam normal",
+    "hearing tested",
+    "gait stable"
+   ],
+   "redFlags": [
+    "focal neurology",
+    "trauma",
+    "syncope",
+    "hearing loss sudden",
+    "severe headache"
+   ],
+   "planPhrases": [
+    "vestibular suppressants per plan",
+    "Epley if BPPV",
+    "vestibular rehab",
+    "fall precautions"
+   ],
+   "followUp": [
+    "2 weeks",
+    "ENT referral if persistent"
+   ]
+  },
+  "Hearing loss": {
+   "symptoms": [
+    "hearing loss",
+    "ear fullness",
+    "tinnitus",
+    "difficulty with conversation",
+    "ask to repeat"
+   ],
+   "negatives": [
+    "no trauma",
+    "no sudden onset",
+    "no ear discharge",
+    "no pain",
+    "no known noise exposure"
+   ],
+   "exam": [
+    "canal clear",
+    "TM normal",
+    "TM perforation",
+    "cerumen impaction",
+    "whisper test abnormal",
+    "Rinne abnormal"
+   ],
+   "redFlags": [
+    "sudden hearing loss",
+    "trauma",
+    "discharge",
+    "pain",
+    "unilateral",
+    "vertigo"
+   ],
+   "planPhrases": [
+    "cerumen removal if impacted",
+    "audiometry referral",
+    "hearing aids discussed",
+    "ENT referral"
+   ],
+   "followUp": [
+    "audiometry",
+    "ENT referral",
+    "return if sudden worsening"
    ]
   },
   "Tinnitus": {
    "symptoms": [
     "ringing in ears",
-    "buzzing sound",
+    "buzzing",
     "hissing",
-    "roaring",
-    "pulsatile tinnitus",
-    "non-pulsatile tinnitus",
-    "unilateral",
-    "bilateral",
+    "worse at night",
     "hearing loss",
     "dizziness",
-    "stress",
-    "poor sleep"
+    "stress"
    ],
    "negatives": [
-    "no sudden hearing loss",
-    "no vertigo",
-    "no ear pain",
+    "no sudden onset",
+    "no hearing loss",
     "no discharge",
-    "no head trauma",
-    "no ototoxic meds",
-    "no known vascular lesion"
-   ],
-   "exam": [
-    "Canal clear",
-    "TM normal",
-    "Neuro exam normal",
-    "Hearing grossly intact",
-    "No bruit over ear",
-    "Neck no bruit"
-   ],
-   "redFlags": [
-    "Pulsatile tinnitus (vascular lesion)",
-    "Sudden unilateral loss",
-    "Ototoxic medications",
-    "Acoustic neuroma suspicion",
-    "Psychiatric distress"
-   ],
-   "planPhrases": [
-    "Audiometry",
-    "Avoid loud noise",
-    "Stress reduction/sleep hygiene",
-    "Sound therapy/masking",
-    "Limit caffeine/alcohol",
-    "ENT/audiology referral",
-    "Return if pulsatile or unilateral"
-   ],
-   "followUp": [
-    "Audiogram",
-    "ENT if persistent",
-    "MRI if pulsatile"
-   ]
-  },
-  "Dizziness / vertigo": {
-   "symptoms": [
-    "vertigo",
-    "room spinning",
-    "imbalance",
-    "nausea",
-    "vomiting",
-    "headache",
-    "hearing loss",
-    "tinnitus",
-    "ear fullness",
-    "lightheadedness"
-   ],
-   "negatives": [
-    "no focal weakness",
-    "no speech difficulty",
-    "no chest pain",
-    "no palpitations",
     "no trauma",
-    "no fever",
-    "no known cardiac condition"
+    "no ototoxic meds"
    ],
    "exam": [
-    "BP supine 120/78 standing 115/75",
-    "HR 74",
-    "Ears normal",
-    "Nystagmus absent",
-    "Dix-Hallpike negative",
-    "Romberg negative",
-    "Neuro grossly normal"
+    "canal clear",
+    "TM normal",
+    "hearing grossly intact",
+    "neuro exam normal"
    ],
    "redFlags": [
-    "Focal neuro deficit",
-    "Syncope",
-    "Head trauma",
-    "Meningeal signs",
-    "Cardiac symptoms"
+    "unilateral tinnitus",
+    "hearing loss with tinnitus",
+    "vertigo",
+    "trauma",
+    "pulsatile tinnitus"
    ],
    "planPhrases": [
-    "Vestibular suppressants (betahistine)",
-    "Antiemetics",
-    "Epley if BPPV",
-    "Fall precautions",
-    "Avoid driving",
-    "Hydration",
-    "Return if focal symptoms"
+    "sound therapy",
+    "sleep hygiene",
+    "stress reduction",
+    "avoid loud noise",
+    "masking strategies",
+    "tinnitus retraining"
    ],
    "followUp": [
-    "3-5 days",
-    "Balance exercises",
-    "ENT/neuro referral"
+    "1-3 months",
+    "ENT if unilateral or pulsatile"
    ]
   },
-  "Nasal congestion": {
+  "Sinusitis / Allergic rhinitis": {
    "symptoms": [
     "nasal congestion",
-    "stuffy nose",
-    "runny nose",
     "sneezing",
+    "itching",
+    "watery eyes",
     "postnasal drip",
-    "snoring",
-    "mouth breathing",
-    "loss of smell",
-    "headache",
-    "facial pressure"
+    "fatigue",
+    "headache"
    ],
    "negatives": [
     "no fever",
-    "no sinus pain",
-    "no epistaxis",
-    "no known polyps",
-    "no deviated septum",
-    "no allergy diagnosis"
+    "no purulent discharge",
+    "no facial pain",
+    "no trauma",
+    "no known polyps"
    ],
    "exam": [
-    "Nasal mucosa erythematous",
-    "Nasal mucosa pale",
-    "Turbinates hypertrophied",
-    "Clear discharge",
-    "Septum midline",
-    "No polyps",
-    "Sinus tenderness absent"
+    "nasal mucosa pale",
+    "turbinate hypertrophy",
+    "clear discharge",
+    "conjunctival injection",
+    "allergic shiners"
    ],
    "redFlags": [
-    "Unilateral symptoms possible neoplasm",
-    "Epistaxis",
-    "Polyps",
-    "Septal perforation",
-    "Cacosmia"
+    "facial pain with fever",
+    "periorbital edema",
+    "vision changes",
+    "severe headache",
+    "no response to treatment"
    ],
    "planPhrases": [
-    "Saline nasal spray",
-    "Antihistamine if allergies",
-    "Decongestant short term",
-    "Nasal steroid spray",
-    "Avoid triggers",
-    "Return if unilateral or bleeding"
+    "antihistamine per plan",
+    "nasal steroid",
+    "saline rinse",
+    "avoid triggers",
+    "allergen avoidance"
    ],
    "followUp": [
-    "2 weeks",
-    "Allergy testing",
-    "ENT if polyps/septal"
+    "2-4 weeks",
+    "return if no improvement",
+    "ENT referral if chronic"
    ]
   },
-  "Sinus symptoms": {
+  "Epistaxis": {
    "symptoms": [
-    "facial pain",
-    "frontal headache",
-    "nasal congestion",
-    "purulent discharge",
-    "postnasal drip",
-    "fever",
-    "hyposmia",
-    "cough",
-    "tooth pain",
-    "ear fullness",
-    "fatigue"
+    "nosebleed",
+    "bleeding from nostril",
+    "can be heavy",
+    "pain",
+    "difficulty breathing"
    ],
    "negatives": [
-    "no vision changes",
-    "no periorbital swelling",
-    "no diplopia",
-    "no severe headache",
-    "no known nasal polyps",
-    "no immunocompromised"
+    "no trauma",
+    "no anticoagulation",
+    "no known coagulopathy",
+    "no hypertension hx",
+    "no recurrent"
    ],
    "exam": [
-    "Temp 37.8",
-    "Facial tenderness frontal/maxillary",
-    "Nasal mucosa inflamed",
-    "Purulent discharge",
-    "Throat normal",
-    "Transillumination reduced"
+    "anterior bleed visualized",
+    "no active bleeding",
+    "vitals stable",
+    "BP normal",
+    "nares clear"
    ],
    "redFlags": [
-    "Periorbital edema",
-    "Diplopia",
-    "Vision changes",
-    "Severe frontal headache",
-    "Meningeal signs"
+    "heavy bleeding",
+    "hemodynamic instability",
+    "anticoagulation",
+    "posterior bleed",
+    "recurrent",
+    "trauma"
    ],
    "planPhrases": [
-    "Nasal saline irrigation",
-    "Decongestants short term",
-    "Nasal steroid spray",
-    "Analgesics",
-    "Antibiotics if bacterial suspected (amoxicillin)",
-    "Return if vision changes or severe headache"
+    "direct pressure 10 min",
+    "lean forward",
+    "pinch nostrils",
+    "avoid picking",
+    "keep head elevated",
+    "avoid NSAIDs"
    ],
    "followUp": [
-    "7-10 days",
-    "CT sinuses if chronic",
-    "ENT referral"
+    "1 day",
+    "return if recurrent or heavy"
    ]
   },
-  "Sore throat / tonsillitis": {
+  "Foreign body in ear/nose": {
    "symptoms": [
-    "sore throat",
-    "painful swallowing",
-    "fever",
-    "enlarged tonsils",
-    "exudate",
-    "hoarse voice",
-    "ear pain",
-    "neck pain",
-    "loss of appetite",
-    "malaise"
+    "object in ear",
+    "object in nose",
+    "pain",
+    "discharge",
+    "hearing loss",
+    "difficulty breathing"
    ],
    "negatives": [
-    "no cough",
-    "no runny nose",
-    "no conjunctivitis",
-    "no difficulty breathing",
-    "no drooling",
-    "no muffled voice",
-    "no trismus"
+    "no trauma",
+    "no severe pain",
+    "no bleeding",
+    "no known perforation"
    ],
    "exam": [
-    "Temp 38.2",
-    "Pharynx erythematous",
-    "Tonsils enlarged with exudate",
-    "Cervical lymphadenopathy",
-    "Tympanic normal",
-    "Uvula midline"
+    "FB visualized",
+    "surrounding erythema",
+    "canal clear",
+    "TM intact",
+    "nares clear"
    ],
    "redFlags": [
-    "Peritonsillar abscess",
-    "Epiglottitis",
-    "Airway compromise",
-    "Sepsis",
-    "Dehydration"
+    "perforation",
+    "aspiration risk",
+    "bleeding",
+    "severe pain",
+    "young child unable to cooperate"
    ],
    "planPhrases": [
-    "Analgesics",
-    "Salt water gargle",
-    "Warm fluids",
-    "Antibiotics if Centor >=3 (penicillin/amoxicillin)",
-    "Complete course",
-    "Return if difficulty swallowing liquids"
+    "gentle removal",
+    "irrigation if safe",
+    "refer ENT if difficult",
+    "avoid probing blindly"
    ],
    "followUp": [
-    "48-72h",
-    "Earlier if severe",
-    "ENT if recurrent"
-   ]
-  },
-  "Voice complaint": {
-   "symptoms": [
-    "hoarseness",
-    "voice change",
-    "vocal fatigue",
-    "loss of voice",
-    "dry throat",
-    "cough",
-    "throat clearing",
-    "GERD symptoms",
-    "postnasal drip",
-    "singing difficulty"
-   ],
-   "negatives": [
-    "no hemoptysis",
-    "no dysphagia",
-    "no odynophagia",
-    "no weight loss",
-    "no smoking",
-    "no known laryngeal pathology"
-   ],
-   "exam": [
-    "Voice quality mildly hoarse",
-    "Larynx not visualized (no scope)",
-    "Throat normal",
-    "Neck no lymphadenopathy",
-    "Thyroid normal",
-    "No stridor"
-   ],
-   "redFlags": [
-    "Hemoptysis",
-    "Dysphagia",
-    "Weight loss",
-    "Stridor",
-    "Smoker >45 years",
-    "Persistent >3 weeks"
-   ],
-   "planPhrases": [
-    "Voice rest",
-    "Hydration",
-    "Avoid throat clearing",
-    "GERD treatment if suspected",
-    "Humidified air",
-    "Smoking cessation",
-    "Return if hoarseness >3 weeks or hemoptysis"
-   ],
-   "followUp": [
-    "2-3 weeks voice rest",
-    "ENT if >3 weeks",
-    "Laryngoscopy if persistent"
+    "1-2 days post-removal",
+    "return if pain/discharge"
    ]
   }
  },
  "Dermatology": {
-  "Rash": {
+  "Rash / Dermatitis": {
    "symptoms": [
     "rash",
     "itching",
-    "burning",
+    "redness",
     "scaling",
     "dryness",
-    "redness",
-    "blisters",
-    "oozing",
-    "pain",
-    "fever"
+    "burning",
+    "blistering"
    ],
    "negatives": [
     "no fever",
+    "no joint pain",
     "no new medication",
     "no known trigger",
-    "no joint pain",
-    "no mucosal involvement",
-    "no systemic symptoms"
+    "no mucosal involvement"
    ],
    "exam": [
-    "Erythematous rash",
-    "Dry scaly patches",
-    "Maculopapular",
-    "Vesicular",
-    "Well-demarcated",
-    "No secondary infection"
+    "erythematous rash",
+    "dry scaly patches",
+    "maculopapular",
+    "vesicular",
+    "well-demarcated"
    ],
    "redFlags": [
-    "Fever with rash",
-    "Mucosal involvement",
-    "Blistering extensive",
-    "Painful rash",
-    "Rapid spread",
-    "Systemic symptoms"
+    "fever with rash",
+    "mucosal involvement",
+    "blistering",
+    "rapid spread",
+    "painful rash"
    ],
    "planPhrases": [
-    "Emollients",
-    "Topical corticosteroids as per clinician",
-    "Antihistamine",
-    "Avoid irritants",
-    "Sun protection",
-    "Return if spreads or worsens"
+    "emollient",
+    "topical steroid per plan",
+    "antihistamine per plan",
+    "avoid irritants",
+    "follow-up"
    ],
    "followUp": [
-    "2 weeks",
-    "If fever develops",
-    "Dermatology if chronic"
+    "return if spreading",
+    "return if fever",
+    "2-4 weeks if chronic"
    ]
   },
   "Acne": {
    "symptoms": [
-    "acne",
     "pimples",
     "blackheads",
     "whiteheads",
     "cysts",
-    "nodules",
-    "scarring",
-    "oily skin",
+    "redness",
     "painful lesions",
-    "face/chest/back"
+    "scars"
    ],
    "negatives": [
     "no fever",
-    "no new medications",
-    "no steroid use",
     "no known PCOS",
-    "previous treatments tried"
+    "no medication cause",
+    "no known allergy to topicals"
    ],
    "exam": [
-    "Comedonal acne face",
-    "Papules",
-    "Pustules",
-    "Nodules",
-    "Cysts",
-    "Scarring present",
-    "No signs of infection"
+    "open/closed comedones",
+    "papules",
+    "pustules",
+    "cysts/nodules",
+    "erythema",
+    "scars",
+    "distribution notes"
    ],
    "redFlags": [
-    "Nodulocystic severe",
-    "Acne fulminans",
-    "Scarring rapid",
-    "Psychological distress",
-    "Signs of PCOS"
+    "sudden severe onset",
+    "cysts",
+    "scars",
+    "disfigurement",
+    "systemic symptoms",
+    "pregnancy"
    ],
    "planPhrases": [
-    "Topical retinoids at night",
-    "Benzoyl peroxide wash",
-    "Topical antibiotics (clindamycin)",
-    "Oral antibiotics if moderate-severe",
-    "Avoid picking/popping",
-    "Gentle skincare routine",
-    "Return if severe/cystic"
+    "topical benzoyl peroxide",
+    "topical retinoid per plan",
+    "topical antibiotic per plan",
+    "gentle cleansing",
+    "avoid picking",
+    "referral if severe"
    ],
    "followUp": [
-    "4-6 weeks treatment trial",
-    "Dermatology if severe",
-    "Hormonal eval if indicated"
+    "4-6 weeks for first effect",
+    "3 months for significant improvement"
    ]
   },
-  "Eczema / dermatitis": {
+  "Eczema": {
    "symptoms": [
-    "itchy skin",
-    "red skin",
-    "dry patches",
-    "scaling",
-    "cracking",
+    "itchy patches",
+    "dry skin",
+    "redness",
+    "flaking",
     "oozing",
-    "skin thickening",
-    "sleep disturbance",
-    "flexural involvement"
+    "cracked skin",
+    "sleep affected"
    ],
    "negatives": [
     "no fever",
-    "no known trigger",
-    "no new skincare",
-    "no known allergen",
-    "no systemic symptoms"
+    "no known contact allergen",
+    "no recent diet change",
+    "no infected lesions"
    ],
    "exam": [
-    "Erythematous patches flexures",
-    "Dry skin",
-    "Excoriations",
-    "Lichenification",
-    "Cracking",
-    "No secondary infection"
+    "erythematous plaques",
+    "dry/scaly",
+    "flexural distribution",
+    "excoriations",
+    "lichenification",
+    "fissures"
    ],
    "redFlags": [
-    "Secondary bacterial infection",
-    "Eczema herpeticum",
-    "Generalized erythroderma",
-    "Severe sleep disturbance",
-    "Failure of treatment"
+    "signs of infection",
+    "rapid worsening",
+    "failure to respond",
+    "severe sleep disturbance"
    ],
    "planPhrases": [
-    "Emollients liberally",
-    "Topical corticosteroids short term",
-    "Avoid triggers/irritants",
-    "Wet wraps if severe",
-    "Antihistamines for itch",
-    "Avoid scratching",
-    "Return if signs of infection"
+    "emollient",
+    "topical steroid per plan",
+    "avoid triggers",
+    "short warm baths",
+    "cotton clothing",
+    "antihistamine at night"
    ],
    "followUp": [
     "2-4 weeks",
-    "Dermatology if severe",
-    "Allergy testing if triggers"
+    "return if infected",
+    "dermatology referral if refractory"
    ]
   },
   "Fungal infection": {
    "symptoms": [
+    "circular rash",
     "itching",
-    "scaly rash",
-    "ring-shaped lesions",
+    "scaling",
     "redness",
-    "cracking",
-    "skin maceration",
-    "discolored nails",
-    "thick nails",
-    "groin involvement",
-    "feet involvement"
+    "spreading",
+    "skin discoloration",
+    "peeling"
    ],
    "negatives": [
     "no fever",
-    "no known immunocompromised",
-    "no DM",
-    "no known allergy to antifungals",
-    "no prior treatment"
+    "no known immunocompromise",
+    "no known contact dermatitis",
+    "not on face/scalp"
    ],
    "exam": [
-    "Annular erythematous plaque",
-    "Scaling border",
-    "Clear center",
-    "Skin scraping positive",
-    "Nail discoloration",
-    "Nail thickening",
-    "Interdigital maceration"
+    "annular plaque",
+    "well-demarcated border",
+    "central clearing",
+    "scales",
+    "KOH prep + if done"
    ],
    "redFlags": [
-    "Immunocompromised",
-    "DM with severe infection",
-    "Extensive involvement",
-    "Chest pain (systemic)",
-    "Treatment failure"
+    "immunocompromised",
+    "extensive disease",
+    "scalp involvement",
+    "nail involvement",
+    "failed treatment"
    ],
    "planPhrases": [
-    "Topical antifungals (clotrimazole/terbinafine)",
-    "Keep area clean and dry",
-    "Avoid sharing towels",
-    "Complete full course even if improving",
-    "Oral antifungals if extensive/nail",
-    "Return if worsening or treatment failure"
+    "topical antifungal per plan",
+    "keep area dry",
+    "avoid sharing towels",
+    "complete treatment course"
    ],
    "followUp": [
-    "2-4 weeks",
-    "Dermatology if nail",
-    "Oral antifungals severe"
-   ]
-  },
-  "Urticaria": {
-   "symptoms": [
-    "hives",
-    "welts",
-    "itching",
-    "swelling lips/eyes",
-    "red raised patches",
-    "wheals",
-    "burning",
-    "angioedema",
-    "shortness of breath",
-    "triggers food/drugs"
-   ],
-   "negatives": [
-    "no fever",
-    "no joint pain",
-    "no known allergen",
-    "no recent medication change",
-    "no previous severe reactions"
-   ],
-   "exam": [
-    "Urticarial wheals trunk/extremities",
-    "Individual lesions <24h",
-    "No blistering",
-    "No mucosal lesions",
-    "Angioedema absent",
-    "Dermographism"
-   ],
-   "redFlags": [
-    "Respiratory difficulty/angioedema",
-    "Anaphylaxis signs",
-    "Mucosal involvement",
-    "Persistent >6 weeks",
-    "Known allergen"
-   ],
-   "planPhrases": [
-    "Antihistamines (cetirizine/loratadine)",
-    "Avoid known triggers",
-    "Cool compresses",
-    "Short course oral steroids if severe",
-    "Epinephrine auto-injector if history of anaphylaxis",
-    "Return if respiratory difficulty or lip swelling"
-   ],
-   "followUp": [
-    "1-2 weeks",
-    "Dermatology if chronic",
-    "Allergy testing"
+    "1-2 weeks improvement",
+    "4-6 weeks for complete treatment"
    ]
   },
   "Wound review": {
    "symptoms": [
-    "wound check",
-    "healing progress",
-    "drainage",
+    "wound",
+    "incision",
+    "abrasion",
+    "laceration",
+    "healing",
     "pain",
-    "redness",
     "swelling",
-    "fever",
-    "dressing change"
+    "drainage"
    ],
    "negatives": [
     "no fever",
-    "no purulent drainage",
-    "no increasing pain",
-    "no wound dehiscence",
-    "no systemic symptoms"
+    "no purulent discharge",
+    "no spreading erythema",
+    "no dehiscence",
+    "no bleeding"
    ],
    "exam": [
-    "Wound clean dry",
-    "No erythema",
-    "No discharge",
-    "Wound edges well-approximated",
-    "Granulation tissue present",
-    "No necrosis",
-    "Sutures intact"
+    "wound clean",
+    "wound dry",
+    "mild erythema",
+    "no drainage",
+    "sutures intact",
+    "granulation tissue"
    ],
    "redFlags": [
-    "Wound infection signs",
-    "Dehiscence",
-    "Necrosis",
-    "Purulent drainage",
-    "Fever",
-    "Cellulitis"
+    "infection signs",
+    "dehiscence",
+    "bleeding",
+    "fever",
+    "necrotic tissue",
+    "non-healing"
    ],
    "planPhrases": [
-    "Wound clean healing well",
-    "Continue wound care as instructed",
-    "Keep wound clean and dry",
-    "Monitor for signs of infection",
-    "Suture removal per timeline",
-    "Return if fever, increasing pain, or purulent drainage"
+    "wound care",
+    "dressing changes",
+    "keep clean and dry",
+    "monitor for infection",
+    "suture removal date"
    ],
    "followUp": [
-    "Per wound care protocol",
-    "If infection signs",
-    "Wound care f/u"
+    "follow-up per plan",
+    "return if infection signs",
+    "wound check"
    ]
   },
-  "Skin lesion review": {
+  "Urticaria / Hives": {
    "symptoms": [
-    "skin lesion for review",
-    "new mole",
-    "changing mole",
-    "irregular shape",
-    "darkening",
-    "bleeding",
-    "itchy mole",
-    "family hx melanoma"
+    "raised red welts",
+    "itching",
+    "swelling",
+    "transient",
+    "burning",
+    "triggers identified"
    ],
    "negatives": [
-    "no rapid change",
-    "no bleeding",
-    "no itching",
-    "no ulceration",
-    "no known melanoma",
-    "previous benign biopsies"
+    "no fever",
+    "no joint pain",
+    "no breathing difficulty",
+    "no lip/tongue swelling",
+    "no known allergen"
    ],
    "exam": [
-    "Lesion location documented",
-    "Size mm",
-    "Asymmetric borders",
-    "Color variegated",
-    "Diameter >6mm",
-    "ABCDE criteria assessed",
-    "Dermatoscopy if available"
+    "wheals",
+    "erythematous",
+    "blanching",
+    "various sizes",
+    "transient lesions",
+    "dermographism"
+   ],
+   "redFlags": [
+    "angioedema",
+    "laryngospasm",
+    "SOB",
+    "fever",
+    "joint pain",
+    ">24h individual lesion",
+    "systemic symptoms"
+   ],
+   "planPhrases": [
+    "antihistamine per plan",
+    "avoid triggers",
+    "cool compresses",
+    "calamine lotion",
+    "avoid NSAIDs"
+   ],
+   "followUp": [
+    "1-2 weeks",
+    "return if angioedema or breathing difficulty"
+   ]
+  },
+  "Psoriasis": {
+   "symptoms": [
+    "red plaques",
+    "silver scales",
+    "itching",
+    "joint pain",
+    "nail changes",
+    "scalp involvement"
+   ],
+   "negatives": [
+    "no fever",
+    "no pustules",
+    "no known infection",
+    "no recent medication change"
+   ],
+   "exam": [
+    "well-defined erythematous plaques",
+    "silvery scales",
+    "Kobner phenomenon",
+    "nail pitting",
+    "joint tenderness"
+   ],
+   "redFlags": [
+    "generalized pustular",
+    "erythrodermic",
+    "joint inflammation",
+    "fever",
+    "rapid worsening"
+   ],
+   "planPhrases": [
+    "topical steroid",
+    "vitamin D analog per plan",
+    "emollient",
+    "UV phototherapy if indicated",
+    "dermatology referral"
+   ],
+   "followUp": [
+    "4-6 weeks",
+    "return if flares",
+    "dermatology for systemic treatment"
+   ]
+  },
+  "Cellulitis": {
+   "symptoms": [
+    "redness",
+    "swelling",
+    "warmth",
+    "pain",
+    "fever",
+    "chills",
+    "malaise",
+    "spreading"
+   ],
+   "negatives": [
+    "no trauma",
+    "no known bite",
+    "no lymphedema",
+    "no known diabetes",
+    "no immunocompromise"
+   ],
+   "exam": [
+    "erythema",
+    "edema",
+    "warmth",
+    "tender",
+    "well-demarcated",
+    "indurated",
+    "febrile",
+    "tachycardia"
+   ],
+   "redFlags": [
+    "sepsis",
+    "rapid spread",
+    "deep abscess",
+    "fever >38.5",
+    "immunocompromised",
+    "diabetes",
+    "lymphangitis",
+    "facial involvement"
+   ],
+   "planPhrases": [
+    "antibiotics per plan",
+    "elevation",
+    "rest",
+    "wound care if portal present",
+    "monitor margins",
+    "Tylenol for fever"
+   ],
+   "followUp": [
+    "1-3 days recheck",
+    "return if worsening",
+    "if no improvement in 48h"
+   ]
+  },
+  "Skin lesion check": {
+   "symptoms": [
+    "new lesion",
+    "changing mole",
+    "irregular border",
+    "multiple colors",
+    "itching",
+    "bleeding"
+   ],
+   "negatives": [
+    "no pain",
+    "no family hx melanoma",
+    "no personal hx skin cancer",
+    "no sunburn hx"
+   ],
+   "exam": [
+    "lesion dimensions",
+    "asymmetric",
+    "irregular border",
+    "color variation",
+    "diameter >6mm",
+    "no ulceration"
    ],
    "redFlags": [
     "ABCDE criteria met",
-    "Changing lesion",
-    "Bleeding/ulceration",
-    "Family hx melanoma",
-    "Many atypical nevi"
+    "bleeding",
+    "ulceration",
+    "rapid change",
+    "family hx melanoma",
+    "personal hx skin cancer"
    ],
    "planPhrases": [
-    "ABCDE assessed",
-    "Lesion appears benign",
-    "Monitor changes",
-    "Sun protection advice",
-    "Regular self-exam",
-    "Return if changes or new lesion",
-    "Dermatology referral if suspicious"
+    "dermatology referral",
+    "photography",
+    "sun protection advised",
+    "avoid tanning",
+    "monthly self-exam"
    ],
    "followUp": [
-    "3-6 months",
-    "Dermatology if suspicious",
-    "Excision biopsy if indicated"
-   ]
-  },
-  "Hair loss": {
-   "symptoms": [
-    "hair loss",
-    "thinning hair",
-    "bald patches",
-    "excessive shedding",
-    "scalp itching",
-    "scalp burning",
-    "hair breakage",
-    "recent stress",
-    "weight changes",
-    "medication changes"
-   ],
-   "negatives": [
-    "no fever",
-    "no scalp lesions",
-    "no known thyroid disease",
-    "no iron deficiency",
-    "no known autoimmune",
-    "no recent chemotherapy"
-   ],
-   "exam": [
-    "Scalp normal",
-    "No erythema",
-    "No scaling",
-    "Hair pull test",
-    "Pattern hair loss",
-    "Patchy hair loss",
-    "No scarring"
-   ],
-   "redFlags": [
-    "Rapid hair loss",
-    "Scarring alopecia",
-    "Systemic symptoms",
-    "Thyroid/iron deficiency",
-    "Severe psychological distress"
-   ],
-   "planPhrases": [
-    "Basic labs: CBC, TSH, ferritin, vitamin D, iron studies",
-    "Gentle hair care",
-    "Avoid heat/chemical treatments",
-    "Minoxidil if pattern hair loss",
-    "Nutritional optimization",
-    "Stress reduction",
-    "Return if worsening"
-   ],
-   "followUp": [
-    "3 months",
-    "Dermatology if scarring",
-    "Endocrine if hormonal"
+    "dermatology referral",
+    "routine if benign",
+    "urgent if suspicious features"
    ]
   }
  },
  "OB/GYN": {
-  "Antenatal f/u": {
+  "Antenatal follow-up": {
    "symptoms": [
-    "routine antenatal visit",
-    "gestational age",
-    "fetal movements",
+    "routine antenatal check",
     "fundal height",
+    "fetal movements",
     "contractions",
-    "leakage",
-    "bleeding",
-    "BP",
-    "weight",
-    "edema",
-    "urinary symptoms"
+    "swelling",
+    "headache"
    ],
    "negatives": [
     "no bleeding",
     "no leakage",
-    "no contractions",
-    "no fever",
-    "no reduced fetal movements",
-    "no headache/visual changes"
+    "no severe headache",
+    "no visual changes",
+    "no decreased movements"
    ],
    "exam": [
-    "Temp 36.8",
-    "BP 120/78",
-    "HR 76",
-    "Fundal height appropriate for dates",
-    "Fetal heart rate auscultated",
-    "Fetal movements reported",
-    "Urine dip normal",
-    "Edema mild"
+    "fundal height __ cm",
+    "FH consistent with dates",
+    "fetal heart rate __",
+    "BP normal",
+    "urine protein neg",
+    "no edema"
    ],
    "redFlags": [
-    "Severe HTN",
-    "Proteinuria",
-    "Reduced fetal movements",
-    "Bleeding",
-    "Leakage",
-    "Severe edema",
-    "Headache/visual changes"
+    "preterm labor signs",
+    "bleeding",
+    "severe headache",
+    "visual changes",
+    "BP >140/90",
+    "decreased movements",
+    "leakage"
    ],
    "planPhrases": [
-    "Fundal height FH cm",
-    "Fetal heart rate reassuring",
-    "Maternal vitals stable",
-    "Routine antenatal care continued",
-    "Next visit scheduled",
-    "Iron/folate supplementation",
-    "Return if reduced movements, bleeding, or leak"
+    "routine antenatal care",
+    "Folic acid continued",
+    "iron if indicated",
+    "next visit scheduled",
+    "CTG if indicated"
    ],
    "followUp": [
-    "Per antenatal schedule",
-    "2-4 weeks",
-    "Earlier if concerns"
+    "2-4 weeks per gestational age",
+    "return if warning signs",
+    "sooner if symptoms"
+   ]
+  },
+  "Irregular bleeding": {
+   "symptoms": [
+    "irregular periods",
+    "heavy bleeding",
+    "prolonged bleeding",
+    "spotting",
+    "pain",
+    "cramping",
+    "fatigue"
+   ],
+   "negatives": [
+    "no pregnancy",
+    "no fever",
+    "no discharge",
+    "no IUD",
+    "no known fibroids"
+   ],
+   "exam": [
+    "LMP documented",
+    "speculum exam",
+    "bimanual exam",
+    "bleeding from os",
+    "uterine size",
+    "adnexal normal"
+   ],
+   "redFlags": [
+    "pregnancy",
+    "heavy bleeding",
+    "anemia",
+    "pain",
+    "age >40 new onset",
+    "known mass"
+   ],
+   "planPhrases": [
+    "pregnancy test",
+    "Hb check",
+    "ultrasound if indicated",
+    "menstrual calendar",
+    "follow-up arranged"
+   ],
+   "followUp": [
+    "1-3 months",
+    "return if heavy bleeding or pain"
    ]
   },
   "Pelvic pain": {
    "symptoms": [
     "pelvic pain",
-    "lower abdominal pain",
     "cramping",
-    "spotting",
+    "dysmenorrhea",
+    "dyspareunia",
+    "bleeding",
     "discharge",
     "fever",
-    "nausea",
-    "dysuria",
-    "dyspareunia",
-    "LMP"
-   ],
-   "negatives": [
-    "no fever",
-    "no heavy bleeding",
-    "no IUD in situ",
-    "no known pregnancy",
-    "no STI symptoms",
-    "no prior pelvic surgery"
-   ],
-   "exam": [
-    "BP 120/78",
-    "HR 76",
-    "Temp 36.9",
-    "Abdomen soft",
-    "Suprapubic tenderness",
-    "No guarding",
-    "No rebound",
-    "Cervical motion tenderness"
-   ],
-   "redFlags": [
-    "Ectopic pregnancy",
-    "PID/Tubo-ovarian abscess",
-    "Appendicitis",
-    "Ovarian torsion",
-    "Septic abortion"
-   ],
-   "planPhrases": [
-    "Analgesics",
-    "Urine pregnancy test",
-    "US pelvis if indicated",
-    "STI screening if suspected",
-    "Referral to gynecology",
-    "Return if severe pain or fever"
-   ],
-   "followUp": [
-    "48-72h",
-    "US pelvis",
-    "Gynecology referral"
-   ]
-  },
-  "Irregular bleeding": {
-   "symptoms": [
-    "irregular bleeding",
-    "heavy bleeding",
-    "prolonged bleeding",
-    "spotting between periods",
-    "post-coital bleeding",
-    "postmenopausal bleeding",
-    "LMP",
-    "cycle length",
-    "pain",
-    "clots",
-    "fatigue",
-    "dizziness"
+    "nausea"
    ],
    "negatives": [
     "no pregnancy",
-    "no IUD",
-    "no known fibroids",
-    "no known coagulopathy",
-    "normal pap history",
-    "no new medications"
+    "no fever",
+    "no vomiting",
+    "no urinary symptoms",
+    "no prior STI",
+    "no IUD"
    ],
    "exam": [
-    "BP 120/76",
-    "HR 74",
-    "Abdomen soft",
-    "No masses",
-    "Speculum: cervix normal",
-    "Bimanual: uterus normal no adnexal masses"
+    "abdomen soft",
+    "suprapubic tenderness",
+    "cervical motion tenderness",
+    "adnexal tenderness",
+    "afebrile",
+    "febrile"
    ],
    "redFlags": [
-    "Severe hemorrhage",
-    "Postmenopausal bleeding",
-    "Post-coital bleeding",
-    "Pregnancy complication",
-    "Hemodynamic instability"
+    "pregnancy",
+    "fever with tenderness",
+    "severe pain",
+    "mass",
+    "ectopic pregnancy risk",
+    "peritoneal signs"
    ],
    "planPhrases": [
-    "Pregnancy test",
-    "CBC",
-    "TSH",
-    "US pelvis",
-    "Consider endometrial biopsy if >45 or risk factors",
-    "Referral to gynecology",
-    "Return if heavy bleed causing dizziness"
+    "analgesia per plan",
+    "US if indicated",
+    "pregnancy test",
+    "STI screening if indicated",
+    "follow-up"
    ],
    "followUp": [
     "1-2 weeks",
-    "Gynecology referral",
-    "Endometrial biopsy"
+    "return if severe pain or fever"
    ]
   },
   "Vaginal discharge": {
    "symptoms": [
-    "vaginal discharge",
+    "discharge",
     "itching",
-    "burning",
     "odor",
-    "discharge color change",
-    "dysuria",
-    "dyspareunia",
     "irritation",
-    "swelling",
-    "recurrent"
+    "burning",
+    "pain with urination",
+    "dyspareunia"
    ],
    "negatives": [
     "no fever",
-    "no abdominal pain",
     "no pregnancy",
-    "no known STI exposure",
-    "no prior abnormal pap"
+    "no pelvic pain",
+    "no bleeding",
+    "no known STI"
    ],
    "exam": [
-    "Vulva normal",
-    "Vaginal mucosa normal",
-    "Discharge thin white",
-    "Discharge thick curdy",
-    "Discharge yellow/green",
-    "Cervix normal",
-    "No cervical motion tenderness"
+    "discharge characteristics",
+    "pH if checked",
+    "wet mount",
+    "KOH",
+    "swab for culture",
+    "cervical motion tenderness neg"
    ],
    "redFlags": [
-    "PID signs",
-    "Pregnancy with discharge",
-    "Severe itching",
-    "Recurrent infections",
-    "STI exposure"
+    "fever",
+    "pelvic pain",
+    "pregnancy",
+    "recurrent",
+    "failed treatment",
+    "contact with STI"
    ],
    "planPhrases": [
-    "Vaginal swab for microscopy/culture",
-    "Topical antifungals if yeast",
-    "Metronidazole if BV/trichomonas",
-    "Avoid douching",
-    "Complete course",
-    "Partner treatment if STI",
-    "Return if persistent or recurrent"
+    "antibiotics per plan if bacterial",
+    "antifungal per plan if yeast",
+    "avoid douching",
+    "hygiene measures",
+    "partner treatment if indicated"
    ],
    "followUp": [
-    "1 week after treatment",
-    "STI screening",
-    "Gynecology referral recurrent"
+    "1-2 weeks",
+    "return if no improvement",
+    "return if fever"
    ]
   },
   "Contraception counseling": {
    "symptoms": [
-    "contraception counseling",
-    "current method",
-    "desired method",
+    "current method review",
+    "desire contraception",
     "side effects",
-    "satisfaction with current",
-    "LMP",
-    "pregnancy history",
-    "smoking",
-    "migraine",
-    "medical history"
+    "satisfaction",
+    "knowledge",
+    "cycle changes"
    ],
    "negatives": [
-    "no current pregnancy",
-    "no contraindications",
-    "no unresolved concerns",
-    "no abnormal bleeding",
-    "no known thrombophilia"
+    "no contraindication to hormonal",
+    "no known DVT",
+    "no migraine with aura",
+    "no liver disease",
+    "no active cancer"
    ],
    "exam": [
+    "vitals normal",
     "BP normal",
-    "BMI documented",
-    "General exam normal",
-    "Pregnancy test negative"
+    "no acute findings",
+    "no masses"
    ],
    "redFlags": [
-    "Contraindications to estrogen",
-    "Migraine with aura (combined OCP)",
-    "VTE history",
-    "Smoking >35 (combined OCP)",
+    "DVT hx",
+    "migraine with aura",
     "HTN",
-    "Breast cancer history"
+    "liver disease",
+    "smoker >35",
+    "hormone-sensitive cancer"
    ],
    "planPhrases": [
-    "Counseling on available methods provided",
-    "Combined OCP/patch/ring",
-    "Progestin-only pill",
-    "IUD (copper/levonorgestrel)",
-    "Implant",
-    "DMPA injection",
-    "Barrier methods",
-    "Counseling on LARC methods",
-    "Return for specific method initiation"
+    "options discussed",
+    "benefits and risks explained",
+    "COC/POP/implant/IUD per plan",
+    "LARC discussed",
+    "condoms advised"
    ],
    "followUp": [
-    "Per method follow-up",
-    "3 months for new method",
-    "Annual well-woman"
+    "1-3 months for follow-up",
+    "return if side effects",
+    "annual review"
    ]
   },
-  "Dysmenorrhea": {
+  "Menopause counseling": {
    "symptoms": [
-    "painful periods",
-    "cramping",
-    "lower abdominal pain",
-    "back pain",
-    "nausea",
-    "vomiting",
-    "diarrhea",
-    "headache",
+    "hot flashes",
+    "night sweats",
+    "mood changes",
+    "vaginal dryness",
+    "sleep disturbance",
     "fatigue",
-    "pain radiating legs",
-    "LMP",
-    "cycle regularity"
+    "irritability"
+   ],
+   "negatives": [
+    "no bleeding",
+    "no pregnancy",
+    "no known hormone-sensitive ca",
+    "no DVT history",
+    "no breast lump"
+   ],
+   "exam": [
+    "vitals normal",
+    "BP normal",
+    "no acute findings",
+    "vaginal mucosa atrophic if indicated"
+   ],
+   "redFlags": [
+    "postmenopausal bleeding",
+    "breast lump",
+    "DVT",
+    "hormone-sensitive cancer hx",
+    "liver disease"
+   ],
+   "planPhrases": [
+    "lifestyle modification",
+    "HRT options discussed if indicated",
+    "vaginal moisturizers",
+    "sleep hygiene",
+    "calcium/vitamin D"
+   ],
+   "followUp": [
+    "3-6 months after HRT start",
+    "annual review",
+    "return if bleeding"
+   ]
+  },
+  "Postnatal follow-up": {
+   "symptoms": [
+    "postnatal recovery",
+    "breastfeeding",
+    "lochia",
+    "pain",
+    "mood",
+    "sleep",
+    "bowel/bladder",
+    "incision"
    ],
    "negatives": [
     "no fever",
     "no heavy bleeding",
-    "no irregular cycles",
-    "no dyspareunia",
-    "no IUD",
-    "no known endometriosis"
-   ],
-   "exam": [
-    "BP 120/78",
-    "HR 74",
-    "Abdomen soft",
-    "No masses",
-    "No tenderness",
-    "Bimanual normal"
-   ],
-   "redFlags": [
-    "Severe pain not responding to treatment",
-    "Secondary dysmenorrhea",
-    "Endometriosis suspected",
-    "Pelvic pathology",
-    "Impact on daily life"
-   ],
-   "planPhrases": [
-    "NSAIDs starting before pain onset",
-    "Heat therapy",
-    "Regular exercise",
-    "Consider OCP for cycle control",
-    "TENS unit for some patients",
-    "Dietary modifications",
-    "Return if severe or not responding"
-   ],
-   "followUp": [
-    "3 months treatment trial",
-    "US pelvis",
-    "Gynecology if severe"
-   ]
-  },
-  "Postnatal f/u": {
-   "symptoms": [
-    "postnatal follow-up",
-    "mood",
-    "breastfeeding",
-    "lochia",
-    "perineal healing",
-    "c-section wound",
-    "pain",
-    "sleep",
-    "appetite",
-    "contraception"
-   ],
-   "negatives": [
-    "no fever",
-    "no excessive bleeding",
-    "no severe perineal pain",
     "no wound infection",
-    "no breast engorgement signs",
-    "no depression"
+    "no depression",
+    "no breastfeeding difficulty"
    ],
    "exam": [
-    "BP 120/78",
-    "HR 74",
-    "Temp 36.8",
-    "Breasts normal",
-    "Lochia normal",
-    "Perineum healing",
-    "C-section wound clean",
-    "Abdomen soft",
-    "Fundus non-palpable"
+    "vitals normal",
+    "uterus well contracted",
+    "lochia normal",
+    "incision healing well if CS",
+    "breasts normal",
+    "perineum clean"
    ],
    "redFlags": [
-    "PPH signs",
-    "Postpartum endometritis",
-    "Wound infection",
-    "Severe depression",
-    "Mastitis"
+    "fever",
+    "heavy bleeding",
+    "wound infection",
+    "depression",
+    "mastitis",
+    "DVT symptoms",
+    "PPH"
    ],
    "planPhrases": [
-    "Mood screen (EPDS)",
-    "Breastfeeding support",
-    "Lochia normal",
-    "Perineal/c-section wound healing well",
-    "Family planning counseling",
-    "Return if fever, heavy bleeding, or mood concerns"
+    "routine postnatal care",
+    "breastfeeding support",
+    "wound care",
+    "contraception discussed",
+    "PPD screening"
    ],
    "followUp": [
-    "6 weeks postpartum",
-    "Earlier if concerns",
-    "Per institutional protocol"
+    "6 weeks postnatal",
+    "return if warning signs"
+   ]
+  },
+  "Infertility consult": {
+   "symptoms": [
+    "infertility",
+    "age",
+    "duration trying",
+    "cycle regularity",
+    "prior pregnancies",
+    "partner issues",
+    "past surgeries"
+   ],
+   "negatives": [
+    "no acute pain",
+    "no fever",
+    "no bleeding",
+    "no known chronic disease"
+   ],
+   "exam": [
+    "vitals normal",
+    "BMI",
+    "thyroid normal",
+    "pelvic exam",
+    "no masses"
+   ],
+   "redFlags": [
+    "age >35 >6mo trying",
+    "known tubal disease",
+    "known male factor",
+    "anovulation",
+    "endometriosis"
+   ],
+   "planPhrases": [
+    "fertility workup started",
+    "ovulation tracking",
+    "semen analysis ordered",
+    "HSG if indicated",
+    "referral to fertility specialist"
+   ],
+   "followUp": [
+    "follow-up after results",
+    "fertility specialist referral"
    ]
   }
  },
- "Urology": {
-  "Dysuria / UTI": {
+ "Ophthalmology": {
+  "Red eye": {
    "symptoms": [
-    "dysuria",
-    "frequency",
-    "urgency",
-    "suprapubic pain",
-    "hematuria",
-    "fever",
-    "flank pain",
-    "urine odor",
-    "cloudy urine",
-    "nausea"
+    "red eye",
+    "discharge",
+    "itching",
+    "burning",
+    "gritty",
+    "pain",
+    "blurred vision",
+    "photophobia",
+    "tearing"
    ],
    "negatives": [
-    "no fever",
-    "no flank pain",
-    "no known pregnancy",
-    "no known kidney stones",
-    "no recent catheter",
-    "no known urologic abnormality"
-   ],
-   "exam": [
-    "Temp 37.5 if fever",
-    "Suprapubic tenderness",
-    "CVA tenderness absent",
-    "Abdomen soft",
-    "External genitalia normal"
-   ],
-   "redFlags": [
-    "Pyelonephritis signs",
-    "Fever with flank pain",
-    "Hematuria",
-    "Recurrent UTIs",
-    "Pregnancy",
-    "Male with UTI symptoms"
-   ],
-   "planPhrases": [
-    "Urine dipstick",
-    "Urine culture if indicated",
-    "Antibiotics as per local guidelines",
-    "Increase fluid intake",
-    "Avoid irritants (caffeine, alcohol)",
-    "Return if fever, flank pain, or hematuria"
-   ],
-   "followUp": [
-    "48-72h after antibiotics",
-    "Urine culture",
-    "Urology if recurrent"
-   ]
-  },
-  "Flank pain": {
-   "symptoms": [
-    "flank pain",
-    "loin pain",
-    "hematuria",
-    "nausea",
-    "vomiting",
-    "fever",
-    "dysuria",
-    "frequency",
-    "urgency",
-    "previous stones"
-   ],
-   "negatives": [
-    "no fever",
-    "no hematuria",
-    "no known stones",
-    "no prior urologic surgery",
     "no trauma",
-    "no pregnancy"
+    "no contact lens",
+    "no known glaucoma",
+    "no vision loss",
+    "no severe pain",
+    "no foreign body"
    ],
    "exam": [
-    "Temp 36.9",
-    "CVA tenderness positive",
-    "Abdomen soft",
-    "No guarding",
-    "Costovertebral tenderness",
-    "External genitalia normal"
+    "conjunctival injection",
+    "discharge",
+    "cornea clear",
+    "visual acuity",
+    "PERRLA",
+    "EOM intact"
    ],
    "redFlags": [
-    "Fever with flank pain (pyelo)",
-    "Anuria/obstruction",
-    "Severe pain",
-    "Hematuria with obstruction",
-    "Solitary kidney with pain"
+    "vision loss",
+    "severe pain",
+    "photophobia",
+    "corneal opacity",
+    "fixed pupil",
+    "trauma",
+    "contact lens wearer"
    ],
    "planPhrases": [
-    "Analgesia (NSAIDs/paracetamol)",
-    "Hydration",
-    "Urine dipstick",
-    "KUB US or CT KUB if stone suspected",
-    "Strain urine for stones",
-    "Return if fever, anuria, or severe pain",
-    "Urology referral if obstructed"
+    "artificial tears",
+    "antibiotic drops per plan",
+    "warm compress",
+    "hygiene",
+    "avoid contact lenses",
+    "follow-up"
    ],
    "followUp": [
-    "48-72h",
-    "KUB/CT",
-    "Urology if stone/nephrolithiasis"
+    "1-2 days",
+    "return if vision changes",
+    "ophthalmology if >1 week"
    ]
   },
-  "Frequency / urgency": {
+  "Vision change": {
    "symptoms": [
-    "urinary frequency",
-    "urgency",
-    "nocturia",
-    "incomplete emptying",
-    "weak stream",
-    "straining",
-    "hesitancy",
-    "dysuria",
-    "hematuria",
-    "suprapubic pain"
+    "blurred vision",
+    "double vision",
+    "floaters",
+    "flashes",
+    "vision loss",
+    "distortion"
    ],
    "negatives": [
-    "no fever",
-    "no hematuria",
-    "no known UTI",
-    "no neurological symptoms",
-    "no prior urologic surgery",
-    "no known diabetes"
+    "no trauma",
+    "no headache",
+    "no eye pain",
+    "no known retinal detachment risk",
+    "no DM/HTN"
    ],
    "exam": [
-    "Temp 36.8",
-    "Suprapubic nontender",
-    "Prostate exam if male",
-    "External genitalia normal",
-    "Neurological exam normal"
+    "visual acuity",
+    "visual fields",
+    "PERRLA",
+    "fundoscopy",
+    "EOM intact",
+    "no afferent pupillary defect"
    ],
    "redFlags": [
-    "Hematuria",
-    "Acute retention",
-    "Cytological suspicion",
-    "Neurological deficit",
-    "Significant renal impairment"
+    "sudden vision loss",
+    "flashes with floaters",
+    "curtain over vision",
+    "trauma",
+    "pain with vision loss",
+    "headache"
    ],
    "planPhrases": [
-    "Urine dipstick/culture",
-    "Avoid caffeine and alcohol",
-    "Bladder training",
-    "Pelvic floor exercises in some",
-    "Alpha blockers if BPH symptoms",
-    "Return if hematuria or retention"
+    "urgent ophthalmology referral",
+    "vision monitoring",
+    "avoid driving",
+    "risk factor management"
    ],
    "followUp": [
-    "2 weeks",
-    "US bladder/post-void residual",
-    "Urology referral"
+    "urgent same day",
+    "1-2 days for non-urgent"
    ]
   },
-  "Hematuria": {
+  "Eye trauma": {
    "symptoms": [
-    "visible blood in urine",
-    "microscopic hematuria",
-    "dysuria",
-    "frequency",
-    "flank pain",
-    "lower abdominal pain",
+    "eye injury",
+    "pain",
+    "redness",
+    "swelling",
+    "blurred vision",
+    "tearing",
+    "photophobia"
+   ],
+   "negatives": [
+    "no vision loss",
+    "no double vision",
+    "no foreign body sensation",
+    "no vomiting",
+    "no blood"
+   ],
+   "exam": [
+    "visual acuity",
+    "PERRLA",
+    "EOM intact",
+    "periorbital ecchymosis",
+    "subconjunctival hemorrhage",
+    "cornea clear",
+    "no hyphema"
+   ],
+   "redFlags": [
+    "vision loss",
+    "hyphema",
+    "ruptured globe",
+    "penetrating injury",
+    "decreased vision",
+    "diplopia",
+    "vomiting",
+    "CN injury"
+   ],
+   "planPhrases": [
+    "urgent ophthalmology referral",
+    "eye shield",
+    "no pressure on eye",
+    "avoid NSAIDs",
+    "tetanus if indicated"
+   ],
+   "followUp": [
+    "urgent",
+    "1 day if minor",
+    "ophthalmology follow-up"
+   ]
+  },
+  "Dry eye": {
+   "symptoms": [
+    "dryness",
+    "gritty",
+    "burning",
+    "itchy",
+    "fatigue",
+    "fluctuating vision",
+    "worse with screens"
+   ],
+   "negatives": [
+    "no vision loss",
+    "no severe pain",
+    "no discharge",
+    "no trauma",
+    "no contact lens overwear"
+   ],
+   "exam": [
+    "conjunctival injection",
+    "corneal staining if done",
+    "decreased tear meniscus",
+    "visual acuity normal",
+    "blink incomplete"
+   ],
+   "redFlags": [
+    "severe pain",
+    "vision loss",
+    "corneal ulcer",
+    "contact lens overwear",
+    "Rheumatoid arthritis/Sjogrens"
+   ],
+   "planPhrases": [
+    "artificial tears",
+    "warm compresses",
+    "lid hygiene",
+    "blink exercises",
+    "screen breaks",
+    "avoid dry environments"
+   ],
+   "followUp": [
+    "2-4 weeks",
+    "return if worsening",
+    "ophthalmology if refractory"
+   ]
+  },
+  "Lid swelling": {
+   "symptoms": [
+    "eyelid swelling",
+    "redness",
+    "tenderness",
+    "lump",
+    "pain",
+    "itching",
+    "discharge"
+   ],
+   "negatives": [
+    "no vision loss",
+    "no fever",
+    "no trauma",
+    "no known allergy",
+    "no contact lens use"
+   ],
+   "exam": [
+    "localized swelling",
+    "mild erythema",
+    "tenderness",
+    "visual acuity normal",
+    "no proptosis",
+    "no conjunctival injection"
+   ],
+   "redFlags": [
+    "vision loss",
     "fever",
-    "clots in urine",
-    "previous stones",
-    "smoking history"
-   ],
-   "negatives": [
-    "no fever",
-    "no flank pain",
-    "no known trauma",
-    "no recent vigorous exercise",
-    "no anticoagulants",
-    "no menstruation"
-   ],
-   "exam": [
-    "BP 125/80",
-    "Abdomen soft",
-    "No masses",
-    "No CVA tenderness",
-    "External genitalia normal",
-    "Prostate normal if male"
-   ],
-   "redFlags": [
-    "Gross hematuria with clots",
-    "Painless hematuria >35 years",
-    "Smoker with hematuria",
-    "Known bladder/renal cancer risk",
-    "Anticoagulation with significant hematuria"
+    "periorbital cellulitis",
+    "proptosis",
+    "limited EOM",
+    "severe pain",
+    "diffuse swelling"
    ],
    "planPhrases": [
-    "Urinalysis and microscopy",
-    "Urine culture to exclude infection",
-    "Cytology if indicated",
-    "US renal tract or CT urogram",
-    "Cystoscopy if persistent",
-    "Smoking cessation",
-    "Return if clots, pain, or recurrent"
+    "warm compress",
+    "analgesia per plan",
+    "antibiotic if cellulitis",
+    "massage",
+    "eyelid hygiene",
+    "drainage if stye"
    ],
    "followUp": [
-    "2 weeks after initial",
-    "Cystoscopy if persistent",
-    "Urology if >35 with risk factors"
-   ]
-  },
-  "Male LUTS": {
-   "symptoms": [
-    "urinary frequency",
-    "urgency",
-    "nocturia",
-    "weak stream",
-    "hesitancy",
-    "straining",
-    "incomplete emptying",
-    "dribbling",
-    "intermittency",
-    "dysuria"
-   ],
-   "negatives": [
-    "no hematuria",
-    "no fever",
-    "no acute retention",
-    "no known neurologic disease",
-    "no prior prostate surgery"
-   ],
-   "exam": [
-    "DRE: prostate enlarged smooth non-tender",
-    "Abdomen suprapubic nontender",
-    "External genitalia normal",
-    "Neurological exam normal"
-   ],
-   "redFlags": [
-    "Acute retention",
-    "Hematuria",
-    "Prostate nodule/suspicious DRE",
-    "Elevated PSA",
-    "Renal impairment"
-   ],
-   "planPhrases": [
-    "IPSS score documented",
-    "Lifestyle modifications: reduce evening fluids",
-    "Avoid decongestants/antihistamines",
-    "Alpha blockers (tamsulosin) if moderate symptoms",
-    "5-ARI if large prostate",
-    "PSA discussion and screening if appropriate",
-    "Return if retention, hematuria, or worsening"
-   ],
-   "followUp": [
-    "4-6 weeks for medication trial",
-    "PSA and DRE",
-    "Urology referral"
+    "1-2 days",
+    "return if worsening or vision changes"
    ]
   }
  },
- "Mental Health": {
-  "Anxiety symptoms": {
+ "Psychiatry / Behavioral": {
+  "Anxiety": {
    "symptoms": [
     "anxiety",
     "worry",
+    "racing thoughts",
     "restlessness",
     "fatigue",
-    "poor concentration",
-    "irritability",
-    "muscle tension",
     "sleep difficulty",
+    "muscle tension",
     "palpitations",
-    "shortness of breath",
-    "chest tightness",
-    "dizziness",
-    "GI symptoms",
-    "panic attacks",
-    "avoidance"
+    "SOB",
+    "tremor",
+    "irritability"
    ],
    "negatives": [
-    "no suicidal thoughts",
-    "no self-harm",
-    "no psychosis",
-    "no mania",
+    "no suicidal ideation",
+    "no panic attacks >1/d",
     "no substance use",
-    "no known medical cause",
-    "no prior psychiatric admission"
+    "no known cardiac cause",
+    "no thyroid disorder"
    ],
    "exam": [
-    "BP 125/80",
-    "HR 80",
-    "Alert and oriented",
-    "Mood anxious",
-    "Affect anxious/restless",
-    "Speech normal",
-    "No psychomotor agitation",
-    "No suicidal or homicidal ideation"
+    "anxious affect",
+    "psychomotor agitation",
+    "tremor",
+    "HR elevated",
+    "BP normal",
+    "alert and oriented",
+    "speech normal"
    ],
    "redFlags": [
-    "Suicidal ideation",
-    "Self-harm",
-    "Panic attacks with severe distress",
-    "Functional impairment",
-    "Co-morbid depression",
-    "Psychosis"
+    "suicidal ideation",
+    "psychosis",
+    "severe panic",
+    "substance intoxication",
+    "cardiac symptoms",
+    "severe weight loss"
    ],
    "planPhrases": [
-    "Reassurance and validation",
-    "Breathing exercises",
-    "Regular exercise",
-    "Sleep hygiene",
-    "Caffeine/stimulant reduction",
-    "Mild-moderate: CBT, consider SSRI (sertraline)",
-    "Return if worsening or suicidal thoughts"
+    "cognitive behavioral therapy",
+    "relaxation techniques",
+    "breathing exercises",
+    "SSRI per plan if indicated",
+    "lifestyle modifications",
+    "sleep hygiene",
+    "reduce caffeine",
+    "exercise"
    ],
    "followUp": [
     "2-4 weeks",
-    "Psychiatry if severe",
-    "CBT referral"
+    "return if worsening",
+    "psychiatry referral if severe"
    ]
   },
-  "Low mood": {
+  "Depression": {
    "symptoms": [
     "low mood",
-    "sadness",
     "anhedonia",
     "fatigue",
-    "low energy",
-    "poor concentration",
     "sleep changes",
     "appetite changes",
-    "weight changes",
-    "hopelessness",
-    "worthlessness",
+    "hopeless",
     "guilt",
-    "irritability",
-    "social withdrawal"
+    "poor concentration",
+    "suicidal thoughts"
    ],
    "negatives": [
-    "no suicidal thoughts",
-    "no self-harm",
+    "no suicidal plan",
     "no psychosis",
     "no mania",
-    "no substance use",
-    "no known bipolar",
-    "no known medical cause",
-    "supportive family"
+    "no substance dependence",
+    "no known bipolar"
    ],
    "exam": [
-    "BP 120/78",
-    "HR 74",
-    "Alert",
-    "Mood depressed",
-    "Affect blunted/flat",
-    "Psychomotor slow",
-    "Speech normal",
-    "No suicidal ideation",
-    "No psychotic features",
-    "PHQ-9 score"
+    "depressed affect",
+    "psychomotor slowing",
+    "poor eye contact",
+    "flat affect",
+    "speech slow",
+    "weight noted"
    ],
    "redFlags": [
-    "Suicidal ideation with plan",
-    "Active self-harm",
-    "Psychosis",
-    "Bipolar suspicion",
-    "Severe weight loss",
-    "Functional decline"
+    "suicidal ideation with plan",
+    "psychosis",
+    "mania",
+    "severe weight loss",
+    "catatonia",
+    "agitation",
+    "substance intoxication"
    ],
    "planPhrases": [
-    "PHQ-9 documented",
-    "Safety assessment: no acute risk",
-    "Sleep hygiene",
-    "Regular exercise",
-    "Social engagement",
-    "Consider SSRI if moderate-severe (sertraline)",
-    "Return if worsening or suicidal thoughts",
-    "Psychiatry referral if severe"
+    "safety plan if suicidal",
+    "SSRI/SNRI per plan",
+    "CBT",
+    "behavioral activation",
+    "sleep hygiene",
+    "exercise",
+    "social support"
+   ],
+   "followUp": [
+    "1-2 weeks after med start",
+    "2-4 weeks psychotherapy",
+    "return if suicidal"
+   ]
+  },
+  "Sleep disorder": {
+   "symptoms": [
+    "difficulty falling asleep",
+    "waking frequently",
+    "early waking",
+    "non-restorative sleep",
+    "fatigue",
+    "daytime sleepiness",
+    "snoring"
+   ],
+   "negatives": [
+    "no witnessed apnea",
+    "no gasping",
+    "no restless legs",
+    "no known depression",
+    "no shift work"
+   ],
+   "exam": [
+    "alert",
+    "no acute distress",
+    "normal affect",
+    "vitals normal",
+    "BMI noted",
+    "neck circumference if OSA risk"
+   ],
+   "redFlags": [
+    "witnessed apnea",
+    "gasping",
+    "severe daytime sleepiness",
+    "bed partner reports breathing pauses",
+    "restless legs"
+   ],
+   "planPhrases": [
+    "sleep hygiene",
+    "consistent schedule",
+    "reduce caffeine",
+    "avoid screens before bed",
+    "melatonin per plan",
+    "sleep study if indicated"
    ],
    "followUp": [
     "2-4 weeks",
-    "Psychiatry if severe/psychotic",
-    "Therapy referral"
+    "sleep study if suspected OSA",
+    "return if worsening"
    ]
   },
-  "Sleep difficulty": {
-   "symptoms": [
-    "insomnia",
-    "difficulty falling asleep",
-    "difficulty staying asleep",
-    "early morning waking",
-    "unrefreshing sleep",
-    "daytime fatigue",
-    "irritability",
-    "poor concentration",
-    "snoring",
-    "leg movements",
-    "nightmares",
-    "stress",
-    "caffeine use",
-    "screen time"
-   ],
-   "negatives": [
-    "no suicidal thoughts",
-    "no mania",
-    "no sleep apnea diagnosis",
-    "no RLS diagnosis",
-    "no significant medical cause",
-    "no substance use"
-   ],
-   "exam": [
-    "BP 120/76",
-    "HR 72",
-    "Alert oriented",
-    "Mood within normal",
-    "No signs of sleep deprivation"
-   ],
-   "redFlags": [
-    "Sleep apnea with hypoxia",
-    "Narcolepsy",
-    "Severe insomnia with functional impairment",
-    "Bipolar disorder (reduced sleep need)",
-    "Suicidal thoughts"
-   ],
-   "planPhrases": [
-    "Sleep hygiene counseling",
-    "Consistent sleep/wake schedule",
-    "Reduce screens 1h before bed",
-    "Limit caffeine after 2pm",
-    "Avoid alcohol as sleep aid",
-    "Melatonin low dose short-term",
-    "Referral for CBT-I",
-    "Return if mood symptoms or severe impairment"
-   ],
-   "followUp": [
-    "2-4 weeks sleep hygiene",
-    "CBT-I referral",
-    "Sleep study if apnea suspected"
-   ]
-  },
-  "Stress-related symptoms": {
+  "Stress-related / Adjustment disorder": {
    "symptoms": [
     "stress",
     "overwhelmed",
-    "fatigue",
-    "headache",
-    "muscle tension",
-    "GI symptoms",
     "irritability",
-    "poor concentration",
-    "sleep difficulty",
+    "anxiety",
+    "low mood",
+    "sleep changes",
     "appetite changes",
-    "mood swings",
-    "social withdrawal"
+    "fatigue"
    ],
    "negatives": [
-    "no suicidal thoughts",
-    "no self-harm",
+    "no suicidal ideation",
     "no psychosis",
+    "no substance use",
     "no mania",
-    "no medical cause",
-    "no prior psychiatric history"
+    "no severe depression"
    ],
    "exam": [
-    "BP 125/78",
-    "HR 76",
-    "Alert oriented",
-    "Mood stressed/anxious",
-    "Affect reactive",
-    "Speech normal",
-    "No acute distress"
+    "anxious affect",
+    "mild distress",
+    "normal speech",
+    "alert and oriented",
+    "no acute findings"
    ],
    "redFlags": [
-    "Functional decline",
-    "Suicidal ideation",
-    "Panic attacks",
-    "Co-morbid depression",
-    "Burnout severe"
+    "suicidal ideation",
+    "psychosis",
+    "severe functional impairment",
+    "substance use",
+    "self-harm"
    ],
    "planPhrases": [
-    "Stress management techniques",
-    "Regular exercise",
-    "Mindfulness/relaxation",
-    "Work-life balance",
-    "Sleep hygiene",
-    "Caffeine reduction",
-    "Counseling referral if needed",
-    "Return if worsening or mood changes"
+    "stress management",
+    "relaxation techniques",
+    "CBT",
+    "problem-solving therapy",
+    "lifestyle modifications",
+    "social support",
+    "follow-up"
    ],
    "followUp": [
     "2-4 weeks",
-    "Counseling referral",
-    "Psychiatry if severe"
+    "return if worsening",
+    "referral if persistent >3 months"
    ]
   },
-  "Panic symptoms": {
+  "ADHD follow-up": {
    "symptoms": [
-    "panic attacks",
-    "sudden fear",
-    "chest pain",
-    "palpitations",
-    "shortness of breath",
-    "dizziness",
-    "sweating",
-    "trembling",
-    "nausea",
-    "choking sensation",
-    "depersonalization",
-    "fear of dying",
-    "fear of losing control",
-    "avoidance",
-    "agoraphobia"
+    "medication review",
+    "concentration",
+    "focus",
+    "impulsivity",
+    "hyperactivity",
+    "organization",
+    "sleep",
+    "appetite",
+    "side effects"
    ],
    "negatives": [
-    "no suicidal thoughts",
-    "no medical cause (ECG, thyroid)",
-    "no substance-induced",
-    "no known cardiac condition"
+    "no cardiac symptoms",
+    "no stimulant side effects",
+    "no significant insomnia",
+    "no appetite suppression"
    ],
    "exam": [
-    "BP 130/80 during episode",
-    "HR 88",
-    "Alert oriented",
-    "Acute distress",
-    "No cardiac signs",
-    "Respiratory normal",
-    "Neuro normal"
+    "euthymic",
+    "alert",
+    "normal speech",
+    "appropriate affect",
+    "no psychomotor agitation",
+    "focused during interview"
    ],
    "redFlags": [
-    "Suicidal ideation",
-    "Medical cause (arrhythmia, PE, thyrotoxicosis)",
-    "Severe agoraphobia",
-    "Functional impairment",
-    "Frequent ER visits"
+    "cardiac symptoms",
+    "severe insomnia",
+    "psychosis",
+    "mania",
+    "substance abuse",
+    "significant weight loss"
    ],
    "planPhrases": [
-    "Validate experience",
-    "Breathing exercises (slow breathing)",
-    "Grounding techniques",
-    "Avoid avoidance",
-    "CBT referral strongly recommended",
-    "SSRI if frequent (sertraline)",
-    "Return if worsening or suicidal thoughts"
+    "medication adherence reviewed",
+    "dose adjustment per plan",
+    "behavioral strategies",
+    "organization tools",
+    "follow-up arranged",
+    "report card if child",
+    "side effects monitored"
    ],
    "followUp": [
-    "1-2 weeks initial",
-    "CBT referral",
-    "Psychiatry if severe"
+    "1-3 months",
+    "return if side effects",
+    "sooner if dose adjustment"
    ]
   }
  }
