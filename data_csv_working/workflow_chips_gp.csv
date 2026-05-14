@@ -1,0 +1,659 @@
+workflow_id,specialty_id,chip_id,group,chip_text,order,search_terms,tags
+gp-fever-urti,General Medicine / GP,gp-fever-urti-s1,symptoms,fever,1,"fever, pyrexia",acute
+gp-fever-urti,General Medicine / GP,gp-fever-urti-s2,symptoms,cough,2,"cough, dry cough",acute
+gp-fever-urti,General Medicine / GP,gp-fever-urti-s3,symptoms,sore throat,3,"sore throat, throat pain",acute
+gp-fever-urti,General Medicine / GP,gp-fever-urti-s4,symptoms,runny nose,4,"runny nose, rhinorrhea",acute
+gp-fever-urti,General Medicine / GP,gp-fever-urti-s5,symptoms,nasal congestion,5,"nasal congestion, blocked nose",acute
+gp-fever-urti,General Medicine / GP,gp-fever-urti-s6,symptoms,body aches,6,"body aches, myalgia, muscle pain",acute
+gp-fever-urti,General Medicine / GP,gp-fever-urti-s7,symptoms,chills,7,"chills, rigors",acute
+gp-fever-urti,General Medicine / GP,gp-fever-urti-s8,symptoms,headache,8,headache,acute
+gp-fever-urti,General Medicine / GP,gp-fever-urti-s9,symptoms,fatigue,9,"fatigue, malaise",acute
+gp-fever-urti,General Medicine / GP,gp-fever-urti-s10,symptoms,decreased appetite,10,decreased appetite,acute
+gp-fever-urti,General Medicine / GP,gp-fever-urti-s11,symptoms,sneezing,11,"sneezing, sneezing fits",acute
+gp-fever-urti,General Medicine / GP,gp-fever-urti-n12,relevant_negatives,no shortness of breath,12,"no SOB, no dyspnea",respiratory
+gp-fever-urti,General Medicine / GP,gp-fever-urti-n13,relevant_negatives,no chest pain,13,"no CP, no chest pain",cardiac
+gp-fever-urti,General Medicine / GP,gp-fever-urti-n14,relevant_negatives,no neck stiffness,14,no neck stiffness,neuro
+gp-fever-urti,General Medicine / GP,gp-fever-urti-n15,relevant_negatives,no persistent vomiting,15,no vomiting,gi
+gp-fever-urti,General Medicine / GP,gp-fever-urti-n16,relevant_negatives,no confusion,16,no confusion,neuro
+gp-fever-urti,General Medicine / GP,gp-fever-urti-n17,relevant_negatives,no rash,17,"no rash, no skin rash",dermatology
+gp-fever-urti,General Medicine / GP,gp-fever-urti-n18,relevant_negatives,no ear pain,18,no ear pain,ent
+gp-fever-urti,General Medicine / GP,gp-fever-urti-n19,relevant_negatives,no urinary symptoms,19,no dysuria,renal
+gp-fever-urti,General Medicine / GP,gp-fever-urti-e20,exam_findings,afebrile,20,afebrile,vitals
+gp-fever-urti,General Medicine / GP,gp-fever-urti-e21,exam_findings,febrile,21,"febrile, temp elevated",vitals
+gp-fever-urti,General Medicine / GP,gp-fever-urti-e22,exam_findings,throat congested,22,pharyngeal erythema,ent
+gp-fever-urti,General Medicine / GP,gp-fever-urti-e23,exam_findings,tonsils normal,23,tonsils normal,ent
+gp-fever-urti,General Medicine / GP,gp-fever-urti-e24,exam_findings,tonsillar exudate,24,tonsillar exudate,ent
+gp-fever-urti,General Medicine / GP,gp-fever-urti-e25,exam_findings,cervical lymphadenopathy,25,"cervical LNs, tender nodes",ent
+gp-fever-urti,General Medicine / GP,gp-fever-urti-e26,exam_findings,chest clear on auscultation,26,"chest clear, lungs clear",respiratory
+gp-fever-urti,General Medicine / GP,gp-fever-urti-e27,exam_findings,wheezes,27,"wheezes, expiratory wheeze",respiratory
+gp-fever-urti,General Medicine / GP,gp-fever-urti-e28,exam_findings,no respiratory distress,28,no RD,respiratory
+gp-fever-urti,General Medicine / GP,gp-fever-urti-e29,exam_findings,hydration adequate,29,"good hydration, moist mm",general
+gp-fever-urti,General Medicine / GP,gp-fever-urti-e30,exam_findings,decreased skin turgor,30,"dry, dehydration",general
+gp-fever-urti,General Medicine / GP,gp-fever-urti-r31,red_flags,breathing difficulty,31,"dyspnea, distress","respiratory,high_safety"
+gp-fever-urti,General Medicine / GP,gp-fever-urti-r32,red_flags,persistent high fever,32,high fever >3 days,"acute,high_safety"
+gp-fever-urti,General Medicine / GP,gp-fever-urti-r33,red_flags,confusion,33,"confusion, drowsy","neuro,high_safety"
+gp-fever-urti,General Medicine / GP,gp-fever-urti-r34,red_flags,neck stiffness,34,"neck stiffness, meningism","neuro,high_safety"
+gp-fever-urti,General Medicine / GP,gp-fever-urti-r35,red_flags,dehydration,35,dehydration signs,"general,high_safety"
+gp-fever-urti,General Medicine / GP,gp-fever-urti-r36,red_flags,immunocompromised state,36,immunocompromised,"chronic,high_safety"
+gp-fever-urti,General Medicine / GP,gp-fever-urti-r37,red_flags,petechial rash,37,"petechiae, non-blanching","dermatology,high_safety"
+gp-fever-urti,General Medicine / GP,gp-fever-urti-p38,plan_phrases,supportive care discussed,38,"supportive care, symptomatic",plan
+gp-fever-urti,General Medicine / GP,gp-fever-urti-p39,plan_phrases,hydration advised,39,"fluids, stay hydrated",plan
+gp-fever-urti,General Medicine / GP,gp-fever-urti-p40,plan_phrases,rest advised,40,"rest, take it easy",plan
+gp-fever-urti,General Medicine / GP,gp-fever-urti-p41,plan_phrases,antipyretic use as per clinician plan,41,"antipyretic, fever med",plan
+gp-fever-urti,General Medicine / GP,gp-fever-urti-p42,plan_phrases,return precautions discussed,42,"return precautions, warning signs",plan
+gp-fever-urti,General Medicine / GP,gp-fever-urti-p43,plan_phrases,sick leave advised,43,sick leave,plan
+gp-fever-urti,General Medicine / GP,gp-fever-urti-f44,follow_up,3 days if not improving,44,"3 days, 72h",followup
+gp-fever-urti,General Medicine / GP,gp-fever-urti-f45,follow_up,sooner if worsening,45,sooner,followup
+gp-cough,General Medicine / GP,gp-cough-s1,symptoms,cough,1,cough,acute
+gp-cough,General Medicine / GP,gp-cough-s2,symptoms,dry cough,2,"dry cough, non-productive",acute
+gp-cough,General Medicine / GP,gp-cough-s3,symptoms,productive cough,3,"productive cough, sputum",acute
+gp-cough,General Medicine / GP,gp-cough-s4,symptoms,sputum color noted,4,"sputum color, green, yellow",acute
+gp-cough,General Medicine / GP,gp-cough-s5,symptoms,cough duration,5,how long cough,acute
+gp-cough,General Medicine / GP,gp-cough-s6,symptoms,fever,6,fever,acute
+gp-cough,General Medicine / GP,gp-cough-s7,symptoms,shortness of breath,7,"SOB, dyspnea",respiratory
+gp-cough,General Medicine / GP,gp-cough-s8,symptoms,wheeze,8,wheeze,respiratory
+gp-cough,General Medicine / GP,gp-cough-s9,symptoms,chest pain,9,"chest pain, pleuritic",respiratory
+gp-cough,General Medicine / GP,gp-cough-s10,symptoms,postnasal drip,10,postnasal drip,ent
+gp-cough,General Medicine / GP,gp-cough-n11,relevant_negatives,no hemoptysis,11,no blood in sputum,respiratory
+gp-cough,General Medicine / GP,gp-cough-n12,relevant_negatives,no fever,12,no fever,acute
+gp-cough,General Medicine / GP,gp-cough-n13,relevant_negatives,no SOB,13,no SOB,respiratory
+gp-cough,General Medicine / GP,gp-cough-n14,relevant_negatives,no chest pain,14,no CP,cardiac
+gp-cough,General Medicine / GP,gp-cough-n15,relevant_negatives,no night sweats,15,no night sweats,general
+gp-cough,General Medicine / GP,gp-cough-n16,relevant_negatives,no weight loss,16,no weight loss,general
+gp-cough,General Medicine / GP,gp-cough-n17,relevant_negatives,no hoarseness,17,no voice change,ent
+gp-cough,General Medicine / GP,gp-cough-e18,exam_findings,chest clear,18,"chest clear, lungs clear",respiratory
+gp-cough,General Medicine / GP,gp-cough-e19,exam_findings,wheezes,19,wheezes,respiratory
+gp-cough,General Medicine / GP,gp-cough-e20,exam_findings,rhonchi,20,"rhonchi, coarse breath sounds",respiratory
+gp-cough,General Medicine / GP,gp-cough-e21,exam_findings,crackles,21,"crackles, crepitations",respiratory
+gp-cough,General Medicine / GP,gp-cough-e22,exam_findings,prolonged expiration,22,prolonged expiration,respiratory
+gp-cough,General Medicine / GP,gp-cough-e23,exam_findings,no respiratory distress,23,no RD,respiratory
+gp-cough,General Medicine / GP,gp-cough-e24,exam_findings,afebrile,24,afebrile,vitals
+gp-cough,General Medicine / GP,gp-cough-e25,exam_findings,febrile,25,febrile,vitals
+gp-cough,General Medicine / GP,gp-cough-e26,exam_findings,oropharynx clear,26,oropharynx clear,ent
+gp-cough,General Medicine / GP,gp-cough-r27,red_flags,hemoptysis,27,coughing blood,"respiratory,high_safety"
+gp-cough,General Medicine / GP,gp-cough-r28,red_flags,significant dyspnea,28,moderate to severe SOB,"respiratory,high_safety"
+gp-cough,General Medicine / GP,gp-cough-r29,red_flags,persistent fever >3 days,29,persistent fever,"acute,high_safety"
+gp-cough,General Medicine / GP,gp-cough-r30,red_flags,immunocompromised,30,immunocompromised,"chronic,high_safety"
+gp-cough,General Medicine / GP,gp-cough-r31,red_flags,significant weight loss,31,unexplained weight loss,"general,high_safety"
+gp-cough,General Medicine / GP,gp-cough-r32,red_flags,recurrent pneumonia,32,recurrent chest infection,"respiratory,high_safety"
+gp-cough,General Medicine / GP,gp-cough-p33,plan_phrases,supportive care discussed,33,supportive care,plan
+gp-cough,General Medicine / GP,gp-cough-p34,plan_phrases,cough suppressant per clinician plan,34,cough suppressant,plan
+gp-cough,General Medicine / GP,gp-cough-p35,plan_phrases,hydration advised,35,"hydrate, fluids",plan
+gp-cough,General Medicine / GP,gp-cough-p36,plan_phrases,return precautions discussed,36,return precautions,plan
+gp-cough,General Medicine / GP,gp-cough-p37,plan_phrases,smoking cessation advised,37,stop smoking,plan
+gp-cough,General Medicine / GP,gp-cough-f38,follow_up,1-2 weeks if not improving,38,1-2 weeks,followup
+gp-cough,General Medicine / GP,gp-cough-f39,follow_up,sooner if worsening,39,sooner,followup
+gp-sore-throat,General Medicine / GP,gp-sore-throat-s1,symptoms,sore throat,1,"sore throat, throat pain",acute
+gp-sore-throat,General Medicine / GP,gp-sore-throat-s2,symptoms,painful swallowing,2,odynophagia,acute
+gp-sore-throat,General Medicine / GP,gp-sore-throat-s3,symptoms,fever,3,fever,acute
+gp-sore-throat,General Medicine / GP,gp-sore-throat-s4,symptoms,cough,4,cough,acute
+gp-sore-throat,General Medicine / GP,gp-sore-throat-s5,symptoms,runny nose,5,runny nose,acute
+gp-sore-throat,General Medicine / GP,gp-sore-throat-s6,symptoms,headache,6,headache,acute
+gp-sore-throat,General Medicine / GP,gp-sore-throat-s7,symptoms,body aches,7,myalgia,acute
+gp-sore-throat,General Medicine / GP,gp-sore-throat-s8,symptoms,swollen glands,8,"swollen glands, neck lumps",ent
+gp-sore-throat,General Medicine / GP,gp-sore-throat-s9,symptoms,voice change,9,"hoarseness, muffled",ent
+gp-sore-throat,General Medicine / GP,gp-sore-throat-n10,relevant_negatives,no drooling,10,no drooling,ent
+gp-sore-throat,General Medicine / GP,gp-sore-throat-n11,relevant_negatives,no breathing difficulty,11,no stridor,respiratory
+gp-sore-throat,General Medicine / GP,gp-sore-throat-n12,relevant_negatives,no neck swelling,12,no neck mass,ent
+gp-sore-throat,General Medicine / GP,gp-sore-throat-n13,relevant_negatives,no rash,13,no rash,dermatology
+gp-sore-throat,General Medicine / GP,gp-sore-throat-n14,relevant_negatives,no cough,14,no cough,respiratory
+gp-sore-throat,General Medicine / GP,gp-sore-throat-n15,relevant_negatives,no ear pain,15,no ear pain,ent
+gp-sore-throat,General Medicine / GP,gp-sore-throat-e16,exam_findings,oropharynx erythematous,16,pharyngeal erythema,ent
+gp-sore-throat,General Medicine / GP,gp-sore-throat-e17,exam_findings,tonsillar exudate,17,"exudate, white patches",ent
+gp-sore-throat,General Medicine / GP,gp-sore-throat-e18,exam_findings,tonsils enlarged,18,swollen tonsils,ent
+gp-sore-throat,General Medicine / GP,gp-sore-throat-e19,exam_findings,oropharynx clear,19,normal throat,ent
+gp-sore-throat,General Medicine / GP,gp-sore-throat-e20,exam_findings,tender cervical LNs,20,cervical LNs tender,ent
+gp-sore-throat,General Medicine / GP,gp-sore-throat-e21,exam_findings,afebrile,21,afebrile,vitals
+gp-sore-throat,General Medicine / GP,gp-sore-throat-e22,exam_findings,febrile,22,febrile,vitals
+gp-sore-throat,General Medicine / GP,gp-sore-throat-e23,exam_findings,no respiratory distress,23,no RD,respiratory
+gp-sore-throat,General Medicine / GP,gp-sore-throat-r24,red_flags,drooling,24,drooling,"ent,high_safety"
+gp-sore-throat,General Medicine / GP,gp-sore-throat-r25,red_flags,stridor,25,stridor,"respiratory,high_safety"
+gp-sore-throat,General Medicine / GP,gp-sore-throat-r26,red_flags,trismus,26,trismus,"ent,high_safety"
+gp-sore-throat,General Medicine / GP,gp-sore-throat-r27,red_flags,muffled voice,27,hot potato voice,"ent,high_safety"
+gp-sore-throat,General Medicine / GP,gp-sore-throat-r28,red_flags,airway compromise signs,28,airway concern,"respiratory,high_safety"
+gp-sore-throat,General Medicine / GP,gp-sore-throat-i29,investigations,rapid strep test done,29,"rapid strep, RADT",investigations
+gp-sore-throat,General Medicine / GP,gp-sore-throat-i30,investigations,throat swab sent,30,throat culture,investigations
+gp-sore-throat,General Medicine / GP,gp-sore-throat-p31,plan_phrases,symptomatic treatment discussed,31,symptomatic,plan
+gp-sore-throat,General Medicine / GP,gp-sore-throat-p32,plan_phrases,hydration advised,32,fluids,plan
+gp-sore-throat,General Medicine / GP,gp-sore-throat-p33,plan_phrases,analgesics per clinician plan,33,pain relief,plan
+gp-sore-throat,General Medicine / GP,gp-sore-throat-p34,plan_phrases,return precautions discussed,34,return precautions,plan
+gp-sore-throat,General Medicine / GP,gp-sore-throat-p35,plan_phrases,sick leave advised,35,sick leave,plan
+gp-sore-throat,General Medicine / GP,gp-sore-throat-f36,follow_up,1 week if not improving,36,1 week,followup
+gp-sore-throat,General Medicine / GP,gp-sore-throat-f37,follow_up,sooner if worsening,37,sooner,followup
+gp-headache,General Medicine / GP,gp-headache-s1,symptoms,headache,1,headache,acute
+gp-headache,General Medicine / GP,gp-headache-s2,symptoms,headache location,2,"frontal, occipital, bitemporal",acute
+gp-headache,General Medicine / GP,gp-headache-s3,symptoms,throbbing pain,3,"throbbing, pulsating",acute
+gp-headache,General Medicine / GP,gp-headache-s4,symptoms,pressure type pain,4,"pressure, tight band",acute
+gp-headache,General Medicine / GP,gp-headache-s5,symptoms,duration of headache,5,how long,acute
+gp-headache,General Medicine / GP,gp-headache-s6,symptoms,frequency of headaches,6,how often,chronic
+gp-headache,General Medicine / GP,gp-headache-s7,symptoms,photophobia,7,light sensitivity,neuro
+gp-headache,General Medicine / GP,gp-headache-s8,symptoms,phonophobia,8,sound sensitivity,neuro
+gp-headache,General Medicine / GP,gp-headache-s9,symptoms,nausea,9,nausea,gi
+gp-headache,General Medicine / GP,gp-headache-s10,symptoms,vomiting,10,vomiting,gi
+gp-headache,General Medicine / GP,gp-headache-s11,symptoms,visual aura,11,aura,neuro
+gp-headache,General Medicine / GP,gp-headache-s12,symptoms,neck stiffness,12,stiff neck,neuro
+gp-headache,General Medicine / GP,gp-headache-n13,relevant_negatives,no aura,13,no aura,neuro
+gp-headache,General Medicine / GP,gp-headache-n14,relevant_negatives,no weakness,14,no limb weakness,neuro
+gp-headache,General Medicine / GP,gp-headache-n15,relevant_negatives,no seizure,15,no seizure,neuro
+gp-headache,General Medicine / GP,gp-headache-n16,relevant_negatives,no speech difficulty,16,no dysarthria,neuro
+gp-headache,General Medicine / GP,gp-headache-n17,relevant_negatives,no vision loss,17,no vision loss,neuro
+gp-headache,General Medicine / GP,gp-headache-n18,relevant_negatives,no neck stiffness,18,no neck stiffness,neuro
+gp-headache,General Medicine / GP,gp-headache-n19,relevant_negatives,no fever,19,no fever,acute
+gp-headache,General Medicine / GP,gp-headache-e20,exam_findings,alert and oriented,20,A&O,neuro
+gp-headache,General Medicine / GP,gp-headache-e21,exam_findings,no focal neurological deficit,21,no focal deficit,neuro
+gp-headache,General Medicine / GP,gp-headache-e22,exam_findings,fundoscopy normal,22,fundi normal,ophthalmology
+gp-headache,General Medicine / GP,gp-headache-e23,exam_findings,neck supple,23,neck supple,neuro
+gp-headache,General Medicine / GP,gp-headache-e24,exam_findings,BP normal,24,BP normal,vitals
+gp-headache,General Medicine / GP,gp-headache-e25,exam_findings,BP elevated,25,BP high,vitals
+gp-headache,General Medicine / GP,gp-headache-r26,red_flags,sudden severe headache,26,thunderclap,"neuro,high_safety"
+gp-headache,General Medicine / GP,gp-headache-r27,red_flags,neurological deficit,27,focal weakness,"neuro,high_safety"
+gp-headache,General Medicine / GP,gp-headache-r28,red_flags,seizure with headache,28,seizure,"neuro,high_safety"
+gp-headache,General Medicine / GP,gp-headache-r29,red_flags,fever with headache,29,"febrile, meningism","neuro,high_safety"
+gp-headache,General Medicine / GP,gp-headache-r30,red_flags,headache after age 50 new onset,30,new headache elderly,"neuro,high_safety"
+gp-headache,General Medicine / GP,gp-headache-r31,red_flags,headache with visual changes,31,visual disturbance,"ophthalmology,high_safety"
+gp-headache,General Medicine / GP,gp-headache-r32,red_flags,headache with vomiting,32,vomiting,"gi,high_safety"
+gp-headache,General Medicine / GP,gp-headache-p33,plan_phrases,analgesic use per clinician plan,33,analgesic,plan
+gp-headache,General Medicine / GP,gp-headache-p34,plan_phrases,triptan use per clinician plan if migraine,34,triptan,plan
+gp-headache,General Medicine / GP,gp-headache-p35,plan_phrases,rest in dark quiet room advised,35,rest,plan
+gp-headache,General Medicine / GP,gp-headache-p36,plan_phrases,hydration advised,36,hydrate,plan
+gp-headache,General Medicine / GP,gp-headache-p37,plan_phrases,headache diary advised,37,"headache diary, trigger tracking",plan
+gp-headache,General Medicine / GP,gp-headache-p38,plan_phrases,return precautions discussed,38,return precautions,plan
+gp-headache,General Medicine / GP,gp-headache-f39,follow_up,2 weeks if persistent,39,2 weeks,followup
+gp-headache,General Medicine / GP,gp-headache-f40,follow_up,sooner if worsening,40,sooner,followup
+gp-dizziness,General Medicine / GP,gp-dizziness-s1,symptoms,dizziness,1,"dizziness, lightheadedness",acute
+gp-dizziness,General Medicine / GP,gp-dizziness-s2,symptoms,vertigo,2,"vertigo, spinning",acute
+gp-dizziness,General Medicine / GP,gp-dizziness-s3,symptoms,feeling faint,3,"presyncope, near fainting",acute
+gp-dizziness,General Medicine / GP,gp-dizziness-s4,symptoms,positional symptoms,4,triggered by head movement,vestibular
+gp-dizziness,General Medicine / GP,gp-dizziness-s5,symptoms,unsteady gait,5,off balance,vestibular
+gp-dizziness,General Medicine / GP,gp-dizziness-s6,symptoms,onset and duration,6,when started,acute
+gp-dizziness,General Medicine / GP,gp-dizziness-s7,symptoms,nausea,7,nausea,gi
+gp-dizziness,General Medicine / GP,gp-dizziness-s8,symptoms,vomiting,8,vomiting,gi
+gp-dizziness,General Medicine / GP,gp-dizziness-s9,symptoms,tinnitus,9,"tinnitus, ringing ears",ent
+gp-dizziness,General Medicine / GP,gp-dizziness-s10,symptoms,hearing change,10,hearing loss,ent
+gp-dizziness,General Medicine / GP,gp-dizziness-n11,relevant_negatives,no syncope,11,no fainting,cardiac
+gp-dizziness,General Medicine / GP,gp-dizziness-n12,relevant_negatives,no focal neurological symptoms,12,"no weakness, no stroke symptoms",neuro
+gp-dizziness,General Medicine / GP,gp-dizziness-n13,relevant_negatives,no chest pain,13,no CP,cardiac
+gp-dizziness,General Medicine / GP,gp-dizziness-n14,relevant_negatives,no palpitations,14,no palpitations,cardiac
+gp-dizziness,General Medicine / GP,gp-dizziness-n15,relevant_negatives,no headache,15,no headache,neuro
+gp-dizziness,General Medicine / GP,gp-dizziness-n16,relevant_negatives,no vision change,16,no vision change,ophthalmology
+gp-dizziness,General Medicine / GP,gp-dizziness-e17,exam_findings,orthostatic vitals,17,BP lying standing,vitals
+gp-dizziness,General Medicine / GP,gp-dizziness-e18,exam_findings,nystagmus,18,nystagmus,neuro
+gp-dizziness,General Medicine / GP,gp-dizziness-e19,exam_findings,no nystagmus,19,no nystagmus,neuro
+gp-dizziness,General Medicine / GP,gp-dizziness-e20,exam_findings,Dix-Hallpike positive,20,"Dix-Hallpike, positional test",vestibular
+gp-dizziness,General Medicine / GP,gp-dizziness-e21,exam_findings,Dix-Hallpike negative,21,Dix-Hallpike negative,vestibular
+gp-dizziness,General Medicine / GP,gp-dizziness-e22,exam_findings,neurological examination normal,22,neuro exam normal,neuro
+gp-dizziness,General Medicine / GP,gp-dizziness-e23,exam_findings,gait normal,23,gait normal,neuro
+gp-dizziness,General Medicine / GP,gp-dizziness-r24,red_flags,syncope,24,"fainting, LOC","cardiac,high_safety"
+gp-dizziness,General Medicine / GP,gp-dizziness-r25,red_flags,focal neurological deficit,25,stroke symptoms,"neuro,high_safety"
+gp-dizziness,General Medicine / GP,gp-dizziness-r26,red_flags,chest pain,26,CP,"cardiac,high_safety"
+gp-dizziness,General Medicine / GP,gp-dizziness-r27,red_flags,palpitations,27,racing heart,"cardiac,high_safety"
+gp-dizziness,General Medicine / GP,gp-dizziness-r28,red_flags,severe headache with dizziness,28,headache,"neuro,high_safety"
+gp-dizziness,General Medicine / GP,gp-dizziness-r29,red_flags,sudden hearing loss,29,sudden deafness,"ent,high_safety"
+gp-dizziness,General Medicine / GP,gp-dizziness-p30,plan_phrases,Epley maneuver performed,30,Epley,plan
+gp-dizziness,General Medicine / GP,gp-dizziness-p31,plan_phrases,vestibular rehabilitation advised,31,vestibular rehab,plan
+gp-dizziness,General Medicine / GP,gp-dizziness-p32,plan_phrases,symptomatic treatment per clinician,32,"symptomatic, vestibular suppressant",plan
+gp-dizziness,General Medicine / GP,gp-dizziness-p33,plan_phrases,fall precautions discussed,33,fall prevention,plan
+gp-dizziness,General Medicine / GP,gp-dizziness-p34,plan_phrases,return precautions discussed,34,return precautions,plan
+gp-dizziness,General Medicine / GP,gp-dizziness-f35,follow_up,1-2 weeks,35,1-2 weeks,followup
+gp-dizziness,General Medicine / GP,gp-dizziness-f36,follow_up,sooner if worsening,36,sooner,followup
+gp-fatigue,General Medicine / GP,gp-fatigue-s1,symptoms,fatigue,1,"fatigue, tiredness",chronic
+gp-fatigue,General Medicine / GP,gp-fatigue-s2,symptoms,duration of fatigue,2,how long,chronic
+gp-fatigue,General Medicine / GP,gp-fatigue-s3,symptoms,low energy,3,"low energy, sluggish",chronic
+gp-fatigue,General Medicine / GP,gp-fatigue-s4,symptoms,sleep quality,4,"sleep quality, poor sleep",chronic
+gp-fatigue,General Medicine / GP,gp-fatigue-s5,symptoms,appetite changes,5,appetite,gi
+gp-fatigue,General Medicine / GP,gp-fatigue-s6,symptoms,weight change,6,"weight loss, weight gain",general
+gp-fatigue,General Medicine / GP,gp-fatigue-s7,symptoms,mood changes,7,"low mood, depression",psych
+gp-fatigue,General Medicine / GP,gp-fatigue-s8,symptoms,exertional symptoms,8,SOB on exertion,cardiac
+gp-fatigue,General Medicine / GP,gp-fatigue-s9,symptoms,pallor,9,pale,general
+gp-fatigue,General Medicine / GP,gp-fatigue-s10,symptoms,dizziness,10,dizziness,cardiac
+gp-fatigue,General Medicine / GP,gp-fatigue-n11,relevant_negatives,no weight loss,11,no weight loss,general
+gp-fatigue,General Medicine / GP,gp-fatigue-n12,relevant_negatives,no fever,12,no fever,acute
+gp-fatigue,General Medicine / GP,gp-fatigue-n13,relevant_negatives,no night sweats,13,no night sweats,general
+gp-fatigue,General Medicine / GP,gp-fatigue-n14,relevant_negatives,no SOB,14,no SOB,cardiac
+gp-fatigue,General Medicine / GP,gp-fatigue-n15,relevant_negatives,no chest pain,15,no CP,cardiac
+gp-fatigue,General Medicine / GP,gp-fatigue-n16,relevant_negatives,no palpitations,16,no palpitations,cardiac
+gp-fatigue,General Medicine / GP,gp-fatigue-n17,relevant_negatives,no bleeding,17,no GI bleed,gi
+gp-fatigue,General Medicine / GP,gp-fatigue-n18,relevant_negatives,no suicidal thoughts,18,no SI,"psych,high_safety"
+gp-fatigue,General Medicine / GP,gp-fatigue-e19,exam_findings,pallor,19,"pale, conjunctival pallor",general
+gp-fatigue,General Medicine / GP,gp-fatigue-e20,exam_findings,conjunctiva pink,20,pink conj normal,general
+gp-fatigue,General Medicine / GP,gp-fatigue-e21,exam_findings,tachycardia,21,tachycardia,vitals
+gp-fatigue,General Medicine / GP,gp-fatigue-e22,exam_findings,heart rate normal,22,HR normal,vitals
+gp-fatigue,General Medicine / GP,gp-fatigue-e23,exam_findings,BP normal,23,BP normal,vitals
+gp-fatigue,General Medicine / GP,gp-fatigue-e24,exam_findings,well appearing,24,"well, no distress",general
+gp-fatigue,General Medicine / GP,gp-fatigue-r25,red_flags,significant weight loss,25,unexplained weight loss,"general,high_safety"
+gp-fatigue,General Medicine / GP,gp-fatigue-r26,red_flags,chest pain,26,CP,"cardiac,high_safety"
+gp-fatigue,General Medicine / GP,gp-fatigue-r27,red_flags,SOB,27,"SOB, dyspnea","cardiac,high_safety"
+gp-fatigue,General Medicine / GP,gp-fatigue-r28,red_flags,bleeding signs,28,"melena, GI bleed","gi,high_safety"
+gp-fatigue,General Medicine / GP,gp-fatigue-r29,red_flags,suicidal ideation,29,SI,"psych,high_safety"
+gp-fatigue,General Medicine / GP,gp-fatigue-r30,red_flags,neurological symptoms,30,neuro symptoms,"neuro,high_safety"
+gp-fatigue,General Medicine / GP,gp-fatigue-i31,investigations,CBC ordered,31,"CBC, FBC",investigations
+gp-fatigue,General Medicine / GP,gp-fatigue-i32,investigations,iron studies ordered,32,"ferritin, iron",investigations
+gp-fatigue,General Medicine / GP,gp-fatigue-i33,investigations,TSH ordered,33,"TSH, TFT",investigations
+gp-fatigue,General Medicine / GP,gp-fatigue-i34,investigations,vitamin B12 ordered,34,B12 level,investigations
+gp-fatigue,General Medicine / GP,gp-fatigue-i35,investigations,vitamin D ordered,35,"vitamin D, 25-OH",investigations
+gp-fatigue,General Medicine / GP,gp-fatigue-i36,investigations,glucose ordered,36,glucose,investigations
+gp-fatigue,General Medicine / GP,gp-fatigue-p37,plan_phrases,sleep hygiene discussed,37,sleep hygiene,plan
+gp-fatigue,General Medicine / GP,gp-fatigue-p38,plan_phrases,dietary advice given,38,nutrition,plan
+gp-fatigue,General Medicine / GP,gp-fatigue-p39,plan_phrases,exercise advised,39,physical activity,plan
+gp-fatigue,General Medicine / GP,gp-fatigue-p40,plan_phrases,investigations ordered,40,blood tests arranged,plan
+gp-fatigue,General Medicine / GP,gp-fatigue-p41,plan_phrases,follow-up for results,41,results review,plan
+gp-fatigue,General Medicine / GP,gp-fatigue-f42,follow_up,2-4 weeks for results,42,2-4 weeks,followup
+gp-fatigue,General Medicine / GP,gp-fatigue-f43,follow_up,sooner if worsening,43,sooner,followup
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-s1,symptoms,abdominal pain location,1,"epigastric, periumbilical",gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-s2,symptoms,abdominal pain duration,2,how long,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-s3,symptoms,burning pain,3,"burning, gnawing",gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-s4,symptoms,cramping pain,4,"crampy, colicky",gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-s5,symptoms,bloating,5,bloating,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-s6,symptoms,nausea,6,nausea,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-s7,symptoms,vomiting,7,vomiting,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-s8,symptoms,heartburn,8,"heartburn, reflux",gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-s9,symptoms,indigestion,9,"indigestion, dyspepsia",gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-s10,symptoms,belching,10,"belching, burping",gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-s11,symptoms,loss of appetite,11,poor appetite,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-n12,relevant_negatives,no vomiting,12,no vomiting,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-n13,relevant_negatives,no GI bleeding,13,"no melena, no hematemesis",gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-n14,relevant_negatives,no dysphagia,14,no difficulty swallowing,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-n15,relevant_negatives,no weight loss,15,no weight loss,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-n16,relevant_negatives,no fever,16,no fever,acute
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-n17,relevant_negatives,no diarrhea,17,no diarrhea,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-n18,relevant_negatives,no jaundice,18,no jaundice,hepatic
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-n19,relevant_negatives,no urinary symptoms,19,no dysuria,renal
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-e20,exam_findings,abdomen soft,20,"soft, non-tender",gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-e21,exam_findings,epigastric tenderness,21,epigastric tenderness,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-e22,exam_findings,generalised tenderness,22,general tenderness,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-e23,exam_findings,guarding,23,guarding,"gi,high_safety"
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-e24,exam_findings,rebound tenderness,24,rebound,"gi,high_safety"
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-e25,exam_findings,bowel sounds normal,25,bowel sounds present,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-e26,exam_findings,bowel sounds hyperactive,26,hyperactive,gi
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-r27,red_flags,severe persistent pain,27,severe pain,"gi,high_safety"
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-r28,red_flags,haematemesis,28,vomiting blood,"gi,high_safety"
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-r29,red_flags,melena,29,black tarry stool,"gi,high_safety"
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-r30,red_flags,peritoneal signs,30,"guarding, rigidity, rebound","gi,high_safety"
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-r31,red_flags,unexplained weight loss,31,weight loss,"gi,high_safety"
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-r32,red_flags,progressive dysphagia,32,difficulty swallowing,"gi,high_safety"
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-r33,red_flags,fever with abdominal pain,33,"febrile, infection","gi,high_safety"
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-i34,investigations,abdominal ultrasound ordered,34,US abdomen,investigations
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-i35,investigations,CBC ordered,35,"CBC, FBC",investigations
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-i36,investigations,LFT ordered,36,"LFT, liver function",investigations
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-i37,investigations,amylase ordered,37,"amylase, lipase",investigations
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-p38,plan_phrases,lifestyle advice discussed,38,"diet, small meals",plan
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-p39,plan_phrases,antacid use as per clinician plan,39,antacid,plan
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-p40,plan_phrases,PPI use as per clinician plan,40,PPI,plan
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-p41,plan_phrases,dietary modifications discussed,41,"avoid spicy, avoid fatty",plan
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-p42,plan_phrases,return precautions discussed,42,return precautions,plan
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-f43,follow_up,2 weeks if not improving,43,2 weeks,followup
+gp-abdominal-pain,General Medicine / GP,gp-abdominal-pain-f44,follow_up,sooner if worsening,44,sooner,followup
+gp-nausea,General Medicine / GP,gp-nausea-s1,symptoms,nausea,1,"nausea, feeling sick",gi
+gp-nausea,General Medicine / GP,gp-nausea-s2,symptoms,vomiting,2,vomiting,gi
+gp-nausea,General Medicine / GP,gp-nausea-s3,symptoms,vomiting frequency,3,how many times,gi
+gp-nausea,General Medicine / GP,gp-nausea-s4,symptoms,diarrhea,4,diarrhea,gi
+gp-nausea,General Medicine / GP,gp-nausea-s5,symptoms,abdominal pain,5,"abdominal pain, cramps",gi
+gp-nausea,General Medicine / GP,gp-nausea-s6,symptoms,fever,6,fever,acute
+gp-nausea,General Medicine / GP,gp-nausea-s7,symptoms,decreased oral intake,7,not eating,gi
+gp-nausea,General Medicine / GP,gp-nausea-s8,symptoms,dizziness,8,dizziness,gi
+gp-nausea,General Medicine / GP,gp-nausea-n9,relevant_negatives,no blood in vomit,9,no hematemesis,gi
+gp-nausea,General Medicine / GP,gp-nausea-n10,relevant_negatives,no severe dehydration,10,no dehydration,gi
+gp-nausea,General Medicine / GP,gp-nausea-n11,relevant_negatives,no blood in stool,11,no melena,gi
+gp-nausea,General Medicine / GP,gp-nausea-n12,relevant_negatives,no severe abdominal pain,12,no severe pain,gi
+gp-nausea,General Medicine / GP,gp-nausea-n13,relevant_negatives,no headache,13,no headache,neuro
+gp-nausea,General Medicine / GP,gp-nausea-n14,relevant_negatives,no fever,14,no fever,acute
+gp-nausea,General Medicine / GP,gp-nausea-e15,exam_findings,abdomen soft non-tender,15,abdomen benign,gi
+gp-nausea,General Medicine / GP,gp-nausea-e16,exam_findings,epigastric tenderness,16,epigastric tenderness,gi
+gp-nausea,General Medicine / GP,gp-nausea-e17,exam_findings,hydration adequate,17,good hydration,general
+gp-nausea,General Medicine / GP,gp-nausea-e18,exam_findings,decreased skin turgor,18,"dry, dehydration signs",general
+gp-nausea,General Medicine / GP,gp-nausea-e19,exam_findings,mucus membranes dry,19,dry mouth,general
+gp-nausea,General Medicine / GP,gp-nausea-e20,exam_findings,afebrile,20,afebrile,vitals
+gp-nausea,General Medicine / GP,gp-nausea-e21,exam_findings,tachycardia,21,tachycardia,vitals
+gp-nausea,General Medicine / GP,gp-nausea-r22,red_flags,persistent vomiting,22,unable to keep fluids,"gi,high_safety"
+gp-nausea,General Medicine / GP,gp-nausea-r23,red_flags,blood in vomit,23,hematemesis,"gi,high_safety"
+gp-nausea,General Medicine / GP,gp-nausea-r24,red_flags,severe dehydration,24,"anuria, severe dry","gi,high_safety"
+gp-nausea,General Medicine / GP,gp-nausea-r25,red_flags,altered mental state,25,"confusion, drowsy","neuro,high_safety"
+gp-nausea,General Medicine / GP,gp-nausea-r26,red_flags,bilious vomiting,26,bile stained,"gi,high_safety"
+gp-nausea,General Medicine / GP,gp-nausea-r27,red_flags,severe abdominal pain,27,severe pain,"gi,high_safety"
+gp-nausea,General Medicine / GP,gp-nausea-p28,plan_phrases,oral rehydration advised,28,ORS,plan
+gp-nausea,General Medicine / GP,gp-nausea-p29,plan_phrases,small frequent feeds,29,BRAT diet,plan
+gp-nausea,General Medicine / GP,gp-nausea-p30,plan_phrases,anti-emetic per clinician plan,30,anti-emetic,plan
+gp-nausea,General Medicine / GP,gp-nausea-p31,plan_phrases,return precautions discussed,31,return precautions,plan
+gp-nausea,General Medicine / GP,gp-nausea-f32,follow_up,2-3 days if not improving,32,2-3 days,followup
+gp-nausea,General Medicine / GP,gp-nausea-f33,follow_up,sooner if worsening,33,sooner,followup
+gp-diarrhea,General Medicine / GP,gp-diarrhea-s1,symptoms,diarrhea frequency,1,how many times per day,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-s2,symptoms,watery stool,2,"watery, loose",gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-s3,symptoms,blood or mucus in stool,3,"blood, mucus",gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-s4,symptoms,abdominal cramps,4,cramps,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-s5,symptoms,nausea,5,nausea,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-s6,symptoms,vomiting,6,vomiting,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-s7,symptoms,fever,7,fever,acute
+gp-diarrhea,General Medicine / GP,gp-diarrhea-s8,symptoms,recent travel,8,travel history,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-s9,symptoms,food exposure,9,food poisoning,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-s10,symptoms,duration of diarrhea,10,how long,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-n11,relevant_negatives,no blood in stool,11,no hematochezia,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-n12,relevant_negatives,no vomiting,12,no vomiting,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-n13,relevant_negatives,no fever,13,no fever,acute
+gp-diarrhea,General Medicine / GP,gp-diarrhea-n14,relevant_negatives,no severe abdominal pain,14,no severe pain,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-n15,relevant_negatives,no dehydration signs,15,no dehydration,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-e16,exam_findings,abdomen soft non-tender,16,abdomen benign,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-e17,exam_findings,lower abdominal tenderness,17,lower abdomen tender,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-e18,exam_findings,hyperactive bowel sounds,18,increased bowels,gi
+gp-diarrhea,General Medicine / GP,gp-diarrhea-e19,exam_findings,hydration adequate,19,good hydration,general
+gp-diarrhea,General Medicine / GP,gp-diarrhea-e20,exam_findings,decreased skin turgor,20,dry,general
+gp-diarrhea,General Medicine / GP,gp-diarrhea-e21,exam_findings,afebrile,21,afebrile,vitals
+gp-diarrhea,General Medicine / GP,gp-diarrhea-r22,red_flags,bloody diarrhea,22,dysentery,"gi,high_safety"
+gp-diarrhea,General Medicine / GP,gp-diarrhea-r23,red_flags,severe dehydration,23,dehydration severe,"gi,high_safety"
+gp-diarrhea,General Medicine / GP,gp-diarrhea-r24,red_flags,persistent fever,24,fever ongoing,"acute,high_safety"
+gp-diarrhea,General Medicine / GP,gp-diarrhea-r25,red_flags,severe abdominal pain,25,severe,"gi,high_safety"
+gp-diarrhea,General Medicine / GP,gp-diarrhea-r26,red_flags,immunocompromised,26,immunocompromised,"chronic,high_safety"
+gp-diarrhea,General Medicine / GP,gp-diarrhea-r27,red_flags,elderly patient,27,age >65,"general,high_safety"
+gp-diarrhea,General Medicine / GP,gp-diarrhea-p28,plan_phrases,ORS advised,28,"ORS, rehydration salts",plan
+gp-diarrhea,General Medicine / GP,gp-diarrhea-p29,plan_phrases,bland diet advised,29,BRAT diet,plan
+gp-diarrhea,General Medicine / GP,gp-diarrhea-p30,plan_phrases,anti-diarrheal per clinician plan,30,anti-diarrheal,plan
+gp-diarrhea,General Medicine / GP,gp-diarrhea-p31,plan_phrases,probiotics discussed,31,probiotics,plan
+gp-diarrhea,General Medicine / GP,gp-diarrhea-p32,plan_phrases,return precautions discussed,32,return precautions,plan
+gp-diarrhea,General Medicine / GP,gp-diarrhea-f33,follow_up,2-3 days if not improving,33,2-3 days,followup
+gp-diarrhea,General Medicine / GP,gp-diarrhea-f34,follow_up,sooner if worsening,34,sooner,followup
+gp-constipation,General Medicine / GP,gp-constipation-s1,symptoms,constipation duration,1,"how long, acute, chronic",gi
+gp-constipation,General Medicine / GP,gp-constipation-s2,symptoms,stool frequency,2,"how often, days between",gi
+gp-constipation,General Medicine / GP,gp-constipation-s3,symptoms,straining,3,straining to pass,gi
+gp-constipation,General Medicine / GP,gp-constipation-s4,symptoms,hard stool,4,"hard, lumpy",gi
+gp-constipation,General Medicine / GP,gp-constipation-s5,symptoms,incomplete evacuation,5,not fully empty,gi
+gp-constipation,General Medicine / GP,gp-constipation-s6,symptoms,blood with stool,6,bright red blood,gi
+gp-constipation,General Medicine / GP,gp-constipation-s7,symptoms,abdominal pain,7,abdominal pain,gi
+gp-constipation,General Medicine / GP,gp-constipation-s8,symptoms,dietary fiber intake,8,"diet, fiber",gi
+gp-constipation,General Medicine / GP,gp-constipation-s9,symptoms,fluid intake,9,water intake,gi
+gp-constipation,General Medicine / GP,gp-constipation-s10,symptoms,laxative use,10,"laxative, medications",gi
+gp-constipation,General Medicine / GP,gp-constipation-n11,relevant_negatives,no GI bleeding,11,no melena,gi
+gp-constipation,General Medicine / GP,gp-constipation-n12,relevant_negatives,no severe abdominal pain,12,no severe pain,gi
+gp-constipation,General Medicine / GP,gp-constipation-n13,relevant_negatives,no fever,13,no fever,acute
+gp-constipation,General Medicine / GP,gp-constipation-n14,relevant_negatives,no vomiting,14,no vomiting,gi
+gp-constipation,General Medicine / GP,gp-constipation-n15,relevant_negatives,no weight loss,15,no weight loss,gi
+gp-constipation,General Medicine / GP,gp-constipation-e16,exam_findings,abdomen soft,16,soft abdomen,gi
+gp-constipation,General Medicine / GP,gp-constipation-e17,exam_findings,lower abdominal tenderness,17,lower tenderness,gi
+gp-constipation,General Medicine / GP,gp-constipation-e18,exam_findings,distended abdomen,18,distended,gi
+gp-constipation,General Medicine / GP,gp-constipation-e19,exam_findings,bowel sounds normal,19,bowel sounds,gi
+gp-constipation,General Medicine / GP,gp-constipation-e20,exam_findings,rectal examination performed,20,rectal exam,gi
+gp-constipation,General Medicine / GP,gp-constipation-r21,red_flags,blood in stool,21,"hematochezia, PR bleeding","gi,high_safety"
+gp-constipation,General Medicine / GP,gp-constipation-r22,red_flags,unexplained weight loss,22,weight loss,"gi,high_safety"
+gp-constipation,General Medicine / GP,gp-constipation-r23,red_flags,family history colon cancer,23,FH colon CA,"gi,high_safety"
+gp-constipation,General Medicine / GP,gp-constipation-r24,red_flags,age >50 with new onset,24,new constipation elderly,"gi,high_safety"
+gp-constipation,General Medicine / GP,gp-constipation-r25,red_flags,obstruction signs,25,"vomiting, distension","gi,high_safety"
+gp-constipation,General Medicine / GP,gp-constipation-p26,plan_phrases,dietary fiber increased advised,26,"fiber, bran",plan
+gp-constipation,General Medicine / GP,gp-constipation-p27,plan_phrases,fluid intake advised,27,drink water,plan
+gp-constipation,General Medicine / GP,gp-constipation-p28,plan_phrases,exercise advised,28,"exercise, walking",plan
+gp-constipation,General Medicine / GP,gp-constipation-p29,plan_phrases,laxative use per clinician plan,29,laxative,plan
+gp-constipation,General Medicine / GP,gp-constipation-p30,plan_phrases,return precautions discussed,30,return precautions,plan
+gp-constipation,General Medicine / GP,gp-constipation-f31,follow_up,2-4 weeks,31,2-4 weeks,followup
+gp-constipation,General Medicine / GP,gp-constipation-f32,follow_up,sooner if worsening,32,sooner,followup
+gp-chest-pain,General Medicine / GP,gp-chest-pain-s1,symptoms,chest pain,1,chest pain,"cardiac,high_safety"
+gp-chest-pain,General Medicine / GP,gp-chest-pain-s2,symptoms,chest pain character,2,"burning, sharp, pressure",cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-s3,symptoms,chest pain location,3,"retrosternal, left sided",cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-s4,symptoms,radiation,4,"radiation to arm, jaw, back",cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-s5,symptoms,exertional relation,5,"with exertion, exercise",cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-s6,symptoms,duration of pain,6,"how long, minutes, hours",cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-s7,symptoms,shortness of breath,7,"SOB, dyspnea",cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-s8,symptoms,palpitations,8,palpitations,cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-s9,symptoms,heartburn,9,"heartburn, reflux",cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-s10,symptoms,associated sweating,10,"diaphoresis, sweating",cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-s11,symptoms,relieving factors,11,"what helps, rest, antacids",cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-n12,relevant_negatives,no exertional chest pain,12,no exertional CP,"cardiac,high_safety"
+gp-chest-pain,General Medicine / GP,gp-chest-pain-n13,relevant_negatives,no radiation,13,no radiation,cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-n14,relevant_negatives,no SOB,14,no SOB,cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-n15,relevant_negatives,no syncope,15,no fainting,cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-n16,relevant_negatives,no palpitations,16,no palpitations,cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-n17,relevant_negatives,no nausea,17,no nausea,gi
+gp-chest-pain,General Medicine / GP,gp-chest-pain-n18,relevant_negatives,no diaphoresis,18,no sweating,cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-e19,exam_findings,vitals stable,19,vitals stable,vitals
+gp-chest-pain,General Medicine / GP,gp-chest-pain-e20,exam_findings,tachycardia,20,tachycardia,vitals
+gp-chest-pain,General Medicine / GP,gp-chest-pain-e21,exam_findings,hypertension,21,BP high,vitals
+gp-chest-pain,General Medicine / GP,gp-chest-pain-e22,exam_findings,chest clear,22,chest clear,respiratory
+gp-chest-pain,General Medicine / GP,gp-chest-pain-e23,exam_findings,chest wall tenderness,23,chest wall tenderness,msk
+gp-chest-pain,General Medicine / GP,gp-chest-pain-e24,exam_findings,epigastric tenderness,24,epigastric tenderness,gi
+gp-chest-pain,General Medicine / GP,gp-chest-pain-e25,exam_findings,no chest wall tenderness,25,no chest wall tenderness,msk
+gp-chest-pain,General Medicine / GP,gp-chest-pain-e26,exam_findings,heart sounds normal,26,HS normal,cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-e27,exam_findings,ECG performed and reviewed,27,"ECG, EKG",cardiac
+gp-chest-pain,General Medicine / GP,gp-chest-pain-r28,red_flags,crushing chest pain,28,crushing,"cardiac,high_safety"
+gp-chest-pain,General Medicine / GP,gp-chest-pain-r29,red_flags,exertional pain,29,exertional CP,"cardiac,high_safety"
+gp-chest-pain,General Medicine / GP,gp-chest-pain-r30,red_flags,radiation to arm/jaw,30,radiation,"cardiac,high_safety"
+gp-chest-pain,General Medicine / GP,gp-chest-pain-r31,red_flags,syncope,31,"syncope, LOC","cardiac,high_safety"
+gp-chest-pain,General Medicine / GP,gp-chest-pain-r32,red_flags,shortness of breath,32,SOB,"cardiac,high_safety"
+gp-chest-pain,General Medicine / GP,gp-chest-pain-r33,red_flags,diaphoresis,33,sweating,"cardiac,high_safety"
+gp-chest-pain,General Medicine / GP,gp-chest-pain-r34,red_flags,abnormal vitals,34,abnormal vitals,"cardiac,high_safety"
+gp-chest-pain,General Medicine / GP,gp-chest-pain-r35,red_flags,ECG changes,35,ECG changes,"cardiac,high_safety"
+gp-chest-pain,General Medicine / GP,gp-chest-pain-i36,investigations,ECG ordered,36,"ECG, EKG",investigations
+gp-chest-pain,General Medicine / GP,gp-chest-pain-i37,investigations,CXR ordered,37,chest x-ray,investigations
+gp-chest-pain,General Medicine / GP,gp-chest-pain-i38,investigations,troponin ordered,38,troponin,investigations
+gp-chest-pain,General Medicine / GP,gp-chest-pain-i39,investigations,CBC ordered,39,CBC,investigations
+gp-chest-pain,General Medicine / GP,gp-chest-pain-p40,plan_phrases,cardiac risk factors discussed,40,cardiac risk,plan
+gp-chest-pain,General Medicine / GP,gp-chest-pain-p41,plan_phrases,antacid use per clinician plan,41,antacid,plan
+gp-chest-pain,General Medicine / GP,gp-chest-pain-p42,plan_phrases,lifestyle advice discussed,42,"diet, exercise, smoking",plan
+gp-chest-pain,General Medicine / GP,gp-chest-pain-p43,plan_phrases,urgent reassessment per plan,43,urgent re-evaluation,plan
+gp-chest-pain,General Medicine / GP,gp-chest-pain-p44,plan_phrases,return precautions discussed,44,return precautions,plan
+gp-chest-pain,General Medicine / GP,gp-chest-pain-f45,follow_up,1-2 weeks for results,45,1-2 weeks,followup
+gp-chest-pain,General Medicine / GP,gp-chest-pain-f46,follow_up,sooner if worsening,46,sooner,followup
+gp-palpitations,General Medicine / GP,gp-palpitations-s1,symptoms,palpitations,1,"palpitations, racing heart",cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-s2,symptoms,onset of palpitations,2,when started,cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-s3,symptoms,duration of palpitations,3,"how long, seconds, minutes",cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-s4,symptoms,triggers,4,"caffeine, stress, alcohol",cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-s5,symptoms,associated dizziness,5,dizziness,cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-s6,symptoms,associated syncope,6,"syncope, fainting",cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-s7,symptoms,chest pain,7,chest pain,cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-s8,symptoms,SOB,8,"SOB, dyspnea",cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-s9,symptoms,caffeine intake,9,"caffeine, coffee, energy drinks",cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-s10,symptoms,stimulant use,10,"stimulants, medications",cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-n11,relevant_negatives,no syncope,11,no fainting,"cardiac,high_safety"
+gp-palpitations,General Medicine / GP,gp-palpitations-n12,relevant_negatives,no chest pain,12,no CP,cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-n13,relevant_negatives,no dizziness,13,no dizziness,cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-n14,relevant_negatives,no SOB,14,no SOB,cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-n15,relevant_negatives,no stimulant use,15,no stimulants,cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-e16,exam_findings,heart rate normal,16,"HR normal, 60-100",vitals
+gp-palpitations,General Medicine / GP,gp-palpitations-e17,exam_findings,tachycardia,17,"tachycardia, HR>100",vitals
+gp-palpitations,General Medicine / GP,gp-palpitations-e18,exam_findings,irregular pulse,18,"irregular, atrial fibrillation",cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-e19,exam_findings,regular rhythm,19,"regular, sinus",cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-e20,exam_findings,BP normal,20,BP normal,vitals
+gp-palpitations,General Medicine / GP,gp-palpitations-e21,exam_findings,ECG reviewed,21,ECG reviewed,cardiac
+gp-palpitations,General Medicine / GP,gp-palpitations-r22,red_flags,syncope,22,"syncope, LOC","cardiac,high_safety"
+gp-palpitations,General Medicine / GP,gp-palpitations-r23,red_flags,chest pain,23,CP,"cardiac,high_safety"
+gp-palpitations,General Medicine / GP,gp-palpitations-r24,red_flags,family history SCD,24,FH sudden cardiac death,"cardiac,high_safety"
+gp-palpitations,General Medicine / GP,gp-palpitations-r25,red_flags,rapid irregular pulse,25,"atrial fibrillation, irregular","cardiac,high_safety"
+gp-palpitations,General Medicine / GP,gp-palpitations-r26,red_flags,palpitations at rest,26,resting palpitations,"cardiac,high_safety"
+gp-palpitations,General Medicine / GP,gp-palpitations-i27,investigations,ECG ordered,27,ECG,investigations
+gp-palpitations,General Medicine / GP,gp-palpitations-i28,investigations,Holter monitor ordered,28,24h Holter,investigations
+gp-palpitations,General Medicine / GP,gp-palpitations-i29,investigations,CBC ordered,29,CBC,investigations
+gp-palpitations,General Medicine / GP,gp-palpitations-i30,investigations,TSH ordered,30,"TSH, TFT",investigations
+gp-palpitations,General Medicine / GP,gp-palpitations-i31,investigations,electrolytes ordered,31,electrolytes,investigations
+gp-palpitations,General Medicine / GP,gp-palpitations-p32,plan_phrases,caffeine reduction advised,32,reduce coffee,plan
+gp-palpitations,General Medicine / GP,gp-palpitations-p33,plan_phrases,stress reduction discussed,33,stress management,plan
+gp-palpitations,General Medicine / GP,gp-palpitations-p34,plan_phrases,symptom diary advised,34,palpitation diary,plan
+gp-palpitations,General Medicine / GP,gp-palpitations-p35,plan_phrases,investigations ordered,35,tests arranged,plan
+gp-palpitations,General Medicine / GP,gp-palpitations-p36,plan_phrases,return precautions discussed,36,return precautions,plan
+gp-palpitations,General Medicine / GP,gp-palpitations-f37,follow_up,1 week for results,37,1 week,followup
+gp-palpitations,General Medicine / GP,gp-palpitations-f38,follow_up,sooner if worsening,38,sooner,followup
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-s1,symptoms,shortness of breath,1,"SOB, dyspnea, breathlessness","respiratory,high_safety"
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-s2,symptoms,onset of SOB,2,"sudden, gradual",respiratory
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-s3,symptoms,exertional SOB,3,SOB on exertion,respiratory
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-s4,symptoms,SOB at rest,4,resting SOB,"respiratory,high_safety"
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-s5,symptoms,cough,5,cough,respiratory
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-s6,symptoms,wheeze,6,wheeze,respiratory
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-s7,symptoms,chest pain,7,chest pain,cardiac
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-s8,symptoms,fever,8,fever,acute
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-s9,symptoms,leg swelling,9,lower limb edema,cardiac
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-s10,symptoms,palpitations,10,palpitations,cardiac
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-s11,symptoms,orthopnea,11,"orthopnea, SOB lying flat",cardiac
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-s12,symptoms,PND,12,paroxysmal nocturnal dyspnea,cardiac
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-n13,relevant_negatives,no chest pain,13,no CP,cardiac
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-n14,relevant_negatives,no wheeze,14,no wheeze,respiratory
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-n15,relevant_negatives,no cough,15,no cough,respiratory
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-n16,relevant_negatives,no fever,16,no fever,acute
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-n17,relevant_negatives,no leg swelling,17,no edema,cardiac
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-n18,relevant_negatives,no orthopnea,18,no orthopnea,cardiac
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-e19,exam_findings,respiratory rate,19,"RR, tachypneic",vitals
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-e20,exam_findings,O2 sats normal,20,"O2 saturations, SpO2",vitals
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-e21,exam_findings,O2 sats low,21,desaturation,"vitals,high_safety"
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-e22,exam_findings,chest clear,22,chest clear,respiratory
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-e23,exam_findings,wheezes,23,wheezes,respiratory
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-e24,exam_findings,crackles,24,"crackles, basal",respiratory
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-e25,exam_findings,decreased breath sounds,25,decreased air entry,respiratory
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-e26,exam_findings,no respiratory distress,26,no RD,respiratory
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-e27,exam_findings,respiratory distress,27,"distress, accessory muscles","respiratory,high_safety"
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-e28,exam_findings,leg edema,28,lower limb edema,cardiac
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-e29,exam_findings,tachycardia,29,tachycardia,vitals
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-r30,red_flags,severe respiratory distress,30,severe RD,"respiratory,high_safety"
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-r31,red_flags,cyanosis,31,cyanosis,"respiratory,high_safety"
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-r32,red_flags,chest pain,32,CP,"cardiac,high_safety"
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-r33,red_flags,syncope,33,"syncope, LOC","cardiac,high_safety"
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-r34,red_flags,O2 sats <92%,34,low sats,"respiratory,high_safety"
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-r35,red_flags,inability to speak in full sentences,35,full sentences,"respiratory,high_safety"
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-r36,red_flags,stridor,36,stridor,"respiratory,high_safety"
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-i37,investigations,CXR ordered,37,"CXR, chest x-ray",investigations
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-i38,investigations,CBC ordered,38,CBC,investigations
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-i39,investigations,ECG ordered,39,ECG,investigations
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-i40,investigations,D-dimer ordered,40,D-dimer,investigations
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-i41,investigations,BNP ordered,41,"BNP, NT-proBNP",investigations
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-p42,plan_phrases,management plan discussed,42,management,plan
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-p43,plan_phrases,breathing exercises advised,43,breathing techniques,plan
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-p44,plan_phrases,smoking cessation advised,44,stop smoking,plan
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-p45,plan_phrases,urgent reassessment per plan,45,urgent assessment,plan
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-p46,plan_phrases,return precautions discussed,46,return precautions,plan
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-f47,follow_up,1 week,47,1 week,followup
+gp-shortness-of-breath,General Medicine / GP,gp-shortness-of-breath-f48,follow_up,sooner if worsening,48,sooner,followup
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-s1,symptoms,home BP readings,1,"home BP, self-measured",vitals
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-s2,symptoms,medication adherence,2,"adherence, compliance",chronic
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-s3,symptoms,dietary salt intake,3,"salt, sodium",chronic
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-s4,symptoms,exercise level,4,physical activity,chronic
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-s5,symptoms,weight change,5,weight,chronic
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-s6,symptoms,headache,6,headache,general
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-s7,symptoms,dizziness,7,dizziness,general
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-s8,symptoms,chest pain,8,chest pain,cardiac
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-s9,symptoms,SOB,9,SOB,cardiac
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-s10,symptoms,visual symptoms,10,vision change,ophthalmology
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-e11,exam_findings,BP in clinic,11,"clinic BP, office BP",vitals
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-e12,exam_findings,BP controlled,12,BP <130/80,vitals
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-e13,exam_findings,BP elevated,13,"BP high, >130/80",vitals
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-e14,exam_findings,BP severely elevated,14,"BP high, >180/110","vitals,high_safety"
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-e15,exam_findings,heart rate normal,15,HR normal,vitals
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-e16,exam_findings,no edema,16,no leg swelling,cardiac
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-r17,red_flags,severely elevated BP,17,hypertensive crisis,"vitals,high_safety"
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-r18,red_flags,chest pain,18,CP,"cardiac,high_safety"
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-r19,red_flags,SOB,19,"SOB, dyspnea","cardiac,high_safety"
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-r20,red_flags,visual changes,20,vision symptoms,"ophthalmology,high_safety"
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-r21,red_flags,neurological symptoms,21,neuro deficit,"neuro,high_safety"
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-r22,red_flags,headache severe,22,severe headache,"neuro,high_safety"
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-r23,red_flags,medication side effects,23,"side effects, ADR","pharm,high_safety"
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-i24,investigations,labs reviewed,24,"lab results, blood work",investigations
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-i25,investigations,electrolytes reviewed,25,"electrolytes, renal function",investigations
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-i26,investigations,lipid profile reviewed,26,lipids,investigations
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-i27,investigations,ECG reviewed,27,ECG,investigations
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-p28,plan_phrases,medication adherence discussed,28,adherence,plan
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-p29,plan_phrases,dietary advice given,29,"low salt, DASH",plan
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-p30,plan_phrases,exercise advised,30,physical activity,plan
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-p31,plan_phrases,medication adjustment per plan,31,med adjustment,plan
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-p32,plan_phrases,follow-up arranged,32,FU,plan
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-f33,follow_up,1-3 months,33,1-3 months,followup
+gp-hypertension-followup,General Medicine / GP,gp-hypertension-followup-f34,follow_up,sooner if BP uncontrolled,34,sooner,followup
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-s1,symptoms,home glucose readings,1,"bg, SMBG, blood sugar",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-s2,symptoms,medication adherence,2,"adherence, compliance",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-s3,symptoms,hypoglycemia episodes,3,"hypo, low sugar",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-s4,symptoms,polyuria,4,"polyuria, urinating a lot",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-s5,symptoms,polydipsia,5,"thirst, drinking a lot",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-s6,symptoms,polyphagia,6,"hunger, increased appetite",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-s7,symptoms,weight change,7,"weight, weight loss",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-s8,symptoms,foot symptoms,8,"foot pain, numbness",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-s9,symptoms,vision change,9,"vision, blurred vision",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-s10,symptoms,wound healing,10,"wounds, cuts healing",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-e11,exam_findings,foot examination performed,11,foot exam,chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-e12,exam_findings,foot pulses normal,12,"foot pulses, DP, PT",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-e13,exam_findings,foot sensation normal,13,"monofilament, sensation",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-e14,exam_findings,foot ulcer present,14,"ulcer, foot wound",chronic
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-e15,exam_findings,fundoscopy performed,15,"fundoscopy, retinal",ophthalmology
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-e16,exam_findings,BP normal,16,BP,vitals
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-r17,red_flags,severe hypoglycemia,17,severe hypo,"chronic,high_safety"
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-r18,red_flags,DKA signs,18,DKA symptoms,"chronic,high_safety"
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-r19,red_flags,foot ulcer with infection,19,infected ulcer,"chronic,high_safety"
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-r20,red_flags,vision loss sudden,20,sudden vision loss,"ophthalmology,high_safety"
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-r21,red_flags,chest pain,21,CP,"cardiac,high_safety"
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-r22,red_flags,uncontrolled glucose,22,high sugars,"chronic,high_safety"
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-i23,investigations,HbA1c reviewed,23,"HbA1c, A1c",investigations
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-i24,investigations,renal function reviewed,24,"creatinine, eGFR",investigations
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-i25,investigations,lipid profile reviewed,25,lipids,investigations
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-i26,investigations,urine ACR reviewed,26,"ACR, microalbumin",investigations
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-i27,investigations,LFT reviewed,27,LFT,investigations
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-p28,plan_phrases,dietary advice discussed,28,"diet, carb counting",plan
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-p29,plan_phrases,exercise advised,29,"exercise, activity",plan
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-p30,plan_phrases,medication adherence discussed,30,adherence,plan
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-p31,plan_phrases,medication adjustment per plan,31,med adjustment,plan
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-p32,plan_phrases,routine screening discussed,32,"screening, eye, foot",plan
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-p33,plan_phrases,hypoglycemia education given,33,hypo education,plan
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-f34,follow_up,3-6 months,34,3-6 months,followup
+gp-diabetes-followup,General Medicine / GP,gp-diabetes-followup-f35,follow_up,sooner if uncontrolled,35,sooner,followup
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-s1,symptoms,fatigue,1,fatigue,chronic
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-s2,symptoms,weight change,2,"weight gain, loss",chronic
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-s3,symptoms,cold intolerance,3,cold feeling,chronic
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-s4,symptoms,heat intolerance,4,heat feeling,chronic
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-s5,symptoms,palpitations,5,palpitations,cardiac
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-s6,symptoms,tremor,6,"tremor, shaky",chronic
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-s7,symptoms,mood changes,7,"low mood, anxiety",psych
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-s8,symptoms,skin changes,8,dry skin,dermatology
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-s9,symptoms,hair changes,9,hair loss,dermatology
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-s10,symptoms,medication adherence,10,adherence,chronic
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-e11,exam_findings,thyroid palpation,11,"thyroid, goiter",ent
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-e12,exam_findings,tremor,12,tremor,neurological
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-e13,exam_findings,tachycardia,13,tachycardia,vitals
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-e14,exam_findings,heart rate normal,14,HR normal,vitals
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-e15,exam_findings,skin moist vs dry,15,skin texture,dermatology
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-r16,red_flags,palpitations severe,16,severe palpitations,"cardiac,high_safety"
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-r17,red_flags,significant weight loss,17,severe weight loss,"chronic,high_safety"
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-r18,red_flags,atrial fibrillation,18,AF,"cardiac,high_safety"
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-r19,red_flags,severe anxiety,19,severe anxiety,"psych,high_safety"
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-r20,red_flags,medication side effects,20,side effects,"pharm,high_safety"
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-i21,investigations,TSH reviewed,21,"TSH, TFT",investigations
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-i22,investigations,free T4 reviewed,22,T4,investigations
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-i23,investigations,free T3 reviewed,23,T3,investigations
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-p24,plan_phrases,medication adjustment per plan,24,med adjustment,plan
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-p25,plan_phrases,medication adherence discussed,25,adherence,plan
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-p26,plan_phrases,follow-up arranged,26,FU,plan
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-f27,follow_up,3-6 months,27,3-6 months,followup
+gp-thyroid-followup,General Medicine / GP,gp-thyroid-followup-f28,follow_up,sooner if symptomatic,28,sooner,followup
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-s1,symptoms,medication adherence,1,statin adherence,chronic
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-s2,symptoms,dietary habits,2,"diet, fat intake",chronic
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-s3,symptoms,exercise level,3,activity,chronic
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-s4,symptoms,weight,4,weight,chronic
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-s5,symptoms,muscle pain,5,"myalgia, statin side effects",chronic
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-s6,symptoms,chest pain,6,chest pain,cardiac
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-s7,symptoms,family history CV disease,7,"FH, cardiac family history",chronic
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-e8,exam_findings,vitals,8,vitals normal,vitals
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-e9,exam_findings,weight,9,"weight, BMI",vitals
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-r10,red_flags,severe muscle pain,10,statin myopathy,"pharm,high_safety"
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-r11,red_flags,chest pain,11,CP,"cardiac,high_safety"
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-r12,red_flags,TIA/stroke symptoms,12,neurological,"neuro,high_safety"
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-i13,investigations,lipid profile reviewed,13,"lipid panel, cholesterol",investigations
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-i14,investigations,total cholesterol,14,total cholesterol,investigations
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-i15,investigations,LDL reviewed,15,LDL,investigations
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-i16,investigations,HDL reviewed,16,HDL,investigations
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-i17,investigations,triglycerides reviewed,17,TGs,investigations
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-i18,investigations,LFT reviewed,18,"LFT, ALT",investigations
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-p19,plan_phrases,dietary advice given,19,"low fat, Mediterranean",plan
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-p20,plan_phrases,exercise advised,20,"exercise, activity",plan
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-p21,plan_phrases,statin adherence discussed,21,statin adherence,plan
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-p22,plan_phrases,cardiovascular risk discussed,22,"CV risk, QRISK",plan
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-p23,plan_phrases,follow-up arranged,23,FU,plan
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-f24,follow_up,3-12 months,24,3-12 months,followup
+gp-dyslipidemia-followup,General Medicine / GP,gp-dyslipidemia-followup-f25,follow_up,sooner if uncontrolled,25,sooner,followup
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-s1,symptoms,reason for testing,1,why tested,general
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-s2,symptoms,current symptoms,2,symptoms now,general
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-s3,symptoms,medication changes since labs,3,med changes,chronic
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-e4,exam_findings,vitals reviewed,4,"vitals, BP, HR",vitals
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-r5,red_flags,abnormal critical results,5,"critical values, urgent","investigations,high_safety"
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-r6,red_flags,significantly abnormal results,6,very abnormal,"investigations,high_safety"
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-r7,red_flags,trend worsening,7,worsening trend,"investigations,high_safety"
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-r8,red_flags,results requiring urgent action,8,urgent action,"investigations,high_safety"
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-i9,investigations,labs reviewed,9,"laboratory results, blood work",investigations
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-i10,investigations,abnormal results discussed,10,abnormal discussed,investigations
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-i11,investigations,comparison with previous results,11,"trend, previous labs",investigations
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-i12,investigations,pending results noted,12,pending,investigations
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-p13,plan_phrases,results explained to patient,13,explained,plan
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-p14,plan_phrases,patient concerns discussed,14,"concerns, questions",plan
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-p15,plan_phrases,further investigations ordered,15,further tests,plan
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-p16,plan_phrases,clinician interpretation documented,16,interpretation,plan
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-p17,plan_phrases,follow-up for results,17,results FU,plan
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-p18,plan_phrases,referral arranged if needed,18,referral,plan
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-p19,plan_phrases,return precautions discussed,19,return precautions,plan
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-f20,follow_up,as per results,20,"as per, depends on results",followup
+gp-lab-result-review,General Medicine / GP,gp-lab-result-review-f21,follow_up,sooner if abnormal,21,sooner,followup
