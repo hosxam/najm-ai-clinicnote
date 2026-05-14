@@ -1,0 +1,237 @@
+specialty_id,section_id,section_display_name,section_order,section_description,field_id,prompt,field_type,placeholder,options,required
+General Medicine / GP,hpi,History of Presenting Complaint,1,core|free_text,chief_complaint,Chief complaint,,"e.g. chest pain, fever, cough",,TRUE
+General Medicine / GP,hpi,History of Presenting Complaint,1,core|free_text,duration,Duration,,"e.g. 3 days, 2 weeks",,TRUE
+General Medicine / GP,hpi,History of Presenting Complaint,1,core|free_text,onset,Onset,select,,Acute|Gradual|Intermittent|Constant,FALSE
+General Medicine / GP,hpi,History of Presenting Complaint,1,core|free_text,severity,Severity,number,,1-10,FALSE
+General Medicine / GP,hpi,History of Presenting Complaint,1,core|free_text,context,Context,,"e.g. after meals, during exercise",,FALSE
+General Medicine / GP,social,Social History,2,core|structured_section,smoking,Smoking,,e.g. 10 pack years,,FALSE
+General Medicine / GP,social,Social History,2,core|structured_section,alcohol,Alcohol,,"e.g. Social, none",,FALSE
+General Medicine / GP,social,Social History,2,core|structured_section,occupation,Occupation,,"e.g. Teacher, retired",,FALSE
+General Medicine / GP,ros,Review of Systems,3,optional|checklist,constitutional,Constitutional,,"e.g. Fever, weight loss",,FALSE
+General Medicine / GP,ros,Review of Systems,3,optional|checklist,cv,Cardiovascular,,"e.g. Chest pain, SOB",,FALSE
+General Medicine / GP,ros,Review of Systems,3,optional|checklist,resp,Respiratory,,"e.g. Cough, wheeze",,FALSE
+General Medicine / GP,ros,Review of Systems,3,optional|checklist,gi,GI,,"e.g. Nausea, diarrhea",,FALSE
+General Medicine / GP,ros,Review of Systems,3,optional|checklist,gu,GU,,e.g. Dysuria,,FALSE
+General Medicine / GP,ros,Review of Systems,3,optional|checklist,msk,MSK,,e.g. Joint pain,,FALSE
+General Medicine / GP,ros,Review of Systems,3,optional|checklist,neuro,Neuro,,"e.g. Headache, dizziness",,FALSE
+General Medicine / GP,past_medical,Past Medical History,4,core|structured_section,chronic_dz,Chronic diseases,textarea,"e.g. HTN, DM",,FALSE
+General Medicine / GP,past_medical,Past Medical History,4,core|structured_section,surgery,Past surgeries,,e.g. Appendectomy 2019,,FALSE
+General Medicine / GP,past_medical,Past Medical History,4,core|structured_section,medications,Current medications,textarea,e.g. Metformin 500mg,,FALSE
+General Medicine / GP,past_medical,Past Medical History,4,core|structured_section,allergies,Allergies,,"e.g. None, penicillin",,FALSE
+General Medicine / GP,family_history,Family History,5,core|structured_section,family_dz,Family diseases,textarea,e.g. DM father,,FALSE
+General Medicine / GP,vitals_exam,Vitals/Exam,6,core|examination,vitals,Vital signs,,"e.g. BP 130/80, HR 76",,FALSE
+General Medicine / GP,vitals_exam,Vitals/Exam,6,core|examination,general,General appearance,,"e.g. Alert, no distress",,FALSE
+General Medicine / GP,vitals_exam,Vitals/Exam,6,core|examination,system_exam,System exam,textarea,"e.g. Chest clear, heart sounds normal",,FALSE
+General Medicine / GP,investigations,Investigations,7,optional|investigation,ordered,Tests ordered,,"e.g. CBC, CXR",,FALSE
+General Medicine / GP,investigations,Investigations,7,optional|investigation,reviewed,Tests reviewed,,e.g. ECG normal,,FALSE
+General Medicine / GP,red_flags,Red Flags,8,safety|safety_prompt,red_flags,Red flags,textarea,"e.g. Chest pain with sweating, no red flags",,FALSE
+General Medicine / GP,impression,Impression,9,core|clinician_entered,impression,Impression,,e.g. Viral URTI,,TRUE
+General Medicine / GP,plan,Plan,10,core|clinician_entered,plan,Plan,textarea,e.g. Symptomatic treatment,,TRUE
+General Medicine / GP,follow_up,Follow-up,11,core|plan,follow_up,Follow-up plan,,e.g. 1 week,,FALSE
+Pediatrics,hpi,History of Presenting Complaint,1,core|free_text,chief_complaint,Chief complaint,,"e.g. fever, cough, rash",,TRUE
+Pediatrics,hpi,History of Presenting Complaint,1,core|free_text,duration,Duration,,e.g. 2 days,,TRUE
+Pediatrics,hpi,History of Presenting Complaint,1,core|free_text,associated_symptoms,Associated symptoms,,"e.g. vomiting, diarrhea",,FALSE
+Pediatrics,hpi,History of Presenting Complaint,1,core|free_text,onset,Onset,select,,Acute|Gradual|Intermittent,FALSE
+Pediatrics,birth_history,Birth History,2,conditional|structured_section,gestation,Gestation at birth,,"e.g. Full term, preterm 34wk",,FALSE
+Pediatrics,birth_history,Birth History,2,conditional|structured_section,delivery_mode,Mode of delivery,select,,Normal|C-section|Vacuum|Forceps|Unknown,FALSE
+Pediatrics,birth_history,Birth History,2,conditional|structured_section,birth_weight,Birth weight,,e.g. 3.2 kg,,FALSE
+Pediatrics,birth_history,Birth History,2,conditional|structured_section,nicu_course,NICU/neonatal course,,"e.g. No NICU, jaundice phototherapy",,FALSE
+Pediatrics,feeding,Feeding History,3,conditional|structured_section,feeding_type,Feeding type,select,,Breastfeeding|Formula|Mixed|Solid|Combination,FALSE
+Pediatrics,feeding,Feeding History,3,conditional|structured_section,feeding_concerns,Feeding concerns,,"e.g. Poor appetite, vomiting after feeds",,FALSE
+Pediatrics,immunization,Immunization Status,4,core|checklist,up_to_date,Immunizations up to date?,select,,Yes|No|Unknown,FALSE
+Pediatrics,immunization,Immunization Status,4,core|checklist,vaccines_missed,Vaccines missed/delayed,,e.g. MMR delayed,,FALSE
+Pediatrics,development,Developmental Milestones,5,conditional|structured_section,milestones,Milestones achieved,textarea,e.g. Walking at 12mo,,FALSE
+Pediatrics,development,Developmental Milestones,5,conditional|structured_section,dev_concerns,Developmental concerns,,e.g. Not yet walking at 15mo,,FALSE
+Pediatrics,growth,Growth Parameters,6,core|structured_section,height_weight_ofc,Height/Weight/OFC,,e.g. Wt 10kg (25th),,FALSE
+Pediatrics,growth,Growth Parameters,6,core|structured_section,growth_concerns,Growth concerns,,e.g. Weight dropping centiles,,FALSE
+Pediatrics,past_medical,Past Pediatric History,7,core|structured_section,chronic_peds,Chronic conditions,textarea,"e.g. Asthma, congenital heart dz",,FALSE
+Pediatrics,past_medical,Past Pediatric History,7,core|structured_section,hospitalizations,Past hospitalizations,,"e.g. NICU, bronchiolitis admission",,FALSE
+Pediatrics,past_medical,Past Pediatric History,7,core|structured_section,medications,Current medications,textarea,e.g. Salbutamol PRN,,FALSE
+Pediatrics,past_medical,Past Pediatric History,7,core|structured_section,allergies,Allergies,,"e.g. None, penicillin rash",,FALSE
+Pediatrics,family_history,Family History,8,optional|structured_section,family_conditions,Family conditions,textarea,"e.g. Asthma, eczema in parents",,FALSE
+Pediatrics,social_environment,Social/Environmental,9,optional|structured_section,smoke_exposure,Secondhand smoke?,select,,Yes|No|Unknown,FALSE
+Pediatrics,social_environment,Social/Environmental,9,optional|structured_section,school,School/daycare,,e.g. Attends preschool,,FALSE
+Pediatrics,parental_concerns,Parental Concerns,10,core|free_text,main_concern,Main concern,textarea,e.g. Fever not coming down,,FALSE
+Pediatrics,hydration_assessment,Hydration/Output,11,conditional|checklist,urine_output,Urine output,select,,Normal|Decreased|Not assessed,FALSE
+Pediatrics,hydration_assessment,Hydration/Output,11,conditional|checklist,tears,Tears,select,,Normal|Reduced|Absent|Not assessed,FALSE
+Pediatrics,hydration_assessment,Hydration/Output,11,conditional|checklist,mucous_membranes,Mucous membranes,select,,Moist|Dry|Very dry,FALSE
+Pediatrics,examination,Pediatric Examination,12,core|examination,general,General appearance,,"e.g. Alert, well hydrated",,FALSE
+Pediatrics,examination,Pediatric Examination,12,core|examination,vitals,Vital signs,,"e.g. HR 110, RR 28, Temp 38.2",,FALSE
+Pediatrics,examination,Pediatric Examination,12,core|examination,system_exam,System exam,textarea,"e.g. Chest clear, ears normal",,FALSE
+Pediatrics,red_flags,Pediatric Red Flags,13,safety|safety_prompt,red_flags,Red flags,textarea,"e.g. Respiratory distress, fever <3mo, no red flags",,FALSE
+Pediatrics,impression,Doctor Impression,14,core|clinician_entered,impression,Impression/Diagnosis,,"e.g. Viral fever, self-limiting",,TRUE
+Pediatrics,plan,Doctor Plan,15,core|clinician_entered,plan,Plan,textarea,"e.g. Symptomatic treatment, return precautions",,TRUE
+Pediatrics,follow_up,Follow-up,16,core|plan,follow_up,Follow-up plan,,e.g. 48h if not improving,,FALSE
+OB/GYN,hpi,History of Presenting Complaint,1,core|free_text,chief_complaint,Chief complaint,,"e.g. abnormal bleeding, pelvic pain",,TRUE
+OB/GYN,hpi,History of Presenting Complaint,1,core|free_text,duration,Duration,,"e.g. 5 days, 3 months",,TRUE
+OB/GYN,hpi,History of Presenting Complaint,1,core|free_text,associated,Associated symptoms,,"e.g. fever, nausea",,FALSE
+OB/GYN,menstrual,Menstrual History,2,core|structured_section,lmp,LMP,,e.g. 15-Apr-2026,,TRUE
+OB/GYN,menstrual,Menstrual History,2,core|structured_section,cycle,Cycle length,,e.g. 28 days regular,,FALSE
+OB/GYN,menstrual,Menstrual History,2,core|structured_section,bleeding,Bleeding pattern,,e.g. Moderate 5 days,,FALSE
+OB/GYN,menstrual,Menstrual History,2,core|structured_section,dysmenorrhea,Dysmenorrhea,select,,None|Mild|Moderate|Severe,FALSE
+OB/GYN,obstetric,Obstetric History,3,core|structured_section,gravida_para,Gravida/Para,,e.g. G2P1+0,,TRUE
+OB/GYN,obstetric,Obstetric History,3,core|structured_section,previous_pregnancies,Previous pregnancy outcomes,textarea,"e.g. SVD 2022, C-section 2024",,FALSE
+OB/GYN,obstetric,Obstetric History,3,core|structured_section,pregnancy_status,Current pregnancy,select,,Not pregnant|Confirmed|Suspected|Unknown,FALSE
+OB/GYN,antenatal,Antenatal History,4,conditional|structured_section,edd,EDD,,e.g. 15-Nov-2026,,FALSE
+OB/GYN,antenatal,Antenatal History,4,conditional|structured_section,gestational_age,Gestational age (wks),,e.g. 24 weeks,,FALSE
+OB/GYN,antenatal,Antenatal History,4,conditional|structured_section,antenatal_course,Antenatal course,textarea,"e.g. Uneventful, GDM diet controlled",,FALSE
+OB/GYN,gynecologic,Gynecologic History,5,core|structured_section,previous_gyn,Previous gynecologic conditions,textarea,"e.g. Fibroids, PCOS",,FALSE
+OB/GYN,gynecologic,Gynecologic History,5,core|structured_section,cervical_screening,Cervical screening,,e.g. Pap smear 2024 normal,,FALSE
+OB/GYN,gynecologic,Gynecologic History,5,core|structured_section,contraception,Contraception,,"e.g. OCP, IUD, none",,FALSE
+OB/GYN,sexual,Sexual History,6,optional|structured_section,sexual_activity,Sexually active?,select,,Yes|No|Not discussed,FALSE
+OB/GYN,sexual,Sexual History,6,optional|structured_section,sti_history,STI history,,"e.g. None, treated chlamydia",,FALSE
+OB/GYN,past_medical,Past Medical/Surgical,7,core|structured_section,medical_history,Medical conditions,textarea,"e.g. HTN, DM, thyroid",,FALSE
+OB/GYN,past_medical,Past Medical/Surgical,7,core|structured_section,surgical_history,Surgical history,textarea,"e.g. C-section, appendectomy",,FALSE
+OB/GYN,past_medical,Past Medical/Surgical,7,core|structured_section,medications,Current medications,textarea,e.g. Prenatal vitamins,,FALSE
+OB/GYN,past_medical,Past Medical/Surgical,7,core|structured_section,allergies,Allergies,,e.g. None,,FALSE
+OB/GYN,examination,Examination,8,core|examination,vitals,Vital signs,,"e.g. BP 120/80, HR 78",,FALSE
+OB/GYN,examination,Examination,8,core|examination,abdominal,Abdominal exam,textarea,"e.g. Soft, nontender, fundal height 24cm",,FALSE
+OB/GYN,examination,Examination,8,core|examination,pelvic,Pelvic exam,textarea,e.g. Speculum: cervix normal,,FALSE
+OB/GYN,examination,Examination,8,core|examination,breast,Breast exam,,e.g. No masses,,FALSE
+OB/GYN,investigations,Investigations,9,optional|investigation,labs,Labs ordered,textarea,"e.g. Urine pregnancy, CBC",,FALSE
+OB/GYN,investigations,Investigations,9,optional|investigation,imaging,Imaging,,e.g. Pelvic US: normal,,FALSE
+OB/GYN,red_flags,OB/GYN Red Flags,10,safety|safety_prompt,red_flags,Red flags,textarea,"e.g. Vaginal bleeding in pregnancy, no red flags",,FALSE
+OB/GYN,impression,Doctor Impression,11,core|clinician_entered,impression,Impression/Diagnosis,,e.g. Vulvovaginal candidiasis,,TRUE
+OB/GYN,plan,Doctor Plan,12,core|clinician_entered,plan,Plan,textarea,e.g. Antifungal treatment,,TRUE
+OB/GYN,follow_up,Follow-up,13,core|plan,follow_up,Follow-up plan,,e.g. 1 week,,FALSE
+Orthopedics / MSK,hpi,History of Presenting Complaint,1,core|free_text,chief_complaint,Chief complaint,,"e.g. Knee pain, back pain",,TRUE
+Orthopedics / MSK,hpi,History of Presenting Complaint,1,core|free_text,duration,Duration,,"e.g. 3 days, 6 months",,TRUE
+Orthopedics / MSK,hpi,History of Presenting Complaint,1,core|free_text,mechanism,Mechanism of injury,,e.g. Twisted ankle,,FALSE
+Orthopedics / MSK,pain_history,Pain History,2,core|structured_section,pain_location,Pain location,,e.g. Right knee,,TRUE
+Orthopedics / MSK,pain_history,Pain History,2,core|structured_section,pain_quality,Pain quality,,"e.g. Sharp, dull",,FALSE
+Orthopedics / MSK,pain_history,Pain History,2,core|structured_section,pain_severity,Pain severity (1-10),number,,1-10,FALSE
+Orthopedics / MSK,pain_history,Pain History,2,core|structured_section,aggravating_factors,Aggravating factors,,e.g. Weight-bearing,,FALSE
+Orthopedics / MSK,pain_history,Pain History,2,core|structured_section,relieving_factors,Relieving factors,,"e.g. Rest, ice",,FALSE
+Orthopedics / MSK,functional,Functional Limitation,3,core|structured_section,functional_impact,Functional impact,textarea,e.g. Difficulty climbing stairs,,FALSE
+Orthopedics / MSK,functional,Functional Limitation,3,core|structured_section,swelling_deformity,Swelling/deformity,,e.g. Mild swelling,,FALSE
+Orthopedics / MSK,functional,Functional Limitation,3,core|structured_section,neurovascular,Neurovascular symptoms,,"e.g. Numbness, tingling",,FALSE
+Orthopedics / MSK,past_history,Past Orthopedic History,4,core|structured_section,previous_injuries,Previous injuries,,e.g. Same ankle sprain 2023,,FALSE
+Orthopedics / MSK,past_history,Past Orthopedic History,4,core|structured_section,previous_surgeries,Previous surgeries,,e.g. Knee arthroscopy 2022,,FALSE
+Orthopedics / MSK,past_history,Past Orthopedic History,4,core|structured_section,medications,Medications/allergies,textarea,e.g. Ibuprofen PRN,,FALSE
+Orthopedics / MSK,occupation,Occupation/Activity,5,optional|structured_section,occupation,Occupation/sport,,"e.g. Office worker, runner",,FALSE
+Orthopedics / MSK,occupation,Occupation/Activity,5,optional|structured_section,activity_level,Activity level,,"e.g. Sedentary, active",,FALSE
+Orthopedics / MSK,examination_focused,Focused MSK Examination,6,core|examination,inspection,Inspection,,"e.g. No swelling, bruising",,FALSE
+Orthopedics / MSK,examination_focused,Focused MSK Examination,6,core|examination,palpation,Palpation,,e.g. Focal tenderness medial joint,,FALSE
+Orthopedics / MSK,examination_focused,Focused MSK Examination,6,core|examination,range_of_motion,Range of motion,,"e.g. Full ROM, limited at 90 deg",,FALSE
+Orthopedics / MSK,examination_focused,Focused MSK Examination,6,core|examination,special_tests,Special tests,,"e.g. SLR neg, Lachman neg",,FALSE
+Orthopedics / MSK,examination_neurovascular,Neurovascular Examination,7,core|examination,motor,Motor strength,,e.g. 5/5 all groups,,FALSE
+Orthopedics / MSK,examination_neurovascular,Neurovascular Examination,7,core|examination,sensation,Sensation,,e.g. Intact,,FALSE
+Orthopedics / MSK,examination_neurovascular,Neurovascular Examination,7,core|examination,reflexes,Reflexes,,e.g. 2+ symmetric,,FALSE
+Orthopedics / MSK,examination_neurovascular,Neurovascular Examination,7,core|examination,pulses,Pulses,,e.g. DP/PT palpable,,FALSE
+Orthopedics / MSK,gait,Gait/Weight-bearing,8,conditional|examination,gait_pattern,Gait pattern,,e.g. Antalgic gait,,FALSE
+Orthopedics / MSK,imaging,Imaging Reviewed,9,optional|investigation,imaging_done,Imaging reviewed,,e.g. X-ray knee: no fracture,,FALSE
+Orthopedics / MSK,red_flags,MSK Red Flags,10,safety|safety_prompt,red_flags,Red flags,textarea,"e.g. Cauda equina sx, no red flags",,FALSE
+Orthopedics / MSK,impression,Doctor Impression,11,core|clinician_entered,impression,Impression/Diagnosis,,e.g. Mechanical low back pain,,TRUE
+Orthopedics / MSK,plan,Doctor Plan,12,core|clinician_entered,plan,Plan,textarea,"e.g. NSAIDs, physio referral",,TRUE
+Orthopedics / MSK,follow_up,Follow-up,13,core|plan,follow_up,Follow-up plan,,e.g. 1-2 weeks,,FALSE
+ENT,hpi,History of Presenting Complaint,1,core|free_text,chief_complaint,Chief complaint,,"e.g. Sore throat, ear pain",,TRUE
+ENT,hpi,History of Presenting Complaint,1,core|free_text,duration,Duration,,e.g. 4 days,,TRUE
+ENT,hpi,History of Presenting Complaint,1,core|free_text,onset,Onset,select,,Acute|Gradual|Recurrent,FALSE
+ENT,ear,Ear Symptoms,2,conditional|structured_section,ear_pain,Ear pain,,"e.g. Right ear, sharp",,FALSE
+ENT,ear,Ear Symptoms,2,conditional|structured_section,hearing_loss,Hearing loss,,e.g. Gradual right,,FALSE
+ENT,ear,Ear Symptoms,2,conditional|structured_section,tinnitus,Tinnitus,,e.g. Ringing both,,FALSE
+ENT,ear,Ear Symptoms,2,conditional|structured_section,discharge,Ear discharge,,"e.g. Purulent, bloody",,FALSE
+ENT,nasal,Nasal Symptoms,3,conditional|structured_section,nasal_congestion,Nasal congestion,,"e.g. Bilateral, worse at night",,FALSE
+ENT,nasal,Nasal Symptoms,3,conditional|structured_section,discharge_nasal,Nasal discharge,,e.g. Thick green,,FALSE
+ENT,nasal,Nasal Symptoms,3,conditional|structured_section,nosebleed,Epistaxis,,e.g. Recurrent,,FALSE
+ENT,throat,Throat Symptoms,4,conditional|structured_section,sore_throat,Sore throat,,"e.g. Severe, worse swallowing",,FALSE
+ENT,throat,Throat Symptoms,4,conditional|structured_section,dysphagia,Dysphagia,,e.g. Unable solids,,FALSE
+ENT,throat,Throat Symptoms,4,conditional|structured_section,voice_change,Voice change,,,,FALSE
+ENT,dizziness,Dizziness/Vertigo,5,conditional|structured_section,vertigo_type,Vertigo type,,e.g. Rotational,,FALSE
+ENT,dizziness,Dizziness/Vertigo,5,conditional|structured_section,associated_dizziness,Associated sx,,e.g. Nausea,,FALSE
+ENT,systemic,Fever/Systemic,6,optional|structured_section,fever,Fever,,e.g. Fever 3 days,,FALSE
+ENT,systemic,Fever/Systemic,6,optional|structured_section,malaise,Malaise,,e.g. General malaise,,FALSE
+ENT,past_history,Past ENT History,7,core|structured_section,previous_ent,Previous ENT conditions,,e.g. Recurrent tonsillitis,,FALSE
+ENT,past_history,Past ENT History,7,core|structured_section,medications,Medications/allergies,textarea,e.g. Antihistamines,,FALSE
+ENT,examination,ENT Examination,8,core|examination,otoscopy,Otoscopy,,"e.g. Normal TM, fluid level",,FALSE
+ENT,examination,ENT Examination,8,core|examination,nasal_exam,Nasal exam,,e.g. Congested mucosa,,FALSE
+ENT,examination,ENT Examination,8,core|examination,oropharynx,Oropharynx,,e.g. Tonsillar exudate,,FALSE
+ENT,examination,ENT Examination,8,core|examination,neck,Neck exam,,e.g. Tender nodes,,FALSE
+ENT,examination,ENT Examination,8,core|examination,hearing_tests,Hearing tests,,,,FALSE
+ENT,red_flags,ENT Red Flags,9,safety|safety_prompt,red_flags,Red flags,textarea,"e.g. Stridor, no red flags",,FALSE
+ENT,investigations,Investigations,10,optional|investigation,labs,Labs/swabs,,e.g. Rapid strep +,,FALSE
+ENT,impression,Doctor Impression,11,core|clinician_entered,impression,Impression/Diagnosis,,e.g. Strep pharyngitis,,TRUE
+ENT,plan,Doctor Plan,12,core|clinician_entered,plan,Plan,textarea,e.g. Antibiotics if bacterial,,TRUE
+ENT,follow_up,Follow-up,13,core|plan,follow_up,Follow-up plan,,e.g. 5 days,,FALSE
+Dermatology,hpi,History of Presenting Complaint,1,core|free_text,chief_complaint,Chief complaint,,"e.g. Itchy rash, acne",,TRUE
+Dermatology,hpi,History of Presenting Complaint,1,core|free_text,duration,Duration,,"e.g. 1 week, 3 months",,TRUE
+Dermatology,hpi,History of Presenting Complaint,1,core|free_text,onset,Onset,select,,Acute|Gradual|Recurrent,FALSE
+Dermatology,lesion_history,Lesion/Rash History,2,core|structured_section,distribution,Distribution,,"e.g. Face, hands, flexural",,TRUE
+Dermatology,lesion_history,Lesion/Rash History,2,core|structured_section,morphology,Morphology,,"e.g. Papules, vesicles, plaques",,FALSE
+Dermatology,lesion_history,Lesion/Rash History,2,core|structured_section,itch,Itch/pain/bleeding,,e.g. Intensely itchy,,FALSE
+Dermatology,lesion_history,Lesion/Rash History,2,core|structured_section,progression,Progression,,"e.g. Spreading, stable",,FALSE
+Dermatology,triggers,Triggers/Exposures,3,core|structured_section,new_products,New products,,e.g. New detergent,,FALSE
+Dermatology,triggers,Triggers/Exposures,3,core|structured_section,medications_new,New medications,,e.g. Amoxicillin 1wk ago,,FALSE
+Dermatology,triggers,Triggers/Exposures,3,core|structured_section,sun_exposure,Sun exposure,,e.g. Recent sun exposure,,FALSE
+Dermatology,triggers,Triggers/Exposures,3,core|structured_section,stress_food,Stress/food triggers,,e.g. Stress onset,,FALSE
+Dermatology,past_history,Past Derm History,4,core|structured_section,previous_skin,Previous skin conditions,,e.g. Eczema as child,,FALSE
+Dermatology,past_history,Past Derm History,4,core|structured_section,atopy,Atopy history,,"e.g. Asthma, hay fever",,FALSE
+Dermatology,past_history,Past Derm History,4,core|structured_section,previous_treatments,Previous treatments,,e.g. Topical steroids,,FALSE
+Dermatology,past_history,Past Derm History,4,core|structured_section,family_history,Family history,,"e.g. Atopy, psoriasis",,FALSE
+Dermatology,systemic,Systemic Symptoms,5,optional|structured_section,fever_joint,Fever/joint pain,,e.g. No systemic sx,,FALSE
+Dermatology,examination,Skin Examination,6,core|examination,distribution_exam,Distribution,,e.g. Symmetric flexural,,FALSE
+Dermatology,examination,Skin Examination,6,core|examination,lesions_exam,Lesion characteristics,,e.g. Erythematous papules,,FALSE
+Dermatology,examination,Skin Examination,6,core|examination,mucous_membranes,Mucous membranes,,e.g. No oral lesions,,FALSE
+Dermatology,examination,Skin Examination,6,core|examination,nails_hair,Nail/hair,,e.g. Nail pitting,,FALSE
+Dermatology,red_flags,Derm Red Flags,7,safety|safety_prompt,red_flags,Red flags,textarea,"e.g. Changing mole, blistering, no red flags",,FALSE
+Dermatology,impression,Doctor Impression,8,core|clinician_entered,impression,Impression/Diagnosis,,e.g. Contact dermatitis,,TRUE
+Dermatology,plan,Doctor Plan,9,core|clinician_entered,plan,Plan,textarea,e.g. Topical treatment,,TRUE
+Dermatology,follow_up,Follow-up,10,core|plan,follow_up,Follow-up plan,,e.g. 2 weeks,,FALSE
+Ophthalmology,hpi,History of Presenting Complaint,1,core|free_text,chief_complaint,Chief complaint,,"e.g. Red eye, vision loss",,TRUE
+Ophthalmology,hpi,History of Presenting Complaint,1,core|free_text,duration,Duration,,"e.g. Hours, 3 days",,TRUE
+Ophthalmology,hpi,History of Presenting Complaint,1,core|free_text,onset,Onset,select,,Sudden|Gradual|Recurrent,FALSE
+Ophthalmology,visual,Visual Symptoms,2,core|structured_section,vision_change,Vision change,,"e.g. Blurred, floaters",,TRUE
+Ophthalmology,visual,Visual Symptoms,2,core|structured_section,visual_field,Visual field loss,,e.g. Peripheral loss,,FALSE
+Ophthalmology,visual,Visual Symptoms,2,core|structured_section,photophobia,Photophobia,select,,Yes|No,FALSE
+Ophthalmology,pain_redness,Pain/Redness,3,core|structured_section,eye_pain,Eye pain,,"e.g. Sharp, worse with movement",,FALSE
+Ophthalmology,pain_redness,Pain/Redness,3,core|structured_section,redness,Redness,select,,Yes|No,FALSE
+Ophthalmology,pain_redness,Pain/Redness,3,core|structured_section,discharge_eye,Eye discharge,,"e.g. Watery, purulent",,FALSE
+Ophthalmology,trauma_cl,Trauma/Contact Lens,4,conditional|structured_section,trauma,Trauma details,,e.g. Hit by ball,,FALSE
+Ophthalmology,trauma_cl,Trauma/Contact Lens,4,conditional|structured_section,contact_lens,Contact lens use,select,,Yes|No,FALSE
+Ophthalmology,past_ocular,Past Ocular History,5,core|structured_section,previous_eye,Previous eye conditions,,"e.g. Glaucoma, cataracts",,FALSE
+Ophthalmology,past_ocular,Past Ocular History,5,core|structured_section,medications_eye,Eye medications,,e.g. Artificial tears,,FALSE
+Ophthalmology,past_ocular,Past Ocular History,5,core|structured_section,systemic_diseases,Systemic diseases,,"e.g. DM, HTN",,FALSE
+Ophthalmology,examination,Eye Examination,6,core|examination,visual_acuity,Visual acuity,,"e.g. 6/6 OD, 6/9 OS",,TRUE
+Ophthalmology,examination,Eye Examination,6,core|examination,pupils,Pupils,,"e.g. Equal, reactive, no RAPD",,FALSE
+Ophthalmology,examination,Eye Examination,6,core|examination,eom,Extraocular movements,,"e.g. Full, pain on gaze",,FALSE
+Ophthalmology,examination,Eye Examination,6,core|examination,anterior_segment,Anterior segment,,e.g. Conjunctival injection,,FALSE
+Ophthalmology,examination,Eye Examination,6,core|examination,fundoscopy,Fundoscopy,,e.g. Normal disc,,FALSE
+Ophthalmology,red_flags,Ophth Red Flags,7,safety|safety_prompt,red_flags,Red flags,textarea,"e.g. Sudden vision loss, no red flags",,FALSE
+Ophthalmology,impression,Doctor Impression,8,core|clinician_entered,impression,Impression/Diagnosis,,e.g. Allergic conjunctivitis,,TRUE
+Ophthalmology,plan,Doctor Plan,9,core|clinician_entered,plan,Plan,textarea,e.g. Antihistamine drops,,TRUE
+Ophthalmology,follow_up,Follow-up,10,core|plan,follow_up,Follow-up plan,,e.g. 1 week,,FALSE
+Psychiatry / Mental Health,hpi,History of Presenting Complaint,1,core|free_text,chief_complaint,Chief complaint,,"e.g. Low mood, anxiety",,TRUE
+Psychiatry / Mental Health,hpi,History of Presenting Complaint,1,core|free_text,duration,Duration,,"e.g. 2 weeks, 6 months",,TRUE
+Psychiatry / Mental Health,hpi,History of Presenting Complaint,1,core|free_text,onset_pattern,Onset/pattern,,"e.g. Gradual, acute",,FALSE
+Psychiatry / Mental Health,hpi,History of Presenting Complaint,1,core|free_text,precipitants,Precipitants,,e.g. Work stress,,FALSE
+Psychiatry / Mental Health,mood,Mood Symptoms,2,core|structured_section,mood_state,Mood state,textarea,"e.g. Depressed, anxious",,FALSE
+Psychiatry / Mental Health,mood,Mood Symptoms,2,core|structured_section,sleep,Sleep,,"e.g. Insomnia, early waking",,FALSE
+Psychiatry / Mental Health,mood,Mood Symptoms,2,core|structured_section,appetite,Appetite,,"e.g. Decreased, increased",,FALSE
+Psychiatry / Mental Health,mood,Mood Symptoms,2,core|structured_section,anhedonia,Anhedonia,select,,Yes|No|Not assessed,FALSE
+Psychiatry / Mental Health,mood,Mood Symptoms,2,core|structured_section,energy,Energy/concentration,,e.g. Low energy,,FALSE
+Psychiatry / Mental Health,psychotic,Psychotic Symptoms,3,conditional|checklist,hallucinations,Hallucinations,checkbox,,Auditory|Visual|None,FALSE
+Psychiatry / Mental Health,psychotic,Psychotic Symptoms,3,conditional|checklist,delusions,Delusions,checkbox,,Persecutory|Grandiose|None,FALSE
+Psychiatry / Mental Health,psychotic,Psychotic Symptoms,3,conditional|checklist,disorganised,Disorganised thinking,,e.g. Tangential,,FALSE
+Psychiatry / Mental Health,risk,Risk Assessment,4,safety|safety_prompt,self_harm,Self-harm/suicidal,textarea,"e.g. No SI, passive thoughts",,FALSE
+Psychiatry / Mental Health,risk,Risk Assessment,4,safety|safety_prompt,harm_others,Risk to others,textarea,e.g. No concern,,FALSE
+Psychiatry / Mental Health,risk,Risk Assessment,4,safety|safety_prompt,protective_factors,Protective factors,,e.g. Supportive family,,FALSE
+Psychiatry / Mental Health,substance,Substance Use,5,conditional|structured_section,alcohol_use,Alcohol use,,e.g. Social,,FALSE
+Psychiatry / Mental Health,substance,Substance Use,5,conditional|structured_section,drug_use,Drug use,,e.g. Cannabis weekly,,FALSE
+Psychiatry / Mental Health,past_psych,Past Psychiatric History,6,core|structured_section,previous_dx,Previous diagnoses,,e.g. Depression,,FALSE
+Psychiatry / Mental Health,past_psych,Past Psychiatric History,6,core|structured_section,previous_admissions,Previous admissions,,e.g. 1 admission 2023,,FALSE
+Psychiatry / Mental Health,past_psych,Past Psychiatric History,6,core|structured_section,medications_psych,Medications,textarea,e.g. Sertraline 100mg,,FALSE
+Psychiatry / Mental Health,past_psych,Past Psychiatric History,6,core|structured_section,therapy,Therapy history,,e.g. CBT 2024,,FALSE
+Psychiatry / Mental Health,past_medical,Past Medical History,7,core|structured_section,medical_conditions,Medical conditions,textarea,e.g. Hypothyroidism,,FALSE
+Psychiatry / Mental Health,past_medical,Past Medical History,7,core|structured_section,allergies,Allergies,,e.g. None,,FALSE
+Psychiatry / Mental Health,social,Social History,8,core|structured_section,family_history,Family psychiatric hx,,e.g. Mother bipolar,,FALSE
+Psychiatry / Mental Health,social,Social History,8,core|structured_section,living_situation,Living situation,,e.g. Lives with parents,,FALSE
+Psychiatry / Mental Health,social,Social History,8,core|structured_section,employment,Employment,,e.g. Unemployed,,FALSE
+Psychiatry / Mental Health,social,Social History,8,core|structured_section,forensic,Forensic history,,e.g. None,,FALSE
+Psychiatry / Mental Health,mental_state,Mental State Examination,9,core|examination,appearance,Appearance/behaviour,,"e.g. Well kempt, cooperative",,FALSE
+Psychiatry / Mental Health,mental_state,Mental State Examination,9,core|examination,speech,Speech,,e.g. Normal rate,,FALSE
+Psychiatry / Mental Health,mental_state,Mental State Examination,9,core|examination,mood_affect,Mood/affect,,"e.g. Low mood, restricted",,FALSE
+Psychiatry / Mental Health,mental_state,Mental State Examination,9,core|examination,thought_form,Thought form/content,,"e.g. Linear, no delusions",,FALSE
+Psychiatry / Mental Health,mental_state,Mental State Examination,9,core|examination,cognition,Cognition/insight,,"e.g. Oriented, partial insight",,FALSE
+Psychiatry / Mental Health,impression,Doctor Impression,10,core|clinician_entered,impression,Impression/Diagnosis,,e.g. Moderate depression,,TRUE
+Psychiatry / Mental Health,plan,Doctor Plan,11,core|clinician_entered,plan,Plan,textarea,"e.g. Start SSRI, safety plan",,TRUE
+Psychiatry / Mental Health,follow_up,Follow-up,12,core|plan,follow_up,Follow-up plan,,e.g. 1 week,,FALSE
