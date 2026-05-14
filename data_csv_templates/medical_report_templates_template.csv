@@ -1,0 +1,8 @@
+template_id,name,description,type,specialty_filter,sections,disclaimer,schema_version
+emr-general,Standard EMR Note,"Short EMR-friendly note for clinical records.",emr,,"See DATA_SCHEMA.md for section structure","Structured report draft. Review before use.",1.0.0
+soap-general,Standard SOAP Note,"Structured SOAP format note.",soap,,,"Structured report draft. Review before use.",1.0.0
+referral-general,General Referral Letter,"Standard referral letter for specialist consultation.",referral,,,"Structured report draft. Review before use. Not an official medical record.",1.0.0
+instructions-general,Standard Patient Instructions,"Patient-facing instructions sheet.",instructions,,,"Structured report draft. Review before use. Not a substitute for medical advice.",1.0.0
+fitness-note-general,"Fitness / Work / School Note","Brief fitness certificate for work or school.",fitness_note,,,"Structured report draft. Review before use. Not an official medical certificate.",1.0.0
+discharge-general,Discharge Summary,"Brief discharge-style summary for ED or clinic.",discharge,,,"Structured report draft. Review before use.",1.0.0
+insurance-summary-general,Insurance Clinical Summary,"Summary for insurance or third-party review.",insurance,,,"Structured report draft. Review before use. Not a guaranteed claim authorization.",1.0.0

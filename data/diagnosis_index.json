@@ -1,0 +1,350 @@
+{
+  "index_version": "1.0.0",
+  "last_updated": "2026-05-14",
+  "entries": [
+    {
+      "entry_id": "dx-gp-viral-urti",
+      "type": "diagnosis",
+      "label": "Viral URTI",
+      "aliases": [
+        "common cold"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP",
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "gp-fever-urti",
+        "peds-fever-viral"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "J00",
+        "icd_label": "Acute nasopharyngitis",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-acute-bronchitis",
+      "type": "diagnosis",
+      "label": "Acute Bronchitis",
+      "aliases": [
+        "bronchitis"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-cough-bronchitis"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "J20.9",
+        "icd_label": "Acute bronchitis unspecified",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-gerd",
+      "type": "diagnosis",
+      "label": "GERD",
+      "aliases": [
+        "acid reflux",
+        "reflux disease"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-chest-pain-gerd"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "K21.9",
+        "icd_label": "GERD without esophagitis",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-chest-pain",
+      "type": "chief_complaint",
+      "label": "Chest pain",
+      "aliases": [
+        "chest discomfort"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP",
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "gp-chest-pain-gerd"
+      ]
+    },
+    {
+      "entry_id": "cc-gp-fever",
+      "type": "chief_complaint",
+      "label": "Fever",
+      "aliases": [
+        "pyrexia",
+        "high temperature"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP",
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "gp-fever-urti",
+        "peds-fever-viral"
+      ]
+    },
+    {
+      "entry_id": "cc-gp-cough",
+      "type": "chief_complaint",
+      "label": "Cough",
+      "aliases": [
+        "dry cough",
+        "productive cough"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-cough-bronchitis"
+      ]
+    },
+    {
+      "entry_id": "dx-msk-mechanical-lbp",
+      "type": "diagnosis",
+      "label": "Mechanical Low Back Pain",
+      "aliases": [
+        "lumbar strain",
+        "lumbago"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-low-back-pain-mechanical"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "M54.5",
+        "icd_label": "Low back pain",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-msk-back-pain",
+      "type": "chief_complaint",
+      "label": "Low back pain",
+      "aliases": [
+        "back ache"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-low-back-pain-mechanical"
+      ]
+    },
+    {
+      "entry_id": "dx-obgyn-candidiasis",
+      "type": "diagnosis",
+      "label": "Vulvovaginal Candidiasis",
+      "aliases": [
+        "yeast infection"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-vaginal-discharge-candidiasis"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "B37.3",
+        "icd_label": "Candidiasis of vulva and vagina",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-obgyn-discharge",
+      "type": "chief_complaint",
+      "label": "Vaginal discharge",
+      "aliases": [
+        "leukorrhea"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-vaginal-discharge-candidiasis"
+      ]
+    },
+    {
+      "entry_id": "dx-psych-mdd",
+      "type": "diagnosis",
+      "label": "Major Depressive Disorder",
+      "aliases": [
+        "depression",
+        "clinical depression"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-depression-major-depressive"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "F32.9",
+        "icd_label": "MDD single episode unspecified",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-psych-low-mood",
+      "type": "chief_complaint",
+      "label": "Low mood / depression",
+      "aliases": [
+        "sadness",
+        "depression"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-depression-major-depressive"
+      ]
+    },
+    {
+      "entry_id": "dx-ent-strep-throat",
+      "type": "diagnosis",
+      "label": "Streptococcal Pharyngitis",
+      "aliases": [
+        "strep throat"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-sore-throat-streptococcal"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "J02.0",
+        "icd_label": "Streptococcal pharyngitis",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ent-sore-throat",
+      "type": "chief_complaint",
+      "label": "Sore throat",
+      "aliases": [
+        "pharyngitis",
+        "throat pain"
+      ],
+      "specialty_ids": [
+        "ENT",
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "ent-sore-throat-streptococcal"
+      ]
+    },
+    {
+      "entry_id": "dx-ophth-conjunctivitis",
+      "type": "diagnosis",
+      "label": "Conjunctivitis",
+      "aliases": [
+        "pink eye"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-red-eye-conjunctivitis"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "H10.9",
+        "icd_label": "Unspecified conjunctivitis",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ophth-red-eye",
+      "type": "chief_complaint",
+      "label": "Red eye",
+      "aliases": [
+        "pink eye",
+        "eye redness"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-red-eye-conjunctivitis"
+      ]
+    },
+    {
+      "entry_id": "dx-derm-contact-dermatitis",
+      "type": "diagnosis",
+      "label": "Contact Dermatitis",
+      "aliases": [
+        "allergic dermatitis"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-itchy-rash-contact-dermatitis"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "L25.9",
+        "icd_label": "Unspecified contact dermatitis",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-derm-rash",
+      "type": "chief_complaint",
+      "label": "Itchy rash",
+      "aliases": [
+        "pruritic rash",
+        "skin rash"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-itchy-rash-contact-dermatitis"
+      ]
+    },
+    {
+      "entry_id": "cc-peds-fever",
+      "type": "chief_complaint",
+      "label": "Fever in child",
+      "aliases": [
+        "fever in infant"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-fever-viral"
+      ]
+    }
+  ]
+}

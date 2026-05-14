@@ -1,0 +1,2 @@
+specialty_id,section_id,section_display_name,section_order,section_description,field_id,prompt,field_type,placeholder,options,required
+"General Medicine / GP","hpi","History of Presenting Complaint",1,"Main symptom timeline",chief_complaint,"Chief complaint",text,"e.g. chest pain",,TRUE

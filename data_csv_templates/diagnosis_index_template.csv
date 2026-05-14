@@ -1,0 +1,3 @@
+entry_id,type,label,aliases,specialty_ids,workflow_ids,icd_system,icd_code,icd_label,icd_verified,icd_source
+dx-gp-viral-urti,diagnosis,Viral URTI,"common cold","General Medicine / GP | Pediatrics","gp-fever-urti",ICD-10-CM,J00,Acute nasopharyngitis,FALSE,
+cc-gp-fever,chief_complaint,Fever,"pyrexia, high temperature","General Medicine / GP","gp-fever-urti",,,,,

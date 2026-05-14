@@ -1,0 +1,2 @@
+workflow_id,specialty_id,chief_complaint,diagnosis,history_layout_id,icd_system,icd_code,icd_label,icd_verified,icd_source,chip_groups,min_sections,age_min_months,age_max_years,sex
+gp-fever-urti,General Medicine / GP,Fever,Viral URTI,General Medicine / GP,ICD-10-CM,J00,Acute nasopharyngitis,FALSE,,"symptoms,relevant_negatives,exam_findings,red_flags,investigations,plan_phrases,follow_up","hpi,pmh",3,,

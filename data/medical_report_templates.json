@@ -1,0 +1,418 @@
+[
+  {
+    "template_id": "emr-general",
+    "name": "Standard EMR Note",
+    "description": "Short EMR-friendly note for clinical records.",
+    "type": "emr",
+    "specialty_filter": null,
+    "sections": [
+      {
+        "section_id": "header",
+        "display_name": "Header",
+        "order": 1,
+        "content_template": "SHORT EMR NOTE\nSpecialty: {{specialty}} | Visit: {{visit_type}}\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "specialty",
+            "source": "free_text",
+            "description": "Specialty name"
+          },
+          {
+            "variable_name": "visit_type",
+            "source": "free_text",
+            "description": "Visit type label"
+          }
+        ]
+      },
+      {
+        "section_id": "history",
+        "display_name": "History",
+        "order": 2,
+        "content_template": "Seen for {{symptoms}} / {{duration}}. {{negatives}}\nExam: {{exam}}.\nImpression: {{impression}}.\nPlan: {{plan}}.\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "symptoms",
+            "source": "chips",
+            "chip_group": "symptoms",
+            "description": "Selected symptoms"
+          },
+          {
+            "variable_name": "duration",
+            "source": "free_text",
+            "description": "Duration"
+          },
+          {
+            "variable_name": "negatives",
+            "source": "chips",
+            "chip_group": "relevant_negatives",
+            "description": "Pertinent negatives"
+          },
+          {
+            "variable_name": "exam",
+            "source": "chips",
+            "chip_group": "exam_findings",
+            "description": "Exam findings"
+          },
+          {
+            "variable_name": "impression",
+            "source": "free_text",
+            "description": "Working impression"
+          },
+          {
+            "variable_name": "plan",
+            "source": "chips",
+            "chip_group": "plan_phrases",
+            "description": "Plan items"
+          }
+        ]
+      },
+      {
+        "section_id": "red_flags",
+        "display_name": "Red Flags",
+        "order": 3,
+        "content_template": "{{red_flags}}",
+        "optional": true,
+        "variables": [
+          {
+            "variable_name": "red_flags",
+            "source": "chips",
+            "chip_group": "red_flags",
+            "description": "Red flags discussed"
+          }
+        ]
+      }
+    ],
+    "disclaimer": "Structured report draft. Review before use."
+  },
+  {
+    "template_id": "soap-general",
+    "name": "Standard SOAP Note",
+    "description": "Structured SOAP format note.",
+    "type": "soap",
+    "specialty_filter": null,
+    "sections": [
+      {
+        "section_id": "header",
+        "display_name": "Header",
+        "order": 1,
+        "content_template": "SOAP NOTE\nSpecialty: {{specialty}} | Visit: {{visit_type}}\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "specialty",
+            "source": "free_text"
+          },
+          {
+            "variable_name": "visit_type",
+            "source": "free_text"
+          }
+        ]
+      },
+      {
+        "section_id": "subjective",
+        "display_name": "Subjective",
+        "order": 2,
+        "content_template": "SUBJECTIVE:\nDuration: {{duration}}\nSymptoms: {{symptoms}}\nRelevant negatives: {{negatives}}\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "duration",
+            "source": "free_text"
+          },
+          {
+            "variable_name": "symptoms",
+            "source": "chips",
+            "chip_group": "symptoms"
+          },
+          {
+            "variable_name": "negatives",
+            "source": "chips",
+            "chip_group": "relevant_negatives"
+          }
+        ]
+      },
+      {
+        "section_id": "objective",
+        "display_name": "Objective",
+        "order": 3,
+        "content_template": "OBJECTIVE:\nExamination: {{exam}}\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "exam",
+            "source": "chips",
+            "chip_group": "exam_findings"
+          }
+        ]
+      },
+      {
+        "section_id": "assessment",
+        "display_name": "Assessment",
+        "order": 4,
+        "content_template": "ASSESSMENT:\n{{impression}}\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "impression",
+            "source": "free_text"
+          }
+        ]
+      },
+      {
+        "section_id": "plan",
+        "display_name": "Plan",
+        "order": 5,
+        "content_template": "PLAN:\n{{plan}}\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "plan",
+            "source": "chips",
+            "chip_group": "plan_phrases"
+          }
+        ]
+      }
+    ],
+    "disclaimer": "Structured report draft. Review before use."
+  },
+  {
+    "template_id": "referral-general",
+    "name": "General Referral Letter",
+    "description": "Standard referral letter for specialist consultation.",
+    "type": "referral",
+    "specialty_filter": null,
+    "sections": [
+      {
+        "section_id": "header",
+        "display_name": "Header",
+        "order": 1,
+        "content_template": "REFERRAL LETTER\n\nTo: {{referred_to}}\nReason: {{reason}}\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "referred_to",
+            "source": "free_text",
+            "description": "Referred specialty/doctor"
+          },
+          {
+            "variable_name": "reason",
+            "source": "free_text",
+            "description": "Reason for referral"
+          }
+        ]
+      },
+      {
+        "section_id": "history",
+        "display_name": "History",
+        "order": 2,
+        "content_template": "History: {{symptoms}} / {{duration}}\nRelevant negatives: {{negatives}}\nExam findings: {{exam}}\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "symptoms",
+            "source": "chips",
+            "chip_group": "symptoms"
+          },
+          {
+            "variable_name": "duration",
+            "source": "free_text"
+          },
+          {
+            "variable_name": "negatives",
+            "source": "chips",
+            "chip_group": "relevant_negatives"
+          },
+          {
+            "variable_name": "exam",
+            "source": "chips",
+            "chip_group": "exam_findings"
+          }
+        ]
+      },
+      {
+        "section_id": "impression_plan",
+        "display_name": "Impression and Plan",
+        "order": 3,
+        "content_template": "Working impression: {{impression}}\nCurrent plan: {{plan}}\n\nPlease see and advise.\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "impression",
+            "source": "free_text"
+          },
+          {
+            "variable_name": "plan",
+            "source": "chips",
+            "chip_group": "plan_phrases"
+          }
+        ]
+      }
+    ],
+    "disclaimer": "Structured report draft. Review before use. Not an official medical record."
+  },
+  {
+    "template_id": "instructions-general",
+    "name": "Standard Patient Instructions",
+    "description": "Patient-facing instructions sheet.",
+    "type": "instructions",
+    "specialty_filter": null,
+    "sections": [
+      {
+        "section_id": "header",
+        "display_name": "Header",
+        "order": 1,
+        "content_template": "PATIENT INSTRUCTIONS\n\nDiagnosis/Impression: {{impression}}\n\nPlan:\n{{plan_lines}}\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "impression",
+            "source": "free_text"
+          },
+          {
+            "variable_name": "plan_lines",
+            "source": "chips",
+            "chip_group": "plan_phrases"
+          }
+        ]
+      }
+    ],
+    "disclaimer": "Structured report draft. Review before use. Not a substitute for medical advice."
+  },
+  {
+    "template_id": "fitness-note-general",
+    "name": "Fitness / Work / School Note",
+    "description": "Brief fitness certificate for work or school.",
+    "type": "fitness_note",
+    "specialty_filter": null,
+    "sections": [
+      {
+        "section_id": "statement",
+        "display_name": "Statement",
+        "order": 1,
+        "content_template": "FITNESS NOTE\n\nThis patient was seen for {{symptoms}} (duration {{duration}}).\nImpression: {{impression}}.\n\nRecommended rest period: {{follow_up}}.\n\nCleared to resume normal activities after recovery.\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "symptoms",
+            "source": "chips",
+            "chip_group": "symptoms"
+          },
+          {
+            "variable_name": "duration",
+            "source": "free_text"
+          },
+          {
+            "variable_name": "impression",
+            "source": "free_text"
+          },
+          {
+            "variable_name": "follow_up",
+            "source": "free_text",
+            "description": "Recommended rest period"
+          }
+        ]
+      }
+    ],
+    "disclaimer": "Structured report draft. Review before use. Not an official medical certificate."
+  },
+  {
+    "template_id": "discharge-general",
+    "name": "Discharge Summary",
+    "description": "Brief discharge-style summary for ED or clinic.",
+    "type": "discharge",
+    "specialty_filter": null,
+    "sections": [
+      {
+        "section_id": "summary",
+        "display_name": "Summary",
+        "order": 1,
+        "content_template": "DISCHARGE SUMMARY\n\nDiagnosis: {{impression}}\nPresenting symptoms: {{symptoms}} / {{duration}}\nNegative findings: {{negatives}}\nExam: {{exam}}\n\nPlan on discharge:\n{{plan}}\n\nFollow-up: {{follow_up}}\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "impression",
+            "source": "free_text"
+          },
+          {
+            "variable_name": "symptoms",
+            "source": "chips",
+            "chip_group": "symptoms"
+          },
+          {
+            "variable_name": "duration",
+            "source": "free_text"
+          },
+          {
+            "variable_name": "negatives",
+            "source": "chips",
+            "chip_group": "relevant_negatives"
+          },
+          {
+            "variable_name": "exam",
+            "source": "chips",
+            "chip_group": "exam_findings"
+          },
+          {
+            "variable_name": "plan",
+            "source": "chips",
+            "chip_group": "plan_phrases"
+          },
+          {
+            "variable_name": "follow_up",
+            "source": "free_text"
+          }
+        ]
+      }
+    ],
+    "disclaimer": "Structured report draft. Review before use."
+  },
+  {
+    "template_id": "insurance-summary-general",
+    "name": "Insurance Clinical Summary",
+    "description": "Summary for insurance or third-party review.",
+    "type": "insurance",
+    "specialty_filter": null,
+    "sections": [
+      {
+        "section_id": "summary",
+        "display_name": "Clinical Summary",
+        "order": 1,
+        "content_template": "CLINICAL SUMMARY (Insurance)\n\nDiagnosis: {{impression}}\nPresenting symptoms: {{symptoms}}\nDuration: {{duration}}\nPertinent negatives: {{negatives}}\nExam: {{exam}}\nPlan: {{plan}}\n\nThis summary is provided for insurance processing purposes.\n",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "impression",
+            "source": "free_text"
+          },
+          {
+            "variable_name": "symptoms",
+            "source": "chips",
+            "chip_group": "symptoms"
+          },
+          {
+            "variable_name": "duration",
+            "source": "free_text"
+          },
+          {
+            "variable_name": "negatives",
+            "source": "chips",
+            "chip_group": "relevant_negatives"
+          },
+          {
+            "variable_name": "exam",
+            "source": "chips",
+            "chip_group": "exam_findings"
+          },
+          {
+            "variable_name": "plan",
+            "source": "chips",
+            "chip_group": "plan_phrases"
+          }
+        ]
+      }
+    ],
+    "disclaimer": "Structured report draft. Review before use. Not a guaranteed claim authorization."
+  }
+]

@@ -1,0 +1,3 @@
+workflow_id,specialty_id,chip_id,group,chip_text,order,search_terms,tags
+gp-fever-urti,General Medicine / GP,gp-fever-urti-s1,symptoms,fever,1,"fever, pyrexia, temperature",acute
+gp-fever-urti,General Medicine / GP,gp-fever-urti-n1,relevant_negatives,no SOB,1,"SOB, dyspnea",respiratory
