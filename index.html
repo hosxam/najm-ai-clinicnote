@@ -574,7 +574,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <a onclick="showPage('safety')">Safety</a>
 <a onclick="showPage('about')">About</a>
 </div>
-&copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.6">Version f6ee239 |
+&copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.6">Version negative-fix |
   <span id="debugLibrary" style="font-size:11px;color:var(--gray-400)">Library: <span id="dbgLibStatus">checking...</span> | Types: <span id="dbgTypeCount">-</span> | JS: <span id="dbgJsReady">-</span></span>
   <script>
   (function(){var dbg=document.getElementById("debugLibrary");if(!dbg)return;function upd(){var s=document.getElementById("dbgLibStatus");var t=document.getElementById("dbgTypeCount");var j=document.getElementById("dbgJsReady");if(typeof VISIT_LIBRARY!=='undefined'){s.textContent="yes";s.style.color="#22c55e";var total=0;for(var k in VISIT_LIBRARY)total+=Object.keys(VISIT_LIBRARY[k]).length;t.textContent=total;t.style.color="#22c55e"}else{s.textContent="no";s.style.color="#ef4444"}if(typeof showPage!=='undefined'){j.textContent="yes";j.style.color="#22c55e"}else{j.textContent="no";j.style.color="#ef4444"}}setTimeout(upd,500);setTimeout(upd,3000);setTimeout(upd,5000)})();
@@ -808,7 +808,8 @@ function generateAllOutputs(){
   if(customItems.exam && customItems.exam.length){examSel = examSel.concat(customItems.exam)}
   if(customItems.plan && customItems.plan.length){planSel = planSel.concat(customItems.plan)}
   var sympStr = sympSel.length ? sympSel.join(", ") : "[not documented]";
-  var negStr = negSel.length ? "Denies "+negSel.join(", ") : "";
+  function formatNegatives(arr){return arr.length ? "Pertinent negatives: "+arr.join(", ")+"." : ""}
+  var negStr = negSel.length ? formatNegatives(negSel) : "";
   var examStr = examSel.length ? examSel.join(", ") : "[not documented]";
   var redStr = redSel.length ? "Red flags discussed: "+redSel.join(", ")+"." : "";
   var planItems = [];
@@ -821,7 +822,7 @@ function generateAllOutputs(){
   var emr = dcl+"SHORT EMR NOTE\n";
   emr += "Specialty: "+specName+" | Visit: "+vtName+"\n\n";
   emr += "Seen for "+sympStr+" / "+dur+". ";
-  if(negStr) emr += negStr+". ";
+  if(negStr) emr += negStr+" ";
   emr += "Exam: "+examStr+". ";
   emr += "Impression: "+impr+". ";
   emr += "Plan: "+planStr+". ";
@@ -834,7 +835,7 @@ function generateAllOutputs(){
   soap += "SUBJECTIVE:\n";
   soap += "Duration: "+dur+"\n";
   soap += "Symptoms: "+sympStr+"\n";
-  if(negStr) soap += "Relevant negatives: "+negStr.replace("Denies ","")+"\n";
+  if(negStr) soap += "Relevant negatives: "+negSel.join(", ")+"\n";
   soap += "\nOBJECTIVE:\n";
   soap += "Examination: "+examStr+"\n";
   if(redStr) soap += "Cautions: "+redStr+"\n";
@@ -847,6 +848,7 @@ function generateAllOutputs(){
   fupNote += "Specialty: "+specName+" | Condition: "+vtName+"\n\n";
   fupNote += "Interval: "+fup+"\n";
   fupNote += "Current symptoms: "+sympStr+"\n";
+  if(negStr) fupNote += "Relevant negatives: "+negSel.join(", ")+"\n";
   fupNote += "Examination: "+examStr+"\n";
   if(redStr) fupNote += "Red flags discussed: "+redStr+"\n";
   fupNote += "Impression: "+impr+"\n";
@@ -859,7 +861,7 @@ function generateAllOutputs(){
     refNote += "To: "+(refSpec||"[specialty]")+"\n";
     refNote += "Reason: "+refReason+"\n\n";
     refNote += "History: "+sympStr+" / "+dur+"\n";
-    refNote += "Relevant negatives: "+(negStr||"None documented")+"\n";
+    refNote += "Relevant negatives: "+(negSel.length?negSel.join(", "):"None documented")+"\n";
     refNote += "Exam findings: "+examStr+"\n";
     refNote += "Working impression: "+impr+"\n";
     refNote += "Current plan: "+planStr+"\n";
