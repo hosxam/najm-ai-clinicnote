@@ -1,4 +1,4 @@
-// Najm AI ClinicNote - Complete Visit Library
+﻿// Najm AI ClinicNote - Complete Visit Library
 // Auto-generated. Do not edit manually.
 
 var VISIT_LIBRARY = {
