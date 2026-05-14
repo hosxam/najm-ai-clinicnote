@@ -136,6 +136,15 @@ footer a{color:var(--gray-300);cursor:pointer}
 footer a:hover{color:#fff}
 footer .footer-links{display:flex;justify-content:center;gap:24px;margin-bottom:12px;flex-wrap:wrap}
 footer .footer-links a{font-weight:500}
+/* === SPEED MODE === */
+.speed-section{margin-bottom:36px}
+.speed-section-title{font-size:13px;font-weight:600;color:var(--gray-700);margin-bottom:8px;letter-spacing:0.01em}
+.chip-group{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.chip{display:inline-flex;align-items:center;gap:4px;padding:6px 12px;border-radius:999px;font-size:11px;font-weight:500;border:1.5px solid var(--gray-300);background:#fff;color:var(--gray-700);cursor:pointer;transition:all .12s;user-select:none;font-family:inherit;line-height:1.3}
+.chip:hover{border-color:var(--primary);background:var(--primary-bg);color:var(--primary)}.chip.selected{background:var(--primary);color:#fff;border-color:var(--primary)}.chip-redflag{color:var(--red);border-color:var(--red-border);background:var(--red-bg)}.chip-redflag:hover{background:var(--red);color:#fff;border-color:var(--red)}.chip-redflag.selected{background:var(--red);color:#fff;border-color:var(--red)}.speed-tip{font-size:10px;color:var(--gray-400);margin-bottom:6px;line-height:1.4;font-style:italic}.speed-mode-box{background:linear-gradient(135deg,#e6f4f4,var(--white));border:2px solid var(--primary);border-radius:var(--radius-xl);padding:24px;margin-bottom:24px;position:relative}.speed-mode-box::before{content:"SPEED MODE";position:absolute;top:-10px;left:20px;background:var(--primary);color:#fff;font-size:9px;font-weight:700;padding:3px 12px;border-radius:999px;letter-spacing:0.05em}.speed-divider{text-align:center;padding:16px 0;position:relative;color:var(--gray-400);font-size:11px;font-weight:500;margin:16px 0}.speed-divider::before,.speed-divider::after{content:"";position:absolute;top:50%;width:calc(50% - 40px);height:1px;background:var(--gray-200)}.speed-divider::before{left:0}.speed-divider::after{right:0}
+.why-faster{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:24px;margin-top:32px}.why-faster h3{font-size:16px;font-weight:600;color:var(--gray-900);margin-bottom:12px}.why-faster p{font-size:13px;color:var(--gray-600);line-height:1.7}.chip-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px}
+.speed-summary{background:var(--gray-50);border-radius:8px;padding:10px 14px;font-size:11px;color:var(--gray-500);margin:8px 0 14px;display:flex;gap:12px;flex-wrap:wrap}.speed-summary span{display:flex;align-items:center;gap:4px}
+@media(max-width:640px){.speed-mode-box{padding:18px;margin-bottom:18px}.chip{padding:5px 10px;font-size:10px}.chip-group{gap:4px}}
 @media(max-width:900px){.two-col{grid-template-columns:1fr}.steps-grid{grid-template-columns:repeat(2,1fr);gap:14px}.trust-grid{grid-template-columns:repeat(2,1fr);gap:14px}.hero h1{font-size:34px}.hero{padding:72px 16px 48px}.hero-stats{flex-wrap:wrap;gap:24px}.section{padding:48px 0}.page-header{padding:28px 0 20px}.output-card{position:static}}
 @media(max-width:640px){.nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:rgba(255,255,255,0.98);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--gray-200);flex-direction:column;padding:8px 16px 16px;gap:4px;max-height:calc(100vh - 64px);overflow-y:auto}.nav-links.open{display:flex}.nav-links a{padding:10px 14px;width:100%;border-radius:8px}.nav-links a.nav-cta{text-align:center}.nav-toggle{display:block}.hero h1{font-size:28px}.hero p{font-size:14px}.hero{padding:56px 14px 36px}.card-grid{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr;gap:10px}.trust-grid{grid-template-columns:repeat(2,1fr);gap:10px}.container{padding:0 14px}.section-title{font-size:24px}.section-sub{font-size:13px}.output-body{min-height:220px;font-size:11px;padding:14px}.presets-card{padding:12px}.two-col{gap:20px}.safety-section{padding:20px}}
 </style>
@@ -149,6 +158,7 @@ footer .footer-links a{font-weight:500}
 <button class="nav-toggle" id="navToggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
 <div class="nav-links" id="navLinks">
 <a data-page="home" onclick="showPage('home')">Home</a>
+<a data-page="speed" onclick="showPage('speed')">Speed Mode</a>
 <a data-page="opd" onclick="showPage('opd')">OPD Builder</a>
 <a data-page="referral" onclick="showPage('referral')">Referral</a>
 <a data-page="instructions" onclick="showPage('instructions')">Instructions</a>
@@ -170,7 +180,7 @@ footer .footer-links a{font-weight:500}
 </div>
 <div class="hero-stats">
 <div class="hero-stat"><div class="num">7</div><div class="lbl">Specialties</div></div>
-<div class="hero-stat"><div class="num">35+</div><div class="lbl">Visit Types</div></div>
+<div class="hero-stat"><div class="num">10</div><div class="lbl">Speed Types</div></div>
 <div class="hero-stat"><div class="num">5</div><div class="lbl">Output Formats</div></div>
 </div>
 </section>
@@ -213,6 +223,126 @@ footer .footer-links a{font-weight:500}
 <div class="product-item"><h4>ClinicTools</h4><p>Practice management and workflow tools</p><span class="badge badge-future">Future</span></div>
 </div>
 </section>
+</div><div id="page-speed" class="page">
+<div class="page-header">
+<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+<div><h2>OPD Speed Mode</h2><p>Select quick findings, add your impression and plan, get a copy-ready note.</p></div>
+<div class="status-bar"><span class="status-dot"></span><span>Less typing, same documentation.</span></div>
+</div>
+</div>
+
+<div class="speed-mode-box">
+<div class="two-col" style="gap:24px">
+<div>
+<div class="form-group">
+<label for="speedVisitType">Visit Type</label>
+<select id="speedVisitType" onchange="loadSpeedVisit()">
+<option value="">Select visit type</option>
+<option value="fever">Fever / URTI</option>
+<option value="cough">Cough</option>
+<option value="headache">Headache</option>
+<option value="abdPain">Abdominal pain</option>
+<option value="htnFU">Hypertension follow-up</option>
+<option value="dmFU">Diabetes follow-up</option>
+<option value="lbp">Low back pain</option>
+<option value="kneePain">Knee pain</option>
+<option value="rash">Rash</option>
+<option value="earPain">Ear pain</option>
+</select>
+</div>
+
+<div id="speedContent" style="display:none">
+<div class="note-phi-warn">Only select findings you personally assessed. Do not enter patient names, IDs, or contact information.</div>
+
+<div class="speed-section">
+<div class="speed-section-title">Duration and Main Concern</div>
+<div class="form-group" style="margin-bottom:8px"><input id="speedDuration" type="text" placeholder="e.g. 3 days, 2 weeks" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit"></div>
+</div>
+
+<div id="speedSymptomSection" class="speed-section">
+<div class="speed-section-title">Symptoms</div>
+<div class="speed-tip">Select all that apply</div>
+<div id="speedSymptoms" class="chip-group"></div>
+</div>
+
+<div id="speedNegSection" class="speed-section">
+<div class="speed-section-title">Relevant Negatives</div>
+<div class="speed-tip">Select negatives you ruled out</div>
+<div id="speedNegs" class="chip-group"></div>
+</div>
+
+<div id="speedExamSection" class="speed-section">
+<div class="speed-section-title">Examination Findings</div>
+<div class="speed-tip">Only select findings you personally assessed</div>
+<div id="speedExam" class="chip-group"></div>
+</div>
+
+<div id="speedRedFlagSection" class="speed-section">
+<div class="speed-section-title">Red Flags &amp; Cautions</div>
+<div class="speed-tip">Considered and discussed with patient</div>
+<div id="speedRedFlags" class="chip-group"></div>
+</div>
+
+<div class="speed-section">
+<div class="speed-section-title">Doctor-Entered Impression</div>
+<div class="form-group" style="margin-bottom:8px"><input id="speedImpression" type="text" placeholder="e.g. Viral URTI, Acute sinusitis" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit"></div>
+</div>
+
+<div class="speed-section">
+<div class="speed-section-title">Doctor-Entered Plan</div>
+<div class="form-group" style="margin-bottom:8px"><textarea id="speedPlan" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;min-height:60px;resize:vertical" placeholder="e.g. Symptomatic treatment, paracetamol 500mg PRN fever"></textarea></div>
+</div>
+
+<div id="speedPlanSection" class="speed-section">
+<div class="speed-section-title">Plan Phrases</div>
+<div class="speed-tip">Select additional plan items to include</div>
+<div id="speedPlans" class="chip-group"></div>
+</div>
+
+<div class="speed-section">
+<div class="speed-section-title">Follow-up</div>
+<div class="form-group" style="margin-bottom:8px"><input id="speedFollowup" type="text" placeholder="e.g. 3 days, 2 weeks, PRN" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit"></div>
+</div>
+
+<div class="gen-row">
+<button class="btn btn-primary btn-sm" onclick="gSpeed('emr')">Generate Short EMR Note</button>
+<button class="btn btn-primary btn-sm" onclick="gSpeed('soap')">Generate SOAP Note</button>
+<button class="btn btn-primary btn-sm" onclick="gSpeed('pt')">Patient Instructions</button>
+<button class="btn btn-ghost btn-sm" onclick="clearSpeed()">Clear All</button>
+</div>
+</div>
+
+<div id="speedEmptyState" style="padding:40px 20px;text-align:center;color:var(--gray-400);font-size:13px;line-height:1.6">
+Select a visit type above to start building your note.<br>
+Choose symptoms, negatives, exam findings, and plan phrases from quick-select chips.<br>
+<span style="font-size:11px;margin-top:8px;display:block">No data is stored. Everything stays on your device.</span>
+</div>
+</div>
+
+<div>
+<div class="output-card">
+<div class="output-header">
+<button class="output-tab active" onclick="switchTab('speed','emr')" data-speed-tab="emr">EMR</button>
+<button class="output-tab" onclick="switchTab('speed','soap')" data-speed-tab="soap">SOAP</button>
+<button class="output-tab" onclick="switchTab('speed','pt')" data-speed-tab="pt">Instructions</button>
+</div>
+<div id="speedOutputBox" class="output-body"><span class="placeholder">Select quick phrases or enter short notes to generate output.</span></div>
+<div class="output-actions">
+<button class="btn btn-outline btn-xs" onclick="cp('speedOutputBox')">Copy</button>
+<button class="btn btn-ghost btn-xs" onclick="clearSpeed()">Clear All</button>
+<button class="btn btn-ghost btn-xs" onclick="document.getElementById('speedOutputBox').innerHTML='<span class="placeholder">Select quick phrases or enter short notes to generate output.</span>'">Clear Output</button>
+</div>
+<div class="output-footer">Draft generated from doctor-entered information. Review before use.</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="why-faster" style="max-width:720px;margin:0 auto">
+<h3>Why not just type in the EMR?</h3>
+<p>ClinicNote is built for repetitive OPD documentation. Instead of typing the same phrases repeatedly, you select relevant findings, add your impression and plan, then copy a concise note into your workflow. It structures only what you enter and does not diagnose or recommend treatment.<br><br>
+<b>Speed Mode</b> is designed for high-frequency OPD visits to reduce keystrokes while maintaining documentation quality.</p>
+</div>
 </div><div id="page-opd" class="page">
 <div class="page-header">
 <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
@@ -467,17 +597,148 @@ SD.obgyn.types["Contraception counseling"]=["Current method?","Satisfaction?","S
 SD.genfup.types["Routine f/u"]=["Interval?","New complaints?","Vitals?","Medication review?","Plan?"];
 SD.genfup.types["Post-hospital f/u"]=["Reason for admission?","Discharge date?","Current symptoms?","Medication changes?","Follow-up plan?"];
 SD.genfup.types["Chronic disease f/u"]=["Disease?","Current status?","Medication compliance?","Latest labs?","Plan?"];
-SD.genfup.types["Lab results review"]=["Which labs?","Results?","Abnormal values?","Clinical correlation?","Plan?"];function showPage(pageId){var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open")}
+SD.genfup.types["Lab results review"]=["Which labs?","Results?","Abnormal values?","Clinical correlation?","Plan?"];
+var SPEED_DATA={
+  fever:{label:"Fever / URTI",symptoms:["fever","cough","sore throat","runny nose","body aches","fatigue","chills","loss of appetite"],negs:["no shortness of breath","no chest pain","no persistent vomiting","no neck stiffness","no confusion","no rash"],exam:["afebrile in clinic","febrile in clinic","throat congested","chest clear","no respiratory distress","hydration adequate","tachycardia","mild dehydration"],redFlags:["breathing difficulty","persistent high fever","confusion","neck stiffness","dehydration","immunocompromised"],plans:["supportive care advised","fluids advised","rest advised","antipyretic as per clinician plan","return precautions explained","follow-up if symptoms persist or worsen"]},
+  cough:{label:"Cough",symptoms:["dry cough","productive cough","fever","sore throat","runny nose","fatigue","wheeze","dyspnea on exertion"],negs:["no hemoptysis","no chest pain","no fever documented","no night sweats","no weight loss","no orthopnea"],exam:["chest clear","mild wheeze","crackles","throat congested","afebrile in clinic","respiratory rate normal"],redFlags:["hemoptysis","unexplained weight loss","night sweats","persistent fever","chest pain","SOB at rest"],plans:["cough suppressant as per clinician plan","steam inhalation advised","fluids advised","avoid smoke/dust","follow-up if persistent","return if hemoptysis"]},
+  headache:{label:"Headache",symptoms:["headache","nausea","photophobia","phonophobia","visual aura","tension","neck pain","fatigue"],negs:["no fever","no trauma","no vomiting","no focal weakness","no speech difficulty","no visual loss"],exam:["neurological exam grossly normal","gait normal","fundoscopy unremarkable","no meningism","vitals stable"],redFlags:["sudden severe onset","fever with neck stiffness","trauma","focal neurological deficit","new onset after age 50"],plans:["analgesia as per clinician plan","rest advised","avoid triggers","stay hydrated","follow-up if worsening","return if neurological symptoms"]},
+  abdPain:{label:"Abdominal pain",symptoms:["abdominal pain","nausea","vomiting","bloating","heartburn","diarrhea","constipation","loss of appetite"],negs:["no fever","no vomiting blood","no blood in stool","no jaundice","no urinary symptoms","no trauma"],exam:["abdomen soft","abdomen mildly tender","no guarding","no rebound","bowel sounds present","no distension"],redFlags:["severe pain","fever with tenderness","hematemesis","melena","weight loss","jaundice","pregnancy"],plans:["dietary modification advised","antacid as per clinician plan","analgesia advised","avoid NSAIDs","follow-up if persistent","return if worsening pain"]},
+  htnFU:{label:"Hypertension follow-up",symptoms:["routine follow-up","home BP readings reviewed","headache","dizziness","fatigue","palpitations"],negs:["no chest pain","no shortness of breath","no visual symptoms","no focal neurological symptoms","no palpitations documented"],exam:["BP recorded","cardiovascular exam documented","no acute distress","vitals stable"],redFlags:["BP > 180/110","chest pain","SOB","visual disturbance","neurological symptoms"],plans:["lifestyle advice reinforced","medication adherence discussed","home BP monitoring advised","follow-up arranged","labs/investigations as per clinician plan"]},
+  dmFU:{label:"Diabetes follow-up",symptoms:["routine follow-up","home glucose readings reviewed","polyuria","polydipsia","fatigue","weight change"],negs:["no hypoglycemia symptoms","no foot ulcers reported","no acute infection symptoms","no visual changes","no neuropathic symptoms"],exam:["vitals reviewed","foot check documented if performed","no acute distress","glucose recorded"],redFlags:["hypoglycemia episodes","foot ulcer","vision changes","uncontrolled glucose","weight loss"],plans:["lifestyle advice reinforced","medication adherence discussed","glucose monitoring advised","labs as per clinician plan","follow-up arranged"]},
+  lbp:{label:"Low back pain",symptoms:["lower back pain","radiating pain","stiffness","pain worse with movement","muscle spasm","pain on prolonged sitting"],negs:["no bowel/bladder symptoms","no saddle anesthesia","no fever","no trauma","no progressive weakness","no night pain"],exam:["gait normal","lumbar tenderness","range of motion limited by pain","straight leg raise negative","lower limb power grossly intact","sensation grossly intact"],redFlags:["trauma","fever","cancer history","unexplained weight loss","neurological deficit","saddle anesthesia","bowel/bladder symptoms","night pain","age > 50 first episode"],plans:["activity modification advised","physiotherapy referral considered","analgesia as per clinician plan","red flags explained","follow-up advised","avoid prolonged bed rest"]},
+  kneePain:{label:"Knee pain",symptoms:["knee pain","swelling","stiffness","instability","locking","pain with stairs","pain with walking","crepitus"],negs:["no trauma","no fever","no locking","no giving way","no night pain","no redness or warmth"],exam:["no effusion","mild effusion","ROM reduced","medial joint line tenderness","lateral joint line tenderness","stable ligament exam","no erythema"],redFlags:["trauma with inability to bear weight","fever with joint swelling","acute locking","rapid swelling"],plans:["rest and ice advised","elevation advised","analgesia as per clinician plan","physiotherapy considered","avoid impact activities","follow-up if not improving"]},
+  rash:{label:"Rash",symptoms:["rash","itching","burning","scaling","dryness","redness","blisters","oozing"],negs:["no fever","no new medication","no known trigger","no joint pain","no mucosal involvement"],exam:["erythematous rash","dry scaly patches","maculopapular","vesicular","well-demarcated","no secondary infection"],redFlags:["fever with rash","mucosal involvement","blistering","painful rash","rapid spread"],plans:["emollient advised","topical steroid as per clinician plan","antihistamine as per clinician plan","avoid irritants","follow-up if not improving","return if spreads or worsens"]},
+  earPain:{label:"Ear pain",symptoms:["ear pain","ear fullness","hearing loss","discharge","dizziness","fever","itching in ear"],negs:["no trauma","no foreign body","no known perforation","no tinnitus","no vertigo"],exam:["canal normal","canal erythematous","canal edematous","TM normal","TM injected","TM perforation suspected","discharge present","no mastoid tenderness"],redFlags:["post-auricular swelling","fever","discharge with pain","hearing loss","dizziness","immunocompromised"],plans:["analgesia as per clinician plan","aural hygiene advised","keep ear dry","antibiotics as per clinician plan","follow-up if not improving","return if severe pain or discharge"]}
+};
+function showPage(pageId){var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open")}
 function upVT(){var spec=document.getElementById("specialty").value;var vt=document.getElementById("visitType");vt.innerHTML="";var types=SD[spec].types;var keys=Object.keys(types);vt.innerHTML="<option value=\"\">Select a visit type</option>";for(var i=0;i<keys.length;i++){var opt=document.createElement("option");opt.value=keys[i];opt.textContent=keys[i];vt.appendChild(opt)}upP()}
 function upP(){var spec=document.getElementById("specialty").value;var vt=document.getElementById("visitType").value;var c=document.getElementById("promptsContainer");var l=document.getElementById("promptsList");if(!vt||!SD[spec].types[vt]){c.style.display="none";return}c.style.display="block";l.innerHTML="";var p=SD[spec].types[vt];for(var i=0;i<p.length;i++){var li=document.createElement("li");li.textContent=p[i];l.appendChild(li)}}
 function val(id){var el=document.getElementById(id);if(!el)return"[not documented]";var v=el.value.trim();return v||"[not documented]"}
 function detectPHI(text){if(!text||text.trim()==="")return false;var phone=/(\+?\d{1,4}[-.\s]?\d{5,15})|(\d{3}[-.\s]?\d{3}[-.\s]?\d{4})/;var email=/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;var dob=/\b(DOB|date\s*of\s*birth|d\.?\s*o\.?\s*b\.?)\b/i;var name=/\b(patient\s*name|pt\.?\s*name|name\s*:\s*[A-Z][a-z]+)\b/i;return phone.test(text)||email.test(text)||dob.test(text)||name.test(text)}
 function checkPHI(){var t=document.getElementById("clinicalNote").value;var w=document.getElementById("phiWarning");if(detectPHI(t)){w.classList.add("show")}else{w.classList.remove("show")}}
-function switchTab(area,tab){var pfx="";if(area==="opd")pfx="output-tab";else if(area==="ref")pfx="ref-tab";else if(area==="inst")pfx="inst-tab";var tabs=document.querySelectorAll("[data-"+pfx+"]");for(var i=0;i<tabs.length;i++){tabs[i].classList.remove("active")}var active=document.querySelector("[data-"+pfx+"=\""+tab+"\"]");if(active)active.classList.add("active")}function gO(type){var spec=document.getElementById("specialty");var specName=SD[spec.value]?SD[spec.value].name:spec.value;var vt=document.getElementById("visitType").value||"Not specified";var dc="Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";var cn=val("clinicalNote");var dur=val("duration");var symp=val("symptoms");var hx=val("history");var exam=val("exam");var inv=val("investigations");var impr=val("impression");var plan=val("plan");var fup=val("followupInterval");var dn=val("doctorNotes");var iel=document.getElementById("impression");var imp=(iel&&iel.value.trim())?iel.value.trim():"[doctor impression not documented]";var pel=document.getElementById("plan");var plt=(pel&&pel.value.trim())?pel.value.trim():"[doctor plan not documented]";var o="";if(type==="soap"){o=dc+"SOAP NOTE\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="SUBJECTIVE:\n";if(dur!="[not documented]")o+="Duration: "+dur+"\n";if(symp!="[not documented]")o+="Main symptoms: "+symp+"\n";if(hx!="[not documented]")o+="Relevant history: "+hx+"\n";if(cn!="[not documented]")o+="Patient report: "+cn+"\n";if(dur=="[not documented]"&&symp=="[not documented]"&&hx=="[not documented]"&&cn=="[not documented]")o+="[not documented]\n";o+="\nOBJECTIVE:\n";if(exam!="[not documented]")o+="Examination: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";if(exam=="[not documented]"&&inv=="[not documented]")o+="[not documented]\n";o+="\nASSESSMENT:\n"+imp+"\n\n";o+="PLAN:\n"+plt+"\n";if(fup!="[not documented]")o+="\nFollow-up: "+fup+"\n";if(dn!="[not documented]")o+="\nDoctor notes: "+dn+"\n"}else if(type==="emr"){o=dc+"SHORT EMR NOTE\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="CC: "+symp+"\n";o+="HPI: "+dur+". "+cn+"\n";o+="PMH: "+hx+"\n";o+="Exam: "+exam+"\n";o+="Investigations: "+inv+"\n";o+="Impression: "+imp+"\n";o+="Plan: "+plt+"\n";if(fup!="[not documented]")o+="Follow-up: "+fup+"\n"}else if(type==="fup"){o=dc+"FOLLOW-UP NOTE\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="Interval: "+fup+"\n";o+="Current status: "+cn+"\n";o+="Symptoms: "+symp+"\n";o+="History: "+hx+"\n";o+="Examination: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Impression: "+imp+"\n";o+="Plan: "+plt+"\n";if(dn!="[not documented]")o+="Notes: "+dn+"\n"}else if(type==="ref"){o=dc+"REFERRAL LETTER\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="Reason for referral: "+cn+"\n";o+="History: "+hx+"\n";o+="Exam findings: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Working impression: "+imp+"\n";o+="Current plan: "+plt+"\n";o+="Request: Please see and advise.\n"}else if(type==="pt"){o=dc+"PATIENT INSTRUCTIONS\n\n";o+="Diagnosis: "+imp+"\n\n";o+="Doctor advice: "+plt+"\n\n";o+="Medications: "+plt+"\n\n";o+="Activity: "+dn+"\n\n";o+="When to seek help: "+exam+"\n\n";o+="Follow-up: "+fup+"\n"}document.getElementById("outputBox").innerHTML=o}
+function switchTab(area,tab){var pfx="";if(area==="opd")pfx="output-tab";else if(area==="ref")pfx="ref-tab";else if(area==="inst")pfx="inst-tab";else if(area==="speed")pfx="speed-tab";var tabs=document.querySelectorAll("[data-"+pfx+"]");for(var i=0;i<tabs.length;i++){tabs[i].classList.remove("active")}var active=document.querySelector("[data-"+pfx+"=\""+tab+"\"]");if(active)active.classList.add("active")}function gO(type){var spec=document.getElementById("specialty");var specName=SD[spec.value]?SD[spec.value].name:spec.value;var vt=document.getElementById("visitType").value||"Not specified";var dc="Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";var cn=val("clinicalNote");var dur=val("duration");var symp=val("symptoms");var hx=val("history");var exam=val("exam");var inv=val("investigations");var impr=val("impression");var plan=val("plan");var fup=val("followupInterval");var dn=val("doctorNotes");var iel=document.getElementById("impression");var imp=(iel&&iel.value.trim())?iel.value.trim():"[doctor impression not documented]";var pel=document.getElementById("plan");var plt=(pel&&pel.value.trim())?pel.value.trim():"[doctor plan not documented]";var o="";if(type==="soap"){o=dc+"SOAP NOTE\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="SUBJECTIVE:\n";if(dur!="[not documented]")o+="Duration: "+dur+"\n";if(symp!="[not documented]")o+="Main symptoms: "+symp+"\n";if(hx!="[not documented]")o+="Relevant history: "+hx+"\n";if(cn!="[not documented]")o+="Patient report: "+cn+"\n";if(dur=="[not documented]"&&symp=="[not documented]"&&hx=="[not documented]"&&cn=="[not documented]")o+="[not documented]\n";o+="\nOBJECTIVE:\n";if(exam!="[not documented]")o+="Examination: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";if(exam=="[not documented]"&&inv=="[not documented]")o+="[not documented]\n";o+="\nASSESSMENT:\n"+imp+"\n\n";o+="PLAN:\n"+plt+"\n";if(fup!="[not documented]")o+="\nFollow-up: "+fup+"\n";if(dn!="[not documented]")o+="\nDoctor notes: "+dn+"\n"}else if(type==="emr"){o=dc+"SHORT EMR NOTE\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="CC: "+symp+"\n";o+="HPI: "+dur+". "+cn+"\n";o+="PMH: "+hx+"\n";o+="Exam: "+exam+"\n";o+="Investigations: "+inv+"\n";o+="Impression: "+imp+"\n";o+="Plan: "+plt+"\n";if(fup!="[not documented]")o+="Follow-up: "+fup+"\n"}else if(type==="fup"){o=dc+"FOLLOW-UP NOTE\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="Interval: "+fup+"\n";o+="Current status: "+cn+"\n";o+="Symptoms: "+symp+"\n";o+="History: "+hx+"\n";o+="Examination: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Impression: "+imp+"\n";o+="Plan: "+plt+"\n";if(dn!="[not documented]")o+="Notes: "+dn+"\n"}else if(type==="ref"){o=dc+"REFERRAL LETTER\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="Reason for referral: "+cn+"\n";o+="History: "+hx+"\n";o+="Exam findings: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Working impression: "+imp+"\n";o+="Current plan: "+plt+"\n";o+="Request: Please see and advise.\n"}else if(type==="pt"){o=dc+"PATIENT INSTRUCTIONS\n\n";o+="Diagnosis: "+imp+"\n\n";o+="Doctor advice: "+plt+"\n\n";o+="Medications: "+plt+"\n\n";o+="Activity: "+dn+"\n\n";o+="When to seek help: "+exam+"\n\n";o+="Follow-up: "+fup+"\n"}document.getElementById("outputBox").innerHTML=o}
 function gRef(type){var dc="Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";var spec=val("refSpecialty");var reason=val("refReason");var hx=val("refHistory");var exam=val("refExam");var inv=val("refInvestigations");var impr=val("refImpression");var mgmt=val("refManagement");var action=val("refAction");var o="";if(type==="formal"){o=dc+"FORMAL REFERRAL LETTER\n\n";o+="Re: Referral to "+spec+"\n\n";o+="Reason for Referral:\n"+reason+"\n\n";o+="Relevant History:\n"+hx+"\n\n";o+="Examination Findings:\n"+exam+"\n\n";if(inv!="[not documented]")o+="Investigations:\n"+inv+"\n\n";o+="Working Impression:\n"+impr+"\n\n";o+="Current Management:\n"+mgmt+"\n\n";o+="Requested Action:\n"+action+"\n\n";o+="Please assess and advise. Thank you.\n"}else if(type==="short"){o=dc+"SHORT REFERRAL NOTE\n\n";o+="To: "+spec+"\n";o+="Reason: "+reason+"\n";o+="History: "+hx+"\n";o+="Exam: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Impression: "+impr+"\n";o+="Current: "+mgmt+"\n";o+="Request: "+action+"\n"}else if(type==="handover"){o=dc+"HANDOVER SUMMARY\n\n";o+="Specialty: "+spec+"\n";o+="Issue: "+reason+"\n\n";o+="Background:\n"+hx+"\n\n";o+="Current Status:\nExam: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Impression: "+impr+"\n";o+="Current management: "+mgmt+"\n\n";o+="Action required:\n"+action+"\n"}document.getElementById("refOutputBox").innerHTML=o}
 function gInst(lang){var dc="Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";var diag=val("instDiagnosis");var advice=val("instAdvice");var meds=val("instMedications");var act=val("instActivity");var rf=val("instRedFlags");var fup=val("instFollowup");var o="";if(lang==="en"){o=dc+"PATIENT INSTRUCTIONS\n\n";o+="Diagnosis: "+diag+"\n\n";o+="What to do:\n"+advice+"\n\n";o+="Medications:\n"+meds+"\n\n";o+="Activity:\n"+act+"\n\n";o+="When to return:\n"+rf+"\n\n";o+="Follow-up: "+fup+"\n"}else if(lang==="ar"){o=dc+"\u062A\u0639\u0644\u064A\u0645\u0627\u062A \u0627\u0644\u0645\u0631\u064A\u0636\n\n";o+="\u0627\u0644\u062A\u0634\u062E\u064A\u0635: "+diag+"\n\n";o+="\u0627\u0644\u0646\u0635\u0627\u0626\u062D: "+advice+"\n\n";o+="\u0627\u0644\u0623\u062F\u0648\u064A\u0629: "+meds+"\n\n";o+="\u0627\u0644\u0646\u0634\u0627\u0637: "+act+"\n\n";o+="\u0645\u062A\u0649 \u064A\u062C\u0628 \u0627\u0644\u0639\u0648\u062F\u0629: "+rf+"\n\n";o+="\u0645\u062A\u0627\u0628\u0639\u0629: "+fup+"\n"}else if(lang==="wa"){o=dc+"PATIENT INSTRUCTIONS\n\n";o+="Diagnosis: "+diag+"\n\n";o+="Advice:\n"+advice+"\n\n";o+="Medications:\n"+meds+"\n\n";o+="Activity:\n"+act+"\n\n";o+="Red flags (see doctor if):\n"+rf+"\n\n";o+="Follow-up: "+fup+"\n"}document.getElementById("instOutputBox").innerHTML=o}function cp(id){var el=document.getElementById(id);var t=el.innerText||el.textContent;navigator.clipboard.writeText(t).catch(function(){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand("copy");document.body.removeChild(ta)})}
 function clearOutput(){document.getElementById("outputBox").innerHTML="<span class=\"placeholder\">Select a specialty and visit type, enter your de-identified note, then click a generate button to create structured output.</span>"}
 function cl(){var ins=document.querySelectorAll("#page-opd input, #page-opd textarea");for(var i=0;i<ins.length;i++){ins[i].value=""}clearOutput()}
+function loadSpeedVisit(){
+  var vt=document.getElementById("speedVisitType").value;
+  var c=document.getElementById("speedContent");
+  var es=document.getElementById("speedEmptyState");
+  if(!vt||!SPEED_DATA[vt]){
+    c.style.display="none";
+    es.style.display="block";
+    return;
+  }
+  c.style.display="block";
+  es.style.display="none";
+  var d=SPEED_DATA[vt];
+  fillChips("speedSymptoms",d.symptoms);
+  fillChips("speedNegs",d.negs);
+  fillChips("speedExam",d.exam);
+  fillChips("speedRedFlags",d.redFlags,"redflag");
+  fillChips("speedPlans",d.plans);
+  var el=document.getElementById("speedOutputBox");
+  el.innerHTML="<span class=\"placeholder\">Select findings and enter impression/plan, then click generate.</span>";
+  document.getElementById("speedDuration").value="";
+  document.getElementById("speedImpression").value="";
+  document.getElementById("speedPlan").value="";
+  document.getElementById("speedFollowup").value="";
+}
+function fillChips(containerId,items,type){
+  var c=document.getElementById(containerId);
+  if(!c)return;
+  c.innerHTML="";
+  for(var i=0;i<items.length;i++){
+    var b=document.createElement("button");
+    b.className="chip"+(type==="redflag"?" chip-redflag":"");
+    b.textContent=items[i];
+    b.type="button";
+    b.onclick=function(){this.classList.toggle("selected")};
+    c.appendChild(b);
+  }
+}
+function getSelectedChips(containerId){
+  var c=document.getElementById(containerId);
+  if(!c)return[];
+  var chips=c.querySelectorAll(".chip.selected");
+  var out=[];
+  for(var i=0;i<chips.length;i++){out.push(chips[i].textContent)}
+  return out;
+}
+function gSpeed(type){
+  var vt=document.getElementById("speedVisitType").value;
+  if(!vt||!SPEED_DATA[vt]){
+    document.getElementById("speedOutputBox").innerHTML="Please select a visit type first.";
+    return;
+  }
+  var d=SPEED_DATA[vt];
+  var dur=document.getElementById("speedDuration").value.trim()||"[not documented]";
+  var impr=document.getElementById("speedImpression").value.trim()||"[doctor impression not documented]";
+  var planTxt=document.getElementById("speedPlan").value.trim()||"[doctor plan not documented]";
+  var fup=document.getElementById("speedFollowup").value.trim()||"[not documented]";
+  var sympSel=getSelectedChips("speedSymptoms");
+  var negSel=getSelectedChips("speedNegs");
+  var examSel=getSelectedChips("speedExam");
+  var redSel=getSelectedChips("speedRedFlags");
+  var planSel=getSelectedChips("speedPlans");
+  var sympStr=sympSel.length?sympSel.join(", "):"[not documented]";
+  var negStr=negSel.length?"Denies "+negSel.join(", "):"";
+  var examStr=examSel.length?examSel.join(", "):"[not documented]";
+  var redStr=redSel.length?"Red flags discussed: "+redSel.join(", ")+".":"";
+  var planItems=[];
+  if(planTxt!="[doctor plan not documented]")planItems.push(planTxt);
+  for(var i=0;i<planSel.length;i++){planItems.push(planSel[i])}
+  var planStr=planItems.length?planItems.join("; "):"[not documented]";
+
+  var dcl="Draft generated from doctor-entered information. Review before use. ClinicNote is an educational/productivity tool. Not a medical device.\n\n";
+  var o="";
+
+  if(type==="emr"){
+    o=dcl+"SHORT EMR NOTE - "+d.label+"\n\n";
+    o+="Seen for "+sympStr+"/"+dur+". ";
+    if(negStr)o+=negStr+". ";
+    o+="Exam: "+examStr+". ";
+    o+="Impression: "+impr+". ";
+    o+="Plan: "+planStr+". ";
+    if(fup!="[not documented]")o+="Follow-up: "+fup+".";
+    if(redStr)o+="\n\n"+redStr;
+  } else if(type==="soap"){
+    o=dcl+"SOAP NOTE - "+d.label+"\n\n";
+    o+="SUBJECTIVE:\n";
+    o+="Duration: "+dur+"\n";
+    o+="Symptoms: "+sympStr+"\n";
+    if(negStr)o+="Relevant negatives: "+negStr.replace("Denies ","")+"\n";
+    o+="\nOBJECTIVE:\n";
+    o+="Examination: "+examStr+"\n";
+    if(redStr)o+="Cautions: "+redStr+"\n";
+    o+="\nASSESSMENT:\n"+impr+"\n\n";
+    o+="PLAN:\n"+planStr+"\n";
+    if(fup!="[not documented]")o+="Follow-up: "+fup+"\n";
+  } else if(type==="pt"){
+    o=dcl+"PATIENT INSTRUCTIONS\n\n";
+    o+="Diagnosis/Impression: "+impr+"\n\n";
+    o+="Plan:\n";
+    var planLines=planStr.split("; ");
+    for(var i=0;i<planLines.length;i++){o+="- "+planLines[i]+"\n"}
+    if(fup!="[not documented]")o+="\nFollow-up: "+fup+"\n";
+    o+="\n*These instructions are based on your doctor\'s plan. If symptoms worsen, seek medical attention promptly.*\n";
+  }
+
+  document.getElementById("speedOutputBox").innerHTML=o;
+}
+function clearSpeed(){
+  document.getElementById("speedDuration").value="";
+  document.getElementById("speedImpression").value="";
+  document.getElementById("speedPlan").value="";
+  document.getElementById("speedFollowup").value="";
+  var containers=["speedSymptoms","speedNegs","speedExam","speedRedFlags","speedPlans"];
+  for(var i=0;i<containers.length;i++){
+    var c=document.getElementById(containers[i]);
+    if(c){var chips=c.querySelectorAll(".chip.selected");for(var j=0;j<chips.length;j++){chips[j].classList.remove("selected")}}
+  }
+  document.getElementById("speedOutputBox").innerHTML="<span class=\"placeholder\">Select quick phrases or enter short notes to generate output.</span>";
+}
 function buildPresets(){var c=document.getElementById("presetsContent");if(!c)return;var h="";var k=Object.keys(SD);for(var i=0;i<k.length;i++){var s=SD[k[i]];h+="<div class=\"presets-spec\"><h2>"+s.name+"</h2>";var t=Object.keys(s.types);for(var j=0;j<t.length;j++){var tp=t[j];var p=s.types[tp];h+="<div class=\"presets-card\">";h+="<h3>"+tp+"</h3>";h+="<ul>";for(var m=0;m<p.length;m++){h+="<li>"+p[m]+"</li>"}h+="</ul></div>"}h+="</div>"}c.innerHTML=h}
 document.addEventListener("DOMContentLoaded",function(){buildPresets();upVT();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
 </script>
