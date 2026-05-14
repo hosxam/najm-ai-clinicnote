@@ -1,0 +1,400 @@
+workflow_id,specialty_id,chip_id,group,chip_text,order,search_terms,tags
+peds-fever,Pediatrics,peds-fever-s1,symptoms,fever,1,"fever, pyrexia",acute
+peds-fever,Pediatrics,peds-fever-s2,symptoms,chills and rigors,2,"chills, rigors, shivering",acute
+peds-fever,Pediatrics,peds-fever-s3,symptoms,reduced activity,3,"reduced activity, less playful",general
+peds-fever,Pediatrics,peds-fever-s4,symptoms,reduced feeding,4,"reduced feeding, not feeding well",feeding
+peds-fever,Pediatrics,peds-fever-s5,symptoms,irritability,5,"irritability, fussy, crying",general
+peds-fever,Pediatrics,peds-fever-s6,symptoms,cough,6,cough,respiratory
+peds-fever,Pediatrics,peds-fever-s7,symptoms,runny nose,7,"runny nose, rhinorrhea",respiratory
+peds-fever,Pediatrics,peds-fever-s8,symptoms,vomiting,8,vomiting,gi
+peds-fever,Pediatrics,peds-fever-s9,symptoms,diarrhea,9,"diarrhea, loose stools",gi
+peds-fever,Pediatrics,peds-fever-s10,symptoms,rash,10,"rash, skin rash",dermatology
+peds-fever,Pediatrics,peds-fever-s11,symptoms,sleep disturbance,11,"sleep disturbance, restless",general
+peds-fever,Pediatrics,peds-fever-n12,relevant_negatives,no breathing difficulty,12,"no SOB, no respiratory distress",respiratory
+peds-fever,Pediatrics,peds-fever-n13,relevant_negatives,no seizure reported,13,"no seizure activity, no fit",neuro
+peds-fever,Pediatrics,peds-fever-n14,relevant_negatives,no neck stiffness,14,no neck stiffness,neuro
+peds-fever,Pediatrics,peds-fever-n15,relevant_negatives,no persistent vomiting,15,no persistent vomiting,gi
+peds-fever,Pediatrics,peds-fever-n16,relevant_negatives,no non-blanching rash,16,"no petechiae, no purpura",dermatology
+peds-fever,Pediatrics,peds-fever-n17,relevant_negatives,urine output maintained,17,"urine output adequate, wet diapers",renal
+peds-fever,Pediatrics,peds-fever-n18,relevant_negatives,no reduced consciousness,18,"no drowsiness, alert",neuro
+peds-fever,Pediatrics,peds-fever-n19,relevant_negatives,no poor feeding reported,19,feeding well per parent,feeding
+peds-fever,Pediatrics,peds-fever-e20,exam_findings,child alert,20,"alert, responsive",general
+peds-fever,Pediatrics,peds-fever-e21,exam_findings,child active and playful,21,"playful, active",general
+peds-fever,Pediatrics,peds-fever-e22,exam_findings,febrile in clinic,22,"febrile, febrile on exam",vitals
+peds-fever,Pediatrics,peds-fever-e23,exam_findings,afebrile in clinic,23,afebrile,vitals
+peds-fever,Pediatrics,peds-fever-e24,exam_findings,hydration adequate,24,"good hydration, moist mm",general
+peds-fever,Pediatrics,peds-fever-e25,exam_findings,no respiratory distress,25,no RD,respiratory
+peds-fever,Pediatrics,peds-fever-e26,exam_findings,capillary refill documented,26,"capillary refill, CRT assessed if assessed",vitals
+peds-fever,Pediatrics,peds-fever-e27,exam_findings,throat examined,27,"throat examined, pharynx assessed if assessed",ent
+peds-fever,Pediatrics,peds-fever-e28,exam_findings,chest clear if assessed,28,"chest clear, lungs clear if assessed",respiratory
+peds-fever,Pediatrics,peds-fever-e29,exam_findings,decreased skin turgor,29,"dry, dehydration",general
+peds-fever,Pediatrics,peds-fever-r30,red_flags,age under 3 months with fever,30,"neonatal fever, infant fever","high_safety,neonatal"
+peds-fever,Pediatrics,peds-fever-r31,red_flags,lethargy,31,"lethargic, difficult to rouse","neuro,high_safety"
+peds-fever,Pediatrics,peds-fever-r32,red_flags,poor feeding,32,"poor feeding, not feeding","feeding,high_safety"
+peds-fever,Pediatrics,peds-fever-r33,red_flags,respiratory distress,33,"respiratory distress, tachypnea","respiratory,high_safety"
+peds-fever,Pediatrics,peds-fever-r34,red_flags,seizure,34,"seizure, convulsion","neuro,high_safety"
+peds-fever,Pediatrics,peds-fever-r35,red_flags,non-blanching rash,35,"petechiae, purpura","dermatology,high_safety"
+peds-fever,Pediatrics,peds-fever-r36,red_flags,neck stiffness,36,"neck stiffness, meningism","neuro,high_safety"
+peds-fever,Pediatrics,peds-fever-r37,red_flags,reduced urine output,37,decreased wet diapers,"renal,high_safety"
+peds-fever,Pediatrics,peds-fever-r38,red_flags,dehydration signs,38,"dehydration, dry mm","general,high_safety"
+peds-fever,Pediatrics,peds-fever-p39,plan_phrases,supportive care discussed,39,supportive care,plan
+peds-fever,Pediatrics,peds-fever-p40,plan_phrases,antipyretic use as per clinician plan,40,"antipyretic, fever management",plan
+peds-fever,Pediatrics,peds-fever-p41,plan_phrases,hydration advice discussed,41,"hydration, fluids",plan
+peds-fever,Pediatrics,peds-fever-p42,plan_phrases,return precautions discussed,42,"return precautions, warning signs",plan
+peds-fever,Pediatrics,peds-fever-p43,plan_phrases,parent/guardian advice discussed,43,"parent advice, caregiver guidance",plan
+peds-fever,Pediatrics,peds-fever-p44,plan_phrases,sick note issued as per clinician plan,44,sick note,plan
+peds-fever,Pediatrics,peds-fever-f45,follow_up,1-2 days if not improving,45,1-2 days,followup
+peds-fever,Pediatrics,peds-fever-f46,follow_up,sooner if worsening,46,"sooner, PRN",followup
+peds-cough,Pediatrics,peds-cough-s1,symptoms,cough,1,cough,respiratory
+peds-cough,Pediatrics,peds-cough-s2,symptoms,runny nose,2,"runny nose, rhinorrhea",respiratory
+peds-cough,Pediatrics,peds-cough-s3,symptoms,nasal congestion,3,"nasal congestion, blocked nose",respiratory
+peds-cough,Pediatrics,peds-cough-s4,symptoms,fever,4,fever,acute
+peds-cough,Pediatrics,peds-cough-s5,symptoms,sore throat,5,"sore throat, throat pain",ent
+peds-cough,Pediatrics,peds-cough-s6,symptoms,wheeze,6,"wheeze, noisy breathing",respiratory
+peds-cough,Pediatrics,peds-cough-s7,symptoms,reduced feeding,7,reduced feeding,feeding
+peds-cough,Pediatrics,peds-cough-s8,symptoms,sleep disturbance,8,"sleep disturbance, waking at night",general
+peds-cough,Pediatrics,peds-cough-s9,symptoms,cough duration,9,how long cough,respiratory
+peds-cough,Pediatrics,peds-cough-s10,symptoms,dry vs productive cough,10,"dry cough, productive cough",respiratory
+peds-cough,Pediatrics,peds-cough-n11,relevant_negatives,no respiratory distress,11,no RD,respiratory
+peds-cough,Pediatrics,peds-cough-n12,relevant_negatives,no cyanosis,12,"no cyanosis, no blue lips",respiratory
+peds-cough,Pediatrics,peds-cough-n13,relevant_negatives,no poor feeding reported,13,feeding maintained per parent,feeding
+peds-cough,Pediatrics,peds-cough-n14,relevant_negatives,no fever,14,no fever,acute
+peds-cough,Pediatrics,peds-cough-n15,relevant_negatives,no wheeze,15,no wheeze,respiratory
+peds-cough,Pediatrics,peds-cough-n16,relevant_negatives,no ear pain,16,no ear pain,ent
+peds-cough,Pediatrics,peds-cough-n17,relevant_negatives,no choking episode,17,no choking,respiratory
+peds-cough,Pediatrics,peds-cough-e18,exam_findings,chest clear if assessed,18,chest clear,respiratory
+peds-cough,Pediatrics,peds-cough-e19,exam_findings,wheeze heard if assessed,19,"wheeze, expiratory",respiratory
+peds-cough,Pediatrics,peds-cough-e20,exam_findings,no chest recession,20,"no chest recession, no subcostal",respiratory
+peds-cough,Pediatrics,peds-cough-e21,exam_findings,no nasal flaring,21,no nasal flaring,respiratory
+peds-cough,Pediatrics,peds-cough-e22,exam_findings,afebrile,22,afebrile,vitals
+peds-cough,Pediatrics,peds-cough-e23,exam_findings,febrile,23,febrile,vitals
+peds-cough,Pediatrics,peds-cough-e24,exam_findings,child alert,24,alert,general
+peds-cough,Pediatrics,peds-cough-e25,exam_findings,throat examined if assessed,25,throat clear,ent
+peds-cough,Pediatrics,peds-cough-r26,red_flags,respiratory distress,26,"respiratory distress, tachypnea","respiratory,high_safety"
+peds-cough,Pediatrics,peds-cough-r27,red_flags,persistent fever,27,persistent fever >3 days,"acute,high_safety"
+peds-cough,Pediatrics,peds-cough-r28,red_flags,poor feeding,28,poor feeding due to cough,"feeding,high_safety"
+peds-cough,Pediatrics,peds-cough-r29,red_flags,cyanosis,29,cyanosis,"respiratory,high_safety"
+peds-cough,Pediatrics,peds-cough-r30,red_flags,lethargy,30,lethargic,"neuro,high_safety"
+peds-cough,Pediatrics,peds-cough-r31,red_flags,age under 6 months with cough,31,young infant cough,"respiratory,high_safety"
+peds-cough,Pediatrics,peds-cough-i32,investigations,O2 sats checked if assessed,32,"O2 saturations, SpO2",investigations
+peds-cough,Pediatrics,peds-cough-i33,investigations,CXR ordered if indicated per clinician,33,chest x-ray,investigations
+peds-cough,Pediatrics,peds-cough-p34,plan_phrases,supportive care discussed,34,supportive care,plan
+peds-cough,Pediatrics,peds-cough-p35,plan_phrases,nasal saline drops discussed,35,"saline drops, nasal hygiene",plan
+peds-cough,Pediatrics,peds-cough-p36,plan_phrases,hydration advice discussed,36,"hydration, fluids",plan
+peds-cough,Pediatrics,peds-cough-p37,plan_phrases,return precautions discussed,37,return precautions,plan
+peds-cough,Pediatrics,peds-cough-p38,plan_phrases,parent/guardian advice discussed,38,parent guidance,plan
+peds-cough,Pediatrics,peds-cough-f39,follow_up,2-3 days if not improving,39,2-3 days,followup
+peds-cough,Pediatrics,peds-cough-f40,follow_up,sooner if worsening,40,sooner,followup
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-s1,symptoms,vomiting,1,vomiting,gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-s2,symptoms,vomiting frequency,2,"how many times, frequency",gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-s3,symptoms,diarrhea,3,diarrhea,gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-s4,symptoms,diarrhea frequency,4,diarrhea how many times daily,gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-s5,symptoms,watery stool,5,"watery, loose",gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-s6,symptoms,blood or mucus in stool,6,"blood, mucus",gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-s7,symptoms,fever,7,fever,acute
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-s8,symptoms,abdominal pain,8,"abdominal pain, cramps",gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-s9,symptoms,reduced oral intake,9,"not drinking, not eating",gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-s10,symptoms,reduced urine output,10,fewer wet diapers,renal
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-s11,symptoms,lethargy,11,"lethargic, tired",general
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-n12,relevant_negatives,no blood in vomit,12,no hematemesis,gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-n13,relevant_negatives,no blood in stool,13,no hematochezia,gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-n14,relevant_negatives,no severe abdominal pain,14,no severe pain,gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-n15,relevant_negatives,no fever,15,no fever,acute
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-n16,relevant_negatives,no bilious vomiting,16,no green vomitus,gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-n17,relevant_negatives,no reduced consciousness,17,no drowsiness,neuro
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-e18,exam_findings,hydration adequate,18,"good hydration, moist mm",general
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-e19,exam_findings,dry mucous membranes,19,"dry mm, dry mouth",general
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-e20,exam_findings,decreased skin turgor,20,decreased turgor,general
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-e21,exam_findings,abdomen soft non-tender,21,abdomen benign,gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-e22,exam_findings,abdominal tenderness if assessed,22,abdominal tenderness,gi
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-e23,exam_findings,child alert,23,alert,general
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-e24,exam_findings,afebrile,24,afebrile,vitals
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-e25,exam_findings,tachycardia,25,"tachycardia, heart rate elevated",vitals
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-r26,red_flags,dehydration signs,26,"dehydration, severe","gi,high_safety"
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-r27,red_flags,blood in stool,27,"hematochezia, dysentery","gi,high_safety"
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-r28,red_flags,persistent vomiting,28,"persistent vomiting, unable to keep fluids","gi,high_safety"
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-r29,red_flags,lethargy,29,"lethargic, difficult to rouse","neuro,high_safety"
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-r30,red_flags,reduced urine output,30,decreased wet diapers,"renal,high_safety"
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-r31,red_flags,age under 6 months,31,young infant,"gi,high_safety"
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-r32,red_flags,bilious vomiting,32,green vomitus,"gi,high_safety"
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-p33,plan_phrases,oral rehydration solution advised,33,"ORS, rehydration",plan
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-p34,plan_phrases,continue breastfeeding advice discussed,34,breastfeeding continue if applicable,plan
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-p35,plan_phrases,bland diet advised,35,"BRAT diet, easy foods",plan
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-p36,plan_phrases,return precautions discussed,36,return precautions,plan
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-p37,plan_phrases,sick note/ care form issued as per clinician,37,"sick note, care certificate",plan
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-f38,follow_up,1-2 days if not improving,38,1-2 days,followup
+peds-vomiting-diarrhea,Pediatrics,peds-vomiting-diarrhea-f39,follow_up,sooner if worsening,39,sooner,followup
+peds-rash,Pediatrics,peds-rash-s1,symptoms,rash,1,"rash, skin eruption",dermatology
+peds-rash,Pediatrics,peds-rash-s2,symptoms,itching,2,"itching, pruritus",dermatology
+peds-rash,Pediatrics,peds-rash-s3,symptoms,fever,3,fever,acute
+peds-rash,Pediatrics,peds-rash-s4,symptoms,rash distribution,4,"distribution, where on body",dermatology
+peds-rash,Pediatrics,peds-rash-s5,symptoms,new medication or exposure,5,"new meds, new exposure",general
+peds-rash,Pediatrics,peds-rash-s6,symptoms,contact history,6,"contact with sick, exposure",general
+peds-rash,Pediatrics,peds-rash-s7,symptoms,recent travel,7,travel history,general
+peds-rash,Pediatrics,peds-rash-s8,symptoms,oral intake affected,8,"eating, drinking",general
+peds-rash,Pediatrics,peds-rash-n9,relevant_negatives,no breathing difficulty,9,no SOB,respiratory
+peds-rash,Pediatrics,peds-rash-n10,relevant_negatives,no mucosal involvement,10,"no oral ulcers, no conjunctival injection",dermatology
+peds-rash,Pediatrics,peds-rash-n11,relevant_negatives,no non-blanching rash,11,no petechiae,dermatology
+peds-rash,Pediatrics,peds-rash-n12,relevant_negatives,no facial or lip swelling,12,no angioedema,dermatology
+peds-rash,Pediatrics,peds-rash-n13,relevant_negatives,no fever,13,no fever,acute
+peds-rash,Pediatrics,peds-rash-n14,relevant_negatives,no joint swelling,14,no joint pain,msk
+peds-rash,Pediatrics,peds-rash-e15,exam_findings,rash morphology documented,15,"maculopapular, vesicular, urticarial if assessed",dermatology
+peds-rash,Pediatrics,peds-rash-e16,exam_findings,rash blanching,16,"blanching, blanch test if assessed",dermatology
+peds-rash,Pediatrics,peds-rash-e17,exam_findings,mucous membranes clear,17,"mucosa clear, no oral lesions",dermatology
+peds-rash,Pediatrics,peds-rash-e18,exam_findings,afebrile,18,afebrile,vitals
+peds-rash,Pediatrics,peds-rash-e19,exam_findings,febrile,19,febrile,vitals
+peds-rash,Pediatrics,peds-rash-e20,exam_findings,child well appearing,20,"well, no distress",general
+peds-rash,Pediatrics,peds-rash-r21,red_flags,non-blanching rash,21,"petechiae, purpura","dermatology,high_safety"
+peds-rash,Pediatrics,peds-rash-r22,red_flags,mucosal involvement,22,"mucosal lesions, conjunctival injection","dermatology,high_safety"
+peds-rash,Pediatrics,peds-rash-r23,red_flags,facial or lip swelling,23,"angioedema, periorbital","dermatology,high_safety"
+peds-rash,Pediatrics,peds-rash-r24,red_flags,respiratory distress with rash,24,breathing difficulty,"respiratory,high_safety"
+peds-rash,Pediatrics,peds-rash-r25,red_flags,blistering rash,25,"blisters, bullae","dermatology,high_safety"
+peds-rash,Pediatrics,peds-rash-r26,red_flags,fever with rash ill appearing,26,"ill appearing, toxic","general,high_safety"
+peds-rash,Pediatrics,peds-rash-p27,plan_phrases,topical treatment as per clinician plan,27,"topical, cream",plan
+peds-rash,Pediatrics,peds-rash-p28,plan_phrases,emollient use discussed,28,"emollient, moisturizer",plan
+peds-rash,Pediatrics,peds-rash-p29,plan_phrases,antihistamine use as per clinician plan,29,antihistamine,plan
+peds-rash,Pediatrics,peds-rash-p30,plan_phrases,avoid scratching discussed,30,"scratching, itch relief",plan
+peds-rash,Pediatrics,peds-rash-p31,plan_phrases,return precautions discussed,31,return precautions,plan
+peds-rash,Pediatrics,peds-rash-p32,plan_phrases,parent/guardian advice discussed,32,parent guidance,plan
+peds-rash,Pediatrics,peds-rash-f33,follow_up,2-3 days if not improving,33,2-3 days,followup
+peds-rash,Pediatrics,peds-rash-f34,follow_up,sooner if worsening,34,sooner,followup
+peds-poor-feeding,Pediatrics,peds-poor-feeding-s1,symptoms,reduced feeding,1,"reduced feeding, not feeding well",feeding
+peds-poor-feeding,Pediatrics,peds-poor-feeding-s2,symptoms,vomiting,2,"vomiting, posseting",gi
+peds-poor-feeding,Pediatrics,peds-poor-feeding-s3,symptoms,fever,3,fever,acute
+peds-poor-feeding,Pediatrics,peds-poor-feeding-s4,symptoms,lethargy,4,"lethargic, sleepy, low energy",general
+peds-poor-feeding,Pediatrics,peds-poor-feeding-s5,symptoms,reduced urine output,5,fewer wet diapers,renal
+peds-poor-feeding,Pediatrics,peds-poor-feeding-s6,symptoms,weight concern,6,"weight, growth concern",growth
+peds-poor-feeding,Pediatrics,peds-poor-feeding-s7,symptoms,breastfeeding details,7,"breastfeeding, latch, duration if relevant",feeding
+peds-poor-feeding,Pediatrics,peds-poor-feeding-s8,symptoms,formula feeding details,8,"formula, quantity, feeds if relevant",feeding
+peds-poor-feeding,Pediatrics,peds-poor-feeding-s9,symptoms,crying pattern,9,"crying, constant crying",general
+peds-poor-feeding,Pediatrics,peds-poor-feeding-s10,symptoms,recent illness,10,recent infection,general
+peds-poor-feeding,Pediatrics,peds-poor-feeding-n11,relevant_negatives,no respiratory distress,11,no RD,respiratory
+peds-poor-feeding,Pediatrics,peds-poor-feeding-n12,relevant_negatives,no persistent vomiting,12,no persistent vomiting,gi
+peds-poor-feeding,Pediatrics,peds-poor-feeding-n13,relevant_negatives,no diarrhea,13,no diarrhea,gi
+peds-poor-feeding,Pediatrics,peds-poor-feeding-n14,relevant_negatives,no fever,14,no fever,acute
+peds-poor-feeding,Pediatrics,peds-poor-feeding-n15,relevant_negatives,no lethargy,15,"no lethargy, active",general
+peds-poor-feeding,Pediatrics,peds-poor-feeding-n16,relevant_negatives,urine output maintained,16,"wet diapers, output adequate",renal
+peds-poor-feeding,Pediatrics,peds-poor-feeding-e17,exam_findings,hydration status assessed,17,hydration assessed,general
+peds-poor-feeding,Pediatrics,peds-poor-feeding-e18,exam_findings,hydration adequate,18,good hydration,general
+peds-poor-feeding,Pediatrics,peds-poor-feeding-e19,exam_findings,decreased skin turgor,19,"dry, dehydration",general
+peds-poor-feeding,Pediatrics,peds-poor-feeding-e20,exam_findings,activity level documented,20,"active, alert, playing",general
+peds-poor-feeding,Pediatrics,peds-poor-feeding-e21,exam_findings,weight documented if measured,21,weight recorded,growth
+peds-poor-feeding,Pediatrics,peds-poor-feeding-e22,exam_findings,child alert,22,alert,general
+peds-poor-feeding,Pediatrics,peds-poor-feeding-e23,exam_findings,child lethargic,23,lethargic,"general,high_safety"
+peds-poor-feeding,Pediatrics,peds-poor-feeding-r24,red_flags,dehydration signs,24,"dehydration, severe","general,high_safety"
+peds-poor-feeding,Pediatrics,peds-poor-feeding-r25,red_flags,lethargy,25,"lethargic, difficult to rouse","neuro,high_safety"
+peds-poor-feeding,Pediatrics,peds-poor-feeding-r26,red_flags,age under 3 months,26,"young infant, neonatal","neonatal,high_safety"
+peds-poor-feeding,Pediatrics,peds-poor-feeding-r27,red_flags,persistent vomiting,27,"vomiting, unable to feed","gi,high_safety"
+peds-poor-feeding,Pediatrics,peds-poor-feeding-r28,red_flags,significant weight loss,28,weight loss,"growth,high_safety"
+peds-poor-feeding,Pediatrics,peds-poor-feeding-r29,red_flags,reduced urine output,29,no wet diapers,"renal,high_safety"
+peds-poor-feeding,Pediatrics,peds-poor-feeding-p30,plan_phrases,breastfeeding support discussed,30,"breastfeeding, lactation if relevant",plan
+peds-poor-feeding,Pediatrics,peds-poor-feeding-p31,plan_phrases,feeding advice discussed,31,feeding guidance,plan
+peds-poor-feeding,Pediatrics,peds-poor-feeding-p32,plan_phrases,hydration advice discussed,32,"hydration, fluids",plan
+peds-poor-feeding,Pediatrics,peds-poor-feeding-p33,plan_phrases,return precautions discussed,33,return precautions,plan
+peds-poor-feeding,Pediatrics,peds-poor-feeding-p34,plan_phrases,weight monitoring advised,34,weight check,plan
+peds-poor-feeding,Pediatrics,peds-poor-feeding-f35,follow_up,1-2 days,35,1-2 days,followup
+peds-poor-feeding,Pediatrics,peds-poor-feeding-f36,follow_up,sooner if worsening,36,sooner,followup
+peds-ear-pain,Pediatrics,peds-ear-pain-s1,symptoms,ear pain,1,"ear pain, otalgia",ent
+peds-ear-pain,Pediatrics,peds-ear-pain-s2,symptoms,ear pulling,2,"ear pulling, tugging",ent
+peds-ear-pain,Pediatrics,peds-ear-pain-s3,symptoms,fever,3,fever,acute
+peds-ear-pain,Pediatrics,peds-ear-pain-s4,symptoms,ear discharge,4,"ear discharge, otorrhea",ent
+peds-ear-pain,Pediatrics,peds-ear-pain-s5,symptoms,hearing concern,5,"hearing, not responding",ent
+peds-ear-pain,Pediatrics,peds-ear-pain-s6,symptoms,recent URTI symptoms,6,"recent cold, runny nose",ent
+peds-ear-pain,Pediatrics,peds-ear-pain-s7,symptoms,irritability,7,"irritability, fussy",general
+peds-ear-pain,Pediatrics,peds-ear-pain-s8,symptoms,sleep disturbance,8,sleep disturbance,general
+peds-ear-pain,Pediatrics,peds-ear-pain-n9,relevant_negatives,no mastoid swelling,9,no postauricular swelling,ent
+peds-ear-pain,Pediatrics,peds-ear-pain-n10,relevant_negatives,no dizziness,10,no vertigo,ent
+peds-ear-pain,Pediatrics,peds-ear-pain-n11,relevant_negatives,no fever,11,no fever,acute
+peds-ear-pain,Pediatrics,peds-ear-pain-n12,relevant_negatives,no ear discharge,12,no otorrhea,ent
+peds-ear-pain,Pediatrics,peds-ear-pain-n13,relevant_negatives,no head trauma,13,no injury,ent
+peds-ear-pain,Pediatrics,peds-ear-pain-e14,exam_findings,otoscopy findings if assessed,14,"tympanic membrane, otoscopy if assessed",ent
+peds-ear-pain,Pediatrics,peds-ear-pain-e15,exam_findings,tympanic membrane normal if assessed,15,TM normal if assessed,ent
+peds-ear-pain,Pediatrics,peds-ear-pain-e16,exam_findings,tympanic membrane red and bulging,16,"red bulging, TM inflamed if assessed",ent
+peds-ear-pain,Pediatrics,peds-ear-pain-e17,exam_findings,external ear normal,17,external ear clear,ent
+peds-ear-pain,Pediatrics,peds-ear-pain-e18,exam_findings,mastoid non-tender,18,mastoid no tenderness,ent
+peds-ear-pain,Pediatrics,peds-ear-pain-e19,exam_findings,afebrile,19,afebrile,vitals
+peds-ear-pain,Pediatrics,peds-ear-pain-e20,exam_findings,febrile,20,febrile,vitals
+peds-ear-pain,Pediatrics,peds-ear-pain-e21,exam_findings,throat clear,21,throat normal,ent
+peds-ear-pain,Pediatrics,peds-ear-pain-r22,red_flags,mastoid tenderness or swelling,22,"mastoiditis, postauricular","ent,high_safety"
+peds-ear-pain,Pediatrics,peds-ear-pain-r23,red_flags,significant hearing loss,23,hearing loss,"ent,high_safety"
+peds-ear-pain,Pediatrics,peds-ear-pain-r24,red_flags,recurrent ear infections,24,recurrent AOM,"ent,high_safety"
+peds-ear-pain,Pediatrics,peds-ear-pain-r25,red_flags,fever with severe ear pain,25,severe pain,"ent,high_safety"
+peds-ear-pain,Pediatrics,peds-ear-pain-r26,red_flags,foreign body suspected,26,foreign body,"ent,high_safety"
+peds-ear-pain,Pediatrics,peds-ear-pain-p27,plan_phrases,supportive care discussed,27,supportive,plan
+peds-ear-pain,Pediatrics,peds-ear-pain-p28,plan_phrases,analgesic use as per clinician plan,28,"analgesic, pain relief",plan
+peds-ear-pain,Pediatrics,peds-ear-pain-p29,plan_phrases,antibiotic use as per clinician plan,29,antibiotic if indicated per clinician,plan
+peds-ear-pain,Pediatrics,peds-ear-pain-p30,plan_phrases,return precautions discussed,30,return precautions,plan
+peds-ear-pain,Pediatrics,peds-ear-pain-p31,plan_phrases,parent/guardian advice discussed,31,parent guidance,plan
+peds-ear-pain,Pediatrics,peds-ear-pain-f32,follow_up,2-3 days if not improving,32,2-3 days,followup
+peds-ear-pain,Pediatrics,peds-ear-pain-f33,follow_up,sooner if worsening,33,sooner,followup
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-s1,symptoms,abdominal pain,1,abdominal pain,gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-s2,symptoms,pain location,2,"periumbilical, epigastric, lower",gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-s3,symptoms,vomiting,3,vomiting,gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-s4,symptoms,diarrhea,4,diarrhea,gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-s5,symptoms,constipation,5,constipation,gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-s6,symptoms,fever,6,fever,acute
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-s7,symptoms,urinary symptoms,7,"dysuria, frequency",renal
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-s8,symptoms,appetite change,8,appetite decreased,gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-s9,symptoms,pain character,9,"crampy, colicky, sharp",gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-n10,relevant_negatives,no persistent vomiting,10,no persistent vomiting,gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-n11,relevant_negatives,no blood in stool,11,"no melena, no hematochezia",gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-n12,relevant_negatives,no severe localized pain,12,no focal severe pain,gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-n13,relevant_negatives,no fever,13,no fever,acute
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-n14,relevant_negatives,no dysuria,14,no pain with urination,renal
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-n15,relevant_negatives,no trauma,15,no injury,general
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-e16,exam_findings,abdomen soft,16,soft,gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-e17,exam_findings,abdominal tenderness if assessed,17,"tenderness, location",gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-e18,exam_findings,bowel sounds normal,18,bowel sounds present,gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-e19,exam_findings,no guarding,19,no guarding,gi
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-e20,exam_findings,child well appearing,20,"well, playing",general
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-e21,exam_findings,afebrile,21,afebrile,vitals
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-r22,red_flags,guarding or rebound,22,"guarding, rigidity","gi,high_safety"
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-r23,red_flags,severe persistent pain,23,"severe, crying","gi,high_safety"
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-r24,red_flags,bilious vomiting,24,green vomitus,"gi,high_safety"
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-r25,red_flags,abdominal distension,25,"distended, peritonitis","gi,high_safety"
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-r26,red_flags,blood in stool,26,hematochezia,"gi,high_safety"
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-r27,red_flags,fever with severe pain,27,febrile,"gi,high_safety"
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-r28,red_flags,child appears toxic,28,"toxic, ill appearing","general,high_safety"
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-p29,plan_phrases,dietary advice discussed,29,"diet, avoid heavy foods",plan
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-p30,plan_phrases,hydration advice discussed,30,fluids,plan
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-p31,plan_phrases,laxative use as per clinician plan,31,laxative if constipated,plan
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-p32,plan_phrases,return precautions discussed,32,return precautions,plan
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-p33,plan_phrases,parent/guardian advice discussed,33,parent guidance,plan
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-f34,follow_up,2-3 days if not improving,34,2-3 days,followup
+peds-abdominal-pain,Pediatrics,peds-abdominal-pain-f35,follow_up,sooner if worsening,35,sooner,followup
+peds-routine-followup,Pediatrics,peds-routine-followup-s1,symptoms,routine review,1,routine follow-up,general
+peds-routine-followup,Pediatrics,peds-routine-followup-s2,symptoms,symptoms improving,2,symptoms improving,general
+peds-routine-followup,Pediatrics,peds-routine-followup-s3,symptoms,parent/guardian concerns,3,"parent concerns, caregiver concerns",general
+peds-routine-followup,Pediatrics,peds-routine-followup-s4,symptoms,feeding reviewed,4,"feeding, eating",feeding
+peds-routine-followup,Pediatrics,peds-routine-followup-s5,symptoms,activity reviewed,5,"activity level, playing",general
+peds-routine-followup,Pediatrics,peds-routine-followup-s6,symptoms,sleep reviewed,6,sleep pattern,general
+peds-routine-followup,Pediatrics,peds-routine-followup-s7,symptoms,growth reviewed if relevant,7,"growth, height, weight",growth
+peds-routine-followup,Pediatrics,peds-routine-followup-s8,symptoms,immunizations reviewed if relevant,8,"immunization, vaccine status",immunization
+peds-routine-followup,Pediatrics,peds-routine-followup-e9,exam_findings,child well appearing,9,"well, no acute distress",general
+peds-routine-followup,Pediatrics,peds-routine-followup-e10,exam_findings,child active,10,"active, playful",general
+peds-routine-followup,Pediatrics,peds-routine-followup-e11,exam_findings,vitals stable,11,vitals normal,vitals
+peds-routine-followup,Pediatrics,peds-routine-followup-e12,exam_findings,examination stable if assessed,12,exam normal if relevant,general
+peds-routine-followup,Pediatrics,peds-routine-followup-e13,exam_findings,growth parameters documented if measured,13,"growth chart, centiles if measured",growth
+peds-routine-followup,Pediatrics,peds-routine-followup-r14,red_flags,no acute concern identified,14,no acute findings,general
+peds-routine-followup,Pediatrics,peds-routine-followup-r15,red_flags,unexpected growth faltering,15,"growth faltering, weight loss","growth,high_safety"
+peds-routine-followup,Pediatrics,peds-routine-followup-r16,red_flags,unexpected developmental findings,16,developmental concern,"neuro,high_safety"
+peds-routine-followup,Pediatrics,peds-routine-followup-r17,red_flags,safeguarding concern,17,"safeguarding, child protection","safeguarding,high_safety"
+peds-routine-followup,Pediatrics,peds-routine-followup-p18,plan_phrases,management plan discussed,18,management plan,plan
+peds-routine-followup,Pediatrics,peds-routine-followup-p19,plan_phrases,parent/guardian concerns addressed,19,concerns addressed,plan
+peds-routine-followup,Pediatrics,peds-routine-followup-p20,plan_phrases,immunization schedule reviewed,20,vaccine schedule,plan
+peds-routine-followup,Pediatrics,peds-routine-followup-p21,plan_phrases,follow-up arranged,21,"follow-up, next visit",plan
+peds-routine-followup,Pediatrics,peds-routine-followup-p22,plan_phrases,return precautions discussed as per standard,22,return precautions,plan
+peds-routine-followup,Pediatrics,peds-routine-followup-f23,follow_up,per routine schedule,23,routine schedule,followup
+peds-routine-followup,Pediatrics,peds-routine-followup-f24,follow_up,sooner if concerns arise,24,sooner,followup
+peds-vaccination,Pediatrics,peds-vaccination-s1,symptoms,vaccination visit,1,"vaccination, immunisation",immunization
+peds-vaccination,Pediatrics,peds-vaccination-s2,symptoms,parent/guardian consent documented if applicable,2,"consent, approval",immunization
+peds-vaccination,Pediatrics,peds-vaccination-s3,symptoms,immunization history reviewed,3,"vaccine history, previous vaccines",immunization
+peds-vaccination,Pediatrics,peds-vaccination-s4,symptoms,no acute illness reported,4,"no acute illness, well",general
+peds-vaccination,Pediatrics,peds-vaccination-s5,symptoms,previous vaccine reaction history reviewed,5,"reaction history, allergies",immunization
+peds-vaccination,Pediatrics,peds-vaccination-s6,symptoms,fever or current illness,6,"fever, current illness",acute
+peds-vaccination,Pediatrics,peds-vaccination-s7,symptoms,medication review,7,"medications, current meds",general
+peds-vaccination,Pediatrics,peds-vaccination-e8,exam_findings,child well appearing for vaccination,8,"well, no contraindication",general
+peds-vaccination,Pediatrics,peds-vaccination-e9,exam_findings,afebrile,9,afebrile,vitals
+peds-vaccination,Pediatrics,peds-vaccination-r10,red_flags,acute febrile illness,10,"febrile, contraindication","acute,high_safety"
+peds-vaccination,Pediatrics,peds-vaccination-r11,red_flags,history of severe vaccine reaction,11,"anaphylaxis, severe allergy","immunization,high_safety"
+peds-vaccination,Pediatrics,peds-vaccination-r12,red_flags,immunosuppression,12,immunocompromised,"chronic,high_safety"
+peds-vaccination,Pediatrics,peds-vaccination-r13,red_flags,parent/guardian refusal of vaccination,13,vaccine refusal,"immunization,high_safety"
+peds-vaccination,Pediatrics,peds-vaccination-p14,plan_phrases,vaccine counseling documented,14,"counseling, vaccine discussion",plan
+peds-vaccination,Pediatrics,peds-vaccination-p15,plan_phrases,benefits and risks discussed,15,risks benefits,plan
+peds-vaccination,Pediatrics,peds-vaccination-p16,plan_phrases,post-vaccination advice discussed,16,post-vaccine care,plan
+peds-vaccination,Pediatrics,peds-vaccination-p17,plan_phrases,common side effects discussed,17,"side effects, fever after vaccine",plan
+peds-vaccination,Pediatrics,peds-vaccination-p18,plan_phrases,follow-up schedule discussed,18,next vaccine due,plan
+peds-vaccination,Pediatrics,peds-vaccination-p19,plan_phrases,parent/guardian concerns addressed,19,concerns addressed,plan
+peds-vaccination,Pediatrics,peds-vaccination-p20,plan_phrases,consent obtained per clinician documentation,20,consent documented,plan
+peds-vaccination,Pediatrics,peds-vaccination-f21,follow_up,per vaccination schedule,21,vaccine schedule,followup
+peds-vaccination,Pediatrics,peds-vaccination-f22,follow_up,sooner if side effects or concerns,22,sooner,followup
+peds-growth-concern,Pediatrics,peds-growth-concern-s1,symptoms,growth concern,1,"growth concern, height, weight",growth
+peds-growth-concern,Pediatrics,peds-growth-concern-s2,symptoms,weight concern,2,"weight gain, weight loss",growth
+peds-growth-concern,Pediatrics,peds-growth-concern-s3,symptoms,height concern,3,"height, short stature",growth
+peds-growth-concern,Pediatrics,peds-growth-concern-s4,symptoms,feeding history reviewed,4,"feeding, diet",feeding
+peds-growth-concern,Pediatrics,peds-growth-concern-s5,symptoms,appetite reviewed,5,"appetite, eating well",feeding
+peds-growth-concern,Pediatrics,peds-growth-concern-s6,symptoms,vomiting or diarrhea history,6,"vomiting, diarrhea, reflux",gi
+peds-growth-concern,Pediatrics,peds-growth-concern-s7,symptoms,chronic illness history,7,"chronic disease, condition",chronic
+peds-growth-concern,Pediatrics,peds-growth-concern-s8,symptoms,parent/guardian concern,8,parent concerns about growth,growth
+peds-growth-concern,Pediatrics,peds-growth-concern-n9,relevant_negatives,no chronic illness,9,no chronic disease,chronic
+peds-growth-concern,Pediatrics,peds-growth-concern-n10,relevant_negatives,no vomiting,10,no vomiting,gi
+peds-growth-concern,Pediatrics,peds-growth-concern-n11,relevant_negatives,no diarrhea,11,no diarrhea,gi
+peds-growth-concern,Pediatrics,peds-growth-concern-n12,relevant_negatives,no respiratory symptoms,12,"no cough, no SOB",respiratory
+peds-growth-concern,Pediatrics,peds-growth-concern-e13,exam_findings,weight documented if measured,13,"weight, kg",growth
+peds-growth-concern,Pediatrics,peds-growth-concern-e14,exam_findings,height documented if measured,14,"height, cm",growth
+peds-growth-concern,Pediatrics,peds-growth-concern-e15,exam_findings,growth chart reviewed if available,15,"centiles, growth curve",growth
+peds-growth-concern,Pediatrics,peds-growth-concern-e16,exam_findings,head circumference if relevant,16,head circ,growth
+peds-growth-concern,Pediatrics,peds-growth-concern-e17,exam_findings,child well appearing,17,well,general
+peds-growth-concern,Pediatrics,peds-growth-concern-e18,exam_findings,general physical examination,18,general exam if assessed,general
+peds-growth-concern,Pediatrics,peds-growth-concern-r19,red_flags,significant weight loss,19,weight loss,"growth,high_safety"
+peds-growth-concern,Pediatrics,peds-growth-concern-r20,red_flags,poor feeding or refusal,20,poor feeding,"feeding,high_safety"
+peds-growth-concern,Pediatrics,peds-growth-concern-r21,red_flags,chronic diarrhea,21,persistent diarrhea,"gi,high_safety"
+peds-growth-concern,Pediatrics,peds-growth-concern-r22,red_flags,developmental concern,22,developmental delay,"neuro,high_safety"
+peds-growth-concern,Pediatrics,peds-growth-concern-r23,red_flags,failure to thrive,23,FTT,"growth,high_safety"
+peds-growth-concern,Pediatrics,peds-growth-concern-p24,plan_phrases,dietary advice discussed,24,"diet, nutrition",plan
+peds-growth-concern,Pediatrics,peds-growth-concern-p25,plan_phrases,feeding optimization discussed,25,"feeding, meal frequency",plan
+peds-growth-concern,Pediatrics,peds-growth-concern-p26,plan_phrases,growth monitoring advised,26,"growth monitoring, follow-up",plan
+peds-growth-concern,Pediatrics,peds-growth-concern-p27,plan_phrases,referral discussed if indicated per clinician,27,"referral, dietitian",plan
+peds-growth-concern,Pediatrics,peds-growth-concern-p28,plan_phrases,parent/guardian concerns addressed,28,concerns addressed,plan
+peds-growth-concern,Pediatrics,peds-growth-concern-f29,follow_up,1-3 months for growth monitoring,29,1-3 months,followup
+peds-growth-concern,Pediatrics,peds-growth-concern-f30,follow_up,sooner if concerns worsen,30,sooner,followup
+peds-development-concern,Pediatrics,peds-development-concern-s1,symptoms,developmental concern,1,"developmental concern, milestones",neuro
+peds-development-concern,Pediatrics,peds-development-concern-s2,symptoms,speech delay concern,2,"speech delay, talking late",neuro
+peds-development-concern,Pediatrics,peds-development-concern-s3,symptoms,motor delay concern,3,"motor delay, crawling, walking",neuro
+peds-development-concern,Pediatrics,peds-development-concern-s4,symptoms,social interaction concern,4,"social, playing with others",neuro
+peds-development-concern,Pediatrics,peds-development-concern-s5,symptoms,developmental regression,5,"regression, lost skills","neuro,high_safety"
+peds-development-concern,Pediatrics,peds-development-concern-s6,symptoms,hearing concern,6,"hearing, responding to sounds",ent
+peds-development-concern,Pediatrics,peds-development-concern-s7,symptoms,vision concern,7,"vision, eye contact",ophthalmology
+peds-development-concern,Pediatrics,peds-development-concern-s8,symptoms,birth history reviewed,8,"birth history, gestation, delivery",neuro
+peds-development-concern,Pediatrics,peds-development-concern-s9,symptoms,parent/guardian concerns,9,parent observations,neuro
+peds-development-concern,Pediatrics,peds-development-concern-s10,symptoms,school performance,10,"school, learning, attention",neuro
+peds-development-concern,Pediatrics,peds-development-concern-n11,relevant_negatives,no regression,11,no loss of skills,neuro
+peds-development-concern,Pediatrics,peds-development-concern-n12,relevant_negatives,no seizure history,12,no seizures,neuro
+peds-development-concern,Pediatrics,peds-development-concern-n13,relevant_negatives,no vision concern,13,no visual issues,ophthalmology
+peds-development-concern,Pediatrics,peds-development-concern-n14,relevant_negatives,no hearing concern,14,hearing fine per parent,ent
+peds-development-concern,Pediatrics,peds-development-concern-n15,relevant_negatives,no significant birth history,15,no birth complications,neuro
+peds-development-concern,Pediatrics,peds-development-concern-e16,exam_findings,developmental milestones assessed,16,"milestones, age-appropriate if assessed",neuro
+peds-development-concern,Pediatrics,peds-development-concern-e17,exam_findings,child alert and interactive,17,"alert, interacting",neuro
+peds-development-concern,Pediatrics,peds-development-concern-e18,exam_findings,social smile documented,18,social smile if applicable,neuro
+peds-development-concern,Pediatrics,peds-development-concern-e19,exam_findings,gait assessed if walking,19,"gait, walking pattern if assessed",neuro
+peds-development-concern,Pediatrics,peds-development-concern-e20,exam_findings,speech assessed,20,"speech, words if assessed",neuro
+peds-development-concern,Pediatrics,peds-development-concern-e21,exam_findings,growth parameters documented,21,"height, weight, head circumference if measured",growth
+peds-development-concern,Pediatrics,peds-development-concern-e22,exam_findings,general examination normal,22,general exam,general
+peds-development-concern,Pediatrics,peds-development-concern-r23,red_flags,developmental regression,23,"regression, lost milestones","neuro,high_safety"
+peds-development-concern,Pediatrics,peds-development-concern-r24,red_flags,seizure history,24,seizures,"neuro,high_safety"
+peds-development-concern,Pediatrics,peds-development-concern-r25,red_flags,loss of skills,25,lost skills,"neuro,high_safety"
+peds-development-concern,Pediatrics,peds-development-concern-r26,red_flags,safeguarding concern,26,"safeguarding, neglect","safeguarding,high_safety"
+peds-development-concern,Pediatrics,peds-development-concern-r27,red_flags,significant motor delay,27,"not walking, not sitting","neuro,high_safety"
+peds-development-concern,Pediatrics,peds-development-concern-r28,red_flags,no social interaction,28,"no eye contact, not responding","neuro,high_safety"
+peds-development-concern,Pediatrics,peds-development-concern-p29,plan_phrases,developmental surveillance discussed,29,"surveillance, monitoring",plan
+peds-development-concern,Pediatrics,peds-development-concern-p30,plan_phrases,early intervention services discussed,30,early intervention,plan
+peds-development-concern,Pediatrics,peds-development-concern-p31,plan_phrases,hearing test discussed,31,hearing assessment,plan
+peds-development-concern,Pediatrics,peds-development-concern-p32,plan_phrases,vision test discussed,32,vision test,plan
+peds-development-concern,Pediatrics,peds-development-concern-p33,plan_phrases,referral discussed if indicated per clinician,33,"referral, pediatric neurologist, speech therapy",plan
+peds-development-concern,Pediatrics,peds-development-concern-p34,plan_phrases,parent/guardian concerns addressed,34,concerns addressed,plan
+peds-development-concern,Pediatrics,peds-development-concern-p35,plan_phrases,return precautions discussed,35,return precautions,plan
+peds-development-concern,Pediatrics,peds-development-concern-f36,follow_up,3-6 months for monitoring,36,3-6 months,followup
+peds-development-concern,Pediatrics,peds-development-concern-f37,follow_up,sooner if concerns progress,37,sooner,followup
+peds-school-note,Pediatrics,peds-school-note-s1,symptoms,school note request,1,"school note, doctor note",general
+peds-school-note,Pediatrics,peds-school-note-s2,symptoms,sick note request,2,"sick note, absence note",general
+peds-school-note,Pediatrics,peds-school-note-s3,symptoms,symptoms documented,3,symptoms per history,general
+peds-school-note,Pediatrics,peds-school-note-s4,symptoms,duration of illness,4,"how long, days absent",general
+peds-school-note,Pediatrics,peds-school-note-s5,symptoms,time off needed,5,days off school,general
+peds-school-note,Pediatrics,peds-school-note-s6,symptoms,parent/guardian request,6,parent request for documentation,general
+peds-school-note,Pediatrics,peds-school-note-n7,relevant_negatives,no severe symptoms,7,no severe illness,general
+peds-school-note,Pediatrics,peds-school-note-n8,relevant_negatives,no ongoing significant symptoms,8,no ongoing illness,general
+peds-school-note,Pediatrics,peds-school-note-n9,relevant_negatives,no fever currently,9,no fever,acute
+peds-school-note,Pediatrics,peds-school-note-e10,exam_findings,child well appearing,10,"well, no acute distress",general
+peds-school-note,Pediatrics,peds-school-note-e11,exam_findings,clinician assessment documented,11,assessment documented,general
+peds-school-note,Pediatrics,peds-school-note-e12,exam_findings,vitals normal if assessed,12,vitals,vitals
+peds-school-note,Pediatrics,peds-school-note-r13,red_flags,child appears unwell,13,"unwell, needs further evaluation","general,high_safety"
+peds-school-note,Pediatrics,peds-school-note-r14,red_flags,prolonged illness duration,14,long duration illness,"general,high_safety"
+peds-school-note,Pediatrics,peds-school-note-r15,red_flags,recurrent school absence pattern,15,recurrent absence,"general,high_safety"
+peds-school-note,Pediatrics,peds-school-note-p16,plan_phrases,school note issued as per clinician plan,16,school note issued,plan
+peds-school-note,Pediatrics,peds-school-note-p17,plan_phrases,return-to-school advice discussed,17,"return to school, activity",plan
+peds-school-note,Pediatrics,peds-school-note-p18,plan_phrases,parent/guardian request documented,18,request documented,plan
+peds-school-note,Pediatrics,peds-school-note-p19,plan_phrases,clinician findings summarized for note,19,findings summarized,plan
+peds-school-note,Pediatrics,peds-school-note-p20,plan_phrases,follow-up arranged if needed,20,follow-up if needed,plan
+peds-school-note,Pediatrics,peds-school-note-p21,plan_phrases,return precautions discussed if applicable,21,return precautions,plan
+peds-school-note,Pediatrics,peds-school-note-f22,follow_up,PRN,22,as needed,followup
+peds-school-note,Pediatrics,peds-school-note-f23,follow_up,sooner if not recovered,23,sooner,followup
