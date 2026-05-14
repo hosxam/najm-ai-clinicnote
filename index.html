@@ -252,11 +252,6 @@ footer .footer-links a{font-weight:500}
 <div class="note-phi-warn">Only select findings you personally assessed. Do not enter patient names, IDs, or contact information.</div>
 
 <div class="speed-section">
-<div class="speed-section-title">Search</div>
-<input type="text" id="speedSearch" placeholder="Search symptoms, findings, negatives, plans..." oninput="filterChips()" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:8px">
-</div>
-
-<div class="speed-section">
 <div class="speed-section-title">Duration and Main Concern</div>
 <input id="speedDuration" type="text" placeholder="e.g. 3 days, 2 weeks" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px">
 </div>
@@ -361,7 +356,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <div class="output-actions">
 <button class="btn btn-outline btn-xs" onclick="copySpeedOutput()">Copy</button>
 <button class="btn btn-ghost btn-xs" onclick="clearSpeed()">Clear All</button>
-<button class="btn btn-ghost btn-xs" onclick="document.getElementById('speedOutputBox').innerHTML='<span class="placeholder">Select a specialty and visit type, choose findings, then click Generate Note.</span>'">Clear Output</button>
+<button class="btn btn-ghost btn-xs" onclick="clearSpeedOutput()">Clear Output</button>
 </div>
 <div class="output-footer">Draft generated from doctor-entered information. Review before use.</div>
 </div>
@@ -670,7 +665,7 @@ function loadSpeedVisit(){
   document.getElementById("speedFollowup").value = "";
   document.getElementById("speedReferralReason").value = "";
   document.getElementById("speedReferralSpecialty").value = "";
-  document.getElementById("speedSearch").value = "";
+
   customItems = {symptom:[],neg:[],exam:[],plan:[]};
   updateSelectedCount();
 }
@@ -730,32 +725,6 @@ function updateSelectedCount(){
   if(el) el.textContent = count;
 }
 
-function filterChips(){
-  var q = document.getElementById("speedSearch").value.toLowerCase().trim();
-  var groups = ["speedSymptoms","speedNegs","speedExam","speedRedFlags","speedPlans"];
-  var anyVisible = false;
-  for(var g=0;g<groups.length;g++){
-    var c = document.getElementById(groups[g]);
-    if(!c) continue;
-    var chips = c.querySelectorAll(".chip");
-    var groupVisible = false;
-    for(var i=0;i<chips.length;i++){
-      var name = chips[i].getAttribute("data-name") || chips[i].textContent.toLowerCase();
-      if(!q || name.indexOf(q) >= 0){
-        chips[i].style.display = "";
-        groupVisible = true;
-        anyVisible = true;
-      } else {
-        chips[i].style.display = "none";
-      }
-    }
-    var section = c.closest(".speed-section");
-    if(section){
-      section.style.display = groupVisible ? "" : "none";
-    }
-  }
-}
-
 function clearAllSelections(){
   var ids = ["speedSymptoms","speedNegs","speedExam","speedRedFlags","speedPlans"];
   for(var i=0;i<ids.length;i++){
@@ -768,27 +737,46 @@ function clearAllSelections(){
   updateSelectedCount();
 }
 
-function switchSpeedTab(tab){
-  var parent = document.querySelector("#page-speed .output-header");
-  if(!parent) return;
-  var tabs = parent.querySelectorAll(".output-tab");
-  for(var i=0;i<tabs.length;i++){tabs[i].classList.remove("active")}
-  for(var i=0;i<tabs.length;i++){
-    if(tabs[i].getAttribute("onclick").indexOf(tab)>=0){tabs[i].classList.add("active");break}
+function renderSpeedOutput(tab){
+  var box = document.getElementById("speedOutputBox");
+  if(!box) return;
+  var outputs = window._speedOutputs;
+  if(!outputs || !outputs[tab]){
+    var fallbacks = {
+      emr: "Generate a note first.",
+      soap: "Generate a note first.",
+      fup: "Follow-up details: [not documented]",
+      ref: "Referral draft: [not requested/documented]",
+      inst: "Patient instructions: [doctor plan not documented]"
+    };
+    box.innerHTML = "<span class='placeholder'>" + (fallbacks[tab] || "Generate a note first.") + "</span>";
+    return;
   }
-  // Show relevant output content
-  var outputs = document.querySelectorAll("#page-speed .speed-output-content");
-  for(var i=0;i<outputs.length;i++){outputs[i].style.display="none"}
-  var target = document.getElementById("speedContent-"+tab);
-  if(target) target.style.display="block";
+  box.innerHTML = outputs[tab];
+}
+
+function switchSpeedTab(tab){
+  window._activeSpeedTab = tab;
+  // Update tab button styling
+  var parent = document.querySelector("#page-speed .output-header");
+  if(parent){
+    var tabs = parent.querySelectorAll(".output-tab");
+    for(var i=0;i<tabs.length;i++){tabs[i].classList.remove("active")}
+    for(var i=0;i<tabs.length;i++){
+      if(tabs[i].getAttribute("onclick") && tabs[i].getAttribute("onclick").indexOf(tab)>=0){tabs[i].classList.add("active");break}
+    }
+  }
+  // Render output for this tab from _speedOutputs
+  renderSpeedOutput(tab);
 }
 
 function copySpeedOutput(){
-  var el = document.getElementById("speedOutputBox");
-  var t = el.innerText || el.textContent;
-  navigator.clipboard.writeText(t).catch(function(){
+  var tab = window._activeSpeedTab || "emr";
+  var output = window._speedOutputs ? window._speedOutputs[tab] : "";
+  if(!output) output = document.getElementById("speedOutputBox").innerText || "";
+  navigator.clipboard.writeText(output).catch(function(){
     var ta=document.createElement("textarea");
-    ta.value=t;
+    ta.value=output;
     document.body.appendChild(ta);
     ta.select();
     document.execCommand("copy");
@@ -894,16 +882,8 @@ function generateAllOutputs(){
   // Store outputs
   window._speedOutputs = {emr:emr, soap:soap, fup:fupNote, ref:refNote, inst:inst};
 
-  // Show EMR by default
-  document.getElementById("speedOutputBox").innerHTML = emr;
-
-  // Set active tab to EMR
-  var parent = document.querySelector("#page-speed .output-header");
-  if(parent){
-    var tabs = parent.querySelectorAll(".output-tab");
-    for(var i=0;i<tabs.length;i++){tabs[i].classList.remove("active")}
-    if(tabs[0]) tabs[0].classList.add("active");
-  }
+  // Show EMR tab by default
+  switchSpeedTab("emr");
   updateSelectedCount();
 }
 function clearSpeed(){
@@ -913,7 +893,7 @@ function clearSpeed(){
   document.getElementById("speedFollowup").value="";
   document.getElementById("speedReferralReason").value="";
   document.getElementById("speedReferralSpecialty").value="";
-  document.getElementById("speedSearch").value="";
+
   customItems = {symptom:[],neg:[],exam:[],plan:[]};
   var containers=["speedSymptoms","speedNegs","speedExam","speedRedFlags","speedPlans"];
   for(var i=0;i<containers.length;i++){
@@ -939,6 +919,18 @@ function populateSpeedSpecialty(){
 }
 function buildPresets(){var c=document.getElementById("presetsContent");if(!c)return;var h="";var k=Object.keys(SD);for(var i=0;i<k.length;i++){var s=SD[k[i]];h+="<div class=\"presets-spec\"><h2>"+s.name+"</h2>";var t=Object.keys(s.types);for(var j=0;j<t.length;j++){var tp=t[j];var p=s.types[tp];h+="<div class=\"presets-card\">";h+="<h3>"+tp+"</h3>";h+="<ul>";for(var m=0;m<p.length;m++){h+="<li>"+p[m]+"</li>"}h+="</ul></div>"}h+="</div>"}c.innerHTML=h}
 
+function clearSpeedOutput(){
+  var box = document.getElementById("speedOutputBox");
+  if(box) box.innerHTML = "<span class='placeholder'>Select a specialty and visit type, choose findings, then click Generate Note.</span>";
+  window._speedOutputs = null;
+  var parent = document.querySelector("#page-speed .output-header");
+  if(parent){
+    var tabs = parent.querySelectorAll(".output-tab");
+    for(var i=0;i<tabs.length;i++){tabs[i].classList.remove("active")}
+    if(tabs[0]) tabs[0].classList.add("active");
+  }
+}
+
 // Export all functions to window for onclick
 window.showPage = showPage;
 window.upVT = upVT;
@@ -958,8 +950,9 @@ window.loadSpeedVisit = loadSpeedVisit;
 window.fillChips = fillChips;
 window.getSelectedChips = getSelectedChips;
 window.addCustom = addCustom;
+window.renderSpeedOutput = renderSpeedOutput;
+window.clearSpeedOutput = clearSpeedOutput;
 window.updateSelectedCount = updateSelectedCount;
-window.filterChips = filterChips;
 window.clearAllSelections = clearAllSelections;
 window.switchSpeedTab = switchSpeedTab;
 window.copySpeedOutput = copySpeedOutput;
@@ -967,7 +960,6 @@ window.generateAllOutputs = generateAllOutputs;
 window.clearSpeed = clearSpeed;
 window.populateSpeedSpecialty = populateSpeedSpecialty;
 window.buildPresets = buildPresets;
-window.addCustom = addCustom;
 
 document.addEventListener("DOMContentLoaded",function(){showPage('speed');buildPresets();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
 
