@@ -226,7 +226,7 @@ footer .footer-links a{font-weight:500}
 </div><div id="page-speed" class="page">
 <div class="page-header">
 <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
-<div><h2>OPD Speed Mode</h2><p>Select quick findings, add your impression and plan, get a copy-ready note.</p></div>
+<div><h2>OPD Speed Mode</h2><p>Select quick findings, customize with your input, and generate all outputs with one click.</p></div>
 <div class="status-bar"><span class="status-dot"></span><span>Less typing, same documentation.</span></div>
 </div>
 </div>
@@ -235,19 +235,16 @@ footer .footer-links a{font-weight:500}
 <div class="two-col" style="gap:24px">
 <div>
 <div class="form-group">
+<label for="speedSpecialty">Specialty</label>
+<select id="speedSpecialty" onchange="loadSpeedSpecialty()">
+<option value="">Select specialty</option>
+</select>
+</div>
+
+<div class="form-group">
 <label for="speedVisitType">Visit Type</label>
 <select id="speedVisitType" onchange="loadSpeedVisit()">
 <option value="">Select visit type</option>
-<option value="fever">Fever / URTI</option>
-<option value="cough">Cough</option>
-<option value="headache">Headache</option>
-<option value="abdPain">Abdominal pain</option>
-<option value="htnFU">Hypertension follow-up</option>
-<option value="dmFU">Diabetes follow-up</option>
-<option value="lbp">Low back pain</option>
-<option value="kneePain">Knee pain</option>
-<option value="rash">Rash</option>
-<option value="earPain">Ear pain</option>
 </select>
 </div>
 
@@ -255,65 +252,97 @@ footer .footer-links a{font-weight:500}
 <div class="note-phi-warn">Only select findings you personally assessed. Do not enter patient names, IDs, or contact information.</div>
 
 <div class="speed-section">
+<div class="speed-section-title">Search</div>
+<input type="text" id="speedSearch" placeholder="Search symptoms, findings, negatives, plans..." oninput="filterChips()" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:8px">
+</div>
+
+<div class="speed-section">
 <div class="speed-section-title">Duration and Main Concern</div>
-<div class="form-group" style="margin-bottom:8px"><input id="speedDuration" type="text" placeholder="e.g. 3 days, 2 weeks" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit"></div>
+<input id="speedDuration" type="text" placeholder="e.g. 3 days, 2 weeks" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px">
 </div>
 
 <div id="speedSymptomSection" class="speed-section">
 <div class="speed-section-title">Symptoms</div>
 <div class="speed-tip">Select all that apply</div>
 <div id="speedSymptoms" class="chip-group"></div>
+<div style="display:flex;gap:6px;margin-top:6px">
+<input id="customSymptom" type="text" placeholder="Add custom symptom" style="flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit">
+<button class="btn btn-ghost btn-xs" onclick="addCustom('symptom')">Add</button>
+</div>
 </div>
 
 <div id="speedNegSection" class="speed-section">
 <div class="speed-section-title">Relevant Negatives</div>
 <div class="speed-tip">Select negatives you ruled out</div>
 <div id="speedNegs" class="chip-group"></div>
+<div style="display:flex;gap:6px;margin-top:6px">
+<input id="customNeg" type="text" placeholder="Add custom negative" style="flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit">
+<button class="btn btn-ghost btn-xs" onclick="addCustom('neg')">Add</button>
+</div>
 </div>
 
 <div id="speedExamSection" class="speed-section">
 <div class="speed-section-title">Examination Findings</div>
 <div class="speed-tip">Only select findings you personally assessed</div>
 <div id="speedExam" class="chip-group"></div>
+<div style="display:flex;gap:6px;margin-top:6px">
+<input id="customExam" type="text" placeholder="Add custom exam finding" style="flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit">
+<button class="btn btn-ghost btn-xs" onclick="addCustom('exam')">Add</button>
+</div>
 </div>
 
 <div id="speedRedFlagSection" class="speed-section">
-<div class="speed-section-title">Red Flags &amp; Cautions</div>
+<div class="speed-section-title">Red Flags and Cautions</div>
 <div class="speed-tip">Considered and discussed with patient</div>
 <div id="speedRedFlags" class="chip-group"></div>
 </div>
 
 <div class="speed-section">
 <div class="speed-section-title">Doctor-Entered Impression</div>
-<div class="form-group" style="margin-bottom:8px"><input id="speedImpression" type="text" placeholder="e.g. Viral URTI, Acute sinusitis" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit"></div>
+<input id="speedImpression" type="text" placeholder="e.g. Viral URTI, Acute sinusitis" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px">
 </div>
 
 <div class="speed-section">
 <div class="speed-section-title">Doctor-Entered Plan</div>
-<div class="form-group" style="margin-bottom:8px"><textarea id="speedPlan" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;min-height:60px;resize:vertical" placeholder="e.g. Symptomatic treatment, paracetamol 500mg PRN fever"></textarea></div>
+<textarea id="speedPlan" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;min-height:60px;resize:vertical;margin-bottom:4px" placeholder="e.g. Symptomatic treatment, paracetamol 500mg PRN fever"></textarea>
 </div>
 
 <div id="speedPlanSection" class="speed-section">
 <div class="speed-section-title">Plan Phrases</div>
 <div class="speed-tip">Select additional plan items to include</div>
 <div id="speedPlans" class="chip-group"></div>
+<div style="display:flex;gap:6px;margin-top:6px">
+<input id="customPlan" type="text" placeholder="Add custom plan phrase" style="flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit">
+<button class="btn btn-ghost btn-xs" onclick="addCustom('plan')">Add</button>
+</div>
 </div>
 
 <div class="speed-section">
 <div class="speed-section-title">Follow-up</div>
-<div class="form-group" style="margin-bottom:8px"><input id="speedFollowup" type="text" placeholder="e.g. 3 days, 2 weeks, PRN" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit"></div>
+<input id="speedFollowup" type="text" placeholder="e.g. 3 days, 2 weeks, PRN" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px">
 </div>
 
-<div class="gen-row">
-<button class="btn btn-primary btn-sm" onclick="gSpeed('emr')">Generate Short EMR Note</button>
-<button class="btn btn-primary btn-sm" onclick="gSpeed('soap')">Generate SOAP Note</button>
-<button class="btn btn-primary btn-sm" onclick="gSpeed('pt')">Patient Instructions</button>
+<div class="speed-section">
+<div class="speed-section-title">Referral (optional)</div>
+<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px">
+<input id="speedReferralReason" type="text" placeholder="Reason for referral" style="flex:1;min-width:150px;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit">
+<input id="speedReferralSpecialty" type="text" placeholder="Referred to (specialty)" style="flex:1;min-width:120px;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit">
+</div>
+</div>
+
+<div id="speedSummary" class="speed-summary">
+<span>Selected: <strong id="selectedCount">0</strong> items</span>
+<button class="btn btn-ghost btn-xs" onclick="clearAllSelections()" style="margin-left:auto">Clear All</button>
+</div>
+
+<div class="gen-row" style="margin-top:16px">
+<button class="btn btn-primary" onclick="generateAllOutputs()" style="padding:10px 28px;font-size:14px;font-weight:700">Generate Note</button>
 <button class="btn btn-ghost btn-sm" onclick="clearSpeed()">Clear All</button>
 </div>
 </div>
 
 <div id="speedEmptyState" style="padding:40px 20px;text-align:center;color:var(--gray-400);font-size:13px;line-height:1.6">
-Select a visit type above to start building your note.<br>
+Select a specialty and visit type above to start building your note.<br>
 Choose symptoms, negatives, exam findings, and plan phrases from quick-select chips.<br>
 <span style="font-size:11px;margin-top:8px;display:block">No data is stored. Everything stays on your device.</span>
 </div>
@@ -322,15 +351,17 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <div>
 <div class="output-card">
 <div class="output-header">
-<button class="output-tab active" onclick="switchTab('speed','emr')" data-speed-tab="emr">EMR</button>
-<button class="output-tab" onclick="switchTab('speed','soap')" data-speed-tab="soap">SOAP</button>
-<button class="output-tab" onclick="switchTab('speed','pt')" data-speed-tab="pt">Instructions</button>
+<button class="output-tab active" onclick="switchSpeedTab('emr')">EMR</button>
+<button class="output-tab" onclick="switchSpeedTab('soap')">SOAP</button>
+<button class="output-tab" onclick="switchSpeedTab('fup')">Follow-up</button>
+<button class="output-tab" onclick="switchSpeedTab('ref')">Referral</button>
+<button class="output-tab" onclick="switchSpeedTab('inst')">Instructions</button>
 </div>
-<div id="speedOutputBox" class="output-body"><span class="placeholder">Select quick phrases or enter short notes to generate output.</span></div>
+<div id="speedOutputBox" class="output-body"><span class="placeholder">Select a specialty and visit type, choose findings, then click Generate Note.</span></div>
 <div class="output-actions">
-<button class="btn btn-outline btn-xs" onclick="cp('speedOutputBox')">Copy</button>
+<button class="btn btn-outline btn-xs" onclick="copySpeedOutput()">Copy</button>
 <button class="btn btn-ghost btn-xs" onclick="clearSpeed()">Clear All</button>
-<button class="btn btn-ghost btn-xs" onclick="document.getElementById('speedOutputBox').innerHTML='<span class="placeholder">Select quick phrases or enter short notes to generate output.</span>'">Clear Output</button>
+<button class="btn btn-ghost btn-xs" onclick="document.getElementById('speedOutputBox').innerHTML='<span class="placeholder">Select a specialty and visit type, choose findings, then click Generate Note.</span>'">Clear Output</button>
 </div>
 <div class="output-footer">Draft generated from doctor-entered information. Review before use.</div>
 </div>
@@ -343,7 +374,9 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <p>ClinicNote is built for repetitive OPD documentation. Instead of typing the same phrases repeatedly, you select relevant findings, add your impression and plan, then copy a concise note into your workflow. It structures only what you enter and does not diagnose or recommend treatment.<br><br>
 <b>Speed Mode</b> is designed for high-frequency OPD visits to reduce keystrokes while maintaining documentation quality.</p>
 </div>
-</div><div id="page-opd" class="page">
+</div>
+
+<div id="page-opd" class="page">
 <div class="page-header">
 <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
 <div><h2>OPD Builder</h2><p>Enter your de-identified note and generate structured clinical outputs.</p></div>
@@ -547,7 +580,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <a onclick="showPage('about')">About</a>
 </div>
 &copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.6">Version d9843a7 | 2026-05-14</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
-</footer><script>
+</footer><script src="SPEED_LIBRARY_DATA.js"></script><script>
 var SD={
 gen:{name:"General Medicine / GP",types:{}},
 ortho:{name:"Orthopedics / MSK",types:{}},
@@ -598,7 +631,7 @@ SD.genfup.types["Routine f/u"]=["Interval?","New complaints?","Vitals?","Medicat
 SD.genfup.types["Post-hospital f/u"]=["Reason for admission?","Discharge date?","Current symptoms?","Medication changes?","Follow-up plan?"];
 SD.genfup.types["Chronic disease f/u"]=["Disease?","Current status?","Medication compliance?","Latest labs?","Plan?"];
 SD.genfup.types["Lab results review"]=["Which labs?","Results?","Abnormal values?","Clinical correlation?","Plan?"];
-var SPEED_DATA={
+var VISIT_LIBRARY={
   fever:{label:"Fever / URTI",symptoms:["fever","cough","sore throat","runny nose","body aches","fatigue","chills","loss of appetite"],negs:["no shortness of breath","no chest pain","no persistent vomiting","no neck stiffness","no confusion","no rash"],exam:["afebrile in clinic","febrile in clinic","throat congested","chest clear","no respiratory distress","hydration adequate","tachycardia","mild dehydration"],redFlags:["breathing difficulty","persistent high fever","confusion","neck stiffness","dehydration","immunocompromised"],plans:["supportive care advised","fluids advised","rest advised","antipyretic as per clinician plan","return precautions explained","follow-up if symptoms persist or worsen"]},
   cough:{label:"Cough",symptoms:["dry cough","productive cough","fever","sore throat","runny nose","fatigue","wheeze","dyspnea on exertion"],negs:["no hemoptysis","no chest pain","no fever documented","no night sweats","no weight loss","no orthopnea"],exam:["chest clear","mild wheeze","crackles","throat congested","afebrile in clinic","respiratory rate normal"],redFlags:["hemoptysis","unexplained weight loss","night sweats","persistent fever","chest pain","SOB at rest"],plans:["cough suppressant as per clinician plan","steam inhalation advised","fluids advised","avoid smoke/dust","follow-up if persistent","return if hemoptysis"]},
   headache:{label:"Headache",symptoms:["headache","nausea","photophobia","phonophobia","visual aura","tension","neck pain","fatigue"],negs:["no fever","no trauma","no vomiting","no focal weakness","no speech difficulty","no visual loss"],exam:["neurological exam grossly normal","gait normal","fundoscopy unremarkable","no meningism","vitals stable"],redFlags:["sudden severe onset","fever with neck stiffness","trauma","focal neurological deficit","new onset after age 50"],plans:["analgesia as per clinician plan","rest advised","avoid triggers","stay hydrated","follow-up if worsening","return if neurological symptoms"]},
@@ -610,7 +643,7 @@ var SPEED_DATA={
   rash:{label:"Rash",symptoms:["rash","itching","burning","scaling","dryness","redness","blisters","oozing"],negs:["no fever","no new medication","no known trigger","no joint pain","no mucosal involvement"],exam:["erythematous rash","dry scaly patches","maculopapular","vesicular","well-demarcated","no secondary infection"],redFlags:["fever with rash","mucosal involvement","blistering","painful rash","rapid spread"],plans:["emollient advised","topical steroid as per clinician plan","antihistamine as per clinician plan","avoid irritants","follow-up if not improving","return if spreads or worsens"]},
   earPain:{label:"Ear pain",symptoms:["ear pain","ear fullness","hearing loss","discharge","dizziness","fever","itching in ear"],negs:["no trauma","no foreign body","no known perforation","no tinnitus","no vertigo"],exam:["canal normal","canal erythematous","canal edematous","TM normal","TM injected","TM perforation suspected","discharge present","no mastoid tenderness"],redFlags:["post-auricular swelling","fever","discharge with pain","hearing loss","dizziness","immunocompromised"],plans:["analgesia as per clinician plan","aural hygiene advised","keep ear dry","antibiotics as per clinician plan","follow-up if not improving","return if severe pain or discharge"]}
 };
-function showPage(pageId){var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open")}
+function showPage(pageId){var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open");if(pageId==="speed"){populateSpeedSpecialty()}sList.remove("open")}
 function upVT(){var spec=document.getElementById("specialty").value;var vt=document.getElementById("visitType");vt.innerHTML="";var types=SD[spec].types;var keys=Object.keys(types);vt.innerHTML="<option value=\"\">Select a visit type</option>";for(var i=0;i<keys.length;i++){var opt=document.createElement("option");opt.value=keys[i];opt.textContent=keys[i];vt.appendChild(opt)}upP()}
 function upP(){var spec=document.getElementById("specialty").value;var vt=document.getElementById("visitType").value;var c=document.getElementById("promptsContainer");var l=document.getElementById("promptsList");if(!vt||!SD[spec].types[vt]){c.style.display="none";return}c.style.display="block";l.innerHTML="";var p=SD[spec].types[vt];for(var i=0;i<p.length;i++){var li=document.createElement("li");li.textContent=p[i];l.appendChild(li)}}
 function val(id){var el=document.getElementById(id);if(!el)return"[not documented]";var v=el.value.trim();return v||"[not documented]"}
@@ -621,29 +654,56 @@ function gRef(type){var dc="Najm AI ClinicNote is an educational/productivity do
 function gInst(lang){var dc="Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";var diag=val("instDiagnosis");var advice=val("instAdvice");var meds=val("instMedications");var act=val("instActivity");var rf=val("instRedFlags");var fup=val("instFollowup");var o="";if(lang==="en"){o=dc+"PATIENT INSTRUCTIONS\n\n";o+="Diagnosis: "+diag+"\n\n";o+="What to do:\n"+advice+"\n\n";o+="Medications:\n"+meds+"\n\n";o+="Activity:\n"+act+"\n\n";o+="When to return:\n"+rf+"\n\n";o+="Follow-up: "+fup+"\n"}else if(lang==="ar"){o=dc+"\u062A\u0639\u0644\u064A\u0645\u0627\u062A \u0627\u0644\u0645\u0631\u064A\u0636\n\n";o+="\u0627\u0644\u062A\u0634\u062E\u064A\u0635: "+diag+"\n\n";o+="\u0627\u0644\u0646\u0635\u0627\u0626\u062D: "+advice+"\n\n";o+="\u0627\u0644\u0623\u062F\u0648\u064A\u0629: "+meds+"\n\n";o+="\u0627\u0644\u0646\u0634\u0627\u0637: "+act+"\n\n";o+="\u0645\u062A\u0649 \u064A\u062C\u0628 \u0627\u0644\u0639\u0648\u062F\u0629: "+rf+"\n\n";o+="\u0645\u062A\u0627\u0628\u0639\u0629: "+fup+"\n"}else if(lang==="wa"){o=dc+"PATIENT INSTRUCTIONS\n\n";o+="Diagnosis: "+diag+"\n\n";o+="Advice:\n"+advice+"\n\n";o+="Medications:\n"+meds+"\n\n";o+="Activity:\n"+act+"\n\n";o+="Red flags (see doctor if):\n"+rf+"\n\n";o+="Follow-up: "+fup+"\n"}document.getElementById("instOutputBox").innerHTML=o}function cp(id){var el=document.getElementById(id);var t=el.innerText||el.textContent;navigator.clipboard.writeText(t).catch(function(){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand("copy");document.body.removeChild(ta)})}
 function clearOutput(){document.getElementById("outputBox").innerHTML="<span class=\"placeholder\">Select a specialty and visit type, enter your de-identified note, then click a generate button to create structured output.</span>"}
 function cl(){var ins=document.querySelectorAll("#page-opd input, #page-opd textarea");for(var i=0;i<ins.length;i++){ins[i].value=""}clearOutput()}
+var customItems = {symptom:[],neg:[],exam:[],plan:[]};
+var currentSpecialty = "";
+var currentVisitType = "";
+
+function loadSpeedSpecialty(){
+  var spec = document.getElementById("speedSpecialty").value;
+  var vtSelect = document.getElementById("speedVisitType");
+  vtSelect.innerHTML = "<option value=''>Select visit type</option>";
+  document.getElementById("speedContent").style.display = "none";
+  document.getElementById("speedEmptyState").style.display = "block";
+  document.getElementById("speedOutputBox").innerHTML = "<span class='placeholder'>Select a specialty and visit type, choose findings, then click Generate Note.</span>";
+  if(!spec || !VISIT_LIBRARY[spec]) return;
+  currentSpecialty = spec;
+  var types = Object.keys(VISIT_LIBRARY[spec]);
+  for(var i=0;i<types.length;i++){
+    var opt = document.createElement("option");
+    opt.value = types[i];
+    opt.textContent = types[i];
+    vtSelect.appendChild(opt);
+  }
+}
+
 function loadSpeedVisit(){
-  var vt=document.getElementById("speedVisitType").value;
-  var c=document.getElementById("speedContent");
-  var es=document.getElementById("speedEmptyState");
-  if(!vt||!SPEED_DATA[vt]){
-    c.style.display="none";
-    es.style.display="block";
+  var vt = document.getElementById("speedVisitType").value;
+  var c = document.getElementById("speedContent");
+  var es = document.getElementById("speedEmptyState");
+  if(!vt || !currentSpecialty || !VISIT_LIBRARY[currentSpecialty][vt]){
+    c.style.display = "none";
+    es.style.display = "block";
     return;
   }
-  c.style.display="block";
-  es.style.display="none";
-  var d=SPEED_DATA[vt];
-  fillChips("speedSymptoms",d.symptoms);
-  fillChips("speedNegs",d.negs);
-  fillChips("speedExam",d.exam);
-  fillChips("speedRedFlags",d.redFlags,"redflag");
-  fillChips("speedPlans",d.plans);
-  var el=document.getElementById("speedOutputBox");
-  el.innerHTML="<span class=\"placeholder\">Select findings and enter impression/plan, then click generate.</span>";
-  document.getElementById("speedDuration").value="";
-  document.getElementById("speedImpression").value="";
-  document.getElementById("speedPlan").value="";
-  document.getElementById("speedFollowup").value="";
+  currentVisitType = vt;
+  c.style.display = "block";
+  es.style.display = "none";
+  var d = VISIT_LIBRARY[currentSpecialty][vt];
+  fillChips("speedSymptoms", d.symptoms);
+  fillChips("speedNegs", d.negatives);
+  fillChips("speedExam", d.exam);
+  fillChips("speedRedFlags", d.redFlags, "redflag");
+  fillChips("speedPlans", d.planPhrases);
+  document.getElementById("speedOutputBox").innerHTML = "<span class='placeholder'>Select findings and enter impression/plan, then click Generate Note.</span>";
+  document.getElementById("speedDuration").value = "";
+  document.getElementById("speedImpression").value = "";
+  document.getElementById("speedPlan").value = "";
+  document.getElementById("speedFollowup").value = "";
+  document.getElementById("speedReferralReason").value = "";
+  document.getElementById("speedReferralSpecialty").value = "";
+  document.getElementById("speedSearch").value = "";
+  customItems = {symptom:[],neg:[],exam:[],plan:[]};
+  updateSelectedCount();
 }
 function fillChips(containerId,items,type){
   var c=document.getElementById(containerId);
@@ -653,11 +713,13 @@ function fillChips(containerId,items,type){
     var b=document.createElement("button");
     b.className="chip"+(type==="redflag"?" chip-redflag":"");
     b.textContent=items[i];
+    b.setAttribute("data-name",items[i].toLowerCase());
     b.type="button";
-    b.onclick=function(){this.classList.toggle("selected")};
+    b.onclick=function(){this.classList.toggle("selected");updateSelectedCount()};
     c.appendChild(b);
   }
 }
+
 function getSelectedChips(containerId){
   var c=document.getElementById(containerId);
   if(!c)return[];
@@ -666,78 +728,246 @@ function getSelectedChips(containerId){
   for(var i=0;i<chips.length;i++){out.push(chips[i].textContent)}
   return out;
 }
-function gSpeed(type){
-  var vt=document.getElementById("speedVisitType").value;
-  if(!vt||!SPEED_DATA[vt]){
-    document.getElementById("speedOutputBox").innerHTML="Please select a visit type first.";
+
+function addCustom(type){
+  var input = document.getElementById("custom"+type.charAt(0).toUpperCase()+type.slice(1));
+  if(!input || !input.value.trim()) return;
+  var val = input.value.trim();
+  if(!customItems[type]) customItems[type] = [];
+  customItems[type].push(val);
+  var mapId = type==="symptom"?"speedSymptoms":type==="neg"?"speedNegs":type==="exam"?"speedExam":"speedPlans";
+  var c = document.getElementById(mapId);
+  if(c){
+    var b = document.createElement("button");
+    b.className = "chip selected";
+    b.textContent = val;
+    b.setAttribute("data-name",val.toLowerCase());
+    b.type = "button";
+    b.onclick = function(){this.classList.toggle("selected");updateSelectedCount()};
+    c.appendChild(b);
+  }
+  input.value = "";
+  updateSelectedCount();
+}
+
+function updateSelectedCount(){
+  var count = 0;
+  var ids = ["speedSymptoms","speedNegs","speedExam","speedRedFlags","speedPlans"];
+  for(var i=0;i<ids.length;i++){
+    var c = document.getElementById(ids[i]);
+    if(c) count += c.querySelectorAll(".chip.selected").length;
+  }
+  var el = document.getElementById("selectedCount");
+  if(el) el.textContent = count;
+}
+
+function filterChips(){
+  var q = document.getElementById("speedSearch").value.toLowerCase().trim();
+  var groups = ["speedSymptoms","speedNegs","speedExam","speedRedFlags","speedPlans"];
+  var anyVisible = false;
+  for(var g=0;g<groups.length;g++){
+    var c = document.getElementById(groups[g]);
+    if(!c) continue;
+    var chips = c.querySelectorAll(".chip");
+    var groupVisible = false;
+    for(var i=0;i<chips.length;i++){
+      var name = chips[i].getAttribute("data-name") || chips[i].textContent.toLowerCase();
+      if(!q || name.indexOf(q) >= 0){
+        chips[i].style.display = "";
+        groupVisible = true;
+        anyVisible = true;
+      } else {
+        chips[i].style.display = "none";
+      }
+    }
+    var section = c.closest(".speed-section");
+    if(section){
+      section.style.display = groupVisible ? "" : "none";
+    }
+  }
+}
+
+function clearAllSelections(){
+  var ids = ["speedSymptoms","speedNegs","speedExam","speedRedFlags","speedPlans"];
+  for(var i=0;i<ids.length;i++){
+    var c = document.getElementById(ids[i]);
+    if(c){
+      var sel = c.querySelectorAll(".chip.selected");
+      for(var j=0;j<sel.length;j++){sel[j].classList.remove("selected")}
+    }
+  }
+  updateSelectedCount();
+}
+
+function switchSpeedTab(tab){
+  var parent = document.querySelector("#page-speed .output-header");
+  if(!parent) return;
+  var tabs = parent.querySelectorAll(".output-tab");
+  for(var i=0;i<tabs.length;i++){tabs[i].classList.remove("active")}
+  for(var i=0;i<tabs.length;i++){
+    if(tabs[i].getAttribute("onclick").indexOf(tab)>=0){tabs[i].classList.add("active");break}
+  }
+  // Show relevant output content
+  var outputs = document.querySelectorAll("#page-speed .speed-output-content");
+  for(var i=0;i<outputs.length;i++){outputs[i].style.display="none"}
+  var target = document.getElementById("speedContent-"+tab);
+  if(target) target.style.display="block";
+}
+
+function copySpeedOutput(){
+  var el = document.getElementById("speedOutputBox");
+  var t = el.innerText || el.textContent;
+  navigator.clipboard.writeText(t).catch(function(){
+    var ta=document.createElement("textarea");
+    ta.value=t;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand("copy");
+    document.body.removeChild(ta);
+  });
+}
+
+function generateAllOutputs(){
+  if(!currentSpecialty || !currentVisitType || !VISIT_LIBRARY[currentSpecialty][currentVisitType]){
+    document.getElementById("speedOutputBox").innerHTML = "Please select a specialty and visit type first.";
     return;
   }
-  var d=SPEED_DATA[vt];
-  var dur=document.getElementById("speedDuration").value.trim()||"[not documented]";
-  var impr=document.getElementById("speedImpression").value.trim()||"[doctor impression not documented]";
-  var planTxt=document.getElementById("speedPlan").value.trim()||"[doctor plan not documented]";
-  var fup=document.getElementById("speedFollowup").value.trim()||"[not documented]";
-  var sympSel=getSelectedChips("speedSymptoms");
-  var negSel=getSelectedChips("speedNegs");
-  var examSel=getSelectedChips("speedExam");
-  var redSel=getSelectedChips("speedRedFlags");
-  var planSel=getSelectedChips("speedPlans");
-  var sympStr=sympSel.length?sympSel.join(", "):"[not documented]";
-  var negStr=negSel.length?"Denies "+negSel.join(", "):"";
-  var examStr=examSel.length?examSel.join(", "):"[not documented]";
-  var redStr=redSel.length?"Red flags discussed: "+redSel.join(", ")+".":"";
-  var planItems=[];
-  if(planTxt!="[doctor plan not documented]")planItems.push(planTxt);
+  var specName = currentSpecialty;
+  var vtName = currentVisitType;
+  var d = VISIT_LIBRARY[currentSpecialty][currentVisitType];
+  var dur = document.getElementById("speedDuration").value.trim() || "[not documented]";
+  var impr = document.getElementById("speedImpression").value.trim() || "[doctor impression not documented]";
+  var planTxt = document.getElementById("speedPlan").value.trim() || "[doctor plan not documented]";
+  var fup = document.getElementById("speedFollowup").value.trim() || "[not documented]";
+  var refReason = document.getElementById("speedReferralReason").value.trim() || "";
+  var refSpec = document.getElementById("speedReferralSpecialty").value.trim() || "";
+  var sympSel = getSelectedChips("speedSymptoms");
+  var negSel = getSelectedChips("speedNegs");
+  var examSel = getSelectedChips("speedExam");
+  var redSel = getSelectedChips("speedRedFlags");
+  var planSel = getSelectedChips("speedPlans");
+  if(customItems.symptom && customItems.symptom.length){sympSel = sympSel.concat(customItems.symptom)}
+  if(customItems.neg && customItems.neg.length){negSel = negSel.concat(customItems.neg)}
+  if(customItems.exam && customItems.exam.length){examSel = examSel.concat(customItems.exam)}
+  if(customItems.plan && customItems.plan.length){planSel = planSel.concat(customItems.plan)}
+  var sympStr = sympSel.length ? sympSel.join(", ") : "[not documented]";
+  var negStr = negSel.length ? "Denies "+negSel.join(", ") : "";
+  var examStr = examSel.length ? examSel.join(", ") : "[not documented]";
+  var redStr = redSel.length ? "Red flags discussed: "+redSel.join(", ")+"." : "";
+  var planItems = [];
+  if(planTxt != "[doctor plan not documented]") planItems.push(planTxt);
   for(var i=0;i<planSel.length;i++){planItems.push(planSel[i])}
-  var planStr=planItems.length?planItems.join("; "):"[not documented]";
+  var planStr = planItems.length ? planItems.join("; ") : "[not documented]";
+  var dcl = "Draft generated from doctor-entered information. Review before use. ClinicNote is an educational/productivity tool. Not a medical device.\n\n";
 
-  var dcl="Draft generated from doctor-entered information. Review before use. ClinicNote is an educational/productivity tool. Not a medical device.\n\n";
-  var o="";
+  // Generate EMR
+  var emr = dcl+"SHORT EMR NOTE\n";
+  emr += "Specialty: "+specName+" | Visit: "+vtName+"\n\n";
+  emr += "Seen for "+sympStr+" / "+dur+". ";
+  if(negStr) emr += negStr+". ";
+  emr += "Exam: "+examStr+". ";
+  emr += "Impression: "+impr+". ";
+  emr += "Plan: "+planStr+". ";
+  if(fup != "[not documented]") emr += "Follow-up: "+fup+".";
+  if(redStr) emr += "\n\n"+redStr;
 
-  if(type==="emr"){
-    o=dcl+"SHORT EMR NOTE - "+d.label+"\n\n";
-    o+="Seen for "+sympStr+"/"+dur+". ";
-    if(negStr)o+=negStr+". ";
-    o+="Exam: "+examStr+". ";
-    o+="Impression: "+impr+". ";
-    o+="Plan: "+planStr+". ";
-    if(fup!="[not documented]")o+="Follow-up: "+fup+".";
-    if(redStr)o+="\n\n"+redStr;
-  } else if(type==="soap"){
-    o=dcl+"SOAP NOTE - "+d.label+"\n\n";
-    o+="SUBJECTIVE:\n";
-    o+="Duration: "+dur+"\n";
-    o+="Symptoms: "+sympStr+"\n";
-    if(negStr)o+="Relevant negatives: "+negStr.replace("Denies ","")+"\n";
-    o+="\nOBJECTIVE:\n";
-    o+="Examination: "+examStr+"\n";
-    if(redStr)o+="Cautions: "+redStr+"\n";
-    o+="\nASSESSMENT:\n"+impr+"\n\n";
-    o+="PLAN:\n"+planStr+"\n";
-    if(fup!="[not documented]")o+="Follow-up: "+fup+"\n";
-  } else if(type==="pt"){
-    o=dcl+"PATIENT INSTRUCTIONS\n\n";
-    o+="Diagnosis/Impression: "+impr+"\n\n";
-    o+="Plan:\n";
-    var planLines=planStr.split("; ");
-    for(var i=0;i<planLines.length;i++){o+="- "+planLines[i]+"\n"}
-    if(fup!="[not documented]")o+="\nFollow-up: "+fup+"\n";
-    o+="\n*These instructions are based on your doctor\'s plan. If symptoms worsen, seek medical attention promptly.*\n";
+  // Generate SOAP
+  var soap = dcl+"SOAP NOTE\n";
+  soap += "Specialty: "+specName+" | Visit: "+vtName+"\n\n";
+  soap += "SUBJECTIVE:\n";
+  soap += "Duration: "+dur+"\n";
+  soap += "Symptoms: "+sympStr+"\n";
+  if(negStr) soap += "Relevant negatives: "+negStr.replace("Denies ","")+"\n";
+  soap += "\nOBJECTIVE:\n";
+  soap += "Examination: "+examStr+"\n";
+  if(redStr) soap += "Cautions: "+redStr+"\n";
+  soap += "\nASSESSMENT:\n"+impr+"\n\n";
+  soap += "PLAN:\n"+planStr+"\n";
+  if(fup != "[not documented]") soap += "Follow-up: "+fup+"\n";
+
+  // Generate Follow-up
+  var fupNote = dcl+"FOLLOW-UP NOTE\n";
+  fupNote += "Specialty: "+specName+" | Condition: "+vtName+"\n\n";
+  fupNote += "Interval: "+fup+"\n";
+  fupNote += "Current symptoms: "+sympStr+"\n";
+  fupNote += "Examination: "+examStr+"\n";
+  if(redStr) fupNote += "Red flags discussed: "+redStr+"\n";
+  fupNote += "Impression: "+impr+"\n";
+  fupNote += "Plan: "+planStr+"\n";
+
+  // Generate Referral
+  var refNote = dcl;
+  if(refReason.trim()){
+    refNote += "REFERRAL LETTER\n\n";
+    refNote += "To: "+(refSpec||"[specialty]")+"\n";
+    refNote += "Reason: "+refReason+"\n\n";
+    refNote += "History: "+sympStr+" / "+dur+"\n";
+    refNote += "Relevant negatives: "+(negStr||"None documented")+"\n";
+    refNote += "Exam findings: "+examStr+"\n";
+    refNote += "Working impression: "+impr+"\n";
+    refNote += "Current plan: "+planStr+"\n";
+    refNote += "Please see and advise.\n";
+  } else {
+    refNote += "REFERRAL LETTER (placeholder)\n\n";
+    refNote += "Enter a reason for referral in the optional Referral section above to generate a complete letter.\n";
   }
 
-  document.getElementById("speedOutputBox").innerHTML=o;
+  // Generate Instructions
+  var inst = dcl+"PATIENT INSTRUCTIONS\n\n";
+  inst += "Diagnosis/Impression: "+impr+"\n\n";
+  inst += "Follow-up interval: "+fup+"\n\n";
+  inst += "Plan:\n";
+  var plines = planStr.split("; ");
+  for(var i=0;i<plines.length;i++){inst += "- "+plines[i]+"\n"}
+  if(redStr) inst += "\nRed flags to watch for:\n- "+redSel.join("\n- ")+"\n";
+  inst += "\nPlease return if symptoms worsen or do not improve as expected.\n";
+
+  // Store outputs
+  window._speedOutputs = {emr:emr, soap:soap, fup:fupNote, ref:refNote, inst:inst};
+
+  // Show EMR by default
+  document.getElementById("speedOutputBox").innerHTML = emr;
+
+  // Set active tab to EMR
+  var parent = document.querySelector("#page-speed .output-header");
+  if(parent){
+    var tabs = parent.querySelectorAll(".output-tab");
+    for(var i=0;i<tabs.length;i++){tabs[i].classList.remove("active")}
+    if(tabs[0]) tabs[0].classList.add("active");
+  }
+  updateSelectedCount();
 }
 function clearSpeed(){
   document.getElementById("speedDuration").value="";
   document.getElementById("speedImpression").value="";
   document.getElementById("speedPlan").value="";
   document.getElementById("speedFollowup").value="";
+  document.getElementById("speedReferralReason").value="";
+  document.getElementById("speedReferralSpecialty").value="";
+  document.getElementById("speedSearch").value="";
+  customItems = {symptom:[],neg:[],exam:[],plan:[]};
   var containers=["speedSymptoms","speedNegs","speedExam","speedRedFlags","speedPlans"];
   for(var i=0;i<containers.length;i++){
     var c=document.getElementById(containers[i]);
     if(c){var chips=c.querySelectorAll(".chip.selected");for(var j=0;j<chips.length;j++){chips[j].classList.remove("selected")}}
   }
-  document.getElementById("speedOutputBox").innerHTML="<span class=\"placeholder\">Select quick phrases or enter short notes to generate output.</span>";
+  document.getElementById("speedOutputBox").innerHTML="<span class=\"placeholder\">Select a specialty and visit type, choose findings, then click Generate Note.</span>";
+  updateSelectedCount();
+}
+
+}
+function populateSpeedSpecialty(){
+  var s = document.getElementById("speedSpecialty");
+  if(!s || s.options.length > 1) return;
+  s.innerHTML = "<option value=''>Select specialty</option>";
+  var keys = Object.keys(VISIT_LIBRARY);
+  var sorted = keys.sort();
+  for(var i=0;i<sorted.length;i++){
+    var opt = document.createElement("option");
+    opt.value = sorted[i];
+    opt.textContent = sorted[i];
+    s.appendChild(opt);
+  }
 }
 function buildPresets(){var c=document.getElementById("presetsContent");if(!c)return;var h="";var k=Object.keys(SD);for(var i=0;i<k.length;i++){var s=SD[k[i]];h+="<div class=\"presets-spec\"><h2>"+s.name+"</h2>";var t=Object.keys(s.types);for(var j=0;j<t.length;j++){var tp=t[j];var p=s.types[tp];h+="<div class=\"presets-card\">";h+="<h3>"+tp+"</h3>";h+="<ul>";for(var m=0;m<p.length;m++){h+="<li>"+p[m]+"</li>"}h+="</ul></div>"}h+="</div>"}c.innerHTML=h}
 document.addEventListener("DOMContentLoaded",function(){buildPresets();upVT();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
