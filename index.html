@@ -231,6 +231,14 @@ footer .footer-links a{font-weight:500}
 </div>
 </div>
 
+<div id="v2SearchArea" style="display:none">
+<div style="background:var(--white);border:2px solid var(--primary);border-radius:var(--radius-xl);padding:18px;margin-bottom:16px">
+  <div style="font-size:14px;font-weight:700;color:var(--gray-800);margin-bottom:8px">Search complaint or diagnosis</div>
+  <input id="v2Search" type="text" placeholder="Try: fever, diabetes, back pain, red eye, antenatal, anxiety, pediatric fever, rash, ear pain" style="width:100%;padding:11px 14px;border:2px solid var(--gray-300);border-radius:10px;font-size:14px;font-family:inherit;margin-bottom:6px" oninput="v2searchComplaint(this.value)">
+  <div style="font-size:10px;color:var(--gray-400);margin-bottom:4px">Search selects the workflow. It does not search individual chips.</div>
+  <div id="v2SearchResults" style="display:none;background:#fff;border:1px solid var(--gray-300);border-radius:10px;padding:6px;margin-top:2px;max-height:280px;overflow-y:auto;font-size:13px;box-shadow:var(--shadow-md)"></div>
+</div>
+</div>
 <div class="speed-mode-box">
 <div class="two-col" style="gap:24px">
 <div>
@@ -253,11 +261,7 @@ footer .footer-links a{font-weight:500}
 
 <!-- V2-only UI elements (hidden by default, shown by v2 feature flag) -->
 <div id="v2Features" style="display:none">
-<div class="speed-section">
-  <div class="speed-section-title">Search complaint or diagnosis</div>
-  <input id="v2Search" type="text" placeholder="e.g. fever, back pain, red eye, diabetes" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px" oninput="v2searchComplaint(this.value)">
-  <div id="v2SearchResults" style="display:none;background:#fff;border:1px solid var(--gray-300);border-radius:8px;padding:8px;margin-top:4px;max-height:220px;overflow-y:auto;font-size:12px"></div>
-</div>
+
 <div class="speed-section" id="v2HistorySection" style="display:none">
   <div class="speed-section-title" style="cursor:pointer" onclick="toggleCollapse('v2HistoryContent')">
     Specialty history prompts <span style="font-size:10px;color:var(--gray-400)">(click to expand)</span>
