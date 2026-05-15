@@ -40,16 +40,37 @@ Tested locally at `http://localhost:8000/?data=v1`.
 
 ## Live source verification result
 
-Pending final verification after push.
+Verified at `https://hosxam.github.io/najm-ai-clinicnote/?v=searchchips-final`.
+
+The first fetch after push still returned the previous GitHub Pages HTML. The second fetch returned the updated build.
+
+- `v2WorkflowSearchInput` present: yes
+- `v2SearchArea` present: yes
+- `v2_workflow_ui_2.js?v=searchchips-final` present: yes
+- `GENERATED_CLINICAL_DATA.js` present: yes
+- `Build: searchchips-final` present: yes
+- `Najm AI ClinicNote build searchchips-final` source comment present: yes
 
 ## Live rendered test result
 
-Pending final verification after push.
+Verified rendered page at `https://hosxam.github.io/najm-ai-clinicnote/?v=searchchips-final`.
+
+- Data mode: `v2`
+- Build marker visible: yes
+- Search input visible: yes
+- `#v2WorkflowSearchInput` exists: yes
+- `#v2SearchArea` exists: yes
+- Diabetes search works: yes
+- Visible chip buttons: yes, 35 buttons for Diabetes follow-up
+- Selected chips update summary: yes
+- Generate Note uses selected chips: yes
+- Output tabs differ: yes
+- Console errors: none
 
 ## Commit hash
 
-Pending.
+Deployment commit: `5186ce1`
 
 ## Git status
 
-Pending final check.
+Tracked files clean after report commit. Two pre-existing untracked local scratch files remain outside the deployment scope: `temp_check.js` and `test_v2_fix.js`.
