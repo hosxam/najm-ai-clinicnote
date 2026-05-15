@@ -299,78 +299,111 @@ function v2fillChipsWithWarnings(containerId, chipGroupName, v2wfData) {
 }
 
 // ---- Enhanced LoadSpeedVisit for V2 ----
-var _origLoadSpeedVisit = loadSpeedVisit;
-loadSpeedVisit = function() {
-  _origLoadSpeedVisit();
-  // If v2, enhance: show investigations, history layout, chip warnings, improved summary
-  if (window.CLINICNOTE_DATA_MODE !== "v2") {
-    // Hide v2-only elements
-    var invSec = document.getElementById("speedInvestigationsSection");
-    if (invSec) invSec.style.display = "none";
+// loadSpeedVisit is defined later (in index.html inline script) so we
+// cannot capture _origLoadSpeedVisit at parse time. Instead we poll
+// until it exists, then patch it.
+(function v2patchLoadSpeedVisit() {
+  if (typeof loadSpeedVisit !== "function") {
+    setTimeout(v2patchLoadSpeedVisit, 50);
     return;
   }
+  var _origLoadSpeedVisit = loadSpeedVisit;
+  loadSpeedVisit = function() {
+    _origLoadSpeedVisit();
+    // If v2, enhance: show investigations, history layout, chip warnings, improved summary
+    if (window.CLINICNOTE_DATA_MODE !== "v2") {
+      // Hide v2-only elements
+      var invSec = document.getElementById("speedInvestigationsSection");
+      if (invSec) invSec.style.display = "none";
+      return;
+    }
 
-  var vt = document.getElementById("speedVisitType").value;
-  var specKey = currentSpecialty;
-  if (!vt || !specKey) return;
+    var vt = document.getElementById("speedVisitType").value;
+    var specKey = currentSpecialty;
+    if (!vt || !specKey) return;
 
-  // Use raw v2 data for richer chips
-  var v2data = window.NAJM_CLINICAL_DATA;
-  if (!v2data || !v2data.specialties) return;
+    // Use legacy library for chips (holds actual chip text)
+    var lib = window.ACTIVE_VISIT_LIBRARY;
+    if (!lib || !lib[specKey] || !lib[specKey][vt]) return;
+    var libData = lib[specKey][vt];
 
-  // Find v2 specialty and workflow
-  var v2Spec = null;
-  var v2Wf = null;
-  for (var si = 0; si < v2data.specialties.length; si++) {
-    var s = v2data.specialties[si];
-    if ((s.display_name || s.specialty_id) === specKey) {
-      v2Spec = s;
-      var wfs = s.workflows || [];
-      for (var wi = 0; wi < wfs.length; wi++) {
-        if (wfs[wi].display_name === vt) {
-          v2Wf = wfs[wi];
+    // Use v2 data for enhancements (history layout, warnings, investigations)
+    var v2data = window.NAJM_CLINICAL_DATA;
+    var v2Spec = null;
+    var v2Wf = null;
+    if (v2data && v2data.specialties) {
+      for (var si = 0; si < v2data.specialties.length; si++) {
+        var s = v2data.specialties[si];
+        if ((s.display_name || s.specialty_id) === specKey) {
+          v2Spec = s;
+          var wfs = s.workflows || [];
+          for (var wi = 0; wi < wfs.length; wi++) {
+            if (wfs[wi].display_name === vt) {
+              v2Wf = wfs[wi];
+              break;
+            }
+          }
           break;
         }
       }
-      break;
     }
-  }
 
-  if (!v2Wf || !v2Wf.chips) return;
+    // Re-fill chips from legacy library data (original fillChips uses d.symptoms,
+    // d.negatives, d.exam, d.redFlags, d.planPhrases)
+    fillChips("speedSymptoms", libData.symptoms || []);
+    fillChips("speedNegs", libData.negatives || []);
+    fillChips("speedExam", libData.exam || []);
+    fillChips("speedRedFlags", libData.redFlags || [], "redflag");
+    fillChips("speedPlans", libData.planPhrases || []);
 
-  // Fill chips using v2 data with warnings
-  v2fillChipsWithWarnings("speedSymptoms", "symptoms", v2Wf.chips);
-  v2fillChipsWithWarnings("speedNegs", "relevant_negatives", v2Wf.chips);
-  v2fillChipsWithWarnings("speedExam", "exam_findings", v2Wf.chips);
-  v2fillChipsWithWarnings("speedRedFlags", "red_flags", v2Wf.chips);
-  v2fillChipsWithWarnings("speedPlans", "plan_phrases", v2Wf.chips);
-
-  // Investigations section
-  var invs = v2Wf.chips.investigations || [];
-  var invSec = document.getElementById("speedInvestigationsSection");
-  var invContainer = document.getElementById("speedInvs");
-  if (invSec && invContainer) {
-    if (invs.length > 0) {
-      invSec.style.display = "block";
-      v2fillChipsWithWarnings("speedInvs", "investigations", v2Wf.chips);
-    } else {
-      invSec.style.display = "none";
+    // Fill investigations using legacy data if available (v2Wf not needed for text)
+    var libInvs = libData.investigations || [];
+    var invSec = document.getElementById("speedInvestigationsSection");
+    var invContainer = document.getElementById("speedInvs");
+    if (invSec && invContainer) {
+      if (libInvs.length > 0) {
+        invSec.style.display = "block";
+        fillChips("speedInvs", libInvs);
+      } else {
+        invSec.style.display = "none";
+      }
     }
-  }
 
-  // Show history layout for v2
-  var layoutId = v2Spec ? (v2Spec.history_layout_id || v2Spec.specialty_id) : specKey;
-  v2showHistoryLayout(layoutId);
+    // Add warnings from v2 data if available (objects with chip_text + warning)
+    if (v2Wf && v2Wf.chips) {
+      v2fillChipsWithWarnings("speedSymptoms", "symptoms", v2Wf.chips);
+      v2fillChipsWithWarnings("speedNegs", "relevant_negatives", v2Wf.chips);
+      v2fillChipsWithWarnings("speedExam", "exam_findings", v2Wf.chips);
+      v2fillChipsWithWarnings("speedRedFlags", "red_flags", v2Wf.chips);
+      v2fillChipsWithWarnings("speedPlans", "plan_phrases", v2Wf.chips);
+      if (invSec && invContainer) {
+        var v2Invs = v2Wf.chips.investigations || [];
+        if (v2Invs.length > 0) {
+          invSec.style.display = "block";
+          v2fillChipsWithWarnings("speedInvs", "investigations", v2Wf.chips);
+        }
+      }
+    }
 
-  // Refresh summary after chip refill
-  updateSelectedCount();
-};
+    // Show history layout for v2
+    var layoutId = v2Spec ? (v2Spec.history_layout_id || v2Spec.specialty_id) : specKey;
+    v2showHistoryLayout(layoutId);
+
+    // Refresh summary after chip refill
+    updateSelectedCount();
+  };
+})();
 
 // ---- V2 Improved Selected Item Summary (showing grouped items) ----
-var _origUpdateSelectedCount = updateSelectedCount;
-updateSelectedCount = function() {
-  _origUpdateSelectedCount();
-  if (window.CLINICNOTE_DATA_MODE !== "v2") return;
+(function v2patchUpdateSelectedCount() {
+  if (typeof updateSelectedCount !== "function") {
+    setTimeout(v2patchUpdateSelectedCount, 50);
+    return;
+  }
+  var _origUpdateSelectedCount = updateSelectedCount;
+  updateSelectedCount = function() {
+    _origUpdateSelectedCount();
+    if (window.CLINICNOTE_DATA_MODE !== "v2") return;
   var summary = document.getElementById("speedSummary");
   if (!summary) return;
   var groups = [
@@ -400,7 +433,8 @@ updateSelectedCount = function() {
   }
   html += "<button class='btn btn-ghost btn-xs' onclick='v2clearAllSelections()' style='margin-left:auto'>Clear All</button>";
   summary.innerHTML = html;
-};
+  };
+})();
 
 function v2clearAllSelections() {
   var ids = ["speedSymptoms","speedNegs","speedExam","speedRedFlags","speedPlans","speedInvs"];
@@ -415,12 +449,17 @@ function v2clearAllSelections() {
 }
 
 // ---- Enhanced GenerateAllOutputs for V2 (includes investigations) ----
-var _origGenerateAllOutputs = generateAllOutputs;
-generateAllOutputs = function() {
-  if (window.CLINICNOTE_DATA_MODE !== "v2") {
-    _origGenerateAllOutputs();
+(function v2patchGenerateAllOutputs() {
+  if (typeof generateAllOutputs !== "function") {
+    setTimeout(v2patchGenerateAllOutputs, 50);
     return;
   }
+  var _origGenerateAllOutputs = generateAllOutputs;
+  generateAllOutputs = function() {
+    if (window.CLINICNOTE_DATA_MODE !== "v2") {
+      _origGenerateAllOutputs();
+      return;
+    }
   // Get selected items
   var selectedSymptoms = getSelectedChips("speedSymptoms");
   var selectedNegs = getSelectedChips("speedNegs");
@@ -526,4 +565,5 @@ generateAllOutputs = function() {
   window._speedOutputs = outputs;
   window._activeSpeedTab = window._activeSpeedTab || "emr";
   renderSpeedOutput(window._activeSpeedTab);
-};
+  };
+})();
