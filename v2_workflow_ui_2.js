@@ -2,36 +2,36 @@
 
 // Init function to show v2 UI elements
 function v2showSearchUI() {
-  if (window.CLINICNOTE_DATA_MODE !== "v2") return;
-  // Show v2 search area (above specialty/visit selectors)
   var v2sa = document.getElementById("v2SearchArea");
-  if (!v2sa) {
-    // Fallback: create search block programmatically if not found in HTML
-    var smBox = document.querySelector(".speed-mode-box");
-    if (smBox) {
-      var fallbackDiv = document.createElement("div");
-      fallbackDiv.id = "v2SearchArea";
-      fallbackDiv.style.display = "block";
-      fallbackDiv.style.cssText = "display:block;background:var(--white);border:2px solid var(--primary);border-radius:var(--radius-xl);padding:18px;margin-bottom:16px";
-      fallbackDiv.innerHTML =
-        '<div style="font-size:14px;font-weight:700;color:var(--gray-800);margin-bottom:8px">Search complaint or diagnosis</div>' +
-        '<input id="v2Search" type="text" placeholder="Try: fever, diabetes, back pain, red eye, antenatal, anxiety" style="width:100%;padding:11px 14px;border:2px solid var(--gray-300);border-radius:10px;font-size:14px;font-family:inherit;margin-bottom:6px" oninput="v2searchComplaint(this.value)">' +
-        '<div style="font-size:10px;color:var(--gray-400);margin-bottom:4px">Search selects the workflow. It does not search individual chips.</div>' +
-        '<div id="v2SearchResults" style="display:none;background:#fff;border:1px solid var(--gray-300);border-radius:10px;padding:6px;margin-top:2px;max-height:280px;overflow-y:auto;font-size:13px"></div>';
-      smBox.parentNode.insertBefore(fallbackDiv, smBox);
-    } else {
-      // Show visible warning if mount fails entirely
-      var page = document.getElementById("page-speed");
-      if (page) {
-        var warnEl = document.createElement("div");
-        warnEl.style.cssText = "background:var(--red-bg);border:1px solid var(--red-border);color:var(--red);padding:10px 14px;border-radius:8px;font-size:12px;font-weight:500;margin-bottom:10px";
-        warnEl.textContent = "v2 search failed to load.";
-        page.insertBefore(warnEl, page.firstChild);
-      }
-    }
-  } else {
-    v2sa.style.display = "block";
+  if (window.CLINICNOTE_DATA_MODE !== "v2") {
+    if (v2sa) v2sa.style.display = "none";
+    return;
   }
+
+  // Show v2 search area above specialty/visit selectors. Keep this
+  // independent from the chip renderer so search and chips cannot
+  // overwrite each other.
+  if (!v2sa) {
+    v2sa = document.createElement("div");
+    v2sa.id = "v2SearchArea";
+  }
+
+  if (!document.getElementById("v2Search")) {
+    v2sa.innerHTML =
+      '<div style="background:var(--white);border:2px solid var(--primary);border-radius:var(--radius-xl);padding:18px;margin-bottom:16px">' +
+      '<div style="font-size:14px;font-weight:700;color:var(--gray-800);margin-bottom:8px">Search complaint or diagnosis</div>' +
+      '<input id="v2Search" type="text" placeholder="Try: fever, diabetes, back pain, red eye, antenatal, anxiety, pediatric fever, rash, ear pain" style="width:100%;padding:11px 14px;border:2px solid var(--gray-300);border-radius:10px;font-size:14px;font-family:inherit;margin-bottom:6px" oninput="v2searchComplaint(this.value)">' +
+      '<div style="font-size:10px;color:var(--gray-400);margin-bottom:4px">Search selects the workflow. It does not search individual chips.</div>' +
+      '<div id="v2SearchResults" style="display:none;background:#fff;border:1px solid var(--gray-300);border-radius:10px;padding:6px;margin-top:2px;max-height:280px;overflow-y:auto;font-size:13px;box-shadow:var(--shadow-md)"></div>' +
+      '</div>';
+  }
+
+  var smBox = document.querySelector(".speed-mode-box");
+  if (smBox && smBox.parentNode && v2sa.nextSibling !== smBox) {
+    smBox.parentNode.insertBefore(v2sa, smBox);
+  }
+  v2sa.style.display = "block";
+
   // Show v2 features within speed content (history prompts, etc.)
   var v2f = document.getElementById("v2Features");
   if (v2f) v2f.style.display = "block";
@@ -42,6 +42,7 @@ v2showSearchUI();
 if (document.readyState !== "complete") {
   document.addEventListener("DOMContentLoaded", v2showSearchUI);
 }
+window.addEventListener("load", v2showSearchUI);
 
 function toggleCollapse(id) {
   var el = document.getElementById(id);

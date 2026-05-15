@@ -15,6 +15,7 @@ Step 3F/3G visible chip regression testing was rerun after restoring a dedicated
 - Browser loaded stale `v2_workflow_ui.js`: no
 - Data mode shows v2: yes
 - Search box visible: yes
+- Search and visible chip groups coexist on default URL: yes
 - Dedicated `#v2ChipGroups` visible after workflow selection: yes
 - `Loaded chips: X` diagnostic visible: yes
 - `_origLoadSpeedVisit is not a function` error: no
@@ -38,6 +39,10 @@ Step 3F/3G visible chip regression testing was rerun after restoring a dedicated
 
 ## Notes From Retest
 
+- Default v2 was rechecked after the search/chips integration fix.
+- The search box remains visible above the specialty selector.
+- `#v2ChipGroups` remains visible below workflow selection/history prompts.
+- Diabetes search selected the workflow and showed 35 visible chip buttons.
 - All 10 workflow searches selected the expected workflow.
 - Dedicated visible v2 chip groups appeared for all tested workflows.
 - Required visible groups appeared:
@@ -78,4 +83,3 @@ Validation was rerun after the fix:
 - `node scripts/validateClinicalData.js`: passed, 15830 passed / 0 failed
 - `node scripts/validateWorkingCsvData.js`: passed, 21 passed / 0 failed / 0 warnings
 - `node scripts/validateGeneratedClinicalData.js`: passed, 51 passed / 0 failed
-
