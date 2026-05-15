@@ -251,6 +251,21 @@ footer .footer-links a{font-weight:500}
 <div id="speedContent" style="display:none">
 <div class="note-phi-warn">Only select findings you personally assessed. Do not enter patient names, IDs, or contact information.</div>
 
+<!-- V2-only UI elements (hidden by default, shown by v2 feature flag) -->
+<div id="v2Features" style="display:none">
+<div class="speed-section">
+  <div class="speed-section-title">Search complaint or diagnosis</div>
+  <input id="v2Search" type="text" placeholder="e.g. fever, back pain, red eye, diabetes" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px" oninput="v2searchComplaint(this.value)">
+  <div id="v2SearchResults" style="display:none;background:#fff;border:1px solid var(--gray-300);border-radius:8px;padding:8px;margin-top:4px;max-height:220px;overflow-y:auto;font-size:12px"></div>
+</div>
+<div class="speed-section" id="v2HistorySection" style="display:none">
+  <div class="speed-section-title" style="cursor:pointer" onclick="toggleCollapse('v2HistoryContent')">
+    Specialty history prompts <span style="font-size:10px;color:var(--gray-400)">(click to expand)</span>
+  </div>
+  <div id="v2HistoryContent" style="display:none;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;padding:10px 12px;margin-top:4px;font-size:11px;line-height:1.5"></div>
+</div>
+</div>
+
 <div class="speed-section">
 <div class="speed-section-title">Duration and Main Concern</div>
 <input id="speedDuration" type="text" placeholder="e.g. 3 days, 2 weeks" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px">
@@ -290,6 +305,12 @@ footer .footer-links a{font-weight:500}
 <div class="speed-section-title">Red Flags and Cautions</div>
 <div class="speed-tip">Considered and discussed with patient</div>
 <div id="speedRedFlags" class="chip-group"></div>
+</div>
+
+<div id="speedInvestigationsSection" class="speed-section" style="display:none">
+<div class="speed-section-title">Investigations / Results Reviewed</div>
+<div class="speed-tip">Select relevant investigations or reviewed results</div>
+<div id="speedInvs" class="chip-group"></div>
 </div>
 
 <div class="speed-section">
@@ -581,6 +602,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
   </script> | 2026-05-14</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
 </footer><script src="./SPEED_LIBRARY_DATA.js"></script>
 <script src="./GENERATED_CLINICAL_DATA.js"></script>
+<script src="./v2_workflow_ui.js"></script>
 <script>
 
 // ---- Feature Flag: Data mode v1/v2 ----
