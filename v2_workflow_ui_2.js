@@ -16,11 +16,11 @@ function v2showSearchUI() {
     v2sa.id = "v2SearchArea";
   }
 
-  if (!document.getElementById("v2Search")) {
+  if (!v2getSearchInput()) {
     v2sa.innerHTML =
       '<div style="background:var(--white);border:2px solid var(--primary);border-radius:var(--radius-xl);padding:18px;margin-bottom:16px">' +
       '<div style="font-size:14px;font-weight:700;color:var(--gray-800);margin-bottom:8px">Search complaint or diagnosis</div>' +
-      '<input id="v2Search" type="text" placeholder="Try: fever, diabetes, back pain, red eye, antenatal, anxiety, pediatric fever, rash, ear pain" style="width:100%;padding:11px 14px;border:2px solid var(--gray-300);border-radius:10px;font-size:14px;font-family:inherit;margin-bottom:6px" oninput="v2searchComplaint(this.value)">' +
+      '<input id="v2WorkflowSearchInput" type="text" placeholder="Try: fever, diabetes, back pain, red eye, antenatal, anxiety, pediatric fever, rash, ear pain" style="width:100%;padding:11px 14px;border:2px solid var(--gray-300);border-radius:10px;font-size:14px;font-family:inherit;margin-bottom:6px" oninput="v2searchComplaint(this.value)">' +
       '<div style="font-size:10px;color:var(--gray-400);margin-bottom:4px">Search selects the workflow. It does not search individual chips.</div>' +
       '<div id="v2SearchResults" style="display:none;background:#fff;border:1px solid var(--gray-300);border-radius:10px;padding:6px;margin-top:2px;max-height:280px;overflow-y:auto;font-size:13px;box-shadow:var(--shadow-md)"></div>' +
       '</div>';
@@ -43,6 +43,10 @@ if (document.readyState !== "complete") {
   document.addEventListener("DOMContentLoaded", v2showSearchUI);
 }
 window.addEventListener("load", v2showSearchUI);
+
+function v2getSearchInput() {
+  return document.getElementById("v2WorkflowSearchInput") || document.getElementById("v2Search");
+}
 
 function toggleCollapse(id) {
   var el = document.getElementById(id);
@@ -197,7 +201,7 @@ function v2selectWorkflow(workflowId) {
           }, 50);
         }
         // Clear search
-        var search = document.getElementById("v2Search");
+        var search = v2getSearchInput();
         if (search) search.value = "";
         var results = document.getElementById("v2SearchResults");
         if (results) { results.style.display = "none"; results.innerHTML = ""; }
@@ -221,7 +225,7 @@ function v2selectWorkflow(workflowId) {
             loadSpeedVisit();
           }
         }, 50);
-        var search2 = document.getElementById("v2Search");
+        var search2 = v2getSearchInput();
         if (search2) search2.value = "";
         var results2 = document.getElementById("v2SearchResults");
         if (results2) { results2.style.display = "none"; results2.innerHTML = ""; }
