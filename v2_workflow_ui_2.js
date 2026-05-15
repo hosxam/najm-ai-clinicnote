@@ -354,7 +354,7 @@ function v2resolveSelectedWorkflow(specKey, visitName) {
 
 function v2countChips(chips) {
   if (!chips) return 0;
-  var groups = ["symptoms", "relevant_negatives", "exam_findings", "red_flags", "investigations", "plan_phrases"];
+  var groups = ["symptoms", "relevant_negatives", "exam_findings", "red_flags", "investigations", "plan_phrases", "follow_up"];
   var total = 0;
   for (var i = 0; i < groups.length; i++) {
     total += (chips[groups[i]] || []).length;
@@ -374,6 +374,125 @@ function v2updateChipDiagnostic(count) {
     summary.parentNode.insertBefore(diag, summary);
   }
   diag.textContent = "Loaded chips: " + count;
+}
+
+function v2ensureChipGroupsArea() {
+  var existing = document.getElementById("v2ChipGroups");
+  if (existing) return existing;
+  var area = document.createElement("div");
+  area.id = "v2ChipGroups";
+  area.style.cssText = "display:block;margin:14px 0 22px";
+
+  var v2Features = document.getElementById("v2Features");
+  if (v2Features && v2Features.parentNode) {
+    v2Features.parentNode.insertBefore(area, v2Features.nextSibling);
+    return area;
+  }
+
+  var content = document.getElementById("speedContent");
+  if (content) {
+    var durationSection = document.getElementById("speedDuration");
+    var anchor = durationSection;
+    while (anchor && !anchor.classList.contains("speed-section")) anchor = anchor.parentNode;
+    if (anchor && anchor.parentNode === content) content.insertBefore(area, anchor);
+    else content.insertBefore(area, content.firstChild);
+  }
+  return area;
+}
+
+function v2setLegacyChipSectionsVisible(visible) {
+  var ids = [
+    "speedSymptomSection",
+    "speedNegSection",
+    "speedExamSection",
+    "speedRedFlagSection",
+    "speedInvestigationsSection",
+    "speedPlanSection"
+  ];
+  for (var i = 0; i < ids.length; i++) {
+    var el = document.getElementById(ids[i]);
+    if (el) el.style.display = visible ? "" : "none";
+  }
+}
+
+function v2renderChipButton(chip, group, containerId) {
+  var chipText = typeof chip === "string" ? chip : (chip.chip_text || "");
+  if (!chipText) return null;
+  var warning = typeof chip === "object" ? (chip.warning || "") : "";
+  var b = document.createElement("button");
+  b.className = "chip" + (group === "red_flags" ? " chip-redflag" : "");
+  b.type = "button";
+  b.textContent = chipText;
+  b.setAttribute("data-name", chipText.toLowerCase());
+  b.setAttribute("data-container", containerId);
+  b.setAttribute("data-v2-group", group);
+  if (warning) {
+    b.title = warning;
+    b.style.textDecoration = "underline dotted";
+    b.style.textUnderlineOffset = "2px";
+  }
+  b.onclick = function() {
+    this.classList.toggle("selected");
+    updateSelectedCount();
+  };
+  return b;
+}
+
+function v2renderVisibleChipGroups(chips) {
+  var area = v2ensureChipGroupsArea();
+  if (!area) return;
+  area.innerHTML = "";
+  area.style.display = "block";
+  v2setLegacyChipSectionsVisible(false);
+
+  var groups = [
+    { key: "symptoms", label: "Symptoms", containerId: "speedSymptoms" },
+    { key: "relevant_negatives", label: "Relevant negatives", containerId: "speedNegs" },
+    { key: "exam_findings", label: "Exam findings", containerId: "speedExam" },
+    { key: "red_flags", label: "Red flags", containerId: "speedRedFlags" },
+    { key: "investigations", label: "Investigations / results reviewed", containerId: "speedInvs" },
+    { key: "plan_phrases", label: "Plan phrases", containerId: "speedPlans" },
+    { key: "follow_up", label: "Follow-up phrases", containerId: "speedFollowupChips" }
+  ];
+
+  for (var g = 0; g < groups.length; g++) {
+    var cfg = groups[g];
+    var list = chips && chips[cfg.key] ? chips[cfg.key] : [];
+    var section = document.createElement("div");
+    section.className = "speed-section";
+    section.setAttribute("data-v2-chip-section", cfg.key);
+    section.style.marginBottom = "18px";
+
+    var title = document.createElement("div");
+    title.className = "speed-section-title";
+    title.textContent = cfg.label;
+    section.appendChild(title);
+
+    var groupEl = document.createElement("div");
+    groupEl.className = "chip-group";
+    groupEl.setAttribute("data-container", cfg.containerId);
+    for (var i = 0; i < list.length; i++) {
+      var btn = v2renderChipButton(list[i], cfg.key, cfg.containerId);
+      if (btn) groupEl.appendChild(btn);
+    }
+    if (!groupEl.children.length) {
+      var empty = document.createElement("div");
+      empty.style.cssText = "font-size:11px;color:var(--gray-400);font-style:italic;margin-bottom:10px";
+      empty.textContent = "No quick chips configured for this group.";
+      groupEl.appendChild(empty);
+    }
+    section.appendChild(groupEl);
+    area.appendChild(section);
+  }
+}
+
+function v2getSelectedChips(containerId) {
+  var area = document.getElementById("v2ChipGroups");
+  if (!area) return [];
+  var chips = area.querySelectorAll('.chip.selected[data-container="' + containerId + '"]');
+  var out = [];
+  for (var i = 0; i < chips.length; i++) out.push(chips[i].textContent);
+  return out;
 }
 
 // ---- Enhanced LoadSpeedVisit for V2 ----
@@ -410,6 +529,8 @@ function v2updateChipDiagnostic(count) {
     var v2Spec = resolved.specialty;
     var chips = resolved.chips;
 
+    v2renderVisibleChipGroups(chips);
+
     v2fillChipsWithWarnings("speedSymptoms", "symptoms", chips);
     v2fillChipsWithWarnings("speedNegs", "relevant_negatives", chips);
     v2fillChipsWithWarnings("speedExam", "exam_findings", chips);
@@ -440,6 +561,22 @@ function v2updateChipDiagnostic(count) {
   };
 })();
 
+// ---- V2 Selected Chip Source ----
+(function v2patchGetSelectedChips() {
+  if (typeof getSelectedChips !== "function") {
+    setTimeout(v2patchGetSelectedChips, 50);
+    return;
+  }
+  var _origGetSelectedChips = getSelectedChips;
+  getSelectedChips = function(containerId) {
+    if (window.CLINICNOTE_DATA_MODE === "v2") {
+      var v2Selected = v2getSelectedChips(containerId);
+      if (v2Selected.length || document.getElementById("v2ChipGroups")) return v2Selected;
+    }
+    return _origGetSelectedChips(containerId);
+  };
+})();
+
 // ---- V2 Improved Selected Item Summary (showing grouped items) ----
 (function v2patchUpdateSelectedCount() {
   if (typeof updateSelectedCount !== "function") {
@@ -458,20 +595,25 @@ function v2updateChipDiagnostic(count) {
     { id: "speedExam", label: "Exam" },
     { id: "speedRedFlags", label: "Red flags" },
     { id: "speedInvs", label: "Investigations" },
-    { id: "speedPlans", label: "Plans" }
+    { id: "speedPlans", label: "Plans" },
+    { id: "speedFollowupChips", label: "Follow-up" }
   ];
   var total = 0;
   var html = "";
   for (var g = 0; g < groups.length; g++) {
-    var container = document.getElementById(groups[g].id);
-    if (!container) continue;
-    var selected = container.querySelectorAll(".chip.selected");
-    if (selected.length === 0) continue;
     var names = [];
-    for (var s = 0; s < selected.length; s++) {
-      names.push(selected[s].textContent);
+    if (document.getElementById("v2ChipGroups")) {
+      names = v2getSelectedChips(groups[g].id);
+    } else {
+      var container = document.getElementById(groups[g].id);
+      if (!container) continue;
+      var selected = container.querySelectorAll(".chip.selected");
+      for (var s = 0; s < selected.length; s++) {
+        names.push(selected[s].textContent);
+      }
     }
-    total += selected.length;
+    if (names.length === 0) continue;
+    total += names.length;
     html += "<span><strong>" + groups[g].label + ":</strong> " + names.join(", ") + "</span>";
   }
   if (total === 0) {
@@ -483,7 +625,7 @@ function v2updateChipDiagnostic(count) {
 })();
 
 function v2clearAllSelections() {
-  var ids = ["speedSymptoms","speedNegs","speedExam","speedRedFlags","speedPlans","speedInvs"];
+  var ids = ["speedSymptoms","speedNegs","speedExam","speedRedFlags","speedPlans","speedInvs","speedFollowupChips"];
   for (var i = 0; i < ids.length; i++) {
     var c = document.getElementById(ids[i]);
     if (c) {
@@ -491,8 +633,26 @@ function v2clearAllSelections() {
       for (var j = 0; j < sel.length; j++) { sel[j].classList.remove("selected"); }
     }
   }
+  var area = document.getElementById("v2ChipGroups");
+  if (area) {
+    var v2sel = area.querySelectorAll(".chip.selected");
+    for (var k = 0; k < v2sel.length; k++) { v2sel[k].classList.remove("selected"); }
+  }
   updateSelectedCount();
 }
+
+// Keep the existing Clear All button behavior aligned with the dedicated v2 chips.
+(function v2patchClearSpeed() {
+  if (typeof clearSpeed !== "function") {
+    setTimeout(v2patchClearSpeed, 50);
+    return;
+  }
+  var _origClearSpeed = clearSpeed;
+  clearSpeed = function() {
+    _origClearSpeed();
+    if (window.CLINICNOTE_DATA_MODE === "v2") v2clearAllSelections();
+  };
+})();
 
 // ---- Enhanced GenerateAllOutputs for V2 (includes investigations) ----
 (function v2patchGenerateAllOutputs() {
@@ -513,11 +673,13 @@ function v2clearAllSelections() {
   var selectedRedFlags = getSelectedChips("speedRedFlags");
   var selectedInvs = getSelectedChips("speedInvs");
   var selectedPlans = getSelectedChips("speedPlans");
+  var selectedFollowUps = v2getSelectedChips("speedFollowupChips");
 
   var duration = document.getElementById("speedDuration").value.trim();
   var impression = document.getElementById("speedImpression").value.trim();
   var plan = document.getElementById("speedPlan").value.trim();
   var followup = document.getElementById("speedFollowup").value.trim();
+  if (!followup && selectedFollowUps.length) followup = selectedFollowUps.join(", ");
   var refReason = document.getElementById("speedReferralReason").value.trim();
   var refSpecialty = document.getElementById("speedReferralSpecialty").value.trim();
   var specName = currentSpecialty;
