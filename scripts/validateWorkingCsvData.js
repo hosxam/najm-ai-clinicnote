@@ -45,14 +45,32 @@ function parseCSV(filePath) {
   if (lines.length === 0) return { rows: [], headers: [] };
   const headers = lines[0].split(',').map(h => h.trim().replace(/^"/, '').replace(/"$/, ''));
   const rows = lines.slice(1).map(line => {
-    // Handle quoted CSV fields
     const values = [];
     let current = '';
     let inQuotes = false;
-    for (const ch of line) {
-      if (ch === '"') inQuotes = !inQuotes;
-      else if (ch === ',' && !inQuotes) { values.push(current); current = ''; }
-      else current += ch;
+    let i = 0;
+    while (i < line.length) {
+      const ch = line[i];
+      const next = i + 1 < line.length ? line[i + 1] : '';
+      if (ch === '"') {
+        if (inQuotes && next === '"') {
+          current += '"';
+          i += 2;
+          continue;
+        } else {
+          inQuotes = !inQuotes;
+          i += 1;
+          continue;
+        }
+      } else if (ch === ',' && !inQuotes) {
+        values.push(current);
+        current = '';
+        i += 1;
+        continue;
+      } else {
+        current += ch;
+        i += 1;
+      }
     }
     values.push(current);
     const obj = {};
@@ -330,6 +348,51 @@ for (const es of expectedSpecialties) {
     `Specialty "${es}" has chips`,
     chipsBySpecialty[es] ? `${chipsBySpecialty[es]} chips` : '0 chips');
 }
+
+
+
+
+// --- Step 5: medical_report_templates.csv validation ---
+
+console.log('\n=== 5. medical_report_templates.csv validation ===\n');
+
+const rp = path.join(DATA_DIR, 'medical_report_templates.csv');
+if (!fs.existsSync(rp)) {
+  warn('File not found', 'medical_report_templates.csv');
+  PASSED++;
+} else {
+  const rt = parseCSV(rp);
+  console.log('  medical_report_templates.csv: ' + rt.rows.length + ' rows');
+  const req = ['template_id','name','description','type','sections','disclaimer'];
+  let bf = 0, lowSec = 0, missLim = 0, noDisc = 0;
+  for (const r of rt.rows) {
+    for (const f of req) { if (!r[f] || !r[f].trim()) { warn('Blank', r.template_id+'.'+f); bf++; } }
+    const sc = (r.sections||'').match(/"id"/g);
+    const n = sc ? sc.length : 0;
+    if (n < 5) { warn('Few sections', r.template_id+'='+n); lowSec++; }
+    const lc = (r.sections||'').toLowerCase();
+    if (!lc.includes('limit') && !lc.includes('sign') && !lc.includes('rev')) { warn('No limitation', r.template_id); missLim++; }
+    if (!r.disclaimer||!r.disclaimer.trim()) { warn('No disc', r.template_id); noDisc++; }
+  }
+  if (!bf) console.log('  No blank required fields');
+  if (!lowSec) console.log('  All report types have 5+ sections');
+  if (!missLim) console.log('  All report types have limitation/review sections');
+  if (!noDisc) console.log('  All report types have disclaimers');
+  const types = rt.rows.map(r=>r.type).filter(Boolean);
+  ['emr','soap','referral','instructions','fitness_note','discharge','insurance'].forEach(et => {
+    assert(types.includes(et), 'Report type ' + et + ' present');
+  });
+  const bad = ['certified','legally valid','insurance approved','universal standard','diagnosis generated','treatment recommended','fit to work certified'];
+  const allT = rt.rows.map(r=>(r.disclaimer||'')+' '+(r.description||'')).join(' ').toLowerCase();
+  let bf2 = 0, idF = 0;
+  bad.forEach(b => { if (allT.includes(b)) { warn('Bad phrase: '+b,''); bf2++; } });
+  if (!bf2) console.log('  No disallowed phrases in report disclaimers/descriptions');
+  ['MRN','Emirates ID','phone number','patient name'].forEach(p => {
+    if (allT.includes(p.toLowerCase())) { warn('ID phrase: '+p,''); idF++; }
+  });
+  if (!idF) console.log('  No patient identifier phrases in report templates');
+}
+
 
 // ─── Summary ────────────────────────────────────────────────
 
