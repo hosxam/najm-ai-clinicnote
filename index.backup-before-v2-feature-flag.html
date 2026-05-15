@@ -574,71 +574,15 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <a onclick="showPage('safety')">Safety</a>
 <a onclick="showPage('about')">About</a>
 </div>
-&copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.6">Version negative-fix | Data: <span id="dbgDataMode">-</span> |
+&copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.6">Version negative-fix |
   <span id="debugLibrary" style="font-size:11px;color:var(--gray-400)">Library: <span id="dbgLibStatus">checking...</span> | Types: <span id="dbgTypeCount">-</span> | JS: <span id="dbgJsReady">-</span></span>
   <script>
-  (function(){var dbg=document.getElementById("debugLibrary");if(!dbg)return;function upd(){var dm=document.getElementById("dbgDataMode");if(window.CLINICNOTE_DATA_MODE){dm.textContent=window.CLINICNOTE_DATA_MODE;dm.style.color=window.CLINICNOTE_DATA_MODE==="v2"?"#f59e0b":"#22c55e";dm.style.fontWeight="bold"}var s=document.getElementById("dbgLibStatus");var t=document.getElementById("dbgTypeCount");var j=document.getElementById("dbgJsReady");var lib=window.ACTIVE_VISIT_LIBRARY||VISIT_LIBRARY;if(lib){s.textContent="yes";s.style.color="#22c55e";var total=0;for(var k in lib)total+=Object.keys(lib[k]).length;t.textContent=total;t.style.color="#22c55e"}else{s.textContent="no";s.style.color="#ef4444"}if(typeof showPage!=='undefined'){j.textContent="yes";j.style.color="#22c55e"}else{j.textContent="no";j.style.color="#ef4444"}}setTimeout(upd,500);setTimeout(upd,3000);setTimeout(upd,5000)})();
+  (function(){var dbg=document.getElementById("debugLibrary");if(!dbg)return;function upd(){var s=document.getElementById("dbgLibStatus");var t=document.getElementById("dbgTypeCount");var j=document.getElementById("dbgJsReady");if(typeof VISIT_LIBRARY!=='undefined'){s.textContent="yes";s.style.color="#22c55e";var total=0;for(var k in VISIT_LIBRARY)total+=Object.keys(VISIT_LIBRARY[k]).length;t.textContent=total;t.style.color="#22c55e"}else{s.textContent="no";s.style.color="#ef4444"}if(typeof showPage!=='undefined'){j.textContent="yes";j.style.color="#22c55e"}else{j.textContent="no";j.style.color="#ef4444"}}setTimeout(upd,500);setTimeout(upd,3000);setTimeout(upd,5000)})();
   </script> | 2026-05-14</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
-</footer><script src="./SPEED_LIBRARY_DATA.js"></script>
-<script src="./GENERATED_CLINICAL_DATA.js"></script>
-<script>
+</footer><script src="./SPEED_LIBRARY_DATA.js"></script><script>
 
-// ---- Feature Flag: Data mode v1/v2 ----
-function isV2DataEnabled() {
-  return new URLSearchParams(window.location.search).get("data") === "v2";
-}
-window.CLINICNOTE_DATA_MODE = isV2DataEnabled() ? "v2" : "v1";
-
-// ---- Adapter: build old-compatible VISIT_LIBRARY from NAJM_CLINICAL_DATA ----
-function buildV2VisitLibrary() {
-  var lib = {};
-  try {
-    var data = window.NAJM_CLINICAL_DATA;
-    if (!data || !data.specialties || !data.specialties.length) return null;
-    for (var si = 0; si < data.specialties.length; si++) {
-      var spec = data.specialties[si];
-      var specKey = spec.display_name || spec.specialty_id;
-      if (!specKey) continue;
-      lib[specKey] = {};
-      var wfs = spec.workflows || [];
-      for (var wi = 0; wi < wfs.length; wi++) {
-        var wf = wfs[wi];
-        var vtKey = wf.display_name;
-        if (!vtKey) continue;
-        var chips = wf.chips || {};
-        lib[specKey][vtKey] = {
-          symptoms: (chips.symptoms || []).map(function(c){ return c.chip_text; }),
-          negatives: (chips.relevant_negatives || []).map(function(c){ return c.chip_text; }),
-          exam: (chips.exam_findings || []).map(function(c){ return c.chip_text; }),
-          redFlags: (chips.red_flags || []).map(function(c){ return c.chip_text; }),
-          planPhrases: (chips.plan_phrases || []).map(function(c){ return c.chip_text; }),
-          followUp: (chips.follow_up || []).map(function(c){ return c.chip_text; }),
-          investigations: (chips.investigations || []).map(function(c){ return c.chip_text; }),
-          _v2meta: { workflow_id: wf.workflow_id }
-        };
-      }
-    }
-  } catch(e) {
-    console.warn("Najm AI: v2 adapter failed, falling back to v1", e);
-    return null;
-  }
-  return lib;
-}
-
-// ---- Active data source selector ----
-function getActiveVisitLibrary() {
-  if (window.CLINICNOTE_DATA_MODE === "v2" && window.NAJM_CLINICAL_DATA) {
-    var v2lib = buildV2VisitLibrary();
-    if (v2lib) return v2lib;
-  }
-  return window.VISIT_LIBRARY || VISIT_LIBRARY;
-}
-
-window.ACTIVE_VISIT_LIBRARY = getActiveVisitLibrary();
-
-// Build SD from ACTIVE_VISIT_LIBRARY for backward compatibility
+// Build SD from VISIT_LIBRARY for backward compatibility
 var SD=(function(){
-  var tmpLib = window.ACTIVE_VISIT_LIBRARY || VISIT_LIBRARY;
   var map={
     "General Medicine / GP":"gen",
     "Orthopedics / MSK":"ortho",
@@ -647,17 +591,16 @@ var SD=(function(){
     "Dermatology":"derm",
     "OB/GYN":"obgyn",
     "Ophthalmology":"ophtho",
-    "Psychiatry / Behavioral":"psych",
-    "Psychiatry / Mental Health":"psych"
+    "Psychiatry / Behavioral":"psych"
   };
   var rev={};for(var k in map)rev[map[k]]=k;
   var sd={};
   for(var k in map)sd[map[k]]={name:k,types:{}};
-  for(var spec in tmpLib){
+  for(var spec in VISIT_LIBRARY){
     var key=map[spec]||spec.split("/")[0].trim().toLowerCase().replace(/ /g,"");
     if(!sd[key])sd[key]={name:spec,types:{}};
-    for(var vt in tmpLib[spec]){
-      var items=tmpLib[spec][vt];
+    for(var vt in VISIT_LIBRARY[spec]){
+      var items=VISIT_LIBRARY[spec][vt];
       // Build prompts array from symptoms
       sd[key].types[vt]=items.symptoms.slice(0,5).map(function(s){return s+"?";});
     }
@@ -686,9 +629,9 @@ function loadSpeedSpecialty(){
   document.getElementById("speedContent").style.display = "none";
   document.getElementById("speedEmptyState").style.display = "block";
   document.getElementById("speedOutputBox").innerHTML = "<span class='placeholder'>Select a specialty and visit type, choose findings, then click Generate Note.</span>";
-  if(!spec || !window.ACTIVE_VISIT_LIBRARY[spec]) return;
+  if(!spec || !VISIT_LIBRARY[spec]) return;
   currentSpecialty = spec;
-  var types = Object.keys(window.ACTIVE_VISIT_LIBRARY[spec]);
+  var types = Object.keys(VISIT_LIBRARY[spec]);
   for(var i=0;i<types.length;i++){
     var opt = document.createElement("option");
     opt.value = types[i];
@@ -701,7 +644,7 @@ function loadSpeedVisit(){
   var vt = document.getElementById("speedVisitType").value;
   var c = document.getElementById("speedContent");
   var es = document.getElementById("speedEmptyState");
-  if(!vt || !currentSpecialty || !window.ACTIVE_VISIT_LIBRARY[currentSpecialty][vt]){
+  if(!vt || !currentSpecialty || !VISIT_LIBRARY[currentSpecialty][vt]){
     c.style.display = "none";
     es.style.display = "block";
     return;
@@ -709,7 +652,7 @@ function loadSpeedVisit(){
   currentVisitType = vt;
   c.style.display = "block";
   es.style.display = "none";
-  var d = window.ACTIVE_VISIT_LIBRARY[currentSpecialty][vt];
+  var d = VISIT_LIBRARY[currentSpecialty][vt];
   fillChips("speedSymptoms", d.symptoms);
   fillChips("speedNegs", d.negatives);
   fillChips("speedExam", d.exam);
@@ -842,13 +785,13 @@ function copySpeedOutput(){
 }
 
 function generateAllOutputs(){
-  if(!currentSpecialty || !currentVisitType || !window.ACTIVE_VISIT_LIBRARY[currentSpecialty][currentVisitType]){
+  if(!currentSpecialty || !currentVisitType || !VISIT_LIBRARY[currentSpecialty][currentVisitType]){
     document.getElementById("speedOutputBox").innerHTML = "Please select a specialty and visit type first.";
     return;
   }
   var specName = currentSpecialty;
   var vtName = currentVisitType;
-  var d = window.ACTIVE_VISIT_LIBRARY[currentSpecialty][currentVisitType];
+  var d = VISIT_LIBRARY[currentSpecialty][currentVisitType];
   var dur = document.getElementById("speedDuration").value.trim() || "[not documented]";
   var impr = document.getElementById("speedImpression").value.trim() || "[doctor impression not documented]";
   var planTxt = document.getElementById("speedPlan").value.trim() || "[doctor plan not documented]";
@@ -967,7 +910,7 @@ function populateSpeedSpecialty(){
   var s = document.getElementById("speedSpecialty");
   if(!s || s.options.length > 1) return;
   s.innerHTML = "<option value=''>Select specialty</option>";
-  var keys = Object.keys(window.ACTIVE_VISIT_LIBRARY);
+  var keys = Object.keys(VISIT_LIBRARY);
   var sorted = keys.sort();
   for(var i=0;i<sorted.length;i++){
     var opt = document.createElement("option");
