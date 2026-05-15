@@ -606,14 +606,12 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
   </script> | 2026-05-14</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
 </footer><script src="./SPEED_LIBRARY_DATA.js"></script>
 <script src="./GENERATED_CLINICAL_DATA.js"></script>
+<script>
+// ---- Feature Flag: MUST be set before v2_workflow_ui.js loads ----
+window.CLINICNOTE_DATA_MODE = (new URLSearchParams(window.location.search).get("data") === "v2") ? "v2" : "v1";
+</script>
 <script src="./v2_workflow_ui.js"></script>
 <script>
-
-// ---- Feature Flag: Data mode v1/v2 ----
-function isV2DataEnabled() {
-  return new URLSearchParams(window.location.search).get("data") === "v2";
-}
-window.CLINICNOTE_DATA_MODE = isV2DataEnabled() ? "v2" : "v1";
 
 // ---- Adapter: build old-compatible VISIT_LIBRARY from NAJM_CLINICAL_DATA ----
 function buildV2VisitLibrary() {

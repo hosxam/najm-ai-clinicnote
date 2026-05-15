@@ -1,9 +1,9 @@
 // ---- V2 Workflow UI Improvements (behind feature flag) ----
 
-// Show v2 features if data=v2
-(function() {
+// Init function to show v2 UI elements
+function v2showSearchUI() {
   if (window.CLINICNOTE_DATA_MODE !== "v2") return;
-  // Show v2 search area (moved above specialty/visit selectors)
+  // Show v2 search area (above specialty/visit selectors)
   var v2sa = document.getElementById("v2SearchArea");
   if (!v2sa) {
     // Fallback: create search block programmatically if not found in HTML
@@ -11,6 +11,7 @@
     if (smBox) {
       var fallbackDiv = document.createElement("div");
       fallbackDiv.id = "v2SearchArea";
+      fallbackDiv.style.display = "block";
       fallbackDiv.style.cssText = "display:block;background:var(--white);border:2px solid var(--primary);border-radius:var(--radius-xl);padding:18px;margin-bottom:16px";
       fallbackDiv.innerHTML =
         '<div style="font-size:14px;font-weight:700;color:var(--gray-800);margin-bottom:8px">Search complaint or diagnosis</div>' +
@@ -34,7 +35,13 @@
   // Show v2 features within speed content (history prompts, etc.)
   var v2f = document.getElementById("v2Features");
   if (v2f) v2f.style.display = "block";
-})();
+}
+
+// Run now (if DOM is ready) and also after DOMContentLoaded as fallback
+v2showSearchUI();
+if (document.readyState !== "complete") {
+  document.addEventListener("DOMContentLoaded", v2showSearchUI);
+}
 
 function toggleCollapse(id) {
   var el = document.getElementById(id);
