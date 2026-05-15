@@ -1,0 +1,290 @@
+﻿workflow_id,specialty_id,chip_id,group,chip_text,order,search_terms,tags
+derm-rash,Dermatology,derm-rash-s1,symptoms,rash,1,"rash, skin eruption, skin rash",derm
+derm-rash,Dermatology,derm-rash-s2,symptoms,itching,2,"itching, pruritus, itch",derm
+derm-rash,Dermatology,derm-rash-s3,symptoms,pain,3,"pain, sore, tender",derm
+derm-rash,Dermatology,derm-rash-s4,symptoms,burning sensation,4,"burning, stinging",derm
+derm-rash,Dermatology,derm-rash-s5,symptoms,swelling,5,"swelling, edema",derm
+derm-rash,Dermatology,derm-rash-s6,symptoms,fever,6,"fever, pyrexia, temperature",acute,derm
+derm-rash,Dermatology,derm-rash-s7,symptoms,duration documented,7,"duration, how long, when started",general
+derm-rash,Dermatology,derm-rash-s8,symptoms,distribution documented,8,"distribution, location, body areas",derm
+derm-rash,Dermatology,derm-rash-s9,symptoms,new medication exposure,9,"new medication, drug reaction, new drug","derm,pharm"
+derm-rash,Dermatology,derm-rash-s10,symptoms,contact or exposure history,10,"contact history, exposure, allergen, irritant",derm
+derm-rash,Dermatology,derm-rash-s11,symptoms,previous treatments tried,11,"previous treatment, creams, antihistamines",derm
+derm-rash,Dermatology,derm-rash-n12,relevant_negatives,no fever reported,12,"no fever","acute,derm"
+derm-rash,Dermatology,derm-rash-n13,relevant_negatives,no mucosal involvement reported,13,"no mucosal involvement, no oral lesions","derm,high_safety"
+derm-rash,Dermatology,derm-rash-n14,relevant_negatives,no breathing difficulty reported,14,"no breathing difficulty","respiratory,high_safety"
+derm-rash,Dermatology,derm-rash-n15,relevant_negatives,no facial or lip swelling reported,15,"no facial swelling, no lip swelling","derm,high_safety"
+derm-rash,Dermatology,derm-rash-n16,relevant_negatives,no new medication reported,16,"no new medication","derm,pharm"
+derm-rash,Dermatology,derm-rash-n17,relevant_negatives,no sick contacts reported,17,"no sick contacts","infectious,derm"
+derm-rash,Dermatology,derm-rash-n18,relevant_negatives,no pain reported,18,"no pain",general
+derm-rash,Dermatology,derm-rash-e19,exam_findings,rash distribution documented if assessed,19,"rash distribution, body areas affected","derm,exam"
+derm-rash,Dermatology,derm-rash-e20,exam_findings,morphology documented if assessed,20,"morphology, macules, papules, plaques","derm,exam"
+derm-rash,Dermatology,derm-rash-e21,exam_findings,erythema documented if assessed,21,"erythema, redness","derm,exam"
+derm-rash,Dermatology,derm-rash-e22,exam_findings,scaling documented if assessed,22,"scaling, desquamation, flaking","derm,exam"
+derm-rash,Dermatology,derm-rash-e23,exam_findings,vesicles documented if assessed,23,"vesicles, blisters, bullae","derm,exam"
+derm-rash,Dermatology,derm-rash-e24,exam_findings,pustules documented if assessed,24,"pustules, pus-filled lesions","derm,exam"
+derm-rash,Dermatology,derm-rash-e25,exam_findings,excoriations documented if assessed,25,"excoriations, scratch marks","derm,exam"
+derm-rash,Dermatology,derm-rash-e26,exam_findings,mucosal examination documented if assessed,26,"mucosal exam, oral mucosa","derm,exam"
+derm-rash,Dermatology,derm-rash-r27,red_flags,mucosal involvement,27,"mucosal involvement, oral, genital","derm,high_safety"
+derm-rash,Dermatology,derm-rash-r28,red_flags,facial or lip swelling,28,"facial swelling, lip swelling, periorbital","derm,high_safety"
+derm-rash,Dermatology,derm-rash-r29,red_flags,breathing difficulty,29,"breathing difficulty, respiratory distress","respiratory,high_safety"
+derm-rash,Dermatology,derm-rash-r30,red_flags,fever with rash,30,"fever with rash, sick with rash","acute,derm,high_safety"
+derm-rash,Dermatology,derm-rash-r31,red_flags,rapidly spreading rash,31,"rapidly spreading, fast progression","derm,high_safety"
+derm-rash,Dermatology,derm-rash-r32,red_flags,severe pain,32,"severe pain","derm,high_safety"
+derm-rash,Dermatology,derm-rash-r33,red_flags,skin peeling or blistering,33,"skin peeling, blistering, Nikolsky sign","derm,high_safety"
+derm-rash,Dermatology,derm-rash-r34,red_flags,immunocompromised state,34,"immunocompromised","chronic,high_safety"
+derm-rash,Dermatology,derm-rash-p35,plan_phrases,management plan discussed,35,"management plan","plan,derm"
+derm-rash,Dermatology,derm-rash-p36,plan_phrases,skin care advice discussed as per clinician plan,36,"skin care, emollients, moisturizer","plan,derm"
+derm-rash,Dermatology,derm-rash-p37,plan_phrases,trigger avoidance discussed as per clinician plan,37,"trigger avoidance, avoid irritants","plan,derm"
+derm-rash,Dermatology,derm-rash-p38,plan_phrases,return precautions discussed,38,"return precautions, warning signs","plan,derm,high_safety"
+derm-rash,Dermatology,derm-rash-p39,plan_phrases,patient questions addressed,39,"questions answered, concerns addressed","plan,derm"
+derm-rash,Dermatology,derm-rash-f40,follow_up,1 week if not improving,40,"1 week, 7 days","followup,derm"
+derm-rash,Dermatology,derm-rash-f41,follow_up,sooner if worsening,41,"sooner, PRN","followup,derm"
+derm-rash,Dermatology,derm-rash-f42,follow_up,sooner if red flag symptoms develop,42,"red flags develop","followup,derm,high_safety"
+derm-acne,Dermatology,derm-acne-s1,symptoms,acne lesions,1,"acne, pimples, spots, zits",derm
+derm-acne,Dermatology,derm-acne-s2,symptoms,facial involvement,2,"facial acne, face","derm,face"
+derm-acne,Dermatology,derm-acne-s3,symptoms,chest or back involvement,3,"chest acne, back acne","derm,trunk"
+derm-acne,Dermatology,derm-acne-s4,symptoms,painful lesions,4,"painful lesions, tender acne, cysts",derm
+derm-acne,Dermatology,derm-acne-s5,symptoms,scarring concern,5,"scarring, acne scars, marks",derm
+derm-acne,Dermatology,derm-acne-s6,symptoms,flare pattern documented,6,"flare pattern, cyclical, stress-related",derm
+derm-acne,Dermatology,derm-acne-s7,symptoms,cosmetic or psychosocial concern documented,7,"cosmetic concern, self-esteem, appearance",derm
+derm-acne,Dermatology,derm-acne-s8,symptoms,previous treatments documented,8,"previous treatment, creams, oral antibiotics, isotretinoin","derm,pharm"
+derm-acne,Dermatology,derm-acne-s9,symptoms,duration documented,9,"duration, how long, since when",general
+derm-acne,Dermatology,derm-acne-s10,symptoms,menstrual or hormonal factors documented if relevant,10,"menstrual flare, hormonal, cycle-related","derm,hormone"
+derm-acne,Dermatology,derm-acne-n11,relevant_negatives,no systemic symptoms reported,11,"no systemic symptoms, well, no fever",general
+derm-acne,Dermatology,derm-acne-n12,relevant_negatives,no new cosmetics or products reported,12,"no new products, no new cosmetics",derm
+derm-acne,Dermatology,derm-acne-n13,relevant_negatives,no significant scarring reported,13,"no scarring",derm
+derm-acne,Dermatology,derm-acne-n14,relevant_negatives,no painful lesions reported,14,"no painful lesions, not tender",derm
+derm-acne,Dermatology,derm-acne-n15,relevant_negatives,no facial swelling reported,15,"no facial swelling",derm
+derm-acne,Dermatology,derm-acne-e16,exam_findings,lesion type documented if assessed,16,"lesion type, comedones, papules, pustules, nodules","derm,exam"
+derm-acne,Dermatology,derm-acne-e17,exam_findings,comedones documented if assessed,17,"comedones, blackheads, whiteheads","derm,exam"
+derm-acne,Dermatology,derm-acne-e18,exam_findings,inflammatory papules and pustules documented if assessed,18,"inflammatory lesions, papules, pustules","derm,exam"
+derm-acne,Dermatology,derm-acne-e19,exam_findings,nodular lesions documented if assessed,19,"nodular lesions, cysts, nodules","derm,exam"
+derm-acne,Dermatology,derm-acne-e20,exam_findings,scarring documented if present,20,"scarring, atrophic, hypertrophic, ice pick","derm,exam"
+derm-acne,Dermatology,derm-acne-e21,exam_findings,distribution documented if assessed,21,"distribution, face, chest, back","derm,exam"
+derm-acne,Dermatology,derm-acne-r22,red_flags,severe cystic acne,22,"severe cystic acne, nodulocystic","derm,high_safety"
+derm-acne,Dermatology,derm-acne-r23,red_flags,rapid worsening,23,"rapid worsening, sudden flare","derm,high_safety"
+derm-acne,Dermatology,derm-acne-r24,red_flags,signs of infection if assessed,24,"signs of infection, hot, red, tender","derm,high_safety"
+derm-acne,Dermatology,derm-acne-r25,red_flags,scarring with cosmetic concern,25,"scarring, cosmetic concern","derm,high_safety"
+derm-acne,Dermatology,derm-acne-p26,plan_phrases,management plan discussed,26,"management plan","plan,derm"
+derm-acne,Dermatology,derm-acne-p27,plan_phrases,skin care advice discussed as per clinician plan,27,"skin care, gentle cleansing, non-comedogenic","plan,derm"
+derm-acne,Dermatology,derm-acne-p28,plan_phrases,dermatology referral discussed if clinically indicated,28,"dermatology referral, specialist","plan,derm"
+derm-acne,Dermatology,derm-acne-p29,plan_phrases,return precautions discussed,29,"return precautions, warning signs","plan,derm,high_safety"
+derm-acne,Dermatology,derm-acne-p30,plan_phrases,patient questions addressed,30,"questions answered, concerns addressed","plan,derm"
+derm-acne,Dermatology,derm-acne-f31,follow_up,4-6 weeks to review response,31,"4-6 weeks","followup,derm"
+derm-acne,Dermatology,derm-acne-f32,follow_up,sooner if worsening,32,"sooner, PRN","followup,derm"
+derm-acne,Dermatology,derm-acne-f33,follow_up,sooner if severe flare or infection signs,33,"severe flare, infection signs","followup,derm,high_safety"
+derm-eczema,Dermatology,derm-eczema-s1,symptoms,itching,1,"itching, pruritus, itchy skin",derm
+derm-eczema,Dermatology,derm-eczema-s2,symptoms,dry skin,2,"dry skin, xerosis",derm
+derm-eczema,Dermatology,derm-eczema-s3,symptoms,recurrent rash,3,"recurrent rash, flare, eczema flare",derm
+derm-eczema,Dermatology,derm-eczema-s4,symptoms,flare pattern documented,4,"flare pattern, frequency, triggers",derm
+derm-eczema,Dermatology,derm-eczema-s5,symptoms,trigger exposure documented,5,"trigger exposure, irritant, allergen, stress",derm
+derm-eczema,Dermatology,derm-eczema-s6,symptoms,atopy history reviewed,6,"atopy history, asthma, hay fever, eczema",derm
+derm-eczema,Dermatology,derm-eczema-s7,symptoms,allergy history reviewed,7,"allergy history, food allergy, environmental","derm,allergy"
+derm-eczema,Dermatology,derm-eczema-s8,symptoms,sleep disturbance due to itch,8,"sleep disturbance, night waking, insomnia",derm
+derm-eczema,Dermatology,derm-eczema-s9,symptoms,duration documented,9,"duration, how long, since when",general
+derm-eczema,Dermatology,derm-eczema-s10,symptoms,previous treatments documented,10,"previous treatment, steroid creams, emollients","derm,pharm"
+derm-eczema,Dermatology,derm-eczema-n11,relevant_negatives,no fever reported,11,"no fever","acute,derm"
+derm-eczema,Dermatology,derm-eczema-n12,relevant_negatives,no discharge reported,12,"no discharge, no oozing, no weeping",derm
+derm-eczema,Dermatology,derm-eczema-n13,relevant_negatives,no rapidly spreading redness reported,13,"no rapidly spreading redness","derm,high_safety"
+derm-eczema,Dermatology,derm-eczema-n14,relevant_negatives,no new trigger identified reported,14,"no new trigger identified",derm
+derm-eczema,Dermatology,derm-eczema-n15,relevant_negatives,no sleep disturbance reported,15,"no sleep disturbance",general
+derm-eczema,Dermatology,derm-eczema-n16,relevant_negatives,no facial involvement reported,16,"no facial involvement, face spared",derm
+derm-eczema,Dermatology,derm-eczema-e17,exam_findings,xerosis documented if assessed,17,"xerosis, dry skin","derm,exam"
+derm-eczema,Dermatology,derm-eczema-e18,exam_findings,erythema documented if assessed,18,"erythema, redness","derm,exam"
+derm-eczema,Dermatology,derm-eczema-e19,exam_findings,excoriations documented if assessed,19,"excoriations, scratch marks","derm,exam"
+derm-eczema,Dermatology,derm-eczema-e20,exam_findings,lichenification documented if assessed,20,"lichenification, skin thickening","derm,exam"
+derm-eczema,Dermatology,derm-eczema-e21,exam_findings,wetness or oozing documented if assessed,21,"wetness, oozing, weeping, exudate","derm,exam"
+derm-eczema,Dermatology,derm-eczema-e22,exam_findings,distribution documented if assessed,22,"distribution, flexural, areas affected","derm,exam"
+derm-eczema,Dermatology,derm-eczema-e23,exam_findings,fissures documented if assessed,23,"fissures, cracks, skin breakdown","derm,exam"
+derm-eczema,Dermatology,derm-eczema-r24,red_flags,suspected infection features,24,"suspected infection, impetiginized, honey crusting","derm,high_safety"
+derm-eczema,Dermatology,derm-eczema-r25,red_flags,severe widespread flare,25,"severe flare, widespread, erythroderma","derm,high_safety"
+derm-eczema,Dermatology,derm-eczema-r26,red_flags,sleep disruption due to itch,26,"sleep disruption, severe itch","derm,high_safety"
+derm-eczema,Dermatology,derm-eczema-r27,red_flags,facial or eye involvement if relevant,27,"facial eczema, eye involvement, periorbital","derm,high_safety"
+derm-eczema,Dermatology,derm-eczema-r28,red_flags,immunocompromised state,28,"immunocompromised","chronic,high_safety"
+derm-eczema,Dermatology,derm-eczema-p29,plan_phrases,management plan discussed,29,"management plan","plan,derm"
+derm-eczema,Dermatology,derm-eczema-p30,plan_phrases,emollient and skin care advice discussed as per clinician plan,30,"emollient use, moisturizing, soap substitute","plan,derm"
+derm-eczema,Dermatology,derm-eczema-p31,plan_phrases,trigger avoidance discussed as per clinician plan,31,"trigger avoidance, irritants, allergens","plan,derm"
+derm-eczema,Dermatology,derm-eczema-p32,plan_phrases,return precautions discussed,32,"return precautions, infection signs","plan,derm,high_safety"
+derm-eczema,Dermatology,derm-eczema-p33,plan_phrases,patient questions addressed,33,"questions answered, concerns addressed","plan,derm"
+derm-eczema,Dermatology,derm-eczema-f34,follow_up,2-4 weeks to review response,34,"2-4 weeks","followup,derm"
+derm-eczema,Dermatology,derm-eczema-f35,follow_up,sooner if worsening,35,"sooner, PRN","followup,derm"
+derm-eczema,Dermatology,derm-eczema-f36,follow_up,sooner if infection or severe flare,36,"infection, severe flare","followup,derm,high_safety"
+derm-fungal-infection,Dermatology,derm-fungal-infection-s1,symptoms,itchy rash,1,"itchy rash, fungal rash, ringworm",derm
+derm-fungal-infection,Dermatology,derm-fungal-infection-s2,symptoms,ring-shaped lesion if described,2,"ring-shaped infection, annular rash, ringworm",derm
+derm-fungal-infection,Dermatology,derm-fungal-infection-s3,symptoms,scaling,3,"scaling, flaking, desquamation",derm
+derm-fungal-infection,Dermatology,derm-fungal-infection-s4,symptoms,groin involvement if described,4,"groin rash, jock itch, tinea cruris",derm
+derm-fungal-infection,Dermatology,derm-fungal-infection-s5,symptoms,foot involvement if described,5,"foot rash, athlete foot, tinea pedis",derm
+derm-fungal-infection,Dermatology,derm-fungal-infection-s6,symptoms,body involvement if described,6,"body rash, tinea corporis, ringworm body",derm
+derm-fungal-infection,Dermatology,derm-fungal-infection-s7,symptoms,scalp involvement if described,7,"scalp rash, tinea capitis",derm
+derm-fungal-infection,Dermatology,derm-fungal-infection-s8,symptoms,duration documented,8,"duration, how long",general
+derm-fungal-infection,Dermatology,derm-fungal-infection-s9,symptoms,contact history documented,9,"contact history, pets, infected people, gym","derm,infectious"
+derm-fungal-infection,Dermatology,derm-fungal-infection-s10,symptoms,previous treatment documented,10,"previous treatment, antifungals, creams","derm,pharm"
+derm-fungal-infection,Dermatology,derm-fungal-infection-s11,symptoms,fever,11,"fever","acute,derm"
+derm-fungal-infection,Dermatology,derm-fungal-infection-n12,relevant_negatives,no fever reported,12,"no fever","acute,derm"
+derm-fungal-infection,Dermatology,derm-fungal-infection-n13,relevant_negatives,no rapidly spreading redness reported,13,"no rapidly spreading redness","derm,high_safety"
+derm-fungal-infection,Dermatology,derm-fungal-infection-n14,relevant_negatives,no pain reported,14,"no pain",general
+derm-fungal-infection,Dermatology,derm-fungal-infection-n15,relevant_negatives,no discharge reported,15,"no discharge, no oozing",derm
+derm-fungal-infection,Dermatology,derm-fungal-infection-n16,relevant_negatives,no facial swelling reported,16,"no facial swelling",derm
+derm-fungal-infection,Dermatology,derm-fungal-infection-n17,relevant_negatives,no similar lesions in contacts reported,17,"no similar lesions in contacts","derm,infectious"
+derm-fungal-infection,Dermatology,derm-fungal-infection-e18,exam_findings,lesion distribution documented if assessed,18,"distribution, body sites, location","derm,exam"
+derm-fungal-infection,Dermatology,derm-fungal-infection-e19,exam_findings,scaling border documented if assessed,19,"scaling border, annular, active edge","derm,exam"
+derm-fungal-infection,Dermatology,derm-fungal-infection-e20,exam_findings,central clearing documented if assessed,20,"central clearing, healing center","derm,exam"
+derm-fungal-infection,Dermatology,derm-fungal-infection-e21,exam_findings,nail changes documented if assessed,21,"nail changes, thickened nail, discolored nail","derm,exam"
+derm-fungal-infection,Dermatology,derm-fungal-infection-e22,exam_findings,scalp examination documented if relevant,22,"scalp exam, hair loss, broken hairs","derm,exam"
+derm-fungal-infection,Dermatology,derm-fungal-infection-i23,investigations,skin scraping result reviewed if done,23,"skin scraping, KOH preparation, fungal microscopy",investigations
+derm-fungal-infection,Dermatology,derm-fungal-infection-i24,investigations,fungal culture result reviewed if done,24,"fungal culture, mycology culture",investigations
+derm-fungal-infection,Dermatology,derm-fungal-infection-r25,red_flags,scalp involvement,25,"scalp involvement, tinea capitis","derm,high_safety"
+derm-fungal-infection,Dermatology,derm-fungal-infection-r26,red_flags,extensive disease,26,"extensive disease, widespread","derm,high_safety"
+derm-fungal-infection,Dermatology,derm-fungal-infection-r27,red_flags,immunocompromised state,27,"immunocompromised","chronic,high_safety"
+derm-fungal-infection,Dermatology,derm-fungal-infection-r28,red_flags,secondary infection concern,28,"secondary infection, bacterial superinfection","derm,high_safety"
+derm-fungal-infection,Dermatology,derm-fungal-infection-p29,plan_phrases,management plan discussed,29,"management plan","plan,derm"
+derm-fungal-infection,Dermatology,derm-fungal-infection-p30,plan_phrases,treatment discussed as per clinician plan,30,"treatment, cream, oral medication","plan,derm"
+derm-fungal-infection,Dermatology,derm-fungal-infection-p31,plan_phrases,hygiene advice discussed,31,"hygiene advice, keep dry, avoid sharing towels","plan,derm"
+derm-fungal-infection,Dermatology,derm-fungal-infection-p32,plan_phrases,return precautions discussed,32,"return precautions, worsening","plan,derm,high_safety"
+derm-fungal-infection,Dermatology,derm-fungal-infection-p33,plan_phrases,patient questions addressed,33,"questions answered, concerns addressed","plan,derm"
+derm-fungal-infection,Dermatology,derm-fungal-infection-f34,follow_up,2-4 weeks to review response,34,"2-4 weeks","followup,derm"
+derm-fungal-infection,Dermatology,derm-fungal-infection-f35,follow_up,sooner if worsening,35,"sooner, PRN","followup,derm"
+derm-fungal-infection,Dermatology,derm-fungal-infection-f36,follow_up,sooner if spreading despite treatment,36,"spreading despite treatment","followup,derm,high_safety"
+derm-urticaria,Dermatology,derm-urticaria-s1,symptoms,hives or wheals,1,"hives, wheals, urticaria, welts",derm
+derm-urticaria,Dermatology,derm-urticaria-s2,symptoms,itching,2,"itching, pruritus",derm
+derm-urticaria,Dermatology,derm-urticaria-s3,symptoms,episodic rash,3,"episodic rash, comes and goes, transient",derm
+derm-urticaria,Dermatology,derm-urticaria-s4,symptoms,swelling,4,"swelling, angioedema, lip swelling","derm,allergy"
+derm-urticaria,Dermatology,derm-urticaria-s5,symptoms,trigger exposure documented,5,"trigger exposure, food, medication, stress","derm,allergy"
+derm-urticaria,Dermatology,derm-urticaria-s6,symptoms,food or medication exposure reviewed,6,"food, medication, new food, new drug","derm,pharm,allergy"
+derm-urticaria,Dermatology,derm-urticaria-s7,symptoms,breathing symptoms reviewed,7,"breathing symptoms, wheeze, tight chest","respiratory"
+derm-urticaria,Dermatology,derm-urticaria-s8,symptoms,lip or tongue swelling reviewed,8,"lip swelling, tongue swelling","derm,allergy,high_safety"
+derm-urticaria,Dermatology,derm-urticaria-s9,symptoms,duration of episodes documented,9,"duration, how long episodes last",general
+derm-urticaria,Dermatology,derm-urticaria-s10,symptoms,previous treatments documented,10,"previous treatment, antihistamines, steroids","derm,pharm"
+derm-urticaria,Dermatology,derm-urticaria-n11,relevant_negatives,no breathing difficulty reported,11,"no breathing difficulty","respiratory,high_safety"
+derm-urticaria,Dermatology,derm-urticaria-n12,relevant_negatives,no lip or tongue swelling reported,12,"no lip swelling, no tongue swelling","derm,allergy,high_safety"
+derm-urticaria,Dermatology,derm-urticaria-n13,relevant_negatives,no dizziness or syncope reported,13,"no dizziness, no fainting","cardiac,neuro,high_safety"
+derm-urticaria,Dermatology,derm-urticaria-n14,relevant_negatives,no fever reported,14,"no fever","acute,derm"
+derm-urticaria,Dermatology,derm-urticaria-n15,relevant_negatives,no facial swelling reported,15,"no facial swelling","derm,allergy"
+derm-urticaria,Dermatology,derm-urticaria-n16,relevant_negatives,no new medication reported,16,"no new medication","derm,pharm"
+derm-urticaria,Dermatology,derm-urticaria-e17,exam_findings,wheals documented if assessed,17,"wheals, hives, urticarial lesions","derm,exam"
+derm-urticaria,Dermatology,derm-urticaria-e18,exam_findings,swelling documented if assessed,18,"swelling, angioedema, periorbital","derm,exam"
+derm-urticaria,Dermatology,derm-urticaria-e19,exam_findings,distribution documented if assessed,19,"distribution, body areas","derm,exam"
+derm-urticaria,Dermatology,derm-urticaria-e20,exam_findings,dermographism documented if assessed,20,"dermographism, skin writing","derm,exam"
+derm-urticaria,Dermatology,derm-urticaria-e21,exam_findings,mucosal examination documented if assessed,21,"mucosal exam, oral mucosa, lips","derm,exam"
+derm-urticaria,Dermatology,derm-urticaria-r22,red_flags,breathing difficulty,22,"breathing difficulty, wheezing","respiratory,high_safety"
+derm-urticaria,Dermatology,derm-urticaria-r23,red_flags,lip or tongue swelling,23,"lip swelling, tongue swelling","derm,allergy,high_safety"
+derm-urticaria,Dermatology,derm-urticaria-r24,red_flags,dizziness or syncope,24,"dizziness, syncope, hypotension","cardiac,neuro,high_safety"
+derm-urticaria,Dermatology,derm-urticaria-r25,red_flags,widespread swelling,25,"widespread swelling, generalized angioedema","derm,allergy,high_safety"
+derm-urticaria,Dermatology,derm-urticaria-p26,plan_phrases,management plan discussed,26,"management plan","plan,derm"
+derm-urticaria,Dermatology,derm-urticaria-p27,plan_phrases,trigger avoidance discussed as per clinician plan,27,"trigger avoidance, food avoidance, allergen avoidance","plan,derm"
+derm-urticaria,Dermatology,derm-urticaria-p28,plan_phrases,allergy action plan discussed if applicable,28,"allergy action plan, adrenaline autoinjector","plan,derm"
+derm-urticaria,Dermatology,derm-urticaria-p29,plan_phrases,return precautions discussed,29,"return precautions, anaphylaxis signs","plan,derm,high_safety"
+derm-urticaria,Dermatology,derm-urticaria-p30,plan_phrases,patient questions addressed,30,"questions answered, concerns addressed","plan,derm"
+derm-urticaria,Dermatology,derm-urticaria-f31,follow_up,1-2 weeks if persistent,31,"1-2 weeks","followup,derm"
+derm-urticaria,Dermatology,derm-urticaria-f32,follow_up,sooner if worsening,32,"sooner, PRN","followup,derm"
+derm-urticaria,Dermatology,derm-urticaria-f33,follow_up,sooner if red flag symptoms develop,33,"red flags develop, breathing difficulty","followup,derm,high_safety"
+derm-wound-review,Dermatology,derm-wound-review-s1,symptoms,wound review,1,"wound review, wound check, injury",derm
+derm-wound-review,Dermatology,derm-wound-review-s2,symptoms,wound location documented,2,"wound location, body site",derm
+derm-wound-review,Dermatology,derm-wound-review-s3,symptoms,wound duration documented,3,"wound duration, how long, age of wound",derm
+derm-wound-review,Dermatology,derm-wound-review-s4,symptoms,pain,4,"pain, wound pain",derm
+derm-wound-review,Dermatology,derm-wound-review-s5,symptoms,discharge,5,"discharge, drainage, pus",derm
+derm-wound-review,Dermatology,derm-wound-review-s6,symptoms,bleeding,6,"bleeding, wound bleeding",derm
+derm-wound-review,Dermatology,derm-wound-review-s7,symptoms,fever,7,"fever, pyrexia","acute,derm"
+derm-wound-review,Dermatology,derm-wound-review-s8,symptoms,mechanism of injury documented if relevant,8,"mechanism, how wound happened",derm
+derm-wound-review,Dermatology,derm-wound-review-s9,symptoms,tetanus status reviewed if relevant,9,"tetanus status, tetanus shot, vaccination","derm,vaccine"
+derm-wound-review,Dermatology,derm-wound-review-n10,relevant_negatives,no fever reported,10,"no fever","acute,derm"
+derm-wound-review,Dermatology,derm-wound-review-n11,relevant_negatives,no spreading redness reported,11,"no spreading redness, no lymphangitis","derm,high_safety"
+derm-wound-review,Dermatology,derm-wound-review-n12,relevant_negatives,no increasing pain reported,12,"no increasing pain, pain stable",derm
+derm-wound-review,Dermatology,derm-wound-review-n13,relevant_negatives,no foul discharge reported,13,"no foul discharge, no purulent drainage",derm
+derm-wound-review,Dermatology,derm-wound-review-n14,relevant_negatives,no bleeding reported,14,"no bleeding, no active bleeding",derm
+derm-wound-review,Dermatology,derm-wound-review-e15,exam_findings,wound size documented if assessed,15,"wound size, dimensions, length, width","derm,exam"
+derm-wound-review,Dermatology,derm-wound-review-e16,exam_findings,wound edges documented if assessed,16,"wound edges, margins, wound bed","derm,exam"
+derm-wound-review,Dermatology,derm-wound-review-e17,exam_findings,surrounding redness documented if assessed,17,"surrounding redness, erythema, cellulitis signs","derm,exam"
+derm-wound-review,Dermatology,derm-wound-review-e18,exam_findings,swelling documented if assessed,18,"swelling, edema, fluctuance","derm,exam"
+derm-wound-review,Dermatology,derm-wound-review-e19,exam_findings,discharge documented if assessed,19,"discharge, exudate, pus, serous","derm,exam"
+derm-wound-review,Dermatology,derm-wound-review-e20,exam_findings,wound bed documentation if assessed,20,"wound bed, granulation, slough, necrotic","derm,exam"
+derm-wound-review,Dermatology,derm-wound-review-e21,exam_findings,surrounding skin condition documented if assessed,21,"surrounding skin, maceration, excoriation","derm,exam"
+derm-wound-review,Dermatology,derm-wound-review-i22,investigations,wound swab result reviewed if done,22,"wound swab, culture, sensitivities",investigations
+derm-wound-review,Dermatology,derm-wound-review-r23,red_flags,spreading redness,23,"spreading redness, lymphangitis","derm,high_safety"
+derm-wound-review,Dermatology,derm-wound-review-r24,red_flags,fever,24,"fever with wound","acute,derm,high_safety"
+derm-wound-review,Dermatology,derm-wound-review-r25,red_flags,increasing pain,25,"increasing pain, worsening pain","derm,high_safety"
+derm-wound-review,Dermatology,derm-wound-review-r26,red_flags,foul discharge,26,"foul discharge, purulent drainage","derm,high_safety"
+derm-wound-review,Dermatology,derm-wound-review-r27,red_flags,necrosis or black discoloration,27,"necrosis, black discoloration, gangrene","derm,high_safety"
+derm-wound-review,Dermatology,derm-wound-review-r28,red_flags,immunocompromised state,28,"immunocompromised","chronic,high_safety"
+derm-wound-review,Dermatology,derm-wound-review-p29,plan_phrases,management plan discussed,29,"management plan","plan,derm"
+derm-wound-review,Dermatology,derm-wound-review-p30,plan_phrases,wound care advice discussed as per clinician plan,30,"wound care, dressing, cleaning","plan,derm"
+derm-wound-review,Dermatology,derm-wound-review-p31,plan_phrases,return precautions discussed,31,"return precautions, infection signs","plan,derm,high_safety"
+derm-wound-review,Dermatology,derm-wound-review-p32,plan_phrases,patient questions addressed,32,"questions answered, concerns addressed","plan,derm"
+derm-wound-review,Dermatology,derm-wound-review-f33,follow_up,1-3 days for wound check,33,"1-3 days, wound check","followup,derm"
+derm-wound-review,Dermatology,derm-wound-review-f34,follow_up,sooner if worsening,34,"sooner, PRN","followup,derm"
+derm-wound-review,Dermatology,derm-wound-review-f35,follow_up,sooner if signs of infection develop,35,"signs of infection, fever, redness","followup,derm,high_safety"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-s1,symptoms,skin lesion,1,"skin lesion, mole, spot, growth",derm
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-s2,symptoms,duration documented,2,"duration, how long, since when",general
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-s3,symptoms,size change,3,"size change, growing, enlarging",derm
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-s4,symptoms,color change,4,"color change, darkening, fading",derm
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-s5,symptoms,bleeding,5,"bleeding, bleeding from lesion",derm
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-s6,symptoms,itching,6,"itching, pruritus",derm
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-s7,symptoms,pain,7,"pain, tender, sore",derm
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-s8,symptoms,non-healing lesion,8,"non-healing, ulcer, not healing",derm
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-s9,symptoms,sun exposure history documented if relevant,9,"sun exposure, UV, sunburn history","derm,lifestyle"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-s10,symptoms,family history documented if relevant,10,"family history, skin cancer, melanoma","derm,genetics"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-n11,relevant_negatives,no bleeding reported,11,"no bleeding",derm
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-n12,relevant_negatives,no itching reported,12,"no itching",derm
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-n13,relevant_negatives,no pain reported,13,"no pain",general
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-n14,relevant_negatives,no size change reported,14,"no size change, stable size",derm
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-n15,relevant_negatives,no color change reported,15,"no color change, stable color",derm
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-n16,relevant_negatives,no ulceration reported,16,"no ulceration, intact skin",derm
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-e17,exam_findings,lesion size documented if assessed,17,"lesion size, measurements, dimensions","derm,exam"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-e18,exam_findings,color documented if assessed,18,"color, pigmentation, variegation","derm,exam"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-e19,exam_findings,border documented if assessed,19,"border, margin, irregular, well-defined","derm,exam"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-e20,exam_findings,asymmetry documented if assessed,20,"asymmetry, shape","derm,exam"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-e21,exam_findings,elevation or thickness documented if assessed,21,"elevation, thickness, raised","derm,exam"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-e22,exam_findings,ulceration documented if assessed,22,"ulceration, erosion, crusting","derm,exam"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-e23,exam_findings,surrounding skin examined if assessed,23,"surrounding skin, satellite lesions","derm,exam"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-r24,red_flags,rapidly changing lesion,24,"rapidly changing, growing fast","derm,high_safety"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-r25,red_flags,bleeding lesion,25,"bleeding lesion, ulceration","derm,high_safety"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-r26,red_flags,irregular border,26,"irregular border, notched border","derm,high_safety"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-r27,red_flags,multiple colors,27,"multiple colors, variegated color","derm,high_safety"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-r28,red_flags,non-healing lesion,28,"non-healing, no improvement","derm,high_safety"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-r29,red_flags,immunocompromised state,29,"immunocompromised","chronic,high_safety"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-p30,plan_phrases,management plan discussed,30,"management plan","plan,derm"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-p31,plan_phrases,dermatology referral discussed as per clinician plan,31,"dermatology referral, mole clinic, skin check","plan,derm"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-p32,plan_phrases,return precautions discussed,32,"return precautions, lesion changes","plan,derm,high_safety"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-p33,plan_phrases,sun protection advice discussed,33,"sun protection, sunscreen, UV protection","plan,derm"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-p34,plan_phrases,patient questions addressed,34,"questions answered, concerns addressed","plan,derm"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-f35,follow_up,3-6 months for monitoring,35,"3-6 months, lesion monitoring","followup,derm"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-f36,follow_up,sooner if change in lesion,36,"sooner, PRN, change in lesion","followup,derm"
+derm-skin-lesion-review,Dermatology,derm-skin-lesion-review-f37,follow_up,sooner if red flag symptoms develop,37,"red flags develop, urgency","followup,derm,high_safety"
+derm-hair-loss,Dermatology,derm-hair-loss-s1,symptoms,hair loss,1,"hair loss, alopecia, balding",derm
+derm-hair-loss,Dermatology,derm-hair-loss-s2,symptoms,diffuse hair shedding,2,"diffuse shedding, telogen effluvium, hair thinning",derm
+derm-hair-loss,Dermatology,derm-hair-loss-s3,symptoms,patchy hair loss,3,"patchy hair loss, alopecia areata, bald patch",derm
+derm-hair-loss,Dermatology,derm-hair-loss-s4,symptoms,scalp itching,4,"scalp itch, scalp pruritus",derm
+derm-hair-loss,Dermatology,derm-hair-loss-s5,symptoms,scalp scaling,5,"scalp scaling, dandruff, seborrhea",derm
+derm-hair-loss,Dermatology,derm-hair-loss-s6,symptoms,recent stress or illness history documented,6,"recent stress, illness, fever, surgery",derm
+derm-hair-loss,Dermatology,derm-hair-loss-s7,symptoms,medication history reviewed,7,"medication review, drug-induced hair loss","derm,pharm"
+derm-hair-loss,Dermatology,derm-hair-loss-s8,symptoms,family history documented if relevant,8,"family history, male pattern baldness, female pattern","derm,genetics"
+derm-hair-loss,Dermatology,derm-hair-loss-s9,symptoms,menstrual or hormonal history documented if relevant,9,"menstrual history, hormonal, PCOS, menopause","derm,hormone"
+derm-hair-loss,Dermatology,derm-hair-loss-s10,symptoms,duration documented,10,"duration, how long, gradual, sudden",general
+derm-hair-loss,Dermatology,derm-hair-loss-n11,relevant_negatives,no scalp pain reported,11,"no scalp pain",derm
+derm-hair-loss,Dermatology,derm-hair-loss-n12,relevant_negatives,no scalp itching reported,12,"no scalp itch, no pruritus",derm
+derm-hair-loss,Dermatology,derm-hair-loss-n13,relevant_negatives,no scalp scaling reported,13,"no scaling, no dandruff",derm
+derm-hair-loss,Dermatology,derm-hair-loss-n14,relevant_negatives,no systemic symptoms reported,14,"no systemic symptoms, well",general
+derm-hair-loss,Dermatology,derm-hair-loss-n15,relevant_negatives,no new medication reported,15,"no new medication","derm,pharm"
+derm-hair-loss,Dermatology,derm-hair-loss-n16,relevant_negatives,no scarring reported if assessed,16,"no scarring, no skin changes","derm,exam"
+derm-hair-loss,Dermatology,derm-hair-loss-e17,exam_findings,scalp examination documented if assessed,17,"scalp exam, scalp inspection","derm,exam"
+derm-hair-loss,Dermatology,derm-hair-loss-e18,exam_findings,patch distribution documented if assessed,18,"patch distribution, pattern, location","derm,exam"
+derm-hair-loss,Dermatology,derm-hair-loss-e19,exam_findings,scaling or inflammation documented if assessed,19,"scaling, inflammation, erythema","derm,exam"
+derm-hair-loss,Dermatology,derm-hair-loss-e20,exam_findings,scarring features documented if assessed,20,"scarring, atrophic skin, follicular dropout","derm,exam"
+derm-hair-loss,Dermatology,derm-hair-loss-e21,exam_findings,hair pull test documented if assessed,21,"hair pull test, traction","derm,exam"
+derm-hair-loss,Dermatology,derm-hair-loss-e22,exam_findings,scalp dermoscopy findings documented if assessed,22,"dermoscopy, trichoscopy","derm,exam"
+derm-hair-loss,Dermatology,derm-hair-loss-i23,investigations,thyroid function results reviewed if done,23,"thyroid function, TSH, T4",investigations
+derm-hair-loss,Dermatology,derm-hair-loss-i24,investigations,iron studies reviewed if done,24,"iron studies, ferritin, iron deficiency",investigations
+derm-hair-loss,Dermatology,derm-hair-loss-i25,investigations,vitamin D level reviewed if done,25,"vitamin D, vit D",investigations
+derm-hair-loss,Dermatology,derm-hair-loss-r26,red_flags,scarring hair loss features,26,"scarring hair loss, atrophic scalp","derm,high_safety"
+derm-hair-loss,Dermatology,derm-hair-loss-r27,red_flags,scalp infection concern,27,"scalp infection, pustules, drainage","derm,high_safety"
+derm-hair-loss,Dermatology,derm-hair-loss-r28,red_flags,sudden patchy loss,28,"sudden patchy loss, alopecia areata","derm,high_safety"
+derm-hair-loss,Dermatology,derm-hair-loss-r29,red_flags,systemic symptoms,29,"systemic symptoms, weight loss, fatigue","derm,high_safety"
+derm-hair-loss,Dermatology,derm-hair-loss-p30,plan_phrases,management plan discussed,30,"management plan","plan,derm"
+derm-hair-loss,Dermatology,derm-hair-loss-p31,plan_phrases,hair care advice discussed as per clinician plan,31,"hair care, gentle handling, avoid heat styling","plan,derm"
+derm-hair-loss,Dermatology,derm-hair-loss-p32,plan_phrases,dermatology referral discussed as per clinician plan,32,"dermatology referral, hair clinic","plan,derm"
+derm-hair-loss,Dermatology,derm-hair-loss-p33,plan_phrases,return precautions discussed,33,"return precautions, worsening","plan,derm,high_safety"
+derm-hair-loss,Dermatology,derm-hair-loss-p34,plan_phrases,patient questions addressed,34,"questions answered, concerns addressed","plan,derm"
+derm-hair-loss,Dermatology,derm-hair-loss-f35,follow_up,3 months to review response,35,"3 months","followup,derm"
+derm-hair-loss,Dermatology,derm-hair-loss-f36,follow_up,sooner if worsening,36,"sooner, PRN","followup,derm"
+derm-hair-loss,Dermatology,derm-hair-loss-f37,follow_up,sooner if new onset patchy loss,37,"new patches, worsening loss","followup,derm,high_safety"
