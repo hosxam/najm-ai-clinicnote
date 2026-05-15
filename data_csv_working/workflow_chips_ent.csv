@@ -1,0 +1,289 @@
+﻿workflow_id,specialty_id,chip_id,group,chip_text,order,search_terms,tags
+ent-ear-pain,ENT,ent-ear-pain-s1,symptoms,ear pain,1,"ear pain, earache, otalgia",ent,ear
+ent-ear-pain,ENT,ent-ear-pain-s2,symptoms,unilateral ear pain,2,"unilateral ear pain, one ear",ent,ear
+ent-ear-pain,ENT,ent-ear-pain-s3,symptoms,bilateral ear pain,3,"bilateral ear pain, both ears",ent,ear
+ent-ear-pain,ENT,ent-ear-pain-s4,symptoms,fever,4,"fever, pyrexia, temperature",acute,ent
+ent-ear-pain,ENT,ent-ear-pain-s5,symptoms,ear discharge,5,"ear discharge, otorrhea, pus from ear",ent,ear
+ent-ear-pain,ENT,ent-ear-pain-s6,symptoms,hearing change,6,"hearing change, hearing loss, muffled hearing",ent,ear
+ent-ear-pain,ENT,ent-ear-pain-s7,symptoms,blocked ear sensation,7,"blocked ear, ear fullness, clogged ear",ent,ear
+ent-ear-pain,ENT,ent-ear-pain-s8,symptoms,itching,8,"itching, itch, pruritus",ent,ear
+ent-ear-pain,ENT,ent-ear-pain-s9,symptoms,recent URTI symptoms,9,"URTI, cold, runny nose",acute,ent
+ent-ear-pain,ENT,ent-ear-pain-s10,symptoms,swimming or water exposure,10,"swimming, water in ear",ent,ear
+ent-ear-pain,ENT,ent-ear-pain-s11,symptoms,duration documented,11,"duration, how long",general
+ent-ear-pain,ENT,ent-ear-pain-s12,symptoms,pain severity documented,12,"pain severity, pain scale, 1-10",general
+ent-ear-pain,ENT,ent-ear-pain-n13,relevant_negatives,no ear discharge reported,13,"no ear discharge, no otorrhea",ent,ear
+ent-ear-pain,ENT,ent-ear-pain-n14,relevant_negatives,no hearing loss reported,14,"no hearing loss, hearing normal",ent,ear
+ent-ear-pain,ENT,ent-ear-pain-n15,relevant_negatives,no dizziness reported,15,"no dizziness, no vertigo",ent,neuro
+ent-ear-pain,ENT,ent-ear-pain-n16,relevant_negatives,no mastoid swelling reported,16,"no mastoid swelling",ent,ear
+ent-ear-pain,ENT,ent-ear-pain-n17,relevant_negatives,no facial weakness reported,17,"no facial weakness, no facial droop",ent,neuro
+ent-ear-pain,ENT,ent-ear-pain-n18,relevant_negatives,no severe headache reported,18,"no severe headache",neuro
+ent-ear-pain,ENT,ent-ear-pain-n19,relevant_negatives,no fever reported,19,"no fever",acute
+ent-ear-pain,ENT,ent-ear-pain-e20,exam_findings,otoscopy documented if assessed,20,"otoscopy, ear canal, tympanic membrane","ent,ear,exam"
+ent-ear-pain,ENT,ent-ear-pain-e21,exam_findings,ear canal appearance documented if assessed,21,"ear canal, external auditory meatus","ent,ear,exam"
+ent-ear-pain,ENT,ent-ear-pain-e22,exam_findings,tympanic membrane appearance documented if assessed,22,"TM, tympanic membrane, eardrum","ent,ear,exam"
+ent-ear-pain,ENT,ent-ear-pain-e23,exam_findings,external ear tenderness documented if assessed,23,"external ear tenderness, pinna tenderness","ent,ear,exam"
+ent-ear-pain,ENT,ent-ear-pain-e24,exam_findings,mastoid tenderness assessed if relevant,24,"mastoid tenderness, mastoiditis","ent,ear,exam"
+ent-ear-pain,ENT,ent-ear-pain-e25,exam_findings,temperature recorded if measured,25,"temperature, fever, febrile","vitals,ent"
+ent-ear-pain,ENT,ent-ear-pain-e26,exam_findings,cervical lymph nodes documented if assessed,26,"cervical LNs, lymphadenopathy","ent,exam"
+ent-ear-pain,ENT,ent-ear-pain-r27,red_flags,mastoid swelling,27,"mastoid swelling, postauricular swelling","ent,ear,high_safety"
+ent-ear-pain,ENT,ent-ear-pain-r28,red_flags,facial weakness,28,"facial weakness, facial palsy","ent,neuro,high_safety"
+ent-ear-pain,ENT,ent-ear-pain-r29,red_flags,severe headache,29,"severe headache","neuro,high_safety"
+ent-ear-pain,ENT,ent-ear-pain-r30,red_flags,persistent high fever,30,"persistent high fever","acute,high_safety"
+ent-ear-pain,ENT,ent-ear-pain-r31,red_flags,immunocompromised state,31,"immunocompromised, immunocompromise","chronic,high_safety"
+ent-ear-pain,ENT,ent-ear-pain-r32,red_flags,severe dizziness or vertigo,32,"severe dizziness, severe vertigo","ent,neuro,high_safety"
+ent-ear-pain,ENT,ent-ear-pain-p33,plan_phrases,management plan discussed,33,"management plan, treatment plan",plan,ent
+ent-ear-pain,ENT,ent-ear-pain-p34,plan_phrases,symptom care discussed as per clinician plan,34,"symptom care, symptomatic treatment",plan,ent
+ent-ear-pain,ENT,ent-ear-pain-p35,plan_phrases,return precautions discussed,35,"return precautions, warning signs","plan,ent,high_safety"
+ent-ear-pain,ENT,ent-ear-pain-p36,plan_phrases,ear care advice discussed,36,"ear care, keep ear dry, water precautions",plan,ent
+ent-ear-pain,ENT,ent-ear-pain-p37,plan_phrases,follow-up arranged,37,"follow-up, next visit",plan,ent
+ent-ear-pain,ENT,ent-ear-pain-p38,plan_phrases,patient questions addressed,38,"questions answered, concerns addressed",plan,ent
+ent-ear-pain,ENT,ent-ear-pain-f39,follow_up,1 week if not improving,39,"1 week, 7 days","followup,ent"
+ent-ear-pain,ENT,ent-ear-pain-f40,follow_up,sooner if worsening,40,"sooner, PRN","followup,ent"
+ent-ear-pain,ENT,ent-ear-pain-f41,follow_up,sooner if red flag symptoms develop,41,"red flags develop","followup,ent,high_safety"
+ent-hearing-complaint,ENT,ent-hearing-complaint-s1,symptoms,reduced hearing,1,"reduced hearing, hearing loss, decreased hearing",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-s2,symptoms,sudden hearing change,2,"sudden hearing loss, acute hearing loss",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-s3,symptoms,gradual hearing change,3,"gradual hearing loss, progressive hearing loss",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-s4,symptoms,unilateral hearing complaint,4,"unilateral hearing loss, one ear",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-s5,symptoms,bilateral hearing complaint,5,"bilateral hearing loss, both ears",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-s6,symptoms,tinnitus,6,"tinnitus, ringing in ears",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-s7,symptoms,ear fullness,7,"ear fullness, blocked ear, aural fullness",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-s8,symptoms,ear pain,8,"ear pain, earache",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-s9,symptoms,ear discharge,9,"ear discharge, otorrhea",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-s10,symptoms,noise exposure history documented,10,"noise exposure, loud noise, occupational noise",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-s11,symptoms,duration documented,11,"duration, how long, since when",general
+ent-hearing-complaint,ENT,ent-hearing-complaint-n12,relevant_negatives,no dizziness reported,12,"no dizziness, no vertigo",ent,neuro
+ent-hearing-complaint,ENT,ent-hearing-complaint-n13,relevant_negatives,no neurological symptoms reported,13,"no neuro symptoms, no focal neurology",neuro
+ent-hearing-complaint,ENT,ent-hearing-complaint-n14,relevant_negatives,no ear pain reported,14,"no ear pain",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-n15,relevant_negatives,no ear discharge reported,15,"no ear discharge",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-n16,relevant_negatives,no recent trauma reported,16,"no trauma, no head injury","ent,neuro"
+ent-hearing-complaint,ENT,ent-hearing-complaint-n17,relevant_negatives,no tinnitus reported,17,"no tinnitus",ent,ear
+ent-hearing-complaint,ENT,ent-hearing-complaint-e18,exam_findings,otoscopy documented if assessed,18,"otoscopy, ear canal, tympanic membrane","ent,ear,exam"
+ent-hearing-complaint,ENT,ent-hearing-complaint-e19,exam_findings,tympanic membrane appearance documented if assessed,19,"TM, eardrum, intact, perforation","ent,ear,exam"
+ent-hearing-complaint,ENT,ent-hearing-complaint-e20,exam_findings,hearing screen or audiology result reviewed if available,20,"hearing test, audiogram, audiology","ent,ear,exam"
+ent-hearing-complaint,ENT,ent-hearing-complaint-e21,exam_findings,whisper test or tuning fork test documented if assessed,21,"tuning fork, Rinne, Weber","ent,exam"
+ent-hearing-complaint,ENT,ent-hearing-complaint-e22,exam_findings,impacted wax documented if present,22,"earwax, cerumen, impacted wax","ent,ear,exam"
+ent-hearing-complaint,ENT,ent-hearing-complaint-r23,red_flags,sudden hearing loss,23,"sudden hearing loss, acute sensorineural","ent,ear,high_safety"
+ent-hearing-complaint,ENT,ent-hearing-complaint-r24,red_flags,neurological symptoms,24,"focal neuro, weak arm, facial numbness","neuro,high_safety"
+ent-hearing-complaint,ENT,ent-hearing-complaint-r25,red_flags,severe vertigo,25,"severe vertigo, disabling dizziness","ent,neuro,high_safety"
+ent-hearing-complaint,ENT,ent-hearing-complaint-r26,red_flags,head trauma,26,"head trauma, head injury","neuro,high_safety"
+ent-hearing-complaint,ENT,ent-hearing-complaint-p27,plan_phrases,management plan discussed,27,"management plan",plan,ent
+ent-hearing-complaint,ENT,ent-hearing-complaint-p28,plan_phrases,hearing aid evaluation discussed as per clinician plan,28,"hearing aid, amplification","plan,ent"
+ent-hearing-complaint,ENT,ent-hearing-complaint-p29,plan_phrases,ENT referral discussed as per clinician plan,29,"ENT referral, specialist referral","plan,ent"
+ent-hearing-complaint,ENT,ent-hearing-complaint-p30,plan_phrases,audiology referral discussed as per clinician plan,30,"audiology, hearing test appointment","plan,ent"
+ent-hearing-complaint,ENT,ent-hearing-complaint-p31,plan_phrases,return precautions discussed,31,"return precautions, warning signs","plan,ent,high_safety"
+ent-hearing-complaint,ENT,ent-hearing-complaint-p32,plan_phrases,patient questions addressed,32,"questions answered, concerns addressed",plan,ent
+ent-hearing-complaint,ENT,ent-hearing-complaint-f33,follow_up,2 weeks to review test results,33,"2 weeks, audiology results","followup,ent"
+ent-hearing-complaint,ENT,ent-hearing-complaint-f34,follow_up,sooner if worsening,34,"sooner, PRN","followup,ent"
+ent-hearing-complaint,ENT,ent-hearing-complaint-f35,follow_up,sooner if sudden change,35,"sudden worsening","followup,ent,high_safety"
+ent-tinnitus,ENT,ent-tinnitus-s1,symptoms,tinnitus,1,"tinnitus, ringing in ears",ent,ear
+ent-tinnitus,ENT,ent-tinnitus-s2,symptoms,unilateral tinnitus,2,"unilateral tinnitus, one ear ringing",ent,ear
+ent-tinnitus,ENT,ent-tinnitus-s3,symptoms,bilateral tinnitus,3,"bilateral tinnitus, both ears ringing",ent,ear
+ent-tinnitus,ENT,ent-tinnitus-s4,symptoms,pulsatile tinnitus,4,"pulsatile tinnitus, pulse-synchronous, whooshing",ent,ear
+ent-tinnitus,ENT,ent-tinnitus-s5,symptoms,hearing change,5,"hearing change, hearing loss, muffled",ent,ear
+ent-tinnitus,ENT,ent-tinnitus-s6,symptoms,dizziness or vertigo,6,"dizziness, vertigo, spinning","ent,neuro"
+ent-tinnitus,ENT,ent-tinnitus-s7,symptoms,noise exposure,7,"noise exposure, loud noise, acoustic trauma",ent,ear
+ent-tinnitus,ENT,ent-tinnitus-s8,symptoms,medication history reviewed if relevant,8,"medication review, ototoxic drugs",ent,ear
+ent-tinnitus,ENT,ent-tinnitus-s9,symptoms,ear fullness,9,"ear fullness, blocked ear",ent,ear
+ent-tinnitus,ENT,ent-tinnitus-s10,symptoms,headache,10,"headache",neuro
+ent-tinnitus,ENT,ent-tinnitus-s11,symptoms,duration documented,11,"duration, how long, when started",general
+ent-tinnitus,ENT,ent-tinnitus-s12,symptoms,impact on sleep or concentration,12,"sleep disturbance, concentration difficulty, quality of life",general
+ent-tinnitus,ENT,ent-tinnitus-e13,exam_findings,otoscopy documented if assessed,13,"otoscopy, ear canal, tympanic membrane","ent,ear,exam"
+ent-tinnitus,ENT,ent-tinnitus-e14,exam_findings,tympanic membrane appearance documented if assessed,14,"TM, eardrum, normal","ent,ear,exam"
+ent-tinnitus,ENT,ent-tinnitus-e15,exam_findings,hearing screen documented if assessed,15,"hearing screen, whispered voice, tuning fork","ent,exam"
+ent-tinnitus,ENT,ent-tinnitus-e16,exam_findings,cervical auscultation for bruit if relevant,16,"carotid bruit, cervical bruit","ent,exam"
+ent-tinnitus,ENT,ent-tinnitus-e17,exam_findings,neurological examination documented if indicated,17,"neuro exam, cranial nerves","ent,neuro,exam"
+ent-tinnitus,ENT,ent-tinnitus-p18,plan_phrases,management plan discussed,18,"management plan",plan,ent
+ent-tinnitus,ENT,ent-tinnitus-p19,plan_phrases,tinnitus management strategies discussed as per clinician plan,19,"tinnitus management, sound therapy, habituation",plan,ent
+ent-tinnitus,ENT,ent-tinnitus-p20,plan_phrases,hearing assessment discussed as per clinician plan,20,"hearing test, audiology",plan,ent
+ent-tinnitus,ENT,ent-tinnitus-p21,plan_phrases,return precautions discussed,21,"return precautions, warning signs","plan,ent,high_safety"
+ent-tinnitus,ENT,ent-tinnitus-p22,plan_phrases,patient questions addressed,22,"questions answered, concerns addressed",plan,ent
+ent-tinnitus,ENT,ent-tinnitus-p23,plan_phrases,stress management discussed if relevant,23,"stress reduction, relaxation","plan,ent"
+ent-tinnitus,ENT,ent-tinnitus-f24,follow_up,4-6 weeks if persistent,24,"4-6 weeks, 1 month","followup,ent"
+ent-tinnitus,ENT,ent-tinnitus-f25,follow_up,sooner if worsening,25,"sooner, PRN","followup,ent"
+ent-tinnitus,ENT,ent-tinnitus-f26,follow_up,sooner if new symptoms develop,26,"new symptoms, new onset","followup,ent,high_safety"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-s1,symptoms,dizziness,1,"dizziness, lightheadedness",ent,neuro
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-s2,symptoms,vertigo,2,"vertigo, spinning sensation","ent,neuro"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-s3,symptoms,spinning sensation,3,"spinning, room spinning","ent,neuro"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-s4,symptoms,lightheadedness,4,"lightheadedness, feeling faint","ent,neuro"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-s5,symptoms,positional symptoms,5,"positional, triggered by head movement, BPPV","ent,neuro"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-s6,symptoms,nausea or vomiting,6,"nausea, vomiting, feeling sick","gi,ent"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-s7,symptoms,hearing symptoms,7,"hearing loss, hearing change","ent,ear"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-s8,symptoms,tinnitus,8,"tinnitus, ringing in ears",ent,ear
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-s9,symptoms,headache,9,"headache",neuro
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-s10,symptoms,duration of episodes documented,10,"duration of episode, seconds, minutes, hours",general,ent
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-s11,symptoms,onset pattern documented,11,"onset, sudden, gradual","general,ent"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-s12,symptoms,history of similar episodes,12,"previous episodes, recurrent, past vertigo","ent,neuro"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-n13,relevant_negatives,no syncope reported,13,"no syncope, no fainting",cardiac,neuro
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-n14,relevant_negatives,no focal neurological symptoms reported,14,"no focal symptoms, no weakness, no numbness",neuro
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-n15,relevant_negatives,no chest pain reported,15,"no chest pain, no CP",cardiac
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-n16,relevant_negatives,no new weakness reported,16,"no new weakness, no limb weakness",neuro
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-n17,relevant_negatives,no headache reported,17,"no headache",neuro
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-n18,relevant_negatives,no palpitations reported,18,"no palpitations",cardiac
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-e19,exam_findings,neurological examination documented if assessed,19,"neurological exam, cranial nerves","neuro,exam"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-e20,exam_findings,ear examination documented if assessed,20,"otoscopy, ear exam","ent,ear,exam"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-e21,exam_findings,positional testing documented if assessed,21,"Dix-Hallpike, positional testing, Hallpike","ent,neuro,exam"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-e22,exam_findings,nystagmus documented if observed,22,"nystagmus, eye movement","neuro,exam"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-e23,exam_findings,gait assessment documented if assessed,23,"gait, walking, tandem gait","neuro,exam"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-e24,exam_findings,balance assessment documented if assessed,24,"balance, Romberg test","neuro,exam"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-e25,exam_findings,hearing screen documented if assessed,25,"hearing screen, tuning fork","ent,exam"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-e26,exam_findings,vitals recorded if measured,26,"vitals, BP, HR","vitals,exam"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-r27,red_flags,focal neurological symptoms,27,"focal neuro symptoms, unilateral weakness","neuro,high_safety"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-r28,red_flags,severe headache,28,"severe headache, thunderclap headache","neuro,high_safety"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-r29,red_flags,new weakness,29,"new weakness, limb weakness","neuro,high_safety"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-r30,red_flags,syncope,30,"syncope, fainting, loss of consciousness","cardiac,high_safety"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-r31,red_flags,chest pain,31,"chest pain, CP","cardiac,high_safety"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-r32,red_flags,persistent vomiting,32,"persistent vomiting, unable to keep fluids","gi,high_safety"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-p33,plan_phrases,management plan discussed,33,"management plan",plan,ent
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-p34,plan_phrases,vestibular rehabilitation discussed as per clinician plan,34,"vestibular rehab, balance exercises",plan,ent
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-p35,plan_phrases,positional maneuver discussed as per clinician plan,35,"Epley maneuver, repositioning","plan,ent"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-p36,plan_phrases,fall prevention advice discussed,36,"fall prevention, safety at home",plan,ent
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-p37,plan_phrases,return precautions discussed,37,"return precautions, warning signs","plan,ent,high_safety"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-p38,plan_phrases,patient questions addressed,38,"questions answered, concerns addressed",plan,ent
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-f39,follow_up,1-2 weeks if not improving,39,"1-2 weeks","followup,ent"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-f40,follow_up,sooner if worsening,40,"sooner, PRN","followup,ent"
+ent-dizziness-vertigo,ENT,ent-dizziness-vertigo-f41,follow_up,sooner if red flag symptoms develop,41,"red flags develop","followup,ent,high_safety"
+ent-nasal-congestion,ENT,ent-nasal-congestion-s1,symptoms,nasal congestion,1,"nasal congestion, blocked nose, stuffy nose",ent,nasal
+ent-nasal-congestion,ENT,ent-nasal-congestion-s2,symptoms,runny nose,2,"runny nose, rhinorrhea, watery discharge",ent,nasal
+ent-nasal-congestion,ENT,ent-nasal-congestion-s3,symptoms,sneezing,3,"sneezing, sneeze",ent,nasal
+ent-nasal-congestion,ENT,ent-nasal-congestion-s4,symptoms,postnasal drip,4,"postnasal drip, catarrh","ent,nasal,throat"
+ent-nasal-congestion,ENT,ent-nasal-congestion-s5,symptoms,reduced smell,5,"reduced smell, anosmia, hyposmia",ent,nasal
+ent-nasal-congestion,ENT,ent-nasal-congestion-s6,symptoms,facial pressure,6,"facial pressure, sinus pressure",ent,nasal
+ent-nasal-congestion,ENT,ent-nasal-congestion-s7,symptoms,allergy triggers,7,"allergy triggers, pollen, dust, pets",ent,nasal
+ent-nasal-congestion,ENT,ent-nasal-congestion-s8,symptoms,seasonal pattern,8,"seasonal, spring, hay fever",ent,nasal
+ent-nasal-congestion,ENT,ent-nasal-congestion-s9,symptoms,eye symptoms,9,"itchy eyes, watery eyes, conjunctival symptoms",ophth,ent
+ent-nasal-congestion,ENT,ent-nasal-congestion-s10,symptoms,duration documented,10,"duration, how long, chronic",general,ent
+ent-nasal-congestion,ENT,ent-nasal-congestion-s11,symptoms,previous treatment tried,11,"previous treatment, antihistamines, nasal spray",ent,nasal
+ent-nasal-congestion,ENT,ent-nasal-congestion-n12,relevant_negatives,no epistaxis reported,12,"no epistaxis, no nosebleed",ent,nasal
+ent-nasal-congestion,ENT,ent-nasal-congestion-n13,relevant_negatives,no severe facial pain reported,13,"no severe facial pain","ent,nasal"
+ent-nasal-congestion,ENT,ent-nasal-congestion-n14,relevant_negatives,no fever reported,14,"no fever",acute
+ent-nasal-congestion,ENT,ent-nasal-congestion-n15,relevant_negatives,no purulent nasal discharge reported,15,"no purulent discharge, no green discharge",ent,nasal
+ent-nasal-congestion,ENT,ent-nasal-congestion-n16,relevant_negatives,no headache reported,16,"no headache",neuro
+ent-nasal-congestion,ENT,ent-nasal-congestion-e17,exam_findings,nasal examination documented if assessed,17,"nasal exam, nasal cavity, mucosa","ent,nasal,exam"
+ent-nasal-congestion,ENT,ent-nasal-congestion-e18,exam_findings,nasal mucosa appearance documented if assessed,18,"nasal mucosa, congested, pale, swollen","ent,nasal,exam"
+ent-nasal-congestion,ENT,ent-nasal-congestion-e19,exam_findings,throat examination documented if assessed,19,"oropharynx, postnasal drip visible","ent,throat,exam"
+ent-nasal-congestion,ENT,ent-nasal-congestion-e20,exam_findings,allergic shiners or nasal crease documented if present,20,"allergic shiners, allergic crease, Dennie-Morgan","ent,nasal,exam"
+ent-nasal-congestion,ENT,ent-nasal-congestion-e21,exam_findings,ear examination documented if relevant,21,"otoscopy, ear exam","ent,ear,exam"
+ent-nasal-congestion,ENT,ent-nasal-congestion-r22,red_flags,unilateral obstruction,22,"unilateral nasal obstruction","ent,nasal,high_safety"
+ent-nasal-congestion,ENT,ent-nasal-congestion-r23,red_flags,recurrent epistaxis,23,"recurrent nosebleed, frequent epistaxis","ent,nasal,high_safety"
+ent-nasal-congestion,ENT,ent-nasal-congestion-r24,red_flags,facial swelling,24,"facial swelling, periorbital edema","ent,high_safety"
+ent-nasal-congestion,ENT,ent-nasal-congestion-r25,red_flags,severe headache,25,"severe headache","neuro,high_safety"
+ent-nasal-congestion,ENT,ent-nasal-congestion-r26,red_flags,visual symptoms,26,"vision change, double vision","ophth,high_safety"
+ent-nasal-congestion,ENT,ent-nasal-congestion-p27,plan_phrases,management plan discussed,27,"management plan",plan,ent
+ent-nasal-congestion,ENT,ent-nasal-congestion-p28,plan_phrases,allergen avoidance advice discussed,28,"allergen avoidance, trigger avoidance",plan,ent
+ent-nasal-congestion,ENT,ent-nasal-congestion-p29,plan_phrases,nasal care discussed as per clinician plan,29,"nasal spray, saline rinse, nasal hygiene",plan,ent
+ent-nasal-congestion,ENT,ent-nasal-congestion-p30,plan_phrases,return precautions discussed,30,"return precautions, warning signs","plan,ent,high_safety"
+ent-nasal-congestion,ENT,ent-nasal-congestion-p31,plan_phrases,patient questions addressed,31,"questions answered, concerns addressed",plan,ent
+ent-nasal-congestion,ENT,ent-nasal-congestion-f32,follow_up,2-4 weeks if not improving,32,"2-4 weeks","followup,ent"
+ent-nasal-congestion,ENT,ent-nasal-congestion-f33,follow_up,sooner if worsening,33,"sooner, PRN","followup,ent"
+ent-nasal-congestion,ENT,ent-nasal-congestion-f34,follow_up,sooner if red flag symptoms develop,34,"red flags develop","followup,ent,high_safety"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-s1,symptoms,facial pressure,1,"facial pressure, sinus pressure, sinus pain",ent,nasal
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-s2,symptoms,nasal congestion,2,"nasal congestion, blocked nose",ent,nasal
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-s3,symptoms,purulent nasal discharge reported,3,"purulent discharge, green discharge, thick discharge",ent,nasal
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-s4,symptoms,postnasal drip,4,"postnasal drip, catarrh","ent,nasal,throat"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-s5,symptoms,headache,5,"headache, frontal headache, sinus headache",neuro,ent
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-s6,symptoms,reduced smell,6,"reduced smell, anosmia, hyposmia",ent,nasal
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-s7,symptoms,dental pain,7,"dental pain, tooth pain, maxillary toothache",ent,nasal
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-s8,symptoms,fever,8,"fever, pyrexia, temperature",acute
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-s9,symptoms,duration documented,9,"duration, acute, subacute, chronic",general,ent
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-s10,symptoms,cough,10,"cough",respiratory,ent
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-s11,symptoms,fatigue or malaise,11,"fatigue, malaise, feeling unwell",general
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-s12,symptoms,previous treatment tried,12,"previous treatment, antibiotics, nasal spray",ent,nasal
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-n13,relevant_negatives,no visual symptoms reported,13,"no vision change, no double vision",ophth
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-n14,relevant_negatives,no facial swelling reported,14,"no facial swelling",ent,nasal
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-n15,relevant_negatives,no severe headache reported,15,"no severe headache",neuro
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-n16,relevant_negatives,no dental pain reported,16,"no dental pain",dental
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-n17,relevant_negatives,no fever reported,17,"no fever",acute
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-e18,exam_findings,nasal examination documented if assessed,18,"nasal exam, nasal cavity, discharge","ent,nasal,exam"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-e19,exam_findings,sinus tenderness documented if assessed,19,"sinus tenderness, sinus palpation","ent,nasal,exam"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-e20,exam_findings,throat examination documented if assessed,20,"oropharynx, postnasal drip","ent,throat,exam"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-e21,exam_findings,dental examination documented if relevant,21,"dental exam, tooth, gums","dental,exam"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-e22,exam_findings,temperature recorded if measured,22,"temperature, fever, febrile","vitals,exam"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-r23,red_flags,visual symptoms,23,"vision change, double vision, periorbital swelling","ophth,high_safety"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-r24,red_flags,facial swelling,24,"facial swelling, periorbital edema","ent,high_safety"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-r25,red_flags,severe headache,25,"severe headache, thunderclap","neuro,high_safety"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-r26,red_flags,altered mental status,26,"confusion, altered consciousness","neuro,high_safety"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-r27,red_flags,immunocompromised state,27,"immunocompromised, diabetes, chemotherapy","chronic,high_safety"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-p28,plan_phrases,management plan discussed,28,"management plan",plan,ent
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-p29,plan_phrases,symptom care discussed as per clinician plan,29,"symptom care, symptomatic treatment",plan,ent
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-p30,plan_phrases,return precautions discussed,30,"return precautions, warning signs","plan,ent,high_safety"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-p31,plan_phrases,patient questions addressed,31,"questions answered, concerns addressed",plan,ent
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-f32,follow_up,1-2 weeks if not improving,32,"1-2 weeks","followup,ent"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-f33,follow_up,sooner if worsening,33,"sooner, PRN","followup,ent"
+ent-sinus-symptoms,ENT,ent-sinus-symptoms-f34,follow_up,sooner if red flag symptoms develop,34,"red flags develop","followup,ent,high_safety"
+ent-sore-throat,ENT,ent-sore-throat-s1,symptoms,sore throat,1,"sore throat, pharyngitis, pain in throat",ent,throat
+ent-sore-throat,ENT,ent-sore-throat-s2,symptoms,painful swallowing,2,"painful swallowing, odynophagia, dysphagia",ent,throat
+ent-sore-throat,ENT,ent-sore-throat-s3,symptoms,fever,3,"fever, pyrexia, high temperature",acute
+ent-sore-throat,ENT,ent-sore-throat-s4,symptoms,cough,4,"cough",respiratory
+ent-sore-throat,ENT,ent-sore-throat-s5,symptoms,voice change,5,"voice change, hoarseness, loss of voice",ent,throat
+ent-sore-throat,ENT,ent-sore-throat-s6,symptoms,runny nose,6,"runny nose, rhinorrhea, nasal congestion","ent,nasal"
+ent-sore-throat,ENT,ent-sore-throat-s7,symptoms,ear pain,7,"ear pain, earache, referred pain",ent,ear
+ent-sore-throat,ENT,ent-sore-throat-s8,symptoms,headache,8,"headache",neuro
+ent-sore-throat,ENT,ent-sore-throat-s9,symptoms,lymph node tenderness reported,9,"lymph node tenderness, swollen glands",ent,throat
+ent-sore-throat,ENT,ent-sore-throat-s10,symptoms,reduced oral intake,10,"reduced intake, not eating, not drinking","gi,general"
+ent-sore-throat,ENT,ent-sore-throat-s11,symptoms,duration documented,11,"duration, how long",general
+ent-sore-throat,ENT,ent-sore-throat-n12,relevant_negatives,no drooling reported,12,"no drooling","ent,throat,high_safety"
+ent-sore-throat,ENT,ent-sore-throat-n13,relevant_negatives,no breathing difficulty reported,13,"no breathing difficulty, no stridor",respiratory,high_safety
+ent-sore-throat,ENT,ent-sore-throat-n14,relevant_negatives,no neck swelling reported,14,"no neck swelling",ent,throat
+ent-sore-throat,ENT,ent-sore-throat-n15,relevant_negatives,no trismus reported,15,"no trismus, no difficulty opening mouth","ent,throat"
+ent-sore-throat,ENT,ent-sore-throat-n16,relevant_negatives,no ear pain reported,16,"no ear pain",ent,ear
+ent-sore-throat,ENT,ent-sore-throat-n17,relevant_negatives,no rash reported,17,"no rash",derm
+ent-sore-throat,ENT,ent-sore-throat-e18,exam_findings,throat examination documented if assessed,18,"throat exam, oropharynx, tonsils","ent,throat,exam"
+ent-sore-throat,ENT,ent-sore-throat-e19,exam_findings,tonsillar swelling documented if assessed,19,"tonsillar swelling, tonsil size, hypertrophy","ent,throat,exam"
+ent-sore-throat,ENT,ent-sore-throat-e20,exam_findings,tonsillar exudate documented if assessed,20,"exudate, pus on tonsils, white patches","ent,throat,exam"
+ent-sore-throat,ENT,ent-sore-throat-e21,exam_findings,uvula and soft palate documented if assessed,21,"uvula, soft palate, erythema","ent,throat,exam"
+ent-sore-throat,ENT,ent-sore-throat-e22,exam_findings,cervical lymph nodes documented if assessed,22,"cervical LNs, lymphadenopathy, neck nodes","ent,exam"
+ent-sore-throat,ENT,ent-sore-throat-e23,exam_findings,temperature recorded if measured,23,"temperature, fever, febrile","vitals,exam"
+ent-sore-throat,ENT,ent-sore-throat-e24,exam_findings,skin examination for rash if assessed,24,"rash, scarlatiniform, scarlet fever",derm,exam
+ent-sore-throat,ENT,ent-sore-throat-e25,exam_findings,ear examination documented if assessed,25,"otoscopy, ear exam","ent,ear,exam"
+ent-sore-throat,ENT,ent-sore-throat-r26,red_flags,drooling,26,"drooling, unable to swallow saliva","ent,throat,high_safety"
+ent-sore-throat,ENT,ent-sore-throat-r27,red_flags,stridor,27,"stridor, noisy breathing","respiratory,high_safety"
+ent-sore-throat,ENT,ent-sore-throat-r28,red_flags,breathing difficulty,28,"breathing difficulty, respiratory distress",respiratory,high_safety
+ent-sore-throat,ENT,ent-sore-throat-r29,red_flags,trismus,29,"trismus, difficulty opening mouth","ent,throat,high_safety"
+ent-sore-throat,ENT,ent-sore-throat-r30,red_flags,neck swelling,30,"neck swelling, anterior neck swelling",ent,high_safety
+ent-sore-throat,ENT,ent-sore-throat-r31,red_flags,severe dehydration,31,"severe dehydration, unable to drink","gi,high_safety"
+ent-sore-throat,ENT,ent-sore-throat-i32,investigations,rapid strep test result reviewed if done,32,"rapid strep, rapid antigen test",investigations
+ent-sore-throat,ENT,ent-sore-throat-i33,investigations,throat culture result reviewed if done,33,"throat swab, culture, GAS culture",investigations
+ent-sore-throat,ENT,ent-sore-throat-i34,investigations,CBC with differential reviewed if done,34,"CBC, WBC, white cell count",investigations
+ent-sore-throat,ENT,ent-sore-throat-p35,plan_phrases,management plan discussed,35,"management plan",plan,ent
+ent-sore-throat,ENT,ent-sore-throat-p36,plan_phrases,symptom care discussed as per clinician plan,36,"symptom care, analgesia, throat lozenges",plan,ent
+ent-sore-throat,ENT,ent-sore-throat-p37,plan_phrases,hydration and rest advised,37,"hydration, rest, fluid intake",plan,ent
+ent-sore-throat,ENT,ent-sore-throat-p38,plan_phrases,return precautions discussed,38,"return precautions, difficulty breathing","plan,ent,high_safety"
+ent-sore-throat,ENT,ent-sore-throat-p39,plan_phrases,patient questions addressed,39,"questions answered, concerns addressed",plan,ent
+ent-sore-throat,ENT,ent-sore-throat-f40,follow_up,sooner if worsening,40,"sooner, PRN","followup,ent"
+ent-sore-throat,ENT,ent-sore-throat-f41,follow_up,sooner if red flag symptoms develop,41,"red flags develop","followup,ent,high_safety"
+ent-voice-complaint,ENT,ent-voice-complaint-s1,symptoms,hoarseness,1,"hoarseness, croaky voice, rough voice",ent,throat
+ent-voice-complaint,ENT,ent-voice-complaint-s2,symptoms,voice change,2,"voice change, voice quality change",ent,throat
+ent-voice-complaint,ENT,ent-voice-complaint-s3,symptoms,loss of voice,3,"loss of voice, aphonia","ent,throat"
+ent-voice-complaint,ENT,ent-voice-complaint-s4,symptoms,throat discomfort,4,"throat discomfort, throat irritation, tickle",ent,throat
+ent-voice-complaint,ENT,ent-voice-complaint-s5,symptoms,cough,5,"cough",respiratory
+ent-voice-complaint,ENT,ent-voice-complaint-s6,symptoms,reflux symptoms reported if relevant,6,"reflux, GERD, heartburn, acid","gi,ent"
+ent-voice-complaint,ENT,ent-voice-complaint-s7,symptoms,voice overuse history,7,"voice overuse, singing, shouting, public speaking",ent,throat
+ent-voice-complaint,ENT,ent-voice-complaint-s8,symptoms,smoking history documented if relevant,8,"smoking, tobacco, pack years",respiratory
+ent-voice-complaint,ENT,ent-voice-complaint-s9,symptoms,duration documented,9,"duration, how long, acute, chronic",general
+ent-voice-complaint,ENT,ent-voice-complaint-s10,symptoms,sore throat,10,"sore throat",ent,throat
+ent-voice-complaint,ENT,ent-voice-complaint-s11,symptoms,difficulty swallowing,11,"difficulty swallowing, dysphagia","ent,throat"
+ent-voice-complaint,ENT,ent-voice-complaint-n12,relevant_negatives,no breathing difficulty reported,12,"no breathing difficulty",respiratory
+ent-voice-complaint,ENT,ent-voice-complaint-n13,relevant_negatives,no swallowing difficulty reported,13,"no swallowing difficulty, no dysphagia","ent,throat"
+ent-voice-complaint,ENT,ent-voice-complaint-n14,relevant_negatives,no hemoptysis reported,14,"no hemoptysis, no coughing blood",respiratory
+ent-voice-complaint,ENT,ent-voice-complaint-n15,relevant_negatives,no neck mass reported,15,"no neck mass, no neck lump",ent,throat
+ent-voice-complaint,ENT,ent-voice-complaint-n16,relevant_negatives,no ear pain reported,16,"no ear pain, no referred otalgia",ent,ear
+ent-voice-complaint,ENT,ent-voice-complaint-e17,exam_findings,throat examination documented if assessed,17,"throat exam, oropharynx","ent,throat,exam"
+ent-voice-complaint,ENT,ent-voice-complaint-e18,exam_findings,laryngeal examination or VLS documented if assessed,18,"larynx, vocal cords, VLS, laryngoscopy","ent,throat,exam"
+ent-voice-complaint,ENT,ent-voice-complaint-e19,exam_findings,neck examination documented if assessed,19,"neck exam, neck palpation, thyroid","ent,exam"
+ent-voice-complaint,ENT,ent-voice-complaint-e20,exam_findings,cervical lymph nodes documented if assessed,20,"cervical LNs, lymphadenopathy","ent,exam"
+ent-voice-complaint,ENT,ent-voice-complaint-e21,exam_findings,ear examination documented if assessed,21,"otoscopy, ear exam","ent,ear,exam"
+ent-voice-complaint,ENT,ent-voice-complaint-r22,red_flags,persistent hoarseness,22,"persistent hoarseness, more than 3 weeks","ent,throat,high_safety"
+ent-voice-complaint,ENT,ent-voice-complaint-r23,red_flags,hemoptysis,23,"hemoptysis, coughing blood",respiratory,high_safety
+ent-voice-complaint,ENT,ent-voice-complaint-r24,red_flags,dysphagia,24,"dysphagia, difficulty swallowing","ent,throat,high_safety"
+ent-voice-complaint,ENT,ent-voice-complaint-r25,red_flags,neck mass,25,"neck mass, neck lump, thyroid swelling",ent,high_safety
+ent-voice-complaint,ENT,ent-voice-complaint-r26,red_flags,breathing difficulty,26,"breathing difficulty, stridor",respiratory,high_safety
+ent-voice-complaint,ENT,ent-voice-complaint-r27,red_flags,smoking history with persistent symptoms,27,"smoking with persistent hoarseness","respiratory,high_safety"
+ent-voice-complaint,ENT,ent-voice-complaint-p28,plan_phrases,management plan discussed,28,"management plan",plan,ent
+ent-voice-complaint,ENT,ent-voice-complaint-p29,plan_phrases,vocal hygiene advice discussed,29,"vocal hygiene, voice rest, hydration",plan,ent
+ent-voice-complaint,ENT,ent-voice-complaint-p30,plan_phrases,reflux management discussed if applicable,30,"reflux management, GERD, PPI","plan,gi,ent"
+ent-voice-complaint,ENT,ent-voice-complaint-p31,plan_phrases,ENT referral discussed as per clinician plan,31,"ENT referral, laryngology","plan,ent"
+ent-voice-complaint,ENT,ent-voice-complaint-p32,plan_phrases,return precautions discussed,32,"return precautions, worsening symptoms","plan,ent,high_safety"
+ent-voice-complaint,ENT,ent-voice-complaint-p33,plan_phrases,patient questions addressed,33,"questions answered, concerns addressed",plan,ent
+ent-voice-complaint,ENT,ent-voice-complaint-f34,follow_up,2 weeks if not improving,34,"2 weeks","followup,ent"
+ent-voice-complaint,ENT,ent-voice-complaint-f35,follow_up,sooner if worsening,35,"sooner, PRN","followup,ent"
+ent-voice-complaint,ENT,ent-voice-complaint-f36,follow_up,sooner if red flag symptoms develop,36,"red flags develop","followup,ent,high_safety"
