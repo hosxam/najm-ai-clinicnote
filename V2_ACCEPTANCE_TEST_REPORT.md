@@ -6,7 +6,7 @@ Server: `python -m http.server 8000`
 
 ## Scope
 
-Step 3F local acceptance testing was run against v2 data mode across 10 workflows. Testing used workflow search, selected the matching result, confirmed the workflow loaded, expanded v2 history prompts, attempted to verify loaded chips, used realistic custom-selected entries where dataset-backed chips were empty, entered doctor impression/plan/follow-up, generated notes, and checked EMR, SOAP, Follow-up, Referral, and Instructions tabs.
+Step 3F local acceptance testing was rerun after fixing v2 dataset-backed chip loading. Testing used workflow search, selected the matching result, confirmed dataset-backed chips loaded, selected real chips from the rendered v2 chip sets, entered doctor impression/plan/follow-up, generated notes, and checked EMR, SOAP, Follow-up, Referral, and Instructions tabs.
 
 ## Local V2 File and Runtime Checks
 
@@ -14,77 +14,63 @@ Step 3F local acceptance testing was run against v2 data mode across 10 workflow
 - Browser loaded stale `v2_workflow_ui.js`: no
 - Data mode shows v2: yes
 - Search box visible: yes
+- `Loaded chips: X` diagnostic visible: yes
 - `_origLoadSpeedVisit is not a function` error: no
 - `sList is not defined` error: no
 - Site JavaScript console errors: no
 
 ## Workflow Results
 
-| Workflow | Search term | Workflow loaded correctly | History prompts appropriate | Chips loaded | Selected summary works | EMR generated | SOAP generated | Follow-up generated | Referral behavior correct | Instructions generated | Output tabs differ | Safety issue found | Awkward wording found | Console error found | Pass/fail |
-|---|---:|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| General Medicine / GP - Fever / URTI | fever | yes | yes | no | yes | yes | yes | yes | yes | yes | yes | none | Instructions repeats doctor plan under Medications. | no | fail |
-| General Medicine / GP - Diabetes follow-up | diabetes | yes | yes | no | yes | yes | yes | yes | yes | yes | yes | none | Instructions repeats doctor plan under Medications. | no | fail |
-| Pediatrics - Pediatric fever | pediatric fever | yes | yes | no | yes | yes | yes | yes | yes | yes | yes | none | Instructions repeats doctor plan under Medications. | no | fail |
-| OB/GYN - Antenatal follow-up | antenatal | yes | yes | no | yes | yes | yes | yes | yes | yes | yes | none | Instructions repeats doctor plan under Medications. | no | fail |
-| Orthopedics / MSK - Low back pain | back pain | yes | yes | no | yes | yes | yes | yes | yes | yes | yes | none | Instructions repeats doctor plan under Medications. | no | fail |
-| ENT - Ear pain | ear pain | yes | yes | no | yes | yes | yes | yes | yes | yes | yes | none | Instructions repeats doctor plan under Medications. | no | fail |
-| Dermatology - Rash | rash | yes | yes | no | yes | yes | yes | yes | yes | yes | yes | none | Instructions repeats doctor plan under Medications. | no | fail |
-| Ophthalmology - Red eye | red eye | yes | yes | no | yes | yes | yes | yes | yes | yes | yes | none | Instructions repeats doctor plan under Medications. | no | fail |
-| Psychiatry / Mental Health - Anxiety symptoms | anxiety | yes | yes | no | yes | yes | yes | yes | yes | yes | yes | none | Instructions repeats doctor plan under Medications. | no | fail |
-| Psychiatry / Mental Health - Low mood | low mood | yes | yes | no | yes | yes | yes | yes | yes | yes | yes | none | Instructions repeats doctor plan under Medications. | no | fail |
+| Workflow | Search term | Chip count loaded | Real dataset chips used | Selected summary works | EMR generated | SOAP generated | Follow-up generated | Referral generated | Instructions generated | Output tabs differ | Instructions avoid non-medication `Medications` label | Safety issue found | Console error found | Pass/fail |
+|---|---:|---:|---|---|---|---|---|---|---|---|---|---|---|---|
+| General Medicine / GP - Fever / URTI | fever | 43 | yes | yes | yes | yes | yes | yes | yes | yes | yes | none | no | pass |
+| General Medicine / GP - Diabetes follow-up | diabetes | 33 | yes | yes | yes | yes | yes | yes | yes | yes | yes | none | no | pass |
+| Pediatrics - Pediatric fever | pediatric fever | 44 | yes | yes | yes | yes | yes | yes | yes | yes | yes | none | no | pass |
+| OB/GYN - Antenatal follow-up | antenatal | 50 | yes | yes | yes | yes | yes | yes | yes | yes | yes | none | no | pass |
+| Orthopedics / MSK - Low back pain | back pain | 41 | yes | yes | yes | yes | yes | yes | yes | yes | yes | none | no | pass |
+| ENT - Ear pain | ear pain | 38 | yes | yes | yes | yes | yes | yes | yes | yes | yes | none | no | pass |
+| Dermatology - Rash | rash | 39 | yes | yes | yes | yes | yes | yes | yes | yes | yes | none | no | pass |
+| Ophthalmology - Red eye | red eye | 38 | yes | yes | yes | yes | yes | yes | yes | yes | yes | none | no | pass |
+| Psychiatry / Mental Health - Anxiety symptoms | anxiety | 40 | yes | yes | yes | yes | yes | yes | yes | yes | yes | none | no | pass |
+| Psychiatry / Mental Health - Low mood | low mood | 38 | yes | yes | yes | yes | yes | yes | yes | yes | yes | none | no | pass |
 
-## Notes From Testing
+## Notes From Retest
 
 - All 10 workflow searches were visible and usable.
-- All 10 matching search results selected the correct specialty and workflow.
-- V2 history prompts appeared and expanded for the selected specialty.
-- Dataset-backed quick-select chips did not load in the browser for any of the 10 tested workflows. Each workflow showed 0 loaded chips before custom entries were added.
-- To continue output acceptance testing after the chip-load failure, realistic sample phrases were entered through the built-in custom chip fields. The selected summary updated correctly from those entries.
-- EMR, SOAP, Follow-up, Referral, and Instructions all generated for all 10 workflows.
+- All 10 matching search results selected the expected specialty and workflow.
+- Dataset-backed quick-select chips loaded for all 10 tested workflows.
+- Real rendered dataset chips were selected for all 10 workflows; custom chip fields were not needed for the retest.
+- Selected summary updated from real selected chips.
+- EMR, SOAP, Follow-up, Referral, and Instructions generated for all 10 workflows.
 - Output tabs differed for all 10 workflows.
+- Patient Instructions no longer labels the whole plan as `Medications`.
 - No literal `Denies no` wording was found.
 - No invented diagnosis was found; generated diagnoses followed doctor-entered impressions.
-- No invented treatment was found; generated treatment/advice followed doctor-entered plans and selected/custom plan phrases.
-- Referral tab behavior was acceptable with blank referral specialty: no referred-to specialty was invented.
-- Minor wording issue: Instructions repeats the doctor plan under both `Doctor advice` and `Medications`, even when the plan is not medication-only.
+- No invented treatment was found; generated treatment/advice followed doctor-entered plans and selected plan phrases.
+- No console errors were found.
 
 ## Readiness Decision
 
-Pass count: 0 / 10
+Pass count: 10 / 10
 
 Critical blockers:
-- V2 workflow chips do not load in the local browser UI for the tested workflows. This blocks the core v2 workflow-chip acceptance requirement across all 10 workflows.
+- None.
 
 Major issues:
-- None beyond the chip-loading blocker.
+- None found in the retest.
 
 Minor issues:
-- Patient Instructions repeats the doctor plan under `Medications`, which can be awkward when the plan is counseling, follow-up, or non-medication advice.
+- None found in the retest.
 
-Decision: Not ready
+Decision: Ready
 
-Decision rule applied: fewer than 8/10 workflows passed, so v2 is Not ready. No critical output safety issue was found, but the chip-loading failure blocks acceptance.
+Decision rule applied: all 10 workflows loaded chips and no critical safety issues were found.
 
 ## Validation Results
 
-`node scripts/validateClinicalData.js`
+Validation was rerun after the fix:
 
-- Passed: 15830
-- Failed: 0
-- Result: all validations passed
-
-`node scripts/validateWorkingCsvData.js`
-
-- Passed: 21
-- Failed: 0
-- Warnings: 0
-- Result: all validations passed
-- Node warning observed: `MODULE_TYPELESS_PACKAGE_JSON`
-
-`node scripts/validateGeneratedClinicalData.js`
-
-- Passed: 51
-- Failed: 0
-- Result: all validations passed
-- Node warning observed: `MODULE_TYPELESS_PACKAGE_JSON`
+- `node scripts/validateClinicalData.js`: passed, 15830 passed / 0 failed
+- `node scripts/validateWorkingCsvData.js`: passed, 21 passed / 0 failed / 0 warnings
+- `node scripts/validateGeneratedClinicalData.js`: passed, 51 passed / 0 failed
 

@@ -298,6 +298,84 @@ function v2fillChipsWithWarnings(containerId, chipGroupName, v2wfData) {
   }
 }
 
+function v2resolveSelectedWorkflow(specKey, visitName) {
+  var data = window.NAJM_CLINICAL_DATA;
+  if (!data || !visitName) return null;
+
+  var workflowId = "";
+  var lib = window.ACTIVE_VISIT_LIBRARY;
+  if (lib && specKey && lib[specKey] && lib[specKey][visitName] && lib[specKey][visitName]._v2meta) {
+    workflowId = lib[specKey][visitName]._v2meta.workflow_id || "";
+  }
+
+  var specialty = null;
+  var workflow = workflowId && data.workflowsById ? data.workflowsById[workflowId] : null;
+  if (!workflowId || !workflow) {
+    var specs = data.specialties || [];
+    for (var si = 0; si < specs.length; si++) {
+      var s = specs[si];
+      var sName = s.display_name || s.specialty_id || "";
+      if (specKey && sName !== specKey && s.specialty_id !== specKey) continue;
+      var wfs = s.workflows || [];
+      for (var wi = 0; wi < wfs.length; wi++) {
+        if (wfs[wi].display_name === visitName) {
+          specialty = s;
+          workflowId = wfs[wi].workflow_id;
+          workflow = data.workflowsById && data.workflowsById[workflowId] ? data.workflowsById[workflowId] : wfs[wi];
+          break;
+        }
+      }
+      if (workflowId) {
+        if (!specialty) specialty = s;
+        break;
+      }
+    }
+  }
+
+  if (!specialty && workflow) {
+    var specs2 = data.specialties || [];
+    for (var sj = 0; sj < specs2.length; sj++) {
+      if ((specs2[sj].display_name || specs2[sj].specialty_id) === specKey || specs2[sj].specialty_id === workflow.specialty) {
+        specialty = specs2[sj];
+        break;
+      }
+    }
+  }
+
+  if (!workflowId) return null;
+  var chips = (data.chipsByWorkflow && data.chipsByWorkflow[workflowId]) || (workflow && workflow.chips) || null;
+  return {
+    workflow_id: workflowId,
+    workflow: workflow,
+    specialty: specialty,
+    chips: chips
+  };
+}
+
+function v2countChips(chips) {
+  if (!chips) return 0;
+  var groups = ["symptoms", "relevant_negatives", "exam_findings", "red_flags", "investigations", "plan_phrases"];
+  var total = 0;
+  for (var i = 0; i < groups.length; i++) {
+    total += (chips[groups[i]] || []).length;
+  }
+  return total;
+}
+
+function v2updateChipDiagnostic(count) {
+  if (window.CLINICNOTE_DATA_MODE !== "v2") return;
+  var summary = document.getElementById("speedSummary");
+  if (!summary || !summary.parentNode) return;
+  var diag = document.getElementById("v2LoadedChipCount");
+  if (!diag) {
+    diag = document.createElement("div");
+    diag.id = "v2LoadedChipCount";
+    diag.style.cssText = "font-size:10px;color:var(--gray-400);margin:4px 0 8px";
+    summary.parentNode.insertBefore(diag, summary);
+  }
+  diag.textContent = "Loaded chips: " + count;
+}
+
 // ---- Enhanced LoadSpeedVisit for V2 ----
 // loadSpeedVisit is defined later (in index.html inline script) so we
 // cannot capture _origLoadSpeedVisit at parse time. Instead we poll
@@ -322,72 +400,40 @@ function v2fillChipsWithWarnings(containerId, chipGroupName, v2wfData) {
     var specKey = currentSpecialty;
     if (!vt || !specKey) return;
 
-    // Use legacy library for chips (holds actual chip text)
-    var lib = window.ACTIVE_VISIT_LIBRARY;
-    if (!lib || !lib[specKey] || !lib[specKey][vt]) return;
-    var libData = lib[specKey][vt];
-
-    // Use v2 data for enhancements (history layout, warnings, investigations)
-    var v2data = window.NAJM_CLINICAL_DATA;
-    var v2Spec = null;
-    var v2Wf = null;
-    if (v2data && v2data.specialties) {
-      for (var si = 0; si < v2data.specialties.length; si++) {
-        var s = v2data.specialties[si];
-        if ((s.display_name || s.specialty_id) === specKey) {
-          v2Spec = s;
-          var wfs = s.workflows || [];
-          for (var wi = 0; wi < wfs.length; wi++) {
-            if (wfs[wi].display_name === vt) {
-              v2Wf = wfs[wi];
-              break;
-            }
-          }
-          break;
-        }
-      }
+    var resolved = v2resolveSelectedWorkflow(specKey, vt);
+    if (!resolved || !resolved.chips) {
+      console.warn("Najm AI: v2 chips could not be resolved for selected workflow", { specialty: specKey, visit: vt });
+      v2updateChipDiagnostic(0);
+      return;
     }
 
-    // Re-fill chips from legacy library data (original fillChips uses d.symptoms,
-    // d.negatives, d.exam, d.redFlags, d.planPhrases)
-    fillChips("speedSymptoms", libData.symptoms || []);
-    fillChips("speedNegs", libData.negatives || []);
-    fillChips("speedExam", libData.exam || []);
-    fillChips("speedRedFlags", libData.redFlags || [], "redflag");
-    fillChips("speedPlans", libData.planPhrases || []);
+    var v2Spec = resolved.specialty;
+    var chips = resolved.chips;
 
-    // Fill investigations using legacy data if available (v2Wf not needed for text)
-    var libInvs = libData.investigations || [];
+    v2fillChipsWithWarnings("speedSymptoms", "symptoms", chips);
+    v2fillChipsWithWarnings("speedNegs", "relevant_negatives", chips);
+    v2fillChipsWithWarnings("speedExam", "exam_findings", chips);
+    v2fillChipsWithWarnings("speedRedFlags", "red_flags", chips);
+    v2fillChipsWithWarnings("speedPlans", "plan_phrases", chips);
+
     var invSec = document.getElementById("speedInvestigationsSection");
     var invContainer = document.getElementById("speedInvs");
     if (invSec && invContainer) {
-      if (libInvs.length > 0) {
+      var v2Invs = chips.investigations || [];
+      if (v2Invs.length > 0) {
         invSec.style.display = "block";
-        fillChips("speedInvs", libInvs);
+        v2fillChipsWithWarnings("speedInvs", "investigations", chips);
       } else {
         invSec.style.display = "none";
-      }
-    }
-
-    // Add warnings from v2 data if available (objects with chip_text + warning)
-    if (v2Wf && v2Wf.chips) {
-      v2fillChipsWithWarnings("speedSymptoms", "symptoms", v2Wf.chips);
-      v2fillChipsWithWarnings("speedNegs", "relevant_negatives", v2Wf.chips);
-      v2fillChipsWithWarnings("speedExam", "exam_findings", v2Wf.chips);
-      v2fillChipsWithWarnings("speedRedFlags", "red_flags", v2Wf.chips);
-      v2fillChipsWithWarnings("speedPlans", "plan_phrases", v2Wf.chips);
-      if (invSec && invContainer) {
-        var v2Invs = v2Wf.chips.investigations || [];
-        if (v2Invs.length > 0) {
-          invSec.style.display = "block";
-          v2fillChipsWithWarnings("speedInvs", "investigations", v2Wf.chips);
-        }
+        invContainer.innerHTML = "";
       }
     }
 
     // Show history layout for v2
     var layoutId = v2Spec ? (v2Spec.history_layout_id || v2Spec.specialty_id) : specKey;
     v2showHistoryLayout(layoutId);
+
+    v2updateChipDiagnostic(v2countChips(chips));
 
     // Refresh summary after chip refill
     updateSelectedCount();
@@ -557,8 +603,8 @@ function v2clearAllSelections() {
   // Instructions (no investigations, only doctor plan)
   outputs.inst = dc + "PATIENT INSTRUCTIONS\n\n";
   outputs.inst += "Diagnosis: " + impStr + "\n\n";
-  outputs.inst += "Doctor advice:\n" + plan + "\n\n";
-  outputs.inst += "Medications:\n" + plan + "\n\n";
+  outputs.inst += "Doctor advice / plan:\n" + plan + "\n\n";
+  if (planPhrasesStr) outputs.inst += "Plan discussed:\n" + planPhrasesStr + "\n\n";
   outputs.inst += "When to seek help:\n" + rfStr + "\n\n";
   outputs.inst += "Follow-up: " + (followup || "As advised") + "\n";
 

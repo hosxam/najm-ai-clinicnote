@@ -610,7 +610,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 // ---- Feature Flag: MUST be set before v2_workflow_ui.js loads ----
 window.CLINICNOTE_DATA_MODE = (new URLSearchParams(window.location.search).get("data") === "v2") ? "v2" : "v1";
 </script>
-<script src="./v2_workflow_ui_2.js"></script>
+<script src="./v2_workflow_ui_2.js?v=chip-fix-2"></script>
 <script>
 
 // ---- Adapter: build old-compatible VISIT_LIBRARY from NAJM_CLINICAL_DATA ----
@@ -629,15 +629,26 @@ function buildV2VisitLibrary() {
         var wf = wfs[wi];
         var vtKey = wf.display_name;
         if (!vtKey) continue;
-        var chips = wf.chips || {};
+        var chips = {};
+        if (data.chipsByWorkflow && data.chipsByWorkflow[wf.workflow_id]) {
+          chips = data.chipsByWorkflow[wf.workflow_id];
+        } else if (data.workflowsById && data.workflowsById[wf.workflow_id] && data.workflowsById[wf.workflow_id].chips) {
+          chips = data.workflowsById[wf.workflow_id].chips;
+        } else if (wf.chips) {
+          chips = wf.chips;
+          console.warn("Najm AI: v2 adapter fell back to specialty workflow chips for", wf.workflow_id);
+        } else {
+          console.warn("Najm AI: v2 adapter could not resolve chips for", wf.workflow_id);
+        }
+        function chipText(c){ return typeof c === "string" ? c : (c && c.chip_text) || ""; }
         lib[specKey][vtKey] = {
-          symptoms: (chips.symptoms || []).map(function(c){ return c.chip_text; }),
-          negatives: (chips.relevant_negatives || []).map(function(c){ return c.chip_text; }),
-          exam: (chips.exam_findings || []).map(function(c){ return c.chip_text; }),
-          redFlags: (chips.red_flags || []).map(function(c){ return c.chip_text; }),
-          planPhrases: (chips.plan_phrases || []).map(function(c){ return c.chip_text; }),
-          followUp: (chips.follow_up || []).map(function(c){ return c.chip_text; }),
-          investigations: (chips.investigations || []).map(function(c){ return c.chip_text; }),
+          symptoms: (chips.symptoms || []).map(chipText).filter(Boolean),
+          negatives: (chips.relevant_negatives || []).map(chipText).filter(Boolean),
+          exam: (chips.exam_findings || []).map(chipText).filter(Boolean),
+          redFlags: (chips.red_flags || []).map(chipText).filter(Boolean),
+          planPhrases: (chips.plan_phrases || []).map(chipText).filter(Boolean),
+          followUp: (chips.follow_up || []).map(chipText).filter(Boolean),
+          investigations: (chips.investigations || []).map(chipText).filter(Boolean),
           _v2meta: { workflow_id: wf.workflow_id }
         };
       }
@@ -739,6 +750,31 @@ function loadSpeedVisit(){
   fillChips("speedExam", d.exam);
   fillChips("speedRedFlags", d.redFlags, "redflag");
   fillChips("speedPlans", d.planPhrases);
+  if(window.CLINICNOTE_DATA_MODE === "v2"){
+    var invSec = document.getElementById("speedInvestigationsSection");
+    if(invSec){
+      if(d.investigations && d.investigations.length){
+        invSec.style.display = "block";
+        fillChips("speedInvs", d.investigations);
+      } else {
+        invSec.style.display = "none";
+        var invC = document.getElementById("speedInvs");
+        if(invC) invC.innerHTML = "";
+      }
+    }
+    var loadedChipCount = (d.symptoms||[]).length + (d.negatives||[]).length + (d.exam||[]).length + (d.redFlags||[]).length + (d.planPhrases||[]).length + (d.investigations||[]).length;
+    var summary = document.getElementById("speedSummary");
+    if(summary && summary.parentNode){
+      var diag = document.getElementById("v2LoadedChipCount");
+      if(!diag){
+        diag = document.createElement("div");
+        diag.id = "v2LoadedChipCount";
+        diag.style.cssText = "font-size:10px;color:var(--gray-400);margin:4px 0 8px";
+        summary.parentNode.insertBefore(diag, summary);
+      }
+      diag.textContent = "Loaded chips: " + loadedChipCount;
+    }
+  }
   document.getElementById("speedOutputBox").innerHTML = "<span class='placeholder'>Select findings and enter impression/plan, then click Generate Note.</span>";
   document.getElementById("speedDuration").value = "";
   document.getElementById("speedImpression").value = "";
