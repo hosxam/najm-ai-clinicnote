@@ -1,13 +1,17 @@
 {
   "index_version": "1.0.0",
-  "last_updated": "2026-05-14",
+  "last_updated": "2026-05-15",
   "entries": [
     {
-      "entry_id": "dx-gp-viral-urti",
-      "type": "diagnosis",
-      "label": "Viral URTI",
+      "entry_id": "cc-gp-fever-urti",
+      "type": "chief_complaint",
+      "label": "Fever",
       "aliases": [
-        "common cold"
+        "pyrexia",
+        "high temperature",
+        "hot",
+        "flu-like symptoms",
+        "cold"
       ],
       "specialty_ids": [
         "General Medicine / GP",
@@ -15,7 +19,30 @@
       ],
       "workflow_ids": [
         "gp-fever-urti",
-        "peds-fever-viral"
+        "peds-fever"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-fever-urti",
+      "type": "diagnosis",
+      "label": "Viral URTI / Common cold",
+      "aliases": [
+        "common cold",
+        "upper respiratory infection",
+        "URTI"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-fever-urti"
       ],
       "icd_metadata": {
         "icd_system": "ICD-10-CM",
@@ -26,39 +53,461 @@
       }
     },
     {
-      "entry_id": "dx-gp-acute-bronchitis",
-      "type": "diagnosis",
-      "label": "Acute Bronchitis",
+      "entry_id": "cc-gp-cough",
+      "type": "chief_complaint",
+      "label": "Cough",
       "aliases": [
-        "bronchitis"
+        "dry cough",
+        "productive cough",
+        "barking cough",
+        "persistent cough"
       ],
       "specialty_ids": [
         "General Medicine / GP"
       ],
       "workflow_ids": [
-        "gp-cough-bronchitis"
+        "gp-cough"
       ],
       "icd_metadata": {
-        "icd_system": "ICD-10-CM",
-        "icd_code": "J20.9",
-        "icd_label": "Acute bronchitis unspecified",
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
         "icd_verified": false,
         "icd_source": null
       }
     },
     {
-      "entry_id": "dx-gp-gerd",
+      "entry_id": "dx-gp-cough",
       "type": "diagnosis",
-      "label": "GERD",
+      "label": "Acute bronchitis",
       "aliases": [
-        "acid reflux",
-        "reflux disease"
+        "bronchitis",
+        "chest cold"
       ],
       "specialty_ids": [
         "General Medicine / GP"
       ],
       "workflow_ids": [
-        "gp-chest-pain-gerd"
+        "gp-cough"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "J20.9",
+        "icd_label": "Acute bronchitis",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-sore-throat",
+      "type": "chief_complaint",
+      "label": "Sore throat",
+      "aliases": [
+        "throat pain",
+        "painful swallowing",
+        "odynophagia",
+        "difficulty swallowing"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP",
+        "ENT"
+      ],
+      "workflow_ids": [
+        "gp-sore-throat",
+        "ent-sore-throat"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-sore-throat",
+      "type": "diagnosis",
+      "label": "Pharyngitis",
+      "aliases": [
+        "acute pharyngitis",
+        "throat infection"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-sore-throat"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "J02.9",
+        "icd_label": "Acute pharyngitis",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-headache",
+      "type": "chief_complaint",
+      "label": "Headache",
+      "aliases": [
+        "head pain",
+        "migraine symptoms",
+        "tension headache",
+        "sinus headache"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-headache"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-headache",
+      "type": "diagnosis",
+      "label": "Migraine / Tension headache",
+      "aliases": [
+        "migraine",
+        "tension-type headache",
+        "cephalalgia"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-headache"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "G43.9",
+        "icd_label": "Migraine unspecified",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-dizziness",
+      "type": "chief_complaint",
+      "label": "Dizziness",
+      "aliases": [
+        "vertigo",
+        "lightheadedness",
+        "feeling faint",
+        "unsteady"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-dizziness"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-dizziness",
+      "type": "diagnosis",
+      "label": "Vestibular / Referred",
+      "aliases": [
+        "vestibular disorder",
+        "disequilibrium"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-dizziness"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-fatigue",
+      "type": "chief_complaint",
+      "label": "Fatigue",
+      "aliases": [
+        "tiredness",
+        "exhaustion",
+        "low energy",
+        "lethargy",
+        "weakness"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-fatigue"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-fatigue",
+      "type": "diagnosis",
+      "label": "Anaemia workup",
+      "aliases": [
+        "fatigue syndrome",
+        "chronic fatigue",
+        "anaemia"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-fatigue"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-abdominal-pain",
+      "type": "chief_complaint",
+      "label": "Abdominal pain",
+      "aliases": [
+        "stomach pain",
+        "belly pain",
+        "stomach ache",
+        "epigastric pain"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-abdominal-pain",
+      "type": "diagnosis",
+      "label": "Gastritis / Dyspepsia",
+      "aliases": [
+        "gastritis",
+        "dyspepsia",
+        "indigestion"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "K29.7",
+        "icd_label": "Gastritis unspecified",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-nausea",
+      "type": "chief_complaint",
+      "label": "Nausea / Vomiting",
+      "aliases": [
+        "feeling sick",
+        "vomiting",
+        "throwing up",
+        "upset stomach"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-nausea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-nausea",
+      "type": "diagnosis",
+      "label": "Acute gastroenteritis",
+      "aliases": [
+        "gastroenteritis",
+        "stomach flu"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-nausea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-diarrhea",
+      "type": "chief_complaint",
+      "label": "Diarrhea",
+      "aliases": [
+        "loose stools",
+        "watery stool",
+        "frequent bowel movements"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-diarrhea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-diarrhea",
+      "type": "diagnosis",
+      "label": "Acute gastroenteritis",
+      "aliases": [
+        "infectious gastroenteritis",
+        "stomach bug"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-diarrhea"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "A09",
+        "icd_label": "Infectious gastroenteritis",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-constipation",
+      "type": "chief_complaint",
+      "label": "Constipation",
+      "aliases": [
+        "difficulty passing stool",
+        "infrequent bowel movements",
+        "hard stool"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-constipation"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-constipation",
+      "type": "diagnosis",
+      "label": "IBS / Functional constipation",
+      "aliases": [
+        "irritable bowel syndrome",
+        "chronic constipation",
+        "obstipation"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-constipation"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-chest-pain",
+      "type": "chief_complaint",
+      "label": "Chest pain",
+      "aliases": [
+        "chest discomfort",
+        "heartburn",
+        "retrosternal pain",
+        "burning chest"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-chest-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-chest-pain",
+      "type": "diagnosis",
+      "label": "GERD / Reflux",
+      "aliases": [
+        "gastroesophageal reflux",
+        "acid reflux"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-chest-pain"
       ],
       "icd_metadata": {
         "icd_system": "ICD-10-CM",
@@ -69,65 +518,1387 @@
       }
     },
     {
-      "entry_id": "cc-gp-chest-pain",
+      "entry_id": "cc-gp-palpitations",
       "type": "chief_complaint",
-      "label": "Chest pain",
+      "label": "Palpitations",
       "aliases": [
-        "chest discomfort"
-      ],
-      "specialty_ids": [
-        "General Medicine / GP",
-        "Orthopedics / MSK"
-      ],
-      "workflow_ids": [
-        "gp-chest-pain-gerd"
-      ]
-    },
-    {
-      "entry_id": "cc-gp-fever",
-      "type": "chief_complaint",
-      "label": "Fever",
-      "aliases": [
-        "pyrexia",
-        "high temperature"
-      ],
-      "specialty_ids": [
-        "General Medicine / GP",
-        "Pediatrics"
-      ],
-      "workflow_ids": [
-        "gp-fever-urti",
-        "peds-fever-viral"
-      ]
-    },
-    {
-      "entry_id": "cc-gp-cough",
-      "type": "chief_complaint",
-      "label": "Cough",
-      "aliases": [
-        "dry cough",
-        "productive cough"
+        "racing heart",
+        "heart pounding",
+        "irregular heartbeat",
+        "skipped beats"
       ],
       "specialty_ids": [
         "General Medicine / GP"
       ],
       "workflow_ids": [
-        "gp-cough-bronchitis"
-      ]
+        "gp-palpitations"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
     },
     {
-      "entry_id": "dx-msk-mechanical-lbp",
+      "entry_id": "dx-gp-palpitations",
       "type": "diagnosis",
-      "label": "Mechanical Low Back Pain",
+      "label": "Arrhythmia workup",
       "aliases": [
-        "lumbar strain",
-        "lumbago"
+        "cardiac arrhythmia",
+        "ectopic beats"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-palpitations"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-shortness-of-breath",
+      "type": "chief_complaint",
+      "label": "Shortness of breath",
+      "aliases": [
+        "SOB",
+        "difficulty breathing",
+        "breathlessness",
+        "unable to catch breath",
+        "wheezing"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-shortness-of-breath"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-shortness-of-breath",
+      "type": "diagnosis",
+      "label": "Dyspnoea / Referred",
+      "aliases": [
+        "dyspnoea",
+        "respiratory difficulty"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-shortness-of-breath"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-hypertension-followup",
+      "type": "chief_complaint",
+      "label": "Hypertension follow-up",
+      "aliases": [
+        "high BP",
+        "high blood pressure",
+        "elevated BP",
+        "HTN follow-up"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-hypertension-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-hypertension-followup",
+      "type": "diagnosis",
+      "label": "Essential hypertension",
+      "aliases": [
+        "hypertension",
+        "raised blood pressure"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-hypertension-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "I10",
+        "icd_label": "Essential hypertension",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-diabetes-followup",
+      "type": "chief_complaint",
+      "label": "Diabetes follow-up",
+      "aliases": [
+        "high blood sugar",
+        "DM follow-up",
+        "diabetic check",
+        "sugar follow-up"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-diabetes-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-diabetes-followup",
+      "type": "diagnosis",
+      "label": "Type 2 diabetes mellitus",
+      "aliases": [
+        "diabetes type 2",
+        "NIDDM",
+        "diabetes mellitus"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-diabetes-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "E11.9",
+        "icd_label": "Type 2 diabetes without complications",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-thyroid-followup",
+      "type": "chief_complaint",
+      "label": "Thyroid follow-up",
+      "aliases": [
+        "underactive thyroid",
+        "thyroid check",
+        "TSH follow-up",
+        "thyroid medication review"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-thyroid-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-thyroid-followup",
+      "type": "diagnosis",
+      "label": "Hypothyroidism",
+      "aliases": [
+        "hypothyroidism",
+        "myxoedema"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-thyroid-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-dyslipidemia-followup",
+      "type": "chief_complaint",
+      "label": "Dyslipidemia follow-up",
+      "aliases": [
+        "high cholesterol",
+        "lipid profile review",
+        "statin follow-up",
+        "cholesterol check"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-dyslipidemia-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-dyslipidemia-followup",
+      "type": "diagnosis",
+      "label": "Hyperlipidemia",
+      "aliases": [
+        "dyslipidaemia",
+        "hypercholesterolaemia"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-dyslipidemia-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-gp-lab-result-review",
+      "type": "chief_complaint",
+      "label": "Lab result review",
+      "aliases": [
+        "test results",
+        "blood work review",
+        "lab follow-up",
+        "investigation results"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-lab-result-review"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-gp-lab-result-review",
+      "type": "diagnosis",
+      "label": "Laboratory results review",
+      "aliases": [
+        "laboratory investigation",
+        "lab review"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-lab-result-review"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-peds-fever",
+      "type": "chief_complaint",
+      "label": "Pediatric fever",
+      "aliases": [
+        "child fever",
+        "fever in infant",
+        "baby fever",
+        "high temperature in child"
+      ],
+      "specialty_ids": [
+        "Pediatrics",
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "peds-fever",
+        "gp-fever-urti"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-peds-fever",
+      "type": "diagnosis",
+      "label": "Viral fever in child",
+      "aliases": [
+        "viral pyrexia",
+        "febrile illness"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-fever"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "R50.9",
+        "icd_label": "Fever unspecified",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-peds-cough",
+      "type": "chief_complaint",
+      "label": "Pediatric cough / cold",
+      "aliases": [
+        "child cough",
+        "baby cold",
+        "child runny nose",
+        "infant congestion"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-cough"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-peds-cough",
+      "type": "diagnosis",
+      "label": "URTI / Bronchiolitis",
+      "aliases": [
+        "paediatric URTI",
+        "bronchiolitis",
+        "croup"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-cough"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-peds-vomiting-diarrhea",
+      "type": "chief_complaint",
+      "label": "Pediatric vomiting / diarrhea",
+      "aliases": [
+        "child vomiting",
+        "baby diarrhea",
+        "infant gastroenteritis",
+        "dehydration risk"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-vomiting-diarrhea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-peds-vomiting-diarrhea",
+      "type": "diagnosis",
+      "label": "Acute gastroenteritis in child",
+      "aliases": [
+        "paediatric gastroenteritis",
+        "stomach flu child"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-vomiting-diarrhea"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "K52.9",
+        "icd_label": "Noninfective gastroenteritis",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-peds-rash",
+      "type": "chief_complaint",
+      "label": "Pediatric rash",
+      "aliases": [
+        "child rash",
+        "baby rash",
+        "skin rash child",
+        "child spots"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-rash"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-peds-rash",
+      "type": "diagnosis",
+      "label": "Viral exanthem",
+      "aliases": [
+        "viral exanthem",
+        "childhood exanthem"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-rash"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-peds-poor-feeding",
+      "type": "chief_complaint",
+      "label": "Poor feeding",
+      "aliases": [
+        "baby not feeding",
+        "infant feeding problem",
+        "decreased appetite child",
+        "poor milk intake"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-poor-feeding"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-peds-poor-feeding",
+      "type": "diagnosis",
+      "label": "Feeding difficulty in infant",
+      "aliases": [
+        "feeding disorder of infancy",
+        "failure to thrive"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-poor-feeding"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-peds-ear-pain",
+      "type": "chief_complaint",
+      "label": "Pediatric ear pain",
+      "aliases": [
+        "child earache",
+        "baby ear infection",
+        "infant pulling ear",
+        "ear pain child"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-ear-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-peds-ear-pain",
+      "type": "diagnosis",
+      "label": "Acute otitis media",
+      "aliases": [
+        "otitis media",
+        "middle ear infection"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-ear-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "H66.9",
+        "icd_label": "Otitis media unspecified",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-peds-abdominal-pain",
+      "type": "chief_complaint",
+      "label": "Pediatric abdominal pain",
+      "aliases": [
+        "child tummy ache",
+        "baby stomach pain",
+        "child belly pain"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-peds-abdominal-pain",
+      "type": "diagnosis",
+      "label": "Constipation / Functional",
+      "aliases": [
+        "paediatric abdominal pain",
+        "functional abdominal pain"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-peds-routine-followup",
+      "type": "chief_complaint",
+      "label": "Routine pediatric check-up",
+      "aliases": [
+        "well baby visit",
+        "child health check",
+        "growth monitoring",
+        "routine paediatric visit"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-routine-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-peds-routine-followup",
+      "type": "diagnosis",
+      "label": "Well child check",
+      "aliases": [
+        "well child examination",
+        "paediatric preventive visit"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-routine-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-peds-vaccination",
+      "type": "chief_complaint",
+      "label": "Vaccination visit",
+      "aliases": [
+        "child vaccine",
+        "baby shot",
+        "immunisation visit",
+        "vaccination record"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-vaccination"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-peds-vaccination",
+      "type": "diagnosis",
+      "label": "Immunisation",
+      "aliases": [
+        "childhood immunisation",
+        "vaccine administration"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-vaccination"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-peds-growth-concern",
+      "type": "chief_complaint",
+      "label": "Growth concern",
+      "aliases": [
+        "poor growth",
+        "weight loss child",
+        "short stature",
+        "not gaining weight"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-growth-concern"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-peds-growth-concern",
+      "type": "diagnosis",
+      "label": "Failure to thrive",
+      "aliases": [
+        "failure to thrive",
+        "growth retardation"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-growth-concern"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-peds-development-concern",
+      "type": "chief_complaint",
+      "label": "Developmental concern",
+      "aliases": [
+        "delayed milestones",
+        "not walking",
+        "not talking",
+        "speech delay child"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-development-concern"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-peds-development-concern",
+      "type": "diagnosis",
+      "label": "Developmental delay",
+      "aliases": [
+        "developmental delay",
+        "global developmental delay"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-development-concern"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-peds-school-note",
+      "type": "chief_complaint",
+      "label": "School / sick note child",
+      "aliases": [
+        "school certificate",
+        "sick note child",
+        "medical certificate child",
+        "fitness note"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-school-note"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-peds-school-note",
+      "type": "diagnosis",
+      "label": "Administrative child health",
+      "aliases": [
+        "school medical certificate",
+        "paediatric clearance"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-school-note"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-obgyn-antenatal-followup",
+      "type": "chief_complaint",
+      "label": "Antenatal follow-up",
+      "aliases": [
+        "pregnancy check-up",
+        "prenatal visit",
+        "maternity follow-up",
+        "ANC visit",
+        "pregnant follow-up"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-antenatal-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-obgyn-antenatal-followup",
+      "type": "diagnosis",
+      "label": "Pregnancy supervision",
+      "aliases": [
+        "antenatal care",
+        "pregnancy supervision"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-antenatal-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "Z34.90",
+        "icd_label": "Encounter for normal pregnancy supervision",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-obgyn-pelvic-pain",
+      "type": "chief_complaint",
+      "label": "Pelvic pain",
+      "aliases": [
+        "lower abdominal pain female",
+        "pelvic discomfort",
+        "adnexal pain"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-pelvic-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-obgyn-pelvic-pain",
+      "type": "diagnosis",
+      "label": "PID / Adnexal pathology",
+      "aliases": [
+        "pelvic inflammatory disease",
+        "adnexitis"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-pelvic-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-obgyn-irregular-bleeding",
+      "type": "chief_complaint",
+      "label": "Irregular vaginal bleeding",
+      "aliases": [
+        "abnormal bleeding",
+        "spotting",
+        "menorrhagia",
+        "intermenstrual bleeding"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-irregular-bleeding"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-obgyn-irregular-bleeding",
+      "type": "diagnosis",
+      "label": "Dysfunctional uterine bleeding",
+      "aliases": [
+        "DUB",
+        "abnormal uterine bleeding",
+        "menorrhagia"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-irregular-bleeding"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-obgyn-vaginal-discharge",
+      "type": "chief_complaint",
+      "label": "Vaginal discharge",
+      "aliases": [
+        "abnormal discharge",
+        "itching discharge",
+        "white discharge",
+        "foul discharge"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-vaginal-discharge"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-obgyn-vaginal-discharge",
+      "type": "diagnosis",
+      "label": "Candidiasis / Bacterial vaginosis",
+      "aliases": [
+        "vaginitis",
+        "vulvovaginitis",
+        "leukorrhea"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-vaginal-discharge"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-obgyn-contraception",
+      "type": "chief_complaint",
+      "label": "Contraception counseling",
+      "aliases": [
+        "birth control",
+        "family planning",
+        "contraceptive advice",
+        "pill prescription",
+        "IUD discussion"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-contraception"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-obgyn-contraception",
+      "type": "diagnosis",
+      "label": "Contraceptive management",
+      "aliases": [
+        "contraception",
+        "family planning"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-contraception"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-obgyn-dysmenorrhea",
+      "type": "chief_complaint",
+      "label": "Dysmenorrhea",
+      "aliases": [
+        "painful periods",
+        "period pain",
+        "menstrual cramps",
+        "severe period pain"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-dysmenorrhea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-obgyn-dysmenorrhea",
+      "type": "diagnosis",
+      "label": "Primary dysmenorrhea",
+      "aliases": [
+        "menstrual pain",
+        "painful menstruation"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-dysmenorrhea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-obgyn-postnatal-followup",
+      "type": "chief_complaint",
+      "label": "Postnatal follow-up",
+      "aliases": [
+        "postpartum check",
+        "after delivery check",
+        "postnatal visit",
+        "baby follow-up mother"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-postnatal-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-obgyn-postnatal-followup",
+      "type": "diagnosis",
+      "label": "Postnatal care",
+      "aliases": [
+        "puerperium",
+        "postnatal examination"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-postnatal-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-obgyn-early-pregnancy",
+      "type": "chief_complaint",
+      "label": "Early pregnancy symptoms",
+      "aliases": [
+        "pregnancy symptoms",
+        "nausea pregnant",
+        "pregnancy test positive",
+        "bleeding in early pregnancy"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-early-pregnancy"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-obgyn-early-pregnancy",
+      "type": "diagnosis",
+      "label": "Early pregnancy / Viability query",
+      "aliases": [
+        "threatened miscarriage",
+        "early pregnancy assessment"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-early-pregnancy"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-obgyn-menopause",
+      "type": "chief_complaint",
+      "label": "Menopause symptoms",
+      "aliases": [
+        "hot flashes",
+        "night sweats",
+        "perimenopause symptoms",
+        "menopausal symptoms",
+        "hormone therapy follow-up"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-menopause"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-obgyn-menopause",
+      "type": "diagnosis",
+      "label": "Perimenopause / Menopause",
+      "aliases": [
+        "climacteric",
+        "menopausal transition"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-menopause"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-obgyn-fertility",
+      "type": "chief_complaint",
+      "label": "Fertility concern",
+      "aliases": [
+        "difficulty conceiving",
+        "infertility",
+        "trying to conceive",
+        "subfertility",
+        "recurrent pregnancy loss"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-fertility"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-obgyn-fertility",
+      "type": "diagnosis",
+      "label": "Fertility workup",
+      "aliases": [
+        "infertility",
+        "subfertility",
+        "sterility"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-fertility"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-msk-low-back-pain",
+      "type": "chief_complaint",
+      "label": "Low back pain",
+      "aliases": [
+        "back pain",
+        "lower back pain",
+        "lumbago",
+        "backache",
+        "lumbar strain"
       ],
       "specialty_ids": [
         "Orthopedics / MSK"
       ],
       "workflow_ids": [
-        "msk-low-back-pain-mechanical"
+        "msk-low-back-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-msk-low-back-pain",
+      "type": "diagnosis",
+      "label": "Mechanical back pain",
+      "aliases": [
+        "mechanical low back pain",
+        "lumbosacral strain"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-low-back-pain"
       ],
       "icd_metadata": {
         "icd_system": "ICD-10-CM",
@@ -138,108 +1909,789 @@
       }
     },
     {
-      "entry_id": "cc-msk-back-pain",
+      "entry_id": "cc-msk-neck-pain",
       "type": "chief_complaint",
-      "label": "Low back pain",
+      "label": "Neck pain",
       "aliases": [
-        "back ache"
+        "neck ache",
+        "stiff neck",
+        "cervical pain",
+        "neck stiffness"
       ],
       "specialty_ids": [
         "Orthopedics / MSK"
       ],
       "workflow_ids": [
-        "msk-low-back-pain-mechanical"
-      ]
-    },
-    {
-      "entry_id": "dx-obgyn-candidiasis",
-      "type": "diagnosis",
-      "label": "Vulvovaginal Candidiasis",
-      "aliases": [
-        "yeast infection"
-      ],
-      "specialty_ids": [
-        "OB/GYN"
-      ],
-      "workflow_ids": [
-        "obgyn-vaginal-discharge-candidiasis"
+        "msk-neck-pain"
       ],
       "icd_metadata": {
-        "icd_system": "ICD-10-CM",
-        "icd_code": "B37.3",
-        "icd_label": "Candidiasis of vulva and vagina",
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
         "icd_verified": false,
         "icd_source": null
       }
     },
     {
-      "entry_id": "cc-obgyn-discharge",
-      "type": "chief_complaint",
-      "label": "Vaginal discharge",
-      "aliases": [
-        "leukorrhea"
-      ],
-      "specialty_ids": [
-        "OB/GYN"
-      ],
-      "workflow_ids": [
-        "obgyn-vaginal-discharge-candidiasis"
-      ]
-    },
-    {
-      "entry_id": "dx-psych-mdd",
+      "entry_id": "dx-msk-neck-pain",
       "type": "diagnosis",
-      "label": "Major Depressive Disorder",
+      "label": "Cervical strain",
       "aliases": [
-        "depression",
-        "clinical depression"
+        "cervicalgia",
+        "cervical spine strain"
       ],
       "specialty_ids": [
-        "Psychiatry / Mental Health"
+        "Orthopedics / MSK"
       ],
       "workflow_ids": [
-        "psych-depression-major-depressive"
+        "msk-neck-pain"
       ],
       "icd_metadata": {
-        "icd_system": "ICD-10-CM",
-        "icd_code": "F32.9",
-        "icd_label": "MDD single episode unspecified",
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
         "icd_verified": false,
         "icd_source": null
       }
     },
     {
-      "entry_id": "cc-psych-low-mood",
+      "entry_id": "cc-msk-knee-pain",
       "type": "chief_complaint",
-      "label": "Low mood / depression",
+      "label": "Knee pain",
       "aliases": [
-        "sadness",
-        "depression"
+        "knee ache",
+        "painful knee",
+        "swollen knee",
+        "difficulty walking"
       ],
       "specialty_ids": [
-        "Psychiatry / Mental Health"
+        "Orthopedics / MSK"
       ],
       "workflow_ids": [
-        "psych-depression-major-depressive"
-      ]
+        "msk-knee-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
     },
     {
-      "entry_id": "dx-ent-strep-throat",
+      "entry_id": "dx-msk-knee-pain",
       "type": "diagnosis",
-      "label": "Streptococcal Pharyngitis",
+      "label": "Osteoarthritis of knee",
       "aliases": [
-        "strep throat"
+        "knee osteoarthritis",
+        "gonarthrosis"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-knee-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": "ICD-10-CM",
+        "icd_code": "M17.9",
+        "icd_label": "Knee osteoarthritis",
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-msk-shoulder-pain",
+      "type": "chief_complaint",
+      "label": "Shoulder pain",
+      "aliases": [
+        "shoulder ache",
+        "painful shoulder",
+        "shoulder stiffness",
+        "difficulty raising arm"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-shoulder-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-msk-shoulder-pain",
+      "type": "diagnosis",
+      "label": "Rotator cuff injury",
+      "aliases": [
+        "rotator cuff tendinopathy",
+        "shoulder impingement"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-shoulder-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-msk-hip-pain",
+      "type": "chief_complaint",
+      "label": "Hip pain",
+      "aliases": [
+        "hip ache",
+        "painful hip",
+        "difficulty walking",
+        "groin pain"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-hip-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-msk-hip-pain",
+      "type": "diagnosis",
+      "label": "Osteoarthritis of hip",
+      "aliases": [
+        "hip osteoarthritis",
+        "coxarthrosis"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-hip-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-msk-ankle-pain",
+      "type": "chief_complaint",
+      "label": "Ankle / foot pain",
+      "aliases": [
+        "ankle injury",
+        "foot pain",
+        "heel pain",
+        "plantar heel pain",
+        "painful ankle"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-ankle-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-msk-ankle-pain",
+      "type": "diagnosis",
+      "label": "Sprain / Plantar fasciitis",
+      "aliases": [
+        "ankle sprain",
+        "plantar fasciitis",
+        "foot strain"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-ankle-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-msk-wrist-hand-pain",
+      "type": "chief_complaint",
+      "label": "Wrist / hand pain",
+      "aliases": [
+        "wrist ache",
+        "hand pain",
+        "finger pain",
+        "thumb pain",
+        "median nerve symptoms"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-wrist-hand-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-msk-wrist-hand-pain",
+      "type": "diagnosis",
+      "label": "Carpal tunnel / Strain",
+      "aliases": [
+        "carpal tunnel syndrome",
+        "wrist strain",
+        "tenosynovitis"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-wrist-hand-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-msk-acute-sprain",
+      "type": "chief_complaint",
+      "label": "Acute sprain",
+      "aliases": [
+        "sprained ankle",
+        "twisted ankle",
+        "ligament injury",
+        "acute joint injury"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-acute-sprain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-msk-acute-sprain",
+      "type": "diagnosis",
+      "label": "Ligament injury",
+      "aliases": [
+        "ligament sprain",
+        "grade 1 sprain",
+        "soft tissue injury"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-acute-sprain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-msk-fracture-followup",
+      "type": "chief_complaint",
+      "label": "Fracture follow-up",
+      "aliases": [
+        "broken bone follow-up",
+        "fracture check",
+        "cast review",
+        "orthopaedic follow-up"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-fracture-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-msk-fracture-followup",
+      "type": "diagnosis",
+      "label": "Healing fracture / Post-fracture",
+      "aliases": [
+        "fracture healing",
+        "post-fracture assessment"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-fracture-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-msk-post-op-followup",
+      "type": "chief_complaint",
+      "label": "Post-op follow-up",
+      "aliases": [
+        "surgery follow-up",
+        "post-operative check",
+        "wound check orthopaedic",
+        "ortho surgery review"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-post-op-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-msk-post-op-followup",
+      "type": "diagnosis",
+      "label": "Post-surgical orthopaedic",
+      "aliases": [
+        "post-surgical follow-up",
+        "post-operative care"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-post-op-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-msk-osteoarthritis-followup",
+      "type": "chief_complaint",
+      "label": "Osteoarthritis follow-up",
+      "aliases": [
+        "arthritis follow-up",
+        "joint pain chronic",
+        "OA follow-up",
+        "degenerative joint disease"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-osteoarthritis-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-msk-osteoarthritis-followup",
+      "type": "diagnosis",
+      "label": "Osteoarthritis management",
+      "aliases": [
+        "osteoarthritis review"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-osteoarthritis-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-msk-sports-injury",
+      "type": "chief_complaint",
+      "label": "Sports injury",
+      "aliases": [
+        "sport injury",
+        "athletic injury",
+        "exercise-related injury",
+        "training injury"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-sports-injury"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-msk-sports-injury",
+      "type": "diagnosis",
+      "label": "Acute sports injury",
+      "aliases": [
+        "sports trauma",
+        "athletic injury"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-sports-injury"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ent-ear-pain",
+      "type": "chief_complaint",
+      "label": "Ear pain",
+      "aliases": [
+        "earache",
+        "ear infection",
+        "painful ear",
+        "ear discomfort"
       ],
       "specialty_ids": [
         "ENT"
       ],
       "workflow_ids": [
-        "ent-sore-throat-streptococcal"
+        "ent-ear-pain"
       ],
       "icd_metadata": {
-        "icd_system": "ICD-10-CM",
-        "icd_code": "J02.0",
-        "icd_label": "Streptococcal pharyngitis",
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ent-ear-pain",
+      "type": "diagnosis",
+      "label": "Acute otitis media / OE",
+      "aliases": [
+        "otitis media",
+        "otitis externa",
+        "ear infection"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-ear-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ent-hearing-complaint",
+      "type": "chief_complaint",
+      "label": "Hearing complaint",
+      "aliases": [
+        "hearing loss",
+        "decreased hearing",
+        "hard of hearing",
+        "muffled hearing"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-hearing-complaint"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ent-hearing-complaint",
+      "type": "diagnosis",
+      "label": "Conductive / Sensorineural hearing loss",
+      "aliases": [
+        "conductive hearing loss",
+        "sensorineural hearing loss"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-hearing-complaint"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ent-tinnitus",
+      "type": "chief_complaint",
+      "label": "Tinnitus",
+      "aliases": [
+        "ringing in ears",
+        "buzzing in ears",
+        "ear noise",
+        "whistling in ear"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-tinnitus"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ent-tinnitus",
+      "type": "diagnosis",
+      "label": "Tinnitus",
+      "aliases": [
+        "tinnitus aurium",
+        "subjective tinnitus"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-tinnitus"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ent-dizziness-vertigo",
+      "type": "chief_complaint",
+      "label": "Dizziness / Vertigo",
+      "aliases": [
+        "spinning sensation",
+        "room spinning",
+        "balance problem",
+        "disequilibrium"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-dizziness-vertigo"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ent-dizziness-vertigo",
+      "type": "diagnosis",
+      "label": "BPPV / Vestibular disorder",
+      "aliases": [
+        "benign paroxysmal positional vertigo",
+        "vestibular neuritis"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-dizziness-vertigo"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ent-nasal-congestion",
+      "type": "chief_complaint",
+      "label": "Nasal congestion",
+      "aliases": [
+        "blocked nose",
+        "stuffy nose",
+        "runny nose",
+        "postnasal drip",
+        "sinus congestion"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-nasal-congestion"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ent-nasal-congestion",
+      "type": "diagnosis",
+      "label": "Allergic rhinitis",
+      "aliases": [
+        "allergic rhinitis",
+        "nasal obstruction"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-nasal-congestion"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ent-sinus-symptoms",
+      "type": "chief_complaint",
+      "label": "Sinus symptoms",
+      "aliases": [
+        "sinus pain",
+        "sinus pressure",
+        "facial pain",
+        "frontal headache"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-sinus-symptoms"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ent-sinus-symptoms",
+      "type": "diagnosis",
+      "label": "Sinusitis",
+      "aliases": [
+        "acute sinusitis",
+        "rhinosinusitis"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-sinus-symptoms"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
         "icd_verified": false,
         "icd_source": null
       }
@@ -249,34 +2701,470 @@
       "type": "chief_complaint",
       "label": "Sore throat",
       "aliases": [
-        "pharyngitis",
-        "throat pain"
+        "throat pain",
+        "infected throat",
+        "swollen tonsils",
+        "tonsillitis"
       ],
       "specialty_ids": [
         "ENT",
         "General Medicine / GP"
       ],
       "workflow_ids": [
-        "ent-sore-throat-streptococcal"
-      ]
-    },
-    {
-      "entry_id": "dx-ophth-conjunctivitis",
-      "type": "diagnosis",
-      "label": "Conjunctivitis",
-      "aliases": [
-        "pink eye"
-      ],
-      "specialty_ids": [
-        "Ophthalmology"
-      ],
-      "workflow_ids": [
-        "ophth-red-eye-conjunctivitis"
+        "ent-sore-throat",
+        "gp-sore-throat"
       ],
       "icd_metadata": {
-        "icd_system": "ICD-10-CM",
-        "icd_code": "H10.9",
-        "icd_label": "Unspecified conjunctivitis",
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ent-sore-throat",
+      "type": "diagnosis",
+      "label": "Streptococcal pharyngitis",
+      "aliases": [
+        "strep throat",
+        "bacterial pharyngitis",
+        "tonsillitis"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-sore-throat"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ent-voice-complaint",
+      "type": "chief_complaint",
+      "label": "Voice complaint",
+      "aliases": [
+        "hoarseness",
+        "lost voice",
+        "raspy voice",
+        "voice strain"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-voice-complaint"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ent-voice-complaint",
+      "type": "diagnosis",
+      "label": "Laryngitis",
+      "aliases": [
+        "laryngitis",
+        "dysphonia"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-voice-complaint"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-derm-rash",
+      "type": "chief_complaint",
+      "label": "Rash",
+      "aliases": [
+        "skin rash",
+        "itchy skin",
+        "skin redness",
+        "irritated skin",
+        "red patches"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-rash"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-derm-rash",
+      "type": "diagnosis",
+      "label": "Contact dermatitis / Eczema",
+      "aliases": [
+        "contact dermatitis",
+        "eczema",
+        "dermatitis"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-rash"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-derm-acne",
+      "type": "chief_complaint",
+      "label": "Acne",
+      "aliases": [
+        "pimples",
+        "spots",
+        "breakouts",
+        "zits",
+        "acne breakouts"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-acne"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-derm-acne",
+      "type": "diagnosis",
+      "label": "Acne vulgaris",
+      "aliases": [
+        "acne vulgaris",
+        "comedonal acne",
+        "inflammatory acne"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-acne"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-derm-eczema",
+      "type": "chief_complaint",
+      "label": "Eczema / Dermatitis",
+      "aliases": [
+        "dry itchy skin",
+        "eczema flare",
+        "atopic eczema",
+        "skin inflammation"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-eczema"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-derm-eczema",
+      "type": "diagnosis",
+      "label": "Atopic dermatitis",
+      "aliases": [
+        "atopic dermatitis",
+        "atopic eczema"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-eczema"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-derm-fungal-infection",
+      "type": "chief_complaint",
+      "label": "Fungal infection",
+      "aliases": [
+        "ringworm",
+        "athlete foot",
+        "jock itch",
+        "fungal rash",
+        "skin fungus"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-fungal-infection"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-derm-fungal-infection",
+      "type": "diagnosis",
+      "label": "Tinea / Dermatophytosis",
+      "aliases": [
+        "tinea corporis",
+        "dermatophytosis",
+        "candidal skin infection"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-fungal-infection"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-derm-urticaria",
+      "type": "chief_complaint",
+      "label": "Urticaria",
+      "aliases": [
+        "hives",
+        "welts",
+        "raised itchy bumps",
+        "allergic skin reaction"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-urticaria"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-derm-urticaria",
+      "type": "diagnosis",
+      "label": "Acute urticaria",
+      "aliases": [
+        "urticaria",
+        "nettle rash"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-urticaria"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-derm-wound-review",
+      "type": "chief_complaint",
+      "label": "Wound review",
+      "aliases": [
+        "wound check",
+        "surgical wound review",
+        "injury healing",
+        "wound follow-up"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-wound-review"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-derm-wound-review",
+      "type": "diagnosis",
+      "label": "Wound / Post-procedure check",
+      "aliases": [
+        "wound assessment",
+        "post-procedural wound"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-wound-review"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-derm-skin-lesion-review",
+      "type": "chief_complaint",
+      "label": "Skin lesion review",
+      "aliases": [
+        "mole check",
+        "skin tag",
+        "skin growth",
+        "changing mole",
+        "atypical lesion"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-skin-lesion-review"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-derm-skin-lesion-review",
+      "type": "diagnosis",
+      "label": "Benign / Suspicious lesion",
+      "aliases": [
+        "skin lesion assessment",
+        "mole surveillance",
+        "suspicious pigmented lesion"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-skin-lesion-review"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-derm-hair-loss",
+      "type": "chief_complaint",
+      "label": "Hair loss",
+      "aliases": [
+        "balding",
+        "thinning hair",
+        "hair shedding",
+        "receding hairline",
+        "patchy hair loss"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-hair-loss"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-derm-hair-loss",
+      "type": "diagnosis",
+      "label": "Alopecia",
+      "aliases": [
+        "alopecia",
+        "androgenetic alopecia",
+        "alopecia areata"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-hair-loss"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
         "icd_verified": false,
         "icd_source": null
       }
@@ -286,65 +3174,4225 @@
       "type": "chief_complaint",
       "label": "Red eye",
       "aliases": [
+        "eye redness",
         "pink eye",
-        "eye redness"
+        "bloodshot eyes",
+        "painful red eye"
       ],
       "specialty_ids": [
         "Ophthalmology"
       ],
       "workflow_ids": [
-        "ophth-red-eye-conjunctivitis"
-      ]
+        "ophth-red-eye"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
     },
     {
-      "entry_id": "dx-derm-contact-dermatitis",
+      "entry_id": "dx-ophth-red-eye",
       "type": "diagnosis",
-      "label": "Contact Dermatitis",
+      "label": "Conjunctivitis",
       "aliases": [
+        "conjunctivitis",
+        "ocular hyperaemia"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-red-eye"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ophth-eye-pain",
+      "type": "chief_complaint",
+      "label": "Eye pain",
+      "aliases": [
+        "painful eye",
+        "eye ache",
+        "sharp eye pain",
+        "foreign body sensation"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-eye-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ophth-eye-pain",
+      "type": "diagnosis",
+      "label": "Keratitis / Corneal abrasion",
+      "aliases": [
+        "keratitis",
+        "corneal abrasion",
+        "ocular pain"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-eye-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ophth-vision-change",
+      "type": "chief_complaint",
+      "label": "Vision change",
+      "aliases": [
+        "blurred vision",
+        "vision loss",
+        "double vision",
+        "difficulty seeing"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-vision-change"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ophth-vision-change",
+      "type": "diagnosis",
+      "label": "Refractive error / Cataract",
+      "aliases": [
+        "refractive error",
+        "cataract",
+        "visual disturbance"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-vision-change"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ophth-eye-discharge",
+      "type": "chief_complaint",
+      "label": "Eye discharge",
+      "aliases": [
+        "sticky eye",
+        "watery eye",
+        "pus in eye",
+        "crusty eyelid"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-eye-discharge"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ophth-eye-discharge",
+      "type": "diagnosis",
+      "label": "Conjunctivitis / Dacryocystitis",
+      "aliases": [
+        "ocular discharge",
+        "dacryocystitis",
+        "epiphora"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-eye-discharge"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ophth-contact-lens-complaint",
+      "type": "chief_complaint",
+      "label": "Contact lens complaint",
+      "aliases": [
+        "contact lens problem",
+        "painful contact lens",
+        "red eye from contacts"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-contact-lens-complaint"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ophth-contact-lens-complaint",
+      "type": "diagnosis",
+      "label": "Contact lens complication",
+      "aliases": [
+        "contact lens keratitis",
+        "CLARE",
+        "contact lens intolerance"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-contact-lens-complaint"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-ophth-eye-trauma",
+      "type": "chief_complaint",
+      "label": "Eye trauma",
+      "aliases": [
+        "eye injury",
+        "hit in eye",
+        "chemical eye exposure",
+        "foreign body eye"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-eye-trauma"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-ophth-eye-trauma",
+      "type": "diagnosis",
+      "label": "Ocular trauma",
+      "aliases": [
+        "ocular trauma",
+        "eye contusion",
+        "corneal foreign body"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-eye-trauma"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-psych-anxiety",
+      "type": "chief_complaint",
+      "label": "Anxiety",
+      "aliases": [
+        "feeling anxious",
+        "worry",
+        "nervousness",
+        "stress",
+        "tension"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-anxiety"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-psych-anxiety",
+      "type": "diagnosis",
+      "label": "Generalized anxiety disorder",
+      "aliases": [
+        "GAD",
+        "anxiety disorder",
+        "generalised anxiety"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-anxiety"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-psych-low-mood",
+      "type": "chief_complaint",
+      "label": "Low mood",
+      "aliases": [
+        "depression",
+        "sadness",
+        "feeling down",
+        "hopelessness",
+        "depressed mood"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-low-mood"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-psych-low-mood",
+      "type": "diagnosis",
+      "label": "Major depressive episode",
+      "aliases": [
+        "major depression",
+        "MDD",
+        "clinical depression"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-low-mood"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-psych-sleep-difficulty",
+      "type": "chief_complaint",
+      "label": "Sleep difficulty",
+      "aliases": [
+        "insomnia",
+        "trouble sleeping",
+        "can not sleep",
+        "poor sleep",
+        "waking up"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-sleep-difficulty"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-psych-sleep-difficulty",
+      "type": "diagnosis",
+      "label": "Primary insomnia",
+      "aliases": [
+        "insomnia disorder",
+        "sleep initiation difficulty"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-sleep-difficulty"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-psych-stress-symptoms",
+      "type": "chief_complaint",
+      "label": "Stress-related symptoms",
+      "aliases": [
+        "overwhelmed",
+        "stress reaction",
+        "coping difficulty",
+        "life stressor"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-stress-symptoms"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-psych-stress-symptoms",
+      "type": "diagnosis",
+      "label": "Adjustment disorder",
+      "aliases": [
+        "adjustment disorder",
+        "acute stress reaction"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-stress-symptoms"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-psych-panic-symptoms",
+      "type": "chief_complaint",
+      "label": "Panic symptoms",
+      "aliases": [
+        "panic attack",
+        "sudden fear",
+        "racing heart",
+        "chest tightness anxiety"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-panic-symptoms"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-psych-panic-symptoms",
+      "type": "diagnosis",
+      "label": "Panic disorder",
+      "aliases": [
+        "panic disorder",
+        "panic attacks"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-panic-symptoms"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-psych-medication-followup",
+      "type": "chief_complaint",
+      "label": "Psychiatric medication follow-up",
+      "aliases": [
+        "psych med check",
+        "antidepressant follow-up",
+        "mood stabiliser review",
+        "psychiatrist follow-up"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-medication-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-psych-medication-followup",
+      "type": "diagnosis",
+      "label": "Medication review psychiatry",
+      "aliases": [
+        "psychopharmacology review",
+        "medication management"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-medication-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-fever-urti-cold_symptoms",
+      "type": "synonym",
+      "label": "Cold symptoms",
+      "aliases": [
+        "common cold",
+        "runny nose",
+        "sneezing",
+        "nasal congestion"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-fever-urti"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-fever-urti-flu_like_illness",
+      "type": "synonym",
+      "label": "Flu-like illness",
+      "aliases": [
+        "influenza-like symptoms",
+        "viral illness",
+        "myalgia fever"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-fever-urti"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-fever-urti-upper_respiratory_infection",
+      "type": "lay_term",
+      "label": "Upper respiratory infection",
+      "aliases": [
+        "URI",
+        "upper respiratory tract infection",
+        "resp infection"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-fever-urti"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-cough-persistent_cough",
+      "type": "synonym",
+      "label": "Persistent cough",
+      "aliases": [
+        "chronic cough",
+        "lingering cough",
+        "cough not improving"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-cough"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-cough-chesty_cough",
+      "type": "lay_term",
+      "label": "Chesty cough",
+      "aliases": [
+        "congested cough",
+        "phlegm cough",
+        "mucus"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-cough"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-sore-throat-throat_infection",
+      "type": "lay_term",
+      "label": "Throat infection",
+      "aliases": [
+        "sore throat infection",
+        "bacterial throat",
+        "viral throat"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-sore-throat"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-sore-throat-painful_swallowing",
+      "type": "synonym",
+      "label": "Painful swallowing",
+      "aliases": [
+        "odynophagia",
+        "difficulty swallowing",
+        "dysphagia"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-sore-throat"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-headache-tension_headache_type",
+      "type": "lay_term",
+      "label": "Tension headache type",
+      "aliases": [
+        "stress headache",
+        "muscle tension headache",
+        "band headache"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-headache"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-headache-migraine_with_aura",
+      "type": "lay_term",
+      "label": "Migraine with aura",
+      "aliases": [
+        "aura",
+        "light sensitivity",
+        "nausea with headache",
+        "throbbing"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-headache"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-dizziness-lightheadedness",
+      "type": "synonym",
+      "label": "Lightheadedness",
+      "aliases": [
+        "dizziness feeling",
+        "faint",
+        "presyncope",
+        "woozy"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-dizziness"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-dizziness-balance_difficulty",
+      "type": "synonym",
+      "label": "Balance difficulty",
+      "aliases": [
+        "unsteady gait",
+        "feeling off balance",
+        "disequilibrium"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-dizziness"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-fatigue-chronic_fatigue",
+      "type": "synonym",
+      "label": "Chronic fatigue",
+      "aliases": [
+        "persistent tiredness",
+        "long-term fatigue",
+        "ongoing exhaustion"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-fatigue"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-fatigue-low_energy",
+      "type": "lay_term",
+      "label": "Low energy",
+      "aliases": [
+        "lack of energy",
+        "sluggish",
+        "weak feeling",
+        "malaise"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-fatigue"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-abdominal-pain-upper_abdominal_pain",
+      "type": "synonym",
+      "label": "Upper abdominal pain",
+      "aliases": [
+        "epigastric pain",
+        "gastric discomfort",
+        "stomach pain upper"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-abdominal-pain-indigestion",
+      "type": "lay_term",
+      "label": "Indigestion",
+      "aliases": [
+        "dyspepsia",
+        "bloating",
+        "gas",
+        "upset stomach after meals"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-nausea-nausea_or_queasiness",
+      "type": "synonym",
+      "label": "Nausea or queasiness",
+      "aliases": [
+        "feeling sick",
+        "queasy",
+        "sick to stomach"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-nausea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-nausea-stomach_bug",
+      "type": "lay_term",
+      "label": "Stomach bug",
+      "aliases": [
+        "gastro bug",
+        "food poisoning",
+        "viral gastroenteritis"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-nausea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-diarrhea-loose_stools",
+      "type": "lay_term",
+      "label": "Loose stools",
+      "aliases": [
+        "watery stool",
+        "frequent stools",
+        "bowel frequency"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-diarrhea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-diarrhea-tummy_bug",
+      "type": "lay_term",
+      "label": "Tummy bug",
+      "aliases": [
+        "stomach virus",
+        "intestinal infection",
+        "viral diarrhea"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-diarrhea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-constipation-hard_stool",
+      "type": "synonym",
+      "label": "Hard stool",
+      "aliases": [
+        "difficult bowel movement",
+        "straining",
+        "incomplete evacuation"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-constipation"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-constipation-irregular_bowels",
+      "type": "lay_term",
+      "label": "Irregular bowels",
+      "aliases": [
+        "bowel issues",
+        "chronic constipation",
+        "laxative use"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-constipation"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-chest-pain-heartburn_type_pain",
+      "type": "synonym",
+      "label": "Heartburn type pain",
+      "aliases": [
+        "burning chest",
+        "acid reflux",
+        "GERD symptoms",
+        "retrosternal burning"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-chest-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-chest-pain-chest_pressure",
+      "type": "synonym",
+      "label": "Chest pressure",
+      "aliases": [
+        "pressure in chest",
+        "tight chest",
+        "non-cardiac chest pain"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-chest-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-palpitations-skipped_heartbeats",
+      "type": "synonym",
+      "label": "Skipped heartbeats",
+      "aliases": [
+        "heart skipping",
+        "ectopic beats",
+        "missed beats"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-palpitations"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-palpitations-fast_heart_rate",
+      "type": "lay_term",
+      "label": "Fast heart rate",
+      "aliases": [
+        "tachycardia",
+        "pounding heart",
+        "fluttering",
+        "racing heart"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-palpitations"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-shortness-of-breath-breathlessness",
+      "type": "synonym",
+      "label": "Breathlessness",
+      "aliases": [
+        "dyspnoea",
+        "breathing difficulty",
+        "gasping for air"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-shortness-of-breath"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-shortness-of-breath-wheezing_episodes",
+      "type": "lay_term",
+      "label": "Wheezing episodes",
+      "aliases": [
+        "difficulty breathing out",
+        "chest tightness breathing"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-shortness-of-breath"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-hypertension-followup-blood_pressure_check",
+      "type": "synonym",
+      "label": "Blood pressure check",
+      "aliases": [
+        "HTN follow up",
+        "BP monitoring",
+        "hypertension check"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-hypertension-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-hypertension-followup-hypertension_meds_review",
+      "type": "synonym",
+      "label": "Hypertension meds review",
+      "aliases": [
+        "antihypertensive review",
+        "BP medication check"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-hypertension-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-diabetes-followup-glucose_level_review",
+      "type": "synonym",
+      "label": "Glucose level review",
+      "aliases": [
+        "sugar level review",
+        "diabetes monitoring",
+        "glucose check"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-diabetes-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-diabetes-followup-hba1c_follow_up",
+      "type": "synonym",
+      "label": "HbA1c follow up",
+      "aliases": [
+        "diabetic control review",
+        "long term glucose check"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-diabetes-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-thyroid-followup-thyroid_function_review",
+      "type": "synonym",
+      "label": "Thyroid function review",
+      "aliases": [
+        "TSH check",
+        "TFT follow-up",
+        "thyroid blood work"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-thyroid-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-gp-thyroid-followup-thyroid_medication_review",
+      "type": "lay_term",
+      "label": "Thyroid medication review",
+      "aliases": [
+        "levothyroxine check",
+        "thyroid hormone meds"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-thyroid-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-dyslipidemia-followup-cholesterol_check",
+      "type": "synonym",
+      "label": "Cholesterol check",
+      "aliases": [
+        "lipid profile review",
+        "lipid follow-up",
+        "statin review"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-dyslipidemia-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-dyslipidemia-followup-statin_therapy_review",
+      "type": "synonym",
+      "label": "Statin therapy review",
+      "aliases": [
+        "lipid medication",
+        "cholesterol management",
+        "fat levels"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-dyslipidemia-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-lab-result-review-investigation_results_review",
+      "type": "synonym",
+      "label": "Investigation results review",
+      "aliases": [
+        "lab results discussion",
+        "diagnostic tests review",
+        "blood panel"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-lab-result-review"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-gp-lab-result-review-blood_work_review",
+      "type": "synonym",
+      "label": "Blood work review",
+      "aliases": [
+        "CBC review",
+        "biochemistry review",
+        "lab report discussion"
+      ],
+      "specialty_ids": [
+        "General Medicine / GP"
+      ],
+      "workflow_ids": [
+        "gp-lab-result-review"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-fever-child_high_temperature",
+      "type": "synonym",
+      "label": "Child high temperature",
+      "aliases": [
+        "baby fever",
+        "infant fever",
+        "child pyrexia"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-fever"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-peds-fever-feverish_child",
+      "type": "lay_term",
+      "label": "Feverish child",
+      "aliases": [
+        "warm child",
+        "hot to touch",
+        "temperature child"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-fever"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-cough-child_runny_nose",
+      "type": "synonym",
+      "label": "Child runny nose",
+      "aliases": [
+        "baby congestion",
+        "infant cold",
+        "child nasal discharge"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-cough"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-peds-cough-baby_chesty",
+      "type": "lay_term",
+      "label": "Baby chesty",
+      "aliases": [
+        "infant cough",
+        "baby coughing",
+        "child congested"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-cough"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-vomiting-diarrhea-child_dehydration_risk",
+      "type": "synonym",
+      "label": "Child dehydration risk",
+      "aliases": [
+        "vomiting child fluids",
+        "baby not keeping milk",
+        "diarrhea dehydration"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-vomiting-diarrhea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-peds-vomiting-diarrhea-baby_stomach_bug",
+      "type": "lay_term",
+      "label": "Baby stomach bug",
+      "aliases": [
+        "child gastroenteritis",
+        "infant diarrhea vomiting"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-vomiting-diarrhea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-peds-rash-child_spots",
+      "type": "lay_term",
+      "label": "Child spots",
+      "aliases": [
+        "baby spots",
+        "skin rash child",
+        "child skin bumps"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-rash"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-rash-child_skin_redness",
+      "type": "synonym",
+      "label": "Child skin redness",
+      "aliases": [
+        "baby skin irritation",
+        "child allergic skin",
+        "infant rash"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-rash"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-poor-feeding-baby_not_eating",
+      "type": "synonym",
+      "label": "Baby not eating",
+      "aliases": [
+        "infant poor appetite",
+        "child refusing food",
+        "baby low milk intake"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-poor-feeding"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-peds-poor-feeding-infant_feeding_problem",
+      "type": "lay_term",
+      "label": "Infant feeding problem",
+      "aliases": [
+        "baby feeding difficulty",
+        "poor suckling"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-poor-feeding"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-ear-pain-child_earache",
+      "type": "synonym",
+      "label": "Child earache",
+      "aliases": [
+        "baby ear infection",
+        "infant ear pulling",
+        "toddler ear pain"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-ear-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-peds-ear-pain-ear_infection_child",
+      "type": "lay_term",
+      "label": "Ear infection child",
+      "aliases": [
+        "otitis media child",
+        "middle ear infection"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-ear-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-abdominal-pain-child_tummy_pain",
+      "type": "synonym",
+      "label": "Child tummy pain",
+      "aliases": [
+        "baby stomach ache",
+        "child belly ache",
+        "toddler abdominal pain"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-routine-followup-child_growth_check",
+      "type": "synonym",
+      "label": "Child growth check",
+      "aliases": [
+        "well baby visit",
+        "growth monitoring child",
+        "developmental check"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-routine-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-peds-routine-followup-baby_health_check",
+      "type": "lay_term",
+      "label": "Baby health check",
+      "aliases": [
+        "infant physical exam",
+        "well child exam",
+        "routine pediatric"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-routine-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-vaccination-childhood_immunisation",
+      "type": "synonym",
+      "label": "Childhood immunisation",
+      "aliases": [
+        "baby vaccine schedule",
+        "infant shots",
+        "vaccination reminder"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-vaccination"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-peds-vaccination-baby_shots",
+      "type": "lay_term",
+      "label": "Baby shots",
+      "aliases": [
+        "vaccine visit child",
+        "immunisation appointment"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-vaccination"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-growth-concern-poor_weight_gain_child",
+      "type": "synonym",
+      "label": "Poor weight gain child",
+      "aliases": [
+        "weight loss child",
+        "short stature concern",
+        "small for age"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-growth-concern"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-peds-growth-concern-child_not_growing",
+      "type": "lay_term",
+      "label": "Child not growing",
+      "aliases": [
+        "growth delay",
+        "baby not gaining weight properly"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-growth-concern"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-development-concern-speech_delay",
+      "type": "synonym",
+      "label": "Speech delay",
+      "aliases": [
+        "child not talking",
+        "language delay",
+        "communication delay"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-development-concern"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-development-concern-motor_delay",
+      "type": "synonym",
+      "label": "Motor delay",
+      "aliases": [
+        "not walking late",
+        "crawling delay",
+        "gross motor delay"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-development-concern"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-school-note-school_absence_note",
+      "type": "synonym",
+      "label": "School absence note",
+      "aliases": [
+        "child medical certificate",
+        "school fitness note"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-school-note"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-peds-school-note-doctor_note_child",
+      "type": "lay_term",
+      "label": "Doctor note child",
+      "aliases": [
+        "sick certificate child",
+        "school excuse"
+      ],
+      "specialty_ids": [
+        "Pediatrics"
+      ],
+      "workflow_ids": [
+        "peds-school-note"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-antenatal-followup-pregnancy_care",
+      "type": "synonym",
+      "label": "Pregnancy care",
+      "aliases": [
+        "maternity check up",
+        "pregnancy monitoring",
+        "obstetrics follow up"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-antenatal-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-antenatal-followup-anc_visit",
+      "type": "synonym",
+      "label": "ANC visit",
+      "aliases": [
+        "antenatal clinic",
+        "routine pregnancy exam",
+        "pregnancy check"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-antenatal-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-pelvic-pain-lower_abdomen_pain_female",
+      "type": "synonym",
+      "label": "Lower abdomen pain female",
+      "aliases": [
+        "adnexal tenderness",
+        "pelvic discomfort female"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-pelvic-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-obgyn-pelvic-pain-womb_pain",
+      "type": "lay_term",
+      "label": "Womb pain",
+      "aliases": [
+        "pelvic cramping",
+        "lower abdominal pain gynecology"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-pelvic-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-irregular-bleeding-abnormal_uterine_bleeding",
+      "type": "synonym",
+      "label": "Abnormal uterine bleeding",
+      "aliases": [
+        "AUB",
+        "heavy periods",
+        "irregular cycles",
+        "metrorrhagia"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-irregular-bleeding"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-obgyn-irregular-bleeding-spotting_between_periods",
+      "type": "lay_term",
+      "label": "Spotting between periods",
+      "aliases": [
+        "intermenstrual bleeding",
+        "breakthrough bleeding"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-irregular-bleeding"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-vaginal-discharge-abnormal_discharge_female",
+      "type": "synonym",
+      "label": "Abnormal discharge female",
+      "aliases": [
+        "vaginal itching",
+        "discharge odor",
+        "vulvar irritation"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-vaginal-discharge"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-obgyn-vaginal-discharge-yeast_infection",
+      "type": "lay_term",
+      "label": "Yeast infection",
+      "aliases": [
+        "vaginal thrush",
+        "candida symptoms",
+        "itching discharge"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-vaginal-discharge"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-contraception-birth_control",
+      "type": "synonym",
+      "label": "Birth control",
+      "aliases": [
+        "contraceptive pill",
+        "IUD",
+        "family planning discussion"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-contraception"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-obgyn-contraception-preventing_pregnancy",
+      "type": "lay_term",
+      "label": "Preventing pregnancy",
+      "aliases": [
+        "contraception advice",
+        "hormonal contraception"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-contraception"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-dysmenorrhea-painful_menstruation",
+      "type": "synonym",
+      "label": "Painful menstruation",
+      "aliases": [
+        "period cramps",
+        "menstrual pain",
+        "severe period pain"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-dysmenorrhea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-obgyn-dysmenorrhea-bad_period_pain",
+      "type": "lay_term",
+      "label": "Bad period pain",
+      "aliases": [
+        "dysmenorrhea treatment",
+        "menstrual cramping severe"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-dysmenorrhea"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-postnatal-followup-post_delivery_check",
+      "type": "synonym",
+      "label": "Post delivery check",
+      "aliases": [
+        "postpartum assessment",
+        "after birth follow up"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-postnatal-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-obgyn-postnatal-followup-after_birth_check",
+      "type": "lay_term",
+      "label": "After birth check",
+      "aliases": [
+        "six week check",
+        "postnatal recovery"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-postnatal-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-early-pregnancy-first_trimester_symptoms",
+      "type": "synonym",
+      "label": "First trimester symptoms",
+      "aliases": [
+        "early gestation",
+        "pregnancy confirmation",
+        "nausea pregnancy"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-early-pregnancy"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-early-pregnancy-pregnancy_bleeding_early",
+      "type": "synonym",
+      "label": "Pregnancy bleeding early",
+      "aliases": [
+        "threatened miscarriage",
+        "spotting pregnant"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-early-pregnancy"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-menopause-hormone_therapy_review",
+      "type": "synonym",
+      "label": "Hormone therapy review",
+      "aliases": [
+        "HRT follow up",
+        "menopausal hormone treatment"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-menopause"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-obgyn-menopause-change_of_life",
+      "type": "lay_term",
+      "label": "Change of life",
+      "aliases": [
+        "perimenopause management",
+        "menopause transition treatment"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-menopause"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-fertility-trying_to_conceive",
+      "type": "synonym",
+      "label": "Trying to conceive",
+      "aliases": [
+        "subfertility workup",
+        "preconception counseling",
+        "infertility assessment"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-fertility"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-obgyn-fertility-recurrent_pregnancy_loss",
+      "type": "synonym",
+      "label": "Recurrent pregnancy loss",
+      "aliases": [
+        "miscarriage recurrent",
+        "habitual abortion workup"
+      ],
+      "specialty_ids": [
+        "OB/GYN"
+      ],
+      "workflow_ids": [
+        "obgyn-fertility"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-low-back-pain-lumbar_pain",
+      "type": "synonym",
+      "label": "Lumbar pain",
+      "aliases": [
+        "lower spine pain",
+        "lumbosacral pain",
+        "back ache"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-low-back-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-msk-low-back-pain-bad_back",
+      "type": "lay_term",
+      "label": "Bad back",
+      "aliases": [
+        "mechanical back pain",
+        "back strain",
+        "back injury"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-low-back-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-neck-pain-cervicalgia",
+      "type": "synonym",
+      "label": "Cervicalgia",
+      "aliases": [
+        "stiff neck",
+        "cervical strain",
+        "neck ache",
+        "neck injury"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-neck-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-msk-neck-pain-wry_neck",
+      "type": "lay_term",
+      "label": "Wry neck",
+      "aliases": [
+        "torticollis",
+        "neck muscle spasm"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-neck-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-knee-pain-painful_knee",
+      "type": "synonym",
+      "label": "Painful knee",
+      "aliases": [
+        "swollen knee",
+        "crepitus knee",
+        "difficulty bending knee"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-knee-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-msk-knee-pain-knee_arthritis",
+      "type": "lay_term",
+      "label": "Knee arthritis",
+      "aliases": [
+        "degenerative knee",
+        "osteoarthritis knee"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-knee-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-shoulder-pain-rotator_cuff_problem",
+      "type": "synonym",
+      "label": "Rotator cuff problem",
+      "aliases": [
+        "shoulder impingement",
+        "frozen shoulder",
+        "tendinitis shoulder"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-shoulder-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-msk-shoulder-pain-shoulder_stiffness",
+      "type": "lay_term",
+      "label": "Shoulder stiffness",
+      "aliases": [
+        "difficulty raising arm",
+        "frozen shoulder",
+        "adhesive capsulitis"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-shoulder-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-hip-pain-groin_pain",
+      "type": "synonym",
+      "label": "Groin pain",
+      "aliases": [
+        "hip arthritis",
+        "degenerative hip",
+        "coxarthrosis"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-hip-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-msk-hip-pain-hip_stiffness",
+      "type": "lay_term",
+      "label": "Hip stiffness",
+      "aliases": [
+        "difficulty walking hip",
+        "hip joint pain"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-hip-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-ankle-pain-heel_pain",
+      "type": "synonym",
+      "label": "Heel pain",
+      "aliases": [
+        "plantar fasciitis",
+        "painful heel",
+        "heel spur"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-ankle-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-msk-ankle-pain-foot_injury",
+      "type": "lay_term",
+      "label": "Foot injury",
+      "aliases": [
+        "ankle sprain",
+        "twisted foot",
+        "foot strain"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-ankle-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-wrist-hand-pain-median_nerve_symptoms",
+      "type": "synonym",
+      "label": "Median nerve symptoms",
+      "aliases": [
+        "carpal tunnel",
+        "hand numbness",
+        "finger tingling"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-wrist-hand-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-msk-wrist-hand-pain-wrist_strain",
+      "type": "lay_term",
+      "label": "Wrist strain",
+      "aliases": [
+        "tenosynovitis",
+        "repetitive strain injury wrist"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-wrist-hand-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-acute-sprain-twisted_ankle",
+      "type": "synonym",
+      "label": "Twisted ankle",
+      "aliases": [
+        "ankle ligament injury",
+        "inversion injury ankle"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-acute-sprain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-msk-acute-sprain-soft_tissue_injury",
+      "type": "lay_term",
+      "label": "Soft tissue injury",
+      "aliases": [
+        "muscle strain",
+        "ligament tear grade 1"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-acute-sprain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-fracture-followup-cast_check",
+      "type": "synonym",
+      "label": "Cast check",
+      "aliases": [
+        "fracture healing review",
+        "orthopaedic fracture follow up"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-fracture-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-msk-fracture-followup-bone_healing_check",
+      "type": "lay_term",
+      "label": "Bone healing check",
+      "aliases": [
+        "broken bone recovery",
+        "x ray check fracture"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-fracture-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-post-op-followup-post_surgical_assessment",
+      "type": "synonym",
+      "label": "Post-surgical assessment",
+      "aliases": [
+        "surgery wound check",
+        "post ortho op",
+        "recovery follow up"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-post-op-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-post-op-followup-joint_replacement_follow_up",
+      "type": "synonym",
+      "label": "Joint replacement follow up",
+      "aliases": [
+        "TKR check",
+        "THR follow up",
+        "arthroplasty review"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-post-op-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-osteoarthritis-followup-oa_management",
+      "type": "synonym",
+      "label": "OA management",
+      "aliases": [
+        "degenerative joint disease",
+        "arthritis follow up"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-osteoarthritis-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-msk-osteoarthritis-followup-arthritis_review",
+      "type": "lay_term",
+      "label": "Arthritis review",
+      "aliases": [
+        "joint pain chronic",
+        "osteoarthritis treatment review"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-osteoarthritis-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-msk-sports-injury-athletic_injury",
+      "type": "synonym",
+      "label": "Athletic injury",
+      "aliases": [
+        "training injury",
+        "sport trauma",
+        "gym injury"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-sports-injury"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-msk-sports-injury-running_injury",
+      "type": "lay_term",
+      "label": "Running injury",
+      "aliases": [
+        "exercise-related injury",
+        "muscle tear sports"
+      ],
+      "specialty_ids": [
+        "Orthopedics / MSK"
+      ],
+      "workflow_ids": [
+        "msk-sports-injury"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ent-ear-pain-painful_ear",
+      "type": "synonym",
+      "label": "Painful ear",
+      "aliases": [
+        "earache",
+        "ear infection",
+        "otalgia"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-ear-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-ent-ear-pain-middle_ear_infection",
+      "type": "lay_term",
+      "label": "Middle ear infection",
+      "aliases": [
+        "otitis media infection",
+        "ear drum inflammation"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-ear-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ent-hearing-complaint-reduced_hearing",
+      "type": "synonym",
+      "label": "Reduced hearing",
+      "aliases": [
+        "deafness",
+        "muffled hearing",
+        "hypoacusis"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-hearing-complaint"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-ent-hearing-complaint-hearing_difficulty",
+      "type": "lay_term",
+      "label": "Hearing difficulty",
+      "aliases": [
+        "hard of hearing",
+        "poor hearing"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-hearing-complaint"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ent-tinnitus-ringing_ears",
+      "type": "synonym",
+      "label": "Ringing ears",
+      "aliases": [
+        "ear buzzing",
+        "tinnitus noise",
+        "ear humming"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-tinnitus"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-ent-tinnitus-noise_in_ear",
+      "type": "lay_term",
+      "label": "Noise in ear",
+      "aliases": [
+        "whistling ear",
+        "hissing in ear"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-tinnitus"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ent-dizziness-vertigo-spinning_sensation",
+      "type": "synonym",
+      "label": "Spinning sensation",
+      "aliases": [
+        "vertigo attack",
+        "BPPV",
+        "positional vertigo"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-dizziness-vertigo"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-ent-dizziness-vertigo-room_spinning",
+      "type": "lay_term",
+      "label": "Room spinning",
+      "aliases": [
+        "disequilibrium",
+        "balance problem inner ear"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-dizziness-vertigo"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ent-nasal-congestion-stuffy_nose",
+      "type": "synonym",
+      "label": "Stuffy nose",
+      "aliases": [
+        "blocked nasal passages",
+        "nasal obstruction",
+        "nostril blocked"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-nasal-congestion"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-ent-nasal-congestion-sinus_congestion",
+      "type": "lay_term",
+      "label": "Sinus congestion",
+      "aliases": [
+        "postnasal drip",
+        "catarrh",
+        "rhinitis"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-nasal-congestion"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ent-sinus-symptoms-facial_pressure",
+      "type": "synonym",
+      "label": "Facial pressure",
+      "aliases": [
+        "frontal headache",
+        "sinus headache",
+        "cheek pain"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-sinus-symptoms"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ent-sinus-symptoms-sinus_pain",
+      "type": "synonym",
+      "label": "Sinus pain",
+      "aliases": [
+        "sinus infection",
+        "maxillary sinusitis",
+        "ethmoid sinusitis"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-sinus-symptoms"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ent-sore-throat-swollen_tonsils",
+      "type": "synonym",
+      "label": "Swollen tonsils",
+      "aliases": [
+        "tonsillitis",
+        "infected tonsils",
+        "throat infection"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-sore-throat"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-ent-sore-throat-strep_throat",
+      "type": "lay_term",
+      "label": "Strep throat",
+      "aliases": [
+        "streptococcal pharyngitis",
+        "bacterial sore throat"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-sore-throat"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ent-voice-complaint-hoarseness",
+      "type": "synonym",
+      "label": "Hoarseness",
+      "aliases": [
+        "raspy voice",
+        "lost voice",
+        "strained voice"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-voice-complaint"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-ent-voice-complaint-vocal_strain",
+      "type": "lay_term",
+      "label": "Vocal strain",
+      "aliases": [
+        "laryngitis",
+        "singer voice problem"
+      ],
+      "specialty_ids": [
+        "ENT"
+      ],
+      "workflow_ids": [
+        "ent-voice-complaint"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-derm-rash-skin_redness",
+      "type": "synonym",
+      "label": "Skin redness",
+      "aliases": [
+        "red patches skin",
+        "erythema",
+        "skin irritation"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-rash"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-derm-rash-itchy_skin",
+      "type": "lay_term",
+      "label": "Itchy skin",
+      "aliases": [
+        "pruritus",
+        "skin allergy",
+        "contact reaction"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-rash"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-derm-acne-pimples",
+      "type": "synonym",
+      "label": "Pimples",
+      "aliases": [
+        "zits",
+        "breakouts",
+        "acne spots",
+        "comedones"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-acne"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-derm-acne-acne_follow_up",
+      "type": "synonym",
+      "label": "Acne follow up",
+      "aliases": [
+        "acne treatment review",
+        "acne medication check"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-acne"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-derm-eczema-dry_itchy_skin",
+      "type": "synonym",
+      "label": "Dry itchy skin",
+      "aliases": [
+        "atopic eczema",
+        "skin inflammation",
         "allergic dermatitis"
       ],
       "specialty_ids": [
         "Dermatology"
       ],
       "workflow_ids": [
-        "derm-itchy-rash-contact-dermatitis"
+        "derm-eczema"
       ],
       "icd_metadata": {
-        "icd_system": "ICD-10-CM",
-        "icd_code": "L25.9",
-        "icd_label": "Unspecified contact dermatitis",
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
         "icd_verified": false,
         "icd_source": null
       }
     },
     {
-      "entry_id": "cc-derm-rash",
-      "type": "chief_complaint",
-      "label": "Itchy rash",
+      "entry_id": "lay_term-derm-eczema-eczema_flare_up",
+      "type": "lay_term",
+      "label": "Eczema flare up",
       "aliases": [
-        "pruritic rash",
-        "skin rash"
+        "dermatitis flare",
+        "skin flare management"
       ],
       "specialty_ids": [
         "Dermatology"
       ],
       "workflow_ids": [
-        "derm-itchy-rash-contact-dermatitis"
-      ]
+        "derm-eczema"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
     },
     {
-      "entry_id": "cc-peds-fever",
-      "type": "chief_complaint",
-      "label": "Fever in child",
+      "entry_id": "synonym-derm-fungal-infection-ringworm",
+      "type": "synonym",
+      "label": "Ringworm",
       "aliases": [
-        "fever in infant"
+        "tinea infection",
+        "athlete foot",
+        "jock itch",
+        "skin fungus"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-fungal-infection"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-derm-fungal-infection-skin_fungal_infection",
+      "type": "lay_term",
+      "label": "Skin fungal infection",
+      "aliases": [
+        "dermatophyte infection",
+        "candida skin"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-fungal-infection"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-derm-urticaria-hives",
+      "type": "synonym",
+      "label": "Hives",
+      "aliases": [
+        "welts",
+        "raised bumps",
+        "allergic reaction skin"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-urticaria"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-derm-urticaria-allergic_skin_reaction",
+      "type": "lay_term",
+      "label": "Allergic skin reaction",
+      "aliases": [
+        "urticarial rash",
+        "angioedema"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-urticaria"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-derm-wound-review-surgical_wound_check",
+      "type": "synonym",
+      "label": "Surgical wound check",
+      "aliases": [
+        "post procedure wound",
+        "stitches removal",
+        "wound healing check"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-wound-review"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-derm-wound-review-scar_assessment",
+      "type": "lay_term",
+      "label": "Scar assessment",
+      "aliases": [
+        "wound dressing check",
+        "infection wound"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-wound-review"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-derm-skin-lesion-review-mole_check",
+      "type": "synonym",
+      "label": "Mole check",
+      "aliases": [
+        "changing mole",
+        "atypical nevus",
+        "skin cancer screening"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-skin-lesion-review"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-derm-skin-lesion-review-skin_growth_evaluation",
+      "type": "synonym",
+      "label": "Skin growth evaluation",
+      "aliases": [
+        "skin papule",
+        "nodule check",
+        "lesion suspicious"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-skin-lesion-review"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-derm-hair-loss-thinning_hair",
+      "type": "synonym",
+      "label": "Thinning hair",
+      "aliases": [
+        "balding",
+        "receding hairline",
+        "shedding hair"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-hair-loss"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-derm-hair-loss-patchy_hair_loss",
+      "type": "synonym",
+      "label": "Patchy hair loss",
+      "aliases": [
+        "alopecia areata",
+        "bald patch",
+        "hair fall"
+      ],
+      "specialty_ids": [
+        "Dermatology"
+      ],
+      "workflow_ids": [
+        "derm-hair-loss"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ophth-red-eye-pink_eye",
+      "type": "synonym",
+      "label": "Pink eye",
+      "aliases": [
+        "ocular redness",
+        "bloodshot eye",
+        "scleral injection"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-red-eye"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-ophth-red-eye-eye_irritation",
+      "type": "lay_term",
+      "label": "Eye irritation",
+      "aliases": [
+        "gritty eye",
+        "scratchy eye",
+        "irritated eye"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-red-eye"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ophth-eye-pain-sharp_eye_pain",
+      "type": "synonym",
+      "label": "Sharp eye pain",
+      "aliases": [
+        "corneal abrasion",
+        "foreign body sensation",
+        "keratitis"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-eye-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ophth-eye-pain-photophobia",
+      "type": "synonym",
+      "label": "Photophobia",
+      "aliases": [
+        "light sensitivity",
+        "painful to light"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-eye-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ophth-vision-change-blurry_vision",
+      "type": "synonym",
+      "label": "Blurry vision",
+      "aliases": [
+        "visual disturbance",
+        "decreased vision",
+        "cloudy vision"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-vision-change"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-ophth-vision-change-double_vision",
+      "type": "lay_term",
+      "label": "Double vision",
+      "aliases": [
+        "diplopia",
+        "vision problem",
+        "sight difficulty"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-vision-change"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ophth-eye-discharge-sticky_eyes",
+      "type": "synonym",
+      "label": "Sticky eyes",
+      "aliases": [
+        "crusty eyes",
+        "eye discharge",
+        "watery eye"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-eye-discharge"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-ophth-eye-discharge-eye_mucus",
+      "type": "lay_term",
+      "label": "Eye mucus",
+      "aliases": [
+        "pus in eye",
+        "conjunctivitis discharge"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-eye-discharge"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ophth-contact-lens-complaint-cl_related_problem",
+      "type": "synonym",
+      "label": "CL related problem",
+      "aliases": [
+        "contact lens intolerance",
+        "CL pain",
+        "contact lens complication"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-contact-lens-complaint"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ophth-contact-lens-complaint-contact_lens_overwear",
+      "type": "synonym",
+      "label": "Contact lens overwear",
+      "aliases": [
+        "CL overwear syndrome",
+        "dry eye contacts"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-contact-lens-complaint"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-ophth-eye-trauma-eye_injury",
+      "type": "lay_term",
+      "label": "Eye injury",
+      "aliases": [
+        "ocular trauma",
+        "hit in eye",
+        "foreign body eye"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-eye-trauma"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-ophth-eye-trauma-chemical_eye_exposure",
+      "type": "synonym",
+      "label": "Chemical eye exposure",
+      "aliases": [
+        "chemical splash eye",
+        "eye burn"
+      ],
+      "specialty_ids": [
+        "Ophthalmology"
+      ],
+      "workflow_ids": [
+        "ophth-eye-trauma"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-psych-anxiety-worrying",
+      "type": "synonym",
+      "label": "Worrying",
+      "aliases": [
+        "anxiety symptoms",
+        "nervousness",
+        "tension",
+        "unease"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-anxiety"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-psych-anxiety-generalised_anxiety",
+      "type": "synonym",
+      "label": "Generalised anxiety",
+      "aliases": [
+        "GAD review",
+        "anxiety management",
+        "worry excessive"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-anxiety"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-psych-low-mood-sadness",
+      "type": "synonym",
+      "label": "Sadness",
+      "aliases": [
+        "feeling down",
+        "depressed mood",
+        "unhappiness"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-low-mood"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-psych-low-mood-depression_symptoms",
+      "type": "lay_term",
+      "label": "Depression symptoms",
+      "aliases": [
+        "MDD symptoms",
+        "low mood persistent",
+        "loss of interest"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-low-mood"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-psych-sleep-difficulty-trouble_sleeping",
+      "type": "synonym",
+      "label": "Trouble sleeping",
+      "aliases": [
+        "insomnia",
+        "can not sleep",
+        "poor sleep quality"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-sleep-difficulty"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-psych-sleep-difficulty-can_not_fall_asleep",
+      "type": "lay_term",
+      "label": "Can not fall asleep",
+      "aliases": [
+        "sleep initiation difficulty",
+        "waking up often"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-sleep-difficulty"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-psych-stress-symptoms-overwhelmed_feeling",
+      "type": "synonym",
+      "label": "Overwhelmed feeling",
+      "aliases": [
+        "adjustment reaction",
+        "coping difficulty",
+        "life stress"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-stress-symptoms"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-psych-stress-symptoms-burnout",
+      "type": "synonym",
+      "label": "Burnout",
+      "aliases": [
+        "stress management",
+        "work related stress",
+        "emotional exhaustion"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-stress-symptoms"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "lay_term-psych-panic-symptoms-panic_attack",
+      "type": "lay_term",
+      "label": "Panic attack",
+      "aliases": [
+        "sudden fear attack",
+        "rapid heart anxiety",
+        "hyperventilation"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-panic-symptoms"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-psych-panic-symptoms-panic_disorder_review",
+      "type": "synonym",
+      "label": "Panic disorder review",
+      "aliases": [
+        "recurrent panic attacks",
+        "agoraphobia symptoms"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-panic-symptoms"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-psych-medication-followup-antidepressant_review",
+      "type": "synonym",
+      "label": "Antidepressant review",
+      "aliases": [
+        "SSRI follow up",
+        "mood stabiliser check",
+        "psychiatric med management"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-medication-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-psych-medication-followup-psychiatry_check_in",
+      "type": "synonym",
+      "label": "Psychiatry check in",
+      "aliases": [
+        "mental health review",
+        "medication adherence psychiatry"
+      ],
+      "specialty_ids": [
+        "Psychiatry / Mental Health"
+      ],
+      "workflow_ids": [
+        "psych-medication-followup"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "synonym-peds-abdominal-pain-functional_or_recurrent",
+      "type": "synonym",
+      "label": "Functional abdominal pain",
+      "aliases": [
+        "recurrent abdominal pain child",
+        "non-organic abdominal pain",
+        "school age belly pain"
       ],
       "specialty_ids": [
         "Pediatrics"
       ],
       "workflow_ids": [
-        "peds-fever-viral"
-      ]
+        "peds-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
     }
   ]
 }

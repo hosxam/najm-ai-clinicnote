@@ -3,206 +3,4237 @@
     "workflow_id": "gp-fever-urti",
     "specialty_id": "General Medicine / GP",
     "chief_complaint": "Fever",
-    "chief_complaint_aliases": ["pyrexia", "high temperature", "hot"],
+    "chief_complaint_aliases": [],
     "diagnosis": "Viral URTI",
-    "diagnosis_aliases": ["viral upper respiratory infection", "common cold"],
+    "diagnosis_aliases": [],
     "history_layout_id": "General Medicine / GP",
-    "filters": { "age_min_months": 3, "age_max_years": null, "sex": null },
-    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "J00", "icd_label": "Acute nasopharyngitis (common cold)", "icd_verified": false, "icd_source": null },
+    "filters": {
+      "age_min_months": 3,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "J00",
+      "icd_label": "Acute nasopharyngitis",
+      "icd_verified": false,
+      "icd_source": null
+    },
     "chip_groups": [
-      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
-      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
-      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
-      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed with patient" },
-      { "group": "investigations", "order": 5, "prompt": "Investigations ordered" },
-      { "group": "plan_phrases", "order": 6, "prompt": "Select plan items" },
-      { "group": "follow_up", "order": 7, "prompt": "Follow-up interval" }
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
     ],
-    "min_sections": ["hpi", "pmh"]
+    "min_sections": [
+      "hpi"
+    ]
   },
   {
-    "workflow_id": "gp-cough-bronchitis",
+    "workflow_id": "gp-cough",
     "specialty_id": "General Medicine / GP",
     "chief_complaint": "Cough",
-    "chief_complaint_aliases": ["dry cough", "productive cough", "barking cough", "persistent cough"],
-    "diagnosis": "Acute Bronchitis",
-    "diagnosis_aliases": ["bronchitis", "chest cold", "acute tracheobronchitis"],
+    "chief_complaint_aliases": [],
+    "diagnosis": "Acute bronchitis",
+    "diagnosis_aliases": [],
     "history_layout_id": "General Medicine / GP",
-    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
-    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "J20.9", "icd_label": "Acute bronchitis, unspecified", "icd_verified": false, "icd_source": null },
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "J20.9",
+      "icd_label": "Acute bronchitis",
+      "icd_verified": false,
+      "icd_source": null
+    },
     "chip_groups": [
-      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
-      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
-      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
-      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed with patient" },
-      { "group": "investigations", "order": 5, "prompt": "Investigations ordered" },
-      { "group": "plan_phrases", "order": 6, "prompt": "Select plan items" },
-      { "group": "follow_up", "order": 7, "prompt": "Follow-up interval" }
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
     ],
-    "min_sections": ["hpi", "pmh", "systems_review"]
+    "min_sections": [
+      "hpi"
+    ]
   },
   {
-    "workflow_id": "gp-chest-pain-gerd",
+    "workflow_id": "gp-sore-throat",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Sore throat",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Pharyngitis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "J02.9",
+      "icd_label": "Acute pharyngitis",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gp-headache",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Headache",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Migraine/Tension headache",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "G43.9",
+      "icd_label": "Migraine",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gp-dizziness",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Dizziness",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Vestibular/referred",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gp-fatigue",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Fatigue",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Anaemia workup",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gp-abdominal-pain",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Abdominal pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Gastritis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "K29.7",
+      "icd_label": "Gastritis",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gp-nausea",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Nausea/Vomiting",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Gastroenteritis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gp-diarrhea",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Diarrhea",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Acute gastroenteritis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "A09",
+      "icd_label": "Infectious gastroenteritis",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gp-constipation",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Constipation",
+    "chief_complaint_aliases": [],
+    "diagnosis": "IBS / functional",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gp-chest-pain",
     "specialty_id": "General Medicine / GP",
     "chief_complaint": "Chest pain",
-    "chief_complaint_aliases": ["chest discomfort", "retrosternal pain", "heartburn", "tightness"],
-    "diagnosis": "GERD / Acid Reflux",
-    "diagnosis_aliases": ["gastroesophageal reflux", "reflux disease"],
+    "chief_complaint_aliases": [],
+    "diagnosis": "GERD / reflux",
+    "diagnosis_aliases": [],
     "history_layout_id": "General Medicine / GP",
-    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
-    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "K21.9", "icd_label": "Gastro-esophageal reflux disease without esophagitis", "icd_verified": false, "icd_source": null },
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "K21.9",
+      "icd_label": "GERD",
+      "icd_verified": false,
+      "icd_source": null
+    },
     "chip_groups": [
-      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
-      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
-      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
-      { "group": "red_flags", "order": 4, "prompt": "Red flags (cardiac) discussed" },
-      { "group": "investigations", "order": 5, "prompt": "Investigations ordered" },
-      { "group": "plan_phrases", "order": 6, "prompt": "Select plan items" },
-      { "group": "follow_up", "order": 7, "prompt": "Follow-up interval" }
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
     ],
-    "min_sections": ["hpi", "pmh", "systems_review"]
+    "min_sections": [
+      "hpi"
+    ]
   },
   {
-    "workflow_id": "peds-fever-viral",
+    "workflow_id": "gp-palpitations",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Palpitations",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Arrhythmia workup",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gp-shortness-of-breath",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Shortness of breath",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Referred",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gp-hypertension-followup",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Hypertension follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Essential hypertension",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "I10",
+      "icd_label": "Essential hypertension",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "exam_findings",
+        "order": 1,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 2,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 3,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "vitals_exam"
+    ]
+  },
+  {
+    "workflow_id": "gp-diabetes-followup",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Diabetes follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Type 2 diabetes mellitus",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "E11.9",
+      "icd_label": "Type 2 diabetes without complications",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "exam_findings",
+        "order": 1,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 2,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "vitals_exam"
+    ]
+  },
+  {
+    "workflow_id": "gp-thyroid-followup",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Thyroid follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Hypothyroidism",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 2,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 3,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gp-dyslipidemia-followup",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Dyslipidemia follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Hyperlipidemia",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "plan_phrases",
+        "order": 1,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 2,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gp-lab-result-review",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Lab result review",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Various",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "plan_phrases",
+        "order": 1,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 2,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "peds-fever",
     "specialty_id": "Pediatrics",
     "chief_complaint": "Fever",
-    "chief_complaint_aliases": ["fever in child", "temperature", "hot baby"],
-    "diagnosis": "Viral Fever / URTI",
-    "diagnosis_aliases": ["viral syndrome", "common cold pediatric"],
+    "chief_complaint_aliases": [],
+    "diagnosis": "Viral fever",
+    "diagnosis_aliases": [],
     "history_layout_id": "Pediatrics",
-    "filters": { "age_min_months": 0, "age_max_years": 18, "sex": null },
-    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": null, "icd_label": null, "icd_verified": false, "icd_source": null },
+    "filters": {
+      "age_min_months": 3,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "R50.9",
+      "icd_label": "Fever",
+      "icd_verified": false,
+      "icd_source": null
+    },
     "chip_groups": [
-      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
-      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
-      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
-      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed with parent" },
-      { "group": "plan_phrases", "order": 5, "prompt": "Select plan items" },
-      { "group": "follow_up", "order": 6, "prompt": "Follow-up interval" }
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
     ],
-    "min_sections": ["hpi", "birth_history", "immunization"]
+    "min_sections": [
+      "hpi"
+    ]
   },
   {
-    "workflow_id": "obgyn-vaginal-discharge-candidiasis",
+    "workflow_id": "peds-cough",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "Cough / cold",
+    "chief_complaint_aliases": [],
+    "diagnosis": "URTI / bronchiolitis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Pediatrics",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "peds-vomiting-diarrhea",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "Vomiting / diarrhea",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Acute gastroenteritis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Pediatrics",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "K52.9",
+      "icd_label": "Noninfective gastroenteritis",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "feeding",
+      "hydration_assessment"
+    ]
+  },
+  {
+    "workflow_id": "peds-rash",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "Rash",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Viral exanthem",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Pediatrics",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "peds-poor-feeding",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "Poor feeding",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Feeding difficulty",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Pediatrics",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "feeding",
+      "growth"
+    ]
+  },
+  {
+    "workflow_id": "peds-ear-pain",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "Ear pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Acute otitis media",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Pediatrics",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "H66.9",
+      "icd_label": "Otitis media",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "peds-abdominal-pain",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "Abdominal pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Constipation / referred",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Pediatrics",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "peds-routine-followup",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "Routine pediatric follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Well child check",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Pediatrics",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "exam_findings",
+        "order": 1,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 2,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 3,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "growth",
+      "development",
+      "immunization"
+    ]
+  },
+  {
+    "workflow_id": "peds-vaccination",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "Vaccination visit",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Immunization",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Pediatrics",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "plan_phrases",
+        "order": 1,
+        "prompt": "Select plan items"
+      }
+    ],
+    "min_sections": [
+      "immunization"
+    ]
+  },
+  {
+    "workflow_id": "peds-growth-concern",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "Growth concern",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Failure to thrive",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Pediatrics",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "exam_findings",
+        "order": 1,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 2,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 3,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "growth",
+      "feeding"
+    ]
+  },
+  {
+    "workflow_id": "peds-development-concern",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "Developmental concern",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Developmental delay",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Pediatrics",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "exam_findings",
+        "order": 1,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 2,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 3,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "development",
+      "growth"
+    ]
+  },
+  {
+    "workflow_id": "peds-school-note",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "School / sick note",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Administrative",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Pediatrics",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "plan_phrases",
+        "order": 1,
+        "prompt": "Select plan items"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "obgyn-antenatal-followup",
+    "specialty_id": "OB/GYN",
+    "chief_complaint": "Antenatal follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Pregnancy follow-up",
+    "diagnosis_aliases": [],
+    "history_layout_id": "OB/GYN",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": "female"
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "Z34.90",
+      "icd_label": "Normal pregnancy supervision",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "exam_findings",
+        "order": 1,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 2,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "obstetric",
+      "antenatal"
+    ]
+  },
+  {
+    "workflow_id": "obgyn-pelvic-pain",
+    "specialty_id": "OB/GYN",
+    "chief_complaint": "Pelvic pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "PID / adnexal",
+    "diagnosis_aliases": [],
+    "history_layout_id": "OB/GYN",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": "female"
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "menstrual",
+      "gynecologic"
+    ]
+  },
+  {
+    "workflow_id": "obgyn-irregular-bleeding",
+    "specialty_id": "OB/GYN",
+    "chief_complaint": "Irregular bleeding",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Dysfunctional uterine bleeding",
+    "diagnosis_aliases": [],
+    "history_layout_id": "OB/GYN",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": "female"
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "menstrual",
+      "gynecologic"
+    ]
+  },
+  {
+    "workflow_id": "obgyn-vaginal-discharge",
     "specialty_id": "OB/GYN",
     "chief_complaint": "Vaginal discharge",
-    "chief_complaint_aliases": ["discharge", "leukorrhea", "pruritus vaginal"],
-    "diagnosis": "Vulvovaginal Candidiasis",
-    "diagnosis_aliases": ["yeast infection", "candidal vaginitis", "thrush"],
+    "chief_complaint_aliases": [],
+    "diagnosis": "Candidiasis / BV",
+    "diagnosis_aliases": [],
     "history_layout_id": "OB/GYN",
-    "filters": { "age_min_months": null, "age_max_years": null, "sex": "female" },
-    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "B37.3", "icd_label": "Candidiasis of vulva and vagina", "icd_verified": false, "icd_source": null },
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": "female"
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
     "chip_groups": [
-      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
-      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
-      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
-      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed" },
-      { "group": "investigations", "order": 5, "prompt": "Investigations ordered" },
-      { "group": "plan_phrases", "order": 6, "prompt": "Select plan items" },
-      { "group": "follow_up", "order": 7, "prompt": "Follow-up interval" }
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
     ],
-    "min_sections": ["hpi", "menstrual_history", "gynecologic_history"]
+    "min_sections": [
+      "hpi",
+      "menstrual",
+      "sexual"
+    ]
   },
   {
-    "workflow_id": "msk-low-back-pain-mechanical",
+    "workflow_id": "obgyn-contraception",
+    "specialty_id": "OB/GYN",
+    "chief_complaint": "Contraception counseling",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Contraception",
+    "diagnosis_aliases": [],
+    "history_layout_id": "OB/GYN",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": "female"
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 2,
+        "prompt": "Select plan items"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "menstrual",
+      "gynecologic"
+    ]
+  },
+  {
+    "workflow_id": "obgyn-dysmenorrhea",
+    "specialty_id": "OB/GYN",
+    "chief_complaint": "Dysmenorrhea",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Primary dysmenorrhea",
+    "diagnosis_aliases": [],
+    "history_layout_id": "OB/GYN",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": "female"
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "menstrual"
+    ]
+  },
+  {
+    "workflow_id": "obgyn-postnatal-followup",
+    "specialty_id": "OB/GYN",
+    "chief_complaint": "Postnatal follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Postnatal care",
+    "diagnosis_aliases": [],
+    "history_layout_id": "OB/GYN",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": "female"
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "obstetric"
+    ]
+  },
+  {
+    "workflow_id": "obgyn-early-pregnancy",
+    "specialty_id": "OB/GYN",
+    "chief_complaint": "Early pregnancy symptoms",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Early pregnancy",
+    "diagnosis_aliases": [],
+    "history_layout_id": "OB/GYN",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": "female"
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "obstetric",
+      "menstrual"
+    ]
+  },
+  {
+    "workflow_id": "obgyn-menopause",
+    "specialty_id": "OB/GYN",
+    "chief_complaint": "Menopause symptoms",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Perimenopause",
+    "diagnosis_aliases": [],
+    "history_layout_id": "OB/GYN",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": "female"
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "menstrual",
+      "gynecologic"
+    ]
+  },
+  {
+    "workflow_id": "obgyn-fertility",
+    "specialty_id": "OB/GYN",
+    "chief_complaint": "Fertility concern",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Fertility workup",
+    "diagnosis_aliases": [],
+    "history_layout_id": "OB/GYN",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": "female"
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "menstrual",
+      "gynecologic",
+      "sexual"
+    ]
+  },
+  {
+    "workflow_id": "msk-low-back-pain",
     "specialty_id": "Orthopedics / MSK",
     "chief_complaint": "Low back pain",
-    "chief_complaint_aliases": ["back ache", "lumbar pain", "lumbago"],
-    "diagnosis": "Mechanical Low Back Pain",
-    "diagnosis_aliases": ["non-specific low back pain", "lumbar strain", "mechanical back pain"],
+    "chief_complaint_aliases": [],
+    "diagnosis": "Mechanical back pain",
+    "diagnosis_aliases": [],
     "history_layout_id": "Orthopedics / MSK",
-    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
-    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "M54.5", "icd_label": "Low back pain", "icd_verified": false, "icd_source": null },
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "M54.5",
+      "icd_label": "Low back pain",
+      "icd_verified": false,
+      "icd_source": null
+    },
     "chip_groups": [
-      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
-      { "group": "relevant_negatives", "order": 2, "prompt": "Red flag negatives to rule out" },
-      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
-      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed" },
-      { "group": "investigations", "order": 5, "prompt": "Imaging / labs ordered" },
-      { "group": "plan_phrases", "order": 6, "prompt": "Select plan items" },
-      { "group": "follow_up", "order": 7, "prompt": "Follow-up interval" }
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
     ],
-    "min_sections": ["hpi", "pain_assessment"]
+    "min_sections": [
+      "hpi",
+      "pain_history",
+      "examination_focused"
+    ]
   },
   {
-    "workflow_id": "ent-sore-throat-streptococcal",
+    "workflow_id": "msk-neck-pain",
+    "specialty_id": "Orthopedics / MSK",
+    "chief_complaint": "Neck pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Cervical strain",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Orthopedics / MSK",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "pain_history",
+      "examination_focused"
+    ]
+  },
+  {
+    "workflow_id": "msk-knee-pain",
+    "specialty_id": "Orthopedics / MSK",
+    "chief_complaint": "Knee pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Osteoarthritis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Orthopedics / MSK",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "M17.9",
+      "icd_label": "Knee osteoarthritis",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "pain_history",
+      "examination_focused"
+    ]
+  },
+  {
+    "workflow_id": "msk-shoulder-pain",
+    "specialty_id": "Orthopedics / MSK",
+    "chief_complaint": "Shoulder pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Rotator cuff injury",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Orthopedics / MSK",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "pain_history",
+      "examination_focused"
+    ]
+  },
+  {
+    "workflow_id": "msk-hip-pain",
+    "specialty_id": "Orthopedics / MSK",
+    "chief_complaint": "Hip pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Osteoarthritis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Orthopedics / MSK",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "pain_history",
+      "examination_focused"
+    ]
+  },
+  {
+    "workflow_id": "msk-ankle-pain",
+    "specialty_id": "Orthopedics / MSK",
+    "chief_complaint": "Ankle / foot pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Sprain / plantar fasciitis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Orthopedics / MSK",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "pain_history",
+      "examination_focused"
+    ]
+  },
+  {
+    "workflow_id": "msk-wrist-hand-pain",
+    "specialty_id": "Orthopedics / MSK",
+    "chief_complaint": "Wrist / hand pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Carpal tunnel / strain",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Orthopedics / MSK",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "pain_history",
+      "examination_focused"
+    ]
+  },
+  {
+    "workflow_id": "msk-acute-sprain",
+    "specialty_id": "Orthopedics / MSK",
+    "chief_complaint": "Acute sprain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Ligament injury",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Orthopedics / MSK",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "pain_history",
+      "examination_focused",
+      "gait"
+    ]
+  },
+  {
+    "workflow_id": "msk-fracture-followup",
+    "specialty_id": "Orthopedics / MSK",
+    "chief_complaint": "Fracture follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Healing fracture",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Orthopedics / MSK",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "exam_findings",
+        "order": 1,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 2,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 3,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "imaging",
+      "examination_focused"
+    ]
+  },
+  {
+    "workflow_id": "msk-post-op-followup",
+    "specialty_id": "Orthopedics / MSK",
+    "chief_complaint": "Post-op follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Post-surgical",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Orthopedics / MSK",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "exam_findings",
+        "order": 1,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 2,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 3,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "examination_focused",
+      "occupation"
+    ]
+  },
+  {
+    "workflow_id": "msk-osteoarthritis-followup",
+    "specialty_id": "Orthopedics / MSK",
+    "chief_complaint": "Osteoarthritis follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Osteoarthritis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Orthopedics / MSK",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "pain_history",
+      "examination_focused"
+    ]
+  },
+  {
+    "workflow_id": "msk-sports-injury",
+    "specialty_id": "Orthopedics / MSK",
+    "chief_complaint": "Sports injury",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Acute sports injury",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Orthopedics / MSK",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "pain_history",
+      "examination_focused",
+      "gait",
+      "occupation"
+    ]
+  },
+  {
+    "workflow_id": "ent-ear-pain",
+    "specialty_id": "ENT",
+    "chief_complaint": "Ear pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Acute otitis media / OE",
+    "diagnosis_aliases": [],
+    "history_layout_id": "ENT",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "ear",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "ent-hearing-complaint",
+    "specialty_id": "ENT",
+    "chief_complaint": "Hearing complaint",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Conductive / sensorineural",
+    "diagnosis_aliases": [],
+    "history_layout_id": "ENT",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "ear",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "ent-tinnitus",
+    "specialty_id": "ENT",
+    "chief_complaint": "Tinnitus",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Tinnitus",
+    "diagnosis_aliases": [],
+    "history_layout_id": "ENT",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "ear",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "ent-dizziness-vertigo",
+    "specialty_id": "ENT",
+    "chief_complaint": "Dizziness / vertigo",
+    "chief_complaint_aliases": [],
+    "diagnosis": "BPPV / vestibular",
+    "diagnosis_aliases": [],
+    "history_layout_id": "ENT",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "dizziness",
+      "ear",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "ent-nasal-congestion",
+    "specialty_id": "ENT",
+    "chief_complaint": "Nasal congestion",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Allergic rhinitis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "ENT",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "nasal",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "ent-sinus-symptoms",
+    "specialty_id": "ENT",
+    "chief_complaint": "Sinus symptoms",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Sinusitis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "ENT",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "nasal",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "ent-sore-throat",
     "specialty_id": "ENT",
     "chief_complaint": "Sore throat",
-    "chief_complaint_aliases": ["pharyngitis", "throat pain", "dysphagia", "painful swallowing"],
-    "diagnosis": "Acute Streptococcal Pharyngitis",
-    "diagnosis_aliases": ["strep throat", "group A strep pharyngitis", "GAS pharyngitis"],
+    "chief_complaint_aliases": [],
+    "diagnosis": "Strep pharyngitis",
+    "diagnosis_aliases": [],
     "history_layout_id": "ENT",
-    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
-    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "J02.0", "icd_label": "Streptococcal pharyngitis", "icd_verified": false, "icd_source": null },
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
     "chip_groups": [
-      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
-      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
-      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
-      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed" },
-      { "group": "investigations", "order": 5, "prompt": "Investigations ordered" },
-      { "group": "plan_phrases", "order": 6, "prompt": "Select plan items" },
-      { "group": "follow_up", "order": 7, "prompt": "Follow-up interval" }
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
     ],
-    "min_sections": ["ear_history", "throat_history"]
+    "min_sections": [
+      "hpi",
+      "throat",
+      "examination"
+    ]
   },
   {
-    "workflow_id": "derm-itchy-rash-contact-dermatitis",
+    "workflow_id": "ent-voice-complaint",
+    "specialty_id": "ENT",
+    "chief_complaint": "Voice complaint",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Laryngitis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "ENT",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "throat",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "derm-rash",
     "specialty_id": "Dermatology",
-    "chief_complaint": "Itchy rash",
-    "chief_complaint_aliases": ["pruritic rash", "skin irritation", "allergic skin reaction"],
-    "diagnosis": "Contact Dermatitis",
-    "diagnosis_aliases": ["allergic contact dermatitis", "irritant contact dermatitis"],
+    "chief_complaint": "Rash",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Contact dermatitis / eczema",
+    "diagnosis_aliases": [],
     "history_layout_id": "Dermatology",
-    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
-    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "L25.9", "icd_label": "Unspecified contact dermatitis", "icd_verified": false, "icd_source": null },
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
     "chip_groups": [
-      { "group": "symptoms", "order": 1, "prompt": "Select skin symptoms" },
-      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
-      { "group": "exam_findings", "order": 3, "prompt": "Select lesion findings" },
-      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed" },
-      { "group": "plan_phrases", "order": 5, "prompt": "Select treatment plan items" },
-      { "group": "follow_up", "order": 6, "prompt": "Follow-up interval" }
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
     ],
-    "min_sections": ["lesion_description", "distribution", "triggers_exposures"]
+    "min_sections": [
+      "hpi",
+      "lesion_history",
+      "examination"
+    ]
   },
   {
-    "workflow_id": "ophth-red-eye-conjunctivitis",
+    "workflow_id": "derm-acne",
+    "specialty_id": "Dermatology",
+    "chief_complaint": "Acne",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Acne vulgaris",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Dermatology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "lesion_history",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "derm-eczema",
+    "specialty_id": "Dermatology",
+    "chief_complaint": "Eczema / dermatitis",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Atopic dermatitis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Dermatology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "lesion_history",
+      "triggers",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "derm-fungal-infection",
+    "specialty_id": "Dermatology",
+    "chief_complaint": "Fungal infection",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Tinea / candidiasis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Dermatology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 3,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "lesion_history",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "derm-urticaria",
+    "specialty_id": "Dermatology",
+    "chief_complaint": "Urticaria",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Acute urticaria",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Dermatology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "lesion_history",
+      "triggers",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "derm-wound-review",
+    "specialty_id": "Dermatology",
+    "chief_complaint": "Wound review",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Wound / post-procedure",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Dermatology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "exam_findings",
+        "order": 1,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 2,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 3,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "derm-skin-lesion-review",
+    "specialty_id": "Dermatology",
+    "chief_complaint": "Skin lesion review",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Benign / suspicious lesion",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Dermatology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 3,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "lesion_history",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "derm-hair-loss",
+    "specialty_id": "Dermatology",
+    "chief_complaint": "Hair loss",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Alopecia",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Dermatology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "lesion_history",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "ophth-red-eye",
     "specialty_id": "Ophthalmology",
     "chief_complaint": "Red eye",
-    "chief_complaint_aliases": ["pink eye", "bloodshot eye", "eye redness"],
-    "diagnosis": "Infective Conjunctivitis",
-    "diagnosis_aliases": ["bacterial conjunctivitis", "viral conjunctivitis", "pink eye"],
+    "chief_complaint_aliases": [],
+    "diagnosis": "Conjunctivitis",
+    "diagnosis_aliases": [],
     "history_layout_id": "Ophthalmology",
-    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
-    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "H10.9", "icd_label": "Unspecified conjunctivitis", "icd_verified": false, "icd_source": null },
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
     "chip_groups": [
-      { "group": "symptoms", "order": 1, "prompt": "Select symptoms" },
-      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives" },
-      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
-      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed" },
-      { "group": "plan_phrases", "order": 5, "prompt": "Select plan items" },
-      { "group": "follow_up", "order": 6, "prompt": "Follow-up interval" }
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
     ],
-    "min_sections": ["visual_history", "eye_exam_history", "trauma_contacts"]
+    "min_sections": [
+      "hpi",
+      "visual",
+      "pain_redness",
+      "examination"
+    ]
   },
   {
-    "workflow_id": "psych-depression-major-depressive",
-    "specialty_id": "Psychiatry / Mental Health",
-    "chief_complaint": "Low mood / depression",
-    "chief_complaint_aliases": ["sadness", "depression", "feeling down", "loss of interest"],
-    "diagnosis": "Major Depressive Disorder (Single Episode)",
-    "diagnosis_aliases": ["MDD", "clinical depression", "unipolar depression"],
-    "history_layout_id": "Psychiatry / Mental Health",
-    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
-    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "F32.9", "icd_label": "Major depressive disorder, single episode, unspecified", "icd_verified": false, "icd_source": null },
+    "workflow_id": "ophth-eye-pain",
+    "specialty_id": "Ophthalmology",
+    "chief_complaint": "Eye pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Keratitis / corneal abrasion",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Ophthalmology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
     "chip_groups": [
-      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
-      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives (rule out bipolar, psychosis)" },
-      { "group": "exam_findings", "order": 3, "prompt": "MSE findings" },
-      { "group": "red_flags", "order": 4, "prompt": "Risk assessment discussed" },
-      { "group": "plan_phrases", "order": 5, "prompt": "Select plan items" },
-      { "group": "follow_up", "order": 6, "prompt": "Follow-up interval" }
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
     ],
-    "min_sections": ["chief_complaint_mh", "risk_assessment", "mood_anxiety", "sleep_appetite", "mental_state_exam"]
+    "min_sections": [
+      "hpi",
+      "pain_redness",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "ophth-vision-change",
+    "specialty_id": "Ophthalmology",
+    "chief_complaint": "Vision change",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Refractive / cataract",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Ophthalmology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "visual",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "ophth-eye-discharge",
+    "specialty_id": "Ophthalmology",
+    "chief_complaint": "Eye discharge",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Conjunctivitis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Ophthalmology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "pain_redness",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "ophth-contact-lens-complaint",
+    "specialty_id": "Ophthalmology",
+    "chief_complaint": "Contact lens-related complaint",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Contact lens complication",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Ophthalmology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "trauma_cl",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "ophth-eye-trauma",
+    "specialty_id": "Ophthalmology",
+    "chief_complaint": "Eye trauma",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Ocular trauma",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Ophthalmology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 3,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "trauma_cl",
+      "examination"
+    ]
+  },
+  {
+    "workflow_id": "psych-anxiety",
+    "specialty_id": "Psychiatry / Mental Health",
+    "chief_complaint": "Anxiety",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Generalized anxiety disorder",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Psychiatry / Mental Health",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "red_flags",
+        "order": 3,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "mood",
+      "risk"
+    ]
+  },
+  {
+    "workflow_id": "psych-low-mood",
+    "specialty_id": "Psychiatry / Mental Health",
+    "chief_complaint": "Low mood",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Major depressive episode",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Psychiatry / Mental Health",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "red_flags",
+        "order": 3,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "mood",
+      "risk"
+    ]
+  },
+  {
+    "workflow_id": "psych-sleep-difficulty",
+    "specialty_id": "Psychiatry / Mental Health",
+    "chief_complaint": "Sleep difficulty",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Primary insomnia",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Psychiatry / Mental Health",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "mood"
+    ]
+  },
+  {
+    "workflow_id": "psych-stress-symptoms",
+    "specialty_id": "Psychiatry / Mental Health",
+    "chief_complaint": "Stress-related symptoms",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Adjustment disorder",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Psychiatry / Mental Health",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "red_flags",
+        "order": 2,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "mood",
+      "risk"
+    ]
+  },
+  {
+    "workflow_id": "psych-panic-symptoms",
+    "specialty_id": "Psychiatry / Mental Health",
+    "chief_complaint": "Panic symptoms",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Panic disorder",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Psychiatry / Mental Health",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "red_flags",
+        "order": 3,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "mood",
+      "risk"
+    ]
+  },
+  {
+    "workflow_id": "psych-medication-followup",
+    "specialty_id": "Psychiatry / Mental Health",
+    "chief_complaint": "Medication follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Psychiatric medication review",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Psychiatry / Mental Health",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": null,
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi",
+      "mood",
+      "past_psych"
+    ]
   }
 ]

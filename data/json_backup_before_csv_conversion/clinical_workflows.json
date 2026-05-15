@@ -1,0 +1,208 @@
+[
+  {
+    "workflow_id": "gp-fever-urti",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Fever",
+    "chief_complaint_aliases": ["pyrexia", "high temperature", "hot"],
+    "diagnosis": "Viral URTI",
+    "diagnosis_aliases": ["viral upper respiratory infection", "common cold"],
+    "history_layout_id": "General Medicine / GP",
+    "filters": { "age_min_months": 3, "age_max_years": null, "sex": null },
+    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "J00", "icd_label": "Acute nasopharyngitis (common cold)", "icd_verified": false, "icd_source": null },
+    "chip_groups": [
+      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
+      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
+      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
+      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed with patient" },
+      { "group": "investigations", "order": 5, "prompt": "Investigations ordered" },
+      { "group": "plan_phrases", "order": 6, "prompt": "Select plan items" },
+      { "group": "follow_up", "order": 7, "prompt": "Follow-up interval" }
+    ],
+    "min_sections": ["hpi", "pmh"]
+  },
+  {
+    "workflow_id": "gp-cough-bronchitis",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Cough",
+    "chief_complaint_aliases": ["dry cough", "productive cough", "barking cough", "persistent cough"],
+    "diagnosis": "Acute Bronchitis",
+    "diagnosis_aliases": ["bronchitis", "chest cold", "acute tracheobronchitis"],
+    "history_layout_id": "General Medicine / GP",
+    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
+    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "J20.9", "icd_label": "Acute bronchitis, unspecified", "icd_verified": false, "icd_source": null },
+    "chip_groups": [
+      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
+      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
+      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
+      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed with patient" },
+      { "group": "investigations", "order": 5, "prompt": "Investigations ordered" },
+      { "group": "plan_phrases", "order": 6, "prompt": "Select plan items" },
+      { "group": "follow_up", "order": 7, "prompt": "Follow-up interval" }
+    ],
+    "min_sections": ["hpi", "pmh", "systems_review"]
+  },
+  {
+    "workflow_id": "gp-chest-pain-gerd",
+    "specialty_id": "General Medicine / GP",
+    "chief_complaint": "Chest pain",
+    "chief_complaint_aliases": ["chest discomfort", "retrosternal pain", "heartburn", "tightness"],
+    "diagnosis": "GERD / Acid Reflux",
+    "diagnosis_aliases": ["gastroesophageal reflux", "reflux disease"],
+    "history_layout_id": "General Medicine / GP",
+    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
+    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "K21.9", "icd_label": "Gastro-esophageal reflux disease without esophagitis", "icd_verified": false, "icd_source": null },
+    "chip_groups": [
+      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
+      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
+      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
+      { "group": "red_flags", "order": 4, "prompt": "Red flags (cardiac) discussed" },
+      { "group": "investigations", "order": 5, "prompt": "Investigations ordered" },
+      { "group": "plan_phrases", "order": 6, "prompt": "Select plan items" },
+      { "group": "follow_up", "order": 7, "prompt": "Follow-up interval" }
+    ],
+    "min_sections": ["hpi", "pmh", "systems_review"]
+  },
+  {
+    "workflow_id": "peds-fever-viral",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "Fever",
+    "chief_complaint_aliases": ["fever in child", "temperature", "hot baby"],
+    "diagnosis": "Viral Fever / URTI",
+    "diagnosis_aliases": ["viral syndrome", "common cold pediatric"],
+    "history_layout_id": "Pediatrics",
+    "filters": { "age_min_months": 0, "age_max_years": 18, "sex": null },
+    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": null, "icd_label": null, "icd_verified": false, "icd_source": null },
+    "chip_groups": [
+      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
+      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
+      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
+      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed with parent" },
+      { "group": "plan_phrases", "order": 5, "prompt": "Select plan items" },
+      { "group": "follow_up", "order": 6, "prompt": "Follow-up interval" }
+    ],
+    "min_sections": ["hpi", "birth_history", "immunization"]
+  },
+  {
+    "workflow_id": "obgyn-vaginal-discharge-candidiasis",
+    "specialty_id": "OB/GYN",
+    "chief_complaint": "Vaginal discharge",
+    "chief_complaint_aliases": ["discharge", "leukorrhea", "pruritus vaginal"],
+    "diagnosis": "Vulvovaginal Candidiasis",
+    "diagnosis_aliases": ["yeast infection", "candidal vaginitis", "thrush"],
+    "history_layout_id": "OB/GYN",
+    "filters": { "age_min_months": null, "age_max_years": null, "sex": "female" },
+    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "B37.3", "icd_label": "Candidiasis of vulva and vagina", "icd_verified": false, "icd_source": null },
+    "chip_groups": [
+      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
+      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
+      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
+      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed" },
+      { "group": "investigations", "order": 5, "prompt": "Investigations ordered" },
+      { "group": "plan_phrases", "order": 6, "prompt": "Select plan items" },
+      { "group": "follow_up", "order": 7, "prompt": "Follow-up interval" }
+    ],
+    "min_sections": ["hpi", "menstrual_history", "gynecologic_history"]
+  },
+  {
+    "workflow_id": "msk-low-back-pain-mechanical",
+    "specialty_id": "Orthopedics / MSK",
+    "chief_complaint": "Low back pain",
+    "chief_complaint_aliases": ["back ache", "lumbar pain", "lumbago"],
+    "diagnosis": "Mechanical Low Back Pain",
+    "diagnosis_aliases": ["non-specific low back pain", "lumbar strain", "mechanical back pain"],
+    "history_layout_id": "Orthopedics / MSK",
+    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
+    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "M54.5", "icd_label": "Low back pain", "icd_verified": false, "icd_source": null },
+    "chip_groups": [
+      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
+      { "group": "relevant_negatives", "order": 2, "prompt": "Red flag negatives to rule out" },
+      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
+      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed" },
+      { "group": "investigations", "order": 5, "prompt": "Imaging / labs ordered" },
+      { "group": "plan_phrases", "order": 6, "prompt": "Select plan items" },
+      { "group": "follow_up", "order": 7, "prompt": "Follow-up interval" }
+    ],
+    "min_sections": ["hpi", "pain_assessment"]
+  },
+  {
+    "workflow_id": "ent-sore-throat-streptococcal",
+    "specialty_id": "ENT",
+    "chief_complaint": "Sore throat",
+    "chief_complaint_aliases": ["pharyngitis", "throat pain", "dysphagia", "painful swallowing"],
+    "diagnosis": "Acute Streptococcal Pharyngitis",
+    "diagnosis_aliases": ["strep throat", "group A strep pharyngitis", "GAS pharyngitis"],
+    "history_layout_id": "ENT",
+    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
+    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "J02.0", "icd_label": "Streptococcal pharyngitis", "icd_verified": false, "icd_source": null },
+    "chip_groups": [
+      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
+      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
+      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
+      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed" },
+      { "group": "investigations", "order": 5, "prompt": "Investigations ordered" },
+      { "group": "plan_phrases", "order": 6, "prompt": "Select plan items" },
+      { "group": "follow_up", "order": 7, "prompt": "Follow-up interval" }
+    ],
+    "min_sections": ["ear_history", "throat_history"]
+  },
+  {
+    "workflow_id": "derm-itchy-rash-contact-dermatitis",
+    "specialty_id": "Dermatology",
+    "chief_complaint": "Itchy rash",
+    "chief_complaint_aliases": ["pruritic rash", "skin irritation", "allergic skin reaction"],
+    "diagnosis": "Contact Dermatitis",
+    "diagnosis_aliases": ["allergic contact dermatitis", "irritant contact dermatitis"],
+    "history_layout_id": "Dermatology",
+    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
+    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "L25.9", "icd_label": "Unspecified contact dermatitis", "icd_verified": false, "icd_source": null },
+    "chip_groups": [
+      { "group": "symptoms", "order": 1, "prompt": "Select skin symptoms" },
+      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives ruled out" },
+      { "group": "exam_findings", "order": 3, "prompt": "Select lesion findings" },
+      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed" },
+      { "group": "plan_phrases", "order": 5, "prompt": "Select treatment plan items" },
+      { "group": "follow_up", "order": 6, "prompt": "Follow-up interval" }
+    ],
+    "min_sections": ["lesion_description", "distribution", "triggers_exposures"]
+  },
+  {
+    "workflow_id": "ophth-red-eye-conjunctivitis",
+    "specialty_id": "Ophthalmology",
+    "chief_complaint": "Red eye",
+    "chief_complaint_aliases": ["pink eye", "bloodshot eye", "eye redness"],
+    "diagnosis": "Infective Conjunctivitis",
+    "diagnosis_aliases": ["bacterial conjunctivitis", "viral conjunctivitis", "pink eye"],
+    "history_layout_id": "Ophthalmology",
+    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
+    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "H10.9", "icd_label": "Unspecified conjunctivitis", "icd_verified": false, "icd_source": null },
+    "chip_groups": [
+      { "group": "symptoms", "order": 1, "prompt": "Select symptoms" },
+      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives" },
+      { "group": "exam_findings", "order": 3, "prompt": "Select examination findings" },
+      { "group": "red_flags", "order": 4, "prompt": "Red flags discussed" },
+      { "group": "plan_phrases", "order": 5, "prompt": "Select plan items" },
+      { "group": "follow_up", "order": 6, "prompt": "Follow-up interval" }
+    ],
+    "min_sections": ["visual_history", "eye_exam_history", "trauma_contacts"]
+  },
+  {
+    "workflow_id": "psych-depression-major-depressive",
+    "specialty_id": "Psychiatry / Mental Health",
+    "chief_complaint": "Low mood / depression",
+    "chief_complaint_aliases": ["sadness", "depression", "feeling down", "loss of interest"],
+    "diagnosis": "Major Depressive Disorder (Single Episode)",
+    "diagnosis_aliases": ["MDD", "clinical depression", "unipolar depression"],
+    "history_layout_id": "Psychiatry / Mental Health",
+    "filters": { "age_min_months": null, "age_max_years": null, "sex": null },
+    "icd_metadata": { "icd_system": "ICD-10-CM", "icd_code": "F32.9", "icd_label": "Major depressive disorder, single episode, unspecified", "icd_verified": false, "icd_source": null },
+    "chip_groups": [
+      { "group": "symptoms", "order": 1, "prompt": "Select symptoms present" },
+      { "group": "relevant_negatives", "order": 2, "prompt": "Select negatives (rule out bipolar, psychosis)" },
+      { "group": "exam_findings", "order": 3, "prompt": "MSE findings" },
+      { "group": "red_flags", "order": 4, "prompt": "Risk assessment discussed" },
+      { "group": "plan_phrases", "order": 5, "prompt": "Select plan items" },
+      { "group": "follow_up", "order": 6, "prompt": "Follow-up interval" }
+    ],
+    "min_sections": ["chief_complaint_mh", "risk_assessment", "mood_anxiety", "sleep_appetite", "mental_state_exam"]
+  }
+]

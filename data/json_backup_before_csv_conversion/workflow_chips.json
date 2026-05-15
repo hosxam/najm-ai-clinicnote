@@ -1,0 +1,806 @@
+[
+  {
+    "workflow_id": "gp-fever-urti",
+    "specialty_id": "General Medicine / GP",
+    "chips": [
+      {
+        "chip_id": "gp-fever-urti-s1",
+        "group": "symptoms",
+        "chip_text": "fever",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-fever-urti-s2",
+        "group": "symptoms",
+        "chip_text": "cough",
+        "order": 2
+      },
+      {
+        "chip_id": "gp-fever-urti-s3",
+        "group": "symptoms",
+        "chip_text": "sore throat",
+        "order": 3
+      },
+      {
+        "chip_id": "gp-fever-urti-s4",
+        "group": "symptoms",
+        "chip_text": "runny nose",
+        "order": 4
+      },
+      {
+        "chip_id": "gp-fever-urti-n1",
+        "group": "relevant_negatives",
+        "chip_text": "no SOB",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-fever-urti-n2",
+        "group": "relevant_negatives",
+        "chip_text": "no chest pain",
+        "order": 2
+      },
+      {
+        "chip_id": "gp-fever-urti-n3",
+        "group": "relevant_negatives",
+        "chip_text": "no neck stiffness",
+        "order": 3
+      },
+      {
+        "chip_id": "gp-fever-urti-e1",
+        "group": "exam_findings",
+        "chip_text": "afebrile",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-fever-urti-e2",
+        "group": "exam_findings",
+        "chip_text": "febrile",
+        "order": 2
+      },
+      {
+        "chip_id": "gp-fever-urti-e3",
+        "group": "exam_findings",
+        "chip_text": "throat congested",
+        "order": 3
+      },
+      {
+        "chip_id": "gp-fever-urti-e4",
+        "group": "exam_findings",
+        "chip_text": "chest clear",
+        "order": 4
+      },
+      {
+        "chip_id": "gp-fever-urti-r1",
+        "group": "red_flags",
+        "chip_text": "breathing difficulty",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-fever-urti-r2",
+        "group": "red_flags",
+        "chip_text": "fever >5 days",
+        "order": 2
+      },
+      {
+        "chip_id": "gp-fever-urti-p1",
+        "group": "plan_phrases",
+        "chip_text": "supportive care",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-fever-urti-p2",
+        "group": "plan_phrases",
+        "chip_text": "fluids",
+        "order": 2
+      },
+      {
+        "chip_id": "gp-fever-urti-p3",
+        "group": "plan_phrases",
+        "chip_text": "rest",
+        "order": 3
+      },
+      {
+        "chip_id": "gp-fever-urti-p4",
+        "group": "plan_phrases",
+        "chip_text": "antipyretic per plan",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "workflow_id": "gp-cough-bronchitis",
+    "specialty_id": "General Medicine / GP",
+    "chips": [
+      {
+        "chip_id": "gp-cough-bronch-s1",
+        "group": "symptoms",
+        "chip_text": "cough",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-cough-bronch-s2",
+        "group": "symptoms",
+        "chip_text": "productive cough",
+        "order": 2
+      },
+      {
+        "chip_id": "gp-cough-bronch-s3",
+        "group": "symptoms",
+        "chip_text": "wheeze",
+        "order": 3
+      },
+      {
+        "chip_id": "gp-cough-bronch-n1",
+        "group": "relevant_negatives",
+        "chip_text": "no hemoptysis",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-cough-bronch-n2",
+        "group": "relevant_negatives",
+        "chip_text": "no chest pain",
+        "order": 2
+      },
+      {
+        "chip_id": "gp-cough-bronch-e1",
+        "group": "exam_findings",
+        "chip_text": "chest clear",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-cough-bronch-e2",
+        "group": "exam_findings",
+        "chip_text": "rhonchi",
+        "order": 2
+      },
+      {
+        "chip_id": "gp-cough-bronch-e3",
+        "group": "exam_findings",
+        "chip_text": "wheezes",
+        "order": 3
+      },
+      {
+        "chip_id": "gp-cough-bronch-r1",
+        "group": "red_flags",
+        "chip_text": "hemoptysis",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-cough-bronch-i1",
+        "group": "investigations",
+        "chip_text": "CXR ordered",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-cough-bronch-p1",
+        "group": "plan_phrases",
+        "chip_text": "symptomatic treatment",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-cough-bronch-p2",
+        "group": "plan_phrases",
+        "chip_text": "cough suppressant if needed",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "workflow_id": "gp-chest-pain-gerd",
+    "specialty_id": "General Medicine / GP",
+    "chips": [
+      {
+        "chip_id": "gp-gerd-s1",
+        "group": "symptoms",
+        "chip_text": "burning chest pain",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-gerd-s2",
+        "group": "symptoms",
+        "chip_text": "regurgitation",
+        "order": 2
+      },
+      {
+        "chip_id": "gp-gerd-s3",
+        "group": "symptoms",
+        "chip_text": "worse after meals",
+        "order": 3
+      },
+      {
+        "chip_id": "gp-gerd-n1",
+        "group": "relevant_negatives",
+        "chip_text": "no exertional chest pain",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-gerd-n2",
+        "group": "relevant_negatives",
+        "chip_text": "no radiation to arm/jaw",
+        "order": 2
+      },
+      {
+        "chip_id": "gp-gerd-e1",
+        "group": "exam_findings",
+        "chip_text": "epigastric tenderness",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-gerd-e2",
+        "group": "exam_findings",
+        "chip_text": "chest non-tender",
+        "order": 2
+      },
+      {
+        "chip_id": "gp-gerd-r1",
+        "group": "red_flags",
+        "chip_text": "cardiac chest pain features",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-gerd-p1",
+        "group": "plan_phrases",
+        "chip_text": "PPI course",
+        "order": 1
+      },
+      {
+        "chip_id": "gp-gerd-p2",
+        "group": "plan_phrases",
+        "chip_text": "lifestyle modifications",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "workflow_id": "msk-low-back-pain-mechanical",
+    "specialty_id": "Orthopedics / MSK",
+    "chips": [
+      {
+        "chip_id": "msk-lbp-s1",
+        "group": "symptoms",
+        "chip_text": "lower back pain",
+        "order": 1
+      },
+      {
+        "chip_id": "msk-lbp-s2",
+        "group": "symptoms",
+        "chip_text": "pain radiating to leg",
+        "order": 2
+      },
+      {
+        "chip_id": "msk-lbp-n1",
+        "group": "relevant_negatives",
+        "chip_text": "no bowel/bladder symptoms",
+        "order": 1
+      },
+      {
+        "chip_id": "msk-lbp-n2",
+        "group": "relevant_negatives",
+        "chip_text": "no saddle anesthesia",
+        "order": 2
+      },
+      {
+        "chip_id": "msk-lbp-n3",
+        "group": "relevant_negatives",
+        "chip_text": "no fever",
+        "order": 3
+      },
+      {
+        "chip_id": "msk-lbp-e1",
+        "group": "exam_findings",
+        "chip_text": "lumbar spine tender",
+        "order": 1
+      },
+      {
+        "chip_id": "msk-lbp-e2",
+        "group": "exam_findings",
+        "chip_text": "SLR negative",
+        "order": 2
+      },
+      {
+        "chip_id": "msk-lbp-e3",
+        "group": "exam_findings",
+        "chip_text": "motor strength intact",
+        "order": 3
+      },
+      {
+        "chip_id": "msk-lbp-r1",
+        "group": "red_flags",
+        "chip_text": "cauda equina symptoms",
+        "order": 1
+      },
+      {
+        "chip_id": "msk-lbp-r2",
+        "group": "red_flags",
+        "chip_text": "age > 50 with new pain",
+        "order": 2
+      },
+      {
+        "chip_id": "msk-lbp-i1",
+        "group": "investigations",
+        "chip_text": "plain lumbar X-ray ordered",
+        "order": 1
+      },
+      {
+        "chip_id": "msk-lbp-p1",
+        "group": "plan_phrases",
+        "chip_text": "NSAIDs prescribed",
+        "order": 1
+      },
+      {
+        "chip_id": "msk-lbp-p2",
+        "group": "plan_phrases",
+        "chip_text": "physiotherapy referral",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "workflow_id": "obgyn-vaginal-discharge-candidiasis",
+    "specialty_id": "OB/GYN",
+    "chips": [
+      {
+        "chip_id": "obgyn-cand-s1",
+        "group": "symptoms",
+        "chip_text": "white thick discharge",
+        "order": 1
+      },
+      {
+        "chip_id": "obgyn-cand-s2",
+        "group": "symptoms",
+        "chip_text": "pruritus",
+        "order": 2
+      },
+      {
+        "chip_id": "obgyn-cand-s3",
+        "group": "symptoms",
+        "chip_text": "burning sensation",
+        "order": 3
+      },
+      {
+        "chip_id": "obgyn-cand-n1",
+        "group": "relevant_negatives",
+        "chip_text": "no foul odor",
+        "order": 1
+      },
+      {
+        "chip_id": "obgyn-cand-n2",
+        "group": "relevant_negatives",
+        "chip_text": "no fever",
+        "order": 2
+      },
+      {
+        "chip_id": "obgyn-cand-e1",
+        "group": "exam_findings",
+        "chip_text": "vaginal curd-like discharge",
+        "order": 1
+      },
+      {
+        "chip_id": "obgyn-cand-e2",
+        "group": "exam_findings",
+        "chip_text": "vulvar erythema",
+        "order": 2
+      },
+      {
+        "chip_id": "obgyn-cand-r1",
+        "group": "red_flags",
+        "chip_text": "recurrent infections",
+        "order": 1
+      },
+      {
+        "chip_id": "obgyn-cand-i1",
+        "group": "investigations",
+        "chip_text": "vaginal swab for microscopy",
+        "order": 1
+      },
+      {
+        "chip_id": "obgyn-cand-p1",
+        "group": "plan_phrases",
+        "chip_text": "fluconazole 150mg single dose",
+        "order": 1
+      },
+      {
+        "chip_id": "obgyn-cand-p2",
+        "group": "plan_phrases",
+        "chip_text": "clotrimazole cream",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "workflow_id": "psych-depression-major-depressive",
+    "specialty_id": "Psychiatry / Mental Health",
+    "chips": [
+      {
+        "chip_id": "psych-mdd-s1",
+        "group": "symptoms",
+        "chip_text": "depressed mood",
+        "order": 1
+      },
+      {
+        "chip_id": "psych-mdd-s2",
+        "group": "symptoms",
+        "chip_text": "anhedonia",
+        "order": 2
+      },
+      {
+        "chip_id": "psych-mdd-s3",
+        "group": "symptoms",
+        "chip_text": "insomnia",
+        "order": 3
+      },
+      {
+        "chip_id": "psych-mdd-s4",
+        "group": "symptoms",
+        "chip_text": "fatigue",
+        "order": 4
+      },
+      {
+        "chip_id": "psych-mdd-n1",
+        "group": "relevant_negatives",
+        "chip_text": "no manic/hypomanic episodes",
+        "order": 1
+      },
+      {
+        "chip_id": "psych-mdd-n2",
+        "group": "relevant_negatives",
+        "chip_text": "no psychotic features",
+        "order": 2
+      },
+      {
+        "chip_id": "psych-mdd-e1",
+        "group": "exam_findings",
+        "chip_text": "flat affect",
+        "order": 1
+      },
+      {
+        "chip_id": "psych-mdd-e2",
+        "group": "exam_findings",
+        "chip_text": "slow speech",
+        "order": 2
+      },
+      {
+        "chip_id": "psych-mdd-e3",
+        "group": "exam_findings",
+        "chip_text": "oriented x3",
+        "order": 3
+      },
+      {
+        "chip_id": "psych-mdd-r1",
+        "group": "red_flags",
+        "chip_text": "suicidal ideation with plan",
+        "order": 1
+      },
+      {
+        "chip_id": "psych-mdd-p1",
+        "group": "plan_phrases",
+        "chip_text": "SSRI initiated",
+        "order": 1
+      },
+      {
+        "chip_id": "psych-mdd-p2",
+        "group": "plan_phrases",
+        "chip_text": "therapy referral (CBT)",
+        "order": 2
+      },
+      {
+        "chip_id": "psych-mdd-p3",
+        "group": "plan_phrases",
+        "chip_text": "safety plan established",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "workflow_id": "ent-sore-throat-streptococcal",
+    "specialty_id": "ENT",
+    "chips": [
+      {
+        "chip_id": "ent-strep-s1",
+        "group": "symptoms",
+        "chip_text": "sore throat",
+        "order": 1
+      },
+      {
+        "chip_id": "ent-strep-s2",
+        "group": "symptoms",
+        "chip_text": "fever",
+        "order": 2
+      },
+      {
+        "chip_id": "ent-strep-s3",
+        "group": "symptoms",
+        "chip_text": "dysphagia",
+        "order": 3
+      },
+      {
+        "chip_id": "ent-strep-n1",
+        "group": "relevant_negatives",
+        "chip_text": "no cough",
+        "order": 1
+      },
+      {
+        "chip_id": "ent-strep-n2",
+        "group": "relevant_negatives",
+        "chip_text": "no rhinorrhea",
+        "order": 2
+      },
+      {
+        "chip_id": "ent-strep-e1",
+        "group": "exam_findings",
+        "chip_text": "pharyngeal erythema",
+        "order": 1
+      },
+      {
+        "chip_id": "ent-strep-e2",
+        "group": "exam_findings",
+        "chip_text": "tonsillar exudate",
+        "order": 2
+      },
+      {
+        "chip_id": "ent-strep-e3",
+        "group": "exam_findings",
+        "chip_text": "tender cervical nodes",
+        "order": 3
+      },
+      {
+        "chip_id": "ent-strep-r1",
+        "group": "red_flags",
+        "chip_text": "stridor",
+        "order": 1
+      },
+      {
+        "chip_id": "ent-strep-i1",
+        "group": "investigations",
+        "chip_text": "rapid strep test",
+        "order": 1
+      },
+      {
+        "chip_id": "ent-strep-p1",
+        "group": "plan_phrases",
+        "chip_text": "Penicillin V course",
+        "order": 1
+      },
+      {
+        "chip_id": "ent-strep-p2",
+        "group": "plan_phrases",
+        "chip_text": "analgesics as needed",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "workflow_id": "ophth-red-eye-conjunctivitis",
+    "specialty_id": "Ophthalmology",
+    "chips": [
+      {
+        "chip_id": "ophth-conj-s1",
+        "group": "symptoms",
+        "chip_text": "redness",
+        "order": 1
+      },
+      {
+        "chip_id": "ophth-conj-s2",
+        "group": "symptoms",
+        "chip_text": "watery discharge",
+        "order": 2
+      },
+      {
+        "chip_id": "ophth-conj-s3",
+        "group": "symptoms",
+        "chip_text": "itching",
+        "order": 3
+      },
+      {
+        "chip_id": "ophth-conj-n1",
+        "group": "relevant_negatives",
+        "chip_text": "no photophobia",
+        "order": 1
+      },
+      {
+        "chip_id": "ophth-conj-n2",
+        "group": "relevant_negatives",
+        "chip_text": "no vision change",
+        "order": 2
+      },
+      {
+        "chip_id": "ophth-conj-n3",
+        "group": "relevant_negatives",
+        "chip_text": "no eye pain",
+        "order": 3
+      },
+      {
+        "chip_id": "ophth-conj-e1",
+        "group": "exam_findings",
+        "chip_text": "conjunctival injection",
+        "order": 1
+      },
+      {
+        "chip_id": "ophth-conj-e2",
+        "group": "exam_findings",
+        "chip_text": "cornea clear",
+        "order": 2
+      },
+      {
+        "chip_id": "ophth-conj-r1",
+        "group": "red_flags",
+        "chip_text": "photophobia / keratitis",
+        "order": 1
+      },
+      {
+        "chip_id": "ophth-conj-p1",
+        "group": "plan_phrases",
+        "chip_text": "chloramphenicol drops",
+        "order": 1
+      },
+      {
+        "chip_id": "ophth-conj-p2",
+        "group": "plan_phrases",
+        "chip_text": "lubricating drops",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "workflow_id": "derm-itchy-rash-contact-dermatitis",
+    "specialty_id": "Dermatology",
+    "chips": [
+      {
+        "chip_id": "derm-cont-s1",
+        "group": "symptoms",
+        "chip_text": "itching / pruritus",
+        "order": 1
+      },
+      {
+        "chip_id": "derm-cont-s2",
+        "group": "symptoms",
+        "chip_text": "red raised rash",
+        "order": 2
+      },
+      {
+        "chip_id": "derm-cont-s3",
+        "group": "symptoms",
+        "chip_text": "blistering",
+        "order": 3
+      },
+      {
+        "chip_id": "derm-cont-n1",
+        "group": "relevant_negatives",
+        "chip_text": "no fever",
+        "order": 1
+      },
+      {
+        "chip_id": "derm-cont-n2",
+        "group": "relevant_negatives",
+        "chip_text": "no mucosal involvement",
+        "order": 2
+      },
+      {
+        "chip_id": "derm-cont-e1",
+        "group": "exam_findings",
+        "chip_text": "erythematous papules",
+        "order": 1
+      },
+      {
+        "chip_id": "derm-cont-e2",
+        "group": "exam_findings",
+        "chip_text": "excoriations",
+        "order": 2
+      },
+      {
+        "chip_id": "derm-cont-r1",
+        "group": "red_flags",
+        "chip_text": "signs of secondary infection",
+        "order": 1
+      },
+      {
+        "chip_id": "derm-cont-p1",
+        "group": "plan_phrases",
+        "chip_text": "topical corticosteroid",
+        "order": 1
+      },
+      {
+        "chip_id": "derm-cont-p2",
+        "group": "plan_phrases",
+        "chip_text": "antihistamine PRN",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "workflow_id": "peds-fever-viral",
+    "specialty_id": "Pediatrics",
+    "chips": [
+      {
+        "chip_id": "peds-fev-s1",
+        "group": "symptoms",
+        "chip_text": "fever",
+        "order": 1
+      },
+      {
+        "chip_id": "peds-fev-s2",
+        "group": "symptoms",
+        "chip_text": "cough",
+        "order": 2
+      },
+      {
+        "chip_id": "peds-fev-s3",
+        "group": "symptoms",
+        "chip_text": "runny nose",
+        "order": 3
+      },
+      {
+        "chip_id": "peds-fev-s4",
+        "group": "symptoms",
+        "chip_text": "decreased feeding",
+        "order": 4
+      },
+      {
+        "chip_id": "peds-fev-n1",
+        "group": "relevant_negatives",
+        "chip_text": "no respiratory distress",
+        "order": 1
+      },
+      {
+        "chip_id": "peds-fev-n2",
+        "group": "relevant_negatives",
+        "chip_text": "no rash",
+        "order": 2
+      },
+      {
+        "chip_id": "peds-fev-n3",
+        "group": "relevant_negatives",
+        "chip_text": "no seizure",
+        "order": 3
+      },
+      {
+        "chip_id": "peds-fev-e1",
+        "group": "exam_findings",
+        "chip_text": "febrile",
+        "order": 1
+      },
+      {
+        "chip_id": "peds-fev-e2",
+        "group": "exam_findings",
+        "chip_text": "chest clear",
+        "order": 2
+      },
+      {
+        "chip_id": "peds-fev-e3",
+        "group": "exam_findings",
+        "chip_text": "hydration adequate",
+        "order": 3
+      },
+      {
+        "chip_id": "peds-fev-r1",
+        "group": "red_flags",
+        "chip_text": "respiratory distress",
+        "order": 1
+      },
+      {
+        "chip_id": "peds-fev-r2",
+        "group": "red_flags",
+        "chip_text": "fever in infant <3mo",
+        "order": 2
+      },
+      {
+        "chip_id": "peds-fev-p1",
+        "group": "plan_phrases",
+        "chip_text": "paracetamol PRN",
+        "order": 1
+      },
+      {
+        "chip_id": "peds-fev-p2",
+        "group": "plan_phrases",
+        "chip_text": "fluids encouraged",
+        "order": 2
+      },
+      {
+        "chip_id": "peds-fev-p3",
+        "group": "plan_phrases",
+        "chip_text": "return precautions given",
+        "order": 3
+      }
+    ]
+  }
+]

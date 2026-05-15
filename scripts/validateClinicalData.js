@@ -77,7 +77,7 @@ if (layouts && Array.isArray(layouts)) {
             `Layout ${spec.specialty_id}/${sec.section_id}: field_id missing or empty`
           );
           check(
-            ["text", "textarea", "select", "multi_select", "boolean", "number", "date"].includes(f.type),
+            ["text", "textarea", "select", "multi_select", "boolean", "number", "date", "checkbox"].includes(f.type),
             `Layout ${spec.specialty_id}/${sec.section_id}/${f.field_id}: invalid type '${f.type}'`
           );
           if (f.type === "select" || f.type === "multi_select") {
@@ -179,7 +179,7 @@ if (diagIndex && diagIndex.entries && Array.isArray(diagIndex.entries)) {
     entryIds.add(entry.entry_id);
 
     check(
-      ["chief_complaint", "diagnosis"].includes(entry.type),
+      ["chief_complaint", "diagnosis", "synonym", "lay_term"].includes(entry.type),
       `Diagnosis index ${entry.entry_id}: invalid type '${entry.type}'`
     );
     check(

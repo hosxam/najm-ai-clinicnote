@@ -10,26 +10,15 @@
         "section_id": "header",
         "display_name": "Header",
         "order": 1,
-        "content_template": "SHORT EMR NOTE\nSpecialty: {{specialty}} | Visit: {{visit_type}}\n",
+        "content_template": "Header\n",
         "optional": false,
-        "variables": [
-          {
-            "variable_name": "specialty",
-            "source": "free_text",
-            "description": "Specialty name"
-          },
-          {
-            "variable_name": "visit_type",
-            "source": "free_text",
-            "description": "Visit type label"
-          }
-        ]
+        "variables": []
       },
       {
         "section_id": "history",
         "display_name": "History",
         "order": 2,
-        "content_template": "Seen for {{symptoms}} / {{duration}}. {{negatives}}\nExam: {{exam}}.\nImpression: {{impression}}.\nPlan: {{plan}}.\n",
+        "content_template": "{{symptoms}} / {{duration}}. {{negatives}}",
         "optional": false,
         "variables": [
           {
@@ -48,17 +37,50 @@
             "source": "chips",
             "chip_group": "relevant_negatives",
             "description": "Pertinent negatives"
-          },
+          }
+        ]
+      },
+      {
+        "section_id": "exam",
+        "display_name": "Examination",
+        "order": 3,
+        "content_template": "{{exam}}",
+        "optional": false,
+        "variables": [
           {
             "variable_name": "exam",
             "source": "chips",
             "chip_group": "exam_findings",
-            "description": "Exam findings"
-          },
+            "description": "Examination findings"
+          }
+        ]
+      },
+      {
+        "section_id": "red_flags",
+        "display_name": "Red Flags / Alerts",
+        "order": 4,
+        "content_template": "{{red_flags}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "red_flags",
+            "source": "chips",
+            "chip_group": "red_flags",
+            "description": "Red flags discussed"
+          }
+        ]
+      },
+      {
+        "section_id": "impression_plan",
+        "display_name": "Impression and Plan",
+        "order": 5,
+        "content_template": "Impression: {{impression}}.\nPlan: {{plan}}.",
+        "optional": false,
+        "variables": [
           {
             "variable_name": "impression",
             "source": "free_text",
-            "description": "Working impression"
+            "description": "Clinical impression"
           },
           {
             "variable_name": "plan",
@@ -69,17 +91,35 @@
         ]
       },
       {
-        "section_id": "red_flags",
-        "display_name": "Red Flags",
-        "order": 3,
-        "content_template": "{{red_flags}}",
-        "optional": true,
+        "section_id": "limitations",
+        "display_name": "Limitations / Review",
+        "order": 6,
+        "content_template": "Limitations: {{limitations_text}}",
+        "optional": false,
         "variables": [
           {
-            "variable_name": "red_flags",
-            "source": "chips",
-            "chip_group": "red_flags",
-            "description": "Red flags discussed"
+            "variable_name": "limitations_text",
+            "source": "free_text",
+            "description": "Use of the report limitations"
+          }
+        ]
+      },
+      {
+        "section_id": "signature",
+        "display_name": "Signature / Review",
+        "order": 7,
+        "content_template": "\n---\nReviewed and signed: {{clinician_name}}\n{{date}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "clinician_name",
+            "source": "free_text",
+            "description": "Clinician name"
+          },
+          {
+            "variable_name": "date",
+            "source": "free_text",
+            "description": "Date signed"
           }
         ]
       }
@@ -97,66 +137,69 @@
         "section_id": "header",
         "display_name": "Header",
         "order": 1,
-        "content_template": "SOAP NOTE\nSpecialty: {{specialty}} | Visit: {{visit_type}}\n",
+        "content_template": "Header\n",
         "optional": false,
-        "variables": [
-          {
-            "variable_name": "specialty",
-            "source": "free_text"
-          },
-          {
-            "variable_name": "visit_type",
-            "source": "free_text"
-          }
-        ]
+        "variables": []
       },
       {
         "section_id": "subjective",
-        "display_name": "Subjective",
+        "display_name": "Subjective (Symptoms)",
         "order": 2,
-        "content_template": "SUBJECTIVE:\nDuration: {{duration}}\nSymptoms: {{symptoms}}\nRelevant negatives: {{negatives}}\n",
+        "content_template": "{{symptoms}}\n{{negatives}}",
         "optional": false,
         "variables": [
           {
-            "variable_name": "duration",
-            "source": "free_text"
-          },
-          {
             "variable_name": "symptoms",
             "source": "chips",
-            "chip_group": "symptoms"
+            "chip_group": "symptoms",
+            "description": "Subjective symptoms"
           },
           {
             "variable_name": "negatives",
             "source": "chips",
-            "chip_group": "relevant_negatives"
+            "chip_group": "relevant_negatives",
+            "description": "Pertinent negatives"
           }
         ]
       },
       {
         "section_id": "objective",
-        "display_name": "Objective",
+        "display_name": "Objective (Exam)",
         "order": 3,
-        "content_template": "OBJECTIVE:\nExamination: {{exam}}\n",
+        "content_template": "{{exam}}\n{{investigations}}",
         "optional": false,
         "variables": [
           {
             "variable_name": "exam",
             "source": "chips",
-            "chip_group": "exam_findings"
+            "chip_group": "exam_findings",
+            "description": "Examination findings"
+          },
+          {
+            "variable_name": "investigations",
+            "source": "chips",
+            "chip_group": "investigations",
+            "description": "Investigation results"
           }
         ]
       },
       {
         "section_id": "assessment",
-        "display_name": "Assessment",
+        "display_name": "Assessment / Impression",
         "order": 4,
-        "content_template": "ASSESSMENT:\n{{impression}}\n",
+        "content_template": "{{impression}}.\nPlan: {{plan}}.",
         "optional": false,
         "variables": [
           {
             "variable_name": "impression",
-            "source": "free_text"
+            "source": "free_text",
+            "description": "Assessment / impression"
+          },
+          {
+            "variable_name": "plan",
+            "source": "chips",
+            "chip_group": "plan_phrases",
+            "description": "Plan items"
           }
         ]
       },
@@ -164,13 +207,62 @@
         "section_id": "plan",
         "display_name": "Plan",
         "order": 5,
-        "content_template": "PLAN:\n{{plan}}\n",
+        "content_template": "{{plan}}",
         "optional": false,
         "variables": [
           {
             "variable_name": "plan",
             "source": "chips",
-            "chip_group": "plan_phrases"
+            "chip_group": "plan_phrases",
+            "description": "Plan items"
+          }
+        ]
+      },
+      {
+        "section_id": "red_flags",
+        "display_name": "Red Flags / Safety",
+        "order": 6,
+        "content_template": "{{red_flags}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "red_flags",
+            "source": "chips",
+            "chip_group": "red_flags",
+            "description": "Red flags discussed"
+          }
+        ]
+      },
+      {
+        "section_id": "limitations",
+        "display_name": "Limitations / Review",
+        "order": 7,
+        "content_template": "Limitations: {{limitations_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "limitations_text",
+            "source": "free_text",
+            "description": "Use of the report limitations"
+          }
+        ]
+      },
+      {
+        "section_id": "signature",
+        "display_name": "Signature / Review",
+        "order": 8,
+        "content_template": "\n---\nReviewed and signed: {{clinician_name}}\n{{date}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "clinician_name",
+            "source": "free_text",
+            "description": "Clinician name"
+          },
+          {
+            "variable_name": "date",
+            "source": "free_text",
+            "description": "Date signed"
           }
         ]
       }
@@ -186,18 +278,21 @@
     "sections": [
       {
         "section_id": "header",
-        "display_name": "Header",
+        "display_name": "Header / Referral Info",
         "order": 1,
-        "content_template": "REFERRAL LETTER\n\nTo: {{referred_to}}\nReason: {{reason}}\n",
+        "content_template": "Header / Referral Info\n",
+        "optional": false,
+        "variables": []
+      },
+      {
+        "section_id": "reason",
+        "display_name": "Reason for Referral",
+        "order": 2,
+        "content_template": "{{reason_text}}",
         "optional": false,
         "variables": [
           {
-            "variable_name": "referred_to",
-            "source": "free_text",
-            "description": "Referred specialty/doctor"
-          },
-          {
-            "variable_name": "reason",
+            "variable_name": "reason_text",
             "source": "free_text",
             "description": "Reason for referral"
           }
@@ -205,47 +300,132 @@
       },
       {
         "section_id": "history",
-        "display_name": "History",
-        "order": 2,
-        "content_template": "History: {{symptoms}} / {{duration}}\nRelevant negatives: {{negatives}}\nExam findings: {{exam}}\n",
+        "display_name": "History / Key Findings",
+        "order": 3,
+        "content_template": "{{symptoms}} / {{duration}}. {{negatives}}",
         "optional": false,
         "variables": [
           {
             "variable_name": "symptoms",
             "source": "chips",
-            "chip_group": "symptoms"
+            "chip_group": "symptoms",
+            "description": "Selected symptoms"
           },
           {
             "variable_name": "duration",
-            "source": "free_text"
+            "source": "free_text",
+            "description": "Duration"
           },
           {
             "variable_name": "negatives",
             "source": "chips",
-            "chip_group": "relevant_negatives"
-          },
-          {
-            "variable_name": "exam",
-            "source": "chips",
-            "chip_group": "exam_findings"
+            "chip_group": "relevant_negatives",
+            "description": "Pertinent negatives"
           }
         ]
       },
       {
-        "section_id": "impression_plan",
-        "display_name": "Impression and Plan",
-        "order": 3,
-        "content_template": "Working impression: {{impression}}\nCurrent plan: {{plan}}\n\nPlease see and advise.\n",
+        "section_id": "exam",
+        "display_name": "Examination Findings",
+        "order": 4,
+        "content_template": "{{exam}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "exam",
+            "source": "chips",
+            "chip_group": "exam_findings",
+            "description": "Examination findings"
+          }
+        ]
+      },
+      {
+        "section_id": "investigations",
+        "display_name": "Investigations Reviewed",
+        "order": 5,
+        "content_template": "{{investigations}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "investigations",
+            "source": "chips",
+            "chip_group": "investigations",
+            "description": "Investigations reviewed"
+          }
+        ]
+      },
+      {
+        "section_id": "impression",
+        "display_name": "Clinician Impression",
+        "order": 6,
+        "content_template": "{{impression}}",
         "optional": false,
         "variables": [
           {
             "variable_name": "impression",
-            "source": "free_text"
+            "source": "free_text",
+            "description": "Clinician impression"
+          }
+        ]
+      },
+      {
+        "section_id": "current_management",
+        "display_name": "Current Management",
+        "order": 7,
+        "content_template": "{{current_management_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "current_management_text",
+            "source": "free_text",
+            "description": "Current management summary"
+          }
+        ]
+      },
+      {
+        "section_id": "urgency",
+        "display_name": "Urgency / Requested Action",
+        "order": 8,
+        "content_template": "Urgency: {{urgency_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "urgency_text",
+            "source": "free_text",
+            "description": "Urgency level"
+          }
+        ]
+      },
+      {
+        "section_id": "limitations",
+        "display_name": "Limitations / Review",
+        "order": 9,
+        "content_template": "Limitations: {{limitations_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "limitations_text",
+            "source": "free_text",
+            "description": "Use of the report limitations"
+          }
+        ]
+      },
+      {
+        "section_id": "signature",
+        "display_name": "Signature / Review",
+        "order": 10,
+        "content_template": "\n---\nReviewed and signed: {{clinician_name}}\n{{date}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "clinician_name",
+            "source": "free_text",
+            "description": "Clinician name"
           },
           {
-            "variable_name": "plan",
-            "source": "chips",
-            "chip_group": "plan_phrases"
+            "variable_name": "date",
+            "source": "free_text",
+            "description": "Date signed"
           }
         ]
       }
@@ -261,19 +441,114 @@
     "sections": [
       {
         "section_id": "header",
-        "display_name": "Header",
+        "display_name": "Header / Purpose",
         "order": 1,
-        "content_template": "PATIENT INSTRUCTIONS\n\nDiagnosis/Impression: {{impression}}\n\nPlan:\n{{plan_lines}}\n",
+        "content_template": "Header / Purpose\n",
+        "optional": false,
+        "variables": []
+      },
+      {
+        "section_id": "diagnosis",
+        "display_name": "Diagnosis / Impression",
+        "order": 2,
+        "content_template": "{{diagnosis_text}}",
         "optional": false,
         "variables": [
           {
-            "variable_name": "impression",
-            "source": "free_text"
+            "variable_name": "diagnosis_text",
+            "source": "free_text",
+            "description": "Diagnosis / impression for patient"
+          }
+        ]
+      },
+      {
+        "section_id": "plan",
+        "display_name": "Management Plan",
+        "order": 3,
+        "content_template": "{{plan}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "plan",
+            "source": "chips",
+            "chip_group": "plan_phrases",
+            "description": "Plan items"
+          }
+        ]
+      },
+      {
+        "section_id": "medication_instructions",
+        "display_name": "Medication / Treatment Instructions",
+        "order": 4,
+        "content_template": "{{medication_instructions_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "medication_instructions_text",
+            "source": "free_text",
+            "description": "Medication / treatment instructions"
+          }
+        ]
+      },
+      {
+        "section_id": "red_flags",
+        "display_name": "Warning Signs / Precaution",
+        "order": 5,
+        "content_template": "{{red_flags}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "red_flags",
+            "source": "chips",
+            "chip_group": "red_flags",
+            "description": "Red flags discussed"
+          }
+        ]
+      },
+      {
+        "section_id": "follow_up",
+        "display_name": "Follow-up Plan",
+        "order": 6,
+        "content_template": "{{follow_up_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "follow_up_text",
+            "source": "free_text",
+            "description": "Follow-up plan"
+          }
+        ]
+      },
+      {
+        "section_id": "limitations",
+        "display_name": "Limitations / Review",
+        "order": 7,
+        "content_template": "Limitations: {{limitations_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "limitations_text",
+            "source": "free_text",
+            "description": "Use of the report limitations"
+          }
+        ]
+      },
+      {
+        "section_id": "signature",
+        "display_name": "Signature / Review",
+        "order": 8,
+        "content_template": "\n---\nReviewed and signed: {{clinician_name}}\n{{date}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "clinician_name",
+            "source": "free_text",
+            "description": "Clinician name"
           },
           {
-            "variable_name": "plan_lines",
-            "source": "chips",
-            "chip_group": "plan_phrases"
+            "variable_name": "date",
+            "source": "free_text",
+            "description": "Date signed"
           }
         ]
       }
@@ -283,34 +558,138 @@
   {
     "template_id": "fitness-note-general",
     "name": "Fitness / Work / School Note",
-    "description": "Brief fitness certificate for work or school.",
+    "description": "Brief note supporting work, school, or activity clearance.",
     "type": "fitness_note",
     "specialty_filter": null,
     "sections": [
       {
-        "section_id": "statement",
-        "display_name": "Statement",
+        "section_id": "header",
+        "display_name": "Header / Purpose",
         "order": 1,
-        "content_template": "FITNESS NOTE\n\nThis patient was seen for {{symptoms}} (duration {{duration}}).\nImpression: {{impression}}.\n\nRecommended rest period: {{follow_up}}.\n\nCleared to resume normal activities after recovery.\n",
+        "content_template": "Header / Purpose\n",
+        "optional": false,
+        "variables": []
+      },
+      {
+        "section_id": "encounter_info",
+        "display_name": "Encounter Details",
+        "order": 2,
+        "content_template": "Seen on {{visit_date}}.\n",
         "optional": false,
         "variables": [
           {
-            "variable_name": "symptoms",
-            "source": "chips",
-            "chip_group": "symptoms"
-          },
+            "variable_name": "visit_date",
+            "source": "free_text",
+            "description": "Date of encounter"
+          }
+        ]
+      },
+      {
+        "section_id": "symptoms",
+        "display_name": "Symptoms / Condition Summary",
+        "order": 3,
+        "content_template": "{{symptoms_text}}",
+        "optional": false,
+        "variables": [
           {
-            "variable_name": "duration",
-            "source": "free_text"
-          },
+            "variable_name": "symptoms_text",
+            "source": "free_text",
+            "description": "Presenting symptoms summary"
+          }
+        ]
+      },
+      {
+        "section_id": "assessment",
+        "display_name": "Assessment Summary",
+        "order": 4,
+        "content_template": "{{impression}}.\nPlan: {{plan}}.",
+        "optional": false,
+        "variables": [
           {
             "variable_name": "impression",
-            "source": "free_text"
+            "source": "free_text",
+            "description": "Assessment / impression"
           },
           {
-            "variable_name": "follow_up",
+            "variable_name": "plan",
+            "source": "chips",
+            "chip_group": "plan_phrases",
+            "description": "Plan items"
+          }
+        ]
+      },
+      {
+        "section_id": "functional_limitation",
+        "display_name": "Functional Limitation",
+        "order": 5,
+        "content_template": "Functional limitation: {{functional_limitation_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "functional_limitation_text",
             "source": "free_text",
-            "description": "Recommended rest period"
+            "description": "Functional limitation description"
+          }
+        ]
+      },
+      {
+        "section_id": "restriction",
+        "display_name": "Activity / Work / School Restriction",
+        "order": 6,
+        "content_template": "Restriction: {{restriction_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "restriction_text",
+            "source": "free_text",
+            "description": "Activity restriction details"
+          }
+        ]
+      },
+      {
+        "section_id": "follow_up",
+        "display_name": "Follow-up Review",
+        "order": 7,
+        "content_template": "{{follow_up_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "follow_up_text",
+            "source": "free_text",
+            "description": "Follow-up plan"
+          }
+        ]
+      },
+      {
+        "section_id": "limitations",
+        "display_name": "Limitations / Review",
+        "order": 8,
+        "content_template": "Limitations: {{limitations_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "limitations_text",
+            "source": "free_text",
+            "description": "Use of the report limitations"
+          }
+        ]
+      },
+      {
+        "section_id": "signature",
+        "display_name": "Signature / Review",
+        "order": 9,
+        "content_template": "\n---\nReviewed and signed: {{clinician_name}}\n{{date}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "clinician_name",
+            "source": "free_text",
+            "description": "Clinician name"
+          },
+          {
+            "variable_name": "date",
+            "source": "free_text",
+            "description": "Date signed"
           }
         ]
       }
@@ -325,43 +704,198 @@
     "specialty_filter": null,
     "sections": [
       {
-        "section_id": "summary",
-        "display_name": "Summary",
+        "section_id": "header",
+        "display_name": "Header / Encounter Info",
         "order": 1,
-        "content_template": "DISCHARGE SUMMARY\n\nDiagnosis: {{impression}}\nPresenting symptoms: {{symptoms}} / {{duration}}\nNegative findings: {{negatives}}\nExam: {{exam}}\n\nPlan on discharge:\n{{plan}}\n\nFollow-up: {{follow_up}}\n",
+        "content_template": "Header / Encounter Info\n",
+        "optional": false,
+        "variables": []
+      },
+      {
+        "section_id": "presenting_problem",
+        "display_name": "Presenting Problem",
+        "order": 2,
+        "content_template": "{{presenting_problem_text}}",
         "optional": false,
         "variables": [
           {
-            "variable_name": "impression",
-            "source": "free_text"
-          },
+            "variable_name": "presenting_problem_text",
+            "source": "free_text",
+            "description": "Presenting problem / chief complaint"
+          }
+        ]
+      },
+      {
+        "section_id": "history",
+        "display_name": "Relevant History",
+        "order": 3,
+        "content_template": "{{symptoms}} / {{duration}}. {{negatives}}",
+        "optional": false,
+        "variables": [
           {
             "variable_name": "symptoms",
             "source": "chips",
-            "chip_group": "symptoms"
+            "chip_group": "symptoms",
+            "description": "Selected symptoms"
           },
           {
             "variable_name": "duration",
-            "source": "free_text"
+            "source": "free_text",
+            "description": "Duration"
           },
           {
             "variable_name": "negatives",
             "source": "chips",
-            "chip_group": "relevant_negatives"
-          },
+            "chip_group": "relevant_negatives",
+            "description": "Pertinent negatives"
+          }
+        ]
+      },
+      {
+        "section_id": "exam",
+        "display_name": "Key Examination Findings",
+        "order": 4,
+        "content_template": "{{exam}}",
+        "optional": false,
+        "variables": [
           {
             "variable_name": "exam",
             "source": "chips",
-            "chip_group": "exam_findings"
-          },
+            "chip_group": "exam_findings",
+            "description": "Examination findings"
+          }
+        ]
+      },
+      {
+        "section_id": "investigations",
+        "display_name": "Key Investigations",
+        "order": 5,
+        "content_template": "{{investigations}}",
+        "optional": false,
+        "variables": [
           {
-            "variable_name": "plan",
+            "variable_name": "investigations",
             "source": "chips",
-            "chip_group": "plan_phrases"
+            "chip_group": "investigations",
+            "description": "Investigations reviewed"
+          }
+        ]
+      },
+      {
+        "section_id": "clinical_course",
+        "display_name": "Clinical Course",
+        "order": 6,
+        "content_template": "{{clinical_course_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "clinical_course_text",
+            "source": "free_text",
+            "description": "Clinical course summary"
+          }
+        ]
+      },
+      {
+        "section_id": "procedures",
+        "display_name": "Procedures Performed",
+        "order": 7,
+        "content_template": "{{procedures_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "procedures_text",
+            "source": "free_text",
+            "description": "Procedures performed"
+          }
+        ]
+      },
+      {
+        "section_id": "impression",
+        "display_name": "Clinician Impression",
+        "order": 8,
+        "content_template": "{{impression}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "impression",
+            "source": "free_text",
+            "description": "Clinician impression"
+          }
+        ]
+      },
+      {
+        "section_id": "instructions",
+        "display_name": "Medications / Instructions",
+        "order": 9,
+        "content_template": "{{instructions_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "instructions_text",
+            "source": "free_text",
+            "description": "Medications / instructions at discharge"
+          }
+        ]
+      },
+      {
+        "section_id": "discharge_plan",
+        "display_name": "Discharge / Follow-up Plan",
+        "order": 10,
+        "content_template": "Discharge plan: {{discharge_plan_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "discharge_plan_text",
+            "source": "free_text",
+            "description": "Discharge and follow-up plan"
+          }
+        ]
+      },
+      {
+        "section_id": "red_flags",
+        "display_name": "Red Flags Discussed",
+        "order": 11,
+        "content_template": "{{red_flags}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "red_flags",
+            "source": "chips",
+            "chip_group": "red_flags",
+            "description": "Red flags discussed"
+          }
+        ]
+      },
+      {
+        "section_id": "limitations",
+        "display_name": "Limitations / Review",
+        "order": 12,
+        "content_template": "Limitations: {{limitations_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "limitations_text",
+            "source": "free_text",
+            "description": "Use of the report limitations"
+          }
+        ]
+      },
+      {
+        "section_id": "signature",
+        "display_name": "Signature / Review",
+        "order": 13,
+        "content_template": "\n---\nReviewed and signed: {{clinician_name}}\n{{date}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "clinician_name",
+            "source": "free_text",
+            "description": "Clinician name"
           },
           {
-            "variable_name": "follow_up",
-            "source": "free_text"
+            "variable_name": "date",
+            "source": "free_text",
+            "description": "Date signed"
           }
         ]
       }
@@ -371,44 +905,174 @@
   {
     "template_id": "insurance-summary-general",
     "name": "Insurance Clinical Summary",
-    "description": "Summary for insurance or third-party review.",
+    "description": "Summary for insurance or third-party clinical review.",
     "type": "insurance",
     "specialty_filter": null,
     "sections": [
       {
-        "section_id": "summary",
-        "display_name": "Clinical Summary",
+        "section_id": "header",
+        "display_name": "Header / Report Purpose",
         "order": 1,
-        "content_template": "CLINICAL SUMMARY (Insurance)\n\nDiagnosis: {{impression}}\nPresenting symptoms: {{symptoms}}\nDuration: {{duration}}\nPertinent negatives: {{negatives}}\nExam: {{exam}}\nPlan: {{plan}}\n\nThis summary is provided for insurance processing purposes.\n",
+        "content_template": "Header / Report Purpose\n",
+        "optional": false,
+        "variables": []
+      },
+      {
+        "section_id": "encounter_summary",
+        "display_name": "Clinical Encounter Summary",
+        "order": 2,
+        "content_template": "Encounter: {{encounter_summary_text}}",
         "optional": false,
         "variables": [
           {
-            "variable_name": "impression",
-            "source": "free_text"
-          },
+            "variable_name": "encounter_summary_text",
+            "source": "free_text",
+            "description": "Clinical encounter summary"
+          }
+        ]
+      },
+      {
+        "section_id": "history",
+        "display_name": "Relevant History",
+        "order": 3,
+        "content_template": "{{symptoms}} / {{duration}}. {{negatives}}",
+        "optional": false,
+        "variables": [
           {
             "variable_name": "symptoms",
             "source": "chips",
-            "chip_group": "symptoms"
+            "chip_group": "symptoms",
+            "description": "Selected symptoms"
           },
           {
             "variable_name": "duration",
-            "source": "free_text"
+            "source": "free_text",
+            "description": "Duration"
           },
           {
             "variable_name": "negatives",
             "source": "chips",
-            "chip_group": "relevant_negatives"
-          },
+            "chip_group": "relevant_negatives",
+            "description": "Pertinent negatives"
+          }
+        ]
+      },
+      {
+        "section_id": "exam",
+        "display_name": "Examination Findings",
+        "order": 4,
+        "content_template": "{{exam}}",
+        "optional": false,
+        "variables": [
           {
             "variable_name": "exam",
             "source": "chips",
-            "chip_group": "exam_findings"
+            "chip_group": "exam_findings",
+            "description": "Examination findings"
+          }
+        ]
+      },
+      {
+        "section_id": "investigations",
+        "display_name": "Investigations / Results",
+        "order": 5,
+        "content_template": "{{investigations}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "investigations",
+            "source": "chips",
+            "chip_group": "investigations",
+            "description": "Investigations reviewed"
+          }
+        ]
+      },
+      {
+        "section_id": "impression",
+        "display_name": "Clinician Impression",
+        "order": 6,
+        "content_template": "{{impression}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "impression",
+            "source": "free_text",
+            "description": "Clinician impression"
+          }
+        ]
+      },
+      {
+        "section_id": "management",
+        "display_name": "Management Provided",
+        "order": 7,
+        "content_template": "Management provided: {{management_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "management_text",
+            "source": "free_text",
+            "description": "Management summary"
+          }
+        ]
+      },
+      {
+        "section_id": "functional_status",
+        "display_name": "Current Functional Status",
+        "order": 8,
+        "content_template": "Functional status: {{functional_status_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "functional_status_text",
+            "source": "free_text",
+            "description": "Current functional status"
+          }
+        ]
+      },
+      {
+        "section_id": "follow_up",
+        "display_name": "Follow-up Plan",
+        "order": 9,
+        "content_template": "{{follow_up_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "follow_up_text",
+            "source": "free_text",
+            "description": "Follow-up plan"
+          }
+        ]
+      },
+      {
+        "section_id": "limitations",
+        "display_name": "Limitations / Review",
+        "order": 10,
+        "content_template": "Limitations: {{limitations_text}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "limitations_text",
+            "source": "free_text",
+            "description": "Use of the report limitations"
+          }
+        ]
+      },
+      {
+        "section_id": "signature",
+        "display_name": "Signature / Review",
+        "order": 11,
+        "content_template": "\n---\nReviewed and signed: {{clinician_name}}\n{{date}}",
+        "optional": false,
+        "variables": [
+          {
+            "variable_name": "clinician_name",
+            "source": "free_text",
+            "description": "Clinician name"
           },
           {
-            "variable_name": "plan",
-            "source": "chips",
-            "chip_group": "plan_phrases"
+            "variable_name": "date",
+            "source": "free_text",
+            "description": "Date signed"
           }
         ]
       }

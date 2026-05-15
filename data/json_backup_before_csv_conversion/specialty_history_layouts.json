@@ -1,0 +1,440 @@
+[
+  {
+    "specialty_id": "General Medicine / GP",
+    "display_name": "General Medicine / GP",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "hpi",
+        "display_name": "History of Presenting Complaint",
+        "order": 1,
+        "description": "Main symptom timeline, severity, context",
+        "fields": [
+          { "field_id": "chief_complaint", "prompt": "Chief complaint", "type": "text", "placeholder": "e.g. chest pain, fever, cough", "required": true },
+          { "field_id": "duration", "prompt": "Duration", "type": "text", "placeholder": "e.g. 3 days, 2 weeks", "required": true },
+          { "field_id": "onset", "prompt": "Onset (acute/gradual)", "type": "select", "options": ["Acute", "Gradual", "Intermittent", "Constant"], "required": false },
+          { "field_id": "severity", "prompt": "Severity (1-10)", "type": "number", "placeholder": "3", "required": false },
+          { "field_id": "context", "prompt": "Context / precipitating factors", "type": "text", "placeholder": "e.g. after eating, at rest, with exertion", "required": false }
+        ]
+      },
+      {
+        "section_id": "pmh",
+        "display_name": "Past Medical History",
+        "order": 2,
+        "description": "Chronic conditions, surgeries, hospitalizations",
+        "fields": [
+          { "field_id": "chronic_conditions", "prompt": "Chronic conditions", "type": "textarea", "placeholder": "e.g. HTN, DM, asthma", "required": false },
+          { "field_id": "surgeries", "prompt": "Past surgeries", "type": "textarea", "placeholder": "e.g. appendectomy 2018", "required": false },
+          { "field_id": "medications", "prompt": "Current medications", "type": "textarea", "placeholder": "e.g. Metformin 500mg BD, Amlodipine 5mg daily", "required": false },
+          { "field_id": "allergies", "prompt": "Allergies", "type": "textarea", "placeholder": "e.g. penicillin, peanuts", "required": false }
+        ]
+      },
+      {
+        "section_id": "systems_review",
+        "display_name": "Review of Systems",
+        "order": 3,
+        "description": "Brief relevant systems screen",
+        "fields": [
+          { "field_id": "constitutional", "prompt": "Constitutional (fever, weight loss, fatigue)", "type": "text", "placeholder": "e.g. no fever, no weight loss", "required": false },
+          { "field_id": "cardiorespiratory", "prompt": "Cardio/Respiratory (chest pain, SOB, palpitations)", "type": "text", "placeholder": "e.g. no chest pain, no SOB", "required": false },
+          { "field_id": "gi", "prompt": "GI (nausea, vomiting, diarrhea, constipation)", "type": "text", "placeholder": "e.g. normal appetite, no nausea", "required": false }
+        ]
+      },
+      {
+        "section_id": "social",
+        "display_name": "Social History",
+        "order": 4,
+        "description": "Smoking, alcohol, occupation",
+        "fields": [
+          { "field_id": "smoking", "prompt": "Smoking status", "type": "select", "options": ["Never", "Former", "Current", "Unknown"], "required": false },
+          { "field_id": "occupation", "prompt": "Occupation", "type": "text", "placeholder": "e.g. teacher, office worker", "required": false }
+        ]
+      }
+    ]
+  },
+  {
+    "specialty_id": "Pediatrics",
+    "display_name": "Pediatrics",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "hpi",
+        "display_name": "History of Presenting Complaint",
+        "order": 1,
+        "description": "Main symptom timeline in the child",
+        "fields": [
+          { "field_id": "chief_complaint", "prompt": "Chief complaint", "type": "text", "placeholder": "e.g. fever, cough, rash", "required": true },
+          { "field_id": "duration", "prompt": "Duration", "type": "text", "placeholder": "e.g. 2 days", "required": true },
+          { "field_id": "associated", "prompt": "Associated symptoms", "type": "text", "placeholder": "e.g. vomiting, diarrhea, decreased feeding", "required": false }
+        ]
+      },
+      {
+        "section_id": "birth_history",
+        "display_name": "Birth History",
+        "order": 2,
+        "description": "Antenatal, perinatal, and neonatal history",
+        "fields": [
+          { "field_id": "gestation", "prompt": "Gestation at birth", "type": "text", "placeholder": "e.g. Full term, 38 weeks, preterm 34 weeks", "required": false },
+          { "field_id": "delivery", "prompt": "Mode of delivery", "type": "select", "options": ["Normal vaginal", "C-section", "Vacuum", "Forceps", "Unknown"], "required": false },
+          { "field_id": "birth_weight", "prompt": "Birth weight", "type": "text", "placeholder": "e.g. 3.2 kg", "required": false },
+          { "field_id": "nnu_course", "prompt": "NICU / neonatal course", "type": "text", "placeholder": "e.g. No NICU, jaundice phototherapy day 3", "required": false }
+        ]
+      },
+      {
+        "section_id": "feeding",
+        "display_name": "Feeding",
+        "order": 3,
+        "description": "Current feeding pattern",
+        "fields": [
+          { "field_id": "feeding_type", "prompt": "Feeding type", "type": "select", "options": ["Breastfeeding", "Formula", "Mixed", "Solid foods", "Combination"], "required": false },
+          { "field_id": "feeding_concerns", "prompt": "Feeding concerns", "type": "text", "placeholder": "e.g. Poor appetite, vomiting after feeds", "required": false }
+        ]
+      },
+      {
+        "section_id": "immunization",
+        "display_name": "Immunization Status",
+        "order": 4,
+        "description": "Vaccines received and up-to-date status",
+        "fields": [
+          { "field_id": "up_to_date", "prompt": "Immunizations up to date?", "type": "select", "options": ["Yes", "No", "Unknown"], "required": false },
+          { "field_id": "vaccines_missed", "prompt": "Vaccines missed/delayed", "type": "text", "placeholder": "e.g. MMR delayed", "required": false }
+        ]
+      },
+      {
+        "section_id": "development",
+        "display_name": "Developmental Milestones",
+        "order": 5,
+        "description": "Gross motor, fine motor, language, social milestones",
+        "fields": [
+          { "field_id": "milestones_achieved", "prompt": "Milestones achieved", "type": "textarea", "placeholder": "e.g. Sitting unsupported at 6mo, walking at 12mo, speaking 2-word phrases at 18mo", "required": false },
+          { "field_id": "milestones_concerns", "prompt": "Developmental concerns", "type": "textarea", "placeholder": "e.g. Not yet walking at 15mo", "required": false }
+        ]
+      },
+      {
+        "section_id": "growth",
+        "display_name": "Growth",
+        "order": 6,
+        "description": "Growth parameters and centiles",
+        "fields": [
+          { "field_id": "height_weight", "prompt": "Height / Weight / OFC", "type": "text", "placeholder": "e.g. Wt 10kg (25th), Ht 85cm (50th), OFC 47cm (10th)", "required": false },
+          { "field_id": "growth_concerns", "prompt": "Growth concerns", "type": "text", "placeholder": "e.g. Weight dropping centiles, obesity", "required": false }
+        ]
+      },
+      {
+        "section_id": "parental_concerns",
+        "display_name": "Parental Concerns",
+        "order": 7,
+        "description": "What the parent is most worried about",
+        "fields": [
+          { "field_id": "main_concern", "prompt": "Main concern", "type": "textarea", "placeholder": "e.g. Worried about breathing difficulty, fever not coming down", "required": false }
+        ]
+      }
+    ]
+  },
+  {
+    "specialty_id": "OB/GYN",
+    "display_name": "Obstetrics & Gynecology",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "hpi",
+        "display_name": "History of Presenting Complaint",
+        "order": 1,
+        "description": "Main gynecologic or obstetric symptom",
+        "fields": [
+          { "field_id": "chief_complaint", "prompt": "Chief complaint", "type": "text", "placeholder": "e.g. abnormal bleeding, pelvic pain, discharge", "required": true },
+          { "field_id": "duration", "prompt": "Duration", "type": "text", "placeholder": "e.g. 5 days, 3 months", "required": true }
+        ]
+      },
+      {
+        "section_id": "menstrual_history",
+        "display_name": "Menstrual History",
+        "order": 2,
+        "description": "Cycle regularity, LMP, menarche",
+        "fields": [
+          { "field_id": "lmp", "prompt": "LMP (Last Menstrual Period)", "type": "text", "placeholder": "e.g. 10 April 2026 or 4 weeks ago", "required": false },
+          { "field_id": "cycle", "prompt": "Cycle length and regularity", "type": "text", "placeholder": "e.g. Regular 28 days, irregular 30-45 days", "required": false },
+          { "field_id": "flow", "prompt": "Flow characteristics", "type": "text", "placeholder": "e.g. Moderate 5 days, heavy with clots", "required": false },
+          { "field_id": "menarche", "prompt": "Age at menarche", "type": "text", "placeholder": "e.g. 13", "required": false },
+          { "field_id": "dysmenorrhea", "prompt": "Dysmenorrhea", "type": "select", "options": ["None", "Mild", "Moderate", "Severe"], "required": false }
+        ]
+      },
+      {
+        "section_id": "obstetric_history",
+        "display_name": "Obstetric History",
+        "order": 3,
+        "description": "Gravida, para, miscarriages, deliveries",
+        "fields": [
+          { "field_id": "gravida_para", "prompt": "Gravida / Para / Abortus", "type": "text", "placeholder": "e.g. G2P1A0", "required": false },
+          { "field_id": "deliveries", "prompt": "Delivery history", "type": "textarea", "placeholder": "e.g. 1 NVD at term 2023, no complications", "required": false },
+          { "field_id": "pregnancy_status", "prompt": "Currently pregnant?", "type": "select", "options": ["Yes", "No", "Unknown"], "required": false },
+          { "field_id": "edd", "prompt": "EDD (if pregnant)", "type": "text", "placeholder": "e.g. December 15 2026", "required": false }
+        ]
+      },
+      {
+        "section_id": "gynecologic_history",
+        "display_name": "Gynecologic History",
+        "order": 4,
+        "description": "Pap smear, STIs, fibroids, endometriosis",
+        "fields": [
+          { "field_id": "pap_history", "prompt": "Pap smear history", "type": "text", "placeholder": "e.g. Normal last year, never had", "required": false },
+          { "field_id": "contraception", "prompt": "Contraception method", "type": "select", "options": ["None", "OCP", "IUD", "Implant", "Condoms", "Sterilization", "Other"], "required": false },
+          { "field_id": "gyno_conditions", "prompt": "Gynecologic conditions", "type": "textarea", "placeholder": "e.g. Fibroids, PCOS, endometriosis", "required": false }
+        ]
+      }
+    ]
+  },
+  {
+    "specialty_id": "Orthopedics / MSK",
+    "display_name": "Orthopedics / MSK",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "hpi",
+        "display_name": "History of Presenting Complaint",
+        "order": 1,
+        "description": "MOI, pain, swelling, function",
+        "fields": [
+          { "field_id": "chief_complaint", "prompt": "Chief complaint (body part + problem)", "type": "text", "placeholder": "e.g. Left knee pain, right shoulder stiffness", "required": true },
+          { "field_id": "duration", "prompt": "Duration", "type": "text", "placeholder": "e.g. 1 week, 3 months", "required": true },
+          { "field_id": "moi", "prompt": "Mechanism of injury", "type": "text", "placeholder": "e.g. Fall onto outstretched hand, twisting injury, no trauma", "required": false },
+          { "field_id": "functional_limitation", "prompt": "Functional limitation", "type": "text", "placeholder": "e.g. Cannot bear weight, limited shoulder abduction, difficulty walking", "required": false }
+        ]
+      },
+      {
+        "section_id": "pain_assessment",
+        "display_name": "Pain Assessment",
+        "order": 2,
+        "description": "Pain character, aggravating/relieving factors",
+        "fields": [
+          { "field_id": "pain_severity", "prompt": "Pain severity (0-10)", "type": "number", "placeholder": "5", "required": false },
+          { "field_id": "pain_type", "prompt": "Pain type", "type": "select", "options": ["Sharp", "Dull", "Aching", "Burning", "Throbbing", "Stabbing"], "required": false },
+          { "field_id": "aggravating", "prompt": "Aggravating factors", "type": "text", "placeholder": "e.g. Weight bearing, overhead movement", "required": false },
+          { "field_id": "relieving", "prompt": "Relieving factors", "type": "text", "placeholder": "e.g. Rest, ice, elevation", "required": false }
+        ]
+      },
+      {
+        "section_id": "neurovascular",
+        "display_name": "Neurovascular Status",
+        "order": 3,
+        "description": "Sensation, motor, circulation distal to injury",
+        "fields": [
+          { "field_id": "sensation", "prompt": "Sensation distal", "type": "select", "options": ["Intact", "Reduced", "Absent", "Paresthesia"], "required": false },
+          { "field_id": "motor", "prompt": "Motor function distal", "type": "select", "options": ["Full", "Weak", "Paralyzed"], "required": false },
+          { "field_id": "pulses", "prompt": "Pulses distal", "type": "select", "options": ["Palpable", "Weak", "Absent", "Doppler only"], "required": false }
+        ]
+      },
+      {
+        "section_id": "range_of_motion",
+        "display_name": "Range of Motion",
+        "order": 4,
+        "description": "Active and passive ROM, stability",
+        "fields": [
+          { "field_id": "rom_affected", "prompt": "ROM findings", "type": "textarea", "placeholder": "e.g. Knee flexion limited to 90 degrees, full extension", "required": false },
+          { "field_id": "special_tests", "prompt": "Special test findings", "type": "text", "placeholder": "e.g. Lachman positive, Neer impingement positive", "required": false }
+        ]
+      }
+    ]
+  },
+  {
+    "specialty_id": "ENT",
+    "display_name": "Ear, Nose & Throat",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "ear_history",
+        "display_name": "Ear History",
+        "order": 1,
+        "description": "Hearing, pain, discharge, tinnitus",
+        "fields": [
+          { "field_id": "hearing_loss", "prompt": "Hearing loss", "type": "select", "options": ["None", "Unilateral", "Bilateral", "Sudden", "Gradual"], "required": false },
+          { "field_id": "ear_pain", "prompt": "Ear pain", "type": "select", "options": ["None", "Mild", "Moderate", "Severe"], "required": false },
+          { "field_id": "discharge", "prompt": "Ear discharge", "type": "select", "options": ["None", "Serous", "Purulent", "Bloody"], "required": false },
+          { "field_id": "tinnitus", "prompt": "Tinnitus", "type": "select", "options": ["None", "Present", "Bothersome"], "required": false },
+          { "field_id": "vertigo", "prompt": "Vertigo / dizziness", "type": "select", "options": ["None", "Positional", "Spontaneous", "Continuous"], "required": false }
+        ]
+      },
+      {
+        "section_id": "nose_history",
+        "display_name": "Nose / Sinus History",
+        "order": 2,
+        "description": "Congestion, discharge, smell, sinus pain",
+        "fields": [
+          { "field_id": "congestion", "prompt": "Nasal congestion", "type": "select", "options": ["None", "Unilateral", "Bilateral", "Intermittent", "Constant"], "required": false },
+          { "field_id": "rhinorrhea", "prompt": "Nasal discharge", "type": "select", "options": ["None", "Clear", "Purulent", "Bloody"], "required": false },
+          { "field_id": "sinus_pain", "prompt": "Sinus/facial pain", "type": "select", "options": ["None", "Present", "Severe"], "required": false },
+          { "field_id": "smell", "prompt": "Sense of smell", "type": "select", "options": ["Normal", "Reduced", "Absent", "Distorted"], "required": false }
+        ]
+      },
+      {
+        "section_id": "throat_history",
+        "display_name": "Throat / Voice History",
+        "order": 3,
+        "description": "Sore throat, dysphagia, voice change",
+        "fields": [
+          { "field_id": "sore_throat", "prompt": "Sore throat", "type": "select", "options": ["None", "Mild", "Moderate", "Severe"], "required": false },
+          { "field_id": "dysphagia", "prompt": "Dysphagia", "type": "select", "options": ["None", "Pain on swallowing", "Difficulty swallowing", "Both"], "required": false },
+          { "field_id": "voice_change", "prompt": "Voice change", "type": "select", "options": ["None", "Hoarseness", "Loss of voice"], "required": false }
+        ]
+      }
+    ]
+  },
+  {
+    "specialty_id": "Dermatology",
+    "display_name": "Dermatology",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "lesion_description",
+        "display_name": "Lesion Description",
+        "order": 1,
+        "description": "Morphology, color, size, texture",
+        "fields": [
+          { "field_id": "lesion_type", "prompt": "Lesion type", "type": "select", "options": ["Macule", "Papule", "Nodule", "Plaque", "Vesicle", "Bulla", "Pustule", "Wheal", "Scale", "Crust", "Erosion", "Ulcer", "Fissure"], "required": false },
+          { "field_id": "color", "prompt": "Color", "type": "text", "placeholder": "e.g. erythematous, hyperpigmented, violaceous", "required": false },
+          { "field_id": "size", "prompt": "Size", "type": "text", "placeholder": "e.g. 2x3 cm, pinpoint, diffuse", "required": false },
+          { "field_id": "texture", "prompt": "Texture", "type": "text", "placeholder": "e.g. smooth, rough, scaly, verrucous", "required": false }
+        ]
+      },
+      {
+        "section_id": "distribution",
+        "display_name": "Distribution & Duration",
+        "order": 2,
+        "description": "Body distribution, time course, symmetry",
+        "fields": [
+          { "field_id": "distribution", "prompt": "Distribution", "type": "text", "placeholder": "e.g. Face and neck, flexural surfaces, generalized, acral", "required": false },
+          { "field_id": "symmetry", "prompt": "Symmetry", "type": "select", "options": ["Symmetric", "Asymmetric", "N/A"], "required": false },
+          { "field_id": "duration_skin", "prompt": "How long present?", "type": "text", "placeholder": "e.g. 3 days, 6 months", "required": true }
+        ]
+      },
+      {
+        "section_id": "triggers_exposures",
+        "display_name": "Triggers and Exposures",
+        "order": 3,
+        "description": "What triggers or worsens the rash",
+        "fields": [
+          { "field_id": "itching", "prompt": "Itching", "type": "select", "options": ["None", "Mild", "Moderate", "Severe"], "required": false },
+          { "field_id": "triggers", "prompt": "Known triggers", "type": "text", "placeholder": "e.g. Sun exposure, stress, certain foods, medications", "required": false },
+          { "field_id": "prior_treatment", "prompt": "Prior treatment tried", "type": "text", "placeholder": "e.g. Hydrocortisone cream, antihistamines, none", "required": false },
+          { "field_id": "exposures", "prompt": "New exposures", "type": "text", "placeholder": "e.g. New soap, laundry detergent, pet, travel", "required": false }
+        ]
+      }
+    ]
+  },
+  {
+    "specialty_id": "Ophthalmology",
+    "display_name": "Ophthalmology",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "visual_history",
+        "display_name": "Visual History",
+        "order": 1,
+        "description": "Vision change, blurring, loss",
+        "fields": [
+          { "field_id": "vision_change", "prompt": "Vision change", "type": "select", "options": ["None", "Blurry", "Decreased", "Double vision", "Flashes/floaters", "Vision loss"], "required": false },
+          { "field_id": "onset_vision", "prompt": "Onset", "type": "select", "options": ["Sudden (<24h)", "Subacute (days)", "Gradual (weeks/months)"], "required": false },
+          { "field_id": "visual_acuity", "prompt": "Visual acuity", "type": "text", "placeholder": "e.g. 20/40 OD, 20/60 OS, Count fingers", "required": false }
+        ]
+      },
+      {
+        "section_id": "eye_exam_history",
+        "display_name": "Eye Symptoms",
+        "order": 2,
+        "description": "Pain, redness, discharge, photophobia",
+        "fields": [
+          { "field_id": "eye_pain", "prompt": "Eye pain", "type": "select", "options": ["None", "Mild", "Moderate", "Severe", "Deep ache"], "required": false },
+          { "field_id": "redness", "prompt": "Redness", "type": "select", "options": ["None", "Unilateral", "Bilateral", "Diffuse", "Focal"], "required": false },
+          { "field_id": "discharge_eye", "prompt": "Discharge / tearing", "type": "select", "options": ["None", "Watery", "Purulent", "Mucoid"], "required": false },
+          { "field_id": "photophobia", "prompt": "Photophobia", "type": "select", "options": ["None", "Mild", "Moderate", "Severe"], "required": false }
+        ]
+      },
+      {
+        "section_id": "trauma_contacts",
+        "display_name": "Trauma / Contact Lens",
+        "order": 3,
+        "description": "Recent injury or contact lens use",
+        "fields": [
+          { "field_id": "trauma", "prompt": "Recent eye trauma", "type": "select", "options": ["None", "Blunt", "Sharp/penetrating", "Chemical", "Foreign body"], "required": false },
+          { "field_id": "contact_lenses", "prompt": "Contact lens use", "type": "select", "options": ["None", "Daily", "Extended wear", "Did not remove recently"], "required": false }
+        ]
+      }
+    ]
+  },
+  {
+    "specialty_id": "Psychiatry / Mental Health",
+    "display_name": "Psychiatry / Mental Health",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "chief_complaint_mh",
+        "display_name": "Chief Complaint",
+        "order": 1,
+        "description": "Presenting concern in patient's own words",
+        "fields": [
+          { "field_id": "presenting_concern", "prompt": "Presenting concern", "type": "textarea", "placeholder": "e.g. I've been feeling really down for weeks, I can't sleep, I keep thinking something bad will happen", "required": true },
+          { "field_id": "duration_mh", "prompt": "Duration of current episode", "type": "text", "placeholder": "e.g. 3 weeks, 6 months, on and off for 2 years", "required": true }
+        ]
+      },
+      {
+        "section_id": "risk_assessment",
+        "display_name": "Risk Assessment",
+        "order": 2,
+        "description": "Safety-critical assessment",
+        "fields": [
+          { "field_id": "self_harm_thoughts", "prompt": "Self-harm or suicidal thoughts", "type": "select", "options": ["None", "Passive death wish", "Active ideation with plan", "Active ideation without plan", "Attempt"], "required": true, "emergency_only": true },
+          { "field_id": "harm_to_others", "prompt": "Risk of harm to others", "type": "select", "options": ["None", "Ideation", "Plan", "Intent"], "required": true, "emergency_only": true },
+          { "field_id": "protective_factors", "prompt": "Protective factors", "type": "textarea", "placeholder": "e.g. Supportive family, stable employment, religious faith, children at home", "required": false },
+          { "field_id": "recent_attempts", "prompt": "Past attempts (method, date, severity)", "type": "textarea", "placeholder": "e.g. Overdose 2022, treated in ICU", "required": false }
+        ]
+      },
+      {
+        "section_id": "mood_anxiety",
+        "display_name": "Mood and Anxiety",
+        "order": 3,
+        "description": "Depressive and anxiety symptoms",
+        "fields": [
+          { "field_id": "depressed_mood", "prompt": "Depressed mood", "type": "select", "options": ["None", "Mild", "Moderate", "Severe"], "required": false },
+          { "field_id": "anhedonia", "prompt": "Loss of interest / anhedonia", "type": "select", "options": ["None", "Mild", "Significant"], "required": false },
+          { "field_id": "anxiety", "prompt": "Anxiety level", "type": "select", "options": ["None", "Mild", "Moderate", "Panic"], "required": false },
+          { "field_id": "mood_elevation", "prompt": "Elevated/expansive mood", "type": "select", "options": ["None", "Mild", "Significant"], "required": false }
+        ]
+      },
+      {
+        "section_id": "sleep_appetite",
+        "display_name": "Sleep, Appetite, Energy",
+        "order": 4,
+        "description": "Biological symptoms",
+        "fields": [
+          { "field_id": "sleep", "prompt": "Sleep pattern", "type": "text", "placeholder": "e.g. Sleeping 3h/night, early morning waking, hypersomnia 12h/day", "required": false },
+          { "field_id": "appetite", "prompt": "Appetite / weight change", "type": "text", "placeholder": "e.g. Decreased appetite, lost 5 kg, increased eating", "required": false },
+          { "field_id": "energy", "prompt": "Energy / motivation", "type": "select", "options": ["Normal", "Fatigued", "Low motivation", "Agitated"], "required": false }
+        ]
+      },
+      {
+        "section_id": "substance_use",
+        "display_name": "Substance Use",
+        "order": 5,
+        "description": "Alcohol, tobacco, drugs",
+        "fields": [
+          { "field_id": "alcohol", "prompt": "Alcohol use", "type": "text", "placeholder": "e.g. Social, 3 drinks daily, binge drinking weekends", "required": false },
+          { "field_id": "substances", "prompt": "Illicit or recreational substances", "type": "text", "placeholder": "e.g. Cannabis weekly, no others", "required": false },
+          { "field_id": "caffeine", "prompt": "Caffeine intake", "type": "text", "placeholder": "e.g. 4 cups coffee daily", "required": false }
+        ]
+      },
+      {
+        "section_id": "mental_state_exam",
+        "display_name": "Mental State Examination (MSE)",
+        "order": 6,
+        "description": "Appearance, behavior, speech, mood, thought, cognition, insight",
+        "fields": [
+          { "field_id": "appearance_behavior", "prompt": "Appearance & behavior", "type": "text", "placeholder": "e.g. Well-groomed, cooperative, agitated, withdrawn", "required": false },
+          { "field_id": "speech", "prompt": "Speech", "type": "text", "placeholder": "e.g. Normal rate and volume, pressured, slow, mute", "required": false },
+          { "field_id": "thought_content", "prompt": "Thought content", "type": "textarea", "placeholder": "e.g. Delusions of persecution, obsessions, ruminations, thought blocking", "required": false },
+          { "field_id": "cognition", "prompt": "Cognition / orientation", "type": "text", "placeholder": "e.g. Oriented x3, MMSE 28/30, impaired short-term memory", "required": false },
+          { "field_id": "insight", "prompt": "Insight", "type": "select", "options": ["Good", "Partial", "Poor", "Absent"], "required": false }
+        ]
+      }
+    ]
+  }
+]
