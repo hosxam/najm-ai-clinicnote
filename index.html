@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<!-- Najm AI ClinicNote build custom-entries-final -->
+<!-- Najm AI ClinicNote build inline-custom-final -->
 <!-- Najm AI ClinicNote Restored - Inline onclick + Redesign v2 -->
 <head>
 <meta charset="UTF-8">
@@ -606,14 +606,14 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
   <span id="debugLibrary" style="font-size:11px;color:var(--gray-400)">Library: <span id="dbgLibStatus">checking...</span> | Types: <span id="dbgTypeCount">-</span> | JS: <span id="dbgJsReady">-</span></span>
   <script>
   (function(){var dbg=document.getElementById("debugLibrary");if(!dbg)return;function upd(){var dm=document.getElementById("dbgDataMode");if(window.CLINICNOTE_DATA_MODE){dm.textContent=window.CLINICNOTE_DATA_MODE==="v1"?"v1 fallback":"v2";dm.style.color=window.CLINICNOTE_DATA_MODE==="v2"?"#f59e0b":"#22c55e";dm.style.fontWeight="bold"}var s=document.getElementById("dbgLibStatus");var t=document.getElementById("dbgTypeCount");var j=document.getElementById("dbgJsReady");var lib=window.ACTIVE_VISIT_LIBRARY||VISIT_LIBRARY;if(lib){s.textContent="yes";s.style.color="#22c55e";var total=0;for(var k in lib)total+=Object.keys(lib[k]).length;t.textContent=total;t.style.color="#22c55e"}else{s.textContent="no";s.style.color="#ef4444"}if(typeof showPage!=='undefined'){j.textContent="yes";j.style.color="#22c55e"}else{j.textContent="no";j.style.color="#ef4444"}}setTimeout(upd,500);setTimeout(upd,3000);setTimeout(upd,5000)})();
-  </script> | Build: custom-entries-final | 2026-05-14</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
+  </script> | Build: inline-custom-final | 2026-05-14</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
 </footer><script src="./SPEED_LIBRARY_DATA.js"></script>
 <script src="./GENERATED_CLINICAL_DATA.js"></script>
 <script>
 // ---- Feature Flag: MUST be set before v2_workflow_ui.js loads ----
 window.CLINICNOTE_DATA_MODE = (new URLSearchParams(window.location.search).get("data") === "v1") ? "v1" : "v2";
 </script>
-<script src="./v2_workflow_ui_2.js?v=custom-entries-final"></script>
+<script src="./v2_workflow_ui_2.js?v=inline-custom-final"></script>
 <script>
 
 // ---- Adapter: build old-compatible VISIT_LIBRARY from NAJM_CLINICAL_DATA ----

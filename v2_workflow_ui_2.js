@@ -5,8 +5,6 @@ function v2showSearchUI() {
   var v2sa = document.getElementById("v2SearchArea");
   if (window.CLINICNOTE_DATA_MODE !== "v2") {
     if (v2sa) v2sa.style.display = "none";
-    var v2CustomPanel = document.getElementById("v2CustomEntryPanel");
-    if (v2CustomPanel) v2CustomPanel.style.display = "none";
     return;
   }
 
@@ -456,13 +454,13 @@ function v2renderChipButton(chip, group, containerId) {
 }
 
 var V2_CUSTOM_ENTRY_GROUPS = [
-  { key: "symptoms", label: "Custom symptom / positive", inputId: "v2CustomSymptom", listId: "v2CustomSymptomList", containerId: "speedSymptoms", placeholder: "e.g., symptoms worse at night" },
-  { key: "relevant_negatives", label: "Custom relevant negative", inputId: "v2CustomNegative", listId: "v2CustomNegativeList", containerId: "speedNegs", placeholder: "e.g., no recent travel" },
-  { key: "exam_findings", label: "Custom exam finding", inputId: "v2CustomExam", listId: "v2CustomExamList", containerId: "speedExam", placeholder: "e.g., mild epigastric tenderness" },
-  { key: "investigations", label: "Custom investigation / result", inputId: "v2CustomInvestigation", listId: "v2CustomInvestigationList", containerId: "speedInvs", placeholder: "e.g., HbA1c reviewed" },
-  { key: "plan_phrases", label: "Custom plan phrase", inputId: "v2CustomPlanPhrase", listId: "v2CustomPlanPhraseList", containerId: "speedPlans", placeholder: "e.g., lifestyle advice discussed" },
-  { key: "follow_up", label: "Custom follow-up phrase", inputId: "v2CustomFollowup", listId: "v2CustomFollowupList", containerId: "speedFollowupChips", placeholder: "e.g., review in 2 weeks" },
-  { key: "red_flags", label: "Custom red flag / safety note", inputId: "v2CustomRedFlag", listId: "v2CustomRedFlagList", containerId: "speedRedFlags", placeholder: "e.g., return if symptoms worsen" }
+  { key: "symptoms", label: "Add custom symptom / positive", inputId: "v2CustomSymptom", listId: "v2CustomSymptomList", containerId: "speedSymptoms", placeholder: "e.g., symptoms worse at night" },
+  { key: "relevant_negatives", label: "Add custom relevant negative", inputId: "v2CustomNegative", listId: "v2CustomNegativeList", containerId: "speedNegs", placeholder: "e.g., no recent travel" },
+  { key: "exam_findings", label: "Add custom exam finding", inputId: "v2CustomExam", listId: "v2CustomExamList", containerId: "speedExam", placeholder: "e.g., mild epigastric tenderness" },
+  { key: "red_flags", label: "Add custom red flag / safety note", inputId: "v2CustomRedFlag", listId: "v2CustomRedFlagList", containerId: "speedRedFlags", placeholder: "e.g., worsening pain reported" },
+  { key: "investigations", label: "Add custom investigation / result", inputId: "v2CustomInvestigation", listId: "v2CustomInvestigationList", containerId: "speedInvs", placeholder: "e.g., HbA1c reviewed" },
+  { key: "plan_phrases", label: "Add custom plan phrase", inputId: "v2CustomPlanPhrase", listId: "v2CustomPlanPhraseList", containerId: "speedPlans", placeholder: "e.g., dietary counseling discussed" },
+  { key: "follow_up", label: "Add custom follow-up phrase", inputId: "v2CustomFollowup", listId: "v2CustomFollowupList", containerId: "speedFollowupChips", placeholder: "e.g., review in 3 months" }
 ];
 
 function v2customGroupByInput(inputId) {
@@ -472,58 +470,76 @@ function v2customGroupByInput(inputId) {
   return null;
 }
 
-function v2ensureCustomEntryPanel() {
-  var panel = document.getElementById("v2CustomEntryPanel");
-  if (!panel) {
-    panel = document.createElement("div");
-    panel.id = "v2CustomEntryPanel";
-    panel.className = "speed-section";
-    panel.style.cssText = "display:none;margin:4px 0 20px";
-
-    var html = "";
-    html += "<div class='speed-section-title'>Add custom note details</div>";
-    html += "<div style='font-size:11px;color:var(--red);background:var(--red-bg);border:1px solid var(--red-border);border-radius:8px;padding:8px 10px;margin-bottom:10px'>Use de-identified text only. Do not enter names, MRNs, phone numbers, exact dates of birth, addresses, or other patient identifiers.</div>";
-    html += "<div id='v2CustomPhiWarning' class='phi-warning'>Potential patient-identifiable information detected in a custom entry. Please remove names, IDs, dates of birth, phone numbers, or email addresses.</div>";
-    for (var i = 0; i < V2_CUSTOM_ENTRY_GROUPS.length; i++) {
-      var cfg = V2_CUSTOM_ENTRY_GROUPS[i];
-      html += "<div style='margin-bottom:10px'>";
-      html += "<label for='" + cfg.inputId + "' style='display:block;font-size:11px;font-weight:600;color:var(--gray-700);margin-bottom:4px'>" + cfg.label + "</label>";
-      html += "<div style='display:flex;gap:6px;align-items:center'>";
-      html += "<input id='" + cfg.inputId + "' type='text' placeholder='" + cfg.placeholder + "' data-v2-custom-input='" + cfg.inputId + "' style='flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit'>";
-      html += "<button type='button' class='btn btn-ghost btn-xs' onclick=\"v2addCustomEntry('" + cfg.inputId + "')\">Add</button>";
-      html += "</div>";
-      html += "<div id='" + cfg.listId + "' class='chip-group' style='margin-top:6px;margin-bottom:0'></div>";
-      html += "</div>";
-    }
-    panel.innerHTML = html;
-
-    var anchor = document.getElementById("v2ChipGroups");
-    if (anchor && anchor.parentNode) {
-      anchor.parentNode.insertBefore(panel, anchor.nextSibling);
-    } else {
-      var content = document.getElementById("speedContent");
-      if (content) content.insertBefore(panel, content.firstChild);
-    }
+function v2customGroupByKey(key) {
+  for (var i = 0; i < V2_CUSTOM_ENTRY_GROUPS.length; i++) {
+    if (V2_CUSTOM_ENTRY_GROUPS[i].key === key) return V2_CUSTOM_ENTRY_GROUPS[i];
   }
+  return null;
+}
 
-  for (var f = 0; f < V2_CUSTOM_ENTRY_GROUPS.length; f++) {
-    (function(cfg) {
-      var input = document.getElementById(cfg.inputId);
-      if (input && !input.getAttribute("data-v2-custom-bound")) {
-        input.setAttribute("data-v2-custom-bound", "true");
-        input.oninput = v2scanCustomPHI;
-        input.onkeydown = function(evt) {
-          if (evt.key === "Enter") {
-            evt.preventDefault();
-            v2addCustomEntry(cfg.inputId);
-          }
-        };
-      }
-    })(V2_CUSTOM_ENTRY_GROUPS[f]);
-  }
+function v2renderCustomSafetyNote(area) {
+  var note = document.createElement("div");
+  note.id = "v2CustomSafetyNote";
+  note.style.cssText = "font-size:11px;color:var(--red);background:var(--red-bg);border:1px solid var(--red-border);border-radius:8px;padding:8px 10px;margin:0 0 12px";
+  note.textContent = "Use de-identified text only. Do not enter names, MRNs, phone numbers, exact dates of birth, addresses, or other patient identifiers.";
+  area.appendChild(note);
 
-  panel.style.display = window.CLINICNOTE_DATA_MODE === "v2" ? "block" : "none";
-  return panel;
+  var warning = document.createElement("div");
+  warning.id = "v2CustomPhiWarning";
+  warning.className = "phi-warning";
+  warning.textContent = "Potential patient-identifiable information detected in a custom entry. Please remove names, IDs, dates of birth, phone numbers, Emirates IDs, or email addresses.";
+  area.appendChild(warning);
+}
+
+function v2bindCustomInput(input, cfg) {
+  input.oninput = v2scanCustomPHI;
+  input.onkeydown = function(evt) {
+    if (evt.key === "Enter") {
+      evt.preventDefault();
+      v2addCustomEntry(cfg.inputId);
+    }
+  };
+}
+
+function v2renderInlineCustomControls(section, cfg) {
+  var wrap = document.createElement("div");
+  wrap.setAttribute("data-v2-custom-row", cfg.key);
+  wrap.style.cssText = "border-top:1px solid var(--gray-200);margin-top:8px;padding-top:8px";
+
+  var label = document.createElement("label");
+  label.setAttribute("for", cfg.inputId);
+  label.style.cssText = "display:block;font-size:10px;font-weight:600;color:var(--gray-600);margin-bottom:4px";
+  label.textContent = cfg.label;
+  wrap.appendChild(label);
+
+  var row = document.createElement("div");
+  row.style.cssText = "display:flex;gap:6px;align-items:center";
+
+  var input = document.createElement("input");
+  input.id = cfg.inputId;
+  input.type = "text";
+  input.placeholder = cfg.placeholder;
+  input.setAttribute("data-v2-custom-input", cfg.inputId);
+  input.style.cssText = "flex:1;min-width:0;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit";
+  row.appendChild(input);
+
+  var add = document.createElement("button");
+  add.type = "button";
+  add.className = "btn btn-ghost btn-xs";
+  add.textContent = "Add";
+  add.onclick = function() { v2addCustomEntry(cfg.inputId); };
+  row.appendChild(add);
+
+  wrap.appendChild(row);
+
+  var list = document.createElement("div");
+  list.id = cfg.listId;
+  list.className = "chip-group";
+  list.style.cssText = "margin-top:6px;margin-bottom:0";
+  wrap.appendChild(list);
+
+  section.appendChild(wrap);
+  v2bindCustomInput(input, cfg);
 }
 
 function v2addCustomEntry(inputId) {
@@ -541,14 +557,15 @@ function v2addCustomEntry(inputId) {
   b.className = "chip selected" + (cfg.key === "red_flags" ? " chip-redflag" : "");
   b.type = "button";
   b.textContent = "custom: " + value;
-  b.title = "Click to deselect this custom entry";
+  b.title = "Click to remove this custom entry";
   b.setAttribute("data-name", value.toLowerCase());
   b.setAttribute("data-value", value);
   b.setAttribute("data-container", cfg.containerId);
   b.setAttribute("data-v2-group", cfg.key);
   b.setAttribute("data-v2-custom-entry", "true");
   b.onclick = function() {
-    this.classList.toggle("selected");
+    if (this.parentNode) this.parentNode.removeChild(this);
+    v2scanCustomPHI();
     updateSelectedCount();
   };
   list.appendChild(b);
@@ -559,16 +576,14 @@ function v2addCustomEntry(inputId) {
 
 function v2scanCustomPHI() {
   var found = false;
-  if (typeof detectPHI === "function") {
-    for (var i = 0; i < V2_CUSTOM_ENTRY_GROUPS.length; i++) {
-      var input = document.getElementById(V2_CUSTOM_ENTRY_GROUPS[i].inputId);
-      if (input && detectPHI(input.value || "")) found = true;
-    }
-    var entries = document.querySelectorAll("#v2CustomEntryPanel [data-v2-custom-entry]");
-    for (var e = 0; e < entries.length; e++) {
-      var val = entries[e].getAttribute("data-value") || entries[e].textContent || "";
-      if (detectPHI(val)) found = true;
-    }
+  var inputs = document.querySelectorAll("#v2ChipGroups [data-v2-custom-input]");
+  for (var i = 0; i < inputs.length; i++) {
+    if (v2detectCustomPHI(inputs[i].value || "")) found = true;
+  }
+  var entries = document.querySelectorAll("#v2ChipGroups [data-v2-custom-entry]");
+  for (var e = 0; e < entries.length; e++) {
+    var val = entries[e].getAttribute("data-value") || entries[e].textContent || "";
+    if (v2detectCustomPHI(val)) found = true;
   }
   var warning = document.getElementById("v2CustomPhiWarning");
   if (warning) warning.classList.toggle("show", found);
@@ -577,14 +592,24 @@ function v2scanCustomPHI() {
   return found;
 }
 
+function v2detectCustomPHI(text) {
+  if (!text || !text.trim()) return false;
+  if (typeof detectPHI === "function" && detectPHI(text)) return true;
+  var mrn = /\b(MRN|medical\s*record|record\s*number|patient\s*id|emirates\s*id|eid|id\s*number)\s*[:#-]?\s*[A-Za-z0-9-]{4,}\b/i;
+  var emiratesId = /\b784[-\s]?\d{4}[-\s]?\d{7}[-\s]?\d\b/;
+  var exactDob = /\b(date\s*of\s*birth|dob|d\.?\s*o\.?\s*b\.?)\s*[:#-]?\s*\d{1,2}[\/\-.]\d{1,2}[\/\-.]\d{2,4}\b/i;
+  var nameField = /\b(patient\s*name|pt\.?\s*name|name)\s*:\s*[A-Z][A-Za-z]+/i;
+  return mrn.test(text) || emiratesId.test(text) || exactDob.test(text) || nameField.test(text);
+}
+
 function v2clearCustomEntries() {
-  var panel = document.getElementById("v2CustomEntryPanel");
-  if (!panel) return;
-  var entries = panel.querySelectorAll("[data-v2-custom-entry]");
+  var root = document.getElementById("v2ChipGroups");
+  if (!root) return;
+  var entries = root.querySelectorAll("[data-v2-custom-entry]");
   for (var i = 0; i < entries.length; i++) {
     if (entries[i].parentNode) entries[i].parentNode.removeChild(entries[i]);
   }
-  var inputs = panel.querySelectorAll("[data-v2-custom-input]");
+  var inputs = root.querySelectorAll("[data-v2-custom-input]");
   for (var j = 0; j < inputs.length; j++) inputs[j].value = "";
   var warning = document.getElementById("v2CustomPhiWarning");
   if (warning) warning.classList.remove("show");
@@ -596,6 +621,7 @@ function v2renderVisibleChipGroups(chips) {
   area.innerHTML = "";
   area.style.display = "block";
   v2setLegacyChipSectionsVisible(false);
+  v2renderCustomSafetyNote(area);
 
   var groups = [
     { key: "symptoms", label: "Symptoms", containerId: "speedSymptoms" },
@@ -609,6 +635,7 @@ function v2renderVisibleChipGroups(chips) {
 
   for (var g = 0; g < groups.length; g++) {
     var cfg = groups[g];
+    var customCfg = v2customGroupByKey(cfg.key);
     var list = chips && chips[cfg.key] ? chips[cfg.key] : [];
     var section = document.createElement("div");
     section.className = "speed-section";
@@ -634,9 +661,10 @@ function v2renderVisibleChipGroups(chips) {
       groupEl.appendChild(empty);
     }
     section.appendChild(groupEl);
+    if (customCfg) v2renderInlineCustomControls(section, customCfg);
     area.appendChild(section);
   }
-  v2ensureCustomEntryPanel();
+  v2scanCustomPHI();
 }
 
 function v2getSelectedChipItems(containerId) {
@@ -646,14 +674,10 @@ function v2getSelectedChipItems(containerId) {
   if (area) {
     var chips = area.querySelectorAll(selector);
     for (var i = 0; i < chips.length; i++) {
-      out.push({ value: chips[i].getAttribute("data-value") || chips[i].textContent, custom: false });
-    }
-  }
-  var customPanel = document.getElementById("v2CustomEntryPanel");
-  if (customPanel) {
-    var custom = customPanel.querySelectorAll(selector + '[data-v2-custom-entry]');
-    for (var c = 0; c < custom.length; c++) {
-      out.push({ value: custom[c].getAttribute("data-value") || custom[c].textContent, custom: true });
+      out.push({
+        value: chips[i].getAttribute("data-value") || chips[i].textContent,
+        custom: chips[i].getAttribute("data-v2-custom-entry") === "true"
+      });
     }
   }
   return out;
@@ -683,8 +707,6 @@ function v2getSelectedChips(containerId) {
       // Hide v2-only elements
       var invSec = document.getElementById("speedInvestigationsSection");
       if (invSec) invSec.style.display = "none";
-      var customPanel = document.getElementById("v2CustomEntryPanel");
-      if (customPanel) customPanel.style.display = "none";
       return;
     }
 
