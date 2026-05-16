@@ -135,10 +135,21 @@ const safeTrack = analytics.trackSafeEvent("output_generated", {
   output_type: "emr",
   data_mode: "v2"
 });
+const safeExportTrack = analytics.trackSafeEvent("output_exported_txt", {
+  tool_name: "opd_speed_mode",
+  output_type: "soap",
+  data_mode: "v2"
+});
+const safeReportPrintTrack = analytics.trackSafeEvent("report_print_started", {
+  tool_name: "medical_report_draft",
+  report_type: "general",
+  data_mode: "v2"
+});
 analytics.trackSafeEvent("output_generated", { output_text: "unsafe generated content" });
 const log = analytics.getSafeEventLog();
 check("safe event tracked", safeTrack.ok === true);
-check("event log stores only safe events", log.length === 1 && log[0].eventName === "output_generated");
+check("export events are allowlisted", safeExportTrack.ok === true && safeReportPrintTrack.ok === true);
+check("event log stores only safe events", log.length === 3 && log[0].eventName === "output_generated" && log[1].eventName === "output_exported_txt" && log[2].eventName === "report_print_started");
 check("event log excludes clinical/output text", JSON.stringify(log).indexOf("unsafe generated content") === -1);
 
 if (failures > 0) {
@@ -147,4 +158,3 @@ if (failures > 0) {
 }
 
 console.log("Analytics safety validation passed.");
-

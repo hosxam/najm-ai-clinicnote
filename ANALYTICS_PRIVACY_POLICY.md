@@ -39,6 +39,8 @@ Allowed events may describe high-level product actions, for example:
 - A workflow ID was selected
 - An output was generated
 - An output was copied
+- A selected output was exported as TXT
+- Print/PDF was started for a selected output
 - A report draft was generated
 - A PHI warning was shown
 - A feedback or template request CTA was clicked
@@ -87,4 +89,3 @@ The safety module rejects unknown property keys and obvious identifier patterns 
 ## Future External Analytics Decision
 
 Before any external analytics provider is added, Najm AI ClinicNote should decide whether external analytics is needed at all. If a provider is later selected, it must be configured to preserve this same rule: no clinical content, no generated outputs, no custom free text, no patient identifiers, and no unnecessary persistent identifiers.
-

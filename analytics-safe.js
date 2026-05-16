@@ -12,12 +12,16 @@
     custom_entry_count_bucket:true,
     output_generated:true,
     output_copied:true,
+    output_exported_txt:true,
+    output_print_started:true,
     clear_all_clicked:true,
     phi_warning_triggered:true,
     report_module_opened:true,
     report_type_selected:true,
     report_draft_generated:true,
     report_copied:true,
+    report_exported_txt:true,
+    report_print_started:true,
     report_cleared:true,
     report_phi_warning_triggered:true,
     feedback_clicked:true,
@@ -218,4 +222,3 @@
     document.addEventListener("DOMContentLoaded",renderDebugPanel);
   }
 })();
-

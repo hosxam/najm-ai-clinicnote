@@ -32,12 +32,16 @@ No third-party analytics script was added. No analytics event is sent to any ser
 - `custom_entry_count_bucket`
 - `output_generated`
 - `output_copied`
+- `output_exported_txt`
+- `output_print_started`
 - `clear_all_clicked`
 - `phi_warning_triggered`
 - `report_module_opened`
 - `report_type_selected`
 - `report_draft_generated`
 - `report_copied`
+- `report_exported_txt`
+- `report_print_started`
 - `report_cleared`
 - `report_phi_warning_triggered`
 - `feedback_clicked`
@@ -174,4 +178,3 @@ Notes:
 ## Next Decision
 
 Recommended next decision: keep external analytics disabled until there is a clear product need. If external analytics is later approved, compare Plausible, GA4, and no external analytics against this schema and preserve the same rule: no clinical text, no generated output, no custom free text, no patient identifiers, and no unnecessary persistent identifiers.
-

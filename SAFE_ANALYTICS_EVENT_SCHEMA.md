@@ -14,12 +14,16 @@ This schema defines the only analytics events and properties allowed in Najm AI 
 - `custom_entry_count_bucket`
 - `output_generated`
 - `output_copied`
+- `output_exported_txt`
+- `output_print_started`
 - `clear_all_clicked`
 - `phi_warning_triggered`
 - `report_module_opened`
 - `report_type_selected`
 - `report_draft_generated`
 - `report_copied`
+- `report_exported_txt`
+- `report_print_started`
 - `report_cleared`
 - `report_phi_warning_triggered`
 - `feedback_clicked`
@@ -88,4 +92,3 @@ Property values must be rejected if they contain obvious identifier patterns, in
 ## Dry-Run Storage
 
 Safe events are stored only in memory for local debugging. Analytics events must not be written to cookies, browser persistent storage, files, or a network endpoint in Step 7A.
-
