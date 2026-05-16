@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<!-- Najm AI ClinicNote build inline-custom-final -->
+<!-- Najm AI ClinicNote build report-module-final -->
 <!-- Najm AI ClinicNote Restored - Inline onclick + Redesign v2 -->
 <head>
 <meta charset="UTF-8">
@@ -163,6 +163,7 @@ footer .footer-links a{font-weight:500}
 <a data-page="opd" onclick="showPage('opd')">OPD Builder</a>
 <a data-page="referral" onclick="showPage('referral')">Referral</a>
 <a data-page="instructions" onclick="showPage('instructions')">Instructions</a>
+<a id="reportNavLink" data-page="report" onclick="showPage('report')" style="display:none">Medical Report</a>
 <a data-page="presets" onclick="showPage('presets')">Presets</a>
 <a data-page="about" onclick="showPage('about')">About</a>
 <a data-page="safety" onclick="showPage('safety')">Safety</a>
@@ -533,6 +534,53 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 </div>
 </div>
 </div>
+<div id="page-report" class="page" style="display:none">
+<div class="page-header">
+<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+<div><h2>Medical Report Draft</h2><p>Structure clinician-provided de-identified information into a draft for review.</p></div>
+<div class="status-bar"><span class="status-dot"></span><span>Feature flag: report=v1</span></div>
+</div>
+</div>
+<div class="two-col">
+<div>
+<div class="note-phi-warn">Do not enter names, MRNs, phone numbers, exact dates of birth, Emirates ID, addresses, or other patient identifiers.</div>
+<div id="reportPhiWarning" class="phi-warning">Possible identifiable information detected. Remove patient identifiers before generating a report draft.</div>
+<div class="form-group">
+<label for="medicalReportType">Report type</label>
+<select id="medicalReportType"></select>
+</div>
+<div class="form-group">
+<label for="medicalReportNotes">Paste de-identified clinical notes</label>
+<textarea id="medicalReportNotes" class="code" placeholder="Paste de-identified clinician notes. Do not include patient identifiers." oninput="checkReportPHI()"></textarea>
+</div>
+<div class="form-group"><label for="medicalReportPurpose">Purpose of report</label><input id="medicalReportPurpose" type="text" placeholder="e.g. clinical summary requested for review" oninput="checkReportPHI()"></div>
+<div class="form-group"><label for="medicalReportImpression">Doctor-entered impression</label><input id="medicalReportImpression" type="text" placeholder="e.g. clinician impression documented" oninput="checkReportPHI()"></div>
+<div class="form-group"><label for="medicalReportPlan">Doctor-entered plan / recommendation</label><textarea id="medicalReportPlan" class="code" placeholder="Enter only the clinician-documented plan or recommendation." oninput="checkReportPHI()"></textarea></div>
+<div class="form-group"><label for="medicalReportStatus">Current status</label><input id="medicalReportStatus" type="text" placeholder="e.g. improving, stable, symptoms ongoing" oninput="checkReportPHI()"></div>
+<div class="form-group"><label for="medicalReportFollowup">Follow-up plan</label><input id="medicalReportFollowup" type="text" placeholder="e.g. review in clinic as arranged" oninput="checkReportPHI()"></div>
+<div class="form-group"><label for="medicalReportClinician">Clinician name placeholder</label><input id="medicalReportClinician" type="text" placeholder="[clinician review/signature required]" oninput="checkReportPHI()"></div>
+<div class="form-group"><label for="medicalReportDate">Date placeholder</label><input id="medicalReportDate" type="text" placeholder="[date to be entered by clinician]" oninput="checkReportPHI()"></div>
+<div class="gen-row">
+<button class="btn btn-primary btn-sm" onclick="generateMedicalReportDraft()">Generate Report Draft</button>
+<button class="btn btn-outline btn-sm" onclick="copyMedicalReport()">Copy Report</button>
+<button class="btn btn-ghost btn-sm" onclick="clearMedicalReport()">Clear</button>
+</div>
+</div>
+<div>
+<div class="output-card">
+<div class="output-header">
+<button class="output-tab active" type="button">Draft</button>
+</div>
+<div id="medicalReportOutput" class="output-body"><span class="placeholder">Select a report type, enter de-identified information, then generate a structured draft.</span></div>
+<div class="output-actions">
+<button class="btn btn-outline btn-xs" onclick="copyMedicalReport()">Copy Report</button>
+<button class="btn btn-ghost btn-xs" onclick="clearMedicalReportOutput()">Clear Output</button>
+</div>
+<div class="output-footer">Structured draft only. Licensed clinician review required before use.</div>
+</div>
+</div>
+</div>
+</div>
 <div id="page-presets" class="page">
 <div class="page-header"><h2>Specialty Presets</h2><p>Browse all predefined Speed Types and documentation prompts by specialty.</p></div>
 <div id="presetsContent"></div>
@@ -606,7 +654,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
   <span id="debugLibrary" style="font-size:11px;color:var(--gray-400)">Library: <span id="dbgLibStatus">checking...</span> | Types: <span id="dbgTypeCount">-</span> | JS: <span id="dbgJsReady">-</span></span>
   <script>
   (function(){var dbg=document.getElementById("debugLibrary");if(!dbg)return;function upd(){var dm=document.getElementById("dbgDataMode");if(window.CLINICNOTE_DATA_MODE){dm.textContent=window.CLINICNOTE_DATA_MODE==="v1"?"v1 fallback":"v2";dm.style.color=window.CLINICNOTE_DATA_MODE==="v2"?"#f59e0b":"#22c55e";dm.style.fontWeight="bold"}var s=document.getElementById("dbgLibStatus");var t=document.getElementById("dbgTypeCount");var j=document.getElementById("dbgJsReady");var lib=window.ACTIVE_VISIT_LIBRARY||VISIT_LIBRARY;if(lib){s.textContent="yes";s.style.color="#22c55e";var total=0;for(var k in lib)total+=Object.keys(lib[k]).length;t.textContent=total;t.style.color="#22c55e"}else{s.textContent="no";s.style.color="#ef4444"}if(typeof showPage!=='undefined'){j.textContent="yes";j.style.color="#22c55e"}else{j.textContent="no";j.style.color="#ef4444"}}setTimeout(upd,500);setTimeout(upd,3000);setTimeout(upd,5000)})();
-  </script> | Build: inline-custom-final | 2026-05-14</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
+  </script> | Build: report-module-final | 2026-05-14</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
 </footer><script src="./SPEED_LIBRARY_DATA.js"></script>
 <script src="./GENERATED_CLINICAL_DATA.js"></script>
 <script>
@@ -702,12 +750,36 @@ var SD=(function(){
   }
   return sd;
 })();
-function showPage(pageId){var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open");if(pageId==="speed"){populateSpeedSpecialty()}}
+function showPage(pageId){if(pageId==="report"&&!isReportModuleEnabled()){pageId="speed"}var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open");if(pageId==="speed"){populateSpeedSpecialty()}if(pageId==="report"){initMedicalReportModule()}}
 function upVT(){var spec=document.getElementById("specialty").value;var vt=document.getElementById("visitType");vt.innerHTML="";var types=SD[spec].types;var keys=Object.keys(types);vt.innerHTML="<option value=\"\">Select a visit type</option>";for(var i=0;i<keys.length;i++){var opt=document.createElement("option");opt.value=keys[i];opt.textContent=keys[i];vt.appendChild(opt)}upP()}
 function upP(){var spec=document.getElementById("specialty").value;var vt=document.getElementById("visitType").value;var c=document.getElementById("promptsContainer");var l=document.getElementById("promptsList");if(!vt||!SD[spec].types[vt]){c.style.display="none";return}c.style.display="block";l.innerHTML="";var p=SD[spec].types[vt];for(var i=0;i<p.length;i++){var li=document.createElement("li");li.textContent=p[i];l.appendChild(li)}}
 function val(id){var el=document.getElementById(id);if(!el)return"[not documented]";var v=el.value.trim();return v||"[not documented]"}
 function detectPHI(text){if(!text||text.trim()==="")return false;var phone=/(\+?\d{1,4}[-.\s]?\d{5,15})|(\d{3}[-.\s]?\d{3}[-.\s]?\d{4})/;var email=/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;var dob=/\b(DOB|date\s*of\s*birth|d\.?\s*o\.?\s*b\.?)\b/i;var name=/\b(patient\s*name|pt\.?\s*name|name\s*:\s*[A-Z][a-z]+)\b/i;return phone.test(text)||email.test(text)||dob.test(text)||name.test(text)}
 function checkPHI(){var t=document.getElementById("clinicalNote").value;var w=document.getElementById("phiWarning");if(detectPHI(t)){w.classList.add("show")}else{w.classList.remove("show")}}
+function isReportModuleEnabled(){return new URLSearchParams(window.location.search).get("report")==="v1"}
+var MEDICAL_REPORT_REVIEW_FOOTER="This is a structured draft generated from clinician-provided de-identified information. It requires review, editing, and approval by a licensed clinician before use.";
+var MEDICAL_REPORT_TYPES=[
+  {id:"general",label:"General clinical summary draft",templateId:"emr-general"},
+  {id:"referral",label:"Referral summary draft",templateId:"referral-general"},
+  {id:"insurance",label:"Insurance-style clinical summary draft",templateId:"insurance-summary-general"},
+  {id:"fitness",label:"Fitness/work/school note support draft",templateId:"fitness-note-general"},
+  {id:"discharge",label:"Discharge-style summary draft",templateId:"discharge-general"},
+  {id:"procedure",label:"Procedure summary draft",templateId:"discharge-general"},
+  {id:"followup",label:"Follow-up progress report draft",templateId:"soap-general"}
+];
+function initMedicalReportModule(){var enabled=isReportModuleEnabled();var page=document.getElementById("page-report");var nav=document.getElementById("reportNavLink");if(page)page.style.display=enabled?"":"none";if(nav)nav.style.display=enabled?"":"none";if(!enabled)return;var sel=document.getElementById("medicalReportType");if(sel&&sel.options.length===0){for(var i=0;i<MEDICAL_REPORT_TYPES.length;i++){var opt=document.createElement("option");opt.value=MEDICAL_REPORT_TYPES[i].id;opt.textContent=MEDICAL_REPORT_TYPES[i].label;sel.appendChild(opt)}}}
+function getMedicalReportTypeConfig(){var sel=document.getElementById("medicalReportType");var id=sel?sel.value:"general";for(var i=0;i<MEDICAL_REPORT_TYPES.length;i++){if(MEDICAL_REPORT_TYPES[i].id===id)return MEDICAL_REPORT_TYPES[i]}return MEDICAL_REPORT_TYPES[0]}
+function getMedicalReportTemplate(templateId){var data=window.NAJM_CLINICAL_DATA||{};var templates=data.reportTemplates||{};if(Array.isArray(templates)){for(var i=0;i<templates.length;i++){if(templates[i].template_id===templateId)return templates[i]}}return templates[templateId]||null}
+function reportVal(id){var el=document.getElementById(id);if(!el)return"";return el.value.trim()}
+function reportTextOrMissing(value){return value&&value.trim()?value.trim():"[not documented]"}
+function detectReportPHI(text){if(!text||!text.trim())return false;if(typeof detectPHI==="function"&&detectPHI(text))return true;var mrn=/\b(MRN|medical\s*record|record\s*number|patient\s*id|emirates\s*id|eid|id\s*number)\s*[:#-]?\s*[A-Za-z0-9-]{4,}\b/i;var emirates=/\b784[-\s]?\d{4}[-\s]?\d{7}[-\s]?\d\b/;var dob=/\b(date\s*of\s*birth|dob|d\.?\s*o\.?\s*b\.?)\s*[:#-]?\s*\d{1,2}[\/\-.]\d{1,2}[\/\-.]\d{2,4}\b/i;var address=/\b(address|villa|building|flat|apartment|street|road)\s*[:#-]?\s*[A-Za-z0-9 ,.-]{4,}\b/i;var name=/\b(patient\s*name|pt\.?\s*name|name)\s*:\s*[A-Z][A-Za-z]+/i;return mrn.test(text)||emirates.test(text)||dob.test(text)||address.test(text)||name.test(text)}
+function checkReportPHI(){var ids=["medicalReportNotes","medicalReportPurpose","medicalReportImpression","medicalReportPlan","medicalReportStatus","medicalReportFollowup","medicalReportClinician","medicalReportDate"];var found=false;for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&detectReportPHI(el.value||""))found=true}var w=document.getElementById("reportPhiWarning");if(w)w.classList.toggle("show",found);return found}
+function medicalReportVariables(config){var notes=reportTextOrMissing(reportVal("medicalReportNotes"));var purpose=reportTextOrMissing(reportVal("medicalReportPurpose"));var impression=reportTextOrMissing(reportVal("medicalReportImpression"));var plan=reportTextOrMissing(reportVal("medicalReportPlan"));var status=reportTextOrMissing(reportVal("medicalReportStatus"));var follow=reportTextOrMissing(reportVal("medicalReportFollowup"));var clinician=reportTextOrMissing(reportVal("medicalReportClinician"))==="[not documented]"?"[clinician review/signature required]":reportTextOrMissing(reportVal("medicalReportClinician"));var date=reportTextOrMissing(reportVal("medicalReportDate"))==="[not documented]"?"[date to be entered by clinician]":reportTextOrMissing(reportVal("medicalReportDate"));var vars={};vars.report_title=config.label;vars.reason_text=purpose;vars.purpose_text=purpose;vars.encounter_summary_text=notes;vars.presenting_problem_text=notes;vars.symptoms=notes;vars.symptoms_text=notes;vars.duration="[not documented]";vars.negatives="[not documented]";vars.exam="[not documented]";vars.investigations="[not documented]";vars.red_flags="[not documented]";vars.impression=impression;vars.diagnosis_text=impression;vars.plan=plan;vars.current_management_text=plan;vars.management_text=plan;vars.medication_instructions_text=plan;vars.instructions_text=plan;vars.clinical_course_text=notes;vars.procedures_text=config.id==="procedure"?notes:"[not documented]";vars.discharge_plan_text=follow;vars.follow_up_text=follow;vars.functional_status_text=status;vars.functional_limitation_text=status;vars.restriction_text=status;vars.urgency_text="[not documented]";vars.visit_date=date;vars.date=date;vars.clinician_name=clinician;vars.limitations_text=MEDICAL_REPORT_REVIEW_FOOTER;return vars}
+function renderReportTemplateText(template,config,vars){var sections=(template&&template.sections?template.sections.slice():[]).sort(function(a,b){return(a.order||0)-(b.order||0)});var out=config.label.toUpperCase()+"\n\n";out+="Purpose:\n"+vars.reason_text+"\n\n";for(var i=0;i<sections.length;i++){var s=sections[i];var title=s.display_name||s.section_id||"Section";var content=s.content_template||"";if(s.section_id==="header"){content="Report type: "+config.label+"\nPurpose: "+vars.reason_text+"\nDate: "+vars.date}else{content=content.replace(/\{\{([^}]+)\}\}/g,function(_,name){return reportTextOrMissing(vars[name.trim()]||"")})}content=content.replace(/\bHeader\b/g,config.label).trim();if(!content)content="[not documented]";out+=title+":\n"+content+"\n\n"}out+="Clinician review statement:\n"+MEDICAL_REPORT_REVIEW_FOOTER+"\n";return out}
+function generateMedicalReportDraft(){initMedicalReportModule();checkReportPHI();var config=getMedicalReportTypeConfig();var template=getMedicalReportTemplate(config.templateId);var box=document.getElementById("medicalReportOutput");if(!template){if(box)box.textContent="Report template not available.";return}var vars=medicalReportVariables(config);var output=renderReportTemplateText(template,config,vars);window._medicalReportDraft=output;if(box)box.textContent=output}
+function copyMedicalReport(){var t=window._medicalReportDraft||((document.getElementById("medicalReportOutput")||{}).innerText)||"";if(!t||t.indexOf("Select a report type")>=0)t="";navigator.clipboard.writeText(t).catch(function(){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand("copy");document.body.removeChild(ta)})}
+function clearMedicalReportOutput(){window._medicalReportDraft="";var box=document.getElementById("medicalReportOutput");if(box)box.innerHTML="<span class=\"placeholder\">Select a report type, enter de-identified information, then generate a structured draft.</span>"}
+function clearMedicalReport(){var ids=["medicalReportNotes","medicalReportPurpose","medicalReportImpression","medicalReportPlan","medicalReportStatus","medicalReportFollowup","medicalReportClinician","medicalReportDate"];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el)el.value=""}var w=document.getElementById("reportPhiWarning");if(w)w.classList.remove("show");clearMedicalReportOutput()}
 function switchTab(area,tab){var pfx="";if(area==="opd")pfx="output-tab";else if(area==="ref")pfx="ref-tab";else if(area==="inst")pfx="inst-tab";else if(area==="speed")pfx="speed-tab";var tabs=document.querySelectorAll("[data-"+pfx+"]");for(var i=0;i<tabs.length;i++){tabs[i].classList.remove("active")}var active=document.querySelector("[data-"+pfx+"=\""+tab+"\"]");if(active)active.classList.add("active")}function gO(type){var spec=document.getElementById("specialty");var specName=SD[spec.value]?SD[spec.value].name:spec.value;var vt=document.getElementById("visitType").value||"Not specified";var dc="Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";var cn=val("clinicalNote");var dur=val("duration");var symp=val("symptoms");var hx=val("history");var exam=val("exam");var inv=val("investigations");var impr=val("impression");var plan=val("plan");var fup=val("followupInterval");var dn=val("doctorNotes");var iel=document.getElementById("impression");var imp=(iel&&iel.value.trim())?iel.value.trim():"[doctor impression not documented]";var pel=document.getElementById("plan");var plt=(pel&&pel.value.trim())?pel.value.trim():"[doctor plan not documented]";var o="";if(type==="soap"){o=dc+"SOAP NOTE\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="SUBJECTIVE:\n";if(dur!="[not documented]")o+="Duration: "+dur+"\n";if(symp!="[not documented]")o+="Main symptoms: "+symp+"\n";if(hx!="[not documented]")o+="Relevant history: "+hx+"\n";if(cn!="[not documented]")o+="Patient report: "+cn+"\n";if(dur=="[not documented]"&&symp=="[not documented]"&&hx=="[not documented]"&&cn=="[not documented]")o+="[not documented]\n";o+="\nOBJECTIVE:\n";if(exam!="[not documented]")o+="Examination: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";if(exam=="[not documented]"&&inv=="[not documented]")o+="[not documented]\n";o+="\nASSESSMENT:\n"+imp+"\n\n";o+="PLAN:\n"+plt+"\n";if(fup!="[not documented]")o+="\nFollow-up: "+fup+"\n";if(dn!="[not documented]")o+="\nDoctor notes: "+dn+"\n"}else if(type==="emr"){o=dc+"SHORT EMR NOTE\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="CC: "+symp+"\n";o+="HPI: "+dur+". "+cn+"\n";o+="PMH: "+hx+"\n";o+="Exam: "+exam+"\n";o+="Investigations: "+inv+"\n";o+="Impression: "+imp+"\n";o+="Plan: "+plt+"\n";if(fup!="[not documented]")o+="Follow-up: "+fup+"\n"}else if(type==="fup"){o=dc+"FOLLOW-UP NOTE\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="Interval: "+fup+"\n";o+="Current status: "+cn+"\n";o+="Symptoms: "+symp+"\n";o+="History: "+hx+"\n";o+="Examination: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Impression: "+imp+"\n";o+="Plan: "+plt+"\n";if(dn!="[not documented]")o+="Notes: "+dn+"\n"}else if(type==="ref"){o=dc+"REFERRAL LETTER\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="Reason for referral: "+cn+"\n";o+="History: "+hx+"\n";o+="Exam findings: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Working impression: "+imp+"\n";o+="Current plan: "+plt+"\n";o+="Request: Please see and advise.\n"}else if(type==="pt"){o=dc+"PATIENT INSTRUCTIONS\n\n";o+="Diagnosis: "+imp+"\n\n";o+="Doctor advice: "+plt+"\n\n";o+="Medications: "+plt+"\n\n";o+="Activity: "+dn+"\n\n";o+="When to seek help: "+exam+"\n\n";o+="Follow-up: "+fup+"\n"}document.getElementById("outputBox").innerHTML=o}
 function gRef(type){var dc="Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";var spec=val("refSpecialty");var reason=val("refReason");var hx=val("refHistory");var exam=val("refExam");var inv=val("refInvestigations");var impr=val("refImpression");var mgmt=val("refManagement");var action=val("refAction");var o="";if(type==="formal"){o=dc+"FORMAL REFERRAL LETTER\n\n";o+="Re: Referral to "+spec+"\n\n";o+="Reason for Referral:\n"+reason+"\n\n";o+="Relevant History:\n"+hx+"\n\n";o+="Examination Findings:\n"+exam+"\n\n";if(inv!="[not documented]")o+="Investigations:\n"+inv+"\n\n";o+="Working Impression:\n"+impr+"\n\n";o+="Current Management:\n"+mgmt+"\n\n";o+="Requested Action:\n"+action+"\n\n";o+="Please assess and advise. Thank you.\n"}else if(type==="short"){o=dc+"SHORT REFERRAL NOTE\n\n";o+="To: "+spec+"\n";o+="Reason: "+reason+"\n";o+="History: "+hx+"\n";o+="Exam: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Impression: "+impr+"\n";o+="Current: "+mgmt+"\n";o+="Request: "+action+"\n"}else if(type==="handover"){o=dc+"HANDOVER SUMMARY\n\n";o+="Specialty: "+spec+"\n";o+="Issue: "+reason+"\n\n";o+="Background:\n"+hx+"\n\n";o+="Current Status:\nExam: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Impression: "+impr+"\n";o+="Current management: "+mgmt+"\n\n";o+="Action required:\n"+action+"\n"}document.getElementById("refOutputBox").innerHTML=o}
 function gInst(lang){var dc="Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";var diag=val("instDiagnosis");var advice=val("instAdvice");var meds=val("instMedications");var act=val("instActivity");var rf=val("instRedFlags");var fup=val("instFollowup");var o="";if(lang==="en"){o=dc+"PATIENT INSTRUCTIONS\n\n";o+="Diagnosis: "+diag+"\n\n";o+="What to do:\n"+advice+"\n\n";o+="Medications:\n"+meds+"\n\n";o+="Activity:\n"+act+"\n\n";o+="When to return:\n"+rf+"\n\n";o+="Follow-up: "+fup+"\n"}else if(lang==="ar"){o=dc+"\u062A\u0639\u0644\u064A\u0645\u0627\u062A \u0627\u0644\u0645\u0631\u064A\u0636\n\n";o+="\u0627\u0644\u062A\u0634\u062E\u064A\u0635: "+diag+"\n\n";o+="\u0627\u0644\u0646\u0635\u0627\u0626\u062D: "+advice+"\n\n";o+="\u0627\u0644\u0623\u062F\u0648\u064A\u0629: "+meds+"\n\n";o+="\u0627\u0644\u0646\u0634\u0627\u0637: "+act+"\n\n";o+="\u0645\u062A\u0649 \u064A\u062C\u0628 \u0627\u0644\u0639\u0648\u062F\u0629: "+rf+"\n\n";o+="\u0645\u062A\u0627\u0628\u0639\u0629: "+fup+"\n"}else if(lang==="wa"){o=dc+"PATIENT INSTRUCTIONS\n\n";o+="Diagnosis: "+diag+"\n\n";o+="Advice:\n"+advice+"\n\n";o+="Medications:\n"+meds+"\n\n";o+="Activity:\n"+act+"\n\n";o+="Red flags (see doctor if):\n"+rf+"\n\n";o+="Follow-up: "+fup+"\n"}document.getElementById("instOutputBox").innerHTML=o}function cp(id){var el=document.getElementById(id);var t=el.innerText||el.textContent;navigator.clipboard.writeText(t).catch(function(){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand("copy");document.body.removeChild(ta)})}
@@ -1055,6 +1127,13 @@ function clearSpeedOutput(){
 
 // Export all functions to window for onclick
 window.showPage = showPage;
+window.isReportModuleEnabled = isReportModuleEnabled;
+window.initMedicalReportModule = initMedicalReportModule;
+window.checkReportPHI = checkReportPHI;
+window.generateMedicalReportDraft = generateMedicalReportDraft;
+window.copyMedicalReport = copyMedicalReport;
+window.clearMedicalReport = clearMedicalReport;
+window.clearMedicalReportOutput = clearMedicalReportOutput;
 window.upVT = upVT;
 window.upP = upP;
 window.val = val;
@@ -1083,7 +1162,7 @@ window.clearSpeed = clearSpeed;
 window.populateSpeedSpecialty = populateSpeedSpecialty;
 window.buildPresets = buildPresets;
 
-document.addEventListener("DOMContentLoaded",function(){showPage('speed');buildPresets();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
+document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();showPage(isReportModuleEnabled()?'report':'speed');buildPresets();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
 
 </script>
 </body>
