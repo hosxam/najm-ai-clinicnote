@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hosxam.github.io/najm-ai-clinicnote/sitemap.xml

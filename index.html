@@ -1,11 +1,20 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<!-- Najm AI ClinicNote build public-trust-final -->
+<!-- Najm AI ClinicNote build seo-foundation-final -->
 <!-- Najm AI ClinicNote Restored - Inline onclick + Premium UI v2 -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free SOAP Note Generator for Doctors - Najm AI ClinicNote</title>
+<title>Free SOAP Note Generator for Doctors | Najm AI ClinicNote</title>
+<meta name="description" content="Create structured OPD notes, SOAP notes, referrals, patient instructions, and medical report drafts from doctor-entered de-identified clinical details. No login, no audio, no patient data storage.">
+<link rel="canonical" href="https://hosxam.github.io/najm-ai-clinicnote/">
+<meta property="og:title" content="Free SOAP Note Generator for Doctors | Najm AI ClinicNote">
+<meta property="og:description" content="Create structured OPD notes, SOAP notes, referrals, patient instructions, and medical report drafts from doctor-entered de-identified clinical details. No login, no audio, no patient data storage.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hosxam.github.io/najm-ai-clinicnote/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free SOAP Note Generator for Doctors | Najm AI ClinicNote">
+<meta name="twitter:description" content="Create structured OPD notes, SOAP notes, referrals, patient instructions, and report drafts from doctor-entered de-identified clinical details.">
 <style>
 :root{--primary:#0d7a7a;--primary-light:#109494;--primary-dark:#095b5b;--primary-bg:#e6f4f4;--primary-glow:rgba(13,122,122,0.12);--bg:#f6f8fa;--white:#fff;--gray-50:#f9fafb;--gray-100:#f0f2f5;--gray-200:#e2e5ea;--gray-300:#c5c9d0;--gray-400:#8e95a0;--gray-500:#636b78;--gray-600:#4a5260;--gray-700:#323946;--gray-800:#1d232f;--gray-900:#0f131d;--amber:#d97706;--amber-bg:#fffbeb;--amber-border:#fbbf24;--red:#dc2626;--red-bg:#fef2f2;--red-border:#fca5a5;--green:#16a34a;--radius:10px;--radius-lg:14px;--radius-xl:20px;--shadow:0 1px 3px rgba(0,0,0,0.07),0 1px 2px rgba(0,0,0,0.04);--shadow-md:0 4px 12px rgba(0,0,0,0.07);--shadow-lg:0 10px 30px rgba(0,0,0,0.08);--shadow-xl:0 20px 60px rgba(0,0,0,0.06);--font:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;--font-mono:SF Mono,Fira Code,Cascadia Code,Consolas,monospace;--max-w:1120px}
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
@@ -257,8 +266,11 @@ footer a{color:#d9e4f2}
 .feedback-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}
 .feedback-field{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;padding:10px;font-size:12px;color:var(--gray-700);font-weight:600}
 .static-template{width:100%;min-height:150px;margin-top:12px}
+.resource-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-width:920px;margin:0 auto}
+.resource-link{background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:13px 12px;color:var(--gray-800);font-size:12px;font-weight:800;box-shadow:var(--shadow)}
+.resource-link:hover{text-decoration:none;background:var(--primary-bg);color:var(--primary-dark);border-color:#bfe3e0}
 @media(max-width:900px){.product-row{grid-template-columns:1fr}.hero h1{font-size:36px}.hero{padding:58px 16px 42px}.speed-mode-box{padding:20px}.trust-item{text-align:center}.two-col{grid-template-columns:1fr}.output-card{position:static}}
-@media(max-width:900px){.examples-grid{grid-template-columns:1fr}.feedback-fields{grid-template-columns:1fr}}
+@media(max-width:900px){.examples-grid{grid-template-columns:1fr}.feedback-fields{grid-template-columns:1fr}.resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.nav-inner{height:64px;padding:0 14px}.nav-links{top:64px}.nav-logo .sub{display:none}.hero h1{font-size:30px}.hero p{font-size:14px}.hero-microcopy{font-size:12px}.hero-ctas .btn,.gen-row .btn{width:100%;justify-content:center}.hero-stat{min-width:0;flex:1;padding:12px 8px}.trust-grid{grid-template-columns:1fr}.product-item{text-align:left}.speed-mode-box{padding:18px 14px}.chip{font-size:11px;min-height:34px;padding:8px 11px}.chip-group{gap:6px}.output-header{overflow-x:auto;flex-wrap:nowrap}.output-tab{white-space:nowrap;flex:0 0 auto}#v2ChipGroups .speed-section{padding:14px}#v2ChipGroups [data-v2-custom-row]>div{flex-direction:column!important;align-items:stretch!important}#v2ChipGroups [data-v2-custom-row] .btn{width:100%;justify-content:center}.form-group select,.form-group input,.form-group textarea{font-size:16px}.output-actions .btn{flex:1;justify-content:center}.page-header h2{font-size:26px}.two-col,.two-col>div,.speed-mode-box,#v2SearchArea,#v2SearchArea>div,#v2ChipGroups,#v2ChipGroups .speed-section,.output-card{min-width:0;max-width:100%;overflow-wrap:anywhere}.note-phi-warn,.phi-warning,.prompts-box,#v2CustomSafetyNote,.amber-box,.output-body,.speed-tip,.example-block pre{overflow-wrap:anywhere;word-break:normal}.form-group select,.form-group input,.form-group textarea,.speed-section input,.speed-section textarea{max-width:100%;min-width:0}.status-bar{max-width:100%}.trust-badges{justify-content:flex-start}.trust-badge{font-size:11px}.feedback-panel{padding:16px}}
 </style>
 </head>
@@ -338,8 +350,22 @@ footer a{color:#d9e4f2}
 <h2 class="section-title">ClinicNote Tools</h2>
 <p class="section-sub">Two focused workspaces for de-identified clinical documentation.</p>
 <div class="product-row">
-<div class="product-item launched"><h4>OPD Note Builder</h4><p>Search workflows, select dataset-backed findings, add custom details, and generate copy-ready OPD drafts.</p><button class="btn btn-primary btn-xs" onclick="showPage('speed')" style="margin-top:10px">Try OPD Note Builder</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified details only. Clinician review required.</p></div>
-<div class="product-item launched"><h4>Medical Report Draft</h4><p>Turn de-identified clinician notes into a structured report draft for review.</p><button class="btn btn-outline btn-xs" onclick="showPage('report')" style="margin-top:10px">Open Report Draft</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified notes only. Clinician review required.</p></div>
+<div class="product-item launched"><h4>OPD Note Builder</h4><p>Search workflows, select dataset-backed findings, add custom details, and generate copy-ready OPD drafts.</p><button class="btn btn-primary btn-xs" onclick="showPage('speed')" style="margin-top:10px">Try OPD Note Builder</button> <a href="./opd-note-generator/" style="font-size:11px;margin-left:8px">Learn more</a><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified details only. Clinician review required.</p></div>
+<div class="product-item launched"><h4>Medical Report Draft</h4><p>Turn de-identified clinician notes into a structured report draft for review.</p><button class="btn btn-outline btn-xs" onclick="showPage('report')" style="margin-top:10px">Open Report Draft</button> <a href="./medical-report-draft-generator/" style="font-size:11px;margin-left:8px">Learn more</a><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified notes only. Clinician review required.</p></div>
+</div>
+</section>
+<section class="section">
+<h2 class="section-title">Documentation Resources</h2>
+<p class="section-sub">Focused guides for common documentation draft workflows.</p>
+<div class="resource-grid">
+<a class="resource-link" href="./free-soap-note-generator/">Free SOAP Note Generator</a>
+<a class="resource-link" href="./opd-note-generator/">OPD Note Generator</a>
+<a class="resource-link" href="./referral-letter-generator-for-doctors/">Referral Letter Generator</a>
+<a class="resource-link" href="./patient-instructions-generator/">Patient Instructions Generator</a>
+<a class="resource-link" href="./medical-report-draft-generator/">Medical Report Draft Generator</a>
+<a class="resource-link" href="./orthopedic-soap-note-generator/">Orthopedic SOAP Notes</a>
+<a class="resource-link" href="./pediatric-soap-note-generator/">Pediatric SOAP Notes</a>
+<a class="resource-link" href="./dermatology-soap-note-generator/">Dermatology SOAP Notes</a>
 </div>
 </section>
 <section class="section">
@@ -891,20 +917,23 @@ Reminder: Do not include patient information.</textarea>
 </div>
 <footer>
 <div class="footer-links">
-<a onclick="showPage('feedback')">Feedback</a>
-<a onclick="showPage('privacy')">Privacy</a>
-<a onclick="showPage('safety')">Safety</a>
-<a onclick="showPage('changelog')">Changelog</a>
-<a onclick="showPage('about')">About</a>
+<a href="./free-soap-note-generator/">SOAP Note Generator</a>
+<a href="./opd-note-generator/">OPD Note Generator</a>
+<a href="./medical-report-draft-generator/">Report Draft Generator</a>
+<a href="./feedback/">Feedback</a>
+<a href="./privacy/">Privacy</a>
+<a href="./safety/">Safety</a>
+<a href="./changelog/">Changelog</a>
+<a href="./about/">About</a>
 </div>
-&copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.72">Version public-trust-final | Last updated May 16, 2026</span><br>ClinicNote is an educational documentation assistance tool. Not a medical device.
+&copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.72">Version seo-foundation-final | Last updated May 16, 2026</span><br>ClinicNote is an educational documentation assistance tool. Not a medical device.
 </footer><script src="./SPEED_LIBRARY_DATA.js"></script>
 <script src="./GENERATED_CLINICAL_DATA.js"></script>
 <script>
 // ---- Feature Flag: MUST be set before v2_workflow_ui.js loads ----
 window.CLINICNOTE_DATA_MODE = (new URLSearchParams(window.location.search).get("data") === "v1") ? "v1" : "v2";
 </script>
-<script src="./v2_workflow_ui_2.js?v=public-trust-final"></script>
+<script src="./v2_workflow_ui_2.js?v=seo-foundation-final"></script>
 <script>
 
 // ---- Adapter: build old-compatible VISIT_LIBRARY from NAJM_CLINICAL_DATA ----
