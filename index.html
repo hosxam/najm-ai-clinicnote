@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<!-- Najm AI ClinicNote build premium-ui-final -->
+<!-- Najm AI ClinicNote build public-trust-final -->
 <!-- Najm AI ClinicNote Restored - Inline onclick + Premium UI v2 -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ClinicNote by Najm AI - OPD Notes, Structured in Seconds</title>
+<title>Free SOAP Note Generator for Doctors - Najm AI ClinicNote</title>
 <style>
 :root{--primary:#0d7a7a;--primary-light:#109494;--primary-dark:#095b5b;--primary-bg:#e6f4f4;--primary-glow:rgba(13,122,122,0.12);--bg:#f6f8fa;--white:#fff;--gray-50:#f9fafb;--gray-100:#f0f2f5;--gray-200:#e2e5ea;--gray-300:#c5c9d0;--gray-400:#8e95a0;--gray-500:#636b78;--gray-600:#4a5260;--gray-700:#323946;--gray-800:#1d232f;--gray-900:#0f131d;--amber:#d97706;--amber-bg:#fffbeb;--amber-border:#fbbf24;--red:#dc2626;--red-bg:#fef2f2;--red-border:#fca5a5;--green:#16a34a;--radius:10px;--radius-lg:14px;--radius-xl:20px;--shadow:0 1px 3px rgba(0,0,0,0.07),0 1px 2px rgba(0,0,0,0.04);--shadow-md:0 4px 12px rgba(0,0,0,0.07);--shadow-lg:0 10px 30px rgba(0,0,0,0.08);--shadow-xl:0 20px 60px rgba(0,0,0,0.06);--font:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;--font-mono:SF Mono,Fira Code,Cascadia Code,Consolas,monospace;--max-w:1120px}
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
@@ -244,8 +244,22 @@ nav{background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(195,204,215,0
 #page-report .two-col>div:first-child,#page-opd .input-col,#page-referral .two-col>div:first-child,#page-instructions .two-col>div:first-child{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:20px;box-shadow:var(--shadow)}
 footer{background:var(--gray-900);color:#b7c0cc}
 footer a{color:#d9e4f2}
+.trust-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:820px;margin:0 auto 28px}
+.trust-badge{background:#fff;border:1px solid var(--gray-200);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:700;color:var(--gray-700);box-shadow:var(--shadow)}
+.examples-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.example-card{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:18px;box-shadow:var(--shadow)}
+.example-card h3{font-size:16px;color:var(--gray-900);margin-bottom:8px}
+.example-disclaimer{font-size:10px;color:var(--gray-500);font-weight:700;text-transform:uppercase;margin-bottom:10px}
+.example-block{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:12px;margin:10px 0}
+.example-block h4{font-size:11px;color:var(--gray-600);text-transform:uppercase;margin-bottom:6px;letter-spacing:0.04em}
+.example-block pre{white-space:pre-wrap;font-family:var(--font-mono);font-size:11px;line-height:1.55;color:var(--gray-800)}
+.feedback-panel{background:#fff;border:1px solid #bfe3e0;border-radius:12px;padding:22px;box-shadow:var(--shadow-md);max-width:820px;margin:0 auto}
+.feedback-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}
+.feedback-field{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;padding:10px;font-size:12px;color:var(--gray-700);font-weight:600}
+.static-template{width:100%;min-height:150px;margin-top:12px}
 @media(max-width:900px){.product-row{grid-template-columns:1fr}.hero h1{font-size:36px}.hero{padding:58px 16px 42px}.speed-mode-box{padding:20px}.trust-item{text-align:center}.two-col{grid-template-columns:1fr}.output-card{position:static}}
-@media(max-width:640px){.nav-inner{height:64px;padding:0 14px}.nav-links{top:64px}.nav-logo .sub{display:none}.hero h1{font-size:30px}.hero p{font-size:14px}.hero-microcopy{font-size:12px}.hero-ctas .btn,.gen-row .btn{width:100%;justify-content:center}.hero-stat{min-width:0;flex:1;padding:12px 8px}.trust-grid{grid-template-columns:1fr}.product-item{text-align:left}.speed-mode-box{padding:18px 14px}.chip{font-size:11px;min-height:34px;padding:8px 11px}.chip-group{gap:6px}.output-header{overflow-x:auto;flex-wrap:nowrap}.output-tab{white-space:nowrap;flex:0 0 auto}#v2ChipGroups .speed-section{padding:14px}#v2ChipGroups [data-v2-custom-row]>div{flex-direction:column!important;align-items:stretch!important}#v2ChipGroups [data-v2-custom-row] .btn{width:100%;justify-content:center}.form-group select,.form-group input,.form-group textarea{font-size:16px}.output-actions .btn{flex:1;justify-content:center}.page-header h2{font-size:26px}.two-col,.two-col>div,.speed-mode-box,#v2SearchArea,#v2SearchArea>div,#v2ChipGroups,#v2ChipGroups .speed-section,.output-card{min-width:0;max-width:100%;overflow-wrap:anywhere}.note-phi-warn,.phi-warning,.prompts-box,#v2CustomSafetyNote,.amber-box,.output-body,.speed-tip{overflow-wrap:anywhere;word-break:normal}.form-group select,.form-group input,.form-group textarea,.speed-section input,.speed-section textarea{max-width:100%;min-width:0}.status-bar{max-width:100%}}
+@media(max-width:900px){.examples-grid{grid-template-columns:1fr}.feedback-fields{grid-template-columns:1fr}}
+@media(max-width:640px){.nav-inner{height:64px;padding:0 14px}.nav-links{top:64px}.nav-logo .sub{display:none}.hero h1{font-size:30px}.hero p{font-size:14px}.hero-microcopy{font-size:12px}.hero-ctas .btn,.gen-row .btn{width:100%;justify-content:center}.hero-stat{min-width:0;flex:1;padding:12px 8px}.trust-grid{grid-template-columns:1fr}.product-item{text-align:left}.speed-mode-box{padding:18px 14px}.chip{font-size:11px;min-height:34px;padding:8px 11px}.chip-group{gap:6px}.output-header{overflow-x:auto;flex-wrap:nowrap}.output-tab{white-space:nowrap;flex:0 0 auto}#v2ChipGroups .speed-section{padding:14px}#v2ChipGroups [data-v2-custom-row]>div{flex-direction:column!important;align-items:stretch!important}#v2ChipGroups [data-v2-custom-row] .btn{width:100%;justify-content:center}.form-group select,.form-group input,.form-group textarea{font-size:16px}.output-actions .btn{flex:1;justify-content:center}.page-header h2{font-size:26px}.two-col,.two-col>div,.speed-mode-box,#v2SearchArea,#v2SearchArea>div,#v2ChipGroups,#v2ChipGroups .speed-section,.output-card{min-width:0;max-width:100%;overflow-wrap:anywhere}.note-phi-warn,.phi-warning,.prompts-box,#v2CustomSafetyNote,.amber-box,.output-body,.speed-tip,.example-block pre{overflow-wrap:anywhere;word-break:normal}.form-group select,.form-group input,.form-group textarea,.speed-section input,.speed-section textarea{max-width:100%;min-width:0}.status-bar{max-width:100%}.trust-badges{justify-content:flex-start}.trust-badge{font-size:11px}.feedback-panel{padding:16px}}
 </style>
 </head>
 <body><div class="safety-banner">Do not enter patient names, IDs, or contact information. ClinicNote by Najm AI does not store or transmit any data.</div>
@@ -259,7 +273,9 @@ footer a{color:#d9e4f2}
 <a data-page="home" onclick="showPage('home')">Home</a>
 <a data-page="speed" onclick="showPage('speed')">OPD Note Builder</a>
 <a id="reportNavLink" data-page="report" onclick="showPage('report')">Medical Report Draft</a>
+<a data-page="feedback" onclick="showPage('feedback')">Feedback</a>
 <a data-page="safety" onclick="showPage('safety')">Safety</a>
+<a data-page="privacy" onclick="showPage('privacy')">Privacy</a>
 <a data-page="about" onclick="showPage('about')">About</a>
 <a class="nav-cta" onclick="showPage('speed')">Try OPD Note Builder</a>
 </div>
@@ -268,9 +284,16 @@ footer a{color:#d9e4f2}
 <div class="container">
 <div id="page-home" class="page active">
 <section class="hero">
-<h1>OPD notes, structured <span>in seconds.</span></h1>
-<p>Najm AI ClinicNote helps doctors turn de-identified clinical information into structured OPD notes, referrals, patient instructions, and report drafts.</p>
-<div class="hero-microcopy">No patient identifiers. No audio recording. No storage. Clinician review required.</div>
+<h1>Free SOAP Note Generator for Doctors</h1>
+<p>Create structured OPD notes, referrals, patient instructions, and report drafts from doctor-entered de-identified clinical details. No login. No audio. No storage. Clinician review required.</p>
+<div class="trust-badges" aria-label="ClinicNote trust and privacy safeguards">
+<span class="trust-badge">No login required</span>
+<span class="trust-badge">No patient identifiers</span>
+<span class="trust-badge">No audio recording</span>
+<span class="trust-badge">No patient data storage</span>
+<span class="trust-badge">Browser-based</span>
+<span class="trust-badge">Clinician review required</span>
+</div>
 <div class="hero-ctas">
 <button class="btn btn-primary" onclick="showPage('speed')">Try OPD Note Builder</button>
 <button class="btn btn-outline" onclick="showPage('report')">Open Medical Report Draft</button>
@@ -317,6 +340,73 @@ footer a{color:#d9e4f2}
 <div class="product-row">
 <div class="product-item launched"><h4>OPD Note Builder</h4><p>Search workflows, select dataset-backed findings, add custom details, and generate copy-ready OPD drafts.</p><button class="btn btn-primary btn-xs" onclick="showPage('speed')" style="margin-top:10px">Try OPD Note Builder</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified details only. Clinician review required.</p></div>
 <div class="product-item launched"><h4>Medical Report Draft</h4><p>Turn de-identified clinician notes into a structured report draft for review.</p><button class="btn btn-outline btn-xs" onclick="showPage('report')" style="margin-top:10px">Open Report Draft</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified notes only. Clinician review required.</p></div>
+</div>
+</section>
+<section class="section">
+<h2 class="section-title">Fictional Examples</h2>
+<p class="section-sub">These examples are fictional and de-identified. They show the kind of doctor-entered input ClinicNote can structure for clinician review.</p>
+<div class="examples-grid">
+<div class="example-card">
+<h3>Fever / URTI</h3>
+<div class="example-disclaimer">Fictional and de-identified</div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>3 days fever, cough, sore throat. No shortness of breath or chest pain. Chest clear. Impression: Viral URTI. Plan: supportive care, fluids, antipyretic use as per clinician plan. Follow-up if worse.</pre></div>
+<div class="example-block"><h4>Generated EMR output</h4><pre>CC: fever, cough, sore throat
+Pertinent negatives: no shortness of breath, no chest pain
+Exam: chest clear
+Impression: Viral URTI
+Plan: Supportive care, fluids, antipyretic use as per clinician plan
+Follow-up: If symptoms persist or worsen</pre></div>
+<button class="btn btn-outline btn-xs" onclick="showPage('speed')">Open in ClinicNote</button>
+</div>
+<div class="example-card">
+<h3>Diabetes follow-up</h3>
+<div class="example-disclaimer">Fictional and de-identified</div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Routine diabetes follow-up. Home glucose readings reviewed. No hypoglycemia symptoms. No foot ulcers reported. HbA1c reviewed if available. Impression: Type 2 diabetes follow-up.</pre></div>
+<div class="example-block"><h4>Generated SOAP output</h4><pre>SUBJECTIVE: Routine follow-up. Home glucose readings reviewed. No hypoglycemia symptoms.
+OBJECTIVE: No foot ulcers reported. HbA1c reviewed if available.
+ASSESSMENT: Type 2 diabetes follow-up
+PLAN: Medication adherence discussed, lifestyle advice reinforced, labs reviewed. Routine follow-up arranged.</pre></div>
+<button class="btn btn-outline btn-xs" onclick="showPage('speed')">Open in ClinicNote</button>
+</div>
+<div class="example-card">
+<h3>Low back pain</h3>
+<div class="example-disclaimer">Fictional and de-identified</div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Lower back pain worse with movement. No bowel or bladder symptoms. No saddle anesthesia. No fever. Gait documented. Lumbar tenderness. Impression: Mechanical low back pain.</pre></div>
+<div class="example-block"><h4>Generated EMR output</h4><pre>CC: lower back pain, pain worse with movement
+Pertinent negatives: no bowel/bladder symptoms, no saddle anesthesia, no fever
+Exam: gait documented, lumbar tenderness
+Impression: Mechanical low back pain
+Plan: Activity modification discussed, physiotherapy referral discussed as per clinician plan</pre></div>
+<button class="btn btn-outline btn-xs" onclick="showPage('speed')">Open in ClinicNote</button>
+</div>
+<div class="example-card">
+<h3>Pediatric fever</h3>
+<div class="example-disclaimer">Fictional and de-identified</div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Pediatric fever with reduced activity. No breathing difficulty. No seizure reported. Urine output maintained. Hydration adequate. Parent advice and return precautions discussed.</pre></div>
+<div class="example-block"><h4>Generated SOAP output</h4><pre>SUBJECTIVE: Fever, reduced activity. No breathing difficulty. No seizure reported.
+OBJECTIVE: Urine output maintained. Hydration adequate.
+ASSESSMENT: Pediatric fever, clinician impression documented
+PLAN: Parent/guardian advice discussed. Hydration advice discussed as per clinician plan. Follow-up arranged / return precautions discussed.</pre></div>
+<button class="btn btn-outline btn-xs" onclick="showPage('speed')">Open in ClinicNote</button>
+</div>
+<div class="example-card">
+<h3>Antenatal follow-up</h3>
+<div class="example-disclaimer">Fictional and de-identified</div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Routine antenatal follow-up. Gestational age documented. No vaginal bleeding reported. No abdominal pain reported. BP recorded. Antenatal labs reviewed. Warning symptoms discussed.</pre></div>
+<div class="example-block"><h4>Generated EMR output</h4><pre>CC: routine antenatal follow-up
+Pertinent negatives: no vaginal bleeding reported, no abdominal pain reported
+Exam/results: BP recorded, antenatal labs reviewed
+Impression: Routine antenatal follow-up
+Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arranged.</pre></div>
+<button class="btn btn-outline btn-xs" onclick="showPage('speed')">Open in ClinicNote</button>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="feedback-panel">
+<h2 class="section-title" style="text-align:left;margin-bottom:6px">Missing a template? Suggest one.</h2>
+<p style="font-size:13px;color:var(--gray-600);margin-bottom:14px">ClinicNote is expanding carefully. Use the feedback checklist below to request a template or output format. Do not submit patient information.</p>
+<button class="btn btn-primary btn-sm" onclick="showPage('feedback')">Suggest a template</button>
 </div>
 </section>
 </div><div id="page-speed" class="page">
@@ -679,12 +769,74 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <div class="page-header"><h2>Specialty Presets</h2><p>Browse all predefined Speed Types and documentation prompts by specialty.</p></div>
 <div id="presetsContent"></div>
 </div>
+<div id="page-feedback" class="page">
+<div class="page-header"><h2>Missing a template? Suggest one.</h2><p>Share a de-identified template request for future ClinicNote planning.</p></div>
+<div class="content-page">
+<div class="amber-box"><strong>Do not submit patient information.</strong> Do not include names, MRNs, phone numbers, exact dates of birth, Emirates ID, addresses, or any patient-specific details.</div>
+<p>ClinicNote does not include a backend submission system yet. Use this static checklist to prepare a template request through your preferred contact channel.</p>
+<div class="feedback-fields">
+<div class="feedback-field">Role</div>
+<div class="feedback-field">Specialty</div>
+<div class="feedback-field">Country</div>
+<div class="feedback-field">Missing template</div>
+<div class="feedback-field">Output format needed</div>
+<div class="feedback-field">Optional email</div>
+<div class="feedback-field">Future AI Scribe interest</div>
+</div>
+<div class="form-group">
+<label for="feedbackTemplate">Static request template</label>
+<textarea id="feedbackTemplate" class="code static-template" readonly>Role:
+Specialty:
+Country:
+Missing template:
+Output format needed:
+Optional email:
+Future AI Scribe interest:
+
+Reminder: Do not include patient information.</textarea>
+</div>
+<p style="font-size:12px;color:var(--gray-500)">This section is informational only and does not transmit, store, or submit data.</p>
+</div>
+</div>
+<div id="page-privacy" class="page">
+<div class="page-header"><h2>Privacy</h2><p>How ClinicNote is designed to avoid patient data collection.</p></div>
+<div class="content-page">
+<h3>No login, no account, no backend storage</h3>
+<p>ClinicNote runs in the browser as a client-side documentation assistant. It does not require a login and does not provide user accounts, cloud storage, audio capture, or patient record storage.</p>
+<h3>De-identified use only</h3>
+<p>Users should enter de-identified clinical details only. Do not enter names, MRNs, phone numbers, exact dates of birth, Emirates ID, addresses, or other patient identifiers.</p>
+<h3>Browser-based workflow</h3>
+<p>The tool structures doctor-entered information in the browser. Any text you copy from ClinicNote is handled by your browser and remains under your control.</p>
+<h3>No analytics at this stage</h3>
+<p>This public-readiness phase does not add analytics, tracking, login, backend submission, audio recording, or persistent data storage.</p>
+<h3>Clinician responsibility</h3>
+<p>All generated outputs are drafts and require review, editing, and approval by a licensed clinician before use.</p>
+</div>
+</div>
+<div id="page-changelog" class="page">
+<div class="page-header"><h2>Changelog</h2><p>Public-facing updates for ClinicNote.</p></div>
+<div class="content-page">
+<h3>May 16, 2026</h3>
+<ul class="list-check">
+<li>Public trust, examples, feedback checklist, privacy page, safety page access, and changelog added.</li>
+<li>Homepage headline updated for doctors looking for a free SOAP note generator.</li>
+<li>Internal status footer text removed from the public interface.</li>
+<li>OPD Speed Mode remains primary, v2 remains default, and v1 fallback remains available with <code>?data=v1</code>.</li>
+</ul>
+<h3>Previous public readiness work</h3>
+<ul class="list-check">
+<li>Premium healthtech UI refresh.</li>
+<li>Medical Report Draft made visible on the normal site.</li>
+<li>v2 workflow search, visible chip groups, and inline custom entries stabilized.</li>
+</ul>
+</div>
+</div>
 <div id="page-about" class="page">
 <div class="page-header"><h2>About Najm AI</h2></div>
 <div class="content-page">
 <p>Najm AI is a healthtech brand focused on building practical, safe, and accessible tools for healthcare professionals. We believe in technology that empowers clinicians without replacing their judgment or compromising patient privacy.</p>
 <h3>ClinicNote</h3>
-<p>ClinicNote is our first product. It is a documentation assistance tool that helps clinicians structure their de-identified clinical notes into standard formats like SOAP notes, short EMR entries, referral letters, and patient instructions. It is not a full AI scribe. It does not use audio recording or natural language processing to generate notes from conversation. Instead, it provides a structured interface where doctors enter their own notes and choose from predefined output formats.</p>
+<p>ClinicNote is a browser-based documentation assistance tool that helps clinicians structure de-identified, doctor-entered details into standard formats like SOAP notes, short EMR entries, referral letters, patient instructions, and report drafts. It is not a full AI scribe. It does not use audio recording or generate notes from conversation. Instead, it provides a structured interface where doctors enter or select their own clinical details and review every output before use.</p>
 <h3>What ClinicNote Is</h3>
 <ul class="list-check">
 <li>A structured documentation assistant that organizes doctor-entered notes</li>
@@ -701,10 +853,8 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <li>Not FDA-cleared, CE-marked, or DHA-approved</li>
 </ul>
 <h3>Product Family</h3>
-<p><strong>ClinicNote</strong> (launched) - Structured OPD documentation assistant for clinicians.</p>
-<p><strong>Scribe</strong> (future) - AI-powered clinical scribe that listens and generates notes from consultations.</p>
-<p><strong>ClinicTools</strong> (future) - Practice management and workflow optimization tools.</p>
-<p><strong>Research</strong> (future) - Tools for clinical research data collection and analysis.</p>
+<p><strong>ClinicNote</strong> - Structured OPD documentation assistant for clinicians.</p>
+<p><strong>Medical Report Draft</strong> - Structured report drafts from clinician-provided de-identified information.</p>
 <h3>Safety Commitment</h3>
 <p>Protecting patient privacy is our top priority. ClinicNote is designed from the ground up with safety as a core principle, not an afterthought. Every design decision prioritizes clinician control and patient data protection.</p>
 </div>
@@ -741,21 +891,20 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 </div>
 <footer>
 <div class="footer-links">
+<a onclick="showPage('feedback')">Feedback</a>
+<a onclick="showPage('privacy')">Privacy</a>
 <a onclick="showPage('safety')">Safety</a>
+<a onclick="showPage('changelog')">Changelog</a>
 <a onclick="showPage('about')">About</a>
 </div>
-&copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.6">Version premium-ui-final | Data: <span id="dbgDataMode">-</span> |
-  <span id="debugLibrary" style="font-size:11px;color:var(--gray-400)">Library: <span id="dbgLibStatus">checking...</span> | Types: <span id="dbgTypeCount">-</span> | JS: <span id="dbgJsReady">-</span></span>
-  <script>
-  (function(){var dbg=document.getElementById("debugLibrary");if(!dbg)return;function upd(){var dm=document.getElementById("dbgDataMode");if(window.CLINICNOTE_DATA_MODE){dm.textContent=window.CLINICNOTE_DATA_MODE==="v1"?"v1 fallback":"v2";dm.style.color=window.CLINICNOTE_DATA_MODE==="v2"?"#f59e0b":"#22c55e";dm.style.fontWeight="bold"}var s=document.getElementById("dbgLibStatus");var t=document.getElementById("dbgTypeCount");var j=document.getElementById("dbgJsReady");var lib=window.ACTIVE_VISIT_LIBRARY||VISIT_LIBRARY;if(lib){s.textContent="yes";s.style.color="#22c55e";var total=0;for(var k in lib)total+=Object.keys(lib[k]).length;t.textContent=total;t.style.color="#22c55e"}else{s.textContent="no";s.style.color="#ef4444"}if(typeof showPage!=='undefined'){j.textContent="yes";j.style.color="#22c55e"}else{j.textContent="no";j.style.color="#ef4444"}}setTimeout(upd,500);setTimeout(upd,3000);setTimeout(upd,5000)})();
-  </script> | Build: premium-ui-final | 2026-05-16</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
+&copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.72">Version public-trust-final | Last updated May 16, 2026</span><br>ClinicNote is an educational documentation assistance tool. Not a medical device.
 </footer><script src="./SPEED_LIBRARY_DATA.js"></script>
 <script src="./GENERATED_CLINICAL_DATA.js"></script>
 <script>
 // ---- Feature Flag: MUST be set before v2_workflow_ui.js loads ----
 window.CLINICNOTE_DATA_MODE = (new URLSearchParams(window.location.search).get("data") === "v1") ? "v1" : "v2";
 </script>
-<script src="./v2_workflow_ui_2.js?v=premium-ui-final"></script>
+<script src="./v2_workflow_ui_2.js?v=public-trust-final"></script>
 <script>
 
 // ---- Adapter: build old-compatible VISIT_LIBRARY from NAJM_CLINICAL_DATA ----
@@ -1256,7 +1405,7 @@ window.clearSpeed = clearSpeed;
 window.populateSpeedSpecialty = populateSpeedSpecialty;
 window.buildPresets = buildPresets;
 
-document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();showPage(isReportModuleEnabled()?'report':'speed');buildPresets();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
+document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();showPage(isReportModuleEnabled()?'report':'home');buildPresets();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
 
 </script>
 </body>
