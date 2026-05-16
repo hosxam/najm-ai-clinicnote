@@ -5,6 +5,8 @@ function v2showSearchUI() {
   var v2sa = document.getElementById("v2SearchArea");
   if (window.CLINICNOTE_DATA_MODE !== "v2") {
     if (v2sa) v2sa.style.display = "none";
+    var v2CustomPanel = document.getElementById("v2CustomEntryPanel");
+    if (v2CustomPanel) v2CustomPanel.style.display = "none";
     return;
   }
 
@@ -420,6 +422,15 @@ function v2setLegacyChipSectionsVisible(visible) {
   }
 }
 
+function v2escapeHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function v2renderChipButton(chip, group, containerId) {
   var chipText = typeof chip === "string" ? chip : (chip.chip_text || "");
   if (!chipText) return null;
@@ -429,6 +440,7 @@ function v2renderChipButton(chip, group, containerId) {
   b.type = "button";
   b.textContent = chipText;
   b.setAttribute("data-name", chipText.toLowerCase());
+  b.setAttribute("data-value", chipText);
   b.setAttribute("data-container", containerId);
   b.setAttribute("data-v2-group", group);
   if (warning) {
@@ -441,6 +453,141 @@ function v2renderChipButton(chip, group, containerId) {
     updateSelectedCount();
   };
   return b;
+}
+
+var V2_CUSTOM_ENTRY_GROUPS = [
+  { key: "symptoms", label: "Custom symptom / positive", inputId: "v2CustomSymptom", listId: "v2CustomSymptomList", containerId: "speedSymptoms", placeholder: "e.g., symptoms worse at night" },
+  { key: "relevant_negatives", label: "Custom relevant negative", inputId: "v2CustomNegative", listId: "v2CustomNegativeList", containerId: "speedNegs", placeholder: "e.g., no recent travel" },
+  { key: "exam_findings", label: "Custom exam finding", inputId: "v2CustomExam", listId: "v2CustomExamList", containerId: "speedExam", placeholder: "e.g., mild epigastric tenderness" },
+  { key: "investigations", label: "Custom investigation / result", inputId: "v2CustomInvestigation", listId: "v2CustomInvestigationList", containerId: "speedInvs", placeholder: "e.g., HbA1c reviewed" },
+  { key: "plan_phrases", label: "Custom plan phrase", inputId: "v2CustomPlanPhrase", listId: "v2CustomPlanPhraseList", containerId: "speedPlans", placeholder: "e.g., lifestyle advice discussed" },
+  { key: "follow_up", label: "Custom follow-up phrase", inputId: "v2CustomFollowup", listId: "v2CustomFollowupList", containerId: "speedFollowupChips", placeholder: "e.g., review in 2 weeks" },
+  { key: "red_flags", label: "Custom red flag / safety note", inputId: "v2CustomRedFlag", listId: "v2CustomRedFlagList", containerId: "speedRedFlags", placeholder: "e.g., return if symptoms worsen" }
+];
+
+function v2customGroupByInput(inputId) {
+  for (var i = 0; i < V2_CUSTOM_ENTRY_GROUPS.length; i++) {
+    if (V2_CUSTOM_ENTRY_GROUPS[i].inputId === inputId) return V2_CUSTOM_ENTRY_GROUPS[i];
+  }
+  return null;
+}
+
+function v2ensureCustomEntryPanel() {
+  var panel = document.getElementById("v2CustomEntryPanel");
+  if (!panel) {
+    panel = document.createElement("div");
+    panel.id = "v2CustomEntryPanel";
+    panel.className = "speed-section";
+    panel.style.cssText = "display:none;margin:4px 0 20px";
+
+    var html = "";
+    html += "<div class='speed-section-title'>Add custom note details</div>";
+    html += "<div style='font-size:11px;color:var(--red);background:var(--red-bg);border:1px solid var(--red-border);border-radius:8px;padding:8px 10px;margin-bottom:10px'>Use de-identified text only. Do not enter names, MRNs, phone numbers, exact dates of birth, addresses, or other patient identifiers.</div>";
+    html += "<div id='v2CustomPhiWarning' class='phi-warning'>Potential patient-identifiable information detected in a custom entry. Please remove names, IDs, dates of birth, phone numbers, or email addresses.</div>";
+    for (var i = 0; i < V2_CUSTOM_ENTRY_GROUPS.length; i++) {
+      var cfg = V2_CUSTOM_ENTRY_GROUPS[i];
+      html += "<div style='margin-bottom:10px'>";
+      html += "<label for='" + cfg.inputId + "' style='display:block;font-size:11px;font-weight:600;color:var(--gray-700);margin-bottom:4px'>" + cfg.label + "</label>";
+      html += "<div style='display:flex;gap:6px;align-items:center'>";
+      html += "<input id='" + cfg.inputId + "' type='text' placeholder='" + cfg.placeholder + "' data-v2-custom-input='" + cfg.inputId + "' style='flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit'>";
+      html += "<button type='button' class='btn btn-ghost btn-xs' onclick=\"v2addCustomEntry('" + cfg.inputId + "')\">Add</button>";
+      html += "</div>";
+      html += "<div id='" + cfg.listId + "' class='chip-group' style='margin-top:6px;margin-bottom:0'></div>";
+      html += "</div>";
+    }
+    panel.innerHTML = html;
+
+    var anchor = document.getElementById("v2ChipGroups");
+    if (anchor && anchor.parentNode) {
+      anchor.parentNode.insertBefore(panel, anchor.nextSibling);
+    } else {
+      var content = document.getElementById("speedContent");
+      if (content) content.insertBefore(panel, content.firstChild);
+    }
+  }
+
+  for (var f = 0; f < V2_CUSTOM_ENTRY_GROUPS.length; f++) {
+    (function(cfg) {
+      var input = document.getElementById(cfg.inputId);
+      if (input && !input.getAttribute("data-v2-custom-bound")) {
+        input.setAttribute("data-v2-custom-bound", "true");
+        input.oninput = v2scanCustomPHI;
+        input.onkeydown = function(evt) {
+          if (evt.key === "Enter") {
+            evt.preventDefault();
+            v2addCustomEntry(cfg.inputId);
+          }
+        };
+      }
+    })(V2_CUSTOM_ENTRY_GROUPS[f]);
+  }
+
+  panel.style.display = window.CLINICNOTE_DATA_MODE === "v2" ? "block" : "none";
+  return panel;
+}
+
+function v2addCustomEntry(inputId) {
+  if (window.CLINICNOTE_DATA_MODE !== "v2") return;
+  var cfg = v2customGroupByInput(inputId);
+  var input = document.getElementById(inputId);
+  if (!cfg || !input) return;
+  var value = input.value.trim();
+  if (!value) return;
+
+  var list = document.getElementById(cfg.listId);
+  if (!list) return;
+
+  var b = document.createElement("button");
+  b.className = "chip selected" + (cfg.key === "red_flags" ? " chip-redflag" : "");
+  b.type = "button";
+  b.textContent = "custom: " + value;
+  b.title = "Click to deselect this custom entry";
+  b.setAttribute("data-name", value.toLowerCase());
+  b.setAttribute("data-value", value);
+  b.setAttribute("data-container", cfg.containerId);
+  b.setAttribute("data-v2-group", cfg.key);
+  b.setAttribute("data-v2-custom-entry", "true");
+  b.onclick = function() {
+    this.classList.toggle("selected");
+    updateSelectedCount();
+  };
+  list.appendChild(b);
+  input.value = "";
+  v2scanCustomPHI();
+  updateSelectedCount();
+}
+
+function v2scanCustomPHI() {
+  var found = false;
+  if (typeof detectPHI === "function") {
+    for (var i = 0; i < V2_CUSTOM_ENTRY_GROUPS.length; i++) {
+      var input = document.getElementById(V2_CUSTOM_ENTRY_GROUPS[i].inputId);
+      if (input && detectPHI(input.value || "")) found = true;
+    }
+    var entries = document.querySelectorAll("#v2CustomEntryPanel [data-v2-custom-entry]");
+    for (var e = 0; e < entries.length; e++) {
+      var val = entries[e].getAttribute("data-value") || entries[e].textContent || "";
+      if (detectPHI(val)) found = true;
+    }
+  }
+  var warning = document.getElementById("v2CustomPhiWarning");
+  if (warning) warning.classList.toggle("show", found);
+  var existingWarning = document.getElementById("phiWarning");
+  if (existingWarning && window.CLINICNOTE_DATA_MODE === "v2") existingWarning.classList.toggle("show", found);
+  return found;
+}
+
+function v2clearCustomEntries() {
+  var panel = document.getElementById("v2CustomEntryPanel");
+  if (!panel) return;
+  var entries = panel.querySelectorAll("[data-v2-custom-entry]");
+  for (var i = 0; i < entries.length; i++) {
+    if (entries[i].parentNode) entries[i].parentNode.removeChild(entries[i]);
+  }
+  var inputs = panel.querySelectorAll("[data-v2-custom-input]");
+  for (var j = 0; j < inputs.length; j++) inputs[j].value = "";
+  var warning = document.getElementById("v2CustomPhiWarning");
+  if (warning) warning.classList.remove("show");
 }
 
 function v2renderVisibleChipGroups(chips) {
@@ -489,14 +636,33 @@ function v2renderVisibleChipGroups(chips) {
     section.appendChild(groupEl);
     area.appendChild(section);
   }
+  v2ensureCustomEntryPanel();
+}
+
+function v2getSelectedChipItems(containerId) {
+  var area = document.getElementById("v2ChipGroups");
+  var selector = '.chip.selected[data-container="' + containerId + '"]';
+  var out = [];
+  if (area) {
+    var chips = area.querySelectorAll(selector);
+    for (var i = 0; i < chips.length; i++) {
+      out.push({ value: chips[i].getAttribute("data-value") || chips[i].textContent, custom: false });
+    }
+  }
+  var customPanel = document.getElementById("v2CustomEntryPanel");
+  if (customPanel) {
+    var custom = customPanel.querySelectorAll(selector + '[data-v2-custom-entry]');
+    for (var c = 0; c < custom.length; c++) {
+      out.push({ value: custom[c].getAttribute("data-value") || custom[c].textContent, custom: true });
+    }
+  }
+  return out;
 }
 
 function v2getSelectedChips(containerId) {
-  var area = document.getElementById("v2ChipGroups");
-  if (!area) return [];
-  var chips = area.querySelectorAll('.chip.selected[data-container="' + containerId + '"]');
+  var items = v2getSelectedChipItems(containerId);
   var out = [];
-  for (var i = 0; i < chips.length; i++) out.push(chips[i].textContent);
+  for (var i = 0; i < items.length; i++) out.push(items[i].value);
   return out;
 }
 
@@ -517,6 +683,8 @@ function v2getSelectedChips(containerId) {
       // Hide v2-only elements
       var invSec = document.getElementById("speedInvestigationsSection");
       if (invSec) invSec.style.display = "none";
+      var customPanel = document.getElementById("v2CustomEntryPanel");
+      if (customPanel) customPanel.style.display = "none";
       return;
     }
 
@@ -534,6 +702,7 @@ function v2getSelectedChips(containerId) {
     var v2Spec = resolved.specialty;
     var chips = resolved.chips;
 
+    v2clearCustomEntries();
     v2renderVisibleChipGroups(chips);
 
     v2fillChipsWithWarnings("speedSymptoms", "symptoms", chips);
@@ -608,7 +777,10 @@ function v2getSelectedChips(containerId) {
   for (var g = 0; g < groups.length; g++) {
     var names = [];
     if (document.getElementById("v2ChipGroups")) {
-      names = v2getSelectedChips(groups[g].id);
+      var items = v2getSelectedChipItems(groups[g].id);
+      for (var it = 0; it < items.length; it++) {
+        names.push((items[it].custom ? "custom: " : "") + items[it].value);
+      }
     } else {
       var container = document.getElementById(groups[g].id);
       if (!container) continue;
@@ -619,6 +791,7 @@ function v2getSelectedChips(containerId) {
     }
     if (names.length === 0) continue;
     total += names.length;
+    for (var n = 0; n < names.length; n++) names[n] = v2escapeHtml(names[n]);
     html += "<span><strong>" + groups[g].label + ":</strong> " + names.join(", ") + "</span>";
   }
   if (total === 0) {
@@ -643,6 +816,8 @@ function v2clearAllSelections() {
     var v2sel = area.querySelectorAll(".chip.selected");
     for (var k = 0; k < v2sel.length; k++) { v2sel[k].classList.remove("selected"); }
   }
+  v2clearCustomEntries();
+  v2scanCustomPHI();
   updateSelectedCount();
 }
 
