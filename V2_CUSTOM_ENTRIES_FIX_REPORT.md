@@ -103,4 +103,4 @@ Local test URL: `http://localhost:8000/?data=v1&v=custom-entries-final`
 
 ## Commit hash
 
-Pending commit.
+Fix commit: `d6bdd43`
