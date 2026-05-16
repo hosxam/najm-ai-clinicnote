@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<!-- Najm AI ClinicNote build main-report-final -->
-<!-- Najm AI ClinicNote Restored - Inline onclick + Redesign v2 -->
+<!-- Najm AI ClinicNote build premium-ui-final -->
+<!-- Najm AI ClinicNote Restored - Inline onclick + Premium UI v2 -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -148,6 +148,104 @@ footer .footer-links a{font-weight:500}
 @media(max-width:640px){.speed-mode-box{padding:18px;margin-bottom:18px}.chip{padding:5px 10px;font-size:10px}.chip-group{gap:4px}}
 @media(max-width:900px){.two-col{grid-template-columns:1fr}.steps-grid{grid-template-columns:repeat(2,1fr);gap:14px}.trust-grid{grid-template-columns:repeat(2,1fr);gap:14px}.hero h1{font-size:34px}.hero{padding:72px 16px 48px}.hero-stats{flex-wrap:wrap;gap:24px}.section{padding:48px 0}.page-header{padding:28px 0 20px}.output-card{position:static}}
 @media(max-width:640px){.nav-links{display:none;position:absolute;top:64px;left:0;right:0;background:rgba(255,255,255,0.98);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--gray-200);flex-direction:column;padding:8px 16px 16px;gap:4px;max-height:calc(100vh - 64px);overflow-y:auto}.nav-links.open{display:flex}.nav-links a{padding:10px 14px;width:100%;border-radius:8px}.nav-links a.nav-cta{text-align:center}.nav-toggle{display:block}.hero h1{font-size:28px}.hero p{font-size:14px}.hero{padding:56px 14px 36px}.card-grid{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr;gap:10px}.trust-grid{grid-template-columns:repeat(2,1fr);gap:10px}.container{padding:0 14px}.section-title{font-size:24px}.section-sub{font-size:13px}.output-body{min-height:220px;font-size:11px;padding:14px}.presets-card{padding:12px}.two-col{gap:20px}.safety-section{padding:20px}}
+
+/* === Premium healthtech UI refresh, visual-only === */
+:root{--primary:#0f766e;--primary-light:#128b85;--primary-dark:#0b4f4a;--primary-bg:#e8f5f4;--primary-glow:rgba(15,118,110,0.16);--bg:#f7f8fb;--white:#fff;--gray-50:#f8fafc;--gray-100:#eef2f6;--gray-200:#dde5ee;--gray-300:#c3ccd7;--gray-400:#7d8794;--gray-500:#5d6675;--gray-600:#445061;--gray-700:#253246;--gray-800:#172338;--gray-900:#102033;--amber:#b7791f;--amber-bg:#fff7e8;--amber-border:#f1c678;--red:#b42318;--red-bg:#fff1ef;--red-border:#f4a8a1;--green:#2f855a;--blue-bg:#eaf3ff;--warm-bg:#fbf7ef;--radius:8px;--radius-lg:12px;--radius-xl:14px;--shadow:0 1px 2px rgba(16,32,51,0.06),0 1px 3px rgba(16,32,51,0.08);--shadow-md:0 8px 22px rgba(16,32,51,0.08);--shadow-lg:0 18px 42px rgba(16,32,51,0.1);--shadow-xl:0 28px 70px rgba(16,32,51,0.11)}
+html,body{max-width:100%;overflow-x:hidden}
+body{background:var(--bg);color:var(--gray-800)}
+.safety-banner{background:#fff8ed;border-bottom:1px solid #efd39b;color:#6f4e16;font-size:12px;font-weight:600}
+nav{background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(195,204,215,0.75);box-shadow:0 10px 28px rgba(16,32,51,0.05)}
+.nav-inner{height:68px}
+.nav-logo{gap:10px;color:var(--gray-900);font-size:16px}
+.nav-logo .star{width:30px;height:30px;border-radius:9px;background:var(--primary-bg);color:transparent;font-size:0;display:inline-flex;align-items:center;justify-content:center;border:1px solid #c7e7e4}
+.nav-logo .star::after{content:"N";color:var(--primary-dark);font-size:14px;font-weight:800}
+.nav-logo .sub{color:var(--gray-500);font-size:12px}
+.nav-links{gap:4px}
+.nav-links a{color:var(--gray-600);border-radius:8px;padding:8px 12px;letter-spacing:0}
+.nav-links a:hover{background:var(--gray-50);color:var(--primary-dark)}
+.nav-links a.active{background:var(--primary-bg);color:var(--primary-dark)}
+.nav-cta{background:var(--gray-900)!important;color:#fff!important;box-shadow:0 8px 18px rgba(16,32,51,0.18)}
+.nav-cta:hover{background:var(--primary-dark)!important}
+.hero{padding:78px 20px 58px;background:#fff;border-bottom:1px solid var(--gray-200)}
+.hero::before{content:none}
+.hero h1{font-size:46px;letter-spacing:0;color:var(--gray-900);max-width:820px}
+.hero h1 span{color:var(--primary);background:none;-webkit-text-fill-color:currentColor}
+.hero p{max-width:720px;color:var(--gray-600);font-size:17px;margin-bottom:18px}
+.hero-microcopy{max-width:720px;margin:0 auto 30px;color:var(--gray-500);font-size:13px;font-weight:600}
+.hero-ctas{gap:12px}
+.hero-stats{gap:14px;margin-top:38px}
+.hero-stat{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:12px;padding:14px 22px;min-width:134px}
+.hero-stat .num{font-size:22px;color:var(--gray-900)}
+.hero-stat .lbl{font-size:11px;color:var(--gray-500);font-weight:600}
+.btn{border-radius:8px;letter-spacing:0;box-shadow:none}
+.btn-primary{background:var(--gray-900);color:#fff;box-shadow:0 10px 22px rgba(16,32,51,0.16)}
+.btn-primary:hover{background:var(--primary-dark);box-shadow:0 12px 26px rgba(15,118,110,0.18)}
+.btn-outline{background:#fff;color:var(--primary-dark);border:1px solid #9dd5d0}
+.btn-outline:hover{background:var(--primary-bg);border-color:var(--primary)}
+.btn-ghost{background:#fff;color:var(--gray-600);border:1px solid var(--gray-200)}
+.section{padding:58px 0}
+.section-title,.page-header h2,.content-page h2,.hero h1{letter-spacing:0}
+.section-title{font-size:28px;color:var(--gray-900)}
+.section-sub{color:var(--gray-600)}
+.trust-strip{background:var(--warm-bg);border-top:1px solid #efe4d2;border-bottom:1px solid #efe4d2;padding:28px 24px}
+.trust-item{background:rgba(255,255,255,0.72);border:1px solid rgba(226,213,193,0.9);border-radius:12px;padding:16px 12px;text-align:left}
+.trust-item .icon{width:32px;height:32px;border-radius:8px;background:#fff;color:var(--primary-dark);font-size:11px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gray-200);margin-bottom:10px}
+.trust-item .label{font-size:13px;color:var(--gray-900)}
+.trust-item .desc{font-size:11px;color:var(--gray-500)}
+.card,.step-card,.product-item,.presets-card,.safety-section,.why-faster{border-color:var(--gray-200);border-radius:12px;box-shadow:var(--shadow);cursor:default}
+.card:hover,.step-card:hover,.product-item:hover,.presets-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.card[onclick],.product-item button{cursor:pointer}
+.card-icon{width:42px;height:42px;border-radius:10px;background:var(--blue-bg);color:var(--gray-900);font-size:12px;font-weight:800;border:1px solid #d5e6fb}
+.step-num{background:var(--primary);box-shadow:0 8px 20px rgba(15,118,110,0.18)}
+.product-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:780px;margin:0 auto}
+.product-item{padding:24px;text-align:left}
+.product-item.launched{background:#fff;border-color:#bfe3e0}
+.product-item h4{font-size:18px}
+.badge-live{background:var(--primary-dark)}
+.badge-future{background:var(--gray-100);color:var(--gray-500)}
+.page-header{padding:34px 0 22px}
+.page-header h2{font-size:30px;color:var(--gray-900)}
+.status-bar{background:#fff;border:1px solid var(--gray-200);box-shadow:var(--shadow);color:var(--gray-600)}
+.status-dot{background:var(--green)}
+.speed-mode-box{background:#fff;border:1px solid #cfe0e7;border-radius:14px;padding:26px;box-shadow:var(--shadow-lg)}
+.speed-mode-box::before{content:"OPD NOTE BUILDER";background:var(--gray-900);color:#fff;border-radius:999px;letter-spacing:0;font-size:9px;top:-11px}
+#v2SearchArea>div{background:#fff!important;border:1px solid #bfe3e0!important;border-radius:14px!important;padding:18px!important;box-shadow:var(--shadow-md)!important}
+#v2WorkflowSearchInput{border:1px solid var(--gray-300)!important;border-radius:9px!important;background:var(--gray-50)!important;color:var(--gray-900)!important}
+#v2WorkflowSearchInput:focus{outline:none!important;border-color:var(--primary)!important;box-shadow:0 0 0 3px var(--primary-glow)!important;background:#fff!important}
+#v2SearchResults{border-color:var(--gray-200)!important;box-shadow:var(--shadow-lg)!important}
+.form-group label,.speed-section-title{color:var(--gray-800);letter-spacing:0}
+.form-group select,.form-group input,.form-group textarea,.speed-section input,.speed-section textarea{border-color:var(--gray-300)!important;border-radius:8px!important;background:#fff;color:var(--gray-900)}
+.form-group select:focus,.form-group input:focus,.form-group textarea:focus,.speed-section input:focus,.speed-section textarea:focus{outline:none;border-color:var(--primary)!important;box-shadow:0 0 0 3px var(--primary-glow)!important}
+.note-phi-warn,.amber-box{background:var(--amber-bg);border-color:var(--amber-border);color:#704f18;border-radius:10px}
+.phi-warning{background:var(--red-bg);border-color:var(--red-border);color:var(--red);border-radius:10px}
+.prompts-box{background:var(--blue-bg);border-color:#bed8f5;border-radius:12px}
+#v2HistoryContent{background:#fff!important;border-color:var(--gray-200)!important;border-radius:10px!important}
+#v2ChipGroups{margin:16px 0 20px}
+#v2ChipGroups .speed-section{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:16px;margin-bottom:14px!important;box-shadow:var(--shadow)}
+#v2ChipGroups .speed-section-title{font-size:13px;font-weight:800;color:var(--gray-900);margin-bottom:10px}
+.chip{border:1px solid var(--gray-300);background:#fff;color:var(--gray-700);padding:7px 12px;font-size:11px;min-height:32px}
+.chip:hover{background:var(--primary-bg);border-color:#8ecfc9;color:var(--primary-dark)}
+.chip.selected{background:var(--primary-dark);border-color:var(--primary-dark);color:#fff;box-shadow:0 6px 16px rgba(15,118,110,0.18)}
+.chip-redflag{background:var(--red-bg);border-color:var(--red-border);color:var(--red)}
+#v2ChipGroups [data-v2-custom-row]{border-top:1px solid var(--gray-200)!important;background:var(--gray-50);border-radius:10px;margin-top:12px!important;padding:10px!important}
+#v2ChipGroups [data-v2-custom-row] label{font-size:10px!important;color:var(--gray-600)!important;font-weight:700!important}
+#v2ChipGroups [data-v2-custom-input]{border:1px solid var(--gray-300)!important;border-radius:8px!important;background:#fff!important;min-height:32px}
+#v2CustomSafetyNote{background:var(--amber-bg)!important;border-color:var(--amber-border)!important;color:#704f18!important;border-radius:10px!important}
+#speedSummary{background:#f0fdfa;border:1px solid #bce3d8;border-radius:12px;padding:13px 14px;color:var(--gray-700);align-items:center}
+#speedSummary::before{content:"Your note ingredients";flex:0 0 100%;font-size:12px;font-weight:800;color:var(--gray-900);margin-bottom:2px}
+#v2LoadedChipCount{font-weight:700;color:var(--primary-dark)!important}
+.output-card{border-color:var(--gray-200);border-radius:12px;box-shadow:var(--shadow-lg);overflow:hidden}
+.output-header,.output-actions,.output-footer{background:#fff;border-color:var(--gray-200)}
+.output-tab{border:1px solid transparent;color:var(--gray-600);border-radius:8px}
+.output-tab:hover{background:var(--gray-50);border-color:var(--gray-200)}
+.output-tab.active{background:var(--gray-900);color:#fff;border-color:var(--gray-900)}
+.output-body{background:#fbfdff;color:var(--gray-800);border-top:1px solid var(--gray-200);border-bottom:1px solid var(--gray-200);font-size:12px}
+.output-body .placeholder{color:var(--gray-500)}
+#page-report .two-col>div:first-child,#page-opd .input-col,#page-referral .two-col>div:first-child,#page-instructions .two-col>div:first-child{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:20px;box-shadow:var(--shadow)}
+footer{background:var(--gray-900);color:#b7c0cc}
+footer a{color:#d9e4f2}
+@media(max-width:900px){.product-row{grid-template-columns:1fr}.hero h1{font-size:36px}.hero{padding:58px 16px 42px}.speed-mode-box{padding:20px}.trust-item{text-align:center}.two-col{grid-template-columns:1fr}.output-card{position:static}}
+@media(max-width:640px){.nav-inner{height:64px;padding:0 14px}.nav-links{top:64px}.nav-logo .sub{display:none}.hero h1{font-size:30px}.hero p{font-size:14px}.hero-microcopy{font-size:12px}.hero-ctas .btn,.gen-row .btn{width:100%;justify-content:center}.hero-stat{min-width:0;flex:1;padding:12px 8px}.trust-grid{grid-template-columns:1fr}.product-item{text-align:left}.speed-mode-box{padding:18px 14px}.chip{font-size:11px;min-height:34px;padding:8px 11px}.chip-group{gap:6px}.output-header{overflow-x:auto;flex-wrap:nowrap}.output-tab{white-space:nowrap;flex:0 0 auto}#v2ChipGroups .speed-section{padding:14px}#v2ChipGroups [data-v2-custom-row]>div{flex-direction:column!important;align-items:stretch!important}#v2ChipGroups [data-v2-custom-row] .btn{width:100%;justify-content:center}.form-group select,.form-group input,.form-group textarea{font-size:16px}.output-actions .btn{flex:1;justify-content:center}.page-header h2{font-size:26px}.two-col,.two-col>div,.speed-mode-box,#v2SearchArea,#v2SearchArea>div,#v2ChipGroups,#v2ChipGroups .speed-section,.output-card{min-width:0;max-width:100%;overflow-wrap:anywhere}.note-phi-warn,.phi-warning,.prompts-box,#v2CustomSafetyNote,.amber-box,.output-body,.speed-tip{overflow-wrap:anywhere;word-break:normal}.form-group select,.form-group input,.form-group textarea,.speed-section input,.speed-section textarea{max-width:100%;min-width:0}.status-bar{max-width:100%}}
 </style>
 </head>
 <body><div class="safety-banner">Do not enter patient names, IDs, or contact information. ClinicNote by Najm AI does not store or transmit any data.</div>
@@ -159,15 +257,11 @@ footer .footer-links a{font-weight:500}
 <button class="nav-toggle" id="navToggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
 <div class="nav-links" id="navLinks">
 <a data-page="home" onclick="showPage('home')">Home</a>
-<a data-page="speed" onclick="showPage('speed')">Speed Mode</a>
-<a data-page="opd" onclick="showPage('opd')">OPD Builder</a>
-<a data-page="referral" onclick="showPage('referral')">Referral</a>
-<a data-page="instructions" onclick="showPage('instructions')">Instructions</a>
+<a data-page="speed" onclick="showPage('speed')">OPD Note Builder</a>
 <a id="reportNavLink" data-page="report" onclick="showPage('report')">Medical Report Draft</a>
-<a data-page="presets" onclick="showPage('presets')">Presets</a>
-<a data-page="about" onclick="showPage('about')">About</a>
 <a data-page="safety" onclick="showPage('safety')">Safety</a>
-<a class="nav-cta" onclick="showPage('speed')">Speed Mode</a>
+<a data-page="about" onclick="showPage('about')">About</a>
+<a class="nav-cta" onclick="showPage('speed')">Try OPD Note Builder</a>
 </div>
 </div>
 </nav>
@@ -175,23 +269,24 @@ footer .footer-links a{font-weight:500}
 <div id="page-home" class="page active">
 <section class="hero">
 <h1>OPD notes, structured <span>in seconds.</span></h1>
-<p>Turn your de-identified clinical notes into structured SOAP notes, short EMR entries, referral letters, and patient instructions. No AI scribes, no audio, no PHI.</p>
+<p>Najm AI ClinicNote helps doctors turn de-identified clinical information into structured OPD notes, referrals, patient instructions, and report drafts.</p>
+<div class="hero-microcopy">No patient identifiers. No audio recording. No storage. Clinician review required.</div>
 <div class="hero-ctas">
-<button class="btn btn-primary" onclick="showPage('speed')">Try ClinicNote</button>
-<button class="btn btn-outline" onclick="showPage('presets')">View Specialty Presets</button>
+<button class="btn btn-primary" onclick="showPage('speed')">Try OPD Note Builder</button>
+<button class="btn btn-outline" onclick="showPage('report')">Open Medical Report Draft</button>
 </div>
 <div class="hero-stats">
-<div class="hero-stat"><div class="num">7</div><div class="lbl">Specialties</div></div>
-<div class="hero-stat"><div class="num">10</div><div class="lbl">Speed Types</div></div>
+<div class="hero-stat"><div class="num">80</div><div class="lbl">OPD Workflows</div></div>
+<div class="hero-stat"><div class="num">7+</div><div class="lbl">Specialties</div></div>
 <div class="hero-stat"><div class="num">5</div><div class="lbl">Output Formats</div></div>
 </div>
 </section>
 <div class="trust-strip">
 <div class="trust-grid">
-<div class="trust-item"><span class="icon">&#x1f468;&#x200d;&#x2695;&#xfe0f;</span><span class="label">Doctor-controlled</span><span class="desc">You enter your own notes</span></div>
-<div class="trust-item"><span class="icon">&#x1f512;</span><span class="label">No data storage</span><span class="desc">Everything stays on device</span></div>
-<div class="trust-item"><span class="icon">&#x1f4cb;</span><span class="label">Copy-ready outputs</span><span class="desc">One click to your EMR</span></div>
-<div class="trust-item"><span class="icon">&#x1f3e5;</span><span class="label">OPD workflow</span><span class="desc">Specialty-specific templates</span></div>
+<div class="trust-item"><span class="icon">MD</span><span class="label">Doctor-controlled</span><span class="desc">Clinician-entered details only</span></div>
+<div class="trust-item"><span class="icon">0</span><span class="label">No patient data storage</span><span class="desc">Everything stays in the browser</span></div>
+<div class="trust-item"><span class="icon">80</span><span class="label">Searchable OPD workflows</span><span class="desc">Fast access by complaint or diagnosis</span></div>
+<div class="trust-item"><span class="icon">OK</span><span class="label">Clinician review required</span><span class="desc">Drafts are reviewed before use</span></div>
 </div>
 </div>
 <section class="section">
@@ -208,22 +303,20 @@ footer .footer-links a{font-weight:500}
 <h2 class="section-title">Specialty Presets</h2>
 <p class="section-sub">Choose a specialty to see its predefined Speed Types and prompts</p>
 <div class="card-grid" id="homePresets">
-<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='gen';upVT();upP();},100)"><div class="card-icon">&#x1f0a1;</div><h3>General Medicine / GP</h3><p>Fever, cough, headaches, abdominal pain, diabetes and hypertension follow-ups, fatigue, general consultations.</p></div>
-<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='ortho';upVT();upP();},100)"><div class="card-icon">&#x1f9b4;</div><h3>Orthopedics / MSK</h3><p>Knee and low back pain, shoulder and neck pain, fracture and post-op follow-ups.</p></div>
-<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='peds';upVT();upP();},100)"><div class="card-icon">&#x1f476;</div><h3>Pediatrics</h3><p>Fever, cough/cold, vomiting/diarrhea, rash, poor feeding, and pediatric follow-ups.</p></div>
-<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='ent';upVT();upP();},100)"><div class="card-icon">&#x1f442;</div><h3>ENT</h3><p>Sore throat, ear pain, nasal congestion, dizziness, hearing complaints.</p></div>
-<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='derm';upVT();upP();},100)"><div class="card-icon">&#x1f9f4;</div><h3>Dermatology</h3><p>Rash, acne, eczema, fungal infections, wound reviews.</p></div>
-<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='obgyn';upVT();upP();},100)"><div class="card-icon">&#x1f469;</div><h3>OB/GYN</h3><p>Antenatal follow-ups, irregular bleeding, pelvic pain, discharge, contraception counseling.</p></div>
+<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='gen';upVT();upP();},100)"><div class="card-icon">GP</div><h3>General Medicine / GP</h3><p>Fever, cough, headaches, abdominal pain, diabetes and hypertension follow-ups, fatigue, general consultations.</p></div>
+<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='ortho';upVT();upP();},100)"><div class="card-icon">MSK</div><h3>Orthopedics / MSK</h3><p>Knee and low back pain, shoulder and neck pain, fracture and post-op follow-ups.</p></div>
+<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='peds';upVT();upP();},100)"><div class="card-icon">PED</div><h3>Pediatrics</h3><p>Fever, cough/cold, vomiting/diarrhea, rash, poor feeding, and pediatric follow-ups.</p></div>
+<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='ent';upVT();upP();},100)"><div class="card-icon">ENT</div><h3>ENT</h3><p>Sore throat, ear pain, nasal congestion, dizziness, hearing complaints.</p></div>
+<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='derm';upVT();upP();},100)"><div class="card-icon">DERM</div><h3>Dermatology</h3><p>Rash, acne, eczema, fungal infections, wound reviews.</p></div>
+<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='obgyn';upVT();upP();},100)"><div class="card-icon">OB</div><h3>OB/GYN</h3><p>Antenatal follow-ups, irregular bleeding, pelvic pain, discharge, contraception counseling.</p></div>
 </div>
 </section>
 <section class="section">
-<h2 class="section-title">Najm AI Product Family</h2>
-<p class="section-sub">Building tools that help clinicians work smarter</p>
+<h2 class="section-title">ClinicNote Tools</h2>
+<p class="section-sub">Two focused workspaces for de-identified clinical documentation.</p>
 <div class="product-row">
-<div class="product-item launched"><h4>ClinicNote</h4><p>Structured OPD documentation assistant</p><span class="badge badge-live">Launched</span></div>
-<div class="product-item launched"><h4>Medical Report Draft</h4><p>Turn de-identified clinician notes into a structured report draft for review.</p><button class="btn btn-outline btn-xs" onclick="showPage('report')" style="margin-top:8px">Open Report Draft</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified notes only. Clinician review required.</p></div>
-<div class="product-item"><h4>Scribe</h4><p>AI-powered clinical scribe (coming soon)</p><span class="badge badge-future">Future</span></div>
-<div class="product-item"><h4>ClinicTools</h4><p>Practice management and workflow tools</p><span class="badge badge-future">Future</span></div>
+<div class="product-item launched"><h4>OPD Note Builder</h4><p>Search workflows, select dataset-backed findings, add custom details, and generate copy-ready OPD drafts.</p><button class="btn btn-primary btn-xs" onclick="showPage('speed')" style="margin-top:10px">Try OPD Note Builder</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified details only. Clinician review required.</p></div>
+<div class="product-item launched"><h4>Medical Report Draft</h4><p>Turn de-identified clinician notes into a structured report draft for review.</p><button class="btn btn-outline btn-xs" onclick="showPage('report')" style="margin-top:10px">Open Report Draft</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified notes only. Clinician review required.</p></div>
 </div>
 </section>
 </div><div id="page-speed" class="page">
@@ -539,7 +632,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <div class="page-header">
 <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
 <div><h2>Medical Report Draft</h2><p>Structure clinician-provided de-identified information into a draft for review.</p></div>
-<div class="status-bar"><span class="status-dot"></span><span>Feature flag: report=v1</span></div>
+<div class="status-bar"><span class="status-dot"></span><span>Clinician review required.</span></div>
 </div>
 </div>
 <div class="two-col">
@@ -651,18 +744,18 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <a onclick="showPage('safety')">Safety</a>
 <a onclick="showPage('about')">About</a>
 </div>
-&copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.6">Version negative-fix | Data: <span id="dbgDataMode">-</span> |
+&copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.6">Version premium-ui-final | Data: <span id="dbgDataMode">-</span> |
   <span id="debugLibrary" style="font-size:11px;color:var(--gray-400)">Library: <span id="dbgLibStatus">checking...</span> | Types: <span id="dbgTypeCount">-</span> | JS: <span id="dbgJsReady">-</span></span>
   <script>
   (function(){var dbg=document.getElementById("debugLibrary");if(!dbg)return;function upd(){var dm=document.getElementById("dbgDataMode");if(window.CLINICNOTE_DATA_MODE){dm.textContent=window.CLINICNOTE_DATA_MODE==="v1"?"v1 fallback":"v2";dm.style.color=window.CLINICNOTE_DATA_MODE==="v2"?"#f59e0b":"#22c55e";dm.style.fontWeight="bold"}var s=document.getElementById("dbgLibStatus");var t=document.getElementById("dbgTypeCount");var j=document.getElementById("dbgJsReady");var lib=window.ACTIVE_VISIT_LIBRARY||VISIT_LIBRARY;if(lib){s.textContent="yes";s.style.color="#22c55e";var total=0;for(var k in lib)total+=Object.keys(lib[k]).length;t.textContent=total;t.style.color="#22c55e"}else{s.textContent="no";s.style.color="#ef4444"}if(typeof showPage!=='undefined'){j.textContent="yes";j.style.color="#22c55e"}else{j.textContent="no";j.style.color="#ef4444"}}setTimeout(upd,500);setTimeout(upd,3000);setTimeout(upd,5000)})();
-  </script> | Build: main-report-final | 2026-05-14</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
+  </script> | Build: premium-ui-final | 2026-05-16</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
 </footer><script src="./SPEED_LIBRARY_DATA.js"></script>
 <script src="./GENERATED_CLINICAL_DATA.js"></script>
 <script>
 // ---- Feature Flag: MUST be set before v2_workflow_ui.js loads ----
 window.CLINICNOTE_DATA_MODE = (new URLSearchParams(window.location.search).get("data") === "v1") ? "v1" : "v2";
 </script>
-<script src="./v2_workflow_ui_2.js?v=inline-custom-final"></script>
+<script src="./v2_workflow_ui_2.js?v=premium-ui-final"></script>
 <script>
 
 // ---- Adapter: build old-compatible VISIT_LIBRARY from NAJM_CLINICAL_DATA ----
