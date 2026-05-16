@@ -933,6 +933,7 @@ Reminder: Do not include patient information.</textarea>
 // ---- Feature Flag: MUST be set before v2_workflow_ui.js loads ----
 window.CLINICNOTE_DATA_MODE = (new URLSearchParams(window.location.search).get("data") === "v1") ? "v1" : "v2";
 </script>
+<script src="./analytics-safe.js?v=privacy-dry-run"></script>
 <script src="./v2_workflow_ui_2.js?v=seo-foundation-final"></script>
 <script>
 
@@ -1433,6 +1434,149 @@ window.generateAllOutputs = generateAllOutputs;
 window.clearSpeed = clearSpeed;
 window.populateSpeedSpecialty = populateSpeedSpecialty;
 window.buildPresets = buildPresets;
+
+(function(){
+  function trackSafe(eventName, properties){
+    if(window.ClinicNoteAnalytics && typeof window.ClinicNoteAnalytics.trackSafeEvent === "function"){
+      window.ClinicNoteAnalytics.trackSafeEvent(eventName, properties || {});
+    }
+  }
+  function analyticsDataMode(){
+    return window.CLINICNOTE_DATA_MODE || "unknown";
+  }
+  function analyticsPagePath(){
+    return window.location ? window.location.pathname : "/";
+  }
+  function analyticsWorkflowSpecialtyId(workflowId){
+    var data = window.NAJM_CLINICAL_DATA || {};
+    var specs = data.specialties || [];
+    for(var si=0;si<specs.length;si++){
+      var spec = specs[si];
+      var wfs = spec.workflows || [];
+      for(var wi=0;wi<wfs.length;wi++){
+        if(wfs[wi].workflow_id === workflowId){
+          return spec.specialty_id || spec.display_name || "";
+        }
+      }
+    }
+    return currentSpecialty || "";
+  }
+  var originalShowPage = showPage;
+  showPage = function(pageId){
+    var result = originalShowPage.apply(this, arguments);
+    trackSafe("page_view",{page_path:analyticsPagePath(),page_type:pageId,data_mode:analyticsDataMode()});
+    if(pageId === "speed"){
+      trackSafe("tool_started",{tool_name:"opd_speed_mode",data_mode:analyticsDataMode()});
+    } else if(pageId === "report"){
+      trackSafe("report_module_opened",{tool_name:"medical_report_draft",data_mode:analyticsDataMode()});
+    } else if(pageId === "feedback"){
+      trackSafe("feedback_clicked",{source_page:"main_site",cta_location:"page_navigation"});
+    }
+    return result;
+  };
+  window.showPage = showPage;
+
+  var originalGenerateAllOutputs = generateAllOutputs;
+  generateAllOutputs = function(){
+    var result = originalGenerateAllOutputs.apply(this, arguments);
+    if(window._speedOutputs){
+      var workflowId = "";
+      var visitData = (currentSpecialty && currentVisitType && window.ACTIVE_VISIT_LIBRARY && window.ACTIVE_VISIT_LIBRARY[currentSpecialty]) ? window.ACTIVE_VISIT_LIBRARY[currentSpecialty][currentVisitType] : null;
+      if(visitData && visitData._v2meta) workflowId = visitData._v2meta.workflow_id || "";
+      trackSafe("output_generated",{tool_name:"opd_speed_mode",specialty_id:currentSpecialty || "",workflow_id:workflowId,output_type:window._activeSpeedTab || "emr",data_mode:analyticsDataMode()});
+    }
+    return result;
+  };
+  window.generateAllOutputs = generateAllOutputs;
+
+  var originalCopySpeedOutput = copySpeedOutput;
+  copySpeedOutput = function(){
+    var result = originalCopySpeedOutput.apply(this, arguments);
+    trackSafe("output_copied",{tool_name:"opd_speed_mode",output_type:window._activeSpeedTab || "emr",data_mode:analyticsDataMode()});
+    return result;
+  };
+  window.copySpeedOutput = copySpeedOutput;
+
+  var originalClearAllSelections = clearAllSelections;
+  clearAllSelections = function(){
+    var result = originalClearAllSelections.apply(this, arguments);
+    trackSafe("clear_all_clicked",{tool_name:"opd_speed_mode",data_mode:analyticsDataMode()});
+    return result;
+  };
+  window.clearAllSelections = clearAllSelections;
+
+  var originalCheckPHI = checkPHI;
+  checkPHI = function(){
+    var result = originalCheckPHI.apply(this, arguments);
+    var warning = document.getElementById("phiWarning");
+    if(warning && warning.classList.contains("show")){
+      trackSafe("phi_warning_triggered",{tool_name:"opd_note_builder",phi_warning_shown:true});
+    }
+    return result;
+  };
+  window.checkPHI = checkPHI;
+
+  var originalCheckReportPHI = checkReportPHI;
+  checkReportPHI = function(){
+    var found = originalCheckReportPHI.apply(this, arguments);
+    if(found){
+      trackSafe("report_phi_warning_triggered",{tool_name:"medical_report_draft",phi_warning_shown:true});
+    }
+    return found;
+  };
+  window.checkReportPHI = checkReportPHI;
+
+  var originalGenerateMedicalReportDraft = generateMedicalReportDraft;
+  generateMedicalReportDraft = function(){
+    var result = originalGenerateMedicalReportDraft.apply(this, arguments);
+    var config = getMedicalReportTypeConfig();
+    trackSafe("report_draft_generated",{tool_name:"medical_report_draft",report_type:(config && config.id) || ""});
+    return result;
+  };
+  window.generateMedicalReportDraft = generateMedicalReportDraft;
+
+  var originalCopyMedicalReport = copyMedicalReport;
+  copyMedicalReport = function(){
+    var result = originalCopyMedicalReport.apply(this, arguments);
+    trackSafe("report_copied",{tool_name:"medical_report_draft"});
+    return result;
+  };
+  window.copyMedicalReport = copyMedicalReport;
+
+  var originalClearMedicalReport = clearMedicalReport;
+  clearMedicalReport = function(){
+    var result = originalClearMedicalReport.apply(this, arguments);
+    trackSafe("report_cleared",{tool_name:"medical_report_draft"});
+    return result;
+  };
+  window.clearMedicalReport = clearMedicalReport;
+
+  if(typeof window.v2selectWorkflow === "function"){
+    var originalV2SelectWorkflow = window.v2selectWorkflow;
+    window.v2selectWorkflow = function(workflowId){
+      var result = originalV2SelectWorkflow.apply(this, arguments);
+      trackSafe("workflow_selected",{workflow_id:workflowId || "",specialty_id:analyticsWorkflowSpecialtyId(workflowId),data_mode:analyticsDataMode()});
+      return result;
+    };
+  }
+
+  document.addEventListener("click",function(event){
+    var target = event.target;
+    var button = target && target.closest ? target.closest("button") : null;
+    if(!button) return;
+    var action = button.getAttribute("onclick") || "";
+    if(action.indexOf("generateAllOutputs") >= 0){
+      setTimeout(function(){
+        if(window._speedOutputs){
+          var workflowId = "";
+          var visitData = (currentSpecialty && currentVisitType && window.ACTIVE_VISIT_LIBRARY && window.ACTIVE_VISIT_LIBRARY[currentSpecialty]) ? window.ACTIVE_VISIT_LIBRARY[currentSpecialty][currentVisitType] : null;
+          if(visitData && visitData._v2meta) workflowId = visitData._v2meta.workflow_id || "";
+          trackSafe("output_generated",{tool_name:"opd_speed_mode",specialty_id:currentSpecialty || "",workflow_id:workflowId,output_type:window._activeSpeedTab || "emr",data_mode:analyticsDataMode()});
+        }
+      },0);
+    }
+  });
+})();
 
 document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();showPage(isReportModuleEnabled()?'report':'home');buildPresets();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
 
