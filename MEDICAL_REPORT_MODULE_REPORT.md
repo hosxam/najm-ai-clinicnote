@@ -120,4 +120,4 @@ Yes. Ready behind `?report=v1`.
 
 ## Commit hash
 
-Pending commit.
+Feature commit: `fe90fb9`
