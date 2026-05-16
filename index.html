@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<!-- Najm AI ClinicNote build report-module-final -->
+<!-- Najm AI ClinicNote build main-report-final -->
 <!-- Najm AI ClinicNote Restored - Inline onclick + Redesign v2 -->
 <head>
 <meta charset="UTF-8">
@@ -163,7 +163,7 @@ footer .footer-links a{font-weight:500}
 <a data-page="opd" onclick="showPage('opd')">OPD Builder</a>
 <a data-page="referral" onclick="showPage('referral')">Referral</a>
 <a data-page="instructions" onclick="showPage('instructions')">Instructions</a>
-<a id="reportNavLink" data-page="report" onclick="showPage('report')" style="display:none">Medical Report</a>
+<a id="reportNavLink" data-page="report" onclick="showPage('report')">Medical Report Draft</a>
 <a data-page="presets" onclick="showPage('presets')">Presets</a>
 <a data-page="about" onclick="showPage('about')">About</a>
 <a data-page="safety" onclick="showPage('safety')">Safety</a>
@@ -221,6 +221,7 @@ footer .footer-links a{font-weight:500}
 <p class="section-sub">Building tools that help clinicians work smarter</p>
 <div class="product-row">
 <div class="product-item launched"><h4>ClinicNote</h4><p>Structured OPD documentation assistant</p><span class="badge badge-live">Launched</span></div>
+<div class="product-item launched"><h4>Medical Report Draft</h4><p>Turn de-identified clinician notes into a structured report draft for review.</p><button class="btn btn-outline btn-xs" onclick="showPage('report')" style="margin-top:8px">Open Report Draft</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified notes only. Clinician review required.</p></div>
 <div class="product-item"><h4>Scribe</h4><p>AI-powered clinical scribe (coming soon)</p><span class="badge badge-future">Future</span></div>
 <div class="product-item"><h4>ClinicTools</h4><p>Practice management and workflow tools</p><span class="badge badge-future">Future</span></div>
 </div>
@@ -534,7 +535,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 </div>
 </div>
 </div>
-<div id="page-report" class="page" style="display:none">
+<div id="page-report" class="page">
 <div class="page-header">
 <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
 <div><h2>Medical Report Draft</h2><p>Structure clinician-provided de-identified information into a draft for review.</p></div>
@@ -654,7 +655,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
   <span id="debugLibrary" style="font-size:11px;color:var(--gray-400)">Library: <span id="dbgLibStatus">checking...</span> | Types: <span id="dbgTypeCount">-</span> | JS: <span id="dbgJsReady">-</span></span>
   <script>
   (function(){var dbg=document.getElementById("debugLibrary");if(!dbg)return;function upd(){var dm=document.getElementById("dbgDataMode");if(window.CLINICNOTE_DATA_MODE){dm.textContent=window.CLINICNOTE_DATA_MODE==="v1"?"v1 fallback":"v2";dm.style.color=window.CLINICNOTE_DATA_MODE==="v2"?"#f59e0b":"#22c55e";dm.style.fontWeight="bold"}var s=document.getElementById("dbgLibStatus");var t=document.getElementById("dbgTypeCount");var j=document.getElementById("dbgJsReady");var lib=window.ACTIVE_VISIT_LIBRARY||VISIT_LIBRARY;if(lib){s.textContent="yes";s.style.color="#22c55e";var total=0;for(var k in lib)total+=Object.keys(lib[k]).length;t.textContent=total;t.style.color="#22c55e"}else{s.textContent="no";s.style.color="#ef4444"}if(typeof showPage!=='undefined'){j.textContent="yes";j.style.color="#22c55e"}else{j.textContent="no";j.style.color="#ef4444"}}setTimeout(upd,500);setTimeout(upd,3000);setTimeout(upd,5000)})();
-  </script> | Build: report-module-final | 2026-05-14</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
+  </script> | Build: main-report-final | 2026-05-14</span> ClinicNote is an educational documentation assistance tool. Not a medical device.
 </footer><script src="./SPEED_LIBRARY_DATA.js"></script>
 <script src="./GENERATED_CLINICAL_DATA.js"></script>
 <script>
@@ -750,7 +751,7 @@ var SD=(function(){
   }
   return sd;
 })();
-function showPage(pageId){if(pageId==="report"&&!isReportModuleEnabled()){pageId="speed"}var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open");if(pageId==="speed"){populateSpeedSpecialty()}if(pageId==="report"){initMedicalReportModule()}}
+function showPage(pageId){var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open");if(pageId==="speed"){populateSpeedSpecialty()}if(pageId==="report"){initMedicalReportModule()}}
 function upVT(){var spec=document.getElementById("specialty").value;var vt=document.getElementById("visitType");vt.innerHTML="";var types=SD[spec].types;var keys=Object.keys(types);vt.innerHTML="<option value=\"\">Select a visit type</option>";for(var i=0;i<keys.length;i++){var opt=document.createElement("option");opt.value=keys[i];opt.textContent=keys[i];vt.appendChild(opt)}upP()}
 function upP(){var spec=document.getElementById("specialty").value;var vt=document.getElementById("visitType").value;var c=document.getElementById("promptsContainer");var l=document.getElementById("promptsList");if(!vt||!SD[spec].types[vt]){c.style.display="none";return}c.style.display="block";l.innerHTML="";var p=SD[spec].types[vt];for(var i=0;i<p.length;i++){var li=document.createElement("li");li.textContent=p[i];l.appendChild(li)}}
 function val(id){var el=document.getElementById(id);if(!el)return"[not documented]";var v=el.value.trim();return v||"[not documented]"}
@@ -767,7 +768,7 @@ var MEDICAL_REPORT_TYPES=[
   {id:"procedure",label:"Procedure summary draft",templateId:"discharge-general"},
   {id:"followup",label:"Follow-up progress report draft",templateId:"soap-general"}
 ];
-function initMedicalReportModule(){var enabled=isReportModuleEnabled();var page=document.getElementById("page-report");var nav=document.getElementById("reportNavLink");if(page)page.style.display=enabled?"":"none";if(nav)nav.style.display=enabled?"":"none";if(!enabled)return;var sel=document.getElementById("medicalReportType");if(sel&&sel.options.length===0){for(var i=0;i<MEDICAL_REPORT_TYPES.length;i++){var opt=document.createElement("option");opt.value=MEDICAL_REPORT_TYPES[i].id;opt.textContent=MEDICAL_REPORT_TYPES[i].label;sel.appendChild(opt)}}}
+function initMedicalReportModule(){var sel=document.getElementById("medicalReportType");if(sel&&sel.options.length===0){for(var i=0;i<MEDICAL_REPORT_TYPES.length;i++){var opt=document.createElement("option");opt.value=MEDICAL_REPORT_TYPES[i].id;opt.textContent=MEDICAL_REPORT_TYPES[i].label;sel.appendChild(opt)}}}
 function getMedicalReportTypeConfig(){var sel=document.getElementById("medicalReportType");var id=sel?sel.value:"general";for(var i=0;i<MEDICAL_REPORT_TYPES.length;i++){if(MEDICAL_REPORT_TYPES[i].id===id)return MEDICAL_REPORT_TYPES[i]}return MEDICAL_REPORT_TYPES[0]}
 function getMedicalReportTemplate(templateId){var data=window.NAJM_CLINICAL_DATA||{};var templates=data.reportTemplates||{};if(Array.isArray(templates)){for(var i=0;i<templates.length;i++){if(templates[i].template_id===templateId)return templates[i]}}return templates[templateId]||null}
 function reportVal(id){var el=document.getElementById(id);if(!el)return"";return el.value.trim()}
