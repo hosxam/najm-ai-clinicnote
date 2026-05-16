@@ -396,9 +396,19 @@ var v2SpeedPresetLoadPromise = null;
 
 function v2isSpeedPresetMode() {
   if (window.CLINICNOTE_DATA_MODE !== "v2") return false;
+  if (typeof window.isSpeedPresetModeEnabled === "function") return window.isSpeedPresetModeEnabled();
   if (window.CLINICNOTE_SPEED_MODE === true) return true;
   try {
-    return new URLSearchParams(window.location.search).get("speed") === "v1";
+    return new URLSearchParams(window.location.search).get("speed") !== "off";
+  } catch (e) {
+    return true;
+  }
+}
+
+function v2isSpeedPresetOffFallback() {
+  if (window.CLINICNOTE_DATA_MODE !== "v2") return false;
+  try {
+    return new URLSearchParams(window.location.search).get("speed") === "off";
   } catch (e) {
     return false;
   }
@@ -412,10 +422,17 @@ function v2ensureSpeedPresetModeMarker() {
     marker = document.createElement("div");
     marker.id = "v2SpeedPresetModeMarker";
     marker.style.cssText = "display:none;margin-top:10px;font-size:12px;font-weight:800;color:#075985;background:#e0f2fe;border:1px solid #bae6fd;border-radius:999px;padding:7px 11px;width:max-content;max-width:100%";
-    marker.textContent = "Speed presets: ON";
     header.appendChild(marker);
   }
-  marker.style.display = v2isSpeedPresetMode() ? "inline-flex" : "none";
+  if (v2isSpeedPresetMode()) {
+    marker.textContent = "Speed presets: ON";
+    marker.style.cssText = "display:inline-flex;margin-top:10px;font-size:12px;font-weight:800;color:#075985;background:#e0f2fe;border:1px solid #bae6fd;border-radius:999px;padding:7px 11px;width:max-content;max-width:100%";
+  } else if (v2isSpeedPresetOffFallback()) {
+    marker.textContent = "Speed presets: OFF";
+    marker.style.cssText = "display:inline-flex;margin-top:10px;font-size:12px;font-weight:800;color:#475569;background:#f8fafc;border:1px solid #cbd5e1;border-radius:999px;padding:7px 11px;width:max-content;max-width:100%";
+  } else {
+    marker.style.display = "none";
+  }
 }
 
 function v2preloadSpeedPresets() {
