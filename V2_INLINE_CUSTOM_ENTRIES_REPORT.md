@@ -109,4 +109,4 @@ Local test URL: `http://localhost:8000/?data=v1&v=inline-custom-final`
 
 ## Commit hash
 
-Pending commit.
+Fix commit: `0fa248f`
