@@ -1,6 +1,6 @@
 {
   "index_version": "1.0.0",
-  "last_updated": "2026-05-15",
+  "last_updated": "2026-05-16",
   "entries": [
     {
       "entry_id": "cc-gp-fever-urti",
@@ -2286,6 +2286,11 @@
       "type": "chief_complaint",
       "label": "Post-op follow-up",
       "aliases": [
+        "post op",
+        "post-op",
+        "postoperative",
+        "post operative",
+        "surgical follow-up",
         "surgery follow-up",
         "post-operative check",
         "wound check orthopaedic",

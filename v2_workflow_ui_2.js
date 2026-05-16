@@ -1077,6 +1077,18 @@ function v2clearAllSelections() {
   var invStr = selectedInvs.join(", ") || "";
   var planPhrasesStr = selectedPlans.join(", ") || "";
   var dc = "Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";
+  var seekHelpItems = selectedRedFlags.slice();
+  var seekHelpPattern = /return precautions|warning signs|seek help|red flag|worsen|worsening|concern|fever|unable/i;
+  for (var shp = 0; shp < selectedPlans.length; shp++) {
+    if (seekHelpPattern.test(selectedPlans[shp]) && seekHelpItems.indexOf(selectedPlans[shp]) < 0) {
+      seekHelpItems.push(selectedPlans[shp]);
+    }
+  }
+  for (var shf = 0; shf < selectedFollowUps.length; shf++) {
+    if (seekHelpPattern.test(selectedFollowUps[shf]) && seekHelpItems.indexOf(selectedFollowUps[shf]) < 0) {
+      seekHelpItems.push(selectedFollowUps[shf]);
+    }
+  }
 
   // Combine doctor plan + selected plan phrases
   var fullPlan = plan;
@@ -1152,7 +1164,7 @@ function v2clearAllSelections() {
   outputs.inst += "Diagnosis: " + impStr + "\n\n";
   outputs.inst += "Doctor advice / plan:\n" + plan + "\n\n";
   if (planPhrasesStr) outputs.inst += "Plan discussed:\n" + planPhrasesStr + "\n\n";
-  outputs.inst += "When to seek help:\n" + rfStr + "\n\n";
+  if (seekHelpItems.length) outputs.inst += "When to seek help:\n" + seekHelpItems.join(", ") + "\n\n";
   outputs.inst += "Follow-up: " + (followup || "As advised") + "\n";
 
   window._speedOutputs = outputs;

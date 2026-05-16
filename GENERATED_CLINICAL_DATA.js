@@ -1,6 +1,6 @@
 // GENERATED_CLINICAL_DATA.js — Najm AI ClinicNote
 // Auto-generated. Do not edit manually.
-// Generated: 2026-05-15 07:36:05
+// Generated: 2026-05-16 21:21:47
 // Source: /data JSON files (validated)
 
 (function() {
@@ -42,7 +42,7 @@
   var data = {
   "metadata": {
     "version": "v2",
-    "generated_at": "2026-05-15 07:36:05",
+    "generated_at": "2026-05-16 21:21:47",
     "source": "validated_json_dataset (data/ CSVs -> JSON, commit 262c021)",
     "warning": "Documentation support only. Clinician review required.",
     "description": "Najm AI ClinicNote clinical data bundle. Built from /data JSON files."
@@ -29152,6 +29152,11 @@
         ]
       },
       "chief_complaint_aliases": [
+        "post op",
+        "post-op",
+        "postoperative",
+        "post operative",
+        "surgical follow-up",
         "surgery follow-up",
         "post-operative check",
         "wound check orthopaedic",
@@ -85926,6 +85931,11 @@
       "type": "chief_complaint",
       "label": "Post-op follow-up",
       "aliases": [
+        "post op",
+        "post-op",
+        "postoperative",
+        "post operative",
+        "surgical follow-up",
         "surgery follow-up",
         "post-operative check",
         "wound check orthopaedic",
