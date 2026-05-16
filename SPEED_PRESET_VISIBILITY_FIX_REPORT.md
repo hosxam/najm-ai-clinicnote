@@ -70,10 +70,17 @@ Normal mode at `http://localhost:8000/` was unaffected:
 
 ## Live Test Result
 
-Pending after push:
-
-- `https://hosxam.github.io/najm-ai-clinicnote/?speed=v1&v=speed-presets-visible`
+- URL tested: `https://hosxam.github.io/najm-ai-clinicnote/?speed=v1&v=speed-presets-visible`
+- Live source updated after cache-busted fetch.
+- `Speed presets: ON` marker visible.
+- Search visible.
+- Fever / URTI selected from search.
+- Banner visible: `Quick-start defaults loaded. Review and untick anything that does not apply.`
+- Preset chips loaded: 21.
+- Selected summary populated.
+- Unticking `fever` reduced selected count from 21 to 20 and removed it from the summary.
+- No live console errors detected.
 
 ## Commit Hash
 
-133def8
+Primary fix commit: `d17a97a`.
