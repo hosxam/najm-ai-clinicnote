@@ -265,6 +265,16 @@ footer a{color:#d9e4f2}
 .example-block h4{font-size:11px;color:var(--gray-600);text-transform:uppercase;margin-bottom:6px;letter-spacing:0.04em}
 .example-block pre{white-space:pre-wrap;font-family:var(--font-mono);font-size:11px;line-height:1.55;color:var(--gray-800)}
 .feedback-panel{background:#fff;border:1px solid #bfe3e0;border-radius:12px;padding:22px;box-shadow:var(--shadow-md);max-width:820px;margin:0 auto}
+.feedback-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:18px}
+.feedback-card{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:18px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+.feedback-card h3{font-size:16px;color:var(--gray-900)}
+.feedback-card p{font-size:12px;color:var(--gray-600);line-height:1.55}
+.form-warning{font-size:11px;color:var(--amber);font-weight:700;line-height:1.4}
+.form-action-slot{margin-top:auto}
+.form-disabled{opacity:.68;cursor:not-allowed}
+.form-coming-soon{font-size:11px;color:var(--gray-500);margin-top:6px}
+.feedback-cta-inline{border-top:1px solid var(--gray-200);background:#fff;padding:12px 14px;font-size:11px;color:var(--gray-600);display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.footer-form-link{color:#b7c0cc;font-weight:500;opacity:.8}
 .feedback-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}
 .feedback-field{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;padding:10px;font-size:12px;color:var(--gray-700);font-weight:600}
 .static-template{width:100%;min-height:150px;margin-top:12px}
@@ -272,7 +282,7 @@ footer a{color:#d9e4f2}
 .resource-link{background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:13px 12px;color:var(--gray-800);font-size:12px;font-weight:800;box-shadow:var(--shadow)}
 .resource-link:hover{text-decoration:none;background:var(--primary-bg);color:var(--primary-dark);border-color:#bfe3e0}
 @media(max-width:900px){.product-row{grid-template-columns:1fr}.hero h1{font-size:36px}.hero{padding:58px 16px 42px}.speed-mode-box{padding:20px}.trust-item{text-align:center}.two-col{grid-template-columns:1fr}.output-card{position:static}}
-@media(max-width:900px){.examples-grid{grid-template-columns:1fr}.feedback-fields{grid-template-columns:1fr}.resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){.examples-grid{grid-template-columns:1fr}.feedback-fields{grid-template-columns:1fr}.feedback-card-grid{grid-template-columns:1fr}.resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.nav-inner{height:64px;padding:0 14px}.nav-links{top:64px}.nav-logo .sub{display:none}.hero h1{font-size:30px}.hero p{font-size:14px}.hero-microcopy{font-size:12px}.hero-ctas .btn,.gen-row .btn{width:100%;justify-content:center}.hero-stat{min-width:0;flex:1;padding:12px 8px}.trust-grid{grid-template-columns:1fr}.product-item{text-align:left}.speed-mode-box{padding:18px 14px}.chip{font-size:11px;min-height:34px;padding:8px 11px}.chip-group{gap:6px}.output-header{overflow-x:auto;flex-wrap:nowrap}.output-tab{white-space:nowrap;flex:0 0 auto}#v2ChipGroups .speed-section{padding:14px}#v2ChipGroups [data-v2-custom-row]>div{flex-direction:column!important;align-items:stretch!important}#v2ChipGroups [data-v2-custom-row] .btn{width:100%;justify-content:center}.form-group select,.form-group input,.form-group textarea{font-size:16px}.output-actions .btn{flex:1;justify-content:center}.page-header h2{font-size:26px}.two-col,.two-col>div,.speed-mode-box,#v2SearchArea,#v2SearchArea>div,#v2ChipGroups,#v2ChipGroups .speed-section,.output-card{min-width:0;max-width:100%;overflow-wrap:anywhere}.note-phi-warn,.phi-warning,.prompts-box,#v2CustomSafetyNote,.amber-box,.output-body,.speed-tip,.example-block pre{overflow-wrap:anywhere;word-break:normal}.form-group select,.form-group input,.form-group textarea,.speed-section input,.speed-section textarea{max-width:100%;min-width:0}.status-bar{max-width:100%}.trust-badges{justify-content:flex-start}.trust-badge{font-size:11px}.feedback-panel{padding:16px}}
 </style>
 </head>
@@ -432,9 +442,13 @@ Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arr
 </section>
 <section class="section">
 <div class="feedback-panel">
-<h2 class="section-title" style="text-align:left;margin-bottom:6px">Missing a template? Suggest one.</h2>
-<p style="font-size:13px;color:var(--gray-600);margin-bottom:14px">ClinicNote is expanding carefully. Use the feedback checklist below to request a template or output format. Do not submit patient information.</p>
-<button class="btn btn-primary btn-sm" onclick="showPage('feedback')">Suggest a template</button>
+<h2 class="section-title" style="text-align:left;margin-bottom:6px">Help improve ClinicNote</h2>
+<p style="font-size:13px;color:var(--gray-600);margin-bottom:14px">Suggest missing templates or register interest in future Najm AI Scribe updates. Do not submit patient-identifiable information.</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<span class="form-action-slot" data-form-key="templateRequest" data-form-label="Suggest a Template" data-form-event="template_request_clicked" data-source-page="home" data-cta-location="homepage"></span>
+<span class="form-action-slot" data-form-key="scribeInterest" data-form-label="Join Scribe Updates" data-form-event="future_scribe_interest_clicked" data-source-page="home" data-cta-location="homepage"></span>
+<button class="btn btn-ghost btn-sm" onclick="showPage('feedback')">View all feedback options</button>
+</div>
 </div>
 </section>
 </div><div id="page-speed" class="page">
@@ -603,6 +617,10 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 </div>
 <div class="export-privacy-note">Exports are created locally in your browser. Nothing is uploaded or stored by Najm AI.</div>
 <div class="output-footer">Draft generated from doctor-entered information. Review before use.</div>
+<div id="speedGeneratedFeedbackCta" class="feedback-cta-inline" style="display:none">
+<span><strong>Missing a template?</strong> Suggest one. Do not submit patient-identifiable information.</span>
+<span class="form-action-slot" data-form-key="templateRequest" data-form-label="Suggest one" data-form-event="template_request_clicked" data-source-page="opd_speed_mode" data-cta-location="opd_output"></span>
+</div>
 </div>
 </div>
 </div>
@@ -795,6 +813,10 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 </div>
 <div class="export-privacy-note">Exports are created locally in your browser. Nothing is uploaded or stored by Najm AI.</div>
 <div class="output-footer">Structured draft only. Licensed clinician review required before use.</div>
+<div id="reportGeneratedFeedbackCta" class="feedback-cta-inline" style="display:none">
+<span><strong>Need a different report format?</strong> Suggest one. Do not submit patient-identifiable information.</span>
+<span class="form-action-slot" data-form-key="templateRequest" data-form-label="Suggest one" data-form-event="template_request_clicked" data-source-page="medical_report_draft" data-cta-location="report_output"></span>
+</div>
 </div>
 </div>
 </div>
@@ -804,32 +826,30 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <div id="presetsContent"></div>
 </div>
 <div id="page-feedback" class="page">
-<div class="page-header"><h2>Missing a template? Suggest one.</h2><p>Share a de-identified template request for future ClinicNote planning.</p></div>
+<div class="page-header"><h2>Feedback and Template Requests</h2><p>Use safe external Google Forms links when they are configured. Do not submit patient-identifiable information.</p></div>
 <div class="content-page">
-<div class="amber-box"><strong>Do not submit patient information.</strong> Do not include names, MRNs, phone numbers, exact dates of birth, Emirates ID, addresses, or any patient-specific details.</div>
-<p>ClinicNote does not include a backend submission system yet. Use this static checklist to prepare a template request through your preferred contact channel.</p>
-<div class="feedback-fields">
-<div class="feedback-field">Role</div>
-<div class="feedback-field">Specialty</div>
-<div class="feedback-field">Country</div>
-<div class="feedback-field">Missing template</div>
-<div class="feedback-field">Output format needed</div>
-<div class="feedback-field">Optional email</div>
-<div class="feedback-field">Future AI Scribe interest</div>
+<div class="amber-box"><strong>Do not submit patient-identifiable information.</strong> Do not include patient names, medical record numbers, phone numbers, exact dates of birth, addresses, Emirates ID, insurance IDs, clinical notes, generated outputs, screenshots containing patient data, or consultation recordings.</div>
+<div class="feedback-card-grid">
+<article class="feedback-card">
+<h3>Suggest a Template</h3>
+<p>Tell us which specialty, complaint, workflow, or output format ClinicNote should support next.</p>
+<div class="form-warning">Do not submit patient-identifiable information.</div>
+<div class="form-action-slot" data-form-key="templateRequest" data-form-label="Suggest a Template" data-form-event="template_request_clicked" data-source-page="feedback" data-cta-location="feedback_template_card"></div>
+</article>
+<article class="feedback-card">
+<h3>Report a Bug</h3>
+<p>Report a technical issue without including clinical notes, generated outputs, screenshots with patient data, or identifiers.</p>
+<div class="form-warning">Do not submit patient-identifiable information.</div>
+<div class="form-action-slot" data-form-key="bugReport" data-form-label="Report a Bug" data-form-event="feedback_clicked" data-source-page="feedback" data-cta-location="feedback_bug_card"></div>
+</article>
+<article class="feedback-card">
+<h3>Najm AI Scribe Updates</h3>
+<p>Get notified when Najm AI opens future Scribe updates, pilots, or research collaboration interest.</p>
+<div class="form-warning">Do not submit patient data or consultation recordings.</div>
+<div class="form-action-slot" data-form-key="scribeInterest" data-form-label="Join Scribe Updates" data-form-event="future_scribe_interest_clicked" data-source-page="feedback" data-cta-location="feedback_scribe_card"></div>
+</article>
 </div>
-<div class="form-group">
-<label for="feedbackTemplate">Static request template</label>
-<textarea id="feedbackTemplate" class="code static-template" readonly>Role:
-Specialty:
-Country:
-Missing template:
-Output format needed:
-Optional email:
-Future AI Scribe interest:
-
-Reminder: Do not include patient information.</textarea>
-</div>
-<p style="font-size:12px;color:var(--gray-500)">This section is informational only and does not transmit, store, or submit data.</p>
+<p style="font-size:12px;color:var(--gray-500);margin-top:14px">Form links are controlled by <code>forms-config.js</code>. Until real Google Form URLs are pasted, each form action stays disabled and no fake URL is opened.</p>
 </div>
 </div>
 <div id="page-privacy" class="page">
@@ -929,6 +949,8 @@ Reminder: Do not include patient information.</textarea>
 <a href="./opd-note-generator/">OPD Note Generator</a>
 <a href="./medical-report-draft-generator/">Report Draft Generator</a>
 <a href="./feedback/">Feedback</a>
+<span data-form-key="bugReport" data-form-label="Report a Bug" data-form-event="feedback_clicked" data-source-page="footer" data-cta-location="footer_bug" data-form-variant="link"></span>
+<span data-form-key="scribeInterest" data-form-label="Najm AI Scribe Updates" data-form-event="future_scribe_interest_clicked" data-source-page="footer" data-cta-location="footer_scribe" data-form-variant="link"></span>
 <a href="./privacy/">Privacy</a>
 <a href="./safety/">Safety</a>
 <a href="./changelog/">Changelog</a>
@@ -943,6 +965,7 @@ window.CLINICNOTE_DATA_MODE = (new URLSearchParams(window.location.search).get("
 </script>
 <script src="./analytics-safe.js?v=privacy-dry-run"></script>
 <script src="./export-local.js?v=local-export"></script>
+<script src="./forms-config.js?v=forms-placeholder"></script>
 <script src="./v2_workflow_ui_2.js?v=seo-foundation-final"></script>
 <script>
 
@@ -1058,9 +1081,9 @@ function detectReportPHI(text){if(!text||!text.trim())return false;if(typeof det
 function checkReportPHI(){var ids=["medicalReportNotes","medicalReportPurpose","medicalReportImpression","medicalReportPlan","medicalReportStatus","medicalReportFollowup","medicalReportClinician","medicalReportDate"];var found=false;for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&detectReportPHI(el.value||""))found=true}var w=document.getElementById("reportPhiWarning");if(w)w.classList.toggle("show",found);return found}
 function medicalReportVariables(config){var notes=reportTextOrMissing(reportVal("medicalReportNotes"));var purpose=reportTextOrMissing(reportVal("medicalReportPurpose"));var impression=reportTextOrMissing(reportVal("medicalReportImpression"));var plan=reportTextOrMissing(reportVal("medicalReportPlan"));var status=reportTextOrMissing(reportVal("medicalReportStatus"));var follow=reportTextOrMissing(reportVal("medicalReportFollowup"));var clinician=reportTextOrMissing(reportVal("medicalReportClinician"))==="[not documented]"?"[clinician review/signature required]":reportTextOrMissing(reportVal("medicalReportClinician"));var date=reportTextOrMissing(reportVal("medicalReportDate"))==="[not documented]"?"[date to be entered by clinician]":reportTextOrMissing(reportVal("medicalReportDate"));var vars={};vars.report_title=config.label;vars.reason_text=purpose;vars.purpose_text=purpose;vars.encounter_summary_text=notes;vars.presenting_problem_text=notes;vars.symptoms=notes;vars.symptoms_text=notes;vars.duration="[not documented]";vars.negatives="[not documented]";vars.exam="[not documented]";vars.investigations="[not documented]";vars.red_flags="[not documented]";vars.impression=impression;vars.diagnosis_text=impression;vars.plan=plan;vars.current_management_text=plan;vars.management_text=plan;vars.medication_instructions_text=plan;vars.instructions_text=plan;vars.clinical_course_text=notes;vars.procedures_text=config.id==="procedure"?notes:"[not documented]";vars.discharge_plan_text=follow;vars.follow_up_text=follow;vars.functional_status_text=status;vars.functional_limitation_text=status;vars.restriction_text=status;vars.urgency_text="[not documented]";vars.visit_date=date;vars.date=date;vars.clinician_name=clinician;vars.limitations_text=MEDICAL_REPORT_REVIEW_FOOTER;return vars}
 function renderReportTemplateText(template,config,vars){var sections=(template&&template.sections?template.sections.slice():[]).sort(function(a,b){return(a.order||0)-(b.order||0)});var out=config.label.toUpperCase()+"\n\n";out+="Purpose:\n"+vars.reason_text+"\n\n";for(var i=0;i<sections.length;i++){var s=sections[i];var title=s.display_name||s.section_id||"Section";var content=s.content_template||"";if(s.section_id==="header"){content="Report type: "+config.label+"\nPurpose: "+vars.reason_text+"\nDate: "+vars.date}else{content=content.replace(/\{\{([^}]+)\}\}/g,function(_,name){return reportTextOrMissing(vars[name.trim()]||"")})}content=content.replace(/\bHeader\b/g,config.label).trim();if(!content)content="[not documented]";out+=title+":\n"+content+"\n\n"}out+="Clinician review statement:\n"+MEDICAL_REPORT_REVIEW_FOOTER+"\n";return out}
-function generateMedicalReportDraft(){initMedicalReportModule();checkReportPHI();var config=getMedicalReportTypeConfig();var template=getMedicalReportTemplate(config.templateId);var box=document.getElementById("medicalReportOutput");if(!template){if(box)box.textContent="Report template not available.";return}var vars=medicalReportVariables(config);var output=renderReportTemplateText(template,config,vars);window._medicalReportDraft=output;if(box)box.textContent=output}
+function generateMedicalReportDraft(){initMedicalReportModule();checkReportPHI();var config=getMedicalReportTypeConfig();var template=getMedicalReportTemplate(config.templateId);var box=document.getElementById("medicalReportOutput");if(!template){if(box)box.textContent="Report template not available.";return}var vars=medicalReportVariables(config);var output=renderReportTemplateText(template,config,vars);window._medicalReportDraft=output;if(box)box.textContent=output;showFeedbackCta("reportGeneratedFeedbackCta")}
 function copyMedicalReport(){var t=window._medicalReportDraft||((document.getElementById("medicalReportOutput")||{}).innerText)||"";if(!t||t.indexOf("Select a report type")>=0)t="";navigator.clipboard.writeText(t).catch(function(){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand("copy");document.body.removeChild(ta)})}
-function clearMedicalReportOutput(){window._medicalReportDraft="";var box=document.getElementById("medicalReportOutput");if(box)box.innerHTML="<span class=\"placeholder\">Select a report type, enter de-identified information, then generate a structured draft.</span>"}
+function clearMedicalReportOutput(){window._medicalReportDraft="";var box=document.getElementById("medicalReportOutput");if(box)box.innerHTML="<span class=\"placeholder\">Select a report type, enter de-identified information, then generate a structured draft.</span>";var cta=document.getElementById("reportGeneratedFeedbackCta");if(cta)cta.style.display="none"}
 function clearMedicalReport(){var ids=["medicalReportNotes","medicalReportPurpose","medicalReportImpression","medicalReportPlan","medicalReportStatus","medicalReportFollowup","medicalReportClinician","medicalReportDate"];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el)el.value=""}var w=document.getElementById("reportPhiWarning");if(w)w.classList.remove("show");clearMedicalReportOutput()}
 function exportDateStamp(){var d=new Date();var m=String(d.getMonth()+1).padStart(2,"0");var day=String(d.getDate()).padStart(2,"0");return d.getFullYear()+"-"+m+"-"+day}
 function trackExportSafeEvent(eventName,properties){if(window.ClinicNoteAnalytics&&typeof window.ClinicNoteAnalytics.trackSafeEvent==="function"){window.ClinicNoteAnalytics.trackSafeEvent(eventName,properties||{})}}
@@ -1074,6 +1097,10 @@ function getMedicalReportExportBody(){var body=window._medicalReportDraft||"";if
 function medicalReportExportContext(config){return{"Tool":"Medical Report Draft","Report type":(config&&config.label)||"Report draft"}}
 function exportMedicalReportText(){var body=getMedicalReportExportBody();if(!body){alert("Generate a report draft first.");return}var config=getMedicalReportTypeConfig();var reportType=(config&&config.id)||"draft";var title="Najm AI ClinicNote - Medical Report Draft";var filename="clinicnote-report-"+reportType+"-"+exportDateStamp();if(window.ClinicNoteExport){window.ClinicNoteExport.exportTextFile(filename,title,body,medicalReportExportContext(config));trackExportSafeEvent("report_exported_txt",{tool_name:"medical_report_draft",report_type:reportType,data_mode:window.CLINICNOTE_DATA_MODE||"unknown"})}}
 function printMedicalReport(){var body=getMedicalReportExportBody();if(!body){alert("Generate a report draft first.");return}var config=getMedicalReportTypeConfig();var reportType=(config&&config.id)||"draft";var title="Najm AI ClinicNote - Medical Report Draft";if(window.ClinicNoteExport){window.ClinicNoteExport.printOutput(title,body,medicalReportExportContext(config));trackExportSafeEvent("report_print_started",{tool_name:"medical_report_draft",report_type:reportType,data_mode:window.CLINICNOTE_DATA_MODE||"unknown"})}}
+function isClinicNoteFormUrlReady(url){return !!(url&&url.indexOf("PASTE_GOOGLE_FORM_URL_HERE")<0&&/^https:\/\/(docs\.google\.com\/forms\/|forms\.gle\/)/i.test(url))}
+function trackClinicNoteFormEvent(eventName,sourcePage,ctaLocation){if(window.ClinicNoteAnalytics&&typeof window.ClinicNoteAnalytics.trackSafeEvent==="function"){window.ClinicNoteAnalytics.trackSafeEvent(eventName||"feedback_clicked",{source_page:sourcePage||"main_site",cta_location:ctaLocation||"unknown",data_mode:window.CLINICNOTE_DATA_MODE||"unknown"})}}
+function renderClinicNoteFormActions(){var config=window.CLINICNOTE_FORMS||{};var slots=document.querySelectorAll("[data-form-key]");for(var i=0;i<slots.length;i++){var slot=slots[i];var key=slot.getAttribute("data-form-key");var label=slot.getAttribute("data-form-label")||"Open form";var eventName=slot.getAttribute("data-form-event")||"feedback_clicked";var sourcePage=slot.getAttribute("data-source-page")||"main_site";var ctaLocation=slot.getAttribute("data-cta-location")||"unknown";var variant=slot.getAttribute("data-form-variant")||"button";var url=config[key]||"";slot.innerHTML="";if(isClinicNoteFormUrlReady(url)){var a=document.createElement("a");a.href=url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=label;a.onclick=(function(ev,src,loc){return function(){trackClinicNoteFormEvent(ev,src,loc)}})(eventName,sourcePage,ctaLocation);if(variant==="link"){a.className=""}else{a.className="btn btn-primary btn-sm"}slot.appendChild(a)}else{if(variant==="link"){var sp=document.createElement("span");sp.className="footer-form-link";sp.textContent=label+" (form coming soon)";sp.setAttribute("aria-disabled","true");slot.appendChild(sp)}else{var btn=document.createElement("button");btn.type="button";btn.className="btn btn-ghost btn-sm form-disabled";btn.disabled=true;btn.textContent="Form coming soon";slot.appendChild(btn);var note=document.createElement("div");note.className="form-coming-soon";note.textContent=label+" will open here after the Google Form URL is configured.";slot.appendChild(note)}}}}
+function showFeedbackCta(id){var el=document.getElementById(id);if(el){el.style.display="flex";renderClinicNoteFormActions()}}
 function switchTab(area,tab){var pfx="";if(area==="opd")pfx="output-tab";else if(area==="ref")pfx="ref-tab";else if(area==="inst")pfx="inst-tab";else if(area==="speed")pfx="speed-tab";var tabs=document.querySelectorAll("[data-"+pfx+"]");for(var i=0;i<tabs.length;i++){tabs[i].classList.remove("active")}var active=document.querySelector("[data-"+pfx+"=\""+tab+"\"]");if(active)active.classList.add("active")}function gO(type){var spec=document.getElementById("specialty");var specName=SD[spec.value]?SD[spec.value].name:spec.value;var vt=document.getElementById("visitType").value||"Not specified";var dc="Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";var cn=val("clinicalNote");var dur=val("duration");var symp=val("symptoms");var hx=val("history");var exam=val("exam");var inv=val("investigations");var impr=val("impression");var plan=val("plan");var fup=val("followupInterval");var dn=val("doctorNotes");var iel=document.getElementById("impression");var imp=(iel&&iel.value.trim())?iel.value.trim():"[doctor impression not documented]";var pel=document.getElementById("plan");var plt=(pel&&pel.value.trim())?pel.value.trim():"[doctor plan not documented]";var o="";if(type==="soap"){o=dc+"SOAP NOTE\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="SUBJECTIVE:\n";if(dur!="[not documented]")o+="Duration: "+dur+"\n";if(symp!="[not documented]")o+="Main symptoms: "+symp+"\n";if(hx!="[not documented]")o+="Relevant history: "+hx+"\n";if(cn!="[not documented]")o+="Patient report: "+cn+"\n";if(dur=="[not documented]"&&symp=="[not documented]"&&hx=="[not documented]"&&cn=="[not documented]")o+="[not documented]\n";o+="\nOBJECTIVE:\n";if(exam!="[not documented]")o+="Examination: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";if(exam=="[not documented]"&&inv=="[not documented]")o+="[not documented]\n";o+="\nASSESSMENT:\n"+imp+"\n\n";o+="PLAN:\n"+plt+"\n";if(fup!="[not documented]")o+="\nFollow-up: "+fup+"\n";if(dn!="[not documented]")o+="\nDoctor notes: "+dn+"\n"}else if(type==="emr"){o=dc+"SHORT EMR NOTE\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="CC: "+symp+"\n";o+="HPI: "+dur+". "+cn+"\n";o+="PMH: "+hx+"\n";o+="Exam: "+exam+"\n";o+="Investigations: "+inv+"\n";o+="Impression: "+imp+"\n";o+="Plan: "+plt+"\n";if(fup!="[not documented]")o+="Follow-up: "+fup+"\n"}else if(type==="fup"){o=dc+"FOLLOW-UP NOTE\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="Interval: "+fup+"\n";o+="Current status: "+cn+"\n";o+="Symptoms: "+symp+"\n";o+="History: "+hx+"\n";o+="Examination: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Impression: "+imp+"\n";o+="Plan: "+plt+"\n";if(dn!="[not documented]")o+="Notes: "+dn+"\n"}else if(type==="ref"){o=dc+"REFERRAL LETTER\n";o+="Specialty: "+specName+" | Visit: "+vt+"\n\n";o+="Reason for referral: "+cn+"\n";o+="History: "+hx+"\n";o+="Exam findings: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Working impression: "+imp+"\n";o+="Current plan: "+plt+"\n";o+="Request: Please see and advise.\n"}else if(type==="pt"){o=dc+"PATIENT INSTRUCTIONS\n\n";o+="Diagnosis: "+imp+"\n\n";o+="Doctor advice: "+plt+"\n\n";o+="Medications: "+plt+"\n\n";o+="Activity: "+dn+"\n\n";o+="When to seek help: "+exam+"\n\n";o+="Follow-up: "+fup+"\n"}document.getElementById("outputBox").innerHTML=o}
 function gRef(type){var dc="Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";var spec=val("refSpecialty");var reason=val("refReason");var hx=val("refHistory");var exam=val("refExam");var inv=val("refInvestigations");var impr=val("refImpression");var mgmt=val("refManagement");var action=val("refAction");var o="";if(type==="formal"){o=dc+"FORMAL REFERRAL LETTER\n\n";o+="Re: Referral to "+spec+"\n\n";o+="Reason for Referral:\n"+reason+"\n\n";o+="Relevant History:\n"+hx+"\n\n";o+="Examination Findings:\n"+exam+"\n\n";if(inv!="[not documented]")o+="Investigations:\n"+inv+"\n\n";o+="Working Impression:\n"+impr+"\n\n";o+="Current Management:\n"+mgmt+"\n\n";o+="Requested Action:\n"+action+"\n\n";o+="Please assess and advise. Thank you.\n"}else if(type==="short"){o=dc+"SHORT REFERRAL NOTE\n\n";o+="To: "+spec+"\n";o+="Reason: "+reason+"\n";o+="History: "+hx+"\n";o+="Exam: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Impression: "+impr+"\n";o+="Current: "+mgmt+"\n";o+="Request: "+action+"\n"}else if(type==="handover"){o=dc+"HANDOVER SUMMARY\n\n";o+="Specialty: "+spec+"\n";o+="Issue: "+reason+"\n\n";o+="Background:\n"+hx+"\n\n";o+="Current Status:\nExam: "+exam+"\n";if(inv!="[not documented]")o+="Investigations: "+inv+"\n";o+="Impression: "+impr+"\n";o+="Current management: "+mgmt+"\n\n";o+="Action required:\n"+action+"\n"}document.getElementById("refOutputBox").innerHTML=o}
 function gInst(lang){var dc="Najm AI ClinicNote is an educational/productivity documentation assistant. All content must be reviewed and verified by a licensed clinician.\n\n";var diag=val("instDiagnosis");var advice=val("instAdvice");var meds=val("instMedications");var act=val("instActivity");var rf=val("instRedFlags");var fup=val("instFollowup");var o="";if(lang==="en"){o=dc+"PATIENT INSTRUCTIONS\n\n";o+="Diagnosis: "+diag+"\n\n";o+="What to do:\n"+advice+"\n\n";o+="Medications:\n"+meds+"\n\n";o+="Activity:\n"+act+"\n\n";o+="When to return:\n"+rf+"\n\n";o+="Follow-up: "+fup+"\n"}else if(lang==="ar"){o=dc+"\u062A\u0639\u0644\u064A\u0645\u0627\u062A \u0627\u0644\u0645\u0631\u064A\u0636\n\n";o+="\u0627\u0644\u062A\u0634\u062E\u064A\u0635: "+diag+"\n\n";o+="\u0627\u0644\u0646\u0635\u0627\u0626\u062D: "+advice+"\n\n";o+="\u0627\u0644\u0623\u062F\u0648\u064A\u0629: "+meds+"\n\n";o+="\u0627\u0644\u0646\u0634\u0627\u0637: "+act+"\n\n";o+="\u0645\u062A\u0649 \u064A\u062C\u0628 \u0627\u0644\u0639\u0648\u062F\u0629: "+rf+"\n\n";o+="\u0645\u062A\u0627\u0628\u0639\u0629: "+fup+"\n"}else if(lang==="wa"){o=dc+"PATIENT INSTRUCTIONS\n\n";o+="Diagnosis: "+diag+"\n\n";o+="Advice:\n"+advice+"\n\n";o+="Medications:\n"+meds+"\n\n";o+="Activity:\n"+act+"\n\n";o+="Red flags (see doctor if):\n"+rf+"\n\n";o+="Follow-up: "+fup+"\n"}document.getElementById("instOutputBox").innerHTML=o}function cp(id){var el=document.getElementById(id);var t=el.innerText||el.textContent;navigator.clipboard.writeText(t).catch(function(){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();document.execCommand("copy");document.body.removeChild(ta)})}
@@ -1373,6 +1400,7 @@ function generateAllOutputs(){
   // Show EMR tab by default
   switchSpeedTab("emr");
   updateSelectedCount();
+  showFeedbackCta("speedGeneratedFeedbackCta");
 }
 function clearSpeed(){
   document.getElementById("speedDuration").value="";
@@ -1389,6 +1417,8 @@ function clearSpeed(){
     if(c){var chips=c.querySelectorAll(".chip.selected");for(var j=0;j<chips.length;j++){chips[j].classList.remove("selected")}}
   }
   document.getElementById("speedOutputBox").innerHTML="<span class=\"placeholder\">Select a specialty and visit type, choose findings, then click Generate Note.</span>";
+  var cta=document.getElementById("speedGeneratedFeedbackCta");
+  if(cta) cta.style.display="none";
   updateSelectedCount();
 }
 
@@ -1411,6 +1441,8 @@ function clearSpeedOutput(){
   var box = document.getElementById("speedOutputBox");
   if(box) box.innerHTML = "<span class='placeholder'>Select a specialty and visit type, choose findings, then click Generate Note.</span>";
   window._speedOutputs = null;
+  var cta = document.getElementById("speedGeneratedFeedbackCta");
+  if(cta) cta.style.display = "none";
   var parent = document.querySelector("#page-speed .output-header");
   if(parent){
     var tabs = parent.querySelectorAll(".output-tab");
@@ -1459,6 +1491,7 @@ window.generateAllOutputs = generateAllOutputs;
 window.clearSpeed = clearSpeed;
 window.populateSpeedSpecialty = populateSpeedSpecialty;
 window.buildPresets = buildPresets;
+window.renderClinicNoteFormActions = renderClinicNoteFormActions;
 
 (function(){
   function trackSafe(eventName, properties){
@@ -1509,6 +1542,7 @@ window.buildPresets = buildPresets;
       var visitData = (currentSpecialty && currentVisitType && window.ACTIVE_VISIT_LIBRARY && window.ACTIVE_VISIT_LIBRARY[currentSpecialty]) ? window.ACTIVE_VISIT_LIBRARY[currentSpecialty][currentVisitType] : null;
       if(visitData && visitData._v2meta) workflowId = visitData._v2meta.workflow_id || "";
       trackSafe("output_generated",{tool_name:"opd_speed_mode",specialty_id:currentSpecialty || "",workflow_id:workflowId,output_type:window._activeSpeedTab || "emr",data_mode:analyticsDataMode()});
+      showFeedbackCta("speedGeneratedFeedbackCta");
     }
     return result;
   };
@@ -1597,13 +1631,14 @@ window.buildPresets = buildPresets;
           var visitData = (currentSpecialty && currentVisitType && window.ACTIVE_VISIT_LIBRARY && window.ACTIVE_VISIT_LIBRARY[currentSpecialty]) ? window.ACTIVE_VISIT_LIBRARY[currentSpecialty][currentVisitType] : null;
           if(visitData && visitData._v2meta) workflowId = visitData._v2meta.workflow_id || "";
           trackSafe("output_generated",{tool_name:"opd_speed_mode",specialty_id:currentSpecialty || "",workflow_id:workflowId,output_type:window._activeSpeedTab || "emr",data_mode:analyticsDataMode()});
+          showFeedbackCta("speedGeneratedFeedbackCta");
         }
       },0);
     }
   });
 })();
 
-document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();showPage(isReportModuleEnabled()?'report':'home');buildPresets();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
+document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();showPage(isReportModuleEnabled()?'report':'home');buildPresets();renderClinicNoteFormActions();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
 
 </script>
 </body>

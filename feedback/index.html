@@ -4,31 +4,61 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Feedback and Template Requests | Najm AI ClinicNote</title>
-<meta name="description" content="Suggest a missing documentation template for Najm AI ClinicNote. Do not submit patient information or identifiers.">
+<meta name="description" content="Suggest missing templates, report non-clinical bugs, or register interest in future Najm AI Scribe updates. Do not submit patient information.">
 <link rel="canonical" href="https://hosxam.github.io/najm-ai-clinicnote/feedback/">
 <meta property="og:title" content="Feedback and Template Requests | Najm AI ClinicNote">
-<meta property="og:description" content="Static feedback checklist for missing ClinicNote templates. Do not submit patient information.">
+<meta property="og:description" content="Safe Google Forms entry points for ClinicNote feedback, template requests, bug reports, and future Scribe interest. Do not submit patient information.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://hosxam.github.io/najm-ai-clinicnote/feedback/">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../seo-page.css">
+<style>
+.feedback-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:22px}
+.feedback-card{background:#fff;border:1px solid #dbe4ee;border-radius:14px;padding:20px;box-shadow:0 8px 24px rgba(15,23,42,.06)}
+.feedback-card h2{font-size:20px;margin-bottom:8px}
+.feedback-card p{font-size:14px;color:#475569;line-height:1.6}
+.form-warning{font-size:13px;font-weight:700;color:#b45309;margin:12px 0}
+.form-disabled{opacity:.7;cursor:not-allowed}
+.form-coming-soon{font-size:12px;color:#64748b;margin-top:8px}
+@media(max-width:850px){.feedback-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <header class="top"><div class="nav"><a class="brand" href="../">Najm AI ClinicNote</a><div class="nav-links"><a href="../privacy/">Privacy</a><a href="../safety/">Safety</a><a href="../free-soap-note-generator/">SOAP notes</a></div></div></header>
-<section class="hero"><div class="hero-inner"><div class="eyebrow">Feedback</div><h1>Missing a template? Suggest one.</h1><p class="lead">Use this static checklist to prepare a template request. This page does not submit, transmit, or store information.</p></div></section>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Feedback</div><h1>Feedback, template requests, and Scribe interest</h1><p class="lead">Use safe external Google Forms links when they are configured. Until then, forms remain disabled so there are no fake or broken URLs.</p></div></section>
 <main>
-<section class="safety"><strong>Do not submit patient information.</strong> Do not include names, MRNs, phone numbers, exact dates of birth, Emirates ID, addresses, insurance IDs, or patient-specific details.</section>
-<section class="card"><h2>Template request fields</h2><ul><li>Role</li><li>Specialty</li><li>Country</li><li>Missing template</li><li>Output format needed</li><li>Optional email</li><li>Future AI Scribe interest</li></ul><div class="example"><h3>Static request template</h3><pre>Role:
-Specialty:
-Country:
-Missing template:
-Output format needed:
-Optional email:
-Future AI Scribe interest:
-
-Reminder: Do not include patient information.</pre></div></section>
+<section class="safety"><strong>Do not submit patient-identifiable information.</strong> Do not include names, MRNs, phone numbers, exact dates of birth, Emirates ID, addresses, insurance IDs, clinical notes, generated outputs, screenshots containing patient data, or consultation recordings.</section>
+<section class="feedback-grid">
+<article class="feedback-card">
+<h2>Suggest a Template</h2>
+<p>Tell us which specialty, complaint, workflow, or output format ClinicNote should support next.</p>
+<div class="form-warning">Do not submit patient-identifiable information.</div>
+<div data-form-key="templateRequest" data-form-label="Suggest a Template" data-form-event="template_request_clicked" data-source-page="feedback_static" data-cta-location="feedback_template_card"></div>
+</article>
+<article class="feedback-card">
+<h2>Report a Bug</h2>
+<p>Report a technical issue without including clinical notes, generated outputs, screenshots with patient data, or identifiers.</p>
+<div class="form-warning">Do not submit patient-identifiable information.</div>
+<div data-form-key="bugReport" data-form-label="Report a Bug" data-form-event="feedback_clicked" data-source-page="feedback_static" data-cta-location="feedback_bug_card"></div>
+</article>
+<article class="feedback-card">
+<h2>Najm AI Scribe Updates</h2>
+<p>Get notified when Najm AI opens future Scribe updates, pilots, or research collaboration interest.</p>
+<div class="form-warning">Do not submit patient data or consultation recordings.</div>
+<div data-form-key="scribeInterest" data-form-label="Join Scribe Updates" data-form-event="future_scribe_interest_clicked" data-source-page="feedback_static" data-cta-location="feedback_scribe_card"></div>
+</article>
+</section>
+<section class="card"><h2>Current form status</h2><p>The form URLs are controlled by <code>forms-config.js</code>. Replace the placeholders with real Google Form URLs to activate these buttons.</p></section>
 <div class="cta-row"><a class="btn" href="../">Open ClinicNote</a><a class="btn secondary" href="../privacy/">Read Privacy</a></div>
 </main>
 <footer><a href="../">Main app</a> | <a href="../privacy/">Privacy</a> | <a href="../safety/">Safety</a> | <a href="../changelog/">Changelog</a></footer>
+<script src="../analytics-safe.js?v=privacy-dry-run"></script>
+<script src="../forms-config.js?v=forms-placeholder"></script>
+<script>
+function formReady(url){return !!(url&&url.indexOf("PASTE_GOOGLE_FORM_URL_HERE")<0&&/^https:\/\/(docs\.google\.com\/forms\/|forms\.gle\/)/i.test(url))}
+function trackForm(eventName,sourcePage,ctaLocation){if(window.ClinicNoteAnalytics&&typeof window.ClinicNoteAnalytics.trackSafeEvent==="function"){window.ClinicNoteAnalytics.trackSafeEvent(eventName||"feedback_clicked",{source_page:sourcePage||"feedback_static",cta_location:ctaLocation||"unknown",data_mode:"static"})}}
+function renderForms(){var config=window.CLINICNOTE_FORMS||{};var slots=document.querySelectorAll("[data-form-key]");for(var i=0;i<slots.length;i++){var slot=slots[i];var key=slot.getAttribute("data-form-key");var label=slot.getAttribute("data-form-label")||"Open form";var eventName=slot.getAttribute("data-form-event")||"feedback_clicked";var sourcePage=slot.getAttribute("data-source-page")||"feedback_static";var ctaLocation=slot.getAttribute("data-cta-location")||"unknown";var url=config[key]||"";slot.innerHTML="";if(formReady(url)){var a=document.createElement("a");a.className="btn";a.href=url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=label;a.onclick=(function(ev,src,loc){return function(){trackForm(ev,src,loc)}})(eventName,sourcePage,ctaLocation);slot.appendChild(a)}else{var btn=document.createElement("button");btn.className="btn secondary form-disabled";btn.type="button";btn.disabled=true;btn.textContent="Form coming soon";slot.appendChild(btn);var note=document.createElement("div");note.className="form-coming-soon";note.textContent=label+" will open here after the Google Form URL is configured.";slot.appendChild(note)}}}
+document.addEventListener("DOMContentLoaded",renderForms);
+</script>
 </body>
 </html>
