@@ -961,12 +961,14 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <script src="./GENERATED_CLINICAL_DATA.js"></script>
 <script>
 // ---- Feature Flag: MUST be set before v2_workflow_ui.js loads ----
-window.CLINICNOTE_DATA_MODE = (new URLSearchParams(window.location.search).get("data") === "v1") ? "v1" : "v2";
+var clinicNoteParams = new URLSearchParams(window.location.search);
+window.CLINICNOTE_DATA_MODE = (clinicNoteParams.get("data") === "v1") ? "v1" : "v2";
+window.CLINICNOTE_SPEED_MODE = (window.CLINICNOTE_DATA_MODE === "v2" && clinicNoteParams.get("speed") === "v1");
 </script>
 <script src="./analytics-safe.js?v=privacy-dry-run"></script>
 <script src="./export-local.js?v=local-export"></script>
 <script src="./forms-config.js?v=forms-placeholder"></script>
-<script src="./v2_workflow_ui_2.js?v=seo-foundation-final"></script>
+<script src="./v2_workflow_ui_2.js?v=speed-presets-visible"></script>
 <script>
 
 // ---- Adapter: build old-compatible VISIT_LIBRARY from NAJM_CLINICAL_DATA ----
@@ -1638,7 +1640,7 @@ window.renderClinicNoteFormActions = renderClinicNoteFormActions;
   });
 })();
 
-document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();showPage(isReportModuleEnabled()?'report':'home');buildPresets();renderClinicNoteFormActions();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
+document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();showPage(isReportModuleEnabled()?'report':(window.CLINICNOTE_SPEED_MODE?'speed':'home'));buildPresets();renderClinicNoteFormActions();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
 
 </script>
 </body>

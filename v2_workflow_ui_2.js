@@ -35,6 +35,8 @@ function v2showSearchUI() {
   // Show v2 features within speed content (history prompts, etc.)
   var v2f = document.getElementById("v2Features");
   if (v2f) v2f.style.display = "block";
+  v2ensureSpeedPresetModeMarker();
+  v2preloadSpeedPresets();
 }
 
 // Run now (if DOM is ready) and also after DOMContentLoaded as fallback
@@ -379,6 +381,186 @@ function v2updateChipDiagnostic(count) {
     summary.parentNode.insertBefore(diag, summary);
   }
   diag.textContent = "Loaded chips: " + count;
+}
+
+var V2_SPEED_PRESET_FIELDS = [
+  { field: "prechecked_symptoms", group: "symptoms", containerId: "speedSymptoms" },
+  { field: "prechecked_relevant_negatives", group: "relevant_negatives", containerId: "speedNegs" },
+  { field: "prechecked_exam_findings", group: "exam_findings", containerId: "speedExam" },
+  { field: "prechecked_investigations", group: "investigations", containerId: "speedInvs" },
+  { field: "prechecked_plan_phrases", group: "plan_phrases", containerId: "speedPlans" },
+  { field: "prechecked_follow_up", group: "follow_up", containerId: "speedFollowupChips" }
+];
+
+var v2SpeedPresetLoadPromise = null;
+
+function v2isSpeedPresetMode() {
+  if (window.CLINICNOTE_DATA_MODE !== "v2") return false;
+  if (window.CLINICNOTE_SPEED_MODE === true) return true;
+  try {
+    return new URLSearchParams(window.location.search).get("speed") === "v1";
+  } catch (e) {
+    return false;
+  }
+}
+
+function v2ensureSpeedPresetModeMarker() {
+  var header = document.querySelector("#page-speed .page-header");
+  if (!header) return;
+  var marker = document.getElementById("v2SpeedPresetModeMarker");
+  if (!marker) {
+    marker = document.createElement("div");
+    marker.id = "v2SpeedPresetModeMarker";
+    marker.style.cssText = "display:none;margin-top:10px;font-size:12px;font-weight:800;color:#075985;background:#e0f2fe;border:1px solid #bae6fd;border-radius:999px;padding:7px 11px;width:max-content;max-width:100%";
+    marker.textContent = "Speed presets: ON";
+    header.appendChild(marker);
+  }
+  marker.style.display = v2isSpeedPresetMode() ? "inline-flex" : "none";
+}
+
+function v2preloadSpeedPresets() {
+  if (!v2isSpeedPresetMode()) return;
+  v2loadSpeedPresets();
+}
+
+function v2loadSpeedPresets() {
+  if (!v2isSpeedPresetMode()) return Promise.resolve(null);
+  if (window.CLINICNOTE_SPEED_PRESETS_BY_ID) {
+    return Promise.resolve(window.CLINICNOTE_SPEED_PRESETS_BY_ID);
+  }
+  if (v2SpeedPresetLoadPromise) return v2SpeedPresetLoadPromise;
+  if (typeof fetch !== "function") {
+    console.warn("Najm AI: speed presets cannot load because fetch is unavailable.");
+    return Promise.resolve(null);
+  }
+  v2SpeedPresetLoadPromise = fetch("./data/speed_presets.json?v=speed-presets-visible", { cache: "no-store" })
+    .then(function(resp) {
+      if (!resp.ok) throw new Error("HTTP " + resp.status);
+      return resp.json();
+    })
+    .then(function(list) {
+      var byId = {};
+      if (Array.isArray(list)) {
+        for (var i = 0; i < list.length; i++) {
+          if (list[i] && list[i].workflow_id) byId[list[i].workflow_id] = list[i];
+        }
+      }
+      window.CLINICNOTE_SPEED_PRESETS = list;
+      window.CLINICNOTE_SPEED_PRESETS_BY_ID = byId;
+      return byId;
+    })
+    .catch(function(err) {
+      console.warn("Najm AI: speed presets could not be loaded.", err);
+      window.CLINICNOTE_SPEED_PRESET_LOAD_ERROR = String(err && err.message ? err.message : err);
+      return null;
+    });
+  return v2SpeedPresetLoadPromise;
+}
+
+function v2ensureSpeedPresetBanner() {
+  var area = v2ensureChipGroupsArea();
+  if (!area) return null;
+  var banner = document.getElementById("v2SpeedPresetBanner");
+  if (!banner) {
+    banner = document.createElement("div");
+    banner.id = "v2SpeedPresetBanner";
+    banner.style.cssText = "display:none;border-radius:10px;padding:10px 12px;margin:0 0 12px;font-size:12px;line-height:1.45;border:1px solid #bae6fd;background:#eff6ff;color:#075985";
+    area.insertBefore(banner, area.firstChild);
+  }
+  return banner;
+}
+
+function v2setSpeedPresetBanner(kind, message, count) {
+  if (!v2isSpeedPresetMode()) {
+    var hidden = document.getElementById("v2SpeedPresetBanner");
+    if (hidden) hidden.style.display = "none";
+    return;
+  }
+  var banner = v2ensureSpeedPresetBanner();
+  if (!banner) return;
+  var styles = {
+    loaded: "display:block;border-radius:10px;padding:10px 12px;margin:0 0 12px;font-size:12px;line-height:1.45;border:1px solid #99f6e4;background:#f0fdfa;color:#0f766e",
+    missing: "display:block;border-radius:10px;padding:10px 12px;margin:0 0 12px;font-size:12px;line-height:1.45;border:1px solid #fde68a;background:#fffbeb;color:#92400e",
+    loading: "display:block;border-radius:10px;padding:10px 12px;margin:0 0 12px;font-size:12px;line-height:1.45;border:1px solid #bae6fd;background:#eff6ff;color:#075985",
+    error: "display:block;border-radius:10px;padding:10px 12px;margin:0 0 12px;font-size:12px;line-height:1.45;border:1px solid var(--red-border);background:var(--red-bg);color:var(--red)"
+  };
+  banner.style.cssText = styles[kind] || styles.loading;
+  banner.innerHTML = "<strong>" + v2escapeHtml(message) + "</strong>" + (typeof count === "number" ? "<div>Preset chips loaded: " + count + "</div>" : "");
+}
+
+function v2selectPresetChips(preset) {
+  var area = document.getElementById("v2ChipGroups");
+  if (!area || !preset) return { selected: 0, missing: [] };
+  var selected = 0;
+  var missing = [];
+  for (var f = 0; f < V2_SPEED_PRESET_FIELDS.length; f++) {
+    var cfg = V2_SPEED_PRESET_FIELDS[f];
+    var values = preset[cfg.field] || [];
+    for (var v = 0; v < values.length; v++) {
+      var expected = String(values[v] || "").trim();
+      if (!expected) continue;
+      var buttons = area.querySelectorAll('.chip[data-v2-group="' + cfg.group + '"]');
+      var matched = false;
+      for (var b = 0; b < buttons.length; b++) {
+        var actual = buttons[b].getAttribute("data-value") || buttons[b].textContent || "";
+        if (actual.trim() === expected) {
+          buttons[b].classList.add("selected");
+          matched = true;
+          selected += 1;
+          break;
+        }
+      }
+      if (!matched) missing.push(cfg.group + ": " + expected);
+    }
+  }
+  return { selected: selected, missing: missing };
+}
+
+function v2applySpeedPreset(resolved) {
+  if (!v2isSpeedPresetMode()) return;
+  var workflowId = resolved && resolved.workflow_id ? resolved.workflow_id : "";
+  var workflowName = currentVisitType || "";
+  v2setSpeedPresetBanner("loading", "Checking quick-start defaults...", null);
+  v2loadSpeedPresets().then(function(presetsById) {
+    var preset = presetsById && workflowId ? presetsById[workflowId] : null;
+    var debug = {
+      speed_flag: "v1",
+      selected_workflow_display_name: workflowName,
+      resolved_workflow_id: workflowId,
+      preset_exists: !!preset,
+      preset_chip_count: 0,
+      missing_chip_text: []
+    };
+    if (!preset) {
+      window.CLINICNOTE_SPEED_PRESET_DEBUG = debug;
+      v2setSpeedPresetBanner("missing", "No quick-start preset available for this workflow yet.", 0);
+      updateSelectedCount();
+      console.info("Najm AI speed preset", debug);
+      return;
+    }
+    var result = v2selectPresetChips(preset);
+    debug.preset_chip_count = result.selected;
+    debug.missing_chip_text = result.missing;
+    window.CLINICNOTE_SPEED_PRESET_DEBUG = debug;
+    if (result.selected > 0) {
+      v2setSpeedPresetBanner("loaded", "Quick-start defaults loaded. Review and untick anything that does not apply.", result.selected);
+    } else {
+      v2setSpeedPresetBanner("missing", "Quick-start preset found, but no matching chip buttons were selected.", 0);
+    }
+    updateSelectedCount();
+    console.info("Najm AI speed preset", debug);
+  }).catch(function(err) {
+    window.CLINICNOTE_SPEED_PRESET_DEBUG = {
+      speed_flag: "v1",
+      selected_workflow_display_name: workflowName,
+      resolved_workflow_id: workflowId,
+      preset_exists: false,
+      preset_chip_count: 0,
+      error: String(err && err.message ? err.message : err)
+    };
+    v2setSpeedPresetBanner("error", "Speed presets could not be loaded for this workflow.", 0);
+    updateSelectedCount();
+  });
 }
 
 function v2ensureChipGroupsArea() {
@@ -753,6 +935,7 @@ function v2getSelectedChips(containerId) {
     v2updateChipDiagnostic(v2countChips(chips));
 
     // Refresh summary after chip refill
+    v2applySpeedPreset(resolved);
     updateSelectedCount();
   };
 })();
