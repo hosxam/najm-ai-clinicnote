@@ -9,8 +9,19 @@ const EXPECTED_SPECIALTIES = [
   'Cardiology',
   'Pediatrics',
   'Orthopedics / MSK',
-  'OB/GYN'
+  'OB/GYN',
+  'Respiratory / Pulmonology',
+  'Gastroenterology',
+  'Neurology',
+  'Urology / Nephrology',
+  'ENT',
+  'Dermatology',
+  'Psychiatry / Mental Health',
+  'Endocrinology',
+  'Emergency Medicine'
 ];
+
+const REQUIRED_SAFETY_NOTE = 'These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment.';
 
 const REQUIRED_SPECIALTY_FIELDS = [
   'specialty_id',
@@ -64,6 +75,7 @@ const DISALLOWED_PHRASES = [
   'give iv',
   'urgent admission required',
   'diagnose',
+  'recommend treatment',
   'nhs approved',
   'mohap approved',
   'nice compliant',
@@ -111,6 +123,20 @@ function hasPatientIdentifierPattern(text) {
     /\b(?:mrn|medical record)\s*[:#-]?\s*[A-Z0-9-]{4,}\b/i.test(text) ||
     /\b(?:emirates id)\s*[:#-]?\s*\d{3,}\b/i.test(text)
   );
+}
+
+function isNegatedSafetyBoundary(text, phrase) {
+  const normalized = text.toLowerCase();
+  if (phrase === 'diagnose') {
+    return /\b(?:do not|does not|must not|not)\s+diagnose\b/.test(normalized);
+  }
+  if (phrase === 'recommend treatment') {
+    return (
+      /\b(?:do not|does not|must not|not)\s+recommend treatment\b/.test(normalized) ||
+      /\b(?:do not|does not|must not|not)\s+diagnose,\s+recommend treatment\b/.test(normalized)
+    );
+  }
+  return false;
 }
 
 function validateArrayOfStrings(value, label, errors) {
@@ -183,6 +209,9 @@ function main() {
       continue;
     }
     validateArrayOfStrings(specialty.safety_notes, `${specialtyLabel}.safety_notes`, errors);
+    if (Array.isArray(specialty.safety_notes) && !specialty.safety_notes.includes(REQUIRED_SAFETY_NOTE)) {
+      errors.push(`${specialtyLabel}: safety_notes must include the standard documentation-only safety boundary.`);
+    }
 
     const seenSections = new Set();
     for (const [sectionIndex, section] of specialty.sections.entries()) {
@@ -282,7 +311,7 @@ function main() {
   walkText(templates, (text, pointer) => {
     const normalized = text.toLowerCase();
     for (const phrase of DISALLOWED_PHRASES) {
-      if (normalized.includes(phrase)) {
+      if (normalized.includes(phrase) && !isNegatedSafetyBoundary(text, phrase)) {
         errors.push(`${pointer}: contains disallowed phrase "${phrase}".`);
       }
     }
@@ -296,11 +325,11 @@ function main() {
     }
   });
 
-  if (sectionCount < 30) {
-    warnings.push(`Only ${sectionCount} sections found; confirm this is enough for v3A coverage.`);
+  if (sectionCount < 100) {
+    warnings.push(`Only ${sectionCount} sections found; confirm this is enough for V3E coverage.`);
   }
-  if (promptCount < 90) {
-    warnings.push(`Only ${promptCount} prompts found; confirm this is enough for v3A coverage.`);
+  if (promptCount < 300) {
+    warnings.push(`Only ${promptCount} prompts found; confirm this is enough for V3E coverage.`);
   }
 
   if (errors.length) {

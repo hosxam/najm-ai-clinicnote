@@ -90,7 +90,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["general_examination_documentation"],
+        "optional_exam_prompt_triggers": [
+          "general_examination_documentation"
+        ],
         "safety_note": "This section structures history only and does not infer the cause of symptoms."
       },
       {
@@ -196,7 +198,12 @@
             "prompt_id": "allergy_status",
             "prompt_text": "Allergy status documented",
             "input_type": "select",
-            "values": ["not documented", "no allergy reported", "allergy reported", "uncertain"],
+            "values": [
+              "not documented",
+              "no allergy reported",
+              "allergy reported",
+              "uncertain"
+            ],
             "required_level": "safety"
           },
           {
@@ -273,7 +280,14 @@
             "prompt_id": "smoking_status",
             "prompt_text": "Smoking status if discussed",
             "input_type": "select",
-            "values": ["not documented", "never", "current", "former", "vaping or other nicotine use", "uncertain"],
+            "values": [
+              "not documented",
+              "never",
+              "current",
+              "former",
+              "vaping or other nicotine use",
+              "uncertain"
+            ],
             "required_level": "optional"
           },
           {
@@ -290,7 +304,9 @@
             "required_level": "optional"
           }
         ],
-        "optional_calculator_triggers": ["pack_year_documentation_context"],
+        "optional_calculator_triggers": [
+          "pack_year_documentation_context"
+        ],
         "optional_exam_prompt_triggers": [],
         "safety_note": "Calculator trigger is a future documentation aid only."
       },
@@ -327,7 +343,8 @@
     "safety_notes": [
       "Draft history prompts only.",
       "Clinician review required before use.",
-      "No data leaves the browser."
+      "No data leaves the browser.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment."
     ],
     "review_required": true
   },
@@ -374,8 +391,12 @@
             "required_level": "safety"
           }
         ],
-        "optional_calculator_triggers": ["chest_pain_risk_documentation_context"],
-        "optional_exam_prompt_triggers": ["cardiovascular_exam_documentation"],
+        "optional_calculator_triggers": [
+          "chest_pain_risk_documentation_context"
+        ],
+        "optional_exam_prompt_triggers": [
+          "cardiovascular_exam_documentation"
+        ],
         "safety_note": "This records history and does not classify chest pain risk."
       },
       {
@@ -410,7 +431,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["pulse_rhythm_documentation"],
+        "optional_exam_prompt_triggers": [
+          "pulse_rhythm_documentation"
+        ],
         "safety_note": "Do not infer rhythm or cause from symptoms alone."
       },
       {
@@ -444,8 +467,12 @@
             "required_level": "safety"
           }
         ],
-        "optional_calculator_triggers": ["syncope_risk_documentation_context"],
-        "optional_exam_prompt_triggers": ["postural_observation_documentation"],
+        "optional_calculator_triggers": [
+          "syncope_risk_documentation_context"
+        ],
+        "optional_exam_prompt_triggers": [
+          "postural_observation_documentation"
+        ],
         "safety_note": "This is a safety documentation prompt, not a risk decision."
       },
       {
@@ -480,7 +507,10 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["cardiorespiratory_exam_documentation", "oedema_exam_documentation"],
+        "optional_exam_prompt_triggers": [
+          "cardiorespiratory_exam_documentation",
+          "oedema_exam_documentation"
+        ],
         "safety_note": "Document only what was assessed or reported."
       },
       {
@@ -508,7 +538,9 @@
             "required_level": "optional"
           }
         ],
-        "optional_calculator_triggers": ["cardiovascular_risk_documentation_context"],
+        "optional_calculator_triggers": [
+          "cardiovascular_risk_documentation_context"
+        ],
         "optional_exam_prompt_triggers": [],
         "safety_note": "Calculator trigger is for future documentation context only."
       },
@@ -610,7 +642,8 @@
     "safety_notes": [
       "Draft cardiology history prompts only.",
       "Safety prompts do not decide risk or disposition.",
-      "Clinician review required before use."
+      "Clinician review required before use.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment."
     ],
     "review_required": true
   },
@@ -630,14 +663,27 @@
             "prompt_id": "age_category",
             "prompt_text": "Age category",
             "input_type": "select",
-            "values": ["newborn", "infant", "toddler", "preschool", "school age", "adolescent"],
+            "values": [
+              "newborn",
+              "infant",
+              "toddler",
+              "preschool",
+              "school age",
+              "adolescent"
+            ],
             "required_level": "core"
           },
           {
             "prompt_id": "source_of_history",
             "prompt_text": "Source of history",
             "input_type": "multi_select",
-            "values": ["parent", "guardian", "child", "school or nursery information", "other clinician-entered source"],
+            "values": [
+              "parent",
+              "guardian",
+              "child",
+              "school or nursery information",
+              "other clinician-entered source"
+            ],
             "required_level": "core"
           },
           {
@@ -682,8 +728,12 @@
             "required_level": "safety"
           }
         ],
-        "optional_calculator_triggers": ["pediatric_observation_documentation_context"],
-        "optional_exam_prompt_triggers": ["pediatric_general_exam_documentation"],
+        "optional_calculator_triggers": [
+          "pediatric_observation_documentation_context"
+        ],
+        "optional_exam_prompt_triggers": [
+          "pediatric_general_exam_documentation"
+        ],
         "safety_note": "This section records history and does not assess severity automatically."
       },
       {
@@ -712,7 +762,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["pediatric_respiratory_exam_documentation"],
+        "optional_exam_prompt_triggers": [
+          "pediatric_respiratory_exam_documentation"
+        ],
         "safety_note": "Document negatives only if assessed."
       },
       {
@@ -741,7 +793,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["pediatric_abdominal_exam_documentation"],
+        "optional_exam_prompt_triggers": [
+          "pediatric_abdominal_exam_documentation"
+        ],
         "safety_note": "Safety prompts are documentation prompts only."
       },
       {
@@ -769,8 +823,12 @@
             "required_level": "optional"
           }
         ],
-        "optional_calculator_triggers": ["growth_chart_documentation_context"],
-        "optional_exam_prompt_triggers": ["growth_parameters_documentation"],
+        "optional_calculator_triggers": [
+          "growth_chart_documentation_context"
+        ],
+        "optional_exam_prompt_triggers": [
+          "growth_parameters_documentation"
+        ],
         "safety_note": "Calculator trigger is a future documentation aid only."
       },
       {
@@ -900,7 +958,8 @@
     "safety_notes": [
       "Draft pediatric history prompts only.",
       "Parent or guardian context must be de-identified.",
-      "Clinician review required before use."
+      "Clinician review required before use.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment."
     ],
     "review_required": true
   },
@@ -954,7 +1013,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["joint_exam_documentation"],
+        "optional_exam_prompt_triggers": [
+          "joint_exam_documentation"
+        ],
         "safety_note": "History prompt only; do not infer injury severity."
       },
       {
@@ -967,7 +1028,12 @@
             "prompt_id": "trauma_present",
             "prompt_text": "Trauma or injury history",
             "input_type": "select",
-            "values": ["not documented", "no trauma reported", "trauma reported", "uncertain"],
+            "values": [
+              "not documented",
+              "no trauma reported",
+              "trauma reported",
+              "uncertain"
+            ],
             "required_level": "core"
           },
           {
@@ -984,8 +1050,12 @@
             "required_level": "conditional"
           }
         ],
-        "optional_calculator_triggers": ["injury_rule_documentation_context"],
-        "optional_exam_prompt_triggers": ["injury_exam_documentation"],
+        "optional_calculator_triggers": [
+          "injury_rule_documentation_context"
+        ],
+        "optional_exam_prompt_triggers": [
+          "injury_exam_documentation"
+        ],
         "safety_note": "Calculator trigger is for future documentation context only."
       },
       {
@@ -1014,7 +1084,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["functional_exam_documentation"],
+        "optional_exam_prompt_triggers": [
+          "functional_exam_documentation"
+        ],
         "safety_note": "Document only stated or assessed functional impact."
       },
       {
@@ -1049,7 +1121,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["spine_neurology_exam_documentation"],
+        "optional_exam_prompt_triggers": [
+          "spine_neurology_exam_documentation"
+        ],
         "safety_note": "Do not document red flags as absent unless assessed."
       },
       {
@@ -1078,7 +1152,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["inflammatory_joint_exam_documentation"],
+        "optional_exam_prompt_triggers": [
+          "inflammatory_joint_exam_documentation"
+        ],
         "safety_note": "This screen supports documentation only."
       },
       {
@@ -1107,7 +1183,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["acute_joint_exam_documentation"],
+        "optional_exam_prompt_triggers": [
+          "acute_joint_exam_documentation"
+        ],
         "safety_note": "Do not label the condition from history prompts alone."
       },
       {
@@ -1178,7 +1256,8 @@
     "safety_notes": [
       "Draft MSK history prompts only.",
       "Safety screens are documentation aids only.",
-      "Clinician review required before use."
+      "Clinician review required before use.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment."
     ],
     "review_required": true
   },
@@ -1217,12 +1296,22 @@
             "prompt_id": "pregnancy_status",
             "prompt_text": "Pregnancy status",
             "input_type": "select",
-            "values": ["not documented", "pregnant", "not pregnant", "postpartum", "uncertain"],
+            "values": [
+              "not documented",
+              "pregnant",
+              "not pregnant",
+              "postpartum",
+              "uncertain"
+            ],
             "required_level": "core"
           }
         ],
-        "optional_calculator_triggers": ["gestational_age_documentation_context"],
-        "optional_exam_prompt_triggers": ["obstetric_exam_documentation"],
+        "optional_calculator_triggers": [
+          "gestational_age_documentation_context"
+        ],
+        "optional_exam_prompt_triggers": [
+          "obstetric_exam_documentation"
+        ],
         "safety_note": "Do not infer pregnancy dates or status."
       },
       {
@@ -1258,7 +1347,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["pregnancy_symptom_exam_documentation"],
+        "optional_exam_prompt_triggers": [
+          "pregnancy_symptom_exam_documentation"
+        ],
         "safety_note": "Safety prompts support documentation only and do not decide urgency."
       },
       {
@@ -1287,7 +1378,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["bp_urine_documentation"],
+        "optional_exam_prompt_triggers": [
+          "bp_urine_documentation"
+        ],
         "safety_note": "Do not make risk conclusions from this template."
       },
       {
@@ -1346,7 +1439,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["gynaecology_exam_documentation"],
+        "optional_exam_prompt_triggers": [
+          "gynaecology_exam_documentation"
+        ],
         "safety_note": "Do not add sensitive details unless clinician-entered."
       },
       {
@@ -1375,7 +1470,9 @@
           }
         ],
         "optional_calculator_triggers": [],
-        "optional_exam_prompt_triggers": ["pelvic_exam_documentation"],
+        "optional_exam_prompt_triggers": [
+          "pelvic_exam_documentation"
+        ],
         "safety_note": "Sensitive history should be documented neutrally and only when discussed."
       },
       {
@@ -1477,7 +1574,3147 @@
     "safety_notes": [
       "Draft OB/GYN history prompts only.",
       "Sensitive history requires clinician judgment and privacy.",
-      "Clinician review required before use."
+      "Clinician review required before use.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment."
+    ],
+    "review_required": true
+  },
+  {
+    "specialty_id": "Respiratory / Pulmonology",
+    "specialty_name": "Respiratory / Pulmonology",
+    "template_version": "3.1.0-draft",
+    "source_status": "draft_unreviewed",
+    "sections": [
+      {
+        "section_id": "resp_presenting_complaint",
+        "section_label": "Presenting complaint",
+        "section_type": "core_history",
+        "display_order": 1,
+        "prompts": [
+          {
+            "prompt_id": "main_concern",
+            "prompt_text": "Main respiratory concern in the clinician's words",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "duration",
+            "prompt_text": "Duration of respiratory symptoms",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "impact",
+            "prompt_text": "Functional impact described by the patient",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "resp_cough_history",
+        "section_label": "Cough history",
+        "section_type": "symptom_history",
+        "display_order": 2,
+        "prompts": [
+          {
+            "prompt_id": "cough_type",
+            "prompt_text": "Cough type or pattern",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "cough_timing",
+            "prompt_text": "Timing, triggers, or nocturnal pattern",
+            "input_type": "text",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "associated_symptoms",
+            "prompt_text": "Associated symptoms reported with cough",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "resp_dyspnea_history",
+        "section_label": "Dyspnea history",
+        "section_type": "symptom_history",
+        "display_order": 3,
+        "prompts": [
+          {
+            "prompt_id": "dyspnea_onset",
+            "prompt_text": "Onset and progression of breathlessness",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "dyspnea_exertion",
+            "prompt_text": "Exertional limitation or baseline change",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "orthopnea_pnd",
+            "prompt_text": "Orthopnea or paroxysmal nocturnal dyspnea documented if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [
+          "mrc_dyspnea_scale"
+        ],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "resp_wheeze_history",
+        "section_label": "Wheeze history",
+        "section_type": "symptom_history",
+        "display_order": 4,
+        "prompts": [
+          {
+            "prompt_id": "wheeze_presence",
+            "prompt_text": "Wheeze presence and pattern",
+            "input_type": "select",
+            "required_level": "conditional",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "wheeze_triggers",
+            "prompt_text": "Triggers such as exercise, cold air, allergens, or infection",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "reliever_response",
+            "prompt_text": "Response to clinician-documented reliever use if relevant",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "resp_hemoptysis_history",
+        "section_label": "Hemoptysis history",
+        "section_type": "safety_screen",
+        "display_order": 5,
+        "prompts": [
+          {
+            "prompt_id": "hemoptysis_present",
+            "prompt_text": "Hemoptysis reported",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ],
+            "warning": "Document carefully; clinician assessment and local protocol apply."
+          },
+          {
+            "prompt_id": "hemoptysis_amount",
+            "prompt_text": "Amount or description if reported",
+            "input_type": "text",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "hemoptysis_context",
+            "prompt_text": "Associated fever, chest pain, weight loss, or anticoagulant context if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Safety documentation prompt only; clinician assessment and local protocol apply."
+      },
+      {
+        "section_id": "resp_sputum_characteristics",
+        "section_label": "Sputum characteristics",
+        "section_type": "symptom_history",
+        "display_order": 6,
+        "prompts": [
+          {
+            "prompt_id": "sputum_present",
+            "prompt_text": "Sputum production",
+            "input_type": "select",
+            "required_level": "conditional",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "sputum_colour",
+            "prompt_text": "Colour or consistency if documented",
+            "input_type": "text",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "sputum_volume",
+            "prompt_text": "Volume or change from baseline",
+            "input_type": "text",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "resp_constitutional_symptoms",
+        "section_label": "Constitutional symptoms",
+        "section_type": "systems_review",
+        "display_order": 7,
+        "prompts": [
+          {
+            "prompt_id": "fever",
+            "prompt_text": "Fever or chills documented if asked",
+            "input_type": "select",
+            "required_level": "conditional",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "weight_loss",
+            "prompt_text": "Unintentional weight loss documented if asked",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "night_sweats",
+            "prompt_text": "Night sweats documented if asked",
+            "input_type": "select",
+            "required_level": "conditional",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "resp_smoking_pack_years",
+        "section_label": "Smoking and pack-year context",
+        "section_type": "social_history",
+        "display_order": 8,
+        "prompts": [
+          {
+            "prompt_id": "smoking_status",
+            "prompt_text": "Smoking status",
+            "input_type": "select",
+            "required_level": "core",
+            "values": [
+              "never smoked",
+              "current smoker",
+              "ex-smoker",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "cigarettes_per_day",
+            "prompt_text": "Cigarettes per day if relevant",
+            "input_type": "number",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "years_smoked",
+            "prompt_text": "Years smoked if relevant",
+            "input_type": "number",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [
+          "pack_years"
+        ],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "resp_occupational_exposure",
+        "section_label": "Occupational and environmental exposure",
+        "section_type": "social_history",
+        "display_order": 9,
+        "prompts": [
+          {
+            "prompt_id": "occupation",
+            "prompt_text": "Occupation or exposure context",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "dust_fumes",
+            "prompt_text": "Dust, fumes, mould, animals, or chemical exposure if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "travel_tb_context",
+            "prompt_text": "Travel, TB contact, or infection exposure context if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "resp_atopy_allergy",
+        "section_label": "Atopy and allergy",
+        "section_type": "background_history",
+        "display_order": 10,
+        "prompts": [
+          {
+            "prompt_id": "atopy_history",
+            "prompt_text": "Asthma, eczema, rhinitis, or atopy history",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "allergen_triggers",
+            "prompt_text": "Allergen triggers if known",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "drug_allergies",
+            "prompt_text": "Drug allergies documented",
+            "input_type": "textarea",
+            "required_level": "core"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "resp_background_history",
+        "section_label": "PMH and medication context",
+        "section_type": "background_history",
+        "display_order": 11,
+        "prompts": [
+          {
+            "prompt_id": "resp_pmh",
+            "prompt_text": "Respiratory and relevant medical history",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "current_medications",
+            "prompt_text": "Current medication list and adherence context",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "vaccination_context",
+            "prompt_text": "Vaccination history if relevant",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "resp_ice",
+        "section_label": "Ideas, concerns, and expectations",
+        "section_type": "ice",
+        "display_order": 12,
+        "prompts": [
+          {
+            "prompt_id": "ideas",
+            "prompt_text": "Patient ideas about respiratory symptoms",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "concerns",
+            "prompt_text": "Patient concerns",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "expectations",
+            "prompt_text": "Patient expectations for the visit",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      }
+    ],
+    "safety_notes": [
+      "Draft Respiratory / Pulmonology history prompts only.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment."
+    ],
+    "review_required": true
+  },
+  {
+    "specialty_id": "Gastroenterology",
+    "specialty_name": "Gastroenterology",
+    "template_version": "3.1.0-draft",
+    "source_status": "draft_unreviewed",
+    "sections": [
+      {
+        "section_id": "gi_abdominal_pain_socrates",
+        "section_label": "Abdominal pain SOCRATES",
+        "section_type": "symptom_history",
+        "display_order": 1,
+        "prompts": [
+          {
+            "prompt_id": "site",
+            "prompt_text": "Pain site",
+            "input_type": "text",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "onset",
+            "prompt_text": "Onset and progression",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "character",
+            "prompt_text": "Character, radiation, timing, and severity",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "associated_symptoms",
+            "prompt_text": "Associated GI or systemic symptoms",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "gi_nausea_vomiting",
+        "section_label": "Nausea and vomiting",
+        "section_type": "symptom_history",
+        "display_order": 2,
+        "prompts": [
+          {
+            "prompt_id": "nausea_presence",
+            "prompt_text": "Nausea documented",
+            "input_type": "select",
+            "required_level": "conditional",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "vomiting_frequency",
+            "prompt_text": "Vomiting frequency and content if reported",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "hydration_context",
+            "prompt_text": "Hydration or oral intake context",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "gi_diarrhea",
+        "section_label": "Diarrhea history",
+        "section_type": "symptom_history",
+        "display_order": 3,
+        "prompts": [
+          {
+            "prompt_id": "stool_frequency",
+            "prompt_text": "Stool frequency and duration",
+            "input_type": "text",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "stool_character",
+            "prompt_text": "Stool character and mucus if reported",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "infective_exposure",
+            "prompt_text": "Food, travel, contact, or outbreak exposure if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "gi_constipation",
+        "section_label": "Constipation history",
+        "section_type": "symptom_history",
+        "display_order": 4,
+        "prompts": [
+          {
+            "prompt_id": "bowel_frequency",
+            "prompt_text": "Bowel frequency and baseline change",
+            "input_type": "text",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "straining",
+            "prompt_text": "Straining, incomplete emptying, or stool form",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "obstructive_symptoms",
+            "prompt_text": "Bloating, vomiting, or inability to pass stool/flatus if asked",
+            "input_type": "textarea",
+            "required_level": "safety",
+            "warning": "Document red-flag context only; clinician assessment applies."
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "gi_pr_bleeding",
+        "section_label": "PR bleeding",
+        "section_type": "safety_screen",
+        "display_order": 5,
+        "prompts": [
+          {
+            "prompt_id": "bleeding_present",
+            "prompt_text": "Rectal bleeding reported",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "bleeding_description",
+            "prompt_text": "Colour, amount, and pattern if reported",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "associated_red_flags",
+            "prompt_text": "Weight loss, anemia symptoms, bowel habit change, or family history if asked",
+            "input_type": "textarea",
+            "required_level": "safety"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Safety documentation prompt only; clinician assessment and local referral pathways apply."
+      },
+      {
+        "section_id": "gi_dysphagia",
+        "section_label": "Dysphagia",
+        "section_type": "safety_screen",
+        "display_order": 6,
+        "prompts": [
+          {
+            "prompt_id": "dysphagia_present",
+            "prompt_text": "Dysphagia reported",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "solids_liquids",
+            "prompt_text": "Solids, liquids, or progressive pattern",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "odynophagia_weight_loss",
+            "prompt_text": "Painful swallowing, weight loss, or regurgitation context if asked",
+            "input_type": "textarea",
+            "required_level": "safety"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "gi_jaundice",
+        "section_label": "Jaundice and hepatobiliary symptoms",
+        "section_type": "safety_screen",
+        "display_order": 7,
+        "prompts": [
+          {
+            "prompt_id": "jaundice_present",
+            "prompt_text": "Jaundice reported or observed",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "urine_stool_colour",
+            "prompt_text": "Dark urine or pale stool context if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "itch_fever_pain",
+            "prompt_text": "Itch, fever, or right upper quadrant pain if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "gi_red_flags",
+        "section_label": "GI red flags",
+        "section_type": "safety_screen",
+        "display_order": 8,
+        "prompts": [
+          {
+            "prompt_id": "weight_loss",
+            "prompt_text": "Unintentional weight loss documented if asked",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "persistent_vomiting",
+            "prompt_text": "Persistent vomiting documented if asked",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "family_history_gi",
+            "prompt_text": "Family history of GI malignancy or inflammatory bowel disease if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "gi_alcohol_history",
+        "section_label": "Alcohol history",
+        "section_type": "social_history",
+        "display_order": 9,
+        "prompts": [
+          {
+            "prompt_id": "alcohol_use",
+            "prompt_text": "Alcohol intake pattern",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "units_context",
+            "prompt_text": "Approximate units if clinician documented",
+            "input_type": "text",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "dependence_context",
+            "prompt_text": "Withdrawal or dependency context if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "gi_background_history",
+        "section_label": "PMH, drug, family, and social history",
+        "section_type": "background_history",
+        "display_order": 10,
+        "prompts": [
+          {
+            "prompt_id": "pmh",
+            "prompt_text": "Relevant medical and surgical history",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "medication_context",
+            "prompt_text": "Current medication list including GI-relevant medicines if documented",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "family_social_context",
+            "prompt_text": "Family and social context relevant to GI symptoms",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "gi_ice",
+        "section_label": "Ideas, concerns, and expectations",
+        "section_type": "ice",
+        "display_order": 11,
+        "prompts": [
+          {
+            "prompt_id": "ideas",
+            "prompt_text": "Patient ideas about GI symptoms",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "concerns",
+            "prompt_text": "Patient concerns",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "expectations",
+            "prompt_text": "Patient expectations for the visit",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      }
+    ],
+    "safety_notes": [
+      "Draft Gastroenterology history prompts only.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment."
+    ],
+    "review_required": true
+  },
+  {
+    "specialty_id": "Neurology",
+    "specialty_name": "Neurology",
+    "template_version": "3.1.0-draft",
+    "source_status": "draft_unreviewed",
+    "sections": [
+      {
+        "section_id": "neuro_headache_history",
+        "section_label": "Headache history",
+        "section_type": "symptom_history",
+        "display_order": 1,
+        "prompts": [
+          {
+            "prompt_id": "onset_pattern",
+            "prompt_text": "Onset, pattern, and progression",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "headache_features",
+            "prompt_text": "Site, character, severity, timing, and triggers",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "associated_features",
+            "prompt_text": "Nausea, visual symptoms, photophobia, neurological symptoms if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "neuro_seizure_history",
+        "section_label": "Seizure or episode history",
+        "section_type": "symptom_history",
+        "display_order": 2,
+        "prompts": [
+          {
+            "prompt_id": "episode_description",
+            "prompt_text": "Witnessed or patient-described episode features",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "duration_recovery",
+            "prompt_text": "Duration, recovery, and post-event state",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "preceding_factors",
+            "prompt_text": "Preceding symptoms, triggers, sleep, alcohol, or missed medicines if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "neuro_dizziness_vertigo",
+        "section_label": "Dizziness and vertigo",
+        "section_type": "symptom_history",
+        "display_order": 3,
+        "prompts": [
+          {
+            "prompt_id": "dizziness_type",
+            "prompt_text": "Vertigo, lightheadedness, imbalance, or unclear description",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "timing_triggers",
+            "prompt_text": "Timing, positional trigger, and duration",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "ear_neuro_features",
+            "prompt_text": "Associated hearing, tinnitus, headache, weakness, or visual symptoms if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "neuro_weakness_numbness",
+        "section_label": "Weakness and numbness",
+        "section_type": "symptom_history",
+        "display_order": 4,
+        "prompts": [
+          {
+            "prompt_id": "distribution",
+            "prompt_text": "Distribution and side of symptoms",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "onset_progression",
+            "prompt_text": "Onset and progression",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "functional_impact",
+            "prompt_text": "Speech, walking, hand function, swallowing, or falls context",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "neuro_tia_stroke_symptoms",
+        "section_label": "TIA or stroke-like symptoms",
+        "section_type": "safety_screen",
+        "display_order": 5,
+        "prompts": [
+          {
+            "prompt_id": "last_known_well",
+            "prompt_text": "Last known well time if relevant",
+            "input_type": "text",
+            "required_level": "safety",
+            "warning": "Documentation prompt only; local urgent-care protocol applies."
+          },
+          {
+            "prompt_id": "focal_symptoms",
+            "prompt_text": "Face, arm, speech, vision, coordination, or sensory symptoms",
+            "input_type": "textarea",
+            "required_level": "safety"
+          },
+          {
+            "prompt_id": "symptom_resolution",
+            "prompt_text": "Whether symptoms resolved, persisted, or fluctuated",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Time-critical documentation prompt only; clinical escalation is governed by local protocol."
+      },
+      {
+        "section_id": "neuro_cognitive_memory",
+        "section_label": "Cognitive and memory concerns",
+        "section_type": "symptom_history",
+        "display_order": 6,
+        "prompts": [
+          {
+            "prompt_id": "memory_concern",
+            "prompt_text": "Memory or cognitive concern described",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "functional_effect",
+            "prompt_text": "Impact on daily activities, work, or safety",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "collateral_history",
+            "prompt_text": "Collateral history source if available and appropriate",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "neuro_red_flags",
+        "section_label": "Neurological red flags",
+        "section_type": "safety_screen",
+        "display_order": 7,
+        "prompts": [
+          {
+            "prompt_id": "sudden_onset",
+            "prompt_text": "Sudden severe onset documented if asked",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "fever_neck_stiffness",
+            "prompt_text": "Fever, neck stiffness, immunosuppression, or cancer history if asked",
+            "input_type": "textarea",
+            "required_level": "safety"
+          },
+          {
+            "prompt_id": "new_neurological_deficit",
+            "prompt_text": "New neurological deficit documented if asked",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "neuro_driving_occupation",
+        "section_label": "Driving and occupation safety context",
+        "section_type": "social_history",
+        "display_order": 8,
+        "prompts": [
+          {
+            "prompt_id": "driving_context",
+            "prompt_text": "Driving, machinery, or safety-critical work context",
+            "input_type": "textarea",
+            "required_level": "conditional",
+            "warning": "Documentation context only; local laws and policies apply."
+          },
+          {
+            "prompt_id": "occupation",
+            "prompt_text": "Occupation and functional safety needs",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "falls_risk",
+            "prompt_text": "Falls or injury risk context if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation context only; local laws and policies apply."
+      },
+      {
+        "section_id": "neuro_background_history",
+        "section_label": "PMH, drug, family, and social history",
+        "section_type": "background_history",
+        "display_order": 9,
+        "prompts": [
+          {
+            "prompt_id": "pmh",
+            "prompt_text": "Neurological and relevant medical history",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "medications",
+            "prompt_text": "Current medication list and adherence context",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "family_social",
+            "prompt_text": "Family and social history relevant to neurological symptoms",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "neuro_ice",
+        "section_label": "Ideas, concerns, and expectations",
+        "section_type": "ice",
+        "display_order": 10,
+        "prompts": [
+          {
+            "prompt_id": "ideas",
+            "prompt_text": "Patient ideas about neurological symptoms",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "concerns",
+            "prompt_text": "Patient concerns",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "expectations",
+            "prompt_text": "Patient expectations for the visit",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      }
+    ],
+    "safety_notes": [
+      "Draft Neurology history prompts only.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment.",
+      "Neurology driving and safety prompts are documentation context only; local laws and policies apply."
+    ],
+    "review_required": true
+  },
+  {
+    "specialty_id": "Urology / Nephrology",
+    "specialty_name": "Urology / Nephrology",
+    "template_version": "3.1.0-draft",
+    "source_status": "draft_unreviewed",
+    "sections": [
+      {
+        "section_id": "uro_luts",
+        "section_label": "Lower urinary tract symptoms",
+        "section_type": "symptom_history",
+        "display_order": 1,
+        "prompts": [
+          {
+            "prompt_id": "storage_symptoms",
+            "prompt_text": "Frequency, urgency, nocturia, or incontinence symptoms",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "voiding_symptoms",
+            "prompt_text": "Hesitancy, weak stream, straining, or incomplete emptying",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "duration_bother",
+            "prompt_text": "Duration and symptom bother",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "uro_hematuria",
+        "section_label": "Hematuria",
+        "section_type": "safety_screen",
+        "display_order": 2,
+        "prompts": [
+          {
+            "prompt_id": "hematuria_present",
+            "prompt_text": "Visible or non-visible hematuria documented",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "hematuria_pattern",
+            "prompt_text": "Timing, clots, pain association, or recurrence",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "risk_context",
+            "prompt_text": "Smoking, occupational, stone, infection, or anticoagulant context if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "uro_loin_pain_renal_colic",
+        "section_label": "Loin pain / renal colic",
+        "section_type": "symptom_history",
+        "display_order": 3,
+        "prompts": [
+          {
+            "prompt_id": "pain_site_radiation",
+            "prompt_text": "Pain site, radiation, and character",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "pain_onset",
+            "prompt_text": "Onset, severity, and pattern",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "urinary_association",
+            "prompt_text": "Urinary symptoms, fever, nausea, or hematuria if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "uro_scrotal_pain_swelling",
+        "section_label": "Scrotal pain or swelling",
+        "section_type": "safety_screen",
+        "display_order": 4,
+        "prompts": [
+          {
+            "prompt_id": "onset",
+            "prompt_text": "Onset and progression of scrotal symptoms",
+            "input_type": "text",
+            "required_level": "safety"
+          },
+          {
+            "prompt_id": "pain_swelling_features",
+            "prompt_text": "Pain, swelling, trauma, urinary symptoms, or systemic symptoms",
+            "input_type": "textarea",
+            "required_level": "safety"
+          },
+          {
+            "prompt_id": "sexual_context",
+            "prompt_text": "Sexual history context if clinically appropriate and consented",
+            "input_type": "textarea",
+            "required_level": "conditional",
+            "warning": "Clinically appropriate context and consent required."
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Sensitive documentation prompt only; consent, privacy, clinician judgment, and local protocol apply."
+      },
+      {
+        "section_id": "uro_incontinence",
+        "section_label": "Urinary incontinence",
+        "section_type": "symptom_history",
+        "display_order": 5,
+        "prompts": [
+          {
+            "prompt_id": "incontinence_type",
+            "prompt_text": "Stress, urge, overflow, mixed, or unclear pattern",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "triggers_frequency",
+            "prompt_text": "Triggers, frequency, and impact",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "red_flag_context",
+            "prompt_text": "Neurological symptoms, retention, or recurrent infection context if asked",
+            "input_type": "textarea",
+            "required_level": "safety"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "uro_renal_symptoms",
+        "section_label": "Renal symptoms and fluid context",
+        "section_type": "symptom_history",
+        "display_order": 6,
+        "prompts": [
+          {
+            "prompt_id": "edema",
+            "prompt_text": "Swelling or fluid retention documented if asked",
+            "input_type": "select",
+            "required_level": "conditional",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "urine_output",
+            "prompt_text": "Urine output change if documented",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "bp_context",
+            "prompt_text": "Blood pressure context if clinician-entered",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "uro_ckd_context",
+        "section_label": "CKD context",
+        "section_type": "background_history",
+        "display_order": 7,
+        "prompts": [
+          {
+            "prompt_id": "ckd_stage_context",
+            "prompt_text": "Known kidney disease context if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "baseline_results",
+            "prompt_text": "Baseline renal function or urine results if clinician-entered",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "followup_context",
+            "prompt_text": "Nephrology follow-up or monitoring context if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "uro_nephrotoxic_drug_history",
+        "section_label": "Medication and nephrotoxic exposure history",
+        "section_type": "background_history",
+        "display_order": 8,
+        "prompts": [
+          {
+            "prompt_id": "current_medications",
+            "prompt_text": "Current medication list",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "renal_relevant_medicines",
+            "prompt_text": "NSAID, contrast, herbal, or other renal-relevant exposure if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "allergies",
+            "prompt_text": "Drug allergies documented",
+            "input_type": "textarea",
+            "required_level": "core"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "uro_family_social_sexual_history",
+        "section_label": "Family, social, and sexual history",
+        "section_type": "social_history",
+        "display_order": 9,
+        "prompts": [
+          {
+            "prompt_id": "family_history",
+            "prompt_text": "Family history of renal/urological disease if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "social_context",
+            "prompt_text": "Occupation, hydration, smoking, or activity context",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "sexual_history",
+            "prompt_text": "Sexual history if clinically appropriate and consented",
+            "input_type": "textarea",
+            "required_level": "conditional",
+            "warning": "Clinically appropriate context and consent required."
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Sensitive history requires appropriate context, consent, and privacy."
+      },
+      {
+        "section_id": "uro_ice",
+        "section_label": "Ideas, concerns, and expectations",
+        "section_type": "ice",
+        "display_order": 10,
+        "prompts": [
+          {
+            "prompt_id": "ideas",
+            "prompt_text": "Patient ideas about urinary or renal symptoms",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "concerns",
+            "prompt_text": "Patient concerns",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "expectations",
+            "prompt_text": "Patient expectations for the visit",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      }
+    ],
+    "safety_notes": [
+      "Draft Urology / Nephrology history prompts only.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment.",
+      "Urology sexual history prompts require clinically appropriate context, consent, and privacy."
+    ],
+    "review_required": true
+  },
+  {
+    "specialty_id": "ENT",
+    "specialty_name": "ENT",
+    "template_version": "3.1.0-draft",
+    "source_status": "draft_unreviewed",
+    "sections": [
+      {
+        "section_id": "ent_ear_pain",
+        "section_label": "Ear pain",
+        "section_type": "symptom_history",
+        "display_order": 1,
+        "prompts": [
+          {
+            "prompt_id": "pain_onset",
+            "prompt_text": "Onset and duration of ear pain",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "pain_features",
+            "prompt_text": "Severity, laterality, discharge, fever, or hearing change",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "water_trauma_context",
+            "prompt_text": "Swimming, trauma, or foreign body context if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "ent_hearing_loss",
+        "section_label": "Hearing loss",
+        "section_type": "symptom_history",
+        "display_order": 2,
+        "prompts": [
+          {
+            "prompt_id": "hearing_onset",
+            "prompt_text": "Onset and progression of hearing change",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "laterality",
+            "prompt_text": "Laterality and fluctuation",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "associated_tinnitus_vertigo",
+            "prompt_text": "Associated tinnitus, vertigo, pain, or discharge",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "ent_tinnitus",
+        "section_label": "Tinnitus",
+        "section_type": "symptom_history",
+        "display_order": 3,
+        "prompts": [
+          {
+            "prompt_id": "tinnitus_description",
+            "prompt_text": "Description, laterality, and duration",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "pulsatile_context",
+            "prompt_text": "Pulsatile nature documented if asked",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "impact",
+            "prompt_text": "Sleep, concentration, or distress impact",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "ent_vertigo",
+        "section_label": "Vertigo",
+        "section_type": "symptom_history",
+        "display_order": 4,
+        "prompts": [
+          {
+            "prompt_id": "vertigo_timing",
+            "prompt_text": "Timing, duration, and positional trigger",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "associated_ear_symptoms",
+            "prompt_text": "Hearing loss, tinnitus, fullness, or ear pain",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "neurological_context",
+            "prompt_text": "Neurological symptoms documented if asked",
+            "input_type": "textarea",
+            "required_level": "safety"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "ent_nasal_obstruction",
+        "section_label": "Nasal obstruction",
+        "section_type": "symptom_history",
+        "display_order": 5,
+        "prompts": [
+          {
+            "prompt_id": "obstruction_pattern",
+            "prompt_text": "Unilateral, bilateral, intermittent, or persistent obstruction",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "rhinorrhea_sneezing",
+            "prompt_text": "Rhinorrhea, sneezing, allergy, or smell change",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "trauma_surgery_context",
+            "prompt_text": "Trauma or previous nasal surgery context",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "ent_epistaxis",
+        "section_label": "Epistaxis",
+        "section_type": "safety_screen",
+        "display_order": 6,
+        "prompts": [
+          {
+            "prompt_id": "bleeding_pattern",
+            "prompt_text": "Frequency, amount, side, and duration",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "anticoagulant_context",
+            "prompt_text": "Anticoagulant, bleeding tendency, or trauma context if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "systemic_context",
+            "prompt_text": "Dizziness, anemia symptoms, or recurrent bleeding context if asked",
+            "input_type": "textarea",
+            "required_level": "safety"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "ent_sinus_symptoms",
+        "section_label": "Sinus symptoms",
+        "section_type": "symptom_history",
+        "display_order": 7,
+        "prompts": [
+          {
+            "prompt_id": "facial_pain_pressure",
+            "prompt_text": "Facial pain or pressure pattern",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "nasal_discharge",
+            "prompt_text": "Nasal discharge character and duration",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "fever_dental_context",
+            "prompt_text": "Fever, dental symptoms, or recurrent episodes if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "ent_sore_throat_voice",
+        "section_label": "Sore throat and voice change",
+        "section_type": "symptom_history",
+        "display_order": 8,
+        "prompts": [
+          {
+            "prompt_id": "throat_symptoms",
+            "prompt_text": "Sore throat duration and associated swallowing symptoms",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "voice_change",
+            "prompt_text": "Voice change duration and pattern",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "airway_red_flags",
+            "prompt_text": "Breathing difficulty, drooling, stridor, or severe swallowing difficulty if asked",
+            "input_type": "textarea",
+            "required_level": "safety",
+            "warning": "Documentation prompt only; local urgent-care protocol applies."
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "ent_neck_lump",
+        "section_label": "Neck lump",
+        "section_type": "safety_screen",
+        "display_order": 9,
+        "prompts": [
+          {
+            "prompt_id": "lump_duration",
+            "prompt_text": "Duration and progression of neck lump",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "lump_features",
+            "prompt_text": "Pain, size change, infection symptoms, or systemic symptoms",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "risk_context",
+            "prompt_text": "Smoking, alcohol, weight loss, voice change, or swallowing symptoms if asked",
+            "input_type": "textarea",
+            "required_level": "safety"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "ent_snoring_sleep",
+        "section_label": "Snoring and sleep apnea symptoms",
+        "section_type": "symptom_history",
+        "display_order": 10,
+        "prompts": [
+          {
+            "prompt_id": "snoring_pattern",
+            "prompt_text": "Snoring pattern and witnessed pauses if reported",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "daytime_sleepiness",
+            "prompt_text": "Daytime sleepiness or morning headache context",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "sleep_impact",
+            "prompt_text": "Work, driving, or safety impact if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "ent_background_ice",
+        "section_label": "PMH, drug, family, social history, and ICE",
+        "section_type": "background_history",
+        "display_order": 11,
+        "prompts": [
+          {
+            "prompt_id": "pmh_drug_allergy",
+            "prompt_text": "Relevant PMH, medication list, and allergies",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "family_social",
+            "prompt_text": "Family, smoking, occupation, and social context",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "ice",
+            "prompt_text": "Patient ideas, concerns, and expectations",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      }
+    ],
+    "safety_notes": [
+      "Draft ENT history prompts only.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment."
+    ],
+    "review_required": true
+  },
+  {
+    "specialty_id": "Dermatology",
+    "specialty_name": "Dermatology",
+    "template_version": "3.1.0-draft",
+    "source_status": "draft_unreviewed",
+    "sections": [
+      {
+        "section_id": "derm_rash_history",
+        "section_label": "Rash history",
+        "section_type": "symptom_history",
+        "display_order": 1,
+        "prompts": [
+          {
+            "prompt_id": "rash_onset",
+            "prompt_text": "Onset and progression of rash",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "rash_duration",
+            "prompt_text": "Duration and recurrence pattern",
+            "input_type": "text",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "associated_symptoms",
+            "prompt_text": "Pain, itch, fever, swelling, or systemic symptoms if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "derm_pruritus",
+        "section_label": "Pruritus",
+        "section_type": "symptom_history",
+        "display_order": 2,
+        "prompts": [
+          {
+            "prompt_id": "itch_presence",
+            "prompt_text": "Itch documented",
+            "input_type": "select",
+            "required_level": "conditional",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "itch_severity",
+            "prompt_text": "Severity and sleep impact",
+            "input_type": "select",
+            "required_level": "optional",
+            "values": [
+              "mild",
+              "moderate",
+              "severe",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "itch_triggers",
+            "prompt_text": "Heat, water, products, food, or environmental triggers",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "derm_lesion_morphology",
+        "section_label": "Lesion morphology",
+        "section_type": "symptom_history",
+        "display_order": 3,
+        "prompts": [
+          {
+            "prompt_id": "primary_morphology",
+            "prompt_text": "Clinician-documented morphology such as macule, papule, plaque, vesicle, or pustule",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "surface_changes",
+            "prompt_text": "Scale, crust, excoriation, ulceration, or discharge",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "evolution",
+            "prompt_text": "Change in morphology over time",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; document clinician-observed morphology."
+      },
+      {
+        "section_id": "derm_distribution",
+        "section_label": "Lesion distribution",
+        "section_type": "symptom_history",
+        "display_order": 4,
+        "prompts": [
+          {
+            "prompt_id": "body_sites",
+            "prompt_text": "Body sites involved",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "pattern",
+            "prompt_text": "Symmetry, flexural, extensor, dermatomal, or exposed-area pattern",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "extent",
+            "prompt_text": "Localized, widespread, or percentage area if clinician-entered",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "derm_abcde",
+        "section_label": "Skin lesion ABCDE documentation",
+        "section_type": "safety_screen",
+        "display_order": 5,
+        "prompts": [
+          {
+            "prompt_id": "asymmetry",
+            "prompt_text": "Asymmetry documented if assessed",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "border_colour_diameter",
+            "prompt_text": "Border, colour variation, diameter, and evolution if assessed",
+            "input_type": "textarea",
+            "required_level": "safety"
+          },
+          {
+            "prompt_id": "change_symptoms",
+            "prompt_text": "Change, bleeding, pain, or non-healing context if asked",
+            "input_type": "textarea",
+            "required_level": "safety"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Skin lesion safety documentation prompt only; clinician assessment and local referral pathways apply."
+      },
+      {
+        "section_id": "derm_triggers_exposures",
+        "section_label": "Triggers and exposures",
+        "section_type": "social_history",
+        "display_order": 6,
+        "prompts": [
+          {
+            "prompt_id": "contact_exposure",
+            "prompt_text": "New products, occupational exposure, plants, animals, or chemicals",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "infectious_exposure",
+            "prompt_text": "Contacts with rash, travel, bites, or infestation context if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "sun_exposure",
+            "prompt_text": "Sun exposure, tanning, or photosensitivity context",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "derm_atopy_history",
+        "section_label": "Atopy history",
+        "section_type": "background_history",
+        "display_order": 7,
+        "prompts": [
+          {
+            "prompt_id": "eczema_asthma_rhinitis",
+            "prompt_text": "Eczema, asthma, hay fever, or allergy history",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "family_atopy",
+            "prompt_text": "Family atopy history",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "skin_barrier_care",
+            "prompt_text": "Baseline skin care routine if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "derm_drug_rash_history",
+        "section_label": "Drug rash and medication history",
+        "section_type": "background_history",
+        "display_order": 8,
+        "prompts": [
+          {
+            "prompt_id": "new_medicines",
+            "prompt_text": "New medicines, supplements, or topical products if asked",
+            "input_type": "textarea",
+            "required_level": "safety"
+          },
+          {
+            "prompt_id": "reaction_timing",
+            "prompt_text": "Timing between exposure and rash onset",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "allergy_history",
+            "prompt_text": "Known allergies or prior reactions",
+            "input_type": "textarea",
+            "required_level": "core"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "derm_pmh_family_social",
+        "section_label": "PMH, family, and social history",
+        "section_type": "background_history",
+        "display_order": 9,
+        "prompts": [
+          {
+            "prompt_id": "pmh",
+            "prompt_text": "Relevant medical history and immune context",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "family_history",
+            "prompt_text": "Family history of skin disease if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "social_impact",
+            "prompt_text": "Impact on work, school, sleep, or wellbeing",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "derm_ice",
+        "section_label": "Ideas, concerns, and expectations",
+        "section_type": "ice",
+        "display_order": 10,
+        "prompts": [
+          {
+            "prompt_id": "ideas",
+            "prompt_text": "Patient ideas about skin symptoms",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "concerns",
+            "prompt_text": "Patient concerns",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "expectations",
+            "prompt_text": "Patient expectations for the visit",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      }
+    ],
+    "safety_notes": [
+      "Draft Dermatology history prompts only.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment."
+    ],
+    "review_required": true
+  },
+  {
+    "specialty_id": "Psychiatry / Mental Health",
+    "specialty_name": "Psychiatry / Mental Health",
+    "template_version": "3.1.0-draft",
+    "source_status": "draft_unreviewed",
+    "sections": [
+      {
+        "section_id": "psych_low_mood",
+        "section_label": "Low mood",
+        "section_type": "symptom_history",
+        "display_order": 1,
+        "prompts": [
+          {
+            "prompt_id": "mood_duration",
+            "prompt_text": "Duration and pattern of low mood",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "interest_pleasure",
+            "prompt_text": "Interest, pleasure, and motivation context",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "function",
+            "prompt_text": "Impact on work, study, relationships, or self-care",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "psych_anxiety",
+        "section_label": "Anxiety",
+        "section_type": "symptom_history",
+        "display_order": 2,
+        "prompts": [
+          {
+            "prompt_id": "worry_pattern",
+            "prompt_text": "Worry, triggers, and duration",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "physical_symptoms",
+            "prompt_text": "Physical anxiety symptoms if reported",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "avoidance",
+            "prompt_text": "Avoidance, reassurance seeking, or functional impact",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "psych_sleep",
+        "section_label": "Sleep",
+        "section_type": "symptom_history",
+        "display_order": 3,
+        "prompts": [
+          {
+            "prompt_id": "sleep_pattern",
+            "prompt_text": "Sleep onset, maintenance, early waking, or hypersomnia",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "sleep_routine",
+            "prompt_text": "Routine, caffeine, screens, shift work, or stress context",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "sleep_impact",
+            "prompt_text": "Daytime function and safety impact",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "psych_panic",
+        "section_label": "Panic symptoms",
+        "section_type": "symptom_history",
+        "display_order": 4,
+        "prompts": [
+          {
+            "prompt_id": "panic_episodes",
+            "prompt_text": "Panic episode description, frequency, and duration",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "panic_triggers",
+            "prompt_text": "Triggers or unexpected episodes",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "panic_avoidance",
+            "prompt_text": "Avoidance or fear of recurrence",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "psych_psychosis_screen",
+        "section_label": "Psychosis screen",
+        "section_type": "safety_screen",
+        "display_order": 5,
+        "prompts": [
+          {
+            "prompt_id": "hallucinations",
+            "prompt_text": "Hallucinations documented if assessed",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ],
+            "warning": "Sensitive risk documentation; clinician assessment and local protocol required."
+          },
+          {
+            "prompt_id": "delusional_beliefs",
+            "prompt_text": "Unusual beliefs or paranoia documented if assessed",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "thought_disorder",
+            "prompt_text": "Thought disorder or disorganization documented if assessed",
+            "input_type": "textarea",
+            "required_level": "safety"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Psychiatry risk documentation prompt only; clinician assessment and local protocol required."
+      },
+      {
+        "section_id": "psych_mania_screen",
+        "section_label": "Mania screen",
+        "section_type": "safety_screen",
+        "display_order": 6,
+        "prompts": [
+          {
+            "prompt_id": "elevated_mood",
+            "prompt_text": "Elevated or irritable mood documented if assessed",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "reduced_sleep_energy",
+            "prompt_text": "Reduced sleep with increased energy if assessed",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "risk_behaviour",
+            "prompt_text": "Risk-taking, spending, or disinhibition context if assessed",
+            "input_type": "textarea",
+            "required_level": "safety"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "psych_substance_use",
+        "section_label": "Substance use",
+        "section_type": "social_history",
+        "display_order": 7,
+        "prompts": [
+          {
+            "prompt_id": "substance_context",
+            "prompt_text": "Alcohol or substance use context if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "pattern_impact",
+            "prompt_text": "Pattern, quantity, and impact if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "withdrawal_context",
+            "prompt_text": "Withdrawal or dependence context if assessed",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "psych_risk_assessment",
+        "section_label": "Risk assessment",
+        "section_type": "safety_screen",
+        "display_order": 8,
+        "prompts": [
+          {
+            "prompt_id": "suicidal_ideation",
+            "prompt_text": "Suicidal ideation documented if assessed",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ],
+            "warning": "Clinician assessment and local protocol required."
+          },
+          {
+            "prompt_id": "self_harm_thoughts",
+            "prompt_text": "Self-harm thoughts or behavior documented if assessed",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "harm_to_others",
+            "prompt_text": "Thoughts of harm to others documented if assessed",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Risk documentation prompt only; this does not create crisis-management instructions."
+      },
+      {
+        "section_id": "psych_protective_factors",
+        "section_label": "Protective factors",
+        "section_type": "safety_screen",
+        "display_order": 9,
+        "prompts": [
+          {
+            "prompt_id": "supports",
+            "prompt_text": "Family, social, cultural, or professional supports",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "reasons_for_living",
+            "prompt_text": "Reasons for living or future orientation if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "safety_context",
+            "prompt_text": "Existing safety plan or support contact context if documented",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "psych_mse",
+        "section_label": "Mental state examination documentation",
+        "section_type": "exam_context",
+        "display_order": 10,
+        "prompts": [
+          {
+            "prompt_id": "appearance_behaviour",
+            "prompt_text": "Appearance and behavior if assessed",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "speech_mood_affect",
+            "prompt_text": "Speech, mood, and affect if assessed",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "thought_perception_cognition",
+            "prompt_text": "Thought, perception, cognition, insight, and judgment if assessed",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; record clinician-observed mental state findings."
+      },
+      {
+        "section_id": "psych_past_history",
+        "section_label": "Past psychiatric history",
+        "section_type": "background_history",
+        "display_order": 11,
+        "prompts": [
+          {
+            "prompt_id": "past_episodes",
+            "prompt_text": "Past episodes and prior care if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "previous_medicines",
+            "prompt_text": "Previous mental health medicines or therapies if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "admissions_context",
+            "prompt_text": "Prior crisis or admission context if documented",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "psych_social_history",
+        "section_label": "Social history",
+        "section_type": "social_history",
+        "display_order": 12,
+        "prompts": [
+          {
+            "prompt_id": "living_situation",
+            "prompt_text": "Living situation and supports",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "work_study",
+            "prompt_text": "Work, study, finances, or legal stressors if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "safeguarding_context",
+            "prompt_text": "Safeguarding or vulnerability context if assessed",
+            "input_type": "textarea",
+            "required_level": "safety"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Sensitive social history requires clinician judgment and local safeguarding protocol."
+      },
+      {
+        "section_id": "psych_ice",
+        "section_label": "Ideas, concerns, and expectations",
+        "section_type": "ice",
+        "display_order": 13,
+        "prompts": [
+          {
+            "prompt_id": "ideas",
+            "prompt_text": "Patient ideas about mental health symptoms",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "concerns",
+            "prompt_text": "Patient concerns",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "expectations",
+            "prompt_text": "Patient expectations for the visit",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      }
+    ],
+    "safety_notes": [
+      "Draft Psychiatry / Mental Health history prompts only.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment.",
+      "Psychiatry risk prompts are documentation prompts only and do not create crisis-management instructions."
+    ],
+    "review_required": true
+  },
+  {
+    "specialty_id": "Endocrinology",
+    "specialty_name": "Endocrinology",
+    "template_version": "3.1.0-draft",
+    "source_status": "draft_unreviewed",
+    "sections": [
+      {
+        "section_id": "endo_diabetes_review",
+        "section_label": "Diabetes review",
+        "section_type": "background_history",
+        "display_order": 1,
+        "prompts": [
+          {
+            "prompt_id": "diabetes_type_context",
+            "prompt_text": "Diabetes type or review context if clinician-entered",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "monitoring_context",
+            "prompt_text": "Home glucose or monitoring context if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "lifestyle_context",
+            "prompt_text": "Diet, activity, weight, or education context if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [
+          "bmi"
+        ],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "endo_hyperglycemia_symptoms",
+        "section_label": "Hyperglycemia symptoms",
+        "section_type": "symptom_history",
+        "display_order": 2,
+        "prompts": [
+          {
+            "prompt_id": "polyuria_polydipsia",
+            "prompt_text": "Polyuria, polydipsia, or thirst documented if asked",
+            "input_type": "select",
+            "required_level": "conditional",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "weight_change",
+            "prompt_text": "Weight change documented if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "visual_fatigue_context",
+            "prompt_text": "Blurred vision, fatigue, or infection context if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "endo_hypoglycemia_symptoms",
+        "section_label": "Hypoglycemia symptoms",
+        "section_type": "safety_screen",
+        "display_order": 3,
+        "prompts": [
+          {
+            "prompt_id": "hypoglycemia_symptoms",
+            "prompt_text": "Hypoglycemia symptoms documented if asked",
+            "input_type": "select",
+            "required_level": "safety",
+            "values": [
+              "present",
+              "absent",
+              "not asked",
+              "not documented"
+            ]
+          },
+          {
+            "prompt_id": "frequency_context",
+            "prompt_text": "Frequency, triggers, and recovery context if documented",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "awareness_context",
+            "prompt_text": "Awareness and impact on driving/work if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "endo_diabetes_complications",
+        "section_label": "Diabetes complications screen",
+        "section_type": "background_history",
+        "display_order": 4,
+        "prompts": [
+          {
+            "prompt_id": "foot_symptoms",
+            "prompt_text": "Foot symptoms, ulcers, or neuropathy symptoms if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "eye_kidney_context",
+            "prompt_text": "Eye, kidney, or urine result context if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "cardiovascular_context",
+            "prompt_text": "Cardiovascular symptoms or risk context if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "endo_thyroid_hyper",
+        "section_label": "Hyperthyroid symptom context",
+        "section_type": "symptom_history",
+        "display_order": 5,
+        "prompts": [
+          {
+            "prompt_id": "palpitations_tremor",
+            "prompt_text": "Palpitations, tremor, heat intolerance, or sweating if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "weight_bowel_change",
+            "prompt_text": "Weight or bowel habit change if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "neck_eye_context",
+            "prompt_text": "Neck swelling or eye symptoms if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "endo_thyroid_hypo",
+        "section_label": "Hypothyroid symptom context",
+        "section_type": "symptom_history",
+        "display_order": 6,
+        "prompts": [
+          {
+            "prompt_id": "fatigue_cold",
+            "prompt_text": "Fatigue, cold intolerance, or low energy if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "skin_hair_bowel",
+            "prompt_text": "Skin, hair, bowel, or menstrual changes if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "weight_mood_context",
+            "prompt_text": "Weight or mood context if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "endo_adrenal_symptoms",
+        "section_label": "Adrenal symptom context",
+        "section_type": "symptom_history",
+        "display_order": 7,
+        "prompts": [
+          {
+            "prompt_id": "postural_symptoms",
+            "prompt_text": "Postural symptoms or salt craving if asked",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "pigmentation_weight",
+            "prompt_text": "Pigmentation, weight change, or GI symptoms if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "steroid_context",
+            "prompt_text": "Steroid exposure or withdrawal context if documented",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "endo_osteoporosis_fragility",
+        "section_label": "Osteoporosis and fragility fracture context",
+        "section_type": "background_history",
+        "display_order": 8,
+        "prompts": [
+          {
+            "prompt_id": "fracture_history",
+            "prompt_text": "Fragility fracture or falls history if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "risk_context",
+            "prompt_text": "Menopause, steroid, smoking, alcohol, or family history context if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "bone_health_results",
+            "prompt_text": "Bone health results if clinician-entered",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "endo_medication_review",
+        "section_label": "Medication review",
+        "section_type": "background_history",
+        "display_order": 9,
+        "prompts": [
+          {
+            "prompt_id": "current_medicines",
+            "prompt_text": "Current endocrine-related medicines and adherence context",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "side_effects",
+            "prompt_text": "Side effects or tolerance context if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "allergies",
+            "prompt_text": "Drug allergies documented",
+            "input_type": "textarea",
+            "required_level": "core"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "endo_family_social_ice",
+        "section_label": "Family, social history, and ICE",
+        "section_type": "ice",
+        "display_order": 10,
+        "prompts": [
+          {
+            "prompt_id": "family_history",
+            "prompt_text": "Family history of endocrine disease if asked",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "social_context",
+            "prompt_text": "Work, diet, activity, smoking, alcohol, and support context",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "ice",
+            "prompt_text": "Patient ideas, concerns, and expectations",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      }
+    ],
+    "safety_notes": [
+      "Draft Endocrinology history prompts only.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment."
+    ],
+    "review_required": true
+  },
+  {
+    "specialty_id": "Emergency Medicine",
+    "specialty_name": "Emergency Medicine",
+    "template_version": "3.1.0-draft",
+    "source_status": "draft_unreviewed",
+    "sections": [
+      {
+        "section_id": "em_abcde_documentation",
+        "section_label": "ABCDE documentation",
+        "section_type": "core_history",
+        "display_order": 1,
+        "prompts": [
+          {
+            "prompt_id": "airway_breathing",
+            "prompt_text": "Airway and breathing documentation if assessed",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "circulation",
+            "prompt_text": "Circulation and perfusion documentation if assessed",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "disability_exposure",
+            "prompt_text": "Disability and exposure documentation if assessed",
+            "input_type": "textarea",
+            "required_level": "core"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Emergency documentation prompt only; clinical escalation is governed by local protocol."
+      },
+      {
+        "section_id": "em_sample_history",
+        "section_label": "SAMPLE history",
+        "section_type": "core_history",
+        "display_order": 2,
+        "prompts": [
+          {
+            "prompt_id": "symptoms",
+            "prompt_text": "Symptoms and presenting event",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "allergies_medicines",
+            "prompt_text": "Allergies and medicines",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "past_last_events",
+            "prompt_text": "Past history, last oral intake or relevant last event, and events leading to presentation",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "em_trauma_mechanism",
+        "section_label": "Trauma mechanism",
+        "section_type": "symptom_history",
+        "display_order": 3,
+        "prompts": [
+          {
+            "prompt_id": "mechanism",
+            "prompt_text": "Mechanism, energy, and time of trauma",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "injury_sites",
+            "prompt_text": "Reported injury sites and symptoms",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "safety_equipment",
+            "prompt_text": "Helmet, seatbelt, fall height, or protective equipment context if relevant",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "em_time_critical_fields",
+        "section_label": "Time-critical documentation fields",
+        "section_type": "safety_screen",
+        "display_order": 4,
+        "prompts": [
+          {
+            "prompt_id": "symptom_onset_time",
+            "prompt_text": "Symptom onset or discovery time if relevant",
+            "input_type": "text",
+            "required_level": "safety"
+          },
+          {
+            "prompt_id": "arrival_time_context",
+            "prompt_text": "Arrival or assessment time context if documented",
+            "input_type": "text",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "team_updates",
+            "prompt_text": "Clinician-documented updates or handover times",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Time-critical documentation prompt only; local protocol applies."
+      },
+      {
+        "section_id": "em_vitals_news_context",
+        "section_label": "Vitals and NEWS-style context",
+        "section_type": "safety_screen",
+        "display_order": 5,
+        "prompts": [
+          {
+            "prompt_id": "vitals",
+            "prompt_text": "Clinician-entered vital signs",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "oxygen_consciousness",
+            "prompt_text": "Oxygen requirement and consciousness level if assessed",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "news_context",
+            "prompt_text": "NEWS-style context if used locally and clinician-entered",
+            "input_type": "textarea",
+            "required_level": "conditional",
+            "warning": "Documentation context only; no score or escalation advice is generated."
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Observation documentation prompt only; no score or escalation advice is generated."
+      },
+      {
+        "section_id": "em_stroke_like_presentations",
+        "section_label": "Stroke-like presentation documentation",
+        "section_type": "safety_screen",
+        "display_order": 6,
+        "prompts": [
+          {
+            "prompt_id": "last_known_well",
+            "prompt_text": "Last known well time if relevant",
+            "input_type": "text",
+            "required_level": "safety"
+          },
+          {
+            "prompt_id": "neurological_symptoms",
+            "prompt_text": "Face, arm, speech, vision, balance, or sensory symptoms",
+            "input_type": "textarea",
+            "required_level": "safety"
+          },
+          {
+            "prompt_id": "anticoagulant_context",
+            "prompt_text": "Anticoagulant or bleeding risk context if documented",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Time-critical documentation prompt only; clinical escalation is governed by local protocol."
+      },
+      {
+        "section_id": "em_chest_pain_onset",
+        "section_label": "Chest pain onset documentation",
+        "section_type": "safety_screen",
+        "display_order": 7,
+        "prompts": [
+          {
+            "prompt_id": "pain_onset",
+            "prompt_text": "Onset time, activity, and progression",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "pain_features",
+            "prompt_text": "Site, character, radiation, associated symptoms",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "cardiac_context",
+            "prompt_text": "Risk factors and prior cardiac history if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [
+          "shock_index",
+          "mean_arterial_pressure"
+        ],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "em_sepsis_source_time",
+        "section_label": "Sepsis source and time documentation",
+        "section_type": "safety_screen",
+        "display_order": 8,
+        "prompts": [
+          {
+            "prompt_id": "suspected_source",
+            "prompt_text": "Suspected source documented by clinician if considered",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "infection_context",
+            "prompt_text": "Fever, rigors, exposure, or recent infection context",
+            "input_type": "textarea",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "time_context",
+            "prompt_text": "Time of observations, cultures, or clinician actions if documented",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; local sepsis protocol governs clinical action."
+      },
+      {
+        "section_id": "em_pmh_drug_allergy",
+        "section_label": "PMH, medicines, and allergies",
+        "section_type": "background_history",
+        "display_order": 9,
+        "prompts": [
+          {
+            "prompt_id": "pmh",
+            "prompt_text": "Relevant past medical history",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "medicines",
+            "prompt_text": "Current medication list and adherence context",
+            "input_type": "textarea",
+            "required_level": "core"
+          },
+          {
+            "prompt_id": "allergies",
+            "prompt_text": "Drug and other allergies documented",
+            "input_type": "textarea",
+            "required_level": "core"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      },
+      {
+        "section_id": "em_ice",
+        "section_label": "Ideas, concerns, and expectations",
+        "section_type": "ice",
+        "display_order": 10,
+        "prompts": [
+          {
+            "prompt_id": "ideas",
+            "prompt_text": "Patient or carer ideas where possible",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "concerns",
+            "prompt_text": "Patient or carer concerns where possible",
+            "input_type": "textarea",
+            "required_level": "optional"
+          },
+          {
+            "prompt_id": "expectations",
+            "prompt_text": "Patient or carer expectations where possible",
+            "input_type": "textarea",
+            "required_level": "optional"
+          }
+        ],
+        "optional_calculator_triggers": [],
+        "optional_exam_prompt_triggers": [],
+        "safety_note": "Documentation prompt only; clinician judgment required."
+      }
+    ],
+    "safety_notes": [
+      "Draft Emergency Medicine history prompts only.",
+      "These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment.",
+      "Emergency and time-critical prompts are documentation prompts only; clinical escalation is governed by local protocol."
     ],
     "review_required": true
   }

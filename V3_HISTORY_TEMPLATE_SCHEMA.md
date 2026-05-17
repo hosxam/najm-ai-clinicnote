@@ -1,6 +1,6 @@
 # V3 History Template Schema
 
-`data/v3_specialty_history_templates.json` defines draft, specialty-specific history documentation templates for future ClinicNote v3 work. This file is data architecture only and is not wired into the live UI in v3A.
+`data/v3_specialty_history_templates.json` defines draft, specialty-specific history documentation templates for future ClinicNote v3 work. This file is data architecture only and is not wired into the live UI.
 
 ## File Shape
 
@@ -44,7 +44,7 @@
 - `specialty_id`: Stable specialty identifier or display specialty name.
 - `specialty_name`: Human-readable specialty name.
 - `template_version`: Template content version.
-- `source_status`: Must be `draft_unreviewed` in v3A.
+- `source_status`: Must be `draft_unreviewed`.
 - `sections`: Ordered history documentation sections.
 - `safety_notes`: Specialty-level safety notes.
 - `review_required`: Must be `true`.
@@ -56,8 +56,8 @@
 - `section_type`: Grouping label such as `core_history`, `symptom_history`, `risk_history`, `background_history`, `social_history`, `ice`, or `safety_screen`.
 - `display_order`: Numeric ordering value.
 - `prompts`: Ordered prompt objects.
-- `optional_calculator_triggers`: Optional array of future calculator suggestion keys. These are not calculators and should not calculate anything in v3A.
-- `optional_exam_prompt_triggers`: Optional array of future examination documentation prompt keys. These are not examination recommendations in v3A.
+- `optional_calculator_triggers`: Optional array of future calculator suggestion keys. These are not calculators and should not calculate anything in this data file.
+- `optional_exam_prompt_triggers`: Optional array of future examination documentation prompt keys. These are not examination recommendations in this data file.
 - `safety_note`: Section-level documentation safety reminder.
 
 ## Prompt Fields
@@ -72,12 +72,27 @@
 
 ## Validation Rules
 
-- The v3A file must contain exactly 5 specialties.
+- The V3E file must contain exactly 14 specialties:
+  - General Medicine / GP
+  - Cardiology
+  - Pediatrics
+  - Orthopedics / MSK
+  - OB/GYN
+  - Respiratory / Pulmonology
+  - Gastroenterology
+  - Neurology
+  - Urology / Nephrology
+  - ENT
+  - Dermatology
+  - Psychiatry / Mental Health
+  - Endocrinology
+  - Emergency Medicine
 - `specialty_id` values must be unique.
 - Section IDs must be unique within each specialty.
 - Prompt IDs must be unique within each section.
 - `source_status` must be `draft_unreviewed`.
 - `review_required` must be `true`.
+- Each specialty must include the standard safety note: `These prompts support documentation only. They do not diagnose, recommend treatment, or replace clinician judgment.`
 - `required_level` must be valid.
 - `input_type` must be valid.
 - Select-style prompts must include non-empty `values`.
