@@ -281,9 +281,20 @@ footer a{color:#d9e4f2}
 .resource-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-width:920px;margin:0 auto}
 .resource-link{background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:13px 12px;color:var(--gray-800);font-size:12px;font-weight:800;box-shadow:var(--shadow)}
 .resource-link:hover{text-decoration:none;background:var(--primary-bg);color:var(--primary-dark);border-color:#bfe3e0}
+.calculator-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px}
+.calculator-card{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:18px;box-shadow:var(--shadow)}
+.calculator-card h3{font-size:16px;margin:0 0 6px;color:var(--gray-900)}
+.calculator-card p{font-size:12px;color:var(--gray-500);line-height:1.5;margin-bottom:12px}
+.calculator-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:12px}
+.calculator-fields .form-group{margin-bottom:0}
+.calculator-result{min-height:58px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:10px 12px;font-size:12px;line-height:1.5;color:var(--gray-700);white-space:pre-wrap;margin-top:10px}
+.calculator-result.calc-result-error{border-color:#f4d47c;background:#fff8e5;color:#6f4700}
+.calculator-safety{font-size:11px;color:var(--gray-500);line-height:1.45;margin-top:10px}
+.calculator-actions{display:flex;gap:8px;flex-wrap:wrap}
+.calculator-banner{background:#f3fbfa;border:1px solid #cfe6e4;border-radius:12px;padding:14px 16px;color:var(--gray-700);font-size:13px;line-height:1.55;margin-bottom:16px}
 @media(max-width:900px){.product-row{grid-template-columns:1fr}.hero h1{font-size:36px}.hero{padding:58px 16px 42px}.speed-mode-box{padding:20px}.trust-item{text-align:center}.two-col{grid-template-columns:1fr}.output-card{position:static}}
 @media(max-width:900px){.examples-grid{grid-template-columns:1fr}.feedback-fields{grid-template-columns:1fr}.feedback-card-grid{grid-template-columns:1fr}.resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:640px){.nav-inner{height:64px;padding:0 14px}.nav-links{top:64px}.nav-logo .sub{display:none}.hero h1{font-size:30px}.hero p{font-size:14px}.hero-microcopy{font-size:12px}.hero-ctas .btn,.gen-row .btn{width:100%;justify-content:center}.hero-stat{min-width:0;flex:1;padding:12px 8px}.trust-grid{grid-template-columns:1fr}.product-item{text-align:left}.speed-mode-box{padding:18px 14px}.chip{font-size:11px;min-height:34px;padding:8px 11px}.chip-group{gap:6px}.output-header{overflow-x:auto;flex-wrap:nowrap}.output-tab{white-space:nowrap;flex:0 0 auto}#v2ChipGroups .speed-section{padding:14px}#v2ChipGroups [data-v2-custom-row]>div{flex-direction:column!important;align-items:stretch!important}#v2ChipGroups [data-v2-custom-row] .btn{width:100%;justify-content:center}.form-group select,.form-group input,.form-group textarea{font-size:16px}.output-actions .btn{flex:1;justify-content:center}.page-header h2{font-size:26px}.two-col,.two-col>div,.speed-mode-box,#v2SearchArea,#v2SearchArea>div,#v2ChipGroups,#v2ChipGroups .speed-section,.output-card{min-width:0;max-width:100%;overflow-wrap:anywhere}.note-phi-warn,.phi-warning,.prompts-box,#v2CustomSafetyNote,.amber-box,.output-body,.speed-tip,.example-block pre{overflow-wrap:anywhere;word-break:normal}.form-group select,.form-group input,.form-group textarea,.speed-section input,.speed-section textarea{max-width:100%;min-width:0}.status-bar{max-width:100%}.trust-badges{justify-content:flex-start}.trust-badge{font-size:11px}.feedback-panel{padding:16px}}
+@media(max-width:640px){.nav-inner{height:64px;padding:0 14px}.nav-links{top:64px}.nav-logo .sub{display:none}.hero h1{font-size:30px}.hero p{font-size:14px}.hero-microcopy{font-size:12px}.hero-ctas .btn,.gen-row .btn{width:100%;justify-content:center}.hero-stat{min-width:0;flex:1;padding:12px 8px}.trust-grid{grid-template-columns:1fr}.product-item{text-align:left}.speed-mode-box{padding:18px 14px}.chip{font-size:11px;min-height:34px;padding:8px 11px}.chip-group{gap:6px}.output-header{overflow-x:auto;flex-wrap:nowrap}.output-tab{white-space:nowrap;flex:0 0 auto}#v2ChipGroups .speed-section{padding:14px}#v2ChipGroups [data-v2-custom-row]>div{flex-direction:column!important;align-items:stretch!important}#v2ChipGroups [data-v2-custom-row] .btn{width:100%;justify-content:center}.form-group select,.form-group input,.form-group textarea{font-size:16px}.output-actions .btn{flex:1;justify-content:center}.page-header h2{font-size:26px}.two-col,.two-col>div,.speed-mode-box,#v2SearchArea,#v2SearchArea>div,#v2ChipGroups,#v2ChipGroups .speed-section,.output-card{min-width:0;max-width:100%;overflow-wrap:anywhere}.note-phi-warn,.phi-warning,.prompts-box,#v2CustomSafetyNote,.amber-box,.output-body,.speed-tip,.example-block pre{overflow-wrap:anywhere;word-break:normal}.form-group select,.form-group input,.form-group textarea,.speed-section input,.speed-section textarea{max-width:100%;min-width:0}.status-bar{max-width:100%}.trust-badges{justify-content:flex-start}.trust-badge{font-size:11px}.feedback-panel{padding:16px}.calculator-grid,.calculator-fields{grid-template-columns:1fr}.calculator-actions .btn{flex:1;justify-content:center}}
 </style>
 </head>
 <body><div class="safety-banner">Do not enter patient names, IDs, or contact information. ClinicNote by Najm AI does not store or transmit any data.</div>
@@ -297,6 +308,7 @@ footer a{color:#d9e4f2}
 <a data-page="home" onclick="showPage('home')">Home</a>
 <a data-page="speed" onclick="showPage('speed')">OPD Note Builder</a>
 <a id="reportNavLink" data-page="report" onclick="showPage('report')">Medical Report Draft</a>
+<a id="calculatorNavLink" data-page="calculators" onclick="showPage('calculators')" style="display:none">Calculators</a>
 <a data-page="feedback" onclick="showPage('feedback')">Feedback</a>
 <a data-page="safety" onclick="showPage('safety')">Safety</a>
 <a data-page="privacy" onclick="showPage('privacy')">Privacy</a>
@@ -823,6 +835,104 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 </div>
 </div>
 </div>
+<div id="page-calculators" class="page">
+<div class="page-header">
+<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px">
+<div><h2>Clinical Documentation Calculators</h2><p>Optional client-side calculators for clinician-entered values. Results are for documentation support only and require clinician interpretation.</p></div>
+<div class="status-bar"><span class="status-dot"></span><span>Feature flag: calc=v1</span></div>
+</div>
+</div>
+<div class="calculator-banner">
+Calculator values are processed locally in your browser. Do not enter patient-identifiable information. Calculator outputs are documentation aids only and do not diagnose, recommend treatment, or replace clinician judgment.
+</div>
+<div class="calculator-grid">
+<article class="calculator-card" data-calculator-card="bmi">
+<h3>BMI</h3>
+<p>Screening/documentation measure from clinician-entered height and weight.</p>
+<div class="calculator-fields">
+<div class="form-group"><label for="calc-bmi-height">Height (cm)</label><input id="calc-bmi-height" type="number" min="1" step="0.1" inputmode="decimal" placeholder="e.g. 170"></div>
+<div class="form-group"><label for="calc-bmi-weight">Weight (kg)</label><input id="calc-bmi-weight" type="number" min="1" step="0.1" inputmode="decimal" placeholder="e.g. 75"></div>
+</div>
+<div class="calculator-actions">
+<button class="btn btn-primary btn-sm" type="button" onclick="ClinicNoteCalculators.calculateFromUI('bmi')">Calculate</button>
+<button class="btn btn-outline btn-sm" type="button" onclick="ClinicNoteCalculators.copyCalculatorResult('bmi')">Copy Result</button>
+<button class="btn btn-ghost btn-sm" type="button" onclick="ClinicNoteCalculators.clearCalculatorInputs('bmi')">Clear</button>
+</div>
+<div id="calcResult-bmi" class="calculator-result">Result will appear here.</div>
+<div class="calculator-safety">BMI is a screening/documentation measure and does not replace clinician assessment.</div>
+</article>
+
+<article class="calculator-card" data-calculator-card="pack_years">
+<h3>Pack Years</h3>
+<p>Smoking exposure documentation from clinician-entered smoking history.</p>
+<div class="calculator-fields">
+<div class="form-group"><label for="calc-pack-cigarettes">Cigarettes per day</label><input id="calc-pack-cigarettes" type="number" min="0" step="0.1" inputmode="decimal" placeholder="e.g. 10"></div>
+<div class="form-group"><label for="calc-pack-years">Years smoked</label><input id="calc-pack-years" type="number" min="0" step="0.1" inputmode="decimal" placeholder="e.g. 15"></div>
+</div>
+<div class="calculator-actions">
+<button class="btn btn-primary btn-sm" type="button" onclick="ClinicNoteCalculators.calculateFromUI('pack_years')">Calculate</button>
+<button class="btn btn-outline btn-sm" type="button" onclick="ClinicNoteCalculators.copyCalculatorResult('pack_years')">Copy Result</button>
+<button class="btn btn-ghost btn-sm" type="button" onclick="ClinicNoteCalculators.clearCalculatorInputs('pack_years')">Clear</button>
+</div>
+<div id="calcResult-pack_years" class="calculator-result">Result will appear here.</div>
+<div class="calculator-safety">Pack years are for smoking exposure documentation only.</div>
+</article>
+
+<article class="calculator-card" data-calculator-card="mean_arterial_pressure">
+<h3>Mean Arterial Pressure</h3>
+<p>Calculated observation value from clinician-entered blood pressure readings.</p>
+<div class="calculator-fields">
+<div class="form-group"><label for="calc-map-sbp">Systolic BP (mmHg)</label><input id="calc-map-sbp" type="number" min="1" step="1" inputmode="numeric" placeholder="e.g. 120"></div>
+<div class="form-group"><label for="calc-map-dbp">Diastolic BP (mmHg)</label><input id="calc-map-dbp" type="number" min="1" step="1" inputmode="numeric" placeholder="e.g. 80"></div>
+</div>
+<div class="calculator-actions">
+<button class="btn btn-primary btn-sm" type="button" onclick="ClinicNoteCalculators.calculateFromUI('mean_arterial_pressure')">Calculate</button>
+<button class="btn btn-outline btn-sm" type="button" onclick="ClinicNoteCalculators.copyCalculatorResult('mean_arterial_pressure')">Copy Result</button>
+<button class="btn btn-ghost btn-sm" type="button" onclick="ClinicNoteCalculators.clearCalculatorInputs('mean_arterial_pressure')">Clear</button>
+</div>
+<div id="calcResult-mean_arterial_pressure" class="calculator-result">Result will appear here.</div>
+<div class="calculator-safety">MAP is a calculated value for documentation. Interpret in clinical context.</div>
+</article>
+
+<article class="calculator-card" data-calculator-card="shock_index">
+<h3>Shock Index</h3>
+<p>Documentation calculation from clinician-entered heart rate and systolic blood pressure.</p>
+<div class="calculator-fields">
+<div class="form-group"><label for="calc-shock-hr">Heart rate (beats/min)</label><input id="calc-shock-hr" type="number" min="1" step="1" inputmode="numeric" placeholder="e.g. 90"></div>
+<div class="form-group"><label for="calc-shock-sbp">Systolic BP (mmHg)</label><input id="calc-shock-sbp" type="number" min="1" step="1" inputmode="numeric" placeholder="e.g. 120"></div>
+</div>
+<div class="calculator-actions">
+<button class="btn btn-primary btn-sm" type="button" onclick="ClinicNoteCalculators.calculateFromUI('shock_index')">Calculate</button>
+<button class="btn btn-outline btn-sm" type="button" onclick="ClinicNoteCalculators.copyCalculatorResult('shock_index')">Copy Result</button>
+<button class="btn btn-ghost btn-sm" type="button" onclick="ClinicNoteCalculators.clearCalculatorInputs('shock_index')">Clear</button>
+</div>
+<div id="calcResult-shock_index" class="calculator-result">Result will appear here.</div>
+<div class="calculator-safety">Shock index is a documentation calculation and does not determine management by itself.</div>
+</article>
+
+<article class="calculator-card" data-calculator-card="mrc_dyspnea_scale">
+<h3>MRC Dyspnea Scale</h3>
+<p>Symptom burden documentation from a clinician-selected grade.</p>
+<div class="calculator-fields" style="grid-template-columns:1fr">
+<div class="form-group"><label for="calc-mrc-grade">MRC grade</label><select id="calc-mrc-grade">
+<option value="">Select grade</option>
+<option value="1">1. Breathless only with strenuous exercise</option>
+<option value="2">2. Short of breath when hurrying on level ground or walking up a slight hill</option>
+<option value="3">3. Walks slower than people of the same age because of breathlessness or stops for breath when walking at own pace</option>
+<option value="4">4. Stops for breath after about 100 meters or after a few minutes on level ground</option>
+<option value="5">5. Too breathless to leave the house or breathless when dressing/undressing</option>
+</select></div>
+</div>
+<div class="calculator-actions">
+<button class="btn btn-primary btn-sm" type="button" onclick="ClinicNoteCalculators.calculateFromUI('mrc_dyspnea_scale')">Calculate</button>
+<button class="btn btn-outline btn-sm" type="button" onclick="ClinicNoteCalculators.copyCalculatorResult('mrc_dyspnea_scale')">Copy Result</button>
+<button class="btn btn-ghost btn-sm" type="button" onclick="ClinicNoteCalculators.clearCalculatorInputs('mrc_dyspnea_scale')">Clear</button>
+</div>
+<div id="calcResult-mrc_dyspnea_scale" class="calculator-result">Result will appear here.</div>
+<div class="calculator-safety">MRC dyspnea grade documents symptom burden. It does not establish a diagnosis or recommend treatment.</div>
+</article>
+</div>
+</div>
 <div id="page-presets" class="page">
 <div class="page-header"><h2>Specialty Presets</h2><p>Browse all predefined Speed Types and documentation prompts by specialty.</p></div>
 <div id="presetsContent"></div>
@@ -979,6 +1089,9 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 // ---- Feature Flag: MUST be set before v2_workflow_ui.js loads ----
 var clinicNoteParams = new URLSearchParams(window.location.search);
 window.CLINICNOTE_DATA_MODE = (clinicNoteParams.get("data") === "v1") ? "v1" : "v2";
+function isCalculatorToolsEnabled() {
+  return new URLSearchParams(window.location.search).get("calc") === "v1";
+}
 function isSpeedPresetModeEnabled() {
   var params = new URLSearchParams(window.location.search);
   if (window.CLINICNOTE_DATA_MODE !== "v2") return false;
@@ -986,6 +1099,8 @@ function isSpeedPresetModeEnabled() {
   if (params.get("speed") === "off") return false;
   return true;
 }
+window.isCalculatorToolsEnabled = isCalculatorToolsEnabled;
+window.CLINICNOTE_CALCULATORS_ENABLED = isCalculatorToolsEnabled();
 window.isSpeedPresetModeEnabled = isSpeedPresetModeEnabled;
 window.CLINICNOTE_SPEED_MODE = isSpeedPresetModeEnabled();
 </script>
@@ -1032,6 +1147,7 @@ window.cleanOutputPhraseList = cleanOutputPhraseList;
 </script>
 <script src="./analytics-safe.js?v=privacy-dry-run"></script>
 <script src="./export-local.js?v=local-export"></script>
+<script src="./calculator-tools.js?v=v3c-low-risk"></script>
 <script src="./forms-config.js?v=scribe-live"></script>
 <script src="./v2_workflow_ui_2.js?v=language-cleanup"></script>
 <script>
@@ -1122,7 +1238,7 @@ var SD=(function(){
   }
   return sd;
 })();
-function showPage(pageId){var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open");if(pageId==="speed"){populateSpeedSpecialty()}if(pageId==="report"){initMedicalReportModule()}}
+function showPage(pageId){if(pageId==="calculators"&&!isCalculatorToolsEnabled())pageId="speed";var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open");if(pageId==="speed"){populateSpeedSpecialty()}if(pageId==="report"){initMedicalReportModule()}}
 function upVT(){var spec=document.getElementById("specialty").value;var vt=document.getElementById("visitType");vt.innerHTML="";var types=SD[spec].types;var keys=Object.keys(types);vt.innerHTML="<option value=\"\">Select a visit type</option>";for(var i=0;i<keys.length;i++){var opt=document.createElement("option");opt.value=keys[i];opt.textContent=keys[i];vt.appendChild(opt)}upP()}
 function upP(){var spec=document.getElementById("specialty").value;var vt=document.getElementById("visitType").value;var c=document.getElementById("promptsContainer");var l=document.getElementById("promptsList");if(!vt||!SD[spec].types[vt]){c.style.display="none";return}c.style.display="block";l.innerHTML="";var p=SD[spec].types[vt];for(var i=0;i<p.length;i++){var li=document.createElement("li");li.textContent=p[i];l.appendChild(li)}}
 function val(id){var el=document.getElementById(id);if(!el)return"[not documented]";var v=cleanOutputPhrase(el.value);return v||"[not documented]"}
@@ -1710,7 +1826,7 @@ window.renderClinicNoteFormActions = renderClinicNoteFormActions;
   });
 })();
 
-document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();showPage(isReportModuleEnabled()?'report':(window.CLINICNOTE_DATA_MODE==='v2'?'speed':'home'));buildPresets();renderClinicNoteFormActions();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
+document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();var calcNav=document.getElementById("calculatorNavLink");if(calcNav&&isCalculatorToolsEnabled()){calcNav.style.display=""}showPage(isCalculatorToolsEnabled()?'calculators':(isReportModuleEnabled()?'report':(window.CLINICNOTE_DATA_MODE==='v2'?'speed':'home')));buildPresets();renderClinicNoteFormActions();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
 
 </script>
 </body>
