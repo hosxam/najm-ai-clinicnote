@@ -1,0 +1,541 @@
+[
+  {
+    "workflow_id": "gp-diabetes-followup",
+    "workflow_display_name": "Diabetes follow-up",
+    "specialty": "General Medicine / GP",
+    "suggested_calculators": [
+      {
+        "calculator_id": "bmi",
+        "calculator_name": "BMI",
+        "relevance_reason": "May support documentation of weight-related context when height and weight are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Diabetes follow-up with documented height and weight.",
+        "safety_note": "Documentation aid only. BMI requires clinician interpretation and does not create management advice."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. Clinician review required."
+  },
+  {
+    "workflow_id": "gp-hypertension-followup",
+    "workflow_display_name": "Hypertension follow-up",
+    "specialty": "General Medicine / GP",
+    "suggested_calculators": [
+      {
+        "calculator_id": "bmi",
+        "calculator_name": "BMI",
+        "relevance_reason": "May support documentation of weight context when height and weight are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Hypertension follow-up with documented height and weight.",
+        "safety_note": "Documentation aid only. BMI does not create treatment advice."
+      },
+      {
+        "calculator_id": "mean_arterial_pressure",
+        "calculator_name": "Mean arterial pressure",
+        "relevance_reason": "May support documentation of a derived blood pressure value when readings are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Hypertension follow-up with documented systolic and diastolic blood pressure.",
+        "safety_note": "Documentation aid only. Interpret in clinical context."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. Clinician review required."
+  },
+  {
+    "workflow_id": "gp-shortness-of-breath",
+    "workflow_display_name": "Shortness of breath",
+    "specialty": "General Medicine / GP",
+    "suggested_calculators": [
+      {
+        "calculator_id": "mrc_dyspnea_scale",
+        "calculator_name": "MRC dyspnea scale",
+        "relevance_reason": "May support documentation of breathlessness impact when functional limitation is clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Breathlessness workflow with documented functional limitation.",
+        "safety_note": "Documentation aid only. Does not establish a diagnosis or treatment plan."
+      },
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of vital-sign context when pulse and systolic blood pressure are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Breathlessness workflow with documented heart rate and systolic blood pressure.",
+        "safety_note": "Documentation aid only. Does not determine management."
+      },
+      {
+        "calculator_id": "wells_pe",
+        "calculator_name": "Wells PE",
+        "relevance_reason": "Future placeholder for clinician-entered pulmonary embolism probability documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed dyspnea documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "news2",
+        "calculator_name": "NEWS2",
+        "relevance_reason": "Future placeholder for clinician-entered acute observation documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 11,
+        "trigger_context": "Only for a future reviewed acute observation documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
+  },
+  {
+    "workflow_id": "gp-chest-pain",
+    "workflow_display_name": "Chest pain",
+    "specialty": "General Medicine / GP",
+    "suggested_calculators": [
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of vital-sign context when pulse and systolic blood pressure are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Chest pain workflow with documented heart rate and systolic blood pressure.",
+        "safety_note": "Documentation aid only. Does not determine management."
+      },
+      {
+        "calculator_id": "mean_arterial_pressure",
+        "calculator_name": "Mean arterial pressure",
+        "relevance_reason": "May support documentation of a derived blood pressure value when readings are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Chest pain workflow with documented systolic and diastolic blood pressure.",
+        "safety_note": "Documentation aid only. Interpret in clinical context."
+      },
+      {
+        "calculator_id": "heart_score",
+        "calculator_name": "HEART Score",
+        "relevance_reason": "Future placeholder for clinician-entered chest pain risk documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed chest pain documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "wells_pe",
+        "calculator_name": "Wells PE",
+        "relevance_reason": "Future placeholder for clinician-entered pulmonary embolism probability documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 11,
+        "trigger_context": "Only for a future reviewed chest pain documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
+  },
+  {
+    "workflow_id": "gp-cough",
+    "workflow_display_name": "Cough",
+    "specialty": "General Medicine / GP",
+    "suggested_calculators": [
+      {
+        "calculator_id": "pack_years",
+        "calculator_name": "Pack years",
+        "relevance_reason": "May support documentation of smoking exposure when tobacco history is clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Adult cough workflow with clinician-entered smoking history.",
+        "safety_note": "Documentation aid only. Does not create screening or treatment advice."
+      },
+      {
+        "calculator_id": "mrc_dyspnea_scale",
+        "calculator_name": "MRC dyspnea scale",
+        "relevance_reason": "May support documentation of breathlessness impact if dyspnea is part of the cough history.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Cough workflow with clinician-entered breathlessness impact.",
+        "safety_note": "Documentation aid only. Does not establish a diagnosis or treatment plan."
+      },
+      {
+        "calculator_id": "curb_65",
+        "calculator_name": "CURB-65",
+        "relevance_reason": "Future placeholder for clinician-entered pneumonia severity documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed pneumonia documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
+  },
+  {
+    "workflow_id": "gp-fatigue",
+    "workflow_display_name": "Fatigue",
+    "specialty": "General Medicine / GP",
+    "suggested_calculators": [
+      {
+        "calculator_id": "bmi",
+        "calculator_name": "BMI",
+        "relevance_reason": "May support documentation of weight context when height and weight are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Fatigue workflow with documented height and weight.",
+        "safety_note": "Documentation aid only. BMI requires clinician interpretation."
+      },
+      {
+        "calculator_id": "epworth_sleepiness_scale",
+        "calculator_name": "Epworth Sleepiness Scale",
+        "relevance_reason": "Future placeholder for clinician-entered daytime sleepiness questionnaire documentation.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "registry_only",
+        "display_priority": 8,
+        "trigger_context": "Only for a future reviewed sleepiness documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. Clinician review required."
+  },
+  {
+    "workflow_id": "gp-dizziness",
+    "workflow_display_name": "Dizziness",
+    "specialty": "General Medicine / GP",
+    "suggested_calculators": [
+      {
+        "calculator_id": "mean_arterial_pressure",
+        "calculator_name": "Mean arterial pressure",
+        "relevance_reason": "May support documentation of a derived blood pressure value when readings are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Dizziness workflow with documented systolic and diastolic blood pressure.",
+        "safety_note": "Documentation aid only. Interpret in clinical context."
+      },
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of vital-sign context when pulse and systolic blood pressure are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Dizziness workflow with documented heart rate and systolic blood pressure.",
+        "safety_note": "Documentation aid only. Does not determine management."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. Clinician review required."
+  },
+  {
+    "workflow_id": "gp-lab-result-review",
+    "workflow_display_name": "Lab result review",
+    "specialty": "General Medicine / GP",
+    "suggested_calculators": [
+      {
+        "calculator_id": "bmi",
+        "calculator_name": "BMI",
+        "relevance_reason": "May support documentation of metabolic context only when height and weight are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Lab review with clinician-entered height and weight when relevant.",
+        "safety_note": "Documentation aid only. Use only when relevant to the clinician-entered context."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. Clinician review required."
+  },
+  {
+    "workflow_id": "gp-palpitations",
+    "workflow_display_name": "Palpitations",
+    "specialty": "General Medicine / GP",
+    "suggested_calculators": [
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of vital-sign context when pulse and systolic blood pressure are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Palpitations workflow with documented heart rate and systolic blood pressure.",
+        "safety_note": "Documentation aid only. Does not determine management."
+      },
+      {
+        "calculator_id": "cha2ds2_vasc",
+        "calculator_name": "CHA2DS2-VASc",
+        "relevance_reason": "Future placeholder for clinician-entered thromboembolic risk documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed atrial fibrillation documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "has_bled",
+        "calculator_name": "HAS-BLED",
+        "relevance_reason": "Future placeholder for clinician-entered bleeding risk documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 11,
+        "trigger_context": "Only for a future reviewed anticoagulation documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
+  },
+  {
+    "workflow_id": "gp-headache",
+    "workflow_display_name": "Headache",
+    "specialty": "General Medicine / GP",
+    "suggested_calculators": [
+      {
+        "calculator_id": "glasgow_coma_scale",
+        "calculator_name": "Glasgow Coma Scale",
+        "relevance_reason": "Future placeholder for clinician-entered neurological observation documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed neurological observation documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "canadian_ct_head_rule",
+        "calculator_name": "Canadian CT Head Rule",
+        "relevance_reason": "Future placeholder for clinician-entered head injury rule documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 11,
+        "trigger_context": "Only for a future reviewed head injury documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
+  },
+  {
+    "workflow_id": "ent-dizziness-vertigo",
+    "workflow_display_name": "Dizziness / vertigo",
+    "specialty": "ENT",
+    "suggested_calculators": [
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of vital-sign context if pulse and systolic blood pressure are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "ENT dizziness workflow with documented heart rate and systolic blood pressure.",
+        "safety_note": "Documentation aid only. Does not determine management."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. Clinician review required."
+  },
+  {
+    "workflow_id": "ent-voice-complaint",
+    "workflow_display_name": "Voice complaint",
+    "specialty": "ENT",
+    "suggested_calculators": [
+      {
+        "calculator_id": "pack_years",
+        "calculator_name": "Pack years",
+        "relevance_reason": "May support documentation of smoking exposure if tobacco history is relevant and clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Voice complaint workflow with clinician-entered smoking history.",
+        "safety_note": "Documentation aid only. Does not create screening or treatment advice."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. Clinician review required."
+  },
+  {
+    "workflow_id": "msk-knee-pain",
+    "workflow_display_name": "Knee pain",
+    "specialty": "Orthopedics / MSK",
+    "suggested_calculators": [
+      {
+        "calculator_id": "bmi",
+        "calculator_name": "BMI",
+        "relevance_reason": "May support documentation of weight-related context when height and weight are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Knee pain workflow with documented height and weight when relevant.",
+        "safety_note": "Documentation aid only. BMI requires clinician interpretation."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. Clinician review required."
+  },
+  {
+    "workflow_id": "msk-osteoarthritis-followup",
+    "workflow_display_name": "Osteoarthritis follow-up",
+    "specialty": "Orthopedics / MSK",
+    "suggested_calculators": [
+      {
+        "calculator_id": "bmi",
+        "calculator_name": "BMI",
+        "relevance_reason": "May support documentation of weight-related context when height and weight are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Osteoarthritis follow-up with documented height and weight when relevant.",
+        "safety_note": "Documentation aid only. BMI requires clinician interpretation."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. Clinician review required."
+  },
+  {
+    "workflow_id": "psych-low-mood",
+    "workflow_display_name": "Low mood",
+    "specialty": "Psychiatry / Mental Health",
+    "suggested_calculators": [
+      {
+        "calculator_id": "phq_2",
+        "calculator_name": "PHQ-2",
+        "relevance_reason": "Future placeholder for clinician-entered brief mood questionnaire documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed mood questionnaire documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "phq_9",
+        "calculator_name": "PHQ-9",
+        "relevance_reason": "Future placeholder for clinician-entered mood questionnaire documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "registry_only",
+        "display_priority": 11,
+        "trigger_context": "Only for a future reviewed mood questionnaire documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. Mental health placeholders require separate safety review before any UI use."
+  },
+  {
+    "workflow_id": "psych-anxiety",
+    "workflow_display_name": "Anxiety",
+    "specialty": "Psychiatry / Mental Health",
+    "suggested_calculators": [
+      {
+        "calculator_id": "gad_7",
+        "calculator_name": "GAD-7",
+        "relevance_reason": "Future placeholder for clinician-entered anxiety questionnaire documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed anxiety questionnaire documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. Mental health placeholders require separate safety review before any UI use."
+  },
+  {
+    "workflow_id": "psych-sleep-difficulty",
+    "workflow_display_name": "Sleep difficulty",
+    "specialty": "Psychiatry / Mental Health",
+    "suggested_calculators": [
+      {
+        "calculator_id": "epworth_sleepiness_scale",
+        "calculator_name": "Epworth Sleepiness Scale",
+        "relevance_reason": "Future placeholder for clinician-entered daytime sleepiness questionnaire documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed sleepiness questionnaire documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. Questionnaire placeholders require separate safety review before any UI use."
+  }
+]
