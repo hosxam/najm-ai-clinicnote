@@ -5,6 +5,8 @@ function v2showSearchUI() {
   var v2sa = document.getElementById("v2SearchArea");
   if (window.CLINICNOTE_DATA_MODE !== "v2") {
     if (v2sa) v2sa.style.display = "none";
+    var af = document.getElementById("v2AutofillControls");
+    if (af) af.style.display = "none";
     return;
   }
 
@@ -31,6 +33,7 @@ function v2showSearchUI() {
     smBox.parentNode.insertBefore(v2sa, smBox);
   }
   v2sa.style.display = "block";
+  v2ensureAutofillControls();
 
   // Show v2 features within speed content (history prompts, etc.)
   var v2f = document.getElementById("v2Features");
@@ -423,6 +426,113 @@ function v2isSpeedPresetOffFallback() {
   }
 }
 
+function v2ensureAutofillControls() {
+  if (window.CLINICNOTE_DATA_MODE !== "v2") return;
+  var searchArea = document.getElementById("v2SearchArea");
+  if (!searchArea || !searchArea.parentNode) return;
+  var controls = document.getElementById("v2AutofillControls");
+  if (!controls) {
+    controls = document.createElement("div");
+    controls.id = "v2AutofillControls";
+    controls.style.cssText = "background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:14px 16px;margin:-4px 0 16px;box-shadow:var(--shadow);font-size:12px;color:var(--gray-700)";
+    controls.innerHTML =
+      '<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">' +
+      '<div style="min-width:220px;flex:1">' +
+      '<div id="v2AutofillStatus" style="font-size:13px;font-weight:800;color:var(--gray-900);margin-bottom:4px">Autofill: ON</div>' +
+      '<div style="line-height:1.45">Autofill pre-selects common documentation chips for the selected workflow. Review and untick anything that does not apply.</div>' +
+      '</div>' +
+      '<button id="v2AutofillToggle" type="button" class="btn btn-outline btn-sm" onclick="v2toggleAutofill()">Turn Autofill off</button>' +
+      '</div>' +
+      '<div style="border-top:1px solid var(--gray-200);margin-top:10px;padding-top:10px;line-height:1.45">' +
+      '<div style="font-weight:800;color:var(--gray-800);margin-bottom:3px">What is Autofill?</div>' +
+      '<div>Autofill pre-selects common positives, relevant negatives, exam prompts, plan phrases, and follow-up phrases for the selected workflow. It is only a starting point. Remove anything that does not apply and add your own details before generating.</div>' +
+      '<div style="font-size:11px;color:var(--gray-500);margin-top:5px">Only keep findings you assessed or discussed. The final note remains a clinician-reviewed draft.</div>' +
+      '</div>';
+    if (searchArea.nextSibling) searchArea.parentNode.insertBefore(controls, searchArea.nextSibling);
+    else searchArea.parentNode.appendChild(controls);
+  }
+  controls.style.display = "block";
+  v2updateAutofillControls();
+}
+
+function v2updateAutofillControls() {
+  var controls = document.getElementById("v2AutofillControls");
+  if (!controls) return;
+  if (window.CLINICNOTE_DATA_MODE !== "v2") {
+    controls.style.display = "none";
+    return;
+  }
+  var enabled = v2isSpeedPresetMode();
+  var status = document.getElementById("v2AutofillStatus");
+  var toggle = document.getElementById("v2AutofillToggle");
+  if (status) {
+    status.textContent = enabled ? "Autofill: ON" : "Autofill: OFF";
+    status.style.color = enabled ? "#0f766e" : "#475569";
+  }
+  if (toggle) toggle.textContent = enabled ? "Turn Autofill off" : "Turn Autofill on";
+}
+
+function v2setAutofillUrl(enabled) {
+  try {
+    var params = new URLSearchParams(window.location.search);
+    if (enabled) {
+      if (params.get("speed") === "off") params.delete("speed");
+    } else {
+      params.set("speed", "off");
+    }
+    var next = window.location.pathname + (params.toString() ? "?" + params.toString() : "") + window.location.hash;
+    window.history.replaceState({}, "", next);
+  } catch (e) {}
+}
+
+function v2clearPresetSelectedChips() {
+  var area = document.getElementById("v2ChipGroups");
+  if (!area) return;
+  var presetSelected = area.querySelectorAll('.chip.selected[data-v2-preset-selected="true"]');
+  for (var i = 0; i < presetSelected.length; i++) {
+    presetSelected[i].classList.remove("selected");
+  }
+  var tagged = area.querySelectorAll('[data-v2-preset-selected="true"]');
+  for (var j = 0; j < tagged.length; j++) {
+    tagged[j].removeAttribute("data-v2-preset-selected");
+  }
+  area.removeAttribute("data-v2-preset-applied-workflow");
+}
+
+function v2currentResolvedWorkflow() {
+  if (typeof v2resolveSelectedWorkflow !== "function") return null;
+  if (!currentSpecialty || !currentVisitType) return null;
+  return v2resolveSelectedWorkflow(currentSpecialty, currentVisitType);
+}
+
+function v2setAutofillMode(enabled) {
+  if (window.CLINICNOTE_DATA_MODE !== "v2") return;
+  v2SpeedPresetApplyToken += 1;
+  v2setAutofillUrl(enabled);
+  window.CLINICNOTE_SPEED_MODE = enabled;
+  v2ensureSpeedPresetModeMarker();
+  v2updateAutofillControls();
+
+  if (!enabled) {
+    v2clearPresetSelectedChips();
+    v2setSpeedPresetBanner("missing", "No Autofill defaults available for this workflow yet.", 0);
+    var offBanner = document.getElementById("v2SpeedPresetBanner");
+    if (offBanner) offBanner.style.display = "none";
+    updateSelectedCount();
+    return;
+  }
+
+  var resolved = v2currentResolvedWorkflow();
+  if (resolved && resolved.workflow_id) {
+    v2scheduleSpeedPresetApply(resolved);
+  }
+}
+
+function v2toggleAutofill() {
+  v2setAutofillMode(!v2isSpeedPresetMode());
+}
+window.v2toggleAutofill = v2toggleAutofill;
+
 function v2ensureSpeedPresetModeMarker() {
   var header = document.querySelector("#page-speed .page-header");
   if (!header) return;
@@ -434,10 +544,10 @@ function v2ensureSpeedPresetModeMarker() {
     header.appendChild(marker);
   }
   if (v2isSpeedPresetMode()) {
-    marker.textContent = "Speed presets: ON";
+    marker.textContent = "Autofill: ON";
     marker.style.cssText = "display:inline-flex;margin-top:10px;font-size:12px;font-weight:800;color:#075985;background:#e0f2fe;border:1px solid #bae6fd;border-radius:999px;padding:7px 11px;width:max-content;max-width:100%";
   } else if (v2isSpeedPresetOffFallback()) {
-    marker.textContent = "Speed presets: OFF";
+    marker.textContent = "Autofill: OFF";
     marker.style.cssText = "display:inline-flex;margin-top:10px;font-size:12px;font-weight:800;color:#475569;background:#f8fafc;border:1px solid #cbd5e1;border-radius:999px;padding:7px 11px;width:max-content;max-width:100%";
   } else {
     marker.style.display = "none";
@@ -456,10 +566,10 @@ function v2loadSpeedPresets() {
   }
   if (v2SpeedPresetLoadPromise) return v2SpeedPresetLoadPromise;
   if (typeof fetch !== "function") {
-    console.warn("Najm AI: speed presets cannot load because fetch is unavailable.");
+    console.warn("Najm AI: Autofill defaults cannot load because fetch is unavailable.");
     return Promise.resolve(null);
   }
-  v2SpeedPresetLoadPromise = fetch("./data/speed_presets.json?v=autoselect-fix", { cache: "no-store" })
+  v2SpeedPresetLoadPromise = fetch("./data/speed_presets.json?v=autofill-toggle", { cache: "no-store" })
     .then(function(resp) {
       if (!resp.ok) throw new Error("HTTP " + resp.status);
       return resp.json();
@@ -476,7 +586,7 @@ function v2loadSpeedPresets() {
       return byId;
     })
     .catch(function(err) {
-      console.warn("Najm AI: speed presets could not be loaded.", err);
+      console.warn("Najm AI: Autofill defaults could not be loaded.", err);
       window.CLINICNOTE_SPEED_PRESET_LOAD_ERROR = String(err && err.message ? err.message : err);
       return null;
     });
@@ -511,7 +621,7 @@ function v2setSpeedPresetBanner(kind, message, count) {
     error: "display:block;border-radius:10px;padding:10px 12px;margin:0 0 12px;font-size:12px;line-height:1.45;border:1px solid var(--red-border);background:var(--red-bg);color:var(--red)"
   };
   banner.style.cssText = styles[kind] || styles.loading;
-  banner.innerHTML = "<strong>" + v2escapeHtml(message) + "</strong>" + (typeof count === "number" ? "<div>Preset chips loaded: " + count + "</div>" : "");
+  banner.innerHTML = "<strong>" + v2escapeHtml(message) + "</strong>" + (typeof count === "number" ? "<div>Autofill chips loaded: " + count + "</div>" : "");
 }
 
 function v2selectPresetChips(preset) {
@@ -560,7 +670,7 @@ function v2applySpeedPreset(resolved, token) {
   if (area && workflowId && area.getAttribute("data-v2-preset-applied-workflow") === workflowId) {
     return Promise.resolve(window.CLINICNOTE_SPEED_PRESET_DEBUG || null);
   }
-  v2setSpeedPresetBanner("loading", "Checking quick-start defaults...", null);
+  v2setSpeedPresetBanner("loading", "Checking Autofill defaults...", null);
   return v2loadSpeedPresets().then(function(presetsById) {
     if (token && token !== v2SpeedPresetApplyToken) return null;
     var preset = presetsById && workflowId ? presetsById[workflowId] : null;
@@ -575,9 +685,9 @@ function v2applySpeedPreset(resolved, token) {
     if (!preset) {
       window.CLINICNOTE_SPEED_PRESET_DEBUG = debug;
       if (area && workflowId) area.removeAttribute("data-v2-preset-applied-workflow");
-      v2setSpeedPresetBanner("missing", "No quick-start preset available for this workflow yet.", 0);
+      v2setSpeedPresetBanner("missing", "No Autofill defaults available for this workflow yet.", 0);
       updateSelectedCount();
-      console.info("Najm AI speed preset", debug);
+      console.info("Najm AI Autofill", debug);
       return debug;
     }
     var result = v2selectPresetChips(preset);
@@ -587,13 +697,13 @@ function v2applySpeedPreset(resolved, token) {
     if (result.selected > 0) {
       area = document.getElementById("v2ChipGroups");
       if (area && workflowId) area.setAttribute("data-v2-preset-applied-workflow", workflowId);
-      v2setSpeedPresetBanner("loaded", "Quick-start defaults loaded. Review and untick anything that does not apply.", result.selected);
+      v2setSpeedPresetBanner("loaded", "Autofill loaded common defaults. Review and untick anything that does not apply.", result.selected);
     } else {
       if (area && workflowId) area.removeAttribute("data-v2-preset-applied-workflow");
-      v2setSpeedPresetBanner("missing", "Quick-start preset found, but no matching chip buttons were selected.", 0);
+      v2setSpeedPresetBanner("missing", "Autofill defaults found, but no matching chip buttons were selected.", 0);
     }
     updateSelectedCount();
-    console.info("Najm AI speed preset", debug);
+    console.info("Najm AI Autofill", debug);
     return debug;
   }).catch(function(err) {
     window.CLINICNOTE_SPEED_PRESET_DEBUG = {
@@ -604,7 +714,7 @@ function v2applySpeedPreset(resolved, token) {
       preset_chip_count: 0,
       error: String(err && err.message ? err.message : err)
     };
-    v2setSpeedPresetBanner("error", "Speed presets could not be loaded for this workflow.", 0);
+    v2setSpeedPresetBanner("error", "Autofill defaults could not be loaded for this workflow.", 0);
     updateSelectedCount();
     return window.CLINICNOTE_SPEED_PRESET_DEBUG;
   });
@@ -613,7 +723,7 @@ function v2applySpeedPreset(resolved, token) {
 function v2scheduleSpeedPresetApply(resolved) {
   if (!v2isSpeedPresetMode()) {
     v2SpeedPresetApplyToken += 1;
-    v2setSpeedPresetBanner("missing", "No quick-start preset available for this workflow yet.", 0);
+    v2setSpeedPresetBanner("missing", "No Autofill defaults available for this workflow yet.", 0);
     var offBanner = document.getElementById("v2SpeedPresetBanner");
     if (offBanner) offBanner.style.display = "none";
     updateSelectedCount();
