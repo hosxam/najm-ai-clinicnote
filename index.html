@@ -476,7 +476,7 @@ Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arr
 <div id="v2SearchArea" style="display:none">
 <div style="background:var(--white);border:2px solid var(--primary);border-radius:var(--radius-xl);padding:18px;margin-bottom:16px">
   <div style="font-size:14px;font-weight:700;color:var(--gray-800);margin-bottom:8px">Search complaint or diagnosis</div>
-  <input id="v2WorkflowSearchInput" type="text" placeholder="Try: fever, diabetes, back pain, red eye, antenatal, anxiety, pediatric fever, rash, ear pain" style="width:100%;padding:11px 14px;border:2px solid var(--gray-300);border-radius:10px;font-size:14px;font-family:inherit;margin-bottom:6px" oninput="v2searchComplaint(this.value)">
+<input id="v2WorkflowSearchInput" type="text" aria-label="Search complaint or diagnosis" placeholder="Try: fever, diabetes, back pain, red eye, antenatal, anxiety, pediatric fever, rash, ear pain" style="width:100%;padding:11px 14px;border:2px solid var(--gray-300);border-radius:10px;font-size:14px;font-family:inherit;margin-bottom:6px" oninput="v2searchComplaint(this.value)">
   <div style="font-size:10px;color:var(--gray-400);margin-bottom:4px">Search selects the workflow. It does not search individual chips.</div>
   <div id="v2SearchResults" style="display:none;background:#fff;border:1px solid var(--gray-300);border-radius:10px;padding:6px;margin-top:2px;max-height:280px;overflow-y:auto;font-size:13px;box-shadow:var(--shadow-md)"></div>
 </div>
@@ -516,7 +516,7 @@ Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arr
 
 <div class="speed-section">
 <div class="speed-section-title">Duration and Main Concern</div>
-<input id="speedDuration" type="text" placeholder="e.g. 3 days, 2 weeks" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px">
+<input id="speedDuration" type="text" aria-label="Duration" placeholder="e.g. 3 days, 2 weeks" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px">
 </div>
 
 <div id="speedSymptomSection" class="speed-section">
@@ -524,7 +524,7 @@ Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arr
 <div class="speed-tip">Select all that apply</div>
 <div id="speedSymptoms" class="chip-group"></div>
 <div style="display:flex;gap:6px;margin-top:6px">
-<input id="customSymptom" type="text" placeholder="Add custom symptom" style="flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit">
+<input id="customSymptom" type="text" aria-label="Add custom symptom" placeholder="Add custom symptom" style="flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit">
 <button class="btn btn-ghost btn-xs" onclick="addCustom('symptom')">Add</button>
 </div>
 </div>
@@ -534,7 +534,7 @@ Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arr
 <div class="speed-tip">Select negatives you ruled out</div>
 <div id="speedNegs" class="chip-group"></div>
 <div style="display:flex;gap:6px;margin-top:6px">
-<input id="customNeg" type="text" placeholder="Add custom negative" style="flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit">
+<input id="customNeg" type="text" aria-label="Add custom relevant negative" placeholder="Add custom negative" style="flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit">
 <button class="btn btn-ghost btn-xs" onclick="addCustom('neg')">Add</button>
 </div>
 </div>
@@ -544,7 +544,7 @@ Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arr
 <div class="speed-tip">Only select findings you personally assessed</div>
 <div id="speedExam" class="chip-group"></div>
 <div style="display:flex;gap:6px;margin-top:6px">
-<input id="customExam" type="text" placeholder="Add custom exam finding" style="flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit">
+<input id="customExam" type="text" aria-label="Add custom exam finding" placeholder="Add custom exam finding" style="flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit">
 <button class="btn btn-ghost btn-xs" onclick="addCustom('exam')">Add</button>
 </div>
 </div>
@@ -563,12 +563,12 @@ Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arr
 
 <div class="speed-section">
 <div class="speed-section-title">Doctor-Entered Impression</div>
-<input id="speedImpression" type="text" placeholder="e.g. Viral URTI, Acute sinusitis" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px">
+<input id="speedImpression" type="text" aria-label="Doctor-entered impression" placeholder="e.g. Viral URTI, Acute sinusitis" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px">
 </div>
 
 <div class="speed-section">
 <div class="speed-section-title">Doctor-Entered Plan</div>
-<textarea id="speedPlan" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;min-height:60px;resize:vertical;margin-bottom:4px" placeholder="e.g. Symptomatic treatment, paracetamol 500mg PRN fever"></textarea>
+<textarea id="speedPlan" aria-label="Doctor-entered plan" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;min-height:60px;resize:vertical;margin-bottom:4px" placeholder="e.g. Supportive care, fluids encouraged, follow-up advice explained"></textarea>
 </div>
 
 <div id="speedPlanSection" class="speed-section">
@@ -576,21 +576,21 @@ Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arr
 <div class="speed-tip">Select additional plan items to include</div>
 <div id="speedPlans" class="chip-group"></div>
 <div style="display:flex;gap:6px;margin-top:6px">
-<input id="customPlan" type="text" placeholder="Add custom plan phrase" style="flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit">
+<input id="customPlan" type="text" aria-label="Add custom plan phrase" placeholder="Add custom plan phrase" style="flex:1;padding:7px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:11px;font-family:inherit">
 <button class="btn btn-ghost btn-xs" onclick="addCustom('plan')">Add</button>
 </div>
 </div>
 
 <div class="speed-section">
 <div class="speed-section-title">Follow-up</div>
-<input id="speedFollowup" type="text" placeholder="e.g. 3 days, 2 weeks, PRN" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px">
+<input id="speedFollowup" type="text" aria-label="Follow-up interval" placeholder="e.g. 3 days, 2 weeks, PRN" style="width:100%;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px">
 </div>
 
 <div class="speed-section">
 <div class="speed-section-title">Referral (optional)</div>
 <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px">
-<input id="speedReferralReason" type="text" placeholder="Reason for referral" style="flex:1;min-width:150px;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit">
-<input id="speedReferralSpecialty" type="text" placeholder="Referred to (specialty)" style="flex:1;min-width:120px;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit">
+<input id="speedReferralReason" type="text" aria-label="Referral reason" placeholder="Reason for referral" style="flex:1;min-width:150px;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit">
+<input id="speedReferralSpecialty" type="text" aria-label="Referral specialty" placeholder="Referred to (specialty)" style="flex:1;min-width:120px;padding:9px 12px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:inherit">
 </div>
 </div>
 
@@ -685,7 +685,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <div class="form-group"><label for="exam">Examination Findings</label><textarea id="exam" class="code" placeholder="e.g. Temp 38.2, chest clear, throat erythematous"></textarea></div>
 <div class="form-group"><label for="investigations">Investigations</label><input id="investigations" type="text" placeholder="e.g. CBC normal, CRP elevated"></div>
 <div class="form-group"><label for="impression">Working Impression (doctor-entered)</label><input id="impression" type="text" placeholder="e.g. Viral URTI"></div>
-<div class="form-group"><label for="plan">Plan (doctor-entered)</label><textarea id="plan" class="code" placeholder="e.g. Symptomatic treatment with paracetamol, rest, increased fluids."></textarea></div>
+<div class="form-group"><label for="plan">Plan (doctor-entered)</label><textarea id="plan" class="code" placeholder="e.g. Supportive care, rest, increased fluids, follow-up advice explained."></textarea></div>
 <div class="form-group"><label for="followupInterval">Follow-up Interval</label><input id="followupInterval" type="text" placeholder="e.g. 3 days, 2 weeks, 1 month"></div>
 <div class="form-group"><label for="doctorNotes">Doctor Notes</label><textarea id="doctorNotes" class="code" placeholder="Any additional notes from the doctor"></textarea></div>
 <div class="gen-row">
@@ -725,8 +725,8 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <div class="form-group"><label for="refExam">Examination Findings</label><textarea id="refExam" class="code" placeholder="e.g. Mild effusion, reduced ROM, medial joint line tenderness"></textarea></div>
 <div class="form-group"><label for="refInvestigations">Investigations</label><textarea id="refInvestigations" class="code" placeholder="e.g. X-ray: mild medial compartment narrowing"></textarea></div>
 <div class="form-group"><label for="refImpression">Working Impression</label><input id="refImpression" type="text" placeholder="e.g. Possible medial meniscus tear"></div>
-<div class="form-group"><label for="refManagement">Current Management</label><textarea id="refManagement" class="code" placeholder="e.g. NSAIDs, physiotherapy x 6 weeks"></textarea></div>
-<div class="form-group"><label for="refAction">Requested Action</label><textarea id="refAction" class="code" placeholder="e.g. Please assess for possible arthroscopy"></textarea></div>
+<div class="form-group"><label for="refManagement">Current Management</label><textarea id="refManagement" class="code" placeholder="e.g. Physiotherapy completed; symptoms persist"></textarea></div>
+<div class="form-group"><label for="refAction">Requested Action</label><textarea id="refAction" class="code" placeholder="e.g. Please assess and advise on further management"></textarea></div>
 <div class="gen-row">
 <button class="btn btn-primary btn-sm" onclick="gRef('formal')">Formal Letter</button>
 <button class="btn btn-primary btn-sm" onclick="gRef('short')">Short Note</button>
@@ -754,8 +754,8 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 <div class="two-col">
 <div>
 <div class="form-group"><label for="instDiagnosis">Diagnosis</label><input id="instDiagnosis" type="text" placeholder="e.g. Viral URTI"></div>
-<div class="form-group"><label for="instAdvice">Doctor Advice</label><textarea id="instAdvice" class="code" placeholder="e.g. Rest, increase fluid intake, take paracetamol for fever"></textarea></div>
-<div class="form-group"><label for="instMedications">Medications</label><textarea id="instMedications" class="code" placeholder="e.g. Paracetamol 500mg 1 tab every 6 hours PRN fever"></textarea></div>
+<div class="form-group"><label for="instAdvice">Doctor Advice</label><textarea id="instAdvice" class="code" placeholder="e.g. Rest, increase fluid intake, return precautions explained"></textarea></div>
+<div class="form-group"><label for="instMedications">Medications</label><textarea id="instMedications" class="code" placeholder="e.g. Medication instructions entered by clinician, if any"></textarea></div>
 <div class="form-group"><label for="instActivity">Activity Advice</label><textarea id="instActivity" class="code" placeholder="e.g. Light activity only. No sports for 1 week."></textarea></div>
 <div class="form-group"><label for="instRedFlags">Red Flags (when to return)</label><textarea id="instRedFlags" class="code" placeholder="e.g. High fever not responding to medication, difficulty breathing"></textarea></div>
 <div class="form-group"><label for="instFollowup">Follow-up Timing</label><input id="instFollowup" type="text" placeholder="e.g. Review in 3 days or earlier if symptoms worsen"></div>
@@ -1568,7 +1568,7 @@ function generateAllOutputs(){
     refNote += "Current plan: "+planStr+"\n";
     refNote += "Please see and advise.\n";
   } else {
-    refNote += "REFERRAL LETTER (placeholder)\n\n";
+    refNote += "REFERRAL LETTER DRAFT\n\n";
     refNote += "Enter a reason for referral in the optional Referral section above to generate a complete letter.\n";
   }
 
