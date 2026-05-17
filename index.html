@@ -242,6 +242,28 @@ nav{background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(195,204,215,0
 #v2ChipGroups [data-v2-custom-row] label{font-size:10px!important;color:var(--gray-600)!important;font-weight:700!important}
 #v2ChipGroups [data-v2-custom-input]{border:1px solid var(--gray-300)!important;border-radius:8px!important;background:#fff!important;min-height:32px}
 #v2CustomSafetyNote{background:var(--amber-bg)!important;border-color:var(--amber-border)!important;color:#704f18!important;border-radius:10px!important}
+#v3HistoryPreviewPanel{display:none;background:#fff;border:1px solid #bed8f5;border-radius:12px;padding:16px;margin:14px 0 18px;box-shadow:var(--shadow)}
+#v3HistoryPreviewPanel.v3-history-visible{display:block}
+.v3-history-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.v3-history-title{font-size:14px;font-weight:800;color:var(--gray-900);margin-bottom:3px}
+.v3-history-subtitle{font-size:11px;color:var(--gray-500);line-height:1.45}
+.v3-history-safety{background:var(--amber-bg);border:1px solid var(--amber-border);color:#704f18;border-radius:10px;padding:9px 11px;font-size:11px;line-height:1.45;margin:10px 0}
+.v3-history-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0}
+.v3-history-controls label{font-size:11px;font-weight:700;color:var(--gray-700)}
+.v3-history-controls select{min-width:220px;max-width:100%;padding:8px 10px;border:1px solid var(--gray-300);border-radius:8px;background:#fff;color:var(--gray-800);font-family:inherit;font-size:12px}
+.v3-history-status{font-size:11px;color:var(--gray-500);margin:8px 0}
+.v3-history-section{border:1px solid var(--gray-200);border-radius:10px;background:var(--gray-50);margin:8px 0;overflow:hidden}
+.v3-history-section summary{cursor:pointer;padding:10px 12px;font-size:12px;font-weight:800;color:var(--gray-900);list-style:none}
+.v3-history-section summary::-webkit-details-marker{display:none}
+.v3-history-section summary::after{content:"+";float:right;color:var(--primary);font-weight:800}
+.v3-history-section[open] summary::after{content:"-"}
+.v3-history-section-body{padding:0 12px 12px}
+.v3-history-section-note{font-size:10px;color:var(--gray-500);line-height:1.45;margin-bottom:8px}
+.v3-history-prompts{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.v3-history-prompts li{background:#fff;border:1px solid var(--gray-200);border-radius:8px;padding:8px 9px;font-size:11px;color:var(--gray-700);line-height:1.45}
+.v3-history-prompt-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:5px}
+.v3-history-label{display:inline-flex;border-radius:999px;padding:2px 7px;font-size:9px;font-weight:800;background:var(--primary-bg);color:var(--primary-dark)}
+.v3-history-warning{font-size:10px;color:#704f18;margin-top:5px}
 #speedSummary{background:#f0fdfa;border:1px solid #bce3d8;border-radius:12px;padding:13px 14px;color:var(--gray-700);align-items:center}
 #speedSummary::before{content:"Your note ingredients";flex:0 0 100%;font-size:12px;font-weight:800;color:var(--gray-900);margin-bottom:2px}
 #v2LoadedChipCount{font-weight:700;color:var(--primary-dark)!important}
@@ -498,6 +520,8 @@ Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arr
 </select>
 </div>
 
+<div id="v3HistoryPreviewPanel" aria-live="polite"></div>
+
 <div id="speedContent" style="display:none">
 <div class="note-phi-warn">Only select findings you personally assessed. Do not enter patient names, IDs, or contact information.</div>
 
@@ -508,7 +532,7 @@ Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arr
   <div class="speed-section-title" style="cursor:pointer" onclick="toggleCollapse('v2HistoryContent')">
     Specialty history prompts <span style="font-size:10px;color:var(--gray-400)">(click to expand)</span>
   </div>
-  <div id="v2HistoryContent" style="display:none;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;padding:10px 12px;margin-top:4px;font-size:11px;line-height:1.5"></div>
+<div id="v2HistoryContent" style="display:none;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;padding:10px 12px;margin-top:4px;font-size:11px;line-height:1.5"></div>
 </div>
 </div>
 
@@ -1150,6 +1174,7 @@ window.cleanOutputPhraseList = cleanOutputPhraseList;
 <script src="./calculator-tools.js?v=v3c-low-risk"></script>
 <script src="./forms-config.js?v=scribe-live"></script>
 <script src="./v2_workflow_ui_2.js?v=language-cleanup"></script>
+<script src="./v3_history_preview.js?v=v3i-history-preview"></script>
 <script>
 
 // ---- Adapter: build old-compatible VISIT_LIBRARY from NAJM_CLINICAL_DATA ----
