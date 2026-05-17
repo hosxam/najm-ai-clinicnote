@@ -1,0 +1,830 @@
+[
+  {
+    "calculator_id": "bmi",
+    "calculator_name": "BMI",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["weight review", "diabetes follow-up", "hypertension follow-up"],
+    "related_workflow_ids": ["gp-diabetes-followup", "gp-hypertension-followup"],
+    "purpose": "Documentation context for body mass index when height and weight are clinician-entered.",
+    "clinical_context": "May be relevant when a clinician documents metabolic, weight, diabetes, or hypertension follow-up context.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "height",
+        "label": "Height",
+        "input_type": "number",
+        "units": "cm",
+        "required": true,
+        "safety_note": "Use clinician-entered measurements only."
+      },
+      {
+        "field_id": "weight",
+        "label": "Weight",
+        "input_type": "number",
+        "units": "kg",
+        "required": true,
+        "safety_note": "Use clinician-entered measurements only."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "bmi_value",
+        "label": "BMI value",
+        "output_type": "number",
+        "safety_note": "Future output requires clinician interpretation."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "Registry only. No formula or interpretation is implemented.",
+    "display_conditions": ["Show only if the clinician opens a future calculator tool."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "pack_years",
+    "calculator_name": "Pack years",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["cough", "shortness of breath", "smoking history", "respiratory review"],
+    "related_workflow_ids": ["gp-cough", "gp-shortness-of-breath"],
+    "purpose": "Documentation context for smoking exposure when clinician-entered tobacco history is available.",
+    "clinical_context": "May be relevant for respiratory, cardiovascular, and general medical documentation.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "packs_per_day",
+        "label": "Packs per day",
+        "input_type": "number",
+        "units": "packs/day",
+        "required": true,
+        "safety_note": "Use clinician-entered smoking history only."
+      },
+      {
+        "field_id": "years_smoked",
+        "label": "Years smoked",
+        "input_type": "number",
+        "units": "years",
+        "required": true,
+        "safety_note": "Use clinician-entered smoking history only."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "pack_year_value",
+        "label": "Pack-year value",
+        "output_type": "number",
+        "safety_note": "Future output is documentation context only."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "Registry only. Does not create risk conclusions or advice.",
+    "display_conditions": ["Show only when smoking exposure documentation is relevant and clinician-entered."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "mean_arterial_pressure",
+    "calculator_name": "Mean arterial pressure",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["blood pressure review", "hypertension follow-up", "acute observation context"],
+    "related_workflow_ids": ["gp-hypertension-followup"],
+    "purpose": "Documentation context for blood pressure-derived observation value when clinician-entered readings are available.",
+    "clinical_context": "May be relevant when vital signs are documented.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "systolic_bp",
+        "label": "Systolic blood pressure",
+        "input_type": "number",
+        "units": "mmHg",
+        "required": true,
+        "safety_note": "Use clinician-entered observation values only."
+      },
+      {
+        "field_id": "diastolic_bp",
+        "label": "Diastolic blood pressure",
+        "input_type": "number",
+        "units": "mmHg",
+        "required": true,
+        "safety_note": "Use clinician-entered observation values only."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "map_value",
+        "label": "Mean arterial pressure value",
+        "output_type": "number",
+        "safety_note": "Future output requires clinician interpretation."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "Registry only. No action threshold or calculation is implemented.",
+    "display_conditions": ["Show only when blood pressure observations are clinician-entered."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "shock_index",
+    "calculator_name": "Shock index",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["acute illness", "vital signs review", "dizziness", "bleeding context"],
+    "related_workflow_ids": ["gp-fatigue"],
+    "purpose": "Documentation context for a vital-sign relationship when pulse and blood pressure are clinician-entered.",
+    "clinical_context": "May be relevant in future urgent-care documentation workflows after source review.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "heart_rate",
+        "label": "Heart rate",
+        "input_type": "number",
+        "units": "beats/min",
+        "required": true,
+        "safety_note": "Use clinician-entered observation values only."
+      },
+      {
+        "field_id": "systolic_bp",
+        "label": "Systolic blood pressure",
+        "input_type": "number",
+        "units": "mmHg",
+        "required": true,
+        "safety_note": "Use clinician-entered observation values only."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "shock_index_value",
+        "label": "Shock index value",
+        "output_type": "number",
+        "safety_note": "Future output requires clinician interpretation."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "Registry only. No clinical action or threshold is implemented.",
+    "display_conditions": ["Show only if vital sign context is clinician-entered."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "mrc_dyspnea_scale",
+    "calculator_name": "MRC dyspnea scale",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["shortness of breath", "dyspnea", "respiratory review"],
+    "related_workflow_ids": ["gp-shortness-of-breath", "gp-cough"],
+    "purpose": "Documentation context for breathlessness severity when clinician-entered functional limitation is available.",
+    "clinical_context": "May be relevant when documenting dyspnea impact.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "dyspnea_description",
+        "label": "Dyspnea functional description",
+        "input_type": "select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["clinician-entered option 1", "clinician-entered option 2", "clinician-entered option 3", "clinician-entered option 4", "clinician-entered option 5"],
+        "safety_note": "Option wording requires source review before implementation."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "mrc_grade",
+        "label": "MRC dyspnea grade",
+        "output_type": "score",
+        "safety_note": "Future output requires clinician interpretation."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "Registry only. Scale wording and source version are not implemented.",
+    "display_conditions": ["Show only when breathlessness impact is being documented."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "phq_2",
+    "calculator_name": "PHQ-2",
+    "specialty": "Psychiatry / Mental Health",
+    "related_complaints": ["low mood", "depression screening", "mental health review"],
+    "related_workflow_ids": ["psych-low-mood"],
+    "purpose": "Documentation context for brief low-mood screening responses when clinician-entered.",
+    "clinical_context": "May be relevant for mental health documentation after source review.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "interest_response",
+        "label": "Interest or pleasure response",
+        "input_type": "select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["not entered", "response option requires source review"],
+        "safety_note": "Question wording and response values require source review."
+      },
+      {
+        "field_id": "mood_response",
+        "label": "Mood response",
+        "input_type": "select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["not entered", "response option requires source review"],
+        "safety_note": "Question wording and response values require source review."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "phq_2_score",
+        "label": "PHQ-2 score",
+        "output_type": "score",
+        "safety_note": "Future output is not a diagnosis and requires clinician interpretation."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "Registry only. Not a diagnosis tool and no scoring is implemented.",
+    "display_conditions": ["Show only when a clinician chooses to document mood screening."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "phq_9",
+    "calculator_name": "PHQ-9",
+    "specialty": "Psychiatry / Mental Health",
+    "related_complaints": ["low mood", "depression screening", "mental health review"],
+    "related_workflow_ids": ["psych-low-mood"],
+    "purpose": "Documentation context for clinician-entered depression questionnaire responses.",
+    "clinical_context": "May be relevant when documenting a structured mood questionnaire.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "phq_9_responses",
+        "label": "PHQ-9 item responses",
+        "input_type": "multi_select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["responses require source review before implementation"],
+        "safety_note": "Item wording and response values require source review."
+      },
+      {
+        "field_id": "self_harm_item_context",
+        "label": "Self-harm item context if clinician-entered",
+        "input_type": "text",
+        "units": null,
+        "required": false,
+        "safety_note": "Sensitive item; future implementation must preserve clinician control and local safety process."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "phq_9_score",
+        "label": "PHQ-9 score",
+        "output_type": "score",
+        "safety_note": "Future output is not a diagnosis and requires clinician interpretation."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "Registry only. No scoring, severity label, or action advice is implemented.",
+    "display_conditions": ["Show only when a clinician chooses to document PHQ-9 responses."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "gad_7",
+    "calculator_name": "GAD-7",
+    "specialty": "Psychiatry / Mental Health",
+    "related_complaints": ["anxiety symptoms", "worry", "mental health review"],
+    "related_workflow_ids": ["psych-anxiety"],
+    "purpose": "Documentation context for clinician-entered anxiety questionnaire responses.",
+    "clinical_context": "May be relevant when documenting anxiety symptom screening.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "gad_7_responses",
+        "label": "GAD-7 item responses",
+        "input_type": "multi_select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["responses require source review before implementation"],
+        "safety_note": "Item wording and response values require source review."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "gad_7_score",
+        "label": "GAD-7 score",
+        "output_type": "score",
+        "safety_note": "Future output is not a diagnosis and requires clinician interpretation."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "Registry only. No scoring or action advice is implemented.",
+    "display_conditions": ["Show only when a clinician chooses to document GAD-7 responses."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "epworth_sleepiness_scale",
+    "calculator_name": "Epworth Sleepiness Scale",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["sleep difficulty", "daytime sleepiness", "fatigue"],
+    "related_workflow_ids": ["psych-sleep-difficulty", "gp-fatigue"],
+    "purpose": "Documentation context for clinician-entered daytime sleepiness questionnaire responses.",
+    "clinical_context": "May be relevant when documenting sleepiness symptoms.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "epworth_responses",
+        "label": "Epworth item responses",
+        "input_type": "multi_select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["responses require source review before implementation"],
+        "safety_note": "Item wording and response values require source review."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "epworth_score",
+        "label": "Epworth score",
+        "output_type": "score",
+        "safety_note": "Future output requires clinician interpretation."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "Registry only. No scoring or advice is implemented.",
+    "display_conditions": ["Show only when sleepiness questionnaire documentation is clinician-selected."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "ipss",
+    "calculator_name": "IPSS",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["lower urinary tract symptoms", "urinary frequency", "nocturia"],
+    "related_workflow_ids": [],
+    "purpose": "Documentation context for clinician-entered urinary symptom questionnaire responses.",
+    "clinical_context": "May be relevant for future lower urinary tract symptom workflows.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "ipss_responses",
+        "label": "IPSS item responses",
+        "input_type": "multi_select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["responses require source review before implementation"],
+        "safety_note": "Item wording and response values require source review."
+      },
+      {
+        "field_id": "quality_of_life_response",
+        "label": "Quality of life response",
+        "input_type": "select",
+        "units": null,
+        "required": false,
+        "allowed_values": ["response options require source review before implementation"],
+        "safety_note": "Response wording requires source review."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "ipss_score",
+        "label": "IPSS score",
+        "output_type": "score",
+        "safety_note": "Future output requires clinician interpretation."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "Registry only. No scoring, diagnosis, or treatment advice is implemented.",
+    "display_conditions": ["Show only when urinary symptom questionnaire documentation is clinician-selected."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "heart_score",
+    "calculator_name": "HEART Score",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["chest pain", "chest discomfort"],
+    "related_workflow_ids": ["gp-chest-pain"],
+    "purpose": "Registry placeholder for future clinician-entered chest pain risk documentation.",
+    "clinical_context": "May be relevant for future urgent chest pain documentation after source and implementation review.",
+    "risk_level": "high",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "history_component",
+        "label": "History component",
+        "input_type": "select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["values require source review before implementation"],
+        "safety_note": "Component definitions require source verification."
+      },
+      {
+        "field_id": "ecg_component",
+        "label": "ECG component",
+        "input_type": "select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["values require source review before implementation"],
+        "safety_note": "Use clinician-entered ECG interpretation only."
+      },
+      {
+        "field_id": "age_component",
+        "label": "Age component",
+        "input_type": "select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["values require source review before implementation"],
+        "safety_note": "No date of birth should be entered."
+      },
+      {
+        "field_id": "risk_factor_component",
+        "label": "Risk factor component",
+        "input_type": "select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["values require source review before implementation"],
+        "safety_note": "Use clinician-entered risk factor context only."
+      },
+      {
+        "field_id": "troponin_component",
+        "label": "Troponin component",
+        "input_type": "select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["values require source review before implementation"],
+        "safety_note": "Use clinician-entered lab interpretation only."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "heart_score_value",
+        "label": "HEART score",
+        "output_type": "score",
+        "safety_note": "Future output requires clinician interpretation and source verification."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "High-risk registry item. No score, threshold, or disposition advice is implemented.",
+    "display_conditions": ["Show only in future reviewed chest pain documentation context."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "cha2ds2_vasc",
+    "calculator_name": "CHA2DS2-VASc",
+    "specialty": "Cardiology",
+    "related_complaints": ["atrial fibrillation", "palpitations", "stroke risk documentation"],
+    "related_workflow_ids": ["gp-palpitations"],
+    "purpose": "Registry placeholder for future clinician-entered thromboembolic risk documentation.",
+    "clinical_context": "May be relevant for future atrial fibrillation documentation after source review.",
+    "risk_level": "high",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "risk_components",
+        "label": "Risk components",
+        "input_type": "multi_select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["components require source review before implementation"],
+        "safety_note": "Component definitions require source verification."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "cha2ds2_vasc_score",
+        "label": "CHA2DS2-VASc score",
+        "output_type": "score",
+        "safety_note": "Future output must not recommend anticoagulation or treatment."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "High-risk registry item. No treatment advice is implemented.",
+    "display_conditions": ["Show only in future reviewed atrial fibrillation documentation context."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "has_bled",
+    "calculator_name": "HAS-BLED",
+    "specialty": "Cardiology",
+    "related_complaints": ["atrial fibrillation", "bleeding risk documentation", "anticoagulation review"],
+    "related_workflow_ids": ["gp-palpitations"],
+    "purpose": "Registry placeholder for future clinician-entered bleeding risk documentation.",
+    "clinical_context": "May be relevant for future anticoagulation documentation after source review.",
+    "risk_level": "high",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "bleeding_risk_components",
+        "label": "Bleeding risk components",
+        "input_type": "multi_select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["components require source review before implementation"],
+        "safety_note": "Component definitions require source verification."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "has_bled_score",
+        "label": "HAS-BLED score",
+        "output_type": "score",
+        "safety_note": "Future output requires clinician interpretation and does not provide treatment advice."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "High-risk registry item. No treatment or medication advice is implemented.",
+    "display_conditions": ["Show only in future reviewed bleeding risk documentation context."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "wells_pe",
+    "calculator_name": "Wells PE",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["shortness of breath", "chest pain", "pulmonary embolism consideration"],
+    "related_workflow_ids": ["gp-shortness-of-breath", "gp-chest-pain"],
+    "purpose": "Registry placeholder for future clinician-entered pulmonary embolism probability documentation.",
+    "clinical_context": "May be relevant for future urgent chest pain or dyspnea documentation after source review.",
+    "risk_level": "high",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "wells_pe_components",
+        "label": "Wells PE components",
+        "input_type": "multi_select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["components require source review before implementation"],
+        "safety_note": "Component definitions require source verification."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "wells_pe_score",
+        "label": "Wells PE score",
+        "output_type": "score",
+        "safety_note": "Future output requires clinician interpretation and must not direct investigation or treatment."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "High-risk registry item. No threshold or action advice is implemented.",
+    "display_conditions": ["Show only in future reviewed dyspnea or chest pain documentation context."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "wells_dvt",
+    "calculator_name": "Wells DVT",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["leg swelling", "calf pain", "deep vein thrombosis consideration"],
+    "related_workflow_ids": [],
+    "purpose": "Registry placeholder for future clinician-entered DVT probability documentation.",
+    "clinical_context": "May be relevant for future leg swelling or calf pain workflows after source review.",
+    "risk_level": "high",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "wells_dvt_components",
+        "label": "Wells DVT components",
+        "input_type": "multi_select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["components require source review before implementation"],
+        "safety_note": "Component definitions require source verification."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "wells_dvt_score",
+        "label": "Wells DVT score",
+        "output_type": "score",
+        "safety_note": "Future output requires clinician interpretation and must not direct investigation or treatment."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "High-risk registry item. No threshold or action advice is implemented.",
+    "display_conditions": ["Show only in future reviewed leg swelling documentation context."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "curb_65",
+    "calculator_name": "CURB-65",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["cough", "fever", "pneumonia consideration"],
+    "related_workflow_ids": ["gp-cough", "gp-fever-urti"],
+    "purpose": "Registry placeholder for future clinician-entered pneumonia severity documentation.",
+    "clinical_context": "May be relevant for future pneumonia workflows after source review.",
+    "risk_level": "high",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "curb_65_components",
+        "label": "CURB-65 components",
+        "input_type": "multi_select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["components require source review before implementation"],
+        "safety_note": "Component definitions require source verification."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "curb_65_score",
+        "label": "CURB-65 score",
+        "output_type": "score",
+        "safety_note": "Future output requires clinician interpretation and must not direct disposition."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "High-risk registry item. No threshold or admission advice is implemented.",
+    "display_conditions": ["Show only in future reviewed pneumonia documentation context."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "news2",
+    "calculator_name": "NEWS2",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["acute illness", "vital signs review", "urgent care observation"],
+    "related_workflow_ids": ["gp-fever-urti", "gp-shortness-of-breath"],
+    "purpose": "Registry placeholder for future clinician-entered acute observation score documentation.",
+    "clinical_context": "May be relevant for future urgent-care workflows after source review.",
+    "risk_level": "high",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "news2_observations",
+        "label": "NEWS2 observation components",
+        "input_type": "multi_select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["components require source review before implementation"],
+        "safety_note": "Observation component definitions require source verification."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "news2_score",
+        "label": "NEWS2 score",
+        "output_type": "score",
+        "safety_note": "Future output requires clinician interpretation and local escalation policy."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "High-risk registry item. No escalation or disposition advice is implemented.",
+    "display_conditions": ["Show only in future reviewed acute observation documentation context."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "glasgow_coma_scale",
+    "calculator_name": "Glasgow Coma Scale",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["head injury", "altered consciousness", "neurological observation"],
+    "related_workflow_ids": ["gp-headache"],
+    "purpose": "Registry placeholder for future clinician-entered consciousness assessment documentation.",
+    "clinical_context": "May be relevant for future head injury or neurological observation workflows after source review.",
+    "risk_level": "high",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "eye_response",
+        "label": "Eye response",
+        "input_type": "select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["values require source review before implementation"],
+        "safety_note": "Response categories require source verification."
+      },
+      {
+        "field_id": "verbal_response",
+        "label": "Verbal response",
+        "input_type": "select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["values require source review before implementation"],
+        "safety_note": "Response categories require source verification."
+      },
+      {
+        "field_id": "motor_response",
+        "label": "Motor response",
+        "input_type": "select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["values require source review before implementation"],
+        "safety_note": "Response categories require source verification."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "gcs_score",
+        "label": "GCS score",
+        "output_type": "score",
+        "safety_note": "Future output requires clinician interpretation."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "High-risk registry item. No triage or treatment advice is implemented.",
+    "display_conditions": ["Show only in future reviewed neurological observation documentation context."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "abcd2",
+    "calculator_name": "ABCD2",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["transient neurological symptoms", "stroke risk documentation", "weakness", "speech symptoms"],
+    "related_workflow_ids": [],
+    "purpose": "Registry placeholder for future clinician-entered transient neurological symptom risk documentation.",
+    "clinical_context": "May be relevant for future neurological symptom workflows after source review.",
+    "risk_level": "high",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "abcd2_components",
+        "label": "ABCD2 components",
+        "input_type": "multi_select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["components require source review before implementation"],
+        "safety_note": "Component definitions require source verification."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "abcd2_score",
+        "label": "ABCD2 score",
+        "output_type": "score",
+        "safety_note": "Future output requires clinician interpretation and must not direct disposition."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "High-risk registry item. No threshold or action advice is implemented.",
+    "display_conditions": ["Show only in future reviewed neurological documentation context."],
+    "review_required": true
+  },
+  {
+    "calculator_id": "canadian_ct_head_rule",
+    "calculator_name": "Canadian CT Head Rule",
+    "specialty": "General Medicine / GP",
+    "related_complaints": ["head injury", "head trauma", "headache after injury"],
+    "related_workflow_ids": ["gp-headache"],
+    "purpose": "Registry placeholder for future clinician-entered head injury imaging rule documentation.",
+    "clinical_context": "May be relevant for future head injury workflows after source review.",
+    "risk_level": "high",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "head_rule_components",
+        "label": "Canadian CT Head Rule components",
+        "input_type": "multi_select",
+        "units": null,
+        "required": true,
+        "allowed_values": ["components require source review before implementation"],
+        "safety_note": "Rule criteria require source verification before any future use."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "head_rule_result",
+        "label": "Rule documentation result",
+        "output_type": "text",
+        "safety_note": "Future output must not direct imaging decisions without full review."
+      }
+    ],
+    "interpretation_mode": "clinician_interpreted_no_recommendation",
+    "safety_note": "High-risk registry item. No imaging recommendation is implemented.",
+    "display_conditions": ["Show only in future reviewed head injury documentation context."],
+    "review_required": true
+  }
+]
