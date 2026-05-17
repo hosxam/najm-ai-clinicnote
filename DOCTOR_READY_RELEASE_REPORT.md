@@ -28,6 +28,7 @@ Current website includes:
 - Feedback/Scribe links
 - Mobile layouts
 - Accessibility quick pass
+- Calculator First Impression QA: passed behind `?calc=v1`
 - Validators
 
 ## Issues Fixed
@@ -54,6 +55,7 @@ All validators passed:
 ## Known Limitations
 
 - Calculator suggestions are not surfaced yet.
+- Low-risk calculators remain feature-flagged behind `?calc=v1` and are not default.
 - High-risk calculators remain registry-only.
 - Outputs remain drafts and require clinician review.
 - Doctor feedback has not been collected yet.

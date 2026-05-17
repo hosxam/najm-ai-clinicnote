@@ -14,6 +14,7 @@
 
 ## Results
 
+- Overall QA status: passed.
 - Calculator page visible with `?calc=v1`: yes
 - Calculator page hidden on default URL: yes
 - BMI result rendered: yes
@@ -28,4 +29,6 @@
 
 ## Result
 
-Low-risk calculators remain suitable for feature-flagged testing only. No default-site clutter was introduced.
+Calculator First Impression QA passed.
+
+Low-risk calculators remain suitable for feature-flagged testing only. No default-site clutter was introduced. Calculators must remain behind `?calc=v1` until a separate explicit rollout decision is made.
