@@ -1,0 +1,2143 @@
+[
+  {
+    "specialty_id": "General Medicine / GP",
+    "specialty_name": "General Medicine / GP",
+    "template_version": "v3g.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+    "safety_notes": [
+      "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+      "These prompts record clinician-entered decisions only."
+    ],
+    "plan_sections": [
+      {
+        "section_id": "gp_clinician_entered_plan",
+        "section_label": "Clinician-entered management plan",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "gp-fever-urti",
+          "gp-cough",
+          "gp-abdominal-pain",
+          "gp-diabetes-followup",
+          "gp-hypertension-followup"
+        ],
+        "applicable_complaints": [
+          "fever",
+          "cough",
+          "abdominal pain",
+          "diabetes follow-up",
+          "hypertension follow-up"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "plan_summary",
+            "prompt_text": "Clinician-entered plan documented",
+            "prompt_type": "clinician_entered_plan",
+            "required_level": "optional",
+            "documentation_role": "plan_summary",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "problem_specific_steps",
+            "prompt_text": "Problem-specific steps documented only if clinician decided",
+            "prompt_type": "clinician_entered_plan",
+            "required_level": "conditional",
+            "documentation_role": "plan_details",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "patient_agreement",
+            "prompt_text": "Patient understanding or agreement documented if discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "optional",
+            "documentation_role": "shared_understanding",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "gp_counseling_documented",
+        "section_label": "Counseling documented",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "gp-diabetes-followup",
+          "gp-hypertension-followup",
+          "gp-dyslipidemia-followup",
+          "gp-fever-urti"
+        ],
+        "applicable_complaints": [
+          "diabetes follow-up",
+          "hypertension follow-up",
+          "dyslipidemia follow-up",
+          "fever"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "condition_counseling",
+            "prompt_text": "Condition-related counseling documented if discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "optional",
+            "documentation_role": "counseling",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "lifestyle_discussion",
+            "prompt_text": "Lifestyle discussion documented if clinician discussed",
+            "prompt_type": "lifestyle_documentation",
+            "required_level": "conditional",
+            "documentation_role": "lifestyle",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "self_care_advice",
+            "prompt_text": "Self-care advice documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "patient_advice",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "gp_safety_netting",
+        "section_label": "Safety-netting documented",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "gp-fever-urti",
+          "gp-cough",
+          "gp-chest-pain",
+          "gp-shortness-of-breath",
+          "gp-abdominal-pain"
+        ],
+        "applicable_complaints": [
+          "fever",
+          "cough",
+          "chest pain",
+          "shortness of breath",
+          "abdominal pain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "return_precautions",
+            "prompt_text": "Return precautions documented if discussed",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "return_precautions",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "worsening_symptoms",
+            "prompt_text": "Worsening symptom advice documented if discussed",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "worsening_symptoms",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "urgent_review_context",
+            "prompt_text": "Urgent review advice documented only if clinician discussed",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "urgent_review_context",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "gp_follow_up_documented",
+        "section_label": "Follow-up documented",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "gp-diabetes-followup",
+          "gp-hypertension-followup",
+          "gp-thyroid-followup",
+          "gp-lab-result-review"
+        ],
+        "applicable_complaints": [
+          "diabetes follow-up",
+          "hypertension follow-up",
+          "thyroid follow-up",
+          "lab result review"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "follow_up_plan",
+            "prompt_text": "Follow-up plan documented if clinician decided",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "optional",
+            "documentation_role": "follow_up",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "review_interval",
+            "prompt_text": "Review interval documented only if clinician entered",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "conditional",
+            "documentation_role": "review_interval",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "monitoring_plan",
+            "prompt_text": "Monitoring plan documented if clinician discussed",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "conditional",
+            "documentation_role": "monitoring",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "gp_investigations_documented",
+        "section_label": "Investigations discussed by clinician",
+        "display_order": 5,
+        "applicable_workflow_ids": [
+          "gp-fatigue",
+          "gp-abdominal-pain",
+          "gp-lab-result-review",
+          "gp-diabetes-followup",
+          "gp-hypertension-followup"
+        ],
+        "applicable_complaints": [
+          "fatigue",
+          "abdominal pain",
+          "lab result review",
+          "diabetes follow-up",
+          "hypertension follow-up"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "investigations_discussed",
+            "prompt_text": "Investigations discussed documented if clinician decided",
+            "prompt_type": "investigation_documentation",
+            "required_level": "conditional",
+            "documentation_role": "investigations",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "results_reviewed",
+            "prompt_text": "Results reviewed documented if applicable",
+            "prompt_type": "investigation_documentation",
+            "required_level": "conditional",
+            "documentation_role": "results_review",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "pending_results",
+            "prompt_text": "Pending results or review plan documented if clinician discussed",
+            "prompt_type": "investigation_documentation",
+            "required_level": "optional",
+            "documentation_role": "pending_results",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "gp_referral_documented",
+        "section_label": "Referral discussed by clinician if relevant",
+        "display_order": 6,
+        "applicable_workflow_ids": [
+          "gp-chest-pain",
+          "gp-shortness-of-breath",
+          "gp-abdominal-pain",
+          "gp-lab-result-review"
+        ],
+        "applicable_complaints": [
+          "chest pain",
+          "shortness of breath",
+          "abdominal pain",
+          "lab result review"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "referral_discussed",
+            "prompt_text": "Referral discussion documented if clinician decided",
+            "prompt_type": "referral_documentation",
+            "required_level": "conditional",
+            "documentation_role": "referral",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "referral_reason",
+            "prompt_text": "Reason for referral documented if clinician entered",
+            "prompt_type": "referral_documentation",
+            "required_level": "conditional",
+            "documentation_role": "referral_reason",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "referral_destination",
+            "prompt_text": "Referral destination documented only if clinician entered",
+            "prompt_type": "referral_documentation",
+            "required_level": "conditional",
+            "documentation_role": "referral_destination",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      }
+    ]
+  },
+  {
+    "specialty_id": "Cardiology",
+    "specialty_name": "Cardiology",
+    "template_version": "v3g.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+    "safety_notes": [
+      "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+      "These prompts record clinician-entered decisions only."
+    ],
+    "plan_sections": [
+      {
+        "section_id": "cardio_clinician_entered_plan",
+        "section_label": "Clinician-entered cardiac plan",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "gp-chest-pain",
+          "gp-palpitations",
+          "gp-hypertension-followup",
+          "gp-shortness-of-breath"
+        ],
+        "applicable_complaints": [
+          "chest pain",
+          "palpitations",
+          "hypertension follow-up",
+          "shortness of breath"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "cardiac_plan_summary",
+            "prompt_text": "Clinician-entered cardiac plan documented",
+            "prompt_type": "clinician_entered_plan",
+            "required_level": "optional",
+            "documentation_role": "cardiac_plan",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "symptom_plan_context",
+            "prompt_text": "Symptom-specific plan documented only if clinician decided",
+            "prompt_type": "clinician_entered_plan",
+            "required_level": "conditional",
+            "documentation_role": "symptom_plan",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "patient_questions",
+            "prompt_text": "Patient questions documented if addressed by clinician",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "optional",
+            "documentation_role": "patient_understanding",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "cardio_risk_factor_counseling",
+        "section_label": "Risk factor counseling documented",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "gp-hypertension-followup",
+          "gp-dyslipidemia-followup",
+          "gp-diabetes-followup",
+          "gp-chest-pain"
+        ],
+        "applicable_complaints": [
+          "hypertension follow-up",
+          "dyslipidemia follow-up",
+          "diabetes follow-up",
+          "chest pain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "risk_factor_discussion",
+            "prompt_text": "Cardiovascular risk factor counseling documented if discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "optional",
+            "documentation_role": "risk_factor_counseling",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "lifestyle_context",
+            "prompt_text": "Lifestyle context documented if clinician discussed",
+            "prompt_type": "lifestyle_documentation",
+            "required_level": "conditional",
+            "documentation_role": "lifestyle",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "home_monitoring_context",
+            "prompt_text": "Home monitoring discussion documented if clinician discussed",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "conditional",
+            "documentation_role": "monitoring",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "cardio_medication_review",
+        "section_label": "Medication review documented",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "gp-hypertension-followup",
+          "gp-palpitations",
+          "gp-chest-pain"
+        ],
+        "applicable_complaints": [
+          "hypertension follow-up",
+          "palpitations",
+          "chest pain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "current_medicines_reviewed",
+            "prompt_text": "Current medicines reviewed documented if reviewed by clinician",
+            "prompt_type": "medication_review_documentation",
+            "required_level": "conditional",
+            "documentation_role": "medication_review",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "adherence_discussion",
+            "prompt_text": "Adherence discussion documented if discussed",
+            "prompt_type": "medication_review_documentation",
+            "required_level": "conditional",
+            "documentation_role": "adherence",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "side_effects_discussion",
+            "prompt_text": "Side effects or tolerance documented if discussed",
+            "prompt_type": "medication_review_documentation",
+            "required_level": "conditional",
+            "documentation_role": "tolerance",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "cardio_investigations_documented",
+        "section_label": "Investigations discussed by clinician",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "gp-chest-pain",
+          "gp-palpitations",
+          "gp-hypertension-followup",
+          "gp-shortness-of-breath"
+        ],
+        "applicable_complaints": [
+          "chest pain",
+          "palpitations",
+          "hypertension follow-up",
+          "shortness of breath"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "cardiac_tests_discussed",
+            "prompt_text": "Cardiac investigations documented only if clinician discussed or reviewed",
+            "prompt_type": "investigation_documentation",
+            "required_level": "conditional",
+            "documentation_role": "cardiac_investigations",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "results_reviewed",
+            "prompt_text": "Investigation results reviewed documented if applicable",
+            "prompt_type": "investigation_documentation",
+            "required_level": "conditional",
+            "documentation_role": "results_review",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "next_review",
+            "prompt_text": "Next review for results documented if clinician decided",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "conditional",
+            "documentation_role": "review",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "cardio_follow_up_safety",
+        "section_label": "Follow-up and safety-netting documented",
+        "display_order": 5,
+        "applicable_workflow_ids": [
+          "gp-chest-pain",
+          "gp-palpitations",
+          "gp-hypertension-followup"
+        ],
+        "applicable_complaints": [
+          "chest pain",
+          "palpitations",
+          "hypertension follow-up"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "follow_up_documented",
+            "prompt_text": "Follow-up documented if clinician decided",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "optional",
+            "documentation_role": "follow_up",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "safety_netting",
+            "prompt_text": "Safety-netting documented if discussed",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "safety_netting",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "review_pathway",
+            "prompt_text": "Review pathway documented only if clinician entered",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "conditional",
+            "documentation_role": "review_pathway",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      }
+    ]
+  },
+  {
+    "specialty_id": "Respiratory / Pulmonology",
+    "specialty_name": "Respiratory / Pulmonology",
+    "template_version": "v3g.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+    "safety_notes": [
+      "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+      "These prompts record clinician-entered decisions only."
+    ],
+    "plan_sections": [
+      {
+        "section_id": "resp_clinician_entered_plan",
+        "section_label": "Clinician-entered respiratory plan",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "gp-cough",
+          "gp-shortness-of-breath",
+          "gp-fever-urti",
+          "peds-cough"
+        ],
+        "applicable_complaints": [
+          "cough",
+          "shortness of breath",
+          "fever",
+          "pediatric cough"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "resp_plan_summary",
+            "prompt_text": "Clinician-entered respiratory plan documented",
+            "prompt_type": "clinician_entered_plan",
+            "required_level": "optional",
+            "documentation_role": "respiratory_plan",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "symptom_care",
+            "prompt_text": "Symptom care documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "symptom_care",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "work_or_activity_advice",
+            "prompt_text": "Activity or work advice documented only if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "optional",
+            "documentation_role": "activity_advice",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "resp_medication_review",
+        "section_label": "Inhaler or medication review documented",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "gp-cough",
+          "gp-shortness-of-breath"
+        ],
+        "applicable_complaints": [
+          "cough",
+          "shortness of breath"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "current_resp_medicines",
+            "prompt_text": "Current respiratory medicines reviewed documented if reviewed",
+            "prompt_type": "medication_review_documentation",
+            "required_level": "conditional",
+            "documentation_role": "medication_review",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "inhaler_technique_discussion",
+            "prompt_text": "Inhaler technique discussion documented if clinician discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "conditional",
+            "documentation_role": "inhaler_technique",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "adherence_tolerance",
+            "prompt_text": "Adherence or tolerance documented if discussed",
+            "prompt_type": "medication_review_documentation",
+            "required_level": "conditional",
+            "documentation_role": "adherence_tolerance",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "resp_smoking_exposure_counseling",
+        "section_label": "Smoking exposure counseling documented",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "gp-cough",
+          "gp-shortness-of-breath"
+        ],
+        "applicable_complaints": [
+          "cough",
+          "shortness of breath"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "smoking_exposure_discussed",
+            "prompt_text": "Smoking or exposure counseling documented if discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "optional",
+            "documentation_role": "smoking_exposure",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "pack_years_documented",
+            "prompt_text": "Pack-year documentation reviewed if clinician entered",
+            "prompt_type": "counseling_documentation",
+            "required_level": "conditional",
+            "documentation_role": "smoking_history",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "environmental_exposure_advice",
+            "prompt_text": "Environmental exposure advice documented if clinician discussed",
+            "prompt_type": "lifestyle_documentation",
+            "required_level": "conditional",
+            "documentation_role": "exposure_advice",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "resp_safety_follow_up",
+        "section_label": "Safety-netting and follow-up documented",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "gp-cough",
+          "gp-shortness-of-breath",
+          "gp-fever-urti"
+        ],
+        "applicable_complaints": [
+          "cough",
+          "shortness of breath",
+          "fever"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "resp_safety_netting",
+            "prompt_text": "Respiratory safety-netting documented if discussed",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "safety_netting",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "follow_up_plan",
+            "prompt_text": "Follow-up documented if clinician decided",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "optional",
+            "documentation_role": "follow_up",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "review_if_worse",
+            "prompt_text": "Review advice documented if clinician discussed",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "review_advice",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      }
+    ]
+  },
+  {
+    "specialty_id": "Pediatrics",
+    "specialty_name": "Pediatrics",
+    "template_version": "v3g.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+    "safety_notes": [
+      "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+      "These prompts record clinician-entered decisions only.",
+      "Pediatric safeguarding plan prompts are documentation prompts only; local protocol and clinician judgment apply."
+    ],
+    "plan_sections": [
+      {
+        "section_id": "peds_parent_guardian_advice",
+        "section_label": "Parent or guardian advice documented",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "peds-fever",
+          "peds-cough",
+          "peds-rash",
+          "peds-poor-feeding"
+        ],
+        "applicable_complaints": [
+          "pediatric fever",
+          "pediatric cough",
+          "pediatric rash",
+          "poor feeding"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "guardian_advice_summary",
+            "prompt_text": "Parent or guardian advice documented if discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "optional",
+            "documentation_role": "guardian_advice",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "home_care_context",
+            "prompt_text": "Home care advice documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "home_care",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "understanding_confirmed",
+            "prompt_text": "Parent or guardian understanding documented if checked",
+            "prompt_type": "counseling_documentation",
+            "required_level": "optional",
+            "documentation_role": "understanding",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "peds_hydration_feeding_advice",
+        "section_label": "Hydration and feeding advice documented",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "peds-fever",
+          "peds-vomiting-diarrhea",
+          "peds-poor-feeding"
+        ],
+        "applicable_complaints": [
+          "pediatric fever",
+          "vomiting / diarrhea",
+          "poor feeding"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "hydration_advice",
+            "prompt_text": "Hydration advice documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "hydration",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "feeding_advice",
+            "prompt_text": "Feeding advice documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "feeding",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "urine_output_advice",
+            "prompt_text": "Urine output discussion documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "urine_output",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "peds_safety_netting",
+        "section_label": "Safety-netting documented",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "peds-fever",
+          "peds-cough",
+          "peds-rash",
+          "peds-vomiting-diarrhea"
+        ],
+        "applicable_complaints": [
+          "pediatric fever",
+          "pediatric cough",
+          "pediatric rash",
+          "vomiting / diarrhea"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "return_precautions",
+            "prompt_text": "Return precautions documented if discussed with parent or guardian",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "return_precautions",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "worsening_advice",
+            "prompt_text": "Worsening symptom advice documented if discussed",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "worsening_advice",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "safety_understanding",
+            "prompt_text": "Safety-netting understanding documented if checked",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "understanding",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "peds_follow_up_immunization",
+        "section_label": "Follow-up and immunization counseling documented",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "peds-routine-followup",
+          "peds-vaccination",
+          "peds-growth-concern",
+          "peds-development-concern"
+        ],
+        "applicable_complaints": [
+          "routine pediatric follow-up",
+          "vaccination visit",
+          "growth concern",
+          "developmental concern"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "follow_up_plan",
+            "prompt_text": "Follow-up documented if clinician decided",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "optional",
+            "documentation_role": "follow_up",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "immunization_discussion",
+            "prompt_text": "Immunization counseling documented if relevant and discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "conditional",
+            "documentation_role": "immunization",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "growth_development_review",
+            "prompt_text": "Growth or development review plan documented if clinician discussed",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "conditional",
+            "documentation_role": "growth_development",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "peds_safeguarding_documentation",
+        "section_label": "Safeguarding documentation prompt if relevant",
+        "display_order": 5,
+        "applicable_workflow_ids": [
+          "peds-routine-followup",
+          "peds-growth-concern",
+          "peds-development-concern",
+          "peds-school-note"
+        ],
+        "applicable_complaints": [
+          "routine pediatric follow-up",
+          "growth concern",
+          "developmental concern",
+          "school / sick note"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "safeguarding_context",
+            "prompt_text": "Safeguarding context documented only if assessed by clinician",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "safeguarding",
+            "display_condition": "Use only if assessed by clinician.",
+            "warning": "Documentation prompt only; local protocol and clinician judgment apply."
+          },
+          {
+            "prompt_id": "support_network",
+            "prompt_text": "Family or support context documented if relevant and discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "conditional",
+            "documentation_role": "support_context",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "school_advice",
+            "prompt_text": "School or nursery advice documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "school_advice",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Clinician-entered plan only. Use only if discussed or decided by clinician. Local safeguarding policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      }
+    ]
+  },
+  {
+    "specialty_id": "Orthopedics / MSK",
+    "specialty_name": "Orthopedics / MSK",
+    "template_version": "v3g.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+    "safety_notes": [
+      "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+      "These prompts record clinician-entered decisions only."
+    ],
+    "plan_sections": [
+      {
+        "section_id": "msk_activity_advice",
+        "section_label": "Activity advice documented",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "msk-low-back-pain",
+          "msk-neck-pain",
+          "msk-knee-pain",
+          "msk-shoulder-pain",
+          "msk-acute-sprain"
+        ],
+        "applicable_complaints": [
+          "low back pain",
+          "neck pain",
+          "knee pain",
+          "shoulder pain",
+          "acute sprain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "activity_advice",
+            "prompt_text": "Activity advice documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "activity_advice",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "work_sports_advice",
+            "prompt_text": "Work, sport, or activity modification documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "activity_modification",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "self_care_context",
+            "prompt_text": "Self-care advice documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "optional",
+            "documentation_role": "self_care",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "msk_analgesia_documented",
+        "section_label": "Analgesia plan documented if clinician decided",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "msk-low-back-pain",
+          "msk-knee-pain",
+          "msk-shoulder-pain",
+          "msk-acute-sprain"
+        ],
+        "applicable_complaints": [
+          "low back pain",
+          "knee pain",
+          "shoulder pain",
+          "acute sprain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "analgesia_plan",
+            "prompt_text": "Analgesia plan documented only if clinician decided",
+            "prompt_type": "clinician_entered_plan",
+            "required_level": "conditional",
+            "documentation_role": "analgesia_plan",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "medicine_review",
+            "prompt_text": "Current pain medicine review documented if reviewed",
+            "prompt_type": "medication_review_documentation",
+            "required_level": "conditional",
+            "documentation_role": "medication_review",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "tolerance_context",
+            "prompt_text": "Tolerance or contraindication discussion documented if clinician discussed",
+            "prompt_type": "medication_review_documentation",
+            "required_level": "optional",
+            "documentation_role": "medicine_context",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "msk_physiotherapy_referral",
+        "section_label": "Physiotherapy or referral documented if clinician decided",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "msk-low-back-pain",
+          "msk-knee-pain",
+          "msk-shoulder-pain",
+          "msk-osteoarthritis-followup"
+        ],
+        "applicable_complaints": [
+          "low back pain",
+          "knee pain",
+          "shoulder pain",
+          "osteoarthritis follow-up"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "physiotherapy_discussed",
+            "prompt_text": "Physiotherapy discussion documented if clinician decided",
+            "prompt_type": "referral_documentation",
+            "required_level": "conditional",
+            "documentation_role": "physiotherapy",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "specialist_referral",
+            "prompt_text": "Specialist referral documented if clinician decided",
+            "prompt_type": "referral_documentation",
+            "required_level": "conditional",
+            "documentation_role": "specialist_referral",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "rehab_plan",
+            "prompt_text": "Rehabilitation plan documented only if clinician entered",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "conditional",
+            "documentation_role": "rehabilitation",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "msk_imaging_documented",
+        "section_label": "Imaging discussed by clinician",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "msk-acute-sprain",
+          "msk-fracture-followup",
+          "msk-post-op-followup",
+          "msk-sports-injury"
+        ],
+        "applicable_complaints": [
+          "acute sprain",
+          "fracture follow-up",
+          "post-op follow-up",
+          "sports injury"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "imaging_discussed",
+            "prompt_text": "Imaging discussion documented if clinician decided",
+            "prompt_type": "investigation_documentation",
+            "required_level": "conditional",
+            "documentation_role": "imaging",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "imaging_reviewed",
+            "prompt_text": "Imaging reviewed documented if applicable",
+            "prompt_type": "investigation_documentation",
+            "required_level": "conditional",
+            "documentation_role": "imaging_review",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "result_follow_up",
+            "prompt_text": "Result follow-up documented if clinician decided",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "conditional",
+            "documentation_role": "result_follow_up",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "msk_red_flags_follow_up",
+        "section_label": "Red flags and follow-up documented",
+        "display_order": 5,
+        "applicable_workflow_ids": [
+          "msk-low-back-pain",
+          "msk-neck-pain",
+          "msk-fracture-followup",
+          "msk-post-op-followup"
+        ],
+        "applicable_complaints": [
+          "low back pain",
+          "neck pain",
+          "fracture follow-up",
+          "post-op follow-up"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "red_flags_explained",
+            "prompt_text": "Red flags explained documented if discussed",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "red_flags",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "follow_up_plan",
+            "prompt_text": "Follow-up documented if clinician decided",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "optional",
+            "documentation_role": "follow_up",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "return_precautions",
+            "prompt_text": "Return precautions documented if discussed",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "return_precautions",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      }
+    ]
+  },
+  {
+    "specialty_id": "ENT",
+    "specialty_name": "ENT",
+    "template_version": "v3g.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+    "safety_notes": [
+      "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+      "These prompts record clinician-entered decisions only."
+    ],
+    "plan_sections": [
+      {
+        "section_id": "ent_clinician_entered_plan",
+        "section_label": "Clinician-entered ENT plan",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "ent-ear-pain",
+          "ent-nasal-congestion",
+          "ent-sinus-symptoms",
+          "ent-sore-throat",
+          "ent-voice-complaint"
+        ],
+        "applicable_complaints": [
+          "ear pain",
+          "nasal congestion",
+          "sinus symptoms",
+          "sore throat",
+          "voice complaint"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "ent_plan_summary",
+            "prompt_text": "Clinician-entered ENT plan documented",
+            "prompt_type": "clinician_entered_plan",
+            "required_level": "optional",
+            "documentation_role": "ent_plan",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "symptom_care",
+            "prompt_text": "Symptom care documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "symptom_care",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "self_care_advice",
+            "prompt_text": "Self-care advice documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "optional",
+            "documentation_role": "self_care",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "ent_hearing_referral",
+        "section_label": "Hearing or ENT referral documented if clinician decided",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "ent-hearing-complaint",
+          "ent-tinnitus",
+          "ent-dizziness-vertigo",
+          "ent-voice-complaint"
+        ],
+        "applicable_complaints": [
+          "hearing complaint",
+          "tinnitus",
+          "dizziness / vertigo",
+          "voice complaint"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "hearing_referral",
+            "prompt_text": "Hearing referral documented if clinician decided",
+            "prompt_type": "referral_documentation",
+            "required_level": "conditional",
+            "documentation_role": "hearing_referral",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "ent_referral",
+            "prompt_text": "ENT referral documented if clinician decided",
+            "prompt_type": "referral_documentation",
+            "required_level": "conditional",
+            "documentation_role": "ent_referral",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "referral_reason",
+            "prompt_text": "Referral reason documented only if clinician entered",
+            "prompt_type": "referral_documentation",
+            "required_level": "conditional",
+            "documentation_role": "referral_reason",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "ent_safety_follow_up",
+        "section_label": "Safety-netting and follow-up documented",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "ent-ear-pain",
+          "ent-sore-throat",
+          "ent-sinus-symptoms",
+          "ent-voice-complaint"
+        ],
+        "applicable_complaints": [
+          "ear pain",
+          "sore throat",
+          "sinus symptoms",
+          "voice complaint"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "ent_safety_netting",
+            "prompt_text": "ENT safety-netting documented if discussed",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "safety_netting",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "follow_up_plan",
+            "prompt_text": "Follow-up documented if clinician decided",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "optional",
+            "documentation_role": "follow_up",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "review_advice",
+            "prompt_text": "Review advice documented if clinician discussed",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "review_advice",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      }
+    ]
+  },
+  {
+    "specialty_id": "Dermatology",
+    "specialty_name": "Dermatology",
+    "template_version": "v3g.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+    "safety_notes": [
+      "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+      "These prompts record clinician-entered decisions only."
+    ],
+    "plan_sections": [
+      {
+        "section_id": "derm_skin_care_advice",
+        "section_label": "Skin care advice documented",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "derm-rash",
+          "derm-eczema",
+          "derm-fungal-infection",
+          "derm-urticaria"
+        ],
+        "applicable_complaints": [
+          "rash",
+          "eczema / dermatitis",
+          "fungal infection",
+          "urticaria"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "skin_care_advice",
+            "prompt_text": "Skin care advice documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "skin_care",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "barrier_care",
+            "prompt_text": "Barrier or emollient care discussion documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "skin_care_context",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "itch_care_context",
+            "prompt_text": "Itch care discussion documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "optional",
+            "documentation_role": "symptom_care",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "derm_trigger_avoidance",
+        "section_label": "Trigger avoidance documented",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "derm-rash",
+          "derm-eczema",
+          "derm-urticaria",
+          "derm-acne"
+        ],
+        "applicable_complaints": [
+          "rash",
+          "eczema / dermatitis",
+          "urticaria",
+          "acne"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "triggers_discussed",
+            "prompt_text": "Triggers discussed documented if clinician discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "conditional",
+            "documentation_role": "triggers",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "avoidance_advice",
+            "prompt_text": "Avoidance advice documented if clinician discussed",
+            "prompt_type": "lifestyle_documentation",
+            "required_level": "conditional",
+            "documentation_role": "avoidance",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "exposure_context",
+            "prompt_text": "Exposure context documented if discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "optional",
+            "documentation_role": "exposure",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "derm_medicine_plan",
+        "section_label": "Topical or systemic medicine plan documented only if clinician entered",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "derm-rash",
+          "derm-eczema",
+          "derm-acne",
+          "derm-fungal-infection"
+        ],
+        "applicable_complaints": [
+          "rash",
+          "eczema / dermatitis",
+          "acne",
+          "fungal infection"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "medicine_plan",
+            "prompt_text": "Medicine plan documented only if clinician entered",
+            "prompt_type": "medication_review_documentation",
+            "required_level": "conditional",
+            "documentation_role": "medicine_plan",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "application_advice",
+            "prompt_text": "Application or use advice documented only if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "use_advice",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "medicine_review",
+            "prompt_text": "Medication review documented if reviewed by clinician",
+            "prompt_type": "medication_review_documentation",
+            "required_level": "conditional",
+            "documentation_role": "medication_review",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "derm_referral_safety_follow_up",
+        "section_label": "Referral, safety-netting, and follow-up documented",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "derm-rash",
+          "derm-wound-review",
+          "derm-skin-lesion-review",
+          "derm-hair-loss"
+        ],
+        "applicable_complaints": [
+          "rash",
+          "wound review",
+          "skin lesion review",
+          "hair loss"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "derm_referral",
+            "prompt_text": "Dermatology referral documented if clinician decided",
+            "prompt_type": "referral_documentation",
+            "required_level": "conditional",
+            "documentation_role": "referral",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "safety_netting",
+            "prompt_text": "Skin safety-netting documented if discussed",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "safety_netting",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "follow_up_plan",
+            "prompt_text": "Follow-up documented if clinician decided",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "optional",
+            "documentation_role": "follow_up",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      }
+    ]
+  },
+  {
+    "specialty_id": "Psychiatry / Mental Health",
+    "specialty_name": "Psychiatry / Mental Health",
+    "template_version": "v3g.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+    "safety_notes": [
+      "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+      "These prompts record clinician-entered decisions only.",
+      "Psychiatry plan prompts are documentation prompts only. No crisis-management instructions are generated."
+    ],
+    "plan_sections": [
+      {
+        "section_id": "psych_clinician_entered_plan",
+        "section_label": "Clinician-entered mental health plan",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "psych-low-mood",
+          "psych-anxiety",
+          "psych-stress-symptoms",
+          "psych-panic-symptoms"
+        ],
+        "applicable_complaints": [
+          "low mood",
+          "anxiety",
+          "stress-related symptoms",
+          "panic symptoms"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "mental_health_plan",
+            "prompt_text": "Clinician-entered mental health plan documented",
+            "prompt_type": "clinician_entered_plan",
+            "required_level": "optional",
+            "documentation_role": "mental_health_plan",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "patient_priorities",
+            "prompt_text": "Patient priorities documented if discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "optional",
+            "documentation_role": "patient_priorities",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "shared_understanding",
+            "prompt_text": "Shared understanding documented if discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "optional",
+            "documentation_role": "shared_understanding",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "psych_support_options",
+        "section_label": "Support options documented if clinician discussed",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "psych-low-mood",
+          "psych-anxiety",
+          "psych-stress-symptoms"
+        ],
+        "applicable_complaints": [
+          "low mood",
+          "anxiety",
+          "stress-related symptoms"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "support_options_discussed",
+            "prompt_text": "Support options documented if clinician discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "conditional",
+            "documentation_role": "support_options",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "self_support_context",
+            "prompt_text": "Self-support or coping discussion documented if clinician discussed",
+            "prompt_type": "patient_instruction_documentation",
+            "required_level": "conditional",
+            "documentation_role": "support_context",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "family_social_support",
+            "prompt_text": "Family or social support discussion documented if clinician discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "optional",
+            "documentation_role": "social_support",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "psych_safety_discussion",
+        "section_label": "Safety discussion documented",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "psych-low-mood",
+          "psych-anxiety",
+          "psych-stress-symptoms",
+          "psych-panic-symptoms"
+        ],
+        "applicable_complaints": [
+          "low mood",
+          "anxiety",
+          "stress-related symptoms",
+          "panic symptoms"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "safety_discussion",
+            "prompt_text": "Safety discussion documented based on clinician assessment",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "safety_discussion",
+            "display_condition": "Use only if assessed and discussed by clinician.",
+            "warning": "Documentation prompt only; clinician assessment and local protocol apply."
+          },
+          {
+            "prompt_id": "risk_plan_context",
+            "prompt_text": "Risk-related plan context documented only if clinician entered",
+            "prompt_type": "safety_netting_documentation",
+            "required_level": "safety",
+            "documentation_role": "risk_context",
+            "display_condition": "Use only if assessed and discussed by clinician.",
+            "warning": "No crisis-management instruction is generated."
+          },
+          {
+            "prompt_id": "protective_factors_context",
+            "prompt_text": "Protective factors discussion documented if clinician assessed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "safety",
+            "documentation_role": "protective_factors",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Clinician-entered plan only. Use only if discussed or decided by clinician. Local mental health policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "psych_follow_up_referral",
+        "section_label": "Follow-up and referral documented if clinician decided",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "psych-low-mood",
+          "psych-anxiety",
+          "psych-medication-followup",
+          "psych-sleep-difficulty"
+        ],
+        "applicable_complaints": [
+          "low mood",
+          "anxiety",
+          "medication follow-up",
+          "sleep difficulty"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "follow_up_plan",
+            "prompt_text": "Follow-up documented if clinician decided",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "optional",
+            "documentation_role": "follow_up",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "referral_discussed",
+            "prompt_text": "Referral documented if clinician decided",
+            "prompt_type": "referral_documentation",
+            "required_level": "conditional",
+            "documentation_role": "referral",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "review_pathway",
+            "prompt_text": "Review pathway documented only if clinician entered",
+            "prompt_type": "follow_up_documentation",
+            "required_level": "conditional",
+            "documentation_role": "review_pathway",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      },
+      {
+        "section_id": "psych_medication_review",
+        "section_label": "Medication review documented if relevant",
+        "display_order": 5,
+        "applicable_workflow_ids": [
+          "psych-medication-followup",
+          "psych-low-mood",
+          "psych-anxiety",
+          "psych-sleep-difficulty"
+        ],
+        "applicable_complaints": [
+          "medication follow-up",
+          "low mood",
+          "anxiety",
+          "sleep difficulty"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "medicine_review",
+            "prompt_text": "Medication review documented if reviewed by clinician",
+            "prompt_type": "medication_review_documentation",
+            "required_level": "conditional",
+            "documentation_role": "medication_review",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "adherence_tolerance",
+            "prompt_text": "Adherence or tolerance documented if discussed",
+            "prompt_type": "medication_review_documentation",
+            "required_level": "conditional",
+            "documentation_role": "adherence_tolerance",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          },
+          {
+            "prompt_id": "patient_questions",
+            "prompt_text": "Patient medicine-related questions documented if discussed",
+            "prompt_type": "counseling_documentation",
+            "required_level": "optional",
+            "documentation_role": "patient_questions",
+            "display_condition": "Use only if discussed or decided by clinician.",
+            "warning": "Documentation prompt only; use only if discussed or decided by clinician."
+          }
+        ],
+        "safety_note": "Plan documentation prompts only. Clinician-entered plan only. Use only if discussed or decided by clinician. Local policy and clinician judgment apply.",
+        "source_metadata": {
+          "source_name": "Reference source not assigned",
+          "source_url": "",
+          "source_version": "",
+          "source_status": "unverified_reference_needed",
+          "last_reviewed": "",
+          "notes": "No guideline claim is made in this phase."
+        }
+      }
+    ]
+  }
+]
