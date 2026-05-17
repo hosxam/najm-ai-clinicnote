@@ -63,6 +63,10 @@ const disallowedPhrases = [
   'as per clinician plan'
 ];
 
+const highRiskPositiveSymptomPattern = /\b(suicidal|self-harm|harm to others|vision loss|reduced vision|severe eye pain|chemical exposure|stridor|drooling|facial weakness|mastoid swelling|syncope|heavy bleeding|unstable|peritoneal|saddle anesthesia|respiratory distress|cyanosis|non-blanching|mucosal involvement|facial or lip swelling|skin peeling|immunocompromised)\b/i;
+const expectedPresetCount = 80;
+const warnAboveTotalChips = 25;
+
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
@@ -131,6 +135,12 @@ function main() {
 
   const seenWorkflowIds = new Set();
   let totalReferencedChips = 0;
+  const presetCounts = [];
+  const warnings = [];
+
+  if (presets.length !== expectedPresetCount) {
+    errors.push(`Expected exactly ${expectedPresetCount} speed presets, found ${presets.length}.`);
+  }
 
   for (const [index, preset] of presets.entries()) {
     const label = preset && preset.workflow_id ? preset.workflow_id : `preset at index ${index}`;
@@ -181,6 +191,10 @@ function main() {
       errors.push(`${label}: review_required must be true.`);
     }
 
+    if (typeof preset.preset_version !== 'string' || !preset.preset_version.trim()) {
+      errors.push(`${label}: preset_version must exist.`);
+    }
+
     const collapsedSections = new Set((preset.collapsed_optional_sections || []).map((section) => section.toLowerCase()));
     for (const section of requiredCollapsedSections) {
       if (!collapsedSections.has(section)) {
@@ -203,6 +217,12 @@ function main() {
       }
     }
 
+    for (const symptomText of preset.prechecked_symptoms || []) {
+      if (highRiskPositiveSymptomPattern.test(symptomText)) {
+        errors.push(`${label}: high-risk red flag appears preselected as a positive symptom: "${symptomText}".`);
+      }
+    }
+
     const textValues = [];
     for (const field of requiredFields) {
       const value = preset[field];
@@ -219,6 +239,19 @@ function main() {
         errors.push(`${label}: "${text}" ${reason}.`);
       }
     }
+
+    const defaultChipCount = Object.keys(chipFieldToGroup)
+      .reduce((total, field) => total + (Array.isArray(preset[field]) ? preset[field].length : 0), 0);
+    presetCounts.push({ workflow_id: preset.workflow_id, count: defaultChipCount });
+    if (defaultChipCount > warnAboveTotalChips) {
+      warnings.push(`${label}: ${defaultChipCount} default chips selected; review for over-selection.`);
+    }
+  }
+
+  for (const workflow of workflows) {
+    if (!seenWorkflowIds.has(workflow.workflow_id)) {
+      errors.push(`${workflow.workflow_id}: missing speed preset for clinical workflow.`);
+    }
   }
 
   if (errors.length) {
@@ -229,7 +262,20 @@ function main() {
     process.exit(1);
   }
 
+  const counts = presetCounts.map((item) => item.count);
+  const totalDefaultChips = counts.reduce((sum, count) => sum + count, 0);
+  const average = counts.length ? totalDefaultChips / counts.length : 0;
+  const min = counts.length ? Math.min(...counts) : 0;
+  const max = counts.length ? Math.max(...counts) : 0;
+
   console.log(`Speed preset validation passed: ${presets.length} presets, ${totalReferencedChips} referenced chips.`);
+  console.log(`Default chip count: min ${min}, max ${max}, average ${average.toFixed(1)}.`);
+  if (warnings.length) {
+    console.warn('Speed preset validation warnings:');
+    for (const warning of warnings) {
+      console.warn(`- ${warning}`);
+    }
+  }
 }
 
 main();

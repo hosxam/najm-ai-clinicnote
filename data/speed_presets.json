@@ -3,14 +3,628 @@
     "workflow_id": "gp-fever-urti",
     "preset_name": "Fever / URTI quick start",
     "specialty": "General Medicine / GP",
-    "default_duration_options": ["today", "1-3 days", "3-7 days", "more than 1 week"],
-    "prechecked_symptoms": ["fever", "cough", "sore throat", "runny nose", "nasal congestion", "body aches"],
-    "prechecked_relevant_negatives": ["no shortness of breath", "no chest pain", "no neck stiffness", "no persistent vomiting", "no confusion"],
-    "prechecked_exam_findings": ["throat congested", "chest clear on auscultation", "no respiratory distress", "hydration adequate"],
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "fever",
+      "cough",
+      "sore throat",
+      "runny nose",
+      "nasal congestion",
+      "body aches"
+    ],
+    "prechecked_relevant_negatives": [
+      "no shortness of breath",
+      "no chest pain",
+      "no neck stiffness",
+      "no persistent vomiting",
+      "no confusion"
+    ],
+    "prechecked_exam_findings": [
+      "throat congested",
+      "chest clear on auscultation",
+      "no respiratory distress",
+      "hydration adequate"
+    ],
     "prechecked_investigations": [],
-    "prechecked_plan_phrases": ["supportive care discussed", "hydration advised", "rest advised", "return precautions discussed"],
-    "prechecked_follow_up": ["3 days if not improving", "sooner if worsening"],
-    "collapsed_optional_sections": ["exam", "investigations", "referral", "follow-up", "additional history"],
+    "prechecked_plan_phrases": [
+      "supportive care discussed",
+      "hydration advised",
+      "rest advised",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "3 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-cough",
+    "preset_name": "Cough quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "cough",
+      "dry cough",
+      "productive cough",
+      "sputum color noted"
+    ],
+    "prechecked_relevant_negatives": [
+      "no hemoptysis",
+      "no fever",
+      "no SOB",
+      "no chest pain"
+    ],
+    "prechecked_exam_findings": [
+      "chest clear",
+      "oropharynx clear"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "supportive care discussed",
+      "hydration advised",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-sore-throat",
+    "preset_name": "Sore throat quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "sore throat",
+      "painful swallowing",
+      "fever",
+      "cough"
+    ],
+    "prechecked_relevant_negatives": [
+      "no drooling",
+      "no breathing difficulty",
+      "no neck swelling",
+      "no rash"
+    ],
+    "prechecked_exam_findings": [
+      "oropharynx clear",
+      "oropharynx erythematous"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "hydration advised",
+      "return precautions discussed",
+      "sick leave advised"
+    ],
+    "prechecked_follow_up": [
+      "1 week if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-headache",
+    "preset_name": "Headache quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "headache",
+      "headache location",
+      "throbbing pain",
+      "pressure type pain"
+    ],
+    "prechecked_relevant_negatives": [
+      "no aura",
+      "no weakness",
+      "no seizure",
+      "no speech difficulty"
+    ],
+    "prechecked_exam_findings": [
+      "alert and oriented",
+      "no focal neurological deficit",
+      "fundoscopy normal"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "rest in dark quiet room advised",
+      "hydration advised",
+      "headache diary advised",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "2 weeks if persistent",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-dizziness",
+    "preset_name": "Dizziness quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "dizziness",
+      "vertigo",
+      "feeling faint"
+    ],
+    "prechecked_relevant_negatives": [
+      "no syncope",
+      "no focal neurological symptoms",
+      "no chest pain",
+      "no palpitations",
+      "no headache"
+    ],
+    "prechecked_exam_findings": [
+      "neurological examination normal",
+      "gait normal",
+      "orthostatic vitals"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "fall precautions discussed",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-fatigue",
+    "preset_name": "Fatigue quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "fatigue",
+      "duration of fatigue",
+      "low energy",
+      "sleep quality"
+    ],
+    "prechecked_relevant_negatives": [
+      "no weight loss",
+      "no fever",
+      "no night sweats",
+      "no SOB"
+    ],
+    "prechecked_exam_findings": [
+      "heart rate normal",
+      "BP normal",
+      "well appearing"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "sleep hygiene discussed",
+      "dietary advice given",
+      "exercise advised"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks for results",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-abdominal-pain",
+    "preset_name": "Abdominal pain quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "abdominal pain location",
+      "abdominal pain duration",
+      "burning pain",
+      "cramping pain"
+    ],
+    "prechecked_relevant_negatives": [
+      "no vomiting",
+      "no GI bleeding",
+      "no dysphagia",
+      "no weight loss"
+    ],
+    "prechecked_exam_findings": [
+      "bowel sounds normal",
+      "abdomen soft",
+      "epigastric tenderness"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "lifestyle advice discussed",
+      "dietary modifications discussed",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "2 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-nausea",
+    "preset_name": "Nausea/Vomiting quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "nausea",
+      "vomiting",
+      "vomiting frequency",
+      "diarrhea"
+    ],
+    "prechecked_relevant_negatives": [
+      "no blood in vomit",
+      "no severe dehydration",
+      "no blood in stool",
+      "no severe abdominal pain"
+    ],
+    "prechecked_exam_findings": [
+      "abdomen soft non-tender",
+      "hydration adequate",
+      "mucus membranes dry"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "oral rehydration advised",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "2-3 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-diarrhea",
+    "preset_name": "Diarrhea quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "diarrhea frequency",
+      "watery stool",
+      "abdominal cramps",
+      "nausea"
+    ],
+    "prechecked_relevant_negatives": [
+      "no blood in stool",
+      "no vomiting",
+      "no fever",
+      "no severe abdominal pain"
+    ],
+    "prechecked_exam_findings": [
+      "abdomen soft non-tender",
+      "hydration adequate",
+      "lower abdominal tenderness"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "ORS advised",
+      "bland diet advised",
+      "probiotics discussed",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "2-3 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-constipation",
+    "preset_name": "Constipation quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "constipation duration",
+      "stool frequency",
+      "straining",
+      "hard stool"
+    ],
+    "prechecked_relevant_negatives": [
+      "no GI bleeding",
+      "no severe abdominal pain",
+      "no fever",
+      "no vomiting"
+    ],
+    "prechecked_exam_findings": [
+      "rectal examination performed",
+      "bowel sounds normal",
+      "abdomen soft"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "dietary fiber increased advised",
+      "fluid intake advised",
+      "exercise advised",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-chest-pain",
+    "preset_name": "Chest pain quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "chest pain",
+      "chest pain character",
+      "chest pain location"
+    ],
+    "prechecked_relevant_negatives": [
+      "no exertional chest pain",
+      "no radiation",
+      "no SOB",
+      "no syncope",
+      "no palpitations"
+    ],
+    "prechecked_exam_findings": [
+      "ECG performed and reviewed",
+      "vitals stable",
+      "chest clear"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "cardiac risk factors discussed",
+      "lifestyle advice discussed",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks for results",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-palpitations",
+    "preset_name": "Palpitations quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "palpitations",
+      "onset of palpitations",
+      "duration of palpitations"
+    ],
+    "prechecked_relevant_negatives": [
+      "no syncope",
+      "no chest pain",
+      "no dizziness",
+      "no SOB",
+      "no stimulant use"
+    ],
+    "prechecked_exam_findings": [
+      "ECG reviewed",
+      "heart rate normal",
+      "BP normal"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "caffeine reduction advised",
+      "stress reduction discussed",
+      "symptom diary advised",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "1 week for results",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-shortness-of-breath",
+    "preset_name": "Shortness of breath quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "shortness of breath",
+      "onset of SOB",
+      "exertional SOB"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain",
+      "no wheeze",
+      "no cough",
+      "no fever",
+      "no leg swelling"
+    ],
+    "prechecked_exam_findings": [
+      "O2 sats normal",
+      "chest clear",
+      "respiratory rate"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "breathing exercises advised",
+      "smoking cessation advised",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "1 week",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
     "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
     "review_required": true,
     "preset_version": "1.0.0"
@@ -19,14 +633,45 @@
     "workflow_id": "gp-hypertension-followup",
     "preset_name": "Hypertension follow-up quick start",
     "specialty": "General Medicine / GP",
-    "default_duration_options": ["routine follow-up", "1-3 months", "3-6 months"],
-    "prechecked_symptoms": ["home BP readings", "medication adherence", "dietary salt intake", "exercise level"],
+    "default_duration_options": [
+      "routine follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "home BP readings",
+      "medication adherence",
+      "dietary salt intake",
+      "exercise level"
+    ],
     "prechecked_relevant_negatives": [],
-    "prechecked_exam_findings": ["BP in clinic", "heart rate normal", "no edema"],
-    "prechecked_investigations": ["labs reviewed", "electrolytes reviewed", "lipid profile reviewed"],
-    "prechecked_plan_phrases": ["medication adherence discussed", "dietary advice given", "exercise advised", "follow-up arranged"],
-    "prechecked_follow_up": ["1-3 months", "sooner if BP uncontrolled"],
-    "collapsed_optional_sections": ["exam", "investigations", "referral", "follow-up", "additional history"],
+    "prechecked_exam_findings": [
+      "BP in clinic",
+      "heart rate normal",
+      "no edema"
+    ],
+    "prechecked_investigations": [
+      "labs reviewed",
+      "electrolytes reviewed",
+      "lipid profile reviewed"
+    ],
+    "prechecked_plan_phrases": [
+      "medication adherence discussed",
+      "dietary advice given",
+      "exercise advised",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "1-3 months",
+      "sooner if BP uncontrolled"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
     "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
     "review_required": true,
     "preset_version": "1.0.0"
@@ -35,94 +680,181 @@
     "workflow_id": "gp-diabetes-followup",
     "preset_name": "Diabetes follow-up quick start",
     "specialty": "General Medicine / GP",
-    "default_duration_options": ["routine follow-up", "1-3 months", "3-6 months"],
-    "prechecked_symptoms": ["home glucose readings", "medication adherence", "weight change", "foot symptoms", "vision change"],
+    "default_duration_options": [
+      "routine follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "home glucose readings",
+      "medication adherence",
+      "weight change",
+      "foot symptoms",
+      "vision change"
+    ],
     "prechecked_relevant_negatives": [],
-    "prechecked_exam_findings": ["foot examination performed", "foot pulses normal", "foot sensation normal"],
-    "prechecked_investigations": ["HbA1c reviewed", "renal function reviewed", "lipid profile reviewed", "urine ACR reviewed"],
-    "prechecked_plan_phrases": ["dietary advice discussed", "exercise advised", "medication adherence discussed", "routine screening discussed", "hypoglycemia education given"],
-    "prechecked_follow_up": ["3-6 months", "sooner if uncontrolled"],
-    "collapsed_optional_sections": ["exam", "investigations", "referral", "follow-up", "additional history"],
+    "prechecked_exam_findings": [
+      "foot examination performed",
+      "foot pulses normal",
+      "foot sensation normal"
+    ],
+    "prechecked_investigations": [
+      "HbA1c reviewed",
+      "renal function reviewed",
+      "lipid profile reviewed",
+      "urine ACR reviewed"
+    ],
+    "prechecked_plan_phrases": [
+      "dietary advice discussed",
+      "exercise advised",
+      "medication adherence discussed",
+      "routine screening discussed",
+      "hypoglycemia education given"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "sooner if uncontrolled"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
     "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
     "review_required": true,
     "preset_version": "1.0.0"
   },
   {
-    "workflow_id": "msk-knee-pain",
-    "preset_name": "Knee pain quick start",
-    "specialty": "Orthopedics / MSK",
-    "default_duration_options": ["today", "1-7 days", "1-4 weeks", "more than 1 month"],
-    "prechecked_symptoms": ["knee pain", "pain on stairs", "worse with activity", "better with rest", "onset and duration documented"],
-    "prechecked_relevant_negatives": ["no fever reported", "no inability to bear weight reported", "no trauma reported", "no redness or warmth reported"],
-    "prechecked_exam_findings": ["range of motion documented if assessed", "effusion documented if assessed", "joint line tenderness documented if assessed", "gait documented"],
-    "prechecked_investigations": [],
-    "prechecked_plan_phrases": ["activity modification discussed", "RICE protocol discussed", "return precautions discussed", "follow-up arranged", "patient questions addressed"],
-    "prechecked_follow_up": ["1-2 weeks if not improving", "sooner if worsening"],
-    "collapsed_optional_sections": ["exam", "investigations", "referral", "follow-up", "additional history"],
-    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
-    "review_required": true,
-    "preset_version": "1.0.0"
-  },
-  {
-    "workflow_id": "msk-low-back-pain",
-    "preset_name": "Low back pain quick start",
-    "specialty": "Orthopedics / MSK",
-    "default_duration_options": ["today", "1-7 days", "1-4 weeks", "more than 1 month"],
-    "prechecked_symptoms": ["low back pain", "stiffness", "pain worse with movement", "onset and duration documented"],
-    "prechecked_relevant_negatives": ["no bowel or bladder symptoms reported", "no saddle anesthesia reported", "no fever reported", "no trauma reported", "no progressive weakness reported"],
-    "prechecked_exam_findings": ["gait documented", "lumbar tenderness if assessed", "range of motion limited by pain if assessed", "straight leg raise documented if assessed"],
-    "prechecked_investigations": [],
-    "prechecked_plan_phrases": ["activity modification discussed", "back care advice discussed", "return precautions discussed", "follow-up arranged", "patient questions addressed"],
-    "prechecked_follow_up": ["2-4 weeks if not improving", "sooner if worsening"],
-    "collapsed_optional_sections": ["exam", "investigations", "referral", "follow-up", "additional history"],
-    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
-    "review_required": true,
-    "preset_version": "1.0.0"
-  },
-  {
-    "workflow_id": "msk-shoulder-pain",
-    "preset_name": "Shoulder pain quick start",
-    "specialty": "Orthopedics / MSK",
-    "default_duration_options": ["today", "1-7 days", "1-4 weeks", "more than 1 month"],
-    "prechecked_symptoms": ["shoulder pain", "limited overhead activity", "pain with specific movements", "onset and duration documented"],
-    "prechecked_relevant_negatives": ["no neurovascular symptoms reported", "no fever reported", "no trauma reported", "no neck pain reported"],
-    "prechecked_exam_findings": ["shoulder range of motion documented if assessed", "rotator cuff strength documented if assessed", "acromioclavicular joint tenderness if assessed"],
-    "prechecked_investigations": [],
-    "prechecked_plan_phrases": ["activity modification discussed", "return precautions discussed", "follow-up arranged", "patient questions addressed"],
-    "prechecked_follow_up": ["2 weeks if not improving", "sooner if worsening"],
-    "collapsed_optional_sections": ["exam", "investigations", "referral", "follow-up", "additional history"],
-    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
-    "review_required": true,
-    "preset_version": "1.0.0"
-  },
-  {
-    "workflow_id": "msk-post-op-followup",
-    "preset_name": "Post-op follow-up quick start",
-    "specialty": "Orthopedics / MSK",
-    "default_duration_options": ["routine post-op review", "1-2 weeks", "6 weeks", "later review"],
-    "prechecked_symptoms": ["post-operative follow-up", "pain level documented", "wound status documented", "mobility status documented", "physiotherapy progress documented"],
-    "prechecked_relevant_negatives": ["no wound discharge reported", "no fever reported", "no calf pain or swelling reported if relevant", "no chest pain or SOB reported if relevant"],
-    "prechecked_exam_findings": ["wound inspection documented if assessed", "wound healing documented if assessed", "swelling documented if assessed", "range of motion documented if assessed", "neurovascular status documented if assessed", "weight-bearing status documented"],
-    "prechecked_investigations": [],
-    "prechecked_plan_phrases": ["wound care discussed", "physiotherapy and rehab plan discussed", "activity restrictions discussed", "return precautions discussed", "follow-up arranged", "patient questions addressed"],
-    "prechecked_follow_up": ["6 weeks for reassessment", "sooner if concerns"],
-    "collapsed_optional_sections": ["exam", "investigations", "referral", "follow-up", "additional history"],
-    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
-    "review_required": true,
-    "preset_version": "1.0.0"
-  },
-  {
-    "workflow_id": "msk-fracture-followup",
-    "preset_name": "Fracture follow-up quick start",
-    "specialty": "Orthopedics / MSK",
-    "default_duration_options": ["routine fracture review", "2-4 weeks", "4-6 weeks", "later review"],
-    "prechecked_symptoms": ["fracture follow-up", "pain improving", "swelling improving", "cast or splint status documented", "mobility status documented"],
+    "workflow_id": "gp-thyroid-followup",
+    "preset_name": "Thyroid follow-up quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "fatigue",
+      "weight change",
+      "cold intolerance"
+    ],
     "prechecked_relevant_negatives": [],
-    "prechecked_exam_findings": ["neurovascular status documented if assessed", "x-ray reviewed if available", "weight-bearing status documented", "cast condition documented if assessed", "swelling documented if assessed", "range of motion documented if assessed"],
-    "prechecked_investigations": [],
-    "prechecked_plan_phrases": ["cast or splint care discussed", "weight-bearing instructions discussed", "follow-up arranged with orthopedics", "return precautions discussed", "patient questions addressed"],
-    "prechecked_follow_up": ["4-6 weeks for repeat imaging", "sooner if concerns"],
-    "collapsed_optional_sections": ["exam", "investigations", "referral", "follow-up", "additional history"],
+    "prechecked_exam_findings": [
+      "heart rate normal",
+      "thyroid palpation"
+    ],
+    "prechecked_investigations": [
+      "TSH reviewed",
+      "free T4 reviewed"
+    ],
+    "prechecked_plan_phrases": [
+      "medication adherence discussed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "sooner if symptomatic"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-dyslipidemia-followup",
+    "preset_name": "Dyslipidemia follow-up quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "medication adherence",
+      "dietary habits",
+      "exercise level"
+    ],
+    "prechecked_relevant_negatives": [],
+    "prechecked_exam_findings": [
+      "vitals",
+      "weight"
+    ],
+    "prechecked_investigations": [
+      "lipid profile reviewed",
+      "LDL reviewed"
+    ],
+    "prechecked_plan_phrases": [
+      "dietary advice given",
+      "exercise advised",
+      "statin adherence discussed",
+      "cardiovascular risk discussed"
+    ],
+    "prechecked_follow_up": [
+      "3-12 months",
+      "sooner if uncontrolled"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gp-lab-result-review",
+    "preset_name": "Lab result review quick start",
+    "specialty": "General Medicine / GP",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "reason for testing",
+      "current symptoms",
+      "medication changes since labs"
+    ],
+    "prechecked_relevant_negatives": [],
+    "prechecked_exam_findings": [
+      "vitals reviewed"
+    ],
+    "prechecked_investigations": [
+      "labs reviewed",
+      "comparison with previous results",
+      "pending results noted"
+    ],
+    "prechecked_plan_phrases": [
+      "results explained to patient",
+      "patient concerns discussed",
+      "follow-up for results",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "as per results",
+      "sooner if abnormal"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
     "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
     "review_required": true,
     "preset_version": "1.0.0"
@@ -131,14 +863,53 @@
     "workflow_id": "peds-fever",
     "preset_name": "Pediatric fever quick start",
     "specialty": "Pediatrics",
-    "default_duration_options": ["today", "1-3 days", "3-7 days", "more than 1 week"],
-    "prechecked_symptoms": ["fever", "reduced activity", "reduced feeding", "cough", "runny nose"],
-    "prechecked_relevant_negatives": ["no breathing difficulty", "no seizure reported", "no neck stiffness", "no persistent vomiting", "urine output maintained", "no reduced consciousness"],
-    "prechecked_exam_findings": ["child alert", "hydration adequate", "no respiratory distress", "capillary refill documented", "throat examined", "chest clear if assessed"],
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "fever",
+      "reduced activity",
+      "reduced feeding",
+      "cough",
+      "runny nose"
+    ],
+    "prechecked_relevant_negatives": [
+      "no breathing difficulty",
+      "no seizure reported",
+      "no neck stiffness",
+      "no persistent vomiting",
+      "urine output maintained",
+      "no reduced consciousness"
+    ],
+    "prechecked_exam_findings": [
+      "child alert",
+      "hydration adequate",
+      "no respiratory distress",
+      "capillary refill documented",
+      "throat examined",
+      "chest clear if assessed"
+    ],
     "prechecked_investigations": [],
-    "prechecked_plan_phrases": ["supportive care discussed", "hydration advice discussed", "return precautions discussed", "parent/guardian advice discussed"],
-    "prechecked_follow_up": ["1-2 days if not improving", "sooner if worsening"],
-    "collapsed_optional_sections": ["exam", "investigations", "referral", "follow-up", "additional history"],
+    "prechecked_plan_phrases": [
+      "supportive care discussed",
+      "hydration advice discussed",
+      "return precautions discussed",
+      "parent/guardian advice discussed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
     "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
     "review_required": true,
     "preset_version": "1.0.0"
@@ -147,14 +918,2965 @@
     "workflow_id": "peds-cough",
     "preset_name": "Pediatric cough quick start",
     "specialty": "Pediatrics",
-    "default_duration_options": ["today", "1-3 days", "3-7 days", "more than 1 week"],
-    "prechecked_symptoms": ["cough", "runny nose", "nasal congestion", "cough duration", "dry vs productive cough"],
-    "prechecked_relevant_negatives": ["no respiratory distress", "no cyanosis", "no poor feeding reported", "no fever", "no wheeze", "no choking episode"],
-    "prechecked_exam_findings": ["chest clear if assessed", "no chest recession", "no nasal flaring", "child alert", "throat examined if assessed"],
-    "prechecked_investigations": ["O2 sats checked if assessed"],
-    "prechecked_plan_phrases": ["supportive care discussed", "hydration advice discussed", "return precautions discussed", "parent/guardian advice discussed"],
-    "prechecked_follow_up": ["2-3 days if not improving", "sooner if worsening"],
-    "collapsed_optional_sections": ["exam", "investigations", "referral", "follow-up", "additional history"],
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "cough",
+      "runny nose",
+      "nasal congestion",
+      "cough duration",
+      "dry vs productive cough"
+    ],
+    "prechecked_relevant_negatives": [
+      "no respiratory distress",
+      "no cyanosis",
+      "no poor feeding reported",
+      "no fever",
+      "no wheeze",
+      "no choking episode"
+    ],
+    "prechecked_exam_findings": [
+      "chest clear if assessed",
+      "no chest recession",
+      "no nasal flaring",
+      "child alert",
+      "throat examined if assessed"
+    ],
+    "prechecked_investigations": [
+      "O2 sats checked if assessed"
+    ],
+    "prechecked_plan_phrases": [
+      "supportive care discussed",
+      "hydration advice discussed",
+      "return precautions discussed",
+      "parent/guardian advice discussed"
+    ],
+    "prechecked_follow_up": [
+      "2-3 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "peds-vomiting-diarrhea",
+    "preset_name": "Vomiting / diarrhea quick start",
+    "specialty": "Pediatrics",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "vomiting",
+      "vomiting frequency",
+      "diarrhea",
+      "diarrhea frequency"
+    ],
+    "prechecked_relevant_negatives": [
+      "no blood in vomit",
+      "no blood in stool",
+      "no severe abdominal pain",
+      "no fever"
+    ],
+    "prechecked_exam_findings": [
+      "hydration adequate",
+      "abdomen soft non-tender",
+      "child alert"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "oral rehydration solution advised",
+      "continue breastfeeding advice discussed",
+      "bland diet advised",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "peds-rash",
+    "preset_name": "Rash quick start",
+    "specialty": "Pediatrics",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "rash",
+      "itching",
+      "fever",
+      "rash distribution"
+    ],
+    "prechecked_relevant_negatives": [
+      "no breathing difficulty",
+      "no mucosal involvement",
+      "no non-blanching rash",
+      "no facial or lip swelling"
+    ],
+    "prechecked_exam_findings": [
+      "mucous membranes clear",
+      "child well appearing",
+      "rash morphology documented"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "emollient use discussed",
+      "avoid scratching discussed",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "2-3 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "peds-poor-feeding",
+    "preset_name": "Poor feeding quick start",
+    "specialty": "Pediatrics",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "reduced feeding",
+      "vomiting",
+      "fever"
+    ],
+    "prechecked_relevant_negatives": [
+      "no respiratory distress",
+      "no persistent vomiting",
+      "no diarrhea",
+      "no fever",
+      "no lethargy"
+    ],
+    "prechecked_exam_findings": [
+      "weight documented if measured",
+      "hydration adequate",
+      "child alert"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "breastfeeding support discussed",
+      "feeding advice discussed",
+      "hydration advice discussed",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 days",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "peds-ear-pain",
+    "preset_name": "Ear pain quick start",
+    "specialty": "Pediatrics",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "ear pain",
+      "ear pulling",
+      "fever",
+      "ear discharge"
+    ],
+    "prechecked_relevant_negatives": [
+      "no mastoid swelling",
+      "no dizziness",
+      "no fever",
+      "no ear discharge"
+    ],
+    "prechecked_exam_findings": [
+      "tympanic membrane normal if assessed",
+      "otoscopy findings if assessed",
+      "external ear normal"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "supportive care discussed",
+      "return precautions discussed",
+      "parent/guardian advice discussed"
+    ],
+    "prechecked_follow_up": [
+      "2-3 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "peds-abdominal-pain",
+    "preset_name": "Abdominal pain quick start",
+    "specialty": "Pediatrics",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "abdominal pain",
+      "pain location",
+      "vomiting",
+      "diarrhea"
+    ],
+    "prechecked_relevant_negatives": [
+      "no persistent vomiting",
+      "no blood in stool",
+      "no severe localized pain",
+      "no fever"
+    ],
+    "prechecked_exam_findings": [
+      "bowel sounds normal",
+      "child well appearing",
+      "abdomen soft"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "dietary advice discussed",
+      "hydration advice discussed",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "2-3 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "peds-routine-followup",
+    "preset_name": "Routine pediatric follow-up quick start",
+    "specialty": "Pediatrics",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "routine review",
+      "symptoms improving",
+      "parent/guardian concerns",
+      "feeding reviewed"
+    ],
+    "prechecked_relevant_negatives": [],
+    "prechecked_exam_findings": [
+      "examination stable if assessed",
+      "growth parameters documented if measured",
+      "child well appearing"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "parent/guardian concerns addressed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "per routine schedule",
+      "sooner if concerns arise"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "peds-vaccination",
+    "preset_name": "Vaccination visit quick start",
+    "specialty": "Pediatrics",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "vaccination visit",
+      "parent/guardian consent documented if applicable",
+      "immunization history reviewed"
+    ],
+    "prechecked_relevant_negatives": [],
+    "prechecked_exam_findings": [
+      "child well appearing for vaccination"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "vaccine counseling documented",
+      "benefits and risks discussed",
+      "post-vaccination advice discussed",
+      "common side effects discussed"
+    ],
+    "prechecked_follow_up": [
+      "per vaccination schedule",
+      "sooner if side effects or concerns"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "peds-growth-concern",
+    "preset_name": "Growth concern quick start",
+    "specialty": "Pediatrics",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "growth concern",
+      "weight concern",
+      "height concern",
+      "feeding history reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chronic illness",
+      "no vomiting",
+      "no diarrhea",
+      "no respiratory symptoms"
+    ],
+    "prechecked_exam_findings": [
+      "weight documented if measured",
+      "height documented if measured",
+      "growth chart reviewed if available"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "dietary advice discussed",
+      "feeding optimization discussed",
+      "growth monitoring advised"
+    ],
+    "prechecked_follow_up": [
+      "1-3 months for growth monitoring",
+      "sooner if concerns worsen"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "peds-development-concern",
+    "preset_name": "Developmental concern quick start",
+    "specialty": "Pediatrics",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "developmental concern",
+      "speech delay concern",
+      "motor delay concern",
+      "social interaction concern"
+    ],
+    "prechecked_relevant_negatives": [
+      "no regression",
+      "no seizure history",
+      "no vision concern",
+      "no hearing concern"
+    ],
+    "prechecked_exam_findings": [
+      "child alert and interactive",
+      "general examination normal",
+      "speech assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "developmental surveillance discussed",
+      "early intervention services discussed",
+      "hearing test discussed",
+      "return precautions discussed"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months for monitoring",
+      "sooner if concerns progress"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "peds-school-note",
+    "preset_name": "School / sick note quick start",
+    "specialty": "Pediatrics",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "school note request",
+      "sick note request",
+      "symptoms documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no severe symptoms",
+      "no ongoing significant symptoms",
+      "no fever currently"
+    ],
+    "prechecked_exam_findings": [
+      "vitals normal if assessed",
+      "child well appearing"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "return-to-school advice discussed",
+      "follow-up arranged if needed",
+      "return precautions discussed if applicable"
+    ],
+    "prechecked_follow_up": [
+      "PRN",
+      "sooner if not recovered"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "obgyn-antenatal-followup",
+    "preset_name": "Antenatal follow-up quick start",
+    "specialty": "OB/GYN",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "routine antenatal follow-up",
+      "gestational age documented",
+      "fetal movement discussed if relevant",
+      "abdominal pain"
+    ],
+    "prechecked_relevant_negatives": [
+      "no vaginal bleeding reported",
+      "no abdominal pain reported",
+      "no leaking fluid reported",
+      "no reduced fetal movement reported if applicable"
+    ],
+    "prechecked_exam_findings": [
+      "abdomen soft non-tender if assessed",
+      "vitals recorded",
+      "BP recorded"
+    ],
+    "prechecked_investigations": [
+      "urine dip reviewed if done",
+      "antenatal labs reviewed"
+    ],
+    "prechecked_plan_phrases": [
+      "antenatal counseling documented",
+      "warning symptoms discussed",
+      "follow-up arranged",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "4 weeks or per protocol",
+      "sooner if concerns"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "obgyn-pelvic-pain",
+    "preset_name": "Pelvic pain quick start",
+    "specialty": "OB/GYN",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "pelvic pain",
+      "pain location documented",
+      "pain duration documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no syncope reported",
+      "no heavy bleeding reported",
+      "no fever reported",
+      "no urinary symptoms reported",
+      "no nausea or vomiting reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal exam documented if assessed",
+      "pelvic exam documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "pregnancy test reviewed if done",
+      "CBC reviewed if done"
+    ],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "follow-up arranged",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "obgyn-irregular-bleeding",
+    "preset_name": "Irregular bleeding quick start",
+    "specialty": "OB/GYN",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "LMP documented",
+      "cycle regularity documented",
+      "pregnancy status documented if relevant",
+      "associated pain"
+    ],
+    "prechecked_relevant_negatives": [
+      "no syncope reported",
+      "no severe pelvic pain reported",
+      "no fever reported",
+      "no vaginal discharge reported"
+    ],
+    "prechecked_exam_findings": [
+      "vitals recorded",
+      "abdominal exam documented if assessed",
+      "pelvic exam documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "pregnancy test reviewed if done",
+      "CBC reviewed if done"
+    ],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "cycle diary advised",
+      "return precautions discussed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "obgyn-vaginal-discharge",
+    "preset_name": "Vaginal discharge quick start",
+    "specialty": "OB/GYN",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "vaginal discharge",
+      "discharge color documented",
+      "discharge odor documented",
+      "discharge consistency documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no pelvic pain reported",
+      "no fever reported",
+      "no abnormal bleeding reported",
+      "no itching reported"
+    ],
+    "prechecked_exam_findings": [
+      "cervical appearance documented if assessed",
+      "discharge appearance documented if assessed",
+      "external exam documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "swab results reviewed if available",
+      "urine dip reviewed if done"
+    ],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "follow-up arranged",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks after treatment",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "obgyn-contraception",
+    "preset_name": "Contraception counseling quick start",
+    "specialty": "OB/GYN",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "contraception counseling visit",
+      "current method documented",
+      "previous methods documented",
+      "menstrual history documented",
+      "pregnancy status considered if relevant",
+      "patient preference documented"
+    ],
+    "prechecked_relevant_negatives": [],
+    "prechecked_exam_findings": [],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "counseling documented",
+      "risks and benefits discussed by clinician",
+      "contraception options reviewed",
+      "follow-up arranged",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "3 months for method review",
+      "sooner if side effects"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "obgyn-dysmenorrhea",
+    "preset_name": "Dysmenorrhea quick start",
+    "specialty": "OB/GYN",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "painful periods",
+      "pain timing documented",
+      "pain severity documented",
+      "cycle pattern documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no abnormal bleeding reported",
+      "no fever reported",
+      "no pelvic mass symptoms reported",
+      "no dyspareunia reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdomen soft non-tender if assessed",
+      "abdominal exam documented if assessed",
+      "pelvic exam documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "heat therapy discussed",
+      "lifestyle advice discussed",
+      "return precautions discussed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "3 months if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "obgyn-postnatal-followup",
+    "preset_name": "Postnatal follow-up quick start",
+    "specialty": "OB/GYN",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "postnatal follow-up",
+      "delivery details documented",
+      "pain documented",
+      "wound concerns if relevant"
+    ],
+    "prechecked_relevant_negatives": [
+      "no heavy bleeding reported",
+      "no fever reported",
+      "no wound discharge reported",
+      "no urinary symptoms reported"
+    ],
+    "prechecked_exam_findings": [
+      "vitals recorded",
+      "abdominal exam documented if assessed",
+      "perineal or wound inspection if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "postnatal counseling documented",
+      "warning symptoms discussed",
+      "breastfeeding support discussed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "6-8 weeks",
+      "sooner if concerns"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "obgyn-early-pregnancy",
+    "preset_name": "Early pregnancy symptoms quick start",
+    "specialty": "OB/GYN",
+    "default_duration_options": [
+      "routine review",
+      "today",
+      "1-2 weeks",
+      "as scheduled"
+    ],
+    "prechecked_symptoms": [
+      "early pregnancy symptoms",
+      "nausea",
+      "vomiting"
+    ],
+    "prechecked_relevant_negatives": [
+      "no vaginal bleeding reported",
+      "no severe abdominal pain reported",
+      "no syncope reported",
+      "no shoulder tip pain reported",
+      "no fever reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdomen soft non-tender if assessed",
+      "vitals recorded",
+      "abdominal exam documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "pregnancy test reviewed if done",
+      "quantitative hCG reviewed if done"
+    ],
+    "prechecked_plan_phrases": [
+      "early pregnancy counseling documented",
+      "warning symptoms discussed",
+      "follow-up arranged",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks for reassessment",
+      "sooner if worsening symptoms"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "obgyn-menopause",
+    "preset_name": "Menopause symptoms quick start",
+    "specialty": "OB/GYN",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "hot flashes",
+      "night sweats",
+      "sleep disturbance"
+    ],
+    "prechecked_relevant_negatives": [
+      "no abnormal bleeding reported",
+      "no heavy bleeding reported",
+      "no vaginal discharge reported",
+      "no pelvic pain reported"
+    ],
+    "prechecked_exam_findings": [],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "counseling documented",
+      "lifestyle advice discussed",
+      "vaginal moisturizers or lubricants discussed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "3 months for HRT review",
+      "12 months for routine follow-up"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "obgyn-fertility",
+    "preset_name": "Fertility concern quick start",
+    "specialty": "OB/GYN",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "fertility concern",
+      "duration trying to conceive documented",
+      "menstrual regularity documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no severe pelvic pain reported if relevant",
+      "no abnormal bleeding reported",
+      "no previous STI history reported if assessed"
+    ],
+    "prechecked_exam_findings": [
+      "pelvic exam documented if assessed",
+      "thyroid exam if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "counseling documented",
+      "preconception care discussed",
+      "ovulation tracking discussed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "3 months for reassessment",
+      "6 months for initial workup results"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "msk-low-back-pain",
+    "preset_name": "Low back pain quick start",
+    "specialty": "Orthopedics / MSK",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "low back pain",
+      "stiffness",
+      "pain worse with movement",
+      "onset and duration documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no bowel or bladder symptoms reported",
+      "no saddle anesthesia reported",
+      "no fever reported",
+      "no trauma reported",
+      "no progressive weakness reported"
+    ],
+    "prechecked_exam_findings": [
+      "gait documented",
+      "lumbar tenderness if assessed",
+      "range of motion limited by pain if assessed",
+      "straight leg raise documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "activity modification discussed",
+      "back care advice discussed",
+      "return precautions discussed",
+      "follow-up arranged",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "msk-neck-pain",
+    "preset_name": "Neck pain quick start",
+    "specialty": "Orthopedics / MSK",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "neck pain",
+      "stiffness",
+      "pain radiating to arm",
+      "numbness or tingling reported"
+    ],
+    "prechecked_relevant_negatives": [
+      "no limb weakness reported",
+      "no gait disturbance reported",
+      "no bowel or bladder symptoms reported",
+      "no fever reported"
+    ],
+    "prechecked_exam_findings": [
+      "cervical range of motion documented if assessed",
+      "upper limb power documented if assessed",
+      "upper limb sensation documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "activity modification discussed",
+      "ergonomic advice discussed",
+      "return precautions discussed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "2 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "msk-knee-pain",
+    "preset_name": "Knee pain quick start",
+    "specialty": "Orthopedics / MSK",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "knee pain",
+      "pain on stairs",
+      "worse with activity",
+      "better with rest",
+      "onset and duration documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no fever reported",
+      "no inability to bear weight reported",
+      "no trauma reported",
+      "no redness or warmth reported"
+    ],
+    "prechecked_exam_findings": [
+      "range of motion documented if assessed",
+      "effusion documented if assessed",
+      "joint line tenderness documented if assessed",
+      "gait documented"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "activity modification discussed",
+      "RICE protocol discussed",
+      "return precautions discussed",
+      "follow-up arranged",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "msk-shoulder-pain",
+    "preset_name": "Shoulder pain quick start",
+    "specialty": "Orthopedics / MSK",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "shoulder pain",
+      "limited overhead activity",
+      "pain with specific movements",
+      "onset and duration documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no neurovascular symptoms reported",
+      "no fever reported",
+      "no trauma reported",
+      "no neck pain reported"
+    ],
+    "prechecked_exam_findings": [
+      "shoulder range of motion documented if assessed",
+      "rotator cuff strength documented if assessed",
+      "acromioclavicular joint tenderness if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "activity modification discussed",
+      "return precautions discussed",
+      "follow-up arranged",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "2 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "msk-hip-pain",
+    "preset_name": "Hip pain quick start",
+    "specialty": "Orthopedics / MSK",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "hip pain",
+      "groin pain",
+      "lateral hip pain",
+      "limp"
+    ],
+    "prechecked_relevant_negatives": [
+      "no inability to bear weight reported",
+      "no fever reported",
+      "no trauma reported",
+      "no knee pain reported"
+    ],
+    "prechecked_exam_findings": [
+      "hip range of motion documented if assessed",
+      "hip flexion documented if assessed",
+      "internal and external rotation documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "activity modification discussed",
+      "walking aid discussed",
+      "return precautions discussed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "msk-ankle-pain",
+    "preset_name": "Ankle / foot pain quick start",
+    "specialty": "Orthopedics / MSK",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "ankle pain",
+      "foot pain",
+      "swelling",
+      "bruising"
+    ],
+    "prechecked_relevant_negatives": [
+      "no numbness or tingling reported",
+      "no open wound reported",
+      "no inability to bear weight reported",
+      "no fever reported"
+    ],
+    "prechecked_exam_findings": [
+      "gait and weight-bearing status documented",
+      "range of motion documented if assessed",
+      "swelling documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "RICE protocol discussed",
+      "activity modification discussed",
+      "return precautions discussed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "msk-wrist-hand-pain",
+    "preset_name": "Wrist / hand pain quick start",
+    "specialty": "Orthopedics / MSK",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "wrist pain",
+      "hand pain",
+      "swelling",
+      "trauma history"
+    ],
+    "prechecked_relevant_negatives": [
+      "no deformity reported",
+      "no open wound reported",
+      "no fever reported",
+      "no bilateral numbness reported"
+    ],
+    "prechecked_exam_findings": [
+      "range of motion documented if assessed",
+      "grip strength documented if assessed",
+      "neurovascular status documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "activity modification discussed",
+      "return precautions discussed",
+      "follow-up arranged",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "2 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "msk-acute-sprain",
+    "preset_name": "Acute sprain quick start",
+    "specialty": "Orthopedics / MSK",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "twisting injury",
+      "swelling",
+      "bruising",
+      "pain on movement"
+    ],
+    "prechecked_relevant_negatives": [
+      "no open wound reported",
+      "no neurovascular symptoms reported",
+      "no inability to bear weight reported",
+      "no deformity reported"
+    ],
+    "prechecked_exam_findings": [
+      "range of motion documented if assessed",
+      "swelling documented if assessed",
+      "ligament stress tests documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "RICE protocol discussed",
+      "activity modification discussed",
+      "return precautions discussed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "1 week if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "msk-fracture-followup",
+    "preset_name": "Fracture follow-up quick start",
+    "specialty": "Orthopedics / MSK",
+    "default_duration_options": [
+      "routine fracture review",
+      "2-4 weeks",
+      "4-6 weeks",
+      "later review"
+    ],
+    "prechecked_symptoms": [
+      "fracture follow-up",
+      "pain improving",
+      "swelling improving",
+      "cast or splint status documented",
+      "mobility status documented"
+    ],
+    "prechecked_relevant_negatives": [],
+    "prechecked_exam_findings": [
+      "neurovascular status documented if assessed",
+      "x-ray reviewed if available",
+      "weight-bearing status documented",
+      "cast condition documented if assessed",
+      "swelling documented if assessed",
+      "range of motion documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "cast or splint care discussed",
+      "weight-bearing instructions discussed",
+      "follow-up arranged with orthopedics",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks for repeat imaging",
+      "sooner if concerns"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "msk-post-op-followup",
+    "preset_name": "Post-op follow-up quick start",
+    "specialty": "Orthopedics / MSK",
+    "default_duration_options": [
+      "routine post-op review",
+      "1-2 weeks",
+      "6 weeks",
+      "later review"
+    ],
+    "prechecked_symptoms": [
+      "post-operative follow-up",
+      "pain level documented",
+      "wound status documented",
+      "mobility status documented",
+      "physiotherapy progress documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no wound discharge reported",
+      "no fever reported",
+      "no calf pain or swelling reported if relevant",
+      "no chest pain or SOB reported if relevant"
+    ],
+    "prechecked_exam_findings": [
+      "wound inspection documented if assessed",
+      "wound healing documented if assessed",
+      "swelling documented if assessed",
+      "range of motion documented if assessed",
+      "neurovascular status documented if assessed",
+      "weight-bearing status documented"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "wound care discussed",
+      "physiotherapy and rehab plan discussed",
+      "activity restrictions discussed",
+      "return precautions discussed",
+      "follow-up arranged",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "6 weeks for reassessment",
+      "sooner if concerns"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "msk-osteoarthritis-followup",
+    "preset_name": "Osteoarthritis follow-up quick start",
+    "specialty": "Orthopedics / MSK",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "chronic joint pain",
+      "stiffness",
+      "pain with activity",
+      "reduced function"
+    ],
+    "prechecked_relevant_negatives": [],
+    "prechecked_exam_findings": [
+      "range of motion documented if assessed",
+      "crepitus documented if assessed",
+      "deformity documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "joint protection advice discussed",
+      "follow-up arranged",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "msk-sports-injury",
+    "preset_name": "Sports injury quick start",
+    "specialty": "Orthopedics / MSK",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "sports-related injury",
+      "mechanism documented",
+      "pain during activity",
+      "swelling"
+    ],
+    "prechecked_relevant_negatives": [
+      "no neurovascular symptoms reported",
+      "no deformity reported",
+      "no fever reported",
+      "no head injury reported if relevant"
+    ],
+    "prechecked_exam_findings": [
+      "range of motion documented if assessed",
+      "strength documented if assessed",
+      "functional limitation documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "RICE protocol discussed",
+      "activity modification and rest discussed",
+      "graded return to sport discussed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ent-ear-pain",
+    "preset_name": "Ear pain quick start",
+    "specialty": "ENT",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "ear pain",
+      "unilateral ear pain",
+      "bilateral ear pain",
+      "fever"
+    ],
+    "prechecked_relevant_negatives": [
+      "no ear discharge reported",
+      "no hearing loss reported",
+      "no dizziness reported",
+      "no mastoid swelling reported"
+    ],
+    "prechecked_exam_findings": [
+      "ear canal appearance documented if assessed",
+      "tympanic membrane appearance documented if assessed",
+      "otoscopy documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "ear care advice discussed",
+      "follow-up arranged"
+    ],
+    "prechecked_follow_up": [
+      "1 week if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ent-hearing-complaint",
+    "preset_name": "Hearing complaint quick start",
+    "specialty": "ENT",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "reduced hearing",
+      "sudden hearing change",
+      "gradual hearing change",
+      "unilateral hearing complaint"
+    ],
+    "prechecked_relevant_negatives": [
+      "no dizziness reported",
+      "no neurological symptoms reported",
+      "no ear pain reported",
+      "no ear discharge reported"
+    ],
+    "prechecked_exam_findings": [
+      "tympanic membrane appearance documented if assessed",
+      "otoscopy documented if assessed",
+      "hearing screen or audiology result reviewed if available"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "2 weeks to review test results",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ent-tinnitus",
+    "preset_name": "Tinnitus quick start",
+    "specialty": "ENT",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "tinnitus",
+      "unilateral tinnitus",
+      "bilateral tinnitus",
+      "pulsatile tinnitus"
+    ],
+    "prechecked_relevant_negatives": [],
+    "prechecked_exam_findings": [
+      "tympanic membrane appearance documented if assessed",
+      "otoscopy documented if assessed",
+      "hearing screen documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks if persistent",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ent-dizziness-vertigo",
+    "preset_name": "Dizziness / vertigo quick start",
+    "specialty": "ENT",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "dizziness",
+      "vertigo",
+      "spinning sensation"
+    ],
+    "prechecked_relevant_negatives": [
+      "no syncope reported",
+      "no focal neurological symptoms reported",
+      "no chest pain reported",
+      "no new weakness reported",
+      "no headache reported"
+    ],
+    "prechecked_exam_findings": [
+      "neurological examination documented if assessed",
+      "ear examination documented if assessed",
+      "positional testing documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "fall prevention advice discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ent-nasal-congestion",
+    "preset_name": "Nasal congestion quick start",
+    "specialty": "ENT",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "nasal congestion",
+      "runny nose",
+      "sneezing",
+      "postnasal drip"
+    ],
+    "prechecked_relevant_negatives": [
+      "no epistaxis reported",
+      "no severe facial pain reported",
+      "no fever reported",
+      "no purulent nasal discharge reported"
+    ],
+    "prechecked_exam_findings": [
+      "nasal mucosa appearance documented if assessed",
+      "nasal examination documented if assessed",
+      "throat examination documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "allergen avoidance advice discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ent-sinus-symptoms",
+    "preset_name": "Sinus symptoms quick start",
+    "specialty": "ENT",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "facial pressure",
+      "nasal congestion",
+      "purulent nasal discharge reported",
+      "postnasal drip"
+    ],
+    "prechecked_relevant_negatives": [
+      "no visual symptoms reported",
+      "no facial swelling reported",
+      "no severe headache reported",
+      "no dental pain reported"
+    ],
+    "prechecked_exam_findings": [
+      "nasal examination documented if assessed",
+      "throat examination documented if assessed",
+      "temperature recorded if measured"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ent-sore-throat",
+    "preset_name": "Sore throat quick start",
+    "specialty": "ENT",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "sore throat",
+      "painful swallowing",
+      "fever",
+      "cough"
+    ],
+    "prechecked_relevant_negatives": [
+      "no drooling reported",
+      "no breathing difficulty reported",
+      "no neck swelling reported",
+      "no trismus reported"
+    ],
+    "prechecked_exam_findings": [
+      "throat examination documented if assessed",
+      "tonsillar swelling documented if assessed",
+      "uvula and soft palate documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "rapid strep test result reviewed if done",
+      "throat culture result reviewed if done"
+    ],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "hydration and rest advised",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ent-voice-complaint",
+    "preset_name": "Voice complaint quick start",
+    "specialty": "ENT",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "hoarseness",
+      "voice change",
+      "loss of voice",
+      "throat discomfort"
+    ],
+    "prechecked_relevant_negatives": [
+      "no breathing difficulty reported",
+      "no swallowing difficulty reported",
+      "no hemoptysis reported",
+      "no neck mass reported"
+    ],
+    "prechecked_exam_findings": [
+      "throat examination documented if assessed",
+      "laryngeal examination or VLS documented if assessed",
+      "neck examination documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "vocal hygiene advice discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "2 weeks if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "derm-rash",
+    "preset_name": "Rash quick start",
+    "specialty": "Dermatology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "rash",
+      "itching",
+      "pain",
+      "burning sensation"
+    ],
+    "prechecked_relevant_negatives": [
+      "no fever reported",
+      "no mucosal involvement reported",
+      "no breathing difficulty reported",
+      "no facial or lip swelling reported"
+    ],
+    "prechecked_exam_findings": [
+      "rash distribution documented if assessed",
+      "morphology documented if assessed",
+      "scaling documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1 week if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "derm-acne",
+    "preset_name": "Acne quick start",
+    "specialty": "Dermatology",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "acne lesions",
+      "facial involvement",
+      "chest or back involvement",
+      "painful lesions"
+    ],
+    "prechecked_relevant_negatives": [
+      "no systemic symptoms reported",
+      "no new cosmetics or products reported",
+      "no significant scarring reported",
+      "no painful lesions reported"
+    ],
+    "prechecked_exam_findings": [
+      "lesion type documented if assessed",
+      "comedones documented if assessed",
+      "inflammatory papules and pustules documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks to review response",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "derm-eczema",
+    "preset_name": "Eczema / dermatitis quick start",
+    "specialty": "Dermatology",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "itching",
+      "dry skin",
+      "recurrent rash",
+      "flare pattern documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no fever reported",
+      "no discharge reported",
+      "no rapidly spreading redness reported",
+      "no new trigger identified reported"
+    ],
+    "prechecked_exam_findings": [
+      "xerosis documented if assessed",
+      "excoriations documented if assessed",
+      "lichenification documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks to review response",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "derm-fungal-infection",
+    "preset_name": "Fungal infection quick start",
+    "specialty": "Dermatology",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "itchy rash",
+      "ring-shaped lesion if described",
+      "scaling",
+      "groin involvement if described"
+    ],
+    "prechecked_relevant_negatives": [
+      "no fever reported",
+      "no rapidly spreading redness reported",
+      "no pain reported",
+      "no discharge reported"
+    ],
+    "prechecked_exam_findings": [
+      "central clearing documented if assessed",
+      "lesion distribution documented if assessed",
+      "scaling border documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "skin scraping result reviewed if done",
+      "fungal culture result reviewed if done"
+    ],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "hygiene advice discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks to review response",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "derm-urticaria",
+    "preset_name": "Urticaria quick start",
+    "specialty": "Dermatology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "hives or wheals",
+      "itching",
+      "episodic rash",
+      "swelling"
+    ],
+    "prechecked_relevant_negatives": [
+      "no breathing difficulty reported",
+      "no lip or tongue swelling reported",
+      "no dizziness or syncope reported",
+      "no fever reported"
+    ],
+    "prechecked_exam_findings": [
+      "wheals documented if assessed",
+      "swelling documented if assessed",
+      "distribution documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks if persistent",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "derm-wound-review",
+    "preset_name": "Wound review quick start",
+    "specialty": "Dermatology",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "wound review",
+      "wound location documented",
+      "wound duration documented",
+      "pain"
+    ],
+    "prechecked_relevant_negatives": [
+      "no fever reported",
+      "no spreading redness reported",
+      "no increasing pain reported",
+      "no foul discharge reported"
+    ],
+    "prechecked_exam_findings": [
+      "wound size documented if assessed",
+      "wound edges documented if assessed",
+      "surrounding redness documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "wound swab result reviewed if done"
+    ],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-3 days for wound check",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "derm-skin-lesion-review",
+    "preset_name": "Skin lesion review quick start",
+    "specialty": "Dermatology",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "skin lesion",
+      "duration documented",
+      "size change",
+      "color change"
+    ],
+    "prechecked_relevant_negatives": [
+      "no bleeding reported",
+      "no itching reported",
+      "no pain reported",
+      "no size change reported"
+    ],
+    "prechecked_exam_findings": [
+      "lesion size documented if assessed",
+      "color documented if assessed",
+      "border documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "sun protection advice discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months for monitoring",
+      "sooner if change in lesion"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "derm-hair-loss",
+    "preset_name": "Hair loss quick start",
+    "specialty": "Dermatology",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "hair loss",
+      "diffuse hair shedding",
+      "patchy hair loss",
+      "scalp itching"
+    ],
+    "prechecked_relevant_negatives": [
+      "no scalp pain reported",
+      "no scalp itching reported",
+      "no scalp scaling reported",
+      "no systemic symptoms reported"
+    ],
+    "prechecked_exam_findings": [
+      "scalp examination documented if assessed",
+      "patch distribution documented if assessed",
+      "scaling or inflammation documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "thyroid function results reviewed if done",
+      "iron studies reviewed if done"
+    ],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "3 months to review response",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ophth-red-eye",
+    "preset_name": "Red eye quick start",
+    "specialty": "Ophthalmology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "red eye",
+      "unilateral redness",
+      "bilateral redness",
+      "itching"
+    ],
+    "prechecked_relevant_negatives": [
+      "no vision change reported",
+      "no severe eye pain reported",
+      "no photophobia reported",
+      "no trauma reported"
+    ],
+    "prechecked_exam_findings": [
+      "visual acuity documented if assessed",
+      "corneal appearance documented if assessed",
+      "pupil findings documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ophth-eye-pain",
+    "preset_name": "Eye pain quick start",
+    "specialty": "Ophthalmology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "eye pain",
+      "foreign body sensation",
+      "photophobia"
+    ],
+    "prechecked_relevant_negatives": [
+      "no vision change reported",
+      "no trauma reported",
+      "no chemical exposure reported",
+      "no contact lens use reported",
+      "no photophobia reported"
+    ],
+    "prechecked_exam_findings": [
+      "visual acuity documented if assessed",
+      "corneal appearance documented if assessed",
+      "pupil findings documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ophth-vision-change",
+    "preset_name": "Vision change quick start",
+    "specialty": "Ophthalmology",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "blurred vision",
+      "sudden vision change",
+      "gradual vision change"
+    ],
+    "prechecked_relevant_negatives": [
+      "no eye pain reported",
+      "no trauma reported",
+      "no headache reported",
+      "no floaters or flashes reported",
+      "no double vision reported"
+    ],
+    "prechecked_exam_findings": [
+      "visual acuity documented if assessed",
+      "pupil findings documented if assessed",
+      "eye movement documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks if stable",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ophth-eye-discharge",
+    "preset_name": "Eye discharge quick start",
+    "specialty": "Ophthalmology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "eye discharge",
+      "watery discharge",
+      "sticky discharge",
+      "crusting"
+    ],
+    "prechecked_relevant_negatives": [
+      "no vision change reported",
+      "no severe pain reported",
+      "no photophobia reported",
+      "no trauma reported"
+    ],
+    "prechecked_exam_findings": [
+      "visual acuity documented if assessed",
+      "corneal appearance documented if assessed",
+      "eyelid findings documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "eye hygiene advice discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ophth-contact-lens-complaint",
+    "preset_name": "Contact lens-related complaint quick start",
+    "specialty": "Ophthalmology",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "contact lens use",
+      "eye redness",
+      "eye pain",
+      "foreign body sensation"
+    ],
+    "prechecked_relevant_negatives": [
+      "no trauma reported",
+      "no chemical exposure reported",
+      "no vision change reported",
+      "no photophobia reported"
+    ],
+    "prechecked_exam_findings": [
+      "visual acuity documented if assessed",
+      "corneal appearance documented if assessed",
+      "pupil findings documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 days if not improving",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "ophth-eye-trauma",
+    "preset_name": "Eye trauma quick start",
+    "specialty": "Ophthalmology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "eye trauma",
+      "blunt trauma",
+      "foreign body exposure"
+    ],
+    "prechecked_relevant_negatives": [
+      "no vision change reported if applicable",
+      "no chemical exposure reported if applicable",
+      "no double vision reported",
+      "no photophobia reported",
+      "no foreign body sensation reported if applicable"
+    ],
+    "prechecked_exam_findings": [
+      "visual acuity documented if assessed",
+      "external injury documented if assessed",
+      "pupil findings documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "return precautions discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 days for follow-up",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "psych-anxiety",
+    "preset_name": "Anxiety quick start",
+    "specialty": "Psychiatry / Mental Health",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "anxiety symptoms",
+      "excessive worry",
+      "restlessness"
+    ],
+    "prechecked_relevant_negatives": [
+      "no suicidal ideation reported if assessed",
+      "no self-harm thoughts reported if assessed",
+      "no thoughts of harm to others reported if assessed",
+      "no psychotic symptoms reported if assessed",
+      "no substance misuse reported if assessed"
+    ],
+    "prechecked_exam_findings": [
+      "appearance documented if assessed",
+      "behavior documented if assessed",
+      "speech documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "safety discussion documented as per clinician assessment",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "psych-low-mood",
+    "preset_name": "Low mood quick start",
+    "specialty": "Psychiatry / Mental Health",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "low mood",
+      "loss of interest",
+      "low energy"
+    ],
+    "prechecked_relevant_negatives": [
+      "no suicidal ideation reported if assessed",
+      "no self-harm thoughts reported if assessed",
+      "no thoughts of harm to others reported if assessed",
+      "no psychotic symptoms reported if assessed",
+      "no manic symptoms reported if assessed"
+    ],
+    "prechecked_exam_findings": [
+      "appearance documented if assessed",
+      "behavior documented if assessed",
+      "speech documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "safety discussion documented as per clinician assessment",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "psych-sleep-difficulty",
+    "preset_name": "Sleep difficulty quick start",
+    "specialty": "Psychiatry / Mental Health",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "difficulty falling asleep",
+      "frequent awakenings",
+      "early morning waking"
+    ],
+    "prechecked_relevant_negatives": [
+      "no suicidal ideation reported if assessed",
+      "no self-harm thoughts reported if assessed",
+      "no psychotic symptoms reported if assessed",
+      "no manic symptoms reported if assessed",
+      "no substance misuse reported if assessed"
+    ],
+    "prechecked_exam_findings": [
+      "mood documented if assessed",
+      "affect documented if assessed",
+      "risk assessment documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks to review response",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "psych-stress-symptoms",
+    "preset_name": "Stress-related symptoms quick start",
+    "specialty": "Psychiatry / Mental Health",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "stress-related symptoms",
+      "work stress documented",
+      "family or social stress documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no suicidal ideation reported if assessed",
+      "no self-harm thoughts reported if assessed",
+      "no thoughts of harm to others reported if assessed",
+      "no psychotic symptoms reported if assessed",
+      "no substance misuse reported if assessed"
+    ],
+    "prechecked_exam_findings": [
+      "mood documented if assessed",
+      "affect documented if assessed",
+      "behavior documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "safety discussion documented as per clinician assessment",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "psych-panic-symptoms",
+    "preset_name": "Panic symptoms quick start",
+    "specialty": "Psychiatry / Mental Health",
+    "default_duration_options": [
+      "today",
+      "1-7 days",
+      "1-4 weeks",
+      "more than 1 month"
+    ],
+    "prechecked_symptoms": [
+      "panic episodes",
+      "sudden intense anxiety",
+      "palpitations"
+    ],
+    "prechecked_relevant_negatives": [
+      "no syncope reported",
+      "no persistent chest pain reported if assessed",
+      "no focal neurological symptoms reported if assessed",
+      "no suicidal ideation reported if assessed",
+      "no self-harm thoughts reported if assessed"
+    ],
+    "prechecked_exam_findings": [
+      "appearance documented if assessed",
+      "behavior documented if assessed",
+      "speech documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "safety discussion documented as per clinician assessment",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "sooner if worsening"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "psych-medication-followup",
+    "preset_name": "Medication follow-up quick start",
+    "specialty": "Psychiatry / Mental Health",
+    "default_duration_options": [
+      "routine visit",
+      "recent follow-up",
+      "1-3 months",
+      "3-6 months"
+    ],
+    "prechecked_symptoms": [
+      "medication follow-up",
+      "adherence discussed",
+      "response to medication documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no suicidal ideation reported if assessed",
+      "no self-harm thoughts reported if assessed",
+      "no thoughts of harm to others reported if assessed",
+      "no severe side effects reported if assessed",
+      "no allergic reaction symptoms reported if assessed"
+    ],
+    "prechecked_exam_findings": [
+      "mood documented if assessed",
+      "affect documented if assessed",
+      "behavior documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "labs reviewed if ordered by clinician",
+      "medication monitoring reviewed if applicable"
+    ],
+    "prechecked_plan_phrases": [
+      "management plan discussed",
+      "safety discussion documented as per clinician assessment",
+      "patient questions addressed"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks for medication review",
+      "sooner if worsening or side effects"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
     "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
     "review_required": true,
     "preset_version": "1.0.0"
