@@ -18,7 +18,7 @@
 <section class="hero"><div class="hero-inner"><div class="eyebrow">Orthopedic / MSK documentation draft</div><h1>Orthopedic SOAP Note Generator</h1><p class="lead">Create orthopedic and musculoskeletal SOAP note drafts from doctor-entered de-identified clinical details, including symptoms, relevant negatives, examination findings, investigations, impression, and plan.</p><div class="badges"><span class="badge">MSK workflows</span><span class="badge">Doctor-entered findings</span><span class="badge">No patient identifiers</span><span class="badge">Review required</span></div></div></section>
 <main>
 <div class="grid"><section class="card"><h2>Who this is for</h2><p>Doctors documenting orthopedic or musculoskeletal outpatient visits such as back pain, knee pain, shoulder pain, neck pain, or follow-up reviews.</p></section><section class="card"><h2>What it generates</h2><ul><li>Subjective MSK complaint details</li><li>Pertinent negatives selected by the clinician</li><li>Exam findings documented by the clinician</li><li>Investigations reviewed</li><li>Doctor-entered impression and plan</li></ul></section></div>
-<section class="card"><h2>Fictional example</h2><p class="example-disclaimer">Fictional and de-identified.</p><div class="example"><h3>Clinician-entered input</h3><pre>Lower back pain, worse with movement. No bowel or bladder symptoms. No saddle anesthesia. No fever. Gait documented. Lumbar tenderness. Impression: Mechanical low back pain, clinician impression documented. Plan: activity modification and physiotherapy referral discussed as per clinician plan.</pre></div><div class="example"><h3>Generated SOAP output example</h3><pre>SUBJECTIVE:
+<section class="card"><h2>Fictional example</h2><p class="example-disclaimer">Fictional and de-identified.</p><div class="example"><h3>Clinician-entered input</h3><pre>Lower back pain, worse with movement. No bowel or bladder symptoms. No saddle anesthesia. No fever. Gait documented. Lumbar tenderness. Impression: Mechanical low back pain. Plan: activity modification advised and physiotherapy referral given.</pre></div><div class="example"><h3>Generated SOAP output example</h3><pre>SUBJECTIVE:
 Lower back pain, worse with movement.
 Pertinent negatives: no bowel/bladder symptoms, no saddle anesthesia, no fever.
 
@@ -26,10 +26,10 @@ OBJECTIVE:
 Gait documented. Lumbar tenderness.
 
 ASSESSMENT:
-Mechanical low back pain, clinician impression documented.
+Mechanical low back pain.
 
 PLAN:
-Activity modification discussed. Physiotherapy referral discussed as per clinician plan.</pre></div></section>
+Activity modification advised. Physiotherapy referral given. Follow-up arranged.</pre></div></section>
 <section class="safety"><strong>Safety and privacy note:</strong> Use only de-identified doctor-entered details. This page does not provide orthopedic diagnosis or treatment advice. Clinician review is required.</section>
 <section class="card"><h2>Related tools</h2><div class="related"><a href="../free-soap-note-generator/">Free SOAP note generator</a><a href="../opd-note-generator/">OPD note generator</a><a href="../pediatric-soap-note-generator/">Pediatric SOAP notes</a><a href="../dermatology-soap-note-generator/">Dermatology SOAP notes</a></div></section>
 <section class="card faq"><h2>FAQ</h2><details><summary>Is this for orthopedic documentation?</summary><p>Yes, it is a documentation draft workflow for doctor-entered orthopedic and MSK details.</p></details><details><summary>Does it diagnose back pain?</summary><p>No. The clinician enters the impression. ClinicNote does not diagnose.</p></details><details><summary>Does it recommend treatment?</summary><p>No. It structures the doctor-entered plan only.</p></details><details><summary>Does it store patient data?</summary><p>No. It is intended for de-identified browser-based use.</p></details><details><summary>Is review required?</summary><p>Yes. A licensed clinician must review the draft before use.</p></details></section>

@@ -1235,21 +1235,30 @@ function v2clearAllSelections() {
       return;
     }
   // Get selected items
-  var selectedSymptoms = getSelectedChips("speedSymptoms");
-  var selectedNegs = getSelectedChips("speedNegs");
-  var selectedExam = getSelectedChips("speedExam");
-  var selectedRedFlags = getSelectedChips("speedRedFlags");
-  var selectedInvs = getSelectedChips("speedInvs");
-  var selectedPlans = getSelectedChips("speedPlans");
-  var selectedFollowUps = v2getSelectedChips("speedFollowupChips");
+  var cleaner = typeof cleanOutputPhrase === "function" ? cleanOutputPhrase : function(value) { return String(value || "").trim(); };
+  var listCleaner = typeof cleanOutputPhraseList === "function" ? cleanOutputPhraseList : function(items) {
+    var out = [];
+    for (var i = 0; i < (items || []).length; i++) {
+      var cleaned = cleaner(items[i]);
+      if (cleaned) out.push(cleaned);
+    }
+    return out;
+  };
+  var selectedSymptoms = listCleaner(getSelectedChips("speedSymptoms"));
+  var selectedNegs = listCleaner(getSelectedChips("speedNegs"));
+  var selectedExam = listCleaner(getSelectedChips("speedExam"));
+  var selectedRedFlags = listCleaner(getSelectedChips("speedRedFlags"));
+  var selectedInvs = listCleaner(getSelectedChips("speedInvs"));
+  var selectedPlans = listCleaner(getSelectedChips("speedPlans"));
+  var selectedFollowUps = listCleaner(v2getSelectedChips("speedFollowupChips"));
 
-  var duration = document.getElementById("speedDuration").value.trim();
-  var impression = document.getElementById("speedImpression").value.trim();
-  var plan = document.getElementById("speedPlan").value.trim();
-  var followup = document.getElementById("speedFollowup").value.trim();
+  var duration = cleaner(document.getElementById("speedDuration").value);
+  var impression = cleaner(document.getElementById("speedImpression").value);
+  var plan = cleaner(document.getElementById("speedPlan").value);
+  var followup = cleaner(document.getElementById("speedFollowup").value);
   if (!followup && selectedFollowUps.length) followup = selectedFollowUps.join(", ");
-  var refReason = document.getElementById("speedReferralReason").value.trim();
-  var refSpecialty = document.getElementById("speedReferralSpecialty").value.trim();
+  var refReason = cleaner(document.getElementById("speedReferralReason").value);
+  var refSpecialty = cleaner(document.getElementById("speedReferralSpecialty").value);
   var specName = currentSpecialty;
   var visitName = currentVisitType;
 
@@ -1280,13 +1289,13 @@ function v2clearAllSelections() {
   } else if (planPhrasesStr) {
     fullPlan = planPhrasesStr;
   }
-  if (!fullPlan) fullPlan = "[doctor plan not documented]";
+  if (!fullPlan) fullPlan = "[not documented]";
 
   // Red flags in output
   var rfStr = selectedRedFlags.join(", ") || "";
 
   // Impression
-  var impStr = impression || "[doctor impression not documented]";
+  var impStr = impression || "[not documented]";
 
   var outputs = {};
 
@@ -1344,11 +1353,14 @@ function v2clearAllSelections() {
 
   // Instructions (no investigations, only doctor plan)
   outputs.inst = dc + "PATIENT INSTRUCTIONS\n\n";
-  outputs.inst += "Diagnosis: " + impStr + "\n\n";
-  outputs.inst += "Doctor advice / plan:\n" + plan + "\n\n";
-  if (planPhrasesStr) outputs.inst += "Plan discussed:\n" + planPhrasesStr + "\n\n";
+  outputs.inst += "Assessment: " + impStr + "\n\n";
+  outputs.inst += "Doctor advice / plan:\n";
+  if (plan) outputs.inst += plan + "\n";
+  if (selectedPlans.length) outputs.inst += "- " + selectedPlans.join("\n- ") + "\n";
+  if (!plan && !selectedPlans.length) outputs.inst += "[not documented]\n";
+  outputs.inst += "\n";
   if (seekHelpItems.length) outputs.inst += "When to seek help:\n" + seekHelpItems.join(", ") + "\n\n";
-  outputs.inst += "Follow-up: " + (followup || "As advised") + "\n";
+  outputs.inst += "Follow-up: " + (followup || "[not documented]") + "\n";
 
   window._speedOutputs = outputs;
   window._activeSpeedTab = window._activeSpeedTab || "emr";

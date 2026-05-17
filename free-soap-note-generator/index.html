@@ -18,7 +18,7 @@
 <section class="hero"><div class="hero-inner"><div class="eyebrow">SOAP note documentation draft</div><h1>Free SOAP Note Generator for Doctors</h1><p class="lead">ClinicNote helps doctors turn doctor-entered de-identified clinical details into a structured SOAP note draft for clinician review. It is browser-based, requires no login, and does not use audio recording or patient data storage.</p><div class="badges"><span class="badge">No login</span><span class="badge">No audio</span><span class="badge">No storage</span><span class="badge">Clinician review required</span></div></div></section>
 <main>
 <div class="grid"><section class="card"><h2>Who this is for</h2><p>This page is for doctors and clinical teams who want a quick way to structure de-identified consultation details into a SOAP note draft.</p><p>ClinicNote does not diagnose, recommend treatment, or replace clinician judgment. It structures what the clinician enters.</p></section><section class="card"><h2>What it generates</h2><ul><li>Subjective section from doctor-entered symptoms and relevant negatives</li><li>Objective section from documented examination and investigations</li><li>Assessment from the doctor-entered impression</li><li>Plan from the doctor-entered plan and follow-up details</li></ul></section></div>
-<section class="card"><h2>Fictional example</h2><p class="example-disclaimer">Fictional and de-identified. Do not enter patient identifiers.</p><div class="example"><h3>Clinician-entered input</h3><pre>Fever and cough for several days. Sore throat. No shortness of breath. No chest pain. Chest clear on auscultation. Impression: Viral URTI. Plan: supportive care, fluids, antipyretic use as per clinician plan. Follow-up if symptoms worsen.</pre></div><div class="example"><h3>Generated SOAP output example</h3><pre>SUBJECTIVE:
+<section class="card"><h2>Fictional example</h2><p class="example-disclaimer">Fictional and de-identified. Do not enter patient identifiers.</p><div class="example"><h3>Clinician-entered input</h3><pre>Fever and cough for several days. Sore throat. No shortness of breath. No chest pain. Chest clear on auscultation. Impression: Viral URTI. Plan: supportive care, fluids encouraged, antipyretic advised. Follow-up if symptoms worsen.</pre></div><div class="example"><h3>Generated SOAP output example</h3><pre>SUBJECTIVE:
 Fever, cough, sore throat. No shortness of breath. No chest pain.
 
 OBJECTIVE:
@@ -28,7 +28,7 @@ ASSESSMENT:
 Viral URTI.
 
 PLAN:
-Supportive care, fluids, antipyretic use as per clinician plan.
+Supportive care, fluids encouraged, antipyretic advised.
 Follow-up if symptoms persist or worsen.</pre></div></section>
 <section class="safety"><strong>Safety and privacy note:</strong> Use de-identified doctor-entered details only. Do not enter names, MRNs, phone numbers, exact dates of birth, Emirates ID, addresses, or other patient identifiers. Outputs are documentation drafts and require clinician review before use.</section>
 <section class="card"><h2>Related tools</h2><div class="related"><a href="../opd-note-generator/">OPD note generator</a><a href="../referral-letter-generator-for-doctors/">Referral letter generator</a><a href="../patient-instructions-generator/">Patient instructions generator</a><a href="../medical-report-draft-generator/">Medical report draft generator</a></div></section>
