@@ -39,36 +39,28 @@ V3A, V3B, V3C, and V3D remain staged architecture/prototype layers:
 
 Any future UI wiring requires an explicit instruction and should remain behind a feature flag first.
 
-## Private Doctor Testing Gate
-
-Before additional feature expansion, collect feedback from 3-5 doctors using fictional or de-identified information only.
-
-Primary questions:
-
-- Can a first-time doctor generate a useful note in under 2 minutes?
-- Can a repeat user generate a useful note in under 60 seconds?
-- Are Autofill defaults helpful or overselected?
-- Are outputs copy-ready after clinician review?
-- Which workflows or phrases feel missing?
-- Is any wording unsafe, awkward, or too generic?
-
-## Next Allowed Work Without UI Wiring
-
-- Reports summarizing doctor testing feedback.
-- Template request backlog updates.
-- Safety review notes.
-- Data architecture validation.
-- Non-public planning documents.
-
-## Not Allowed Without Explicit Instruction
-
-- Making calculators default.
-- Showing calculator suggestions in OPD.
-- Adding high-risk calculator formulas.
-- Adding guideline-aware plan prompts.
-- Adding treatment recommendations.
-- Adding backend, login, storage, audio, or analytics providers.
-
 ## Recommendation
 
-Proceed to private doctor testing using the current product. Use feedback to decide whether the next build should be wording cleanup, Autofill preset tuning, template expansion, or feature-flagged V3 UI experiments.
+Do not send ClinicNote to doctors yet. Continue internal self-testing and safe meta-plan expansion. The next work should remain non-public, controlled, and mostly data/report/validation based unless explicitly approved. Doctor testing will begin only after the founder completes self-review and confirms the site is ready.
+
+## Allowed Next Work
+
+- Complete pre-doctor quality lockdown.
+- Expand v3 specialty history templates as data only.
+- Expand calculator registry as registry-only if needed.
+- Expand calculator workflow mapping as data only.
+- Create exam documentation prompt architecture as data only.
+- Create guideline-aware plan documentation prompt architecture as data only.
+- Run validators.
+- Create reports.
+- Keep live UI stable.
+
+## Not Allowed
+
+- Showing doctors yet.
+- Making calculators default.
+- Adding high-risk calculator formulas.
+- Adding guideline treatment plans.
+- Adding diagnosis/treatment recommendations.
+- Adding backend/login/storage/audio.
+- Removing safety/privacy boundaries.
