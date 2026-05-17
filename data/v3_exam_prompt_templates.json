@@ -1,0 +1,2033 @@
+[
+  {
+    "specialty_id": "General Medicine / GP",
+    "specialty_name": "General Medicine / GP",
+    "template_version": "v3f.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment.",
+    "safety_notes": [
+      "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment."
+    ],
+    "exam_sections": [
+      {
+        "section_id": "gp_vitals",
+        "section_label": "Vitals documentation",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "gp-fever-urti",
+          "gp-hypertension-followup",
+          "gp-diabetes-followup",
+          "gp-dizziness",
+          "gp-abdominal-pain"
+        ],
+        "applicable_complaints": [
+          "fever",
+          "hypertension follow-up",
+          "diabetes follow-up",
+          "dizziness",
+          "abdominal pain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "temperature",
+            "prompt_text": "Temperature documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "conditional",
+            "body_system": "general",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "blood_pressure",
+            "prompt_text": "Blood pressure documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "core",
+            "body_system": "cardiovascular",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "core",
+            "body_system": "cardiovascular",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "respiratory_rate",
+            "prompt_text": "Respiratory rate documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "oxygen_saturation",
+            "prompt_text": "Oxygen saturation documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "gp_general_appearance",
+        "section_label": "General appearance",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "gp-fever-urti",
+          "gp-fatigue",
+          "gp-dizziness",
+          "gp-abdominal-pain"
+        ],
+        "applicable_complaints": [
+          "fever",
+          "fatigue",
+          "dizziness",
+          "abdominal pain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "appearance",
+            "prompt_text": "General appearance documented",
+            "prompt_type": "observation",
+            "required_level": "core",
+            "body_system": "general",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "distress",
+            "prompt_text": "Distress or comfort level documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "general",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "hydration",
+            "prompt_text": "Hydration status documented if relevant",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "general",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "mobility",
+            "prompt_text": "Mobility or gait documented if observed",
+            "prompt_type": "observation",
+            "required_level": "optional",
+            "body_system": "general",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "gp_cardiovascular_exam",
+        "section_label": "Cardiovascular exam documentation",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "gp-chest-pain",
+          "gp-palpitations",
+          "gp-hypertension-followup",
+          "gp-dizziness"
+        ],
+        "applicable_complaints": [
+          "chest pain",
+          "palpitations",
+          "hypertension follow-up",
+          "dizziness"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "pulse_character",
+            "prompt_text": "Pulse rate, rhythm, and character documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "conditional",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "heart_sounds",
+            "prompt_text": "Heart sounds documented if auscultated",
+            "prompt_type": "auscultation",
+            "required_level": "conditional",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "murmur_note",
+            "prompt_text": "Murmur presence or absence documented if assessed",
+            "prompt_type": "auscultation",
+            "required_level": "conditional",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "peripheral_edema",
+            "prompt_text": "Peripheral edema documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "gp_respiratory_exam",
+        "section_label": "Respiratory exam documentation",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "gp-fever-urti",
+          "gp-cough",
+          "gp-shortness-of-breath",
+          "gp-chest-pain"
+        ],
+        "applicable_complaints": [
+          "fever",
+          "cough",
+          "shortness of breath",
+          "chest pain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "work_of_breathing",
+            "prompt_text": "Work of breathing documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "chest_movement",
+            "prompt_text": "Chest movement or expansion documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "optional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "breath_sounds",
+            "prompt_text": "Breath sounds documented if auscultated",
+            "prompt_type": "auscultation",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "added_sounds",
+            "prompt_text": "Wheeze, crackles, or other added sounds documented if assessed",
+            "prompt_type": "auscultation",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "gp_abdominal_exam",
+        "section_label": "Abdominal exam documentation",
+        "display_order": 5,
+        "applicable_workflow_ids": [
+          "gp-abdominal-pain",
+          "gp-nausea",
+          "gp-diarrhea",
+          "gp-constipation"
+        ],
+        "applicable_complaints": [
+          "abdominal pain",
+          "nausea/vomiting",
+          "diarrhea",
+          "constipation"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "abdominal_inspection",
+            "prompt_text": "Abdominal inspection documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "abdominal",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "abdominal_tenderness",
+            "prompt_text": "Tenderness location and severity documented if palpated",
+            "prompt_type": "palpation",
+            "required_level": "conditional",
+            "body_system": "abdominal",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "guarding_rebound",
+            "prompt_text": "Guarding or rebound documented if assessed",
+            "prompt_type": "palpation",
+            "required_level": "safety",
+            "body_system": "abdominal",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "bowel_sounds",
+            "prompt_text": "Bowel sounds documented if auscultated",
+            "prompt_type": "auscultation",
+            "required_level": "optional",
+            "body_system": "abdominal",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "gp_neurological_screen",
+        "section_label": "Neurological screen documentation",
+        "display_order": 6,
+        "applicable_workflow_ids": [
+          "gp-headache",
+          "gp-dizziness",
+          "gp-fatigue"
+        ],
+        "applicable_complaints": [
+          "headache",
+          "dizziness",
+          "fatigue"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "orientation",
+            "prompt_text": "Orientation and alertness documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "conditional",
+            "body_system": "neurological",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "cranial_screen",
+            "prompt_text": "Cranial nerve screen documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "optional",
+            "body_system": "neurological",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "limb_power_sensation",
+            "prompt_text": "Limb power, sensation, or coordination documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "conditional",
+            "body_system": "neurological",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "gait_balance",
+            "prompt_text": "Gait or balance documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "neurological",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      }
+    ]
+  },
+  {
+    "specialty_id": "Cardiology",
+    "specialty_name": "Cardiology",
+    "template_version": "v3f.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment.",
+    "safety_notes": [
+      "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment."
+    ],
+    "exam_sections": [
+      {
+        "section_id": "cardio_vitals_bp",
+        "section_label": "Vitals and blood pressure",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "gp-chest-pain",
+          "gp-palpitations",
+          "gp-hypertension-followup",
+          "gp-shortness-of-breath"
+        ],
+        "applicable_complaints": [
+          "chest pain",
+          "palpitations",
+          "hypertension follow-up",
+          "shortness of breath"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "blood_pressure",
+            "prompt_text": "Blood pressure documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "core",
+            "body_system": "cardiovascular",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "core",
+            "body_system": "cardiovascular",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "respiratory_rate",
+            "prompt_text": "Respiratory rate documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "oxygen_saturation",
+            "prompt_text": "Oxygen saturation documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "cardio_pulse_rhythm",
+        "section_label": "Pulse and rhythm documentation",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "gp-palpitations",
+          "gp-chest-pain",
+          "gp-dizziness"
+        ],
+        "applicable_complaints": [
+          "palpitations",
+          "chest pain",
+          "dizziness"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "pulse_rate",
+            "prompt_text": "Pulse rate documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "core",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "pulse_rhythm",
+            "prompt_text": "Pulse rhythm documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "core",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "peripheral_pulses",
+            "prompt_text": "Peripheral pulses documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "optional",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "cardio_heart_sounds",
+        "section_label": "Heart sounds and murmurs",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "gp-chest-pain",
+          "gp-palpitations",
+          "gp-hypertension-followup"
+        ],
+        "applicable_complaints": [
+          "chest pain",
+          "palpitations",
+          "hypertension follow-up"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "heart_sounds",
+            "prompt_text": "Heart sounds documented if auscultated",
+            "prompt_type": "auscultation",
+            "required_level": "core",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "murmurs",
+            "prompt_text": "Murmurs documented if assessed",
+            "prompt_type": "auscultation",
+            "required_level": "conditional",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "extra_sounds",
+            "prompt_text": "Additional heart sounds documented if assessed",
+            "prompt_type": "auscultation",
+            "required_level": "optional",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "cardio_fluid_status",
+        "section_label": "JVP and peripheral edema",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "gp-shortness-of-breath",
+          "gp-chest-pain",
+          "gp-hypertension-followup"
+        ],
+        "applicable_complaints": [
+          "shortness of breath",
+          "chest pain",
+          "hypertension follow-up"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "jvp",
+            "prompt_text": "JVP documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "ankle_edema",
+            "prompt_text": "Peripheral edema documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "perfusion",
+            "prompt_text": "Peripheral perfusion documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "cardiovascular",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "cardio_chest_signs",
+        "section_label": "Chest signs where relevant",
+        "display_order": 5,
+        "applicable_workflow_ids": [
+          "gp-shortness-of-breath",
+          "gp-chest-pain"
+        ],
+        "applicable_complaints": [
+          "shortness of breath",
+          "chest pain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "lung_bases",
+            "prompt_text": "Basal chest findings documented if auscultated",
+            "prompt_type": "auscultation",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "respiratory_distress",
+            "prompt_text": "Respiratory distress documented if observed",
+            "prompt_type": "observation",
+            "required_level": "safety",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      }
+    ]
+  },
+  {
+    "specialty_id": "Respiratory / Pulmonology",
+    "specialty_name": "Respiratory / Pulmonology",
+    "template_version": "v3f.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment.",
+    "safety_notes": [
+      "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment."
+    ],
+    "exam_sections": [
+      {
+        "section_id": "resp_vitals",
+        "section_label": "Respiratory vitals",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "gp-cough",
+          "gp-shortness-of-breath",
+          "gp-fever-urti"
+        ],
+        "applicable_complaints": [
+          "cough",
+          "shortness of breath",
+          "fever"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "respiratory_rate",
+            "prompt_text": "Respiratory rate documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "core",
+            "body_system": "respiratory",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "oxygen_saturation",
+            "prompt_text": "Oxygen saturation documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "core",
+            "body_system": "respiratory",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "conditional",
+            "body_system": "cardiovascular",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "temperature",
+            "prompt_text": "Temperature documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "conditional",
+            "body_system": "general",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "resp_work_of_breathing",
+        "section_label": "Work of breathing",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "gp-shortness-of-breath",
+          "gp-cough",
+          "peds-cough"
+        ],
+        "applicable_complaints": [
+          "shortness of breath",
+          "cough",
+          "pediatric cough"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "work_of_breathing",
+            "prompt_text": "Work of breathing documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "core",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "accessory_muscle_use",
+            "prompt_text": "Accessory muscle use documented if observed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "speech_breathlessness",
+            "prompt_text": "Ability to speak in sentences documented if relevant",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "cyanosis",
+            "prompt_text": "Cyanosis documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "safety",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "resp_chest_exam",
+        "section_label": "Chest movement and auscultation",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "gp-cough",
+          "gp-shortness-of-breath",
+          "gp-fever-urti"
+        ],
+        "applicable_complaints": [
+          "cough",
+          "shortness of breath",
+          "fever"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "chest_expansion",
+            "prompt_text": "Chest expansion documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "percussion_note",
+            "prompt_text": "Percussion findings documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "optional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "breath_sounds",
+            "prompt_text": "Breath sounds documented if auscultated",
+            "prompt_type": "auscultation",
+            "required_level": "core",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "wheeze_crackles",
+            "prompt_text": "Wheeze, crackles, or other added sounds documented if assessed",
+            "prompt_type": "auscultation",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "resp_sputum_distress",
+        "section_label": "Sputum and distress documentation",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "gp-cough",
+          "gp-shortness-of-breath"
+        ],
+        "applicable_complaints": [
+          "cough",
+          "shortness of breath"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "sputum_observed",
+            "prompt_text": "Sputum appearance documented if observed",
+            "prompt_type": "observation",
+            "required_level": "optional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "cough_observed",
+            "prompt_text": "Cough pattern documented if observed during assessment",
+            "prompt_type": "observation",
+            "required_level": "optional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "respiratory_distress",
+            "prompt_text": "Respiratory distress signs documented if assessed",
+            "prompt_type": "safety_red_flag_documentation",
+            "required_level": "safety",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      }
+    ]
+  },
+  {
+    "specialty_id": "Pediatrics",
+    "specialty_name": "Pediatrics",
+    "template_version": "v3f.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment.",
+    "safety_notes": [
+      "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment.",
+      "Pediatric safeguarding prompts are documentation prompts only; clinician judgment and local protocol required."
+    ],
+    "exam_sections": [
+      {
+        "section_id": "peds_general_activity",
+        "section_label": "General appearance and activity",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "peds-fever",
+          "peds-cough",
+          "peds-rash",
+          "peds-poor-feeding"
+        ],
+        "applicable_complaints": [
+          "pediatric fever",
+          "pediatric cough",
+          "pediatric rash",
+          "poor feeding"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "activity_level",
+            "prompt_text": "Activity level and interaction documented if observed",
+            "prompt_type": "observation",
+            "required_level": "core",
+            "body_system": "pediatric_general",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "alertness",
+            "prompt_text": "Alertness and consolability documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "core",
+            "body_system": "pediatric_general",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "parent_report_context",
+            "prompt_text": "Parent or guardian report context documented where relevant",
+            "prompt_type": "focused_system",
+            "required_level": "optional",
+            "body_system": "history_context",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed or reported by parent/guardian. Clinician judgment required."
+      },
+      {
+        "section_id": "peds_hydration_feeding",
+        "section_label": "Hydration, feeding, and urine output",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "peds-fever",
+          "peds-vomiting-diarrhea",
+          "peds-poor-feeding"
+        ],
+        "applicable_complaints": [
+          "pediatric fever",
+          "vomiting / diarrhea",
+          "poor feeding"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "hydration_status",
+            "prompt_text": "Hydration status documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "core",
+            "body_system": "pediatric_general",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "mucous_membranes",
+            "prompt_text": "Mucous membranes documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "pediatric_general",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "feeding_observed",
+            "prompt_text": "Feeding or intake context documented if assessed or reported",
+            "prompt_type": "focused_system",
+            "required_level": "conditional",
+            "body_system": "pediatric_general",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "urine_output_context",
+            "prompt_text": "Urine output context documented if reported",
+            "prompt_type": "focused_system",
+            "required_level": "conditional",
+            "body_system": "pediatric_general",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "peds_respiratory_signs",
+        "section_label": "Respiratory distress signs",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "peds-cough",
+          "peds-fever"
+        ],
+        "applicable_complaints": [
+          "pediatric cough",
+          "pediatric fever"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "respiratory_rate",
+            "prompt_text": "Respiratory rate documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "work_of_breathing",
+            "prompt_text": "Work of breathing documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "recession_grunting",
+            "prompt_text": "Recession, grunting, nasal flaring, or similar signs documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "safety",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "auscultation",
+            "prompt_text": "Chest auscultation findings documented if assessed",
+            "prompt_type": "auscultation",
+            "required_level": "conditional",
+            "body_system": "respiratory",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "peds_temperature_rash",
+        "section_label": "Temperature and rash documentation",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "peds-fever",
+          "peds-rash"
+        ],
+        "applicable_complaints": [
+          "pediatric fever",
+          "pediatric rash"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "temperature",
+            "prompt_text": "Temperature documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "conditional",
+            "body_system": "general",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "rash_distribution",
+            "prompt_text": "Rash distribution documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "rash_morphology",
+            "prompt_text": "Rash morphology documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "mucosal_involvement",
+            "prompt_text": "Mucosal involvement documented if assessed",
+            "prompt_type": "safety_red_flag_documentation",
+            "required_level": "safety",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "peds_age_appropriate_exam",
+        "section_label": "Age-appropriate examination documentation",
+        "display_order": 5,
+        "applicable_workflow_ids": [
+          "peds-routine-followup",
+          "peds-growth-concern",
+          "peds-development-concern"
+        ],
+        "applicable_complaints": [
+          "routine pediatric follow-up",
+          "growth concern",
+          "developmental concern"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "growth_parameters",
+            "prompt_text": "Growth parameters documented if measured",
+            "prompt_type": "vital_sign",
+            "required_level": "conditional",
+            "body_system": "pediatric_general",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "development_observed",
+            "prompt_text": "Age-appropriate developmental observations documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "conditional",
+            "body_system": "development",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "safeguarding_observation",
+            "prompt_text": "Safeguarding-relevant observations documented if assessed",
+            "prompt_type": "safety_red_flag_documentation",
+            "required_level": "safety",
+            "body_system": "safeguarding",
+            "documentation_style": "free_text",
+            "warning": "Documentation prompt only; clinician judgment and local protocol required."
+          }
+        ],
+        "safety_note": "Document only if assessed. Pediatric safeguarding prompts are documentation prompts only; clinician judgment and local protocol required."
+      }
+    ]
+  },
+  {
+    "specialty_id": "Orthopedics / MSK",
+    "specialty_name": "Orthopedics / MSK",
+    "template_version": "v3f.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment.",
+    "safety_notes": [
+      "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment."
+    ],
+    "exam_sections": [
+      {
+        "section_id": "msk_inspection",
+        "section_label": "Inspection",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "msk-low-back-pain",
+          "msk-knee-pain",
+          "msk-shoulder-pain",
+          "msk-acute-sprain"
+        ],
+        "applicable_complaints": [
+          "low back pain",
+          "knee pain",
+          "shoulder pain",
+          "acute sprain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "posture_alignment",
+            "prompt_text": "Posture, alignment, or limb position documented if observed",
+            "prompt_type": "observation",
+            "required_level": "core",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "swelling_deformity",
+            "prompt_text": "Swelling, bruising, deformity, or asymmetry documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "skin_wound",
+            "prompt_text": "Skin, wound, or scar appearance documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "msk_palpation",
+        "section_label": "Palpation",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "msk-low-back-pain",
+          "msk-neck-pain",
+          "msk-knee-pain",
+          "msk-shoulder-pain",
+          "msk-hip-pain"
+        ],
+        "applicable_complaints": [
+          "back pain",
+          "neck pain",
+          "knee pain",
+          "shoulder pain",
+          "hip pain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "tenderness_location",
+            "prompt_text": "Tenderness location documented if palpated",
+            "prompt_type": "palpation",
+            "required_level": "core",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "warmth_effusion",
+            "prompt_text": "Warmth, effusion, or soft tissue swelling documented if assessed",
+            "prompt_type": "palpation",
+            "required_level": "conditional",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "bony_tenderness",
+            "prompt_text": "Bony tenderness documented if assessed",
+            "prompt_type": "palpation",
+            "required_level": "safety",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "msk_range_of_motion",
+        "section_label": "Range of motion",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "msk-knee-pain",
+          "msk-shoulder-pain",
+          "msk-hip-pain",
+          "msk-ankle-pain",
+          "msk-wrist-hand-pain"
+        ],
+        "applicable_complaints": [
+          "knee pain",
+          "shoulder pain",
+          "hip pain",
+          "ankle / foot pain",
+          "wrist / hand pain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "active_rom",
+            "prompt_text": "Active range of motion documented if assessed",
+            "prompt_type": "range_of_motion",
+            "required_level": "core",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "passive_rom",
+            "prompt_text": "Passive range of motion documented if assessed",
+            "prompt_type": "range_of_motion",
+            "required_level": "optional",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "painful_arc_or_limit",
+            "prompt_text": "Painful arc, restriction, or functional limitation documented if assessed",
+            "prompt_type": "range_of_motion",
+            "required_level": "conditional",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "msk_gait_weight_bearing",
+        "section_label": "Gait and weight-bearing",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "msk-low-back-pain",
+          "msk-knee-pain",
+          "msk-hip-pain",
+          "msk-ankle-pain",
+          "msk-fracture-followup"
+        ],
+        "applicable_complaints": [
+          "low back pain",
+          "knee pain",
+          "hip pain",
+          "ankle / foot pain",
+          "fracture follow-up"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "gait",
+            "prompt_text": "Gait documented if observed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "weight_bearing",
+            "prompt_text": "Weight-bearing status documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "assistive_device",
+            "prompt_text": "Use of brace, crutch, cast, or support documented if relevant",
+            "prompt_type": "observation",
+            "required_level": "optional",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "msk_neurovascular",
+        "section_label": "Neurovascular status",
+        "display_order": 5,
+        "applicable_workflow_ids": [
+          "msk-fracture-followup",
+          "msk-acute-sprain",
+          "msk-ankle-pain",
+          "msk-wrist-hand-pain",
+          "msk-post-op-followup"
+        ],
+        "applicable_complaints": [
+          "fracture follow-up",
+          "acute sprain",
+          "ankle / foot pain",
+          "wrist / hand pain",
+          "post-op follow-up"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "distal_pulses",
+            "prompt_text": "Distal pulses documented if assessed",
+            "prompt_type": "neurovascular",
+            "required_level": "safety",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "sensation",
+            "prompt_text": "Distal sensation documented if assessed",
+            "prompt_type": "neurovascular",
+            "required_level": "safety",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "motor_function",
+            "prompt_text": "Distal motor function documented if assessed",
+            "prompt_type": "neurovascular",
+            "required_level": "safety",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "capillary_refill",
+            "prompt_text": "Capillary refill documented if assessed",
+            "prompt_type": "neurovascular",
+            "required_level": "optional",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "msk_special_tests_postop",
+        "section_label": "Special tests, wound, cast, and post-op status",
+        "display_order": 6,
+        "applicable_workflow_ids": [
+          "msk-shoulder-pain",
+          "msk-knee-pain",
+          "msk-post-op-followup",
+          "msk-fracture-followup"
+        ],
+        "applicable_complaints": [
+          "shoulder pain",
+          "knee pain",
+          "post-op follow-up",
+          "fracture follow-up"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "special_tests",
+            "prompt_text": "Special tests documented by name if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "optional",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "wound_status",
+            "prompt_text": "Wound or surgical site documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "cast_status",
+            "prompt_text": "Cast, splint, or dressing status documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "msk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      }
+    ]
+  },
+  {
+    "specialty_id": "ENT",
+    "specialty_name": "ENT",
+    "template_version": "v3f.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment.",
+    "safety_notes": [
+      "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment."
+    ],
+    "exam_sections": [
+      {
+        "section_id": "ent_otoscopy",
+        "section_label": "Otoscopy documentation",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "ent-ear-pain",
+          "ent-hearing-complaint",
+          "ent-tinnitus",
+          "peds-ear-pain"
+        ],
+        "applicable_complaints": [
+          "ear pain",
+          "hearing complaint",
+          "tinnitus",
+          "pediatric ear pain"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "external_ear",
+            "prompt_text": "External ear documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "ent",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "ear_canal",
+            "prompt_text": "Ear canal findings documented if otoscopy performed",
+            "prompt_type": "focused_system",
+            "required_level": "conditional",
+            "body_system": "ent",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "tympanic_membrane",
+            "prompt_text": "Tympanic membrane findings documented if visualized",
+            "prompt_type": "focused_system",
+            "required_level": "conditional",
+            "body_system": "ent",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "ent_throat_oral",
+        "section_label": "Throat and oral exam documentation",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "ent-sore-throat",
+          "ent-voice-complaint",
+          "gp-sore-throat"
+        ],
+        "applicable_complaints": [
+          "sore throat",
+          "voice complaint"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "oral_mucosa",
+            "prompt_text": "Oral mucosa documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "ent",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "tonsils_pharynx",
+            "prompt_text": "Tonsils and pharynx documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "conditional",
+            "body_system": "ent",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "airway_observation",
+            "prompt_text": "Airway observation documented if relevant",
+            "prompt_type": "safety_red_flag_documentation",
+            "required_level": "safety",
+            "body_system": "ent",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "ent_nasal_sinus",
+        "section_label": "Nasal and sinus documentation",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "ent-nasal-congestion",
+          "ent-sinus-symptoms"
+        ],
+        "applicable_complaints": [
+          "nasal congestion",
+          "sinus symptoms"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "nasal_mucosa",
+            "prompt_text": "Nasal mucosa documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "ent",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "nasal_discharge",
+            "prompt_text": "Nasal discharge documented if observed",
+            "prompt_type": "observation",
+            "required_level": "optional",
+            "body_system": "ent",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "sinus_tenderness",
+            "prompt_text": "Sinus tenderness documented if assessed",
+            "prompt_type": "palpation",
+            "required_level": "conditional",
+            "body_system": "ent",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "ent_neck_hearing_voice",
+        "section_label": "Neck, hearing, and voice documentation",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "ent-hearing-complaint",
+          "ent-voice-complaint",
+          "ent-dizziness-vertigo"
+        ],
+        "applicable_complaints": [
+          "hearing complaint",
+          "voice complaint",
+          "dizziness / vertigo"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "neck_exam",
+            "prompt_text": "Neck examination findings documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "conditional",
+            "body_system": "neck",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "hearing_screen",
+            "prompt_text": "Hearing screen or bedside hearing observation documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "optional",
+            "body_system": "ent",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "voice_quality",
+            "prompt_text": "Voice quality documented if observed",
+            "prompt_type": "observation",
+            "required_level": "optional",
+            "body_system": "ent",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      }
+    ]
+  },
+  {
+    "specialty_id": "Dermatology",
+    "specialty_name": "Dermatology",
+    "template_version": "v3f.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment.",
+    "safety_notes": [
+      "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment."
+    ],
+    "exam_sections": [
+      {
+        "section_id": "derm_distribution_morphology",
+        "section_label": "Lesion distribution and morphology",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "derm-rash",
+          "derm-eczema",
+          "derm-urticaria",
+          "peds-rash"
+        ],
+        "applicable_complaints": [
+          "rash",
+          "eczema / dermatitis",
+          "urticaria",
+          "pediatric rash"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "distribution",
+            "prompt_text": "Distribution documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "core",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "morphology",
+            "prompt_text": "Morphology documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "core",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "arrangement_pattern",
+            "prompt_text": "Arrangement or pattern documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "optional",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "derm_colour_border_size",
+        "section_label": "Color, border, and size",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "derm-skin-lesion-review",
+          "derm-rash",
+          "derm-fungal-infection"
+        ],
+        "applicable_complaints": [
+          "skin lesion review",
+          "rash",
+          "fungal infection"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "colour",
+            "prompt_text": "Color documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "border",
+            "prompt_text": "Border documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "size_measurement",
+            "prompt_text": "Size or measurement documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "skin",
+            "documentation_style": "numeric_or_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "derm_secondary_changes",
+        "section_label": "Secondary changes",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "derm-rash",
+          "derm-eczema",
+          "derm-wound-review"
+        ],
+        "applicable_complaints": [
+          "rash",
+          "eczema / dermatitis",
+          "wound review"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "excoriation",
+            "prompt_text": "Excoriation, crusting, scaling, or lichenification documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "ooze_bleeding",
+            "prompt_text": "Oozing, bleeding, or discharge documented if observed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "infection_signs",
+            "prompt_text": "Signs concerning for infection documented if assessed",
+            "prompt_type": "safety_red_flag_documentation",
+            "required_level": "safety",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "derm_mucosal_wound",
+        "section_label": "Mucosal and wound documentation",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "derm-rash",
+          "derm-wound-review",
+          "derm-skin-lesion-review"
+        ],
+        "applicable_complaints": [
+          "rash",
+          "wound review",
+          "skin lesion review"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "mucosal_involvement",
+            "prompt_text": "Mucosal involvement documented if assessed",
+            "prompt_type": "safety_red_flag_documentation",
+            "required_level": "safety",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "wound_appearance",
+            "prompt_text": "Wound bed, edge, surrounding skin, and exudate documented if assessed",
+            "prompt_type": "observation",
+            "required_level": "conditional",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "abcde_context",
+            "prompt_text": "ABCDE lesion features documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "conditional",
+            "body_system": "skin",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      }
+    ]
+  },
+  {
+    "specialty_id": "Psychiatry / Mental Health",
+    "specialty_name": "Psychiatry / Mental Health",
+    "template_version": "v3f.1",
+    "source_status": "draft_unreviewed",
+    "review_required": true,
+    "safety_note": "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment.",
+    "safety_notes": [
+      "These examination documentation prompts support documentation only. Document only if assessed. They do not diagnose, recommend treatment, or replace clinician judgment.",
+      "Psychiatry risk prompts are documentation prompts only and do not create crisis-management instructions."
+    ],
+    "exam_sections": [
+      {
+        "section_id": "psych_appearance_behavior",
+        "section_label": "Appearance and behavior",
+        "display_order": 1,
+        "applicable_workflow_ids": [
+          "psych-low-mood",
+          "psych-anxiety",
+          "psych-stress-symptoms",
+          "psych-panic-symptoms"
+        ],
+        "applicable_complaints": [
+          "low mood",
+          "anxiety",
+          "stress-related symptoms",
+          "panic symptoms"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "appearance",
+            "prompt_text": "Appearance documented if assessed",
+            "prompt_type": "mental_state",
+            "required_level": "core",
+            "body_system": "mental_state",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "behavior",
+            "prompt_text": "Behavior and engagement documented if assessed",
+            "prompt_type": "mental_state",
+            "required_level": "core",
+            "body_system": "mental_state",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "rapport",
+            "prompt_text": "Rapport and cooperation documented if assessed",
+            "prompt_type": "mental_state",
+            "required_level": "optional",
+            "body_system": "mental_state",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "psych_speech_mood_affect",
+        "section_label": "Speech, mood, and affect",
+        "display_order": 2,
+        "applicable_workflow_ids": [
+          "psych-low-mood",
+          "psych-anxiety",
+          "psych-panic-symptoms"
+        ],
+        "applicable_complaints": [
+          "low mood",
+          "anxiety",
+          "panic symptoms"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "speech",
+            "prompt_text": "Speech documented if assessed",
+            "prompt_type": "mental_state",
+            "required_level": "core",
+            "body_system": "mental_state",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "mood",
+            "prompt_text": "Mood documented from clinician assessment and patient report",
+            "prompt_type": "mental_state",
+            "required_level": "core",
+            "body_system": "mental_state",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "affect",
+            "prompt_text": "Affect documented if assessed",
+            "prompt_type": "mental_state",
+            "required_level": "core",
+            "body_system": "mental_state",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "psych_thought_perception",
+        "section_label": "Thought form, content, and perception",
+        "display_order": 3,
+        "applicable_workflow_ids": [
+          "psych-low-mood",
+          "psych-anxiety",
+          "psych-medication-followup"
+        ],
+        "applicable_complaints": [
+          "low mood",
+          "anxiety",
+          "medication follow-up"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "thought_form",
+            "prompt_text": "Thought form documented if assessed",
+            "prompt_type": "mental_state",
+            "required_level": "conditional",
+            "body_system": "mental_state",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "thought_content",
+            "prompt_text": "Thought content documented if assessed",
+            "prompt_type": "mental_state",
+            "required_level": "conditional",
+            "body_system": "mental_state",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "perception",
+            "prompt_text": "Perceptual experiences documented if assessed",
+            "prompt_type": "mental_state",
+            "required_level": "conditional",
+            "body_system": "mental_state",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "psych_cognition_insight_judgment",
+        "section_label": "Cognition, insight, and judgment",
+        "display_order": 4,
+        "applicable_workflow_ids": [
+          "psych-low-mood",
+          "psych-anxiety",
+          "psych-sleep-difficulty",
+          "psych-medication-followup"
+        ],
+        "applicable_complaints": [
+          "low mood",
+          "anxiety",
+          "sleep difficulty",
+          "medication follow-up"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "orientation_attention",
+            "prompt_text": "Orientation, attention, and concentration documented if assessed",
+            "prompt_type": "mental_state",
+            "required_level": "conditional",
+            "body_system": "mental_state",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "memory",
+            "prompt_text": "Memory documented if assessed",
+            "prompt_type": "mental_state",
+            "required_level": "optional",
+            "body_system": "mental_state",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          },
+          {
+            "prompt_id": "insight_judgment",
+            "prompt_text": "Insight and judgment documented if assessed",
+            "prompt_type": "mental_state",
+            "required_level": "conditional",
+            "body_system": "mental_state",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Clinician judgment required."
+      },
+      {
+        "section_id": "psych_risk_documentation",
+        "section_label": "Risk assessment documentation if assessed",
+        "display_order": 5,
+        "applicable_workflow_ids": [
+          "psych-low-mood",
+          "psych-anxiety",
+          "psych-stress-symptoms",
+          "psych-panic-symptoms"
+        ],
+        "applicable_complaints": [
+          "low mood",
+          "anxiety",
+          "stress-related symptoms",
+          "panic symptoms"
+        ],
+        "prompts": [
+          {
+            "prompt_id": "suicidal_ideation",
+            "prompt_text": "Suicidal ideation documented if assessed",
+            "prompt_type": "safety_red_flag_documentation",
+            "required_level": "safety",
+            "body_system": "risk",
+            "documentation_style": "free_text",
+            "warning": "Documentation prompt only; clinician assessment and local protocol required."
+          },
+          {
+            "prompt_id": "self_harm_thoughts",
+            "prompt_text": "Self-harm thoughts documented if assessed",
+            "prompt_type": "safety_red_flag_documentation",
+            "required_level": "safety",
+            "body_system": "risk",
+            "documentation_style": "free_text",
+            "warning": "Documentation prompt only; clinician assessment and local protocol required."
+          },
+          {
+            "prompt_id": "harm_to_others",
+            "prompt_text": "Risk of harm to others documented if assessed",
+            "prompt_type": "safety_red_flag_documentation",
+            "required_level": "safety",
+            "body_system": "risk",
+            "documentation_style": "free_text",
+            "warning": "Documentation prompt only; clinician assessment and local protocol required."
+          },
+          {
+            "prompt_id": "protective_factors",
+            "prompt_text": "Protective factors documented if assessed",
+            "prompt_type": "focused_system",
+            "required_level": "safety",
+            "body_system": "risk",
+            "documentation_style": "free_text",
+            "warning": "Document only if assessed."
+          }
+        ],
+        "safety_note": "Document only if assessed. Psychiatry risk prompts are documentation prompts only; clinician assessment and local protocol required."
+      }
+    ]
+  }
+]
