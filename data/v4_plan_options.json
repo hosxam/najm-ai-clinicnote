@@ -1,0 +1,92 @@
+[
+  {
+    "workflow_id": "gp-fever-urti",
+    "option_text": "Symptom care discussion documented if clinician discussed it.",
+    "option_category": "patient_instruction_documentation",
+    "source_status": "unverified_reference_needed",
+    "source_reference": "No source attached in V4B.",
+    "clinician_confirmation_required": true,
+    "safety_note": "Documentation option only; use only if confirmed by the clinician."
+  },
+  {
+    "workflow_id": "gp-fever-urti",
+    "option_text": "Return precautions documented if clinician discussed them.",
+    "option_category": "safety_netting",
+    "source_status": "unverified_reference_needed",
+    "source_reference": "No source attached in V4B.",
+    "clinician_confirmation_required": true,
+    "safety_note": "Documentation option only; use only if confirmed by the clinician."
+  },
+  {
+    "workflow_id": "gp-diabetes-followup",
+    "option_text": "Lifestyle counseling documented if clinician discussed it.",
+    "option_category": "lifestyle_documentation",
+    "source_status": "unverified_reference_needed",
+    "source_reference": "No source attached in V4B.",
+    "clinician_confirmation_required": true,
+    "safety_note": "Documentation option only; use only if confirmed by the clinician."
+  },
+  {
+    "workflow_id": "gp-diabetes-followup",
+    "option_text": "Medication review documented if clinician reviewed it.",
+    "option_category": "medication_review_documentation",
+    "source_status": "unverified_reference_needed",
+    "source_reference": "No source attached in V4B.",
+    "clinician_confirmation_required": true,
+    "safety_note": "Documentation option only; use only if confirmed by the clinician."
+  },
+  {
+    "workflow_id": "msk-low-back-pain",
+    "option_text": "Activity advice documented if clinician discussed it.",
+    "option_category": "counseling",
+    "source_status": "unverified_reference_needed",
+    "source_reference": "No source attached in V4B.",
+    "clinician_confirmation_required": true,
+    "safety_note": "Documentation option only; use only if confirmed by the clinician."
+  },
+  {
+    "workflow_id": "msk-low-back-pain",
+    "option_text": "Referral documentation recorded if clinician decided referral is needed.",
+    "option_category": "referral_documentation",
+    "source_status": "unverified_reference_needed",
+    "source_reference": "No source attached in V4B.",
+    "clinician_confirmation_required": true,
+    "safety_note": "Documentation option only; use only if confirmed by the clinician."
+  },
+  {
+    "workflow_id": "peds-fever",
+    "option_text": "Parent or guardian advice documented if clinician discussed it.",
+    "option_category": "patient_instruction_documentation",
+    "source_status": "unverified_reference_needed",
+    "source_reference": "No source attached in V4B.",
+    "clinician_confirmation_required": true,
+    "safety_note": "Documentation option only; use only if confirmed by the clinician."
+  },
+  {
+    "workflow_id": "peds-fever",
+    "option_text": "Follow-up plan documented if clinician decided it.",
+    "option_category": "follow_up",
+    "source_status": "unverified_reference_needed",
+    "source_reference": "No source attached in V4B.",
+    "clinician_confirmation_required": true,
+    "safety_note": "Documentation option only; use only if confirmed by the clinician."
+  },
+  {
+    "workflow_id": "psych-low-mood",
+    "option_text": "Support options discussion documented if clinician discussed it.",
+    "option_category": "counseling",
+    "source_status": "unverified_reference_needed",
+    "source_reference": "No source attached in V4B.",
+    "clinician_confirmation_required": true,
+    "safety_note": "Documentation option only; use only if confirmed by the clinician."
+  },
+  {
+    "workflow_id": "psych-low-mood",
+    "option_text": "Safety discussion documented according to clinician assessment.",
+    "option_category": "safety_netting",
+    "source_status": "unverified_reference_needed",
+    "source_reference": "No source attached in V4B.",
+    "clinician_confirmation_required": true,
+    "safety_note": "Documentation option only; use only if confirmed by the clinician and local protocol."
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "workflow_id": "msk-knee-pain",
+    "exam_groups": [
+      {
+        "group_id": "knee_general",
+        "group_label": "Knee general examination",
+        "documentation_prompts": [
+          "Gait documented if assessed.",
+          "Range of motion documented if assessed.",
+          "Effusion documented if assessed.",
+          "Swelling/deformity documented if assessed.",
+          "Neurovascular status documented if assessed."
+        ]
+      }
+    ],
+    "named_tests": [
+      {"test_id": "lachman", "test_name": "Lachman", "documentation_prompt": "Lachman test documented if assessed."},
+      {"test_id": "anterior_drawer", "test_name": "Anterior drawer", "documentation_prompt": "Anterior drawer test documented if assessed."},
+      {"test_id": "posterior_drawer", "test_name": "Posterior drawer", "documentation_prompt": "Posterior drawer test documented if assessed."},
+      {"test_id": "varus_stress", "test_name": "Varus stress", "documentation_prompt": "Varus stress test documented if assessed."},
+      {"test_id": "valgus_stress", "test_name": "Valgus stress", "documentation_prompt": "Valgus stress test documented if assessed."},
+      {"test_id": "mcmurray", "test_name": "McMurray", "documentation_prompt": "McMurray test documented if assessed."},
+      {"test_id": "thessaly", "test_name": "Thessaly", "documentation_prompt": "Thessaly test documented if assessed."},
+      {"test_id": "patellar_apprehension_grind", "test_name": "Patellar apprehension/grind", "documentation_prompt": "Patellar apprehension/grind documented if assessed."}
+    ],
+    "documentation_prompts": ["Document only if assessed. Do not imply a test was performed unless documented by the clinician."],
+    "safety_note": "Document only if assessed. These are documentation prompts, not examination instructions.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-shoulder-pain",
+    "exam_groups": [
+      {
+        "group_id": "shoulder_general",
+        "group_label": "Shoulder examination",
+        "documentation_prompts": [
+          "Inspection documented if assessed.",
+          "Palpation documented if assessed.",
+          "Active and passive range of motion documented if assessed.",
+          "Power testing documented if assessed.",
+          "Neurovascular status documented if assessed."
+        ]
+      }
+    ],
+    "named_tests": [
+      {"test_id": "empty_can", "test_name": "Empty can", "documentation_prompt": "Empty can test documented if assessed."},
+      {"test_id": "hawkins_kennedy", "test_name": "Hawkins-Kennedy", "documentation_prompt": "Hawkins-Kennedy test documented if assessed."},
+      {"test_id": "neer", "test_name": "Neer", "documentation_prompt": "Neer test documented if assessed."}
+    ],
+    "documentation_prompts": ["Document only if assessed. Shoulder special tests should be recorded only when performed."],
+    "safety_note": "Document only if assessed. These prompts do not tell clinicians which exam to perform.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-low-back-pain",
+    "exam_groups": [
+      {
+        "group_id": "back_general",
+        "group_label": "Back examination",
+        "documentation_prompts": [
+          "Gait documented if assessed.",
+          "Lumbar range of motion documented if assessed.",
+          "Spinal tenderness documented if assessed.",
+          "Lower limb neurological screen documented if assessed.",
+          "Straight leg raise documented if assessed."
+        ]
+      }
+    ],
+    "named_tests": [
+      {"test_id": "straight_leg_raise", "test_name": "Straight leg raise", "documentation_prompt": "Straight leg raise documented if assessed."},
+      {"test_id": "lower_limb_neurovascular", "test_name": "Lower limb neurovascular status", "documentation_prompt": "Lower limb neurovascular status documented if assessed."}
+    ],
+    "documentation_prompts": ["Document only if assessed. Red flag examination documentation should reflect clinician assessment only."],
+    "safety_note": "Document only if assessed. These prompts are not examination recommendations.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-ear-pain",
+    "exam_groups": [
+      {
+        "group_id": "ear_exam",
+        "group_label": "Ear examination",
+        "documentation_prompts": [
+          "Otoscopy documented if assessed.",
+          "External ear appearance documented if assessed.",
+          "Mastoid tenderness documented if assessed.",
+          "Hearing screen documented if assessed."
+        ]
+      }
+    ],
+    "named_tests": [
+      {"test_id": "otoscopy", "test_name": "Otoscopy", "documentation_prompt": "Otoscopy findings documented if assessed."}
+    ],
+    "documentation_prompts": ["Document only if assessed. ENT findings should not be implied if not examined."],
+    "safety_note": "Document only if assessed. These prompts support documentation only.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ophth-red-eye",
+    "exam_groups": [
+      {
+        "group_id": "red_eye_exam",
+        "group_label": "Red eye examination",
+        "documentation_prompts": [
+          "Visual acuity documented if assessed.",
+          "Pupil response documented if assessed.",
+          "Corneal appearance documented if assessed.",
+          "Discharge documented if assessed.",
+          "Photophobia documented if assessed."
+        ]
+      }
+    ],
+    "named_tests": [
+      {"test_id": "visual_acuity", "test_name": "Visual acuity", "documentation_prompt": "Visual acuity documented if assessed."},
+      {"test_id": "fluorescein", "test_name": "Fluorescein staining", "documentation_prompt": "Fluorescein staining documented if assessed."}
+    ],
+    "documentation_prompts": ["Document only if assessed. Eye findings should be recorded only when assessed by the clinician."],
+    "safety_note": "Document only if assessed. These prompts are documentation support only.",
+    "review_required": true
+  }
+]
+

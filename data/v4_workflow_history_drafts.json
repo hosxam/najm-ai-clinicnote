@@ -1,0 +1,48 @@
+[
+  {
+    "workflow_id": "gp-fever-urti",
+    "default_history_draft": "Patient presents with [duration] of fever/URTI symptoms. Main symptoms documented: [selected positives]. Relevant negatives documented: [selected negatives]. Doctor-entered context: [additional history if provided].",
+    "editable_placeholders": ["[duration]", "[selected positives]", "[selected negatives]", "[additional history if provided]"],
+    "linked_autofill_groups": ["symptoms", "relevant_negatives", "red_flags", "follow_up"],
+    "optional_full_history_sections": ["presenting_complaint", "socrates_hpc", "systems_review", "pmh", "drug_history", "allergies", "ice"],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-diabetes-followup",
+    "default_history_draft": "Routine diabetes follow-up. Monitoring, symptoms, adherence, complications screen, and relevant labs documented if reviewed. Doctor-entered context: [additional follow-up details].",
+    "editable_placeholders": ["[additional follow-up details]"],
+    "linked_autofill_groups": ["symptoms", "relevant_negatives", "investigations", "plan_phrases", "follow_up"],
+    "optional_full_history_sections": ["presenting_complaint", "systems_review", "pmh", "drug_history", "family_history", "social_history", "ice"],
+    "safety_note": "Editable documentation draft only. Do not add patient-specific facts unless entered or confirmed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-low-back-pain",
+    "default_history_draft": "Low back pain history documented with [duration], pain pattern, functional impact, relevant negatives/red flags, and clinician-entered context: [additional MSK history].",
+    "editable_placeholders": ["[duration]", "[additional MSK history]"],
+    "linked_autofill_groups": ["symptoms", "relevant_negatives", "exam_findings", "red_flags", "plan_phrases"],
+    "optional_full_history_sections": ["joint_pain_socrates", "functional_assessment", "back_pain_red_flags", "pmh_drug_family_social", "ice"],
+    "safety_note": "Editable documentation draft only. Do not invent neurological symptoms, trauma details, or red flags.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-fever",
+    "default_history_draft": "Pediatric fever history documented from [history source]. Duration, activity, intake, hydration, urine output, associated symptoms, and relevant negatives documented if assessed.",
+    "editable_placeholders": ["[history source]"],
+    "linked_autofill_groups": ["symptoms", "relevant_negatives", "red_flags", "follow_up"],
+    "optional_full_history_sections": ["age_source", "fever_prompts", "respiratory_prompts", "feeding", "pmh_drug_allergy", "family_social_safeguarding", "parent_child_ice"],
+    "safety_note": "Editable documentation draft only. Pediatric safeguarding and safety concerns require clinician judgment and local protocol.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-antenatal-followup",
+    "default_history_draft": "Antenatal follow-up history documented. Gestational age, symptoms, fetal movement context if relevant, bleeding/pain symptoms, antenatal review points, and clinician-entered concerns documented if assessed.",
+    "editable_placeholders": ["[clinician-entered concerns]"],
+    "linked_autofill_groups": ["symptoms", "relevant_negatives", "investigations", "plan_phrases", "follow_up"],
+    "optional_full_history_sections": ["obstetrics", "antenatal_history", "previous_obstetric_history", "pmh_drug_family_social", "ice"],
+    "safety_note": "Editable documentation draft only. Obstetric history should be documented in clinically appropriate context and reviewed by the clinician.",
+    "review_required": true
+  }
+]
+
