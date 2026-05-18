@@ -1,0 +1,139 @@
+[
+  {
+    "workflow_id": "gp-fever-urti",
+    "workflow_display_name": "GP Fever / URTI",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside / vitals",
+        "options": [
+          { "option_id": "temperature_recorded", "option_text": "Temperature recorded if measured.", "required_level": "conditional", "source_status": "draft" }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          { "option_id": "cbc_reviewed", "option_text": "CBC reviewed if ordered.", "required_level": "conditional", "source_status": "draft" },
+          { "option_id": "crp_reviewed", "option_text": "CRP reviewed if ordered.", "required_level": "conditional", "source_status": "draft" },
+          { "option_id": "rapid_test_reviewed", "option_text": "Rapid test result reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          { "option_id": "chest_imaging_reviewed", "option_text": "Chest imaging reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+        ]
+      }
+    ],
+    "safety_note": "Document investigations only if ordered, reviewed, or available. Do not imply a test was performed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-diabetes-followup",
+    "workflow_display_name": "GP Diabetes Follow-Up",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          { "option_id": "hba1c_reviewed", "option_text": "HbA1c reviewed if available.", "required_level": "workflow_specific", "source_status": "draft" },
+          { "option_id": "renal_function_reviewed", "option_text": "Renal function reviewed if available.", "required_level": "workflow_specific", "source_status": "draft" },
+          { "option_id": "lipid_profile_reviewed", "option_text": "Lipid profile reviewed if available.", "required_level": "conditional", "source_status": "draft" },
+          { "option_id": "urine_acr_reviewed", "option_text": "Urine ACR reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+        ]
+      },
+      {
+        "group_id": "home_monitoring",
+        "group_label": "Home monitoring",
+        "options": [
+          { "option_id": "home_glucose_log_reviewed", "option_text": "Home glucose log reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+        ]
+      }
+    ],
+    "safety_note": "Document investigations only if ordered, reviewed, or available. Do not imply a test was performed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-low-back-pain",
+    "workflow_display_name": "MSK Low Back Pain",
+    "investigation_groups": [
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          { "option_id": "previous_imaging_reviewed", "option_text": "Previous imaging reviewed if available.", "required_level": "conditional", "source_status": "draft" },
+          { "option_id": "xray_reviewed", "option_text": "X-ray reviewed if available.", "required_level": "conditional", "source_status": "draft" },
+          { "option_id": "mri_report_reviewed", "option_text": "MRI report reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          { "option_id": "inflammatory_markers_reviewed", "option_text": "Inflammatory markers reviewed if ordered.", "required_level": "conditional", "source_status": "draft" },
+          { "option_id": "urinalysis_reviewed", "option_text": "Urinalysis reviewed if relevant.", "required_level": "conditional", "source_status": "draft" }
+        ]
+      }
+    ],
+    "safety_note": "Document investigations only if ordered, reviewed, or available. Imaging findings should be documented only when verified.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-fever",
+    "workflow_display_name": "Paediatric Fever",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside / vitals",
+        "options": [
+          { "option_id": "temperature_recorded", "option_text": "Temperature recorded if measured.", "required_level": "workflow_specific", "source_status": "draft" }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          { "option_id": "urine_dip_reviewed", "option_text": "Urine dip reviewed if done.", "required_level": "conditional", "source_status": "draft" },
+          { "option_id": "cbc_reviewed", "option_text": "CBC reviewed if ordered.", "required_level": "conditional", "source_status": "draft" },
+          { "option_id": "crp_reviewed", "option_text": "CRP reviewed if ordered.", "required_level": "conditional", "source_status": "draft" },
+          { "option_id": "cultures_reviewed", "option_text": "Cultures reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+        ]
+      }
+    ],
+    "safety_note": "Document investigations only if ordered, reviewed, or available. Paediatric investigation results require clinician review.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-antenatal-followup",
+    "workflow_display_name": "OBGYN Antenatal Follow-Up",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside / vitals",
+        "options": [
+          { "option_id": "urine_dip_reviewed", "option_text": "Urine dip reviewed if done.", "required_level": "conditional", "source_status": "draft" },
+          { "option_id": "bp_trend_reviewed", "option_text": "Blood pressure trend reviewed if available.", "required_level": "workflow_specific", "source_status": "draft" }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          { "option_id": "antenatal_labs_reviewed", "option_text": "Antenatal labs reviewed if available.", "required_level": "workflow_specific", "source_status": "draft" },
+          { "option_id": "glucose_screening_reviewed", "option_text": "Glucose screening result reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging / ultrasound",
+        "options": [
+          { "option_id": "ultrasound_reviewed", "option_text": "Ultrasound report reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+        ]
+      }
+    ],
+    "safety_note": "Document investigations only if ordered, reviewed, or available. Antenatal investigation results require clinician review.",
+    "review_required": true
+  }
+]
