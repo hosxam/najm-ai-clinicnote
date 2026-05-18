@@ -324,7 +324,7 @@ footer a{color:#d9e4f2}
 .resource-link{background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:13px 12px;color:var(--gray-800);font-size:12px;font-weight:800;box-shadow:var(--shadow)}
 .resource-link:hover{text-decoration:none;background:var(--primary-bg);color:var(--primary-dark);border-color:#bfe3e0}
 .calculator-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px}
-.calculator-card{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:18px;box-shadow:var(--shadow)}
+.calculator-card{background:#fff;border:1px solid var(--gray-200);border-radius:12px;padding:18px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:2px}
 .calculator-card h3{font-size:16px;margin:0 0 6px;color:var(--gray-900)}
 .calculator-card p{font-size:12px;color:var(--gray-500);line-height:1.5;margin-bottom:12px}
 .calculator-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:12px}
@@ -332,7 +332,8 @@ footer a{color:#d9e4f2}
 .calculator-result{min-height:58px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:10px 12px;font-size:12px;line-height:1.5;color:var(--gray-700);white-space:pre-wrap;margin-top:10px}
 .calculator-result.calc-result-error{border-color:#f4d47c;background:#fff8e5;color:#6f4700}
 .calculator-safety{font-size:11px;color:var(--gray-500);line-height:1.45;margin-top:10px}
-.calculator-actions{display:flex;gap:8px;flex-wrap:wrap}
+.calculator-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.calculator-actions .btn{min-height:36px}
 .calculator-banner{background:#f3fbfa;border:1px solid #cfe6e4;border-radius:12px;padding:14px 16px;color:var(--gray-700);font-size:13px;line-height:1.55;margin-bottom:16px}
 @media(max-width:900px){.product-row{grid-template-columns:1fr}.hero h1{font-size:36px}.hero{padding:58px 16px 42px}.speed-mode-box{padding:20px}.trust-item{text-align:center}.two-col{grid-template-columns:1fr}.output-card{position:static}}
 @media(max-width:900px){.examples-grid{grid-template-columns:1fr}.feedback-fields{grid-template-columns:1fr}.feedback-card-grid{grid-template-columns:1fr}.resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -894,7 +895,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 </div>
 </div>
 <div class="calculator-banner">
-Calculator values are processed locally in your browser. Do not enter patient-identifiable information. Calculator outputs are documentation aids only and do not diagnose, recommend treatment, or replace clinician judgment.
+Calculator values are processed locally in your browser and are not saved by ClinicNote. Do not enter patient-identifiable information. Calculate only after entering clinician-controlled values. Outputs are documentation aids only and do not diagnose, recommend treatment, or replace clinician judgment.
 </div>
 <div class="calculator-grid">
 <article class="calculator-card" data-calculator-card="bmi">
@@ -909,7 +910,7 @@ Calculator values are processed locally in your browser. Do not enter patient-id
 <button class="btn btn-outline btn-sm" type="button" onclick="ClinicNoteCalculators.copyCalculatorResult('bmi')">Copy Result</button>
 <button class="btn btn-ghost btn-sm" type="button" onclick="ClinicNoteCalculators.clearCalculatorInputs('bmi')">Clear</button>
 </div>
-<div id="calcResult-bmi" class="calculator-result">Result will appear here.</div>
+<div id="calcResult-bmi" class="calculator-result" role="status" aria-live="polite">Result will appear here.</div>
 <div class="calculator-safety">BMI is a screening/documentation measure and does not replace clinician assessment.</div>
 </article>
 
@@ -925,7 +926,7 @@ Calculator values are processed locally in your browser. Do not enter patient-id
 <button class="btn btn-outline btn-sm" type="button" onclick="ClinicNoteCalculators.copyCalculatorResult('pack_years')">Copy Result</button>
 <button class="btn btn-ghost btn-sm" type="button" onclick="ClinicNoteCalculators.clearCalculatorInputs('pack_years')">Clear</button>
 </div>
-<div id="calcResult-pack_years" class="calculator-result">Result will appear here.</div>
+<div id="calcResult-pack_years" class="calculator-result" role="status" aria-live="polite">Result will appear here.</div>
 <div class="calculator-safety">Pack years are for smoking exposure documentation only.</div>
 </article>
 
@@ -941,7 +942,7 @@ Calculator values are processed locally in your browser. Do not enter patient-id
 <button class="btn btn-outline btn-sm" type="button" onclick="ClinicNoteCalculators.copyCalculatorResult('mean_arterial_pressure')">Copy Result</button>
 <button class="btn btn-ghost btn-sm" type="button" onclick="ClinicNoteCalculators.clearCalculatorInputs('mean_arterial_pressure')">Clear</button>
 </div>
-<div id="calcResult-mean_arterial_pressure" class="calculator-result">Result will appear here.</div>
+<div id="calcResult-mean_arterial_pressure" class="calculator-result" role="status" aria-live="polite">Result will appear here.</div>
 <div class="calculator-safety">MAP is a calculated value for documentation. Interpret in clinical context.</div>
 </article>
 
@@ -957,7 +958,7 @@ Calculator values are processed locally in your browser. Do not enter patient-id
 <button class="btn btn-outline btn-sm" type="button" onclick="ClinicNoteCalculators.copyCalculatorResult('shock_index')">Copy Result</button>
 <button class="btn btn-ghost btn-sm" type="button" onclick="ClinicNoteCalculators.clearCalculatorInputs('shock_index')">Clear</button>
 </div>
-<div id="calcResult-shock_index" class="calculator-result">Result will appear here.</div>
+<div id="calcResult-shock_index" class="calculator-result" role="status" aria-live="polite">Result will appear here.</div>
 <div class="calculator-safety">Shock index is a documentation calculation and does not determine management by itself.</div>
 </article>
 
@@ -979,7 +980,7 @@ Calculator values are processed locally in your browser. Do not enter patient-id
 <button class="btn btn-outline btn-sm" type="button" onclick="ClinicNoteCalculators.copyCalculatorResult('mrc_dyspnea_scale')">Copy Result</button>
 <button class="btn btn-ghost btn-sm" type="button" onclick="ClinicNoteCalculators.clearCalculatorInputs('mrc_dyspnea_scale')">Clear</button>
 </div>
-<div id="calcResult-mrc_dyspnea_scale" class="calculator-result">Result will appear here.</div>
+<div id="calcResult-mrc_dyspnea_scale" class="calculator-result" role="status" aria-live="polite">Result will appear here.</div>
 <div class="calculator-safety">MRC dyspnea grade documents symptom burden. It does not establish a diagnosis or recommend treatment.</div>
 </article>
 </div>
