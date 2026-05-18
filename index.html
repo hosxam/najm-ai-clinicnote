@@ -250,6 +250,8 @@ nav{background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(195,204,215,0
 #v3PlanPreviewPanel.v3-plan-visible{display:block}
 #v3CalculatorSuggestionsPanel{display:none;background:#fff;border:1px solid #bed8f5;border-radius:12px;padding:16px;margin:14px 0 18px;box-shadow:var(--shadow)}
 #v3CalculatorSuggestionsPanel.v3-calculator-visible{display:block}
+#v3HistoryEditPanel{display:none;background:#fff;border:1px solid #bfe3e0;border-radius:12px;padding:16px;margin:14px 0 18px;box-shadow:var(--shadow)}
+#v3HistoryEditPanel.v3-edit-visible{display:block}
 .v3-history-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
 .v3-history-title{font-size:14px;font-weight:800;color:var(--gray-900);margin-bottom:3px}
 .v3-history-subtitle{font-size:11px;color:var(--gray-500);line-height:1.45}
@@ -270,6 +272,12 @@ nav{background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(195,204,215,0
 .v3-history-prompt-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:5px}
 .v3-history-label{display:inline-flex;border-radius:999px;padding:2px 7px;font-size:9px;font-weight:800;background:var(--primary-bg);color:var(--primary-dark)}
 .v3-history-warning{font-size:10px;color:#704f18;margin-top:5px}
+.v3-edit-field{display:grid;gap:5px;margin:8px 0;padding:8px;background:#fff;border:1px solid var(--gray-200);border-radius:8px}
+.v3-edit-field label{font-size:11px;font-weight:700;color:var(--gray-800);line-height:1.4}
+.v3-edit-field input,.v3-edit-field textarea,.v3-edit-field select{width:100%;border:1px solid var(--gray-300);border-radius:8px;padding:8px 9px;font-family:inherit;font-size:12px;background:#fff;color:var(--gray-900)}
+.v3-edit-field textarea{min-height:64px;resize:vertical}
+.v3-edit-actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.v3-edit-preview{white-space:pre-wrap;background:#fbfdff;border:1px solid var(--gray-200);border-radius:10px;padding:12px;font-family:var(--font-mono);font-size:11px;line-height:1.55;color:var(--gray-800);max-height:320px;overflow:auto}
 #speedSummary{background:#f0fdfa;border:1px solid #bce3d8;border-radius:12px;padding:13px 14px;color:var(--gray-700);align-items:center}
 #speedSummary::before{content:"Your note ingredients";flex:0 0 100%;font-size:12px;font-weight:800;color:var(--gray-900);margin-bottom:2px}
 #v2LoadedChipCount{font-weight:700;color:var(--primary-dark)!important}
@@ -530,6 +538,7 @@ Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arr
 <div id="v3ExamPreviewPanel" aria-live="polite"></div>
 <div id="v3PlanPreviewPanel" aria-live="polite"></div>
 <div id="v3CalculatorSuggestionsPanel" aria-live="polite"></div>
+<div id="v3HistoryEditPanel" aria-live="polite"></div>
 
 <div id="speedContent" style="display:none">
 <div class="note-phi-warn">Only select findings you personally assessed. Do not enter patient names, IDs, or contact information.</div>
@@ -1187,6 +1196,7 @@ window.cleanOutputPhraseList = cleanOutputPhraseList;
 <script src="./v3_exam_preview.js?v=v3j-exam-preview"></script>
 <script src="./v3_plan_preview.js?v=v3k-plan-preview"></script>
 <script src="./v3_calculator_suggestions_preview.js?v=v3l-calculator-suggestions"></script>
+<script src="./v3_history_edit.js?v=v3m-history-edit"></script>
 <script>
 
 // ---- Adapter: build old-compatible VISIT_LIBRARY from NAJM_CLINICAL_DATA ----
