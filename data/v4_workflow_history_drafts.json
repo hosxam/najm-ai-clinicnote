@@ -1,8 +1,9 @@
 [
   {
     "workflow_id": "gp-fever-urti",
-    "default_history_draft": "Patient presents with [duration] of fever/URTI symptoms. Main symptoms documented: [selected positives]. Relevant negatives documented: [selected negatives]. Doctor-entered context: [additional history if provided].",
-    "editable_placeholders": ["[duration]", "[selected positives]", "[selected negatives]", "[additional history if provided]"],
+    "workflow_display_name": "GP Fever / URTI",
+    "default_history_draft": "Patient presents with fever and upper respiratory tract symptoms for [duration]. [Cough/nasal congestion/sore throat status]. [Associated symptoms if any]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": ["[duration]", "[Cough/nasal congestion/sore throat status]", "[Associated symptoms if any]", "[Relevant negatives reviewed]", "[Additional history]"],
     "linked_autofill_groups": ["symptoms", "relevant_negatives", "red_flags", "follow_up"],
     "optional_full_history_sections": ["presenting_complaint", "socrates_hpc", "systems_review", "pmh", "drug_history", "allergies", "ice"],
     "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
@@ -10,8 +11,9 @@
   },
   {
     "workflow_id": "gp-diabetes-followup",
-    "default_history_draft": "Routine diabetes follow-up. Monitoring, symptoms, adherence, complications screen, and relevant labs documented if reviewed. Doctor-entered context: [additional follow-up details].",
-    "editable_placeholders": ["[additional follow-up details]"],
+    "workflow_display_name": "GP Diabetes Follow-Up",
+    "default_history_draft": "Routine diabetes follow-up. Patient reports [glucose control status over recent period]. [Home glucose monitoring reviewed if available]. [Adherence to medications and lifestyle discussed]. [Relevant lab results reviewed]. [Hypoglycaemic episodes or symptoms if any]. [Additional follow-up details].",
+    "editable_placeholders": ["[glucose control status over recent period]", "[Home glucose monitoring reviewed if available]", "[Adherence to medications and lifestyle discussed]", "[Relevant lab results reviewed]", "[Hypoglycaemic episodes or symptoms if any]", "[Additional follow-up details]"],
     "linked_autofill_groups": ["symptoms", "relevant_negatives", "investigations", "plan_phrases", "follow_up"],
     "optional_full_history_sections": ["presenting_complaint", "systems_review", "pmh", "drug_history", "family_history", "social_history", "ice"],
     "safety_note": "Editable documentation draft only. Do not add patient-specific facts unless entered or confirmed by the clinician.",
@@ -19,8 +21,9 @@
   },
   {
     "workflow_id": "msk-low-back-pain",
-    "default_history_draft": "Low back pain history documented with [duration], pain pattern, functional impact, relevant negatives/red flags, and clinician-entered context: [additional MSK history].",
-    "editable_placeholders": ["[duration]", "[additional MSK history]"],
+    "workflow_display_name": "MSK Low Back Pain",
+    "default_history_draft": "Patient seen for low back pain for [duration]. Pain described as [pain character and location] with [radiation pattern if present]. [Movement or position that aggravates/relieves]. [Functional limitation]. [Red flag symptoms reviewed including neurological symptoms, trauma, constitutional symptoms]. [Additional MSK history].",
+    "editable_placeholders": ["[duration]", "[pain character and location]", "[radiation pattern if present]", "[Movement or position that aggravates/relieves]", "[Functional limitation]", "[Red flag symptoms reviewed]", "[Additional MSK history]"],
     "linked_autofill_groups": ["symptoms", "relevant_negatives", "exam_findings", "red_flags", "plan_phrases"],
     "optional_full_history_sections": ["joint_pain_socrates", "functional_assessment", "back_pain_red_flags", "pmh_drug_family_social", "ice"],
     "safety_note": "Editable documentation draft only. Do not invent neurological symptoms, trauma details, or red flags.",
@@ -28,21 +31,22 @@
   },
   {
     "workflow_id": "peds-fever",
-    "default_history_draft": "Pediatric fever history documented from [history source]. Duration, activity, intake, hydration, urine output, associated symptoms, and relevant negatives documented if assessed.",
-    "editable_placeholders": ["[history source]"],
+    "workflow_display_name": "Paediatric Fever",
+    "default_history_draft": "Parent/guardian reports fever in a [age] for [duration]. [Temperature pattern if reported]. [Feeding and oral intake status]. [Activity level and alertness]. [Urine output]. [Associated symptoms: cough, rhinorrhoea, vomiting, diarrhoea, rash if any]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": ["[age]", "[duration]", "[Temperature pattern if reported]", "[Feeding and oral intake status]", "[Activity level and alertness]", "[Urine output]", "[Associated symptoms]", "[Relevant negatives reviewed]", "[Additional history]"],
     "linked_autofill_groups": ["symptoms", "relevant_negatives", "red_flags", "follow_up"],
     "optional_full_history_sections": ["age_source", "fever_prompts", "respiratory_prompts", "feeding", "pmh_drug_allergy", "family_social_safeguarding", "parent_child_ice"],
-    "safety_note": "Editable documentation draft only. Pediatric safeguarding and safety concerns require clinician judgment and local protocol.",
+    "safety_note": "Editable documentation draft only. Paediatric safeguarding and safety concerns require clinician judgment and local protocol.",
     "review_required": true
   },
   {
     "workflow_id": "obgyn-antenatal-followup",
-    "default_history_draft": "Antenatal follow-up history documented. Gestational age, symptoms, fetal movement context if relevant, bleeding/pain symptoms, antenatal review points, and clinician-entered concerns documented if assessed.",
-    "editable_placeholders": ["[clinician-entered concerns]"],
+    "workflow_display_name": "OBGYN Antenatal Follow-Up",
+    "default_history_draft": "Routine antenatal follow-up at [gestational age] weeks. [Fetal movements reported]. [Bleeding, pain, or discharge if any]. [BP and proteinuria status reviewed]. [Relevant lab results reviewed including glucose tolerance screen if done]. [Other symptoms or concerns]. [Additional antenatal details].",
+    "editable_placeholders": ["[gestational age]", "[Fetal movements reported]", "[Bleeding, pain, or discharge if any]", "[BP and proteinuria status reviewed]", "[Relevant lab results reviewed]", "[Other symptoms or concerns]", "[Additional antenatal details]"],
     "linked_autofill_groups": ["symptoms", "relevant_negatives", "investigations", "plan_phrases", "follow_up"],
     "optional_full_history_sections": ["obstetrics", "antenatal_history", "previous_obstetric_history", "pmh_drug_family_social", "ice"],
     "safety_note": "Editable documentation draft only. Obstetric history should be documented in clinically appropriate context and reviewed by the clinician.",
     "review_required": true
   }
 ]
-

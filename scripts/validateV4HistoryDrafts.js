@@ -5,6 +5,14 @@ const ROOT = path.resolve(__dirname, '..');
 const DATA_PATH = path.join(ROOT, 'data', 'v4_workflow_history_drafts.json');
 const WORKFLOWS_PATH = path.join(ROOT, 'data', 'clinical_workflows.json');
 
+const TARGET_WORKFLOWS = [
+  'gp-fever-urti',
+  'gp-diabetes-followup',
+  'msk-low-back-pain',
+  'peds-fever',
+  'obgyn-antenatal-followup'
+];
+
 const DISALLOWED = [
   'diagnose',
   'recommended treatment',
@@ -14,6 +22,8 @@ const DISALLOWED = [
   'start insulin',
   'give iv',
   'medication dosing',
+  'clinician impression documented',
+  'as per clinician plan',
   'nhs approved',
   'nice compliant',
   'dha approved',
@@ -28,7 +38,7 @@ function nonEmpty(value) {
   return typeof value === 'string' && value.trim().length > 0;
 }
 
-function walkText(value, visitor, pointer = '$') {
+function walkText(value, visitor, pointer) {
   if (typeof value === 'string') return visitor(value, pointer);
   if (Array.isArray(value)) return value.forEach((item, index) => walkText(item, visitor, `${pointer}[${index}]`));
   if (value && typeof value === 'object') {
@@ -54,20 +64,29 @@ function main() {
   }
 
   const drafts = readJson(DATA_PATH);
-  const workflowIds = new Set(readJson(WORKFLOWS_PATH).map((workflow) => workflow.workflow_id));
+  const workflowIds = new Set(readJson(WORKFLOWS_PATH).map(w => w.workflow_id));
 
   if (!Array.isArray(drafts) || drafts.length === 0) errors.push('V4 history drafts must be a non-empty array.');
 
   const seen = new Set();
+  const workflowsFound = new Set();
+
   for (const [index, draft] of (drafts || []).entries()) {
     const label = draft && draft.workflow_id ? draft.workflow_id : `draft[${index}]`;
+    workflowsFound.add(draft.workflow_id);
+
+    if (!nonEmpty(draft.workflow_id)) errors.push(`${label}: workflow_id is required.`);
+    if (!nonEmpty(draft.workflow_display_name)) errors.push(`${label}: workflow_display_name is required.`);
     if (!workflowIds.has(draft.workflow_id)) errors.push(`${label}: workflow_id does not exist.`);
     if (seen.has(draft.workflow_id)) errors.push(`${label}: duplicate workflow_id.`);
     seen.add(draft.workflow_id);
+
     if (!nonEmpty(draft.default_history_draft)) errors.push(`${label}: default_history_draft is required.`);
+
     for (const field of ['editable_placeholders', 'linked_autofill_groups', 'optional_full_history_sections']) {
       if (!Array.isArray(draft[field])) errors.push(`${label}: ${field} must be an array.`);
     }
+
     if (!nonEmpty(draft.safety_note)) errors.push(`${label}: safety_note is required.`);
     if (draft.review_required !== true) errors.push(`${label}: review_required must be true.`);
 
@@ -80,9 +99,14 @@ function main() {
     });
   }
 
+  // Check all target workflows are present
+  for (const wf of TARGET_WORKFLOWS) {
+    if (!workflowsFound.has(wf)) errors.push(`Missing target workflow: ${wf}`);
+  }
+
   if (errors.length) {
     console.error('V4 history draft validation failed:');
-    for (const error of errors) console.error(`- ${error}`);
+    for (const e of errors) console.error(`- ${e}`);
     process.exit(1);
   }
 
@@ -90,4 +114,3 @@ function main() {
 }
 
 main();
-

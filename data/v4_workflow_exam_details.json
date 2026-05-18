@@ -1,123 +1,561 @@
 [
   {
-    "workflow_id": "msk-knee-pain",
+    "workflow_id": "gp-fever-urti",
+    "workflow_display_name": "GP Fever / URTI",
     "exam_groups": [
       {
-        "group_id": "knee_general",
-        "group_label": "Knee general examination",
-        "documentation_prompts": [
-          "Gait documented if assessed.",
-          "Range of motion documented if assessed.",
-          "Effusion documented if assessed.",
-          "Swelling/deformity documented if assessed.",
-          "Neurovascular status documented if assessed."
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital sign values should be entered by the clinician. Do not invent values.",
+        "prompts": [
+          {
+            "prompt_id": "temperature",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "respiratory_rate",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "oxygen_saturation",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "general_appearance",
+        "group_label": "General appearance",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. general appearance is a clinician observation. Do not specify findings not assessed.",
+        "prompts": [
+          {
+            "prompt_id": "general_appearance",
+            "prompt_text": "General appearance documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "hydration_status",
+            "prompt_text": "Hydration status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "throat_exam",
+        "group_label": "Throat examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. throat findings only if assessed. Do not imply an examination was performed.",
+        "prompts": [
+          {
+            "prompt_id": "oropharynx",
+            "prompt_text": "Oropharyngeal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "tonsillar_status",
+            "prompt_text": "Tonsillar appearance documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "cervical_lymphadenopathy",
+            "prompt_text": "Cervical lymphadenopathy documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "respiratory_exam",
+        "group_label": "Respiratory examination",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. chest findings only if assessed. Do not specify auscultation findings without clinician entry.",
+        "prompts": [
+          {
+            "prompt_id": "chest_auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "chest_wall",
+            "prompt_text": "Chest wall examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rash_menigism",
+        "group_label": "Rash and meningism",
+        "display_order": 5,
+        "safety_note": "Document only if assessed. meningeal signs documentation only if assessed. Do not imply neck stiffness or rash without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "rash",
+            "prompt_text": "Skin rash documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "meningeal_signs",
+            "prompt_text": "Meningeal signs documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional",
+            "warning": "Meningeal signs should only be documented if specifically assessed and confirmed by the clinician."
+          }
         ]
       }
     ],
-    "named_tests": [
-      {"test_id": "lachman", "test_name": "Lachman", "documentation_prompt": "Lachman test documented if assessed."},
-      {"test_id": "anterior_drawer", "test_name": "Anterior drawer", "documentation_prompt": "Anterior drawer test documented if assessed."},
-      {"test_id": "posterior_drawer", "test_name": "Posterior drawer", "documentation_prompt": "Posterior drawer test documented if assessed."},
-      {"test_id": "varus_stress", "test_name": "Varus stress", "documentation_prompt": "Varus stress test documented if assessed."},
-      {"test_id": "valgus_stress", "test_name": "Valgus stress", "documentation_prompt": "Valgus stress test documented if assessed."},
-      {"test_id": "mcmurray", "test_name": "McMurray", "documentation_prompt": "McMurray test documented if assessed."},
-      {"test_id": "thessaly", "test_name": "Thessaly", "documentation_prompt": "Thessaly test documented if assessed."},
-      {"test_id": "patellar_apprehension_grind", "test_name": "Patellar apprehension/grind", "documentation_prompt": "Patellar apprehension/grind documented if assessed."}
-    ],
-    "documentation_prompts": ["Document only if assessed. Do not imply a test was performed unless documented by the clinician."],
-    "safety_note": "Document only if assessed. These are documentation prompts, not examination instructions.",
+    "safety_note": "Document only if assessed. These prompts are documentation support, not examination instructions.",
     "review_required": true
   },
   {
-    "workflow_id": "msk-shoulder-pain",
+    "workflow_id": "gp-diabetes-followup",
+    "workflow_display_name": "GP Diabetes Follow-Up",
     "exam_groups": [
       {
-        "group_id": "shoulder_general",
-        "group_label": "Shoulder examination",
-        "documentation_prompts": [
-          "Inspection documented if assessed.",
-          "Palpation documented if assessed.",
-          "Active and passive range of motion documented if assessed.",
-          "Power testing documented if assessed.",
-          "Neurovascular status documented if assessed."
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs should be entered by the clinician. Do not invent values.",
+        "prompts": [
+          {
+            "prompt_id": "blood_pressure",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "weight_bmi",
+            "prompt_text": "Weight and BMI documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "foot_exam",
+        "group_label": "Foot examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. foot examination findings only if assessed. Do not imply foot exam was performed without clinician documentation.",
+        "prompts": [
+          {
+            "prompt_id": "foot_inspection",
+            "prompt_text": "Foot inspection documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "peripheral_pulses",
+            "prompt_text": "Peripheral pulses documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "monofilament_sensation",
+            "prompt_text": "Monofilament sensation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "injection_sites",
+            "prompt_text": "Injection sites documented if relevant and assessed.",
+            "documentation_style": "if_relevant",
+            "required_level": "conditional"
+          }
         ]
       }
     ],
-    "named_tests": [
-      {"test_id": "empty_can", "test_name": "Empty can", "documentation_prompt": "Empty can test documented if assessed."},
-      {"test_id": "hawkins_kennedy", "test_name": "Hawkins-Kennedy", "documentation_prompt": "Hawkins-Kennedy test documented if assessed."},
-      {"test_id": "neer", "test_name": "Neer", "documentation_prompt": "Neer test documented if assessed."}
-    ],
-    "documentation_prompts": ["Document only if assessed. Shoulder special tests should be recorded only when performed."],
-    "safety_note": "Document only if assessed. These prompts do not tell clinicians which exam to perform.",
+    "named_tests": [],
+    "safety_note": "Document only if assessed. These prompts support diabetes follow-up documentation, not examination recommendations.",
     "review_required": true
   },
   {
     "workflow_id": "msk-low-back-pain",
+    "workflow_display_name": "MSK Low Back Pain",
     "exam_groups": [
       {
-        "group_id": "back_general",
-        "group_label": "Back examination",
-        "documentation_prompts": [
-          "Gait documented if assessed.",
-          "Lumbar range of motion documented if assessed.",
-          "Spinal tenderness documented if assessed.",
-          "Lower limb neurological screen documented if assessed.",
-          "Straight leg raise documented if assessed."
+        "group_id": "gait_assessment",
+        "group_label": "Gait assessment",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. gait observation is a clinician finding. Do not specify gait type without clinician entry.",
+        "prompts": [
+          {
+            "prompt_id": "gait",
+            "prompt_text": "Gait documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "lumbar_exam",
+        "group_label": "Lumbar spine examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. lumbar findings only if assessed. Do not imply range of motion or tenderness without clinician documentation.",
+        "prompts": [
+          {
+            "prompt_id": "lumbar_range_of_motion",
+            "prompt_text": "Lumbar range of motion documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "spinal_tenderness",
+            "prompt_text": "Spinal tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "nerve_root_tests",
+        "group_label": "Nerve root tests",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. nerve root test findings only if assessed. Do not imply test was performed without clinician documentation.",
+        "prompts": [
+          {
+            "prompt_id": "straight_leg_raise",
+            "prompt_text": "Straight leg raise documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "crossed_straight_leg_raise",
+            "prompt_text": "Crossed straight leg raise documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "lower_limb_neuro",
+        "group_label": "Lower limb neurological examination",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. neurological findings only if assessed. Do not specify deficits without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "lower_limb_power",
+            "prompt_text": "Lower limb power documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "lower_limb_sensation",
+            "prompt_text": "Lower limb sensation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "lower_limb_reflexes",
+            "prompt_text": "Lower limb reflexes documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "saddle_sensation",
+            "prompt_text": "Saddle sensation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional",
+            "warning": "Saddle sensation should only be documented if cauda equina syndrome was specifically assessed."
+          },
+          {
+            "prompt_id": "neurovascular_status",
+            "prompt_text": "Neurovascular status documented if relevant.",
+            "documentation_style": "if_relevant",
+            "required_level": "conditional"
+          }
         ]
       }
     ],
-    "named_tests": [
-      {"test_id": "straight_leg_raise", "test_name": "Straight leg raise", "documentation_prompt": "Straight leg raise documented if assessed."},
-      {"test_id": "lower_limb_neurovascular", "test_name": "Lower limb neurovascular status", "documentation_prompt": "Lower limb neurovascular status documented if assessed."}
-    ],
-    "documentation_prompts": ["Document only if assessed. Red flag examination documentation should reflect clinician assessment only."],
-    "safety_note": "Document only if assessed. These prompts are not examination recommendations.",
+    "named_tests": [],
+    "safety_note": "Document only if assessed. These prompts support low back pain examination documentation, not examination instructions.",
     "review_required": true
   },
   {
-    "workflow_id": "ent-ear-pain",
+    "workflow_id": "peds-fever",
+    "workflow_display_name": "Paediatric Fever",
     "exam_groups": [
       {
-        "group_id": "ear_exam",
-        "group_label": "Ear examination",
-        "documentation_prompts": [
-          "Otoscopy documented if assessed.",
-          "External ear appearance documented if assessed.",
-          "Mastoid tenderness documented if assessed.",
-          "Hearing screen documented if assessed."
+        "group_id": "general_assessment",
+        "group_label": "General assessment",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. general appearance is a clinician observation. Do not specify findings not assessed.",
+        "prompts": [
+          {
+            "prompt_id": "general_appearance_activity",
+            "prompt_text": "General appearance and activity level documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "hydration_status",
+            "prompt_text": "Hydration status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "capillary_refill",
+            "prompt_text": "Capillary refill documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "urine_output_context",
+            "prompt_text": "Urine output context documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. vital signs should be entered by the clinician. Do not invent values.",
+        "prompts": [
+          {
+            "prompt_id": "temperature",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "respiratory_rate",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "oxygen_saturation",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "ent_exam",
+        "group_label": "ENT examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. eNT findings only if assessed. Do not imply examination was performed without clinician documentation.",
+        "prompts": [
+          {
+            "prompt_id": "throat_exam",
+            "prompt_text": "Throat examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "otoscopy",
+            "prompt_text": "Otoscopy documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "cervical_nodes",
+            "prompt_text": "Cervical lymphadenopathy documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "respiratory_exam",
+        "group_label": "Respiratory examination",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. chest findings only if assessed. Do not specify auscultation findings without clinician entry.",
+        "prompts": [
+          {
+            "prompt_id": "respiratory_effort",
+            "prompt_text": "Respiratory effort documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "chest_auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "abdominal_exam",
+        "group_label": "Abdominal examination",
+        "display_order": 5,
+        "safety_note": "Document only if assessed. abdominal findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal_exam",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rash_assessment",
+        "group_label": "Rash assessment",
+        "display_order": 6,
+        "safety_note": "Document only if assessed. rash findings only if assessed. Do not imply non-blanching rash without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "skin_rash",
+            "prompt_text": "Skin rash documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "non_blanching_rash",
+            "prompt_text": "Non-blanching rash documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional",
+            "warning": "Non-blanching rash should be documented only if specifically assessed and confirmed by the clinician."
+          }
+        ]
+      },
+      {
+        "group_id": "parent_report",
+        "group_label": "Parent or guardian report context",
+        "display_order": 7,
+        "safety_note": "Document only if assessed. parent report context should be documented only as reported. Do not add clinical interpretation.",
+        "prompts": [
+          {
+            "prompt_id": "parent_report_context",
+            "prompt_text": "Parent or guardian report context documented if relevant.",
+            "documentation_style": "if_relevant",
+            "required_level": "conditional"
+          }
         ]
       }
     ],
-    "named_tests": [
-      {"test_id": "otoscopy", "test_name": "Otoscopy", "documentation_prompt": "Otoscopy findings documented if assessed."}
-    ],
-    "documentation_prompts": ["Document only if assessed. ENT findings should not be implied if not examined."],
-    "safety_note": "Document only if assessed. These prompts support documentation only.",
+    "named_tests": [],
+    "safety_note": "Document only if assessed. These prompts support paediatric fever examination documentation, not examination instructions.",
     "review_required": true
   },
   {
-    "workflow_id": "ophth-red-eye",
+    "workflow_id": "obgyn-antenatal-followup",
+    "workflow_display_name": "OBGYN Antenatal Follow-Up",
     "exam_groups": [
       {
-        "group_id": "red_eye_exam",
-        "group_label": "Red eye examination",
-        "documentation_prompts": [
-          "Visual acuity documented if assessed.",
-          "Pupil response documented if assessed.",
-          "Corneal appearance documented if assessed.",
-          "Discharge documented if assessed.",
-          "Photophobia documented if assessed."
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs should be entered by the clinician. Do not invent values.",
+        "prompts": [
+          {
+            "prompt_id": "blood_pressure",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "weight",
+            "prompt_text": "Weight documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "edema_assessment",
+        "group_label": "Oedema assessment",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. oedema findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "lower_limb_edema",
+            "prompt_text": "Lower limb oedema documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "abdominal_exam",
+        "group_label": "Abdominal and obstetric examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. abdominal and obstetric findings only if assessed. Do not imply fetal assessment without clinician documentation.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal_exam",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "fundal_height",
+            "prompt_text": "Fundal height documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "fetal_heart",
+            "prompt_text": "Fetal heart auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "fetal_movement",
+            "prompt_text": "Fetal movement documented if relevant.",
+            "documentation_style": "if_relevant",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "urinalysis",
+        "group_label": "Urinalysis",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. urinalysis results only if performed.",
+        "prompts": [
+          {
+            "prompt_id": "urine_dipstick",
+            "prompt_text": "Urine dipstick documented if performed.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
         ]
       }
     ],
-    "named_tests": [
-      {"test_id": "visual_acuity", "test_name": "Visual acuity", "documentation_prompt": "Visual acuity documented if assessed."},
-      {"test_id": "fluorescein", "test_name": "Fluorescein staining", "documentation_prompt": "Fluorescein staining documented if assessed."}
-    ],
-    "documentation_prompts": ["Document only if assessed. Eye findings should be recorded only when assessed by the clinician."],
-    "safety_note": "Document only if assessed. These prompts are documentation support only.",
+    "named_tests": [],
+    "safety_note": "Document only if assessed. These prompts support antenatal follow-up examination documentation, not examination instructions.",
     "review_required": true
   }
 ]
-
