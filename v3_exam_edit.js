@@ -10,7 +10,8 @@
 
   function isEnabled() {
     var params = new URLSearchParams(window.location.search);
-    return params.get("v3") === "exam-edit" && window.CLINICNOTE_DATA_MODE === "v2";
+    var mode = params.get("v3");
+    return (mode === "exam-edit" || mode === "workbench") && window.CLINICNOTE_DATA_MODE === "v2";
   }
 
   function escapeHtml(value) {
