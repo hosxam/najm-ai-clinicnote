@@ -244,6 +244,8 @@ nav{background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(195,204,215,0
 #v2CustomSafetyNote{background:var(--amber-bg)!important;border-color:var(--amber-border)!important;color:#704f18!important;border-radius:10px!important}
 #v3HistoryPreviewPanel{display:none;background:#fff;border:1px solid #bed8f5;border-radius:12px;padding:16px;margin:14px 0 18px;box-shadow:var(--shadow)}
 #v3HistoryPreviewPanel.v3-history-visible{display:block}
+#v3ExamPreviewPanel{display:none;background:#fff;border:1px solid #bed8f5;border-radius:12px;padding:16px;margin:14px 0 18px;box-shadow:var(--shadow)}
+#v3ExamPreviewPanel.v3-exam-visible{display:block}
 .v3-history-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
 .v3-history-title{font-size:14px;font-weight:800;color:var(--gray-900);margin-bottom:3px}
 .v3-history-subtitle{font-size:11px;color:var(--gray-500);line-height:1.45}
@@ -521,6 +523,7 @@ Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arr
 </div>
 
 <div id="v3HistoryPreviewPanel" aria-live="polite"></div>
+<div id="v3ExamPreviewPanel" aria-live="polite"></div>
 
 <div id="speedContent" style="display:none">
 <div class="note-phi-warn">Only select findings you personally assessed. Do not enter patient names, IDs, or contact information.</div>
@@ -1175,6 +1178,7 @@ window.cleanOutputPhraseList = cleanOutputPhraseList;
 <script src="./forms-config.js?v=scribe-live"></script>
 <script src="./v2_workflow_ui_2.js?v=language-cleanup"></script>
 <script src="./v3_history_preview.js?v=v3i-history-preview"></script>
+<script src="./v3_exam_preview.js?v=v3j-exam-preview"></script>
 <script>
 
 // ---- Adapter: build old-compatible VISIT_LIBRARY from NAJM_CLINICAL_DATA ----
