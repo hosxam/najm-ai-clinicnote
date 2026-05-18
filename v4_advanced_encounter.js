@@ -176,9 +176,21 @@
       else if (container.indexOf('negatives') >= 0 || container.indexOf('red_flags') >= 0) chips.relevant_negatives.push(value);
       else if (container.indexOf('exam') >= 0 || container.indexOf('findings') >= 0) chips.exam_findings.push(value);
       else if (container.indexOf('investigations') >= 0 || container.indexOf('labs') >= 0) chips.investigations.push(value);
-      else if (container.indexOf('plan') >= 0 || container.indexOf('management') >= 0) chips.plan_phrases.push(value);
+      else if (container.indexOf('plan') >= 0 || container.indexOf('management') >= 0 || container.indexOf('disposition') >= 0) chips.plan_phrases.push(value);
       else if (container.indexOf('follow') >= 0 || container.indexOf('fup') >= 0) chips.follow_up.push(value);
     }
+
+    // Also capture custom entries from the custom entry area
+    var customEntries = area.querySelectorAll('[data-v2-custom-entry="true"].chip.selected');
+    for (var ci = 0; ci < customEntries.length; ci++) {
+      var ce = customEntries[ci];
+      var cVal = ce.getAttribute('data-value') || ce.textContent || '';
+      cVal = cVal.trim();
+      if (!cVal) continue;
+      // Put custom entries in symptoms by default
+      chips.symptoms.push(cVal);
+    }
+
     return chips;
   }
 
@@ -191,17 +203,40 @@
 
     var text = state.historyDraft || draft.default_history_draft;
 
-    // Replace placeholders with mini-field values
+    // Replace filled placeholders with submitted values
     var defs = state.miniFieldDefs;
     for (var key in defs) {
       var def = defs[key];
       if (def.value && def.value.trim()) {
-        // Replace the bracket placeholder with the value
-        // But be careful: if the placeholder appears multiple times or partially
         text = text.split(def.placeholder).join(def.value.trim());
       }
     }
 
+    // Remove entire sentences containing unfilled placeholders
+    text = removePlaceholderSentences(text);
+
+    return text;
+  }
+
+  function removePlaceholderSentences(text) {
+    if (!text) return '';
+    // Remove lines or segments containing bracket placeholders
+    // Handle both full sentences and inline fragments
+    // Pattern: match any text containing [bracketed] placeholders
+    var lines = text.split('\n');
+    var result = [];
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i].trim();
+      if (line.match(/\[[^\]]+\]/)) continue;
+      if (line) result.push(line);
+    }
+    text = result.join('\n');
+    // Also handle inline: remove parenthetical sections containing placeholders
+    // e.g., "...for [duration]." -> remove the "[duration]" part but keep sentence if other content exists
+    text = text.replace(/\[[^\]]+\]/g, '');
+    text = text.replace(/\s{2,}/g, ' ').trim();
+    // Remove trailing punctuation-only remnants
+    text = text.replace(/[\.\,\;]+$/, '').trim();
     return text;
   }
 
@@ -219,6 +254,9 @@
         text = text.split(def.placeholder).join(def.value.trim());
       }
     }
+
+    // Remove unfilled placeholder sentences
+    text = removePlaceholderSentences(text);
 
     state.historyDraft = text;
 
@@ -608,13 +646,13 @@
   var _outputGenerated = false;
 
   function buildAdvancedDraft(tabId) {
+    // Clean history: strip remaining placeholders
     var historyDraft = state.historyDraft || '';
+    historyDraft = removePlaceholderSentences(historyDraft);
+    if (!historyDraft) historyDraft = '[not documented]';
+
     var impression = state.impression || '[not documented]';
     var planFree = state.planText || '';
-
-    // Replace any remaining bracket placeholders silently
-    historyDraft = historyDraft.replace(/\[[^\]]*\]/g, '').replace(/\s{2,}/g, ' ').trim();
-    if (!historyDraft) historyDraft = '[not documented]';
 
     // ---- Collect exam items ----
     var examItems = [];
@@ -625,18 +663,14 @@
         var groupItems = [];
         for (var pi = 0; pi < group.prompts.length; pi++) {
           var key = group.group_id + '::' + group.prompts[pi].prompt_id;
-          if (state.examConfirmations[key]) {
-            groupItems.push(group.prompts[pi].prompt_text);
-          }
+          if (state.examConfirmations[key]) groupItems.push(group.prompts[pi].prompt_text);
         }
-        if (groupItems.length) {
-          examItems.push('{b}' + group.group_label + ':{/b} ' + groupItems.join('; '));
-        }
+        if (groupItems.length) examItems.push(group.group_label + ': ' + groupItems.join('; '));
       }
     }
     var examSection = examItems.length ? examItems.join('\n') : '[not documented]';
 
-    // ---- Collect investigation items ----
+    // ---- Collect V4 investigation items ----
     var invItems = [];
     var inv = getInvestigationOptions(state.selectedWorkflowId);
     if (inv && inv.investigation_groups) {
@@ -644,13 +678,10 @@
         var ig = inv.investigation_groups[ivi];
         for (var oi = 0; oi < ig.options.length; oi++) {
           var ikey = ig.group_id + '::' + ig.options[oi].option_id;
-          if (state.investigationConfirmations[ikey]) {
-            invItems.push(ig.options[oi].option_text);
-          }
+          if (state.investigationConfirmations[ikey]) invItems.push(ig.options[oi].option_text);
         }
       }
     }
-    var invSection = invItems.length ? invItems.join('\n') : '';
 
     // ---- Collect plan options ----
     var planOpts = [];
@@ -659,59 +690,57 @@
       for (var pgi = 0; pgi < plan.plan_option_groups.length; pgi++) {
         var pg = plan.plan_option_groups[pgi];
         for (var poi = 0; poi < pg.options.length; poi++) {
-          if (state.planConfirmations[pg.options[poi].option_id]) {
-            planOpts.push(pg.options[poi].option_text);
-          }
+          if (state.planConfirmations[pg.options[poi].option_id]) planOpts.push(pg.options[poi]);
         }
       }
     }
 
     // ---- Collect Autofill chips ----
-    var chipSymptoms = state.capturedChips.symptoms || [];
-    var chipNegatives = state.capturedChips.relevant_negatives || [];
-    var chipExam = state.capturedChips.exam_findings || [];
-    var chipInv = state.capturedChips.investigations || [];
-    var chipPlan = state.capturedChips.plan_phrases || [];
-    var chipFollowUp = state.capturedChips.follow_up || [];
+    var chips = state.capturedChips || {};
+    var chipSymptoms = chips.symptoms || [];
+    var chipNegatives = chips.relevant_negatives || [];
+    var chipExam = chips.exam_findings || [];
+    var chipInv = chips.investigations || [];
+    var chipPlan = chips.plan_phrases || [];
+    var chipFollowUp = chips.follow_up || [];
 
     // ---- DEDUPLICATION ----
-    // Normalize: lowercase, trim, remove trailing periods
     function norm(t) { return t.toLowerCase().replace(/\.+$/, '').trim(); }
-
-    function isInHistory(text) {
-      return historyDraft.toLowerCase().indexOf(norm(text)) >= 0;
-    }
-
-    function dedupeList(items, against) {
-      var out = [];
-      var seen = {};
+    function inHistory(t) { return norm(t) && historyDraft.toLowerCase().indexOf(norm(t)) >= 0; }
+    function dedupe(items, against) {
+      var out = [], seen = {};
       for (var i = 0; i < items.length; i++) {
-        var n = norm(items[i]);
-        if (!n || seen[n]) continue;
-        seen[n] = true;
-        if (against && isInHistory(items[i])) continue;
+        var n = norm(items[i]); if (!n || seen[n]) continue; seen[n] = true;
+        if (against && inHistory(items[i])) continue;
         out.push(items[i]);
       }
       return out;
     }
 
-    // Dedupe chips against history
-    var uniqueSymptoms = dedupeList(chipSymptoms, true);
-    var uniqueNegatives = dedupeList(chipNegatives, true);
-    var uniqueExamChips = dedupeList(chipExam, true);
-    var uniqueInvChips = dedupeList(chipInv, true);
-    var uniquePlanChips = dedupeList(chipPlan, false);
-    var uniqueFollowUp = dedupeList(chipFollowUp, false);
+    var uniqueSymptoms = dedupe(chipSymptoms, true);
+    var uniqueNegatives = dedupe(chipNegatives, true);
+    var uniqueExamChips = dedupe(chipExam, true);
+    var uniqueInvChips = dedupe(chipInv, true);
+    var uniquePlanChips = dedupe(chipPlan, false);
+    var uniqueFollowUp = dedupe(chipFollowUp, false);
 
-    // Also check V4 plan options against history and chip plan
+    // Deduplicate investigation chips against V4 investigation items
+    var allInvSeen = {};
+    for (var ixi = 0; ixi < invItems.length; ixi++) allInvSeen[norm(invItems[ixi])] = true;
+    var dedupedInvChips = [];
+    for (var ixci = 0; ixci < uniqueInvChips.length; ixci++) {
+      if (!allInvSeen[norm(uniqueInvChips[ixci])]) dedupedInvChips.push(uniqueInvChips[ixci]);
+    }
+
+    var allInvItems = invItems.concat(dedupedInvChips);
+
+    // Deduplicate plan options against history and chip plan
     var uniquePlanOpts = [];
     var seenPlan = {};
     for (var pi2 = 0; pi2 < planOpts.length; pi2++) {
-      var n = norm(planOpts[pi2]);
-      if (!n || seenPlan[n]) continue;
-      seenPlan[n] = true;
-      if (isInHistory(planOpts[pi2])) continue;
-      // Also check if it's already in chip plan phrases
+      var n = norm(planOpts[pi2].option_text);
+      if (!n || seenPlan[n]) continue; seenPlan[n] = true;
+      if (inHistory(planOpts[pi2].option_text)) continue;
       var dup = false;
       for (var ci = 0; ci < uniquePlanChips.length; ci++) {
         if (norm(uniquePlanChips[ci]) === n) { dup = true; break; }
@@ -719,85 +748,83 @@
       if (!dup) uniquePlanOpts.push(planOpts[pi2]);
     }
 
-    // Clean plan free text
     var cleanPlanFree = cleanText(planFree);
 
-    // Combine plan section
+    // Build plan section (no follow_up items here)
     var planLines = [];
     if (uniquePlanChips.length) planLines = planLines.concat(uniquePlanChips);
-    if (uniquePlanOpts.length) planLines = planLines.concat(uniquePlanOpts);
+    for (var poi3 = 0; poi3 < uniquePlanOpts.length; poi3++) {
+      if (uniquePlanOpts[poi3].option_category !== 'follow_up') planLines.push(uniquePlanOpts[poi3].option_text);
+    }
     if (cleanPlanFree) planLines.push(cleanPlanFree);
     var planSection = planLines.length ? planLines.join('\n') : '[not documented]';
 
-    // Build follow-up section
+    // Build follow-up section separately
     var fupItems = [];
-    if (uniqueFollowUp.length) fupItems = fupItems.concat(uniqueFollowUp);
-
-    // Check plan options for follow_up category
-    if (plan && plan.plan_option_groups) {
-      for (var pgi2 = 0; pgi2 < plan.plan_option_groups.length; pgi2++) {
-        var pg2 = plan.plan_option_groups[pgi2];
-        for (var poi2 = 0; poi2 < pg2.options.length; poi2++) {
-          var opt = pg2.options[poi2];
-          if (state.planConfirmations[opt.option_id] && opt.option_category === 'follow_up') {
-            var fn = norm(opt.option_text);
-            var dup2 = false;
-            for (var fi = 0; fi < fupItems.length; fi++) {
-              if (norm(fupItems[fi]) === fn) { dup2 = true; break; }
-            }
-            if (!dup2) fupItems.push(opt.option_text);
-          }
-        }
+    if (uniqueFollowUp.length) for (var fi = 0; fi < uniqueFollowUp.length; fi++) fupItems.push(uniqueFollowUp[fi]);
+    for (var pgi2 = 0; pgi2 < planOpts.length; pgi2++) {
+      if (state.planConfirmations[planOpts[pgi2].option_id] && planOpts[pgi2].option_category === 'follow_up') {
+        var fn = norm(planOpts[pgi2].option_text);
+        var dup2 = false;
+        for (var fi2 = 0; fi2 < fupItems.length; fi2++) { if (norm(fupItems[fi2]) === fn) { dup2 = true; break; } }
+        if (!dup2) fupItems.push(planOpts[pgi2].option_text);
       }
     }
     var fupSection = fupItems.length ? fupItems.join('\n') : '';
 
+    var invSection = allInvItems.length ? allInvItems.join('\n') : '';
+    var histSection = buildHistorySection(historyDraft, uniqueSymptoms, uniqueNegatives);
     var footer = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
 
     // ---- BUILD DRAFT BY FORMAT ----
+    function section(label, content) {
+      if (!content || content === '[not documented]') return '';
+      return label + ':\n' + content + '\n\n';
+    }
+
     switch (tabId) {
       case 'adv-emr': {
         var emr = 'SHORT EMR NOTE\n' + '='.repeat(40) + '\n\n';
-        emr += 'History:\n' + buildHistorySection(historyDraft, uniqueSymptoms, uniqueNegatives) + '\n\n';
-        emr += 'Examination:\n' + examSection + '\n\n';
-        if (invSection) emr += 'Investigations:\n' + invSection + '\n\n';
-        if (fupSection) emr += 'Follow-up:\n' + fupSection + '\n\n';
-        emr += 'Assessment:\n' + impression + '\n\n';
-        emr += 'Plan:\n' + planSection + footer;
-        return emr;
+        emr += section('History', histSection);
+        emr += section('Examination', examSection);
+        emr += section('Investigations / Results Reviewed', invSection);
+        emr += section('Assessment', impression);
+        emr += section('Plan', planSection);
+        emr += section('Follow-up', fupSection);
+        return emr + footer;
       }
       case 'adv-soap': {
         var soap = 'SOAP NOTE\n' + '='.repeat(40) + '\n\n';
-        soap += 'SUBJECTIVE:\n' + buildHistorySection(historyDraft, uniqueSymptoms, uniqueNegatives) + '\n\n';
+        soap += 'SUBJECTIVE:\n' + histSection + '\n\n';
         soap += 'OBJECTIVE:\n' + examSection + '\n\n';
-        if (invSection) soap += 'Investigations:\n' + invSection + '\n\n';
+        soap += section('Investigations / Results Reviewed', invSection);
         soap += 'ASSESSMENT:\n' + impression + '\n\n';
         soap += 'PLAN:\n' + planSection + '\n';
-        if (fupSection) soap += '\nFollow-up:\n' + fupSection + '\n';
-        soap += footer;
-        return soap;
+        soap += section('Follow-up', fupSection);
+        return soap + footer;
       }
       case 'adv-ref': {
-        return 'REFERRAL DRAFT\n' + '='.repeat(40) + '\n\n' +
-          'Reason for referral:\n' + historyDraft + '\n\n' +
-          'Clinical history:\n' + buildHistorySection(historyDraft, uniqueSymptoms, uniqueNegatives) + '\n\n' +
-          'Examination findings:\n' + examSection + '\n\n' +
-          (invSection ? 'Investigations:\n' + invSection + '\n\n' : '') +
-          'Current impression:\n' + impression + '\n\n' +
-          'Plan / recommendations:\n' + planSection + '\n' +
-          (fupSection ? '\nFollow-up:\n' + fupSection + '\n' : '') +
-          '\nPlease see and advise.\n' + footer;
+        var ref = 'REFERRAL DRAFT\n' + '='.repeat(40) + '\n\n';
+        ref += section('Reason for referral', historyDraft);
+        ref += section('Clinical history', histSection);
+        ref += section('Examination findings', examSection);
+        ref += section('Investigations', invSection);
+        ref += section('Current impression', impression);
+        ref += section('Plan / recommendations', planSection);
+        ref += section('Follow-up', fupSection);
+        ref += 'Please see and advise.\n';
+        return ref + footer;
       }
       case 'adv-inst': {
+        // Patient instructions: ONLY plan content, no history/exam/investigations
         var instLines = [];
-        // Only include patient-facing plan options
         if (plan && plan.plan_option_groups) {
           for (var pgi3 = 0; pgi3 < plan.plan_option_groups.length; pgi3++) {
             var pg3 = plan.plan_option_groups[pgi3];
-            for (var poi3 = 0; poi3 < pg3.options.length; poi3++) {
-              var opt3 = pg3.options[poi3];
+            for (var poi4 = 0; poi4 < pg3.options.length; poi4++) {
+              var opt3 = pg3.options[poi4];
               if (state.planConfirmations[opt3.option_id]) {
-                var cat = opt3.option_category || '';
+                var cat = (opt3.option_category || '').toLowerCase();
                 if (cat.indexOf('patient_instruction') >= 0 || cat.indexOf('safety_netting') >= 0 || cat.indexOf('follow_up') >= 0 || cat.indexOf('lifestyle') >= 0 || cat.indexOf('counseling') >= 0) {
                   instLines.push(opt3.option_text);
                 }
@@ -809,8 +836,7 @@
         var instSection = instLines.length ? instLines.join('\n') : '[not documented]';
 
         return 'PATIENT INSTRUCTIONS\n' + '='.repeat(40) + '\n\n' +
-          'Assessment:\n' + impression + '\n\n' +
-          'Plan / Advice:\n' + instSection + '\n\n' +
+          'Advice / plan discussed:\n' + instSection + '\n\n' +
           'Review with your clinician. Seek medical attention if symptoms worsen.\n' + footer;
       }
       default:
@@ -819,9 +845,10 @@
   }
 
   function buildHistorySection(historyDraft, symptoms, negatives) {
-    var parts = [historyDraft];
-    if (symptoms.length) parts.push('Symptoms: ' + symptoms.join('; '));
-    if (negatives.length) parts.push('Relevant negatives: ' + negatives.join('; '));
+    var parts = [];
+    if (historyDraft) parts.push(historyDraft);
+    if (symptoms && symptoms.length) parts.push('Symptoms: ' + symptoms.join('; '));
+    if (negatives && negatives.length) parts.push('Relevant negatives: ' + negatives.join('; '));
     return parts.join('\n\n');
   }
 

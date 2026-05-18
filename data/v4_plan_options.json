@@ -5,25 +5,58 @@
     "plan_option_groups": [
       {
         "group_id": "supportive_care",
-        "group_label": "Supportive care documentation",
+        "group_label": "Supportive care",
         "options": [
           {
             "option_id": "gp_fever_urti_supportive_advice",
-            "option_text": "Supportive care advice documented if discussed by clinician.",
+            "option_text": "Supportive care advice documented if discussed.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
             "safety_note": "Documentation option only. Use only if confirmed by the clinician."
           },
           {
             "option_id": "gp_fever_urti_hydration_rest",
-            "option_text": "Hydration and rest advice documented if discussed by clinician.",
+            "option_text": "Hydration and rest advice documented if discussed.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
             "safety_note": "Documentation option only. Use only if confirmed by the clinician."
+          },
+          {
+            "option_id": "gp_fever_urti_salt_gargle",
+            "option_text": "Salt water gargle/rinse advice documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4E2.",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician."
+          }
+        ]
+      },
+      {
+        "group_id": "medication_plan",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_antipyretic",
+            "option_text": "Antipyretic plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4E2.",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Medication choice and dosing by clinician."
+          },
+          {
+            "option_id": "gp_fever_urti_antibiotic",
+            "option_text": "Antibiotic plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4E2.",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if decided by the clinician."
           }
         ]
       },
@@ -33,12 +66,12 @@
         "options": [
           {
             "option_id": "gp_fever_urti_return_precautions",
-            "option_text": "Return precautions documented if discussed by clinician.",
+            "option_text": "Return precautions documented if discussed.",
             "option_category": "safety_netting",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Safety netting documentation only. Use only if discussed by the clinician."
+            "safety_note": "Safety netting documentation only. Use only if discussed."
           }
         ]
       },
@@ -48,27 +81,12 @@
         "options": [
           {
             "option_id": "gp_fever_urti_follow_up",
-            "option_text": "Follow-up plan documented if arranged by clinician.",
+            "option_text": "Follow-up arranged documented if clinician decided.",
             "option_category": "follow_up",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Follow-up documentation only. Use only if arranged by the clinician."
-          }
-        ]
-      },
-      {
-        "group_id": "investigation_referral",
-        "group_label": "Investigation and referral",
-        "options": [
-          {
-            "option_id": "gp_fever_urti_investigation_referral",
-            "option_text": "Investigation or referral documented only if decided by clinician.",
-            "option_category": "investigation_documentation",
-            "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
-            "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if decided by the clinician."
+            "safety_note": "Follow-up documentation only. Use only if arranged."
           }
         ]
       }
@@ -81,77 +99,83 @@
     "workflow_display_name": "GP Diabetes Follow-Up",
     "plan_option_groups": [
       {
-        "group_id": "medication_adherence",
-        "group_label": "Medication adherence",
+        "group_id": "medication",
+        "group_label": "Medication",
         "options": [
           {
             "option_id": "gp_diabetes_medication_adherence",
-            "option_text": "Medication adherence discussed documented if discussed by clinician.",
+            "option_text": "Medication adherence discussed documented if discussed.",
             "option_category": "medication_review_documentation",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if confirmed by the clinician."
+            "safety_note": "Documentation option only. Use only if discussed."
+          },
+          {
+            "option_id": "gp_diabetes_medication_adjustment",
+            "option_text": "Medication adjustment documented if clinician decided.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4E2.",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Medication adjustments by clinician only."
           }
         ]
       },
       {
         "group_id": "lifestyle",
-        "group_label": "Lifestyle documentation",
+        "group_label": "Lifestyle",
         "options": [
           {
             "option_id": "gp_diabetes_lifestyle_advice",
-            "option_text": "Lifestyle advice documented if discussed by clinician.",
+            "option_text": "Lifestyle advice documented if discussed.",
             "option_category": "lifestyle_documentation",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if confirmed by the clinician."
-          }
-        ]
-      },
-      {
-        "group_id": "glucose_monitoring",
-        "group_label": "Glucose monitoring",
-        "options": [
+            "safety_note": "Documentation option only. Use only if discussed."
+          },
           {
             "option_id": "gp_diabetes_glucose_monitoring",
-            "option_text": "Glucose monitoring plan documented if discussed by clinician.",
+            "option_text": "Glucose monitoring plan documented if discussed.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if discussed by the clinician."
+            "safety_note": "Monitoring advice only. Use only if discussed."
           }
         ]
       },
       {
-        "group_id": "follow_up",
-        "group_label": "Follow-up and review",
+        "group_id": "follow_up_referral",
+        "group_label": "Follow-up and referral",
         "options": [
           {
             "option_id": "gp_diabetes_lab_follow_up",
-            "option_text": "Lab review and follow-up documented if arranged by clinician.",
+            "option_text": "Lab follow-up documented if arranged.",
             "option_category": "follow_up",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Follow-up documentation only. Use only if arranged by the clinician."
-          }
-        ]
-      },
-      {
-        "group_id": "investigation_referral",
-        "group_label": "Investigation and referral",
-        "options": [
+            "safety_note": "Follow-up documentation only."
+          },
           {
             "option_id": "gp_diabetes_referral",
-            "option_text": "Referral or investigation documented only if decided by clinician.",
+            "option_text": "Referral documented if clinician arranged.",
             "option_category": "referral_documentation",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if decided by the clinician."
+            "safety_note": "Referral documentation only. Use only if arranged."
+          },
+          {
+            "option_id": "gp_diabetes_follow_up",
+            "option_text": "Follow-up arranged documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4E2.",
+            "clinician_confirmation_required": true,
+            "safety_note": "Follow-up documentation only."
           }
         ]
       }
@@ -168,13 +192,13 @@
         "group_label": "Activity advice",
         "options": [
           {
-            "option_id": "msk_lbp_activity_advice",
-            "option_text": "Activity advice documented if discussed by clinician.",
+            "option_id": "msk_lbp_activity_modification",
+            "option_text": "Activity modification documented if discussed.",
             "option_category": "counseling",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if confirmed by the clinician."
+            "safety_note": "Advice only. Use only if discussed."
           }
         ]
       },
@@ -184,57 +208,57 @@
         "options": [
           {
             "option_id": "msk_lbp_analgesia_plan",
-            "option_text": "Analgesia plan documented if decided by clinician.",
+            "option_text": "Analgesia plan documented if clinician decided.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if decided by the clinician."
+            "safety_note": "Medication choice and dosing by clinician. Documentation only."
           }
         ]
       },
       {
-        "group_id": "physiotherapy_referral",
+        "group_id": "physiotherapy",
         "group_label": "Physiotherapy and referral",
         "options": [
           {
-            "option_id": "msk_lbp_physiotherapy_referral",
-            "option_text": "Physiotherapy or specialist referral documented if decided by clinician.",
+            "option_id": "msk_lbp_physiotherapy",
+            "option_text": "Physiotherapy referral documented if arranged.",
             "option_category": "referral_documentation",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Referral documentation only. Use only if decided by the clinician."
+            "safety_note": "Referral documentation only. Use only if arranged."
           }
         ]
       },
       {
         "group_id": "imaging",
-        "group_label": "Imaging discussion",
+        "group_label": "Imaging",
         "options": [
           {
-            "option_id": "msk_lbp_imaging_discussion",
-            "option_text": "Imaging discussion documented if discussed by clinician.",
+            "option_id": "msk_lbp_imaging",
+            "option_text": "Imaging discussed or documented if clinician decided.",
             "option_category": "investigation_documentation",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Investigation documentation only. Use only if discussed by the clinician."
+            "safety_note": "Imaging documentation only."
           }
         ]
       },
       {
-        "group_id": "red_flags_safety",
-        "group_label": "Red flags and safety netting",
+        "group_id": "safety_netting",
+        "group_label": "Safety netting",
         "options": [
           {
-            "option_id": "msk_lbp_red_flags_explained",
-            "option_text": "Red flags explained documented if discussed by clinician.",
+            "option_id": "msk_lbp_red_flags",
+            "option_text": "Red flags explained documented if discussed.",
             "option_category": "safety_netting",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Safety netting documentation only. Use only if discussed by the clinician."
+            "safety_note": "Safety netting only. Use only if discussed."
           }
         ]
       },
@@ -244,12 +268,12 @@
         "options": [
           {
             "option_id": "msk_lbp_follow_up",
-            "option_text": "Follow-up plan documented if arranged by clinician.",
+            "option_text": "Follow-up arranged documented if clinician decided.",
             "option_category": "follow_up",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Follow-up documentation only. Use only if arranged by the clinician."
+            "safety_note": "Follow-up documentation only."
           }
         ]
       }
@@ -263,25 +287,49 @@
     "plan_option_groups": [
       {
         "group_id": "parent_advice",
-        "group_label": "Parent or guardian advice",
+        "group_label": "Parent advice",
         "options": [
           {
             "option_id": "peds_fever_parent_advice",
-            "option_text": "Parent or guardian advice documented if discussed by clinician.",
+            "option_text": "Parent or guardian advice documented if discussed.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if confirmed by the clinician."
+            "safety_note": "Advice only. Use only if discussed."
           },
           {
             "option_id": "peds_fever_hydration_feeding",
-            "option_text": "Hydration and feeding advice documented if discussed by clinician.",
+            "option_text": "Hydration and feeding advice documented if discussed.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if confirmed by the clinician."
+            "safety_note": "Advice only. Use only if discussed."
+          }
+        ]
+      },
+      {
+        "group_id": "medication_plan",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "peds_fever_antipyretic",
+            "option_text": "Antipyretic plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4E2.",
+            "clinician_confirmation_required": true,
+            "safety_note": "Medication choice and dosing by clinician."
+          },
+          {
+            "option_id": "peds_fever_antibiotic",
+            "option_text": "Antibiotic plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4E2.",
+            "clinician_confirmation_required": true,
+            "safety_note": "Antibiotic use by clinician decision only."
           }
         ]
       },
@@ -291,12 +339,12 @@
         "options": [
           {
             "option_id": "peds_fever_return_precautions",
-            "option_text": "Return precautions documented if discussed by clinician.",
+            "option_text": "Return precautions documented if discussed.",
             "option_category": "safety_netting",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Safety netting documentation only. Use only if discussed by the clinician."
+            "safety_note": "Safety netting only. Use only if discussed."
           }
         ]
       },
@@ -306,27 +354,12 @@
         "options": [
           {
             "option_id": "peds_fever_follow_up",
-            "option_text": "Follow-up plan documented if arranged by clinician.",
+            "option_text": "Follow-up arranged documented if clinician decided.",
             "option_category": "follow_up",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Follow-up documentation only. Use only if arranged by the clinician."
-          }
-        ]
-      },
-      {
-        "group_id": "investigation_referral",
-        "group_label": "Investigation and referral",
-        "options": [
-          {
-            "option_id": "peds_fever_investigation_referral",
-            "option_text": "Investigation or referral documented only if decided by clinician.",
-            "option_category": "investigation_documentation",
-            "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
-            "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if decided by the clinician."
+            "safety_note": "Follow-up documentation only."
           }
         ]
       }
@@ -339,32 +372,71 @@
     "workflow_display_name": "OBGYN Antenatal Follow-Up",
     "plan_option_groups": [
       {
-        "group_id": "antenatal_counseling",
-        "group_label": "Antenatal counseling",
+        "group_id": "counseling",
+        "group_label": "Counseling",
         "options": [
           {
             "option_id": "obgyn_antenatal_counseling",
-            "option_text": "Antenatal counseling documented if discussed by clinician.",
+            "option_text": "Antenatal counseling documented if discussed.",
             "option_category": "counseling",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if confirmed by the clinician."
+            "safety_note": "Counseling documentation only. Use only if discussed."
+          },
+          {
+            "option_id": "obgyn_antenatal_warning_symptoms",
+            "option_text": "Warning symptoms documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4E2.",
+            "clinician_confirmation_required": true,
+            "safety_note": "Safety netting only. Use only if discussed."
           }
         ]
       },
       {
-        "group_id": "safety_netting",
-        "group_label": "Warning symptoms",
+        "group_id": "medication",
+        "group_label": "Medication and supplements",
         "options": [
           {
-            "option_id": "obgyn_antenatal_warning_symptoms",
-            "option_text": "Warning symptoms discussed documented if discussed by clinician.",
-            "option_category": "safety_netting",
+            "option_id": "obgyn_antenatal_medication",
+            "option_text": "Medication or supplement plan documented if clinician decided.",
+            "option_category": "medication_review_documentation",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Safety netting documentation only. Use only if discussed by the clinician."
+            "safety_note": "Supplement/medication documentation only. Dosing by clinician."
+          }
+        ]
+      },
+      {
+        "group_id": "investigations",
+        "group_label": "Investigations",
+        "options": [
+          {
+            "option_id": "obgyn_antenatal_investigations",
+            "option_text": "Investigations reviewed or discussed documented if clinician did so.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4E2.",
+            "clinician_confirmation_required": true,
+            "safety_note": "Investigation documentation only."
+          }
+        ]
+      },
+      {
+        "group_id": "referral",
+        "group_label": "Referral and escalation",
+        "options": [
+          {
+            "option_id": "obgyn_antenatal_referral",
+            "option_text": "Referral or escalation documented only if clinician decided.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4E2.",
+            "clinician_confirmation_required": true,
+            "safety_note": "Referral documentation only. Use only if decided."
           }
         ]
       },
@@ -374,42 +446,12 @@
         "options": [
           {
             "option_id": "obgyn_antenatal_follow_up",
-            "option_text": "Follow-up visit documented if arranged by clinician.",
+            "option_text": "Follow-up arranged documented if clinician decided.",
             "option_category": "follow_up",
             "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
+            "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Follow-up documentation only. Use only if arranged by the clinician."
-          }
-        ]
-      },
-      {
-        "group_id": "investigations",
-        "group_label": "Investigations reviewed",
-        "options": [
-          {
-            "option_id": "obgyn_antenatal_investigations",
-            "option_text": "Investigations reviewed or discussed documented if clinician did so.",
-            "option_category": "investigation_documentation",
-            "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
-            "clinician_confirmation_required": true,
-            "safety_note": "Investigation documentation only. Use only if reviewed by the clinician."
-          }
-        ]
-      },
-      {
-        "group_id": "referral_escalation",
-        "group_label": "Referral and escalation",
-        "options": [
-          {
-            "option_id": "obgyn_antenatal_referral",
-            "option_text": "Referral or escalation documented only if decided by clinician.",
-            "option_category": "referral_documentation",
-            "source_status": "draft",
-            "source_reference": "V4C prototype draft.",
-            "clinician_confirmation_required": true,
-            "safety_note": "Referral documentation only. Use only if decided by the clinician."
+            "safety_note": "Follow-up documentation only."
           }
         ]
       }
