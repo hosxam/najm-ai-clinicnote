@@ -1,6 +1,6 @@
 // GENERATED_CLINICAL_DATA.js — Najm AI ClinicNote
 // Auto-generated. Do not edit manually.
-// Generated: 2026-05-19 13:26:03
+// Generated: 2026-05-19 13:29:55
 // Source: /data JSON files (validated)
 
 (function() {
@@ -42,7 +42,7 @@
   var data = {
   "metadata": {
     "version": "v2",
-    "generated_at": "2026-05-19 13:26:03",
+    "generated_at": "2026-05-19 13:29:55",
     "source": "validated_json_dataset (data/ CSVs -> JSON, commit 262c021)",
     "warning": "Documentation support only. Clinician review required.",
     "description": "Najm AI ClinicNote clinical data bundle. Built from /data JSON files."
@@ -50,17 +50,17 @@
   "stats": {
     "specialty_count": 8,
     "workflow_count": 90,
-    "chip_count": 3282,
+    "chip_count": 3285,
     "diagnosis_index_count": 361,
     "report_template_count": 7,
     "history_layout_count": 8,
     "chip_group_counts": {
-      "symptoms": 877,
-      "relevant_negatives": 455,
-      "exam_findings": 571,
-      "red_flags": 500,
-      "investigations": 127,
-      "plan_phrases": 509,
+      "symptoms": 878,
+      "relevant_negatives": 456,
+      "exam_findings": 573,
+      "red_flags": 502,
+      "investigations": 125,
+      "plan_phrases": 508,
       "follow_up": 243
     },
     "workflow_chip_min": 21,
@@ -50151,14 +50151,14 @@
       },
       "chip_counts": {
         "symptoms": 8,
-        "relevant_negatives": 5,
-        "exam_findings": 5,
-        "red_flags": 5,
+        "relevant_negatives": 6,
+        "exam_findings": 6,
+        "red_flags": 6,
         "investigations": 5,
         "plan_phrases": 5,
         "follow_up": 3
       },
-      "total_chips": 36,
+      "total_chips": 39,
       "chips": {
         "symptoms": [
           {
@@ -50166,11 +50166,10 @@
             "chip_text": "abdominal pain",
             "order": 1,
             "search_terms": [
-              "abdominal",
-              "pain"
+              "abdominal"
             ],
             "tags": [
-              "urgent_care"
+              "pain"
             ]
           },
           {
@@ -50178,11 +50177,10 @@
             "chip_text": "location documented",
             "order": 2,
             "search_terms": [
-              "location",
-              "documented"
+              "location"
             ],
             "tags": [
-              "urgent_care"
+              "documented"
             ]
           },
           {
@@ -50190,11 +50188,10 @@
             "chip_text": "duration documented",
             "order": 3,
             "search_terms": [
-              "duration",
-              "documented"
+              "duration"
             ],
             "tags": [
-              "urgent_care"
+              "documented"
             ]
           },
           {
@@ -50202,12 +50199,10 @@
             "chip_text": "nausea or vomiting",
             "order": 4,
             "search_terms": [
-              "nausea",
-              "or",
-              "vomiting"
+              "nausea"
             ],
             "tags": [
-              "urgent_care"
+              "or"
             ]
           },
           {
@@ -50215,12 +50210,10 @@
             "chip_text": "diarrhea or constipation",
             "order": 5,
             "search_terms": [
-              "diarrhea",
-              "or",
-              "constipation"
+              "diarrhea"
             ],
             "tags": [
-              "urgent_care"
+              "or"
             ]
           },
           {
@@ -50228,12 +50221,10 @@
             "chip_text": "urinary symptoms reviewed",
             "order": 6,
             "search_terms": [
-              "urinary",
-              "symptoms",
-              "reviewed"
+              "urinary"
             ],
             "tags": [
-              "urgent_care"
+              "symptoms"
             ]
           },
           {
@@ -50241,11 +50232,10 @@
             "chip_text": "fever reviewed",
             "order": 7,
             "search_terms": [
-              "fever",
-              "reviewed"
+              "fever"
             ],
             "tags": [
-              "urgent_care"
+              "reviewed"
             ]
           },
           {
@@ -50253,12 +50243,10 @@
             "chip_text": "associated symptoms documented",
             "order": 8,
             "search_terms": [
-              "associated",
-              "symptoms",
-              "documented"
+              "associated"
             ],
             "tags": [
-              "urgent_care"
+              "symptoms"
             ]
           }
         ],
@@ -50268,13 +50256,10 @@
             "chip_text": "no blood in stool reported",
             "order": 1,
             "search_terms": [
-              "no",
-              "blood",
-              "in",
-              "stool"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "blood"
             ]
           },
           {
@@ -50282,82 +50267,78 @@
             "chip_text": "no persistent vomiting reported",
             "order": 2,
             "search_terms": [
-              "no",
-              "persistent",
-              "vomiting",
-              "reported"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "persistent"
             ]
           },
           {
             "chip_id": "urgent-abdominal-pain-relevant_negatives-3",
-            "chip_text": "no surgical history",
+            "chip_text": "no severe worsening pain reported",
             "order": 3,
             "search_terms": [
-              "no",
-              "surgical",
-              "history"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "severe"
             ]
           },
           {
             "chip_id": "urgent-abdominal-pain-relevant_negatives-4",
-            "chip_text": "no fever",
+            "chip_text": "no surgical history",
             "order": 4,
             "search_terms": [
-              "no",
-              "fever"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "surgical"
             ]
           },
           {
             "chip_id": "urgent-abdominal-pain-relevant_negatives-5",
-            "chip_text": "no pregnancy if female and relevant",
+            "chip_text": "no fever",
             "order": 5,
             "search_terms": [
-              "no",
-              "pregnancy",
-              "if",
-              "female"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "fever"
+            ]
+          },
+          {
+            "chip_id": "urgent-abdominal-pain-relevant_negatives-6",
+            "chip_text": "no pregnancy if female and relevant",
+            "order": 6,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "pregnancy"
             ]
           }
         ],
         "exam_findings": [
           {
             "chip_id": "urgent-abdominal-pain-exam_findings-1",
-            "chip_text": "abdominal examination documented if assessed",
+            "chip_text": "abdominal tenderness documented if assessed",
             "order": 1,
             "search_terms": [
-              "abdominal",
-              "examination",
-              "documented",
-              "if"
+              "abdominal"
             ],
             "tags": [
-              "urgent_care"
+              "tenderness"
             ]
           },
           {
             "chip_id": "urgent-abdominal-pain-exam_findings-2",
-            "chip_text": "tenderness documented if assessed",
+            "chip_text": "guarding or rebound documented if assessed",
             "order": 2,
             "search_terms": [
-              "tenderness",
-              "documented",
-              "if",
-              "assessed"
+              "guarding"
             ],
             "tags": [
-              "urgent_care"
+              "or"
             ]
           },
           {
@@ -50365,164 +50346,157 @@
             "chip_text": "bowel sounds documented if assessed",
             "order": 3,
             "search_terms": [
-              "bowel",
-              "sounds",
-              "documented",
-              "if"
+              "bowel"
             ],
             "tags": [
-              "urgent_care"
+              "sounds"
             ]
           },
           {
             "chip_id": "urgent-abdominal-pain-exam_findings-4",
-            "chip_text": "vital signs documented if measured",
+            "chip_text": "hydration documented if assessed",
             "order": 4,
             "search_terms": [
-              "vital",
-              "signs",
-              "documented",
-              "if"
+              "hydration"
             ],
             "tags": [
-              "urgent_care"
+              "documented"
             ]
           },
           {
             "chip_id": "urgent-abdominal-pain-exam_findings-5",
-            "chip_text": "general appearance documented if assessed",
+            "chip_text": "vital signs documented if measured",
             "order": 5,
             "search_terms": [
-              "general",
-              "appearance",
-              "documented",
-              "if"
+              "vital"
             ],
             "tags": [
-              "urgent_care"
+              "signs"
+            ]
+          },
+          {
+            "chip_id": "urgent-abdominal-pain-exam_findings-6",
+            "chip_text": "general appearance documented if assessed",
+            "order": 6,
+            "search_terms": [
+              "general"
+            ],
+            "tags": [
+              "appearance"
             ]
           }
         ],
         "red_flags": [
           {
             "chip_id": "urgent-abdominal-pain-red_flags-1",
-            "chip_text": "peritonism or guarding",
+            "chip_text": "severe localized pain",
             "order": 1,
             "search_terms": [
-              "peritonism",
-              "or",
-              "guarding"
+              "severe"
             ],
             "tags": [
-              "urgent_care"
+              "localized"
             ]
           },
           {
             "chip_id": "urgent-abdominal-pain-red_flags-2",
-            "chip_text": "rigid abdomen",
+            "chip_text": "guarding or rebound",
             "order": 2,
             "search_terms": [
-              "rigid",
-              "abdomen"
+              "guarding"
             ],
             "tags": [
-              "urgent_care"
+              "or"
             ]
           },
           {
             "chip_id": "urgent-abdominal-pain-red_flags-3",
-            "chip_text": "hemodynamic instability",
+            "chip_text": "persistent vomiting",
             "order": 3,
             "search_terms": [
-              "hemodynamic",
-              "instability"
+              "persistent"
             ],
             "tags": [
-              "urgent_care"
+              "vomiting"
             ]
           },
           {
             "chip_id": "urgent-abdominal-pain-red_flags-4",
-            "chip_text": "acute surgical abdomen",
+            "chip_text": "GI bleeding",
             "order": 4,
             "search_terms": [
-              "acute",
-              "surgical",
-              "abdomen"
+              "GI"
+            ],
+            "tags": [
+              "bleeding"
+            ]
+          },
+          {
+            "chip_id": "urgent-abdominal-pain-red_flags-5",
+            "chip_text": "syncope",
+            "order": 5,
+            "search_terms": [
+              "syncope"
             ],
             "tags": [
               "urgent_care"
             ]
           },
           {
-            "chip_id": "urgent-abdominal-pain-red_flags-5",
-            "chip_text": "severe uncontrolled pain",
-            "order": 5,
+            "chip_id": "urgent-abdominal-pain-red_flags-6",
+            "chip_text": "hemodynamic instability",
+            "order": 6,
             "search_terms": [
-              "severe",
-              "uncontrolled",
-              "pain"
+              "hemodynamic"
             ],
             "tags": [
-              "urgent_care"
+              "instability"
             ]
           }
         ],
         "investigations": [
           {
             "chip_id": "urgent-abdominal-pain-investigations-1",
-            "chip_text": "blood tests reviewed if ordered",
+            "chip_text": "urinalysis reviewed if done",
             "order": 1,
             "search_terms": [
-              "blood",
-              "tests",
-              "reviewed",
-              "if"
+              "urinalysis"
             ],
             "tags": [
-              "urgent_care"
+              "reviewed"
             ]
           },
           {
             "chip_id": "urgent-abdominal-pain-investigations-2",
-            "chip_text": "imaging reviewed if ordered",
+            "chip_text": "pregnancy test reviewed if relevant and done",
             "order": 2,
             "search_terms": [
-              "imaging",
-              "reviewed",
-              "if",
-              "ordered"
+              "pregnancy"
             ],
             "tags": [
-              "urgent_care"
+              "test"
             ]
           },
           {
             "chip_id": "urgent-abdominal-pain-investigations-3",
-            "chip_text": "urinalysis reviewed if relevant",
+            "chip_text": "blood tests reviewed if ordered",
             "order": 3,
             "search_terms": [
-              "urinalysis",
-              "reviewed",
-              "if",
-              "relevant"
+              "blood"
             ],
             "tags": [
-              "urgent_care"
+              "tests"
             ]
           },
           {
             "chip_id": "urgent-abdominal-pain-investigations-4",
-            "chip_text": "pregnancy test documented if relevant",
+            "chip_text": "imaging reviewed if available",
             "order": 4,
             "search_terms": [
-              "pregnancy",
-              "test",
-              "documented",
-              "if"
+              "imaging"
             ],
             "tags": [
-              "urgent_care"
+              "reviewed"
             ]
           },
           {
@@ -50530,13 +50504,10 @@
             "chip_text": "previous records reviewed if available",
             "order": 5,
             "search_terms": [
-              "previous",
-              "records",
-              "reviewed",
-              "if"
+              "previous"
             ],
             "tags": [
-              "urgent_care"
+              "records"
             ]
           }
         ],
@@ -50546,13 +50517,10 @@
             "chip_text": "analgesia plan documented if clinician decided",
             "order": 1,
             "search_terms": [
-              "analgesia",
-              "plan",
-              "documented",
-              "if"
+              "analgesia"
             ],
             "tags": [
-              "urgent_care"
+              "plan"
             ]
           },
           {
@@ -50560,13 +50528,10 @@
             "chip_text": "dietary advice documented if discussed",
             "order": 2,
             "search_terms": [
-              "dietary",
-              "advice",
-              "documented",
-              "if"
+              "dietary"
             ],
             "tags": [
-              "urgent_care"
+              "advice"
             ]
           },
           {
@@ -50574,13 +50539,10 @@
             "chip_text": "return precautions documented if discussed",
             "order": 3,
             "search_terms": [
-              "return",
-              "precautions",
-              "documented",
-              "if"
+              "return"
             ],
             "tags": [
-              "urgent_care"
+              "precautions"
             ]
           },
           {
@@ -50588,13 +50550,10 @@
             "chip_text": "referral or escalation documented if clinician decided",
             "order": 4,
             "search_terms": [
-              "referral",
-              "or",
-              "escalation",
-              "documented"
+              "referral"
             ],
             "tags": [
-              "urgent_care"
+              "or"
             ]
           },
           {
@@ -50602,13 +50561,10 @@
             "chip_text": "investigation plan documented if clinician decided",
             "order": 5,
             "search_terms": [
-              "investigation",
-              "plan",
-              "documented",
-              "if"
+              "investigation"
             ],
             "tags": [
-              "urgent_care"
+              "plan"
             ]
           }
         ],
@@ -50618,13 +50574,10 @@
             "chip_text": "follow-up in 1-2 days if not improving",
             "order": 1,
             "search_terms": [
-              "follow-up",
-              "in",
-              "1-2",
-              "days"
+              "follow-up"
             ],
             "tags": [
-              "urgent_care"
+              "in"
             ]
           },
           {
@@ -50632,13 +50585,10 @@
             "chip_text": "return sooner if symptoms worsen",
             "order": 2,
             "search_terms": [
-              "return",
-              "sooner",
-              "if",
-              "symptoms"
+              "return"
             ],
             "tags": [
-              "urgent_care"
+              "sooner"
             ]
           },
           {
@@ -50646,13 +50596,10 @@
             "chip_text": "surgical follow-up documented if arranged",
             "order": 3,
             "search_terms": [
-              "surgical",
-              "follow-up",
-              "documented",
-              "if"
+              "surgical"
             ],
             "tags": [
-              "urgent_care"
+              "follow-up"
             ]
           }
         ]
@@ -50714,162 +50661,144 @@
         "exam_findings": 5,
         "red_flags": 5,
         "investigations": 4,
-        "plan_phrases": 5,
+        "plan_phrases": 4,
         "follow_up": 3
       },
-      "total_chips": 34,
+      "total_chips": 33,
       "chips": {
         "symptoms": [
           {
             "chip_id": "urgent-syncope-symptoms-1",
-            "chip_text": "syncope",
+            "chip_text": "syncope or collapse",
             "order": 1,
             "search_terms": [
               "syncope"
             ],
             "tags": [
-              "urgent_care"
+              "or"
             ]
           },
           {
             "chip_id": "urgent-syncope-symptoms-2",
-            "chip_text": "fainting",
+            "chip_text": "prodrome documented",
             "order": 2,
             "search_terms": [
-              "fainting"
+              "prodrome"
             ],
             "tags": [
-              "urgent_care"
+              "documented"
             ]
           },
           {
             "chip_id": "urgent-syncope-symptoms-3",
-            "chip_text": "collapse",
+            "chip_text": "position documented",
             "order": 3,
             "search_terms": [
-              "collapse"
+              "position"
             ],
             "tags": [
-              "urgent_care"
+              "documented"
             ]
           },
           {
             "chip_id": "urgent-syncope-symptoms-4",
-            "chip_text": "pre-syncope",
+            "chip_text": "duration of loss of consciousness documented if known",
             "order": 4,
             "search_terms": [
-              "pre-syncope"
+              "duration"
             ],
             "tags": [
-              "urgent_care"
+              "of"
             ]
           },
           {
             "chip_id": "urgent-syncope-symptoms-5",
-            "chip_text": "prodrome documented if reported",
+            "chip_text": "witnessed event documented if available",
             "order": 5,
             "search_terms": [
-              "prodrome",
-              "documented",
-              "if",
-              "reported"
+              "witnessed"
             ],
             "tags": [
-              "urgent_care"
+              "event"
             ]
           },
           {
             "chip_id": "urgent-syncope-symptoms-6",
-            "chip_text": "witness account documented if available",
+            "chip_text": "seizure-like activity reviewed",
             "order": 6,
             "search_terms": [
-              "witness",
-              "account",
-              "documented",
-              "if"
+              "seizure-like"
             ],
             "tags": [
-              "urgent_care"
+              "activity"
             ]
           },
           {
             "chip_id": "urgent-syncope-symptoms-7",
-            "chip_text": "event count documented",
+            "chip_text": "palpitations or chest pain or SOB reviewed",
             "order": 7,
             "search_terms": [
-              "event",
-              "count",
-              "documented"
+              "palpitations"
             ],
             "tags": [
-              "urgent_care"
+              "or"
             ]
           }
         ],
         "relevant_negatives": [
           {
             "chip_id": "urgent-syncope-relevant_negatives-1",
-            "chip_text": "no chest pain",
+            "chip_text": "no chest pain reported",
             "order": 1,
             "search_terms": [
-              "no",
-              "chest",
-              "pain"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "chest"
             ]
           },
           {
             "chip_id": "urgent-syncope-relevant_negatives-2",
-            "chip_text": "no palpitations",
+            "chip_text": "no focal neurological symptoms reported",
             "order": 2,
             "search_terms": [
-              "no",
-              "palpitations"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "focal"
             ]
           },
           {
             "chip_id": "urgent-syncope-relevant_negatives-3",
-            "chip_text": "no seizure activity",
+            "chip_text": "no palpitations",
             "order": 3,
             "search_terms": [
-              "no",
-              "seizure",
-              "activity"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "palpitations"
             ]
           },
           {
             "chip_id": "urgent-syncope-relevant_negatives-4",
-            "chip_text": "no head injury",
+            "chip_text": "no seizure activity",
             "order": 4,
             "search_terms": [
-              "no",
-              "head",
-              "injury"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "seizure"
             ]
           },
           {
             "chip_id": "urgent-syncope-relevant_negatives-5",
-            "chip_text": "no loss of bowel or bladder control",
+            "chip_text": "no head injury",
             "order": 5,
             "search_terms": [
-              "no",
-              "loss",
-              "of",
-              "bowel"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "head"
             ]
           }
         ],
@@ -50879,55 +50808,43 @@
             "chip_text": "vital signs documented if measured",
             "order": 1,
             "search_terms": [
-              "vital",
-              "signs",
-              "documented",
-              "if"
+              "vital"
             ],
             "tags": [
-              "urgent_care"
+              "signs"
             ]
           },
           {
             "chip_id": "urgent-syncope-exam_findings-2",
-            "chip_text": "postural blood pressure documented if measured",
+            "chip_text": "orthostatic BP documented if measured",
             "order": 2,
             "search_terms": [
-              "postural",
-              "blood",
-              "pressure",
-              "documented"
+              "orthostatic"
             ],
             "tags": [
-              "urgent_care"
+              "BP"
             ]
           },
           {
             "chip_id": "urgent-syncope-exam_findings-3",
-            "chip_text": "heart auscultation documented if assessed",
+            "chip_text": "cardiovascular exam documented if assessed",
             "order": 3,
             "search_terms": [
-              "heart",
-              "auscultation",
-              "documented",
-              "if"
+              "cardiovascular"
             ],
             "tags": [
-              "urgent_care"
+              "exam"
             ]
           },
           {
             "chip_id": "urgent-syncope-exam_findings-4",
-            "chip_text": "neurological examination documented if assessed",
+            "chip_text": "neurological screen documented if assessed",
             "order": 4,
             "search_terms": [
-              "neurological",
-              "examination",
-              "documented",
-              "if"
+              "neurological"
             ],
             "tags": [
-              "urgent_care"
+              "screen"
             ]
           },
           {
@@ -50935,13 +50852,10 @@
             "chip_text": "general appearance documented if assessed",
             "order": 5,
             "search_terms": [
-              "general",
-              "appearance",
-              "documented",
-              "if"
+              "general"
             ],
             "tags": [
-              "urgent_care"
+              "appearance"
             ]
           }
         ],
@@ -50951,35 +50865,29 @@
             "chip_text": "exertional syncope",
             "order": 1,
             "search_terms": [
-              "exertional",
-              "syncope"
+              "exertional"
             ],
             "tags": [
-              "urgent_care"
+              "syncope"
             ]
           },
           {
             "chip_id": "urgent-syncope-red_flags-2",
-            "chip_text": "family history of sudden cardiac death",
+            "chip_text": "chest pain",
             "order": 2,
             "search_terms": [
-              "family",
-              "history",
-              "of",
-              "sudden"
+              "chest"
             ],
             "tags": [
-              "urgent_care"
+              "pain"
             ]
           },
           {
             "chip_id": "urgent-syncope-red_flags-3",
-            "chip_text": "new neurological findings",
+            "chip_text": "palpitations",
             "order": 3,
             "search_terms": [
-              "new",
-              "neurological",
-              "findings"
+              "palpitations"
             ],
             "tags": [
               "urgent_care"
@@ -50987,29 +50895,24 @@
           },
           {
             "chip_id": "urgent-syncope-red_flags-4",
-            "chip_text": "chest pain with syncope",
+            "chip_text": "family history sudden death",
             "order": 4,
             "search_terms": [
-              "chest",
-              "pain",
-              "with",
-              "syncope"
+              "family"
             ],
             "tags": [
-              "urgent_care"
+              "history"
             ]
           },
           {
             "chip_id": "urgent-syncope-red_flags-5",
-            "chip_text": "palpitations preceding syncope",
+            "chip_text": "neurological deficit",
             "order": 5,
             "search_terms": [
-              "palpitations",
-              "preceding",
-              "syncope"
+              "neurological"
             ],
             "tags": [
-              "urgent_care"
+              "deficit"
             ]
           }
         ],
@@ -51019,41 +50922,32 @@
             "chip_text": "ECG reviewed if performed",
             "order": 1,
             "search_terms": [
-              "ECG",
-              "reviewed",
-              "if",
-              "performed"
+              "ECG"
             ],
             "tags": [
-              "urgent_care"
+              "reviewed"
             ]
           },
           {
             "chip_id": "urgent-syncope-investigations-2",
-            "chip_text": "blood tests reviewed if ordered",
+            "chip_text": "glucose checked if performed",
             "order": 2,
             "search_terms": [
-              "blood",
-              "tests",
-              "reviewed",
-              "if"
+              "glucose"
             ],
             "tags": [
-              "urgent_care"
+              "checked"
             ]
           },
           {
             "chip_id": "urgent-syncope-investigations-3",
-            "chip_text": "cardiac monitoring documented if arranged",
+            "chip_text": "blood tests reviewed if ordered",
             "order": 3,
             "search_terms": [
-              "cardiac",
-              "monitoring",
-              "documented",
-              "if"
+              "blood"
             ],
             "tags": [
-              "urgent_care"
+              "tests"
             ]
           },
           {
@@ -51061,13 +50955,10 @@
             "chip_text": "previous records reviewed if available",
             "order": 4,
             "search_terms": [
-              "previous",
-              "records",
-              "reviewed",
-              "if"
+              "previous"
             ],
             "tags": [
-              "urgent_care"
+              "records"
             ]
           }
         ],
@@ -51077,69 +50968,43 @@
             "chip_text": "syncope advice documented if discussed",
             "order": 1,
             "search_terms": [
-              "syncope",
-              "advice",
-              "documented",
-              "if"
+              "syncope"
             ],
             "tags": [
-              "urgent_care"
+              "advice"
             ]
           },
           {
             "chip_id": "urgent-syncope-plan_phrases-2",
-            "chip_text": "driving advice documented if discussed",
+            "chip_text": "return precautions documented if discussed",
             "order": 2,
             "search_terms": [
-              "driving",
-              "advice",
-              "documented",
-              "if"
+              "return"
             ],
             "tags": [
-              "urgent_care"
+              "precautions"
             ]
           },
           {
             "chip_id": "urgent-syncope-plan_phrases-3",
-            "chip_text": "return precautions documented if discussed",
+            "chip_text": "referral or escalation documented if clinician decided",
             "order": 3,
             "search_terms": [
-              "return",
-              "precautions",
-              "documented",
-              "if"
+              "referral"
             ],
             "tags": [
-              "urgent_care"
+              "or"
             ]
           },
           {
             "chip_id": "urgent-syncope-plan_phrases-4",
-            "chip_text": "referral or escalation documented if clinician decided",
+            "chip_text": "investigation plan documented if clinician decided",
             "order": 4,
             "search_terms": [
-              "referral",
-              "or",
-              "escalation",
-              "documented"
+              "investigation"
             ],
             "tags": [
-              "urgent_care"
-            ]
-          },
-          {
-            "chip_id": "urgent-syncope-plan_phrases-5",
-            "chip_text": "investigation plan documented if clinician decided",
-            "order": 5,
-            "search_terms": [
-              "investigation",
-              "plan",
-              "documented",
-              "if"
-            ],
-            "tags": [
-              "urgent_care"
+              "plan"
             ]
           }
         ],
@@ -51149,13 +51014,10 @@
             "chip_text": "follow-up in 1 week if arranged",
             "order": 1,
             "search_terms": [
-              "follow-up",
-              "in",
-              "1",
-              "week"
+              "follow-up"
             ],
             "tags": [
-              "urgent_care"
+              "in"
             ]
           },
           {
@@ -51163,13 +51025,10 @@
             "chip_text": "return sooner if recurrent syncope",
             "order": 2,
             "search_terms": [
-              "return",
-              "sooner",
-              "if",
-              "recurrent"
+              "return"
             ],
             "tags": [
-              "urgent_care"
+              "sooner"
             ]
           },
           {
@@ -51177,13 +51036,10 @@
             "chip_text": "cardiology follow-up documented if arranged",
             "order": 3,
             "search_terms": [
-              "cardiology",
-              "follow-up",
-              "documented",
-              "if"
+              "cardiology"
             ],
             "tags": [
-              "urgent_care"
+              "follow-up"
             ]
           }
         ]
@@ -51243,15 +51099,15 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 6,
+        "symptoms": 7,
         "relevant_negatives": 5,
-        "exam_findings": 6,
-        "red_flags": 6,
-        "investigations": 7,
+        "exam_findings": 7,
+        "red_flags": 7,
+        "investigations": 5,
         "plan_phrases": 6,
         "follow_up": 3
       },
-      "total_chips": 39,
+      "total_chips": 40,
       "chips": {
         "symptoms": [
           {
@@ -51267,120 +51123,114 @@
           },
           {
             "chip_id": "urgent-fever-suspected-infection-symptoms-2",
-            "chip_text": "chills or rigors",
+            "chip_text": "suspected infection documentation",
             "order": 2,
             "search_terms": [
-              "chills",
-              "or",
-              "rigors"
+              "suspected"
             ],
             "tags": [
-              "urgent_care"
+              "infection"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-symptoms-3",
-            "chip_text": "suspected infection source",
+            "chip_text": "source symptoms reviewed",
             "order": 3,
             "search_terms": [
-              "suspected",
-              "infection",
               "source"
             ],
             "tags": [
-              "urgent_care"
+              "symptoms"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-symptoms-4",
-            "chip_text": "duration documented",
+            "chip_text": "cough or sore throat or urinary or GI or skin symptoms reviewed",
             "order": 4,
             "search_terms": [
-              "duration",
-              "documented"
+              "cough"
             ],
             "tags": [
-              "urgent_care"
+              "or"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-symptoms-5",
-            "chip_text": "temperature documented",
+            "chip_text": "rigors or chills",
             "order": 5,
             "search_terms": [
-              "temperature",
-              "documented"
+              "rigors"
             ],
             "tags": [
-              "urgent_care"
+              "or"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-symptoms-6",
-            "chip_text": "associated symptoms documented",
+            "chip_text": "duration documented",
             "order": 6,
             "search_terms": [
-              "associated",
-              "symptoms",
-              "documented"
+              "duration"
             ],
             "tags": [
-              "urgent_care"
+              "documented"
+            ]
+          },
+          {
+            "chip_id": "urgent-fever-suspected-infection-symptoms-7",
+            "chip_text": "temperature documented",
+            "order": 7,
+            "search_terms": [
+              "temperature"
+            ],
+            "tags": [
+              "documented"
             ]
           }
         ],
         "relevant_negatives": [
           {
             "chip_id": "urgent-fever-suspected-infection-relevant_negatives-1",
-            "chip_text": "no respiratory distress",
+            "chip_text": "no confusion reported",
             "order": 1,
             "search_terms": [
-              "no",
-              "respiratory",
-              "distress"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "confusion"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-relevant_negatives-2",
-            "chip_text": "no altered mental status",
+            "chip_text": "no neck stiffness reported",
             "order": 2,
             "search_terms": [
-              "no",
-              "altered",
-              "mental",
-              "status"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "neck"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-relevant_negatives-3",
-            "chip_text": "no chest pain",
+            "chip_text": "no shortness of breath reported",
             "order": 3,
             "search_terms": [
-              "no",
-              "chest",
-              "pain"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "shortness"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-relevant_negatives-4",
-            "chip_text": "no neck stiffness",
+            "chip_text": "no chest pain",
             "order": 4,
             "search_terms": [
-              "no",
-              "neck",
-              "stiffness"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "chest"
             ]
           },
           {
@@ -51388,12 +51238,10 @@
             "chip_text": "no urinary symptoms",
             "order": 5,
             "search_terms": [
-              "no",
-              "urinary",
-              "symptoms"
+              "no"
             ],
             "tags": [
-              "urgent_care"
+              "urinary"
             ]
           }
         ],
@@ -51403,13 +51251,10 @@
             "chip_text": "temperature documented if measured",
             "order": 1,
             "search_terms": [
-              "temperature",
-              "documented",
-              "if",
-              "measured"
+              "temperature"
             ],
             "tags": [
-              "urgent_care"
+              "documented"
             ]
           },
           {
@@ -51417,13 +51262,10 @@
             "chip_text": "heart rate documented if measured",
             "order": 2,
             "search_terms": [
-              "heart",
-              "rate",
-              "documented",
-              "if"
+              "heart"
             ],
             "tags": [
-              "urgent_care"
+              "rate"
             ]
           },
           {
@@ -51431,67 +51273,64 @@
             "chip_text": "respiratory rate documented if measured",
             "order": 3,
             "search_terms": [
-              "respiratory",
-              "rate",
-              "documented",
-              "if"
+              "respiratory"
             ],
             "tags": [
-              "urgent_care"
+              "rate"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-exam_findings-4",
-            "chip_text": "chest auscultation documented if assessed",
+            "chip_text": "blood pressure documented if measured",
             "order": 4,
             "search_terms": [
-              "chest",
-              "auscultation",
-              "documented",
-              "if"
+              "blood"
             ],
             "tags": [
-              "urgent_care"
+              "pressure"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-exam_findings-5",
-            "chip_text": "throat examination documented if assessed",
+            "chip_text": "hydration documented if assessed",
             "order": 5,
             "search_terms": [
-              "throat",
-              "examination",
-              "documented",
-              "if"
+              "hydration"
             ],
             "tags": [
-              "urgent_care"
+              "documented"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-exam_findings-6",
-            "chip_text": "general appearance documented if assessed",
+            "chip_text": "source-focused exam documented if assessed",
             "order": 6,
             "search_terms": [
-              "general",
-              "appearance",
-              "documented",
-              "if"
+              "source-focused"
             ],
             "tags": [
-              "urgent_care"
+              "exam"
+            ]
+          },
+          {
+            "chip_id": "urgent-fever-suspected-infection-exam_findings-7",
+            "chip_text": "general appearance documented if assessed",
+            "order": 7,
+            "search_terms": [
+              "general"
+            ],
+            "tags": [
+              "appearance"
             ]
           }
         ],
         "red_flags": [
           {
             "chip_id": "urgent-fever-suspected-infection-red_flags-1",
-            "chip_text": "altered mental status",
+            "chip_text": "confusion",
             "order": 1,
             "search_terms": [
-              "altered",
-              "mental",
-              "status"
+              "confusion"
             ],
             "tags": [
               "urgent_care"
@@ -51499,57 +51338,65 @@
           },
           {
             "chip_id": "urgent-fever-suspected-infection-red_flags-2",
-            "chip_text": "respiratory distress",
+            "chip_text": "hypotension if documented",
             "order": 2,
-            "search_terms": [
-              "respiratory",
-              "distress"
-            ],
-            "tags": [
-              "urgent_care"
-            ]
-          },
-          {
-            "chip_id": "urgent-fever-suspected-infection-red_flags-3",
-            "chip_text": "hypotension",
-            "order": 3,
             "search_terms": [
               "hypotension"
             ],
             "tags": [
-              "urgent_care"
+              "if"
+            ]
+          },
+          {
+            "chip_id": "urgent-fever-suspected-infection-red_flags-3",
+            "chip_text": "respiratory distress",
+            "order": 3,
+            "search_terms": [
+              "respiratory"
+            ],
+            "tags": [
+              "distress"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-red_flags-4",
-            "chip_text": "oliguria",
+            "chip_text": "non-blanching rash",
             "order": 4,
             "search_terms": [
-              "oliguria"
+              "non-blanching"
             ],
             "tags": [
-              "urgent_care"
+              "rash"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-red_flags-5",
-            "chip_text": "neck stiffness",
+            "chip_text": "immunocompromised state",
             "order": 5,
             "search_terms": [
-              "neck",
-              "stiffness"
+              "immunocompromised"
             ],
             "tags": [
-              "urgent_care"
+              "state"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-red_flags-6",
-            "chip_text": "non-blanching rash",
+            "chip_text": "neck stiffness",
             "order": 6,
             "search_terms": [
-              "non-blanching",
-              "rash"
+              "neck"
+            ],
+            "tags": [
+              "stiffness"
+            ]
+          },
+          {
+            "chip_id": "urgent-fever-suspected-infection-red_flags-7",
+            "chip_text": "oliguria",
+            "order": 7,
+            "search_terms": [
+              "oliguria"
             ],
             "tags": [
               "urgent_care"
@@ -51559,100 +51406,57 @@
         "investigations": [
           {
             "chip_id": "urgent-fever-suspected-infection-investigations-1",
-            "chip_text": "blood tests reviewed if ordered",
+            "chip_text": "urinalysis reviewed if done",
             "order": 1,
             "search_terms": [
-              "blood",
-              "tests",
-              "reviewed",
-              "if"
+              "urinalysis"
             ],
             "tags": [
-              "urgent_care"
+              "reviewed"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-investigations-2",
-            "chip_text": "CBC reviewed if ordered",
+            "chip_text": "blood tests reviewed if ordered",
             "order": 2,
             "search_terms": [
-              "CBC",
-              "reviewed",
-              "if",
-              "ordered"
+              "blood"
             ],
             "tags": [
-              "urgent_care"
+              "tests"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-investigations-3",
-            "chip_text": "CRP reviewed if ordered",
+            "chip_text": "cultures reviewed if available",
             "order": 3,
             "search_terms": [
-              "CRP",
-              "reviewed",
-              "if",
-              "ordered"
+              "cultures"
             ],
             "tags": [
-              "urgent_care"
+              "reviewed"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-investigations-4",
-            "chip_text": "chest X-ray reviewed if ordered",
+            "chip_text": "imaging reviewed if available",
             "order": 4,
             "search_terms": [
-              "chest",
-              "X-ray",
-              "reviewed",
-              "if"
+              "imaging"
             ],
             "tags": [
-              "urgent_care"
+              "reviewed"
             ]
           },
           {
             "chip_id": "urgent-fever-suspected-infection-investigations-5",
-            "chip_text": "urinalysis reviewed if relevant",
+            "chip_text": "previous records reviewed if available",
             "order": 5,
             "search_terms": [
-              "urinalysis",
-              "reviewed",
-              "if",
-              "relevant"
+              "previous"
             ],
             "tags": [
-              "urgent_care"
-            ]
-          },
-          {
-            "chip_id": "urgent-fever-suspected-infection-investigations-6",
-            "chip_text": "blood cultures documented if taken",
-            "order": 6,
-            "search_terms": [
-              "blood",
-              "cultures",
-              "documented",
-              "if"
-            ],
-            "tags": [
-              "urgent_care"
-            ]
-          },
-          {
-            "chip_id": "urgent-fever-suspected-infection-investigations-7",
-            "chip_text": "previous records reviewed if available",
-            "order": 7,
-            "search_terms": [
-              "previous",
-              "records",
-              "reviewed",
-              "if"
-            ],
-            "tags": [
-              "urgent_care"
+              "records"
             ]
           }
         ],
@@ -51662,13 +51466,10 @@
             "chip_text": "supportive care advice documented if discussed",
             "order": 1,
             "search_terms": [
-              "supportive",
-              "care",
-              "advice",
-              "documented"
+              "supportive"
             ],
             "tags": [
-              "urgent_care"
+              "care"
             ]
           },
           {
@@ -51676,13 +51477,10 @@
             "chip_text": "hydration advice documented if discussed",
             "order": 2,
             "search_terms": [
-              "hydration",
-              "advice",
-              "documented",
-              "if"
+              "hydration"
             ],
             "tags": [
-              "urgent_care"
+              "advice"
             ]
           },
           {
@@ -51690,13 +51488,10 @@
             "chip_text": "antipyretic plan documented if clinician decided",
             "order": 3,
             "search_terms": [
-              "antipyretic",
-              "plan",
-              "documented",
-              "if"
+              "antipyretic"
             ],
             "tags": [
-              "urgent_care"
+              "plan"
             ]
           },
           {
@@ -51704,13 +51499,10 @@
             "chip_text": "antibiotic plan documented if clinician decided",
             "order": 4,
             "search_terms": [
-              "antibiotic",
-              "plan",
-              "documented",
-              "if"
+              "antibiotic"
             ],
             "tags": [
-              "urgent_care"
+              "plan"
             ]
           },
           {
@@ -51718,13 +51510,10 @@
             "chip_text": "return precautions documented if discussed",
             "order": 5,
             "search_terms": [
-              "return",
-              "precautions",
-              "documented",
-              "if"
+              "return"
             ],
             "tags": [
-              "urgent_care"
+              "precautions"
             ]
           },
           {
@@ -51732,13 +51521,10 @@
             "chip_text": "referral or escalation documented if clinician decided",
             "order": 6,
             "search_terms": [
-              "referral",
-              "or",
-              "escalation",
-              "documented"
+              "referral"
             ],
             "tags": [
-              "urgent_care"
+              "or"
             ]
           }
         ],
@@ -51748,13 +51534,10 @@
             "chip_text": "follow-up in 2-3 days if not improving",
             "order": 1,
             "search_terms": [
-              "follow-up",
-              "in",
-              "2-3",
-              "days"
+              "follow-up"
             ],
             "tags": [
-              "urgent_care"
+              "in"
             ]
           },
           {
@@ -51762,13 +51545,10 @@
             "chip_text": "return sooner if symptoms worsen",
             "order": 2,
             "search_terms": [
-              "return",
-              "sooner",
-              "if",
-              "symptoms"
+              "return"
             ],
             "tags": [
-              "urgent_care"
+              "sooner"
             ]
           },
           {
@@ -51776,13 +51556,10 @@
             "chip_text": "return if new red flag symptoms develop",
             "order": 3,
             "search_terms": [
-              "return",
-              "if",
-              "new",
-              "red"
+              "return"
             ],
             "tags": [
-              "urgent_care"
+              "if"
             ]
           }
         ]
@@ -89238,11 +89015,10 @@
           "chip_text": "abdominal pain",
           "order": 1,
           "search_terms": [
-            "abdominal",
-            "pain"
+            "abdominal"
           ],
           "tags": [
-            "urgent_care"
+            "pain"
           ]
         },
         {
@@ -89250,11 +89026,10 @@
           "chip_text": "location documented",
           "order": 2,
           "search_terms": [
-            "location",
-            "documented"
+            "location"
           ],
           "tags": [
-            "urgent_care"
+            "documented"
           ]
         },
         {
@@ -89262,11 +89037,10 @@
           "chip_text": "duration documented",
           "order": 3,
           "search_terms": [
-            "duration",
-            "documented"
+            "duration"
           ],
           "tags": [
-            "urgent_care"
+            "documented"
           ]
         },
         {
@@ -89274,12 +89048,10 @@
           "chip_text": "nausea or vomiting",
           "order": 4,
           "search_terms": [
-            "nausea",
-            "or",
-            "vomiting"
+            "nausea"
           ],
           "tags": [
-            "urgent_care"
+            "or"
           ]
         },
         {
@@ -89287,12 +89059,10 @@
           "chip_text": "diarrhea or constipation",
           "order": 5,
           "search_terms": [
-            "diarrhea",
-            "or",
-            "constipation"
+            "diarrhea"
           ],
           "tags": [
-            "urgent_care"
+            "or"
           ]
         },
         {
@@ -89300,12 +89070,10 @@
           "chip_text": "urinary symptoms reviewed",
           "order": 6,
           "search_terms": [
-            "urinary",
-            "symptoms",
-            "reviewed"
+            "urinary"
           ],
           "tags": [
-            "urgent_care"
+            "symptoms"
           ]
         },
         {
@@ -89313,11 +89081,10 @@
           "chip_text": "fever reviewed",
           "order": 7,
           "search_terms": [
-            "fever",
-            "reviewed"
+            "fever"
           ],
           "tags": [
-            "urgent_care"
+            "reviewed"
           ]
         },
         {
@@ -89325,12 +89092,10 @@
           "chip_text": "associated symptoms documented",
           "order": 8,
           "search_terms": [
-            "associated",
-            "symptoms",
-            "documented"
+            "associated"
           ],
           "tags": [
-            "urgent_care"
+            "symptoms"
           ]
         }
       ],
@@ -89340,13 +89105,10 @@
           "chip_text": "no blood in stool reported",
           "order": 1,
           "search_terms": [
-            "no",
-            "blood",
-            "in",
-            "stool"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "blood"
           ]
         },
         {
@@ -89354,82 +89116,78 @@
           "chip_text": "no persistent vomiting reported",
           "order": 2,
           "search_terms": [
-            "no",
-            "persistent",
-            "vomiting",
-            "reported"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "persistent"
           ]
         },
         {
           "chip_id": "urgent-abdominal-pain-relevant_negatives-3",
-          "chip_text": "no surgical history",
+          "chip_text": "no severe worsening pain reported",
           "order": 3,
           "search_terms": [
-            "no",
-            "surgical",
-            "history"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "severe"
           ]
         },
         {
           "chip_id": "urgent-abdominal-pain-relevant_negatives-4",
-          "chip_text": "no fever",
+          "chip_text": "no surgical history",
           "order": 4,
           "search_terms": [
-            "no",
-            "fever"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "surgical"
           ]
         },
         {
           "chip_id": "urgent-abdominal-pain-relevant_negatives-5",
-          "chip_text": "no pregnancy if female and relevant",
+          "chip_text": "no fever",
           "order": 5,
           "search_terms": [
-            "no",
-            "pregnancy",
-            "if",
-            "female"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "fever"
+          ]
+        },
+        {
+          "chip_id": "urgent-abdominal-pain-relevant_negatives-6",
+          "chip_text": "no pregnancy if female and relevant",
+          "order": 6,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "pregnancy"
           ]
         }
       ],
       "exam_findings": [
         {
           "chip_id": "urgent-abdominal-pain-exam_findings-1",
-          "chip_text": "abdominal examination documented if assessed",
+          "chip_text": "abdominal tenderness documented if assessed",
           "order": 1,
           "search_terms": [
-            "abdominal",
-            "examination",
-            "documented",
-            "if"
+            "abdominal"
           ],
           "tags": [
-            "urgent_care"
+            "tenderness"
           ]
         },
         {
           "chip_id": "urgent-abdominal-pain-exam_findings-2",
-          "chip_text": "tenderness documented if assessed",
+          "chip_text": "guarding or rebound documented if assessed",
           "order": 2,
           "search_terms": [
-            "tenderness",
-            "documented",
-            "if",
-            "assessed"
+            "guarding"
           ],
           "tags": [
-            "urgent_care"
+            "or"
           ]
         },
         {
@@ -89437,164 +89195,157 @@
           "chip_text": "bowel sounds documented if assessed",
           "order": 3,
           "search_terms": [
-            "bowel",
-            "sounds",
-            "documented",
-            "if"
+            "bowel"
           ],
           "tags": [
-            "urgent_care"
+            "sounds"
           ]
         },
         {
           "chip_id": "urgent-abdominal-pain-exam_findings-4",
-          "chip_text": "vital signs documented if measured",
+          "chip_text": "hydration documented if assessed",
           "order": 4,
           "search_terms": [
-            "vital",
-            "signs",
-            "documented",
-            "if"
+            "hydration"
           ],
           "tags": [
-            "urgent_care"
+            "documented"
           ]
         },
         {
           "chip_id": "urgent-abdominal-pain-exam_findings-5",
-          "chip_text": "general appearance documented if assessed",
+          "chip_text": "vital signs documented if measured",
           "order": 5,
           "search_terms": [
-            "general",
-            "appearance",
-            "documented",
-            "if"
+            "vital"
           ],
           "tags": [
-            "urgent_care"
+            "signs"
+          ]
+        },
+        {
+          "chip_id": "urgent-abdominal-pain-exam_findings-6",
+          "chip_text": "general appearance documented if assessed",
+          "order": 6,
+          "search_terms": [
+            "general"
+          ],
+          "tags": [
+            "appearance"
           ]
         }
       ],
       "red_flags": [
         {
           "chip_id": "urgent-abdominal-pain-red_flags-1",
-          "chip_text": "peritonism or guarding",
+          "chip_text": "severe localized pain",
           "order": 1,
           "search_terms": [
-            "peritonism",
-            "or",
-            "guarding"
+            "severe"
           ],
           "tags": [
-            "urgent_care"
+            "localized"
           ]
         },
         {
           "chip_id": "urgent-abdominal-pain-red_flags-2",
-          "chip_text": "rigid abdomen",
+          "chip_text": "guarding or rebound",
           "order": 2,
           "search_terms": [
-            "rigid",
-            "abdomen"
+            "guarding"
           ],
           "tags": [
-            "urgent_care"
+            "or"
           ]
         },
         {
           "chip_id": "urgent-abdominal-pain-red_flags-3",
-          "chip_text": "hemodynamic instability",
+          "chip_text": "persistent vomiting",
           "order": 3,
           "search_terms": [
-            "hemodynamic",
-            "instability"
+            "persistent"
           ],
           "tags": [
-            "urgent_care"
+            "vomiting"
           ]
         },
         {
           "chip_id": "urgent-abdominal-pain-red_flags-4",
-          "chip_text": "acute surgical abdomen",
+          "chip_text": "GI bleeding",
           "order": 4,
           "search_terms": [
-            "acute",
-            "surgical",
-            "abdomen"
+            "GI"
+          ],
+          "tags": [
+            "bleeding"
+          ]
+        },
+        {
+          "chip_id": "urgent-abdominal-pain-red_flags-5",
+          "chip_text": "syncope",
+          "order": 5,
+          "search_terms": [
+            "syncope"
           ],
           "tags": [
             "urgent_care"
           ]
         },
         {
-          "chip_id": "urgent-abdominal-pain-red_flags-5",
-          "chip_text": "severe uncontrolled pain",
-          "order": 5,
+          "chip_id": "urgent-abdominal-pain-red_flags-6",
+          "chip_text": "hemodynamic instability",
+          "order": 6,
           "search_terms": [
-            "severe",
-            "uncontrolled",
-            "pain"
+            "hemodynamic"
           ],
           "tags": [
-            "urgent_care"
+            "instability"
           ]
         }
       ],
       "investigations": [
         {
           "chip_id": "urgent-abdominal-pain-investigations-1",
-          "chip_text": "blood tests reviewed if ordered",
+          "chip_text": "urinalysis reviewed if done",
           "order": 1,
           "search_terms": [
-            "blood",
-            "tests",
-            "reviewed",
-            "if"
+            "urinalysis"
           ],
           "tags": [
-            "urgent_care"
+            "reviewed"
           ]
         },
         {
           "chip_id": "urgent-abdominal-pain-investigations-2",
-          "chip_text": "imaging reviewed if ordered",
+          "chip_text": "pregnancy test reviewed if relevant and done",
           "order": 2,
           "search_terms": [
-            "imaging",
-            "reviewed",
-            "if",
-            "ordered"
+            "pregnancy"
           ],
           "tags": [
-            "urgent_care"
+            "test"
           ]
         },
         {
           "chip_id": "urgent-abdominal-pain-investigations-3",
-          "chip_text": "urinalysis reviewed if relevant",
+          "chip_text": "blood tests reviewed if ordered",
           "order": 3,
           "search_terms": [
-            "urinalysis",
-            "reviewed",
-            "if",
-            "relevant"
+            "blood"
           ],
           "tags": [
-            "urgent_care"
+            "tests"
           ]
         },
         {
           "chip_id": "urgent-abdominal-pain-investigations-4",
-          "chip_text": "pregnancy test documented if relevant",
+          "chip_text": "imaging reviewed if available",
           "order": 4,
           "search_terms": [
-            "pregnancy",
-            "test",
-            "documented",
-            "if"
+            "imaging"
           ],
           "tags": [
-            "urgent_care"
+            "reviewed"
           ]
         },
         {
@@ -89602,13 +89353,10 @@
           "chip_text": "previous records reviewed if available",
           "order": 5,
           "search_terms": [
-            "previous",
-            "records",
-            "reviewed",
-            "if"
+            "previous"
           ],
           "tags": [
-            "urgent_care"
+            "records"
           ]
         }
       ],
@@ -89618,13 +89366,10 @@
           "chip_text": "analgesia plan documented if clinician decided",
           "order": 1,
           "search_terms": [
-            "analgesia",
-            "plan",
-            "documented",
-            "if"
+            "analgesia"
           ],
           "tags": [
-            "urgent_care"
+            "plan"
           ]
         },
         {
@@ -89632,13 +89377,10 @@
           "chip_text": "dietary advice documented if discussed",
           "order": 2,
           "search_terms": [
-            "dietary",
-            "advice",
-            "documented",
-            "if"
+            "dietary"
           ],
           "tags": [
-            "urgent_care"
+            "advice"
           ]
         },
         {
@@ -89646,13 +89388,10 @@
           "chip_text": "return precautions documented if discussed",
           "order": 3,
           "search_terms": [
-            "return",
-            "precautions",
-            "documented",
-            "if"
+            "return"
           ],
           "tags": [
-            "urgent_care"
+            "precautions"
           ]
         },
         {
@@ -89660,13 +89399,10 @@
           "chip_text": "referral or escalation documented if clinician decided",
           "order": 4,
           "search_terms": [
-            "referral",
-            "or",
-            "escalation",
-            "documented"
+            "referral"
           ],
           "tags": [
-            "urgent_care"
+            "or"
           ]
         },
         {
@@ -89674,13 +89410,10 @@
           "chip_text": "investigation plan documented if clinician decided",
           "order": 5,
           "search_terms": [
-            "investigation",
-            "plan",
-            "documented",
-            "if"
+            "investigation"
           ],
           "tags": [
-            "urgent_care"
+            "plan"
           ]
         }
       ],
@@ -89690,13 +89423,10 @@
           "chip_text": "follow-up in 1-2 days if not improving",
           "order": 1,
           "search_terms": [
-            "follow-up",
-            "in",
-            "1-2",
-            "days"
+            "follow-up"
           ],
           "tags": [
-            "urgent_care"
+            "in"
           ]
         },
         {
@@ -89704,13 +89434,10 @@
           "chip_text": "return sooner if symptoms worsen",
           "order": 2,
           "search_terms": [
-            "return",
-            "sooner",
-            "if",
-            "symptoms"
+            "return"
           ],
           "tags": [
-            "urgent_care"
+            "sooner"
           ]
         },
         {
@@ -89718,13 +89445,10 @@
           "chip_text": "surgical follow-up documented if arranged",
           "order": 3,
           "search_terms": [
-            "surgical",
-            "follow-up",
-            "documented",
-            "if"
+            "surgical"
           ],
           "tags": [
-            "urgent_care"
+            "follow-up"
           ]
         }
       ]
@@ -91195,120 +90919,114 @@
         },
         {
           "chip_id": "urgent-fever-suspected-infection-symptoms-2",
-          "chip_text": "chills or rigors",
+          "chip_text": "suspected infection documentation",
           "order": 2,
           "search_terms": [
-            "chills",
-            "or",
-            "rigors"
+            "suspected"
           ],
           "tags": [
-            "urgent_care"
+            "infection"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-symptoms-3",
-          "chip_text": "suspected infection source",
+          "chip_text": "source symptoms reviewed",
           "order": 3,
           "search_terms": [
-            "suspected",
-            "infection",
             "source"
           ],
           "tags": [
-            "urgent_care"
+            "symptoms"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-symptoms-4",
-          "chip_text": "duration documented",
+          "chip_text": "cough or sore throat or urinary or GI or skin symptoms reviewed",
           "order": 4,
           "search_terms": [
-            "duration",
-            "documented"
+            "cough"
           ],
           "tags": [
-            "urgent_care"
+            "or"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-symptoms-5",
-          "chip_text": "temperature documented",
+          "chip_text": "rigors or chills",
           "order": 5,
           "search_terms": [
-            "temperature",
-            "documented"
+            "rigors"
           ],
           "tags": [
-            "urgent_care"
+            "or"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-symptoms-6",
-          "chip_text": "associated symptoms documented",
+          "chip_text": "duration documented",
           "order": 6,
           "search_terms": [
-            "associated",
-            "symptoms",
-            "documented"
+            "duration"
           ],
           "tags": [
-            "urgent_care"
+            "documented"
+          ]
+        },
+        {
+          "chip_id": "urgent-fever-suspected-infection-symptoms-7",
+          "chip_text": "temperature documented",
+          "order": 7,
+          "search_terms": [
+            "temperature"
+          ],
+          "tags": [
+            "documented"
           ]
         }
       ],
       "relevant_negatives": [
         {
           "chip_id": "urgent-fever-suspected-infection-relevant_negatives-1",
-          "chip_text": "no respiratory distress",
+          "chip_text": "no confusion reported",
           "order": 1,
           "search_terms": [
-            "no",
-            "respiratory",
-            "distress"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "confusion"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-relevant_negatives-2",
-          "chip_text": "no altered mental status",
+          "chip_text": "no neck stiffness reported",
           "order": 2,
           "search_terms": [
-            "no",
-            "altered",
-            "mental",
-            "status"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "neck"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-relevant_negatives-3",
-          "chip_text": "no chest pain",
+          "chip_text": "no shortness of breath reported",
           "order": 3,
           "search_terms": [
-            "no",
-            "chest",
-            "pain"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "shortness"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-relevant_negatives-4",
-          "chip_text": "no neck stiffness",
+          "chip_text": "no chest pain",
           "order": 4,
           "search_terms": [
-            "no",
-            "neck",
-            "stiffness"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "chest"
           ]
         },
         {
@@ -91316,12 +91034,10 @@
           "chip_text": "no urinary symptoms",
           "order": 5,
           "search_terms": [
-            "no",
-            "urinary",
-            "symptoms"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "urinary"
           ]
         }
       ],
@@ -91331,13 +91047,10 @@
           "chip_text": "temperature documented if measured",
           "order": 1,
           "search_terms": [
-            "temperature",
-            "documented",
-            "if",
-            "measured"
+            "temperature"
           ],
           "tags": [
-            "urgent_care"
+            "documented"
           ]
         },
         {
@@ -91345,13 +91058,10 @@
           "chip_text": "heart rate documented if measured",
           "order": 2,
           "search_terms": [
-            "heart",
-            "rate",
-            "documented",
-            "if"
+            "heart"
           ],
           "tags": [
-            "urgent_care"
+            "rate"
           ]
         },
         {
@@ -91359,67 +91069,64 @@
           "chip_text": "respiratory rate documented if measured",
           "order": 3,
           "search_terms": [
-            "respiratory",
-            "rate",
-            "documented",
-            "if"
+            "respiratory"
           ],
           "tags": [
-            "urgent_care"
+            "rate"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-exam_findings-4",
-          "chip_text": "chest auscultation documented if assessed",
+          "chip_text": "blood pressure documented if measured",
           "order": 4,
           "search_terms": [
-            "chest",
-            "auscultation",
-            "documented",
-            "if"
+            "blood"
           ],
           "tags": [
-            "urgent_care"
+            "pressure"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-exam_findings-5",
-          "chip_text": "throat examination documented if assessed",
+          "chip_text": "hydration documented if assessed",
           "order": 5,
           "search_terms": [
-            "throat",
-            "examination",
-            "documented",
-            "if"
+            "hydration"
           ],
           "tags": [
-            "urgent_care"
+            "documented"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-exam_findings-6",
-          "chip_text": "general appearance documented if assessed",
+          "chip_text": "source-focused exam documented if assessed",
           "order": 6,
           "search_terms": [
-            "general",
-            "appearance",
-            "documented",
-            "if"
+            "source-focused"
           ],
           "tags": [
-            "urgent_care"
+            "exam"
+          ]
+        },
+        {
+          "chip_id": "urgent-fever-suspected-infection-exam_findings-7",
+          "chip_text": "general appearance documented if assessed",
+          "order": 7,
+          "search_terms": [
+            "general"
+          ],
+          "tags": [
+            "appearance"
           ]
         }
       ],
       "red_flags": [
         {
           "chip_id": "urgent-fever-suspected-infection-red_flags-1",
-          "chip_text": "altered mental status",
+          "chip_text": "confusion",
           "order": 1,
           "search_terms": [
-            "altered",
-            "mental",
-            "status"
+            "confusion"
           ],
           "tags": [
             "urgent_care"
@@ -91427,57 +91134,65 @@
         },
         {
           "chip_id": "urgent-fever-suspected-infection-red_flags-2",
-          "chip_text": "respiratory distress",
+          "chip_text": "hypotension if documented",
           "order": 2,
-          "search_terms": [
-            "respiratory",
-            "distress"
-          ],
-          "tags": [
-            "urgent_care"
-          ]
-        },
-        {
-          "chip_id": "urgent-fever-suspected-infection-red_flags-3",
-          "chip_text": "hypotension",
-          "order": 3,
           "search_terms": [
             "hypotension"
           ],
           "tags": [
-            "urgent_care"
+            "if"
+          ]
+        },
+        {
+          "chip_id": "urgent-fever-suspected-infection-red_flags-3",
+          "chip_text": "respiratory distress",
+          "order": 3,
+          "search_terms": [
+            "respiratory"
+          ],
+          "tags": [
+            "distress"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-red_flags-4",
-          "chip_text": "oliguria",
+          "chip_text": "non-blanching rash",
           "order": 4,
           "search_terms": [
-            "oliguria"
+            "non-blanching"
           ],
           "tags": [
-            "urgent_care"
+            "rash"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-red_flags-5",
-          "chip_text": "neck stiffness",
+          "chip_text": "immunocompromised state",
           "order": 5,
           "search_terms": [
-            "neck",
-            "stiffness"
+            "immunocompromised"
           ],
           "tags": [
-            "urgent_care"
+            "state"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-red_flags-6",
-          "chip_text": "non-blanching rash",
+          "chip_text": "neck stiffness",
           "order": 6,
           "search_terms": [
-            "non-blanching",
-            "rash"
+            "neck"
+          ],
+          "tags": [
+            "stiffness"
+          ]
+        },
+        {
+          "chip_id": "urgent-fever-suspected-infection-red_flags-7",
+          "chip_text": "oliguria",
+          "order": 7,
+          "search_terms": [
+            "oliguria"
           ],
           "tags": [
             "urgent_care"
@@ -91487,100 +91202,57 @@
       "investigations": [
         {
           "chip_id": "urgent-fever-suspected-infection-investigations-1",
-          "chip_text": "blood tests reviewed if ordered",
+          "chip_text": "urinalysis reviewed if done",
           "order": 1,
           "search_terms": [
-            "blood",
-            "tests",
-            "reviewed",
-            "if"
+            "urinalysis"
           ],
           "tags": [
-            "urgent_care"
+            "reviewed"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-investigations-2",
-          "chip_text": "CBC reviewed if ordered",
+          "chip_text": "blood tests reviewed if ordered",
           "order": 2,
           "search_terms": [
-            "CBC",
-            "reviewed",
-            "if",
-            "ordered"
+            "blood"
           ],
           "tags": [
-            "urgent_care"
+            "tests"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-investigations-3",
-          "chip_text": "CRP reviewed if ordered",
+          "chip_text": "cultures reviewed if available",
           "order": 3,
           "search_terms": [
-            "CRP",
-            "reviewed",
-            "if",
-            "ordered"
+            "cultures"
           ],
           "tags": [
-            "urgent_care"
+            "reviewed"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-investigations-4",
-          "chip_text": "chest X-ray reviewed if ordered",
+          "chip_text": "imaging reviewed if available",
           "order": 4,
           "search_terms": [
-            "chest",
-            "X-ray",
-            "reviewed",
-            "if"
+            "imaging"
           ],
           "tags": [
-            "urgent_care"
+            "reviewed"
           ]
         },
         {
           "chip_id": "urgent-fever-suspected-infection-investigations-5",
-          "chip_text": "urinalysis reviewed if relevant",
+          "chip_text": "previous records reviewed if available",
           "order": 5,
           "search_terms": [
-            "urinalysis",
-            "reviewed",
-            "if",
-            "relevant"
+            "previous"
           ],
           "tags": [
-            "urgent_care"
-          ]
-        },
-        {
-          "chip_id": "urgent-fever-suspected-infection-investigations-6",
-          "chip_text": "blood cultures documented if taken",
-          "order": 6,
-          "search_terms": [
-            "blood",
-            "cultures",
-            "documented",
-            "if"
-          ],
-          "tags": [
-            "urgent_care"
-          ]
-        },
-        {
-          "chip_id": "urgent-fever-suspected-infection-investigations-7",
-          "chip_text": "previous records reviewed if available",
-          "order": 7,
-          "search_terms": [
-            "previous",
-            "records",
-            "reviewed",
-            "if"
-          ],
-          "tags": [
-            "urgent_care"
+            "records"
           ]
         }
       ],
@@ -91590,13 +91262,10 @@
           "chip_text": "supportive care advice documented if discussed",
           "order": 1,
           "search_terms": [
-            "supportive",
-            "care",
-            "advice",
-            "documented"
+            "supportive"
           ],
           "tags": [
-            "urgent_care"
+            "care"
           ]
         },
         {
@@ -91604,13 +91273,10 @@
           "chip_text": "hydration advice documented if discussed",
           "order": 2,
           "search_terms": [
-            "hydration",
-            "advice",
-            "documented",
-            "if"
+            "hydration"
           ],
           "tags": [
-            "urgent_care"
+            "advice"
           ]
         },
         {
@@ -91618,13 +91284,10 @@
           "chip_text": "antipyretic plan documented if clinician decided",
           "order": 3,
           "search_terms": [
-            "antipyretic",
-            "plan",
-            "documented",
-            "if"
+            "antipyretic"
           ],
           "tags": [
-            "urgent_care"
+            "plan"
           ]
         },
         {
@@ -91632,13 +91295,10 @@
           "chip_text": "antibiotic plan documented if clinician decided",
           "order": 4,
           "search_terms": [
-            "antibiotic",
-            "plan",
-            "documented",
-            "if"
+            "antibiotic"
           ],
           "tags": [
-            "urgent_care"
+            "plan"
           ]
         },
         {
@@ -91646,13 +91306,10 @@
           "chip_text": "return precautions documented if discussed",
           "order": 5,
           "search_terms": [
-            "return",
-            "precautions",
-            "documented",
-            "if"
+            "return"
           ],
           "tags": [
-            "urgent_care"
+            "precautions"
           ]
         },
         {
@@ -91660,13 +91317,10 @@
           "chip_text": "referral or escalation documented if clinician decided",
           "order": 6,
           "search_terms": [
-            "referral",
-            "or",
-            "escalation",
-            "documented"
+            "referral"
           ],
           "tags": [
-            "urgent_care"
+            "or"
           ]
         }
       ],
@@ -91676,13 +91330,10 @@
           "chip_text": "follow-up in 2-3 days if not improving",
           "order": 1,
           "search_terms": [
-            "follow-up",
-            "in",
-            "2-3",
-            "days"
+            "follow-up"
           ],
           "tags": [
-            "urgent_care"
+            "in"
           ]
         },
         {
@@ -91690,13 +91341,10 @@
           "chip_text": "return sooner if symptoms worsen",
           "order": 2,
           "search_terms": [
-            "return",
-            "sooner",
-            "if",
-            "symptoms"
+            "return"
           ],
           "tags": [
-            "urgent_care"
+            "sooner"
           ]
         },
         {
@@ -91704,13 +91352,10 @@
           "chip_text": "return if new red flag symptoms develop",
           "order": 3,
           "search_terms": [
-            "return",
-            "if",
-            "new",
-            "red"
+            "return"
           ],
           "tags": [
-            "urgent_care"
+            "if"
           ]
         }
       ]
@@ -93184,154 +92829,136 @@
       "symptoms": [
         {
           "chip_id": "urgent-syncope-symptoms-1",
-          "chip_text": "syncope",
+          "chip_text": "syncope or collapse",
           "order": 1,
           "search_terms": [
             "syncope"
           ],
           "tags": [
-            "urgent_care"
+            "or"
           ]
         },
         {
           "chip_id": "urgent-syncope-symptoms-2",
-          "chip_text": "fainting",
+          "chip_text": "prodrome documented",
           "order": 2,
           "search_terms": [
-            "fainting"
+            "prodrome"
           ],
           "tags": [
-            "urgent_care"
+            "documented"
           ]
         },
         {
           "chip_id": "urgent-syncope-symptoms-3",
-          "chip_text": "collapse",
+          "chip_text": "position documented",
           "order": 3,
           "search_terms": [
-            "collapse"
+            "position"
           ],
           "tags": [
-            "urgent_care"
+            "documented"
           ]
         },
         {
           "chip_id": "urgent-syncope-symptoms-4",
-          "chip_text": "pre-syncope",
+          "chip_text": "duration of loss of consciousness documented if known",
           "order": 4,
           "search_terms": [
-            "pre-syncope"
+            "duration"
           ],
           "tags": [
-            "urgent_care"
+            "of"
           ]
         },
         {
           "chip_id": "urgent-syncope-symptoms-5",
-          "chip_text": "prodrome documented if reported",
+          "chip_text": "witnessed event documented if available",
           "order": 5,
           "search_terms": [
-            "prodrome",
-            "documented",
-            "if",
-            "reported"
+            "witnessed"
           ],
           "tags": [
-            "urgent_care"
+            "event"
           ]
         },
         {
           "chip_id": "urgent-syncope-symptoms-6",
-          "chip_text": "witness account documented if available",
+          "chip_text": "seizure-like activity reviewed",
           "order": 6,
           "search_terms": [
-            "witness",
-            "account",
-            "documented",
-            "if"
+            "seizure-like"
           ],
           "tags": [
-            "urgent_care"
+            "activity"
           ]
         },
         {
           "chip_id": "urgent-syncope-symptoms-7",
-          "chip_text": "event count documented",
+          "chip_text": "palpitations or chest pain or SOB reviewed",
           "order": 7,
           "search_terms": [
-            "event",
-            "count",
-            "documented"
+            "palpitations"
           ],
           "tags": [
-            "urgent_care"
+            "or"
           ]
         }
       ],
       "relevant_negatives": [
         {
           "chip_id": "urgent-syncope-relevant_negatives-1",
-          "chip_text": "no chest pain",
+          "chip_text": "no chest pain reported",
           "order": 1,
           "search_terms": [
-            "no",
-            "chest",
-            "pain"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "chest"
           ]
         },
         {
           "chip_id": "urgent-syncope-relevant_negatives-2",
-          "chip_text": "no palpitations",
+          "chip_text": "no focal neurological symptoms reported",
           "order": 2,
           "search_terms": [
-            "no",
-            "palpitations"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "focal"
           ]
         },
         {
           "chip_id": "urgent-syncope-relevant_negatives-3",
-          "chip_text": "no seizure activity",
+          "chip_text": "no palpitations",
           "order": 3,
           "search_terms": [
-            "no",
-            "seizure",
-            "activity"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "palpitations"
           ]
         },
         {
           "chip_id": "urgent-syncope-relevant_negatives-4",
-          "chip_text": "no head injury",
+          "chip_text": "no seizure activity",
           "order": 4,
           "search_terms": [
-            "no",
-            "head",
-            "injury"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "seizure"
           ]
         },
         {
           "chip_id": "urgent-syncope-relevant_negatives-5",
-          "chip_text": "no loss of bowel or bladder control",
+          "chip_text": "no head injury",
           "order": 5,
           "search_terms": [
-            "no",
-            "loss",
-            "of",
-            "bowel"
+            "no"
           ],
           "tags": [
-            "urgent_care"
+            "head"
           ]
         }
       ],
@@ -93341,55 +92968,43 @@
           "chip_text": "vital signs documented if measured",
           "order": 1,
           "search_terms": [
-            "vital",
-            "signs",
-            "documented",
-            "if"
+            "vital"
           ],
           "tags": [
-            "urgent_care"
+            "signs"
           ]
         },
         {
           "chip_id": "urgent-syncope-exam_findings-2",
-          "chip_text": "postural blood pressure documented if measured",
+          "chip_text": "orthostatic BP documented if measured",
           "order": 2,
           "search_terms": [
-            "postural",
-            "blood",
-            "pressure",
-            "documented"
+            "orthostatic"
           ],
           "tags": [
-            "urgent_care"
+            "BP"
           ]
         },
         {
           "chip_id": "urgent-syncope-exam_findings-3",
-          "chip_text": "heart auscultation documented if assessed",
+          "chip_text": "cardiovascular exam documented if assessed",
           "order": 3,
           "search_terms": [
-            "heart",
-            "auscultation",
-            "documented",
-            "if"
+            "cardiovascular"
           ],
           "tags": [
-            "urgent_care"
+            "exam"
           ]
         },
         {
           "chip_id": "urgent-syncope-exam_findings-4",
-          "chip_text": "neurological examination documented if assessed",
+          "chip_text": "neurological screen documented if assessed",
           "order": 4,
           "search_terms": [
-            "neurological",
-            "examination",
-            "documented",
-            "if"
+            "neurological"
           ],
           "tags": [
-            "urgent_care"
+            "screen"
           ]
         },
         {
@@ -93397,13 +93012,10 @@
           "chip_text": "general appearance documented if assessed",
           "order": 5,
           "search_terms": [
-            "general",
-            "appearance",
-            "documented",
-            "if"
+            "general"
           ],
           "tags": [
-            "urgent_care"
+            "appearance"
           ]
         }
       ],
@@ -93413,35 +93025,29 @@
           "chip_text": "exertional syncope",
           "order": 1,
           "search_terms": [
-            "exertional",
-            "syncope"
+            "exertional"
           ],
           "tags": [
-            "urgent_care"
+            "syncope"
           ]
         },
         {
           "chip_id": "urgent-syncope-red_flags-2",
-          "chip_text": "family history of sudden cardiac death",
+          "chip_text": "chest pain",
           "order": 2,
           "search_terms": [
-            "family",
-            "history",
-            "of",
-            "sudden"
+            "chest"
           ],
           "tags": [
-            "urgent_care"
+            "pain"
           ]
         },
         {
           "chip_id": "urgent-syncope-red_flags-3",
-          "chip_text": "new neurological findings",
+          "chip_text": "palpitations",
           "order": 3,
           "search_terms": [
-            "new",
-            "neurological",
-            "findings"
+            "palpitations"
           ],
           "tags": [
             "urgent_care"
@@ -93449,29 +93055,24 @@
         },
         {
           "chip_id": "urgent-syncope-red_flags-4",
-          "chip_text": "chest pain with syncope",
+          "chip_text": "family history sudden death",
           "order": 4,
           "search_terms": [
-            "chest",
-            "pain",
-            "with",
-            "syncope"
+            "family"
           ],
           "tags": [
-            "urgent_care"
+            "history"
           ]
         },
         {
           "chip_id": "urgent-syncope-red_flags-5",
-          "chip_text": "palpitations preceding syncope",
+          "chip_text": "neurological deficit",
           "order": 5,
           "search_terms": [
-            "palpitations",
-            "preceding",
-            "syncope"
+            "neurological"
           ],
           "tags": [
-            "urgent_care"
+            "deficit"
           ]
         }
       ],
@@ -93481,41 +93082,32 @@
           "chip_text": "ECG reviewed if performed",
           "order": 1,
           "search_terms": [
-            "ECG",
-            "reviewed",
-            "if",
-            "performed"
+            "ECG"
           ],
           "tags": [
-            "urgent_care"
+            "reviewed"
           ]
         },
         {
           "chip_id": "urgent-syncope-investigations-2",
-          "chip_text": "blood tests reviewed if ordered",
+          "chip_text": "glucose checked if performed",
           "order": 2,
           "search_terms": [
-            "blood",
-            "tests",
-            "reviewed",
-            "if"
+            "glucose"
           ],
           "tags": [
-            "urgent_care"
+            "checked"
           ]
         },
         {
           "chip_id": "urgent-syncope-investigations-3",
-          "chip_text": "cardiac monitoring documented if arranged",
+          "chip_text": "blood tests reviewed if ordered",
           "order": 3,
           "search_terms": [
-            "cardiac",
-            "monitoring",
-            "documented",
-            "if"
+            "blood"
           ],
           "tags": [
-            "urgent_care"
+            "tests"
           ]
         },
         {
@@ -93523,13 +93115,10 @@
           "chip_text": "previous records reviewed if available",
           "order": 4,
           "search_terms": [
-            "previous",
-            "records",
-            "reviewed",
-            "if"
+            "previous"
           ],
           "tags": [
-            "urgent_care"
+            "records"
           ]
         }
       ],
@@ -93539,69 +93128,43 @@
           "chip_text": "syncope advice documented if discussed",
           "order": 1,
           "search_terms": [
-            "syncope",
-            "advice",
-            "documented",
-            "if"
+            "syncope"
           ],
           "tags": [
-            "urgent_care"
+            "advice"
           ]
         },
         {
           "chip_id": "urgent-syncope-plan_phrases-2",
-          "chip_text": "driving advice documented if discussed",
+          "chip_text": "return precautions documented if discussed",
           "order": 2,
           "search_terms": [
-            "driving",
-            "advice",
-            "documented",
-            "if"
+            "return"
           ],
           "tags": [
-            "urgent_care"
+            "precautions"
           ]
         },
         {
           "chip_id": "urgent-syncope-plan_phrases-3",
-          "chip_text": "return precautions documented if discussed",
+          "chip_text": "referral or escalation documented if clinician decided",
           "order": 3,
           "search_terms": [
-            "return",
-            "precautions",
-            "documented",
-            "if"
+            "referral"
           ],
           "tags": [
-            "urgent_care"
+            "or"
           ]
         },
         {
           "chip_id": "urgent-syncope-plan_phrases-4",
-          "chip_text": "referral or escalation documented if clinician decided",
+          "chip_text": "investigation plan documented if clinician decided",
           "order": 4,
           "search_terms": [
-            "referral",
-            "or",
-            "escalation",
-            "documented"
+            "investigation"
           ],
           "tags": [
-            "urgent_care"
-          ]
-        },
-        {
-          "chip_id": "urgent-syncope-plan_phrases-5",
-          "chip_text": "investigation plan documented if clinician decided",
-          "order": 5,
-          "search_terms": [
-            "investigation",
-            "plan",
-            "documented",
-            "if"
-          ],
-          "tags": [
-            "urgent_care"
+            "plan"
           ]
         }
       ],
@@ -93611,13 +93174,10 @@
           "chip_text": "follow-up in 1 week if arranged",
           "order": 1,
           "search_terms": [
-            "follow-up",
-            "in",
-            "1",
-            "week"
+            "follow-up"
           ],
           "tags": [
-            "urgent_care"
+            "in"
           ]
         },
         {
@@ -93625,13 +93185,10 @@
           "chip_text": "return sooner if recurrent syncope",
           "order": 2,
           "search_terms": [
-            "return",
-            "sooner",
-            "if",
-            "recurrent"
+            "return"
           ],
           "tags": [
-            "urgent_care"
+            "sooner"
           ]
         },
         {
@@ -93639,13 +93196,10 @@
           "chip_text": "cardiology follow-up documented if arranged",
           "order": 3,
           "search_terms": [
-            "cardiology",
-            "follow-up",
-            "documented",
-            "if"
+            "cardiology"
           ],
           "tags": [
-            "urgent_care"
+            "follow-up"
           ]
         }
       ]
