@@ -2923,318 +2923,325 @@ psych-medication-followup,Psychiatry / Mental Health,psych-medication-followup-f
 psych-medication-followup,Psychiatry / Mental Health,psych-medication-followup-f42,follow_up,sooner if worsening or side effects,42,"sooner, PRN","followup,psych"
 psych-medication-followup,Psychiatry / Mental Health,psych-medication-followup-f43,follow_up,sooner if suicidal ideation or severe distress,43,"suicidal ideation, severe distress","followup,psych,risk,high_safety"
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-symptoms-1,symptoms,minor trauma,1,"minor, trauma",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-symptoms-2,symptoms,pain at injury site,2,"pain, at, injury",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-symptoms-2,symptoms,pain at injury site,2,"pain, at, injury, site",urgent_care
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-symptoms-3,symptoms,swelling,3,"swelling",urgent_care
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-symptoms-4,symptoms,bruising,4,"bruising",urgent_care
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-symptoms-5,symptoms,reduced movement,5,"reduced, movement",urgent_care
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-symptoms-6,symptoms,mechanism documented,6,"mechanism, documented",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-symptoms-7,symptoms,time of injury documented,7,"time, of, injury",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-relevant_negatives-1,relevant_negatives,no loss of consciousness,1,"no, loss, of",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-symptoms-7,symptoms,time of injury documented,7,"time, of, injury, documented",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-relevant_negatives-1,relevant_negatives,no loss of consciousness,1,"no, loss, of, consciousness",urgent_care
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-relevant_negatives-2,relevant_negatives,no neurovascular compromise,2,"no, neurovascular, compromise",urgent_care
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-relevant_negatives-3,relevant_negatives,no open wound,3,"no, open, wound",urgent_care
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-relevant_negatives-4,relevant_negatives,no deformity,4,"no, deformity",urgent_care
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-relevant_negatives-5,relevant_negatives,no severe pain,5,"no, severe, pain",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-exam_findings-1,exam_findings,inspection documented if assessed,1,"inspection, documented, if",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-exam_findings-2,exam_findings,tenderness documented if assessed,2,"tenderness, documented, if",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-exam_findings-3,exam_findings,swelling documented if assessed,3,"swelling, documented, if",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-exam_findings-4,exam_findings,bruising documented if assessed,4,"bruising, documented, if",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-exam_findings-5,exam_findings,range of motion documented if assessed,5,"range, of, motion",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-exam_findings-6,exam_findings,neurovascular status documented if assessed,6,"neurovascular, status, documented",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-exam_findings-1,exam_findings,inspection documented if assessed,1,"inspection, documented, if, assessed",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-exam_findings-2,exam_findings,tenderness documented if assessed,2,"tenderness, documented, if, assessed",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-exam_findings-3,exam_findings,swelling documented if assessed,3,"swelling, documented, if, assessed",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-exam_findings-4,exam_findings,bruising documented if assessed,4,"bruising, documented, if, assessed",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-exam_findings-5,exam_findings,range of motion documented if assessed,5,"range, of, motion, documented",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-exam_findings-6,exam_findings,neurovascular status documented if assessed,6,"neurovascular, status, documented, if",urgent_care
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-red_flags-1,red_flags,neurovascular compromise,1,"neurovascular, compromise",urgent_care
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-red_flags-2,red_flags,deformity,2,"deformity",urgent_care
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-red_flags-3,red_flags,open wound,3,"open, wound",urgent_care
 urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-red_flags-4,red_flags,severe uncontrolled pain,4,"severe, uncontrolled, pain",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-red_flags-5,red_flags,loss of consciousness if head injury,5,"loss, of, consciousness",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-investigations-1,investigations,X-ray reviewed if ordered,1,"X-ray, reviewed, if",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-investigations-2,investigations,imaging reviewed if available,2,"imaging, reviewed, if",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-investigations-3,investigations,previous records reviewed if available,3,"previous, records, reviewed",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-plan_phrases-1,plan_phrases,injury advice documented if discussed,1,"injury, advice, documented",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-plan_phrases-2,plan_phrases,analgesia plan documented if clinician decided,2,"analgesia, plan, documented",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-plan_phrases-3,plan_phrases,immobilization or splinting documented if clinician decided,3,"immobilization, or, splinting",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow-up, documented, if",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-plan_phrases-5,plan_phrases,return precautions documented if discussed,5,"return, precautions, documented",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-follow_up-1,follow_up,follow-up in 1 week if not improving,1,"follow-up, in, 1",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-follow_up-2,follow_up,return sooner if worsening,2,"return, sooner, if",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-follow_up-3,follow_up,wound check documented if arranged,3,"wound, check, documented",urgent_care
-urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-follow_up-4,follow_up,physiotherapy referral documented if arranged,4,"physiotherapy, referral, documented",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-red_flags-5,red_flags,loss of consciousness if head injury,5,"loss, of, consciousness, if",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-investigations-1,investigations,X-ray reviewed if ordered,1,"X-ray, reviewed, if, ordered",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-investigations-2,investigations,imaging reviewed if available,2,"imaging, reviewed, if, available",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-investigations-3,investigations,previous records reviewed if available,3,"previous, records, reviewed, if",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-plan_phrases-1,plan_phrases,injury advice documented if discussed,1,"injury, advice, documented, if",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-plan_phrases-2,plan_phrases,analgesia plan documented if clinician decided,2,"analgesia, plan, documented, if",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-plan_phrases-3,plan_phrases,immobilization or splinting documented if clinician decided,3,"immobilization, or, splinting, documented",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow-up, documented, if, arranged",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-plan_phrases-5,plan_phrases,return precautions documented if discussed,5,"return, precautions, documented, if",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-follow_up-1,follow_up,follow-up in 1 week if not improving,1,"follow-up, in, 1, week",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-follow_up-2,follow_up,return sooner if worsening,2,"return, sooner, if, worsening",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-follow_up-3,follow_up,wound check documented if arranged,3,"wound, check, documented, if",urgent_care
+urgent-minor-trauma,Emergency / Urgent Care,urgent-minor-trauma-follow_up-4,follow_up,physiotherapy referral documented if arranged,4,"physiotherapy, referral, documented, if",urgent_care
 urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-symptoms-1,symptoms,wound,1,"wound",urgent_care
 urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-symptoms-2,symptoms,laceration,2,"laceration",urgent_care
 urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-symptoms-3,symptoms,cut wound,3,"cut, wound",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-symptoms-4,symptoms,bleeding documented,4,"bleeding, documented",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-symptoms-5,symptoms,pain at wound site,5,"pain, at, wound",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-symptoms-4,symptoms,wound location documented,4,"wound, location, documented",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-symptoms-5,symptoms,bleeding documented,5,"bleeding, documented",urgent_care
 urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-symptoms-6,symptoms,mechanism documented,6,"mechanism, documented",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-symptoms-7,symptoms,time of injury documented,7,"time, of, injury",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-symptoms-7,symptoms,time of injury documented,7,"time, of, injury, documented",urgent_care
 urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-relevant_negatives-1,relevant_negatives,no neurovascular compromise,1,"no, neurovascular, compromise",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-relevant_negatives-2,relevant_negatives,no tendon injury suspected,2,"no, tendon, injury",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-relevant_negatives-3,relevant_negatives,no foreign body suspected,3,"no, foreign, body",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-relevant_negatives-2,relevant_negatives,no tendon injury suspected,2,"no, tendon, injury, suspected",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-relevant_negatives-3,relevant_negatives,no foreign body suspected,3,"no, foreign, body, suspected",urgent_care
 urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-relevant_negatives-4,relevant_negatives,no active bleeding,4,"no, active, bleeding",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-relevant_negatives-5,relevant_negatives,no wound infection signs,5,"no, wound, infection",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-1,exam_findings,wound size documented if assessed,1,"wound, size, documented",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-2,exam_findings,wound depth documented if assessed,2,"wound, depth, documented",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-3,exam_findings,wound edges documented if assessed,3,"wound, edges, documented",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-4,exam_findings,contamination documented if assessed,4,"contamination, documented, if",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-5,exam_findings,surrounding tissue documented if assessed,5,"surrounding, tissue, documented",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-6,exam_findings,neurovascular status documented if assessed,6,"neurovascular, status, documented",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-relevant_negatives-5,relevant_negatives,no wound infection signs,5,"no, wound, infection, signs",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-1,exam_findings,wound size documented if assessed,1,"wound, size, documented, if",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-2,exam_findings,wound depth documented if assessed,2,"wound, depth, documented, if",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-3,exam_findings,wound edges documented if assessed,3,"wound, edges, documented, if",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-4,exam_findings,contamination documented if assessed,4,"contamination, documented, if, assessed",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-5,exam_findings,foreign body concern documented if assessed,5,"foreign, body, concern, documented",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-6,exam_findings,tetanus status reviewed if relevant,6,"tetanus, status, reviewed, if",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-exam_findings-7,exam_findings,neurovascular status documented if assessed,7,"neurovascular, status, documented, if",urgent_care
 urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-red_flags-1,red_flags,neurovascular compromise,1,"neurovascular, compromise",urgent_care
 urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-red_flags-2,red_flags,tendon involvement,2,"tendon, involvement",urgent_care
 urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-red_flags-3,red_flags,deep structure involvement,3,"deep, structure, involvement",urgent_care
 urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-red_flags-4,red_flags,retained foreign body,4,"retained, foreign, body",urgent_care
 urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-red_flags-5,red_flags,infection signs,5,"infection, signs",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-investigations-1,investigations,X-ray reviewed if ordered,1,"X-ray, reviewed, if",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-investigations-2,investigations,imaging reviewed if available,2,"imaging, reviewed, if",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-investigations-3,investigations,foreign body series reviewed if ordered,3,"foreign, body, series",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-1,plan_phrases,wound closure documented if performed,1,"wound, closure, documented",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-2,plan_phrases,wound care instructions documented if discussed,2,"wound, care, instructions",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-3,plan_phrases,tetanus prophylaxis documented if given,3,"tetanus, prophylaxis, documented",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-4,plan_phrases,analgesia plan documented if clinician decided,4,"analgesia, plan, documented",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-5,plan_phrases,antibiotic plan documented if clinician decided,5,"antibiotic, plan, documented",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-6,plan_phrases,return precautions documented if discussed,6,"return, precautions, documented",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-follow_up-1,follow_up,wound check in 3-5 days,1,"wound, check, in",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-follow_up-2,follow_up,suture removal documented if arranged,2,"suture, removal, documented",urgent_care
-urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-follow_up-3,follow_up,return sooner if signs of infection,3,"return, sooner, if",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-investigations-1,investigations,X-ray reviewed if ordered,1,"X-ray, reviewed, if, ordered",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-investigations-2,investigations,imaging reviewed if available,2,"imaging, reviewed, if, available",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-investigations-3,investigations,foreign body series reviewed if ordered,3,"foreign, body, series, reviewed",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-1,plan_phrases,wound care advice documented if discussed,1,"wound, care, advice, documented",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-2,plan_phrases,wound closure documented if performed,2,"wound, closure, documented, if",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-3,plan_phrases,dressing documented if applied,3,"dressing, documented, if, applied",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-4,plan_phrases,closure or suture plan documented if clinician decided,4,"closure, or, suture, plan",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-5,plan_phrases,tetanus prophylaxis documented if given,5,"tetanus, prophylaxis, documented, if",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-6,plan_phrases,analgesia plan documented if clinician decided,6,"analgesia, plan, documented, if",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-7,plan_phrases,antibiotic plan documented if clinician decided,7,"antibiotic, plan, documented, if",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-plan_phrases-8,plan_phrases,return precautions documented if discussed,8,"return, precautions, documented, if",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-follow_up-1,follow_up,wound check in 3-5 days,1,"wound, check, in, 3-5",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-follow_up-2,follow_up,suture removal documented if arranged,2,"suture, removal, documented, if",urgent_care
+urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-follow_up-3,follow_up,return sooner if signs of infection,3,"return, sooner, if, signs",urgent_care
 urgent-wound-care-laceration,Emergency / Urgent Care,urgent-wound-care-laceration-follow_up-4,follow_up,follow-up PRN,4,"follow-up, PRN",urgent_care
 urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-symptoms-1,symptoms,burn,1,"burn",urgent_care
 urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-symptoms-2,symptoms,thermal burn,2,"thermal, burn",urgent_care
 urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-symptoms-3,symptoms,scald,3,"scald",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-symptoms-4,symptoms,pain at burn site,4,"pain, at, burn",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-symptoms-5,symptoms,blistering,5,"blistering",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-symptoms-6,symptoms,redness,6,"redness",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-symptoms-7,symptoms,mechanism documented,7,"mechanism, documented",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-symptoms-4,symptoms,burn mechanism documented,4,"burn, mechanism, documented",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-symptoms-5,symptoms,burn site documented,5,"burn, site, documented",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-symptoms-6,symptoms,pain at burn site,6,"pain, at, burn, site",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-symptoms-7,symptoms,blistering,7,"blistering",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-symptoms-8,symptoms,redness,8,"redness",urgent_care
 urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-relevant_negatives-1,relevant_negatives,no airway involvement,1,"no, airway, involvement",urgent_care
 urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-relevant_negatives-2,relevant_negatives,no inhalational injury,2,"no, inhalational, injury",urgent_care
 urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-relevant_negatives-3,relevant_negatives,no circumferential burn,3,"no, circumferential, burn",urgent_care
 urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-relevant_negatives-4,relevant_negatives,no chemical burn,4,"no, chemical, burn",urgent_care
 urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-relevant_negatives-5,relevant_negatives,no electrical burn,5,"no, electrical, burn",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-1,exam_findings,burn depth documented if assessed,1,"burn, depth, documented",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-2,exam_findings,total body surface area estimated if assessed,2,"total, body, surface",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-3,exam_findings,burn site documented if assessed,3,"burn, site, documented",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-4,exam_findings,blistering documented if assessed,4,"blistering, documented, if",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-5,exam_findings,surrounding erythema documented if assessed,5,"surrounding, erythema, documented",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-6,exam_findings,neurovascular status documented if assessed,6,"neurovascular, status, documented",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-red_flags-1,red_flags,airway or inhalational injury,1,"airway, or, inhalational",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-1,exam_findings,burn depth documented if assessed,1,"burn, depth, documented, if",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-2,exam_findings,burn size and area documented if assessed,2,"burn, size, and, area",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-3,exam_findings,burn site documented if assessed,3,"burn, site, documented, if",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-4,exam_findings,blistering documented if assessed,4,"blistering, documented, if, assessed",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-5,exam_findings,circumferential burn concern documented if assessed,5,"circumferential, burn, concern, documented",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-6,exam_findings,inhalation concern documented if assessed,6,"inhalation, concern, documented, if",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-exam_findings-7,exam_findings,neurovascular status documented if assessed,7,"neurovascular, status, documented, if",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-red_flags-1,red_flags,airway or inhalational injury,1,"airway, or, inhalational, injury",urgent_care
 urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-red_flags-2,red_flags,circumferential burn,2,"circumferential, burn",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-red_flags-3,red_flags,chemical or electrical burn,3,"chemical, or, electrical",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-red_flags-3,red_flags,chemical or electrical burn,3,"chemical, or, electrical, burn",urgent_care
 urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-red_flags-4,red_flags,full-thickness burn,4,"full-thickness, burn",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-red_flags-5,red_flags,large body surface area burn,5,"large, body, surface",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-investigations-1,investigations,imaging reviewed if ordered,1,"imaging, reviewed, if",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-investigations-2,investigations,previous records reviewed if available,2,"previous, records, reviewed",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-plan_phrases-1,plan_phrases,burn care instructions documented if discussed,1,"burn, care, instructions",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-plan_phrases-2,plan_phrases,analgesia plan documented if clinician decided,2,"analgesia, plan, documented",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-plan_phrases-3,plan_phrases,dressing plan documented if clinician decided,3,"dressing, plan, documented",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-plan_phrases-4,plan_phrases,tetanus prophylaxis documented if given,4,"tetanus, prophylaxis, documented",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-plan_phrases-5,plan_phrases,return precautions documented if discussed,5,"return, precautions, documented",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-plan_phrases-6,plan_phrases,referral or escalation documented if clinician decided,6,"referral, or, escalation",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-follow_up-1,follow_up,dressing change in 2-3 days,1,"dressing, change, in",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-follow_up-2,follow_up,return sooner if signs of infection,2,"return, sooner, if",urgent_care
-urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-follow_up-3,follow_up,follow-up in 1 week if not improving,3,"follow-up, in, 1",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-1,symptoms,allergic reaction,1,"allergic, reaction",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-2,symptoms,rash,2,"rash",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-3,symptoms,itching,3,"itching",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-4,symptoms,swelling,4,"swelling",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-5,symptoms,urticaria,5,"urticaria",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-6,symptoms,angioedema,6,"angioedema",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-7,symptoms,trigger documented if identified,7,"trigger, documented, if",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-relevant_negatives-1,relevant_negatives,no respiratory distress,1,"no, respiratory, distress",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-relevant_negatives-2,relevant_negatives,no stridor or wheeze,2,"no, stridor, or",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-relevant_negatives-3,relevant_negatives,no throat tightness,3,"no, throat, tightness",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-relevant_negatives-4,relevant_negatives,no anaphylaxis features,4,"no, anaphylaxis, features",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-red_flags-5,red_flags,large body surface area burn,5,"large, body, surface, area",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-investigations-1,investigations,imaging reviewed if ordered,1,"imaging, reviewed, if, ordered",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-investigations-2,investigations,previous records reviewed if available,2,"previous, records, reviewed, if",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-plan_phrases-1,plan_phrases,burn care advice documented if discussed,1,"burn, care, advice, documented",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-plan_phrases-2,plan_phrases,dressing plan documented if clinician decided,2,"dressing, plan, documented, if",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-plan_phrases-3,plan_phrases,analgesia plan documented if clinician decided,3,"analgesia, plan, documented, if",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-plan_phrases-4,plan_phrases,tetanus prophylaxis documented if given,4,"tetanus, prophylaxis, documented, if",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-plan_phrases-5,plan_phrases,return precautions documented if discussed,5,"return, precautions, documented, if",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-plan_phrases-6,plan_phrases,referral or escalation documented if clinician decided,6,"referral, or, escalation, documented",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-follow_up-1,follow_up,follow-up documented if arranged,1,"follow-up, documented, if, arranged",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-follow_up-2,follow_up,dressing change in 2-3 days,2,"dressing, change, in, 2-3",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-follow_up-3,follow_up,return sooner if signs of infection,3,"return, sooner, if, signs",urgent_care
+urgent-burn-assessment,Emergency / Urgent Care,urgent-burn-assessment-follow_up-4,follow_up,follow-up in 1 week if not improving,4,"follow-up, in, 1, week",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-1,symptoms,rash or urticaria,1,"rash, or, urticaria",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-2,symptoms,itching,2,"itching",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-3,symptoms,swelling,3,"swelling",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-4,symptoms,allergic reaction,4,"allergic, reaction",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-5,symptoms,trigger or exposure documented,5,"trigger, or, exposure, documented",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-6,symptoms,breathing symptoms reviewed,6,"breathing, symptoms, reviewed",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-7,symptoms,lip or tongue swelling reviewed,7,"lip, or, tongue, swelling",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-symptoms-8,symptoms,dizziness or syncope reviewed,8,"dizziness, or, syncope, reviewed",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-relevant_negatives-1,relevant_negatives,no breathing difficulty reported,1,"no, breathing, difficulty, reported",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-relevant_negatives-2,relevant_negatives,no lip or tongue swelling reported,2,"no, lip, or, tongue",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-relevant_negatives-3,relevant_negatives,no syncope reported,3,"no, syncope, reported",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-relevant_negatives-4,relevant_negatives,no stridor or wheeze,4,"no, stridor, or, wheeze",urgent_care
 urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-relevant_negatives-5,relevant_negatives,no hypotension,5,"no, hypotension",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-exam_findings-1,exam_findings,rash morphology documented if assessed,1,"rash, morphology, documented",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-exam_findings-2,exam_findings,rash distribution documented if assessed,2,"rash, distribution, documented",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-exam_findings-3,exam_findings,angioedema documented if assessed,3,"angioedema, documented, if",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-exam_findings-4,exam_findings,respiratory status documented if assessed,4,"respiratory, status, documented",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-exam_findings-5,exam_findings,airway status documented if assessed,5,"airway, status, documented",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-exam_findings-6,exam_findings,vital signs documented if measured,6,"vital, signs, documented",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-red_flags-1,red_flags,respiratory distress,1,"respiratory, distress",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-red_flags-2,red_flags,stridor or wheeze,2,"stridor, or, wheeze",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-red_flags-3,red_flags,angioedema involving airway,3,"angioedema, involving, airway",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-red_flags-4,red_flags,anaphylaxis features,4,"anaphylaxis, features",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-red_flags-5,red_flags,hypotension or shock,5,"hypotension, or, shock",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-investigations-1,investigations,previous records reviewed if available,1,"previous, records, reviewed",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-investigations-2,investigations,allergy history reviewed if available,2,"allergy, history, reviewed",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-plan_phrases-1,plan_phrases,allergy advice documented if discussed,1,"allergy, advice, documented",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-plan_phrases-2,plan_phrases,antihistamine plan documented if clinician decided,2,"antihistamine, plan, documented",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-plan_phrases-3,plan_phrases,trigger avoidance documented if discussed,3,"trigger, avoidance, documented",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-plan_phrases-4,plan_phrases,epinephrine auto-injector documented if clinician decided,4,"epinephrine, auto-injector, documented",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-plan_phrases-5,plan_phrases,return precautions documented if discussed,5,"return, precautions, documented",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-plan_phrases-6,plan_phrases,referral or escalation documented if clinician decided,6,"referral, or, escalation",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-follow_up-1,follow_up,follow-up in 1 week if not improving,1,"follow-up, in, 1",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-follow_up-2,follow_up,return sooner if symptoms worsen,2,"return, sooner, if",urgent_care
-urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-follow_up-3,follow_up,allergy clinic referral documented if arranged,3,"allergy, clinic, referral",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-exam_findings-1,exam_findings,vital signs documented if measured,1,"vital, signs, documented, if",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-exam_findings-2,exam_findings,rash documented if assessed,2,"rash, documented, if, assessed",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-exam_findings-3,exam_findings,rash distribution documented if assessed,3,"rash, distribution, documented, if",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-exam_findings-4,exam_findings,angioedema documented if assessed,4,"angioedema, documented, if, assessed",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-exam_findings-5,exam_findings,respiratory status documented if assessed,5,"respiratory, status, documented, if",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-exam_findings-6,exam_findings,airway status documented if assessed,6,"airway, status, documented, if",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-red_flags-1,red_flags,breathing difficulty,1,"breathing, difficulty",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-red_flags-2,red_flags,lip or tongue swelling,2,"lip, or, tongue, swelling",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-red_flags-3,red_flags,hypotension symptoms,3,"hypotension, symptoms",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-red_flags-4,red_flags,syncope,4,"syncope",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-red_flags-5,red_flags,wheeze or stridor,5,"wheeze, or, stridor",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-investigations-1,investigations,previous records reviewed if available,1,"previous, records, reviewed, if",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-investigations-2,investigations,allergy history reviewed if available,2,"allergy, history, reviewed, if",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-plan_phrases-1,plan_phrases,allergy advice documented if discussed,1,"allergy, advice, documented, if",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-plan_phrases-2,plan_phrases,trigger avoidance documented if discussed,2,"trigger, avoidance, documented, if",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-plan_phrases-3,plan_phrases,medication plan documented if clinician decided,3,"medication, plan, documented, if",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-plan_phrases-4,plan_phrases,antihistamine plan documented if clinician decided,4,"antihistamine, plan, documented, if",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-plan_phrases-5,plan_phrases,return precautions documented if discussed,5,"return, precautions, documented, if",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-plan_phrases-6,plan_phrases,referral or escalation documented if clinician decided,6,"referral, or, escalation, documented",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-follow_up-1,follow_up,follow-up in 1 week if not improving,1,"follow-up, in, 1, week",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-follow_up-2,follow_up,return sooner if symptoms worsen,2,"return, sooner, if, symptoms",urgent_care
+urgent-allergic-reaction,Emergency / Urgent Care,urgent-allergic-reaction-follow_up-3,follow_up,allergy clinic referral documented if arranged,3,"allergy, clinic, referral, documented",urgent_care
 urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-1,symptoms,head injury,1,"head, injury",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-2,symptoms,headache,2,"headache",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-3,symptoms,dizziness,3,"dizziness",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-4,symptoms,mechanism documented,4,"mechanism, documented",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-5,symptoms,time of injury documented,5,"time, of, injury",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-6,symptoms,loss of consciousness documented if reported,6,"loss, of, consciousness",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-relevant_negatives-1,relevant_negatives,no loss of consciousness,1,"no, loss, of",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-relevant_negatives-2,relevant_negatives,no vomiting,2,"no, vomiting",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-relevant_negatives-3,relevant_negatives,no amnesia,3,"no, amnesia",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-2,symptoms,mechanism documented,2,"mechanism, documented",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-3,symptoms,time of injury documented,3,"time, of, injury, documented",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-4,symptoms,loss of consciousness reviewed,4,"loss, of, consciousness, reviewed",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-5,symptoms,vomiting reviewed,5,"vomiting, reviewed",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-6,symptoms,headache documented,6,"headache, documented",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-7,symptoms,amnesia or confusion reviewed,7,"amnesia, or, confusion, reviewed",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-symptoms-8,symptoms,anticoagulant use reviewed if relevant,8,"anticoagulant, use, reviewed, if",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-relevant_negatives-1,relevant_negatives,no loss of consciousness reported,1,"no, loss, of, consciousness",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-relevant_negatives-2,relevant_negatives,no repeated vomiting reported,2,"no, repeated, vomiting, reported",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-relevant_negatives-3,relevant_negatives,no seizure reported,3,"no, seizure, reported",urgent_care
 urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-relevant_negatives-4,relevant_negatives,no neurological symptoms,4,"no, neurological, symptoms",urgent_care
 urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-relevant_negatives-5,relevant_negatives,no anticoagulation medication,5,"no, anticoagulation, medication",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-exam_findings-1,exam_findings,Glasgow Coma Scale documented if assessed,1,"Glasgow, Coma, Scale",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-exam_findings-2,exam_findings,pupil examination documented if assessed,2,"pupil, examination, documented",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-exam_findings-3,exam_findings,head inspection documented if assessed,3,"head, inspection, documented",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-exam_findings-4,exam_findings,neurological examination documented if assessed,4,"neurological, examination, documented",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-exam_findings-5,exam_findings,neck examination documented if assessed,5,"neck, examination, documented",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-exam_findings-6,exam_findings,vital signs documented if measured,6,"vital, signs, documented",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-red_flags-1,red_flags,GCS less than 15,1,"GCS, less, than",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-red_flags-2,red_flags,focal neurological deficit,2,"focal, neurological, deficit",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-red_flags-3,red_flags,suspected skull fracture,3,"suspected, skull, fracture",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-red_flags-4,red_flags,vomiting post-injury,4,"vomiting, post-injury",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-red_flags-5,red_flags,anticoagulation or bleeding disorder,5,"anticoagulation, or, bleeding",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-red_flags-6,red_flags,severe or worsening headache,6,"severe, or, worsening",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-investigations-1,investigations,CT head reviewed if ordered,1,"CT, head, reviewed",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-investigations-2,investigations,imaging reviewed if available,2,"imaging, reviewed, if",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-investigations-3,investigations,previous records reviewed if available,3,"previous, records, reviewed",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-plan_phrases-1,plan_phrases,head injury advice documented if discussed,1,"head, injury, advice",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-plan_phrases-2,plan_phrases,observation plan documented if clinician decided,2,"observation, plan, documented",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-plan_phrases-3,plan_phrases,return precautions documented if discussed,3,"return, precautions, documented",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-plan_phrases-4,plan_phrases,analgesia plan documented if clinician decided,4,"analgesia, plan, documented",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-plan_phrases-5,plan_phrases,referral or escalation documented if clinician decided,5,"referral, or, escalation",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-follow_up-1,follow_up,follow-up in 1-2 days,1,"follow-up, in, 1-2",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-follow_up-2,follow_up,return sooner if symptoms worsen,2,"return, sooner, if",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-follow_up-3,follow_up,return if vomiting or worsening headache,3,"return, if, vomiting",urgent_care
-urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-follow_up-4,follow_up,neurosurgical follow-up documented if arranged,4,"neurosurgical, follow-up, documented",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-exam_findings-1,exam_findings,Glasgow Coma Scale documented if assessed,1,"Glasgow, Coma, Scale, documented",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-exam_findings-2,exam_findings,pupils documented if assessed,2,"pupils, documented, if, assessed",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-exam_findings-3,exam_findings,neurological screen documented if assessed,3,"neurological, screen, documented, if",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-exam_findings-4,exam_findings,scalp wound or swelling documented if assessed,4,"scalp, wound, or, swelling",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-exam_findings-5,exam_findings,vital signs documented if measured,5,"vital, signs, documented, if",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-exam_findings-6,exam_findings,neck examination documented if assessed,6,"neck, examination, documented, if",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-red_flags-1,red_flags,loss of consciousness,1,"loss, of, consciousness",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-red_flags-2,red_flags,repeated vomiting,2,"repeated, vomiting",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-red_flags-3,red_flags,seizure,3,"seizure",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-red_flags-4,red_flags,worsening headache,4,"worsening, headache",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-red_flags-5,red_flags,neurological deficit,5,"neurological, deficit",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-red_flags-6,red_flags,anticoagulant use,6,"anticoagulant, use",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-investigations-1,investigations,CT head reviewed if ordered,1,"CT, head, reviewed, if",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-investigations-2,investigations,imaging reviewed if available,2,"imaging, reviewed, if, available",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-investigations-3,investigations,previous records reviewed if available,3,"previous, records, reviewed, if",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-plan_phrases-1,plan_phrases,head injury advice documented if discussed,1,"head, injury, advice, documented",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-plan_phrases-2,plan_phrases,observation plan documented if clinician decided,2,"observation, plan, documented, if",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-plan_phrases-3,plan_phrases,return precautions documented if discussed,3,"return, precautions, documented, if",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-plan_phrases-4,plan_phrases,analgesia plan documented if clinician decided,4,"analgesia, plan, documented, if",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-plan_phrases-5,plan_phrases,referral or escalation documented if clinician decided,5,"referral, or, escalation, documented",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-follow_up-1,follow_up,follow-up in 1-2 days,1,"follow-up, in, 1-2, days",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-follow_up-2,follow_up,return sooner if symptoms worsen,2,"return, sooner, if, symptoms",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-follow_up-3,follow_up,return if vomiting or worsening headache,3,"return, if, vomiting, or",urgent_care
+urgent-head-injury,Emergency / Urgent Care,urgent-head-injury-follow_up-4,follow_up,neurosurgical follow-up documented if arranged,4,"neurosurgical, follow-up, documented, if",urgent_care
 urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-1,symptoms,chest pain,1,"chest, pain",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-2,symptoms,chest tightness,2,"chest, tightness",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-3,symptoms,chest discomfort,3,"chest, discomfort",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-4,symptoms,pain character documented,4,"pain, character, documented",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-5,symptoms,pain radiation documented,5,"pain, radiation, documented",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-6,symptoms,onset documented,6,"onset, documented",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-7,symptoms,associated symptoms documented,7,"associated, symptoms, documented",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-relevant_negatives-1,relevant_negatives,no shortness of breath,1,"no, shortness, of",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-relevant_negatives-2,relevant_negatives,no diaphoresis,2,"no, diaphoresis",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-relevant_negatives-3,relevant_negatives,no palpitations,3,"no, palpitations",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-relevant_negatives-4,relevant_negatives,no syncope,4,"no, syncope",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-relevant_negatives-5,relevant_negatives,no nausea or vomiting,5,"no, nausea, or",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-exam_findings-1,exam_findings,vital signs documented if measured,1,"vital, signs, documented",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-exam_findings-2,exam_findings,heart auscultation documented if assessed,2,"heart, auscultation, documented",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-exam_findings-3,exam_findings,respiratory examination documented if assessed,3,"respiratory, examination, documented",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-exam_findings-4,exam_findings,general appearance documented if assessed,4,"general, appearance, documented",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-exam_findings-5,exam_findings,chest wall examination documented if assessed,5,"chest, wall, examination",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-red_flags-1,red_flags,ECG changes,1,"ECG, changes",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-red_flags-2,red_flags,troponin elevation,2,"troponin, elevation",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-red_flags-3,red_flags,hemodynamic instability,3,"hemodynamic, instability",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-red_flags-4,red_flags,syncope or pre-syncope,4,"syncope, or, pre-syncope",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-red_flags-5,red_flags,pulmonary edema features,5,"pulmonary, edema, features",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-red_flags-6,red_flags,new murmur,6,"new, murmur",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-investigations-1,investigations,ECG reviewed if performed,1,"ECG, reviewed, if",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-investigations-2,investigations,chest X-ray reviewed if ordered,2,"chest, X-ray, reviewed",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-investigations-3,investigations,cardiac markers reviewed if ordered,3,"cardiac, markers, reviewed",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-investigations-4,investigations,previous records reviewed if available,4,"previous, records, reviewed",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-plan_phrases-1,plan_phrases,analgesia plan documented if clinician decided,1,"analgesia, plan, documented",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-plan_phrases-2,plan_phrases,cardiac monitoring documented if clinician decided,2,"cardiac, monitoring, documented",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-plan_phrases-3,plan_phrases,return precautions documented if discussed,3,"return, precautions, documented",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-plan_phrases-4,plan_phrases,referral or escalation documented if clinician decided,4,"referral, or, escalation",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-plan_phrases-5,plan_phrases,investigation plan documented if clinician decided,5,"investigation, plan, documented",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-follow_up-1,follow_up,follow-up arranged if clinician decided,1,"follow-up, arranged, if",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-follow_up-2,follow_up,return sooner if symptoms worsen,2,"return, sooner, if",urgent_care
-urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-follow_up-3,follow_up,cardiology follow-up documented if arranged,3,"cardiology, follow-up, documented",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-2,symptoms,onset documented,2,"onset, documented",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-3,symptoms,character documented,3,"character, documented",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-4,symptoms,radiation reviewed,4,"radiation, reviewed",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-5,symptoms,exertional relation reviewed,5,"exertional, relation, reviewed",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-6,symptoms,associated SOB or nausea or sweating reviewed,6,"associated, SOB, or, nausea",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-symptoms-7,symptoms,risk factors reviewed,7,"risk, factors, reviewed",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-relevant_negatives-1,relevant_negatives,no shortness of breath reported,1,"no, shortness, of, breath",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-relevant_negatives-2,relevant_negatives,no syncope reported,2,"no, syncope, reported",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-relevant_negatives-3,relevant_negatives,no palpitations reported,3,"no, palpitations, reported",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-relevant_negatives-4,relevant_negatives,no diaphoresis,4,"no, diaphoresis",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-relevant_negatives-5,relevant_negatives,no nausea or vomiting,5,"no, nausea, or, vomiting",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-exam_findings-1,exam_findings,vital signs documented if measured,1,"vital, signs, documented, if",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-exam_findings-2,exam_findings,cardiovascular exam documented if assessed,2,"cardiovascular, exam, documented, if",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-exam_findings-3,exam_findings,respiratory exam documented if assessed,3,"respiratory, exam, documented, if",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-exam_findings-4,exam_findings,general appearance documented if assessed,4,"general, appearance, documented, if",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-exam_findings-5,exam_findings,chest wall examination documented if assessed,5,"chest, wall, examination, documented",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-red_flags-1,red_flags,exertional chest pain,1,"exertional, chest, pain",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-red_flags-2,red_flags,syncope,2,"syncope",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-red_flags-3,red_flags,severe persistent pain,3,"severe, persistent, pain",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-red_flags-4,red_flags,abnormal vitals,4,"abnormal, vitals",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-investigations-1,investigations,ECG reviewed if performed,1,"ECG, reviewed, if, performed",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-investigations-2,investigations,troponin reviewed if ordered,2,"troponin, reviewed, if, ordered",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-investigations-3,investigations,chest imaging reviewed if available,3,"chest, imaging, reviewed, if",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-investigations-4,investigations,previous records reviewed if available,4,"previous, records, reviewed, if",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-plan_phrases-1,plan_phrases,analgesia plan documented if clinician decided,1,"analgesia, plan, documented, if",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-plan_phrases-2,plan_phrases,cardiac monitoring documented if clinician decided,2,"cardiac, monitoring, documented, if",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-plan_phrases-3,plan_phrases,return precautions documented if discussed,3,"return, precautions, documented, if",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-plan_phrases-4,plan_phrases,referral or escalation documented if clinician decided,4,"referral, or, escalation, documented",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-plan_phrases-5,plan_phrases,investigation plan documented if clinician decided,5,"investigation, plan, documented, if",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-follow_up-1,follow_up,follow-up arranged if clinician decided,1,"follow-up, arranged, if, clinician",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-follow_up-2,follow_up,return sooner if symptoms worsen,2,"return, sooner, if, symptoms",urgent_care
+urgent-chest-pain,Emergency / Urgent Care,urgent-chest-pain-follow_up-3,follow_up,cardiology follow-up documented if arranged,3,"cardiology, follow-up, documented, if",urgent_care
 urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-symptoms-1,symptoms,shortness of breath,1,"shortness, of, breath",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-symptoms-2,symptoms,dyspnea,2,"dyspnea",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-symptoms-3,symptoms,breathing difficulty,3,"breathing, difficulty",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-symptoms-4,symptoms,onset documented,4,"onset, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-symptoms-5,symptoms,triggers documented,5,"triggers, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-symptoms-6,symptoms,associated symptoms documented,6,"associated, symptoms, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-relevant_negatives-1,relevant_negatives,no chest pain,1,"no, chest, pain",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-relevant_negatives-2,relevant_negatives,no hemoptysis,2,"no, hemoptysis",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-relevant_negatives-3,relevant_negatives,no fever,3,"no, fever",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-relevant_negatives-4,relevant_negatives,no recent surgery or immobilization,4,"no, recent, surgery",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-relevant_negatives-5,relevant_negatives,no known DVT or PE,5,"no, known, DVT",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-exam_findings-1,exam_findings,respiratory rate documented if measured,1,"respiratory, rate, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-exam_findings-2,exam_findings,oxygen saturation documented if measured,2,"oxygen, saturation, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-exam_findings-3,exam_findings,chest auscultation documented if assessed,3,"chest, auscultation, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-exam_findings-4,exam_findings,respiratory effort documented if assessed,4,"respiratory, effort, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-exam_findings-5,exam_findings,vital signs documented if measured,5,"vital, signs, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-exam_findings-6,exam_findings,general appearance documented if assessed,6,"general, appearance, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-red_flags-1,red_flags,hypoxia,1,"hypoxia",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-red_flags-2,red_flags,tachypnea,2,"tachypnea",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-red_flags-3,red_flags,inability to speak,3,"inability, to, speak",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-red_flags-4,red_flags,stridor,4,"stridor",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-red_flags-5,red_flags,cyanosis,5,"cyanosis",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-symptoms-2,symptoms,onset documented,2,"onset, documented",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-symptoms-3,symptoms,exertional or rest symptoms documented,3,"exertional, or, rest, symptoms",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-symptoms-4,symptoms,cough or wheeze or chest pain or fever reviewed,4,"cough, or, wheeze, or",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-symptoms-5,symptoms,leg swelling reviewed,5,"leg, swelling, reviewed",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-relevant_negatives-1,relevant_negatives,no chest pain reported,1,"no, chest, pain, reported",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-relevant_negatives-2,relevant_negatives,no syncope reported,2,"no, syncope, reported",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-relevant_negatives-3,relevant_negatives,no hemoptysis reported,3,"no, hemoptysis, reported",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-relevant_negatives-4,relevant_negatives,no fever,4,"no, fever",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-relevant_negatives-5,relevant_negatives,no recent surgery or immobilization,5,"no, recent, surgery, or",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-exam_findings-1,exam_findings,respiratory rate documented if measured,1,"respiratory, rate, documented, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-exam_findings-2,exam_findings,oxygen saturation documented if measured,2,"oxygen, saturation, documented, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-exam_findings-3,exam_findings,work of breathing documented if assessed,3,"work, of, breathing, documented",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-exam_findings-4,exam_findings,chest auscultation documented if assessed,4,"chest, auscultation, documented, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-exam_findings-5,exam_findings,vital signs documented if measured,5,"vital, signs, documented, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-exam_findings-6,exam_findings,general appearance documented if assessed,6,"general, appearance, documented, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-red_flags-1,red_flags,severe respiratory distress,1,"severe, respiratory, distress",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-red_flags-2,red_flags,cyanosis,2,"cyanosis",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-red_flags-3,red_flags,abnormal oxygen saturation if documented,3,"abnormal, oxygen, saturation, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-red_flags-4,red_flags,syncope,4,"syncope",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-red_flags-5,red_flags,stridor,5,"stridor",urgent_care
 urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-red_flags-6,red_flags,unilateral leg swelling,6,"unilateral, leg, swelling",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-investigations-1,investigations,chest X-ray reviewed if ordered,1,"chest, X-ray, reviewed",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-investigations-2,investigations,oxygen saturation documented if measured,2,"oxygen, saturation, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-investigations-3,investigations,ECG reviewed if performed,3,"ECG, reviewed, if",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-investigations-4,investigations,previous records reviewed if available,4,"previous, records, reviewed",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-plan_phrases-1,plan_phrases,management plan documented if clinician decided,1,"management, plan, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-plan_phrases-2,plan_phrases,oxygen therapy documented if given,2,"oxygen, therapy, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-plan_phrases-3,plan_phrases,return precautions documented if discussed,3,"return, precautions, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-plan_phrases-4,plan_phrases,referral or escalation documented if clinician decided,4,"referral, or, escalation",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-plan_phrases-5,plan_phrases,investigation plan documented if clinician decided,5,"investigation, plan, documented",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-follow_up-1,follow_up,follow-up in 1-2 days if not improving,1,"follow-up, in, 1-2",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-follow_up-2,follow_up,return sooner if symptoms worsen,2,"return, sooner, if",urgent_care
-urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-follow_up-3,follow_up,respiratory follow-up documented if arranged,3,"respiratory, follow-up, documented",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-investigations-1,investigations,chest imaging reviewed if available,1,"chest, imaging, reviewed, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-investigations-2,investigations,ECG reviewed if performed,2,"ECG, reviewed, if, performed",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-investigations-3,investigations,blood tests reviewed if ordered,3,"blood, tests, reviewed, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-investigations-4,investigations,previous records reviewed if available,4,"previous, records, reviewed, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-plan_phrases-1,plan_phrases,management plan documented if clinician decided,1,"management, plan, documented, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-plan_phrases-2,plan_phrases,oxygen therapy documented if given,2,"oxygen, therapy, documented, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-plan_phrases-3,plan_phrases,return precautions documented if discussed,3,"return, precautions, documented, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-plan_phrases-4,plan_phrases,referral or escalation documented if clinician decided,4,"referral, or, escalation, documented",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-plan_phrases-5,plan_phrases,investigation plan documented if clinician decided,5,"investigation, plan, documented, if",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-follow_up-1,follow_up,follow-up in 1-2 days if not improving,1,"follow-up, in, 1-2, days",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-follow_up-2,follow_up,return sooner if symptoms worsen,2,"return, sooner, if, symptoms",urgent_care
+urgent-shortness-of-breath,Emergency / Urgent Care,urgent-shortness-of-breath-follow_up-3,follow_up,respiratory follow-up documented if arranged,3,"respiratory, follow-up, documented, if",urgent_care
 urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-1,symptoms,abdominal pain,1,"abdominal, pain",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-2,symptoms,pain location documented,2,"pain, location, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-3,symptoms,pain character documented,3,"pain, character, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-4,symptoms,pain severity documented,4,"pain, severity, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-5,symptoms,onset documented,5,"onset, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-6,symptoms,associated symptoms documented,6,"associated, symptoms, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-relevant_negatives-1,relevant_negatives,no vomiting,1,"no, vomiting",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-relevant_negatives-2,relevant_negatives,no diarrhea,2,"no, diarrhea",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-relevant_negatives-3,relevant_negatives,no urinary symptoms,3,"no, urinary, symptoms",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-2,symptoms,location documented,2,"location, documented",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-3,symptoms,duration documented,3,"duration, documented",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-4,symptoms,nausea or vomiting,4,"nausea, or, vomiting",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-5,symptoms,diarrhea or constipation,5,"diarrhea, or, constipation",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-6,symptoms,urinary symptoms reviewed,6,"urinary, symptoms, reviewed",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-7,symptoms,fever reviewed,7,"fever, reviewed",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-symptoms-8,symptoms,associated symptoms documented,8,"associated, symptoms, documented",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-relevant_negatives-1,relevant_negatives,no blood in stool reported,1,"no, blood, in, stool",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-relevant_negatives-2,relevant_negatives,no persistent vomiting reported,2,"no, persistent, vomiting, reported",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-relevant_negatives-3,relevant_negatives,no surgical history,3,"no, surgical, history",urgent_care
 urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-relevant_negatives-4,relevant_negatives,no fever,4,"no, fever",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-relevant_negatives-5,relevant_negatives,no surgical history,5,"no, surgical, history",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-relevant_negatives-6,relevant_negatives,no pregnancy if female and relevant,6,"no, pregnancy, if",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, examination, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-exam_findings-2,exam_findings,tenderness documented if assessed,2,"tenderness, documented, if",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-exam_findings-3,exam_findings,bowel sounds documented if assessed,3,"bowel, sounds, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-exam_findings-4,exam_findings,vital signs documented if measured,4,"vital, signs, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-exam_findings-5,exam_findings,general appearance documented if assessed,5,"general, appearance, documented",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-relevant_negatives-5,relevant_negatives,no pregnancy if female and relevant,5,"no, pregnancy, if, female",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, examination, documented, if",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-exam_findings-2,exam_findings,tenderness documented if assessed,2,"tenderness, documented, if, assessed",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-exam_findings-3,exam_findings,bowel sounds documented if assessed,3,"bowel, sounds, documented, if",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-exam_findings-4,exam_findings,vital signs documented if measured,4,"vital, signs, documented, if",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-exam_findings-5,exam_findings,general appearance documented if assessed,5,"general, appearance, documented, if",urgent_care
 urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-red_flags-1,red_flags,peritonism or guarding,1,"peritonism, or, guarding",urgent_care
 urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-red_flags-2,red_flags,rigid abdomen,2,"rigid, abdomen",urgent_care
 urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-red_flags-3,red_flags,hemodynamic instability,3,"hemodynamic, instability",urgent_care
 urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-red_flags-4,red_flags,acute surgical abdomen,4,"acute, surgical, abdomen",urgent_care
 urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-red_flags-5,red_flags,severe uncontrolled pain,5,"severe, uncontrolled, pain",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-investigations-1,investigations,blood tests reviewed if ordered,1,"blood, tests, reviewed",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-investigations-2,investigations,imaging reviewed if ordered,2,"imaging, reviewed, if",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-investigations-3,investigations,urinalysis reviewed if relevant,3,"urinalysis, reviewed, if",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-investigations-4,investigations,pregnancy test documented if relevant,4,"pregnancy, test, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-investigations-5,investigations,previous records reviewed if available,5,"previous, records, reviewed",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-plan_phrases-1,plan_phrases,analgesia plan documented if clinician decided,1,"analgesia, plan, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-plan_phrases-2,plan_phrases,dietary advice documented if discussed,2,"dietary, advice, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-plan_phrases-3,plan_phrases,return precautions documented if discussed,3,"return, precautions, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-plan_phrases-4,plan_phrases,referral or escalation documented if clinician decided,4,"referral, or, escalation",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-plan_phrases-5,plan_phrases,investigation plan documented if clinician decided,5,"investigation, plan, documented",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-follow_up-1,follow_up,follow-up in 1-2 days if not improving,1,"follow-up, in, 1-2",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-follow_up-2,follow_up,return sooner if symptoms worsen,2,"return, sooner, if",urgent_care
-urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-follow_up-3,follow_up,surgical follow-up documented if arranged,3,"surgical, follow-up, documented",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-investigations-1,investigations,blood tests reviewed if ordered,1,"blood, tests, reviewed, if",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-investigations-2,investigations,imaging reviewed if ordered,2,"imaging, reviewed, if, ordered",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-investigations-3,investigations,urinalysis reviewed if relevant,3,"urinalysis, reviewed, if, relevant",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-investigations-4,investigations,pregnancy test documented if relevant,4,"pregnancy, test, documented, if",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-investigations-5,investigations,previous records reviewed if available,5,"previous, records, reviewed, if",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-plan_phrases-1,plan_phrases,analgesia plan documented if clinician decided,1,"analgesia, plan, documented, if",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-plan_phrases-2,plan_phrases,dietary advice documented if discussed,2,"dietary, advice, documented, if",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-plan_phrases-3,plan_phrases,return precautions documented if discussed,3,"return, precautions, documented, if",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-plan_phrases-4,plan_phrases,referral or escalation documented if clinician decided,4,"referral, or, escalation, documented",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-plan_phrases-5,plan_phrases,investigation plan documented if clinician decided,5,"investigation, plan, documented, if",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-follow_up-1,follow_up,follow-up in 1-2 days if not improving,1,"follow-up, in, 1-2, days",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-follow_up-2,follow_up,return sooner if symptoms worsen,2,"return, sooner, if, symptoms",urgent_care
+urgent-abdominal-pain,Emergency / Urgent Care,urgent-abdominal-pain-follow_up-3,follow_up,surgical follow-up documented if arranged,3,"surgical, follow-up, documented, if",urgent_care
 urgent-syncope,Emergency / Urgent Care,urgent-syncope-symptoms-1,symptoms,syncope,1,"syncope",urgent_care
 urgent-syncope,Emergency / Urgent Care,urgent-syncope-symptoms-2,symptoms,fainting,2,"fainting",urgent_care
 urgent-syncope,Emergency / Urgent Care,urgent-syncope-symptoms-3,symptoms,collapse,3,"collapse",urgent_care
 urgent-syncope,Emergency / Urgent Care,urgent-syncope-symptoms-4,symptoms,pre-syncope,4,"pre-syncope",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-symptoms-5,symptoms,prodrome documented if reported,5,"prodrome, documented, if",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-symptoms-6,symptoms,witness account documented if available,6,"witness, account, documented",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-symptoms-5,symptoms,prodrome documented if reported,5,"prodrome, documented, if, reported",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-symptoms-6,symptoms,witness account documented if available,6,"witness, account, documented, if",urgent_care
 urgent-syncope,Emergency / Urgent Care,urgent-syncope-symptoms-7,symptoms,event count documented,7,"event, count, documented",urgent_care
 urgent-syncope,Emergency / Urgent Care,urgent-syncope-relevant_negatives-1,relevant_negatives,no chest pain,1,"no, chest, pain",urgent_care
 urgent-syncope,Emergency / Urgent Care,urgent-syncope-relevant_negatives-2,relevant_negatives,no palpitations,2,"no, palpitations",urgent_care
 urgent-syncope,Emergency / Urgent Care,urgent-syncope-relevant_negatives-3,relevant_negatives,no seizure activity,3,"no, seizure, activity",urgent_care
 urgent-syncope,Emergency / Urgent Care,urgent-syncope-relevant_negatives-4,relevant_negatives,no head injury,4,"no, head, injury",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-relevant_negatives-5,relevant_negatives,no loss of bowel or bladder control,5,"no, loss, of",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-exam_findings-1,exam_findings,vital signs documented if measured,1,"vital, signs, documented",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-exam_findings-2,exam_findings,postural blood pressure documented if measured,2,"postural, blood, pressure",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-exam_findings-3,exam_findings,heart auscultation documented if assessed,3,"heart, auscultation, documented",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-exam_findings-4,exam_findings,neurological examination documented if assessed,4,"neurological, examination, documented",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-exam_findings-5,exam_findings,general appearance documented if assessed,5,"general, appearance, documented",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-relevant_negatives-5,relevant_negatives,no loss of bowel or bladder control,5,"no, loss, of, bowel",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-exam_findings-1,exam_findings,vital signs documented if measured,1,"vital, signs, documented, if",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-exam_findings-2,exam_findings,postural blood pressure documented if measured,2,"postural, blood, pressure, documented",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-exam_findings-3,exam_findings,heart auscultation documented if assessed,3,"heart, auscultation, documented, if",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-exam_findings-4,exam_findings,neurological examination documented if assessed,4,"neurological, examination, documented, if",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-exam_findings-5,exam_findings,general appearance documented if assessed,5,"general, appearance, documented, if",urgent_care
 urgent-syncope,Emergency / Urgent Care,urgent-syncope-red_flags-1,red_flags,exertional syncope,1,"exertional, syncope",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-red_flags-2,red_flags,family history of sudden cardiac death,2,"family, history, of",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-red_flags-2,red_flags,family history of sudden cardiac death,2,"family, history, of, sudden",urgent_care
 urgent-syncope,Emergency / Urgent Care,urgent-syncope-red_flags-3,red_flags,new neurological findings,3,"new, neurological, findings",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-red_flags-4,red_flags,chest pain with syncope,4,"chest, pain, with",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-red_flags-4,red_flags,chest pain with syncope,4,"chest, pain, with, syncope",urgent_care
 urgent-syncope,Emergency / Urgent Care,urgent-syncope-red_flags-5,red_flags,palpitations preceding syncope,5,"palpitations, preceding, syncope",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-investigations-1,investigations,ECG reviewed if performed,1,"ECG, reviewed, if",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-investigations-2,investigations,blood tests reviewed if ordered,2,"blood, tests, reviewed",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-investigations-3,investigations,cardiac monitoring documented if arranged,3,"cardiac, monitoring, documented",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-investigations-4,investigations,previous records reviewed if available,4,"previous, records, reviewed",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-plan_phrases-1,plan_phrases,syncope advice documented if discussed,1,"syncope, advice, documented",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-plan_phrases-2,plan_phrases,driving advice documented if discussed,2,"driving, advice, documented",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-plan_phrases-3,plan_phrases,return precautions documented if discussed,3,"return, precautions, documented",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-plan_phrases-4,plan_phrases,referral or escalation documented if clinician decided,4,"referral, or, escalation",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-plan_phrases-5,plan_phrases,investigation plan documented if clinician decided,5,"investigation, plan, documented",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-follow_up-1,follow_up,follow-up in 1 week if arranged,1,"follow-up, in, 1",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-follow_up-2,follow_up,return sooner if recurrent syncope,2,"return, sooner, if",urgent_care
-urgent-syncope,Emergency / Urgent Care,urgent-syncope-follow_up-3,follow_up,cardiology follow-up documented if arranged,3,"cardiology, follow-up, documented",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-investigations-1,investigations,ECG reviewed if performed,1,"ECG, reviewed, if, performed",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-investigations-2,investigations,blood tests reviewed if ordered,2,"blood, tests, reviewed, if",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-investigations-3,investigations,cardiac monitoring documented if arranged,3,"cardiac, monitoring, documented, if",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-investigations-4,investigations,previous records reviewed if available,4,"previous, records, reviewed, if",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-plan_phrases-1,plan_phrases,syncope advice documented if discussed,1,"syncope, advice, documented, if",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-plan_phrases-2,plan_phrases,driving advice documented if discussed,2,"driving, advice, documented, if",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-plan_phrases-3,plan_phrases,return precautions documented if discussed,3,"return, precautions, documented, if",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-plan_phrases-4,plan_phrases,referral or escalation documented if clinician decided,4,"referral, or, escalation, documented",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-plan_phrases-5,plan_phrases,investigation plan documented if clinician decided,5,"investigation, plan, documented, if",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-follow_up-1,follow_up,follow-up in 1 week if arranged,1,"follow-up, in, 1, week",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-follow_up-2,follow_up,return sooner if recurrent syncope,2,"return, sooner, if, recurrent",urgent_care
+urgent-syncope,Emergency / Urgent Care,urgent-syncope-follow_up-3,follow_up,cardiology follow-up documented if arranged,3,"cardiology, follow-up, documented, if",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-symptoms-1,symptoms,fever,1,"fever",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-symptoms-2,symptoms,chills or rigors,2,"chills, or, rigors",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-symptoms-3,symptoms,suspected infection source,3,"suspected, infection, source",urgent_care
@@ -3242,35 +3249,35 @@ urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-symptoms-5,symptoms,temperature documented,5,"temperature, documented",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-symptoms-6,symptoms,associated symptoms documented,6,"associated, symptoms, documented",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-relevant_negatives-1,relevant_negatives,no respiratory distress,1,"no, respiratory, distress",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-relevant_negatives-2,relevant_negatives,no altered mental status,2,"no, altered, mental",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-relevant_negatives-2,relevant_negatives,no altered mental status,2,"no, altered, mental, status",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-relevant_negatives-3,relevant_negatives,no chest pain,3,"no, chest, pain",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-relevant_negatives-4,relevant_negatives,no neck stiffness,4,"no, neck, stiffness",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-relevant_negatives-5,relevant_negatives,no urinary symptoms,5,"no, urinary, symptoms",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-exam_findings-1,exam_findings,temperature documented if measured,1,"temperature, documented, if",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-exam_findings-2,exam_findings,heart rate documented if measured,2,"heart, rate, documented",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-exam_findings-3,exam_findings,respiratory rate documented if measured,3,"respiratory, rate, documented",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-exam_findings-4,exam_findings,chest auscultation documented if assessed,4,"chest, auscultation, documented",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-exam_findings-5,exam_findings,throat examination documented if assessed,5,"throat, examination, documented",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-exam_findings-6,exam_findings,general appearance documented if assessed,6,"general, appearance, documented",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-exam_findings-1,exam_findings,temperature documented if measured,1,"temperature, documented, if, measured",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-exam_findings-2,exam_findings,heart rate documented if measured,2,"heart, rate, documented, if",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-exam_findings-3,exam_findings,respiratory rate documented if measured,3,"respiratory, rate, documented, if",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-exam_findings-4,exam_findings,chest auscultation documented if assessed,4,"chest, auscultation, documented, if",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-exam_findings-5,exam_findings,throat examination documented if assessed,5,"throat, examination, documented, if",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-exam_findings-6,exam_findings,general appearance documented if assessed,6,"general, appearance, documented, if",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-red_flags-1,red_flags,altered mental status,1,"altered, mental, status",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-red_flags-2,red_flags,respiratory distress,2,"respiratory, distress",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-red_flags-3,red_flags,hypotension,3,"hypotension",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-red_flags-4,red_flags,oliguria,4,"oliguria",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-red_flags-5,red_flags,neck stiffness,5,"neck, stiffness",urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-red_flags-6,red_flags,non-blanching rash,6,"non-blanching, rash",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-1,investigations,blood tests reviewed if ordered,1,"blood, tests, reviewed",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-2,investigations,CBC reviewed if ordered,2,"CBC, reviewed, if",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-3,investigations,CRP reviewed if ordered,3,"CRP, reviewed, if",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-4,investigations,chest X-ray reviewed if ordered,4,"chest, X-ray, reviewed",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-5,investigations,urinalysis reviewed if relevant,5,"urinalysis, reviewed, if",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-6,investigations,blood cultures documented if taken,6,"blood, cultures, documented",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-7,investigations,previous records reviewed if available,7,"previous, records, reviewed",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-plan_phrases-1,plan_phrases,supportive care advice documented if discussed,1,"supportive, care, advice",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-plan_phrases-2,plan_phrases,hydration advice documented if discussed,2,"hydration, advice, documented",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-plan_phrases-3,plan_phrases,antipyretic plan documented if clinician decided,3,"antipyretic, plan, documented",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-plan_phrases-4,plan_phrases,antibiotic plan documented if clinician decided,4,"antibiotic, plan, documented",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-plan_phrases-5,plan_phrases,return precautions documented if discussed,5,"return, precautions, documented",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-plan_phrases-6,plan_phrases,referral or escalation documented if clinician decided,6,"referral, or, escalation",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-follow_up-1,follow_up,follow-up in 2-3 days if not improving,1,"follow-up, in, 2-3",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-follow_up-2,follow_up,return sooner if symptoms worsen,2,"return, sooner, if",urgent_care
-urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-follow_up-3,follow_up,return if new red flag symptoms develop,3,"return, if, new",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-1,investigations,blood tests reviewed if ordered,1,"blood, tests, reviewed, if",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-2,investigations,CBC reviewed if ordered,2,"CBC, reviewed, if, ordered",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-3,investigations,CRP reviewed if ordered,3,"CRP, reviewed, if, ordered",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-4,investigations,chest X-ray reviewed if ordered,4,"chest, X-ray, reviewed, if",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-5,investigations,urinalysis reviewed if relevant,5,"urinalysis, reviewed, if, relevant",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-6,investigations,blood cultures documented if taken,6,"blood, cultures, documented, if",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-investigations-7,investigations,previous records reviewed if available,7,"previous, records, reviewed, if",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-plan_phrases-1,plan_phrases,supportive care advice documented if discussed,1,"supportive, care, advice, documented",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-plan_phrases-2,plan_phrases,hydration advice documented if discussed,2,"hydration, advice, documented, if",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-plan_phrases-3,plan_phrases,antipyretic plan documented if clinician decided,3,"antipyretic, plan, documented, if",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-plan_phrases-4,plan_phrases,antibiotic plan documented if clinician decided,4,"antibiotic, plan, documented, if",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-plan_phrases-5,plan_phrases,return precautions documented if discussed,5,"return, precautions, documented, if",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-plan_phrases-6,plan_phrases,referral or escalation documented if clinician decided,6,"referral, or, escalation, documented",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-follow_up-1,follow_up,follow-up in 2-3 days if not improving,1,"follow-up, in, 2-3, days",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-follow_up-2,follow_up,return sooner if symptoms worsen,2,"return, sooner, if, symptoms",urgent_care
+urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-follow_up-3,follow_up,return if new red flag symptoms develop,3,"return, if, new, red",urgent_care
