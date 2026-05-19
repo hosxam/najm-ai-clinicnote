@@ -363,21 +363,16 @@
       if (state.selectedWorkflowSafety) h += '<div class="v4-safety-box">' + esc(state.selectedWorkflowSafety) + '</div>';
       h += '</div>';
 
-      // Show captured chips count
+      // Show captured chips as a simple single-line badge (not an output)
       var totalChips = 0;
       for (var g in state.capturedChips) totalChips += state.capturedChips[g].length;
-      h += '<div class="v4-autofill-context"><label class="v4-field-label">Autofill chips captured</label>';
+      h += '<div class="v4-chip-badge-wrap">';
       if (totalChips > 0) {
-        h += '<div class="v4-chip-summary">';
-        for (var g2 in state.capturedChips) {
-          var chips = state.capturedChips[g2];
-          if (chips.length) h += '<div class="v4-chip-line"><span class="v4-chip-group-name">' + esc(g2.replace(/_/g,' ')) + ':</span> <span class="v4-chip-count">' + chips.length + ' chip(s)</span></div>';
-        }
-        h += '</div>';
-        h += '<button class="v4-btn v4-btn-ghost v4-btn-xs" onclick="window._v4RefreshChips()">Refresh chips from OPD</button>';
+        h += '<span class="v4-chip-badge">' + totalChips + ' chip(s) from Autofill</span>';
+        h += '<button class="v4-chip-refresh" onclick="window._v4RefreshChips()" title="Re-capture chips from OPD">&#8635;</button>';
       } else {
-        h += '<p class="v4-field-note">No chips captured. Select chips in the OPD area above and click Refresh.</p>';
-        h += '<button class="v4-btn v4-btn-outline v4-btn-xs" onclick="window._v4RefreshChips()">Capture chips from OPD</button>';
+        h += '<span class="v4-chip-badge v4-chip-badge-empty">No chips captured</span>';
+        h += '<button class="v4-chip-refresh" onclick="window._v4RefreshChips()" title="Capture chips from OPD">&#8635;</button>';
       }
       h += '</div>';
     }
@@ -631,9 +626,9 @@
       h += '<button class="v4-out-tab' + (i === 0 ? ' active' : '') + '" onclick="window._v4SwitchTab(\'' + tabs[i].id + '\', this)">' + tabs[i].label + '</button>';
     }
     h += '</div>';
-    h += '<div class="v4-output-box" id="v4OutputBox"><pre class="v4-output-text" id="v4OutputText">Click "Generate" to create a combined draft.</pre></div>';
+    h += '<div class="v4-output-box" id="v4OutputBox"><pre class="v4-output-text" id="v4OutputText">Select all content in Steps 1-5, then click Generate Combined Draft.</pre></div>';
     h += '<div class="v4-output-actions">';
-    h += '<button class="v4-btn v4-btn-primary" onclick="window._v4Generate()">Generate</button>';
+    h += '<button class="v4-btn v4-btn-primary" onclick="window._v4Generate()">Generate Combined Draft</button>';
     h += '<button class="v4-btn v4-btn-outline" onclick="window._v4Copy()">Copy</button>';
     h += '<button class="v4-btn v4-btn-ghost" onclick="window._v4ClearOutput()">Clear</button></div>';
     return h;
@@ -750,20 +745,22 @@
 
     var cleanPlanFree = cleanText(planFree);
 
-    // Build plan section (no follow_up items here)
+    // Build plan section (no follow_up or safety_netting items here)
     var planLines = [];
     if (uniquePlanChips.length) planLines = planLines.concat(uniquePlanChips);
     for (var poi3 = 0; poi3 < uniquePlanOpts.length; poi3++) {
-      if (uniquePlanOpts[poi3].option_category !== 'follow_up') planLines.push(uniquePlanOpts[poi3].option_text);
+      var cat = uniquePlanOpts[poi3].option_category || '';
+      if (cat !== 'follow_up' && cat !== 'safety_netting') planLines.push(uniquePlanOpts[poi3].option_text);
     }
     if (cleanPlanFree) planLines.push(cleanPlanFree);
     var planSection = planLines.length ? planLines.join('\n') : '[not documented]';
 
-    // Build follow-up section separately
+    // Build follow-up section separately (includes safety-netting)
     var fupItems = [];
     if (uniqueFollowUp.length) for (var fi = 0; fi < uniqueFollowUp.length; fi++) fupItems.push(uniqueFollowUp[fi]);
     for (var pgi2 = 0; pgi2 < planOpts.length; pgi2++) {
-      if (state.planConfirmations[planOpts[pgi2].option_id] && planOpts[pgi2].option_category === 'follow_up') {
+      var fupCat = (planOpts[pgi2].option_category || '').toLowerCase();
+      if (state.planConfirmations[planOpts[pgi2].option_id] && (fupCat === 'follow_up' || fupCat === 'safety_netting')) {
         var fn = norm(planOpts[pgi2].option_text);
         var dup2 = false;
         for (var fi2 = 0; fi2 < fupItems.length; fi2++) { if (norm(fupItems[fi2]) === fn) { dup2 = true; break; } }
@@ -804,7 +801,25 @@
         return soap + footer;
       }
       case 'adv-ref': {
+        // Check if any referral-related Plan Assist options are selected
+        var hasReferralCat = false;
+        var referralDetails = '';
+        for (var rpi = 0; rpi < planOpts.length; rpi++) {
+          var rcat = (planOpts[rpi].option_category || '').toLowerCase();
+          if (rcat.indexOf('referral') >= 0) {
+            hasReferralCat = true;
+            referralDetails += planOpts[rpi].option_text + '\n';
+          }
+        }
+        var hasReferralText = cleanPlanFree && (cleanPlanFree.toLowerCase().indexOf('refer') >= 0);
+        var hasReferralImpression = impression && impression !== '[not documented]' && impression.toLowerCase().indexOf('refer') >= 0;
+
+        if (!hasReferralCat && !hasReferralText && !hasReferralImpression) {
+          return 'REFERRAL DRAFT\n' + '='.repeat(40) + '\n\nReferral draft: [not requested/documented]\n' + footer;
+        }
+
         var ref = 'REFERRAL DRAFT\n' + '='.repeat(40) + '\n\n';
+        if (referralDetails) ref += 'Referral details:\n' + referralDetails + '\n\n';
         ref += section('Reason for referral', historyDraft);
         ref += section('Clinical history', histSection);
         ref += section('Examination findings', examSection);
@@ -818,6 +833,7 @@
       case 'adv-inst': {
         // Patient instructions: ONLY plan content, no history/exam/investigations
         var instLines = [];
+        var instSeen = {};
         if (plan && plan.plan_option_groups) {
           for (var pgi3 = 0; pgi3 < plan.plan_option_groups.length; pgi3++) {
             var pg3 = plan.plan_option_groups[pgi3];
@@ -826,17 +842,23 @@
               if (state.planConfirmations[opt3.option_id]) {
                 var cat = (opt3.option_category || '').toLowerCase();
                 if (cat.indexOf('patient_instruction') >= 0 || cat.indexOf('safety_netting') >= 0 || cat.indexOf('follow_up') >= 0 || cat.indexOf('lifestyle') >= 0 || cat.indexOf('counseling') >= 0) {
-                  instLines.push(opt3.option_text);
+                  var nt = norm(opt3.option_text);
+                  if (nt && !instSeen[nt]) { instLines.push(opt3.option_text); instSeen[nt] = true; }
                 }
               }
             }
           }
         }
-        if (planFree) instLines.push(planFree);
-        var instSection = instLines.length ? instLines.join('\n') : '[not documented]';
+        if (cleanPlanFree) {
+          var npt = norm(cleanPlanFree);
+          if (npt && !instSeen[npt]) { instLines.push(cleanPlanFree); instSeen[npt] = true; }
+        }
 
+        if (!instLines.length) {
+          return 'PATIENT INSTRUCTIONS\n' + '='.repeat(40) + '\n\n[not documented]\n' + footer;
+        }
         return 'PATIENT INSTRUCTIONS\n' + '='.repeat(40) + '\n\n' +
-          'Advice / plan discussed:\n' + instSection + '\n\n' +
+          'Advice / plan discussed:\n' + instLines.join('\n') + '\n\n' +
           'Review with your clinician. Seek medical attention if symptoms worsen.\n' + footer;
       }
       default:
@@ -1088,13 +1110,30 @@
 
   window._v4ClearOutput = function() {
     var text = document.getElementById('v4OutputText');
-    if (text) text.textContent = 'Click "Generate" to create a combined draft.';
+    if (text) text.textContent = 'Select all content in Steps 1-5, then click Generate Combined Draft.';
     _outputGenerated = false;
   };
 
   // Navigation
-  window._v4Prev = function() { if (currentStep > 1) { currentStep--; renderStep(currentStep); updateSidebar(); } };
-  window._v4Next = function() { if (currentStep < TOTAL_STEPS) { currentStep++; renderStep(currentStep); updateSidebar(); } };
+  window._v4Prev = function() {
+    if (currentStep > 1) {
+      currentStep--;
+      renderStep(currentStep);
+      updateSidebar();
+    }
+  };
+
+  window._v4Next = function() {
+    if (currentStep < TOTAL_STEPS) {
+      // Auto-capture chips when leaving Step 1 or entering Step 6
+      if (currentStep === 1 || currentStep + 1 === TOTAL_STEPS) {
+        state.capturedChips = captureOPDChips();
+      }
+      currentStep++;
+      renderStep(currentStep);
+      updateSidebar();
+    }
+  };
 
   // ================================================================
   //  INIT
@@ -1102,6 +1141,39 @@
   function init() {
     var app = document.getElementById('page-advanced-encounter');
     if (!app) return;
+
+    // Show speed page (for chip selection) alongside V4; hide others
+    var allPages = document.querySelectorAll('.page');
+    for (var pi = 0; pi < allPages.length; pi++) {
+      var pgId = allPages[pi].id;
+      if (pgId === 'page-advanced-encounter' || pgId === 'page-speed') {
+        allPages[pi].classList.add('active');
+      } else {
+        allPages[pi].classList.remove('active');
+      }
+    }
+
+    // Hide the Speed Mode output area when V4 is active (it has its own output in Step 6)
+    var speedOutputBox = document.getElementById('speedOutputBox');
+    if (speedOutputBox) {
+      speedOutputBox.classList.add('v4-speed-output-hidden');
+    }
+    // Hide speed output header tabs and action buttons
+    var speedOutputHeader = document.querySelector('#page-speed .output-header');
+    if (speedOutputHeader) speedOutputHeader.classList.add('v4-speed-output-hidden');
+    var speedOutputActions = document.querySelector('#page-speed .output-actions');
+    if (speedOutputActions) speedOutputActions.classList.add('v4-speed-output-hidden');
+    var speedOutputFooter = document.querySelector('#page-speed .output-footer');
+    if (speedOutputFooter) speedOutputFooter.classList.add('v4-speed-output-hidden');
+    var speedExportNote = document.querySelector('#page-speed .export-privacy-note');
+    if (speedExportNote) speedExportNote.classList.add('v4-speed-output-hidden');
+    var speedGenerateBtnRow = document.querySelector('#speedContent .gen-row');
+    if (speedGenerateBtnRow) speedGenerateBtnRow.classList.add('v4-speed-output-hidden');
+    var speedFeedbackCta = document.getElementById('speedGeneratedFeedbackCta');
+    if (speedFeedbackCta) speedFeedbackCta.classList.add('v4-speed-output-hidden');
+    var speedWhyFaster = document.querySelector('.why-faster');
+    if (speedWhyFaster) speedWhyFaster.classList.add('v4-speed-output-hidden');
+
     var loading = document.createElement('div');
     loading.className = 'v4-loading';
     loading.textContent = 'Loading V4 encounter data...';
@@ -1160,12 +1232,12 @@
 .v4-wf-info-row{display:flex;gap:8px;padding:3px 0;font-size:13px}
 .v4-wf-info-label{font-weight:600;color:var(--gray-600);min-width:80px}
 .v4-wf-info-val{color:var(--gray-800)}
-.v4-autofill-context{margin-top:12px;padding:12px;background:var(--gray-50);border-radius:8px}
-.v4-chip-summary{font-size:12px;margin:6px 0}
-.v4-chip-line{padding:3px 0}
-.v4-chip-group-name{font-weight:600;color:var(--gray-600)}
-.v4-chip-count{color:var(--gray-400)}
-.v4-btn-xs{padding:5px 12px;font-size:11px;border-radius:6px}
+.v4-chip-badge-wrap{display:flex;align-items:center;gap:8px;margin-top:8px;padding:6px 0}
+.v4-chip-badge{display:inline-block;padding:4px 10px;border-radius:12px;background:var(--primary-bg);color:var(--primary);font-size:11px;font-weight:600;border:1px solid var(--primary-border)}
+.v4-chip-badge-empty{background:var(--gray-50);color:var(--gray-400);border-color:var(--gray-200)}
+.v4-chip-refresh{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;border:1px solid var(--gray-200);background:#fff;cursor:pointer;font-size:13px;line-height:1;color:var(--gray-500);padding:0}
+.v4-chip-refresh:hover{background:var(--gray-50);color:var(--gray-700)}
+.v4-speed-output-hidden{display:none!important}
 .v4-safety-box{background:var(--red-bg);border:1px solid var(--red-border);border-radius:8px;padding:10px 14px;font-size:12px;color:var(--red);margin-bottom:14px;line-height:1.4}
 .v4-safety-box-sm{background:var(--amber-bg);border:1px solid var(--amber-border);border-radius:6px;padding:8px 12px;font-size:11px;color:var(--gray-600);margin-bottom:10px;line-height:1.4}
 
