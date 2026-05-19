@@ -12,7 +12,7 @@
             "option_text": "Temperature recorded if measured.",
             "required_level": "conditional",
             "source_status": "draft",
-            "note_text": "Temperature recorded."
+            "note_text": "Blood pressure recorded."
           }
         ]
       },
@@ -183,7 +183,7 @@
             "option_text": "Temperature recorded if measured.",
             "required_level": "workflow_specific",
             "source_status": "draft",
-            "note_text": "Temperature recorded."
+            "note_text": "Blood pressure recorded."
           }
         ]
       },
@@ -651,7 +651,7 @@
           {
             "option_id": "o2_gp-cough",
             "option_text": "Oxygen saturation recorded if measured.",
-            "note_text": "Oxygen saturation recorded.",
+            "note_text": "Blood pressure recorded.",
             "required_level": "conditional",
             "source_status": "draft"
           },
@@ -700,7 +700,7 @@
           {
             "option_id": "temp_gp-sore-throat",
             "option_text": "Temperature recorded if measured.",
-            "note_text": "Temperature recorded.",
+            "note_text": "Blood pressure recorded.",
             "required_level": "conditional",
             "source_status": "draft"
           }
@@ -1127,7 +1127,7 @@
           {
             "option_id": "o2_gp-shortness-of-breath",
             "option_text": "Oxygen saturation recorded if measured.",
-            "note_text": "Oxygen saturation recorded.",
+            "note_text": "Blood pressure recorded.",
             "required_level": "conditional",
             "source_status": "draft"
           },
@@ -1316,7 +1316,7 @@
           {
             "option_id": "o2_peds-cough",
             "option_text": "Oxygen saturation recorded if measured.",
-            "note_text": "Oxygen saturation recorded.",
+            "note_text": "Blood pressure recorded.",
             "required_level": "conditional",
             "source_status": "draft"
           },
@@ -1336,7 +1336,7 @@
           {
             "option_id": "temp_peds-cough",
             "option_text": "Temperature recorded if measured.",
-            "note_text": "Temperature recorded.",
+            "note_text": "Blood pressure recorded.",
             "required_level": "conditional",
             "source_status": "draft"
           },
@@ -1405,7 +1405,7 @@
           {
             "option_id": "temp_peds-rash",
             "option_text": "Temperature recorded if measured.",
-            "note_text": "Temperature recorded.",
+            "note_text": "Blood pressure recorded.",
             "required_level": "conditional",
             "source_status": "draft"
           }
@@ -1461,7 +1461,7 @@
           {
             "option_id": "temp_peds-ear-pain",
             "option_text": "Temperature recorded if measured.",
-            "note_text": "Temperature recorded.",
+            "note_text": "Blood pressure recorded.",
             "required_level": "conditional",
             "source_status": "draft"
           }
@@ -1544,7 +1544,7 @@
           {
             "option_id": "temp_peds-vaccination",
             "option_text": "Temperature recorded if measured.",
-            "note_text": "Temperature recorded.",
+            "note_text": "Blood pressure recorded.",
             "required_level": "conditional",
             "source_status": "draft"
           }
@@ -1956,6 +1956,412 @@
             "option_id": "us_msk-sports-injury",
             "option_text": "Ultrasound report reviewed if available.",
             "note_text": "Ultrasound report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-pelvic-pain",
+    "workflow_display_name": "OB/GYN Pelvic Pain",
+    "investigation_groups": [
+      {
+        "group_id": "Lab_obgyn-pelvic-pain",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "preg_obgyn-pelvic-pain",
+            "option_text": "Pregnancy test reviewed if relevant and done.",
+            "note_text": "Pregnancy test reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "ua_obgyn-pelvic-pain",
+            "option_text": "Urinalysis reviewed if done.",
+            "note_text": "Urinalysis reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_obgyn-pelvic-pain",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Imaging_obgyn-pelvic-pain",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "us_obgyn-pelvic-pain",
+            "option_text": "Pelvic ultrasound reviewed if available.",
+            "note_text": "Pelvic ultrasound reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "swab_obgyn-pelvic-pain",
+            "option_text": "Swab results reviewed if available.",
+            "note_text": "Swab results reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-irregular-bleeding",
+    "workflow_display_name": "OB/GYN Irregular Bleeding",
+    "investigation_groups": [
+      {
+        "group_id": "Lab_obgyn-irregular-bleeding",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "preg_obgyn-irregular-bleeding",
+            "option_text": "Pregnancy test reviewed if relevant and done.",
+            "note_text": "Pregnancy test reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "cbc_obgyn-irregular-bleeding",
+            "option_text": "CBC reviewed if ordered.",
+            "note_text": "CBC reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "tft_obgyn-irregular-bleeding",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "note_text": "Thyroid function reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Imaging_obgyn-irregular-bleeding",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "us_obgyn-irregular-bleeding",
+            "option_text": "Pelvic ultrasound reviewed if available.",
+            "note_text": "Pelvic ultrasound reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-vaginal-discharge",
+    "workflow_display_name": "OB/GYN Vaginal Discharge",
+    "investigation_groups": [
+      {
+        "group_id": "Lab_obgyn-vaginal-discharge",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "swab_obgyn-vaginal-discharge",
+            "option_text": "Swab results reviewed if available.",
+            "note_text": "Swab results reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "ua_obgyn-vaginal-discharge",
+            "option_text": "Urinalysis reviewed if done.",
+            "note_text": "Urinalysis reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "preg_obgyn-vaginal-discharge",
+            "option_text": "Pregnancy test reviewed if relevant and done.",
+            "note_text": "Pregnancy test reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "sti_obgyn-vaginal-discharge",
+            "option_text": "STI screen reviewed if available.",
+            "note_text": "STI screen reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-contraception",
+    "workflow_display_name": "OB/GYN Contraception",
+    "investigation_groups": [
+      {
+        "group_id": "Vitals_obgyn-contraception",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "preg_obgyn-contraception",
+            "option_text": "Pregnancy status documented or reviewed if relevant.",
+            "note_text": "Pregnancy status documented or reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bp_obgyn-contraception",
+            "option_text": "Blood pressure recorded if measured.",
+            "note_text": "Blood pressure recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "med_obgyn-contraception",
+            "option_text": "Medication or contraindication history reviewed if available.",
+            "note_text": "Medication history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-dysmenorrhea",
+    "workflow_display_name": "OB/GYN Dysmenorrhea",
+    "investigation_groups": [
+      {
+        "group_id": "Lab_obgyn-dysmenorrhea",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "preg_obgyn-dysmenorrhea",
+            "option_text": "Pregnancy test reviewed if relevant and done.",
+            "note_text": "Pregnancy test reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Imaging_obgyn-dysmenorrhea",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "us_obgyn-dysmenorrhea",
+            "option_text": "Pelvic ultrasound reviewed if available.",
+            "note_text": "Pelvic ultrasound reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_obgyn-dysmenorrhea",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-postnatal-followup",
+    "workflow_display_name": "OB/GYN Postnatal Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "Vitals_obgyn-postnatal-followup",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "vitals_obgyn-postnatal-followup",
+            "option_text": "Vital signs reviewed if measured.",
+            "note_text": "Vital signs reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "wound_obgyn-postnatal-followup",
+            "option_text": "Wound assessment documented if assessed.",
+            "note_text": "Wound assessment documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_obgyn-postnatal-followup",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "bloods_obgyn-postnatal-followup",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_obgyn-postnatal-followup",
+            "option_text": "Previous delivery notes reviewed if available.",
+            "note_text": "Previous delivery notes reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-early-pregnancy",
+    "workflow_display_name": "OB/GYN Early Pregnancy",
+    "investigation_groups": [
+      {
+        "group_id": "Lab_obgyn-early-pregnancy",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "preg_obgyn-early-pregnancy",
+            "option_text": "Pregnancy test documented if done.",
+            "note_text": "Pregnancy test documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_obgyn-early-pregnancy",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "ua_obgyn-early-pregnancy",
+            "option_text": "Urine dip reviewed if done.",
+            "note_text": "Urine dip reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Imaging_obgyn-early-pregnancy",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "us_obgyn-early-pregnancy",
+            "option_text": "Ultrasound report reviewed if available.",
+            "note_text": "Ultrasound report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-menopause",
+    "workflow_display_name": "OB/GYN Menopause",
+    "investigation_groups": [
+      {
+        "group_id": "Vitals_obgyn-menopause",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "bp_obgyn-menopause",
+            "option_text": "Blood pressure recorded if measured.",
+            "note_text": "Blood pressure recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "med_obgyn-menopause",
+            "option_text": "Medication history reviewed if relevant.",
+            "note_text": "Medication history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_obgyn-menopause",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "bloods_obgyn-menopause",
+            "option_text": "Relevant blood tests reviewed if ordered.",
+            "note_text": "Relevant blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-fertility",
+    "workflow_display_name": "OB/GYN Fertility",
+    "investigation_groups": [
+      {
+        "group_id": "Records_obgyn-fertility",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_obgyn-fertility",
+            "option_text": "Previous investigations reviewed if available.",
+            "note_text": "Previous investigations reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "hormonal_obgyn-fertility",
+            "option_text": "Hormonal profile reviewed if available.",
+            "note_text": "Hormonal profile reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Imaging_obgyn-fertility",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "us_obgyn-fertility",
+            "option_text": "Ultrasound report reviewed if available.",
+            "note_text": "Ultrasound report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "semen_obgyn-fertility",
+            "option_text": "Semen analysis discussed or reviewed if relevant and available.",
+            "note_text": "Semen analysis discussed or reviewed.",
             "required_level": "conditional",
             "source_status": "draft"
           }

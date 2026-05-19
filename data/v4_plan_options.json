@@ -4779,5 +4779,899 @@
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
     "review_required": true,
     "source_status": "draft"
+  },
+  {
+    "workflow_id": "obgyn-pelvic-pain",
+    "workflow_display_name": "OB/GYN Pelvic Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "safety_obgyn-pelvic-pain",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "safety_obgyn-pelvic-pain",
+            "option_text": "Safety-netting documented if discussed.",
+            "note_text": "Safety-netting discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "invest_obgyn-pelvic-pain",
+        "group_label": "invest",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-pelvic-pain",
+            "option_text": "Investigation follow-up documented if arranged.",
+            "note_text": "Investigation follow-up arranged.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_obgyn-pelvic-pain",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "ref_obgyn-pelvic-pain",
+            "option_text": "Referral documented if clinician arranged.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_obgyn-pelvic-pain",
+        "group_label": "med",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "med_obgyn-pelvic-pain",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_obgyn-pelvic-pain",
+        "group_label": "fup",
+        "display_order": 5,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-pelvic-pain",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "obgyn-irregular-bleeding",
+    "workflow_display_name": "OB/GYN Irregular Bleeding",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_obgyn-irregular-bleeding",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "bleeding_obgyn-irregular-bleeding",
+            "option_text": "Bleeding advice documented if discussed.",
+            "note_text": "Bleeding advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "invest_obgyn-irregular-bleeding",
+        "group_label": "invest",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-irregular-bleeding",
+            "option_text": "Investigation follow-up documented if arranged.",
+            "note_text": "Investigation follow-up arranged.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_obgyn-irregular-bleeding",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "ref_obgyn-irregular-bleeding",
+            "option_text": "Referral documented if clinician arranged.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_obgyn-irregular-bleeding",
+        "group_label": "med",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "med_obgyn-irregular-bleeding",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_obgyn-irregular-bleeding",
+        "group_label": "fup",
+        "display_order": 5,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-irregular-bleeding",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "obgyn-vaginal-discharge",
+    "workflow_display_name": "OB/GYN Vaginal Discharge",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_obgyn-vaginal-discharge",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "hygiene_obgyn-vaginal-discharge",
+            "option_text": "Hygiene or avoidance advice documented if discussed.",
+            "note_text": "Hygiene advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_obgyn-vaginal-discharge",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "med_obgyn-vaginal-discharge",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "partner_obgyn-vaginal-discharge",
+        "group_label": "partner",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "partner_obgyn-vaginal-discharge",
+            "option_text": "Partner or sexual health advice documented if clinically appropriate and discussed.",
+            "note_text": "Partner advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_obgyn-vaginal-discharge",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-vaginal-discharge",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "obgyn-contraception",
+    "workflow_display_name": "OB/GYN Contraception",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_obgyn-contraception",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "counseling_obgyn-contraception",
+            "option_text": "Contraception counseling documented if discussed.",
+            "note_text": "Contraception counseling discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "preference_obgyn-contraception",
+            "option_text": "Patient preference documented if discussed.",
+            "note_text": "Patient preference documented.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "risks_obgyn-contraception",
+            "option_text": "Risks and benefits documented if discussed by clinician.",
+            "note_text": "Risks and benefits discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "chosen_obgyn-contraception",
+            "option_text": "Chosen method documented if clinician decided.",
+            "note_text": "Chosen method documented.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_obgyn-contraception",
+        "group_label": "fup",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-contraception",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "obgyn-dysmenorrhea",
+    "workflow_display_name": "OB/GYN Dysmenorrhea",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_obgyn-dysmenorrhea",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "advice_obgyn-dysmenorrhea",
+            "option_text": "Dysmenorrhea management advice documented if discussed.",
+            "note_text": "Dysmenorrhea management advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_obgyn-dysmenorrhea",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "med_obgyn-dysmenorrhea",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "invest_obgyn-dysmenorrhea",
+        "group_label": "invest",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-dysmenorrhea",
+            "option_text": "Investigation follow-up documented if arranged.",
+            "note_text": "Investigation follow-up arranged.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_obgyn-dysmenorrhea",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-dysmenorrhea",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "obgyn-postnatal-followup",
+    "workflow_display_name": "OB/GYN Postnatal Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_obgyn-postnatal-followup",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "postnatal_obgyn-postnatal-followup",
+            "option_text": "Postnatal advice documented if discussed.",
+            "note_text": "Postnatal advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "feeding_obgyn-postnatal-followup",
+            "option_text": "Feeding or breastfeeding support documented if discussed.",
+            "note_text": "Breastfeeding support discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_obgyn-postnatal-followup",
+        "group_label": "safety",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "mood_obgyn-postnatal-followup",
+            "option_text": "Mood or support safety-netting documented if discussed.",
+            "note_text": "Mood safety-netting discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "contraception_obgyn-postnatal-followup",
+        "group_label": "contraception",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "contra_obgyn-postnatal-followup",
+            "option_text": "Contraception discussion documented if relevant.",
+            "note_text": "Contraception discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_obgyn-postnatal-followup",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-postnatal-followup",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "obgyn-early-pregnancy",
+    "workflow_display_name": "OB/GYN Early Pregnancy",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_obgyn-early-pregnancy",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "pregnancy_obgyn-early-pregnancy",
+            "option_text": "Pregnancy advice documented if discussed.",
+            "note_text": "Pregnancy advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_obgyn-early-pregnancy",
+        "group_label": "safety",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "warning_obgyn-early-pregnancy",
+            "option_text": "Warning symptoms documented if discussed.",
+            "note_text": "Warning symptoms discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "invest_obgyn-early-pregnancy",
+        "group_label": "invest",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-early-pregnancy",
+            "option_text": "Investigation follow-up documented if arranged.",
+            "note_text": "Investigation follow-up arranged.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_obgyn-early-pregnancy",
+        "group_label": "ref",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "ref_obgyn-early-pregnancy",
+            "option_text": "Referral or escalation documented if clinician decided.",
+            "note_text": "Referral or escalation planned.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_obgyn-early-pregnancy",
+        "group_label": "fup",
+        "display_order": 5,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-early-pregnancy",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "obgyn-menopause",
+    "workflow_display_name": "OB/GYN Menopause",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_obgyn-menopause",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "counseling_obgyn-menopause",
+            "option_text": "Counseling documented if discussed.",
+            "note_text": "Counseling discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "lifestyle_obgyn-menopause",
+            "option_text": "Lifestyle advice documented if discussed.",
+            "note_text": "Lifestyle advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_obgyn-menopause",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "hrt_obgyn-menopause",
+            "option_text": "Medication or HRT discussion documented if clinician discussed.",
+            "note_text": "Medication discussion documented.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_obgyn-menopause",
+        "group_label": "fup",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-menopause",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "obgyn-fertility",
+    "workflow_display_name": "OB/GYN Fertility",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_obgyn-fertility",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "counseling_obgyn-fertility",
+            "option_text": "Counseling documented if discussed.",
+            "note_text": "Counseling discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "lifestyle_obgyn-fertility",
+            "option_text": "Lifestyle or preconception advice documented if discussed.",
+            "note_text": "Preconception advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "inv_obgyn-fertility",
+        "group_label": "inv",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "ref_obgyn-fertility",
+            "option_text": "Investigation or referral discussion documented if clinician arranged.",
+            "note_text": "Investigation or referral arranged.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_obgyn-fertility",
+        "group_label": "fup",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Clinically appropriate context applies.",
+        "options": [
+          {
+            "option_id": "fup_obgyn-fertility",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-4 OB/GYN",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinically appropriate context.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
   }
 ]

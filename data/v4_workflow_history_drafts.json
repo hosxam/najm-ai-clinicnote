@@ -1516,5 +1516,265 @@
     ],
     "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required.",
     "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-pelvic-pain",
+    "workflow_display_name": "OB/GYN Pelvic Pain",
+    "default_history_draft": "Patient seen with pelvic pain for [duration]. Location: [pain_location]. Cycle relation: [cycle_relation]. Bleeding/discharge: [bleeding_or_discharge_context]. Urinary/GI: [urinary_or_gi_context]. Pregnancy status: [pregnancy_status_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[pain location]",
+      "[cycle relation]",
+      "[bleeding or discharge context]",
+      "[urinary or gi context]",
+      "[pregnancy status context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "obstetric history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. Clinically appropriate context and consent where relevant. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-irregular-bleeding",
+    "workflow_display_name": "OB/GYN Irregular Bleeding",
+    "default_history_draft": "Patient seen with irregular bleeding for [duration]. Bleeding pattern: [bleeding_pattern]. LMP/cycle: [lmp_cycle_context]. Volume/clots: [bleeding_volume_or_clots]. Pain: [pain_context]. Pregnancy status: [pregnancy_status_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[bleeding pattern]",
+      "[lmp cycle context]",
+      "[bleeding volume or clots]",
+      "[pain context]",
+      "[pregnancy status context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "obstetric history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. Clinically appropriate context and consent where relevant. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-vaginal-discharge",
+    "workflow_display_name": "OB/GYN Vaginal Discharge",
+    "default_history_draft": "Patient seen with vaginal discharge for [duration]. Description: [discharge_description]. Odor/itch: [odor_or_itch_context]. Pelvic pain/bleeding: [pelvic_pain_or_bleeding_context]. Urinary: [urinary_symptoms]. Pregnancy status: [pregnancy_status_context]. [Relevant negatives reviewed]. Sexual history if clinically appropriate: [sexual_history_if_clinically_appropriate_and_discussed].",
+    "editable_placeholders": [
+      "[duration]",
+      "[discharge description]",
+      "[odor or itch context]",
+      "[pelvic pain or bleeding context]",
+      "[urinary symptoms]",
+      "[pregnancy status context]",
+      "[relevant negatives]",
+      "[sexual history if clinically appropriate and discussed]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "obstetric history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. Clinically appropriate context and consent where relevant. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-contraception",
+    "workflow_display_name": "OB/GYN Contraception",
+    "default_history_draft": "Contraception consultation. Reason: [consultation_reason]. Current method: [current_method]. Previous methods: [previous_methods]. Menstrual: [menstrual_context]. Pregnancy status: [pregnancy_status_context]. Preference/concerns: [preference_or_concerns]. Contraindication history reviewed: [contraindication_history_reviewed_by_clinician]. [Additional history].",
+    "editable_placeholders": [
+      "[consultation reason]",
+      "[current method]",
+      "[previous methods]",
+      "[menstrual context]",
+      "[pregnancy status context]",
+      "[preference or concerns]",
+      "[contraindication history reviewed by clinician]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "obstetric history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. Clinically appropriate context and consent where relevant. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-dysmenorrhea",
+    "workflow_display_name": "OB/GYN Dysmenorrhea",
+    "default_history_draft": "Patient seen with dysmenorrhea for [duration]. Pain timing: [pain_timing]. Cycle pattern: [cycle_pattern]. Severity/impact: [severity_impact]. Associated symptoms: [associated_symptoms]. Bleeding: [bleeding_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[pain timing]",
+      "[cycle pattern]",
+      "[severity impact]",
+      "[associated symptoms]",
+      "[bleeding context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "obstetric history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. Clinically appropriate context and consent where relevant. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-postnatal-followup",
+    "workflow_display_name": "OB/GYN Postnatal Follow-up",
+    "default_history_draft": "Postnatal follow-up. Time since delivery: [time_since_delivery]. Delivery context: [delivery_context]. Bleeding/lochia: [bleeding_lochia_context]. Wound/pain: [wound_or_pain_context]. Feeding/breastfeeding: [feeding_breastfeeding_context]. Mood/support: [mood_support_context]. Contraception: [contraception_discussion_context]. [Relevant negatives reviewed].",
+    "editable_placeholders": [
+      "[time since delivery]",
+      "[delivery context]",
+      "[bleeding lochia context]",
+      "[wound or pain context]",
+      "[feeding breastfeeding context]",
+      "[mood support context]",
+      "[contraception discussion context]",
+      "[relevant negatives]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "obstetric history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. Clinically appropriate context and consent where relevant. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-early-pregnancy",
+    "workflow_display_name": "OB/GYN Early Pregnancy",
+    "default_history_draft": "Patient seen with early pregnancy. Gestational age/LMP: [gestational_age_or_lmp]. Symptoms/concerns: [symptoms_or_concerns]. Nausea/vomiting: [nausea_vomiting_context]. Abdominal pain: [abdominal_pain_context]. Bleeding: [bleeding_context]. Dizziness/syncope: [dizziness_syncope_context]. Pregnancy test: [pregnancy_test_context]. [Relevant negatives reviewed].",
+    "editable_placeholders": [
+      "[gestational age or lmp]",
+      "[symptoms or concerns]",
+      "[nausea vomiting context]",
+      "[abdominal pain context]",
+      "[bleeding context]",
+      "[dizziness syncope context]",
+      "[pregnancy test context]",
+      "[relevant negatives]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "obstetric history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. Clinically appropriate context and consent where relevant. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-menopause",
+    "workflow_display_name": "OB/GYN Menopause",
+    "default_history_draft": "Patient seen with menopause symptoms for [symptom_duration]. Vasomotor: [vasomotor_symptoms]. Sleep/mood: [sleep_mood_context]. Vaginal/urinary: [vaginal_urinary_symptoms]. Menstrual pattern: [menstrual_pattern_context]. Quality of life impact: [quality_of_life_impact]. Medication history: [medication_history_context]. [Additional history].",
+    "editable_placeholders": [
+      "[symptom duration]",
+      "[vasomotor symptoms]",
+      "[sleep mood context]",
+      "[vaginal urinary symptoms]",
+      "[menstrual pattern context]",
+      "[quality of life impact]",
+      "[medication history context]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "obstetric history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. Clinically appropriate context and consent where relevant. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "obgyn-fertility",
+    "workflow_display_name": "OB/GYN Fertility",
+    "default_history_draft": "Fertility consultation. Duration trying to conceive: [duration_trying_to_conceive]. Cycle regularity: [cycle_regular_context]. Previous pregnancy: [previous_pregnancy_context]. Partner factor: [partner_factor_context_if_clinically_appropriate] if clinically appropriate. Previous investigations: [previous_investigation_context]. Gynecologic history: [gynecologic_history_context]. [Additional history].",
+    "editable_placeholders": [
+      "[duration trying to conceive]",
+      "[cycle regular context]",
+      "[previous pregnancy context]",
+      "[partner factor context if clinically appropriate]",
+      "[previous investigation context]",
+      "[gynecologic history context]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "obstetric history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. Clinically appropriate context and consent where relevant. No treatment recommendations. Clinician review required.",
+    "review_required": true
   }
 ]
