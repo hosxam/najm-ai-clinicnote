@@ -3284,3 +3284,262 @@ urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-follow_up-1,follow_up,follow-up in 2-3 days if not improving,1,follow-up, in, 2-3,urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-follow_up-2,follow_up,return sooner if symptoms worsen,2,return, sooner, if,urgent_care
 urgent-fever-suspected-infection,Emergency / Urgent Care,urgent-fever-suspected-infection-follow_up-3,follow_up,return if new red flag symptoms develop,3,return, if, new,urgent_care
+cardio-chest-pain,Cardiology,cardio-chest-pain-symptoms-1,symptoms,chest pain,1,chest, pain,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-symptoms-2,symptoms,chest tightness,2,chest, tightness,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-symptoms-3,symptoms,pressure-like discomfort,3,pressure-like, discomfort,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-symptoms-4,symptoms,exertional relation documented,4,exertional, relation, documented,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-symptoms-5,symptoms,radiation reviewed,5,radiation, reviewed,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-symptoms-6,symptoms,associated sweating or nausea reviewed,6,associated, sweating, or,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-symptoms-7,symptoms,shortness of breath reviewed,7,shortness, of, breath,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-symptoms-8,symptoms,risk factors reviewed,8,risk, factors, reviewed,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-relevant_negatives-1,relevant_negatives,no syncope reported,1,no, syncope, reported,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-relevant_negatives-2,relevant_negatives,no shortness of breath reported,2,no, shortness, of,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-relevant_negatives-3,relevant_negatives,no palpitations reported,3,no, palpitations, reported,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-relevant_negatives-4,relevant_negatives,no focal neurological symptoms reported,4,no, focal, neurological,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-relevant_negatives-5,relevant_negatives,no severe persistent pain reported,5,no, severe, persistent,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-exam_findings-1,exam_findings,vital signs documented if measured,1,vital, signs, documented,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-exam_findings-2,exam_findings,cardiovascular exam documented if assessed,2,cardiovascular, exam, documented,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-exam_findings-3,exam_findings,respiratory exam documented if assessed,3,respiratory, exam, documented,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-exam_findings-4,exam_findings,chest wall tenderness documented if assessed,4,chest, wall, tenderness,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-exam_findings-5,exam_findings,peripheral perfusion documented if assessed,5,peripheral, perfusion, documented,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-red_flags-1,red_flags,exertional chest pain,1,exertional, chest, pain,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-red_flags-2,red_flags,syncope,2,syncope,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-red_flags-3,red_flags,severe persistent pain,3,severe, persistent, pain,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-red_flags-4,red_flags,abnormal vitals,4,abnormal, vitals,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-red_flags-5,red_flags,associated shortness of breath,5,associated, shortness, of,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-red_flags-6,red_flags,diaphoresis,6,diaphoresis,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-investigations-1,investigations,ECG reviewed if performed,1,ECG, reviewed, if,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-investigations-2,investigations,troponin reviewed if ordered,2,troponin, reviewed, if,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-investigations-3,investigations,chest imaging reviewed if available,3,chest, imaging, reviewed,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-investigations-4,investigations,blood tests reviewed if ordered,4,blood, tests, reviewed,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,clinician-entered, plan, documented,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,safety-netting, documented, if,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-plan_phrases-3,plan_phrases,investigation follow-up documented if arranged,3,investigation, follow-up, documented,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-plan_phrases-4,plan_phrases,referral or escalation documented if clinician decided,4,referral, or, escalation,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,follow-up, documented, if,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-follow_up-1,follow_up,follow-up in 1-2 weeks if arranged,1,follow-up, in, 1-2,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-follow_up-2,follow_up,return sooner if symptoms worsen,2,return, sooner, if,cardiology
+cardio-chest-pain,Cardiology,cardio-chest-pain-follow_up-3,follow_up,cardiology follow-up documented if arranged,3,cardiology, follow-up, documented,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-symptoms-1,symptoms,palpitations,1,palpitations,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-symptoms-2,symptoms,irregular heartbeat sensation,2,irregular, heartbeat, sensation,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-symptoms-3,symptoms,skipped beats sensation,3,skipped, beats, sensation,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-symptoms-4,symptoms,onset documented,4,onset, documented,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-symptoms-5,symptoms,duration documented,5,duration, documented,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-symptoms-6,symptoms,triggers reviewed,6,triggers, reviewed,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-symptoms-7,symptoms,associated dizziness reviewed,7,associated, dizziness, reviewed,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-symptoms-8,symptoms,caffeine or stimulant use reviewed,8,caffeine, or, stimulant,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-relevant_negatives-1,relevant_negatives,no chest pain reported,1,no, chest, pain,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-relevant_negatives-2,relevant_negatives,no syncope reported,2,no, syncope, reported,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-relevant_negatives-3,relevant_negatives,no shortness of breath reported,3,no, shortness, of,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-exam_findings-1,exam_findings,vital signs documented if measured,1,vital, signs, documented,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-exam_findings-2,exam_findings,cardiovascular exam documented if assessed,2,cardiovascular, exam, documented,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-exam_findings-3,exam_findings,thyroid neck examination documented if assessed,3,thyroid, neck, examination,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-red_flags-1,red_flags,syncope,1,syncope,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-red_flags-2,red_flags,chest pain with palpitations,2,chest, pain, with,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-red_flags-3,red_flags,associated shortness of breath,3,associated, shortness, of,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-red_flags-4,red_flags,family history sudden cardiac death,4,family, history, sudden,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-investigations-1,investigations,ECG reviewed if performed,1,ECG, reviewed, if,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-investigations-2,investigations,thyroid function reviewed if ordered,2,thyroid, function, reviewed,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-investigations-3,investigations,electrolytes reviewed if ordered,3,electrolytes, reviewed, if,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-investigations-4,investigations,ambulatory monitoring reviewed if available,4,ambulatory, monitoring, reviewed,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-plan_phrases-1,plan_phrases,palpitations management advice documented if discussed,1,palpitations, management, advice,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,medication, plan, documented,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-plan_phrases-3,plan_phrases,investigation follow-up documented if arranged,3,investigation, follow-up, documented,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,referral, documented, if,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-follow_up-1,follow_up,follow-up in 2-4 weeks if arranged,1,follow-up, in, 2-4,cardiology
+cardio-palpitations,Cardiology,cardio-palpitations-follow_up-2,follow_up,return sooner if symptoms worsen,2,return, sooner, if,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-symptoms-1,symptoms,hypertension follow-up,1,hypertension, follow-up,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-symptoms-2,symptoms,blood pressure readings reviewed,2,blood, pressure, readings,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-symptoms-3,symptoms,home BP monitoring reviewed if available,3,home, BP, monitoring,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-symptoms-4,symptoms,medication adherence reviewed,4,medication, adherence, reviewed,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-symptoms-5,symptoms,lifestyle context reviewed,5,lifestyle, context, reviewed,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-relevant_negatives-1,relevant_negatives,no headache reported,1,no, headache, reported,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-relevant_negatives-2,relevant_negatives,no chest pain reported,2,no, chest, pain,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-relevant_negatives-3,relevant_negatives,no visual symptoms reported,3,no, visual, symptoms,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-relevant_negatives-4,relevant_negatives,no palpitations reported,4,no, palpitations, reported,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-exam_findings-1,exam_findings,blood pressure documented if measured,1,blood, pressure, documented,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-exam_findings-2,exam_findings,heart rate documented if measured,2,heart, rate, documented,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-exam_findings-3,exam_findings,cardiovascular exam documented if assessed,3,cardiovascular, exam, documented,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-exam_findings-4,exam_findings,lower limb edema documented if assessed,4,lower, limb, edema,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-red_flags-1,red_flags,severe hypertension if documented,1,severe, hypertension, if,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-red_flags-2,red_flags,end-organ symptoms,2,end-organ, symptoms,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-red_flags-3,red_flags,new neurological symptoms,3,new, neurological, symptoms,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-investigations-1,investigations,renal function reviewed if ordered,1,renal, function, reviewed,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-investigations-2,investigations,urine ACR reviewed if ordered,2,urine, ACR, reviewed,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-investigations-3,investigations,lipid profile reviewed if ordered,3,lipid, profile, reviewed,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-investigations-4,investigations,ECG reviewed if performed,4,ECG, reviewed, if,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-plan_phrases-1,plan_phrases,medication review documented if clinician decided,1,medication, review, documented,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-plan_phrases-2,plan_phrases,lifestyle advice documented if discussed,2,lifestyle, advice, documented,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-plan_phrases-3,plan_phrases,BP monitoring plan documented if discussed,3,BP, monitoring, plan,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,follow-up, documented, if,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-follow_up-1,follow_up,follow-up in 3-6 months if arranged,1,follow-up, in, 3-6,cardiology
+cardio-hypertension-followup,Cardiology,cardio-hypertension-followup-follow_up-2,follow_up,return sooner if BP concerns,2,return, sooner, if,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-symptoms-1,symptoms,heart failure follow-up,1,heart, failure, follow-up,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-symptoms-2,symptoms,dyspnea status reviewed,2,dyspnea, status, reviewed,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-symptoms-3,symptoms,orthopnea reviewed,3,orthopnea, reviewed,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-symptoms-4,symptoms,PND reviewed,4,PND, reviewed,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-symptoms-5,symptoms,exercise tolerance reviewed,5,exercise, tolerance, reviewed,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-symptoms-6,symptoms,fluid retention symptoms reviewed,6,fluid, retention, symptoms,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-relevant_negatives-1,relevant_negatives,no chest pain reported,1,no, chest, pain,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-relevant_negatives-2,relevant_negatives,no palpitations reported,2,no, palpitations, reported,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-exam_findings-1,exam_findings,vital signs documented if measured,1,vital, signs, documented,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-exam_findings-2,exam_findings,JVP documented if assessed,2,JVP, documented, if,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-exam_findings-3,exam_findings,lower limb edema documented if assessed,3,lower, limb, edema,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-exam_findings-4,exam_findings,chest auscultation documented if assessed,4,chest, auscultation, documented,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-exam_findings-5,exam_findings,weight documented if measured,5,weight, documented, if,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-red_flags-1,red_flags,worsening dyspnea,1,worsening, dyspnea,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-red_flags-2,red_flags,significant weight gain,2,significant, weight, gain,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-red_flags-3,red_flags,new palpitations,3,new, palpitations,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-red_flags-4,red_flags,syncope,4,syncope,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-investigations-1,investigations,renal function reviewed if ordered,1,renal, function, reviewed,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-investigations-2,investigations,electrolytes reviewed if ordered,2,electrolytes, reviewed, if,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-investigations-3,investigations,BNP reviewed if ordered,3,BNP, reviewed, if,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-investigations-4,investigations,ECG reviewed if performed,4,ECG, reviewed, if,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-plan_phrases-1,plan_phrases,medication review documented if clinician decided,1,medication, review, documented,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-plan_phrases-2,plan_phrases,fluid management advice documented if discussed,2,fluid, management, advice,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-plan_phrases-3,plan_phrases,weight monitoring documented if discussed,3,weight, monitoring, documented,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,referral, documented, if,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-follow_up-1,follow_up,follow-up in 2-4 weeks if arranged,1,follow-up, in, 2-4,cardiology
+cardio-heart-failure-followup,Cardiology,cardio-heart-failure-followup-follow_up-2,follow_up,return sooner if symptoms worsen,2,return, sooner, if,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-symptoms-1,symptoms,ECG review,1,ECG, review,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-symptoms-2,symptoms,ECG indication documented,2,ECG, indication, documented,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-symptoms-3,symptoms,ECG findings documented by clinician,3,ECG, findings, documented,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-relevant_negatives-1,relevant_negatives,no acute changes documented by clinician,1,no, acute, changes,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-relevant_negatives-2,relevant_negatives,no arrhythmia documented by clinician,2,no, arrhythmia, documented,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-exam_findings-1,exam_findings,vital signs documented if measured,1,vital, signs, documented,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-exam_findings-2,exam_findings,cardiovascular exam documented if assessed,2,cardiovascular, exam, documented,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-red_flags-1,red_flags,acute ischemic changes,1,acute, ischemic, changes,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-red_flags-2,red_flags,significant arrhythmia,2,significant, arrhythmia,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-red_flags-3,red_flags,clinician-identified abnormality,3,clinician-identified, abnormality,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-investigations-1,investigations,ECG reviewed by clinician,1,ECG, reviewed, by,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-investigations-2,investigations,previous ECG reviewed if available,2,previous, ECG, reviewed,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-investigations-3,investigations,troponin reviewed if ordered,3,troponin, reviewed, if,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-plan_phrases-1,plan_phrases,ECG findings documented by clinician,1,ECG, findings, documented,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-plan_phrases-2,plan_phrases,further investigation documented if arranged,2,further, investigation, documented,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,referral, documented, if,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,follow-up, documented, if,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-follow_up-1,follow_up,follow-up in 1-4 weeks if arranged,1,follow-up, in, 1-4,cardiology
+cardio-ecg-review,Cardiology,cardio-ecg-review-follow_up-2,follow_up,cardiology follow-up documented if arranged,2,cardiology, follow-up, documented,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-symptoms-1,symptoms,dyspnea,1,dyspnea,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-symptoms-2,symptoms,shortness of breath,2,shortness, of, breath,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-symptoms-3,symptoms,exertional dyspnea,3,exertional, dyspnea,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-symptoms-4,symptoms,paroxysmal nocturnal dyspnea reviewed,4,paroxysmal, nocturnal, dyspnea,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-symptoms-5,symptoms,orthopnea reviewed,5,orthopnea, reviewed,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-symptoms-6,symptoms,onset documented,6,onset, documented,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-symptoms-7,symptoms,associated symptoms reviewed,7,associated, symptoms, reviewed,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-relevant_negatives-1,relevant_negatives,no chest pain reported,1,no, chest, pain,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-relevant_negatives-2,relevant_negatives,no syncope reported,2,no, syncope, reported,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-relevant_negatives-3,relevant_negatives,no hemoptysis reported,3,no, hemoptysis, reported,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-exam_findings-1,exam_findings,respiratory rate documented if measured,1,respiratory, rate, documented,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-exam_findings-2,exam_findings,oxygen saturation documented if measured,2,oxygen, saturation, documented,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-exam_findings-3,exam_findings,chest auscultation documented if assessed,3,chest, auscultation, documented,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-exam_findings-4,exam_findings,JVP documented if assessed,4,JVP, documented, if,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-exam_findings-5,exam_findings,lower limb edema documented if assessed,5,lower, limb, edema,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-red_flags-1,red_flags,hypoxia if documented,1,hypoxia, if, documented,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-red_flags-2,red_flags,worsening dyspnea,2,worsening, dyspnea,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-red_flags-3,red_flags,syncope,3,syncope,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-red_flags-4,red_flags,new arrhythmia,4,new, arrhythmia,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-investigations-1,investigations,ECG reviewed if performed,1,ECG, reviewed, if,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-investigations-2,investigations,chest imaging reviewed if available,2,chest, imaging, reviewed,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-investigations-3,investigations,BNP reviewed if ordered,3,BNP, reviewed, if,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-investigations-4,investigations,blood tests reviewed if ordered,4,blood, tests, reviewed,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-plan_phrases-1,plan_phrases,management plan documented if clinician decided,1,management, plan, documented,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,safety-netting, documented, if,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-plan_phrases-3,plan_phrases,investigation follow-up documented if arranged,3,investigation, follow-up, documented,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,referral, documented, if,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-follow_up-1,follow_up,follow-up in 1-2 weeks if arranged,1,follow-up, in, 1-2,cardiology
+cardio-dyspnea,Cardiology,cardio-dyspnea-follow_up-2,follow_up,return sooner if symptoms worsen,2,return, sooner, if,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-symptoms-1,symptoms,lipid follow-up,1,lipid, follow-up,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-symptoms-2,symptoms,lipid panel results reviewed,2,lipid, panel, results,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-symptoms-3,symptoms,lifestyle context reviewed,3,lifestyle, context, reviewed,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-symptoms-4,symptoms,medication adherence reviewed,4,medication, adherence, reviewed,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-relevant_negatives-1,relevant_negatives,no muscle symptoms reported,1,no, muscle, symptoms,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-relevant_negatives-2,relevant_negatives,no new cardiac symptoms reported,2,no, new, cardiac,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-exam_findings-1,exam_findings,vital signs documented if measured,1,vital, signs, documented,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-exam_findings-2,exam_findings,weight documented if measured,2,weight, documented, if,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-exam_findings-3,exam_findings,cardiovascular exam documented if assessed,3,cardiovascular, exam, documented,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-red_flags-1,red_flags,severely elevated lipids if documented,1,severely, elevated, lipids,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-investigations-1,investigations,lipid profile reviewed,1,lipid, profile, reviewed,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-investigations-2,investigations,liver function reviewed if ordered,2,liver, function, reviewed,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-investigations-3,investigations,glucose or HbA1c reviewed if ordered,3,glucose, or, HbA1c,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-investigations-4,investigations,previous lipid results reviewed if available,4,previous, lipid, results,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-plan_phrases-1,plan_phrases,medication review documented if clinician decided,1,medication, review, documented,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-plan_phrases-2,plan_phrases,lifestyle advice documented if discussed,2,lifestyle, advice, documented,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-plan_phrases-3,plan_phrases,dietary advice documented if discussed,3,dietary, advice, documented,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,follow-up, documented, if,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-follow_up-1,follow_up,follow-up in 3-6 months if arranged,1,follow-up, in, 3-6,cardiology
+cardio-lipid-followup,Cardiology,cardio-lipid-followup-follow_up-2,follow_up,repeat lipids documented if arranged,2,repeat, lipids, documented,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-symptoms-1,symptoms,post-PCI follow-up,1,post-PCI, follow-up,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-symptoms-2,symptoms,chest pain reviewed,2,chest, pain, reviewed,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-symptoms-3,symptoms,dyspnea reviewed,3,dyspnea, reviewed,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-symptoms-4,symptoms,procedure site reviewed,4,procedure, site, reviewed,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-symptoms-5,symptoms,medication adherence reviewed,5,medication, adherence, reviewed,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-relevant_negatives-1,relevant_negatives,no chest pain reported,1,no, chest, pain,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-relevant_negatives-2,relevant_negatives,no dyspnea reported,2,no, dyspnea, reported,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-relevant_negatives-3,relevant_negatives,no bleeding reported,3,no, bleeding, reported,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-exam_findings-1,exam_findings,vital signs documented if measured,1,vital, signs, documented,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-exam_findings-2,exam_findings,access site documented if assessed,2,access, site, documented,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-exam_findings-3,exam_findings,cardiovascular exam documented if assessed,3,cardiovascular, exam, documented,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-red_flags-1,red_flags,recurrent chest pain,1,recurrent, chest, pain,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-red_flags-2,red_flags,access site complications,2,access, site, complications,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-red_flags-3,red_flags,bleeding or hematoma,3,bleeding, or, hematoma,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-investigations-1,investigations,ECG reviewed if performed,1,ECG, reviewed, if,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-investigations-2,investigations,previous records reviewed if available,2,previous, records, reviewed,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-plan_phrases-1,plan_phrases,medication review documented if clinician decided,1,medication, review, documented,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-plan_phrases-2,plan_phrases,antiplatelet therapy documented as per clinician plan,2,antiplatelet, therapy, documented,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-plan_phrases-3,plan_phrases,lifestyle advice documented if discussed,3,lifestyle, advice, documented,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-plan_phrases-4,plan_phrases,cardiology follow-up documented if arranged,4,cardiology, follow-up, documented,cardiology
+cardio-post-pci-followup,Cardiology,cardio-post-pci-followup-follow_up-1,follow_up,follow-up in 4-6 weeks if arranged,1,follow-up, in, 4-6,cardiology
+cardio-syncope,Cardiology,cardio-syncope-symptoms-1,symptoms,syncope,1,syncope,cardiology
+cardio-syncope,Cardiology,cardio-syncope-symptoms-2,symptoms,prodrome documented,2,prodrome, documented,cardiology
+cardio-syncope,Cardiology,cardio-syncope-symptoms-3,symptoms,position documented,3,position, documented,cardiology
+cardio-syncope,Cardiology,cardio-syncope-symptoms-4,symptoms,duration of LOC documented if known,4,duration, of, LOC,cardiology
+cardio-syncope,Cardiology,cardio-syncope-symptoms-5,symptoms,witnessed event documented if available,5,witnessed, event, documented,cardiology
+cardio-syncope,Cardiology,cardio-syncope-symptoms-6,symptoms,palpitations preceding syncope reviewed,6,palpitations, preceding, syncope,cardiology
+cardio-syncope,Cardiology,cardio-syncope-symptoms-7,symptoms,chest pain preceding syncope reviewed,7,chest, pain, preceding,cardiology
+cardio-syncope,Cardiology,cardio-syncope-relevant_negatives-1,relevant_negatives,no seizure activity reported,1,no, seizure, activity,cardiology
+cardio-syncope,Cardiology,cardio-syncope-relevant_negatives-2,relevant_negatives,no head injury reported,2,no, head, injury,cardiology
+cardio-syncope,Cardiology,cardio-syncope-relevant_negatives-3,relevant_negatives,no focal neurological symptoms reported,3,no, focal, neurological,cardiology
+cardio-syncope,Cardiology,cardio-syncope-exam_findings-1,exam_findings,vital signs documented if measured,1,vital, signs, documented,cardiology
+cardio-syncope,Cardiology,cardio-syncope-exam_findings-2,exam_findings,orthostatic BP documented if measured,2,orthostatic, BP, documented,cardiology
+cardio-syncope,Cardiology,cardio-syncope-exam_findings-3,exam_findings,cardiovascular exam documented if assessed,3,cardiovascular, exam, documented,cardiology
+cardio-syncope,Cardiology,cardio-syncope-exam_findings-4,exam_findings,neurological screen documented if assessed,4,neurological, screen, documented,cardiology
+cardio-syncope,Cardiology,cardio-syncope-red_flags-1,red_flags,exertional syncope,1,exertional, syncope,cardiology
+cardio-syncope,Cardiology,cardio-syncope-red_flags-2,red_flags,family history sudden cardiac death,2,family, history, sudden,cardiology
+cardio-syncope,Cardiology,cardio-syncope-red_flags-3,red_flags,chest pain with syncope,3,chest, pain, with,cardiology
+cardio-syncope,Cardiology,cardio-syncope-red_flags-4,red_flags,new neurological findings,4,new, neurological, findings,cardiology
+cardio-syncope,Cardiology,cardio-syncope-investigations-1,investigations,ECG reviewed if performed,1,ECG, reviewed, if,cardiology
+cardio-syncope,Cardiology,cardio-syncope-investigations-2,investigations,blood tests reviewed if ordered,2,blood, tests, reviewed,cardiology
+cardio-syncope,Cardiology,cardio-syncope-investigations-3,investigations,ambulatory monitoring reviewed if available,3,ambulatory, monitoring, reviewed,cardiology
+cardio-syncope,Cardiology,cardio-syncope-plan_phrases-1,plan_phrases,syncope advice documented if discussed,1,syncope, advice, documented,cardiology
+cardio-syncope,Cardiology,cardio-syncope-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,safety-netting, documented, if,cardiology
+cardio-syncope,Cardiology,cardio-syncope-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,referral, documented, if,cardiology
+cardio-syncope,Cardiology,cardio-syncope-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,follow-up, documented, if,cardiology
+cardio-syncope,Cardiology,cardio-syncope-follow_up-1,follow_up,follow-up in 1-2 weeks if arranged,1,follow-up, in, 1-2,cardiology
+cardio-syncope,Cardiology,cardio-syncope-follow_up-2,follow_up,return sooner if recurrent syncope,2,return, sooner, if,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-1,symptoms,murmur documentation,1,murmur, documentation,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-2,symptoms,murmur detected,2,murmur, detected,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-3,symptoms,murmur timing documented,3,murmur, timing, documented,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-4,symptoms,murmur location documented,4,murmur, location, documented,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-5,symptoms,murmur character documented,5,murmur, character, documented,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-relevant_negatives-1,relevant_negatives,no chest pain reported,1,no, chest, pain,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-relevant_negatives-2,relevant_negatives,no dyspnea reported,2,no, dyspnea, reported,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-relevant_negatives-3,relevant_negatives,no syncope reported,3,no, syncope, reported,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-relevant_negatives-4,relevant_negatives,no palpitations reported,4,no, palpitations, reported,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-exam_findings-1,exam_findings,vital signs documented if measured,1,vital, signs, documented,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-exam_findings-2,exam_findings,cardiovascular exam documented if assessed,2,cardiovascular, exam, documented,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-exam_findings-3,exam_findings,murmur grade documented if assessed,3,murmur, grade, documented,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-exam_findings-4,exam_findings,radiation documented if assessed,4,radiation, documented, if,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-red_flags-1,red_flags,diastolic murmur,1,diastolic, murmur,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-red_flags-2,red_flags,systolic murmur grade 3 or above,2,systolic, murmur, grade,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-red_flags-3,red_flags,associated symptoms,3,associated, symptoms,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-red_flags-4,red_flags,new murmur,4,new, murmur,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-investigations-1,investigations,echocardiogram reviewed if available,1,echocardiogram, reviewed, if,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-investigations-2,investigations,ECG reviewed if performed,2,ECG, reviewed, if,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-investigations-3,investigations,previous records reviewed if available,3,previous, records, reviewed,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-plan_phrases-1,plan_phrases,murmur findings documented by clinician,1,murmur, findings, documented,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-plan_phrases-2,plan_phrases,investigation plan documented if clinician decided,2,investigation, plan, documented,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,referral, documented, if,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,follow-up, documented, if,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-follow_up-1,follow_up,follow-up in 2-4 weeks if arranged,1,follow-up, in, 2-4,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-follow_up-2,follow_up,cardiology follow-up documented if arranged,2,cardiology, follow-up, documented,cardiology
