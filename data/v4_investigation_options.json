@@ -2370,5 +2370,295 @@
     ],
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
     "review_required": true
+  },
+  {
+    "workflow_id": "ent-ear-pain",
+    "workflow_display_name": "ENT Ear Pain",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ent-ear-pain",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "oto_ent-ear-pain",
+            "option_text": "Otoscopy documented if assessed.",
+            "note_text": "Otoscopy documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "temp_ent-ear-pain",
+            "option_text": "Temperature recorded if measured.",
+            "note_text": "Temperature recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Tests_ent-ear-pain",
+        "group_label": "Tests",
+        "options": [
+          {
+            "option_id": "hearing_ent-ear-pain",
+            "option_text": "Hearing screen reviewed if performed.",
+            "note_text": "Hearing screen reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-hearing-complaint",
+    "workflow_display_name": "ENT Hearing Complaint",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ent-hearing-complaint",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "oto_ent-hearing-complaint",
+            "option_text": "Otoscopy documented if assessed.",
+            "note_text": "Otoscopy documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "hearing_ent-hearing-complaint",
+            "option_text": "Hearing screen reviewed if performed.",
+            "note_text": "Hearing screen reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-tinnitus",
+    "workflow_display_name": "ENT Tinnitus",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ent-tinnitus",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "oto_ent-tinnitus",
+            "option_text": "Otoscopy documented if assessed.",
+            "note_text": "Otoscopy documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "hearing_ent-tinnitus",
+            "option_text": "Hearing screen reviewed if performed.",
+            "note_text": "Hearing screen reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-dizziness-vertigo",
+    "workflow_display_name": "ENT Dizziness / Vertigo",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ent-dizziness-vertigo",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "oto_ent-dizziness-vertigo",
+            "option_text": "Otoscopy documented if assessed.",
+            "note_text": "Otoscopy documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "vestibular_ent-dizziness-vertigo",
+            "option_text": "Vestibular screen documented if assessed.",
+            "note_text": "Vestibular screen documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bp_ent-dizziness-vertigo",
+            "option_text": "Blood pressure recorded if measured.",
+            "note_text": "Blood pressure recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-nasal-congestion",
+    "workflow_display_name": "ENT Nasal Congestion",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ent-nasal-congestion",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "nasal_ent-nasal-congestion",
+            "option_text": "Nasal examination documented if assessed.",
+            "note_text": "Nasal examination documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-sinus-symptoms",
+    "workflow_display_name": "ENT Sinus Symptoms",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ent-sinus-symptoms",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "nasal_ent-sinus-symptoms",
+            "option_text": "Nasal examination documented if assessed.",
+            "note_text": "Nasal examination documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "sinus_ent-sinus-symptoms",
+            "option_text": "Sinus tenderness documented if assessed.",
+            "note_text": "Sinus tenderness documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "temp_ent-sinus-symptoms",
+            "option_text": "Temperature recorded if measured.",
+            "note_text": "Temperature recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Imaging_ent-sinus-symptoms",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "sinus_ct_ent-sinus-symptoms",
+            "option_text": "Sinus imaging reviewed if available.",
+            "note_text": "Sinus imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-sore-throat",
+    "workflow_display_name": "ENT Sore Throat",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ent-sore-throat",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "throat_ent-sore-throat",
+            "option_text": "Throat examination documented if assessed.",
+            "note_text": "Throat examination documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "cervical_ent-sore-throat",
+            "option_text": "Cervical lymph nodes documented if assessed.",
+            "note_text": "Cervical lymph nodes documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "temp_ent-sore-throat",
+            "option_text": "Temperature recorded if measured.",
+            "note_text": "Temperature recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Tests_ent-sore-throat",
+        "group_label": "Tests",
+        "options": [
+          {
+            "option_id": "rapid_ent-sore-throat",
+            "option_text": "Rapid test reviewed if performed.",
+            "note_text": "Rapid test reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "swab_ent-sore-throat",
+            "option_text": "Throat swab reviewed if available.",
+            "note_text": "Throat swab reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-voice-complaint",
+    "workflow_display_name": "ENT Voice Complaint",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ent-voice-complaint",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "larynx_ent-voice-complaint",
+            "option_text": "Laryngeal examination documented if assessed.",
+            "note_text": "Laryngeal examination documented by clinician if assessed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Ref_ent-voice-complaint",
+        "group_label": "Ref",
+        "options": [
+          {
+            "option_id": "ent_ref_ent-voice-complaint",
+            "option_text": "ENT or speech therapy referral documented if arranged.",
+            "note_text": "ENT or speech therapy referral documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
   }
 ]

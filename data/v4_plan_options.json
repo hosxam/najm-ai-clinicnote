@@ -5673,5 +5673,746 @@
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
     "review_required": true,
     "source_status": "draft"
+  },
+  {
+    "workflow_id": "ent-ear-pain",
+    "workflow_display_name": "ENT Ear Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_ent-ear-pain",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "pain_ent-ear-pain",
+            "option_text": "Pain management advice documented if discussed.",
+            "note_text": "Pain management advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_ent-ear-pain",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_ent-ear-pain",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_ent-ear-pain",
+        "group_label": "safety",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_ent-ear-pain",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_ent-ear-pain",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_ent-ear-pain",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "ent-hearing-complaint",
+    "workflow_display_name": "ENT Hearing Complaint",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_ent-hearing-complaint",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "hearing_ent-hearing-complaint",
+            "option_text": "Hearing protection advice documented if discussed.",
+            "note_text": "Hearing protection advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "inv_ent-hearing-complaint",
+        "group_label": "inv",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "audiology_ent-hearing-complaint",
+            "option_text": "Audiology referral documented if arranged.",
+            "note_text": "Audiology referral arranged.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_ent-hearing-complaint",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_ent-hearing-complaint",
+            "option_text": "ENT referral documented if clinician decided.",
+            "note_text": "ENT referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_ent-hearing-complaint",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_ent-hearing-complaint",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "ent-tinnitus",
+    "workflow_display_name": "ENT Tinnitus",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_ent-tinnitus",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "tinnitus_ent-tinnitus",
+            "option_text": "Tinnitus management advice documented if discussed.",
+            "note_text": "Tinnitus management advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_ent-tinnitus",
+        "group_label": "ref",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "audiology_ent-tinnitus",
+            "option_text": "Audiology referral documented if arranged.",
+            "note_text": "Audiology referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "ent_ent-tinnitus",
+            "option_text": "ENT referral documented if clinician decided.",
+            "note_text": "ENT referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_ent-tinnitus",
+        "group_label": "fup",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_ent-tinnitus",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "ent-dizziness-vertigo",
+    "workflow_display_name": "ENT Dizziness / Vertigo",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_ent-dizziness-vertigo",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "dizziness_ent-dizziness-vertigo",
+            "option_text": "Dizziness management advice documented if discussed.",
+            "note_text": "Dizziness management advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_ent-dizziness-vertigo",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_ent-dizziness-vertigo",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_ent-dizziness-vertigo",
+        "group_label": "safety",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_ent-dizziness-vertigo",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_ent-dizziness-vertigo",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_ent-dizziness-vertigo",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "ent-nasal-congestion",
+    "workflow_display_name": "ENT Nasal Congestion",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_ent-nasal-congestion",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "nasal_ent-nasal-congestion",
+            "option_text": "Nasal symptom management advice documented if discussed.",
+            "note_text": "Nasal symptom management advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "trigger_ent-nasal-congestion",
+            "option_text": "Trigger or allergy advice documented if discussed.",
+            "note_text": "Trigger avoidance discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_ent-nasal-congestion",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_ent-nasal-congestion",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_ent-nasal-congestion",
+        "group_label": "fup",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_ent-nasal-congestion",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "ent-sinus-symptoms",
+    "workflow_display_name": "ENT Sinus Symptoms",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_ent-sinus-symptoms",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "sinus_ent-sinus-symptoms",
+            "option_text": "Sinus symptom management advice documented if discussed.",
+            "note_text": "Sinus symptom management advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_ent-sinus-symptoms",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_ent-sinus-symptoms",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_ent-sinus-symptoms",
+        "group_label": "safety",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_ent-sinus-symptoms",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_ent-sinus-symptoms",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_ent-sinus-symptoms",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "ent-sore-throat",
+    "workflow_display_name": "ENT Sore Throat",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_ent-sore-throat",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "sore_ent-sore-throat",
+            "option_text": "Sore throat symptom management advice documented if discussed.",
+            "note_text": "Sore throat symptom management advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_ent-sore-throat",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_ent-sore-throat",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_ent-sore-throat",
+        "group_label": "safety",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_ent-sore-throat",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_ent-sore-throat",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_ent-sore-throat",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "ent-voice-complaint",
+    "workflow_display_name": "ENT Voice Complaint",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_ent-voice-complaint",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "voice_ent-voice-complaint",
+            "option_text": "Voice care advice documented if discussed.",
+            "note_text": "Voice care advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "lifestyle_ent-voice-complaint",
+        "group_label": "lifestyle",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "reflux_ent-voice-complaint",
+            "option_text": "Reflux or lifestyle advice documented if discussed.",
+            "note_text": "Reflux/lifestyle advice discussed.",
+            "option_category": "lifestyle_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_ent-voice-complaint",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "slp_ent-voice-complaint",
+            "option_text": "Speech or voice therapy referral documented if arranged.",
+            "note_text": "Speech therapy referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "ent_ent-voice-complaint",
+            "option_text": "ENT referral documented if clinician decided.",
+            "note_text": "ENT referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_ent-voice-complaint",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_ent-voice-complaint",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
   }
 ]

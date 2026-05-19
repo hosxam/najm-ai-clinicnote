@@ -1776,5 +1776,229 @@
     ],
     "safety_note": "Documentation prompts only. Clinically appropriate context and consent where relevant. No treatment recommendations. Clinician review required.",
     "review_required": true
+  },
+  {
+    "workflow_id": "ent-ear-pain",
+    "workflow_display_name": "ENT Ear Pain",
+    "default_history_draft": "Patient seen with ear pain for [duration]. Laterality: [laterality]. Pain character: [pain_character]. Fever: [fever_context]. Discharge/hearing: [discharge_or_hearing_context]. Recent URTI or water exposure: [recent_urti_or_water_exposure]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[laterality]",
+      "[pain character]",
+      "[fever context]",
+      "[discharge or hearing context]",
+      "[recent urti or water exposure]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-hearing-complaint",
+    "workflow_display_name": "ENT Hearing Complaint",
+    "default_history_draft": "Patient seen with hearing concern for [duration]. Laterality: [laterality]. Onset: [sudden_or_gradual_context]. Associated tinnitus/vertigo: [associated_tinnitus_or_vertigo]. Noise exposure: [noise_exposure_context]. Ear pain/discharge: [ear_pain_or_discharge_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[laterality]",
+      "[sudden or gradual context]",
+      "[associated tinnitus or vertigo]",
+      "[noise exposure context]",
+      "[ear pain or discharge context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-tinnitus",
+    "workflow_display_name": "ENT Tinnitus",
+    "default_history_draft": "Patient seen with tinnitus for [duration]. Laterality: [laterality]. Character: [pulsatile_or_nonpulsatile_context]. Hearing change: [hearing_change_context]. Dizziness: [dizziness_context]. Noise exposure: [noise_exposure_context]. Medication/risk: [medication_or_risk_context]. [Relevant negatives reviewed].",
+    "editable_placeholders": [
+      "[duration]",
+      "[laterality]",
+      "[pulsatile or nonpulsatile context]",
+      "[hearing change context]",
+      "[dizziness context]",
+      "[noise exposure context]",
+      "[medication or risk context]",
+      "[relevant negatives]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-dizziness-vertigo",
+    "workflow_display_name": "ENT Dizziness / Vertigo",
+    "default_history_draft": "Patient seen with dizziness/vertigo for [duration]. Type: [dizziness_type]. Positional: [positional_context]. Nausea/vomiting: [nausea_vomiting_context]. Hearing/tinnitus: [hearing_or_tinnitus_context]. Neurological: [neurological_symptom_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[dizziness type]",
+      "[positional context]",
+      "[nausea vomiting context]",
+      "[hearing or tinnitus context]",
+      "[neurological symptom context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-nasal-congestion",
+    "workflow_display_name": "ENT Nasal Congestion",
+    "default_history_draft": "Patient seen with nasal congestion for [duration]. Character: [congestion_character]. Discharge: [discharge_context]. Facial pain/pressure: [facial_pain_or_pressure]. Sneezing/allergic triggers: [sneezing_or_allergic_triggers]. Smell/taste: [smell_taste_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[congestion character]",
+      "[discharge context]",
+      "[facial pain or pressure]",
+      "[sneezing or allergic triggers]",
+      "[smell taste context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-sinus-symptoms",
+    "workflow_display_name": "ENT Sinus Symptoms",
+    "default_history_draft": "Patient seen with sinus symptoms for [duration]. Pain/pressure location: [pain_or_pressure_location]. Discharge: [discharge_context]. Nasal obstruction: [nasal_obstruction_context]. Fever: [fever_context]. Dental pain: [dental_pain_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[pain or pressure location]",
+      "[discharge context]",
+      "[nasal obstruction context]",
+      "[fever context]",
+      "[dental pain context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-sore-throat",
+    "workflow_display_name": "ENT Sore Throat",
+    "default_history_draft": "Patient seen with sore throat for [duration]. Character: [pain_character]. Swallowing: [swallowing_context]. Fever: [fever_context]. Voice change: [voice_change_context]. Recent illness/exposure: [recent_illness_or_exposure]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[pain character]",
+      "[swallowing context]",
+      "[fever context]",
+      "[voice change context]",
+      "[recent illness or exposure]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ent-voice-complaint",
+    "workflow_display_name": "ENT Voice Complaint",
+    "default_history_draft": "Patient seen with voice concern for [duration]. Description: [voice_symptom_description]. Pain/strain: [pain_or_strain_context]. Reflux/lifestyle: [reflux_lifestyle_context]. Smoking/occupational: [smoking_or_occupational_context]. Recent illness: [recent_illness_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[voice symptom description]",
+      "[pain or strain context]",
+      "[reflux lifestyle context]",
+      "[smoking or occupational context]",
+      "[recent illness context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
   }
 ]
