@@ -4825,5 +4825,3345 @@
     "min_sections": [
       "hpi"
     ]
+  },
+  {
+    "workflow_id": "cardio-chest-pain",
+    "specialty_id": "Cardiology",
+    "chief_complaint": "Chest pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Chest pain documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Cardiology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "cardio-palpitations",
+    "specialty_id": "Cardiology",
+    "chief_complaint": "Palpitations",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Palpitations documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Cardiology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "cardio-hypertension-followup",
+    "specialty_id": "Cardiology",
+    "chief_complaint": "Hypertension follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Hypertension follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Cardiology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "cardio-heart-failure-followup",
+    "specialty_id": "Cardiology",
+    "chief_complaint": "Heart failure follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Heart failure follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Cardiology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "cardio-ecg-review",
+    "specialty_id": "Cardiology",
+    "chief_complaint": "ECG review",
+    "chief_complaint_aliases": [],
+    "diagnosis": "ECG review documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Cardiology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "cardio-dyspnea",
+    "specialty_id": "Cardiology",
+    "chief_complaint": "Dyspnea",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Dyspnea documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Cardiology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "cardio-lipid-followup",
+    "specialty_id": "Cardiology",
+    "chief_complaint": "Lipid follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Lipid follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Cardiology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "cardio-post-pci-followup",
+    "specialty_id": "Cardiology",
+    "chief_complaint": "Post-PCI follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Post-PCI follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Cardiology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "cardio-syncope",
+    "specialty_id": "Cardiology",
+    "chief_complaint": "Syncope",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Syncope documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Cardiology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "cardio-murmur-documentation",
+    "specialty_id": "Cardiology",
+    "chief_complaint": "Murmur documentation",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Murmur documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Cardiology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neuro-headache",
+    "specialty_id": "Neurology",
+    "chief_complaint": "Headache",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Headache documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Neurology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neuro-migraine-followup",
+    "specialty_id": "Neurology",
+    "chief_complaint": "Migraine follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Migraine follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Neurology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neuro-seizure-followup",
+    "specialty_id": "Neurology",
+    "chief_complaint": "Seizure follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Seizure follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Neurology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neuro-dizziness",
+    "specialty_id": "Neurology",
+    "chief_complaint": "Dizziness",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Dizziness documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Neurology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neuro-weakness",
+    "specialty_id": "Neurology",
+    "chief_complaint": "Weakness",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Weakness documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Neurology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neuro-numbness-tingling",
+    "specialty_id": "Neurology",
+    "chief_complaint": "Numbness/tingling",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Numbness/tingling documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Neurology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neuro-tremor",
+    "specialty_id": "Neurology",
+    "chief_complaint": "Tremor",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Tremor documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Neurology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neuro-neuropathy-followup",
+    "specialty_id": "Neurology",
+    "chief_complaint": "Neuropathy follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Neuropathy follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Neurology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neuro-stroke-tia-followup",
+    "specialty_id": "Neurology",
+    "chief_complaint": "Stroke/TIA follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Stroke/TIA follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Neurology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neuro-memory-concern",
+    "specialty_id": "Neurology",
+    "chief_complaint": "Memory concern",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Memory concern documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Neurology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "resp-asthma-followup",
+    "specialty_id": "Respiratory / Pulmonology",
+    "chief_complaint": "Asthma follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Asthma follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Respiratory / Pulmonology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "resp-copd-followup",
+    "specialty_id": "Respiratory / Pulmonology",
+    "chief_complaint": "COPD follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "COPD follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Respiratory / Pulmonology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "resp-chronic-cough",
+    "specialty_id": "Respiratory / Pulmonology",
+    "chief_complaint": "Chronic cough",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Chronic cough documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Respiratory / Pulmonology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "resp-dyspnea",
+    "specialty_id": "Respiratory / Pulmonology",
+    "chief_complaint": "Dyspnea",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Dyspnea documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Respiratory / Pulmonology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "resp-wheeze",
+    "specialty_id": "Respiratory / Pulmonology",
+    "chief_complaint": "Wheeze",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Wheeze documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Respiratory / Pulmonology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "resp-pneumonia-followup",
+    "specialty_id": "Respiratory / Pulmonology",
+    "chief_complaint": "Pneumonia follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Pneumonia follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Respiratory / Pulmonology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "resp-sleep-apnea-symptoms",
+    "specialty_id": "Respiratory / Pulmonology",
+    "chief_complaint": "Sleep apnea symptoms",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Sleep apnea documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Respiratory / Pulmonology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "resp-hemoptysis-documentation",
+    "specialty_id": "Respiratory / Pulmonology",
+    "chief_complaint": "Hemoptysis documentation",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Hemoptysis documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Respiratory / Pulmonology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "resp-smoking-history-note",
+    "specialty_id": "Respiratory / Pulmonology",
+    "chief_complaint": "Smoking history note",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Smoking history documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Respiratory / Pulmonology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "resp-pulmonary-function-review",
+    "specialty_id": "Respiratory / Pulmonology",
+    "chief_complaint": "Pulmonary function review",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Pulmonary function review documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Respiratory / Pulmonology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gastro-gerd",
+    "specialty_id": "Gastroenterology",
+    "chief_complaint": "GERD",
+    "chief_complaint_aliases": [],
+    "diagnosis": "GERD documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Gastroenterology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gastro-abdominal-pain",
+    "specialty_id": "Gastroenterology",
+    "chief_complaint": "Abdominal pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Abdominal pain documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Gastroenterology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gastro-ibs-symptoms",
+    "specialty_id": "Gastroenterology",
+    "chief_complaint": "IBS symptoms",
+    "chief_complaint_aliases": [],
+    "diagnosis": "IBS documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Gastroenterology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gastro-constipation",
+    "specialty_id": "Gastroenterology",
+    "chief_complaint": "Constipation",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Constipation documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Gastroenterology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gastro-diarrhea",
+    "specialty_id": "Gastroenterology",
+    "chief_complaint": "Diarrhea",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Diarrhea documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Gastroenterology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gastro-rectal-bleeding",
+    "specialty_id": "Gastroenterology",
+    "chief_complaint": "Rectal bleeding",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Rectal bleeding documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Gastroenterology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gastro-liver-enzyme-review",
+    "specialty_id": "Gastroenterology",
+    "chief_complaint": "Liver enzyme review",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Liver enzyme review documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Gastroenterology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gastro-jaundice-documentation",
+    "specialty_id": "Gastroenterology",
+    "chief_complaint": "Jaundice documentation",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Jaundice documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Gastroenterology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gastro-dysphagia",
+    "specialty_id": "Gastroenterology",
+    "chief_complaint": "Dysphagia",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Dysphagia documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Gastroenterology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "gastro-post-endoscopy-followup",
+    "specialty_id": "Gastroenterology",
+    "chief_complaint": "Post-endoscopy follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Post-endoscopy follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Gastroenterology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "endo-diabetes-followup",
+    "specialty_id": "Endocrinology",
+    "chief_complaint": "Diabetes follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Diabetes follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Endocrinology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "endo-thyroid-symptoms",
+    "specialty_id": "Endocrinology",
+    "chief_complaint": "Thyroid symptoms",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Thyroid documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Endocrinology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "endo-hypothyroidism-followup",
+    "specialty_id": "Endocrinology",
+    "chief_complaint": "Hypothyroidism follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Hypothyroidism follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Endocrinology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "endo-hyperthyroidism-followup",
+    "specialty_id": "Endocrinology",
+    "chief_complaint": "Hyperthyroidism follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Hyperthyroidism follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Endocrinology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "endo-obesity-counseling-documentation",
+    "specialty_id": "Endocrinology",
+    "chief_complaint": "Obesity counseling",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Obesity counseling documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Endocrinology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 3,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 4,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "endo-hypoglycemia-review",
+    "specialty_id": "Endocrinology",
+    "chief_complaint": "Hypoglycemia review",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Hypoglycemia review documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Endocrinology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "endo-pcos-metabolic-review",
+    "specialty_id": "Endocrinology",
+    "chief_complaint": "PCOS metabolic review",
+    "chief_complaint_aliases": [],
+    "diagnosis": "PCOS metabolic review documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Endocrinology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "endo-osteoporosis-followup",
+    "specialty_id": "Endocrinology",
+    "chief_complaint": "Osteoporosis follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Osteoporosis follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Endocrinology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "endo-adrenal-incidentaloma-referral",
+    "specialty_id": "Endocrinology",
+    "chief_complaint": "Adrenal incidentaloma",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Adrenal incidentaloma documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Endocrinology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "endo-pituitary-symptoms-documentation",
+    "specialty_id": "Endocrinology",
+    "chief_complaint": "Pituitary symptoms",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Pituitary symptoms documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Endocrinology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "uro-dysuria-uti-symptoms",
+    "specialty_id": "Urology / Nephrology",
+    "chief_complaint": "Dysuria/UTI symptoms",
+    "chief_complaint_aliases": [],
+    "diagnosis": "UTI documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Urology / Nephrology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "uro-hematuria",
+    "specialty_id": "Urology / Nephrology",
+    "chief_complaint": "Hematuria",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Hematuria documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Urology / Nephrology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "uro-luts-bph",
+    "specialty_id": "Urology / Nephrology",
+    "chief_complaint": "LUTS/BPH",
+    "chief_complaint_aliases": [],
+    "diagnosis": "LUTS/BPH documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Urology / Nephrology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "uro-renal-colic-followup",
+    "specialty_id": "Urology / Nephrology",
+    "chief_complaint": "Renal colic follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Renal colic follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Urology / Nephrology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "uro-urinary-retention-documentation",
+    "specialty_id": "Urology / Nephrology",
+    "chief_complaint": "Urinary retention",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Urinary retention documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Urology / Nephrology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "uro-flank-pain",
+    "specialty_id": "Urology / Nephrology",
+    "chief_complaint": "Flank pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Flank pain documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Urology / Nephrology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "uro-frequency-urgency",
+    "specialty_id": "Urology / Nephrology",
+    "chief_complaint": "Frequency/urgency",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Frequency/urgency documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Urology / Nephrology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neph-ckd-followup",
+    "specialty_id": "Urology / Nephrology",
+    "chief_complaint": "CKD follow-up",
+    "chief_complaint_aliases": [],
+    "diagnosis": "CKD follow-up documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Urology / Nephrology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neph-proteinuria",
+    "specialty_id": "Urology / Nephrology",
+    "chief_complaint": "Proteinuria",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Proteinuria documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Urology / Nephrology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "neph-electrolyte-abnormality-review",
+    "specialty_id": "Urology / Nephrology",
+    "chief_complaint": "Electrolyte abnormality",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Electrolyte abnormality documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Urology / Nephrology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "investigations",
+        "order": 3,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
   }
 ]
