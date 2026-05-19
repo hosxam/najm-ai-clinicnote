@@ -211,10 +211,11 @@
   // ================================================================
   //  HISTORY UTILITY
   // ================================================================
-  function buildV4HistoryFromFields(fields) {
-    if (!fields) return '';
+  function buildV4HistoryFromFields(fields, chipSymptoms) {
+    if (!fields) fields = {};
+    chipSymptoms = chipSymptoms || [];
 
-    // Collect known field types by scanning keys for known patterns
+    // Collect known field types by scanning keys
     var duration = '';
     var concern = '';
     var associated = '';
@@ -226,37 +227,61 @@
       if (!v) continue;
       var kl = k.toLowerCase();
       if (kl.indexOf('duration') >= 0 && kl.indexOf('duration') < 5) { duration = v; }
-      else if (kl.indexOf('associated') >= 0 || kl.indexOf('status') >= 0 && kl.indexOf('cough') >= 0 || kl.indexOf('symptoms_if') >= 0) { associated = v; }
-      else if (kl.indexOf('negatives') >= 0 || kl.indexOf('red_flag') >= 0 || kl.indexOf('reviewed') >= 0 && kl.indexOf('negatives') >= 0) { negatives = v; }
+      else if (kl.indexOf('associated') >= 0 || kl.indexOf('symptoms_if') >= 0) { associated = v; }
+      else if (kl.indexOf('negatives') >= 0) { negatives = v; }
       else if (kl.indexOf('additional') >= 0) { other = v; }
       else if (!concern) { concern = v; }
     }
 
-    // If no concern identified but we have duration, use the first non-categorized value as concern
-    if (!concern && duration) {
-      for (var k2 in fields) {
-        var v2 = (fields[k2] || '').trim();
-        if (!v2 || v2 === duration) continue;
-        var kl2 = k2.toLowerCase();
-        if (kl2.indexOf('associated') >= 0 || kl2.indexOf('negatives') >= 0 || kl2.indexOf('additional') >= 0) continue;
-        concern = v2;
-        break;
+    // Build the symptom list: chip symptoms + concern field + associated
+    var allSymptoms = chipSymptoms.slice();
+    if (concern && concern !== duration) {
+      var concernParts = concern.split(/[,;]+/).map(function(s){return s.trim();}).filter(Boolean);
+      for (var ci = 0; ci < concernParts.length; ci++) {
+        if (allSymptoms.indexOf(concernParts[ci]) < 0) allSymptoms.push(concernParts[ci]);
       }
     }
+    if (associated && allSymptoms.indexOf(associated) < 0) allSymptoms.push(associated);
 
     var parts = [];
-    if (concern) {
-      var line = 'Patient presents with ' + concern;
-      if (duration) line += ' for ' + duration;
-      parts.push(line);
+    // Build natural presenting sentence
+    if (allSymptoms.length > 0) {
+      var symptomList = allSymptoms.reduce(function(acc, s, i) {
+        if (i === 0) return s;
+        if (i === allSymptoms.length - 1) return acc + ', and ' + s;
+        return acc + ', ' + s;
+      }, '');
+      if (duration) {
+        var daysMatch = duration.match(/(\d+)\s*(day|week|month|year)s?/i);
+        if (daysMatch) {
+          var num = daysMatch[1];
+          var unit = daysMatch[2].toLowerCase();
+          var singular = num + '-' + unit;
+          parts.push('Patient presents with a ' + singular + ' history of ' + symptomList + '.');
+        } else {
+          parts.push('Patient presents with ' + symptomList + ' for ' + duration + '.');
+        }
+      } else {
+        parts.push('Patient presents with ' + symptomList + '.');
+      }
+    } else if (concern && duration) {
+      parts.push('Patient presents with ' + concern + ' for ' + duration + '.');
     } else if (duration) {
       parts.push('Patient presents with symptoms for ' + duration + '.');
     }
-    if (associated && associated !== concern) parts.push('Associated symptoms include ' + associated);
-    if (negatives) parts.push('Relevant negatives include ' + negatives);
-    if (other) parts.push(other);
 
-    return parts.join('. ') + (parts.length ? '.' : '');
+    if (negatives) {
+      var negParts = negatives.split(/[,;]+/).map(function(s){return s.trim();}).filter(Boolean);
+      var negText = negParts.reduce(function(acc, s, i) {
+        if (i === 0) return s;
+        if (i === negParts.length - 1) return acc + ', and ' + s;
+        return acc + ', ' + s;
+      }, '');
+      parts.push('Relevant negatives include ' + negText + '.');
+    }
+    if (other) parts.push(other + '.');
+
+    return (parts.length ? parts.join(' ') : '');
   }
 
   // ================================================================
@@ -580,7 +605,7 @@
     h += '<div class="v4-hist-preview-wrap">';
     h += '<label class="v4-field-label" style="margin-top:16px">Generated history (auto-updates)</label>';
     h += '<div class="v4-hist-preview" id="v4HistPreview">';
-    var previewText = buildV4HistoryFromFields(state.historyFields);
+    var previewText = buildV4HistoryFromFields(state.historyFields, window.V4_ENCOUNTER_STATE.selectedChips.symptoms.concat(window.V4_ENCOUNTER_STATE.customEntries.symptoms));
     h += previewText || '<span class="v4-field-note">Fill in fields above to see the generated history.</span>';
     h += '</div></div>';
 
@@ -980,9 +1005,9 @@
       follow_up: (ges.customEntries.follow_up || []).slice()
     };
 
-    // History fields from V4_ENCOUNTER_STATE
+    // History fields + chip symptoms → natural paragraph
     raw.historyFields = ges.history.fields || {};
-    raw.historyDraft = buildV4HistoryFromFields(raw.historyFields);
+    raw.historyDraft = buildV4HistoryFromFields(raw.historyFields, raw.chips.symptoms.concat(raw.customEntries.symptoms));
 
     // Exam from closure state (already synced to V4_ENCOUNTER_STATE)
     raw.examConfirmations = state.examConfirmations || {};
@@ -1036,14 +1061,7 @@
       patientInstructionLines: []
     };
 
-    // History / Subjective: merge chip symptoms into history paragraph
-    var symps = dedupe((chips.symptoms||[]).concat(custom.symptoms||[]), true);
-    // If history draft exists, append chip symptoms to it
-    if (symps.length && historyDraft) {
-      historyDraft = historyDraft.replace(/\.\s*$/, '') + '. ' + symps.join(', ') + '.';
-    } else if (symps.length) {
-      historyDraft = 'Patient reports ' + symps.join(', ') + '.';
-    }
+    // History / Subjective: chip symptoms already merged in buildV4HistoryFromFields
     if (historyDraft) route.historyLines.push(historyDraft);
     var negs = dedupe((chips.relevant_negatives||[]).concat(custom.relevant_negatives||[]), true);
     if (negs.length) route.relevantNegativeLines.push('Relevant negatives: ' + negs.join('; '));
