@@ -2450,15 +2450,15 @@
   {
     "workflow_id": "psych-low-mood",
     "workflow_display_name": "Psychiatry Low Mood",
-    "default_history_draft": "Patient seen with low mood for [duration]. Mood symptoms: [mood_symptom_context]. Anhedonia/interest: [anhedonia_or_interest_context]. Sleep/appetite: [sleep_or_appetite_context]. Functional impact: [functional_impact]. Risk assessment if assessed: [risk_assessment_context_if_assessed]. Support/safety: [support_or_safety_context]. [Additional history].",
+    "default_history_draft": "Patient seen with low mood for [duration]. Mood symptoms: [mood_symptom_context]. Sleep/appetite/energy: [sleep_appetite_energy_context]. Concentration/interest: [concentration_or_interest_context]. Functional impact: [functional_impact]. Risk assessment if assessed: [risk_assessment_context_if_assessed]. Protective factors: [protective_factors_context_if_assessed]. [Additional history].",
     "editable_placeholders": [
       "[duration]",
       "[mood symptom context]",
-      "[anhedonia or interest context]",
-      "[sleep or appetite context]",
+      "[sleep appetite energy context]",
+      "[concentration or interest context]",
       "[functional impact]",
       "[risk assessment context if assessed]",
-      "[support or safety context]",
+      "[protective factors context if assessed]",
       "[additional history]"
     ],
     "optional_full_history_sections": [
@@ -2479,15 +2479,14 @@
   {
     "workflow_id": "psych-sleep-difficulty",
     "workflow_display_name": "Psychiatry Sleep Difficulty",
-    "default_history_draft": "Patient seen with sleep difficulty for [duration]. Onset/maintenance: [sleep_onset_or_maintenance_context]. Early wakening: [early_wakening_context]. Daytime impact: [daytime_impact]. Stress/mood: [stress_or_mood_context]. Sleep hygiene/routine: [sleep_hygiene_or_routine]. Caffeine/substance: [caffeine_or_substance_context]. [Additional history].",
+    "default_history_draft": "Patient seen with sleep difficulty for [duration]. Sleep pattern: [sleep_pattern_context]. Daytime function: [daytime_function_context]. Stress/mood: [stress_or_mood_context]. Caffeine screen if relevant: [caffeine_screen_context_if_relevant]. Risk assessment if assessed: [risk_assessment_context_if_assessed]. [Additional history].",
     "editable_placeholders": [
       "[duration]",
-      "[sleep onset or maintenance context]",
-      "[early wakening context]",
-      "[daytime impact]",
+      "[sleep pattern context]",
+      "[daytime function context]",
       "[stress or mood context]",
-      "[sleep hygiene or routine]",
-      "[caffeine or substance context]",
+      "[caffeine screen context if relevant]",
+      "[risk assessment context if assessed]",
       "[additional history]"
     ],
     "optional_full_history_sections": [
@@ -2508,15 +2507,14 @@
   {
     "workflow_id": "psych-stress-symptoms",
     "workflow_display_name": "Psychiatry Stress Symptoms",
-    "default_history_draft": "Patient seen with stress symptoms for [duration]. Symptoms: [stress_symptom_context]. Sources/triggers: [sources_or_triggers]. Sleep/energy: [sleep_or_energy_context]. Functional impact: [functional_impact]. Risk assessment if assessed: [risk_assessment_context_if_assessed]. Support/coping: [support_or_coping_context]. [Additional history].",
+    "default_history_draft": "Patient seen with stress symptoms for [duration]. Stressors: [stressor_context]. Physical/emotional symptoms: [physical_or_emotional_symptoms]. Coping/support: [coping_support_context]. Functional impact: [functional_impact]. Risk assessment if assessed: [risk_assessment_context_if_assessed]. [Additional history].",
     "editable_placeholders": [
       "[duration]",
-      "[stress symptom context]",
-      "[sources or triggers]",
-      "[sleep or energy context]",
+      "[stressor context]",
+      "[physical or emotional symptoms]",
+      "[coping support context]",
       "[functional impact]",
       "[risk assessment context if assessed]",
-      "[support or coping context]",
       "[additional history]"
     ],
     "optional_full_history_sections": [
@@ -2537,15 +2535,14 @@
   {
     "workflow_id": "psych-panic-symptoms",
     "workflow_display_name": "Psychiatry Panic Symptoms",
-    "default_history_draft": "Patient seen with panic symptoms for [duration]. Episode description: [panic_episode_context]. Frequency/triggers: [frequency_and_triggers]. Associated chest pain/breathing: [associated_chest_pain_or_breathing]. Avoidance/functional impact: [avoidance_or_functional_impact]. Risk assessment if assessed: [risk_assessment_context_if_assessed]. Previous medical review: [previous_medical_review_context]. [Additional history].",
+    "default_history_draft": "Patient seen with panic symptoms for [duration]. Episode description: [episode_description]. Physical symptoms: [physical_symptom_context]. Triggers/avoidance: [triggers_or_avoidance_context]. Associated chest/breathing: [associated_chest_breathing_context]. Risk assessment if assessed: [risk_assessment_context_if_assessed]. [Additional history].",
     "editable_placeholders": [
       "[duration]",
-      "[panic episode context]",
-      "[frequency and triggers]",
-      "[associated chest pain or breathing]",
-      "[avoidance or functional impact]",
+      "[episode description]",
+      "[physical symptom context]",
+      "[triggers or avoidance context]",
+      "[associated chest breathing context]",
       "[risk assessment context if assessed]",
-      "[previous medical review context]",
       "[additional history]"
     ],
     "optional_full_history_sections": [
@@ -2566,14 +2563,15 @@
   {
     "workflow_id": "psych-medication-followup",
     "workflow_display_name": "Psychiatry Medication Follow-up",
-    "default_history_draft": "Psychiatric medication follow-up. Medication review: [medication_review_context]. Adherence: [adherence_context]. Side effects: [side_effect_context]. Symptom progress: [symptom_progress]. Functional improvement: [functional_improvement_context]. Risk assessment if assessed: [risk_assessment_context_if_assessed]. [Additional history].",
+    "default_history_draft": "Psychiatric medication follow-up. Medication review: [medication_followup_context]. Adherence: [adherence_context]. Response: [response_context]. Side effects: [side_effect_context]. Mood/anxiety/sleep: [mood_anxiety_sleep_context]. Risk assessment if assessed: [risk_assessment_context_if_assessed]. Follow-up: [followup_context]. [Additional history].",
     "editable_placeholders": [
-      "[medication review context]",
+      "[medication followup context]",
       "[adherence context]",
+      "[response context]",
       "[side effect context]",
-      "[symptom progress]",
-      "[functional improvement context]",
+      "[mood anxiety sleep context]",
       "[risk assessment context if assessed]",
+      "[followup context]",
       "[additional history]"
     ],
     "optional_full_history_sections": [
