@@ -2232,5 +2232,185 @@
     ],
     "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
     "review_required": true
+  },
+  {
+    "workflow_id": "ophth-red-eye",
+    "workflow_display_name": "Ophthalmology Red Eye",
+    "default_history_draft": "Patient seen with red eye for [duration]. Laterality: [laterality]. Pain/discomfort: [pain_or_discomfort_context]. Discharge/watering: [discharge_or_watering_context]. Vision change: [vision_change_context]. Photophobia: [photophobia_context]. Contact lens: [contact_lens_context]. Trauma/chemical exposure: [trauma_or_chemical_exposure_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[laterality]",
+      "[pain or discomfort context]",
+      "[discharge or watering context]",
+      "[vision change context]",
+      "[photophobia context]",
+      "[contact lens context]",
+      "[trauma or chemical exposure context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "ophthalmic history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ophth-eye-pain",
+    "workflow_display_name": "Ophthalmology Eye Pain",
+    "default_history_draft": "Patient seen with eye pain for [duration]. Laterality: [laterality]. Severity: [pain_severity_context]. Vision change: [vision_change_context]. Redness/photophobia: [redness_or_photophobia_context]. Trauma/foreign body: [trauma_or_foreign_body_context]. Contact lens: [contact_lens_context]. Headache/nausea: [headache_or_nausea_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[laterality]",
+      "[pain severity context]",
+      "[vision change context]",
+      "[redness or photophobia context]",
+      "[trauma or foreign body context]",
+      "[contact lens context]",
+      "[headache or nausea context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "ophthalmic history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ophth-vision-change",
+    "workflow_display_name": "Ophthalmology Vision Change",
+    "default_history_draft": "Patient seen with vision change for [duration]. Laterality: [laterality]. Onset: [sudden_or_gradual_context]. Location: [central_or_peripheral_context]. Floaters/flashes: [floaters_or_flashes_context]. Pain/redness: [pain_or_redness_context]. Trauma/surgery: [trauma_or_surgery_context]. Medical risk: [medical_risk_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[laterality]",
+      "[sudden or gradual context]",
+      "[central or peripheral context]",
+      "[floaters or flashes context]",
+      "[pain or redness context]",
+      "[trauma or surgery context]",
+      "[medical risk context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "ophthalmic history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ophth-eye-discharge",
+    "workflow_display_name": "Ophthalmology Eye Discharge",
+    "default_history_draft": "Patient seen with eye discharge for [duration]. Laterality: [laterality]. Discharge character: [discharge_character]. Redness/swelling: [redness_or_swelling_context]. Vision change: [vision_change_context]. Contact lens: [contact_lens_context]. Pain/itching: [pain_or_itching_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[laterality]",
+      "[discharge character]",
+      "[redness or swelling context]",
+      "[vision change context]",
+      "[contact lens context]",
+      "[pain or itching context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "ophthalmic history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ophth-contact-lens-complaint",
+    "workflow_display_name": "Ophthalmology Contact Lens Complaint",
+    "default_history_draft": "Patient seen with contact lens concern for [duration]. Lens type/wear: [lens_type_and_wear_context]. Redness/discomfort: [redness_or_discomfort_context]. Discharge/watering: [discharge_or_watering_context]. Vision change: [vision_change_context]. Lens hygiene: [lens_hygiene_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[lens type and wear context]",
+      "[redness or discomfort context]",
+      "[discharge or watering context]",
+      "[vision change context]",
+      "[lens hygiene context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "ophthalmic history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ophth-eye-trauma",
+    "workflow_display_name": "Ophthalmology Eye Trauma",
+    "default_history_draft": "Patient seen with eye trauma for [duration_since_injury] since injury. Mechanism: [mechanism]. Pain/vision: [pain_or_vision_context]. Redness/foreign body: [redness_or_foreign_body_context]. Contact lens/previous surgery: [contact_lens_or_previous_surgery_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration since injury]",
+      "[mechanism]",
+      "[pain or vision context]",
+      "[redness or foreign body context]",
+      "[contact lens or previous surgery context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "ophthalmic history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
   }
 ]

@@ -3087,5 +3087,266 @@
     ],
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
+  },
+  {
+    "workflow_id": "ophth-red-eye",
+    "workflow_display_name": "Ophthalmology Red Eye",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ophth-red-eye",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "acuity_ophth-red-eye",
+            "option_text": "Visual acuity documented if measured.",
+            "note_text": "Visual acuity documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "fluorescein_ophth-red-eye",
+            "option_text": "Fluorescein staining documented if assessed.",
+            "note_text": "Fluorescein staining documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Records_ophth-red-eye",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_ophth-red-eye",
+            "option_text": "Previous ophthalmic records reviewed if available.",
+            "note_text": "Previous ophthalmic records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ophth-eye-pain",
+    "workflow_display_name": "Ophthalmology Eye Pain",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ophth-eye-pain",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "acuity_ophth-eye-pain",
+            "option_text": "Visual acuity documented if measured.",
+            "note_text": "Visual acuity documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "fluorescein_ophth-eye-pain",
+            "option_text": "Fluorescein staining documented if assessed.",
+            "note_text": "Fluorescein staining documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "iop_ophth-eye-pain",
+            "option_text": "Intraocular pressure documented if measured.",
+            "note_text": "Intraocular pressure documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Records_ophth-eye-pain",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_ophth-eye-pain",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ophth-vision-change",
+    "workflow_display_name": "Ophthalmology Vision Change",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ophth-vision-change",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "acuity_ophth-vision-change",
+            "option_text": "Visual acuity documented if measured.",
+            "note_text": "Visual acuity documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "fields_ophth-vision-change",
+            "option_text": "Visual fields documented if assessed.",
+            "note_text": "Visual fields documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "fundoscopy_ophth-vision-change",
+            "option_text": "Fundoscopy documented if assessed.",
+            "note_text": "Fundoscopy documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Records_ophth-vision-change",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_ophth-vision-change",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ophth-eye-discharge",
+    "workflow_display_name": "Ophthalmology Eye Discharge",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ophth-eye-discharge",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "acuity_ophth-eye-discharge",
+            "option_text": "Visual acuity documented if measured.",
+            "note_text": "Visual acuity documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "fluorescein_ophth-eye-discharge",
+            "option_text": "Fluorescein staining documented if assessed.",
+            "note_text": "Fluorescein staining documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_ophth-eye-discharge",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "swab_ophth-eye-discharge",
+            "option_text": "Eye swab or culture reviewed if available.",
+            "note_text": "Eye swab or culture reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ophth-contact-lens-complaint",
+    "workflow_display_name": "Ophthalmology Contact Lens Complaint",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ophth-contact-lens-complaint",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "acuity_ophth-contact-lens-complaint",
+            "option_text": "Visual acuity documented if measured.",
+            "note_text": "Visual acuity documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "fluorescein_ophth-contact-lens-complaint",
+            "option_text": "Fluorescein staining documented if assessed.",
+            "note_text": "Fluorescein staining documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "lens_ophth-contact-lens-complaint",
+            "option_text": "Lens fit and ocular surface documented if assessed.",
+            "note_text": "Lens fit and ocular surface documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "ophth-eye-trauma",
+    "workflow_display_name": "Ophthalmology Eye Trauma",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_ophth-eye-trauma",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "acuity_ophth-eye-trauma",
+            "option_text": "Visual acuity documented if measured.",
+            "note_text": "Visual acuity documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "fluorescein_ophth-eye-trauma",
+            "option_text": "Fluorescein staining documented if assessed.",
+            "note_text": "Fluorescein staining documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "eyelids_ophth-eye-trauma",
+            "option_text": "Eyelid and conjunctival examination documented if assessed.",
+            "note_text": "Eyelid and conjunctival examination documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Records_ophth-eye-trauma",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_ophth-eye-trauma",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
   }
 ]
