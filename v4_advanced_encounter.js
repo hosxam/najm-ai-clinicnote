@@ -5,7 +5,61 @@
   if (params.get('v4') !== 'encounter2') return;
 
   // ================================================================
-  //  STATE (memory only)
+  //  GLOBAL V4 ENCOUNTER STATE (single source of truth)
+  // ================================================================
+  window.V4_ENCOUNTER_STATE = {
+    // All available chips for the current workflow (group -> [text])
+    chips: {
+      symptoms: [],
+      relevant_negatives: [],
+      exam_findings: [],
+      investigations: [],
+      plan_phrases: [],
+      follow_up: []
+    },
+    // Currently selected/toggled chips (group -> [text])
+    selectedChips: {
+      symptoms: [],
+      relevant_negatives: [],
+      exam_findings: [],
+      investigations: [],
+      plan_phrases: [],
+      follow_up: []
+    },
+    // Custom entries added by user (group -> [text])
+    customEntries: {
+      symptoms: [],
+      relevant_negatives: [],
+      exam_findings: [],
+      investigations: [],
+      plan_phrases: [],
+      follow_up: []
+    },
+    // History fields filled in Step 2
+    history: {
+      fields: {}  // keyed by placeholder key (e.g. "duration" -> "3 days")
+    },
+    // Exam confirmations synced from closure state
+    exam: {
+      confirmations: {}
+    },
+    // Investigation confirmations synced from closure state
+    investigations: {
+      confirmations: {}
+    },
+    // Assessment/impression synced from closure state
+    assessment: {
+      impression: ''
+    },
+    // Plan synced from closure state
+    plan: {
+      planText: '',
+      confirmations: {}
+    }
+  };
+
+  // ================================================================
+  //  STATE (memory only, minimal)
   // ================================================================
   var state = {
     workflowList: [],
@@ -19,27 +73,8 @@
     selectedWorkflowSpecialty: '',
     selectedWorkflowSafety: '',
 
-    // History
-    historyDraft: '',
-    defaultHistoryDraft: '',
-    historyPlaceholders: [],
-    // Mini-fields for bracket placeholder replacement
-    miniFields: {},
-    // Workflow-specific mini-field defs
-    miniFieldDefs: {},
-
-      // Autofill chips captured from OPD (read-only, updated on workflow select)
-    capturedChips: {
-      symptoms: [],
-      relevant_negatives: [],
-      exam_findings: [],
-      investigations: [],
-      plan_phrases: [],
-      follow_up: []
-    },
-
-    // Registry for DOM chip click listener (to avoid duplicate listeners)
-    _chipListenerAttached: false,
+    // History fields for Step 2 (key -> value, mirrors V4_ENCOUNTER_STATE.history.fields)
+    historyFields: {},
 
     // Exam
     examConfirmations: {},
@@ -50,44 +85,11 @@
     // Plan
     impression: '',
     planText: '',
-    planConfirmations: {},
+    planConfirmations: {}
   };
-
-  // ================================================================
-  //  GLOBAL V4 ENCOUNTER STATE (single source of truth for Step 6)
-  // ================================================================
-  // CHIP GROUP NAMES (canonical: all use underscore keys matching state.capturedChips)
-  // Keep as reference: 'symptoms', 'relevant_negatives', 'exam_findings', 'investigations', 'plan_phrases', 'follow_up'
 
   var currentStep = 1;
   var TOTAL_STEPS = 6;
-
-  // Mini-field definitions per workflow (maps bracket placeholders to input fields)
-  function buildMiniFieldDefs(draft) {
-    var defs = {};
-    if (!draft || !draft.editable_placeholders) return defs;
-
-    var placeholders = draft.editable_placeholders;
-    for (var i = 0; i < placeholders.length; i++) {
-      var ph = placeholders[i];
-      var key = ph.replace(/[\[\]]/g, '').toLowerCase().replace(/[\s\/]+/g, '_');
-      var label = ph.replace(/[\[\]]/g, '');
-      var isMain = false;
-
-      // Map common placeholders to main fields
-      if (ph === '[duration]') { label = 'Duration'; isMain = true; }
-      else if (ph.indexOf('additional') >= 0 || ph.indexOf('other') >= 0) { label = label; }
-      else if (i < 3) { isMain = true; } // first 3 placeholders are main
-
-      defs[key] = {
-        placeholder: ph,
-        label: label,
-        isMain: isMain,
-        value: ''
-      };
-    }
-    return defs;
-  }
 
   var WORKFLOW_SPECIALTY = {
     'gp-fever-urti': 'General Medicine / GP',
@@ -98,177 +100,157 @@
   };
 
   // ================================================================
-  //  V4 CHIP LOADING (reads from NAJM_CLINICAL_DATA + speed presets)
+  //  V4 CHIP LOADING
   // ================================================================
-  function v4LoadSpeedPresets() {
-    try {
-      if (window.V4_SPEED_PRESETS) return window.V4_SPEED_PRESETS;
-      var presets = {};
+  function v4LoadChipsIntoState(wfId) {
+    var chips = {
+      symptoms: [],
+      relevant_negatives: [],
+      exam_findings: [],
+      investigations: [],
+      plan_phrases: [],
+      follow_up: []
+    };
+    var selectedChips = {
+      symptoms: [],
+      relevant_negatives: [],
+      exam_findings: [],
+      investigations: [],
+      plan_phrases: [],
+      follow_up: []
+    };
 
-      // First check if v2 code already loaded presets by workflow_id
-      if (window.CLINICNOTE_SPEED_PRESETS_BY_ID) {
-        for (var wid in window.CLINICNOTE_SPEED_PRESETS_BY_ID) {
-          presets[wid] = window.CLINICNOTE_SPEED_PRESETS_BY_ID[wid];
-        }
-      }
-
-      // Fallback: check NAJM_CLINICAL_DATA.speedPresets
-      var data = window.NAJM_CLINICAL_DATA;
-      if (data && data.speedPresets) {
-        for (var k in data.speedPresets) {
-          var entry = data.speedPresets[k];
-          if (entry && entry.workflow_id) presets[entry.workflow_id] = entry;
-        }
-      }
-
-      // Also check CLINICNOTE_SPEED_PRESETS (array-like from fetch)
-      if (window.CLINICNOTE_SPEED_PRESETS) {
-        var sp = window.CLINICNOTE_SPEED_PRESETS;
-        for (var sk in sp) {
-          var se = sp[sk];
-          if (se && se.workflow_id && !presets[se.workflow_id]) presets[se.workflow_id] = se;
-        }
-      }
-
-      window.V4_SPEED_PRESETS = presets;
-      return presets;
-    } catch(e) { return null; }
-  }
-
-  function v4LoadChipsForWorkflow(wfId) {
-    // Use underscore keys matching state.capturedChips and buildAdvancedDraft()
-    var chips = { symptoms:[], relevant_negatives:[], exam_findings:[], investigations:[], plan_phrases:[], follow_up:[] };
     try {
       var data = window.NAJM_CLINICAL_DATA;
-      if (!data || !data.chipsByWorkflow || !data.chipsByWorkflow[wfId]) return chips;
+      if (!data || !data.chipsByWorkflow || !data.chipsByWorkflow[wfId]) {
+        window.V4_ENCOUNTER_STATE.chips = chips;
+        window.V4_ENCOUNTER_STATE.selectedChips = selectedChips;
+        return;
+      }
 
       var chipData = data.chipsByWorkflow[wfId];
-      // Map data chip group names (snake_case from GENERATED_CLINICAL_DATA)
-      var dataToOur = {
-        'symptoms': 'symptoms',
-        'relevant_negatives': 'relevant_negatives',
-        'exam_findings': 'exam_findings',
-        'investigations': 'investigations',
-        'plan_phrases': 'plan_phrases',
-        'follow_up': 'follow_up'
-      };
+      var groupKeys = ['symptoms', 'relevant_negatives', 'exam_findings', 'investigations', 'plan_phrases', 'follow_up'];
 
-      // First load ALL chips for the workflow
-      var allChips = { symptoms:[], relevant_negatives:[], exam_findings:[], investigations:[], plan_phrases:[], follow_up:[] };
+      // Load ALL chips for the workflow
       for (var group in chipData) {
-        var ourGroup = dataToOur[group];
-        if (!ourGroup) continue;
+        if (groupKeys.indexOf(group) < 0) continue;
         var items = chipData[group] || [];
+        chips[group] = [];
         for (var i = 0; i < items.length; i++) {
           var item = items[i];
           var text = item.chip_text || (typeof item === 'string' ? item : '');
-          if (text) allChips[ourGroup].push(text);
+          if (text) chips[group].push(text);
         }
       }
 
       // Apply Autofill: determine which chips are pre-selected by the speed preset
-      var presets = v4LoadSpeedPresets();
-      var preset = presets ? presets[wfId] : null;
-      var autofillEnabled = typeof v2isSpeedPresetMode === 'function' ? v2isSpeedPresetMode() : true;
-
-      if (preset && autofillEnabled) {
-        var presetToOur = {
-          'prechecked_symptoms': 'symptoms',
-          'prechecked_relevant_negatives': 'relevant_negatives',
-          'prechecked_exam_findings': 'exam_findings',
-          'prechecked_investigations': 'investigations',
-          'prechecked_plan_phrases': 'plan_phrases',
-          'prechecked_follow_up': 'follow_up'
-        };
-        for (var pf in presetToOur) {
-          var g = presetToOur[pf];
-          if (!preset[pf]) continue;
-          // Filter allChips to only those in the preset
-          var presetTexts = {};
-          for (var pi = 0; pi < preset[pf].length; pi++) {
-            presetTexts[preset[pf][pi].toLowerCase().trim()] = true;
-          }
-          chips[g] = allChips[g].filter(function(ct) {
-            return presetTexts[ct.toLowerCase().trim()];
-          });
+      try {
+        var presets = null;
+        // Check if v2 code already loaded presets by workflow_id
+        if (window.CLINICNOTE_SPEED_PRESETS_BY_ID) {
+          presets = window.CLINICNOTE_SPEED_PRESETS_BY_ID;
         }
-      } else {
-        // If no preset or autofill off, start with empty selection
-        for (var gg in chips) chips[gg] = [];
-      }
+        // Fallback: check NAJM_CLINICAL_DATA.speedPresets
+        if (!presets && data && data.speedPresets) {
+          presets = {};
+          for (var k in data.speedPresets) {
+            var entry = data.speedPresets[k];
+            if (entry && entry.workflow_id) presets[entry.workflow_id] = entry;
+          }
+        }
+        // Also check CLINICNOTE_SPEED_PRESETS
+        if (!presets && window.CLINICNOTE_SPEED_PRESETS) {
+          presets = {};
+          var sp = window.CLINICNOTE_SPEED_PRESETS;
+          for (var sk in sp) {
+            var se = sp[sk];
+            if (se && se.workflow_id) presets[se.workflow_id] = se;
+          }
+        }
+
+        var preset = presets ? presets[wfId] : null;
+        var autofillEnabled = typeof v2isSpeedPresetMode === 'function' ? v2isSpeedPresetMode() : true;
+
+        if (preset && autofillEnabled) {
+          var presetToOur = {
+            'prechecked_symptoms': 'symptoms',
+            'prechecked_relevant_negatives': 'relevant_negatives',
+            'prechecked_exam_findings': 'exam_findings',
+            'prechecked_investigations': 'investigations',
+            'prechecked_plan_phrases': 'plan_phrases',
+            'prechecked_follow_up': 'follow_up'
+          };
+          for (var pf in presetToOur) {
+            var g = presetToOur[pf];
+            if (!preset[pf]) continue;
+            var presetTexts = {};
+            for (var pi = 0; pi < preset[pf].length; pi++) {
+              presetTexts[preset[pf][pi].toLowerCase().trim()] = true;
+            }
+            selectedChips[g] = chips[g].filter(function(ct) {
+              return presetTexts[ct.toLowerCase().trim()];
+            });
+          }
+        }
+      } catch(e) { /* preset autofill not available */ }
     } catch(e) { /* silent fail */ }
-    return chips;
+
+    window.V4_ENCOUNTER_STATE.chips = chips;
+    window.V4_ENCOUNTER_STATE.selectedChips = selectedChips;
+    // Reset custom entries on workflow change
+    window.V4_ENCOUNTER_STATE.customEntries = {
+      symptoms: [],
+      relevant_negatives: [],
+      exam_findings: [],
+      investigations: [],
+      plan_phrases: [],
+      follow_up: []
+    };
   }
 
   // ================================================================
-  //  SYNC V4 ENCOUNTER STATE
+  //  HISTORY UTILITY
   // ================================================================
-  // syncV4EncounterState removed — collectV4State() reads fresh from DOM on each output generation
-
-  // ================================================================
-  //  CHIP CLICK LISTENER (auto-refresh Step 1 badge when chips change)
-  // ================================================================
-  function attachChipClickListener() {
-    if (state._chipListenerAttached) return;
-    var area = document.getElementById('v2ChipGroups');
-    if (!area) {
-      setTimeout(attachChipClickListener, 300);
-      return;
-    }
-    area.addEventListener('click', function() {
-      // Re-capture chips from DOM on any chip click
-      state.capturedChips = captureOPDChips();
-      // If Step 1 is visible, update the badge
-      if (currentStep === 1) {
-        renderStep(1);
+  function buildV4HistoryFromFields(fields) {
+    if (!fields) return '';
+    var parts = [];
+    for (var key in fields) {
+      var val = fields[key];
+      if (val && val.trim()) {
+        // Label from key: replace underscores with spaces, capitalize
+        var label = key.replace(/_/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+        parts.push(label + ': ' + val.trim());
       }
-      updateSidebar();
-    });
-    // Also listen for custom entry additions
-    var customBtns = document.querySelectorAll('[onclick*="addCustom"]');
-    for (var i = 0; i < customBtns.length; i++) {
-      customBtns[i].addEventListener('click', function() {
-        setTimeout(function() {
-          state.capturedChips = captureOPDChips();
-          if (currentStep === 1) renderStep(1);
-          updateSidebar();
-        }, 100);
-      });
     }
-    state._chipListenerAttached = true;
+    return parts.join('. ') + (parts.length ? '.' : '');
   }
 
   // ================================================================
-  //  TRIGGER SPEED MODE (loads matching specialty+visit so chips appear visually)
+  //  SYNC V4_ENCOUNTER_STATE FROM CLOSURE STATE
   // ================================================================
-  function v4TriggerSpeedModeForWorkflow(wfId) {
-    try {
-      var lib = window.ACTIVE_VISIT_LIBRARY;
-      if (!lib) return;
+  function syncV4ToGlobal() {
+    window.V4_ENCOUNTER_STATE.exam.confirmations = {};
+    for (var ek in state.examConfirmations) {
+      window.V4_ENCOUNTER_STATE.exam.confirmations[ek] = state.examConfirmations[ek];
+    }
 
-      for (var sk in lib) {
-        for (var vtk in lib[sk]) {
-          var meta = lib[sk][vtk]._v2meta;
-          if (meta && meta.workflow_id === wfId) {
-            var specSel = document.getElementById('speedSpecialty');
-            var vtSel = document.getElementById('speedVisitType');
-            if (!specSel || !vtSel) return;
+    window.V4_ENCOUNTER_STATE.investigations.confirmations = {};
+    for (var ik in state.investigationConfirmations) {
+      window.V4_ENCOUNTER_STATE.investigations.confirmations[ik] = state.investigationConfirmations[ik];
+    }
 
-            specSel.value = sk;
-            // Trigger Speed Mode chain: specialty -> visit type -> chips -> autofill
-            setTimeout(function() {
-              if (typeof loadSpeedSpecialty === 'function') loadSpeedSpecialty();
-              setTimeout(function() {
-                vtSel.value = vtk;
-                if (typeof loadSpeedVisit === 'function') loadSpeedVisit();
-                // v2scheduleSpeedPresetApply will run automatically inside loadSpeedVisit
-              }, 100);
-            }, 80);
-            return;
-          }
-        }
-      }
-    } catch(e) { /* Speed Mode not available, chips will still work from data */ }
+    window.V4_ENCOUNTER_STATE.assessment.impression = state.impression || '';
+
+    window.V4_ENCOUNTER_STATE.plan.planText = state.planText || '';
+    window.V4_ENCOUNTER_STATE.plan.confirmations = {};
+    for (var pk in state.planConfirmations) {
+      window.V4_ENCOUNTER_STATE.plan.confirmations[pk] = state.planConfirmations[pk];
+    }
+
+    window.V4_ENCOUNTER_STATE.history.fields = {};
+    for (var hk in state.historyFields) {
+      window.V4_ENCOUNTER_STATE.history.fields[hk] = state.historyFields[hk];
+    }
   }
 
   // ================================================================
@@ -309,7 +291,6 @@
   function getGroupChecked(obj, groupId) { var n = 0; for (var k in obj) { if (k.indexOf(groupId + '::') === 0 && obj[k]) n++; } return n; }
   function getGroupTotal(groupId, groups) { if (!groups) return 0; for (var i = 0; i < groups.length; i++) { if (groups[i].group_id === groupId) return (groups[i].prompts || groups[i].options || []).length; } return 0; }
 
-  // Count selections
   function countExam() { var n = 0; for (var k in state.examConfirmations) { if (state.examConfirmations[k]) n++; } return n; }
   function countInv() { var n = 0; for (var k in state.investigationConfirmations) { if (state.investigationConfirmations[k]) n++; } return n; }
   function countPlan() { var n = 0; for (var k in state.planConfirmations) { if (state.planConfirmations[k]) n++; } return n; }
@@ -330,82 +311,24 @@
   }
   function checkAllPhi() {
     var found = false;
-    ['v4HistoryDraft','v4Impression','v4PlanText'].forEach(function(id) {
+    ['v4Impression','v4PlanText'].forEach(function(id) {
       var el = document.getElementById(id);
       if (el && checkPHI(el.value)) found = true;
     });
+    // Also check history field inputs
+    var histInputs = document.querySelectorAll('.v4-hist-input');
+    for (var hi = 0; hi < histInputs.length; hi++) {
+      if (checkPHI(histInputs[hi].value)) found = true;
+    }
     var phi = document.getElementById('v4PhiWarning');
     if (phi) phi.style.display = found ? 'block' : 'none';
   }
 
   // ================================================================
-  //  CAPTURE OPD AUTOFILL CHIPS
+  //  REMOVE PLACEHOLDER SENTENCES (kept for backward compat in routing)
   // ================================================================
-  function captureOPDChips() {
-    var chips = { symptoms:[], relevant_negatives:[], exam_findings:[], investigations:[], plan_phrases:[], follow_up:[] };
-    var area = document.getElementById('v2ChipGroups');
-    if (!area) return chips;
-
-    var selected = area.querySelectorAll('.chip.selected');
-    for (var i = 0; i < selected.length; i++) {
-      var chip = selected[i];
-      var container = chip.getAttribute('data-container') || '';
-      var value = chip.getAttribute('data-value') || chip.textContent || '';
-      value = value.trim();
-      if (!value) continue;
-
-      // Map container ID to chip group
-      if (container.indexOf('symptoms') >= 0 || container.indexOf('presenting') >= 0) chips.symptoms.push(value);
-      else if (container.indexOf('negatives') >= 0 || container.indexOf('red_flags') >= 0) chips.relevant_negatives.push(value);
-      else if (container.indexOf('exam') >= 0 || container.indexOf('findings') >= 0) chips.exam_findings.push(value);
-      else if (container.indexOf('investigations') >= 0 || container.indexOf('labs') >= 0) chips.investigations.push(value);
-      else if (container.indexOf('plan') >= 0 || container.indexOf('management') >= 0 || container.indexOf('disposition') >= 0) chips.plan_phrases.push(value);
-      else if (container.indexOf('follow') >= 0 || container.indexOf('fup') >= 0) chips.follow_up.push(value);
-    }
-
-    // Also capture custom entries from the custom entry area
-    var customEntries = area.querySelectorAll('[data-v2-custom-entry="true"].chip.selected');
-    for (var ci = 0; ci < customEntries.length; ci++) {
-      var ce = customEntries[ci];
-      var cVal = ce.getAttribute('data-value') || ce.textContent || '';
-      cVal = cVal.trim();
-      if (!cVal) continue;
-      // Put custom entries in symptoms by default
-      chips.symptoms.push(cVal);
-    }
-
-    return chips;
-  }
-
-  // ================================================================
-  //  APPLY MINI-FIELDS TO HISTORY DRAFT
-  // ================================================================
-  function buildHistoryFromMiniFields() {
-    var draft = getHistoryDraft(state.selectedWorkflowId);
-    if (!draft) return state.historyDraft || '';
-
-    var text = state.historyDraft || draft.default_history_draft;
-
-    // Replace filled placeholders with submitted values
-    var defs = state.miniFieldDefs;
-    for (var key in defs) {
-      var def = defs[key];
-      if (def.value && def.value.trim()) {
-        text = text.split(def.placeholder).join(def.value.trim());
-      }
-    }
-
-    // Remove entire sentences containing unfilled placeholders
-    text = removePlaceholderSentences(text);
-
-    return text;
-  }
-
   function removePlaceholderSentences(text) {
     if (!text) return '';
-    // Remove lines or segments containing bracket placeholders
-    // Handle both full sentences and inline fragments
-    // Pattern: match any text containing [bracketed] placeholders
     var lines = text.split('\n');
     var result = [];
     for (var i = 0; i < lines.length; i++) {
@@ -414,41 +337,10 @@
       if (line) result.push(line);
     }
     text = result.join('\n');
-    // Also handle inline: remove parenthetical sections containing placeholders
-    // e.g., "...for [duration]." -> remove the "[duration]" part but keep sentence if other content exists
     text = text.replace(/\[[^\]]+\]/g, '');
     text = text.replace(/\s{2,}/g, ' ').trim();
-    // Remove trailing punctuation-only remnants
     text = text.replace(/[\.\,\;]+$/, '').trim();
     return text;
-  }
-
-  function updateHistoryDraftFromMiniFields() {
-    var draft = getHistoryDraft(state.selectedWorkflowId);
-    if (!draft) return;
-
-    // Read the CURRENT textarea value (preserves user edits, doesn't wipe)
-    var ta = document.getElementById('v4HistoryDraft');
-    var text = ta ? ta.value : (state.historyDraft || draft.default_history_draft);
-
-    // Replace each filled placeholder in the current text
-    var defs = state.miniFieldDefs;
-    for (var key in defs) {
-      var def = defs[key];
-      if (def.value && def.value.trim()) {
-        text = text.split(def.placeholder).join(def.value.trim());
-      }
-    }
-
-    // Remove unfilled placeholder sentences
-    text = removePlaceholderSentences(text);
-
-    state.historyDraft = text;
-
-    // Update textarea if visible
-    if (ta) ta.value = text;
-    checkAllPhi();
-    updateSidebar();
   }
 
   // ================================================================
@@ -525,11 +417,11 @@
   function emptyStep(msg) { return '<div class="v4-empty-state"><p>' + esc(msg) + '</p></div>'; }
 
   // ================================================================
-  //  STEP 1: WORKFLOW
+  //  STEP 1: WORKFLOW + CHIP GROUPS (V4-owned, no Speed Mode DOM)
   // ================================================================
   function stepWorkflow() {
     var h = '<h2 class="v4-step-h">Step 1: Select Workflow</h2>';
-    h += '<p class="v4-step-d">Select a prototype workflow. Autofill chips from the OPD area (above) will be captured for the output.</p>';
+    h += '<p class="v4-step-d">Select a prototype workflow. V4 chip groups will load automatically for the output.</p>';
 
     h += '<div class="v4-wf-search"><label class="v4-field-label">Workflow</label>';
     h += '<select class="v4-select" id="v4WorkflowSelect" onchange="window._v4SelectWf()">';
@@ -547,37 +439,72 @@
       if (state.selectedWorkflowSafety) h += '<div class="v4-safety-box">' + esc(state.selectedWorkflowSafety) + '</div>';
       h += '</div>';
 
-      // Show captured chips as a live summary with group counts
-      var cc = state.capturedChips;
+      // Chip groups from V4_ENCOUNTER_STATE
+      var stateChips = window.V4_ENCOUNTER_STATE.chips || {};
+      var stateSelected = window.V4_ENCOUNTER_STATE.selectedChips || {};
+      var groupKeys = ['symptoms', 'relevant_negatives', 'exam_findings', 'investigations', 'plan_phrases', 'follow_up'];
+      var groupLabels = {
+        symptoms: 'Symptoms / Presenting Complaint',
+        relevant_negatives: 'Relevant Negatives / Red Flags',
+        exam_findings: 'Exam Findings',
+        investigations: 'Investigations / Results',
+        plan_phrases: 'Plan / Management Phrases',
+        follow_up: 'Follow-up / Safety Netting'
+      };
       var totalChips = 0;
-      var groupLabels = {symptoms:'Symptoms', relevant_negatives:'Relevant negatives', exam_findings:'Exam findings', investigations:'Investigations', plan_phrases:'Plan phrases', follow_up:'Follow-up'};
-      var chipGroups = ['symptoms', 'relevant_negatives', 'exam_findings', 'investigations', 'plan_phrases', 'follow_up'];
-      for (var gi = 0; gi < chipGroups.length; gi++) {
-        totalChips += (cc[chipGroups[gi]] || []).length;
+      var totalSelected = 0;
+      for (var gi = 0; gi < groupKeys.length; gi++) {
+        totalChips += (stateChips[groupKeys[gi]] || []).length;
+        totalSelected += (stateSelected[groupKeys[gi]] || []).length;
       }
-      h += '<div class="v4-chip-badge-wrap">';
-      if (totalChips > 0) {
-        h += '<div class="v4-captured-summary"><span class="v4-captured-heading">Captured for final draft:</span>';
-        for (var gi2 = 0; gi2 < chipGroups.length; gi2++) {
-          var gName = chipGroups[gi2];
-          var count = (cc[gName] || []).length;
-          if (count > 0) {
-            h += '<div class="v4-captured-line"><span class="v4-captured-label">' + groupLabels[gName] + ':</span> <span class="v4-captured-count">' + count + '</span></div>';
-          }
+
+      h += '<h3 class="v4-sub-h" style="margin-top:18px">Chip Groups</h3>';
+      h += '<p class="v4-step-d">Select the relevant chips for each group. Selection is tracked in the global state and included in the output.</p>';
+
+      if (totalChips === 0) {
+        h += '<div class="v4-chip-badge-empty" style="display:inline-block;padding:8px 14px;border-radius:8px;background:var(--gray-50);color:var(--gray-400);border:1px solid var(--gray-200);font-size:12px">No chips available for this workflow. Chips will still be captured from data when available.</div>';
+      }
+
+      for (var gi2 = 0; gi2 < groupKeys.length; gi2++) {
+        var gk = groupKeys[gi2];
+        var chips = stateChips[gk] || [];
+        var selected = stateSelected[gk] || [];
+        var selSet = {};
+        for (var si = 0; si < selected.length; si++) {
+          selSet[selected[si].toLowerCase().trim()] = true;
         }
+
+        if (chips.length === 0) continue;
+
+        h += '<div class="v4-chip-group" data-group="' + esc(gk) + '">';
+        h += '<div class="v4-chip-group-header" onclick="window._v4ToggleV4GroupCollapse(this)">';
+        h += '<span class="v4-cg-toggle">&#9660;</span>';
+        h += '<span class="v4-cg-label">' + esc(groupLabels[gk] || gk) + '</span>';
+        h += '<span class="v4-cg-count" id="v4cgc_' + esc(gk) + '">' + selected.length + '/' + chips.length + '</span>';
         h += '</div>';
-        h += '<button class="v4-chip-refresh" onclick="window._v4RefreshChips()" title="Re-capture chips from OPD">&#8635;</button>';
-      } else {
-        h += '<span class="v4-chip-badge v4-chip-badge-empty">No chips captured yet. Select or keep Autofill chips to include them in the final draft.</span>';
-        h += '<button class="v4-chip-refresh" onclick="window._v4RefreshChips()" title="Capture chips from OPD">&#8635;</button>';
+        h += '<div class="v4-chip-group-body">';
+        h += '<div class="v4-chip-list">';
+
+        for (var ci = 0; ci < chips.length; ci++) {
+          var isSelected = selSet[chips[ci].toLowerCase().trim()] || false;
+          h += '<button class="v4-chip-btn' + (isSelected ? ' active' : '') + '" onclick="window._v4ToggleV4Chip(\'' + esc(gk) + '\', \'' + esc(chips[ci].replace(/'/g, "\\'")) + '\')">' + esc(chips[ci]) + '</button>';
+        }
+
+        h += '</div>'; // chip-list
+        h += '<div class="v4-custom-entry-row">';
+        h += '<input class="v4-custom-entry-input" type="text" id="v4ce_' + esc(gk) + '" placeholder="Add custom ' + esc(groupLabels[gk].toLowerCase()) + '..." onkeydown="if(event.key===\'Enter\'){window._v4AddCustomEntry(\'' + esc(gk) + '\');event.preventDefault()}">';
+        h += '<button class="v4-btn v4-btn-ghost v4-btn-sm" onclick="window._v4AddCustomEntry(\'' + esc(gk) + '\')">Add</button>';
+        h += '</div>';
+        h += '</div>'; // chip-group-body
+        h += '</div>'; // chip-group
       }
-      h += '</div>';
     }
+
     return h;
   }
 
   // ================================================================
-  //  STEP 2: HISTORY
+  //  STEP 2: HISTORY (fill-in-the-blank, no textarea, no brackets)
   // ================================================================
   function stepHistory() {
     if (!state.selectedWorkflowId) return emptyStep('Select a workflow first (Step 1).');
@@ -585,63 +512,47 @@
     if (!draft) return emptyStep('History draft not available.');
 
     var h = '<h2 class="v4-step-h">Step 2: History</h2>';
-    h += '<p class="v4-step-d">Add key details below. The history draft updates automatically.</p>';
+    h += '<p class="v4-step-d">Fill in the fields below. Only filled fields are included in the output. Leave fields blank to omit them.</p>';
     if (draft.safety_note) h += '<div class="v4-safety-box">' + esc(draft.safety_note) + '</div>';
 
-    // Mini-fields for main placeholders
-    var defs = state.miniFieldDefs;
-    var mainKeys = [], otherKeys = [];
-    for (var k in defs) { if (defs[k].isMain) mainKeys.push(k); else otherKeys.push(k); }
+    // Render editable_placeholders as labeled inputs
+    var placeholders = draft.editable_placeholders || [];
+    if (placeholders.length > 0) {
+      h += '<div class="v4-hist-fields">';
+      h += '<label class="v4-field-label">History details</label>';
+      h += '<div class="v4-hist-grid">';
 
-    if (mainKeys.length || otherKeys.length) {
-      h += '<div class="v4-mini-fields">';
-      h += '<label class="v4-field-label">Key details</label>';
-      h += '<div class="v4-mini-grid">';
-      for (var mi = 0; mi < mainKeys.length; mi++) {
-        var def = defs[mainKeys[mi]];
-        h += '<div class="v4-mini-item">';
-        h += '<label class="v4-mini-label">' + esc(def.label) + '</label>';
-        h += '<input class="v4-mini-input" type="text" value="' + esc(def.value || '') + '" oninput="window._v4MiniField(\'' + esc(mainKeys[mi]) + '\', this.value)" placeholder="' + esc(def.placeholder) + '">';
+      for (var i = 0; i < placeholders.length; i++) {
+        var ph = placeholders[i];
+        // Create clean key and label from placeholder text like "[duration]"
+        var key = ph.replace(/[\[\]]/g, '').toLowerCase().replace(/[\s\/]+/g, '_');
+        var label = ph.replace(/[\[\]]/g, '');
+        var currentVal = state.historyFields[key] || window.V4_ENCOUNTER_STATE.history.fields[key] || '';
+
+        h += '<div class="v4-hist-item">';
+        h += '<label class="v4-hist-label">' + esc(label) + '</label>';
+        h += '<input class="v4-hist-input" type="text" id="v4hf_' + esc(key) + '" value="' + esc(currentVal) + '" placeholder="' + esc(label) + '..." oninput="window._v4HistoryField(\'' + esc(key) + '\', this.value)">';
         h += '</div>';
       }
-      h += '</div>';
-      if (otherKeys.length) {
-        h += '<details class="v4-collapse">';
-        h += '<summary class="v4-collapse-summary">Additional details (' + otherKeys.length + ')</summary>';
-        h += '<div class="v4-collapse-body"><div class="v4-mini-grid">';
-        for (var oi = 0; oi < otherKeys.length; oi++) {
-          var def2 = defs[otherKeys[oi]];
-          h += '<div class="v4-mini-item">';
-          h += '<label class="v4-mini-label">' + esc(def2.label) + '</label>';
-          h += '<input class="v4-mini-input" type="text" value="' + esc(def2.value || '') + '" oninput="window._v4MiniField(\'' + esc(otherKeys[oi]) + '\', this.value)" placeholder="' + esc(def2.placeholder) + '">';
-          h += '</div>';
-        }
-        h += '</div></div></details>';
-      }
-      h += '</div>';
+
+      h += '</div>'; // hist-grid
+      h += '</div>'; // hist-fields
+    } else {
+      h += '<p class="v4-field-note">No editable fields defined for this workflow.</p>';
     }
 
-    // Full textarea (editable)
-    h += '<label class="v4-field-label" style="margin-top:14px">History draft (editable)</label>';
-    h += '<p class="v4-field-note">You can edit this draft directly. Empty fields are omitted from the output.</p>';
-    h += '<textarea class="v4-textarea v4-textarea-lg" id="v4HistoryDraft" oninput="window._v4UpdateHist(this.value)">' + esc(state.historyDraft || draft.default_history_draft) + '</textarea>';
+    // Show the generated history preview
+    h += '<div class="v4-hist-preview-wrap">';
+    h += '<label class="v4-field-label" style="margin-top:16px">Generated history (auto-updates)</label>';
+    h += '<div class="v4-hist-preview" id="v4HistPreview">';
+    var previewText = buildV4HistoryFromFields(state.historyFields);
+    h += previewText || '<span class="v4-field-note">Fill in fields above to see the generated history.</span>';
+    h += '</div></div>';
 
-    // Placeholder helper (collapsed)
-    if (draft.editable_placeholders && draft.editable_placeholders.length) {
-      h += '<details class="v4-collapse">';
-      h += '<summary class="v4-collapse-summary">Placeholder reference (' + draft.editable_placeholders.length + ')</summary>';
-      h += '<div class="v4-collapse-body" style="display:flex;flex-wrap:wrap;gap:5px">';
-      for (var pi = 0; pi < draft.editable_placeholders.length; pi++) {
-        h += '<span class="v4-ph-chip">' + esc(draft.editable_placeholders[pi]) + '</span>';
-      }
-      h += '<p class="v4-field-note" style="width:100%;margin-top:6px">Options for [bracketed text] are replaced when you fill the fields above. Unfilled brackets are silently removed from the output.</p>';
-      h += '</div></details>';
-    }
-
-    // Collapsed optional sections
+    // Collapsed optional sections reference
     if (draft.optional_full_history_sections && draft.optional_full_history_sections.length) {
       h += '<details class="v4-collapse">';
-      h += '<summary class="v4-collapse-summary">Optional full history sections (' + draft.optional_full_history_sections.length + ' available, collapsed)</summary>';
+      h += '<summary class="v4-collapse-summary">Optional history sections (' + draft.optional_full_history_sections.length + ' available, collapsed)</summary>';
       h += '<div class="v4-collapse-body" style="display:flex;flex-wrap:wrap;gap:5px">';
       for (var si = 0; si < draft.optional_full_history_sections.length; si++) {
         h += '<span class="v4-section-chip">' + esc(draft.optional_full_history_sections[si]) + '</span>';
@@ -649,11 +560,6 @@
       h += '</div></details>';
     }
 
-    h += '<div class="v4-step-actions">';
-    h += '<button class="v4-btn v4-btn-ghost" onclick="window._v4PreviewSuggestion()" id="v4PreviewSuggestionBtn">Preview history suggestion</button>';
-    h += '<button class="v4-btn v4-btn-outline" onclick="window._v4UseSuggestion()">Use suggestion as draft</button>';
-    h += '<button class="v4-btn v4-btn-ghost" onclick="window._v4ClearHistory()">Clear draft</button>';
-    h += '</div>';
     return h;
   }
 
@@ -758,7 +664,7 @@
           h += '<label class="v4-plan-opt' + (checked ? ' checked' : '') + '">';
           h += '<input type="checkbox"' + (checked ? ' checked' : '') + ' onchange="window._v4TogglePlan(\'' + esc(opt.option_id) + '\')">';
           h += '<span class="v4-po-text">' + esc(opt.option_text) + '</span>';
-          h += '<span class="v4-po-cat">' + esc(fmtCat(opt.option_category)) + '</span></label>';
+          h += '<span class="v4-po-cat">' + esc(opt.option_category || 'general') + '</span></label>';
         }
         h += '</div>';
       }
@@ -835,72 +741,10 @@
   }
 
   // ================================================================
-  //  CONTENT ROUTER AND DEDUPLICATOR
+  //  CONTENT ROUTER AND RENDERERS
   // ================================================================
   var _currentTab = 'adv-emr';
   var _outputGenerated = false;
-
-  // ================================================================
-  //  V4 STATE PIPELINE (collect -> normalize -> route -> render)
-  // ================================================================
-
-  // Step 1: Collect fresh state from DOM and current selections
-  function collectV4State() {
-    var raw = {};
-
-    // Workflow
-    raw.workflowId = state.selectedWorkflowId;
-    raw.workflowName = state.selectedWorkflowDisplay;
-    raw.specialty = state.selectedWorkflowSpecialty;
-
-    // Chips: read from DOM (includes user changes)
-    var domChips = captureOPDChips();
-    raw.chips = {
-      symptoms: domChips.symptoms || [],
-      relevant_negatives: domChips.relevant_negatives || [],
-      exam_findings: domChips.exam_findings || [],
-      investigations: domChips.investigations || [],
-      plan_phrases: domChips.plan_phrases || [],
-      follow_up: domChips.follow_up || []
-    };
-
-    // Custom entries from DOM
-    raw.customEntries = { symptoms: [], relevant_negatives: [], exam_findings: [], investigations: [], plan_phrases: [], follow_up: [] };
-    try {
-      var area = document.getElementById('v2ChipGroups');
-      if (area) {
-        var customEls = area.querySelectorAll('[data-v2-custom-entry="true"].chip.selected');
-        for (var ci = 0; ci < customEls.length; ci++) {
-          var val = customEls[ci].getAttribute('data-value') || customEls[ci].textContent || '';
-          val = val.trim();
-          if (val) raw.customEntries.symptoms.push(val);
-        }
-      }
-    } catch(e) {}
-
-    // History: read textarea value (preserves user edits)
-    var ta = document.getElementById('v4HistoryDraft');
-    raw.historyDraft = ta ? ta.value : (state.historyDraft || '');
-    raw.miniFieldDefs = state.miniFieldDefs || {};
-
-    // Exam
-    raw.examConfirmations = state.examConfirmations || {};
-
-    // Investigations
-    raw.investigationConfirmations = state.investigationConfirmations || {};
-
-    // Plan
-    raw.impression = state.impression || '';
-    raw.planText = state.planText || '';
-    raw.planConfirmations = state.planConfirmations || {};
-
-    return raw;
-  }
-
-  // Step 2: Normalize (pass-through, keys already consistent)
-  function normalizeV4State(raw) {
-    return raw;
-  }
 
   // --- Internal helpers ---
   function _v4norm(t) { return String(t).toLowerCase().replace(/\.+$/, '').trim(); }
@@ -951,19 +795,81 @@
     }
     return items;
   }
+  function _v4cleanText(text) {
+    if (!text) return '';
+    return text
+      .replace(/discussed as per clinician plan/gi, '')
+      .replace(/as per clinician plan/gi, '')
+      .replace(/clinician impression documented/gi, '')
+      .replace(/per clinician plan/gi, '')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+  }
+
+  // Step 1: Collect fresh state from V4_ENCOUNTER_STATE
+  function collectV4State() {
+    var ges = window.V4_ENCOUNTER_STATE;
+    var raw = {};
+
+    // Workflow
+    raw.workflowId = state.selectedWorkflowId;
+    raw.workflowName = state.selectedWorkflowDisplay;
+    raw.specialty = state.selectedWorkflowSpecialty;
+
+    // Chips from V4_ENCOUNTER_STATE
+    raw.chips = {
+      symptoms: (ges.selectedChips.symptoms || []).slice(),
+      relevant_negatives: (ges.selectedChips.relevant_negatives || []).slice(),
+      exam_findings: (ges.selectedChips.exam_findings || []).slice(),
+      investigations: (ges.selectedChips.investigations || []).slice(),
+      plan_phrases: (ges.selectedChips.plan_phrases || []).slice(),
+      follow_up: (ges.selectedChips.follow_up || []).slice()
+    };
+
+    // Custom entries from V4_ENCOUNTER_STATE
+    raw.customEntries = {
+      symptoms: (ges.customEntries.symptoms || []).slice(),
+      relevant_negatives: (ges.customEntries.relevant_negatives || []).slice(),
+      exam_findings: (ges.customEntries.exam_findings || []).slice(),
+      investigations: (ges.customEntries.investigations || []).slice(),
+      plan_phrases: (ges.customEntries.plan_phrases || []).slice(),
+      follow_up: (ges.customEntries.follow_up || []).slice()
+    };
+
+    // History fields from V4_ENCOUNTER_STATE
+    raw.historyFields = ges.history.fields || {};
+    raw.historyDraft = buildV4HistoryFromFields(raw.historyFields);
+
+    // Exam from closure state (already synced to V4_ENCOUNTER_STATE)
+    raw.examConfirmations = state.examConfirmations || {};
+
+    // Investigations
+    raw.investigationConfirmations = state.investigationConfirmations || {};
+
+    // Plan
+    raw.impression = state.impression || '';
+    raw.planText = state.planText || '';
+    raw.planConfirmations = state.planConfirmations || {};
+
+    return raw;
+  }
+
+  // Step 2: Normalize
+  function normalizeV4State(raw) {
+    return raw;
+  }
 
   // Step 3: Route content to output sections
   function routeV4Content(normalized) {
     var chips = normalized.chips || {};
     var custom = normalized.customEntries || {};
-    var historyDraft = removePlaceholderSentences(normalized.historyDraft || '');
-    var planFree = cleanText(normalized.planText || '');
+    var historyDraft = _v4cleanText(normalized.historyDraft || '');
+    var planFree = _v4cleanText(normalized.planText || '');
     var impression = normalized.impression || '';
     var planOpts = _v4collectPlanOpts();
     var examItems = _v4collectExamItems();
     var invItems = _v4collectInvItems();
 
-    // Simple dedup: same group and cross-group by norm
     function dedupe(items, againstText) {
       var out = [], seen = {};
       for (var i = 0; i < items.length; i++) {
@@ -999,7 +905,6 @@
     if (allExam.length) route.examinationLines = allExam;
 
     var invChips = dedupe((chips.investigations||[]).concat(custom.investigations||[]), false);
-    // Dedup invChips against invItems
     var invSeen = {};
     for (var ii = 0; ii < invItems.length; ii++) invSeen[_v4norm(invItems[ii])] = true;
     var dedupedInvChips = invChips.filter(function(c) { return !invSeen[_v4norm(c)]; });
@@ -1013,7 +918,6 @@
     var planChips = dedupe((chips.plan_phrases||[]).concat(custom.plan_phrases||[]), false);
     var planDoc = planFree;
 
-    // Separate Plan Assist options by category
     var planAssistLines = [];
     var fupOptLines = [];
     var instOptLines = [];
@@ -1036,15 +940,12 @@
     if (planAssistLines.length) route.planLines = route.planLines.concat(planAssistLines);
     if (planDoc) route.planLines.push(planDoc);
 
-    // Follow-up
     var fupChips = dedupe((chips.follow_up||[]).concat(custom.follow_up||[]), false);
     route.followUpLines = fupChips.concat(fupOptLines);
 
-    // Patient instructions
     route.patientInstructionLines = instOptLines;
     if (planDoc) route.patientInstructionLines.push(planDoc);
 
-    // Dedup final plan lines against themselves
     (function dedupFinal(arr) {
       var seen = {};
       for (var i = arr.length - 1; i >= 0; i--) {
@@ -1143,7 +1044,9 @@
       'Review with your clinician. Seek medical attention if symptoms worsen.\n' + footer;
   }
 
-  // Main output generator: collect -> route -> render
+  // ================================================================
+  //  BUILD ADVANCED DRAFT (reads from V4_ENCOUNTER_STATE via collectV4State)
+  // ================================================================
   function buildAdvancedDraft(tabId) {
     var raw = collectV4State();
     var norm = normalizeV4State(raw);
@@ -1155,17 +1058,6 @@
       case 'adv-inst': return renderV4Instructions(route);
       default: return 'Select an output format.';
     }
-  }
-
-  function cleanText(text) {
-    if (!text) return '';
-    return text
-      .replace(/discussed as per clinician plan/gi, '')
-      .replace(/as per clinician plan/gi, '')
-      .replace(/clinician impression documented/gi, '')
-      .replace(/per clinician plan/gi, '')
-      .replace(/\s{2,}/g, ' ')
-      .trim();
   }
 
   // ================================================================
@@ -1180,19 +1072,27 @@
     } else {
       h += '<div class="v4-si"><span class="v4-si-label">Workflow:</span><span class="v4-si-val">' + esc(state.selectedWorkflowDisplay) + '</span></div>';
 
-      var hl = (state.historyDraft || '').length;
-      var edited = state.historyDraft !== state.defaultHistoryDraft;
-      h += '<div class="v4-si"><span class="v4-si-label">History:</span><span class="v4-si-val">' + hl + ' chars' + (edited ? ' (edited)' : '') + '</span></div>';
+      // History fields filled count
+      var histVals = window.V4_ENCOUNTER_STATE.history.fields || state.historyFields || {};
+      var filled = 0;
+      for (var hk in histVals) { if (histVals[hk] && histVals[hk].trim()) filled++; }
+      h += '<div class="v4-si"><span class="v4-si-label">History fields:</span><span class="v4-si-val">' + filled + ' filled</span></div>';
 
-      // Mini-fields filled
-      var filled = 0, total = 0;
-      for (var k in state.miniFieldDefs) { total++; if (state.miniFieldDefs[k].value) filled++; }
-      if (total > 0) h += '<div class="v4-si"><span class="v4-si-label">Mini-fields:</span><span class="v4-si-val">' + filled + '/' + total + '</span></div>';
-
-      // Chips
+      // Chips from V4_ENCOUNTER_STATE
+      var selChips = window.V4_ENCOUNTER_STATE.selectedChips || {};
       var chipCount = 0;
-      for (var g in state.capturedChips) chipCount += state.capturedChips[g].length;
-      if (chipCount > 0) h += '<div class="v4-si"><span class="v4-si-label">OPD chips:</span><span class="v4-si-val">' + chipCount + ' captured</span></div>';
+      for (var g in selChips) {
+        if (selChips[g]) chipCount += selChips[g].length;
+      }
+      if (chipCount > 0) h += '<div class="v4-si"><span class="v4-si-label">Selected chips:</span><span class="v4-si-val">' + chipCount + '</span></div>';
+
+      // Custom entries
+      var customEnts = window.V4_ENCOUNTER_STATE.customEntries || {};
+      var customCount = 0;
+      for (var cg in customEnts) {
+        if (customEnts[cg]) customCount += customEnts[cg].length;
+      }
+      if (customCount > 0) h += '<div class="v4-si"><span class="v4-si-label">Custom entries:</span><span class="v4-si-val">' + customCount + '</span></div>';
 
       h += '<div class="v4-si"><span class="v4-si-label">Exam items:</span><span class="v4-si-val">' + countExam() + ' selected</span></div>';
 
@@ -1209,7 +1109,7 @@
     }
     container.innerHTML = h;
 
-    // Debug panel (only shown with ?debug=v4)
+    // Debug panel
     if (window.location.search.indexOf('debug=v4') >= 0 && state.selectedWorkflowId) {
       var debugEl = document.getElementById('v4DebugPanel');
       if (!debugEl) {
@@ -1223,10 +1123,14 @@
       var route = routeV4Content(normalizeV4State(raw));
       var dbg = '<div style="font-weight:700;margin-bottom:8px;color:#0c4a6e;font-size:12px">[DEBUG] V4 Pipeline</div>';
       dbg += '<div>Workflow: ' + esc(raw.workflowId) + '</div>';
-      dbg += '<div style="margin-top:6px;font-weight:600">Captured chips:</div>';
+      dbg += '<div style="margin-top:6px;font-weight:600">Selected chips:</div>';
       for (var dg in raw.chips) {
         dbg += '<div>' + dg + ': ' + (raw.chips[dg]||[]).length + ' items</div>';
       }
+      dbg += '<div style="margin-top:6px;font-weight:600">History fields:</div>';
+      var histCount = 0;
+      for (var fk in raw.historyFields) { if (raw.historyFields[fk]) histCount++; }
+      dbg += '<div>filled: ' + histCount + '</div>';
       dbg += '<div style="margin-top:6px;font-weight:600">Routed content:</div>';
       dbg += '<div>historyLines: ' + (route.historyLines||[]).length + '</div>';
       dbg += '<div>relevantNegativeLines: ' + (route.relevantNegativeLines||[]).length + '</div>';
@@ -1235,11 +1139,6 @@
       dbg += '<div>assessmentLines: ' + (route.assessmentLines||[]).length + '</div>';
       dbg += '<div>planLines: ' + (route.planLines||[]).length + '</div>';
       dbg += '<div>followUpLines: ' + (route.followUpLines||[]).length + '</div>';
-      dbg += '<div style="margin-top:6px">Routed plan samples:</div>';
-      var planSamples = (route.planLines||[]).slice(0,3);
-      for (var psi = 0; psi < planSamples.length; psi++) {
-        dbg += '<div style="padding-left:8px">- ' + esc(planSamples[psi].substring(0,40)) + '</div>';
-      }
       debugEl.innerHTML = dbg;
     }
   }
@@ -1265,124 +1164,103 @@
       state.selectedWorkflowSafety = info.safety_note;
     }
 
-    var draft = getHistoryDraft(wfId);
-    state.defaultHistoryDraft = draft ? draft.default_history_draft : '';
-    state.historyDraft = state.defaultHistoryDraft;
-    if (draft) state.historyPlaceholders = draft.editable_placeholders || [];
-
-    // Build mini-field definitions
-    state.miniFieldDefs = buildMiniFieldDefs(draft);
-    state.miniFields = {};
-
     // Reset all state
     state.examConfirmations = {};
     state.investigationConfirmations = {};
     state.planConfirmations = {};
     state.impression = '';
     state.planText = '';
+    state.historyFields = {};
 
-    // Capture chips from data source (bypasses DOM, works even if Speed Mode not loaded)
-    state.capturedChips = v4LoadChipsForWorkflow(wfId);
+    // Load chips into V4_ENCOUNTER_STATE
+    v4LoadChipsIntoState(wfId);
 
-    // Also trigger Speed Mode chip rendering for visual display (non-blocking)
-    v4TriggerSpeedModeForWorkflow(wfId);
+    // Clear history fields in global state
+    window.V4_ENCOUNTER_STATE.history.fields = {};
 
-    // Sync to global state
-    syncV4EncounterState();
-
-    // Attach chip click listener for live updates
-    attachChipClickListener();
+    // Sync everything to global
+    syncV4ToGlobal();
 
     renderStep(1);
     updateSidebar();
   };
 
-  window._v4RefreshChips = function() {
-    // Read from DOM to capture live user changes
-    state.capturedChips = captureOPDChips();
-    renderStep(1);
+  // Chip toggle
+  window._v4ToggleV4Chip = function(group, chipText) {
+    var selected = window.V4_ENCOUNTER_STATE.selectedChips[group] || [];
+    var norm = chipText.toLowerCase().trim();
+    var idx = -1;
+    for (var i = 0; i < selected.length; i++) {
+      if (selected[i].toLowerCase().trim() === norm) { idx = i; break; }
+    }
+    if (idx >= 0) {
+      selected.splice(idx, 1);
+    } else {
+      selected.push(chipText);
+    }
+
+    // Update the Step 1 badge and button visual
+    var countEl = document.getElementById('v4cgc_' + group);
+    if (countEl) {
+      var chips = window.V4_ENCOUNTER_STATE.chips[group] || [];
+      countEl.textContent = selected.length + '/' + chips.length;
+    }
+
+    // Toggle button active state
+    var buttons = document.querySelectorAll('.v4-chip-btn');
+    for (var bi = 0; bi < buttons.length; bi++) {
+      if (buttons[bi].textContent.trim() === chipText.trim()) {
+        buttons[bi].classList.toggle('active', idx < 0);
+      }
+    }
+
     updateSidebar();
   };
 
-  // History
-  window._v4MiniField = function(key, value) {
-    if (!state.miniFieldDefs[key]) state.miniFieldDefs[key] = { placeholder: '', label: key, isMain: false, value: '' };
-    state.miniFieldDefs[key].value = value;
-    // Do NOT auto-overwrite the draft. User clicks "Update draft from fields" to regenerate.
+  // Custom entry
+  window._v4AddCustomEntry = function(group) {
+    var input = document.getElementById('v4ce_' + group);
+    if (!input || !input.value.trim()) return;
+    var val = input.value.trim();
+
+    var custom = window.V4_ENCOUNTER_STATE.customEntries[group] || [];
+    // Avoid duplicates
+    var norm = val.toLowerCase().trim();
+    var dup = false;
+    for (var i = 0; i < custom.length; i++) {
+      if (custom[i].toLowerCase().trim() === norm) { dup = true; break; }
+    }
+    if (!dup) {
+      custom.push(val);
+    }
+    input.value = '';
+    updateSidebar();
   };
 
-  window._v4UpdateHist = function(val) {
-    state.historyDraft = val;
+  // History field
+  window._v4HistoryField = function(key, value) {
+    state.historyFields[key] = value;
+    window.V4_ENCOUNTER_STATE.history.fields[key] = value;
+
+    // Update preview
+    var preview = document.getElementById('v4HistPreview');
+    if (preview) {
+      var text = buildV4HistoryFromFields(state.historyFields);
+      preview.textContent = text || 'Fill in fields above to see the generated history.';
+    }
+
     checkAllPhi();
     updateSidebar();
   };
 
-  window._v4PreviewSuggestion = function() {
-    // Generate suggestion from mini-fields without overwriting draft
-    var draft = getHistoryDraft(state.selectedWorkflowId);
-    if (!draft) return;
-    var ta = document.getElementById('v4HistoryDraft');
-    var text = ta ? ta.value : (state.historyDraft || draft.default_history_draft);
-    var defs = state.miniFieldDefs;
-    for (var key in defs) {
-      var def = defs[key];
-      if (def.value && def.value.trim()) {
-        text = text.split(def.placeholder).join(def.value.trim());
-      }
-    }
-    text = removePlaceholderSentences(text);
-
-    // Show in a preview area
-    var prev = document.getElementById('v4HistoryPreview');
-    if (!prev) {
-      var stepContent = document.getElementById('v4StepContent');
-      if (stepContent) {
-        prev = document.createElement('div');
-        prev.id = 'v4HistoryPreview';
-        prev.style.cssText = 'margin-top:12px;padding:12px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;font-size:12px;line-height:1.6;white-space:pre-wrap;color:#166534';
-        // Insert after textarea
-        var ta2 = document.getElementById('v4HistoryDraft');
-        if (ta2 && ta2.parentNode) {
-          ta2.parentNode.insertBefore(prev, ta2.nextSibling);
-        }
-      }
-    }
-    if (prev) {
-      prev.innerHTML = '<div style="font-weight:700;margin-bottom:6px">Generated suggestion (not yet applied):</div><div>' + esc(text) + '</div>';
-    }
-  };
-
-  window._v4UseSuggestion = function() {
-    // Regenerate and apply to textarea
-    var draft = getHistoryDraft(state.selectedWorkflowId);
-    if (!draft) return;
-    var ta = document.getElementById('v4HistoryDraft');
-    var text = ta ? ta.value : (state.historyDraft || draft.default_history_draft);
-    var defs = state.miniFieldDefs;
-    for (var key in defs) {
-      var def = defs[key];
-      if (def.value && def.value.trim()) {
-        text = text.split(def.placeholder).join(def.value.trim());
-      }
-    }
-    text = removePlaceholderSentences(text);
-    state.historyDraft = text;
-    if (ta) ta.value = text;
-    checkAllPhi();
-    updateSidebar();
-  };
-
-  window._v4ClearHistory = function() {
-    var draft = getHistoryDraft(state.selectedWorkflowId);
-    state.historyDraft = draft ? draft.default_history_draft : '';
-    state.defaultHistoryDraft = state.historyDraft;
-    // Reset mini-fields
-    var defs = state.miniFieldDefs;
-    for (var k in defs) defs[k].value = '';
-    var ta = document.getElementById('v4HistoryDraft');
-    if (ta) ta.value = state.historyDraft;
-    checkAllPhi();
-    updateSidebar();
+  // Collapse/expand chip group
+  window._v4ToggleV4GroupCollapse = function(headerEl) {
+    var body = headerEl.nextElementSibling;
+    var toggle = headerEl.querySelector('.v4-cg-toggle');
+    if (!body) return;
+    var show = body.style.display !== 'none';
+    body.style.display = show ? 'none' : '';
+    if (toggle) toggle.innerHTML = show ? '&#9654;' : '&#9660;';
   };
 
   // Exam
@@ -1454,7 +1332,9 @@
 
   // Output
   window._v4Generate = function() {
-    // collectV4State() reads fresh from DOM, no stale state needed
+    // Sync closure state to V4_ENCOUNTER_STATE before generating
+    syncV4ToGlobal();
+
     var text = document.getElementById('v4OutputText');
     if (!text) return;
     var tabEl = document.querySelector('.v4-out-tab.active');
@@ -1504,10 +1384,6 @@
 
   window._v4Next = function() {
     if (currentStep < TOTAL_STEPS) {
-      // Auto-capture chips when leaving Step 1 or entering Step 6
-      if (currentStep === 1 || currentStep + 1 === TOTAL_STEPS) {
-        state.capturedChips = captureOPDChips();
-      }
       currentStep++;
       renderStep(currentStep);
       updateSidebar();
@@ -1521,7 +1397,7 @@
     var app = document.getElementById('page-advanced-encounter');
     if (!app) return;
 
-    // Show speed page (for chip selection) alongside V4; hide others
+    // Show V4 page alongside Speed page (for complementary tools)
     var allPages = document.querySelectorAll('.page');
     for (var pi = 0; pi < allPages.length; pi++) {
       var pgId = allPages[pi].id;
@@ -1532,12 +1408,11 @@
       }
     }
 
-    // Hide the Speed Mode output area when V4 is active (it has its own output in Step 6)
+    // Hide the Speed Mode output area when V4 is active
     var speedOutputBox = document.getElementById('speedOutputBox');
     if (speedOutputBox) {
       speedOutputBox.classList.add('v4-speed-output-hidden');
     }
-    // Hide speed output header tabs and action buttons
     var speedOutputHeader = document.querySelector('#page-speed .output-header');
     if (speedOutputHeader) speedOutputHeader.classList.add('v4-speed-output-hidden');
     var speedOutputActions = document.querySelector('#page-speed .output-actions');
@@ -1553,6 +1428,11 @@
     var speedWhyFaster = document.querySelector('.why-faster');
     if (speedWhyFaster) speedWhyFaster.classList.add('v4-speed-output-hidden');
 
+    // Populate speed specialty dropdown if available (non-blocking)
+    if (typeof populateSpeedSpecialty === 'function') {
+      try { populateSpeedSpecialty(); } catch(e) {}
+    }
+
     var loading = document.createElement('div');
     loading.className = 'v4-loading';
     loading.textContent = 'Loading V4 encounter data...';
@@ -1560,15 +1440,15 @@
 
     loadV4Data().then(function() {
       app.removeChild(loading);
-      // Attach chip listener for live state sync
-      attachChipClickListener();
       renderApp();
     }).catch(function(err) {
       loading.textContent = 'Failed to load V4 data: ' + (err.message || 'unknown error');
     });
   }
 
-  // Styles
+  // ================================================================
+  //  STYLES
+  // ================================================================
   var style = document.createElement('style');
   style.textContent = V4_STYLES();
   document.head.appendChild(style);
@@ -1576,9 +1456,6 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 
-  // ================================================================
-  //  STYLES
-  // ================================================================
   function V4_STYLES() {
     return `
 #page-advanced-encounter.active{display:block}
@@ -1613,27 +1490,36 @@
 .v4-wf-info-row{display:flex;gap:8px;padding:3px 0;font-size:13px}
 .v4-wf-info-label{font-weight:600;color:var(--gray-600);min-width:80px}
 .v4-wf-info-val{color:var(--gray-800)}
-.v4-chip-badge-wrap{display:flex;align-items:flex-start;gap:8px;margin-top:8px;padding:6px 0}
-.v4-chip-badge{display:inline-block;padding:4px 10px;border-radius:12px;background:var(--primary-bg);color:var(--primary);font-size:11px;font-weight:600;border:1px solid var(--primary-border)}
-.v4-chip-badge-empty{background:var(--gray-50);color:var(--gray-400);border-color:var(--gray-200)}
-.v4-captured-summary{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;padding:10px 14px;font-size:11px;line-height:1.6;flex:1}
-.v4-captured-heading{font-weight:700;color:var(--gray-700);display:block;margin-bottom:4px;font-size:12px}
-.v4-captured-line{display:flex;gap:6px;padding:1px 0}
-.v4-captured-label{color:var(--gray-500);min-width:100px}
-.v4-captured-count{font-weight:600;color:var(--gray-700)}
-.v4-chip-refresh{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;border:1px solid var(--gray-200);background:#fff;cursor:pointer;font-size:13px;line-height:1;color:var(--gray-500);padding:0}
-.v4-chip-refresh:hover{background:var(--gray-50);color:var(--gray-700)}
 .v4-speed-output-hidden{display:none!important}
 .v4-safety-box{background:var(--red-bg);border:1px solid var(--red-border);border-radius:8px;padding:10px 14px;font-size:12px;color:var(--red);margin-bottom:14px;line-height:1.4}
 .v4-safety-box-sm{background:var(--amber-bg);border:1px solid var(--amber-border);border-radius:6px;padding:8px 12px;font-size:11px;color:var(--gray-600);margin-bottom:10px;line-height:1.4}
 
-.v4-mini-fields{margin-bottom:12px;padding:14px;background:var(--gray-50);border-radius:8px}
-.v4-mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.v4-mini-item{display:flex;flex-direction:column;gap:3px}
-.v4-mini-label{font-size:11px;font-weight:600;color:var(--gray-600)}
-.v4-mini-input{padding:8px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:13px;font-family:var(--font)}
-.v4-mini-input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
-@media(max-width:640px){.v4-mini-grid{grid-template-columns:1fr}}
+/* Chip Groups (Step 1) */
+.v4-chip-group{border:1px solid var(--gray-200);border-radius:8px;margin-bottom:8px;overflow:hidden}
+.v4-chip-group-header{display:flex;align-items:center;gap:8px;padding:10px 14px;background:var(--gray-50);cursor:pointer;font-size:13px;font-weight:600;color:var(--gray-700)}
+.v4-chip-group-header:hover{background:var(--gray-100)}
+.v4-cg-toggle{font-size:10px;width:16px;text-align:center}
+.v4-cg-count{margin-left:auto;font-size:11px;font-weight:500;color:var(--gray-400)}
+.v4-chip-group-body{padding:10px 14px 14px}
+.v4-chip-list{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.v4-chip-btn{padding:5px 12px;border-radius:16px;font-size:12px;font-weight:500;border:1px solid var(--gray-200);background:#fff;color:var(--gray-600);cursor:pointer;font-family:var(--font);transition:all .12s}
+.v4-chip-btn:hover{background:var(--gray-50);border-color:var(--gray-300)}
+.v4-chip-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.v4-custom-entry-row{display:flex;gap:6px;align-items:center;margin-top:4px}
+.v4-custom-entry-input{flex:1;padding:6px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:12px;font-family:var(--font)}
+.v4-custom-entry-input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 2px var(--primary-glow)}
+.v4-btn-sm{padding:6px 12px;font-size:11px}
+
+/* History fields (Step 2) */
+.v4-hist-fields{margin-bottom:12px;padding:14px;background:var(--gray-50);border-radius:8px}
+.v4-hist-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.v4-hist-item{display:flex;flex-direction:column;gap:3px}
+.v4-hist-label{font-size:12px;font-weight:600;color:var(--gray-600)}
+.v4-hist-input{padding:8px 10px;border:1px solid var(--gray-300);border-radius:6px;font-size:13px;font-family:var(--font)}
+.v4-hist-input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
+@media(max-width:640px){.v4-hist-grid{grid-template-columns:1fr}}
+.v4-hist-preview-wrap{margin-top:8px}
+.v4-hist-preview{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;padding:12px 14px;font-size:13px;line-height:1.6;white-space:pre-wrap;color:var(--gray-700);min-height:40px}
 
 .v4-textarea{width:100%;padding:12px 14px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:var(--font);line-height:1.6;resize:vertical;color:var(--gray-800)}
 .v4-textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
