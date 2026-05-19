@@ -1892,14 +1892,14 @@
   {
     "workflow_id": "ent-nasal-congestion",
     "workflow_display_name": "ENT Nasal Congestion",
-    "default_history_draft": "Patient seen with nasal congestion for [duration]. Character: [congestion_character]. Discharge: [discharge_context]. Facial pain/pressure: [facial_pain_or_pressure]. Sneezing/allergic triggers: [sneezing_or_allergic_triggers]. Smell/taste: [smell_taste_context]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Patient seen with nasal congestion for [duration]. Laterality: [laterality]. Rhinorrhea: [rhinorrhea_context]. Sneezing/allergy: [sneezing_or_allergy_context]. Smell change: [smell_change_context]. Facial pain: [facial_pain_context]. [Relevant negatives reviewed]. [Additional history].",
     "editable_placeholders": [
       "[duration]",
-      "[congestion character]",
-      "[discharge context]",
-      "[facial pain or pressure]",
-      "[sneezing or allergic triggers]",
-      "[smell taste context]",
+      "[laterality]",
+      "[rhinorrhea context]",
+      "[sneezing or allergy context]",
+      "[smell change context]",
+      "[facial pain context]",
       "[relevant negatives]",
       "[additional history]"
     ],
@@ -1920,14 +1920,14 @@
   {
     "workflow_id": "ent-sinus-symptoms",
     "workflow_display_name": "ENT Sinus Symptoms",
-    "default_history_draft": "Patient seen with sinus symptoms for [duration]. Pain/pressure location: [pain_or_pressure_location]. Discharge: [discharge_context]. Nasal obstruction: [nasal_obstruction_context]. Fever: [fever_context]. Dental pain: [dental_pain_context]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Patient seen with sinus symptoms for [duration]. Facial pressure location: [facial_pressure_location]. Nasal discharge: [nasal_discharge_context]. Fever: [fever_context]. Headache/dental pain: [headache_or_dental_pain_context]. Smell change: [smell_change_context]. [Relevant negatives reviewed]. [Additional history].",
     "editable_placeholders": [
       "[duration]",
-      "[pain or pressure location]",
-      "[discharge context]",
-      "[nasal obstruction context]",
+      "[facial pressure location]",
+      "[nasal discharge context]",
       "[fever context]",
-      "[dental pain context]",
+      "[headache or dental pain context]",
+      "[smell change context]",
       "[relevant negatives]",
       "[additional history]"
     ],
@@ -1948,14 +1948,13 @@
   {
     "workflow_id": "ent-sore-throat",
     "workflow_display_name": "ENT Sore Throat",
-    "default_history_draft": "Patient seen with sore throat for [duration]. Character: [pain_character]. Swallowing: [swallowing_context]. Fever: [fever_context]. Voice change: [voice_change_context]. Recent illness/exposure: [recent_illness_or_exposure]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Patient seen with sore throat for [duration]. Swallowing: [swallowing_context]. Fever: [fever_context]. Cough/URTI: [cough_or_urti_context]. Voice/neck: [voice_or_neck_context]. [Relevant negatives reviewed]. [Additional history].",
     "editable_placeholders": [
       "[duration]",
-      "[pain character]",
       "[swallowing context]",
       "[fever context]",
-      "[voice change context]",
-      "[recent illness or exposure]",
+      "[cough or urti context]",
+      "[voice or neck context]",
       "[relevant negatives]",
       "[additional history]"
     ],
@@ -1976,14 +1975,14 @@
   {
     "workflow_id": "ent-voice-complaint",
     "workflow_display_name": "ENT Voice Complaint",
-    "default_history_draft": "Patient seen with voice concern for [duration]. Description: [voice_symptom_description]. Pain/strain: [pain_or_strain_context]. Reflux/lifestyle: [reflux_lifestyle_context]. Smoking/occupational: [smoking_or_occupational_context]. Recent illness: [recent_illness_context]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Patient seen with voice concern for [duration]. Description: [voice_change_description]. Throat discomfort: [throat_discomfort_context]. Cough/reflux: [cough_or_reflux_context]. Smoking/voice use: [smoking_or_voice_use_context]. Swallowing/breathing: [swallowing_or_breathing_context]. [Relevant negatives reviewed]. [Additional history].",
     "editable_placeholders": [
       "[duration]",
-      "[voice symptom description]",
-      "[pain or strain context]",
-      "[reflux lifestyle context]",
-      "[smoking or occupational context]",
-      "[recent illness context]",
+      "[voice change description]",
+      "[throat discomfort context]",
+      "[cough or reflux context]",
+      "[smoking or voice use context]",
+      "[swallowing or breathing context]",
       "[relevant negatives]",
       "[additional history]"
     ],

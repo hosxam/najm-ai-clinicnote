@@ -5685,9 +5685,9 @@
         "safety_note": "Select only if discussed or decided by clinician.",
         "options": [
           {
-            "option_id": "pain_ent-ear-pain",
-            "option_text": "Pain management advice documented if discussed.",
-            "note_text": "Pain management advice discussed.",
+            "option_id": "ear_ent-ear-pain",
+            "option_text": "Ear care advice documented if discussed.",
+            "note_text": "Ear care advice discussed.",
             "option_category": "counseling",
             "source_status": "draft",
             "source_reference": "V4K-5 ENT",
@@ -5742,9 +5742,30 @@
         ]
       },
       {
+        "group_id": "ref_ent-ear-pain",
+        "group_label": "ref",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_ent-ear-pain",
+            "option_text": "Referral documented if arranged by clinician.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
         "group_id": "fup_ent-ear-pain",
         "group_label": "fup",
-        "display_order": 4,
+        "display_order": 5,
         "safety_note": "Select only if discussed or decided by clinician.",
         "options": [
           {
@@ -5779,30 +5800,9 @@
         "options": [
           {
             "option_id": "hearing_ent-hearing-complaint",
-            "option_text": "Hearing protection advice documented if discussed.",
-            "note_text": "Hearing protection advice discussed.",
+            "option_text": "Hearing advice documented if discussed.",
+            "note_text": "Hearing advice discussed.",
             "option_category": "counseling",
-            "source_status": "draft",
-            "source_reference": "V4K-5 ENT",
-            "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only.",
-            "medication_related": false,
-            "dosing_included": false,
-            "review_required": true
-          }
-        ]
-      },
-      {
-        "group_id": "inv_ent-hearing-complaint",
-        "group_label": "inv",
-        "display_order": 2,
-        "safety_note": "Select only if discussed or decided by clinician.",
-        "options": [
-          {
-            "option_id": "audiology_ent-hearing-complaint",
-            "option_text": "Audiology referral documented if arranged.",
-            "note_text": "Audiology referral arranged.",
-            "option_category": "investigation_documentation",
             "source_status": "draft",
             "source_reference": "V4K-5 ENT",
             "clinician_confirmation_required": true,
@@ -5816,14 +5816,35 @@
       {
         "group_id": "ref_ent-hearing-complaint",
         "group_label": "ref",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "audiology_ent-hearing-complaint",
+            "option_text": "Audiology referral documented if arranged by clinician.",
+            "note_text": "Audiology referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_ent-hearing-complaint",
+        "group_label": "safety",
         "display_order": 3,
         "safety_note": "Select only if discussed or decided by clinician.",
         "options": [
           {
-            "option_id": "ref_ent-hearing-complaint",
-            "option_text": "ENT referral documented if clinician decided.",
-            "note_text": "ENT referral arranged.",
-            "option_category": "referral_documentation",
+            "option_id": "safety_ent-hearing-complaint",
+            "option_text": "Safety-netting documented if discussed.",
+            "note_text": "Safety-netting discussed.",
+            "option_category": "safety_netting",
             "source_status": "draft",
             "source_reference": "V4K-5 ENT",
             "clinician_confirmation_required": true,
@@ -5865,15 +5886,15 @@
     "workflow_display_name": "ENT Tinnitus",
     "plan_option_groups": [
       {
-        "group_id": "advice_ent-tinnitus",
-        "group_label": "advice",
+        "group_id": "counseling_ent-tinnitus",
+        "group_label": "counseling",
         "display_order": 1,
         "safety_note": "Select only if discussed or decided by clinician.",
         "options": [
           {
             "option_id": "tinnitus_ent-tinnitus",
-            "option_text": "Tinnitus management advice documented if discussed.",
-            "note_text": "Tinnitus management advice discussed.",
+            "option_text": "Tinnitus counseling documented if discussed.",
+            "note_text": "Tinnitus counseling discussed.",
             "option_category": "counseling",
             "source_status": "draft",
             "source_reference": "V4K-5 ENT",
@@ -5893,21 +5914,8 @@
         "options": [
           {
             "option_id": "audiology_ent-tinnitus",
-            "option_text": "Audiology referral documented if arranged.",
-            "note_text": "Audiology referral arranged.",
-            "option_category": "referral_documentation",
-            "source_status": "draft",
-            "source_reference": "V4K-5 ENT",
-            "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only.",
-            "medication_related": false,
-            "dosing_included": false,
-            "review_required": true
-          },
-          {
-            "option_id": "ent_ent-tinnitus",
-            "option_text": "ENT referral documented if clinician decided.",
-            "note_text": "ENT referral arranged.",
+            "option_text": "Hearing or audiology follow-up documented if arranged.",
+            "note_text": "Audiology follow-up arranged.",
             "option_category": "referral_documentation",
             "source_status": "draft",
             "source_reference": "V4K-5 ENT",
@@ -5920,9 +5928,30 @@
         ]
       },
       {
+        "group_id": "review_ent-tinnitus",
+        "group_label": "review",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "review_ent-tinnitus",
+            "option_text": "Medication or noise exposure review documented if discussed.",
+            "note_text": "Medication or exposure review discussed.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-5 ENT",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
         "group_id": "fup_ent-tinnitus",
         "group_label": "fup",
-        "display_order": 3,
+        "display_order": 4,
         "safety_note": "Select only if discussed or decided by clinician.",
         "options": [
           {

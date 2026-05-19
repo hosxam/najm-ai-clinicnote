@@ -2381,8 +2381,8 @@
         "options": [
           {
             "option_id": "oto_ent-ear-pain",
-            "option_text": "Otoscopy documented if assessed.",
-            "note_text": "Otoscopy documented.",
+            "option_text": "Otoscopy findings documented if assessed.",
+            "note_text": "Otoscopy findings documented.",
             "required_level": "conditional",
             "source_status": "draft"
           },
@@ -2405,6 +2405,13 @@
             "note_text": "Hearing screen reviewed.",
             "required_level": "conditional",
             "source_status": "draft"
+          },
+          {
+            "option_id": "prev_ent-ear-pain",
+            "option_text": "Previous ENT records reviewed if available.",
+            "note_text": "Previous ENT records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
           }
         ]
       }
@@ -2417,20 +2424,34 @@
     "workflow_display_name": "ENT Hearing Complaint",
     "investigation_groups": [
       {
-        "group_id": "Exam_ent-hearing-complaint",
-        "group_label": "Exam",
+        "group_id": "Tests_ent-hearing-complaint",
+        "group_label": "Tests",
         "options": [
-          {
-            "option_id": "oto_ent-hearing-complaint",
-            "option_text": "Otoscopy documented if assessed.",
-            "note_text": "Otoscopy documented.",
-            "required_level": "conditional",
-            "source_status": "draft"
-          },
           {
             "option_id": "hearing_ent-hearing-complaint",
             "option_text": "Hearing screen reviewed if performed.",
             "note_text": "Hearing screen reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "audiology_ent-hearing-complaint",
+            "option_text": "Audiology report reviewed if available.",
+            "note_text": "Audiology report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "oto_ent-hearing-complaint",
+            "option_text": "Otoscopy findings documented if assessed.",
+            "note_text": "Otoscopy findings documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_ent-hearing-complaint",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
             "required_level": "conditional",
             "source_status": "draft"
           }
@@ -2445,20 +2466,40 @@
     "workflow_display_name": "ENT Tinnitus",
     "investigation_groups": [
       {
-        "group_id": "Exam_ent-tinnitus",
-        "group_label": "Exam",
+        "group_id": "Tests_ent-tinnitus",
+        "group_label": "Tests",
         "options": [
           {
-            "option_id": "oto_ent-tinnitus",
-            "option_text": "Otoscopy documented if assessed.",
-            "note_text": "Otoscopy documented.",
+            "option_id": "audiology_ent-tinnitus",
+            "option_text": "Audiology report reviewed if available.",
+            "note_text": "Audiology report reviewed.",
             "required_level": "conditional",
             "source_status": "draft"
           },
           {
-            "option_id": "hearing_ent-tinnitus",
-            "option_text": "Hearing screen reviewed if performed.",
-            "note_text": "Hearing screen reviewed.",
+            "option_id": "oto_ent-tinnitus",
+            "option_text": "Otoscopy findings documented if assessed.",
+            "note_text": "Otoscopy findings documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Review_ent-tinnitus",
+        "group_label": "Review",
+        "options": [
+          {
+            "option_id": "med_ent-tinnitus",
+            "option_text": "Medication history reviewed if relevant.",
+            "note_text": "Medication history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_ent-tinnitus",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
             "required_level": "conditional",
             "source_status": "draft"
           }
@@ -2473,27 +2514,53 @@
     "workflow_display_name": "ENT Dizziness / Vertigo",
     "investigation_groups": [
       {
+        "group_id": "Vitals_ent-dizziness-vertigo",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "vitals_ent-dizziness-vertigo",
+            "option_text": "Vital signs reviewed if measured.",
+            "note_text": "Vital signs reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
         "group_id": "Exam_ent-dizziness-vertigo",
         "group_label": "Exam",
         "options": [
           {
-            "option_id": "oto_ent-dizziness-vertigo",
-            "option_text": "Otoscopy documented if assessed.",
-            "note_text": "Otoscopy documented.",
+            "option_id": "neuro_ent-dizziness-vertigo",
+            "option_text": "Neurological screen documented if assessed.",
+            "note_text": "Neurological screen documented.",
             "required_level": "conditional",
             "source_status": "draft"
           },
           {
-            "option_id": "vestibular_ent-dizziness-vertigo",
-            "option_text": "Vestibular screen documented if assessed.",
-            "note_text": "Vestibular screen documented.",
+            "option_id": "ear_ent-dizziness-vertigo",
+            "option_text": "Ear examination documented if assessed.",
+            "note_text": "Ear examination documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Tests_ent-dizziness-vertigo",
+        "group_label": "Tests",
+        "options": [
+          {
+            "option_id": "ecg_ent-dizziness-vertigo",
+            "option_text": "ECG reviewed if performed.",
+            "note_text": "ECG reviewed.",
             "required_level": "conditional",
             "source_status": "draft"
           },
           {
-            "option_id": "bp_ent-dizziness-vertigo",
-            "option_text": "Blood pressure recorded if measured.",
-            "note_text": "Blood pressure recorded.",
+            "option_id": "glucose_ent-dizziness-vertigo",
+            "option_text": "Glucose checked documented if performed.",
+            "note_text": "Glucose checked.",
             "required_level": "conditional",
             "source_status": "draft"
           }
@@ -2515,6 +2582,26 @@
             "option_id": "nasal_ent-nasal-congestion",
             "option_text": "Nasal examination documented if assessed.",
             "note_text": "Nasal examination documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Review_ent-nasal-congestion",
+        "group_label": "Review",
+        "options": [
+          {
+            "option_id": "allergy_ent-nasal-congestion",
+            "option_text": "Allergy history reviewed if relevant.",
+            "note_text": "Allergy history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_ent-nasal-congestion",
+            "option_text": "Previous ENT records reviewed if available.",
+            "note_text": "Previous ENT records reviewed.",
             "required_level": "conditional",
             "source_status": "draft"
           }
@@ -2545,13 +2632,6 @@
             "note_text": "Sinus tenderness documented.",
             "required_level": "conditional",
             "source_status": "draft"
-          },
-          {
-            "option_id": "temp_ent-sinus-symptoms",
-            "option_text": "Temperature recorded if measured.",
-            "note_text": "Temperature recorded.",
-            "required_level": "conditional",
-            "source_status": "draft"
           }
         ]
       },
@@ -2560,9 +2640,16 @@
         "group_label": "Imaging",
         "options": [
           {
-            "option_id": "sinus_ct_ent-sinus-symptoms",
-            "option_text": "Sinus imaging reviewed if available.",
-            "note_text": "Sinus imaging reviewed.",
+            "option_id": "imaging_ent-sinus-symptoms",
+            "option_text": "Imaging reviewed if available.",
+            "note_text": "Imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_ent-sinus-symptoms",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
             "required_level": "conditional",
             "source_status": "draft"
           }
@@ -2584,13 +2671,6 @@
             "option_id": "throat_ent-sore-throat",
             "option_text": "Throat examination documented if assessed.",
             "note_text": "Throat examination documented.",
-            "required_level": "conditional",
-            "source_status": "draft"
-          },
-          {
-            "option_id": "cervical_ent-sore-throat",
-            "option_text": "Cervical lymph nodes documented if assessed.",
-            "note_text": "Cervical lymph nodes documented.",
             "required_level": "conditional",
             "source_status": "draft"
           },
@@ -2636,22 +2716,36 @@
         "group_label": "Exam",
         "options": [
           {
-            "option_id": "larynx_ent-voice-complaint",
-            "option_text": "Laryngeal examination documented if assessed.",
-            "note_text": "Laryngeal examination documented by clinician if assessed.",
+            "option_id": "throat_ent-voice-complaint",
+            "option_text": "Throat or neck examination documented if assessed.",
+            "note_text": "Throat or neck examination documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "voice_ent-voice-complaint",
+            "option_text": "Voice assessment documented if assessed.",
+            "note_text": "Voice assessment documented.",
             "required_level": "conditional",
             "source_status": "draft"
           }
         ]
       },
       {
-        "group_id": "Ref_ent-voice-complaint",
-        "group_label": "Ref",
+        "group_id": "Records_ent-voice-complaint",
+        "group_label": "Records",
         "options": [
           {
-            "option_id": "ent_ref_ent-voice-complaint",
-            "option_text": "ENT or speech therapy referral documented if arranged.",
-            "note_text": "ENT or speech therapy referral documented.",
+            "option_id": "prev_ent-voice-complaint",
+            "option_text": "Previous ENT records reviewed if available.",
+            "note_text": "Previous ENT records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "ref_ent-voice-complaint",
+            "option_text": "Referral documentation reviewed if available.",
+            "note_text": "Referral documentation reviewed.",
             "required_level": "conditional",
             "source_status": "draft"
           }
