@@ -39518,5 +39518,4881 @@
         ]
       }
     ]
+  },
+  {
+    "workflow_id": "urgent-abdominal-pain",
+    "specialty_id": "Emergency / Urgent Care",
+    "chips": [
+      {
+        "chip_id": "urgent-abdominal-pain-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "abdominal pain",
+        "order": 1,
+        "search_terms": [
+          "abdominal",
+          "pain"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no vomiting",
+        "order": 1,
+        "search_terms": [
+          "no",
+          "vomiting"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "abdominal examination documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "abdominal",
+          "examination",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "peritonism or guarding",
+        "order": 1,
+        "search_terms": [
+          "peritonism",
+          "or",
+          "guarding"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-investigations-1",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "blood",
+          "tests",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "analgesia plan documented if clinician decided",
+        "order": 1,
+        "search_terms": [
+          "analgesia",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up in 1-2 days if not improving",
+        "order": 1,
+        "search_terms": [
+          "follow-up",
+          "in",
+          "1-2"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "pain location documented",
+        "order": 2,
+        "search_terms": [
+          "pain",
+          "location",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no diarrhea",
+        "order": 2,
+        "search_terms": [
+          "no",
+          "diarrhea"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "tenderness documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "tenderness",
+          "documented",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "rigid abdomen",
+        "order": 2,
+        "search_terms": [
+          "rigid",
+          "abdomen"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-investigations-2",
+        "group": "investigations",
+        "chip_text": "imaging reviewed if ordered",
+        "order": 2,
+        "search_terms": [
+          "imaging",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "dietary advice documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "dietary",
+          "advice",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "return sooner if symptoms worsen",
+        "order": 2,
+        "search_terms": [
+          "return",
+          "sooner",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "pain character documented",
+        "order": 3,
+        "search_terms": [
+          "pain",
+          "character",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no urinary symptoms",
+        "order": 3,
+        "search_terms": [
+          "no",
+          "urinary",
+          "symptoms"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "bowel sounds documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "bowel",
+          "sounds",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "hemodynamic instability",
+        "order": 3,
+        "search_terms": [
+          "hemodynamic",
+          "instability"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-investigations-3",
+        "group": "investigations",
+        "chip_text": "urinalysis reviewed if relevant",
+        "order": 3,
+        "search_terms": [
+          "urinalysis",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "return precautions documented if discussed",
+        "order": 3,
+        "search_terms": [
+          "return",
+          "precautions",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "surgical follow-up documented if arranged",
+        "order": 3,
+        "search_terms": [
+          "surgical",
+          "follow-up",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "pain severity documented",
+        "order": 4,
+        "search_terms": [
+          "pain",
+          "severity",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no fever",
+        "order": 4,
+        "search_terms": [
+          "no",
+          "fever"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "vital signs documented if measured",
+        "order": 4,
+        "search_terms": [
+          "vital",
+          "signs",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "acute surgical abdomen",
+        "order": 4,
+        "search_terms": [
+          "acute",
+          "surgical",
+          "abdomen"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-investigations-4",
+        "group": "investigations",
+        "chip_text": "pregnancy test documented if relevant",
+        "order": 4,
+        "search_terms": [
+          "pregnancy",
+          "test",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "referral or escalation documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "referral",
+          "or",
+          "escalation"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "onset documented",
+        "order": 5,
+        "search_terms": [
+          "onset",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no surgical history",
+        "order": 5,
+        "search_terms": [
+          "no",
+          "surgical",
+          "history"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "general",
+          "appearance",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "severe uncontrolled pain",
+        "order": 5,
+        "search_terms": [
+          "severe",
+          "uncontrolled",
+          "pain"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-investigations-5",
+        "group": "investigations",
+        "chip_text": "previous records reviewed if available",
+        "order": 5,
+        "search_terms": [
+          "previous",
+          "records",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "investigation plan documented if clinician decided",
+        "order": 5,
+        "search_terms": [
+          "investigation",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "associated symptoms documented",
+        "order": 6,
+        "search_terms": [
+          "associated",
+          "symptoms",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-abdominal-pain-relevant_negatives-6",
+        "group": "relevant_negatives",
+        "chip_text": "no pregnancy if female and relevant",
+        "order": 6,
+        "search_terms": [
+          "no",
+          "pregnancy",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "urgent-allergic-reaction",
+    "specialty_id": "Emergency / Urgent Care",
+    "chips": [
+      {
+        "chip_id": "urgent-allergic-reaction-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "allergic reaction",
+        "order": 1,
+        "search_terms": [
+          "allergic",
+          "reaction"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no respiratory distress",
+        "order": 1,
+        "search_terms": [
+          "no",
+          "respiratory",
+          "distress"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "rash morphology documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "rash",
+          "morphology",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "respiratory distress",
+        "order": 1,
+        "search_terms": [
+          "respiratory",
+          "distress"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-investigations-1",
+        "group": "investigations",
+        "chip_text": "previous records reviewed if available",
+        "order": 1,
+        "search_terms": [
+          "previous",
+          "records",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "allergy advice documented if discussed",
+        "order": 1,
+        "search_terms": [
+          "allergy",
+          "advice",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up in 1 week if not improving",
+        "order": 1,
+        "search_terms": [
+          "follow-up",
+          "in",
+          "1"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "rash",
+        "order": 2,
+        "search_terms": [
+          "rash"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no stridor or wheeze",
+        "order": 2,
+        "search_terms": [
+          "no",
+          "stridor",
+          "or"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "rash distribution documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "rash",
+          "distribution",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "stridor or wheeze",
+        "order": 2,
+        "search_terms": [
+          "stridor",
+          "or",
+          "wheeze"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-investigations-2",
+        "group": "investigations",
+        "chip_text": "allergy history reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "allergy",
+          "history",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "antihistamine plan documented if clinician decided",
+        "order": 2,
+        "search_terms": [
+          "antihistamine",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "return sooner if symptoms worsen",
+        "order": 2,
+        "search_terms": [
+          "return",
+          "sooner",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "itching",
+        "order": 3,
+        "search_terms": [
+          "itching"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no throat tightness",
+        "order": 3,
+        "search_terms": [
+          "no",
+          "throat",
+          "tightness"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "angioedema documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "angioedema",
+          "documented",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "angioedema involving airway",
+        "order": 3,
+        "search_terms": [
+          "angioedema",
+          "involving",
+          "airway"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "trigger avoidance documented if discussed",
+        "order": 3,
+        "search_terms": [
+          "trigger",
+          "avoidance",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "allergy clinic referral documented if arranged",
+        "order": 3,
+        "search_terms": [
+          "allergy",
+          "clinic",
+          "referral"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "swelling",
+        "order": 4,
+        "search_terms": [
+          "swelling"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no anaphylaxis features",
+        "order": 4,
+        "search_terms": [
+          "no",
+          "anaphylaxis",
+          "features"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "respiratory status documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "respiratory",
+          "status",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "anaphylaxis features",
+        "order": 4,
+        "search_terms": [
+          "anaphylaxis",
+          "features"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "epinephrine auto-injector documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "epinephrine",
+          "auto-injector",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "urticaria",
+        "order": 5,
+        "search_terms": [
+          "urticaria"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no hypotension",
+        "order": 5,
+        "search_terms": [
+          "no",
+          "hypotension"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "airway status documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "airway",
+          "status",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "hypotension or shock",
+        "order": 5,
+        "search_terms": [
+          "hypotension",
+          "or",
+          "shock"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "return precautions documented if discussed",
+        "order": 5,
+        "search_terms": [
+          "return",
+          "precautions",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "angioedema",
+        "order": 6,
+        "search_terms": [
+          "angioedema"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "vital signs documented if measured",
+        "order": 6,
+        "search_terms": [
+          "vital",
+          "signs",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "referral or escalation documented if clinician decided",
+        "order": 6,
+        "search_terms": [
+          "referral",
+          "or",
+          "escalation"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-allergic-reaction-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "trigger documented if identified",
+        "order": 7,
+        "search_terms": [
+          "trigger",
+          "documented",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "urgent-burn-assessment",
+    "specialty_id": "Emergency / Urgent Care",
+    "chips": [
+      {
+        "chip_id": "urgent-burn-assessment-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "burn",
+        "order": 1,
+        "search_terms": [
+          "burn"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no airway involvement",
+        "order": 1,
+        "search_terms": [
+          "no",
+          "airway",
+          "involvement"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "burn depth documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "burn",
+          "depth",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "airway or inhalational injury",
+        "order": 1,
+        "search_terms": [
+          "airway",
+          "or",
+          "inhalational"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-investigations-1",
+        "group": "investigations",
+        "chip_text": "imaging reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "imaging",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "burn care instructions documented if discussed",
+        "order": 1,
+        "search_terms": [
+          "burn",
+          "care",
+          "instructions"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "dressing change in 2-3 days",
+        "order": 1,
+        "search_terms": [
+          "dressing",
+          "change",
+          "in"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "thermal burn",
+        "order": 2,
+        "search_terms": [
+          "thermal",
+          "burn"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no inhalational injury",
+        "order": 2,
+        "search_terms": [
+          "no",
+          "inhalational",
+          "injury"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "total body surface area estimated if assessed",
+        "order": 2,
+        "search_terms": [
+          "total",
+          "body",
+          "surface"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "circumferential burn",
+        "order": 2,
+        "search_terms": [
+          "circumferential",
+          "burn"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-investigations-2",
+        "group": "investigations",
+        "chip_text": "previous records reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "previous",
+          "records",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "analgesia plan documented if clinician decided",
+        "order": 2,
+        "search_terms": [
+          "analgesia",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "return sooner if signs of infection",
+        "order": 2,
+        "search_terms": [
+          "return",
+          "sooner",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "scald",
+        "order": 3,
+        "search_terms": [
+          "scald"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no circumferential burn",
+        "order": 3,
+        "search_terms": [
+          "no",
+          "circumferential",
+          "burn"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "burn site documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "burn",
+          "site",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "chemical or electrical burn",
+        "order": 3,
+        "search_terms": [
+          "chemical",
+          "or",
+          "electrical"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "dressing plan documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "dressing",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "follow-up in 1 week if not improving",
+        "order": 3,
+        "search_terms": [
+          "follow-up",
+          "in",
+          "1"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "pain at burn site",
+        "order": 4,
+        "search_terms": [
+          "pain",
+          "at",
+          "burn"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no chemical burn",
+        "order": 4,
+        "search_terms": [
+          "no",
+          "chemical",
+          "burn"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "blistering documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "blistering",
+          "documented",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "full-thickness burn",
+        "order": 4,
+        "search_terms": [
+          "full-thickness",
+          "burn"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "tetanus prophylaxis documented if given",
+        "order": 4,
+        "search_terms": [
+          "tetanus",
+          "prophylaxis",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "blistering",
+        "order": 5,
+        "search_terms": [
+          "blistering"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no electrical burn",
+        "order": 5,
+        "search_terms": [
+          "no",
+          "electrical",
+          "burn"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "surrounding erythema documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "surrounding",
+          "erythema",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "large body surface area burn",
+        "order": 5,
+        "search_terms": [
+          "large",
+          "body",
+          "surface"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "return precautions documented if discussed",
+        "order": 5,
+        "search_terms": [
+          "return",
+          "precautions",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "redness",
+        "order": 6,
+        "search_terms": [
+          "redness"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "neurovascular status documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "neurovascular",
+          "status",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "referral or escalation documented if clinician decided",
+        "order": 6,
+        "search_terms": [
+          "referral",
+          "or",
+          "escalation"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-burn-assessment-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "mechanism documented",
+        "order": 7,
+        "search_terms": [
+          "mechanism",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "urgent-chest-pain",
+    "specialty_id": "Emergency / Urgent Care",
+    "chips": [
+      {
+        "chip_id": "urgent-chest-pain-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "chest pain",
+        "order": 1,
+        "search_terms": [
+          "chest",
+          "pain"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no shortness of breath",
+        "order": 1,
+        "search_terms": [
+          "no",
+          "shortness",
+          "of"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "vital signs documented if measured",
+        "order": 1,
+        "search_terms": [
+          "vital",
+          "signs",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "ECG changes",
+        "order": 1,
+        "search_terms": [
+          "ECG",
+          "changes"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-investigations-1",
+        "group": "investigations",
+        "chip_text": "ECG reviewed if performed",
+        "order": 1,
+        "search_terms": [
+          "ECG",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "analgesia plan documented if clinician decided",
+        "order": 1,
+        "search_terms": [
+          "analgesia",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up arranged if clinician decided",
+        "order": 1,
+        "search_terms": [
+          "follow-up",
+          "arranged",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "chest tightness",
+        "order": 2,
+        "search_terms": [
+          "chest",
+          "tightness"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no diaphoresis",
+        "order": 2,
+        "search_terms": [
+          "no",
+          "diaphoresis"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "heart auscultation documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "heart",
+          "auscultation",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "troponin elevation",
+        "order": 2,
+        "search_terms": [
+          "troponin",
+          "elevation"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-investigations-2",
+        "group": "investigations",
+        "chip_text": "chest X-ray reviewed if ordered",
+        "order": 2,
+        "search_terms": [
+          "chest",
+          "X-ray",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "cardiac monitoring documented if clinician decided",
+        "order": 2,
+        "search_terms": [
+          "cardiac",
+          "monitoring",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "return sooner if symptoms worsen",
+        "order": 2,
+        "search_terms": [
+          "return",
+          "sooner",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "chest discomfort",
+        "order": 3,
+        "search_terms": [
+          "chest",
+          "discomfort"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no palpitations",
+        "order": 3,
+        "search_terms": [
+          "no",
+          "palpitations"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "respiratory examination documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "respiratory",
+          "examination",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "hemodynamic instability",
+        "order": 3,
+        "search_terms": [
+          "hemodynamic",
+          "instability"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-investigations-3",
+        "group": "investigations",
+        "chip_text": "cardiac markers reviewed if ordered",
+        "order": 3,
+        "search_terms": [
+          "cardiac",
+          "markers",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "return precautions documented if discussed",
+        "order": 3,
+        "search_terms": [
+          "return",
+          "precautions",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "cardiology follow-up documented if arranged",
+        "order": 3,
+        "search_terms": [
+          "cardiology",
+          "follow-up",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "pain character documented",
+        "order": 4,
+        "search_terms": [
+          "pain",
+          "character",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no syncope",
+        "order": 4,
+        "search_terms": [
+          "no",
+          "syncope"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "general",
+          "appearance",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "syncope or pre-syncope",
+        "order": 4,
+        "search_terms": [
+          "syncope",
+          "or",
+          "pre-syncope"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-investigations-4",
+        "group": "investigations",
+        "chip_text": "previous records reviewed if available",
+        "order": 4,
+        "search_terms": [
+          "previous",
+          "records",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "referral or escalation documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "referral",
+          "or",
+          "escalation"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "pain radiation documented",
+        "order": 5,
+        "search_terms": [
+          "pain",
+          "radiation",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no nausea or vomiting",
+        "order": 5,
+        "search_terms": [
+          "no",
+          "nausea",
+          "or"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "chest wall examination documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "chest",
+          "wall",
+          "examination"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "pulmonary edema features",
+        "order": 5,
+        "search_terms": [
+          "pulmonary",
+          "edema",
+          "features"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "investigation plan documented if clinician decided",
+        "order": 5,
+        "search_terms": [
+          "investigation",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "onset documented",
+        "order": 6,
+        "search_terms": [
+          "onset",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "new murmur",
+        "order": 6,
+        "search_terms": [
+          "new",
+          "murmur"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-chest-pain-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "associated symptoms documented",
+        "order": 7,
+        "search_terms": [
+          "associated",
+          "symptoms",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "urgent-fever-suspected-infection",
+    "specialty_id": "Emergency / Urgent Care",
+    "chips": [
+      {
+        "chip_id": "urgent-fever-suspected-infection-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "fever",
+        "order": 1,
+        "search_terms": [
+          "fever"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no respiratory distress",
+        "order": 1,
+        "search_terms": [
+          "no",
+          "respiratory",
+          "distress"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "temperature documented if measured",
+        "order": 1,
+        "search_terms": [
+          "temperature",
+          "documented",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "altered mental status",
+        "order": 1,
+        "search_terms": [
+          "altered",
+          "mental",
+          "status"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-investigations-1",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "blood",
+          "tests",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "supportive care advice documented if discussed",
+        "order": 1,
+        "search_terms": [
+          "supportive",
+          "care",
+          "advice"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up in 2-3 days if not improving",
+        "order": 1,
+        "search_terms": [
+          "follow-up",
+          "in",
+          "2-3"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "chills or rigors",
+        "order": 2,
+        "search_terms": [
+          "chills",
+          "or",
+          "rigors"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no altered mental status",
+        "order": 2,
+        "search_terms": [
+          "no",
+          "altered",
+          "mental"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "heart rate documented if measured",
+        "order": 2,
+        "search_terms": [
+          "heart",
+          "rate",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "respiratory distress",
+        "order": 2,
+        "search_terms": [
+          "respiratory",
+          "distress"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-investigations-2",
+        "group": "investigations",
+        "chip_text": "CBC reviewed if ordered",
+        "order": 2,
+        "search_terms": [
+          "CBC",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "hydration advice documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "hydration",
+          "advice",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "return sooner if symptoms worsen",
+        "order": 2,
+        "search_terms": [
+          "return",
+          "sooner",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "suspected infection source",
+        "order": 3,
+        "search_terms": [
+          "suspected",
+          "infection",
+          "source"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no chest pain",
+        "order": 3,
+        "search_terms": [
+          "no",
+          "chest",
+          "pain"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "respiratory rate documented if measured",
+        "order": 3,
+        "search_terms": [
+          "respiratory",
+          "rate",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "hypotension",
+        "order": 3,
+        "search_terms": [
+          "hypotension"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-investigations-3",
+        "group": "investigations",
+        "chip_text": "CRP reviewed if ordered",
+        "order": 3,
+        "search_terms": [
+          "CRP",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "antipyretic plan documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "antipyretic",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "return if new red flag symptoms develop",
+        "order": 3,
+        "search_terms": [
+          "return",
+          "if",
+          "new"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "duration documented",
+        "order": 4,
+        "search_terms": [
+          "duration",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no neck stiffness",
+        "order": 4,
+        "search_terms": [
+          "no",
+          "neck",
+          "stiffness"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "chest auscultation documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "chest",
+          "auscultation",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "oliguria",
+        "order": 4,
+        "search_terms": [
+          "oliguria"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-investigations-4",
+        "group": "investigations",
+        "chip_text": "chest X-ray reviewed if ordered",
+        "order": 4,
+        "search_terms": [
+          "chest",
+          "X-ray",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "antibiotic plan documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "antibiotic",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "temperature documented",
+        "order": 5,
+        "search_terms": [
+          "temperature",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no urinary symptoms",
+        "order": 5,
+        "search_terms": [
+          "no",
+          "urinary",
+          "symptoms"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "throat examination documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "throat",
+          "examination",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "neck stiffness",
+        "order": 5,
+        "search_terms": [
+          "neck",
+          "stiffness"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-investigations-5",
+        "group": "investigations",
+        "chip_text": "urinalysis reviewed if relevant",
+        "order": 5,
+        "search_terms": [
+          "urinalysis",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "return precautions documented if discussed",
+        "order": 5,
+        "search_terms": [
+          "return",
+          "precautions",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "associated symptoms documented",
+        "order": 6,
+        "search_terms": [
+          "associated",
+          "symptoms",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "general",
+          "appearance",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "non-blanching rash",
+        "order": 6,
+        "search_terms": [
+          "non-blanching",
+          "rash"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-investigations-6",
+        "group": "investigations",
+        "chip_text": "blood cultures documented if taken",
+        "order": 6,
+        "search_terms": [
+          "blood",
+          "cultures",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "referral or escalation documented if clinician decided",
+        "order": 6,
+        "search_terms": [
+          "referral",
+          "or",
+          "escalation"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-fever-suspected-infection-investigations-7",
+        "group": "investigations",
+        "chip_text": "previous records reviewed if available",
+        "order": 7,
+        "search_terms": [
+          "previous",
+          "records",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "urgent-head-injury",
+    "specialty_id": "Emergency / Urgent Care",
+    "chips": [
+      {
+        "chip_id": "urgent-head-injury-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "head injury",
+        "order": 1,
+        "search_terms": [
+          "head",
+          "injury"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no loss of consciousness",
+        "order": 1,
+        "search_terms": [
+          "no",
+          "loss",
+          "of"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "Glasgow Coma Scale documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "Glasgow",
+          "Coma",
+          "Scale"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "GCS less than 15",
+        "order": 1,
+        "search_terms": [
+          "GCS",
+          "less",
+          "than"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-investigations-1",
+        "group": "investigations",
+        "chip_text": "CT head reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "CT",
+          "head",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "head injury advice documented if discussed",
+        "order": 1,
+        "search_terms": [
+          "head",
+          "injury",
+          "advice"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up in 1-2 days",
+        "order": 1,
+        "search_terms": [
+          "follow-up",
+          "in",
+          "1-2"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "headache",
+        "order": 2,
+        "search_terms": [
+          "headache"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no vomiting",
+        "order": 2,
+        "search_terms": [
+          "no",
+          "vomiting"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "pupil examination documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "pupil",
+          "examination",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "focal neurological deficit",
+        "order": 2,
+        "search_terms": [
+          "focal",
+          "neurological",
+          "deficit"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-investigations-2",
+        "group": "investigations",
+        "chip_text": "imaging reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "imaging",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "observation plan documented if clinician decided",
+        "order": 2,
+        "search_terms": [
+          "observation",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "return sooner if symptoms worsen",
+        "order": 2,
+        "search_terms": [
+          "return",
+          "sooner",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "dizziness",
+        "order": 3,
+        "search_terms": [
+          "dizziness"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no amnesia",
+        "order": 3,
+        "search_terms": [
+          "no",
+          "amnesia"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "head inspection documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "head",
+          "inspection",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "suspected skull fracture",
+        "order": 3,
+        "search_terms": [
+          "suspected",
+          "skull",
+          "fracture"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-investigations-3",
+        "group": "investigations",
+        "chip_text": "previous records reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "previous",
+          "records",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "return precautions documented if discussed",
+        "order": 3,
+        "search_terms": [
+          "return",
+          "precautions",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "return if vomiting or worsening headache",
+        "order": 3,
+        "search_terms": [
+          "return",
+          "if",
+          "vomiting"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "mechanism documented",
+        "order": 4,
+        "search_terms": [
+          "mechanism",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no neurological symptoms",
+        "order": 4,
+        "search_terms": [
+          "no",
+          "neurological",
+          "symptoms"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "neurological examination documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "neurological",
+          "examination",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "vomiting post-injury",
+        "order": 4,
+        "search_terms": [
+          "vomiting",
+          "post-injury"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "analgesia plan documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "analgesia",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "neurosurgical follow-up documented if arranged",
+        "order": 4,
+        "search_terms": [
+          "neurosurgical",
+          "follow-up",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "time of injury documented",
+        "order": 5,
+        "search_terms": [
+          "time",
+          "of",
+          "injury"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no anticoagulation medication",
+        "order": 5,
+        "search_terms": [
+          "no",
+          "anticoagulation",
+          "medication"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "neck examination documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "neck",
+          "examination",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "anticoagulation or bleeding disorder",
+        "order": 5,
+        "search_terms": [
+          "anticoagulation",
+          "or",
+          "bleeding"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "referral or escalation documented if clinician decided",
+        "order": 5,
+        "search_terms": [
+          "referral",
+          "or",
+          "escalation"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "loss of consciousness documented if reported",
+        "order": 6,
+        "search_terms": [
+          "loss",
+          "of",
+          "consciousness"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "vital signs documented if measured",
+        "order": 6,
+        "search_terms": [
+          "vital",
+          "signs",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-head-injury-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "severe or worsening headache",
+        "order": 6,
+        "search_terms": [
+          "severe",
+          "or",
+          "worsening"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "urgent-minor-trauma",
+    "specialty_id": "Emergency / Urgent Care",
+    "chips": [
+      {
+        "chip_id": "urgent-minor-trauma-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "minor trauma",
+        "order": 1,
+        "search_terms": [
+          "minor",
+          "trauma"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no loss of consciousness",
+        "order": 1,
+        "search_terms": [
+          "no",
+          "loss",
+          "of"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "inspection documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "inspection",
+          "documented",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "neurovascular compromise",
+        "order": 1,
+        "search_terms": [
+          "neurovascular",
+          "compromise"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-investigations-1",
+        "group": "investigations",
+        "chip_text": "X-ray reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "X-ray",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "injury advice documented if discussed",
+        "order": 1,
+        "search_terms": [
+          "injury",
+          "advice",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up in 1 week if not improving",
+        "order": 1,
+        "search_terms": [
+          "follow-up",
+          "in",
+          "1"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "pain at injury site",
+        "order": 2,
+        "search_terms": [
+          "pain",
+          "at",
+          "injury"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no neurovascular compromise",
+        "order": 2,
+        "search_terms": [
+          "no",
+          "neurovascular",
+          "compromise"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "tenderness documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "tenderness",
+          "documented",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "deformity",
+        "order": 2,
+        "search_terms": [
+          "deformity"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-investigations-2",
+        "group": "investigations",
+        "chip_text": "imaging reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "imaging",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "analgesia plan documented if clinician decided",
+        "order": 2,
+        "search_terms": [
+          "analgesia",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "return sooner if worsening",
+        "order": 2,
+        "search_terms": [
+          "return",
+          "sooner",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "swelling",
+        "order": 3,
+        "search_terms": [
+          "swelling"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no open wound",
+        "order": 3,
+        "search_terms": [
+          "no",
+          "open",
+          "wound"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "swelling documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "swelling",
+          "documented",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "open wound",
+        "order": 3,
+        "search_terms": [
+          "open",
+          "wound"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-investigations-3",
+        "group": "investigations",
+        "chip_text": "previous records reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "previous",
+          "records",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "immobilization or splinting documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "immobilization",
+          "or",
+          "splinting"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "wound check documented if arranged",
+        "order": 3,
+        "search_terms": [
+          "wound",
+          "check",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "bruising",
+        "order": 4,
+        "search_terms": [
+          "bruising"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no deformity",
+        "order": 4,
+        "search_terms": [
+          "no",
+          "deformity"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "bruising documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "bruising",
+          "documented",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "severe uncontrolled pain",
+        "order": 4,
+        "search_terms": [
+          "severe",
+          "uncontrolled",
+          "pain"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 4,
+        "search_terms": [
+          "follow-up",
+          "documented",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "physiotherapy referral documented if arranged",
+        "order": 4,
+        "search_terms": [
+          "physiotherapy",
+          "referral",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "reduced movement",
+        "order": 5,
+        "search_terms": [
+          "reduced",
+          "movement"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no severe pain",
+        "order": 5,
+        "search_terms": [
+          "no",
+          "severe",
+          "pain"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "range of motion documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "range",
+          "of",
+          "motion"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "loss of consciousness if head injury",
+        "order": 5,
+        "search_terms": [
+          "loss",
+          "of",
+          "consciousness"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "return precautions documented if discussed",
+        "order": 5,
+        "search_terms": [
+          "return",
+          "precautions",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "mechanism documented",
+        "order": 6,
+        "search_terms": [
+          "mechanism",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "neurovascular status documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "neurovascular",
+          "status",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-minor-trauma-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "time of injury documented",
+        "order": 7,
+        "search_terms": [
+          "time",
+          "of",
+          "injury"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "urgent-shortness-of-breath",
+    "specialty_id": "Emergency / Urgent Care",
+    "chips": [
+      {
+        "chip_id": "urgent-shortness-of-breath-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "shortness of breath",
+        "order": 1,
+        "search_terms": [
+          "shortness",
+          "of",
+          "breath"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no chest pain",
+        "order": 1,
+        "search_terms": [
+          "no",
+          "chest",
+          "pain"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "respiratory rate documented if measured",
+        "order": 1,
+        "search_terms": [
+          "respiratory",
+          "rate",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "hypoxia",
+        "order": 1,
+        "search_terms": [
+          "hypoxia"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-investigations-1",
+        "group": "investigations",
+        "chip_text": "chest X-ray reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "chest",
+          "X-ray",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "management plan documented if clinician decided",
+        "order": 1,
+        "search_terms": [
+          "management",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up in 1-2 days if not improving",
+        "order": 1,
+        "search_terms": [
+          "follow-up",
+          "in",
+          "1-2"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "dyspnea",
+        "order": 2,
+        "search_terms": [
+          "dyspnea"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no hemoptysis",
+        "order": 2,
+        "search_terms": [
+          "no",
+          "hemoptysis"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "oxygen saturation documented if measured",
+        "order": 2,
+        "search_terms": [
+          "oxygen",
+          "saturation",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "tachypnea",
+        "order": 2,
+        "search_terms": [
+          "tachypnea"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-investigations-2",
+        "group": "investigations",
+        "chip_text": "oxygen saturation documented if measured",
+        "order": 2,
+        "search_terms": [
+          "oxygen",
+          "saturation",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "oxygen therapy documented if given",
+        "order": 2,
+        "search_terms": [
+          "oxygen",
+          "therapy",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "return sooner if symptoms worsen",
+        "order": 2,
+        "search_terms": [
+          "return",
+          "sooner",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "breathing difficulty",
+        "order": 3,
+        "search_terms": [
+          "breathing",
+          "difficulty"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no fever",
+        "order": 3,
+        "search_terms": [
+          "no",
+          "fever"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "chest auscultation documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "chest",
+          "auscultation",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "inability to speak",
+        "order": 3,
+        "search_terms": [
+          "inability",
+          "to",
+          "speak"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-investigations-3",
+        "group": "investigations",
+        "chip_text": "ECG reviewed if performed",
+        "order": 3,
+        "search_terms": [
+          "ECG",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "return precautions documented if discussed",
+        "order": 3,
+        "search_terms": [
+          "return",
+          "precautions",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "respiratory follow-up documented if arranged",
+        "order": 3,
+        "search_terms": [
+          "respiratory",
+          "follow-up",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "onset documented",
+        "order": 4,
+        "search_terms": [
+          "onset",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no recent surgery or immobilization",
+        "order": 4,
+        "search_terms": [
+          "no",
+          "recent",
+          "surgery"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "respiratory effort documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "respiratory",
+          "effort",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "stridor",
+        "order": 4,
+        "search_terms": [
+          "stridor"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-investigations-4",
+        "group": "investigations",
+        "chip_text": "previous records reviewed if available",
+        "order": 4,
+        "search_terms": [
+          "previous",
+          "records",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "referral or escalation documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "referral",
+          "or",
+          "escalation"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "triggers documented",
+        "order": 5,
+        "search_terms": [
+          "triggers",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no known DVT or PE",
+        "order": 5,
+        "search_terms": [
+          "no",
+          "known",
+          "DVT"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "vital signs documented if measured",
+        "order": 5,
+        "search_terms": [
+          "vital",
+          "signs",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "cyanosis",
+        "order": 5,
+        "search_terms": [
+          "cyanosis"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "investigation plan documented if clinician decided",
+        "order": 5,
+        "search_terms": [
+          "investigation",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "associated symptoms documented",
+        "order": 6,
+        "search_terms": [
+          "associated",
+          "symptoms",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "general",
+          "appearance",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-shortness-of-breath-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "unilateral leg swelling",
+        "order": 6,
+        "search_terms": [
+          "unilateral",
+          "leg",
+          "swelling"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "urgent-syncope",
+    "specialty_id": "Emergency / Urgent Care",
+    "chips": [
+      {
+        "chip_id": "urgent-syncope-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "syncope",
+        "order": 1,
+        "search_terms": [
+          "syncope"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no chest pain",
+        "order": 1,
+        "search_terms": [
+          "no",
+          "chest",
+          "pain"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "vital signs documented if measured",
+        "order": 1,
+        "search_terms": [
+          "vital",
+          "signs",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "exertional syncope",
+        "order": 1,
+        "search_terms": [
+          "exertional",
+          "syncope"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-investigations-1",
+        "group": "investigations",
+        "chip_text": "ECG reviewed if performed",
+        "order": 1,
+        "search_terms": [
+          "ECG",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "syncope advice documented if discussed",
+        "order": 1,
+        "search_terms": [
+          "syncope",
+          "advice",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up in 1 week if arranged",
+        "order": 1,
+        "search_terms": [
+          "follow-up",
+          "in",
+          "1"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "fainting",
+        "order": 2,
+        "search_terms": [
+          "fainting"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no palpitations",
+        "order": 2,
+        "search_terms": [
+          "no",
+          "palpitations"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "postural blood pressure documented if measured",
+        "order": 2,
+        "search_terms": [
+          "postural",
+          "blood",
+          "pressure"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "family history of sudden cardiac death",
+        "order": 2,
+        "search_terms": [
+          "family",
+          "history",
+          "of"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-investigations-2",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 2,
+        "search_terms": [
+          "blood",
+          "tests",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "driving advice documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "driving",
+          "advice",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "return sooner if recurrent syncope",
+        "order": 2,
+        "search_terms": [
+          "return",
+          "sooner",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "collapse",
+        "order": 3,
+        "search_terms": [
+          "collapse"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no seizure activity",
+        "order": 3,
+        "search_terms": [
+          "no",
+          "seizure",
+          "activity"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "heart auscultation documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "heart",
+          "auscultation",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "new neurological findings",
+        "order": 3,
+        "search_terms": [
+          "new",
+          "neurological",
+          "findings"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-investigations-3",
+        "group": "investigations",
+        "chip_text": "cardiac monitoring documented if arranged",
+        "order": 3,
+        "search_terms": [
+          "cardiac",
+          "monitoring",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "return precautions documented if discussed",
+        "order": 3,
+        "search_terms": [
+          "return",
+          "precautions",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "cardiology follow-up documented if arranged",
+        "order": 3,
+        "search_terms": [
+          "cardiology",
+          "follow-up",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "pre-syncope",
+        "order": 4,
+        "search_terms": [
+          "pre-syncope"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no head injury",
+        "order": 4,
+        "search_terms": [
+          "no",
+          "head",
+          "injury"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "neurological examination documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "neurological",
+          "examination",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "chest pain with syncope",
+        "order": 4,
+        "search_terms": [
+          "chest",
+          "pain",
+          "with"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-investigations-4",
+        "group": "investigations",
+        "chip_text": "previous records reviewed if available",
+        "order": 4,
+        "search_terms": [
+          "previous",
+          "records",
+          "reviewed"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "referral or escalation documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "referral",
+          "or",
+          "escalation"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "prodrome documented if reported",
+        "order": 5,
+        "search_terms": [
+          "prodrome",
+          "documented",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no loss of bowel or bladder control",
+        "order": 5,
+        "search_terms": [
+          "no",
+          "loss",
+          "of"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "general",
+          "appearance",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "palpitations preceding syncope",
+        "order": 5,
+        "search_terms": [
+          "palpitations",
+          "preceding",
+          "syncope"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "investigation plan documented if clinician decided",
+        "order": 5,
+        "search_terms": [
+          "investigation",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "witness account documented if available",
+        "order": 6,
+        "search_terms": [
+          "witness",
+          "account",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-syncope-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "event count documented",
+        "order": 7,
+        "search_terms": [
+          "event",
+          "count",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "urgent-wound-care-laceration",
+    "specialty_id": "Emergency / Urgent Care",
+    "chips": [
+      {
+        "chip_id": "urgent-wound-care-laceration-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "wound",
+        "order": 1,
+        "search_terms": [
+          "wound"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no neurovascular compromise",
+        "order": 1,
+        "search_terms": [
+          "no",
+          "neurovascular",
+          "compromise"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "wound size documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "wound",
+          "size",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "neurovascular compromise",
+        "order": 1,
+        "search_terms": [
+          "neurovascular",
+          "compromise"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-investigations-1",
+        "group": "investigations",
+        "chip_text": "X-ray reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "X-ray",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "wound closure documented if performed",
+        "order": 1,
+        "search_terms": [
+          "wound",
+          "closure",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "wound check in 3-5 days",
+        "order": 1,
+        "search_terms": [
+          "wound",
+          "check",
+          "in"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "laceration",
+        "order": 2,
+        "search_terms": [
+          "laceration"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no tendon injury suspected",
+        "order": 2,
+        "search_terms": [
+          "no",
+          "tendon",
+          "injury"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "wound depth documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "wound",
+          "depth",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "tendon involvement",
+        "order": 2,
+        "search_terms": [
+          "tendon",
+          "involvement"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-investigations-2",
+        "group": "investigations",
+        "chip_text": "imaging reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "imaging",
+          "reviewed",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "wound care instructions documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "wound",
+          "care",
+          "instructions"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "suture removal documented if arranged",
+        "order": 2,
+        "search_terms": [
+          "suture",
+          "removal",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "cut wound",
+        "order": 3,
+        "search_terms": [
+          "cut",
+          "wound"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no foreign body suspected",
+        "order": 3,
+        "search_terms": [
+          "no",
+          "foreign",
+          "body"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "wound edges documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "wound",
+          "edges",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "deep structure involvement",
+        "order": 3,
+        "search_terms": [
+          "deep",
+          "structure",
+          "involvement"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-investigations-3",
+        "group": "investigations",
+        "chip_text": "foreign body series reviewed if ordered",
+        "order": 3,
+        "search_terms": [
+          "foreign",
+          "body",
+          "series"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "tetanus prophylaxis documented if given",
+        "order": 3,
+        "search_terms": [
+          "tetanus",
+          "prophylaxis",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "return sooner if signs of infection",
+        "order": 3,
+        "search_terms": [
+          "return",
+          "sooner",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "bleeding documented",
+        "order": 4,
+        "search_terms": [
+          "bleeding",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no active bleeding",
+        "order": 4,
+        "search_terms": [
+          "no",
+          "active",
+          "bleeding"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "contamination documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "contamination",
+          "documented",
+          "if"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "retained foreign body",
+        "order": 4,
+        "search_terms": [
+          "retained",
+          "foreign",
+          "body"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "analgesia plan documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "analgesia",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "follow-up PRN",
+        "order": 4,
+        "search_terms": [
+          "follow-up",
+          "PRN"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "pain at wound site",
+        "order": 5,
+        "search_terms": [
+          "pain",
+          "at",
+          "wound"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no wound infection signs",
+        "order": 5,
+        "search_terms": [
+          "no",
+          "wound",
+          "infection"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "surrounding tissue documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "surrounding",
+          "tissue",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "infection signs",
+        "order": 5,
+        "search_terms": [
+          "infection",
+          "signs"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "antibiotic plan documented if clinician decided",
+        "order": 5,
+        "search_terms": [
+          "antibiotic",
+          "plan",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "mechanism documented",
+        "order": 6,
+        "search_terms": [
+          "mechanism",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "neurovascular status documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "neurovascular",
+          "status",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "return precautions documented if discussed",
+        "order": 6,
+        "search_terms": [
+          "return",
+          "precautions",
+          "documented"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      },
+      {
+        "chip_id": "urgent-wound-care-laceration-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "time of injury documented",
+        "order": 7,
+        "search_terms": [
+          "time",
+          "of",
+          "injury"
+        ],
+        "tags": [
+          "urgent_care"
+        ]
+      }
+    ]
   }
 ]
