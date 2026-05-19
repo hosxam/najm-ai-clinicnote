@@ -60,11 +60,21 @@ const disallowedPhrases = [
   'call emergency services',
   'diagnose',
   'clinician impression documented',
-  'as per clinician plan'
+  'as per clinician plan',
+  'urgent admission',
+  'give adrenaline',
+  'start antibiotics',
+  'ct required',
+  'rule out mi',
+  'sepsis pathway',
+  'discharge home',
+  'admit to',
+  'transfer to',
+  'resuscitate'
 ];
 
-const highRiskPositiveSymptomPattern = /\b(suicidal|self-harm|harm to others|vision loss|reduced vision|severe eye pain|chemical exposure|stridor|drooling|facial weakness|mastoid swelling|syncope|heavy bleeding|unstable|peritoneal|saddle anesthesia|respiratory distress|cyanosis|non-blanching|mucosal involvement|facial or lip swelling|skin peeling|immunocompromised)\b/i;
-const expectedPresetCount = 80;
+const highRiskPositiveSymptomPattern = /\b(suicidal|self-harm|harm to others|vision loss|reduced vision|severe eye pain|chemical exposure|stridor|drooling|facial weakness|mastoid swelling|heavy bleeding|unstable|peritoneal|saddle anesthesia|respiratory distress|cyanosis|non-blanching|mucosal involvement|facial or lip swelling|skin peeling|immunocompromised)\b/i;
+const expectedPresetCount = 90;
 const warnAboveTotalChips = 25;
 
 function readJson(filePath) {

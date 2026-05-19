@@ -3880,5 +3880,455 @@
     "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
     "review_required": true,
     "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "urgent-minor-trauma",
+    "preset_name": "Minor trauma quick start",
+    "specialty": "Emergency / Urgent Care",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "minor trauma",
+      "pain at injury site",
+      "swelling",
+      "bruising"
+    ],
+    "prechecked_relevant_negatives": [
+      "no loss of consciousness",
+      "no neurovascular compromise",
+      "no open wound"
+    ],
+    "prechecked_exam_findings": [
+      "inspection documented if assessed",
+      "tenderness documented if assessed",
+      "swelling documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "injury advice documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "follow-up in 1 week if not improving"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Documentation prompts only. No triage or treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "urgent-wound-care-laceration",
+    "preset_name": "Wound care / laceration quick start",
+    "specialty": "Emergency / Urgent Care",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "wound",
+      "laceration",
+      "cut wound",
+      "wound location documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no neurovascular compromise",
+      "no tendon injury suspected",
+      "no foreign body suspected"
+    ],
+    "prechecked_exam_findings": [
+      "wound size documented if assessed",
+      "wound depth documented if assessed",
+      "wound edges documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "wound care advice documented if discussed",
+      "wound closure documented if performed"
+    ],
+    "prechecked_follow_up": [
+      "wound check in 3-5 days"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Documentation prompts only. No triage or treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "urgent-burn-assessment",
+    "preset_name": "Burn assessment quick start",
+    "specialty": "Emergency / Urgent Care",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "burn",
+      "thermal burn",
+      "scald",
+      "burn mechanism documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no airway involvement",
+      "no inhalational injury",
+      "no circumferential burn"
+    ],
+    "prechecked_exam_findings": [
+      "burn depth documented if assessed",
+      "burn size and area documented if assessed",
+      "burn site documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "burn care advice documented if discussed",
+      "dressing plan documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "follow-up documented if arranged"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Documentation prompts only. No triage or treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "urgent-allergic-reaction",
+    "preset_name": "Allergic reaction quick start",
+    "specialty": "Emergency / Urgent Care",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "rash or urticaria",
+      "itching",
+      "swelling"
+    ],
+    "prechecked_relevant_negatives": [
+      "no breathing difficulty reported",
+      "no lip or tongue swelling reported",
+      "no syncope reported"
+    ],
+    "prechecked_exam_findings": [
+      "vital signs documented if measured",
+      "rash documented if assessed",
+      "rash distribution documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "allergy advice documented if discussed",
+      "trigger avoidance documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "follow-up in 1 week if not improving"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Documentation prompts only. No triage or treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "urgent-head-injury",
+    "preset_name": "Head injury quick start",
+    "specialty": "Emergency / Urgent Care",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "head injury",
+      "mechanism documented",
+      "time of injury documented",
+      "loss of consciousness reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no loss of consciousness reported",
+      "no repeated vomiting reported",
+      "no seizure reported"
+    ],
+    "prechecked_exam_findings": [
+      "Glasgow Coma Scale documented if assessed",
+      "pupils documented if assessed",
+      "neurological screen documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "head injury advice documented if discussed",
+      "observation plan documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "follow-up in 1-2 days",
+      "return sooner if symptoms worsen"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Documentation prompts only. No triage or treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "urgent-chest-pain",
+    "preset_name": "Chest pain quick start",
+    "specialty": "Emergency / Urgent Care",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "chest pain",
+      "onset documented",
+      "character documented",
+      "radiation reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no shortness of breath reported",
+      "no syncope reported"
+    ],
+    "prechecked_exam_findings": [
+      "vital signs documented if measured",
+      "cardiovascular exam documented if assessed",
+      "respiratory exam documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "ECG reviewed if performed"
+    ],
+    "prechecked_plan_phrases": [
+      "analgesia plan documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "follow-up arranged if clinician decided"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Documentation prompts only. No triage or treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "urgent-shortness-of-breath",
+    "preset_name": "Shortness of breath quick start",
+    "specialty": "Emergency / Urgent Care",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "shortness of breath",
+      "onset documented",
+      "exertional or rest symptoms documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported",
+      "no syncope reported"
+    ],
+    "prechecked_exam_findings": [
+      "respiratory rate documented if measured",
+      "oxygen saturation documented if measured",
+      "work of breathing documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "chest imaging reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "management plan documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "follow-up in 1-2 days if not improving"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Documentation prompts only. No triage or treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "urgent-abdominal-pain",
+    "preset_name": "Abdominal pain quick start",
+    "specialty": "Emergency / Urgent Care",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "abdominal pain",
+      "location documented",
+      "duration documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no blood in stool reported",
+      "no persistent vomiting reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal tenderness documented if assessed",
+      "guarding or rebound documented if assessed",
+      "bowel sounds documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "urinalysis reviewed if done"
+    ],
+    "prechecked_plan_phrases": [
+      "analgesia plan documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "follow-up in 1-2 days if not improving"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Documentation prompts only. No triage or treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "urgent-syncope",
+    "preset_name": "Syncope quick start",
+    "specialty": "Emergency / Urgent Care",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "syncope or collapse",
+      "prodrome documented",
+      "position documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported",
+      "no focal neurological symptoms reported"
+    ],
+    "prechecked_exam_findings": [
+      "vital signs documented if measured",
+      "orthostatic BP documented if measured",
+      "cardiovascular exam documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "ECG reviewed if performed"
+    ],
+    "prechecked_plan_phrases": [
+      "syncope advice documented if discussed",
+      "return precautions documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "follow-up in 1 week if arranged"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Documentation prompts only. No triage or treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "urgent-fever-suspected-infection",
+    "preset_name": "Fever / Suspected infection quick start",
+    "specialty": "Emergency / Urgent Care",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "fever",
+      "suspected infection documentation",
+      "source symptoms reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no confusion reported",
+      "no neck stiffness reported",
+      "no shortness of breath reported"
+    ],
+    "prechecked_exam_findings": [
+      "temperature documented if measured",
+      "heart rate documented if measured",
+      "respiratory rate documented if measured",
+      "blood pressure documented if measured"
+    ],
+    "prechecked_investigations": [
+      "urinalysis reviewed if done",
+      "blood tests reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "supportive care advice documented if discussed",
+      "hydration advice documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "follow-up in 2-3 days if not improving"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Documentation prompts only. No triage or treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "preset_version": "1.0.0"
   }
 ]
