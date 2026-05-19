@@ -28,7 +28,7 @@
     // Workflow-specific mini-field defs
     miniFieldDefs: {},
 
-    // Autofill chips captured from OPD (read-only, updated on workflow select)
+      // Autofill chips captured from OPD (read-only, updated on workflow select)
     capturedChips: {
       symptoms: [],
       relevant_negatives: [],
@@ -37,6 +37,9 @@
       plan_phrases: [],
       follow_up: []
     },
+
+    // Registry for DOM chip click listener (to avoid duplicate listeners)
+    _chipListenerAttached: false,
 
     // Exam
     examConfirmations: {},
@@ -48,6 +51,89 @@
     impression: '',
     planText: '',
     planConfirmations: {},
+  };
+
+  // ================================================================
+  //  GLOBAL V4 ENCOUNTER STATE (single source of truth for Step 6)
+  // ================================================================
+  window.V4_ENCOUNTER_STATE = {
+    workflowId: '',
+    workflowName: '',
+    specialty: '',
+    selectedChips: {
+      symptoms: [],
+      relevantNegatives: [],
+      examFindings: [],
+      investigations: [],
+      planPhrases: [],
+      followUp: []
+    },
+    customEntries: {
+      symptoms: [],
+      relevantNegatives: [],
+      examFindings: [],
+      investigations: [],
+      planPhrases: [],
+      followUp: []
+    },
+    history: {
+      miniFields: {},
+      editedDraft: ''
+    },
+    exam: {
+      selectedPrompts: []
+    },
+    investigations: {
+      selectedOptions: []
+    },
+    assessment: {
+      impression: ''
+    },
+    plan: {
+      doctorPlan: '',
+      selectedOptions: []
+    }
+  };
+
+  // ================================================================
+  //  CHIP GROUP MAPPING
+  // ================================================================
+  var CHIP_GROUP_MAP = {
+    'symptoms': 'symptoms',
+    'presenting': 'symptoms',
+    'relevant_negatives': 'relevantNegatives',
+    'negatives': 'relevantNegatives',
+    'red_flags': 'relevantNegatives',
+    'exam_findings': 'examFindings',
+    'exam': 'examFindings',
+    'findings': 'examFindings',
+    'investigations': 'investigations',
+    'labs': 'investigations',
+    'plan_phrases': 'planPhrases',
+    'plan': 'planPhrases',
+    'management': 'planPhrases',
+    'disposition': 'planPhrases',
+    'follow_up': 'followUp',
+    'follow': 'followUp',
+    'fup': 'followUp'
+  };
+
+  var CHIP_V4_TO_OUTPUT = {
+    'symptoms': 'symptoms',
+    'relevantNegatives': 'relevant_negatives',
+    'examFindings': 'exam_findings',
+    'investigations': 'investigations',
+    'planPhrases': 'plan_phrases',
+    'followUp': 'follow_up'
+  };
+
+  var CHIP_OUTPUT_TO_V4 = {
+    'symptoms': 'symptoms',
+    'relevant_negatives': 'relevantNegatives',
+    'exam_findings': 'examFindings',
+    'investigations': 'investigations',
+    'plan_phrases': 'planPhrases',
+    'follow_up': 'followUp'
   };
 
   var currentStep = 1;
@@ -87,6 +173,244 @@
     'peds-fever': 'Pediatrics',
     'obgyn-antenatal-followup': 'OB/GYN'
   };
+
+  // ================================================================
+  //  V4 CHIP LOADING (reads from NAJM_CLINICAL_DATA + speed presets)
+  // ================================================================
+  function v4LoadSpeedPresets() {
+    try {
+      if (window.V4_SPEED_PRESETS) return window.V4_SPEED_PRESETS;
+      var presets = {};
+
+      // First check if v2 code already loaded presets by workflow_id
+      if (window.CLINICNOTE_SPEED_PRESETS_BY_ID) {
+        for (var wid in window.CLINICNOTE_SPEED_PRESETS_BY_ID) {
+          presets[wid] = window.CLINICNOTE_SPEED_PRESETS_BY_ID[wid];
+        }
+      }
+
+      // Fallback: check NAJM_CLINICAL_DATA.speedPresets
+      var data = window.NAJM_CLINICAL_DATA;
+      if (data && data.speedPresets) {
+        for (var k in data.speedPresets) {
+          var entry = data.speedPresets[k];
+          if (entry && entry.workflow_id) presets[entry.workflow_id] = entry;
+        }
+      }
+
+      // Also check CLINICNOTE_SPEED_PRESETS (array-like from fetch)
+      if (window.CLINICNOTE_SPEED_PRESETS) {
+        var sp = window.CLINICNOTE_SPEED_PRESETS;
+        for (var sk in sp) {
+          var se = sp[sk];
+          if (se && se.workflow_id && !presets[se.workflow_id]) presets[se.workflow_id] = se;
+        }
+      }
+
+      window.V4_SPEED_PRESETS = presets;
+      return presets;
+    } catch(e) { return null; }
+  }
+
+  function v4LoadChipsForWorkflow(wfId) {
+    var chips = { symptoms:[], relevantNegatives:[], examFindings:[], investigations:[], planPhrases:[], followUp:[] };
+    try {
+      var data = window.NAJM_CLINICAL_DATA;
+      if (!data || !data.chipsByWorkflow || !data.chipsByWorkflow[wfId]) return chips;
+
+      var chipData = data.chipsByWorkflow[wfId];
+      // Map data chip group names to V4 chip group names
+      var dataToV4 = {
+        'symptoms': 'symptoms',
+        'relevant_negatives': 'relevantNegatives',
+        'exam_findings': 'examFindings',
+        'investigations': 'investigations',
+        'plan_phrases': 'planPhrases',
+        'follow_up': 'followUp'
+      };
+
+      for (var group in chipData) {
+        var v4Group = dataToV4[group];
+        if (!v4Group) continue;
+        var items = chipData[group] || [];
+        for (var i = 0; i < items.length; i++) {
+          var item = items[i];
+          var text = item.chip_text || (typeof item === 'string' ? item : '');
+          if (text) chips[v4Group].push(text);
+        }
+      }
+
+      // Apply Autofill: determine which chips are pre-selected by the speed preset
+      var presets = v4LoadSpeedPresets();
+      var preset = presets ? presets[wfId] : null;
+      var autofillEnabled = typeof v2isSpeedPresetMode === 'function' ? v2isSpeedPresetMode() : true;
+
+      if (preset && autofillEnabled) {
+        var presetToV4 = {
+          'prechecked_symptoms': 'symptoms',
+          'prechecked_relevant_negatives': 'relevantNegatives',
+          'prechecked_exam_findings': 'examFindings',
+          'prechecked_investigations': 'investigations',
+          'prechecked_plan_phrases': 'planPhrases',
+          'prechecked_follow_up': 'followUp'
+        };
+        for (var pf in presetToV4) {
+          var g = presetToV4[pf];
+          if (!preset[pf]) continue;
+          // Filter allChips to only those in the preset
+          var presetTexts = {};
+          for (var pi = 0; pi < preset[pf].length; pi++) {
+            presetTexts[preset[pf][pi].toLowerCase().trim()] = true;
+          }
+          chips[g] = chips[g].filter(function(ct) {
+            return presetTexts[ct.toLowerCase().trim()];
+          });
+        }
+      } else {
+        // If no preset or autofill off, start with empty selection
+        for (var gg in chips) chips[gg] = [];
+      }
+    } catch(e) { /* silent fail */ }
+    return chips;
+  }
+
+  // ================================================================
+  //  SYNC V4 ENCOUNTER STATE
+  // ================================================================
+  function syncV4EncounterState() {
+    var es = window.V4_ENCOUNTER_STATE;
+    if (!es) return;
+
+    // Sync workflow info
+    es.workflowId = state.selectedWorkflowId || '';
+    es.workflowName = state.selectedWorkflowDisplay || '';
+    es.specialty = state.selectedWorkflowSpecialty || '';
+
+    // Sync chips from DOM (captures live user changes to chips)
+    var domChips = captureOPDChips();
+    // Map from v4 output group names (captureOPDChips output) to V4_ENCOUNTER_STATE group names
+    var outToEs = {
+      'symptoms': 'symptoms',
+      'relevant_negatives': 'relevantNegatives',
+      'exam_findings': 'examFindings',
+      'investigations': 'investigations',
+      'plan_phrases': 'planPhrases',
+      'follow_up': 'followUp'
+    };
+    for (var og in domChips) {
+      var eg = outToEs[og];
+      if (eg) es.selectedChips[eg] = domChips[og];
+    }
+
+    // Sync custom entries (captured separately from DOM)
+    es.customEntries = { symptoms:[], relevantNegatives:[], examFindings:[], investigations:[], planPhrases:[], followUp:[] };
+    try {
+      var area = document.getElementById('v2ChipGroups');
+      if (area) {
+        var customEls = area.querySelectorAll('[data-v2-custom-entry="true"].chip.selected');
+        for (var ci = 0; ci < customEls.length; ci++) {
+          var val = customEls[ci].getAttribute('data-value') || customEls[ci].textContent || '';
+          val = val.trim();
+          if (val) es.customEntries.symptoms.push(val);
+        }
+      }
+    } catch(e) {}
+
+    // Sync history
+    es.history.miniFields = {};
+    for (var mk in state.miniFieldDefs) {
+      es.history.miniFields[mk] = state.miniFieldDefs[mk].value || '';
+    }
+    es.history.editedDraft = state.historyDraft || '';
+
+    // Sync exam
+    es.exam.selectedPrompts = [];
+    for (var ek in state.examConfirmations) {
+      if (state.examConfirmations[ek]) es.exam.selectedPrompts.push(ek);
+    }
+
+    // Sync investigations
+    es.investigations.selectedOptions = [];
+    for (var ik in state.investigationConfirmations) {
+      if (state.investigationConfirmations[ik]) es.investigations.selectedOptions.push(ik);
+    }
+
+    // Sync assessment
+    es.assessment.impression = state.impression || '';
+
+    // Sync plan
+    es.plan.doctorPlan = state.planText || '';
+    es.plan.selectedOptions = [];
+    for (var pk in state.planConfirmations) {
+      if (state.planConfirmations[pk]) es.plan.selectedOptions.push(pk);
+    }
+  }
+
+  // ================================================================
+  //  CHIP CLICK LISTENER (auto-refresh Step 1 badge when chips change)
+  // ================================================================
+  function attachChipClickListener() {
+    if (state._chipListenerAttached) return;
+    var area = document.getElementById('v2ChipGroups');
+    if (!area) {
+      setTimeout(attachChipClickListener, 300);
+      return;
+    }
+    area.addEventListener('click', function() {
+      // Re-capture chips from DOM on any chip click
+      state.capturedChips = captureOPDChips();
+      // If Step 1 is visible, update the badge
+      if (currentStep === 1) {
+        renderStep(1);
+      }
+      updateSidebar();
+    });
+    // Also listen for custom entry additions
+    var customBtns = document.querySelectorAll('[onclick*="addCustom"]');
+    for (var i = 0; i < customBtns.length; i++) {
+      customBtns[i].addEventListener('click', function() {
+        setTimeout(function() {
+          state.capturedChips = captureOPDChips();
+          if (currentStep === 1) renderStep(1);
+          updateSidebar();
+        }, 100);
+      });
+    }
+    state._chipListenerAttached = true;
+  }
+
+  // ================================================================
+  //  TRIGGER SPEED MODE (loads matching specialty+visit so chips appear visually)
+  // ================================================================
+  function v4TriggerSpeedModeForWorkflow(wfId) {
+    try {
+      var lib = window.ACTIVE_VISIT_LIBRARY;
+      if (!lib) return;
+
+      for (var sk in lib) {
+        for (var vtk in lib[sk]) {
+          var meta = lib[sk][vtk]._v2meta;
+          if (meta && meta.workflow_id === wfId) {
+            var specSel = document.getElementById('speedSpecialty');
+            var vtSel = document.getElementById('speedVisitType');
+            if (!specSel || !vtSel) return;
+
+            specSel.value = sk;
+            // Trigger Speed Mode chain: specialty -> visit type -> chips -> autofill
+            setTimeout(function() {
+              if (typeof loadSpeedSpecialty === 'function') loadSpeedSpecialty();
+              setTimeout(function() {
+                vtSel.value = vtk;
+                if (typeof loadSpeedVisit === 'function') loadSpeedVisit();
+                // v2scheduleSpeedPresetApply will run automatically inside loadSpeedVisit
+              }, 100);
+            }, 80);
+            return;
+          }
+        }
+      }
+    } catch(e) { /* Speed Mode not available, chips will still work from data */ }
+  }
 
   // ================================================================
   //  DATA LOADING
@@ -363,15 +687,28 @@
       if (state.selectedWorkflowSafety) h += '<div class="v4-safety-box">' + esc(state.selectedWorkflowSafety) + '</div>';
       h += '</div>';
 
-      // Show captured chips as a simple single-line badge (not an output)
+      // Show captured chips as a live summary with group counts
+      var cc = state.capturedChips;
       var totalChips = 0;
-      for (var g in state.capturedChips) totalChips += state.capturedChips[g].length;
+      var groupLabels = {symptoms:'Symptoms', relevant_negatives:'Relevant negatives', exam_findings:'Exam findings', investigations:'Investigations', plan_phrases:'Plan phrases', follow_up:'Follow-up'};
+      var chipGroups = ['symptoms', 'relevant_negatives', 'exam_findings', 'investigations', 'plan_phrases', 'follow_up'];
+      for (var gi = 0; gi < chipGroups.length; gi++) {
+        totalChips += (cc[chipGroups[gi]] || []).length;
+      }
       h += '<div class="v4-chip-badge-wrap">';
       if (totalChips > 0) {
-        h += '<span class="v4-chip-badge">' + totalChips + ' chip(s) from Autofill</span>';
+        h += '<div class="v4-captured-summary"><span class="v4-captured-heading">Captured for final draft:</span>';
+        for (var gi2 = 0; gi2 < chipGroups.length; gi2++) {
+          var gName = chipGroups[gi2];
+          var count = (cc[gName] || []).length;
+          if (count > 0) {
+            h += '<div class="v4-captured-line"><span class="v4-captured-label">' + groupLabels[gName] + ':</span> <span class="v4-captured-count">' + count + '</span></div>';
+          }
+        }
+        h += '</div>';
         h += '<button class="v4-chip-refresh" onclick="window._v4RefreshChips()" title="Re-capture chips from OPD">&#8635;</button>';
       } else {
-        h += '<span class="v4-chip-badge v4-chip-badge-empty">No chips captured</span>';
+        h += '<span class="v4-chip-badge v4-chip-badge-empty">No chips captured yet. Select or keep Autofill chips to include them in the final draft.</span>';
         h += '<button class="v4-chip-refresh" onclick="window._v4RefreshChips()" title="Capture chips from OPD">&#8635;</button>';
       }
       h += '</div>';
@@ -968,14 +1305,24 @@
     state.impression = '';
     state.planText = '';
 
-    // Capture chips
-    state.capturedChips = captureOPDChips();
+    // Capture chips from data source (bypasses DOM, works even if Speed Mode not loaded)
+    state.capturedChips = v4LoadChipsForWorkflow(wfId);
+
+    // Also trigger Speed Mode chip rendering for visual display (non-blocking)
+    v4TriggerSpeedModeForWorkflow(wfId);
+
+    // Sync to global state
+    syncV4EncounterState();
+
+    // Attach chip click listener for live updates
+    attachChipClickListener();
 
     renderStep(1);
     updateSidebar();
   };
 
   window._v4RefreshChips = function() {
+    // Read from DOM to capture live user changes
     state.capturedChips = captureOPDChips();
     renderStep(1);
     updateSidebar();
@@ -1076,6 +1423,8 @@
 
   // Output
   window._v4Generate = function() {
+    // Sync all state to V4_ENCOUNTER_STATE before generating output
+    syncV4EncounterState();
     var text = document.getElementById('v4OutputText');
     if (!text) return;
     var tabEl = document.querySelector('.v4-out-tab.active');
@@ -1181,6 +1530,8 @@
 
     loadV4Data().then(function() {
       app.removeChild(loading);
+      // Attach chip listener for live state sync
+      attachChipClickListener();
       renderApp();
     }).catch(function(err) {
       loading.textContent = 'Failed to load V4 data: ' + (err.message || 'unknown error');
@@ -1232,9 +1583,14 @@
 .v4-wf-info-row{display:flex;gap:8px;padding:3px 0;font-size:13px}
 .v4-wf-info-label{font-weight:600;color:var(--gray-600);min-width:80px}
 .v4-wf-info-val{color:var(--gray-800)}
-.v4-chip-badge-wrap{display:flex;align-items:center;gap:8px;margin-top:8px;padding:6px 0}
+.v4-chip-badge-wrap{display:flex;align-items:flex-start;gap:8px;margin-top:8px;padding:6px 0}
 .v4-chip-badge{display:inline-block;padding:4px 10px;border-radius:12px;background:var(--primary-bg);color:var(--primary);font-size:11px;font-weight:600;border:1px solid var(--primary-border)}
 .v4-chip-badge-empty{background:var(--gray-50);color:var(--gray-400);border-color:var(--gray-200)}
+.v4-captured-summary{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;padding:10px 14px;font-size:11px;line-height:1.6;flex:1}
+.v4-captured-heading{font-weight:700;color:var(--gray-700);display:block;margin-bottom:4px;font-size:12px}
+.v4-captured-line{display:flex;gap:6px;padding:1px 0}
+.v4-captured-label{color:var(--gray-500);min-width:100px}
+.v4-captured-count{font-weight:600;color:var(--gray-700)}
 .v4-chip-refresh{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:50%;border:1px solid var(--gray-200);background:#fff;cursor:pointer;font-size:13px;line-height:1;color:var(--gray-500);padding:0}
 .v4-chip-refresh:hover{background:var(--gray-50);color:var(--gray-700)}
 .v4-speed-output-hidden{display:none!important}
