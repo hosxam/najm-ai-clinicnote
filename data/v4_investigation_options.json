@@ -196,7 +196,7 @@
             "option_text": "Urine dip reviewed if done.",
             "required_level": "conditional",
             "source_status": "draft",
-            "note_text": "Urine dip reviewed if done."
+            "note_text": "Urine dip reviewed."
           },
           {
             "option_id": "cbc_reviewed",
@@ -238,7 +238,7 @@
             "option_text": "Urine dip reviewed if done.",
             "required_level": "conditional",
             "source_status": "draft",
-            "note_text": "Urine dip reviewed if done."
+            "note_text": "Urine dip reviewed."
           },
           {
             "option_id": "bp_trend_reviewed",
