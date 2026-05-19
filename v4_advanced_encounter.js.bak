@@ -809,383 +809,464 @@
   var _currentTab = 'adv-emr';
   var _outputGenerated = false;
 
-  // ================================================================
-  //  V4 NOTE MODEL (single structured note model, replaces regex pipeline)
-  // ================================================================
-
-  var V4_FOOTER = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
-
-  function buildV4NoteModel(rawState) {
-    return {
-      subjective: {
-        chiefConcern: '',
-        duration: '',
-        symptoms: [],
-        associatedSymptoms: [],
-        relevantNegatives: []
-      },
-      objective: {
-        examFindings: [],
-        investigations: []
-      },
-      assessment: {
-        impression: ''
-      },
-      plan: {
-        advice: [],
-        safetyNetting: [],
-        followUp: [],
-        referrals: [],
-        investigations: []
-      }
-    };
+  // --- Internal helpers ---
+  function _v4norm(t) { return String(t).toLowerCase().replace(/\.+$/, '').trim(); }
+  function _v4section(label, content) {
+    if (!content || content === '[not documented]' || content === '') return '';
+    return label + ':\n' + content + '\n\n';
   }
-
-
-
-  // Clean final output phrases: strip prompt/template wording
-  // Apply cleaner to an array of lines
-  // Polish output lines: sentence case, punctuation, natural phrasing
-  // Step 1: Collect fresh state from V4_ENCOUNTER_STATE
-  // Step 2: Normalize
-  // Step 3: Route content to output sections
-
-
-  function transformPromptToNoteText(text) {
-    if (!text) return '';
-    text = String(text).trim();
-    var omitPhrases = /^(temperature|heart rate|pulse|respiratory rate|oxygen saturation|blood pressure|weight( and bmi)?|general appearance|gait|hydrat(ion| status|ion status)|oropharyngeal examination|cervical lymphadenopathy|chest (wall examination|auscultation)|meningeal signs|tonsillar appearance|fundal height|fetal (heart auscultation|movement)|lower limb oedema|throat examination|otoscopy|respiratory effort|abdominal examination|skin rash|non-blanching rash|capillary refill|urine output context|lumbar range of motion|spinal tenderness|straight leg raise|crossed straight leg raise|lower limb (power|sensation|reflexes)|saddle sensation|neurovascular status|foot inspection|peripheral pulses|monofilament sensation|injection sites|parent or guardian report context|general appearance and activity level)$/i;
-    text = text.replace(/\s*documented\s+if\s+(assessed|measured|discussed|clinician\s+decided|arranged|relevant(\s+and\s+assessed)?)\s*\.?\s*$/i, '');
-    text = text.replace(/\s*recorded\s+if\s+measured\s*\.?\s*$/i, '');
-    text = text.replace(/\s*reviewed\s+if\s+(available|ordered|relevant|performed)\s*\.?\s*$/i, '');
-    text = text.replace(/\s*documented\s+only\s+if\s+clinician\s+(decided|did so|arranged)\s*\.?\s*$/i, '');
-    text = text.replace(/\s*documented\s+if\s+(the\s+)?clinician\s+(decided|did so|arranged)\s*\.?\s*$/i, '');
-    text = text.replace(/\s*reviewed\s+or\s+discussed\s*(documented\s+if\s+clinician\s+did\s+so)?\s*\.?\s*$/i, '');
-    text = text.replace(/^Rapid test result$/i, 'Rapid test');
-    text = text.replace(/^(Cbc|Crp|Chest imaging|HbA1c|Renal function|Lipid profile|Urine acr|Home glucose log|Previous imaging|X-ray|Mri report|Inflammatory markers|Urinalysis|Cultures|Blood pressure trend|Antenatal labs|Glucose screening result|Ultrasound report|Urine dipstick)$/i, '$1 reviewed');
-    text = text.replace(/^supportive care( advice| discussed)?$/i, 'Supportive care advised');
-    text = text.replace(/^return precautions$/i, 'Return precautions discussed');
-    text = text.replace(/^follow-up arranged$/i, 'Follow-up arranged');
-    text = text.replace(/^hydration and rest advice$/i, 'Hydration and rest advised');
-    text = text.replace(/^lifestyle advice$/i, 'Lifestyle advice discussed');
-    text = text.replace(/^activity modification$/i, 'Activity modification discussed');
-    text = text.replace(/^red flags explained$/i, 'Red flags explained');
-    text = text.replace(/^parent or guardian advice$/i, 'Parent or guardian advice discussed');
-    text = text.replace(/^hydration and feeding advice$/i, 'Hydration and feeding advised');
-    text = text.replace(/^antenatal counseling$/i, 'Antenatal counseling discussed');
-    text = text.replace(/^warning symptoms$/i, 'Warning symptoms discussed');
-    if (omitPhrases.test(text)) return '';
-    text = text.charAt(0).toUpperCase() + text.slice(1);
-    if (!/[.?!]$/.test(text)) text += '.';
-    return text;
-  }
-
-  function normalizeV4SelectionsToNoteModel(state$) {
-    var model = buildV4NoteModel(state$);
-    var ges = window.V4_ENCOUNTER_STATE;
-    var hf = ges.history.fields || state$.historyFields || {};
-    model.subjective.symptoms = (ges.selectedChips.symptoms || []).map(function(s) { return s.toLowerCase(); });
-    model.subjective.associatedSymptoms = (ges.customEntries.symptoms || []).slice();
-    for (var k in hf) {
-      var v = (hf[k] || '').trim();
-      if (!v) continue;
-      var kl = k.toLowerCase();
-      if (kl.indexOf('duration') >= 0 && kl.indexOf('duration') < 5) {
-        model.subjective.duration = v;
-      } else if (kl.indexOf('negatives') >= 0) {
-        var negParts = v.split(/[,;]+/).map(function(s) { return s.trim().toLowerCase(); }).filter(Boolean);
-        for (var ni = 0; ni < negParts.length; ni++) {
-          if (model.subjective.relevantNegatives.indexOf(negParts[ni]) < 0) model.subjective.relevantNegatives.push(negParts[ni]);
+  function _v4collectPlanOpts() {
+    var opts = [];
+    var plan = getPlanOptions(state.selectedWorkflowId);
+    if (plan && plan.plan_option_groups) {
+      for (var pgi = 0; pgi < plan.plan_option_groups.length; pgi++) {
+        var pg = plan.plan_option_groups[pgi];
+        for (var poi = 0; poi < pg.options.length; poi++) {
+          if (state.planConfirmations[pg.options[poi].option_id]) opts.push(pg.options[poi]);
         }
-      } else if (kl.indexOf('associated') >= 0 || kl.indexOf('symptoms_if') >= 0) {
-        model.subjective.associatedSymptoms.push(v);
-      } else if (kl.indexOf('additional') >= 0) {
-      } else if (!model.subjective.chiefConcern) {
-        model.subjective.chiefConcern = v;
       }
     }
-    var negs = (ges.selectedChips.relevant_negatives || []).concat(ges.customEntries.relevant_negatives || []);
-    for (var ni2 = 0; ni2 < negs.length; ni2++) {
-      var n = negs[ni2].toLowerCase().trim();
-      if (n && model.subjective.relevantNegatives.indexOf(n) < 0) model.subjective.relevantNegatives.push(n);
-    }
-    var examChips = (ges.selectedChips.exam_findings || []).concat(ges.customEntries.exam_findings || []);
-    for (var ei = 0; ei < examChips.length; ei++) {
-      var cleaned = transformPromptToNoteText(examChips[ei]);
-      if (cleaned) model.objective.examFindings.push(cleaned);
-    }
-    var exam = getExamDetails(state$.workflowId);
+    return opts;
+  }
+  function _v4collectExamItems() {
+    var items = [];
+    var exam = getExamDetails(state.selectedWorkflowId);
     if (exam && exam.exam_groups) {
       for (var gi = 0; gi < exam.exam_groups.length; gi++) {
         var group = exam.exam_groups[gi];
         for (var pi = 0; pi < group.prompts.length; pi++) {
           var key = group.group_id + '::' + group.prompts[pi].prompt_id;
-          if (state$.examConfirmations[key]) {
-            var cleaned2 = transformPromptToNoteText(group.prompts[pi].prompt_text);
-            if (cleaned2) model.objective.examFindings.push(cleaned2);
-          }
+          if (state.examConfirmations[key]) items.push(group.prompts[pi].prompt_text);
         }
       }
     }
-    var examSeen = {};
-    model.objective.examFindings = model.objective.examFindings.filter(function(f) {
-      var key = f.toLowerCase().trim();
-      if (!key || examSeen[key]) return false;
-      examSeen[key] = true;
-      return true;
-    });
-    var invChips = (ges.selectedChips.investigations || []).concat(ges.customEntries.investigations || []);
-    for (var ii = 0; ii < invChips.length; ii++) {
-      var cleanedInv = transformPromptToNoteText(invChips[ii]);
-      if (cleanedInv) model.objective.investigations.push(cleanedInv);
-    }
-    var inv = getInvestigationOptions(state$.workflowId);
+    return items;
+  }
+  function _v4collectInvItems() {
+    var items = [];
+    var inv = getInvestigationOptions(state.selectedWorkflowId);
     if (inv && inv.investigation_groups) {
       for (var ivi = 0; ivi < inv.investigation_groups.length; ivi++) {
         var ig = inv.investigation_groups[ivi];
         for (var oi = 0; oi < ig.options.length; oi++) {
           var ikey = ig.group_id + '::' + ig.options[oi].option_id;
-          if (state$.investigationConfirmations[ikey]) {
-            var cleanedInv2 = transformPromptToNoteText(ig.options[oi].option_text);
-            if (cleanedInv2) model.objective.investigations.push(cleanedInv2);
-          }
+          if (state.investigationConfirmations[ikey]) items.push(ig.options[oi].option_text);
         }
       }
     }
-    var invSeen = {};
-    model.objective.investigations = model.objective.investigations.filter(function(f) {
-      var key = f.toLowerCase().trim();
-      if (!key || invSeen[key]) return false;
-      invSeen[key] = true;
-      return true;
-    });
-    model.assessment.impression = state$.impression || '[not documented]';
-    var planChips = (ges.selectedChips.plan_phrases || []).concat(ges.customEntries.plan_phrases || []);
-    for (var pci = 0; pci < planChips.length; pci++) {
-      var cleanedPlan = transformPromptToNoteText(planChips[pci]);
-      if (cleanedPlan) model.plan.advice.push(cleanedPlan);
-    }
-    var planOpts = getPlanOptions(state$.workflowId);
-    if (planOpts && planOpts.plan_option_groups) {
-      for (var pgi = 0; pgi < planOpts.plan_option_groups.length; pgi++) {
-        var pg = planOpts.plan_option_groups[pgi];
-        for (var poi = 0; poi < pg.options.length; poi++) {
-          var opt = pg.options[poi];
-          if (state$.planConfirmations[opt.option_id]) {
-            var cleanedOpt = transformPromptToNoteText(opt.option_text);
-            if (!cleanedOpt) continue;
-            var cat = (opt.option_category || '').toLowerCase();
-            if (cat === 'follow_up') {
-              model.plan.followUp.push(cleanedOpt);
-            } else if (cat === 'safety_netting') {
-              model.plan.safetyNetting.push(cleanedOpt);
-            } else if (cat.indexOf('referral') >= 0) {
-              model.plan.referrals.push(cleanedOpt);
-            } else if (cat.indexOf('investigation') >= 0 || cat.indexOf('diagnostic') >= 0) {
-              model.plan.investigations.push(cleanedOpt);
-            } else {
-              model.plan.advice.push(cleanedOpt);
-            }
-          }
-        }
-      }
-    }
-    if (state$.planText) {
-      model.plan.advice.push(state$.planText);
-    }
-    var fupChips = (ges.selectedChips.follow_up || []).concat(ges.customEntries.follow_up || []);
-    for (var fci = 0; fci < fupChips.length; fci++) {
-      var cleanedFup = transformPromptToNoteText(fupChips[fci]);
-      if (cleanedFup) model.plan.followUp.push(cleanedFup);
-    }
-    var planAdviceSeen = {};
-    model.plan.advice = model.plan.advice.filter(function(a) {
-      var key = a.toLowerCase().trim();
-      if (!key || planAdviceSeen[key]) return false;
-      planAdviceSeen[key] = true;
-      return true;
-    });
-    return model;
+    return items;
+  }
+  function _v4cleanText(text) {
+    if (!text) return '';
+    return text
+      .replace(/discussed as per clinician plan/gi, '')
+      .replace(/as per clinician plan/gi, '')
+      .replace(/clinician impression documented/gi, '')
+      .replace(/per clinician plan/gi, '')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
   }
 
-
-  // ================================================================
-  //  RENDERERS
-  // ================================================================
-
-  function collectRawState() {
-    var ges = window.V4_ENCOUNTER_STATE;
-    return {
-      workflowId: state.selectedWorkflowId,
-      workflowName: state.selectedWorkflowDisplay,
-      chips: {
-        symptoms: (ges.selectedChips.symptoms || []).slice(),
-        relevant_negatives: (ges.selectedChips.relevant_negatives || []).slice(),
-        exam_findings: (ges.selectedChips.exam_findings || []).slice(),
-        investigations: (ges.selectedChips.investigations || []).slice(),
-        plan_phrases: (ges.selectedChips.plan_phrases || []).slice(),
-        follow_up: (ges.selectedChips.follow_up || []).slice()
-      },
-      customEntries: {
-        symptoms: (ges.customEntries.symptoms || []).slice(),
-        relevant_negatives: (ges.customEntries.relevant_negatives || []).slice(),
-        exam_findings: (ges.customEntries.exam_findings || []).slice(),
-        investigations: (ges.customEntries.investigations || []).slice(),
-        plan_phrases: (ges.customEntries.plan_phrases || []).slice(),
-        follow_up: (ges.customEntries.follow_up || []).slice()
-      },
-      historyFields: ges.history.fields || {},
-      examConfirmations: state.examConfirmations || {},
-      investigationConfirmations: state.investigationConfirmations || {},
-      impression: state.impression || '',
-      planText: state.planText || '',
-      planConfirmations: state.planConfirmations || {}
-    };
-  }
-
-  function renderSubjective(model) {
-    var s = model.subjective;
-    var parts = [];
-    var allSymptoms = s.symptoms.concat(s.associatedSymptoms);
-    if (allSymptoms.length > 0) {
-      var list = allSymptoms.reduce(function(acc, s, i) {
-        if (i === 0) return s;
-        if (i === allSymptoms.length - 1) return acc + ', and ' + s;
-        return acc + ', ' + s;
-      }, '');
-      if (s.duration) {
-        var dm = s.duration.match(/(\d+)\s*(day|week|month)s?/i);
-        if (dm) {
-          parts.push('Patient presents with a ' + dm[1] + '-' + dm[2].toLowerCase() + ' history of ' + list + '.');
-        } else {
-          parts.push('Patient presents with ' + list + ' for ' + s.duration + '.');
-        }
-      } else {
-        parts.push('Patient presents with ' + list + '.');
-      }
-    } else if (s.chiefConcern) {
-      var cc = s.chiefConcern.charAt(0).toLowerCase() + s.chiefConcern.slice(1);
-      parts.push('Patient presents with ' + cc + (s.duration ? ' for ' + s.duration : '') + '.');
+  // Clean final output phrases: strip prompt/template wording
+  function cleanV4OutputPhrase(text) {
+    if (!text) return '';
+    text = String(text).trim();
+    // Remove "Status: " prefix (anywhere in text, not just start)
+    text = text.replace(/Status:\s*/gi, '');
+    text = text.replace(/^Status:\s*/i, '');
+    // Strip "documented if X" suffixes - also mid-text (before ; separator)
+    function stripSuffix(pattern, str) {
+      return str.replace(new RegExp(pattern.source, 'gi'), '');
     }
-    if (s.relevantNegatives.length > 0) {
-      var noPeriodNegs = s.relevantNegatives.map(function(n) { return n.replace(/\.\s*$/, ''); });
-      parts.push('Relevant negatives include ' + noPeriodNegs.join(', ') + '.');
-    }
-    return parts.join(' ') || '[not documented]';
+    text = text.replace(/\s*documented\s+if\s+assessed\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+if\s+measured\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*recorded\s+if\s+measured\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+if\s+discussed\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+if\s+clinician\s+decided\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+if\s+arranged\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+if\s+relevant(\s+and\s+assessed)?\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+only\s+if\s+clinician\s+(decided|did so|arranged)\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+if\s+(the\s+)?clinician\s+(decided|did so|arranged)\s*\.?\s*(?=;|$)/gi, '');
+    // Strip "reviewed if X" suffixes - mid-text too
+    text = text.replace(/\s*reviewed\s+if\s+(available|ordered|relevant|performed)\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*reviewed\s+or\s+discussed\s+(documented\s+if\s+clinician\s+did\s+so)?\s*\.?\s*(?=;|$)/gi, '');
+    // Clean up leftover semicolons and spaces
+    text = text.replace(/\s*;\s*/g, '; ');
+    text = text.replace(/^;\s*/, '');
+    text = text.replace(/\s*;;\s*/g, '; ');
+    text = text.replace(/[,;]+\s*$/, '').trim();
+    text = text.replace(/\s{2,}/g, ' ').trim();
+    // Normalize "Rapid test result" → "Rapid test"
+    text = text.replace(/^Rapid test result$/i, 'Rapid test');
+    // Omit bare organ/system names that have no actual finding
+    var bareOrgans = /^(temperature|heart rate|pulse|respiratory rate|oxygen saturation|blood pressure|weight(\s+and\s+bmi)?|general appearance|gait|parent or guardian report context|urine dipstick|lumbar range of motion|spinal tenderness|straight leg raise|crossed straight leg raise|lower limb (power|sensation|reflexes)|saddle sensation|neurovascular status|foot inspection|peripheral pulses|monofilament sensation|injection sites|capillary refill|urine output context|throat examination|otoscopy|cervical lymphadenopathy|respiratory effort|abdominal examination|skin rash|non-blanching rash|tonsillar appearance|chest (wall examination|auscultation)|meningeal signs|fundal height|fetal (heart auscultation|movement)|lower limb oedema|urine dipstick|hydration status|oropharyngeal examination|general appearance and activity level)$/i;
+    if (bareOrgans.test(text)) return '';
+    if (!text || text === '.') return '';
+    return text;
   }
 
-  function renderObjective(model) {
-    var obj = model.objective;
-    var lines = [];
-    lines = lines.concat(obj.examFindings.map(function(s) { return s.charAt(0).toUpperCase() + s.slice(1); }));
-    lines = lines.concat(obj.investigations.map(function(s) { return s.charAt(0).toUpperCase() + s.slice(1); }));
-    return lines.length ? lines.join('\n') : '[not documented]';
-  }
-
-  function renderPlan(model) {
-    var lines = [];
+  // Apply cleaner to an array of lines
+  function cleanV4OutputLines(lines) {
+    if (!lines || !lines.length) return [];
+    var out = [];
     var seen = {};
-    var adviceLines = model.plan.advice.filter(function(a) {
-      var n = a.toLowerCase();
-      if (seen[n]) return false;
-      seen[n] = true;
-      return true;
-    });
-    lines = lines.concat(adviceLines);
-
-    // Combine 'Hydration advised.' + 'Rest advised.' into one
-    var hydIdx = -1, restIdx = -1;
     for (var i = 0; i < lines.length; i++) {
-      if (/^hydration advised\.$/i.test(lines[i])) hydIdx = i;
-      if (/^rest advised\.$/i.test(lines[i])) restIdx = i;
+      var cleaned = cleanV4OutputPhrase(lines[i]);
+      if (!cleaned) continue;
+      cleaned = polishV4Line(cleaned);
+      var n = cleaned.toLowerCase().trim();
+      if (seen[n]) continue;
+      seen[n] = true;
+      out.push(cleaned);
     }
-    if (hydIdx >= 0 && restIdx >= 0) {
-      lines.splice(Math.min(hydIdx, restIdx), 2, 'Hydration and rest advised.');
-    }
-
-    // Safety netting
-    lines = lines.concat(model.plan.safetyNetting);
-
-    // Follow-up: merge fragments
-    var fup = model.plan.followUp.join(', ');
-    fup = fup.replace(/^(\d+\s+\w+\s+if\s+not\s+improving),\s*(sooner\s+if\s+)/i, '$1, or $2');
-    if (fup) lines.push(fup + '.');
-
-    // Referrals
-    lines = lines.concat(model.plan.referrals);
-
-    // Plan investigations
-    lines = lines.concat(model.plan.investigations);
-
-    return lines.length ? lines.join('\n') : '[not documented]';
+    // Merge follow-up fragments: "X days if not improving" + "sooner if worsening"
+    out = mergeFollowUpFragments(out);
+    // Combine adjacent plan items: "Hydration advised." + "Rest advised." → "Hydration and rest advised."
+    out = combinePlanPairs(out);
+    return out;
   }
 
-  function renderV4EMR(model) {
+  function mergeFollowUpFragments(lines) {
+    var fupPattern = /^(\d+\s+(days?|weeks?|months?)\s+if\s+not\s+improving)\s*\.$/i;
+    var soonerPattern = /^(sooner\s+if\s+worsen(ing)?|or\s+sooner\s+if\s+worsen(ing)?)\s*\.$/i;
+    var fupIdx = -1, soonerIdx = -1;
+    for (var i = 0; i < lines.length; i++) {
+      if (fupPattern.test(lines[i])) fupIdx = i;
+      if (soonerPattern.test(lines[i])) soonerIdx = i;
+    }
+    if (fupIdx >= 0 && soonerIdx >= 0) {
+      var merged = lines[fupIdx].replace(/\.$/i, '') + ', or ' + lines[soonerIdx].charAt(0).toLowerCase() + lines[soonerIdx].slice(1);
+      merged = merged.replace(/^or\s+/i, '').replace(/,\s*or\s+/i, ', or ');
+      var first = Math.min(fupIdx, soonerIdx);
+      var second = Math.max(fupIdx, soonerIdx);
+      lines.splice(second, 1);
+      lines.splice(first, 1, merged);
+    }
+    return lines;
+  }
+
+  function combinePlanPairs(lines) {
+    // "Hydration advised." + "Rest advised." → "Hydration and rest advised."
+    var pairs = [
+      { a: /^hydration advised\.$/i, b: /^rest advised\.$/i, combined: 'Hydration and rest advised.' }
+    ];
+    for (var pi = 0; pi < pairs.length; pi++) {
+      for (var i = 0; i < lines.length - 1; i++) {
+        if (pairs[pi].a.test(lines[i]) && pairs[pi].b.test(lines[i+1])) {
+          lines.splice(i, 2, pairs[pi].combined);
+          break;
+        }
+        if (pairs[pi].b.test(lines[i]) && pairs[pi].a.test(lines[i+1])) {
+          lines.splice(i, 2, pairs[pi].combined);
+          break;
+        }
+      }
+    }
+    // Remove redundant "Follow-up arranged." if a specific follow-up line exists
+    var hasSpecificFup = false;
+    for (var fi = 0; fi < lines.length; fi++) {
+      if (/follow.up in \d/i.test(lines[fi]) || /follow.up \d/i.test(lines[fi])) hasSpecificFup = true;
+    }
+    if (hasSpecificFup) {
+      for (var fi2 = lines.length - 1; fi2 >= 0; fi2--) {
+        if (/^follow-up arranged\.$/i.test(lines[fi2])) lines.splice(fi2, 1);
+      }
+    }
+    return lines;
+  }
+
+  // Polish output lines: sentence case, punctuation, natural phrasing
+  function polishV4Line(text) {
+    if (!text) return '';
+    text = text.trim();
+    // Capitalize first letter
+    text = text.charAt(0).toUpperCase() + text.slice(1);
+    // Add period if line doesn't end with punctuation
+    if (!/[.?!:]$/.test(text)) text += '.';
+    // Clean common plan fragments to natural phrasing
+    text = text.replace(/^Supportive care\.$/i, 'Supportive care advised.');
+    text = text.replace(/^Supportive care advice\.$/i, 'Supportive care advised.');
+    text = text.replace(/^Supportive care discussed\.$/i, 'Supportive care advised.');
+    text = text.replace(/^Hydration and rest advice\.$/i, 'Hydration and rest advised.');
+    text = text.replace(/^Return precautions\.$/i, 'Return precautions discussed.');
+    text = text.replace(/^Follow-up arranged\.$/i, 'Follow-up arranged.');
+    text = text.replace(/^Red flags explained\.$/i, 'Red flags explained.');
+    text = text.replace(/^Lifestyle advice\.$/i, 'Lifestyle advice discussed.');
+    text = text.replace(/^Activity modification\.$/i, 'Activity modification discussed.');
+    text = text.replace(/^Parent or guardian advice\.$/i, 'Parent or guardian advice discussed.');
+    text = text.replace(/^Hydration and feeding advice\.$/i, 'Hydration and feeding advised.');
+    text = text.replace(/^Antenatal counseling\.$/i, 'Antenatal counseling discussed.');
+    text = text.replace(/^Warning symptoms\.$/i, 'Warning symptoms discussed.');
+    text = text.replace(/^Rapid test result\.$/i, 'Rapid test reviewed.');
+    var invNames = /^(Cbc|Crp|Chest imaging|HbA1c|Renal function|Lipid profile|Urine acr|Home glucose log|Previous imaging|X-ray|Mri report|Inflammatory markers|Urinalysis|Cultures|Blood pressure trend|Antenatal labs|Glucose screening result|Ultrasound report|Rapid test result|Urine dipstick)\.$/i;
+    if (invNames.test(text)) text = text.replace(/\.$/, ' reviewed.');
+    // Fix follow-up phrasing: "in X days" not just "X days"
+    text = text.replace(/^(Follow-up) (\d)/i, '$1 in $2');
+    text = text.replace(/Follow-up in (\d+ \w+) if not improving, (\w+)/i, 'Follow-up in $1 if not improving, or $2');
+    // Fix common fragment: "sooner" → "or sooner"
+    text = text.replace(/,\s*sooner if worsening/i, ', or sooner if worsening');
+    return text;
+  }
+
+  // Step 1: Collect fresh state from V4_ENCOUNTER_STATE
+  function collectV4State() {
+    var ges = window.V4_ENCOUNTER_STATE;
+    var raw = {};
+
+    // Workflow
+    raw.workflowId = state.selectedWorkflowId;
+    raw.workflowName = state.selectedWorkflowDisplay;
+    raw.specialty = state.selectedWorkflowSpecialty;
+
+    // Chips from V4_ENCOUNTER_STATE
+    raw.chips = {
+      symptoms: (ges.selectedChips.symptoms || []).slice(),
+      relevant_negatives: (ges.selectedChips.relevant_negatives || []).slice(),
+      exam_findings: (ges.selectedChips.exam_findings || []).slice(),
+      investigations: (ges.selectedChips.investigations || []).slice(),
+      plan_phrases: (ges.selectedChips.plan_phrases || []).slice(),
+      follow_up: (ges.selectedChips.follow_up || []).slice()
+    };
+
+    // Custom entries from V4_ENCOUNTER_STATE
+    raw.customEntries = {
+      symptoms: (ges.customEntries.symptoms || []).slice(),
+      relevant_negatives: (ges.customEntries.relevant_negatives || []).slice(),
+      exam_findings: (ges.customEntries.exam_findings || []).slice(),
+      investigations: (ges.customEntries.investigations || []).slice(),
+      plan_phrases: (ges.customEntries.plan_phrases || []).slice(),
+      follow_up: (ges.customEntries.follow_up || []).slice()
+    };
+
+    // History fields + chip symptoms → natural paragraph
+    raw.historyFields = ges.history.fields || {};
+    raw.historyDraft = buildV4HistoryFromFields(raw.historyFields, raw.chips.symptoms.concat(raw.customEntries.symptoms));
+
+    // Exam from closure state (already synced to V4_ENCOUNTER_STATE)
+    raw.examConfirmations = state.examConfirmations || {};
+
+    // Investigations
+    raw.investigationConfirmations = state.investigationConfirmations || {};
+
+    // Plan
+    raw.impression = state.impression || '';
+    raw.planText = state.planText || '';
+    raw.planConfirmations = state.planConfirmations || {};
+
+    return raw;
+  }
+
+  // Step 2: Normalize
+  function normalizeV4State(raw) {
+    return raw;
+  }
+
+  // Step 3: Route content to output sections
+  function routeV4Content(normalized) {
+    var chips = normalized.chips || {};
+    var custom = normalized.customEntries || {};
+    var historyDraft = _v4cleanText(normalized.historyDraft || '');
+    var planFree = _v4cleanText(normalized.planText || '');
+    var impression = normalized.impression || '';
+    var planOpts = _v4collectPlanOpts();
+    var examItems = _v4collectExamItems();
+    var invItems = _v4collectInvItems();
+
+    function dedupe(items, againstText) {
+      var out = [], seen = {};
+      for (var i = 0; i < items.length; i++) {
+        var n = _v4norm(items[i]);
+        if (!n || seen[n]) continue; seen[n] = true;
+        if (againstText && historyDraft && historyDraft.toLowerCase().indexOf(n) >= 0) continue;
+        out.push(items[i]);
+      }
+      return out;
+    }
+
+    var route = {
+      historyLines: [],
+      relevantNegativeLines: [],
+      examinationLines: [],
+      investigationLines: [],
+      assessmentLines: [],
+      planLines: [],
+      followUpLines: [],
+      patientInstructionLines: []
+    };
+
+    // History / Subjective: chip symptoms already merged in buildV4HistoryFromFields
+    if (historyDraft) route.historyLines.push(historyDraft);
+    var negs = dedupe((chips.relevant_negatives||[]).concat(custom.relevant_negatives||[]), true);
+    if (negs.length) route.relevantNegativeLines.push('Relevant negatives: ' + negs.join('; '));
+
+    // Objective
+    var examChips = dedupe((chips.exam_findings||[]).concat(custom.exam_findings||[]), true);
+    var allExam = examChips.concat(examItems);
+    if (allExam.length) route.examinationLines = allExam;
+
+    var invChips = dedupe((chips.investigations||[]).concat(custom.investigations||[]), false);
+    var invSeen = {};
+    for (var ii = 0; ii < invItems.length; ii++) invSeen[_v4norm(invItems[ii])] = true;
+    var dedupedInvChips = invChips.filter(function(c) { return !invSeen[_v4norm(c)]; });
+    var allInv = invItems.concat(dedupedInvChips);
+    if (allInv.length) route.investigationLines = allInv;
+
+    // Assessment
+    if (impression) route.assessmentLines.push(impression);
+
+    // Plan
+    var planChips = dedupe((chips.plan_phrases||[]).concat(custom.plan_phrases||[]), false);
+    var planDoc = planFree;
+
+    var planAssistLines = [];
+    var fupOptLines = [];
+    var instOptLines = [];
+    var seenPlanAssist = {};
+    for (var poi = 0; poi < planOpts.length; poi++) {
+      var opt = planOpts[poi];
+      var n = _v4norm(opt.option_text);
+      if (!n || seenPlanAssist[n]) continue; seenPlanAssist[n] = true;
+      var cat = (opt.option_category || '').toLowerCase();
+      if (cat === 'follow_up' || cat === 'safety_netting') {
+        fupOptLines.push(opt.option_text);
+      } else if (cat.indexOf('patient_instruction') >= 0 || cat.indexOf('lifestyle') >= 0 || cat.indexOf('counseling') >= 0) {
+        instOptLines.push(opt.option_text);
+      } else {
+        planAssistLines.push(opt.option_text);
+      }
+    }
+
+    if (planChips.length) route.planLines = route.planLines.concat(planChips);
+    if (planAssistLines.length) route.planLines = route.planLines.concat(planAssistLines);
+    if (planDoc) route.planLines.push(planDoc);
+
+    var fupChips = dedupe((chips.follow_up||[]).concat(custom.follow_up||[]), false);
+    route.followUpLines = fupChips.concat(fupOptLines);
+
+    route.patientInstructionLines = instOptLines;
+    if (planDoc) route.patientInstructionLines.push(planDoc);
+
+    (function dedupFinal(arr) {
+      var seen = {};
+      for (var i = arr.length - 1; i >= 0; i--) {
+        var n = _v4norm(arr[i]);
+        if (!n || seen[n]) { arr.splice(i, 1); continue; }
+        seen[n] = true;
+      }
+    })(route.planLines);
+    (function dedupFinal(arr) {
+      var seen = {};
+      for (var i = arr.length - 1; i >= 0; i--) {
+        var n = _v4norm(arr[i]);
+        if (!n || seen[n]) { arr.splice(i, 1); continue; }
+        seen[n] = true;
+      }
+    })(route.followUpLines);
+    (function dedupFinal(arr) {
+      var seen = {};
+      for (var i = arr.length - 1; i >= 0; i--) {
+        var n = _v4norm(arr[i]);
+        if (!n || seen[n]) { arr.splice(i, 1); continue; }
+        seen[n] = true;
+      }
+    })(route.patientInstructionLines);
+
+    // Clean output phrasing: strip prompt/template wording from all sections
+    route.historyLines = cleanV4OutputLines(route.historyLines);
+    route.relevantNegativeLines = cleanV4OutputLines(route.relevantNegativeLines);
+    route.examinationLines = cleanV4OutputLines(route.examinationLines);
+    route.investigationLines = cleanV4OutputLines(route.investigationLines);
+    route.assessmentLines = cleanV4OutputLines(route.assessmentLines);
+    route.planLines = cleanV4OutputLines(route.planLines);
+    route.followUpLines = cleanV4OutputLines(route.followUpLines);
+    route.patientInstructionLines = cleanV4OutputLines(route.patientInstructionLines);
+
+    return route;
+  }
+
+  // Step 4: Render EMR
+  function renderV4EMR(route) {
+    var footer = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
     var h = 'SHORT EMR NOTE\n' + '='.repeat(40) + '\n\n';
-    var subj = renderSubjective(model);
-    var obj = renderObjective(model);
-    var ass = model.assessment.impression;
-    var plan = renderPlan(model);
-    h += 'History:\n' + subj + '\n\n';
-    h += 'Examination / Investigations:\n' + obj + '\n\n';
-    h += 'Assessment:\n' + ass + '\n\n';
-    h += 'Plan:\n' + plan + '\n';
-    return h + V4_FOOTER;
+    h += _v4section('History', (route.historyLines||[]).join('\n'));
+    h += _v4section('Relevant negatives', (route.relevantNegativeLines||[]).join('\n'));
+    h += _v4section('Examination', (route.examinationLines||[]).join('\n'));
+    h += _v4section('Investigations / Results Reviewed', (route.investigationLines||[]).join('\n'));
+    h += _v4section('Assessment', (route.assessmentLines||[]).join('\n'));
+    h += _v4section('Plan', (route.planLines||[]).join('\n'));
+    h += _v4section('Follow-up', (route.followUpLines||[]).join('\n'));
+    return h + footer;
   }
 
-  function renderV4SOAP(model) {
-    var subj = renderSubjective(model);
-    var obj = renderObjective(model);
-    var ass = model.assessment.impression;
-    var plan = renderPlan(model);
-    return 'SOAP NOTE\n' + '='.repeat(40) + '\n\n' +
-      'SUBJECTIVE:\n' + subj + '\n\n' +
-      'OBJECTIVE:\n' + obj + '\n\n' +
-      'ASSESSMENT:\n' + ass + '\n\n' +
-      'PLAN:\n' + plan + '\n' + V4_FOOTER;
+  // Step 4: Render SOAP
+  function renderV4SOAP(route) {
+    var footer = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
+    var subj = [];
+    if ((route.historyLines||[]).length) subj.push((route.historyLines||[]).join('\n'));
+    if ((route.relevantNegativeLines||[]).length) subj.push((route.relevantNegativeLines||[]).join('\n'));
+    var obj = [];
+    // Render exam/investigation as natural line-per-finding
+    if ((route.examinationLines||[]).length) obj = obj.concat(route.examinationLines);
+    if ((route.investigationLines||[]).length) obj = obj.concat(route.investigationLines);
+    var ass = (route.assessmentLines||[]).join('\n') || '[not documented]';
+    var planParts = [];
+    if ((route.planLines||[]).length) planParts = planParts.concat(route.planLines);
+    if ((route.followUpLines||[]).length) planParts = planParts.concat(route.followUpLines);
+    var plan = planParts.length ? planParts.join('\n') : '[not documented]';
+
+    var s = 'SOAP NOTE\n' + '='.repeat(40) + '\n\n';
+    s += 'SUBJECTIVE:\n' + (subj.length ? subj.join('\n\n') : '[not documented]') + '\n\n';
+    s += 'OBJECTIVE:\n' + (obj.length ? obj.join('\n') : '[not documented]') + '\n\n';
+    s += 'ASSESSMENT:\n' + ass + '\n\n';
+    s += 'PLAN:\n' + plan + '\n';
+    return s + footer;
   }
 
-  function renderV4Referral(model) {
-    var subj = renderSubjective(model);
-    var obj = renderObjective(model);
-    var ass = model.assessment.impression;
-    var plan = renderPlan(model);
-    var hasReferralText = plan.toLowerCase().indexOf('refer') >= 0;
-    var hasReferralAssess = ass.toLowerCase().indexOf('refer') >= 0;
+  // Step 4: Render Referral
+  function renderV4Referral(route) {
+    var footer = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
+    var planText = (route.planLines||[]).join('\n');
+    var hasReferralText = planText && planText.toLowerCase().indexOf('refer') >= 0;
+    var hasReferralAssess = (route.assessmentLines||[]).join(' ').toLowerCase().indexOf('refer') >= 0;
     if (!hasReferralText && !hasReferralAssess) {
-      return 'REFERRAL DRAFT\n' + '='.repeat(40) + '\n\nReferral draft: [not requested/documented]\n' + V4_FOOTER;
+      return 'REFERRAL DRAFT\n' + '='.repeat(40) + '\n\nReferral draft: [not requested/documented]\n' + footer;
     }
     var r = 'REFERRAL DRAFT\n' + '='.repeat(40) + '\n\n';
-    r += 'Reason for referral:\n' + subj + '\n\n';
-    r += 'Clinical history:\n' + subj + '\n\n';
-    r += 'Examination findings:\n' + obj + '\n\n';
-    r += 'Current impression:\n' + ass + '\n\n';
-    r += 'Plan / recommendations:\n' + plan + '\n\n';
+    r += _v4section('Reason for referral', (route.historyLines||[]).join('\n'));
+    r += _v4section('Clinical history', (route.historyLines||[]).join('\n'));
+    r += _v4section('Examination findings', (route.examinationLines||[]).join('\n'));
+    r += _v4section('Investigations', (route.investigationLines||[]).join('\n'));
+    r += _v4section('Current impression', (route.assessmentLines||[]).join('\n'));
+    r += _v4section('Plan / recommendations', planText);
+    r += _v4section('Follow-up', (route.followUpLines||[]).join('\n'));
     r += 'Please see and advise.\n';
-    return r + V4_FOOTER;
+    return r + footer;
   }
 
-  function renderV4Instructions(model) {
-    var plan = renderPlan(model);
-    if (plan === '[not documented]') {
-      return 'PATIENT INSTRUCTIONS\n' + '='.repeat(40) + '\n\n[not documented]\n' + V4_FOOTER;
+  // Step 4: Render Instructions
+  function renderV4Instructions(route) {
+    var footer = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
+    var lines = route.patientInstructionLines || [];
+    if (!lines.length) {
+      return 'PATIENT INSTRUCTIONS\n' + '='.repeat(40) + '\n\n[not documented]\n' + footer;
     }
     return 'PATIENT INSTRUCTIONS\n' + '='.repeat(40) + '\n\n' +
-      'Advice / plan discussed:\n' + plan + '\n\n' +
-      'Review with your clinician. Seek medical attention if symptoms worsen.\n' + V4_FOOTER;
+      'Advice / plan discussed:\n' + lines.join('\n') + '\n\n' +
+      'Review with your clinician. Seek medical attention if symptoms worsen.\n' + footer;
   }
 
   // ================================================================
-  //  BUILD ADVANCED DRAFT (reads from V4_ENCOUNTER_STATE via collectRawState)
+  //  BUILD ADVANCED DRAFT (reads from V4_ENCOUNTER_STATE via collectV4State)
   // ================================================================
   function buildAdvancedDraft(tabId) {
-    var raw = collectRawState();
-    var model = normalizeV4SelectionsToNoteModel(raw);
+    var raw = collectV4State();
+    var norm = normalizeV4State(raw);
+    var route = routeV4Content(norm);
     switch (tabId) {
-      case 'adv-emr': return renderV4EMR(model);
-      case 'adv-soap': return renderV4SOAP(model);
-      case 'adv-ref': return renderV4Referral(model);
-      case 'adv-inst': return renderV4Instructions(model);
+      case 'adv-emr': return renderV4EMR(route);
+      case 'adv-soap': return renderV4SOAP(route);
+      case 'adv-ref': return renderV4Referral(route);
+      case 'adv-inst': return renderV4Instructions(route);
       default: return 'Select an output format.';
     }
   }
@@ -1249,22 +1330,26 @@
         var sidebar = document.querySelector('.v4-sidebar-inner');
         if (sidebar) sidebar.appendChild(debugEl);
       }
-      var raw = collectRawState();
-      var model = normalizeV4SelectionsToNoteModel(raw);
+      var raw = collectV4State();
+      var route = routeV4Content(normalizeV4State(raw));
       var dbg = '<div style="font-weight:700;margin-bottom:8px;color:#0c4a6e;font-size:12px">[DEBUG] V4 Pipeline</div>';
       dbg += '<div>Workflow: ' + esc(raw.workflowId) + '</div>';
-      dbg += '<div style="margin-top:6px;font-weight:600">Subjective:</div>';
-      dbg += '<div>symptoms: ' + (model.subjective.symptoms.length + model.subjective.associatedSymptoms.length) + ' items</div>';
-      dbg += '<div>negatives: ' + model.subjective.relevantNegatives.length + ' items</div>';
-      dbg += '<div style="margin-top:6px;font-weight:600">Objective:</div>';
-      dbg += '<div>examFindings: ' + model.objective.examFindings.length + ' items</div>';
-      dbg += '<div>investigations: ' + model.objective.investigations.length + ' items</div>';
-      dbg += '<div style="margin-top:6px;font-weight:600">Assessment:</div>';
-      dbg += '<div>impression: ' + (model.assessment.impression !== '[not documented]' ? 'Entered' : 'Not entered') + '</div>';
-      dbg += '<div style="margin-top:6px;font-weight:600">Plan:</div>';
-      dbg += '<div>advice: ' + model.plan.advice.length + ' items</div>';
-      dbg += '<div>safetyNetting: ' + model.plan.safetyNetting.length + ' items</div>';
-      dbg += '<div>followUp: ' + model.plan.followUp.length + ' items</div>';
+      dbg += '<div style="margin-top:6px;font-weight:600">Selected chips:</div>';
+      for (var dg in raw.chips) {
+        dbg += '<div>' + dg + ': ' + (raw.chips[dg]||[]).length + ' items</div>';
+      }
+      dbg += '<div style="margin-top:6px;font-weight:600">History fields:</div>';
+      var histCount = 0;
+      for (var fk in raw.historyFields) { if (raw.historyFields[fk]) histCount++; }
+      dbg += '<div>filled: ' + histCount + '</div>';
+      dbg += '<div style="margin-top:6px;font-weight:600">Routed content:</div>';
+      dbg += '<div>historyLines: ' + (route.historyLines||[]).length + '</div>';
+      dbg += '<div>relevantNegativeLines: ' + (route.relevantNegativeLines||[]).length + '</div>';
+      dbg += '<div>examinationLines: ' + (route.examinationLines||[]).length + '</div>';
+      dbg += '<div>investigationLines: ' + (route.investigationLines||[]).length + '</div>';
+      dbg += '<div>assessmentLines: ' + (route.assessmentLines||[]).length + '</div>';
+      dbg += '<div>planLines: ' + (route.planLines||[]).length + '</div>';
+      dbg += '<div>followUpLines: ' + (route.followUpLines||[]).length + '</div>';
       debugEl.innerHTML = dbg;
     }
   }
