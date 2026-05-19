@@ -447,5 +447,453 @@
       "plan_phrases",
       "follow_up"
     ]
+  },
+  {
+    "workflow_id": "gp-cough",
+    "workflow_display_name": "GP Cough",
+    "default_history_draft": "Patient presents with cough for [duration]. Cough described as [cough_character]. Sputum: [sputum_context]. Associated symptoms: [associated_symptoms]. Triggers/exposures: [triggers_or_exposures]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[cough character]",
+      "[sputum context]",
+      "[associated symptoms]",
+      "[triggers or exposures]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-sore-throat",
+    "workflow_display_name": "GP Sore Throat",
+    "default_history_draft": "Patient presents with sore throat for [duration]. Throat symptoms: [throat_symptoms]. Swallowing: [swallowing_context]. Fever: [fever_context]. Associated respiratory symptoms: [associated_respiratory_symptoms]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[throat symptoms]",
+      "[swallowing context]",
+      "[fever context]",
+      "[associated respiratory symptoms]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-headache",
+    "workflow_display_name": "GP Headache",
+    "default_history_draft": "Patient presents with headache for [duration]. Location/character: [location_character]. Severity: [severity]. Associated symptoms: [associated_symptoms]. Triggers: [trigger_context]. Red flags reviewed: [red_flag_negatives]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[location character]",
+      "[severity]",
+      "[associated symptoms]",
+      "[trigger context]",
+      "[red flag negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-dizziness",
+    "workflow_display_name": "GP Dizziness",
+    "default_history_draft": "Patient presents with dizziness for [duration]. Type: [dizziness_type]. Positional: [positional_context]. Associated symptoms: [associated_symptoms]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[dizziness type]",
+      "[positional context]",
+      "[associated symptoms]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-fatigue",
+    "workflow_display_name": "GP Fatigue",
+    "default_history_draft": "Patient presents with fatigue for [duration]. Functional impact: [functional_impact]. Sleep: [sleep_context]. Mood: [mood_context]. Systemic symptoms: [systemic_symptoms]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[functional impact]",
+      "[sleep context]",
+      "[mood context]",
+      "[systemic symptoms]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-abdominal-pain",
+    "workflow_display_name": "GP Abdominal Pain",
+    "default_history_draft": "Patient presents with abdominal pain for [duration]. Location: [pain_location]. Character: [pain_character]. Associated GI symptoms: [associated_gi_symptoms]. Urinary or GYN context: [urinary_or_gyne_context_if_relevant] if relevant. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[pain location]",
+      "[pain character]",
+      "[associated gi symptoms]",
+      "[urinary or gyne context if relevant]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-nausea",
+    "workflow_display_name": "GP Nausea/Vomiting",
+    "default_history_draft": "Patient presents with nausea or vomiting for [duration]. Frequency: [vomiting_frequency]. Oral intake and hydration: [oral_intake_hydration]. Associated symptoms: [associated_symptoms]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[vomiting frequency]",
+      "[oral intake hydration]",
+      "[associated symptoms]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-diarrhea",
+    "workflow_display_name": "GP Diarrhea",
+    "default_history_draft": "Patient presents with diarrhea for [duration]. Frequency: [stool_frequency]. Character: [stool_character]. Blood or mucus: [blood_or_mucus_context]. Exposure or travel: [exposure_or_travel_context]. Hydration: [hydration_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[stool frequency]",
+      "[stool character]",
+      "[blood or mucus context]",
+      "[exposure or travel context]",
+      "[hydration context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-constipation",
+    "workflow_display_name": "GP Constipation",
+    "default_history_draft": "Patient presents with constipation for [duration]. Frequency: [stool_frequency]. Character: [stool_character]. Straining or incomplete emptying: [straining_incomplete_emptying]. Diet and fluid: [diet_fluid_context]. Red flags reviewed: [red_flag_negatives]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[stool frequency]",
+      "[stool character]",
+      "[straining incomplete emptying]",
+      "[diet fluid context]",
+      "[red flag negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-chest-pain",
+    "workflow_display_name": "GP Chest Pain",
+    "default_history_draft": "Patient presents with chest pain. Onset: [onset]. Character: [character]. Location/radiation: [location_radiation]. Exertional: [exertional_context]. Associated symptoms: [associated_symptoms]. Risk factors: [risk_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[onset]",
+      "[character]",
+      "[location radiation]",
+      "[exertional context]",
+      "[associated symptoms]",
+      "[risk context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-palpitations",
+    "workflow_display_name": "GP Palpitations",
+    "default_history_draft": "Patient presents with palpitations. Onset/duration: [onset_duration]. Rhythm description: [rhythm_description]. Triggers: [triggers]. Associated symptoms: [associated_symptoms]. Previous episodes: [previous_episodes]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[onset duration]",
+      "[rhythm description]",
+      "[triggers]",
+      "[associated symptoms]",
+      "[previous episodes]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-shortness-of-breath",
+    "workflow_display_name": "GP Shortness of Breath",
+    "default_history_draft": "Patient presents with shortness of breath. Onset/duration: [onset_duration]. Exertional or at rest: [exertional_or_rest]. Associated respiratory symptoms: [associated_respiratory_symptoms]. Cardiac symptoms: [cardiac_symptoms]. Triggers: [trigger_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[onset duration]",
+      "[exertional or rest]",
+      "[associated respiratory symptoms]",
+      "[cardiac symptoms]",
+      "[trigger context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-hypertension-followup",
+    "workflow_display_name": "GP Hypertension Follow-up",
+    "default_history_draft": "Routine hypertension follow-up. Home BP: [home_bp_context]. Adherence: [adherence_context]. Lifestyle: [lifestyle_context]. Symptoms or concerns: [symptoms_or_concerns]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[followup context]",
+      "[home bp context]",
+      "[adherence context]",
+      "[lifestyle context]",
+      "[symptoms or concerns]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-thyroid-followup",
+    "workflow_display_name": "GP Thyroid Follow-up",
+    "default_history_draft": "Routine thyroid follow-up. Symptoms: [symptom_context]. Medication adherence: [medication_adherence_context]. Weight/energy/temperature: [weight_energy_temperature_context]. Palpitations or mood: [palpitations_or_mood_context]. Lab review: [lab_review_context]. [Additional history].",
+    "editable_placeholders": [
+      "[followup context]",
+      "[symptom context]",
+      "[medication adherence context]",
+      "[weight energy temperature context]",
+      "[palpitations or mood context]",
+      "[lab review context]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-dyslipidemia-followup",
+    "workflow_display_name": "GP Dyslipidemia Follow-up",
+    "default_history_draft": "Routine dyslipidemia follow-up. Lipid results: [lipid_result_context]. Lifestyle: [lifestyle_context]. Adherence: [adherence_context]. CV risk: [cardiovascular_risk_context]. Side effects: [side_effect_context]. [Additional history].",
+    "editable_placeholders": [
+      "[followup context]",
+      "[lipid result context]",
+      "[lifestyle context]",
+      "[adherence context]",
+      "[cardiovascular risk context]",
+      "[side effect context]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-lab-result-review",
+    "workflow_display_name": "GP Lab Result Review",
+    "default_history_draft": "Lab result review. Result type: [result_type]. Reason: [reason_for_testing]. Abnormality: [abnormality_context]. Previous comparison: [comparison_previous_results]. Patient concerns: [patient_concerns]. Follow-up: [followup_context]. [Additional history].",
+    "editable_placeholders": [
+      "[result type]",
+      "[reason for testing]",
+      "[abnormality context]",
+      "[comparison previous results]",
+      "[patient concerns]",
+      "[followup context]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "social history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
   }
 ]

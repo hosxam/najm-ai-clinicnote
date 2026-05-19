@@ -57,7 +57,7 @@
         ]
       }
     ],
-    "safety_note": "Document investigations only if ordered, reviewed, or available. Do not imply a test was performed.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
   },
   {
@@ -99,7 +99,7 @@
         ]
       },
       {
-        "group_id": "home_monitoring",
+        "group_id": "home_mmonitoring",
         "group_label": "Home monitoring",
         "options": [
           {
@@ -112,7 +112,7 @@
         ]
       }
     ],
-    "safety_note": "Document investigations only if ordered, reviewed, or available. Do not imply a test was performed.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
   },
   {
@@ -167,7 +167,7 @@
         ]
       }
     ],
-    "safety_note": "Document investigations only if ordered, reviewed, or available. Imaging findings should be documented only when verified.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
   },
   {
@@ -196,7 +196,7 @@
             "option_text": "Urine dip reviewed if done.",
             "required_level": "conditional",
             "source_status": "draft",
-            "note_text": "Urine dip."
+            "note_text": "Urine dip reviewed if done."
           },
           {
             "option_id": "cbc_reviewed",
@@ -222,7 +222,7 @@
         ]
       }
     ],
-    "safety_note": "Document investigations only if ordered, reviewed, or available. Paediatric investigation results require clinician review.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
   },
   {
@@ -238,7 +238,7 @@
             "option_text": "Urine dip reviewed if done.",
             "required_level": "conditional",
             "source_status": "draft",
-            "note_text": "Urine dip."
+            "note_text": "Urine dip reviewed if done."
           },
           {
             "option_id": "bp_trend_reviewed",
@@ -283,7 +283,7 @@
         ]
       }
     ],
-    "safety_note": "Document investigations only if ordered, reviewed, or available. Antenatal investigation results require clinician review.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
   },
   {
@@ -310,7 +310,7 @@
         ]
       }
     ],
-    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "workflow_display_name": "Minor trauma documentation"
   },
@@ -351,7 +351,7 @@
         ]
       }
     ],
-    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "workflow_display_name": "Wound care / laceration documentation"
   },
@@ -372,7 +372,7 @@
         ]
       }
     ],
-    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "workflow_display_name": "Burn assessment documentation"
   },
@@ -400,7 +400,7 @@
         ]
       }
     ],
-    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "workflow_display_name": "Allergic reaction documentation"
   },
@@ -428,7 +428,7 @@
         ]
       }
     ],
-    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "workflow_display_name": "Head injury documentation"
   },
@@ -463,7 +463,7 @@
         ]
       }
     ],
-    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "workflow_display_name": "Chest pain documentation"
   },
@@ -498,7 +498,7 @@
         ]
       }
     ],
-    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "workflow_display_name": "Shortness of breath documentation"
   },
@@ -546,7 +546,7 @@
         ]
       }
     ],
-    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "workflow_display_name": "Abdominal pain documentation"
   },
@@ -581,7 +581,7 @@
         ]
       }
     ],
-    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "workflow_display_name": "Syncope documentation"
   },
@@ -629,8 +629,680 @@
         ]
       }
     ],
-    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "workflow_display_name": "Fever / suspected infection documentation"
+  },
+  {
+    "workflow_id": "gp-cough",
+    "workflow_display_name": "GP Cough",
+    "investigation_groups": [
+      {
+        "group_id": "respiratory_gp-cough",
+        "group_label": "Respiratory",
+        "options": [
+          {
+            "option_id": "cxr_gp-cough",
+            "option_text": "Chest imaging reviewed if available.",
+            "note_text": "Chest imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "o2_gp-cough",
+            "option_text": "Oxygen saturation recorded if measured.",
+            "note_text": "Oxygen saturation recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "sputum_gp-cough",
+            "option_text": "Sputum result reviewed if available.",
+            "note_text": "Sputum result reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_gp-cough",
+            "option_text": "Previous respiratory records reviewed if available.",
+            "note_text": "Previous respiratory records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-sore-throat",
+    "workflow_display_name": "GP Sore Throat",
+    "investigation_groups": [
+      {
+        "group_id": "ab_gp-sore-throat",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "rapid_gp-sore-throat",
+            "option_text": "Rapid test reviewed if performed.",
+            "note_text": "Rapid test reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "swab_gp-sore-throat",
+            "option_text": "Throat swab reviewed if available.",
+            "note_text": "Throat swab reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "temp_gp-sore-throat",
+            "option_text": "Temperature recorded if measured.",
+            "note_text": "Temperature recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-headache",
+    "workflow_display_name": "GP Headache",
+    "investigation_groups": [
+      {
+        "group_id": "vitals_gp-headache",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "bp_gp-headache",
+            "option_text": "Blood pressure recorded if measured.",
+            "note_text": "Blood pressure recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "neuro_gp-headache",
+            "option_text": "Neurological observations documented if measured.",
+            "note_text": "Neurological observations documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "maging_gp-headache",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "imaging_gp-headache",
+            "option_text": "Imaging reviewed if available.",
+            "note_text": "Imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_gp-headache",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-dizziness",
+    "workflow_display_name": "GP Dizziness",
+    "investigation_groups": [
+      {
+        "group_id": "vitals_gp-dizziness",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "bp_gp-dizziness",
+            "option_text": "Blood pressure recorded if measured.",
+            "note_text": "Blood pressure recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "orthostatic_gp-dizziness",
+            "option_text": "Orthostatic BP documented if measured.",
+            "note_text": "Orthostatic BP documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "glucose_gp-dizziness",
+            "option_text": "Glucose checked if performed. documented if available.",
+            "note_text": "Glucose checked.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "ardiac_gp-dizziness",
+        "group_label": "Cardiac",
+        "options": [
+          {
+            "option_id": "ecg_gp-dizziness",
+            "option_text": "ECG reviewed if performed.",
+            "note_text": "ECG reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-fatigue",
+    "workflow_display_name": "GP Fatigue",
+    "investigation_groups": [
+      {
+        "group_id": "ab_gp-fatigue",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "cbc_gp-fatigue",
+            "option_text": "CBC reviewed if ordered.",
+            "note_text": "CBC reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "tft_gp-fatigue",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "note_text": "Thyroid function reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "renal_gp-fatigue",
+            "option_text": "Renal function reviewed if ordered.",
+            "note_text": "Renal function reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "glucose_gp-fatigue",
+            "option_text": "Glucose or HbA1c reviewed if ordered.",
+            "note_text": "Glucose or HbA1c reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "vitamins_gp-fatigue",
+            "option_text": "Vitamin studies reviewed if ordered.",
+            "note_text": "Vitamin studies reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-abdominal-pain",
+    "workflow_display_name": "GP Abdominal Pain",
+    "investigation_groups": [
+      {
+        "group_id": "ab_gp-abdominal-pain",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "ua_gp-abdominal-pain",
+            "option_text": "Urinalysis reviewed if done.",
+            "note_text": "Urinalysis reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "preg_gp-abdominal-pain",
+            "option_text": "Pregnancy test reviewed if relevant and done.",
+            "note_text": "Pregnancy test reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_gp-abdominal-pain",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "maging_gp-abdominal-pain",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "imaging_gp-abdominal-pain",
+            "option_text": "Imaging reviewed if available.",
+            "note_text": "Imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-nausea",
+    "workflow_display_name": "GP Nausea/Vomiting",
+    "investigation_groups": [
+      {
+        "group_id": "vitals_gp-nausea",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "hydration_gp-nausea",
+            "option_text": "Hydration status and vital signs documented if measured.",
+            "note_text": "Hydration status and vital signs documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "ab_gp-nausea",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "ua_gp-nausea",
+            "option_text": "Urinalysis reviewed if done.",
+            "note_text": "Urinalysis reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_gp-nausea",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-diarrhea",
+    "workflow_display_name": "GP Diarrhea",
+    "investigation_groups": [
+      {
+        "group_id": "tool_gp-diarrhea",
+        "group_label": "Stool",
+        "options": [
+          {
+            "option_id": "stool_gp-diarrhea",
+            "option_text": "Stool test reviewed if available.",
+            "note_text": "Stool test reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "ab_gp-diarrhea",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "bloods_gp-diarrhea",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals_gp-diarrhea",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "vitals_gp-diarrhea",
+            "option_text": "Hydration status and vital signs documented if measured.",
+            "note_text": "Hydration status and vital signs documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-constipation",
+    "workflow_display_name": "GP Constipation",
+    "investigation_groups": [
+      {
+        "group_id": "maging_gp-constipation",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "imaging_gp-constipation",
+            "option_text": "Abdominal imaging reviewed if available.",
+            "note_text": "Abdominal imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "ab_gp-constipation",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "bloods_gp-constipation",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_gp-constipation",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-chest-pain",
+    "workflow_display_name": "GP Chest Pain",
+    "investigation_groups": [
+      {
+        "group_id": "ardiac_gp-chest-pain",
+        "group_label": "Cardiac",
+        "options": [
+          {
+            "option_id": "ecg_gp-chest-pain",
+            "option_text": "ECG reviewed if performed.",
+            "note_text": "ECG reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "trop_gp-chest-pain",
+            "option_text": "Troponin reviewed if ordered.",
+            "note_text": "Troponin reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "cxr_gp-chest-pain",
+            "option_text": "Chest imaging reviewed if available.",
+            "note_text": "Chest imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_gp-chest-pain",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-palpitations",
+    "workflow_display_name": "GP Palpitations",
+    "investigation_groups": [
+      {
+        "group_id": "ardiac_gp-palpitations",
+        "group_label": "Cardiac",
+        "options": [
+          {
+            "option_id": "ecg_gp-palpitations",
+            "option_text": "ECG reviewed if performed.",
+            "note_text": "ECG reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "tft_gp-palpitations",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "note_text": "Thyroid function reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "lytes_gp-palpitations",
+            "option_text": "Electrolytes reviewed if ordered.",
+            "note_text": "Electrolytes reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "holter_gp-palpitations",
+            "option_text": "Ambulatory monitoring reviewed if available.",
+            "note_text": "Ambulatory monitoring reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-shortness-of-breath",
+    "workflow_display_name": "GP Shortness of Breath",
+    "investigation_groups": [
+      {
+        "group_id": "respiratory_gp-shortness-of-breath",
+        "group_label": "Respiratory",
+        "options": [
+          {
+            "option_id": "o2_gp-shortness-of-breath",
+            "option_text": "Oxygen saturation recorded if measured.",
+            "note_text": "Oxygen saturation recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "cxr_gp-shortness-of-breath",
+            "option_text": "Chest imaging reviewed if available.",
+            "note_text": "Chest imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "ecg_gp-shortness-of-breath",
+            "option_text": "ECG reviewed if performed.",
+            "note_text": "ECG reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_gp-shortness-of-breath",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-hypertension-followup",
+    "workflow_display_name": "GP Hypertension Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "monitoring_gp-hypertension-followup",
+        "group_label": "Monitoring",
+        "options": [
+          {
+            "option_id": "bp_gp-hypertension-followup",
+            "option_text": "Blood pressure readings reviewed if available.",
+            "note_text": "Blood pressure readings reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "renal_gp-hypertension-followup",
+            "option_text": "Renal function reviewed if ordered.",
+            "note_text": "Renal function reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "acr_gp-hypertension-followup",
+            "option_text": "Urine ACR reviewed if ordered.",
+            "note_text": "Urine ACR reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "lipids_gp-hypertension-followup",
+            "option_text": "Lipid profile reviewed if ordered.",
+            "note_text": "Lipid profile reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-thyroid-followup",
+    "workflow_display_name": "GP Thyroid Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "thyroid_gp-thyroid-followup",
+        "group_label": "Thyroid",
+        "options": [
+          {
+            "option_id": "tft_gp-thyroid-followup",
+            "option_text": "Thyroid function tests reviewed if available.",
+            "note_text": "Thyroid function tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "ab_gp-thyroid-followup",
+            "option_text": "Thyroid antibody result reviewed if available.",
+            "note_text": "Thyroid antibody result reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "us_gp-thyroid-followup",
+            "option_text": "Ultrasound report reviewed if available.",
+            "note_text": "Ultrasound report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-dyslipidemia-followup",
+    "workflow_display_name": "GP Dyslipidemia Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "lipids_gp-dyslipidemia-followup",
+        "group_label": "Lipids",
+        "options": [
+          {
+            "option_id": "lipids_gp-dyslipidemia-followup",
+            "option_text": "Lipid profile reviewed if available.",
+            "note_text": "Lipid profile reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "lft_gp-dyslipidemia-followup",
+            "option_text": "Liver function reviewed if ordered.",
+            "note_text": "Liver function reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "glucose_gp-dyslipidemia-followup",
+            "option_text": "HbA1c or glucose reviewed if ordered.",
+            "note_text": "HbA1c or glucose reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gp-lab-result-review",
+    "workflow_display_name": "GP Lab Result Review",
+    "investigation_groups": [
+      {
+        "group_id": "results_gp-lab-result-review",
+        "group_label": "Results",
+        "options": [
+          {
+            "option_id": "results_gp-lab-result-review",
+            "option_text": "Results reviewed if available.",
+            "note_text": "Results reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_gp-lab-result-review",
+            "option_text": "Previous results compared if available.",
+            "note_text": "Previous results compared if available.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "fup_gp-lab-result-review",
+            "option_text": "Follow-up testing documented if arranged.",
+            "note_text": "Follow-up testing arranged.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
   }
 ]

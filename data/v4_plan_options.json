@@ -98,7 +98,7 @@
         ]
       }
     ],
-    "safety_note": "Plan documentation options only. Do not use as treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft"
   },
@@ -195,7 +195,7 @@
         ]
       }
     ],
-    "safety_note": "Plan documentation options only. Do not use as treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft"
   },
@@ -300,7 +300,7 @@
         ]
       }
     ],
-    "safety_note": "Plan documentation options only. Do not use as treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft"
   },
@@ -393,7 +393,7 @@
         ]
       }
     ],
-    "safety_note": "Plan documentation options only. Do not use as treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft"
   },
@@ -492,7 +492,7 @@
         ]
       }
     ],
-    "safety_note": "Plan documentation options only. Do not use as treatment recommendations.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft"
   },
@@ -576,7 +576,7 @@
         ]
       }
     ],
-    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft",
     "workflow_display_name": "Minor trauma documentation"
@@ -674,7 +674,7 @@
         ]
       }
     ],
-    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft",
     "workflow_display_name": "Wound care / laceration documentation"
@@ -772,7 +772,7 @@
         ]
       }
     ],
-    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft",
     "workflow_display_name": "Burn assessment documentation"
@@ -878,7 +878,7 @@
         ]
       }
     ],
-    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft",
     "workflow_display_name": "Allergic reaction documentation"
@@ -963,7 +963,7 @@
         ]
       }
     ],
-    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft",
     "workflow_display_name": "Head injury documentation"
@@ -1048,7 +1048,7 @@
         ]
       }
     ],
-    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft",
     "workflow_display_name": "Chest pain documentation"
@@ -1133,7 +1133,7 @@
         ]
       }
     ],
-    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft",
     "workflow_display_name": "Shortness of breath documentation"
@@ -1226,7 +1226,7 @@
         ]
       }
     ],
-    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft",
     "workflow_display_name": "Abdominal pain documentation"
@@ -1319,7 +1319,7 @@
         ]
       }
     ],
-    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft",
     "workflow_display_name": "Syncope documentation"
@@ -1438,9 +1438,1454 @@
         ]
       }
     ],
-    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft",
     "workflow_display_name": "Fever / suspected infection documentation"
+  },
+  {
+    "workflow_id": "gp-cough",
+    "workflow_display_name": "GP Cough",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-cough",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "symptom_gp-cough",
+            "option_text": "Symptom care advice documented if discussed.",
+            "note_text": "Symptom care advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "smoking_gp-cough",
+            "option_text": "Smoking or exposure advice documented if discussed.",
+            "note_text": "Smoking or exposure advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_gp-cough",
+        "group_label": "med",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_gp-cough",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_gp-cough",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_gp-cough",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-cough",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-cough",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-sore-throat",
+    "workflow_display_name": "GP Sore Throat",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-sore-throat",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "symptom_gp-sore-throat",
+            "option_text": "Symptom care advice documented if discussed.",
+            "note_text": "Symptom care advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "gargle_gp-sore-throat",
+            "option_text": "Salt water gargle or rinse advice documented if discussed.",
+            "note_text": "Salt water gargle or rinse advised.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_gp-sore-throat",
+        "group_label": "med",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_gp-sore-throat",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_gp-sore-throat",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_gp-sore-throat",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-sore-throat",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-sore-throat",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-headache",
+    "workflow_display_name": "GP Headache",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-headache",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "mgmt_gp-headache",
+            "option_text": "Symptom management plan documented if clinician decided.",
+            "note_text": "Symptom management plan documented.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "redflags_gp-headache",
+            "option_text": "Red flags discussed documented if discussed.",
+            "note_text": "Red flags discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "invest_gp-headache",
+        "group_label": "invest",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_gp-headache",
+            "option_text": "Investigation or referral documented if clinician decided.",
+            "note_text": "Investigation or referral planned.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-headache",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-headache",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-dizziness",
+    "workflow_display_name": "GP Dizziness",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-dizziness",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "advice_gp-dizziness",
+            "option_text": "Dizziness management advice documented if discussed.",
+            "note_text": "Dizziness management advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_gp-dizziness",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_gp-dizziness",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-dizziness",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-dizziness",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-fatigue",
+    "workflow_display_name": "GP Fatigue",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-fatigue",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "lifestyle_gp-fatigue",
+            "option_text": "Lifestyle advice documented if discussed.",
+            "note_text": "Lifestyle advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "invest_gp-fatigue",
+        "group_label": "invest",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-fatigue",
+            "option_text": "Investigation follow-up documented if arranged.",
+            "note_text": "Investigation follow-up arranged.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-fatigue",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "genfup_gp-fatigue",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-abdominal-pain",
+    "workflow_display_name": "GP Abdominal Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-abdominal-pain",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "diet_gp-abdominal-pain",
+            "option_text": "Dietary advice documented if discussed.",
+            "note_text": "Dietary advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_gp-abdominal-pain",
+        "group_label": "med",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_gp-abdominal-pain",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_gp-abdominal-pain",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_gp-abdominal-pain",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-abdominal-pain",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-abdominal-pain",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-nausea",
+    "workflow_display_name": "GP Nausea/Vomiting",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-nausea",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "oral_gp-nausea",
+            "option_text": "Oral intake and hydration advice documented if discussed.",
+            "note_text": "Oral intake and hydration advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_gp-nausea",
+        "group_label": "med",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_gp-nausea",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_gp-nausea",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_gp-nausea",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-nausea",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-nausea",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-diarrhea",
+    "workflow_display_name": "GP Diarrhea",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-diarrhea",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "oral_gp-diarrhea",
+            "option_text": "Oral rehydration advice documented if discussed.",
+            "note_text": "Oral rehydration advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "diet_gp-diarrhea",
+            "option_text": "Dietary advice documented if discussed.",
+            "note_text": "Dietary advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_gp-diarrhea",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_gp-diarrhea",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-diarrhea",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-diarrhea",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-constipation",
+    "workflow_display_name": "GP Constipation",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-constipation",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "diet_gp-constipation",
+            "option_text": "Dietary and fluid advice documented if discussed.",
+            "note_text": "Dietary and fluid advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "lifestyle_gp-constipation",
+            "option_text": "Lifestyle advice documented if discussed.",
+            "note_text": "Lifestyle advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_gp-constipation",
+        "group_label": "med",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_gp-constipation",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-constipation",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-constipation",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-chest-pain",
+    "workflow_display_name": "GP Chest Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-chest-pain",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "plan_gp-chest-pain",
+            "option_text": "Clinician-entered plan documented.",
+            "note_text": "Clinician-entered plan documented.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "invest_gp-chest-pain",
+        "group_label": "invest",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-chest-pain",
+            "option_text": "Investigation follow-up documented if arranged.",
+            "note_text": "Investigation follow-up arranged.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_gp-chest-pain",
+        "group_label": "ref",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_gp-chest-pain",
+            "option_text": "Referral or escalation documented if clinician decided.",
+            "note_text": "Referral or escalation planned.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_gp-chest-pain",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "safety_gp-chest-pain",
+            "option_text": "Safety-netting documented if discussed.",
+            "note_text": "Safety-netting discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-palpitations",
+    "workflow_display_name": "GP Palpitations",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-palpitations",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "advice_gp-palpitations",
+            "option_text": "Palpitations management advice documented if discussed.",
+            "note_text": "Palpitations management advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "invest_gp-palpitations",
+        "group_label": "invest",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-palpitations",
+            "option_text": "Investigation follow-up documented if arranged.",
+            "note_text": "Investigation follow-up arranged.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_gp-palpitations",
+        "group_label": "ref",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_gp-palpitations",
+            "option_text": "Referral documented if clinician decided.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-palpitations",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-palpitations",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-shortness-of-breath",
+    "workflow_display_name": "GP Shortness of Breath",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-shortness-of-breath",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "plan_gp-shortness-of-breath",
+            "option_text": "Clinician-entered respiratory plan documented.",
+            "note_text": "Clinician-entered respiratory plan documented.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "invest_gp-shortness-of-breath",
+        "group_label": "invest",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-shortness-of-breath",
+            "option_text": "Investigation follow-up documented if arranged.",
+            "note_text": "Investigation follow-up arranged.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_gp-shortness-of-breath",
+        "group_label": "ref",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_gp-shortness-of-breath",
+            "option_text": "Referral or escalation documented if clinician decided.",
+            "note_text": "Referral or escalation planned.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_gp-shortness-of-breath",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_gp-shortness-of-breath",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-hypertension-followup",
+    "workflow_display_name": "GP Hypertension Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "monitoring_gp-hypertension-followup",
+        "group_label": "monitoring",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "bp_gp-hypertension-followup",
+            "option_text": "BP monitoring documented if discussed.",
+            "note_text": "BP monitoring discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_gp-hypertension-followup",
+        "group_label": "med",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "adherence_gp-hypertension-followup",
+            "option_text": "Medication adherence documented if discussed.",
+            "note_text": "Medication adherence discussed.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "review_gp-hypertension-followup",
+            "option_text": "Medication review documented if clinician decided.",
+            "note_text": "Medication review documented.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "lifestyle_gp-hypertension-followup",
+        "group_label": "lifestyle",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "lifestyle_gp-hypertension-followup",
+            "option_text": "Lifestyle advice documented if discussed.",
+            "note_text": "Lifestyle advice discussed.",
+            "option_category": "lifestyle_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-hypertension-followup",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-hypertension-followup",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-thyroid-followup",
+    "workflow_display_name": "GP Thyroid Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "med_gp-thyroid-followup",
+        "group_label": "med",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "adherence_gp-thyroid-followup",
+            "option_text": "Medication adherence documented if discussed.",
+            "note_text": "Medication adherence discussed.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "review_gp-thyroid-followup",
+            "option_text": "Medication review documented if clinician decided.",
+            "note_text": "Medication review documented.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "monitoring_gp-thyroid-followup",
+        "group_label": "monitoring",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "lab_gp-thyroid-followup",
+            "option_text": "Lab follow-up documented if arranged.",
+            "note_text": "Lab follow-up arranged.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-thyroid-followup",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-thyroid-followup",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-dyslipidemia-followup",
+    "workflow_display_name": "GP Dyslipidemia Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "lifestyle_gp-dyslipidemia-followup",
+        "group_label": "lifestyle",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "lifestyle_gp-dyslipidemia-followup",
+            "option_text": "Lifestyle advice documented if discussed.",
+            "note_text": "Lifestyle advice discussed.",
+            "option_category": "lifestyle_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_gp-dyslipidemia-followup",
+        "group_label": "med",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "adherence_gp-dyslipidemia-followup",
+            "option_text": "Medication adherence documented if discussed.",
+            "note_text": "Medication adherence discussed.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "review_gp-dyslipidemia-followup",
+            "option_text": "Medication review documented if clinician decided.",
+            "note_text": "Medication review documented.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-dyslipidemia-followup",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-dyslipidemia-followup",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "gp-lab-result-review",
+    "workflow_display_name": "GP Lab Result Review",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_gp-lab-result-review",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "explain_gp-lab-result-review",
+            "option_text": "Results explained or documented if discussed.",
+            "note_text": "Results explained.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "monitoring_gp-lab-result-review",
+        "group_label": "monitoring",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-lab-result-review",
+            "option_text": "Follow-up testing documented if arranged.",
+            "note_text": "Follow-up testing arranged.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_gp-lab-result-review",
+        "group_label": "ref",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_gp-lab-result-review",
+            "option_text": "Referral documented if clinician decided.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_gp-lab-result-review",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_gp-lab-result-review",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-1 GP batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
   }
 ]
