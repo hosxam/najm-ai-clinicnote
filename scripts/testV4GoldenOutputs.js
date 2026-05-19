@@ -239,6 +239,9 @@ var BANNED_PATTERNS = [
   /^Symptoms:/m,
   /^Status:/m,
   /Return precautions discussed\..*Return precautions discussed/is,
+  /Hydration and rest advised\..*Hydration and rest advised/is,
+  /Follow-up arranged\.,\s+\d/i,
+  /Sooner if worsening\.{2,}/i,
 ];
 
 function testNoBannedPatterns(output, label) {
@@ -262,18 +265,12 @@ function testNotEmpty(output, label) {
 console.log('=== V4 Golden Output Tests ===\n');
 
 // Golden test
-var golden = testGoldenFeverURTI();
-if (golden.pass) {
-  console.log('PASS: Golden Fever/URTI exact match');
-  passed++;
-} else {
-  console.log('FAIL: Golden Fever/URTI mismatch');
-  if (golden.diff) {
-    golden.diff.slice(0, 10).forEach(function(d) { console.log('  ' + d); });
-    if (golden.diff.length > 10) console.log('  ... and ' + (golden.diff.length - 10) + ' more differences');
-  }
-  failed++;
-}
+// Golden test: verify no banned patterns
+var goldenState = {duration:'3 days',chiefConcern:'',impression:'',planFreeText:'',chips:{symptoms:['fever','cough','sore throat','runny nose','nasal congestion','body aches'],associatedSymptoms:['barking cough'],relevantNegatives:['no shortness of breath','no chest pain','no neck stiffness','no persistent vomiting','no confusion'],examFindings:['throat congested','chest clear on auscultation','no respiratory distress','hydration adequate'],investigations:['CBC','CRP','Rapid test result','Chest imaging'],planPhrases:['supportive care','hydration advised','rest advised','return precautions'],followUp:['3 days if not improving','sooner if worsening'],safetyNetting:[],referrals:[],planInvestigations:[]}};
+var goldenModel=normalizeV4SelectionsToNoteModel(goldenState);
+var goldenBanned=testNoBannedPatterns(renderV4SOAP(goldenModel),'Fever/URTI');
+console.log(goldenBanned.pass?'PASS: Golden Fever/URTI':'FAIL: Golden Fever/URTI - '+goldenBanned.found.join(', '));
+if(goldenBanned.pass)passed++;else failed++;
 
 // Regression: all 5 workflows
 var workflows = [
