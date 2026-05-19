@@ -56,45 +56,6 @@
   // ================================================================
   //  GLOBAL V4 ENCOUNTER STATE (single source of truth for Step 6)
   // ================================================================
-  window.V4_ENCOUNTER_STATE = {
-    workflowId: '',
-    workflowName: '',
-    specialty: '',
-    selectedChips: {
-      symptoms: [],
-      relevantNegatives: [],
-      examFindings: [],
-      investigations: [],
-      planPhrases: [],
-      followUp: []
-    },
-    customEntries: {
-      symptoms: [],
-      relevantNegatives: [],
-      examFindings: [],
-      investigations: [],
-      planPhrases: [],
-      followUp: []
-    },
-    history: {
-      miniFields: {},
-      editedDraft: ''
-    },
-    exam: {
-      selectedPrompts: []
-    },
-    investigations: {
-      selectedOptions: []
-    },
-    assessment: {
-      impression: ''
-    },
-    plan: {
-      doctorPlan: '',
-      selectedOptions: []
-    }
-  };
-
   // CHIP GROUP NAMES (canonical: all use underscore keys matching state.capturedChips)
   // Keep as reference: 'symptoms', 'relevant_negatives', 'exam_findings', 'investigations', 'plan_phrases', 'follow_up'
 
@@ -242,65 +203,7 @@
   // ================================================================
   //  SYNC V4 ENCOUNTER STATE
   // ================================================================
-  function syncV4EncounterState() {
-    var es = window.V4_ENCOUNTER_STATE;
-    if (!es) return;
-
-    // Sync workflow info
-    es.workflowId = state.selectedWorkflowId || '';
-    es.workflowName = state.selectedWorkflowDisplay || '';
-    es.specialty = state.selectedWorkflowSpecialty || '';
-
-    // Sync chips from DOM (captures live user changes to chips)
-    var domChips = captureOPDChips();
-    // Direct pass-through: V4_ENCOUNTER_STATE uses same keys as state.capturedChips
-    for (var og in domChips) {
-      es.selectedChips[og] = domChips[og] || [];
-    }
-
-    // Sync custom entries (captured separately from DOM)
-    es.customEntries = { symptoms:[], relevant_negatives:[], exam_findings:[], investigations:[], plan_phrases:[], follow_up:[] };
-    try {
-      var area = document.getElementById('v2ChipGroups');
-      if (area) {
-        var customEls = area.querySelectorAll('[data-v2-custom-entry="true"].chip.selected');
-        for (var ci = 0; ci < customEls.length; ci++) {
-          var val = customEls[ci].getAttribute('data-value') || customEls[ci].textContent || '';
-          val = val.trim();
-          if (val) es.customEntries.symptoms.push(val);
-        }
-      }
-    } catch(e) {}
-
-    // Sync history
-    es.history.miniFields = {};
-    for (var mk in state.miniFieldDefs) {
-      es.history.miniFields[mk] = state.miniFieldDefs[mk].value || '';
-    }
-    es.history.editedDraft = state.historyDraft || '';
-
-    // Sync exam
-    es.exam.selectedPrompts = [];
-    for (var ek in state.examConfirmations) {
-      if (state.examConfirmations[ek]) es.exam.selectedPrompts.push(ek);
-    }
-
-    // Sync investigations
-    es.investigations.selectedOptions = [];
-    for (var ik in state.investigationConfirmations) {
-      if (state.investigationConfirmations[ik]) es.investigations.selectedOptions.push(ik);
-    }
-
-    // Sync assessment
-    es.assessment.impression = state.impression || '';
-
-    // Sync plan
-    es.plan.doctorPlan = state.planText || '';
-    es.plan.selectedOptions = [];
-    for (var pk in state.planConfirmations) {
-      if (state.planConfirmations[pk]) es.plan.selectedOptions.push(pk);
-    }
-  }
+  // syncV4EncounterState removed — collectV4State() reads fresh from DOM on each output generation
 
   // ================================================================
   //  CHIP CLICK LISTENER (auto-refresh Step 1 badge when chips change)
@@ -747,8 +650,9 @@
     }
 
     h += '<div class="v4-step-actions">';
-    h += '<button class="v4-btn v4-btn-ghost" onclick="window._v4ClearHistory()">Reset to default</button>';
-    h += '<button class="v4-btn v4-btn-outline" onclick="window._v4UpdateDraftFromFields()" style="margin-left:auto">Update draft from fields</button>';
+    h += '<button class="v4-btn v4-btn-ghost" onclick="window._v4PreviewSuggestion()" id="v4PreviewSuggestionBtn">Preview history suggestion</button>';
+    h += '<button class="v4-btn v4-btn-outline" onclick="window._v4UseSuggestion()">Use suggestion as draft</button>';
+    h += '<button class="v4-btn v4-btn-ghost" onclick="window._v4ClearHistory()">Clear draft</button>';
     h += '</div>';
     return h;
   }
@@ -936,17 +840,89 @@
   var _currentTab = 'adv-emr';
   var _outputGenerated = false;
 
-  function buildAdvancedDraft(tabId) {
-    // Clean history: strip remaining placeholders
-    var historyDraft = state.historyDraft || '';
-    historyDraft = removePlaceholderSentences(historyDraft);
-    if (!historyDraft) historyDraft = '[not documented]';
+  // ================================================================
+  //  V4 STATE PIPELINE (collect -> normalize -> route -> render)
+  // ================================================================
 
-    var impression = state.impression || '[not documented]';
-    var planFree = state.planText || '';
+  // Step 1: Collect fresh state from DOM and current selections
+  function collectV4State() {
+    var raw = {};
 
-    // ---- Collect exam items ----
-    var examItems = [];
+    // Workflow
+    raw.workflowId = state.selectedWorkflowId;
+    raw.workflowName = state.selectedWorkflowDisplay;
+    raw.specialty = state.selectedWorkflowSpecialty;
+
+    // Chips: read from DOM (includes user changes)
+    var domChips = captureOPDChips();
+    raw.chips = {
+      symptoms: domChips.symptoms || [],
+      relevant_negatives: domChips.relevant_negatives || [],
+      exam_findings: domChips.exam_findings || [],
+      investigations: domChips.investigations || [],
+      plan_phrases: domChips.plan_phrases || [],
+      follow_up: domChips.follow_up || []
+    };
+
+    // Custom entries from DOM
+    raw.customEntries = { symptoms: [], relevant_negatives: [], exam_findings: [], investigations: [], plan_phrases: [], follow_up: [] };
+    try {
+      var area = document.getElementById('v2ChipGroups');
+      if (area) {
+        var customEls = area.querySelectorAll('[data-v2-custom-entry="true"].chip.selected');
+        for (var ci = 0; ci < customEls.length; ci++) {
+          var val = customEls[ci].getAttribute('data-value') || customEls[ci].textContent || '';
+          val = val.trim();
+          if (val) raw.customEntries.symptoms.push(val);
+        }
+      }
+    } catch(e) {}
+
+    // History: read textarea value (preserves user edits)
+    var ta = document.getElementById('v4HistoryDraft');
+    raw.historyDraft = ta ? ta.value : (state.historyDraft || '');
+    raw.miniFieldDefs = state.miniFieldDefs || {};
+
+    // Exam
+    raw.examConfirmations = state.examConfirmations || {};
+
+    // Investigations
+    raw.investigationConfirmations = state.investigationConfirmations || {};
+
+    // Plan
+    raw.impression = state.impression || '';
+    raw.planText = state.planText || '';
+    raw.planConfirmations = state.planConfirmations || {};
+
+    return raw;
+  }
+
+  // Step 2: Normalize (pass-through, keys already consistent)
+  function normalizeV4State(raw) {
+    return raw;
+  }
+
+  // --- Internal helpers ---
+  function _v4norm(t) { return String(t).toLowerCase().replace(/\.+$/, '').trim(); }
+  function _v4section(label, content) {
+    if (!content || content === '[not documented]' || content === '') return '';
+    return label + ':\n' + content + '\n\n';
+  }
+  function _v4collectPlanOpts() {
+    var opts = [];
+    var plan = getPlanOptions(state.selectedWorkflowId);
+    if (plan && plan.plan_option_groups) {
+      for (var pgi = 0; pgi < plan.plan_option_groups.length; pgi++) {
+        var pg = plan.plan_option_groups[pgi];
+        for (var poi = 0; poi < pg.options.length; poi++) {
+          if (state.planConfirmations[pg.options[poi].option_id]) opts.push(pg.options[poi]);
+        }
+      }
+    }
+    return opts;
+  }
+  function _v4collectExamItems() {
+    var items = [];
     var exam = getExamDetails(state.selectedWorkflowId);
     if (exam && exam.exam_groups) {
       for (var gi = 0; gi < exam.exam_groups.length; gi++) {
@@ -956,218 +932,229 @@
           var key = group.group_id + '::' + group.prompts[pi].prompt_id;
           if (state.examConfirmations[key]) groupItems.push(group.prompts[pi].prompt_text);
         }
-        if (groupItems.length) examItems.push(group.group_label + ': ' + groupItems.join('; '));
+        if (groupItems.length) items.push(group.group_label + ': ' + groupItems.join('; '));
       }
     }
-    var examSection = examItems.length ? examItems.join('\n') : '[not documented]';
-
-    // ---- Collect V4 investigation items ----
-    var invItems = [];
+    return items;
+  }
+  function _v4collectInvItems() {
+    var items = [];
     var inv = getInvestigationOptions(state.selectedWorkflowId);
     if (inv && inv.investigation_groups) {
       for (var ivi = 0; ivi < inv.investigation_groups.length; ivi++) {
         var ig = inv.investigation_groups[ivi];
         for (var oi = 0; oi < ig.options.length; oi++) {
           var ikey = ig.group_id + '::' + ig.options[oi].option_id;
-          if (state.investigationConfirmations[ikey]) invItems.push(ig.options[oi].option_text);
+          if (state.investigationConfirmations[ikey]) items.push(ig.options[oi].option_text);
         }
       }
     }
+    return items;
+  }
 
-    // ---- Collect plan options ----
-    var planOpts = [];
-    var plan = getPlanOptions(state.selectedWorkflowId);
-    if (plan && plan.plan_option_groups) {
-      for (var pgi = 0; pgi < plan.plan_option_groups.length; pgi++) {
-        var pg = plan.plan_option_groups[pgi];
-        for (var poi = 0; poi < pg.options.length; poi++) {
-          if (state.planConfirmations[pg.options[poi].option_id]) planOpts.push(pg.options[poi]);
-        }
-      }
-    }
+  // Step 3: Route content to output sections
+  function routeV4Content(normalized) {
+    var chips = normalized.chips || {};
+    var custom = normalized.customEntries || {};
+    var historyDraft = removePlaceholderSentences(normalized.historyDraft || '');
+    var planFree = cleanText(normalized.planText || '');
+    var impression = normalized.impression || '';
+    var planOpts = _v4collectPlanOpts();
+    var examItems = _v4collectExamItems();
+    var invItems = _v4collectInvItems();
 
-    // ---- Collect Autofill chips ----
-    var chips = state.capturedChips || {};
-    var chipSymptoms = chips.symptoms || [];
-    var chipNegatives = chips.relevant_negatives || [];
-    var chipExam = chips.exam_findings || [];
-    var chipInv = chips.investigations || [];
-    var chipPlan = chips.plan_phrases || [];
-    var chipFollowUp = chips.follow_up || [];
-
-    // ---- DEDUPLICATION ----
-    function norm(t) { return t.toLowerCase().replace(/\.+$/, '').trim(); }
-    function inHistory(t) { return norm(t) && historyDraft.toLowerCase().indexOf(norm(t)) >= 0; }
-    function dedupe(items, against) {
+    // Simple dedup: same group and cross-group by norm
+    function dedupe(items, againstText) {
       var out = [], seen = {};
       for (var i = 0; i < items.length; i++) {
-        var n = norm(items[i]); if (!n || seen[n]) continue; seen[n] = true;
-        if (against && inHistory(items[i])) continue;
+        var n = _v4norm(items[i]);
+        if (!n || seen[n]) continue; seen[n] = true;
+        if (againstText && historyDraft && historyDraft.toLowerCase().indexOf(n) >= 0) continue;
         out.push(items[i]);
       }
       return out;
     }
 
-    var uniqueSymptoms = dedupe(chipSymptoms, true);
-    var uniqueNegatives = dedupe(chipNegatives, true);
-    var uniqueExamChips = dedupe(chipExam, true);
-    var uniqueInvChips = dedupe(chipInv, true);
-    var uniquePlanChips = dedupe(chipPlan, false);
-    var uniqueFollowUp = dedupe(chipFollowUp, false);
+    var route = {
+      historyLines: [],
+      relevantNegativeLines: [],
+      examinationLines: [],
+      investigationLines: [],
+      assessmentLines: [],
+      planLines: [],
+      followUpLines: [],
+      patientInstructionLines: []
+    };
 
-    // Deduplicate investigation chips against V4 investigation items
-    var allInvSeen = {};
-    for (var ixi = 0; ixi < invItems.length; ixi++) allInvSeen[norm(invItems[ixi])] = true;
-    var dedupedInvChips = [];
-    for (var ixci = 0; ixci < uniqueInvChips.length; ixci++) {
-      if (!allInvSeen[norm(uniqueInvChips[ixci])]) dedupedInvChips.push(uniqueInvChips[ixci]);
+    // History / Subjective
+    if (historyDraft) route.historyLines.push(historyDraft);
+    var symps = dedupe((chips.symptoms||[]).concat(custom.symptoms||[]), true);
+    if (symps.length) route.historyLines.push('Symptoms: ' + symps.join('; '));
+    var negs = dedupe((chips.relevant_negatives||[]).concat(custom.relevant_negatives||[]), true);
+    if (negs.length) route.relevantNegativeLines.push('Relevant negatives: ' + negs.join('; '));
+
+    // Objective
+    var examChips = dedupe((chips.exam_findings||[]).concat(custom.exam_findings||[]), true);
+    var allExam = examChips.concat(examItems);
+    if (allExam.length) route.examinationLines = allExam;
+
+    var invChips = dedupe((chips.investigations||[]).concat(custom.investigations||[]), false);
+    // Dedup invChips against invItems
+    var invSeen = {};
+    for (var ii = 0; ii < invItems.length; ii++) invSeen[_v4norm(invItems[ii])] = true;
+    var dedupedInvChips = invChips.filter(function(c) { return !invSeen[_v4norm(c)]; });
+    var allInv = invItems.concat(dedupedInvChips);
+    if (allInv.length) route.investigationLines = allInv;
+
+    // Assessment
+    if (impression) route.assessmentLines.push(impression);
+
+    // Plan
+    var planChips = dedupe((chips.plan_phrases||[]).concat(custom.plan_phrases||[]), false);
+    var planDoc = planFree;
+
+    // Separate Plan Assist options by category
+    var planAssistLines = [];
+    var fupOptLines = [];
+    var instOptLines = [];
+    var seenPlanAssist = {};
+    for (var poi = 0; poi < planOpts.length; poi++) {
+      var opt = planOpts[poi];
+      var n = _v4norm(opt.option_text);
+      if (!n || seenPlanAssist[n]) continue; seenPlanAssist[n] = true;
+      var cat = (opt.option_category || '').toLowerCase();
+      if (cat === 'follow_up' || cat === 'safety_netting') {
+        fupOptLines.push(opt.option_text);
+      } else if (cat.indexOf('patient_instruction') >= 0 || cat.indexOf('lifestyle') >= 0 || cat.indexOf('counseling') >= 0) {
+        instOptLines.push(opt.option_text);
+      } else {
+        planAssistLines.push(opt.option_text);
+      }
     }
 
-    var allInvItems = invItems.concat(dedupedInvChips);
+    if (planChips.length) route.planLines = route.planLines.concat(planChips);
+    if (planAssistLines.length) route.planLines = route.planLines.concat(planAssistLines);
+    if (planDoc) route.planLines.push(planDoc);
 
-    // Deduplicate plan options against history and chip plan
-    var uniquePlanOpts = [];
-    var seenPlan = {};
-    for (var pi2 = 0; pi2 < planOpts.length; pi2++) {
-      var n = norm(planOpts[pi2].option_text);
-      if (!n || seenPlan[n]) continue; seenPlan[n] = true;
-      if (inHistory(planOpts[pi2].option_text)) continue;
-      var dup = false;
-      for (var ci = 0; ci < uniquePlanChips.length; ci++) {
-        if (norm(uniquePlanChips[ci]) === n) { dup = true; break; }
+    // Follow-up
+    var fupChips = dedupe((chips.follow_up||[]).concat(custom.follow_up||[]), false);
+    route.followUpLines = fupChips.concat(fupOptLines);
+
+    // Patient instructions
+    route.patientInstructionLines = instOptLines;
+    if (planDoc) route.patientInstructionLines.push(planDoc);
+
+    // Dedup final plan lines against themselves
+    (function dedupFinal(arr) {
+      var seen = {};
+      for (var i = arr.length - 1; i >= 0; i--) {
+        var n = _v4norm(arr[i]);
+        if (!n || seen[n]) { arr.splice(i, 1); continue; }
+        seen[n] = true;
       }
-      if (!dup) uniquePlanOpts.push(planOpts[pi2]);
-    }
-
-    var cleanPlanFree = cleanText(planFree);
-
-    // Build plan section (no follow_up or safety_netting items here)
-    var planLines = [];
-    if (uniquePlanChips.length) planLines = planLines.concat(uniquePlanChips);
-    for (var poi3 = 0; poi3 < uniquePlanOpts.length; poi3++) {
-      var cat = uniquePlanOpts[poi3].option_category || '';
-      if (cat !== 'follow_up' && cat !== 'safety_netting') planLines.push(uniquePlanOpts[poi3].option_text);
-    }
-    if (cleanPlanFree) planLines.push(cleanPlanFree);
-    var planSection = planLines.length ? planLines.join('\n') : '[not documented]';
-
-    // Build follow-up section separately (includes safety-netting)
-    var fupItems = [];
-    if (uniqueFollowUp.length) for (var fi = 0; fi < uniqueFollowUp.length; fi++) fupItems.push(uniqueFollowUp[fi]);
-    for (var pgi2 = 0; pgi2 < planOpts.length; pgi2++) {
-      var fupCat = (planOpts[pgi2].option_category || '').toLowerCase();
-      if (state.planConfirmations[planOpts[pgi2].option_id] && (fupCat === 'follow_up' || fupCat === 'safety_netting')) {
-        var fn = norm(planOpts[pgi2].option_text);
-        var dup2 = false;
-        for (var fi2 = 0; fi2 < fupItems.length; fi2++) { if (norm(fupItems[fi2]) === fn) { dup2 = true; break; } }
-        if (!dup2) fupItems.push(planOpts[pgi2].option_text);
+    })(route.planLines);
+    (function dedupFinal(arr) {
+      var seen = {};
+      for (var i = arr.length - 1; i >= 0; i--) {
+        var n = _v4norm(arr[i]);
+        if (!n || seen[n]) { arr.splice(i, 1); continue; }
+        seen[n] = true;
       }
-    }
-    var fupSection = fupItems.length ? fupItems.join('\n') : '';
-
-    var invSection = allInvItems.length ? allInvItems.join('\n') : '';
-    var histSection = buildHistorySection(historyDraft, uniqueSymptoms, uniqueNegatives);
-    var footer = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
-
-    // ---- BUILD DRAFT BY FORMAT ----
-    function section(label, content) {
-      if (!content || content === '[not documented]') return '';
-      return label + ':\n' + content + '\n\n';
-    }
-
-    switch (tabId) {
-      case 'adv-emr': {
-        var emr = 'SHORT EMR NOTE\n' + '='.repeat(40) + '\n\n';
-        emr += section('History', histSection);
-        emr += section('Examination', examSection);
-        emr += section('Investigations / Results Reviewed', invSection);
-        emr += section('Assessment', impression);
-        emr += section('Plan', planSection);
-        emr += section('Follow-up', fupSection);
-        return emr + footer;
+    })(route.followUpLines);
+    (function dedupFinal(arr) {
+      var seen = {};
+      for (var i = arr.length - 1; i >= 0; i--) {
+        var n = _v4norm(arr[i]);
+        if (!n || seen[n]) { arr.splice(i, 1); continue; }
+        seen[n] = true;
       }
-      case 'adv-soap': {
-        var soap = 'SOAP NOTE\n' + '='.repeat(40) + '\n\n';
-        soap += 'SUBJECTIVE:\n' + histSection + '\n\n';
-        soap += 'OBJECTIVE:\n' + examSection + '\n\n';
-        soap += section('Investigations / Results Reviewed', invSection);
-        soap += 'ASSESSMENT:\n' + impression + '\n\n';
-        soap += 'PLAN:\n' + planSection + '\n';
-        soap += section('Follow-up', fupSection);
-        return soap + footer;
-      }
-      case 'adv-ref': {
-        // Check if any referral-related Plan Assist options are selected
-        var hasReferralCat = false;
-        var referralDetails = '';
-        for (var rpi = 0; rpi < planOpts.length; rpi++) {
-          var rcat = (planOpts[rpi].option_category || '').toLowerCase();
-          if (rcat.indexOf('referral') >= 0) {
-            hasReferralCat = true;
-            referralDetails += planOpts[rpi].option_text + '\n';
-          }
-        }
-        var hasReferralText = cleanPlanFree && (cleanPlanFree.toLowerCase().indexOf('refer') >= 0);
-        var hasReferralImpression = impression && impression !== '[not documented]' && impression.toLowerCase().indexOf('refer') >= 0;
+    })(route.patientInstructionLines);
 
-        if (!hasReferralCat && !hasReferralText && !hasReferralImpression) {
-          return 'REFERRAL DRAFT\n' + '='.repeat(40) + '\n\nReferral draft: [not requested/documented]\n' + footer;
-        }
-
-        var ref = 'REFERRAL DRAFT\n' + '='.repeat(40) + '\n\n';
-        if (referralDetails) ref += 'Referral details:\n' + referralDetails + '\n\n';
-        ref += section('Reason for referral', historyDraft);
-        ref += section('Clinical history', histSection);
-        ref += section('Examination findings', examSection);
-        ref += section('Investigations', invSection);
-        ref += section('Current impression', impression);
-        ref += section('Plan / recommendations', planSection);
-        ref += section('Follow-up', fupSection);
-        ref += 'Please see and advise.\n';
-        return ref + footer;
-      }
-      case 'adv-inst': {
-        // Patient instructions: ONLY plan content, no history/exam/investigations
-        var instLines = [];
-        var instSeen = {};
-        if (plan && plan.plan_option_groups) {
-          for (var pgi3 = 0; pgi3 < plan.plan_option_groups.length; pgi3++) {
-            var pg3 = plan.plan_option_groups[pgi3];
-            for (var poi4 = 0; poi4 < pg3.options.length; poi4++) {
-              var opt3 = pg3.options[poi4];
-              if (state.planConfirmations[opt3.option_id]) {
-                var cat = (opt3.option_category || '').toLowerCase();
-                if (cat.indexOf('patient_instruction') >= 0 || cat.indexOf('safety_netting') >= 0 || cat.indexOf('follow_up') >= 0 || cat.indexOf('lifestyle') >= 0 || cat.indexOf('counseling') >= 0) {
-                  var nt = norm(opt3.option_text);
-                  if (nt && !instSeen[nt]) { instLines.push(opt3.option_text); instSeen[nt] = true; }
-                }
-              }
-            }
-          }
-        }
-        if (cleanPlanFree) {
-          var npt = norm(cleanPlanFree);
-          if (npt && !instSeen[npt]) { instLines.push(cleanPlanFree); instSeen[npt] = true; }
-        }
-
-        if (!instLines.length) {
-          return 'PATIENT INSTRUCTIONS\n' + '='.repeat(40) + '\n\n[not documented]\n' + footer;
-        }
-        return 'PATIENT INSTRUCTIONS\n' + '='.repeat(40) + '\n\n' +
-          'Advice / plan discussed:\n' + instLines.join('\n') + '\n\n' +
-          'Review with your clinician. Seek medical attention if symptoms worsen.\n' + footer;
-      }
-      default:
-        return 'Select an output format.';
-    }
+    return route;
   }
 
-  function buildHistorySection(historyDraft, symptoms, negatives) {
-    var parts = [];
-    if (historyDraft) parts.push(historyDraft);
-    if (symptoms && symptoms.length) parts.push('Symptoms: ' + symptoms.join('; '));
-    if (negatives && negatives.length) parts.push('Relevant negatives: ' + negatives.join('; '));
-    return parts.join('\n\n');
+  // Step 4: Render EMR
+  function renderV4EMR(route) {
+    var footer = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
+    var h = 'SHORT EMR NOTE\n' + '='.repeat(40) + '\n\n';
+    h += _v4section('History', (route.historyLines||[]).join('\n'));
+    h += _v4section('Relevant negatives', (route.relevantNegativeLines||[]).join('\n'));
+    h += _v4section('Examination', (route.examinationLines||[]).join('\n'));
+    h += _v4section('Investigations / Results Reviewed', (route.investigationLines||[]).join('\n'));
+    h += _v4section('Assessment', (route.assessmentLines||[]).join('\n'));
+    h += _v4section('Plan', (route.planLines||[]).join('\n'));
+    h += _v4section('Follow-up', (route.followUpLines||[]).join('\n'));
+    return h + footer;
+  }
+
+  // Step 4: Render SOAP
+  function renderV4SOAP(route) {
+    var footer = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
+    var subj = [];
+    if ((route.historyLines||[]).length) subj.push((route.historyLines||[]).join('\n'));
+    if ((route.relevantNegativeLines||[]).length) subj.push((route.relevantNegativeLines||[]).join('\n'));
+    var obj = [];
+    if ((route.examinationLines||[]).length) obj.push('Examination: ' + (route.examinationLines||[]).join('; '));
+    if ((route.investigationLines||[]).length) obj.push('Investigations: ' + (route.investigationLines||[]).join('; '));
+    var ass = (route.assessmentLines||[]).join('\n') || '[not documented]';
+    var planParts = [];
+    if ((route.planLines||[]).length) planParts.push((route.planLines||[]).join('\n'));
+    if ((route.followUpLines||[]).length) planParts.push('Follow-up: ' + (route.followUpLines||[]).join('; '));
+    var plan = planParts.length ? planParts.join('\n') : '[not documented]';
+
+    var s = 'SOAP NOTE\n' + '='.repeat(40) + '\n\n';
+    s += 'SUBJECTIVE:\n' + (subj.length ? subj.join('\n\n') : '[not documented]') + '\n\n';
+    s += 'OBJECTIVE:\n' + (obj.length ? obj.join('\n') : '[not documented]') + '\n\n';
+    s += 'ASSESSMENT:\n' + ass + '\n\n';
+    s += 'PLAN:\n' + plan + '\n';
+    return s + footer;
+  }
+
+  // Step 4: Render Referral
+  function renderV4Referral(route) {
+    var footer = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
+    var planText = (route.planLines||[]).join('\n');
+    var hasReferralText = planText && planText.toLowerCase().indexOf('refer') >= 0;
+    var hasReferralAssess = (route.assessmentLines||[]).join(' ').toLowerCase().indexOf('refer') >= 0;
+    if (!hasReferralText && !hasReferralAssess) {
+      return 'REFERRAL DRAFT\n' + '='.repeat(40) + '\n\nReferral draft: [not requested/documented]\n' + footer;
+    }
+    var r = 'REFERRAL DRAFT\n' + '='.repeat(40) + '\n\n';
+    r += _v4section('Reason for referral', (route.historyLines||[]).join('\n'));
+    r += _v4section('Clinical history', (route.historyLines||[]).join('\n'));
+    r += _v4section('Examination findings', (route.examinationLines||[]).join('\n'));
+    r += _v4section('Investigations', (route.investigationLines||[]).join('\n'));
+    r += _v4section('Current impression', (route.assessmentLines||[]).join('\n'));
+    r += _v4section('Plan / recommendations', planText);
+    r += _v4section('Follow-up', (route.followUpLines||[]).join('\n'));
+    r += 'Please see and advise.\n';
+    return r + footer;
+  }
+
+  // Step 4: Render Instructions
+  function renderV4Instructions(route) {
+    var footer = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
+    var lines = route.patientInstructionLines || [];
+    if (!lines.length) {
+      return 'PATIENT INSTRUCTIONS\n' + '='.repeat(40) + '\n\n[not documented]\n' + footer;
+    }
+    return 'PATIENT INSTRUCTIONS\n' + '='.repeat(40) + '\n\n' +
+      'Advice / plan discussed:\n' + lines.join('\n') + '\n\n' +
+      'Review with your clinician. Seek medical attention if symptoms worsen.\n' + footer;
+  }
+
+  // Main output generator: collect -> route -> render
+  function buildAdvancedDraft(tabId) {
+    var raw = collectV4State();
+    var norm = normalizeV4State(raw);
+    var route = routeV4Content(norm);
+    switch (tabId) {
+      case 'adv-emr': return renderV4EMR(route);
+      case 'adv-soap': return renderV4SOAP(route);
+      case 'adv-ref': return renderV4Referral(route);
+      case 'adv-inst': return renderV4Instructions(route);
+      default: return 'Select an output format.';
+    }
   }
 
   function cleanText(text) {
@@ -1179,10 +1166,6 @@
       .replace(/per clinician plan/gi, '')
       .replace(/\s{2,}/g, ' ')
       .trim();
-  }
-
-  function fmtCat(cat) {
-    return (cat || '').replace(/_/g, ' ').replace(/\b\w/g, function(c){ return c.toUpperCase(); });
   }
 
   // ================================================================
@@ -1225,6 +1208,40 @@
       if (pc > 0) h += '<div class="v4-si"><span class="v4-si-label">Plan options:</span><span class="v4-si-val">' + pc + ' selected</span></div>';
     }
     container.innerHTML = h;
+
+    // Debug panel (only shown with ?debug=v4)
+    if (window.location.search.indexOf('debug=v4') >= 0 && state.selectedWorkflowId) {
+      var debugEl = document.getElementById('v4DebugPanel');
+      if (!debugEl) {
+        debugEl = document.createElement('div');
+        debugEl.id = 'v4DebugPanel';
+        debugEl.style.cssText = 'margin-top:16px;padding:12px;background:#f8fafc;border:1px solid #cbd5e1;border-radius:8px;font-size:11px;font-family:monospace;line-height:1.6;color:#334155;max-height:400px;overflow:auto';
+        var sidebar = document.querySelector('.v4-sidebar-inner');
+        if (sidebar) sidebar.appendChild(debugEl);
+      }
+      var raw = collectV4State();
+      var route = routeV4Content(normalizeV4State(raw));
+      var dbg = '<div style="font-weight:700;margin-bottom:8px;color:#0c4a6e;font-size:12px">[DEBUG] V4 Pipeline</div>';
+      dbg += '<div>Workflow: ' + esc(raw.workflowId) + '</div>';
+      dbg += '<div style="margin-top:6px;font-weight:600">Captured chips:</div>';
+      for (var dg in raw.chips) {
+        dbg += '<div>' + dg + ': ' + (raw.chips[dg]||[]).length + ' items</div>';
+      }
+      dbg += '<div style="margin-top:6px;font-weight:600">Routed content:</div>';
+      dbg += '<div>historyLines: ' + (route.historyLines||[]).length + '</div>';
+      dbg += '<div>relevantNegativeLines: ' + (route.relevantNegativeLines||[]).length + '</div>';
+      dbg += '<div>examinationLines: ' + (route.examinationLines||[]).length + '</div>';
+      dbg += '<div>investigationLines: ' + (route.investigationLines||[]).length + '</div>';
+      dbg += '<div>assessmentLines: ' + (route.assessmentLines||[]).length + '</div>';
+      dbg += '<div>planLines: ' + (route.planLines||[]).length + '</div>';
+      dbg += '<div>followUpLines: ' + (route.followUpLines||[]).length + '</div>';
+      dbg += '<div style="margin-top:6px">Routed plan samples:</div>';
+      var planSamples = (route.planLines||[]).slice(0,3);
+      for (var psi = 0; psi < planSamples.length; psi++) {
+        dbg += '<div style="padding-left:8px">- ' + esc(planSamples[psi].substring(0,40)) + '</div>';
+      }
+      debugEl.innerHTML = dbg;
+    }
   }
 
   // ================================================================
@@ -1300,8 +1317,59 @@
     updateSidebar();
   };
 
-  window._v4UpdateDraftFromFields = function() {
-    updateHistoryDraftFromMiniFields();
+  window._v4PreviewSuggestion = function() {
+    // Generate suggestion from mini-fields without overwriting draft
+    var draft = getHistoryDraft(state.selectedWorkflowId);
+    if (!draft) return;
+    var ta = document.getElementById('v4HistoryDraft');
+    var text = ta ? ta.value : (state.historyDraft || draft.default_history_draft);
+    var defs = state.miniFieldDefs;
+    for (var key in defs) {
+      var def = defs[key];
+      if (def.value && def.value.trim()) {
+        text = text.split(def.placeholder).join(def.value.trim());
+      }
+    }
+    text = removePlaceholderSentences(text);
+
+    // Show in a preview area
+    var prev = document.getElementById('v4HistoryPreview');
+    if (!prev) {
+      var stepContent = document.getElementById('v4StepContent');
+      if (stepContent) {
+        prev = document.createElement('div');
+        prev.id = 'v4HistoryPreview';
+        prev.style.cssText = 'margin-top:12px;padding:12px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;font-size:12px;line-height:1.6;white-space:pre-wrap;color:#166534';
+        // Insert after textarea
+        var ta2 = document.getElementById('v4HistoryDraft');
+        if (ta2 && ta2.parentNode) {
+          ta2.parentNode.insertBefore(prev, ta2.nextSibling);
+        }
+      }
+    }
+    if (prev) {
+      prev.innerHTML = '<div style="font-weight:700;margin-bottom:6px">Generated suggestion (not yet applied):</div><div>' + esc(text) + '</div>';
+    }
+  };
+
+  window._v4UseSuggestion = function() {
+    // Regenerate and apply to textarea
+    var draft = getHistoryDraft(state.selectedWorkflowId);
+    if (!draft) return;
+    var ta = document.getElementById('v4HistoryDraft');
+    var text = ta ? ta.value : (state.historyDraft || draft.default_history_draft);
+    var defs = state.miniFieldDefs;
+    for (var key in defs) {
+      var def = defs[key];
+      if (def.value && def.value.trim()) {
+        text = text.split(def.placeholder).join(def.value.trim());
+      }
+    }
+    text = removePlaceholderSentences(text);
+    state.historyDraft = text;
+    if (ta) ta.value = text;
+    checkAllPhi();
+    updateSidebar();
   };
 
   window._v4ClearHistory = function() {
@@ -1386,8 +1454,7 @@
 
   // Output
   window._v4Generate = function() {
-    // Sync all state to V4_ENCOUNTER_STATE before generating output
-    syncV4EncounterState();
+    // collectV4State() reads fresh from DOM, no stale state needed
     var text = document.getElementById('v4OutputText');
     if (!text) return;
     var tabEl = document.querySelector('.v4-out-tab.active');
