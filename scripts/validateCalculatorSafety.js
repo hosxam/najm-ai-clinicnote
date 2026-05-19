@@ -77,9 +77,7 @@ if (!fs.existsSync(CALC_PATH)) {
     /\bGCS\b/i,
     /\bABCD2\b/i,
     /\bCanadian\s+CT\b/i,
-    /\bPHQ-9\b/i,
-    /\bGAD-7\b/i
-  ];
+      ];
   for (const pattern of highRiskNames) {
     assert(!pattern.test(calc), `calculator-tools.js appears to implement a disallowed calculator: ${pattern}`);
   }

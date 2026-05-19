@@ -114,6 +114,98 @@
     };
   }
 
+  // ---- PHQ-2 (low-risk screening tool) ----
+  function calculatePHQ2(q1, q2) {
+    var v1 = parseInt(q1, 10);
+    var v2 = parseInt(q2, 10);
+    if (isNaN(v1) || isNaN(v2) || v1 < 0 || v1 > 3 || v2 < 0 || v2 > 3) {
+      return { ok: false, error: "Select a response (0-3) for each PHQ-2 question." };
+    }
+    var score = v1 + v2;
+    var interpretation = score >= 3 ? "Positive screen (score " + score + "). Further clinical assessment may be indicated." : "Score " + score + ". Below screening threshold.";
+    return {
+      ok: true, calculatorId: "phq_2", value: score,
+      text: "PHQ-2 score: " + score + ". " + interpretation + ".",
+      safetyNote: "PHQ-2 is a screening tool only. It does not diagnose depression. Positive screens require clinical assessment. Not a crisis tool."
+    };
+  }
+
+  // ---- PHQ-9 (low-risk screening tool) ----
+  function calculatePHQ9(scores) {
+    if (!Array.isArray(scores) || scores.length !== 9) {
+      return { ok: false, error: "Enter all 9 PHQ-9 responses (0-3 each)." };
+    }
+    var sum = 0;
+    for (var i = 0; i < 9; i++) {
+      var v = parseInt(scores[i], 10);
+      if (isNaN(v) || v < 0 || v > 3) return { ok: false, error: "Each PHQ-9 response must be 0-3." };
+      sum += v;
+    }
+    var severity = sum <= 4 ? "minimal" : sum <= 9 ? "mild" : sum <= 14 ? "moderate" : sum <= 19 ? "moderately severe" : "severe";
+    return {
+      ok: true, calculatorId: "phq_9", value: sum,
+      text: "PHQ-9 score: " + sum + " (" + severity + " depression severity).",
+      safetyNote: "PHQ-9 is a screening tool only. It does not diagnose depression or assess suicide risk. Clinical assessment required. Not a crisis tool."
+    };
+  }
+
+  // ---- GAD-7 (low-risk screening tool) ----
+  function calculateGAD7(scores) {
+    if (!Array.isArray(scores) || scores.length !== 7) {
+      return { ok: false, error: "Enter all 7 GAD-7 responses (0-3 each)." };
+    }
+    var sum = 0;
+    for (var i = 0; i < 7; i++) {
+      var v = parseInt(scores[i], 10);
+      if (isNaN(v) || v < 0 || v > 3) return { ok: false, error: "Each GAD-7 response must be 0-3." };
+      sum += v;
+    }
+    var severity = sum <= 4 ? "minimal" : sum <= 9 ? "mild" : sum <= 14 ? "moderate" : "severe";
+    return {
+      ok: true, calculatorId: "gad_7", value: sum,
+      text: "GAD-7 score: " + sum + " (" + severity + " anxiety severity).",
+      safetyNote: "GAD-7 is a screening tool only. It does not diagnose anxiety disorders. Clinical assessment required."
+    };
+  }
+
+  // ---- Epworth Sleepiness Scale (low-risk screening tool) ----
+  function calculateEpworth(scores) {
+    if (!Array.isArray(scores) || scores.length !== 8) {
+      return { ok: false, error: "Enter all 8 Epworth responses (0-3 each)." };
+    }
+    var sum = 0;
+    for (var i = 0; i < 8; i++) {
+      var v = parseInt(scores[i], 10);
+      if (isNaN(v) || v < 0 || v > 3) return { ok: false, error: "Each Epworth response must be 0-3." };
+      sum += v;
+    }
+    var interpretation = sum <= 10 ? "Normal daytime sleepiness." : sum <= 15 ? "Mild to moderate excessive daytime sleepiness." : "Severe excessive daytime sleepiness.";
+    return {
+      ok: true, calculatorId: "epworth_sleepiness_scale", value: sum,
+      text: "Epworth score: " + sum + ". " + interpretation + ".",
+      safetyNote: "Epworth is a screening tool only. It does not diagnose sleep disorders. Clinical assessment required."
+    };
+  }
+
+  // ---- IPSS (low-risk documentation tool) ----
+  function calculateIPSS(scores) {
+    if (!Array.isArray(scores) || scores.length !== 7) {
+      return { ok: false, error: "Enter all 7 IPSS responses." };
+    }
+    var sum = 0;
+    for (var i = 0; i < 7; i++) {
+      var v = parseInt(scores[i], 10);
+      if (isNaN(v) || v < 0 || v > 5) return { ok: false, error: "Each IPSS response must be 0-5." };
+      sum += v;
+    }
+    var severity = sum <= 7 ? "mild" : sum <= 19 ? "moderate" : "severe";
+    return {
+      ok: true, calculatorId: "ipss", value: sum,
+      text: "IPSS score: " + sum + " (" + severity + " symptoms).",
+      safetyNote: "IPSS is a symptom documentation tool only. It does not diagnose prostate conditions. Clinical assessment required."
+    };
+  }
+
   function getCalculatorSafetyFooter() {
     return "Calculator values are processed locally in your browser. Do not enter patient-identifiable information. Calculator outputs are documentation aids only and do not diagnose, recommend treatment, or replace clinician judgment.";
   }
@@ -195,6 +287,11 @@
     calculateMAP: calculateMAP,
     calculateShockIndex: calculateShockIndex,
     classifyMRCDyspnea: classifyMRCDyspnea,
+    calculatePHQ2: calculatePHQ2,
+    calculatePHQ9: calculatePHQ9,
+    calculateGAD7: calculateGAD7,
+    calculateEpworth: calculateEpworth,
+    calculateIPSS: calculateIPSS,
     clearCalculatorInputs: clearCalculatorInputs,
     getCalculatorSafetyFooter: getCalculatorSafetyFooter,
     calculateFromUI: calculateFromUI,
