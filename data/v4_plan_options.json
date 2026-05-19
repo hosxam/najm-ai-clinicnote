@@ -6443,5 +6443,830 @@
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft"
+  },
+  {
+    "workflow_id": "derm-rash",
+    "workflow_display_name": "Dermatology Rash",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_derm-rash",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "skin_derm-rash",
+            "option_text": "Skin care advice documented if discussed.",
+            "note_text": "Skin care advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "trigger_derm-rash",
+            "option_text": "Trigger avoidance documented if discussed.",
+            "note_text": "Trigger avoidance discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_derm-rash",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_derm-rash",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_derm-rash",
+        "group_label": "safety",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_derm-rash",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_derm-rash",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_derm-rash",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "derm-acne",
+    "workflow_display_name": "Dermatology Acne",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_derm-acne",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "skin_derm-acne",
+            "option_text": "Skin care advice documented if discussed.",
+            "note_text": "Skin care advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_derm-acne",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_derm-acne",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "psychosocial_derm-acne",
+        "group_label": "psychosocial",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "scarring_derm-acne",
+            "option_text": "Scarring or psychosocial concerns documented if discussed.",
+            "note_text": "Scarring or psychosocial concerns discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_derm-acne",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_derm-acne",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "derm-eczema",
+    "workflow_display_name": "Dermatology Eczema",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_derm-eczema",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "emollient_derm-eczema",
+            "option_text": "Emollient or skin care advice documented if discussed.",
+            "note_text": "Emollient advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "trigger_derm-eczema",
+            "option_text": "Trigger avoidance documented if discussed.",
+            "note_text": "Trigger avoidance discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_derm-eczema",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_derm-eczema",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "flare_derm-eczema",
+        "group_label": "flare",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "flare_derm-eczema",
+            "option_text": "Flare plan documented if clinician discussed.",
+            "note_text": "Flare plan discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_derm-eczema",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_derm-eczema",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "derm-fungal-infection",
+    "workflow_display_name": "Dermatology Fungal Infection",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_derm-fungal-infection",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "hygiene_derm-fungal-infection",
+            "option_text": "Hygiene or skin care advice documented if discussed.",
+            "note_text": "Skin care advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_derm-fungal-infection",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_derm-fungal-infection",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "prevention_derm-fungal-infection",
+        "group_label": "prevention",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "recurrence_derm-fungal-infection",
+            "option_text": "Recurrence prevention advice documented if discussed.",
+            "note_text": "Recurrence prevention advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_derm-fungal-infection",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_derm-fungal-infection",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "derm-urticaria",
+    "workflow_display_name": "Dermatology Urticaria",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_derm-urticaria",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "trigger_derm-urticaria",
+            "option_text": "Trigger avoidance documented if discussed.",
+            "note_text": "Trigger avoidance discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_derm-urticaria",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_derm-urticaria",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_derm-urticaria",
+        "group_label": "safety",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_derm-urticaria",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_derm-urticaria",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_derm-urticaria",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "derm-wound-review",
+    "workflow_display_name": "Dermatology Wound Review",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_derm-wound-review",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "wound_derm-wound-review",
+            "option_text": "Wound care advice documented if discussed.",
+            "note_text": "Wound care advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "dressing_derm-wound-review",
+            "option_text": "Dressing plan documented if clinician decided.",
+            "note_text": "Dressing plan documented.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_derm-wound-review",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_derm-wound-review",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_derm-wound-review",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_derm-wound-review",
+            "option_text": "Referral documented if clinician arranged.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_derm-wound-review",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_derm-wound-review",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "derm-skin-lesion-review",
+    "workflow_display_name": "Dermatology Skin Lesion Review",
+    "plan_option_groups": [
+      {
+        "group_id": "monitoring_derm-skin-lesion-review",
+        "group_label": "monitoring",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "monitor_derm-skin-lesion-review",
+            "option_text": "Monitoring advice documented if discussed.",
+            "note_text": "Monitoring advice discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_derm-skin-lesion-review",
+        "group_label": "ref",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_derm-skin-lesion-review",
+            "option_text": "Referral documented if clinician arranged.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "procedure_derm-skin-lesion-review",
+        "group_label": "procedure",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "biopsy_derm-skin-lesion-review",
+            "option_text": "Biopsy or procedure discussion documented if clinician decided.",
+            "note_text": "Biopsy or procedure discussion documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_derm-skin-lesion-review",
+        "group_label": "safety",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "warning_derm-skin-lesion-review",
+            "option_text": "Warning symptoms documented if discussed.",
+            "note_text": "Warning symptoms discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_derm-skin-lesion-review",
+        "group_label": "fup",
+        "display_order": 5,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_derm-skin-lesion-review",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "derm-hair-loss",
+    "workflow_display_name": "Dermatology Hair Loss",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_derm-hair-loss",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "hair_derm-hair-loss",
+            "option_text": "Hair or scalp care advice documented if discussed.",
+            "note_text": "Hair care advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_derm-hair-loss",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_derm-hair-loss",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "inv_derm-hair-loss",
+        "group_label": "inv",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_derm-hair-loss",
+            "option_text": "Investigation follow-up documented if arranged.",
+            "note_text": "Investigation follow-up arranged.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_derm-hair-loss",
+        "group_label": "ref",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_derm-hair-loss",
+            "option_text": "Referral documented if clinician arranged.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_derm-hair-loss",
+        "group_label": "fup",
+        "display_order": 5,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_derm-hair-loss",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-6 Derm",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
   }
 ]

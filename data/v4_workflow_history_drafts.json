@@ -1999,5 +1999,238 @@
     ],
     "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
     "review_required": true
+  },
+  {
+    "workflow_id": "derm-rash",
+    "workflow_display_name": "Dermatology Rash",
+    "default_history_draft": "Patient seen with rash for [duration]. Distribution: [distribution]. Morphology: [morphology_description]. Itching/pain: [itching_or_pain_context]. Fever/systemic: [fever_or_systemic_context]. Trigger/exposure: [trigger_or_exposure_context]. New medication: [new_medication_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[distribution]",
+      "[morphology description]",
+      "[itching or pain context]",
+      "[fever or systemic context]",
+      "[trigger or exposure context]",
+      "[new medication context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-acne",
+    "workflow_display_name": "Dermatology Acne",
+    "default_history_draft": "Patient seen with acne for [duration]. Distribution: [distribution]. Lesion type: [lesion_type_context]. Scarring/pain: [scarring_or_pain_context]. Flare triggers: [flare_triggers]. Previous treatments: [previous_treatments]. Psychosocial impact: [psychosocial_impact]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[distribution]",
+      "[lesion type context]",
+      "[scarring or pain context]",
+      "[flare triggers]",
+      "[previous treatments]",
+      "[psychosocial impact]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-eczema",
+    "workflow_display_name": "Dermatology Eczema",
+    "default_history_draft": "Patient seen with eczema for [duration]. Distribution: [distribution]. Itching severity: [itching_severity]. Flare pattern: [flare_pattern]. Triggers: [trigger_context]. Atopy history: [atopy_history]. Previous treatment: [previous_treatment_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[distribution]",
+      "[itching severity]",
+      "[flare pattern]",
+      "[trigger context]",
+      "[atopy history]",
+      "[previous treatment context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-fungal-infection",
+    "workflow_display_name": "Dermatology Fungal Infection",
+    "default_history_draft": "Patient seen with suspected fungal infection for [duration]. Location: [location]. Itching/scaling: [itching_scaling_context]. Contact/exposure: [contact_or_exposure_context]. Previous treatment: [previous_treatment_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[location]",
+      "[itching scaling context]",
+      "[contact or exposure context]",
+      "[previous treatment context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-urticaria",
+    "workflow_display_name": "Dermatology Urticaria",
+    "default_history_draft": "Patient seen with urticaria for [duration]. Wheals/hives: [wheals_or_hives_context]. Trigger/exposure: [trigger_or_exposure_context]. Swelling: [swelling_context]. Breathing/dizziness: [breathing_or_dizziness_context]. Medication/food exposure: [medication_food_exposure_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[wheals or hives context]",
+      "[trigger or exposure context]",
+      "[swelling context]",
+      "[breathing or dizziness context]",
+      "[medication food exposure context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-wound-review",
+    "workflow_display_name": "Dermatology Wound Review",
+    "default_history_draft": "Wound review. Location: [wound_location]. Duration: [wound_duration]. Pain/discharge/bleeding: [pain_discharge_bleeding_context]. Surrounding skin: [surrounding_skin_context]. Fever/systemic: [fever_or_systemic_context]. Wound care: [wound_care_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[wound location]",
+      "[wound duration]",
+      "[pain discharge bleeding context]",
+      "[surrounding skin context]",
+      "[fever or systemic context]",
+      "[wound care context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-skin-lesion-review",
+    "workflow_display_name": "Dermatology Skin Lesion Review",
+    "default_history_draft": "Skin lesion review. Location: [lesion_location]. Duration: [lesion_duration]. Size/colour change: [size_or_color_change]. Bleeding/ulceration: [bleeding_or_ulceration_context]. Itching/pain: [itching_or_pain_context]. Sun exposure/family history: [sun_exposure_or_family_history_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[lesion location]",
+      "[lesion duration]",
+      "[size or color change]",
+      "[bleeding or ulceration context]",
+      "[itching or pain context]",
+      "[sun exposure or family history context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-hair-loss",
+    "workflow_display_name": "Dermatology Hair Loss",
+    "default_history_draft": "Patient seen with hair loss for [duration]. Pattern: [pattern]. Scalp symptoms: [scalp_symptoms]. Recent stress/illness: [recent_stress_or_illness_context]. Medication/hormonal: [medication_or_hormonal_context]. Family history: [family_history_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[pattern]",
+      "[scalp symptoms]",
+      "[recent stress or illness context]",
+      "[medication or hormonal context]",
+      "[family history context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "medical history",
+      "family history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
   }
 ]

@@ -2754,5 +2754,338 @@
     ],
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
+  },
+  {
+    "workflow_id": "derm-rash",
+    "workflow_display_name": "Dermatology Rash",
+    "investigation_groups": [
+      {
+        "group_id": "Vitals_derm-rash",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "temp_derm-rash",
+            "option_text": "Temperature recorded if measured.",
+            "note_text": "Temperature recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_derm-rash",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "swab_derm-rash",
+            "option_text": "Swab or culture result reviewed if available.",
+            "note_text": "Swab or culture result reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_derm-rash",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Records_derm-rash",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "med_derm-rash",
+            "option_text": "Medication or exposure history reviewed if relevant.",
+            "note_text": "Medication or exposure history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-acne",
+    "workflow_display_name": "Dermatology Acne",
+    "investigation_groups": [
+      {
+        "group_id": "Records_derm-acne",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "med_derm-acne",
+            "option_text": "Medication history reviewed if relevant.",
+            "note_text": "Medication history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_derm-acne",
+            "option_text": "Previous treatment history reviewed if available.",
+            "note_text": "Previous treatment history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "hormonal_derm-acne",
+            "option_text": "Hormonal context reviewed if relevant.",
+            "note_text": "Hormonal context reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-eczema",
+    "workflow_display_name": "Dermatology Eczema",
+    "investigation_groups": [
+      {
+        "group_id": "Records_derm-eczema",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "allergy_derm-eczema",
+            "option_text": "Allergy or atopy history reviewed if relevant.",
+            "note_text": "Allergy or atopy history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "swab_derm-eczema",
+            "option_text": "Swab or culture result reviewed if available.",
+            "note_text": "Swab or culture result reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_derm-eczema",
+            "option_text": "Previous treatment history reviewed if available.",
+            "note_text": "Previous treatment history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-fungal-infection",
+    "workflow_display_name": "Dermatology Fungal Infection",
+    "investigation_groups": [
+      {
+        "group_id": "Lab_derm-fungal-infection",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "koh_derm-fungal-infection",
+            "option_text": "Skin scraping or KOH result reviewed if available.",
+            "note_text": "Skin scraping or KOH result reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "culture_derm-fungal-infection",
+            "option_text": "Culture result reviewed if available.",
+            "note_text": "Culture result reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_derm-fungal-infection",
+            "option_text": "Previous treatment history reviewed if available.",
+            "note_text": "Previous treatment history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-urticaria",
+    "workflow_display_name": "Dermatology Urticaria",
+    "investigation_groups": [
+      {
+        "group_id": "Records_derm-urticaria",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "trigger_derm-urticaria",
+            "option_text": "Trigger or exposure history reviewed if relevant.",
+            "note_text": "Trigger or exposure history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "med_derm-urticaria",
+            "option_text": "Medication or food exposure reviewed if relevant.",
+            "note_text": "Medication or food exposure reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_derm-urticaria",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-wound-review",
+    "workflow_display_name": "Dermatology Wound Review",
+    "investigation_groups": [
+      {
+        "group_id": "Lab_derm-wound-review",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "swab_derm-wound-review",
+            "option_text": "Wound swab or culture result reviewed if available.",
+            "note_text": "Wound swab or culture result reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_derm-wound-review",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "measure_derm-wound-review",
+            "option_text": "Wound measurement documented if assessed.",
+            "note_text": "Wound measurement documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_derm-wound-review",
+            "option_text": "Previous wound care records reviewed if available.",
+            "note_text": "Previous wound care records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-skin-lesion-review",
+    "workflow_display_name": "Dermatology Skin Lesion Review",
+    "investigation_groups": [
+      {
+        "group_id": "Exam_derm-skin-lesion-review",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "measure_derm-skin-lesion-review",
+            "option_text": "Lesion measurement documented if assessed.",
+            "note_text": "Lesion measurement documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "dermoscopy_derm-skin-lesion-review",
+            "option_text": "Dermoscopy report reviewed if available.",
+            "note_text": "Dermoscopy report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "biopsy_derm-skin-lesion-review",
+            "option_text": "Biopsy or pathology report reviewed if available.",
+            "note_text": "Biopsy or pathology report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_derm-skin-lesion-review",
+            "option_text": "Previous images or records reviewed if available.",
+            "note_text": "Previous images or records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "derm-hair-loss",
+    "workflow_display_name": "Dermatology Hair Loss",
+    "investigation_groups": [
+      {
+        "group_id": "Lab_derm-hair-loss",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "tft_derm-hair-loss",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "note_text": "Thyroid function reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "ferritin_derm-hair-loss",
+            "option_text": "Ferritin or iron studies reviewed if ordered.",
+            "note_text": "Ferritin or iron studies reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "vitamins_derm-hair-loss",
+            "option_text": "Vitamin studies reviewed if ordered.",
+            "note_text": "Vitamin studies reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Exam_derm-hair-loss",
+        "group_label": "Exam",
+        "options": [
+          {
+            "option_id": "scalp_derm-hair-loss",
+            "option_text": "Scalp examination documented if assessed.",
+            "note_text": "Scalp examination documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_derm-hair-loss",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
   }
 ]
