@@ -3348,5 +3348,365 @@
     ],
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
+  },
+  {
+    "workflow_id": "psych-anxiety",
+    "workflow_display_name": "Psychiatry Anxiety",
+    "investigation_groups": [
+      {
+        "group_id": "Screening_psych-anxiety",
+        "group_label": "Screening",
+        "options": [
+          {
+            "option_id": "gad7_psych-anxiety",
+            "option_text": "GAD-7 screening documented if performed.",
+            "note_text": "GAD-7 screening documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "phq9_psych-anxiety",
+            "option_text": "PHQ-9 screening documented if performed.",
+            "note_text": "PHQ-9 screening documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Records_psych-anxiety",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_psych-anxiety",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "med_psych-anxiety",
+            "option_text": "Medication history reviewed if relevant.",
+            "note_text": "Medication history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_psych-anxiety",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "tft_psych-anxiety",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "note_text": "Thyroid function reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_psych-anxiety",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "psych-low-mood",
+    "workflow_display_name": "Psychiatry Low Mood",
+    "investigation_groups": [
+      {
+        "group_id": "Screening_psych-low-mood",
+        "group_label": "Screening",
+        "options": [
+          {
+            "option_id": "phq9_psych-low-mood",
+            "option_text": "PHQ-9 screening documented if performed.",
+            "note_text": "PHQ-9 screening documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Records_psych-low-mood",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_psych-low-mood",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "med_psych-low-mood",
+            "option_text": "Medication history reviewed if relevant.",
+            "note_text": "Medication history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_psych-low-mood",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "tft_psych-low-mood",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "note_text": "Thyroid function reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_psych-low-mood",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "psych-sleep-difficulty",
+    "workflow_display_name": "Psychiatry Sleep Difficulty",
+    "investigation_groups": [
+      {
+        "group_id": "Records_psych-sleep-difficulty",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_psych-sleep-difficulty",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "med_psych-sleep-difficulty",
+            "option_text": "Medication history reviewed if relevant.",
+            "note_text": "Medication history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_psych-sleep-difficulty",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "tft_psych-sleep-difficulty",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "note_text": "Thyroid function reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_psych-sleep-difficulty",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "psych-stress-symptoms",
+    "workflow_display_name": "Psychiatry Stress Symptoms",
+    "investigation_groups": [
+      {
+        "group_id": "Screening_psych-stress-symptoms",
+        "group_label": "Screening",
+        "options": [
+          {
+            "option_id": "gad7_psych-stress-symptoms",
+            "option_text": "GAD-7 screening documented if performed.",
+            "note_text": "GAD-7 screening documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "phq9_psych-stress-symptoms",
+            "option_text": "PHQ-9 screening documented if performed.",
+            "note_text": "PHQ-9 screening documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Records_psych-stress-symptoms",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_psych-stress-symptoms",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_psych-stress-symptoms",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "tft_psych-stress-symptoms",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "note_text": "Thyroid function reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_psych-stress-symptoms",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "psych-panic-symptoms",
+    "workflow_display_name": "Psychiatry Panic Symptoms",
+    "investigation_groups": [
+      {
+        "group_id": "Screening_psych-panic-symptoms",
+        "group_label": "Screening",
+        "options": [
+          {
+            "option_id": "gad7_psych-panic-symptoms",
+            "option_text": "GAD-7 screening documented if performed.",
+            "note_text": "GAD-7 screening documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "phq9_psych-panic-symptoms",
+            "option_text": "PHQ-9 screening documented if performed.",
+            "note_text": "PHQ-9 screening documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Records_psych-panic-symptoms",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_psych-panic-symptoms",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "med_psych-panic-symptoms",
+            "option_text": "Medication history reviewed if relevant.",
+            "note_text": "Medication history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Cardiac_psych-panic-symptoms",
+        "group_label": "Cardiac",
+        "options": [
+          {
+            "option_id": "ecg_psych-panic-symptoms",
+            "option_text": "ECG reviewed if performed.",
+            "note_text": "ECG reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_psych-panic-symptoms",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "tft_psych-panic-symptoms",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "note_text": "Thyroid function reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_psych-panic-symptoms",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "psych-medication-followup",
+    "workflow_display_name": "Psychiatry Medication Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "Records_psych-medication-followup",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_psych-medication-followup",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_psych-medication-followup",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "bloods_psych-medication-followup",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "levels_psych-medication-followup",
+            "option_text": "Medication levels reviewed if ordered.",
+            "note_text": "Medication levels reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true
   }
 ]

@@ -7865,5 +7865,578 @@
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft"
+  },
+  {
+    "workflow_id": "psych-anxiety",
+    "workflow_display_name": "Psychiatry Anxiety",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_psych-anxiety",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "counseling_psych-anxiety",
+            "option_text": "Counseling documented if discussed.",
+            "note_text": "Counseling discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "lifestyle_psych-anxiety",
+            "option_text": "Lifestyle and coping advice documented if discussed.",
+            "note_text": "Lifestyle advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_psych-anxiety",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "med_psych-anxiety",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_psych-anxiety",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "ref_psych-anxiety",
+            "option_text": "Referral documented if clinician arranged.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_psych-anxiety",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "fup_psych-anxiety",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "psych-low-mood",
+    "workflow_display_name": "Psychiatry Low Mood",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_psych-low-mood",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "counseling_psych-low-mood",
+            "option_text": "Counseling documented if discussed.",
+            "note_text": "Counseling discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "lifestyle_psych-low-mood",
+            "option_text": "Lifestyle and activity advice documented if discussed.",
+            "note_text": "Lifestyle advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_psych-low-mood",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "med_psych-low-mood",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_psych-low-mood",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "ref_psych-low-mood",
+            "option_text": "Referral documented if clinician arranged.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_psych-low-mood",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "fup_psych-low-mood",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "psych-sleep-difficulty",
+    "workflow_display_name": "Psychiatry Sleep Difficulty",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_psych-sleep-difficulty",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "sleep_psych-sleep-difficulty",
+            "option_text": "Sleep hygiene and routine advice documented if discussed.",
+            "note_text": "Sleep hygiene advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "lifestyle_psych-sleep-difficulty",
+            "option_text": "Lifestyle advice documented if discussed.",
+            "note_text": "Lifestyle advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_psych-sleep-difficulty",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "med_psych-sleep-difficulty",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_psych-sleep-difficulty",
+        "group_label": "fup",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "fup_psych-sleep-difficulty",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "psych-stress-symptoms",
+    "workflow_display_name": "Psychiatry Stress Symptoms",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_psych-stress-symptoms",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "counseling_psych-stress-symptoms",
+            "option_text": "Counseling documented if discussed.",
+            "note_text": "Counseling discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "coping_psych-stress-symptoms",
+            "option_text": "Coping and stress management advice documented if discussed.",
+            "note_text": "Coping advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_psych-stress-symptoms",
+        "group_label": "ref",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "ref_psych-stress-symptoms",
+            "option_text": "Referral documented if clinician arranged.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_psych-stress-symptoms",
+        "group_label": "fup",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "fup_psych-stress-symptoms",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "psych-panic-symptoms",
+    "workflow_display_name": "Psychiatry Panic Symptoms",
+    "plan_option_groups": [
+      {
+        "group_id": "counseling_psych-panic-symptoms",
+        "group_label": "counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "counseling_psych-panic-symptoms",
+            "option_text": "Counseling documented if discussed.",
+            "note_text": "Counseling discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "panic_psych-panic-symptoms",
+            "option_text": "Panic management advice documented if discussed.",
+            "note_text": "Panic management advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_psych-panic-symptoms",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "med_psych-panic-symptoms",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_psych-panic-symptoms",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "ref_psych-panic-symptoms",
+            "option_text": "Referral documented if clinician arranged.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_psych-panic-symptoms",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "fup_psych-panic-symptoms",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "psych-medication-followup",
+    "workflow_display_name": "Psychiatry Medication Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "med_psych-medication-followup",
+        "group_label": "med",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "review_psych-medication-followup",
+            "option_text": "Medication review documented if clinician decided.",
+            "note_text": "Medication review documented.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "adherence_psych-medication-followup",
+            "option_text": "Medication adherence documented if discussed.",
+            "note_text": "Medication adherence discussed.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "counseling_psych-medication-followup",
+        "group_label": "counseling",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "counseling_psych-medication-followup",
+            "option_text": "Counseling documented if discussed.",
+            "note_text": "Counseling discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_psych-medication-followup",
+        "group_label": "fup",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician. Sensitive documentation requires clinician assessment.",
+        "options": [
+          {
+            "option_id": "fup_psych-medication-followup",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-8 Psych",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Clinician assessment required.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true,
+    "source_status": "draft"
   }
 ]
