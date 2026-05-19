@@ -233,12 +233,18 @@
       else if (!concern) { concern = v; }
     }
 
-    // Build the symptom list: chip symptoms + concern field + associated
-    var allSymptoms = chipSymptoms.slice();
-    if (concern && concern !== duration) {
+    // Normalize: lowercase unless proper noun (none expected here)
+    function nc(s) { return s.toLowerCase(); }
+    if (concern) concern = nc(concern);
+    if (associated) associated = nc(associated);
+
+    // Build the symptom list: chip symptoms first, then concern + associated
+    var allSymptoms = chipSymptoms.map(nc).slice();
+    if (concern && concern !== nc(duration)) {
       var concernParts = concern.split(/[,;]+/).map(function(s){return s.trim();}).filter(Boolean);
       for (var ci = 0; ci < concernParts.length; ci++) {
-        if (allSymptoms.indexOf(concernParts[ci]) < 0) allSymptoms.push(concernParts[ci]);
+        var cp = nc(concernParts[ci]);
+        if (allSymptoms.indexOf(cp) < 0) allSymptoms.push(cp);
       }
     }
     if (associated && allSymptoms.indexOf(associated) < 0) allSymptoms.push(associated);
@@ -254,9 +260,7 @@
       if (duration) {
         var daysMatch = duration.match(/(\d+)\s*(day|week|month|year)s?/i);
         if (daysMatch) {
-          var num = daysMatch[1];
-          var unit = daysMatch[2].toLowerCase();
-          var singular = num + '-' + unit;
+          var singular = daysMatch[1] + '-' + daysMatch[2].toLowerCase();
           parts.push('Patient presents with a ' + singular + ' history of ' + symptomList + '.');
         } else {
           parts.push('Patient presents with ' + symptomList + ' for ' + duration + '.');
@@ -271,15 +275,10 @@
     }
 
     if (negatives) {
-      var negParts = negatives.split(/[,;]+/).map(function(s){return s.trim();}).filter(Boolean);
-      var negText = negParts.reduce(function(acc, s, i) {
-        if (i === 0) return s;
-        if (i === negParts.length - 1) return acc + ', and ' + s;
-        return acc + ', ' + s;
-      }, '');
-      parts.push('Relevant negatives include ' + negText + '.');
+      var negParts = negatives.split(/[,;]+/).map(function(s){return nc(s.trim());}).filter(Boolean);
+      parts.push('Relevant negatives include ' + negParts.join(', ') + '.');
     }
-    if (other) parts.push(other + '.');
+    if (other) parts.push(nc(other) + '.');
 
     return (parts.length ? parts.join(' ') : '');
   }
@@ -897,11 +896,12 @@
     text = text.replace(/\s*;;\s*/g, '; ');
     text = text.replace(/[,;]+\s*$/, '').trim();
     text = text.replace(/\s{2,}/g, ' ').trim();
-    // If the entire text was consumed by cleaning, return empty
-    if (!text || text === '.') return '';
+    // Normalize "Rapid test result" → "Rapid test"
+    text = text.replace(/^Rapid test result$/i, 'Rapid test');
     // Omit bare organ/system names that have no actual finding
     var bareOrgans = /^(temperature|heart rate|pulse|respiratory rate|oxygen saturation|blood pressure|weight(\s+and\s+bmi)?|general appearance|gait|parent or guardian report context|urine dipstick|lumbar range of motion|spinal tenderness|straight leg raise|crossed straight leg raise|lower limb (power|sensation|reflexes)|saddle sensation|neurovascular status|foot inspection|peripheral pulses|monofilament sensation|injection sites|capillary refill|urine output context|throat examination|otoscopy|cervical lymphadenopathy|respiratory effort|abdominal examination|skin rash|non-blanching rash|tonsillar appearance|chest (wall examination|auscultation)|meningeal signs|fundal height|fetal (heart auscultation|movement)|lower limb oedema|urine dipstick|hydration status|oropharyngeal examination|general appearance and activity level)$/i;
     if (bareOrgans.test(text)) return '';
+    if (!text || text === '.') return '';
     return text;
   }
 
@@ -920,7 +920,10 @@
       out.push(cleaned);
     }
     // Merge follow-up fragments: "X days if not improving" + "sooner if worsening"
-    return mergeFollowUpFragments(out);
+    out = mergeFollowUpFragments(out);
+    // Combine adjacent plan items: "Hydration advised." + "Rest advised." → "Hydration and rest advised."
+    out = combinePlanPairs(out);
+    return out;
   }
 
   function mergeFollowUpFragments(lines) {
@@ -932,12 +935,42 @@
       if (soonerPattern.test(lines[i])) soonerIdx = i;
     }
     if (fupIdx >= 0 && soonerIdx >= 0) {
-      var merged = lines[fupIdx].replace(/\.$/i, '') + ', or ' + lines[soonerIdx].replace(/^or\s+/i, '');
-      // Remove both, insert merged at fupIdx position
+      var merged = lines[fupIdx].replace(/\.$/i, '') + ', or ' + lines[soonerIdx].charAt(0).toLowerCase() + lines[soonerIdx].slice(1);
+      merged = merged.replace(/^or\s+/i, '').replace(/,\s*or\s+/i, ', or ');
       var first = Math.min(fupIdx, soonerIdx);
       var second = Math.max(fupIdx, soonerIdx);
       lines.splice(second, 1);
       lines.splice(first, 1, merged);
+    }
+    return lines;
+  }
+
+  function combinePlanPairs(lines) {
+    // "Hydration advised." + "Rest advised." → "Hydration and rest advised."
+    var pairs = [
+      { a: /^hydration advised\.$/i, b: /^rest advised\.$/i, combined: 'Hydration and rest advised.' }
+    ];
+    for (var pi = 0; pi < pairs.length; pi++) {
+      for (var i = 0; i < lines.length - 1; i++) {
+        if (pairs[pi].a.test(lines[i]) && pairs[pi].b.test(lines[i+1])) {
+          lines.splice(i, 2, pairs[pi].combined);
+          break;
+        }
+        if (pairs[pi].b.test(lines[i]) && pairs[pi].a.test(lines[i+1])) {
+          lines.splice(i, 2, pairs[pi].combined);
+          break;
+        }
+      }
+    }
+    // Remove redundant "Follow-up arranged." if a specific follow-up line exists
+    var hasSpecificFup = false;
+    for (var fi = 0; fi < lines.length; fi++) {
+      if (/follow.up in \d/i.test(lines[fi]) || /follow.up \d/i.test(lines[fi])) hasSpecificFup = true;
+    }
+    if (hasSpecificFup) {
+      for (var fi2 = lines.length - 1; fi2 >= 0; fi2--) {
+        if (/^follow-up arranged\.$/i.test(lines[fi2])) lines.splice(fi2, 1);
+      }
     }
     return lines;
   }
@@ -964,7 +997,7 @@
     text = text.replace(/^Hydration and feeding advice\.$/i, 'Hydration and feeding advised.');
     text = text.replace(/^Antenatal counseling\.$/i, 'Antenatal counseling discussed.');
     text = text.replace(/^Warning symptoms\.$/i, 'Warning symptoms discussed.');
-    // Transform bare investigation names to 'X reviewed.'
+    text = text.replace(/^Rapid test result\.$/i, 'Rapid test reviewed.');
     var invNames = /^(Cbc|Crp|Chest imaging|HbA1c|Renal function|Lipid profile|Urine acr|Home glucose log|Previous imaging|X-ray|Mri report|Inflammatory markers|Urinalysis|Cultures|Blood pressure trend|Antenatal labs|Glucose screening result|Ultrasound report|Rapid test result|Urine dipstick)\.$/i;
     if (invNames.test(text)) text = text.replace(/\.$/, ' reviewed.');
     // Fix follow-up phrasing: "in X days" not just "X days"
@@ -1423,7 +1456,7 @@
     // Update preview
     var preview = document.getElementById('v4HistPreview');
     if (preview) {
-      var text = buildV4HistoryFromFields(state.historyFields);
+      var text = buildV4HistoryFromFields(state.historyFields, window.V4_ENCOUNTER_STATE.selectedChips.symptoms.concat(window.V4_ENCOUNTER_STATE.customEntries.symptoms));
       preview.textContent = text || 'Fill in fields above to see the generated history.';
     }
 
