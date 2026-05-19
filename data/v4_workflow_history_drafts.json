@@ -1016,16 +1016,15 @@
   {
     "workflow_id": "peds-ear-pain",
     "workflow_display_name": "Pediatric Ear Pain",
-    "default_history_draft": "Parent/guardian reports ear pain for [duration]. Laterality: [laterality]. Fever: [fever_context]. Discharge: [discharge_context]. Hearing: [hearing_context]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Parent/guardian reports ear pain for [duration]. Ear symptoms: [ear_symptoms]. Fever: [fever_context]. Discharge/hearing: [discharge_or_hearing_context]. Recent URTI: [recent_urti_context]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed].",
     "editable_placeholders": [
       "[duration]",
-      "[laterality]",
+      "[ear symptoms]",
       "[fever context]",
-      "[discharge context]",
-      "[hearing context]",
+      "[discharge or hearing context]",
+      "[recent urti context]",
       "[parent guardian concern]",
-      "[relevant negatives]",
-      "[additional history]"
+      "[relevant negatives]"
     ],
     "optional_full_history_sections": [
       "medications",
@@ -1045,16 +1044,15 @@
   {
     "workflow_id": "peds-abdominal-pain",
     "workflow_display_name": "Pediatric Abdominal Pain",
-    "default_history_draft": "Parent/guardian reports abdominal pain for [duration]. Location: [pain_location]. Vomiting/diarrhea: [vomiting_diarrhea_context]. Feeding/bowel/urine: [feeding_bowel_urine]. Fever: [fever_context]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Parent/guardian reports abdominal pain for [duration]. Location: [pain_location]. Vomiting/diarrhea/constipation: [vomiting_diarrhea_constipation_context]. Urinary: [urinary_symptoms]. Appetite/activity: [appetite_activity_context]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed].",
     "editable_placeholders": [
       "[duration]",
       "[pain location]",
-      "[vomiting diarrhea context]",
-      "[feeding bowel urine]",
-      "[fever context]",
+      "[vomiting diarrhea constipation context]",
+      "[urinary symptoms]",
+      "[appetite activity context]",
       "[parent guardian concern]",
-      "[relevant negatives]",
-      "[additional history]"
+      "[relevant negatives]"
     ],
     "optional_full_history_sections": [
       "medications",
@@ -1074,14 +1072,13 @@
   {
     "workflow_id": "peds-routine-followup",
     "workflow_display_name": "Pediatric Routine Follow-up",
-    "default_history_draft": "Routine pediatric follow-up. Growth/feeding: [growth_feeding_context]. Development/milestones: [development_milestones]. Immunization: [immunization_status]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Routine pediatric follow-up. Reason: [followup_reason]. Interval history: [interval_history]. Parent concerns: [parent_guardian_concerns]. Feeding/activity/growth: [feeding_activity_growth_context]. Symptom progress: [symptom_progress]. [Additional history].",
     "editable_placeholders": [
-      "[followup context]",
-      "[growth feeding context]",
-      "[development milestones]",
-      "[immunization status]",
-      "[parent guardian concern]",
-      "[relevant negatives]",
+      "[followup reason]",
+      "[interval history]",
+      "[parent guardian concerns]",
+      "[feeding activity growth context]",
+      "[symptom progress]",
       "[additional history]"
     ],
     "optional_full_history_sections": [
@@ -1102,15 +1099,13 @@
   {
     "workflow_id": "peds-vaccination",
     "workflow_display_name": "Pediatric Vaccination Visit",
-    "default_history_draft": "Vaccination visit. Vaccine(s): [vaccination_context]. Prior reactions: [prior_reaction_context]. Current febrile illness: [febrile_illness_context]. Immunocompromised: [immunocompromised_context] if relevant. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Vaccination visit. Context: [vaccination_visit_context]. Consent: [parent_guardian_consent_context] if relevant. Recent illness: [recent_illness_context]. Previous vaccine reaction: [previous_vaccine_reaction_context]. Questions/counseling: [questions_or_counseling_context].",
     "editable_placeholders": [
-      "[vaccination context]",
-      "[prior reaction context]",
-      "[febrile illness context]",
-      "[immunocompromised context]",
-      "[parent guardian concern]",
-      "[relevant negatives]",
-      "[additional history]"
+      "[vaccination visit context]",
+      "[parent guardian consent context]",
+      "[recent illness context]",
+      "[previous vaccine reaction context]",
+      "[questions or counseling context]"
     ],
     "optional_full_history_sections": [
       "medications",
@@ -1130,15 +1125,15 @@
   {
     "workflow_id": "peds-growth-concern",
     "workflow_display_name": "Pediatric Growth Concern",
-    "default_history_draft": "Parent/guardian reports growth concern for [duration_of_concern]. Growth measurements: [growth_measurements]. Feeding/nutrition: [feeding_nutrition]. Development: [development_context]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Parent/guardian reports growth concern: [growth_concern]. Feeding history: [feeding_history]. Appetite: [appetite_context]. Weight/height: [weight_height_context]. Chronic symptoms: [chronic_symptom_context]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed].",
     "editable_placeholders": [
-      "[duration of concern]",
-      "[growth measurements]",
-      "[feeding nutrition]",
-      "[development context]",
+      "[growth concern]",
+      "[feeding history]",
+      "[appetite context]",
+      "[weight height context]",
+      "[chronic symptom context]",
       "[parent guardian concern]",
-      "[relevant negatives]",
-      "[additional history]"
+      "[relevant negatives]"
     ],
     "optional_full_history_sections": [
       "medications",
@@ -1158,15 +1153,15 @@
   {
     "workflow_id": "peds-development-concern",
     "workflow_display_name": "Pediatric Developmental Concern",
-    "default_history_draft": "Parent/guardian reports developmental concern. Description: [concern_description]. Area of concern: [area_of_concern]. Milestones: [milestone_context]. School/learning: [school_or_learning]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Parent/guardian reports developmental concern. Area: [developmental_area]. Milestones: [milestone_context]. Regression: [regression_context]. Hearing/vision: [hearing_vision_context]. Birth history: [birth_history_context]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed].",
     "editable_placeholders": [
-      "[concern description]",
-      "[area of concern]",
+      "[developmental area]",
       "[milestone context]",
-      "[school or learning]",
+      "[regression context]",
+      "[hearing vision context]",
+      "[birth history context]",
       "[parent guardian concern]",
-      "[relevant negatives]",
-      "[additional history]"
+      "[relevant negatives]"
     ],
     "optional_full_history_sections": [
       "medications",
@@ -1186,14 +1181,14 @@
   {
     "workflow_id": "peds-school-note",
     "workflow_display_name": "Pediatric School / Sick Note",
-    "default_history_draft": "School or sick note visit. Reason: [reason_for_absence_or_note]. Duration of absence: [duration_of_absence]. Fitness: [fitness_status] as assessed by clinician. Clinician-entered plan: [clinician_entered_plan]. Parent concern: [parent_guardian_concern]. [Additional context].",
+    "default_history_draft": "School or sick note visit. Reason: [reason_for_note]. Symptom duration: [symptom_duration]. Assessment: [assessment_context] as documented by clinician. Parent/guardian request: [parent_guardian_request]. Return to school: [return_to_school_context]. [Additional history].",
     "editable_placeholders": [
-      "[reason for absence or note]",
-      "[duration of absence]",
-      "[fitness status]",
-      "[clinician entered plan]",
-      "[parent guardian concern]",
-      "[additional context]"
+      "[reason for note]",
+      "[symptom duration]",
+      "[assessment context]",
+      "[parent guardian request]",
+      "[return to school context]",
+      "[additional history]"
     ],
     "optional_full_history_sections": [
       "medications",
