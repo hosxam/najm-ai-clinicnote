@@ -95,46 +95,8 @@
     }
   };
 
-  // ================================================================
-  //  CHIP GROUP MAPPING
-  // ================================================================
-  var CHIP_GROUP_MAP = {
-    'symptoms': 'symptoms',
-    'presenting': 'symptoms',
-    'relevant_negatives': 'relevantNegatives',
-    'negatives': 'relevantNegatives',
-    'red_flags': 'relevantNegatives',
-    'exam_findings': 'examFindings',
-    'exam': 'examFindings',
-    'findings': 'examFindings',
-    'investigations': 'investigations',
-    'labs': 'investigations',
-    'plan_phrases': 'planPhrases',
-    'plan': 'planPhrases',
-    'management': 'planPhrases',
-    'disposition': 'planPhrases',
-    'follow_up': 'followUp',
-    'follow': 'followUp',
-    'fup': 'followUp'
-  };
-
-  var CHIP_V4_TO_OUTPUT = {
-    'symptoms': 'symptoms',
-    'relevantNegatives': 'relevant_negatives',
-    'examFindings': 'exam_findings',
-    'investigations': 'investigations',
-    'planPhrases': 'plan_phrases',
-    'followUp': 'follow_up'
-  };
-
-  var CHIP_OUTPUT_TO_V4 = {
-    'symptoms': 'symptoms',
-    'relevant_negatives': 'relevantNegatives',
-    'exam_findings': 'examFindings',
-    'investigations': 'investigations',
-    'plan_phrases': 'planPhrases',
-    'follow_up': 'followUp'
-  };
+  // CHIP GROUP NAMES (canonical: all use underscore keys matching state.capturedChips)
+  // Keep as reference: 'symptoms', 'relevant_negatives', 'exam_findings', 'investigations', 'plan_phrases', 'follow_up'
 
   var currentStep = 1;
   var TOTAL_STEPS = 6;
@@ -213,30 +175,33 @@
   }
 
   function v4LoadChipsForWorkflow(wfId) {
-    var chips = { symptoms:[], relevantNegatives:[], examFindings:[], investigations:[], planPhrases:[], followUp:[] };
+    // Use underscore keys matching state.capturedChips and buildAdvancedDraft()
+    var chips = { symptoms:[], relevant_negatives:[], exam_findings:[], investigations:[], plan_phrases:[], follow_up:[] };
     try {
       var data = window.NAJM_CLINICAL_DATA;
       if (!data || !data.chipsByWorkflow || !data.chipsByWorkflow[wfId]) return chips;
 
       var chipData = data.chipsByWorkflow[wfId];
-      // Map data chip group names to V4 chip group names
-      var dataToV4 = {
+      // Map data chip group names (snake_case from GENERATED_CLINICAL_DATA)
+      var dataToOur = {
         'symptoms': 'symptoms',
-        'relevant_negatives': 'relevantNegatives',
-        'exam_findings': 'examFindings',
+        'relevant_negatives': 'relevant_negatives',
+        'exam_findings': 'exam_findings',
         'investigations': 'investigations',
-        'plan_phrases': 'planPhrases',
-        'follow_up': 'followUp'
+        'plan_phrases': 'plan_phrases',
+        'follow_up': 'follow_up'
       };
 
+      // First load ALL chips for the workflow
+      var allChips = { symptoms:[], relevant_negatives:[], exam_findings:[], investigations:[], plan_phrases:[], follow_up:[] };
       for (var group in chipData) {
-        var v4Group = dataToV4[group];
-        if (!v4Group) continue;
+        var ourGroup = dataToOur[group];
+        if (!ourGroup) continue;
         var items = chipData[group] || [];
         for (var i = 0; i < items.length; i++) {
           var item = items[i];
           var text = item.chip_text || (typeof item === 'string' ? item : '');
-          if (text) chips[v4Group].push(text);
+          if (text) allChips[ourGroup].push(text);
         }
       }
 
@@ -246,23 +211,23 @@
       var autofillEnabled = typeof v2isSpeedPresetMode === 'function' ? v2isSpeedPresetMode() : true;
 
       if (preset && autofillEnabled) {
-        var presetToV4 = {
+        var presetToOur = {
           'prechecked_symptoms': 'symptoms',
-          'prechecked_relevant_negatives': 'relevantNegatives',
-          'prechecked_exam_findings': 'examFindings',
+          'prechecked_relevant_negatives': 'relevant_negatives',
+          'prechecked_exam_findings': 'exam_findings',
           'prechecked_investigations': 'investigations',
-          'prechecked_plan_phrases': 'planPhrases',
-          'prechecked_follow_up': 'followUp'
+          'prechecked_plan_phrases': 'plan_phrases',
+          'prechecked_follow_up': 'follow_up'
         };
-        for (var pf in presetToV4) {
-          var g = presetToV4[pf];
+        for (var pf in presetToOur) {
+          var g = presetToOur[pf];
           if (!preset[pf]) continue;
           // Filter allChips to only those in the preset
           var presetTexts = {};
           for (var pi = 0; pi < preset[pf].length; pi++) {
             presetTexts[preset[pf][pi].toLowerCase().trim()] = true;
           }
-          chips[g] = chips[g].filter(function(ct) {
+          chips[g] = allChips[g].filter(function(ct) {
             return presetTexts[ct.toLowerCase().trim()];
           });
         }
@@ -288,22 +253,13 @@
 
     // Sync chips from DOM (captures live user changes to chips)
     var domChips = captureOPDChips();
-    // Map from v4 output group names (captureOPDChips output) to V4_ENCOUNTER_STATE group names
-    var outToEs = {
-      'symptoms': 'symptoms',
-      'relevant_negatives': 'relevantNegatives',
-      'exam_findings': 'examFindings',
-      'investigations': 'investigations',
-      'plan_phrases': 'planPhrases',
-      'follow_up': 'followUp'
-    };
+    // Direct pass-through: V4_ENCOUNTER_STATE uses same keys as state.capturedChips
     for (var og in domChips) {
-      var eg = outToEs[og];
-      if (eg) es.selectedChips[eg] = domChips[og];
+      es.selectedChips[og] = domChips[og] || [];
     }
 
     // Sync custom entries (captured separately from DOM)
-    es.customEntries = { symptoms:[], relevantNegatives:[], examFindings:[], investigations:[], planPhrases:[], followUp:[] };
+    es.customEntries = { symptoms:[], relevant_negatives:[], exam_findings:[], investigations:[], plan_phrases:[], follow_up:[] };
     try {
       var area = document.getElementById('v2ChipGroups');
       if (area) {
@@ -568,9 +524,11 @@
     var draft = getHistoryDraft(state.selectedWorkflowId);
     if (!draft) return;
 
-    var text = state.defaultHistoryDraft || draft.default_history_draft;
+    // Read the CURRENT textarea value (preserves user edits, doesn't wipe)
+    var ta = document.getElementById('v4HistoryDraft');
+    var text = ta ? ta.value : (state.historyDraft || draft.default_history_draft);
 
-    // Replace each filled placeholder
+    // Replace each filled placeholder in the current text
     var defs = state.miniFieldDefs;
     for (var key in defs) {
       var def = defs[key];
@@ -585,7 +543,6 @@
     state.historyDraft = text;
 
     // Update textarea if visible
-    var ta = document.getElementById('v4HistoryDraft');
     if (ta) ta.value = text;
     checkAllPhi();
     updateSidebar();
@@ -763,6 +720,7 @@
 
     // Full textarea (editable)
     h += '<label class="v4-field-label" style="margin-top:14px">History draft (editable)</label>';
+    h += '<p class="v4-field-note">You can edit this draft directly. Empty fields are omitted from the output.</p>';
     h += '<textarea class="v4-textarea v4-textarea-lg" id="v4HistoryDraft" oninput="window._v4UpdateHist(this.value)">' + esc(state.historyDraft || draft.default_history_draft) + '</textarea>';
 
     // Placeholder helper (collapsed)
@@ -773,7 +731,7 @@
       for (var pi = 0; pi < draft.editable_placeholders.length; pi++) {
         h += '<span class="v4-ph-chip">' + esc(draft.editable_placeholders[pi]) + '</span>';
       }
-      h += '<p class="v4-field-note" style="width:100%;margin-top:6px">Use mini-fields above to replace these. The textarea is also directly editable.</p>';
+      h += '<p class="v4-field-note" style="width:100%;margin-top:6px">Options for [bracketed text] are replaced when you fill the fields above. Unfilled brackets are silently removed from the output.</p>';
       h += '</div></details>';
     }
 
@@ -790,6 +748,7 @@
 
     h += '<div class="v4-step-actions">';
     h += '<button class="v4-btn v4-btn-ghost" onclick="window._v4ClearHistory()">Reset to default</button>';
+    h += '<button class="v4-btn v4-btn-outline" onclick="window._v4UpdateDraftFromFields()" style="margin-left:auto">Update draft from fields</button>';
     h += '</div>';
     return h;
   }
@@ -1332,13 +1291,17 @@
   window._v4MiniField = function(key, value) {
     if (!state.miniFieldDefs[key]) state.miniFieldDefs[key] = { placeholder: '', label: key, isMain: false, value: '' };
     state.miniFieldDefs[key].value = value;
-    updateHistoryDraftFromMiniFields();
+    // Do NOT auto-overwrite the draft. User clicks "Update draft from fields" to regenerate.
   };
 
   window._v4UpdateHist = function(val) {
     state.historyDraft = val;
     checkAllPhi();
     updateSidebar();
+  };
+
+  window._v4UpdateDraftFromFields = function() {
+    updateHistoryDraftFromMiniFields();
   };
 
   window._v4ClearHistory = function() {
