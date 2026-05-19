@@ -213,35 +213,48 @@
   // ================================================================
   function buildV4HistoryFromFields(fields) {
     if (!fields) return '';
-    // Build a natural paragraph from filled fields only
-    var symptomKeys = ['main_concern', 'presenting_concern', 'chief_complaint', 'visit_context'];
-    var symptomText = '';
-    var duration = fields['duration'] || '';
-    var associated = fields['associated_symptoms'] || fields['cough_nasal_congestion_sore_throat_status'] || '';
-    var negatives = fields['relevant_negatives'] || fields['relevant_negatives_reviewed'] || '';
-    var additional = fields['additional_history'] || fields['additional_follow_up_details'] || fields['additional_msk_history'] || fields['additional_antenatal_details'] || '';
 
-    // Find the main presenting text
-    for (var si = 0; si < symptomKeys.length; si++) {
-      var sv = fields[symptomKeys[si]];
-      if (sv && sv.trim()) { symptomText = sv.trim(); break; }
+    // Collect known field types by scanning keys for known patterns
+    var duration = '';
+    var concern = '';
+    var associated = '';
+    var negatives = '';
+    var other = '';
+
+    for (var k in fields) {
+      var v = (fields[k] || '').trim();
+      if (!v) continue;
+      var kl = k.toLowerCase();
+      if (kl.indexOf('duration') >= 0 && kl.indexOf('duration') < 5) { duration = v; }
+      else if (kl.indexOf('associated') >= 0 || kl.indexOf('status') >= 0 && kl.indexOf('cough') >= 0 || kl.indexOf('symptoms_if') >= 0) { associated = v; }
+      else if (kl.indexOf('negatives') >= 0 || kl.indexOf('red_flag') >= 0 || kl.indexOf('reviewed') >= 0 && kl.indexOf('negatives') >= 0) { negatives = v; }
+      else if (kl.indexOf('additional') >= 0) { other = v; }
+      else if (!concern) { concern = v; }
     }
-    // If no named key matched, use the first filled field
-    if (!symptomText) {
-      for (var k in fields) {
-        if (fields[k] && fields[k].trim()) { symptomText = fields[k].trim(); break; }
+
+    // If no concern identified but we have duration, use the first non-categorized value as concern
+    if (!concern && duration) {
+      for (var k2 in fields) {
+        var v2 = (fields[k2] || '').trim();
+        if (!v2 || v2 === duration) continue;
+        var kl2 = k2.toLowerCase();
+        if (kl2.indexOf('associated') >= 0 || kl2.indexOf('negatives') >= 0 || kl2.indexOf('additional') >= 0) continue;
+        concern = v2;
+        break;
       }
     }
 
     var parts = [];
-    if (symptomText) {
-      var line = symptomText;
-      if (duration) line += ' for ' + duration.trim();
+    if (concern) {
+      var line = 'Patient presents with ' + concern;
+      if (duration) line += ' for ' + duration;
       parts.push(line);
+    } else if (duration) {
+      parts.push('Patient presents with symptoms for ' + duration + '.');
     }
-    if (associated) parts.push('Associated symptoms include ' + associated.trim());
-    if (negatives) parts.push('Relevant negatives include ' + negatives.trim());
-    if (additional) parts.push(additional.trim());
+    if (associated && associated !== concern) parts.push('Associated symptoms include ' + associated);
+    if (negatives) parts.push('Relevant negatives include ' + negatives);
+    if (other) parts.push(other);
 
     return parts.join('. ') + (parts.length ? '.' : '');
   }
@@ -843,6 +856,7 @@
     }
     text = text.replace(/\s*documented\s+if\s+assessed\s*\.?\s*(?=;|$)/gi, '');
     text = text.replace(/\s*documented\s+if\s+measured\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*recorded\s+if\s+measured\s*\.?\s*(?=;|$)/gi, '');
     text = text.replace(/\s*documented\s+if\s+discussed\s*\.?\s*(?=;|$)/gi, '');
     text = text.replace(/\s*documented\s+if\s+clinician\s+decided\s*\.?\s*(?=;|$)/gi, '');
     text = text.replace(/\s*documented\s+if\s+arranged\s*\.?\s*(?=;|$)/gi, '');
@@ -880,7 +894,27 @@
       seen[n] = true;
       out.push(cleaned);
     }
-    return out;
+    // Merge follow-up fragments: "X days if not improving" + "sooner if worsening"
+    return mergeFollowUpFragments(out);
+  }
+
+  function mergeFollowUpFragments(lines) {
+    var fupPattern = /^(\d+\s+(days?|weeks?|months?)\s+if\s+not\s+improving)\s*\.$/i;
+    var soonerPattern = /^(sooner\s+if\s+worsen(ing)?|or\s+sooner\s+if\s+worsen(ing)?)\s*\.$/i;
+    var fupIdx = -1, soonerIdx = -1;
+    for (var i = 0; i < lines.length; i++) {
+      if (fupPattern.test(lines[i])) fupIdx = i;
+      if (soonerPattern.test(lines[i])) soonerIdx = i;
+    }
+    if (fupIdx >= 0 && soonerIdx >= 0) {
+      var merged = lines[fupIdx].replace(/\.$/i, '') + ', or ' + lines[soonerIdx].replace(/^or\s+/i, '');
+      // Remove both, insert merged at fupIdx position
+      var first = Math.min(fupIdx, soonerIdx);
+      var second = Math.max(fupIdx, soonerIdx);
+      lines.splice(second, 1);
+      lines.splice(first, 1, merged);
+    }
+    return lines;
   }
 
   // Polish output lines: sentence case, punctuation, natural phrasing
@@ -894,6 +928,7 @@
     // Clean common plan fragments to natural phrasing
     text = text.replace(/^Supportive care\.$/i, 'Supportive care advised.');
     text = text.replace(/^Supportive care advice\.$/i, 'Supportive care advised.');
+    text = text.replace(/^Supportive care discussed\.$/i, 'Supportive care advised.');
     text = text.replace(/^Hydration and rest advice\.$/i, 'Hydration and rest advised.');
     text = text.replace(/^Return precautions\.$/i, 'Return precautions discussed.');
     text = text.replace(/^Follow-up arranged\.$/i, 'Follow-up arranged.');
@@ -905,7 +940,7 @@
     text = text.replace(/^Antenatal counseling\.$/i, 'Antenatal counseling discussed.');
     text = text.replace(/^Warning symptoms\.$/i, 'Warning symptoms discussed.');
     // Transform bare investigation names to 'X reviewed.'
-    var invNames = /^(Cbc|Crp|Chest imaging|HbA1c|Renal function|Lipid profile|Urine acr|Home glucose log|Previous imaging|X-ray|Mri report|Inflammatory markers|Urinalysis|Cultures|Blood pressure trend|Antenatal labs|Glucose screening result|Ultrasound report)\.$/i;
+    var invNames = /^(Cbc|Crp|Chest imaging|HbA1c|Renal function|Lipid profile|Urine acr|Home glucose log|Previous imaging|X-ray|Mri report|Inflammatory markers|Urinalysis|Cultures|Blood pressure trend|Antenatal labs|Glucose screening result|Ultrasound report|Rapid test result|Urine dipstick)\.$/i;
     if (invNames.test(text)) text = text.replace(/\.$/, ' reviewed.');
     // Fix follow-up phrasing: "in X days" not just "X days"
     text = text.replace(/^(Follow-up) (\d)/i, '$1 in $2');
@@ -1001,10 +1036,15 @@
       patientInstructionLines: []
     };
 
-    // History / Subjective
-    if (historyDraft) route.historyLines.push(historyDraft);
+    // History / Subjective: merge chip symptoms into history paragraph
     var symps = dedupe((chips.symptoms||[]).concat(custom.symptoms||[]), true);
-    if (symps.length) route.historyLines.push('Symptoms: ' + symps.join('; '));
+    // If history draft exists, append chip symptoms to it
+    if (symps.length && historyDraft) {
+      historyDraft = historyDraft.replace(/\.\s*$/, '') + '. ' + symps.join(', ') + '.';
+    } else if (symps.length) {
+      historyDraft = 'Patient reports ' + symps.join(', ') + '.';
+    }
+    if (historyDraft) route.historyLines.push(historyDraft);
     var negs = dedupe((chips.relevant_negatives||[]).concat(custom.relevant_negatives||[]), true);
     if (negs.length) route.relevantNegativeLines.push('Relevant negatives: ' + negs.join('; '));
 
