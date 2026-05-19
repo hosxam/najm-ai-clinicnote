@@ -413,6 +413,9 @@
     html += '<div class="v4-safety-banner">Do not enter patient names, IDs, MRNs, or contact information. This tool structures de-identified clinician-entered information only.</div>';
     html += '<div class="v4-phi-warning" id="v4PhiWarning" style="display:none">&#9888; Possible identifiable information detected. Remove patient identifiers.</div>';
 
+    // First-use guidance (compact)
+    html += '<div class="v4-guidance"><span class="v4-guidance-step">1. Select workflow</span> <span class="v4-guidance-arrow">→</span> <span class="v4-guidance-step">2. Review chips &amp; fill fields</span> <span class="v4-guidance-arrow">→</span> <span class="v4-guidance-step">3. Document exam &amp; plan</span> <span class="v4-guidance-arrow">→</span> <span class="v4-guidance-step">4. Generate combined draft</span></div>';
+
     // Stepper
     html += '<div class="v4-stepper" id="v4Stepper">';
     var labels = ['Workflow','History','Exam & Investigations','Plan Assist','Calculators','Output'];
@@ -479,15 +482,20 @@
   // ================================================================
   function stepWorkflow() {
     var h = '<h2 class="v4-step-h">Step 1: Select Workflow</h2>';
-    h += '<p class="v4-step-d">Select a prototype workflow. V4 chip groups will load automatically for the output.</p>';
-    h += '<div class="v4-proto-note">Advanced Encounter Builder currently supports 5 prototype workflows. More workflows will be added after internal review.</div>';
+    h += '<p class="v4-step-d">Select a workflow to load documentation chips. All 90 workflows are supported.</p>';
 
-    h += '<div class="v4-wf-search"><label class="v4-field-label">Workflow</label>';
-    h += '<select class="v4-select" id="v4WorkflowSelect" onchange="window._v4SelectWf()">';
+    // Search filter + dropdown
+    h += '<div class="v4-wf-search"><label class="v4-field-label">Search or select workflow</label>';
+    h += '<input class="v4-search-input" type="text" id="v4WorkflowSearch" placeholder="Search by name, specialty, or keyword..." oninput="window._v4SearchWf(this.value)" value="' + esc(state._wfSearchTerm || '') + '">';
+    h += '<select class="v4-select" id="v4WorkflowSelect" onchange="window._v4SelectWf()" size="8">';
     h += '<option value="">-- Select a workflow --</option>';
     for (var i = 0; i < state.workflowList.length; i++) {
       var wf = state.workflowList[i];
-      h += '<option value="' + esc(wf.workflow_id) + '"' + (wf.workflow_id === state.selectedWorkflowId ? ' selected' : '') + '>' + esc(wf.display_name) + ' (' + esc(wf.specialty) + ')</option>';
+      var searchTerm = (state._wfSearchTerm || '').toLowerCase();
+      var match = !searchTerm || wf.display_name.toLowerCase().indexOf(searchTerm) >= 0 || wf.specialty.toLowerCase().indexOf(searchTerm) >= 0;
+      if (match) {
+        h += '<option value="' + esc(wf.workflow_id) + '"' + (wf.workflow_id === state.selectedWorkflowId ? ' selected' : '') + '>' + esc(wf.display_name) + ' (' + esc(wf.specialty) + ')</option>';
+      }
     }
     h += '</select></div>';
 
@@ -1317,6 +1325,11 @@
   // ================================================================
 
   // Workflow
+  window._v4SearchWf = function(term) {
+    state._wfSearchTerm = term;
+    renderStep(1);
+  };
+
   window._v4SelectWf = function() {
     var sel = document.getElementById('v4WorkflowSelect');
     if (!sel || !sel.value) return;
@@ -1753,7 +1766,13 @@
 .v4-btn:disabled{opacity:0.4;cursor:not-allowed}
 .v4-empty-state{text-align:center;padding:60px 20px;color:var(--gray-400);font-size:15px}
 
-@media(max-width:768px){.v4-layout{grid-template-columns:1fr}.v4-sidebar{display:none}.v4-stepper{overflow-x:auto}.v4-s-label{display:none}}
+.v4-guidance{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;padding:10px 14px;margin-bottom:14px;font-size:12px;color:var(--gray-600);line-height:1.6;text-align:center}
+.v4-guidance-step{font-weight:600;color:var(--gray-700)}
+.v4-guidance-arrow{color:var(--gray-400);margin:0 6px}
+.v4-search-input{width:100%;padding:10px 14px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:var(--font);margin-bottom:8px}
+.v4-search-input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
+
+@media(max-width:768px){.v4-layout{grid-template-columns:1fr}.v4-sidebar{display:none}.v4-stepper{overflow-x:auto;font-size:10px}.v4-s-label{display:none}.v4-step-content{padding:16px}.v4-step-h{font-size:17px}.v4-chip-btn{padding:4px 10px;font-size:11px}.v4-chip-group-header{font-size:11px}.v4-output-box{max-height:400px}.v4-nav{padding:10px 14px;flex-wrap:wrap;gap:8px}.v4-guidance{font-size:11px;padding:8px 10px}.v4-guidance-arrow{display:none}.v4-guidance-step{display:block;padding:2px 0}}
     `;
   }
 
