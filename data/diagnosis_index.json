@@ -1,6 +1,6 @@
 {
   "index_version": "1.0.0",
-  "last_updated": "2026-05-16",
+  "last_updated": "2026-05-19",
   "entries": [
     {
       "entry_id": "cc-gp-fever-urti",
@@ -7390,6 +7390,936 @@
       ],
       "workflow_ids": [
         "peds-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-minor-trauma",
+      "type": "chief_complaint",
+      "label": "Minor trauma",
+      "aliases": [
+        "minor injury",
+        "fall injury",
+        "blunt injury",
+        "trauma documentation"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-minor-trauma"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-urgent-minor-trauma",
+      "type": "diagnosis",
+      "label": "Minor injury",
+      "aliases": [
+        "injury",
+        "trauma",
+        "contusion",
+        "abrasion"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-minor-trauma"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-wound-care",
+      "type": "chief_complaint",
+      "label": "Wound care / laceration",
+      "aliases": [
+        "wound",
+        "laceration",
+        "cut wound",
+        "suture review",
+        "wound care"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-wound-care-laceration"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-urgent-wound-care",
+      "type": "diagnosis",
+      "label": "Laceration",
+      "aliases": [
+        "cut",
+        "wound",
+        "skin tear"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-wound-care-laceration"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-burn",
+      "type": "chief_complaint",
+      "label": "Burn assessment",
+      "aliases": [
+        "burn",
+        "thermal burn",
+        "scald",
+        "minor burn",
+        "burn review"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-burn-assessment"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-urgent-burn",
+      "type": "diagnosis",
+      "label": "Burn",
+      "aliases": [
+        "thermal injury",
+        "scald",
+        "minor burn"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-burn-assessment"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-allergy",
+      "type": "chief_complaint",
+      "label": "Allergic reaction",
+      "aliases": [
+        "allergic reaction",
+        "allergy",
+        "rash swelling",
+        "urticaria reaction"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-allergic-reaction"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-urgent-allergy",
+      "type": "diagnosis",
+      "label": "Allergic reaction",
+      "aliases": [
+        "allergy",
+        "urticaria",
+        "angioedema"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-allergic-reaction"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-head-injury",
+      "type": "chief_complaint",
+      "label": "Head injury",
+      "aliases": [
+        "head injury",
+        "minor head injury",
+        "head trauma",
+        "fall head",
+        "concussion documentation"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-head-injury"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-urgent-head-injury",
+      "type": "diagnosis",
+      "label": "Head injury / Concussion",
+      "aliases": [
+        "minor head injury",
+        "concussion",
+        "head trauma"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-head-injury"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-chest-pain",
+      "type": "chief_complaint",
+      "label": "Chest pain",
+      "aliases": [
+        "chest pain",
+        "acute chest pain",
+        "chest tightness",
+        "cardiac symptoms"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-chest-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-urgent-chest-pain",
+      "type": "diagnosis",
+      "label": "Chest pain documentation",
+      "aliases": [
+        "chest pain",
+        "ACS documentation",
+        "cardiac evaluation"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-chest-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-sob",
+      "type": "chief_complaint",
+      "label": "Shortness of breath",
+      "aliases": [
+        "shortness of breath",
+        "SOB",
+        "dyspnea",
+        "breathing difficulty",
+        "acute dyspnea"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-shortness-of-breath"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-urgent-sob",
+      "type": "diagnosis",
+      "label": "Dyspnea",
+      "aliases": [
+        "shortness of breath",
+        "SOB",
+        "breathing difficulty"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-shortness-of-breath"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-abd-pain",
+      "type": "chief_complaint",
+      "label": "Abdominal pain",
+      "aliases": [
+        "abdominal pain",
+        "acute abdominal pain",
+        "stomach pain",
+        "RIF pain",
+        "general abdominal pain"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-urgent-abd-pain",
+      "type": "diagnosis",
+      "label": "Abdominal pain",
+      "aliases": [
+        "acute abdomen documentation",
+        "abdominal pain"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-syncope",
+      "type": "chief_complaint",
+      "label": "Syncope",
+      "aliases": [
+        "syncope",
+        "fainting",
+        "collapse",
+        "loss of consciousness",
+        "presyncope"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-syncope"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-urgent-syncope",
+      "type": "diagnosis",
+      "label": "Syncope documentation",
+      "aliases": [
+        "syncope",
+        "fainting",
+        "collapse",
+        "transient loss of consciousness"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-syncope"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-fever",
+      "type": "chief_complaint",
+      "label": "Fever / Suspected infection",
+      "aliases": [
+        "fever",
+        "suspected infection",
+        "infection documentation",
+        "febrile illness"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-fever-suspected-infection"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "dx-urgent-fever",
+      "type": "diagnosis",
+      "label": "Suspected infection",
+      "aliases": [
+        "fever",
+        "infection",
+        "sepsis concern documentation"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-fever-suspected-infection"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-trauma",
+      "type": "chief_complaint",
+      "label": "Minor injury documentation",
+      "aliases": [
+        "injury documentation",
+        "fall documentation"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-minor-trauma"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "sx-urgent-trauma",
+      "type": "symptom",
+      "label": "Trauma / injury",
+      "aliases": [
+        "injury",
+        "trauma"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-minor-trauma"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "sx-urgent-wound",
+      "type": "symptom",
+      "label": "Wound / laceration",
+      "aliases": [
+        "wound",
+        "laceration",
+        "cut"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-wound-care-laceration"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-wound",
+      "type": "chief_complaint",
+      "label": "Wound documentation",
+      "aliases": [
+        "wound documentation",
+        "laceration review"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-wound-care-laceration"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "sx-urgent-burn",
+      "type": "symptom",
+      "label": "Burn / thermal injury",
+      "aliases": [
+        "burn",
+        "scald",
+        "thermal"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-burn-assessment"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-burn2",
+      "type": "chief_complaint",
+      "label": "Thermal injury",
+      "aliases": [
+        "thermal injury",
+        "scald injury"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-burn-assessment"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "sx-urgent-allergy",
+      "type": "symptom",
+      "label": "Allergy / rash",
+      "aliases": [
+        "allergy",
+        "rash",
+        "swelling"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-allergic-reaction"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-allergy2",
+      "type": "chief_complaint",
+      "label": "Rash with swelling",
+      "aliases": [
+        "rash",
+        "swelling",
+        "allergic"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-allergic-reaction"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "sx-urgent-head",
+      "type": "symptom",
+      "label": "Head trauma / injury",
+      "aliases": [
+        "head injury",
+        "concussion",
+        "head trauma"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-head-injury"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-head2",
+      "type": "chief_complaint",
+      "label": "Fall with head injury",
+      "aliases": [
+        "fall",
+        "head strike",
+        "concussion"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-head-injury"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "sx-urgent-cp",
+      "type": "symptom",
+      "label": "Chest discomfort",
+      "aliases": [
+        "chest discomfort",
+        "chest pain",
+        "tightness"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-chest-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-cp2",
+      "type": "chief_complaint",
+      "label": "Cardiac symptoms documentation",
+      "aliases": [
+        "cardiac symptoms",
+        "chest tightness"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-chest-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "sx-urgent-sob",
+      "type": "symptom",
+      "label": "Acute dyspnea",
+      "aliases": [
+        "dyspnea",
+        "difficulty breathing",
+        "breathless"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-shortness-of-breath"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-sob2",
+      "type": "chief_complaint",
+      "label": "Acute breathlessness",
+      "aliases": [
+        "breathlessness",
+        "difficulty breathing"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-shortness-of-breath"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "sx-urgent-abd",
+      "type": "symptom",
+      "label": "Acute abdominal pain",
+      "aliases": [
+        "acute abdomen",
+        "stomach ache",
+        "abdominal"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-abd2",
+      "type": "chief_complaint",
+      "label": "Stomach pain / acute abdomen",
+      "aliases": [
+        "stomach pain",
+        "acute abdomen"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-abdominal-pain"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "sx-urgent-syncope",
+      "type": "symptom",
+      "label": "Collapse / fainting",
+      "aliases": [
+        "collapse",
+        "fainting",
+        "blackout"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-syncope"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-syncope2",
+      "type": "chief_complaint",
+      "label": "Transient loss of consciousness",
+      "aliases": [
+        "LOC",
+        "loss of consciousness",
+        "blackout"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-syncope"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "sx-urgent-fever",
+      "type": "symptom",
+      "label": "Fever / pyrexia",
+      "aliases": [
+        "fever",
+        "pyrexia",
+        "temperature"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-fever-suspected-infection"
+      ],
+      "icd_metadata": {
+        "icd_system": null,
+        "icd_code": null,
+        "icd_label": null,
+        "icd_verified": false,
+        "icd_source": null
+      }
+    },
+    {
+      "entry_id": "cc-urgent-fever2",
+      "type": "chief_complaint",
+      "label": "Suspected infection / sepsis concern",
+      "aliases": [
+        "infection",
+        "sepsis concern",
+        "febrile"
+      ],
+      "specialty_ids": [
+        "Emergency / Urgent Care"
+      ],
+      "workflow_ids": [
+        "urgent-fever-suspected-infection"
       ],
       "icd_metadata": {
         "icd_system": null,

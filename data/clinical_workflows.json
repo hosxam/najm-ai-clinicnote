@@ -4235,5 +4235,595 @@
       "mood",
       "past_psych"
     ]
+  },
+  {
+    "workflow_id": "urgent-minor-trauma",
+    "specialty_id": "Emergency / Urgent Care",
+    "chief_complaint": "Minor trauma",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Minor injury documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "urgent-wound-care-laceration",
+    "specialty_id": "Emergency / Urgent Care",
+    "chief_complaint": "Wound care / laceration",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Wound documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 3,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 4,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "urgent-burn-assessment",
+    "specialty_id": "Emergency / Urgent Care",
+    "chief_complaint": "Burn assessment",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Burn documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "exam_findings",
+        "order": 2,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 3,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 4,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "urgent-allergic-reaction",
+    "specialty_id": "Emergency / Urgent Care",
+    "chief_complaint": "Allergic reaction",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Allergy documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "urgent-head-injury",
+    "specialty_id": "Emergency / Urgent Care",
+    "chief_complaint": "Head injury",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Head injury documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "urgent-chest-pain",
+    "specialty_id": "Emergency / Urgent Care",
+    "chief_complaint": "Chest pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Chest pain documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "urgent-shortness-of-breath",
+    "specialty_id": "Emergency / Urgent Care",
+    "chief_complaint": "Shortness of breath",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Shortness of breath documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "urgent-abdominal-pain",
+    "specialty_id": "Emergency / Urgent Care",
+    "chief_complaint": "Abdominal pain",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Abdominal pain documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "urgent-syncope",
+    "specialty_id": "Emergency / Urgent Care",
+    "chief_complaint": "Syncope",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Syncope documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "urgent-fever-suspected-infection",
+    "specialty_id": "Emergency / Urgent Care",
+    "chief_complaint": "Fever / Suspected infection",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Infection documentation",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": null,
+      "icd_code": null,
+      "icd_label": "unverified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "investigations",
+        "order": 5,
+        "prompt": "Investigations ordered"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 6,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 7,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
   }
 ]
