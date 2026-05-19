@@ -46,10 +46,15 @@ const FORBIDDEN = [
 const ASSESSED_PHRASES = [
   'documented if assessed',
   'document only if assessed',
+  'if assessed',
   'if measured',
   'if reviewed',
   'if relevant',
-  'if performed'
+  'if performed',
+  'if discussed',
+  'if available',
+  'if clinician and patient',
+  'if arranged',
 ];
 
 function readJson(filePath) {

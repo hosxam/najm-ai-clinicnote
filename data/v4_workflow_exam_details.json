@@ -198,53 +198,53 @@
     "workflow_display_name": "MSK Low Back Pain",
     "exam_groups": [
       {
-        "group_id": "gait_assessment",
+        "group_id": "gait_msk-low-back-pain",
         "group_label": "Gait assessment",
         "display_order": 1,
-        "safety_note": "Document only if assessed. gait observation is a clinician finding. Do not specify gait type without clinician entry.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "gait",
+            "prompt_id": "gait_msk-low-back-pain",
             "prompt_text": "Gait documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "lumbar_exam",
+        "group_id": "lumbar_msk-low-back-pain",
         "group_label": "Lumbar spine examination",
         "display_order": 2,
-        "safety_note": "Document only if assessed. lumbar findings only if assessed. Do not imply range of motion or tenderness without clinician documentation.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "lumbar_range_of_motion",
+            "prompt_id": "lumbar_rom_msk-low-back-pain",
             "prompt_text": "Lumbar range of motion documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "spinal_tenderness",
-            "prompt_text": "Spinal tenderness documented if assessed.",
+            "prompt_id": "lumbar_tenderness_msk-low-back-pain",
+            "prompt_text": "Lumbar tenderness documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "nerve_root_tests",
+        "group_id": "nerve_root_msk-low-back-pain",
         "group_label": "Nerve root tests",
         "display_order": 3,
-        "safety_note": "Document only if assessed. nerve root test findings only if assessed. Do not imply test was performed without clinician documentation.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "straight_leg_raise",
+            "prompt_id": "slr_msk-low-back-pain",
             "prompt_text": "Straight leg raise documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "crossed_straight_leg_raise",
+            "prompt_id": "crossed_slr_msk-low-back-pain",
             "prompt_text": "Crossed straight leg raise documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
@@ -252,47 +252,45 @@
         ]
       },
       {
-        "group_id": "lower_limb_neuro",
+        "group_id": "lower_limb_neuro_msk-low-back-pain",
         "group_label": "Lower limb neurological examination",
         "display_order": 4,
-        "safety_note": "Document only if assessed. neurological findings only if assessed. Do not specify deficits without clinician confirmation.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "lower_limb_power",
+            "prompt_id": "ll_power_msk-low-back-pain",
             "prompt_text": "Lower limb power documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "lower_limb_sensation",
-            "prompt_text": "Lower limb sensation documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "lower_limb_reflexes",
-            "prompt_text": "Lower limb reflexes documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "saddle_sensation",
-            "prompt_text": "Saddle sensation documented if assessed.",
+            "prompt_id": "ll_sensation_msk-low-back-pain",
+            "prompt_text": "Sensation documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "conditional",
-            "warning": "Saddle sensation should only be documented if cauda equina syndrome was specifically assessed."
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "neurovascular_status",
+            "prompt_id": "ll_reflexes_msk-low-back-pain",
+            "prompt_text": "Reflexes documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "saddle_sensation_msk-low-back-pain",
+            "prompt_text": "Saddle sensation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "neurovascular_msk-low-back-pain",
             "prompt_text": "Neurovascular status documented if relevant.",
-            "documentation_style": "if_relevant",
+            "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       }
     ],
-    "named_tests": [],
-    "safety_note": "Document only if assessed. These prompts support low back pain examination documentation, not examination instructions.",
+    "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
     "review_required": true
   },
   {
@@ -3567,79 +3565,93 @@
     "workflow_display_name": "Pelvic pain",
     "exam_groups": [
       {
-        "group_id": "vitals_obgyn-pelvic-pain",
+        "group_id": "bp_obgyn-pelvic-pain",
         "group_label": "Vital signs",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "heart_rate_obgyn-pelvic-pain",
-            "prompt_text": "Heart rate documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "blood_pressure_obgyn-pelvic-pain",
+            "prompt_id": "bp_measured_obgyn-pelvic-pain",
             "prompt_text": "Blood pressure documented if measured.",
             "documentation_style": "if_measured",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "weight_bmi_obgyn-pelvic-pain",
-            "prompt_text": "Weight and BMI documented if measured.",
+            "prompt_id": "hr_measured_obgyn-pelvic-pain",
+            "prompt_text": "Heart rate documented if measured.",
             "documentation_style": "if_measured",
             "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "oedema_obgyn-pelvic-pain",
-        "group_label": "Oedema assessment",
+        "group_id": "abdominal_obgyn-pelvic-pain",
+        "group_label": "Abdominal examination",
         "display_order": 2,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "lower_limb_oedema_obgyn-pelvic-pain",
-            "prompt_text": "Lower limb oedema documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "abdominal_ob_obgyn-pelvic-pain",
-        "group_label": "Abdominal and obstetric examination",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "abdominal_exam_ob_obgyn-pelvic-pain",
+            "prompt_id": "abdominal_exam_obgyn-pelvic-pain",
             "prompt_text": "Abdominal examination documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "fundal_height_obgyn-pelvic-pain",
-            "prompt_text": "Fundal height documented if measured.",
-            "documentation_style": "if_measured",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "fetal_heart_obgyn-pelvic-pain",
-            "prompt_text": "Fetal heart auscultation documented if assessed.",
+            "prompt_id": "abdominal_tenderness_obgyn-pelvic-pain",
+            "prompt_text": "Abdominal tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "pelvic_obgyn-pelvic-pain",
+        "group_label": "Pelvic examination (clinically appropriate context)",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
+        "prompts": [
+          {
+            "prompt_id": "pelvic_exam_obgyn-pelvic-pain",
+            "prompt_text": "Pelvic examination documented if assessed and clinically appropriate.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "fetal_movement_obgyn-pelvic-pain",
-            "prompt_text": "Fetal movement documented if relevant.",
+            "prompt_id": "cervical_tenderness_obgyn-pelvic-pain",
+            "prompt_text": "Cervical motion tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "adnexal_tenderness_obgyn-pelvic-pain",
+            "prompt_text": "Adnexal tenderness or mass documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "bleeding_discharge_obgyn-pelvic-pain",
+        "group_label": "Bleeding and discharge",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
+        "prompts": [
+          {
+            "prompt_id": "bleeding_status_obgyn-pelvic-pain",
+            "prompt_text": "Vaginal bleeding documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "discharge_status_obgyn-pelvic-pain",
+            "prompt_text": "Vaginal discharge documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       }
     ],
-    "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+    "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
     "review_required": true
   },
   {
@@ -3647,79 +3659,81 @@
     "workflow_display_name": "Irregular bleeding",
     "exam_groups": [
       {
-        "group_id": "vitals_obgyn-irregular-bleeding",
+        "group_id": "bp_obgyn-irregular-bleeding",
         "group_label": "Vital signs",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "heart_rate_obgyn-irregular-bleeding",
-            "prompt_text": "Heart rate documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "blood_pressure_obgyn-irregular-bleeding",
+            "prompt_id": "bp_measured_obgyn-irregular-bleeding",
             "prompt_text": "Blood pressure documented if measured.",
             "documentation_style": "if_measured",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "weight_bmi_obgyn-irregular-bleeding",
-            "prompt_text": "Weight and BMI documented if measured.",
+            "prompt_id": "hr_measured_obgyn-irregular-bleeding",
+            "prompt_text": "Heart rate documented if measured.",
             "documentation_style": "if_measured",
             "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "oedema_obgyn-irregular-bleeding",
-        "group_label": "Oedema assessment",
+        "group_id": "abdominal_obgyn-irregular-bleeding",
+        "group_label": "Abdominal examination",
         "display_order": 2,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "lower_limb_oedema_obgyn-irregular-bleeding",
-            "prompt_text": "Lower limb oedema documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "abdominal_ob_obgyn-irregular-bleeding",
-        "group_label": "Abdominal and obstetric examination",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "abdominal_exam_ob_obgyn-irregular-bleeding",
+            "prompt_id": "abdominal_exam_obgyn-irregular-bleeding",
             "prompt_text": "Abdominal examination documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "fundal_height_obgyn-irregular-bleeding",
-            "prompt_text": "Fundal height documented if measured.",
-            "documentation_style": "if_measured",
             "required_level": "conditional"
-          },
+          }
+        ]
+      },
+      {
+        "group_id": "pelvic_obgyn-irregular-bleeding",
+        "group_label": "Pelvic examination (clinically appropriate context)",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
+        "prompts": [
           {
-            "prompt_id": "fetal_heart_obgyn-irregular-bleeding",
-            "prompt_text": "Fetal heart auscultation documented if assessed.",
+            "prompt_id": "pelvic_exam_obgyn-irregular-bleeding",
+            "prompt_text": "Pelvic examination documented if assessed and clinically appropriate.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "fetal_movement_obgyn-irregular-bleeding",
-            "prompt_text": "Fetal movement documented if relevant.",
+            "prompt_id": "speculum_obgyn-irregular-bleeding",
+            "prompt_text": "Speculum examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "bimanual_obgyn-irregular-bleeding",
+            "prompt_text": "Bimanual examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "bleeding_obgyn-irregular-bleeding",
+        "group_label": "Bleeding assessment",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
+        "prompts": [
+          {
+            "prompt_id": "bleeding_amount_obgyn-irregular-bleeding",
+            "prompt_text": "Bleeding amount and character documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       }
     ],
-    "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+    "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
     "review_required": true
   },
   {
@@ -3727,79 +3741,47 @@
     "workflow_display_name": "Vaginal discharge",
     "exam_groups": [
       {
-        "group_id": "vitals_obgyn-vaginal-discharge",
+        "group_id": "bp_obgyn-vaginal-discharge",
         "group_label": "Vital signs",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "heart_rate_obgyn-vaginal-discharge",
-            "prompt_text": "Heart rate documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "blood_pressure_obgyn-vaginal-discharge",
+            "prompt_id": "bp_measured_obgyn-vaginal-discharge",
             "prompt_text": "Blood pressure documented if measured.",
             "documentation_style": "if_measured",
             "required_level": "conditional"
-          },
-          {
-            "prompt_id": "weight_bmi_obgyn-vaginal-discharge",
-            "prompt_text": "Weight and BMI documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "oedema_obgyn-vaginal-discharge",
-        "group_label": "Oedema assessment",
+        "group_id": "pelvic_obgyn-vaginal-discharge",
+        "group_label": "Pelvic examination (clinically appropriate context)",
         "display_order": 2,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "lower_limb_oedema_obgyn-vaginal-discharge",
-            "prompt_text": "Lower limb oedema documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "abdominal_ob_obgyn-vaginal-discharge",
-        "group_label": "Abdominal and obstetric examination",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "abdominal_exam_ob_obgyn-vaginal-discharge",
-            "prompt_text": "Abdominal examination documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "fundal_height_obgyn-vaginal-discharge",
-            "prompt_text": "Fundal height documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "fetal_heart_obgyn-vaginal-discharge",
-            "prompt_text": "Fetal heart auscultation documented if assessed.",
+            "prompt_id": "pelvic_exam_obgyn-vaginal-discharge",
+            "prompt_text": "Pelvic examination documented if assessed and clinically appropriate.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "fetal_movement_obgyn-vaginal-discharge",
-            "prompt_text": "Fetal movement documented if relevant.",
+            "prompt_id": "speculum_obgyn-vaginal-discharge",
+            "prompt_text": "Speculum examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "discharge_character_obgyn-vaginal-discharge",
+            "prompt_text": "Discharge character and appearance documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       }
     ],
-    "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+    "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
     "review_required": true
   },
   {
@@ -3807,19 +3789,13 @@
     "workflow_display_name": "Contraception counseling",
     "exam_groups": [
       {
-        "group_id": "vitals_obgyn-contraception",
+        "group_id": "bp_obgyn-contraception",
         "group_label": "Vital signs",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "heart_rate_obgyn-contraception",
-            "prompt_text": "Heart rate documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "blood_pressure_obgyn-contraception",
+            "prompt_id": "bp_measured_obgyn-contraception",
             "prompt_text": "Blood pressure documented if measured.",
             "documentation_style": "if_measured",
             "required_level": "conditional"
@@ -3833,53 +3809,27 @@
         ]
       },
       {
-        "group_id": "oedema_obgyn-contraception",
-        "group_label": "Oedema assessment",
+        "group_id": "counseling_obgyn-contraception",
+        "group_label": "Contraception counseling documentation",
         "display_order": 2,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "lower_limb_oedema_obgyn-contraception",
-            "prompt_text": "Lower limb oedema documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "abdominal_ob_obgyn-contraception",
-        "group_label": "Abdominal and obstetric examination",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "abdominal_exam_ob_obgyn-contraception",
-            "prompt_text": "Abdominal examination documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "fundal_height_obgyn-contraception",
-            "prompt_text": "Fundal height documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "fetal_heart_obgyn-contraception",
-            "prompt_text": "Fetal heart auscultation documented if assessed.",
+            "prompt_id": "contraception_discussed_obgyn-contraception",
+            "prompt_text": "Contraception options and counseling documented if discussed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "fetal_movement_obgyn-contraception",
-            "prompt_text": "Fetal movement documented if relevant.",
+            "prompt_id": "method_chosen_obgyn-contraception",
+            "prompt_text": "Contraception method documented if clinician and patient decided if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       }
     ],
-    "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+    "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
     "review_required": true
   },
   {
@@ -3887,79 +3837,55 @@
     "workflow_display_name": "Dysmenorrhea",
     "exam_groups": [
       {
-        "group_id": "vitals_obgyn-dysmenorrhea",
+        "group_id": "bp_obgyn-dysmenorrhea",
         "group_label": "Vital signs",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "heart_rate_obgyn-dysmenorrhea",
-            "prompt_text": "Heart rate documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "blood_pressure_obgyn-dysmenorrhea",
+            "prompt_id": "bp_measured_obgyn-dysmenorrhea",
             "prompt_text": "Blood pressure documented if measured.",
             "documentation_style": "if_measured",
             "required_level": "conditional"
-          },
-          {
-            "prompt_id": "weight_bmi_obgyn-dysmenorrhea",
-            "prompt_text": "Weight and BMI documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "oedema_obgyn-dysmenorrhea",
-        "group_label": "Oedema assessment",
+        "group_id": "abdominal_obgyn-dysmenorrhea",
+        "group_label": "Abdominal examination",
         "display_order": 2,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "lower_limb_oedema_obgyn-dysmenorrhea",
-            "prompt_text": "Lower limb oedema documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "abdominal_ob_obgyn-dysmenorrhea",
-        "group_label": "Abdominal and obstetric examination",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "abdominal_exam_ob_obgyn-dysmenorrhea",
+            "prompt_id": "abdominal_exam_obgyn-dysmenorrhea",
             "prompt_text": "Abdominal examination documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "fundal_height_obgyn-dysmenorrhea",
-            "prompt_text": "Fundal height documented if measured.",
-            "documentation_style": "if_measured",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "fetal_heart_obgyn-dysmenorrhea",
-            "prompt_text": "Fetal heart auscultation documented if assessed.",
+            "prompt_id": "abdominal_tenderness_obgyn-dysmenorrhea",
+            "prompt_text": "Abdominal tenderness documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
-          },
+          }
+        ]
+      },
+      {
+        "group_id": "pelvic_obgyn-dysmenorrhea",
+        "group_label": "Pelvic examination (clinically appropriate context)",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
+        "prompts": [
           {
-            "prompt_id": "fetal_movement_obgyn-dysmenorrhea",
-            "prompt_text": "Fetal movement documented if relevant.",
+            "prompt_id": "pelvic_exam_obgyn-dysmenorrhea",
+            "prompt_text": "Pelvic examination documented if assessed and clinically appropriate.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       }
     ],
-    "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+    "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
     "review_required": true
   },
   {
@@ -3967,79 +3893,75 @@
     "workflow_display_name": "Postnatal follow-up",
     "exam_groups": [
       {
-        "group_id": "vitals_obgyn-postnatal-followup",
+        "group_id": "bp_obgyn-postnatal-followup",
         "group_label": "Vital signs",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "heart_rate_obgyn-postnatal-followup",
-            "prompt_text": "Heart rate documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "blood_pressure_obgyn-postnatal-followup",
+            "prompt_id": "bp_measured_obgyn-postnatal-followup",
             "prompt_text": "Blood pressure documented if measured.",
             "documentation_style": "if_measured",
             "required_level": "conditional"
-          },
-          {
-            "prompt_id": "weight_bmi_obgyn-postnatal-followup",
-            "prompt_text": "Weight and BMI documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "oedema_obgyn-postnatal-followup",
-        "group_label": "Oedema assessment",
+        "group_id": "wound_obgyn-postnatal-followup",
+        "group_label": "Wound assessment",
         "display_order": 2,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "lower_limb_oedema_obgyn-postnatal-followup",
-            "prompt_text": "Lower limb oedema documented if assessed.",
+            "prompt_id": "wound_status_obgyn-postnatal-followup",
+            "prompt_text": "Wound status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "erythema_discharge_obgyn-postnatal-followup",
+            "prompt_text": "Erythema or discharge documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "abdominal_ob_obgyn-postnatal-followup",
-        "group_label": "Abdominal and obstetric examination",
+        "group_id": "breastfeeding_obgyn-postnatal-followup",
+        "group_label": "Breastfeeding documentation",
         "display_order": 3,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "abdominal_exam_ob_obgyn-postnatal-followup",
-            "prompt_text": "Abdominal examination documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "fundal_height_obgyn-postnatal-followup",
-            "prompt_text": "Fundal height documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "fetal_heart_obgyn-postnatal-followup",
-            "prompt_text": "Fetal heart auscultation documented if assessed.",
+            "prompt_id": "breastfeeding_status_obgyn-postnatal-followup",
+            "prompt_text": "Breastfeeding status documented if discussed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "fetal_movement_obgyn-postnatal-followup",
-            "prompt_text": "Fetal movement documented if relevant.",
+            "prompt_id": "breast_exam_obgyn-postnatal-followup",
+            "prompt_text": "Breast examination documented if assessed and clinically appropriate.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "mood_obgyn-postnatal-followup",
+        "group_label": "Mood screen",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
+        "prompts": [
+          {
+            "prompt_id": "mood_screen_obgyn-postnatal-followup",
+            "prompt_text": "Mood screening documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       }
     ],
-    "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+    "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
     "review_required": true
   },
   {
@@ -4047,79 +3969,67 @@
     "workflow_display_name": "Early pregnancy symptoms",
     "exam_groups": [
       {
-        "group_id": "vitals_obgyn-early-pregnancy",
+        "group_id": "bp_obgyn-early-pregnancy",
         "group_label": "Vital signs",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "heart_rate_obgyn-early-pregnancy",
-            "prompt_text": "Heart rate documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "blood_pressure_obgyn-early-pregnancy",
+            "prompt_id": "bp_measured_obgyn-early-pregnancy",
             "prompt_text": "Blood pressure documented if measured.",
             "documentation_style": "if_measured",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "weight_bmi_obgyn-early-pregnancy",
-            "prompt_text": "Weight and BMI documented if measured.",
+            "prompt_id": "hr_measured_obgyn-early-pregnancy",
+            "prompt_text": "Heart rate documented if measured.",
             "documentation_style": "if_measured",
             "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "oedema_obgyn-early-pregnancy",
-        "group_label": "Oedema assessment",
+        "group_id": "abdominal_obgyn-early-pregnancy",
+        "group_label": "Abdominal examination",
         "display_order": 2,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "lower_limb_oedema_obgyn-early-pregnancy",
-            "prompt_text": "Lower limb oedema documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "abdominal_ob_obgyn-early-pregnancy",
-        "group_label": "Abdominal and obstetric examination",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "abdominal_exam_ob_obgyn-early-pregnancy",
+            "prompt_id": "abdominal_exam_obgyn-early-pregnancy",
             "prompt_text": "Abdominal examination documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "pregnancy_obgyn-early-pregnancy",
+        "group_label": "Pregnancy-related documentation",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
+        "prompts": [
           {
-            "prompt_id": "fundal_height_obgyn-early-pregnancy",
-            "prompt_text": "Fundal height documented if measured.",
-            "documentation_style": "if_measured",
+            "prompt_id": "gestational_age_obgyn-early-pregnancy",
+            "prompt_text": "Gestational age documented if assessed.",
+            "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
             "prompt_id": "fetal_heart_obgyn-early-pregnancy",
-            "prompt_text": "Fetal heart auscultation documented if assessed.",
+            "prompt_text": "Fetal heart auscultation documented if assessed and clinically appropriate.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "fetal_movement_obgyn-early-pregnancy",
-            "prompt_text": "Fetal movement documented if relevant.",
+            "prompt_id": "bleeding_pain_obgyn-early-pregnancy",
+            "prompt_text": "Bleeding, pain, or discharge documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       }
     ],
-    "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+    "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
     "review_required": true
   },
   {
@@ -4127,19 +4037,13 @@
     "workflow_display_name": "Menopause symptoms",
     "exam_groups": [
       {
-        "group_id": "vitals_obgyn-menopause",
+        "group_id": "bp_obgyn-menopause",
         "group_label": "Vital signs",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "heart_rate_obgyn-menopause",
-            "prompt_text": "Heart rate documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "blood_pressure_obgyn-menopause",
+            "prompt_id": "bp_measured_obgyn-menopause",
             "prompt_text": "Blood pressure documented if measured.",
             "documentation_style": "if_measured",
             "required_level": "conditional"
@@ -4153,53 +4057,27 @@
         ]
       },
       {
-        "group_id": "oedema_obgyn-menopause",
-        "group_label": "Oedema assessment",
+        "group_id": "menopause_obgyn-menopause",
+        "group_label": "Menopause-related documentation",
         "display_order": 2,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "lower_limb_oedema_obgyn-menopause",
-            "prompt_text": "Lower limb oedema documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "abdominal_ob_obgyn-menopause",
-        "group_label": "Abdominal and obstetric examination",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "abdominal_exam_ob_obgyn-menopause",
-            "prompt_text": "Abdominal examination documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "fundal_height_obgyn-menopause",
-            "prompt_text": "Fundal height documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "fetal_heart_obgyn-menopause",
-            "prompt_text": "Fetal heart auscultation documented if assessed.",
+            "prompt_id": "symptoms_documented_obgyn-menopause",
+            "prompt_text": "Menopause symptoms documented if discussed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "fetal_movement_obgyn-menopause",
-            "prompt_text": "Fetal movement documented if relevant.",
+            "prompt_id": "bleeding_status_obgyn-menopause",
+            "prompt_text": "Bleeding pattern documented if relevant.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       }
     ],
-    "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+    "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
     "review_required": true
   },
   {
@@ -4207,79 +4085,41 @@
     "workflow_display_name": "Fertility concern",
     "exam_groups": [
       {
-        "group_id": "vitals_obgyn-fertility",
+        "group_id": "bp_obgyn-fertility",
         "group_label": "Vital signs",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "heart_rate_obgyn-fertility",
-            "prompt_text": "Heart rate documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "blood_pressure_obgyn-fertility",
+            "prompt_id": "bp_measured_obgyn-fertility",
             "prompt_text": "Blood pressure documented if measured.",
             "documentation_style": "if_measured",
             "required_level": "conditional"
-          },
-          {
-            "prompt_id": "weight_bmi_obgyn-fertility",
-            "prompt_text": "Weight and BMI documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "oedema_obgyn-fertility",
-        "group_label": "Oedema assessment",
+        "group_id": "fertility_obgyn-fertility",
+        "group_label": "Fertility-related documentation",
         "display_order": 2,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
         "prompts": [
           {
-            "prompt_id": "lower_limb_oedema_obgyn-fertility",
-            "prompt_text": "Lower limb oedema documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "abdominal_ob_obgyn-fertility",
-        "group_label": "Abdominal and obstetric examination",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "abdominal_exam_ob_obgyn-fertility",
-            "prompt_text": "Abdominal examination documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "fundal_height_obgyn-fertility",
-            "prompt_text": "Fundal height documented if measured.",
-            "documentation_style": "if_measured",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "fetal_heart_obgyn-fertility",
-            "prompt_text": "Fetal heart auscultation documented if assessed.",
+            "prompt_id": "fertility_history_obgyn-fertility",
+            "prompt_text": "Fertility history and context documented if discussed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "fetal_movement_obgyn-fertility",
-            "prompt_text": "Fetal movement documented if relevant.",
+            "prompt_id": "examination_fertility_obgyn-fertility",
+            "prompt_text": "Relevant examination documented if assessed and clinically appropriate.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       }
     ],
-    "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+    "safety_note": "Document only if assessed. Pelvic examination requires clinically appropriate context and consent. Local protocol applies. Do not imply exam must be performed.",
     "review_required": true
   },
   {
@@ -4287,66 +4127,80 @@
     "workflow_display_name": "Neck pain",
     "exam_groups": [
       {
-        "group_id": "gait_msk-neck-pain",
-        "group_label": "Gait assessment",
+        "group_id": "cervical_msk-neck-pain",
+        "group_label": "Cervical spine examination",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "gait_assessment_msk-neck-pain",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "cervical_rom_msk-neck-pain",
+            "prompt_text": "Cervical range of motion documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "range_of_motion_msk-neck-pain",
-            "prompt_text": "Range of motion documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "neurovascular_status_msk-neck-pain",
-            "prompt_text": "Neurovascular status documented if relevant.",
+            "prompt_id": "cervical_tenderness_msk-neck-pain",
+            "prompt_text": "Cervical tenderness documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "joint_exam_msk-neck-pain",
-        "group_label": "Joint examination",
+        "group_id": "upper_limb_neuro_msk-neck-pain",
+        "group_label": "Upper limb neurological examination",
         "display_order": 2,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "joint_swelling_msk-neck-pain",
-            "prompt_text": "Joint swelling documented if assessed.",
+            "prompt_id": "ul_power_msk-neck-pain",
+            "prompt_text": "Upper limb power documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "joint_tenderness_msk-neck-pain",
-            "prompt_text": "Joint tenderness documented if assessed.",
+            "prompt_id": "ul_sensation_msk-neck-pain",
+            "prompt_text": "Sensation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "ul_reflexes_msk-neck-pain",
+            "prompt_text": "Reflexes documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "neurovascular_msk-neck-pain",
-        "group_label": "Neurovascular assessment",
+        "group_id": "special_tests_msk-neck-pain",
+        "group_label": "Special tests",
         "display_order": 3,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "neuro_screen_msk-neck-pain",
-            "prompt_text": "Neurological screen documented if assessed.",
+            "prompt_id": "spurling_msk-neck-pain",
+            "prompt_text": "Spurling test documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
-          },
+          }
+        ]
+      },
+      {
+        "group_id": "myelopathy_msk-neck-pain",
+        "group_label": "Myelopathy screen",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
           {
             "prompt_id": "gait_msk-neck-pain",
             "prompt_text": "Gait documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "myelopathy_screen_msk-neck-pain",
+            "prompt_text": "Myelopathy screen documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
@@ -4361,66 +4215,138 @@
     "workflow_display_name": "Knee pain",
     "exam_groups": [
       {
-        "group_id": "gait_msk-knee-pain",
-        "group_label": "Gait assessment",
+        "group_id": "inspection_msk-knee-pain",
+        "group_label": "Inspection",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "gait_assessment_msk-knee-pain",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "inspection_msk-knee-pain",
+            "prompt_text": "Inspection documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "range_of_motion_msk-knee-pain",
+            "prompt_id": "effusion_msk-knee-pain",
+            "prompt_text": "Effusion documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rom_msk-knee-pain",
+        "group_label": "Range of motion",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "knee_rom_msk-knee-pain",
             "prompt_text": "Range of motion documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "neurovascular_status_msk-knee-pain",
-            "prompt_text": "Neurovascular status documented if relevant.",
+            "prompt_id": "joint_line_tenderness_msk-knee-pain",
+            "prompt_text": "Joint line tenderness documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "joint_exam_msk-knee-pain",
-        "group_label": "Joint examination",
-        "display_order": 2,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "joint_swelling_msk-knee-pain",
-            "prompt_text": "Joint swelling documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "joint_tenderness_msk-knee-pain",
-            "prompt_text": "Joint tenderness documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "neurovascular_msk-knee-pain",
-        "group_label": "Neurovascular assessment",
+        "group_id": "ligament_tests_msk-knee-pain",
+        "group_label": "Ligament tests",
         "display_order": 3,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "neuro_screen_msk-knee-pain",
-            "prompt_text": "Neurological screen documented if assessed.",
+            "prompt_id": "lachman_msk-knee-pain",
+            "prompt_text": "Lachman test documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
+          {
+            "prompt_id": "anterior_drawer_msk-knee-pain",
+            "prompt_text": "Anterior drawer documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "posterior_drawer_msk-knee-pain",
+            "prompt_text": "Posterior drawer documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "varus_stress_msk-knee-pain",
+            "prompt_text": "Varus stress documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "valgus_stress_msk-knee-pain",
+            "prompt_text": "Valgus stress documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "meniscal_tests_msk-knee-pain",
+        "group_label": "Meniscal tests",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "mcmurray_msk-knee-pain",
+            "prompt_text": "McMurray test documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "thessaly_msk-knee-pain",
+            "prompt_text": "Thessaly test documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "patellofemoral_msk-knee-pain",
+        "group_label": "Patellofemoral",
+        "display_order": 5,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "patellar_apprehension_msk-knee-pain",
+            "prompt_text": "Patellar apprehension documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "patellar_grind_msk-knee-pain",
+            "prompt_text": "Patellar grind documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "function_msk-knee-pain",
+        "group_label": "Functional assessment",
+        "display_order": 6,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
           {
             "prompt_id": "gait_msk-knee-pain",
             "prompt_text": "Gait documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "neurovascular_msk-knee-pain",
+            "prompt_text": "Neurovascular status documented if relevant.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
@@ -4435,66 +4361,100 @@
     "workflow_display_name": "Shoulder pain",
     "exam_groups": [
       {
-        "group_id": "gait_msk-shoulder-pain",
-        "group_label": "Gait assessment",
+        "group_id": "rom_msk-shoulder-pain",
+        "group_label": "Range of motion",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "gait_assessment_msk-shoulder-pain",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "active_rom_msk-shoulder-pain",
+            "prompt_text": "Active range of motion documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "range_of_motion_msk-shoulder-pain",
-            "prompt_text": "Range of motion documented if assessed.",
+            "prompt_id": "passive_rom_msk-shoulder-pain",
+            "prompt_text": "Passive range of motion documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "neurovascular_status_msk-shoulder-pain",
-            "prompt_text": "Neurovascular status documented if relevant.",
+            "prompt_id": "painful_arc_msk-shoulder-pain",
+            "prompt_text": "Painful arc documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "joint_exam_msk-shoulder-pain",
-        "group_label": "Joint examination",
+        "group_id": "impingement_msk-shoulder-pain",
+        "group_label": "Impingement tests",
         "display_order": 2,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "joint_swelling_msk-shoulder-pain",
-            "prompt_text": "Joint swelling documented if assessed.",
+            "prompt_id": "neer_msk-shoulder-pain",
+            "prompt_text": "Neer test documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "joint_tenderness_msk-shoulder-pain",
-            "prompt_text": "Joint tenderness documented if assessed.",
+            "prompt_id": "hawkins_kennedy_msk-shoulder-pain",
+            "prompt_text": "Hawkins-Kennedy test documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "neurovascular_msk-shoulder-pain",
-        "group_label": "Neurovascular assessment",
+        "group_id": "rotator_cuff_msk-shoulder-pain",
+        "group_label": "Rotator cuff",
         "display_order": 3,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "neuro_screen_msk-shoulder-pain",
-            "prompt_text": "Neurological screen documented if assessed.",
+            "prompt_id": "jobe_msk-shoulder-pain",
+            "prompt_text": "Jobe / empty can test documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "gait_msk-shoulder-pain",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "er_strength_msk-shoulder-pain",
+            "prompt_text": "External rotation strength documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "lift_off_msk-shoulder-pain",
+            "prompt_text": "Lift-off / belly press documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "stability_msk-shoulder-pain",
+        "group_label": "Stability",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "apprehension_msk-shoulder-pain",
+            "prompt_text": "Apprehension test documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "function_msk-shoulder-pain",
+        "group_label": "Functional",
+        "display_order": 5,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "neurovascular_msk-shoulder-pain",
+            "prompt_text": "Neurovascular status documented if relevant.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
@@ -4510,65 +4470,75 @@
     "exam_groups": [
       {
         "group_id": "gait_msk-hip-pain",
-        "group_label": "Gait assessment",
+        "group_label": "Gait",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
-          {
-            "prompt_id": "gait_assessment_msk-hip-pain",
-            "prompt_text": "Gait documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "range_of_motion_msk-hip-pain",
-            "prompt_text": "Range of motion documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "neurovascular_status_msk-hip-pain",
-            "prompt_text": "Neurovascular status documented if relevant.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "joint_exam_msk-hip-pain",
-        "group_label": "Joint examination",
-        "display_order": 2,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "joint_swelling_msk-hip-pain",
-            "prompt_text": "Joint swelling documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "joint_tenderness_msk-hip-pain",
-            "prompt_text": "Joint tenderness documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "neurovascular_msk-hip-pain",
-        "group_label": "Neurovascular assessment",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "neuro_screen_msk-hip-pain",
-            "prompt_text": "Neurological screen documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
           {
             "prompt_id": "gait_msk-hip-pain",
             "prompt_text": "Gait documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rom_msk-hip-pain",
+        "group_label": "Range of motion",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "hip_rom_msk-hip-pain",
+            "prompt_text": "Hip range of motion documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "log_roll_msk-hip-pain",
+            "prompt_text": "Log roll documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "special_tests_msk-hip-pain",
+        "group_label": "Special tests",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "faber_msk-hip-pain",
+            "prompt_text": "FABER/FADIR documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "tenderness_msk-hip-pain",
+        "group_label": "Tenderness",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "tenderness_msk-hip-pain",
+            "prompt_text": "Tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "function_msk-hip-pain",
+        "group_label": "Functional",
+        "display_order": 5,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "neurovascular_msk-hip-pain",
+            "prompt_text": "Neurovascular status documented if relevant.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
@@ -4583,66 +4553,82 @@
     "workflow_display_name": "Ankle / foot pain",
     "exam_groups": [
       {
-        "group_id": "gait_msk-ankle-pain",
-        "group_label": "Gait assessment",
+        "group_id": "weight_bearing_msk-ankle-pain",
+        "group_label": "Weight-bearing",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "gait_assessment_msk-ankle-pain",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "weight_bearing_msk-ankle-pain",
+            "prompt_text": "Weight-bearing status documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "tenderness_msk-ankle-pain",
+        "group_label": "Ottawa Ankle Rules / bony tenderness",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "malleolar_msk-ankle-pain",
+            "prompt_text": "Malleolar tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "range_of_motion_msk-ankle-pain",
+            "prompt_id": "fifth_metatarsal_msk-ankle-pain",
+            "prompt_text": "Base of fifth metatarsal tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "navicular_msk-ankle-pain",
+            "prompt_text": "Navicular tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rom_msk-ankle-pain",
+        "group_label": "Range of motion",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "ankle_rom_msk-ankle-pain",
             "prompt_text": "Range of motion documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "swelling_msk-ankle-pain",
+        "group_label": "Swelling and bruising",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
           {
-            "prompt_id": "neurovascular_status_msk-ankle-pain",
+            "prompt_id": "swelling_bruising_msk-ankle-pain",
+            "prompt_text": "Swelling and bruising documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "function_msk-ankle-pain",
+        "group_label": "Functional",
+        "display_order": 5,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "neurovascular_msk-ankle-pain",
             "prompt_text": "Neurovascular status documented if relevant.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "joint_exam_msk-ankle-pain",
-        "group_label": "Joint examination",
-        "display_order": 2,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "joint_swelling_msk-ankle-pain",
-            "prompt_text": "Joint swelling documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "joint_tenderness_msk-ankle-pain",
-            "prompt_text": "Joint tenderness documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "neurovascular_msk-ankle-pain",
-        "group_label": "Neurovascular assessment",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "neuro_screen_msk-ankle-pain",
-            "prompt_text": "Neurological screen documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "gait_msk-ankle-pain",
-            "prompt_text": "Gait documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
@@ -4657,66 +4643,68 @@
     "workflow_display_name": "Wrist / hand pain",
     "exam_groups": [
       {
-        "group_id": "gait_msk-wrist-hand-pain",
-        "group_label": "Gait assessment",
+        "group_id": "tenderness_msk-wrist-hand-pain",
+        "group_label": "Tenderness",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "gait_assessment_msk-wrist-hand-pain",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "snuffbox_msk-wrist-hand-pain",
+            "prompt_text": "Anatomical snuffbox tenderness documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rom_msk-wrist-hand-pain",
+        "group_label": "Range of motion",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
           {
-            "prompt_id": "range_of_motion_msk-wrist-hand-pain",
+            "prompt_id": "wrist_rom_msk-wrist-hand-pain",
             "prompt_text": "Range of motion documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "function_msk-wrist-hand-pain",
+        "group_label": "Function",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "grip_msk-wrist-hand-pain",
+            "prompt_text": "Grip documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "neurovascular_status_msk-wrist-hand-pain",
+            "prompt_id": "tendon_function_msk-wrist-hand-pain",
+            "prompt_text": "Tendon function documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_msk-wrist-hand-pain",
+        "group_label": "Neurovascular",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "neurovascular_msk-wrist-hand-pain",
             "prompt_text": "Neurovascular status documented if relevant.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "joint_exam_msk-wrist-hand-pain",
-        "group_label": "Joint examination",
-        "display_order": 2,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "joint_swelling_msk-wrist-hand-pain",
-            "prompt_text": "Joint swelling documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
           },
           {
-            "prompt_id": "joint_tenderness_msk-wrist-hand-pain",
-            "prompt_text": "Joint tenderness documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "neurovascular_msk-wrist-hand-pain",
-        "group_label": "Neurovascular assessment",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "neuro_screen_msk-wrist-hand-pain",
-            "prompt_text": "Neurological screen documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "gait_msk-wrist-hand-pain",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "swelling_deformity_msk-wrist-hand-pain",
+            "prompt_text": "Swelling or deformity documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
@@ -4731,66 +4719,62 @@
     "workflow_display_name": "Acute sprain",
     "exam_groups": [
       {
-        "group_id": "gait_msk-acute-sprain",
-        "group_label": "Gait assessment",
+        "group_id": "inspection_msk-acute-sprain",
+        "group_label": "Inspection",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "gait_assessment_msk-acute-sprain",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "mechanism_msk-acute-sprain",
+            "prompt_text": "Mechanism-related inspection documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "range_of_motion_msk-acute-sprain",
+            "prompt_id": "swelling_bruising_msk-acute-sprain",
+            "prompt_text": "Swelling and bruising documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "stability_msk-acute-sprain",
+        "group_label": "Stability",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "joint_stability_msk-acute-sprain",
+            "prompt_text": "Joint stability documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rom_msk-acute-sprain",
+        "group_label": "Range of motion",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "sprain_rom_msk-acute-sprain",
             "prompt_text": "Range of motion documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "function_msk-acute-sprain",
+        "group_label": "Functional",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
           {
-            "prompt_id": "neurovascular_status_msk-acute-sprain",
+            "prompt_id": "neurovascular_msk-acute-sprain",
             "prompt_text": "Neurovascular status documented if relevant.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "joint_exam_msk-acute-sprain",
-        "group_label": "Joint examination",
-        "display_order": 2,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "joint_swelling_msk-acute-sprain",
-            "prompt_text": "Joint swelling documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "joint_tenderness_msk-acute-sprain",
-            "prompt_text": "Joint tenderness documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "neurovascular_msk-acute-sprain",
-        "group_label": "Neurovascular assessment",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "neuro_screen_msk-acute-sprain",
-            "prompt_text": "Neurological screen documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "gait_msk-acute-sprain",
-            "prompt_text": "Gait documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
@@ -4805,25 +4789,39 @@
     "workflow_display_name": "Fracture follow-up",
     "exam_groups": [
       {
-        "group_id": "gait_msk-fracture-followup",
-        "group_label": "Gait assessment",
+        "group_id": "cast_status_msk-fracture-followup",
+        "group_label": "Cast / splint status",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "gait_assessment_msk-fracture-followup",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "cast_status_msk-fracture-followup",
+            "prompt_text": "Cast or splint status documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "range_of_motion_msk-fracture-followup",
-            "prompt_text": "Range of motion documented if assessed.",
+            "prompt_id": "swelling_msk-fracture-followup",
+            "prompt_text": "Swelling documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "neurovascular_status_msk-fracture-followup",
+            "prompt_id": "tenderness_msk-fracture-followup",
+            "prompt_text": "Tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_msk-fracture-followup",
+        "group_label": "Neurovascular",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "neurovascular_msk-fracture-followup",
             "prompt_text": "Neurovascular status documented if relevant.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
@@ -4831,41 +4829,21 @@
         ]
       },
       {
-        "group_id": "joint_exam_msk-fracture-followup",
-        "group_label": "Joint examination",
-        "display_order": 2,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "joint_swelling_msk-fracture-followup",
-            "prompt_text": "Joint swelling documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "joint_tenderness_msk-fracture-followup",
-            "prompt_text": "Joint tenderness documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "neurovascular_msk-fracture-followup",
-        "group_label": "Neurovascular assessment",
+        "group_id": "wound_msk-fracture-followup",
+        "group_label": "Wound and imaging",
         "display_order": 3,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "neuro_screen_msk-fracture-followup",
-            "prompt_text": "Neurological screen documented if assessed.",
+            "prompt_id": "wound_status_msk-fracture-followup",
+            "prompt_text": "Wound status documented if relevant.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           },
           {
-            "prompt_id": "gait_msk-fracture-followup",
-            "prompt_text": "Gait documented if assessed.",
-            "documentation_style": "documented_if_assessed",
+            "prompt_id": "alignment_imaging_msk-fracture-followup",
+            "prompt_text": "Alignment and imaging reviewed if available.",
+            "documentation_style": "if_reviewed",
             "required_level": "conditional"
           }
         ]
@@ -4879,25 +4857,53 @@
     "workflow_display_name": "Post-op follow-up",
     "exam_groups": [
       {
-        "group_id": "gait_msk-post-op-followup",
-        "group_label": "Gait assessment",
+        "group_id": "wound_msk-post-op-followup",
+        "group_label": "Wound assessment",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "gait_assessment_msk-post-op-followup",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "wound_status_msk-post-op-followup",
+            "prompt_text": "Wound status documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "range_of_motion_msk-post-op-followup",
+            "prompt_id": "erythema_discharge_msk-post-op-followup",
+            "prompt_text": "Erythema or discharge documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "swelling_msk-post-op-followup",
+            "prompt_text": "Swelling documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rom_msk-post-op-followup",
+        "group_label": "Range of motion",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "rom_status_msk-post-op-followup",
             "prompt_text": "Range of motion documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_msk-post-op-followup",
+        "group_label": "Neurovascular",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
           {
-            "prompt_id": "neurovascular_status_msk-post-op-followup",
+            "prompt_id": "neurovascular_msk-post-op-followup",
             "prompt_text": "Neurovascular status documented if relevant.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
@@ -4905,40 +4911,14 @@
         ]
       },
       {
-        "group_id": "joint_exam_msk-post-op-followup",
-        "group_label": "Joint examination",
-        "display_order": 2,
-        "safety_note": "Document only if assessed.",
+        "group_id": "function_msk-post-op-followup",
+        "group_label": "Functional progress",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "joint_swelling_msk-post-op-followup",
-            "prompt_text": "Joint swelling documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "joint_tenderness_msk-post-op-followup",
-            "prompt_text": "Joint tenderness documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "neurovascular_msk-post-op-followup",
-        "group_label": "Neurovascular assessment",
-        "display_order": 3,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "neuro_screen_msk-post-op-followup",
-            "prompt_text": "Neurological screen documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "gait_msk-post-op-followup",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "functional_progress_msk-post-op-followup",
+            "prompt_text": "Functional progress documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
@@ -4953,66 +4933,54 @@
     "workflow_display_name": "Osteoarthritis follow-up",
     "exam_groups": [
       {
-        "group_id": "gait_msk-osteoarthritis-followup",
-        "group_label": "Gait assessment",
+        "group_id": "inspection_msk-osteoarthritis-followup",
+        "group_label": "Affected joint inspection",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "gait_assessment_msk-osteoarthritis-followup",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "joint_inspection_msk-osteoarthritis-followup",
+            "prompt_text": "Affected joint inspection documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rom_msk-osteoarthritis-followup",
+        "group_label": "Range of motion",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
           {
-            "prompt_id": "range_of_motion_msk-osteoarthritis-followup",
+            "prompt_id": "oa_rom_msk-osteoarthritis-followup",
             "prompt_text": "Range of motion documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "neurovascular_status_msk-osteoarthritis-followup",
-            "prompt_text": "Neurovascular status documented if relevant.",
+            "prompt_id": "tenderness_msk-osteoarthritis-followup",
+            "prompt_text": "Tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "crepitus_msk-osteoarthritis-followup",
+            "prompt_text": "Crepitus documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "joint_exam_msk-osteoarthritis-followup",
-        "group_label": "Joint examination",
-        "display_order": 2,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "joint_swelling_msk-osteoarthritis-followup",
-            "prompt_text": "Joint swelling documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "joint_tenderness_msk-osteoarthritis-followup",
-            "prompt_text": "Joint tenderness documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "neurovascular_msk-osteoarthritis-followup",
-        "group_label": "Neurovascular assessment",
+        "group_id": "function_msk-osteoarthritis-followup",
+        "group_label": "Functional assessment",
         "display_order": 3,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "neuro_screen_msk-osteoarthritis-followup",
-            "prompt_text": "Neurological screen documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "gait_msk-osteoarthritis-followup",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "gait_function_msk-osteoarthritis-followup",
+            "prompt_text": "Gait and function documented if assessed.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
@@ -5027,66 +4995,54 @@
     "workflow_display_name": "Sports injury",
     "exam_groups": [
       {
-        "group_id": "gait_msk-sports-injury",
-        "group_label": "Gait assessment",
+        "group_id": "inspection_msk-sports-injury",
+        "group_label": "Injury inspection",
         "display_order": 1,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "gait_assessment_msk-sports-injury",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "mechanism_inspection_msk-sports-injury",
+            "prompt_text": "Mechanism-related inspection documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
+            "required_level": "conditional"
           },
           {
-            "prompt_id": "range_of_motion_msk-sports-injury",
+            "prompt_id": "swelling_bruising_msk-sports-injury",
+            "prompt_text": "Swelling and bruising documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "stability_rom_msk-sports-injury",
+        "group_label": "Stability and ROM",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
+        "prompts": [
+          {
+            "prompt_id": "joint_stability_msk-sports-injury",
+            "prompt_text": "Joint stability documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "sports_rom_msk-sports-injury",
             "prompt_text": "Range of motion documented if assessed.",
             "documentation_style": "documented_if_assessed",
-            "required_level": "workflow_specific"
-          },
-          {
-            "prompt_id": "neurovascular_status_msk-sports-injury",
-            "prompt_text": "Neurovascular status documented if relevant.",
-            "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
         ]
       },
       {
-        "group_id": "joint_exam_msk-sports-injury",
-        "group_label": "Joint examination",
-        "display_order": 2,
-        "safety_note": "Document only if assessed.",
-        "prompts": [
-          {
-            "prompt_id": "joint_swelling_msk-sports-injury",
-            "prompt_text": "Joint swelling documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "joint_tenderness_msk-sports-injury",
-            "prompt_text": "Joint tenderness documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          }
-        ]
-      },
-      {
-        "group_id": "neurovascular_msk-sports-injury",
-        "group_label": "Neurovascular assessment",
+        "group_id": "function_msk-sports-injury",
+        "group_label": "Functional",
         "display_order": 3,
-        "safety_note": "Document only if assessed.",
+        "safety_note": "Document only if assessed. Use only clinician-confirmed findings.",
         "prompts": [
           {
-            "prompt_id": "neuro_screen_msk-sports-injury",
-            "prompt_text": "Neurological screen documented if assessed.",
-            "documentation_style": "documented_if_assessed",
-            "required_level": "conditional"
-          },
-          {
-            "prompt_id": "gait_msk-sports-injury",
-            "prompt_text": "Gait documented if assessed.",
+            "prompt_id": "neurovascular_msk-sports-injury",
+            "prompt_text": "Neurovascular status documented if relevant.",
             "documentation_style": "documented_if_assessed",
             "required_level": "conditional"
           }
