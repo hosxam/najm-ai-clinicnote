@@ -1091,41 +1091,76 @@
   }
 
   function renderPlan(model) {
-    var lines = [];
+    // Collect all plan lines from all sources
+    var rawLines = [];
+    rawLines = rawLines.concat(model.plan.advice);
+    rawLines = rawLines.concat(model.plan.safetyNetting);
+    rawLines = rawLines.concat(model.plan.referrals);
+    rawLines = rawLines.concat(model.plan.investigations);
+
+    // Normalize: lowercase, strip periods for dedup comparison
+    function normForDedup(s) { return s.toLowerCase().replace(/[.,;]+\s*$/g, '').trim(); }
+
+    // Deduplicate by normalized text
     var seen = {};
-    var adviceLines = model.plan.advice.filter(function(a) {
-      var n = a.toLowerCase();
-      if (seen[n]) return false;
-      seen[n] = true;
-      return true;
-    });
-    lines = lines.concat(adviceLines);
+    var deduped = [];
+    for (var i = 0; i < rawLines.length; i++) {
+      var key = normForDedup(rawLines[i]);
+      if (!key || seen[key]) continue;
+      seen[key] = true;
+      deduped.push(rawLines[i]);
+    }
 
     // Combine 'Hydration advised.' + 'Rest advised.' into one
     var hydIdx = -1, restIdx = -1;
-    for (var i = 0; i < lines.length; i++) {
-      if (/^hydration advised\.$/i.test(lines[i])) hydIdx = i;
-      if (/^rest advised\.$/i.test(lines[i])) restIdx = i;
+    for (var hi = 0; hi < deduped.length; hi++) {
+      var n = normForDedup(deduped[hi]);
+      if (n === 'hydration advised') hydIdx = hi;
+      if (n === 'rest advised') restIdx = hi;
     }
     if (hydIdx >= 0 && restIdx >= 0) {
-      lines.splice(Math.min(hydIdx, restIdx), 2, 'Hydration and rest advised.');
+      deduped.splice(Math.min(hydIdx, restIdx), 2, 'Hydration and rest advised.');
+    }
+    // Remove any remaining 'Hydration and rest advised.' duplicates (from Plan Assist note_text)
+    for (var hri = deduped.length - 1; hri >= 0; hri--) {
+      if (hri >= deduped.length) continue;
+      if (normForDedup(deduped[hri]) === 'hydration and rest advised') {
+        var count = 0;
+        for (var ci = 0; ci < deduped.length; ci++) {
+          if (normForDedup(deduped[ci]) === 'hydration and rest advised') count++;
+        }
+        if (count > 1) deduped.splice(hri, 1);
+      }
     }
 
-    // Safety netting
-    lines = lines.concat(model.plan.safetyNetting);
+    // Process follow-up: strip periods, join, merge fragments
+    var fupRaw = model.plan.followUp.map(function(s) { return s.replace(/\.\s*$/g, '').trim(); }).filter(Boolean);
+    // Remove generic 'Follow-up arranged' if specific follow-up timing exists
+    var hasSpecificFup = false;
+    for (var fi = 0; fi < fupRaw.length; fi++) {
+      if (/\d+\s+(day|week|month)/i.test(fupRaw[fi])) hasSpecificFup = true;
+    }
+    if (hasSpecificFup) {
+      fupRaw = fupRaw.filter(function(s) { return !/^follow-up arranged$/i.test(s); });
+    }
+    // Deduplicate follow-up (case-insensitive)
+    var fupSeen = {};
+    var fupDeduped = [];
+    for (var fdi = 0; fdi < fupRaw.length; fdi++) {
+      var fk = fupRaw[fdi].toLowerCase().trim();
+      if (!fk || fupSeen[fk]) continue;
+      fupSeen[fk] = true;
+      fupDeduped.push(fupRaw[fdi]);
+    }
+    // Assemble follow-up: join with ', ', then fix 'sooner' → 'or sooner', lowercase 'sooner'
+    var fupText = fupDeduped.join(', ');
+    fupText = fupText.replace(/^(\d+\s+\w+\s+if\s+not\s+improving),\s*(sooner\s+if\s+)/i, 'Follow-up in $1, or $2');
+    fupText = fupText.replace(/^([a-z])/i, function(m, c) { return c.toUpperCase(); });
+    fupText = fupText.replace(/,\s*or\s*([a-z])/i, function(m, c) { return ', or ' + c.toLowerCase(); });
+    if (fupText && !/\.$/.test(fupText)) fupText += '.';
+    if (fupText) deduped.push(fupText);
 
-    // Follow-up: merge fragments
-    var fup = model.plan.followUp.join(', ');
-    fup = fup.replace(/^(\d+\s+\w+\s+if\s+not\s+improving),\s*(sooner\s+if\s+)/i, '$1, or $2');
-    if (fup) lines.push(fup + '.');
-
-    // Referrals
-    lines = lines.concat(model.plan.referrals);
-
-    // Plan investigations
-    lines = lines.concat(model.plan.investigations);
-
-    return lines.length ? lines.join('\n') : '[not documented]';
+    return deduped.length ? deduped.join('\n') : '[not documented]';
   }
 
   function renderV4EMR(model) {
