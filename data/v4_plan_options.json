@@ -14,7 +14,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if confirmed by the clinician."
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Supportive care advised."
           },
           {
             "option_id": "gp_fever_urti_hydration_rest",
@@ -23,7 +24,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if confirmed by the clinician."
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Hydration and rest advised."
           },
           {
             "option_id": "gp_fever_urti_salt_gargle",
@@ -32,7 +34,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if confirmed by the clinician."
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Salt water gargle/rinse advised."
           }
         ]
       },
@@ -47,7 +50,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Medication choice and dosing by clinician."
+            "safety_note": "Documentation option only. Medication choice and dosing by clinician.",
+            "note_text": "Antipyretic planned."
           },
           {
             "option_id": "gp_fever_urti_antibiotic",
@@ -56,7 +60,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if decided by the clinician."
+            "safety_note": "Documentation option only. Use only if decided by the clinician.",
+            "note_text": "Antibiotic planned."
           }
         ]
       },
@@ -71,7 +76,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Safety netting documentation only. Use only if discussed."
+            "safety_note": "Safety netting documentation only. Use only if discussed.",
+            "note_text": "Return precautions discussed."
           }
         ]
       },
@@ -86,7 +92,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Follow-up documentation only. Use only if arranged."
+            "safety_note": "Follow-up documentation only. Use only if arranged.",
+            "note_text": "Follow-up arranged."
           }
         ]
       }
@@ -109,7 +116,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if discussed."
+            "safety_note": "Documentation option only. Use only if discussed.",
+            "note_text": "Medication adherence discussed."
           },
           {
             "option_id": "gp_diabetes_medication_adjustment",
@@ -118,7 +126,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Medication adjustments by clinician only."
+            "safety_note": "Documentation option only. Medication adjustments by clinician only.",
+            "note_text": "Medication adjustment planned."
           }
         ]
       },
@@ -133,7 +142,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Documentation option only. Use only if discussed."
+            "safety_note": "Documentation option only. Use only if discussed.",
+            "note_text": "Lifestyle advice discussed."
           },
           {
             "option_id": "gp_diabetes_glucose_monitoring",
@@ -142,7 +152,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Monitoring advice only. Use only if discussed."
+            "safety_note": "Monitoring advice only. Use only if discussed.",
+            "note_text": "Glucose monitoring plan discussed."
           }
         ]
       },
@@ -157,7 +168,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Follow-up documentation only."
+            "safety_note": "Follow-up documentation only.",
+            "note_text": "Lab follow-up arranged."
           },
           {
             "option_id": "gp_diabetes_referral",
@@ -166,7 +178,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Referral documentation only. Use only if arranged."
+            "safety_note": "Referral documentation only. Use only if arranged.",
+            "note_text": "Referral arranged."
           },
           {
             "option_id": "gp_diabetes_follow_up",
@@ -175,7 +188,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Follow-up documentation only."
+            "safety_note": "Follow-up documentation only.",
+            "note_text": "Follow-up arranged."
           }
         ]
       }
@@ -198,7 +212,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Advice only. Use only if discussed."
+            "safety_note": "Advice only. Use only if discussed.",
+            "note_text": "Activity modification discussed."
           }
         ]
       },
@@ -213,7 +228,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Medication choice and dosing by clinician. Documentation only."
+            "safety_note": "Medication choice and dosing by clinician. Documentation only.",
+            "note_text": "Analgesia planned."
           }
         ]
       },
@@ -228,7 +244,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Referral documentation only. Use only if arranged."
+            "safety_note": "Referral documentation only. Use only if arranged.",
+            "note_text": "Physiotherapy referral arranged."
           }
         ]
       },
@@ -243,7 +260,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Imaging documentation only."
+            "safety_note": "Imaging documentation only.",
+            "note_text": "Imaging discussed."
           }
         ]
       },
@@ -258,7 +276,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Safety netting only. Use only if discussed."
+            "safety_note": "Safety netting only. Use only if discussed.",
+            "note_text": "Red flags explained."
           }
         ]
       },
@@ -273,7 +292,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Follow-up documentation only."
+            "safety_note": "Follow-up documentation only.",
+            "note_text": "Follow-up arranged."
           }
         ]
       }
@@ -296,7 +316,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Advice only. Use only if discussed."
+            "safety_note": "Advice only. Use only if discussed.",
+            "note_text": "Parent or guardian advice discussed."
           },
           {
             "option_id": "peds_fever_hydration_feeding",
@@ -305,7 +326,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Advice only. Use only if discussed."
+            "safety_note": "Advice only. Use only if discussed.",
+            "note_text": "Hydration and feeding advised."
           }
         ]
       },
@@ -320,7 +342,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Medication choice and dosing by clinician."
+            "safety_note": "Medication choice and dosing by clinician.",
+            "note_text": "Antipyretic planned."
           },
           {
             "option_id": "peds_fever_antibiotic",
@@ -329,7 +352,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Antibiotic use by clinician decision only."
+            "safety_note": "Antibiotic use by clinician decision only.",
+            "note_text": "Antibiotic planned."
           }
         ]
       },
@@ -344,7 +368,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Safety netting only. Use only if discussed."
+            "safety_note": "Safety netting only. Use only if discussed.",
+            "note_text": "Return precautions discussed."
           }
         ]
       },
@@ -359,7 +384,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Follow-up documentation only."
+            "safety_note": "Follow-up documentation only.",
+            "note_text": "Follow-up arranged."
           }
         ]
       }
@@ -382,7 +408,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Counseling documentation only. Use only if discussed."
+            "safety_note": "Counseling documentation only. Use only if discussed.",
+            "note_text": "Antenatal counseling discussed."
           },
           {
             "option_id": "obgyn_antenatal_warning_symptoms",
@@ -391,7 +418,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Safety netting only. Use only if discussed."
+            "safety_note": "Safety netting only. Use only if discussed.",
+            "note_text": "Warning symptoms discussed."
           }
         ]
       },
@@ -406,7 +434,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Supplement/medication documentation only. Dosing by clinician."
+            "safety_note": "Supplement/medication documentation only. Dosing by clinician.",
+            "note_text": "Medication or supplement planned."
           }
         ]
       },
@@ -421,7 +450,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Investigation documentation only."
+            "safety_note": "Investigation documentation only.",
+            "note_text": "Investigations reviewed."
           }
         ]
       },
@@ -436,7 +466,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Referral documentation only. Use only if decided."
+            "safety_note": "Referral documentation only. Use only if decided.",
+            "note_text": "Referral or escalation planned."
           }
         ]
       },
@@ -451,7 +482,8 @@
             "source_status": "draft",
             "source_reference": "V4E2.",
             "clinician_confirmation_required": true,
-            "safety_note": "Follow-up documentation only."
+            "safety_note": "Follow-up documentation only.",
+            "note_text": "Follow-up arranged."
           }
         ]
       }

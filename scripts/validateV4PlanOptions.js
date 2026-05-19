@@ -106,6 +106,14 @@ function main() {
         if (!nonEmpty(opt.option_id)) errors.push(`${label}.${groupLabel}: each option needs an option_id.`);
         if (!nonEmpty(opt.option_text)) errors.push(`${label}.${groupLabel}.${optLabel}: option_text is required.`);
 
+        // note_text validation (final output text)
+        if (!nonEmpty(opt.note_text)) errors.push(`${label}.${groupLabel}.${optLabel}: note_text is required.`);
+        if (opt.note_text) {
+          var noteLower = opt.note_text.toLowerCase();
+          if (/documented if|recorded if|reviewed if|\[.*?\]/.test(noteLower)) errors.push(`${label}.${groupLabel}.${optLabel}: note_text must not contain prompt wording (documented if/recorded if/brackets).`);
+          if (!/[.!]$/.test(opt.note_text.trim())) errors.push(`${label}.${groupLabel}.${optLabel}: note_text should end with punctuation.`);
+        }
+
         // Check duplicate option_text within same workflow
         const optKey = `${item.workflow_id}::${opt.option_text}`;
         if (seen.has(optKey)) errors.push(`${label}.${groupLabel}.${optLabel}: duplicate option_text within workflow.`);

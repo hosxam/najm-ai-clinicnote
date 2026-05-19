@@ -103,6 +103,13 @@ function main() {
         if (!nonEmpty(opt.option_id)) errors.push(`${label}.${groupLabel}: each option needs an option_id.`);
         if (!nonEmpty(opt.option_text)) errors.push(`${label}.${groupLabel}.${optLabel}: option_text is required.`);
         if (!usesSafePhrasing(opt.option_text)) errors.push(`${label}.${groupLabel}.${optLabel}: option_text must use safe phrasing.`);
+
+        // note_text validation
+        if (!nonEmpty(opt.note_text)) errors.push(`${label}.${groupLabel}.${optLabel}: note_text is required.`);
+        if (opt.note_text) {
+          var noteLower2 = opt.note_text.toLowerCase();
+          if (/documented if|recorded if|reviewed if|\[.*?\]/.test(noteLower2)) errors.push(`${label}.${groupLabel}.${optLabel}: note_text must not contain prompt wording.`);
+        }
         if (!VALID_REQUIRED_LEVELS.has(opt.required_level)) errors.push(`${label}.${groupLabel}.${optLabel}: invalid required_level "${opt.required_level}".`);
         if (!VALID_SOURCE_STATUSES.has(opt.source_status)) errors.push(`${label}.${groupLabel}.${optLabel}: invalid source_status.`);
 

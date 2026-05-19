@@ -7,23 +7,53 @@
         "group_id": "bedside",
         "group_label": "Bedside / vitals",
         "options": [
-          { "option_id": "temperature_recorded", "option_text": "Temperature recorded if measured.", "required_level": "conditional", "source_status": "draft" }
+          {
+            "option_id": "temperature_recorded",
+            "option_text": "Temperature recorded if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Temperature recorded."
+          }
         ]
       },
       {
         "group_id": "lab",
         "group_label": "Laboratory",
         "options": [
-          { "option_id": "cbc_reviewed", "option_text": "CBC reviewed if ordered.", "required_level": "conditional", "source_status": "draft" },
-          { "option_id": "crp_reviewed", "option_text": "CRP reviewed if ordered.", "required_level": "conditional", "source_status": "draft" },
-          { "option_id": "rapid_test_reviewed", "option_text": "Rapid test result reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+          {
+            "option_id": "cbc_reviewed",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "crp_reviewed",
+            "option_text": "CRP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CRP reviewed."
+          },
+          {
+            "option_id": "rapid_test_reviewed",
+            "option_text": "Rapid test result reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Rapid test reviewed."
+          }
         ]
       },
       {
         "group_id": "imaging",
         "group_label": "Imaging",
         "options": [
-          { "option_id": "chest_imaging_reviewed", "option_text": "Chest imaging reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+          {
+            "option_id": "chest_imaging_reviewed",
+            "option_text": "Chest imaging reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Chest imaging reviewed."
+          }
         ]
       }
     ],
@@ -38,17 +68,47 @@
         "group_id": "lab",
         "group_label": "Laboratory",
         "options": [
-          { "option_id": "hba1c_reviewed", "option_text": "HbA1c reviewed if available.", "required_level": "workflow_specific", "source_status": "draft" },
-          { "option_id": "renal_function_reviewed", "option_text": "Renal function reviewed if available.", "required_level": "workflow_specific", "source_status": "draft" },
-          { "option_id": "lipid_profile_reviewed", "option_text": "Lipid profile reviewed if available.", "required_level": "conditional", "source_status": "draft" },
-          { "option_id": "urine_acr_reviewed", "option_text": "Urine ACR reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+          {
+            "option_id": "hba1c_reviewed",
+            "option_text": "HbA1c reviewed if available.",
+            "required_level": "workflow_specific",
+            "source_status": "draft",
+            "note_text": "HbA1c reviewed."
+          },
+          {
+            "option_id": "renal_function_reviewed",
+            "option_text": "Renal function reviewed if available.",
+            "required_level": "workflow_specific",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          },
+          {
+            "option_id": "lipid_profile_reviewed",
+            "option_text": "Lipid profile reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Lipid profile reviewed."
+          },
+          {
+            "option_id": "urine_acr_reviewed",
+            "option_text": "Urine ACR reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urine ACR reviewed."
+          }
         ]
       },
       {
         "group_id": "home_monitoring",
         "group_label": "Home monitoring",
         "options": [
-          { "option_id": "home_glucose_log_reviewed", "option_text": "Home glucose log reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+          {
+            "option_id": "home_glucose_log_reviewed",
+            "option_text": "Home glucose log reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Home glucose log reviewed."
+          }
         ]
       }
     ],
@@ -63,17 +123,47 @@
         "group_id": "imaging",
         "group_label": "Imaging",
         "options": [
-          { "option_id": "previous_imaging_reviewed", "option_text": "Previous imaging reviewed if available.", "required_level": "conditional", "source_status": "draft" },
-          { "option_id": "xray_reviewed", "option_text": "X-ray reviewed if available.", "required_level": "conditional", "source_status": "draft" },
-          { "option_id": "mri_report_reviewed", "option_text": "MRI report reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+          {
+            "option_id": "previous_imaging_reviewed",
+            "option_text": "Previous imaging reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Previous imaging reviewed."
+          },
+          {
+            "option_id": "xray_reviewed",
+            "option_text": "X-ray reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "X-ray reviewed."
+          },
+          {
+            "option_id": "mri_report_reviewed",
+            "option_text": "MRI report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "MRI report reviewed."
+          }
         ]
       },
       {
         "group_id": "lab",
         "group_label": "Laboratory",
         "options": [
-          { "option_id": "inflammatory_markers_reviewed", "option_text": "Inflammatory markers reviewed if ordered.", "required_level": "conditional", "source_status": "draft" },
-          { "option_id": "urinalysis_reviewed", "option_text": "Urinalysis reviewed if relevant.", "required_level": "conditional", "source_status": "draft" }
+          {
+            "option_id": "inflammatory_markers_reviewed",
+            "option_text": "Inflammatory markers reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Inflammatory markers reviewed."
+          },
+          {
+            "option_id": "urinalysis_reviewed",
+            "option_text": "Urinalysis reviewed if relevant.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urinalysis reviewed."
+          }
         ]
       }
     ],
@@ -88,17 +178,47 @@
         "group_id": "bedside",
         "group_label": "Bedside / vitals",
         "options": [
-          { "option_id": "temperature_recorded", "option_text": "Temperature recorded if measured.", "required_level": "workflow_specific", "source_status": "draft" }
+          {
+            "option_id": "temperature_recorded",
+            "option_text": "Temperature recorded if measured.",
+            "required_level": "workflow_specific",
+            "source_status": "draft",
+            "note_text": "Temperature recorded."
+          }
         ]
       },
       {
         "group_id": "lab",
         "group_label": "Laboratory",
         "options": [
-          { "option_id": "urine_dip_reviewed", "option_text": "Urine dip reviewed if done.", "required_level": "conditional", "source_status": "draft" },
-          { "option_id": "cbc_reviewed", "option_text": "CBC reviewed if ordered.", "required_level": "conditional", "source_status": "draft" },
-          { "option_id": "crp_reviewed", "option_text": "CRP reviewed if ordered.", "required_level": "conditional", "source_status": "draft" },
-          { "option_id": "cultures_reviewed", "option_text": "Cultures reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+          {
+            "option_id": "urine_dip_reviewed",
+            "option_text": "Urine dip reviewed if done.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urine dip."
+          },
+          {
+            "option_id": "cbc_reviewed",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "crp_reviewed",
+            "option_text": "CRP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CRP reviewed."
+          },
+          {
+            "option_id": "cultures_reviewed",
+            "option_text": "Cultures reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Cultures reviewed."
+          }
         ]
       }
     ],
@@ -113,23 +233,53 @@
         "group_id": "bedside",
         "group_label": "Bedside / vitals",
         "options": [
-          { "option_id": "urine_dip_reviewed", "option_text": "Urine dip reviewed if done.", "required_level": "conditional", "source_status": "draft" },
-          { "option_id": "bp_trend_reviewed", "option_text": "Blood pressure trend reviewed if available.", "required_level": "workflow_specific", "source_status": "draft" }
+          {
+            "option_id": "urine_dip_reviewed",
+            "option_text": "Urine dip reviewed if done.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urine dip."
+          },
+          {
+            "option_id": "bp_trend_reviewed",
+            "option_text": "Blood pressure trend reviewed if available.",
+            "required_level": "workflow_specific",
+            "source_status": "draft",
+            "note_text": "Blood pressure trend reviewed."
+          }
         ]
       },
       {
         "group_id": "lab",
         "group_label": "Laboratory",
         "options": [
-          { "option_id": "antenatal_labs_reviewed", "option_text": "Antenatal labs reviewed if available.", "required_level": "workflow_specific", "source_status": "draft" },
-          { "option_id": "glucose_screening_reviewed", "option_text": "Glucose screening result reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+          {
+            "option_id": "antenatal_labs_reviewed",
+            "option_text": "Antenatal labs reviewed if available.",
+            "required_level": "workflow_specific",
+            "source_status": "draft",
+            "note_text": "Antenatal labs reviewed."
+          },
+          {
+            "option_id": "glucose_screening_reviewed",
+            "option_text": "Glucose screening result reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Glucose screening result reviewed."
+          }
         ]
       },
       {
         "group_id": "imaging",
         "group_label": "Imaging / ultrasound",
         "options": [
-          { "option_id": "ultrasound_reviewed", "option_text": "Ultrasound report reviewed if available.", "required_level": "conditional", "source_status": "draft" }
+          {
+            "option_id": "ultrasound_reviewed",
+            "option_text": "Ultrasound report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Ultrasound report reviewed."
+          }
         ]
       }
     ],

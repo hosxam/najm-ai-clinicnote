@@ -898,7 +898,13 @@
           if (model.subjective.relevantNegatives.indexOf(negParts[ni]) < 0) model.subjective.relevantNegatives.push(negParts[ni]);
         }
       } else if (kl.indexOf('associated') >= 0 || kl.indexOf('symptoms_if') >= 0) {
-        model.subjective.associatedSymptoms.push(v);
+        var av = v.toLowerCase();
+        // Detect negative phrasing: route to negatives, not symptoms
+        if (/^no\s/i.test(av) || /^(denies|denied|negative for)/i.test(av)) {
+          if (model.subjective.relevantNegatives.indexOf(av) < 0) model.subjective.relevantNegatives.push(av);
+        } else {
+          model.subjective.associatedSymptoms.push(v);
+        }
       } else if (kl.indexOf('additional') >= 0) {
       } else if (!model.subjective.chiefConcern) {
         model.subjective.chiefConcern = v;
@@ -946,8 +952,9 @@
         for (var oi = 0; oi < ig.options.length; oi++) {
           var ikey = ig.group_id + '::' + ig.options[oi].option_id;
           if (state$.investigationConfirmations[ikey]) {
-            var cleanedInv2 = transformPromptToNoteText(ig.options[oi].option_text);
-            if (cleanedInv2) model.objective.investigations.push(cleanedInv2);
+            var invNote = ig.options[oi].note_text || ig.options[oi].option_text;
+            invNote = transformPromptToNoteText(invNote);
+            if (invNote) model.objective.investigations.push(invNote);
           }
         }
       }
@@ -972,19 +979,20 @@
         for (var poi = 0; poi < pg.options.length; poi++) {
           var opt = pg.options[poi];
           if (state$.planConfirmations[opt.option_id]) {
-            var cleanedOpt = transformPromptToNoteText(opt.option_text);
-            if (!cleanedOpt) continue;
+            var planNote = opt.note_text || opt.option_text;
+            planNote = transformPromptToNoteText(planNote);
+            if (!planNote) continue;
             var cat = (opt.option_category || '').toLowerCase();
             if (cat === 'follow_up') {
-              model.plan.followUp.push(cleanedOpt);
+              model.plan.followUp.push(planNote);
             } else if (cat === 'safety_netting') {
-              model.plan.safetyNetting.push(cleanedOpt);
+              model.plan.safetyNetting.push(planNote);
             } else if (cat.indexOf('referral') >= 0) {
-              model.plan.referrals.push(cleanedOpt);
+              model.plan.referrals.push(planNote);
             } else if (cat.indexOf('investigation') >= 0 || cat.indexOf('diagnostic') >= 0) {
-              model.plan.investigations.push(cleanedOpt);
+              model.plan.investigations.push(planNote);
             } else {
-              model.plan.advice.push(cleanedOpt);
+              model.plan.advice.push(planNote);
             }
           }
         }
