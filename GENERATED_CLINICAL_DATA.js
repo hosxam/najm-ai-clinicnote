@@ -1,6 +1,6 @@
 // GENERATED_CLINICAL_DATA.js — Najm AI ClinicNote
 // Auto-generated. Do not edit manually.
-// Generated: 2026-05-19 20:51:01
+// Generated: 2026-05-19 20:56:46
 // Source: /data JSON files (validated)
 
 (function() {
@@ -42,7 +42,7 @@
   var data = {
   "metadata": {
     "version": "v2",
-    "generated_at": "2026-05-19 20:51:01",
+    "generated_at": "2026-05-19 20:56:46",
     "source": "validated_json_dataset (data/ CSVs -> JSON, commit 262c021)",
     "warning": "Documentation support only. Clinician review required.",
     "description": "Najm AI ClinicNote clinical data bundle. Built from /data JSON files."
@@ -50,17 +50,17 @@
   "stats": {
     "specialty_count": 8,
     "workflow_count": 150,
-    "chip_count": 3457,
+    "chip_count": 3449,
     "diagnosis_index_count": 423,
     "report_template_count": 7,
     "history_layout_count": 8,
     "chip_group_counts": {
       "symptoms": 936,
-      "relevant_negatives": 482,
-      "exam_findings": 601,
-      "red_flags": 512,
-      "investigations": 148,
-      "plan_phrases": 532,
+      "relevant_negatives": 479,
+      "exam_findings": 603,
+      "red_flags": 508,
+      "investigations": 147,
+      "plan_phrases": 530,
       "follow_up": 246
     },
     "workflow_chip_min": 0,
@@ -53902,14 +53902,14 @@
       },
       "chip_counts": {
         "symptoms": 6,
-        "relevant_negatives": 3,
-        "exam_findings": 3,
-        "red_flags": 4,
-        "investigations": 3,
-        "plan_phrases": 4,
+        "relevant_negatives": 0,
+        "exam_findings": 5,
+        "red_flags": 0,
+        "investigations": 2,
+        "plan_phrases": 2,
         "follow_up": 0
       },
-      "total_chips": 23,
+      "total_chips": 15,
       "chips": {
         "symptoms": [
           {
@@ -53925,95 +53925,61 @@
           },
           {
             "chip_id": "cardio-murmur-documentation-symptoms-2",
-            "chip_text": "murmur detected",
+            "chip_text": "incidental murmur context",
             "order": 2,
             "search_terms": [
-              "murmur"
+              "incidental"
             ],
             "tags": [
-              "detected"
+              "murmur"
             ]
           },
           {
             "chip_id": "cardio-murmur-documentation-symptoms-3",
-            "chip_text": "murmur timing documented",
+            "chip_text": "symptoms reviewed",
             "order": 3,
             "search_terms": [
-              "murmur"
+              "symptoms"
             ],
             "tags": [
-              "timing"
+              "reviewed"
             ]
           },
           {
             "chip_id": "cardio-murmur-documentation-symptoms-4",
-            "chip_text": "murmur location documented",
+            "chip_text": "exertional symptoms reviewed",
             "order": 4,
             "search_terms": [
-              "murmur"
+              "exertional"
             ],
             "tags": [
-              "location"
+              "symptoms"
             ]
           },
           {
             "chip_id": "cardio-murmur-documentation-symptoms-5",
-            "chip_text": "murmur character documented",
+            "chip_text": "syncope reviewed",
             "order": 5,
             "search_terms": [
-              "murmur"
+              "syncope"
             ],
             "tags": [
-              "character"
+              "reviewed"
             ]
           },
           {
             "chip_id": "cardio-murmur-documentation-symptoms-6",
-            "chip_text": "murmur grade documented",
+            "chip_text": "family history reviewed if relevant",
             "order": 6,
             "search_terms": [
-              "murmur"
+              "family"
             ],
             "tags": [
-              "grade"
+              "history"
             ]
           }
         ],
-        "relevant_negatives": [
-          {
-            "chip_id": "cardio-murmur-documentation-relevant_negatives-1",
-            "chip_text": "no chest pain reported",
-            "order": 1,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "chest"
-            ]
-          },
-          {
-            "chip_id": "cardio-murmur-documentation-relevant_negatives-2",
-            "chip_text": "no dyspnea reported",
-            "order": 2,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "dyspnea"
-            ]
-          },
-          {
-            "chip_id": "cardio-murmur-documentation-relevant_negatives-3",
-            "chip_text": "no syncope reported",
-            "order": 3,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "syncope"
-            ]
-          }
-        ],
+        "relevant_negatives": [],
         "exam_findings": [
           {
             "chip_id": "cardio-murmur-documentation-exam_findings-1",
@@ -54028,89 +53994,55 @@
           },
           {
             "chip_id": "cardio-murmur-documentation-exam_findings-2",
-            "chip_text": "cardiovascular exam documented if assessed",
+            "chip_text": "cardiac auscultation documented if assessed",
             "order": 2,
             "search_terms": [
-              "cardiovascular"
+              "cardiac"
             ],
             "tags": [
-              "exam"
+              "auscultation"
             ]
           },
           {
             "chip_id": "cardio-murmur-documentation-exam_findings-3",
-            "chip_text": "radiation documented if assessed",
+            "chip_text": "murmur timing documented if assessed",
             "order": 3,
             "search_terms": [
-              "radiation"
-            ],
-            "tags": [
-              "documented"
-            ]
-          }
-        ],
-        "red_flags": [
-          {
-            "chip_id": "cardio-murmur-documentation-red_flags-1",
-            "chip_text": "diastolic murmur",
-            "order": 1,
-            "search_terms": [
-              "diastolic"
-            ],
-            "tags": [
               "murmur"
+            ],
+            "tags": [
+              "timing"
             ]
           },
           {
-            "chip_id": "cardio-murmur-documentation-red_flags-2",
-            "chip_text": "new murmur",
-            "order": 2,
-            "search_terms": [
-              "new"
-            ],
-            "tags": [
-              "murmur"
-            ]
-          },
-          {
-            "chip_id": "cardio-murmur-documentation-red_flags-3",
-            "chip_text": "systolic murmur grade 3 or above",
-            "order": 3,
-            "search_terms": [
-              "systolic"
-            ],
-            "tags": [
-              "murmur"
-            ]
-          },
-          {
-            "chip_id": "cardio-murmur-documentation-red_flags-4",
-            "chip_text": "associated symptoms",
+            "chip_id": "cardio-murmur-documentation-exam_findings-4",
+            "chip_text": "murmur location or radiation documented if assessed",
             "order": 4,
             "search_terms": [
-              "associated"
+              "murmur"
             ],
             "tags": [
-              "symptoms"
+              "location"
+            ]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-5",
+            "chip_text": "peripheral signs documented if assessed",
+            "order": 5,
+            "search_terms": [
+              "peripheral"
+            ],
+            "tags": [
+              "signs"
             ]
           }
         ],
+        "red_flags": [],
         "investigations": [
           {
             "chip_id": "cardio-murmur-documentation-investigations-1",
-            "chip_text": "echocardiogram reviewed if available",
-            "order": 1,
-            "search_terms": [
-              "echocardiogram"
-            ],
-            "tags": [
-              "reviewed"
-            ]
-          },
-          {
-            "chip_id": "cardio-murmur-documentation-investigations-2",
             "chip_text": "ECG reviewed if performed",
-            "order": 2,
+            "order": 1,
             "search_terms": [
               "ECG"
             ],
@@ -54119,44 +54051,22 @@
             ]
           },
           {
-            "chip_id": "cardio-murmur-documentation-investigations-3",
-            "chip_text": "previous records reviewed if available",
-            "order": 3,
+            "chip_id": "cardio-murmur-documentation-investigations-2",
+            "chip_text": "echo report reviewed if available",
+            "order": 2,
             "search_terms": [
-              "previous"
+              "echo"
             ],
             "tags": [
-              "records"
+              "report"
             ]
           }
         ],
         "plan_phrases": [
           {
             "chip_id": "cardio-murmur-documentation-plan_phrases-1",
-            "chip_text": "murmur findings documented by clinician",
-            "order": 1,
-            "search_terms": [
-              "murmur"
-            ],
-            "tags": [
-              "findings"
-            ]
-          },
-          {
-            "chip_id": "cardio-murmur-documentation-plan_phrases-2",
-            "chip_text": "investigation plan documented if clinician decided",
-            "order": 2,
-            "search_terms": [
-              "investigation"
-            ],
-            "tags": [
-              "plan"
-            ]
-          },
-          {
-            "chip_id": "cardio-murmur-documentation-plan_phrases-3",
             "chip_text": "referral documented if clinician decided",
-            "order": 3,
+            "order": 1,
             "search_terms": [
               "referral"
             ],
@@ -54165,9 +54075,9 @@
             ]
           },
           {
-            "chip_id": "cardio-murmur-documentation-plan_phrases-4",
+            "chip_id": "cardio-murmur-documentation-plan_phrases-2",
             "chip_text": "follow-up documented if arranged",
-            "order": 4,
+            "order": 2,
             "search_terms": [
               "follow-up"
             ],
@@ -58096,95 +58006,61 @@
         },
         {
           "chip_id": "cardio-murmur-documentation-symptoms-2",
-          "chip_text": "murmur detected",
+          "chip_text": "incidental murmur context",
           "order": 2,
           "search_terms": [
-            "murmur"
+            "incidental"
           ],
           "tags": [
-            "detected"
+            "murmur"
           ]
         },
         {
           "chip_id": "cardio-murmur-documentation-symptoms-3",
-          "chip_text": "murmur timing documented",
+          "chip_text": "symptoms reviewed",
           "order": 3,
           "search_terms": [
-            "murmur"
+            "symptoms"
           ],
           "tags": [
-            "timing"
+            "reviewed"
           ]
         },
         {
           "chip_id": "cardio-murmur-documentation-symptoms-4",
-          "chip_text": "murmur location documented",
+          "chip_text": "exertional symptoms reviewed",
           "order": 4,
           "search_terms": [
-            "murmur"
+            "exertional"
           ],
           "tags": [
-            "location"
+            "symptoms"
           ]
         },
         {
           "chip_id": "cardio-murmur-documentation-symptoms-5",
-          "chip_text": "murmur character documented",
+          "chip_text": "syncope reviewed",
           "order": 5,
           "search_terms": [
-            "murmur"
+            "syncope"
           ],
           "tags": [
-            "character"
+            "reviewed"
           ]
         },
         {
           "chip_id": "cardio-murmur-documentation-symptoms-6",
-          "chip_text": "murmur grade documented",
+          "chip_text": "family history reviewed if relevant",
           "order": 6,
           "search_terms": [
-            "murmur"
+            "family"
           ],
           "tags": [
-            "grade"
+            "history"
           ]
         }
       ],
-      "relevant_negatives": [
-        {
-          "chip_id": "cardio-murmur-documentation-relevant_negatives-1",
-          "chip_text": "no chest pain reported",
-          "order": 1,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "chest"
-          ]
-        },
-        {
-          "chip_id": "cardio-murmur-documentation-relevant_negatives-2",
-          "chip_text": "no dyspnea reported",
-          "order": 2,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "dyspnea"
-          ]
-        },
-        {
-          "chip_id": "cardio-murmur-documentation-relevant_negatives-3",
-          "chip_text": "no syncope reported",
-          "order": 3,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "syncope"
-          ]
-        }
-      ],
+      "relevant_negatives": [],
       "exam_findings": [
         {
           "chip_id": "cardio-murmur-documentation-exam_findings-1",
@@ -58199,89 +58075,55 @@
         },
         {
           "chip_id": "cardio-murmur-documentation-exam_findings-2",
-          "chip_text": "cardiovascular exam documented if assessed",
+          "chip_text": "cardiac auscultation documented if assessed",
           "order": 2,
           "search_terms": [
-            "cardiovascular"
+            "cardiac"
           ],
           "tags": [
-            "exam"
+            "auscultation"
           ]
         },
         {
           "chip_id": "cardio-murmur-documentation-exam_findings-3",
-          "chip_text": "radiation documented if assessed",
+          "chip_text": "murmur timing documented if assessed",
           "order": 3,
           "search_terms": [
-            "radiation"
-          ],
-          "tags": [
-            "documented"
-          ]
-        }
-      ],
-      "red_flags": [
-        {
-          "chip_id": "cardio-murmur-documentation-red_flags-1",
-          "chip_text": "diastolic murmur",
-          "order": 1,
-          "search_terms": [
-            "diastolic"
-          ],
-          "tags": [
             "murmur"
+          ],
+          "tags": [
+            "timing"
           ]
         },
         {
-          "chip_id": "cardio-murmur-documentation-red_flags-2",
-          "chip_text": "new murmur",
-          "order": 2,
-          "search_terms": [
-            "new"
-          ],
-          "tags": [
-            "murmur"
-          ]
-        },
-        {
-          "chip_id": "cardio-murmur-documentation-red_flags-3",
-          "chip_text": "systolic murmur grade 3 or above",
-          "order": 3,
-          "search_terms": [
-            "systolic"
-          ],
-          "tags": [
-            "murmur"
-          ]
-        },
-        {
-          "chip_id": "cardio-murmur-documentation-red_flags-4",
-          "chip_text": "associated symptoms",
+          "chip_id": "cardio-murmur-documentation-exam_findings-4",
+          "chip_text": "murmur location or radiation documented if assessed",
           "order": 4,
           "search_terms": [
-            "associated"
+            "murmur"
           ],
           "tags": [
-            "symptoms"
+            "location"
+          ]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-5",
+          "chip_text": "peripheral signs documented if assessed",
+          "order": 5,
+          "search_terms": [
+            "peripheral"
+          ],
+          "tags": [
+            "signs"
           ]
         }
       ],
+      "red_flags": [],
       "investigations": [
         {
           "chip_id": "cardio-murmur-documentation-investigations-1",
-          "chip_text": "echocardiogram reviewed if available",
-          "order": 1,
-          "search_terms": [
-            "echocardiogram"
-          ],
-          "tags": [
-            "reviewed"
-          ]
-        },
-        {
-          "chip_id": "cardio-murmur-documentation-investigations-2",
           "chip_text": "ECG reviewed if performed",
-          "order": 2,
+          "order": 1,
           "search_terms": [
             "ECG"
           ],
@@ -58290,44 +58132,22 @@
           ]
         },
         {
-          "chip_id": "cardio-murmur-documentation-investigations-3",
-          "chip_text": "previous records reviewed if available",
-          "order": 3,
+          "chip_id": "cardio-murmur-documentation-investigations-2",
+          "chip_text": "echo report reviewed if available",
+          "order": 2,
           "search_terms": [
-            "previous"
+            "echo"
           ],
           "tags": [
-            "records"
+            "report"
           ]
         }
       ],
       "plan_phrases": [
         {
           "chip_id": "cardio-murmur-documentation-plan_phrases-1",
-          "chip_text": "murmur findings documented by clinician",
-          "order": 1,
-          "search_terms": [
-            "murmur"
-          ],
-          "tags": [
-            "findings"
-          ]
-        },
-        {
-          "chip_id": "cardio-murmur-documentation-plan_phrases-2",
-          "chip_text": "investigation plan documented if clinician decided",
-          "order": 2,
-          "search_terms": [
-            "investigation"
-          ],
-          "tags": [
-            "plan"
-          ]
-        },
-        {
-          "chip_id": "cardio-murmur-documentation-plan_phrases-3",
           "chip_text": "referral documented if clinician decided",
-          "order": 3,
+          "order": 1,
           "search_terms": [
             "referral"
           ],
@@ -58336,9 +58156,9 @@
           ]
         },
         {
-          "chip_id": "cardio-murmur-documentation-plan_phrases-4",
+          "chip_id": "cardio-murmur-documentation-plan_phrases-2",
           "chip_text": "follow-up documented if arranged",
-          "order": 4,
+          "order": 2,
           "search_terms": [
             "follow-up"
           ],

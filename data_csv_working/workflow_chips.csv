@@ -3434,25 +3434,17 @@ cardio-syncope,Cardiology,cardio-syncope-investigations-1,investigations,ECG rev
 cardio-syncope,Cardiology,cardio-syncope-investigations-2,investigations,glucose checked if performed,2,glucose, checked, if,cardiology
 cardio-syncope,Cardiology,cardio-syncope-plan_phrases-1,plan_phrases,follow-up documented if arranged,1,follow-up, documented, if,cardiology
 cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-1,symptoms,murmur documentation,1,murmur, documentation,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-2,symptoms,murmur detected,2,murmur, detected,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-3,symptoms,murmur timing documented,3,murmur, timing, documented,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-4,symptoms,murmur location documented,4,murmur, location, documented,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-5,symptoms,murmur character documented,5,murmur, character, documented,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-6,symptoms,murmur grade documented,6,murmur, grade, documented,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-relevant_negatives-1,relevant_negatives,no chest pain reported,1,no, chest, pain,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-relevant_negatives-2,relevant_negatives,no dyspnea reported,2,no, dyspnea, reported,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-relevant_negatives-3,relevant_negatives,no syncope reported,3,no, syncope, reported,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-2,symptoms,incidental murmur context,2,incidental, murmur, context,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-3,symptoms,symptoms reviewed,3,symptoms, reviewed,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-4,symptoms,exertional symptoms reviewed,4,exertional, symptoms, reviewed,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-5,symptoms,syncope reviewed,5,syncope, reviewed,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-symptoms-6,symptoms,family history reviewed if relevant,6,family, history, reviewed,cardiology
 cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-exam_findings-1,exam_findings,vital signs documented if measured,1,vital, signs, documented,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-exam_findings-2,exam_findings,cardiovascular exam documented if assessed,2,cardiovascular, exam, documented,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-exam_findings-3,exam_findings,radiation documented if assessed,3,radiation, documented, if,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-red_flags-1,red_flags,diastolic murmur,1,diastolic, murmur,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-red_flags-2,red_flags,new murmur,2,new, murmur,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-red_flags-3,red_flags,systolic murmur grade 3 or above,3,systolic, murmur, grade,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-red_flags-4,red_flags,associated symptoms,4,associated, symptoms,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-investigations-1,investigations,echocardiogram reviewed if available,1,echocardiogram, reviewed, if,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-investigations-2,investigations,ECG reviewed if performed,2,ECG, reviewed, if,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-investigations-3,investigations,previous records reviewed if available,3,previous, records, reviewed,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-plan_phrases-1,plan_phrases,murmur findings documented by clinician,1,murmur, findings, documented,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-plan_phrases-2,plan_phrases,investigation plan documented if clinician decided,2,investigation, plan, documented,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,referral, documented, if,cardiology
-cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,follow-up, documented, if,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-exam_findings-2,exam_findings,cardiac auscultation documented if assessed,2,cardiac, auscultation, documented,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-exam_findings-3,exam_findings,murmur timing documented if assessed,3,murmur, timing, documented,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-exam_findings-4,exam_findings,murmur location or radiation documented if assessed,4,murmur, location, or,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-exam_findings-5,exam_findings,peripheral signs documented if assessed,5,peripheral, signs, documented,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-investigations-1,investigations,ECG reviewed if performed,1,ECG, reviewed, if,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-investigations-2,investigations,echo report reviewed if available,2,echo, report, reviewed,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-plan_phrases-1,plan_phrases,referral documented if clinician decided,1,referral, documented, if,cardiology
+cardio-murmur-documentation,Cardiology,cardio-murmur-documentation-plan_phrases-2,plan_phrases,follow-up documented if arranged,2,follow-up, documented, if,cardiology
