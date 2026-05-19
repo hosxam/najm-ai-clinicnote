@@ -285,5 +285,352 @@
     ],
     "safety_note": "Document investigations only if ordered, reviewed, or available. Antenatal investigation results require clinician review.",
     "review_required": true
+  },
+  {
+    "workflow_id": "urgent-minor-trauma",
+    "investigation_groups": [
+      {
+        "group_id": "imaging_urgent-minor-trauma",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "xr_urgent-minor-trauma",
+            "option_text": "X-ray reviewed if ordered.",
+            "note_text": "X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_urgent-minor-trauma",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "review_required": true,
+    "workflow_display_name": "Minor trauma documentation"
+  },
+  {
+    "workflow_id": "urgent-wound-care-laceration",
+    "investigation_groups": [
+      {
+        "group_id": "imaging_urgent-wound-care-laceration",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "xr_urgent-wound-care-laceration",
+            "option_text": "X-ray reviewed if ordered.",
+            "note_text": "X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "fb_urgent-wound-care-laceration",
+            "option_text": "Foreign body series reviewed if ordered.",
+            "note_text": "Foreign body series reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "lab_urgent-wound-care-laceration",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "prev_urgent-wound-care-laceration",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "review_required": true,
+    "workflow_display_name": "Wound care / laceration documentation"
+  },
+  {
+    "workflow_id": "urgent-burn-assessment",
+    "investigation_groups": [
+      {
+        "group_id": "imaging_urgent-burn-assessment",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "prev_urgent-burn-assessment",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "review_required": true,
+    "workflow_display_name": "Burn assessment documentation"
+  },
+  {
+    "workflow_id": "urgent-allergic-reaction",
+    "investigation_groups": [
+      {
+        "group_id": "records_urgent-allergic-reaction",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_urgent-allergic-reaction",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "allergy_urgent-allergic-reaction",
+            "option_text": "Allergy history reviewed if available.",
+            "note_text": "Allergy history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "review_required": true,
+    "workflow_display_name": "Allergic reaction documentation"
+  },
+  {
+    "workflow_id": "urgent-head-injury",
+    "investigation_groups": [
+      {
+        "group_id": "imaging_urgent-head-injury",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "ct_urgent-head-injury",
+            "option_text": "CT head reviewed if ordered.",
+            "note_text": "CT head reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_urgent-head-injury",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "review_required": true,
+    "workflow_display_name": "Head injury documentation"
+  },
+  {
+    "workflow_id": "urgent-chest-pain",
+    "investigation_groups": [
+      {
+        "group_id": "cardiac_urgent-chest-pain",
+        "group_label": "Cardiac investigations",
+        "options": [
+          {
+            "option_id": "ecg_urgent-chest-pain",
+            "option_text": "ECG reviewed if performed.",
+            "note_text": "ECG reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "trop_urgent-chest-pain",
+            "option_text": "Troponin reviewed if ordered.",
+            "note_text": "Troponin reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "cxr_urgent-chest-pain",
+            "option_text": "Chest X-ray reviewed if ordered.",
+            "note_text": "Chest X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "review_required": true,
+    "workflow_display_name": "Chest pain documentation"
+  },
+  {
+    "workflow_id": "urgent-shortness-of-breath",
+    "investigation_groups": [
+      {
+        "group_id": "investigations_urgent-shortness-of-breath",
+        "group_label": "Investigations",
+        "options": [
+          {
+            "option_id": "cxr_urgent-shortness-of-breath",
+            "option_text": "Chest imaging reviewed if available.",
+            "note_text": "Chest imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "ecg_urgent-shortness-of-breath",
+            "option_text": "ECG reviewed if performed.",
+            "note_text": "ECG reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_urgent-shortness-of-breath",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "review_required": true,
+    "workflow_display_name": "Shortness of breath documentation"
+  },
+  {
+    "workflow_id": "urgent-abdominal-pain",
+    "investigation_groups": [
+      {
+        "group_id": "lab_urgent-abdominal-pain",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "bloods_urgent-abdominal-pain",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "ua_urgent-abdominal-pain",
+            "option_text": "Urinalysis reviewed if done.",
+            "note_text": "Urinalysis reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "preg_urgent-abdominal-pain",
+            "option_text": "Pregnancy test reviewed if relevant and done.",
+            "note_text": "Pregnancy test reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "imaging_urgent-abdominal-pain",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "imaging_urgent-abdominal-pain",
+            "option_text": "Imaging reviewed if ordered.",
+            "note_text": "Imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "review_required": true,
+    "workflow_display_name": "Abdominal pain documentation"
+  },
+  {
+    "workflow_id": "urgent-syncope",
+    "investigation_groups": [
+      {
+        "group_id": "cardiac_urgent-syncope",
+        "group_label": "Cardiac investigations",
+        "options": [
+          {
+            "option_id": "ecg_urgent-syncope",
+            "option_text": "ECG reviewed if performed.",
+            "note_text": "ECG reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "glucose_urgent-syncope",
+            "option_text": "Glucose documented if checked.",
+            "note_text": "Glucose checked.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "bloods_urgent-syncope",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "review_required": true,
+    "workflow_display_name": "Syncope documentation"
+  },
+  {
+    "workflow_id": "urgent-fever-suspected-infection",
+    "investigation_groups": [
+      {
+        "group_id": "lab_urgent-fever-suspected-infection",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "bloods_urgent-fever-suspected-infection",
+            "option_text": "Blood tests reviewed if ordered.",
+            "note_text": "Blood tests reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "ua_urgent-fever-suspected-infection",
+            "option_text": "Urinalysis reviewed if done.",
+            "note_text": "Urinalysis reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "cultures_urgent-fever-suspected-infection",
+            "option_text": "Cultures reviewed if available.",
+            "note_text": "Cultures reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "imaging_urgent-fever-suspected-infection",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "cxr_urgent-fever-suspected-infection",
+            "option_text": "Chest X-ray reviewed if ordered.",
+            "note_text": "Chest X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if ordered, reviewed, or available. No treatment recommendations.",
+    "review_required": true,
+    "workflow_display_name": "Fever / suspected infection documentation"
   }
 ]

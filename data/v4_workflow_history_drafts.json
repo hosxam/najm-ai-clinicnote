@@ -3,9 +3,28 @@
     "workflow_id": "gp-fever-urti",
     "workflow_display_name": "GP Fever / URTI",
     "default_history_draft": "Patient presents with fever and upper respiratory tract symptoms for [duration]. [Cough/nasal congestion/sore throat status]. [Associated symptoms if any]. [Relevant negatives reviewed]. [Additional history].",
-    "editable_placeholders": ["[duration]", "[Cough/nasal congestion/sore throat status]", "[Associated symptoms if any]", "[Relevant negatives reviewed]", "[Additional history]"],
-    "linked_autofill_groups": ["symptoms", "relevant_negatives", "red_flags", "follow_up"],
-    "optional_full_history_sections": ["presenting_complaint", "socrates_hpc", "systems_review", "pmh", "drug_history", "allergies", "ice"],
+    "editable_placeholders": [
+      "[duration]",
+      "[Cough/nasal congestion/sore throat status]",
+      "[Associated symptoms if any]",
+      "[Relevant negatives reviewed]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
     "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
     "review_required": true
   },
@@ -13,9 +32,30 @@
     "workflow_id": "gp-diabetes-followup",
     "workflow_display_name": "GP Diabetes Follow-Up",
     "default_history_draft": "Routine diabetes follow-up. Patient reports [glucose control status over recent period]. [Home glucose monitoring reviewed if available]. [Adherence to medications and lifestyle discussed]. [Relevant lab results reviewed]. [Hypoglycaemic episodes or symptoms if any]. [Additional follow-up details].",
-    "editable_placeholders": ["[glucose control status over recent period]", "[Home glucose monitoring reviewed if available]", "[Adherence to medications and lifestyle discussed]", "[Relevant lab results reviewed]", "[Hypoglycaemic episodes or symptoms if any]", "[Additional follow-up details]"],
-    "linked_autofill_groups": ["symptoms", "relevant_negatives", "investigations", "plan_phrases", "follow_up"],
-    "optional_full_history_sections": ["presenting_complaint", "systems_review", "pmh", "drug_history", "family_history", "social_history", "ice"],
+    "editable_placeholders": [
+      "[glucose control status over recent period]",
+      "[Home glucose monitoring reviewed if available]",
+      "[Adherence to medications and lifestyle discussed]",
+      "[Relevant lab results reviewed]",
+      "[Hypoglycaemic episodes or symptoms if any]",
+      "[Additional follow-up details]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "investigations",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "family_history",
+      "social_history",
+      "ice"
+    ],
     "safety_note": "Editable documentation draft only. Do not add patient-specific facts unless entered or confirmed by the clinician.",
     "review_required": true
   },
@@ -23,9 +63,29 @@
     "workflow_id": "msk-low-back-pain",
     "workflow_display_name": "MSK Low Back Pain",
     "default_history_draft": "Patient seen for low back pain for [duration]. Pain described as [pain character and location] with [radiation pattern if present]. [Movement or position that aggravates/relieves]. [Functional limitation]. [Red flag symptoms reviewed including neurological symptoms, trauma, constitutional symptoms]. [Additional MSK history].",
-    "editable_placeholders": ["[duration]", "[pain character and location]", "[radiation pattern if present]", "[Movement or position that aggravates/relieves]", "[Functional limitation]", "[Red flag symptoms reviewed]", "[Additional MSK history]"],
-    "linked_autofill_groups": ["symptoms", "relevant_negatives", "exam_findings", "red_flags", "plan_phrases"],
-    "optional_full_history_sections": ["joint_pain_socrates", "functional_assessment", "back_pain_red_flags", "pmh_drug_family_social", "ice"],
+    "editable_placeholders": [
+      "[duration]",
+      "[pain character and location]",
+      "[radiation pattern if present]",
+      "[Movement or position that aggravates/relieves]",
+      "[Functional limitation]",
+      "[Red flag symptoms reviewed]",
+      "[Additional MSK history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "exam_findings",
+      "red_flags",
+      "plan_phrases"
+    ],
+    "optional_full_history_sections": [
+      "joint_pain_socrates",
+      "functional_assessment",
+      "back_pain_red_flags",
+      "pmh_drug_family_social",
+      "ice"
+    ],
     "safety_note": "Editable documentation draft only. Do not invent neurological symptoms, trauma details, or red flags.",
     "review_required": true
   },
@@ -33,9 +93,32 @@
     "workflow_id": "peds-fever",
     "workflow_display_name": "Paediatric Fever",
     "default_history_draft": "Parent/guardian reports fever in a [age] for [duration]. [Temperature pattern if reported]. [Feeding and oral intake status]. [Activity level and alertness]. [Urine output]. [Associated symptoms: cough, rhinorrhoea, vomiting, diarrhoea, rash if any]. [Relevant negatives reviewed]. [Additional history].",
-    "editable_placeholders": ["[age]", "[duration]", "[Temperature pattern if reported]", "[Feeding and oral intake status]", "[Activity level and alertness]", "[Urine output]", "[Associated symptoms]", "[Relevant negatives reviewed]", "[Additional history]"],
-    "linked_autofill_groups": ["symptoms", "relevant_negatives", "red_flags", "follow_up"],
-    "optional_full_history_sections": ["age_source", "fever_prompts", "respiratory_prompts", "feeding", "pmh_drug_allergy", "family_social_safeguarding", "parent_child_ice"],
+    "editable_placeholders": [
+      "[age]",
+      "[duration]",
+      "[Temperature pattern if reported]",
+      "[Feeding and oral intake status]",
+      "[Activity level and alertness]",
+      "[Urine output]",
+      "[Associated symptoms]",
+      "[Relevant negatives reviewed]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "age_source",
+      "fever_prompts",
+      "respiratory_prompts",
+      "feeding",
+      "pmh_drug_allergy",
+      "family_social_safeguarding",
+      "parent_child_ice"
+    ],
     "safety_note": "Editable documentation draft only. Paediatric safeguarding and safety concerns require clinician judgment and local protocol.",
     "review_required": true
   },
@@ -43,10 +126,326 @@
     "workflow_id": "obgyn-antenatal-followup",
     "workflow_display_name": "OBGYN Antenatal Follow-Up",
     "default_history_draft": "Routine antenatal follow-up at [gestational age] weeks. [Fetal movements reported]. [Bleeding, pain, or discharge if any]. [BP and proteinuria status reviewed]. [Relevant lab results reviewed including glucose tolerance screen if done]. [Other symptoms or concerns]. [Additional antenatal details].",
-    "editable_placeholders": ["[gestational age]", "[Fetal movements reported]", "[Bleeding, pain, or discharge if any]", "[BP and proteinuria status reviewed]", "[Relevant lab results reviewed]", "[Other symptoms or concerns]", "[Additional antenatal details]"],
-    "linked_autofill_groups": ["symptoms", "relevant_negatives", "investigations", "plan_phrases", "follow_up"],
-    "optional_full_history_sections": ["obstetrics", "antenatal_history", "previous_obstetric_history", "pmh_drug_family_social", "ice"],
+    "editable_placeholders": [
+      "[gestational age]",
+      "[Fetal movements reported]",
+      "[Bleeding, pain, or discharge if any]",
+      "[BP and proteinuria status reviewed]",
+      "[Relevant lab results reviewed]",
+      "[Other symptoms or concerns]",
+      "[Additional antenatal details]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "investigations",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "obstetrics",
+      "antenatal_history",
+      "previous_obstetric_history",
+      "pmh_drug_family_social",
+      "ice"
+    ],
     "safety_note": "Editable documentation draft only. Obstetric history should be documented in clinically appropriate context and reviewed by the clinician.",
     "review_required": true
+  },
+  {
+    "workflow_id": "urgent-minor-trauma",
+    "workflow_display_name": "Minor trauma documentation",
+    "default_history_draft": "Patient seen for minor trauma for [duration]. Mechanism: [mechanism]. Injury site: [injury_site]. Pain described as [pain_description]. Functional limitation: [functional_limitation]. [Relevant negatives reviewed]. [Additional context].",
+    "editable_placeholders": [
+      "[duration]",
+      "[mechanism]",
+      "[injury site]",
+      "[pain description]",
+      "[functional limitation]",
+      "[relevant negatives reviewed]",
+      "[additional context]"
+    ],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
+  },
+  {
+    "workflow_id": "urgent-wound-care-laceration",
+    "workflow_display_name": "Wound care / laceration documentation",
+    "default_history_draft": "Patient seen with wound at [wound_location] from [mechanism]. Time of injury: [mechanism]. Wound described as [wound_description]. Contamination context: [contamination_context]. Tetanus status: [tetanus_status]. [Relevant negatives reviewed]. [Additional context].",
+    "editable_placeholders": [
+      "[mechanism]",
+      "[time of injury]",
+      "[wound location]",
+      "[wound description]",
+      "[contamination context]",
+      "[tetanus status]",
+      "[relevant negatives]",
+      "[additional context]"
+    ],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No procedural instructions or treatment recommendations.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
+  },
+  {
+    "workflow_id": "urgent-burn-assessment",
+    "workflow_display_name": "Burn assessment documentation",
+    "default_history_draft": "Patient seen with burn from [mechanism]. Burn site: [burn_site]. Burn depth: [burn_depth] if assessed. Estimated size/area: [burn_size] if assessed. Blistering: [blistering_context]. Circumferential features: [circumferential_context]. Inhalation concern: [inhalation_context]. [Relevant negatives reviewed]. [Additional context].",
+    "editable_placeholders": [
+      "[mechanism]",
+      "[burn site]",
+      "[burn depth]",
+      "[burn size]",
+      "[blistering context]",
+      "[circumferential context]",
+      "[inhalation context]",
+      "[relevant negatives]",
+      "[additional context]"
+    ],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No burn management or fluid formula instructions.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
+  },
+  {
+    "workflow_id": "urgent-allergic-reaction",
+    "workflow_display_name": "Allergic reaction documentation",
+    "default_history_draft": "Patient seen with allergic reaction. Trigger/exposure: [trigger]. Rash: [rash_description]. Swelling: [swelling_location]. Breathing status: [breathing_status]. Lip/tongue swelling: [lip_tongue_status]. Dizziness/syncope: [dizziness_syncope_status]. Onset: [onset]. [Relevant negatives reviewed]. [Additional context].",
+    "editable_placeholders": [
+      "[trigger]",
+      "[rash description]",
+      "[swelling location]",
+      "[breathing status]",
+      "[lip tongue status]",
+      "[dizziness syncope status]",
+      "[onset]",
+      "[relevant negatives]",
+      "[additional context]"
+    ],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No emergency treatment or medication instructions.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
+  },
+  {
+    "workflow_id": "urgent-head-injury",
+    "workflow_display_name": "Head injury documentation",
+    "default_history_draft": "Patient seen with head injury from [mechanism]. Time of injury: [mechanism]. Loss of consciousness: [loss_of_consciousness]. Vomiting: [vomiting]. Headache: [headache]. Amnesia/confusion: [amnesia_confusion]. Anticoagulant use: [anticoagulant_context]. [Relevant negatives reviewed]. [Additional context].",
+    "editable_placeholders": [
+      "[mechanism]",
+      "[time of injury]",
+      "[loss of consciousness]",
+      "[vomiting]",
+      "[headache]",
+      "[amnesia confusion]",
+      "[anticoagulant context]",
+      "[relevant negatives]",
+      "[additional context]"
+    ],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No CT indication or neurosurgical recommendations.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
+  },
+  {
+    "workflow_id": "urgent-chest-pain",
+    "workflow_display_name": "Chest pain documentation",
+    "default_history_draft": "Patient seen with chest pain. Onset: [onset]. Character: [character]. Radiation: [radiation]. Exertional relation: [exertional_status]. Associated SOB/nausea/sweating: [associated_sob_nausea_sweating]. Risk factors: [risk_factors]. [Relevant negatives reviewed]. [Additional context].",
+    "editable_placeholders": [
+      "[onset]",
+      "[character]",
+      "[radiation]",
+      "[exertional status]",
+      "[associated sob nausea sweating]",
+      "[risk factors]",
+      "[relevant negatives]",
+      "[additional context]"
+    ],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No ACS diagnosis or treatment recommendations.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
+  },
+  {
+    "workflow_id": "urgent-shortness-of-breath",
+    "workflow_display_name": "Shortness of breath documentation",
+    "default_history_draft": "Patient seen with shortness of breath. Onset: [onset]. Exertional/rest: [exertional_rest]. Cough/wheeze/fever: [cough_wheeze_fever]. Leg swelling: [leg_swelling]. Chest pain: [chest_pain_status]. Syncope: [syncope_status]. [Relevant negatives reviewed]. [Additional context].",
+    "editable_placeholders": [
+      "[onset]",
+      "[exertional rest]",
+      "[cough wheeze fever]",
+      "[leg swelling]",
+      "[chest pain status]",
+      "[syncope status]",
+      "[relevant negatives]",
+      "[additional context]"
+    ],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No disposition or management recommendations.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
+  },
+  {
+    "workflow_id": "urgent-abdominal-pain",
+    "workflow_display_name": "Abdominal pain documentation",
+    "default_history_draft": "Patient seen with abdominal pain at [location] for [duration]. Nausea/vomiting: [nausea_vomiting]. Diarrhea/constipation: [diarrhea_constipation]. Urinary symptoms: [urinary_symptoms]. GI bleeding: [gi_bleeding_status]. Last meal: [last_meal]. [Relevant negatives reviewed]. [Additional context].",
+    "editable_placeholders": [
+      "[location]",
+      "[duration]",
+      "[nausea vomiting]",
+      "[diarrhea constipation]",
+      "[urinary symptoms]",
+      "[gi bleeding status]",
+      "[last meal]",
+      "[relevant negatives]",
+      "[additional context]"
+    ],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No surgical or management recommendations.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
+  },
+  {
+    "workflow_id": "urgent-syncope",
+    "workflow_display_name": "Syncope documentation",
+    "default_history_draft": "Patient seen following syncope. Prodrome: [prodrome]. Position: [position]. Duration of LOC: [loc_duration]. Witnessed: [witnessed]. Seizure-like activity: [seizure_activity]. Palpitations/chest pain: [palpitations_chest_pain]. Driving: [driving_context] if relevant. [Relevant negatives reviewed]. [Additional context].",
+    "editable_placeholders": [
+      "[prodrome]",
+      "[position]",
+      "[loc duration]",
+      "[witnessed]",
+      "[seizure activity]",
+      "[palpitations chest pain]",
+      "[driving context]",
+      "[relevant negatives]",
+      "[additional context]"
+    ],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No driving or legal advice unless clinician-entered.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
+  },
+  {
+    "workflow_id": "urgent-fever-suspected-infection",
+    "workflow_display_name": "Fever / suspected infection documentation",
+    "default_history_draft": "Patient seen with fever for [duration]. Temperature: [temperature_recorded]. Source symptoms: [source_symptoms]. Cough/sore throat/urinary/GI/skin: [cough_sore_throat_urinary_gi_skin]. Rigors/chills: [rigors_chills]. Confusion: [confusion_status]. Neck stiffness: [neck_stiffness]. Immunocompromised: [immunocompromised_context]. [Relevant negatives reviewed]. [Additional context].",
+    "editable_placeholders": [
+      "[duration]",
+      "[temperature recorded]",
+      "[source symptoms]",
+      "[cough sore throat urinary gi skin]",
+      "[rigors chills]",
+      "[confusion status]",
+      "[neck stiffness]",
+      "[immunocompromised context]",
+      "[relevant negatives]",
+      "[additional context]"
+    ],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No sepsis pathway or treatment recommendations.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
   }
 ]

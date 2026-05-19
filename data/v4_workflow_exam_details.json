@@ -8723,5 +8723,615 @@
     ],
     "safety_note": "Document only if assessed. These prompts do not require or recommend examination. Clinician assessment and local protocol required. No crisis-management instructions. No risk triage recommendations.",
     "review_required": true
+  },
+  {
+    "workflow_id": "urgent-minor-trauma",
+    "exam_groups": [
+      {
+        "group_id": "vitals_urgent-minor-trauma",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "vitals_documented_urgent-minor-trauma",
+            "prompt_text": "Vital signs documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "inspection_urgent-minor-trauma",
+        "group_label": "Inspection",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "inspection_urgent-minor-trauma",
+            "prompt_text": "Inspection documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "tenderness_urgent-minor-trauma",
+            "prompt_text": "Tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "swelling_bruising_urgent-minor-trauma",
+            "prompt_text": "Swelling or bruising documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rom_urgent-minor-trauma",
+        "group_label": "Range of motion",
+        "display_order": 3,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "rom_urgent-minor-trauma",
+            "prompt_text": "Range of motion documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "neurovascular_urgent-minor-trauma",
+        "group_label": "Neurovascular status",
+        "display_order": 4,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neurovascular_urgent-minor-trauma",
+            "prompt_text": "Neurovascular status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "Minor trauma documentation"
+  },
+  {
+    "workflow_id": "urgent-wound-care-laceration",
+    "exam_groups": [
+      {
+        "group_id": "wound_urgent-wound-care-laceration",
+        "group_label": "Wound assessment",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "wound_location_urgent-wound-care-laceration",
+            "prompt_text": "Wound location documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "wound_size_depth_urgent-wound-care-laceration",
+            "prompt_text": "Wound size and depth documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "bleeding_urgent-wound-care-laceration",
+            "prompt_text": "Bleeding documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "contamination_urgent-wound-care-laceration",
+            "prompt_text": "Contamination or foreign body concern documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_urgent-wound-care-laceration",
+        "group_label": "Neurovascular",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neurovascular_urgent-wound-care-laceration",
+            "prompt_text": "Neurovascular status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "surrounding_skin_urgent-wound-care-laceration",
+            "prompt_text": "Surrounding skin documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "Wound care / laceration documentation"
+  },
+  {
+    "workflow_id": "urgent-burn-assessment",
+    "exam_groups": [
+      {
+        "group_id": "burn_urgent-burn-assessment",
+        "group_label": "Burn assessment",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "burn_site_urgent-burn-assessment",
+            "prompt_text": "Burn site documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "burn_size_urgent-burn-assessment",
+            "prompt_text": "Estimated size and area documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "burn_depth_urgent-burn-assessment",
+            "prompt_text": "Burn depth documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "blistering_urgent-burn-assessment",
+            "prompt_text": "Blistering documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "circumfer_urgent-burn-assessment",
+        "group_label": "Circumferential and neurovascular",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "circumferential_urgent-burn-assessment",
+            "prompt_text": "Circumferential features documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "neurovascular_urgent-burn-assessment",
+            "prompt_text": "Neurovascular status documented if relevant.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "Burn assessment documentation"
+  },
+  {
+    "workflow_id": "urgent-allergic-reaction",
+    "exam_groups": [
+      {
+        "group_id": "vitals_urgent-allergic-reaction",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "vitals_urgent-allergic-reaction",
+            "prompt_text": "Vital signs documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rash_urgent-allergic-reaction",
+        "group_label": "Rash and swelling",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "rash_doc_urgent-allergic-reaction",
+            "prompt_text": "Rash documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "rash_dist_urgent-allergic-reaction",
+            "prompt_text": "Rash distribution documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "angioedema_urgent-allergic-reaction",
+            "prompt_text": "Angioedema documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "resp_urgent-allergic-reaction",
+        "group_label": "Respiratory and airway",
+        "display_order": 3,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "resp_status_urgent-allergic-reaction",
+            "prompt_text": "Respiratory status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "airway_urgent-allergic-reaction",
+            "prompt_text": "Airway status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "Allergic reaction documentation"
+  },
+  {
+    "workflow_id": "urgent-head-injury",
+    "exam_groups": [
+      {
+        "group_id": "vitals_urgent-head-injury",
+        "group_label": "Vital signs and GCS",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "vitals_urgent-head-injury",
+            "prompt_text": "Vital signs documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "gcs_urgent-head-injury",
+            "prompt_text": "Glasgow Coma Scale documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "pupils_urgent-head-injury",
+            "prompt_text": "Pupils documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_urgent-head-injury",
+        "group_label": "Neurological screen",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neuro_screen_urgent-head-injury",
+            "prompt_text": "Neurological screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "scalp_urgent-head-injury",
+            "prompt_text": "Scalp wound or swelling documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "neck_urgent-head-injury",
+            "prompt_text": "Neck examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "Head injury documentation"
+  },
+  {
+    "workflow_id": "urgent-chest-pain",
+    "exam_groups": [
+      {
+        "group_id": "vitals_urgent-chest-pain",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "vitals_urgent-chest-pain",
+            "prompt_text": "Vital signs documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "cardio_urgent-chest-pain",
+        "group_label": "Cardiovascular",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "cardio_exam_urgent-chest-pain",
+            "prompt_text": "Cardiovascular examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "resp_urgent-chest-pain",
+        "group_label": "Respiratory",
+        "display_order": 3,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "resp_exam_urgent-chest-pain",
+            "prompt_text": "Respiratory examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "chest_wall_urgent-chest-pain",
+            "prompt_text": "Chest wall examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "Chest pain documentation"
+  },
+  {
+    "workflow_id": "urgent-shortness-of-breath",
+    "exam_groups": [
+      {
+        "group_id": "vitals_urgent-shortness-of-breath",
+        "group_label": "Vital signs and O2",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "rr_urgent-shortness-of-breath",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "o2_urgent-shortness-of-breath",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "vitals_urgent-shortness-of-breath",
+            "prompt_text": "Vital signs documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "resp_urgent-shortness-of-breath",
+        "group_label": "Respiratory",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "wob_urgent-shortness-of-breath",
+            "prompt_text": "Work of breathing documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "auscultation_urgent-shortness-of-breath",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "Shortness of breath documentation"
+  },
+  {
+    "workflow_id": "urgent-abdominal-pain",
+    "exam_groups": [
+      {
+        "group_id": "vitals_urgent-abdominal-pain",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "vitals_urgent-abdominal-pain",
+            "prompt_text": "Vital signs documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "abdo_urgent-abdominal-pain",
+        "group_label": "Abdominal",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "tenderness_urgent-abdominal-pain",
+            "prompt_text": "Tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "guarding_urgent-abdominal-pain",
+            "prompt_text": "Guarding or rebound documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "bowel_sounds_urgent-abdominal-pain",
+            "prompt_text": "Bowel sounds documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "hydration_urgent-abdominal-pain",
+            "prompt_text": "Hydration documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "Abdominal pain documentation"
+  },
+  {
+    "workflow_id": "urgent-syncope",
+    "exam_groups": [
+      {
+        "group_id": "vitals_urgent-syncope",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "vitals_urgent-syncope",
+            "prompt_text": "Vital signs documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "orthostatic_urgent-syncope",
+            "prompt_text": "Orthostatic blood pressure documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "cardio_urgent-syncope",
+        "group_label": "Cardiovascular",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "cardio_exam_urgent-syncope",
+            "prompt_text": "Cardiovascular examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_urgent-syncope",
+        "group_label": "Neurological screen",
+        "display_order": 3,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neuro_screen_urgent-syncope",
+            "prompt_text": "Neurological screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "Syncope documentation"
+  },
+  {
+    "workflow_id": "urgent-fever-suspected-infection",
+    "exam_groups": [
+      {
+        "group_id": "vitals_urgent-fever-suspected-infection",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "temp_urgent-fever-suspected-infection",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "hr_urgent-fever-suspected-infection",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "rr_urgent-fever-suspected-infection",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "bp_urgent-fever-suspected-infection",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "general_urgent-fever-suspected-infection",
+        "group_label": "General and source-focused",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "hydration_urgent-fever-suspected-infection",
+            "prompt_text": "Hydration documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "source_exam_urgent-fever-suspected-infection",
+            "prompt_text": "Source-focused examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "general_appearance_urgent-fever-suspected-infection",
+            "prompt_text": "General appearance documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "Fever / suspected infection documentation"
   }
 ]

@@ -12,7 +12,7 @@
             "option_text": "Supportive care advice documented if discussed.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
             "note_text": "Supportive care advised."
@@ -22,7 +22,7 @@
             "option_text": "Hydration and rest advice documented if discussed.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
             "note_text": "Hydration and rest advised."
@@ -32,7 +32,7 @@
             "option_text": "Salt water gargle/rinse advice documented if discussed.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
             "note_text": "Salt water gargle/rinse advised."
@@ -48,7 +48,7 @@
             "option_text": "Antipyretic plan documented if clinician decided.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Documentation option only. Medication choice and dosing by clinician.",
             "note_text": "Antipyretic planned."
@@ -58,7 +58,7 @@
             "option_text": "Antibiotic plan documented if clinician decided.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Documentation option only. Use only if decided by the clinician.",
             "note_text": "Antibiotic planned."
@@ -74,7 +74,7 @@
             "option_text": "Return precautions documented if discussed.",
             "option_category": "safety_netting",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Safety netting documentation only. Use only if discussed.",
             "note_text": "Return precautions discussed."
@@ -90,7 +90,7 @@
             "option_text": "Follow-up arranged documented if clinician decided.",
             "option_category": "follow_up",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Follow-up documentation only. Use only if arranged.",
             "note_text": "Follow-up arranged."
@@ -99,7 +99,8 @@
       }
     ],
     "safety_note": "Plan documentation options only. Do not use as treatment recommendations.",
-    "review_required": true
+    "review_required": true,
+    "source_status": "draft"
   },
   {
     "workflow_id": "gp-diabetes-followup",
@@ -114,7 +115,7 @@
             "option_text": "Medication adherence discussed documented if discussed.",
             "option_category": "medication_review_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Documentation option only. Use only if discussed.",
             "note_text": "Medication adherence discussed."
@@ -124,7 +125,7 @@
             "option_text": "Medication adjustment documented if clinician decided.",
             "option_category": "medication_review_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Documentation option only. Medication adjustments by clinician only.",
             "note_text": "Medication adjustment planned."
@@ -140,7 +141,7 @@
             "option_text": "Lifestyle advice documented if discussed.",
             "option_category": "lifestyle_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Documentation option only. Use only if discussed.",
             "note_text": "Lifestyle advice discussed."
@@ -150,7 +151,7 @@
             "option_text": "Glucose monitoring plan documented if discussed.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Monitoring advice only. Use only if discussed.",
             "note_text": "Glucose monitoring plan discussed."
@@ -166,7 +167,7 @@
             "option_text": "Lab follow-up documented if arranged.",
             "option_category": "follow_up",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Follow-up documentation only.",
             "note_text": "Lab follow-up arranged."
@@ -176,7 +177,7 @@
             "option_text": "Referral documented if clinician arranged.",
             "option_category": "referral_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Referral documentation only. Use only if arranged.",
             "note_text": "Referral arranged."
@@ -186,7 +187,7 @@
             "option_text": "Follow-up arranged documented if clinician decided.",
             "option_category": "follow_up",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Follow-up documentation only.",
             "note_text": "Follow-up arranged."
@@ -195,7 +196,8 @@
       }
     ],
     "safety_note": "Plan documentation options only. Do not use as treatment recommendations.",
-    "review_required": true
+    "review_required": true,
+    "source_status": "draft"
   },
   {
     "workflow_id": "msk-low-back-pain",
@@ -210,7 +212,7 @@
             "option_text": "Activity modification documented if discussed.",
             "option_category": "counseling",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Advice only. Use only if discussed.",
             "note_text": "Activity modification discussed."
@@ -226,7 +228,7 @@
             "option_text": "Analgesia plan documented if clinician decided.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Medication choice and dosing by clinician. Documentation only.",
             "note_text": "Analgesia planned."
@@ -242,7 +244,7 @@
             "option_text": "Physiotherapy referral documented if arranged.",
             "option_category": "referral_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Referral documentation only. Use only if arranged.",
             "note_text": "Physiotherapy referral arranged."
@@ -258,7 +260,7 @@
             "option_text": "Imaging discussed or documented if clinician decided.",
             "option_category": "investigation_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Imaging documentation only.",
             "note_text": "Imaging discussed."
@@ -274,7 +276,7 @@
             "option_text": "Red flags explained documented if discussed.",
             "option_category": "safety_netting",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Safety netting only. Use only if discussed.",
             "note_text": "Red flags explained."
@@ -290,7 +292,7 @@
             "option_text": "Follow-up arranged documented if clinician decided.",
             "option_category": "follow_up",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Follow-up documentation only.",
             "note_text": "Follow-up arranged."
@@ -299,7 +301,8 @@
       }
     ],
     "safety_note": "Plan documentation options only. Do not use as treatment recommendations.",
-    "review_required": true
+    "review_required": true,
+    "source_status": "draft"
   },
   {
     "workflow_id": "peds-fever",
@@ -314,7 +317,7 @@
             "option_text": "Parent or guardian advice documented if discussed.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Advice only. Use only if discussed.",
             "note_text": "Parent or guardian advice discussed."
@@ -324,7 +327,7 @@
             "option_text": "Hydration and feeding advice documented if discussed.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Advice only. Use only if discussed.",
             "note_text": "Hydration and feeding advised."
@@ -340,7 +343,7 @@
             "option_text": "Antipyretic plan documented if clinician decided.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Medication choice and dosing by clinician.",
             "note_text": "Antipyretic planned."
@@ -350,7 +353,7 @@
             "option_text": "Antibiotic plan documented if clinician decided.",
             "option_category": "patient_instruction_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Antibiotic use by clinician decision only.",
             "note_text": "Antibiotic planned."
@@ -366,7 +369,7 @@
             "option_text": "Return precautions documented if discussed.",
             "option_category": "safety_netting",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Safety netting only. Use only if discussed.",
             "note_text": "Return precautions discussed."
@@ -382,7 +385,7 @@
             "option_text": "Follow-up arranged documented if clinician decided.",
             "option_category": "follow_up",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Follow-up documentation only.",
             "note_text": "Follow-up arranged."
@@ -391,7 +394,8 @@
       }
     ],
     "safety_note": "Plan documentation options only. Do not use as treatment recommendations.",
-    "review_required": true
+    "review_required": true,
+    "source_status": "draft"
   },
   {
     "workflow_id": "obgyn-antenatal-followup",
@@ -406,7 +410,7 @@
             "option_text": "Antenatal counseling documented if discussed.",
             "option_category": "counseling",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Counseling documentation only. Use only if discussed.",
             "note_text": "Antenatal counseling discussed."
@@ -416,7 +420,7 @@
             "option_text": "Warning symptoms documented if discussed.",
             "option_category": "safety_netting",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Safety netting only. Use only if discussed.",
             "note_text": "Warning symptoms discussed."
@@ -432,7 +436,7 @@
             "option_text": "Medication or supplement plan documented if clinician decided.",
             "option_category": "medication_review_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Supplement/medication documentation only. Dosing by clinician.",
             "note_text": "Medication or supplement planned."
@@ -448,7 +452,7 @@
             "option_text": "Investigations reviewed or discussed documented if clinician did so.",
             "option_category": "investigation_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Investigation documentation only.",
             "note_text": "Investigations reviewed."
@@ -464,7 +468,7 @@
             "option_text": "Referral or escalation documented only if clinician decided.",
             "option_category": "referral_documentation",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Referral documentation only. Use only if decided.",
             "note_text": "Referral or escalation planned."
@@ -480,7 +484,7 @@
             "option_text": "Follow-up arranged documented if clinician decided.",
             "option_category": "follow_up",
             "source_status": "draft",
-            "source_reference": "V4E2.",
+            "source_reference": "V4J-4 Emergency batch",
             "clinician_confirmation_required": true,
             "safety_note": "Follow-up documentation only.",
             "note_text": "Follow-up arranged."
@@ -489,6 +493,954 @@
       }
     ],
     "safety_note": "Plan documentation options only. Do not use as treatment recommendations.",
-    "review_required": true
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "urgent-minor-trauma",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_urgent-minor-trauma",
+        "group_label": "Counseling and advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "injury_advice_urgent-minor-trauma",
+            "option_text": "Injury advice documented if discussed.",
+            "note_text": "Injury advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          },
+          {
+            "option_id": "return_precautions_urgent-minor-trauma",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_urgent-minor-trauma",
+        "group_label": "Medication documentation",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_urgent-minor-trauma",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_urgent-minor-trauma",
+        "group_label": "Follow-up",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_1w_urgent-minor-trauma",
+            "option_text": "Follow-up in 1 week if not improving. documented if arranged.",
+            "note_text": "Follow-up in 1 week if not improving.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft",
+    "workflow_display_name": "Minor trauma documentation"
+  },
+  {
+    "workflow_id": "urgent-wound-care-laceration",
+    "plan_option_groups": [
+      {
+        "group_id": "wound_care_urgent-wound-care-laceration",
+        "group_label": "Wound care",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "wound_advice_urgent-wound-care-laceration",
+            "option_text": "Wound care advice documented if discussed.",
+            "note_text": "Wound care advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          },
+          {
+            "option_id": "dressing_urgent-wound-care-laceration",
+            "option_text": "Dressing documented if applied.",
+            "note_text": "Dressing applied.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_urgent-wound-care-laceration",
+        "group_label": "Medication documentation",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "tetanus_urgent-wound-care-laceration",
+            "option_text": "Tetanus prophylaxis documented if given.",
+            "note_text": "Tetanus prophylaxis given.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          },
+          {
+            "option_id": "abx_urgent-wound-care-laceration",
+            "option_text": "Antibiotic plan documented if clinician decided.",
+            "note_text": "Antibiotic planned.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_urgent-wound-care-laceration",
+        "group_label": "Follow-up",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "wound_check_urgent-wound-care-laceration",
+            "option_text": "Wound check in 3-5 days. documented if discussed.",
+            "note_text": "Wound check in 3-5 days.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft",
+    "workflow_display_name": "Wound care / laceration documentation"
+  },
+  {
+    "workflow_id": "urgent-burn-assessment",
+    "plan_option_groups": [
+      {
+        "group_id": "burn_care_urgent-burn-assessment",
+        "group_label": "Burn care",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "burn_advice_urgent-burn-assessment",
+            "option_text": "Burn care advice documented if discussed.",
+            "note_text": "Burn care advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          },
+          {
+            "option_id": "dressing_urgent-burn-assessment",
+            "option_text": "Dressing plan documented if clinician decided.",
+            "note_text": "Dressing plan documented.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_urgent-burn-assessment",
+        "group_label": "Medication documentation",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_urgent-burn-assessment",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          },
+          {
+            "option_id": "tetanus_urgent-burn-assessment",
+            "option_text": "Tetanus prophylaxis documented if given.",
+            "note_text": "Tetanus prophylaxis given.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_urgent-burn-assessment",
+        "group_label": "Follow-up",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_1w_urgent-burn-assessment",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft",
+    "workflow_display_name": "Burn assessment documentation"
+  },
+  {
+    "workflow_id": "urgent-allergic-reaction",
+    "plan_option_groups": [
+      {
+        "group_id": "allergy_advice_urgent-allergic-reaction",
+        "group_label": "Allergy counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "allergy_advice_urgent-allergic-reaction",
+            "option_text": "Allergy advice documented if discussed.",
+            "note_text": "Allergy advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          },
+          {
+            "option_id": "trigger_avoid_urgent-allergic-reaction",
+            "option_text": "Trigger avoidance documented if discussed.",
+            "note_text": "Trigger avoidance discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_urgent-allergic-reaction",
+        "group_label": "Medication documentation",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "antihistamine_urgent-allergic-reaction",
+            "option_text": "Antihistamine plan documented if clinician decided.",
+            "note_text": "Antihistamine planned.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_urgent-allergic-reaction",
+        "group_label": "Safety netting",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_prec_urgent-allergic-reaction",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_urgent-allergic-reaction",
+        "group_label": "Follow-up",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_1w_urgent-allergic-reaction",
+            "option_text": "Follow-up in 1 week if not improving. documented if arranged.",
+            "note_text": "Follow-up in 1 week if not improving.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft",
+    "workflow_display_name": "Allergic reaction documentation"
+  },
+  {
+    "workflow_id": "urgent-head-injury",
+    "plan_option_groups": [
+      {
+        "group_id": "head_advice_urgent-head-injury",
+        "group_label": "Head injury advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "head_advice_urgent-head-injury",
+            "option_text": "Head injury advice documented if discussed.",
+            "note_text": "Head injury advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          },
+          {
+            "option_id": "observation_urgent-head-injury",
+            "option_text": "Observation plan documented if clinician decided.",
+            "note_text": "Observation plan documented.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_urgent-head-injury",
+        "group_label": "Safety netting",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_prec_urgent-head-injury",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_urgent-head-injury",
+        "group_label": "Follow-up",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_1_2d_urgent-head-injury",
+            "option_text": "Follow-up in 1-2 days. documented if discussed.",
+            "note_text": "Follow-up in 1-2 days.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft",
+    "workflow_display_name": "Head injury documentation"
+  },
+  {
+    "workflow_id": "urgent-chest-pain",
+    "plan_option_groups": [
+      {
+        "group_id": "investigate_urgent-chest-pain",
+        "group_label": "Investigation plan",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "inv_plan_urgent-chest-pain",
+            "option_text": "Investigation plan documented if clinician decided.",
+            "note_text": "Investigation plan documented.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          },
+          {
+            "option_id": "monitoring_urgent-chest-pain",
+            "option_text": "Cardiac monitoring documented if clinician decided.",
+            "note_text": "Cardiac monitoring documented.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_urgent-chest-pain",
+        "group_label": "Safety netting",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_prec_urgent-chest-pain",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_urgent-chest-pain",
+        "group_label": "Referral",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_urgent-chest-pain",
+            "option_text": "Referral or escalation documented if clinician decided.",
+            "note_text": "Referral or escalation planned.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft",
+    "workflow_display_name": "Chest pain documentation"
+  },
+  {
+    "workflow_id": "urgent-shortness-of-breath",
+    "plan_option_groups": [
+      {
+        "group_id": "mgmt_urgent-shortness-of-breath",
+        "group_label": "Management plan",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "mgmt_plan_urgent-shortness-of-breath",
+            "option_text": "Management plan documented if clinician decided.",
+            "note_text": "Management plan documented.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          },
+          {
+            "option_id": "o2_urgent-shortness-of-breath",
+            "option_text": "Oxygen therapy documented if given.",
+            "note_text": "Oxygen therapy given.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_urgent-shortness-of-breath",
+        "group_label": "Safety netting",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_prec_urgent-shortness-of-breath",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_urgent-shortness-of-breath",
+        "group_label": "Referral",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_urgent-shortness-of-breath",
+            "option_text": "Referral or escalation documented if clinician decided.",
+            "note_text": "Referral or escalation planned.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft",
+    "workflow_display_name": "Shortness of breath documentation"
+  },
+  {
+    "workflow_id": "urgent-abdominal-pain",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_urgent-abdominal-pain",
+        "group_label": "Advice and plan",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "diet_urgent-abdominal-pain",
+            "option_text": "Dietary advice documented if discussed.",
+            "note_text": "Dietary advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_urgent-abdominal-pain",
+        "group_label": "Medication documentation",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_urgent-abdominal-pain",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_urgent-abdominal-pain",
+        "group_label": "Safety netting",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_prec_urgent-abdominal-pain",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_urgent-abdominal-pain",
+        "group_label": "Follow-up",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_1_2d_urgent-abdominal-pain",
+            "option_text": "Follow-up in 1-2 days if not improving. documented if arranged.",
+            "note_text": "Follow-up in 1-2 days if not improving.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft",
+    "workflow_display_name": "Abdominal pain documentation"
+  },
+  {
+    "workflow_id": "urgent-syncope",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_urgent-syncope",
+        "group_label": "Syncope advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "syncope_advice_urgent-syncope",
+            "option_text": "Syncope advice documented if discussed.",
+            "note_text": "Syncope advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "investigate_urgent-syncope",
+        "group_label": "Investigation plan",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "inv_plan_urgent-syncope",
+            "option_text": "Investigation plan documented if clinician decided.",
+            "note_text": "Investigation plan documented.",
+            "option_category": "investigation_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_urgent-syncope",
+        "group_label": "Safety netting",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_prec_urgent-syncope",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_urgent-syncope",
+        "group_label": "Follow-up",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_1w_urgent-syncope",
+            "option_text": "Follow-up in 1 week if arranged. documented if arranged.",
+            "note_text": "Follow-up in 1 week if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft",
+    "workflow_display_name": "Syncope documentation"
+  },
+  {
+    "workflow_id": "urgent-fever-suspected-infection",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_urgent-fever-suspected-infection",
+        "group_label": "Counseling",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "supportive_urgent-fever-suspected-infection",
+            "option_text": "Supportive care advice documented if discussed.",
+            "note_text": "Supportive care advised.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          },
+          {
+            "option_id": "hydration_urgent-fever-suspected-infection",
+            "option_text": "Hydration advice documented if discussed.",
+            "note_text": "Hydration advised.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_urgent-fever-suspected-infection",
+        "group_label": "Medication documentation",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "antipyretic_urgent-fever-suspected-infection",
+            "option_text": "Antipyretic plan documented if clinician decided.",
+            "note_text": "Antipyretic planned.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          },
+          {
+            "option_id": "abx_urgent-fever-suspected-infection",
+            "option_text": "Antibiotic plan documented if clinician decided.",
+            "note_text": "Antibiotic planned.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_urgent-fever-suspected-infection",
+        "group_label": "Safety netting",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_prec_urgent-fever-suspected-infection",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_urgent-fever-suspected-infection",
+        "group_label": "Follow-up",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_2_3d_urgent-fever-suspected-infection",
+            "option_text": "Follow-up in 2-3 days if not improving. documented if arranged.",
+            "note_text": "Follow-up in 2-3 days if not improving.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "safety_note": "Documentation option only. Clinician confirmation required.",
+            "source_reference": "V4J-4 Emergency batch",
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation options only. No treatment or triage recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft",
+    "workflow_display_name": "Fever / suspected infection documentation"
   }
 ]
