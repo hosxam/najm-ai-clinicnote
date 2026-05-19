@@ -647,7 +647,9 @@
 
     // Impression
     h += '<div class="v4-plan-row"><label class="v4-field-label">Doctor Impression</label>';
-    h += '<textarea class="v4-textarea v4-textarea-med" id="v4Impression" oninput="window._v4UpdateImp(this.value)" placeholder="Enter your impression or assessment. Free text only.">' + esc(state.impression) + '</textarea></div>';
+    h += '<textarea class="v4-textarea v4-textarea-med" id="v4Impression" oninput="window._v4UpdateImp(this.value)" placeholder="Enter your impression or assessment. Free text only.">' + esc(state.impression) + '</textarea>';
+    if (!state.impression) h += '<p class="v4-field-note" style="color:#b45309">Doctor-entered impression is empty. Assessment section will show [not documented].</p>';
+    h += '</div>';
 
     // Plan options as Plan Assist
     var plan = getPlanOptions(state.selectedWorkflowId);
@@ -674,7 +676,9 @@
 
     // Doctor plan text
     h += '<div class="v4-plan-row"><label class="v4-field-label">Doctor Plan (free text)</label>';
-    h += '<textarea class="v4-textarea v4-textarea-med" id="v4PlanText" oninput="window._v4UpdatePlan(this.value)" placeholder="Medication names/doses should be entered by the clinician if needed.">' + esc(state.planText) + '</textarea></div>';
+    h += '<textarea class="v4-textarea v4-textarea-med" id="v4PlanText" oninput="window._v4UpdatePlan(this.value)" placeholder="Medication names/doses should be entered by the clinician if needed.">' + esc(state.planText) + '</textarea>';
+    if (!state.planText && countPlan() === 0) h += '<p class="v4-field-note" style="color:#b45309">No plan entered. Plan section will show [not documented] unless Plan Assist items are selected.</p>';
+    h += '</div>';
 
     h += '<div class="v4-step-actions">';
     h += '<button class="v4-btn v4-btn-ghost" onclick="window._v4ClearPlan()">Clear impression and plan</button></div>';
@@ -805,6 +809,50 @@
       .replace(/per clinician plan/gi, '')
       .replace(/\s{2,}/g, ' ')
       .trim();
+  }
+
+  // Clean final output phrases: strip prompt/template wording
+  function cleanV4OutputPhrase(text) {
+    if (!text) return '';
+    text = String(text).trim();
+    // Remove "Status: " prefix
+    text = text.replace(/^Status:\s*/i, '');
+    // Strip "documented if X" suffixes
+    text = text.replace(/\s*documented\s+if\s+assessed\.?\s*$/i, '');
+    text = text.replace(/\s*documented\s+if\s+measured\.?\s*$/i, '');
+    text = text.replace(/\s*documented\s+if\s+discussed\.?\s*$/i, '');
+    text = text.replace(/\s*documented\s+if\s+clinician\s+decided\.?\s*$/i, '');
+    text = text.replace(/\s*documented\s+if\s+arranged\.?\s*$/i, '');
+    text = text.replace(/\s*documented\s+if\s+relevant(\s+and\s+assessed)?\.?\s*$/i, '');
+    text = text.replace(/\s*documented\s+only\s+if\s+clinician\s+(decided|did so|arranged)\.?\s*$/i, '');
+    text = text.replace(/\s*documented\s+if\s+(the\s+)?clinician\s+(decided|did so|arranged)\.?\s*$/i, '');
+    // Strip "reviewed if X" suffixes
+    text = text.replace(/\s*reviewed\s+if\s+(available|ordered|relevant|performed)\.?\s*$/i, '');
+    text = text.replace(/\s*reviewed\s+or\s+discussed\s+(documented\s+if\s+clinician\s+did\s+so)?\.?\s*$/i, '');
+    // Clean up trailing punctuation remnants
+    text = text.replace(/[,;]+\s*$/, '').trim();
+    // If the entire text was consumed by cleaning, return empty
+    if (!text || text === '.') return '';
+    // Omit bare organ/system names that have no actual finding
+    var bareOrgans = /^(temperature|heart rate|pulse|respiratory rate|oxygen saturation|blood pressure|weight(\s+and\s+bmi)?|general appearance|gait|parent or guardian report context|urine dipstick|ultrasound report|previous imaging|x-ray|mri report|cultures|inflammatory markers|lumbar range of motion|spinal tenderness|straight leg raise|crossed straight leg raise|lower limb (power|sensation|reflexes)|saddle sensation|neurovascular status|foot inspection|peripheral pulses|monofilament sensation|injection sites|capillary refill|urine output context|throat examination|otoscopy|cervical lymphadenopathy|respiratory effort|abdominal examination|skin rash|non-blanching rash|tonsillar appearance|chest wall examination|meningeal signs|fundal height|fetal heart auscultation|fetal movement|lower limb oedema|urine dipstick)$/i;
+    if (bareOrgans.test(text)) return '';
+    return text;
+  }
+
+  // Apply cleaner to an array of lines
+  function cleanV4OutputLines(lines) {
+    if (!lines || !lines.length) return [];
+    var out = [];
+    var seen = {};
+    for (var i = 0; i < lines.length; i++) {
+      var cleaned = cleanV4OutputPhrase(lines[i]);
+      if (!cleaned) continue;
+      var n = cleaned.toLowerCase().trim();
+      if (seen[n]) continue;
+      seen[n] = true;
+      out.push(cleaned);
+    }
+    return out;
   }
 
   // Step 1: Collect fresh state from V4_ENCOUNTER_STATE
@@ -972,6 +1020,16 @@
       }
     })(route.patientInstructionLines);
 
+    // Clean output phrasing: strip prompt/template wording from all sections
+    route.historyLines = cleanV4OutputLines(route.historyLines);
+    route.relevantNegativeLines = cleanV4OutputLines(route.relevantNegativeLines);
+    route.examinationLines = cleanV4OutputLines(route.examinationLines);
+    route.investigationLines = cleanV4OutputLines(route.investigationLines);
+    route.assessmentLines = cleanV4OutputLines(route.assessmentLines);
+    route.planLines = cleanV4OutputLines(route.planLines);
+    route.followUpLines = cleanV4OutputLines(route.followUpLines);
+    route.patientInstructionLines = cleanV4OutputLines(route.patientInstructionLines);
+
     return route;
   }
 
@@ -996,12 +1054,13 @@
     if ((route.historyLines||[]).length) subj.push((route.historyLines||[]).join('\n'));
     if ((route.relevantNegativeLines||[]).length) subj.push((route.relevantNegativeLines||[]).join('\n'));
     var obj = [];
-    if ((route.examinationLines||[]).length) obj.push('Examination: ' + (route.examinationLines||[]).join('; '));
-    if ((route.investigationLines||[]).length) obj.push('Investigations: ' + (route.investigationLines||[]).join('; '));
+    // Render exam/investigation as natural line-per-finding
+    if ((route.examinationLines||[]).length) obj = obj.concat(route.examinationLines);
+    if ((route.investigationLines||[]).length) obj = obj.concat(route.investigationLines);
     var ass = (route.assessmentLines||[]).join('\n') || '[not documented]';
     var planParts = [];
-    if ((route.planLines||[]).length) planParts.push((route.planLines||[]).join('\n'));
-    if ((route.followUpLines||[]).length) planParts.push('Follow-up: ' + (route.followUpLines||[]).join('; '));
+    if ((route.planLines||[]).length) planParts = planParts.concat(route.planLines);
+    if ((route.followUpLines||[]).length) planParts = planParts.concat(route.followUpLines);
     var plan = planParts.length ? planParts.join('\n') : '[not documented]';
 
     var s = 'SOAP NOTE\n' + '='.repeat(40) + '\n\n';
