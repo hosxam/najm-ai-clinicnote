@@ -422,6 +422,7 @@
   function stepWorkflow() {
     var h = '<h2 class="v4-step-h">Step 1: Select Workflow</h2>';
     h += '<p class="v4-step-d">Select a prototype workflow. V4 chip groups will load automatically for the output.</p>';
+    h += '<div class="v4-proto-note">Advanced Encounter Builder currently supports 5 prototype workflows. More workflows will be added after internal review.</div>';
 
     h += '<div class="v4-wf-search"><label class="v4-field-label">Workflow</label>';
     h += '<select class="v4-select" id="v4WorkflowSelect" onchange="window._v4SelectWf()">';
@@ -1408,29 +1409,27 @@
       }
     }
 
-    // Hide the Speed Mode output area when V4 is active
-    var speedOutputBox = document.getElementById('speedOutputBox');
-    if (speedOutputBox) {
-      speedOutputBox.classList.add('v4-speed-output-hidden');
+    // Hide all Speed Mode UI when V4 is active (V4 has its own workflow selector and chip groups)
+    var speedElements = [
+      'v2SearchArea',
+      'speedOutputBox',
+      'speedGeneratedFeedbackCta',
+      'speedContent',
+      'speedEmptyState'
+    ];
+    for (var si = 0; si < speedElements.length; si++) {
+      var el = document.getElementById(speedElements[si]);
+      if (el) el.classList.add('v4-speed-output-hidden');
     }
-    var speedOutputHeader = document.querySelector('#page-speed .output-header');
-    if (speedOutputHeader) speedOutputHeader.classList.add('v4-speed-output-hidden');
-    var speedOutputActions = document.querySelector('#page-speed .output-actions');
-    if (speedOutputActions) speedOutputActions.classList.add('v4-speed-output-hidden');
-    var speedOutputFooter = document.querySelector('#page-speed .output-footer');
-    if (speedOutputFooter) speedOutputFooter.classList.add('v4-speed-output-hidden');
-    var speedExportNote = document.querySelector('#page-speed .export-privacy-note');
-    if (speedExportNote) speedExportNote.classList.add('v4-speed-output-hidden');
-    var speedGenerateBtnRow = document.querySelector('#speedContent .gen-row');
-    if (speedGenerateBtnRow) speedGenerateBtnRow.classList.add('v4-speed-output-hidden');
-    var speedFeedbackCta = document.getElementById('speedGeneratedFeedbackCta');
-    if (speedFeedbackCta) speedFeedbackCta.classList.add('v4-speed-output-hidden');
-    var speedWhyFaster = document.querySelector('.why-faster');
-    if (speedWhyFaster) speedWhyFaster.classList.add('v4-speed-output-hidden');
-
-    // Populate speed specialty dropdown if available (non-blocking)
-    if (typeof populateSpeedSpecialty === 'function') {
-      try { populateSpeedSpecialty(); } catch(e) {}
+    // Also hide selector rows
+    var selectors = document.querySelectorAll('#page-speed .output-header, #page-speed .output-actions, #page-speed .output-footer, #page-speed .export-privacy-note, #speedContent .gen-row, .why-faster');
+    for (var qi = 0; qi < selectors.length; qi++) {
+      selectors[qi].classList.add('v4-speed-output-hidden');
+    }
+    // Hide Speed Mode specialty/visit type dropdowns, chip sections, duration, impression area
+    var speedFormEls = document.querySelectorAll('#page-speed .form-group, #page-speed .speed-section, #page-speed .speed-summary, #page-speed .speed-mode-box .note-phi-warn');
+    for (var fi = 0; fi < speedFormEls.length; fi++) {
+      speedFormEls[fi].classList.add('v4-speed-output-hidden');
     }
 
     var loading = document.createElement('div');
@@ -1484,6 +1483,7 @@
 .v4-step-h{font-size:20px;font-weight:700;color:var(--gray-900);margin-bottom:6px}
 .v4-sub-h{font-size:16px;font-weight:700;color:var(--gray-800);margin-bottom:10px}
 .v4-step-d{font-size:13px;color:var(--gray-500);margin-bottom:16px;line-height:1.5}
+.v4-proto-note{font-size:11px;color:#075985;background:#e0f2fe;border:1px solid #bae6fd;border-radius:6px;padding:8px 12px;margin-bottom:14px;line-height:1.4}
 .v4-select{width:100%;padding:12px 14px;border:1px solid var(--gray-300);border-radius:8px;font-size:14px;font-family:var(--font);background:#fff;color:var(--gray-800)}
 .v4-select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
 .v4-wf-info{margin-top:14px;padding:14px;background:var(--gray-50);border-radius:8px}
