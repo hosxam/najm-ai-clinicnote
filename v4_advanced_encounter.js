@@ -213,15 +213,36 @@
   // ================================================================
   function buildV4HistoryFromFields(fields) {
     if (!fields) return '';
-    var parts = [];
-    for (var key in fields) {
-      var val = fields[key];
-      if (val && val.trim()) {
-        // Label from key: replace underscores with spaces, capitalize
-        var label = key.replace(/_/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
-        parts.push(label + ': ' + val.trim());
+    // Build a natural paragraph from filled fields only
+    var symptomKeys = ['main_concern', 'presenting_concern', 'chief_complaint', 'visit_context'];
+    var symptomText = '';
+    var duration = fields['duration'] || '';
+    var associated = fields['associated_symptoms'] || fields['cough_nasal_congestion_sore_throat_status'] || '';
+    var negatives = fields['relevant_negatives'] || fields['relevant_negatives_reviewed'] || '';
+    var additional = fields['additional_history'] || fields['additional_follow_up_details'] || fields['additional_msk_history'] || fields['additional_antenatal_details'] || '';
+
+    // Find the main presenting text
+    for (var si = 0; si < symptomKeys.length; si++) {
+      var sv = fields[symptomKeys[si]];
+      if (sv && sv.trim()) { symptomText = sv.trim(); break; }
+    }
+    // If no named key matched, use the first filled field
+    if (!symptomText) {
+      for (var k in fields) {
+        if (fields[k] && fields[k].trim()) { symptomText = fields[k].trim(); break; }
       }
     }
+
+    var parts = [];
+    if (symptomText) {
+      var line = symptomText;
+      if (duration) line += ' for ' + duration.trim();
+      parts.push(line);
+    }
+    if (associated) parts.push('Associated symptoms include ' + associated.trim());
+    if (negatives) parts.push('Relevant negatives include ' + negatives.trim());
+    if (additional) parts.push(additional.trim());
+
     return parts.join('. ') + (parts.length ? '.' : '');
   }
 
@@ -776,12 +797,10 @@
     if (exam && exam.exam_groups) {
       for (var gi = 0; gi < exam.exam_groups.length; gi++) {
         var group = exam.exam_groups[gi];
-        var groupItems = [];
         for (var pi = 0; pi < group.prompts.length; pi++) {
           var key = group.group_id + '::' + group.prompts[pi].prompt_id;
-          if (state.examConfirmations[key]) groupItems.push(group.prompts[pi].prompt_text);
+          if (state.examConfirmations[key]) items.push(group.prompts[pi].prompt_text);
         }
-        if (groupItems.length) items.push(group.group_label + ': ' + groupItems.join('; '));
       }
     }
     return items;
@@ -815,22 +834,30 @@
   function cleanV4OutputPhrase(text) {
     if (!text) return '';
     text = String(text).trim();
-    // Remove "Status: " prefix
+    // Remove "Status: " prefix (anywhere in text, not just start)
+    text = text.replace(/Status:\s*/gi, '');
     text = text.replace(/^Status:\s*/i, '');
-    // Strip "documented if X" suffixes
-    text = text.replace(/\s*documented\s+if\s+assessed\.?\s*$/i, '');
-    text = text.replace(/\s*documented\s+if\s+measured\.?\s*$/i, '');
-    text = text.replace(/\s*documented\s+if\s+discussed\.?\s*$/i, '');
-    text = text.replace(/\s*documented\s+if\s+clinician\s+decided\.?\s*$/i, '');
-    text = text.replace(/\s*documented\s+if\s+arranged\.?\s*$/i, '');
-    text = text.replace(/\s*documented\s+if\s+relevant(\s+and\s+assessed)?\.?\s*$/i, '');
-    text = text.replace(/\s*documented\s+only\s+if\s+clinician\s+(decided|did so|arranged)\.?\s*$/i, '');
-    text = text.replace(/\s*documented\s+if\s+(the\s+)?clinician\s+(decided|did so|arranged)\.?\s*$/i, '');
-    // Strip "reviewed if X" suffixes
-    text = text.replace(/\s*reviewed\s+if\s+(available|ordered|relevant|performed)\.?\s*$/i, '');
-    text = text.replace(/\s*reviewed\s+or\s+discussed\s+(documented\s+if\s+clinician\s+did\s+so)?\.?\s*$/i, '');
-    // Clean up trailing punctuation remnants
+    // Strip "documented if X" suffixes - also mid-text (before ; separator)
+    function stripSuffix(pattern, str) {
+      return str.replace(new RegExp(pattern.source, 'gi'), '');
+    }
+    text = text.replace(/\s*documented\s+if\s+assessed\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+if\s+measured\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+if\s+discussed\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+if\s+clinician\s+decided\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+if\s+arranged\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+if\s+relevant(\s+and\s+assessed)?\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+only\s+if\s+clinician\s+(decided|did so|arranged)\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*documented\s+if\s+(the\s+)?clinician\s+(decided|did so|arranged)\s*\.?\s*(?=;|$)/gi, '');
+    // Strip "reviewed if X" suffixes - mid-text too
+    text = text.replace(/\s*reviewed\s+if\s+(available|ordered|relevant|performed)\s*\.?\s*(?=;|$)/gi, '');
+    text = text.replace(/\s*reviewed\s+or\s+discussed\s+(documented\s+if\s+clinician\s+did\s+so)?\s*\.?\s*(?=;|$)/gi, '');
+    // Clean up leftover semicolons and spaces
+    text = text.replace(/\s*;\s*/g, '; ');
+    text = text.replace(/^;\s*/, '');
+    text = text.replace(/\s*;;\s*/g, '; ');
     text = text.replace(/[,;]+\s*$/, '').trim();
+    text = text.replace(/\s{2,}/g, ' ').trim();
     // If the entire text was consumed by cleaning, return empty
     if (!text || text === '.') return '';
     // Omit bare organ/system names that have no actual finding
@@ -877,6 +904,9 @@
     text = text.replace(/^Hydration and feeding advice\.$/i, 'Hydration and feeding advised.');
     text = text.replace(/^Antenatal counseling\.$/i, 'Antenatal counseling discussed.');
     text = text.replace(/^Warning symptoms\.$/i, 'Warning symptoms discussed.');
+    // Transform bare investigation names to 'X reviewed.'
+    var invNames = /^(Cbc|Crp|Chest imaging|HbA1c|Renal function|Lipid profile|Urine acr|Home glucose log|Previous imaging|X-ray|Mri report|Inflammatory markers|Urinalysis|Cultures|Blood pressure trend|Antenatal labs|Glucose screening result|Ultrasound report)\.$/i;
+    if (invNames.test(text)) text = text.replace(/\.$/, ' reviewed.');
     // Fix follow-up phrasing: "in X days" not just "X days"
     text = text.replace(/^(Follow-up) (\d)/i, '$1 in $2');
     text = text.replace(/Follow-up in (\d+ \w+) if not improving, (\w+)/i, 'Follow-up in $1 if not improving, or $2');
