@@ -1204,5 +1204,317 @@
     ],
     "safety_note": "Documentation prompts only. No treatment or triage recommendations. Parent/guardian report context. Clinician review required. Local protocol applies.",
     "review_required": true
+  },
+  {
+    "workflow_id": "msk-neck-pain",
+    "workflow_display_name": "MSK Neck Pain",
+    "default_history_draft": "Patient seen with neck pain for [duration]. Location: [pain_location]. Radiation/neurological: [radiation_or_neurological_symptoms]. Trauma: [trauma_context]. Functional limitation: [functional_limitation]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[pain location]",
+      "[radiation or neurological symptoms]",
+      "[trauma context]",
+      "[functional limitation]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "social history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-knee-pain",
+    "workflow_display_name": "MSK Knee Pain",
+    "default_history_draft": "Patient seen with knee pain for [duration]. Location: [pain_location]. Swelling/instability: [swelling_or_instability]. Trauma: [trauma_context]. Functional limitation: [functional_limitation]. Mechanical symptoms: [mechanical_symptoms]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[pain location]",
+      "[swelling or instability]",
+      "[trauma context]",
+      "[functional limitation]",
+      "[mechanical symptoms]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "social history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-shoulder-pain",
+    "workflow_display_name": "MSK Shoulder Pain",
+    "default_history_draft": "Patient seen with shoulder pain for [duration]. Location: [pain_location]. Movement limitation: [movement_limitation]. Trauma: [trauma_context]. Weakness/instability: [weakness_or_instability]. Functional limitation: [functional_limitation]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[pain location]",
+      "[movement limitation]",
+      "[trauma context]",
+      "[weakness or instability]",
+      "[functional limitation]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "social history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-hip-pain",
+    "workflow_display_name": "MSK Hip Pain",
+    "default_history_draft": "Patient seen with hip pain for [duration]. Location: [pain_location]. Walking/weight-bearing: [walking_or_weight_bearing_context]. Trauma: [trauma_context]. Functional limitation: [functional_limitation]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[pain location]",
+      "[walking or weight bearing context]",
+      "[trauma context]",
+      "[functional limitation]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "social history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-ankle-pain",
+    "workflow_display_name": "MSK Ankle / Foot Pain",
+    "default_history_draft": "Patient seen with ankle/foot pain for [duration]. Injury mechanism: [injury_mechanism]. Weight-bearing: [weight_bearing_status]. Swelling/bruising: [swelling_bruising_context]. Location: [pain_location]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[injury mechanism]",
+      "[weight bearing status]",
+      "[swelling bruising context]",
+      "[pain location]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "social history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-wrist-hand-pain",
+    "workflow_display_name": "MSK Wrist / Hand Pain",
+    "default_history_draft": "Patient seen with wrist/hand pain for [duration]. Injury mechanism: [injury_mechanism]. Location: [pain_location]. Swelling/deformity: [swelling_deformity_context]. Grip/function: [grip_or_function_context]. Neurovascular: [neurovascular_symptoms]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[injury mechanism]",
+      "[pain location]",
+      "[swelling deformity context]",
+      "[grip or function context]",
+      "[neurovascular symptoms]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "social history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-acute-sprain",
+    "workflow_display_name": "MSK Acute Sprain",
+    "default_history_draft": "Patient seen with acute sprain. Mechanism: [injury_mechanism]. Time since injury: [time_since_injury]. Joint: [affected_joint]. Swelling/bruising: [swelling_bruising_context]. Weight-bearing/function: [weight_bearing_or_function]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[injury mechanism]",
+      "[time since injury]",
+      "[affected joint]",
+      "[swelling bruising context]",
+      "[weight bearing or function]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "social history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-fracture-followup",
+    "workflow_display_name": "MSK Fracture Follow-up",
+    "default_history_draft": "Fracture follow-up. Site: [fracture_site]. Time since injury: [time_since_injury]. Pain progress: [pain_progress]. Immobilization: [immobilization_context]. Neurovascular: [neurovascular_symptoms]. Imaging review: [imaging_review_context]. [Additional history].",
+    "editable_placeholders": [
+      "[fracture site]",
+      "[time since injury]",
+      "[pain progress]",
+      "[immobilization context]",
+      "[neurovascular symptoms]",
+      "[imaging review context]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "social history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-post-op-followup",
+    "workflow_display_name": "MSK Post-Op Follow-up",
+    "default_history_draft": "Post-operative follow-up. Procedure: [procedure_context]. Time since operation: [time_since_operation]. Pain progress: [pain_progress]. Wound: [wound_context]. Mobility/rehabilitation: [mobility_or_rehabilitation_context]. Fever/wound symptoms: [fever_or_wound_symptoms]. [Additional history].",
+    "editable_placeholders": [
+      "[procedure context]",
+      "[time since operation]",
+      "[pain progress]",
+      "[wound context]",
+      "[mobility or rehabilitation context]",
+      "[fever or wound symptoms]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "social history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-osteoarthritis-followup",
+    "workflow_display_name": "MSK Osteoarthritis Follow-up",
+    "default_history_draft": "Osteoarthritis follow-up. Joint: [affected_joint]. Pain progress: [pain_progress]. Stiffness: [stiffness_context]. Functional limitation: [functional_limitation]. Walking/activity: [walking_or_activity_context]. Previous management: [previous_management_context]. [Additional history].",
+    "editable_placeholders": [
+      "[affected joint]",
+      "[pain progress]",
+      "[stiffness context]",
+      "[functional limitation]",
+      "[walking or activity context]",
+      "[previous management context]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "social history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-sports-injury",
+    "workflow_display_name": "MSK Sports Injury",
+    "default_history_draft": "Patient seen with sports injury. Sport/activity: [sport_or_activity]. Mechanism: [injury_mechanism]. Location: [pain_location]. Swelling/instability: [swelling_instability_context]. Functional limitation: [functional_limitation]. Return to activity: [return_to_activity_context]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[sport or activity]",
+      "[injury mechanism]",
+      "[pain location]",
+      "[swelling instability context]",
+      "[functional limitation]",
+      "[return to activity context]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "surgical history",
+      "social history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations. Clinician review required.",
+    "review_required": true
   }
 ]

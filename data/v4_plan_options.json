@@ -3702,5 +3702,1082 @@
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations.",
     "review_required": true,
     "source_status": "draft"
+  },
+  {
+    "workflow_id": "msk-neck-pain",
+    "workflow_display_name": "MSK Neck Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_msk-neck-pain",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "activity_msk-neck-pain",
+            "option_text": "Activity modification documented if discussed.",
+            "note_text": "Activity modification discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_msk-neck-pain",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_msk-neck-pain",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_msk-neck-pain",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "physio_msk-neck-pain",
+            "option_text": "Physiotherapy referral documented if arranged.",
+            "note_text": "Physiotherapy referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_msk-neck-pain",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_msk-neck-pain",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "msk-knee-pain",
+    "workflow_display_name": "MSK Knee Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_msk-knee-pain",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "activity_msk-knee-pain",
+            "option_text": "Activity modification documented if discussed.",
+            "note_text": "Activity modification discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_msk-knee-pain",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_msk-knee-pain",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_msk-knee-pain",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "physio_msk-knee-pain",
+            "option_text": "Physiotherapy referral documented if arranged.",
+            "note_text": "Physiotherapy referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "imaging_msk-knee-pain",
+            "option_text": "Imaging documented if clinician decided.",
+            "note_text": "Imaging discussed.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_msk-knee-pain",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_msk-knee-pain",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "msk-shoulder-pain",
+    "workflow_display_name": "MSK Shoulder Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_msk-shoulder-pain",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "activity_msk-shoulder-pain",
+            "option_text": "Activity modification documented if discussed.",
+            "note_text": "Activity modification discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_msk-shoulder-pain",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_msk-shoulder-pain",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_msk-shoulder-pain",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "physio_msk-shoulder-pain",
+            "option_text": "Physiotherapy referral documented if arranged.",
+            "note_text": "Physiotherapy referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "imaging_msk-shoulder-pain",
+            "option_text": "Imaging documented if clinician decided.",
+            "note_text": "Imaging discussed.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_msk-shoulder-pain",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_msk-shoulder-pain",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "msk-hip-pain",
+    "workflow_display_name": "MSK Hip Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_msk-hip-pain",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "activity_msk-hip-pain",
+            "option_text": "Activity modification documented if discussed.",
+            "note_text": "Activity modification discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_msk-hip-pain",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_msk-hip-pain",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_msk-hip-pain",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "physio_msk-hip-pain",
+            "option_text": "Physiotherapy referral documented if arranged.",
+            "note_text": "Physiotherapy referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_msk-hip-pain",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_msk-hip-pain",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "msk-ankle-pain",
+    "workflow_display_name": "MSK Ankle / Foot Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_msk-ankle-pain",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "activity_msk-ankle-pain",
+            "option_text": "Activity modification documented if discussed.",
+            "note_text": "Activity modification discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "weight_bearing_msk-ankle-pain",
+            "option_text": "Weight-bearing advice documented if discussed.",
+            "note_text": "Weight-bearing advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_msk-ankle-pain",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_msk-ankle-pain",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_msk-ankle-pain",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "physio_msk-ankle-pain",
+            "option_text": "Physiotherapy referral documented if arranged.",
+            "note_text": "Physiotherapy referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_msk-ankle-pain",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_msk-ankle-pain",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "msk-wrist-hand-pain",
+    "workflow_display_name": "MSK Wrist / Hand Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_msk-wrist-hand-pain",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "activity_msk-wrist-hand-pain",
+            "option_text": "Activity modification documented if discussed.",
+            "note_text": "Activity modification discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_msk-wrist-hand-pain",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_msk-wrist-hand-pain",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "immobilization_msk-wrist-hand-pain",
+        "group_label": "immobilization",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "splint_msk-wrist-hand-pain",
+            "option_text": "Immobilization or splinting documented if clinician decided.",
+            "note_text": "Immobilization or splinting applied.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_msk-wrist-hand-pain",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_msk-wrist-hand-pain",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "msk-acute-sprain",
+    "workflow_display_name": "MSK Acute Sprain",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_msk-acute-sprain",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "rice_msk-acute-sprain",
+            "option_text": "RICE advice documented if discussed.",
+            "note_text": "RICE advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "activity_msk-acute-sprain",
+            "option_text": "Activity modification documented if discussed.",
+            "note_text": "Activity modification discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_msk-acute-sprain",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_msk-acute-sprain",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_msk-acute-sprain",
+        "group_label": "fup",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_msk-acute-sprain",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "msk-fracture-followup",
+    "workflow_display_name": "MSK Fracture Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "immobilization_msk-fracture-followup",
+        "group_label": "immobilization",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "cast_msk-fracture-followup",
+            "option_text": "Immobilization plan documented if clinician decided.",
+            "note_text": "Immobilization plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "weight_bearing_msk-fracture-followup",
+            "option_text": "Weight-bearing advice documented if discussed.",
+            "note_text": "Weight-bearing advice discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_msk-fracture-followup",
+        "group_label": "fup",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "imaging_fup_msk-fracture-followup",
+            "option_text": "Imaging follow-up documented if arranged.",
+            "note_text": "Imaging follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "fup_msk-fracture-followup",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "msk-post-op-followup",
+    "workflow_display_name": "MSK Post-Op Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "wound_msk-post-op-followup",
+        "group_label": "wound",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "wound_msk-post-op-followup",
+            "option_text": "Wound care advice documented if discussed.",
+            "note_text": "Wound care advice discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "rehab_msk-post-op-followup",
+        "group_label": "rehab",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "rehab_msk-post-op-followup",
+            "option_text": "Rehabilitation plan documented if discussed.",
+            "note_text": "Rehabilitation plan discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_msk-post-op-followup",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "physio_msk-post-op-followup",
+            "option_text": "Physiotherapy follow-up documented if arranged.",
+            "note_text": "Physiotherapy follow-up arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "imaging_msk-post-op-followup",
+            "option_text": "Imaging follow-up documented if arranged.",
+            "note_text": "Imaging follow-up arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_msk-post-op-followup",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_msk-post-op-followup",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "msk-osteoarthritis-followup",
+    "workflow_display_name": "MSK Osteoarthritis Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_msk-osteoarthritis-followup",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "activity_msk-osteoarthritis-followup",
+            "option_text": "Activity modification documented if discussed.",
+            "note_text": "Activity modification discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "function_msk-osteoarthritis-followup",
+            "option_text": "Functional assessment documented if assessed.",
+            "note_text": "Functional assessment documented.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_msk-osteoarthritis-followup",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_msk-osteoarthritis-followup",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_msk-osteoarthritis-followup",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "physio_msk-osteoarthritis-followup",
+            "option_text": "Physiotherapy referral documented if arranged.",
+            "note_text": "Physiotherapy referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_msk-osteoarthritis-followup",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_msk-osteoarthritis-followup",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "msk-sports-injury",
+    "workflow_display_name": "MSK Sports Injury",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_msk-sports-injury",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "activity_msk-sports-injury",
+            "option_text": "Activity modification documented if discussed.",
+            "note_text": "Activity modification discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "return_msk-sports-injury",
+            "option_text": "Return to activity plan documented if discussed.",
+            "note_text": "Return to activity plan discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_msk-sports-injury",
+        "group_label": "med",
+        "display_order": 2,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "analgesia_msk-sports-injury",
+            "option_text": "Analgesia plan documented if clinician decided.",
+            "note_text": "Analgesia planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_msk-sports-injury",
+        "group_label": "ref",
+        "display_order": 3,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "physio_msk-sports-injury",
+            "option_text": "Physiotherapy referral documented if arranged.",
+            "note_text": "Physiotherapy referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_msk-sports-injury",
+        "group_label": "fup",
+        "display_order": 4,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_msk-sports-injury",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-3 MSK",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "source_status": "draft"
   }
 ]

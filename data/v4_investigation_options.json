@@ -1643,5 +1643,326 @@
     ],
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
+  },
+  {
+    "workflow_id": "msk-neck-pain",
+    "workflow_display_name": "MSK Neck Pain",
+    "investigation_groups": [
+      {
+        "group_id": "Imaging_msk-neck-pain",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "xr_msk-neck-pain",
+            "option_text": "X-ray reviewed if available.",
+            "note_text": "X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "mri_msk-neck-pain",
+            "option_text": "MRI report reviewed if available.",
+            "note_text": "MRI report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-knee-pain",
+    "workflow_display_name": "MSK Knee Pain",
+    "investigation_groups": [
+      {
+        "group_id": "Imaging_msk-knee-pain",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "xr_msk-knee-pain",
+            "option_text": "X-ray reviewed if available.",
+            "note_text": "X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "mri_msk-knee-pain",
+            "option_text": "MRI report reviewed if available.",
+            "note_text": "MRI report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_msk-knee-pain",
+            "option_text": "Previous imaging reviewed if available.",
+            "note_text": "Previous imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-shoulder-pain",
+    "workflow_display_name": "MSK Shoulder Pain",
+    "investigation_groups": [
+      {
+        "group_id": "Imaging_msk-shoulder-pain",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "xr_msk-shoulder-pain",
+            "option_text": "X-ray reviewed if available.",
+            "note_text": "X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "us_msk-shoulder-pain",
+            "option_text": "Ultrasound report reviewed if available.",
+            "note_text": "Ultrasound report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "mri_msk-shoulder-pain",
+            "option_text": "MRI report reviewed if available.",
+            "note_text": "MRI report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-hip-pain",
+    "workflow_display_name": "MSK Hip Pain",
+    "investigation_groups": [
+      {
+        "group_id": "Imaging_msk-hip-pain",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "xr_msk-hip-pain",
+            "option_text": "X-ray reviewed if available.",
+            "note_text": "X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "mri_msk-hip-pain",
+            "option_text": "MRI report reviewed if available.",
+            "note_text": "MRI report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-ankle-pain",
+    "workflow_display_name": "MSK Ankle / Foot Pain",
+    "investigation_groups": [
+      {
+        "group_id": "Imaging_msk-ankle-pain",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "xr_msk-ankle-pain",
+            "option_text": "X-ray reviewed if available.",
+            "note_text": "X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_msk-ankle-pain",
+            "option_text": "Previous imaging reviewed if available.",
+            "note_text": "Previous imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-wrist-hand-pain",
+    "workflow_display_name": "MSK Wrist / Hand Pain",
+    "investigation_groups": [
+      {
+        "group_id": "Imaging_msk-wrist-hand-pain",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "xr_msk-wrist-hand-pain",
+            "option_text": "X-ray reviewed if available.",
+            "note_text": "X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-acute-sprain",
+    "workflow_display_name": "MSK Acute Sprain",
+    "investigation_groups": [
+      {
+        "group_id": "Imaging_msk-acute-sprain",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "xr_msk-acute-sprain",
+            "option_text": "X-ray reviewed if available.",
+            "note_text": "X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-fracture-followup",
+    "workflow_display_name": "MSK Fracture Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "Imaging_msk-fracture-followup",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "xr_msk-fracture-followup",
+            "option_text": "Follow-up X-ray reviewed if available.",
+            "note_text": "Follow-up X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_msk-fracture-followup",
+            "option_text": "Previous imaging reviewed if available.",
+            "note_text": "Previous imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-post-op-followup",
+    "workflow_display_name": "MSK Post-Op Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "Imaging_msk-post-op-followup",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "po_xr_msk-post-op-followup",
+            "option_text": "Post-operative imaging reviewed if available.",
+            "note_text": "Post-operative imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "op_note_msk-post-op-followup",
+            "option_text": "Operative note reviewed if available.",
+            "note_text": "Operative note reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_msk-post-op-followup",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "wound_msk-post-op-followup",
+            "option_text": "Wound swab or labs reviewed if ordered.",
+            "note_text": "Wound swab or labs reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-osteoarthritis-followup",
+    "workflow_display_name": "MSK Osteoarthritis Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "Imaging_msk-osteoarthritis-followup",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "xr_msk-osteoarthritis-followup",
+            "option_text": "X-ray reviewed if available.",
+            "note_text": "X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "prev_msk-osteoarthritis-followup",
+            "option_text": "Previous imaging reviewed if available.",
+            "note_text": "Previous imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "msk-sports-injury",
+    "workflow_display_name": "MSK Sports Injury",
+    "investigation_groups": [
+      {
+        "group_id": "Imaging_msk-sports-injury",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "xr_msk-sports-injury",
+            "option_text": "X-ray reviewed if available.",
+            "note_text": "X-ray reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "us_msk-sports-injury",
+            "option_text": "Ultrasound report reviewed if available.",
+            "note_text": "Ultrasound report reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true
   }
 ]
