@@ -847,12 +847,42 @@
     for (var i = 0; i < lines.length; i++) {
       var cleaned = cleanV4OutputPhrase(lines[i]);
       if (!cleaned) continue;
+      cleaned = polishV4Line(cleaned);
       var n = cleaned.toLowerCase().trim();
       if (seen[n]) continue;
       seen[n] = true;
       out.push(cleaned);
     }
     return out;
+  }
+
+  // Polish output lines: sentence case, punctuation, natural phrasing
+  function polishV4Line(text) {
+    if (!text) return '';
+    text = text.trim();
+    // Capitalize first letter
+    text = text.charAt(0).toUpperCase() + text.slice(1);
+    // Add period if line doesn't end with punctuation
+    if (!/[.?!:]$/.test(text)) text += '.';
+    // Clean common plan fragments to natural phrasing
+    text = text.replace(/^Supportive care\.$/i, 'Supportive care advised.');
+    text = text.replace(/^Supportive care advice\.$/i, 'Supportive care advised.');
+    text = text.replace(/^Hydration and rest advice\.$/i, 'Hydration and rest advised.');
+    text = text.replace(/^Return precautions\.$/i, 'Return precautions discussed.');
+    text = text.replace(/^Follow-up arranged\.$/i, 'Follow-up arranged.');
+    text = text.replace(/^Red flags explained\.$/i, 'Red flags explained.');
+    text = text.replace(/^Lifestyle advice\.$/i, 'Lifestyle advice discussed.');
+    text = text.replace(/^Activity modification\.$/i, 'Activity modification discussed.');
+    text = text.replace(/^Parent or guardian advice\.$/i, 'Parent or guardian advice discussed.');
+    text = text.replace(/^Hydration and feeding advice\.$/i, 'Hydration and feeding advised.');
+    text = text.replace(/^Antenatal counseling\.$/i, 'Antenatal counseling discussed.');
+    text = text.replace(/^Warning symptoms\.$/i, 'Warning symptoms discussed.');
+    // Fix follow-up phrasing: "in X days" not just "X days"
+    text = text.replace(/^(Follow-up) (\d)/i, '$1 in $2');
+    text = text.replace(/Follow-up in (\d+ \w+) if not improving, (\w+)/i, 'Follow-up in $1 if not improving, or $2');
+    // Fix common fragment: "sooner" → "or sooner"
+    text = text.replace(/,\s*sooner if worsening/i, ', or sooner if worsening');
+    return text;
   }
 
   // Step 1: Collect fresh state from V4_ENCOUNTER_STATE
