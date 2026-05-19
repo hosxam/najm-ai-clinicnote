@@ -2298,16 +2298,16 @@
   {
     "workflow_id": "ophth-vision-change",
     "workflow_display_name": "Ophthalmology Vision Change",
-    "default_history_draft": "Patient seen with vision change for [duration]. Laterality: [laterality]. Onset: [sudden_or_gradual_context]. Location: [central_or_peripheral_context]. Floaters/flashes: [floaters_or_flashes_context]. Pain/redness: [pain_or_redness_context]. Trauma/surgery: [trauma_or_surgery_context]. Medical risk: [medical_risk_context]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Patient seen with vision change for [duration]. Laterality: [laterality]. Onset: [sudden_or_gradual_context]. Blurred vision: [blurred_vision_context]. Flashes/floaters: [flashes_floaters_context]. Visual field: [visual_field_context]. Pain/redness: [pain_or_redness_context]. Neurological: [neurological_symptoms_context]. [Relevant negatives reviewed]. [Additional history].",
     "editable_placeholders": [
       "[duration]",
       "[laterality]",
       "[sudden or gradual context]",
-      "[central or peripheral context]",
-      "[floaters or flashes context]",
+      "[blurred vision context]",
+      "[flashes floaters context]",
+      "[visual field context]",
       "[pain or redness context]",
-      "[trauma or surgery context]",
-      "[medical risk context]",
+      "[neurological symptoms context]",
       "[relevant negatives]",
       "[additional history]"
     ],
@@ -2329,15 +2329,16 @@
   {
     "workflow_id": "ophth-eye-discharge",
     "workflow_display_name": "Ophthalmology Eye Discharge",
-    "default_history_draft": "Patient seen with eye discharge for [duration]. Laterality: [laterality]. Discharge character: [discharge_character]. Redness/swelling: [redness_or_swelling_context]. Vision change: [vision_change_context]. Contact lens: [contact_lens_context]. Pain/itching: [pain_or_itching_context]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Patient seen with eye discharge for [duration]. Laterality: [laterality]. Discharge: [discharge_character]. Redness/itching: [redness_or_itching_context]. Pain/photophobia: [pain_or_photophobia_context]. Vision change: [vision_change_context]. Contact lens: [contact_lens_context]. Exposure/contact: [exposure_contact_context]. [Relevant negatives reviewed]. [Additional history].",
     "editable_placeholders": [
       "[duration]",
       "[laterality]",
       "[discharge character]",
-      "[redness or swelling context]",
+      "[redness or itching context]",
+      "[pain or photophobia context]",
       "[vision change context]",
       "[contact lens context]",
-      "[pain or itching context]",
+      "[exposure contact context]",
       "[relevant negatives]",
       "[additional history]"
     ],
@@ -2359,14 +2360,16 @@
   {
     "workflow_id": "ophth-contact-lens-complaint",
     "workflow_display_name": "Ophthalmology Contact Lens Complaint",
-    "default_history_draft": "Patient seen with contact lens concern for [duration]. Lens type/wear: [lens_type_and_wear_context]. Redness/discomfort: [redness_or_discomfort_context]. Discharge/watering: [discharge_or_watering_context]. Vision change: [vision_change_context]. Lens hygiene: [lens_hygiene_context]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Contact lens concern for [duration]. Lens wear: [lens_wear_context]. Pain/redness: [pain_redness_context]. Vision change: [vision_change_context]. Photophobia: [photophobia_context]. Discharge: [discharge_context]. Lens hygiene: [lens_hygiene_context]. Trauma/foreign body: [trauma_or_foreign_body_context]. [Relevant negatives reviewed]. [Additional history].",
     "editable_placeholders": [
       "[duration]",
-      "[lens type and wear context]",
-      "[redness or discomfort context]",
-      "[discharge or watering context]",
+      "[lens wear context]",
+      "[pain redness context]",
       "[vision change context]",
+      "[photophobia context]",
+      "[discharge context]",
       "[lens hygiene context]",
+      "[trauma or foreign body context]",
       "[relevant negatives]",
       "[additional history]"
     ],
@@ -2388,13 +2391,15 @@
   {
     "workflow_id": "ophth-eye-trauma",
     "workflow_display_name": "Ophthalmology Eye Trauma",
-    "default_history_draft": "Patient seen with eye trauma for [duration_since_injury] since injury. Mechanism: [mechanism]. Pain/vision: [pain_or_vision_context]. Redness/foreign body: [redness_or_foreign_body_context]. Contact lens/previous surgery: [contact_lens_or_previous_surgery_context]. [Relevant negatives reviewed]. [Additional history].",
+    "default_history_draft": "Patient seen with eye trauma. Mechanism: [mechanism]. Time since injury: [time_since_injury]. Laterality: [laterality]. Pain: [pain_context]. Vision change: [vision_change_context]. Foreign body/chemical: [foreign_body_or_chemical_exposure_context]. Bleeding/discharge: [bleeding_or_discharge_context]. [Relevant negatives reviewed]. [Additional history].",
     "editable_placeholders": [
-      "[duration since injury]",
       "[mechanism]",
-      "[pain or vision context]",
-      "[redness or foreign body context]",
-      "[contact lens or previous surgery context]",
+      "[time since injury]",
+      "[laterality]",
+      "[pain context]",
+      "[vision change context]",
+      "[foreign body or chemical exposure context]",
+      "[bleeding or discharge context]",
       "[relevant negatives]",
       "[additional history]"
     ],
