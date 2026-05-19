@@ -895,5 +895,319 @@
     ],
     "safety_note": "Documentation prompts only. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
     "review_required": true
+  },
+  {
+    "workflow_id": "peds-cough",
+    "workflow_display_name": "Pediatric Cough",
+    "default_history_draft": "Parent/guardian reports cough for [duration]. Cough described as [cough_character]. Fever: [fever_context]. Breathing: [breathing_context]. Feeding/activity: [feeding_activity_context]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[cough character]",
+      "[fever context]",
+      "[breathing context]",
+      "[feeding activity context]",
+      "[parent guardian concern]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "immunizations",
+      "birth history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Parent/guardian report context. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-vomiting-diarrhea",
+    "workflow_display_name": "Pediatric Vomiting/Diarrhea",
+    "default_history_draft": "Parent/guardian reports vomiting and/or diarrhea for [duration]. Vomiting frequency: [vomiting_frequency]. Diarrhea frequency: [diarrhea_frequency]. Oral intake/hydration: [oral_intake_hydration]. Urine output: [urine_output]. Fever: [fever_context]. Blood/mucus: [blood_mucus_context]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed].",
+    "editable_placeholders": [
+      "[duration]",
+      "[vomiting frequency]",
+      "[diarrhea frequency]",
+      "[oral intake hydration]",
+      "[urine output]",
+      "[fever context]",
+      "[blood mucus context]",
+      "[parent guardian concern]",
+      "[relevant negatives]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "immunizations",
+      "birth history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Parent/guardian report context. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-rash",
+    "workflow_display_name": "Pediatric Rash",
+    "default_history_draft": "Parent/guardian reports rash for [duration]. Distribution: [rash_distribution]. Itching/pain: [itching_or_pain]. Fever: [fever_context]. Exposures/new medications: [exposure_or_new_medication]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[rash distribution]",
+      "[itching or pain]",
+      "[fever context]",
+      "[exposure or new medication]",
+      "[parent guardian concern]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "immunizations",
+      "birth history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Parent/guardian report context. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-poor-feeding",
+    "workflow_display_name": "Pediatric Poor Feeding",
+    "default_history_draft": "Parent/guardian reports poor feeding for [duration]. Feeding change: [feeding_change]. Urine output: [urine_output]. Activity level: [activity_level]. Fever/vomiting: [fever_or_vomiting_context]. Weight/growth concern: [weight_or_growth_concern]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed].",
+    "editable_placeholders": [
+      "[duration]",
+      "[feeding change]",
+      "[urine output]",
+      "[activity level]",
+      "[fever or vomiting context]",
+      "[weight or growth concern]",
+      "[parent guardian concern]",
+      "[relevant negatives]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "immunizations",
+      "birth history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Parent/guardian report context. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-ear-pain",
+    "workflow_display_name": "Pediatric Ear Pain",
+    "default_history_draft": "Parent/guardian reports ear pain for [duration]. Laterality: [laterality]. Fever: [fever_context]. Discharge: [discharge_context]. Hearing: [hearing_context]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[laterality]",
+      "[fever context]",
+      "[discharge context]",
+      "[hearing context]",
+      "[parent guardian concern]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "immunizations",
+      "birth history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Parent/guardian report context. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-abdominal-pain",
+    "workflow_display_name": "Pediatric Abdominal Pain",
+    "default_history_draft": "Parent/guardian reports abdominal pain for [duration]. Location: [pain_location]. Vomiting/diarrhea: [vomiting_diarrhea_context]. Feeding/bowel/urine: [feeding_bowel_urine]. Fever: [fever_context]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[pain location]",
+      "[vomiting diarrhea context]",
+      "[feeding bowel urine]",
+      "[fever context]",
+      "[parent guardian concern]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "immunizations",
+      "birth history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Parent/guardian report context. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-routine-followup",
+    "workflow_display_name": "Pediatric Routine Follow-up",
+    "default_history_draft": "Routine pediatric follow-up. Growth/feeding: [growth_feeding_context]. Development/milestones: [development_milestones]. Immunization: [immunization_status]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[followup context]",
+      "[growth feeding context]",
+      "[development milestones]",
+      "[immunization status]",
+      "[parent guardian concern]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "immunizations",
+      "birth history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Parent/guardian report context. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-vaccination",
+    "workflow_display_name": "Pediatric Vaccination Visit",
+    "default_history_draft": "Vaccination visit. Vaccine(s): [vaccination_context]. Prior reactions: [prior_reaction_context]. Current febrile illness: [febrile_illness_context]. Immunocompromised: [immunocompromised_context] if relevant. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[vaccination context]",
+      "[prior reaction context]",
+      "[febrile illness context]",
+      "[immunocompromised context]",
+      "[parent guardian concern]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "immunizations",
+      "birth history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Parent/guardian report context. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-growth-concern",
+    "workflow_display_name": "Pediatric Growth Concern",
+    "default_history_draft": "Parent/guardian reports growth concern for [duration_of_concern]. Growth measurements: [growth_measurements]. Feeding/nutrition: [feeding_nutrition]. Development: [development_context]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration of concern]",
+      "[growth measurements]",
+      "[feeding nutrition]",
+      "[development context]",
+      "[parent guardian concern]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "immunizations",
+      "birth history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Parent/guardian report context. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-development-concern",
+    "workflow_display_name": "Pediatric Developmental Concern",
+    "default_history_draft": "Parent/guardian reports developmental concern. Description: [concern_description]. Area of concern: [area_of_concern]. Milestones: [milestone_context]. School/learning: [school_or_learning]. Parent concern: [parent_guardian_concern]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[concern description]",
+      "[area of concern]",
+      "[milestone context]",
+      "[school or learning]",
+      "[parent guardian concern]",
+      "[relevant negatives]",
+      "[additional history]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "immunizations",
+      "birth history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Parent/guardian report context. Clinician review required. Local protocol applies.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-school-note",
+    "workflow_display_name": "Pediatric School / Sick Note",
+    "default_history_draft": "School or sick note visit. Reason: [reason_for_absence_or_note]. Duration of absence: [duration_of_absence]. Fitness: [fitness_status] as assessed by clinician. Clinician-entered plan: [clinician_entered_plan]. Parent concern: [parent_guardian_concern]. [Additional context].",
+    "editable_placeholders": [
+      "[reason for absence or note]",
+      "[duration of absence]",
+      "[fitness status]",
+      "[clinician entered plan]",
+      "[parent guardian concern]",
+      "[additional context]"
+    ],
+    "optional_full_history_sections": [
+      "medications",
+      "allergies",
+      "immunizations",
+      "birth history"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ],
+    "safety_note": "Documentation prompts only. No treatment or triage recommendations. Parent/guardian report context. Clinician review required. Local protocol applies.",
+    "review_required": true
   }
 ]

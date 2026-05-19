@@ -2887,5 +2887,867 @@
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft"
+  },
+  {
+    "workflow_id": "peds-cough",
+    "workflow_display_name": "Pediatric Cough",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_peds-cough",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "parent_peds-cough",
+            "option_text": "Parent or guardian advice documented if discussed.",
+            "note_text": "Parent or guardian advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "hydration_peds-cough",
+            "option_text": "Hydration advice documented if discussed.",
+            "note_text": "Hydration advised.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_peds-cough",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_peds-cough",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_peds-cough",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_peds-cough",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "peds-vomiting-diarrhea",
+    "workflow_display_name": "Pediatric Vomiting/Diarrhea",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_peds-vomiting-diarrhea",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "oral_peds-vomiting-diarrhea",
+            "option_text": "Oral rehydration advice documented if discussed.",
+            "note_text": "Oral rehydration advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "feeding_peds-vomiting-diarrhea",
+            "option_text": "Feeding advice documented if discussed.",
+            "note_text": "Feeding advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_peds-vomiting-diarrhea",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_peds-vomiting-diarrhea",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_peds-vomiting-diarrhea",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_peds-vomiting-diarrhea",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "peds-rash",
+    "workflow_display_name": "Pediatric Rash",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_peds-rash",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "parent_peds-rash",
+            "option_text": "Parent or guardian advice documented if discussed.",
+            "note_text": "Parent or guardian advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "skin_peds-rash",
+            "option_text": "Skin care advice documented if discussed.",
+            "note_text": "Skin care advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_peds-rash",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_peds-rash",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_peds-rash",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_peds-rash",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "peds-poor-feeding",
+    "workflow_display_name": "Pediatric Poor Feeding",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_peds-poor-feeding",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "feeding_peds-poor-feeding",
+            "option_text": "Feeding advice documented if discussed.",
+            "note_text": "Feeding advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_peds-poor-feeding",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_peds-poor-feeding",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_peds-poor-feeding",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_peds-poor-feeding",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "peds-ear-pain",
+    "workflow_display_name": "Pediatric Ear Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_peds-ear-pain",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "parent_peds-ear-pain",
+            "option_text": "Parent or guardian advice documented if discussed.",
+            "note_text": "Parent or guardian advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "pain_peds-ear-pain",
+            "option_text": "Pain management advice documented if discussed.",
+            "note_text": "Pain management advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "med_peds-ear-pain",
+        "group_label": "med",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "med_peds-ear-pain",
+            "option_text": "Medication plan documented if clinician decided.",
+            "note_text": "Medication planned.",
+            "option_category": "medication_review_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": true,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_peds-ear-pain",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_peds-ear-pain",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_peds-ear-pain",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_peds-ear-pain",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "peds-abdominal-pain",
+    "workflow_display_name": "Pediatric Abdominal Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_peds-abdominal-pain",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "parent_peds-abdominal-pain",
+            "option_text": "Parent or guardian advice documented if discussed.",
+            "note_text": "Parent or guardian advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "diet_peds-abdominal-pain",
+            "option_text": "Dietary advice documented if discussed.",
+            "note_text": "Dietary advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "safety_peds-abdominal-pain",
+        "group_label": "safety",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "return_peds-abdominal-pain",
+            "option_text": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_peds-abdominal-pain",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_peds-abdominal-pain",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "peds-routine-followup",
+    "workflow_display_name": "Pediatric Routine Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_peds-routine-followup",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "parent_peds-routine-followup",
+            "option_text": "Parent or guardian advice documented if discussed.",
+            "note_text": "Parent or guardian advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "nutrition_peds-routine-followup",
+            "option_text": "Nutrition advice documented if discussed.",
+            "note_text": "Nutrition advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "monitoring_peds-routine-followup",
+        "group_label": "monitoring",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "growth_peds-routine-followup",
+            "option_text": "Growth monitoring documented if discussed.",
+            "note_text": "Growth monitoring discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_peds-routine-followup",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_peds-routine-followup",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "peds-vaccination",
+    "workflow_display_name": "Pediatric Vaccination Visit",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_peds-vaccination",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "parent_peds-vaccination",
+            "option_text": "Parent or guardian advice documented if discussed.",
+            "note_text": "Parent or guardian advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          },
+          {
+            "option_id": "postvax_peds-vaccination",
+            "option_text": "Post-vaccination care advice documented if discussed.",
+            "note_text": "Post-vaccination care advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_peds-vaccination",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_peds-vaccination",
+            "option_text": "Next vaccination documented if arranged.",
+            "note_text": "Next vaccination arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "peds-growth-concern",
+    "workflow_display_name": "Pediatric Growth Concern",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_peds-growth-concern",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "nutrition_peds-growth-concern",
+            "option_text": "Nutrition advice documented if discussed.",
+            "note_text": "Nutrition advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "monitoring_peds-growth-concern",
+        "group_label": "monitoring",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "growth_peds-growth-concern",
+            "option_text": "Growth monitoring documented if arranged.",
+            "note_text": "Growth monitoring arranged.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_peds-growth-concern",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_peds-growth-concern",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "peds-development-concern",
+    "workflow_display_name": "Pediatric Developmental Concern",
+    "plan_option_groups": [
+      {
+        "group_id": "advice_peds-development-concern",
+        "group_label": "advice",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "parent_peds-development-concern",
+            "option_text": "Parent or guardian advice documented if discussed.",
+            "note_text": "Parent or guardian advice discussed.",
+            "option_category": "counseling",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "ref_peds-development-concern",
+        "group_label": "ref",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "ref_peds-development-concern",
+            "option_text": "Referral documented if clinician decided.",
+            "note_text": "Referral arranged.",
+            "option_category": "referral_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_peds-development-concern",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_peds-development-concern",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "peds-school-note",
+    "workflow_display_name": "Pediatric School / Sick Note",
+    "plan_option_groups": [
+      {
+        "group_id": "doc_peds-school-note",
+        "group_label": "doc",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "note_peds-school-note",
+            "option_text": "School or sick note documentation completed documented if clinician entered.",
+            "note_text": "School or sick note documentation completed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      },
+      {
+        "group_id": "fup_peds-school-note",
+        "group_label": "fup",
+        "display_order": 1,
+        "safety_note": "Select only if discussed or decided by clinician.",
+        "options": [
+          {
+            "option_id": "fup_peds-school-note",
+            "option_text": "Follow-up documented if arranged.",
+            "note_text": "Follow-up arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4K-2 Pediatrics batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only.",
+            "medication_related": false,
+            "dosing_included": false,
+            "review_required": true
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
   }
 ]

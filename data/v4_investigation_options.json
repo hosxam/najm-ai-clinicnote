@@ -1304,5 +1304,344 @@
     ],
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
+  },
+  {
+    "workflow_id": "peds-cough",
+    "workflow_display_name": "Pediatric Cough",
+    "investigation_groups": [
+      {
+        "group_id": "Respiratory_peds-cough",
+        "group_label": "Respiratory",
+        "options": [
+          {
+            "option_id": "o2_peds-cough",
+            "option_text": "Oxygen saturation recorded if measured.",
+            "note_text": "Oxygen saturation recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "cxr_peds-cough",
+            "option_text": "Chest imaging reviewed if available.",
+            "note_text": "Chest imaging reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Vitals_peds-cough",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "temp_peds-cough",
+            "option_text": "Temperature recorded if measured.",
+            "note_text": "Temperature recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "rr_peds-cough",
+            "option_text": "Respiratory rate documented if measured.",
+            "note_text": "Respiratory rate documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-vomiting-diarrhea",
+    "workflow_display_name": "Pediatric Vomiting/Diarrhea",
+    "investigation_groups": [
+      {
+        "group_id": "Vitals_peds-vomiting-diarrhea",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "vitals_peds-vomiting-diarrhea",
+            "option_text": "Vital signs documented if measured.",
+            "note_text": "Vital signs documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "hydration_peds-vomiting-diarrhea",
+            "option_text": "Hydration status documented if assessed.",
+            "note_text": "Hydration status documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_peds-vomiting-diarrhea",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "stool_peds-vomiting-diarrhea",
+            "option_text": "Stool test reviewed if available.",
+            "note_text": "Stool test reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-rash",
+    "workflow_display_name": "Pediatric Rash",
+    "investigation_groups": [
+      {
+        "group_id": "Vitals_peds-rash",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "temp_peds-rash",
+            "option_text": "Temperature recorded if measured.",
+            "note_text": "Temperature recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-poor-feeding",
+    "workflow_display_name": "Pediatric Poor Feeding",
+    "investigation_groups": [
+      {
+        "group_id": "Vitals_peds-poor-feeding",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "vitals_peds-poor-feeding",
+            "option_text": "Vital signs documented if measured.",
+            "note_text": "Vital signs documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "weight_peds-poor-feeding",
+            "option_text": "Weight documented if measured.",
+            "note_text": "Weight documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "hydration_peds-poor-feeding",
+            "option_text": "Hydration status documented if assessed.",
+            "note_text": "Hydration status documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-ear-pain",
+    "workflow_display_name": "Pediatric Ear Pain",
+    "investigation_groups": [
+      {
+        "group_id": "Vitals_peds-ear-pain",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "temp_peds-ear-pain",
+            "option_text": "Temperature recorded if measured.",
+            "note_text": "Temperature recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-abdominal-pain",
+    "workflow_display_name": "Pediatric Abdominal Pain",
+    "investigation_groups": [
+      {
+        "group_id": "Vitals_peds-abdominal-pain",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "vitals_peds-abdominal-pain",
+            "option_text": "Vital signs documented if measured.",
+            "note_text": "Vital signs documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_peds-abdominal-pain",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "ua_peds-abdominal-pain",
+            "option_text": "Urinalysis reviewed if done.",
+            "note_text": "Urinalysis reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-routine-followup",
+    "workflow_display_name": "Pediatric Routine Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "Growth_peds-routine-followup",
+        "group_label": "Growth",
+        "options": [
+          {
+            "option_id": "weight_peds-routine-followup",
+            "option_text": "Weight documented if measured.",
+            "note_text": "Weight documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "height_peds-routine-followup",
+            "option_text": "Height documented if measured.",
+            "note_text": "Height documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-vaccination",
+    "workflow_display_name": "Pediatric Vaccination Visit",
+    "investigation_groups": [
+      {
+        "group_id": "Vitals_peds-vaccination",
+        "group_label": "Vitals",
+        "options": [
+          {
+            "option_id": "temp_peds-vaccination",
+            "option_text": "Temperature recorded if measured.",
+            "note_text": "Temperature recorded.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-growth-concern",
+    "workflow_display_name": "Pediatric Growth Concern",
+    "investigation_groups": [
+      {
+        "group_id": "Growth_peds-growth-concern",
+        "group_label": "Growth",
+        "options": [
+          {
+            "option_id": "weight_peds-growth-concern",
+            "option_text": "Weight documented if measured.",
+            "note_text": "Weight documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "height_peds-growth-concern",
+            "option_text": "Height documented if measured.",
+            "note_text": "Height documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "hcofc_peds-growth-concern",
+            "option_text": "Head circumference documented if measured.",
+            "note_text": "Head circumference documented.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      },
+      {
+        "group_id": "Lab_peds-growth-concern",
+        "group_label": "Lab",
+        "options": [
+          {
+            "option_id": "prev_peds-growth-concern",
+            "option_text": "Previous growth records reviewed if available.",
+            "note_text": "Previous growth records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-development-concern",
+    "workflow_display_name": "Pediatric Developmental Concern",
+    "investigation_groups": [
+      {
+        "group_id": "Records_peds-development-concern",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_peds-development-concern",
+            "option_text": "Previous developmental records reviewed if available.",
+            "note_text": "Previous developmental records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-school-note",
+    "workflow_display_name": "Pediatric School / Sick Note",
+    "investigation_groups": [
+      {
+        "group_id": "records_peds-school-note",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_peds-school-note",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
   }
 ]
