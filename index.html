@@ -5906,6 +5906,43 @@ nav{background:rgba(248,250,247,.88);backdrop-filter:blur(16px);border-bottom:1p
   .feedback-panel,.safety-section{padding:18px}
 }
 
+/* === Header navigation redesign and beta branding (visual-only) === */
+nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.92);border-bottom:1px solid rgba(219,231,228,.95);box-shadow:0 10px 30px rgba(15,23,42,.06);backdrop-filter:blur(18px)}
+.nav-inner{position:relative;max-width:1240px;margin:0 auto;padding:0 24px;min-height:72px;height:auto;display:flex;align-items:center;gap:22px}
+.nav-logo{display:inline-flex;align-items:center;gap:10px;min-width:260px;font-size:15px;font-weight:850;color:var(--color-text);letter-spacing:0}
+.nav-logo .star{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));color:#fff;font-size:15px;font-weight:900;display:inline-flex;align-items:center;justify-content:center;border:0;box-shadow:0 10px 22px rgba(15,118,110,.18)}
+.nav-logo .star::after{content:none}
+.brand-copy{display:flex;flex-direction:column;gap:1px;line-height:1.05}
+.brand-name{font-size:15px;font-weight:900;color:var(--color-text);white-space:nowrap}
+.brand-sub{font-size:10.5px;font-weight:750;color:var(--color-muted);white-space:nowrap}
+.brand-beta{display:inline-flex;align-items:center;border:1px solid #99f6e4;background:var(--color-primary-soft);color:var(--color-primary-dark);border-radius:999px;padding:3px 8px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.05em}
+.nav-links{flex:1;display:flex;align-items:center;justify-content:center;gap:4px;padding:0 190px 0 8px}
+.nav-links a{min-height:38px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:8px 12px;font-size:12.5px;font-weight:800;color:var(--color-text-soft)}
+.nav-links a:hover,.nav-links a.active{background:var(--color-primary-soft);color:var(--color-primary-dark)}
+.nav-links a.nav-cta{position:absolute;right:24px;top:50%;transform:translateY(-50%);min-height:42px;background:var(--color-primary)!important;color:#fff!important;padding:9px 18px!important;box-shadow:0 12px 28px rgba(15,118,110,.22)}
+.nav-links a.nav-cta:hover{background:var(--color-primary-dark)!important}
+.nav-mobile-only{display:none!important}
+.nav-toggle{border:1px solid var(--color-border);border-radius:12px;background:#fff;color:var(--color-primary-dark);box-shadow:var(--shadow-sm)}
+@media(max-width:1080px){
+  .nav-inner{padding:0 16px}
+  .nav-logo{min-width:220px}
+  .brand-sub{display:none}
+  .nav-links{padding-right:166px}
+  .nav-links a{padding:8px 10px;font-size:12px}
+}
+@media(max-width:760px){
+  .nav-inner{min-height:66px}
+  .nav-logo{min-width:0;flex:1}
+  .brand-name{font-size:14px}
+  .brand-beta{font-size:9px;padding:3px 7px}
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;font-size:22px}
+  .nav-links{display:none;position:absolute;top:66px;left:12px;right:12px;z-index:1001;flex-direction:column;align-items:stretch;gap:6px;padding:10px;background:rgba(255,255,255,.98);border:1px solid var(--color-border);border-radius:18px;box-shadow:var(--shadow-lg);max-height:calc(100vh - 82px);overflow-y:auto}
+  .nav-links.open{display:flex}
+  .nav-links a{width:100%;min-height:44px;justify-content:flex-start;padding:10px 13px;font-size:13px}
+  .nav-links a.nav-cta{position:static;transform:none;margin-top:4px;width:100%;justify-content:center}
+  .nav-mobile-only{display:flex!important}
+}
+
 </style>
 
 
@@ -5996,7 +6033,9 @@ nav{background:rgba(248,250,247,.88);backdrop-filter:blur(16px);border-bottom:1p
 
 
 
-<span class="star">&#11088;</span> Najm AI <span class="sub">(ClinicNote)</span>
+<span class="star">N</span>
+<span class="brand-copy"><span class="brand-name">Najm AI ClinicNote</span><span class="brand-sub">Clinical documentation workspace</span></span>
+<span class="brand-beta">Beta</span>
 
 
 
@@ -6071,7 +6110,7 @@ nav{background:rgba(248,250,247,.88);backdrop-filter:blur(16px);border-bottom:1p
 
 
 
-<a data-page="speed" onclick="showPage('speed')">OPD Note Builder</a>
+<a data-page="speed" onclick="showPage('speed')">Quick OPD</a>
 
 
 
@@ -6081,7 +6120,7 @@ nav{background:rgba(248,250,247,.88);backdrop-filter:blur(16px);border-bottom:1p
 
 
 
-<a id="reportNavLink" data-page="report" onclick="showPage('report')">Medical Report Draft</a>
+<a id="reportNavLink" data-page="report" onclick="showPage('report')">Medical Report</a>
 
 
 
@@ -6099,7 +6138,7 @@ nav{background:rgba(248,250,247,.88);backdrop-filter:blur(16px);border-bottom:1p
 
 
 
-<a href="./feedback/">Feedback</a>
+<a class="nav-mobile-only" href="./feedback/">Feedback</a>
 
 
 
@@ -6127,7 +6166,7 @@ nav{background:rgba(248,250,247,.88);backdrop-filter:blur(16px);border-bottom:1p
 
 
 
-<a href="./privacy/">Privacy</a>
+<a class="nav-mobile-only" href="./privacy/">Privacy</a>
 
 
 
@@ -6142,7 +6181,7 @@ nav{background:rgba(248,250,247,.88);backdrop-filter:blur(16px);border-bottom:1p
 
 
 
-<a href="./about/">About</a>
+<a class="nav-mobile-only" href="./about/">About</a>
 
 
 
@@ -6157,7 +6196,11 @@ nav{background:rgba(248,250,247,.88);backdrop-filter:blur(16px);border-bottom:1p
 
 
 
-<a class="nav-cta" onclick="showPage('speed')">Quick OPD Mode</a>
+<a class="nav-mobile-only" href="./changelog/">Changelog</a>
+
+<a class="nav-mobile-only" href="./feedback/">Scribe Updates</a>
+
+<a class="nav-cta" href="./advanced/">Start Advanced Mode</a>
 
 
 
