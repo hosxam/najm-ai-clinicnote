@@ -29318,7 +29318,7 @@ window.renderClinicNoteFormActions = renderClinicNoteFormActions;
 
 
 
-document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();var launchParams=new URLSearchParams(window.location.search);showPage(launchParams.get("v4")==="encounter2"?"advanced-encounter":(isCalculatorToolsEnabled()?'calculators':(isReportModuleEnabled()?'report':(window.CLINICNOTE_DATA_MODE==='v2'?'speed':'home'))));buildPresets();renderClinicNoteFormActions();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
+document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();var launchParams=new URLSearchParams(window.location.search);showPage(window.CLINICNOTE_ROUTE_MODE==="advanced"||launchParams.get("v4")==="encounter2"?"advanced-encounter":(isCalculatorToolsEnabled()?'calculators':(isReportModuleEnabled()?'report':(window.CLINICNOTE_DATA_MODE==='v2'?'speed':'home'))));buildPresets();renderClinicNoteFormActions();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
 
 
 
