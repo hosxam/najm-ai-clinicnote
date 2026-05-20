@@ -400,7 +400,7 @@ html{scroll-behavior:smooth}
 
 
 
-body{font-family:var(--font);color:var(--gray-800);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--gray-800);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
 
 
 
@@ -6060,7 +6060,7 @@ footer a{color:#d9e4f2}
 
 
 
-<h1>Free SOAP Note Generator for Doctors</h1>
+<h1>Free Clinical Documentation Tool for Doctors</h1>
 
 
 
@@ -6075,7 +6075,7 @@ footer a{color:#d9e4f2}
 
 
 
-<p>Create structured OPD notes, referrals, patient instructions, and report drafts from doctor-entered de-identified clinical details. No login. No audio. No storage. Clinician review required.</p>
+<p>Create structured OPD notes, SOAP notes, referrals, patient instructions, and medical report drafts from doctor-entered de-identified clinical details. No login. No audio. No patient data storage. Clinician review required.</p>
 
 
 
@@ -6225,7 +6225,7 @@ footer a{color:#d9e4f2}
 
 
 
-<button class="btn btn-primary" onclick="showPage('speed')">Quick OPD Mode</button>
+<button class="btn btn-primary" onclick="window.location.href='./advanced/'">Start Advanced Mode</button>
 
 
 
@@ -6240,9 +6240,23 @@ footer a{color:#d9e4f2}
 
 
 
-<button class="btn btn-outline" onclick="window.location.href='./advanced/'">Start Advanced Mode</button>
-          <p style="font-size:12px;color:var(--gray-500);margin:2px auto 0;line-height:1.5;flex-basis:100%;max-width:560px;text-align:center;order:4">Advanced Mode opens a structured Step 1-6 workflow for fuller encounter drafts.</p>
-          <button class="btn btn-outline" onclick="showPage('report')">Medical Report Draft</button>
+<button class="btn btn-outline" onclick="showPage('speed')">Quick OPD Mode</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="btn btn-outline" onclick="showPage('report')">Medical Report Draft</button>
+          <p style="font-size:12px;color:var(--gray-500);margin:8px auto 0;line-height:1.5;flex-basis:100%;max-width:600px;text-align:center">Advanced Mode: structured Step 1-6 encounter builder with 150 workflows across 15 specialties. Doctor-entered details only. Clinician review required.</p>
 
 
 
@@ -6861,7 +6875,7 @@ footer a{color:#d9e4f2}
 
 
 
-<h2 class="section-title">ClinicNote Tools</h2>
+<h2 class="section-title">Why ClinicNote</h2>
 
 
 
@@ -6876,7 +6890,7 @@ footer a{color:#d9e4f2}
 
 
 
-<p class="section-sub">Two focused workspaces for de-identified clinical documentation.</p>
+<p class="section-sub">Built for clinicians who want structured drafts without compromising privacy or control.</p>
 
 
 
@@ -6891,7 +6905,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="product-row">
+<div class="benefits-grid">
 
 
 
@@ -6906,7 +6920,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="product-item launched"><h4>OPD Note Builder</h4><p>Search workflows, select dataset-backed findings, add custom details, and generate copy-ready OPD drafts.</p><button class="btn btn-primary btn-xs" onclick="showPage('speed')" style="margin-top:10px">Quick OPD Mode</button> <a href="./opd-note-generator/" style="font-size:11px;margin-left:8px">Learn more</a><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified details only. Clinician review required.</p></div>
+<div class="benefit-item"><h4>Reduce repetitive typing</h4><p>Reuse common OPD documentation patterns with specialty-specific Autofill prompts. Search 150 workflows by complaint or diagnosis.</p><button class="btn btn-primary btn-xs" onclick="showPage('speed')" style="margin-top:10px">Open Quick OPD Mode</button> <a href="./opd-note-generator/" style="font-size:11px;margin-left:8px">Learn more</a><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified details only. Clinician review required.</p></div>
 
 
 
@@ -6921,7 +6935,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="product-item launched"><h4>Medical Report Draft</h4><p>Turn de-identified clinician notes into a structured report draft for review.</p><button class="btn btn-outline btn-xs" onclick="showPage('report')" style="margin-top:10px">Open Report Draft</button> <a href="./medical-report-draft-generator/" style="font-size:11px;margin-left:8px">Learn more</a><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified notes only. Clinician review required.</p></div>
+<div class="benefit-item"><h4>Medical Report Draft</h4><p>Turn de-identified clinician notes into a structured report draft for review.</p><button class="btn btn-outline btn-xs" onclick="showPage('report')" style="margin-top:10px">Open Report Draft</button> <a href="./medical-report-draft-generator/" style="font-size:11px;margin-left:8px">Learn more</a><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">De-identified notes only. Clinician review required.</p></div>
 
 
 
@@ -6936,7 +6950,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="product-item launched" style="border-color:var(--amber);background:#fffbeb"><h4>Advanced Mode <span class="badge badge-new" style="background:var(--amber);color:#fff;margin-left:8px;font-size:9px;padding:2px 6px;border-radius:4px">New</span></h4><p>Need a fuller note? Advanced Mode opens a structured Step 1-6 workflow for fuller encounter drafts.</p><button class="btn btn-outline btn-xs" onclick="window.location.href='./advanced/'" style="margin-top:10px">Open Advanced Mode</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">Use de-identified information only. Advanced Mode outputs are clinician-reviewed drafts.</p></div>
+<div class="benefit-item" style="border-color:var(--amber);background:#fffbeb"><h4>Advanced Mode <span class="badge badge-new" style="background:var(--amber);color:#fff;margin-left:8px;font-size:9px;padding:2px 6px;border-radius:4px">New</span></h4><p>Need a fuller note? Advanced Mode opens a structured Step 1-6 workflow for fuller encounter drafts.</p><button class="btn btn-outline btn-xs" onclick="window.location.href='./advanced/'" style="margin-top:10px">Open Advanced Mode</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">Use de-identified information only. Advanced Mode outputs are clinician-reviewed drafts.</p></div>
 
 
 
@@ -6994,7 +7008,7 @@ footer a{color:#d9e4f2}
 
 
 
-<h2 class="section-title">Documentation Resources</h2>
+<h2 class="section-title">More Documentation Tools</h2>
 
 
 
@@ -7204,7 +7218,130 @@ footer a{color:#d9e4f2}
 
 
 
-<h2 class="section-title">Fictional Examples</h2>
+<section class="section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="section-title">From rough details to structured documentation</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p class="section-sub">Fictional example showing how ClinicNote structures doctor-entered clinical details.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px">
+
+
+
+
+<div class="example-block" style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:10px;padding:14px">
+
+
+
+
+
+
+<h4 style="font-size:11px;color:var(--gray-500);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:8px">Doctor-entered details (fictional)</h4>
+
+
+
+
+
+
+<pre style="white-space:pre-wrap;font-family:var(--font-mono);font-size:11px;line-height:1.6;color:var(--gray-700);margin:0">Adult with 3 days fever, dry cough, sore throat, nasal congestion, and myalgia.
+Red flag negatives: no shortness of breath, no chest pain, no confusion, no neck stiffness.
+Temperature, throat, and chest exam findings entered by clinician.
+Impression: Viral URTI. Plan: supportive care, red flags explained, follow-up if worsening.</pre>
+
+
+
+
+
+
+</div>
+
+
+
+
+<div class="example-block" style="background:var(--primary-bg);border:2px solid var(--primary);border-radius:10px;padding:14px">
+
+
+
+
+
+
+<h4 style="font-size:11px;color:var(--primary-dark);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:8px">Structured draft output</h4>
+
+
+
+
+
+
+<pre style="white-space:pre-wrap;font-family:var(--font-mono);font-size:11px;line-height:1.6;color:var(--gray-800);margin:0">Chief concern: Fever / URTI symptoms for 3 days.
+
+History: Fever with dry cough, sore throat, nasal congestion, and myalgia. Autofill prompted red flag review; clinician documented applicable negatives.
+
+Examination: Temperature recorded. Throat examination entered. Chest auscultation entered.
+
+Impression: Viral URTI (clinician-entered).
+
+Plan: Supportive care discussed. Fluids encouraged. Return precautions given. Follow-up advised. Red flags explained to patient.</pre>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+<p style="font-size:11px;color:var(--gray-500);text-align:center;margin-top:12px">Fictional and de-identified. Outputs require clinician review before clinical use.</p>
+
+
+
+
+</section><h2 class="section-title">Fictional Examples</h2>
 
 
 
@@ -7860,6 +7997,24 @@ Safety-netting: When to present to maternity triage discussed.</pre></div>
 
 
 
+
+<div class="scribe-section">
+
+    <h2 class="section-title" style="text-align:left;margin-bottom:6px">Interested in future Najm AI Scribe updates?</h2>
+
+    <p style="font-size:13px;color:var(--gray-600);margin-bottom:8px">Najm AI Scribe is a future product direction. ClinicNote is the free documentation utility available today. Join updates if you want to follow future Scribe development, research, or pilot opportunities.</p>
+
+    <p style="font-size:12px;color:var(--gray-500);margin-bottom:14px">Do not submit patient data, consultation recordings, clinical notes, or patient-identifiable information.</p>
+
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <span class="form-action-slot" data-form-key="templateRequest" data-form-label="Suggest a Template" data-form-event="template_request_clicked" data-source-page="home" data-cta-location="homepage"></span>
+      <span class="form-action-slot" data-form-key="scribeInterest" data-form-label="Join Scribe Updates" data-form-event="future_scribe_interest_clicked" data-source-page="home" data-cta-location="homepage"></span>
+      <button class="btn btn-ghost btn-sm" onclick="showPage('feedback')">View all feedback options</button>
+    </div>
+
+</div>
+
+<section class="section">
 
 <div class="feedback-panel">
 
