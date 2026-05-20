@@ -1,4 +1,4 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 
 
 
@@ -517,7 +517,7 @@ textarea.code{font-family:var(--font-mono);font-size:12px;min-height:80px;resize
 
 
 
-.output-body{background:var(--gray-900);color:#e2e8f0;font-family:var(--font-mono);font-size:12px;padding:18px;min-height:300px;max-height:520px;overflow-y:auto;white-space:pre-wrap;word-wrap:break-word;line-height:1.65}
+.output-body{background:#fbfdff;color:var(--gray-800);border:1px solid var(--gray-200);font-family:var(--font-mono);font-size:12px;padding:18px;min-height:300px;max-height:520px;overflow-y:auto;white-space:pre-wrap;word-wrap:break-word;line-height:1.7}
 
 
 
@@ -1662,7 +1662,7 @@ nav{background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(195,204,215,0
 
 
 
-.output-body{background:#fbfdff;color:var(--gray-800);border-top:1px solid var(--gray-200);border-bottom:1px solid var(--gray-200);font-size:12px}
+.output-body{background:#fbfdff;color:var(--gray-800);border:1px solid var(--gray-200);font-size:12px;line-height:1.7}
 
 
 
@@ -1957,22 +1957,32 @@ footer a{color:#d9e4f2}
 
 
 
-<a data-page="speed" onclick="showPage('speed')">OPD Note Builder</a>
+<a data-page="speed" onclick="showPage('speed')">OPD Note Builder</a>
+
+
+
+
+<a href="./?v4=encounter2">Advanced Mode</a>
+
+
+
+
+<a id="reportNavLink" data-page="report" onclick="showPage('report')">Medical Report Draft</a>
 
 
 
 
-<a id="reportNavLink" data-page="report" onclick="showPage('report')">Medical Report Draft</a>
-
-
-
-
-<a id="calculatorNavLink" data-page="calculators" onclick="showPage('calculators')" style="display:none">Calculators</a>
-
-
-
-
-<a data-page="feedback" onclick="showPage('feedback')">Feedback</a>
+<a id="calculatorNavLink" data-page="calculators" onclick="showPage('calculators')" style="display:none">Calculators</a>
+
+
+
+
+<a href="./?calc=v1">Calculator Tools</a>
+
+
+
+
+<a data-page="feedback" onclick="showPage('feedback')">Feedback</a>
 
 
 
@@ -2007,8 +2017,7 @@ footer a{color:#d9e4f2}
 
 
 
-<a href="./?calc=v1" target="_blank">Calculator Tools</a>
-        </nav>
+        </nav>
 
 
 
@@ -5902,7 +5911,7 @@ Calculator values are processed locally in your browser and are not saved by Cli
 
 
 
-<div class="v4-header-logo"><span class="star">â­</span> Advanced Encounter Builder</div>
+<div class="v4-header-logo"><span class="star">*</span> Advanced Encounter Builder</div>
 
 
 
@@ -5912,7 +5921,7 @@ Calculator values are processed locally in your browser and are not saved by Cli
 
 
 
-<div class="v4-header-safety">Do not enter patient identifiers. This prototype structures clinician-entered de-identified information only. It does not diagnose, recommend treatment, or replace clinician judgment.</div>
+<div class="v4-header-safety">Do not enter patient identifiers. This mode structures clinician-entered de-identified information only. It does not diagnose, recommend treatment, or replace clinician judgment.</div>
 
 
 
@@ -5997,7 +6006,7 @@ Calculator values are processed locally in your browser and are not saved by Cli
 
 
 
-&copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.72">Version language-cleanup | Last updated May 17, 2026</span><br>ClinicNote is an educational documentation assistance tool. Not a medical device.
+&copy; 2026 Najm AI. All rights reserved.<br><span style="font-size:12px;opacity:0.72">Version polish-advanced-mode | Last updated May 20, 2026</span><br>ClinicNote is an educational documentation assistance tool. Not a medical device.
 
 
 
@@ -6382,7 +6391,7 @@ window.cleanOutputPhraseList = cleanOutputPhraseList;
 
 
 
-<script src="./v4_advanced_encounter.js?v=v4d-prototype"></script>
+<script src="./v4_advanced_encounter.js?v=polish-advanced-mode"></script>
 
 
 
@@ -9802,7 +9811,7 @@ window.renderClinicNoteFormActions = renderClinicNoteFormActions;
 
 
 
-document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();var calcNav=document.getElementById("calculatorNavLink");if(calcNav&&isCalculatorToolsEnabled()){calcNav.style.display=""}showPage(isCalculatorToolsEnabled()?'calculators':(isReportModuleEnabled()?'report':(window.CLINICNOTE_DATA_MODE==='v2'?'speed':'home')));buildPresets();renderClinicNoteFormActions();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
+document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();var calcNav=document.getElementById("calculatorNavLink");if(calcNav&&isCalculatorToolsEnabled()){calcNav.style.display=""}var launchParams=new URLSearchParams(window.location.search);showPage(launchParams.get("v4")==="encounter2"?"advanced-encounter":(isCalculatorToolsEnabled()?'calculators':(isReportModuleEnabled()?'report':(window.CLINICNOTE_DATA_MODE==='v2'?'speed':'home'))));buildPresets();renderClinicNoteFormActions();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
 
 
 

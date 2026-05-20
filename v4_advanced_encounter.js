@@ -63,6 +63,8 @@
   // ================================================================
   var state = {
     workflowList: [],
+    clinicalWorkflows: [],
+    specialties: [],
     historyDrafts: [],
     examDetails: [],
     planOptions: [],
@@ -85,19 +87,34 @@
     // Plan
     impression: '',
     planText: '',
-    planConfirmations: {}
+    planConfirmations: {},
+
+    // Workflow filters and optional calculator results
+    selectedSpecialtyFilter: '',
+    _wfSearchTerm: '',
+    calculatorResults: {}
   };
 
   var currentStep = 1;
   var TOTAL_STEPS = 6;
 
-  var WORKFLOW_SPECIALTY = {
-    'gp-fever-urti': 'General Medicine / GP',
-    'gp-diabetes-followup': 'General Medicine / GP',
-    'msk-low-back-pain': 'Orthopedics / MSK',
-    'peds-fever': 'Pediatrics',
-    'obgyn-antenatal-followup': 'OB/GYN'
-  };
+  var SPECIALTY_ORDER = [
+    'General Medicine / GP',
+    'Pediatrics',
+    'OB/GYN',
+    'Orthopedics / MSK',
+    'ENT',
+    'Dermatology',
+    'Ophthalmology',
+    'Psychiatry / Mental Health',
+    'Emergency / Urgent Care',
+    'Cardiology',
+    'Neurology',
+    'Respiratory / Pulmonology',
+    'Gastroenterology',
+    'Endocrinology',
+    'Urology / Nephrology'
+  ];
 
   // ================================================================
   //  V4 CHIP LOADING
@@ -319,20 +336,53 @@
       fetch('./data/v4_workflow_history_drafts.json').then(function(r){ return r.json(); }),
       fetch('./data/v4_workflow_exam_details.json').then(function(r){ return r.json(); }),
       fetch('./data/v4_plan_options.json').then(function(r){ return r.json(); }),
-      fetch('./data/v4_investigation_options.json').then(function(r){ return r.json(); })
+      fetch('./data/v4_investigation_options.json').then(function(r){ return r.json(); }),
+      fetch('./data/clinical_workflows.json').then(function(r){ return r.json(); })
     ]).then(function(results) {
       state.historyDrafts = results[0];
       state.examDetails = results[1];
       state.planOptions = results[2];
       state.investigationOptions = results[3];
+      state.clinicalWorkflows = results[4] || [];
+
+      var workflowMeta = {};
+      var specialtySet = {};
+      for (var wi = 0; wi < state.clinicalWorkflows.length; wi++) {
+        var cw = state.clinicalWorkflows[wi] || {};
+        var id = cw.workflow_id || cw.id || '';
+        if (!id) continue;
+        var spec = cw.specialty || cw.specialty_name || cw.specialty_id || cw.category || 'General Medicine / GP';
+        var displayName = cw.display_name || cw.workflow_display_name || cw.name || '';
+        if (!displayName && (cw.chief_complaint || cw.diagnosis)) {
+          displayName = [cw.chief_complaint, cw.diagnosis].filter(Boolean).join(' - ');
+        }
+        workflowMeta[id] = {
+          display_name: displayName || id,
+          specialty: spec
+        };
+        specialtySet[spec] = true;
+      }
+
       state.workflowList = state.historyDrafts.map(function(d) {
+        var meta = workflowMeta[d.workflow_id] || {};
+        var specialty = meta.specialty || d.specialty || 'General Medicine / GP';
+        specialtySet[specialty] = true;
         return {
           workflow_id: d.workflow_id,
-          display_name: d.workflow_display_name,
-          specialty: WORKFLOW_SPECIALTY[d.workflow_id] || 'Uncategorized',
+          display_name: d.workflow_display_name || meta.display_name || d.workflow_id,
+          specialty: specialty,
           safety_note: d.safety_note || ''
         };
       });
+
+      var ordered = [];
+      for (var oi = 0; oi < SPECIALTY_ORDER.length; oi++) {
+        if (specialtySet[SPECIALTY_ORDER[oi]]) ordered.push(SPECIALTY_ORDER[oi]);
+      }
+      Object.keys(specialtySet).sort().forEach(function(specName) {
+        if (ordered.indexOf(specName) < 0) ordered.push(specName);
+      });
+      state.specialties = ordered;
     });
   }
 
@@ -352,6 +402,17 @@
   function countExam() { var n = 0; for (var k in state.examConfirmations) { if (state.examConfirmations[k]) n++; } return n; }
   function countInv() { var n = 0; for (var k in state.investigationConfirmations) { if (state.investigationConfirmations[k]) n++; } return n; }
   function countPlan() { var n = 0; for (var k in state.planConfirmations) { if (state.planConfirmations[k]) n++; } return n; }
+
+  function filteredWorkflowList() {
+    var searchTerm = (state._wfSearchTerm || '').toLowerCase().trim();
+    var specialtyFilter = state.selectedSpecialtyFilter || '';
+    return state.workflowList.filter(function(wf) {
+      var specialtyMatch = !specialtyFilter || wf.specialty === specialtyFilter;
+      var text = (wf.display_name + ' ' + wf.specialty + ' ' + wf.workflow_id).toLowerCase();
+      var searchMatch = !searchTerm || text.indexOf(searchTerm) >= 0;
+      return specialtyMatch && searchMatch;
+    });
+  }
 
   // ================================================================
   //  PHI CHECK
@@ -414,7 +475,7 @@
     html += '<div class="v4-phi-warning" id="v4PhiWarning" style="display:none">&#9888; Possible identifiable information detected. Remove patient identifiers.</div>';
 
     // First-use guidance (compact)
-    html += '<div class="v4-guidance"><span class="v4-guidance-step">1. Select workflow</span> <span class="v4-guidance-arrow">ÃÂ¢ÃÂÃÂ</span> <span class="v4-guidance-step">2. Review chips &amp; fill fields</span> <span class="v4-guidance-arrow">ÃÂ¢ÃÂÃÂ</span> <span class="v4-guidance-step">3. Document exam &amp; plan</span> <span class="v4-guidance-arrow">ÃÂ¢ÃÂÃÂ</span> <span class="v4-guidance-step">4. Generate combined draft</span></div>';
+    html += '<div class="v4-guidance"><span class="v4-guidance-step">1. Select workflow</span> <span class="v4-guidance-arrow">/</span> <span class="v4-guidance-step">2. Review chips and fill fields</span> <span class="v4-guidance-arrow">/</span> <span class="v4-guidance-step">3. Document exam and plan</span> <span class="v4-guidance-arrow">/</span> <span class="v4-guidance-step">4. Generate combined draft</span></div>';
 
     // Stepper
     html += '<div class="v4-stepper" id="v4Stepper">';
@@ -482,21 +543,31 @@
   // ================================================================
   function stepWorkflow() {
     var h = '<h2 class="v4-step-h">Step 1: Select Workflow</h2>';
-    h += '<p class="v4-step-d">Select a workflow to load documentation chips. All 90 workflows are supported.</p>';
+    h += '<p class="v4-step-d">Choose a specialty, then select a workflow to load Autofill chips and Advanced Mode documentation fields. All 150 workflows remain accessible.</p>';
 
-    // Search filter + dropdown
-    h += '<div class="v4-wf-search"><label class="v4-field-label">Search or select workflow</label>';
-    h += '<input class="v4-search-input" type="text" id="v4WorkflowSearch" placeholder="Search by name, specialty, or keyword..." oninput="window._v4SearchWf(this.value)" value="' + esc(state._wfSearchTerm || '') + '">';
+    var filtered = filteredWorkflowList();
+    h += '<div class="v4-wf-grid">';
+    h += '<div class="v4-wf-search"><label class="v4-field-label">Specialty</label>';
+    h += '<select class="v4-select" id="v4SpecialtySelect" onchange="window._v4SetSpecialty(this.value)">';
+    h += '<option value="">All specialties</option>';
+    for (var si = 0; si < state.specialties.length; si++) {
+      var spec = state.specialties[si];
+      h += '<option value="' + esc(spec) + '"' + (spec === state.selectedSpecialtyFilter ? ' selected' : '') + '>' + esc(spec) + '</option>';
+    }
+    h += '</select></div>';
+
+    h += '<div class="v4-wf-search"><label class="v4-field-label">Search workflows</label>';
+    h += '<input class="v4-search-input" type="text" id="v4WorkflowSearch" placeholder="Search by complaint, diagnosis, specialty, or workflow ID..." oninput="window._v4SearchWf(this.value)" value="' + esc(state._wfSearchTerm || '') + '"></div>';
+    h += '</div>';
+
+    h += '<div class="v4-wf-search"><label class="v4-field-label">Workflow <span class="v4-count-pill">' + filtered.length + ' shown</span></label>';
     h += '<select class="v4-select" id="v4WorkflowSelect" onchange="window._v4SelectWf()" size="8">';
     h += '<option value="">-- Select a workflow --</option>';
-    for (var i = 0; i < state.workflowList.length; i++) {
-      var wf = state.workflowList[i];
-      var searchTerm = (state._wfSearchTerm || '').toLowerCase();
-      var match = !searchTerm || wf.display_name.toLowerCase().indexOf(searchTerm) >= 0 || wf.specialty.toLowerCase().indexOf(searchTerm) >= 0;
-      if (match) {
-        h += '<option value="' + esc(wf.workflow_id) + '"' + (wf.workflow_id === state.selectedWorkflowId ? ' selected' : '') + '>' + esc(wf.display_name) + ' (' + esc(wf.specialty) + ')</option>';
-      }
+    for (var i = 0; i < filtered.length; i++) {
+      var wf = filtered[i];
+      h += '<option value="' + esc(wf.workflow_id) + '"' + (wf.workflow_id === state.selectedWorkflowId ? ' selected' : '') + '>' + esc(wf.display_name) + ' (' + esc(wf.specialty) + ')</option>';
     }
+    if (filtered.length === 0) h += '<option value="" disabled>No matching workflow found.</option>';
     h += '</select></div>';
 
     if (state.selectedWorkflowId) {
@@ -769,8 +840,7 @@
     
     var calcs = getRelatedCalcs(state.selectedWorkflowId);
     if (calcs.length === 0) {
-      h += '<p class="v4-calc-empty">No low-risk calculators map to this workflow.</p>';
-      h += '<a href="?calc=v1" class="v4-btn v4-btn-outline" target="_blank">Open all calculator tools &#8599;</a>';
+      h += '<p class="v4-calc-empty">No optional calculator is available for this workflow yet.</p>';
       return h;
     }
 
@@ -781,7 +851,6 @@
       h += renderCalcCard(calc, cr);
     }
     h += '</div>';
-    h += '<div style="margin-top:12px"><a href="?calc=v1" class="v4-btn v4-btn-outline" target="_blank">Open all calculator tools &#8599;</a></div>';
     return h;
   }
 
@@ -795,9 +864,20 @@
     var inputs = getCalcInputs(calc.id);
     for (var ii = 0; ii < inputs.length; ii++) {
       var inp = inputs[ii];
+      var saved = cr.values && cr.values[inp.key] !== undefined ? cr.values[inp.key] : '';
       h += '<div class="v4-calc-input-row">';
       h += '<label>' + esc(inp.label) + '</label>';
-      h += '<input type="' + inp.type + '" id="calc-' + calc.id + '-' + inp.key + '" placeholder="' + esc(inp.placeholder) + '" value="' + esc(cr.values && cr.values[inp.key] ? cr.values[inp.key] : '') + '" data-calc-id="' + esc(calc.id) + '" data-calc-key="' + esc(inp.key) + '" oninput="window._v4CalcInputChange(this.dataset.calcId, this.dataset.calcKey, this.value)" style="width:100px;margin-left:8px;padding:4px 8px;border:1px solid var(--border);border-radius:4px;">';
+      if (inp.type === 'select') {
+        h += '<select id="v4calc-' + calc.id + '-' + inp.key + '" data-calc-id="' + esc(calc.id) + '" data-calc-key="' + esc(inp.key) + '" onchange="window._v4CalcInputChange(this.dataset.calcId, this.dataset.calcKey, this.value)" style="min-width:150px;margin-left:8px;padding:4px 8px;border:1px solid var(--gray-200);border-radius:4px;">';
+        h += '<option value="">Select</option>';
+        var opts = inp.options || [];
+        for (var oi = 0; oi < opts.length; oi++) {
+          h += '<option value="' + esc(opts[oi].value) + '"' + (String(saved) === String(opts[oi].value) ? ' selected' : '') + '>' + esc(opts[oi].label) + '</option>';
+        }
+        h += '</select>';
+      } else {
+        h += '<input type="' + inp.type + '" id="v4calc-' + calc.id + '-' + inp.key + '" placeholder="' + esc(inp.placeholder || '') + '" value="' + esc(saved) + '" data-calc-id="' + esc(calc.id) + '" data-calc-key="' + esc(inp.key) + '" oninput="window._v4CalcInputChange(this.dataset.calcId, this.dataset.calcKey, this.value)" style="width:110px;margin-left:8px;padding:4px 8px;border:1px solid var(--gray-200);border-radius:4px;">';
+      }
       h += '</div>';
     }
     
@@ -836,7 +916,13 @@
       phq_9: [{key:'score',label:'PHQ-9 score (0-27)',type:'number',placeholder:'e.g. 10'}],
       gad_7: [{key:'score',label:'GAD-7 score (0-21)',type:'number',placeholder:'e.g. 8'}],
       epworth_sleepiness_scale: [{key:'score',label:'Epworth score (0-24)',type:'number',placeholder:'e.g. 12'}],
-      ipss: [{key:'score',label:'IPSS score (0-35)',type:'number',placeholder:'e.g. 15'}]
+      ipss: [{key:'score',label:'IPSS score (0-35)',type:'number',placeholder:'e.g. 15'}],
+      nyha: [{key:'grade',label:'NYHA class',type:'select',options:[{value:'1',label:'Class I'},{value:'2',label:'Class II'},{value:'3',label:'Class III'},{value:'4',label:'Class IV'}]}],
+      killip: [{key:'grade',label:'Killip class',type:'select',options:[{value:'1',label:'Class I'},{value:'2',label:'Class II'},{value:'3',label:'Class III'},{value:'4',label:'Class IV'}]}],
+      sirs: [{key:'temp',label:'Temperature (C)',type:'number',placeholder:'e.g. 38.3'},{key:'hr',label:'Heart rate',type:'number',placeholder:'e.g. 110'},{key:'rr',label:'Respiratory rate',type:'number',placeholder:'e.g. 22'},{key:'wbc',label:'WBC (10^9/L)',type:'number',placeholder:'e.g. 13'}],
+      qsofa: [{key:'rr',label:'Respiratory rate',type:'number',placeholder:'e.g. 24'},{key:'sbp',label:'Systolic BP',type:'number',placeholder:'e.g. 100'},{key:'mentalStatus',label:'Altered mental status',type:'select',options:[{value:'no',label:'No'},{value:'yes',label:'Yes'}]}],
+      fib4: [{key:'age',label:'Age (years)',type:'number',placeholder:'e.g. 55'},{key:'ast',label:'AST',type:'number',placeholder:'e.g. 40'},{key:'alt',label:'ALT',type:'number',placeholder:'e.g. 35'},{key:'platelets',label:'Platelets (10^9/L)',type:'number',placeholder:'e.g. 220'}],
+      child_pugh: [{key:'bilirubin',label:'Bilirubin',type:'number',placeholder:'numeric value'},{key:'albumin',label:'Albumin',type:'number',placeholder:'numeric value'},{key:'inr',label:'INR',type:'number',placeholder:'e.g. 1.2'},{key:'ascites',label:'Ascites',type:'select',options:[{value:'none',label:'None documented'},{value:'mild',label:'Mild'},{value:'moderate_severe',label:'Moderate/severe'}]},{key:'encephalopathy',label:'Encephalopathy',type:'select',options:[{value:'none',label:'None documented'},{value:'grade1_2',label:'Grade I-II'},{value:'grade3_4',label:'Grade III-IV'}]}]
     };
     return inputs[calcId] || [];
   }
@@ -845,8 +931,8 @@
     var values = {};
     var inputs = getCalcInputs(calcId);
     for (var ii = 0; ii < inputs.length; ii++) {
-      var el = document.getElementById('calc-' + calcId + '-' + inputs[ii].key);
-      values[inputs[ii].key] = el ? parseFloat(el.value) : NaN;
+      var el = document.getElementById('v4calc-' + calcId + '-' + inputs[ii].key);
+      values[inputs[ii].key] = inputs[ii].type === 'select' ? (el ? el.value : '') : (el ? parseFloat(el.value) : NaN);
     }
     
     var result = computeCalc(calcId, values);
@@ -892,19 +978,21 @@
       btn.textContent = state.calculatorResults[calcId].included ? 'Included in draft' : 'Include in draft';
       btn.className = 'v4-btn v4-btn-sm ' + (state.calculatorResults[calcId].included ? 'v4-btn-primary' : 'v4-btn-outline');
     }
+    updateSidebar();
   }
 
   function clearCalc(calcId) {
     if (state.calculatorResults) delete state.calculatorResults[calcId];
     var inputs = getCalcInputs(calcId);
     for (var ii = 0; ii < inputs.length; ii++) {
-      var el = document.getElementById('calc-' + calcId + '-' + inputs[ii].key);
+      var el = document.getElementById('v4calc-' + calcId + '-' + inputs[ii].key);
       if (el) el.value = '';
     }
     var resultDiv = document.getElementById('calc-result-' + calcId);
     if (resultDiv) resultDiv.style.display = 'none';
     var btn = document.getElementById('calc-include-btn-' + calcId);
     if (btn) btn.remove();
+    updateSidebar();
   }
 
   function onCalcInputChange(calcId, key, value) {
@@ -925,12 +1013,18 @@
       pack_years: function() { if (isNaN(v.cigarettesPerDay) || isNaN(v.yearsSmoked)) return null; var py = (v.cigarettesPerDay / 20) * v.yearsSmoked; return { text: py.toFixed(1) + ' pack-years.', value: py }; },
       mean_arterial_pressure: function() { if (isNaN(v.sbp) || isNaN(v.dbp)) return null; var map = v.dbp + (v.sbp - v.dbp) / 3; return { text: map.toFixed(0) + ' mmHg. Clinician interpretation required.', value: map }; },
       shock_index: function() { if (isNaN(v.hr) || isNaN(v.sbp) || v.sbp <= 0) return null; var si = v.hr / v.sbp; return { text: si.toFixed(2) + '. Clinician interpretation required.', value: si }; },
-      mrc_dyspnea_scale: function() { if (isNaN(v.grade) || v.grade < 1 || v.grade > 5) return null; var grades = ['not troubled by breathlessness except on strenuous exercise','short of breath when hurrying on level or walking up a slight hill','walks slower thanÃ¥ÂÂÃ©Â¾ÂÃ¤ÂºÂº on level because of breathlessness, or stops for breath when walking at own pace','stops for breath after walking about 100m or after a few minutes on level','too breathless to leave the house, or breathless when dressing/undressing']; return { text: 'MRC dyspnea grade ' + v.grade + ': ' + grades[Math.round(v.grade)-1] + '. Clinician interpretation required.', value: v.grade }; },
-      phq_2: function() { if (isNaN(v.score) || v.score < 0 || v.score > 6) return null; var risk = v.score >= 3 ? 'Further evaluation may be considered per clinician judgment.' : 'Score below typical screening threshold.'; return { text: 'PHQ-2 score: ' + v.score + '/6. ' + risk + ' Clinician interpretation required.', value: v.score }; },
+      mrc_dyspnea_scale: function() { if (isNaN(v.grade) || v.grade < 1 || v.grade > 5) return null; var grades = ['not troubled by breathlessness except on strenuous exercise','short of breath when hurrying on level ground or walking up a slight hill','walks slower than people of the same age because of breathlessness, or stops for breath when walking at own pace','stops for breath after walking about 100m or after a few minutes on level','too breathless to leave the house, or breathless when dressing/undressing']; return { text: 'MRC dyspnea grade ' + v.grade + ': ' + grades[Math.round(v.grade)-1] + '. Clinician interpretation required.', value: v.grade }; },
+      phq_2: function() { if (isNaN(v.score) || v.score < 0 || v.score > 6) return null; return { text: 'PHQ-2 score: ' + v.score + '/6. Clinician interpretation required.', value: v.score }; },
       phq_9: function() { if (isNaN(v.score) || v.score < 0 || v.score > 27) return null; var sev = v.score <= 4 ? 'minimal' : v.score <= 9 ? 'mild' : v.score <= 14 ? 'moderate' : v.score <= 19 ? 'moderately severe' : 'severe'; return { text: 'PHQ-9 score: ' + v.score + '/27 (' + sev + '). Clinician interpretation required.', value: v.score }; },
       gad_7: function() { if (isNaN(v.score) || v.score < 0 || v.score > 21) return null; var sev = v.score <= 4 ? 'minimal' : v.score <= 9 ? 'mild' : v.score <= 14 ? 'moderate' : 'severe'; return { text: 'GAD-7 score: ' + v.score + '/21 (' + sev + '). Clinician interpretation required.', value: v.score }; },
       epworth_sleepiness_scale: function() { if (isNaN(v.score) || v.score < 0 || v.score > 24) return null; var sev = v.score <= 10 ? 'normal range' : v.score <= 12 ? 'borderline' : v.score <= 15 ? 'mild to moderate' : 'severe'; return { text: 'Epworth Sleepiness Scale: ' + v.score + '/24 (' + sev + ' sleepiness). Clinician interpretation required.', value: v.score }; },
-      ipss: function() { if (isNaN(v.score) || v.score < 0 || v.score > 35) return null; var sev = v.score <= 7 ? 'mildly symptomatic' : v.score <= 19 ? 'moderately symptomatic' : 'severely symptomatic'; return { text: 'IPSS: ' + v.score + '/35 (' + sev + '). Clinician interpretation required.', value: v.score }; }
+      ipss: function() { if (isNaN(v.score) || v.score < 0 || v.score > 35) return null; var sev = v.score <= 7 ? 'mildly symptomatic' : v.score <= 19 ? 'moderately symptomatic' : 'severely symptomatic'; return { text: 'IPSS: ' + v.score + '/35 (' + sev + '). Clinician interpretation required.', value: v.score }; },
+      nyha: function() { var g = parseInt(v.grade, 10); if (!g || g < 1 || g > 4) return null; return { text: 'NYHA functional class documented: Class ' + g + '. Clinician interpretation required.', value: g }; },
+      killip: function() { var g = parseInt(v.grade, 10); if (!g || g < 1 || g > 4) return null; return { text: 'Killip class documented: Class ' + g + '. Clinician interpretation required.', value: g }; },
+      sirs: function() { if (isNaN(v.temp) || isNaN(v.hr) || isNaN(v.rr) || isNaN(v.wbc)) return null; var score = 0; if (v.temp > 38 || v.temp < 36) score++; if (v.hr > 90) score++; if (v.rr > 20) score++; if (v.wbc > 12 || v.wbc < 4) score++; return { text: 'SIRS criteria documented: ' + score + '/4. Clinician interpretation required.', value: score }; },
+      qsofa: function() { if (isNaN(v.rr) || isNaN(v.sbp) || !v.mentalStatus) return null; var score = 0; if (v.rr >= 22) score++; if (v.sbp <= 100) score++; if (v.mentalStatus === 'yes') score++; return { text: 'qSOFA score documented: ' + score + '/3. Clinician interpretation required.', value: score }; },
+      fib4: function() { if (isNaN(v.age) || isNaN(v.ast) || isNaN(v.alt) || isNaN(v.platelets) || v.alt <= 0 || v.platelets <= 0) return null; var score = (v.age * v.ast) / (v.platelets * Math.sqrt(v.alt)); return { text: 'FIB-4 index: ' + score.toFixed(2) + '. Clinician interpretation required.', value: score }; },
+      child_pugh: function() { if (isNaN(v.bilirubin) || isNaN(v.albumin) || isNaN(v.inr) || !v.ascites || !v.encephalopathy) return null; var score = 0; score += v.bilirubin < 2 ? 1 : (v.bilirubin <= 3 ? 2 : 3); score += v.albumin > 3.5 ? 1 : (v.albumin >= 2.8 ? 2 : 3); score += v.inr < 1.7 ? 1 : (v.inr <= 2.3 ? 2 : 3); score += v.ascites === 'none' ? 1 : (v.ascites === 'mild' ? 2 : 3); score += v.encephalopathy === 'none' ? 1 : (v.encephalopathy === 'grade1_2' ? 2 : 3); var cls = score <= 6 ? 'A' : (score <= 9 ? 'B' : 'C'); return { text: 'Child-Pugh score documented: ' + score + ' (Class ' + cls + '). Clinician interpretation required.', value: score }; }
     };
     if (calcFns[calcId]) return calcFns[calcId]();
     return null;
@@ -942,15 +1036,17 @@
       var mapping = data.calculator_workflow_mapping;
       var mapList = mapping[wfId] || [];
       var result = [];
+      var seen = {};
       for (var i = 0; i < mapList.length; i++) {
         var calcItem = mapList[i];
         var calcId = typeof calcItem === 'string' ? calcItem : calcItem.calculator_id;
         var calcDef = data.calculators[calcId];
-        if (calcDef && calcDef.risk_level !== 'high' && calcDef.implementation_status === 'implemented') {
+        if (calcDef && !seen[calcId] && calcDef.risk_level !== 'high' && calcDef.implementation_status === 'implemented') {
+          seen[calcId] = true;
           result.push({
             id: calcId,
-            name: calcDef.display_name || calcId,
-            desc: calcDef.relevance_reason || ''
+            name: calcDef.calculator_name || calcDef.display_name || calcId,
+            desc: (typeof calcItem === 'string' ? '' : calcItem.relevance_reason) || calcDef.purpose || calcDef.clinical_context || ''
           });
         }
       }
@@ -973,6 +1069,8 @@
     h += '<div class="v4-output-actions">';
     h += '<button class="v4-btn v4-btn-primary" onclick="window._v4Generate()">Generate Combined Draft</button>';
     h += '<button class="v4-btn v4-btn-outline" onclick="window._v4Copy()">Copy</button>';
+    h += '<button class="v4-btn v4-btn-outline" onclick="window._v4ExportTxt()">Export TXT</button>';
+    h += '<button class="v4-btn v4-btn-outline" onclick="window._v4Print()">Print / Save PDF</button>';
     h += '<button class="v4-btn v4-btn-ghost" onclick="window._v4ClearOutput()">Clear</button></div>';
     return h;
   }
@@ -1233,7 +1331,8 @@
       investigationConfirmations: state.investigationConfirmations || {},
       impression: state.impression || '',
       planText: state.planText || '',
-      planConfirmations: state.planConfirmations || {}
+      planConfirmations: state.planConfirmations || {},
+      calculatorResults: state.calculatorResults || {}
     };
   }
 
@@ -1345,7 +1444,7 @@
       fupSeen[fk] = true;
       fupDeduped.push(fupRaw[fdi]);
     }
-    // Assemble follow-up: join with ', ', then fix 'sooner' ÃÂ¢ÃÂÃÂ 'or sooner', lowercase 'sooner'
+    // Assemble follow-up and normalize "sooner" phrasing.
     var fupText = fupDeduped.join(', ');
     fupText = fupText.replace(/^(\d+\s+\w+\s+if\s+not\s+improving),\s*(sooner\s+if\s+)/i, 'Follow-up in $1, or $2');
     fupText = fupText.replace(/^([a-z])/i, function(m, c) { return c.toUpperCase(); });
@@ -1472,37 +1571,16 @@
 
       var pc = countPlan();
       if (pc > 0) h += '<div class="v4-si"><span class="v4-si-label">Plan options:</span><span class="v4-si-val">' + pc + ' selected</span></div>';
+
+      var calcIncluded = 0;
+      var calcResults = state.calculatorResults || {};
+      for (var calcId in calcResults) {
+        if (calcResults[calcId] && calcResults[calcId].included) calcIncluded++;
+      }
+      h += '<div class="v4-si"><span class="v4-si-label">Calculator results:</span><span class="v4-si-val">' + calcIncluded + ' included</span></div>';
     }
     container.innerHTML = h;
 
-    // Debug panel
-    if (window.location.search.indexOf('debug=v4') >= 0 && state.selectedWorkflowId) {
-      var debugEl = document.getElementById('v4DebugPanel');
-      if (!debugEl) {
-        debugEl = document.createElement('div');
-        debugEl.id = 'v4DebugPanel';
-        debugEl.style.cssText = 'margin-top:16px;padding:12px;background:#f8fafc;border:1px solid #cbd5e1;border-radius:8px;font-size:11px;font-family:monospace;line-height:1.6;color:#334155;max-height:400px;overflow:auto';
-        var sidebar = document.querySelector('.v4-sidebar-inner');
-        if (sidebar) sidebar.appendChild(debugEl);
-      }
-      var raw = collectRawState();
-      var model = normalizeV4SelectionsToNoteModel(raw);
-      var dbg = '<div style="font-weight:700;margin-bottom:8px;color:#0c4a6e;font-size:12px">[DEBUG] V4 Pipeline</div>';
-      dbg += '<div>Workflow: ' + esc(raw.workflowId) + '</div>';
-      dbg += '<div style="margin-top:6px;font-weight:600">Subjective:</div>';
-      dbg += '<div>symptoms: ' + (model.subjective.symptoms.length + model.subjective.associatedSymptoms.length) + ' items</div>';
-      dbg += '<div>negatives: ' + model.subjective.relevantNegatives.length + ' items</div>';
-      dbg += '<div style="margin-top:6px;font-weight:600">Objective:</div>';
-      dbg += '<div>examFindings: ' + model.objective.examFindings.length + ' items</div>';
-      dbg += '<div>investigations: ' + model.objective.investigations.length + ' items</div>';
-      dbg += '<div style="margin-top:6px;font-weight:600">Assessment:</div>';
-      dbg += '<div>impression: ' + (model.assessment.impression !== '[not documented]' ? 'Entered' : 'Not entered') + '</div>';
-      dbg += '<div style="margin-top:6px;font-weight:600">Plan:</div>';
-      dbg += '<div>advice: ' + model.plan.advice.length + ' items</div>';
-      dbg += '<div>safetyNetting: ' + model.plan.safetyNetting.length + ' items</div>';
-      dbg += '<div>followUp: ' + model.plan.followUp.length + ' items</div>';
-      debugEl.innerHTML = dbg;
-    }
   }
 
   // ================================================================
@@ -1510,6 +1588,12 @@
   // ================================================================
 
   // Workflow
+  window._v4SetSpecialty = function(spec) {
+    state.selectedSpecialtyFilter = spec || '';
+    renderStep(1);
+    updateSidebar();
+  };
+
   window._v4SearchWf = function(term) {
     state._wfSearchTerm = term;
     renderStep(1);
@@ -1538,6 +1622,7 @@
     state.impression = '';
     state.planText = '';
     state.historyFields = {};
+    state.calculatorResults = {};
 
     // Load chips into V4_ENCOUNTER_STATE
     v4LoadChipsIntoState(wfId);
@@ -1712,6 +1797,7 @@
   };
 
   window._v4SwitchTab = function(tabId, btn) {
+    _currentTab = tabId;
     var tabs = document.querySelectorAll('.v4-out-tab');
     for (var i = 0; i < tabs.length; i++) tabs[i].classList.remove('active');
     btn.classList.add('active');
@@ -1732,6 +1818,72 @@
       document.execCommand('copy');
       document.body.removeChild(ta);
     });
+  };
+
+  function v4CurrentOutputItem() {
+    var textEl = document.getElementById('v4OutputText');
+    var text = textEl ? textEl.textContent || '' : '';
+    var labels = {
+      'adv-emr': 'Advanced EMR note',
+      'adv-soap': 'Advanced SOAP note',
+      'adv-ref': 'Advanced referral draft',
+      'adv-inst': 'Advanced patient instructions'
+    };
+    return {
+      tab: _currentTab || 'adv-emr',
+      label: labels[_currentTab] || 'Advanced encounter draft',
+      text: text
+    };
+  }
+
+  function v4ExportContext(item) {
+    return {
+      'Tool': 'Advanced Mode',
+      'Output type': item.label,
+      'Specialty': state.selectedWorkflowSpecialty || '[not selected]',
+      'Workflow': state.selectedWorkflowDisplay || '[not selected]'
+    };
+  }
+
+  function v4DateStamp() {
+    var d = new Date();
+    var m = String(d.getMonth() + 1).padStart(2, '0');
+    var day = String(d.getDate()).padStart(2, '0');
+    return d.getFullYear() + '-' + m + '-' + day;
+  }
+
+  window._v4ExportTxt = function() {
+    var item = v4CurrentOutputItem();
+    if (!item.text || item.text.indexOf('Select all content') === 0) return;
+    if (window.ClinicNoteExport && typeof window.ClinicNoteExport.exportTextFile === 'function') {
+      var safeTab = item.tab.replace(/[^a-z0-9-]+/gi, '-').toLowerCase();
+      window.ClinicNoteExport.exportTextFile('clinicnote-advanced-' + safeTab + '-' + v4DateStamp() + '.txt', item.label, item.text, v4ExportContext(item));
+      return;
+    }
+    var blob = new Blob([item.text], { type: 'text/plain;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'clinicnote-advanced-' + v4DateStamp() + '.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  window._v4Print = function() {
+    var item = v4CurrentOutputItem();
+    if (!item.text || item.text.indexOf('Select all content') === 0) return;
+    if (window.ClinicNoteExport && typeof window.ClinicNoteExport.printOutput === 'function') {
+      window.ClinicNoteExport.printOutput(item.label, item.text, v4ExportContext(item));
+      return;
+    }
+    var w = window.open('', '_blank', 'noopener,noreferrer');
+    if (!w) return;
+    w.document.write('<!doctype html><html><head><title>' + esc(item.label) + '</title><style>body{font-family:Arial,sans-serif;line-height:1.6;color:#0f172a;padding:24px}pre{white-space:pre-wrap;font-family:Consolas,monospace}</style></head><body><pre>' + esc(item.text) + '</pre></body></html>');
+    w.document.close();
+    w.focus();
+    w.print();
   };
 
   window._v4ClearOutput = function() {
@@ -1764,11 +1916,11 @@
     var app = document.getElementById('page-advanced-encounter');
     if (!app) return;
 
-    // Show V4 page alongside Speed page (for complementary tools)
+    // Show only the Advanced Encounter page. Quick OPD Mode remains available on the clean site.
     var allPages = document.querySelectorAll('.page');
     for (var pi = 0; pi < allPages.length; pi++) {
       var pgId = allPages[pi].id;
-      if (pgId === 'page-advanced-encounter' || pgId === 'page-speed') {
+      if (pgId === 'page-advanced-encounter') {
         allPages[pi].classList.add('active');
       } else {
         allPages[pi].classList.remove('active');
@@ -1800,14 +1952,14 @@
 
     var loading = document.createElement('div');
     loading.className = 'v4-loading';
-    loading.textContent = 'Loading V4 encounter data...';
+    loading.textContent = 'Loading Advanced Mode data...';
     app.appendChild(loading);
 
     loadV4Data().then(function() {
       app.removeChild(loading);
       renderApp();
     }).catch(function(err) {
-      loading.textContent = 'Failed to load V4 data: ' + (err.message || 'unknown error');
+      loading.textContent = 'Failed to load Advanced Mode data: ' + (err.message || 'unknown error');
     });
   }
 
@@ -1850,6 +2002,9 @@
 .v4-sub-h{font-size:16px;font-weight:700;color:var(--gray-800);margin-bottom:10px}
 .v4-step-d{font-size:13px;color:var(--gray-500);margin-bottom:16px;line-height:1.5}
 .v4-proto-note{font-size:11px;color:#075985;background:#e0f2fe;border:1px solid #bae6fd;border-radius:6px;padding:8px 12px;margin-bottom:14px;line-height:1.4}
+.v4-wf-grid{display:grid;grid-template-columns:minmax(220px,0.8fr) minmax(260px,1.2fr);gap:12px;margin-bottom:12px}
+.v4-wf-search{margin-bottom:12px}
+.v4-count-pill{display:inline-block;margin-left:6px;padding:2px 7px;border-radius:999px;background:var(--gray-100);color:var(--gray-500);font-size:11px;font-weight:600}
 .v4-select{width:100%;padding:12px 14px;border:1px solid var(--gray-300);border-radius:8px;font-size:14px;font-family:var(--font);background:#fff;color:var(--gray-800)}
 .v4-select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
 .v4-wf-info{margin-top:14px;padding:14px;background:var(--gray-50);border-radius:8px}
@@ -1932,14 +2087,22 @@
 
 .v4-calc-list{margin:10px 0;padding-left:20px}
 .v4-calc-list li{font-size:13px;color:var(--gray-700);padding:3px 0}
-.v4-calc-empty{font-size:13px;color:var(--gray-400);padding:16px 0}
+.v4-calc-empty{font-size:13px;color:var(--gray-500);padding:14px 16px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px}
+.v4-calc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.v4-calc-card{background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:14px;box-shadow:0 1px 2px rgba(15,23,42,0.04)}
+.v4-calc-name{font-size:15px;font-weight:700;color:var(--gray-800);margin-bottom:4px}
+.v4-calc-desc{font-size:12px;color:var(--gray-500);line-height:1.45;margin-bottom:10px}
+.v4-calc-inputs{display:grid;gap:8px}
+.v4-calc-input-row{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;color:var(--gray-700)}
+.v4-calc-input-row label{font-weight:600;line-height:1.3}
+.v4-calc-result{background:#f8fafc;border:1px solid var(--gray-200);border-radius:8px;padding:10px 12px;margin-top:10px;font-size:12px;line-height:1.5;color:var(--gray-800)}
 
 .v4-output-tabs{display:flex;gap:4px;margin-bottom:12px;flex-wrap:wrap}
 .v4-out-tab{padding:10px 18px;border-radius:8px;font-size:13px;font-weight:600;border:1px solid var(--gray-200);background:#fff;color:var(--gray-500);cursor:pointer;font-family:var(--font);transition:all .15s}
 .v4-out-tab:hover{background:var(--gray-50)}
 .v4-out-tab.active{background:var(--primary);color:#fff;border-color:var(--primary);box-shadow:0 2px 8px rgba(0,0,0,0.12)}
-.v4-output-box{background:#fafbfc;border:1px solid var(--gray-200);border-radius:10px;padding:20px;min-height:250px;max-height:600px;overflow:auto;margin-bottom:12px}
-.v4-output-text{font-size:13px;font-family:var(--font-mono);white-space:pre-wrap;line-height:1.7;color:var(--gray-700)}
+.v4-output-box{background:#fbfdff;color:#0f172a;border:1px solid var(--gray-200);border-radius:10px;padding:20px;min-height:250px;max-height:600px;overflow:auto;margin-bottom:12px}
+.v4-output-text{font-size:13px;font-family:var(--font-mono);white-space:pre-wrap;line-height:1.7;color:var(--gray-800)}
 .v4-output-actions{display:flex;gap:10px;flex-wrap:wrap}
 
 .v4-nav{display:flex;align-items:center;justify-content:space-between;margin-top:16px;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:12px 20px}
@@ -1961,8 +2124,8 @@
 .v4-search-input{width:100%;padding:10px 14px;border:1px solid var(--gray-300);border-radius:8px;font-size:13px;font-family:var(--font);margin-bottom:8px}
 .v4-search-input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
 
-@media(max-width:768px){.v4-layout{grid-template-columns:1fr}.v4-sidebar{display:none}.v4-stepper{overflow-x:auto;font-size:10px}.v4-s-label{display:none}.v4-s-indicator{padding:10px 8px}.v4-step-content{padding:16px}.v4-step-h{font-size:17px}.v4-chip-btn{padding:5px 10px;font-size:11px}.v4-chip-group-header{font-size:11px}.v4-output-box{max-height:400px}.v4-output-text{font-size:12px;line-height:1.5}.v4-nav{padding:10px 14px;flex-wrap:wrap;gap:8px}.v4-guidance{font-size:11px;padding:8px 10px}.v4-guidance-arrow{display:none}.v4-guidance-step{display:block;padding:2px 0}.v4-output-tabs{gap:2px}.v4-out-tab{padding:8px 12px;font-size:11px}}
-@media(max-width:480px){.v4-step-content{padding:12px}.v4-nav{padding:8px 10px}.v4-btn{padding:8px 14px;font-size:12px}.v4-output-box{max-height:350px;padding:12px}.v4-output-text{font-size:11px}.v4-stepper{gap:2px}}
+@media(max-width:768px){.v4-layout{grid-template-columns:1fr}.v4-sidebar{display:none}.v4-stepper{overflow-x:auto;font-size:10px}.v4-s-label{display:none}.v4-s-indicator{padding:10px 8px}.v4-step-content{padding:16px}.v4-step-h{font-size:17px}.v4-wf-grid{grid-template-columns:1fr}.v4-chip-btn{padding:5px 10px;font-size:11px}.v4-chip-group-header{font-size:11px}.v4-output-box{max-height:400px}.v4-output-text{font-size:12px;line-height:1.5}.v4-nav{padding:10px 14px;flex-wrap:wrap;gap:8px}.v4-guidance{font-size:11px;padding:8px 10px}.v4-guidance-arrow{display:none}.v4-guidance-step{display:block;padding:2px 0}.v4-output-tabs{gap:2px}.v4-out-tab{padding:8px 12px;font-size:11px}.v4-calc-grid{grid-template-columns:1fr}.v4-calc-input-row{align-items:flex-start;flex-direction:column}.v4-calc-input-row input,.v4-calc-input-row select{width:100%!important;margin-left:0!important}}
+@media(max-width:480px){.v4-step-content{padding:12px}.v4-nav{padding:8px 10px}.v4-btn{padding:8px 14px;font-size:12px}.v4-output-actions .v4-btn{flex:1;justify-content:center}.v4-output-box{max-height:350px;padding:12px}.v4-output-text{font-size:11px}.v4-stepper{gap:2px}}
     `;
   }
 
