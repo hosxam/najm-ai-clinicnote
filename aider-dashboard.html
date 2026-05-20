@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aider Dashboard — Najm AI ClinicNote</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  min-height: 100vh;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #30363d;
+}
+.header h1 { font-size: 22px; font-weight: 700; color: #58a6ff; }
+.header .sub { font-size: 12px; color: #8b949e; }
+.header .badge { font-size: 10px; background: #238636; color: #fff; padding: 3px 8px; border-radius: 999px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 16px;
+}
+.card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-header {
+  padding: 12px 16px;
+  background: #21262d;
+  border-bottom: 1px solid #30363d;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-header .tag {
+  font-size: 10px;
+  background: #0d1117;
+  color: #8b949e;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #30363d;
+}
+.card-body { padding: 16px; }
+.card-body p { font-size: 13px; color: #c9d1d9; margin-bottom: 12px; line-height: 1.5; }
+.code-block {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-family: 'SF Mono', 'Cascadia Code', 'Consolas', monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #e6edf3;
+  white-space: pre-wrap;
+  word-break: break-all;
+  margin-bottom: 10px;
+  position: relative;
+}
+.code-block .copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 10px;
+  font-size: 10px;
+  background: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #58a6ff;
+  cursor: pointer;
+  font-family: inherit;
+  transition: 0.15s;
+}
+.code-block .copy-btn:hover { background: #30363d; border-color: #58a6ff; }
+.code-block .copy-btn.copied { color: #3fb950; border-color: #3fb950; }
+.card-footer {
+  padding: 10px 16px;
+  border-top: 1px solid #30363d;
+  background: #0d1117;
+  font-size: 11px;
+  color: #8b949e;
+}
+.info-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.info-item {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 12px 16px;
+  flex: 1;
+  min-width: 180px;
+}
+.info-item .lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; margin-bottom: 4px; }
+.info-item .val { font-size: 13px; font-family: 'SF Mono', monospace; color: #e6edf3; word-break: break-all; }
+.shortcut-box {
+  background: linear-gradient(135deg, #161b22, #0d1117);
+  border: 2px solid #238636;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.shortcut-box .icon-box {
+  width: 60px;
+  height: 60px;
+  background: #238636;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  flex-shrink: 0;
+}
+.shortcut-box .text-box h3 { font-size: 16px; margin-bottom: 2px; color: #3fb950; }
+.shortcut-box .text-box p { font-size: 12px; color: #8b949e; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <h1>&#9670; Aider Dashboard</h1>
+    <div class="sub">Najm AI ClinicNote &middot; Command reference</div>
+  </div>
+  <span class="badge">24 active calculators &middot; 150 workflows</span>
+</div>
+
+<div class="shortcut-box">
+  <div class="icon-box">&#128187;</div>
+  <div class="text-box">
+    <h3>&#10003; Desktop shortcut ready</h3>
+    <p>Double-click <strong>"Aider - ClinicNote"</strong> on your desktop to open a terminal with the API key pre-set and working directory at <code>najm-ai-clinicnote</code>. Commands below are ready to paste.</p>
+  </div>
+</div>
+
+<div class="info-row">
+  <div class="info-item">
+    <div class="lbl">Working directory</div>
+    <div class="val">najm-ai-clinicnote</div>
+  </div>
+  <div class="info-item">
+    <div class="lbl">Model</div>
+    <div class="val">deepseek/deepseek-chat</div>
+  </div>
+  <div class="info-item">
+    <div class="lbl">API key</div>
+    <div class="val">Pre-configured in shortcut</div>
+  </div>
+  <div class="info-item">
+    <div class="lbl">Latest commit</div>
+    <div class="val">34aacaf</div>
+  </div>
+</div>
+
+<div class="grid">
+
+  <div class="card">
+    <div class="card-header">
+      Public trust audit
+      <span class="tag">audit</span>
+    </div>
+    <div class="card-body">
+      <p>Search all public-facing files for stale counts, placeholder text, and developer artifacts.</p>
+      <div class="code-block" data-cmd='aider --model deepseek/deepseek-chat --yes --message "Search the entire repo for stale public-facing content. Look for: 150 workflows, 15 specialties, placeholder text, developer artifacts."'>
+        <button class="copy-btn" onclick="copyCmd(this)">Copy</button>
+        aider --model deepseek/deepseek-chat --yes --message "Search the entire repo for stale public-facing content. Look for: 150 workflows, 15 specialties, placeholder text, developer artifacts."
+      </div>
+    </div>
+    <div class="card-footer">Also checks for: "clinician impression documented", "form coming soon", "prototype", internal wording</div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Create new calculator
+      <span class="tag">feature</span>
+    </div>
+    <div class="card-body">
+      <p>Add a new clinical score calculator with safety disclaimers, input fields, and registry entry.</p>
+      <div class="code-block" data-cmd='aider --model deepseek/deepseek-chat --yes --message "Create a new calculator in calculator-high-impact.js with: function, register it in CALCULATOR_REGISTRY, add input defs. Include safety notice: Score calculated for documentation support only. Clinician interpretation required."'>
+        <button class="copy-btn" onclick="copyCmd(this)">Copy</button>
+        aider --model deepseek/deepseek-chat --yes --message "Create a new calculator in calculator-high-impact.js with input defs, formula, and safety notice."
+      </div>
+    </div>
+    <div class="card-footer">Requires: input defs in v4_advanced_encounter.js, registry entry in v3_calculator_registry.json, mapping in v3_calculator_workflow_map.json</div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Update SEO page
+      <span class="tag">content</span>
+    </div>
+    <div class="card-body">
+      <p>Improve a specialty SEO landing page with richer CTAs, safety notes, and better content.</p>
+      <div class="code-block" data-cmd='aider --model deepseek/deepseek-chat --yes --file orthopedic-soap-note-generator/index.html --message "Update the CTA row and add safety cards. Use clean text like Open Advanced Mode instead of query params in visible text."'>
+        <button class="copy-btn" onclick="copyCmd(this)">Copy</button>
+        aider --model deepseek/deepseek-chat --yes --file orthopedic-soap-note-generator/index.html --message "Update CTA row and add safety cards."
+      </div>
+    </div>
+    <div class="card-footer">Works on: orthopedic, pediatric, dermatology, free SOAP, OPD, referral, patient instructions, medical report</div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Calculator registry update
+      <span class="tag">data</span>
+    </div>
+    <div class="card-body">
+      <p>Add calculator entries to the v3_calculator_registry.json or update implementation statuses.</p>
+      <div class="code-block" data-cmd='aider --model deepseek/deepseek-chat --yes --file data/v3_calculator_registry.json --message "Add a new calculator entry following the existing JSON format."'>
+        <button class="copy-btn" onclick="copyCmd(this)">Copy</button>
+        aider --model deepseek/deepseek-chat --yes --file data/v3_calculator_registry.json --message "Add a new calculator entry."
+      </div>
+    </div>
+    <div class="card-footer">32 calculators in registry. 24 active (implemented), 8 registry-only (hidden from search).</div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Workflow mapping
+      <span class="tag">data</span>
+    </div>
+    <div class="card-body">
+      <p>Map calculators to existing workflows in v3_calculator_workflow_map.json.</p>
+      <div class="code-block" data-cmd='aider --model deepseek/deepseek-chat --yes --file data/v3_calculator_workflow_map.json --message "Add a calculator suggestion to existing workflow entries."'>
+        <button class="copy-btn" onclick="copyCmd(this)">Copy</button>
+        aider --model deepseek/deepseek-chat --yes --file data/v3_calculator_workflow_map.json --message "Add calculator suggestion to existing workflow entry."
+      </div>
+    </div>
+    <div class="card-footer">24 mappings, 46 calculator suggestions. Validator: PASS.</div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Run validators
+      <span class="tag">test</span>
+    </div>
+    <div class="card-body">
+      <p>Run the full validation suite to check calculator safety, registry, mappings, and data integrity.</p>
+      <div class="code-block" data-cmd='cd C:\Users\ASUS\.openclaw\workspace\najm-ai-clinicnote && node scripts/validateCalculatorSafety.js && node scripts/validateV3CalculatorRegistry.js && node scripts/validateV5CalculatorWorkflowMappings.js && node scripts/validate150WorkflowCoverage.js && node scripts/validateClinicalData.js && node scripts/validateAnalyticsSafety.js'>
+        <button class="copy-btn" onclick="copyCmd(this)">Copy</button>
+        node scripts/validateCalculatorSafety.js && node scripts/validateV3CalculatorRegistry.js && node scripts/validateV5CalculatorWorkflowMappings.js && node scripts/validate150WorkflowCoverage.js && node scripts/validateClinicalData.js && node scripts/validateAnalyticsSafety.js
+      </div>
+    </div>
+    <div class="card-footer">27,396 checks. 0 failures expected.</div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Git commit & push
+      <span class="tag">git</span>
+    </div>
+    <div class="card-body">
+      <p>Stage all changes, commit with message, and push to origin/main.</p>
+      <div class="code-block" data-cmd='git add -A && git commit -m "Description of changes" && git push origin main'>
+        <button class="copy-btn" onclick="copyCmd(this)">Copy</button>
+        git add -A && git commit -m "Your commit message here" && git push origin main
+      </div>
+    </div>
+    <div class="card-footer">Current HEAD: 34aacaf. Branch: main. Remote: hosxam/najm-ai-clinicnote</div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Advanced Mode JS
+      <span class="tag">code</span>
+    </div>
+    <div class="card-body">
+      <p>Edit v4_advanced_encounter.js for calculator or UI changes.</p>
+      <div class="code-block" data-cmd='aider --model deepseek/deepseek-chat --yes --file v4_advanced_encounter.js --message "Modify the calculator section in Advanced Mode."'>
+        <button class="copy-btn" onclick="copyCmd(this)">Copy</button>
+        aider --model deepseek/deepseek-chat --yes --file v4_advanced_encounter.js --message "Make change to calculator section."
+      </div>
+    </div>
+    <div class="card-footer">Contains: stepCalc(), getCalcInputs(), computeCalc(), getRelatedCalcs(), manual search functions</div>
+  </div>
+
+</div>
+
+<script>
+function copyCmd(btn) {
+  const block = btn.closest('.code-block');
+  const text = block.dataset.cmd || block.textContent.replace('Copy', '').trim();
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = 'Copied!';
+    btn.className = 'copy-btn copied';
+    setTimeout(() => {
+      btn.textContent = 'Copy';
+      btn.className = 'copy-btn';
+    }, 1500);
+  }).catch(() => {
+    // Fallback: select the text
+    const range = document.createRange();
+    range.selectNodeContents(block);
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  });
+}
+</script>
+</body>
+</html>
