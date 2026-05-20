@@ -355,7 +355,7 @@
   // -- Child-Pugh Score --
   function calculateChildPugh(bilirubin,albumin,inr,ascites,encephalopathy) {
     var bili=Number(bilirubin),alb=Number(albumin),inrVal=Number(inr);
-    if(isNaN(bili)||isNaN(alb)||isNaN(inrVal))return{ok:false,error:"Enter bilirubin, albumin, and INR."};
+    if(!Number.isFinite(bili)||!Number.isFinite(alb)||!Number.isFinite(inrVal)||bili<=0||alb<=0||inrVal<=0)return{ok:false,error:"Enter bilirubin, albumin, and INR as positive numbers."};
     var bPts=bili<=2?1:bili<=3?2:3; var aPts=alb>=3.5?1:alb>=2.8?2:3;
     var iPts=inrVal<1.7?1:inrVal<2.3?2:3;
     var ascPts=ascites==="none"?1:ascites==="mild"?2:3;
