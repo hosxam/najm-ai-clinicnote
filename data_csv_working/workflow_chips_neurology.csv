@@ -1,0 +1,394 @@
+workflow_id,specialty_id,chip_id,group,chip_text,order,search_terms,tags
+neuro-headache,Neurology,neuro-headache-symptoms-1,symptoms,headache,1,"headache, cephalgia",neurology
+neuro-headache,Neurology,neuro-headache-symptoms-2,symptoms,duration documented,2,"duration, timing",neurology
+neuro-headache,Neurology,neuro-headache-symptoms-3,symptoms,location documented,3,"location, site",neurology
+neuro-headache,Neurology,neuro-headache-symptoms-4,symptoms,character documented,4,"character, quality",neurology
+neuro-headache,Neurology,neuro-headache-symptoms-5,symptoms,severity documented,5,"severity, intensity",neurology
+neuro-headache,Neurology,neuro-headache-symptoms-6,symptoms,nausea reviewed,6,nausea,neurology
+neuro-headache,Neurology,neuro-headache-symptoms-7,symptoms,vomiting reviewed,7,vomiting,neurology
+neuro-headache,Neurology,neuro-headache-symptoms-8,symptoms,photophobia reviewed,8,"photophobia, light sensitivity",neurology
+neuro-headache,Neurology,neuro-headache-symptoms-9,symptoms,phonophobia reviewed,9,"phonophobia, sound sensitivity",neurology
+neuro-headache,Neurology,neuro-headache-symptoms-10,symptoms,visual symptoms reviewed,10,"visual, vision, aura",neurology
+neuro-headache,Neurology,neuro-headache-symptoms-11,symptoms,trigger context reviewed,11,"trigger, precipitating",neurology
+neuro-headache,Neurology,neuro-headache-symptoms-12,symptoms,relieving factors reviewed,12,"relieving, medication",neurology
+neuro-headache,Neurology,neuro-headache-symptoms-13,symptoms,everyday activity impact documented,13,"impact, daily, ADL",neurology
+neuro-headache,Neurology,neuro-headache-relevant_negatives-1,relevant_negatives,no focal neurological symptoms reported,1,"focal, neurological",neurology
+neuro-headache,Neurology,neuro-headache-relevant_negatives-2,relevant_negatives,no seizure reported,2,"seizure, fits",neurology
+neuro-headache,Neurology,neuro-headache-relevant_negatives-3,relevant_negatives,no neck stiffness reported,3,"neck, stiffness",neurology
+neuro-headache,Neurology,neuro-headache-relevant_negatives-4,relevant_negatives,no fever reported,4,"fever, febrile",neurology
+neuro-headache,Neurology,neuro-headache-relevant_negatives-5,relevant_negatives,no head trauma reported,5,"head, trauma, injury",neurology
+neuro-headache,Neurology,neuro-headache-relevant_negatives-6,relevant_negatives,no sudden thunderclap onset reported if assessed,6,"thunderclap, sudden, onset",neurology
+neuro-headache,Neurology,neuro-headache-relevant_negatives-7,relevant_negatives,no visual loss reported,7,"visual, loss, vision",neurology
+neuro-headache,Neurology,neuro-headache-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, blood pressure",neurology
+neuro-headache,Neurology,neuro-headache-exam_findings-2,exam_findings,neurological screen documented if assessed,2,"neurological, neuro exam",neurology
+neuro-headache,Neurology,neuro-headache-exam_findings-3,exam_findings,cranial nerve screen documented if assessed,3,"cranial, nerve, CN",neurology
+neuro-headache,Neurology,neuro-headache-exam_findings-4,exam_findings,limb power documented if assessed,4,"power, strength, motor",neurology
+neuro-headache,Neurology,neuro-headache-exam_findings-5,exam_findings,sensation documented if assessed,5,"sensation, sensory",neurology
+neuro-headache,Neurology,neuro-headache-exam_findings-6,exam_findings,coordination documented if assessed,6,"coordination, cerebellar",neurology
+neuro-headache,Neurology,neuro-headache-exam_findings-7,exam_findings,gait documented if assessed,7,"gait, walking",neurology
+neuro-headache,Neurology,neuro-headache-exam_findings-8,exam_findings,neck stiffness documented if assessed,8,"neck, stiffness, meningism",neurology
+neuro-headache,Neurology,neuro-headache-exam_findings-9,exam_findings,fundoscopy documented if assessed,9,"fundoscopy, optic disc",neurology
+neuro-headache,Neurology,neuro-headache-red_flags-1,red_flags,thunderclap onset,1,"thunderclap, sudden","neurology,high_safety"
+neuro-headache,Neurology,neuro-headache-red_flags-2,red_flags,focal neurological deficit,2,"focal, deficit, weakness","neurology,high_safety"
+neuro-headache,Neurology,neuro-headache-red_flags-3,red_flags,seizure,3,"seizure, fit","neurology,high_safety"
+neuro-headache,Neurology,neuro-headache-red_flags-4,red_flags,fever with neck stiffness,4,"fever, neck, stiffness","neurology,high_safety"
+neuro-headache,Neurology,neuro-headache-red_flags-5,red_flags,head trauma,5,"trauma, head, injury","neurology,high_safety"
+neuro-headache,Neurology,neuro-headache-red_flags-6,red_flags,new headache in older age,6,"new, older, age","neurology,high_safety"
+neuro-headache,Neurology,neuro-headache-red_flags-7,red_flags,progressive worsening,7,"progressive, worsening","neurology,high_safety"
+neuro-headache,Neurology,neuro-headache-red_flags-8,red_flags,visual loss,8,"visual, loss, vision","neurology,high_safety"
+neuro-headache,Neurology,neuro-headache-investigations-1,investigations,blood pressure recorded if measured,1,"blood, pressure, BP",neurology
+neuro-headache,Neurology,neuro-headache-investigations-2,investigations,imaging reviewed if available,2,"imaging, MRI, CT",neurology
+neuro-headache,Neurology,neuro-headache-investigations-3,investigations,previous neurology notes reviewed if available,3,"previous, neurology, notes",neurology
+neuro-headache,Neurology,neuro-headache-investigations-4,investigations,blood tests reviewed if ordered,4,"blood, tests, labs",neurology
+neuro-headache,Neurology,neuro-headache-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",neurology
+neuro-headache,Neurology,neuro-headache-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",neurology
+neuro-headache,Neurology,neuro-headache-plan_phrases-3,plan_phrases,follow-up documented if arranged,3,"follow, up",neurology
+neuro-headache,Neurology,neuro-headache-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,referral,neurology
+neuro-headache,Neurology,neuro-headache-plan_phrases-5,plan_phrases,medication plan documented if clinician decided,5,"medication, treatment",neurology
+neuro-headache,Neurology,neuro-headache-follow_up-1,follow_up,1-2 weeks if not improving,1,"one, two, weeks",neurology
+neuro-headache,Neurology,neuro-headache-follow_up-2,follow_up,2-4 weeks,2,"two, four, weeks",neurology
+neuro-headache,Neurology,neuro-headache-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",neurology
+neuro-headache,Neurology,neuro-headache-follow_up-4,follow_up,sooner if new symptoms,4,"sooner, new, symptoms",neurology
+neuro-headache,Neurology,neuro-headache-follow_up-5,follow_up,PRN,5,"PRN, as needed",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-1,symptoms,migraine follow-up,1,"migraine, followup",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-2,symptoms,headache frequency reviewed,2,"frequency, how often",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-3,symptoms,headache duration reviewed,3,"duration, how long",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-4,symptoms,headache severity reviewed,4,"severity, intensity",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-5,symptoms,aura symptoms reviewed,5,"aura, visual",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-6,symptoms,trigger pattern reviewed,6,"trigger, pattern",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-7,symptoms,functional impact documented,7,"functional, impact, work",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-8,symptoms,medication use reviewed,8,"medication, use, triptan",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-9,symptoms,acute treatment response reviewed,9,"acute, treatment, response",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-10,symptoms,preventive treatment reviewed if applicable,10,"preventive, prophylaxis",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-relevant_negatives-1,relevant_negatives,no new focal neurological symptoms reported,1,"new, focal",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-relevant_negatives-2,relevant_negatives,no change in headache pattern reported if applicable,2,"change, pattern",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-relevant_negatives-3,relevant_negatives,no medication overuse reported if applicable,3,"overuse, medication",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-exam_findings-1,exam_findings,neurological screen documented if assessed,1,"neurological, neuro",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-exam_findings-2,exam_findings,cranial nerve screen documented if assessed,2,"cranial, nerve",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-exam_findings-3,exam_findings,headache diary reviewed if available,3,"diary, headache log",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-exam_findings-4,exam_findings,blood pressure recorded if measured,4,"blood, pressure, BP",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-plan_phrases-1,plan_phrases,medication plan documented if clinician decided,1,"medication, plan, triptan",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-plan_phrases-2,plan_phrases,preventive plan documented if clinician decided,2,"preventive, prophylaxis",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-plan_phrases-3,plan_phrases,lifestyle modification discussed if applicable,3,"lifestyle, modification",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-plan_phrases-4,plan_phrases,acute treatment plan documented if clinician decided,4,"acute, treatment",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-plan_phrases-5,plan_phrases,referral documented if clinician decided,5,"referral, neurologist",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-follow_up-1,follow_up,follow-up documented if arranged,1,"follow, up",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-follow_up-2,follow_up,1-3 months,2,"one, three, months",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-follow_up-4,follow_up,PRN,4,"PRN, as needed",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-symptoms-1,symptoms,seizure follow-up,1,"seizure, followup, epilepsy",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-symptoms-2,symptoms,seizure frequency reviewed,2,"frequency, how often",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-symptoms-3,symptoms,last seizure date and context documented,3,"last, seizure, date",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-symptoms-4,symptoms,witnessed features reviewed,4,"witnessed, features",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-symptoms-5,symptoms,aura or prodrome reviewed,5,"aura, prodrome",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-symptoms-6,symptoms,post-ictal symptoms reviewed,6,"postictal, post-ictal",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-symptoms-7,symptoms,adherence reviewed,7,"adherence, compliance, medication",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-symptoms-8,symptoms,side effects reviewed,8,"side, effects",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-symptoms-9,symptoms,sleep deprivation reviewed,9,"sleep, deprivation",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-symptoms-10,symptoms,alcohol or substance use reviewed if relevant,10,"alcohol, substance",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-relevant_negatives-1,relevant_negatives,no new neurological deficit reported,1,"new, deficit",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-relevant_negatives-2,relevant_negatives,no seizure-related injury reported if applicable,2,"injury, trauma",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-relevant_negatives-3,relevant_negatives,no seizure clustering or convulsive emergency reported,3,"status, epilepticus",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-exam_findings-1,exam_findings,neurological screen documented if assessed,1,"neurological, neuro",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-exam_findings-2,exam_findings,cranial nerve screen documented if assessed,2,"cranial, nerve, CN",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-exam_findings-3,exam_findings,medication level reviewed if ordered,3,"level, drug, AED",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-exam_findings-4,exam_findings,EEG report reviewed if available,4,"EEG, electroencephalogram",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-exam_findings-5,exam_findings,MRI report reviewed if available,5,"MRI, imaging",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-plan_phrases-1,plan_phrases,medication plan documented if clinician decided,1,"medication, AED, anticonvulsant",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-plan_phrases-2,plan_phrases,dose adjustment documented if clinician decided,2,"dose, adjustment",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, neurologist",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-plan_phrases-4,plan_phrases,safety-netting documented if discussed,4,"safety, netting",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-plan_phrases-5,plan_phrases,women of childbearing potential counselling discussed if relevant,5,"pregnancy, contraception",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-follow_up-1,follow_up,follow-up documented if arranged,1,"follow, up",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-follow_up-2,follow_up,1-3 months,2,"one, three, months",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-follow_up-3,follow_up,3-6 months if stable,3,"three, six, stable",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-follow_up-4,follow_up,sooner if symptom change,4,"sooner, change",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-follow_up-5,follow_up,PRN,5,"PRN, as needed",neurology
+neuro-dizziness,Neurology,neuro-dizziness-symptoms-1,symptoms,dizziness,1,"dizziness, lightheaded",neurology
+neuro-dizziness,Neurology,neuro-dizziness-symptoms-2,symptoms,vertigo versus lightheadedness context documented,2,"vertigo, lightheaded, spinning",neurology
+neuro-dizziness,Neurology,neuro-dizziness-symptoms-3,symptoms,positional symptoms reviewed,3,"positional, BPPV",neurology
+neuro-dizziness,Neurology,neuro-dizziness-symptoms-4,symptoms,duration and frequency documented,4,"duration, frequency",neurology
+neuro-dizziness,Neurology,neuro-dizziness-symptoms-5,symptoms,nausea reviewed,5,nausea,neurology
+neuro-dizziness,Neurology,neuro-dizziness-symptoms-6,symptoms,vomiting reviewed,6,vomiting,neurology
+neuro-dizziness,Neurology,neuro-dizziness-symptoms-7,symptoms,hearing symptoms reviewed,7,"hearing, tinnitus",neurology
+neuro-dizziness,Neurology,neuro-dizziness-symptoms-8,symptoms,headache reviewed,8,headache,neurology
+neuro-dizziness,Neurology,neuro-dizziness-symptoms-9,symptoms,triggering context reviewed,9,"trigger, movement",neurology
+neuro-dizziness,Neurology,neuro-dizziness-relevant_negatives-1,relevant_negatives,no focal neurological symptoms reported,1,"focal, neurological",neurology
+neuro-dizziness,Neurology,neuro-dizziness-relevant_negatives-2,relevant_negatives,no syncope reported,2,"syncope, fainting",neurology
+neuro-dizziness,Neurology,neuro-dizziness-relevant_negatives-3,relevant_negatives,no chest pain reported if relevant,3,"chest, pain, cardiac",neurology
+neuro-dizziness,Neurology,neuro-dizziness-relevant_negatives-4,relevant_negatives,no head trauma reported,4,"trauma, head, injury",neurology
+neuro-dizziness,Neurology,neuro-dizziness-relevant_negatives-5,relevant_negatives,no palpitations reported if relevant,5,palpitations,neurology
+neuro-dizziness,Neurology,neuro-dizziness-exam_findings-1,exam_findings,neurological screen documented if assessed,1,"neurological, neuro",neurology
+neuro-dizziness,Neurology,neuro-dizziness-exam_findings-2,exam_findings,cranial nerve screen documented if assessed,2,"cranial, nerve",neurology
+neuro-dizziness,Neurology,neuro-dizziness-exam_findings-3,exam_findings,nystagmus documented if assessed,3,nystagmus,neurology
+neuro-dizziness,Neurology,neuro-dizziness-exam_findings-4,exam_findings,gait documented if assessed,4,"gait, walking",neurology
+neuro-dizziness,Neurology,neuro-dizziness-exam_findings-5,exam_findings,Romberg test documented if assessed,5,Romberg,neurology
+neuro-dizziness,Neurology,neuro-dizziness-exam_findings-6,exam_findings,ear examination documented if assessed,6,"ear, otoscopy",neurology
+neuro-dizziness,Neurology,neuro-dizziness-exam_findings-7,exam_findings,Dix-Hallpike test documented if performed,7,"Dix-Hallpike, positional",neurology
+neuro-dizziness,Neurology,neuro-dizziness-exam_findings-8,exam_findings,ECG reviewed if performed,8,"ECG, EKG",neurology
+neuro-dizziness,Neurology,neuro-dizziness-exam_findings-9,exam_findings,glucose checked if performed,9,"glucose, sugar",neurology
+neuro-dizziness,Neurology,neuro-dizziness-exam_findings-10,exam_findings,postural blood pressure documented if measured,10,"orthostatic, BP",neurology
+neuro-dizziness,Neurology,neuro-dizziness-red_flags-1,red_flags,focal neurological deficit,1,"focal, deficit","neurology,high_safety"
+neuro-dizziness,Neurology,neuro-dizziness-red_flags-2,red_flags,ataxia or gait difficulty,2,"ataxia, gait","neurology,high_safety"
+neuro-dizziness,Neurology,neuro-dizziness-red_flags-3,red_flags,syncope,3,"syncope, faint","neurology,high_safety"
+neuro-dizziness,Neurology,neuro-dizziness-red_flags-4,red_flags,chest pain or palpitations,4,"chest, palpitations","neurology,high_safety"
+neuro-dizziness,Neurology,neuro-dizziness-red_flags-5,red_flags,severe occipital headache,5,"occipital, headache","neurology,high_safety"
+neuro-dizziness,Neurology,neuro-dizziness-red_flags-6,red_flags,sudden hearing loss,6,"hearing, loss","neurology,high_safety"
+neuro-dizziness,Neurology,neuro-dizziness-investigations-1,investigations,ECG reviewed if performed,1,"ECG, EKG",neurology
+neuro-dizziness,Neurology,neuro-dizziness-investigations-2,investigations,cardiac monitoring reviewed if arranged,2,"monitoring, Holter",neurology
+neuro-dizziness,Neurology,neuro-dizziness-investigations-3,investigations,imaging of brain reviewed if available,3,"imaging, MRI, CT",neurology
+neuro-dizziness,Neurology,neuro-dizziness-investigations-4,investigations,audiology referral documented if clinician decided,4,"audiology, hearing",neurology
+neuro-dizziness,Neurology,neuro-dizziness-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",neurology
+neuro-dizziness,Neurology,neuro-dizziness-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",neurology
+neuro-dizziness,Neurology,neuro-dizziness-plan_phrases-3,plan_phrases,vestibular rehabilitation discussed if relevant,3,"vestibular, rehab",neurology
+neuro-dizziness,Neurology,neuro-dizziness-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",neurology
+neuro-dizziness,Neurology,neuro-dizziness-plan_phrases-5,plan_phrases,referral documented if clinician decided,5,referral,neurology
+neuro-dizziness,Neurology,neuro-dizziness-follow_up-1,follow_up,1-2 weeks if not improving,1,"one, two, weeks",neurology
+neuro-dizziness,Neurology,neuro-dizziness-follow_up-2,follow_up,2-4 weeks,2,"two, four, weeks",neurology
+neuro-dizziness,Neurology,neuro-dizziness-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",neurology
+neuro-dizziness,Neurology,neuro-dizziness-follow_up-4,follow_up,PRN,4,"PRN, as needed",neurology
+neuro-weakness,Neurology,neuro-weakness-symptoms-1,symptoms,weakness,1,"weakness, limb weakness",neurology
+neuro-weakness,Neurology,neuro-weakness-symptoms-2,symptoms,onset documented,2,"onset, acute, gradual",neurology
+neuro-weakness,Neurology,neuro-weakness-symptoms-3,symptoms,distribution documented,3,"distribution, pattern",neurology
+neuro-weakness,Neurology,neuro-weakness-symptoms-4,symptoms,progression documented,4,"progression, worsening",neurology
+neuro-weakness,Neurology,neuro-weakness-symptoms-5,symptoms,fluctuation pattern reviewed,5,"fluctuation, variable",neurology
+neuro-weakness,Neurology,neuro-weakness-symptoms-6,symptoms,associated sensory symptoms reviewed,6,"sensory, numbness",neurology
+neuro-weakness,Neurology,neuro-weakness-symptoms-7,symptoms,speech symptoms reviewed,7,"speech, dysarthria",neurology
+neuro-weakness,Neurology,neuro-weakness-symptoms-8,symptoms,vision symptoms reviewed,8,"vision, visual",neurology
+neuro-weakness,Neurology,neuro-weakness-symptoms-9,symptoms,pain reviewed,9,pain,neurology
+neuro-weakness,Neurology,neuro-weakness-symptoms-10,symptoms,functional impact documented,10,"functional, daily",neurology
+neuro-weakness,Neurology,neuro-weakness-relevant_negatives-1,relevant_negatives,no seizure reported,1,seizure,neurology
+neuro-weakness,Neurology,neuro-weakness-relevant_negatives-2,relevant_negatives,no headache reported if relevant,2,headache,neurology
+neuro-weakness,Neurology,neuro-weakness-relevant_negatives-3,relevant_negatives,no trauma reported,3,"trauma, injury",neurology
+neuro-weakness,Neurology,neuro-weakness-relevant_negatives-4,relevant_negatives,no fever reported,4,fever,neurology
+neuro-weakness,Neurology,neuro-weakness-relevant_negatives-5,relevant_negatives,no falls reported if applicable,5,falls,neurology
+neuro-weakness,Neurology,neuro-weakness-exam_findings-1,exam_findings,neurological examination documented if assessed,1,"neurological, neuro",neurology
+neuro-weakness,Neurology,neuro-weakness-exam_findings-2,exam_findings,power documented if assessed,2,"power, strength, MRC",neurology
+neuro-weakness,Neurology,neuro-weakness-exam_findings-3,exam_findings,reflexes documented if assessed,3,"reflexes, DTR",neurology
+neuro-weakness,Neurology,neuro-weakness-exam_findings-4,exam_findings,tone documented if assessed,4,"tone, spasticity",neurology
+neuro-weakness,Neurology,neuro-weakness-exam_findings-5,exam_findings,sensation documented if assessed,5,"sensation, sensory",neurology
+neuro-weakness,Neurology,neuro-weakness-exam_findings-6,exam_findings,coordination documented if assessed,6,"coordination, cerebellar",neurology
+neuro-weakness,Neurology,neuro-weakness-exam_findings-7,exam_findings,gait documented if assessed,7,"gait, walking",neurology
+neuro-weakness,Neurology,neuro-weakness-exam_findings-8,exam_findings,cranial nerves documented if assessed,8,"cranial, nerves, CN",neurology
+neuro-weakness,Neurology,neuro-weakness-red_flags-1,red_flags,acute onset unilateral weakness,1,"acute, unilateral","neurology,high_safety"
+neuro-weakness,Neurology,neuro-weakness-red_flags-2,red_flags,facial droop or speech difficulty,2,"facial, speech","neurology,high_safety"
+neuro-weakness,Neurology,neuro-weakness-red_flags-3,red_flags,rapidly progressive weakness,3,"rapid, progressive","neurology,high_safety"
+neuro-weakness,Neurology,neuro-weakness-red_flags-4,red_flags,bowel or bladder involvement,4,"bowel, bladder","neurology,high_safety"
+neuro-weakness,Neurology,neuro-weakness-red_flags-5,red_flags,sensory level on trunk,5,"sensory, level","neurology,high_safety"
+neuro-weakness,Neurology,neuro-weakness-red_flags-6,red_flags,headache with focal deficit,6,"headache, deficit","neurology,high_safety"
+neuro-weakness,Neurology,neuro-weakness-investigations-1,investigations,imaging reviewed if available,1,"imaging, MRI, CT",neurology
+neuro-weakness,Neurology,neuro-weakness-investigations-2,investigations,blood tests reviewed if ordered,2,"blood, labs, tests",neurology
+neuro-weakness,Neurology,neuro-weakness-investigations-3,investigations,previous neurology notes reviewed if available,3,"neurology, previous",neurology
+neuro-weakness,Neurology,neuro-weakness-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",neurology
+neuro-weakness,Neurology,neuro-weakness-plan_phrases-2,plan_phrases,referral or escalation documented if clinician decided,2,"referral, escalation",neurology
+neuro-weakness,Neurology,neuro-weakness-plan_phrases-3,plan_phrases,follow-up documented if arranged,3,"follow, up",neurology
+neuro-weakness,Neurology,neuro-weakness-plan_phrases-4,plan_phrases,safety-netting documented if discussed,4,"safety, netting",neurology
+neuro-weakness,Neurology,neuro-weakness-follow_up-1,follow_up,1-2 weeks,1,"one, two, weeks",neurology
+neuro-weakness,Neurology,neuro-weakness-follow_up-2,follow_up,2-4 weeks,2,"two, four, weeks",neurology
+neuro-weakness,Neurology,neuro-weakness-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",neurology
+neuro-weakness,Neurology,neuro-weakness-follow_up-4,follow_up,PRN,4,"PRN, as needed",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-symptoms-1,symptoms,numbness or tingling,1,"numbness, tingling",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-symptoms-2,symptoms,distribution documented,2,"distribution, location",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-symptoms-3,symptoms,onset and duration documented,3,"onset, duration",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-symptoms-4,symptoms,progression documented,4,"progression, worsening",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-symptoms-5,symptoms,weakness reviewed,5,weakness,neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-symptoms-6,symptoms,pain reviewed,6,pain,neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-symptoms-7,symptoms,functional impact documented,7,"functional, impact",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-symptoms-8,symptoms,associated skin changes reviewed if relevant,8,"skin, rash",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-relevant_negatives-1,relevant_negatives,no focal weakness reported if applicable,1,"focal, weakness",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-relevant_negatives-2,relevant_negatives,no bowel or bladder symptoms reported if relevant,2,"bowel, bladder",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-relevant_negatives-3,relevant_negatives,no trauma reported,3,trauma,neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-relevant_negatives-4,relevant_negatives,no rash or skin changes reported if relevant,4,"rash, skin",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-exam_findings-1,exam_findings,sensation documented if assessed,1,"sensation, sensory",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-exam_findings-2,exam_findings,power documented if assessed,2,"power, strength",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-exam_findings-3,exam_findings,reflexes documented if assessed,3,"reflexes, DTR",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-exam_findings-4,exam_findings,gait documented if assessed,4,gait,neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-exam_findings-5,exam_findings,coordination documented if assessed,5,coordination,neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-exam_findings-6,exam_findings,cranial nerves documented if assessed,6,cranial,neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-red_flags-1,red_flags,acute onset hemisensory loss,1,"acute, hemisensory","neurology,high_safety"
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-red_flags-2,red_flags,rapidly ascending sensory change,2,"ascending, rapid","neurology,high_safety"
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-red_flags-3,red_flags,sensory level on trunk,3,"sensory, level","neurology,high_safety"
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-red_flags-4,red_flags,associated motor weakness,4,"motor, weakness","neurology,high_safety"
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-investigations-1,investigations,blood tests reviewed if ordered,1,"blood, labs, B12",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-investigations-2,investigations,imaging reviewed if available,2,"imaging, MRI",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-investigations-3,investigations,previous neurology notes reviewed if available,3,"neurology, previous",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,referral,neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-follow_up-1,follow_up,1-2 weeks,1,"one, two, weeks",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-follow_up-2,follow_up,2-4 weeks,2,"two, four, weeks",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-follow_up-4,follow_up,PRN,4,"PRN, as needed",neurology
+neuro-tremor,Neurology,neuro-tremor-symptoms-1,symptoms,tremor,1,"tremor, shaking",neurology
+neuro-tremor,Neurology,neuro-tremor-symptoms-2,symptoms,location and distribution documented,2,"location, distribution",neurology
+neuro-tremor,Neurology,neuro-tremor-symptoms-3,symptoms,rest versus action tremor context documented,3,"rest, action, intention",neurology
+neuro-tremor,Neurology,neuro-tremor-symptoms-4,symptoms,onset and duration documented,4,"onset, duration",neurology
+neuro-tremor,Neurology,neuro-tremor-symptoms-5,symptoms,progression documented,5,"progression, worsening",neurology
+neuro-tremor,Neurology,neuro-tremor-symptoms-6,symptoms,functional impact documented,6,"functional, impact, writing",neurology
+neuro-tremor,Neurology,neuro-tremor-symptoms-7,symptoms,medication or caffeine context reviewed,7,"medication, caffeine",neurology
+neuro-tremor,Neurology,neuro-tremor-symptoms-8,symptoms,family history reviewed if relevant,8,"family, history",neurology
+neuro-tremor,Neurology,neuro-tremor-symptoms-9,symptoms,alcohol response reviewed if relevant,9,alcohol,neurology
+neuro-tremor,Neurology,neuro-tremor-symptoms-10,symptoms,associated neurological symptoms reviewed,10,"other, symptoms",neurology
+neuro-tremor,Neurology,neuro-tremor-relevant_negatives-1,relevant_negatives,no new neurological symptoms reported,1,"new, neurological",neurology
+neuro-tremor,Neurology,neuro-tremor-relevant_negatives-2,relevant_negatives,no weakness reported if applicable,2,weakness,neurology
+neuro-tremor,Neurology,neuro-tremor-relevant_negatives-3,relevant_negatives,no gait difficulty reported if applicable,3,"gait, walking",neurology
+neuro-tremor,Neurology,neuro-tremor-exam_findings-1,exam_findings,neurological exam documented if assessed,1,"neurological, neuro",neurology
+neuro-tremor,Neurology,neuro-tremor-exam_findings-2,exam_findings,tremor amplitude documented if assessed,2,amplitude,neurology
+neuro-tremor,Neurology,neuro-tremor-exam_findings-3,exam_findings,tremor frequency documented if assessed,3,frequency,neurology
+neuro-tremor,Neurology,neuro-tremor-exam_findings-4,exam_findings,coordination documented if assessed,4,"coordination, cerebellar",neurology
+neuro-tremor,Neurology,neuro-tremor-exam_findings-5,exam_findings,gait documented if assessed,5,"gait, walking",neurology
+neuro-tremor,Neurology,neuro-tremor-exam_findings-6,exam_findings,writing or spiral sample documented if assessed,6,"writing, spiral",neurology
+neuro-tremor,Neurology,neuro-tremor-exam_findings-7,exam_findings,rigidity documented if assessed,7,"rigidity, tone",neurology
+neuro-tremor,Neurology,neuro-tremor-exam_findings-8,exam_findings,bradykinesia documented if assessed,8,"bradykinesia, slow",neurology
+neuro-tremor,Neurology,neuro-tremor-investigations-1,investigations,thyroid function reviewed if ordered,1,"thyroid, TSH",neurology
+neuro-tremor,Neurology,neuro-tremor-investigations-2,investigations,copper studies reviewed if clinically indicated,2,"copper, Wilson",neurology
+neuro-tremor,Neurology,neuro-tremor-investigations-3,investigations,imaging reviewed if available,3,"imaging, MRI",neurology
+neuro-tremor,Neurology,neuro-tremor-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",neurology
+neuro-tremor,Neurology,neuro-tremor-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,"medication, treatment",neurology
+neuro-tremor,Neurology,neuro-tremor-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, neurologist",neurology
+neuro-tremor,Neurology,neuro-tremor-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",neurology
+neuro-tremor,Neurology,neuro-tremor-follow_up-1,follow_up,3-6 months,1,"three, six, months",neurology
+neuro-tremor,Neurology,neuro-tremor-follow_up-2,follow_up,6-12 months if stable,2,"six, twelve, stable",neurology
+neuro-tremor,Neurology,neuro-tremor-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",neurology
+neuro-tremor,Neurology,neuro-tremor-follow_up-4,follow_up,PRN,4,"PRN, as needed",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-symptoms-1,symptoms,neuropathy follow-up,1,"neuropathy, followup",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-symptoms-2,symptoms,sensory symptoms reviewed,2,"sensory, numbness",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-symptoms-3,symptoms,pain or burning symptoms reviewed,3,"pain, burning",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-symptoms-4,symptoms,distribution documented,4,"distribution, stocking",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-symptoms-5,symptoms,progression documented,5,"progression, worsening",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-symptoms-6,symptoms,functional impact documented,6,"functional, impact",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-symptoms-7,symptoms,diabetes context reviewed if relevant,7,"diabetes, sugar",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-symptoms-8,symptoms,B12 or thyroid context reviewed if relevant,8,"B12, thyroid, TSH",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-symptoms-9,symptoms,alcohol history reviewed if relevant,9,alcohol,neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-symptoms-10,symptoms,medication response reviewed,10,"medication, response",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-exam_findings-1,exam_findings,sensation documented if assessed,1,"sensation, monofilament",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-exam_findings-2,exam_findings,vibration sense documented if assessed,2,"vibration, tuning fork",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-exam_findings-3,exam_findings,reflexes documented if assessed,3,"reflexes, DTR, ankle",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-exam_findings-4,exam_findings,power documented if assessed,4,"power, strength",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-exam_findings-5,exam_findings,foot examination documented if assessed,5,"foot, ulcer, inspection",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-exam_findings-6,exam_findings,gait documented if assessed,6,"gait, walking",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-investigations-1,investigations,blood tests reviewed if ordered,1,"blood, B12, glucose",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-investigations-2,investigations,HbA1c reviewed if available,2,"HbA1c, diabetes",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-investigations-3,investigations,nerve conduction study report reviewed if available,3,"NCS, nerve conduction",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-plan_phrases-1,plan_phrases,medication plan documented if clinician decided,1,"medication, gabapentin, pregabalin",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-plan_phrases-2,plan_phrases,pain management discussed if applicable,2,"pain, management",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-plan_phrases-3,plan_phrases,foot care education documented if relevant,3,"foot, care",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,"referral, neurologist",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-follow_up-1,follow_up,follow-up documented if arranged,1,"follow, up",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-follow_up-2,follow_up,3-6 months,2,"three, six, months",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-follow_up-3,follow_up,6-12 months if stable,3,"six, twelve, stable",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-follow_up-4,follow_up,sooner if worsening,4,"sooner, worsening",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-follow_up-5,follow_up,PRN,5,"PRN, as needed",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-symptoms-1,symptoms,stroke or TIA follow-up,1,"stroke, TIA, followup",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-symptoms-2,symptoms,residual symptoms reviewed,2,"residual, symptoms",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-symptoms-3,symptoms,speech symptoms reviewed,3,"speech, dysarthria, aphasia",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-symptoms-4,symptoms,vision symptoms reviewed,4,"vision, visual",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-symptoms-5,symptoms,motor symptoms reviewed,5,"motor, weakness",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-symptoms-6,symptoms,functional level reviewed,6,"functional, ADL",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-symptoms-7,symptoms,medication adherence discussed,7,"adherence, compliance",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-symptoms-8,symptoms,risk factor context reviewed,8,"risk, factor, BP, cholesterol",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-symptoms-9,symptoms,mood and emotional wellbeing reviewed,9,"mood, depression, anxiety",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-symptoms-10,symptoms,swallowing reviewed if relevant,10,"swallowing, dysphagia",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-relevant_negatives-1,relevant_negatives,no new neurological symptoms reported,1,"new, neurological",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-relevant_negatives-2,relevant_negatives,no transient symptoms since last review reported if applicable,2,"transient, TIA",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-relevant_negatives-3,relevant_negatives,no falls reported if relevant,3,falls,neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-exam_findings-1,exam_findings,blood pressure recorded if measured,1,"blood, pressure, BP",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-exam_findings-2,exam_findings,neurological screen documented if assessed,2,"neurological, neuro",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-exam_findings-3,exam_findings,gait and function documented if assessed,3,"gait, function, mobility",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-exam_findings-4,exam_findings,speech assessment documented if relevant,4,speech,neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-exam_findings-5,exam_findings,cardiac auscultation documented if assessed,5,"cardiac, heart",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-investigations-1,investigations,imaging report reviewed if available,1,"imaging, CT, MRI",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-investigations-2,investigations,previous discharge summary reviewed if available,2,"discharge, summary",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-investigations-3,investigations,lipid profile reviewed if available,3,"lipid, cholesterol",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-investigations-4,investigations,medication list reviewed if available,4,"medication, list",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-investigations-5,investigations,ECG reviewed if performed,5,"ECG, EKG",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-plan_phrases-1,plan_phrases,medication plan documented if clinician decided,1,"medication, antiplatelet, statin",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-plan_phrases-2,plan_phrases,risk factor management discussed if applicable,2,"risk, factor",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, neurology, rehab",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-plan_phrases-4,plan_phrases,secondary prevention plan documented if clinician decided,4,"secondary, prevention",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-plan_phrases-5,plan_phrases,lifestyle modification discussed if applicable,5,"lifestyle, diet, exercise",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-follow_up-1,follow_up,follow-up documented if arranged,1,"follow, up",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-follow_up-2,follow_up,1-3 months,2,"one, three, months",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-follow_up-3,follow_up,3-6 months,3,"three, six, months",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-follow_up-4,follow_up,sooner if new symptoms,4,"sooner, new",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-follow_up-5,follow_up,PRN,5,"PRN, as needed",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-symptoms-1,symptoms,memory concern,1,"memory, forgetfulness",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-symptoms-2,symptoms,onset and duration documented,2,"onset, duration",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-symptoms-3,symptoms,progression documented,3,"progression, worsening",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-symptoms-4,symptoms,domains affected reviewed,4,"domains, short-term, long-term",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-symptoms-5,symptoms,ADL impact documented,5,"ADL, daily, function",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-symptoms-6,symptoms,mood and sleep context reviewed,6,"mood, depression, sleep",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-symptoms-7,symptoms,collateral history documented if available,7,"collateral, family",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-symptoms-8,symptoms,medication history reviewed if relevant,8,"medication, review",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-symptoms-9,symptoms,previous cognitive testing reviewed if available,9,"cognitive, testing",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-relevant_negatives-1,relevant_negatives,no acute confusion reported if applicable,1,"acute, confusion, delirium",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-relevant_negatives-2,relevant_negatives,no head trauma reported,2,"head, trauma",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-relevant_negatives-3,relevant_negatives,no focal neurological symptoms reported,3,"focal, neurological",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-relevant_negatives-4,relevant_negatives,no unexplained falls reported if applicable,4,falls,neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-exam_findings-1,exam_findings,cognition screen documented if assessed,1,"cognition, MMSE, MoCA",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-exam_findings-2,exam_findings,neurological screen documented if assessed,2,"neurological, neuro",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-exam_findings-3,exam_findings,mood screening documented if assessed,3,"mood, depression, GDS",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-exam_findings-4,exam_findings,medication review documented if clinician reviewed,4,"medication, review",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-investigations-1,investigations,blood tests reviewed if ordered,1,"blood, B12, TSH",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-investigations-2,investigations,previous records reviewed if available,2,"previous, records",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-investigations-3,investigations,imaging reviewed if available,3,"imaging, MRI, CT",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-investigations-4,investigations,formal cognitive assessment arranged if clinician decided,4,"cognitive, assessment",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, memory, clinic",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-plan_phrases-4,plan_phrases,driving advice documented if clinician discussed,4,"driving, DVLA",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-plan_phrases-5,plan_phrases,social support discussed if relevant,5,"social, support",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-plan_phrases-6,plan_phrases,follow-up documented if arranged,6,"follow, up",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-follow_up-1,follow_up,follow-up documented if arranged,1,"follow, up",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-follow_up-2,follow_up,1-3 months,2,"one, three, months",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-follow_up-3,follow_up,3-6 months,3,"three, six, months",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-follow_up-4,follow_up,sooner if worsening,4,"sooner, worsening",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-follow_up-5,follow_up,PRN,5,"PRN, as needed",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-11,symptoms,menstrual relation reviewed if relevant,11,"menstrual, period",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-12,symptoms,associated symptoms reviewed,12,"associated, symptoms",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-symptoms-13,symptoms,number of acute medication days per month reviewed,13,"medication, days, month",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-relevant_negatives-4,relevant_negatives,no new-onset vomiting reported if applicable,4,vomiting,neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-exam_findings-5,exam_findings,fundoscopy documented if assessed,5,"fundoscopy, optic",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-plan_phrases-6,plan_phrases,abortive therapy plan documented if clinician decided,6,"abortive, therapy",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-plan_phrases-7,plan_phrases,bridge therapy documented if clinician decided,7,"bridge, therapy",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-plan_phrases-8,plan_phrases,vitamin or supplement plan documented if clinician decided,8,"vitamin, supplement",neurology
+neuro-migraine-followup,Neurology,neuro-migraine-followup-follow_up-5,follow_up,telemedicine option discussed if available,5,"telemedicine, virtual",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-symptoms-11,symptoms,driving discussion documented if discussed by clinician,11,"driving, DVLA",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-symptoms-12,symptoms,employment or education impact reviewed if relevant,12,"work, school",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-relevant_negatives-4,relevant_negatives,no breakthrough seizure clusters reported if applicable,4,"breakthrough, cluster",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-exam_findings-6,exam_findings,cardiac examination documented if assessed,6,"cardiac, heart",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-plan_phrases-6,plan_phrases,emergency seizure plan reviewed if applicable,6,"seizure, action, plan",neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-plan_phrases-7,plan_phrases,medication interaction check documented if performed,7,interaction,neurology
+neuro-seizure-followup,Neurology,neuro-seizure-followup-follow_up-6,follow_up,sooner if medication change,6,"medication, change",neurology
+neuro-dizziness,Neurology,neuro-dizziness-symptoms-10,symptoms,fall context reviewed if applicable,10,"fall, balance",neurology
+neuro-dizziness,Neurology,neuro-dizziness-exam_findings-11,exam_findings,HINTS examination documented if assessed,11,"HINTS, head impulse",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-symptoms-9,symptoms,temperature or color change reviewed if relevant,9,"temperature, color",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-relevant_negatives-5,relevant_negatives,no skin lesions reported if relevant,5,"skin, lesions",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-exam_findings-7,exam_findings,temperature sensation documented if assessed,7,temperature,neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-investigations-4,investigations,vitamin B12 levels reviewed if ordered,4,"B12, vitamin",neurology
+neuro-numbness-tingling,Neurology,neuro-numbness-tingling-plan_phrases-5,plan_phrases,analgesic plan documented if clinician decided,5,"analgesic, pain",neurology
+neuro-tremor,Neurology,neuro-tremor-symptoms-11,symptoms,handwriting change reviewed if relevant,11,"handwriting, writing",neurology
+neuro-tremor,Neurology,neuro-tremor-symptoms-12,symptoms,voice or head tremor reviewed if relevant,12,"voice, head",neurology
+neuro-tremor,Neurology,neuro-tremor-relevant_negatives-4,relevant_negatives,no resting tremor of concern reported if relevant,4,"resting, tremor",neurology
+neuro-tremor,Neurology,neuro-tremor-exam_findings-9,exam_findings,tongue tremor documented if assessed,9,tongue,neurology
+neuro-tremor,Neurology,neuro-tremor-plan_phrases-5,plan_phrases,beta-blocker plan documented if clinician decided,5,"beta, blocker, propranolol",neurology
+neuro-tremor,Neurology,neuro-tremor-plan_phrases-6,plan_phrases,lifestyle modification discussed if applicable,6,"lifestyle, caffeine",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-symptoms-11,symptoms,sleep quality reviewed if affected by symptoms,11,"sleep, quality",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-symptoms-12,symptoms,mood reviewed if affected by symptoms,12,"mood, depression",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-exam_findings-7,exam_findings,ankle jerks documented if assessed,7,"ankle, jerk",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-investigations-4,investigations,renal function reviewed if on neuropathic agents,4,"renal, kidney",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-plan_phrases-6,plan_phrases,dose titration plan documented if clinician decided,6,"dose, titration",neurology
+neuro-neuropathy-followup,Neurology,neuro-neuropathy-followup-follow_up-6,follow_up,sooner if medication change,6,"medication, change",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-symptoms-11,symptoms,driving discussion documented if discussed by clinician,11,"driving, DVLA",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-relevant_negatives-4,relevant_negatives,no new focal weakness reported,4,"focal, weakness",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-exam_findings-6,exam_findings,lipid panel reviewed if measured,6,"lipid, cholesterol",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-investigations-6,investigations,blood glucose reviewed if measured,6,"glucose, sugar",neurology
+neuro-stroke-tia-followup,Neurology,neuro-stroke-tia-followup-plan_phrases-6,plan_phrases,smoking cessation discussed if relevant,6,"smoking, cessation",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-symptoms-10,symptoms,safety awareness reviewed if relevant,10,"safety, awareness",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-symptoms-11,symptoms,driving safety discussed if clinician raised concern,11,"driving, safety",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-relevant_negatives-5,relevant_negatives,no acute behavioural change reported,5,"behavioural, change",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-exam_findings-5,exam_findings,functional assessment documented if assessed,5,"functional, IADL",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-investigations-5,investigations,ECG reviewed if ordered,5,"ECG, EKG",neurology
+neuro-memory-concern,Neurology,neuro-memory-concern-plan_phrases-7,plan_phrases,carer support needs discussed if relevant,7,"carer, caregiver",neurology

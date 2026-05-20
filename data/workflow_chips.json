@@ -24496,6 +24496,5253 @@
     ]
   },
   {
+    "workflow_id": "neuro-dizziness",
+    "specialty_id": "Neurology",
+    "chips": [
+      {
+        "chip_id": "neuro-dizziness-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "dizziness",
+        "order": 1,
+        "search_terms": [
+          "dizziness",
+          "lightheaded"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no focal neurological symptoms reported",
+        "order": 1,
+        "search_terms": [
+          "focal",
+          "neurological"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "neurological screen documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "neurological",
+          "neuro"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "focal neurological deficit",
+        "order": 1,
+        "search_terms": [
+          "focal",
+          "deficit"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-investigations-1",
+        "group": "investigations",
+        "chip_text": "ECG reviewed if performed",
+        "order": 1,
+        "search_terms": [
+          "ECG",
+          "EKG"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "1-2 weeks if not improving",
+        "order": 1,
+        "search_terms": [
+          "one",
+          "two",
+          "weeks"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "vertigo versus lightheadedness context documented",
+        "order": 2,
+        "search_terms": [
+          "vertigo",
+          "lightheaded",
+          "spinning"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no syncope reported",
+        "order": 2,
+        "search_terms": [
+          "syncope",
+          "fainting"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "cranial nerve screen documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "cranial",
+          "nerve"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "ataxia or gait difficulty",
+        "order": 2,
+        "search_terms": [
+          "ataxia",
+          "gait"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-investigations-2",
+        "group": "investigations",
+        "chip_text": "cardiac monitoring reviewed if arranged",
+        "order": 2,
+        "search_terms": [
+          "monitoring",
+          "Holter"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "2-4 weeks",
+        "order": 2,
+        "search_terms": [
+          "two",
+          "four",
+          "weeks"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "positional symptoms reviewed",
+        "order": 3,
+        "search_terms": [
+          "positional",
+          "BPPV"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no chest pain reported if relevant",
+        "order": 3,
+        "search_terms": [
+          "chest",
+          "pain",
+          "cardiac"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "nystagmus documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "nystagmus"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "syncope",
+        "order": 3,
+        "search_terms": [
+          "syncope",
+          "faint"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-investigations-3",
+        "group": "investigations",
+        "chip_text": "imaging of brain reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "imaging",
+          "MRI",
+          "CT"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "vestibular rehabilitation discussed if relevant",
+        "order": 3,
+        "search_terms": [
+          "vestibular",
+          "rehab"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "duration and frequency documented",
+        "order": 4,
+        "search_terms": [
+          "duration",
+          "frequency"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no head trauma reported",
+        "order": 4,
+        "search_terms": [
+          "trauma",
+          "head",
+          "injury"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "gait documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "gait",
+          "walking"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "chest pain or palpitations",
+        "order": 4,
+        "search_terms": [
+          "chest",
+          "palpitations"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-investigations-4",
+        "group": "investigations",
+        "chip_text": "audiology referral documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "audiology",
+          "hearing"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 4,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "nausea reviewed",
+        "order": 5,
+        "search_terms": [
+          "nausea"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no palpitations reported if relevant",
+        "order": 5,
+        "search_terms": [
+          "palpitations"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "Romberg test documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "Romberg"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "severe occipital headache",
+        "order": 5,
+        "search_terms": [
+          "occipital",
+          "headache"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 5,
+        "search_terms": [
+          "referral"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "vomiting reviewed",
+        "order": 6,
+        "search_terms": [
+          "vomiting"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "ear examination documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "ear",
+          "otoscopy"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "sudden hearing loss",
+        "order": 6,
+        "search_terms": [
+          "hearing",
+          "loss"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "hearing symptoms reviewed",
+        "order": 7,
+        "search_terms": [
+          "hearing",
+          "tinnitus"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-exam_findings-7",
+        "group": "exam_findings",
+        "chip_text": "Dix-Hallpike test documented if performed",
+        "order": 7,
+        "search_terms": [
+          "Dix-Hallpike",
+          "positional"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "headache reviewed",
+        "order": 8,
+        "search_terms": [
+          "headache"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-exam_findings-8",
+        "group": "exam_findings",
+        "chip_text": "ECG reviewed if performed",
+        "order": 8,
+        "search_terms": [
+          "ECG",
+          "EKG"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "triggering context reviewed",
+        "order": 9,
+        "search_terms": [
+          "trigger",
+          "movement"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-exam_findings-9",
+        "group": "exam_findings",
+        "chip_text": "glucose checked if performed",
+        "order": 9,
+        "search_terms": [
+          "glucose",
+          "sugar"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-exam_findings-10",
+        "group": "exam_findings",
+        "chip_text": "postural blood pressure documented if measured",
+        "order": 10,
+        "search_terms": [
+          "orthostatic",
+          "BP"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "fall context reviewed if applicable",
+        "order": 10,
+        "search_terms": [
+          "fall",
+          "balance"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-dizziness-exam_findings-11",
+        "group": "exam_findings",
+        "chip_text": "HINTS examination documented if assessed",
+        "order": 11,
+        "search_terms": [
+          "HINTS",
+          "head impulse"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "neuro-headache",
+    "specialty_id": "Neurology",
+    "chips": [
+      {
+        "chip_id": "neuro-headache-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "headache",
+        "order": 1,
+        "search_terms": [
+          "headache",
+          "cephalgia"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no focal neurological symptoms reported",
+        "order": 1,
+        "search_terms": [
+          "focal",
+          "neurological"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "vitals documented if measured",
+        "order": 1,
+        "search_terms": [
+          "vitals",
+          "blood pressure"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "thunderclap onset",
+        "order": 1,
+        "search_terms": [
+          "thunderclap",
+          "sudden"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-investigations-1",
+        "group": "investigations",
+        "chip_text": "blood pressure recorded if measured",
+        "order": 1,
+        "search_terms": [
+          "blood",
+          "pressure",
+          "BP"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "1-2 weeks if not improving",
+        "order": 1,
+        "search_terms": [
+          "one",
+          "two",
+          "weeks"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "duration documented",
+        "order": 2,
+        "search_terms": [
+          "duration",
+          "timing"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no seizure reported",
+        "order": 2,
+        "search_terms": [
+          "seizure",
+          "fits"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "neurological screen documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "neurological",
+          "neuro exam"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "focal neurological deficit",
+        "order": 2,
+        "search_terms": [
+          "focal",
+          "deficit",
+          "weakness"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-investigations-2",
+        "group": "investigations",
+        "chip_text": "imaging reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "imaging",
+          "MRI",
+          "CT"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "2-4 weeks",
+        "order": 2,
+        "search_terms": [
+          "two",
+          "four",
+          "weeks"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "location documented",
+        "order": 3,
+        "search_terms": [
+          "location",
+          "site"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no neck stiffness reported",
+        "order": 3,
+        "search_terms": [
+          "neck",
+          "stiffness"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "cranial nerve screen documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "cranial",
+          "nerve",
+          "CN"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "seizure",
+        "order": 3,
+        "search_terms": [
+          "seizure",
+          "fit"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-investigations-3",
+        "group": "investigations",
+        "chip_text": "previous neurology notes reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "previous",
+          "neurology",
+          "notes"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 3,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "character documented",
+        "order": 4,
+        "search_terms": [
+          "character",
+          "quality"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no fever reported",
+        "order": 4,
+        "search_terms": [
+          "fever",
+          "febrile"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "limb power documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "power",
+          "strength",
+          "motor"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "fever with neck stiffness",
+        "order": 4,
+        "search_terms": [
+          "fever",
+          "neck",
+          "stiffness"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-investigations-4",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 4,
+        "search_terms": [
+          "blood",
+          "tests",
+          "labs"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "referral"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "sooner if new symptoms",
+        "order": 4,
+        "search_terms": [
+          "sooner",
+          "new",
+          "symptoms"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "severity documented",
+        "order": 5,
+        "search_terms": [
+          "severity",
+          "intensity"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no head trauma reported",
+        "order": 5,
+        "search_terms": [
+          "head",
+          "trauma",
+          "injury"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "sensation documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "sensation",
+          "sensory"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "head trauma",
+        "order": 5,
+        "search_terms": [
+          "trauma",
+          "head",
+          "injury"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "medication plan documented if clinician decided",
+        "order": 5,
+        "search_terms": [
+          "medication",
+          "treatment"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-follow_up-5",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 5,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "nausea reviewed",
+        "order": 6,
+        "search_terms": [
+          "nausea"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-relevant_negatives-6",
+        "group": "relevant_negatives",
+        "chip_text": "no sudden thunderclap onset reported if assessed",
+        "order": 6,
+        "search_terms": [
+          "thunderclap",
+          "sudden",
+          "onset"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "coordination documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "coordination",
+          "cerebellar"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "new headache in older age",
+        "order": 6,
+        "search_terms": [
+          "new",
+          "older",
+          "age"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "vomiting reviewed",
+        "order": 7,
+        "search_terms": [
+          "vomiting"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-relevant_negatives-7",
+        "group": "relevant_negatives",
+        "chip_text": "no visual loss reported",
+        "order": 7,
+        "search_terms": [
+          "visual",
+          "loss",
+          "vision"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-exam_findings-7",
+        "group": "exam_findings",
+        "chip_text": "gait documented if assessed",
+        "order": 7,
+        "search_terms": [
+          "gait",
+          "walking"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-red_flags-7",
+        "group": "red_flags",
+        "chip_text": "progressive worsening",
+        "order": 7,
+        "search_terms": [
+          "progressive",
+          "worsening"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "photophobia reviewed",
+        "order": 8,
+        "search_terms": [
+          "photophobia",
+          "light sensitivity"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-exam_findings-8",
+        "group": "exam_findings",
+        "chip_text": "neck stiffness documented if assessed",
+        "order": 8,
+        "search_terms": [
+          "neck",
+          "stiffness",
+          "meningism"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-red_flags-8",
+        "group": "red_flags",
+        "chip_text": "visual loss",
+        "order": 8,
+        "search_terms": [
+          "visual",
+          "loss",
+          "vision"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "phonophobia reviewed",
+        "order": 9,
+        "search_terms": [
+          "phonophobia",
+          "sound sensitivity"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-exam_findings-9",
+        "group": "exam_findings",
+        "chip_text": "fundoscopy documented if assessed",
+        "order": 9,
+        "search_terms": [
+          "fundoscopy",
+          "optic disc"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "visual symptoms reviewed",
+        "order": 10,
+        "search_terms": [
+          "visual",
+          "vision",
+          "aura"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-symptoms-11",
+        "group": "symptoms",
+        "chip_text": "trigger context reviewed",
+        "order": 11,
+        "search_terms": [
+          "trigger",
+          "precipitating"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-symptoms-12",
+        "group": "symptoms",
+        "chip_text": "relieving factors reviewed",
+        "order": 12,
+        "search_terms": [
+          "relieving",
+          "medication"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-headache-symptoms-13",
+        "group": "symptoms",
+        "chip_text": "everyday activity impact documented",
+        "order": 13,
+        "search_terms": [
+          "impact",
+          "daily",
+          "ADL"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "neuro-memory-concern",
+    "specialty_id": "Neurology",
+    "chips": [
+      {
+        "chip_id": "neuro-memory-concern-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "memory concern",
+        "order": 1,
+        "search_terms": [
+          "memory",
+          "forgetfulness"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no acute confusion reported if applicable",
+        "order": 1,
+        "search_terms": [
+          "acute",
+          "confusion",
+          "delirium"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "cognition screen documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "cognition",
+          "MMSE",
+          "MoCA"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-investigations-1",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "blood",
+          "B12",
+          "TSH"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up documented if arranged",
+        "order": 1,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "onset and duration documented",
+        "order": 2,
+        "search_terms": [
+          "onset",
+          "duration"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no head trauma reported",
+        "order": 2,
+        "search_terms": [
+          "head",
+          "trauma"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "neurological screen documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "neurological",
+          "neuro"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-investigations-2",
+        "group": "investigations",
+        "chip_text": "previous records reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "previous",
+          "records"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "1-3 months",
+        "order": 2,
+        "search_terms": [
+          "one",
+          "three",
+          "months"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "progression documented",
+        "order": 3,
+        "search_terms": [
+          "progression",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no focal neurological symptoms reported",
+        "order": 3,
+        "search_terms": [
+          "focal",
+          "neurological"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "mood screening documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "mood",
+          "depression",
+          "GDS"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-investigations-3",
+        "group": "investigations",
+        "chip_text": "imaging reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "imaging",
+          "MRI",
+          "CT"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "referral",
+          "memory",
+          "clinic"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "3-6 months",
+        "order": 3,
+        "search_terms": [
+          "three",
+          "six",
+          "months"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "domains affected reviewed",
+        "order": 4,
+        "search_terms": [
+          "domains",
+          "short-term",
+          "long-term"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no unexplained falls reported if applicable",
+        "order": 4,
+        "search_terms": [
+          "falls"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "medication review documented if clinician reviewed",
+        "order": 4,
+        "search_terms": [
+          "medication",
+          "review"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-investigations-4",
+        "group": "investigations",
+        "chip_text": "formal cognitive assessment arranged if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "cognitive",
+          "assessment"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "driving advice documented if clinician discussed",
+        "order": 4,
+        "search_terms": [
+          "driving",
+          "DVLA"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 4,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "ADL impact documented",
+        "order": 5,
+        "search_terms": [
+          "ADL",
+          "daily",
+          "function"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "social support discussed if relevant",
+        "order": 5,
+        "search_terms": [
+          "social",
+          "support"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-follow_up-5",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 5,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no acute behavioural change reported",
+        "order": 5,
+        "search_terms": [
+          "behavioural",
+          "change"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "functional assessment documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "functional",
+          "IADL"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-investigations-5",
+        "group": "investigations",
+        "chip_text": "ECG reviewed if ordered",
+        "order": 5,
+        "search_terms": [
+          "ECG",
+          "EKG"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "mood and sleep context reviewed",
+        "order": 6,
+        "search_terms": [
+          "mood",
+          "depression",
+          "sleep"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 6,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "collateral history documented if available",
+        "order": 7,
+        "search_terms": [
+          "collateral",
+          "family"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-plan_phrases-7",
+        "group": "plan_phrases",
+        "chip_text": "carer support needs discussed if relevant",
+        "order": 7,
+        "search_terms": [
+          "carer",
+          "caregiver"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "medication history reviewed if relevant",
+        "order": 8,
+        "search_terms": [
+          "medication",
+          "review"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "previous cognitive testing reviewed if available",
+        "order": 9,
+        "search_terms": [
+          "cognitive",
+          "testing"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "safety awareness reviewed if relevant",
+        "order": 10,
+        "search_terms": [
+          "safety",
+          "awareness"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-memory-concern-symptoms-11",
+        "group": "symptoms",
+        "chip_text": "driving safety discussed if clinician raised concern",
+        "order": 11,
+        "search_terms": [
+          "driving",
+          "safety"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "neuro-migraine-followup",
+    "specialty_id": "Neurology",
+    "chips": [
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "migraine follow-up",
+        "order": 1,
+        "search_terms": [
+          "migraine",
+          "followup"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no new focal neurological symptoms reported",
+        "order": 1,
+        "search_terms": [
+          "new",
+          "focal"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "neurological screen documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "neurological",
+          "neuro"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "medication plan documented if clinician decided",
+        "order": 1,
+        "search_terms": [
+          "medication",
+          "plan",
+          "triptan"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up documented if arranged",
+        "order": 1,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "headache frequency reviewed",
+        "order": 2,
+        "search_terms": [
+          "frequency",
+          "how often"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no change in headache pattern reported if applicable",
+        "order": 2,
+        "search_terms": [
+          "change",
+          "pattern"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "cranial nerve screen documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "cranial",
+          "nerve"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "preventive plan documented if clinician decided",
+        "order": 2,
+        "search_terms": [
+          "preventive",
+          "prophylaxis"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "1-3 months",
+        "order": 2,
+        "search_terms": [
+          "one",
+          "three",
+          "months"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "headache duration reviewed",
+        "order": 3,
+        "search_terms": [
+          "duration",
+          "how long"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no medication overuse reported if applicable",
+        "order": 3,
+        "search_terms": [
+          "overuse",
+          "medication"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "headache diary reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "diary",
+          "headache log"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "lifestyle modification discussed if applicable",
+        "order": 3,
+        "search_terms": [
+          "lifestyle",
+          "modification"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "headache severity reviewed",
+        "order": 4,
+        "search_terms": [
+          "severity",
+          "intensity"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "blood pressure recorded if measured",
+        "order": 4,
+        "search_terms": [
+          "blood",
+          "pressure",
+          "BP"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "acute treatment plan documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "acute",
+          "treatment"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no new-onset vomiting reported if applicable",
+        "order": 4,
+        "search_terms": [
+          "vomiting"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "aura symptoms reviewed",
+        "order": 5,
+        "search_terms": [
+          "aura",
+          "visual"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 5,
+        "search_terms": [
+          "referral",
+          "neurologist"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "fundoscopy documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "fundoscopy",
+          "optic"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-follow_up-5",
+        "group": "follow_up",
+        "chip_text": "telemedicine option discussed if available",
+        "order": 5,
+        "search_terms": [
+          "telemedicine",
+          "virtual"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "trigger pattern reviewed",
+        "order": 6,
+        "search_terms": [
+          "trigger",
+          "pattern"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "abortive therapy plan documented if clinician decided",
+        "order": 6,
+        "search_terms": [
+          "abortive",
+          "therapy"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "functional impact documented",
+        "order": 7,
+        "search_terms": [
+          "functional",
+          "impact",
+          "work"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-plan_phrases-7",
+        "group": "plan_phrases",
+        "chip_text": "bridge therapy documented if clinician decided",
+        "order": 7,
+        "search_terms": [
+          "bridge",
+          "therapy"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "medication use reviewed",
+        "order": 8,
+        "search_terms": [
+          "medication",
+          "use",
+          "triptan"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-plan_phrases-8",
+        "group": "plan_phrases",
+        "chip_text": "vitamin or supplement plan documented if clinician decided",
+        "order": 8,
+        "search_terms": [
+          "vitamin",
+          "supplement"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "acute treatment response reviewed",
+        "order": 9,
+        "search_terms": [
+          "acute",
+          "treatment",
+          "response"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "preventive treatment reviewed if applicable",
+        "order": 10,
+        "search_terms": [
+          "preventive",
+          "prophylaxis"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-11",
+        "group": "symptoms",
+        "chip_text": "menstrual relation reviewed if relevant",
+        "order": 11,
+        "search_terms": [
+          "menstrual",
+          "period"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-12",
+        "group": "symptoms",
+        "chip_text": "associated symptoms reviewed",
+        "order": 12,
+        "search_terms": [
+          "associated",
+          "symptoms"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-migraine-followup-symptoms-13",
+        "group": "symptoms",
+        "chip_text": "number of acute medication days per month reviewed",
+        "order": 13,
+        "search_terms": [
+          "medication",
+          "days",
+          "month"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "neuro-neuropathy-followup",
+    "specialty_id": "Neurology",
+    "chips": [
+      {
+        "chip_id": "neuro-neuropathy-followup-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "neuropathy follow-up",
+        "order": 1,
+        "search_terms": [
+          "neuropathy",
+          "followup"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "sensation documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "sensation",
+          "monofilament"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-investigations-1",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "blood",
+          "B12",
+          "glucose"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "medication plan documented if clinician decided",
+        "order": 1,
+        "search_terms": [
+          "medication",
+          "gabapentin",
+          "pregabalin"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up documented if arranged",
+        "order": 1,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "sensory symptoms reviewed",
+        "order": 2,
+        "search_terms": [
+          "sensory",
+          "numbness"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "vibration sense documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "vibration",
+          "tuning fork"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-investigations-2",
+        "group": "investigations",
+        "chip_text": "HbA1c reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "HbA1c",
+          "diabetes"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "pain management discussed if applicable",
+        "order": 2,
+        "search_terms": [
+          "pain",
+          "management"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "3-6 months",
+        "order": 2,
+        "search_terms": [
+          "three",
+          "six",
+          "months"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "pain or burning symptoms reviewed",
+        "order": 3,
+        "search_terms": [
+          "pain",
+          "burning"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "reflexes documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "reflexes",
+          "DTR",
+          "ankle"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-investigations-3",
+        "group": "investigations",
+        "chip_text": "nerve conduction study report reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "NCS",
+          "nerve conduction"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "foot care education documented if relevant",
+        "order": 3,
+        "search_terms": [
+          "foot",
+          "care"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "6-12 months if stable",
+        "order": 3,
+        "search_terms": [
+          "six",
+          "twelve",
+          "stable"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "distribution documented",
+        "order": 4,
+        "search_terms": [
+          "distribution",
+          "stocking"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "power documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "power",
+          "strength"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "referral",
+          "neurologist"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 4,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-investigations-4",
+        "group": "investigations",
+        "chip_text": "renal function reviewed if on neuropathic agents",
+        "order": 4,
+        "search_terms": [
+          "renal",
+          "kidney"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "progression documented",
+        "order": 5,
+        "search_terms": [
+          "progression",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "foot examination documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "foot",
+          "ulcer",
+          "inspection"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 5,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-follow_up-5",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 5,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "functional impact documented",
+        "order": 6,
+        "search_terms": [
+          "functional",
+          "impact"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "gait documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "gait",
+          "walking"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "dose titration plan documented if clinician decided",
+        "order": 6,
+        "search_terms": [
+          "dose",
+          "titration"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-follow_up-6",
+        "group": "follow_up",
+        "chip_text": "sooner if medication change",
+        "order": 6,
+        "search_terms": [
+          "medication",
+          "change"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "diabetes context reviewed if relevant",
+        "order": 7,
+        "search_terms": [
+          "diabetes",
+          "sugar"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-exam_findings-7",
+        "group": "exam_findings",
+        "chip_text": "ankle jerks documented if assessed",
+        "order": 7,
+        "search_terms": [
+          "ankle",
+          "jerk"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "B12 or thyroid context reviewed if relevant",
+        "order": 8,
+        "search_terms": [
+          "B12",
+          "thyroid",
+          "TSH"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "alcohol history reviewed if relevant",
+        "order": 9,
+        "search_terms": [
+          "alcohol"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "medication response reviewed",
+        "order": 10,
+        "search_terms": [
+          "medication",
+          "response"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-symptoms-11",
+        "group": "symptoms",
+        "chip_text": "sleep quality reviewed if affected by symptoms",
+        "order": 11,
+        "search_terms": [
+          "sleep",
+          "quality"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-neuropathy-followup-symptoms-12",
+        "group": "symptoms",
+        "chip_text": "mood reviewed if affected by symptoms",
+        "order": 12,
+        "search_terms": [
+          "mood",
+          "depression"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "neuro-numbness-tingling",
+    "specialty_id": "Neurology",
+    "chips": [
+      {
+        "chip_id": "neuro-numbness-tingling-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "numbness or tingling",
+        "order": 1,
+        "search_terms": [
+          "numbness",
+          "tingling"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no focal weakness reported if applicable",
+        "order": 1,
+        "search_terms": [
+          "focal",
+          "weakness"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "sensation documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "sensation",
+          "sensory"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "acute onset hemisensory loss",
+        "order": 1,
+        "search_terms": [
+          "acute",
+          "hemisensory"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-investigations-1",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "blood",
+          "labs",
+          "B12"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "1-2 weeks",
+        "order": 1,
+        "search_terms": [
+          "one",
+          "two",
+          "weeks"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "distribution documented",
+        "order": 2,
+        "search_terms": [
+          "distribution",
+          "location"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no bowel or bladder symptoms reported if relevant",
+        "order": 2,
+        "search_terms": [
+          "bowel",
+          "bladder"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "power documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "power",
+          "strength"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "rapidly ascending sensory change",
+        "order": 2,
+        "search_terms": [
+          "ascending",
+          "rapid"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-investigations-2",
+        "group": "investigations",
+        "chip_text": "imaging reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "imaging",
+          "MRI"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "2-4 weeks",
+        "order": 2,
+        "search_terms": [
+          "two",
+          "four",
+          "weeks"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "onset and duration documented",
+        "order": 3,
+        "search_terms": [
+          "onset",
+          "duration"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no trauma reported",
+        "order": 3,
+        "search_terms": [
+          "trauma"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "reflexes documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "reflexes",
+          "DTR"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "sensory level on trunk",
+        "order": 3,
+        "search_terms": [
+          "sensory",
+          "level"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-investigations-3",
+        "group": "investigations",
+        "chip_text": "previous neurology notes reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "neurology",
+          "previous"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "referral"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "progression documented",
+        "order": 4,
+        "search_terms": [
+          "progression",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no rash or skin changes reported if relevant",
+        "order": 4,
+        "search_terms": [
+          "rash",
+          "skin"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "gait documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "gait"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "associated motor weakness",
+        "order": 4,
+        "search_terms": [
+          "motor",
+          "weakness"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 4,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-investigations-4",
+        "group": "investigations",
+        "chip_text": "vitamin B12 levels reviewed if ordered",
+        "order": 4,
+        "search_terms": [
+          "B12",
+          "vitamin"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "weakness reviewed",
+        "order": 5,
+        "search_terms": [
+          "weakness"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "coordination documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "coordination"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no skin lesions reported if relevant",
+        "order": 5,
+        "search_terms": [
+          "skin",
+          "lesions"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "analgesic plan documented if clinician decided",
+        "order": 5,
+        "search_terms": [
+          "analgesic",
+          "pain"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "pain reviewed",
+        "order": 6,
+        "search_terms": [
+          "pain"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "cranial nerves documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "cranial"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "functional impact documented",
+        "order": 7,
+        "search_terms": [
+          "functional",
+          "impact"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-exam_findings-7",
+        "group": "exam_findings",
+        "chip_text": "temperature sensation documented if assessed",
+        "order": 7,
+        "search_terms": [
+          "temperature"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "associated skin changes reviewed if relevant",
+        "order": 8,
+        "search_terms": [
+          "skin",
+          "rash"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-numbness-tingling-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "temperature or color change reviewed if relevant",
+        "order": 9,
+        "search_terms": [
+          "temperature",
+          "color"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "neuro-seizure-followup",
+    "specialty_id": "Neurology",
+    "chips": [
+      {
+        "chip_id": "neuro-seizure-followup-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "seizure follow-up",
+        "order": 1,
+        "search_terms": [
+          "seizure",
+          "followup",
+          "epilepsy"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no new neurological deficit reported",
+        "order": 1,
+        "search_terms": [
+          "new",
+          "deficit"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "neurological screen documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "neurological",
+          "neuro"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "medication plan documented if clinician decided",
+        "order": 1,
+        "search_terms": [
+          "medication",
+          "AED",
+          "anticonvulsant"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up documented if arranged",
+        "order": 1,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "seizure frequency reviewed",
+        "order": 2,
+        "search_terms": [
+          "frequency",
+          "how often"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no seizure-related injury reported if applicable",
+        "order": 2,
+        "search_terms": [
+          "injury",
+          "trauma"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "cranial nerve screen documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "cranial",
+          "nerve",
+          "CN"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "dose adjustment documented if clinician decided",
+        "order": 2,
+        "search_terms": [
+          "dose",
+          "adjustment"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "1-3 months",
+        "order": 2,
+        "search_terms": [
+          "one",
+          "three",
+          "months"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "last seizure date and context documented",
+        "order": 3,
+        "search_terms": [
+          "last",
+          "seizure",
+          "date"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no seizure clustering or convulsive emergency reported",
+        "order": 3,
+        "search_terms": [
+          "status",
+          "epilepticus"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "medication level reviewed if ordered",
+        "order": 3,
+        "search_terms": [
+          "level",
+          "drug",
+          "AED"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "referral",
+          "neurologist"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "3-6 months if stable",
+        "order": 3,
+        "search_terms": [
+          "three",
+          "six",
+          "stable"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "witnessed features reviewed",
+        "order": 4,
+        "search_terms": [
+          "witnessed",
+          "features"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "EEG report reviewed if available",
+        "order": 4,
+        "search_terms": [
+          "EEG",
+          "electroencephalogram"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 4,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "sooner if symptom change",
+        "order": 4,
+        "search_terms": [
+          "sooner",
+          "change"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no breakthrough seizure clusters reported if applicable",
+        "order": 4,
+        "search_terms": [
+          "breakthrough",
+          "cluster"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "aura or prodrome reviewed",
+        "order": 5,
+        "search_terms": [
+          "aura",
+          "prodrome"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "MRI report reviewed if available",
+        "order": 5,
+        "search_terms": [
+          "MRI",
+          "imaging"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "women of childbearing potential counselling discussed if relevant",
+        "order": 5,
+        "search_terms": [
+          "pregnancy",
+          "contraception"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-follow_up-5",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 5,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "post-ictal symptoms reviewed",
+        "order": 6,
+        "search_terms": [
+          "postictal",
+          "post-ictal"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "cardiac examination documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "cardiac",
+          "heart"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "emergency seizure plan reviewed if applicable",
+        "order": 6,
+        "search_terms": [
+          "seizure",
+          "action",
+          "plan"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-follow_up-6",
+        "group": "follow_up",
+        "chip_text": "sooner if medication change",
+        "order": 6,
+        "search_terms": [
+          "medication",
+          "change"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "adherence reviewed",
+        "order": 7,
+        "search_terms": [
+          "adherence",
+          "compliance",
+          "medication"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-plan_phrases-7",
+        "group": "plan_phrases",
+        "chip_text": "medication interaction check documented if performed",
+        "order": 7,
+        "search_terms": [
+          "interaction"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "side effects reviewed",
+        "order": 8,
+        "search_terms": [
+          "side",
+          "effects"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "sleep deprivation reviewed",
+        "order": 9,
+        "search_terms": [
+          "sleep",
+          "deprivation"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "alcohol or substance use reviewed if relevant",
+        "order": 10,
+        "search_terms": [
+          "alcohol",
+          "substance"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-symptoms-11",
+        "group": "symptoms",
+        "chip_text": "driving discussion documented if discussed by clinician",
+        "order": 11,
+        "search_terms": [
+          "driving",
+          "DVLA"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-seizure-followup-symptoms-12",
+        "group": "symptoms",
+        "chip_text": "employment or education impact reviewed if relevant",
+        "order": 12,
+        "search_terms": [
+          "work",
+          "school"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "neuro-stroke-tia-followup",
+    "specialty_id": "Neurology",
+    "chips": [
+      {
+        "chip_id": "neuro-stroke-tia-followup-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "stroke or TIA follow-up",
+        "order": 1,
+        "search_terms": [
+          "stroke",
+          "TIA",
+          "followup"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no new neurological symptoms reported",
+        "order": 1,
+        "search_terms": [
+          "new",
+          "neurological"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "blood pressure recorded if measured",
+        "order": 1,
+        "search_terms": [
+          "blood",
+          "pressure",
+          "BP"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-investigations-1",
+        "group": "investigations",
+        "chip_text": "imaging report reviewed if available",
+        "order": 1,
+        "search_terms": [
+          "imaging",
+          "CT",
+          "MRI"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "medication plan documented if clinician decided",
+        "order": 1,
+        "search_terms": [
+          "medication",
+          "antiplatelet",
+          "statin"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "follow-up documented if arranged",
+        "order": 1,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "residual symptoms reviewed",
+        "order": 2,
+        "search_terms": [
+          "residual",
+          "symptoms"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no transient symptoms since last review reported if applicable",
+        "order": 2,
+        "search_terms": [
+          "transient",
+          "TIA"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "neurological screen documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "neurological",
+          "neuro"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-investigations-2",
+        "group": "investigations",
+        "chip_text": "previous discharge summary reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "discharge",
+          "summary"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "risk factor management discussed if applicable",
+        "order": 2,
+        "search_terms": [
+          "risk",
+          "factor"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "1-3 months",
+        "order": 2,
+        "search_terms": [
+          "one",
+          "three",
+          "months"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "speech symptoms reviewed",
+        "order": 3,
+        "search_terms": [
+          "speech",
+          "dysarthria",
+          "aphasia"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no falls reported if relevant",
+        "order": 3,
+        "search_terms": [
+          "falls"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "gait and function documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "gait",
+          "function",
+          "mobility"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-investigations-3",
+        "group": "investigations",
+        "chip_text": "lipid profile reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "lipid",
+          "cholesterol"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "referral",
+          "neurology",
+          "rehab"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "3-6 months",
+        "order": 3,
+        "search_terms": [
+          "three",
+          "six",
+          "months"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "vision symptoms reviewed",
+        "order": 4,
+        "search_terms": [
+          "vision",
+          "visual"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "speech assessment documented if relevant",
+        "order": 4,
+        "search_terms": [
+          "speech"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-investigations-4",
+        "group": "investigations",
+        "chip_text": "medication list reviewed if available",
+        "order": 4,
+        "search_terms": [
+          "medication",
+          "list"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "secondary prevention plan documented if clinician decided",
+        "order": 4,
+        "search_terms": [
+          "secondary",
+          "prevention"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "sooner if new symptoms",
+        "order": 4,
+        "search_terms": [
+          "sooner",
+          "new"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no new focal weakness reported",
+        "order": 4,
+        "search_terms": [
+          "focal",
+          "weakness"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "motor symptoms reviewed",
+        "order": 5,
+        "search_terms": [
+          "motor",
+          "weakness"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "cardiac auscultation documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "cardiac",
+          "heart"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-investigations-5",
+        "group": "investigations",
+        "chip_text": "ECG reviewed if performed",
+        "order": 5,
+        "search_terms": [
+          "ECG",
+          "EKG"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "lifestyle modification discussed if applicable",
+        "order": 5,
+        "search_terms": [
+          "lifestyle",
+          "diet",
+          "exercise"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-follow_up-5",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 5,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "functional level reviewed",
+        "order": 6,
+        "search_terms": [
+          "functional",
+          "ADL"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "lipid panel reviewed if measured",
+        "order": 6,
+        "search_terms": [
+          "lipid",
+          "cholesterol"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-investigations-6",
+        "group": "investigations",
+        "chip_text": "blood glucose reviewed if measured",
+        "order": 6,
+        "search_terms": [
+          "glucose",
+          "sugar"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "smoking cessation discussed if relevant",
+        "order": 6,
+        "search_terms": [
+          "smoking",
+          "cessation"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "medication adherence discussed",
+        "order": 7,
+        "search_terms": [
+          "adherence",
+          "compliance"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "risk factor context reviewed",
+        "order": 8,
+        "search_terms": [
+          "risk",
+          "factor",
+          "BP",
+          "cholesterol"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "mood and emotional wellbeing reviewed",
+        "order": 9,
+        "search_terms": [
+          "mood",
+          "depression",
+          "anxiety"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "swallowing reviewed if relevant",
+        "order": 10,
+        "search_terms": [
+          "swallowing",
+          "dysphagia"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-stroke-tia-followup-symptoms-11",
+        "group": "symptoms",
+        "chip_text": "driving discussion documented if discussed by clinician",
+        "order": 11,
+        "search_terms": [
+          "driving",
+          "DVLA"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "neuro-tremor",
+    "specialty_id": "Neurology",
+    "chips": [
+      {
+        "chip_id": "neuro-tremor-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "tremor",
+        "order": 1,
+        "search_terms": [
+          "tremor",
+          "shaking"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no new neurological symptoms reported",
+        "order": 1,
+        "search_terms": [
+          "new",
+          "neurological"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "neurological exam documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "neurological",
+          "neuro"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-investigations-1",
+        "group": "investigations",
+        "chip_text": "thyroid function reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "thyroid",
+          "TSH"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "3-6 months",
+        "order": 1,
+        "search_terms": [
+          "three",
+          "six",
+          "months"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "location and distribution documented",
+        "order": 2,
+        "search_terms": [
+          "location",
+          "distribution"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no weakness reported if applicable",
+        "order": 2,
+        "search_terms": [
+          "weakness"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "tremor amplitude documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "amplitude"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-investigations-2",
+        "group": "investigations",
+        "chip_text": "copper studies reviewed if clinically indicated",
+        "order": 2,
+        "search_terms": [
+          "copper",
+          "Wilson"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "medication plan documented if clinician decided",
+        "order": 2,
+        "search_terms": [
+          "medication",
+          "treatment"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "6-12 months if stable",
+        "order": 2,
+        "search_terms": [
+          "six",
+          "twelve",
+          "stable"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "rest versus action tremor context documented",
+        "order": 3,
+        "search_terms": [
+          "rest",
+          "action",
+          "intention"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no gait difficulty reported if applicable",
+        "order": 3,
+        "search_terms": [
+          "gait",
+          "walking"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "tremor frequency documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "frequency"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-investigations-3",
+        "group": "investigations",
+        "chip_text": "imaging reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "imaging",
+          "MRI"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "referral",
+          "neurologist"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "onset and duration documented",
+        "order": 4,
+        "search_terms": [
+          "onset",
+          "duration"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "coordination documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "coordination",
+          "cerebellar"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 4,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no resting tremor of concern reported if relevant",
+        "order": 4,
+        "search_terms": [
+          "resting",
+          "tremor"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "progression documented",
+        "order": 5,
+        "search_terms": [
+          "progression",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "gait documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "gait",
+          "walking"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "beta-blocker plan documented if clinician decided",
+        "order": 5,
+        "search_terms": [
+          "beta",
+          "blocker",
+          "propranolol"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "functional impact documented",
+        "order": 6,
+        "search_terms": [
+          "functional",
+          "impact",
+          "writing"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "writing or spiral sample documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "writing",
+          "spiral"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "lifestyle modification discussed if applicable",
+        "order": 6,
+        "search_terms": [
+          "lifestyle",
+          "caffeine"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "medication or caffeine context reviewed",
+        "order": 7,
+        "search_terms": [
+          "medication",
+          "caffeine"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-exam_findings-7",
+        "group": "exam_findings",
+        "chip_text": "rigidity documented if assessed",
+        "order": 7,
+        "search_terms": [
+          "rigidity",
+          "tone"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "family history reviewed if relevant",
+        "order": 8,
+        "search_terms": [
+          "family",
+          "history"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-exam_findings-8",
+        "group": "exam_findings",
+        "chip_text": "bradykinesia documented if assessed",
+        "order": 8,
+        "search_terms": [
+          "bradykinesia",
+          "slow"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "alcohol response reviewed if relevant",
+        "order": 9,
+        "search_terms": [
+          "alcohol"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-exam_findings-9",
+        "group": "exam_findings",
+        "chip_text": "tongue tremor documented if assessed",
+        "order": 9,
+        "search_terms": [
+          "tongue"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "associated neurological symptoms reviewed",
+        "order": 10,
+        "search_terms": [
+          "other",
+          "symptoms"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-symptoms-11",
+        "group": "symptoms",
+        "chip_text": "handwriting change reviewed if relevant",
+        "order": 11,
+        "search_terms": [
+          "handwriting",
+          "writing"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-tremor-symptoms-12",
+        "group": "symptoms",
+        "chip_text": "voice or head tremor reviewed if relevant",
+        "order": 12,
+        "search_terms": [
+          "voice",
+          "head"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "neuro-weakness",
+    "specialty_id": "Neurology",
+    "chips": [
+      {
+        "chip_id": "neuro-weakness-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "weakness",
+        "order": 1,
+        "search_terms": [
+          "weakness",
+          "limb weakness"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no seizure reported",
+        "order": 1,
+        "search_terms": [
+          "seizure"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "neurological examination documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "neurological",
+          "neuro"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "acute onset unilateral weakness",
+        "order": 1,
+        "search_terms": [
+          "acute",
+          "unilateral"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-investigations-1",
+        "group": "investigations",
+        "chip_text": "imaging reviewed if available",
+        "order": 1,
+        "search_terms": [
+          "imaging",
+          "MRI",
+          "CT"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "1-2 weeks",
+        "order": 1,
+        "search_terms": [
+          "one",
+          "two",
+          "weeks"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "onset documented",
+        "order": 2,
+        "search_terms": [
+          "onset",
+          "acute",
+          "gradual"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no headache reported if relevant",
+        "order": 2,
+        "search_terms": [
+          "headache"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "power documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "power",
+          "strength",
+          "MRC"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "facial droop or speech difficulty",
+        "order": 2,
+        "search_terms": [
+          "facial",
+          "speech"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-investigations-2",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 2,
+        "search_terms": [
+          "blood",
+          "labs",
+          "tests"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "referral or escalation documented if clinician decided",
+        "order": 2,
+        "search_terms": [
+          "referral",
+          "escalation"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "2-4 weeks",
+        "order": 2,
+        "search_terms": [
+          "two",
+          "four",
+          "weeks"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "distribution documented",
+        "order": 3,
+        "search_terms": [
+          "distribution",
+          "pattern"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no trauma reported",
+        "order": 3,
+        "search_terms": [
+          "trauma",
+          "injury"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "reflexes documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "reflexes",
+          "DTR"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "rapidly progressive weakness",
+        "order": 3,
+        "search_terms": [
+          "rapid",
+          "progressive"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-investigations-3",
+        "group": "investigations",
+        "chip_text": "previous neurology notes reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "neurology",
+          "previous"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 3,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "progression documented",
+        "order": 4,
+        "search_terms": [
+          "progression",
+          "worsening"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no fever reported",
+        "order": 4,
+        "search_terms": [
+          "fever"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "tone documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "tone",
+          "spasticity"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "bowel or bladder involvement",
+        "order": 4,
+        "search_terms": [
+          "bowel",
+          "bladder"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 4,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "fluctuation pattern reviewed",
+        "order": 5,
+        "search_terms": [
+          "fluctuation",
+          "variable"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no falls reported if applicable",
+        "order": 5,
+        "search_terms": [
+          "falls"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "sensation documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "sensation",
+          "sensory"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "sensory level on trunk",
+        "order": 5,
+        "search_terms": [
+          "sensory",
+          "level"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "associated sensory symptoms reviewed",
+        "order": 6,
+        "search_terms": [
+          "sensory",
+          "numbness"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "coordination documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "coordination",
+          "cerebellar"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "headache with focal deficit",
+        "order": 6,
+        "search_terms": [
+          "headache",
+          "deficit"
+        ],
+        "tags": [
+          "neurology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "speech symptoms reviewed",
+        "order": 7,
+        "search_terms": [
+          "speech",
+          "dysarthria"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-exam_findings-7",
+        "group": "exam_findings",
+        "chip_text": "gait documented if assessed",
+        "order": 7,
+        "search_terms": [
+          "gait",
+          "walking"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "vision symptoms reviewed",
+        "order": 8,
+        "search_terms": [
+          "vision",
+          "visual"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-exam_findings-8",
+        "group": "exam_findings",
+        "chip_text": "cranial nerves documented if assessed",
+        "order": 8,
+        "search_terms": [
+          "cranial",
+          "nerves",
+          "CN"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "pain reviewed",
+        "order": 9,
+        "search_terms": [
+          "pain"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      },
+      {
+        "chip_id": "neuro-weakness-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "functional impact documented",
+        "order": 10,
+        "search_terms": [
+          "functional",
+          "daily"
+        ],
+        "tags": [
+          "neurology"
+        ]
+      }
+    ]
+  },
+  {
     "workflow_id": "obgyn-antenatal-followup",
     "specialty_id": "OB/GYN",
     "chips": [
