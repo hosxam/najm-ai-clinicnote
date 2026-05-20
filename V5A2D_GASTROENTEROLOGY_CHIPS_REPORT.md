@@ -3,57 +3,46 @@
 **Date:** 2026-05-20
 
 ## Files Created
-- `data_csv_working/workflow_chips_gastroenterology.csv` — 361 rows
-- `V5A2D_GASTROENTEROLOGY_CHIPS_AUDIT.md` — audit
-- `scripts/generate_gastro_chips.py` — generator
-- `scripts/check_gastro_chips_safety.py` — safety checker
-- `scripts/merge_gastro_chips.py` — merge
-- `scripts/fix_gastro_chips.py` — false-positive fixes
-- `scripts/add_extra_gastro_chips.py` — extra chips
+- `data_csv_working/workflow_chips_gastroenterology.csv` — 348 rows
+- `V5A2D_GASTROENTEROLOGY_CHIPS_AUDIT.md`
+- `scripts/generate_gastro_chips_v2.py`, `scripts/check_gastro_chips_safety.py`
+- `scripts/merge_gastro_chips.py`, `scripts/add_extra_gastro_v2.py`
 
 ## Files Modified
-- `data_csv_working/workflow_chips.csv` — 361 appended (4,199 → 4,560)
-- `data/workflow_chips.json` — regenerated (130 groups, 4,560 chips)
+- `data_csv_working/workflow_chips.csv` — 348 appended (4,199 → 4,547)
+- `data/workflow_chips.json` — regenerated (130 groups, 4,547 chips)
 - `GENERATED_CLINICAL_DATA.js` — regenerated (3,542 KB)
 
-## Chips Added
+## Chips by Workflow
 
 | Workflow | Chips | Key Content |
 |----------|-------|-------------|
-| gastro-gerd | 40 | reflux, heartburn, triggers, red flags, PPI plan |
-| gastro-abdominal-pain | 40 | pain character, peritoneal red flags, imaging |
-| gastro-ibs-symptoms | 38 | bowel habit, bloating, red flags, FODMAP |
-| gastro-constipation | 36 | stool consistency, straining, red flags |
-| gastro-diarrhea | 37 | frequency, travel, IBD/red flags |
-| gastro-rectal-bleeding | 36 | blood amount/color, family history, colonoscopy |
-| gastro-liver-enzyme-review | 32 | LFT, alcohol, hepatitis, imaging |
-| gastro-jaundice-documentation | 35 | bilirubin, cholangitis, liver failure |
-| gastro-dysphagia | 35 | solids/liquids, progressive, OGD referral |
-| gastro-post-endoscopy-followup | 32 | findings, histology, surveillance interval |
-| **Total** | **361** | |
-
-## Chip Totals
-
-| Metric | Before | After | Change |
-|--------|--------|-------|--------|
-| Total chips | 4,199 | 4,560 | +361 |
-| Workflows with chips | 120 | 130 | +10 |
-| Gastroenterology covered | 0 | 10 | +10 |
+| gastro-gerd | 42 | reflux, heartburn, H. pylori, dysphagia/odynophagia red flags |
+| gastro-abdominal-pain | 39 | location/character, peritoneal signs, urinalysis, imaging |
+| gastro-ibs-symptoms | 35 | bowel habit, FODMAP, stool tests, red flags |
+| gastro-constipation | 33 | stool frequency, straining, rectal exam, red flags |
+| gastro-diarrhea | 33 | duration, travel, hydration, stool cultures |
+| gastro-rectal-bleeding | 33 | colour/amount, CBC, colonoscopy, no malignancy |
+| gastro-liver-enzyme-review | 35 | LFT trend, alcohol, hepatitis, ultrasound |
+| gastro-jaundice-documentation | 35 | bilirubin, imaging, no obstructive wording |
+| gastro-dysphagia | 32 | solids/liquids, OGD referral, red flags |
+| gastro-post-endoscopy-followup | 31 | findings review, histology, surveillance |
+| **Total** | **348** | |
 
 ## Safety
 
-11/11 checks PASS. No dosing, no mandatory endoscopy, no GI bleed pathway, no malignancy diagnosis, no treatment recs, no emergency wording.
+11/11 PASS. No dosing, no mandatory endoscopy, no GI bleed pathway, no malignancy diagnosis, no emergency wording.
 
 ## Validators
 
-- validateWorkingCsvData.js: 21 PASS (Gastroenterology: 361 chips)
-- validateClinicalData.js: 24,251 PASS, 71 FAIL (same pre-existing)
+- validateWorkingCsvData.js: 21 PASS (Gastro: 348)
+- validateClinicalData.js: 24,199 PASS, 71 FAIL (pre-existing staged)
 - All others: PASS
 
 ## Staged Warnings
 
-71 failures remain — same expected specialty history layout gaps. No validators weakened.
+71 failures remain — expected specialty history layout gaps. Not blocking.
 
 ## Next
 
-**V5A-2E**: Endocrinology workflow chips
+**V5A-2E**: Endocrinology (10 workflows)
