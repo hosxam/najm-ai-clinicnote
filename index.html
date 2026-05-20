@@ -20498,7 +20498,7 @@ var SD=(function(){
 
 
 
-function showPage(pageId){if(pageId==="calculators"&&!isCalculatorToolsEnabled())pageId="speed";var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open");if(pageId==="speed"){populateSpeedSpecialty()}if(pageId==="report"){initMedicalReportModule()}}
+function showPage(pageId){if(pageId==="calculators"&&!isCalculatorToolsEnabled())pageId="speed";var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open");if(pageId==="speed"){populateSpeedSpecialty();var sh=document.querySelectorAll(".v4-speed-output-hidden");for(var si=0;si<sh.length;si++){sh[si].classList.remove("v4-speed-output-hidden")}}if(pageId==="report"){initMedicalReportModule()}var speedHidden=document.querySelectorAll(".v4-speed-output-hidden");if(pageId!=="advanced-encounter"&&speedHidden.length){for(var si=0;si<speedHidden.length;si++){speedHidden[si].classList.remove("v4-speed-output-hidden")}}}
 
 
 
