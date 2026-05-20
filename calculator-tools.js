@@ -14,7 +14,13 @@
     { id: "pack_years", name: "Pack years" },
     { id: "mean_arterial_pressure", name: "Mean arterial pressure" },
     { id: "shock_index", name: "Shock index" },
-    { id: "mrc_dyspnea_scale", name: "MRC dyspnea scale" }
+    { id: "mrc_dyspnea_scale", name: "MRC dyspnea scale" },
+    { id: "nyha", name: "NYHA functional class" },
+    { id: "killip", name: "Killip classification" },
+    { id: "sirs", name: "SIRS criteria" },
+    { id: "qsofa", name: "qSOFA" },
+    { id: "fib4", name: "FIB-4 index" },
+    { id: "child_pugh", name: "Child-Pugh score" }
   ];
 
   function toPositiveNumber(value) {
@@ -241,6 +247,36 @@
       result = calculateShockIndex(byId("calc-shock-hr").value, byId("calc-shock-sbp").value);
     } else if (calculatorId === "mrc_dyspnea_scale") {
       result = classifyMRCDyspnea(byId("calc-mrc-grade").value);
+    } else if (calculatorId === "nyha") {
+      result = calculateNYHA(Number(byId("calc-nyha-grade").value));
+    } else if (calculatorId === "killip") {
+      result = calculateKillip(Number(byId("calc-killip-class").value));
+    } else if (calculatorId === "sirs") {
+      var _t=Number(byId("calc-sirs-temp").value)||undefined;
+      var _h=Number(byId("calc-sirs-hr").value)||undefined;
+      var _r=Number(byId("calc-sirs-rr").value)||undefined;
+      var _w=Number(byId("calc-sirs-wbc").value)||undefined;
+      result=calculateSIRS(_t,_h,_r,_w);
+    } else if (calculatorId === "qsofa") {
+      var _rr=Number(byId("calc-qsofa-rr").value)||undefined;
+      var _sbp=Number(byId("calc-qsofa-sbp").value)||undefined;
+      var _mental=byId("calc-qsofa-mental").value==="yes";
+      result=calculateQSOFA(_rr,_sbp,_mental);
+    } else if (calculatorId === "fib4") {
+      result = calculateFIB4(
+        Number(byId("calc-fib4-age").value),
+        Number(byId("calc-fib4-ast").value),
+        Number(byId("calc-fib4-alt").value),
+        Number(byId("calc-fib4-plt").value)
+      );
+    } else if (calculatorId === "child_pugh") {
+      result = calculateChildPugh(
+        Number(byId("calc-child-bili").value),
+        Number(byId("calc-child-alb").value),
+        Number(byId("calc-child-inr").value),
+        byId("calc-child-ascites").value,
+        byId("calc-child-encephalopathy").value
+      );
     } else {
       result = { ok: false, error: "Calculator is not available." };
     }
@@ -279,6 +315,56 @@
     document.execCommand("copy");
     document.body.removeChild(ta);
   }
+  // -- NYHA Functional Classification --
+  function calculateNYHA(grade) {
+    var grades = {1:'Class I: No limitation of physical activity.',2:'Class II: Slight limitation of physical activity.',3:'Class III: Marked limitation of physical activity.',4:'Class IV: Unable to carry on any physical activity without discomfort.'};
+    var g=Number(grade);
+    if(!g||g<1||g>4)return{ok:false,error:"Select NYHA grade (1-4)."};
+    return{ok:true,calculatorId:"nyha",value:g,text:"NYHA functional class: "+grades[g]+".",safetyNote:"NYHA class is a documentation tool. Does not establish diagnosis or treatment."};
+  }
+
+  // -- Killip Classification --
+  function calculateKillip(killipClass) {
+    var classes = {1:'Class I: No clinical signs of heart failure.',2:'Class II: Signs of heart failure.',3:'Class III: Acute pulmonary oedema.',4:'Class IV: Cardiogenic shock.'};
+    var k=Number(killipClass);
+    if(!k||k<1||k>4)return{ok:false,error:"Select Killip class (1-4)."};
+    return{ok:true,calculatorId:"killip",value:k,text:"Killip class: "+classes[k]+".",safetyNote:"Killip class documents clinical severity. Does not determine management."};
+  }
+
+  // -- SIRS Criteria --
+  function calculateSIRS(temp,hr,rr,wbc) {
+    var c=0; if(temp!==undefined&&(temp<36||temp>38))c++; if(hr!==undefined&&hr>90)c++; if(rr!==undefined&&rr>20)c++; if(wbc!==undefined&&(wbc<4||wbc>12))c++;
+    return{ok:true,calculatorId:"sirs",value:c,text:"SIRS criteria: "+c+"/4. "+(c>=2?"Two or more criteria present.":"Less than 2 criteria.")+" Clinician interpretation required.",safetyNote:"SIRS criteria are documentation aids. Do not determine sepsis management independently."};
+  }
+
+  // -- qSOFA --
+  function calculateQSOFA(rr,sbp,mentalStatus) {
+    var c=0; if(rr!==undefined&&rr>=22)c++; if(sbp!==undefined&&sbp<=100)c++; if(mentalStatus)c++;
+    return{ok:true,calculatorId:"qsofa",value:c,text:"qSOFA: "+c+"/3. "+(c>=2?"Higher risk of in-hospital mortality.":"Low qSOFA score.")+" Clinician interpretation required.",safetyNote:"qSOFA is a screening tool. Does not determine sepsis management. Clinical assessment required."};
+  }
+
+  // -- FIB-4 --
+  function calculateFIB4(age,ast,alt,plt) {
+    var a=Number(age),as=Number(ast),al=Number(alt),p=Number(plt);
+    if(!a||!as||!al||!p||as<=0||al<=0||p<=0)return{ok:false,error:"Enter age, AST, ALT, and platelets as positive numbers."};
+    var f=(a*as)/(p*Math.sqrt(al));
+    var cat=f<1.30?"Low probability of advanced fibrosis.":f>2.67?"Higher probability. Further evaluation indicated.":"Indeterminate range.";
+    return{ok:true,calculatorId:"fib4",value:f,text:"FIB-4: "+f.toFixed(2)+". "+cat,safetyNote:"FIB-4 is a non-invasive fibrosis index. Does not replace liver biopsy or clinical assessment."};
+  }
+
+  // -- Child-Pugh Score --
+  function calculateChildPugh(bilirubin,albumin,inr,ascites,encephalopathy) {
+    var bili=Number(bilirubin),alb=Number(albumin),inrVal=Number(inr);
+    if(isNaN(bili)||isNaN(alb)||isNaN(inrVal))return{ok:false,error:"Enter bilirubin, albumin, and INR."};
+    var bPts=bili<=2?1:bili<=3?2:3; var aPts=alb>=3.5?1:alb>=2.8?2:3;
+    var iPts=inrVal<1.7?1:inrVal<2.3?2:3;
+    var ascPts=ascites==="none"?1:ascites==="mild"?2:3;
+    var encPts=encephalopathy==="none"?1:encephalopathy==="grade1-2"?2:3;
+    var total=bPts+aPts+iPts+ascPts+encPts;
+    var cls=total<=6?"Child-Pugh A":total<=9?"Child-Pugh B":"Child-Pugh C";
+    return{ok:true,calculatorId:"child_pugh",value:total,text:"Child-Pugh: "+total+" ("+cls+").",safetyNote:"Child-Pugh score documents liver disease severity. Does not determine management. Clinical assessment required."};
+  }
+
 
   window.ClinicNoteCalculators = {
     calculators: calculators,
