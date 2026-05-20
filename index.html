@@ -7294,7 +7294,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="example-block"><h4>Clinician-entered input</h4><pre>Adult with 3 days fever, dry cough, sore throat, nasal congestion, and myalgia. Autofill added relevant negatives: no shortness of breath, no chest pain, no confusion, no neck stiffness, no persistent vomiting. Temperature and throat/chest exam documented by clinician. Impression: Viral URTI. Plan entered by clinician: supportive care, fluids, antipyretic plan, red flags explained, follow-up if worsening or not improving.</pre></div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Adult with 3 days fever, dry cough, sore throat, nasal congestion, and myalgia. Autofill contributed respiratory red flag negatives: no shortness of breath, no chest pain, no confusion, no neck stiffness, no persistent vomiting. Temperature, throat, and chest exam findings entered by clinician. Impression: Viral URTI. Plan: supportive care discussed, fluids encouraged, red flags explained, follow-up if worsening.</pre></div>
 
 
 
@@ -7311,15 +7311,15 @@ footer a{color:#d9e4f2}
 
 <div class="example-block"><h4>Generated EMR output</h4><pre>Chief concern: Fever / URTI symptoms for 3 days.
 
-History: Fever with dry cough, sore throat, nasal congestion, and myalgia. Autofill contributed relevant negatives for respiratory distress, chest pain, confusion, neck stiffness, and persistent vomiting; clinician kept the applicable items.
+History: Fever with dry cough, sore throat, nasal congestion, and myalgia. Autofill prompted red flag review for respiratory distress, chest pain, confusion, neck stiffness, and persistent vomiting; clinician documented the applicable negatives.
 
-Examination documented: Temperature recorded. Throat examination documented. Chest examination documented by clinician.
+Examination: Temperature recorded. Throat examination findings entered. Chest auscultation entered.
 
-Clinician-entered impression: Viral URTI.
+Impression: Viral URTI (clinician-entered).
 
-Clinician-entered plan: Supportive care discussed, fluids encouraged, antipyretic plan documented by clinician.
+Plan: Supportive care discussed. Fluids encouraged. Antipyretic use reviewed by clinician. Return precautions given. Follow-up advised if symptoms worsen or new concerning symptoms develop.
 
-Safety-netting / follow-up: Red flags explained. Follow-up advised if symptoms worsen, persist, or new concerning symptoms develop.</pre></div>
+Safety-netting: Red flags explained to patient.</pre></div>
 
 
 
@@ -7409,7 +7409,7 @@ Safety-netting / follow-up: Red flags explained. Follow-up advised if symptoms w
 
 
 
-<div class="example-block"><h4>Clinician-entered input</h4><pre>Routine type 2 diabetes follow-up. Autofill added review prompts for glucose log, hypoglycemia, medication adherence, foot symptoms, BP, HbA1c, renal profile, lipid review, and screening status. Clinician entered: home readings reviewed, no hypoglycemia symptoms, no foot ulcers, monofilament sensation documented, HbA1c: [clinician-entered value], BP reviewed. Impression: Diabetes follow-up, stable. Plan entered by clinician: medication review completed, lifestyle counseling reinforced, follow-up in 3 months.</pre></div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Routine type 2 diabetes follow-up. Autofill prompted review of glucose log, hypoglycemia episodes, medication adherence, foot symptoms, BP, HbA1c, renal profile, lipid panel, and screening status. Clinician entered: home readings reviewed, no hypoglycemia symptoms, no foot ulcers, monofilament sensation intact, HbA1c: [clinician-entered value], BP reviewed. Impression: Diabetes follow-up, stable. Plan: medication adherence reinforced, lifestyle counseling discussed, follow-up in 3 months.</pre></div>
 
 
 
@@ -7424,13 +7424,13 @@ Safety-netting / follow-up: Red flags explained. Follow-up advised if symptoms w
 
 
 
-<div class="example-block"><h4>Generated SOAP output</h4><pre>SUBJECTIVE: Routine type 2 diabetes follow-up. Home glucose readings reviewed and discussed. No hypoglycemia symptoms reported. No foot ulcer symptoms reported. Medication adherence reviewed by clinician.
+<div class="example-block"><h4>Generated SOAP output</h4><pre>SUBJECTIVE: Routine type 2 diabetes follow-up. Home glucose readings reviewed. No hypoglycemia symptoms reported. No foot ulcer symptoms reported. Medication adherence reviewed by clinician.
 
-OBJECTIVE: Foot inspection documented. Monofilament sensation documented. BP reviewed. HbA1c: [clinician-entered value] reviewed and discussed by clinician. Autofill contributed renal/lipid/screening prompts for clinician review.
+OBJECTIVE: Foot inspection documented. Monofilament sensation intact. BP reviewed. HbA1c reviewed and discussed by clinician. Autofill prompted renal function, lipid panel, and screening status for clinician review.
 
-ASSESSMENT: Type 2 diabetes follow-up, stable by clinician impression.
+ASSESSMENT: Type 2 diabetes follow-up, stable (clinician-entered).
 
-PLAN: Medication review documented by clinician. Lifestyle counseling reinforced. Diabetes screening status reviewed where applicable. Follow-up arranged in 3 months.</pre></div>
+PLAN: Medication adherence reinforced. Lifestyle counseling discussed. Diabetes screening status reviewed. Follow-up arranged in 3 months.</pre></div>
 
 
 
@@ -7520,7 +7520,7 @@ PLAN: Medication review documented by clinician. Lifestyle counseling reinforced
 
 
 
-<div class="example-block"><h4>Clinician-entered input</h4><pre>Adult with 1 week lower back pain after lifting, worse with movement and prolonged sitting. Autofill added MSK red flag negatives: no bowel or bladder symptoms, no saddle anesthesia, no fever, no trauma, no progressive weakness. Clinician documented gait, lumbar tenderness, lower-limb power and sensation if assessed. Impression: Mechanical low back pain. Plan entered by clinician: activity modification, analgesia plan documented, physiotherapy referral arranged, red flags explained.</pre></div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Adult with 1 week lower back pain after lifting, worse with movement and prolonged sitting. Autofill prompted MSK red flag review: no bowel or bladder symptoms, no saddle anesthesia, no fever, no trauma, no progressive weakness. Gait, lumbar tenderness, and lower-limb neurovascular status documented by clinician. Impression: Mechanical low back pain. Plan: activity modification discussed, analgesia reviewed, physiotherapy referral arranged, red flags explained, follow-up arranged.</pre></div>
 
 
 
@@ -7537,13 +7537,15 @@ PLAN: Medication review documented by clinician. Lifestyle counseling reinforced
 
 <div class="example-block"><h4>Generated EMR output</h4><pre>Chief concern: Lower back pain for 1 week.
 
-History: Pain began after lifting and is worse with movement and prolonged sitting. Autofill contributed relevant red flag negatives; clinician kept no bowel/bladder symptoms, no saddle anesthesia, no fever, no trauma, and no progressive weakness.
+History: Pain began after lifting and is worse with movement and prolonged sitting. Autofill prompted red flag review; clinician documented no bowel/bladder symptoms, no saddle anesthesia, no fever, no trauma, and no progressive weakness.
 
-Examination documented: Gait documented. Lumbar tenderness documented. Lower-limb power and sensation documented if assessed.
+Examination: Gait documented. Lumbar spine tenderness elicited. Lower-limb power, sensation, and pulses documented by clinician.
 
-Clinician-entered impression: Mechanical low back pain.
+Impression: Mechanical low back pain (clinician-entered).
 
-Clinician-entered plan: Activity modification discussed. Analgesia plan documented by clinician. Physiotherapy referral arranged. Red flags explained. Follow-up arranged.</pre></div>
+Plan: Activity modification discussed. Analgesia reviewed by clinician. Physiotherapy referral arranged. Red flags explained. Follow-up arranged.
+
+Safety-netting: Worsening symptoms, new neurological symptoms, or persistent symptoms beyond expected timeframe to trigger re-evaluation.</pre></div>
 
 
 
@@ -7633,7 +7635,7 @@ Clinician-entered plan: Activity modification discussed. Analgesia plan document
 
 
 
-<div class="example-block"><h4>Clinician-entered input</h4><pre>Child with fever since yesterday and reduced activity. Parent reports drinking less but urine output maintained. Autofill added pediatric safety prompts: breathing difficulty, seizure, non-blanching rash, poor feeding, dehydration signs, and parent/guardian advice. Clinician documented general appearance, hydration, respiratory effort, throat/ear/chest findings if assessed. Impression: Viral febrile illness. Plan entered by clinician: parent advice, hydration/feeding advice, return precautions, follow-up if not improving.</pre></div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Child with fever since yesterday and reduced activity. Parent reports drinking less but urine output maintained. Autofill prompted pediatric safety review: breathing difficulty, seizure activity, non-blanching rash, feeding, and hydration status. General appearance, hydration assessment, respiratory effort, throat and ear examination entered by clinician. Impression: Viral febrile illness. Plan: parent reassurance, hydration and feeding advice discussed, return precautions given, follow-up if not improving.</pre></div>
 
 
 
@@ -7648,13 +7650,13 @@ Clinician-entered plan: Activity modification discussed. Analgesia plan document
 
 
 
-<div class="example-block"><h4>Generated SOAP output</h4><pre>SUBJECTIVE: Fever since yesterday with reduced activity. Parent reports reduced intake but urine output maintained. No breathing difficulty or seizure reported. Autofill contributed pediatric red flag prompts and parent/guardian context.
+<div class="example-block"><h4>Generated SOAP output</h4><pre>SUBJECTIVE: Fever since yesterday with reduced activity. Reduced intake reported but urine output maintained. No breathing difficulty or seizure activity reported. Autofill prompted pediatric red flag review and parent/guardian context.
 
-OBJECTIVE: General appearance documented by clinician. Hydration status documented. Respiratory effort documented. Throat, ear, chest, abdomen, and rash prompts available for clinician-assessed findings.
+OBJECTIVE: General appearance documented. Hydration status assessed. Respiratory effort documented. Throat and ear examination entered. Chest auscultation and abdominal examination entered by clinician.
 
-ASSESSMENT: Viral febrile illness by clinician impression.
+ASSESSMENT: Viral febrile illness (clinician-entered).
 
-PLAN: Parent/guardian advice documented. Hydration and feeding advice discussed by clinician. Return precautions explained. Follow-up arranged if symptoms persist, worsen, or new concerning features appear.</pre></div>
+PLAN: Parent reassurance given. Hydration and feeding advice discussed. Return precautions explained. Follow-up arranged if symptoms persist, worsen, or new concerning features develop.</pre></div>
 
 
 
@@ -7744,7 +7746,7 @@ PLAN: Parent/guardian advice documented. Hydration and feeding advice discussed 
 
 
 
-<div class="example-block"><h4>Clinician-entered input</h4><pre>Routine antenatal follow-up. Gestational age documented by clinician. Autofill added pregnancy review prompts for fetal movement, vaginal bleeding, abdominal pain, headache/visual symptoms, swelling, BP, urine dip, antenatal labs, and previous obstetric history. Clinician entered: fetal movement present, no PV bleeding, no abdominal pain, BP recorded, urine dip done if applicable, antenatal labs reviewed. Impression: Routine antenatal follow-up. Plan entered by clinician: antenatal counseling, warning symptoms discussed, next review arranged.</pre></div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Routine antenatal follow-up at documented gestational age. Autofill prompted review of fetal movement, vaginal bleeding, abdominal pain, headache or visual symptoms, edema, BP, urine dip, antenatal labs, and obstetric history. Clinician entered: fetal movement present, no vaginal bleeding, no abdominal pain, BP recorded, urine dip reviewed, antenatal labs reviewed. Impression: Routine antenatal follow-up. Plan: antenatal counseling discussed, warning symptoms reviewed, next follow-up arranged.</pre></div>
 
 
 
@@ -7761,13 +7763,15 @@ PLAN: Parent/guardian advice documented. Hydration and feeding advice discussed 
 
 <div class="example-block"><h4>Generated EMR output</h4><pre>Chief concern: Routine antenatal follow-up.
 
-History: Gestational age documented. Fetal movement present by clinician entry. No vaginal bleeding or abdominal pain reported. Autofill contributed pregnancy safety prompts for pre-eclampsia symptoms, fetal movement, bleeding, pain, and review of antenatal records.
+History: Gestational age documented. Fetal movement reported as present. No vaginal bleeding or abdominal pain. Autofill prompted pre-eclampsia symptom review (headache, visual changes, epigastric pain, edema), fetal movement assessment, bleeding review, and antenatal record check.
 
-Examination / results documented: BP recorded. Urine dip documented if done. Antenatal labs reviewed by clinician.
+Examination: BP recorded and reviewed. Urine dip reviewed by clinician. Antenatal labs reviewed.
 
-Clinician-entered impression: Routine antenatal follow-up.
+Impression: Routine antenatal follow-up (clinician-entered).
 
-Clinician-entered plan: Antenatal counseling documented. Warning symptoms discussed. Next review arranged.</pre></div>
+Plan: Antenatal counseling discussed. Warning symptoms reviewed with patient (pre-eclampsia signs, reduced fetal movements, bleeding, leaking, contractions). Next follow-up arranged.
+
+Safety-netting: When to present to maternity triage discussed.</pre></div>
 
 
 
