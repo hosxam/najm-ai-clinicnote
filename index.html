@@ -6140,6 +6140,40 @@ footer a:hover{color:var(--accent-primary)!important}
 .hero-stat:nth-child(3){animation:fadeUp .5s .3s ease both}
 .btn-primary:not(:hover),.btn.btn-primary:not(:hover),.nav-links a.nav-cta:not(:hover){animation:glowPulse 3s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media(max-width:768px){
+  html,body{max-width:100%;overflow-x:hidden}
+  nav{padding:0!important}
+  .nav-inner{padding:0 14px!important;gap:10px!important}
+  .nav-links{background:rgba(7,11,20,.98)!important;border:1px solid var(--bg-border-bright)!important;box-shadow:var(--shadow-lg)!important}
+  .nav-links a{min-height:46px!important}
+  .hero{padding:var(--space-12) var(--space-4) var(--space-8)!important}
+  .hero h1{font-size:clamp(1.9rem,10vw,2.55rem)!important}
+  .hero p{font-size:var(--text-base)!important}
+  .hero-stats{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:var(--space-3)!important}
+  .hero-stat{min-width:0!important;padding:var(--space-4) var(--space-3)!important}
+  .section,.container,main{max-width:100%;min-width:0}
+  .card-grid,.trust-grid,.product-row,.two-col,.calculator-grid,.v4-layout,.v4-wf-grid,.v4-hist-grid{grid-template-columns:1fr!important}
+  .btn,.v4-btn,.output-tab,.v4-out-tab,.chip,.v4-chip-btn{min-height:42px}
+  .hero-ctas .btn,.gen-row .btn,.output-actions .btn,.v4-output-actions .v4-btn,.calculator-actions .btn{width:100%;justify-content:center}
+  .output-header,.output-actions,.v4-output-tabs{overflow-x:auto;flex-wrap:nowrap!important;padding-bottom:2px}
+  .output-tab,.v4-out-tab,.v4-output-tabs button{white-space:nowrap;flex:0 0 auto}
+  .output-body,.v4-output-box,.calculator-result,.example-block pre,pre{max-width:100%;overflow:auto;word-break:normal;overflow-wrap:anywhere}
+  .v4-stepper{overflow-x:auto}
+  .v4-s-indicator{min-width:58px}
+  .v4-s-label{display:none}
+  .v4-sidebar{display:none}
+  .v4-nav{display:grid!important;grid-template-columns:1fr;gap:10px!important}
+  .v4-nav-right{display:grid!important;grid-template-columns:1fr;gap:10px!important}
+  .v4-calc-input-row{display:grid!important;grid-template-columns:1fr!important;align-items:stretch!important}
+  .v4-calc-input-row input,.v4-calc-input-row select{width:100%!important;margin-left:0!important}
+}
+@media(max-width:480px){
+  .hero-stats{grid-template-columns:1fr!important}
+  .brand-sub{display:none!important}
+  .brand-name{font-size:13px!important}
+  .brand-beta{font-size:8px!important;padding:3px 6px!important}
+  .card,.speed-mode-box,.output-card,.calculator-card,.v4-step-content{padding:14px!important}
+}
 
 </style>
 

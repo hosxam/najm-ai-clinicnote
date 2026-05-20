@@ -133,3 +133,10 @@ footer a:hover{color:var(--accent-primary)!important}
   .cta-row{display:grid;grid-template-columns:1fr;gap:10px}
   .btn{justify-content:center;text-align:center;min-height:44px;width:100%}
 }
+@media(max-width:480px){
+  h1{font-size:1.9rem}
+  .nav{align-items:flex-start}
+  .nav-links{width:100%;gap:6px}
+  .nav-links a{min-height:42px;display:inline-flex;align-items:center}
+  pre,.example pre{font-size:11px;padding:12px}
+}

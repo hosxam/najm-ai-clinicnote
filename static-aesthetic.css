@@ -100,3 +100,9 @@ h1,h2,h3{font-family:'Syne',sans-serif!important;color:var(--cn-text)!important}
 footer{background:var(--cn-surface)!important;border-top-color:var(--cn-border)!important;color:var(--cn-muted)!important}
 footer a{color:var(--cn-text-soft)!important}
 footer a:hover{color:var(--cn-primary)!important}
+@media(max-width:480px){
+  h1{font-size:1.9rem}
+  .nav-links a{min-height:42px;display:inline-flex;align-items:center}
+  .feedback-grid{grid-template-columns:1fr!important}
+  pre{font-size:11px}
+}
