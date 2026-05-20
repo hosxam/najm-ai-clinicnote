@@ -3848,97 +3848,98 @@ resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-symptoms-4,s
 resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-symptoms-5,symptoms,nocturnal symptoms reviewed,5,"nocturnal, night",respiratory
 resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-symptoms-6,symptoms,exercise symptoms reviewed,6,"exercise, exertion",respiratory
 resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-symptoms-7,symptoms,trigger pattern reviewed,7,"trigger, allergen",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-symptoms-8,symptoms,inhaler use reviewed,8,"inhaler, puffer",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-symptoms-8,symptoms,inhaler use reviewed,8,"inhaler, puffer, use",respiratory
 resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-symptoms-9,symptoms,recent exacerbation history reviewed,9,"exacerbation, flare, attack",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-symptoms-10,symptoms,occupational exposure reviewed if relevant,10,"occupational, work",respiratory
 resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-relevant_negatives-1,relevant_negatives,no severe breathlessness reported,1,"severe, breathlessness",respiratory
 resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-relevant_negatives-2,relevant_negatives,no chest pain reported,2,"chest, pain",respiratory
 resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-relevant_negatives-3,relevant_negatives,no hemoptysis reported,3,"hemoptysis, blood",respiratory
 resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-relevant_negatives-4,relevant_negatives,no syncope reported,4,"syncope, faint",respiratory
 resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-relevant_negatives-5,relevant_negatives,no recent hospital attendance reported if applicable,5,"hospital, ED, attendance",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, O2 sat, saturation",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-2,exam_findings,chest auscultation documented if assessed,2,"auscultation, chest, breath sounds",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-3,exam_findings,wheeze documented if assessed,3,"wheeze, expiratory",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-4,exam_findings,air entry documented if assessed,4,"air, entry",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-5,exam_findings,accessory muscle use documented if assessed,5,"accessory, muscles",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-6,exam_findings,peak flow documented if measured,6,"peak, flow, PEFR",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-7,exam_findings,oxygen saturation documented if measured,7,"oxygen, saturation, SpO2",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-8,exam_findings,respiratory rate documented if measured,8,"respiratory, rate, RR",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-investigations-1,investigations,peak flow diary reviewed if available,1,"peak, flow, diary",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-investigations-2,investigations,inhaler technique reviewed if assessed,2,"inhaler, technique",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-investigations-3,investigations,spirometry report reviewed if available,3,"spirometry, PFT",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-investigations-4,investigations,previous asthma action plan reviewed if available,4,"action, plan, asthma",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-1,exam_findings,respiratory rate documented if measured,1,"RR, respiratory, rate",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-2,exam_findings,oxygen saturation documented if measured,2,"oxygen, SpO2, saturations",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-3,exam_findings,work of breathing documented if assessed,3,"work, breathing, accessory",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-4,exam_findings,chest auscultation documented if assessed,4,"auscultation, chest, breath sounds",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-5,exam_findings,wheeze documented if assessed,5,"wheeze, expiratory",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-6,exam_findings,peak flow recorded if measured,6,"peak, flow, PEFR",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-7,exam_findings,air entry documented if assessed,7,"air, entry, bilateral",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-red_flags-1,red_flags,severe breathlessness,1,"severe, breathlessness","respiratory,high_safety"
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-red_flags-2,red_flags,reduced oxygen saturation if documented,2,"reduced, oxygen, desaturation","respiratory,high_safety"
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-red_flags-3,red_flags,inability to speak full sentences if assessed,3,"speak, sentences","respiratory,high_safety"
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-red_flags-4,red_flags,cyanosis,4,"cyanosis, blue","respiratory,high_safety"
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-red_flags-5,red_flags,altered consciousness,5,"consciousness, confusion","respiratory,high_safety"
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-investigations-1,investigations,peak flow recorded if measured,1,"peak, flow, PEFR",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-investigations-2,investigations,spirometry reviewed if available,2,"spirometry, PFT",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-investigations-3,investigations,oxygen saturation recorded if measured,3,"oxygen, SpO2",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-investigations-4,investigations,previous respiratory records reviewed if available,4,"previous, records",respiratory
 resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,"medication, inhaler, preventer",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-plan_phrases-3,plan_phrases,inhaler technique review documented if assessed,3,"inhaler, technique",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-plan_phrases-4,plan_phrases,asthma action plan reviewed if applicable,4,"action, plan",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-plan_phrases-5,plan_phrases,referral documented if clinician decided,5,"referral, respiratory",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-follow_up-1,follow_up,follow-up documented if arranged,1,"follow, up",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-follow_up-2,follow_up,1-3 months,2,"one, three, months",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-follow_up-3,follow_up,3-6 months if stable,3,"three, six",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-follow_up-4,follow_up,sooner if worsening,4,"sooner, worsening",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-follow_up-5,follow_up,PRN,5,"PRN, as needed",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-plan_phrases-2,plan_phrases,inhaler technique reviewed if discussed,2,"inhaler, technique",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-plan_phrases-3,plan_phrases,medication plan documented if clinician decided,3,"medication, inhaler, preventer",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-plan_phrases-4,plan_phrases,trigger advice documented if discussed,4,"trigger, advice",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-plan_phrases-5,plan_phrases,safety-netting documented if discussed,5,"safety, netting",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-plan_phrases-6,plan_phrases,follow-up documented if arranged,6,"follow, up",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-follow_up-1,follow_up,1-3 months,1,"one, three, months",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-follow_up-2,follow_up,3-6 months if stable,2,"three, six",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-follow_up-4,follow_up,PRN,4,"PRN, as needed",respiratory
 resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-1,symptoms,COPD follow-up,1,"COPD, followup",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-2,symptoms,cough reviewed,2,cough,respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-3,symptoms,sputum reviewed,3,"sputum, phlegm",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-4,symptoms,shortness of breath reviewed,4,"SOB, breathlessness",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-2,symptoms,dyspnea reviewed,2,"dyspnea, SOB, breathlessness",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-3,symptoms,cough and sputum reviewed,3,"cough, sputum, phlegm",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-4,symptoms,exacerbation history reviewed,4,"exacerbation, flare",respiratory
 resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-5,symptoms,exercise tolerance reviewed,5,"exercise, tolerance, MRC",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-6,symptoms,nocturnal symptoms reviewed,6,"nocturnal, night",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-7,symptoms,exacerbation history reviewed,7,"exacerbation, flare",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-8,symptoms,inhaler use reviewed,8,"inhaler, puffer",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-9,symptoms,smoking history reviewed if relevant,9,"smoking, cigarettes",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-relevant_negatives-1,relevant_negatives,no hemoptysis reported,1,"hemoptysis, blood",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-relevant_negatives-2,relevant_negatives,no chest pain reported,2,"chest, pain",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-relevant_negatives-3,relevant_negatives,no recent hospital attendance reported if applicable,3,"hospital, admission",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-relevant_negatives-4,relevant_negatives,no fever reported if relevant,4,fever,respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, O2 sat",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-6,symptoms,inhaler use reviewed,6,"inhaler, puffer",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-7,symptoms,smoking history reviewed,7,"smoking, cigarettes",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-8,symptoms,nocturnal symptoms reviewed,8,"nocturnal, night",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-9,symptoms,functional impact reviewed,9,"ADL, daily, function",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-relevant_negatives-1,relevant_negatives,no chest pain reported,1,"chest, pain",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-relevant_negatives-2,relevant_negatives,no hemoptysis reported,2,"hemoptysis, blood",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-relevant_negatives-3,relevant_negatives,no fever reported if relevant,3,fever,respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-1,exam_findings,oxygen saturation documented if measured,1,"oxygen, SpO2",respiratory
 resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-2,exam_findings,chest auscultation documented if assessed,2,"auscultation, chest",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-3,exam_findings,wheeze documented if assessed,3,wheeze,respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-4,exam_findings,air entry documented if assessed,4,"air, entry",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-5,exam_findings,oxygen saturation documented if measured,5,"oxygen, SpO2",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-6,exam_findings,respiratory rate documented if measured,6,"respiratory, rate",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-7,exam_findings,accessory muscle use documented if assessed,7,"accessory, muscles",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-8,exam_findings,peripheral oedema documented if assessed,8,"oedema, edema, ankle",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-investigations-1,investigations,spirometry report reviewed if available,1,"spirometry, PFT, FEV1",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-investigations-2,investigations,oxygen assessment reviewed if applicable,2,"oxygen, O2",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-investigations-3,investigations,previous discharge summary reviewed if available,3,"discharge, summary",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-investigations-4,investigations,smoking cessation support discussed if relevant,4,"smoking, cessation",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-3,exam_findings,respiratory rate documented if measured,3,"RR, respiratory",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-4,exam_findings,peripheral oedema documented if assessed,4,"oedema, ankle, JVP",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-5,exam_findings,accessory muscle use documented if assessed,5,"accessory, muscles",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-red_flags-1,red_flags,severe breathlessness at rest,1,"severe, breathlessness","respiratory,high_safety"
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-red_flags-2,red_flags,reduced oxygen saturation if documented,2,"reduced, oxygen","respiratory,high_safety"
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-red_flags-3,red_flags,cyanosis,3,cyanosis,"respiratory,high_safety"
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-red_flags-4,red_flags,signs of cor pulmonale if assessed,4,"cor, pulmonale, oedema","respiratory,high_safety"
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-investigations-1,investigations,spirometry reviewed if available,1,"spirometry, FEV1, PFT",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-investigations-2,investigations,previous respiratory records reviewed if available,2,"previous, records",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-investigations-3,investigations,oxygen assessment reviewed if applicable,3,"oxygen, O2",respiratory
 resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",respiratory
 resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,"medication, inhaler",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-plan_phrases-3,plan_phrases,pulmonary rehabilitation discussed if applicable,3,"pulmonary, rehab",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,"referral, respiratory",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-plan_phrases-3,plan_phrases,smoking cessation advice documented if discussed,3,"cessation, smoking",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-plan_phrases-4,plan_phrases,pulmonary rehabilitation discussed if applicable,4,"pulmonary, rehab",respiratory
 resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-plan_phrases-5,plan_phrases,vaccination history reviewed if relevant,5,"vaccination, flu, pneumonia",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-follow_up-1,follow_up,follow-up documented if arranged,1,"follow, up",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-follow_up-2,follow_up,3-6 months,2,"three, six, months",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-follow_up-3,follow_up,6-12 months if stable,3,"six, twelve",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-follow_up-4,follow_up,sooner if worsening,4,"sooner, worsening",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-follow_up-5,follow_up,PRN,5,"PRN, as needed",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-1,symptoms,chronic cough,1,"chronic, cough",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-plan_phrases-6,plan_phrases,follow-up documented if arranged,6,"follow, up",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-follow_up-1,follow_up,3-6 months,1,"three, six, months",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-follow_up-2,follow_up,6-12 months if stable,2,"six, twelve",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-follow_up-4,follow_up,PRN,4,"PRN, as needed",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-1,symptoms,chronic cough,1,"chronic, cough, persistent",respiratory
 resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-2,symptoms,duration documented,2,"duration, how long",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-3,symptoms,dry versus productive documented,3,"dry, productive, sputum",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-4,symptoms,timing and pattern reviewed,4,"timing, nocturnal, morning",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-5,symptoms,triggers reviewed,5,"trigger, asthma, reflux",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-6,symptoms,associated symptoms reviewed,6,"nasal, sinus, fever",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-7,symptoms,smoking history reviewed if relevant,7,"smoking, cigarettes",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-8,symptoms,medication history reviewed if relevant,8,"ACE, inhibitor",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-9,symptoms,impact on sleep reviewed,9,"sleep, quality",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-3,symptoms,dry or productive character documented,3,"dry, productive, sputum",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-4,symptoms,sputum context reviewed,4,"sputum, phlegm, color",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-5,symptoms,nocturnal or positional pattern reviewed,5,"nocturnal, positional, lying",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-6,symptoms,trigger or exposure context reviewed,6,"trigger, asthma, allergy",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-7,symptoms,reflux or postnasal drip context reviewed,7,"reflux, GORD, postnasal",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-8,symptoms,medication history reviewed if relevant,8,"ACE, inhibitor, medication",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-9,symptoms,smoking history reviewed if relevant,9,"smoking, cigarettes",respiratory
 resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-relevant_negatives-1,relevant_negatives,no hemoptysis reported,1,"hemoptysis, blood",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-relevant_negatives-2,relevant_negatives,no fever reported,2,fever,respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-relevant_negatives-3,relevant_negatives,no weight loss reported if relevant,3,"weight, loss",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-relevant_negatives-4,relevant_negatives,no shortness of breath reported if applicable,4,"SOB, breathlessness",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, O2 sat",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-exam_findings-2,exam_findings,chest auscultation documented if assessed,2,"auscultation, chest",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-exam_findings-3,exam_findings,oropharynx documented if assessed,3,"oropharynx, throat",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-exam_findings-4,exam_findings,nasal examination documented if relevant,4,"nasal, nose, postnasal",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-exam_findings-5,exam_findings,oxygen saturation documented if measured,5,"oxygen, SpO2",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-red_flags-1,red_flags,chronic cough red flags,1,"chronic, cough, red flags","respiratory,high_safety"
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-red_flags-2,red_flags,hemoptysis,2,"hemoptysis, blood","respiratory,high_safety"
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-red_flags-3,red_flags,unexplained weight loss,3,"weight, loss","respiratory,high_safety"
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-red_flags-4,red_flags,fever or night sweats,4,"fever, sweats, TB","respiratory,high_safety"
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-red_flags-5,red_flags,voice change or stridor,5,"voice, stridor","respiratory,high_safety"
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-red_flags-6,red_flags,smoker over 45 with new cough,6,"smoker, age, over 45","respiratory,high_safety"
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-investigations-1,investigations,CXR reviewed if performed,1,"CXR, chest, X-ray",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-investigations-2,investigations,spirometry reviewed if performed,2,spirometry,respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-investigations-3,investigations,previous imaging reviewed if available,3,imaging,respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-relevant_negatives-2,relevant_negatives,no weight loss reported,2,"weight, loss",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-relevant_negatives-3,relevant_negatives,no fever or night sweats reported,3,"fever, sweats, TB",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-exam_findings-1,exam_findings,chest auscultation documented if assessed,1,"auscultation, chest",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-exam_findings-2,exam_findings,oropharynx documented if assessed,2,"oropharynx, throat",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-exam_findings-3,exam_findings,nasal examination documented if relevant,3,"nasal, postnasal",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-exam_findings-4,exam_findings,oxygen saturation documented if measured,4,"oxygen, SpO2",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-red_flags-1,red_flags,hemoptysis,1,"hemoptysis, blood","respiratory,high_safety"
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-red_flags-2,red_flags,unexplained weight loss,2,"weight, loss","respiratory,high_safety"
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-red_flags-3,red_flags,fever or night sweats,3,"fever, sweats, TB","respiratory,high_safety"
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-red_flags-4,red_flags,voice change or stridor,4,"voice, stridor","respiratory,high_safety"
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-red_flags-5,red_flags,smoker over 45 with new cough,5,"smoker, age, 45","respiratory,high_safety"
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-red_flags-6,red_flags,persistent localized abnormality,6,"localized, focal","respiratory,high_safety"
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-investigations-1,investigations,chest imaging reviewed if available,1,"CXR, chest, X-ray, CT",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-investigations-2,investigations,spirometry reviewed if available,2,"spirometry, PFT",respiratory
 resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",respiratory
 resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",respiratory
 resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, respiratory",respiratory
@@ -3948,35 +3949,32 @@ resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-follow_up-2,foll
 resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",respiratory
 resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-follow_up-4,follow_up,PRN,4,"PRN, as needed",respiratory
 resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-1,symptoms,dyspnea,1,"dyspnea, SOB, breathlessness",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-2,symptoms,onset documented,2,"onset, acute, gradual",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-3,symptoms,duration and progression documented,3,"duration, progression",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-4,symptoms,exertional relation documented,4,"exertional, MRC, activity",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-5,symptoms,positional symptoms reviewed,5,"positional, orthopnea, PND",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-6,symptoms,associated symptoms reviewed,6,"cough, wheeze, chest",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-7,symptoms,nocturnal symptoms reviewed,7,"nocturnal, night",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-2,symptoms,onset and duration documented,2,"onset, duration, acute, gradual",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-3,symptoms,exertional versus rest symptoms documented,3,"exertional, rest, activity",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-4,symptoms,MRC dyspnea grade documented if assessed,4,"MRC, grade, scale",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-5,symptoms,orthopnea and PND reviewed,5,"orthopnea, PND, lying flat",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-6,symptoms,"cough, wheeze and chest pain reviewed",6,"cough, wheeze, chest, pain",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-7,symptoms,leg swelling reviewed,7,"leg, ankle, oedema",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-8,symptoms,nocturnal symptoms reviewed,8,"nocturnal, night",respiratory
 resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-relevant_negatives-1,relevant_negatives,no chest pain reported,1,"chest, pain",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-relevant_negatives-2,relevant_negatives,no hemoptysis reported,2,"hemoptysis, blood",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-relevant_negatives-3,relevant_negatives,no fever reported,3,fever,respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-relevant_negatives-4,relevant_negatives,no syncope reported,4,"syncope, faint",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-relevant_negatives-5,relevant_negatives,no ankle swelling reported if relevant,5,"ankle, oedema, edema",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, O2 sat, RR",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-2,exam_findings,chest auscultation documented if assessed,2,"auscultation, chest",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-3,exam_findings,wheeze or crackles documented if assessed,3,"wheeze, crackles, crepitations",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-4,exam_findings,air entry documented if assessed,4,"air, entry",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-5,exam_findings,oxygen saturation documented if measured,5,"oxygen, SpO2",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-6,exam_findings,respiratory rate documented if measured,6,"respiratory, rate",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-7,exam_findings,accessory muscle use documented if assessed,7,"accessory, muscles",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-8,exam_findings,peripheral oedema documented if assessed,8,"oedema, ankle, JVP",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-red_flags-1,red_flags,acute severe dyspnea,1,"acute, severe, respiratory distress","respiratory,high_safety"
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-red_flags-2,red_flags,stridor,2,"stridor, upper airway","respiratory,high_safety"
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-red_flags-3,red_flags,cyanosis,3,"cyanosis, blue","respiratory,high_safety"
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-red_flags-4,red_flags,oxygen saturation below baseline,4,"low, oxygen, desaturation","respiratory,high_safety"
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-red_flags-5,red_flags,signs of airway obstruction,5,"airway, obstruction","respiratory,high_safety"
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-relevant_negatives-2,relevant_negatives,no syncope reported,2,"syncope, faint",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-relevant_negatives-3,relevant_negatives,no hemoptysis reported,3,"hemoptysis, blood",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-relevant_negatives-4,relevant_negatives,no fever reported,4,fever,respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-1,exam_findings,oxygen saturation documented if measured,1,"oxygen, SpO2",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-2,exam_findings,respiratory rate documented if measured,2,"RR, respiratory",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-3,exam_findings,work of breathing documented if assessed,3,"work, breathing, accessory",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-4,exam_findings,chest auscultation documented if assessed,4,"auscultation, chest",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-5,exam_findings,peripheral oedema documented if assessed,5,"oedema, ankle, JVP",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-6,exam_findings,tracheal position documented if assessed,6,"trachea, deviation",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-red_flags-1,red_flags,severe respiratory distress,1,"severe, distress","respiratory,high_safety"
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-red_flags-2,red_flags,oxygen saturation below baseline,2,"low, oxygen, desaturation","respiratory,high_safety"
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-red_flags-3,red_flags,cyanosis,3,cyanosis,"respiratory,high_safety"
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-red_flags-4,red_flags,inability to speak full sentences,4,"speak, sentences","respiratory,high_safety"
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-red_flags-5,red_flags,stridor,5,"stridor, upper airway","respiratory,high_safety"
 resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-red_flags-6,red_flags,unilateral chest signs,6,"unilateral, pneumothorax, effusion","respiratory,high_safety"
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-investigations-1,investigations,CXR reviewed if performed,1,"CXR, chest, X-ray",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-investigations-2,investigations,ECG reviewed if performed,2,"ECG, EKG",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-investigations-3,investigations,blood tests reviewed if ordered,3,"blood, labs, BNP",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-investigations-4,investigations,previous imaging reviewed if available,4,imaging,respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-investigations-1,investigations,ECG reviewed if performed,1,"ECG, EKG",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-investigations-2,investigations,chest imaging reviewed if available,2,"CXR, chest, X-ray, CT",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-investigations-3,investigations,blood tests reviewed if ordered,3,"blood, labs, BNP, D-dimer",respiratory
 resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",respiratory
 resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",respiratory
 resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, respiratory, cardiology",respiratory
@@ -3986,217 +3984,217 @@ resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-follow_up-2,follow_up,2-4 we
 resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",respiratory
 resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-follow_up-4,follow_up,PRN,4,"PRN, as needed",respiratory
 resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-1,symptoms,wheeze,1,"wheeze, whistling",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-2,symptoms,onset documented,2,"onset, timing",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-3,symptoms,frequency documented,3,"frequency, how often",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-2,symptoms,duration documented,2,"duration, how long",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-3,symptoms,episodic pattern reviewed,3,"episodic, intermittent",respiratory
 resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-4,symptoms,triggers reviewed,4,"trigger, allergen, exercise",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-5,symptoms,associated dyspnea reviewed,5,"dyspnea, SOB",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-6,symptoms,nocturnal symptoms reviewed,6,"nocturnal, night",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-7,symptoms,temporal pattern documented,7,"pattern, episodic, persistent",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-8,symptoms,response to bronchodilator reviewed,8,"response, bronchodilator, inhaler",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-relevant_negatives-1,relevant_negatives,no stridor reported,1,"stridor, upper airway",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-relevant_negatives-2,relevant_negatives,no hemoptysis reported,2,"hemoptysis, blood",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-relevant_negatives-3,relevant_negatives,no chest pain reported,3,"chest, pain",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-relevant_negatives-4,relevant_negatives,no fever reported,4,fever,respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, O2 sat",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-2,exam_findings,chest auscultation documented if assessed,2,"auscultation, chest",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-3,exam_findings,wheeze character documented if assessed,3,"expiratory, inspiratory",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-4,exam_findings,air entry documented if assessed,4,"air, entry",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-5,exam_findings,respiratory rate documented if measured,5,"respiratory, rate",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-6,exam_findings,oxygen saturation documented if measured,6,"oxygen, SpO2",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-7,exam_findings,peak flow documented if measured,7,"peak, flow, PEFR",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-investigations-1,investigations,CXR reviewed if performed,1,"CXR, chest",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-investigations-2,investigations,peak flow diary reviewed if available,2,"peak, flow, diary",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-investigations-3,investigations,spirometry reviewed if performed,3,"spirometry, PFT",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-5,symptoms,cough and shortness of breath reviewed,5,"cough, SOB",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-6,symptoms,chest tightness reviewed,6,"chest, tightness",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-7,symptoms,inhaler use reviewed if relevant,7,"inhaler, puffer",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-8,symptoms,nocturnal symptoms reviewed,8,"nocturnal, night",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-relevant_negatives-1,relevant_negatives,no severe breathlessness reported,1,"severe, breathlessness",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-relevant_negatives-2,relevant_negatives,no chest pain reported,2,"chest, pain",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-relevant_negatives-3,relevant_negatives,no hemoptysis reported,3,"hemoptysis, blood",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-relevant_negatives-4,relevant_negatives,no stridor reported,4,"stridor, upper airway",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-1,exam_findings,respiratory rate documented if measured,1,"RR, respiratory",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-2,exam_findings,oxygen saturation documented if measured,2,"oxygen, SpO2",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-3,exam_findings,wheeze documented if assessed,3,"wheeze, expiratory, inspiratory",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-4,exam_findings,chest auscultation documented if assessed,4,"auscultation, chest",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-5,exam_findings,air entry documented if assessed,5,"air, entry",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-6,exam_findings,peak flow recorded if measured,6,"peak, flow, PEFR",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-red_flags-1,red_flags,severe breathlessness or respiratory distress,1,"severe, distress","respiratory,high_safety"
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-red_flags-2,red_flags,oxygen saturation below baseline,2,"low, oxygen","respiratory,high_safety"
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-red_flags-3,red_flags,silent chest,3,"silent, chest, no wheeze","respiratory,high_safety"
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-red_flags-4,red_flags,cyanosis,4,cyanosis,"respiratory,high_safety"
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-investigations-1,investigations,peak flow recorded if measured,1,"peak, flow, PEFR",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-investigations-2,investigations,spirometry reviewed if available,2,"spirometry, PFT",respiratory
 resp-wheeze,Respiratory / Pulmonology,resp-wheeze-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",respiratory
 resp-wheeze,Respiratory / Pulmonology,resp-wheeze-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,"medication, inhaler",respiratory
 resp-wheeze,Respiratory / Pulmonology,resp-wheeze-plan_phrases-3,plan_phrases,safety-netting documented if discussed,3,"safety, netting",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,"referral, respiratory",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",respiratory
 resp-wheeze,Respiratory / Pulmonology,resp-wheeze-follow_up-1,follow_up,1-2 weeks,1,"one, two, weeks",respiratory
 resp-wheeze,Respiratory / Pulmonology,resp-wheeze-follow_up-2,follow_up,2-4 weeks,2,"two, four, weeks",respiratory
 resp-wheeze,Respiratory / Pulmonology,resp-wheeze-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",respiratory
 resp-wheeze,Respiratory / Pulmonology,resp-wheeze-follow_up-4,follow_up,PRN,4,"PRN, as needed",respiratory
 resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-1,symptoms,pneumonia follow-up,1,"pneumonia, followup",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-2,symptoms,cough reviewed,2,cough,respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-3,symptoms,sputum reviewed,3,"sputum, phlegm",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-2,symptoms,symptom progress reviewed,2,"symptom, progress",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-3,symptoms,cough and sputum reviewed,3,"cough, sputum, phlegm",respiratory
 resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-4,symptoms,fever reviewed,4,"fever, temperature",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-5,symptoms,breathing reviewed,5,"breathing, SOB",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-6,symptoms,chest pain reviewed,6,"chest, pain, pleuritic",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-7,symptoms,energy level and function reviewed,7,"energy, functional",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-8,symptoms,medication adherence discussed,8,"adherence, antibiotics",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, O2 sat, RR",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-5,symptoms,dyspnea reviewed,5,"dyspnea, SOB",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-6,symptoms,functional recovery reviewed,6,"functional, recovery, energy",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-7,symptoms,medication and adherence context reviewed if relevant,7,"adherence, antibiotics",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-8,symptoms,appetite and hydration reviewed,8,"appetite, hydration",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-relevant_negatives-1,relevant_negatives,no worsening breathlessness reported,1,"worsening, breathlessness",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-relevant_negatives-2,relevant_negatives,no persistent fever reported,2,"persistent, fever",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-relevant_negatives-3,relevant_negatives,no hemoptysis reported,3,"hemoptysis, blood",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-exam_findings-1,exam_findings,oxygen saturation documented if measured,1,"oxygen, SpO2",respiratory
 resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-exam_findings-2,exam_findings,chest auscultation documented if assessed,2,"auscultation, chest",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-exam_findings-3,exam_findings,respiratory rate documented if measured,3,"respiratory, rate",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-exam_findings-4,exam_findings,oxygen saturation documented if measured,4,"oxygen, SpO2",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-investigations-1,investigations,CXR reviewed if performed,1,"CXR, chest",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-exam_findings-3,exam_findings,respiratory rate documented if measured,3,"RR, respiratory",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-exam_findings-4,exam_findings,temperature documented if measured,4,"temperature, fever",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-red_flags-1,red_flags,persistent or recurrent fever,1,"persistent, fever, recurrent","respiratory,high_safety"
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-red_flags-2,red_flags,worsening dyspnea,2,"worsening, dyspnea","respiratory,high_safety"
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-red_flags-3,red_flags,persistent focal chest signs,3,"focal, chest, signs","respiratory,high_safety"
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-red_flags-4,red_flags,incomplete resolution on imaging if performed,4,"incomplete, resolution","respiratory,high_safety"
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-investigations-1,investigations,chest imaging reviewed if available,1,"CXR, chest, X-ray",respiratory
 resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-investigations-2,investigations,blood tests reviewed if ordered,2,"blood, labs, CRP",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-investigations-3,investigations,discharge summary reviewed if available,3,"discharge, summary",respiratory
 resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",respiratory
 resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",respiratory
 resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-plan_phrases-3,plan_phrases,follow-up imaging documented if clinician decided,3,"follow, up, CXR",respiratory
 resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,"referral, respiratory",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-follow_up-1,follow_up,follow-up documented if arranged,1,"follow, up",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-follow_up-2,follow_up,4-6 weeks,2,"four, six, weeks",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-follow_up-3,follow_up,6-8 weeks if CXR follow-up needed,3,"six, eight, weeks",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-follow_up-4,follow_up,sooner if not improving,4,"sooner, worsening",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-follow_up-5,follow_up,PRN,5,"PRN, as needed",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-1,symptoms,sleep apnea symptoms,1,"sleep, apnea, OSA",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-2,symptoms,snoring reviewed,2,snoring,respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-3,symptoms,witnessed apnoeas reviewed,3,"apnoea, apnea, witnessed",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-4,symptoms,daytime sleepiness reviewed,4,"sleepiness, Epworth",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-5,symptoms,morning headache reviewed,5,"morning, headache",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-6,symptoms,nocturnal choking reviewed,6,"choking, gasping",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-7,symptoms,nocturia reviewed if relevant,7,nocturia,respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-8,symptoms,fatigue and concentration reviewed,8,"fatigue, concentration",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-relevant_negatives-1,relevant_negatives,no witnessed apnoea reported if applicable,1,"apnoea, witnessed",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-relevant_negatives-2,relevant_negatives,no excessive daytime sleepiness reported if applicable,2,"sleepiness, daytime",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-relevant_negatives-3,relevant_negatives,no morning headache reported,3,"morning, headache",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, BP",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-exam_findings-2,exam_findings,BMI documented if measured,2,"BMI, weight",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-exam_findings-3,exam_findings,neck circumference documented if measured,3,"neck, collar size",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-follow_up-1,follow_up,4-6 weeks,1,"four, six, weeks",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-follow_up-2,follow_up,6-8 weeks if imaging follow-up needed,2,"six, eight, CXR",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-follow_up-3,follow_up,sooner if not improving,3,"sooner, worsening",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-follow_up-4,follow_up,PRN,4,"PRN, as needed",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-1,symptoms,snoring,1,snoring,respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-2,symptoms,witnessed apneas reviewed,2,"apnea, apnoea, witnessed",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-3,symptoms,daytime sleepiness reviewed,3,"sleepiness, Epworth, drowsy",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-4,symptoms,morning headaches reviewed,4,"morning, headache",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-5,symptoms,concentration issues reviewed,5,"concentration, focus",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-6,symptoms,sleep quality reviewed,6,"sleep, quality, restless",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-7,symptoms,weight and BMI context reviewed if relevant,7,"weight, BMI, obesity",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-8,symptoms,nocturnal choking reviewed,8,"choking, gasping",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-relevant_negatives-1,relevant_negatives,no syncope reported,1,"syncope, faint",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-relevant_negatives-2,relevant_negatives,no acute respiratory distress reported,2,"acute, distress",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-relevant_negatives-3,relevant_negatives,no nocturnal seizures reported if applicable,3,"seizure, fits",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-exam_findings-1,exam_findings,BMI documented if measured,1,"BMI, weight, height",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-exam_findings-2,exam_findings,blood pressure documented if measured,2,"BP, blood, pressure",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-exam_findings-3,exam_findings,neck circumference documented if measured,3,"neck, collar",respiratory
 resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-exam_findings-4,exam_findings,oropharyngeal examination documented if assessed,4,"oropharyngeal, Mallampati",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-exam_findings-5,exam_findings,nasal examination documented if relevant,5,"nasal, obstruction",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-investigations-1,investigations,Epworth Sleepiness Scale score documented if assessed,1,"Epworth, ESS",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-red_flags-1,red_flags,severe daytime somnolence,1,"severe, somnolence","respiratory,high_safety"
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-red_flags-2,red_flags,observed apnoeas with desaturation,2,"apnea, desaturation","respiratory,high_safety"
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-red_flags-3,red_flags,respiratory failure signs if suspected,3,"respiratory, failure","respiratory,high_safety"
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-red_flags-4,red_flags,driving safety concern if present,4,"driving, safety","respiratory,high_safety"
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-investigations-1,investigations,Epworth score reviewed if completed,1,"Epworth, ESS, sleepiness",respiratory
 resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-investigations-2,investigations,sleep study report reviewed if available,2,"sleep, study, polysomnography",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-investigations-3,investigations,previous sleep clinic notes reviewed if available,3,"sleep, clinic",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-investigations-3,investigations,oxygen saturation study reviewed if performed,3,"oxygen, oximetry",respiratory
 resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-plan_phrases-2,plan_phrases,lifestyle modification discussed if applicable,2,"lifestyle, weight",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-plan_phrases-3,plan_phrases,CPAP therapy discussed if applicable,3,"CPAP, machine",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-plan_phrases-4,plan_phrases,driving advice documented if clinician discussed,4,"driving, DVLA",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-plan_phrases-5,plan_phrases,referral documented if clinician decided,5,"referral, sleep, clinic",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-follow_up-1,follow_up,follow-up documented if arranged,1,"follow, up",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-follow_up-2,follow_up,3-6 months,2,"three, six, months",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-follow_up-3,follow_up,6-12 months if stable,3,"six, twelve",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-follow_up-4,follow_up,sooner if worsening,4,"sooner, worsening",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-follow_up-5,follow_up,PRN,5,"PRN, as needed",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-plan_phrases-2,plan_phrases,referral documented if clinician decided,2,"referral, sleep, clinic",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-plan_phrases-3,plan_phrases,driving advice documented if clinician discussed,3,"driving, DVLA",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-plan_phrases-4,plan_phrases,weight management discussed if applicable,4,"weight, diet, lifestyle",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-plan_phrases-5,plan_phrases,CPAP therapy discussed if applicable,5,"CPAP, machine",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-plan_phrases-6,plan_phrases,follow-up documented if arranged,6,"follow, up",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-follow_up-1,follow_up,3-6 months,1,"three, six, months",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-follow_up-2,follow_up,6-12 months if stable,2,"six, twelve",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-follow_up-4,follow_up,PRN,4,"PRN, as needed",respiratory
 resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-1,symptoms,hemoptysis,1,"hemoptysis, blood, coughing blood",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-2,symptoms,onset documented,2,"onset, timing",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-3,symptoms,volume documented,3,"volume, amount, quantity",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-4,symptoms,frequency documented,4,"frequency, how often",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-5,symptoms,associated cough reviewed,5,cough,respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-6,symptoms,associated chest pain reviewed,6,"chest, pain",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-7,symptoms,fever reviewed,7,fever,respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-8,symptoms,smoking history reviewed if relevant,8,smoking,respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-9,symptoms,anticoagulant use reviewed if relevant,9,"anticoagulant, warfarin, DOAC",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-relevant_negatives-1,relevant_negatives,no weight loss reported if relevant,1,"weight, loss",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-relevant_negatives-2,relevant_negatives,no fever or night sweats reported if applicable,2,"fever, sweats, TB",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-relevant_negatives-3,relevant_negatives,no chest trauma reported,3,trauma,respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, BP, O2 sat",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-2,symptoms,amount documented,2,"amount, volume, quantity",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-3,symptoms,color and context documented,3,"color, frank, streaked",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-4,symptoms,cough and sputum reviewed,4,"cough, sputum",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-5,symptoms,chest pain and dyspnea reviewed,5,"chest, pain, dyspnea",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-6,symptoms,"fever, night sweats and weight loss reviewed",6,"fever, sweats, weight, TB",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-7,symptoms,smoking history reviewed,7,"smoking, cigarettes",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-8,symptoms,anticoagulant use reviewed if relevant,8,"anticoagulant, warfarin, DOAC",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-relevant_negatives-1,relevant_negatives,no massive bleeding reported if documented,1,"massive, large, volume",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-relevant_negatives-2,relevant_negatives,no severe breathlessness reported,2,"severe, breathlessness",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-relevant_negatives-3,relevant_negatives,no chest trauma reported,3,"trauma, injury",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, BP, pulse",respiratory
 resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-exam_findings-2,exam_findings,chest auscultation documented if assessed,2,"auscultation, chest",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-exam_findings-3,exam_findings,oropharynx documented if assessed,3,"oropharynx, throat",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-exam_findings-4,exam_findings,nasal examination documented if relevant,4,"nasal, epistaxis",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-red_flags-1,red_flags,hemoptysis red flags,1,"hemoptysis, red flags","respiratory,high_safety"
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-red_flags-2,red_flags,massive hemoptysis,2,"massive, large volume","respiratory,high_safety"
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-red_flags-3,red_flags,constitutional symptoms,3,"weight, loss, fever, night sweats","respiratory,high_safety"
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-red_flags-4,red_flags,known malignancy risk,4,"malignancy, cancer, smoker","respiratory,high_safety"
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-red_flags-5,red_flags,on anticoagulation,5,"anticoagulant, warfarin","respiratory,high_safety"
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-investigations-1,investigations,CXR reviewed if performed,1,"CXR, chest, X-ray",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-investigations-2,investigations,CT chest reviewed if performed,2,"CT, chest",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-exam_findings-3,exam_findings,oxygen saturation documented if measured,3,"oxygen, SpO2",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-exam_findings-4,exam_findings,oropharynx documented if assessed,4,"oropharynx, throat",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-red_flags-1,red_flags,massive hemoptysis,1,"massive, large, volume","respiratory,high_safety"
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-red_flags-2,red_flags,constitutional symptoms with hemoptysis,2,"weight, fever, sweats","respiratory,high_safety"
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-red_flags-3,red_flags,known malignancy risk with new hemoptysis,3,"malignancy, smoker","respiratory,high_safety"
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-red_flags-4,red_flags,on anticoagulation with new hemoptysis,4,"anticoagulant, INR","respiratory,high_safety"
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-investigations-1,investigations,chest imaging reviewed if available,1,"CXR, CT, chest",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-investigations-2,investigations,blood tests reviewed if ordered,2,"blood, labs, coagulation",respiratory
 resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-investigations-3,investigations,sputum studies reviewed if ordered,3,"sputum, culture, AFB",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-investigations-4,investigations,coagulation profile reviewed if ordered,4,"INR, coagulation",respiratory
 resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",respiratory
 resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, respiratory",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-plan_phrases-3,plan_phrases,follow-up documented if clinician decided,3,"follow, up",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,"referral, respiratory",respiratory
 resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-follow_up-1,follow_up,2-4 weeks,1,"two, four, weeks",respiratory
 resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-follow_up-2,follow_up,4-6 weeks,2,"four, six, weeks",respiratory
 resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",respiratory
 resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-follow_up-4,follow_up,PRN,4,"PRN, as needed",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-1,symptoms,smoking history note,1,"smoking, history",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-2,symptoms,current smoking pattern documented,2,"current, former, never, pack years",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-3,symptoms,pack years documented,3,"pack, years",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-4,symptoms,age when started documented if relevant,4,"age, started",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-5,symptoms,quit attempts reviewed if applicable,5,"quit, cessation, attempts",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-6,symptoms,previous cessation methods reviewed,6,"cessation, NRT, varenicline",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-7,symptoms,motivation to quit reviewed if applicable,7,"motivation, ready",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-8,symptoms,passive smoke exposure reviewed if relevant,8,"passive, secondhand",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, BP",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-exam_findings-2,exam_findings,BMI documented if measured,2,"BMI, weight",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-exam_findings-3,exam_findings,chest auscultation documented if assessed,3,"auscultation, chest",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-exam_findings-4,exam_findings,peripheral signs documented if assessed,4,"peripheral, clubbing, cyanosis",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-1,symptoms,smoking history documented,1,"smoking, tobacco, history",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-2,symptoms,cigarettes per day documented,2,"cigarettes, per, day, quantity",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-3,symptoms,years smoked documented,3,"years, duration",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-4,symptoms,pack years documented if calculated,4,"pack, years",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-5,symptoms,ex-smoker history documented if relevant,5,"ex-smoker, former, quit",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-6,symptoms,passive smoke exposure reviewed,6,"passive, secondhand",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-7,symptoms,occupational exposure reviewed if relevant,7,"occupational, work, exposure",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-8,symptoms,respiratory symptoms reviewed,8,"cough, wheeze, SOB",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-9,symptoms,previous quit attempts reviewed if applicable,9,"quit, cessation, attempts",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-relevant_negatives-1,relevant_negatives,no hemoptysis reported if applicable,1,"hemoptysis, blood",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-relevant_negatives-2,relevant_negatives,no unexplained weight loss reported if applicable,2,"weight, loss",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-exam_findings-1,exam_findings,chest exam documented if assessed,1,"chest, auscultation",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-exam_findings-2,exam_findings,oxygen saturation documented if measured,2,"oxygen, SpO2",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-exam_findings-3,exam_findings,oral examination documented if assessed,3,"oral, mouth",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-red_flags-1,red_flags,new cough with smoking history,1,"new, cough, smoker","respiratory,high_safety"
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-red_flags-2,red_flags,hemoptysis in smoker,2,"hemoptysis, smoker","respiratory,high_safety"
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-red_flags-3,red_flags,unexplained weight loss in smoker,3,"weight, loss","respiratory,high_safety"
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-investigations-1,investigations,chest imaging reviewed if available,1,"CXR, chest",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-investigations-2,investigations,spirometry reviewed if performed,2,"spirometry, PFT",respiratory
 resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-plan_phrases-2,plan_phrases,smoking cessation counselling documented if discussed,2,"cessation, counselling",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-plan_phrases-3,plan_phrases,NRT or pharmacotherapy plan documented if clinician decided,3,"NRT, patch, gum, varenicline",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-plan_phrases-4,plan_phrases,referral to smoking cessation service documented if clinician decided,4,"cessation, service",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-plan_phrases-2,plan_phrases,smoking cessation advice documented if discussed,2,"cessation, advice",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-plan_phrases-3,plan_phrases,cessation support referral documented if clinician decided,3,"referral, cessation, stop smoking",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",respiratory
 resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-follow_up-1,follow_up,2-4 weeks,1,"two, four, weeks",respiratory
 resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-follow_up-2,follow_up,1-3 months,2,"one, three, months",respiratory
 resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-follow_up-3,follow_up,sooner if needed,3,"sooner, needed",respiratory
 resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-follow_up-4,follow_up,PRN,4,"PRN, as needed",respiratory
 resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-1,symptoms,pulmonary function review,1,"PFT, pulmonary, function",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-2,symptoms,FEV1 reviewed,2,"FEV1, FVC",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-3,symptoms,FVC reviewed,3,FVC,respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-4,symptoms,FEV1/FVC ratio reviewed,4,"FEV1, FVC, ratio",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-5,symptoms,obstructive versus restrictive pattern documented,5,"obstructive, restrictive",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-6,symptoms,bronchodilator response reviewed if performed,6,"bronchodilator, reversibility",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-7,symptoms,DLCO reviewed if available,7,"DLCO, diffusion",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-8,symptoms,previous PFT comparison documented if available,8,"previous, prior, trend",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-exam_findings-1,exam_findings,clinical correlation documented,1,"clinical, correlation",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-exam_findings-2,exam_findings,chest auscultation documented if assessed,2,auscultation,respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-exam_findings-3,exam_findings,oxygen saturation documented if measured,3,"oxygen, SpO2",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-2,symptoms,spirometry reviewed,2,"spirometry, FEV1, FVC",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-3,symptoms,FEV1 and FVC context reviewed if documented,3,"FEV1, FVC, ratio",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-4,symptoms,symptom correlation documented,4,"symptom, correlation",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-5,symptoms,inhaler and medication use reviewed if relevant,5,"inhaler, medication",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-6,symptoms,smoking history reviewed,6,"smoking, cigarettes",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-7,symptoms,previous PFT comparison documented if available,7,"previous, prior, trend",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-relevant_negatives-1,relevant_negatives,no acute respiratory distress reported,1,"acute, distress",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-relevant_negatives-2,relevant_negatives,no significant symptom change reported if applicable,2,"symptom, change",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-exam_findings-1,exam_findings,oxygen saturation documented if measured,1,"oxygen, SpO2",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-exam_findings-2,exam_findings,chest auscultation documented if assessed,2,"auscultation, chest",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-exam_findings-3,exam_findings,clinical correlation documented,3,"clinical, correlation",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-red_flags-1,red_flags,significant decline in FEV1,1,"decline, FEV1","respiratory,high_safety"
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-red_flags-2,red_flags,worsening symptoms with declining PFT,2,"worsening, symptoms","respiratory,high_safety"
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-red_flags-3,red_flags,new obstruction or restriction pattern,3,"new, obstruction, restriction","respiratory,high_safety"
 resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-investigations-1,investigations,previous PFT reports reviewed if available,1,"previous, PFT",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-investigations-2,investigations,CXR reviewed if performed,2,"CXR, chest",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-investigations-3,investigations,CT chest reviewed if available,3,"CT, chest",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-investigations-4,investigations,blood gas reviewed if performed,4,"blood, gas, ABG",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-investigations-2,investigations,chest imaging reviewed if available,2,"CXR, CT, chest",respiratory
 resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",respiratory
 resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,"medication, inhaler",respiratory
 resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, respiratory",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-plan_phrases-4,plan_phrases,PFT follow-up interval documented if clinician decided,4,"PFT, interval, follow",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",respiratory
 resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-follow_up-1,follow_up,3-6 months,1,"three, six, months",respiratory
 resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-follow_up-2,follow_up,6-12 months,2,"six, twelve, months",respiratory
 resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-follow_up-3,follow_up,sooner if symptomatic change,3,"sooner, change",respiratory
 resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-follow_up-4,follow_up,PRN,4,"PRN, as needed",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-9,symptoms,appetite and hydration reviewed,9,"appetite, hydration",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-10,symptoms,mobility reviewed if relevant,10,mobility,respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-11,symptoms,residual chest pain reviewed,11,"chest, pain, pleuritic",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-exam_findings-5,exam_findings,temperature documented if measured,5,"temperature, fever",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-exam_findings-6,exam_findings,chest percussion documented if assessed,6,"percussion, dullness",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-relevant_negatives-1,relevant_negatives,no hemoptysis reported,1,"hemoptysis, blood",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-relevant_negatives-2,relevant_negatives,no chest pain reported,2,"chest, pain",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-red_flags-1,red_flags,persistent or recurrent fever,1,"fever, recurrent",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-red_flags-2,red_flags,worsening dyspnea,2,"dyspnea, SOB",respiratory
-resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-plan_phrases-5,plan_phrases,chest physiotherapy discussed if applicable,5,"physiotherapy, chest",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-9,symptoms,clinical context documented,9,"clinical, context",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-10,symptoms,symptom correlation with PFT documented,10,"symptom, correlation",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-11,symptoms,TLC reviewed if available,11,"TLC, total lung capacity",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-exam_findings-4,exam_findings,vitals documented if measured,4,"vitals, O2 sat",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-exam_findings-5,exam_findings,respiratory rate documented if measured,5,"RR, respiratory",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-exam_findings-6,exam_findings,BMI documented if measured,6,"BMI, weight",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-relevant_negatives-1,relevant_negatives,no acute change in symptoms reported,1,"acute, change",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-investigations-5,investigations,6-minute walk test reviewed if performed,5,"six, minute, walk, 6MWT",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-plan_phrases-5,plan_phrases,PFT follow-up interval documented if clinician decided,5,"PFT, interval, follow",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-plan_phrases-6,plan_phrases,spirometry monitor plan documented if clinician decided,6,"spirometry, monitor",respiratory
-resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-plan_phrases-7,plan_phrases,safety-netting documented if discussed,7,"safety, netting",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-9,symptoms,type of tobacco use documented,9,"tobacco, cigarettes, shisha",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-10,symptoms,amount used per day documented,10,"daily, per day, quantity",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-11,symptoms,previous quit duration documented if applicable,11,"quit, duration",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-12,symptoms,barriers to quitting reviewed if applicable,12,"barriers, difficulty",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-exam_findings-5,exam_findings,respiratory rate documented if measured,5,"RR, respiratory",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-exam_findings-6,exam_findings,oxygen saturation documented if measured,6,"oxygen, SpO2",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-exam_findings-7,exam_findings,oral examination documented if assessed,7,"oral, mouth, smoker",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-relevant_negatives-1,relevant_negatives,no cough reported if applicable,1,cough,respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-relevant_negatives-2,relevant_negatives,no shortness of breath reported if applicable,2,"SOB, breathlessness",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-investigations-1,investigations,CO monitoring discussed if available,1,"CO, carbon monoxide",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-plan_phrases-6,plan_phrases,behavioural support discussed if applicable,6,"behavioural, support",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-plan_phrases-7,plan_phrases,nicotine replacement therapy plan documented if clinician decided,7,"NRT, nicotine, patch",respiratory
-resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-plan_phrases-8,plan_phrases,relapse prevention discussed if applicable,8,"relapse, prevention",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-9,symptoms,relationship to sleep position reviewed if relevant,9,"position, sleep",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-10,symptoms,partner or bed partner report documented if available,10,"partner, witness",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-exam_findings-6,exam_findings,blood pressure documented if measured,6,"BP, blood, pressure",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-relevant_negatives-4,relevant_negatives,no nocturnal choking reported if applicable,4,"choking, gasping",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-investigations-4,investigations,home sleep study reviewed if performed,4,"home, sleep, study",respiratory
-resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-plan_phrases-6,plan_phrases,weight management discussed if applicable,6,"weight, diet",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-9,symptoms,vocal cord dysfunction considered if relevant,9,"vocal, cord, VCD",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-8,exam_findings,pulsus paradoxus documented if measured,8,"pulsus, paradoxus",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-relevant_negatives-6,relevant_negatives,no choking or foreign body sensation reported,6,"choking, foreign",respiratory
-resp-wheeze,Respiratory / Pulmonology,resp-wheeze-plan_phrases-5,plan_phrases,symptom diary recommended if discussed,5,"diary, peak, flow",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-10,symptoms,prior episodes reviewed if applicable,10,"prior, previous, recurrent",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-relevant_negatives-4,relevant_negatives,no anticoagulant or antiplatelet reported if relevant,4,"anticoagulant, antiplatelet",respiratory
-resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-investigations-5,investigations,bronchoscopy report reviewed if performed,5,"bronchoscopy, scope",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-10,symptoms,post-nasal drip symptoms reviewed if relevant,10,"postnasal, drip, PND",respiratory
-resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-relevant_negatives-5,relevant_negatives,no dysphagia reported if applicable,5,"dysphagia, swallowing",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-symptoms-10,symptoms,occupational exposure reviewed if relevant,10,"occupational, work",respiratory
-resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-9,exam_findings,chest expansion documented if assessed,9,"expansion, symmetry",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-10,symptoms,impact on everyday activities reviewed,10,"daily, ADL, activities",respiratory
-resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-relevant_negatives-5,relevant_negatives,no increase in sputum purulence reported if applicable,5,"sputum, purulence",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-8,symptoms,functional impairment documented,8,"functional, MRC, dyspnea scale",respiratory
-resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-9,exam_findings,tracheal position documented if assessed,9,"trachea, deviation",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-symptoms-11,symptoms,asthma control level documented if assessed,11,"control, ACT, validated",respiratory
+resp-asthma-followup,Respiratory / Pulmonology,resp-asthma-followup-exam_findings-8,exam_findings,chest expansion documented if assessed,8,"expansion, symmetry",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-symptoms-10,symptoms,sputum color change reviewed if relevant,10,"sputum, color, purulence",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-exam_findings-6,exam_findings,chest percussion documented if assessed,6,"percussion, hyperinflation",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-plan_phrases-7,plan_phrases,referral documented if clinician decided,7,"referral, respiratory",respiratory
+resp-copd-followup,Respiratory / Pulmonology,resp-copd-followup-follow_up-5,follow_up,sooner if exacerbation,5,"exacerbation, flare",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-symptoms-10,symptoms,previous investigations reviewed if available,10,"previous, CXR, spirometry",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-exam_findings-5,exam_findings,respiratory rate documented if measured,5,"RR, respiratory",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-investigations-3,investigations,laryngoscopy referral discussed if relevant,3,"ENT, laryngoscopy",respiratory
+resp-chronic-cough,Respiratory / Pulmonology,resp-chronic-cough-plan_phrases-5,plan_phrases,trial of inhaled therapy discussed if applicable,5,"inhaler, trial, treatment",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-symptoms-9,symptoms,functional limitation documented,9,"functional, limitation, ADL",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-exam_findings-7,exam_findings,peak flow recorded if measured,7,"peak, flow, PEFR",respiratory
+resp-dyspnea,Respiratory / Pulmonology,resp-dyspnea-investigations-4,investigations,previous PFT reviewed if available,4,"PFT, FEV1, FVC",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-symptoms-9,symptoms,response to bronchodilator reviewed if applicable,9,"response, bronchodilator",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-exam_findings-7,exam_findings,work of breathing documented if assessed,7,"work, breathing",respiratory
+resp-wheeze,Respiratory / Pulmonology,resp-wheeze-plan_phrases-5,plan_phrases,symptom diary discussed if applicable,5,"diary, peak, flow",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-symptoms-9,symptoms,residual chest pain reviewed,9,"chest, pain, pleuritic",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-exam_findings-5,exam_findings,chest percussion documented if assessed,5,"percussion, dullness",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-follow_up-5,follow_up,sooner if fever recurs,5,"fever, recurrent",respiratory
+resp-pneumonia-followup,Respiratory / Pulmonology,resp-pneumonia-followup-plan_phrases-6,plan_phrases,chest physiotherapy discussed if applicable,6,"physiotherapy, chest",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-symptoms-9,symptoms,partner report documented if available,9,"partner, witness, bed",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-exam_findings-5,exam_findings,oxygen saturation study reviewed if performed,5,"oximetry, nocturnal",respiratory
+resp-sleep-apnea-symptoms,Respiratory / Pulmonology,resp-sleep-apnea-symptoms-plan_phrases-7,plan_phrases,sleep hygiene advice documented if discussed,7,"sleep, hygiene, advice",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-symptoms-9,symptoms,prior episodes reviewed if applicable,9,"prior, previous, recurrent",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-relevant_negatives-4,relevant_negatives,no TB symptoms reported if applicable,4,"TB, tuberculosis",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-exam_findings-5,exam_findings,respiratory rate documented if measured,5,"RR, respiratory",respiratory
+resp-hemoptysis-documentation,Respiratory / Pulmonology,resp-hemoptysis-documentation-follow_up-5,follow_up,sooner if bleeding recurs,5,"bleeding, recurrent",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-10,symptoms,motivation to quit reviewed if current smoker,10,"motivation, ready, change",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-symptoms-11,symptoms,barriers to quitting discussed if applicable,11,"barriers, difficulty",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-relevant_negatives-3,relevant_negatives,no respiratory symptoms reported if applicable,3,"cough, wheeze",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-exam_findings-4,exam_findings,respiratory rate documented if measured,4,"RR, respiratory",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-exam_findings-5,exam_findings,blood pressure documented if measured,5,"BP, blood, pressure",respiratory
+resp-smoking-history-note,Respiratory / Pulmonology,resp-smoking-history-note-plan_phrases-5,plan_phrases,NRT or pharmacotherapy plan documented if clinician decided,5,"NRT, patch, varenicline",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-8,symptoms,bronchodilator response reviewed if performed,8,"bronchodilator, reversibility",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-symptoms-9,symptoms,DLCO reviewed if available,9,"DLCO, diffusion",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-exam_findings-4,exam_findings,respiratory rate documented if measured,4,"RR, respiratory",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-investigations-3,investigations,blood gas reviewed if performed,3,"blood, gas, ABG",respiratory
+resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-plan_phrases-6,plan_phrases,spirometry monitoring plan documented if clinician decided,6,"spirometry, monitor",respiratory
