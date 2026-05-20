@@ -3811,5 +3811,612 @@
     ],
     "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
     "review_required": true
+  },
+  {
+    "workflow_id": "endo-diabetes-followup",
+    "workflow_display_name": "Endo Diabetes Follow-up",
+    "default_history_draft": "Patient presents with diabetes follow-up. [Home glucose]. [HbA1c trend]. [Medication adherence]. [Lifestyle]. [Hypoglycaemia symptoms]. [Foot/visual/neuropathy symptoms].",
+    "editable_placeholders": [
+      "[Home glucose]",
+      "[HbA1c trend]",
+      "[Medication adherence]",
+      "[Lifestyle]",
+      "[Hypoglycaemia symptoms]",
+      "[Foot/visual/neuropathy symptoms]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-thyroid-symptoms",
+    "workflow_display_name": "Endo Thyroid Symptoms",
+    "default_history_draft": "Patient presents with thyroid symptoms. [Weight change]. [Heat/cold intolerance]. [Palpitations]. [Tremor]. [Bowel habit]. [Mood/energy]. [Neck swelling/goiter].",
+    "editable_placeholders": [
+      "[Weight change]",
+      "[Heat/cold intolerance]",
+      "[Palpitations]",
+      "[Tremor]",
+      "[Bowel habit]",
+      "[Mood/energy]",
+      "[Neck swelling/goiter]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-hypothyroidism-followup",
+    "workflow_display_name": "Endo Hypothyroidism Follow-up",
+    "default_history_draft": "Patient presents with hypothyroidism follow-up. [Fatigue/energy]. [Cold intolerance]. [Weight change]. [Constipation]. [Dry skin/hair loss]. [Adherence].",
+    "editable_placeholders": [
+      "[Fatigue/energy]",
+      "[Cold intolerance]",
+      "[Weight change]",
+      "[Constipation]",
+      "[Dry skin/hair loss]",
+      "[Adherence]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-hyperthyroidism-followup",
+    "workflow_display_name": "Endo Hyperthyroidism Follow-up",
+    "default_history_draft": "Patient presents with hyperthyroidism follow-up. [Palpitations]. [Heat intolerance]. [Tremor]. [Weight change]. [Anxiety/irritability]. [Bowel habit]. [Eye symptoms]. [Adherence].",
+    "editable_placeholders": [
+      "[Palpitations]",
+      "[Heat intolerance]",
+      "[Tremor]",
+      "[Weight change]",
+      "[Anxiety/irritability]",
+      "[Bowel habit]",
+      "[Eye symptoms]",
+      "[Adherence]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-obesity-counseling-documentation",
+    "workflow_display_name": "Endo Obesity Counseling",
+    "default_history_draft": "Patient presents with weight management. BMI [BMI]. Weight trend [trend]. [Diet context]. [Physical activity]. [Sleep]. [Comorbidities]. [Medication history].",
+    "editable_placeholders": [
+      "[BMI]",
+      "[trend]",
+      "[Diet context]",
+      "[Physical activity]",
+      "[Sleep]",
+      "[Comorbidities]",
+      "[Medication history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-hypoglycemia-review",
+    "workflow_display_name": "Endo Hypoglycemia Review",
+    "default_history_draft": "Patient presents with hypoglycaemia review. Episode frequency [frequency]. Timing [timing]. [Symptoms]. [Glucose values]. [Medication context]. [Meal/activity context]. [Awareness].",
+    "editable_placeholders": [
+      "[frequency]",
+      "[timing]",
+      "[Symptoms]",
+      "[Glucose values]",
+      "[Medication context]",
+      "[Meal/activity context]",
+      "[Awareness]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-pcos-metabolic-review",
+    "workflow_display_name": "Endo PCOS Metabolic Review",
+    "default_history_draft": "Patient presents with pCOS metabolic review. Cycle pattern [cycles]. Weight/BMI [weight]. [Acne/hirsutism]. [Glucose/insulin resistance]. [Fertility concern]. [Lifestyle].",
+    "editable_placeholders": [
+      "[cycles]",
+      "[weight]",
+      "[Acne/hirsutism]",
+      "[Glucose/insulin resistance]",
+      "[Fertility concern]",
+      "[Lifestyle]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-osteoporosis-followup",
+    "workflow_display_name": "Endo Osteoporosis Follow-up",
+    "default_history_draft": "Patient presents with osteoporosis follow-up. [Fracture history]. [Falls history]. [Back pain/height loss]. [Calcium/vitamin D]. [Adherence]. [Side effects].",
+    "editable_placeholders": [
+      "[Fracture history]",
+      "[Falls history]",
+      "[Back pain/height loss]",
+      "[Calcium/vitamin D]",
+      "[Adherence]",
+      "[Side effects]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-adrenal-incidentaloma-referral",
+    "workflow_display_name": "Endo Adrenal Incidentaloma",
+    "default_history_draft": "Patient presents with adrenal incidentaloma. [Imaging finding]. [Symptoms]. [Blood pressure]. [Weight change]. [Bruising/striae]. [Weakness/fatigue]. [Electrolytes].",
+    "editable_placeholders": [
+      "[Imaging finding]",
+      "[Symptoms]",
+      "[Blood pressure]",
+      "[Weight change]",
+      "[Bruising/striae]",
+      "[Weakness/fatigue]",
+      "[Electrolytes]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-pituitary-symptoms-documentation",
+    "workflow_display_name": "Endo Pituitary Symptoms",
+    "default_history_draft": "Patient presents with pituitary symptoms. [Headache]. [Visual symptoms]. [Menstrual/sexual function]. [Growth/weight changes]. [Fatigue/weakness]. [Galactorrhoea].",
+    "editable_placeholders": [
+      "[Headache]",
+      "[Visual symptoms]",
+      "[Menstrual/sexual function]",
+      "[Growth/weight changes]",
+      "[Fatigue/weakness]",
+      "[Galactorrhoea]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-dysuria-uti-symptoms",
+    "workflow_display_name": "Uro Dysuria/UTI",
+    "default_history_draft": "Patient presents with dysuria for [duration]. [Urinary frequency]. [Urgency]. [Suprapubic discomfort]. [Fever]. [Flank pain]. [Haematuria].",
+    "editable_placeholders": [
+      "[duration]",
+      "[Urinary frequency]",
+      "[Urgency]",
+      "[Suprapubic discomfort]",
+      "[Fever]",
+      "[Flank pain]",
+      "[Haematuria]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-hematuria",
+    "workflow_display_name": "Uro Hematuria",
+    "default_history_draft": "Patient presents with haematuria. Visible vs microscopic: [type]. [Dysuria]. [Flank pain]. [Frequency/urgency]. [Anticoagulant use]. [Smoking/occupational exposure].",
+    "editable_placeholders": [
+      "[type]",
+      "[Dysuria]",
+      "[Flank pain]",
+      "[Frequency/urgency]",
+      "[Anticoagulant use]",
+      "[Smoking/occupational exposure]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-luts-bph",
+    "workflow_display_name": "Uro LUTS/BPH",
+    "default_history_draft": "Patient presents with lUTS. [Weak stream]. [Hesitancy]. [Nocturia]. [Urgency/frequency]. [Incomplete emptying]. [Retention history]. [Medication history].",
+    "editable_placeholders": [
+      "[Weak stream]",
+      "[Hesitancy]",
+      "[Nocturia]",
+      "[Urgency/frequency]",
+      "[Incomplete emptying]",
+      "[Retention history]",
+      "[Medication history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-renal-colic-followup",
+    "workflow_display_name": "Uro Renal Colic Follow-up",
+    "default_history_draft": "Patient presents with renal colic follow-up. [Flank pain progress]. [Pain radiation]. [Haematuria]. [Nausea/vomiting]. [Fever]. [Previous stone history].",
+    "editable_placeholders": [
+      "[Flank pain progress]",
+      "[Pain radiation]",
+      "[Haematuria]",
+      "[Nausea/vomiting]",
+      "[Fever]",
+      "[Previous stone history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-urinary-retention-documentation",
+    "workflow_display_name": "Uro Urinary Retention",
+    "default_history_draft": "Patient presents with urinary retention. Onset [onset]. [Voiding difficulty]. [Suprapubic discomfort]. [Previous retention]. [Medication history]. [Neurological symptoms].",
+    "editable_placeholders": [
+      "[onset]",
+      "[Voiding difficulty]",
+      "[Suprapubic discomfort]",
+      "[Previous retention]",
+      "[Medication history]",
+      "[Neurological symptoms]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-flank-pain",
+    "workflow_display_name": "Uro Flank Pain",
+    "default_history_draft": "Patient presents with flank pain [duration]. Character [character]. [Radiation]. [Urinary symptoms]. [Fever]. [Nausea/vomiting]. [Previous stones].",
+    "editable_placeholders": [
+      "[duration]",
+      "[character]",
+      "[Radiation]",
+      "[Urinary symptoms]",
+      "[Fever]",
+      "[Nausea/vomiting]",
+      "[Previous stones]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-frequency-urgency",
+    "workflow_display_name": "Uro Frequency/Urgency",
+    "default_history_draft": "Patient presents with urinary frequency/urgency. [Nocturia]. [Urge incontinence]. [Dysuria]. [Haematuria]. [Fluid/caffeine context].",
+    "editable_placeholders": [
+      "[Nocturia]",
+      "[Urge incontinence]",
+      "[Dysuria]",
+      "[Haematuria]",
+      "[Fluid/caffeine context]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neph-ckd-followup",
+    "workflow_display_name": "Neph CKD Follow-up",
+    "default_history_draft": "Patient presents with cKD follow-up. [Renal function trend]. [Blood pressure]. [Oedema]. [Urinary symptoms]. [Medication review]. [Nephrotoxic exposure].",
+    "editable_placeholders": [
+      "[Renal function trend]",
+      "[Blood pressure]",
+      "[Oedema]",
+      "[Urinary symptoms]",
+      "[Medication review]",
+      "[Nephrotoxic exposure]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neph-proteinuria",
+    "workflow_display_name": "Neph Proteinuria",
+    "default_history_draft": "Patient presents with proteinuria. [ACR/proteinuria result]. [Oedema]. [Blood pressure]. [Diabetes/hypertension context]. [Urinary symptoms].",
+    "editable_placeholders": [
+      "[ACR/proteinuria result]",
+      "[Oedema]",
+      "[Blood pressure]",
+      "[Diabetes/hypertension context]",
+      "[Urinary symptoms]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neph-electrolyte-abnormality-review",
+    "workflow_display_name": "Neph Electrolyte Abnormality",
+    "default_history_draft": "Patient presents with electrolyte abnormality review. [Abnormal value]. [Trend]. [Symptoms]. [Medication history]. [Renal function]. [Fluid intake].",
+    "editable_placeholders": [
+      "[Abnormal value]",
+      "[Trend]",
+      "[Symptoms]",
+      "[Medication history]",
+      "[Renal function]",
+      "[Fluid intake]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
   }
 ]

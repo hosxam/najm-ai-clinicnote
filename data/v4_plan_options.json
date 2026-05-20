@@ -11258,5 +11258,1337 @@
     "safety_note": "Documentation prompts only. No treatment recommendations.",
     "review_required": true,
     "source_status": "draft"
+  },
+  {
+    "workflow_id": "endo-diabetes-followup",
+    "workflow_display_name": "Endo Diabetes Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "endo-diabetes-followup_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "endo-diabetes-followup_lifestyle",
+            "option_text": "Lifestyle advice documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Lifestyle advice documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "endo-diabetes-followup_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          },
+          {
+            "option_id": "endo-diabetes-followup_glucose_monitoring",
+            "option_text": "Glucose monitoring documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Glucose monitoring documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "endo-diabetes-followup_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "endo-diabetes-followup_referral",
+            "option_text": "Referral documented if clinician arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "endo-thyroid-symptoms",
+    "workflow_display_name": "Endo Thyroid Symptoms",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "endo-thyroid-symptoms_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "endo-thyroid-symptoms_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "endo-thyroid-symptoms_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "endo-thyroid-symptoms_referral",
+            "option_text": "Referral documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "endo-hypothyroidism-followup",
+    "workflow_display_name": "Endo Hypothyroidism Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "endo-hypothyroidism-followup_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "endo-hypothyroidism-followup_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          },
+          {
+            "option_id": "endo-hypothyroidism-followup_adherence",
+            "option_text": "Adherence documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Adherence discussed."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "endo-hypothyroidism-followup_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "endo-hyperthyroidism-followup",
+    "workflow_display_name": "Endo Hyperthyroidism Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "endo-hyperthyroidism-followup_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "endo-hyperthyroidism-followup_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "endo-hyperthyroidism-followup_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "endo-hyperthyroidism-followup_referral",
+            "option_text": "Referral documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "endo-obesity-counseling-documentation",
+    "workflow_display_name": "Endo Obesity Counseling",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "endo-obesity-counseling-documentation_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "endo-obesity-counseling-documentation_lifestyle",
+            "option_text": "Lifestyle counseling documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Lifestyle counseling documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "endo-obesity-counseling-documentation_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "endo-obesity-counseling-documentation_referral",
+            "option_text": "Referral documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "endo-hypoglycemia-review",
+    "workflow_display_name": "Endo Hypoglycemia Review",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "endo-hypoglycemia-review_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "endo-hypoglycemia-review_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "endo-hypoglycemia-review_medication_adjustment",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "endo-hypoglycemia-review_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "endo-pcos-metabolic-review",
+    "workflow_display_name": "Endo PCOS Metabolic Review",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "endo-pcos-metabolic-review_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "endo-pcos-metabolic-review_lifestyle",
+            "option_text": "Lifestyle advice documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Lifestyle advice documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "endo-pcos-metabolic-review_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "endo-pcos-metabolic-review_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "endo-pcos-metabolic-review_referral",
+            "option_text": "Referral documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "endo-osteoporosis-followup",
+    "workflow_display_name": "Endo Osteoporosis Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "endo-osteoporosis-followup_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "endo-osteoporosis-followup_supplement",
+            "option_text": "Supplement plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Supplement plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "endo-osteoporosis-followup_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "endo-osteoporosis-followup_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "endo-adrenal-incidentaloma-referral",
+    "workflow_display_name": "Endo Adrenal Incidentaloma",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "endo-adrenal-incidentaloma-referral_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "endo-adrenal-incidentaloma-referral_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "endo-adrenal-incidentaloma-referral_referral",
+            "option_text": "Referral (endocrinology) documented if clinician arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral (endocrinology) documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "endo-pituitary-symptoms-documentation",
+    "workflow_display_name": "Endo Pituitary Symptoms",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "endo-pituitary-symptoms-documentation_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "endo-pituitary-symptoms-documentation_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "endo-pituitary-symptoms-documentation_referral",
+            "option_text": "Referral (endocrinology) documented if clinician arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral (endocrinology) documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "uro-dysuria-uti-symptoms",
+    "workflow_display_name": "Uro Dysuria/UTI",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "uro-dysuria-uti-symptoms_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "uro-dysuria-uti-symptoms_hydration",
+            "option_text": "Hydration advice documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Hydration advice documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "uro-dysuria-uti-symptoms_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "uro-dysuria-uti-symptoms_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "uro-dysuria-uti-symptoms_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "uro-hematuria",
+    "workflow_display_name": "Uro Hematuria",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "uro-hematuria_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "uro-hematuria_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "uro-hematuria_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "uro-hematuria_referral",
+            "option_text": "Referral (urology) documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral (urology) documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "uro-luts-bph",
+    "workflow_display_name": "Uro LUTS/BPH",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "uro-luts-bph_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "uro-luts-bph_lifestyle",
+            "option_text": "Lifestyle advice documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Lifestyle advice documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "uro-luts-bph_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "uro-luts-bph_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "uro-luts-bph_referral",
+            "option_text": "Referral (urology) documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral (urology) documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "uro-renal-colic-followup",
+    "workflow_display_name": "Uro Renal Colic Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "uro-renal-colic-followup_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "uro-renal-colic-followup_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "uro-renal-colic-followup_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "uro-urinary-retention-documentation",
+    "workflow_display_name": "Uro Urinary Retention",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "uro-urinary-retention-documentation_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "uro-urinary-retention-documentation_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "uro-urinary-retention-documentation_referral",
+            "option_text": "Referral (urology) documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral (urology) documented."
+          },
+          {
+            "option_id": "uro-urinary-retention-documentation_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "uro-flank-pain",
+    "workflow_display_name": "Uro Flank Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "uro-flank-pain_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "uro-flank-pain_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "uro-flank-pain_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "uro-flank-pain_referral",
+            "option_text": "Referral (urology) documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral (urology) documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "uro-frequency-urgency",
+    "workflow_display_name": "Uro Frequency/Urgency",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "uro-frequency-urgency_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "uro-frequency-urgency_lifestyle",
+            "option_text": "Bladder training/fluid advice documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Bladder training/fluid advice documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "uro-frequency-urgency_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "uro-frequency-urgency_referral",
+            "option_text": "Referral (urology/continence) documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral (urology/continence) documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "neph-ckd-followup",
+    "workflow_display_name": "Neph CKD Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "neph-ckd-followup_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "neph-ckd-followup_lifestyle",
+            "option_text": "Lifestyle/dietary advice documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Lifestyle/dietary advice documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication",
+        "group_label": "Medication",
+        "options": [
+          {
+            "option_id": "neph-ckd-followup_medication_review",
+            "option_text": "Medication review documented if clinician performed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication review documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "neph-ckd-followup_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "neph-ckd-followup_referral",
+            "option_text": "Referral (nephrology) documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral (nephrology) documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "neph-proteinuria",
+    "workflow_display_name": "Neph Proteinuria",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "neph-proteinuria_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "neph-proteinuria_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "neph-proteinuria_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "neph-proteinuria_referral",
+            "option_text": "Referral (nephrology) documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral (nephrology) documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "neph-electrolyte-abnormality-review",
+    "workflow_display_name": "Neph Electrolyte Abnormality",
+    "plan_option_groups": [
+      {
+        "group_id": "management",
+        "group_label": "Management",
+        "options": [
+          {
+            "option_id": "neph-electrolyte-abnormality-review_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "neph-electrolyte-abnormality-review_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication",
+        "group_label": "Medication",
+        "options": [
+          {
+            "option_id": "neph-electrolyte-abnormality-review_medication_review",
+            "option_text": "Medication review documented if clinician performed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication review documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "neph-electrolyte-abnormality-review_follow_up",
+            "option_text": "Follow-up testing documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up testing documented."
+          },
+          {
+            "option_id": "neph-electrolyte-abnormality-review_referral",
+            "option_text": "Referral (nephrology) documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4 batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral (nephrology) documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
   }
 ]

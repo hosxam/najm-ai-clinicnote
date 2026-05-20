@@ -11769,5 +11769,953 @@
     ],
     "safety_note": "Document only if assessed.",
     "review_required": true
+  },
+  {
+    "workflow_id": "endo-diabetes-followup",
+    "workflow_display_name": "Endo Diabetes Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "weight",
+            "prompt_text": "Weight/BMI documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "foot",
+        "group_label": "Foot examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. foot examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "foot_exam",
+            "prompt_text": "Foot examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "pulses",
+            "prompt_text": "Peripheral pulses documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "sensation",
+            "prompt_text": "Sensation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "injection",
+        "group_label": "Injection sites",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. injection sites findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "injection_sites",
+            "prompt_text": "Injection sites documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-thyroid-symptoms",
+    "workflow_display_name": "Endo Thyroid Symptoms",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "pulse",
+            "prompt_text": "Pulse documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neck",
+        "group_label": "Neck examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neck examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neck",
+            "prompt_text": "Neck/thyroid examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "tremor",
+            "prompt_text": "Tremor documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-hypothyroidism-followup",
+    "workflow_display_name": "Endo Hypothyroidism Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "pulse",
+            "prompt_text": "Pulse documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "weight",
+            "prompt_text": "Weight documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neck",
+        "group_label": "Neck examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neck examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neck",
+            "prompt_text": "Neck/thyroid examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-hyperthyroidism-followup",
+    "workflow_display_name": "Endo Hyperthyroidism Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "pulse",
+            "prompt_text": "Pulse documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neck",
+        "group_label": "Neck examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neck examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neck",
+            "prompt_text": "Thyroid examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "eyes",
+            "prompt_text": "Eye signs documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "tremor",
+            "prompt_text": "Tremor documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-obesity-counseling-documentation",
+    "workflow_display_name": "Endo Obesity Counseling",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "weight",
+            "prompt_text": "Weight/BMI documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "waist",
+            "prompt_text": "Waist circumference documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-hypoglycemia-review",
+    "workflow_display_name": "Endo Hypoglycemia Review",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "glucose",
+            "prompt_text": "Glucose documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "general",
+        "group_label": "General",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. general findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "appearance",
+            "prompt_text": "General appearance documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-pcos-metabolic-review",
+    "workflow_display_name": "Endo PCOS Metabolic Review",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "weight",
+            "prompt_text": "Weight/BMI documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "skin",
+        "group_label": "Skin examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. skin examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "acne_hirsutism",
+            "prompt_text": "Acne/hirsutism documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-osteoporosis-followup",
+    "workflow_display_name": "Endo Osteoporosis Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "weight",
+            "prompt_text": "Weight documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "musculoskeletal",
+        "group_label": "Musculoskeletal",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. musculoskeletal findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "gait",
+            "prompt_text": "Gait/falls risk documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "spine",
+            "prompt_text": "Spine tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-adrenal-incidentaloma-referral",
+    "workflow_display_name": "Endo Adrenal Incidentaloma",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "weight",
+            "prompt_text": "Weight documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "general",
+        "group_label": "General",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. general findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "appearance",
+            "prompt_text": "General appearance documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-pituitary-symptoms-documentation",
+    "workflow_display_name": "Endo Pituitary Symptoms",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro",
+        "group_label": "Neurological",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neurological findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "visual_fields",
+            "prompt_text": "Visual fields documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "neuro_screen",
+            "prompt_text": "Neurological screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-dysuria-uti-symptoms",
+    "workflow_display_name": "Uro Dysuria/UTI",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "temp",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "suprapubic",
+            "prompt_text": "Suprapubic tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "cva",
+            "prompt_text": "Flank/CVA tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "hydration",
+        "group_label": "Hydration",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. hydration findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "hydration",
+            "prompt_text": "Hydration documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-hematuria",
+    "workflow_display_name": "Uro Hematuria",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "flank",
+            "prompt_text": "Flank tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-luts-bph",
+    "workflow_display_name": "Uro LUTS/BPH",
+    "exam_groups": [
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "bladder",
+            "prompt_text": "Bladder distension documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rectal",
+        "group_label": "Rectal examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. rectal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "dre",
+            "prompt_text": "Digital rectal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-renal-colic-followup",
+    "workflow_display_name": "Uro Renal Colic Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal/flank examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. abdominal/flank examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal and flank examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "cva",
+            "prompt_text": "CVA tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "temp",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-urinary-retention-documentation",
+    "workflow_display_name": "Uro Urinary Retention",
+    "exam_groups": [
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "bladder",
+            "prompt_text": "Bladder distension documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro",
+        "group_label": "Neurological",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neurological findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neuro",
+            "prompt_text": "Neurological screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-flank-pain",
+    "workflow_display_name": "Uro Flank Pain",
+    "exam_groups": [
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal/flank examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. abdominal/flank examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal and flank tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "cva",
+            "prompt_text": "CVA tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "temp",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-frequency-urgency",
+    "workflow_display_name": "Uro Frequency/Urgency",
+    "exam_groups": [
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neph-ckd-followup",
+    "workflow_display_name": "Neph CKD Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "weight",
+            "prompt_text": "Weight documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "general",
+        "group_label": "Fluid status",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. fluid status findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "oedema",
+            "prompt_text": "Oedema documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neph-proteinuria",
+    "workflow_display_name": "Neph Proteinuria",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "weight",
+            "prompt_text": "Weight documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "general",
+        "group_label": "Fluid status",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. fluid status findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "oedema",
+            "prompt_text": "Oedema documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neph-electrolyte-abnormality-review",
+    "workflow_display_name": "Neph Electrolyte Abnormality",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "hr",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "general",
+        "group_label": "General",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. general findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "hydration",
+            "prompt_text": "Hydration/fluid status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
   }
 ]

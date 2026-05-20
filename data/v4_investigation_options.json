@@ -5793,5 +5793,849 @@
     ],
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
+  },
+  {
+    "workflow_id": "endo-diabetes-followup",
+    "workflow_display_name": "Endo Diabetes Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "hba1c",
+            "option_text": "HbA1c reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "HbA1c reviewed."
+          },
+          {
+            "option_id": "renal",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          },
+          {
+            "option_id": "acr",
+            "option_text": "Urine ACR reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urine ACR reviewed."
+          },
+          {
+            "option_id": "lipid",
+            "option_text": "Lipid profile reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Lipid profile reviewed."
+          },
+          {
+            "option_id": "eye_screening",
+            "option_text": "Eye screening report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Eye screening report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-thyroid-symptoms",
+    "workflow_display_name": "Endo Thyroid Symptoms",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "tft",
+            "option_text": "Thyroid function tests reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Thyroid function tests reviewed."
+          },
+          {
+            "option_id": "antibodies",
+            "option_text": "Thyroid antibodies reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Thyroid antibodies reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "us_thyroid",
+            "option_text": "Thyroid ultrasound report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Thyroid ultrasound report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-hypothyroidism-followup",
+    "workflow_display_name": "Endo Hypothyroidism Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "tsh",
+            "option_text": "TSH reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "TSH reviewed."
+          },
+          {
+            "option_id": "free_t4",
+            "option_text": "Free T4 reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Free T4 reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-hyperthyroidism-followup",
+    "workflow_display_name": "Endo Hyperthyroidism Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "tft",
+            "option_text": "Thyroid function tests reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Thyroid function tests reviewed."
+          },
+          {
+            "option_id": "antibodies",
+            "option_text": "TSI/antibody levels reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "TSI/antibody levels reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-obesity-counseling-documentation",
+    "workflow_display_name": "Endo Obesity Counseling",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "hba1c",
+            "option_text": "HbA1c/glucose reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "HbA1c/glucose reviewed."
+          },
+          {
+            "option_id": "lipid",
+            "option_text": "Lipid profile reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Lipid profile reviewed."
+          },
+          {
+            "option_id": "tft",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Thyroid function reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-hypoglycemia-review",
+    "workflow_display_name": "Endo Hypoglycemia Review",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "hba1c",
+            "option_text": "HbA1c reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "HbA1c reviewed."
+          },
+          {
+            "option_id": "glucose_log",
+            "option_text": "Glucose log reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Glucose log reviewed."
+          },
+          {
+            "option_id": "medication_list",
+            "option_text": "Medication list reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Medication list reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-pcos-metabolic-review",
+    "workflow_display_name": "Endo PCOS Metabolic Review",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "hba1c",
+            "option_text": "HbA1c/glucose reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "HbA1c/glucose reviewed."
+          },
+          {
+            "option_id": "lipid",
+            "option_text": "Lipid profile reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Lipid profile reviewed."
+          },
+          {
+            "option_id": "hormonal",
+            "option_text": "Hormonal profile reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Hormonal profile reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-osteoporosis-followup",
+    "workflow_display_name": "Endo Osteoporosis Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "dexa",
+            "option_text": "DEXA report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "DEXA report reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "calcium",
+            "option_text": "Calcium/vitamin D reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Calcium/vitamin D reviewed."
+          },
+          {
+            "option_id": "renal",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-adrenal-incidentaloma-referral",
+    "workflow_display_name": "Endo Adrenal Incidentaloma",
+    "investigation_groups": [
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "ct_mri",
+            "option_text": "CT/MRI report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CT/MRI report reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "hormonal",
+            "option_text": "Hormonal workup reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Hormonal workup reviewed."
+          },
+          {
+            "option_id": "electrolytes",
+            "option_text": "Electrolytes reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Electrolytes reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "endo-pituitary-symptoms-documentation",
+    "workflow_display_name": "Endo Pituitary Symptoms",
+    "investigation_groups": [
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "mri_pituitary",
+            "option_text": "Pituitary MRI reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Pituitary MRI reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "hormonal",
+            "option_text": "Hormonal profile reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Hormonal profile reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-dysuria-uti-symptoms",
+    "workflow_display_name": "Uro Dysuria/UTI",
+    "investigation_groups": [
+      {
+        "group_id": "urine",
+        "group_label": "Urinalysis",
+        "options": [
+          {
+            "option_id": "dipstick",
+            "option_text": "Urinalysis reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urinalysis reviewed."
+          },
+          {
+            "option_id": "culture",
+            "option_text": "Urine culture reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urine culture reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "crp",
+            "option_text": "CRP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CRP reviewed."
+          },
+          {
+            "option_id": "renal",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-hematuria",
+    "workflow_display_name": "Uro Hematuria",
+    "investigation_groups": [
+      {
+        "group_id": "urine",
+        "group_label": "Urinalysis",
+        "options": [
+          {
+            "option_id": "urinalysis",
+            "option_text": "Urinalysis reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urinalysis reviewed."
+          },
+          {
+            "option_id": "microscopy",
+            "option_text": "Urine microscopy/culture reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urine microscopy/culture reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "renal",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "us_kub",
+            "option_text": "Renal tract imaging reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal tract imaging reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-luts-bph",
+    "workflow_display_name": "Uro LUTS/BPH",
+    "investigation_groups": [
+      {
+        "group_id": "urine",
+        "group_label": "Urinalysis",
+        "options": [
+          {
+            "option_id": "urinalysis",
+            "option_text": "Urinalysis reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urinalysis reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "psa",
+            "option_text": "PSA result reviewed if clinician arranged and available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "PSA result reviewed."
+          },
+          {
+            "option_id": "renal",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-renal-colic-followup",
+    "workflow_display_name": "Uro Renal Colic Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "urine",
+        "group_label": "Urinalysis",
+        "options": [
+          {
+            "option_id": "urinalysis",
+            "option_text": "Urinalysis reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urinalysis reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "renal",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "ct_kub",
+            "option_text": "CT/KUB imaging reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CT/KUB imaging reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-urinary-retention-documentation",
+    "workflow_display_name": "Uro Urinary Retention",
+    "investigation_groups": [
+      {
+        "group_id": "urine",
+        "group_label": "Urinalysis",
+        "options": [
+          {
+            "option_id": "urinalysis",
+            "option_text": "Urinalysis reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urinalysis reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "renal",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "bladder_scan",
+            "option_text": "Bladder scan result reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Bladder scan result reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-flank-pain",
+    "workflow_display_name": "Uro Flank Pain",
+    "investigation_groups": [
+      {
+        "group_id": "urine",
+        "group_label": "Urinalysis",
+        "options": [
+          {
+            "option_id": "urinalysis",
+            "option_text": "Urinalysis reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urinalysis reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "crp",
+            "option_text": "CRP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CRP reviewed."
+          },
+          {
+            "option_id": "renal",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "ct_kub",
+            "option_text": "CT/KUB/ultrasound imaging reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CT/KUB/ultrasound imaging reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "uro-frequency-urgency",
+    "workflow_display_name": "Uro Frequency/Urgency",
+    "investigation_groups": [
+      {
+        "group_id": "urine",
+        "group_label": "Urinalysis",
+        "options": [
+          {
+            "option_id": "urinalysis",
+            "option_text": "Urinalysis reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urinalysis reviewed."
+          },
+          {
+            "option_id": "culture",
+            "option_text": "Urine culture reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urine culture reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "glucose",
+            "option_text": "Glucose/HbA1c reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Glucose/HbA1c reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neph-ckd-followup",
+    "workflow_display_name": "Neph CKD Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "renal",
+            "option_text": "Renal function reviewed if reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed.."
+          },
+          {
+            "option_id": "egfr",
+            "option_text": "eGFR reviewed if reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "eGFR reviewed.."
+          },
+          {
+            "option_id": "acr",
+            "option_text": "Urine ACR/proteinuria reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urine ACR/proteinuria reviewed."
+          },
+          {
+            "option_id": "electrolytes",
+            "option_text": "Electrolytes reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Electrolytes reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neph-proteinuria",
+    "workflow_display_name": "Neph Proteinuria",
+    "investigation_groups": [
+      {
+        "group_id": "urine",
+        "group_label": "Urinalysis",
+        "options": [
+          {
+            "option_id": "acr",
+            "option_text": "Urine ACR/proteinuria reviewed if reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urine ACR/proteinuria reviewed.."
+          },
+          {
+            "option_id": "urinalysis",
+            "option_text": "Urinalysis reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urinalysis reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "renal",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neph-electrolyte-abnormality-review",
+    "workflow_display_name": "Neph Electrolyte Abnormality",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "electrolytes",
+            "option_text": "Electrolytes reviewed if reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Electrolytes reviewed.."
+          },
+          {
+            "option_id": "renal",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          },
+          {
+            "option_id": "repeat",
+            "option_text": "Repeat blood tests reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Repeat blood tests reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "ecg",
+            "option_text": "ECG reviewed if performed by clinician.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "ECG reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
   }
 ]
