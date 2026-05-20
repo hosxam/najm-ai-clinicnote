@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Data Import Test Page — Najm AI ClinicNote</title>
+<title>Data Import Test Page -€” Najm AI ClinicNote</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; }
   body {
@@ -96,7 +96,7 @@
     return '<span class="fail">FAIL' + (detail ? ': ' + detail : '') + '</span>';
   }
 
-  // ── Load data ──
+  // -”€-”€ Load data -”€-”€
   var D = window.NAJM_CLINICAL_DATA;
   if (!D) {
     updateStatus('ERROR: NAJM_CLINICAL_DATA not defined', false);
@@ -106,7 +106,7 @@
   var totalFails = 0;
   var html = '';
 
-  // ── Render counts ──
+  // -”€-”€ Render counts -”€-”€
   function countRow(label, actual, expected, entryId) {
     var ok = actual === expected;
     if (!ok) totalFails++;
@@ -132,7 +132,7 @@
 
   document.getElementById('counts').innerHTML = html;
 
-  // ── Specialty distribution ──
+  // -”€-”€ Specialty distribution -”€-”€
   html = '<table><thead><tr><th>Specialty</th><th>Workflows</th><th>History Layout ID</th></tr></thead><tbody>';
   D.specialties.forEach(function(s) {
     var layoutExists = D.historyLayouts[s.specialty_id] ? 'yes' : 'MISSING';
@@ -142,7 +142,7 @@
   html += '</tbody></table>';
   document.getElementById('specialty-dist').innerHTML = html;
 
-  // ── Sample workflow ──
+  // -”€-”€ Sample workflow -”€-”€
   var sampleId = 'gp-fever-urti';
   var wf = D.workflowsById[sampleId];
   if (!wf) {
@@ -204,7 +204,7 @@
     }
   }
 
-  // ── Search tests ──
+  // -”€-”€ Search tests -”€-”€
   html = '';
   var searchTests = [
     { query: 'fever', min: 1, label: 'Search "fever"' },
@@ -245,7 +245,7 @@
 
   document.getElementById('search-tests').innerHTML = html;
 
-  // ── Chip group distribution ──
+  // -”€-”€ Chip group distribution -”€-”€
   html = '';
   var groups = D.stats.chip_group_counts || {};
   var sortedGroups = Object.keys(groups).sort();
@@ -254,7 +254,7 @@
   });
   document.getElementById('chip-dist').querySelector('tbody').innerHTML = html;
 
-  // ── Diagnosis index samples ──
+  // -”€-”€ Diagnosis index samples -”€-”€
   html = '<div class="section">';
   var entries = D.diagnosisIndex || D.searchIndex.entries || [];
   html += 'Total entries: ' + entries.length + '<br><br>';
@@ -262,7 +262,7 @@
   entries.slice(0, 20).forEach(function(e) {
     types[e.type] = (types[e.type] || 0) + 1;
     var wfList = e.workflow_ids.slice(0, 3).join(', ');
-    html += e.type + ': "' + e.label + '" → [' + wfList + (e.workflow_ids.length > 3 ? '...' : '') + ']';
+    html += e.type + ': "' + e.label + '" -†’ [' + wfList + (e.workflow_ids.length > 3 ? '...' : '') + ']';
     if (e.aliases && e.aliases.length > 0) html += ' <span class="count">[' + e.aliases.slice(0, 3).join(', ') + ']</span>';
     html += '<br>';
   });
@@ -276,13 +276,13 @@
   html += '</span></div>';
   document.getElementById('diag-samples').innerHTML = html;
 
-  // ── Report template samples ──
+  // -”€-”€ Report template samples -”€-”€
   html = '<div class="section">';
   for (var tid in D.reportTemplates) {
     var t = D.reportTemplates[tid];
     html += '<div style="margin-bottom:8px">';
     html += '<strong>' + t.name + '</strong> <span class="count">(' + t.template_id + ', ' + t.type + ')</span><br>';
-    html += 'Sections: ' + t.sections.map(function(s) { return s.display_name; }).join(' → ');
+    html += 'Sections: ' + t.sections.map(function(s) { return s.display_name; }).join(' -†’ ');
     var hasDisclaimer = t.disclaimer && t.disclaimer.length > 0;
     var hasLimitations = t.sections.some(function(s) { return s.section_id === 'limitations' || s.section_id === 'review'; });
     if (!hasDisclaimer) { totalFails++; fail('Missing disclaimer in ' + t.template_id); }
@@ -294,7 +294,7 @@
   html += '</div>';
   document.getElementById('report-samples').innerHTML = html;
 
-  // ── Final status ──
+  // -”€-”€ Final status -”€-”€
   document.getElementById('content').style.display = 'block';
   if (totalFails === 0) {
     updateStatus('All tests passed. Data bundle is ready for integration.', true);
