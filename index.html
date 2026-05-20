@@ -5730,6 +5730,41 @@ button,input,select,textarea{font:inherit}
 img,svg{max-width:100%}
 :focus-visible{outline:3px solid rgba(15,118,110,.35)!important;outline-offset:3px!important}
 
+/* === Aesthetic upgrade: shared component polish (visual-only) === */
+nav{background:rgba(248,250,247,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(219,231,228,.9);box-shadow:0 8px 28px rgba(15,23,42,.05)}
+.nav-logo{letter-spacing:-.01em;color:var(--color-text)}
+.nav-links a{border-radius:999px;color:var(--color-text-soft);font-weight:700}
+.nav-links a:hover{background:var(--color-primary-soft);color:var(--color-primary-dark)}
+.nav-cta{background:var(--color-primary)!important;box-shadow:0 10px 24px rgba(15,118,110,.18)}
+.btn{min-height:42px;border-radius:999px;font-weight:750;letter-spacing:0;box-shadow:none;transition:transform .14s ease,box-shadow .14s ease,background-color .14s ease,border-color .14s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--color-primary);color:#fff;box-shadow:0 10px 24px rgba(15,118,110,.22)}
+.btn-primary:hover{background:var(--color-primary-dark)}
+.btn-outline{background:#fff;color:var(--color-primary-dark);border:1px solid var(--color-border-strong);box-shadow:var(--shadow-sm)}
+.btn-outline:hover{background:var(--color-bg-soft);border-color:var(--color-primary)}
+.btn-ghost{background:#fff;color:var(--color-text-soft);border:1px solid var(--color-border)}
+.btn-ghost:hover{background:var(--color-surface-muted);border-color:var(--color-border-strong)}
+.btn-sm,.btn-xs{min-height:36px}
+.card,.step-card,.product-item,.presets-card,.safety-section,.why-faster,.feedback-panel,.feedback-card,.calculator-card,.example-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);box-shadow:var(--shadow-sm)}
+.card:hover,.step-card:hover,.product-item:hover,.presets-card:hover,.calculator-card:hover,.example-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.form-group label,.speed-section-title,.v4-field-label{color:var(--color-text-soft);font-weight:800}
+.form-group select,.form-group input,.form-group textarea,.v4-select,.v4-search-input,.v4-textarea,.v4-field input,.v4-field textarea,.v4-field select{border:1px solid var(--color-border);border-radius:var(--radius-sm);background:#fff;color:var(--color-text);box-shadow:inset 0 1px 0 rgba(15,23,42,.02)}
+.form-group select:focus,.form-group input:focus,.form-group textarea:focus,.v4-select:focus,.v4-search-input:focus,.v4-textarea:focus{border-color:var(--color-primary);box-shadow:0 0 0 4px rgba(15,118,110,.12)}
+.chip,.v4-chip-btn,.v4-section-chip{border:1px solid var(--color-border);background:#fff;color:var(--color-text-soft);border-radius:999px;box-shadow:var(--shadow-sm);font-weight:700}
+.chip:hover,.v4-chip-btn:hover{border-color:var(--color-primary);box-shadow:var(--shadow-md)}
+.chip.selected,.chip[aria-pressed="true"],.v4-chip-btn.active{background:var(--color-primary);border-color:var(--color-primary);color:#fff;box-shadow:0 8px 18px rgba(15,118,110,.2)}
+.chip-redflag{background:var(--color-danger-bg);border-color:#fecaca;color:var(--color-danger)}
+.output-card{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-md);box-shadow:var(--shadow-md)}
+.output-header,.output-actions,.output-footer{background:#fff;border-color:var(--color-border)}
+.output-tab{border-radius:999px;font-weight:800}
+.output-tab.active{background:var(--color-primary);border-color:var(--color-primary);color:#fff}
+.output-body,.v3-edit-preview,.v4-hist-preview,.v4-output-box{background:#fbfdfc!important;color:#1f2937!important;border:1px solid var(--color-border);border-radius:var(--radius-sm);line-height:1.7}
+.phi-warning,.note-phi-warn,.v4-phi-warning{border-radius:var(--radius-sm);border-color:#fecaca;background:var(--color-danger-bg);color:#7f1d1d}
+.amber-box,.prompts-box,.v4-safety-box,.v4-safety-box-sm,.v4-warning{border-radius:var(--radius-sm);border-color:#fed7aa;background:var(--color-warning-bg);color:#7c2d12}
+.status-bar,.trust-badge{border:1px solid var(--color-border);background:rgba(255,255,255,.82);box-shadow:var(--shadow-sm);border-radius:999px;color:var(--color-text-soft)}
+.calculator-result{background:#fbfdfc;border:1px solid var(--color-border);color:var(--color-text);line-height:1.6}
+.calculator-banner{background:var(--color-bg-soft);border-color:var(--color-border);color:var(--color-text-soft)}
+
 </style>
 
 
