@@ -11,3 +11,4 @@ Thumbs.db
 # Temp
 *.log
 _patch.*
+.aider*

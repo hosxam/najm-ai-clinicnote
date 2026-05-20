@@ -533,7 +533,7 @@
     "purpose": "Registry placeholder for future clinician-entered chest pain risk documentation.",
     "clinical_context": "May be relevant for future urgent chest pain documentation after source and implementation review.",
     "risk_level": "high",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -702,7 +702,7 @@
   },
   {
     "calculator_id": "wells_pe",
-    "calculator_name": "Wells PE",
+    "calculator_name": "Wells PE Score",
     "specialty": "General Medicine / GP",
     "related_complaints": [
       "shortness of breath",
@@ -716,7 +716,7 @@
     "purpose": "Registry placeholder for future clinician-entered pulmonary embolism probability documentation.",
     "clinical_context": "May be relevant for future urgent chest pain or dyspnea documentation after source review.",
     "risk_level": "high",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -749,7 +749,7 @@
   },
   {
     "calculator_id": "wells_dvt",
-    "calculator_name": "Wells DVT",
+    "calculator_name": "Wells DVT Score",
     "specialty": "General Medicine / GP",
     "related_complaints": [
       "leg swelling",
@@ -760,7 +760,7 @@
     "purpose": "Registry placeholder for future clinician-entered DVT probability documentation.",
     "clinical_context": "May be relevant for future leg swelling or calf pain workflows after source review.",
     "risk_level": "high",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -807,7 +807,7 @@
     "purpose": "Registry placeholder for future clinician-entered pneumonia severity documentation.",
     "clinical_context": "May be relevant for future pneumonia workflows after source review.",
     "risk_level": "high",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -900,7 +900,7 @@
     "purpose": "Registry placeholder for future clinician-entered consciousness assessment documentation.",
     "clinical_context": "May be relevant for future head injury or neurological observation workflows after source review.",
     "risk_level": "high",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -1391,7 +1391,7 @@
     "clinical_context": "Chest pain workflow.",
     "risk_level": "high",
     "implementation_status": "implemented",
-    "source_status": "source_verified",
+    "source_status": "needs_source_review",
     "formula_status": "implemented",
     "input_fields": [
       {
@@ -1419,7 +1419,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "riskFactors",
+        "field_id": "risk_actors",
         "label": "Risk factors (0-2)",
         "input_type": "number",
         "units": "",
@@ -1464,7 +1464,7 @@
     "clinical_context": "Pneumonia or suspected infection workflow.",
     "risk_level": "high",
     "implementation_status": "implemented",
-    "source_status": "source_verified",
+    "source_status": "needs_source_review",
     "formula_status": "implemented",
     "input_fields": [
       {
@@ -1476,7 +1476,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "ureaGT7",
+        "field_id": "urea__7",
         "label": "Urea >7 mmol/L",
         "input_type": "boolean",
         "units": null,
@@ -1484,7 +1484,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "rrGE30",
+        "field_id": "rr__30",
         "label": "Respiratory rate ≥30/min",
         "input_type": "boolean",
         "units": null,
@@ -1492,7 +1492,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "bpLow",
+        "field_id": "bp_ow",
         "label": "Systolic BP <90 or diastolic ≤60 mmHg",
         "input_type": "boolean",
         "units": null,
@@ -1500,7 +1500,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "ageGE65",
+        "field_id": "age__65",
         "label": "Age ≥65",
         "input_type": "boolean",
         "units": null,
@@ -1522,7 +1522,7 @@
     "review_required": true
   },
   {
-    "calculator_id": "ottawaKnee",
+    "calculator_id": "ottawa_knee",
     "calculator_name": "Ottawa Knee Rule",
     "specialty": "Orthopedics / Emergency",
     "related_complaints": [
@@ -1538,11 +1538,11 @@
     "clinical_context": "Knee injury or minor trauma workflow.",
     "risk_level": "high",
     "implementation_status": "implemented",
-    "source_status": "source_verified",
+    "source_status": "needs_source_review",
     "formula_status": "implemented",
     "input_fields": [
       {
-        "field_id": "ageGT55",
+        "field_id": "age__55",
         "label": "Age >55",
         "input_type": "boolean",
         "units": null,
@@ -1550,7 +1550,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "patellaTenderness",
+        "field_id": "patella_enderness",
         "label": "Patella tenderness",
         "input_type": "boolean",
         "units": null,
@@ -1558,7 +1558,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "fibularHeadTenderness",
+        "field_id": "fibular_ead_enderness",
         "label": "Fibular head tenderness",
         "input_type": "boolean",
         "units": null,
@@ -1566,7 +1566,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "unableToBearWeight",
+        "field_id": "unable_o_ear_eight",
         "label": "Unable to bear weight",
         "input_type": "boolean",
         "units": null,
@@ -1574,7 +1574,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "unableToFlex90",
+        "field_id": "unable_o_lex90",
         "label": "Unable to flex 90°",
         "input_type": "boolean",
         "units": null,
@@ -1584,7 +1584,7 @@
     ],
     "output_fields": [
       {
-        "field_id": "ottawaKnee_result",
+        "field_id": "ottawa_nee_result",
         "label": "Ottawa Knee Rule result",
         "output_type": "text",
         "safety_note": "Rule result for documentation support only. Clinician interpretation required."
@@ -1596,7 +1596,7 @@
     "review_required": true
   },
   {
-    "calculator_id": "ottawaAnkle",
+    "calculator_id": "ottawa_ankle",
     "calculator_name": "Ottawa Ankle Rule",
     "specialty": "Orthopedics / Emergency",
     "related_complaints": [
@@ -1613,11 +1613,11 @@
     "clinical_context": "Ankle injury or minor trauma workflow.",
     "risk_level": "high",
     "implementation_status": "implemented",
-    "source_status": "source_verified",
+    "source_status": "needs_source_review",
     "formula_status": "implemented",
     "input_fields": [
       {
-        "field_id": "malleolarTenderness",
+        "field_id": "malleolar_enderness",
         "label": "Malleolar tenderness",
         "input_type": "boolean",
         "units": null,
@@ -1625,7 +1625,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "midfootTenderness",
+        "field_id": "midfoot_enderness",
         "label": "Midfoot tenderness",
         "input_type": "boolean",
         "units": null,
@@ -1633,7 +1633,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "unableToBearWeight",
+        "field_id": "unable_o_ear_eight",
         "label": "Unable to bear weight",
         "input_type": "boolean",
         "units": null,
@@ -1643,7 +1643,7 @@
     ],
     "output_fields": [
       {
-        "field_id": "ottawaAnkle_result",
+        "field_id": "ottawa_nkle_result",
         "label": "Ottawa Ankle Rule result",
         "output_type": "text",
         "safety_note": "Rule result for documentation support only. Clinician interpretation required."
@@ -1651,201 +1651,6 @@
     ],
     "interpretation_mode": "classification",
     "safety_note": "Rule result for documentation support only. Clinician interpretation required.",
-    "display_conditions": [],
-    "review_required": true
-  },
-  {
-    "calculator_id": "wellsDVT",
-    "calculator_name": "Wells DVT Score",
-    "specialty": "Vascular / Emergency",
-    "related_complaints": [
-      "leg swelling",
-      "minor trauma"
-    ],
-    "related_workflow_ids": [
-      "urgent-minor-trauma"
-    ],
-    "purpose": "Documentation support for Wells DVT score.",
-    "clinical_context": "Leg swelling or minor trauma workflow.",
-    "risk_level": "high",
-    "implementation_status": "implemented",
-    "source_status": "source_verified",
-    "formula_status": "implemented",
-    "input_fields": [
-      {
-        "field_id": "activeCancer",
-        "label": "Active cancer",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "paralysisOrCast",
-        "label": "Paralysis or recent cast",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "bedRestSurgery",
-        "label": "Bed rest >3 days or surgery within 12 weeks",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "localizedTenderness",
-        "label": "Localized tenderness along deep veins",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "entireLegSwelling",
-        "label": "Entire leg swelling",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "calfSwelling",
-        "label": "Calf swelling >3 cm compared to asymptomatic leg",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "pittingEdema",
-        "label": "Pitting edema (symptomatic leg only)",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "collateralVeins",
-        "label": "Collateral superficial veins",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "alternativeDiagnosis",
-        "label": "Alternative diagnosis as likely or more likely than DVT",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      }
-    ],
-    "output_fields": [
-      {
-        "field_id": "wellsDVT_score",
-        "label": "Wells DVT score",
-        "output_type": "score",
-        "safety_note": "Score calculated for documentation support only. Clinician interpretation required."
-      }
-    ],
-    "interpretation_mode": "score",
-    "safety_note": "Score calculated for documentation support only. Clinician interpretation required.",
-    "display_conditions": [],
-    "review_required": true
-  },
-  {
-    "calculator_id": "wellsPE",
-    "calculator_name": "Wells PE Score",
-    "specialty": "Cardiology / Respiratory / Emergency",
-    "related_complaints": [
-      "shortness of breath",
-      "chest pain",
-      "dyspnea"
-    ],
-    "related_workflow_ids": [
-      "gp-shortness-of-breath",
-      "urgent-shortness-of-breath",
-      "urgent-chest-pain"
-    ],
-    "purpose": "Documentation support for Wells PE score.",
-    "clinical_context": "Shortness of breath, chest pain, or dyspnea workflow.",
-    "risk_level": "high",
-    "implementation_status": "implemented",
-    "source_status": "source_verified",
-    "formula_status": "implemented",
-    "input_fields": [
-      {
-        "field_id": "dvtSymptoms",
-        "label": "Clinical signs of DVT",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "peIsPrimaryDiagnosis",
-        "label": "PE is the most likely diagnosis",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "hrGT100",
-        "label": "Heart rate >100 bpm",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "surgeryImmobilization",
-        "label": "Surgery or immobilization within 4 weeks",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "previousDvtPE",
-        "label": "Previous DVT or PE",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "hemoptysis",
-        "label": "Hemoptysis",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      },
-      {
-        "field_id": "malignancy",
-        "label": "Active malignancy",
-        "input_type": "boolean",
-        "units": null,
-        "required": true,
-        "safety_note": "Clinician-entered value only."
-      }
-    ],
-    "output_fields": [
-      {
-        "field_id": "wellsPE_score",
-        "label": "Wells PE score",
-        "output_type": "score",
-        "safety_note": "Score calculated for documentation support only. Clinician interpretation required."
-      }
-    ],
-    "interpretation_mode": "score",
-    "safety_note": "Score calculated for documentation support only. Clinician interpretation required.",
     "display_conditions": [],
     "review_required": true
   },
@@ -1867,11 +1672,11 @@
     "clinical_context": "Head injury, seizure, or altered consciousness workflow.",
     "risk_level": "high",
     "implementation_status": "implemented",
-    "source_status": "source_verified",
+    "source_status": "needs_source_review",
     "formula_status": "implemented",
     "input_fields": [
       {
-        "field_id": "eyeOpening",
+        "field_id": "eye_pening",
         "label": "Eye opening (1-4)",
         "input_type": "number",
         "units": "",
@@ -1924,11 +1729,11 @@
     "clinical_context": "Sore throat or pharyngitis workflow.",
     "risk_level": "high",
     "implementation_status": "implemented",
-    "source_status": "source_verified",
+    "source_status": "needs_source_review",
     "formula_status": "implemented",
     "input_fields": [
       {
-        "field_id": "feverGT38",
+        "field_id": "fever__38",
         "label": "Fever >38°C",
         "input_type": "boolean",
         "units": null,
@@ -1936,7 +1741,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "tonsillarExudate",
+        "field_id": "tonsillar_xudate",
         "label": "Tonsillar exudate",
         "input_type": "boolean",
         "units": null,
@@ -1944,7 +1749,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "tenderCervicalNodes",
+        "field_id": "tender_ervical_odes",
         "label": "Tender cervical lymph nodes",
         "input_type": "boolean",
         "units": null,
@@ -1952,7 +1757,7 @@
         "safety_note": "Clinician-entered value only."
       },
       {
-        "field_id": "noCough",
+        "field_id": "no_ough",
         "label": "Absence of cough",
         "input_type": "boolean",
         "units": null,

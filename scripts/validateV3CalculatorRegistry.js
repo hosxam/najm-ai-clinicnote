@@ -4,7 +4,7 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const REGISTRY_PATH = path.join(ROOT, 'data', 'v3_calculator_registry.json');
 
-const EXPECTED_CALCULATOR_COUNT = 26;
+const EXPECTED_CALCULATOR_COUNT = 32;
 const VALID_RISK_LEVELS = new Set(['low', 'medium', 'high']);
 const VALID_SOURCE_STATUS = new Set(['unverified', 'needs_source_review', 'verified_later']);
 const VALID_INPUT_TYPES = new Set(['number', 'text', 'select', 'multi_select', 'boolean']);
