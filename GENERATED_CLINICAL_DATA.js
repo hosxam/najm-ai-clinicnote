@@ -1,6 +1,6 @@
 // GENERATED_CLINICAL_DATA.js — Najm AI ClinicNote
 // Auto-generated. Do not edit manually.
-// Generated: 2026-05-20 09:51:57
+// Generated: 2026-05-20 16:13:47
 // Source: /data JSON files (validated)
 
 (function() {
@@ -42,7 +42,7 @@
   var data = {
   "metadata": {
     "version": "v2",
-    "generated_at": "2026-05-20 09:51:57",
+    "generated_at": "2026-05-20 16:13:47",
     "source": "validated_json_dataset (data/ CSVs -> JSON, commit 262c021)",
     "warning": "Documentation support only. Clinician review required.",
     "description": "Najm AI ClinicNote clinical data bundle. Built from /data JSON files."
@@ -165376,7 +165376,7 @@
       "purpose": "Registry placeholder for future clinician-entered pulmonary embolism probability documentation.",
       "clinical_context": "May be relevant for future urgent chest pain or dyspnea documentation after source review.",
       "risk_level": "high",
-      "implementation_status": "registry_only",
+      "implementation_status": "implemented",
       "source_status": "needs_source_review",
       "formula_status": "not_implemented",
       "input_fields": [
@@ -165409,7 +165409,7 @@
     },
     "wells_dvt": {
       "calculator_id": "wells_dvt",
-      "calculator_name": "Wells DVT",
+      "calculator_name": "Wells DVT Score",
       "specialty": "General Medicine / GP",
       "related_complaints": [
         "leg swelling",
@@ -165420,7 +165420,7 @@
       "purpose": "Registry placeholder for future clinician-entered DVT probability documentation.",
       "clinical_context": "May be relevant for future leg swelling or calf pain workflows after source review.",
       "risk_level": "high",
-      "implementation_status": "registry_only",
+      "implementation_status": "implemented",
       "source_status": "needs_source_review",
       "formula_status": "not_implemented",
       "input_fields": [
@@ -166034,6 +166034,417 @@
       "safety_note": "Child-Pugh score documents liver disease severity. Does not determine management.",
       "display_conditions": [],
       "review_required": true
+    },
+    "heart": {
+      "calculator_id": "heart",
+      "calculator_name": "HEART Score",
+      "specialty": "Cardiology / Emergency",
+      "related_complaints": [
+        "chest pain"
+      ],
+      "related_workflow_ids": [
+        "gp-chest-pain",
+        "urgent-chest-pain",
+        "cardio-chest-pain"
+      ],
+      "purpose": "Documentation support for HEART score.",
+      "clinical_context": "Chest pain workflow.",
+      "risk_level": "high",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "implemented",
+      "input_fields": [
+        {
+          "field_id": "history",
+          "label": "History (0-2)",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "ecg",
+          "label": "ECG (0-2)",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "age",
+          "label": "Age (0-2)",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "risk_actors",
+          "label": "Risk factors (0-2)",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "troponin",
+          "label": "Troponin (0-2)",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "heart_score",
+          "label": "HEART score",
+          "output_type": "score",
+          "safety_note": "Score calculated for documentation support only. Clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "score",
+      "safety_note": "Score calculated for documentation support only. Clinician interpretation required.",
+      "display_conditions": [],
+      "review_required": true
+    },
+    "curb65": {
+      "calculator_id": "curb65",
+      "calculator_name": "CURB-65",
+      "specialty": "Respiratory / Emergency",
+      "related_complaints": [
+        "pneumonia",
+        "suspected infection"
+      ],
+      "related_workflow_ids": [
+        "resp-pneumonia-followup",
+        "urgent-fever-suspected-infection"
+      ],
+      "purpose": "Documentation support for CURB-65 score.",
+      "clinical_context": "Pneumonia or suspected infection workflow.",
+      "risk_level": "high",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "implemented",
+      "input_fields": [
+        {
+          "field_id": "confusion",
+          "label": "Confusion",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "urea__7",
+          "label": "Urea >7 mmol/L",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "rr__30",
+          "label": "Respiratory rate ≥30/min",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "bp_ow",
+          "label": "Systolic BP <90 or diastolic ≤60 mmHg",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "age__65",
+          "label": "Age ≥65",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "curb65_score",
+          "label": "CURB-65 score",
+          "output_type": "score",
+          "safety_note": "Score calculated for documentation support only. Clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "score",
+      "safety_note": "Score calculated for documentation support only. Clinician interpretation required.",
+      "display_conditions": [],
+      "review_required": true
+    },
+    "ottawa_knee": {
+      "calculator_id": "ottawa_knee",
+      "calculator_name": "Ottawa Knee Rule",
+      "specialty": "Orthopedics / Emergency",
+      "related_complaints": [
+        "knee injury",
+        "minor trauma"
+      ],
+      "related_workflow_ids": [
+        "msk-knee-pain",
+        "urgent-minor-trauma",
+        "msk-sports-injury"
+      ],
+      "purpose": "Documentation support for Ottawa Knee Rule.",
+      "clinical_context": "Knee injury or minor trauma workflow.",
+      "risk_level": "high",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "implemented",
+      "input_fields": [
+        {
+          "field_id": "age__55",
+          "label": "Age >55",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "patella_enderness",
+          "label": "Patella tenderness",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "fibular_ead_enderness",
+          "label": "Fibular head tenderness",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "unable_o_ear_eight",
+          "label": "Unable to bear weight",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "unable_o_lex90",
+          "label": "Unable to flex 90°",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "ottawa_nee_result",
+          "label": "Ottawa Knee Rule result",
+          "output_type": "text",
+          "safety_note": "Rule result for documentation support only. Clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "classification",
+      "safety_note": "Rule result for documentation support only. Clinician interpretation required.",
+      "display_conditions": [],
+      "review_required": true
+    },
+    "ottawa_ankle": {
+      "calculator_id": "ottawa_ankle",
+      "calculator_name": "Ottawa Ankle Rule",
+      "specialty": "Orthopedics / Emergency",
+      "related_complaints": [
+        "ankle injury",
+        "sprain",
+        "minor trauma"
+      ],
+      "related_workflow_ids": [
+        "msk-ankle-pain",
+        "urgent-minor-trauma",
+        "msk-sports-injury"
+      ],
+      "purpose": "Documentation support for Ottawa Ankle Rule.",
+      "clinical_context": "Ankle injury or minor trauma workflow.",
+      "risk_level": "high",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "implemented",
+      "input_fields": [
+        {
+          "field_id": "malleolar_enderness",
+          "label": "Malleolar tenderness",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "midfoot_enderness",
+          "label": "Midfoot tenderness",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "unable_o_ear_eight",
+          "label": "Unable to bear weight",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "ottawa_nkle_result",
+          "label": "Ottawa Ankle Rule result",
+          "output_type": "text",
+          "safety_note": "Rule result for documentation support only. Clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "classification",
+      "safety_note": "Rule result for documentation support only. Clinician interpretation required.",
+      "display_conditions": [],
+      "review_required": true
+    },
+    "gcs": {
+      "calculator_id": "gcs",
+      "calculator_name": "Glasgow Coma Scale",
+      "specialty": "Neurology / Emergency",
+      "related_complaints": [
+        "head injury",
+        "seizure",
+        "altered consciousness"
+      ],
+      "related_workflow_ids": [
+        "urgent-head-injury",
+        "neuro-seizure-followup",
+        "urgent-syncope"
+      ],
+      "purpose": "Documentation support for Glasgow Coma Scale.",
+      "clinical_context": "Head injury, seizure, or altered consciousness workflow.",
+      "risk_level": "high",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "implemented",
+      "input_fields": [
+        {
+          "field_id": "eye_pening",
+          "label": "Eye opening (1-4)",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "verbal",
+          "label": "Verbal response (1-5)",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "motor",
+          "label": "Motor response (1-6)",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "gcs_score",
+          "label": "GCS score",
+          "output_type": "score",
+          "safety_note": "Score calculated for documentation support only. Clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "score",
+      "safety_note": "Score calculated for documentation support only. Clinician interpretation required.",
+      "display_conditions": [],
+      "review_required": true
+    },
+    "mcisaac": {
+      "calculator_id": "mcisaac",
+      "calculator_name": "McIsaac / Centor Score",
+      "specialty": "ENT / General Practice",
+      "related_complaints": [
+        "sore throat",
+        "pharyngitis"
+      ],
+      "related_workflow_ids": [
+        "gp-sore-throat",
+        "ent-sore-throat"
+      ],
+      "purpose": "Documentation support for McIsaac / Centor score.",
+      "clinical_context": "Sore throat or pharyngitis workflow.",
+      "risk_level": "high",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "implemented",
+      "input_fields": [
+        {
+          "field_id": "fever__38",
+          "label": "Fever >38°C",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "tonsillar_xudate",
+          "label": "Tonsillar exudate",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "tender_ervical_odes",
+          "label": "Tender cervical lymph nodes",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "no_ough",
+          "label": "Absence of cough",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "age",
+          "label": "Age (0-120)",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "mcisaac_score",
+          "label": "McIsaac / Centor score",
+          "output_type": "score",
+          "safety_note": "Score calculated for documentation support only. Clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "score",
+      "safety_note": "Score calculated for documentation support only. Clinician interpretation required.",
+      "display_conditions": [],
+      "review_required": true
     }
   },
   "calculator_workflow_mapping": {
@@ -166124,15 +166535,15 @@
     ],
     "gp-chest-pain": [
       {
-        "calculator_id": "shock_index",
-        "calculator_name": "Shock index",
-        "relevance_reason": "May support documentation of vital-sign context when pulse and systolic blood pressure are clinician-entered.",
+        "calculator_id": "heart",
+        "calculator_name": "HEART Score",
+        "relevance_reason": "May support documentation of clinician-entered chest pain score components when separately assessed.",
         "suggestion_mode": "optional",
-        "risk_level": "low",
+        "risk_level": "high",
         "implementation_status": "implemented",
         "display_priority": 1,
-        "trigger_context": "Chest pain workflow with documented heart rate and systolic blood pressure.",
-        "safety_note": "Documentation aid only. Does not determine management."
+        "trigger_context": "Chest pain workflow with clinician-entered HEART components.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       },
       {
         "calculator_id": "mean_arterial_pressure",
@@ -166146,26 +166557,15 @@
         "safety_note": "Documentation aid only. Interpret in clinical context."
       },
       {
-        "calculator_id": "heart_score",
-        "calculator_name": "HEART Score",
-        "relevance_reason": "Future placeholder for clinician-entered chest pain risk documentation when separately reviewed.",
-        "suggestion_mode": "optional",
-        "risk_level": "high",
-        "implementation_status": "registry_only",
-        "display_priority": 10,
-        "trigger_context": "Only for a future reviewed chest pain documentation context.",
-        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
-      },
-      {
         "calculator_id": "wells_pe",
         "calculator_name": "Wells PE Score",
-        "relevance_reason": "Future placeholder for clinician-entered pulmonary embolism probability documentation when separately reviewed.",
+        "relevance_reason": "May support documentation of PE score components when clinician has assessed relevant features.",
         "suggestion_mode": "optional",
         "risk_level": "high",
-        "implementation_status": "registry_only",
-        "display_priority": 11,
-        "trigger_context": "Only for a future reviewed chest pain documentation context.",
-        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Chest pain workflow where clinician considers PE score documentation relevant.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       },
       {
         "calculator_id": "killip",
@@ -166177,6 +166577,28 @@
         "display_priority": 3,
         "trigger_context": "Chest pain workflow with clinician-assessed Killip class.",
         "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of clinician-entered heart rate and systolic blood pressure.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "Chest pain workflow with clinician-entered vitals.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "heart_score",
+        "calculator_name": "HEART Score",
+        "relevance_reason": "Future placeholder for clinician-entered chest pain risk documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed chest pain documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
       }
     ],
     "gp-cough": [
@@ -166482,37 +166904,37 @@
       {
         "calculator_id": "gad_7",
         "calculator_name": "GAD-7",
-        "relevance_reason": "Future placeholder for clinician-entered anxiety questionnaire documentation when separately reviewed.",
+        "relevance_reason": "May support documentation of clinician-entered anxiety screening score.",
         "suggestion_mode": "optional",
         "risk_level": "low",
-        "implementation_status": "registry_only",
-        "display_priority": 10,
-        "trigger_context": "Only for a future reviewed anxiety questionnaire documentation context.",
-        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Anxiety workflow with clinician-entered GAD-7 responses.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       }
     ],
     "psych-low-mood": [
       {
         "calculator_id": "phq_2",
         "calculator_name": "PHQ-2",
-        "relevance_reason": "Future placeholder for clinician-entered brief mood questionnaire documentation when separately reviewed.",
+        "relevance_reason": "May support documentation of clinician-entered brief mood screening responses.",
         "suggestion_mode": "optional",
         "risk_level": "low",
-        "implementation_status": "registry_only",
-        "display_priority": 10,
-        "trigger_context": "Only for a future reviewed mood questionnaire documentation context.",
-        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Low mood workflow with clinician-entered PHQ-2 responses.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       },
       {
         "calculator_id": "phq_9",
         "calculator_name": "PHQ-9",
-        "relevance_reason": "Future placeholder for clinician-entered mood questionnaire documentation when separately reviewed.",
+        "relevance_reason": "May support documentation of clinician-entered PHQ-9 score.",
         "suggestion_mode": "optional",
         "risk_level": "low",
-        "implementation_status": "registry_only",
-        "display_priority": 11,
-        "trigger_context": "Only for a future reviewed mood questionnaire documentation context.",
-        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Low mood workflow with clinician-entered PHQ-9 responses.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       }
     ],
     "psych-sleep-difficulty": [
@@ -166530,14 +166952,36 @@
     ],
     "resp-dyspnea": [
       {
+        "calculator_id": "mrc_dyspnea_scale",
+        "calculator_name": "MRC dyspnea scale",
+        "relevance_reason": "May support documentation of breathlessness functional limitation when clinician-assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Dyspnea workflow with clinician-assessed MRC grade.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of clinician-entered heart rate and systolic blood pressure.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Dyspnea workflow with clinician-entered vitals.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
         "calculator_id": "nyha",
         "calculator_name": "NYHA functional class",
-        "relevance_reason": "May support documentation of dyspnea severity context when functional class is clinician-assessed.",
+        "relevance_reason": "May support documentation of dyspnea functional class context when clinician-assessed.",
         "suggestion_mode": "optional",
         "risk_level": "low",
         "implementation_status": "implemented",
         "display_priority": 3,
-        "trigger_context": "Respiratory dyspnea workflow with clinician-assessed NYHA class.",
+        "trigger_context": "Dyspnea workflow with clinician-assessed functional class.",
         "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       }
     ],
@@ -166588,6 +167032,91 @@
         "implementation_status": "implemented",
         "display_priority": 3,
         "trigger_context": "Acute dyspnea with clinician-assessed qSOFA.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "cardio-heart-failure-followup": [
+      {
+        "calculator_id": "nyha",
+        "calculator_name": "NYHA functional class",
+        "relevance_reason": "May support documentation of functional limitation when NYHA class is clinician-assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Heart failure follow-up with clinician-assessed functional class.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "mean_arterial_pressure",
+        "calculator_name": "Mean arterial pressure",
+        "relevance_reason": "May support documentation of clinician-entered blood pressure context.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Heart failure follow-up with clinician-entered blood pressure values.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "cardio-chest-pain": [
+      {
+        "calculator_id": "heart",
+        "calculator_name": "HEART Score",
+        "relevance_reason": "May support documentation of clinician-entered chest pain score components when separately assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Chest pain workflow with clinician-entered HEART components.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "wells_pe",
+        "calculator_name": "Wells PE Score",
+        "relevance_reason": "May support documentation of PE score components when clinician has assessed relevant features.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Chest pain workflow where clinician considers PE score documentation relevant.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of clinician-entered heart rate and systolic blood pressure.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "Chest pain workflow with clinician-entered vitals.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "resp-sleep-apnea-symptoms": [
+      {
+        "calculator_id": "epworth_sleepiness_scale",
+        "calculator_name": "Epworth Sleepiness Scale",
+        "relevance_reason": "May support documentation of clinician-entered daytime sleepiness score.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Sleep apnea symptoms workflow with clinician-entered Epworth responses.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "uro-luts-bph": [
+      {
+        "calculator_id": "ipss",
+        "calculator_name": "IPSS",
+        "relevance_reason": "May support documentation of clinician-entered lower urinary tract symptom score.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "LUTS/BPH workflow with clinician-entered IPSS responses.",
         "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       }
     ]

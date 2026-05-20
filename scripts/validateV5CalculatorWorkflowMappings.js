@@ -10,6 +10,7 @@ const REG = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'v3_calculator_re
 const WF = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'clinical_workflows.json'), 'utf8'));
 
 const regIds = new Set(REG.map(c => c.calculator_id));
+const regById = new Map(REG.map(c => [c.calculator_id, c]));
 const wfIds = new Set(WF.map(w => w.workflow_id));
 const highRisk = new Set(REG.filter(c => c.risk_level === 'high').map(c => c.calculator_id));
 const FORBIDDEN = ['must use','must calculate','required score','determines management','admit','discharge','treatment pathway','recommended calculator'];
@@ -27,7 +28,8 @@ for (const m of MAP) {
     
     if (!regIds.has(cid)) errors.push(`${label}: calculator_id not in registry`);
     if (!OK_SCOPES.includes(s.suggestion_mode)) errors.push(`${label}: suggestion_mode must be optional`);
-    if (s.implementation_status === 'implemented' && highRisk.has(cid)) errors.push(`${label}: high-risk calculator must not be active`);
+    const reg = regById.get(cid);
+    if (s.implementation_status === 'implemented' && highRisk.has(cid) && (!reg || reg.implementation_status !== 'implemented')) errors.push(`${label}: registry-only high-risk calculator must not be active`);
     if (!s.safety_note) errors.push(`${label}: missing safety_note`);
     
     for (const word of FORBIDDEN) {

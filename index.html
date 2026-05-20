@@ -5894,11 +5894,6 @@ footer a{color:#d9e4f2}
 
 
 
-<a id="calculatorNavLink" data-page="calculators" onclick="showPage('calculators')" style="display:none">Calculators</a>
-
-
-
-
 <a href="./calculators/">Calculator Tools</a>
 
 
@@ -7299,7 +7294,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="example-block"><h4>Clinician-entered input</h4><pre>3 days fever, cough, sore throat. No shortness of breath or chest pain. Chest clear. Impression: Viral URTI. Plan: supportive care, fluids encouraged, antipyretic advised. Follow-up if symptoms persist or worsen.</pre></div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Adult with 3 days fever, dry cough, sore throat, nasal congestion, and myalgia. Autofill added relevant negatives: no shortness of breath, no chest pain, no confusion, no neck stiffness, no persistent vomiting. Temperature and throat/chest exam documented by clinician. Impression: Viral URTI. Plan entered by clinician: supportive care, fluids, antipyretic plan, red flags explained, follow-up if worsening or not improving.</pre></div>
 
 
 
@@ -7314,7 +7309,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="example-block"><h4>Generated EMR output</h4><pre>CC: fever, cough, sore throat
+<div class="example-block"><h4>Generated EMR output</h4><pre>Chief concern: Fever / URTI symptoms for 3 days.
 
 
 
@@ -7329,7 +7324,7 @@ footer a{color:#d9e4f2}
 
 
 
-Pertinent negatives: no shortness of breath, no chest pain
+History: Fever with dry cough, sore throat, nasal congestion, and myalgia. Autofill contributed relevant negatives for respiratory distress, chest pain, confusion, neck stiffness, and persistent vomiting; clinician kept the applicable items.
 
 
 
@@ -7344,7 +7339,7 @@ Pertinent negatives: no shortness of breath, no chest pain
 
 
 
-Exam: chest clear
+Examination documented: Temperature recorded. Throat examination documented. Chest examination documented by clinician.
 
 
 
@@ -7359,7 +7354,7 @@ Exam: chest clear
 
 
 
-Impression: Viral URTI
+Clinician-entered impression: Viral URTI.
 
 
 
@@ -7374,7 +7369,7 @@ Impression: Viral URTI
 
 
 
-Plan: Supportive care, fluids encouraged, antipyretic advised
+Clinician-entered plan: Supportive care discussed, fluids encouraged, antipyretic plan documented by clinician.
 
 
 
@@ -7389,7 +7384,7 @@ Plan: Supportive care, fluids encouraged, antipyretic advised
 
 
 
-Follow-up: If symptoms persist or worsen</pre></div>
+Safety-netting / follow-up: Red flags explained. Follow-up advised if symptoms worsen, persist, or new concerning symptoms develop.</pre></div>
 
 
 
@@ -7479,7 +7474,7 @@ Follow-up: If symptoms persist or worsen</pre></div>
 
 
 
-<div class="example-block"><h4>Clinician-entered input</h4><pre>Routine diabetes follow-up. Home glucose readings reviewed and discussed. No hypoglycemia symptoms reported. No foot ulcers reported. Sensation intact on monofilament testing. HbA1c: [clinician-entered value] reviewed with patient. BP at target. Impression: Type 2 diabetes follow-up, stable. Plan: Continue current medications. Lifestyle counseling reinforced. Follow-up in 3 months. Foot exam and retinal screening advised per local protocol.</pre></div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Routine type 2 diabetes follow-up. Autofill added review prompts for glucose log, hypoglycemia, medication adherence, foot symptoms, BP, HbA1c, renal profile, lipid review, and screening status. Clinician entered: home readings reviewed, no hypoglycemia symptoms, no foot ulcers, monofilament sensation documented, HbA1c: [clinician-entered value], BP reviewed. Impression: Diabetes follow-up, stable. Plan entered by clinician: medication review completed, lifestyle counseling reinforced, follow-up in 3 months.</pre></div>
 
 
 
@@ -7494,7 +7489,7 @@ Follow-up: If symptoms persist or worsen</pre></div>
 
 
 
-<div class="example-block"><h4>Generated SOAP output</h4><pre>SUBJECTIVE: Routine follow-up. Home glucose readings reviewed and discussed. No hypoglycemia symptoms reported.
+<div class="example-block"><h4>Generated SOAP output</h4><pre>SUBJECTIVE: Routine type 2 diabetes follow-up. Home glucose readings reviewed and discussed. No hypoglycemia symptoms reported. No foot ulcer symptoms reported. Medication adherence reviewed by clinician.
 
 
 
@@ -7509,7 +7504,7 @@ Follow-up: If symptoms persist or worsen</pre></div>
 
 
 
-OBJECTIVE: No foot ulcers reported. Sensation intact on monofilament testing. HbA1c: [clinician-entered value] reviewed. BP at target.
+OBJECTIVE: Foot inspection documented. Monofilament sensation documented. BP reviewed. HbA1c: [clinician-entered value] reviewed and discussed by clinician. Autofill contributed renal/lipid/screening prompts for clinician review.
 
 
 
@@ -7524,7 +7519,7 @@ OBJECTIVE: No foot ulcers reported. Sensation intact on monofilament testing. Hb
 
 
 
-ASSESSMENT: Type 2 diabetes follow-up, stable.
+ASSESSMENT: Type 2 diabetes follow-up, stable by clinician impression.
 
 
 
@@ -7539,7 +7534,7 @@ ASSESSMENT: Type 2 diabetes follow-up, stable.
 
 
 
-PLAN: Medication adherence discussed, lifestyle advice reinforced, labs reviewed. Routine follow-up arranged.</pre></div>
+PLAN: Medication review documented by clinician. Lifestyle counseling reinforced. Diabetes screening status reviewed where applicable. Follow-up arranged in 3 months.</pre></div>
 
 
 
@@ -7629,7 +7624,7 @@ PLAN: Medication adherence discussed, lifestyle advice reinforced, labs reviewed
 
 
 
-<div class="example-block"><h4>Clinician-entered input</h4><pre>Lower back pain worse with movement. No bowel or bladder symptoms. No saddle anesthesia. No fever. Gait documented. Lumbar tenderness. Impression: Mechanical low back pain.</pre></div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Adult with 1 week lower back pain after lifting, worse with movement and prolonged sitting. Autofill added MSK red flag negatives: no bowel or bladder symptoms, no saddle anesthesia, no fever, no trauma, no progressive weakness. Clinician documented gait, lumbar tenderness, lower-limb power and sensation if assessed. Impression: Mechanical low back pain. Plan entered by clinician: activity modification, analgesia plan documented, physiotherapy referral arranged, red flags explained.</pre></div>
 
 
 
@@ -7644,7 +7639,7 @@ PLAN: Medication adherence discussed, lifestyle advice reinforced, labs reviewed
 
 
 
-<div class="example-block"><h4>Generated EMR output</h4><pre>CC: lower back pain, pain worse with movement
+<div class="example-block"><h4>Generated EMR output</h4><pre>Chief concern: Lower back pain for 1 week.
 
 
 
@@ -7659,7 +7654,7 @@ PLAN: Medication adherence discussed, lifestyle advice reinforced, labs reviewed
 
 
 
-Pertinent negatives: no bowel/bladder symptoms, no saddle anesthesia, no fever
+History: Pain began after lifting and is worse with movement and prolonged sitting. Autofill contributed relevant red flag negatives; clinician kept no bowel/bladder symptoms, no saddle anesthesia, no fever, no trauma, and no progressive weakness.
 
 
 
@@ -7674,7 +7669,7 @@ Pertinent negatives: no bowel/bladder symptoms, no saddle anesthesia, no fever
 
 
 
-Exam: gait documented, lumbar tenderness
+Examination documented: Gait documented. Lumbar tenderness documented. Lower-limb power and sensation documented if assessed.
 
 
 
@@ -7689,7 +7684,7 @@ Exam: gait documented, lumbar tenderness
 
 
 
-Impression: Mechanical low back pain
+Clinician-entered impression: Mechanical low back pain.
 
 
 
@@ -7704,7 +7699,7 @@ Impression: Mechanical low back pain
 
 
 
-Plan: Activity modification advised. Physiotherapy referral given. Follow-up arranged.</pre></div>
+Clinician-entered plan: Activity modification discussed. Analgesia plan documented by clinician. Physiotherapy referral arranged. Red flags explained. Follow-up arranged.</pre></div>
 
 
 
@@ -7794,7 +7789,7 @@ Plan: Activity modification advised. Physiotherapy referral given. Follow-up arr
 
 
 
-<div class="example-block"><h4>Clinician-entered input</h4><pre>Pediatric fever with reduced activity. No breathing difficulty. No seizure reported. Urine output maintained. Hydration adequate. Impression: Viral febrile illness. Parent advice and return precautions explained.</pre></div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Child with fever since yesterday and reduced activity. Parent reports drinking less but urine output maintained. Autofill added pediatric safety prompts: breathing difficulty, seizure, non-blanching rash, poor feeding, dehydration signs, and parent/guardian advice. Clinician documented general appearance, hydration, respiratory effort, throat/ear/chest findings if assessed. Impression: Viral febrile illness. Plan entered by clinician: parent advice, hydration/feeding advice, return precautions, follow-up if not improving.</pre></div>
 
 
 
@@ -7809,7 +7804,7 @@ Plan: Activity modification advised. Physiotherapy referral given. Follow-up arr
 
 
 
-<div class="example-block"><h4>Generated SOAP output</h4><pre>SUBJECTIVE: Fever, reduced activity. No breathing difficulty. No seizure reported.
+<div class="example-block"><h4>Generated SOAP output</h4><pre>SUBJECTIVE: Fever since yesterday with reduced activity. Parent reports reduced intake but urine output maintained. No breathing difficulty or seizure reported. Autofill contributed pediatric red flag prompts and parent/guardian context.
 
 
 
@@ -7824,7 +7819,7 @@ Plan: Activity modification advised. Physiotherapy referral given. Follow-up arr
 
 
 
-OBJECTIVE: Urine output maintained. Hydration adequate.
+OBJECTIVE: General appearance documented by clinician. Hydration status documented. Respiratory effort documented. Throat, ear, chest, abdomen, and rash prompts available for clinician-assessed findings.
 
 
 
@@ -7839,7 +7834,7 @@ OBJECTIVE: Urine output maintained. Hydration adequate.
 
 
 
-ASSESSMENT: Viral febrile illness
+ASSESSMENT: Viral febrile illness by clinician impression.
 
 
 
@@ -7854,7 +7849,7 @@ ASSESSMENT: Viral febrile illness
 
 
 
-PLAN: Parent/guardian advice given. Hydration encouraged. Return precautions explained. Follow-up arranged.</pre></div>
+PLAN: Parent/guardian advice documented. Hydration and feeding advice discussed by clinician. Return precautions explained. Follow-up arranged if symptoms persist, worsen, or new concerning features appear.</pre></div>
 
 
 
@@ -7944,7 +7939,7 @@ PLAN: Parent/guardian advice given. Hydration encouraged. Return precautions exp
 
 
 
-<div class="example-block"><h4>Clinician-entered input</h4><pre>Routine antenatal follow-up. Gestational age documented. No vaginal bleeding reported. No abdominal pain reported. BP recorded. Antenatal labs reviewed. Warning symptoms discussed.</pre></div>
+<div class="example-block"><h4>Clinician-entered input</h4><pre>Routine antenatal follow-up. Gestational age documented by clinician. Autofill added pregnancy review prompts for fetal movement, vaginal bleeding, abdominal pain, headache/visual symptoms, swelling, BP, urine dip, antenatal labs, and previous obstetric history. Clinician entered: fetal movement present, no PV bleeding, no abdominal pain, BP recorded, urine dip done if applicable, antenatal labs reviewed. Impression: Routine antenatal follow-up. Plan entered by clinician: antenatal counseling, warning symptoms discussed, next review arranged.</pre></div>
 
 
 
@@ -7959,7 +7954,7 @@ PLAN: Parent/guardian advice given. Hydration encouraged. Return precautions exp
 
 
 
-<div class="example-block"><h4>Generated EMR output</h4><pre>CC: routine antenatal follow-up
+<div class="example-block"><h4>Generated EMR output</h4><pre>Chief concern: Routine antenatal follow-up.
 
 
 
@@ -7974,7 +7969,7 @@ PLAN: Parent/guardian advice given. Hydration encouraged. Return precautions exp
 
 
 
-Pertinent negatives: no vaginal bleeding reported, no abdominal pain reported
+History: Gestational age documented. Fetal movement present by clinician entry. No vaginal bleeding or abdominal pain reported. Autofill contributed pregnancy safety prompts for pre-eclampsia symptoms, fetal movement, bleeding, pain, and review of antenatal records.
 
 
 
@@ -7989,7 +7984,7 @@ Pertinent negatives: no vaginal bleeding reported, no abdominal pain reported
 
 
 
-Exam/results: BP recorded, antenatal labs reviewed
+Examination / results documented: BP recorded. Urine dip documented if done. Antenatal labs reviewed by clinician.
 
 
 
@@ -8004,7 +7999,7 @@ Exam/results: BP recorded, antenatal labs reviewed
 
 
 
-Impression: Routine antenatal follow-up
+Clinician-entered impression: Routine antenatal follow-up.
 
 
 
@@ -8019,7 +8014,7 @@ Impression: Routine antenatal follow-up
 
 
 
-Plan: Antenatal counseling documented. Warning symptoms discussed. Follow-up arranged.</pre></div>
+Clinician-entered plan: Antenatal counseling documented. Warning symptoms discussed. Next review arranged.</pre></div>
 
 
 
@@ -18933,6 +18928,7 @@ window.cleanOutputPhraseList = cleanOutputPhraseList;
 
 <script src="./calculator-tools.js?v=v3c-low-risk"></script>
 <script src="./calculator-high-impact.js?v=v3h-high-impact"></script>
+<script src="./calculator-active-ui.js?v=active-calculators"></script>
 
 
 
@@ -29370,7 +29366,7 @@ window.renderClinicNoteFormActions = renderClinicNoteFormActions;
 
 
 
-document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();var calcNav=document.getElementById("calculatorNavLink");if(calcNav&&isCalculatorToolsEnabled()){calcNav.style.display=""}var launchParams=new URLSearchParams(window.location.search);showPage(launchParams.get("v4")==="encounter2"?"advanced-encounter":(isCalculatorToolsEnabled()?'calculators':(isReportModuleEnabled()?'report':(window.CLINICNOTE_DATA_MODE==='v2'?'speed':'home'))));buildPresets();renderClinicNoteFormActions();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
+document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();var launchParams=new URLSearchParams(window.location.search);showPage(launchParams.get("v4")==="encounter2"?"advanced-encounter":(isCalculatorToolsEnabled()?'calculators':(isReportModuleEnabled()?'report':(window.CLINICNOTE_DATA_MODE==='v2'?'speed':'home'))));buildPresets();renderClinicNoteFormActions();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}})})
 
 
 
@@ -29429,10 +29425,6 @@ document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule(
 
 
 </html>
-
-
-
-
 
 
 

@@ -126,15 +126,15 @@
     "specialty": "General Medicine / GP",
     "suggested_calculators": [
       {
-        "calculator_id": "shock_index",
-        "calculator_name": "Shock index",
-        "relevance_reason": "May support documentation of vital-sign context when pulse and systolic blood pressure are clinician-entered.",
+        "calculator_id": "heart",
+        "calculator_name": "HEART Score",
+        "relevance_reason": "May support documentation of clinician-entered chest pain score components when separately assessed.",
         "suggestion_mode": "optional",
-        "risk_level": "low",
+        "risk_level": "high",
         "implementation_status": "implemented",
         "display_priority": 1,
-        "trigger_context": "Chest pain workflow with documented heart rate and systolic blood pressure.",
-        "safety_note": "Documentation aid only. Does not determine management."
+        "trigger_context": "Chest pain workflow with clinician-entered HEART components.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       },
       {
         "calculator_id": "mean_arterial_pressure",
@@ -148,26 +148,15 @@
         "safety_note": "Documentation aid only. Interpret in clinical context."
       },
       {
-        "calculator_id": "heart_score",
-        "calculator_name": "HEART Score",
-        "relevance_reason": "Future placeholder for clinician-entered chest pain risk documentation when separately reviewed.",
-        "suggestion_mode": "optional",
-        "risk_level": "high",
-        "implementation_status": "registry_only",
-        "display_priority": 10,
-        "trigger_context": "Only for a future reviewed chest pain documentation context.",
-        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
-      },
-      {
         "calculator_id": "wells_pe",
         "calculator_name": "Wells PE Score",
-        "relevance_reason": "Future placeholder for clinician-entered pulmonary embolism probability documentation when separately reviewed.",
+        "relevance_reason": "May support documentation of PE score components when clinician has assessed relevant features.",
         "suggestion_mode": "optional",
         "risk_level": "high",
-        "implementation_status": "registry_only",
-        "display_priority": 11,
-        "trigger_context": "Only for a future reviewed chest pain documentation context.",
-        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Chest pain workflow where clinician considers PE score documentation relevant.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       },
       {
         "calculator_id": "killip",
@@ -179,6 +168,28 @@
         "display_priority": 3,
         "trigger_context": "Chest pain workflow with clinician-assessed Killip class.",
         "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of clinician-entered heart rate and systolic blood pressure.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "Chest pain workflow with clinician-entered vitals.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "heart_score",
+        "calculator_name": "HEART Score",
+        "relevance_reason": "Future placeholder for clinician-entered chest pain risk documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed chest pain documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
       }
     ],
     "mapping_version": "v3d.1",
@@ -601,13 +612,13 @@
       {
         "calculator_id": "gad_7",
         "calculator_name": "GAD-7",
-        "relevance_reason": "Future placeholder for clinician-entered anxiety questionnaire documentation when separately reviewed.",
+        "relevance_reason": "May support documentation of clinician-entered anxiety screening score.",
         "suggestion_mode": "optional",
         "risk_level": "low",
-        "implementation_status": "registry_only",
-        "display_priority": 10,
-        "trigger_context": "Only for a future reviewed anxiety questionnaire documentation context.",
-        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Anxiety workflow with clinician-entered GAD-7 responses.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       }
     ],
     "mapping_version": "v3d.1",
@@ -623,24 +634,24 @@
       {
         "calculator_id": "phq_2",
         "calculator_name": "PHQ-2",
-        "relevance_reason": "Future placeholder for clinician-entered brief mood questionnaire documentation when separately reviewed.",
+        "relevance_reason": "May support documentation of clinician-entered brief mood screening responses.",
         "suggestion_mode": "optional",
         "risk_level": "low",
-        "implementation_status": "registry_only",
-        "display_priority": 10,
-        "trigger_context": "Only for a future reviewed mood questionnaire documentation context.",
-        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Low mood workflow with clinician-entered PHQ-2 responses.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       },
       {
         "calculator_id": "phq_9",
         "calculator_name": "PHQ-9",
-        "relevance_reason": "Future placeholder for clinician-entered mood questionnaire documentation when separately reviewed.",
+        "relevance_reason": "May support documentation of clinician-entered PHQ-9 score.",
         "suggestion_mode": "optional",
         "risk_level": "low",
-        "implementation_status": "registry_only",
-        "display_priority": 11,
-        "trigger_context": "Only for a future reviewed mood questionnaire documentation context.",
-        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Low mood workflow with clinician-entered PHQ-9 responses.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       }
     ],
     "mapping_version": "v3d.1",
@@ -676,14 +687,36 @@
     "specialty": "Respiratory / Pulmonology",
     "suggested_calculators": [
       {
+        "calculator_id": "mrc_dyspnea_scale",
+        "calculator_name": "MRC dyspnea scale",
+        "relevance_reason": "May support documentation of breathlessness functional limitation when clinician-assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Dyspnea workflow with clinician-assessed MRC grade.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of clinician-entered heart rate and systolic blood pressure.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Dyspnea workflow with clinician-entered vitals.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
         "calculator_id": "nyha",
         "calculator_name": "NYHA functional class",
-        "relevance_reason": "May support documentation of dyspnea severity context when functional class is clinician-assessed.",
+        "relevance_reason": "May support documentation of dyspnea functional class context when clinician-assessed.",
         "suggestion_mode": "optional",
         "risk_level": "low",
         "implementation_status": "implemented",
         "display_priority": 3,
-        "trigger_context": "Respiratory dyspnea workflow with clinician-assessed NYHA class.",
+        "trigger_context": "Dyspnea workflow with clinician-assessed functional class.",
         "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
       }
     ],
@@ -768,5 +801,126 @@
     "source_status": "draft_unreviewed",
     "review_required": true,
     "safety_note": "Calculator mappings are suggestions only."
+  },
+  {
+    "workflow_id": "cardio-heart-failure-followup",
+    "workflow_display_name": "Heart failure follow-up / Heart failure follow-up documentation",
+    "specialty": "Cardiology",
+    "suggested_calculators": [
+      {
+        "calculator_id": "nyha",
+        "calculator_name": "NYHA functional class",
+        "relevance_reason": "May support documentation of functional limitation when NYHA class is clinician-assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Heart failure follow-up with clinician-assessed functional class.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "mean_arterial_pressure",
+        "calculator_name": "Mean arterial pressure",
+        "relevance_reason": "May support documentation of clinician-entered blood pressure context.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Heart failure follow-up with clinician-entered blood pressure values.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Calculator mappings are optional documentation suggestions only."
+  },
+  {
+    "workflow_id": "cardio-chest-pain",
+    "workflow_display_name": "Chest pain / Chest pain documentation",
+    "specialty": "Cardiology",
+    "suggested_calculators": [
+      {
+        "calculator_id": "heart",
+        "calculator_name": "HEART Score",
+        "relevance_reason": "May support documentation of clinician-entered chest pain score components when separately assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Chest pain workflow with clinician-entered HEART components.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "wells_pe",
+        "calculator_name": "Wells PE Score",
+        "relevance_reason": "May support documentation of PE score components when clinician has assessed relevant features.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Chest pain workflow where clinician considers PE score documentation relevant.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of clinician-entered heart rate and systolic blood pressure.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "Chest pain workflow with clinician-entered vitals.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Calculator mappings are optional documentation suggestions only."
+  },
+  {
+    "workflow_id": "resp-sleep-apnea-symptoms",
+    "workflow_display_name": "Sleep apnea symptoms / Sleep apnea documentation",
+    "specialty": "Respiratory / Pulmonology",
+    "suggested_calculators": [
+      {
+        "calculator_id": "epworth_sleepiness_scale",
+        "calculator_name": "Epworth Sleepiness Scale",
+        "relevance_reason": "May support documentation of clinician-entered daytime sleepiness score.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Sleep apnea symptoms workflow with clinician-entered Epworth responses.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Calculator mappings are optional documentation suggestions only."
+  },
+  {
+    "workflow_id": "uro-luts-bph",
+    "workflow_display_name": "LUTS/BPH / LUTS/BPH documentation",
+    "specialty": "Urology / Nephrology",
+    "suggested_calculators": [
+      {
+        "calculator_id": "ipss",
+        "calculator_name": "IPSS",
+        "relevance_reason": "May support documentation of clinician-entered lower urinary tract symptom score.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "LUTS/BPH workflow with clinician-entered IPSS responses.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Calculator mappings are optional documentation suggestions only."
   }
 ]

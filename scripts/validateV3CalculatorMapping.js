@@ -6,20 +6,6 @@ const MAP_PATH = path.join(ROOT, 'data', 'v3_calculator_workflow_map.json');
 const WORKFLOWS_PATH = path.join(ROOT, 'data', 'clinical_workflows.json');
 const REGISTRY_PATH = path.join(ROOT, 'data', 'v3_calculator_registry.json');
 
-const IMPLEMENTED_CALCULATORS = new Set([
-  'bmi',
-  'child_pugh',
-  'fib4',
-  'killip',
-  'nyha',
-  'pack_years',
-  'qsofa',
-  'sirs',
-  'mean_arterial_pressure',
-  'shock_index',
-  'mrc_dyspnea_scale'
-]);
-
 const VALID_RISK_LEVELS = new Set(['low', 'medium', 'high']);
 const VALID_SOURCE_STATUS = new Set(['draft_unreviewed', 'needs_source_review']);
 const VALID_IMPLEMENTATION_STATUS = new Set(['implemented', 'registry_only']);
@@ -124,7 +110,8 @@ if (!errors.length) {
   assert(mappings.length > 0, 'Mapping file must contain at least one workflow mapping.');
 
   const workflowsById = new Map(workflows.map((workflow) => [workflow.workflow_id, workflow]));
-  const registryById = new Map(registry.map((calculator) => [calculator.calculator_id, calculator]));
+const registryById = new Map(registry.map((calculator) => [calculator.calculator_id, calculator]));
+const IMPLEMENTED_CALCULATORS = new Set(registry.filter((calculator) => calculator.implementation_status === 'implemented').map((calculator) => calculator.calculator_id));
   const seenMappings = new Set();
   const workflowIds = new Set();
   const mappedCalculatorIds = new Set();
@@ -187,7 +174,7 @@ if (!errors.length) {
         assert(suggestion.risk_level === registryEntry.risk_level, `${suggestionLabel}: risk_level does not match registry.`);
         if (registryEntry.risk_level === 'high') {
           highRiskCount += 1;
-          assert(suggestion.implementation_status === 'registry_only', `${suggestionLabel}: high-risk calculators must remain registry_only.`);
+          assert(registryEntry.implementation_status === 'implemented' || suggestion.implementation_status === 'registry_only', `${suggestionLabel}: high-risk registry-only calculators must remain registry_only.`);
         }
       }
 

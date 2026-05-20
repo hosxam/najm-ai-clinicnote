@@ -869,6 +869,34 @@
       }
       h += '</div>';
       h += '<div style="height:16px"></div>';
+    } else {
+      h += '<p class="v4-calc-empty">No optional calculator is available for this workflow yet.</p>';
+    }
+
+    var recommendedIds = {};
+    for (var ri = 0; ri < calcs.length; ri++) recommendedIds[calcs[ri].id] = true;
+    var manualCards = [];
+    if (state.calculatorResults) {
+      var allCalcs = state.allActiveCalculators || [];
+      for (var calcId in state.calculatorResults) {
+        if (recommendedIds[calcId]) continue;
+        for (var ai = 0; ai < allCalcs.length; ai++) {
+          if (allCalcs[ai].id === calcId) {
+            manualCards.push(allCalcs[ai]);
+            break;
+          }
+        }
+      }
+    }
+    if (manualCards.length > 0) {
+      h += '<h3 style="font-size:14px;font-weight:600;color:var(--gray-700);margin-bottom:8px;">Added manually</h3>';
+      h += '<div class="v4-calc-grid">';
+      for (var mi = 0; mi < manualCards.length; mi++) {
+        var mcalc = manualCards[mi];
+        h += renderCalcCard(mcalc, state.calculatorResults[mcalc.id] || {});
+      }
+      h += '</div>';
+      h += '<div style="height:16px"></div>';
     }
     
     // Manual calculator search section
@@ -1159,7 +1187,7 @@
         var calcItem = mapList[i];
         var calcId = typeof calcItem === 'string' ? calcItem : calcItem.calculator_id;
         var calcDef = data.calculators[calcId];
-        if (calcDef && !seen[calcId] && calcDef.risk_level !== 'high' && calcDef.implementation_status === 'implemented') {
+        if (calcDef && !seen[calcId] && calcDef.implementation_status === 'implemented') {
           seen[calcId] = true;
           result.push({
             id: calcId,

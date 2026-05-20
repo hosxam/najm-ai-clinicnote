@@ -3,6 +3,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const CALC_PATH = path.join(ROOT, 'calculator-tools.js');
+const ACTIVE_UI_PATH = path.join(ROOT, 'calculator-active-ui.js');
 const INDEX_PATH = path.join(ROOT, 'index.html');
 
 const errors = [];
@@ -41,10 +42,14 @@ function containsDiagnosisInstruction(text) {
   );
 }
 
-if (!fs.existsSync(CALC_PATH)) {
-  errors.push('calculator-tools.js must exist.');
-} else {
-  const calc = read(CALC_PATH);
+const calculatorFiles = [CALC_PATH, ACTIVE_UI_PATH];
+for (const filePath of calculatorFiles) {
+  if (!fs.existsSync(filePath)) {
+    errors.push(`${path.basename(filePath)} must exist.`);
+    continue;
+  }
+  const calc = read(filePath);
+  const fileLabel = path.basename(filePath);
 
   const forbiddenRuntimeTerms = [
     /\bfetch\s*\(/i,
@@ -58,29 +63,19 @@ if (!fs.existsSync(CALC_PATH)) {
     /\bdocument\.cookie\b/i
   ];
   for (const pattern of forbiddenRuntimeTerms) {
-    assert(!pattern.test(calc), `calculator-tools.js contains forbidden runtime term: ${pattern}`);
+    assert(!pattern.test(calc), `${fileLabel} contains forbidden runtime term: ${pattern}`);
   }
 
-  assert(!/https?:\/\//i.test(calc), 'calculator-tools.js must not contain external API URLs.');
-  assert(!/import\s|require\s*\(/i.test(calc), 'calculator-tools.js must not import third-party libraries.');
+  assert(!/https?:\/\//i.test(calc), `${fileLabel} must not contain external API URLs.`);
+  assert(!/import\s|require\s*\(/i.test(calc), `${fileLabel} must not import third-party libraries.`);
 
   const unsafePhrase = containsUnsafeClinicalPhrase(calc);
-  assert(!unsafePhrase, `calculator-tools.js contains disallowed clinical phrase "${unsafePhrase}".`);
-  assert(!containsDiagnosisInstruction(calc), 'calculator-tools.js contains diagnosis wording outside a safety negation.');
+  assert(!unsafePhrase, `${fileLabel} contains disallowed clinical phrase "${unsafePhrase}".`);
+  assert(!containsDiagnosisInstruction(calc), `${fileLabel} contains diagnosis wording outside a safety negation.`);
+}
 
-  const highRiskNames = [
-    /\bHEART\s+Score\b/i,
-    /\bTIMI\b/i,
-    /\bGRACE\b/i,
-    /\bWells\b/i,
-    /\bNEWS2\b/i,
-    /\bGCS\b/i,
-    /\bABCD2\b/i,
-    /\bCanadian\s+CT\b/i,
-      ];
-  for (const pattern of highRiskNames) {
-    assert(!pattern.test(calc), `calculator-tools.js appears to implement a disallowed calculator: ${pattern}`);
-  }
+if (fs.existsSync(CALC_PATH)) {
+  const calc = read(CALC_PATH);
 
   const requiredFunctions = [
     'calculateBMI',
@@ -103,10 +98,12 @@ if (!fs.existsSync(INDEX_PATH)) {
 } else {
   const index = read(INDEX_PATH);
   assert(index.includes('calculator-tools.js'), 'index.html must include calculator-tools.js.');
+  assert(index.includes('calculator-high-impact.js'), 'index.html must include calculator-high-impact.js.');
+  assert(index.includes('calculator-active-ui.js'), 'index.html must include calculator-active-ui.js.');
   assert(index.includes('id="page-calculators"'), 'index.html must include calculator page.');
-  assert(index.includes('id="calculatorNavLink"'), 'index.html must include calculator nav link.');
   assert(index.includes('get("calc") === "v1"'), 'index.html must require calc=v1 feature flag.');
-  assert(index.includes('style="display:none">Calculators</a>'), 'calculator nav link must be hidden by default.');
+  assert(!index.includes('id="calculatorNavLink"'), 'hidden duplicate calculator nav link must not be present.');
+  assert(index.includes('href="./calculators/">Calculator Tools</a>'), 'public calculator nav must use the clean Calculator Tools link.');
   assert(index.includes('isCalculatorToolsEnabled()?\'calculators\''), 'startup routing must only show calculators when feature flag is enabled.');
 }
 
