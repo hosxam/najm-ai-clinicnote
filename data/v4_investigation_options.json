@@ -84,7 +84,7 @@
           },
           {
             "option_id": "lipid_profile_reviewed",
-            "option_text": "Lipid profile reviewed if available.",
+            "option_text": "Lipid profile reviewed if ordered.",
             "required_level": "conditional",
             "source_status": "draft",
             "note_text": "Lipid profile reviewed."
@@ -1245,7 +1245,7 @@
         "options": [
           {
             "option_id": "lipids_gp-dyslipidemia-followup",
-            "option_text": "Lipid profile reviewed if available.",
+            "option_text": "Lipid profile reviewed if ordered.",
             "note_text": "Lipid profile reviewed.",
             "required_level": "conditional",
             "source_status": "draft"
@@ -1288,7 +1288,7 @@
           {
             "option_id": "prev_gp-lab-result-review",
             "option_text": "Previous results compared if available.",
-            "note_text": "Previous results compared if available.",
+            "note_text": "Previous results compared.",
             "required_level": "conditional",
             "source_status": "draft"
           },
@@ -3707,6 +3707,712 @@
       }
     ],
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-chest-pain",
+    "workflow_display_name": "Cardiology Chest Pain",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "ecg",
+            "option_text": "ECG reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "ECG reviewed."
+          },
+          {
+            "option_id": "troponin",
+            "option_text": "Troponin reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Troponin reviewed."
+          },
+          {
+            "option_id": "vitals_review",
+            "option_text": "Vital signs reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Vital signs reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "crp",
+            "option_text": "CRP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CRP reviewed."
+          },
+          {
+            "option_id": "lipid_profile",
+            "option_text": "Lipid profile reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Lipid profile reviewed."
+          },
+          {
+            "option_id": "renal_function",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "chest_xray",
+            "option_text": "Chest X-ray reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Chest X-ray reviewed."
+          },
+          {
+            "option_id": "echo",
+            "option_text": "Echocardiogram report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Echocardiogram report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-palpitations",
+    "workflow_display_name": "Cardiology Palpitations",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "ecg",
+            "option_text": "ECG reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "ECG reviewed."
+          },
+          {
+            "option_id": "holter",
+            "option_text": "Holter/event monitor report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Holter/event monitor report reviewed."
+          },
+          {
+            "option_id": "vitals_review",
+            "option_text": "Vital signs reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Vital signs reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "tft",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Thyroid function reviewed."
+          },
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "electrolytes",
+            "option_text": "Electrolytes reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Electrolytes reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-hypertension-followup",
+    "workflow_display_name": "Cardiology Hypertension Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "bp_log",
+            "option_text": "Home blood pressure log reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Home blood pressure log reviewed."
+          },
+          {
+            "option_id": "ecg",
+            "option_text": "ECG reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "ECG reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "renal_function",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          },
+          {
+            "option_id": "electrolytes",
+            "option_text": "Electrolytes reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Electrolytes reviewed."
+          },
+          {
+            "option_id": "lipid_profile",
+            "option_text": "Lipid profile reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Lipid profile reviewed."
+          },
+          {
+            "option_id": "urine_acr",
+            "option_text": "Urine ACR reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urine ACR reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-heart-failure-followup",
+    "workflow_display_name": "Cardiology Heart Failure Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "ecg",
+            "option_text": "ECG reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "ECG reviewed."
+          },
+          {
+            "option_id": "oxygen_sat",
+            "option_text": "Oxygen saturation reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Oxygen saturation reviewed."
+          },
+          {
+            "option_id": "weight_trend",
+            "option_text": "Weight trend reviewed if recorded.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Weight trend reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "bnp_ntprobnp",
+            "option_text": "BNP/NT-proBNP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "BNP/NT-proBNP reviewed."
+          },
+          {
+            "option_id": "renal_function",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          },
+          {
+            "option_id": "electrolytes",
+            "option_text": "Electrolytes reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Electrolytes reviewed."
+          },
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "echo",
+            "option_text": "Echocardiogram report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Echocardiogram report reviewed."
+          },
+          {
+            "option_id": "chest_xray",
+            "option_text": "Chest X-ray reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Chest X-ray reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-ecg-review",
+    "workflow_display_name": "Cardiology ECG Review",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "ecg_current",
+            "option_text": "Current ECG reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Current ECG reviewed."
+          },
+          {
+            "option_id": "ecg_previous",
+            "option_text": "Previous ECG compared if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Previous ECG compared."
+          },
+          {
+            "option_id": "vitals_review",
+            "option_text": "Vital signs reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Vital signs reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "electrolytes",
+            "option_text": "Electrolytes reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Electrolytes reviewed."
+          },
+          {
+            "option_id": "troponin",
+            "option_text": "Troponin reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Troponin reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-dyspnea",
+    "workflow_display_name": "Cardiology Dyspnea",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "ecg",
+            "option_text": "ECG reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "ECG reviewed."
+          },
+          {
+            "option_id": "oxygen_sat",
+            "option_text": "Oxygen saturation reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Oxygen saturation reviewed."
+          },
+          {
+            "option_id": "vitals_review",
+            "option_text": "Vital signs reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Vital signs reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "bnp_ntprobnp",
+            "option_text": "BNP/NT-proBNP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "BNP/NT-proBNP reviewed."
+          },
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "renal_function",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          },
+          {
+            "option_id": "d_dimer",
+            "option_text": "D-dimer reviewed if ordered (if PE suspected).",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "D-dimer reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "chest_xray",
+            "option_text": "Chest X-ray reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Chest X-ray reviewed."
+          },
+          {
+            "option_id": "echo",
+            "option_text": "Echocardiogram report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Echocardiogram report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-lipid-followup",
+    "workflow_display_name": "Cardiology Lipid Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "lipid_profile",
+            "option_text": "Lipid profile reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Lipid profile (LDL, HDL, TG) reviewed.."
+          },
+          {
+            "option_id": "renal_function",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          },
+          {
+            "option_id": "lft",
+            "option_text": "Liver function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Liver function reviewed."
+          },
+          {
+            "option_id": "hba1c",
+            "option_text": "HbA1c reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "HbA1c reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "bp",
+            "option_text": "Blood pressure reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Blood pressure reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-post-pci-followup",
+    "workflow_display_name": "Cardiology Post-PCI Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "ecg",
+            "option_text": "ECG reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "ECG reviewed."
+          },
+          {
+            "option_id": "vitals_review",
+            "option_text": "Vital signs reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Vital signs reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "renal_function",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          },
+          {
+            "option_id": "lipid_profile",
+            "option_text": "Lipid profile reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Lipid profile reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "previous_angiogram",
+            "option_text": "Previous angiogram report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Previous angiogram report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-syncope",
+    "workflow_display_name": "Cardiology Syncope",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "ecg",
+            "option_text": "ECG reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "ECG reviewed."
+          },
+          {
+            "option_id": "postural_bp",
+            "option_text": "Postural blood pressure reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Postural blood pressure reviewed."
+          },
+          {
+            "option_id": "vitals_review",
+            "option_text": "Vital signs reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Vital signs reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "electrolytes",
+            "option_text": "Electrolytes reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Electrolytes reviewed."
+          },
+          {
+            "option_id": "troponin",
+            "option_text": "Troponin reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Troponin reviewed."
+          },
+          {
+            "option_id": "glucose",
+            "option_text": "Glucose reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Glucose reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "monitoring",
+        "group_label": "Cardiac monitoring",
+        "options": [
+          {
+            "option_id": "holter",
+            "option_text": "Holter/event monitor report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Holter/event monitor report reviewed."
+          },
+          {
+            "option_id": "echo",
+            "option_text": "Echocardiogram report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Echocardiogram report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-murmur-documentation",
+    "workflow_display_name": "Cardiology Murmur Documentation",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "ecg",
+            "option_text": "ECG reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "ECG reviewed."
+          },
+          {
+            "option_id": "vitals_review",
+            "option_text": "Vital signs reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Vital signs reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "echo",
+            "option_text": "Echocardiogram report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Echocardiogram report reviewed."
+          },
+          {
+            "option_id": "previous_echo",
+            "option_text": "Previous echo compared if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Previous echo compared."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
   }
 ]

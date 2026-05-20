@@ -9333,5 +9333,809 @@
     "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
     "review_required": true,
     "workflow_display_name": "Fever / suspected infection documentation"
+  },
+  {
+    "workflow_id": "cardio-chest-pain",
+    "workflow_display_name": "Cardiology Chest Pain",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "respiratory_rate",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "oxygen_saturation",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "temperature",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "general_appearance",
+        "group_label": "General appearance",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. general appearance findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "general_appearance",
+            "prompt_text": "General appearance documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "hydration",
+            "prompt_text": "Hydration status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "cardiac_exam",
+        "group_label": "Cardiac examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. cardiac examination findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "cardiac_auscultation",
+            "prompt_text": "Cardiac auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_sounds",
+            "prompt_text": "Heart sounds documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "peripheral_pulses",
+            "prompt_text": "Peripheral pulses documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "jvp",
+            "prompt_text": "JVP documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "pedal_oedema",
+            "prompt_text": "Peripheral oedema documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "respiratory_exam",
+        "group_label": "Respiratory examination",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. respiratory examination findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "chest_auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "abdominal_exam",
+        "group_label": "Abdominal examination",
+        "display_order": 5,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal_exam",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. These prompts are documentation support, not examination instructions.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-palpitations",
+    "workflow_display_name": "Cardiology Palpitations",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "rhythm_assessment",
+            "prompt_text": "Rhythm assessment documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "temperature",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "general_appearance",
+        "group_label": "General appearance",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. general appearance findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "general_appearance",
+            "prompt_text": "General appearance documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "cardiac_exam",
+        "group_label": "Cardiac examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. cardiac examination findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "cardiac_auscultation",
+            "prompt_text": "Cardiac auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_sounds",
+            "prompt_text": "Heart sounds documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. These prompts are documentation support, not examination instructions.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-hypertension-followup",
+    "workflow_display_name": "Cardiology Hypertension Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "weight_bmi",
+            "prompt_text": "Weight and BMI documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "general_appearance",
+        "group_label": "General appearance",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. general appearance findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "general_appearance",
+            "prompt_text": "General appearance documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "cardiac_exam",
+        "group_label": "Cardiac examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. cardiac examination findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "cardiac_auscultation",
+            "prompt_text": "Cardiac auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "peripheral_pulses",
+            "prompt_text": "Peripheral pulses documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. These prompts are documentation support, not examination instructions.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-heart-failure-followup",
+    "workflow_display_name": "Cardiology Heart Failure Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "respiratory_rate",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "oxygen_saturation",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "weight",
+            "prompt_text": "Weight documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "fluid_status",
+        "group_label": "Fluid status",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. fluid status findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "jvp",
+            "prompt_text": "JVP documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "pedal_oedema",
+            "prompt_text": "Peripheral oedema documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "lung_auscultation",
+            "prompt_text": "Lung auscultation for crackles documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "cardiac_exam",
+        "group_label": "Cardiac examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. cardiac examination findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "cardiac_auscultation",
+            "prompt_text": "Cardiac auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_sounds",
+            "prompt_text": "Heart sounds documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. These prompts are documentation support, not examination instructions.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-ecg-review",
+    "workflow_display_name": "Cardiology ECG Review",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "oxygen_saturation",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "cardiac_exam",
+        "group_label": "Cardiac examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. cardiac examination findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "cardiac_auscultation",
+            "prompt_text": "Cardiac auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_sounds",
+            "prompt_text": "Heart sounds documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. These prompts are documentation support, not examination instructions.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-dyspnea",
+    "workflow_display_name": "Cardiology Dyspnea",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "respiratory_rate",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "oxygen_saturation",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "temperature",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "general_appearance",
+        "group_label": "General appearance",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. general appearance findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "general_appearance",
+            "prompt_text": "General appearance documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "work_of_breathing",
+            "prompt_text": "Work of breathing documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "cardiac_exam",
+        "group_label": "Cardiac examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. cardiac examination findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "cardiac_auscultation",
+            "prompt_text": "Cardiac auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "jvp",
+            "prompt_text": "JVP documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "pedal_oedema",
+            "prompt_text": "Peripheral oedema documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "respiratory_exam",
+        "group_label": "Respiratory examination",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. respiratory examination findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "chest_auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "tracheal_position",
+            "prompt_text": "Tracheal position documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. These prompts are documentation support, not examination instructions.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-lipid-followup",
+    "workflow_display_name": "Cardiology Lipid Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "weight_bmi",
+            "prompt_text": "Weight and BMI documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "general_appearance",
+        "group_label": "General appearance",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. general appearance findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "general_appearance",
+            "prompt_text": "General appearance documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. These prompts are documentation support, not examination instructions.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-post-pci-followup",
+    "workflow_display_name": "Cardiology Post-PCI Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "weight",
+            "prompt_text": "Weight documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "cardiac_exam",
+        "group_label": "Cardiac examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. cardiac examination findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "cardiac_auscultation",
+            "prompt_text": "Cardiac auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_sounds",
+            "prompt_text": "Heart sounds documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "peripheral_pulses",
+            "prompt_text": "Peripheral pulses documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "access_site",
+            "prompt_text": "Access site documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. These prompts are documentation support, not examination instructions.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-syncope",
+    "workflow_display_name": "Cardiology Syncope",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure (including postural) documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "oxygen_saturation",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "general_appearance",
+        "group_label": "General appearance",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. general appearance findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "general_appearance",
+            "prompt_text": "General appearance documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "hydration",
+            "prompt_text": "Hydration status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "cardiac_exam",
+        "group_label": "Cardiac examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. cardiac examination findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "cardiac_auscultation",
+            "prompt_text": "Cardiac auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_sounds",
+            "prompt_text": "Heart sounds documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "neurological_screen",
+            "prompt_text": "Neurological screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. These prompts are documentation support, not examination instructions.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-murmur-documentation",
+    "workflow_display_name": "Cardiology Murmur Documentation",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "oxygen_saturation",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "cardiac_exam",
+        "group_label": "Cardiac examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. cardiac examination findings only if assessed. Do not imply examination was performed without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "cardiac_auscultation",
+            "prompt_text": "Cardiac auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "murmur_timing",
+            "prompt_text": "Murmur timing documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "murmur_location",
+            "prompt_text": "Murmur location and radiation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "murmur_grade",
+            "prompt_text": "Murmur intensity/grade documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_sounds",
+            "prompt_text": "Heart sounds documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "peripheral_signs",
+            "prompt_text": "Peripheral signs of valve disease documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. These prompts are documentation support, not examination instructions.",
+    "review_required": true
   }
 ]

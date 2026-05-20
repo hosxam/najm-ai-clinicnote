@@ -8438,5 +8438,843 @@
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Sensitive risk documentation requires clinician assessment and local protocol.",
     "review_required": true,
     "source_status": "draft"
+  },
+  {
+    "workflow_id": "cardio-chest-pain",
+    "workflow_display_name": "Cardiology Chest Pain",
+    "plan_option_groups": [
+      {
+        "group_id": "management_plan",
+        "group_label": "Management plan",
+        "options": [
+          {
+            "option_id": "cardio-chest-pain_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "cardio-chest-pain_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication_plan",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "cardio-chest-pain_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          },
+          {
+            "option_id": "cardio-chest-pain_antiplatelet_plan",
+            "option_text": "Antiplatelet plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Antiplatelet plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "cardio-chest-pain_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "cardio-chest-pain_referral",
+            "option_text": "Referral documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "cardio-palpitations",
+    "workflow_display_name": "Cardiology Palpitations",
+    "plan_option_groups": [
+      {
+        "group_id": "management_plan",
+        "group_label": "Management plan",
+        "options": [
+          {
+            "option_id": "cardio-palpitations_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "cardio-palpitations_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication_plan",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "cardio-palpitations_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "cardio-palpitations_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "cardio-palpitations_referral",
+            "option_text": "Referral documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "cardio-hypertension-followup",
+    "workflow_display_name": "Cardiology Hypertension Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "management_plan",
+        "group_label": "Management plan",
+        "options": [
+          {
+            "option_id": "cardio-hypertension-followup_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "cardio-hypertension-followup_lifestyle_advice",
+            "option_text": "Lifestyle advice documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Lifestyle advice documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication_plan",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "cardio-hypertension-followup_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          },
+          {
+            "option_id": "cardio-hypertension-followup_adherence_review",
+            "option_text": "Adherence documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Adherence reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "cardio-hypertension-followup_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "cardio-hypertension-followup_investigation_follow_up",
+            "option_text": "Investigation follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Investigation follow-up documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "cardio-heart-failure-followup",
+    "workflow_display_name": "Cardiology Heart Failure Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "management_plan",
+        "group_label": "Management plan",
+        "options": [
+          {
+            "option_id": "cardio-heart-failure-followup_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "cardio-heart-failure-followup_lifestyle_advice",
+            "option_text": "Lifestyle advice (salt/fluid) documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Lifestyle advice (salt/fluid) documented."
+          },
+          {
+            "option_id": "cardio-heart-failure-followup_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication_plan",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "cardio-heart-failure-followup_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          },
+          {
+            "option_id": "cardio-heart-failure-followup_diuretic_plan",
+            "option_text": "Diuretic plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Diuretic plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "cardio-heart-failure-followup_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "cardio-heart-failure-followup_referral",
+            "option_text": "Referral documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "cardio-ecg-review",
+    "workflow_display_name": "Cardiology ECG Review",
+    "plan_option_groups": [
+      {
+        "group_id": "management_plan",
+        "group_label": "Management plan",
+        "options": [
+          {
+            "option_id": "cardio-ecg-review_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "cardio-ecg-review_clinical_correlation",
+            "option_text": "Clinical correlation documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinical correlation documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "cardio-ecg-review_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "cardio-ecg-review_referral",
+            "option_text": "Referral documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "cardio-dyspnea",
+    "workflow_display_name": "Cardiology Dyspnea",
+    "plan_option_groups": [
+      {
+        "group_id": "management_plan",
+        "group_label": "Management plan",
+        "options": [
+          {
+            "option_id": "cardio-dyspnea_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "cardio-dyspnea_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication_plan",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "cardio-dyspnea_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          },
+          {
+            "option_id": "cardio-dyspnea_diuretic_plan",
+            "option_text": "Diuretic plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Diuretic plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "cardio-dyspnea_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "cardio-dyspnea_referral",
+            "option_text": "Referral documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "cardio-lipid-followup",
+    "workflow_display_name": "Cardiology Lipid Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "management_plan",
+        "group_label": "Management plan",
+        "options": [
+          {
+            "option_id": "cardio-lipid-followup_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "cardio-lipid-followup_lifestyle_advice",
+            "option_text": "Lifestyle advice documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Lifestyle advice documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication_plan",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "cardio-lipid-followup_medication_plan",
+            "option_text": "Lipid-lowering medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Lipid-lowering medication plan documented."
+          },
+          {
+            "option_id": "cardio-lipid-followup_adherence_review",
+            "option_text": "Adherence documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Adherence reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "cardio-lipid-followup_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "cardio-lipid-followup_repeat_lipids",
+            "option_text": "Repeat lipid testing interval documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Repeat lipid testing interval documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "cardio-post-pci-followup",
+    "workflow_display_name": "Cardiology Post-PCI Follow-up",
+    "plan_option_groups": [
+      {
+        "group_id": "management_plan",
+        "group_label": "Management plan",
+        "options": [
+          {
+            "option_id": "cardio-post-pci-followup_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "cardio-post-pci-followup_lifestyle_advice",
+            "option_text": "Lifestyle advice documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Lifestyle advice documented."
+          },
+          {
+            "option_id": "cardio-post-pci-followup_cardiac_rehab",
+            "option_text": "Cardiac rehabilitation documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Cardiac rehabilitation discussed."
+          }
+        ]
+      },
+      {
+        "group_id": "medication_plan",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "cardio-post-pci-followup_medication_plan",
+            "option_text": "Medication plan (antiplatelet/statin) documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan (antiplatelet/statin) documented."
+          },
+          {
+            "option_id": "cardio-post-pci-followup_adherence_review",
+            "option_text": "Adherence documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Adherence reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "cardio-post-pci-followup_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "cardio-post-pci-followup_referral",
+            "option_text": "Referral documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "cardio-syncope",
+    "workflow_display_name": "Cardiology Syncope",
+    "plan_option_groups": [
+      {
+        "group_id": "management_plan",
+        "group_label": "Management plan",
+        "options": [
+          {
+            "option_id": "cardio-syncope_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "cardio-syncope_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      },
+      {
+        "group_id": "medication_plan",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "cardio-syncope_medication_plan",
+            "option_text": "Medication plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Medication plan documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "cardio-syncope_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "cardio-syncope_driving_advice",
+            "option_text": "Driving advice documented if clinician discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Driving advice documented."
+          },
+          {
+            "option_id": "cardio-syncope_referral",
+            "option_text": "Referral documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "cardio-murmur-documentation",
+    "workflow_display_name": "Cardiology Murmur Documentation",
+    "plan_option_groups": [
+      {
+        "group_id": "management_plan",
+        "group_label": "Management plan",
+        "options": [
+          {
+            "option_id": "cardio-murmur-documentation_clinician_plan",
+            "option_text": "Clinician-entered plan documented.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Clinician-entered plan documented."
+          },
+          {
+            "option_id": "cardio-murmur-documentation_safety_netting",
+            "option_text": "Safety-netting documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Safety-netting documented."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "cardio-murmur-documentation_follow_up",
+            "option_text": "Follow-up documented if arranged.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Follow-up documented."
+          },
+          {
+            "option_id": "cardio-murmur-documentation_referral",
+            "option_text": "Referral documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Referral documented."
+          },
+          {
+            "option_id": "cardio-murmur-documentation_echo_follow_up",
+            "option_text": "Echocardiogram follow-up documented if arranged by clinician.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V5A-4A Cardiology batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Documentation option only. Use only if confirmed by the clinician.",
+            "note_text": "Echocardiogram follow-up documented."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "source_status": "draft"
   }
 ]

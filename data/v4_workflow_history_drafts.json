@@ -2588,5 +2588,304 @@
     ],
     "safety_note": "Documentation prompts only. Clinician assessment and local protocol required. No crisis-management instructions. No risk triage recommendations.",
     "review_required": true
+  },
+  {
+    "workflow_id": "cardio-chest-pain",
+    "workflow_display_name": "Cardiology Chest Pain",
+    "default_history_draft": "Patient presents with chest pain for [onset/duration]. The pain is [character/location/radiation]. It [exertional vs rest context]. [Associated symptoms reviewed]. [Risk context discussed]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[onset/duration]",
+      "[character/location/radiation]",
+      "[exertional vs rest context]",
+      "[Associated symptoms reviewed]",
+      "[Risk context discussed]",
+      "[Relevant negatives reviewed]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-palpitations",
+    "workflow_display_name": "Cardiology Palpitations",
+    "default_history_draft": "Patient reports palpitations for [onset/duration]. The rhythm is described as [rhythm description]. [Triggers identified]. [Associated symptoms reviewed]. [Previous episodes noted]. [Medication/stimulant context reviewed]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[onset/duration]",
+      "[rhythm description]",
+      "[Triggers identified]",
+      "[Associated symptoms reviewed]",
+      "[Previous episodes noted]",
+      "[Medication/stimulant context reviewed]",
+      "[Relevant negatives reviewed]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-hypertension-followup",
+    "workflow_display_name": "Cardiology Hypertension Follow-up",
+    "default_history_draft": "Follow-up for hypertension. Home blood pressure readings [home BP context]. Medication adherence [adherence status]. [Lifestyle context discussed]. [Symptoms/concerns reviewed]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[home BP context]",
+      "[adherence status]",
+      "[Lifestyle context discussed]",
+      "[Symptoms/concerns reviewed]",
+      "[Relevant negatives reviewed]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-heart-failure-followup",
+    "workflow_display_name": "Cardiology Heart Failure Follow-up",
+    "default_history_draft": "Follow-up for heart failure. [Dyspnea/exercise tolerance status]. [Orthopnea/PND context]. [Edema/weight changes noted]. Medication adherence [adherence status]. [Symptoms/concerns reviewed]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[Dyspnea/exercise tolerance status]",
+      "[Orthopnea/PND context]",
+      "[Edema/weight changes noted]",
+      "[adherence status]",
+      "[Symptoms/concerns reviewed]",
+      "[Relevant negatives reviewed]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-ecg-review",
+    "workflow_display_name": "Cardiology ECG Review",
+    "default_history_draft": "ECG review. [Clinical context]. [Relevant symptoms reviewed]. [Prior ECGs compared]. [Additional history].",
+    "editable_placeholders": [
+      "[Clinical context]",
+      "[Relevant symptoms reviewed]",
+      "[Prior ECGs compared]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-dyspnea",
+    "workflow_display_name": "Cardiology Dyspnea",
+    "default_history_draft": "Patient presents with shortness of breath for [onset/duration]. [Exertional vs rest context]. [Orthopnea/PND reviewed]. [Cough/wheeze/chest pain reviewed]. [Leg swelling reviewed]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[onset/duration]",
+      "[Exertional vs rest context]",
+      "[Orthopnea/PND reviewed]",
+      "[Cough/wheeze/chest pain reviewed]",
+      "[Leg swelling reviewed]",
+      "[Relevant negatives reviewed]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-lipid-followup",
+    "workflow_display_name": "Cardiology Lipid Follow-up",
+    "default_history_draft": "Follow-up for lipid management. [Recent lipid results reviewed]. Medication adherence [adherence status]. [Lifestyle context discussed]. [Additional history].",
+    "editable_placeholders": [
+      "[Recent lipid results reviewed]",
+      "[adherence status]",
+      "[Lifestyle context discussed]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-post-pci-followup",
+    "workflow_display_name": "Cardiology Post-PCI Follow-up",
+    "default_history_draft": "Post-PCI follow-up. [Chest pain/symptoms since procedure]. Medication adherence [adherence status]. [Risk factor management discussed]. [Lifestyle context reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[Chest pain/symptoms since procedure]",
+      "[adherence status]",
+      "[Risk factor management discussed]",
+      "[Lifestyle context reviewed]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-syncope",
+    "workflow_display_name": "Cardiology Syncope",
+    "default_history_draft": "Patient presents following syncopal episode. [Episode context/timing]. [Prodromal symptoms reviewed]. [Witnessed features noted]. [Recovery/Post-ictal context]. [Previous episodes reviewed]. [Relevant negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[Episode context/timing]",
+      "[Prodromal symptoms reviewed]",
+      "[Witnessed features noted]",
+      "[Recovery/Post-ictal context]",
+      "[Previous episodes reviewed]",
+      "[Relevant negatives reviewed]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "cardio-murmur-documentation",
+    "workflow_display_name": "Cardiology Murmur Documentation",
+    "default_history_draft": "Evaluation of cardiac murmur. [Symptoms reviewed]. [Previous cardiac history noted]. [Family history reviewed if relevant]. [Additional history].",
+    "editable_placeholders": [
+      "[Symptoms reviewed]",
+      "[Previous cardiac history noted]",
+      "[Family history reviewed if relevant]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
   }
 ]
