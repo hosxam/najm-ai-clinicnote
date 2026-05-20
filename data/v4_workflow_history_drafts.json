@@ -3193,5 +3193,316 @@
     ],
     "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
     "review_required": true
+  },
+  {
+    "workflow_id": "resp-asthma-followup",
+    "workflow_display_name": "Respiratory Asthma Follow-up",
+    "default_history_draft": "Patient presents with asthma follow-up. Cough [cough], wheeze [wheeze], SOB [SOB]. [Nocturnal symptoms]. [Exercise tolerance]. [Trigger pattern]. [Inhaler use]. [Exacerbation history]. [Additional history].",
+    "editable_placeholders": [
+      "[cough]",
+      "[wheeze]",
+      "[SOB]",
+      "[Nocturnal symptoms]",
+      "[Exercise tolerance]",
+      "[Trigger pattern]",
+      "[Inhaler use]",
+      "[Exacerbation history]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-copd-followup",
+    "workflow_display_name": "Respiratory COPD Follow-up",
+    "default_history_draft": "Patient presents with cOPD follow-up. [Dyspnea status]. [Cough/sputum]. [Exacerbation history]. [Exercise tolerance]. [Inhaler use]. [Smoking history]. [Additional history].",
+    "editable_placeholders": [
+      "[Dyspnea status]",
+      "[Cough/sputum]",
+      "[Exacerbation history]",
+      "[Exercise tolerance]",
+      "[Inhaler use]",
+      "[Smoking history]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-chronic-cough",
+    "workflow_display_name": "Respiratory Chronic Cough",
+    "default_history_draft": "Patient presents with chronic cough for [duration]. Dry vs productive: [character]. [Nocturnal/positional]. [Triggers]. [Reflux/PND context]. [Medication history]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[character]",
+      "[Nocturnal/positional]",
+      "[Triggers]",
+      "[Reflux/PND context]",
+      "[Medication history]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-dyspnea",
+    "workflow_display_name": "Respiratory Dyspnea",
+    "default_history_draft": "Patient presents with shortness of breath for [onset/duration]. [Exertional vs rest]. [Orthopnea/PND]. [Cough/wheeze/chest pain]. [Leg swelling]. [Additional history].",
+    "editable_placeholders": [
+      "[onset/duration]",
+      "[Exertional vs rest]",
+      "[Orthopnea/PND]",
+      "[Cough/wheeze/chest pain]",
+      "[Leg swelling]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-wheeze",
+    "workflow_display_name": "Respiratory Wheeze",
+    "default_history_draft": "Patient presents with wheeze for [duration]. [Episodic pattern]. [Triggers]. [Cough/SOB]. [Chest tightness]. [Inhaler use]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[Episodic pattern]",
+      "[Triggers]",
+      "[Cough/SOB]",
+      "[Chest tightness]",
+      "[Inhaler use]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-pneumonia-followup",
+    "workflow_display_name": "Respiratory Pneumonia Follow-up",
+    "default_history_draft": "Patient presents with pneumonia follow-up. [Symptom progress]. [Cough/sputum]. [Fever]. [Dyspnea]. [Functional recovery]. [Medication/adherence]. [Additional history].",
+    "editable_placeholders": [
+      "[Symptom progress]",
+      "[Cough/sputum]",
+      "[Fever]",
+      "[Dyspnea]",
+      "[Functional recovery]",
+      "[Medication/adherence]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-sleep-apnea-symptoms",
+    "workflow_display_name": "Respiratory Sleep Apnea Symptoms",
+    "default_history_draft": "Patient presents with sleep assessment. [Snoring]. [Witnessed apnoeas]. [Daytime sleepiness]. [Morning headaches]. [Concentration]. [Sleep quality]. [Weight/BMI]. [Additional history].",
+    "editable_placeholders": [
+      "[Snoring]",
+      "[Witnessed apnoeas]",
+      "[Daytime sleepiness]",
+      "[Morning headaches]",
+      "[Concentration]",
+      "[Sleep quality]",
+      "[Weight/BMI]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-hemoptysis-documentation",
+    "workflow_display_name": "Respiratory Hemoptysis Documentation",
+    "default_history_draft": "Patient presents with hemoptysis: [amount], [colour/context]. [Cough/sputum]. [Chest pain/dyspnea]. [Fever/night sweats/weight loss]. [Smoking history]. [Anticoagulant use]. [Additional history].",
+    "editable_placeholders": [
+      "[amount]",
+      "[colour/context]",
+      "[Cough/sputum]",
+      "[Chest pain/dyspnea]",
+      "[Fever/night sweats/weight loss]",
+      "[Smoking history]",
+      "[Anticoagulant use]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-smoking-history-note",
+    "workflow_display_name": "Respiratory Smoking History Note",
+    "default_history_draft": "Patient presents with smoking history: [cigarettes/day], [years smoked], [pack years]. [Quit attempts]. [Passive/occupational exposure]. [Respiratory symptoms]. [Additional history].",
+    "editable_placeholders": [
+      "[cigarettes/day]",
+      "[years smoked]",
+      "[pack years]",
+      "[Quit attempts]",
+      "[Passive/occupational exposure]",
+      "[Respiratory symptoms]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-pulmonary-function-review",
+    "workflow_display_name": "Respiratory Pulmonary Function Review",
+    "default_history_draft": "Patient presents with pulmonary function review. Spirometry: [FEV1/FVC]. [Symptom correlation]. [Inhaler/medication use]. [Smoking status]. [Additional history].",
+    "editable_placeholders": [
+      "[FEV1/FVC]",
+      "[Symptom correlation]",
+      "[Inhaler/medication use]",
+      "[Smoking status]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
   }
 ]

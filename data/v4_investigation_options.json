@@ -4973,5 +4973,414 @@
     ],
     "safety_note": "Documentation prompts only. Documented if assessed.",
     "review_required": true
+  },
+  {
+    "workflow_id": "resp-asthma-followup",
+    "workflow_display_name": "Respiratory Asthma Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "peak_flow",
+            "option_text": "Peak flow recorded if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Peak flow recorded."
+          },
+          {
+            "option_id": "o2_sat",
+            "option_text": "Oxygen saturation reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Oxygen saturation reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "pft",
+        "group_label": "Pulmonary function",
+        "options": [
+          {
+            "option_id": "spirometry",
+            "option_text": "Spirometry reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Spirometry reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-copd-followup",
+    "workflow_display_name": "Respiratory COPD Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "pft",
+        "group_label": "Pulmonary function",
+        "options": [
+          {
+            "option_id": "spirometry",
+            "option_text": "Spirometry reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Spirometry reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "o2_assessment",
+            "option_text": "Oxygen assessment reviewed if applicable.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Oxygen assessment reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-chronic-cough",
+    "workflow_display_name": "Respiratory Chronic Cough",
+    "investigation_groups": [
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "cxr",
+            "option_text": "Chest X-ray reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Chest X-ray reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "pft",
+        "group_label": "Pulmonary function",
+        "options": [
+          {
+            "option_id": "spirometry",
+            "option_text": "Spirometry reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Spirometry reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-dyspnea",
+    "workflow_display_name": "Respiratory Dyspnea",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "ecg",
+            "option_text": "ECG reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "ECG reviewed."
+          },
+          {
+            "option_id": "o2_sat",
+            "option_text": "Oxygen saturation reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Oxygen saturation reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "cxr",
+            "option_text": "Chest X-ray reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Chest X-ray reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "bloods",
+            "option_text": "Blood tests reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Blood tests reviewed."
+          },
+          {
+            "option_id": "bnp",
+            "option_text": "BNP/NT-proBNP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "BNP/NT-proBNP reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-wheeze",
+    "workflow_display_name": "Respiratory Wheeze",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "peak_flow",
+            "option_text": "Peak flow recorded if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Peak flow recorded."
+          }
+        ]
+      },
+      {
+        "group_id": "pft",
+        "group_label": "Pulmonary function",
+        "options": [
+          {
+            "option_id": "spirometry",
+            "option_text": "Spirometry reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Spirometry reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-pneumonia-followup",
+    "workflow_display_name": "Respiratory Pneumonia Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "cxr",
+            "option_text": "Chest X-ray reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Chest X-ray reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "crp",
+            "option_text": "CRP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CRP reviewed."
+          },
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-sleep-apnea-symptoms",
+    "workflow_display_name": "Respiratory Sleep Apnea Symptoms",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "epworth",
+            "option_text": "Epworth Sleepiness Scale score reviewed if completed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Epworth Sleepiness Scale score reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "sleep_study",
+        "group_label": "Sleep study",
+        "options": [
+          {
+            "option_id": "polysomnography",
+            "option_text": "Sleep study report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Sleep study report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-hemoptysis-documentation",
+    "workflow_display_name": "Respiratory Hemoptysis Documentation",
+    "investigation_groups": [
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "cxr",
+            "option_text": "Chest X-ray reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Chest X-ray reviewed."
+          },
+          {
+            "option_id": "ct_chest",
+            "option_text": "CT chest reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CT chest reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "coagulation",
+            "option_text": "Coagulation profile reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Coagulation profile reviewed."
+          },
+          {
+            "option_id": "sputum",
+            "option_text": "Sputum studies reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Sputum studies reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-smoking-history-note",
+    "workflow_display_name": "Respiratory Smoking History Note",
+    "investigation_groups": [
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "cxr",
+            "option_text": "Chest X-ray reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Chest X-ray reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "pft",
+        "group_label": "Pulmonary function",
+        "options": [
+          {
+            "option_id": "spirometry",
+            "option_text": "Spirometry reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Spirometry reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-pulmonary-function-review",
+    "workflow_display_name": "Respiratory Pulmonary Function Review",
+    "investigation_groups": [
+      {
+        "group_id": "pft",
+        "group_label": "Pulmonary function",
+        "options": [
+          {
+            "option_id": "previous_pft",
+            "option_text": "Previous PFT reports reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Previous PFT reports reviewed."
+          },
+          {
+            "option_id": "blood_gas",
+            "option_text": "Blood gas reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Blood gas reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "cxr",
+            "option_text": "Chest X-ray reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Chest X-ray reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
   }
 ]

@@ -10751,5 +10751,539 @@
     ],
     "safety_note": "Document only if assessed.",
     "review_required": true
+  },
+  {
+    "workflow_id": "resp-asthma-followup",
+    "workflow_display_name": "Respiratory Asthma Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "o2_sat",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "rr",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "peak_flow",
+            "prompt_text": "Peak flow documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "chest",
+        "group_label": "Chest examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. chest examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "wheeze",
+            "prompt_text": "Wheeze documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "accessory_muscles",
+            "prompt_text": "Accessory muscle use documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-copd-followup",
+    "workflow_display_name": "Respiratory COPD Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "o2_sat",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "rr",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "chest",
+        "group_label": "Chest examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. chest examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "wheeze",
+            "prompt_text": "Wheeze documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "general",
+        "group_label": "General",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. general findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "oedema",
+            "prompt_text": "Peripheral oedema documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-chronic-cough",
+    "workflow_display_name": "Respiratory Chronic Cough",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "o2_sat",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "ent",
+        "group_label": "ENT examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. ent examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "oropharynx",
+            "prompt_text": "Oropharyngeal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "nasal",
+            "prompt_text": "Nasal examination documented if relevant.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "chest",
+        "group_label": "Chest examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. chest examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-dyspnea",
+    "workflow_display_name": "Respiratory Dyspnea",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "o2_sat",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "rr",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "chest",
+        "group_label": "Chest examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. chest examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "wheeze",
+            "prompt_text": "Wheeze or crackles documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "general",
+        "group_label": "General",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. general findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "oedema",
+            "prompt_text": "Peripheral oedema documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "jvp",
+            "prompt_text": "JVP documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-wheeze",
+    "workflow_display_name": "Respiratory Wheeze",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "o2_sat",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "rr",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "peak_flow",
+            "prompt_text": "Peak flow documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "chest",
+        "group_label": "Chest examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. chest examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "wheeze",
+            "prompt_text": "Wheeze documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-pneumonia-followup",
+    "workflow_display_name": "Respiratory Pneumonia Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "temp",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "o2_sat",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "rr",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "chest",
+        "group_label": "Chest examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. chest examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-sleep-apnea-symptoms",
+    "workflow_display_name": "Respiratory Sleep Apnea Symptoms",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "bmi",
+            "prompt_text": "BMI documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "ent",
+        "group_label": "Airway examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. airway examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "oropharyngeal",
+            "prompt_text": "Oropharyngeal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "neck_circ",
+            "prompt_text": "Neck circumference documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-hemoptysis-documentation",
+    "workflow_display_name": "Respiratory Hemoptysis Documentation",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "pulse",
+            "prompt_text": "Pulse documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "o2_sat",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "chest",
+        "group_label": "Chest examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. chest examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "oropharynx",
+            "prompt_text": "Oropharyngeal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-smoking-history-note",
+    "workflow_display_name": "Respiratory Smoking History Note",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "o2_sat",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "chest",
+        "group_label": "Chest examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. chest examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "resp-pulmonary-function-review",
+    "workflow_display_name": "Respiratory Pulmonary Function Review",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "o2_sat",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "chest",
+        "group_label": "Chest examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. chest examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
   }
 ]
