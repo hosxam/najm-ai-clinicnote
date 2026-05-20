@@ -5382,5 +5382,416 @@
     ],
     "safety_note": "Documentation prompts only. Documented if assessed.",
     "review_required": true
+  },
+  {
+    "workflow_id": "gastro-gerd",
+    "workflow_display_name": "Gastro GERD",
+    "investigation_groups": [
+      {
+        "group_id": "endoscopy",
+        "group_label": "Endoscopy",
+        "options": [
+          {
+            "option_id": "previous_ogd",
+            "option_text": "Previous endoscopy report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Previous endoscopy report reviewed."
+          },
+          {
+            "option_id": "hpylori",
+            "option_text": "H. pylori result reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "H. pylori result reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "bloods",
+            "option_text": "Blood tests reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Blood tests reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-abdominal-pain",
+    "workflow_display_name": "Gastro Abdominal Pain",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "crp",
+            "option_text": "CRP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CRP reviewed."
+          },
+          {
+            "option_id": "lft",
+            "option_text": "Liver function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Liver function reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "abdominal_imaging",
+            "option_text": "Abdominal imaging reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Abdominal imaging reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "urine",
+        "group_label": "Urine",
+        "options": [
+          {
+            "option_id": "urinalysis",
+            "option_text": "Urinalysis reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urinalysis reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-ibs-symptoms",
+    "workflow_display_name": "Gastro IBS Symptoms",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "crp",
+            "option_text": "CRP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CRP reviewed."
+          },
+          {
+            "option_id": "coeliac",
+            "option_text": "Coeliac serology reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Coeliac serology reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "stool",
+        "group_label": "Stool",
+        "options": [
+          {
+            "option_id": "stool_studies",
+            "option_text": "Stool studies reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Stool studies reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-constipation",
+    "workflow_display_name": "Gastro Constipation",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "tft",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Thyroid function reviewed."
+          },
+          {
+            "option_id": "calcium",
+            "option_text": "Calcium reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Calcium reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-diarrhea",
+    "workflow_display_name": "Gastro Diarrhea",
+    "investigation_groups": [
+      {
+        "group_id": "stool",
+        "group_label": "Stool",
+        "options": [
+          {
+            "option_id": "stool_culture",
+            "option_text": "Stool culture reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Stool culture reviewed."
+          },
+          {
+            "option_id": "calprotectin",
+            "option_text": "Calprotectin reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Calprotectin reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "crp",
+            "option_text": "CRP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CRP reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-rectal-bleeding",
+    "workflow_display_name": "Gastro Rectal Bleeding",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "coagulation",
+            "option_text": "Coagulation reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Coagulation reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "endoscopy",
+        "group_label": "Endoscopy",
+        "options": [
+          {
+            "option_id": "previous_colonoscopy",
+            "option_text": "Previous colonoscopy/endoscopy report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Previous colonoscopy/endoscopy report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-liver-enzyme-review",
+    "workflow_display_name": "Gastro Liver Enzyme Review",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "lft",
+            "option_text": "Liver function tests reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Liver function tests reviewed.."
+          },
+          {
+            "option_id": "viral_hepatitis",
+            "option_text": "Viral hepatitis serology reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Viral hepatitis serology reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "ultrasound",
+            "option_text": "Abdominal ultrasound report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Abdominal ultrasound report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-jaundice-documentation",
+    "workflow_display_name": "Gastro Jaundice",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "lft",
+            "option_text": "Liver function tests reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Liver function tests reviewed."
+          },
+          {
+            "option_id": "bilirubin",
+            "option_text": "Bilirubin reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Bilirubin reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "ultrasound",
+            "option_text": "Abdominal ultrasound/imaging reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Abdominal ultrasound/imaging reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-dysphagia",
+    "workflow_display_name": "Gastro Dysphagia",
+    "investigation_groups": [
+      {
+        "group_id": "endoscopy",
+        "group_label": "Endoscopy",
+        "options": [
+          {
+            "option_id": "previous_ogd",
+            "option_text": "Previous endoscopy report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Previous endoscopy report reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "barium_swallow",
+            "option_text": "Barium swallow report reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Barium swallow report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-post-endoscopy-followup",
+    "workflow_display_name": "Gastro Post Endoscopy Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "endoscopy",
+        "group_label": "Endoscopy",
+        "options": [
+          {
+            "option_id": "endoscopy_report",
+            "option_text": "Endoscopy report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Endoscopy report reviewed.."
+          },
+          {
+            "option_id": "histology",
+            "option_text": "Histology/pathology reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Histology/pathology reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
   }
 ]

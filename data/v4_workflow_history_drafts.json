@@ -3504,5 +3504,312 @@
     ],
     "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
     "review_required": true
+  },
+  {
+    "workflow_id": "gastro-gerd",
+    "workflow_display_name": "Gastro GERD",
+    "default_history_draft": "Patient presents with reflux. [Heartburn]. [Regurgitation]. [Epigastric discomfort]. [Post-prandial]. [Nocturnal]. [Trigger foods]. [Medication use].",
+    "editable_placeholders": [
+      "[Heartburn]",
+      "[Regurgitation]",
+      "[Epigastric discomfort]",
+      "[Post-prandial]",
+      "[Nocturnal]",
+      "[Trigger foods]",
+      "[Medication use]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-abdominal-pain",
+    "workflow_display_name": "Gastro Abdominal Pain",
+    "default_history_draft": "Patient presents with abdominal pain [duration]. Location [location], character [character]. [Radiation]. [Relation to meals/bowels]. [Nausea/vomiting]. [Bowel habit]. [Urinary symptoms].",
+    "editable_placeholders": [
+      "[duration]",
+      "[location]",
+      "[character]",
+      "[Radiation]",
+      "[Relation to meals/bowels]",
+      "[Nausea/vomiting]",
+      "[Bowel habit]",
+      "[Urinary symptoms]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-ibs-symptoms",
+    "workflow_display_name": "Gastro IBS Symptoms",
+    "default_history_draft": "Patient presents with iBS symptoms. [Abdominal pain/discomfort]. [Bloating]. [Bowel habit pattern]. [Diarrhoea/constipation pattern]. [Relation to stress/food].",
+    "editable_placeholders": [
+      "[Abdominal pain/discomfort]",
+      "[Bloating]",
+      "[Bowel habit pattern]",
+      "[Diarrhoea/constipation pattern]",
+      "[Relation to stress/food]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-constipation",
+    "workflow_display_name": "Gastro Constipation",
+    "default_history_draft": "Patient presents with constipation [duration]. Stool frequency [frequency], consistency [consistency]. [Straining]. [Incomplete emptying]. [Diet/fluid]. [Medication history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[frequency]",
+      "[consistency]",
+      "[Straining]",
+      "[Incomplete emptying]",
+      "[Diet/fluid]",
+      "[Medication history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-diarrhea",
+    "workflow_display_name": "Gastro Diarrhea",
+    "default_history_draft": "Patient presents with diarrhoea [duration]. Stool frequency [frequency], consistency [consistency]. [Blood/mucus]. [Fever]. [Vomiting]. [Travel/food exposure]. [Hydration context].",
+    "editable_placeholders": [
+      "[duration]",
+      "[frequency]",
+      "[consistency]",
+      "[Blood/mucus]",
+      "[Fever]",
+      "[Vomiting]",
+      "[Travel/food exposure]",
+      "[Hydration context]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-rectal-bleeding",
+    "workflow_display_name": "Gastro Rectal Bleeding",
+    "default_history_draft": "Patient presents with rectal bleeding. Colour [colour], amount [amount]. [Relation to stool]. [Pain on defecation]. [Change in bowel habit]. [Weight loss]. [Anticoagulant use].",
+    "editable_placeholders": [
+      "[colour]",
+      "[amount]",
+      "[Relation to stool]",
+      "[Pain on defecation]",
+      "[Change in bowel habit]",
+      "[Weight loss]",
+      "[Anticoagulant use]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-liver-enzyme-review",
+    "workflow_display_name": "Gastro Liver Enzyme Review",
+    "default_history_draft": "Patient presents with liver enzyme review. Results: [type], trend [trend]. [Alcohol history]. [Medication/supplement history]. [Viral hepatitis risk].",
+    "editable_placeholders": [
+      "[type]",
+      "[trend]",
+      "[Alcohol history]",
+      "[Medication/supplement history]",
+      "[Viral hepatitis risk]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-jaundice-documentation",
+    "workflow_display_name": "Gastro Jaundice",
+    "default_history_draft": "Patient presents with jaundice [duration]. [Dark urine]. [Pale stool]. [Pruritus]. [Abdominal pain]. [Fever]. [Weight loss]. [Medication/alcohol history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[Dark urine]",
+      "[Pale stool]",
+      "[Pruritus]",
+      "[Abdominal pain]",
+      "[Fever]",
+      "[Weight loss]",
+      "[Medication/alcohol history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-dysphagia",
+    "workflow_display_name": "Gastro Dysphagia",
+    "default_history_draft": "Patient presents with dysphagia [duration]. Solids vs liquids: [solids/liquids]. [Progression]. [Odynophagia]. [Reflux symptoms]. [Weight loss]. [Regurgitation].",
+    "editable_placeholders": [
+      "[duration]",
+      "[solids/liquids]",
+      "[Progression]",
+      "[Odynophagia]",
+      "[Reflux symptoms]",
+      "[Weight loss]",
+      "[Regurgitation]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-post-endoscopy-followup",
+    "workflow_display_name": "Gastro Post Endoscopy Follow-up",
+    "default_history_draft": "Patient presents with post-endoscopy follow-up. Procedure [type], indication [indication]. [Findings reviewed]. [Symptoms after procedure]. [Medication/advice].",
+    "editable_placeholders": [
+      "[type]",
+      "[indication]",
+      "[Findings reviewed]",
+      "[Symptoms after procedure]",
+      "[Medication/advice]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
   }
 ]

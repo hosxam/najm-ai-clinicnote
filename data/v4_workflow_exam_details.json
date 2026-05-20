@@ -11285,5 +11285,489 @@
     ],
     "safety_note": "Document only if assessed.",
     "review_required": true
+  },
+  {
+    "workflow_id": "gastro-gerd",
+    "workflow_display_name": "Gastro GERD",
+    "exam_groups": [
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "epigastric",
+            "prompt_text": "Epigastric tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-abdominal-pain",
+    "workflow_display_name": "Gastro Abdominal Pain",
+    "exam_groups": [
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "tenderness",
+            "prompt_text": "Abdominal tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "guarding",
+            "prompt_text": "Guarding/rebound documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "bs",
+            "prompt_text": "Bowel sounds documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "temp",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-ibs-symptoms",
+    "workflow_display_name": "Gastro IBS Symptoms",
+    "exam_groups": [
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "tenderness",
+            "prompt_text": "Abdominal tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-constipation",
+    "workflow_display_name": "Gastro Constipation",
+    "exam_groups": [
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "distension",
+            "prompt_text": "Abdominal distension documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rectal",
+        "group_label": "Rectal examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. rectal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "dre",
+            "prompt_text": "Digital rectal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-diarrhea",
+    "workflow_display_name": "Gastro Diarrhea",
+    "exam_groups": [
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "tenderness",
+            "prompt_text": "Abdominal tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "temp",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "hydration",
+        "group_label": "Hydration",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. hydration findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "hydration",
+            "prompt_text": "Hydration documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-rectal-bleeding",
+    "workflow_display_name": "Gastro Rectal Bleeding",
+    "exam_groups": [
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "rectal",
+        "group_label": "Rectal examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. rectal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "dre",
+            "prompt_text": "Digital rectal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "hr",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-liver-enzyme-review",
+    "workflow_display_name": "Gastro Liver Enzyme Review",
+    "exam_groups": [
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "hepatomegaly",
+            "prompt_text": "Hepatomegaly documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-jaundice-documentation",
+    "workflow_display_name": "Gastro Jaundice",
+    "exam_groups": [
+      {
+        "group_id": "general",
+        "group_label": "General examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. general examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "sclera",
+            "prompt_text": "Scleral icterus documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "hepatomegaly",
+            "prompt_text": "Hepatomegaly documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "temp",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-dysphagia",
+    "workflow_display_name": "Gastro Dysphagia",
+    "exam_groups": [
+      {
+        "group_id": "general",
+        "group_label": "General examination",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. general examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "general",
+            "prompt_text": "General examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "oral",
+            "prompt_text": "Oral/throat examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "gastro-post-endoscopy-followup",
+    "workflow_display_name": "Gastro Post Endoscopy Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "hr",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "abd",
+        "group_label": "Abdominal examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. abdominal examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "tenderness",
+            "prompt_text": "Abdominal tenderness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
   }
 ]
