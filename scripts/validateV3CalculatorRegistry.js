@@ -193,11 +193,11 @@ function main() {
       riskCounts[calculator.risk_level] += 1;
     }
 
-    if (calculator.implementation_status !== 'registry_only') {
-      errors.push(`${label}: implementation_status must be registry_only.`);
+    if (calculator.implementation_status !== 'registry_only' && calculator.implementation_status !== 'implemented') {
+      errors.push(`${label}: implementation_status must be registry_only or implemented.`);
     }
-    if (calculator.formula_status !== 'not_implemented') {
-      errors.push(`${label}: formula_status must be not_implemented.`);
+    if (calculator.formula_status !== 'not_implemented' && calculator.formula_status !== 'implemented') {
+      errors.push(`${label}: formula_status must be not_implemented or implemented.`);
     }
     if (!VALID_SOURCE_STATUS.has(calculator.source_status)) {
       errors.push(`${label}: invalid source_status "${calculator.source_status}".`);

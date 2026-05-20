@@ -15,7 +15,7 @@
     "purpose": "Documentation context for body mass index when height and weight are clinician-entered.",
     "clinical_context": "May be relevant when a clinician documents metabolic, weight, diabetes, or hypertension follow-up context.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -68,7 +68,7 @@
     "purpose": "Documentation context for smoking exposure when clinician-entered tobacco history is available.",
     "clinical_context": "May be relevant for respiratory, cardiovascular, and general medical documentation.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -119,7 +119,7 @@
     "purpose": "Documentation context for blood pressure-derived observation value when clinician-entered readings are available.",
     "clinical_context": "May be relevant when vital signs are documented.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -171,7 +171,7 @@
     "purpose": "Documentation context for a vital-sign relationship when pulse and blood pressure are clinician-entered.",
     "clinical_context": "May be relevant in future urgent-care documentation workflows after source review.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -223,7 +223,7 @@
     "purpose": "Documentation context for breathlessness severity when clinician-entered functional limitation is available.",
     "clinical_context": "May be relevant when documenting dyspnea impact.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -273,7 +273,7 @@
     "purpose": "Documentation context for brief low-mood screening responses when clinician-entered.",
     "clinical_context": "May be relevant for mental health documentation after source review.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -332,7 +332,7 @@
     "purpose": "Documentation context for clinician-entered depression questionnaire responses.",
     "clinical_context": "May be relevant when documenting a structured mood questionnaire.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -386,7 +386,7 @@
     "purpose": "Documentation context for clinician-entered anxiety questionnaire responses.",
     "clinical_context": "May be relevant when documenting anxiety symptom screening.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -433,7 +433,7 @@
     "purpose": "Documentation context for clinician-entered daytime sleepiness questionnaire responses.",
     "clinical_context": "May be relevant when documenting sleepiness symptoms.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -477,7 +477,7 @@
     "purpose": "Documentation context for clinician-entered urinary symptom questionnaire responses.",
     "clinical_context": "May be relevant for future lower urinary tract symptom workflows.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -1061,7 +1061,7 @@
     "purpose": "Documentation support for NYHA functional classification.",
     "clinical_context": "Heart failure or dyspnea workflow.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -1104,7 +1104,7 @@
     "purpose": "Documentation support for Killip classification in acute MI.",
     "clinical_context": "Chest pain or acute cardiac workflow.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -1149,7 +1149,7 @@
     "purpose": "Documentation support for SIRS criteria.",
     "clinical_context": "Fever or infection workflow.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -1217,7 +1217,7 @@
     "purpose": "Documentation support for qSOFA score.",
     "clinical_context": "Suspected infection or acute deterioration workflow.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -1267,7 +1267,7 @@
     "purpose": "Documentation support for non-invasive liver fibrosis index.",
     "clinical_context": "Liver enzyme or jaundice workflow.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -1333,7 +1333,7 @@
     "purpose": "Documentation support for Child-Pugh liver disease severity score.",
     "clinical_context": "Liver disease workflow.",
     "risk_level": "low",
-    "implementation_status": "registry_only",
+    "implementation_status": "implemented",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
