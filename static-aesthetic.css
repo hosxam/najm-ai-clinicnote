@@ -46,11 +46,14 @@ footer{background:#fff;border-top:1px solid var(--cn-border);color:var(--cn-mute
 footer a{color:var(--cn-text-soft);font-weight:750}
 footer a:hover{color:var(--cn-primary-dark)}
 @media(max-width:760px){
+  html,body{max-width:100%;overflow-x:hidden}
   .nav{gap:10px}
   .nav-links{gap:6px}
   .nav-links a{padding:8px 10px}
   .hero{padding-left:16px;padding-right:16px}
   main{padding-left:14px;padding-right:14px}
+  .card,.feedback-card,.safety{padding:18px;min-width:0;max-width:100%;overflow-wrap:anywhere}
   .cta-row{display:grid;grid-template-columns:1fr;gap:10px}
-  .btn{justify-content:center;text-align:center}
+  .btn{justify-content:center;text-align:center;min-height:44px}
+  footer{line-height:1.8;padding-left:14px;padding-right:14px}
 }

@@ -5870,6 +5870,42 @@ nav{background:rgba(248,250,247,.88);backdrop-filter:blur(16px);border-bottom:1p
 .calculator-result.calc-result-error{background:var(--color-warning-bg);border-color:#fed7aa;color:#7c2d12}
 .calculator-safety{border-top:1px solid var(--color-border);padding-top:10px;color:var(--color-muted);line-height:1.5}
 
+/* === Aesthetic upgrade: mobile and accessibility polish (visual-only) === */
+@media(max-width:900px){
+  .hero-stats,.trust-badges,.hero-ctas{align-items:stretch}
+  .v4-stepper{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .v4-layout{grid-template-columns:1fr}
+  .v4-sidebar-inner{position:static}
+  .calculator-grid,.examples-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  html,body{max-width:100%;overflow-x:hidden}
+  .container,main,.section,.page,.speed-mode-box,#v4EncounterBuilderPanel,.output-card,.calculator-card,.card,.example-card{min-width:0;max-width:100%}
+  .nav-inner{height:auto;min-height:64px}
+  .nav-links.open{box-shadow:var(--shadow-md)}
+  .hero{padding:54px 14px 38px}
+  .hero h1{font-size:32px;line-height:1.08}
+  .hero p{font-size:15px}
+  .hero-microcopy{display:flex;border-radius:var(--radius-sm);text-align:left}
+  .trust-badges{justify-content:flex-start}
+  .trust-badge{white-space:normal;text-align:left}
+  .hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .hero-stat{min-width:0;padding:12px}
+  .btn,.v4-btn,.calculator-actions .btn,.output-actions .btn{min-height:44px}
+  .hero-ctas .btn,.gen-row .btn,.v4-actions .btn,.calculator-actions .btn{width:100%;justify-content:center}
+  .chip,.v4-chip-btn,.v4-section-chip{min-height:40px;padding:9px 12px}
+  .chip-group,.v4-chip-list{gap:7px}
+  .output-header,.output-actions,.v4-output-tabs{overflow-x:auto;flex-wrap:nowrap}
+  .output-tab,.v4-output-tabs button{white-space:nowrap;flex:0 0 auto;min-height:40px}
+  .output-body,.v4-output-box,.calculator-result,.example-block pre{overflow:auto;word-break:normal;overflow-wrap:anywhere}
+  .two-col,.v4-wf-grid,.v4-hist-grid,.calculator-fields{grid-template-columns:1fr!important}
+  #v2SearchArea,#v2ChipGroups .speed-section,.v4-step-content,.v4-sidebar-inner,.calculator-card{padding:14px}
+  .v4-stepper{grid-template-columns:1fr 1fr;gap:7px}
+  .v4-s-indicator{padding:8px}
+  .v4-s-label{font-size:11px}
+  .feedback-panel,.safety-section{padding:18px}
+}
+
 </style>
 
 
