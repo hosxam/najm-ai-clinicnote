@@ -7900,7 +7900,7 @@
     },
     {
       "entry_id": "sx-urgent-trauma",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Trauma / injury",
       "aliases": [
         "injury",
@@ -7922,7 +7922,7 @@
     },
     {
       "entry_id": "sx-urgent-wound",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Wound / laceration",
       "aliases": [
         "wound",
@@ -7967,7 +7967,7 @@
     },
     {
       "entry_id": "sx-urgent-burn",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Burn / thermal injury",
       "aliases": [
         "burn",
@@ -8012,7 +8012,7 @@
     },
     {
       "entry_id": "sx-urgent-allergy",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Allergy / rash",
       "aliases": [
         "allergy",
@@ -8058,7 +8058,7 @@
     },
     {
       "entry_id": "sx-urgent-head",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Head trauma / injury",
       "aliases": [
         "head injury",
@@ -8104,7 +8104,7 @@
     },
     {
       "entry_id": "sx-urgent-cp",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Chest discomfort",
       "aliases": [
         "chest discomfort",
@@ -8149,7 +8149,7 @@
     },
     {
       "entry_id": "sx-urgent-sob",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Acute dyspnea",
       "aliases": [
         "dyspnea",
@@ -8194,7 +8194,7 @@
     },
     {
       "entry_id": "sx-urgent-abd",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Acute abdominal pain",
       "aliases": [
         "acute abdomen",
@@ -8239,7 +8239,7 @@
     },
     {
       "entry_id": "sx-urgent-syncope",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Collapse / fainting",
       "aliases": [
         "collapse",
@@ -8285,7 +8285,7 @@
     },
     {
       "entry_id": "sx-urgent-fever",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Fever / pyrexia",
       "aliases": [
         "fever",
@@ -8378,7 +8378,7 @@
     },
     {
       "entry_id": "sx-cardio-cp",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Chest discomfort",
       "aliases": [
         "chest discomfort",

@@ -2547,5 +2547,900 @@
         ]
       }
     ]
+  },
+  {
+    "specialty_id": "Cardiology",
+    "display_name": "Cardiology",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "hpi",
+        "display_name": "History of Presenting Complaint",
+        "order": 1,
+        "description": "core|free_text",
+        "fields": [
+          {
+            "field_id": "chief_complaint",
+            "prompt": "Chief complaint",
+            "type": "text",
+            "placeholder": "e.g. chest pain, palpitations, dyspnea",
+            "required": true
+          },
+          {
+            "field_id": "duration",
+            "prompt": "Duration",
+            "type": "text",
+            "placeholder": "e.g. 3 days, 2 weeks",
+            "required": true
+          },
+          {
+            "field_id": "onset",
+            "prompt": "Onset",
+            "type": "select",
+            "placeholder": null,
+            "required": false,
+            "options": [
+              "Acute|Gradual|Intermittent|Constant"
+            ]
+          },
+          {
+            "field_id": "severity",
+            "prompt": "Severity",
+            "type": "number",
+            "placeholder": null,
+            "required": false
+          },
+          {
+            "field_id": "context",
+            "prompt": "Context",
+            "type": "text",
+            "placeholder": "e.g. exertional, at rest, positional",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "associated_symptoms",
+        "display_name": "Associated Symptoms",
+        "order": 2,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "positive_symptoms",
+            "prompt": "Cardiac symptoms",
+            "type": "text",
+            "placeholder": "Chest pain, SOB, palpitations, oedema",
+            "required": false
+          },
+          {
+            "field_id": "relevant_negatives",
+            "prompt": "Relevant negatives reviewed",
+            "type": "text",
+            "placeholder": "Key negative symptoms",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "social",
+        "display_name": "Social History",
+        "order": 3,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "smoking",
+            "prompt": "Smoking",
+            "type": "text",
+            "placeholder": "e.g. 10 pack years",
+            "required": false
+          },
+          {
+            "field_id": "alcohol",
+            "prompt": "Alcohol",
+            "type": "text",
+            "placeholder": "e.g. Social, none",
+            "required": false
+          },
+          {
+            "field_id": "occupation",
+            "prompt": "Occupation",
+            "type": "text",
+            "placeholder": "e.g. Teacher, Retired",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "pmh",
+        "display_name": "Past Medical History",
+        "order": 4,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "pmh",
+            "prompt": "Past medical history",
+            "type": "text",
+            "placeholder": "Relevant conditions",
+            "required": false
+          },
+          {
+            "field_id": "medications",
+            "prompt": "Medications",
+            "type": "text",
+            "placeholder": "Current medications",
+            "required": false
+          },
+          {
+            "field_id": "allergies",
+            "prompt": "Allergies",
+            "type": "text",
+            "placeholder": "Drug allergies",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "cardiac_review",
+        "display_name": "Cardiac Review",
+        "order": 5,
+        "description": "specialty|structured_section",
+        "fields": [
+          {
+            "field_id": "exercise_tolerance",
+            "prompt": "Exercise tolerance",
+            "type": "text",
+            "placeholder": "e.g. MRC grade, activities limited",
+            "required": false
+          },
+          {
+            "field_id": "risk_factors",
+            "prompt": "Cardiovascular risk factors",
+            "type": "text",
+            "placeholder": "HTN, DM, lipids, family history",
+            "required": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "specialty_id": "Neurology",
+    "display_name": "Neurology",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "hpi",
+        "display_name": "History of Presenting Complaint",
+        "order": 1,
+        "description": "core|free_text",
+        "fields": [
+          {
+            "field_id": "chief_complaint",
+            "prompt": "Chief complaint",
+            "type": "text",
+            "placeholder": "e.g. headache, weakness, numbness, dizziness",
+            "required": true
+          },
+          {
+            "field_id": "duration",
+            "prompt": "Duration",
+            "type": "text",
+            "placeholder": "e.g. 3 days, 2 weeks",
+            "required": true
+          },
+          {
+            "field_id": "onset",
+            "prompt": "Onset",
+            "type": "select",
+            "placeholder": null,
+            "required": false,
+            "options": [
+              "Acute|Gradual|Intermittent|Constant"
+            ]
+          },
+          {
+            "field_id": "severity",
+            "prompt": "Severity",
+            "type": "number",
+            "placeholder": null,
+            "required": false
+          },
+          {
+            "field_id": "context",
+            "prompt": "Context",
+            "type": "text",
+            "placeholder": "e.g. onset pattern, progression",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "associated_symptoms",
+        "display_name": "Associated Symptoms",
+        "order": 2,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "positive_symptoms",
+            "prompt": "Neurological symptoms",
+            "type": "text",
+            "placeholder": "Sensory, motor, speech, vision, coordination",
+            "required": false
+          },
+          {
+            "field_id": "relevant_negatives",
+            "prompt": "Relevant negatives reviewed",
+            "type": "text",
+            "placeholder": "Key negative symptoms",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "social",
+        "display_name": "Social History",
+        "order": 3,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "smoking",
+            "prompt": "Smoking",
+            "type": "text",
+            "placeholder": "e.g. 10 pack years",
+            "required": false
+          },
+          {
+            "field_id": "alcohol",
+            "prompt": "Alcohol",
+            "type": "text",
+            "placeholder": "e.g. Social, none",
+            "required": false
+          },
+          {
+            "field_id": "occupation",
+            "prompt": "Occupation",
+            "type": "text",
+            "placeholder": "e.g. Teacher, Retired",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "pmh",
+        "display_name": "Past Medical History",
+        "order": 4,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "pmh",
+            "prompt": "Past medical history",
+            "type": "text",
+            "placeholder": "Relevant conditions",
+            "required": false
+          },
+          {
+            "field_id": "medications",
+            "prompt": "Medications",
+            "type": "text",
+            "placeholder": "Current medications",
+            "required": false
+          },
+          {
+            "field_id": "allergies",
+            "prompt": "Allergies",
+            "type": "text",
+            "placeholder": "Drug allergies",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "neuro_review",
+        "display_name": "Neurological Review",
+        "order": 5,
+        "description": "specialty|structured_section",
+        "fields": [
+          {
+            "field_id": "neuro_exam_context",
+            "prompt": "Neurological examination context",
+            "type": "text",
+            "placeholder": "CN, power, sensation, coordination, gait",
+            "required": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "specialty_id": "Respiratory / Pulmonology",
+    "display_name": "Respiratory / Pulmonology",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "hpi",
+        "display_name": "History of Presenting Complaint",
+        "order": 1,
+        "description": "core|free_text",
+        "fields": [
+          {
+            "field_id": "chief_complaint",
+            "prompt": "Chief complaint",
+            "type": "text",
+            "placeholder": "e.g. cough, dyspnea, wheeze, hemoptysis",
+            "required": true
+          },
+          {
+            "field_id": "duration",
+            "prompt": "Duration",
+            "type": "text",
+            "placeholder": "e.g. 3 days, 2 weeks",
+            "required": true
+          },
+          {
+            "field_id": "onset",
+            "prompt": "Onset",
+            "type": "select",
+            "placeholder": null,
+            "required": false,
+            "options": [
+              "Acute|Gradual|Intermittent|Constant"
+            ]
+          },
+          {
+            "field_id": "severity",
+            "prompt": "Severity",
+            "type": "number",
+            "placeholder": null,
+            "required": false
+          },
+          {
+            "field_id": "context",
+            "prompt": "Context",
+            "type": "text",
+            "placeholder": "e.g. exertional, nocturnal, positional",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "associated_symptoms",
+        "display_name": "Associated Symptoms",
+        "order": 2,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "positive_symptoms",
+            "prompt": "Respiratory symptoms",
+            "type": "text",
+            "placeholder": "Cough, sputum, SOB, wheeze, chest pain",
+            "required": false
+          },
+          {
+            "field_id": "relevant_negatives",
+            "prompt": "Relevant negatives reviewed",
+            "type": "text",
+            "placeholder": "Key negative symptoms",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "social",
+        "display_name": "Social History",
+        "order": 3,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "smoking",
+            "prompt": "Smoking",
+            "type": "text",
+            "placeholder": "e.g. 10 pack years",
+            "required": false
+          },
+          {
+            "field_id": "alcohol",
+            "prompt": "Alcohol",
+            "type": "text",
+            "placeholder": "e.g. Social, none",
+            "required": false
+          },
+          {
+            "field_id": "occupation",
+            "prompt": "Occupation",
+            "type": "text",
+            "placeholder": "e.g. Teacher, Retired",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "pmh",
+        "display_name": "Past Medical History",
+        "order": 4,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "pmh",
+            "prompt": "Past medical history",
+            "type": "text",
+            "placeholder": "Relevant conditions",
+            "required": false
+          },
+          {
+            "field_id": "medications",
+            "prompt": "Medications",
+            "type": "text",
+            "placeholder": "Current medications",
+            "required": false
+          },
+          {
+            "field_id": "allergies",
+            "prompt": "Allergies",
+            "type": "text",
+            "placeholder": "Drug allergies",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "resp_review",
+        "display_name": "Respiratory Review",
+        "order": 5,
+        "description": "specialty|structured_section",
+        "fields": [
+          {
+            "field_id": "smoking_exposure",
+            "prompt": "Smoking/occupational exposure",
+            "type": "text",
+            "placeholder": "Pack years, occupational hazards",
+            "required": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "specialty_id": "Gastroenterology",
+    "display_name": "Gastroenterology",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "hpi",
+        "display_name": "History of Presenting Complaint",
+        "order": 1,
+        "description": "core|free_text",
+        "fields": [
+          {
+            "field_id": "chief_complaint",
+            "prompt": "Chief complaint",
+            "type": "text",
+            "placeholder": "e.g. abdominal pain, reflux, diarrhoea, jaundice",
+            "required": true
+          },
+          {
+            "field_id": "duration",
+            "prompt": "Duration",
+            "type": "text",
+            "placeholder": "e.g. 3 days, 2 weeks",
+            "required": true
+          },
+          {
+            "field_id": "onset",
+            "prompt": "Onset",
+            "type": "select",
+            "placeholder": null,
+            "required": false,
+            "options": [
+              "Acute|Gradual|Intermittent|Constant"
+            ]
+          },
+          {
+            "field_id": "severity",
+            "prompt": "Severity",
+            "type": "number",
+            "placeholder": null,
+            "required": false
+          },
+          {
+            "field_id": "context",
+            "prompt": "Context",
+            "type": "text",
+            "placeholder": "e.g. relation to meals, bowel habit",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "associated_symptoms",
+        "display_name": "Associated Symptoms",
+        "order": 2,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "positive_symptoms",
+            "prompt": "GI symptoms",
+            "type": "text",
+            "placeholder": "Pain, nausea, vomiting, bowel changes, bleeding",
+            "required": false
+          },
+          {
+            "field_id": "relevant_negatives",
+            "prompt": "Relevant negatives reviewed",
+            "type": "text",
+            "placeholder": "Key negative symptoms",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "social",
+        "display_name": "Social History",
+        "order": 3,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "smoking",
+            "prompt": "Smoking",
+            "type": "text",
+            "placeholder": "e.g. 10 pack years",
+            "required": false
+          },
+          {
+            "field_id": "alcohol",
+            "prompt": "Alcohol",
+            "type": "text",
+            "placeholder": "e.g. Social, none",
+            "required": false
+          },
+          {
+            "field_id": "occupation",
+            "prompt": "Occupation",
+            "type": "text",
+            "placeholder": "e.g. Teacher, Retired",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "pmh",
+        "display_name": "Past Medical History",
+        "order": 4,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "pmh",
+            "prompt": "Past medical history",
+            "type": "text",
+            "placeholder": "Relevant conditions",
+            "required": false
+          },
+          {
+            "field_id": "medications",
+            "prompt": "Medications",
+            "type": "text",
+            "placeholder": "Current medications",
+            "required": false
+          },
+          {
+            "field_id": "allergies",
+            "prompt": "Allergies",
+            "type": "text",
+            "placeholder": "Drug allergies",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "gi_review",
+        "display_name": "GI Review",
+        "order": 5,
+        "description": "specialty|structured_section",
+        "fields": [
+          {
+            "field_id": "gi_risk_factors",
+            "prompt": "GI risk factors",
+            "type": "text",
+            "placeholder": "NSAIDs, alcohol, travel, family history",
+            "required": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "specialty_id": "Endocrinology",
+    "display_name": "Endocrinology",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "hpi",
+        "display_name": "History of Presenting Complaint",
+        "order": 1,
+        "description": "core|free_text",
+        "fields": [
+          {
+            "field_id": "chief_complaint",
+            "prompt": "Chief complaint",
+            "type": "text",
+            "placeholder": "e.g. diabetes, thyroid, weight change, fatigue",
+            "required": true
+          },
+          {
+            "field_id": "duration",
+            "prompt": "Duration",
+            "type": "text",
+            "placeholder": "e.g. 3 days, 2 weeks",
+            "required": true
+          },
+          {
+            "field_id": "onset",
+            "prompt": "Onset",
+            "type": "select",
+            "placeholder": null,
+            "required": false,
+            "options": [
+              "Acute|Gradual|Intermittent|Constant"
+            ]
+          },
+          {
+            "field_id": "severity",
+            "prompt": "Severity",
+            "type": "number",
+            "placeholder": null,
+            "required": false
+          },
+          {
+            "field_id": "context",
+            "prompt": "Context",
+            "type": "text",
+            "placeholder": "e.g. medication changes, lifestyle",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "associated_symptoms",
+        "display_name": "Associated Symptoms",
+        "order": 2,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "positive_symptoms",
+            "prompt": "Endocrine symptoms",
+            "type": "text",
+            "placeholder": "Glucose, thyroid, weight, energy, menstrual",
+            "required": false
+          },
+          {
+            "field_id": "relevant_negatives",
+            "prompt": "Relevant negatives reviewed",
+            "type": "text",
+            "placeholder": "Key negative symptoms",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "social",
+        "display_name": "Social History",
+        "order": 3,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "smoking",
+            "prompt": "Smoking",
+            "type": "text",
+            "placeholder": "e.g. 10 pack years",
+            "required": false
+          },
+          {
+            "field_id": "alcohol",
+            "prompt": "Alcohol",
+            "type": "text",
+            "placeholder": "e.g. Social, none",
+            "required": false
+          },
+          {
+            "field_id": "occupation",
+            "prompt": "Occupation",
+            "type": "text",
+            "placeholder": "e.g. Teacher, Retired",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "pmh",
+        "display_name": "Past Medical History",
+        "order": 4,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "pmh",
+            "prompt": "Past medical history",
+            "type": "text",
+            "placeholder": "Relevant conditions",
+            "required": false
+          },
+          {
+            "field_id": "medications",
+            "prompt": "Medications",
+            "type": "text",
+            "placeholder": "Current medications",
+            "required": false
+          },
+          {
+            "field_id": "allergies",
+            "prompt": "Allergies",
+            "type": "text",
+            "placeholder": "Drug allergies",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "endo_review",
+        "display_name": "Endocrine Review",
+        "order": 5,
+        "description": "specialty|structured_section",
+        "fields": [
+          {
+            "field_id": "medication_adherence",
+            "prompt": "Medication adherence context",
+            "type": "text",
+            "placeholder": "Adherence issues, side effects",
+            "required": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "specialty_id": "Urology / Nephrology",
+    "display_name": "Urology / Nephrology",
+    "icon": null,
+    "sections": [
+      {
+        "section_id": "hpi",
+        "display_name": "History of Presenting Complaint",
+        "order": 1,
+        "description": "core|free_text",
+        "fields": [
+          {
+            "field_id": "chief_complaint",
+            "prompt": "Chief complaint",
+            "type": "text",
+            "placeholder": "e.g. urinary symptoms, flank pain, hematuria",
+            "required": true
+          },
+          {
+            "field_id": "duration",
+            "prompt": "Duration",
+            "type": "text",
+            "placeholder": "e.g. 3 days, 2 weeks",
+            "required": true
+          },
+          {
+            "field_id": "onset",
+            "prompt": "Onset",
+            "type": "select",
+            "placeholder": null,
+            "required": false,
+            "options": [
+              "Acute|Gradual|Intermittent|Constant"
+            ]
+          },
+          {
+            "field_id": "severity",
+            "prompt": "Severity",
+            "type": "number",
+            "placeholder": null,
+            "required": false
+          },
+          {
+            "field_id": "context",
+            "prompt": "Context",
+            "type": "text",
+            "placeholder": "e.g. voiding pattern, fluid intake",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "associated_symptoms",
+        "display_name": "Associated Symptoms",
+        "order": 2,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "positive_symptoms",
+            "prompt": "Urological/renal symptoms",
+            "type": "text",
+            "placeholder": "Dysuria, frequency, haematuria, flank pain, oedema",
+            "required": false
+          },
+          {
+            "field_id": "relevant_negatives",
+            "prompt": "Relevant negatives reviewed",
+            "type": "text",
+            "placeholder": "Key negative symptoms",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "social",
+        "display_name": "Social History",
+        "order": 3,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "smoking",
+            "prompt": "Smoking",
+            "type": "text",
+            "placeholder": "e.g. 10 pack years",
+            "required": false
+          },
+          {
+            "field_id": "alcohol",
+            "prompt": "Alcohol",
+            "type": "text",
+            "placeholder": "e.g. Social, none",
+            "required": false
+          },
+          {
+            "field_id": "occupation",
+            "prompt": "Occupation",
+            "type": "text",
+            "placeholder": "e.g. Teacher, Retired",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "pmh",
+        "display_name": "Past Medical History",
+        "order": 4,
+        "description": "core|structured_section",
+        "fields": [
+          {
+            "field_id": "pmh",
+            "prompt": "Past medical history",
+            "type": "text",
+            "placeholder": "Relevant conditions",
+            "required": false
+          },
+          {
+            "field_id": "medications",
+            "prompt": "Medications",
+            "type": "text",
+            "placeholder": "Current medications",
+            "required": false
+          },
+          {
+            "field_id": "allergies",
+            "prompt": "Allergies",
+            "type": "text",
+            "placeholder": "Drug allergies",
+            "required": false
+          }
+        ]
+      },
+      {
+        "section_id": "renal_review",
+        "display_name": "Renal/Urology Review",
+        "order": 5,
+        "description": "specialty|structured_section",
+        "fields": [
+          {
+            "field_id": "renal_risk",
+            "prompt": "Renal risk factors",
+            "type": "text",
+            "placeholder": "CKD, DM, HTN, medications",
+            "required": false
+          }
+        ]
+      }
+    ]
   }
 ]
