@@ -165362,7 +165362,7 @@
     },
     "wells_pe": {
       "calculator_id": "wells_pe",
-      "calculator_name": "Wells PE",
+      "calculator_name": "Wells PE Score",
       "specialty": "General Medicine / GP",
       "related_complaints": [
         "shortness of breath",
@@ -166158,7 +166158,7 @@
       },
       {
         "calculator_id": "wells_pe",
-        "calculator_name": "Wells PE",
+        "calculator_name": "Wells PE Score",
         "relevance_reason": "Future placeholder for clinician-entered pulmonary embolism probability documentation when separately reviewed.",
         "suggestion_mode": "optional",
         "risk_level": "high",
@@ -166420,7 +166420,7 @@
       },
       {
         "calculator_id": "wells_pe",
-        "calculator_name": "Wells PE",
+        "calculator_name": "Wells PE Score",
         "relevance_reason": "Future placeholder for clinician-entered pulmonary embolism probability documentation when separately reviewed.",
         "suggestion_mode": "optional",
         "risk_level": "high",
