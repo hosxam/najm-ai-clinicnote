@@ -1043,5 +1043,336 @@
       "Show only in future reviewed head injury documentation context."
     ],
     "review_required": true
+  },
+  {
+    "calculator_id": "nyha",
+    "calculator_name": "NYHA functional class",
+    "specialty": "Cardiology",
+    "related_complaints": [
+      "heart failure",
+      "dyspnea",
+      "shortness of breath"
+    ],
+    "related_workflow_ids": [
+      "cardio-heart-failure-followup",
+      "cardio-dyspnea",
+      "resp-dyspnea"
+    ],
+    "purpose": "Documentation support for NYHA functional classification.",
+    "clinical_context": "Heart failure or dyspnea workflow.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "nyha_grade",
+        "label": "NYHA grade (1-4)",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "nyha_class",
+        "label": "NYHA class",
+        "output_type": "category",
+        "safety_note": "Clinician interpretation required."
+      }
+    ],
+    "interpretation_mode": "classification",
+    "safety_note": "NYHA class documents symptom burden. Does not establish diagnosis or treatment.",
+    "display_conditions": [],
+    "review_required": true
+  },
+  {
+    "calculator_id": "killip",
+    "calculator_name": "Killip classification",
+    "specialty": "Cardiology",
+    "related_complaints": [
+      "chest pain",
+      "acute MI",
+      "cardiac chest pain"
+    ],
+    "related_workflow_ids": [
+      "cardio-chest-pain",
+      "gp-chest-pain",
+      "urgent-chest-pain"
+    ],
+    "purpose": "Documentation support for Killip classification in acute MI.",
+    "clinical_context": "Chest pain or acute cardiac workflow.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "killip_class",
+        "label": "Killip class (1-4)",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "killip_class",
+        "label": "Killip class",
+        "output_type": "category",
+        "safety_note": "Clinician interpretation required."
+      }
+    ],
+    "interpretation_mode": "classification",
+    "safety_note": "Killip class documents clinical severity. Does not determine management.",
+    "display_conditions": [],
+    "review_required": true
+  },
+  {
+    "calculator_id": "sirs",
+    "calculator_name": "SIRS criteria",
+    "specialty": "General",
+    "related_complaints": [
+      "fever",
+      "infection",
+      "suspected infection",
+      "sepsis suspected"
+    ],
+    "related_workflow_ids": [
+      "urgent-fever-suspected-infection",
+      "gp-fever-urti",
+      "resp-pneumonia-followup",
+      "gastro-diarrhea"
+    ],
+    "purpose": "Documentation support for SIRS criteria.",
+    "clinical_context": "Fever or infection workflow.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "temp",
+        "label": "Temperature",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      },
+      {
+        "field_id": "hr",
+        "label": "Heart rate",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      },
+      {
+        "field_id": "rr",
+        "label": "Respiratory rate",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      },
+      {
+        "field_id": "wbc",
+        "label": "WBC",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "sirs_count",
+        "label": "SIRS criteria met",
+        "output_type": "score",
+        "safety_note": "Clinician interpretation required."
+      }
+    ],
+    "interpretation_mode": "score",
+    "safety_note": "SIRS criteria are documentation aids. Do not determine sepsis management independently.",
+    "display_conditions": [],
+    "review_required": true
+  },
+  {
+    "calculator_id": "qsofa",
+    "calculator_name": "qSOFA",
+    "specialty": "General",
+    "related_complaints": [
+      "sepsis suspected",
+      "infection",
+      "altered mental status",
+      "acute deterioration"
+    ],
+    "related_workflow_ids": [
+      "urgent-fever-suspected-infection",
+      "urgent-shortness-of-breath",
+      "urgent-abdominal-pain"
+    ],
+    "purpose": "Documentation support for qSOFA score.",
+    "clinical_context": "Suspected infection or acute deterioration workflow.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "rr",
+        "label": "Respiratory rate",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      },
+      {
+        "field_id": "sbp",
+        "label": "Systolic BP",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "qsofa_score",
+        "label": "qSOFA score",
+        "output_type": "score",
+        "safety_note": "Clinician interpretation required."
+      }
+    ],
+    "interpretation_mode": "score",
+    "safety_note": "qSOFA is a screening tool. Does not determine sepsis management.",
+    "display_conditions": [],
+    "review_required": true
+  },
+  {
+    "calculator_id": "fib4",
+    "calculator_name": "FIB-4 index",
+    "specialty": "Gastroenterology",
+    "related_complaints": [
+      "liver enzyme elevation",
+      "liver fibrosis",
+      "fatty liver"
+    ],
+    "related_workflow_ids": [
+      "gastro-liver-enzyme-review",
+      "gastro-jaundice-documentation"
+    ],
+    "purpose": "Documentation support for non-invasive liver fibrosis index.",
+    "clinical_context": "Liver enzyme or jaundice workflow.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "age",
+        "label": "Age",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      },
+      {
+        "field_id": "ast",
+        "label": "AST",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      },
+      {
+        "field_id": "alt",
+        "label": "ALT",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      },
+      {
+        "field_id": "platelets",
+        "label": "Platelets",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "fib4_score",
+        "label": "FIB-4 index",
+        "output_type": "score",
+        "safety_note": "Clinician interpretation required."
+      }
+    ],
+    "interpretation_mode": "score",
+    "safety_note": "FIB-4 is a non-invasive fibrosis index. Does not replace clinical assessment.",
+    "display_conditions": [],
+    "review_required": true
+  },
+  {
+    "calculator_id": "child_pugh",
+    "calculator_name": "Child-Pugh score",
+    "specialty": "Gastroenterology",
+    "related_complaints": [
+      "liver cirrhosis",
+      "jaundice",
+      "liver disease"
+    ],
+    "related_workflow_ids": [
+      "gastro-liver-enzyme-review",
+      "gastro-jaundice-documentation"
+    ],
+    "purpose": "Documentation support for Child-Pugh liver disease severity score.",
+    "clinical_context": "Liver disease workflow.",
+    "risk_level": "low",
+    "implementation_status": "registry_only",
+    "source_status": "needs_source_review",
+    "formula_status": "not_implemented",
+    "input_fields": [
+      {
+        "field_id": "bilirubin",
+        "label": "Bilirubin",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      },
+      {
+        "field_id": "albumin",
+        "label": "Albumin",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      },
+      {
+        "field_id": "inr",
+        "label": "INR",
+        "input_type": "number",
+        "units": "",
+        "required": true,
+        "safety_note": "Clinician-entered value only."
+      }
+    ],
+    "output_fields": [
+      {
+        "field_id": "child_score",
+        "label": "Child-Pugh score",
+        "output_type": "score",
+        "safety_note": "Clinician interpretation required."
+      }
+    ],
+    "interpretation_mode": "score",
+    "safety_note": "Child-Pugh score documents liver disease severity. Does not determine management.",
+    "display_conditions": [],
+    "review_required": true
   }
 ]

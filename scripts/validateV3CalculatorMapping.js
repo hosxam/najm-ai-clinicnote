@@ -8,7 +8,13 @@ const REGISTRY_PATH = path.join(ROOT, 'data', 'v3_calculator_registry.json');
 
 const IMPLEMENTED_CALCULATORS = new Set([
   'bmi',
+  'child_pugh',
+  'fib4',
+  'killip',
+  'nyha',
   'pack_years',
+  'qsofa',
+  'sirs',
   'mean_arterial_pressure',
   'shock_index',
   'mrc_dyspnea_scale'
