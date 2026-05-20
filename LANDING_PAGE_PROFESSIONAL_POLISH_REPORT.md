@@ -69,23 +69,3 @@ Added dedicated scribe section with:
 | Favicon present | Yes |
 | All pages load (5 tested) | Yes |
 | All validators pass (12/12) | Yes |
-
-## Additional Changes (Second Pass)
-
-### Phase 2 — Safety Note
-Added safety note in hero area: "ClinicNote structures clinician-entered documentation. It does not diagnose, recommend treatment, or replace clinical judgment."
-
-### Phase 5 — Product Mockup
-Added "See how ClinicNote works" section with 4-step compact interface (Select workflow → Review Autofill chips → Add impression and plan → Generate and copy). Uses HTML/CSS, not screenshots.
-
-### Phase 8 — Calculator Tools Safety
-Added stronger disclaimer: "Results require clinician interpretation and do not determine diagnosis, treatment, referral, admission, discharge, or disposition."
-
-### Phase 11 — Mobile Polish
-Enhanced mobile breakpoint CSS:
-- Smaller hero text (26px H1, 13px body)
-- Reduced gaps and padding
-- Single-column grids for benefits, resources, examples
-- Smaller buttons and trust badges
-- Better scribe section padding
-- Added before-after-grid support
