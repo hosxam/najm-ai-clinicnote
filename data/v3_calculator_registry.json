@@ -533,7 +533,7 @@
     "purpose": "Registry placeholder for future clinician-entered chest pain risk documentation.",
     "clinical_context": "May be relevant for future urgent chest pain documentation after source and implementation review.",
     "risk_level": "high",
-    "implementation_status": "implemented",
+    "implementation_status": "registry_only",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -807,7 +807,7 @@
     "purpose": "Registry placeholder for future clinician-entered pneumonia severity documentation.",
     "clinical_context": "May be relevant for future pneumonia workflows after source review.",
     "risk_level": "high",
-    "implementation_status": "implemented",
+    "implementation_status": "registry_only",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
@@ -900,7 +900,7 @@
     "purpose": "Registry placeholder for future clinician-entered consciousness assessment documentation.",
     "clinical_context": "May be relevant for future head injury or neurological observation workflows after source review.",
     "risk_level": "high",
-    "implementation_status": "implemented",
+    "implementation_status": "registry_only",
     "source_status": "needs_source_review",
     "formula_status": "not_implemented",
     "input_fields": [
