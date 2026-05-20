@@ -1,0 +1,351 @@
+workflow_id,specialty_id,chip_id,group,chip_text,order,search_terms,tags
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-symptoms-1,symptoms,diabetes follow-up,1,"diabetes, followup, DM",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-symptoms-2,symptoms,home glucose readings reviewed,2,"home, glucose, SMBG, readings",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-symptoms-3,symptoms,HbA1c trend reviewed,3,"HbA1c, A1c, trend",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-symptoms-4,symptoms,medication adherence discussed,4,"medication, adherence, compliance",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-symptoms-5,symptoms,lifestyle context reviewed,5,"lifestyle, diet, exercise",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-symptoms-6,symptoms,hypoglycemia symptoms reviewed,6,"hypoglycemia, hypo, low",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-symptoms-7,symptoms,foot symptoms reviewed,7,"foot, ulcer, wound",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-symptoms-8,symptoms,visual symptoms reviewed,8,"visual, vision, eyes",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-symptoms-9,symptoms,neuropathy symptoms reviewed,9,"neuropathy, numbness, tingling",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-relevant_negatives-1,relevant_negatives,no hypoglycemia symptoms reported,1,"hypoglycemia, hypo",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-relevant_negatives-2,relevant_negatives,no foot ulcers reported,2,"foot, ulcer, wound",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-relevant_negatives-3,relevant_negatives,no acute infection symptoms reported,3,"infection, fever, UTI",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-relevant_negatives-4,relevant_negatives,no visual symptoms reported,4,"visual, vision, blurred",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-relevant_negatives-5,relevant_negatives,no chest pain reported if relevant,5,"chest, pain, cardiac",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-relevant_negatives-6,relevant_negatives,no shortness of breath reported if relevant,6,"SOB, breathlessness",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-exam_findings-1,exam_findings,weight and BMI documented if measured,1,"weight, BMI",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-exam_findings-2,exam_findings,blood pressure documented if measured,2,"BP, blood, pressure",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-exam_findings-3,exam_findings,foot examination documented if assessed,3,"foot, exam, monofilament",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-exam_findings-4,exam_findings,peripheral pulses documented if assessed,4,"pulses, DP, PT",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-exam_findings-5,exam_findings,sensation documented if assessed,5,"sensation, monofilament, neuropathy",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-exam_findings-6,exam_findings,injection sites documented if assessed,6,"injection, site, insulin",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-investigations-1,investigations,HbA1c reviewed if available,1,"HbA1c, A1c",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-investigations-2,investigations,renal function reviewed if ordered,2,"renal, kidney, eGFR, creatinine",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-investigations-3,investigations,urine ACR reviewed if ordered,3,"ACR, albumin, microalbumin",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-investigations-4,investigations,lipid profile reviewed if ordered,4,"lipid, cholesterol, LDL",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-investigations-5,investigations,eye screening report reviewed if available,5,"eye, screening, retinopathy",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-investigations-6,investigations,home glucose log reviewed if available,6,"glucose, log, diary, SMBG",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-plan_phrases-2,plan_phrases,medication adherence documented if discussed,2,"adherence, medication",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-plan_phrases-3,plan_phrases,lifestyle advice documented if discussed,3,"lifestyle, diet, exercise",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-plan_phrases-4,plan_phrases,glucose monitoring documented if discussed,4,"glucose, monitoring, SMBG",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-plan_phrases-5,plan_phrases,medication plan documented if clinician decided,5,"medication, adjustment",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-plan_phrases-6,plan_phrases,referral documented if clinician arranged,6,"referral, diabetes, eye, podiatry",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-plan_phrases-7,plan_phrases,follow-up documented if arranged,7,"follow, up",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-follow_up-1,follow_up,3-6 months,1,"three, six, months",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-follow_up-2,follow_up,6-12 months if stable,2,"six, twelve",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-follow_up-3,follow_up,sooner if symptoms change,3,"sooner, change",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-follow_up-4,follow_up,PRN,4,"PRN, as needed",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-symptoms-1,symptoms,thyroid symptoms,1,"thyroid, symptoms",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-symptoms-2,symptoms,weight change reviewed,2,"weight, loss, gain",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-symptoms-3,symptoms,heat or cold intolerance reviewed,3,"heat, cold, intolerance",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-symptoms-4,symptoms,palpitations reviewed,4,"palpitations, heart, racing",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-symptoms-5,symptoms,tremor reviewed,5,"tremor, shaking",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-symptoms-6,symptoms,bowel habit reviewed,6,"bowel, habit, diarrhoea",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-symptoms-7,symptoms,mood and energy context reviewed,7,"mood, energy, fatigue, anxiety",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-symptoms-8,symptoms,neck swelling or goiter context reviewed,8,"neck, swelling, goiter, lump",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-relevant_negatives-1,relevant_negatives,no chest pain reported if relevant,1,"chest, pain",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-relevant_negatives-2,relevant_negatives,no severe palpitations reported if relevant,2,"severe, palpitations, sustained",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-relevant_negatives-3,relevant_negatives,no dysphagia reported if relevant,3,"dysphagia, swallowing",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-relevant_negatives-4,relevant_negatives,no voice change reported if relevant,4,"voice, hoarseness",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, BP, pulse",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-exam_findings-2,exam_findings,neck examination documented if assessed,2,"neck, thyroid, goiter, nodule",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-exam_findings-3,exam_findings,tremor documented if assessed,3,"tremor, fine",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-exam_findings-4,exam_findings,eye signs documented if assessed,4,"eye, exophthalmos, lid lag",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-exam_findings-5,exam_findings,weight documented if measured,5,"weight, BMI",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-investigations-1,investigations,thyroid function tests reviewed if ordered,1,"TFT, TSH, T4, T3",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-investigations-2,investigations,thyroid antibodies reviewed if available,2,"antibodies, TPO, Tg",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-investigations-3,investigations,ultrasound report reviewed if available,3,"ultrasound, thyroid, US",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-investigations-4,investigations,previous records reviewed if available,4,"previous, records",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,"medication, antithyroid, beta",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, endocrinology",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-follow_up-1,follow_up,4-6 weeks,1,"four, six, weeks",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-follow_up-2,follow_up,6-8 weeks,2,"six, eight, weeks",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-follow_up-4,follow_up,PRN,4,"PRN, as needed",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-symptoms-1,symptoms,hypothyroidism follow-up,1,"hypothyroidism, followup, underactive",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-symptoms-2,symptoms,fatigue and energy reviewed,2,"fatigue, energy, tiredness",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-symptoms-3,symptoms,cold intolerance reviewed,3,"cold, intolerance",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-symptoms-4,symptoms,weight change reviewed,4,"weight, gain",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-symptoms-5,symptoms,constipation reviewed,5,constipation,endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-symptoms-6,symptoms,dry skin and hair loss reviewed,6,"dry, skin, hair, loss",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-symptoms-7,symptoms,medication adherence discussed,7,"medication, adherence, levothyroxine",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-relevant_negatives-1,relevant_negatives,no palpitations reported if relevant,1,"palpitations, racing",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-relevant_negatives-2,relevant_negatives,no chest pain reported if relevant,2,"chest, pain",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-exam_findings-1,exam_findings,weight documented if measured,1,"weight, BMI",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-exam_findings-2,exam_findings,pulse documented if measured,2,"pulse, heart, rate",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-exam_findings-3,exam_findings,neck examination documented if assessed,3,"neck, thyroid, examination",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-investigations-1,investigations,TSH reviewed if available,1,"TSH, thyroid, stimulating",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-investigations-2,investigations,free T4 reviewed if available,2,"free, T4, thyroxine",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-investigations-3,investigations,previous records reviewed if available,3,"previous, records",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,"medication, levothyroxine, dose",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-plan_phrases-3,plan_phrases,adherence discussed if applicable,3,"adherence, compliance",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-follow_up-1,follow_up,6-8 weeks,1,"six, eight, weeks",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-follow_up-2,follow_up,3-6 months if stable,2,"three, six, stable",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-follow_up-3,follow_up,sooner if symptom change,3,"sooner, change",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-follow_up-4,follow_up,PRN,4,"PRN, as needed",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-symptoms-1,symptoms,hyperthyroidism follow-up,1,"hyperthyroidism, overactive, followup",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-symptoms-2,symptoms,palpitations reviewed,2,"palpitations, heart, racing",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-symptoms-3,symptoms,heat intolerance reviewed,3,"heat, intolerance",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-symptoms-4,symptoms,tremor reviewed,4,"tremor, shaking",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-symptoms-5,symptoms,weight change reviewed,5,"weight, loss",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-symptoms-6,symptoms,anxiety or irritability reviewed,6,"anxiety, irritability, mood",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-symptoms-7,symptoms,bowel habit reviewed,7,"bowel, habit, diarrhoea",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-symptoms-8,symptoms,eye symptoms reviewed,8,"eye, visual, proptosis, dry",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-symptoms-9,symptoms,medication adherence discussed,9,"medication, adherence, carbimazole",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-relevant_negatives-1,relevant_negatives,no chest pain reported,1,"chest, pain",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-relevant_negatives-2,relevant_negatives,no syncope reported,2,"syncope, faint",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-relevant_negatives-3,relevant_negatives,no visual loss reported if relevant,3,"visual, loss, vision",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-exam_findings-1,exam_findings,pulse documented if measured,1,"pulse, heart, rate",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-exam_findings-2,exam_findings,thyroid examination documented if assessed,2,"thyroid, goiter, bruit",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-exam_findings-3,exam_findings,eye signs documented if assessed,3,"eye, proptosis, lid, lag",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-exam_findings-4,exam_findings,tremor documented if assessed,4,"tremor, fine",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-exam_findings-5,exam_findings,weight documented if measured,5,"weight, BMI",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-investigations-1,investigations,thyroid function tests reviewed if available,1,"TFT, TSH, T4, T3",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-investigations-2,investigations,TSI or antibody levels reviewed if ordered,2,"TSI, TRAb, antibodies",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-investigations-3,investigations,previous records reviewed if available,3,"previous, records",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,"medication, carbimazole, beta",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, endocrinology, surgery",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-follow_up-1,follow_up,4-6 weeks,1,"four, six, weeks",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-follow_up-2,follow_up,6-8 weeks,2,"six, eight, weeks",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-follow_up-4,follow_up,PRN,4,"PRN, as needed",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-symptoms-1,symptoms,weight management documentation,1,"weight, management, obesity",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-symptoms-2,symptoms,BMI documented if measured,2,"BMI, body, mass, index",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-symptoms-3,symptoms,weight trend reviewed,3,"weight, trend, gain, loss",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-symptoms-4,symptoms,diet context reviewed,4,"diet, nutrition, eating",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-symptoms-5,symptoms,physical activity context reviewed,5,"physical, activity, exercise",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-symptoms-6,symptoms,sleep context reviewed,6,"sleep, quality, apnea",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-symptoms-7,symptoms,other health conditions context reviewed,7,"comorbidity, diabetes, HTN, lipids",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-symptoms-8,symptoms,medication history reviewed if relevant,8,"medication, weight, gain",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-relevant_negatives-1,relevant_negatives,no acute symptoms reported,1,"acute, symptoms",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-relevant_negatives-2,relevant_negatives,no unexplained weight loss reported if applicable,2,"weight, loss, unexplained",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-exam_findings-1,exam_findings,blood pressure documented if measured,1,"BP, blood, pressure",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-exam_findings-2,exam_findings,waist circumference documented if measured,2,"waist, circumference",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-exam_findings-3,exam_findings,weight and BMI documented if measured,3,"weight, BMI",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-investigations-1,investigations,HbA1c or glucose reviewed if ordered,1,"HbA1c, glucose, diabetes",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-investigations-2,investigations,lipid profile reviewed if ordered,2,"lipid, cholesterol",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-investigations-3,investigations,thyroid function reviewed if ordered,3,"TSH, TFT",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-plan_phrases-2,plan_phrases,lifestyle counseling documented if discussed,2,"lifestyle, diet, exercise",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, dietician, endocrinology",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-follow_up-1,follow_up,4-6 weeks,1,"four, six, weeks",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-follow_up-2,follow_up,3 months,2,"three, months",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-follow_up-3,follow_up,sooner if needed,3,"sooner, needed",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-follow_up-4,follow_up,PRN,4,"PRN, as needed",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-symptoms-1,symptoms,hypoglycemia review,1,"hypoglycemia, hypo, low, sugar",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-symptoms-2,symptoms,episode frequency reviewed,2,"frequency, how often",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-symptoms-3,symptoms,timing and context documented,3,"timing, context, when",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-symptoms-4,symptoms,symptoms reviewed,4,"symptoms, sweating, tremor, palpitations",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-symptoms-5,symptoms,glucose values reviewed if available,5,"glucose, values, levels",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-symptoms-6,symptoms,medication context reviewed,6,"medication, insulin, sulfonylurea",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-symptoms-7,symptoms,meal and activity context reviewed,7,"meal, activity, exercise, missed",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-symptoms-8,symptoms,awareness symptoms reviewed,8,"awareness, warning, symptoms",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-relevant_negatives-1,relevant_negatives,no loss of consciousness reported,1,"loss, consciousness, LOC",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-relevant_negatives-2,relevant_negatives,no seizure reported,2,"seizure, fit, convulsion",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-relevant_negatives-3,relevant_negatives,no severe hypoglycemia requiring assistance reported if applicable,3,"severe, assistance, help",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, BP, pulse",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-exam_findings-2,exam_findings,glucose level documented if measured,2,"glucose, bedside, BM",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-exam_findings-3,exam_findings,general appearance documented if assessed,3,"appearance, well",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-investigations-1,investigations,glucose log reviewed if available,1,"glucose, log, diary",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-investigations-2,investigations,HbA1c reviewed if available,2,"HbA1c, A1c",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-investigations-3,investigations,medication list reviewed if available,3,"medication, list, insulin",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,"medication, adjustment",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-plan_phrases-3,plan_phrases,safety-netting documented if discussed,3,"safety, netting",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-plan_phrases-4,plan_phrases,glucose monitoring plan discussed if applicable,4,"glucose, monitoring, frequency",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-follow_up-1,follow_up,1-2 weeks,1,"one, two, weeks",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-follow_up-2,follow_up,2-4 weeks,2,"two, four, weeks",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-follow_up-3,follow_up,sooner if recurrent,3,"sooner, recurrent",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-follow_up-4,follow_up,PRN,4,"PRN, as needed",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-symptoms-1,symptoms,PCOS metabolic review,1,"PCOS, polycystic, ovarian",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-symptoms-2,symptoms,cycle pattern reviewed,2,"cycle, menstrual, period",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-symptoms-3,symptoms,weight and BMI context reviewed,3,"weight, BMI, obesity",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-symptoms-4,symptoms,acne and hirsutism context reviewed,4,"acne, hirsutism, hair, excess",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-symptoms-5,symptoms,glucose and insulin resistance context reviewed,5,"glucose, insulin, resistance, HOMA",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-symptoms-6,symptoms,fertility concern reviewed if relevant,6,"fertility, conception, pregnancy",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-symptoms-7,symptoms,lifestyle context reviewed,7,"lifestyle, diet, exercise",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-relevant_negatives-1,relevant_negatives,no acute pelvic pain reported if relevant,1,"pelvic, pain, acute",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-relevant_negatives-2,relevant_negatives,no galactorrhea reported if relevant,2,"galactorrhea, nipple, discharge",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-exam_findings-1,exam_findings,weight and BMI documented if measured,1,"weight, BMI",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-exam_findings-2,exam_findings,blood pressure documented if measured,2,"BP, blood, pressure",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-exam_findings-3,exam_findings,acne and hirsutism documented if assessed,3,"acne, hirsutism, Ferriman",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-investigations-1,investigations,HbA1c or glucose reviewed if ordered,1,"HbA1c, glucose, OGTT",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-investigations-2,investigations,lipid profile reviewed if ordered,2,"lipid, cholesterol, LDL",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-investigations-3,investigations,hormonal profile reviewed if available,3,"hormonal, testosterone, LH, FSH",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-plan_phrases-2,plan_phrases,lifestyle advice documented if discussed,2,"lifestyle, diet, exercise",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-plan_phrases-3,plan_phrases,medication plan documented if clinician decided,3,"medication, metformin, OCP",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,"referral, endocrinology, gynaecology",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-follow_up-1,follow_up,3-6 months,1,"three, six, months",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-follow_up-2,follow_up,6-12 months if stable,2,"six, twelve",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-follow_up-3,follow_up,sooner if symptom change,3,"sooner, change",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-follow_up-4,follow_up,PRN,4,"PRN, as needed",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-symptoms-1,symptoms,osteoporosis follow-up,1,"osteoporosis, followup, bone",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-symptoms-2,symptoms,fracture history reviewed,2,"fracture, fragility, broken",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-symptoms-3,symptoms,falls history reviewed,3,"falls, balance, risk",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-symptoms-4,symptoms,back pain and height loss reviewed,4,"back, pain, height, loss",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-symptoms-5,symptoms,calcium and vitamin D context reviewed,5,"calcium, vitamin, D, supplement",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-symptoms-6,symptoms,medication adherence discussed,6,"medication, adherence, bisphosphonate",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-symptoms-7,symptoms,side effects reviewed if relevant,7,"side, effects, GI, jaw",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-relevant_negatives-1,relevant_negatives,no new fragility fracture reported,1,"fragility, fracture, new",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-exam_findings-1,exam_findings,gait and falls risk documented if assessed,1,"gait, falls, balance",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-exam_findings-2,exam_findings,spine tenderness documented if assessed,2,"spine, vertebral, tenderness",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-exam_findings-3,exam_findings,weight documented if measured,3,"weight, BMI",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-investigations-1,investigations,DEXA report reviewed if available,1,"DEXA, DXA, bone, density",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-investigations-2,investigations,calcium and vitamin D result reviewed if ordered,2,"calcium, vitamin, D",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-investigations-3,investigations,renal function reviewed if ordered,3,"renal, eGFR, creatinine",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-investigations-4,investigations,previous records reviewed if available,4,"previous, records",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,"medication, bisphosphonate, denosumab",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-plan_phrases-3,plan_phrases,supplement plan documented if clinician decided,3,"calcium, vitamin, D",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-plan_phrases-4,plan_phrases,referral documented if clinician arranged,4,"referral, bone, DXA",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-follow_up-1,follow_up,1 year if stable,1,"one, year",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-follow_up-2,follow_up,2 years on therapy,2,"two, years",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-follow_up-3,follow_up,sooner if new fracture,3,"sooner, fracture",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-follow_up-4,follow_up,PRN,4,"PRN, as needed",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-symptoms-1,symptoms,adrenal incidentaloma documentation,1,"adrenal, incidentaloma, mass",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-symptoms-2,symptoms,imaging finding reviewed if available,2,"imaging, CT, MRI, finding",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-symptoms-3,symptoms,symptoms reviewed,3,"symptoms, headache, palpitations",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-symptoms-4,symptoms,blood pressure context reviewed,4,"BP, blood, pressure, hypertension",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-symptoms-5,symptoms,weight change reviewed,5,"weight, loss, gain",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-symptoms-6,symptoms,bruising or striae context reviewed,6,"bruising, striae, cortisol",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-symptoms-7,symptoms,weakness and fatigue reviewed,7,"weakness, fatigue",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-symptoms-8,symptoms,electrolyte context reviewed if available,8,"electrolytes, potassium, sodium",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-relevant_negatives-1,relevant_negatives,no acute symptoms reported if applicable,1,"acute, symptoms, crisis",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-exam_findings-1,exam_findings,blood pressure documented if measured,1,"BP, blood, pressure",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-exam_findings-2,exam_findings,general appearance documented if assessed,2,"appearance, cushingoid",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-exam_findings-3,exam_findings,weight documented if measured,3,"weight, BMI",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-investigations-1,investigations,imaging report reviewed if available,1,"CT, MRI, imaging, report",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-investigations-2,investigations,hormonal workup reviewed if ordered,2,"cortisol, aldosterone, metanephrines",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-investigations-3,investigations,electrolytes reviewed if ordered,3,"electrolytes, potassium, sodium",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-investigations-4,investigations,previous records reviewed if available,4,"previous, records",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-plan_phrases-2,plan_phrases,referral documented if clinician arranged,2,"referral, endocrinology",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-plan_phrases-3,plan_phrases,follow-up imaging discussed if applicable,3,"repeat, imaging, interval",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-follow_up-1,follow_up,3-6 months,1,"three, six, months",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-follow_up-2,follow_up,6-12 months for imaging,2,"six, twelve, imaging",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-follow_up-3,follow_up,sooner if symptoms develop,3,"sooner, symptoms",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-follow_up-4,follow_up,PRN,4,"PRN, as needed",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-symptoms-1,symptoms,pituitary symptoms documentation,1,"pituitary, symptoms",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-symptoms-2,symptoms,headache reviewed,2,headache,endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-symptoms-3,symptoms,visual symptoms reviewed,3,"visual, vision, field",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-symptoms-4,symptoms,menstrual or sexual function context reviewed if clinically appropriate,4,"menstrual, period, libido, sexual, erectile",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-symptoms-5,symptoms,growth and weight changes reviewed,5,"growth, weight, acromegaly",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-symptoms-6,symptoms,fatigue and weakness reviewed,6,"fatigue, weakness, tiredness",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-symptoms-7,symptoms,galactorrhea context reviewed if relevant,7,"galactorrhea, prolactin, breast",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-relevant_negatives-1,relevant_negatives,no acute visual loss reported if applicable,1,"visual, loss, acute",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-relevant_negatives-2,relevant_negatives,no seizure reported if applicable,2,"seizure, fit",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-exam_findings-1,exam_findings,visual fields documented if assessed,1,"visual, fields, perimetry",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-exam_findings-2,exam_findings,neurological screen documented if assessed,2,"neurological, CN, cranial",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-exam_findings-3,exam_findings,general appearance documented if assessed,3,"appearance, acromegaly, Cushing",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-investigations-1,investigations,hormonal profile reviewed if ordered,1,"hormonal, prolactin, GH, ACTH, cortisol",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-investigations-2,investigations,pituitary imaging reviewed if available,2,"MRI, pituitary, sella",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-investigations-3,investigations,previous records reviewed if available,3,"previous, records",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-plan_phrases-2,plan_phrases,referral documented if clinician arranged,2,"referral, endocrinology, neurosurgery",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-plan_phrases-3,plan_phrases,follow-up documented if arranged,3,"follow, up",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-follow_up-1,follow_up,3-6 months,1,"three, six, months",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-follow_up-2,follow_up,6-12 months if stable,2,"six, twelve",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-follow_up-3,follow_up,sooner if new symptoms,3,"sooner, new",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-follow_up-4,follow_up,PRN,4,"PRN, as needed",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-symptoms-10,symptoms,kidney function context reviewed if relevant,10,"kidney, renal, nephropathy",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-symptoms-11,symptoms,cardiovascular risk context reviewed if relevant,11,"cardiac, CVD, risk",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-exam_findings-7,exam_findings,retinal examination documented if assessed,7,"retinal, eye, fundoscopy",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-plan_phrases-8,plan_phrases,annual review items discussed if applicable,8,"annual, review, checks",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-symptoms-9,symptoms,skin and hair changes reviewed if relevant,9,"skin, hair, dry, brittle",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-symptoms-10,symptoms,menstrual changes reviewed if relevant,10,"menstrual, period, cycle",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-exam_findings-6,exam_findings,skin and hair examination documented if assessed,6,"skin, hair, texture",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-symptoms-8,symptoms,myxoedema symptoms reviewed if relevant,8,"myxoedema, facial, puffiness",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-symptoms-9,symptoms,heart rate changes reviewed,9,"heart, rate, bradycardia",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-exam_findings-4,exam_findings,skin and hair examination documented if assessed,4,"skin, dry, hair, loss",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-exam_findings-5,exam_findings,reflexes documented if assessed,5,"reflexes, delayed, relaxation",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-symptoms-10,symptoms,fatigue and sleep reviewed,10,"fatigue, sleep, insomnia",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-symptoms-11,symptoms,neck discomfort reviewed,11,"neck, discomfort, goiter",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-exam_findings-6,exam_findings,skin examination documented if assessed,6,"skin, warm, moist",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-symptoms-9,symptoms,eating patterns reviewed,9,"eating, patterns, binge, emotional",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-symptoms-10,symptoms,weight loss attempts reviewed,10,"weight, loss, attempts, history",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-symptoms-11,symptoms,mental health context reviewed if relevant,11,"mental, health, mood",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-exam_findings-4,exam_findings,vitals documented if measured,4,"vitals, pulse, temp",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-plan_phrases-5,plan_phrases,goal setting documented if discussed,5,"goal, target, weight",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-symptoms-9,symptoms,driving and safety context reviewed,9,"driving, safety, DVLA",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-symptoms-10,symptoms,alcohol context reviewed if relevant,10,"alcohol, drinking",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-exam_findings-4,exam_findings,glucose meter reviewed if available,4,"meter, device, reading",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-plan_phrases-6,plan_phrases,education documented if discussed,6,"education, hypo, awareness",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-symptoms-8,symptoms,skin changes reviewed,8,"skin, acanthosis, nigricans, acne",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-symptoms-9,symptoms,mood and mental health reviewed,9,"mood, anxiety, depression",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-exam_findings-4,exam_findings,waist circumference documented if measured,4,"waist, obesity, central",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-exam_findings-5,exam_findings,acanthosis nigricans documented if assessed,5,"acanthosis, nigricans",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-plan_phrases-6,plan_phrases,fertility referral discussed if applicable,6,"fertility, conception, IVF",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-symptoms-8,symptoms,previous DEXA results reviewed if available,8,"DEXA, previous, T-score",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-symptoms-9,symptoms,secondary causes reviewed if relevant,9,"secondary, causes, steroid",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-exam_findings-4,exam_findings,kyphosis documented if assessed,4,"kyphosis, posture, spine",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-exam_findings-5,exam_findings,height measured if documented,5,"height, loss, measurement",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-plan_phrases-6,plan_phrases,falls prevention discussed if applicable,6,"falls, prevention, balance",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-symptoms-9,symptoms,family history reviewed if relevant,9,"family, MEN, adrenal",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-symptoms-10,symptoms,medication history reviewed if relevant,10,"medication, steroid, exogenous",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-exam_findings-4,exam_findings,signs of hormone excess documented if assessed,4,"Cushing, aldosterone, signs",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-plan_phrases-5,plan_phrases,hormonal workup plan documented if clinician decided,5,"workup, cortisol, metanephrines",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-symptoms-8,symptoms,thirst and urine output reviewed if relevant,8,"thirst, polydipsia, DI",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-symptoms-9,symptoms,bone and joint pain reviewed if relevant,9,"bone, joint, pain, acromegaly",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-exam_findings-4,exam_findings,visual acuity documented if assessed,4,"visual, acuity, Snellen",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-exam_findings-5,exam_findings,hand and foot size documented if relevant,5,"hand, foot, acromegaly",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-plan_phrases-4,plan_phrases,multi-specialty referral documented if clinician arranged,4,"MDT, pituitary, neurosurgery",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-follow_up-5,follow_up,sooner if needed,5,"sooner, needed",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-follow_up-6,follow_up,sooner if needed,6,"sooner, needed",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-follow_up-6,follow_up,sooner if needed,6,"sooner, needed",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-follow_up-6,follow_up,sooner if needed,6,"sooner, needed",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-follow_up-6,follow_up,sooner if needed,6,"sooner, needed",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-follow_up-6,follow_up,sooner if needed,6,"sooner, needed",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-follow_up-6,follow_up,sooner if needed,6,"sooner, needed",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-follow_up-6,follow_up,sooner if needed,6,"sooner, needed",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-follow_up-6,follow_up,sooner if needed,6,"sooner, needed",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-follow_up-7,follow_up,sooner if HbA1c rising,7,"Hba1c, rising",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-follow_up-8,follow_up,sooner if TSH out of range,8,"TSH, range",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-follow_up-8,follow_up,sooner if TFT abnormal,8,"TFT, abnormal",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-follow_up-8,follow_up,sooner if pregnancy desired,8,"pregnancy, fertility",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-follow_up-8,follow_up,sooner if new symptoms,8,"new, symptoms",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-follow_up-8,follow_up,sooner if visual change,8,"visual, change",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-exam_findings-8,exam_findings,cardiac examination documented if assessed,8,"cardiac, heart, CVS",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-exam_findings-7,exam_findings,blood pressure documented if measured,7,"BP, blood, pressure",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-plan_phrases-5,plan_phrases,referral documented if clinician decided,5,"referral, endocrinology",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-plan_phrases-5,plan_phrases,eye care referral documented if clinically indicated,5,"eye, ophthalmology, thyroid",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-plan_phrases-6,plan_phrases,pharmacotherapy plan documented if clinician decided,6,"medication, weight, loss",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-exam_findings-5,exam_findings,weight documented if measured,5,"weight, BMI",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-plan_phrases-7,plan_phrases,metformin plan discussed if applicable,7,"metformin, insulin, resistance",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-plan_phrases-7,plan_phrases,bone health advice documented if discussed,7,"bone, health, calcium, vitamin",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-plan_phrases-5,plan_phrases,hormonal replacement discussed if applicable,5,"hormone, replacement, pituitary",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-follow_up-8,follow_up,sooner if HbA1c not at target,8,"HbA1c, target",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-follow_up-9,follow_up,annual diabetes review,9,"annual, diabetes",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-follow_up-7,follow_up,4-6 weeks after starting treatment,7,"four, six, treatment",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-follow_up-9,follow_up,6-8 weeks after dose change,9,"dose, change",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-follow_up-7,follow_up,yearly,7,"yearly, annual",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-follow_up-8,follow_up,sooner if new fracture risk,8,"fracture, risk",endocrinology
+endo-adrenal-incidentaloma-referral,Endocrinology,endo-adrenal-incidentaloma-referral-follow_up-9,follow_up,6-12 months,9,"six, twelve, months",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-follow_up-9,follow_up,6-12 months,9,"six, twelve, months",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-plan_phrases-9,plan_phrases,sick day rules documented if discussed,9,"sick, day, rules",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-plan_phrases-7,plan_phrases,glucagon kit discussed if applicable,7,"glucagon, kit, emergency",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-plan_phrases-8,plan_phrases,vitamin D supplementation discussed if applicable,8,"vitamin, D, supplement",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-exam_findings-9,exam_findings,foot pulses documented if assessed,9,"foot, pulses, DP",endocrinology
+endo-thyroid-symptoms,Endocrinology,endo-thyroid-symptoms-exam_findings-8,exam_findings,lymph node examination documented if assessed,8,"lymph, node, neck",endocrinology
+endo-hypothyroidism-followup,Endocrinology,endo-hypothyroidism-followup-exam_findings-6,exam_findings,facial puffiness documented if assessed,6,"facial, puffiness, myxoedema",endocrinology
+endo-hyperthyroidism-followup,Endocrinology,endo-hyperthyroidism-followup-symptoms-12,symptoms,dyspnoea on exertion reviewed,12,"dyspnoea, SOB, activity",endocrinology
+endo-obesity-counseling-documentation,Endocrinology,endo-obesity-counseling-documentation-symptoms-12,symptoms,readiness to change assessed,12,"readiness, change, motivation",endocrinology
+endo-hypoglycemia-review,Endocrinology,endo-hypoglycemia-review-symptoms-11,symptoms,blood glucose level during episode reviewed,11,"glucose, level, episode",endocrinology
+endo-pcos-metabolic-review,Endocrinology,endo-pcos-metabolic-review-symptoms-10,symptoms,blood pressure context reviewed,10,"BP, hypertension",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-symptoms-10,symptoms,family history of osteoporosis reviewed,10,"family, osteoporosis, hip",endocrinology
+endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-exam_findings-6,exam_findings,visual field testing documented if assessed,6,"visual, field, perimetry",endocrinology
+endo-diabetes-followup,Endocrinology,endo-diabetes-followup-follow_up-10,follow_up,sooner if acute symptoms,10,"acute, symptoms",endocrinology
+endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-follow_up-9,follow_up,sooner if fracture,9,fracture,endocrinology

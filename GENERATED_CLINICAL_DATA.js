@@ -1,6 +1,6 @@
 // GENERATED_CLINICAL_DATA.js — Najm AI ClinicNote
 // Auto-generated. Do not edit manually.
-// Generated: 2026-05-20 05:49:48
+// Generated: 2026-05-20 06:03:57
 // Source: /data JSON files (validated)
 
 (function() {
@@ -42,7 +42,7 @@
   var data = {
   "metadata": {
     "version": "v2",
-    "generated_at": "2026-05-20 05:49:48",
+    "generated_at": "2026-05-20 06:03:57",
     "source": "validated_json_dataset (data/ CSVs -> JSON, commit 262c021)",
     "warning": "Documentation support only. Clinician review required.",
     "description": "Najm AI ClinicNote clinical data bundle. Built from /data JSON files."
@@ -50,18 +50,18 @@
   "stats": {
     "specialty_count": 8,
     "workflow_count": 150,
-    "chip_count": 4560,
+    "chip_count": 4897,
     "diagnosis_index_count": 423,
     "report_template_count": 7,
     "history_layout_count": 8,
     "chip_group_counts": {
-      "symptoms": 1242,
-      "relevant_negatives": 595,
-      "exam_findings": 783,
-      "red_flags": 631,
-      "investigations": 238,
-      "plan_phrases": 692,
-      "follow_up": 379
+      "symptoms": 1340,
+      "relevant_negatives": 613,
+      "exam_findings": 833,
+      "red_flags": 630,
+      "investigations": 279,
+      "plan_phrases": 753,
+      "follow_up": 449
     },
     "workflow_chip_min": 0,
     "workflow_chip_max": 53,
@@ -64818,15 +64818,15 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 10,
+        "symptoms": 9,
         "relevant_negatives": 6,
         "exam_findings": 5,
-        "red_flags": 7,
-        "investigations": 3,
-        "plan_phrases": 5,
-        "follow_up": 4
+        "red_flags": 6,
+        "investigations": 4,
+        "plan_phrases": 7,
+        "follow_up": 5
       },
-      "total_chips": 40,
+      "total_chips": 42,
       "chips": {
         "symptoms": [
           {
@@ -64933,24 +64933,12 @@
           },
           {
             "chip_id": "gastro-gerd-symptoms-9",
-            "chip_text": "belching reviewed if relevant",
+            "chip_text": "dietary triggers reviewed if relevant",
             "order": 9,
             "search_terms": [
-              "belching",
-              "burping"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-gerd-symptoms-10",
-            "chip_text": "chest pain reviewed if non-cardiac",
-            "order": 10,
-            "search_terms": [
-              "chest",
-              "pain",
-              "non-cardiac"
+              "diet",
+              "trigger",
+              "coffee"
             ],
             "tags": [
               "gastroenterology"
@@ -65101,11 +65089,11 @@
         "red_flags": [
           {
             "chip_id": "gastro-gerd-red_flags-1",
-            "chip_text": "dysphagia or odynophagia",
+            "chip_text": "dysphagia",
             "order": 1,
             "search_terms": [
               "dysphagia",
-              "odynophagia"
+              "swallowing"
             ],
             "tags": [
               "gastroenterology",
@@ -65114,8 +65102,22 @@
           },
           {
             "chip_id": "gastro-gerd-red_flags-2",
-            "chip_text": "unexplained weight loss",
+            "chip_text": "odynophagia",
             "order": 2,
+            "search_terms": [
+              "odynophagia",
+              "painful",
+              "swallowing"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-red_flags-3",
+            "chip_text": "unintentional weight loss",
+            "order": 3,
             "search_terms": [
               "weight",
               "loss"
@@ -65126,10 +65128,11 @@
             ]
           },
           {
-            "chip_id": "gastro-gerd-red_flags-3",
-            "chip_text": "gastrointestinal bleeding",
-            "order": 3,
+            "chip_id": "gastro-gerd-red_flags-4",
+            "chip_text": "gastrointestinal bleeding symptoms",
+            "order": 4,
             "search_terms": [
+              "GI",
               "bleeding",
               "hematemesis",
               "melena"
@@ -65140,9 +65143,9 @@
             ]
           },
           {
-            "chip_id": "gastro-gerd-red_flags-4",
+            "chip_id": "gastro-gerd-red_flags-5",
             "chip_text": "persistent vomiting",
-            "order": 4,
+            "order": 5,
             "search_terms": [
               "vomiting",
               "persistent"
@@ -65153,42 +65156,18 @@
             ]
           },
           {
-            "chip_id": "gastro-gerd-red_flags-5",
-            "chip_text": "epigastric mass",
-            "order": 5,
-            "search_terms": [
-              "mass",
-              "epigastric"
-            ],
-            "tags": [
-              "gastroenterology",
-              "high_safety"
-            ]
-          },
-          {
             "chip_id": "gastro-gerd-red_flags-6",
-            "chip_text": "iron deficiency anaemia",
+            "chip_text": "anaemia if documented",
             "order": 6,
             "search_terms": [
               "anaemia",
-              "IDA"
+              "anemia",
+              "IDA",
+              "iron"
             ],
             "tags": [
               "gastroenterology",
               "high_safety"
-            ]
-          },
-          {
-            "chip_id": "gastro-gerd-red_flags-7",
-            "chip_text": "family history of Barrett oesophagus if relevant",
-            "order": 7,
-            "search_terms": [
-              "Barrett",
-              "family",
-              "oesophageal"
-            ],
-            "tags": [
-              "gastroenterology"
             ]
           }
         ],
@@ -65208,11 +65187,13 @@
           },
           {
             "chip_id": "gastro-gerd-investigations-2",
-            "chip_text": "previous imaging reviewed if available",
+            "chip_text": "H. pylori result reviewed if available",
             "order": 2,
             "search_terms": [
-              "imaging",
-              "barium"
+              "H. pylori",
+              "HP",
+              "breath",
+              "test"
             ],
             "tags": [
               "gastroenterology"
@@ -65226,6 +65207,18 @@
               "blood",
               "FBC",
               "iron"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-investigations-4",
+            "chip_text": "previous records reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "previous",
+              "records"
             ],
             "tags": [
               "gastroenterology"
@@ -65247,7 +65240,7 @@
           },
           {
             "chip_id": "gastro-gerd-plan_phrases-2",
-            "chip_text": "lifestyle modification discussed if applicable",
+            "chip_text": "lifestyle advice documented if discussed",
             "order": 2,
             "search_terms": [
               "lifestyle",
@@ -65285,11 +65278,36 @@
           },
           {
             "chip_id": "gastro-gerd-plan_phrases-5",
-            "chip_text": "follow-up documented if arranged",
+            "chip_text": "referral documented if clinician decided",
             "order": 5,
+            "search_terms": [
+              "referral",
+              "gastroenterology",
+              "OGD"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-plan_phrases-6",
+            "chip_text": "follow-up documented if arranged",
+            "order": 6,
             "search_terms": [
               "follow",
               "up"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-plan_phrases-7",
+            "chip_text": "PPI trial discussed if applicable",
+            "order": 7,
+            "search_terms": [
+              "PPI",
+              "trial"
             ],
             "tags": [
               "gastroenterology"
@@ -65342,6 +65360,18 @@
             "search_terms": [
               "PRN",
               "as needed"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-follow_up-5",
+            "chip_text": "8-12 weeks if ongoing",
+            "order": 5,
+            "search_terms": [
+              "eight",
+              "twelve"
             ],
             "tags": [
               "gastroenterology"
@@ -65399,15 +65429,15 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 10,
-        "relevant_negatives": 6,
-        "exam_findings": 6,
-        "red_flags": 7,
-        "investigations": 3,
+        "symptoms": 12,
+        "relevant_negatives": 4,
+        "exam_findings": 4,
+        "red_flags": 6,
+        "investigations": 4,
         "plan_phrases": 4,
-        "follow_up": 4
+        "follow_up": 5
       },
-      "total_chips": 40,
+      "total_chips": 39,
       "chips": {
         "symptoms": [
           {
@@ -65438,11 +65468,11 @@
           },
           {
             "chip_id": "gastro-abdominal-pain-symptoms-3",
-            "chip_text": "onset and duration documented",
+            "chip_text": "duration documented",
             "order": 3,
             "search_terms": [
-              "onset",
-              "duration"
+              "duration",
+              "how long"
             ],
             "tags": [
               "gastroenterology"
@@ -65464,20 +65494,8 @@
           },
           {
             "chip_id": "gastro-abdominal-pain-symptoms-5",
-            "chip_text": "severity documented",
-            "order": 5,
-            "search_terms": [
-              "severity",
-              "intensity"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-abdominal-pain-symptoms-6",
             "chip_text": "radiation reviewed",
-            "order": 6,
+            "order": 5,
             "search_terms": [
               "radiation",
               "referred"
@@ -65487,22 +65505,23 @@
             ]
           },
           {
-            "chip_id": "gastro-abdominal-pain-symptoms-7",
-            "chip_text": "aggravating and relieving factors reviewed",
-            "order": 7,
+            "chip_id": "gastro-abdominal-pain-symptoms-6",
+            "chip_text": "relation to meals and bowels reviewed",
+            "order": 6,
             "search_terms": [
-              "aggrevating",
-              "relieving",
-              "food"
+              "meals",
+              "food",
+              "bowel",
+              "motion"
             ],
             "tags": [
               "gastroenterology"
             ]
           },
           {
-            "chip_id": "gastro-abdominal-pain-symptoms-8",
-            "chip_text": "associated nausea or vomiting reviewed",
-            "order": 8,
+            "chip_id": "gastro-abdominal-pain-symptoms-7",
+            "chip_text": "nausea and vomiting reviewed",
+            "order": 7,
             "search_terms": [
               "nausea",
               "vomiting"
@@ -65512,9 +65531,9 @@
             ]
           },
           {
-            "chip_id": "gastro-abdominal-pain-symptoms-9",
+            "chip_id": "gastro-abdominal-pain-symptoms-8",
             "chip_text": "bowel habit reviewed",
-            "order": 9,
+            "order": 8,
             "search_terms": [
               "bowel",
               "habit",
@@ -65525,24 +65544,22 @@
             ]
           },
           {
-            "chip_id": "gastro-abdominal-pain-symptoms-10",
-            "chip_text": "previous abdominal surgery reviewed",
-            "order": 10,
+            "chip_id": "gastro-abdominal-pain-symptoms-9",
+            "chip_text": "urinary symptoms reviewed",
+            "order": 9,
             "search_terms": [
-              "surgery",
-              "previous",
-              "scar"
+              "urinary",
+              "dysuria",
+              "frequency"
             ],
             "tags": [
               "gastroenterology"
             ]
-          }
-        ],
-        "relevant_negatives": [
+          },
           {
-            "chip_id": "gastro-abdominal-pain-relevant_negatives-1",
-            "chip_text": "no fever reported",
-            "order": 1,
+            "chip_id": "gastro-abdominal-pain-symptoms-10",
+            "chip_text": "fever reviewed",
+            "order": 10,
             "search_terms": [
               "fever",
               "temperature"
@@ -65552,12 +65569,53 @@
             ]
           },
           {
+            "chip_id": "gastro-abdominal-pain-symptoms-11",
+            "chip_text": "previous abdominal surgery reviewed",
+            "order": 11,
+            "search_terms": [
+              "surgery",
+              "previous",
+              "history"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-symptoms-12",
+            "chip_text": "medication history reviewed if relevant",
+            "order": 12,
+            "search_terms": [
+              "medication",
+              "NSAID"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "gastro-abdominal-pain-relevant_negatives-1",
+            "chip_text": "no GI bleeding reported",
+            "order": 1,
+            "search_terms": [
+              "GI",
+              "bleeding",
+              "hematemesis",
+              "melena"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
             "chip_id": "gastro-abdominal-pain-relevant_negatives-2",
-            "chip_text": "no vomiting blood reported",
+            "chip_text": "no persistent vomiting reported",
             "order": 2,
             "search_terms": [
-              "hematemesis",
-              "blood"
+              "vomiting",
+              "persistent"
             ],
             "tags": [
               "gastroenterology"
@@ -65565,12 +65623,12 @@
           },
           {
             "chip_id": "gastro-abdominal-pain-relevant_negatives-3",
-            "chip_text": "no black stools reported",
+            "chip_text": "no severe worsening pain reported",
             "order": 3,
             "search_terms": [
-              "melena",
-              "black",
-              "stool"
+              "severe",
+              "worsening",
+              "pain"
             ],
             "tags": [
               "gastroenterology"
@@ -65578,35 +65636,11 @@
           },
           {
             "chip_id": "gastro-abdominal-pain-relevant_negatives-4",
-            "chip_text": "no unintentional weight loss reported",
+            "chip_text": "no fever reported",
             "order": 4,
             "search_terms": [
-              "weight",
-              "loss"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-abdominal-pain-relevant_negatives-5",
-            "chip_text": "no jaundice reported",
-            "order": 5,
-            "search_terms": [
-              "jaundice",
-              "yellow"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-abdominal-pain-relevant_negatives-6",
-            "chip_text": "no abdominal surgery history reported if relevant",
-            "order": 6,
-            "search_terms": [
-              "surgery",
-              "scar"
+              "fever",
+              "temperature"
             ],
             "tags": [
               "gastroenterology"
@@ -65616,11 +65650,10 @@
         "exam_findings": [
           {
             "chip_id": "gastro-abdominal-pain-exam_findings-1",
-            "chip_text": "abdominal examination documented if assessed",
+            "chip_text": "abdominal tenderness documented if assessed",
             "order": 1,
             "search_terms": [
-              "abdominal",
-              "exam",
+              "tenderness",
               "palpation"
             ],
             "tags": [
@@ -65629,11 +65662,12 @@
           },
           {
             "chip_id": "gastro-abdominal-pain-exam_findings-2",
-            "chip_text": "tenderness documented if assessed",
+            "chip_text": "guarding or rebound documented if assessed",
             "order": 2,
             "search_terms": [
-              "tenderness",
-              "guarding"
+              "guarding",
+              "rebound",
+              "peritonism"
             ],
             "tags": [
               "gastroenterology"
@@ -65664,53 +65698,17 @@
             "tags": [
               "gastroenterology"
             ]
-          },
-          {
-            "chip_id": "gastro-abdominal-pain-exam_findings-5",
-            "chip_text": "general appearance documented if assessed",
-            "order": 5,
-            "search_terms": [
-              "appearance",
-              "distress"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-abdominal-pain-exam_findings-6",
-            "chip_text": "abdominal distension documented if assessed",
-            "order": 6,
-            "search_terms": [
-              "distension",
-              "bloating"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
           }
         ],
         "red_flags": [
           {
             "chip_id": "gastro-abdominal-pain-red_flags-1",
-            "chip_text": "severe or worsening pain",
-            "order": 1,
-            "search_terms": [
-              "severe",
-              "worsening"
-            ],
-            "tags": [
-              "gastroenterology",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "gastro-abdominal-pain-red_flags-2",
             "chip_text": "peritoneal signs if assessed",
-            "order": 2,
+            "order": 1,
             "search_terms": [
               "peritoneal",
               "guarding",
+              "rebound",
               "rigidity"
             ],
             "tags": [
@@ -65719,11 +65717,11 @@
             ]
           },
           {
-            "chip_id": "gastro-abdominal-pain-red_flags-3",
-            "chip_text": "haematemesis or melena",
-            "order": 3,
+            "chip_id": "gastro-abdominal-pain-red_flags-2",
+            "chip_text": "GI bleeding",
+            "order": 2,
             "search_terms": [
-              "hematemesis",
+              "haematemesis",
               "melena",
               "bleeding"
             ],
@@ -65733,9 +65731,9 @@
             ]
           },
           {
-            "chip_id": "gastro-abdominal-pain-red_flags-4",
+            "chip_id": "gastro-abdominal-pain-red_flags-3",
             "chip_text": "unexplained weight loss",
-            "order": 4,
+            "order": 3,
             "search_terms": [
               "weight",
               "loss"
@@ -65746,9 +65744,9 @@
             ]
           },
           {
-            "chip_id": "gastro-abdominal-pain-red_flags-5",
+            "chip_id": "gastro-abdominal-pain-red_flags-4",
             "chip_text": "jaundice",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "jaundice",
               "icterus"
@@ -65759,9 +65757,9 @@
             ]
           },
           {
-            "chip_id": "gastro-abdominal-pain-red_flags-6",
+            "chip_id": "gastro-abdominal-pain-red_flags-5",
             "chip_text": "abdominal mass",
-            "order": 6,
+            "order": 5,
             "search_terms": [
               "mass",
               "palpable"
@@ -65772,12 +65770,12 @@
             ]
           },
           {
-            "chip_id": "gastro-abdominal-pain-red_flags-7",
+            "chip_id": "gastro-abdominal-pain-red_flags-6",
             "chip_text": "fever with abdominal pain",
-            "order": 7,
+            "order": 6,
             "search_terms": [
               "fever",
-              "infection"
+              "sepsis"
             ],
             "tags": [
               "gastroenterology",
@@ -65788,8 +65786,21 @@
         "investigations": [
           {
             "chip_id": "gastro-abdominal-pain-investigations-1",
-            "chip_text": "blood tests reviewed if ordered",
+            "chip_text": "urinalysis reviewed if performed",
             "order": 1,
+            "search_terms": [
+              "urinalysis",
+              "urine",
+              "dipstick"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-investigations-2",
+            "chip_text": "blood tests reviewed if ordered",
+            "order": 2,
             "search_terms": [
               "blood",
               "FBC",
@@ -65801,9 +65812,9 @@
             ]
           },
           {
-            "chip_id": "gastro-abdominal-pain-investigations-2",
-            "chip_text": "abdominal imaging reviewed if available",
-            "order": 2,
+            "chip_id": "gastro-abdominal-pain-investigations-3",
+            "chip_text": "imaging reviewed if available",
+            "order": 3,
             "search_terms": [
               "ultrasound",
               "CT",
@@ -65814,9 +65825,9 @@
             ]
           },
           {
-            "chip_id": "gastro-abdominal-pain-investigations-3",
-            "chip_text": "previous gastroenterology records reviewed if available",
-            "order": 3,
+            "chip_id": "gastro-abdominal-pain-investigations-4",
+            "chip_text": "previous records reviewed if available",
+            "order": 4,
             "search_terms": [
               "previous",
               "records"
@@ -65857,7 +65868,8 @@
             "order": 3,
             "search_terms": [
               "referral",
-              "gastroenterology"
+              "gastroenterology",
+              "surgery"
             ],
             "tags": [
               "gastroenterology"
@@ -65926,6 +65938,18 @@
             "tags": [
               "gastroenterology"
             ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-follow_up-5",
+            "chip_text": "sooner if new symptoms",
+            "order": 5,
+            "search_terms": [
+              "sooner",
+              "new"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
           }
         ]
       },
@@ -65976,15 +66000,15 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 10,
-        "relevant_negatives": 4,
-        "exam_findings": 5,
+        "symptoms": 8,
+        "relevant_negatives": 3,
+        "exam_findings": 4,
         "red_flags": 6,
         "investigations": 3,
         "plan_phrases": 6,
-        "follow_up": 4
+        "follow_up": 5
       },
-      "total_chips": 38,
+      "total_chips": 35,
       "chips": {
         "symptoms": [
           {
@@ -66002,11 +66026,12 @@
           },
           {
             "chip_id": "gastro-ibs-symptoms-symptoms-2",
-            "chip_text": "abdominal pain reviewed",
+            "chip_text": "abdominal pain or discomfort reviewed",
             "order": 2,
             "search_terms": [
               "abdominal",
               "pain",
+              "discomfort",
               "cramping"
             ],
             "tags": [
@@ -66040,9 +66065,11 @@
           },
           {
             "chip_id": "gastro-ibs-symptoms-symptoms-5",
-            "chip_text": "constipation reviewed",
+            "chip_text": "diarrhoea and constipation pattern reviewed",
             "order": 5,
             "search_terms": [
+              "diarrhoea",
+              "diarrhea",
               "constipation"
             ],
             "tags": [
@@ -66051,11 +66078,12 @@
           },
           {
             "chip_id": "gastro-ibs-symptoms-symptoms-6",
-            "chip_text": "diarrhoea reviewed",
+            "chip_text": "symptom relation to stress or food reviewed",
             "order": 6,
             "search_terms": [
-              "diarrhoea",
-              "diarrhea"
+              "stress",
+              "food",
+              "trigger"
             ],
             "tags": [
               "gastroenterology"
@@ -66079,33 +66107,7 @@
             "order": 8,
             "search_terms": [
               "straining",
-              "incomplete",
-              "evacuation"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-ibs-symptoms-symptoms-9",
-            "chip_text": "symptom triggers reviewed",
-            "order": 9,
-            "search_terms": [
-              "trigger",
-              "food",
-              "stress"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-ibs-symptoms-symptoms-10",
-            "chip_text": "mucus in stool reviewed",
-            "order": 10,
-            "search_terms": [
-              "mucus",
-              "slime"
+              "incomplete"
             ],
             "tags": [
               "gastroenterology"
@@ -66140,22 +66142,12 @@
           },
           {
             "chip_id": "gastro-ibs-symptoms-relevant_negatives-3",
-            "chip_text": "no nocturnal symptoms reported if applicable",
+            "chip_text": "no nocturnal diarrhea reported",
             "order": 3,
             "search_terms": [
               "nocturnal",
-              "night"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-ibs-symptoms-relevant_negatives-4",
-            "chip_text": "no fever reported",
-            "order": 4,
-            "search_terms": [
-              "fever"
+              "night",
+              "diarrhea"
             ],
             "tags": [
               "gastroenterology"
@@ -66191,8 +66183,7 @@
             "chip_text": "general appearance documented if assessed",
             "order": 3,
             "search_terms": [
-              "appearance",
-              "well"
+              "appearance"
             ],
             "tags": [
               "gastroenterology"
@@ -66200,20 +66191,8 @@
           },
           {
             "chip_id": "gastro-ibs-symptoms-exam_findings-4",
-            "chip_text": "BMI documented if measured",
-            "order": 4,
-            "search_terms": [
-              "BMI",
-              "weight"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-ibs-symptoms-exam_findings-5",
             "chip_text": "vitals documented if measured",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "vitals",
               "BP"
@@ -66322,7 +66301,7 @@
           },
           {
             "chip_id": "gastro-ibs-symptoms-investigations-2",
-            "chip_text": "stool studies reviewed if ordered",
+            "chip_text": "stool tests reviewed if ordered",
             "order": 2,
             "search_terms": [
               "stool",
@@ -66335,7 +66314,7 @@
           },
           {
             "chip_id": "gastro-ibs-symptoms-investigations-3",
-            "chip_text": "previous gastroenterology records reviewed if available",
+            "chip_text": "previous records reviewed if available",
             "order": 3,
             "search_terms": [
               "previous",
@@ -66361,7 +66340,7 @@
           },
           {
             "chip_id": "gastro-ibs-symptoms-plan_phrases-2",
-            "chip_text": "lifestyle and dietary modification discussed if applicable",
+            "chip_text": "lifestyle and diet advice documented if discussed",
             "order": 2,
             "search_terms": [
               "lifestyle",
@@ -66374,20 +66353,8 @@
           },
           {
             "chip_id": "gastro-ibs-symptoms-plan_phrases-3",
-            "chip_text": "medication plan documented if clinician decided",
-            "order": 3,
-            "search_terms": [
-              "medication",
-              "antispasmodic"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-ibs-symptoms-plan_phrases-4",
             "chip_text": "safety-netting documented if discussed",
-            "order": 4,
+            "order": 3,
             "search_terms": [
               "safety",
               "netting"
@@ -66397,12 +66364,25 @@
             ]
           },
           {
-            "chip_id": "gastro-ibs-symptoms-plan_phrases-5",
+            "chip_id": "gastro-ibs-symptoms-plan_phrases-4",
             "chip_text": "referral documented if clinician decided",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "referral",
+              "gastroenterology",
+              "dietetics"
+            ],
+            "tags": [
               "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
             ],
             "tags": [
               "gastroenterology"
@@ -66410,11 +66390,11 @@
           },
           {
             "chip_id": "gastro-ibs-symptoms-plan_phrases-6",
-            "chip_text": "follow-up documented if arranged",
+            "chip_text": "medication plan documented if clinician decided",
             "order": 6,
             "search_terms": [
-              "follow",
-              "up"
+              "medication",
+              "antispasmodic"
             ],
             "tags": [
               "gastroenterology"
@@ -66471,6 +66451,18 @@
             "tags": [
               "gastroenterology"
             ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-follow_up-5",
+            "chip_text": "sooner if symptom change",
+            "order": 5,
+            "search_terms": [
+              "sooner",
+              "change"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
           }
         ]
       },
@@ -66522,15 +66514,15 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 9,
-        "relevant_negatives": 4,
-        "exam_findings": 5,
+        "symptoms": 8,
+        "relevant_negatives": 3,
+        "exam_findings": 4,
         "red_flags": 5,
-        "investigations": 3,
+        "investigations": 2,
         "plan_phrases": 6,
-        "follow_up": 4
+        "follow_up": 5
       },
-      "total_chips": 36,
+      "total_chips": 33,
       "chips": {
         "symptoms": [
           {
@@ -66546,8 +66538,20 @@
           },
           {
             "chip_id": "gastro-constipation-symptoms-2",
-            "chip_text": "bowel frequency documented",
+            "chip_text": "duration documented",
             "order": 2,
+            "search_terms": [
+              "duration",
+              "how long"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-symptoms-3",
+            "chip_text": "stool frequency documented",
+            "order": 3,
             "search_terms": [
               "frequency",
               "how often",
@@ -66558,9 +66562,9 @@
             ]
           },
           {
-            "chip_id": "gastro-constipation-symptoms-3",
+            "chip_id": "gastro-constipation-symptoms-4",
             "chip_text": "stool consistency documented",
-            "order": 3,
+            "order": 4,
             "search_terms": [
               "consistency",
               "Bristol",
@@ -66571,9 +66575,9 @@
             ]
           },
           {
-            "chip_id": "gastro-constipation-symptoms-4",
-            "chip_text": "straining documented",
-            "order": 4,
+            "chip_id": "gastro-constipation-symptoms-5",
+            "chip_text": "straining reviewed",
+            "order": 5,
             "search_terms": [
               "straining",
               "difficulty"
@@ -66583,9 +66587,9 @@
             ]
           },
           {
-            "chip_id": "gastro-constipation-symptoms-5",
-            "chip_text": "sensation of incomplete evacuation reviewed",
-            "order": 5,
+            "chip_id": "gastro-constipation-symptoms-6",
+            "chip_text": "incomplete emptying reviewed",
+            "order": 6,
             "search_terms": [
               "incomplete",
               "evacuation"
@@ -66595,22 +66599,11 @@
             ]
           },
           {
-            "chip_id": "gastro-constipation-symptoms-6",
-            "chip_text": "laxative use reviewed",
-            "order": 6,
-            "search_terms": [
-              "laxative",
-              "medication"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
             "chip_id": "gastro-constipation-symptoms-7",
-            "chip_text": "dietary fibre and fluid intake reviewed",
+            "chip_text": "diet and fluid context reviewed",
             "order": 7,
             "search_terms": [
+              "diet",
               "fibre",
               "fluid",
               "water"
@@ -66621,24 +66614,12 @@
           },
           {
             "chip_id": "gastro-constipation-symptoms-8",
-            "chip_text": "impact on everyday life documented",
+            "chip_text": "medication history reviewed if relevant",
             "order": 8,
             "search_terms": [
-              "impact",
-              "daily",
-              "QOL"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-constipation-symptoms-9",
-            "chip_text": "abdominal pain or bloating reviewed",
-            "order": 9,
-            "search_terms": [
-              "pain",
-              "bloating"
+              "medication",
+              "laxative",
+              "opioid"
             ],
             "tags": [
               "gastroenterology"
@@ -66672,22 +66653,12 @@
           },
           {
             "chip_id": "gastro-constipation-relevant_negatives-3",
-            "chip_text": "no abdominal pain reported if applicable",
+            "chip_text": "no severe abdominal pain reported",
             "order": 3,
             "search_terms": [
+              "severe",
               "abdominal",
               "pain"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-constipation-relevant_negatives-4",
-            "chip_text": "no vomiting reported",
-            "order": 4,
-            "search_terms": [
-              "vomiting"
             ],
             "tags": [
               "gastroenterology"
@@ -66709,11 +66680,12 @@
           },
           {
             "chip_id": "gastro-constipation-exam_findings-2",
-            "chip_text": "abdominal distension documented if assessed",
+            "chip_text": "rectal examination documented if clinically appropriate and assessed",
             "order": 2,
             "search_terms": [
-              "distension",
-              "bloating"
+              "rectal",
+              "PR",
+              "DRE"
             ],
             "tags": [
               "gastroenterology"
@@ -66721,12 +66693,11 @@
           },
           {
             "chip_id": "gastro-constipation-exam_findings-3",
-            "chip_text": "rectal examination documented if assessed",
+            "chip_text": "abdominal distension documented if assessed",
             "order": 3,
             "search_terms": [
-              "rectal",
-              "PR",
-              "digital"
+              "distension",
+              "bloating"
             ],
             "tags": [
               "gastroenterology"
@@ -66738,18 +66709,6 @@
             "order": 4,
             "search_terms": [
               "appearance"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-constipation-exam_findings-5",
-            "chip_text": "vitals documented if measured",
-            "order": 5,
-            "search_terms": [
-              "vitals",
-              "BP"
             ],
             "tags": [
               "gastroenterology"
@@ -66842,23 +66801,11 @@
           },
           {
             "chip_id": "gastro-constipation-investigations-2",
-            "chip_text": "previous gastroenterology records reviewed if available",
+            "chip_text": "previous records reviewed if available",
             "order": 2,
             "search_terms": [
               "previous",
               "records"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-constipation-investigations-3",
-            "chip_text": "thyroid function reviewed if ordered",
-            "order": 3,
-            "search_terms": [
-              "TFT",
-              "thyroid"
             ],
             "tags": [
               "gastroenterology"
@@ -66880,12 +66827,11 @@
           },
           {
             "chip_id": "gastro-constipation-plan_phrases-2",
-            "chip_text": "lifestyle and dietary advice documented if discussed",
+            "chip_text": "medication plan documented if clinician decided",
             "order": 2,
             "search_terms": [
-              "lifestyle",
-              "fibre",
-              "fluid"
+              "medication",
+              "laxative"
             ],
             "tags": [
               "gastroenterology"
@@ -66893,11 +66839,12 @@
           },
           {
             "chip_id": "gastro-constipation-plan_phrases-3",
-            "chip_text": "medication plan documented if clinician decided",
+            "chip_text": "lifestyle and dietary advice documented if discussed",
             "order": 3,
             "search_terms": [
-              "laxative",
-              "medication"
+              "diet",
+              "fibre",
+              "fluid"
             ],
             "tags": [
               "gastroenterology"
@@ -66917,11 +66864,11 @@
           },
           {
             "chip_id": "gastro-constipation-plan_phrases-5",
-            "chip_text": "follow-up documented if arranged",
+            "chip_text": "referral documented if clinician decided",
             "order": 5,
             "search_terms": [
-              "follow",
-              "up"
+              "referral",
+              "gastroenterology"
             ],
             "tags": [
               "gastroenterology"
@@ -66929,11 +66876,11 @@
           },
           {
             "chip_id": "gastro-constipation-plan_phrases-6",
-            "chip_text": "referral documented if clinician decided",
+            "chip_text": "follow-up documented if arranged",
             "order": 6,
             "search_terms": [
-              "referral",
-              "gastroenterology"
+              "follow",
+              "up"
             ],
             "tags": [
               "gastroenterology"
@@ -66990,6 +66937,18 @@
             "tags": [
               "gastroenterology"
             ]
+          },
+          {
+            "chip_id": "gastro-constipation-follow_up-5",
+            "chip_text": "sooner if symptom change",
+            "order": 5,
+            "search_terms": [
+              "sooner",
+              "change"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
           }
         ]
       },
@@ -67042,13 +67001,13 @@
       "chip_counts": {
         "symptoms": 11,
         "relevant_negatives": 3,
-        "exam_findings": 6,
+        "exam_findings": 3,
         "red_flags": 5,
         "investigations": 3,
-        "plan_phrases": 5,
+        "plan_phrases": 4,
         "follow_up": 4
       },
-      "total_chips": 37,
+      "total_chips": 33,
       "chips": {
         "symptoms": [
           {
@@ -67066,10 +67025,9 @@
           },
           {
             "chip_id": "gastro-diarrhea-symptoms-2",
-            "chip_text": "onset and duration documented",
+            "chip_text": "duration documented",
             "order": 2,
             "search_terms": [
-              "onset",
               "duration",
               "acute",
               "chronic"
@@ -67080,7 +67038,7 @@
           },
           {
             "chip_id": "gastro-diarrhea-symptoms-3",
-            "chip_text": "frequency documented",
+            "chip_text": "stool frequency documented",
             "order": 3,
             "search_terms": [
               "frequency",
@@ -67092,12 +67050,12 @@
           },
           {
             "chip_id": "gastro-diarrhea-symptoms-4",
-            "chip_text": "stool character documented",
+            "chip_text": "stool consistency documented",
             "order": 4,
             "search_terms": [
-              "character",
+              "consistency",
               "watery",
-              "bloody"
+              "Bristol"
             ],
             "tags": [
               "gastroenterology"
@@ -67105,11 +67063,12 @@
           },
           {
             "chip_id": "gastro-diarrhea-symptoms-5",
-            "chip_text": "urgency reviewed",
+            "chip_text": "blood or mucus reviewed",
             "order": 5,
             "search_terms": [
-              "urgency",
-              "bowel"
+              "blood",
+              "mucus",
+              "slime"
             ],
             "tags": [
               "gastroenterology"
@@ -67117,33 +67076,8 @@
           },
           {
             "chip_id": "gastro-diarrhea-symptoms-6",
-            "chip_text": "associated abdominal pain reviewed",
-            "order": 6,
-            "search_terms": [
-              "abdominal",
-              "pain",
-              "cramping"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-diarrhea-symptoms-7",
-            "chip_text": "nausea or vomiting reviewed",
-            "order": 7,
-            "search_terms": [
-              "nausea",
-              "vomiting"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-diarrhea-symptoms-8",
             "chip_text": "fever reviewed",
-            "order": 8,
+            "order": 6,
             "search_terms": [
               "fever",
               "temperature"
@@ -67153,12 +67087,38 @@
             ]
           },
           {
-            "chip_id": "gastro-diarrhea-symptoms-9",
-            "chip_text": "travel history reviewed if relevant",
-            "order": 9,
+            "chip_id": "gastro-diarrhea-symptoms-7",
+            "chip_text": "vomiting reviewed",
+            "order": 7,
+            "search_terms": [
+              "vomiting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-symptoms-8",
+            "chip_text": "travel or food exposure reviewed",
+            "order": 8,
             "search_terms": [
               "travel",
+              "food",
+              "poisoning",
               "foreign"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-symptoms-9",
+            "chip_text": "hydration context reviewed",
+            "order": 9,
+            "search_terms": [
+              "hydration",
+              "drinking",
+              "output"
             ],
             "tags": [
               "gastroenterology"
@@ -67193,12 +67153,12 @@
         "relevant_negatives": [
           {
             "chip_id": "gastro-diarrhea-relevant_negatives-1",
-            "chip_text": "no rectal bleeding reported",
+            "chip_text": "no blood in stool reported",
             "order": 1,
             "search_terms": [
-              "rectal",
-              "bleeding",
-              "PR"
+              "blood",
+              "in",
+              "stool"
             ],
             "tags": [
               "gastroenterology"
@@ -67206,11 +67166,13 @@
           },
           {
             "chip_id": "gastro-diarrhea-relevant_negatives-2",
-            "chip_text": "no unintentional weight loss reported",
+            "chip_text": "no severe dehydration symptoms reported",
             "order": 2,
             "search_terms": [
-              "weight",
-              "loss"
+              "severe",
+              "dehydration",
+              "dry",
+              "dizzy"
             ],
             "tags": [
               "gastroenterology"
@@ -67218,11 +67180,12 @@
           },
           {
             "chip_id": "gastro-diarrhea-relevant_negatives-3",
-            "chip_text": "no nocturnal symptoms reported if applicable",
+            "chip_text": "no persistent high fever reported",
             "order": 3,
             "search_terms": [
-              "nocturnal",
-              "night"
+              "persistent",
+              "high",
+              "fever"
             ],
             "tags": [
               "gastroenterology"
@@ -67244,10 +67207,13 @@
           },
           {
             "chip_id": "gastro-diarrhea-exam_findings-2",
-            "chip_text": "abdominal tenderness documented if assessed",
+            "chip_text": "hydration documented if assessed",
             "order": 2,
             "search_terms": [
-              "tenderness"
+              "hydration",
+              "mucous",
+              "turgor",
+              "skin"
             ],
             "tags": [
               "gastroenterology"
@@ -67262,42 +67228,6 @@
               "BP",
               "pulse",
               "temp"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-diarrhea-exam_findings-4",
-            "chip_text": "general appearance documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "appearance"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-diarrhea-exam_findings-5",
-            "chip_text": "hydration assessment documented if assessed",
-            "order": 5,
-            "search_terms": [
-              "hydration",
-              "mucous",
-              "turgor"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-diarrhea-exam_findings-6",
-            "chip_text": "rectal examination documented if assessed",
-            "order": 6,
-            "search_terms": [
-              "rectal",
-              "PR"
             ],
             "tags": [
               "gastroenterology"
@@ -67324,8 +67254,7 @@
             "order": 2,
             "search_terms": [
               "dehydration",
-              "dry",
-              "turgor"
+              "dry"
             ],
             "tags": [
               "gastroenterology",
@@ -67375,7 +67304,7 @@
         "investigations": [
           {
             "chip_id": "gastro-diarrhea-investigations-1",
-            "chip_text": "stool studies reviewed if ordered",
+            "chip_text": "stool tests reviewed if ordered",
             "order": 1,
             "search_terms": [
               "stool",
@@ -67457,19 +67386,6 @@
             "search_terms": [
               "follow",
               "up"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-diarrhea-plan_phrases-5",
-            "chip_text": "dietary advice documented if discussed",
-            "order": 5,
-            "search_terms": [
-              "diet",
-              "BRAT",
-              "avoid"
             ],
             "tags": [
               "gastroenterology"
@@ -67578,15 +67494,15 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 10,
-        "relevant_negatives": 4,
-        "exam_findings": 5,
+        "symptoms": 9,
+        "relevant_negatives": 3,
+        "exam_findings": 4,
         "red_flags": 6,
-        "investigations": 2,
+        "investigations": 3,
         "plan_phrases": 4,
-        "follow_up": 5
+        "follow_up": 4
       },
-      "total_chips": 36,
+      "total_chips": 33,
       "chips": {
         "symptoms": [
           {
@@ -67605,13 +67521,13 @@
           },
           {
             "chip_id": "gastro-rectal-bleeding-symptoms-2",
-            "chip_text": "amount and colour documented",
+            "chip_text": "bleeding colour documented",
             "order": 2,
             "search_terms": [
-              "amount",
               "colour",
               "bright",
-              "dark"
+              "dark",
+              "red"
             ],
             "tags": [
               "gastroenterology"
@@ -67619,11 +67535,12 @@
           },
           {
             "chip_id": "gastro-rectal-bleeding-symptoms-3",
-            "chip_text": "frequency documented",
+            "chip_text": "amount and frequency documented",
             "order": 3,
             "search_terms": [
+              "amount",
               "frequency",
-              "how often"
+              "volume"
             ],
             "tags": [
               "gastroenterology"
@@ -67631,11 +67548,13 @@
           },
           {
             "chip_id": "gastro-rectal-bleeding-symptoms-4",
-            "chip_text": "associated pain reviewed",
+            "chip_text": "relation to stool documented",
             "order": 4,
             "search_terms": [
-              "pain",
-              "anal"
+              "relation",
+              "on",
+              "paper",
+              "mixed"
             ],
             "tags": [
               "gastroenterology"
@@ -67643,12 +67562,12 @@
           },
           {
             "chip_id": "gastro-rectal-bleeding-symptoms-5",
-            "chip_text": "bowel habit change reviewed",
+            "chip_text": "pain on defecation reviewed",
             "order": 5,
             "search_terms": [
-              "bowel",
-              "habit",
-              "change"
+              "pain",
+              "defecation",
+              "anal"
             ],
             "tags": [
               "gastroenterology"
@@ -67656,11 +67575,12 @@
           },
           {
             "chip_id": "gastro-rectal-bleeding-symptoms-6",
-            "chip_text": "weight loss reviewed",
+            "chip_text": "change in bowel habit reviewed",
             "order": 6,
             "search_terms": [
-              "weight",
-              "loss"
+              "change",
+              "bowel",
+              "habit"
             ],
             "tags": [
               "gastroenterology"
@@ -67668,12 +67588,11 @@
           },
           {
             "chip_id": "gastro-rectal-bleeding-symptoms-7",
-            "chip_text": "family history of colorectal cancer reviewed",
+            "chip_text": "weight loss reviewed",
             "order": 7,
             "search_terms": [
-              "family",
-              "CRC",
-              "bowel cancer"
+              "weight",
+              "loss"
             ],
             "tags": [
               "gastroenterology"
@@ -67686,7 +67605,8 @@
             "search_terms": [
               "anticoagulant",
               "aspirin",
-              "warfarin"
+              "warfarin",
+              "DOAC"
             ],
             "tags": [
               "gastroenterology"
@@ -67694,25 +67614,12 @@
           },
           {
             "chip_id": "gastro-rectal-bleeding-symptoms-9",
-            "chip_text": "anal symptoms reviewed",
+            "chip_text": "previous colonoscopy history reviewed",
             "order": 9,
             "search_terms": [
-              "anal",
-              "pain",
-              "itching",
-              "lump"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-rectal-bleeding-symptoms-10",
-            "chip_text": "previous colonoscopy history reviewed",
-            "order": 10,
-            "search_terms": [
               "colonoscopy",
-              "screening"
+              "screening",
+              "prior"
             ],
             "tags": [
               "gastroenterology"
@@ -67722,12 +67629,12 @@
         "relevant_negatives": [
           {
             "chip_id": "gastro-rectal-bleeding-relevant_negatives-1",
-            "chip_text": "no melena reported if relevant",
+            "chip_text": "no dizziness or syncope reported if applicable",
             "order": 1,
             "search_terms": [
-              "melena",
-              "black",
-              "tarry"
+              "dizziness",
+              "syncope",
+              "faint"
             ],
             "tags": [
               "gastroenterology"
@@ -67735,12 +67642,12 @@
           },
           {
             "chip_id": "gastro-rectal-bleeding-relevant_negatives-2",
-            "chip_text": "no haematemesis reported",
+            "chip_text": "no black stools reported if applicable",
             "order": 2,
             "search_terms": [
-              "hematemesis",
-              "vomiting",
-              "blood"
+              "black",
+              "tarry",
+              "melena"
             ],
             "tags": [
               "gastroenterology"
@@ -67748,23 +67655,11 @@
           },
           {
             "chip_id": "gastro-rectal-bleeding-relevant_negatives-3",
-            "chip_text": "no significant weight loss reported if applicable",
+            "chip_text": "no significant unintentional weight loss reported if applicable",
             "order": 3,
             "search_terms": [
               "weight",
               "loss"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-rectal-bleeding-relevant_negatives-4",
-            "chip_text": "no abdominal mass reported",
-            "order": 4,
-            "search_terms": [
-              "mass",
-              "palpable"
             ],
             "tags": [
               "gastroenterology"
@@ -67786,7 +67681,7 @@
           },
           {
             "chip_id": "gastro-rectal-bleeding-exam_findings-2",
-            "chip_text": "rectal examination documented if assessed",
+            "chip_text": "rectal examination documented if clinically appropriate and assessed",
             "order": 2,
             "search_terms": [
               "rectal",
@@ -67812,20 +67707,8 @@
           },
           {
             "chip_id": "gastro-rectal-bleeding-exam_findings-4",
-            "chip_text": "general appearance documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "appearance",
-              "pale"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-rectal-bleeding-exam_findings-5",
             "chip_text": "anal inspection documented if assessed",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "anal",
               "fissure",
@@ -67843,8 +67726,9 @@
             "order": 1,
             "search_terms": [
               "haemodynamic",
-              "unstable",
-              "BP"
+              "low",
+              "BP",
+              "tachy"
             ],
             "tags": [
               "gastroenterology",
@@ -67896,8 +67780,8 @@
             "order": 5,
             "search_terms": [
               "age",
-              "over 50",
-              "new"
+              "new",
+              "over 50"
             ],
             "tags": [
               "gastroenterology",
@@ -67922,13 +67806,13 @@
         "investigations": [
           {
             "chip_id": "gastro-rectal-bleeding-investigations-1",
-            "chip_text": "blood tests reviewed if ordered",
+            "chip_text": "CBC reviewed if ordered",
             "order": 1,
             "search_terms": [
-              "blood",
+              "CBC",
               "FBC",
-              "coagulation",
-              "iron"
+              "Hb",
+              "haemoglobin"
             ],
             "tags": [
               "gastroenterology"
@@ -67936,11 +67820,24 @@
           },
           {
             "chip_id": "gastro-rectal-bleeding-investigations-2",
-            "chip_text": "previous endoscopy reports reviewed if available",
+            "chip_text": "previous colonoscopy or endoscopy report reviewed if available",
             "order": 2,
             "search_terms": [
               "colonoscopy",
-              "sigmoidoscopy"
+              "OGD",
+              "scope"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-investigations-3",
+            "chip_text": "previous records reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "previous",
+              "records"
             ],
             "tags": [
               "gastroenterology"
@@ -68048,18 +67945,6 @@
             "tags": [
               "gastroenterology"
             ]
-          },
-          {
-            "chip_id": "gastro-rectal-bleeding-follow_up-5",
-            "chip_text": "sooner if bleeding increases",
-            "order": 5,
-            "search_terms": [
-              "sooner",
-              "heavy"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
           }
         ]
       },
@@ -68108,15 +67993,15 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 9,
+        "symptoms": 8,
         "relevant_negatives": 2,
         "exam_findings": 5,
         "red_flags": 5,
-        "investigations": 3,
-        "plan_phrases": 4,
-        "follow_up": 4
+        "investigations": 5,
+        "plan_phrases": 5,
+        "follow_up": 5
       },
-      "total_chips": 32,
+      "total_chips": 35,
       "chips": {
         "symptoms": [
           {
@@ -68134,12 +68019,14 @@
           },
           {
             "chip_id": "gastro-liver-enzyme-review-symptoms-2",
-            "chip_text": "AST and ALT reviewed",
+            "chip_text": "result type documented",
             "order": 2,
             "search_terms": [
               "AST",
               "ALT",
-              "transaminases"
+              "ALP",
+              "GGT",
+              "type"
             ],
             "tags": [
               "gastroenterology"
@@ -68147,12 +68034,12 @@
           },
           {
             "chip_id": "gastro-liver-enzyme-review-symptoms-3",
-            "chip_text": "ALP and GGT reviewed",
+            "chip_text": "trend and comparison reviewed",
             "order": 3,
             "search_terms": [
-              "ALP",
-              "GGT",
-              "cholestatic"
+              "trend",
+              "comparison",
+              "previous"
             ],
             "tags": [
               "gastroenterology"
@@ -68160,33 +68047,8 @@
           },
           {
             "chip_id": "gastro-liver-enzyme-review-symptoms-4",
-            "chip_text": "bilirubin reviewed",
+            "chip_text": "alcohol history reviewed",
             "order": 4,
-            "search_terms": [
-              "bilirubin",
-              "jaundice"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-liver-enzyme-review-symptoms-5",
-            "chip_text": "symptoms reviewed",
-            "order": 5,
-            "search_terms": [
-              "symptoms",
-              "fatigue",
-              "jaundice"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-liver-enzyme-review-symptoms-6",
-            "chip_text": "alcohol history reviewed if relevant",
-            "order": 6,
             "search_terms": [
               "alcohol",
               "drinking"
@@ -68196,13 +68058,42 @@
             ]
           },
           {
-            "chip_id": "gastro-liver-enzyme-review-symptoms-7",
-            "chip_text": "medication history reviewed if relevant",
-            "order": 7,
+            "chip_id": "gastro-liver-enzyme-review-symptoms-5",
+            "chip_text": "medication and supplement history reviewed",
+            "order": 5,
             "search_terms": [
               "medication",
               "statin",
-              "paracetamol"
+              "paracetamol",
+              "supplement"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-symptoms-6",
+            "chip_text": "viral hepatitis risk context reviewed if relevant",
+            "order": 6,
+            "search_terms": [
+              "hepatitis",
+              "B",
+              "C",
+              "viral"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-symptoms-7",
+            "chip_text": "abdominal pain, jaundice and pruritus reviewed",
+            "order": 7,
+            "search_terms": [
+              "pain",
+              "jaundice",
+              "itching",
+              "RUQ"
             ],
             "tags": [
               "gastroenterology"
@@ -68210,23 +68101,11 @@
           },
           {
             "chip_id": "gastro-liver-enzyme-review-symptoms-8",
-            "chip_text": "fatigue reviewed",
+            "chip_text": "fatigue reviewed if relevant",
             "order": 8,
             "search_terms": [
               "fatigue",
               "tiredness"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-liver-enzyme-review-symptoms-9",
-            "chip_text": "pruritus reviewed if relevant",
-            "order": 9,
-            "search_terms": [
-              "itching",
-              "pruritus"
             ],
             "tags": [
               "gastroenterology"
@@ -68240,7 +68119,8 @@
             "order": 1,
             "search_terms": [
               "jaundice",
-              "yellow"
+              "yellow",
+              "icterus"
             ],
             "tags": [
               "gastroenterology"
@@ -68248,11 +68128,13 @@
           },
           {
             "chip_id": "gastro-liver-enzyme-review-relevant_negatives-2",
-            "chip_text": "no abdominal pain reported",
+            "chip_text": "no dark urine or pale stool reported",
             "order": 2,
             "search_terms": [
-              "pain",
-              "RUQ"
+              "dark",
+              "urine",
+              "pale",
+              "stool"
             ],
             "tags": [
               "gastroenterology"
@@ -68262,21 +68144,8 @@
         "exam_findings": [
           {
             "chip_id": "gastro-liver-enzyme-review-exam_findings-1",
-            "chip_text": "vitals documented if measured",
-            "order": 1,
-            "search_terms": [
-              "vitals",
-              "BP",
-              "pulse"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-liver-enzyme-review-exam_findings-2",
             "chip_text": "abdominal examination documented if assessed",
-            "order": 2,
+            "order": 1,
             "search_terms": [
               "abdominal",
               "exam"
@@ -68286,9 +68155,9 @@
             ]
           },
           {
-            "chip_id": "gastro-liver-enzyme-review-exam_findings-3",
+            "chip_id": "gastro-liver-enzyme-review-exam_findings-2",
             "chip_text": "hepatomegaly documented if assessed",
-            "order": 3,
+            "order": 2,
             "search_terms": [
               "hepatomegaly",
               "liver",
@@ -68299,13 +68168,26 @@
             ]
           },
           {
+            "chip_id": "gastro-liver-enzyme-review-exam_findings-3",
+            "chip_text": "signs of chronic liver disease documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "spider",
+              "naevi",
+              "palmar",
+              "erythema"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
             "chip_id": "gastro-liver-enzyme-review-exam_findings-4",
-            "chip_text": "jaundice documented if present",
+            "chip_text": "general appearance documented if assessed",
             "order": 4,
             "search_terms": [
-              "jaundice",
-              "icterus",
-              "sclera"
+              "appearance",
+              "jaundice"
             ],
             "tags": [
               "gastroenterology"
@@ -68313,13 +68195,11 @@
           },
           {
             "chip_id": "gastro-liver-enzyme-review-exam_findings-5",
-            "chip_text": "signs of chronic liver disease documented if assessed",
+            "chip_text": "vitals documented if measured",
             "order": 5,
             "search_terms": [
-              "spider",
-              "naevi",
-              "palmar",
-              "erythema"
+              "vitals",
+              "BP"
             ],
             "tags": [
               "gastroenterology"
@@ -68371,11 +68251,12 @@
           },
           {
             "chip_id": "gastro-liver-enzyme-review-red_flags-4",
-            "chip_text": "right upper quadrant pain",
+            "chip_text": "signs of decompensated liver disease",
             "order": 4,
             "search_terms": [
-              "RUQ",
-              "pain"
+              "ascites",
+              "encephalopathy",
+              "varices"
             ],
             "tags": [
               "gastroenterology",
@@ -68384,11 +68265,12 @@
           },
           {
             "chip_id": "gastro-liver-enzyme-review-red_flags-5",
-            "chip_text": "signs of decompensated liver disease",
+            "chip_text": "rapidly rising liver enzymes",
             "order": 5,
             "search_terms": [
-              "ascites",
-              "encephalopathy"
+              "rapid",
+              "rising",
+              "LFT"
             ],
             "tags": [
               "gastroenterology"
@@ -68398,12 +68280,14 @@
         "investigations": [
           {
             "chip_id": "gastro-liver-enzyme-review-investigations-1",
-            "chip_text": "previous LFT records reviewed if available",
+            "chip_text": "liver function tests reviewed",
             "order": 1,
             "search_terms": [
-              "previous",
               "LFT",
-              "trend"
+              "AST",
+              "ALT",
+              "ALP",
+              "GGT"
             ],
             "tags": [
               "gastroenterology"
@@ -68411,12 +68295,12 @@
           },
           {
             "chip_id": "gastro-liver-enzyme-review-investigations-2",
-            "chip_text": "abdominal imaging reviewed if available",
+            "chip_text": "previous results compared if available",
             "order": 2,
             "search_terms": [
-              "ultrasound",
-              "liver",
-              "CT"
+              "previous",
+              "comparison",
+              "trend"
             ],
             "tags": [
               "gastroenterology"
@@ -68424,13 +68308,38 @@
           },
           {
             "chip_id": "gastro-liver-enzyme-review-investigations-3",
-            "chip_text": "viral hepatitis serology reviewed if ordered",
+            "chip_text": "ultrasound report reviewed if available",
             "order": 3,
+            "search_terms": [
+              "ultrasound",
+              "liver",
+              "US"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-investigations-4",
+            "chip_text": "viral hepatitis serology reviewed if ordered",
+            "order": 4,
             "search_terms": [
               "hepatitis",
               "B",
               "C",
               "serology"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-investigations-5",
+            "chip_text": "previous imaging reviewed if available",
+            "order": 5,
+            "search_terms": [
+              "ultrasound",
+              "CT"
             ],
             "tags": [
               "gastroenterology"
@@ -68452,9 +68361,10 @@
           },
           {
             "chip_id": "gastro-liver-enzyme-review-plan_phrases-2",
-            "chip_text": "repeat testing interval documented if clinician decided",
+            "chip_text": "follow-up testing documented if arranged by clinician",
             "order": 2,
             "search_terms": [
+              "follow-up",
               "repeat",
               "LFT",
               "interval"
@@ -68465,8 +68375,20 @@
           },
           {
             "chip_id": "gastro-liver-enzyme-review-plan_phrases-3",
-            "chip_text": "referral documented if clinician decided",
+            "chip_text": "safety-netting documented if discussed",
             "order": 3,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-plan_phrases-4",
+            "chip_text": "referral documented if clinician decided",
+            "order": 4,
             "search_terms": [
               "referral",
               "gastroenterology",
@@ -68477,9 +68399,9 @@
             ]
           },
           {
-            "chip_id": "gastro-liver-enzyme-review-plan_phrases-4",
+            "chip_id": "gastro-liver-enzyme-review-plan_phrases-5",
             "chip_text": "follow-up documented if arranged",
-            "order": 4,
+            "order": 5,
             "search_terms": [
               "follow",
               "up"
@@ -68538,6 +68460,18 @@
             "tags": [
               "gastroenterology"
             ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-follow_up-5",
+            "chip_text": "sooner if symptom change",
+            "order": 5,
+            "search_terms": [
+              "sooner",
+              "change"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
           }
         ]
       },
@@ -68590,11 +68524,11 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 10,
-        "relevant_negatives": 3,
+        "symptoms": 9,
+        "relevant_negatives": 2,
         "exam_findings": 5,
-        "red_flags": 6,
-        "investigations": 3,
+        "red_flags": 7,
+        "investigations": 4,
         "plan_phrases": 4,
         "follow_up": 4
       },
@@ -68616,12 +68550,11 @@
           },
           {
             "chip_id": "gastro-jaundice-documentation-symptoms-2",
-            "chip_text": "onset and duration documented",
+            "chip_text": "duration documented",
             "order": 2,
             "search_terms": [
-              "onset",
               "duration",
-              "acute"
+              "how long"
             ],
             "tags": [
               "gastroenterology"
@@ -68629,13 +68562,13 @@
           },
           {
             "chip_id": "gastro-jaundice-documentation-symptoms-3",
-            "chip_text": "colour of urine and stool reviewed",
+            "chip_text": "dark urine reviewed",
             "order": 3,
             "search_terms": [
-              "urine",
               "dark",
-              "stool",
-              "pale"
+              "urine",
+              "tea",
+              "coloured"
             ],
             "tags": [
               "gastroenterology"
@@ -68643,8 +68576,22 @@
           },
           {
             "chip_id": "gastro-jaundice-documentation-symptoms-4",
-            "chip_text": "pruritus reviewed",
+            "chip_text": "pale stool reviewed",
             "order": 4,
+            "search_terms": [
+              "pale",
+              "stool",
+              "clay",
+              "coloured"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-symptoms-5",
+            "chip_text": "pruritus reviewed",
+            "order": 5,
             "search_terms": [
               "pruritus",
               "itching"
@@ -68654,11 +68601,10 @@
             ]
           },
           {
-            "chip_id": "gastro-jaundice-documentation-symptoms-5",
+            "chip_id": "gastro-jaundice-documentation-symptoms-6",
             "chip_text": "abdominal pain reviewed",
-            "order": 5,
+            "order": 6,
             "search_terms": [
-              "abdominal",
               "pain",
               "RUQ"
             ],
@@ -68667,9 +68613,21 @@
             ]
           },
           {
-            "chip_id": "gastro-jaundice-documentation-symptoms-6",
+            "chip_id": "gastro-jaundice-documentation-symptoms-7",
+            "chip_text": "fever reviewed",
+            "order": 7,
+            "search_terms": [
+              "fever",
+              "temperature"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-symptoms-8",
             "chip_text": "weight loss reviewed",
-            "order": 6,
+            "order": 8,
             "search_terms": [
               "weight",
               "loss"
@@ -68679,48 +68637,13 @@
             ]
           },
           {
-            "chip_id": "gastro-jaundice-documentation-symptoms-7",
-            "chip_text": "alcohol history reviewed",
-            "order": 7,
-            "search_terms": [
-              "alcohol"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-jaundice-documentation-symptoms-8",
-            "chip_text": "medication history reviewed if relevant",
-            "order": 8,
-            "search_terms": [
-              "medication",
-              "hepatotoxic"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
             "chip_id": "gastro-jaundice-documentation-symptoms-9",
-            "chip_text": "travel history reviewed if relevant",
+            "chip_text": "medication and alcohol history reviewed",
             "order": 9,
             "search_terms": [
-              "travel",
-              "hepatitis"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-jaundice-documentation-symptoms-10",
-            "chip_text": "alcohol intake quantified",
-            "order": 10,
-            "search_terms": [
+              "medication",
               "alcohol",
-              "units",
-              "per week"
+              "drugs"
             ],
             "tags": [
               "gastroenterology"
@@ -68730,11 +68653,11 @@
         "relevant_negatives": [
           {
             "chip_id": "gastro-jaundice-documentation-relevant_negatives-1",
-            "chip_text": "no significant abdominal pain reported if applicable",
+            "chip_text": "no significant abdominal trauma reported if applicable",
             "order": 1,
             "search_terms": [
-              "pain",
-              "abdominal"
+              "trauma",
+              "injury"
             ],
             "tags": [
               "gastroenterology"
@@ -68742,22 +68665,11 @@
           },
           {
             "chip_id": "gastro-jaundice-documentation-relevant_negatives-2",
-            "chip_text": "no fever reported if applicable",
+            "chip_text": "no known hepatitis exposure reported if applicable",
             "order": 2,
             "search_terms": [
-              "fever"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-jaundice-documentation-relevant_negatives-3",
-            "chip_text": "no haematemesis reported",
-            "order": 3,
-            "search_terms": [
-              "hematemesis",
-              "bleeding"
+              "hepatitis",
+              "exposure"
             ],
             "tags": [
               "gastroenterology"
@@ -68861,11 +68773,11 @@
           },
           {
             "chip_id": "gastro-jaundice-documentation-red_flags-3",
-            "chip_text": "right upper quadrant tenderness",
+            "chip_text": "fever with jaundice",
             "order": 3,
             "search_terms": [
-              "RUQ",
-              "tenderness"
+              "fever",
+              "cholangitis"
             ],
             "tags": [
               "gastroenterology",
@@ -68874,11 +68786,11 @@
           },
           {
             "chip_id": "gastro-jaundice-documentation-red_flags-4",
-            "chip_text": "fever with jaundice",
+            "chip_text": "right upper quadrant tenderness",
             "order": 4,
             "search_terms": [
-              "fever",
-              "cholangitis"
+              "RUQ",
+              "tenderness"
             ],
             "tags": [
               "gastroenterology",
@@ -68911,17 +68823,29 @@
               "gastroenterology",
               "high_safety"
             ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-red_flags-7",
+            "chip_text": "fever with rigors",
+            "order": 7,
+            "search_terms": [
+              "fever",
+              "rigors"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
           }
         ],
         "investigations": [
           {
             "chip_id": "gastro-jaundice-documentation-investigations-1",
-            "chip_text": "LFT and bilirubin reviewed",
+            "chip_text": "liver function tests reviewed if ordered",
             "order": 1,
             "search_terms": [
               "LFT",
-              "bilirubin",
               "ALT",
+              "AST",
               "ALP"
             ],
             "tags": [
@@ -68930,8 +68854,21 @@
           },
           {
             "chip_id": "gastro-jaundice-documentation-investigations-2",
-            "chip_text": "abdominal imaging reviewed if available",
+            "chip_text": "bilirubin reviewed if ordered",
             "order": 2,
+            "search_terms": [
+              "bilirubin",
+              "direct",
+              "indirect"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-investigations-3",
+            "chip_text": "ultrasound or imaging reviewed if available",
+            "order": 3,
             "search_terms": [
               "ultrasound",
               "CT",
@@ -68942,15 +68879,12 @@
             ]
           },
           {
-            "chip_id": "gastro-jaundice-documentation-investigations-3",
-            "chip_text": "viral hepatitis serology reviewed if ordered",
-            "order": 3,
+            "chip_id": "gastro-jaundice-documentation-investigations-4",
+            "chip_text": "previous records reviewed if available",
+            "order": 4,
             "search_terms": [
-              "hepatitis",
-              "A",
-              "B",
-              "C",
-              "E"
+              "previous",
+              "records"
             ],
             "tags": [
               "gastroenterology"
@@ -69112,14 +69046,14 @@
       },
       "chip_counts": {
         "symptoms": 9,
-        "relevant_negatives": 5,
+        "relevant_negatives": 2,
         "exam_findings": 4,
         "red_flags": 6,
         "investigations": 3,
         "plan_phrases": 4,
         "follow_up": 4
       },
-      "total_chips": 35,
+      "total_chips": 32,
       "chips": {
         "symptoms": [
           {
@@ -69137,11 +69071,11 @@
           },
           {
             "chip_id": "gastro-dysphagia-symptoms-2",
-            "chip_text": "onset and duration documented",
+            "chip_text": "duration documented",
             "order": 2,
             "search_terms": [
-              "onset",
-              "duration"
+              "duration",
+              "how long"
             ],
             "tags": [
               "gastroenterology"
@@ -69149,20 +69083,8 @@
           },
           {
             "chip_id": "gastro-dysphagia-symptoms-3",
-            "chip_text": "progressive or intermittent documented",
+            "chip_text": "solids versus liquids context documented",
             "order": 3,
-            "search_terms": [
-              "progressive",
-              "intermittent"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-dysphagia-symptoms-4",
-            "chip_text": "solids versus liquids documented",
-            "order": 4,
             "search_terms": [
               "solids",
               "liquids",
@@ -69173,12 +69095,25 @@
             ]
           },
           {
+            "chip_id": "gastro-dysphagia-symptoms-4",
+            "chip_text": "progression reviewed",
+            "order": 4,
+            "search_terms": [
+              "progressive",
+              "worsening"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
             "chip_id": "gastro-dysphagia-symptoms-5",
-            "chip_text": "associated pain reviewed",
+            "chip_text": "odynophagia reviewed",
             "order": 5,
             "search_terms": [
-              "pain",
-              "odynophagia"
+              "odynophagia",
+              "painful",
+              "swallowing"
             ],
             "tags": [
               "gastroenterology"
@@ -69186,8 +69121,21 @@
           },
           {
             "chip_id": "gastro-dysphagia-symptoms-6",
-            "chip_text": "weight loss reviewed",
+            "chip_text": "reflux symptoms reviewed",
             "order": 6,
+            "search_terms": [
+              "reflux",
+              "heartburn",
+              "GERD"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-symptoms-7",
+            "chip_text": "weight loss reviewed",
+            "order": 7,
             "search_terms": [
               "weight",
               "loss"
@@ -69197,26 +69145,13 @@
             ]
           },
           {
-            "chip_id": "gastro-dysphagia-symptoms-7",
+            "chip_id": "gastro-dysphagia-symptoms-8",
             "chip_text": "regurgitation reviewed",
-            "order": 7,
+            "order": 8,
             "search_terms": [
               "regurgitation",
               "food",
-              "coming back"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-dysphagia-symptoms-8",
-            "chip_text": "choking or aspiration reviewed",
-            "order": 8,
-            "search_terms": [
-              "choking",
-              "aspiration",
-              "cough"
+              "back"
             ],
             "tags": [
               "gastroenterology"
@@ -69224,12 +69159,12 @@
           },
           {
             "chip_id": "gastro-dysphagia-symptoms-9",
-            "chip_text": "medication history reviewed if relevant",
+            "chip_text": "associated cough or choking reviewed",
             "order": 9,
             "search_terms": [
-              "medication",
-              "NSAID",
-              "bisphosphonate"
+              "cough",
+              "choking",
+              "aspiration"
             ],
             "tags": [
               "gastroenterology"
@@ -69251,48 +69186,12 @@
           },
           {
             "chip_id": "gastro-dysphagia-relevant_negatives-2",
-            "chip_text": "no haematemesis reported",
+            "chip_text": "no vomiting blood reported",
             "order": 2,
             "search_terms": [
               "hematemesis",
-              "blood"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-dysphagia-relevant_negatives-3",
-            "chip_text": "no persistent vomiting reported",
-            "order": 3,
-            "search_terms": [
-              "vomiting",
-              "regurgitation"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-dysphagia-relevant_negatives-4",
-            "chip_text": "no hoarseness reported if relevant",
-            "order": 4,
-            "search_terms": [
-              "hoarseness",
-              "voice"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-dysphagia-relevant_negatives-5",
-            "chip_text": "no neurological symptoms reported if relevant",
-            "order": 5,
-            "search_terms": [
-              "neurological",
-              "CVA",
-              "stroke"
+              "blood",
+              "vomit"
             ],
             "tags": [
               "gastroenterology"
@@ -69302,9 +69201,10 @@
         "exam_findings": [
           {
             "chip_id": "gastro-dysphagia-exam_findings-1",
-            "chip_text": "general appearance documented if assessed",
+            "chip_text": "general examination documented if assessed",
             "order": 1,
             "search_terms": [
+              "general",
               "appearance",
               "nutrition"
             ],
@@ -69314,12 +69214,12 @@
           },
           {
             "chip_id": "gastro-dysphagia-exam_findings-2",
-            "chip_text": "vitals documented if measured",
+            "chip_text": "oral and throat examination documented if assessed",
             "order": 2,
             "search_terms": [
-              "vitals",
-              "BP",
-              "pulse"
+              "oral",
+              "throat",
+              "mouth"
             ],
             "tags": [
               "gastroenterology"
@@ -69327,11 +69227,12 @@
           },
           {
             "chip_id": "gastro-dysphagia-exam_findings-3",
-            "chip_text": "abdominal examination documented if assessed",
+            "chip_text": "vitals documented if measured",
             "order": 3,
             "search_terms": [
-              "abdominal",
-              "exam"
+              "vitals",
+              "BP",
+              "pulse"
             ],
             "tags": [
               "gastroenterology"
@@ -69343,7 +69244,8 @@
             "order": 4,
             "search_terms": [
               "BMI",
-              "weight"
+              "weight",
+              "nutrition"
             ],
             "tags": [
               "gastroenterology"
@@ -69383,8 +69285,7 @@
             "order": 3,
             "search_terms": [
               "odynophagia",
-              "painful",
-              "swallowing"
+              "painful"
             ],
             "tags": [
               "gastroenterology",
@@ -69397,8 +69298,8 @@
             "order": 4,
             "search_terms": [
               "age",
-              "over 50",
-              "new"
+              "new",
+              "onset"
             ],
             "tags": [
               "gastroenterology",
@@ -69426,7 +69327,7 @@
             "search_terms": [
               "family",
               "GI",
-              "cancer"
+              "oesophageal"
             ],
             "tags": [
               "gastroenterology",
@@ -69450,11 +69351,12 @@
           },
           {
             "chip_id": "gastro-dysphagia-investigations-2",
-            "chip_text": "barium swallow report reviewed if performed",
+            "chip_text": "blood tests reviewed if ordered",
             "order": 2,
             "search_terms": [
-              "barium",
-              "swallow"
+              "blood",
+              "FBC",
+              "iron"
             ],
             "tags": [
               "gastroenterology"
@@ -69462,11 +69364,11 @@
           },
           {
             "chip_id": "gastro-dysphagia-investigations-3",
-            "chip_text": "previous imaging reviewed if available",
+            "chip_text": "previous records reviewed if available",
             "order": 3,
             "search_terms": [
-              "imaging",
-              "CT"
+              "previous",
+              "records"
             ],
             "tags": [
               "gastroenterology"
@@ -69622,15 +69524,15 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 9,
-        "relevant_negatives": 2,
+        "symptoms": 8,
+        "relevant_negatives": 3,
         "exam_findings": 4,
         "red_flags": 3,
         "investigations": 3,
-        "plan_phrases": 6,
-        "follow_up": 5
+        "plan_phrases": 4,
+        "follow_up": 6
       },
-      "total_chips": 32,
+      "total_chips": 31,
       "chips": {
         "symptoms": [
           {
@@ -69648,11 +69550,13 @@
           },
           {
             "chip_id": "gastro-post-endoscopy-followup-symptoms-2",
-            "chip_text": "procedure tolerance reviewed",
+            "chip_text": "procedure type documented",
             "order": 2,
             "search_terms": [
-              "tolerance",
-              "sedation"
+              "procedure",
+              "OGD",
+              "colonoscopy",
+              "type"
             ],
             "tags": [
               "gastroenterology"
@@ -69660,12 +69564,12 @@
           },
           {
             "chip_id": "gastro-post-endoscopy-followup-symptoms-3",
-            "chip_text": "clinical findings reviewed",
+            "chip_text": "indication reviewed",
             "order": 3,
             "search_terms": [
-              "findings",
-              "endoscopy",
-              "result"
+              "indication",
+              "reason",
+              "scope"
             ],
             "tags": [
               "gastroenterology"
@@ -69673,12 +69577,12 @@
           },
           {
             "chip_id": "gastro-post-endoscopy-followup-symptoms-4",
-            "chip_text": "biopsy results reviewed if available",
+            "chip_text": "findings reviewed if available",
             "order": 4,
             "search_terms": [
-              "biopsy",
-              "histology",
-              "result"
+              "findings",
+              "result",
+              "scope"
             ],
             "tags": [
               "gastroenterology"
@@ -69686,11 +69590,12 @@
           },
           {
             "chip_id": "gastro-post-endoscopy-followup-symptoms-5",
-            "chip_text": "symptoms since procedure reviewed",
+            "chip_text": "symptoms after procedure reviewed",
             "order": 5,
             "search_terms": [
               "symptoms",
-              "recovery"
+              "recovery",
+              "after"
             ],
             "tags": [
               "gastroenterology"
@@ -69698,13 +69603,13 @@
           },
           {
             "chip_id": "gastro-post-endoscopy-followup-symptoms-6",
-            "chip_text": "bleeding or pain reviewed",
+            "chip_text": "medication and advice review documented if relevant",
             "order": 6,
             "search_terms": [
-              "bleeding",
-              "pain",
-              "post",
-              "procedure"
+              "medication",
+              "PPI",
+              "change",
+              "advice"
             ],
             "tags": [
               "gastroenterology"
@@ -69712,21 +69617,8 @@
           },
           {
             "chip_id": "gastro-post-endoscopy-followup-symptoms-7",
-            "chip_text": "medication adjustment reviewed if applicable",
-            "order": 7,
-            "search_terms": [
-              "medication",
-              "PPI",
-              "change"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-post-endoscopy-followup-symptoms-8",
             "chip_text": "diet tolerated since procedure",
-            "order": 8,
+            "order": 7,
             "search_terms": [
               "diet",
               "eating",
@@ -69737,9 +69629,9 @@
             ]
           },
           {
-            "chip_id": "gastro-post-endoscopy-followup-symptoms-9",
+            "chip_id": "gastro-post-endoscopy-followup-symptoms-8",
             "chip_text": "return to normal activities reviewed",
-            "order": 9,
+            "order": 8,
             "search_terms": [
               "activity",
               "work",
@@ -69758,7 +69650,7 @@
             "search_terms": [
               "bleeding",
               "post",
-              "procedure"
+              "scope"
             ],
             "tags": [
               "gastroenterology"
@@ -69766,12 +69658,24 @@
           },
           {
             "chip_id": "gastro-post-endoscopy-followup-relevant_negatives-2",
-            "chip_text": "no post-procedure pain reported",
+            "chip_text": "no severe abdominal pain reported",
             "order": 2,
             "search_terms": [
-              "pain",
-              "after",
-              "scope"
+              "severe",
+              "abdominal",
+              "pain"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-relevant_negatives-3",
+            "chip_text": "no fever reported",
+            "order": 3,
+            "search_terms": [
+              "fever",
+              "temperature"
             ],
             "tags": [
               "gastroenterology"
@@ -69798,7 +69702,8 @@
             "search_terms": [
               "vitals",
               "BP",
-              "pulse"
+              "pulse",
+              "temp"
             ],
             "tags": [
               "gastroenterology"
@@ -69821,7 +69726,7 @@
             "order": 4,
             "search_terms": [
               "tenderness",
-              "guarding"
+              "pain"
             ],
             "tags": [
               "gastroenterology"
@@ -69835,8 +69740,8 @@
             "order": 1,
             "search_terms": [
               "post",
-              "procedure",
-              "bleeding"
+              "bleeding",
+              "scope"
             ],
             "tags": [
               "gastroenterology",
@@ -69863,7 +69768,8 @@
             "order": 3,
             "search_terms": [
               "perforation",
-              "peritonitis"
+              "peritonitis",
+              "fever"
             ],
             "tags": [
               "gastroenterology",
@@ -69874,12 +69780,13 @@
         "investigations": [
           {
             "chip_id": "gastro-post-endoscopy-followup-investigations-1",
-            "chip_text": "endoscopy report reviewed if available",
+            "chip_text": "endoscopy report reviewed",
             "order": 1,
             "search_terms": [
               "endoscopy",
               "OGD",
-              "colonoscopy"
+              "colonoscopy",
+              "report"
             ],
             "tags": [
               "gastroenterology"
@@ -69887,12 +69794,12 @@
           },
           {
             "chip_id": "gastro-post-endoscopy-followup-investigations-2",
-            "chip_text": "histology results reviewed if available",
+            "chip_text": "histology or pathology reviewed if available",
             "order": 2,
             "search_terms": [
               "histology",
-              "biopsy",
-              "pathology"
+              "pathology",
+              "biopsy"
             ],
             "tags": [
               "gastroenterology"
@@ -69926,12 +69833,12 @@
           },
           {
             "chip_id": "gastro-post-endoscopy-followup-plan_phrases-2",
-            "chip_text": "medication plan documented if clinician decided",
+            "chip_text": "follow-up plan documented if arranged",
             "order": 2,
             "search_terms": [
-              "medication",
-              "PPI",
-              "change"
+              "follow-up",
+              "plan",
+              "interval"
             ],
             "tags": [
               "gastroenterology"
@@ -69939,12 +69846,12 @@
           },
           {
             "chip_id": "gastro-post-endoscopy-followup-plan_phrases-3",
-            "chip_text": "follow-up interval for repeat endoscopy documented if clinician decided",
+            "chip_text": "referral documented if clinician decided",
             "order": 3,
             "search_terms": [
-              "repeat",
-              "scope",
-              "interval"
+              "referral",
+              "gastroenterology",
+              "follow-up"
             ],
             "tags": [
               "gastroenterology"
@@ -69957,30 +69864,6 @@
             "search_terms": [
               "safety",
               "netting"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-post-endoscopy-followup-plan_phrases-5",
-            "chip_text": "follow-up documented if arranged",
-            "order": 5,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "gastroenterology"
-            ]
-          },
-          {
-            "chip_id": "gastro-post-endoscopy-followup-plan_phrases-6",
-            "chip_text": "referral documented if clinician decided",
-            "order": 6,
-            "search_terms": [
-              "referral",
-              "follow-up"
             ],
             "tags": [
               "gastroenterology"
@@ -70050,6 +69933,18 @@
             "tags": [
               "gastroenterology"
             ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-follow_up-6",
+            "chip_text": "sooner if worsening",
+            "order": 6,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
           }
         ]
       },
@@ -70099,9 +69994,669 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 11,
+        "relevant_negatives": 6,
+        "exam_findings": 9,
+        "red_flags": 0,
+        "investigations": 6,
+        "plan_phrases": 9,
+        "follow_up": 9
+      },
+      "total_chips": 50,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "endo-diabetes-followup-symptoms-1",
+            "chip_text": "diabetes follow-up",
+            "order": 1,
+            "search_terms": [
+              "diabetes",
+              "followup",
+              "DM"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-symptoms-2",
+            "chip_text": "home glucose readings reviewed",
+            "order": 2,
+            "search_terms": [
+              "home",
+              "glucose",
+              "SMBG",
+              "readings"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-symptoms-3",
+            "chip_text": "HbA1c trend reviewed",
+            "order": 3,
+            "search_terms": [
+              "HbA1c",
+              "A1c",
+              "trend"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-symptoms-4",
+            "chip_text": "medication adherence discussed",
+            "order": 4,
+            "search_terms": [
+              "medication",
+              "adherence",
+              "compliance"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-symptoms-5",
+            "chip_text": "lifestyle context reviewed",
+            "order": 5,
+            "search_terms": [
+              "lifestyle",
+              "diet",
+              "exercise"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-symptoms-6",
+            "chip_text": "hypoglycemia symptoms reviewed",
+            "order": 6,
+            "search_terms": [
+              "hypoglycemia",
+              "hypo",
+              "low"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-symptoms-7",
+            "chip_text": "foot symptoms reviewed",
+            "order": 7,
+            "search_terms": [
+              "foot",
+              "ulcer",
+              "wound"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-symptoms-8",
+            "chip_text": "visual symptoms reviewed",
+            "order": 8,
+            "search_terms": [
+              "visual",
+              "vision",
+              "eyes"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-symptoms-9",
+            "chip_text": "neuropathy symptoms reviewed",
+            "order": 9,
+            "search_terms": [
+              "neuropathy",
+              "numbness",
+              "tingling"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-symptoms-10",
+            "chip_text": "kidney function context reviewed if relevant",
+            "order": 10,
+            "search_terms": [
+              "kidney",
+              "renal",
+              "nephropathy"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-symptoms-11",
+            "chip_text": "cardiovascular risk context reviewed if relevant",
+            "order": 11,
+            "search_terms": [
+              "cardiac",
+              "CVD",
+              "risk"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "endo-diabetes-followup-relevant_negatives-1",
+            "chip_text": "no hypoglycemia symptoms reported",
+            "order": 1,
+            "search_terms": [
+              "hypoglycemia",
+              "hypo"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-relevant_negatives-2",
+            "chip_text": "no foot ulcers reported",
+            "order": 2,
+            "search_terms": [
+              "foot",
+              "ulcer",
+              "wound"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-relevant_negatives-3",
+            "chip_text": "no acute infection symptoms reported",
+            "order": 3,
+            "search_terms": [
+              "infection",
+              "fever",
+              "UTI"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-relevant_negatives-4",
+            "chip_text": "no visual symptoms reported",
+            "order": 4,
+            "search_terms": [
+              "visual",
+              "vision",
+              "blurred"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-relevant_negatives-5",
+            "chip_text": "no chest pain reported if relevant",
+            "order": 5,
+            "search_terms": [
+              "chest",
+              "pain",
+              "cardiac"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-relevant_negatives-6",
+            "chip_text": "no shortness of breath reported if relevant",
+            "order": 6,
+            "search_terms": [
+              "SOB",
+              "breathlessness"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "endo-diabetes-followup-exam_findings-1",
+            "chip_text": "weight and BMI documented if measured",
+            "order": 1,
+            "search_terms": [
+              "weight",
+              "BMI"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-exam_findings-2",
+            "chip_text": "blood pressure documented if measured",
+            "order": 2,
+            "search_terms": [
+              "BP",
+              "blood",
+              "pressure"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-exam_findings-3",
+            "chip_text": "foot examination documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "foot",
+              "exam",
+              "monofilament"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-exam_findings-4",
+            "chip_text": "peripheral pulses documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "pulses",
+              "DP",
+              "PT"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-exam_findings-5",
+            "chip_text": "sensation documented if assessed",
+            "order": 5,
+            "search_terms": [
+              "sensation",
+              "monofilament",
+              "neuropathy"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-exam_findings-6",
+            "chip_text": "injection sites documented if assessed",
+            "order": 6,
+            "search_terms": [
+              "injection",
+              "site",
+              "insulin"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-exam_findings-7",
+            "chip_text": "retinal examination documented if assessed",
+            "order": 7,
+            "search_terms": [
+              "retinal",
+              "eye",
+              "fundoscopy"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-exam_findings-8",
+            "chip_text": "cardiac examination documented if assessed",
+            "order": 8,
+            "search_terms": [
+              "cardiac",
+              "heart",
+              "CVS"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-exam_findings-9",
+            "chip_text": "foot pulses documented if assessed",
+            "order": 9,
+            "search_terms": [
+              "foot",
+              "pulses",
+              "DP"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "red_flags": [],
+        "investigations": [
+          {
+            "chip_id": "endo-diabetes-followup-investigations-1",
+            "chip_text": "HbA1c reviewed if available",
+            "order": 1,
+            "search_terms": [
+              "HbA1c",
+              "A1c"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-investigations-2",
+            "chip_text": "renal function reviewed if ordered",
+            "order": 2,
+            "search_terms": [
+              "renal",
+              "kidney",
+              "eGFR",
+              "creatinine"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-investigations-3",
+            "chip_text": "urine ACR reviewed if ordered",
+            "order": 3,
+            "search_terms": [
+              "ACR",
+              "albumin",
+              "microalbumin"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-investigations-4",
+            "chip_text": "lipid profile reviewed if ordered",
+            "order": 4,
+            "search_terms": [
+              "lipid",
+              "cholesterol",
+              "LDL"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-investigations-5",
+            "chip_text": "eye screening report reviewed if available",
+            "order": 5,
+            "search_terms": [
+              "eye",
+              "screening",
+              "retinopathy"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-investigations-6",
+            "chip_text": "home glucose log reviewed if available",
+            "order": 6,
+            "search_terms": [
+              "glucose",
+              "log",
+              "diary",
+              "SMBG"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "endo-diabetes-followup-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-plan_phrases-2",
+            "chip_text": "medication adherence documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "adherence",
+              "medication"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-plan_phrases-3",
+            "chip_text": "lifestyle advice documented if discussed",
+            "order": 3,
+            "search_terms": [
+              "lifestyle",
+              "diet",
+              "exercise"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-plan_phrases-4",
+            "chip_text": "glucose monitoring documented if discussed",
+            "order": 4,
+            "search_terms": [
+              "glucose",
+              "monitoring",
+              "SMBG"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-plan_phrases-5",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 5,
+            "search_terms": [
+              "medication",
+              "adjustment"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-plan_phrases-6",
+            "chip_text": "referral documented if clinician arranged",
+            "order": 6,
+            "search_terms": [
+              "referral",
+              "diabetes",
+              "eye",
+              "podiatry"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-plan_phrases-7",
+            "chip_text": "follow-up documented if arranged",
+            "order": 7,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-plan_phrases-8",
+            "chip_text": "annual review items discussed if applicable",
+            "order": 8,
+            "search_terms": [
+              "annual",
+              "review",
+              "checks"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-plan_phrases-9",
+            "chip_text": "sick day rules documented if discussed",
+            "order": 9,
+            "search_terms": [
+              "sick",
+              "day",
+              "rules"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "endo-diabetes-followup-follow_up-1",
+            "chip_text": "3-6 months",
+            "order": 1,
+            "search_terms": [
+              "three",
+              "six",
+              "months"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-follow_up-2",
+            "chip_text": "6-12 months if stable",
+            "order": 2,
+            "search_terms": [
+              "six",
+              "twelve"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-follow_up-3",
+            "chip_text": "sooner if symptoms change",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "change"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-follow_up-5",
+            "chip_text": "sooner if needed",
+            "order": 5,
+            "search_terms": [
+              "sooner",
+              "needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-follow_up-7",
+            "chip_text": "sooner if HbA1c rising",
+            "order": 7,
+            "search_terms": [
+              "Hba1c",
+              "rising"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-follow_up-8",
+            "chip_text": "sooner if HbA1c not at target",
+            "order": 8,
+            "search_terms": [
+              "HbA1c",
+              "target"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-follow_up-9",
+            "chip_text": "annual diabetes review",
+            "order": 9,
+            "search_terms": [
+              "annual",
+              "diabetes"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-diabetes-followup-follow_up-10",
+            "chip_text": "sooner if acute symptoms",
+            "order": 10,
+            "search_terms": [
+              "acute",
+              "symptoms"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "diabetes follow-up",
         "DM review",
@@ -70148,9 +70703,490 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 10,
+        "relevant_negatives": 4,
+        "exam_findings": 8,
+        "red_flags": 0,
+        "investigations": 4,
+        "plan_phrases": 4,
+        "follow_up": 6
+      },
+      "total_chips": 36,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "endo-thyroid-symptoms-symptoms-1",
+            "chip_text": "thyroid symptoms",
+            "order": 1,
+            "search_terms": [
+              "thyroid",
+              "symptoms"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-symptoms-2",
+            "chip_text": "weight change reviewed",
+            "order": 2,
+            "search_terms": [
+              "weight",
+              "loss",
+              "gain"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-symptoms-3",
+            "chip_text": "heat or cold intolerance reviewed",
+            "order": 3,
+            "search_terms": [
+              "heat",
+              "cold",
+              "intolerance"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-symptoms-4",
+            "chip_text": "palpitations reviewed",
+            "order": 4,
+            "search_terms": [
+              "palpitations",
+              "heart",
+              "racing"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-symptoms-5",
+            "chip_text": "tremor reviewed",
+            "order": 5,
+            "search_terms": [
+              "tremor",
+              "shaking"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-symptoms-6",
+            "chip_text": "bowel habit reviewed",
+            "order": 6,
+            "search_terms": [
+              "bowel",
+              "habit",
+              "diarrhoea"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-symptoms-7",
+            "chip_text": "mood and energy context reviewed",
+            "order": 7,
+            "search_terms": [
+              "mood",
+              "energy",
+              "fatigue",
+              "anxiety"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-symptoms-8",
+            "chip_text": "neck swelling or goiter context reviewed",
+            "order": 8,
+            "search_terms": [
+              "neck",
+              "swelling",
+              "goiter",
+              "lump"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-symptoms-9",
+            "chip_text": "skin and hair changes reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "skin",
+              "hair",
+              "dry",
+              "brittle"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-symptoms-10",
+            "chip_text": "menstrual changes reviewed if relevant",
+            "order": 10,
+            "search_terms": [
+              "menstrual",
+              "period",
+              "cycle"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "endo-thyroid-symptoms-relevant_negatives-1",
+            "chip_text": "no chest pain reported if relevant",
+            "order": 1,
+            "search_terms": [
+              "chest",
+              "pain"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-relevant_negatives-2",
+            "chip_text": "no severe palpitations reported if relevant",
+            "order": 2,
+            "search_terms": [
+              "severe",
+              "palpitations",
+              "sustained"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-relevant_negatives-3",
+            "chip_text": "no dysphagia reported if relevant",
+            "order": 3,
+            "search_terms": [
+              "dysphagia",
+              "swallowing"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-relevant_negatives-4",
+            "chip_text": "no voice change reported if relevant",
+            "order": 4,
+            "search_terms": [
+              "voice",
+              "hoarseness"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "endo-thyroid-symptoms-exam_findings-1",
+            "chip_text": "vitals documented if measured",
+            "order": 1,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-exam_findings-2",
+            "chip_text": "neck examination documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "neck",
+              "thyroid",
+              "goiter",
+              "nodule"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-exam_findings-3",
+            "chip_text": "tremor documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "tremor",
+              "fine"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-exam_findings-4",
+            "chip_text": "eye signs documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "eye",
+              "exophthalmos",
+              "lid lag"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-exam_findings-5",
+            "chip_text": "weight documented if measured",
+            "order": 5,
+            "search_terms": [
+              "weight",
+              "BMI"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-exam_findings-6",
+            "chip_text": "skin and hair examination documented if assessed",
+            "order": 6,
+            "search_terms": [
+              "skin",
+              "hair",
+              "texture"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-exam_findings-7",
+            "chip_text": "blood pressure documented if measured",
+            "order": 7,
+            "search_terms": [
+              "BP",
+              "blood",
+              "pressure"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-exam_findings-8",
+            "chip_text": "lymph node examination documented if assessed",
+            "order": 8,
+            "search_terms": [
+              "lymph",
+              "node",
+              "neck"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "red_flags": [],
+        "investigations": [
+          {
+            "chip_id": "endo-thyroid-symptoms-investigations-1",
+            "chip_text": "thyroid function tests reviewed if ordered",
+            "order": 1,
+            "search_terms": [
+              "TFT",
+              "TSH",
+              "T4",
+              "T3"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-investigations-2",
+            "chip_text": "thyroid antibodies reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "antibodies",
+              "TPO",
+              "Tg"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-investigations-3",
+            "chip_text": "ultrasound report reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "ultrasound",
+              "thyroid",
+              "US"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-investigations-4",
+            "chip_text": "previous records reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "endo-thyroid-symptoms-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-plan_phrases-2",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 2,
+            "search_terms": [
+              "medication",
+              "antithyroid",
+              "beta"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "endocrinology"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "endo-thyroid-symptoms-follow_up-1",
+            "chip_text": "4-6 weeks",
+            "order": 1,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-follow_up-2",
+            "chip_text": "6-8 weeks",
+            "order": 2,
+            "search_terms": [
+              "six",
+              "eight",
+              "weeks"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-follow_up-6",
+            "chip_text": "sooner if needed",
+            "order": 6,
+            "search_terms": [
+              "sooner",
+              "needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-thyroid-symptoms-follow_up-7",
+            "chip_text": "4-6 weeks after starting treatment",
+            "order": 7,
+            "search_terms": [
+              "four",
+              "six",
+              "treatment"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "thyroid symptoms",
         "hyperthyroid",
@@ -70195,9 +71231,432 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 2,
+        "exam_findings": 6,
+        "red_flags": 0,
+        "investigations": 3,
+        "plan_phrases": 5,
+        "follow_up": 7
+      },
+      "total_chips": 32,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "endo-hypothyroidism-followup-symptoms-1",
+            "chip_text": "hypothyroidism follow-up",
+            "order": 1,
+            "search_terms": [
+              "hypothyroidism",
+              "followup",
+              "underactive"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-symptoms-2",
+            "chip_text": "fatigue and energy reviewed",
+            "order": 2,
+            "search_terms": [
+              "fatigue",
+              "energy",
+              "tiredness"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-symptoms-3",
+            "chip_text": "cold intolerance reviewed",
+            "order": 3,
+            "search_terms": [
+              "cold",
+              "intolerance"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-symptoms-4",
+            "chip_text": "weight change reviewed",
+            "order": 4,
+            "search_terms": [
+              "weight",
+              "gain"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-symptoms-5",
+            "chip_text": "constipation reviewed",
+            "order": 5,
+            "search_terms": [
+              "constipation"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-symptoms-6",
+            "chip_text": "dry skin and hair loss reviewed",
+            "order": 6,
+            "search_terms": [
+              "dry",
+              "skin",
+              "hair",
+              "loss"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-symptoms-7",
+            "chip_text": "medication adherence discussed",
+            "order": 7,
+            "search_terms": [
+              "medication",
+              "adherence",
+              "levothyroxine"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-symptoms-8",
+            "chip_text": "myxoedema symptoms reviewed if relevant",
+            "order": 8,
+            "search_terms": [
+              "myxoedema",
+              "facial",
+              "puffiness"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-symptoms-9",
+            "chip_text": "heart rate changes reviewed",
+            "order": 9,
+            "search_terms": [
+              "heart",
+              "rate",
+              "bradycardia"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "endo-hypothyroidism-followup-relevant_negatives-1",
+            "chip_text": "no palpitations reported if relevant",
+            "order": 1,
+            "search_terms": [
+              "palpitations",
+              "racing"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-relevant_negatives-2",
+            "chip_text": "no chest pain reported if relevant",
+            "order": 2,
+            "search_terms": [
+              "chest",
+              "pain"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "endo-hypothyroidism-followup-exam_findings-1",
+            "chip_text": "weight documented if measured",
+            "order": 1,
+            "search_terms": [
+              "weight",
+              "BMI"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-exam_findings-2",
+            "chip_text": "pulse documented if measured",
+            "order": 2,
+            "search_terms": [
+              "pulse",
+              "heart",
+              "rate"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-exam_findings-3",
+            "chip_text": "neck examination documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "neck",
+              "thyroid",
+              "examination"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-exam_findings-4",
+            "chip_text": "skin and hair examination documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "skin",
+              "dry",
+              "hair",
+              "loss"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-exam_findings-5",
+            "chip_text": "reflexes documented if assessed",
+            "order": 5,
+            "search_terms": [
+              "reflexes",
+              "delayed",
+              "relaxation"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-exam_findings-6",
+            "chip_text": "facial puffiness documented if assessed",
+            "order": 6,
+            "search_terms": [
+              "facial",
+              "puffiness",
+              "myxoedema"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "red_flags": [],
+        "investigations": [
+          {
+            "chip_id": "endo-hypothyroidism-followup-investigations-1",
+            "chip_text": "TSH reviewed if available",
+            "order": 1,
+            "search_terms": [
+              "TSH",
+              "thyroid",
+              "stimulating"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-investigations-2",
+            "chip_text": "free T4 reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "free",
+              "T4",
+              "thyroxine"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-investigations-3",
+            "chip_text": "previous records reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "endo-hypothyroidism-followup-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-plan_phrases-2",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 2,
+            "search_terms": [
+              "medication",
+              "levothyroxine",
+              "dose"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-plan_phrases-3",
+            "chip_text": "adherence discussed if applicable",
+            "order": 3,
+            "search_terms": [
+              "adherence",
+              "compliance"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-plan_phrases-5",
+            "chip_text": "referral documented if clinician decided",
+            "order": 5,
+            "search_terms": [
+              "referral",
+              "endocrinology"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "endo-hypothyroidism-followup-follow_up-1",
+            "chip_text": "6-8 weeks",
+            "order": 1,
+            "search_terms": [
+              "six",
+              "eight",
+              "weeks"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-follow_up-2",
+            "chip_text": "3-6 months if stable",
+            "order": 2,
+            "search_terms": [
+              "three",
+              "six",
+              "stable"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-follow_up-3",
+            "chip_text": "sooner if symptom change",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "change"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-follow_up-6",
+            "chip_text": "sooner if needed",
+            "order": 6,
+            "search_terms": [
+              "sooner",
+              "needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-follow_up-8",
+            "chip_text": "sooner if TSH out of range",
+            "order": 8,
+            "search_terms": [
+              "TSH",
+              "range"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypothyroidism-followup-follow_up-9",
+            "chip_text": "6-8 weeks after dose change",
+            "order": 9,
+            "search_terms": [
+              "dose",
+              "change"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "hypothyroidism follow-up",
         "thyroid replacement",
@@ -70242,9 +71701,475 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 12,
+        "relevant_negatives": 3,
+        "exam_findings": 6,
+        "red_flags": 0,
+        "investigations": 3,
+        "plan_phrases": 5,
+        "follow_up": 6
+      },
+      "total_chips": 35,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "endo-hyperthyroidism-followup-symptoms-1",
+            "chip_text": "hyperthyroidism follow-up",
+            "order": 1,
+            "search_terms": [
+              "hyperthyroidism",
+              "overactive",
+              "followup"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-symptoms-2",
+            "chip_text": "palpitations reviewed",
+            "order": 2,
+            "search_terms": [
+              "palpitations",
+              "heart",
+              "racing"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-symptoms-3",
+            "chip_text": "heat intolerance reviewed",
+            "order": 3,
+            "search_terms": [
+              "heat",
+              "intolerance"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-symptoms-4",
+            "chip_text": "tremor reviewed",
+            "order": 4,
+            "search_terms": [
+              "tremor",
+              "shaking"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-symptoms-5",
+            "chip_text": "weight change reviewed",
+            "order": 5,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-symptoms-6",
+            "chip_text": "anxiety or irritability reviewed",
+            "order": 6,
+            "search_terms": [
+              "anxiety",
+              "irritability",
+              "mood"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-symptoms-7",
+            "chip_text": "bowel habit reviewed",
+            "order": 7,
+            "search_terms": [
+              "bowel",
+              "habit",
+              "diarrhoea"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-symptoms-8",
+            "chip_text": "eye symptoms reviewed",
+            "order": 8,
+            "search_terms": [
+              "eye",
+              "visual",
+              "proptosis",
+              "dry"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-symptoms-9",
+            "chip_text": "medication adherence discussed",
+            "order": 9,
+            "search_terms": [
+              "medication",
+              "adherence",
+              "carbimazole"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-symptoms-10",
+            "chip_text": "fatigue and sleep reviewed",
+            "order": 10,
+            "search_terms": [
+              "fatigue",
+              "sleep",
+              "insomnia"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-symptoms-11",
+            "chip_text": "neck discomfort reviewed",
+            "order": 11,
+            "search_terms": [
+              "neck",
+              "discomfort",
+              "goiter"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-symptoms-12",
+            "chip_text": "dyspnoea on exertion reviewed",
+            "order": 12,
+            "search_terms": [
+              "dyspnoea",
+              "SOB",
+              "activity"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "endo-hyperthyroidism-followup-relevant_negatives-1",
+            "chip_text": "no chest pain reported",
+            "order": 1,
+            "search_terms": [
+              "chest",
+              "pain"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-relevant_negatives-2",
+            "chip_text": "no syncope reported",
+            "order": 2,
+            "search_terms": [
+              "syncope",
+              "faint"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-relevant_negatives-3",
+            "chip_text": "no visual loss reported if relevant",
+            "order": 3,
+            "search_terms": [
+              "visual",
+              "loss",
+              "vision"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "endo-hyperthyroidism-followup-exam_findings-1",
+            "chip_text": "pulse documented if measured",
+            "order": 1,
+            "search_terms": [
+              "pulse",
+              "heart",
+              "rate"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-exam_findings-2",
+            "chip_text": "thyroid examination documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "thyroid",
+              "goiter",
+              "bruit"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-exam_findings-3",
+            "chip_text": "eye signs documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "eye",
+              "proptosis",
+              "lid",
+              "lag"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-exam_findings-4",
+            "chip_text": "tremor documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "tremor",
+              "fine"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-exam_findings-5",
+            "chip_text": "weight documented if measured",
+            "order": 5,
+            "search_terms": [
+              "weight",
+              "BMI"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-exam_findings-6",
+            "chip_text": "skin examination documented if assessed",
+            "order": 6,
+            "search_terms": [
+              "skin",
+              "warm",
+              "moist"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "red_flags": [],
+        "investigations": [
+          {
+            "chip_id": "endo-hyperthyroidism-followup-investigations-1",
+            "chip_text": "thyroid function tests reviewed if available",
+            "order": 1,
+            "search_terms": [
+              "TFT",
+              "TSH",
+              "T4",
+              "T3"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-investigations-2",
+            "chip_text": "TSI or antibody levels reviewed if ordered",
+            "order": 2,
+            "search_terms": [
+              "TSI",
+              "TRAb",
+              "antibodies"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-investigations-3",
+            "chip_text": "previous records reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "endo-hyperthyroidism-followup-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-plan_phrases-2",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 2,
+            "search_terms": [
+              "medication",
+              "carbimazole",
+              "beta"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "endocrinology",
+              "surgery"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-plan_phrases-5",
+            "chip_text": "eye care referral documented if clinically indicated",
+            "order": 5,
+            "search_terms": [
+              "eye",
+              "ophthalmology",
+              "thyroid"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "endo-hyperthyroidism-followup-follow_up-1",
+            "chip_text": "4-6 weeks",
+            "order": 1,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-follow_up-2",
+            "chip_text": "6-8 weeks",
+            "order": 2,
+            "search_terms": [
+              "six",
+              "eight",
+              "weeks"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-follow_up-6",
+            "chip_text": "sooner if needed",
+            "order": 6,
+            "search_terms": [
+              "sooner",
+              "needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hyperthyroidism-followup-follow_up-8",
+            "chip_text": "sooner if TFT abnormal",
+            "order": 8,
+            "search_terms": [
+              "TFT",
+              "abnormal"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "hyperthyroidism follow-up",
         "thyroid control",
@@ -70287,9 +72212,429 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 12,
+        "relevant_negatives": 2,
+        "exam_findings": 4,
+        "red_flags": 0,
+        "investigations": 3,
+        "plan_phrases": 6,
+        "follow_up": 4
+      },
+      "total_chips": 31,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "endo-obesity-counseling-documentation-symptoms-1",
+            "chip_text": "weight management documentation",
+            "order": 1,
+            "search_terms": [
+              "weight",
+              "management",
+              "obesity"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-symptoms-2",
+            "chip_text": "BMI documented if measured",
+            "order": 2,
+            "search_terms": [
+              "BMI",
+              "body",
+              "mass",
+              "index"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-symptoms-3",
+            "chip_text": "weight trend reviewed",
+            "order": 3,
+            "search_terms": [
+              "weight",
+              "trend",
+              "gain",
+              "loss"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-symptoms-4",
+            "chip_text": "diet context reviewed",
+            "order": 4,
+            "search_terms": [
+              "diet",
+              "nutrition",
+              "eating"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-symptoms-5",
+            "chip_text": "physical activity context reviewed",
+            "order": 5,
+            "search_terms": [
+              "physical",
+              "activity",
+              "exercise"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-symptoms-6",
+            "chip_text": "sleep context reviewed",
+            "order": 6,
+            "search_terms": [
+              "sleep",
+              "quality",
+              "apnea"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-symptoms-7",
+            "chip_text": "other health conditions context reviewed",
+            "order": 7,
+            "search_terms": [
+              "comorbidity",
+              "diabetes",
+              "HTN",
+              "lipids"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-symptoms-8",
+            "chip_text": "medication history reviewed if relevant",
+            "order": 8,
+            "search_terms": [
+              "medication",
+              "weight",
+              "gain"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-symptoms-9",
+            "chip_text": "eating patterns reviewed",
+            "order": 9,
+            "search_terms": [
+              "eating",
+              "patterns",
+              "binge",
+              "emotional"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-symptoms-10",
+            "chip_text": "weight loss attempts reviewed",
+            "order": 10,
+            "search_terms": [
+              "weight",
+              "loss",
+              "attempts",
+              "history"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-symptoms-11",
+            "chip_text": "mental health context reviewed if relevant",
+            "order": 11,
+            "search_terms": [
+              "mental",
+              "health",
+              "mood"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-symptoms-12",
+            "chip_text": "readiness to change assessed",
+            "order": 12,
+            "search_terms": [
+              "readiness",
+              "change",
+              "motivation"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "endo-obesity-counseling-documentation-relevant_negatives-1",
+            "chip_text": "no acute symptoms reported",
+            "order": 1,
+            "search_terms": [
+              "acute",
+              "symptoms"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-relevant_negatives-2",
+            "chip_text": "no unexplained weight loss reported if applicable",
+            "order": 2,
+            "search_terms": [
+              "weight",
+              "loss",
+              "unexplained"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "endo-obesity-counseling-documentation-exam_findings-1",
+            "chip_text": "blood pressure documented if measured",
+            "order": 1,
+            "search_terms": [
+              "BP",
+              "blood",
+              "pressure"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-exam_findings-2",
+            "chip_text": "waist circumference documented if measured",
+            "order": 2,
+            "search_terms": [
+              "waist",
+              "circumference"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-exam_findings-3",
+            "chip_text": "weight and BMI documented if measured",
+            "order": 3,
+            "search_terms": [
+              "weight",
+              "BMI"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-exam_findings-4",
+            "chip_text": "vitals documented if measured",
+            "order": 4,
+            "search_terms": [
+              "vitals",
+              "pulse",
+              "temp"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "red_flags": [],
+        "investigations": [
+          {
+            "chip_id": "endo-obesity-counseling-documentation-investigations-1",
+            "chip_text": "HbA1c or glucose reviewed if ordered",
+            "order": 1,
+            "search_terms": [
+              "HbA1c",
+              "glucose",
+              "diabetes"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-investigations-2",
+            "chip_text": "lipid profile reviewed if ordered",
+            "order": 2,
+            "search_terms": [
+              "lipid",
+              "cholesterol"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-investigations-3",
+            "chip_text": "thyroid function reviewed if ordered",
+            "order": 3,
+            "search_terms": [
+              "TSH",
+              "TFT"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "endo-obesity-counseling-documentation-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-plan_phrases-2",
+            "chip_text": "lifestyle counseling documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "lifestyle",
+              "diet",
+              "exercise"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "dietician",
+              "endocrinology"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-plan_phrases-5",
+            "chip_text": "goal setting documented if discussed",
+            "order": 5,
+            "search_terms": [
+              "goal",
+              "target",
+              "weight"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-plan_phrases-6",
+            "chip_text": "pharmacotherapy plan documented if clinician decided",
+            "order": 6,
+            "search_terms": [
+              "medication",
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "endo-obesity-counseling-documentation-follow_up-1",
+            "chip_text": "4-6 weeks",
+            "order": 1,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-follow_up-2",
+            "chip_text": "3 months",
+            "order": 2,
+            "search_terms": [
+              "three",
+              "months"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-follow_up-3",
+            "chip_text": "sooner if needed",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-obesity-counseling-documentation-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "obesity counseling",
         "weight management",
@@ -70336,9 +72681,464 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 11,
+        "relevant_negatives": 3,
+        "exam_findings": 5,
+        "red_flags": 0,
+        "investigations": 3,
+        "plan_phrases": 7,
+        "follow_up": 5
+      },
+      "total_chips": 34,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "endo-hypoglycemia-review-symptoms-1",
+            "chip_text": "hypoglycemia review",
+            "order": 1,
+            "search_terms": [
+              "hypoglycemia",
+              "hypo",
+              "low",
+              "sugar"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-symptoms-2",
+            "chip_text": "episode frequency reviewed",
+            "order": 2,
+            "search_terms": [
+              "frequency",
+              "how often"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-symptoms-3",
+            "chip_text": "timing and context documented",
+            "order": 3,
+            "search_terms": [
+              "timing",
+              "context",
+              "when"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-symptoms-4",
+            "chip_text": "symptoms reviewed",
+            "order": 4,
+            "search_terms": [
+              "symptoms",
+              "sweating",
+              "tremor",
+              "palpitations"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-symptoms-5",
+            "chip_text": "glucose values reviewed if available",
+            "order": 5,
+            "search_terms": [
+              "glucose",
+              "values",
+              "levels"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-symptoms-6",
+            "chip_text": "medication context reviewed",
+            "order": 6,
+            "search_terms": [
+              "medication",
+              "insulin",
+              "sulfonylurea"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-symptoms-7",
+            "chip_text": "meal and activity context reviewed",
+            "order": 7,
+            "search_terms": [
+              "meal",
+              "activity",
+              "exercise",
+              "missed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-symptoms-8",
+            "chip_text": "awareness symptoms reviewed",
+            "order": 8,
+            "search_terms": [
+              "awareness",
+              "warning",
+              "symptoms"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-symptoms-9",
+            "chip_text": "driving and safety context reviewed",
+            "order": 9,
+            "search_terms": [
+              "driving",
+              "safety",
+              "DVLA"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-symptoms-10",
+            "chip_text": "alcohol context reviewed if relevant",
+            "order": 10,
+            "search_terms": [
+              "alcohol",
+              "drinking"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-symptoms-11",
+            "chip_text": "blood glucose level during episode reviewed",
+            "order": 11,
+            "search_terms": [
+              "glucose",
+              "level",
+              "episode"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "endo-hypoglycemia-review-relevant_negatives-1",
+            "chip_text": "no loss of consciousness reported",
+            "order": 1,
+            "search_terms": [
+              "loss",
+              "consciousness",
+              "LOC"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-relevant_negatives-2",
+            "chip_text": "no seizure reported",
+            "order": 2,
+            "search_terms": [
+              "seizure",
+              "fit",
+              "convulsion"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-relevant_negatives-3",
+            "chip_text": "no severe hypoglycemia requiring assistance reported if applicable",
+            "order": 3,
+            "search_terms": [
+              "severe",
+              "assistance",
+              "help"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "endo-hypoglycemia-review-exam_findings-1",
+            "chip_text": "vitals documented if measured",
+            "order": 1,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-exam_findings-2",
+            "chip_text": "glucose level documented if measured",
+            "order": 2,
+            "search_terms": [
+              "glucose",
+              "bedside",
+              "BM"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-exam_findings-3",
+            "chip_text": "general appearance documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "appearance",
+              "well"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-exam_findings-4",
+            "chip_text": "glucose meter reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "meter",
+              "device",
+              "reading"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-exam_findings-5",
+            "chip_text": "weight documented if measured",
+            "order": 5,
+            "search_terms": [
+              "weight",
+              "BMI"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "red_flags": [],
+        "investigations": [
+          {
+            "chip_id": "endo-hypoglycemia-review-investigations-1",
+            "chip_text": "glucose log reviewed if available",
+            "order": 1,
+            "search_terms": [
+              "glucose",
+              "log",
+              "diary"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-investigations-2",
+            "chip_text": "HbA1c reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "HbA1c",
+              "A1c"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-investigations-3",
+            "chip_text": "medication list reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "medication",
+              "list",
+              "insulin"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "endo-hypoglycemia-review-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-plan_phrases-2",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 2,
+            "search_terms": [
+              "medication",
+              "adjustment"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-plan_phrases-3",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 3,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-plan_phrases-4",
+            "chip_text": "glucose monitoring plan discussed if applicable",
+            "order": 4,
+            "search_terms": [
+              "glucose",
+              "monitoring",
+              "frequency"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-plan_phrases-6",
+            "chip_text": "education documented if discussed",
+            "order": 6,
+            "search_terms": [
+              "education",
+              "hypo",
+              "awareness"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-plan_phrases-7",
+            "chip_text": "glucagon kit discussed if applicable",
+            "order": 7,
+            "search_terms": [
+              "glucagon",
+              "kit",
+              "emergency"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "endo-hypoglycemia-review-follow_up-1",
+            "chip_text": "1-2 weeks",
+            "order": 1,
+            "search_terms": [
+              "one",
+              "two",
+              "weeks"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-follow_up-2",
+            "chip_text": "2-4 weeks",
+            "order": 2,
+            "search_terms": [
+              "two",
+              "four",
+              "weeks"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-follow_up-3",
+            "chip_text": "sooner if recurrent",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "recurrent"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-hypoglycemia-review-follow_up-6",
+            "chip_text": "sooner if needed",
+            "order": 6,
+            "search_terms": [
+              "sooner",
+              "needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "hypoglycemia",
         "low blood sugar",
@@ -70383,9 +73183,454 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 10,
+        "relevant_negatives": 2,
+        "exam_findings": 5,
+        "red_flags": 0,
+        "investigations": 3,
+        "plan_phrases": 7,
+        "follow_up": 6
+      },
+      "total_chips": 33,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "endo-pcos-metabolic-review-symptoms-1",
+            "chip_text": "PCOS metabolic review",
+            "order": 1,
+            "search_terms": [
+              "PCOS",
+              "polycystic",
+              "ovarian"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-symptoms-2",
+            "chip_text": "cycle pattern reviewed",
+            "order": 2,
+            "search_terms": [
+              "cycle",
+              "menstrual",
+              "period"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-symptoms-3",
+            "chip_text": "weight and BMI context reviewed",
+            "order": 3,
+            "search_terms": [
+              "weight",
+              "BMI",
+              "obesity"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-symptoms-4",
+            "chip_text": "acne and hirsutism context reviewed",
+            "order": 4,
+            "search_terms": [
+              "acne",
+              "hirsutism",
+              "hair",
+              "excess"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-symptoms-5",
+            "chip_text": "glucose and insulin resistance context reviewed",
+            "order": 5,
+            "search_terms": [
+              "glucose",
+              "insulin",
+              "resistance",
+              "HOMA"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-symptoms-6",
+            "chip_text": "fertility concern reviewed if relevant",
+            "order": 6,
+            "search_terms": [
+              "fertility",
+              "conception",
+              "pregnancy"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-symptoms-7",
+            "chip_text": "lifestyle context reviewed",
+            "order": 7,
+            "search_terms": [
+              "lifestyle",
+              "diet",
+              "exercise"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-symptoms-8",
+            "chip_text": "skin changes reviewed",
+            "order": 8,
+            "search_terms": [
+              "skin",
+              "acanthosis",
+              "nigricans",
+              "acne"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-symptoms-9",
+            "chip_text": "mood and mental health reviewed",
+            "order": 9,
+            "search_terms": [
+              "mood",
+              "anxiety",
+              "depression"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-symptoms-10",
+            "chip_text": "blood pressure context reviewed",
+            "order": 10,
+            "search_terms": [
+              "BP",
+              "hypertension"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "endo-pcos-metabolic-review-relevant_negatives-1",
+            "chip_text": "no acute pelvic pain reported if relevant",
+            "order": 1,
+            "search_terms": [
+              "pelvic",
+              "pain",
+              "acute"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-relevant_negatives-2",
+            "chip_text": "no galactorrhea reported if relevant",
+            "order": 2,
+            "search_terms": [
+              "galactorrhea",
+              "nipple",
+              "discharge"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "endo-pcos-metabolic-review-exam_findings-1",
+            "chip_text": "weight and BMI documented if measured",
+            "order": 1,
+            "search_terms": [
+              "weight",
+              "BMI"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-exam_findings-2",
+            "chip_text": "blood pressure documented if measured",
+            "order": 2,
+            "search_terms": [
+              "BP",
+              "blood",
+              "pressure"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-exam_findings-3",
+            "chip_text": "acne and hirsutism documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "acne",
+              "hirsutism",
+              "Ferriman"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-exam_findings-4",
+            "chip_text": "waist circumference documented if measured",
+            "order": 4,
+            "search_terms": [
+              "waist",
+              "obesity",
+              "central"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-exam_findings-5",
+            "chip_text": "acanthosis nigricans documented if assessed",
+            "order": 5,
+            "search_terms": [
+              "acanthosis",
+              "nigricans"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "red_flags": [],
+        "investigations": [
+          {
+            "chip_id": "endo-pcos-metabolic-review-investigations-1",
+            "chip_text": "HbA1c or glucose reviewed if ordered",
+            "order": 1,
+            "search_terms": [
+              "HbA1c",
+              "glucose",
+              "OGTT"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-investigations-2",
+            "chip_text": "lipid profile reviewed if ordered",
+            "order": 2,
+            "search_terms": [
+              "lipid",
+              "cholesterol",
+              "LDL"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-investigations-3",
+            "chip_text": "hormonal profile reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "hormonal",
+              "testosterone",
+              "LH",
+              "FSH"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "endo-pcos-metabolic-review-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-plan_phrases-2",
+            "chip_text": "lifestyle advice documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "lifestyle",
+              "diet",
+              "exercise"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-plan_phrases-3",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "medication",
+              "metformin",
+              "OCP"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-plan_phrases-4",
+            "chip_text": "referral documented if clinician decided",
+            "order": 4,
+            "search_terms": [
+              "referral",
+              "endocrinology",
+              "gynaecology"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-plan_phrases-6",
+            "chip_text": "fertility referral discussed if applicable",
+            "order": 6,
+            "search_terms": [
+              "fertility",
+              "conception",
+              "IVF"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-plan_phrases-7",
+            "chip_text": "metformin plan discussed if applicable",
+            "order": 7,
+            "search_terms": [
+              "metformin",
+              "insulin",
+              "resistance"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "endo-pcos-metabolic-review-follow_up-1",
+            "chip_text": "3-6 months",
+            "order": 1,
+            "search_terms": [
+              "three",
+              "six",
+              "months"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-follow_up-2",
+            "chip_text": "6-12 months if stable",
+            "order": 2,
+            "search_terms": [
+              "six",
+              "twelve"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-follow_up-3",
+            "chip_text": "sooner if symptom change",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "change"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-follow_up-6",
+            "chip_text": "sooner if needed",
+            "order": 6,
+            "search_terms": [
+              "sooner",
+              "needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pcos-metabolic-review-follow_up-8",
+            "chip_text": "sooner if pregnancy desired",
+            "order": 8,
+            "search_terms": [
+              "pregnancy",
+              "fertility"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "PCOS",
         "polycystic ovary",
@@ -70430,9 +73675,491 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 10,
+        "relevant_negatives": 1,
+        "exam_findings": 5,
+        "red_flags": 0,
+        "investigations": 4,
+        "plan_phrases": 8,
+        "follow_up": 8
+      },
+      "total_chips": 36,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "endo-osteoporosis-followup-symptoms-1",
+            "chip_text": "osteoporosis follow-up",
+            "order": 1,
+            "search_terms": [
+              "osteoporosis",
+              "followup",
+              "bone"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-symptoms-2",
+            "chip_text": "fracture history reviewed",
+            "order": 2,
+            "search_terms": [
+              "fracture",
+              "fragility",
+              "broken"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-symptoms-3",
+            "chip_text": "falls history reviewed",
+            "order": 3,
+            "search_terms": [
+              "falls",
+              "balance",
+              "risk"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-symptoms-4",
+            "chip_text": "back pain and height loss reviewed",
+            "order": 4,
+            "search_terms": [
+              "back",
+              "pain",
+              "height",
+              "loss"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-symptoms-5",
+            "chip_text": "calcium and vitamin D context reviewed",
+            "order": 5,
+            "search_terms": [
+              "calcium",
+              "vitamin",
+              "D",
+              "supplement"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-symptoms-6",
+            "chip_text": "medication adherence discussed",
+            "order": 6,
+            "search_terms": [
+              "medication",
+              "adherence",
+              "bisphosphonate"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-symptoms-7",
+            "chip_text": "side effects reviewed if relevant",
+            "order": 7,
+            "search_terms": [
+              "side",
+              "effects",
+              "GI",
+              "jaw"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-symptoms-8",
+            "chip_text": "previous DEXA results reviewed if available",
+            "order": 8,
+            "search_terms": [
+              "DEXA",
+              "previous",
+              "T-score"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-symptoms-9",
+            "chip_text": "secondary causes reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "secondary",
+              "causes",
+              "steroid"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-symptoms-10",
+            "chip_text": "family history of osteoporosis reviewed",
+            "order": 10,
+            "search_terms": [
+              "family",
+              "osteoporosis",
+              "hip"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "endo-osteoporosis-followup-relevant_negatives-1",
+            "chip_text": "no new fragility fracture reported",
+            "order": 1,
+            "search_terms": [
+              "fragility",
+              "fracture",
+              "new"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "endo-osteoporosis-followup-exam_findings-1",
+            "chip_text": "gait and falls risk documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "gait",
+              "falls",
+              "balance"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-exam_findings-2",
+            "chip_text": "spine tenderness documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "spine",
+              "vertebral",
+              "tenderness"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-exam_findings-3",
+            "chip_text": "weight documented if measured",
+            "order": 3,
+            "search_terms": [
+              "weight",
+              "BMI"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-exam_findings-4",
+            "chip_text": "kyphosis documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "kyphosis",
+              "posture",
+              "spine"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-exam_findings-5",
+            "chip_text": "height measured if documented",
+            "order": 5,
+            "search_terms": [
+              "height",
+              "loss",
+              "measurement"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "red_flags": [],
+        "investigations": [
+          {
+            "chip_id": "endo-osteoporosis-followup-investigations-1",
+            "chip_text": "DEXA report reviewed if available",
+            "order": 1,
+            "search_terms": [
+              "DEXA",
+              "DXA",
+              "bone",
+              "density"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-investigations-2",
+            "chip_text": "calcium and vitamin D result reviewed if ordered",
+            "order": 2,
+            "search_terms": [
+              "calcium",
+              "vitamin",
+              "D"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-investigations-3",
+            "chip_text": "renal function reviewed if ordered",
+            "order": 3,
+            "search_terms": [
+              "renal",
+              "eGFR",
+              "creatinine"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-investigations-4",
+            "chip_text": "previous records reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "endo-osteoporosis-followup-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-plan_phrases-2",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 2,
+            "search_terms": [
+              "medication",
+              "bisphosphonate",
+              "denosumab"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-plan_phrases-3",
+            "chip_text": "supplement plan documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "calcium",
+              "vitamin",
+              "D"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-plan_phrases-4",
+            "chip_text": "referral documented if clinician arranged",
+            "order": 4,
+            "search_terms": [
+              "referral",
+              "bone",
+              "DXA"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-plan_phrases-6",
+            "chip_text": "falls prevention discussed if applicable",
+            "order": 6,
+            "search_terms": [
+              "falls",
+              "prevention",
+              "balance"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-plan_phrases-7",
+            "chip_text": "bone health advice documented if discussed",
+            "order": 7,
+            "search_terms": [
+              "bone",
+              "health",
+              "calcium",
+              "vitamin"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-plan_phrases-8",
+            "chip_text": "vitamin D supplementation discussed if applicable",
+            "order": 8,
+            "search_terms": [
+              "vitamin",
+              "D",
+              "supplement"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "endo-osteoporosis-followup-follow_up-1",
+            "chip_text": "1 year if stable",
+            "order": 1,
+            "search_terms": [
+              "one",
+              "year"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-follow_up-2",
+            "chip_text": "2 years on therapy",
+            "order": 2,
+            "search_terms": [
+              "two",
+              "years"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-follow_up-3",
+            "chip_text": "sooner if new fracture",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "fracture"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-follow_up-6",
+            "chip_text": "sooner if needed",
+            "order": 6,
+            "search_terms": [
+              "sooner",
+              "needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-follow_up-7",
+            "chip_text": "yearly",
+            "order": 7,
+            "search_terms": [
+              "yearly",
+              "annual"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-follow_up-8",
+            "chip_text": "sooner if new fracture risk",
+            "order": 8,
+            "search_terms": [
+              "fracture",
+              "risk"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-osteoporosis-followup-follow_up-9",
+            "chip_text": "sooner if fracture",
+            "order": 9,
+            "search_terms": [
+              "fracture"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "osteoporosis",
         "bone density follow-up",
@@ -70477,9 +74204,426 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 10,
+        "relevant_negatives": 1,
+        "exam_findings": 4,
+        "red_flags": 0,
+        "investigations": 4,
+        "plan_phrases": 5,
+        "follow_up": 7
+      },
+      "total_chips": 31,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-1",
+            "chip_text": "adrenal incidentaloma documentation",
+            "order": 1,
+            "search_terms": [
+              "adrenal",
+              "incidentaloma",
+              "mass"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-2",
+            "chip_text": "imaging finding reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "imaging",
+              "CT",
+              "MRI",
+              "finding"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-3",
+            "chip_text": "symptoms reviewed",
+            "order": 3,
+            "search_terms": [
+              "symptoms",
+              "headache",
+              "palpitations"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-4",
+            "chip_text": "blood pressure context reviewed",
+            "order": 4,
+            "search_terms": [
+              "BP",
+              "blood",
+              "pressure",
+              "hypertension"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-5",
+            "chip_text": "weight change reviewed",
+            "order": 5,
+            "search_terms": [
+              "weight",
+              "loss",
+              "gain"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-6",
+            "chip_text": "bruising or striae context reviewed",
+            "order": 6,
+            "search_terms": [
+              "bruising",
+              "striae",
+              "cortisol"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-7",
+            "chip_text": "weakness and fatigue reviewed",
+            "order": 7,
+            "search_terms": [
+              "weakness",
+              "fatigue"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-8",
+            "chip_text": "electrolyte context reviewed if available",
+            "order": 8,
+            "search_terms": [
+              "electrolytes",
+              "potassium",
+              "sodium"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-9",
+            "chip_text": "family history reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "family",
+              "MEN",
+              "adrenal"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-10",
+            "chip_text": "medication history reviewed if relevant",
+            "order": 10,
+            "search_terms": [
+              "medication",
+              "steroid",
+              "exogenous"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-relevant_negatives-1",
+            "chip_text": "no acute symptoms reported if applicable",
+            "order": 1,
+            "search_terms": [
+              "acute",
+              "symptoms",
+              "crisis"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-exam_findings-1",
+            "chip_text": "blood pressure documented if measured",
+            "order": 1,
+            "search_terms": [
+              "BP",
+              "blood",
+              "pressure"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-exam_findings-2",
+            "chip_text": "general appearance documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "appearance",
+              "cushingoid"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-exam_findings-3",
+            "chip_text": "weight documented if measured",
+            "order": 3,
+            "search_terms": [
+              "weight",
+              "BMI"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-exam_findings-4",
+            "chip_text": "signs of hormone excess documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "Cushing",
+              "aldosterone",
+              "signs"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "red_flags": [],
+        "investigations": [
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-investigations-1",
+            "chip_text": "imaging report reviewed if available",
+            "order": 1,
+            "search_terms": [
+              "CT",
+              "MRI",
+              "imaging",
+              "report"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-investigations-2",
+            "chip_text": "hormonal workup reviewed if ordered",
+            "order": 2,
+            "search_terms": [
+              "cortisol",
+              "aldosterone",
+              "metanephrines"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-investigations-3",
+            "chip_text": "electrolytes reviewed if ordered",
+            "order": 3,
+            "search_terms": [
+              "electrolytes",
+              "potassium",
+              "sodium"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-investigations-4",
+            "chip_text": "previous records reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-plan_phrases-2",
+            "chip_text": "referral documented if clinician arranged",
+            "order": 2,
+            "search_terms": [
+              "referral",
+              "endocrinology"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-plan_phrases-3",
+            "chip_text": "follow-up imaging discussed if applicable",
+            "order": 3,
+            "search_terms": [
+              "repeat",
+              "imaging",
+              "interval"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-plan_phrases-5",
+            "chip_text": "hormonal workup plan documented if clinician decided",
+            "order": 5,
+            "search_terms": [
+              "workup",
+              "cortisol",
+              "metanephrines"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-1",
+            "chip_text": "3-6 months",
+            "order": 1,
+            "search_terms": [
+              "three",
+              "six",
+              "months"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-2",
+            "chip_text": "6-12 months for imaging",
+            "order": 2,
+            "search_terms": [
+              "six",
+              "twelve",
+              "imaging"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-3",
+            "chip_text": "sooner if symptoms develop",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "symptoms"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-6",
+            "chip_text": "sooner if needed",
+            "order": 6,
+            "search_terms": [
+              "sooner",
+              "needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-8",
+            "chip_text": "sooner if new symptoms",
+            "order": 8,
+            "search_terms": [
+              "new",
+              "symptoms"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-9",
+            "chip_text": "6-12 months",
+            "order": 9,
+            "search_terms": [
+              "six",
+              "twelve",
+              "months"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "adrenal incidentaloma",
         "adrenal mass",
@@ -70526,9 +74670,440 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 2,
+        "exam_findings": 6,
+        "red_flags": 0,
+        "investigations": 3,
+        "plan_phrases": 5,
+        "follow_up": 7
+      },
+      "total_chips": 32,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-symptoms-1",
+            "chip_text": "pituitary symptoms documentation",
+            "order": 1,
+            "search_terms": [
+              "pituitary",
+              "symptoms"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-symptoms-2",
+            "chip_text": "headache reviewed",
+            "order": 2,
+            "search_terms": [
+              "headache"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-symptoms-3",
+            "chip_text": "visual symptoms reviewed",
+            "order": 3,
+            "search_terms": [
+              "visual",
+              "vision",
+              "field"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-symptoms-4",
+            "chip_text": "menstrual or sexual function context reviewed if clinically appropriate",
+            "order": 4,
+            "search_terms": [
+              "menstrual",
+              "period",
+              "libido",
+              "sexual",
+              "erectile"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-symptoms-5",
+            "chip_text": "growth and weight changes reviewed",
+            "order": 5,
+            "search_terms": [
+              "growth",
+              "weight",
+              "acromegaly"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-symptoms-6",
+            "chip_text": "fatigue and weakness reviewed",
+            "order": 6,
+            "search_terms": [
+              "fatigue",
+              "weakness",
+              "tiredness"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-symptoms-7",
+            "chip_text": "galactorrhea context reviewed if relevant",
+            "order": 7,
+            "search_terms": [
+              "galactorrhea",
+              "prolactin",
+              "breast"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-symptoms-8",
+            "chip_text": "thirst and urine output reviewed if relevant",
+            "order": 8,
+            "search_terms": [
+              "thirst",
+              "polydipsia",
+              "DI"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-symptoms-9",
+            "chip_text": "bone and joint pain reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "bone",
+              "joint",
+              "pain",
+              "acromegaly"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-relevant_negatives-1",
+            "chip_text": "no acute visual loss reported if applicable",
+            "order": 1,
+            "search_terms": [
+              "visual",
+              "loss",
+              "acute"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-relevant_negatives-2",
+            "chip_text": "no seizure reported if applicable",
+            "order": 2,
+            "search_terms": [
+              "seizure",
+              "fit"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-exam_findings-1",
+            "chip_text": "visual fields documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "visual",
+              "fields",
+              "perimetry"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-exam_findings-2",
+            "chip_text": "neurological screen documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "neurological",
+              "CN",
+              "cranial"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-exam_findings-3",
+            "chip_text": "general appearance documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "appearance",
+              "acromegaly",
+              "Cushing"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-exam_findings-4",
+            "chip_text": "visual acuity documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "visual",
+              "acuity",
+              "Snellen"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-exam_findings-5",
+            "chip_text": "hand and foot size documented if relevant",
+            "order": 5,
+            "search_terms": [
+              "hand",
+              "foot",
+              "acromegaly"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-exam_findings-6",
+            "chip_text": "visual field testing documented if assessed",
+            "order": 6,
+            "search_terms": [
+              "visual",
+              "field",
+              "perimetry"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "red_flags": [],
+        "investigations": [
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-investigations-1",
+            "chip_text": "hormonal profile reviewed if ordered",
+            "order": 1,
+            "search_terms": [
+              "hormonal",
+              "prolactin",
+              "GH",
+              "ACTH",
+              "cortisol"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-investigations-2",
+            "chip_text": "pituitary imaging reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "MRI",
+              "pituitary",
+              "sella"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-investigations-3",
+            "chip_text": "previous records reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-plan_phrases-2",
+            "chip_text": "referral documented if clinician arranged",
+            "order": 2,
+            "search_terms": [
+              "referral",
+              "endocrinology",
+              "neurosurgery"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-plan_phrases-3",
+            "chip_text": "follow-up documented if arranged",
+            "order": 3,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-plan_phrases-4",
+            "chip_text": "multi-specialty referral documented if clinician arranged",
+            "order": 4,
+            "search_terms": [
+              "MDT",
+              "pituitary",
+              "neurosurgery"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-plan_phrases-5",
+            "chip_text": "hormonal replacement discussed if applicable",
+            "order": 5,
+            "search_terms": [
+              "hormone",
+              "replacement",
+              "pituitary"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-follow_up-1",
+            "chip_text": "3-6 months",
+            "order": 1,
+            "search_terms": [
+              "three",
+              "six",
+              "months"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-follow_up-2",
+            "chip_text": "6-12 months if stable",
+            "order": 2,
+            "search_terms": [
+              "six",
+              "twelve"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-follow_up-3",
+            "chip_text": "sooner if new symptoms",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "new"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-follow_up-6",
+            "chip_text": "sooner if needed",
+            "order": 6,
+            "search_terms": [
+              "sooner",
+              "needed"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-follow_up-8",
+            "chip_text": "sooner if visual change",
+            "order": 8,
+            "search_terms": [
+              "visual",
+              "change"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          },
+          {
+            "chip_id": "endo-pituitary-symptoms-documentation-follow_up-9",
+            "chip_text": "6-12 months",
+            "order": 9,
+            "search_terms": [
+              "six",
+              "twelve",
+              "months"
+            ],
+            "tags": [
+              "endocrinology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "pituitary symptoms",
         "pituitary tumor",
@@ -77071,6 +81646,4616 @@
         }
       ]
     },
+    "endo-adrenal-incidentaloma-referral": {
+      "symptoms": [
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-1",
+          "chip_text": "adrenal incidentaloma documentation",
+          "order": 1,
+          "search_terms": [
+            "adrenal",
+            "incidentaloma",
+            "mass"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-2",
+          "chip_text": "imaging finding reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "imaging",
+            "CT",
+            "MRI",
+            "finding"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-3",
+          "chip_text": "symptoms reviewed",
+          "order": 3,
+          "search_terms": [
+            "symptoms",
+            "headache",
+            "palpitations"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-4",
+          "chip_text": "blood pressure context reviewed",
+          "order": 4,
+          "search_terms": [
+            "BP",
+            "blood",
+            "pressure",
+            "hypertension"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-5",
+          "chip_text": "weight change reviewed",
+          "order": 5,
+          "search_terms": [
+            "weight",
+            "loss",
+            "gain"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-6",
+          "chip_text": "bruising or striae context reviewed",
+          "order": 6,
+          "search_terms": [
+            "bruising",
+            "striae",
+            "cortisol"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-7",
+          "chip_text": "weakness and fatigue reviewed",
+          "order": 7,
+          "search_terms": [
+            "weakness",
+            "fatigue"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-8",
+          "chip_text": "electrolyte context reviewed if available",
+          "order": 8,
+          "search_terms": [
+            "electrolytes",
+            "potassium",
+            "sodium"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-9",
+          "chip_text": "family history reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "family",
+            "MEN",
+            "adrenal"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-symptoms-10",
+          "chip_text": "medication history reviewed if relevant",
+          "order": 10,
+          "search_terms": [
+            "medication",
+            "steroid",
+            "exogenous"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-relevant_negatives-1",
+          "chip_text": "no acute symptoms reported if applicable",
+          "order": 1,
+          "search_terms": [
+            "acute",
+            "symptoms",
+            "crisis"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-exam_findings-1",
+          "chip_text": "blood pressure documented if measured",
+          "order": 1,
+          "search_terms": [
+            "BP",
+            "blood",
+            "pressure"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-exam_findings-2",
+          "chip_text": "general appearance documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "appearance",
+            "cushingoid"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-exam_findings-3",
+          "chip_text": "weight documented if measured",
+          "order": 3,
+          "search_terms": [
+            "weight",
+            "BMI"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-exam_findings-4",
+          "chip_text": "signs of hormone excess documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "Cushing",
+            "aldosterone",
+            "signs"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "red_flags": [],
+      "investigations": [
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-investigations-1",
+          "chip_text": "imaging report reviewed if available",
+          "order": 1,
+          "search_terms": [
+            "CT",
+            "MRI",
+            "imaging",
+            "report"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-investigations-2",
+          "chip_text": "hormonal workup reviewed if ordered",
+          "order": 2,
+          "search_terms": [
+            "cortisol",
+            "aldosterone",
+            "metanephrines"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-investigations-3",
+          "chip_text": "electrolytes reviewed if ordered",
+          "order": 3,
+          "search_terms": [
+            "electrolytes",
+            "potassium",
+            "sodium"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-investigations-4",
+          "chip_text": "previous records reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-plan_phrases-2",
+          "chip_text": "referral documented if clinician arranged",
+          "order": 2,
+          "search_terms": [
+            "referral",
+            "endocrinology"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-plan_phrases-3",
+          "chip_text": "follow-up imaging discussed if applicable",
+          "order": 3,
+          "search_terms": [
+            "repeat",
+            "imaging",
+            "interval"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-plan_phrases-5",
+          "chip_text": "hormonal workup plan documented if clinician decided",
+          "order": 5,
+          "search_terms": [
+            "workup",
+            "cortisol",
+            "metanephrines"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-1",
+          "chip_text": "3-6 months",
+          "order": 1,
+          "search_terms": [
+            "three",
+            "six",
+            "months"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-2",
+          "chip_text": "6-12 months for imaging",
+          "order": 2,
+          "search_terms": [
+            "six",
+            "twelve",
+            "imaging"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-3",
+          "chip_text": "sooner if symptoms develop",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "symptoms"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-6",
+          "chip_text": "sooner if needed",
+          "order": 6,
+          "search_terms": [
+            "sooner",
+            "needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-8",
+          "chip_text": "sooner if new symptoms",
+          "order": 8,
+          "search_terms": [
+            "new",
+            "symptoms"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-adrenal-incidentaloma-referral-follow_up-9",
+          "chip_text": "6-12 months",
+          "order": 9,
+          "search_terms": [
+            "six",
+            "twelve",
+            "months"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ]
+    },
+    "endo-diabetes-followup": {
+      "symptoms": [
+        {
+          "chip_id": "endo-diabetes-followup-symptoms-1",
+          "chip_text": "diabetes follow-up",
+          "order": 1,
+          "search_terms": [
+            "diabetes",
+            "followup",
+            "DM"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-symptoms-2",
+          "chip_text": "home glucose readings reviewed",
+          "order": 2,
+          "search_terms": [
+            "home",
+            "glucose",
+            "SMBG",
+            "readings"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-symptoms-3",
+          "chip_text": "HbA1c trend reviewed",
+          "order": 3,
+          "search_terms": [
+            "HbA1c",
+            "A1c",
+            "trend"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-symptoms-4",
+          "chip_text": "medication adherence discussed",
+          "order": 4,
+          "search_terms": [
+            "medication",
+            "adherence",
+            "compliance"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-symptoms-5",
+          "chip_text": "lifestyle context reviewed",
+          "order": 5,
+          "search_terms": [
+            "lifestyle",
+            "diet",
+            "exercise"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-symptoms-6",
+          "chip_text": "hypoglycemia symptoms reviewed",
+          "order": 6,
+          "search_terms": [
+            "hypoglycemia",
+            "hypo",
+            "low"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-symptoms-7",
+          "chip_text": "foot symptoms reviewed",
+          "order": 7,
+          "search_terms": [
+            "foot",
+            "ulcer",
+            "wound"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-symptoms-8",
+          "chip_text": "visual symptoms reviewed",
+          "order": 8,
+          "search_terms": [
+            "visual",
+            "vision",
+            "eyes"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-symptoms-9",
+          "chip_text": "neuropathy symptoms reviewed",
+          "order": 9,
+          "search_terms": [
+            "neuropathy",
+            "numbness",
+            "tingling"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-symptoms-10",
+          "chip_text": "kidney function context reviewed if relevant",
+          "order": 10,
+          "search_terms": [
+            "kidney",
+            "renal",
+            "nephropathy"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-symptoms-11",
+          "chip_text": "cardiovascular risk context reviewed if relevant",
+          "order": 11,
+          "search_terms": [
+            "cardiac",
+            "CVD",
+            "risk"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "endo-diabetes-followup-relevant_negatives-1",
+          "chip_text": "no hypoglycemia symptoms reported",
+          "order": 1,
+          "search_terms": [
+            "hypoglycemia",
+            "hypo"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-relevant_negatives-2",
+          "chip_text": "no foot ulcers reported",
+          "order": 2,
+          "search_terms": [
+            "foot",
+            "ulcer",
+            "wound"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-relevant_negatives-3",
+          "chip_text": "no acute infection symptoms reported",
+          "order": 3,
+          "search_terms": [
+            "infection",
+            "fever",
+            "UTI"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-relevant_negatives-4",
+          "chip_text": "no visual symptoms reported",
+          "order": 4,
+          "search_terms": [
+            "visual",
+            "vision",
+            "blurred"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-relevant_negatives-5",
+          "chip_text": "no chest pain reported if relevant",
+          "order": 5,
+          "search_terms": [
+            "chest",
+            "pain",
+            "cardiac"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-relevant_negatives-6",
+          "chip_text": "no shortness of breath reported if relevant",
+          "order": 6,
+          "search_terms": [
+            "SOB",
+            "breathlessness"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "endo-diabetes-followup-exam_findings-1",
+          "chip_text": "weight and BMI documented if measured",
+          "order": 1,
+          "search_terms": [
+            "weight",
+            "BMI"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-exam_findings-2",
+          "chip_text": "blood pressure documented if measured",
+          "order": 2,
+          "search_terms": [
+            "BP",
+            "blood",
+            "pressure"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-exam_findings-3",
+          "chip_text": "foot examination documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "foot",
+            "exam",
+            "monofilament"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-exam_findings-4",
+          "chip_text": "peripheral pulses documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "pulses",
+            "DP",
+            "PT"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-exam_findings-5",
+          "chip_text": "sensation documented if assessed",
+          "order": 5,
+          "search_terms": [
+            "sensation",
+            "monofilament",
+            "neuropathy"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-exam_findings-6",
+          "chip_text": "injection sites documented if assessed",
+          "order": 6,
+          "search_terms": [
+            "injection",
+            "site",
+            "insulin"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-exam_findings-7",
+          "chip_text": "retinal examination documented if assessed",
+          "order": 7,
+          "search_terms": [
+            "retinal",
+            "eye",
+            "fundoscopy"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-exam_findings-8",
+          "chip_text": "cardiac examination documented if assessed",
+          "order": 8,
+          "search_terms": [
+            "cardiac",
+            "heart",
+            "CVS"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-exam_findings-9",
+          "chip_text": "foot pulses documented if assessed",
+          "order": 9,
+          "search_terms": [
+            "foot",
+            "pulses",
+            "DP"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "red_flags": [],
+      "investigations": [
+        {
+          "chip_id": "endo-diabetes-followup-investigations-1",
+          "chip_text": "HbA1c reviewed if available",
+          "order": 1,
+          "search_terms": [
+            "HbA1c",
+            "A1c"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-investigations-2",
+          "chip_text": "renal function reviewed if ordered",
+          "order": 2,
+          "search_terms": [
+            "renal",
+            "kidney",
+            "eGFR",
+            "creatinine"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-investigations-3",
+          "chip_text": "urine ACR reviewed if ordered",
+          "order": 3,
+          "search_terms": [
+            "ACR",
+            "albumin",
+            "microalbumin"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-investigations-4",
+          "chip_text": "lipid profile reviewed if ordered",
+          "order": 4,
+          "search_terms": [
+            "lipid",
+            "cholesterol",
+            "LDL"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-investigations-5",
+          "chip_text": "eye screening report reviewed if available",
+          "order": 5,
+          "search_terms": [
+            "eye",
+            "screening",
+            "retinopathy"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-investigations-6",
+          "chip_text": "home glucose log reviewed if available",
+          "order": 6,
+          "search_terms": [
+            "glucose",
+            "log",
+            "diary",
+            "SMBG"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "endo-diabetes-followup-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-plan_phrases-2",
+          "chip_text": "medication adherence documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "adherence",
+            "medication"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-plan_phrases-3",
+          "chip_text": "lifestyle advice documented if discussed",
+          "order": 3,
+          "search_terms": [
+            "lifestyle",
+            "diet",
+            "exercise"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-plan_phrases-4",
+          "chip_text": "glucose monitoring documented if discussed",
+          "order": 4,
+          "search_terms": [
+            "glucose",
+            "monitoring",
+            "SMBG"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-plan_phrases-5",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 5,
+          "search_terms": [
+            "medication",
+            "adjustment"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-plan_phrases-6",
+          "chip_text": "referral documented if clinician arranged",
+          "order": 6,
+          "search_terms": [
+            "referral",
+            "diabetes",
+            "eye",
+            "podiatry"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-plan_phrases-7",
+          "chip_text": "follow-up documented if arranged",
+          "order": 7,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-plan_phrases-8",
+          "chip_text": "annual review items discussed if applicable",
+          "order": 8,
+          "search_terms": [
+            "annual",
+            "review",
+            "checks"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-plan_phrases-9",
+          "chip_text": "sick day rules documented if discussed",
+          "order": 9,
+          "search_terms": [
+            "sick",
+            "day",
+            "rules"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "endo-diabetes-followup-follow_up-1",
+          "chip_text": "3-6 months",
+          "order": 1,
+          "search_terms": [
+            "three",
+            "six",
+            "months"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-follow_up-2",
+          "chip_text": "6-12 months if stable",
+          "order": 2,
+          "search_terms": [
+            "six",
+            "twelve"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-follow_up-3",
+          "chip_text": "sooner if symptoms change",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "change"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-follow_up-5",
+          "chip_text": "sooner if needed",
+          "order": 5,
+          "search_terms": [
+            "sooner",
+            "needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-follow_up-7",
+          "chip_text": "sooner if HbA1c rising",
+          "order": 7,
+          "search_terms": [
+            "Hba1c",
+            "rising"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-follow_up-8",
+          "chip_text": "sooner if HbA1c not at target",
+          "order": 8,
+          "search_terms": [
+            "HbA1c",
+            "target"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-follow_up-9",
+          "chip_text": "annual diabetes review",
+          "order": 9,
+          "search_terms": [
+            "annual",
+            "diabetes"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-diabetes-followup-follow_up-10",
+          "chip_text": "sooner if acute symptoms",
+          "order": 10,
+          "search_terms": [
+            "acute",
+            "symptoms"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ]
+    },
+    "endo-hyperthyroidism-followup": {
+      "symptoms": [
+        {
+          "chip_id": "endo-hyperthyroidism-followup-symptoms-1",
+          "chip_text": "hyperthyroidism follow-up",
+          "order": 1,
+          "search_terms": [
+            "hyperthyroidism",
+            "overactive",
+            "followup"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-symptoms-2",
+          "chip_text": "palpitations reviewed",
+          "order": 2,
+          "search_terms": [
+            "palpitations",
+            "heart",
+            "racing"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-symptoms-3",
+          "chip_text": "heat intolerance reviewed",
+          "order": 3,
+          "search_terms": [
+            "heat",
+            "intolerance"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-symptoms-4",
+          "chip_text": "tremor reviewed",
+          "order": 4,
+          "search_terms": [
+            "tremor",
+            "shaking"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-symptoms-5",
+          "chip_text": "weight change reviewed",
+          "order": 5,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-symptoms-6",
+          "chip_text": "anxiety or irritability reviewed",
+          "order": 6,
+          "search_terms": [
+            "anxiety",
+            "irritability",
+            "mood"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-symptoms-7",
+          "chip_text": "bowel habit reviewed",
+          "order": 7,
+          "search_terms": [
+            "bowel",
+            "habit",
+            "diarrhoea"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-symptoms-8",
+          "chip_text": "eye symptoms reviewed",
+          "order": 8,
+          "search_terms": [
+            "eye",
+            "visual",
+            "proptosis",
+            "dry"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-symptoms-9",
+          "chip_text": "medication adherence discussed",
+          "order": 9,
+          "search_terms": [
+            "medication",
+            "adherence",
+            "carbimazole"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-symptoms-10",
+          "chip_text": "fatigue and sleep reviewed",
+          "order": 10,
+          "search_terms": [
+            "fatigue",
+            "sleep",
+            "insomnia"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-symptoms-11",
+          "chip_text": "neck discomfort reviewed",
+          "order": 11,
+          "search_terms": [
+            "neck",
+            "discomfort",
+            "goiter"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-symptoms-12",
+          "chip_text": "dyspnoea on exertion reviewed",
+          "order": 12,
+          "search_terms": [
+            "dyspnoea",
+            "SOB",
+            "activity"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "endo-hyperthyroidism-followup-relevant_negatives-1",
+          "chip_text": "no chest pain reported",
+          "order": 1,
+          "search_terms": [
+            "chest",
+            "pain"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-relevant_negatives-2",
+          "chip_text": "no syncope reported",
+          "order": 2,
+          "search_terms": [
+            "syncope",
+            "faint"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-relevant_negatives-3",
+          "chip_text": "no visual loss reported if relevant",
+          "order": 3,
+          "search_terms": [
+            "visual",
+            "loss",
+            "vision"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "endo-hyperthyroidism-followup-exam_findings-1",
+          "chip_text": "pulse documented if measured",
+          "order": 1,
+          "search_terms": [
+            "pulse",
+            "heart",
+            "rate"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-exam_findings-2",
+          "chip_text": "thyroid examination documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "thyroid",
+            "goiter",
+            "bruit"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-exam_findings-3",
+          "chip_text": "eye signs documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "eye",
+            "proptosis",
+            "lid",
+            "lag"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-exam_findings-4",
+          "chip_text": "tremor documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "tremor",
+            "fine"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-exam_findings-5",
+          "chip_text": "weight documented if measured",
+          "order": 5,
+          "search_terms": [
+            "weight",
+            "BMI"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-exam_findings-6",
+          "chip_text": "skin examination documented if assessed",
+          "order": 6,
+          "search_terms": [
+            "skin",
+            "warm",
+            "moist"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "red_flags": [],
+      "investigations": [
+        {
+          "chip_id": "endo-hyperthyroidism-followup-investigations-1",
+          "chip_text": "thyroid function tests reviewed if available",
+          "order": 1,
+          "search_terms": [
+            "TFT",
+            "TSH",
+            "T4",
+            "T3"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-investigations-2",
+          "chip_text": "TSI or antibody levels reviewed if ordered",
+          "order": 2,
+          "search_terms": [
+            "TSI",
+            "TRAb",
+            "antibodies"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-investigations-3",
+          "chip_text": "previous records reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "endo-hyperthyroidism-followup-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-plan_phrases-2",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 2,
+          "search_terms": [
+            "medication",
+            "carbimazole",
+            "beta"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "endocrinology",
+            "surgery"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-plan_phrases-5",
+          "chip_text": "eye care referral documented if clinically indicated",
+          "order": 5,
+          "search_terms": [
+            "eye",
+            "ophthalmology",
+            "thyroid"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "endo-hyperthyroidism-followup-follow_up-1",
+          "chip_text": "4-6 weeks",
+          "order": 1,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-follow_up-2",
+          "chip_text": "6-8 weeks",
+          "order": 2,
+          "search_terms": [
+            "six",
+            "eight",
+            "weeks"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-follow_up-6",
+          "chip_text": "sooner if needed",
+          "order": 6,
+          "search_terms": [
+            "sooner",
+            "needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hyperthyroidism-followup-follow_up-8",
+          "chip_text": "sooner if TFT abnormal",
+          "order": 8,
+          "search_terms": [
+            "TFT",
+            "abnormal"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ]
+    },
+    "endo-hypoglycemia-review": {
+      "symptoms": [
+        {
+          "chip_id": "endo-hypoglycemia-review-symptoms-1",
+          "chip_text": "hypoglycemia review",
+          "order": 1,
+          "search_terms": [
+            "hypoglycemia",
+            "hypo",
+            "low",
+            "sugar"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-symptoms-2",
+          "chip_text": "episode frequency reviewed",
+          "order": 2,
+          "search_terms": [
+            "frequency",
+            "how often"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-symptoms-3",
+          "chip_text": "timing and context documented",
+          "order": 3,
+          "search_terms": [
+            "timing",
+            "context",
+            "when"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-symptoms-4",
+          "chip_text": "symptoms reviewed",
+          "order": 4,
+          "search_terms": [
+            "symptoms",
+            "sweating",
+            "tremor",
+            "palpitations"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-symptoms-5",
+          "chip_text": "glucose values reviewed if available",
+          "order": 5,
+          "search_terms": [
+            "glucose",
+            "values",
+            "levels"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-symptoms-6",
+          "chip_text": "medication context reviewed",
+          "order": 6,
+          "search_terms": [
+            "medication",
+            "insulin",
+            "sulfonylurea"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-symptoms-7",
+          "chip_text": "meal and activity context reviewed",
+          "order": 7,
+          "search_terms": [
+            "meal",
+            "activity",
+            "exercise",
+            "missed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-symptoms-8",
+          "chip_text": "awareness symptoms reviewed",
+          "order": 8,
+          "search_terms": [
+            "awareness",
+            "warning",
+            "symptoms"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-symptoms-9",
+          "chip_text": "driving and safety context reviewed",
+          "order": 9,
+          "search_terms": [
+            "driving",
+            "safety",
+            "DVLA"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-symptoms-10",
+          "chip_text": "alcohol context reviewed if relevant",
+          "order": 10,
+          "search_terms": [
+            "alcohol",
+            "drinking"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-symptoms-11",
+          "chip_text": "blood glucose level during episode reviewed",
+          "order": 11,
+          "search_terms": [
+            "glucose",
+            "level",
+            "episode"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "endo-hypoglycemia-review-relevant_negatives-1",
+          "chip_text": "no loss of consciousness reported",
+          "order": 1,
+          "search_terms": [
+            "loss",
+            "consciousness",
+            "LOC"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-relevant_negatives-2",
+          "chip_text": "no seizure reported",
+          "order": 2,
+          "search_terms": [
+            "seizure",
+            "fit",
+            "convulsion"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-relevant_negatives-3",
+          "chip_text": "no severe hypoglycemia requiring assistance reported if applicable",
+          "order": 3,
+          "search_terms": [
+            "severe",
+            "assistance",
+            "help"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "endo-hypoglycemia-review-exam_findings-1",
+          "chip_text": "vitals documented if measured",
+          "order": 1,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-exam_findings-2",
+          "chip_text": "glucose level documented if measured",
+          "order": 2,
+          "search_terms": [
+            "glucose",
+            "bedside",
+            "BM"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-exam_findings-3",
+          "chip_text": "general appearance documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "appearance",
+            "well"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-exam_findings-4",
+          "chip_text": "glucose meter reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "meter",
+            "device",
+            "reading"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-exam_findings-5",
+          "chip_text": "weight documented if measured",
+          "order": 5,
+          "search_terms": [
+            "weight",
+            "BMI"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "red_flags": [],
+      "investigations": [
+        {
+          "chip_id": "endo-hypoglycemia-review-investigations-1",
+          "chip_text": "glucose log reviewed if available",
+          "order": 1,
+          "search_terms": [
+            "glucose",
+            "log",
+            "diary"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-investigations-2",
+          "chip_text": "HbA1c reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "HbA1c",
+            "A1c"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-investigations-3",
+          "chip_text": "medication list reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "medication",
+            "list",
+            "insulin"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "endo-hypoglycemia-review-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-plan_phrases-2",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 2,
+          "search_terms": [
+            "medication",
+            "adjustment"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-plan_phrases-3",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 3,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-plan_phrases-4",
+          "chip_text": "glucose monitoring plan discussed if applicable",
+          "order": 4,
+          "search_terms": [
+            "glucose",
+            "monitoring",
+            "frequency"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-plan_phrases-6",
+          "chip_text": "education documented if discussed",
+          "order": 6,
+          "search_terms": [
+            "education",
+            "hypo",
+            "awareness"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-plan_phrases-7",
+          "chip_text": "glucagon kit discussed if applicable",
+          "order": 7,
+          "search_terms": [
+            "glucagon",
+            "kit",
+            "emergency"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "endo-hypoglycemia-review-follow_up-1",
+          "chip_text": "1-2 weeks",
+          "order": 1,
+          "search_terms": [
+            "one",
+            "two",
+            "weeks"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-follow_up-2",
+          "chip_text": "2-4 weeks",
+          "order": 2,
+          "search_terms": [
+            "two",
+            "four",
+            "weeks"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-follow_up-3",
+          "chip_text": "sooner if recurrent",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "recurrent"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypoglycemia-review-follow_up-6",
+          "chip_text": "sooner if needed",
+          "order": 6,
+          "search_terms": [
+            "sooner",
+            "needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ]
+    },
+    "endo-hypothyroidism-followup": {
+      "symptoms": [
+        {
+          "chip_id": "endo-hypothyroidism-followup-symptoms-1",
+          "chip_text": "hypothyroidism follow-up",
+          "order": 1,
+          "search_terms": [
+            "hypothyroidism",
+            "followup",
+            "underactive"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-symptoms-2",
+          "chip_text": "fatigue and energy reviewed",
+          "order": 2,
+          "search_terms": [
+            "fatigue",
+            "energy",
+            "tiredness"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-symptoms-3",
+          "chip_text": "cold intolerance reviewed",
+          "order": 3,
+          "search_terms": [
+            "cold",
+            "intolerance"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-symptoms-4",
+          "chip_text": "weight change reviewed",
+          "order": 4,
+          "search_terms": [
+            "weight",
+            "gain"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-symptoms-5",
+          "chip_text": "constipation reviewed",
+          "order": 5,
+          "search_terms": [
+            "constipation"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-symptoms-6",
+          "chip_text": "dry skin and hair loss reviewed",
+          "order": 6,
+          "search_terms": [
+            "dry",
+            "skin",
+            "hair",
+            "loss"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-symptoms-7",
+          "chip_text": "medication adherence discussed",
+          "order": 7,
+          "search_terms": [
+            "medication",
+            "adherence",
+            "levothyroxine"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-symptoms-8",
+          "chip_text": "myxoedema symptoms reviewed if relevant",
+          "order": 8,
+          "search_terms": [
+            "myxoedema",
+            "facial",
+            "puffiness"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-symptoms-9",
+          "chip_text": "heart rate changes reviewed",
+          "order": 9,
+          "search_terms": [
+            "heart",
+            "rate",
+            "bradycardia"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "endo-hypothyroidism-followup-relevant_negatives-1",
+          "chip_text": "no palpitations reported if relevant",
+          "order": 1,
+          "search_terms": [
+            "palpitations",
+            "racing"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-relevant_negatives-2",
+          "chip_text": "no chest pain reported if relevant",
+          "order": 2,
+          "search_terms": [
+            "chest",
+            "pain"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "endo-hypothyroidism-followup-exam_findings-1",
+          "chip_text": "weight documented if measured",
+          "order": 1,
+          "search_terms": [
+            "weight",
+            "BMI"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-exam_findings-2",
+          "chip_text": "pulse documented if measured",
+          "order": 2,
+          "search_terms": [
+            "pulse",
+            "heart",
+            "rate"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-exam_findings-3",
+          "chip_text": "neck examination documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "neck",
+            "thyroid",
+            "examination"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-exam_findings-4",
+          "chip_text": "skin and hair examination documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "skin",
+            "dry",
+            "hair",
+            "loss"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-exam_findings-5",
+          "chip_text": "reflexes documented if assessed",
+          "order": 5,
+          "search_terms": [
+            "reflexes",
+            "delayed",
+            "relaxation"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-exam_findings-6",
+          "chip_text": "facial puffiness documented if assessed",
+          "order": 6,
+          "search_terms": [
+            "facial",
+            "puffiness",
+            "myxoedema"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "red_flags": [],
+      "investigations": [
+        {
+          "chip_id": "endo-hypothyroidism-followup-investigations-1",
+          "chip_text": "TSH reviewed if available",
+          "order": 1,
+          "search_terms": [
+            "TSH",
+            "thyroid",
+            "stimulating"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-investigations-2",
+          "chip_text": "free T4 reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "free",
+            "T4",
+            "thyroxine"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-investigations-3",
+          "chip_text": "previous records reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "endo-hypothyroidism-followup-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-plan_phrases-2",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 2,
+          "search_terms": [
+            "medication",
+            "levothyroxine",
+            "dose"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-plan_phrases-3",
+          "chip_text": "adherence discussed if applicable",
+          "order": 3,
+          "search_terms": [
+            "adherence",
+            "compliance"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-plan_phrases-5",
+          "chip_text": "referral documented if clinician decided",
+          "order": 5,
+          "search_terms": [
+            "referral",
+            "endocrinology"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "endo-hypothyroidism-followup-follow_up-1",
+          "chip_text": "6-8 weeks",
+          "order": 1,
+          "search_terms": [
+            "six",
+            "eight",
+            "weeks"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-follow_up-2",
+          "chip_text": "3-6 months if stable",
+          "order": 2,
+          "search_terms": [
+            "three",
+            "six",
+            "stable"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-follow_up-3",
+          "chip_text": "sooner if symptom change",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "change"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-follow_up-6",
+          "chip_text": "sooner if needed",
+          "order": 6,
+          "search_terms": [
+            "sooner",
+            "needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-follow_up-8",
+          "chip_text": "sooner if TSH out of range",
+          "order": 8,
+          "search_terms": [
+            "TSH",
+            "range"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-hypothyroidism-followup-follow_up-9",
+          "chip_text": "6-8 weeks after dose change",
+          "order": 9,
+          "search_terms": [
+            "dose",
+            "change"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ]
+    },
+    "endo-obesity-counseling-documentation": {
+      "symptoms": [
+        {
+          "chip_id": "endo-obesity-counseling-documentation-symptoms-1",
+          "chip_text": "weight management documentation",
+          "order": 1,
+          "search_terms": [
+            "weight",
+            "management",
+            "obesity"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-symptoms-2",
+          "chip_text": "BMI documented if measured",
+          "order": 2,
+          "search_terms": [
+            "BMI",
+            "body",
+            "mass",
+            "index"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-symptoms-3",
+          "chip_text": "weight trend reviewed",
+          "order": 3,
+          "search_terms": [
+            "weight",
+            "trend",
+            "gain",
+            "loss"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-symptoms-4",
+          "chip_text": "diet context reviewed",
+          "order": 4,
+          "search_terms": [
+            "diet",
+            "nutrition",
+            "eating"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-symptoms-5",
+          "chip_text": "physical activity context reviewed",
+          "order": 5,
+          "search_terms": [
+            "physical",
+            "activity",
+            "exercise"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-symptoms-6",
+          "chip_text": "sleep context reviewed",
+          "order": 6,
+          "search_terms": [
+            "sleep",
+            "quality",
+            "apnea"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-symptoms-7",
+          "chip_text": "other health conditions context reviewed",
+          "order": 7,
+          "search_terms": [
+            "comorbidity",
+            "diabetes",
+            "HTN",
+            "lipids"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-symptoms-8",
+          "chip_text": "medication history reviewed if relevant",
+          "order": 8,
+          "search_terms": [
+            "medication",
+            "weight",
+            "gain"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-symptoms-9",
+          "chip_text": "eating patterns reviewed",
+          "order": 9,
+          "search_terms": [
+            "eating",
+            "patterns",
+            "binge",
+            "emotional"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-symptoms-10",
+          "chip_text": "weight loss attempts reviewed",
+          "order": 10,
+          "search_terms": [
+            "weight",
+            "loss",
+            "attempts",
+            "history"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-symptoms-11",
+          "chip_text": "mental health context reviewed if relevant",
+          "order": 11,
+          "search_terms": [
+            "mental",
+            "health",
+            "mood"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-symptoms-12",
+          "chip_text": "readiness to change assessed",
+          "order": 12,
+          "search_terms": [
+            "readiness",
+            "change",
+            "motivation"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "endo-obesity-counseling-documentation-relevant_negatives-1",
+          "chip_text": "no acute symptoms reported",
+          "order": 1,
+          "search_terms": [
+            "acute",
+            "symptoms"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-relevant_negatives-2",
+          "chip_text": "no unexplained weight loss reported if applicable",
+          "order": 2,
+          "search_terms": [
+            "weight",
+            "loss",
+            "unexplained"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "endo-obesity-counseling-documentation-exam_findings-1",
+          "chip_text": "blood pressure documented if measured",
+          "order": 1,
+          "search_terms": [
+            "BP",
+            "blood",
+            "pressure"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-exam_findings-2",
+          "chip_text": "waist circumference documented if measured",
+          "order": 2,
+          "search_terms": [
+            "waist",
+            "circumference"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-exam_findings-3",
+          "chip_text": "weight and BMI documented if measured",
+          "order": 3,
+          "search_terms": [
+            "weight",
+            "BMI"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-exam_findings-4",
+          "chip_text": "vitals documented if measured",
+          "order": 4,
+          "search_terms": [
+            "vitals",
+            "pulse",
+            "temp"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "red_flags": [],
+      "investigations": [
+        {
+          "chip_id": "endo-obesity-counseling-documentation-investigations-1",
+          "chip_text": "HbA1c or glucose reviewed if ordered",
+          "order": 1,
+          "search_terms": [
+            "HbA1c",
+            "glucose",
+            "diabetes"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-investigations-2",
+          "chip_text": "lipid profile reviewed if ordered",
+          "order": 2,
+          "search_terms": [
+            "lipid",
+            "cholesterol"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-investigations-3",
+          "chip_text": "thyroid function reviewed if ordered",
+          "order": 3,
+          "search_terms": [
+            "TSH",
+            "TFT"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "endo-obesity-counseling-documentation-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-plan_phrases-2",
+          "chip_text": "lifestyle counseling documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "lifestyle",
+            "diet",
+            "exercise"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "dietician",
+            "endocrinology"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-plan_phrases-5",
+          "chip_text": "goal setting documented if discussed",
+          "order": 5,
+          "search_terms": [
+            "goal",
+            "target",
+            "weight"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-plan_phrases-6",
+          "chip_text": "pharmacotherapy plan documented if clinician decided",
+          "order": 6,
+          "search_terms": [
+            "medication",
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "endo-obesity-counseling-documentation-follow_up-1",
+          "chip_text": "4-6 weeks",
+          "order": 1,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-follow_up-2",
+          "chip_text": "3 months",
+          "order": 2,
+          "search_terms": [
+            "three",
+            "months"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-follow_up-3",
+          "chip_text": "sooner if needed",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-obesity-counseling-documentation-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ]
+    },
+    "endo-osteoporosis-followup": {
+      "symptoms": [
+        {
+          "chip_id": "endo-osteoporosis-followup-symptoms-1",
+          "chip_text": "osteoporosis follow-up",
+          "order": 1,
+          "search_terms": [
+            "osteoporosis",
+            "followup",
+            "bone"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-symptoms-2",
+          "chip_text": "fracture history reviewed",
+          "order": 2,
+          "search_terms": [
+            "fracture",
+            "fragility",
+            "broken"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-symptoms-3",
+          "chip_text": "falls history reviewed",
+          "order": 3,
+          "search_terms": [
+            "falls",
+            "balance",
+            "risk"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-symptoms-4",
+          "chip_text": "back pain and height loss reviewed",
+          "order": 4,
+          "search_terms": [
+            "back",
+            "pain",
+            "height",
+            "loss"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-symptoms-5",
+          "chip_text": "calcium and vitamin D context reviewed",
+          "order": 5,
+          "search_terms": [
+            "calcium",
+            "vitamin",
+            "D",
+            "supplement"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-symptoms-6",
+          "chip_text": "medication adherence discussed",
+          "order": 6,
+          "search_terms": [
+            "medication",
+            "adherence",
+            "bisphosphonate"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-symptoms-7",
+          "chip_text": "side effects reviewed if relevant",
+          "order": 7,
+          "search_terms": [
+            "side",
+            "effects",
+            "GI",
+            "jaw"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-symptoms-8",
+          "chip_text": "previous DEXA results reviewed if available",
+          "order": 8,
+          "search_terms": [
+            "DEXA",
+            "previous",
+            "T-score"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-symptoms-9",
+          "chip_text": "secondary causes reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "secondary",
+            "causes",
+            "steroid"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-symptoms-10",
+          "chip_text": "family history of osteoporosis reviewed",
+          "order": 10,
+          "search_terms": [
+            "family",
+            "osteoporosis",
+            "hip"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "endo-osteoporosis-followup-relevant_negatives-1",
+          "chip_text": "no new fragility fracture reported",
+          "order": 1,
+          "search_terms": [
+            "fragility",
+            "fracture",
+            "new"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "endo-osteoporosis-followup-exam_findings-1",
+          "chip_text": "gait and falls risk documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "gait",
+            "falls",
+            "balance"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-exam_findings-2",
+          "chip_text": "spine tenderness documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "spine",
+            "vertebral",
+            "tenderness"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-exam_findings-3",
+          "chip_text": "weight documented if measured",
+          "order": 3,
+          "search_terms": [
+            "weight",
+            "BMI"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-exam_findings-4",
+          "chip_text": "kyphosis documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "kyphosis",
+            "posture",
+            "spine"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-exam_findings-5",
+          "chip_text": "height measured if documented",
+          "order": 5,
+          "search_terms": [
+            "height",
+            "loss",
+            "measurement"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "red_flags": [],
+      "investigations": [
+        {
+          "chip_id": "endo-osteoporosis-followup-investigations-1",
+          "chip_text": "DEXA report reviewed if available",
+          "order": 1,
+          "search_terms": [
+            "DEXA",
+            "DXA",
+            "bone",
+            "density"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-investigations-2",
+          "chip_text": "calcium and vitamin D result reviewed if ordered",
+          "order": 2,
+          "search_terms": [
+            "calcium",
+            "vitamin",
+            "D"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-investigations-3",
+          "chip_text": "renal function reviewed if ordered",
+          "order": 3,
+          "search_terms": [
+            "renal",
+            "eGFR",
+            "creatinine"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-investigations-4",
+          "chip_text": "previous records reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "endo-osteoporosis-followup-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-plan_phrases-2",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 2,
+          "search_terms": [
+            "medication",
+            "bisphosphonate",
+            "denosumab"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-plan_phrases-3",
+          "chip_text": "supplement plan documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "calcium",
+            "vitamin",
+            "D"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-plan_phrases-4",
+          "chip_text": "referral documented if clinician arranged",
+          "order": 4,
+          "search_terms": [
+            "referral",
+            "bone",
+            "DXA"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-plan_phrases-6",
+          "chip_text": "falls prevention discussed if applicable",
+          "order": 6,
+          "search_terms": [
+            "falls",
+            "prevention",
+            "balance"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-plan_phrases-7",
+          "chip_text": "bone health advice documented if discussed",
+          "order": 7,
+          "search_terms": [
+            "bone",
+            "health",
+            "calcium",
+            "vitamin"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-plan_phrases-8",
+          "chip_text": "vitamin D supplementation discussed if applicable",
+          "order": 8,
+          "search_terms": [
+            "vitamin",
+            "D",
+            "supplement"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "endo-osteoporosis-followup-follow_up-1",
+          "chip_text": "1 year if stable",
+          "order": 1,
+          "search_terms": [
+            "one",
+            "year"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-follow_up-2",
+          "chip_text": "2 years on therapy",
+          "order": 2,
+          "search_terms": [
+            "two",
+            "years"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-follow_up-3",
+          "chip_text": "sooner if new fracture",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "fracture"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-follow_up-6",
+          "chip_text": "sooner if needed",
+          "order": 6,
+          "search_terms": [
+            "sooner",
+            "needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-follow_up-7",
+          "chip_text": "yearly",
+          "order": 7,
+          "search_terms": [
+            "yearly",
+            "annual"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-follow_up-8",
+          "chip_text": "sooner if new fracture risk",
+          "order": 8,
+          "search_terms": [
+            "fracture",
+            "risk"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-osteoporosis-followup-follow_up-9",
+          "chip_text": "sooner if fracture",
+          "order": 9,
+          "search_terms": [
+            "fracture"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ]
+    },
+    "endo-pcos-metabolic-review": {
+      "symptoms": [
+        {
+          "chip_id": "endo-pcos-metabolic-review-symptoms-1",
+          "chip_text": "PCOS metabolic review",
+          "order": 1,
+          "search_terms": [
+            "PCOS",
+            "polycystic",
+            "ovarian"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-symptoms-2",
+          "chip_text": "cycle pattern reviewed",
+          "order": 2,
+          "search_terms": [
+            "cycle",
+            "menstrual",
+            "period"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-symptoms-3",
+          "chip_text": "weight and BMI context reviewed",
+          "order": 3,
+          "search_terms": [
+            "weight",
+            "BMI",
+            "obesity"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-symptoms-4",
+          "chip_text": "acne and hirsutism context reviewed",
+          "order": 4,
+          "search_terms": [
+            "acne",
+            "hirsutism",
+            "hair",
+            "excess"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-symptoms-5",
+          "chip_text": "glucose and insulin resistance context reviewed",
+          "order": 5,
+          "search_terms": [
+            "glucose",
+            "insulin",
+            "resistance",
+            "HOMA"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-symptoms-6",
+          "chip_text": "fertility concern reviewed if relevant",
+          "order": 6,
+          "search_terms": [
+            "fertility",
+            "conception",
+            "pregnancy"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-symptoms-7",
+          "chip_text": "lifestyle context reviewed",
+          "order": 7,
+          "search_terms": [
+            "lifestyle",
+            "diet",
+            "exercise"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-symptoms-8",
+          "chip_text": "skin changes reviewed",
+          "order": 8,
+          "search_terms": [
+            "skin",
+            "acanthosis",
+            "nigricans",
+            "acne"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-symptoms-9",
+          "chip_text": "mood and mental health reviewed",
+          "order": 9,
+          "search_terms": [
+            "mood",
+            "anxiety",
+            "depression"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-symptoms-10",
+          "chip_text": "blood pressure context reviewed",
+          "order": 10,
+          "search_terms": [
+            "BP",
+            "hypertension"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "endo-pcos-metabolic-review-relevant_negatives-1",
+          "chip_text": "no acute pelvic pain reported if relevant",
+          "order": 1,
+          "search_terms": [
+            "pelvic",
+            "pain",
+            "acute"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-relevant_negatives-2",
+          "chip_text": "no galactorrhea reported if relevant",
+          "order": 2,
+          "search_terms": [
+            "galactorrhea",
+            "nipple",
+            "discharge"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "endo-pcos-metabolic-review-exam_findings-1",
+          "chip_text": "weight and BMI documented if measured",
+          "order": 1,
+          "search_terms": [
+            "weight",
+            "BMI"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-exam_findings-2",
+          "chip_text": "blood pressure documented if measured",
+          "order": 2,
+          "search_terms": [
+            "BP",
+            "blood",
+            "pressure"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-exam_findings-3",
+          "chip_text": "acne and hirsutism documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "acne",
+            "hirsutism",
+            "Ferriman"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-exam_findings-4",
+          "chip_text": "waist circumference documented if measured",
+          "order": 4,
+          "search_terms": [
+            "waist",
+            "obesity",
+            "central"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-exam_findings-5",
+          "chip_text": "acanthosis nigricans documented if assessed",
+          "order": 5,
+          "search_terms": [
+            "acanthosis",
+            "nigricans"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "red_flags": [],
+      "investigations": [
+        {
+          "chip_id": "endo-pcos-metabolic-review-investigations-1",
+          "chip_text": "HbA1c or glucose reviewed if ordered",
+          "order": 1,
+          "search_terms": [
+            "HbA1c",
+            "glucose",
+            "OGTT"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-investigations-2",
+          "chip_text": "lipid profile reviewed if ordered",
+          "order": 2,
+          "search_terms": [
+            "lipid",
+            "cholesterol",
+            "LDL"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-investigations-3",
+          "chip_text": "hormonal profile reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "hormonal",
+            "testosterone",
+            "LH",
+            "FSH"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "endo-pcos-metabolic-review-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-plan_phrases-2",
+          "chip_text": "lifestyle advice documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "lifestyle",
+            "diet",
+            "exercise"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-plan_phrases-3",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "medication",
+            "metformin",
+            "OCP"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-plan_phrases-4",
+          "chip_text": "referral documented if clinician decided",
+          "order": 4,
+          "search_terms": [
+            "referral",
+            "endocrinology",
+            "gynaecology"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-plan_phrases-6",
+          "chip_text": "fertility referral discussed if applicable",
+          "order": 6,
+          "search_terms": [
+            "fertility",
+            "conception",
+            "IVF"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-plan_phrases-7",
+          "chip_text": "metformin plan discussed if applicable",
+          "order": 7,
+          "search_terms": [
+            "metformin",
+            "insulin",
+            "resistance"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "endo-pcos-metabolic-review-follow_up-1",
+          "chip_text": "3-6 months",
+          "order": 1,
+          "search_terms": [
+            "three",
+            "six",
+            "months"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-follow_up-2",
+          "chip_text": "6-12 months if stable",
+          "order": 2,
+          "search_terms": [
+            "six",
+            "twelve"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-follow_up-3",
+          "chip_text": "sooner if symptom change",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "change"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-follow_up-6",
+          "chip_text": "sooner if needed",
+          "order": 6,
+          "search_terms": [
+            "sooner",
+            "needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pcos-metabolic-review-follow_up-8",
+          "chip_text": "sooner if pregnancy desired",
+          "order": 8,
+          "search_terms": [
+            "pregnancy",
+            "fertility"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ]
+    },
+    "endo-pituitary-symptoms-documentation": {
+      "symptoms": [
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-symptoms-1",
+          "chip_text": "pituitary symptoms documentation",
+          "order": 1,
+          "search_terms": [
+            "pituitary",
+            "symptoms"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-symptoms-2",
+          "chip_text": "headache reviewed",
+          "order": 2,
+          "search_terms": [
+            "headache"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-symptoms-3",
+          "chip_text": "visual symptoms reviewed",
+          "order": 3,
+          "search_terms": [
+            "visual",
+            "vision",
+            "field"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-symptoms-4",
+          "chip_text": "menstrual or sexual function context reviewed if clinically appropriate",
+          "order": 4,
+          "search_terms": [
+            "menstrual",
+            "period",
+            "libido",
+            "sexual",
+            "erectile"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-symptoms-5",
+          "chip_text": "growth and weight changes reviewed",
+          "order": 5,
+          "search_terms": [
+            "growth",
+            "weight",
+            "acromegaly"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-symptoms-6",
+          "chip_text": "fatigue and weakness reviewed",
+          "order": 6,
+          "search_terms": [
+            "fatigue",
+            "weakness",
+            "tiredness"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-symptoms-7",
+          "chip_text": "galactorrhea context reviewed if relevant",
+          "order": 7,
+          "search_terms": [
+            "galactorrhea",
+            "prolactin",
+            "breast"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-symptoms-8",
+          "chip_text": "thirst and urine output reviewed if relevant",
+          "order": 8,
+          "search_terms": [
+            "thirst",
+            "polydipsia",
+            "DI"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-symptoms-9",
+          "chip_text": "bone and joint pain reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "bone",
+            "joint",
+            "pain",
+            "acromegaly"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-relevant_negatives-1",
+          "chip_text": "no acute visual loss reported if applicable",
+          "order": 1,
+          "search_terms": [
+            "visual",
+            "loss",
+            "acute"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-relevant_negatives-2",
+          "chip_text": "no seizure reported if applicable",
+          "order": 2,
+          "search_terms": [
+            "seizure",
+            "fit"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-exam_findings-1",
+          "chip_text": "visual fields documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "visual",
+            "fields",
+            "perimetry"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-exam_findings-2",
+          "chip_text": "neurological screen documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "neurological",
+            "CN",
+            "cranial"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-exam_findings-3",
+          "chip_text": "general appearance documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "appearance",
+            "acromegaly",
+            "Cushing"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-exam_findings-4",
+          "chip_text": "visual acuity documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "visual",
+            "acuity",
+            "Snellen"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-exam_findings-5",
+          "chip_text": "hand and foot size documented if relevant",
+          "order": 5,
+          "search_terms": [
+            "hand",
+            "foot",
+            "acromegaly"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-exam_findings-6",
+          "chip_text": "visual field testing documented if assessed",
+          "order": 6,
+          "search_terms": [
+            "visual",
+            "field",
+            "perimetry"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "red_flags": [],
+      "investigations": [
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-investigations-1",
+          "chip_text": "hormonal profile reviewed if ordered",
+          "order": 1,
+          "search_terms": [
+            "hormonal",
+            "prolactin",
+            "GH",
+            "ACTH",
+            "cortisol"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-investigations-2",
+          "chip_text": "pituitary imaging reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "MRI",
+            "pituitary",
+            "sella"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-investigations-3",
+          "chip_text": "previous records reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-plan_phrases-2",
+          "chip_text": "referral documented if clinician arranged",
+          "order": 2,
+          "search_terms": [
+            "referral",
+            "endocrinology",
+            "neurosurgery"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-plan_phrases-3",
+          "chip_text": "follow-up documented if arranged",
+          "order": 3,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-plan_phrases-4",
+          "chip_text": "multi-specialty referral documented if clinician arranged",
+          "order": 4,
+          "search_terms": [
+            "MDT",
+            "pituitary",
+            "neurosurgery"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-plan_phrases-5",
+          "chip_text": "hormonal replacement discussed if applicable",
+          "order": 5,
+          "search_terms": [
+            "hormone",
+            "replacement",
+            "pituitary"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-follow_up-1",
+          "chip_text": "3-6 months",
+          "order": 1,
+          "search_terms": [
+            "three",
+            "six",
+            "months"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-follow_up-2",
+          "chip_text": "6-12 months if stable",
+          "order": 2,
+          "search_terms": [
+            "six",
+            "twelve"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-follow_up-3",
+          "chip_text": "sooner if new symptoms",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "new"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-follow_up-6",
+          "chip_text": "sooner if needed",
+          "order": 6,
+          "search_terms": [
+            "sooner",
+            "needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-follow_up-8",
+          "chip_text": "sooner if visual change",
+          "order": 8,
+          "search_terms": [
+            "visual",
+            "change"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-pituitary-symptoms-documentation-follow_up-9",
+          "chip_text": "6-12 months",
+          "order": 9,
+          "search_terms": [
+            "six",
+            "twelve",
+            "months"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ]
+    },
+    "endo-thyroid-symptoms": {
+      "symptoms": [
+        {
+          "chip_id": "endo-thyroid-symptoms-symptoms-1",
+          "chip_text": "thyroid symptoms",
+          "order": 1,
+          "search_terms": [
+            "thyroid",
+            "symptoms"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-symptoms-2",
+          "chip_text": "weight change reviewed",
+          "order": 2,
+          "search_terms": [
+            "weight",
+            "loss",
+            "gain"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-symptoms-3",
+          "chip_text": "heat or cold intolerance reviewed",
+          "order": 3,
+          "search_terms": [
+            "heat",
+            "cold",
+            "intolerance"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-symptoms-4",
+          "chip_text": "palpitations reviewed",
+          "order": 4,
+          "search_terms": [
+            "palpitations",
+            "heart",
+            "racing"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-symptoms-5",
+          "chip_text": "tremor reviewed",
+          "order": 5,
+          "search_terms": [
+            "tremor",
+            "shaking"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-symptoms-6",
+          "chip_text": "bowel habit reviewed",
+          "order": 6,
+          "search_terms": [
+            "bowel",
+            "habit",
+            "diarrhoea"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-symptoms-7",
+          "chip_text": "mood and energy context reviewed",
+          "order": 7,
+          "search_terms": [
+            "mood",
+            "energy",
+            "fatigue",
+            "anxiety"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-symptoms-8",
+          "chip_text": "neck swelling or goiter context reviewed",
+          "order": 8,
+          "search_terms": [
+            "neck",
+            "swelling",
+            "goiter",
+            "lump"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-symptoms-9",
+          "chip_text": "skin and hair changes reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "skin",
+            "hair",
+            "dry",
+            "brittle"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-symptoms-10",
+          "chip_text": "menstrual changes reviewed if relevant",
+          "order": 10,
+          "search_terms": [
+            "menstrual",
+            "period",
+            "cycle"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "endo-thyroid-symptoms-relevant_negatives-1",
+          "chip_text": "no chest pain reported if relevant",
+          "order": 1,
+          "search_terms": [
+            "chest",
+            "pain"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-relevant_negatives-2",
+          "chip_text": "no severe palpitations reported if relevant",
+          "order": 2,
+          "search_terms": [
+            "severe",
+            "palpitations",
+            "sustained"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-relevant_negatives-3",
+          "chip_text": "no dysphagia reported if relevant",
+          "order": 3,
+          "search_terms": [
+            "dysphagia",
+            "swallowing"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-relevant_negatives-4",
+          "chip_text": "no voice change reported if relevant",
+          "order": 4,
+          "search_terms": [
+            "voice",
+            "hoarseness"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "endo-thyroid-symptoms-exam_findings-1",
+          "chip_text": "vitals documented if measured",
+          "order": 1,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-exam_findings-2",
+          "chip_text": "neck examination documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "neck",
+            "thyroid",
+            "goiter",
+            "nodule"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-exam_findings-3",
+          "chip_text": "tremor documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "tremor",
+            "fine"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-exam_findings-4",
+          "chip_text": "eye signs documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "eye",
+            "exophthalmos",
+            "lid lag"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-exam_findings-5",
+          "chip_text": "weight documented if measured",
+          "order": 5,
+          "search_terms": [
+            "weight",
+            "BMI"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-exam_findings-6",
+          "chip_text": "skin and hair examination documented if assessed",
+          "order": 6,
+          "search_terms": [
+            "skin",
+            "hair",
+            "texture"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-exam_findings-7",
+          "chip_text": "blood pressure documented if measured",
+          "order": 7,
+          "search_terms": [
+            "BP",
+            "blood",
+            "pressure"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-exam_findings-8",
+          "chip_text": "lymph node examination documented if assessed",
+          "order": 8,
+          "search_terms": [
+            "lymph",
+            "node",
+            "neck"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "red_flags": [],
+      "investigations": [
+        {
+          "chip_id": "endo-thyroid-symptoms-investigations-1",
+          "chip_text": "thyroid function tests reviewed if ordered",
+          "order": 1,
+          "search_terms": [
+            "TFT",
+            "TSH",
+            "T4",
+            "T3"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-investigations-2",
+          "chip_text": "thyroid antibodies reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "antibodies",
+            "TPO",
+            "Tg"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-investigations-3",
+          "chip_text": "ultrasound report reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "ultrasound",
+            "thyroid",
+            "US"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-investigations-4",
+          "chip_text": "previous records reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "endo-thyroid-symptoms-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-plan_phrases-2",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 2,
+          "search_terms": [
+            "medication",
+            "antithyroid",
+            "beta"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "endocrinology"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "endo-thyroid-symptoms-follow_up-1",
+          "chip_text": "4-6 weeks",
+          "order": 1,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-follow_up-2",
+          "chip_text": "6-8 weeks",
+          "order": 2,
+          "search_terms": [
+            "six",
+            "eight",
+            "weeks"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-follow_up-6",
+          "chip_text": "sooner if needed",
+          "order": 6,
+          "search_terms": [
+            "sooner",
+            "needed"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        },
+        {
+          "chip_id": "endo-thyroid-symptoms-follow_up-7",
+          "chip_text": "4-6 weeks after starting treatment",
+          "order": 7,
+          "search_terms": [
+            "four",
+            "six",
+            "treatment"
+          ],
+          "tags": [
+            "endocrinology"
+          ]
+        }
+      ]
+    },
     "ent-dizziness-vertigo": {
       "symptoms": [
         {
@@ -80932,11 +90117,11 @@
         },
         {
           "chip_id": "gastro-abdominal-pain-symptoms-3",
-          "chip_text": "onset and duration documented",
+          "chip_text": "duration documented",
           "order": 3,
           "search_terms": [
-            "onset",
-            "duration"
+            "duration",
+            "how long"
           ],
           "tags": [
             "gastroenterology"
@@ -80958,20 +90143,8 @@
         },
         {
           "chip_id": "gastro-abdominal-pain-symptoms-5",
-          "chip_text": "severity documented",
-          "order": 5,
-          "search_terms": [
-            "severity",
-            "intensity"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-abdominal-pain-symptoms-6",
           "chip_text": "radiation reviewed",
-          "order": 6,
+          "order": 5,
           "search_terms": [
             "radiation",
             "referred"
@@ -80981,22 +90154,23 @@
           ]
         },
         {
-          "chip_id": "gastro-abdominal-pain-symptoms-7",
-          "chip_text": "aggravating and relieving factors reviewed",
-          "order": 7,
+          "chip_id": "gastro-abdominal-pain-symptoms-6",
+          "chip_text": "relation to meals and bowels reviewed",
+          "order": 6,
           "search_terms": [
-            "aggrevating",
-            "relieving",
-            "food"
+            "meals",
+            "food",
+            "bowel",
+            "motion"
           ],
           "tags": [
             "gastroenterology"
           ]
         },
         {
-          "chip_id": "gastro-abdominal-pain-symptoms-8",
-          "chip_text": "associated nausea or vomiting reviewed",
-          "order": 8,
+          "chip_id": "gastro-abdominal-pain-symptoms-7",
+          "chip_text": "nausea and vomiting reviewed",
+          "order": 7,
           "search_terms": [
             "nausea",
             "vomiting"
@@ -81006,9 +90180,9 @@
           ]
         },
         {
-          "chip_id": "gastro-abdominal-pain-symptoms-9",
+          "chip_id": "gastro-abdominal-pain-symptoms-8",
           "chip_text": "bowel habit reviewed",
-          "order": 9,
+          "order": 8,
           "search_terms": [
             "bowel",
             "habit",
@@ -81019,24 +90193,22 @@
           ]
         },
         {
-          "chip_id": "gastro-abdominal-pain-symptoms-10",
-          "chip_text": "previous abdominal surgery reviewed",
-          "order": 10,
+          "chip_id": "gastro-abdominal-pain-symptoms-9",
+          "chip_text": "urinary symptoms reviewed",
+          "order": 9,
           "search_terms": [
-            "surgery",
-            "previous",
-            "scar"
+            "urinary",
+            "dysuria",
+            "frequency"
           ],
           "tags": [
             "gastroenterology"
           ]
-        }
-      ],
-      "relevant_negatives": [
+        },
         {
-          "chip_id": "gastro-abdominal-pain-relevant_negatives-1",
-          "chip_text": "no fever reported",
-          "order": 1,
+          "chip_id": "gastro-abdominal-pain-symptoms-10",
+          "chip_text": "fever reviewed",
+          "order": 10,
           "search_terms": [
             "fever",
             "temperature"
@@ -81046,12 +90218,53 @@
           ]
         },
         {
+          "chip_id": "gastro-abdominal-pain-symptoms-11",
+          "chip_text": "previous abdominal surgery reviewed",
+          "order": 11,
+          "search_terms": [
+            "surgery",
+            "previous",
+            "history"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-symptoms-12",
+          "chip_text": "medication history reviewed if relevant",
+          "order": 12,
+          "search_terms": [
+            "medication",
+            "NSAID"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "gastro-abdominal-pain-relevant_negatives-1",
+          "chip_text": "no GI bleeding reported",
+          "order": 1,
+          "search_terms": [
+            "GI",
+            "bleeding",
+            "hematemesis",
+            "melena"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
           "chip_id": "gastro-abdominal-pain-relevant_negatives-2",
-          "chip_text": "no vomiting blood reported",
+          "chip_text": "no persistent vomiting reported",
           "order": 2,
           "search_terms": [
-            "hematemesis",
-            "blood"
+            "vomiting",
+            "persistent"
           ],
           "tags": [
             "gastroenterology"
@@ -81059,12 +90272,12 @@
         },
         {
           "chip_id": "gastro-abdominal-pain-relevant_negatives-3",
-          "chip_text": "no black stools reported",
+          "chip_text": "no severe worsening pain reported",
           "order": 3,
           "search_terms": [
-            "melena",
-            "black",
-            "stool"
+            "severe",
+            "worsening",
+            "pain"
           ],
           "tags": [
             "gastroenterology"
@@ -81072,35 +90285,11 @@
         },
         {
           "chip_id": "gastro-abdominal-pain-relevant_negatives-4",
-          "chip_text": "no unintentional weight loss reported",
+          "chip_text": "no fever reported",
           "order": 4,
           "search_terms": [
-            "weight",
-            "loss"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-abdominal-pain-relevant_negatives-5",
-          "chip_text": "no jaundice reported",
-          "order": 5,
-          "search_terms": [
-            "jaundice",
-            "yellow"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-abdominal-pain-relevant_negatives-6",
-          "chip_text": "no abdominal surgery history reported if relevant",
-          "order": 6,
-          "search_terms": [
-            "surgery",
-            "scar"
+            "fever",
+            "temperature"
           ],
           "tags": [
             "gastroenterology"
@@ -81110,11 +90299,10 @@
       "exam_findings": [
         {
           "chip_id": "gastro-abdominal-pain-exam_findings-1",
-          "chip_text": "abdominal examination documented if assessed",
+          "chip_text": "abdominal tenderness documented if assessed",
           "order": 1,
           "search_terms": [
-            "abdominal",
-            "exam",
+            "tenderness",
             "palpation"
           ],
           "tags": [
@@ -81123,11 +90311,12 @@
         },
         {
           "chip_id": "gastro-abdominal-pain-exam_findings-2",
-          "chip_text": "tenderness documented if assessed",
+          "chip_text": "guarding or rebound documented if assessed",
           "order": 2,
           "search_terms": [
-            "tenderness",
-            "guarding"
+            "guarding",
+            "rebound",
+            "peritonism"
           ],
           "tags": [
             "gastroenterology"
@@ -81158,53 +90347,17 @@
           "tags": [
             "gastroenterology"
           ]
-        },
-        {
-          "chip_id": "gastro-abdominal-pain-exam_findings-5",
-          "chip_text": "general appearance documented if assessed",
-          "order": 5,
-          "search_terms": [
-            "appearance",
-            "distress"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-abdominal-pain-exam_findings-6",
-          "chip_text": "abdominal distension documented if assessed",
-          "order": 6,
-          "search_terms": [
-            "distension",
-            "bloating"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
         }
       ],
       "red_flags": [
         {
           "chip_id": "gastro-abdominal-pain-red_flags-1",
-          "chip_text": "severe or worsening pain",
-          "order": 1,
-          "search_terms": [
-            "severe",
-            "worsening"
-          ],
-          "tags": [
-            "gastroenterology",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "gastro-abdominal-pain-red_flags-2",
           "chip_text": "peritoneal signs if assessed",
-          "order": 2,
+          "order": 1,
           "search_terms": [
             "peritoneal",
             "guarding",
+            "rebound",
             "rigidity"
           ],
           "tags": [
@@ -81213,11 +90366,11 @@
           ]
         },
         {
-          "chip_id": "gastro-abdominal-pain-red_flags-3",
-          "chip_text": "haematemesis or melena",
-          "order": 3,
+          "chip_id": "gastro-abdominal-pain-red_flags-2",
+          "chip_text": "GI bleeding",
+          "order": 2,
           "search_terms": [
-            "hematemesis",
+            "haematemesis",
             "melena",
             "bleeding"
           ],
@@ -81227,9 +90380,9 @@
           ]
         },
         {
-          "chip_id": "gastro-abdominal-pain-red_flags-4",
+          "chip_id": "gastro-abdominal-pain-red_flags-3",
           "chip_text": "unexplained weight loss",
-          "order": 4,
+          "order": 3,
           "search_terms": [
             "weight",
             "loss"
@@ -81240,9 +90393,9 @@
           ]
         },
         {
-          "chip_id": "gastro-abdominal-pain-red_flags-5",
+          "chip_id": "gastro-abdominal-pain-red_flags-4",
           "chip_text": "jaundice",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "jaundice",
             "icterus"
@@ -81253,9 +90406,9 @@
           ]
         },
         {
-          "chip_id": "gastro-abdominal-pain-red_flags-6",
+          "chip_id": "gastro-abdominal-pain-red_flags-5",
           "chip_text": "abdominal mass",
-          "order": 6,
+          "order": 5,
           "search_terms": [
             "mass",
             "palpable"
@@ -81266,12 +90419,12 @@
           ]
         },
         {
-          "chip_id": "gastro-abdominal-pain-red_flags-7",
+          "chip_id": "gastro-abdominal-pain-red_flags-6",
           "chip_text": "fever with abdominal pain",
-          "order": 7,
+          "order": 6,
           "search_terms": [
             "fever",
-            "infection"
+            "sepsis"
           ],
           "tags": [
             "gastroenterology",
@@ -81282,8 +90435,21 @@
       "investigations": [
         {
           "chip_id": "gastro-abdominal-pain-investigations-1",
-          "chip_text": "blood tests reviewed if ordered",
+          "chip_text": "urinalysis reviewed if performed",
           "order": 1,
+          "search_terms": [
+            "urinalysis",
+            "urine",
+            "dipstick"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-investigations-2",
+          "chip_text": "blood tests reviewed if ordered",
+          "order": 2,
           "search_terms": [
             "blood",
             "FBC",
@@ -81295,9 +90461,9 @@
           ]
         },
         {
-          "chip_id": "gastro-abdominal-pain-investigations-2",
-          "chip_text": "abdominal imaging reviewed if available",
-          "order": 2,
+          "chip_id": "gastro-abdominal-pain-investigations-3",
+          "chip_text": "imaging reviewed if available",
+          "order": 3,
           "search_terms": [
             "ultrasound",
             "CT",
@@ -81308,9 +90474,9 @@
           ]
         },
         {
-          "chip_id": "gastro-abdominal-pain-investigations-3",
-          "chip_text": "previous gastroenterology records reviewed if available",
-          "order": 3,
+          "chip_id": "gastro-abdominal-pain-investigations-4",
+          "chip_text": "previous records reviewed if available",
+          "order": 4,
           "search_terms": [
             "previous",
             "records"
@@ -81351,7 +90517,8 @@
           "order": 3,
           "search_terms": [
             "referral",
-            "gastroenterology"
+            "gastroenterology",
+            "surgery"
           ],
           "tags": [
             "gastroenterology"
@@ -81420,6 +90587,18 @@
           "tags": [
             "gastroenterology"
           ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-follow_up-5",
+          "chip_text": "sooner if new symptoms",
+          "order": 5,
+          "search_terms": [
+            "sooner",
+            "new"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
         }
       ]
     },
@@ -81438,8 +90617,20 @@
         },
         {
           "chip_id": "gastro-constipation-symptoms-2",
-          "chip_text": "bowel frequency documented",
+          "chip_text": "duration documented",
           "order": 2,
+          "search_terms": [
+            "duration",
+            "how long"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-symptoms-3",
+          "chip_text": "stool frequency documented",
+          "order": 3,
           "search_terms": [
             "frequency",
             "how often",
@@ -81450,9 +90641,9 @@
           ]
         },
         {
-          "chip_id": "gastro-constipation-symptoms-3",
+          "chip_id": "gastro-constipation-symptoms-4",
           "chip_text": "stool consistency documented",
-          "order": 3,
+          "order": 4,
           "search_terms": [
             "consistency",
             "Bristol",
@@ -81463,9 +90654,9 @@
           ]
         },
         {
-          "chip_id": "gastro-constipation-symptoms-4",
-          "chip_text": "straining documented",
-          "order": 4,
+          "chip_id": "gastro-constipation-symptoms-5",
+          "chip_text": "straining reviewed",
+          "order": 5,
           "search_terms": [
             "straining",
             "difficulty"
@@ -81475,9 +90666,9 @@
           ]
         },
         {
-          "chip_id": "gastro-constipation-symptoms-5",
-          "chip_text": "sensation of incomplete evacuation reviewed",
-          "order": 5,
+          "chip_id": "gastro-constipation-symptoms-6",
+          "chip_text": "incomplete emptying reviewed",
+          "order": 6,
           "search_terms": [
             "incomplete",
             "evacuation"
@@ -81487,22 +90678,11 @@
           ]
         },
         {
-          "chip_id": "gastro-constipation-symptoms-6",
-          "chip_text": "laxative use reviewed",
-          "order": 6,
-          "search_terms": [
-            "laxative",
-            "medication"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
           "chip_id": "gastro-constipation-symptoms-7",
-          "chip_text": "dietary fibre and fluid intake reviewed",
+          "chip_text": "diet and fluid context reviewed",
           "order": 7,
           "search_terms": [
+            "diet",
             "fibre",
             "fluid",
             "water"
@@ -81513,24 +90693,12 @@
         },
         {
           "chip_id": "gastro-constipation-symptoms-8",
-          "chip_text": "impact on everyday life documented",
+          "chip_text": "medication history reviewed if relevant",
           "order": 8,
           "search_terms": [
-            "impact",
-            "daily",
-            "QOL"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-constipation-symptoms-9",
-          "chip_text": "abdominal pain or bloating reviewed",
-          "order": 9,
-          "search_terms": [
-            "pain",
-            "bloating"
+            "medication",
+            "laxative",
+            "opioid"
           ],
           "tags": [
             "gastroenterology"
@@ -81564,22 +90732,12 @@
         },
         {
           "chip_id": "gastro-constipation-relevant_negatives-3",
-          "chip_text": "no abdominal pain reported if applicable",
+          "chip_text": "no severe abdominal pain reported",
           "order": 3,
           "search_terms": [
+            "severe",
             "abdominal",
             "pain"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-constipation-relevant_negatives-4",
-          "chip_text": "no vomiting reported",
-          "order": 4,
-          "search_terms": [
-            "vomiting"
           ],
           "tags": [
             "gastroenterology"
@@ -81601,11 +90759,12 @@
         },
         {
           "chip_id": "gastro-constipation-exam_findings-2",
-          "chip_text": "abdominal distension documented if assessed",
+          "chip_text": "rectal examination documented if clinically appropriate and assessed",
           "order": 2,
           "search_terms": [
-            "distension",
-            "bloating"
+            "rectal",
+            "PR",
+            "DRE"
           ],
           "tags": [
             "gastroenterology"
@@ -81613,12 +90772,11 @@
         },
         {
           "chip_id": "gastro-constipation-exam_findings-3",
-          "chip_text": "rectal examination documented if assessed",
+          "chip_text": "abdominal distension documented if assessed",
           "order": 3,
           "search_terms": [
-            "rectal",
-            "PR",
-            "digital"
+            "distension",
+            "bloating"
           ],
           "tags": [
             "gastroenterology"
@@ -81630,18 +90788,6 @@
           "order": 4,
           "search_terms": [
             "appearance"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-constipation-exam_findings-5",
-          "chip_text": "vitals documented if measured",
-          "order": 5,
-          "search_terms": [
-            "vitals",
-            "BP"
           ],
           "tags": [
             "gastroenterology"
@@ -81734,23 +90880,11 @@
         },
         {
           "chip_id": "gastro-constipation-investigations-2",
-          "chip_text": "previous gastroenterology records reviewed if available",
+          "chip_text": "previous records reviewed if available",
           "order": 2,
           "search_terms": [
             "previous",
             "records"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-constipation-investigations-3",
-          "chip_text": "thyroid function reviewed if ordered",
-          "order": 3,
-          "search_terms": [
-            "TFT",
-            "thyroid"
           ],
           "tags": [
             "gastroenterology"
@@ -81772,12 +90906,11 @@
         },
         {
           "chip_id": "gastro-constipation-plan_phrases-2",
-          "chip_text": "lifestyle and dietary advice documented if discussed",
+          "chip_text": "medication plan documented if clinician decided",
           "order": 2,
           "search_terms": [
-            "lifestyle",
-            "fibre",
-            "fluid"
+            "medication",
+            "laxative"
           ],
           "tags": [
             "gastroenterology"
@@ -81785,11 +90918,12 @@
         },
         {
           "chip_id": "gastro-constipation-plan_phrases-3",
-          "chip_text": "medication plan documented if clinician decided",
+          "chip_text": "lifestyle and dietary advice documented if discussed",
           "order": 3,
           "search_terms": [
-            "laxative",
-            "medication"
+            "diet",
+            "fibre",
+            "fluid"
           ],
           "tags": [
             "gastroenterology"
@@ -81809,11 +90943,11 @@
         },
         {
           "chip_id": "gastro-constipation-plan_phrases-5",
-          "chip_text": "follow-up documented if arranged",
+          "chip_text": "referral documented if clinician decided",
           "order": 5,
           "search_terms": [
-            "follow",
-            "up"
+            "referral",
+            "gastroenterology"
           ],
           "tags": [
             "gastroenterology"
@@ -81821,11 +90955,11 @@
         },
         {
           "chip_id": "gastro-constipation-plan_phrases-6",
-          "chip_text": "referral documented if clinician decided",
+          "chip_text": "follow-up documented if arranged",
           "order": 6,
           "search_terms": [
-            "referral",
-            "gastroenterology"
+            "follow",
+            "up"
           ],
           "tags": [
             "gastroenterology"
@@ -81882,6 +91016,18 @@
           "tags": [
             "gastroenterology"
           ]
+        },
+        {
+          "chip_id": "gastro-constipation-follow_up-5",
+          "chip_text": "sooner if symptom change",
+          "order": 5,
+          "search_terms": [
+            "sooner",
+            "change"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
         }
       ]
     },
@@ -81902,10 +91048,9 @@
         },
         {
           "chip_id": "gastro-diarrhea-symptoms-2",
-          "chip_text": "onset and duration documented",
+          "chip_text": "duration documented",
           "order": 2,
           "search_terms": [
-            "onset",
             "duration",
             "acute",
             "chronic"
@@ -81916,7 +91061,7 @@
         },
         {
           "chip_id": "gastro-diarrhea-symptoms-3",
-          "chip_text": "frequency documented",
+          "chip_text": "stool frequency documented",
           "order": 3,
           "search_terms": [
             "frequency",
@@ -81928,12 +91073,12 @@
         },
         {
           "chip_id": "gastro-diarrhea-symptoms-4",
-          "chip_text": "stool character documented",
+          "chip_text": "stool consistency documented",
           "order": 4,
           "search_terms": [
-            "character",
+            "consistency",
             "watery",
-            "bloody"
+            "Bristol"
           ],
           "tags": [
             "gastroenterology"
@@ -81941,11 +91086,12 @@
         },
         {
           "chip_id": "gastro-diarrhea-symptoms-5",
-          "chip_text": "urgency reviewed",
+          "chip_text": "blood or mucus reviewed",
           "order": 5,
           "search_terms": [
-            "urgency",
-            "bowel"
+            "blood",
+            "mucus",
+            "slime"
           ],
           "tags": [
             "gastroenterology"
@@ -81953,33 +91099,8 @@
         },
         {
           "chip_id": "gastro-diarrhea-symptoms-6",
-          "chip_text": "associated abdominal pain reviewed",
-          "order": 6,
-          "search_terms": [
-            "abdominal",
-            "pain",
-            "cramping"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-diarrhea-symptoms-7",
-          "chip_text": "nausea or vomiting reviewed",
-          "order": 7,
-          "search_terms": [
-            "nausea",
-            "vomiting"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-diarrhea-symptoms-8",
           "chip_text": "fever reviewed",
-          "order": 8,
+          "order": 6,
           "search_terms": [
             "fever",
             "temperature"
@@ -81989,12 +91110,38 @@
           ]
         },
         {
-          "chip_id": "gastro-diarrhea-symptoms-9",
-          "chip_text": "travel history reviewed if relevant",
-          "order": 9,
+          "chip_id": "gastro-diarrhea-symptoms-7",
+          "chip_text": "vomiting reviewed",
+          "order": 7,
+          "search_terms": [
+            "vomiting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-symptoms-8",
+          "chip_text": "travel or food exposure reviewed",
+          "order": 8,
           "search_terms": [
             "travel",
+            "food",
+            "poisoning",
             "foreign"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-symptoms-9",
+          "chip_text": "hydration context reviewed",
+          "order": 9,
+          "search_terms": [
+            "hydration",
+            "drinking",
+            "output"
           ],
           "tags": [
             "gastroenterology"
@@ -82029,12 +91176,12 @@
       "relevant_negatives": [
         {
           "chip_id": "gastro-diarrhea-relevant_negatives-1",
-          "chip_text": "no rectal bleeding reported",
+          "chip_text": "no blood in stool reported",
           "order": 1,
           "search_terms": [
-            "rectal",
-            "bleeding",
-            "PR"
+            "blood",
+            "in",
+            "stool"
           ],
           "tags": [
             "gastroenterology"
@@ -82042,11 +91189,13 @@
         },
         {
           "chip_id": "gastro-diarrhea-relevant_negatives-2",
-          "chip_text": "no unintentional weight loss reported",
+          "chip_text": "no severe dehydration symptoms reported",
           "order": 2,
           "search_terms": [
-            "weight",
-            "loss"
+            "severe",
+            "dehydration",
+            "dry",
+            "dizzy"
           ],
           "tags": [
             "gastroenterology"
@@ -82054,11 +91203,12 @@
         },
         {
           "chip_id": "gastro-diarrhea-relevant_negatives-3",
-          "chip_text": "no nocturnal symptoms reported if applicable",
+          "chip_text": "no persistent high fever reported",
           "order": 3,
           "search_terms": [
-            "nocturnal",
-            "night"
+            "persistent",
+            "high",
+            "fever"
           ],
           "tags": [
             "gastroenterology"
@@ -82080,10 +91230,13 @@
         },
         {
           "chip_id": "gastro-diarrhea-exam_findings-2",
-          "chip_text": "abdominal tenderness documented if assessed",
+          "chip_text": "hydration documented if assessed",
           "order": 2,
           "search_terms": [
-            "tenderness"
+            "hydration",
+            "mucous",
+            "turgor",
+            "skin"
           ],
           "tags": [
             "gastroenterology"
@@ -82098,42 +91251,6 @@
             "BP",
             "pulse",
             "temp"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-diarrhea-exam_findings-4",
-          "chip_text": "general appearance documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "appearance"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-diarrhea-exam_findings-5",
-          "chip_text": "hydration assessment documented if assessed",
-          "order": 5,
-          "search_terms": [
-            "hydration",
-            "mucous",
-            "turgor"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-diarrhea-exam_findings-6",
-          "chip_text": "rectal examination documented if assessed",
-          "order": 6,
-          "search_terms": [
-            "rectal",
-            "PR"
           ],
           "tags": [
             "gastroenterology"
@@ -82160,8 +91277,7 @@
           "order": 2,
           "search_terms": [
             "dehydration",
-            "dry",
-            "turgor"
+            "dry"
           ],
           "tags": [
             "gastroenterology",
@@ -82211,7 +91327,7 @@
       "investigations": [
         {
           "chip_id": "gastro-diarrhea-investigations-1",
-          "chip_text": "stool studies reviewed if ordered",
+          "chip_text": "stool tests reviewed if ordered",
           "order": 1,
           "search_terms": [
             "stool",
@@ -82297,19 +91413,6 @@
           "tags": [
             "gastroenterology"
           ]
-        },
-        {
-          "chip_id": "gastro-diarrhea-plan_phrases-5",
-          "chip_text": "dietary advice documented if discussed",
-          "order": 5,
-          "search_terms": [
-            "diet",
-            "BRAT",
-            "avoid"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
         }
       ],
       "follow_up": [
@@ -82382,11 +91485,11 @@
         },
         {
           "chip_id": "gastro-dysphagia-symptoms-2",
-          "chip_text": "onset and duration documented",
+          "chip_text": "duration documented",
           "order": 2,
           "search_terms": [
-            "onset",
-            "duration"
+            "duration",
+            "how long"
           ],
           "tags": [
             "gastroenterology"
@@ -82394,20 +91497,8 @@
         },
         {
           "chip_id": "gastro-dysphagia-symptoms-3",
-          "chip_text": "progressive or intermittent documented",
+          "chip_text": "solids versus liquids context documented",
           "order": 3,
-          "search_terms": [
-            "progressive",
-            "intermittent"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-dysphagia-symptoms-4",
-          "chip_text": "solids versus liquids documented",
-          "order": 4,
           "search_terms": [
             "solids",
             "liquids",
@@ -82418,12 +91509,25 @@
           ]
         },
         {
+          "chip_id": "gastro-dysphagia-symptoms-4",
+          "chip_text": "progression reviewed",
+          "order": 4,
+          "search_terms": [
+            "progressive",
+            "worsening"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
           "chip_id": "gastro-dysphagia-symptoms-5",
-          "chip_text": "associated pain reviewed",
+          "chip_text": "odynophagia reviewed",
           "order": 5,
           "search_terms": [
-            "pain",
-            "odynophagia"
+            "odynophagia",
+            "painful",
+            "swallowing"
           ],
           "tags": [
             "gastroenterology"
@@ -82431,8 +91535,21 @@
         },
         {
           "chip_id": "gastro-dysphagia-symptoms-6",
-          "chip_text": "weight loss reviewed",
+          "chip_text": "reflux symptoms reviewed",
           "order": 6,
+          "search_terms": [
+            "reflux",
+            "heartburn",
+            "GERD"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-symptoms-7",
+          "chip_text": "weight loss reviewed",
+          "order": 7,
           "search_terms": [
             "weight",
             "loss"
@@ -82442,26 +91559,13 @@
           ]
         },
         {
-          "chip_id": "gastro-dysphagia-symptoms-7",
+          "chip_id": "gastro-dysphagia-symptoms-8",
           "chip_text": "regurgitation reviewed",
-          "order": 7,
+          "order": 8,
           "search_terms": [
             "regurgitation",
             "food",
-            "coming back"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-dysphagia-symptoms-8",
-          "chip_text": "choking or aspiration reviewed",
-          "order": 8,
-          "search_terms": [
-            "choking",
-            "aspiration",
-            "cough"
+            "back"
           ],
           "tags": [
             "gastroenterology"
@@ -82469,12 +91573,12 @@
         },
         {
           "chip_id": "gastro-dysphagia-symptoms-9",
-          "chip_text": "medication history reviewed if relevant",
+          "chip_text": "associated cough or choking reviewed",
           "order": 9,
           "search_terms": [
-            "medication",
-            "NSAID",
-            "bisphosphonate"
+            "cough",
+            "choking",
+            "aspiration"
           ],
           "tags": [
             "gastroenterology"
@@ -82496,48 +91600,12 @@
         },
         {
           "chip_id": "gastro-dysphagia-relevant_negatives-2",
-          "chip_text": "no haematemesis reported",
+          "chip_text": "no vomiting blood reported",
           "order": 2,
           "search_terms": [
             "hematemesis",
-            "blood"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-dysphagia-relevant_negatives-3",
-          "chip_text": "no persistent vomiting reported",
-          "order": 3,
-          "search_terms": [
-            "vomiting",
-            "regurgitation"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-dysphagia-relevant_negatives-4",
-          "chip_text": "no hoarseness reported if relevant",
-          "order": 4,
-          "search_terms": [
-            "hoarseness",
-            "voice"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-dysphagia-relevant_negatives-5",
-          "chip_text": "no neurological symptoms reported if relevant",
-          "order": 5,
-          "search_terms": [
-            "neurological",
-            "CVA",
-            "stroke"
+            "blood",
+            "vomit"
           ],
           "tags": [
             "gastroenterology"
@@ -82547,9 +91615,10 @@
       "exam_findings": [
         {
           "chip_id": "gastro-dysphagia-exam_findings-1",
-          "chip_text": "general appearance documented if assessed",
+          "chip_text": "general examination documented if assessed",
           "order": 1,
           "search_terms": [
+            "general",
             "appearance",
             "nutrition"
           ],
@@ -82559,12 +91628,12 @@
         },
         {
           "chip_id": "gastro-dysphagia-exam_findings-2",
-          "chip_text": "vitals documented if measured",
+          "chip_text": "oral and throat examination documented if assessed",
           "order": 2,
           "search_terms": [
-            "vitals",
-            "BP",
-            "pulse"
+            "oral",
+            "throat",
+            "mouth"
           ],
           "tags": [
             "gastroenterology"
@@ -82572,11 +91641,12 @@
         },
         {
           "chip_id": "gastro-dysphagia-exam_findings-3",
-          "chip_text": "abdominal examination documented if assessed",
+          "chip_text": "vitals documented if measured",
           "order": 3,
           "search_terms": [
-            "abdominal",
-            "exam"
+            "vitals",
+            "BP",
+            "pulse"
           ],
           "tags": [
             "gastroenterology"
@@ -82588,7 +91658,8 @@
           "order": 4,
           "search_terms": [
             "BMI",
-            "weight"
+            "weight",
+            "nutrition"
           ],
           "tags": [
             "gastroenterology"
@@ -82628,8 +91699,7 @@
           "order": 3,
           "search_terms": [
             "odynophagia",
-            "painful",
-            "swallowing"
+            "painful"
           ],
           "tags": [
             "gastroenterology",
@@ -82642,8 +91712,8 @@
           "order": 4,
           "search_terms": [
             "age",
-            "over 50",
-            "new"
+            "new",
+            "onset"
           ],
           "tags": [
             "gastroenterology",
@@ -82671,7 +91741,7 @@
           "search_terms": [
             "family",
             "GI",
-            "cancer"
+            "oesophageal"
           ],
           "tags": [
             "gastroenterology",
@@ -82695,11 +91765,12 @@
         },
         {
           "chip_id": "gastro-dysphagia-investigations-2",
-          "chip_text": "barium swallow report reviewed if performed",
+          "chip_text": "blood tests reviewed if ordered",
           "order": 2,
           "search_terms": [
-            "barium",
-            "swallow"
+            "blood",
+            "FBC",
+            "iron"
           ],
           "tags": [
             "gastroenterology"
@@ -82707,11 +91778,11 @@
         },
         {
           "chip_id": "gastro-dysphagia-investigations-3",
-          "chip_text": "previous imaging reviewed if available",
+          "chip_text": "previous records reviewed if available",
           "order": 3,
           "search_terms": [
-            "imaging",
-            "CT"
+            "previous",
+            "records"
           ],
           "tags": [
             "gastroenterology"
@@ -82928,24 +91999,12 @@
         },
         {
           "chip_id": "gastro-gerd-symptoms-9",
-          "chip_text": "belching reviewed if relevant",
+          "chip_text": "dietary triggers reviewed if relevant",
           "order": 9,
           "search_terms": [
-            "belching",
-            "burping"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-gerd-symptoms-10",
-          "chip_text": "chest pain reviewed if non-cardiac",
-          "order": 10,
-          "search_terms": [
-            "chest",
-            "pain",
-            "non-cardiac"
+            "diet",
+            "trigger",
+            "coffee"
           ],
           "tags": [
             "gastroenterology"
@@ -83096,11 +92155,11 @@
       "red_flags": [
         {
           "chip_id": "gastro-gerd-red_flags-1",
-          "chip_text": "dysphagia or odynophagia",
+          "chip_text": "dysphagia",
           "order": 1,
           "search_terms": [
             "dysphagia",
-            "odynophagia"
+            "swallowing"
           ],
           "tags": [
             "gastroenterology",
@@ -83109,8 +92168,22 @@
         },
         {
           "chip_id": "gastro-gerd-red_flags-2",
-          "chip_text": "unexplained weight loss",
+          "chip_text": "odynophagia",
           "order": 2,
+          "search_terms": [
+            "odynophagia",
+            "painful",
+            "swallowing"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-red_flags-3",
+          "chip_text": "unintentional weight loss",
+          "order": 3,
           "search_terms": [
             "weight",
             "loss"
@@ -83121,10 +92194,11 @@
           ]
         },
         {
-          "chip_id": "gastro-gerd-red_flags-3",
-          "chip_text": "gastrointestinal bleeding",
-          "order": 3,
+          "chip_id": "gastro-gerd-red_flags-4",
+          "chip_text": "gastrointestinal bleeding symptoms",
+          "order": 4,
           "search_terms": [
+            "GI",
             "bleeding",
             "hematemesis",
             "melena"
@@ -83135,9 +92209,9 @@
           ]
         },
         {
-          "chip_id": "gastro-gerd-red_flags-4",
+          "chip_id": "gastro-gerd-red_flags-5",
           "chip_text": "persistent vomiting",
-          "order": 4,
+          "order": 5,
           "search_terms": [
             "vomiting",
             "persistent"
@@ -83148,42 +92222,18 @@
           ]
         },
         {
-          "chip_id": "gastro-gerd-red_flags-5",
-          "chip_text": "epigastric mass",
-          "order": 5,
-          "search_terms": [
-            "mass",
-            "epigastric"
-          ],
-          "tags": [
-            "gastroenterology",
-            "high_safety"
-          ]
-        },
-        {
           "chip_id": "gastro-gerd-red_flags-6",
-          "chip_text": "iron deficiency anaemia",
+          "chip_text": "anaemia if documented",
           "order": 6,
           "search_terms": [
             "anaemia",
-            "IDA"
+            "anemia",
+            "IDA",
+            "iron"
           ],
           "tags": [
             "gastroenterology",
             "high_safety"
-          ]
-        },
-        {
-          "chip_id": "gastro-gerd-red_flags-7",
-          "chip_text": "family history of Barrett oesophagus if relevant",
-          "order": 7,
-          "search_terms": [
-            "Barrett",
-            "family",
-            "oesophageal"
-          ],
-          "tags": [
-            "gastroenterology"
           ]
         }
       ],
@@ -83203,11 +92253,13 @@
         },
         {
           "chip_id": "gastro-gerd-investigations-2",
-          "chip_text": "previous imaging reviewed if available",
+          "chip_text": "H. pylori result reviewed if available",
           "order": 2,
           "search_terms": [
-            "imaging",
-            "barium"
+            "H. pylori",
+            "HP",
+            "breath",
+            "test"
           ],
           "tags": [
             "gastroenterology"
@@ -83221,6 +92273,18 @@
             "blood",
             "FBC",
             "iron"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-investigations-4",
+          "chip_text": "previous records reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "previous",
+            "records"
           ],
           "tags": [
             "gastroenterology"
@@ -83242,7 +92306,7 @@
         },
         {
           "chip_id": "gastro-gerd-plan_phrases-2",
-          "chip_text": "lifestyle modification discussed if applicable",
+          "chip_text": "lifestyle advice documented if discussed",
           "order": 2,
           "search_terms": [
             "lifestyle",
@@ -83280,11 +92344,36 @@
         },
         {
           "chip_id": "gastro-gerd-plan_phrases-5",
-          "chip_text": "follow-up documented if arranged",
+          "chip_text": "referral documented if clinician decided",
           "order": 5,
+          "search_terms": [
+            "referral",
+            "gastroenterology",
+            "OGD"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-plan_phrases-6",
+          "chip_text": "follow-up documented if arranged",
+          "order": 6,
           "search_terms": [
             "follow",
             "up"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-plan_phrases-7",
+          "chip_text": "PPI trial discussed if applicable",
+          "order": 7,
+          "search_terms": [
+            "PPI",
+            "trial"
           ],
           "tags": [
             "gastroenterology"
@@ -83341,6 +92430,18 @@
           "tags": [
             "gastroenterology"
           ]
+        },
+        {
+          "chip_id": "gastro-gerd-follow_up-5",
+          "chip_text": "8-12 weeks if ongoing",
+          "order": 5,
+          "search_terms": [
+            "eight",
+            "twelve"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
         }
       ]
     },
@@ -83361,11 +92462,12 @@
         },
         {
           "chip_id": "gastro-ibs-symptoms-symptoms-2",
-          "chip_text": "abdominal pain reviewed",
+          "chip_text": "abdominal pain or discomfort reviewed",
           "order": 2,
           "search_terms": [
             "abdominal",
             "pain",
+            "discomfort",
             "cramping"
           ],
           "tags": [
@@ -83399,9 +92501,11 @@
         },
         {
           "chip_id": "gastro-ibs-symptoms-symptoms-5",
-          "chip_text": "constipation reviewed",
+          "chip_text": "diarrhoea and constipation pattern reviewed",
           "order": 5,
           "search_terms": [
+            "diarrhoea",
+            "diarrhea",
             "constipation"
           ],
           "tags": [
@@ -83410,11 +92514,12 @@
         },
         {
           "chip_id": "gastro-ibs-symptoms-symptoms-6",
-          "chip_text": "diarrhoea reviewed",
+          "chip_text": "symptom relation to stress or food reviewed",
           "order": 6,
           "search_terms": [
-            "diarrhoea",
-            "diarrhea"
+            "stress",
+            "food",
+            "trigger"
           ],
           "tags": [
             "gastroenterology"
@@ -83438,33 +92543,7 @@
           "order": 8,
           "search_terms": [
             "straining",
-            "incomplete",
-            "evacuation"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-ibs-symptoms-symptoms-9",
-          "chip_text": "symptom triggers reviewed",
-          "order": 9,
-          "search_terms": [
-            "trigger",
-            "food",
-            "stress"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-ibs-symptoms-symptoms-10",
-          "chip_text": "mucus in stool reviewed",
-          "order": 10,
-          "search_terms": [
-            "mucus",
-            "slime"
+            "incomplete"
           ],
           "tags": [
             "gastroenterology"
@@ -83499,22 +92578,12 @@
         },
         {
           "chip_id": "gastro-ibs-symptoms-relevant_negatives-3",
-          "chip_text": "no nocturnal symptoms reported if applicable",
+          "chip_text": "no nocturnal diarrhea reported",
           "order": 3,
           "search_terms": [
             "nocturnal",
-            "night"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-ibs-symptoms-relevant_negatives-4",
-          "chip_text": "no fever reported",
-          "order": 4,
-          "search_terms": [
-            "fever"
+            "night",
+            "diarrhea"
           ],
           "tags": [
             "gastroenterology"
@@ -83550,8 +92619,7 @@
           "chip_text": "general appearance documented if assessed",
           "order": 3,
           "search_terms": [
-            "appearance",
-            "well"
+            "appearance"
           ],
           "tags": [
             "gastroenterology"
@@ -83559,20 +92627,8 @@
         },
         {
           "chip_id": "gastro-ibs-symptoms-exam_findings-4",
-          "chip_text": "BMI documented if measured",
-          "order": 4,
-          "search_terms": [
-            "BMI",
-            "weight"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-ibs-symptoms-exam_findings-5",
           "chip_text": "vitals documented if measured",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "vitals",
             "BP"
@@ -83681,7 +92737,7 @@
         },
         {
           "chip_id": "gastro-ibs-symptoms-investigations-2",
-          "chip_text": "stool studies reviewed if ordered",
+          "chip_text": "stool tests reviewed if ordered",
           "order": 2,
           "search_terms": [
             "stool",
@@ -83694,7 +92750,7 @@
         },
         {
           "chip_id": "gastro-ibs-symptoms-investigations-3",
-          "chip_text": "previous gastroenterology records reviewed if available",
+          "chip_text": "previous records reviewed if available",
           "order": 3,
           "search_terms": [
             "previous",
@@ -83720,7 +92776,7 @@
         },
         {
           "chip_id": "gastro-ibs-symptoms-plan_phrases-2",
-          "chip_text": "lifestyle and dietary modification discussed if applicable",
+          "chip_text": "lifestyle and diet advice documented if discussed",
           "order": 2,
           "search_terms": [
             "lifestyle",
@@ -83733,20 +92789,8 @@
         },
         {
           "chip_id": "gastro-ibs-symptoms-plan_phrases-3",
-          "chip_text": "medication plan documented if clinician decided",
-          "order": 3,
-          "search_terms": [
-            "medication",
-            "antispasmodic"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-ibs-symptoms-plan_phrases-4",
           "chip_text": "safety-netting documented if discussed",
-          "order": 4,
+          "order": 3,
           "search_terms": [
             "safety",
             "netting"
@@ -83756,12 +92800,25 @@
           ]
         },
         {
-          "chip_id": "gastro-ibs-symptoms-plan_phrases-5",
+          "chip_id": "gastro-ibs-symptoms-plan_phrases-4",
           "chip_text": "referral documented if clinician decided",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "referral",
+            "gastroenterology",
+            "dietetics"
+          ],
+          "tags": [
             "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
           ],
           "tags": [
             "gastroenterology"
@@ -83769,11 +92826,11 @@
         },
         {
           "chip_id": "gastro-ibs-symptoms-plan_phrases-6",
-          "chip_text": "follow-up documented if arranged",
+          "chip_text": "medication plan documented if clinician decided",
           "order": 6,
           "search_terms": [
-            "follow",
-            "up"
+            "medication",
+            "antispasmodic"
           ],
           "tags": [
             "gastroenterology"
@@ -83830,6 +92887,18 @@
           "tags": [
             "gastroenterology"
           ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-follow_up-5",
+          "chip_text": "sooner if symptom change",
+          "order": 5,
+          "search_terms": [
+            "sooner",
+            "change"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
         }
       ]
     },
@@ -83850,12 +92919,11 @@
         },
         {
           "chip_id": "gastro-jaundice-documentation-symptoms-2",
-          "chip_text": "onset and duration documented",
+          "chip_text": "duration documented",
           "order": 2,
           "search_terms": [
-            "onset",
             "duration",
-            "acute"
+            "how long"
           ],
           "tags": [
             "gastroenterology"
@@ -83863,13 +92931,13 @@
         },
         {
           "chip_id": "gastro-jaundice-documentation-symptoms-3",
-          "chip_text": "colour of urine and stool reviewed",
+          "chip_text": "dark urine reviewed",
           "order": 3,
           "search_terms": [
-            "urine",
             "dark",
-            "stool",
-            "pale"
+            "urine",
+            "tea",
+            "coloured"
           ],
           "tags": [
             "gastroenterology"
@@ -83877,8 +92945,22 @@
         },
         {
           "chip_id": "gastro-jaundice-documentation-symptoms-4",
-          "chip_text": "pruritus reviewed",
+          "chip_text": "pale stool reviewed",
           "order": 4,
+          "search_terms": [
+            "pale",
+            "stool",
+            "clay",
+            "coloured"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-symptoms-5",
+          "chip_text": "pruritus reviewed",
+          "order": 5,
           "search_terms": [
             "pruritus",
             "itching"
@@ -83888,11 +92970,10 @@
           ]
         },
         {
-          "chip_id": "gastro-jaundice-documentation-symptoms-5",
+          "chip_id": "gastro-jaundice-documentation-symptoms-6",
           "chip_text": "abdominal pain reviewed",
-          "order": 5,
+          "order": 6,
           "search_terms": [
-            "abdominal",
             "pain",
             "RUQ"
           ],
@@ -83901,9 +92982,21 @@
           ]
         },
         {
-          "chip_id": "gastro-jaundice-documentation-symptoms-6",
+          "chip_id": "gastro-jaundice-documentation-symptoms-7",
+          "chip_text": "fever reviewed",
+          "order": 7,
+          "search_terms": [
+            "fever",
+            "temperature"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-symptoms-8",
           "chip_text": "weight loss reviewed",
-          "order": 6,
+          "order": 8,
           "search_terms": [
             "weight",
             "loss"
@@ -83913,48 +93006,13 @@
           ]
         },
         {
-          "chip_id": "gastro-jaundice-documentation-symptoms-7",
-          "chip_text": "alcohol history reviewed",
-          "order": 7,
-          "search_terms": [
-            "alcohol"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-jaundice-documentation-symptoms-8",
-          "chip_text": "medication history reviewed if relevant",
-          "order": 8,
-          "search_terms": [
-            "medication",
-            "hepatotoxic"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
           "chip_id": "gastro-jaundice-documentation-symptoms-9",
-          "chip_text": "travel history reviewed if relevant",
+          "chip_text": "medication and alcohol history reviewed",
           "order": 9,
           "search_terms": [
-            "travel",
-            "hepatitis"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-jaundice-documentation-symptoms-10",
-          "chip_text": "alcohol intake quantified",
-          "order": 10,
-          "search_terms": [
+            "medication",
             "alcohol",
-            "units",
-            "per week"
+            "drugs"
           ],
           "tags": [
             "gastroenterology"
@@ -83964,11 +93022,11 @@
       "relevant_negatives": [
         {
           "chip_id": "gastro-jaundice-documentation-relevant_negatives-1",
-          "chip_text": "no significant abdominal pain reported if applicable",
+          "chip_text": "no significant abdominal trauma reported if applicable",
           "order": 1,
           "search_terms": [
-            "pain",
-            "abdominal"
+            "trauma",
+            "injury"
           ],
           "tags": [
             "gastroenterology"
@@ -83976,22 +93034,11 @@
         },
         {
           "chip_id": "gastro-jaundice-documentation-relevant_negatives-2",
-          "chip_text": "no fever reported if applicable",
+          "chip_text": "no known hepatitis exposure reported if applicable",
           "order": 2,
           "search_terms": [
-            "fever"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-jaundice-documentation-relevant_negatives-3",
-          "chip_text": "no haematemesis reported",
-          "order": 3,
-          "search_terms": [
-            "hematemesis",
-            "bleeding"
+            "hepatitis",
+            "exposure"
           ],
           "tags": [
             "gastroenterology"
@@ -84095,11 +93142,11 @@
         },
         {
           "chip_id": "gastro-jaundice-documentation-red_flags-3",
-          "chip_text": "right upper quadrant tenderness",
+          "chip_text": "fever with jaundice",
           "order": 3,
           "search_terms": [
-            "RUQ",
-            "tenderness"
+            "fever",
+            "cholangitis"
           ],
           "tags": [
             "gastroenterology",
@@ -84108,11 +93155,11 @@
         },
         {
           "chip_id": "gastro-jaundice-documentation-red_flags-4",
-          "chip_text": "fever with jaundice",
+          "chip_text": "right upper quadrant tenderness",
           "order": 4,
           "search_terms": [
-            "fever",
-            "cholangitis"
+            "RUQ",
+            "tenderness"
           ],
           "tags": [
             "gastroenterology",
@@ -84145,17 +93192,29 @@
             "gastroenterology",
             "high_safety"
           ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-red_flags-7",
+          "chip_text": "fever with rigors",
+          "order": 7,
+          "search_terms": [
+            "fever",
+            "rigors"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
         }
       ],
       "investigations": [
         {
           "chip_id": "gastro-jaundice-documentation-investigations-1",
-          "chip_text": "LFT and bilirubin reviewed",
+          "chip_text": "liver function tests reviewed if ordered",
           "order": 1,
           "search_terms": [
             "LFT",
-            "bilirubin",
             "ALT",
+            "AST",
             "ALP"
           ],
           "tags": [
@@ -84164,8 +93223,21 @@
         },
         {
           "chip_id": "gastro-jaundice-documentation-investigations-2",
-          "chip_text": "abdominal imaging reviewed if available",
+          "chip_text": "bilirubin reviewed if ordered",
           "order": 2,
+          "search_terms": [
+            "bilirubin",
+            "direct",
+            "indirect"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-investigations-3",
+          "chip_text": "ultrasound or imaging reviewed if available",
+          "order": 3,
           "search_terms": [
             "ultrasound",
             "CT",
@@ -84176,15 +93248,12 @@
           ]
         },
         {
-          "chip_id": "gastro-jaundice-documentation-investigations-3",
-          "chip_text": "viral hepatitis serology reviewed if ordered",
-          "order": 3,
+          "chip_id": "gastro-jaundice-documentation-investigations-4",
+          "chip_text": "previous records reviewed if available",
+          "order": 4,
           "search_terms": [
-            "hepatitis",
-            "A",
-            "B",
-            "C",
-            "E"
+            "previous",
+            "records"
           ],
           "tags": [
             "gastroenterology"
@@ -84312,12 +93381,14 @@
         },
         {
           "chip_id": "gastro-liver-enzyme-review-symptoms-2",
-          "chip_text": "AST and ALT reviewed",
+          "chip_text": "result type documented",
           "order": 2,
           "search_terms": [
             "AST",
             "ALT",
-            "transaminases"
+            "ALP",
+            "GGT",
+            "type"
           ],
           "tags": [
             "gastroenterology"
@@ -84325,12 +93396,12 @@
         },
         {
           "chip_id": "gastro-liver-enzyme-review-symptoms-3",
-          "chip_text": "ALP and GGT reviewed",
+          "chip_text": "trend and comparison reviewed",
           "order": 3,
           "search_terms": [
-            "ALP",
-            "GGT",
-            "cholestatic"
+            "trend",
+            "comparison",
+            "previous"
           ],
           "tags": [
             "gastroenterology"
@@ -84338,33 +93409,8 @@
         },
         {
           "chip_id": "gastro-liver-enzyme-review-symptoms-4",
-          "chip_text": "bilirubin reviewed",
+          "chip_text": "alcohol history reviewed",
           "order": 4,
-          "search_terms": [
-            "bilirubin",
-            "jaundice"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-liver-enzyme-review-symptoms-5",
-          "chip_text": "symptoms reviewed",
-          "order": 5,
-          "search_terms": [
-            "symptoms",
-            "fatigue",
-            "jaundice"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-liver-enzyme-review-symptoms-6",
-          "chip_text": "alcohol history reviewed if relevant",
-          "order": 6,
           "search_terms": [
             "alcohol",
             "drinking"
@@ -84374,13 +93420,42 @@
           ]
         },
         {
-          "chip_id": "gastro-liver-enzyme-review-symptoms-7",
-          "chip_text": "medication history reviewed if relevant",
-          "order": 7,
+          "chip_id": "gastro-liver-enzyme-review-symptoms-5",
+          "chip_text": "medication and supplement history reviewed",
+          "order": 5,
           "search_terms": [
             "medication",
             "statin",
-            "paracetamol"
+            "paracetamol",
+            "supplement"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-symptoms-6",
+          "chip_text": "viral hepatitis risk context reviewed if relevant",
+          "order": 6,
+          "search_terms": [
+            "hepatitis",
+            "B",
+            "C",
+            "viral"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-symptoms-7",
+          "chip_text": "abdominal pain, jaundice and pruritus reviewed",
+          "order": 7,
+          "search_terms": [
+            "pain",
+            "jaundice",
+            "itching",
+            "RUQ"
           ],
           "tags": [
             "gastroenterology"
@@ -84388,23 +93463,11 @@
         },
         {
           "chip_id": "gastro-liver-enzyme-review-symptoms-8",
-          "chip_text": "fatigue reviewed",
+          "chip_text": "fatigue reviewed if relevant",
           "order": 8,
           "search_terms": [
             "fatigue",
             "tiredness"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-liver-enzyme-review-symptoms-9",
-          "chip_text": "pruritus reviewed if relevant",
-          "order": 9,
-          "search_terms": [
-            "itching",
-            "pruritus"
           ],
           "tags": [
             "gastroenterology"
@@ -84418,7 +93481,8 @@
           "order": 1,
           "search_terms": [
             "jaundice",
-            "yellow"
+            "yellow",
+            "icterus"
           ],
           "tags": [
             "gastroenterology"
@@ -84426,11 +93490,13 @@
         },
         {
           "chip_id": "gastro-liver-enzyme-review-relevant_negatives-2",
-          "chip_text": "no abdominal pain reported",
+          "chip_text": "no dark urine or pale stool reported",
           "order": 2,
           "search_terms": [
-            "pain",
-            "RUQ"
+            "dark",
+            "urine",
+            "pale",
+            "stool"
           ],
           "tags": [
             "gastroenterology"
@@ -84440,21 +93506,8 @@
       "exam_findings": [
         {
           "chip_id": "gastro-liver-enzyme-review-exam_findings-1",
-          "chip_text": "vitals documented if measured",
-          "order": 1,
-          "search_terms": [
-            "vitals",
-            "BP",
-            "pulse"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-liver-enzyme-review-exam_findings-2",
           "chip_text": "abdominal examination documented if assessed",
-          "order": 2,
+          "order": 1,
           "search_terms": [
             "abdominal",
             "exam"
@@ -84464,9 +93517,9 @@
           ]
         },
         {
-          "chip_id": "gastro-liver-enzyme-review-exam_findings-3",
+          "chip_id": "gastro-liver-enzyme-review-exam_findings-2",
           "chip_text": "hepatomegaly documented if assessed",
-          "order": 3,
+          "order": 2,
           "search_terms": [
             "hepatomegaly",
             "liver",
@@ -84477,13 +93530,26 @@
           ]
         },
         {
+          "chip_id": "gastro-liver-enzyme-review-exam_findings-3",
+          "chip_text": "signs of chronic liver disease documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "spider",
+            "naevi",
+            "palmar",
+            "erythema"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
           "chip_id": "gastro-liver-enzyme-review-exam_findings-4",
-          "chip_text": "jaundice documented if present",
+          "chip_text": "general appearance documented if assessed",
           "order": 4,
           "search_terms": [
-            "jaundice",
-            "icterus",
-            "sclera"
+            "appearance",
+            "jaundice"
           ],
           "tags": [
             "gastroenterology"
@@ -84491,13 +93557,11 @@
         },
         {
           "chip_id": "gastro-liver-enzyme-review-exam_findings-5",
-          "chip_text": "signs of chronic liver disease documented if assessed",
+          "chip_text": "vitals documented if measured",
           "order": 5,
           "search_terms": [
-            "spider",
-            "naevi",
-            "palmar",
-            "erythema"
+            "vitals",
+            "BP"
           ],
           "tags": [
             "gastroenterology"
@@ -84549,11 +93613,12 @@
         },
         {
           "chip_id": "gastro-liver-enzyme-review-red_flags-4",
-          "chip_text": "right upper quadrant pain",
+          "chip_text": "signs of decompensated liver disease",
           "order": 4,
           "search_terms": [
-            "RUQ",
-            "pain"
+            "ascites",
+            "encephalopathy",
+            "varices"
           ],
           "tags": [
             "gastroenterology",
@@ -84562,11 +93627,12 @@
         },
         {
           "chip_id": "gastro-liver-enzyme-review-red_flags-5",
-          "chip_text": "signs of decompensated liver disease",
+          "chip_text": "rapidly rising liver enzymes",
           "order": 5,
           "search_terms": [
-            "ascites",
-            "encephalopathy"
+            "rapid",
+            "rising",
+            "LFT"
           ],
           "tags": [
             "gastroenterology"
@@ -84576,12 +93642,14 @@
       "investigations": [
         {
           "chip_id": "gastro-liver-enzyme-review-investigations-1",
-          "chip_text": "previous LFT records reviewed if available",
+          "chip_text": "liver function tests reviewed",
           "order": 1,
           "search_terms": [
-            "previous",
             "LFT",
-            "trend"
+            "AST",
+            "ALT",
+            "ALP",
+            "GGT"
           ],
           "tags": [
             "gastroenterology"
@@ -84589,12 +93657,12 @@
         },
         {
           "chip_id": "gastro-liver-enzyme-review-investigations-2",
-          "chip_text": "abdominal imaging reviewed if available",
+          "chip_text": "previous results compared if available",
           "order": 2,
           "search_terms": [
-            "ultrasound",
-            "liver",
-            "CT"
+            "previous",
+            "comparison",
+            "trend"
           ],
           "tags": [
             "gastroenterology"
@@ -84602,13 +93670,38 @@
         },
         {
           "chip_id": "gastro-liver-enzyme-review-investigations-3",
-          "chip_text": "viral hepatitis serology reviewed if ordered",
+          "chip_text": "ultrasound report reviewed if available",
           "order": 3,
+          "search_terms": [
+            "ultrasound",
+            "liver",
+            "US"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-investigations-4",
+          "chip_text": "viral hepatitis serology reviewed if ordered",
+          "order": 4,
           "search_terms": [
             "hepatitis",
             "B",
             "C",
             "serology"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-investigations-5",
+          "chip_text": "previous imaging reviewed if available",
+          "order": 5,
+          "search_terms": [
+            "ultrasound",
+            "CT"
           ],
           "tags": [
             "gastroenterology"
@@ -84630,9 +93723,10 @@
         },
         {
           "chip_id": "gastro-liver-enzyme-review-plan_phrases-2",
-          "chip_text": "repeat testing interval documented if clinician decided",
+          "chip_text": "follow-up testing documented if arranged by clinician",
           "order": 2,
           "search_terms": [
+            "follow-up",
             "repeat",
             "LFT",
             "interval"
@@ -84643,8 +93737,20 @@
         },
         {
           "chip_id": "gastro-liver-enzyme-review-plan_phrases-3",
-          "chip_text": "referral documented if clinician decided",
+          "chip_text": "safety-netting documented if discussed",
           "order": 3,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-plan_phrases-4",
+          "chip_text": "referral documented if clinician decided",
+          "order": 4,
           "search_terms": [
             "referral",
             "gastroenterology",
@@ -84655,9 +93761,9 @@
           ]
         },
         {
-          "chip_id": "gastro-liver-enzyme-review-plan_phrases-4",
+          "chip_id": "gastro-liver-enzyme-review-plan_phrases-5",
           "chip_text": "follow-up documented if arranged",
-          "order": 4,
+          "order": 5,
           "search_terms": [
             "follow",
             "up"
@@ -84716,6 +93822,18 @@
           "tags": [
             "gastroenterology"
           ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-follow_up-5",
+          "chip_text": "sooner if symptom change",
+          "order": 5,
+          "search_terms": [
+            "sooner",
+            "change"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
         }
       ]
     },
@@ -84736,11 +93854,13 @@
         },
         {
           "chip_id": "gastro-post-endoscopy-followup-symptoms-2",
-          "chip_text": "procedure tolerance reviewed",
+          "chip_text": "procedure type documented",
           "order": 2,
           "search_terms": [
-            "tolerance",
-            "sedation"
+            "procedure",
+            "OGD",
+            "colonoscopy",
+            "type"
           ],
           "tags": [
             "gastroenterology"
@@ -84748,12 +93868,12 @@
         },
         {
           "chip_id": "gastro-post-endoscopy-followup-symptoms-3",
-          "chip_text": "clinical findings reviewed",
+          "chip_text": "indication reviewed",
           "order": 3,
           "search_terms": [
-            "findings",
-            "endoscopy",
-            "result"
+            "indication",
+            "reason",
+            "scope"
           ],
           "tags": [
             "gastroenterology"
@@ -84761,12 +93881,12 @@
         },
         {
           "chip_id": "gastro-post-endoscopy-followup-symptoms-4",
-          "chip_text": "biopsy results reviewed if available",
+          "chip_text": "findings reviewed if available",
           "order": 4,
           "search_terms": [
-            "biopsy",
-            "histology",
-            "result"
+            "findings",
+            "result",
+            "scope"
           ],
           "tags": [
             "gastroenterology"
@@ -84774,11 +93894,12 @@
         },
         {
           "chip_id": "gastro-post-endoscopy-followup-symptoms-5",
-          "chip_text": "symptoms since procedure reviewed",
+          "chip_text": "symptoms after procedure reviewed",
           "order": 5,
           "search_terms": [
             "symptoms",
-            "recovery"
+            "recovery",
+            "after"
           ],
           "tags": [
             "gastroenterology"
@@ -84786,13 +93907,13 @@
         },
         {
           "chip_id": "gastro-post-endoscopy-followup-symptoms-6",
-          "chip_text": "bleeding or pain reviewed",
+          "chip_text": "medication and advice review documented if relevant",
           "order": 6,
           "search_terms": [
-            "bleeding",
-            "pain",
-            "post",
-            "procedure"
+            "medication",
+            "PPI",
+            "change",
+            "advice"
           ],
           "tags": [
             "gastroenterology"
@@ -84800,21 +93921,8 @@
         },
         {
           "chip_id": "gastro-post-endoscopy-followup-symptoms-7",
-          "chip_text": "medication adjustment reviewed if applicable",
-          "order": 7,
-          "search_terms": [
-            "medication",
-            "PPI",
-            "change"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-post-endoscopy-followup-symptoms-8",
           "chip_text": "diet tolerated since procedure",
-          "order": 8,
+          "order": 7,
           "search_terms": [
             "diet",
             "eating",
@@ -84825,9 +93933,9 @@
           ]
         },
         {
-          "chip_id": "gastro-post-endoscopy-followup-symptoms-9",
+          "chip_id": "gastro-post-endoscopy-followup-symptoms-8",
           "chip_text": "return to normal activities reviewed",
-          "order": 9,
+          "order": 8,
           "search_terms": [
             "activity",
             "work",
@@ -84846,7 +93954,7 @@
           "search_terms": [
             "bleeding",
             "post",
-            "procedure"
+            "scope"
           ],
           "tags": [
             "gastroenterology"
@@ -84854,12 +93962,24 @@
         },
         {
           "chip_id": "gastro-post-endoscopy-followup-relevant_negatives-2",
-          "chip_text": "no post-procedure pain reported",
+          "chip_text": "no severe abdominal pain reported",
           "order": 2,
           "search_terms": [
-            "pain",
-            "after",
-            "scope"
+            "severe",
+            "abdominal",
+            "pain"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-relevant_negatives-3",
+          "chip_text": "no fever reported",
+          "order": 3,
+          "search_terms": [
+            "fever",
+            "temperature"
           ],
           "tags": [
             "gastroenterology"
@@ -84886,7 +94006,8 @@
           "search_terms": [
             "vitals",
             "BP",
-            "pulse"
+            "pulse",
+            "temp"
           ],
           "tags": [
             "gastroenterology"
@@ -84909,7 +94030,7 @@
           "order": 4,
           "search_terms": [
             "tenderness",
-            "guarding"
+            "pain"
           ],
           "tags": [
             "gastroenterology"
@@ -84923,8 +94044,8 @@
           "order": 1,
           "search_terms": [
             "post",
-            "procedure",
-            "bleeding"
+            "bleeding",
+            "scope"
           ],
           "tags": [
             "gastroenterology",
@@ -84951,7 +94072,8 @@
           "order": 3,
           "search_terms": [
             "perforation",
-            "peritonitis"
+            "peritonitis",
+            "fever"
           ],
           "tags": [
             "gastroenterology",
@@ -84962,12 +94084,13 @@
       "investigations": [
         {
           "chip_id": "gastro-post-endoscopy-followup-investigations-1",
-          "chip_text": "endoscopy report reviewed if available",
+          "chip_text": "endoscopy report reviewed",
           "order": 1,
           "search_terms": [
             "endoscopy",
             "OGD",
-            "colonoscopy"
+            "colonoscopy",
+            "report"
           ],
           "tags": [
             "gastroenterology"
@@ -84975,12 +94098,12 @@
         },
         {
           "chip_id": "gastro-post-endoscopy-followup-investigations-2",
-          "chip_text": "histology results reviewed if available",
+          "chip_text": "histology or pathology reviewed if available",
           "order": 2,
           "search_terms": [
             "histology",
-            "biopsy",
-            "pathology"
+            "pathology",
+            "biopsy"
           ],
           "tags": [
             "gastroenterology"
@@ -85014,12 +94137,12 @@
         },
         {
           "chip_id": "gastro-post-endoscopy-followup-plan_phrases-2",
-          "chip_text": "medication plan documented if clinician decided",
+          "chip_text": "follow-up plan documented if arranged",
           "order": 2,
           "search_terms": [
-            "medication",
-            "PPI",
-            "change"
+            "follow-up",
+            "plan",
+            "interval"
           ],
           "tags": [
             "gastroenterology"
@@ -85027,12 +94150,12 @@
         },
         {
           "chip_id": "gastro-post-endoscopy-followup-plan_phrases-3",
-          "chip_text": "follow-up interval for repeat endoscopy documented if clinician decided",
+          "chip_text": "referral documented if clinician decided",
           "order": 3,
           "search_terms": [
-            "repeat",
-            "scope",
-            "interval"
+            "referral",
+            "gastroenterology",
+            "follow-up"
           ],
           "tags": [
             "gastroenterology"
@@ -85045,30 +94168,6 @@
           "search_terms": [
             "safety",
             "netting"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-post-endoscopy-followup-plan_phrases-5",
-          "chip_text": "follow-up documented if arranged",
-          "order": 5,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-post-endoscopy-followup-plan_phrases-6",
-          "chip_text": "referral documented if clinician decided",
-          "order": 6,
-          "search_terms": [
-            "referral",
-            "follow-up"
           ],
           "tags": [
             "gastroenterology"
@@ -85138,6 +94237,18 @@
           "tags": [
             "gastroenterology"
           ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-follow_up-6",
+          "chip_text": "sooner if worsening",
+          "order": 6,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
         }
       ]
     },
@@ -85159,13 +94270,13 @@
         },
         {
           "chip_id": "gastro-rectal-bleeding-symptoms-2",
-          "chip_text": "amount and colour documented",
+          "chip_text": "bleeding colour documented",
           "order": 2,
           "search_terms": [
-            "amount",
             "colour",
             "bright",
-            "dark"
+            "dark",
+            "red"
           ],
           "tags": [
             "gastroenterology"
@@ -85173,11 +94284,12 @@
         },
         {
           "chip_id": "gastro-rectal-bleeding-symptoms-3",
-          "chip_text": "frequency documented",
+          "chip_text": "amount and frequency documented",
           "order": 3,
           "search_terms": [
+            "amount",
             "frequency",
-            "how often"
+            "volume"
           ],
           "tags": [
             "gastroenterology"
@@ -85185,11 +94297,13 @@
         },
         {
           "chip_id": "gastro-rectal-bleeding-symptoms-4",
-          "chip_text": "associated pain reviewed",
+          "chip_text": "relation to stool documented",
           "order": 4,
           "search_terms": [
-            "pain",
-            "anal"
+            "relation",
+            "on",
+            "paper",
+            "mixed"
           ],
           "tags": [
             "gastroenterology"
@@ -85197,12 +94311,12 @@
         },
         {
           "chip_id": "gastro-rectal-bleeding-symptoms-5",
-          "chip_text": "bowel habit change reviewed",
+          "chip_text": "pain on defecation reviewed",
           "order": 5,
           "search_terms": [
-            "bowel",
-            "habit",
-            "change"
+            "pain",
+            "defecation",
+            "anal"
           ],
           "tags": [
             "gastroenterology"
@@ -85210,11 +94324,12 @@
         },
         {
           "chip_id": "gastro-rectal-bleeding-symptoms-6",
-          "chip_text": "weight loss reviewed",
+          "chip_text": "change in bowel habit reviewed",
           "order": 6,
           "search_terms": [
-            "weight",
-            "loss"
+            "change",
+            "bowel",
+            "habit"
           ],
           "tags": [
             "gastroenterology"
@@ -85222,12 +94337,11 @@
         },
         {
           "chip_id": "gastro-rectal-bleeding-symptoms-7",
-          "chip_text": "family history of colorectal cancer reviewed",
+          "chip_text": "weight loss reviewed",
           "order": 7,
           "search_terms": [
-            "family",
-            "CRC",
-            "bowel cancer"
+            "weight",
+            "loss"
           ],
           "tags": [
             "gastroenterology"
@@ -85240,7 +94354,8 @@
           "search_terms": [
             "anticoagulant",
             "aspirin",
-            "warfarin"
+            "warfarin",
+            "DOAC"
           ],
           "tags": [
             "gastroenterology"
@@ -85248,25 +94363,12 @@
         },
         {
           "chip_id": "gastro-rectal-bleeding-symptoms-9",
-          "chip_text": "anal symptoms reviewed",
+          "chip_text": "previous colonoscopy history reviewed",
           "order": 9,
           "search_terms": [
-            "anal",
-            "pain",
-            "itching",
-            "lump"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-rectal-bleeding-symptoms-10",
-          "chip_text": "previous colonoscopy history reviewed",
-          "order": 10,
-          "search_terms": [
             "colonoscopy",
-            "screening"
+            "screening",
+            "prior"
           ],
           "tags": [
             "gastroenterology"
@@ -85276,12 +94378,12 @@
       "relevant_negatives": [
         {
           "chip_id": "gastro-rectal-bleeding-relevant_negatives-1",
-          "chip_text": "no melena reported if relevant",
+          "chip_text": "no dizziness or syncope reported if applicable",
           "order": 1,
           "search_terms": [
-            "melena",
-            "black",
-            "tarry"
+            "dizziness",
+            "syncope",
+            "faint"
           ],
           "tags": [
             "gastroenterology"
@@ -85289,12 +94391,12 @@
         },
         {
           "chip_id": "gastro-rectal-bleeding-relevant_negatives-2",
-          "chip_text": "no haematemesis reported",
+          "chip_text": "no black stools reported if applicable",
           "order": 2,
           "search_terms": [
-            "hematemesis",
-            "vomiting",
-            "blood"
+            "black",
+            "tarry",
+            "melena"
           ],
           "tags": [
             "gastroenterology"
@@ -85302,23 +94404,11 @@
         },
         {
           "chip_id": "gastro-rectal-bleeding-relevant_negatives-3",
-          "chip_text": "no significant weight loss reported if applicable",
+          "chip_text": "no significant unintentional weight loss reported if applicable",
           "order": 3,
           "search_terms": [
             "weight",
             "loss"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-rectal-bleeding-relevant_negatives-4",
-          "chip_text": "no abdominal mass reported",
-          "order": 4,
-          "search_terms": [
-            "mass",
-            "palpable"
           ],
           "tags": [
             "gastroenterology"
@@ -85340,7 +94430,7 @@
         },
         {
           "chip_id": "gastro-rectal-bleeding-exam_findings-2",
-          "chip_text": "rectal examination documented if assessed",
+          "chip_text": "rectal examination documented if clinically appropriate and assessed",
           "order": 2,
           "search_terms": [
             "rectal",
@@ -85366,20 +94456,8 @@
         },
         {
           "chip_id": "gastro-rectal-bleeding-exam_findings-4",
-          "chip_text": "general appearance documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "appearance",
-            "pale"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-rectal-bleeding-exam_findings-5",
           "chip_text": "anal inspection documented if assessed",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "anal",
             "fissure",
@@ -85397,8 +94475,9 @@
           "order": 1,
           "search_terms": [
             "haemodynamic",
-            "unstable",
-            "BP"
+            "low",
+            "BP",
+            "tachy"
           ],
           "tags": [
             "gastroenterology",
@@ -85450,8 +94529,8 @@
           "order": 5,
           "search_terms": [
             "age",
-            "over 50",
-            "new"
+            "new",
+            "over 50"
           ],
           "tags": [
             "gastroenterology",
@@ -85476,13 +94555,13 @@
       "investigations": [
         {
           "chip_id": "gastro-rectal-bleeding-investigations-1",
-          "chip_text": "blood tests reviewed if ordered",
+          "chip_text": "CBC reviewed if ordered",
           "order": 1,
           "search_terms": [
-            "blood",
+            "CBC",
             "FBC",
-            "coagulation",
-            "iron"
+            "Hb",
+            "haemoglobin"
           ],
           "tags": [
             "gastroenterology"
@@ -85490,11 +94569,24 @@
         },
         {
           "chip_id": "gastro-rectal-bleeding-investigations-2",
-          "chip_text": "previous endoscopy reports reviewed if available",
+          "chip_text": "previous colonoscopy or endoscopy report reviewed if available",
           "order": 2,
           "search_terms": [
             "colonoscopy",
-            "sigmoidoscopy"
+            "OGD",
+            "scope"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-investigations-3",
+          "chip_text": "previous records reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "previous",
+            "records"
           ],
           "tags": [
             "gastroenterology"
@@ -85598,18 +94690,6 @@
           "search_terms": [
             "PRN",
             "as needed"
-          ],
-          "tags": [
-            "gastroenterology"
-          ]
-        },
-        {
-          "chip_id": "gastro-rectal-bleeding-follow_up-5",
-          "chip_text": "sooner if bleeding increases",
-          "order": 5,
-          "search_terms": [
-            "sooner",
-            "heavy"
           ],
           "tags": [
             "gastroenterology"
