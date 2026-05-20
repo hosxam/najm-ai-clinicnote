@@ -10137,5 +10137,619 @@
     ],
     "safety_note": "Document only if assessed. These prompts are documentation support, not examination instructions.",
     "review_required": true
+  },
+  {
+    "workflow_id": "neuro-headache",
+    "workflow_display_name": "Neurology Headache",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "pulse",
+            "prompt_text": "Pulse documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_exam",
+        "group_label": "Neurological examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neurological examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neuro_screen",
+            "prompt_text": "Neurological screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "cranial_nerves",
+            "prompt_text": "Cranial nerve screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "limb_power",
+            "prompt_text": "Limb power documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "sensation",
+            "prompt_text": "Sensation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "coordination",
+            "prompt_text": "Coordination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "gait",
+            "prompt_text": "Gait documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "neck_exam",
+        "group_label": "Neck examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. neck examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neck_stiffness",
+            "prompt_text": "Neck stiffness documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-migraine-followup",
+    "workflow_display_name": "Neurology Migraine Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_exam",
+        "group_label": "Neurological examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neurological examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neuro_screen",
+            "prompt_text": "Neurological screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "cranial_nerves",
+            "prompt_text": "Cranial nerve screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-seizure-followup",
+    "workflow_display_name": "Neurology Seizure Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "pulse",
+            "prompt_text": "Pulse documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_exam",
+        "group_label": "Neurological examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neurological examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neuro_screen",
+            "prompt_text": "Neurological screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "cranial_nerves",
+            "prompt_text": "Cranial nerve screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "gait",
+            "prompt_text": "Gait documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-dizziness",
+    "workflow_display_name": "Neurology Dizziness",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "pulse",
+            "prompt_text": "Pulse documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_exam",
+        "group_label": "Neurological examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neurological examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neuro_screen",
+            "prompt_text": "Neurological screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "cranial_nerves",
+            "prompt_text": "Cranial nerve screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "nystagmus",
+            "prompt_text": "Nystagmus documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "gait",
+            "prompt_text": "Gait documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "positional",
+        "group_label": "Positional testing",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. positional testing findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "dix_hallpike",
+            "prompt_text": "Dix-Hallpike test documented if performed.",
+            "documentation_style": "if_performed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "romberg",
+            "prompt_text": "Romberg test documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-weakness",
+    "workflow_display_name": "Neurology Weakness",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_exam",
+        "group_label": "Neurological examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neurological examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "power",
+            "prompt_text": "Limb power documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "reflexes",
+            "prompt_text": "Reflexes documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "tone",
+            "prompt_text": "Tone documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "sensation",
+            "prompt_text": "Sensation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "coordination",
+            "prompt_text": "Coordination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "gait",
+            "prompt_text": "Gait documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-numbness-tingling",
+    "workflow_display_name": "Neurology Numbness/Tingling",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_exam",
+        "group_label": "Neurological examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neurological examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "sensation",
+            "prompt_text": "Sensation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "power",
+            "prompt_text": "Limb power documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "reflexes",
+            "prompt_text": "Reflexes documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "coordination",
+            "prompt_text": "Coordination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "gait",
+            "prompt_text": "Gait documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-tremor",
+    "workflow_display_name": "Neurology Tremor",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_exam",
+        "group_label": "Neurological examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neurological examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "tremor_assessment",
+            "prompt_text": "Tremor features (rest/action) documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "coordination",
+            "prompt_text": "Coordination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "gait",
+            "prompt_text": "Gait documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-neuropathy-followup",
+    "workflow_display_name": "Neurology Neuropathy Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_exam",
+        "group_label": "Neurological examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neurological examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "sensation",
+            "prompt_text": "Sensation (including monofilament) documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "reflexes",
+            "prompt_text": "Reflexes (including ankle) documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "power",
+            "prompt_text": "Limb power documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "foot_exam",
+        "group_label": "Foot examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. foot examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "foot_inspection",
+            "prompt_text": "Foot examination (ulcers/skin) documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-stroke-tia-followup",
+    "workflow_display_name": "Neurology Stroke/TIA Follow-up",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "pulse",
+            "prompt_text": "Pulse documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_exam",
+        "group_label": "Neurological examination",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. neurological examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neuro_screen",
+            "prompt_text": "Neurological screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "power",
+            "prompt_text": "Limb power documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "speech",
+            "prompt_text": "Speech assessment documented if relevant.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "gait",
+            "prompt_text": "Gait documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-memory-concern",
+    "workflow_display_name": "Neurology Memory Concern",
+    "exam_groups": [
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. vital signs findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "bp",
+            "prompt_text": "Blood pressure documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "cognition",
+        "group_label": "Cognitive assessment",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. cognitive assessment findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "cognition_screen",
+            "prompt_text": "Cognitive screening (e.g. MMSE, MoCA) documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          }
+        ]
+      },
+      {
+        "group_id": "neuro_exam",
+        "group_label": "Neurological examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. neurological examination findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "neuro_screen",
+            "prompt_text": "Neurological screen documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "mood_screen",
+            "prompt_text": "Mood screening documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed.",
+    "review_required": true
   }
 ]

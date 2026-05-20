@@ -2887,5 +2887,311 @@
     ],
     "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
     "review_required": true
+  },
+  {
+    "workflow_id": "neuro-headache",
+    "workflow_display_name": "Neurology Headache",
+    "default_history_draft": "Patient presents with headache for [duration]. Location: [location], character: [character], severity: [severity]. [Associated symptoms]. [Trigger context]. [Red-flag negatives reviewed]. [Additional history].",
+    "editable_placeholders": [
+      "[duration]",
+      "[location]",
+      "[character]",
+      "[severity]",
+      "[Associated symptoms]",
+      "[Trigger context]",
+      "[Red-flag negatives reviewed]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-migraine-followup",
+    "workflow_display_name": "Neurology Migraine Follow-up",
+    "default_history_draft": "Patient presents with follow-up for migraines. Frequency: [frequency]. [Aura/visual symptoms]. [Trigger pattern]. Functional impact: [functional impact]. [Medication use reviewed]. [Change in pattern]. [Additional history].",
+    "editable_placeholders": [
+      "[frequency]",
+      "[Aura/visual symptoms]",
+      "[Trigger pattern]",
+      "[functional impact]",
+      "[Medication use reviewed]",
+      "[Change in pattern]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-seizure-followup",
+    "workflow_display_name": "Neurology Seizure Follow-up",
+    "default_history_draft": "Patient presents with follow-up for seizures. Last seizure: [last seizure context]. Frequency: [frequency]. [Witnessed features]. [Post-ictal context]. [Adherence/side effects]. [New neurological symptoms]. [Additional history].",
+    "editable_placeholders": [
+      "[last seizure context]",
+      "[frequency]",
+      "[Witnessed features]",
+      "[Post-ictal context]",
+      "[Adherence/side effects]",
+      "[New neurological symptoms]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-dizziness",
+    "workflow_display_name": "Neurology Dizziness",
+    "default_history_draft": "Patient presents with patient presents with dizziness. Vertigo vs lightheadedness: [context]. Positional context: [positional]. [Hearing/tinnitus]. [Nausea/vomiting]. [Neurological negatives]. [Additional history].",
+    "editable_placeholders": [
+      "[context]",
+      "[positional]",
+      "[Hearing/tinnitus]",
+      "[Nausea/vomiting]",
+      "[Neurological negatives]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-weakness",
+    "workflow_display_name": "Neurology Weakness",
+    "default_history_draft": "Patient presents with weakness: onset [onset], distribution [distribution], progression [progression]. [Sensory/speech/vision context]. [Neurological negatives]. [Additional history].",
+    "editable_placeholders": [
+      "[onset]",
+      "[distribution]",
+      "[progression]",
+      "[Sensory/speech/vision context]",
+      "[Neurological negatives]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-numbness-tingling",
+    "workflow_display_name": "Neurology Numbness/Tingling",
+    "default_history_draft": "Patient presents with numbness/tingling in [distribution]. Duration [duration], progression [progression]. [Weakness/pain context]. Functional impact: [functional impact]. [Additional history].",
+    "editable_placeholders": [
+      "[distribution]",
+      "[duration]",
+      "[progression]",
+      "[Weakness/pain context]",
+      "[functional impact]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-tremor",
+    "workflow_display_name": "Neurology Tremor",
+    "default_history_draft": "Patient presents with tremor in [distribution]. Rest vs action: [rest/action context]. Onset [duration], progression [progression]. [Medication/caffeine context]. [Family history]. [Additional history].",
+    "editable_placeholders": [
+      "[distribution]",
+      "[rest/action context]",
+      "[duration]",
+      "[progression]",
+      "[Medication/caffeine context]",
+      "[Family history]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-neuropathy-followup",
+    "workflow_display_name": "Neurology Neuropathy Follow-up",
+    "default_history_draft": "Patient presents with follow-up for neuropathy. [Sensory symptoms]. [Pain/burning]. Distribution [distribution]. [Progression]. [Diabetes/B12/thyroid context]. [Additional history].",
+    "editable_placeholders": [
+      "[Sensory symptoms]",
+      "[Pain/burning]",
+      "[distribution]",
+      "[Progression]",
+      "[Diabetes/B12/thyroid context]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-stroke-tia-followup",
+    "workflow_display_name": "Neurology Stroke/TIA Follow-up",
+    "default_history_draft": "Patient presents with follow-up for stroke/TIA. Residual symptoms: [residual]. Functional status: [function]. [Risk factor context]. [Adherence]. [New neurological symptoms]. [Additional history].",
+    "editable_placeholders": [
+      "[residual]",
+      "[function]",
+      "[Risk factor context]",
+      "[Adherence]",
+      "[New neurological symptoms]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-memory-concern",
+    "workflow_display_name": "Neurology Memory Concern",
+    "default_history_draft": "Patient presents with memory concern: onset [onset], progression [progression]. Domains affected: [domains]. ADL impact: [ADL]. [Mood/sleep context]. [Collateral history]. [Additional history].",
+    "editable_placeholders": [
+      "[onset]",
+      "[progression]",
+      "[domains]",
+      "[ADL]",
+      "[Mood/sleep context]",
+      "[Collateral history]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "presenting_complaint",
+      "socrates_hpc",
+      "systems_review",
+      "pmh",
+      "drug_history",
+      "allergies",
+      "ice"
+    ],
+    "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
   }
 ]

@@ -4414,5 +4414,564 @@
     ],
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
+  },
+  {
+    "workflow_id": "neuro-headache",
+    "workflow_display_name": "Neurology Headache",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "bp",
+            "option_text": "Blood pressure reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Blood pressure reviewed."
+          },
+          {
+            "option_id": "pulse",
+            "option_text": "Pulse reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Pulse reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "crp",
+            "option_text": "CRP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CRP reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "brain_imaging",
+            "option_text": "Brain imaging report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Brain imaging report reviewed."
+          },
+          {
+            "option_id": "previous_imaging",
+            "option_text": "Previous imaging compared if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Previous imaging compared."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-migraine-followup",
+    "workflow_display_name": "Neurology Migraine Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "bloods",
+            "option_text": "Blood tests reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Blood tests reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "brain_imaging",
+            "option_text": "Brain imaging report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Brain imaging report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-seizure-followup",
+    "workflow_display_name": "Neurology Seizure Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "eeg",
+            "option_text": "EEG report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "EEG report reviewed."
+          },
+          {
+            "option_id": "med_level",
+            "option_text": "Medication level reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Medication level reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "mri",
+            "option_text": "MRI brain report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "MRI brain report reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "bloods",
+            "option_text": "Blood tests reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Blood tests reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-dizziness",
+    "workflow_display_name": "Neurology Dizziness",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "ecg",
+            "option_text": "ECG reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "ECG reviewed."
+          },
+          {
+            "option_id": "glucose",
+            "option_text": "Glucose reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Glucose checked."
+          },
+          {
+            "option_id": "orthostatic_bp",
+            "option_text": "Orthostatic blood pressure reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Orthostatic blood pressure reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "brain_imaging",
+            "option_text": "Brain imaging report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Brain imaging report reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "audiology",
+        "group_label": "Audiology",
+        "options": [
+          {
+            "option_id": "hearing_test",
+            "option_text": "Hearing test report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Hearing test report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-weakness",
+    "workflow_display_name": "Neurology Weakness",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "electrolytes",
+            "option_text": "Electrolytes reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Electrolytes reviewed."
+          },
+          {
+            "option_id": "inflammatory",
+            "option_text": "Inflammatory markers reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Inflammatory markers reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "spine_imaging",
+            "option_text": "Spine imaging report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Spine imaging report reviewed."
+          },
+          {
+            "option_id": "brain_imaging",
+            "option_text": "Brain imaging report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Brain imaging report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-numbness-tingling",
+    "workflow_display_name": "Neurology Numbness/Tingling",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "b12_vitamin",
+            "option_text": "B12/folate reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "B12/folate reviewed."
+          },
+          {
+            "option_id": "tsh",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Thyroid function reviewed."
+          },
+          {
+            "option_id": "glucose",
+            "option_text": "Glucose/HbA1c reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Glucose/HbA1c reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "spine_imaging",
+            "option_text": "Spine imaging report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Spine imaging report reviewed."
+          },
+          {
+            "option_id": "brain_imaging",
+            "option_text": "Brain imaging report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Brain imaging report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-tremor",
+    "workflow_display_name": "Neurology Tremor",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "tsh",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Thyroid function reviewed."
+          },
+          {
+            "option_id": "copper",
+            "option_text": "Copper studies reviewed if clinically indicated.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Copper studies reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "brain_imaging",
+            "option_text": "Brain imaging report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Brain imaging report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-neuropathy-followup",
+    "workflow_display_name": "Neurology Neuropathy Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "b12",
+            "option_text": "B12 reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "B12 reviewed."
+          },
+          {
+            "option_id": "glucose_hba1c",
+            "option_text": "Glucose/HbA1c reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Glucose/HbA1c reviewed."
+          },
+          {
+            "option_id": "tsh",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Thyroid function reviewed."
+          },
+          {
+            "option_id": "renal",
+            "option_text": "Renal function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Renal function reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "electrophysiology",
+        "group_label": "Electrophysiology",
+        "options": [
+          {
+            "option_id": "ncs",
+            "option_text": "Nerve conduction study report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Nerve conduction study report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-stroke-tia-followup",
+    "workflow_display_name": "Neurology Stroke/TIA Follow-up",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside",
+        "options": [
+          {
+            "option_id": "ecg",
+            "option_text": "ECG reviewed if performed.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "ECG reviewed."
+          },
+          {
+            "option_id": "bp",
+            "option_text": "Blood pressure reviewed if measured.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Blood pressure reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "lipid",
+            "option_text": "Lipid profile reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Lipid profile reviewed."
+          },
+          {
+            "option_id": "glucose",
+            "option_text": "Glucose/HbA1c reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Glucose/HbA1c reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "brain_imaging",
+            "option_text": "Brain imaging report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Brain imaging report reviewed."
+          },
+          {
+            "option_id": "carotid",
+            "option_text": "Carotid imaging report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Carotid imaging report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "neuro-memory-concern",
+    "workflow_display_name": "Neurology Memory Concern",
+    "investigation_groups": [
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "b12",
+            "option_text": "B12 reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "B12 reviewed."
+          },
+          {
+            "option_id": "tsh",
+            "option_text": "Thyroid function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Thyroid function reviewed."
+          },
+          {
+            "option_id": "cbc",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "lft",
+            "option_text": "Liver function reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Liver function reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "imaging",
+        "group_label": "Imaging",
+        "options": [
+          {
+            "option_id": "brain_imaging",
+            "option_text": "Brain imaging report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Brain imaging report reviewed."
+          }
+        ]
+      },
+      {
+        "group_id": "cognition",
+        "group_label": "Cognitive assessment",
+        "options": [
+          {
+            "option_id": "previous_cognition",
+            "option_text": "Previous cognitive assessment report reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Previous cognitive assessment report reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed.",
+    "review_required": true
   }
 ]
