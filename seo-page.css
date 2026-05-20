@@ -17,7 +17,7 @@ h1{font-size:42px;line-height:1.12;color:var(--navy);margin:0 0 16px;letter-spac
 .badge{background:var(--teal-bg);border:1px solid #bfe3e0;color:#0b4f4a;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:800}
 main{max-width:var(--max);margin:0 auto;padding:34px 22px 56px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;box-shadow:var(--shadow);margin-bottom:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;box-shadow:var(--shadow);margin-bottom:18px}.card h2{font-size:22px;font-weight:700;color:var(--navy);margin:0 0 12px;letter-spacing:-0.01em}.card p{font-size:14px;color:var(--text);line-height:1.7;margin-bottom:8px}.no-collect-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-top:16px;margin-bottom:16px}.no-collect-item{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:13px;font-weight:600;color:var(--text);display:flex;align-items:center;gap:8px}.no-collect-item .icon{color:var(--teal)}.faq-grid{display:grid;gap:12px}.faq-item{border:1px solid var(--line);border-radius:10px;overflow:hidden}.faq-item summary{padding:14px 16px;font-weight:700;font-size:14px;color:var(--navy);cursor:pointer}.faq-item[open] summary{border-bottom:1px solid var(--line);background:var(--teal-bg)}.faq-item-body{padding:14px 16px;font-size:13px;color:var(--text);line-height:1.6}
 h2{font-size:23px;color:var(--navy);margin:0 0 10px}
 h3{font-size:17px;color:var(--navy);margin:22px 0 8px}
 p{margin:0 0 12px}
