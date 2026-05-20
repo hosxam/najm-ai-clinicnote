@@ -92,6 +92,7 @@
     // Workflow filters and optional calculator results
     selectedSpecialtyFilter: '',
     _wfSearchTerm: '',
+    allActiveCalculators: [],
     calculatorResults: {}
   };
 
@@ -383,6 +384,24 @@
         if (ordered.indexOf(specName) < 0) ordered.push(specName);
       });
       state.specialties = ordered;
+
+      // Initialize all active calculators list for manual search
+      try {
+        var cd = window.NAJM_CLINICAL_DATA;
+        if (cd && cd.calculators) {
+          state.allActiveCalculators = [];
+          for (var ck in cd.calculators) {
+            var cdef = cd.calculators[ck];
+            if (cdef && cdef.implementation_status === 'implemented') {
+              state.allActiveCalculators.push({
+                id: ck,
+                name: cdef.calculator_name || cdef.display_name || ck,
+                desc: cdef.purpose || cdef.clinical_context || ''
+              });
+            }
+          }
+        }
+      } catch(e) { state.allActiveCalculators = []; }
     });
   }
 
@@ -838,19 +857,28 @@
     // Initialize calculator results in state
     if (!state.calculatorResults) state.calculatorResults = {};
     
+    // Recommended calculators for this workflow
     var calcs = getRelatedCalcs(state.selectedWorkflowId);
-    if (calcs.length === 0) {
-      h += '<p class="v4-calc-empty">No optional calculator is available for this workflow yet.</p>';
-      return h;
+    if (calcs.length > 0) {
+      h += '<h3 style="font-size:14px;font-weight:600;color:var(--gray-700);margin-bottom:8px;">Recommended for this workflow</h3>';
+      h += '<div class="v4-calc-grid">';
+      for (var ci = 0; ci < calcs.length; ci++) {
+        var calc = calcs[ci];
+        var cr = state.calculatorResults[calc.id] || {};
+        h += renderCalcCard(calc, cr);
+      }
+      h += '</div>';
+      h += '<div style="height:16px"></div>';
     }
-
-    h += '<div class="v4-calc-grid">';
-    for (var ci = 0; ci < calcs.length; ci++) {
-      var calc = calcs[ci];
-      var cr = state.calculatorResults[calc.id] || {};
-      h += renderCalcCard(calc, cr);
-    }
+    
+    // Manual calculator search section
+    h += '<div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--gray-200);">';
+    h += '<h3 style="font-size:14px;font-weight:600;color:var(--gray-800);margin-bottom:4px;">Add another calculator</h3>';
+    h += '<p style="font-size:12px;color:var(--gray-500);margin-bottom:10px;">Search and add active calculators manually.</p>';
+    h += '<input type="text" id="v4ManualCalcSearch" placeholder="Search active calculators..." oninput="window._v4FilterManualCalcs(this.value)" style="width:100%;max-width:400px;padding:10px 14px;border:1px solid var(--gray-300);border-radius:8px;font-size:14px">';
+    h += '<div id="v4ManualCalcResults" style="margin-top:12px;"><p style="font-size:12px;color:var(--gray-400);">Type to search for active calculators.</p></div>';
     h += '</div>';
+    
     return h;
   }
 
@@ -905,6 +933,80 @@
     return h;
   }
 
+  // ================================================================
+  //  MANUAL CALCULATOR SEARCH (Step 5)
+  // ================================================================
+  window._v4FilterManualCalcs = function(searchTerm) {
+    var container = document.getElementById('v4ManualCalcResults');
+    if (!container) return;
+    var term = (searchTerm || '').toLowerCase().trim();
+    if (!term) {
+      container.innerHTML = '<p style="font-size:12px;color:var(--gray-400);">Type to search for active calculators.</p>';
+      return;
+    }
+    var matches = [];
+    var allCalcs = state.allActiveCalculators || [];
+    for (var mi = 0; mi < allCalcs.length; mi++) {
+      var mc = allCalcs[mi];
+      var haystack = (mc.name + ' ' + mc.desc + ' ' + mc.id).toLowerCase();
+      if (haystack.indexOf(term) >= 0) {
+        matches.push(mc);
+      }
+    }
+    // Track which calculators are already shown (recommended or manually added)
+    var skipIds = {};
+    var recs = [];
+    if (state.selectedWorkflowId) {
+      recs = getRelatedCalcs(state.selectedWorkflowId);
+    }
+    for (var ri = 0; ri < recs.length; ri++) {
+      skipIds[recs[ri].id] = true;
+    }
+    if (state.calculatorResults) {
+      for (var ck in state.calculatorResults) {
+        skipIds[ck] = true;
+      }
+    }
+    if (matches.length === 0) {
+      container.innerHTML = '<p style="font-size:12px;color:var(--gray-500);">No active calculator found.</p>';
+      return;
+    }
+    var html = '';
+    var addedCount = 0;
+    for (var mi2 = 0; mi2 < matches.length; mi2++) {
+      var mc2 = matches[mi2];
+      if (skipIds[mc2.id]) continue;
+      addedCount++;
+      html += '<div style="margin-bottom:8px;"><div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:8px;">';
+      html += '<div><div style="font-weight:600;font-size:13px;color:var(--gray-900);">' + esc(mc2.name) + '</div>';
+      html += '<div style="font-size:11px;color:var(--gray-500);">' + esc(mc2.desc || '') + '</div></div>';
+      html += '<button class="v4-btn v4-btn-sm v4-btn-primary" onclick="window._v4AddManualCalc(\'' + esc(mc2.id) + '\')" style="white-space:nowrap;">Add</button>';
+      html += '</div></div>';
+    }
+    if (addedCount === 0) {
+      html = '<p style="font-size:12px;color:var(--gray-500);">All matching calculators are already added.</p>';
+    }
+    container.innerHTML = html;
+  };
+
+  window._v4AddManualCalc = function(calcId) {
+    if (!state.calculatorResults) state.calculatorResults = {};
+    if (state.calculatorResults[calcId]) return;
+    var allCalcs = state.allActiveCalculators || [];
+    var found = false;
+    for (var i = 0; i < allCalcs.length; i++) {
+      if (allCalcs[i].id === calcId) { found = true; break; }
+    }
+    if (!found) return;
+    state.calculatorResults[calcId] = { values: {}, result: '', included: false };
+    var container = document.getElementById('v4StepContent');
+    if (container) {
+      renderStep(currentStep);
+    }
+    var searchInput = document.getElementById('v4ManualCalcSearch');
+    if (searchInput) searchInput.value = '';
+  };
+
   function getCalcInputs(calcId) {
     var inputs = {
       bmi: [{key:'height',label:'Height (cm)',type:'number',placeholder:'e.g. 170'},{key:'weight',label:'Weight (kg)',type:'number',placeholder:'e.g. 70'}],
@@ -922,7 +1024,15 @@
       sirs: [{key:'temp',label:'Temperature (C)',type:'number',placeholder:'e.g. 38.3'},{key:'hr',label:'Heart rate',type:'number',placeholder:'e.g. 110'},{key:'rr',label:'Respiratory rate',type:'number',placeholder:'e.g. 22'},{key:'wbc',label:'WBC (10^9/L)',type:'number',placeholder:'e.g. 13'}],
       qsofa: [{key:'rr',label:'Respiratory rate',type:'number',placeholder:'e.g. 24'},{key:'sbp',label:'Systolic BP',type:'number',placeholder:'e.g. 100'},{key:'mentalStatus',label:'Altered mental status',type:'select',options:[{value:'no',label:'No'},{value:'yes',label:'Yes'}]}],
       fib4: [{key:'age',label:'Age (years)',type:'number',placeholder:'e.g. 55'},{key:'ast',label:'AST',type:'number',placeholder:'e.g. 40'},{key:'alt',label:'ALT',type:'number',placeholder:'e.g. 35'},{key:'platelets',label:'Platelets (10^9/L)',type:'number',placeholder:'e.g. 220'}],
-      child_pugh: [{key:'bilirubin',label:'Bilirubin',type:'number',placeholder:'numeric value'},{key:'albumin',label:'Albumin',type:'number',placeholder:'numeric value'},{key:'inr',label:'INR',type:'number',placeholder:'e.g. 1.2'},{key:'ascites',label:'Ascites',type:'select',options:[{value:'none',label:'None documented'},{value:'mild',label:'Mild'},{value:'moderate_severe',label:'Moderate/severe'}]},{key:'encephalopathy',label:'Encephalopathy',type:'select',options:[{value:'none',label:'None documented'},{value:'grade1_2',label:'Grade I-II'},{value:'grade3_4',label:'Grade III-IV'}]}]
+      child_pugh: [{key:'bilirubin',label:'Bilirubin',type:'number',placeholder:'numeric value'},{key:'albumin',label:'Albumin',type:'number',placeholder:'numeric value'},{key:'inr',label:'INR',type:'number',placeholder:'e.g. 1.2'},{key:'ascites',label:'Ascites',type:'select',options:[{value:'none',label:'None documented'},{value:'mild',label:'Mild'},{value:'moderate_severe',label:'Moderate/severe'}]},{key:'encephalopathy',label:'Encephalopathy',type:'select',options:[{value:'none',label:'None documented'},{value:'grade1_2',label:'Grade I-II'},{value:'grade3_4',label:'Grade III-IV'}]}],
+      heart: [{key:'history',label:'History (0-2)',type:'number',placeholder:'e.g. 1'},{key:'ecg',label:'ECG (0-2)',type:'number',placeholder:'e.g. 0'},{key:'age',label:'Age risk (0-2)',type:'number',placeholder:'e.g. 1'},{key:'riskFactors',label:'Risk factors (0-2)',type:'number',placeholder:'e.g. 1'},{key:'troponin',label:'Troponin (0-2)',type:'number',placeholder:'e.g. 0'}],
+      curb65: [{key:'confusion',label:'Confusion',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'ureaGT7',label:'Urea >7 mmol/L',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'rrGE30',label:'RR >=30/min',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'bpLow',label:'SBP <90 or DBP <=60',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'ageGE65',label:'Age >=65',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]}],
+      ottawa_knee: [{key:'ageGT55',label:'Age >55',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'patellaTenderness',label:'Patella tenderness',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'fibularHeadTenderness',label:'Fibular head tenderness',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'unableToBearWeight',label:'Unable to bear weight',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'unableToFlex90',label:'Unable to flex 90 deg',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]}],
+      ottawa_ankle: [{key:'malleolarTenderness',label:'Malleolar tenderness',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'midfootTenderness',label:'Midfoot tenderness',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'unableToBearWeight',label:'Unable to bear weight',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]}],
+      wells_dvt: [{key:'activeCancer',label:'Active cancer',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'paralysisOrCast',label:'Paralysis or recent cast',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'bedRestSurgery',label:'Bed rest >3d or surgery <12w',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'localizedTenderness',label:'Localized tenderness along veins',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'entireLegSwelling',label:'Entire leg swollen',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'calfSwelling',label:'Calf swelling >=3cm',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'pittingEdema',label:'Pitting edema confined to leg',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'collateralVeins',label:'Collateral superficial veins',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'alternativeDiagnosis',label:'Alternative diagnosis more likely',type:'select',options:[{value:'0',label:'No'},{value:'-2',label:'Yes'}]}],
+      wells_pe: [{key:'dvtSymptoms',label:'Clinical signs of DVT',type:'select',options:[{value:'0',label:'No'},{value:'3',label:'Yes'}]},{key:'peIsPrimaryDiagnosis',label:'PE is #1 diagnosis',type:'select',options:[{value:'0',label:'No'},{value:'3',label:'Yes'}]},{key:'hrGT100',label:'Heart rate >100',type:'select',options:[{value:'0',label:'No'},{value:'1.5',label:'Yes'}]},{key:'surgeryImmobilization',label:'Surgery or immobilization <4w',type:'select',options:[{value:'0',label:'No'},{value:'1.5',label:'Yes'}]},{key:'previousDvtPE',label:'Previous DVT or PE',type:'select',options:[{value:'0',label:'No'},{value:'1.5',label:'Yes'}]},{key:'hemoptysis',label:'Hemoptysis',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'malignancy',label:'Active cancer',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]}],
+      gcs: [{key:'eyeOpening',label:'Eye opening (1-4)',type:'number',placeholder:'e.g. 4'},{key:'verbal',label:'Verbal response (1-5)',type:'number',placeholder:'e.g. 5'},{key:'motor',label:'Motor response (1-6)',type:'number',placeholder:'e.g. 6'}],
+      mcisaac: [{key:'feverGT38',label:'Fever >38C',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'tonsillarExudate',label:'Tonsillar exudate',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'tenderCervicalNodes',label:'Tender cervical nodes',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'noCough',label:'Absence of cough',type:'select',options:[{value:'0',label:'No'},{value:'1',label:'Yes'}]},{key:'age',label:'Age (years)',type:'number',placeholder:'e.g. 30'}]
     };
     return inputs[calcId] || [];
   }
@@ -1024,7 +1134,15 @@
       sirs: function() { if (isNaN(v.temp) || isNaN(v.hr) || isNaN(v.rr) || isNaN(v.wbc)) return null; var score = 0; if (v.temp > 38 || v.temp < 36) score++; if (v.hr > 90) score++; if (v.rr > 20) score++; if (v.wbc > 12 || v.wbc < 4) score++; return { text: 'SIRS criteria documented: ' + score + '/4. Clinician interpretation required.', value: score }; },
       qsofa: function() { if (isNaN(v.rr) || isNaN(v.sbp) || !v.mentalStatus) return null; var score = 0; if (v.rr >= 22) score++; if (v.sbp <= 100) score++; if (v.mentalStatus === 'yes') score++; return { text: 'qSOFA score documented: ' + score + '/3. Clinician interpretation required.', value: score }; },
       fib4: function() { if (isNaN(v.age) || isNaN(v.ast) || isNaN(v.alt) || isNaN(v.platelets) || v.alt <= 0 || v.platelets <= 0) return null; var score = (v.age * v.ast) / (v.platelets * Math.sqrt(v.alt)); return { text: 'FIB-4 index: ' + score.toFixed(2) + '. Clinician interpretation required.', value: score }; },
-      child_pugh: function() { if (isNaN(v.bilirubin) || isNaN(v.albumin) || isNaN(v.inr) || !v.ascites || !v.encephalopathy) return null; var score = 0; score += v.bilirubin < 2 ? 1 : (v.bilirubin <= 3 ? 2 : 3); score += v.albumin > 3.5 ? 1 : (v.albumin >= 2.8 ? 2 : 3); score += v.inr < 1.7 ? 1 : (v.inr <= 2.3 ? 2 : 3); score += v.ascites === 'none' ? 1 : (v.ascites === 'mild' ? 2 : 3); score += v.encephalopathy === 'none' ? 1 : (v.encephalopathy === 'grade1_2' ? 2 : 3); var cls = score <= 6 ? 'A' : (score <= 9 ? 'B' : 'C'); return { text: 'Child-Pugh score documented: ' + score + ' (Class ' + cls + '). Clinician interpretation required.', value: score }; }
+      child_pugh: function() { if (isNaN(v.bilirubin) || isNaN(v.albumin) || isNaN(v.inr) || !v.ascites || !v.encephalopathy) return null; var score = 0; score += v.bilirubin < 2 ? 1 : (v.bilirubin <= 3 ? 2 : 3); score += v.albumin > 3.5 ? 1 : (v.albumin >= 2.8 ? 2 : 3); score += v.inr < 1.7 ? 1 : (v.inr <= 2.3 ? 2 : 3); score += v.ascites === 'none' ? 1 : (v.ascites === 'mild' ? 2 : 3); score += v.encephalopathy === 'none' ? 1 : (v.encephalopathy === 'grade1_2' ? 2 : 3); var cls = score <= 6 ? 'A' : (score <= 9 ? 'B' : 'C'); return { text: 'Child-Pugh score documented: ' + score + ' (Class ' + cls + '). Clinician interpretation required.', value: score }; },
+      heart: function() { try { if (typeof window.calculateHEART !== 'function') return null; var h = {history:parseFloat(v.history)||0,ecg:parseFloat(v.ecg)||0,age:parseFloat(v.age)||0,riskFactors:parseFloat(v.riskFactors)||0,troponin:parseFloat(v.troponin)||0}; if(isNaN(h.history+h.ecg+h.age+h.riskFactors+h.troponin)) return null; var r = window.calculateHEART(h); return r ? {text: r.interpretation + ' ' + r.safetyNotice, value: r.score} : null; } catch(e) { return null; } },
+      curb65: function() { try { if (typeof window.calculateCURB65 !== 'function') return null; var c = {confusion:parseInt(v.confusion)===1,ureaGT7:parseInt(v.ureaGT7)===1,rrGE30:parseInt(v.rrGE30)===1,bpLow:parseInt(v.bpLow)===1,ageGE65:parseInt(v.ageGE65)===1}; var r = window.calculateCURB65(c); return r ? {text: r.interpretation + ' ' + r.safetyNotice, value: r.score} : null; } catch(e) { return null; } },
+      ottawa_knee: function() { try { if (typeof window.calculateOttawaKnee !== 'function') return null; var o = {ageGT55:parseInt(v.ageGT55)===1,patellaTenderness:parseInt(v.patellaTenderness)===1,fibularHeadTenderness:parseInt(v.fibularHeadTenderness)===1,unableToBearWeight:parseInt(v.unableToBearWeight)===1,unableToFlex90:parseInt(v.unableToFlex90)===1}; var r = window.calculateOttawaKnee(o); return r ? {text: r.interpretation + ' ' + r.safetyNotice, value: r.score} : null; } catch(e) { return null; } },
+      ottawa_ankle: function() { try { if (typeof window.calculateOttawaAnkle !== 'function') return null; var o = {malleolarTenderness:parseInt(v.malleolarTenderness)===1,midfootTenderness:parseInt(v.midfootTenderness)===1,unableToBearWeight:parseInt(v.unableToBearWeight)===1}; var r = window.calculateOttawaAnkle(o); return r ? {text: r.interpretation + ' ' + r.safetyNotice, value: r.score} : null; } catch(e) { return null; } },
+      wells_dvt: function() { try { if (typeof window.calculateWellsDVT !== 'function') return null; var w = {activeCancer:parseInt(v.activeCancer)===1,paralysisOrCast:parseInt(v.paralysisOrCast)===1,bedRestSurgery:parseInt(v.bedRestSurgery)===1,localizedTenderness:parseInt(v.localizedTenderness)===1,entireLegSwelling:parseInt(v.entireLegSwelling)===1,calfSwelling:parseInt(v.calfSwelling)===1,pittingEdema:parseInt(v.pittingEdema)===1,collateralVeins:parseInt(v.collateralVeins)===1,alternativeDiagnosis:parseInt(v.alternativeDiagnosis)===-2}; var r = window.calculateWellsDVT(w); return r ? {text: r.interpretation + ' ' + r.safetyNotice, value: r.score} : null; } catch(e) { return null; } },
+      wells_pe: function() { try { if (typeof window.calculateWellsPE !== 'function') return null; var w = {dvtSymptoms:parseInt(v.dvtSymptoms)===3,peIsPrimaryDiagnosis:parseInt(v.peIsPrimaryDiagnosis)===3,hrGT100:parseFloat(v.hrGT100)===1.5,surgeryImmobilization:parseFloat(v.surgeryImmobilization)===1.5,previousDvtPE:parseFloat(v.previousDvtPE)===1.5,hemoptysis:parseInt(v.hemoptysis)===1,malignancy:parseInt(v.malignancy)===1}; var r = window.calculateWellsPE(w); return r ? {text: r.interpretation + ' ' + r.safetyNotice, value: r.score} : null; } catch(e) { return null; } },
+      gcs: function() { try { if (typeof window.calculateGCS !== 'function') return null; var g = {eyeOpening:parseInt(v.eyeOpening)||1,verbal:parseInt(v.verbal)||1,motor:parseInt(v.motor)||1}; if(isNaN(g.eyeOpening+g.verbal+g.motor)) return null; var r = window.calculateGCS(g); return r ? {text: r.interpretation + ' ' + r.safetyNotice, value: r.score} : null; } catch(e) { return null; } },
+      mcisaac: function() { try { if (typeof window.calculateMcIsaac !== 'function') return null; var m = {feverGT38:parseInt(v.feverGT38)===1,tonsillarExudate:parseInt(v.tonsillarExudate)===1,tenderCervicalNodes:parseInt(v.tenderCervicalNodes)===1,noCough:parseInt(v.noCough)===1,age:parseFloat(v.age)||30}; var r = window.calculateMcIsaac(m); return r ? {text: r.interpretation + ' ' + r.safetyNotice, value: r.score} : null; } catch(e) { return null; } }
     };
     if (calcFns[calcId]) return calcFns[calcId]();
     return null;
