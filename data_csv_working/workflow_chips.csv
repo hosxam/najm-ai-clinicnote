@@ -4896,3 +4896,355 @@ endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-symptoms-10,
 endo-pituitary-symptoms-documentation,Endocrinology,endo-pituitary-symptoms-documentation-exam_findings-6,exam_findings,visual field testing documented if assessed,6,"visual, field, perimetry",endocrinology
 endo-diabetes-followup,Endocrinology,endo-diabetes-followup-follow_up-10,follow_up,sooner if acute symptoms,10,"acute, symptoms",endocrinology
 endo-osteoporosis-followup,Endocrinology,endo-osteoporosis-followup-follow_up-9,follow_up,sooner if fracture,9,fracture,endocrinology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-symptoms-1,symptoms,dysuria,1,"dysuria, pain, burning, urination",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-symptoms-2,symptoms,urinary frequency reviewed,2,"frequency, often, void",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-symptoms-3,symptoms,urinary urgency reviewed,3,"urgency, sudden, urge",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-symptoms-4,symptoms,suprapubic discomfort reviewed,4,"suprapubic, pelvic, pain",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-symptoms-5,symptoms,fever reviewed,5,"fever, temperature",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-symptoms-6,symptoms,flank pain reviewed,6,"flank, loin, kidney, pain",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-symptoms-7,symptoms,hematuria reviewed,7,"hematuria, blood, urine",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-symptoms-8,symptoms,duration documented,8,"duration, how long",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-relevant_negatives-1,relevant_negatives,no fever reported,1,"fever, febrile",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-relevant_negatives-2,relevant_negatives,no flank pain reported,2,"flank, loin, pain",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-relevant_negatives-3,relevant_negatives,no vomiting reported,3,vomiting,urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-relevant_negatives-4,relevant_negatives,no visible hematuria reported,4,"visible, hematuria, blood",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-relevant_negatives-5,relevant_negatives,no urinary retention reported,5,"retention, unable, void",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-relevant_negatives-6,relevant_negatives,no pregnancy concern documented if applicable,6,"pregnancy, pregnant",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, BP, pulse, temp",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-exam_findings-2,exam_findings,abdominal examination documented if assessed,2,"abdominal, exam",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-exam_findings-3,exam_findings,suprapubic tenderness documented if assessed,3,"suprapubic, tenderness",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-exam_findings-4,exam_findings,flank or CVA tenderness documented if assessed,4,"flank, CVA, loin, kidney",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-exam_findings-5,exam_findings,hydration documented if assessed,5,"hydration, mucous, turgor",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-red_flags-1,red_flags,fever with flank pain,1,"fever, flank, pyelonephritis","urology_nephrology,high_safety"
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-red_flags-2,red_flags,vomiting,2,"vomiting, unable, oral","urology_nephrology,high_safety"
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-red_flags-3,red_flags,urinary retention,3,"retention, unable, void","urology_nephrology,high_safety"
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-red_flags-4,red_flags,visible hematuria,4,"visible, hematuria, blood","urology_nephrology,high_safety"
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-red_flags-5,red_flags,pregnancy context if relevant,5,"pregnancy, pregnant","urology_nephrology,high_safety"
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-red_flags-6,red_flags,immunosuppressed condition,6,"immunocompromised, diabetic, transplant","urology_nephrology,high_safety"
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-investigations-1,investigations,urinalysis reviewed if performed,1,"urinalysis, dipstick, urine",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-investigations-2,investigations,urine culture reviewed if available,2,"culture, MC+S, sensitivity",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-investigations-3,investigations,blood tests reviewed if ordered,3,"blood, FBC, CRP",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-investigations-4,investigations,renal function reviewed if ordered,4,"renal, kidney, eGFR, creatinine",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-plan_phrases-2,plan_phrases,hydration advice documented if discussed,2,"hydration, fluids, water",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-plan_phrases-3,plan_phrases,medication plan documented if clinician decided,3,"medication, antibiotic",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-plan_phrases-4,plan_phrases,safety-netting documented if discussed,4,"safety, netting",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-follow_up-1,follow_up,2-3 days if symptoms persist,1,"two, three, days",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-follow_up-2,follow_up,1-2 weeks,2,"one, two, weeks",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-follow_up-4,follow_up,PRN,4,"PRN, as needed",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-symptoms-1,symptoms,hematuria,1,"hematuria, blood, urine",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-symptoms-2,symptoms,visible blood in urine documented,2,"visible, macroscopic, blood",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-symptoms-3,symptoms,microscopic hematuria context documented,3,"microscopic, dipstick, RBC",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-symptoms-4,symptoms,dysuria reviewed,4,"dysuria, burning",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-symptoms-5,symptoms,flank pain reviewed,5,"flank, loin, pain",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-symptoms-6,symptoms,urinary frequency and urgency reviewed,6,"frequency, urgency",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-symptoms-7,symptoms,anticoagulant use reviewed if relevant,7,"anticoagulant, warfarin, DOAC, aspirin",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-symptoms-8,symptoms,smoking or occupational exposure reviewed if relevant,8,"smoking, occupational, dye",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-relevant_negatives-1,relevant_negatives,no urinary retention reported,1,"retention, unable, void",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-relevant_negatives-2,relevant_negatives,no fever reported,2,"fever, temperature",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-relevant_negatives-3,relevant_negatives,no flank pain reported if applicable,3,"flank, loin",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, exam",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-exam_findings-2,exam_findings,flank tenderness documented if assessed,2,"flank, CVA, tenderness",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-exam_findings-3,exam_findings,vitals documented if measured,3,"vitals, BP, pulse",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-red_flags-1,red_flags,visible hematuria with clots,1,"visible, clots, heavy","urology_nephrology,high_safety"
+uro-hematuria,Urology / Nephrology,uro-hematuria-red_flags-2,red_flags,painless visible hematuria,2,"painless, visible","urology_nephrology,high_safety"
+uro-hematuria,Urology / Nephrology,uro-hematuria-red_flags-3,red_flags,smoking history with hematuria,3,"smoking, hematuria","urology_nephrology,high_safety"
+uro-hematuria,Urology / Nephrology,uro-hematuria-red_flags-4,red_flags,weight loss with hematuria,4,"weight, loss","urology_nephrology,high_safety"
+uro-hematuria,Urology / Nephrology,uro-hematuria-investigations-1,investigations,urinalysis reviewed if performed,1,"urinalysis, dipstick",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-investigations-2,investigations,urine microscopy and culture reviewed if available,2,"microscopy, culture, RBC",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-investigations-3,investigations,renal function reviewed if ordered,3,"renal, eGFR, creatinine",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-investigations-4,investigations,imaging reviewed if available,4,"ultrasound, CT, KUB",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-investigations-5,investigations,previous records reviewed if available,5,"previous, records",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, urology",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-follow_up-1,follow_up,2-4 weeks,1,"two, four, weeks",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-follow_up-2,follow_up,4-6 weeks,2,"four, six, weeks",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-follow_up-4,follow_up,PRN,4,"PRN, as needed",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-symptoms-1,symptoms,lower urinary tract symptoms,1,"LUTS, urinary, symptoms",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-symptoms-2,symptoms,weak stream reviewed,2,"weak, stream, flow",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-symptoms-3,symptoms,hesitancy reviewed,3,"hesitancy, starting",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-symptoms-4,symptoms,nocturia reviewed,4,"nocturia, night, waking",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-symptoms-5,symptoms,urgency and frequency reviewed,5,"urgency, frequency",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-symptoms-6,symptoms,incomplete emptying reviewed,6,"incomplete, emptying",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-symptoms-7,symptoms,retention history reviewed,7,"retention, unable, void",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-symptoms-8,symptoms,medication history reviewed,8,"medication, alpha blocker, 5ARI",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-relevant_negatives-1,relevant_negatives,no hematuria reported,1,"hematuria, blood",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-relevant_negatives-2,relevant_negatives,no urinary retention reported,2,"retention, acute, unable",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-relevant_negatives-3,relevant_negatives,no fever reported,3,fever,urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, exam",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-exam_findings-2,exam_findings,bladder distension documented if assessed,2,"bladder, distension, palpable",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-exam_findings-3,exam_findings,digital rectal examination documented if clinically appropriate and assessed,3,"DRE, prostate, rectal",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-exam_findings-4,exam_findings,vitals documented if measured,4,"vitals, BP",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-red_flags-1,red_flags,acute urinary retention,1,"acute, retention","urology_nephrology,high_safety"
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-red_flags-2,red_flags,visible hematuria,2,"visible, hematuria, blood","urology_nephrology,high_safety"
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-red_flags-3,red_flags,fever with urinary symptoms,3,"fever, infection","urology_nephrology,high_safety"
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-red_flags-4,red_flags,new onset after age 50,4,"new, onset, age","urology_nephrology,high_safety"
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-investigations-1,investigations,urinalysis reviewed if performed,1,"urinalysis, dipstick",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-investigations-2,investigations,PSA discussed and reviewed if clinician did so and available,2,"PSA, prostate, antigen",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-investigations-3,investigations,renal function reviewed if ordered,3,"renal, eGFR, creatinine",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-investigations-4,investigations,previous records reviewed if available,4,"previous, records",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,"medication, alpha blocker, 5ARI",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-plan_phrases-3,plan_phrases,lifestyle advice documented if discussed,3,"lifestyle, fluid, caffeine",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,"referral, urology",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-follow_up-1,follow_up,4-6 weeks,1,"four, six, weeks",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-follow_up-2,follow_up,3-6 months,2,"three, six, months",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-follow_up-4,follow_up,PRN,4,"PRN, as needed",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-symptoms-1,symptoms,renal colic follow-up,1,"renal, colic, stone, followup",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-symptoms-2,symptoms,flank pain progress reviewed,2,"flank, pain, progress",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-symptoms-3,symptoms,pain radiation reviewed,3,"radiation, groin, loin",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-symptoms-4,symptoms,hematuria reviewed,4,"hematuria, blood",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-symptoms-5,symptoms,nausea and vomiting reviewed,5,"nausea, vomiting",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-symptoms-6,symptoms,fever reviewed,6,"fever, temperature",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-symptoms-7,symptoms,previous stone history reviewed,7,"stone, calculi, prior",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-relevant_negatives-1,relevant_negatives,no fever reported,1,"fever, febrile",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-relevant_negatives-2,relevant_negatives,no persistent vomiting reported,2,"vomiting, persistent",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-relevant_negatives-3,relevant_negatives,no urinary retention reported,3,"retention, unable, void",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-exam_findings-1,exam_findings,abdominal and flank examination documented if assessed,1,"abdominal, flank, exam",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-exam_findings-2,exam_findings,CVA tenderness documented if assessed,2,"CVA, loin, tenderness",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-exam_findings-3,exam_findings,vitals documented if measured,3,"vitals, BP, pulse, temp",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-red_flags-1,red_flags,fever with flank pain,1,"fever, flank, infection","urology_nephrology,high_safety"
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-red_flags-2,red_flags,persistent vomiting or dehydration,2,"vomiting, dehydration","urology_nephrology,high_safety"
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-red_flags-3,red_flags,solitary kidney with obstruction,3,"solitary, kidney, obstruction","urology_nephrology,high_safety"
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-red_flags-4,red_flags,known CKD with acute changes,4,"CKD, acute, kidney","urology_nephrology,high_safety"
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-investigations-1,investigations,urinalysis reviewed if performed,1,"urinalysis, dipstick, blood",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-investigations-2,investigations,renal function reviewed if ordered,2,"renal, eGFR, creatinine",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-investigations-3,investigations,imaging reviewed if available,3,"CT, KUB, ultrasound, stone",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-plan_phrases-2,plan_phrases,follow-up imaging documented if arranged by clinician,2,"follow-up, imaging, stone",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-plan_phrases-3,plan_phrases,safety-netting documented if discussed,3,"safety, netting",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,"referral, urology",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-follow_up-1,follow_up,2-4 weeks,1,"two, four, weeks",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-follow_up-2,follow_up,4-6 weeks if imaging pending,2,"four, six, imaging",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-follow_up-3,follow_up,sooner if symptoms recur,3,"sooner, recurrence",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-follow_up-4,follow_up,PRN,4,"PRN, as needed",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-symptoms-1,symptoms,urinary retention documentation,1,"urinary, retention, unable, void",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-symptoms-2,symptoms,onset documented,2,"onset, acute, gradual",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-symptoms-3,symptoms,voiding difficulty reviewed,3,"voiding, difficulty, stream",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-symptoms-4,symptoms,suprapubic discomfort reviewed,4,"suprapubic, pain, discomfort",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-symptoms-5,symptoms,previous retention history reviewed,5,"previous, retention, history",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-symptoms-6,symptoms,medication history reviewed,6,"medication, anticholinergic, decongestant",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-symptoms-7,symptoms,neurological symptoms reviewed,7,"neurological, spine, sensation",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-relevant_negatives-1,relevant_negatives,no fever reported if applicable,1,"fever, infection",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, exam",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-exam_findings-2,exam_findings,bladder distension documented if assessed,2,"bladder, distension, palpable",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-exam_findings-3,exam_findings,neurological screen documented if assessed,3,"neurological, sensation, tone",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-exam_findings-4,exam_findings,vitals documented if measured,4,"vitals, BP, pulse",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-red_flags-1,red_flags,fever with retention,1,"fever, infection, sepsis","urology_nephrology,high_safety"
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-red_flags-2,red_flags,haematuria with retention,2,"hematuria, blood","urology_nephrology,high_safety"
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-red_flags-3,red_flags,neurological signs with retention,3,"neurological, cauda, equina","urology_nephrology,high_safety"
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-red_flags-4,red_flags,post-renal acute kidney injury,4,"AKI, kidney, post-renal","urology_nephrology,high_safety"
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-investigations-1,investigations,urinalysis reviewed if performed,1,"urinalysis, dipstick",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-investigations-2,investigations,renal function reviewed if ordered,2,"renal, eGFR, creatinine",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-investigations-3,investigations,bladder scan result reviewed if performed,3,"bladder, scan, PVR, volume",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-investigations-4,investigations,catheter details documented if present,4,"catheter, IDC, status",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, urology",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-follow_up-1,follow_up,1-2 weeks,1,"one, two, weeks",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-follow_up-2,follow_up,2-4 weeks,2,"two, four, weeks",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-follow_up-3,follow_up,sooner if recurrent,3,"sooner, recurrent",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-follow_up-4,follow_up,PRN,4,"PRN, as needed",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-symptoms-1,symptoms,flank pain,1,"flank, loin, kidney, pain",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-symptoms-2,symptoms,duration documented,2,"duration, how long",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-symptoms-3,symptoms,character documented,3,"character, colicky, dull",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-symptoms-4,symptoms,radiation reviewed,4,"radiation, groin, abdomen",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-symptoms-5,symptoms,urinary symptoms reviewed,5,"urinary, dysuria, frequency",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-symptoms-6,symptoms,fever reviewed,6,"fever, temperature",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-symptoms-7,symptoms,nausea and vomiting reviewed,7,"nausea, vomiting",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-symptoms-8,symptoms,previous stones reviewed,8,"stone, calculi, prior, history",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-relevant_negatives-1,relevant_negatives,no fever reported,1,"fever, temperature",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-relevant_negatives-2,relevant_negatives,no visible hematuria reported,2,"visible, hematuria, blood",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-relevant_negatives-3,relevant_negatives,no persistent vomiting reported,3,"vomiting, persistent",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-exam_findings-1,exam_findings,abdominal and flank tenderness documented if assessed,1,"flank, abdominal, tenderness",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-exam_findings-2,exam_findings,CVA tenderness documented if assessed,2,"CVA, kidney, punch",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-exam_findings-3,exam_findings,vitals documented if measured,3,"vitals, BP, pulse, temp",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-red_flags-1,red_flags,fever with flank pain,1,"fever, flank, pyelonephritis","urology_nephrology,high_safety"
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-red_flags-2,red_flags,visible hematuria,2,"visible, hematuria","urology_nephrology,high_safety"
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-red_flags-3,red_flags,persistent vomiting,3,"vomiting, persistent","urology_nephrology,high_safety"
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-red_flags-4,red_flags,known solitary kidney,4,"solitary, kidney","urology_nephrology,high_safety"
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-red_flags-5,red_flags,signs of sepsis if assessed,5,"sepsis, septic","urology_nephrology,high_safety"
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-investigations-1,investigations,urinalysis reviewed if performed,1,"urinalysis, dipstick",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-investigations-2,investigations,renal function reviewed if ordered,2,"renal, eGFR, creatinine",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-investigations-3,investigations,imaging reviewed if available,3,"CT, KUB, ultrasound",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-investigations-4,investigations,previous records reviewed if available,4,"previous, records",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, urology",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-follow_up-1,follow_up,1-2 weeks,1,"one, two, weeks",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-follow_up-2,follow_up,2-4 weeks,2,"two, four, weeks",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-follow_up-4,follow_up,PRN,4,"PRN, as needed",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-symptoms-1,symptoms,urinary frequency,1,"urinary, frequency, often, void",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-symptoms-2,symptoms,urinary urgency,2,"urgency, sudden, urge",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-symptoms-3,symptoms,nocturia reviewed,3,"nocturia, night, waking",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-symptoms-4,symptoms,urge incontinence reviewed,4,"urge, incontinence, leak",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-symptoms-5,symptoms,dysuria reviewed,5,"dysuria, burning",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-symptoms-6,symptoms,hematuria reviewed,6,"hematuria, blood",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-symptoms-7,symptoms,fluid and caffeine context reviewed,7,"fluid, caffeine, intake, bladder",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-relevant_negatives-1,relevant_negatives,no fever reported,1,"fever, infection",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-relevant_negatives-2,relevant_negatives,no flank pain reported,2,"flank, loin, pain",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-relevant_negatives-3,relevant_negatives,no urinary retention reported,3,"retention, unable, void",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, exam",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-exam_findings-2,exam_findings,vitals documented if measured,2,"vitals, BP",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-red_flags-1,red_flags,fever with urinary symptoms,1,"fever, infection","urology_nephrology,high_safety"
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-red_flags-2,red_flags,visible hematuria,2,"visible, hematuria","urology_nephrology,high_safety"
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-red_flags-3,red_flags,symptom progression despite treatment,3,"progression, treatment, failure","urology_nephrology,high_safety"
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-investigations-1,investigations,urinalysis reviewed if performed,1,"urinalysis, dipstick",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-investigations-2,investigations,urine culture reviewed if available,2,"culture, MC+S",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-investigations-3,investigations,glucose or HbA1c reviewed if ordered,3,"glucose, HbA1c, diabetes",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-investigations-4,investigations,previous records reviewed if available,4,"previous, records",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-plan_phrases-2,plan_phrases,lifestyle advice documented if discussed,2,"lifestyle, caffeine, fluid, bladder",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-plan_phrases-3,plan_phrases,safety-netting documented if discussed,3,"safety, netting",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,"referral, urology, continence",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-follow_up-1,follow_up,4-6 weeks,1,"four, six, weeks",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-follow_up-2,follow_up,6-8 weeks,2,"six, eight, weeks",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-follow_up-4,follow_up,PRN,4,"PRN, as needed",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-symptoms-1,symptoms,CKD follow-up,1,"CKD, chronic, kidney, followup",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-symptoms-2,symptoms,renal function trend reviewed,2,"renal, function, trend, eGFR",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-symptoms-3,symptoms,blood pressure context reviewed,3,"BP, blood, pressure, hypertension",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-symptoms-4,symptoms,edema reviewed,4,"oedema, edema, swelling, ankle",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-symptoms-5,symptoms,urinary symptoms reviewed,5,"urinary, symptoms, frequency",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-symptoms-6,symptoms,medication review documented,6,"medication, review, antihypertensive",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-symptoms-7,symptoms,nephrotoxic medication history reviewed if relevant,7,"nephrotoxic, NSAID, contrast",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-relevant_negatives-1,relevant_negatives,no acute urinary symptoms reported,1,"acute, urinary, infection",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-relevant_negatives-2,relevant_negatives,no worsening edema reported if applicable,2,"worsening, oedema, fluid",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-exam_findings-1,exam_findings,blood pressure documented if measured,1,"BP, blood, pressure",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-exam_findings-2,exam_findings,edema documented if assessed,2,"oedema, pedal, ankle, sacral",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-exam_findings-3,exam_findings,weight documented if measured,3,"weight, fluid, status",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-red_flags-1,red_flags,rapidly declining eGFR,1,"rapid, decline, eGFR","urology_nephrology,high_safety"
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-red_flags-2,red_flags,refractory hypertension,2,"refractory, hypertension, BP","urology_nephrology,high_safety"
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-red_flags-3,red_flags,worsening oedema or fluid overload,3,"worsening, oedema, overload","urology_nephrology,high_safety"
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-red_flags-4,red_flags,hyperkalemia if documented,4,"hyperkalemia, high, potassium","urology_nephrology,high_safety"
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-investigations-1,investigations,renal function reviewed,1,"renal, eGFR, creatinine",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-investigations-2,investigations,eGFR reviewed,2,"eGFR, GFR, stage",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-investigations-3,investigations,urine ACR or proteinuria reviewed if available,3,"ACR, proteinuria, albumin",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-investigations-4,investigations,electrolytes reviewed if ordered,4,"electrolytes, K, sodium, bicarbonate",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-investigations-5,investigations,medication list reviewed if available,5,"medication, list, review",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-plan_phrases-2,plan_phrases,medication review documented if clinician performed,2,"medication, review",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-plan_phrases-3,plan_phrases,lifestyle and dietary advice documented if discussed,3,"lifestyle, diet, salt, protein",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-plan_phrases-4,plan_phrases,referral documented if clinician decided,4,"referral, nephrology, dietetics",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-follow_up-1,follow_up,3-6 months,1,"three, six, months",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-follow_up-2,follow_up,6-12 months if stable,2,"six, twelve",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-follow_up-3,follow_up,sooner if worsening renal function,3,"sooner, eGFR",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-follow_up-4,follow_up,PRN,4,"PRN, as needed",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-symptoms-1,symptoms,proteinuria,1,"proteinuria, protein, urine",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-symptoms-2,symptoms,urine ACR or proteinuria result reviewed,2,"ACR, PCR, protein, level",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-symptoms-3,symptoms,oedema reviewed,3,"oedema, edema, swelling",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-symptoms-4,symptoms,blood pressure context reviewed,4,"BP, blood, pressure",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-symptoms-5,symptoms,diabetes and hypertension context reviewed if relevant,5,"diabetes, hypertension, CKD",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-symptoms-6,symptoms,urinary symptoms reviewed,6,"urinary, frothy, symptoms",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-relevant_negatives-1,relevant_negatives,no hematuria reported if applicable,1,"hematuria, blood",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-relevant_negatives-2,relevant_negatives,no oedema reported if applicable,2,"oedema, swelling",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-relevant_negatives-3,relevant_negatives,no acute urinary symptoms reported,3,"acute, UTI, infection",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-exam_findings-1,exam_findings,blood pressure documented if measured,1,"BP, blood, pressure",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-exam_findings-2,exam_findings,oedema documented if assessed,2,"oedema, pedal, sacral",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-exam_findings-3,exam_findings,weight documented if measured,3,"weight, fluid",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-red_flags-1,red_flags,nephrotic-range proteinuria,1,"nephrotic, high, protein","urology_nephrology,high_safety"
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-red_flags-2,red_flags,rapidly rising proteinuria,2,"rapid, rising, protein","urology_nephrology,high_safety"
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-red_flags-3,red_flags,haematuria with proteinuria,3,"haematuria, blood, protein","urology_nephrology,high_safety"
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-red_flags-4,red_flags,declining renal function with proteinuria,4,"declining, eGFR","urology_nephrology,high_safety"
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-investigations-1,investigations,urine ACR or proteinuria reviewed,1,"ACR, PCR, protein",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-investigations-2,investigations,renal function reviewed if ordered,2,"renal, eGFR, creatinine",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-investigations-3,investigations,urinalysis reviewed if performed,3,"urinalysis, dipstick",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-investigations-4,investigations,previous records reviewed if available,4,"previous, records",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-plan_phrases-2,plan_phrases,lifestyle advice documented if discussed,2,"lifestyle, diet, salt, protein",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, nephrology",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-follow_up-1,follow_up,3-6 months,1,"three, six, months",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-follow_up-2,follow_up,6-12 months if stable,2,"six, twelve",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-follow_up-4,follow_up,PRN,4,"PRN, as needed",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-symptoms-1,symptoms,electrolyte abnormality review,1,"electrolyte, K, Na, abnormality",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-symptoms-2,symptoms,abnormal electrolyte documented by clinician,2,"abnormal, potassium, sodium",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-symptoms-3,symptoms,trend and comparison reviewed,3,"trend, comparison, previous",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-symptoms-4,symptoms,symptoms reviewed,4,"symptoms, weakness, palpitations, cramps",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-symptoms-5,symptoms,medication history reviewed,5,"medication, diuretic, ACE, ARB",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-symptoms-6,symptoms,renal function context reviewed,6,"renal, eGFR, CKD",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-symptoms-7,symptoms,fluid intake context reviewed if relevant,7,"fluid, intake, output, dehydration",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-relevant_negatives-1,relevant_negatives,no acute symptoms reported if applicable,1,"acute, symptoms, weakness",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-relevant_negatives-2,relevant_negatives,no cardiac symptoms reported if relevant,2,"cardiac, palpitations, chest",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, BP, pulse, rhythm",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-exam_findings-2,exam_findings,hydration documented if assessed,2,"hydration, fluid, status",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-red_flags-1,red_flags,severe hyperkalemia if documented,1,"severe, hyperkalemia, high K","urology_nephrology,high_safety"
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-red_flags-2,red_flags,severe hyponatremia if documented,2,"severe, hyponatremia, low Na","urology_nephrology,high_safety"
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-red_flags-3,red_flags,ECG changes if documented,3,"ECG, changes, arrhythmia","urology_nephrology,high_safety"
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-red_flags-4,red_flags,rapid electrolyte shifts,4,"rapid, shift, change","urology_nephrology,high_safety"
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-investigations-1,investigations,renal function reviewed if ordered,1,"renal, eGFR, creatinine",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-investigations-2,investigations,repeat blood tests reviewed if available,2,"repeat, labs, U+E, BMP",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-investigations-3,investigations,ECG reviewed if performed by clinician,3,"ECG, EKG, tracing",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-investigations-4,investigations,previous records reviewed if available,4,"previous, records",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-plan_phrases-2,plan_phrases,medication review documented if clinician performed,2,"medication, review",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-plan_phrases-3,plan_phrases,follow-up testing documented if arranged,3,"repeat, labs, follow-up",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-plan_phrases-4,plan_phrases,safety-netting documented if discussed,4,"safety, netting",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-plan_phrases-5,plan_phrases,referral documented if clinician decided,5,"referral, nephrology",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-follow_up-1,follow_up,1-2 weeks,1,"one, two, weeks",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-follow_up-2,follow_up,2-4 weeks,2,"two, four, weeks",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-follow_up-3,follow_up,sooner if abnormal,3,"sooner, abnormal, change",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-follow_up-4,follow_up,PRN,4,"PRN, as needed",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-symptoms-9,symptoms,previous UTI history reviewed,9,"UTI, prior, recurrent",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-exam_findings-6,exam_findings,glucose checked if performed,6,"glucose, diabetes",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-red_flags-7,red_flags,recurrent UTI in male,7,"recurrent, male",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-investigations-5,investigations,imaging reviewed if available,5,"ultrasound, KUB",urology_nephrology
+uro-dysuria-uti-symptoms,Urology / Nephrology,uro-dysuria-uti-symptoms-plan_phrases-6,plan_phrases,recurrent UTI plan discussed if applicable,6,"recurrent, UTI, prophylaxis",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-symptoms-9,symptoms,family history of urological cancer reviewed,9,"family, cancer, bladder, kidney",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-symptoms-10,symptoms,recent urinary tract infection context reviewed,10,"recent, UTI, infection",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-exam_findings-4,exam_findings,blood pressure documented if measured,4,"BP, blood, pressure",urology_nephrology
+uro-hematuria,Urology / Nephrology,uro-hematuria-red_flags-5,red_flags,recurrent visible hematuria,5,"recurrent, visible",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-symptoms-9,symptoms,flow rate context reviewed if assessed,9,"flow, rate, uroflowmetry",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-exam_findings-5,exam_findings,neurological examination documented if relevant,5,"neurological, reflexes",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-red_flags-5,red_flags,acute retention with BPH,5,"acute, retention",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-red_flags-6,red_flags,haematuria with LUTS,6,"haematuria, blood",urology_nephrology
+uro-luts-bph,Urology / Nephrology,uro-luts-bph-investigations-5,investigations,bladder scan reviewed if performed,5,"bladder, scan, PVR",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-symptoms-8,symptoms,metabolic workup context reviewed if relevant,8,"metabolic, calcium, urate",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-symptoms-9,symptoms,hydration context reviewed,9,"hydration, fluid, intake",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-investigations-4,investigations,stone analysis result reviewed if available,4,"stone, analysis, composition",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-plan_phrases-6,plan_phrases,preventative advice documented if discussed,6,"prevention, diet, fluid",urology_nephrology
+uro-renal-colic-followup,Urology / Nephrology,uro-renal-colic-followup-follow_up-5,follow_up,sooner if recurrence,5,"sooner, recurrent",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-symptoms-8,symptoms,trauma or surgery history reviewed if relevant,8,"trauma, surgery, pelvic",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-symptoms-9,symptoms,pain severity documented if applicable,9,"pain, severity",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-exam_findings-5,exam_findings,pelvic examination documented if clinically appropriate,5,"pelvic, DRE",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-red_flags-5,red_flags,suspected cauda equina,5,"cauda, equina, spine",urology_nephrology
+uro-urinary-retention-documentation,Urology / Nephrology,uro-urinary-retention-documentation-plan_phrases-5,plan_phrases,trial without catheter discussed if applicable,5,"TWOC, catheter, removal",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-symptoms-9,symptoms,urine output reviewed if relevant,9,"urine, output, oliguria",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-symptoms-10,symptoms,trauma history reviewed if relevant,10,"trauma, injury, kidney",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-exam_findings-4,exam_findings,urinalysis reviewed if performed,4,"urinalysis, dipstick",urology_nephrology
+uro-flank-pain,Urology / Nephrology,uro-flank-pain-investigations-5,investigations,blood tests reviewed if ordered,5,"blood, FBC, CRP",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-symptoms-8,symptoms,pelvic floor context reviewed if relevant,8,"pelvic, floor, prolapse",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-symptoms-9,symptoms,menstrual or menopausal context reviewed if relevant,9,"menopausal, hormonal",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-exam_findings-3,exam_findings,pelvic examination documented if clinically appropriate,3,"pelvic, prolapse",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-plan_phrases-6,plan_phrases,bladder training discussed if applicable,6,"bladder, training, exercises",urology_nephrology
+uro-frequency-urgency,Urology / Nephrology,uro-frequency-urgency-plan_phrases-7,plan_phrases,fluid management advice documented if discussed,7,"fluid, caffeine, timing",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-symptoms-8,symptoms,dietary context reviewed if relevant,8,"diet, salt, protein, potassium",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-symptoms-9,symptoms,fluid balance reviewed if relevant,9,"fluid, oedema, weight",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-exam_findings-4,exam_findings,fluid balance documented if assessed,4,"fluid, JVP, oedema",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-red_flags-5,red_flags,significant proteinuria with declining function,5,"proteinuria, eGFR",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-plan_phrases-6,plan_phrases,bone mineral metabolism discussed if relevant,6,"bone, mineral, CKD-MBD",urology_nephrology
+neph-ckd-followup,Urology / Nephrology,neph-ckd-followup-follow_up-5,follow_up,sooner if worsening,5,"sooner, worsening",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-symptoms-7,symptoms,medication history reviewed if relevant,7,"medication, ACE, ARB",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-exam_findings-4,exam_findings,vitals documented if measured,4,"vitals, BP",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-red_flags-5,red_flags,nephrotic syndrome features if present,5,"nephrotic, oedema, protein",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-plan_phrases-5,plan_phrases,medication plan documented if clinician decided,5,"medication, ACE, ARB",urology_nephrology
+neph-proteinuria,Urology / Nephrology,neph-proteinuria-plan_phrases-6,plan_phrases,safety-netting documented if discussed,6,"safety, netting",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-symptoms-8,symptoms,dietary intake reviewed if relevant,8,"diet, K, salt, intake",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-symptoms-9,symptoms,GI losses reviewed if relevant,9,"GI, diarrhoea, vomiting",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-exam_findings-3,exam_findings,ECG reviewed if performed by clinician,3,"ECG, EKG, tracing",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-red_flags-5,red_flags,cardiac arrhythmia symptoms,5,"arrhythmia, palpitations",urology_nephrology
+neph-electrolyte-abnormality-review,Urology / Nephrology,neph-electrolyte-abnormality-review-red_flags-6,red_flags,signs of neuromuscular irritability,6,"neuromuscular, tetany, Chvostek",urology_nephrology

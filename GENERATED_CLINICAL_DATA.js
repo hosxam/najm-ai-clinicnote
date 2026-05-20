@@ -1,6 +1,6 @@
 // GENERATED_CLINICAL_DATA.js — Najm AI ClinicNote
 // Auto-generated. Do not edit manually.
-// Generated: 2026-05-20 06:03:57
+// Generated: 2026-05-20 06:11:13
 // Source: /data JSON files (validated)
 
 (function() {
@@ -42,7 +42,7 @@
   var data = {
   "metadata": {
     "version": "v2",
-    "generated_at": "2026-05-20 06:03:57",
+    "generated_at": "2026-05-20 06:11:13",
     "source": "validated_json_dataset (data/ CSVs -> JSON, commit 262c021)",
     "warning": "Documentation support only. Clinician review required.",
     "description": "Najm AI ClinicNote clinical data bundle. Built from /data JSON files."
@@ -50,20 +50,20 @@
   "stats": {
     "specialty_count": 8,
     "workflow_count": 150,
-    "chip_count": 4897,
+    "chip_count": 5249,
     "diagnosis_index_count": 423,
     "report_template_count": 7,
     "history_layout_count": 8,
     "chip_group_counts": {
-      "symptoms": 1340,
-      "relevant_negatives": 613,
-      "exam_findings": 833,
-      "red_flags": 630,
-      "investigations": 279,
-      "plan_phrases": 753,
-      "follow_up": 449
+      "symptoms": 1430,
+      "relevant_negatives": 642,
+      "exam_findings": 874,
+      "red_flags": 681,
+      "investigations": 324,
+      "plan_phrases": 807,
+      "follow_up": 491
     },
-    "workflow_chip_min": 0,
+    "workflow_chip_min": 11,
     "workflow_chip_max": 53,
     "specialty_distribution": {
       "General Medicine / GP": 18,
@@ -75150,9 +75150,584 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 6,
+        "exam_findings": 6,
+        "red_flags": 7,
+        "investigations": 5,
+        "plan_phrases": 6,
+        "follow_up": 4
+      },
+      "total_chips": 43,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-symptoms-1",
+            "chip_text": "dysuria",
+            "order": 1,
+            "search_terms": [
+              "dysuria",
+              "pain",
+              "burning",
+              "urination"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-symptoms-2",
+            "chip_text": "urinary frequency reviewed",
+            "order": 2,
+            "search_terms": [
+              "frequency",
+              "often",
+              "void"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-symptoms-3",
+            "chip_text": "urinary urgency reviewed",
+            "order": 3,
+            "search_terms": [
+              "urgency",
+              "sudden",
+              "urge"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-symptoms-4",
+            "chip_text": "suprapubic discomfort reviewed",
+            "order": 4,
+            "search_terms": [
+              "suprapubic",
+              "pelvic",
+              "pain"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-symptoms-5",
+            "chip_text": "fever reviewed",
+            "order": 5,
+            "search_terms": [
+              "fever",
+              "temperature"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-symptoms-6",
+            "chip_text": "flank pain reviewed",
+            "order": 6,
+            "search_terms": [
+              "flank",
+              "loin",
+              "kidney",
+              "pain"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-symptoms-7",
+            "chip_text": "hematuria reviewed",
+            "order": 7,
+            "search_terms": [
+              "hematuria",
+              "blood",
+              "urine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-symptoms-8",
+            "chip_text": "duration documented",
+            "order": 8,
+            "search_terms": [
+              "duration",
+              "how long"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-symptoms-9",
+            "chip_text": "previous UTI history reviewed",
+            "order": 9,
+            "search_terms": [
+              "UTI",
+              "prior",
+              "recurrent"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-relevant_negatives-1",
+            "chip_text": "no fever reported",
+            "order": 1,
+            "search_terms": [
+              "fever",
+              "febrile"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-relevant_negatives-2",
+            "chip_text": "no flank pain reported",
+            "order": 2,
+            "search_terms": [
+              "flank",
+              "loin",
+              "pain"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-relevant_negatives-3",
+            "chip_text": "no vomiting reported",
+            "order": 3,
+            "search_terms": [
+              "vomiting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-relevant_negatives-4",
+            "chip_text": "no visible hematuria reported",
+            "order": 4,
+            "search_terms": [
+              "visible",
+              "hematuria",
+              "blood"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-relevant_negatives-5",
+            "chip_text": "no urinary retention reported",
+            "order": 5,
+            "search_terms": [
+              "retention",
+              "unable",
+              "void"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-relevant_negatives-6",
+            "chip_text": "no pregnancy concern documented if applicable",
+            "order": 6,
+            "search_terms": [
+              "pregnancy",
+              "pregnant"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-exam_findings-1",
+            "chip_text": "vitals documented if measured",
+            "order": 1,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse",
+              "temp"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-exam_findings-2",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-exam_findings-3",
+            "chip_text": "suprapubic tenderness documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "suprapubic",
+              "tenderness"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-exam_findings-4",
+            "chip_text": "flank or CVA tenderness documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "flank",
+              "CVA",
+              "loin",
+              "kidney"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-exam_findings-5",
+            "chip_text": "hydration documented if assessed",
+            "order": 5,
+            "search_terms": [
+              "hydration",
+              "mucous",
+              "turgor"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-exam_findings-6",
+            "chip_text": "glucose checked if performed",
+            "order": 6,
+            "search_terms": [
+              "glucose",
+              "diabetes"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-red_flags-1",
+            "chip_text": "fever with flank pain",
+            "order": 1,
+            "search_terms": [
+              "fever",
+              "flank",
+              "pyelonephritis"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-red_flags-2",
+            "chip_text": "vomiting",
+            "order": 2,
+            "search_terms": [
+              "vomiting",
+              "unable",
+              "oral"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-red_flags-3",
+            "chip_text": "urinary retention",
+            "order": 3,
+            "search_terms": [
+              "retention",
+              "unable",
+              "void"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-red_flags-4",
+            "chip_text": "visible hematuria",
+            "order": 4,
+            "search_terms": [
+              "visible",
+              "hematuria",
+              "blood"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-red_flags-5",
+            "chip_text": "pregnancy context if relevant",
+            "order": 5,
+            "search_terms": [
+              "pregnancy",
+              "pregnant"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-red_flags-6",
+            "chip_text": "immunosuppressed condition",
+            "order": 6,
+            "search_terms": [
+              "immunocompromised",
+              "diabetic",
+              "transplant"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-red_flags-7",
+            "chip_text": "recurrent UTI in male",
+            "order": 7,
+            "search_terms": [
+              "recurrent",
+              "male"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-investigations-1",
+            "chip_text": "urinalysis reviewed if performed",
+            "order": 1,
+            "search_terms": [
+              "urinalysis",
+              "dipstick",
+              "urine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-investigations-2",
+            "chip_text": "urine culture reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "culture",
+              "MC+S",
+              "sensitivity"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-investigations-3",
+            "chip_text": "blood tests reviewed if ordered",
+            "order": 3,
+            "search_terms": [
+              "blood",
+              "FBC",
+              "CRP"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-investigations-4",
+            "chip_text": "renal function reviewed if ordered",
+            "order": 4,
+            "search_terms": [
+              "renal",
+              "kidney",
+              "eGFR",
+              "creatinine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-investigations-5",
+            "chip_text": "imaging reviewed if available",
+            "order": 5,
+            "search_terms": [
+              "ultrasound",
+              "KUB"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-2",
+            "chip_text": "hydration advice documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "hydration",
+              "fluids",
+              "water"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-3",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "medication",
+              "antibiotic"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-4",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 4,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-6",
+            "chip_text": "recurrent UTI plan discussed if applicable",
+            "order": 6,
+            "search_terms": [
+              "recurrent",
+              "UTI",
+              "prophylaxis"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-follow_up-1",
+            "chip_text": "2-3 days if symptoms persist",
+            "order": 1,
+            "search_terms": [
+              "two",
+              "three",
+              "days"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-follow_up-2",
+            "chip_text": "1-2 weeks",
+            "order": 2,
+            "search_terms": [
+              "one",
+              "two",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-dysuria-uti-symptoms-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "dysuria",
         "UTI",
@@ -75202,9 +75777,476 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 10,
+        "relevant_negatives": 3,
+        "exam_findings": 4,
+        "red_flags": 5,
+        "investigations": 5,
+        "plan_phrases": 4,
+        "follow_up": 4
+      },
+      "total_chips": 35,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "uro-hematuria-symptoms-1",
+            "chip_text": "hematuria",
+            "order": 1,
+            "search_terms": [
+              "hematuria",
+              "blood",
+              "urine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-symptoms-2",
+            "chip_text": "visible blood in urine documented",
+            "order": 2,
+            "search_terms": [
+              "visible",
+              "macroscopic",
+              "blood"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-symptoms-3",
+            "chip_text": "microscopic hematuria context documented",
+            "order": 3,
+            "search_terms": [
+              "microscopic",
+              "dipstick",
+              "RBC"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-symptoms-4",
+            "chip_text": "dysuria reviewed",
+            "order": 4,
+            "search_terms": [
+              "dysuria",
+              "burning"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-symptoms-5",
+            "chip_text": "flank pain reviewed",
+            "order": 5,
+            "search_terms": [
+              "flank",
+              "loin",
+              "pain"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-symptoms-6",
+            "chip_text": "urinary frequency and urgency reviewed",
+            "order": 6,
+            "search_terms": [
+              "frequency",
+              "urgency"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-symptoms-7",
+            "chip_text": "anticoagulant use reviewed if relevant",
+            "order": 7,
+            "search_terms": [
+              "anticoagulant",
+              "warfarin",
+              "DOAC",
+              "aspirin"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-symptoms-8",
+            "chip_text": "smoking or occupational exposure reviewed if relevant",
+            "order": 8,
+            "search_terms": [
+              "smoking",
+              "occupational",
+              "dye"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-symptoms-9",
+            "chip_text": "family history of urological cancer reviewed",
+            "order": 9,
+            "search_terms": [
+              "family",
+              "cancer",
+              "bladder",
+              "kidney"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-symptoms-10",
+            "chip_text": "recent urinary tract infection context reviewed",
+            "order": 10,
+            "search_terms": [
+              "recent",
+              "UTI",
+              "infection"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "uro-hematuria-relevant_negatives-1",
+            "chip_text": "no urinary retention reported",
+            "order": 1,
+            "search_terms": [
+              "retention",
+              "unable",
+              "void"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-relevant_negatives-2",
+            "chip_text": "no fever reported",
+            "order": 2,
+            "search_terms": [
+              "fever",
+              "temperature"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-relevant_negatives-3",
+            "chip_text": "no flank pain reported if applicable",
+            "order": 3,
+            "search_terms": [
+              "flank",
+              "loin"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "uro-hematuria-exam_findings-1",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-exam_findings-2",
+            "chip_text": "flank tenderness documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "flank",
+              "CVA",
+              "tenderness"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-exam_findings-3",
+            "chip_text": "vitals documented if measured",
+            "order": 3,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-exam_findings-4",
+            "chip_text": "blood pressure documented if measured",
+            "order": 4,
+            "search_terms": [
+              "BP",
+              "blood",
+              "pressure"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "uro-hematuria-red_flags-1",
+            "chip_text": "visible hematuria with clots",
+            "order": 1,
+            "search_terms": [
+              "visible",
+              "clots",
+              "heavy"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-red_flags-2",
+            "chip_text": "painless visible hematuria",
+            "order": 2,
+            "search_terms": [
+              "painless",
+              "visible"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-red_flags-3",
+            "chip_text": "smoking history with hematuria",
+            "order": 3,
+            "search_terms": [
+              "smoking",
+              "hematuria"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-red_flags-4",
+            "chip_text": "weight loss with hematuria",
+            "order": 4,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-red_flags-5",
+            "chip_text": "recurrent visible hematuria",
+            "order": 5,
+            "search_terms": [
+              "recurrent",
+              "visible"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "uro-hematuria-investigations-1",
+            "chip_text": "urinalysis reviewed if performed",
+            "order": 1,
+            "search_terms": [
+              "urinalysis",
+              "dipstick"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-investigations-2",
+            "chip_text": "urine microscopy and culture reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "microscopy",
+              "culture",
+              "RBC"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-investigations-3",
+            "chip_text": "renal function reviewed if ordered",
+            "order": 3,
+            "search_terms": [
+              "renal",
+              "eGFR",
+              "creatinine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-investigations-4",
+            "chip_text": "imaging reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "ultrasound",
+              "CT",
+              "KUB"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-investigations-5",
+            "chip_text": "previous records reviewed if available",
+            "order": 5,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "uro-hematuria-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-plan_phrases-2",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "urology"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "uro-hematuria-follow_up-1",
+            "chip_text": "2-4 weeks",
+            "order": 1,
+            "search_terms": [
+              "two",
+              "four",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-follow_up-2",
+            "chip_text": "4-6 weeks",
+            "order": 2,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-hematuria-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "hematuria",
         "blood in urine",
@@ -75251,9 +76293,497 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 3,
+        "exam_findings": 5,
+        "red_flags": 6,
+        "investigations": 5,
+        "plan_phrases": 5,
+        "follow_up": 4
+      },
+      "total_chips": 37,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "uro-luts-bph-symptoms-1",
+            "chip_text": "lower urinary tract symptoms",
+            "order": 1,
+            "search_terms": [
+              "LUTS",
+              "urinary",
+              "symptoms"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-symptoms-2",
+            "chip_text": "weak stream reviewed",
+            "order": 2,
+            "search_terms": [
+              "weak",
+              "stream",
+              "flow"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-symptoms-3",
+            "chip_text": "hesitancy reviewed",
+            "order": 3,
+            "search_terms": [
+              "hesitancy",
+              "starting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-symptoms-4",
+            "chip_text": "nocturia reviewed",
+            "order": 4,
+            "search_terms": [
+              "nocturia",
+              "night",
+              "waking"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-symptoms-5",
+            "chip_text": "urgency and frequency reviewed",
+            "order": 5,
+            "search_terms": [
+              "urgency",
+              "frequency"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-symptoms-6",
+            "chip_text": "incomplete emptying reviewed",
+            "order": 6,
+            "search_terms": [
+              "incomplete",
+              "emptying"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-symptoms-7",
+            "chip_text": "retention history reviewed",
+            "order": 7,
+            "search_terms": [
+              "retention",
+              "unable",
+              "void"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-symptoms-8",
+            "chip_text": "medication history reviewed",
+            "order": 8,
+            "search_terms": [
+              "medication",
+              "alpha blocker",
+              "5ARI"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-symptoms-9",
+            "chip_text": "flow rate context reviewed if assessed",
+            "order": 9,
+            "search_terms": [
+              "flow",
+              "rate",
+              "uroflowmetry"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "uro-luts-bph-relevant_negatives-1",
+            "chip_text": "no hematuria reported",
+            "order": 1,
+            "search_terms": [
+              "hematuria",
+              "blood"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-relevant_negatives-2",
+            "chip_text": "no urinary retention reported",
+            "order": 2,
+            "search_terms": [
+              "retention",
+              "acute",
+              "unable"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-relevant_negatives-3",
+            "chip_text": "no fever reported",
+            "order": 3,
+            "search_terms": [
+              "fever"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "uro-luts-bph-exam_findings-1",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-exam_findings-2",
+            "chip_text": "bladder distension documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "bladder",
+              "distension",
+              "palpable"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-exam_findings-3",
+            "chip_text": "digital rectal examination documented if clinically appropriate and assessed",
+            "order": 3,
+            "search_terms": [
+              "DRE",
+              "prostate",
+              "rectal"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-exam_findings-4",
+            "chip_text": "vitals documented if measured",
+            "order": 4,
+            "search_terms": [
+              "vitals",
+              "BP"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-exam_findings-5",
+            "chip_text": "neurological examination documented if relevant",
+            "order": 5,
+            "search_terms": [
+              "neurological",
+              "reflexes"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "uro-luts-bph-red_flags-1",
+            "chip_text": "acute urinary retention",
+            "order": 1,
+            "search_terms": [
+              "acute",
+              "retention"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-red_flags-2",
+            "chip_text": "visible hematuria",
+            "order": 2,
+            "search_terms": [
+              "visible",
+              "hematuria",
+              "blood"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-red_flags-3",
+            "chip_text": "fever with urinary symptoms",
+            "order": 3,
+            "search_terms": [
+              "fever",
+              "infection"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-red_flags-4",
+            "chip_text": "new onset after age 50",
+            "order": 4,
+            "search_terms": [
+              "new",
+              "onset",
+              "age"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-red_flags-5",
+            "chip_text": "acute retention with BPH",
+            "order": 5,
+            "search_terms": [
+              "acute",
+              "retention"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-red_flags-6",
+            "chip_text": "haematuria with LUTS",
+            "order": 6,
+            "search_terms": [
+              "haematuria",
+              "blood"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "uro-luts-bph-investigations-1",
+            "chip_text": "urinalysis reviewed if performed",
+            "order": 1,
+            "search_terms": [
+              "urinalysis",
+              "dipstick"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-investigations-2",
+            "chip_text": "PSA discussed and reviewed if clinician did so and available",
+            "order": 2,
+            "search_terms": [
+              "PSA",
+              "prostate",
+              "antigen"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-investigations-3",
+            "chip_text": "renal function reviewed if ordered",
+            "order": 3,
+            "search_terms": [
+              "renal",
+              "eGFR",
+              "creatinine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-investigations-4",
+            "chip_text": "previous records reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-investigations-5",
+            "chip_text": "bladder scan reviewed if performed",
+            "order": 5,
+            "search_terms": [
+              "bladder",
+              "scan",
+              "PVR"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "uro-luts-bph-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-plan_phrases-2",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 2,
+            "search_terms": [
+              "medication",
+              "alpha blocker",
+              "5ARI"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-plan_phrases-3",
+            "chip_text": "lifestyle advice documented if discussed",
+            "order": 3,
+            "search_terms": [
+              "lifestyle",
+              "fluid",
+              "caffeine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-plan_phrases-4",
+            "chip_text": "referral documented if clinician decided",
+            "order": 4,
+            "search_terms": [
+              "referral",
+              "urology"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "uro-luts-bph-follow_up-1",
+            "chip_text": "4-6 weeks",
+            "order": 1,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-follow_up-2",
+            "chip_text": "3-6 months",
+            "order": 2,
+            "search_terms": [
+              "three",
+              "six",
+              "months"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-luts-bph-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "LUTS",
         "BPH",
@@ -75301,9 +76831,468 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 3,
+        "exam_findings": 3,
+        "red_flags": 4,
+        "investigations": 4,
+        "plan_phrases": 6,
+        "follow_up": 5
+      },
+      "total_chips": 34,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "uro-renal-colic-followup-symptoms-1",
+            "chip_text": "renal colic follow-up",
+            "order": 1,
+            "search_terms": [
+              "renal",
+              "colic",
+              "stone",
+              "followup"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-symptoms-2",
+            "chip_text": "flank pain progress reviewed",
+            "order": 2,
+            "search_terms": [
+              "flank",
+              "pain",
+              "progress"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-symptoms-3",
+            "chip_text": "pain radiation reviewed",
+            "order": 3,
+            "search_terms": [
+              "radiation",
+              "groin",
+              "loin"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-symptoms-4",
+            "chip_text": "hematuria reviewed",
+            "order": 4,
+            "search_terms": [
+              "hematuria",
+              "blood"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-symptoms-5",
+            "chip_text": "nausea and vomiting reviewed",
+            "order": 5,
+            "search_terms": [
+              "nausea",
+              "vomiting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-symptoms-6",
+            "chip_text": "fever reviewed",
+            "order": 6,
+            "search_terms": [
+              "fever",
+              "temperature"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-symptoms-7",
+            "chip_text": "previous stone history reviewed",
+            "order": 7,
+            "search_terms": [
+              "stone",
+              "calculi",
+              "prior"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-symptoms-8",
+            "chip_text": "metabolic workup context reviewed if relevant",
+            "order": 8,
+            "search_terms": [
+              "metabolic",
+              "calcium",
+              "urate"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-symptoms-9",
+            "chip_text": "hydration context reviewed",
+            "order": 9,
+            "search_terms": [
+              "hydration",
+              "fluid",
+              "intake"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "uro-renal-colic-followup-relevant_negatives-1",
+            "chip_text": "no fever reported",
+            "order": 1,
+            "search_terms": [
+              "fever",
+              "febrile"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-relevant_negatives-2",
+            "chip_text": "no persistent vomiting reported",
+            "order": 2,
+            "search_terms": [
+              "vomiting",
+              "persistent"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-relevant_negatives-3",
+            "chip_text": "no urinary retention reported",
+            "order": 3,
+            "search_terms": [
+              "retention",
+              "unable",
+              "void"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "uro-renal-colic-followup-exam_findings-1",
+            "chip_text": "abdominal and flank examination documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "flank",
+              "exam"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-exam_findings-2",
+            "chip_text": "CVA tenderness documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "CVA",
+              "loin",
+              "tenderness"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-exam_findings-3",
+            "chip_text": "vitals documented if measured",
+            "order": 3,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse",
+              "temp"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "uro-renal-colic-followup-red_flags-1",
+            "chip_text": "fever with flank pain",
+            "order": 1,
+            "search_terms": [
+              "fever",
+              "flank",
+              "infection"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-red_flags-2",
+            "chip_text": "persistent vomiting or dehydration",
+            "order": 2,
+            "search_terms": [
+              "vomiting",
+              "dehydration"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-red_flags-3",
+            "chip_text": "solitary kidney with obstruction",
+            "order": 3,
+            "search_terms": [
+              "solitary",
+              "kidney",
+              "obstruction"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-red_flags-4",
+            "chip_text": "known CKD with acute changes",
+            "order": 4,
+            "search_terms": [
+              "CKD",
+              "acute",
+              "kidney"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "uro-renal-colic-followup-investigations-1",
+            "chip_text": "urinalysis reviewed if performed",
+            "order": 1,
+            "search_terms": [
+              "urinalysis",
+              "dipstick",
+              "blood"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-investigations-2",
+            "chip_text": "renal function reviewed if ordered",
+            "order": 2,
+            "search_terms": [
+              "renal",
+              "eGFR",
+              "creatinine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-investigations-3",
+            "chip_text": "imaging reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "CT",
+              "KUB",
+              "ultrasound",
+              "stone"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-investigations-4",
+            "chip_text": "stone analysis result reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "stone",
+              "analysis",
+              "composition"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "uro-renal-colic-followup-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-plan_phrases-2",
+            "chip_text": "follow-up imaging documented if arranged by clinician",
+            "order": 2,
+            "search_terms": [
+              "follow-up",
+              "imaging",
+              "stone"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-plan_phrases-3",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 3,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-plan_phrases-4",
+            "chip_text": "referral documented if clinician decided",
+            "order": 4,
+            "search_terms": [
+              "referral",
+              "urology"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-plan_phrases-6",
+            "chip_text": "preventative advice documented if discussed",
+            "order": 6,
+            "search_terms": [
+              "prevention",
+              "diet",
+              "fluid"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "uro-renal-colic-followup-follow_up-1",
+            "chip_text": "2-4 weeks",
+            "order": 1,
+            "search_terms": [
+              "two",
+              "four",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-follow_up-2",
+            "chip_text": "4-6 weeks if imaging pending",
+            "order": 2,
+            "search_terms": [
+              "four",
+              "six",
+              "imaging"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-follow_up-3",
+            "chip_text": "sooner if symptoms recur",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "recurrence"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-renal-colic-followup-follow_up-5",
+            "chip_text": "sooner if recurrence",
+            "order": 5,
+            "search_terms": [
+              "sooner",
+              "recurrent"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "renal colic",
         "kidney stone",
@@ -75350,9 +77339,455 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 1,
+        "exam_findings": 5,
+        "red_flags": 5,
+        "investigations": 4,
+        "plan_phrases": 5,
+        "follow_up": 4
+      },
+      "total_chips": 33,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "uro-urinary-retention-documentation-symptoms-1",
+            "chip_text": "urinary retention documentation",
+            "order": 1,
+            "search_terms": [
+              "urinary",
+              "retention",
+              "unable",
+              "void"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-symptoms-2",
+            "chip_text": "onset documented",
+            "order": 2,
+            "search_terms": [
+              "onset",
+              "acute",
+              "gradual"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-symptoms-3",
+            "chip_text": "voiding difficulty reviewed",
+            "order": 3,
+            "search_terms": [
+              "voiding",
+              "difficulty",
+              "stream"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-symptoms-4",
+            "chip_text": "suprapubic discomfort reviewed",
+            "order": 4,
+            "search_terms": [
+              "suprapubic",
+              "pain",
+              "discomfort"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-symptoms-5",
+            "chip_text": "previous retention history reviewed",
+            "order": 5,
+            "search_terms": [
+              "previous",
+              "retention",
+              "history"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-symptoms-6",
+            "chip_text": "medication history reviewed",
+            "order": 6,
+            "search_terms": [
+              "medication",
+              "anticholinergic",
+              "decongestant"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-symptoms-7",
+            "chip_text": "neurological symptoms reviewed",
+            "order": 7,
+            "search_terms": [
+              "neurological",
+              "spine",
+              "sensation"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-symptoms-8",
+            "chip_text": "trauma or surgery history reviewed if relevant",
+            "order": 8,
+            "search_terms": [
+              "trauma",
+              "surgery",
+              "pelvic"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-symptoms-9",
+            "chip_text": "pain severity documented if applicable",
+            "order": 9,
+            "search_terms": [
+              "pain",
+              "severity"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "uro-urinary-retention-documentation-relevant_negatives-1",
+            "chip_text": "no fever reported if applicable",
+            "order": 1,
+            "search_terms": [
+              "fever",
+              "infection"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "uro-urinary-retention-documentation-exam_findings-1",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-exam_findings-2",
+            "chip_text": "bladder distension documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "bladder",
+              "distension",
+              "palpable"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-exam_findings-3",
+            "chip_text": "neurological screen documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "neurological",
+              "sensation",
+              "tone"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-exam_findings-4",
+            "chip_text": "vitals documented if measured",
+            "order": 4,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-exam_findings-5",
+            "chip_text": "pelvic examination documented if clinically appropriate",
+            "order": 5,
+            "search_terms": [
+              "pelvic",
+              "DRE"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "uro-urinary-retention-documentation-red_flags-1",
+            "chip_text": "fever with retention",
+            "order": 1,
+            "search_terms": [
+              "fever",
+              "infection",
+              "sepsis"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-red_flags-2",
+            "chip_text": "haematuria with retention",
+            "order": 2,
+            "search_terms": [
+              "hematuria",
+              "blood"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-red_flags-3",
+            "chip_text": "neurological signs with retention",
+            "order": 3,
+            "search_terms": [
+              "neurological",
+              "cauda",
+              "equina"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-red_flags-4",
+            "chip_text": "post-renal acute kidney injury",
+            "order": 4,
+            "search_terms": [
+              "AKI",
+              "kidney",
+              "post-renal"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-red_flags-5",
+            "chip_text": "suspected cauda equina",
+            "order": 5,
+            "search_terms": [
+              "cauda",
+              "equina",
+              "spine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "uro-urinary-retention-documentation-investigations-1",
+            "chip_text": "urinalysis reviewed if performed",
+            "order": 1,
+            "search_terms": [
+              "urinalysis",
+              "dipstick"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-investigations-2",
+            "chip_text": "renal function reviewed if ordered",
+            "order": 2,
+            "search_terms": [
+              "renal",
+              "eGFR",
+              "creatinine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-investigations-3",
+            "chip_text": "bladder scan result reviewed if performed",
+            "order": 3,
+            "search_terms": [
+              "bladder",
+              "scan",
+              "PVR",
+              "volume"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-investigations-4",
+            "chip_text": "catheter details documented if present",
+            "order": 4,
+            "search_terms": [
+              "catheter",
+              "IDC",
+              "status"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "uro-urinary-retention-documentation-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-plan_phrases-2",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "urology"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-plan_phrases-5",
+            "chip_text": "trial without catheter discussed if applicable",
+            "order": 5,
+            "search_terms": [
+              "TWOC",
+              "catheter",
+              "removal"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "uro-urinary-retention-documentation-follow_up-1",
+            "chip_text": "1-2 weeks",
+            "order": 1,
+            "search_terms": [
+              "one",
+              "two",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-follow_up-2",
+            "chip_text": "2-4 weeks",
+            "order": 2,
+            "search_terms": [
+              "two",
+              "four",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-follow_up-3",
+            "chip_text": "sooner if recurrent",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "recurrent"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-urinary-retention-documentation-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "urinary retention",
         "cannot urinate",
@@ -75401,9 +77836,477 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 10,
+        "relevant_negatives": 3,
+        "exam_findings": 4,
+        "red_flags": 5,
+        "investigations": 5,
+        "plan_phrases": 4,
+        "follow_up": 4
+      },
+      "total_chips": 35,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "uro-flank-pain-symptoms-1",
+            "chip_text": "flank pain",
+            "order": 1,
+            "search_terms": [
+              "flank",
+              "loin",
+              "kidney",
+              "pain"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-symptoms-2",
+            "chip_text": "duration documented",
+            "order": 2,
+            "search_terms": [
+              "duration",
+              "how long"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-symptoms-3",
+            "chip_text": "character documented",
+            "order": 3,
+            "search_terms": [
+              "character",
+              "colicky",
+              "dull"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-symptoms-4",
+            "chip_text": "radiation reviewed",
+            "order": 4,
+            "search_terms": [
+              "radiation",
+              "groin",
+              "abdomen"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-symptoms-5",
+            "chip_text": "urinary symptoms reviewed",
+            "order": 5,
+            "search_terms": [
+              "urinary",
+              "dysuria",
+              "frequency"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-symptoms-6",
+            "chip_text": "fever reviewed",
+            "order": 6,
+            "search_terms": [
+              "fever",
+              "temperature"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-symptoms-7",
+            "chip_text": "nausea and vomiting reviewed",
+            "order": 7,
+            "search_terms": [
+              "nausea",
+              "vomiting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-symptoms-8",
+            "chip_text": "previous stones reviewed",
+            "order": 8,
+            "search_terms": [
+              "stone",
+              "calculi",
+              "prior",
+              "history"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-symptoms-9",
+            "chip_text": "urine output reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "urine",
+              "output",
+              "oliguria"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-symptoms-10",
+            "chip_text": "trauma history reviewed if relevant",
+            "order": 10,
+            "search_terms": [
+              "trauma",
+              "injury",
+              "kidney"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "uro-flank-pain-relevant_negatives-1",
+            "chip_text": "no fever reported",
+            "order": 1,
+            "search_terms": [
+              "fever",
+              "temperature"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-relevant_negatives-2",
+            "chip_text": "no visible hematuria reported",
+            "order": 2,
+            "search_terms": [
+              "visible",
+              "hematuria",
+              "blood"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-relevant_negatives-3",
+            "chip_text": "no persistent vomiting reported",
+            "order": 3,
+            "search_terms": [
+              "vomiting",
+              "persistent"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "uro-flank-pain-exam_findings-1",
+            "chip_text": "abdominal and flank tenderness documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "flank",
+              "abdominal",
+              "tenderness"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-exam_findings-2",
+            "chip_text": "CVA tenderness documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "CVA",
+              "kidney",
+              "punch"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-exam_findings-3",
+            "chip_text": "vitals documented if measured",
+            "order": 3,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse",
+              "temp"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-exam_findings-4",
+            "chip_text": "urinalysis reviewed if performed",
+            "order": 4,
+            "search_terms": [
+              "urinalysis",
+              "dipstick"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "uro-flank-pain-red_flags-1",
+            "chip_text": "fever with flank pain",
+            "order": 1,
+            "search_terms": [
+              "fever",
+              "flank",
+              "pyelonephritis"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-red_flags-2",
+            "chip_text": "visible hematuria",
+            "order": 2,
+            "search_terms": [
+              "visible",
+              "hematuria"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-red_flags-3",
+            "chip_text": "persistent vomiting",
+            "order": 3,
+            "search_terms": [
+              "vomiting",
+              "persistent"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-red_flags-4",
+            "chip_text": "known solitary kidney",
+            "order": 4,
+            "search_terms": [
+              "solitary",
+              "kidney"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-red_flags-5",
+            "chip_text": "signs of sepsis if assessed",
+            "order": 5,
+            "search_terms": [
+              "sepsis",
+              "septic"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "uro-flank-pain-investigations-1",
+            "chip_text": "urinalysis reviewed if performed",
+            "order": 1,
+            "search_terms": [
+              "urinalysis",
+              "dipstick"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-investigations-2",
+            "chip_text": "renal function reviewed if ordered",
+            "order": 2,
+            "search_terms": [
+              "renal",
+              "eGFR",
+              "creatinine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-investigations-3",
+            "chip_text": "imaging reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "CT",
+              "KUB",
+              "ultrasound"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-investigations-4",
+            "chip_text": "previous records reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-investigations-5",
+            "chip_text": "blood tests reviewed if ordered",
+            "order": 5,
+            "search_terms": [
+              "blood",
+              "FBC",
+              "CRP"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "uro-flank-pain-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-plan_phrases-2",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "urology"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "uro-flank-pain-follow_up-1",
+            "chip_text": "1-2 weeks",
+            "order": 1,
+            "search_terms": [
+              "one",
+              "two",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-follow_up-2",
+            "chip_text": "2-4 weeks",
+            "order": 2,
+            "search_terms": [
+              "two",
+              "four",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-flank-pain-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "flank pain",
         "kidney pain",
@@ -75450,9 +78353,450 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 3,
+        "exam_findings": 3,
+        "red_flags": 3,
+        "investigations": 4,
+        "plan_phrases": 7,
+        "follow_up": 4
+      },
+      "total_chips": 33,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "uro-frequency-urgency-symptoms-1",
+            "chip_text": "urinary frequency",
+            "order": 1,
+            "search_terms": [
+              "urinary",
+              "frequency",
+              "often",
+              "void"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-symptoms-2",
+            "chip_text": "urinary urgency",
+            "order": 2,
+            "search_terms": [
+              "urgency",
+              "sudden",
+              "urge"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-symptoms-3",
+            "chip_text": "nocturia reviewed",
+            "order": 3,
+            "search_terms": [
+              "nocturia",
+              "night",
+              "waking"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-symptoms-4",
+            "chip_text": "urge incontinence reviewed",
+            "order": 4,
+            "search_terms": [
+              "urge",
+              "incontinence",
+              "leak"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-symptoms-5",
+            "chip_text": "dysuria reviewed",
+            "order": 5,
+            "search_terms": [
+              "dysuria",
+              "burning"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-symptoms-6",
+            "chip_text": "hematuria reviewed",
+            "order": 6,
+            "search_terms": [
+              "hematuria",
+              "blood"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-symptoms-7",
+            "chip_text": "fluid and caffeine context reviewed",
+            "order": 7,
+            "search_terms": [
+              "fluid",
+              "caffeine",
+              "intake",
+              "bladder"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-symptoms-8",
+            "chip_text": "pelvic floor context reviewed if relevant",
+            "order": 8,
+            "search_terms": [
+              "pelvic",
+              "floor",
+              "prolapse"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-symptoms-9",
+            "chip_text": "menstrual or menopausal context reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "menopausal",
+              "hormonal"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "uro-frequency-urgency-relevant_negatives-1",
+            "chip_text": "no fever reported",
+            "order": 1,
+            "search_terms": [
+              "fever",
+              "infection"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-relevant_negatives-2",
+            "chip_text": "no flank pain reported",
+            "order": 2,
+            "search_terms": [
+              "flank",
+              "loin",
+              "pain"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-relevant_negatives-3",
+            "chip_text": "no urinary retention reported",
+            "order": 3,
+            "search_terms": [
+              "retention",
+              "unable",
+              "void"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "uro-frequency-urgency-exam_findings-1",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-exam_findings-2",
+            "chip_text": "vitals documented if measured",
+            "order": 2,
+            "search_terms": [
+              "vitals",
+              "BP"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-exam_findings-3",
+            "chip_text": "pelvic examination documented if clinically appropriate",
+            "order": 3,
+            "search_terms": [
+              "pelvic",
+              "prolapse"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "uro-frequency-urgency-red_flags-1",
+            "chip_text": "fever with urinary symptoms",
+            "order": 1,
+            "search_terms": [
+              "fever",
+              "infection"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-red_flags-2",
+            "chip_text": "visible hematuria",
+            "order": 2,
+            "search_terms": [
+              "visible",
+              "hematuria"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-red_flags-3",
+            "chip_text": "symptom progression despite treatment",
+            "order": 3,
+            "search_terms": [
+              "progression",
+              "treatment",
+              "failure"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "uro-frequency-urgency-investigations-1",
+            "chip_text": "urinalysis reviewed if performed",
+            "order": 1,
+            "search_terms": [
+              "urinalysis",
+              "dipstick"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-investigations-2",
+            "chip_text": "urine culture reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "culture",
+              "MC+S"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-investigations-3",
+            "chip_text": "glucose or HbA1c reviewed if ordered",
+            "order": 3,
+            "search_terms": [
+              "glucose",
+              "HbA1c",
+              "diabetes"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-investigations-4",
+            "chip_text": "previous records reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "uro-frequency-urgency-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-plan_phrases-2",
+            "chip_text": "lifestyle advice documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "lifestyle",
+              "caffeine",
+              "fluid",
+              "bladder"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-plan_phrases-3",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 3,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-plan_phrases-4",
+            "chip_text": "referral documented if clinician decided",
+            "order": 4,
+            "search_terms": [
+              "referral",
+              "urology",
+              "continence"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-plan_phrases-6",
+            "chip_text": "bladder training discussed if applicable",
+            "order": 6,
+            "search_terms": [
+              "bladder",
+              "training",
+              "exercises"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-plan_phrases-7",
+            "chip_text": "fluid management advice documented if discussed",
+            "order": 7,
+            "search_terms": [
+              "fluid",
+              "caffeine",
+              "timing"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "uro-frequency-urgency-follow_up-1",
+            "chip_text": "4-6 weeks",
+            "order": 1,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-follow_up-2",
+            "chip_text": "6-8 weeks",
+            "order": 2,
+            "search_terms": [
+              "six",
+              "eight",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "uro-frequency-urgency-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "frequency",
         "urgency",
@@ -75498,9 +78842,504 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 2,
+        "exam_findings": 4,
+        "red_flags": 5,
+        "investigations": 5,
+        "plan_phrases": 6,
+        "follow_up": 5
+      },
+      "total_chips": 36,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "neph-ckd-followup-symptoms-1",
+            "chip_text": "CKD follow-up",
+            "order": 1,
+            "search_terms": [
+              "CKD",
+              "chronic",
+              "kidney",
+              "followup"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-symptoms-2",
+            "chip_text": "renal function trend reviewed",
+            "order": 2,
+            "search_terms": [
+              "renal",
+              "function",
+              "trend",
+              "eGFR"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-symptoms-3",
+            "chip_text": "blood pressure context reviewed",
+            "order": 3,
+            "search_terms": [
+              "BP",
+              "blood",
+              "pressure",
+              "hypertension"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-symptoms-4",
+            "chip_text": "edema reviewed",
+            "order": 4,
+            "search_terms": [
+              "oedema",
+              "edema",
+              "swelling",
+              "ankle"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-symptoms-5",
+            "chip_text": "urinary symptoms reviewed",
+            "order": 5,
+            "search_terms": [
+              "urinary",
+              "symptoms",
+              "frequency"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-symptoms-6",
+            "chip_text": "medication review documented",
+            "order": 6,
+            "search_terms": [
+              "medication",
+              "review",
+              "antihypertensive"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-symptoms-7",
+            "chip_text": "nephrotoxic medication history reviewed if relevant",
+            "order": 7,
+            "search_terms": [
+              "nephrotoxic",
+              "NSAID",
+              "contrast"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-symptoms-8",
+            "chip_text": "dietary context reviewed if relevant",
+            "order": 8,
+            "search_terms": [
+              "diet",
+              "salt",
+              "protein",
+              "potassium"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-symptoms-9",
+            "chip_text": "fluid balance reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "fluid",
+              "oedema",
+              "weight"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "neph-ckd-followup-relevant_negatives-1",
+            "chip_text": "no acute urinary symptoms reported",
+            "order": 1,
+            "search_terms": [
+              "acute",
+              "urinary",
+              "infection"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-relevant_negatives-2",
+            "chip_text": "no worsening edema reported if applicable",
+            "order": 2,
+            "search_terms": [
+              "worsening",
+              "oedema",
+              "fluid"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "neph-ckd-followup-exam_findings-1",
+            "chip_text": "blood pressure documented if measured",
+            "order": 1,
+            "search_terms": [
+              "BP",
+              "blood",
+              "pressure"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-exam_findings-2",
+            "chip_text": "edema documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "oedema",
+              "pedal",
+              "ankle",
+              "sacral"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-exam_findings-3",
+            "chip_text": "weight documented if measured",
+            "order": 3,
+            "search_terms": [
+              "weight",
+              "fluid",
+              "status"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-exam_findings-4",
+            "chip_text": "fluid balance documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "fluid",
+              "JVP",
+              "oedema"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "neph-ckd-followup-red_flags-1",
+            "chip_text": "rapidly declining eGFR",
+            "order": 1,
+            "search_terms": [
+              "rapid",
+              "decline",
+              "eGFR"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-red_flags-2",
+            "chip_text": "refractory hypertension",
+            "order": 2,
+            "search_terms": [
+              "refractory",
+              "hypertension",
+              "BP"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-red_flags-3",
+            "chip_text": "worsening oedema or fluid overload",
+            "order": 3,
+            "search_terms": [
+              "worsening",
+              "oedema",
+              "overload"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-red_flags-4",
+            "chip_text": "hyperkalemia if documented",
+            "order": 4,
+            "search_terms": [
+              "hyperkalemia",
+              "high",
+              "potassium"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-red_flags-5",
+            "chip_text": "significant proteinuria with declining function",
+            "order": 5,
+            "search_terms": [
+              "proteinuria",
+              "eGFR"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "neph-ckd-followup-investigations-1",
+            "chip_text": "renal function reviewed",
+            "order": 1,
+            "search_terms": [
+              "renal",
+              "eGFR",
+              "creatinine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-investigations-2",
+            "chip_text": "eGFR reviewed",
+            "order": 2,
+            "search_terms": [
+              "eGFR",
+              "GFR",
+              "stage"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-investigations-3",
+            "chip_text": "urine ACR or proteinuria reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "ACR",
+              "proteinuria",
+              "albumin"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-investigations-4",
+            "chip_text": "electrolytes reviewed if ordered",
+            "order": 4,
+            "search_terms": [
+              "electrolytes",
+              "K",
+              "sodium",
+              "bicarbonate"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-investigations-5",
+            "chip_text": "medication list reviewed if available",
+            "order": 5,
+            "search_terms": [
+              "medication",
+              "list",
+              "review"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "neph-ckd-followup-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-plan_phrases-2",
+            "chip_text": "medication review documented if clinician performed",
+            "order": 2,
+            "search_terms": [
+              "medication",
+              "review"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-plan_phrases-3",
+            "chip_text": "lifestyle and dietary advice documented if discussed",
+            "order": 3,
+            "search_terms": [
+              "lifestyle",
+              "diet",
+              "salt",
+              "protein"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-plan_phrases-4",
+            "chip_text": "referral documented if clinician decided",
+            "order": 4,
+            "search_terms": [
+              "referral",
+              "nephrology",
+              "dietetics"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-plan_phrases-6",
+            "chip_text": "bone mineral metabolism discussed if relevant",
+            "order": 6,
+            "search_terms": [
+              "bone",
+              "mineral",
+              "CKD-MBD"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "neph-ckd-followup-follow_up-1",
+            "chip_text": "3-6 months",
+            "order": 1,
+            "search_terms": [
+              "three",
+              "six",
+              "months"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-follow_up-2",
+            "chip_text": "6-12 months if stable",
+            "order": 2,
+            "search_terms": [
+              "six",
+              "twelve"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-follow_up-3",
+            "chip_text": "sooner if worsening renal function",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "eGFR"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-ckd-followup-follow_up-5",
+            "chip_text": "sooner if worsening",
+            "order": 5,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "CKD",
         "chronic kidney disease",
@@ -75547,9 +79386,453 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 7,
+        "relevant_negatives": 3,
+        "exam_findings": 4,
+        "red_flags": 5,
+        "investigations": 4,
+        "plan_phrases": 6,
+        "follow_up": 4
+      },
+      "total_chips": 33,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "neph-proteinuria-symptoms-1",
+            "chip_text": "proteinuria",
+            "order": 1,
+            "search_terms": [
+              "proteinuria",
+              "protein",
+              "urine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-symptoms-2",
+            "chip_text": "urine ACR or proteinuria result reviewed",
+            "order": 2,
+            "search_terms": [
+              "ACR",
+              "PCR",
+              "protein",
+              "level"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-symptoms-3",
+            "chip_text": "oedema reviewed",
+            "order": 3,
+            "search_terms": [
+              "oedema",
+              "edema",
+              "swelling"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-symptoms-4",
+            "chip_text": "blood pressure context reviewed",
+            "order": 4,
+            "search_terms": [
+              "BP",
+              "blood",
+              "pressure"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-symptoms-5",
+            "chip_text": "diabetes and hypertension context reviewed if relevant",
+            "order": 5,
+            "search_terms": [
+              "diabetes",
+              "hypertension",
+              "CKD"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-symptoms-6",
+            "chip_text": "urinary symptoms reviewed",
+            "order": 6,
+            "search_terms": [
+              "urinary",
+              "frothy",
+              "symptoms"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-symptoms-7",
+            "chip_text": "medication history reviewed if relevant",
+            "order": 7,
+            "search_terms": [
+              "medication",
+              "ACE",
+              "ARB"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "neph-proteinuria-relevant_negatives-1",
+            "chip_text": "no hematuria reported if applicable",
+            "order": 1,
+            "search_terms": [
+              "hematuria",
+              "blood"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-relevant_negatives-2",
+            "chip_text": "no oedema reported if applicable",
+            "order": 2,
+            "search_terms": [
+              "oedema",
+              "swelling"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-relevant_negatives-3",
+            "chip_text": "no acute urinary symptoms reported",
+            "order": 3,
+            "search_terms": [
+              "acute",
+              "UTI",
+              "infection"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "neph-proteinuria-exam_findings-1",
+            "chip_text": "blood pressure documented if measured",
+            "order": 1,
+            "search_terms": [
+              "BP",
+              "blood",
+              "pressure"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-exam_findings-2",
+            "chip_text": "oedema documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "oedema",
+              "pedal",
+              "sacral"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-exam_findings-3",
+            "chip_text": "weight documented if measured",
+            "order": 3,
+            "search_terms": [
+              "weight",
+              "fluid"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-exam_findings-4",
+            "chip_text": "vitals documented if measured",
+            "order": 4,
+            "search_terms": [
+              "vitals",
+              "BP"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "neph-proteinuria-red_flags-1",
+            "chip_text": "nephrotic-range proteinuria",
+            "order": 1,
+            "search_terms": [
+              "nephrotic",
+              "high",
+              "protein"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-red_flags-2",
+            "chip_text": "rapidly rising proteinuria",
+            "order": 2,
+            "search_terms": [
+              "rapid",
+              "rising",
+              "protein"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-red_flags-3",
+            "chip_text": "haematuria with proteinuria",
+            "order": 3,
+            "search_terms": [
+              "haematuria",
+              "blood",
+              "protein"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-red_flags-4",
+            "chip_text": "declining renal function with proteinuria",
+            "order": 4,
+            "search_terms": [
+              "declining",
+              "eGFR"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-red_flags-5",
+            "chip_text": "nephrotic syndrome features if present",
+            "order": 5,
+            "search_terms": [
+              "nephrotic",
+              "oedema",
+              "protein"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "neph-proteinuria-investigations-1",
+            "chip_text": "urine ACR or proteinuria reviewed",
+            "order": 1,
+            "search_terms": [
+              "ACR",
+              "PCR",
+              "protein"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-investigations-2",
+            "chip_text": "renal function reviewed if ordered",
+            "order": 2,
+            "search_terms": [
+              "renal",
+              "eGFR",
+              "creatinine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-investigations-3",
+            "chip_text": "urinalysis reviewed if performed",
+            "order": 3,
+            "search_terms": [
+              "urinalysis",
+              "dipstick"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-investigations-4",
+            "chip_text": "previous records reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "neph-proteinuria-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-plan_phrases-2",
+            "chip_text": "lifestyle advice documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "lifestyle",
+              "diet",
+              "salt",
+              "protein"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "nephrology"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-plan_phrases-5",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 5,
+            "search_terms": [
+              "medication",
+              "ACE",
+              "ARB"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-plan_phrases-6",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 6,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "neph-proteinuria-follow_up-1",
+            "chip_text": "3-6 months",
+            "order": 1,
+            "search_terms": [
+              "three",
+              "six",
+              "months"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-follow_up-2",
+            "chip_text": "6-12 months if stable",
+            "order": 2,
+            "search_terms": [
+              "six",
+              "twelve"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-proteinuria-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "proteinuria",
         "protein in urine",
@@ -75594,9 +79877,465 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 2,
+        "exam_findings": 3,
+        "red_flags": 6,
+        "investigations": 4,
+        "plan_phrases": 5,
+        "follow_up": 4
+      },
+      "total_chips": 33,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-symptoms-1",
+            "chip_text": "electrolyte abnormality review",
+            "order": 1,
+            "search_terms": [
+              "electrolyte",
+              "K",
+              "Na",
+              "abnormality"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-symptoms-2",
+            "chip_text": "abnormal electrolyte documented by clinician",
+            "order": 2,
+            "search_terms": [
+              "abnormal",
+              "potassium",
+              "sodium"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-symptoms-3",
+            "chip_text": "trend and comparison reviewed",
+            "order": 3,
+            "search_terms": [
+              "trend",
+              "comparison",
+              "previous"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-symptoms-4",
+            "chip_text": "symptoms reviewed",
+            "order": 4,
+            "search_terms": [
+              "symptoms",
+              "weakness",
+              "palpitations",
+              "cramps"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-symptoms-5",
+            "chip_text": "medication history reviewed",
+            "order": 5,
+            "search_terms": [
+              "medication",
+              "diuretic",
+              "ACE",
+              "ARB"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-symptoms-6",
+            "chip_text": "renal function context reviewed",
+            "order": 6,
+            "search_terms": [
+              "renal",
+              "eGFR",
+              "CKD"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-symptoms-7",
+            "chip_text": "fluid intake context reviewed if relevant",
+            "order": 7,
+            "search_terms": [
+              "fluid",
+              "intake",
+              "output",
+              "dehydration"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-symptoms-8",
+            "chip_text": "dietary intake reviewed if relevant",
+            "order": 8,
+            "search_terms": [
+              "diet",
+              "K",
+              "salt",
+              "intake"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-symptoms-9",
+            "chip_text": "GI losses reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "GI",
+              "diarrhoea",
+              "vomiting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-relevant_negatives-1",
+            "chip_text": "no acute symptoms reported if applicable",
+            "order": 1,
+            "search_terms": [
+              "acute",
+              "symptoms",
+              "weakness"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-relevant_negatives-2",
+            "chip_text": "no cardiac symptoms reported if relevant",
+            "order": 2,
+            "search_terms": [
+              "cardiac",
+              "palpitations",
+              "chest"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-exam_findings-1",
+            "chip_text": "vitals documented if measured",
+            "order": 1,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse",
+              "rhythm"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-exam_findings-2",
+            "chip_text": "hydration documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "hydration",
+              "fluid",
+              "status"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-exam_findings-3",
+            "chip_text": "ECG reviewed if performed by clinician",
+            "order": 3,
+            "search_terms": [
+              "ECG",
+              "EKG",
+              "tracing"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-red_flags-1",
+            "chip_text": "severe hyperkalemia if documented",
+            "order": 1,
+            "search_terms": [
+              "severe",
+              "hyperkalemia",
+              "high K"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-red_flags-2",
+            "chip_text": "severe hyponatremia if documented",
+            "order": 2,
+            "search_terms": [
+              "severe",
+              "hyponatremia",
+              "low Na"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-red_flags-3",
+            "chip_text": "ECG changes if documented",
+            "order": 3,
+            "search_terms": [
+              "ECG",
+              "changes",
+              "arrhythmia"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-red_flags-4",
+            "chip_text": "rapid electrolyte shifts",
+            "order": 4,
+            "search_terms": [
+              "rapid",
+              "shift",
+              "change"
+            ],
+            "tags": [
+              "urology_nephrology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-red_flags-5",
+            "chip_text": "cardiac arrhythmia symptoms",
+            "order": 5,
+            "search_terms": [
+              "arrhythmia",
+              "palpitations"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-red_flags-6",
+            "chip_text": "signs of neuromuscular irritability",
+            "order": 6,
+            "search_terms": [
+              "neuromuscular",
+              "tetany",
+              "Chvostek"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-investigations-1",
+            "chip_text": "renal function reviewed if ordered",
+            "order": 1,
+            "search_terms": [
+              "renal",
+              "eGFR",
+              "creatinine"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-investigations-2",
+            "chip_text": "repeat blood tests reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "repeat",
+              "labs",
+              "U+E",
+              "BMP"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-investigations-3",
+            "chip_text": "ECG reviewed if performed by clinician",
+            "order": 3,
+            "search_terms": [
+              "ECG",
+              "EKG",
+              "tracing"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-investigations-4",
+            "chip_text": "previous records reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-plan_phrases-2",
+            "chip_text": "medication review documented if clinician performed",
+            "order": 2,
+            "search_terms": [
+              "medication",
+              "review"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-plan_phrases-3",
+            "chip_text": "follow-up testing documented if arranged",
+            "order": 3,
+            "search_terms": [
+              "repeat",
+              "labs",
+              "follow-up"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-plan_phrases-4",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 4,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-plan_phrases-5",
+            "chip_text": "referral documented if clinician decided",
+            "order": 5,
+            "search_terms": [
+              "referral",
+              "nephrology"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-follow_up-1",
+            "chip_text": "1-2 weeks",
+            "order": 1,
+            "search_terms": [
+              "one",
+              "two",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-follow_up-2",
+            "chip_text": "2-4 weeks",
+            "order": 2,
+            "search_terms": [
+              "two",
+              "four",
+              "weeks"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-follow_up-3",
+            "chip_text": "sooner if abnormal",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "abnormal",
+              "change"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          },
+          {
+            "chip_id": "neph-electrolyte-abnormality-review-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "urology_nephrology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "electrolyte abnormality",
         "electrolyte imbalance",
@@ -108178,6 +112917,1380 @@
         }
       ]
     },
+    "neph-ckd-followup": {
+      "symptoms": [
+        {
+          "chip_id": "neph-ckd-followup-symptoms-1",
+          "chip_text": "CKD follow-up",
+          "order": 1,
+          "search_terms": [
+            "CKD",
+            "chronic",
+            "kidney",
+            "followup"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-symptoms-2",
+          "chip_text": "renal function trend reviewed",
+          "order": 2,
+          "search_terms": [
+            "renal",
+            "function",
+            "trend",
+            "eGFR"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-symptoms-3",
+          "chip_text": "blood pressure context reviewed",
+          "order": 3,
+          "search_terms": [
+            "BP",
+            "blood",
+            "pressure",
+            "hypertension"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-symptoms-4",
+          "chip_text": "edema reviewed",
+          "order": 4,
+          "search_terms": [
+            "oedema",
+            "edema",
+            "swelling",
+            "ankle"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-symptoms-5",
+          "chip_text": "urinary symptoms reviewed",
+          "order": 5,
+          "search_terms": [
+            "urinary",
+            "symptoms",
+            "frequency"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-symptoms-6",
+          "chip_text": "medication review documented",
+          "order": 6,
+          "search_terms": [
+            "medication",
+            "review",
+            "antihypertensive"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-symptoms-7",
+          "chip_text": "nephrotoxic medication history reviewed if relevant",
+          "order": 7,
+          "search_terms": [
+            "nephrotoxic",
+            "NSAID",
+            "contrast"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-symptoms-8",
+          "chip_text": "dietary context reviewed if relevant",
+          "order": 8,
+          "search_terms": [
+            "diet",
+            "salt",
+            "protein",
+            "potassium"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-symptoms-9",
+          "chip_text": "fluid balance reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "fluid",
+            "oedema",
+            "weight"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "neph-ckd-followup-relevant_negatives-1",
+          "chip_text": "no acute urinary symptoms reported",
+          "order": 1,
+          "search_terms": [
+            "acute",
+            "urinary",
+            "infection"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-relevant_negatives-2",
+          "chip_text": "no worsening edema reported if applicable",
+          "order": 2,
+          "search_terms": [
+            "worsening",
+            "oedema",
+            "fluid"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "neph-ckd-followup-exam_findings-1",
+          "chip_text": "blood pressure documented if measured",
+          "order": 1,
+          "search_terms": [
+            "BP",
+            "blood",
+            "pressure"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-exam_findings-2",
+          "chip_text": "edema documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "oedema",
+            "pedal",
+            "ankle",
+            "sacral"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-exam_findings-3",
+          "chip_text": "weight documented if measured",
+          "order": 3,
+          "search_terms": [
+            "weight",
+            "fluid",
+            "status"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-exam_findings-4",
+          "chip_text": "fluid balance documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "fluid",
+            "JVP",
+            "oedema"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "neph-ckd-followup-red_flags-1",
+          "chip_text": "rapidly declining eGFR",
+          "order": 1,
+          "search_terms": [
+            "rapid",
+            "decline",
+            "eGFR"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-red_flags-2",
+          "chip_text": "refractory hypertension",
+          "order": 2,
+          "search_terms": [
+            "refractory",
+            "hypertension",
+            "BP"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-red_flags-3",
+          "chip_text": "worsening oedema or fluid overload",
+          "order": 3,
+          "search_terms": [
+            "worsening",
+            "oedema",
+            "overload"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-red_flags-4",
+          "chip_text": "hyperkalemia if documented",
+          "order": 4,
+          "search_terms": [
+            "hyperkalemia",
+            "high",
+            "potassium"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-red_flags-5",
+          "chip_text": "significant proteinuria with declining function",
+          "order": 5,
+          "search_terms": [
+            "proteinuria",
+            "eGFR"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "neph-ckd-followup-investigations-1",
+          "chip_text": "renal function reviewed",
+          "order": 1,
+          "search_terms": [
+            "renal",
+            "eGFR",
+            "creatinine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-investigations-2",
+          "chip_text": "eGFR reviewed",
+          "order": 2,
+          "search_terms": [
+            "eGFR",
+            "GFR",
+            "stage"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-investigations-3",
+          "chip_text": "urine ACR or proteinuria reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "ACR",
+            "proteinuria",
+            "albumin"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-investigations-4",
+          "chip_text": "electrolytes reviewed if ordered",
+          "order": 4,
+          "search_terms": [
+            "electrolytes",
+            "K",
+            "sodium",
+            "bicarbonate"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-investigations-5",
+          "chip_text": "medication list reviewed if available",
+          "order": 5,
+          "search_terms": [
+            "medication",
+            "list",
+            "review"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "neph-ckd-followup-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-plan_phrases-2",
+          "chip_text": "medication review documented if clinician performed",
+          "order": 2,
+          "search_terms": [
+            "medication",
+            "review"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-plan_phrases-3",
+          "chip_text": "lifestyle and dietary advice documented if discussed",
+          "order": 3,
+          "search_terms": [
+            "lifestyle",
+            "diet",
+            "salt",
+            "protein"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-plan_phrases-4",
+          "chip_text": "referral documented if clinician decided",
+          "order": 4,
+          "search_terms": [
+            "referral",
+            "nephrology",
+            "dietetics"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-plan_phrases-6",
+          "chip_text": "bone mineral metabolism discussed if relevant",
+          "order": 6,
+          "search_terms": [
+            "bone",
+            "mineral",
+            "CKD-MBD"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "neph-ckd-followup-follow_up-1",
+          "chip_text": "3-6 months",
+          "order": 1,
+          "search_terms": [
+            "three",
+            "six",
+            "months"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-follow_up-2",
+          "chip_text": "6-12 months if stable",
+          "order": 2,
+          "search_terms": [
+            "six",
+            "twelve"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-follow_up-3",
+          "chip_text": "sooner if worsening renal function",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "eGFR"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-ckd-followup-follow_up-5",
+          "chip_text": "sooner if worsening",
+          "order": 5,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ]
+    },
+    "neph-electrolyte-abnormality-review": {
+      "symptoms": [
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-symptoms-1",
+          "chip_text": "electrolyte abnormality review",
+          "order": 1,
+          "search_terms": [
+            "electrolyte",
+            "K",
+            "Na",
+            "abnormality"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-symptoms-2",
+          "chip_text": "abnormal electrolyte documented by clinician",
+          "order": 2,
+          "search_terms": [
+            "abnormal",
+            "potassium",
+            "sodium"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-symptoms-3",
+          "chip_text": "trend and comparison reviewed",
+          "order": 3,
+          "search_terms": [
+            "trend",
+            "comparison",
+            "previous"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-symptoms-4",
+          "chip_text": "symptoms reviewed",
+          "order": 4,
+          "search_terms": [
+            "symptoms",
+            "weakness",
+            "palpitations",
+            "cramps"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-symptoms-5",
+          "chip_text": "medication history reviewed",
+          "order": 5,
+          "search_terms": [
+            "medication",
+            "diuretic",
+            "ACE",
+            "ARB"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-symptoms-6",
+          "chip_text": "renal function context reviewed",
+          "order": 6,
+          "search_terms": [
+            "renal",
+            "eGFR",
+            "CKD"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-symptoms-7",
+          "chip_text": "fluid intake context reviewed if relevant",
+          "order": 7,
+          "search_terms": [
+            "fluid",
+            "intake",
+            "output",
+            "dehydration"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-symptoms-8",
+          "chip_text": "dietary intake reviewed if relevant",
+          "order": 8,
+          "search_terms": [
+            "diet",
+            "K",
+            "salt",
+            "intake"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-symptoms-9",
+          "chip_text": "GI losses reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "GI",
+            "diarrhoea",
+            "vomiting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-relevant_negatives-1",
+          "chip_text": "no acute symptoms reported if applicable",
+          "order": 1,
+          "search_terms": [
+            "acute",
+            "symptoms",
+            "weakness"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-relevant_negatives-2",
+          "chip_text": "no cardiac symptoms reported if relevant",
+          "order": 2,
+          "search_terms": [
+            "cardiac",
+            "palpitations",
+            "chest"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-exam_findings-1",
+          "chip_text": "vitals documented if measured",
+          "order": 1,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse",
+            "rhythm"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-exam_findings-2",
+          "chip_text": "hydration documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "hydration",
+            "fluid",
+            "status"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-exam_findings-3",
+          "chip_text": "ECG reviewed if performed by clinician",
+          "order": 3,
+          "search_terms": [
+            "ECG",
+            "EKG",
+            "tracing"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-red_flags-1",
+          "chip_text": "severe hyperkalemia if documented",
+          "order": 1,
+          "search_terms": [
+            "severe",
+            "hyperkalemia",
+            "high K"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-red_flags-2",
+          "chip_text": "severe hyponatremia if documented",
+          "order": 2,
+          "search_terms": [
+            "severe",
+            "hyponatremia",
+            "low Na"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-red_flags-3",
+          "chip_text": "ECG changes if documented",
+          "order": 3,
+          "search_terms": [
+            "ECG",
+            "changes",
+            "arrhythmia"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-red_flags-4",
+          "chip_text": "rapid electrolyte shifts",
+          "order": 4,
+          "search_terms": [
+            "rapid",
+            "shift",
+            "change"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-red_flags-5",
+          "chip_text": "cardiac arrhythmia symptoms",
+          "order": 5,
+          "search_terms": [
+            "arrhythmia",
+            "palpitations"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-red_flags-6",
+          "chip_text": "signs of neuromuscular irritability",
+          "order": 6,
+          "search_terms": [
+            "neuromuscular",
+            "tetany",
+            "Chvostek"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-investigations-1",
+          "chip_text": "renal function reviewed if ordered",
+          "order": 1,
+          "search_terms": [
+            "renal",
+            "eGFR",
+            "creatinine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-investigations-2",
+          "chip_text": "repeat blood tests reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "repeat",
+            "labs",
+            "U+E",
+            "BMP"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-investigations-3",
+          "chip_text": "ECG reviewed if performed by clinician",
+          "order": 3,
+          "search_terms": [
+            "ECG",
+            "EKG",
+            "tracing"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-investigations-4",
+          "chip_text": "previous records reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-plan_phrases-2",
+          "chip_text": "medication review documented if clinician performed",
+          "order": 2,
+          "search_terms": [
+            "medication",
+            "review"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-plan_phrases-3",
+          "chip_text": "follow-up testing documented if arranged",
+          "order": 3,
+          "search_terms": [
+            "repeat",
+            "labs",
+            "follow-up"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-plan_phrases-4",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 4,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-plan_phrases-5",
+          "chip_text": "referral documented if clinician decided",
+          "order": 5,
+          "search_terms": [
+            "referral",
+            "nephrology"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-follow_up-1",
+          "chip_text": "1-2 weeks",
+          "order": 1,
+          "search_terms": [
+            "one",
+            "two",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-follow_up-2",
+          "chip_text": "2-4 weeks",
+          "order": 2,
+          "search_terms": [
+            "two",
+            "four",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-follow_up-3",
+          "chip_text": "sooner if abnormal",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "abnormal",
+            "change"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-electrolyte-abnormality-review-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ]
+    },
+    "neph-proteinuria": {
+      "symptoms": [
+        {
+          "chip_id": "neph-proteinuria-symptoms-1",
+          "chip_text": "proteinuria",
+          "order": 1,
+          "search_terms": [
+            "proteinuria",
+            "protein",
+            "urine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-symptoms-2",
+          "chip_text": "urine ACR or proteinuria result reviewed",
+          "order": 2,
+          "search_terms": [
+            "ACR",
+            "PCR",
+            "protein",
+            "level"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-symptoms-3",
+          "chip_text": "oedema reviewed",
+          "order": 3,
+          "search_terms": [
+            "oedema",
+            "edema",
+            "swelling"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-symptoms-4",
+          "chip_text": "blood pressure context reviewed",
+          "order": 4,
+          "search_terms": [
+            "BP",
+            "blood",
+            "pressure"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-symptoms-5",
+          "chip_text": "diabetes and hypertension context reviewed if relevant",
+          "order": 5,
+          "search_terms": [
+            "diabetes",
+            "hypertension",
+            "CKD"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-symptoms-6",
+          "chip_text": "urinary symptoms reviewed",
+          "order": 6,
+          "search_terms": [
+            "urinary",
+            "frothy",
+            "symptoms"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-symptoms-7",
+          "chip_text": "medication history reviewed if relevant",
+          "order": 7,
+          "search_terms": [
+            "medication",
+            "ACE",
+            "ARB"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "neph-proteinuria-relevant_negatives-1",
+          "chip_text": "no hematuria reported if applicable",
+          "order": 1,
+          "search_terms": [
+            "hematuria",
+            "blood"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-relevant_negatives-2",
+          "chip_text": "no oedema reported if applicable",
+          "order": 2,
+          "search_terms": [
+            "oedema",
+            "swelling"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-relevant_negatives-3",
+          "chip_text": "no acute urinary symptoms reported",
+          "order": 3,
+          "search_terms": [
+            "acute",
+            "UTI",
+            "infection"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "neph-proteinuria-exam_findings-1",
+          "chip_text": "blood pressure documented if measured",
+          "order": 1,
+          "search_terms": [
+            "BP",
+            "blood",
+            "pressure"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-exam_findings-2",
+          "chip_text": "oedema documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "oedema",
+            "pedal",
+            "sacral"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-exam_findings-3",
+          "chip_text": "weight documented if measured",
+          "order": 3,
+          "search_terms": [
+            "weight",
+            "fluid"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-exam_findings-4",
+          "chip_text": "vitals documented if measured",
+          "order": 4,
+          "search_terms": [
+            "vitals",
+            "BP"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "neph-proteinuria-red_flags-1",
+          "chip_text": "nephrotic-range proteinuria",
+          "order": 1,
+          "search_terms": [
+            "nephrotic",
+            "high",
+            "protein"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-red_flags-2",
+          "chip_text": "rapidly rising proteinuria",
+          "order": 2,
+          "search_terms": [
+            "rapid",
+            "rising",
+            "protein"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-red_flags-3",
+          "chip_text": "haematuria with proteinuria",
+          "order": 3,
+          "search_terms": [
+            "haematuria",
+            "blood",
+            "protein"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-red_flags-4",
+          "chip_text": "declining renal function with proteinuria",
+          "order": 4,
+          "search_terms": [
+            "declining",
+            "eGFR"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-red_flags-5",
+          "chip_text": "nephrotic syndrome features if present",
+          "order": 5,
+          "search_terms": [
+            "nephrotic",
+            "oedema",
+            "protein"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "neph-proteinuria-investigations-1",
+          "chip_text": "urine ACR or proteinuria reviewed",
+          "order": 1,
+          "search_terms": [
+            "ACR",
+            "PCR",
+            "protein"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-investigations-2",
+          "chip_text": "renal function reviewed if ordered",
+          "order": 2,
+          "search_terms": [
+            "renal",
+            "eGFR",
+            "creatinine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-investigations-3",
+          "chip_text": "urinalysis reviewed if performed",
+          "order": 3,
+          "search_terms": [
+            "urinalysis",
+            "dipstick"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-investigations-4",
+          "chip_text": "previous records reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "neph-proteinuria-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-plan_phrases-2",
+          "chip_text": "lifestyle advice documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "lifestyle",
+            "diet",
+            "salt",
+            "protein"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "nephrology"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-plan_phrases-5",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 5,
+          "search_terms": [
+            "medication",
+            "ACE",
+            "ARB"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-plan_phrases-6",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 6,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "neph-proteinuria-follow_up-1",
+          "chip_text": "3-6 months",
+          "order": 1,
+          "search_terms": [
+            "three",
+            "six",
+            "months"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-follow_up-2",
+          "chip_text": "6-12 months if stable",
+          "order": 2,
+          "search_terms": [
+            "six",
+            "twelve"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "neph-proteinuria-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ]
+    },
     "neuro-dizziness": {
       "symptoms": [
         {
@@ -138561,6 +144674,3301 @@
           ],
           "tags": [
             "urgent_care"
+          ]
+        }
+      ]
+    },
+    "uro-dysuria-uti-symptoms": {
+      "symptoms": [
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-symptoms-1",
+          "chip_text": "dysuria",
+          "order": 1,
+          "search_terms": [
+            "dysuria",
+            "pain",
+            "burning",
+            "urination"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-symptoms-2",
+          "chip_text": "urinary frequency reviewed",
+          "order": 2,
+          "search_terms": [
+            "frequency",
+            "often",
+            "void"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-symptoms-3",
+          "chip_text": "urinary urgency reviewed",
+          "order": 3,
+          "search_terms": [
+            "urgency",
+            "sudden",
+            "urge"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-symptoms-4",
+          "chip_text": "suprapubic discomfort reviewed",
+          "order": 4,
+          "search_terms": [
+            "suprapubic",
+            "pelvic",
+            "pain"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-symptoms-5",
+          "chip_text": "fever reviewed",
+          "order": 5,
+          "search_terms": [
+            "fever",
+            "temperature"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-symptoms-6",
+          "chip_text": "flank pain reviewed",
+          "order": 6,
+          "search_terms": [
+            "flank",
+            "loin",
+            "kidney",
+            "pain"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-symptoms-7",
+          "chip_text": "hematuria reviewed",
+          "order": 7,
+          "search_terms": [
+            "hematuria",
+            "blood",
+            "urine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-symptoms-8",
+          "chip_text": "duration documented",
+          "order": 8,
+          "search_terms": [
+            "duration",
+            "how long"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-symptoms-9",
+          "chip_text": "previous UTI history reviewed",
+          "order": 9,
+          "search_terms": [
+            "UTI",
+            "prior",
+            "recurrent"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-relevant_negatives-1",
+          "chip_text": "no fever reported",
+          "order": 1,
+          "search_terms": [
+            "fever",
+            "febrile"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-relevant_negatives-2",
+          "chip_text": "no flank pain reported",
+          "order": 2,
+          "search_terms": [
+            "flank",
+            "loin",
+            "pain"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-relevant_negatives-3",
+          "chip_text": "no vomiting reported",
+          "order": 3,
+          "search_terms": [
+            "vomiting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-relevant_negatives-4",
+          "chip_text": "no visible hematuria reported",
+          "order": 4,
+          "search_terms": [
+            "visible",
+            "hematuria",
+            "blood"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-relevant_negatives-5",
+          "chip_text": "no urinary retention reported",
+          "order": 5,
+          "search_terms": [
+            "retention",
+            "unable",
+            "void"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-relevant_negatives-6",
+          "chip_text": "no pregnancy concern documented if applicable",
+          "order": 6,
+          "search_terms": [
+            "pregnancy",
+            "pregnant"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-exam_findings-1",
+          "chip_text": "vitals documented if measured",
+          "order": 1,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse",
+            "temp"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-exam_findings-2",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-exam_findings-3",
+          "chip_text": "suprapubic tenderness documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "suprapubic",
+            "tenderness"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-exam_findings-4",
+          "chip_text": "flank or CVA tenderness documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "flank",
+            "CVA",
+            "loin",
+            "kidney"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-exam_findings-5",
+          "chip_text": "hydration documented if assessed",
+          "order": 5,
+          "search_terms": [
+            "hydration",
+            "mucous",
+            "turgor"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-exam_findings-6",
+          "chip_text": "glucose checked if performed",
+          "order": 6,
+          "search_terms": [
+            "glucose",
+            "diabetes"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-red_flags-1",
+          "chip_text": "fever with flank pain",
+          "order": 1,
+          "search_terms": [
+            "fever",
+            "flank",
+            "pyelonephritis"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-red_flags-2",
+          "chip_text": "vomiting",
+          "order": 2,
+          "search_terms": [
+            "vomiting",
+            "unable",
+            "oral"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-red_flags-3",
+          "chip_text": "urinary retention",
+          "order": 3,
+          "search_terms": [
+            "retention",
+            "unable",
+            "void"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-red_flags-4",
+          "chip_text": "visible hematuria",
+          "order": 4,
+          "search_terms": [
+            "visible",
+            "hematuria",
+            "blood"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-red_flags-5",
+          "chip_text": "pregnancy context if relevant",
+          "order": 5,
+          "search_terms": [
+            "pregnancy",
+            "pregnant"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-red_flags-6",
+          "chip_text": "immunosuppressed condition",
+          "order": 6,
+          "search_terms": [
+            "immunocompromised",
+            "diabetic",
+            "transplant"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-red_flags-7",
+          "chip_text": "recurrent UTI in male",
+          "order": 7,
+          "search_terms": [
+            "recurrent",
+            "male"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-investigations-1",
+          "chip_text": "urinalysis reviewed if performed",
+          "order": 1,
+          "search_terms": [
+            "urinalysis",
+            "dipstick",
+            "urine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-investigations-2",
+          "chip_text": "urine culture reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "culture",
+            "MC+S",
+            "sensitivity"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-investigations-3",
+          "chip_text": "blood tests reviewed if ordered",
+          "order": 3,
+          "search_terms": [
+            "blood",
+            "FBC",
+            "CRP"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-investigations-4",
+          "chip_text": "renal function reviewed if ordered",
+          "order": 4,
+          "search_terms": [
+            "renal",
+            "kidney",
+            "eGFR",
+            "creatinine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-investigations-5",
+          "chip_text": "imaging reviewed if available",
+          "order": 5,
+          "search_terms": [
+            "ultrasound",
+            "KUB"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-2",
+          "chip_text": "hydration advice documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "hydration",
+            "fluids",
+            "water"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-3",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "medication",
+            "antibiotic"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-4",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 4,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-6",
+          "chip_text": "recurrent UTI plan discussed if applicable",
+          "order": 6,
+          "search_terms": [
+            "recurrent",
+            "UTI",
+            "prophylaxis"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-follow_up-1",
+          "chip_text": "2-3 days if symptoms persist",
+          "order": 1,
+          "search_terms": [
+            "two",
+            "three",
+            "days"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-follow_up-2",
+          "chip_text": "1-2 weeks",
+          "order": 2,
+          "search_terms": [
+            "one",
+            "two",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-dysuria-uti-symptoms-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ]
+    },
+    "uro-flank-pain": {
+      "symptoms": [
+        {
+          "chip_id": "uro-flank-pain-symptoms-1",
+          "chip_text": "flank pain",
+          "order": 1,
+          "search_terms": [
+            "flank",
+            "loin",
+            "kidney",
+            "pain"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-symptoms-2",
+          "chip_text": "duration documented",
+          "order": 2,
+          "search_terms": [
+            "duration",
+            "how long"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-symptoms-3",
+          "chip_text": "character documented",
+          "order": 3,
+          "search_terms": [
+            "character",
+            "colicky",
+            "dull"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-symptoms-4",
+          "chip_text": "radiation reviewed",
+          "order": 4,
+          "search_terms": [
+            "radiation",
+            "groin",
+            "abdomen"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-symptoms-5",
+          "chip_text": "urinary symptoms reviewed",
+          "order": 5,
+          "search_terms": [
+            "urinary",
+            "dysuria",
+            "frequency"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-symptoms-6",
+          "chip_text": "fever reviewed",
+          "order": 6,
+          "search_terms": [
+            "fever",
+            "temperature"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-symptoms-7",
+          "chip_text": "nausea and vomiting reviewed",
+          "order": 7,
+          "search_terms": [
+            "nausea",
+            "vomiting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-symptoms-8",
+          "chip_text": "previous stones reviewed",
+          "order": 8,
+          "search_terms": [
+            "stone",
+            "calculi",
+            "prior",
+            "history"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-symptoms-9",
+          "chip_text": "urine output reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "urine",
+            "output",
+            "oliguria"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-symptoms-10",
+          "chip_text": "trauma history reviewed if relevant",
+          "order": 10,
+          "search_terms": [
+            "trauma",
+            "injury",
+            "kidney"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "uro-flank-pain-relevant_negatives-1",
+          "chip_text": "no fever reported",
+          "order": 1,
+          "search_terms": [
+            "fever",
+            "temperature"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-relevant_negatives-2",
+          "chip_text": "no visible hematuria reported",
+          "order": 2,
+          "search_terms": [
+            "visible",
+            "hematuria",
+            "blood"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-relevant_negatives-3",
+          "chip_text": "no persistent vomiting reported",
+          "order": 3,
+          "search_terms": [
+            "vomiting",
+            "persistent"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "uro-flank-pain-exam_findings-1",
+          "chip_text": "abdominal and flank tenderness documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "flank",
+            "abdominal",
+            "tenderness"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-exam_findings-2",
+          "chip_text": "CVA tenderness documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "CVA",
+            "kidney",
+            "punch"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-exam_findings-3",
+          "chip_text": "vitals documented if measured",
+          "order": 3,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse",
+            "temp"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-exam_findings-4",
+          "chip_text": "urinalysis reviewed if performed",
+          "order": 4,
+          "search_terms": [
+            "urinalysis",
+            "dipstick"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "uro-flank-pain-red_flags-1",
+          "chip_text": "fever with flank pain",
+          "order": 1,
+          "search_terms": [
+            "fever",
+            "flank",
+            "pyelonephritis"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-red_flags-2",
+          "chip_text": "visible hematuria",
+          "order": 2,
+          "search_terms": [
+            "visible",
+            "hematuria"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-red_flags-3",
+          "chip_text": "persistent vomiting",
+          "order": 3,
+          "search_terms": [
+            "vomiting",
+            "persistent"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-red_flags-4",
+          "chip_text": "known solitary kidney",
+          "order": 4,
+          "search_terms": [
+            "solitary",
+            "kidney"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-red_flags-5",
+          "chip_text": "signs of sepsis if assessed",
+          "order": 5,
+          "search_terms": [
+            "sepsis",
+            "septic"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "uro-flank-pain-investigations-1",
+          "chip_text": "urinalysis reviewed if performed",
+          "order": 1,
+          "search_terms": [
+            "urinalysis",
+            "dipstick"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-investigations-2",
+          "chip_text": "renal function reviewed if ordered",
+          "order": 2,
+          "search_terms": [
+            "renal",
+            "eGFR",
+            "creatinine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-investigations-3",
+          "chip_text": "imaging reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "CT",
+            "KUB",
+            "ultrasound"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-investigations-4",
+          "chip_text": "previous records reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-investigations-5",
+          "chip_text": "blood tests reviewed if ordered",
+          "order": 5,
+          "search_terms": [
+            "blood",
+            "FBC",
+            "CRP"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "uro-flank-pain-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-plan_phrases-2",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "urology"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "uro-flank-pain-follow_up-1",
+          "chip_text": "1-2 weeks",
+          "order": 1,
+          "search_terms": [
+            "one",
+            "two",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-follow_up-2",
+          "chip_text": "2-4 weeks",
+          "order": 2,
+          "search_terms": [
+            "two",
+            "four",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-flank-pain-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ]
+    },
+    "uro-frequency-urgency": {
+      "symptoms": [
+        {
+          "chip_id": "uro-frequency-urgency-symptoms-1",
+          "chip_text": "urinary frequency",
+          "order": 1,
+          "search_terms": [
+            "urinary",
+            "frequency",
+            "often",
+            "void"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-symptoms-2",
+          "chip_text": "urinary urgency",
+          "order": 2,
+          "search_terms": [
+            "urgency",
+            "sudden",
+            "urge"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-symptoms-3",
+          "chip_text": "nocturia reviewed",
+          "order": 3,
+          "search_terms": [
+            "nocturia",
+            "night",
+            "waking"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-symptoms-4",
+          "chip_text": "urge incontinence reviewed",
+          "order": 4,
+          "search_terms": [
+            "urge",
+            "incontinence",
+            "leak"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-symptoms-5",
+          "chip_text": "dysuria reviewed",
+          "order": 5,
+          "search_terms": [
+            "dysuria",
+            "burning"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-symptoms-6",
+          "chip_text": "hematuria reviewed",
+          "order": 6,
+          "search_terms": [
+            "hematuria",
+            "blood"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-symptoms-7",
+          "chip_text": "fluid and caffeine context reviewed",
+          "order": 7,
+          "search_terms": [
+            "fluid",
+            "caffeine",
+            "intake",
+            "bladder"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-symptoms-8",
+          "chip_text": "pelvic floor context reviewed if relevant",
+          "order": 8,
+          "search_terms": [
+            "pelvic",
+            "floor",
+            "prolapse"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-symptoms-9",
+          "chip_text": "menstrual or menopausal context reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "menopausal",
+            "hormonal"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "uro-frequency-urgency-relevant_negatives-1",
+          "chip_text": "no fever reported",
+          "order": 1,
+          "search_terms": [
+            "fever",
+            "infection"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-relevant_negatives-2",
+          "chip_text": "no flank pain reported",
+          "order": 2,
+          "search_terms": [
+            "flank",
+            "loin",
+            "pain"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-relevant_negatives-3",
+          "chip_text": "no urinary retention reported",
+          "order": 3,
+          "search_terms": [
+            "retention",
+            "unable",
+            "void"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "uro-frequency-urgency-exam_findings-1",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-exam_findings-2",
+          "chip_text": "vitals documented if measured",
+          "order": 2,
+          "search_terms": [
+            "vitals",
+            "BP"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-exam_findings-3",
+          "chip_text": "pelvic examination documented if clinically appropriate",
+          "order": 3,
+          "search_terms": [
+            "pelvic",
+            "prolapse"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "uro-frequency-urgency-red_flags-1",
+          "chip_text": "fever with urinary symptoms",
+          "order": 1,
+          "search_terms": [
+            "fever",
+            "infection"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-red_flags-2",
+          "chip_text": "visible hematuria",
+          "order": 2,
+          "search_terms": [
+            "visible",
+            "hematuria"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-red_flags-3",
+          "chip_text": "symptom progression despite treatment",
+          "order": 3,
+          "search_terms": [
+            "progression",
+            "treatment",
+            "failure"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "uro-frequency-urgency-investigations-1",
+          "chip_text": "urinalysis reviewed if performed",
+          "order": 1,
+          "search_terms": [
+            "urinalysis",
+            "dipstick"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-investigations-2",
+          "chip_text": "urine culture reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "culture",
+            "MC+S"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-investigations-3",
+          "chip_text": "glucose or HbA1c reviewed if ordered",
+          "order": 3,
+          "search_terms": [
+            "glucose",
+            "HbA1c",
+            "diabetes"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-investigations-4",
+          "chip_text": "previous records reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "uro-frequency-urgency-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-plan_phrases-2",
+          "chip_text": "lifestyle advice documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "lifestyle",
+            "caffeine",
+            "fluid",
+            "bladder"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-plan_phrases-3",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 3,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-plan_phrases-4",
+          "chip_text": "referral documented if clinician decided",
+          "order": 4,
+          "search_terms": [
+            "referral",
+            "urology",
+            "continence"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-plan_phrases-6",
+          "chip_text": "bladder training discussed if applicable",
+          "order": 6,
+          "search_terms": [
+            "bladder",
+            "training",
+            "exercises"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-plan_phrases-7",
+          "chip_text": "fluid management advice documented if discussed",
+          "order": 7,
+          "search_terms": [
+            "fluid",
+            "caffeine",
+            "timing"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "uro-frequency-urgency-follow_up-1",
+          "chip_text": "4-6 weeks",
+          "order": 1,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-follow_up-2",
+          "chip_text": "6-8 weeks",
+          "order": 2,
+          "search_terms": [
+            "six",
+            "eight",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-frequency-urgency-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ]
+    },
+    "uro-hematuria": {
+      "symptoms": [
+        {
+          "chip_id": "uro-hematuria-symptoms-1",
+          "chip_text": "hematuria",
+          "order": 1,
+          "search_terms": [
+            "hematuria",
+            "blood",
+            "urine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-symptoms-2",
+          "chip_text": "visible blood in urine documented",
+          "order": 2,
+          "search_terms": [
+            "visible",
+            "macroscopic",
+            "blood"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-symptoms-3",
+          "chip_text": "microscopic hematuria context documented",
+          "order": 3,
+          "search_terms": [
+            "microscopic",
+            "dipstick",
+            "RBC"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-symptoms-4",
+          "chip_text": "dysuria reviewed",
+          "order": 4,
+          "search_terms": [
+            "dysuria",
+            "burning"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-symptoms-5",
+          "chip_text": "flank pain reviewed",
+          "order": 5,
+          "search_terms": [
+            "flank",
+            "loin",
+            "pain"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-symptoms-6",
+          "chip_text": "urinary frequency and urgency reviewed",
+          "order": 6,
+          "search_terms": [
+            "frequency",
+            "urgency"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-symptoms-7",
+          "chip_text": "anticoagulant use reviewed if relevant",
+          "order": 7,
+          "search_terms": [
+            "anticoagulant",
+            "warfarin",
+            "DOAC",
+            "aspirin"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-symptoms-8",
+          "chip_text": "smoking or occupational exposure reviewed if relevant",
+          "order": 8,
+          "search_terms": [
+            "smoking",
+            "occupational",
+            "dye"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-symptoms-9",
+          "chip_text": "family history of urological cancer reviewed",
+          "order": 9,
+          "search_terms": [
+            "family",
+            "cancer",
+            "bladder",
+            "kidney"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-symptoms-10",
+          "chip_text": "recent urinary tract infection context reviewed",
+          "order": 10,
+          "search_terms": [
+            "recent",
+            "UTI",
+            "infection"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "uro-hematuria-relevant_negatives-1",
+          "chip_text": "no urinary retention reported",
+          "order": 1,
+          "search_terms": [
+            "retention",
+            "unable",
+            "void"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-relevant_negatives-2",
+          "chip_text": "no fever reported",
+          "order": 2,
+          "search_terms": [
+            "fever",
+            "temperature"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-relevant_negatives-3",
+          "chip_text": "no flank pain reported if applicable",
+          "order": 3,
+          "search_terms": [
+            "flank",
+            "loin"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "uro-hematuria-exam_findings-1",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-exam_findings-2",
+          "chip_text": "flank tenderness documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "flank",
+            "CVA",
+            "tenderness"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-exam_findings-3",
+          "chip_text": "vitals documented if measured",
+          "order": 3,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-exam_findings-4",
+          "chip_text": "blood pressure documented if measured",
+          "order": 4,
+          "search_terms": [
+            "BP",
+            "blood",
+            "pressure"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "uro-hematuria-red_flags-1",
+          "chip_text": "visible hematuria with clots",
+          "order": 1,
+          "search_terms": [
+            "visible",
+            "clots",
+            "heavy"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-red_flags-2",
+          "chip_text": "painless visible hematuria",
+          "order": 2,
+          "search_terms": [
+            "painless",
+            "visible"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-red_flags-3",
+          "chip_text": "smoking history with hematuria",
+          "order": 3,
+          "search_terms": [
+            "smoking",
+            "hematuria"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-red_flags-4",
+          "chip_text": "weight loss with hematuria",
+          "order": 4,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-red_flags-5",
+          "chip_text": "recurrent visible hematuria",
+          "order": 5,
+          "search_terms": [
+            "recurrent",
+            "visible"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "uro-hematuria-investigations-1",
+          "chip_text": "urinalysis reviewed if performed",
+          "order": 1,
+          "search_terms": [
+            "urinalysis",
+            "dipstick"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-investigations-2",
+          "chip_text": "urine microscopy and culture reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "microscopy",
+            "culture",
+            "RBC"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-investigations-3",
+          "chip_text": "renal function reviewed if ordered",
+          "order": 3,
+          "search_terms": [
+            "renal",
+            "eGFR",
+            "creatinine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-investigations-4",
+          "chip_text": "imaging reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "ultrasound",
+            "CT",
+            "KUB"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-investigations-5",
+          "chip_text": "previous records reviewed if available",
+          "order": 5,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "uro-hematuria-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-plan_phrases-2",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "urology"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "uro-hematuria-follow_up-1",
+          "chip_text": "2-4 weeks",
+          "order": 1,
+          "search_terms": [
+            "two",
+            "four",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-follow_up-2",
+          "chip_text": "4-6 weeks",
+          "order": 2,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-hematuria-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ]
+    },
+    "uro-luts-bph": {
+      "symptoms": [
+        {
+          "chip_id": "uro-luts-bph-symptoms-1",
+          "chip_text": "lower urinary tract symptoms",
+          "order": 1,
+          "search_terms": [
+            "LUTS",
+            "urinary",
+            "symptoms"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-symptoms-2",
+          "chip_text": "weak stream reviewed",
+          "order": 2,
+          "search_terms": [
+            "weak",
+            "stream",
+            "flow"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-symptoms-3",
+          "chip_text": "hesitancy reviewed",
+          "order": 3,
+          "search_terms": [
+            "hesitancy",
+            "starting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-symptoms-4",
+          "chip_text": "nocturia reviewed",
+          "order": 4,
+          "search_terms": [
+            "nocturia",
+            "night",
+            "waking"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-symptoms-5",
+          "chip_text": "urgency and frequency reviewed",
+          "order": 5,
+          "search_terms": [
+            "urgency",
+            "frequency"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-symptoms-6",
+          "chip_text": "incomplete emptying reviewed",
+          "order": 6,
+          "search_terms": [
+            "incomplete",
+            "emptying"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-symptoms-7",
+          "chip_text": "retention history reviewed",
+          "order": 7,
+          "search_terms": [
+            "retention",
+            "unable",
+            "void"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-symptoms-8",
+          "chip_text": "medication history reviewed",
+          "order": 8,
+          "search_terms": [
+            "medication",
+            "alpha blocker",
+            "5ARI"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-symptoms-9",
+          "chip_text": "flow rate context reviewed if assessed",
+          "order": 9,
+          "search_terms": [
+            "flow",
+            "rate",
+            "uroflowmetry"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "uro-luts-bph-relevant_negatives-1",
+          "chip_text": "no hematuria reported",
+          "order": 1,
+          "search_terms": [
+            "hematuria",
+            "blood"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-relevant_negatives-2",
+          "chip_text": "no urinary retention reported",
+          "order": 2,
+          "search_terms": [
+            "retention",
+            "acute",
+            "unable"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-relevant_negatives-3",
+          "chip_text": "no fever reported",
+          "order": 3,
+          "search_terms": [
+            "fever"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "uro-luts-bph-exam_findings-1",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-exam_findings-2",
+          "chip_text": "bladder distension documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "bladder",
+            "distension",
+            "palpable"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-exam_findings-3",
+          "chip_text": "digital rectal examination documented if clinically appropriate and assessed",
+          "order": 3,
+          "search_terms": [
+            "DRE",
+            "prostate",
+            "rectal"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-exam_findings-4",
+          "chip_text": "vitals documented if measured",
+          "order": 4,
+          "search_terms": [
+            "vitals",
+            "BP"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-exam_findings-5",
+          "chip_text": "neurological examination documented if relevant",
+          "order": 5,
+          "search_terms": [
+            "neurological",
+            "reflexes"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "uro-luts-bph-red_flags-1",
+          "chip_text": "acute urinary retention",
+          "order": 1,
+          "search_terms": [
+            "acute",
+            "retention"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-red_flags-2",
+          "chip_text": "visible hematuria",
+          "order": 2,
+          "search_terms": [
+            "visible",
+            "hematuria",
+            "blood"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-red_flags-3",
+          "chip_text": "fever with urinary symptoms",
+          "order": 3,
+          "search_terms": [
+            "fever",
+            "infection"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-red_flags-4",
+          "chip_text": "new onset after age 50",
+          "order": 4,
+          "search_terms": [
+            "new",
+            "onset",
+            "age"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-red_flags-5",
+          "chip_text": "acute retention with BPH",
+          "order": 5,
+          "search_terms": [
+            "acute",
+            "retention"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-red_flags-6",
+          "chip_text": "haematuria with LUTS",
+          "order": 6,
+          "search_terms": [
+            "haematuria",
+            "blood"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "uro-luts-bph-investigations-1",
+          "chip_text": "urinalysis reviewed if performed",
+          "order": 1,
+          "search_terms": [
+            "urinalysis",
+            "dipstick"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-investigations-2",
+          "chip_text": "PSA discussed and reviewed if clinician did so and available",
+          "order": 2,
+          "search_terms": [
+            "PSA",
+            "prostate",
+            "antigen"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-investigations-3",
+          "chip_text": "renal function reviewed if ordered",
+          "order": 3,
+          "search_terms": [
+            "renal",
+            "eGFR",
+            "creatinine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-investigations-4",
+          "chip_text": "previous records reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-investigations-5",
+          "chip_text": "bladder scan reviewed if performed",
+          "order": 5,
+          "search_terms": [
+            "bladder",
+            "scan",
+            "PVR"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "uro-luts-bph-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-plan_phrases-2",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 2,
+          "search_terms": [
+            "medication",
+            "alpha blocker",
+            "5ARI"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-plan_phrases-3",
+          "chip_text": "lifestyle advice documented if discussed",
+          "order": 3,
+          "search_terms": [
+            "lifestyle",
+            "fluid",
+            "caffeine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-plan_phrases-4",
+          "chip_text": "referral documented if clinician decided",
+          "order": 4,
+          "search_terms": [
+            "referral",
+            "urology"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "uro-luts-bph-follow_up-1",
+          "chip_text": "4-6 weeks",
+          "order": 1,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-follow_up-2",
+          "chip_text": "3-6 months",
+          "order": 2,
+          "search_terms": [
+            "three",
+            "six",
+            "months"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-luts-bph-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ]
+    },
+    "uro-renal-colic-followup": {
+      "symptoms": [
+        {
+          "chip_id": "uro-renal-colic-followup-symptoms-1",
+          "chip_text": "renal colic follow-up",
+          "order": 1,
+          "search_terms": [
+            "renal",
+            "colic",
+            "stone",
+            "followup"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-symptoms-2",
+          "chip_text": "flank pain progress reviewed",
+          "order": 2,
+          "search_terms": [
+            "flank",
+            "pain",
+            "progress"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-symptoms-3",
+          "chip_text": "pain radiation reviewed",
+          "order": 3,
+          "search_terms": [
+            "radiation",
+            "groin",
+            "loin"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-symptoms-4",
+          "chip_text": "hematuria reviewed",
+          "order": 4,
+          "search_terms": [
+            "hematuria",
+            "blood"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-symptoms-5",
+          "chip_text": "nausea and vomiting reviewed",
+          "order": 5,
+          "search_terms": [
+            "nausea",
+            "vomiting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-symptoms-6",
+          "chip_text": "fever reviewed",
+          "order": 6,
+          "search_terms": [
+            "fever",
+            "temperature"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-symptoms-7",
+          "chip_text": "previous stone history reviewed",
+          "order": 7,
+          "search_terms": [
+            "stone",
+            "calculi",
+            "prior"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-symptoms-8",
+          "chip_text": "metabolic workup context reviewed if relevant",
+          "order": 8,
+          "search_terms": [
+            "metabolic",
+            "calcium",
+            "urate"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-symptoms-9",
+          "chip_text": "hydration context reviewed",
+          "order": 9,
+          "search_terms": [
+            "hydration",
+            "fluid",
+            "intake"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "uro-renal-colic-followup-relevant_negatives-1",
+          "chip_text": "no fever reported",
+          "order": 1,
+          "search_terms": [
+            "fever",
+            "febrile"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-relevant_negatives-2",
+          "chip_text": "no persistent vomiting reported",
+          "order": 2,
+          "search_terms": [
+            "vomiting",
+            "persistent"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-relevant_negatives-3",
+          "chip_text": "no urinary retention reported",
+          "order": 3,
+          "search_terms": [
+            "retention",
+            "unable",
+            "void"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "uro-renal-colic-followup-exam_findings-1",
+          "chip_text": "abdominal and flank examination documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "flank",
+            "exam"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-exam_findings-2",
+          "chip_text": "CVA tenderness documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "CVA",
+            "loin",
+            "tenderness"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-exam_findings-3",
+          "chip_text": "vitals documented if measured",
+          "order": 3,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse",
+            "temp"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "uro-renal-colic-followup-red_flags-1",
+          "chip_text": "fever with flank pain",
+          "order": 1,
+          "search_terms": [
+            "fever",
+            "flank",
+            "infection"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-red_flags-2",
+          "chip_text": "persistent vomiting or dehydration",
+          "order": 2,
+          "search_terms": [
+            "vomiting",
+            "dehydration"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-red_flags-3",
+          "chip_text": "solitary kidney with obstruction",
+          "order": 3,
+          "search_terms": [
+            "solitary",
+            "kidney",
+            "obstruction"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-red_flags-4",
+          "chip_text": "known CKD with acute changes",
+          "order": 4,
+          "search_terms": [
+            "CKD",
+            "acute",
+            "kidney"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "uro-renal-colic-followup-investigations-1",
+          "chip_text": "urinalysis reviewed if performed",
+          "order": 1,
+          "search_terms": [
+            "urinalysis",
+            "dipstick",
+            "blood"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-investigations-2",
+          "chip_text": "renal function reviewed if ordered",
+          "order": 2,
+          "search_terms": [
+            "renal",
+            "eGFR",
+            "creatinine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-investigations-3",
+          "chip_text": "imaging reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "CT",
+            "KUB",
+            "ultrasound",
+            "stone"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-investigations-4",
+          "chip_text": "stone analysis result reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "stone",
+            "analysis",
+            "composition"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "uro-renal-colic-followup-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-plan_phrases-2",
+          "chip_text": "follow-up imaging documented if arranged by clinician",
+          "order": 2,
+          "search_terms": [
+            "follow-up",
+            "imaging",
+            "stone"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-plan_phrases-3",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 3,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-plan_phrases-4",
+          "chip_text": "referral documented if clinician decided",
+          "order": 4,
+          "search_terms": [
+            "referral",
+            "urology"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-plan_phrases-6",
+          "chip_text": "preventative advice documented if discussed",
+          "order": 6,
+          "search_terms": [
+            "prevention",
+            "diet",
+            "fluid"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "uro-renal-colic-followup-follow_up-1",
+          "chip_text": "2-4 weeks",
+          "order": 1,
+          "search_terms": [
+            "two",
+            "four",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-follow_up-2",
+          "chip_text": "4-6 weeks if imaging pending",
+          "order": 2,
+          "search_terms": [
+            "four",
+            "six",
+            "imaging"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-follow_up-3",
+          "chip_text": "sooner if symptoms recur",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "recurrence"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-renal-colic-followup-follow_up-5",
+          "chip_text": "sooner if recurrence",
+          "order": 5,
+          "search_terms": [
+            "sooner",
+            "recurrent"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ]
+    },
+    "uro-urinary-retention-documentation": {
+      "symptoms": [
+        {
+          "chip_id": "uro-urinary-retention-documentation-symptoms-1",
+          "chip_text": "urinary retention documentation",
+          "order": 1,
+          "search_terms": [
+            "urinary",
+            "retention",
+            "unable",
+            "void"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-symptoms-2",
+          "chip_text": "onset documented",
+          "order": 2,
+          "search_terms": [
+            "onset",
+            "acute",
+            "gradual"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-symptoms-3",
+          "chip_text": "voiding difficulty reviewed",
+          "order": 3,
+          "search_terms": [
+            "voiding",
+            "difficulty",
+            "stream"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-symptoms-4",
+          "chip_text": "suprapubic discomfort reviewed",
+          "order": 4,
+          "search_terms": [
+            "suprapubic",
+            "pain",
+            "discomfort"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-symptoms-5",
+          "chip_text": "previous retention history reviewed",
+          "order": 5,
+          "search_terms": [
+            "previous",
+            "retention",
+            "history"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-symptoms-6",
+          "chip_text": "medication history reviewed",
+          "order": 6,
+          "search_terms": [
+            "medication",
+            "anticholinergic",
+            "decongestant"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-symptoms-7",
+          "chip_text": "neurological symptoms reviewed",
+          "order": 7,
+          "search_terms": [
+            "neurological",
+            "spine",
+            "sensation"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-symptoms-8",
+          "chip_text": "trauma or surgery history reviewed if relevant",
+          "order": 8,
+          "search_terms": [
+            "trauma",
+            "surgery",
+            "pelvic"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-symptoms-9",
+          "chip_text": "pain severity documented if applicable",
+          "order": 9,
+          "search_terms": [
+            "pain",
+            "severity"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "uro-urinary-retention-documentation-relevant_negatives-1",
+          "chip_text": "no fever reported if applicable",
+          "order": 1,
+          "search_terms": [
+            "fever",
+            "infection"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "uro-urinary-retention-documentation-exam_findings-1",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-exam_findings-2",
+          "chip_text": "bladder distension documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "bladder",
+            "distension",
+            "palpable"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-exam_findings-3",
+          "chip_text": "neurological screen documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "neurological",
+            "sensation",
+            "tone"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-exam_findings-4",
+          "chip_text": "vitals documented if measured",
+          "order": 4,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-exam_findings-5",
+          "chip_text": "pelvic examination documented if clinically appropriate",
+          "order": 5,
+          "search_terms": [
+            "pelvic",
+            "DRE"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "uro-urinary-retention-documentation-red_flags-1",
+          "chip_text": "fever with retention",
+          "order": 1,
+          "search_terms": [
+            "fever",
+            "infection",
+            "sepsis"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-red_flags-2",
+          "chip_text": "haematuria with retention",
+          "order": 2,
+          "search_terms": [
+            "hematuria",
+            "blood"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-red_flags-3",
+          "chip_text": "neurological signs with retention",
+          "order": 3,
+          "search_terms": [
+            "neurological",
+            "cauda",
+            "equina"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-red_flags-4",
+          "chip_text": "post-renal acute kidney injury",
+          "order": 4,
+          "search_terms": [
+            "AKI",
+            "kidney",
+            "post-renal"
+          ],
+          "tags": [
+            "urology_nephrology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-red_flags-5",
+          "chip_text": "suspected cauda equina",
+          "order": 5,
+          "search_terms": [
+            "cauda",
+            "equina",
+            "spine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "uro-urinary-retention-documentation-investigations-1",
+          "chip_text": "urinalysis reviewed if performed",
+          "order": 1,
+          "search_terms": [
+            "urinalysis",
+            "dipstick"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-investigations-2",
+          "chip_text": "renal function reviewed if ordered",
+          "order": 2,
+          "search_terms": [
+            "renal",
+            "eGFR",
+            "creatinine"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-investigations-3",
+          "chip_text": "bladder scan result reviewed if performed",
+          "order": 3,
+          "search_terms": [
+            "bladder",
+            "scan",
+            "PVR",
+            "volume"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-investigations-4",
+          "chip_text": "catheter details documented if present",
+          "order": 4,
+          "search_terms": [
+            "catheter",
+            "IDC",
+            "status"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "uro-urinary-retention-documentation-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-plan_phrases-2",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "urology"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-plan_phrases-5",
+          "chip_text": "trial without catheter discussed if applicable",
+          "order": 5,
+          "search_terms": [
+            "TWOC",
+            "catheter",
+            "removal"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "uro-urinary-retention-documentation-follow_up-1",
+          "chip_text": "1-2 weeks",
+          "order": 1,
+          "search_terms": [
+            "one",
+            "two",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-follow_up-2",
+          "chip_text": "2-4 weeks",
+          "order": 2,
+          "search_terms": [
+            "two",
+            "four",
+            "weeks"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-follow_up-3",
+          "chip_text": "sooner if recurrent",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "recurrent"
+          ],
+          "tags": [
+            "urology_nephrology"
+          ]
+        },
+        {
+          "chip_id": "uro-urinary-retention-documentation-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "urology_nephrology"
           ]
         }
       ]
