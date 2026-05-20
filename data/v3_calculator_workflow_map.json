@@ -768,5 +768,181 @@
     "source_status": "draft_unreviewed",
     "review_required": true,
     "safety_note": "Calculator mappings are suggestions only."
+  },
+  {
+    "workflow_id": "heart",
+    "workflow_display_name": "HEART Score",
+    "specialty": "Cardiology / Emergency",
+    "suggested_calculators": [
+      {
+        "calculator_id": "heart",
+        "calculator_name": "HEART Score",
+        "relevance_reason": "May support documentation of chest pain risk when clinician-entered criteria are available.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Chest pain workflow with clinician-entered HEART criteria.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
+  },
+  {
+    "workflow_id": "curb65",
+    "workflow_display_name": "CURB-65",
+    "specialty": "Respiratory / Emergency",
+    "suggested_calculators": [
+      {
+        "calculator_id": "curb65",
+        "calculator_name": "CURB-65",
+        "relevance_reason": "May support documentation of pneumonia severity when clinician-entered criteria are available.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Pneumonia or suspected infection workflow with clinician-entered CURB-65 criteria.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
+  },
+  {
+    "workflow_id": "ottawaKnee",
+    "workflow_display_name": "Ottawa Knee Rule",
+    "specialty": "Orthopedics / Emergency",
+    "suggested_calculators": [
+      {
+        "calculator_id": "ottawaKnee",
+        "calculator_name": "Ottawa Knee Rule",
+        "relevance_reason": "May support documentation of knee injury imaging decision when clinician-entered criteria are available.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Knee injury or minor trauma workflow with clinician-entered Ottawa Knee criteria.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
+  },
+  {
+    "workflow_id": "ottawaAnkle",
+    "workflow_display_name": "Ottawa Ankle Rule",
+    "specialty": "Orthopedics / Emergency",
+    "suggested_calculators": [
+      {
+        "calculator_id": "ottawaAnkle",
+        "calculator_name": "Ottawa Ankle Rule",
+        "relevance_reason": "May support documentation of ankle injury imaging decision when clinician-entered criteria are available.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Ankle injury or minor trauma workflow with clinician-entered Ottawa Ankle criteria.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
+  },
+  {
+    "workflow_id": "wellsDVT",
+    "workflow_display_name": "Wells DVT",
+    "specialty": "Vascular / Emergency",
+    "suggested_calculators": [
+      {
+        "calculator_id": "wellsDVT",
+        "calculator_name": "Wells DVT",
+        "relevance_reason": "May support documentation of deep vein thrombosis probability when clinician-entered criteria are available.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Minor trauma or leg swelling workflow with clinician-entered Wells DVT criteria.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
+  },
+  {
+    "workflow_id": "wellsPE",
+    "workflow_display_name": "Wells PE",
+    "specialty": "Cardiology / Respiratory / Emergency",
+    "suggested_calculators": [
+      {
+        "calculator_id": "wellsPE",
+        "calculator_name": "Wells PE",
+        "relevance_reason": "May support documentation of pulmonary embolism probability when clinician-entered criteria are available.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Shortness of breath, chest pain, or dyspnea workflow with clinician-entered Wells PE criteria.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
+  },
+  {
+    "workflow_id": "gcs",
+    "workflow_display_name": "Glasgow Coma Scale",
+    "specialty": "Neurology / Emergency",
+    "suggested_calculators": [
+      {
+        "calculator_id": "gcs",
+        "calculator_name": "Glasgow Coma Scale",
+        "relevance_reason": "May support documentation of neurological observation when clinician-entered components are available.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Head injury, seizure, or syncope workflow with clinician-entered GCS components.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
+  },
+  {
+    "workflow_id": "mcisaac",
+    "workflow_display_name": "McIsaac / Centor Score",
+    "specialty": "ENT / General Practice",
+    "suggested_calculators": [
+      {
+        "calculator_id": "mcisaac",
+        "calculator_name": "McIsaac / Centor Score",
+        "relevance_reason": "May support documentation of streptococcal pharyngitis probability when clinician-entered criteria are available.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Sore throat workflow with clinician-entered Centor criteria.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "mapping_version": "v3d.1",
+    "source_status": "needs_source_review",
+    "review_required": true,
+    "safety_note": "Optional documentation suggestions only. High-risk placeholders require separate review before any UI use."
   }
 ]
