@@ -147,7 +147,9 @@ function renderPlan(model) {
 
   lines = lines.concat(model.plan.safetyNetting);
 
-  var fup = model.plan.followUp.join(', ');
+  var fup = model.plan.followUp.map(function(s) {
+    return String(s).replace(/\.\s*$/g, '').trim();
+  }).filter(Boolean).join(', ');
   fup = fup.replace(/^(\d+\s+\w+\s+if\s+not\s+improving),\s*(sooner\s+if\s+)/i, '$1, or $2');
   if (fup) lines.push(fup + '.');
 

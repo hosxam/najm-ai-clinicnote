@@ -797,7 +797,7 @@
       var inp = inputs[ii];
       h += '<div class="v4-calc-input-row">';
       h += '<label>' + esc(inp.label) + '</label>';
-      h += '<input type="' + inp.type + '" id="calc-' + calc.id + '-' + inp.key + '" placeholder="' + esc(inp.placeholder) + '" value="' + esc(cr.values && cr.values[inp.key] ? cr.values[inp.key] : '') + '" oninput="onCalcInputChange(\\'' + calc.id + '\\', \\'' + inp.key + '\\', this.value)" style="width:100px;margin-left:8px;padding:4px 8px;border:1px solid var(--border);border-radius:4px;">';
+      h += '<input type="' + inp.type + '" id="calc-' + calc.id + '-' + inp.key + '" placeholder="' + esc(inp.placeholder) + '" value="' + esc(cr.values && cr.values[inp.key] ? cr.values[inp.key] : '') + '" data-calc-id="' + esc(calc.id) + '" data-calc-key="' + esc(inp.key) + '" oninput="window._v4CalcInputChange(this.dataset.calcId, this.dataset.calcKey, this.value)" style="width:100px;margin-left:8px;padding:4px 8px;border:1px solid var(--border);border-radius:4px;">';
       h += '</div>';
     }
     
@@ -812,12 +812,12 @@
     
     // Buttons
     h += '<div class="v4-calc-actions" style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;">';
-    h += '<button class="v4-btn v4-btn-sm" onclick="doCalc(\\'' + calc.id + '\\')">Calculate</button>';
+    h += '<button class="v4-btn v4-btn-sm" data-calc-id="' + esc(calc.id) + '" onclick="window._v4DoCalc(this.dataset.calcId)">Calculate</button>';
     if (resultText) {
       var included = cr.included || false;
-      h += '<button class="v4-btn v4-btn-sm ' + (included ? 'v4-btn-primary' : 'v4-btn-outline') + '" id="calc-include-btn-' + calc.id + '" onclick="toggleCalcInclude(\\'' + calc.id + '\\')">' + (included ? 'Included in draft' : 'Include in draft') + '</button>';
+      h += '<button class="v4-btn v4-btn-sm ' + (included ? 'v4-btn-primary' : 'v4-btn-outline') + '" id="calc-include-btn-' + calc.id + '" data-calc-id="' + esc(calc.id) + '" onclick="window._v4ToggleCalcInclude(this.dataset.calcId)">' + (included ? 'Included in draft' : 'Include in draft') + '</button>';
     }
-    h += '<button class="v4-btn v4-btn-sm v4-btn-ghost" onclick="clearCalc(\\'' + calc.id + '\\')">Clear</button>';
+    h += '<button class="v4-btn v4-btn-sm v4-btn-ghost" data-calc-id="' + esc(calc.id) + '" onclick="window._v4ClearCalc(this.dataset.calcId)">Clear</button>';
     h += '</div>';
     
     h += '<div class="v4-calc-safety" style="font-size:10px;color:var(--gray-500);margin-top:6px;">Optional documentation calculator. Enter values manually. Clinician interpretation required.</div>';
@@ -913,6 +913,11 @@
     if (!state.calculatorResults[calcId].values) state.calculatorResults[calcId].values = {};
     state.calculatorResults[calcId].values[key] = value;
   }
+
+  window._v4DoCalc = doCalc;
+  window._v4ToggleCalcInclude = toggleCalcInclude;
+  window._v4ClearCalc = clearCalc;
+  window._v4CalcInputChange = onCalcInputChange;
 
   function computeCalc(calcId, v) {
     var calcFns = {
