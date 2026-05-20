@@ -902,8 +902,15 @@
     // Manual calculator search section
     h += '<div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--gray-200);">';
     h += '<h3 style="font-size:14px;font-weight:600;color:var(--gray-800);margin-bottom:4px;">Add another calculator</h3>';
-    h += '<p style="font-size:12px;color:var(--gray-500);margin-bottom:10px;">Search and add active calculators manually.</p>';
-    h += '<input type="text" id="v4ManualCalcSearch" placeholder="Search active calculators..." oninput="window._v4FilterManualCalcs(this.value)" style="width:100%;max-width:400px;padding:10px 14px;border:1px solid var(--gray-300);border-radius:8px;font-size:14px">';
+    h += '<p style="font-size:12px;color:var(--gray-500);margin-bottom:10px;">Select or search to add active calculators manually.</p>';
+    h += '<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px">';
+    h += '<select id="v4ManualCalcDropdown" onchange="window._v4SelectManualCalc(this.value)" style="padding:10px 14px;border:1px solid var(--gray-300);border-radius:8px;font-size:14px;max-width:300px;flex:1;min-width:180px">';
+    h += '<option value="">Select calculator...</option>';
+    h += fillCalcDropdown();
+    h += '</select>';
+    h += '<span style="font-size:12px;color:var(--gray-400);">or</span>';
+    h += '<input type="text" id="v4ManualCalcSearch" placeholder="Search..." oninput="window._v4FilterManualCalcs(this.value)" style="padding:10px 14px;border:1px solid var(--gray-300);border-radius:8px;font-size:14px;max-width:220px;flex:1;min-width:120px">';
+    h += '</div>';
     h += '<div id="v4ManualCalcResults" style="margin-top:12px;"><p style="font-size:12px;color:var(--gray-400);">Type to search for active calculators.</p></div>';
     h += '</div>';
     
@@ -962,8 +969,32 @@
   }
 
   // ================================================================
-  //  MANUAL CALCULATOR SEARCH (Step 5)
-  // ================================================================
+  //  MANUAL CALCULATOR SEARCH (Step 5)function fillCalcDropdown() {
+    var opts = [];
+    var skipIds = {};
+    if (state.selectedWorkflowId) {
+      var recs = getRelatedCalcs(state.selectedWorkflowId);
+      for (var ri = 0; ri < recs.length; ri++) skipIds[recs[ri].id] = true;
+    }
+    if (state.calculatorResults) {
+      for (var ck in state.calculatorResults) skipIds[ck] = true;
+    }
+    var allCalcs = state.allActiveCalculators || [];
+    for (var di = 0; di < allCalcs.length; di++) {
+      var dc = allCalcs[di];
+      if (skipIds[dc.id]) continue;
+      opts.push('<option value="' + esc(dc.id) + '">' + esc(dc.name) + '</option>');
+    }
+    return opts.join('');
+  }
+
+  window._v4SelectManualCalc = function(calcId) {
+    if (!calcId) return;
+    window._v4AddManualCalc(calcId);
+    var dd = document.getElementById('v4ManualCalcDropdown');
+    if (dd) dd.value = '';
+  };
+
   window._v4FilterManualCalcs = function(searchTerm) {
     var container = document.getElementById('v4ManualCalcResults');
     if (!container) return;
