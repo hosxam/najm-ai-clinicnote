@@ -1,6 +1,6 @@
 // GENERATED_CLINICAL_DATA.js — Najm AI ClinicNote
 // Auto-generated. Do not edit manually.
-// Generated: 2026-05-20 06:11:13
+// Generated: 2026-05-20 09:51:57
 // Source: /data JSON files (validated)
 
 (function() {
@@ -42,18 +42,18 @@
   var data = {
   "metadata": {
     "version": "v2",
-    "generated_at": "2026-05-20 06:11:13",
+    "generated_at": "2026-05-20 09:51:57",
     "source": "validated_json_dataset (data/ CSVs -> JSON, commit 262c021)",
     "warning": "Documentation support only. Clinician review required.",
     "description": "Najm AI ClinicNote clinical data bundle. Built from /data JSON files."
   },
   "stats": {
-    "specialty_count": 8,
+    "specialty_count": 14,
     "workflow_count": 150,
     "chip_count": 5249,
     "diagnosis_index_count": 423,
     "report_template_count": 7,
-    "history_layout_count": 8,
+    "history_layout_count": 14,
     "chip_group_counts": {
       "symptoms": 1430,
       "relevant_negatives": 642,
@@ -2515,6 +2515,1796 @@
             "icd_system": null,
             "icd_code": null,
             "icd_label": null,
+            "icd_verified": false,
+            "icd_source": null
+          }
+        }
+      ]
+    },
+    {
+      "specialty_id": "Cardiology",
+      "display_name": "Cardiology",
+      "icon": null,
+      "workflow_count": 10,
+      "history_layout_id": "Cardiology",
+      "workflows": [
+        {
+          "workflow_id": "cardio-chest-pain",
+          "chief_complaint": "Chest pain",
+          "diagnosis": "Chest pain documentation",
+          "display_name": "Chest pain / Chest pain documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "cardio-palpitations",
+          "chief_complaint": "Palpitations",
+          "diagnosis": "Palpitations documentation",
+          "display_name": "Palpitations / Palpitations documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "cardio-hypertension-followup",
+          "chief_complaint": "Hypertension follow-up",
+          "diagnosis": "Hypertension follow-up documentation",
+          "display_name": "Hypertension follow-up / Hypertension follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "cardio-heart-failure-followup",
+          "chief_complaint": "Heart failure follow-up",
+          "diagnosis": "Heart failure follow-up documentation",
+          "display_name": "Heart failure follow-up / Heart failure follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "cardio-ecg-review",
+          "chief_complaint": "ECG review",
+          "diagnosis": "ECG review documentation",
+          "display_name": "ECG review / ECG review documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "cardio-dyspnea",
+          "chief_complaint": "Dyspnea",
+          "diagnosis": "Dyspnea documentation",
+          "display_name": "Dyspnea / Dyspnea documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "cardio-lipid-followup",
+          "chief_complaint": "Lipid follow-up",
+          "diagnosis": "Lipid follow-up documentation",
+          "display_name": "Lipid follow-up / Lipid follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "cardio-post-pci-followup",
+          "chief_complaint": "Post-PCI follow-up",
+          "diagnosis": "Post-PCI follow-up documentation",
+          "display_name": "Post-PCI follow-up / Post-PCI follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "cardio-syncope",
+          "chief_complaint": "Syncope",
+          "diagnosis": "Syncope documentation",
+          "display_name": "Syncope / Syncope documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "cardio-murmur-documentation",
+          "chief_complaint": "Murmur documentation",
+          "diagnosis": "Murmur documentation",
+          "display_name": "Murmur documentation / Murmur documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        }
+      ]
+    },
+    {
+      "specialty_id": "Neurology",
+      "display_name": "Neurology",
+      "icon": null,
+      "workflow_count": 10,
+      "history_layout_id": "Neurology",
+      "workflows": [
+        {
+          "workflow_id": "neuro-headache",
+          "chief_complaint": "Headache",
+          "diagnosis": "Headache documentation",
+          "display_name": "Headache / Headache documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "neuro-migraine-followup",
+          "chief_complaint": "Migraine follow-up",
+          "diagnosis": "Migraine follow-up documentation",
+          "display_name": "Migraine follow-up / Migraine follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "neuro-seizure-followup",
+          "chief_complaint": "Seizure follow-up",
+          "diagnosis": "Seizure follow-up documentation",
+          "display_name": "Seizure follow-up / Seizure follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "neuro-dizziness",
+          "chief_complaint": "Dizziness",
+          "diagnosis": "Dizziness documentation",
+          "display_name": "Dizziness / Dizziness documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "neuro-weakness",
+          "chief_complaint": "Weakness",
+          "diagnosis": "Weakness documentation",
+          "display_name": "Weakness / Weakness documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "neuro-numbness-tingling",
+          "chief_complaint": "Numbness/tingling",
+          "diagnosis": "Numbness/tingling documentation",
+          "display_name": "Numbness/tingling / Numbness/tingling documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "neuro-tremor",
+          "chief_complaint": "Tremor",
+          "diagnosis": "Tremor documentation",
+          "display_name": "Tremor / Tremor documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "neuro-neuropathy-followup",
+          "chief_complaint": "Neuropathy follow-up",
+          "diagnosis": "Neuropathy follow-up documentation",
+          "display_name": "Neuropathy follow-up / Neuropathy follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "neuro-stroke-tia-followup",
+          "chief_complaint": "Stroke/TIA follow-up",
+          "diagnosis": "Stroke/TIA follow-up documentation",
+          "display_name": "Stroke/TIA follow-up / Stroke/TIA follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "neuro-memory-concern",
+          "chief_complaint": "Memory concern",
+          "diagnosis": "Memory concern documentation",
+          "display_name": "Memory concern / Memory concern documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        }
+      ]
+    },
+    {
+      "specialty_id": "Respiratory / Pulmonology",
+      "display_name": "Respiratory / Pulmonology",
+      "icon": null,
+      "workflow_count": 10,
+      "history_layout_id": "Respiratory / Pulmonology",
+      "workflows": [
+        {
+          "workflow_id": "resp-asthma-followup",
+          "chief_complaint": "Asthma follow-up",
+          "diagnosis": "Asthma follow-up documentation",
+          "display_name": "Asthma follow-up / Asthma follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "resp-copd-followup",
+          "chief_complaint": "COPD follow-up",
+          "diagnosis": "COPD follow-up documentation",
+          "display_name": "COPD follow-up / COPD follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "resp-chronic-cough",
+          "chief_complaint": "Chronic cough",
+          "diagnosis": "Chronic cough documentation",
+          "display_name": "Chronic cough / Chronic cough documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "resp-dyspnea",
+          "chief_complaint": "Dyspnea",
+          "diagnosis": "Dyspnea documentation",
+          "display_name": "Dyspnea / Dyspnea documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "resp-wheeze",
+          "chief_complaint": "Wheeze",
+          "diagnosis": "Wheeze documentation",
+          "display_name": "Wheeze / Wheeze documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "resp-pneumonia-followup",
+          "chief_complaint": "Pneumonia follow-up",
+          "diagnosis": "Pneumonia follow-up documentation",
+          "display_name": "Pneumonia follow-up / Pneumonia follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "resp-sleep-apnea-symptoms",
+          "chief_complaint": "Sleep apnea symptoms",
+          "diagnosis": "Sleep apnea documentation",
+          "display_name": "Sleep apnea symptoms / Sleep apnea documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "resp-hemoptysis-documentation",
+          "chief_complaint": "Hemoptysis documentation",
+          "diagnosis": "Hemoptysis documentation",
+          "display_name": "Hemoptysis documentation / Hemoptysis documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "resp-smoking-history-note",
+          "chief_complaint": "Smoking history note",
+          "diagnosis": "Smoking history documentation",
+          "display_name": "Smoking history note / Smoking history documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "resp-pulmonary-function-review",
+          "chief_complaint": "Pulmonary function review",
+          "diagnosis": "Pulmonary function review documentation",
+          "display_name": "Pulmonary function review / Pulmonary function review documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        }
+      ]
+    },
+    {
+      "specialty_id": "Gastroenterology",
+      "display_name": "Gastroenterology",
+      "icon": null,
+      "workflow_count": 10,
+      "history_layout_id": "Gastroenterology",
+      "workflows": [
+        {
+          "workflow_id": "gastro-gerd",
+          "chief_complaint": "GERD",
+          "diagnosis": "GERD documentation",
+          "display_name": "GERD / GERD documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "gastro-abdominal-pain",
+          "chief_complaint": "Abdominal pain",
+          "diagnosis": "Abdominal pain documentation",
+          "display_name": "Abdominal pain / Abdominal pain documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "gastro-ibs-symptoms",
+          "chief_complaint": "IBS symptoms",
+          "diagnosis": "IBS documentation",
+          "display_name": "IBS symptoms / IBS documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "gastro-constipation",
+          "chief_complaint": "Constipation",
+          "diagnosis": "Constipation documentation",
+          "display_name": "Constipation / Constipation documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "gastro-diarrhea",
+          "chief_complaint": "Diarrhea",
+          "diagnosis": "Diarrhea documentation",
+          "display_name": "Diarrhea / Diarrhea documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "gastro-rectal-bleeding",
+          "chief_complaint": "Rectal bleeding",
+          "diagnosis": "Rectal bleeding documentation",
+          "display_name": "Rectal bleeding / Rectal bleeding documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "gastro-liver-enzyme-review",
+          "chief_complaint": "Liver enzyme review",
+          "diagnosis": "Liver enzyme review documentation",
+          "display_name": "Liver enzyme review / Liver enzyme review documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "gastro-jaundice-documentation",
+          "chief_complaint": "Jaundice documentation",
+          "diagnosis": "Jaundice documentation",
+          "display_name": "Jaundice documentation / Jaundice documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "gastro-dysphagia",
+          "chief_complaint": "Dysphagia",
+          "diagnosis": "Dysphagia documentation",
+          "display_name": "Dysphagia / Dysphagia documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "gastro-post-endoscopy-followup",
+          "chief_complaint": "Post-endoscopy follow-up",
+          "diagnosis": "Post-endoscopy follow-up documentation",
+          "display_name": "Post-endoscopy follow-up / Post-endoscopy follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        }
+      ]
+    },
+    {
+      "specialty_id": "Endocrinology",
+      "display_name": "Endocrinology",
+      "icon": null,
+      "workflow_count": 10,
+      "history_layout_id": "Endocrinology",
+      "workflows": [
+        {
+          "workflow_id": "endo-diabetes-followup",
+          "chief_complaint": "Diabetes follow-up",
+          "diagnosis": "Diabetes follow-up documentation",
+          "display_name": "Diabetes follow-up / Diabetes follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "endo-thyroid-symptoms",
+          "chief_complaint": "Thyroid symptoms",
+          "diagnosis": "Thyroid documentation",
+          "display_name": "Thyroid symptoms / Thyroid documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "endo-hypothyroidism-followup",
+          "chief_complaint": "Hypothyroidism follow-up",
+          "diagnosis": "Hypothyroidism follow-up documentation",
+          "display_name": "Hypothyroidism follow-up / Hypothyroidism follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "endo-hyperthyroidism-followup",
+          "chief_complaint": "Hyperthyroidism follow-up",
+          "diagnosis": "Hyperthyroidism follow-up documentation",
+          "display_name": "Hyperthyroidism follow-up / Hyperthyroidism follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "endo-obesity-counseling-documentation",
+          "chief_complaint": "Obesity counseling",
+          "diagnosis": "Obesity counseling documentation",
+          "display_name": "Obesity counseling / Obesity counseling documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "endo-hypoglycemia-review",
+          "chief_complaint": "Hypoglycemia review",
+          "diagnosis": "Hypoglycemia review documentation",
+          "display_name": "Hypoglycemia review / Hypoglycemia review documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "endo-pcos-metabolic-review",
+          "chief_complaint": "PCOS metabolic review",
+          "diagnosis": "PCOS metabolic review documentation",
+          "display_name": "PCOS metabolic review / PCOS metabolic review documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "endo-osteoporosis-followup",
+          "chief_complaint": "Osteoporosis follow-up",
+          "diagnosis": "Osteoporosis follow-up documentation",
+          "display_name": "Osteoporosis follow-up / Osteoporosis follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "endo-adrenal-incidentaloma-referral",
+          "chief_complaint": "Adrenal incidentaloma",
+          "diagnosis": "Adrenal incidentaloma documentation",
+          "display_name": "Adrenal incidentaloma / Adrenal incidentaloma documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "endo-pituitary-symptoms-documentation",
+          "chief_complaint": "Pituitary symptoms",
+          "diagnosis": "Pituitary symptoms documentation",
+          "display_name": "Pituitary symptoms / Pituitary symptoms documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        }
+      ]
+    },
+    {
+      "specialty_id": "Urology / Nephrology",
+      "display_name": "Urology / Nephrology",
+      "icon": null,
+      "workflow_count": 10,
+      "history_layout_id": "Urology / Nephrology",
+      "workflows": [
+        {
+          "workflow_id": "uro-dysuria-uti-symptoms",
+          "chief_complaint": "Dysuria/UTI symptoms",
+          "diagnosis": "UTI documentation",
+          "display_name": "Dysuria/UTI symptoms / UTI documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "uro-hematuria",
+          "chief_complaint": "Hematuria",
+          "diagnosis": "Hematuria documentation",
+          "display_name": "Hematuria / Hematuria documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "uro-luts-bph",
+          "chief_complaint": "LUTS/BPH",
+          "diagnosis": "LUTS/BPH documentation",
+          "display_name": "LUTS/BPH / LUTS/BPH documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "uro-renal-colic-followup",
+          "chief_complaint": "Renal colic follow-up",
+          "diagnosis": "Renal colic follow-up documentation",
+          "display_name": "Renal colic follow-up / Renal colic follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "uro-urinary-retention-documentation",
+          "chief_complaint": "Urinary retention",
+          "diagnosis": "Urinary retention documentation",
+          "display_name": "Urinary retention / Urinary retention documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "uro-flank-pain",
+          "chief_complaint": "Flank pain",
+          "diagnosis": "Flank pain documentation",
+          "display_name": "Flank pain / Flank pain documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "uro-frequency-urgency",
+          "chief_complaint": "Frequency/urgency",
+          "diagnosis": "Frequency/urgency documentation",
+          "display_name": "Frequency/urgency / Frequency/urgency documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "neph-ckd-followup",
+          "chief_complaint": "CKD follow-up",
+          "diagnosis": "CKD follow-up documentation",
+          "display_name": "CKD follow-up / CKD follow-up documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "neph-proteinuria",
+          "chief_complaint": "Proteinuria",
+          "diagnosis": "Proteinuria documentation",
+          "display_name": "Proteinuria / Proteinuria documentation",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "neph-electrolyte-abnormality-review",
+          "chief_complaint": "Electrolyte abnormality",
+          "diagnosis": "Electrolyte abnormality documentation",
+          "display_name": "Electrolyte abnormality / Electrolyte abnormality documentation",
+          "chip_groups": [
+            "symptoms",
+            "exam_findings",
+            "investigations",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": null,
+            "icd_code": null,
+            "icd_label": "unverified",
             "icd_verified": false,
             "icd_source": null
           }
@@ -46765,8 +48555,8 @@
         ]
       },
       "chief_complaint_aliases": [
-        "injury documentation",
-        "fall documentation"
+        "injury",
+        "trauma"
       ],
       "diagnosis_aliases": [
         "injury",
@@ -52046,9 +53836,7 @@
         ]
       },
       "chief_complaint_aliases": [
-        "chest pain",
-        "cardiac chest pain",
-        "angina symptoms",
+        "chest discomfort",
         "chest tightness"
       ],
       "diagnosis_aliases": [
@@ -155873,7 +157661,7 @@
     },
     {
       "entry_id": "sx-urgent-trauma",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Trauma / injury",
       "aliases": [
         "injury",
@@ -155895,7 +157683,7 @@
     },
     {
       "entry_id": "sx-urgent-wound",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Wound / laceration",
       "aliases": [
         "wound",
@@ -155940,7 +157728,7 @@
     },
     {
       "entry_id": "sx-urgent-burn",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Burn / thermal injury",
       "aliases": [
         "burn",
@@ -155985,7 +157773,7 @@
     },
     {
       "entry_id": "sx-urgent-allergy",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Allergy / rash",
       "aliases": [
         "allergy",
@@ -156031,7 +157819,7 @@
     },
     {
       "entry_id": "sx-urgent-head",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Head trauma / injury",
       "aliases": [
         "head injury",
@@ -156077,7 +157865,7 @@
     },
     {
       "entry_id": "sx-urgent-cp",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Chest discomfort",
       "aliases": [
         "chest discomfort",
@@ -156122,7 +157910,7 @@
     },
     {
       "entry_id": "sx-urgent-sob",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Acute dyspnea",
       "aliases": [
         "dyspnea",
@@ -156167,7 +157955,7 @@
     },
     {
       "entry_id": "sx-urgent-abd",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Acute abdominal pain",
       "aliases": [
         "acute abdomen",
@@ -156212,7 +158000,7 @@
     },
     {
       "entry_id": "sx-urgent-syncope",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Collapse / fainting",
       "aliases": [
         "collapse",
@@ -156258,7 +158046,7 @@
     },
     {
       "entry_id": "sx-urgent-fever",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Fever / pyrexia",
       "aliases": [
         "fever",
@@ -156351,7 +158139,7 @@
     },
     {
       "entry_id": "sx-cardio-cp",
-      "type": "symptom",
+      "type": "chief_complaint",
       "label": "Chest discomfort",
       "aliases": [
         "chest discomfort",
@@ -160733,6 +162521,1059 @@
           ]
         }
       ]
+    },
+    "Cardiology": {
+      "history_layout_id": "Cardiology",
+      "display_name": "Cardiology",
+      "sections": [
+        {
+          "section_id": "hpi",
+          "display_name": "History of Presenting Complaint",
+          "order": 1,
+          "description": "core|free_text",
+          "fields": [
+            {
+              "field_id": "chief_complaint",
+              "prompt": "Chief complaint",
+              "type": "text",
+              "placeholder": "e.g. chest pain, palpitations, dyspnea",
+              "required": true,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "duration",
+              "prompt": "Duration",
+              "type": "text",
+              "placeholder": "e.g. 3 days, 2 weeks",
+              "required": true,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "onset",
+              "prompt": "Onset",
+              "type": "select",
+              "placeholder": "",
+              "required": false,
+              "options": [
+                "Acute|Gradual|Intermittent|Constant"
+              ],
+              "emergency_only": false
+            },
+            {
+              "field_id": "severity",
+              "prompt": "Severity",
+              "type": "number",
+              "placeholder": "",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "context",
+              "prompt": "Context",
+              "type": "text",
+              "placeholder": "e.g. exertional, at rest, positional",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "associated_symptoms",
+          "display_name": "Associated Symptoms",
+          "order": 2,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "positive_symptoms",
+              "prompt": "Cardiac symptoms",
+              "type": "text",
+              "placeholder": "Chest pain, SOB, palpitations, oedema",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "relevant_negatives",
+              "prompt": "Relevant negatives reviewed",
+              "type": "text",
+              "placeholder": "Key negative symptoms",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "social",
+          "display_name": "Social History",
+          "order": 3,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "smoking",
+              "prompt": "Smoking",
+              "type": "text",
+              "placeholder": "e.g. 10 pack years",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "alcohol",
+              "prompt": "Alcohol",
+              "type": "text",
+              "placeholder": "e.g. Social, none",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "occupation",
+              "prompt": "Occupation",
+              "type": "text",
+              "placeholder": "e.g. Teacher, Retired",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "pmh",
+          "display_name": "Past Medical History",
+          "order": 4,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "pmh",
+              "prompt": "Past medical history",
+              "type": "text",
+              "placeholder": "Relevant conditions",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "medications",
+              "prompt": "Medications",
+              "type": "text",
+              "placeholder": "Current medications",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "allergies",
+              "prompt": "Allergies",
+              "type": "text",
+              "placeholder": "Drug allergies",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "cardiac_review",
+          "display_name": "Cardiac Review",
+          "order": 5,
+          "description": "specialty|structured_section",
+          "fields": [
+            {
+              "field_id": "exercise_tolerance",
+              "prompt": "Exercise tolerance",
+              "type": "text",
+              "placeholder": "e.g. MRC grade, activities limited",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "risk_factors",
+              "prompt": "Cardiovascular risk factors",
+              "type": "text",
+              "placeholder": "HTN, DM, lipids, family history",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        }
+      ]
+    },
+    "Neurology": {
+      "history_layout_id": "Neurology",
+      "display_name": "Neurology",
+      "sections": [
+        {
+          "section_id": "hpi",
+          "display_name": "History of Presenting Complaint",
+          "order": 1,
+          "description": "core|free_text",
+          "fields": [
+            {
+              "field_id": "chief_complaint",
+              "prompt": "Chief complaint",
+              "type": "text",
+              "placeholder": "e.g. headache, weakness, numbness, dizziness",
+              "required": true,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "duration",
+              "prompt": "Duration",
+              "type": "text",
+              "placeholder": "e.g. 3 days, 2 weeks",
+              "required": true,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "onset",
+              "prompt": "Onset",
+              "type": "select",
+              "placeholder": "",
+              "required": false,
+              "options": [
+                "Acute|Gradual|Intermittent|Constant"
+              ],
+              "emergency_only": false
+            },
+            {
+              "field_id": "severity",
+              "prompt": "Severity",
+              "type": "number",
+              "placeholder": "",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "context",
+              "prompt": "Context",
+              "type": "text",
+              "placeholder": "e.g. onset pattern, progression",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "associated_symptoms",
+          "display_name": "Associated Symptoms",
+          "order": 2,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "positive_symptoms",
+              "prompt": "Neurological symptoms",
+              "type": "text",
+              "placeholder": "Sensory, motor, speech, vision, coordination",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "relevant_negatives",
+              "prompt": "Relevant negatives reviewed",
+              "type": "text",
+              "placeholder": "Key negative symptoms",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "social",
+          "display_name": "Social History",
+          "order": 3,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "smoking",
+              "prompt": "Smoking",
+              "type": "text",
+              "placeholder": "e.g. 10 pack years",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "alcohol",
+              "prompt": "Alcohol",
+              "type": "text",
+              "placeholder": "e.g. Social, none",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "occupation",
+              "prompt": "Occupation",
+              "type": "text",
+              "placeholder": "e.g. Teacher, Retired",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "pmh",
+          "display_name": "Past Medical History",
+          "order": 4,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "pmh",
+              "prompt": "Past medical history",
+              "type": "text",
+              "placeholder": "Relevant conditions",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "medications",
+              "prompt": "Medications",
+              "type": "text",
+              "placeholder": "Current medications",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "allergies",
+              "prompt": "Allergies",
+              "type": "text",
+              "placeholder": "Drug allergies",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "neuro_review",
+          "display_name": "Neurological Review",
+          "order": 5,
+          "description": "specialty|structured_section",
+          "fields": [
+            {
+              "field_id": "neuro_exam_context",
+              "prompt": "Neurological examination context",
+              "type": "text",
+              "placeholder": "CN, power, sensation, coordination, gait",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        }
+      ]
+    },
+    "Respiratory / Pulmonology": {
+      "history_layout_id": "Respiratory / Pulmonology",
+      "display_name": "Respiratory / Pulmonology",
+      "sections": [
+        {
+          "section_id": "hpi",
+          "display_name": "History of Presenting Complaint",
+          "order": 1,
+          "description": "core|free_text",
+          "fields": [
+            {
+              "field_id": "chief_complaint",
+              "prompt": "Chief complaint",
+              "type": "text",
+              "placeholder": "e.g. cough, dyspnea, wheeze, hemoptysis",
+              "required": true,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "duration",
+              "prompt": "Duration",
+              "type": "text",
+              "placeholder": "e.g. 3 days, 2 weeks",
+              "required": true,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "onset",
+              "prompt": "Onset",
+              "type": "select",
+              "placeholder": "",
+              "required": false,
+              "options": [
+                "Acute|Gradual|Intermittent|Constant"
+              ],
+              "emergency_only": false
+            },
+            {
+              "field_id": "severity",
+              "prompt": "Severity",
+              "type": "number",
+              "placeholder": "",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "context",
+              "prompt": "Context",
+              "type": "text",
+              "placeholder": "e.g. exertional, nocturnal, positional",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "associated_symptoms",
+          "display_name": "Associated Symptoms",
+          "order": 2,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "positive_symptoms",
+              "prompt": "Respiratory symptoms",
+              "type": "text",
+              "placeholder": "Cough, sputum, SOB, wheeze, chest pain",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "relevant_negatives",
+              "prompt": "Relevant negatives reviewed",
+              "type": "text",
+              "placeholder": "Key negative symptoms",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "social",
+          "display_name": "Social History",
+          "order": 3,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "smoking",
+              "prompt": "Smoking",
+              "type": "text",
+              "placeholder": "e.g. 10 pack years",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "alcohol",
+              "prompt": "Alcohol",
+              "type": "text",
+              "placeholder": "e.g. Social, none",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "occupation",
+              "prompt": "Occupation",
+              "type": "text",
+              "placeholder": "e.g. Teacher, Retired",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "pmh",
+          "display_name": "Past Medical History",
+          "order": 4,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "pmh",
+              "prompt": "Past medical history",
+              "type": "text",
+              "placeholder": "Relevant conditions",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "medications",
+              "prompt": "Medications",
+              "type": "text",
+              "placeholder": "Current medications",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "allergies",
+              "prompt": "Allergies",
+              "type": "text",
+              "placeholder": "Drug allergies",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "resp_review",
+          "display_name": "Respiratory Review",
+          "order": 5,
+          "description": "specialty|structured_section",
+          "fields": [
+            {
+              "field_id": "smoking_exposure",
+              "prompt": "Smoking/occupational exposure",
+              "type": "text",
+              "placeholder": "Pack years, occupational hazards",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        }
+      ]
+    },
+    "Gastroenterology": {
+      "history_layout_id": "Gastroenterology",
+      "display_name": "Gastroenterology",
+      "sections": [
+        {
+          "section_id": "hpi",
+          "display_name": "History of Presenting Complaint",
+          "order": 1,
+          "description": "core|free_text",
+          "fields": [
+            {
+              "field_id": "chief_complaint",
+              "prompt": "Chief complaint",
+              "type": "text",
+              "placeholder": "e.g. abdominal pain, reflux, diarrhoea, jaundice",
+              "required": true,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "duration",
+              "prompt": "Duration",
+              "type": "text",
+              "placeholder": "e.g. 3 days, 2 weeks",
+              "required": true,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "onset",
+              "prompt": "Onset",
+              "type": "select",
+              "placeholder": "",
+              "required": false,
+              "options": [
+                "Acute|Gradual|Intermittent|Constant"
+              ],
+              "emergency_only": false
+            },
+            {
+              "field_id": "severity",
+              "prompt": "Severity",
+              "type": "number",
+              "placeholder": "",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "context",
+              "prompt": "Context",
+              "type": "text",
+              "placeholder": "e.g. relation to meals, bowel habit",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "associated_symptoms",
+          "display_name": "Associated Symptoms",
+          "order": 2,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "positive_symptoms",
+              "prompt": "GI symptoms",
+              "type": "text",
+              "placeholder": "Pain, nausea, vomiting, bowel changes, bleeding",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "relevant_negatives",
+              "prompt": "Relevant negatives reviewed",
+              "type": "text",
+              "placeholder": "Key negative symptoms",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "social",
+          "display_name": "Social History",
+          "order": 3,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "smoking",
+              "prompt": "Smoking",
+              "type": "text",
+              "placeholder": "e.g. 10 pack years",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "alcohol",
+              "prompt": "Alcohol",
+              "type": "text",
+              "placeholder": "e.g. Social, none",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "occupation",
+              "prompt": "Occupation",
+              "type": "text",
+              "placeholder": "e.g. Teacher, Retired",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "pmh",
+          "display_name": "Past Medical History",
+          "order": 4,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "pmh",
+              "prompt": "Past medical history",
+              "type": "text",
+              "placeholder": "Relevant conditions",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "medications",
+              "prompt": "Medications",
+              "type": "text",
+              "placeholder": "Current medications",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "allergies",
+              "prompt": "Allergies",
+              "type": "text",
+              "placeholder": "Drug allergies",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "gi_review",
+          "display_name": "GI Review",
+          "order": 5,
+          "description": "specialty|structured_section",
+          "fields": [
+            {
+              "field_id": "gi_risk_factors",
+              "prompt": "GI risk factors",
+              "type": "text",
+              "placeholder": "NSAIDs, alcohol, travel, family history",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        }
+      ]
+    },
+    "Endocrinology": {
+      "history_layout_id": "Endocrinology",
+      "display_name": "Endocrinology",
+      "sections": [
+        {
+          "section_id": "hpi",
+          "display_name": "History of Presenting Complaint",
+          "order": 1,
+          "description": "core|free_text",
+          "fields": [
+            {
+              "field_id": "chief_complaint",
+              "prompt": "Chief complaint",
+              "type": "text",
+              "placeholder": "e.g. diabetes, thyroid, weight change, fatigue",
+              "required": true,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "duration",
+              "prompt": "Duration",
+              "type": "text",
+              "placeholder": "e.g. 3 days, 2 weeks",
+              "required": true,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "onset",
+              "prompt": "Onset",
+              "type": "select",
+              "placeholder": "",
+              "required": false,
+              "options": [
+                "Acute|Gradual|Intermittent|Constant"
+              ],
+              "emergency_only": false
+            },
+            {
+              "field_id": "severity",
+              "prompt": "Severity",
+              "type": "number",
+              "placeholder": "",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "context",
+              "prompt": "Context",
+              "type": "text",
+              "placeholder": "e.g. medication changes, lifestyle",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "associated_symptoms",
+          "display_name": "Associated Symptoms",
+          "order": 2,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "positive_symptoms",
+              "prompt": "Endocrine symptoms",
+              "type": "text",
+              "placeholder": "Glucose, thyroid, weight, energy, menstrual",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "relevant_negatives",
+              "prompt": "Relevant negatives reviewed",
+              "type": "text",
+              "placeholder": "Key negative symptoms",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "social",
+          "display_name": "Social History",
+          "order": 3,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "smoking",
+              "prompt": "Smoking",
+              "type": "text",
+              "placeholder": "e.g. 10 pack years",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "alcohol",
+              "prompt": "Alcohol",
+              "type": "text",
+              "placeholder": "e.g. Social, none",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "occupation",
+              "prompt": "Occupation",
+              "type": "text",
+              "placeholder": "e.g. Teacher, Retired",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "pmh",
+          "display_name": "Past Medical History",
+          "order": 4,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "pmh",
+              "prompt": "Past medical history",
+              "type": "text",
+              "placeholder": "Relevant conditions",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "medications",
+              "prompt": "Medications",
+              "type": "text",
+              "placeholder": "Current medications",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "allergies",
+              "prompt": "Allergies",
+              "type": "text",
+              "placeholder": "Drug allergies",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "endo_review",
+          "display_name": "Endocrine Review",
+          "order": 5,
+          "description": "specialty|structured_section",
+          "fields": [
+            {
+              "field_id": "medication_adherence",
+              "prompt": "Medication adherence context",
+              "type": "text",
+              "placeholder": "Adherence issues, side effects",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        }
+      ]
+    },
+    "Urology / Nephrology": {
+      "history_layout_id": "Urology / Nephrology",
+      "display_name": "Urology / Nephrology",
+      "sections": [
+        {
+          "section_id": "hpi",
+          "display_name": "History of Presenting Complaint",
+          "order": 1,
+          "description": "core|free_text",
+          "fields": [
+            {
+              "field_id": "chief_complaint",
+              "prompt": "Chief complaint",
+              "type": "text",
+              "placeholder": "e.g. urinary symptoms, flank pain, hematuria",
+              "required": true,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "duration",
+              "prompt": "Duration",
+              "type": "text",
+              "placeholder": "e.g. 3 days, 2 weeks",
+              "required": true,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "onset",
+              "prompt": "Onset",
+              "type": "select",
+              "placeholder": "",
+              "required": false,
+              "options": [
+                "Acute|Gradual|Intermittent|Constant"
+              ],
+              "emergency_only": false
+            },
+            {
+              "field_id": "severity",
+              "prompt": "Severity",
+              "type": "number",
+              "placeholder": "",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "context",
+              "prompt": "Context",
+              "type": "text",
+              "placeholder": "e.g. voiding pattern, fluid intake",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "associated_symptoms",
+          "display_name": "Associated Symptoms",
+          "order": 2,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "positive_symptoms",
+              "prompt": "Urological/renal symptoms",
+              "type": "text",
+              "placeholder": "Dysuria, frequency, haematuria, flank pain, oedema",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "relevant_negatives",
+              "prompt": "Relevant negatives reviewed",
+              "type": "text",
+              "placeholder": "Key negative symptoms",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "social",
+          "display_name": "Social History",
+          "order": 3,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "smoking",
+              "prompt": "Smoking",
+              "type": "text",
+              "placeholder": "e.g. 10 pack years",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "alcohol",
+              "prompt": "Alcohol",
+              "type": "text",
+              "placeholder": "e.g. Social, none",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "occupation",
+              "prompt": "Occupation",
+              "type": "text",
+              "placeholder": "e.g. Teacher, Retired",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "pmh",
+          "display_name": "Past Medical History",
+          "order": 4,
+          "description": "core|structured_section",
+          "fields": [
+            {
+              "field_id": "pmh",
+              "prompt": "Past medical history",
+              "type": "text",
+              "placeholder": "Relevant conditions",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "medications",
+              "prompt": "Medications",
+              "type": "text",
+              "placeholder": "Current medications",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            },
+            {
+              "field_id": "allergies",
+              "prompt": "Allergies",
+              "type": "text",
+              "placeholder": "Drug allergies",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        },
+        {
+          "section_id": "renal_review",
+          "display_name": "Renal/Urology Review",
+          "order": 5,
+          "description": "specialty|structured_section",
+          "fields": [
+            {
+              "field_id": "renal_risk",
+              "prompt": "Renal risk factors",
+              "type": "text",
+              "placeholder": "CKD, DM, HTN, medications",
+              "required": false,
+              "options": [],
+              "emergency_only": false
+            }
+          ]
+        }
+      ]
     }
   },
   "reportTemplates": {
@@ -161816,6 +164657,1940 @@
         }
       ]
     }
+  },
+  "calculators": {
+    "bmi": {
+      "calculator_id": "bmi",
+      "calculator_name": "BMI",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "weight review",
+        "diabetes follow-up",
+        "hypertension follow-up"
+      ],
+      "related_workflow_ids": [
+        "gp-diabetes-followup",
+        "gp-hypertension-followup"
+      ],
+      "purpose": "Documentation context for body mass index when height and weight are clinician-entered.",
+      "clinical_context": "May be relevant when a clinician documents metabolic, weight, diabetes, or hypertension follow-up context.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "height",
+          "label": "Height",
+          "input_type": "number",
+          "units": "cm",
+          "required": true,
+          "safety_note": "Use clinician-entered measurements only."
+        },
+        {
+          "field_id": "weight",
+          "label": "Weight",
+          "input_type": "number",
+          "units": "kg",
+          "required": true,
+          "safety_note": "Use clinician-entered measurements only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "bmi_value",
+          "label": "BMI value",
+          "output_type": "number",
+          "safety_note": "Future output requires clinician interpretation."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "Registry only. No formula or interpretation is implemented.",
+      "display_conditions": [
+        "Show only if the clinician opens a future calculator tool."
+      ],
+      "review_required": true
+    },
+    "pack_years": {
+      "calculator_id": "pack_years",
+      "calculator_name": "Pack years",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "cough",
+        "shortness of breath",
+        "smoking history",
+        "respiratory review"
+      ],
+      "related_workflow_ids": [
+        "gp-cough",
+        "gp-shortness-of-breath"
+      ],
+      "purpose": "Documentation context for smoking exposure when clinician-entered tobacco history is available.",
+      "clinical_context": "May be relevant for respiratory, cardiovascular, and general medical documentation.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "packs_per_day",
+          "label": "Packs per day",
+          "input_type": "number",
+          "units": "packs/day",
+          "required": true,
+          "safety_note": "Use clinician-entered smoking history only."
+        },
+        {
+          "field_id": "years_smoked",
+          "label": "Years smoked",
+          "input_type": "number",
+          "units": "years",
+          "required": true,
+          "safety_note": "Use clinician-entered smoking history only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "pack_year_value",
+          "label": "Pack-year value",
+          "output_type": "number",
+          "safety_note": "Future output is documentation context only."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "Registry only. Does not create risk conclusions or advice.",
+      "display_conditions": [
+        "Show only when smoking exposure documentation is relevant and clinician-entered."
+      ],
+      "review_required": true
+    },
+    "mean_arterial_pressure": {
+      "calculator_id": "mean_arterial_pressure",
+      "calculator_name": "Mean arterial pressure",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "blood pressure review",
+        "hypertension follow-up",
+        "acute observation context"
+      ],
+      "related_workflow_ids": [
+        "gp-hypertension-followup"
+      ],
+      "purpose": "Documentation context for blood pressure-derived observation value when clinician-entered readings are available.",
+      "clinical_context": "May be relevant when vital signs are documented.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "systolic_bp",
+          "label": "Systolic blood pressure",
+          "input_type": "number",
+          "units": "mmHg",
+          "required": true,
+          "safety_note": "Use clinician-entered observation values only."
+        },
+        {
+          "field_id": "diastolic_bp",
+          "label": "Diastolic blood pressure",
+          "input_type": "number",
+          "units": "mmHg",
+          "required": true,
+          "safety_note": "Use clinician-entered observation values only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "map_value",
+          "label": "Mean arterial pressure value",
+          "output_type": "number",
+          "safety_note": "Future output requires clinician interpretation."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "Registry only. No action threshold or calculation is implemented.",
+      "display_conditions": [
+        "Show only when blood pressure observations are clinician-entered."
+      ],
+      "review_required": true
+    },
+    "shock_index": {
+      "calculator_id": "shock_index",
+      "calculator_name": "Shock index",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "acute illness",
+        "vital signs review",
+        "dizziness",
+        "bleeding context"
+      ],
+      "related_workflow_ids": [
+        "gp-fatigue"
+      ],
+      "purpose": "Documentation context for a vital-sign relationship when pulse and blood pressure are clinician-entered.",
+      "clinical_context": "May be relevant in future urgent-care documentation workflows after source review.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "heart_rate",
+          "label": "Heart rate",
+          "input_type": "number",
+          "units": "beats/min",
+          "required": true,
+          "safety_note": "Use clinician-entered observation values only."
+        },
+        {
+          "field_id": "systolic_bp",
+          "label": "Systolic blood pressure",
+          "input_type": "number",
+          "units": "mmHg",
+          "required": true,
+          "safety_note": "Use clinician-entered observation values only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "shock_index_value",
+          "label": "Shock index value",
+          "output_type": "number",
+          "safety_note": "Future output requires clinician interpretation."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "Registry only. No clinical action or threshold is implemented.",
+      "display_conditions": [
+        "Show only if vital sign context is clinician-entered."
+      ],
+      "review_required": true
+    },
+    "mrc_dyspnea_scale": {
+      "calculator_id": "mrc_dyspnea_scale",
+      "calculator_name": "MRC dyspnea scale",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "shortness of breath",
+        "dyspnea",
+        "respiratory review"
+      ],
+      "related_workflow_ids": [
+        "gp-shortness-of-breath",
+        "gp-cough"
+      ],
+      "purpose": "Documentation context for breathlessness severity when clinician-entered functional limitation is available.",
+      "clinical_context": "May be relevant when documenting dyspnea impact.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "dyspnea_description",
+          "label": "Dyspnea functional description",
+          "input_type": "select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "clinician-entered option 1",
+            "clinician-entered option 2",
+            "clinician-entered option 3",
+            "clinician-entered option 4",
+            "clinician-entered option 5"
+          ],
+          "safety_note": "Option wording requires source review before implementation."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "mrc_grade",
+          "label": "MRC dyspnea grade",
+          "output_type": "score",
+          "safety_note": "Future output requires clinician interpretation."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "Registry only. Scale wording and source version are not implemented.",
+      "display_conditions": [
+        "Show only when breathlessness impact is being documented."
+      ],
+      "review_required": true
+    },
+    "phq_2": {
+      "calculator_id": "phq_2",
+      "calculator_name": "PHQ-2",
+      "specialty": "Psychiatry / Mental Health",
+      "related_complaints": [
+        "low mood",
+        "depression screening",
+        "mental health review"
+      ],
+      "related_workflow_ids": [
+        "psych-low-mood"
+      ],
+      "purpose": "Documentation context for brief low-mood screening responses when clinician-entered.",
+      "clinical_context": "May be relevant for mental health documentation after source review.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "interest_response",
+          "label": "Interest or pleasure response",
+          "input_type": "select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "not entered",
+            "response option requires source review"
+          ],
+          "safety_note": "Question wording and response values require source review."
+        },
+        {
+          "field_id": "mood_response",
+          "label": "Mood response",
+          "input_type": "select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "not entered",
+            "response option requires source review"
+          ],
+          "safety_note": "Question wording and response values require source review."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "phq_2_score",
+          "label": "PHQ-2 score",
+          "output_type": "score",
+          "safety_note": "Future output is not a diagnosis and requires clinician interpretation."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "Registry only. Not a diagnosis tool and no scoring is implemented.",
+      "display_conditions": [
+        "Show only when a clinician chooses to document mood screening."
+      ],
+      "review_required": true
+    },
+    "phq_9": {
+      "calculator_id": "phq_9",
+      "calculator_name": "PHQ-9",
+      "specialty": "Psychiatry / Mental Health",
+      "related_complaints": [
+        "low mood",
+        "depression screening",
+        "mental health review"
+      ],
+      "related_workflow_ids": [
+        "psych-low-mood"
+      ],
+      "purpose": "Documentation context for clinician-entered depression questionnaire responses.",
+      "clinical_context": "May be relevant when documenting a structured mood questionnaire.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "phq_9_responses",
+          "label": "PHQ-9 item responses",
+          "input_type": "multi_select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "responses require source review before implementation"
+          ],
+          "safety_note": "Item wording and response values require source review."
+        },
+        {
+          "field_id": "self_harm_item_context",
+          "label": "Self-harm item context if clinician-entered",
+          "input_type": "text",
+          "units": null,
+          "required": false,
+          "safety_note": "Sensitive item; future implementation must preserve clinician control and local safety process."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "phq_9_score",
+          "label": "PHQ-9 score",
+          "output_type": "score",
+          "safety_note": "Future output is not a diagnosis and requires clinician interpretation."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "Registry only. No scoring, severity label, or action advice is implemented.",
+      "display_conditions": [
+        "Show only when a clinician chooses to document PHQ-9 responses."
+      ],
+      "review_required": true
+    },
+    "gad_7": {
+      "calculator_id": "gad_7",
+      "calculator_name": "GAD-7",
+      "specialty": "Psychiatry / Mental Health",
+      "related_complaints": [
+        "anxiety symptoms",
+        "worry",
+        "mental health review"
+      ],
+      "related_workflow_ids": [
+        "psych-anxiety"
+      ],
+      "purpose": "Documentation context for clinician-entered anxiety questionnaire responses.",
+      "clinical_context": "May be relevant when documenting anxiety symptom screening.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "gad_7_responses",
+          "label": "GAD-7 item responses",
+          "input_type": "multi_select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "responses require source review before implementation"
+          ],
+          "safety_note": "Item wording and response values require source review."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "gad_7_score",
+          "label": "GAD-7 score",
+          "output_type": "score",
+          "safety_note": "Future output is not a diagnosis and requires clinician interpretation."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "Registry only. No scoring or action advice is implemented.",
+      "display_conditions": [
+        "Show only when a clinician chooses to document GAD-7 responses."
+      ],
+      "review_required": true
+    },
+    "epworth_sleepiness_scale": {
+      "calculator_id": "epworth_sleepiness_scale",
+      "calculator_name": "Epworth Sleepiness Scale",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "sleep difficulty",
+        "daytime sleepiness",
+        "fatigue"
+      ],
+      "related_workflow_ids": [
+        "psych-sleep-difficulty",
+        "gp-fatigue"
+      ],
+      "purpose": "Documentation context for clinician-entered daytime sleepiness questionnaire responses.",
+      "clinical_context": "May be relevant when documenting sleepiness symptoms.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "epworth_responses",
+          "label": "Epworth item responses",
+          "input_type": "multi_select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "responses require source review before implementation"
+          ],
+          "safety_note": "Item wording and response values require source review."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "epworth_score",
+          "label": "Epworth score",
+          "output_type": "score",
+          "safety_note": "Future output requires clinician interpretation."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "Registry only. No scoring or advice is implemented.",
+      "display_conditions": [
+        "Show only when sleepiness questionnaire documentation is clinician-selected."
+      ],
+      "review_required": true
+    },
+    "ipss": {
+      "calculator_id": "ipss",
+      "calculator_name": "IPSS",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "lower urinary tract symptoms",
+        "urinary frequency",
+        "nocturia"
+      ],
+      "related_workflow_ids": [],
+      "purpose": "Documentation context for clinician-entered urinary symptom questionnaire responses.",
+      "clinical_context": "May be relevant for future lower urinary tract symptom workflows.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "ipss_responses",
+          "label": "IPSS item responses",
+          "input_type": "multi_select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "responses require source review before implementation"
+          ],
+          "safety_note": "Item wording and response values require source review."
+        },
+        {
+          "field_id": "quality_of_life_response",
+          "label": "Quality of life response",
+          "input_type": "select",
+          "units": null,
+          "required": false,
+          "allowed_values": [
+            "response options require source review before implementation"
+          ],
+          "safety_note": "Response wording requires source review."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "ipss_score",
+          "label": "IPSS score",
+          "output_type": "score",
+          "safety_note": "Future output requires clinician interpretation."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "Registry only. No scoring, diagnosis, or treatment advice is implemented.",
+      "display_conditions": [
+        "Show only when urinary symptom questionnaire documentation is clinician-selected."
+      ],
+      "review_required": true
+    },
+    "heart_score": {
+      "calculator_id": "heart_score",
+      "calculator_name": "HEART Score",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "chest pain",
+        "chest discomfort"
+      ],
+      "related_workflow_ids": [
+        "gp-chest-pain"
+      ],
+      "purpose": "Registry placeholder for future clinician-entered chest pain risk documentation.",
+      "clinical_context": "May be relevant for future urgent chest pain documentation after source and implementation review.",
+      "risk_level": "high",
+      "implementation_status": "registry_only",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "history_component",
+          "label": "History component",
+          "input_type": "select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "values require source review before implementation"
+          ],
+          "safety_note": "Component definitions require source verification."
+        },
+        {
+          "field_id": "ecg_component",
+          "label": "ECG component",
+          "input_type": "select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "values require source review before implementation"
+          ],
+          "safety_note": "Use clinician-entered ECG interpretation only."
+        },
+        {
+          "field_id": "age_component",
+          "label": "Age component",
+          "input_type": "select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "values require source review before implementation"
+          ],
+          "safety_note": "No date of birth should be entered."
+        },
+        {
+          "field_id": "risk_factor_component",
+          "label": "Risk factor component",
+          "input_type": "select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "values require source review before implementation"
+          ],
+          "safety_note": "Use clinician-entered risk factor context only."
+        },
+        {
+          "field_id": "troponin_component",
+          "label": "Troponin component",
+          "input_type": "select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "values require source review before implementation"
+          ],
+          "safety_note": "Use clinician-entered lab interpretation only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "heart_score_value",
+          "label": "HEART score",
+          "output_type": "score",
+          "safety_note": "Future output requires clinician interpretation and source verification."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "High-risk registry item. No score, threshold, or disposition advice is implemented.",
+      "display_conditions": [
+        "Show only in future reviewed chest pain documentation context."
+      ],
+      "review_required": true
+    },
+    "cha2ds2_vasc": {
+      "calculator_id": "cha2ds2_vasc",
+      "calculator_name": "CHA2DS2-VASc",
+      "specialty": "Cardiology",
+      "related_complaints": [
+        "atrial fibrillation",
+        "palpitations",
+        "stroke risk documentation"
+      ],
+      "related_workflow_ids": [
+        "gp-palpitations"
+      ],
+      "purpose": "Registry placeholder for future clinician-entered thromboembolic risk documentation.",
+      "clinical_context": "May be relevant for future atrial fibrillation documentation after source review.",
+      "risk_level": "high",
+      "implementation_status": "registry_only",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "risk_components",
+          "label": "Risk components",
+          "input_type": "multi_select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "components require source review before implementation"
+          ],
+          "safety_note": "Component definitions require source verification."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "cha2ds2_vasc_score",
+          "label": "CHA2DS2-VASc score",
+          "output_type": "score",
+          "safety_note": "Future output must not recommend anticoagulation or treatment."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "High-risk registry item. No treatment advice is implemented.",
+      "display_conditions": [
+        "Show only in future reviewed atrial fibrillation documentation context."
+      ],
+      "review_required": true
+    },
+    "has_bled": {
+      "calculator_id": "has_bled",
+      "calculator_name": "HAS-BLED",
+      "specialty": "Cardiology",
+      "related_complaints": [
+        "atrial fibrillation",
+        "bleeding risk documentation",
+        "anticoagulation review"
+      ],
+      "related_workflow_ids": [
+        "gp-palpitations"
+      ],
+      "purpose": "Registry placeholder for future clinician-entered bleeding risk documentation.",
+      "clinical_context": "May be relevant for future anticoagulation documentation after source review.",
+      "risk_level": "high",
+      "implementation_status": "registry_only",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "bleeding_risk_components",
+          "label": "Bleeding risk components",
+          "input_type": "multi_select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "components require source review before implementation"
+          ],
+          "safety_note": "Component definitions require source verification."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "has_bled_score",
+          "label": "HAS-BLED score",
+          "output_type": "score",
+          "safety_note": "Future output requires clinician interpretation and does not provide treatment advice."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "High-risk registry item. No treatment or medication advice is implemented.",
+      "display_conditions": [
+        "Show only in future reviewed bleeding risk documentation context."
+      ],
+      "review_required": true
+    },
+    "wells_pe": {
+      "calculator_id": "wells_pe",
+      "calculator_name": "Wells PE",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "shortness of breath",
+        "chest pain",
+        "pulmonary embolism consideration"
+      ],
+      "related_workflow_ids": [
+        "gp-shortness-of-breath",
+        "gp-chest-pain"
+      ],
+      "purpose": "Registry placeholder for future clinician-entered pulmonary embolism probability documentation.",
+      "clinical_context": "May be relevant for future urgent chest pain or dyspnea documentation after source review.",
+      "risk_level": "high",
+      "implementation_status": "registry_only",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "wells_pe_components",
+          "label": "Wells PE components",
+          "input_type": "multi_select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "components require source review before implementation"
+          ],
+          "safety_note": "Component definitions require source verification."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "wells_pe_score",
+          "label": "Wells PE score",
+          "output_type": "score",
+          "safety_note": "Future output requires clinician interpretation and must not direct investigation or treatment."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "High-risk registry item. No threshold or action advice is implemented.",
+      "display_conditions": [
+        "Show only in future reviewed dyspnea or chest pain documentation context."
+      ],
+      "review_required": true
+    },
+    "wells_dvt": {
+      "calculator_id": "wells_dvt",
+      "calculator_name": "Wells DVT",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "leg swelling",
+        "calf pain",
+        "deep vein thrombosis consideration"
+      ],
+      "related_workflow_ids": [],
+      "purpose": "Registry placeholder for future clinician-entered DVT probability documentation.",
+      "clinical_context": "May be relevant for future leg swelling or calf pain workflows after source review.",
+      "risk_level": "high",
+      "implementation_status": "registry_only",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "wells_dvt_components",
+          "label": "Wells DVT components",
+          "input_type": "multi_select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "components require source review before implementation"
+          ],
+          "safety_note": "Component definitions require source verification."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "wells_dvt_score",
+          "label": "Wells DVT score",
+          "output_type": "score",
+          "safety_note": "Future output requires clinician interpretation and must not direct investigation or treatment."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "High-risk registry item. No threshold or action advice is implemented.",
+      "display_conditions": [
+        "Show only in future reviewed leg swelling documentation context."
+      ],
+      "review_required": true
+    },
+    "curb_65": {
+      "calculator_id": "curb_65",
+      "calculator_name": "CURB-65",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "cough",
+        "fever",
+        "pneumonia consideration"
+      ],
+      "related_workflow_ids": [
+        "gp-cough",
+        "gp-fever-urti"
+      ],
+      "purpose": "Registry placeholder for future clinician-entered pneumonia severity documentation.",
+      "clinical_context": "May be relevant for future pneumonia workflows after source review.",
+      "risk_level": "high",
+      "implementation_status": "registry_only",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "curb_65_components",
+          "label": "CURB-65 components",
+          "input_type": "multi_select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "components require source review before implementation"
+          ],
+          "safety_note": "Component definitions require source verification."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "curb_65_score",
+          "label": "CURB-65 score",
+          "output_type": "score",
+          "safety_note": "Future output requires clinician interpretation and must not direct disposition."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "High-risk registry item. No threshold or admission advice is implemented.",
+      "display_conditions": [
+        "Show only in future reviewed pneumonia documentation context."
+      ],
+      "review_required": true
+    },
+    "news2": {
+      "calculator_id": "news2",
+      "calculator_name": "NEWS2",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "acute illness",
+        "vital signs review",
+        "urgent care observation"
+      ],
+      "related_workflow_ids": [
+        "gp-fever-urti",
+        "gp-shortness-of-breath"
+      ],
+      "purpose": "Registry placeholder for future clinician-entered acute observation score documentation.",
+      "clinical_context": "May be relevant for future urgent-care workflows after source review.",
+      "risk_level": "high",
+      "implementation_status": "registry_only",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "news2_observations",
+          "label": "NEWS2 observation components",
+          "input_type": "multi_select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "components require source review before implementation"
+          ],
+          "safety_note": "Observation component definitions require source verification."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "news2_score",
+          "label": "NEWS2 score",
+          "output_type": "score",
+          "safety_note": "Future output requires clinician interpretation and local escalation policy."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "High-risk registry item. No escalation or disposition advice is implemented.",
+      "display_conditions": [
+        "Show only in future reviewed acute observation documentation context."
+      ],
+      "review_required": true
+    },
+    "glasgow_coma_scale": {
+      "calculator_id": "glasgow_coma_scale",
+      "calculator_name": "Glasgow Coma Scale",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "head injury",
+        "altered consciousness",
+        "neurological observation"
+      ],
+      "related_workflow_ids": [
+        "gp-headache"
+      ],
+      "purpose": "Registry placeholder for future clinician-entered consciousness assessment documentation.",
+      "clinical_context": "May be relevant for future head injury or neurological observation workflows after source review.",
+      "risk_level": "high",
+      "implementation_status": "registry_only",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "eye_response",
+          "label": "Eye response",
+          "input_type": "select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "values require source review before implementation"
+          ],
+          "safety_note": "Response categories require source verification."
+        },
+        {
+          "field_id": "verbal_response",
+          "label": "Verbal response",
+          "input_type": "select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "values require source review before implementation"
+          ],
+          "safety_note": "Response categories require source verification."
+        },
+        {
+          "field_id": "motor_response",
+          "label": "Motor response",
+          "input_type": "select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "values require source review before implementation"
+          ],
+          "safety_note": "Response categories require source verification."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "gcs_score",
+          "label": "GCS score",
+          "output_type": "score",
+          "safety_note": "Future output requires clinician interpretation."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "High-risk registry item. No triage or treatment advice is implemented.",
+      "display_conditions": [
+        "Show only in future reviewed neurological observation documentation context."
+      ],
+      "review_required": true
+    },
+    "abcd2": {
+      "calculator_id": "abcd2",
+      "calculator_name": "ABCD2",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "transient neurological symptoms",
+        "stroke risk documentation",
+        "weakness",
+        "speech symptoms"
+      ],
+      "related_workflow_ids": [],
+      "purpose": "Registry placeholder for future clinician-entered transient neurological symptom risk documentation.",
+      "clinical_context": "May be relevant for future neurological symptom workflows after source review.",
+      "risk_level": "high",
+      "implementation_status": "registry_only",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "abcd2_components",
+          "label": "ABCD2 components",
+          "input_type": "multi_select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "components require source review before implementation"
+          ],
+          "safety_note": "Component definitions require source verification."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "abcd2_score",
+          "label": "ABCD2 score",
+          "output_type": "score",
+          "safety_note": "Future output requires clinician interpretation and must not direct disposition."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "High-risk registry item. No threshold or action advice is implemented.",
+      "display_conditions": [
+        "Show only in future reviewed neurological documentation context."
+      ],
+      "review_required": true
+    },
+    "canadian_ct_head_rule": {
+      "calculator_id": "canadian_ct_head_rule",
+      "calculator_name": "Canadian CT Head Rule",
+      "specialty": "General Medicine / GP",
+      "related_complaints": [
+        "head injury",
+        "head trauma",
+        "headache after injury"
+      ],
+      "related_workflow_ids": [
+        "gp-headache"
+      ],
+      "purpose": "Registry placeholder for future clinician-entered head injury imaging rule documentation.",
+      "clinical_context": "May be relevant for future head injury workflows after source review.",
+      "risk_level": "high",
+      "implementation_status": "registry_only",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "head_rule_components",
+          "label": "Canadian CT Head Rule components",
+          "input_type": "multi_select",
+          "units": null,
+          "required": true,
+          "allowed_values": [
+            "components require source review before implementation"
+          ],
+          "safety_note": "Rule criteria require source verification before any future use."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "head_rule_result",
+          "label": "Rule documentation result",
+          "output_type": "text",
+          "safety_note": "Future output must not direct imaging decisions without full review."
+        }
+      ],
+      "interpretation_mode": "clinician_interpreted_no_recommendation",
+      "safety_note": "High-risk registry item. No imaging recommendation is implemented.",
+      "display_conditions": [
+        "Show only in future reviewed head injury documentation context."
+      ],
+      "review_required": true
+    },
+    "nyha": {
+      "calculator_id": "nyha",
+      "calculator_name": "NYHA functional class",
+      "specialty": "Cardiology",
+      "related_complaints": [
+        "heart failure",
+        "dyspnea",
+        "shortness of breath"
+      ],
+      "related_workflow_ids": [
+        "cardio-heart-failure-followup",
+        "cardio-dyspnea",
+        "resp-dyspnea"
+      ],
+      "purpose": "Documentation support for NYHA functional classification.",
+      "clinical_context": "Heart failure or dyspnea workflow.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "nyha_grade",
+          "label": "NYHA grade (1-4)",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "nyha_class",
+          "label": "NYHA class",
+          "output_type": "category",
+          "safety_note": "Clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "classification",
+      "safety_note": "NYHA class documents symptom burden. Does not establish diagnosis or treatment.",
+      "display_conditions": [],
+      "review_required": true
+    },
+    "killip": {
+      "calculator_id": "killip",
+      "calculator_name": "Killip classification",
+      "specialty": "Cardiology",
+      "related_complaints": [
+        "chest pain",
+        "acute MI",
+        "cardiac chest pain"
+      ],
+      "related_workflow_ids": [
+        "cardio-chest-pain",
+        "gp-chest-pain",
+        "urgent-chest-pain"
+      ],
+      "purpose": "Documentation support for Killip classification in acute MI.",
+      "clinical_context": "Chest pain or acute cardiac workflow.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "killip_class",
+          "label": "Killip class (1-4)",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "killip_class",
+          "label": "Killip class",
+          "output_type": "category",
+          "safety_note": "Clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "classification",
+      "safety_note": "Killip class documents clinical severity. Does not determine management.",
+      "display_conditions": [],
+      "review_required": true
+    },
+    "sirs": {
+      "calculator_id": "sirs",
+      "calculator_name": "SIRS criteria",
+      "specialty": "General",
+      "related_complaints": [
+        "fever",
+        "infection",
+        "suspected infection",
+        "sepsis suspected"
+      ],
+      "related_workflow_ids": [
+        "urgent-fever-suspected-infection",
+        "gp-fever-urti",
+        "resp-pneumonia-followup",
+        "gastro-diarrhea"
+      ],
+      "purpose": "Documentation support for SIRS criteria.",
+      "clinical_context": "Fever or infection workflow.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "temp",
+          "label": "Temperature",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "hr",
+          "label": "Heart rate",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "rr",
+          "label": "Respiratory rate",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "wbc",
+          "label": "WBC",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "sirs_count",
+          "label": "SIRS criteria met",
+          "output_type": "score",
+          "safety_note": "Clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "score",
+      "safety_note": "SIRS criteria are documentation aids. Do not determine sepsis management independently.",
+      "display_conditions": [],
+      "review_required": true
+    },
+    "qsofa": {
+      "calculator_id": "qsofa",
+      "calculator_name": "qSOFA",
+      "specialty": "General",
+      "related_complaints": [
+        "sepsis suspected",
+        "infection",
+        "altered mental status",
+        "acute deterioration"
+      ],
+      "related_workflow_ids": [
+        "urgent-fever-suspected-infection",
+        "urgent-shortness-of-breath",
+        "urgent-abdominal-pain"
+      ],
+      "purpose": "Documentation support for qSOFA score.",
+      "clinical_context": "Suspected infection or acute deterioration workflow.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "rr",
+          "label": "Respiratory rate",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "sbp",
+          "label": "Systolic BP",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "qsofa_score",
+          "label": "qSOFA score",
+          "output_type": "score",
+          "safety_note": "Clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "score",
+      "safety_note": "qSOFA is a screening tool. Does not determine sepsis management.",
+      "display_conditions": [],
+      "review_required": true
+    },
+    "fib4": {
+      "calculator_id": "fib4",
+      "calculator_name": "FIB-4 index",
+      "specialty": "Gastroenterology",
+      "related_complaints": [
+        "liver enzyme elevation",
+        "liver fibrosis",
+        "fatty liver"
+      ],
+      "related_workflow_ids": [
+        "gastro-liver-enzyme-review",
+        "gastro-jaundice-documentation"
+      ],
+      "purpose": "Documentation support for non-invasive liver fibrosis index.",
+      "clinical_context": "Liver enzyme or jaundice workflow.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "age",
+          "label": "Age",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "ast",
+          "label": "AST",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "alt",
+          "label": "ALT",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "platelets",
+          "label": "Platelets",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "fib4_score",
+          "label": "FIB-4 index",
+          "output_type": "score",
+          "safety_note": "Clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "score",
+      "safety_note": "FIB-4 is a non-invasive fibrosis index. Does not replace clinical assessment.",
+      "display_conditions": [],
+      "review_required": true
+    },
+    "child_pugh": {
+      "calculator_id": "child_pugh",
+      "calculator_name": "Child-Pugh score",
+      "specialty": "Gastroenterology",
+      "related_complaints": [
+        "liver cirrhosis",
+        "jaundice",
+        "liver disease"
+      ],
+      "related_workflow_ids": [
+        "gastro-liver-enzyme-review",
+        "gastro-jaundice-documentation"
+      ],
+      "purpose": "Documentation support for Child-Pugh liver disease severity score.",
+      "clinical_context": "Liver disease workflow.",
+      "risk_level": "low",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "not_implemented",
+      "input_fields": [
+        {
+          "field_id": "bilirubin",
+          "label": "Bilirubin",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "albumin",
+          "label": "Albumin",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "inr",
+          "label": "INR",
+          "input_type": "number",
+          "units": "",
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "child_score",
+          "label": "Child-Pugh score",
+          "output_type": "score",
+          "safety_note": "Clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "score",
+      "safety_note": "Child-Pugh score documents liver disease severity. Does not determine management.",
+      "display_conditions": [],
+      "review_required": true
+    }
+  },
+  "calculator_workflow_mapping": {
+    "ent-dizziness-vertigo": [
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of vital-sign context if pulse and systolic blood pressure are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "ENT dizziness workflow with documented heart rate and systolic blood pressure.",
+        "safety_note": "Documentation aid only. Does not determine management."
+      },
+      {
+        "calculator_id": "mrc_dyspnea_scale",
+        "calculator_name": "MRC dyspnea scale",
+        "relevance_reason": "May support documentation of breathlessness impact if dyspnea is part of presentation.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 4,
+        "trigger_context": "Dizziness/vertigo with documented breathlessness.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "ent-voice-complaint": [
+      {
+        "calculator_id": "pack_years",
+        "calculator_name": "Pack years",
+        "relevance_reason": "May support documentation of smoking exposure if tobacco history is relevant and clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Voice complaint workflow with clinician-entered smoking history.",
+        "safety_note": "Documentation aid only. Does not create screening or treatment advice."
+      }
+    ],
+    "gastro-jaundice-documentation": [
+      {
+        "calculator_id": "fib4",
+        "calculator_name": "FIB-4 index",
+        "relevance_reason": "May support documentation of liver fibrosis risk when lab values are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "Jaundice documentation with clinician-entered AST, ALT, platelet values.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "child_pugh",
+        "calculator_name": "Child-Pugh score",
+        "relevance_reason": "May support documentation of liver disease severity when lab values are clinician-assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 4,
+        "trigger_context": "Jaundice workflow with clinician-assessed bilirubin, albumin, INR.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "gastro-liver-enzyme-review": [
+      {
+        "calculator_id": "fib4",
+        "calculator_name": "FIB-4 index",
+        "relevance_reason": "May support documentation of liver fibrosis risk when lab values are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "Liver enzyme review with clinician-entered AST, ALT, platelet values.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "child_pugh",
+        "calculator_name": "Child-Pugh score",
+        "relevance_reason": "May support documentation of liver disease severity when lab values are clinician-assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 4,
+        "trigger_context": "Liver disease workflow with clinician-assessed bilirubin, albumin, INR.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "gp-chest-pain": [
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of vital-sign context when pulse and systolic blood pressure are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Chest pain workflow with documented heart rate and systolic blood pressure.",
+        "safety_note": "Documentation aid only. Does not determine management."
+      },
+      {
+        "calculator_id": "mean_arterial_pressure",
+        "calculator_name": "Mean arterial pressure",
+        "relevance_reason": "May support documentation of a derived blood pressure value when readings are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Chest pain workflow with documented systolic and diastolic blood pressure.",
+        "safety_note": "Documentation aid only. Interpret in clinical context."
+      },
+      {
+        "calculator_id": "heart_score",
+        "calculator_name": "HEART Score",
+        "relevance_reason": "Future placeholder for clinician-entered chest pain risk documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed chest pain documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "wells_pe",
+        "calculator_name": "Wells PE",
+        "relevance_reason": "Future placeholder for clinician-entered pulmonary embolism probability documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 11,
+        "trigger_context": "Only for a future reviewed chest pain documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "killip",
+        "calculator_name": "Killip classification",
+        "relevance_reason": "May support documentation of acute cardiac severity context when Killip class is clinician-assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "Chest pain workflow with clinician-assessed Killip class.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "gp-cough": [
+      {
+        "calculator_id": "pack_years",
+        "calculator_name": "Pack years",
+        "relevance_reason": "May support documentation of smoking exposure when tobacco history is clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Adult cough workflow with clinician-entered smoking history.",
+        "safety_note": "Documentation aid only. Does not create screening or treatment advice."
+      },
+      {
+        "calculator_id": "mrc_dyspnea_scale",
+        "calculator_name": "MRC dyspnea scale",
+        "relevance_reason": "May support documentation of breathlessness impact if dyspnea is part of the cough history.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Cough workflow with clinician-entered breathlessness impact.",
+        "safety_note": "Documentation aid only. Does not establish a diagnosis or treatment plan."
+      },
+      {
+        "calculator_id": "curb_65",
+        "calculator_name": "CURB-65",
+        "relevance_reason": "Future placeholder for clinician-entered pneumonia severity documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed pneumonia documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "sirs",
+        "calculator_name": "SIRS criteria",
+        "relevance_reason": "May support documentation of systemic inflammation context when criteria are reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 4,
+        "trigger_context": "Cough workflow with reviewed SIRS criteria.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "gp-diabetes-followup": [
+      {
+        "calculator_id": "bmi",
+        "calculator_name": "BMI",
+        "relevance_reason": "May support documentation of weight-related context when height and weight are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Diabetes follow-up with documented height and weight.",
+        "safety_note": "Documentation aid only. BMI requires clinician interpretation and does not create management advice."
+      }
+    ],
+    "gp-dizziness": [
+      {
+        "calculator_id": "mean_arterial_pressure",
+        "calculator_name": "Mean arterial pressure",
+        "relevance_reason": "May support documentation of a derived blood pressure value when readings are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Dizziness workflow with documented systolic and diastolic blood pressure.",
+        "safety_note": "Documentation aid only. Interpret in clinical context."
+      },
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of vital-sign context when pulse and systolic blood pressure are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Dizziness workflow with documented heart rate and systolic blood pressure.",
+        "safety_note": "Documentation aid only. Does not determine management."
+      }
+    ],
+    "gp-fatigue": [
+      {
+        "calculator_id": "bmi",
+        "calculator_name": "BMI",
+        "relevance_reason": "May support documentation of weight context when height and weight are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Fatigue workflow with documented height and weight.",
+        "safety_note": "Documentation aid only. BMI requires clinician interpretation."
+      },
+      {
+        "calculator_id": "epworth_sleepiness_scale",
+        "calculator_name": "Epworth Sleepiness Scale",
+        "relevance_reason": "Future placeholder for clinician-entered daytime sleepiness questionnaire documentation.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "registry_only",
+        "display_priority": 8,
+        "trigger_context": "Only for a future reviewed sleepiness documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "gp-fever-urti": [
+      {
+        "calculator_id": "sirs",
+        "calculator_name": "SIRS criteria",
+        "relevance_reason": "May support documentation of inflammatory response context when criteria are reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 4,
+        "trigger_context": "Fever workflow with reviewed SIRS criteria.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "gp-headache": [
+      {
+        "calculator_id": "glasgow_coma_scale",
+        "calculator_name": "Glasgow Coma Scale",
+        "relevance_reason": "Future placeholder for clinician-entered neurological observation documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed neurological observation documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "canadian_ct_head_rule",
+        "calculator_name": "Canadian CT Head Rule",
+        "relevance_reason": "Future placeholder for clinician-entered head injury rule documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 11,
+        "trigger_context": "Only for a future reviewed head injury documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "gp-hypertension-followup": [
+      {
+        "calculator_id": "bmi",
+        "calculator_name": "BMI",
+        "relevance_reason": "May support documentation of weight context when height and weight are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Hypertension follow-up with documented height and weight.",
+        "safety_note": "Documentation aid only. BMI does not create treatment advice."
+      },
+      {
+        "calculator_id": "mean_arterial_pressure",
+        "calculator_name": "Mean arterial pressure",
+        "relevance_reason": "May support documentation of a derived blood pressure value when readings are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Hypertension follow-up with documented systolic and diastolic blood pressure.",
+        "safety_note": "Documentation aid only. Interpret in clinical context."
+      }
+    ],
+    "gp-lab-result-review": [
+      {
+        "calculator_id": "bmi",
+        "calculator_name": "BMI",
+        "relevance_reason": "May support documentation of metabolic context only when height and weight are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Lab review with clinician-entered height and weight when relevant.",
+        "safety_note": "Documentation aid only. Use only when relevant to the clinician-entered context."
+      }
+    ],
+    "gp-palpitations": [
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of vital-sign context when pulse and systolic blood pressure are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Palpitations workflow with documented heart rate and systolic blood pressure.",
+        "safety_note": "Documentation aid only. Does not determine management."
+      },
+      {
+        "calculator_id": "cha2ds2_vasc",
+        "calculator_name": "CHA2DS2-VASc",
+        "relevance_reason": "Future placeholder for clinician-entered thromboembolic risk documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed atrial fibrillation documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "has_bled",
+        "calculator_name": "HAS-BLED",
+        "relevance_reason": "Future placeholder for clinician-entered bleeding risk documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 11,
+        "trigger_context": "Only for a future reviewed anticoagulation documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "gp-shortness-of-breath": [
+      {
+        "calculator_id": "mrc_dyspnea_scale",
+        "calculator_name": "MRC dyspnea scale",
+        "relevance_reason": "May support documentation of breathlessness impact when functional limitation is clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Breathlessness workflow with documented functional limitation.",
+        "safety_note": "Documentation aid only. Does not establish a diagnosis or treatment plan."
+      },
+      {
+        "calculator_id": "shock_index",
+        "calculator_name": "Shock index",
+        "relevance_reason": "May support documentation of vital-sign context when pulse and systolic blood pressure are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 2,
+        "trigger_context": "Breathlessness workflow with documented heart rate and systolic blood pressure.",
+        "safety_note": "Documentation aid only. Does not determine management."
+      },
+      {
+        "calculator_id": "wells_pe",
+        "calculator_name": "Wells PE",
+        "relevance_reason": "Future placeholder for clinician-entered pulmonary embolism probability documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed dyspnea documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "news2",
+        "calculator_name": "NEWS2",
+        "relevance_reason": "Future placeholder for clinician-entered acute observation documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "high",
+        "implementation_status": "registry_only",
+        "display_priority": 11,
+        "trigger_context": "Only for a future reviewed acute observation documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "nyha",
+        "calculator_name": "NYHA functional class",
+        "relevance_reason": "May support documentation of breathlessness severity when functional class is clinician-assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "SOB workflow with clinician-assessed NYHA class.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "msk-knee-pain": [
+      {
+        "calculator_id": "bmi",
+        "calculator_name": "BMI",
+        "relevance_reason": "May support documentation of weight-related context when height and weight are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Knee pain workflow with documented height and weight when relevant.",
+        "safety_note": "Documentation aid only. BMI requires clinician interpretation."
+      }
+    ],
+    "msk-osteoarthritis-followup": [
+      {
+        "calculator_id": "bmi",
+        "calculator_name": "BMI",
+        "relevance_reason": "May support documentation of weight-related context when height and weight are clinician-entered.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 1,
+        "trigger_context": "Osteoarthritis follow-up with documented height and weight when relevant.",
+        "safety_note": "Documentation aid only. BMI requires clinician interpretation."
+      }
+    ],
+    "psych-anxiety": [
+      {
+        "calculator_id": "gad_7",
+        "calculator_name": "GAD-7",
+        "relevance_reason": "Future placeholder for clinician-entered anxiety questionnaire documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed anxiety questionnaire documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "psych-low-mood": [
+      {
+        "calculator_id": "phq_2",
+        "calculator_name": "PHQ-2",
+        "relevance_reason": "Future placeholder for clinician-entered brief mood questionnaire documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed mood questionnaire documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      },
+      {
+        "calculator_id": "phq_9",
+        "calculator_name": "PHQ-9",
+        "relevance_reason": "Future placeholder for clinician-entered mood questionnaire documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "registry_only",
+        "display_priority": 11,
+        "trigger_context": "Only for a future reviewed mood questionnaire documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "psych-sleep-difficulty": [
+      {
+        "calculator_id": "epworth_sleepiness_scale",
+        "calculator_name": "Epworth Sleepiness Scale",
+        "relevance_reason": "Future placeholder for clinician-entered daytime sleepiness questionnaire documentation when separately reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "registry_only",
+        "display_priority": 10,
+        "trigger_context": "Only for a future reviewed sleepiness questionnaire documentation context.",
+        "safety_note": "Registry-only placeholder. Not implemented and must not be shown as an active calculator."
+      }
+    ],
+    "resp-dyspnea": [
+      {
+        "calculator_id": "nyha",
+        "calculator_name": "NYHA functional class",
+        "relevance_reason": "May support documentation of dyspnea severity context when functional class is clinician-assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "Respiratory dyspnea workflow with clinician-assessed NYHA class.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "urgent-abdominal-pain": [
+      {
+        "calculator_id": "qsofa",
+        "calculator_name": "qSOFA",
+        "relevance_reason": "May support documentation of sepsis screening context when variables are clinician-assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "Abdominal pain with clinician-assessed qSOFA.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "urgent-fever-suspected-infection": [
+      {
+        "calculator_id": "sirs",
+        "calculator_name": "SIRS criteria",
+        "relevance_reason": "May support documentation of systemic inflammatory response when criteria are reviewed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "Suspected infection with reviewed SIRS criteria.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      },
+      {
+        "calculator_id": "qsofa",
+        "calculator_name": "qSOFA",
+        "relevance_reason": "May support documentation of sepsis screening context when variables are clinician-assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "Suspected infection with clinician-assessed qSOFA.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ],
+    "urgent-shortness-of-breath": [
+      {
+        "calculator_id": "qsofa",
+        "calculator_name": "qSOFA",
+        "relevance_reason": "May support documentation of sepsis screening context when variables are clinician-assessed.",
+        "suggestion_mode": "optional",
+        "risk_level": "low",
+        "implementation_status": "implemented",
+        "display_priority": 3,
+        "trigger_context": "Acute dyspnea with clinician-assessed qSOFA.",
+        "safety_note": "Optional documentation calculator. Use only if clinically relevant and clinician-entered values are available. Does not diagnose, recommend treatment, determine disposition, or replace clinician judgment."
+      }
+    ]
   },
   "compatibility": {
     "old_to_new_groups": {

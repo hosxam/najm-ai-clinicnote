@@ -31,7 +31,7 @@ function loadJSON(name) {
 
 console.log('=== Generating bundled clinical data object ===\n');
 
-let layouts, workflows, workflowChips, diagnosisIndex, reportTemplates;
+let layouts, workflows, workflowChips, diagnosisIndex, reportTemplates, calculatorRegistry, calculatorMapping;
 
 try {
   layouts = loadJSON('specialty_history_layouts.json');
@@ -39,6 +39,8 @@ try {
   workflowChips = loadJSON('workflow_chips.json');
   diagnosisIndex = loadJSON('diagnosis_index.json');
   reportTemplates = loadJSON('medical_report_templates.json');
+  calculatorRegistry = loadJSON('v3_calculator_registry.json');
+  calculatorMapping = loadJSON('v3_calculator_workflow_map.json');
 } catch (e) {
   console.error('ERROR loading data files:', e.message);
   process.exit(1);
@@ -389,6 +391,16 @@ outputLines.push('    return results;');
 outputLines.push('  }');
 outputLines.push('');
 
+// Build calculator maps before serialization
+let calcMap = {};
+for (let ci = 0; ci < calculatorRegistry.length; ci++) {
+  calcMap[calculatorRegistry[ci].calculator_id] = calculatorRegistry[ci];
+}
+let calcWfMap = {};
+for (let mi = 0; mi < calculatorMapping.length; mi++) {
+  calcWfMap[calculatorMapping[mi].workflow_id] = calculatorMapping[mi].suggested_calculators;
+}
+
 // Serialize the big data objects
 outputLines.push('  var data = ' + JSON.stringify({
   metadata: metadata,
@@ -400,6 +412,8 @@ outputLines.push('  var data = ' + JSON.stringify({
   diagnosisIndex: searchIndexEntries,
   historyLayouts: historyLayouts,
   reportTemplates: reportTemplateMap,
+  calculators: calcMap,
+  calculator_workflow_mapping: calcWfMap,
   compatibility: compatibility
 }, null, 2) + ';');
 
