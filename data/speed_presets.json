@@ -4330,5 +4330,2859 @@
     "safety_note": "Documentation prompts only. No triage or treatment recommendations. Clinician review required. Local protocol applies.",
     "review_required": true,
     "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "cardio-chest-pain",
+    "preset_name": "Chest pain quick start",
+    "specialty": "Cardiology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "chest pain",
+      "chest tightness",
+      "radiation reviewed",
+      "risk factors reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no syncope reported",
+      "no shortness of breath reported",
+      "no palpitations reported"
+    ],
+    "prechecked_exam_findings": [
+      "vital signs documented if measured",
+      "cardiovascular exam documented if assessed",
+      "respiratory exam documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "ECG reviewed if performed",
+      "troponin reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "investigation follow-up documented if arranged"
+    ],
+    "prechecked_follow_up": [
+      "follow-up in 1-2 weeks if arranged",
+      "return sooner if symptoms worsen"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "cardio-palpitations",
+    "preset_name": "Palpitations quick start",
+    "specialty": "Cardiology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "palpitations",
+      "triggers reviewed",
+      "regularity reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no syncope reported",
+      "no chest pain reported"
+    ],
+    "prechecked_exam_findings": [
+      "vital signs documented if measured",
+      "pulse or rhythm documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "ECG reviewed if performed",
+      "thyroid function or electrolytes reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "follow-up documented if arranged",
+      "monitoring or referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "cardio-hypertension-followup",
+    "preset_name": "Hypertension follow-up quick start",
+    "specialty": "Cardiology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "hypertension follow-up",
+      "home BP readings reviewed",
+      "lifestyle context reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported",
+      "no shortness of breath reported"
+    ],
+    "prechecked_exam_findings": [
+      "blood pressure documented if measured",
+      "cardiovascular exam documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "renal function reviewed if ordered",
+      "urine ACR reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "medication review documented if clinician decided",
+      "follow-up documented if arranged"
+    ],
+    "prechecked_follow_up": [],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "cardio-heart-failure-followup",
+    "preset_name": "Heart failure follow-up quick start",
+    "specialty": "Cardiology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "edema reviewed",
+      "dyspnea reviewed",
+      "weight change reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported",
+      "no syncope reported"
+    ],
+    "prechecked_exam_findings": [
+      "vital signs documented if measured",
+      "edema documented if assessed",
+      "chest auscultation documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "renal function reviewed if ordered",
+      "electrolytes reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "follow-up documented if arranged",
+      "medication review documented if clinician decided"
+    ],
+    "prechecked_follow_up": [],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "cardio-ecg-review",
+    "preset_name": "ECG review quick start",
+    "specialty": "Cardiology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "ECG review",
+      "symptoms reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported",
+      "no syncope reported"
+    ],
+    "prechecked_exam_findings": [
+      "vital signs documented if measured"
+    ],
+    "prechecked_investigations": [
+      "ECG reviewed",
+      "clinician-entered interpretation documented"
+    ],
+    "prechecked_plan_phrases": [
+      "follow-up plan documented",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "cardio-dyspnea",
+    "preset_name": "Dyspnea quick start",
+    "specialty": "Cardiology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "dyspnea",
+      "chest pain reviewed",
+      "leg swelling reviewed",
+      "cough or wheeze reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported",
+      "no syncope reported"
+    ],
+    "prechecked_exam_findings": [
+      "vital signs documented if measured",
+      "oxygen saturation documented if measured",
+      "chest auscultation documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "ECG reviewed if performed",
+      "chest imaging reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "follow-up documented if arranged"
+    ],
+    "prechecked_follow_up": [],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "cardio-lipid-followup",
+    "preset_name": "Lipid follow-up quick start",
+    "specialty": "Cardiology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "lipid follow-up",
+      "lipid profile reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported",
+      "no medication side effects reported"
+    ],
+    "prechecked_exam_findings": [
+      "vital signs documented if measured"
+    ],
+    "prechecked_investigations": [
+      "liver function reviewed if ordered",
+      "HbA1c or glucose reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "lifestyle advice documented if discussed",
+      "medication review documented if clinician decided",
+      "follow-up documented if arranged"
+    ],
+    "prechecked_follow_up": [],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "cardio-post-pci-followup",
+    "preset_name": "Post-PCI follow-up quick start",
+    "specialty": "Cardiology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "dyspnea reviewed",
+      "post-PCI follow-up",
+      "exercise tolerance reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported",
+      "no shortness of breath reported"
+    ],
+    "prechecked_exam_findings": [
+      "vital signs documented if measured",
+      "cardiovascular exam documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "ECG reviewed if performed"
+    ],
+    "prechecked_plan_phrases": [
+      "medication review documented if clinician decided",
+      "cardiac follow-up documented if arranged"
+    ],
+    "prechecked_follow_up": [],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "cardio-syncope",
+    "preset_name": "Syncope quick start",
+    "specialty": "Cardiology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "syncope",
+      "prodrome documented",
+      "position documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported",
+      "no focal neurological symptoms reported"
+    ],
+    "prechecked_exam_findings": [
+      "vital signs documented if measured",
+      "orthostatic BP documented if measured"
+    ],
+    "prechecked_investigations": [
+      "ECG reviewed if performed",
+      "glucose checked if performed"
+    ],
+    "prechecked_plan_phrases": [
+      "follow-up documented if arranged"
+    ],
+    "prechecked_follow_up": [],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "cardio-murmur-documentation",
+    "preset_name": "Murmur documentation quick start",
+    "specialty": "Cardiology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "syncope reviewed",
+      "symptoms reviewed",
+      "murmur documentation"
+    ],
+    "prechecked_relevant_negatives": [],
+    "prechecked_exam_findings": [
+      "vital signs documented if measured",
+      "cardiac auscultation documented if assessed",
+      "murmur timing documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "ECG reviewed if performed",
+      "echo report reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "referral documented if clinician decided",
+      "follow-up documented if arranged"
+    ],
+    "prechecked_follow_up": [],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neuro-headache",
+    "preset_name": "Headache quick start",
+    "specialty": "Neurology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "headache",
+      "nausea reviewed",
+      "vomiting reviewed",
+      "duration documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no focal neurological symptoms reported",
+      "no seizure reported",
+      "no neck stiffness reported",
+      "no fever reported"
+    ],
+    "prechecked_exam_findings": [
+      "vitals documented if measured",
+      "neurological screen documented if assessed",
+      "cranial nerve screen documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "blood pressure recorded if measured",
+      "imaging reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "follow-up documented if arranged"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks if not improving",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neuro-migraine-followup",
+    "preset_name": "Migraine follow-up quick start",
+    "specialty": "Neurology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "migraine follow-up",
+      "aura symptoms reviewed",
+      "medication use reviewed",
+      "trigger pattern reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no new focal neurological symptoms reported"
+    ],
+    "prechecked_exam_findings": [
+      "neurological screen documented if assessed",
+      "cranial nerve screen documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "medication plan documented if clinician decided",
+      "preventive plan documented if clinician decided",
+      "lifestyle modification discussed if applicable"
+    ],
+    "prechecked_follow_up": [
+      "follow-up documented if arranged",
+      "1-3 months"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neuro-seizure-followup",
+    "preset_name": "Seizure follow-up quick start",
+    "specialty": "Neurology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "seizure follow-up",
+      "adherence reviewed",
+      "side effects reviewed",
+      "aura or prodrome reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no new neurological deficit reported",
+      "no seizure-related injury reported if applicable"
+    ],
+    "prechecked_exam_findings": [
+      "neurological screen documented if assessed",
+      "cranial nerve screen documented if assessed"
+    ],
+    "prechecked_investigations": [],
+    "prechecked_plan_phrases": [
+      "medication plan documented if clinician decided",
+      "dose adjustment documented if clinician decided",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "follow-up documented if arranged",
+      "1-3 months"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neuro-dizziness",
+    "preset_name": "Dizziness quick start",
+    "specialty": "Neurology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "dizziness",
+      "nausea reviewed",
+      "vomiting reviewed",
+      "headache reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no focal neurological symptoms reported",
+      "no syncope reported",
+      "no chest pain reported if relevant"
+    ],
+    "prechecked_exam_findings": [
+      "neurological screen documented if assessed",
+      "cranial nerve screen documented if assessed",
+      "nystagmus documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "ECG reviewed if performed",
+      "cardiac monitoring reviewed if arranged"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "vestibular rehabilitation discussed if relevant"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks if not improving",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neuro-weakness",
+    "preset_name": "Weakness quick start",
+    "specialty": "Neurology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "weakness",
+      "pain reviewed",
+      "onset documented",
+      "progression documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no seizure reported",
+      "no headache reported if relevant",
+      "no trauma reported"
+    ],
+    "prechecked_exam_findings": [
+      "neurological examination documented if assessed",
+      "power documented if assessed",
+      "reflexes documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "imaging reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "referral or escalation documented if clinician decided",
+      "follow-up documented if arranged"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neuro-numbness-tingling",
+    "preset_name": "Numbness/tingling quick start",
+    "specialty": "Neurology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "pain reviewed",
+      "weakness reviewed",
+      "numbness or tingling",
+      "progression documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no focal weakness reported if applicable",
+      "no bowel or bladder symptoms reported if relevant",
+      "no trauma reported"
+    ],
+    "prechecked_exam_findings": [
+      "sensation documented if assessed",
+      "power documented if assessed",
+      "reflexes documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "blood tests reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neuro-tremor",
+    "preset_name": "Tremor quick start",
+    "specialty": "Neurology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "tremor",
+      "progression documented",
+      "functional impact documented",
+      "onset and duration documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no new neurological symptoms reported",
+      "no weakness reported if applicable"
+    ],
+    "prechecked_exam_findings": [
+      "neurological exam documented if assessed",
+      "tremor amplitude documented if assessed",
+      "tremor frequency documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "thyroid function reviewed if ordered",
+      "copper studies reviewed if clinically indicated"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication plan documented if clinician decided",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "6-12 months if stable"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neuro-neuropathy-followup",
+    "preset_name": "Neuropathy follow-up quick start",
+    "specialty": "Neurology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "neuropathy follow-up",
+      "progression documented",
+      "distribution documented",
+      "sensory symptoms reviewed"
+    ],
+    "prechecked_relevant_negatives": [],
+    "prechecked_exam_findings": [
+      "sensation documented if assessed",
+      "vibration sense documented if assessed",
+      "reflexes documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "blood tests reviewed if ordered",
+      "HbA1c reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "medication plan documented if clinician decided",
+      "pain management discussed if applicable",
+      "foot care education documented if relevant"
+    ],
+    "prechecked_follow_up": [
+      "follow-up documented if arranged",
+      "3-6 months"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neuro-stroke-tia-followup",
+    "preset_name": "Stroke/TIA follow-up quick start",
+    "specialty": "Neurology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "stroke or TIA follow-up",
+      "motor symptoms reviewed",
+      "speech symptoms reviewed",
+      "vision symptoms reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no new neurological symptoms reported",
+      "no transient symptoms since last review reported if applicable"
+    ],
+    "prechecked_exam_findings": [
+      "blood pressure recorded if measured",
+      "neurological screen documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "imaging report reviewed if available",
+      "previous discharge summary reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "medication plan documented if clinician decided",
+      "risk factor management discussed if applicable",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "follow-up documented if arranged",
+      "1-3 months"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neuro-memory-concern",
+    "preset_name": "Memory concern quick start",
+    "specialty": "Neurology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "memory concern",
+      "ADL impact documented",
+      "progression documented",
+      "domains affected reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no acute confusion reported if applicable",
+      "no head trauma reported",
+      "no focal neurological symptoms reported"
+    ],
+    "prechecked_exam_findings": [
+      "cognition screen documented if assessed",
+      "neurological screen documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "blood tests reviewed if ordered",
+      "previous records reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "follow-up documented if arranged",
+      "1-3 months"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "resp-asthma-followup",
+    "preset_name": "Asthma follow-up quick start",
+    "specialty": "Respiratory / Pulmonology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "cough reviewed",
+      "wheeze reviewed",
+      "asthma follow-up",
+      "inhaler use reviewed",
+      "trigger pattern reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no severe breathlessness reported",
+      "no chest pain reported",
+      "no hemoptysis reported"
+    ],
+    "prechecked_exam_findings": [
+      "respiratory rate documented if measured",
+      "oxygen saturation documented if measured",
+      "work of breathing documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "peak flow recorded if measured",
+      "spirometry reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "inhaler technique reviewed if discussed",
+      "medication plan documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "1-3 months",
+      "3-6 months if stable"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "resp-copd-followup",
+    "preset_name": "COPD follow-up quick start",
+    "specialty": "Respiratory / Pulmonology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "COPD follow-up",
+      "dyspnea reviewed",
+      "inhaler use reviewed",
+      "smoking history reviewed",
+      "cough and sputum reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported",
+      "no hemoptysis reported"
+    ],
+    "prechecked_exam_findings": [
+      "oxygen saturation documented if measured",
+      "chest auscultation documented if assessed",
+      "respiratory rate documented if measured"
+    ],
+    "prechecked_investigations": [
+      "spirometry reviewed if available",
+      "previous respiratory records reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication plan documented if clinician decided",
+      "smoking cessation advice documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "6-12 months if stable"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "resp-chronic-cough",
+    "preset_name": "Chronic cough quick start",
+    "specialty": "Respiratory / Pulmonology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "chronic cough",
+      "duration documented",
+      "sputum context reviewed",
+      "trigger or exposure context reviewed",
+      "smoking history reviewed if relevant"
+    ],
+    "prechecked_relevant_negatives": [
+      "no hemoptysis reported",
+      "no weight loss reported",
+      "no fever or night sweats reported"
+    ],
+    "prechecked_exam_findings": [
+      "chest auscultation documented if assessed",
+      "oropharynx documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "chest imaging reviewed if available",
+      "spirometry reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks",
+      "4-6 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "resp-dyspnea",
+    "preset_name": "Dyspnea quick start",
+    "specialty": "Respiratory / Pulmonology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "dyspnea",
+      "leg swelling reviewed",
+      "orthopnea and PND reviewed",
+      "nocturnal symptoms reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported",
+      "no syncope reported",
+      "no hemoptysis reported"
+    ],
+    "prechecked_exam_findings": [
+      "oxygen saturation documented if measured",
+      "respiratory rate documented if measured",
+      "work of breathing documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "ECG reviewed if performed",
+      "chest imaging reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "resp-wheeze",
+    "preset_name": "Wheeze quick start",
+    "specialty": "Respiratory / Pulmonology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "wheeze",
+      "triggers reviewed",
+      "duration documented",
+      "chest tightness reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no severe breathlessness reported",
+      "no chest pain reported",
+      "no hemoptysis reported"
+    ],
+    "prechecked_exam_findings": [
+      "respiratory rate documented if measured",
+      "oxygen saturation documented if measured",
+      "wheeze documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "peak flow recorded if measured"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication plan documented if clinician decided",
+      "safety-netting documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "resp-pneumonia-followup",
+    "preset_name": "Pneumonia follow-up quick start",
+    "specialty": "Respiratory / Pulmonology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "fever reviewed",
+      "dyspnea reviewed",
+      "pneumonia follow-up",
+      "symptom progress reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no worsening breathlessness reported",
+      "no persistent fever reported"
+    ],
+    "prechecked_exam_findings": [
+      "oxygen saturation documented if measured",
+      "chest auscultation documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "chest imaging reviewed if available",
+      "blood tests reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "follow-up imaging documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks",
+      "6-8 weeks if imaging follow-up needed"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "resp-sleep-apnea-symptoms",
+    "preset_name": "Sleep apnea symptoms quick start",
+    "specialty": "Respiratory / Pulmonology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "snoring",
+      "sleep quality reviewed",
+      "witnessed apneas reviewed",
+      "morning headaches reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no syncope reported",
+      "no acute respiratory distress reported"
+    ],
+    "prechecked_exam_findings": [
+      "BMI documented if measured",
+      "blood pressure documented if measured"
+    ],
+    "prechecked_investigations": [
+      "Epworth score reviewed if completed",
+      "sleep study report reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "referral documented if clinician decided",
+      "driving advice documented if clinician discussed"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "6-12 months if stable"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "resp-hemoptysis-documentation",
+    "preset_name": "Hemoptysis documentation quick start",
+    "specialty": "Respiratory / Pulmonology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "amount documented",
+      "smoking history reviewed",
+      "cough and sputum reviewed",
+      "color and context documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no massive bleeding reported if documented",
+      "no severe breathlessness reported"
+    ],
+    "prechecked_exam_findings": [
+      "vitals documented if measured",
+      "chest auscultation documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "chest imaging reviewed if available",
+      "blood tests reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "follow-up documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks",
+      "4-6 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "resp-smoking-history-note",
+    "preset_name": "Smoking history quick start",
+    "specialty": "Respiratory / Pulmonology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "years smoked documented",
+      "smoking history documented",
+      "cigarettes per day documented",
+      "respiratory symptoms reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no hemoptysis reported if applicable"
+    ],
+    "prechecked_exam_findings": [
+      "chest exam documented if assessed",
+      "oxygen saturation documented if measured"
+    ],
+    "prechecked_investigations": [
+      "chest imaging reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "smoking cessation advice documented if discussed",
+      "cessation support referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks",
+      "1-3 months"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "resp-pulmonary-function-review",
+    "preset_name": "Pulmonary function review quick start",
+    "specialty": "Respiratory / Pulmonology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "spirometry reviewed",
+      "smoking history reviewed",
+      "pulmonary function review",
+      "DLCO reviewed if available"
+    ],
+    "prechecked_relevant_negatives": [
+      "no acute respiratory distress reported"
+    ],
+    "prechecked_exam_findings": [
+      "oxygen saturation documented if measured",
+      "chest auscultation documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "previous PFT reports reviewed if available",
+      "chest imaging reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication plan documented if clinician decided",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "6-12 months"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gastro-gerd",
+    "preset_name": "GERD quick start",
+    "specialty": "Gastroenterology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "heartburn",
+      "regurgitation",
+      "reflux symptoms",
+      "epigastric discomfort"
+    ],
+    "prechecked_relevant_negatives": [
+      "no dysphagia reported",
+      "no odynophagia reported",
+      "no weight loss reported",
+      "no vomiting blood reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal examination documented if assessed",
+      "epigastric tenderness documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "previous endoscopy report reviewed if available",
+      "H. pylori result reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "lifestyle advice documented if discussed",
+      "medication plan documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks",
+      "6-8 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gastro-abdominal-pain",
+    "preset_name": "Abdominal pain quick start",
+    "specialty": "Gastroenterology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "abdominal pain",
+      "fever reviewed",
+      "radiation reviewed",
+      "location documented",
+      "duration documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no GI bleeding reported",
+      "no persistent vomiting reported",
+      "no severe worsening pain reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal tenderness documented if assessed",
+      "guarding or rebound documented if assessed",
+      "bowel sounds documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "urinalysis reviewed if performed",
+      "blood tests reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gastro-ibs-symptoms",
+    "preset_name": "IBS symptoms quick start",
+    "specialty": "Gastroenterology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "IBS symptoms",
+      "urgency reviewed",
+      "bloating reviewed",
+      "straining reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no rectal bleeding reported",
+      "no unintentional weight loss reported",
+      "no nocturnal diarrhea reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal examination documented if assessed",
+      "abdominal tenderness documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "blood tests reviewed if ordered",
+      "stool tests reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "lifestyle and diet advice documented if discussed",
+      "safety-netting documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks",
+      "6-8 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gastro-constipation",
+    "preset_name": "Constipation quick start",
+    "specialty": "Gastroenterology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "constipation",
+      "straining reviewed",
+      "duration documented",
+      "stool frequency documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no rectal bleeding reported",
+      "no unintentional weight loss reported",
+      "no severe abdominal pain reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal examination documented if assessed",
+      "rectal examination documented if clinically appropriate and assessed"
+    ],
+    "prechecked_investigations": [
+      "blood tests reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication plan documented if clinician decided",
+      "lifestyle and dietary advice documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks",
+      "4-6 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gastro-diarrhea",
+    "preset_name": "Diarrhea quick start",
+    "specialty": "Gastroenterology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "diarrhoea",
+      "fever reviewed",
+      "vomiting reviewed",
+      "duration documented",
+      "blood or mucus reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no blood in stool reported",
+      "no severe dehydration symptoms reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal examination documented if assessed",
+      "hydration documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "stool tests reviewed if ordered",
+      "blood tests reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gastro-rectal-bleeding",
+    "preset_name": "Rectal bleeding quick start",
+    "specialty": "Gastroenterology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "rectal bleeding",
+      "weight loss reviewed",
+      "bleeding colour documented",
+      "pain on defecation reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no dizziness or syncope reported if applicable",
+      "no black stools reported if applicable"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal examination documented if assessed",
+      "rectal examination documented if clinically appropriate and assessed"
+    ],
+    "prechecked_investigations": [
+      "CBC reviewed if ordered",
+      "previous colonoscopy or endoscopy report reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks",
+      "4-6 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gastro-liver-enzyme-review",
+    "preset_name": "Liver enzyme review quick start",
+    "specialty": "Gastroenterology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "liver enzyme review",
+      "result type documented",
+      "alcohol history reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no jaundice reported",
+      "no dark urine or pale stool reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal examination documented if assessed",
+      "hepatomegaly documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "liver function tests reviewed",
+      "previous results compared if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "follow-up testing documented if arranged by clinician",
+      "safety-netting documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks",
+      "3 months"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gastro-jaundice-documentation",
+    "preset_name": "Jaundice documentation quick start",
+    "specialty": "Gastroenterology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "jaundice",
+      "fever reviewed",
+      "pruritus reviewed",
+      "duration documented",
+      "dark urine reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no significant abdominal trauma reported if applicable"
+    ],
+    "prechecked_exam_findings": [
+      "scleral icterus documented if assessed",
+      "abdominal examination documented if assessed",
+      "hepatomegaly documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "liver function tests reviewed if ordered",
+      "bilirubin reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gastro-dysphagia",
+    "preset_name": "Dysphagia quick start",
+    "specialty": "Gastroenterology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "dysphagia",
+      "duration documented",
+      "progression reviewed",
+      "odynophagia reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no weight loss reported if applicable",
+      "no vomiting blood reported"
+    ],
+    "prechecked_exam_findings": [
+      "general examination documented if assessed",
+      "oral and throat examination documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "previous endoscopy report reviewed if available",
+      "blood tests reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks",
+      "4-6 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "gastro-post-endoscopy-followup",
+    "preset_name": "Post-endoscopy follow-up quick start",
+    "specialty": "Gastroenterology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "indication reviewed",
+      "post-endoscopy follow-up",
+      "procedure type documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no post-procedure bleeding reported",
+      "no severe abdominal pain reported",
+      "no fever reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal examination documented if assessed",
+      "vitals documented if measured"
+    ],
+    "prechecked_investigations": [
+      "endoscopy report reviewed",
+      "histology or pathology reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "follow-up plan documented if arranged",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks",
+      "3-6 months"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "endo-diabetes-followup",
+    "preset_name": "Diabetes follow-up quick start",
+    "specialty": "Endocrinology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "diabetes follow-up",
+      "HbA1c trend reviewed",
+      "foot symptoms reviewed",
+      "visual symptoms reviewed",
+      "lifestyle context reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no hypoglycemia symptoms reported",
+      "no foot ulcers reported",
+      "no acute infection symptoms reported",
+      "no visual symptoms reported"
+    ],
+    "prechecked_exam_findings": [
+      "weight and BMI documented if measured",
+      "blood pressure documented if measured",
+      "foot examination documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "HbA1c reviewed if available",
+      "renal function reviewed if ordered",
+      "urine ACR reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication adherence documented if discussed",
+      "lifestyle advice documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "6-12 months if stable"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "endo-thyroid-symptoms",
+    "preset_name": "Thyroid symptoms quick start",
+    "specialty": "Endocrinology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "tremor reviewed",
+      "thyroid symptoms",
+      "bowel habit reviewed",
+      "palpitations reviewed",
+      "weight change reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported if relevant",
+      "no severe palpitations reported if relevant"
+    ],
+    "prechecked_exam_findings": [
+      "vitals documented if measured",
+      "neck examination documented if assessed",
+      "tremor documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "thyroid function tests reviewed if ordered",
+      "thyroid antibodies reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication plan documented if clinician decided",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks",
+      "6-8 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "endo-hypothyroidism-followup",
+    "preset_name": "Hypothyroidism follow-up quick start",
+    "specialty": "Endocrinology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "constipation reviewed",
+      "weight change reviewed",
+      "hypothyroidism follow-up",
+      "cold intolerance reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no palpitations reported if relevant"
+    ],
+    "prechecked_exam_findings": [
+      "weight documented if measured",
+      "pulse documented if measured"
+    ],
+    "prechecked_investigations": [
+      "TSH reviewed if available",
+      "free T4 reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication plan documented if clinician decided",
+      "adherence discussed if applicable"
+    ],
+    "prechecked_follow_up": [
+      "6-8 weeks",
+      "3-6 months if stable"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "endo-hyperthyroidism-followup",
+    "preset_name": "Hyperthyroidism follow-up quick start",
+    "specialty": "Endocrinology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "tremor reviewed",
+      "bowel habit reviewed",
+      "palpitations reviewed",
+      "eye symptoms reviewed",
+      "weight change reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain reported",
+      "no syncope reported"
+    ],
+    "prechecked_exam_findings": [
+      "pulse documented if measured",
+      "thyroid examination documented if assessed",
+      "eye signs documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "thyroid function tests reviewed if available",
+      "TSI or antibody levels reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication plan documented if clinician decided",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks",
+      "6-8 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "endo-obesity-counseling-documentation",
+    "preset_name": "Obesity counseling quick start",
+    "specialty": "Endocrinology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "weight trend reviewed",
+      "diet context reviewed",
+      "sleep context reviewed",
+      "eating patterns reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no acute symptoms reported"
+    ],
+    "prechecked_exam_findings": [
+      "blood pressure documented if measured",
+      "waist circumference documented if measured"
+    ],
+    "prechecked_investigations": [
+      "HbA1c or glucose reviewed if ordered",
+      "lipid profile reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "lifestyle counseling documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks",
+      "3 months"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "endo-hypoglycemia-review",
+    "preset_name": "Hypoglycemia review quick start",
+    "specialty": "Endocrinology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "symptoms reviewed",
+      "hypoglycemia review",
+      "episode frequency reviewed",
+      "medication context reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no loss of consciousness reported",
+      "no seizure reported"
+    ],
+    "prechecked_exam_findings": [
+      "vitals documented if measured",
+      "glucose level documented if measured"
+    ],
+    "prechecked_investigations": [
+      "glucose log reviewed if available",
+      "HbA1c reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication plan documented if clinician decided",
+      "safety-netting documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "endo-pcos-metabolic-review",
+    "preset_name": "PCOS metabolic review quick start",
+    "specialty": "Endocrinology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "PCOS metabolic review",
+      "skin changes reviewed",
+      "cycle pattern reviewed",
+      "lifestyle context reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no acute pelvic pain reported if relevant"
+    ],
+    "prechecked_exam_findings": [
+      "weight and BMI documented if measured",
+      "blood pressure documented if measured"
+    ],
+    "prechecked_investigations": [
+      "HbA1c or glucose reviewed if ordered",
+      "lipid profile reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "lifestyle advice documented if discussed",
+      "medication plan documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "6-12 months if stable"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "endo-osteoporosis-followup",
+    "preset_name": "Osteoporosis follow-up quick start",
+    "specialty": "Endocrinology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "osteoporosis follow-up",
+      "falls history reviewed",
+      "fracture history reviewed",
+      "medication adherence discussed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no new fragility fracture reported"
+    ],
+    "prechecked_exam_findings": [
+      "gait and falls risk documented if assessed",
+      "spine tenderness documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "DEXA report reviewed if available",
+      "calcium and vitamin D result reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication plan documented if clinician decided",
+      "supplement plan documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "1 year if stable",
+      "2 years on therapy"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "endo-adrenal-incidentaloma-referral",
+    "preset_name": "Adrenal incidentaloma quick start",
+    "specialty": "Endocrinology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "symptoms reviewed",
+      "weight change reviewed",
+      "weakness and fatigue reviewed",
+      "blood pressure context reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no acute symptoms reported if applicable"
+    ],
+    "prechecked_exam_findings": [
+      "blood pressure documented if measured",
+      "general appearance documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "imaging report reviewed if available",
+      "hormonal workup reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "referral documented if clinician arranged",
+      "follow-up imaging discussed if applicable"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "6-12 months for imaging"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "endo-pituitary-symptoms-documentation",
+    "preset_name": "Pituitary symptoms quick start",
+    "specialty": "Endocrinology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "headache reviewed",
+      "visual symptoms reviewed",
+      "fatigue and weakness reviewed",
+      "pituitary symptoms documentation"
+    ],
+    "prechecked_relevant_negatives": [
+      "no acute visual loss reported if applicable",
+      "no seizure reported if applicable"
+    ],
+    "prechecked_exam_findings": [
+      "visual fields documented if assessed",
+      "neurological screen documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "hormonal profile reviewed if ordered",
+      "pituitary imaging reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "referral documented if clinician arranged",
+      "follow-up documented if arranged"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "6-12 months if stable"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "uro-dysuria-uti-symptoms",
+    "preset_name": "Dysuria/UTI quick start",
+    "specialty": "Urology / Nephrology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "dysuria",
+      "fever reviewed",
+      "hematuria reviewed",
+      "flank pain reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no fever reported",
+      "no flank pain reported",
+      "no vomiting reported",
+      "no visible hematuria reported"
+    ],
+    "prechecked_exam_findings": [
+      "vitals documented if measured",
+      "abdominal examination documented if assessed",
+      "suprapubic tenderness documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "urinalysis reviewed if performed",
+      "urine culture reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "hydration advice documented if discussed",
+      "medication plan documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "2-3 days if symptoms persist",
+      "1-2 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "uro-hematuria",
+    "preset_name": "Hematuria quick start",
+    "specialty": "Urology / Nephrology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "hematuria",
+      "dysuria reviewed",
+      "flank pain reviewed",
+      "visible blood in urine documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no urinary retention reported",
+      "no fever reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal examination documented if assessed",
+      "flank tenderness documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "urinalysis reviewed if performed",
+      "urine microscopy and culture reviewed if available",
+      "renal function reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks",
+      "4-6 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "uro-luts-bph",
+    "preset_name": "LUTS/BPH quick start",
+    "specialty": "Urology / Nephrology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "nocturia reviewed",
+      "hesitancy reviewed",
+      "weak stream reviewed",
+      "retention history reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no hematuria reported",
+      "no urinary retention reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal examination documented if assessed",
+      "bladder distension documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "urinalysis reviewed if performed",
+      "PSA discussed and reviewed if clinician did so and available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication plan documented if clinician decided",
+      "lifestyle advice documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks",
+      "3-6 months"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "uro-renal-colic-followup",
+    "preset_name": "Renal colic follow-up quick start",
+    "specialty": "Urology / Nephrology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "fever reviewed",
+      "hematuria reviewed",
+      "renal colic follow-up",
+      "pain radiation reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no fever reported",
+      "no persistent vomiting reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal and flank examination documented if assessed",
+      "CVA tenderness documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "urinalysis reviewed if performed",
+      "renal function reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "follow-up imaging documented if arranged by clinician",
+      "safety-netting documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "2-4 weeks",
+      "4-6 weeks if imaging pending"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "uro-urinary-retention-documentation",
+    "preset_name": "Urinary retention quick start",
+    "specialty": "Urology / Nephrology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "onset documented",
+      "voiding difficulty reviewed",
+      "medication history reviewed",
+      "suprapubic discomfort reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no fever reported if applicable"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal examination documented if assessed",
+      "bladder distension documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "urinalysis reviewed if performed",
+      "renal function reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "uro-flank-pain",
+    "preset_name": "Flank pain quick start",
+    "specialty": "Urology / Nephrology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "flank pain",
+      "fever reviewed",
+      "radiation reviewed",
+      "duration documented",
+      "character documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no fever reported",
+      "no visible hematuria reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal and flank tenderness documented if assessed",
+      "CVA tenderness documented if assessed",
+      "vitals documented if measured"
+    ],
+    "prechecked_investigations": [
+      "urinalysis reviewed if performed",
+      "renal function reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "safety-netting documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "uro-frequency-urgency",
+    "preset_name": "Frequency/urgency quick start",
+    "specialty": "Urology / Nephrology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "urinary urgency",
+      "dysuria reviewed",
+      "urinary frequency",
+      "nocturia reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no fever reported",
+      "no flank pain reported",
+      "no urinary retention reported"
+    ],
+    "prechecked_exam_findings": [
+      "abdominal examination documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "urinalysis reviewed if performed",
+      "urine culture reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "lifestyle advice documented if discussed",
+      "safety-netting documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "4-6 weeks",
+      "6-8 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neph-ckd-followup",
+    "preset_name": "CKD follow-up quick start",
+    "specialty": "Urology / Nephrology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "CKD follow-up",
+      "edema reviewed",
+      "urinary symptoms reviewed",
+      "medication review documented"
+    ],
+    "prechecked_relevant_negatives": [
+      "no acute urinary symptoms reported"
+    ],
+    "prechecked_exam_findings": [
+      "blood pressure documented if measured",
+      "edema documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "renal function reviewed",
+      "eGFR reviewed",
+      "urine ACR or proteinuria reviewed if available"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication review documented if clinician performed",
+      "lifestyle and dietary advice documented if discussed"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "6-12 months if stable"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neph-proteinuria",
+    "preset_name": "Proteinuria quick start",
+    "specialty": "Urology / Nephrology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "proteinuria",
+      "oedema reviewed",
+      "urinary symptoms reviewed"
+    ],
+    "prechecked_relevant_negatives": [
+      "no hematuria reported if applicable",
+      "no oedema reported if applicable"
+    ],
+    "prechecked_exam_findings": [
+      "blood pressure documented if measured",
+      "oedema documented if assessed"
+    ],
+    "prechecked_investigations": [
+      "urine ACR or proteinuria reviewed",
+      "renal function reviewed if ordered"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "lifestyle advice documented if discussed",
+      "referral documented if clinician decided"
+    ],
+    "prechecked_follow_up": [
+      "3-6 months",
+      "6-12 months if stable"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "neph-electrolyte-abnormality-review",
+    "preset_name": "Electrolyte abnormality quick start",
+    "specialty": "Urology / Nephrology",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "symptoms reviewed",
+      "medication history reviewed",
+      "trend and comparison reviewed",
+      "electrolyte abnormality review"
+    ],
+    "prechecked_relevant_negatives": [
+      "no acute symptoms reported if applicable",
+      "no cardiac symptoms reported if relevant"
+    ],
+    "prechecked_exam_findings": [
+      "vitals documented if measured"
+    ],
+    "prechecked_investigations": [
+      "renal function reviewed if ordered",
+      "repeat blood tests reviewed if available",
+      "ECG reviewed if performed by clinician"
+    ],
+    "prechecked_plan_phrases": [
+      "clinician-entered plan documented",
+      "medication review documented if clinician performed",
+      "follow-up testing documented if arranged"
+    ],
+    "prechecked_follow_up": [
+      "1-2 weeks",
+      "2-4 weeks"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
   }
 ]
