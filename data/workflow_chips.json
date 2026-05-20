@@ -10204,6 +10204,4982 @@
     ]
   },
   {
+    "workflow_id": "gastro-abdominal-pain",
+    "specialty_id": "Gastroenterology",
+    "chips": [
+      {
+        "chip_id": "gastro-abdominal-pain-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "abdominal pain",
+        "order": 1,
+        "search_terms": [
+          "abdominal",
+          "pain",
+          "stomach ache"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no fever reported",
+        "order": 1,
+        "search_terms": [
+          "fever",
+          "temperature"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "abdominal examination documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "abdominal",
+          "exam",
+          "palpation"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "severe or worsening pain",
+        "order": 1,
+        "search_terms": [
+          "severe",
+          "worsening"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-investigations-1",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "blood",
+          "FBC",
+          "LFT",
+          "CRP"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "1-2 weeks",
+        "order": 1,
+        "search_terms": [
+          "one",
+          "two",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "location documented",
+        "order": 2,
+        "search_terms": [
+          "location",
+          "site",
+          "quadrant"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no vomiting blood reported",
+        "order": 2,
+        "search_terms": [
+          "hematemesis",
+          "blood"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "tenderness documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "tenderness",
+          "guarding"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "peritoneal signs if assessed",
+        "order": 2,
+        "search_terms": [
+          "peritoneal",
+          "guarding",
+          "rigidity"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-investigations-2",
+        "group": "investigations",
+        "chip_text": "abdominal imaging reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "ultrasound",
+          "CT",
+          "X-ray"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "2-4 weeks",
+        "order": 2,
+        "search_terms": [
+          "two",
+          "four",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "onset and duration documented",
+        "order": 3,
+        "search_terms": [
+          "onset",
+          "duration"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no black stools reported",
+        "order": 3,
+        "search_terms": [
+          "melena",
+          "black",
+          "stool"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "bowel sounds documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "bowel",
+          "sounds"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "haematemesis or melena",
+        "order": 3,
+        "search_terms": [
+          "hematemesis",
+          "melena",
+          "bleeding"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-investigations-3",
+        "group": "investigations",
+        "chip_text": "previous gastroenterology records reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "previous",
+          "records"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "referral",
+          "gastroenterology"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "character documented",
+        "order": 4,
+        "search_terms": [
+          "character",
+          "colicky",
+          "sharp",
+          "dull"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no unintentional weight loss reported",
+        "order": 4,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "vitals documented if measured",
+        "order": 4,
+        "search_terms": [
+          "vitals",
+          "BP",
+          "pulse",
+          "temp"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "unexplained weight loss",
+        "order": 4,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 4,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "severity documented",
+        "order": 5,
+        "search_terms": [
+          "severity",
+          "intensity"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no jaundice reported",
+        "order": 5,
+        "search_terms": [
+          "jaundice",
+          "yellow"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "appearance",
+          "distress"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "jaundice",
+        "order": 5,
+        "search_terms": [
+          "jaundice",
+          "icterus"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "radiation reviewed",
+        "order": 6,
+        "search_terms": [
+          "radiation",
+          "referred"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "abdominal mass",
+        "order": 6,
+        "search_terms": [
+          "mass",
+          "palpable"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-relevant_negatives-6",
+        "group": "relevant_negatives",
+        "chip_text": "no abdominal surgery history reported if relevant",
+        "order": 6,
+        "search_terms": [
+          "surgery",
+          "scar"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "abdominal distension documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "distension",
+          "bloating"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "aggravating and relieving factors reviewed",
+        "order": 7,
+        "search_terms": [
+          "aggrevating",
+          "relieving",
+          "food"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-red_flags-7",
+        "group": "red_flags",
+        "chip_text": "fever with abdominal pain",
+        "order": 7,
+        "search_terms": [
+          "fever",
+          "infection"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "associated nausea or vomiting reviewed",
+        "order": 8,
+        "search_terms": [
+          "nausea",
+          "vomiting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "bowel habit reviewed",
+        "order": 9,
+        "search_terms": [
+          "bowel",
+          "habit",
+          "stool"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-abdominal-pain-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "previous abdominal surgery reviewed",
+        "order": 10,
+        "search_terms": [
+          "surgery",
+          "previous",
+          "scar"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "gastro-constipation",
+    "specialty_id": "Gastroenterology",
+    "chips": [
+      {
+        "chip_id": "gastro-constipation-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "constipation",
+        "order": 1,
+        "search_terms": [
+          "constipation"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no rectal bleeding reported",
+        "order": 1,
+        "search_terms": [
+          "rectal",
+          "bleeding"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "abdominal examination documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "abdominal",
+          "exam"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "new onset after age 50",
+        "order": 1,
+        "search_terms": [
+          "new",
+          "onset",
+          "age"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-investigations-1",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "blood",
+          "FBC",
+          "TFT",
+          "calcium"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "2-4 weeks",
+        "order": 1,
+        "search_terms": [
+          "two",
+          "four",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "bowel frequency documented",
+        "order": 2,
+        "search_terms": [
+          "frequency",
+          "how often",
+          "bowel"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no unintentional weight loss reported",
+        "order": 2,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "abdominal distension documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "distension",
+          "bloating"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "rectal bleeding with constipation",
+        "order": 2,
+        "search_terms": [
+          "bleeding",
+          "PR"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-investigations-2",
+        "group": "investigations",
+        "chip_text": "previous gastroenterology records reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "previous",
+          "records"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "lifestyle and dietary advice documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "lifestyle",
+          "fibre",
+          "fluid"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "4-6 weeks",
+        "order": 2,
+        "search_terms": [
+          "four",
+          "six",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "stool consistency documented",
+        "order": 3,
+        "search_terms": [
+          "consistency",
+          "Bristol",
+          "hard"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no abdominal pain reported if applicable",
+        "order": 3,
+        "search_terms": [
+          "abdominal",
+          "pain"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "rectal examination documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "rectal",
+          "PR",
+          "digital"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "unexplained weight loss",
+        "order": 3,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "medication plan documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "laxative",
+          "medication"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-investigations-3",
+        "group": "investigations",
+        "chip_text": "thyroid function reviewed if ordered",
+        "order": 3,
+        "search_terms": [
+          "TFT",
+          "thyroid"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "straining documented",
+        "order": 4,
+        "search_terms": [
+          "straining",
+          "difficulty"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no vomiting reported",
+        "order": 4,
+        "search_terms": [
+          "vomiting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "appearance"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "family history of colorectal cancer",
+        "order": 4,
+        "search_terms": [
+          "family",
+          "CRC"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 4,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "sensation of incomplete evacuation reviewed",
+        "order": 5,
+        "search_terms": [
+          "incomplete",
+          "evacuation"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "acute abdominal distension",
+        "order": 5,
+        "search_terms": [
+          "acute",
+          "distension",
+          "obstruction"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 5,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "vitals documented if measured",
+        "order": 5,
+        "search_terms": [
+          "vitals",
+          "BP"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "laxative use reviewed",
+        "order": 6,
+        "search_terms": [
+          "laxative",
+          "medication"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 6,
+        "search_terms": [
+          "referral",
+          "gastroenterology"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "dietary fibre and fluid intake reviewed",
+        "order": 7,
+        "search_terms": [
+          "fibre",
+          "fluid",
+          "water"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "impact on everyday life documented",
+        "order": 8,
+        "search_terms": [
+          "impact",
+          "daily",
+          "QOL"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-constipation-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "abdominal pain or bloating reviewed",
+        "order": 9,
+        "search_terms": [
+          "pain",
+          "bloating"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "gastro-diarrhea",
+    "specialty_id": "Gastroenterology",
+    "chips": [
+      {
+        "chip_id": "gastro-diarrhea-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "diarrhoea",
+        "order": 1,
+        "search_terms": [
+          "diarrhoea",
+          "diarrhea",
+          "loose stools"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no rectal bleeding reported",
+        "order": 1,
+        "search_terms": [
+          "rectal",
+          "bleeding",
+          "PR"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "abdominal examination documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "abdominal",
+          "exam"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "bloody diarrhoea",
+        "order": 1,
+        "search_terms": [
+          "bloody",
+          "dysentery"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-investigations-1",
+        "group": "investigations",
+        "chip_text": "stool studies reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "stool",
+          "culture",
+          "MC+S"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "1-2 weeks",
+        "order": 1,
+        "search_terms": [
+          "one",
+          "two",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "onset and duration documented",
+        "order": 2,
+        "search_terms": [
+          "onset",
+          "duration",
+          "acute",
+          "chronic"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no unintentional weight loss reported",
+        "order": 2,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "abdominal tenderness documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "tenderness"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "severe dehydration",
+        "order": 2,
+        "search_terms": [
+          "dehydration",
+          "dry",
+          "turgor"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-investigations-2",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 2,
+        "search_terms": [
+          "blood",
+          "FBC",
+          "CRP",
+          "U+E"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "2-4 weeks",
+        "order": 2,
+        "search_terms": [
+          "two",
+          "four",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "frequency documented",
+        "order": 3,
+        "search_terms": [
+          "frequency",
+          "how often"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no nocturnal symptoms reported if applicable",
+        "order": 3,
+        "search_terms": [
+          "nocturnal",
+          "night"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "vitals documented if measured",
+        "order": 3,
+        "search_terms": [
+          "vitals",
+          "BP",
+          "pulse",
+          "temp"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "persistent diarrhoea over 6 weeks",
+        "order": 3,
+        "search_terms": [
+          "persistent",
+          "chronic"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-investigations-3",
+        "group": "investigations",
+        "chip_text": "previous records reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "previous",
+          "records"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "referral",
+          "gastroenterology"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "stool character documented",
+        "order": 4,
+        "search_terms": [
+          "character",
+          "watery",
+          "bloody"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "appearance"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "unexplained weight loss",
+        "order": 4,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 4,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "urgency reviewed",
+        "order": 5,
+        "search_terms": [
+          "urgency",
+          "bowel"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "hydration assessment documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "hydration",
+          "mucous",
+          "turgor"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "nocturnal symptoms",
+        "order": 5,
+        "search_terms": [
+          "nocturnal",
+          "night"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "dietary advice documented if discussed",
+        "order": 5,
+        "search_terms": [
+          "diet",
+          "BRAT",
+          "avoid"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "associated abdominal pain reviewed",
+        "order": 6,
+        "search_terms": [
+          "abdominal",
+          "pain",
+          "cramping"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "rectal examination documented if assessed",
+        "order": 6,
+        "search_terms": [
+          "rectal",
+          "PR"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "nausea or vomiting reviewed",
+        "order": 7,
+        "search_terms": [
+          "nausea",
+          "vomiting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "fever reviewed",
+        "order": 8,
+        "search_terms": [
+          "fever",
+          "temperature"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "travel history reviewed if relevant",
+        "order": 9,
+        "search_terms": [
+          "travel",
+          "foreign"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "medication history reviewed if relevant",
+        "order": 10,
+        "search_terms": [
+          "medication",
+          "antibiotic"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-diarrhea-symptoms-11",
+        "group": "symptoms",
+        "chip_text": "family history of IBD reviewed if relevant",
+        "order": 11,
+        "search_terms": [
+          "IBD",
+          "Crohn",
+          "colitis"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "gastro-dysphagia",
+    "specialty_id": "Gastroenterology",
+    "chips": [
+      {
+        "chip_id": "gastro-dysphagia-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "dysphagia",
+        "order": 1,
+        "search_terms": [
+          "dysphagia",
+          "swallowing",
+          "difficulty"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no weight loss reported if applicable",
+        "order": 1,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "appearance",
+          "nutrition"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "rapidly progressive dysphagia",
+        "order": 1,
+        "search_terms": [
+          "rapid",
+          "progressive"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-investigations-1",
+        "group": "investigations",
+        "chip_text": "previous endoscopy report reviewed if available",
+        "order": 1,
+        "search_terms": [
+          "OGD",
+          "EGD",
+          "endoscopy"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "2-4 weeks",
+        "order": 1,
+        "search_terms": [
+          "two",
+          "four",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "onset and duration documented",
+        "order": 2,
+        "search_terms": [
+          "onset",
+          "duration"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no haematemesis reported",
+        "order": 2,
+        "search_terms": [
+          "hematemesis",
+          "blood"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "vitals documented if measured",
+        "order": 2,
+        "search_terms": [
+          "vitals",
+          "BP",
+          "pulse"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "weight loss with dysphagia",
+        "order": 2,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-investigations-2",
+        "group": "investigations",
+        "chip_text": "barium swallow report reviewed if performed",
+        "order": 2,
+        "search_terms": [
+          "barium",
+          "swallow"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "4-6 weeks",
+        "order": 2,
+        "search_terms": [
+          "four",
+          "six",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "progressive or intermittent documented",
+        "order": 3,
+        "search_terms": [
+          "progressive",
+          "intermittent"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no persistent vomiting reported",
+        "order": 3,
+        "search_terms": [
+          "vomiting",
+          "regurgitation"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "abdominal examination documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "abdominal",
+          "exam"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "odynophagia",
+        "order": 3,
+        "search_terms": [
+          "odynophagia",
+          "painful",
+          "swallowing"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-investigations-3",
+        "group": "investigations",
+        "chip_text": "previous imaging reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "imaging",
+          "CT"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "referral",
+          "gastroenterology",
+          "OGD"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "solids versus liquids documented",
+        "order": 4,
+        "search_terms": [
+          "solids",
+          "liquids",
+          "both"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no hoarseness reported if relevant",
+        "order": 4,
+        "search_terms": [
+          "hoarseness",
+          "voice"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "BMI documented if measured",
+        "order": 4,
+        "search_terms": [
+          "BMI",
+          "weight"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "age over 50 with new dysphagia",
+        "order": 4,
+        "search_terms": [
+          "age",
+          "over 50",
+          "new"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 4,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "associated pain reviewed",
+        "order": 5,
+        "search_terms": [
+          "pain",
+          "odynophagia"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "hoarseness or cervical lymphadenopathy",
+        "order": 5,
+        "search_terms": [
+          "hoarseness",
+          "lymph",
+          "node"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no neurological symptoms reported if relevant",
+        "order": 5,
+        "search_terms": [
+          "neurological",
+          "CVA",
+          "stroke"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "weight loss reviewed",
+        "order": 6,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "relevant GI family history",
+        "order": 6,
+        "search_terms": [
+          "family",
+          "GI",
+          "cancer"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "regurgitation reviewed",
+        "order": 7,
+        "search_terms": [
+          "regurgitation",
+          "food",
+          "coming back"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "choking or aspiration reviewed",
+        "order": 8,
+        "search_terms": [
+          "choking",
+          "aspiration",
+          "cough"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-dysphagia-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "medication history reviewed if relevant",
+        "order": 9,
+        "search_terms": [
+          "medication",
+          "NSAID",
+          "bisphosphonate"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "gastro-gerd",
+    "specialty_id": "Gastroenterology",
+    "chips": [
+      {
+        "chip_id": "gastro-gerd-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "reflux symptoms",
+        "order": 1,
+        "search_terms": [
+          "reflux",
+          "GERD",
+          "acid"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no dysphagia reported",
+        "order": 1,
+        "search_terms": [
+          "dysphagia",
+          "swallowing"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "abdominal examination documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "abdominal",
+          "exam"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "dysphagia or odynophagia",
+        "order": 1,
+        "search_terms": [
+          "dysphagia",
+          "odynophagia"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-investigations-1",
+        "group": "investigations",
+        "chip_text": "previous endoscopy report reviewed if available",
+        "order": 1,
+        "search_terms": [
+          "endoscopy",
+          "OGD",
+          "EGD"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "4-6 weeks",
+        "order": 1,
+        "search_terms": [
+          "four",
+          "six",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "heartburn",
+        "order": 2,
+        "search_terms": [
+          "heartburn",
+          "burning"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no odynophagia reported",
+        "order": 2,
+        "search_terms": [
+          "odynophagia",
+          "painful",
+          "swallowing"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "epigastric tenderness documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "epigastric",
+          "tenderness"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "unexplained weight loss",
+        "order": 2,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-investigations-2",
+        "group": "investigations",
+        "chip_text": "previous imaging reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "imaging",
+          "barium"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "lifestyle modification discussed if applicable",
+        "order": 2,
+        "search_terms": [
+          "lifestyle",
+          "diet",
+          "weight"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "6-8 weeks",
+        "order": 2,
+        "search_terms": [
+          "six",
+          "eight",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "regurgitation",
+        "order": 3,
+        "search_terms": [
+          "regurgitation"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no weight loss reported",
+        "order": 3,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "vitals documented if measured",
+        "order": 3,
+        "search_terms": [
+          "vitals",
+          "BP",
+          "pulse"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "gastrointestinal bleeding",
+        "order": 3,
+        "search_terms": [
+          "bleeding",
+          "hematemesis",
+          "melena"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-investigations-3",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 3,
+        "search_terms": [
+          "blood",
+          "FBC",
+          "iron"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "medication plan documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "medication",
+          "PPI",
+          "antacid"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "epigastric discomfort",
+        "order": 4,
+        "search_terms": [
+          "epigastric",
+          "discomfort",
+          "pain"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no vomiting blood reported",
+        "order": 4,
+        "search_terms": [
+          "vomiting",
+          "blood",
+          "hematemesis"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "appearance",
+          "well"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "persistent vomiting",
+        "order": 4,
+        "search_terms": [
+          "vomiting",
+          "persistent"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 4,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "post-prandial symptoms documented",
+        "order": 5,
+        "search_terms": [
+          "postprandial",
+          "after",
+          "meals"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no black stools reported",
+        "order": 5,
+        "search_terms": [
+          "black",
+          "stools",
+          "melena"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "epigastric mass",
+        "order": 5,
+        "search_terms": [
+          "mass",
+          "epigastric"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 5,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "oral examination documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "oral",
+          "dental",
+          "erosion"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "nocturnal symptoms reviewed",
+        "order": 6,
+        "search_terms": [
+          "nocturnal",
+          "night",
+          "lying"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-relevant_negatives-6",
+        "group": "relevant_negatives",
+        "chip_text": "no persistent vomiting reported",
+        "order": 6,
+        "search_terms": [
+          "persistent",
+          "vomiting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "iron deficiency anaemia",
+        "order": 6,
+        "search_terms": [
+          "anaemia",
+          "IDA"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "trigger foods reviewed",
+        "order": 7,
+        "search_terms": [
+          "trigger",
+          "food",
+          "spicy",
+          "fatty"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-red_flags-7",
+        "group": "red_flags",
+        "chip_text": "family history of Barrett oesophagus if relevant",
+        "order": 7,
+        "search_terms": [
+          "Barrett",
+          "family",
+          "oesophageal"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "medication use reviewed",
+        "order": 8,
+        "search_terms": [
+          "medication",
+          "PPI",
+          "antacid"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "belching reviewed if relevant",
+        "order": 9,
+        "search_terms": [
+          "belching",
+          "burping"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-gerd-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "chest pain reviewed if non-cardiac",
+        "order": 10,
+        "search_terms": [
+          "chest",
+          "pain",
+          "non-cardiac"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "gastro-ibs-symptoms",
+    "specialty_id": "Gastroenterology",
+    "chips": [
+      {
+        "chip_id": "gastro-ibs-symptoms-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "IBS symptoms",
+        "order": 1,
+        "search_terms": [
+          "IBS",
+          "irritable",
+          "bowel"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no rectal bleeding reported",
+        "order": 1,
+        "search_terms": [
+          "rectal",
+          "bleeding",
+          "PR"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "abdominal examination documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "abdominal",
+          "exam"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "rectal bleeding",
+        "order": 1,
+        "search_terms": [
+          "rectal",
+          "bleeding"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-investigations-1",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "blood",
+          "FBC",
+          "CRP",
+          "coeliac"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "4-6 weeks",
+        "order": 1,
+        "search_terms": [
+          "four",
+          "six",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "abdominal pain reviewed",
+        "order": 2,
+        "search_terms": [
+          "abdominal",
+          "pain",
+          "cramping"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no unintentional weight loss reported",
+        "order": 2,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "abdominal tenderness documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "tenderness"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "unexplained weight loss",
+        "order": 2,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-investigations-2",
+        "group": "investigations",
+        "chip_text": "stool studies reviewed if ordered",
+        "order": 2,
+        "search_terms": [
+          "stool",
+          "calprotectin",
+          "culture"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "lifestyle and dietary modification discussed if applicable",
+        "order": 2,
+        "search_terms": [
+          "lifestyle",
+          "diet",
+          "FODMAP"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "6-8 weeks",
+        "order": 2,
+        "search_terms": [
+          "six",
+          "eight",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "bloating reviewed",
+        "order": 3,
+        "search_terms": [
+          "bloating",
+          "distension"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no nocturnal symptoms reported if applicable",
+        "order": 3,
+        "search_terms": [
+          "nocturnal",
+          "night"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "appearance",
+          "well"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "nocturnal symptoms",
+        "order": 3,
+        "search_terms": [
+          "nocturnal",
+          "night"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-investigations-3",
+        "group": "investigations",
+        "chip_text": "previous gastroenterology records reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "previous",
+          "records"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "medication plan documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "medication",
+          "antispasmodic"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "bowel habit pattern documented",
+        "order": 4,
+        "search_terms": [
+          "bowel",
+          "habit",
+          "alternating"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no fever reported",
+        "order": 4,
+        "search_terms": [
+          "fever"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "BMI documented if measured",
+        "order": 4,
+        "search_terms": [
+          "BMI",
+          "weight"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "family history of colorectal cancer",
+        "order": 4,
+        "search_terms": [
+          "family",
+          "history",
+          "CRC"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 4,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "constipation reviewed",
+        "order": 5,
+        "search_terms": [
+          "constipation"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "onset after age 50",
+        "order": 5,
+        "search_terms": [
+          "age",
+          "older",
+          "new onset"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 5,
+        "search_terms": [
+          "referral",
+          "gastroenterology"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "vitals documented if measured",
+        "order": 5,
+        "search_terms": [
+          "vitals",
+          "BP"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "diarrhoea reviewed",
+        "order": 6,
+        "search_terms": [
+          "diarrhoea",
+          "diarrhea"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "iron deficiency anaemia",
+        "order": 6,
+        "search_terms": [
+          "anaemia",
+          "IDA"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 6,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "urgency reviewed",
+        "order": 7,
+        "search_terms": [
+          "urgency",
+          "bowel"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "straining reviewed",
+        "order": 8,
+        "search_terms": [
+          "straining",
+          "incomplete",
+          "evacuation"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "symptom triggers reviewed",
+        "order": 9,
+        "search_terms": [
+          "trigger",
+          "food",
+          "stress"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-ibs-symptoms-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "mucus in stool reviewed",
+        "order": 10,
+        "search_terms": [
+          "mucus",
+          "slime"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "gastro-jaundice-documentation",
+    "specialty_id": "Gastroenterology",
+    "chips": [
+      {
+        "chip_id": "gastro-jaundice-documentation-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "jaundice",
+        "order": 1,
+        "search_terms": [
+          "jaundice",
+          "icterus",
+          "yellow"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no significant abdominal pain reported if applicable",
+        "order": 1,
+        "search_terms": [
+          "pain",
+          "abdominal"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "scleral icterus documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "scleral",
+          "icterus",
+          "eyes"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "rapidly rising bilirubin",
+        "order": 1,
+        "search_terms": [
+          "rapid",
+          "rising",
+          "bilirubin"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-investigations-1",
+        "group": "investigations",
+        "chip_text": "LFT and bilirubin reviewed",
+        "order": 1,
+        "search_terms": [
+          "LFT",
+          "bilirubin",
+          "ALT",
+          "ALP"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "1-2 weeks",
+        "order": 1,
+        "search_terms": [
+          "one",
+          "two",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "onset and duration documented",
+        "order": 2,
+        "search_terms": [
+          "onset",
+          "duration",
+          "acute"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no fever reported if applicable",
+        "order": 2,
+        "search_terms": [
+          "fever"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "abdominal examination documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "abdominal",
+          "exam"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "signs of liver failure if assessed",
+        "order": 2,
+        "search_terms": [
+          "liver",
+          "failure",
+          "ascites",
+          "encephalopathy"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-investigations-2",
+        "group": "investigations",
+        "chip_text": "abdominal imaging reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "ultrasound",
+          "CT",
+          "MRCP"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "2-4 weeks",
+        "order": 2,
+        "search_terms": [
+          "two",
+          "four",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "colour of urine and stool reviewed",
+        "order": 3,
+        "search_terms": [
+          "urine",
+          "dark",
+          "stool",
+          "pale"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no haematemesis reported",
+        "order": 3,
+        "search_terms": [
+          "hematemesis",
+          "bleeding"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "hepatomegaly documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "hepatomegaly",
+          "liver"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "right upper quadrant tenderness",
+        "order": 3,
+        "search_terms": [
+          "RUQ",
+          "tenderness"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-investigations-3",
+        "group": "investigations",
+        "chip_text": "viral hepatitis serology reviewed if ordered",
+        "order": 3,
+        "search_terms": [
+          "hepatitis",
+          "A",
+          "B",
+          "C",
+          "E"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "referral",
+          "gastroenterology",
+          "hepatology"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "pruritus reviewed",
+        "order": 4,
+        "search_terms": [
+          "pruritus",
+          "itching"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "vitals documented if measured",
+        "order": 4,
+        "search_terms": [
+          "vitals",
+          "BP",
+          "pulse",
+          "temp"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "fever with jaundice",
+        "order": 4,
+        "search_terms": [
+          "fever",
+          "cholangitis"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 4,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "abdominal pain reviewed",
+        "order": 5,
+        "search_terms": [
+          "abdominal",
+          "pain",
+          "RUQ"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "unexplained weight loss",
+        "order": 5,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "signs of chronic liver disease documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "chronic",
+          "stigmata"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "weight loss reviewed",
+        "order": 6,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "palpable gallbladder",
+        "order": 6,
+        "search_terms": [
+          "gallbladder",
+          "palpable",
+          "Courvoisier"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "alcohol history reviewed",
+        "order": 7,
+        "search_terms": [
+          "alcohol"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "medication history reviewed if relevant",
+        "order": 8,
+        "search_terms": [
+          "medication",
+          "hepatotoxic"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "travel history reviewed if relevant",
+        "order": 9,
+        "search_terms": [
+          "travel",
+          "hepatitis"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-jaundice-documentation-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "alcohol intake quantified",
+        "order": 10,
+        "search_terms": [
+          "alcohol",
+          "units",
+          "per week"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "gastro-liver-enzyme-review",
+    "specialty_id": "Gastroenterology",
+    "chips": [
+      {
+        "chip_id": "gastro-liver-enzyme-review-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "liver enzyme review",
+        "order": 1,
+        "search_terms": [
+          "LFT",
+          "liver",
+          "enzymes"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "vitals documented if measured",
+        "order": 1,
+        "search_terms": [
+          "vitals",
+          "BP",
+          "pulse"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "significant transaminitis",
+        "order": 1,
+        "search_terms": [
+          "transaminitis",
+          "high",
+          "ALT",
+          "AST"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-investigations-1",
+        "group": "investigations",
+        "chip_text": "previous LFT records reviewed if available",
+        "order": 1,
+        "search_terms": [
+          "previous",
+          "LFT",
+          "trend"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "4-6 weeks",
+        "order": 1,
+        "search_terms": [
+          "four",
+          "six",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no jaundice reported",
+        "order": 1,
+        "search_terms": [
+          "jaundice",
+          "yellow"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "AST and ALT reviewed",
+        "order": 2,
+        "search_terms": [
+          "AST",
+          "ALT",
+          "transaminases"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "abdominal examination documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "abdominal",
+          "exam"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "obstructive LFT pattern",
+        "order": 2,
+        "search_terms": [
+          "obstructive",
+          "ALP",
+          "GGT"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-investigations-2",
+        "group": "investigations",
+        "chip_text": "abdominal imaging reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "ultrasound",
+          "liver",
+          "CT"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "repeat testing interval documented if clinician decided",
+        "order": 2,
+        "search_terms": [
+          "repeat",
+          "LFT",
+          "interval"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "3 months",
+        "order": 2,
+        "search_terms": [
+          "three",
+          "months"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no abdominal pain reported",
+        "order": 2,
+        "search_terms": [
+          "pain",
+          "RUQ"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "ALP and GGT reviewed",
+        "order": 3,
+        "search_terms": [
+          "ALP",
+          "GGT",
+          "cholestatic"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "hepatomegaly documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "hepatomegaly",
+          "liver",
+          "enlarged"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "jaundice",
+        "order": 3,
+        "search_terms": [
+          "jaundice",
+          "icterus"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-investigations-3",
+        "group": "investigations",
+        "chip_text": "viral hepatitis serology reviewed if ordered",
+        "order": 3,
+        "search_terms": [
+          "hepatitis",
+          "B",
+          "C",
+          "serology"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "referral",
+          "gastroenterology",
+          "hepatology"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "bilirubin reviewed",
+        "order": 4,
+        "search_terms": [
+          "bilirubin",
+          "jaundice"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "jaundice documented if present",
+        "order": 4,
+        "search_terms": [
+          "jaundice",
+          "icterus",
+          "sclera"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "right upper quadrant pain",
+        "order": 4,
+        "search_terms": [
+          "RUQ",
+          "pain"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 4,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "symptoms reviewed",
+        "order": 5,
+        "search_terms": [
+          "symptoms",
+          "fatigue",
+          "jaundice"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "signs of chronic liver disease documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "spider",
+          "naevi",
+          "palmar",
+          "erythema"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "signs of decompensated liver disease",
+        "order": 5,
+        "search_terms": [
+          "ascites",
+          "encephalopathy"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "alcohol history reviewed if relevant",
+        "order": 6,
+        "search_terms": [
+          "alcohol",
+          "drinking"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "medication history reviewed if relevant",
+        "order": 7,
+        "search_terms": [
+          "medication",
+          "statin",
+          "paracetamol"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "fatigue reviewed",
+        "order": 8,
+        "search_terms": [
+          "fatigue",
+          "tiredness"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-liver-enzyme-review-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "pruritus reviewed if relevant",
+        "order": 9,
+        "search_terms": [
+          "itching",
+          "pruritus"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "gastro-post-endoscopy-followup",
+    "specialty_id": "Gastroenterology",
+    "chips": [
+      {
+        "chip_id": "gastro-post-endoscopy-followup-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "post-endoscopy follow-up",
+        "order": 1,
+        "search_terms": [
+          "post",
+          "endoscopy",
+          "followup"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "abdominal examination documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "abdominal",
+          "exam"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "significant post-procedure bleeding",
+        "order": 1,
+        "search_terms": [
+          "post",
+          "procedure",
+          "bleeding"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-investigations-1",
+        "group": "investigations",
+        "chip_text": "endoscopy report reviewed if available",
+        "order": 1,
+        "search_terms": [
+          "endoscopy",
+          "OGD",
+          "colonoscopy"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "4-6 weeks",
+        "order": 1,
+        "search_terms": [
+          "four",
+          "six",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no post-procedure bleeding reported",
+        "order": 1,
+        "search_terms": [
+          "bleeding",
+          "post",
+          "procedure"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "procedure tolerance reviewed",
+        "order": 2,
+        "search_terms": [
+          "tolerance",
+          "sedation"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "vitals documented if measured",
+        "order": 2,
+        "search_terms": [
+          "vitals",
+          "BP",
+          "pulse"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "unexplained abdominal pain after procedure",
+        "order": 2,
+        "search_terms": [
+          "pain",
+          "after",
+          "scope"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-investigations-2",
+        "group": "investigations",
+        "chip_text": "histology results reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "histology",
+          "biopsy",
+          "pathology"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "medication plan documented if clinician decided",
+        "order": 2,
+        "search_terms": [
+          "medication",
+          "PPI",
+          "change"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "3-6 months",
+        "order": 2,
+        "search_terms": [
+          "three",
+          "six",
+          "months"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no post-procedure pain reported",
+        "order": 2,
+        "search_terms": [
+          "pain",
+          "after",
+          "scope"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "clinical findings reviewed",
+        "order": 3,
+        "search_terms": [
+          "findings",
+          "endoscopy",
+          "result"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 3,
+        "search_terms": [
+          "appearance"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "perforation signs if suspected",
+        "order": 3,
+        "search_terms": [
+          "perforation",
+          "peritonitis"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-investigations-3",
+        "group": "investigations",
+        "chip_text": "previous records reviewed if available",
+        "order": 3,
+        "search_terms": [
+          "previous",
+          "records"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "follow-up interval for repeat endoscopy documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "repeat",
+          "scope",
+          "interval"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "1 year if surveillance needed",
+        "order": 3,
+        "search_terms": [
+          "one",
+          "year",
+          "surveillance"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "biopsy results reviewed if available",
+        "order": 4,
+        "search_terms": [
+          "biopsy",
+          "histology",
+          "result"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 4,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "sooner if symptoms recur",
+        "order": 4,
+        "search_terms": [
+          "sooner",
+          "recurrence"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "abdominal tenderness documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "tenderness",
+          "guarding"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "symptoms since procedure reviewed",
+        "order": 5,
+        "search_terms": [
+          "symptoms",
+          "recovery"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 5,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-follow_up-5",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 5,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "bleeding or pain reviewed",
+        "order": 6,
+        "search_terms": [
+          "bleeding",
+          "pain",
+          "post",
+          "procedure"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 6,
+        "search_terms": [
+          "referral",
+          "follow-up"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "medication adjustment reviewed if applicable",
+        "order": 7,
+        "search_terms": [
+          "medication",
+          "PPI",
+          "change"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "diet tolerated since procedure",
+        "order": 8,
+        "search_terms": [
+          "diet",
+          "eating",
+          "tolerance"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-post-endoscopy-followup-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "return to normal activities reviewed",
+        "order": 9,
+        "search_terms": [
+          "activity",
+          "work",
+          "recovery"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "gastro-rectal-bleeding",
+    "specialty_id": "Gastroenterology",
+    "chips": [
+      {
+        "chip_id": "gastro-rectal-bleeding-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "rectal bleeding",
+        "order": 1,
+        "search_terms": [
+          "rectal",
+          "bleeding",
+          "PR",
+          "blood"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no melena reported if relevant",
+        "order": 1,
+        "search_terms": [
+          "melena",
+          "black",
+          "tarry"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "abdominal examination documented if assessed",
+        "order": 1,
+        "search_terms": [
+          "abdominal",
+          "exam"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "haemodynamic instability if assessed",
+        "order": 1,
+        "search_terms": [
+          "haemodynamic",
+          "unstable",
+          "BP"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-investigations-1",
+        "group": "investigations",
+        "chip_text": "blood tests reviewed if ordered",
+        "order": 1,
+        "search_terms": [
+          "blood",
+          "FBC",
+          "coagulation",
+          "iron"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "clinician-entered plan documented",
+        "order": 1,
+        "search_terms": [
+          "plan",
+          "management"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "2-4 weeks",
+        "order": 1,
+        "search_terms": [
+          "two",
+          "four",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "amount and colour documented",
+        "order": 2,
+        "search_terms": [
+          "amount",
+          "colour",
+          "bright",
+          "dark"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no haematemesis reported",
+        "order": 2,
+        "search_terms": [
+          "hematemesis",
+          "vomiting",
+          "blood"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "rectal examination documented if assessed",
+        "order": 2,
+        "search_terms": [
+          "rectal",
+          "PR",
+          "DRE"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "significant or persistent bleeding",
+        "order": 2,
+        "search_terms": [
+          "persistent",
+          "significant"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-investigations-2",
+        "group": "investigations",
+        "chip_text": "previous endoscopy reports reviewed if available",
+        "order": 2,
+        "search_terms": [
+          "colonoscopy",
+          "sigmoidoscopy"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "safety-netting documented if discussed",
+        "order": 2,
+        "search_terms": [
+          "safety",
+          "netting"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "4-6 weeks",
+        "order": 2,
+        "search_terms": [
+          "four",
+          "six",
+          "weeks"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "frequency documented",
+        "order": 3,
+        "search_terms": [
+          "frequency",
+          "how often"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no significant weight loss reported if applicable",
+        "order": 3,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "vitals documented if measured",
+        "order": 3,
+        "search_terms": [
+          "vitals",
+          "BP",
+          "pulse"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "weight loss with rectal bleeding",
+        "order": 3,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "referral documented if clinician decided",
+        "order": 3,
+        "search_terms": [
+          "referral",
+          "gastroenterology",
+          "colonoscopy"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "sooner if worsening",
+        "order": 3,
+        "search_terms": [
+          "sooner",
+          "worsening"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "associated pain reviewed",
+        "order": 4,
+        "search_terms": [
+          "pain",
+          "anal"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no abdominal mass reported",
+        "order": 4,
+        "search_terms": [
+          "mass",
+          "palpable"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "general appearance documented if assessed",
+        "order": 4,
+        "search_terms": [
+          "appearance",
+          "pale"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "family history of colorectal cancer",
+        "order": 4,
+        "search_terms": [
+          "family",
+          "CRC"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "follow-up documented if arranged",
+        "order": 4,
+        "search_terms": [
+          "follow",
+          "up"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "PRN",
+        "order": 4,
+        "search_terms": [
+          "PRN",
+          "as needed"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "bowel habit change reviewed",
+        "order": 5,
+        "search_terms": [
+          "bowel",
+          "habit",
+          "change"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "age over 50 with new bleeding",
+        "order": 5,
+        "search_terms": [
+          "age",
+          "over 50",
+          "new"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "anal inspection documented if assessed",
+        "order": 5,
+        "search_terms": [
+          "anal",
+          "fissure",
+          "haemorrhoid"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-follow_up-5",
+        "group": "follow_up",
+        "chip_text": "sooner if bleeding increases",
+        "order": 5,
+        "search_terms": [
+          "sooner",
+          "heavy"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "weight loss reviewed",
+        "order": 6,
+        "search_terms": [
+          "weight",
+          "loss"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "change in bowel habit with bleeding",
+        "order": 6,
+        "search_terms": [
+          "change",
+          "bowel",
+          "habit"
+        ],
+        "tags": [
+          "gastroenterology",
+          "high_safety"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "family history of colorectal cancer reviewed",
+        "order": 7,
+        "search_terms": [
+          "family",
+          "CRC",
+          "bowel cancer"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "anticoagulant use reviewed if relevant",
+        "order": 8,
+        "search_terms": [
+          "anticoagulant",
+          "aspirin",
+          "warfarin"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "anal symptoms reviewed",
+        "order": 9,
+        "search_terms": [
+          "anal",
+          "pain",
+          "itching",
+          "lump"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      },
+      {
+        "chip_id": "gastro-rectal-bleeding-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "previous colonoscopy history reviewed",
+        "order": 10,
+        "search_terms": [
+          "colonoscopy",
+          "screening"
+        ],
+        "tags": [
+          "gastroenterology"
+        ]
+      }
+    ]
+  },
+  {
     "workflow_id": "gp-abdominal-pain",
     "specialty_id": "General Medicine / GP",
     "chips": [

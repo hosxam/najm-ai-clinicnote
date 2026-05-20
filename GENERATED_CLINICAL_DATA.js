@@ -1,6 +1,6 @@
 // GENERATED_CLINICAL_DATA.js — Najm AI ClinicNote
 // Auto-generated. Do not edit manually.
-// Generated: 2026-05-20 04:19:57
+// Generated: 2026-05-20 05:46:18
 // Source: /data JSON files (validated)
 
 (function() {
@@ -42,7 +42,7 @@
   var data = {
   "metadata": {
     "version": "v2",
-    "generated_at": "2026-05-20 04:19:57",
+    "generated_at": "2026-05-20 05:46:18",
     "source": "validated_json_dataset (data/ CSVs -> JSON, commit 262c021)",
     "warning": "Documentation support only. Clinician review required.",
     "description": "Najm AI ClinicNote clinical data bundle. Built from /data JSON files."
@@ -50,18 +50,18 @@
   "stats": {
     "specialty_count": 8,
     "workflow_count": 150,
-    "chip_count": 4201,
+    "chip_count": 4560,
     "diagnosis_index_count": 423,
     "report_template_count": 7,
     "history_layout_count": 8,
     "chip_group_counts": {
-      "symptoms": 1150,
-      "relevant_negatives": 560,
-      "exam_findings": 744,
-      "red_flags": 551,
-      "investigations": 216,
-      "plan_phrases": 642,
-      "follow_up": 338
+      "symptoms": 1242,
+      "relevant_negatives": 595,
+      "exam_findings": 783,
+      "red_flags": 631,
+      "investigations": 238,
+      "plan_phrases": 692,
+      "follow_up": 379
     },
     "workflow_chip_min": 0,
     "workflow_chip_max": 53,
@@ -59645,15 +59645,15 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 10,
+        "symptoms": 11,
         "relevant_negatives": 5,
-        "exam_findings": 9,
-        "red_flags": 0,
+        "exam_findings": 8,
+        "red_flags": 5,
         "investigations": 4,
-        "plan_phrases": 5,
-        "follow_up": 5
+        "plan_phrases": 6,
+        "follow_up": 4
       },
-      "total_chips": 38,
+      "total_chips": 43,
       "chips": {
         "symptoms": [
           {
@@ -59744,7 +59744,8 @@
             "order": 8,
             "search_terms": [
               "inhaler",
-              "puffer"
+              "puffer",
+              "use"
             ],
             "tags": [
               "respiratory"
@@ -59770,6 +59771,19 @@
             "search_terms": [
               "occupational",
               "work"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-asthma-followup-symptoms-11",
+            "chip_text": "asthma control level documented if assessed",
+            "order": 11,
+            "search_terms": [
+              "control",
+              "ACT",
+              "validated"
             ],
             "tags": [
               "respiratory"
@@ -59842,12 +59856,12 @@
         "exam_findings": [
           {
             "chip_id": "resp-asthma-followup-exam_findings-1",
-            "chip_text": "vitals documented if measured",
+            "chip_text": "respiratory rate documented if measured",
             "order": 1,
             "search_terms": [
-              "vitals",
-              "O2 sat",
-              "saturation"
+              "RR",
+              "respiratory",
+              "rate"
             ],
             "tags": [
               "respiratory"
@@ -59855,8 +59869,34 @@
           },
           {
             "chip_id": "resp-asthma-followup-exam_findings-2",
-            "chip_text": "chest auscultation documented if assessed",
+            "chip_text": "oxygen saturation documented if measured",
             "order": 2,
+            "search_terms": [
+              "oxygen",
+              "SpO2",
+              "saturations"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-asthma-followup-exam_findings-3",
+            "chip_text": "work of breathing documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "work",
+              "breathing",
+              "accessory"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-asthma-followup-exam_findings-4",
+            "chip_text": "chest auscultation documented if assessed",
+            "order": 4,
             "search_terms": [
               "auscultation",
               "chest",
@@ -59867,9 +59907,9 @@
             ]
           },
           {
-            "chip_id": "resp-asthma-followup-exam_findings-3",
+            "chip_id": "resp-asthma-followup-exam_findings-5",
             "chip_text": "wheeze documented if assessed",
-            "order": 3,
+            "order": 5,
             "search_terms": [
               "wheeze",
               "expiratory"
@@ -59879,32 +59919,8 @@
             ]
           },
           {
-            "chip_id": "resp-asthma-followup-exam_findings-4",
-            "chip_text": "air entry documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "air",
-              "entry"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-exam_findings-5",
-            "chip_text": "accessory muscle use documented if assessed",
-            "order": 5,
-            "search_terms": [
-              "accessory",
-              "muscles"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
             "chip_id": "resp-asthma-followup-exam_findings-6",
-            "chip_text": "peak flow documented if measured",
+            "chip_text": "peak flow recorded if measured",
             "order": 6,
             "search_terms": [
               "peak",
@@ -59917,12 +59933,12 @@
           },
           {
             "chip_id": "resp-asthma-followup-exam_findings-7",
-            "chip_text": "oxygen saturation documented if measured",
+            "chip_text": "air entry documented if assessed",
             "order": 7,
             "search_terms": [
-              "oxygen",
-              "saturation",
-              "SpO2"
+              "air",
+              "entry",
+              "bilateral"
             ],
             "tags": [
               "respiratory"
@@ -59930,21 +59946,8 @@
           },
           {
             "chip_id": "resp-asthma-followup-exam_findings-8",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 8,
-            "search_terms": [
-              "respiratory",
-              "rate",
-              "RR"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-exam_findings-9",
             "chip_text": "chest expansion documented if assessed",
-            "order": 9,
+            "order": 8,
             "search_terms": [
               "expansion",
               "symmetry"
@@ -59954,16 +59957,83 @@
             ]
           }
         ],
-        "red_flags": [],
+        "red_flags": [
+          {
+            "chip_id": "resp-asthma-followup-red_flags-1",
+            "chip_text": "severe breathlessness",
+            "order": 1,
+            "search_terms": [
+              "severe",
+              "breathlessness"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-asthma-followup-red_flags-2",
+            "chip_text": "reduced oxygen saturation if documented",
+            "order": 2,
+            "search_terms": [
+              "reduced",
+              "oxygen",
+              "desaturation"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-asthma-followup-red_flags-3",
+            "chip_text": "inability to speak full sentences if assessed",
+            "order": 3,
+            "search_terms": [
+              "speak",
+              "sentences"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-asthma-followup-red_flags-4",
+            "chip_text": "cyanosis",
+            "order": 4,
+            "search_terms": [
+              "cyanosis",
+              "blue"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-asthma-followup-red_flags-5",
+            "chip_text": "altered consciousness",
+            "order": 5,
+            "search_terms": [
+              "consciousness",
+              "confusion"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          }
+        ],
         "investigations": [
           {
             "chip_id": "resp-asthma-followup-investigations-1",
-            "chip_text": "peak flow diary reviewed if available",
+            "chip_text": "peak flow recorded if measured",
             "order": 1,
             "search_terms": [
               "peak",
               "flow",
-              "diary"
+              "PEFR"
             ],
             "tags": [
               "respiratory"
@@ -59971,20 +60041,8 @@
           },
           {
             "chip_id": "resp-asthma-followup-investigations-2",
-            "chip_text": "inhaler technique reviewed if assessed",
+            "chip_text": "spirometry reviewed if available",
             "order": 2,
-            "search_terms": [
-              "inhaler",
-              "technique"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-investigations-3",
-            "chip_text": "spirometry report reviewed if available",
-            "order": 3,
             "search_terms": [
               "spirometry",
               "PFT"
@@ -59994,13 +60052,24 @@
             ]
           },
           {
+            "chip_id": "resp-asthma-followup-investigations-3",
+            "chip_text": "oxygen saturation recorded if measured",
+            "order": 3,
+            "search_terms": [
+              "oxygen",
+              "SpO2"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
             "chip_id": "resp-asthma-followup-investigations-4",
-            "chip_text": "previous asthma action plan reviewed if available",
+            "chip_text": "previous respiratory records reviewed if available",
             "order": 4,
             "search_terms": [
-              "action",
-              "plan",
-              "asthma"
+              "previous",
+              "records"
             ],
             "tags": [
               "respiratory"
@@ -60022,8 +60091,20 @@
           },
           {
             "chip_id": "resp-asthma-followup-plan_phrases-2",
-            "chip_text": "medication plan documented if clinician decided",
+            "chip_text": "inhaler technique reviewed if discussed",
             "order": 2,
+            "search_terms": [
+              "inhaler",
+              "technique"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-asthma-followup-plan_phrases-3",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 3,
             "search_terms": [
               "medication",
               "inhaler",
@@ -60034,24 +60115,12 @@
             ]
           },
           {
-            "chip_id": "resp-asthma-followup-plan_phrases-3",
-            "chip_text": "inhaler technique review documented if assessed",
-            "order": 3,
-            "search_terms": [
-              "inhaler",
-              "technique"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
             "chip_id": "resp-asthma-followup-plan_phrases-4",
-            "chip_text": "asthma action plan reviewed if applicable",
+            "chip_text": "trigger advice documented if discussed",
             "order": 4,
             "search_terms": [
-              "action",
-              "plan"
+              "trigger",
+              "advice"
             ],
             "tags": [
               "respiratory"
@@ -60059,11 +60128,23 @@
           },
           {
             "chip_id": "resp-asthma-followup-plan_phrases-5",
-            "chip_text": "referral documented if clinician decided",
+            "chip_text": "safety-netting documented if discussed",
             "order": 5,
             "search_terms": [
-              "referral",
+              "safety",
+              "netting"
+            ],
+            "tags": [
               "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-asthma-followup-plan_phrases-6",
+            "chip_text": "follow-up documented if arranged",
+            "order": 6,
+            "search_terms": [
+              "follow",
+              "up"
             ],
             "tags": [
               "respiratory"
@@ -60073,20 +60154,8 @@
         "follow_up": [
           {
             "chip_id": "resp-asthma-followup-follow_up-1",
-            "chip_text": "follow-up documented if arranged",
-            "order": 1,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-follow_up-2",
             "chip_text": "1-3 months",
-            "order": 2,
+            "order": 1,
             "search_terms": [
               "one",
               "three",
@@ -60097,9 +60166,9 @@
             ]
           },
           {
-            "chip_id": "resp-asthma-followup-follow_up-3",
+            "chip_id": "resp-asthma-followup-follow_up-2",
             "chip_text": "3-6 months if stable",
-            "order": 3,
+            "order": 2,
             "search_terms": [
               "three",
               "six"
@@ -60109,9 +60178,9 @@
             ]
           },
           {
-            "chip_id": "resp-asthma-followup-follow_up-4",
+            "chip_id": "resp-asthma-followup-follow_up-3",
             "chip_text": "sooner if worsening",
-            "order": 4,
+            "order": 3,
             "search_terms": [
               "sooner",
               "worsening"
@@ -60121,9 +60190,9 @@
             ]
           },
           {
-            "chip_id": "resp-asthma-followup-follow_up-5",
+            "chip_id": "resp-asthma-followup-follow_up-4",
             "chip_text": "PRN",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "PRN",
               "as needed"
@@ -60182,14 +60251,14 @@
       },
       "chip_counts": {
         "symptoms": 10,
-        "relevant_negatives": 5,
-        "exam_findings": 8,
-        "red_flags": 0,
-        "investigations": 4,
-        "plan_phrases": 5,
+        "relevant_negatives": 3,
+        "exam_findings": 6,
+        "red_flags": 4,
+        "investigations": 3,
+        "plan_phrases": 7,
         "follow_up": 5
       },
-      "total_chips": 37,
+      "total_chips": 38,
       "chips": {
         "symptoms": [
           {
@@ -60206,10 +60275,12 @@
           },
           {
             "chip_id": "resp-copd-followup-symptoms-2",
-            "chip_text": "cough reviewed",
+            "chip_text": "dyspnea reviewed",
             "order": 2,
             "search_terms": [
-              "cough"
+              "dyspnea",
+              "SOB",
+              "breathlessness"
             ],
             "tags": [
               "respiratory"
@@ -60217,9 +60288,10 @@
           },
           {
             "chip_id": "resp-copd-followup-symptoms-3",
-            "chip_text": "sputum reviewed",
+            "chip_text": "cough and sputum reviewed",
             "order": 3,
             "search_terms": [
+              "cough",
               "sputum",
               "phlegm"
             ],
@@ -60229,11 +60301,11 @@
           },
           {
             "chip_id": "resp-copd-followup-symptoms-4",
-            "chip_text": "shortness of breath reviewed",
+            "chip_text": "exacerbation history reviewed",
             "order": 4,
             "search_terms": [
-              "SOB",
-              "breathlessness"
+              "exacerbation",
+              "flare"
             ],
             "tags": [
               "respiratory"
@@ -60254,32 +60326,8 @@
           },
           {
             "chip_id": "resp-copd-followup-symptoms-6",
-            "chip_text": "nocturnal symptoms reviewed",
-            "order": 6,
-            "search_terms": [
-              "nocturnal",
-              "night"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-symptoms-7",
-            "chip_text": "exacerbation history reviewed",
-            "order": 7,
-            "search_terms": [
-              "exacerbation",
-              "flare"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-symptoms-8",
             "chip_text": "inhaler use reviewed",
-            "order": 8,
+            "order": 6,
             "search_terms": [
               "inhaler",
               "puffer"
@@ -60289,9 +60337,9 @@
             ]
           },
           {
-            "chip_id": "resp-copd-followup-symptoms-9",
-            "chip_text": "smoking history reviewed if relevant",
-            "order": 9,
+            "chip_id": "resp-copd-followup-symptoms-7",
+            "chip_text": "smoking history reviewed",
+            "order": 7,
             "search_terms": [
               "smoking",
               "cigarettes"
@@ -60301,13 +60349,38 @@
             ]
           },
           {
+            "chip_id": "resp-copd-followup-symptoms-8",
+            "chip_text": "nocturnal symptoms reviewed",
+            "order": 8,
+            "search_terms": [
+              "nocturnal",
+              "night"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-copd-followup-symptoms-9",
+            "chip_text": "functional impact reviewed",
+            "order": 9,
+            "search_terms": [
+              "ADL",
+              "daily",
+              "function"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
             "chip_id": "resp-copd-followup-symptoms-10",
-            "chip_text": "impact on everyday activities reviewed",
+            "chip_text": "sputum color change reviewed if relevant",
             "order": 10,
             "search_terms": [
-              "daily",
-              "ADL",
-              "activities"
+              "sputum",
+              "color",
+              "purulence"
             ],
             "tags": [
               "respiratory"
@@ -60317,20 +60390,8 @@
         "relevant_negatives": [
           {
             "chip_id": "resp-copd-followup-relevant_negatives-1",
-            "chip_text": "no hemoptysis reported",
-            "order": 1,
-            "search_terms": [
-              "hemoptysis",
-              "blood"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-relevant_negatives-2",
             "chip_text": "no chest pain reported",
-            "order": 2,
+            "order": 1,
             "search_terms": [
               "chest",
               "pain"
@@ -60340,35 +60401,23 @@
             ]
           },
           {
+            "chip_id": "resp-copd-followup-relevant_negatives-2",
+            "chip_text": "no hemoptysis reported",
+            "order": 2,
+            "search_terms": [
+              "hemoptysis",
+              "blood"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
             "chip_id": "resp-copd-followup-relevant_negatives-3",
-            "chip_text": "no recent hospital attendance reported if applicable",
+            "chip_text": "no fever reported if relevant",
             "order": 3,
             "search_terms": [
-              "hospital",
-              "admission"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-relevant_negatives-4",
-            "chip_text": "no fever reported if relevant",
-            "order": 4,
-            "search_terms": [
               "fever"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-relevant_negatives-5",
-            "chip_text": "no increase in sputum purulence reported if applicable",
-            "order": 5,
-            "search_terms": [
-              "sputum",
-              "purulence"
             ],
             "tags": [
               "respiratory"
@@ -60378,11 +60427,11 @@
         "exam_findings": [
           {
             "chip_id": "resp-copd-followup-exam_findings-1",
-            "chip_text": "vitals documented if measured",
+            "chip_text": "oxygen saturation documented if measured",
             "order": 1,
             "search_terms": [
-              "vitals",
-              "O2 sat"
+              "oxygen",
+              "SpO2"
             ],
             "tags": [
               "respiratory"
@@ -60402,10 +60451,11 @@
           },
           {
             "chip_id": "resp-copd-followup-exam_findings-3",
-            "chip_text": "wheeze documented if assessed",
+            "chip_text": "respiratory rate documented if measured",
             "order": 3,
             "search_terms": [
-              "wheeze"
+              "RR",
+              "respiratory"
             ],
             "tags": [
               "respiratory"
@@ -60413,11 +60463,12 @@
           },
           {
             "chip_id": "resp-copd-followup-exam_findings-4",
-            "chip_text": "air entry documented if assessed",
+            "chip_text": "peripheral oedema documented if assessed",
             "order": 4,
             "search_terms": [
-              "air",
-              "entry"
+              "oedema",
+              "ankle",
+              "JVP"
             ],
             "tags": [
               "respiratory"
@@ -60425,32 +60476,8 @@
           },
           {
             "chip_id": "resp-copd-followup-exam_findings-5",
-            "chip_text": "oxygen saturation documented if measured",
-            "order": 5,
-            "search_terms": [
-              "oxygen",
-              "SpO2"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-exam_findings-6",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 6,
-            "search_terms": [
-              "respiratory",
-              "rate"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-exam_findings-7",
             "chip_text": "accessory muscle use documented if assessed",
-            "order": 7,
+            "order": 5,
             "search_terms": [
               "accessory",
               "muscles"
@@ -60460,29 +60487,81 @@
             ]
           },
           {
-            "chip_id": "resp-copd-followup-exam_findings-8",
-            "chip_text": "peripheral oedema documented if assessed",
-            "order": 8,
+            "chip_id": "resp-copd-followup-exam_findings-6",
+            "chip_text": "chest percussion documented if assessed",
+            "order": 6,
             "search_terms": [
-              "oedema",
-              "edema",
-              "ankle"
+              "percussion",
+              "hyperinflation"
             ],
             "tags": [
               "respiratory"
             ]
           }
         ],
-        "red_flags": [],
+        "red_flags": [
+          {
+            "chip_id": "resp-copd-followup-red_flags-1",
+            "chip_text": "severe breathlessness at rest",
+            "order": 1,
+            "search_terms": [
+              "severe",
+              "breathlessness"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-copd-followup-red_flags-2",
+            "chip_text": "reduced oxygen saturation if documented",
+            "order": 2,
+            "search_terms": [
+              "reduced",
+              "oxygen"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-copd-followup-red_flags-3",
+            "chip_text": "cyanosis",
+            "order": 3,
+            "search_terms": [
+              "cyanosis"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-copd-followup-red_flags-4",
+            "chip_text": "signs of cor pulmonale if assessed",
+            "order": 4,
+            "search_terms": [
+              "cor",
+              "pulmonale",
+              "oedema"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          }
+        ],
         "investigations": [
           {
             "chip_id": "resp-copd-followup-investigations-1",
-            "chip_text": "spirometry report reviewed if available",
+            "chip_text": "spirometry reviewed if available",
             "order": 1,
             "search_terms": [
               "spirometry",
-              "PFT",
-              "FEV1"
+              "FEV1",
+              "PFT"
             ],
             "tags": [
               "respiratory"
@@ -60490,11 +60569,11 @@
           },
           {
             "chip_id": "resp-copd-followup-investigations-2",
-            "chip_text": "oxygen assessment reviewed if applicable",
+            "chip_text": "previous respiratory records reviewed if available",
             "order": 2,
             "search_terms": [
-              "oxygen",
-              "O2"
+              "previous",
+              "records"
             ],
             "tags": [
               "respiratory"
@@ -60502,23 +60581,11 @@
           },
           {
             "chip_id": "resp-copd-followup-investigations-3",
-            "chip_text": "previous discharge summary reviewed if available",
+            "chip_text": "oxygen assessment reviewed if applicable",
             "order": 3,
             "search_terms": [
-              "discharge",
-              "summary"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-investigations-4",
-            "chip_text": "smoking cessation support discussed if relevant",
-            "order": 4,
-            "search_terms": [
-              "smoking",
-              "cessation"
+              "oxygen",
+              "O2"
             ],
             "tags": [
               "respiratory"
@@ -60552,11 +60619,11 @@
           },
           {
             "chip_id": "resp-copd-followup-plan_phrases-3",
-            "chip_text": "pulmonary rehabilitation discussed if applicable",
+            "chip_text": "smoking cessation advice documented if discussed",
             "order": 3,
             "search_terms": [
-              "pulmonary",
-              "rehab"
+              "cessation",
+              "smoking"
             ],
             "tags": [
               "respiratory"
@@ -60564,11 +60631,11 @@
           },
           {
             "chip_id": "resp-copd-followup-plan_phrases-4",
-            "chip_text": "referral documented if clinician decided",
+            "chip_text": "pulmonary rehabilitation discussed if applicable",
             "order": 4,
             "search_terms": [
-              "referral",
-              "respiratory"
+              "pulmonary",
+              "rehab"
             ],
             "tags": [
               "respiratory"
@@ -60586,13 +60653,11 @@
             "tags": [
               "respiratory"
             ]
-          }
-        ],
-        "follow_up": [
+          },
           {
-            "chip_id": "resp-copd-followup-follow_up-1",
+            "chip_id": "resp-copd-followup-plan_phrases-6",
             "chip_text": "follow-up documented if arranged",
-            "order": 1,
+            "order": 6,
             "search_terms": [
               "follow",
               "up"
@@ -60602,9 +60667,23 @@
             ]
           },
           {
-            "chip_id": "resp-copd-followup-follow_up-2",
+            "chip_id": "resp-copd-followup-plan_phrases-7",
+            "chip_text": "referral documented if clinician decided",
+            "order": 7,
+            "search_terms": [
+              "referral",
+              "respiratory"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "resp-copd-followup-follow_up-1",
             "chip_text": "3-6 months",
-            "order": 2,
+            "order": 1,
             "search_terms": [
               "three",
               "six",
@@ -60615,9 +60694,9 @@
             ]
           },
           {
-            "chip_id": "resp-copd-followup-follow_up-3",
+            "chip_id": "resp-copd-followup-follow_up-2",
             "chip_text": "6-12 months if stable",
-            "order": 3,
+            "order": 2,
             "search_terms": [
               "six",
               "twelve"
@@ -60627,9 +60706,9 @@
             ]
           },
           {
-            "chip_id": "resp-copd-followup-follow_up-4",
+            "chip_id": "resp-copd-followup-follow_up-3",
             "chip_text": "sooner if worsening",
-            "order": 4,
+            "order": 3,
             "search_terms": [
               "sooner",
               "worsening"
@@ -60639,12 +60718,24 @@
             ]
           },
           {
-            "chip_id": "resp-copd-followup-follow_up-5",
+            "chip_id": "resp-copd-followup-follow_up-4",
             "chip_text": "PRN",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "PRN",
               "as needed"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-copd-followup-follow_up-5",
+            "chip_text": "sooner if exacerbation",
+            "order": 5,
+            "search_terms": [
+              "exacerbation",
+              "flare"
             ],
             "tags": [
               "respiratory"
@@ -60702,14 +60793,14 @@
       },
       "chip_counts": {
         "symptoms": 10,
-        "relevant_negatives": 5,
+        "relevant_negatives": 3,
         "exam_findings": 5,
         "red_flags": 6,
         "investigations": 3,
-        "plan_phrases": 4,
+        "plan_phrases": 5,
         "follow_up": 4
       },
-      "total_chips": 37,
+      "total_chips": 36,
       "chips": {
         "symptoms": [
           {
@@ -60718,7 +60809,8 @@
             "order": 1,
             "search_terms": [
               "chronic",
-              "cough"
+              "cough",
+              "persistent"
             ],
             "tags": [
               "respiratory"
@@ -60738,7 +60830,7 @@
           },
           {
             "chip_id": "resp-chronic-cough-symptoms-3",
-            "chip_text": "dry versus productive documented",
+            "chip_text": "dry or productive character documented",
             "order": 3,
             "search_terms": [
               "dry",
@@ -60751,12 +60843,12 @@
           },
           {
             "chip_id": "resp-chronic-cough-symptoms-4",
-            "chip_text": "timing and pattern reviewed",
+            "chip_text": "sputum context reviewed",
             "order": 4,
             "search_terms": [
-              "timing",
-              "nocturnal",
-              "morning"
+              "sputum",
+              "phlegm",
+              "color"
             ],
             "tags": [
               "respiratory"
@@ -60764,12 +60856,12 @@
           },
           {
             "chip_id": "resp-chronic-cough-symptoms-5",
-            "chip_text": "triggers reviewed",
+            "chip_text": "nocturnal or positional pattern reviewed",
             "order": 5,
             "search_terms": [
-              "trigger",
-              "asthma",
-              "reflux"
+              "nocturnal",
+              "positional",
+              "lying"
             ],
             "tags": [
               "respiratory"
@@ -60777,12 +60869,12 @@
           },
           {
             "chip_id": "resp-chronic-cough-symptoms-6",
-            "chip_text": "associated symptoms reviewed",
+            "chip_text": "trigger or exposure context reviewed",
             "order": 6,
             "search_terms": [
-              "nasal",
-              "sinus",
-              "fever"
+              "trigger",
+              "asthma",
+              "allergy"
             ],
             "tags": [
               "respiratory"
@@ -60790,11 +60882,12 @@
           },
           {
             "chip_id": "resp-chronic-cough-symptoms-7",
-            "chip_text": "smoking history reviewed if relevant",
+            "chip_text": "reflux or postnasal drip context reviewed",
             "order": 7,
             "search_terms": [
-              "smoking",
-              "cigarettes"
+              "reflux",
+              "GORD",
+              "postnasal"
             ],
             "tags": [
               "respiratory"
@@ -60806,7 +60899,8 @@
             "order": 8,
             "search_terms": [
               "ACE",
-              "inhibitor"
+              "inhibitor",
+              "medication"
             ],
             "tags": [
               "respiratory"
@@ -60814,11 +60908,11 @@
           },
           {
             "chip_id": "resp-chronic-cough-symptoms-9",
-            "chip_text": "impact on sleep reviewed",
+            "chip_text": "smoking history reviewed if relevant",
             "order": 9,
             "search_terms": [
-              "sleep",
-              "quality"
+              "smoking",
+              "cigarettes"
             ],
             "tags": [
               "respiratory"
@@ -60826,12 +60920,12 @@
           },
           {
             "chip_id": "resp-chronic-cough-symptoms-10",
-            "chip_text": "post-nasal drip symptoms reviewed if relevant",
+            "chip_text": "previous investigations reviewed if available",
             "order": 10,
             "search_terms": [
-              "postnasal",
-              "drip",
-              "PND"
+              "previous",
+              "CXR",
+              "spirometry"
             ],
             "tags": [
               "respiratory"
@@ -60853,19 +60947,8 @@
           },
           {
             "chip_id": "resp-chronic-cough-relevant_negatives-2",
-            "chip_text": "no fever reported",
+            "chip_text": "no weight loss reported",
             "order": 2,
-            "search_terms": [
-              "fever"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-relevant_negatives-3",
-            "chip_text": "no weight loss reported if relevant",
-            "order": 3,
             "search_terms": [
               "weight",
               "loss"
@@ -60875,24 +60958,13 @@
             ]
           },
           {
-            "chip_id": "resp-chronic-cough-relevant_negatives-4",
-            "chip_text": "no shortness of breath reported if applicable",
-            "order": 4,
+            "chip_id": "resp-chronic-cough-relevant_negatives-3",
+            "chip_text": "no fever or night sweats reported",
+            "order": 3,
             "search_terms": [
-              "SOB",
-              "breathlessness"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-relevant_negatives-5",
-            "chip_text": "no dysphagia reported if applicable",
-            "order": 5,
-            "search_terms": [
-              "dysphagia",
-              "swallowing"
+              "fever",
+              "sweats",
+              "TB"
             ],
             "tags": [
               "respiratory"
@@ -60902,20 +60974,8 @@
         "exam_findings": [
           {
             "chip_id": "resp-chronic-cough-exam_findings-1",
-            "chip_text": "vitals documented if measured",
-            "order": 1,
-            "search_terms": [
-              "vitals",
-              "O2 sat"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-exam_findings-2",
             "chip_text": "chest auscultation documented if assessed",
-            "order": 2,
+            "order": 1,
             "search_terms": [
               "auscultation",
               "chest"
@@ -60925,9 +60985,9 @@
             ]
           },
           {
-            "chip_id": "resp-chronic-cough-exam_findings-3",
+            "chip_id": "resp-chronic-cough-exam_findings-2",
             "chip_text": "oropharynx documented if assessed",
-            "order": 3,
+            "order": 2,
             "search_terms": [
               "oropharynx",
               "throat"
@@ -60937,12 +60997,11 @@
             ]
           },
           {
-            "chip_id": "resp-chronic-cough-exam_findings-4",
+            "chip_id": "resp-chronic-cough-exam_findings-3",
             "chip_text": "nasal examination documented if relevant",
-            "order": 4,
+            "order": 3,
             "search_terms": [
               "nasal",
-              "nose",
               "postnasal"
             ],
             "tags": [
@@ -60950,12 +61009,24 @@
             ]
           },
           {
-            "chip_id": "resp-chronic-cough-exam_findings-5",
+            "chip_id": "resp-chronic-cough-exam_findings-4",
             "chip_text": "oxygen saturation documented if measured",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "oxygen",
               "SpO2"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-chronic-cough-exam_findings-5",
+            "chip_text": "respiratory rate documented if measured",
+            "order": 5,
+            "search_terms": [
+              "RR",
+              "respiratory"
             ],
             "tags": [
               "respiratory"
@@ -60965,22 +61036,8 @@
         "red_flags": [
           {
             "chip_id": "resp-chronic-cough-red_flags-1",
-            "chip_text": "chronic cough red flags",
-            "order": 1,
-            "search_terms": [
-              "chronic",
-              "cough",
-              "red flags"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-red_flags-2",
             "chip_text": "hemoptysis",
-            "order": 2,
+            "order": 1,
             "search_terms": [
               "hemoptysis",
               "blood"
@@ -60991,9 +61048,9 @@
             ]
           },
           {
-            "chip_id": "resp-chronic-cough-red_flags-3",
+            "chip_id": "resp-chronic-cough-red_flags-2",
             "chip_text": "unexplained weight loss",
-            "order": 3,
+            "order": 2,
             "search_terms": [
               "weight",
               "loss"
@@ -61004,9 +61061,9 @@
             ]
           },
           {
-            "chip_id": "resp-chronic-cough-red_flags-4",
+            "chip_id": "resp-chronic-cough-red_flags-3",
             "chip_text": "fever or night sweats",
-            "order": 4,
+            "order": 3,
             "search_terms": [
               "fever",
               "sweats",
@@ -61018,9 +61075,9 @@
             ]
           },
           {
-            "chip_id": "resp-chronic-cough-red_flags-5",
+            "chip_id": "resp-chronic-cough-red_flags-4",
             "chip_text": "voice change or stridor",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "voice",
               "stridor"
@@ -61031,13 +61088,26 @@
             ]
           },
           {
-            "chip_id": "resp-chronic-cough-red_flags-6",
+            "chip_id": "resp-chronic-cough-red_flags-5",
             "chip_text": "smoker over 45 with new cough",
-            "order": 6,
+            "order": 5,
             "search_terms": [
               "smoker",
               "age",
-              "over 45"
+              "45"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-chronic-cough-red_flags-6",
+            "chip_text": "persistent localized abnormality",
+            "order": 6,
+            "search_terms": [
+              "localized",
+              "focal"
             ],
             "tags": [
               "respiratory",
@@ -61048,12 +61118,13 @@
         "investigations": [
           {
             "chip_id": "resp-chronic-cough-investigations-1",
-            "chip_text": "CXR reviewed if performed",
+            "chip_text": "chest imaging reviewed if available",
             "order": 1,
             "search_terms": [
               "CXR",
               "chest",
-              "X-ray"
+              "X-ray",
+              "CT"
             ],
             "tags": [
               "respiratory"
@@ -61061,10 +61132,11 @@
           },
           {
             "chip_id": "resp-chronic-cough-investigations-2",
-            "chip_text": "spirometry reviewed if performed",
+            "chip_text": "spirometry reviewed if available",
             "order": 2,
             "search_terms": [
-              "spirometry"
+              "spirometry",
+              "PFT"
             ],
             "tags": [
               "respiratory"
@@ -61072,10 +61144,11 @@
           },
           {
             "chip_id": "resp-chronic-cough-investigations-3",
-            "chip_text": "previous imaging reviewed if available",
+            "chip_text": "laryngoscopy referral discussed if relevant",
             "order": 3,
             "search_terms": [
-              "imaging"
+              "ENT",
+              "laryngoscopy"
             ],
             "tags": [
               "respiratory"
@@ -61126,6 +61199,19 @@
             "search_terms": [
               "follow",
               "up"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-chronic-cough-plan_phrases-5",
+            "chip_text": "trial of inhaled therapy discussed if applicable",
+            "order": 5,
+            "search_terms": [
+              "inhaler",
+              "trial",
+              "treatment"
             ],
             "tags": [
               "respiratory"
@@ -61235,15 +61321,15 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 8,
-        "relevant_negatives": 5,
-        "exam_findings": 9,
+        "symptoms": 9,
+        "relevant_negatives": 4,
+        "exam_findings": 7,
         "red_flags": 6,
         "investigations": 4,
         "plan_phrases": 4,
         "follow_up": 4
       },
-      "total_chips": 40,
+      "total_chips": 38,
       "chips": {
         "symptoms": [
           {
@@ -61261,10 +61347,11 @@
           },
           {
             "chip_id": "resp-dyspnea-symptoms-2",
-            "chip_text": "onset documented",
+            "chip_text": "onset and duration documented",
             "order": 2,
             "search_terms": [
               "onset",
+              "duration",
               "acute",
               "gradual"
             ],
@@ -61274,23 +61361,11 @@
           },
           {
             "chip_id": "resp-dyspnea-symptoms-3",
-            "chip_text": "duration and progression documented",
+            "chip_text": "exertional versus rest symptoms documented",
             "order": 3,
             "search_terms": [
-              "duration",
-              "progression"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-symptoms-4",
-            "chip_text": "exertional relation documented",
-            "order": 4,
-            "search_terms": [
               "exertional",
-              "MRC",
+              "rest",
               "activity"
             ],
             "tags": [
@@ -61298,13 +61373,26 @@
             ]
           },
           {
+            "chip_id": "resp-dyspnea-symptoms-4",
+            "chip_text": "MRC dyspnea grade documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "MRC",
+              "grade",
+              "scale"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
             "chip_id": "resp-dyspnea-symptoms-5",
-            "chip_text": "positional symptoms reviewed",
+            "chip_text": "orthopnea and PND reviewed",
             "order": 5,
             "search_terms": [
-              "positional",
               "orthopnea",
-              "PND"
+              "PND",
+              "lying flat"
             ],
             "tags": [
               "respiratory"
@@ -61312,12 +61400,13 @@
           },
           {
             "chip_id": "resp-dyspnea-symptoms-6",
-            "chip_text": "associated symptoms reviewed",
+            "chip_text": "cough, wheeze and chest pain reviewed",
             "order": 6,
             "search_terms": [
               "cough",
               "wheeze",
-              "chest"
+              "chest",
+              "pain"
             ],
             "tags": [
               "respiratory"
@@ -61325,8 +61414,21 @@
           },
           {
             "chip_id": "resp-dyspnea-symptoms-7",
-            "chip_text": "nocturnal symptoms reviewed",
+            "chip_text": "leg swelling reviewed",
             "order": 7,
+            "search_terms": [
+              "leg",
+              "ankle",
+              "oedema"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-dyspnea-symptoms-8",
+            "chip_text": "nocturnal symptoms reviewed",
+            "order": 8,
             "search_terms": [
               "nocturnal",
               "night"
@@ -61336,13 +61438,13 @@
             ]
           },
           {
-            "chip_id": "resp-dyspnea-symptoms-8",
-            "chip_text": "functional impairment documented",
-            "order": 8,
+            "chip_id": "resp-dyspnea-symptoms-9",
+            "chip_text": "functional limitation documented",
+            "order": 9,
             "search_terms": [
               "functional",
-              "MRC",
-              "dyspnea scale"
+              "limitation",
+              "ADL"
             ],
             "tags": [
               "respiratory"
@@ -61364,31 +61466,8 @@
           },
           {
             "chip_id": "resp-dyspnea-relevant_negatives-2",
-            "chip_text": "no hemoptysis reported",
-            "order": 2,
-            "search_terms": [
-              "hemoptysis",
-              "blood"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-relevant_negatives-3",
-            "chip_text": "no fever reported",
-            "order": 3,
-            "search_terms": [
-              "fever"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-relevant_negatives-4",
             "chip_text": "no syncope reported",
-            "order": 4,
+            "order": 2,
             "search_terms": [
               "syncope",
               "faint"
@@ -61398,13 +61477,23 @@
             ]
           },
           {
-            "chip_id": "resp-dyspnea-relevant_negatives-5",
-            "chip_text": "no ankle swelling reported if relevant",
-            "order": 5,
+            "chip_id": "resp-dyspnea-relevant_negatives-3",
+            "chip_text": "no hemoptysis reported",
+            "order": 3,
             "search_terms": [
-              "ankle",
-              "oedema",
-              "edema"
+              "hemoptysis",
+              "blood"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-dyspnea-relevant_negatives-4",
+            "chip_text": "no fever reported",
+            "order": 4,
+            "search_terms": [
+              "fever"
             ],
             "tags": [
               "respiratory"
@@ -61414,58 +61503,8 @@
         "exam_findings": [
           {
             "chip_id": "resp-dyspnea-exam_findings-1",
-            "chip_text": "vitals documented if measured",
-            "order": 1,
-            "search_terms": [
-              "vitals",
-              "O2 sat",
-              "RR"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-exam_findings-2",
-            "chip_text": "chest auscultation documented if assessed",
-            "order": 2,
-            "search_terms": [
-              "auscultation",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-exam_findings-3",
-            "chip_text": "wheeze or crackles documented if assessed",
-            "order": 3,
-            "search_terms": [
-              "wheeze",
-              "crackles",
-              "crepitations"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-exam_findings-4",
-            "chip_text": "air entry documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "air",
-              "entry"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-exam_findings-5",
             "chip_text": "oxygen saturation documented if measured",
-            "order": 5,
+            "order": 1,
             "search_terms": [
               "oxygen",
               "SpO2"
@@ -61475,33 +61514,46 @@
             ]
           },
           {
-            "chip_id": "resp-dyspnea-exam_findings-6",
+            "chip_id": "resp-dyspnea-exam_findings-2",
             "chip_text": "respiratory rate documented if measured",
-            "order": 6,
+            "order": 2,
             "search_terms": [
-              "respiratory",
-              "rate"
+              "RR",
+              "respiratory"
             ],
             "tags": [
               "respiratory"
             ]
           },
           {
-            "chip_id": "resp-dyspnea-exam_findings-7",
-            "chip_text": "accessory muscle use documented if assessed",
-            "order": 7,
+            "chip_id": "resp-dyspnea-exam_findings-3",
+            "chip_text": "work of breathing documented if assessed",
+            "order": 3,
             "search_terms": [
-              "accessory",
-              "muscles"
+              "work",
+              "breathing",
+              "accessory"
             ],
             "tags": [
               "respiratory"
             ]
           },
           {
-            "chip_id": "resp-dyspnea-exam_findings-8",
+            "chip_id": "resp-dyspnea-exam_findings-4",
+            "chip_text": "chest auscultation documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "auscultation",
+              "chest"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-dyspnea-exam_findings-5",
             "chip_text": "peripheral oedema documented if assessed",
-            "order": 8,
+            "order": 5,
             "search_terms": [
               "oedema",
               "ankle",
@@ -61512,12 +61564,25 @@
             ]
           },
           {
-            "chip_id": "resp-dyspnea-exam_findings-9",
+            "chip_id": "resp-dyspnea-exam_findings-6",
             "chip_text": "tracheal position documented if assessed",
-            "order": 9,
+            "order": 6,
             "search_terms": [
               "trachea",
               "deviation"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-dyspnea-exam_findings-7",
+            "chip_text": "peak flow recorded if measured",
+            "order": 7,
+            "search_terms": [
+              "peak",
+              "flow",
+              "PEFR"
             ],
             "tags": [
               "respiratory"
@@ -61527,12 +61592,11 @@
         "red_flags": [
           {
             "chip_id": "resp-dyspnea-red_flags-1",
-            "chip_text": "acute severe dyspnea",
+            "chip_text": "severe respiratory distress",
             "order": 1,
             "search_terms": [
-              "acute",
               "severe",
-              "respiratory distress"
+              "distress"
             ],
             "tags": [
               "respiratory",
@@ -61541,34 +61605,8 @@
           },
           {
             "chip_id": "resp-dyspnea-red_flags-2",
-            "chip_text": "stridor",
-            "order": 2,
-            "search_terms": [
-              "stridor",
-              "upper airway"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-red_flags-3",
-            "chip_text": "cyanosis",
-            "order": 3,
-            "search_terms": [
-              "cyanosis",
-              "blue"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-red_flags-4",
             "chip_text": "oxygen saturation below baseline",
-            "order": 4,
+            "order": 2,
             "search_terms": [
               "low",
               "oxygen",
@@ -61580,12 +61618,37 @@
             ]
           },
           {
+            "chip_id": "resp-dyspnea-red_flags-3",
+            "chip_text": "cyanosis",
+            "order": 3,
+            "search_terms": [
+              "cyanosis"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-dyspnea-red_flags-4",
+            "chip_text": "inability to speak full sentences",
+            "order": 4,
+            "search_terms": [
+              "speak",
+              "sentences"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
             "chip_id": "resp-dyspnea-red_flags-5",
-            "chip_text": "signs of airway obstruction",
+            "chip_text": "stridor",
             "order": 5,
             "search_terms": [
-              "airway",
-              "obstruction"
+              "stridor",
+              "upper airway"
             ],
             "tags": [
               "respiratory",
@@ -61610,12 +61673,11 @@
         "investigations": [
           {
             "chip_id": "resp-dyspnea-investigations-1",
-            "chip_text": "CXR reviewed if performed",
+            "chip_text": "ECG reviewed if performed",
             "order": 1,
             "search_terms": [
-              "CXR",
-              "chest",
-              "X-ray"
+              "ECG",
+              "EKG"
             ],
             "tags": [
               "respiratory"
@@ -61623,11 +61685,13 @@
           },
           {
             "chip_id": "resp-dyspnea-investigations-2",
-            "chip_text": "ECG reviewed if performed",
+            "chip_text": "chest imaging reviewed if available",
             "order": 2,
             "search_terms": [
-              "ECG",
-              "EKG"
+              "CXR",
+              "chest",
+              "X-ray",
+              "CT"
             ],
             "tags": [
               "respiratory"
@@ -61640,7 +61704,8 @@
             "search_terms": [
               "blood",
               "labs",
-              "BNP"
+              "BNP",
+              "D-dimer"
             ],
             "tags": [
               "respiratory"
@@ -61648,10 +61713,12 @@
           },
           {
             "chip_id": "resp-dyspnea-investigations-4",
-            "chip_text": "previous imaging reviewed if available",
+            "chip_text": "previous PFT reviewed if available",
             "order": 4,
             "search_terms": [
-              "imaging"
+              "PFT",
+              "FEV1",
+              "FVC"
             ],
             "tags": [
               "respiratory"
@@ -61810,14 +61877,14 @@
       },
       "chip_counts": {
         "symptoms": 9,
-        "relevant_negatives": 5,
-        "exam_findings": 8,
-        "red_flags": 0,
-        "investigations": 3,
+        "relevant_negatives": 4,
+        "exam_findings": 7,
+        "red_flags": 4,
+        "investigations": 2,
         "plan_phrases": 5,
         "follow_up": 4
       },
-      "total_chips": 34,
+      "total_chips": 35,
       "chips": {
         "symptoms": [
           {
@@ -61834,11 +61901,11 @@
           },
           {
             "chip_id": "resp-wheeze-symptoms-2",
-            "chip_text": "onset documented",
+            "chip_text": "duration documented",
             "order": 2,
             "search_terms": [
-              "onset",
-              "timing"
+              "duration",
+              "how long"
             ],
             "tags": [
               "respiratory"
@@ -61846,11 +61913,11 @@
           },
           {
             "chip_id": "resp-wheeze-symptoms-3",
-            "chip_text": "frequency documented",
+            "chip_text": "episodic pattern reviewed",
             "order": 3,
             "search_terms": [
-              "frequency",
-              "how often"
+              "episodic",
+              "intermittent"
             ],
             "tags": [
               "respiratory"
@@ -61871,10 +61938,10 @@
           },
           {
             "chip_id": "resp-wheeze-symptoms-5",
-            "chip_text": "associated dyspnea reviewed",
+            "chip_text": "cough and shortness of breath reviewed",
             "order": 5,
             "search_terms": [
-              "dyspnea",
+              "cough",
               "SOB"
             ],
             "tags": [
@@ -61883,8 +61950,32 @@
           },
           {
             "chip_id": "resp-wheeze-symptoms-6",
-            "chip_text": "nocturnal symptoms reviewed",
+            "chip_text": "chest tightness reviewed",
             "order": 6,
+            "search_terms": [
+              "chest",
+              "tightness"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-wheeze-symptoms-7",
+            "chip_text": "inhaler use reviewed if relevant",
+            "order": 7,
+            "search_terms": [
+              "inhaler",
+              "puffer"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-wheeze-symptoms-8",
+            "chip_text": "nocturnal symptoms reviewed",
+            "order": 8,
             "search_terms": [
               "nocturnal",
               "night"
@@ -61894,39 +61985,12 @@
             ]
           },
           {
-            "chip_id": "resp-wheeze-symptoms-7",
-            "chip_text": "temporal pattern documented",
-            "order": 7,
-            "search_terms": [
-              "pattern",
-              "episodic",
-              "persistent"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-symptoms-8",
-            "chip_text": "response to bronchodilator reviewed",
-            "order": 8,
-            "search_terms": [
-              "response",
-              "bronchodilator",
-              "inhaler"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
             "chip_id": "resp-wheeze-symptoms-9",
-            "chip_text": "vocal cord dysfunction considered if relevant",
+            "chip_text": "response to bronchodilator reviewed if applicable",
             "order": 9,
             "search_terms": [
-              "vocal",
-              "cord",
-              "VCD"
+              "response",
+              "bronchodilator"
             ],
             "tags": [
               "respiratory"
@@ -61936,11 +62000,11 @@
         "relevant_negatives": [
           {
             "chip_id": "resp-wheeze-relevant_negatives-1",
-            "chip_text": "no stridor reported",
+            "chip_text": "no severe breathlessness reported",
             "order": 1,
             "search_terms": [
-              "stridor",
-              "upper airway"
+              "severe",
+              "breathlessness"
             ],
             "tags": [
               "respiratory"
@@ -61948,20 +62012,8 @@
           },
           {
             "chip_id": "resp-wheeze-relevant_negatives-2",
-            "chip_text": "no hemoptysis reported",
-            "order": 2,
-            "search_terms": [
-              "hemoptysis",
-              "blood"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-relevant_negatives-3",
             "chip_text": "no chest pain reported",
-            "order": 3,
+            "order": 2,
             "search_terms": [
               "chest",
               "pain"
@@ -61971,23 +62023,24 @@
             ]
           },
           {
-            "chip_id": "resp-wheeze-relevant_negatives-4",
-            "chip_text": "no fever reported",
-            "order": 4,
+            "chip_id": "resp-wheeze-relevant_negatives-3",
+            "chip_text": "no hemoptysis reported",
+            "order": 3,
             "search_terms": [
-              "fever"
+              "hemoptysis",
+              "blood"
             ],
             "tags": [
               "respiratory"
             ]
           },
           {
-            "chip_id": "resp-wheeze-relevant_negatives-6",
-            "chip_text": "no choking or foreign body sensation reported",
-            "order": 6,
+            "chip_id": "resp-wheeze-relevant_negatives-4",
+            "chip_text": "no stridor reported",
+            "order": 4,
             "search_terms": [
-              "choking",
-              "foreign"
+              "stridor",
+              "upper airway"
             ],
             "tags": [
               "respiratory"
@@ -61997,11 +62050,11 @@
         "exam_findings": [
           {
             "chip_id": "resp-wheeze-exam_findings-1",
-            "chip_text": "vitals documented if measured",
+            "chip_text": "respiratory rate documented if measured",
             "order": 1,
             "search_terms": [
-              "vitals",
-              "O2 sat"
+              "RR",
+              "respiratory"
             ],
             "tags": [
               "respiratory"
@@ -62009,56 +62062,8 @@
           },
           {
             "chip_id": "resp-wheeze-exam_findings-2",
-            "chip_text": "chest auscultation documented if assessed",
-            "order": 2,
-            "search_terms": [
-              "auscultation",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-exam_findings-3",
-            "chip_text": "wheeze character documented if assessed",
-            "order": 3,
-            "search_terms": [
-              "expiratory",
-              "inspiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-exam_findings-4",
-            "chip_text": "air entry documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "air",
-              "entry"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-exam_findings-5",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 5,
-            "search_terms": [
-              "respiratory",
-              "rate"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-exam_findings-6",
             "chip_text": "oxygen saturation documented if measured",
-            "order": 6,
+            "order": 2,
             "search_terms": [
               "oxygen",
               "SpO2"
@@ -62068,9 +62073,46 @@
             ]
           },
           {
-            "chip_id": "resp-wheeze-exam_findings-7",
-            "chip_text": "peak flow documented if measured",
-            "order": 7,
+            "chip_id": "resp-wheeze-exam_findings-3",
+            "chip_text": "wheeze documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "wheeze",
+              "expiratory",
+              "inspiratory"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-wheeze-exam_findings-4",
+            "chip_text": "chest auscultation documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "auscultation",
+              "chest"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-wheeze-exam_findings-5",
+            "chip_text": "air entry documented if assessed",
+            "order": 5,
+            "search_terms": [
+              "air",
+              "entry"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-wheeze-exam_findings-6",
+            "chip_text": "peak flow recorded if measured",
+            "order": 6,
             "search_terms": [
               "peak",
               "flow",
@@ -62081,27 +62123,81 @@
             ]
           },
           {
-            "chip_id": "resp-wheeze-exam_findings-8",
-            "chip_text": "pulsus paradoxus documented if measured",
-            "order": 8,
+            "chip_id": "resp-wheeze-exam_findings-7",
+            "chip_text": "work of breathing documented if assessed",
+            "order": 7,
             "search_terms": [
-              "pulsus",
-              "paradoxus"
+              "work",
+              "breathing"
             ],
             "tags": [
               "respiratory"
             ]
           }
         ],
-        "red_flags": [],
+        "red_flags": [
+          {
+            "chip_id": "resp-wheeze-red_flags-1",
+            "chip_text": "severe breathlessness or respiratory distress",
+            "order": 1,
+            "search_terms": [
+              "severe",
+              "distress"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-wheeze-red_flags-2",
+            "chip_text": "oxygen saturation below baseline",
+            "order": 2,
+            "search_terms": [
+              "low",
+              "oxygen"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-wheeze-red_flags-3",
+            "chip_text": "silent chest",
+            "order": 3,
+            "search_terms": [
+              "silent",
+              "chest",
+              "no wheeze"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-wheeze-red_flags-4",
+            "chip_text": "cyanosis",
+            "order": 4,
+            "search_terms": [
+              "cyanosis"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          }
+        ],
         "investigations": [
           {
             "chip_id": "resp-wheeze-investigations-1",
-            "chip_text": "CXR reviewed if performed",
+            "chip_text": "peak flow recorded if measured",
             "order": 1,
             "search_terms": [
-              "CXR",
-              "chest"
+              "peak",
+              "flow",
+              "PEFR"
             ],
             "tags": [
               "respiratory"
@@ -62109,21 +62205,8 @@
           },
           {
             "chip_id": "resp-wheeze-investigations-2",
-            "chip_text": "peak flow diary reviewed if available",
+            "chip_text": "spirometry reviewed if available",
             "order": 2,
-            "search_terms": [
-              "peak",
-              "flow",
-              "diary"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-investigations-3",
-            "chip_text": "spirometry reviewed if performed",
-            "order": 3,
             "search_terms": [
               "spirometry",
               "PFT"
@@ -62172,11 +62255,11 @@
           },
           {
             "chip_id": "resp-wheeze-plan_phrases-4",
-            "chip_text": "referral documented if clinician decided",
+            "chip_text": "follow-up documented if arranged",
             "order": 4,
             "search_terms": [
-              "referral",
-              "respiratory"
+              "follow",
+              "up"
             ],
             "tags": [
               "respiratory"
@@ -62184,7 +62267,7 @@
           },
           {
             "chip_id": "resp-wheeze-plan_phrases-5",
-            "chip_text": "symptom diary recommended if discussed",
+            "chip_text": "symptom diary discussed if applicable",
             "order": 5,
             "search_terms": [
               "diary",
@@ -62294,12 +62377,12 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 11,
-        "relevant_negatives": 2,
-        "exam_findings": 6,
-        "red_flags": 2,
-        "investigations": 3,
-        "plan_phrases": 5,
+        "symptoms": 9,
+        "relevant_negatives": 3,
+        "exam_findings": 5,
+        "red_flags": 4,
+        "investigations": 2,
+        "plan_phrases": 6,
         "follow_up": 5
       },
       "total_chips": 34,
@@ -62319,10 +62402,11 @@
           },
           {
             "chip_id": "resp-pneumonia-followup-symptoms-2",
-            "chip_text": "cough reviewed",
+            "chip_text": "symptom progress reviewed",
             "order": 2,
             "search_terms": [
-              "cough"
+              "symptom",
+              "progress"
             ],
             "tags": [
               "respiratory"
@@ -62330,9 +62414,10 @@
           },
           {
             "chip_id": "resp-pneumonia-followup-symptoms-3",
-            "chip_text": "sputum reviewed",
+            "chip_text": "cough and sputum reviewed",
             "order": 3,
             "search_terms": [
+              "cough",
               "sputum",
               "phlegm"
             ],
@@ -62354,10 +62439,10 @@
           },
           {
             "chip_id": "resp-pneumonia-followup-symptoms-5",
-            "chip_text": "breathing reviewed",
+            "chip_text": "dyspnea reviewed",
             "order": 5,
             "search_terms": [
-              "breathing",
+              "dyspnea",
               "SOB"
             ],
             "tags": [
@@ -62366,12 +62451,12 @@
           },
           {
             "chip_id": "resp-pneumonia-followup-symptoms-6",
-            "chip_text": "chest pain reviewed",
+            "chip_text": "functional recovery reviewed",
             "order": 6,
             "search_terms": [
-              "chest",
-              "pain",
-              "pleuritic"
+              "functional",
+              "recovery",
+              "energy"
             ],
             "tags": [
               "respiratory"
@@ -62379,20 +62464,8 @@
           },
           {
             "chip_id": "resp-pneumonia-followup-symptoms-7",
-            "chip_text": "energy level and function reviewed",
+            "chip_text": "medication and adherence context reviewed if relevant",
             "order": 7,
-            "search_terms": [
-              "energy",
-              "functional"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-symptoms-8",
-            "chip_text": "medication adherence discussed",
-            "order": 8,
             "search_terms": [
               "adherence",
               "antibiotics"
@@ -62402,9 +62475,9 @@
             ]
           },
           {
-            "chip_id": "resp-pneumonia-followup-symptoms-9",
+            "chip_id": "resp-pneumonia-followup-symptoms-8",
             "chip_text": "appetite and hydration reviewed",
-            "order": 9,
+            "order": 8,
             "search_terms": [
               "appetite",
               "hydration"
@@ -62414,20 +62487,9 @@
             ]
           },
           {
-            "chip_id": "resp-pneumonia-followup-symptoms-10",
-            "chip_text": "mobility reviewed if relevant",
-            "order": 10,
-            "search_terms": [
-              "mobility"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-symptoms-11",
+            "chip_id": "resp-pneumonia-followup-symptoms-9",
             "chip_text": "residual chest pain reviewed",
-            "order": 11,
+            "order": 9,
             "search_terms": [
               "chest",
               "pain",
@@ -62441,11 +62503,11 @@
         "relevant_negatives": [
           {
             "chip_id": "resp-pneumonia-followup-relevant_negatives-1",
-            "chip_text": "no hemoptysis reported",
+            "chip_text": "no worsening breathlessness reported",
             "order": 1,
             "search_terms": [
-              "hemoptysis",
-              "blood"
+              "worsening",
+              "breathlessness"
             ],
             "tags": [
               "respiratory"
@@ -62453,11 +62515,23 @@
           },
           {
             "chip_id": "resp-pneumonia-followup-relevant_negatives-2",
-            "chip_text": "no chest pain reported",
+            "chip_text": "no persistent fever reported",
             "order": 2,
             "search_terms": [
-              "chest",
-              "pain"
+              "persistent",
+              "fever"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-pneumonia-followup-relevant_negatives-3",
+            "chip_text": "no hemoptysis reported",
+            "order": 3,
+            "search_terms": [
+              "hemoptysis",
+              "blood"
             ],
             "tags": [
               "respiratory"
@@ -62467,12 +62541,11 @@
         "exam_findings": [
           {
             "chip_id": "resp-pneumonia-followup-exam_findings-1",
-            "chip_text": "vitals documented if measured",
+            "chip_text": "oxygen saturation documented if measured",
             "order": 1,
             "search_terms": [
-              "vitals",
-              "O2 sat",
-              "RR"
+              "oxygen",
+              "SpO2"
             ],
             "tags": [
               "respiratory"
@@ -62495,8 +62568,8 @@
             "chip_text": "respiratory rate documented if measured",
             "order": 3,
             "search_terms": [
-              "respiratory",
-              "rate"
+              "RR",
+              "respiratory"
             ],
             "tags": [
               "respiratory"
@@ -62504,20 +62577,8 @@
           },
           {
             "chip_id": "resp-pneumonia-followup-exam_findings-4",
-            "chip_text": "oxygen saturation documented if measured",
-            "order": 4,
-            "search_terms": [
-              "oxygen",
-              "SpO2"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-exam_findings-5",
             "chip_text": "temperature documented if measured",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "temperature",
               "fever"
@@ -62527,9 +62588,9 @@
             ]
           },
           {
-            "chip_id": "resp-pneumonia-followup-exam_findings-6",
+            "chip_id": "resp-pneumonia-followup-exam_findings-5",
             "chip_text": "chest percussion documented if assessed",
-            "order": 6,
+            "order": 5,
             "search_terms": [
               "percussion",
               "dullness"
@@ -62545,11 +62606,13 @@
             "chip_text": "persistent or recurrent fever",
             "order": 1,
             "search_terms": [
+              "persistent",
               "fever",
               "recurrent"
             ],
             "tags": [
-              "respiratory"
+              "respiratory",
+              "high_safety"
             ]
           },
           {
@@ -62557,22 +62620,51 @@
             "chip_text": "worsening dyspnea",
             "order": 2,
             "search_terms": [
-              "dyspnea",
-              "SOB"
+              "worsening",
+              "dyspnea"
             ],
             "tags": [
-              "respiratory"
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-pneumonia-followup-red_flags-3",
+            "chip_text": "persistent focal chest signs",
+            "order": 3,
+            "search_terms": [
+              "focal",
+              "chest",
+              "signs"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-pneumonia-followup-red_flags-4",
+            "chip_text": "incomplete resolution on imaging if performed",
+            "order": 4,
+            "search_terms": [
+              "incomplete",
+              "resolution"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
             ]
           }
         ],
         "investigations": [
           {
             "chip_id": "resp-pneumonia-followup-investigations-1",
-            "chip_text": "CXR reviewed if performed",
+            "chip_text": "chest imaging reviewed if available",
             "order": 1,
             "search_terms": [
               "CXR",
-              "chest"
+              "chest",
+              "X-ray"
             ],
             "tags": [
               "respiratory"
@@ -62586,18 +62678,6 @@
               "blood",
               "labs",
               "CRP"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-investigations-3",
-            "chip_text": "discharge summary reviewed if available",
-            "order": 3,
-            "search_terms": [
-              "discharge",
-              "summary"
             ],
             "tags": [
               "respiratory"
@@ -62656,8 +62736,20 @@
           },
           {
             "chip_id": "resp-pneumonia-followup-plan_phrases-5",
-            "chip_text": "chest physiotherapy discussed if applicable",
+            "chip_text": "follow-up documented if arranged",
             "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-pneumonia-followup-plan_phrases-6",
+            "chip_text": "chest physiotherapy discussed if applicable",
+            "order": 6,
             "search_terms": [
               "physiotherapy",
               "chest"
@@ -62670,20 +62762,8 @@
         "follow_up": [
           {
             "chip_id": "resp-pneumonia-followup-follow_up-1",
-            "chip_text": "follow-up documented if arranged",
-            "order": 1,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-follow_up-2",
             "chip_text": "4-6 weeks",
-            "order": 2,
+            "order": 1,
             "search_terms": [
               "four",
               "six",
@@ -62694,22 +62774,22 @@
             ]
           },
           {
-            "chip_id": "resp-pneumonia-followup-follow_up-3",
-            "chip_text": "6-8 weeks if CXR follow-up needed",
-            "order": 3,
+            "chip_id": "resp-pneumonia-followup-follow_up-2",
+            "chip_text": "6-8 weeks if imaging follow-up needed",
+            "order": 2,
             "search_terms": [
               "six",
               "eight",
-              "weeks"
+              "CXR"
             ],
             "tags": [
               "respiratory"
             ]
           },
           {
-            "chip_id": "resp-pneumonia-followup-follow_up-4",
+            "chip_id": "resp-pneumonia-followup-follow_up-3",
             "chip_text": "sooner if not improving",
-            "order": 4,
+            "order": 3,
             "search_terms": [
               "sooner",
               "worsening"
@@ -62719,12 +62799,24 @@
             ]
           },
           {
-            "chip_id": "resp-pneumonia-followup-follow_up-5",
+            "chip_id": "resp-pneumonia-followup-follow_up-4",
             "chip_text": "PRN",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "PRN",
               "as needed"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-pneumonia-followup-follow_up-5",
+            "chip_text": "sooner if fever recurs",
+            "order": 5,
+            "search_terms": [
+              "fever",
+              "recurrent"
             ],
             "tags": [
               "respiratory"
@@ -62779,34 +62871,21 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 10,
-        "relevant_negatives": 4,
-        "exam_findings": 6,
-        "red_flags": 0,
-        "investigations": 4,
-        "plan_phrases": 6,
-        "follow_up": 5
+        "symptoms": 9,
+        "relevant_negatives": 3,
+        "exam_findings": 5,
+        "red_flags": 4,
+        "investigations": 3,
+        "plan_phrases": 7,
+        "follow_up": 4
       },
       "total_chips": 35,
       "chips": {
         "symptoms": [
           {
             "chip_id": "resp-sleep-apnea-symptoms-symptoms-1",
-            "chip_text": "sleep apnea symptoms",
+            "chip_text": "snoring",
             "order": 1,
-            "search_terms": [
-              "sleep",
-              "apnea",
-              "OSA"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-2",
-            "chip_text": "snoring reviewed",
-            "order": 2,
             "search_terms": [
               "snoring"
             ],
@@ -62815,12 +62894,12 @@
             ]
           },
           {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-3",
-            "chip_text": "witnessed apnoeas reviewed",
-            "order": 3,
+            "chip_id": "resp-sleep-apnea-symptoms-symptoms-2",
+            "chip_text": "witnessed apneas reviewed",
+            "order": 2,
             "search_terms": [
-              "apnoea",
               "apnea",
+              "apnoea",
               "witnessed"
             ],
             "tags": [
@@ -62828,21 +62907,22 @@
             ]
           },
           {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-4",
+            "chip_id": "resp-sleep-apnea-symptoms-symptoms-3",
             "chip_text": "daytime sleepiness reviewed",
-            "order": 4,
+            "order": 3,
             "search_terms": [
               "sleepiness",
-              "Epworth"
+              "Epworth",
+              "drowsy"
             ],
             "tags": [
               "respiratory"
             ]
           },
           {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-5",
-            "chip_text": "morning headache reviewed",
-            "order": 5,
+            "chip_id": "resp-sleep-apnea-symptoms-symptoms-4",
+            "chip_text": "morning headaches reviewed",
+            "order": 4,
             "search_terms": [
               "morning",
               "headache"
@@ -62852,9 +62932,47 @@
             ]
           },
           {
+            "chip_id": "resp-sleep-apnea-symptoms-symptoms-5",
+            "chip_text": "concentration issues reviewed",
+            "order": 5,
+            "search_terms": [
+              "concentration",
+              "focus"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
             "chip_id": "resp-sleep-apnea-symptoms-symptoms-6",
-            "chip_text": "nocturnal choking reviewed",
+            "chip_text": "sleep quality reviewed",
             "order": 6,
+            "search_terms": [
+              "sleep",
+              "quality",
+              "restless"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-sleep-apnea-symptoms-symptoms-7",
+            "chip_text": "weight and BMI context reviewed if relevant",
+            "order": 7,
+            "search_terms": [
+              "weight",
+              "BMI",
+              "obesity"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-sleep-apnea-symptoms-symptoms-8",
+            "chip_text": "nocturnal choking reviewed",
+            "order": 8,
             "search_terms": [
               "choking",
               "gasping"
@@ -62864,47 +62982,13 @@
             ]
           },
           {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-7",
-            "chip_text": "nocturia reviewed if relevant",
-            "order": 7,
-            "search_terms": [
-              "nocturia"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-8",
-            "chip_text": "fatigue and concentration reviewed",
-            "order": 8,
-            "search_terms": [
-              "fatigue",
-              "concentration"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
             "chip_id": "resp-sleep-apnea-symptoms-symptoms-9",
-            "chip_text": "relationship to sleep position reviewed if relevant",
+            "chip_text": "partner report documented if available",
             "order": 9,
             "search_terms": [
-              "position",
-              "sleep"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-10",
-            "chip_text": "partner or bed partner report documented if available",
-            "order": 10,
-            "search_terms": [
               "partner",
-              "witness"
+              "witness",
+              "bed"
             ],
             "tags": [
               "respiratory"
@@ -62914,11 +62998,11 @@
         "relevant_negatives": [
           {
             "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-1",
-            "chip_text": "no witnessed apnoea reported if applicable",
+            "chip_text": "no syncope reported",
             "order": 1,
             "search_terms": [
-              "apnoea",
-              "witnessed"
+              "syncope",
+              "faint"
             ],
             "tags": [
               "respiratory"
@@ -62926,11 +63010,11 @@
           },
           {
             "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-2",
-            "chip_text": "no excessive daytime sleepiness reported if applicable",
+            "chip_text": "no acute respiratory distress reported",
             "order": 2,
             "search_terms": [
-              "sleepiness",
-              "daytime"
+              "acute",
+              "distress"
             ],
             "tags": [
               "respiratory"
@@ -62938,23 +63022,11 @@
           },
           {
             "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-3",
-            "chip_text": "no morning headache reported",
+            "chip_text": "no nocturnal seizures reported if applicable",
             "order": 3,
             "search_terms": [
-              "morning",
-              "headache"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-4",
-            "chip_text": "no nocturnal choking reported if applicable",
-            "order": 4,
-            "search_terms": [
-              "choking",
-              "gasping"
+              "seizure",
+              "fits"
             ],
             "tags": [
               "respiratory"
@@ -62964,11 +63036,12 @@
         "exam_findings": [
           {
             "chip_id": "resp-sleep-apnea-symptoms-exam_findings-1",
-            "chip_text": "vitals documented if measured",
+            "chip_text": "BMI documented if measured",
             "order": 1,
             "search_terms": [
-              "vitals",
-              "BP"
+              "BMI",
+              "weight",
+              "height"
             ],
             "tags": [
               "respiratory"
@@ -62976,11 +63049,12 @@
           },
           {
             "chip_id": "resp-sleep-apnea-symptoms-exam_findings-2",
-            "chip_text": "BMI documented if measured",
+            "chip_text": "blood pressure documented if measured",
             "order": 2,
             "search_terms": [
-              "BMI",
-              "weight"
+              "BP",
+              "blood",
+              "pressure"
             ],
             "tags": [
               "respiratory"
@@ -62992,7 +63066,7 @@
             "order": 3,
             "search_terms": [
               "neck",
-              "collar size"
+              "collar"
             ],
             "tags": [
               "respiratory"
@@ -63012,39 +63086,80 @@
           },
           {
             "chip_id": "resp-sleep-apnea-symptoms-exam_findings-5",
-            "chip_text": "nasal examination documented if relevant",
+            "chip_text": "oxygen saturation study reviewed if performed",
             "order": 5,
             "search_terms": [
-              "nasal",
-              "obstruction"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-exam_findings-6",
-            "chip_text": "blood pressure documented if measured",
-            "order": 6,
-            "search_terms": [
-              "BP",
-              "blood",
-              "pressure"
+              "oximetry",
+              "nocturnal"
             ],
             "tags": [
               "respiratory"
             ]
           }
         ],
-        "red_flags": [],
+        "red_flags": [
+          {
+            "chip_id": "resp-sleep-apnea-symptoms-red_flags-1",
+            "chip_text": "severe daytime somnolence",
+            "order": 1,
+            "search_terms": [
+              "severe",
+              "somnolence"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-sleep-apnea-symptoms-red_flags-2",
+            "chip_text": "observed apnoeas with desaturation",
+            "order": 2,
+            "search_terms": [
+              "apnea",
+              "desaturation"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-sleep-apnea-symptoms-red_flags-3",
+            "chip_text": "respiratory failure signs if suspected",
+            "order": 3,
+            "search_terms": [
+              "respiratory",
+              "failure"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-sleep-apnea-symptoms-red_flags-4",
+            "chip_text": "driving safety concern if present",
+            "order": 4,
+            "search_terms": [
+              "driving",
+              "safety"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          }
+        ],
         "investigations": [
           {
             "chip_id": "resp-sleep-apnea-symptoms-investigations-1",
-            "chip_text": "Epworth Sleepiness Scale score documented if assessed",
+            "chip_text": "Epworth score reviewed if completed",
             "order": 1,
             "search_terms": [
               "Epworth",
-              "ESS"
+              "ESS",
+              "sleepiness"
             ],
             "tags": [
               "respiratory"
@@ -63065,24 +63180,11 @@
           },
           {
             "chip_id": "resp-sleep-apnea-symptoms-investigations-3",
-            "chip_text": "previous sleep clinic notes reviewed if available",
+            "chip_text": "oxygen saturation study reviewed if performed",
             "order": 3,
             "search_terms": [
-              "sleep",
-              "clinic"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-investigations-4",
-            "chip_text": "home sleep study reviewed if performed",
-            "order": 4,
-            "search_terms": [
-              "home",
-              "sleep",
-              "study"
+              "oxygen",
+              "oximetry"
             ],
             "tags": [
               "respiratory"
@@ -63104,44 +63206,8 @@
           },
           {
             "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-2",
-            "chip_text": "lifestyle modification discussed if applicable",
-            "order": 2,
-            "search_terms": [
-              "lifestyle",
-              "weight"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-3",
-            "chip_text": "CPAP therapy discussed if applicable",
-            "order": 3,
-            "search_terms": [
-              "CPAP",
-              "machine"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-4",
-            "chip_text": "driving advice documented if clinician discussed",
-            "order": 4,
-            "search_terms": [
-              "driving",
-              "DVLA"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-5",
             "chip_text": "referral documented if clinician decided",
-            "order": 5,
+            "order": 2,
             "search_terms": [
               "referral",
               "sleep",
@@ -63152,23 +63218,46 @@
             ]
           },
           {
-            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-6",
-            "chip_text": "weight management discussed if applicable",
-            "order": 6,
+            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-3",
+            "chip_text": "driving advice documented if clinician discussed",
+            "order": 3,
             "search_terms": [
-              "weight",
-              "diet"
+              "driving",
+              "DVLA"
             ],
             "tags": [
               "respiratory"
             ]
-          }
-        ],
-        "follow_up": [
+          },
           {
-            "chip_id": "resp-sleep-apnea-symptoms-follow_up-1",
+            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-4",
+            "chip_text": "weight management discussed if applicable",
+            "order": 4,
+            "search_terms": [
+              "weight",
+              "diet",
+              "lifestyle"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-5",
+            "chip_text": "CPAP therapy discussed if applicable",
+            "order": 5,
+            "search_terms": [
+              "CPAP",
+              "machine"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-6",
             "chip_text": "follow-up documented if arranged",
-            "order": 1,
+            "order": 6,
             "search_terms": [
               "follow",
               "up"
@@ -63178,9 +63267,24 @@
             ]
           },
           {
-            "chip_id": "resp-sleep-apnea-symptoms-follow_up-2",
+            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-7",
+            "chip_text": "sleep hygiene advice documented if discussed",
+            "order": 7,
+            "search_terms": [
+              "sleep",
+              "hygiene",
+              "advice"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "resp-sleep-apnea-symptoms-follow_up-1",
             "chip_text": "3-6 months",
-            "order": 2,
+            "order": 1,
             "search_terms": [
               "three",
               "six",
@@ -63191,9 +63295,9 @@
             ]
           },
           {
-            "chip_id": "resp-sleep-apnea-symptoms-follow_up-3",
+            "chip_id": "resp-sleep-apnea-symptoms-follow_up-2",
             "chip_text": "6-12 months if stable",
-            "order": 3,
+            "order": 2,
             "search_terms": [
               "six",
               "twelve"
@@ -63203,9 +63307,9 @@
             ]
           },
           {
-            "chip_id": "resp-sleep-apnea-symptoms-follow_up-4",
+            "chip_id": "resp-sleep-apnea-symptoms-follow_up-3",
             "chip_text": "sooner if worsening",
-            "order": 4,
+            "order": 3,
             "search_terms": [
               "sooner",
               "worsening"
@@ -63215,9 +63319,9 @@
             ]
           },
           {
-            "chip_id": "resp-sleep-apnea-symptoms-follow_up-5",
+            "chip_id": "resp-sleep-apnea-symptoms-follow_up-4",
             "chip_text": "PRN",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "PRN",
               "as needed"
@@ -63277,15 +63381,15 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 10,
+        "symptoms": 9,
         "relevant_negatives": 4,
-        "exam_findings": 4,
-        "red_flags": 5,
-        "investigations": 5,
+        "exam_findings": 5,
+        "red_flags": 4,
+        "investigations": 3,
         "plan_phrases": 4,
-        "follow_up": 4
+        "follow_up": 5
       },
-      "total_chips": 36,
+      "total_chips": 34,
       "chips": {
         "symptoms": [
           {
@@ -63303,23 +63407,11 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-symptoms-2",
-            "chip_text": "onset documented",
+            "chip_text": "amount documented",
             "order": 2,
             "search_terms": [
-              "onset",
-              "timing"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-symptoms-3",
-            "chip_text": "volume documented",
-            "order": 3,
-            "search_terms": [
-              "volume",
               "amount",
+              "volume",
               "quantity"
             ],
             "tags": [
@@ -63327,12 +63419,25 @@
             ]
           },
           {
+            "chip_id": "resp-hemoptysis-documentation-symptoms-3",
+            "chip_text": "color and context documented",
+            "order": 3,
+            "search_terms": [
+              "color",
+              "frank",
+              "streaked"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
             "chip_id": "resp-hemoptysis-documentation-symptoms-4",
-            "chip_text": "frequency documented",
+            "chip_text": "cough and sputum reviewed",
             "order": 4,
             "search_terms": [
-              "frequency",
-              "how often"
+              "cough",
+              "sputum"
             ],
             "tags": [
               "respiratory"
@@ -63340,10 +63445,12 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-symptoms-5",
-            "chip_text": "associated cough reviewed",
+            "chip_text": "chest pain and dyspnea reviewed",
             "order": 5,
             "search_terms": [
-              "cough"
+              "chest",
+              "pain",
+              "dyspnea"
             ],
             "tags": [
               "respiratory"
@@ -63351,11 +63458,13 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-symptoms-6",
-            "chip_text": "associated chest pain reviewed",
+            "chip_text": "fever, night sweats and weight loss reviewed",
             "order": 6,
             "search_terms": [
-              "chest",
-              "pain"
+              "fever",
+              "sweats",
+              "weight",
+              "TB"
             ],
             "tags": [
               "respiratory"
@@ -63363,10 +63472,11 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-symptoms-7",
-            "chip_text": "fever reviewed",
+            "chip_text": "smoking history reviewed",
             "order": 7,
             "search_terms": [
-              "fever"
+              "smoking",
+              "cigarettes"
             ],
             "tags": [
               "respiratory"
@@ -63374,19 +63484,8 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-symptoms-8",
-            "chip_text": "smoking history reviewed if relevant",
-            "order": 8,
-            "search_terms": [
-              "smoking"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-symptoms-9",
             "chip_text": "anticoagulant use reviewed if relevant",
-            "order": 9,
+            "order": 8,
             "search_terms": [
               "anticoagulant",
               "warfarin",
@@ -63397,9 +63496,9 @@
             ]
           },
           {
-            "chip_id": "resp-hemoptysis-documentation-symptoms-10",
+            "chip_id": "resp-hemoptysis-documentation-symptoms-9",
             "chip_text": "prior episodes reviewed if applicable",
-            "order": 10,
+            "order": 9,
             "search_terms": [
               "prior",
               "previous",
@@ -63413,11 +63512,12 @@
         "relevant_negatives": [
           {
             "chip_id": "resp-hemoptysis-documentation-relevant_negatives-1",
-            "chip_text": "no weight loss reported if relevant",
+            "chip_text": "no massive bleeding reported if documented",
             "order": 1,
             "search_terms": [
-              "weight",
-              "loss"
+              "massive",
+              "large",
+              "volume"
             ],
             "tags": [
               "respiratory"
@@ -63425,12 +63525,11 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-relevant_negatives-2",
-            "chip_text": "no fever or night sweats reported if applicable",
+            "chip_text": "no severe breathlessness reported",
             "order": 2,
             "search_terms": [
-              "fever",
-              "sweats",
-              "TB"
+              "severe",
+              "breathlessness"
             ],
             "tags": [
               "respiratory"
@@ -63441,7 +63540,8 @@
             "chip_text": "no chest trauma reported",
             "order": 3,
             "search_terms": [
-              "trauma"
+              "trauma",
+              "injury"
             ],
             "tags": [
               "respiratory"
@@ -63449,11 +63549,11 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-relevant_negatives-4",
-            "chip_text": "no anticoagulant or antiplatelet reported if relevant",
+            "chip_text": "no TB symptoms reported if applicable",
             "order": 4,
             "search_terms": [
-              "anticoagulant",
-              "antiplatelet"
+              "TB",
+              "tuberculosis"
             ],
             "tags": [
               "respiratory"
@@ -63468,7 +63568,7 @@
             "search_terms": [
               "vitals",
               "BP",
-              "O2 sat"
+              "pulse"
             ],
             "tags": [
               "respiratory"
@@ -63488,8 +63588,20 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-exam_findings-3",
-            "chip_text": "oropharynx documented if assessed",
+            "chip_text": "oxygen saturation documented if measured",
             "order": 3,
+            "search_terms": [
+              "oxygen",
+              "SpO2"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-hemoptysis-documentation-exam_findings-4",
+            "chip_text": "oropharynx documented if assessed",
+            "order": 4,
             "search_terms": [
               "oropharynx",
               "throat"
@@ -63499,12 +63611,12 @@
             ]
           },
           {
-            "chip_id": "resp-hemoptysis-documentation-exam_findings-4",
-            "chip_text": "nasal examination documented if relevant",
-            "order": 4,
+            "chip_id": "resp-hemoptysis-documentation-exam_findings-5",
+            "chip_text": "respiratory rate documented if measured",
+            "order": 5,
             "search_terms": [
-              "nasal",
-              "epistaxis"
+              "RR",
+              "respiratory"
             ],
             "tags": [
               "respiratory"
@@ -63514,11 +63626,12 @@
         "red_flags": [
           {
             "chip_id": "resp-hemoptysis-documentation-red_flags-1",
-            "chip_text": "hemoptysis red flags",
+            "chip_text": "massive hemoptysis",
             "order": 1,
             "search_terms": [
-              "hemoptysis",
-              "red flags"
+              "massive",
+              "large",
+              "volume"
             ],
             "tags": [
               "respiratory",
@@ -63527,11 +63640,12 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-red_flags-2",
-            "chip_text": "massive hemoptysis",
+            "chip_text": "constitutional symptoms with hemoptysis",
             "order": 2,
             "search_terms": [
-              "massive",
-              "large volume"
+              "weight",
+              "fever",
+              "sweats"
             ],
             "tags": [
               "respiratory",
@@ -63540,26 +63654,10 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-red_flags-3",
-            "chip_text": "constitutional symptoms",
+            "chip_text": "known malignancy risk with new hemoptysis",
             "order": 3,
             "search_terms": [
-              "weight",
-              "loss",
-              "fever",
-              "night sweats"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-red_flags-4",
-            "chip_text": "known malignancy risk",
-            "order": 4,
-            "search_terms": [
               "malignancy",
-              "cancer",
               "smoker"
             ],
             "tags": [
@@ -63568,12 +63666,12 @@
             ]
           },
           {
-            "chip_id": "resp-hemoptysis-documentation-red_flags-5",
-            "chip_text": "on anticoagulation",
-            "order": 5,
+            "chip_id": "resp-hemoptysis-documentation-red_flags-4",
+            "chip_text": "on anticoagulation with new hemoptysis",
+            "order": 4,
             "search_terms": [
               "anticoagulant",
-              "warfarin"
+              "INR"
             ],
             "tags": [
               "respiratory",
@@ -63584,12 +63682,12 @@
         "investigations": [
           {
             "chip_id": "resp-hemoptysis-documentation-investigations-1",
-            "chip_text": "CXR reviewed if performed",
+            "chip_text": "chest imaging reviewed if available",
             "order": 1,
             "search_terms": [
               "CXR",
-              "chest",
-              "X-ray"
+              "CT",
+              "chest"
             ],
             "tags": [
               "respiratory"
@@ -63597,11 +63695,12 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-investigations-2",
-            "chip_text": "CT chest reviewed if performed",
+            "chip_text": "blood tests reviewed if ordered",
             "order": 2,
             "search_terms": [
-              "CT",
-              "chest"
+              "blood",
+              "labs",
+              "coagulation"
             ],
             "tags": [
               "respiratory"
@@ -63615,30 +63714,6 @@
               "sputum",
               "culture",
               "AFB"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-investigations-4",
-            "chip_text": "coagulation profile reviewed if ordered",
-            "order": 4,
-            "search_terms": [
-              "INR",
-              "coagulation"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-investigations-5",
-            "chip_text": "bronchoscopy report reviewed if performed",
-            "order": 5,
-            "search_terms": [
-              "bronchoscopy",
-              "scope"
             ],
             "tags": [
               "respiratory"
@@ -63672,11 +63747,11 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-plan_phrases-3",
-            "chip_text": "referral documented if clinician decided",
+            "chip_text": "follow-up documented if clinician decided",
             "order": 3,
             "search_terms": [
-              "referral",
-              "respiratory"
+              "follow",
+              "up"
             ],
             "tags": [
               "respiratory"
@@ -63684,11 +63759,11 @@
           },
           {
             "chip_id": "resp-hemoptysis-documentation-plan_phrases-4",
-            "chip_text": "follow-up documented if arranged",
+            "chip_text": "referral documented if clinician decided",
             "order": 4,
             "search_terms": [
-              "follow",
-              "up"
+              "referral",
+              "respiratory"
             ],
             "tags": [
               "respiratory"
@@ -63745,6 +63820,18 @@
             "tags": [
               "respiratory"
             ]
+          },
+          {
+            "chip_id": "resp-hemoptysis-documentation-follow_up-5",
+            "chip_text": "sooner if bleeding recurs",
+            "order": 5,
+            "search_terms": [
+              "bleeding",
+              "recurrent"
+            ],
+            "tags": [
+              "respiratory"
+            ]
           }
         ]
       },
@@ -63791,23 +63878,24 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 12,
-        "relevant_negatives": 2,
-        "exam_findings": 7,
-        "red_flags": 0,
-        "investigations": 1,
-        "plan_phrases": 8,
+        "symptoms": 11,
+        "relevant_negatives": 3,
+        "exam_findings": 5,
+        "red_flags": 3,
+        "investigations": 2,
+        "plan_phrases": 5,
         "follow_up": 4
       },
-      "total_chips": 34,
+      "total_chips": 33,
       "chips": {
         "symptoms": [
           {
             "chip_id": "resp-smoking-history-note-symptoms-1",
-            "chip_text": "smoking history note",
+            "chip_text": "smoking history documented",
             "order": 1,
             "search_terms": [
               "smoking",
+              "tobacco",
               "history"
             ],
             "tags": [
@@ -63816,13 +63904,13 @@
           },
           {
             "chip_id": "resp-smoking-history-note-symptoms-2",
-            "chip_text": "current smoking pattern documented",
+            "chip_text": "cigarettes per day documented",
             "order": 2,
             "search_terms": [
-              "current",
-              "former",
-              "never",
-              "pack years"
+              "cigarettes",
+              "per",
+              "day",
+              "quantity"
             ],
             "tags": [
               "respiratory"
@@ -63830,8 +63918,20 @@
           },
           {
             "chip_id": "resp-smoking-history-note-symptoms-3",
-            "chip_text": "pack years documented",
+            "chip_text": "years smoked documented",
             "order": 3,
+            "search_terms": [
+              "years",
+              "duration"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-smoking-history-note-symptoms-4",
+            "chip_text": "pack years documented if calculated",
+            "order": 4,
             "search_terms": [
               "pack",
               "years"
@@ -63841,21 +63941,60 @@
             ]
           },
           {
-            "chip_id": "resp-smoking-history-note-symptoms-4",
-            "chip_text": "age when started documented if relevant",
-            "order": 4,
+            "chip_id": "resp-smoking-history-note-symptoms-5",
+            "chip_text": "ex-smoker history documented if relevant",
+            "order": 5,
             "search_terms": [
-              "age",
-              "started"
+              "ex-smoker",
+              "former",
+              "quit"
             ],
             "tags": [
               "respiratory"
             ]
           },
           {
-            "chip_id": "resp-smoking-history-note-symptoms-5",
-            "chip_text": "quit attempts reviewed if applicable",
-            "order": 5,
+            "chip_id": "resp-smoking-history-note-symptoms-6",
+            "chip_text": "passive smoke exposure reviewed",
+            "order": 6,
+            "search_terms": [
+              "passive",
+              "secondhand"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-smoking-history-note-symptoms-7",
+            "chip_text": "occupational exposure reviewed if relevant",
+            "order": 7,
+            "search_terms": [
+              "occupational",
+              "work",
+              "exposure"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-smoking-history-note-symptoms-8",
+            "chip_text": "respiratory symptoms reviewed",
+            "order": 8,
+            "search_terms": [
+              "cough",
+              "wheeze",
+              "SOB"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-smoking-history-note-symptoms-9",
+            "chip_text": "previous quit attempts reviewed if applicable",
+            "order": 9,
             "search_terms": [
               "quit",
               "cessation",
@@ -63866,63 +64005,13 @@
             ]
           },
           {
-            "chip_id": "resp-smoking-history-note-symptoms-6",
-            "chip_text": "previous cessation methods reviewed",
-            "order": 6,
-            "search_terms": [
-              "cessation",
-              "NRT",
-              "varenicline"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-7",
-            "chip_text": "motivation to quit reviewed if applicable",
-            "order": 7,
-            "search_terms": [
-              "motivation",
-              "ready"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-8",
-            "chip_text": "passive smoke exposure reviewed if relevant",
-            "order": 8,
-            "search_terms": [
-              "passive",
-              "secondhand"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-9",
-            "chip_text": "type of tobacco use documented",
-            "order": 9,
-            "search_terms": [
-              "tobacco",
-              "cigarettes",
-              "shisha"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
             "chip_id": "resp-smoking-history-note-symptoms-10",
-            "chip_text": "amount used per day documented",
+            "chip_text": "motivation to quit reviewed if current smoker",
             "order": 10,
             "search_terms": [
-              "daily",
-              "per day",
-              "quantity"
+              "motivation",
+              "ready",
+              "change"
             ],
             "tags": [
               "respiratory"
@@ -63930,20 +64019,8 @@
           },
           {
             "chip_id": "resp-smoking-history-note-symptoms-11",
-            "chip_text": "previous quit duration documented if applicable",
+            "chip_text": "barriers to quitting discussed if applicable",
             "order": 11,
-            "search_terms": [
-              "quit",
-              "duration"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-12",
-            "chip_text": "barriers to quitting reviewed if applicable",
-            "order": 12,
             "search_terms": [
               "barriers",
               "difficulty"
@@ -63956,10 +64033,11 @@
         "relevant_negatives": [
           {
             "chip_id": "resp-smoking-history-note-relevant_negatives-1",
-            "chip_text": "no cough reported if applicable",
+            "chip_text": "no hemoptysis reported if applicable",
             "order": 1,
             "search_terms": [
-              "cough"
+              "hemoptysis",
+              "blood"
             ],
             "tags": [
               "respiratory"
@@ -63967,11 +64045,23 @@
           },
           {
             "chip_id": "resp-smoking-history-note-relevant_negatives-2",
-            "chip_text": "no shortness of breath reported if applicable",
+            "chip_text": "no unexplained weight loss reported if applicable",
             "order": 2,
             "search_terms": [
-              "SOB",
-              "breathlessness"
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-smoking-history-note-relevant_negatives-3",
+            "chip_text": "no respiratory symptoms reported if applicable",
+            "order": 3,
+            "search_terms": [
+              "cough",
+              "wheeze"
             ],
             "tags": [
               "respiratory"
@@ -63981,11 +64071,11 @@
         "exam_findings": [
           {
             "chip_id": "resp-smoking-history-note-exam_findings-1",
-            "chip_text": "vitals documented if measured",
+            "chip_text": "chest exam documented if assessed",
             "order": 1,
             "search_terms": [
-              "vitals",
-              "BP"
+              "chest",
+              "auscultation"
             ],
             "tags": [
               "respiratory"
@@ -63993,57 +64083,8 @@
           },
           {
             "chip_id": "resp-smoking-history-note-exam_findings-2",
-            "chip_text": "BMI documented if measured",
-            "order": 2,
-            "search_terms": [
-              "BMI",
-              "weight"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-exam_findings-3",
-            "chip_text": "chest auscultation documented if assessed",
-            "order": 3,
-            "search_terms": [
-              "auscultation",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-exam_findings-4",
-            "chip_text": "peripheral signs documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "peripheral",
-              "clubbing",
-              "cyanosis"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-exam_findings-5",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 5,
-            "search_terms": [
-              "RR",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-exam_findings-6",
             "chip_text": "oxygen saturation documented if measured",
-            "order": 6,
+            "order": 2,
             "search_terms": [
               "oxygen",
               "SpO2"
@@ -64053,28 +64094,105 @@
             ]
           },
           {
-            "chip_id": "resp-smoking-history-note-exam_findings-7",
+            "chip_id": "resp-smoking-history-note-exam_findings-3",
             "chip_text": "oral examination documented if assessed",
-            "order": 7,
+            "order": 3,
             "search_terms": [
               "oral",
-              "mouth",
-              "smoker"
+              "mouth"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-smoking-history-note-exam_findings-4",
+            "chip_text": "respiratory rate documented if measured",
+            "order": 4,
+            "search_terms": [
+              "RR",
+              "respiratory"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-smoking-history-note-exam_findings-5",
+            "chip_text": "blood pressure documented if measured",
+            "order": 5,
+            "search_terms": [
+              "BP",
+              "blood",
+              "pressure"
             ],
             "tags": [
               "respiratory"
             ]
           }
         ],
-        "red_flags": [],
+        "red_flags": [
+          {
+            "chip_id": "resp-smoking-history-note-red_flags-1",
+            "chip_text": "new cough with smoking history",
+            "order": 1,
+            "search_terms": [
+              "new",
+              "cough",
+              "smoker"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-smoking-history-note-red_flags-2",
+            "chip_text": "hemoptysis in smoker",
+            "order": 2,
+            "search_terms": [
+              "hemoptysis",
+              "smoker"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-smoking-history-note-red_flags-3",
+            "chip_text": "unexplained weight loss in smoker",
+            "order": 3,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          }
+        ],
         "investigations": [
           {
             "chip_id": "resp-smoking-history-note-investigations-1",
-            "chip_text": "CO monitoring discussed if available",
+            "chip_text": "chest imaging reviewed if available",
             "order": 1,
             "search_terms": [
-              "CO",
-              "carbon monoxide"
+              "CXR",
+              "chest"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-smoking-history-note-investigations-2",
+            "chip_text": "spirometry reviewed if performed",
+            "order": 2,
+            "search_terms": [
+              "spirometry",
+              "PFT"
             ],
             "tags": [
               "respiratory"
@@ -64096,11 +64214,11 @@
           },
           {
             "chip_id": "resp-smoking-history-note-plan_phrases-2",
-            "chip_text": "smoking cessation counselling documented if discussed",
+            "chip_text": "smoking cessation advice documented if discussed",
             "order": 2,
             "search_terms": [
               "cessation",
-              "counselling"
+              "advice"
             ],
             "tags": [
               "respiratory"
@@ -64108,13 +64226,12 @@
           },
           {
             "chip_id": "resp-smoking-history-note-plan_phrases-3",
-            "chip_text": "NRT or pharmacotherapy plan documented if clinician decided",
+            "chip_text": "cessation support referral documented if clinician decided",
             "order": 3,
             "search_terms": [
-              "NRT",
-              "patch",
-              "gum",
-              "varenicline"
+              "referral",
+              "cessation",
+              "stop smoking"
             ],
             "tags": [
               "respiratory"
@@ -64122,20 +64239,8 @@
           },
           {
             "chip_id": "resp-smoking-history-note-plan_phrases-4",
-            "chip_text": "referral to smoking cessation service documented if clinician decided",
-            "order": 4,
-            "search_terms": [
-              "cessation",
-              "service"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-plan_phrases-5",
             "chip_text": "follow-up documented if arranged",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "follow",
               "up"
@@ -64145,37 +64250,13 @@
             ]
           },
           {
-            "chip_id": "resp-smoking-history-note-plan_phrases-6",
-            "chip_text": "behavioural support discussed if applicable",
-            "order": 6,
-            "search_terms": [
-              "behavioural",
-              "support"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-plan_phrases-7",
-            "chip_text": "nicotine replacement therapy plan documented if clinician decided",
-            "order": 7,
+            "chip_id": "resp-smoking-history-note-plan_phrases-5",
+            "chip_text": "NRT or pharmacotherapy plan documented if clinician decided",
+            "order": 5,
             "search_terms": [
               "NRT",
-              "nicotine",
-              "patch"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-plan_phrases-8",
-            "chip_text": "relapse prevention discussed if applicable",
-            "order": 8,
-            "search_terms": [
-              "relapse",
-              "prevention"
+              "patch",
+              "varenicline"
             ],
             "tags": [
               "respiratory"
@@ -64280,15 +64361,15 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 11,
-        "relevant_negatives": 1,
-        "exam_findings": 6,
-        "red_flags": 0,
-        "investigations": 5,
-        "plan_phrases": 7,
+        "symptoms": 9,
+        "relevant_negatives": 2,
+        "exam_findings": 4,
+        "red_flags": 3,
+        "investigations": 3,
+        "plan_phrases": 6,
         "follow_up": 4
       },
-      "total_chips": 34,
+      "total_chips": 31,
       "chips": {
         "symptoms": [
           {
@@ -64306,9 +64387,10 @@
           },
           {
             "chip_id": "resp-pulmonary-function-review-symptoms-2",
-            "chip_text": "FEV1 reviewed",
+            "chip_text": "spirometry reviewed",
             "order": 2,
             "search_terms": [
+              "spirometry",
               "FEV1",
               "FVC"
             ],
@@ -64318,19 +64400,8 @@
           },
           {
             "chip_id": "resp-pulmonary-function-review-symptoms-3",
-            "chip_text": "FVC reviewed",
+            "chip_text": "FEV1 and FVC context reviewed if documented",
             "order": 3,
-            "search_terms": [
-              "FVC"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-4",
-            "chip_text": "FEV1/FVC ratio reviewed",
-            "order": 4,
             "search_terms": [
               "FEV1",
               "FVC",
@@ -64341,12 +64412,24 @@
             ]
           },
           {
+            "chip_id": "resp-pulmonary-function-review-symptoms-4",
+            "chip_text": "symptom correlation documented",
+            "order": 4,
+            "search_terms": [
+              "symptom",
+              "correlation"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
             "chip_id": "resp-pulmonary-function-review-symptoms-5",
-            "chip_text": "obstructive versus restrictive pattern documented",
+            "chip_text": "inhaler and medication use reviewed if relevant",
             "order": 5,
             "search_terms": [
-              "obstructive",
-              "restrictive"
+              "inhaler",
+              "medication"
             ],
             "tags": [
               "respiratory"
@@ -64354,11 +64437,11 @@
           },
           {
             "chip_id": "resp-pulmonary-function-review-symptoms-6",
-            "chip_text": "bronchodilator response reviewed if performed",
+            "chip_text": "smoking history reviewed",
             "order": 6,
             "search_terms": [
-              "bronchodilator",
-              "reversibility"
+              "smoking",
+              "cigarettes"
             ],
             "tags": [
               "respiratory"
@@ -64366,20 +64449,8 @@
           },
           {
             "chip_id": "resp-pulmonary-function-review-symptoms-7",
-            "chip_text": "DLCO reviewed if available",
-            "order": 7,
-            "search_terms": [
-              "DLCO",
-              "diffusion"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-8",
             "chip_text": "previous PFT comparison documented if available",
-            "order": 8,
+            "order": 7,
             "search_terms": [
               "previous",
               "prior",
@@ -64390,36 +64461,24 @@
             ]
           },
           {
+            "chip_id": "resp-pulmonary-function-review-symptoms-8",
+            "chip_text": "bronchodilator response reviewed if performed",
+            "order": 8,
+            "search_terms": [
+              "bronchodilator",
+              "reversibility"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
             "chip_id": "resp-pulmonary-function-review-symptoms-9",
-            "chip_text": "clinical context documented",
+            "chip_text": "DLCO reviewed if available",
             "order": 9,
             "search_terms": [
-              "clinical",
-              "context"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-10",
-            "chip_text": "symptom correlation with PFT documented",
-            "order": 10,
-            "search_terms": [
-              "symptom",
-              "correlation"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-11",
-            "chip_text": "TLC reviewed if available",
-            "order": 11,
-            "search_terms": [
-              "TLC",
-              "total lung capacity"
+              "DLCO",
+              "diffusion"
             ],
             "tags": [
               "respiratory"
@@ -64429,10 +64488,22 @@
         "relevant_negatives": [
           {
             "chip_id": "resp-pulmonary-function-review-relevant_negatives-1",
-            "chip_text": "no acute change in symptoms reported",
+            "chip_text": "no acute respiratory distress reported",
             "order": 1,
             "search_terms": [
               "acute",
+              "distress"
+            ],
+            "tags": [
+              "respiratory"
+            ]
+          },
+          {
+            "chip_id": "resp-pulmonary-function-review-relevant_negatives-2",
+            "chip_text": "no significant symptom change reported if applicable",
+            "order": 2,
+            "search_terms": [
+              "symptom",
               "change"
             ],
             "tags": [
@@ -64443,11 +64514,11 @@
         "exam_findings": [
           {
             "chip_id": "resp-pulmonary-function-review-exam_findings-1",
-            "chip_text": "clinical correlation documented",
+            "chip_text": "oxygen saturation documented if measured",
             "order": 1,
             "search_terms": [
-              "clinical",
-              "correlation"
+              "oxygen",
+              "SpO2"
             ],
             "tags": [
               "respiratory"
@@ -64458,7 +64529,8 @@
             "chip_text": "chest auscultation documented if assessed",
             "order": 2,
             "search_terms": [
-              "auscultation"
+              "auscultation",
+              "chest"
             ],
             "tags": [
               "respiratory"
@@ -64466,11 +64538,11 @@
           },
           {
             "chip_id": "resp-pulmonary-function-review-exam_findings-3",
-            "chip_text": "oxygen saturation documented if measured",
+            "chip_text": "clinical correlation documented",
             "order": 3,
             "search_terms": [
-              "oxygen",
-              "SpO2"
+              "clinical",
+              "correlation"
             ],
             "tags": [
               "respiratory"
@@ -64478,20 +64550,8 @@
           },
           {
             "chip_id": "resp-pulmonary-function-review-exam_findings-4",
-            "chip_text": "vitals documented if measured",
-            "order": 4,
-            "search_terms": [
-              "vitals",
-              "O2 sat"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-exam_findings-5",
             "chip_text": "respiratory rate documented if measured",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "RR",
               "respiratory"
@@ -64499,21 +64559,50 @@
             "tags": [
               "respiratory"
             ]
-          },
+          }
+        ],
+        "red_flags": [
           {
-            "chip_id": "resp-pulmonary-function-review-exam_findings-6",
-            "chip_text": "BMI documented if measured",
-            "order": 6,
+            "chip_id": "resp-pulmonary-function-review-red_flags-1",
+            "chip_text": "significant decline in FEV1",
+            "order": 1,
             "search_terms": [
-              "BMI",
-              "weight"
+              "decline",
+              "FEV1"
             ],
             "tags": [
-              "respiratory"
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-pulmonary-function-review-red_flags-2",
+            "chip_text": "worsening symptoms with declining PFT",
+            "order": 2,
+            "search_terms": [
+              "worsening",
+              "symptoms"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "resp-pulmonary-function-review-red_flags-3",
+            "chip_text": "new obstruction or restriction pattern",
+            "order": 3,
+            "search_terms": [
+              "new",
+              "obstruction",
+              "restriction"
+            ],
+            "tags": [
+              "respiratory",
+              "high_safety"
             ]
           }
         ],
-        "red_flags": [],
         "investigations": [
           {
             "chip_id": "resp-pulmonary-function-review-investigations-1",
@@ -64529,21 +64618,10 @@
           },
           {
             "chip_id": "resp-pulmonary-function-review-investigations-2",
-            "chip_text": "CXR reviewed if performed",
+            "chip_text": "chest imaging reviewed if available",
             "order": 2,
             "search_terms": [
               "CXR",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-investigations-3",
-            "chip_text": "CT chest reviewed if available",
-            "order": 3,
-            "search_terms": [
               "CT",
               "chest"
             ],
@@ -64552,27 +64630,13 @@
             ]
           },
           {
-            "chip_id": "resp-pulmonary-function-review-investigations-4",
+            "chip_id": "resp-pulmonary-function-review-investigations-3",
             "chip_text": "blood gas reviewed if performed",
-            "order": 4,
+            "order": 3,
             "search_terms": [
               "blood",
               "gas",
               "ABG"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-investigations-5",
-            "chip_text": "6-minute walk test reviewed if performed",
-            "order": 5,
-            "search_terms": [
-              "six",
-              "minute",
-              "walk",
-              "6MWT"
             ],
             "tags": [
               "respiratory"
@@ -64618,20 +64682,8 @@
           },
           {
             "chip_id": "resp-pulmonary-function-review-plan_phrases-4",
-            "chip_text": "follow-up documented if arranged",
-            "order": 4,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-plan_phrases-5",
             "chip_text": "PFT follow-up interval documented if clinician decided",
-            "order": 5,
+            "order": 4,
             "search_terms": [
               "PFT",
               "interval",
@@ -64642,24 +64694,24 @@
             ]
           },
           {
-            "chip_id": "resp-pulmonary-function-review-plan_phrases-6",
-            "chip_text": "spirometry monitor plan documented if clinician decided",
-            "order": 6,
+            "chip_id": "resp-pulmonary-function-review-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
             "search_terms": [
-              "spirometry",
-              "monitor"
+              "follow",
+              "up"
             ],
             "tags": [
               "respiratory"
             ]
           },
           {
-            "chip_id": "resp-pulmonary-function-review-plan_phrases-7",
-            "chip_text": "safety-netting documented if discussed",
-            "order": 7,
+            "chip_id": "resp-pulmonary-function-review-plan_phrases-6",
+            "chip_text": "spirometry monitoring plan documented if clinician decided",
+            "order": 6,
             "search_terms": [
-              "safety",
-              "netting"
+              "spirometry",
+              "monitor"
             ],
             "tags": [
               "respiratory"
@@ -64765,9 +64817,538 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 10,
+        "relevant_negatives": 6,
+        "exam_findings": 5,
+        "red_flags": 7,
+        "investigations": 3,
+        "plan_phrases": 5,
+        "follow_up": 4
+      },
+      "total_chips": 40,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "gastro-gerd-symptoms-1",
+            "chip_text": "reflux symptoms",
+            "order": 1,
+            "search_terms": [
+              "reflux",
+              "GERD",
+              "acid"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-symptoms-2",
+            "chip_text": "heartburn",
+            "order": 2,
+            "search_terms": [
+              "heartburn",
+              "burning"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-symptoms-3",
+            "chip_text": "regurgitation",
+            "order": 3,
+            "search_terms": [
+              "regurgitation"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-symptoms-4",
+            "chip_text": "epigastric discomfort",
+            "order": 4,
+            "search_terms": [
+              "epigastric",
+              "discomfort",
+              "pain"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-symptoms-5",
+            "chip_text": "post-prandial symptoms documented",
+            "order": 5,
+            "search_terms": [
+              "postprandial",
+              "after",
+              "meals"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-symptoms-6",
+            "chip_text": "nocturnal symptoms reviewed",
+            "order": 6,
+            "search_terms": [
+              "nocturnal",
+              "night",
+              "lying"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-symptoms-7",
+            "chip_text": "trigger foods reviewed",
+            "order": 7,
+            "search_terms": [
+              "trigger",
+              "food",
+              "spicy",
+              "fatty"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-symptoms-8",
+            "chip_text": "medication use reviewed",
+            "order": 8,
+            "search_terms": [
+              "medication",
+              "PPI",
+              "antacid"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-symptoms-9",
+            "chip_text": "belching reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "belching",
+              "burping"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-symptoms-10",
+            "chip_text": "chest pain reviewed if non-cardiac",
+            "order": 10,
+            "search_terms": [
+              "chest",
+              "pain",
+              "non-cardiac"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "gastro-gerd-relevant_negatives-1",
+            "chip_text": "no dysphagia reported",
+            "order": 1,
+            "search_terms": [
+              "dysphagia",
+              "swallowing"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-relevant_negatives-2",
+            "chip_text": "no odynophagia reported",
+            "order": 2,
+            "search_terms": [
+              "odynophagia",
+              "painful",
+              "swallowing"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-relevant_negatives-3",
+            "chip_text": "no weight loss reported",
+            "order": 3,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-relevant_negatives-4",
+            "chip_text": "no vomiting blood reported",
+            "order": 4,
+            "search_terms": [
+              "vomiting",
+              "blood",
+              "hematemesis"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-relevant_negatives-5",
+            "chip_text": "no black stools reported",
+            "order": 5,
+            "search_terms": [
+              "black",
+              "stools",
+              "melena"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-relevant_negatives-6",
+            "chip_text": "no persistent vomiting reported",
+            "order": 6,
+            "search_terms": [
+              "persistent",
+              "vomiting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "gastro-gerd-exam_findings-1",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-exam_findings-2",
+            "chip_text": "epigastric tenderness documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "epigastric",
+              "tenderness"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-exam_findings-3",
+            "chip_text": "vitals documented if measured",
+            "order": 3,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-exam_findings-4",
+            "chip_text": "general appearance documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "appearance",
+              "well"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-exam_findings-5",
+            "chip_text": "oral examination documented if assessed",
+            "order": 5,
+            "search_terms": [
+              "oral",
+              "dental",
+              "erosion"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "gastro-gerd-red_flags-1",
+            "chip_text": "dysphagia or odynophagia",
+            "order": 1,
+            "search_terms": [
+              "dysphagia",
+              "odynophagia"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-red_flags-2",
+            "chip_text": "unexplained weight loss",
+            "order": 2,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-red_flags-3",
+            "chip_text": "gastrointestinal bleeding",
+            "order": 3,
+            "search_terms": [
+              "bleeding",
+              "hematemesis",
+              "melena"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-red_flags-4",
+            "chip_text": "persistent vomiting",
+            "order": 4,
+            "search_terms": [
+              "vomiting",
+              "persistent"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-red_flags-5",
+            "chip_text": "epigastric mass",
+            "order": 5,
+            "search_terms": [
+              "mass",
+              "epigastric"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-red_flags-6",
+            "chip_text": "iron deficiency anaemia",
+            "order": 6,
+            "search_terms": [
+              "anaemia",
+              "IDA"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-red_flags-7",
+            "chip_text": "family history of Barrett oesophagus if relevant",
+            "order": 7,
+            "search_terms": [
+              "Barrett",
+              "family",
+              "oesophageal"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "gastro-gerd-investigations-1",
+            "chip_text": "previous endoscopy report reviewed if available",
+            "order": 1,
+            "search_terms": [
+              "endoscopy",
+              "OGD",
+              "EGD"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-investigations-2",
+            "chip_text": "previous imaging reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "imaging",
+              "barium"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-investigations-3",
+            "chip_text": "blood tests reviewed if ordered",
+            "order": 3,
+            "search_terms": [
+              "blood",
+              "FBC",
+              "iron"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "gastro-gerd-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-plan_phrases-2",
+            "chip_text": "lifestyle modification discussed if applicable",
+            "order": 2,
+            "search_terms": [
+              "lifestyle",
+              "diet",
+              "weight"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-plan_phrases-3",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "medication",
+              "PPI",
+              "antacid"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-plan_phrases-4",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 4,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "gastro-gerd-follow_up-1",
+            "chip_text": "4-6 weeks",
+            "order": 1,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-follow_up-2",
+            "chip_text": "6-8 weeks",
+            "order": 2,
+            "search_terms": [
+              "six",
+              "eight",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-gerd-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "GERD",
         "acid reflux",
@@ -64817,9 +65398,537 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 10,
+        "relevant_negatives": 6,
+        "exam_findings": 6,
+        "red_flags": 7,
+        "investigations": 3,
+        "plan_phrases": 4,
+        "follow_up": 4
+      },
+      "total_chips": 40,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "gastro-abdominal-pain-symptoms-1",
+            "chip_text": "abdominal pain",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "pain",
+              "stomach ache"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-symptoms-2",
+            "chip_text": "location documented",
+            "order": 2,
+            "search_terms": [
+              "location",
+              "site",
+              "quadrant"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-symptoms-3",
+            "chip_text": "onset and duration documented",
+            "order": 3,
+            "search_terms": [
+              "onset",
+              "duration"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-symptoms-4",
+            "chip_text": "character documented",
+            "order": 4,
+            "search_terms": [
+              "character",
+              "colicky",
+              "sharp",
+              "dull"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-symptoms-5",
+            "chip_text": "severity documented",
+            "order": 5,
+            "search_terms": [
+              "severity",
+              "intensity"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-symptoms-6",
+            "chip_text": "radiation reviewed",
+            "order": 6,
+            "search_terms": [
+              "radiation",
+              "referred"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-symptoms-7",
+            "chip_text": "aggravating and relieving factors reviewed",
+            "order": 7,
+            "search_terms": [
+              "aggrevating",
+              "relieving",
+              "food"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-symptoms-8",
+            "chip_text": "associated nausea or vomiting reviewed",
+            "order": 8,
+            "search_terms": [
+              "nausea",
+              "vomiting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-symptoms-9",
+            "chip_text": "bowel habit reviewed",
+            "order": 9,
+            "search_terms": [
+              "bowel",
+              "habit",
+              "stool"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-symptoms-10",
+            "chip_text": "previous abdominal surgery reviewed",
+            "order": 10,
+            "search_terms": [
+              "surgery",
+              "previous",
+              "scar"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "gastro-abdominal-pain-relevant_negatives-1",
+            "chip_text": "no fever reported",
+            "order": 1,
+            "search_terms": [
+              "fever",
+              "temperature"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-relevant_negatives-2",
+            "chip_text": "no vomiting blood reported",
+            "order": 2,
+            "search_terms": [
+              "hematemesis",
+              "blood"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-relevant_negatives-3",
+            "chip_text": "no black stools reported",
+            "order": 3,
+            "search_terms": [
+              "melena",
+              "black",
+              "stool"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-relevant_negatives-4",
+            "chip_text": "no unintentional weight loss reported",
+            "order": 4,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-relevant_negatives-5",
+            "chip_text": "no jaundice reported",
+            "order": 5,
+            "search_terms": [
+              "jaundice",
+              "yellow"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-relevant_negatives-6",
+            "chip_text": "no abdominal surgery history reported if relevant",
+            "order": 6,
+            "search_terms": [
+              "surgery",
+              "scar"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "gastro-abdominal-pain-exam_findings-1",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "exam",
+              "palpation"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-exam_findings-2",
+            "chip_text": "tenderness documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "tenderness",
+              "guarding"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-exam_findings-3",
+            "chip_text": "bowel sounds documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "bowel",
+              "sounds"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-exam_findings-4",
+            "chip_text": "vitals documented if measured",
+            "order": 4,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse",
+              "temp"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-exam_findings-5",
+            "chip_text": "general appearance documented if assessed",
+            "order": 5,
+            "search_terms": [
+              "appearance",
+              "distress"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-exam_findings-6",
+            "chip_text": "abdominal distension documented if assessed",
+            "order": 6,
+            "search_terms": [
+              "distension",
+              "bloating"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "gastro-abdominal-pain-red_flags-1",
+            "chip_text": "severe or worsening pain",
+            "order": 1,
+            "search_terms": [
+              "severe",
+              "worsening"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-red_flags-2",
+            "chip_text": "peritoneal signs if assessed",
+            "order": 2,
+            "search_terms": [
+              "peritoneal",
+              "guarding",
+              "rigidity"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-red_flags-3",
+            "chip_text": "haematemesis or melena",
+            "order": 3,
+            "search_terms": [
+              "hematemesis",
+              "melena",
+              "bleeding"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-red_flags-4",
+            "chip_text": "unexplained weight loss",
+            "order": 4,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-red_flags-5",
+            "chip_text": "jaundice",
+            "order": 5,
+            "search_terms": [
+              "jaundice",
+              "icterus"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-red_flags-6",
+            "chip_text": "abdominal mass",
+            "order": 6,
+            "search_terms": [
+              "mass",
+              "palpable"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-red_flags-7",
+            "chip_text": "fever with abdominal pain",
+            "order": 7,
+            "search_terms": [
+              "fever",
+              "infection"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "gastro-abdominal-pain-investigations-1",
+            "chip_text": "blood tests reviewed if ordered",
+            "order": 1,
+            "search_terms": [
+              "blood",
+              "FBC",
+              "LFT",
+              "CRP"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-investigations-2",
+            "chip_text": "abdominal imaging reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "ultrasound",
+              "CT",
+              "X-ray"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-investigations-3",
+            "chip_text": "previous gastroenterology records reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "gastro-abdominal-pain-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-plan_phrases-2",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "gastroenterology"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "gastro-abdominal-pain-follow_up-1",
+            "chip_text": "1-2 weeks",
+            "order": 1,
+            "search_terms": [
+              "one",
+              "two",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-follow_up-2",
+            "chip_text": "2-4 weeks",
+            "order": 2,
+            "search_terms": [
+              "two",
+              "four",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-abdominal-pain-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "abdominal pain",
         "stomach pain",
@@ -64866,9 +65975,505 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 10,
+        "relevant_negatives": 4,
+        "exam_findings": 5,
+        "red_flags": 6,
+        "investigations": 3,
+        "plan_phrases": 6,
+        "follow_up": 4
+      },
+      "total_chips": 38,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "gastro-ibs-symptoms-symptoms-1",
+            "chip_text": "IBS symptoms",
+            "order": 1,
+            "search_terms": [
+              "IBS",
+              "irritable",
+              "bowel"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-symptoms-2",
+            "chip_text": "abdominal pain reviewed",
+            "order": 2,
+            "search_terms": [
+              "abdominal",
+              "pain",
+              "cramping"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-symptoms-3",
+            "chip_text": "bloating reviewed",
+            "order": 3,
+            "search_terms": [
+              "bloating",
+              "distension"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-symptoms-4",
+            "chip_text": "bowel habit pattern documented",
+            "order": 4,
+            "search_terms": [
+              "bowel",
+              "habit",
+              "alternating"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-symptoms-5",
+            "chip_text": "constipation reviewed",
+            "order": 5,
+            "search_terms": [
+              "constipation"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-symptoms-6",
+            "chip_text": "diarrhoea reviewed",
+            "order": 6,
+            "search_terms": [
+              "diarrhoea",
+              "diarrhea"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-symptoms-7",
+            "chip_text": "urgency reviewed",
+            "order": 7,
+            "search_terms": [
+              "urgency",
+              "bowel"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-symptoms-8",
+            "chip_text": "straining reviewed",
+            "order": 8,
+            "search_terms": [
+              "straining",
+              "incomplete",
+              "evacuation"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-symptoms-9",
+            "chip_text": "symptom triggers reviewed",
+            "order": 9,
+            "search_terms": [
+              "trigger",
+              "food",
+              "stress"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-symptoms-10",
+            "chip_text": "mucus in stool reviewed",
+            "order": 10,
+            "search_terms": [
+              "mucus",
+              "slime"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "gastro-ibs-symptoms-relevant_negatives-1",
+            "chip_text": "no rectal bleeding reported",
+            "order": 1,
+            "search_terms": [
+              "rectal",
+              "bleeding",
+              "PR"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-relevant_negatives-2",
+            "chip_text": "no unintentional weight loss reported",
+            "order": 2,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-relevant_negatives-3",
+            "chip_text": "no nocturnal symptoms reported if applicable",
+            "order": 3,
+            "search_terms": [
+              "nocturnal",
+              "night"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-relevant_negatives-4",
+            "chip_text": "no fever reported",
+            "order": 4,
+            "search_terms": [
+              "fever"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "gastro-ibs-symptoms-exam_findings-1",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-exam_findings-2",
+            "chip_text": "abdominal tenderness documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "tenderness"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-exam_findings-3",
+            "chip_text": "general appearance documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "appearance",
+              "well"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-exam_findings-4",
+            "chip_text": "BMI documented if measured",
+            "order": 4,
+            "search_terms": [
+              "BMI",
+              "weight"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-exam_findings-5",
+            "chip_text": "vitals documented if measured",
+            "order": 5,
+            "search_terms": [
+              "vitals",
+              "BP"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "gastro-ibs-symptoms-red_flags-1",
+            "chip_text": "rectal bleeding",
+            "order": 1,
+            "search_terms": [
+              "rectal",
+              "bleeding"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-red_flags-2",
+            "chip_text": "unexplained weight loss",
+            "order": 2,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-red_flags-3",
+            "chip_text": "nocturnal symptoms",
+            "order": 3,
+            "search_terms": [
+              "nocturnal",
+              "night"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-red_flags-4",
+            "chip_text": "family history of colorectal cancer",
+            "order": 4,
+            "search_terms": [
+              "family",
+              "history",
+              "CRC"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-red_flags-5",
+            "chip_text": "onset after age 50",
+            "order": 5,
+            "search_terms": [
+              "age",
+              "older",
+              "new onset"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-red_flags-6",
+            "chip_text": "iron deficiency anaemia",
+            "order": 6,
+            "search_terms": [
+              "anaemia",
+              "IDA"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "gastro-ibs-symptoms-investigations-1",
+            "chip_text": "blood tests reviewed if ordered",
+            "order": 1,
+            "search_terms": [
+              "blood",
+              "FBC",
+              "CRP",
+              "coeliac"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-investigations-2",
+            "chip_text": "stool studies reviewed if ordered",
+            "order": 2,
+            "search_terms": [
+              "stool",
+              "calprotectin",
+              "culture"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-investigations-3",
+            "chip_text": "previous gastroenterology records reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "gastro-ibs-symptoms-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-plan_phrases-2",
+            "chip_text": "lifestyle and dietary modification discussed if applicable",
+            "order": 2,
+            "search_terms": [
+              "lifestyle",
+              "diet",
+              "FODMAP"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-plan_phrases-3",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "medication",
+              "antispasmodic"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-plan_phrases-4",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 4,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-plan_phrases-5",
+            "chip_text": "referral documented if clinician decided",
+            "order": 5,
+            "search_terms": [
+              "referral",
+              "gastroenterology"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-plan_phrases-6",
+            "chip_text": "follow-up documented if arranged",
+            "order": 6,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "gastro-ibs-symptoms-follow_up-1",
+            "chip_text": "4-6 weeks",
+            "order": 1,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-follow_up-2",
+            "chip_text": "6-8 weeks",
+            "order": 2,
+            "search_terms": [
+              "six",
+              "eight",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-ibs-symptoms-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "IBS",
         "irritable bowel",
@@ -64916,9 +66521,478 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 4,
+        "exam_findings": 5,
+        "red_flags": 5,
+        "investigations": 3,
+        "plan_phrases": 6,
+        "follow_up": 4
+      },
+      "total_chips": 36,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "gastro-constipation-symptoms-1",
+            "chip_text": "constipation",
+            "order": 1,
+            "search_terms": [
+              "constipation"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-symptoms-2",
+            "chip_text": "bowel frequency documented",
+            "order": 2,
+            "search_terms": [
+              "frequency",
+              "how often",
+              "bowel"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-symptoms-3",
+            "chip_text": "stool consistency documented",
+            "order": 3,
+            "search_terms": [
+              "consistency",
+              "Bristol",
+              "hard"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-symptoms-4",
+            "chip_text": "straining documented",
+            "order": 4,
+            "search_terms": [
+              "straining",
+              "difficulty"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-symptoms-5",
+            "chip_text": "sensation of incomplete evacuation reviewed",
+            "order": 5,
+            "search_terms": [
+              "incomplete",
+              "evacuation"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-symptoms-6",
+            "chip_text": "laxative use reviewed",
+            "order": 6,
+            "search_terms": [
+              "laxative",
+              "medication"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-symptoms-7",
+            "chip_text": "dietary fibre and fluid intake reviewed",
+            "order": 7,
+            "search_terms": [
+              "fibre",
+              "fluid",
+              "water"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-symptoms-8",
+            "chip_text": "impact on everyday life documented",
+            "order": 8,
+            "search_terms": [
+              "impact",
+              "daily",
+              "QOL"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-symptoms-9",
+            "chip_text": "abdominal pain or bloating reviewed",
+            "order": 9,
+            "search_terms": [
+              "pain",
+              "bloating"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "gastro-constipation-relevant_negatives-1",
+            "chip_text": "no rectal bleeding reported",
+            "order": 1,
+            "search_terms": [
+              "rectal",
+              "bleeding"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-relevant_negatives-2",
+            "chip_text": "no unintentional weight loss reported",
+            "order": 2,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-relevant_negatives-3",
+            "chip_text": "no abdominal pain reported if applicable",
+            "order": 3,
+            "search_terms": [
+              "abdominal",
+              "pain"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-relevant_negatives-4",
+            "chip_text": "no vomiting reported",
+            "order": 4,
+            "search_terms": [
+              "vomiting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "gastro-constipation-exam_findings-1",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-exam_findings-2",
+            "chip_text": "abdominal distension documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "distension",
+              "bloating"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-exam_findings-3",
+            "chip_text": "rectal examination documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "rectal",
+              "PR",
+              "digital"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-exam_findings-4",
+            "chip_text": "general appearance documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "appearance"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-exam_findings-5",
+            "chip_text": "vitals documented if measured",
+            "order": 5,
+            "search_terms": [
+              "vitals",
+              "BP"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "gastro-constipation-red_flags-1",
+            "chip_text": "new onset after age 50",
+            "order": 1,
+            "search_terms": [
+              "new",
+              "onset",
+              "age"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-red_flags-2",
+            "chip_text": "rectal bleeding with constipation",
+            "order": 2,
+            "search_terms": [
+              "bleeding",
+              "PR"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-red_flags-3",
+            "chip_text": "unexplained weight loss",
+            "order": 3,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-red_flags-4",
+            "chip_text": "family history of colorectal cancer",
+            "order": 4,
+            "search_terms": [
+              "family",
+              "CRC"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-red_flags-5",
+            "chip_text": "acute abdominal distension",
+            "order": 5,
+            "search_terms": [
+              "acute",
+              "distension",
+              "obstruction"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "gastro-constipation-investigations-1",
+            "chip_text": "blood tests reviewed if ordered",
+            "order": 1,
+            "search_terms": [
+              "blood",
+              "FBC",
+              "TFT",
+              "calcium"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-investigations-2",
+            "chip_text": "previous gastroenterology records reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-investigations-3",
+            "chip_text": "thyroid function reviewed if ordered",
+            "order": 3,
+            "search_terms": [
+              "TFT",
+              "thyroid"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "gastro-constipation-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-plan_phrases-2",
+            "chip_text": "lifestyle and dietary advice documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "lifestyle",
+              "fibre",
+              "fluid"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-plan_phrases-3",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "laxative",
+              "medication"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-plan_phrases-4",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 4,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-plan_phrases-6",
+            "chip_text": "referral documented if clinician decided",
+            "order": 6,
+            "search_terms": [
+              "referral",
+              "gastroenterology"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "gastro-constipation-follow_up-1",
+            "chip_text": "2-4 weeks",
+            "order": 1,
+            "search_terms": [
+              "two",
+              "four",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-follow_up-2",
+            "chip_text": "4-6 weeks",
+            "order": 2,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-constipation-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "constipation",
         "difficulty passing stool",
@@ -64965,9 +67039,496 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 11,
+        "relevant_negatives": 3,
+        "exam_findings": 6,
+        "red_flags": 5,
+        "investigations": 3,
+        "plan_phrases": 5,
+        "follow_up": 4
+      },
+      "total_chips": 37,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "gastro-diarrhea-symptoms-1",
+            "chip_text": "diarrhoea",
+            "order": 1,
+            "search_terms": [
+              "diarrhoea",
+              "diarrhea",
+              "loose stools"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-symptoms-2",
+            "chip_text": "onset and duration documented",
+            "order": 2,
+            "search_terms": [
+              "onset",
+              "duration",
+              "acute",
+              "chronic"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-symptoms-3",
+            "chip_text": "frequency documented",
+            "order": 3,
+            "search_terms": [
+              "frequency",
+              "how often"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-symptoms-4",
+            "chip_text": "stool character documented",
+            "order": 4,
+            "search_terms": [
+              "character",
+              "watery",
+              "bloody"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-symptoms-5",
+            "chip_text": "urgency reviewed",
+            "order": 5,
+            "search_terms": [
+              "urgency",
+              "bowel"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-symptoms-6",
+            "chip_text": "associated abdominal pain reviewed",
+            "order": 6,
+            "search_terms": [
+              "abdominal",
+              "pain",
+              "cramping"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-symptoms-7",
+            "chip_text": "nausea or vomiting reviewed",
+            "order": 7,
+            "search_terms": [
+              "nausea",
+              "vomiting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-symptoms-8",
+            "chip_text": "fever reviewed",
+            "order": 8,
+            "search_terms": [
+              "fever",
+              "temperature"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-symptoms-9",
+            "chip_text": "travel history reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "travel",
+              "foreign"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-symptoms-10",
+            "chip_text": "medication history reviewed if relevant",
+            "order": 10,
+            "search_terms": [
+              "medication",
+              "antibiotic"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-symptoms-11",
+            "chip_text": "family history of IBD reviewed if relevant",
+            "order": 11,
+            "search_terms": [
+              "IBD",
+              "Crohn",
+              "colitis"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "gastro-diarrhea-relevant_negatives-1",
+            "chip_text": "no rectal bleeding reported",
+            "order": 1,
+            "search_terms": [
+              "rectal",
+              "bleeding",
+              "PR"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-relevant_negatives-2",
+            "chip_text": "no unintentional weight loss reported",
+            "order": 2,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-relevant_negatives-3",
+            "chip_text": "no nocturnal symptoms reported if applicable",
+            "order": 3,
+            "search_terms": [
+              "nocturnal",
+              "night"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "gastro-diarrhea-exam_findings-1",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-exam_findings-2",
+            "chip_text": "abdominal tenderness documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "tenderness"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-exam_findings-3",
+            "chip_text": "vitals documented if measured",
+            "order": 3,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse",
+              "temp"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-exam_findings-4",
+            "chip_text": "general appearance documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "appearance"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-exam_findings-5",
+            "chip_text": "hydration assessment documented if assessed",
+            "order": 5,
+            "search_terms": [
+              "hydration",
+              "mucous",
+              "turgor"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-exam_findings-6",
+            "chip_text": "rectal examination documented if assessed",
+            "order": 6,
+            "search_terms": [
+              "rectal",
+              "PR"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "gastro-diarrhea-red_flags-1",
+            "chip_text": "bloody diarrhoea",
+            "order": 1,
+            "search_terms": [
+              "bloody",
+              "dysentery"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-red_flags-2",
+            "chip_text": "severe dehydration",
+            "order": 2,
+            "search_terms": [
+              "dehydration",
+              "dry",
+              "turgor"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-red_flags-3",
+            "chip_text": "persistent diarrhoea over 6 weeks",
+            "order": 3,
+            "search_terms": [
+              "persistent",
+              "chronic"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-red_flags-4",
+            "chip_text": "unexplained weight loss",
+            "order": 4,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-red_flags-5",
+            "chip_text": "nocturnal symptoms",
+            "order": 5,
+            "search_terms": [
+              "nocturnal",
+              "night"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "gastro-diarrhea-investigations-1",
+            "chip_text": "stool studies reviewed if ordered",
+            "order": 1,
+            "search_terms": [
+              "stool",
+              "culture",
+              "MC+S"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-investigations-2",
+            "chip_text": "blood tests reviewed if ordered",
+            "order": 2,
+            "search_terms": [
+              "blood",
+              "FBC",
+              "CRP",
+              "U+E"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-investigations-3",
+            "chip_text": "previous records reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "gastro-diarrhea-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-plan_phrases-2",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "gastroenterology"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-plan_phrases-5",
+            "chip_text": "dietary advice documented if discussed",
+            "order": 5,
+            "search_terms": [
+              "diet",
+              "BRAT",
+              "avoid"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "gastro-diarrhea-follow_up-1",
+            "chip_text": "1-2 weeks",
+            "order": 1,
+            "search_terms": [
+              "one",
+              "two",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-follow_up-2",
+            "chip_text": "2-4 weeks",
+            "order": 2,
+            "search_terms": [
+              "two",
+              "four",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-diarrhea-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "diarrhea",
         "loose stools",
@@ -65016,9 +67577,492 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 10,
+        "relevant_negatives": 4,
+        "exam_findings": 5,
+        "red_flags": 6,
+        "investigations": 2,
+        "plan_phrases": 4,
+        "follow_up": 5
+      },
+      "total_chips": 36,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "gastro-rectal-bleeding-symptoms-1",
+            "chip_text": "rectal bleeding",
+            "order": 1,
+            "search_terms": [
+              "rectal",
+              "bleeding",
+              "PR",
+              "blood"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-symptoms-2",
+            "chip_text": "amount and colour documented",
+            "order": 2,
+            "search_terms": [
+              "amount",
+              "colour",
+              "bright",
+              "dark"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-symptoms-3",
+            "chip_text": "frequency documented",
+            "order": 3,
+            "search_terms": [
+              "frequency",
+              "how often"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-symptoms-4",
+            "chip_text": "associated pain reviewed",
+            "order": 4,
+            "search_terms": [
+              "pain",
+              "anal"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-symptoms-5",
+            "chip_text": "bowel habit change reviewed",
+            "order": 5,
+            "search_terms": [
+              "bowel",
+              "habit",
+              "change"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-symptoms-6",
+            "chip_text": "weight loss reviewed",
+            "order": 6,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-symptoms-7",
+            "chip_text": "family history of colorectal cancer reviewed",
+            "order": 7,
+            "search_terms": [
+              "family",
+              "CRC",
+              "bowel cancer"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-symptoms-8",
+            "chip_text": "anticoagulant use reviewed if relevant",
+            "order": 8,
+            "search_terms": [
+              "anticoagulant",
+              "aspirin",
+              "warfarin"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-symptoms-9",
+            "chip_text": "anal symptoms reviewed",
+            "order": 9,
+            "search_terms": [
+              "anal",
+              "pain",
+              "itching",
+              "lump"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-symptoms-10",
+            "chip_text": "previous colonoscopy history reviewed",
+            "order": 10,
+            "search_terms": [
+              "colonoscopy",
+              "screening"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "gastro-rectal-bleeding-relevant_negatives-1",
+            "chip_text": "no melena reported if relevant",
+            "order": 1,
+            "search_terms": [
+              "melena",
+              "black",
+              "tarry"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-relevant_negatives-2",
+            "chip_text": "no haematemesis reported",
+            "order": 2,
+            "search_terms": [
+              "hematemesis",
+              "vomiting",
+              "blood"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-relevant_negatives-3",
+            "chip_text": "no significant weight loss reported if applicable",
+            "order": 3,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-relevant_negatives-4",
+            "chip_text": "no abdominal mass reported",
+            "order": 4,
+            "search_terms": [
+              "mass",
+              "palpable"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "gastro-rectal-bleeding-exam_findings-1",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-exam_findings-2",
+            "chip_text": "rectal examination documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "rectal",
+              "PR",
+              "DRE"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-exam_findings-3",
+            "chip_text": "vitals documented if measured",
+            "order": 3,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-exam_findings-4",
+            "chip_text": "general appearance documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "appearance",
+              "pale"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-exam_findings-5",
+            "chip_text": "anal inspection documented if assessed",
+            "order": 5,
+            "search_terms": [
+              "anal",
+              "fissure",
+              "haemorrhoid"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "gastro-rectal-bleeding-red_flags-1",
+            "chip_text": "haemodynamic instability if assessed",
+            "order": 1,
+            "search_terms": [
+              "haemodynamic",
+              "unstable",
+              "BP"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-red_flags-2",
+            "chip_text": "significant or persistent bleeding",
+            "order": 2,
+            "search_terms": [
+              "persistent",
+              "significant"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-red_flags-3",
+            "chip_text": "weight loss with rectal bleeding",
+            "order": 3,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-red_flags-4",
+            "chip_text": "family history of colorectal cancer",
+            "order": 4,
+            "search_terms": [
+              "family",
+              "CRC"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-red_flags-5",
+            "chip_text": "age over 50 with new bleeding",
+            "order": 5,
+            "search_terms": [
+              "age",
+              "over 50",
+              "new"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-red_flags-6",
+            "chip_text": "change in bowel habit with bleeding",
+            "order": 6,
+            "search_terms": [
+              "change",
+              "bowel",
+              "habit"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "gastro-rectal-bleeding-investigations-1",
+            "chip_text": "blood tests reviewed if ordered",
+            "order": 1,
+            "search_terms": [
+              "blood",
+              "FBC",
+              "coagulation",
+              "iron"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-investigations-2",
+            "chip_text": "previous endoscopy reports reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "colonoscopy",
+              "sigmoidoscopy"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "gastro-rectal-bleeding-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-plan_phrases-2",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "gastroenterology",
+              "colonoscopy"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "gastro-rectal-bleeding-follow_up-1",
+            "chip_text": "2-4 weeks",
+            "order": 1,
+            "search_terms": [
+              "two",
+              "four",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-follow_up-2",
+            "chip_text": "4-6 weeks",
+            "order": 2,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-rectal-bleeding-follow_up-5",
+            "chip_text": "sooner if bleeding increases",
+            "order": 5,
+            "search_terms": [
+              "sooner",
+              "heavy"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "rectal bleeding",
         "blood in stool",
@@ -65063,9 +68107,440 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 2,
+        "exam_findings": 5,
+        "red_flags": 5,
+        "investigations": 3,
+        "plan_phrases": 4,
+        "follow_up": 4
+      },
+      "total_chips": 32,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "gastro-liver-enzyme-review-symptoms-1",
+            "chip_text": "liver enzyme review",
+            "order": 1,
+            "search_terms": [
+              "LFT",
+              "liver",
+              "enzymes"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-symptoms-2",
+            "chip_text": "AST and ALT reviewed",
+            "order": 2,
+            "search_terms": [
+              "AST",
+              "ALT",
+              "transaminases"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-symptoms-3",
+            "chip_text": "ALP and GGT reviewed",
+            "order": 3,
+            "search_terms": [
+              "ALP",
+              "GGT",
+              "cholestatic"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-symptoms-4",
+            "chip_text": "bilirubin reviewed",
+            "order": 4,
+            "search_terms": [
+              "bilirubin",
+              "jaundice"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-symptoms-5",
+            "chip_text": "symptoms reviewed",
+            "order": 5,
+            "search_terms": [
+              "symptoms",
+              "fatigue",
+              "jaundice"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-symptoms-6",
+            "chip_text": "alcohol history reviewed if relevant",
+            "order": 6,
+            "search_terms": [
+              "alcohol",
+              "drinking"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-symptoms-7",
+            "chip_text": "medication history reviewed if relevant",
+            "order": 7,
+            "search_terms": [
+              "medication",
+              "statin",
+              "paracetamol"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-symptoms-8",
+            "chip_text": "fatigue reviewed",
+            "order": 8,
+            "search_terms": [
+              "fatigue",
+              "tiredness"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-symptoms-9",
+            "chip_text": "pruritus reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "itching",
+              "pruritus"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "gastro-liver-enzyme-review-relevant_negatives-1",
+            "chip_text": "no jaundice reported",
+            "order": 1,
+            "search_terms": [
+              "jaundice",
+              "yellow"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-relevant_negatives-2",
+            "chip_text": "no abdominal pain reported",
+            "order": 2,
+            "search_terms": [
+              "pain",
+              "RUQ"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "gastro-liver-enzyme-review-exam_findings-1",
+            "chip_text": "vitals documented if measured",
+            "order": 1,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-exam_findings-2",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-exam_findings-3",
+            "chip_text": "hepatomegaly documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "hepatomegaly",
+              "liver",
+              "enlarged"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-exam_findings-4",
+            "chip_text": "jaundice documented if present",
+            "order": 4,
+            "search_terms": [
+              "jaundice",
+              "icterus",
+              "sclera"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-exam_findings-5",
+            "chip_text": "signs of chronic liver disease documented if assessed",
+            "order": 5,
+            "search_terms": [
+              "spider",
+              "naevi",
+              "palmar",
+              "erythema"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "gastro-liver-enzyme-review-red_flags-1",
+            "chip_text": "significant transaminitis",
+            "order": 1,
+            "search_terms": [
+              "transaminitis",
+              "high",
+              "ALT",
+              "AST"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-red_flags-2",
+            "chip_text": "obstructive LFT pattern",
+            "order": 2,
+            "search_terms": [
+              "obstructive",
+              "ALP",
+              "GGT"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-red_flags-3",
+            "chip_text": "jaundice",
+            "order": 3,
+            "search_terms": [
+              "jaundice",
+              "icterus"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-red_flags-4",
+            "chip_text": "right upper quadrant pain",
+            "order": 4,
+            "search_terms": [
+              "RUQ",
+              "pain"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-red_flags-5",
+            "chip_text": "signs of decompensated liver disease",
+            "order": 5,
+            "search_terms": [
+              "ascites",
+              "encephalopathy"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "gastro-liver-enzyme-review-investigations-1",
+            "chip_text": "previous LFT records reviewed if available",
+            "order": 1,
+            "search_terms": [
+              "previous",
+              "LFT",
+              "trend"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-investigations-2",
+            "chip_text": "abdominal imaging reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "ultrasound",
+              "liver",
+              "CT"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-investigations-3",
+            "chip_text": "viral hepatitis serology reviewed if ordered",
+            "order": 3,
+            "search_terms": [
+              "hepatitis",
+              "B",
+              "C",
+              "serology"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "gastro-liver-enzyme-review-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-plan_phrases-2",
+            "chip_text": "repeat testing interval documented if clinician decided",
+            "order": 2,
+            "search_terms": [
+              "repeat",
+              "LFT",
+              "interval"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "gastroenterology",
+              "hepatology"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "gastro-liver-enzyme-review-follow_up-1",
+            "chip_text": "4-6 weeks",
+            "order": 1,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-follow_up-2",
+            "chip_text": "3 months",
+            "order": 2,
+            "search_terms": [
+              "three",
+              "months"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-liver-enzyme-review-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "liver enzyme review",
         "LFT review",
@@ -65114,9 +68589,478 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 10,
+        "relevant_negatives": 3,
+        "exam_findings": 5,
+        "red_flags": 6,
+        "investigations": 3,
+        "plan_phrases": 4,
+        "follow_up": 4
+      },
+      "total_chips": 35,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "gastro-jaundice-documentation-symptoms-1",
+            "chip_text": "jaundice",
+            "order": 1,
+            "search_terms": [
+              "jaundice",
+              "icterus",
+              "yellow"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-symptoms-2",
+            "chip_text": "onset and duration documented",
+            "order": 2,
+            "search_terms": [
+              "onset",
+              "duration",
+              "acute"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-symptoms-3",
+            "chip_text": "colour of urine and stool reviewed",
+            "order": 3,
+            "search_terms": [
+              "urine",
+              "dark",
+              "stool",
+              "pale"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-symptoms-4",
+            "chip_text": "pruritus reviewed",
+            "order": 4,
+            "search_terms": [
+              "pruritus",
+              "itching"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-symptoms-5",
+            "chip_text": "abdominal pain reviewed",
+            "order": 5,
+            "search_terms": [
+              "abdominal",
+              "pain",
+              "RUQ"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-symptoms-6",
+            "chip_text": "weight loss reviewed",
+            "order": 6,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-symptoms-7",
+            "chip_text": "alcohol history reviewed",
+            "order": 7,
+            "search_terms": [
+              "alcohol"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-symptoms-8",
+            "chip_text": "medication history reviewed if relevant",
+            "order": 8,
+            "search_terms": [
+              "medication",
+              "hepatotoxic"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-symptoms-9",
+            "chip_text": "travel history reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "travel",
+              "hepatitis"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-symptoms-10",
+            "chip_text": "alcohol intake quantified",
+            "order": 10,
+            "search_terms": [
+              "alcohol",
+              "units",
+              "per week"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "gastro-jaundice-documentation-relevant_negatives-1",
+            "chip_text": "no significant abdominal pain reported if applicable",
+            "order": 1,
+            "search_terms": [
+              "pain",
+              "abdominal"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-relevant_negatives-2",
+            "chip_text": "no fever reported if applicable",
+            "order": 2,
+            "search_terms": [
+              "fever"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-relevant_negatives-3",
+            "chip_text": "no haematemesis reported",
+            "order": 3,
+            "search_terms": [
+              "hematemesis",
+              "bleeding"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "gastro-jaundice-documentation-exam_findings-1",
+            "chip_text": "scleral icterus documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "scleral",
+              "icterus",
+              "eyes"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-exam_findings-2",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 2,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-exam_findings-3",
+            "chip_text": "hepatomegaly documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "hepatomegaly",
+              "liver"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-exam_findings-4",
+            "chip_text": "vitals documented if measured",
+            "order": 4,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse",
+              "temp"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-exam_findings-5",
+            "chip_text": "signs of chronic liver disease documented if assessed",
+            "order": 5,
+            "search_terms": [
+              "chronic",
+              "stigmata"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "gastro-jaundice-documentation-red_flags-1",
+            "chip_text": "rapidly rising bilirubin",
+            "order": 1,
+            "search_terms": [
+              "rapid",
+              "rising",
+              "bilirubin"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-red_flags-2",
+            "chip_text": "signs of liver failure if assessed",
+            "order": 2,
+            "search_terms": [
+              "liver",
+              "failure",
+              "ascites",
+              "encephalopathy"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-red_flags-3",
+            "chip_text": "right upper quadrant tenderness",
+            "order": 3,
+            "search_terms": [
+              "RUQ",
+              "tenderness"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-red_flags-4",
+            "chip_text": "fever with jaundice",
+            "order": 4,
+            "search_terms": [
+              "fever",
+              "cholangitis"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-red_flags-5",
+            "chip_text": "unexplained weight loss",
+            "order": 5,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-red_flags-6",
+            "chip_text": "palpable gallbladder",
+            "order": 6,
+            "search_terms": [
+              "gallbladder",
+              "palpable",
+              "Courvoisier"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "gastro-jaundice-documentation-investigations-1",
+            "chip_text": "LFT and bilirubin reviewed",
+            "order": 1,
+            "search_terms": [
+              "LFT",
+              "bilirubin",
+              "ALT",
+              "ALP"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-investigations-2",
+            "chip_text": "abdominal imaging reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "ultrasound",
+              "CT",
+              "MRCP"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-investigations-3",
+            "chip_text": "viral hepatitis serology reviewed if ordered",
+            "order": 3,
+            "search_terms": [
+              "hepatitis",
+              "A",
+              "B",
+              "C",
+              "E"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "gastro-jaundice-documentation-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-plan_phrases-2",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "gastroenterology",
+              "hepatology"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "gastro-jaundice-documentation-follow_up-1",
+            "chip_text": "1-2 weeks",
+            "order": 1,
+            "search_terms": [
+              "one",
+              "two",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-follow_up-2",
+            "chip_text": "2-4 weeks",
+            "order": 2,
+            "search_terms": [
+              "two",
+              "four",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-jaundice-documentation-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "jaundice",
         "yellow skin",
@@ -65166,9 +69110,473 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 5,
+        "exam_findings": 4,
+        "red_flags": 6,
+        "investigations": 3,
+        "plan_phrases": 4,
+        "follow_up": 4
+      },
+      "total_chips": 35,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "gastro-dysphagia-symptoms-1",
+            "chip_text": "dysphagia",
+            "order": 1,
+            "search_terms": [
+              "dysphagia",
+              "swallowing",
+              "difficulty"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-symptoms-2",
+            "chip_text": "onset and duration documented",
+            "order": 2,
+            "search_terms": [
+              "onset",
+              "duration"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-symptoms-3",
+            "chip_text": "progressive or intermittent documented",
+            "order": 3,
+            "search_terms": [
+              "progressive",
+              "intermittent"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-symptoms-4",
+            "chip_text": "solids versus liquids documented",
+            "order": 4,
+            "search_terms": [
+              "solids",
+              "liquids",
+              "both"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-symptoms-5",
+            "chip_text": "associated pain reviewed",
+            "order": 5,
+            "search_terms": [
+              "pain",
+              "odynophagia"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-symptoms-6",
+            "chip_text": "weight loss reviewed",
+            "order": 6,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-symptoms-7",
+            "chip_text": "regurgitation reviewed",
+            "order": 7,
+            "search_terms": [
+              "regurgitation",
+              "food",
+              "coming back"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-symptoms-8",
+            "chip_text": "choking or aspiration reviewed",
+            "order": 8,
+            "search_terms": [
+              "choking",
+              "aspiration",
+              "cough"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-symptoms-9",
+            "chip_text": "medication history reviewed if relevant",
+            "order": 9,
+            "search_terms": [
+              "medication",
+              "NSAID",
+              "bisphosphonate"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "gastro-dysphagia-relevant_negatives-1",
+            "chip_text": "no weight loss reported if applicable",
+            "order": 1,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-relevant_negatives-2",
+            "chip_text": "no haematemesis reported",
+            "order": 2,
+            "search_terms": [
+              "hematemesis",
+              "blood"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-relevant_negatives-3",
+            "chip_text": "no persistent vomiting reported",
+            "order": 3,
+            "search_terms": [
+              "vomiting",
+              "regurgitation"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-relevant_negatives-4",
+            "chip_text": "no hoarseness reported if relevant",
+            "order": 4,
+            "search_terms": [
+              "hoarseness",
+              "voice"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-relevant_negatives-5",
+            "chip_text": "no neurological symptoms reported if relevant",
+            "order": 5,
+            "search_terms": [
+              "neurological",
+              "CVA",
+              "stroke"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "gastro-dysphagia-exam_findings-1",
+            "chip_text": "general appearance documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "appearance",
+              "nutrition"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-exam_findings-2",
+            "chip_text": "vitals documented if measured",
+            "order": 2,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-exam_findings-3",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-exam_findings-4",
+            "chip_text": "BMI documented if measured",
+            "order": 4,
+            "search_terms": [
+              "BMI",
+              "weight"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "gastro-dysphagia-red_flags-1",
+            "chip_text": "rapidly progressive dysphagia",
+            "order": 1,
+            "search_terms": [
+              "rapid",
+              "progressive"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-red_flags-2",
+            "chip_text": "weight loss with dysphagia",
+            "order": 2,
+            "search_terms": [
+              "weight",
+              "loss"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-red_flags-3",
+            "chip_text": "odynophagia",
+            "order": 3,
+            "search_terms": [
+              "odynophagia",
+              "painful",
+              "swallowing"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-red_flags-4",
+            "chip_text": "age over 50 with new dysphagia",
+            "order": 4,
+            "search_terms": [
+              "age",
+              "over 50",
+              "new"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-red_flags-5",
+            "chip_text": "hoarseness or cervical lymphadenopathy",
+            "order": 5,
+            "search_terms": [
+              "hoarseness",
+              "lymph",
+              "node"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-red_flags-6",
+            "chip_text": "relevant GI family history",
+            "order": 6,
+            "search_terms": [
+              "family",
+              "GI",
+              "cancer"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "gastro-dysphagia-investigations-1",
+            "chip_text": "previous endoscopy report reviewed if available",
+            "order": 1,
+            "search_terms": [
+              "OGD",
+              "EGD",
+              "endoscopy"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-investigations-2",
+            "chip_text": "barium swallow report reviewed if performed",
+            "order": 2,
+            "search_terms": [
+              "barium",
+              "swallow"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-investigations-3",
+            "chip_text": "previous imaging reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "imaging",
+              "CT"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "gastro-dysphagia-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-plan_phrases-2",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 2,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-plan_phrases-3",
+            "chip_text": "referral documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "referral",
+              "gastroenterology",
+              "OGD"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-plan_phrases-4",
+            "chip_text": "follow-up documented if arranged",
+            "order": 4,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "gastro-dysphagia-follow_up-1",
+            "chip_text": "2-4 weeks",
+            "order": 1,
+            "search_terms": [
+              "two",
+              "four",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-follow_up-2",
+            "chip_text": "4-6 weeks",
+            "order": 2,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-follow_up-3",
+            "chip_text": "sooner if worsening",
+            "order": 3,
+            "search_terms": [
+              "sooner",
+              "worsening"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-dysphagia-follow_up-4",
+            "chip_text": "PRN",
+            "order": 4,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "dysphagia",
         "difficulty swallowing",
@@ -65213,9 +69621,438 @@
         "verified": false,
         "source": null
       },
-      "chip_counts": {},
-      "total_chips": 0,
-      "chips": {},
+      "chip_counts": {
+        "symptoms": 9,
+        "relevant_negatives": 2,
+        "exam_findings": 4,
+        "red_flags": 3,
+        "investigations": 3,
+        "plan_phrases": 6,
+        "follow_up": 5
+      },
+      "total_chips": 32,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "gastro-post-endoscopy-followup-symptoms-1",
+            "chip_text": "post-endoscopy follow-up",
+            "order": 1,
+            "search_terms": [
+              "post",
+              "endoscopy",
+              "followup"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-symptoms-2",
+            "chip_text": "procedure tolerance reviewed",
+            "order": 2,
+            "search_terms": [
+              "tolerance",
+              "sedation"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-symptoms-3",
+            "chip_text": "clinical findings reviewed",
+            "order": 3,
+            "search_terms": [
+              "findings",
+              "endoscopy",
+              "result"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-symptoms-4",
+            "chip_text": "biopsy results reviewed if available",
+            "order": 4,
+            "search_terms": [
+              "biopsy",
+              "histology",
+              "result"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-symptoms-5",
+            "chip_text": "symptoms since procedure reviewed",
+            "order": 5,
+            "search_terms": [
+              "symptoms",
+              "recovery"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-symptoms-6",
+            "chip_text": "bleeding or pain reviewed",
+            "order": 6,
+            "search_terms": [
+              "bleeding",
+              "pain",
+              "post",
+              "procedure"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-symptoms-7",
+            "chip_text": "medication adjustment reviewed if applicable",
+            "order": 7,
+            "search_terms": [
+              "medication",
+              "PPI",
+              "change"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-symptoms-8",
+            "chip_text": "diet tolerated since procedure",
+            "order": 8,
+            "search_terms": [
+              "diet",
+              "eating",
+              "tolerance"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-symptoms-9",
+            "chip_text": "return to normal activities reviewed",
+            "order": 9,
+            "search_terms": [
+              "activity",
+              "work",
+              "recovery"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "gastro-post-endoscopy-followup-relevant_negatives-1",
+            "chip_text": "no post-procedure bleeding reported",
+            "order": 1,
+            "search_terms": [
+              "bleeding",
+              "post",
+              "procedure"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-relevant_negatives-2",
+            "chip_text": "no post-procedure pain reported",
+            "order": 2,
+            "search_terms": [
+              "pain",
+              "after",
+              "scope"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "gastro-post-endoscopy-followup-exam_findings-1",
+            "chip_text": "abdominal examination documented if assessed",
+            "order": 1,
+            "search_terms": [
+              "abdominal",
+              "exam"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-exam_findings-2",
+            "chip_text": "vitals documented if measured",
+            "order": 2,
+            "search_terms": [
+              "vitals",
+              "BP",
+              "pulse"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-exam_findings-3",
+            "chip_text": "general appearance documented if assessed",
+            "order": 3,
+            "search_terms": [
+              "appearance"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-exam_findings-4",
+            "chip_text": "abdominal tenderness documented if assessed",
+            "order": 4,
+            "search_terms": [
+              "tenderness",
+              "guarding"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "gastro-post-endoscopy-followup-red_flags-1",
+            "chip_text": "significant post-procedure bleeding",
+            "order": 1,
+            "search_terms": [
+              "post",
+              "procedure",
+              "bleeding"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-red_flags-2",
+            "chip_text": "unexplained abdominal pain after procedure",
+            "order": 2,
+            "search_terms": [
+              "pain",
+              "after",
+              "scope"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-red_flags-3",
+            "chip_text": "perforation signs if suspected",
+            "order": 3,
+            "search_terms": [
+              "perforation",
+              "peritonitis"
+            ],
+            "tags": [
+              "gastroenterology",
+              "high_safety"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "gastro-post-endoscopy-followup-investigations-1",
+            "chip_text": "endoscopy report reviewed if available",
+            "order": 1,
+            "search_terms": [
+              "endoscopy",
+              "OGD",
+              "colonoscopy"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-investigations-2",
+            "chip_text": "histology results reviewed if available",
+            "order": 2,
+            "search_terms": [
+              "histology",
+              "biopsy",
+              "pathology"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-investigations-3",
+            "chip_text": "previous records reviewed if available",
+            "order": 3,
+            "search_terms": [
+              "previous",
+              "records"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "gastro-post-endoscopy-followup-plan_phrases-1",
+            "chip_text": "clinician-entered plan documented",
+            "order": 1,
+            "search_terms": [
+              "plan",
+              "management"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-plan_phrases-2",
+            "chip_text": "medication plan documented if clinician decided",
+            "order": 2,
+            "search_terms": [
+              "medication",
+              "PPI",
+              "change"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-plan_phrases-3",
+            "chip_text": "follow-up interval for repeat endoscopy documented if clinician decided",
+            "order": 3,
+            "search_terms": [
+              "repeat",
+              "scope",
+              "interval"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-plan_phrases-4",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 4,
+            "search_terms": [
+              "safety",
+              "netting"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-plan_phrases-5",
+            "chip_text": "follow-up documented if arranged",
+            "order": 5,
+            "search_terms": [
+              "follow",
+              "up"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-plan_phrases-6",
+            "chip_text": "referral documented if clinician decided",
+            "order": 6,
+            "search_terms": [
+              "referral",
+              "follow-up"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "gastro-post-endoscopy-followup-follow_up-1",
+            "chip_text": "4-6 weeks",
+            "order": 1,
+            "search_terms": [
+              "four",
+              "six",
+              "weeks"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-follow_up-2",
+            "chip_text": "3-6 months",
+            "order": 2,
+            "search_terms": [
+              "three",
+              "six",
+              "months"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-follow_up-3",
+            "chip_text": "1 year if surveillance needed",
+            "order": 3,
+            "search_terms": [
+              "one",
+              "year",
+              "surveillance"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-follow_up-4",
+            "chip_text": "sooner if symptoms recur",
+            "order": 4,
+            "search_terms": [
+              "sooner",
+              "recurrence"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          },
+          {
+            "chip_id": "gastro-post-endoscopy-followup-follow_up-5",
+            "chip_text": "PRN",
+            "order": 5,
+            "search_terms": [
+              "PRN",
+              "as needed"
+            ],
+            "tags": [
+              "gastroenterology"
+            ]
+          }
+        ]
+      },
       "chief_complaint_aliases": [
         "post-endoscopy",
         "EGD follow-up",
@@ -76061,6 +80898,4721 @@
             "followup",
             "ent",
             "high_safety"
+          ]
+        }
+      ]
+    },
+    "gastro-abdominal-pain": {
+      "symptoms": [
+        {
+          "chip_id": "gastro-abdominal-pain-symptoms-1",
+          "chip_text": "abdominal pain",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "pain",
+            "stomach ache"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-symptoms-2",
+          "chip_text": "location documented",
+          "order": 2,
+          "search_terms": [
+            "location",
+            "site",
+            "quadrant"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-symptoms-3",
+          "chip_text": "onset and duration documented",
+          "order": 3,
+          "search_terms": [
+            "onset",
+            "duration"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-symptoms-4",
+          "chip_text": "character documented",
+          "order": 4,
+          "search_terms": [
+            "character",
+            "colicky",
+            "sharp",
+            "dull"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-symptoms-5",
+          "chip_text": "severity documented",
+          "order": 5,
+          "search_terms": [
+            "severity",
+            "intensity"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-symptoms-6",
+          "chip_text": "radiation reviewed",
+          "order": 6,
+          "search_terms": [
+            "radiation",
+            "referred"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-symptoms-7",
+          "chip_text": "aggravating and relieving factors reviewed",
+          "order": 7,
+          "search_terms": [
+            "aggrevating",
+            "relieving",
+            "food"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-symptoms-8",
+          "chip_text": "associated nausea or vomiting reviewed",
+          "order": 8,
+          "search_terms": [
+            "nausea",
+            "vomiting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-symptoms-9",
+          "chip_text": "bowel habit reviewed",
+          "order": 9,
+          "search_terms": [
+            "bowel",
+            "habit",
+            "stool"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-symptoms-10",
+          "chip_text": "previous abdominal surgery reviewed",
+          "order": 10,
+          "search_terms": [
+            "surgery",
+            "previous",
+            "scar"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "gastro-abdominal-pain-relevant_negatives-1",
+          "chip_text": "no fever reported",
+          "order": 1,
+          "search_terms": [
+            "fever",
+            "temperature"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-relevant_negatives-2",
+          "chip_text": "no vomiting blood reported",
+          "order": 2,
+          "search_terms": [
+            "hematemesis",
+            "blood"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-relevant_negatives-3",
+          "chip_text": "no black stools reported",
+          "order": 3,
+          "search_terms": [
+            "melena",
+            "black",
+            "stool"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-relevant_negatives-4",
+          "chip_text": "no unintentional weight loss reported",
+          "order": 4,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-relevant_negatives-5",
+          "chip_text": "no jaundice reported",
+          "order": 5,
+          "search_terms": [
+            "jaundice",
+            "yellow"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-relevant_negatives-6",
+          "chip_text": "no abdominal surgery history reported if relevant",
+          "order": 6,
+          "search_terms": [
+            "surgery",
+            "scar"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "gastro-abdominal-pain-exam_findings-1",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "exam",
+            "palpation"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-exam_findings-2",
+          "chip_text": "tenderness documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "tenderness",
+            "guarding"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-exam_findings-3",
+          "chip_text": "bowel sounds documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "bowel",
+            "sounds"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-exam_findings-4",
+          "chip_text": "vitals documented if measured",
+          "order": 4,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse",
+            "temp"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-exam_findings-5",
+          "chip_text": "general appearance documented if assessed",
+          "order": 5,
+          "search_terms": [
+            "appearance",
+            "distress"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-exam_findings-6",
+          "chip_text": "abdominal distension documented if assessed",
+          "order": 6,
+          "search_terms": [
+            "distension",
+            "bloating"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "gastro-abdominal-pain-red_flags-1",
+          "chip_text": "severe or worsening pain",
+          "order": 1,
+          "search_terms": [
+            "severe",
+            "worsening"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-red_flags-2",
+          "chip_text": "peritoneal signs if assessed",
+          "order": 2,
+          "search_terms": [
+            "peritoneal",
+            "guarding",
+            "rigidity"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-red_flags-3",
+          "chip_text": "haematemesis or melena",
+          "order": 3,
+          "search_terms": [
+            "hematemesis",
+            "melena",
+            "bleeding"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-red_flags-4",
+          "chip_text": "unexplained weight loss",
+          "order": 4,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-red_flags-5",
+          "chip_text": "jaundice",
+          "order": 5,
+          "search_terms": [
+            "jaundice",
+            "icterus"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-red_flags-6",
+          "chip_text": "abdominal mass",
+          "order": 6,
+          "search_terms": [
+            "mass",
+            "palpable"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-red_flags-7",
+          "chip_text": "fever with abdominal pain",
+          "order": 7,
+          "search_terms": [
+            "fever",
+            "infection"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "gastro-abdominal-pain-investigations-1",
+          "chip_text": "blood tests reviewed if ordered",
+          "order": 1,
+          "search_terms": [
+            "blood",
+            "FBC",
+            "LFT",
+            "CRP"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-investigations-2",
+          "chip_text": "abdominal imaging reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "ultrasound",
+            "CT",
+            "X-ray"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-investigations-3",
+          "chip_text": "previous gastroenterology records reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "gastro-abdominal-pain-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-plan_phrases-2",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "gastroenterology"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "gastro-abdominal-pain-follow_up-1",
+          "chip_text": "1-2 weeks",
+          "order": 1,
+          "search_terms": [
+            "one",
+            "two",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-follow_up-2",
+          "chip_text": "2-4 weeks",
+          "order": 2,
+          "search_terms": [
+            "two",
+            "four",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-abdominal-pain-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ]
+    },
+    "gastro-constipation": {
+      "symptoms": [
+        {
+          "chip_id": "gastro-constipation-symptoms-1",
+          "chip_text": "constipation",
+          "order": 1,
+          "search_terms": [
+            "constipation"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-symptoms-2",
+          "chip_text": "bowel frequency documented",
+          "order": 2,
+          "search_terms": [
+            "frequency",
+            "how often",
+            "bowel"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-symptoms-3",
+          "chip_text": "stool consistency documented",
+          "order": 3,
+          "search_terms": [
+            "consistency",
+            "Bristol",
+            "hard"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-symptoms-4",
+          "chip_text": "straining documented",
+          "order": 4,
+          "search_terms": [
+            "straining",
+            "difficulty"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-symptoms-5",
+          "chip_text": "sensation of incomplete evacuation reviewed",
+          "order": 5,
+          "search_terms": [
+            "incomplete",
+            "evacuation"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-symptoms-6",
+          "chip_text": "laxative use reviewed",
+          "order": 6,
+          "search_terms": [
+            "laxative",
+            "medication"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-symptoms-7",
+          "chip_text": "dietary fibre and fluid intake reviewed",
+          "order": 7,
+          "search_terms": [
+            "fibre",
+            "fluid",
+            "water"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-symptoms-8",
+          "chip_text": "impact on everyday life documented",
+          "order": 8,
+          "search_terms": [
+            "impact",
+            "daily",
+            "QOL"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-symptoms-9",
+          "chip_text": "abdominal pain or bloating reviewed",
+          "order": 9,
+          "search_terms": [
+            "pain",
+            "bloating"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "gastro-constipation-relevant_negatives-1",
+          "chip_text": "no rectal bleeding reported",
+          "order": 1,
+          "search_terms": [
+            "rectal",
+            "bleeding"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-relevant_negatives-2",
+          "chip_text": "no unintentional weight loss reported",
+          "order": 2,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-relevant_negatives-3",
+          "chip_text": "no abdominal pain reported if applicable",
+          "order": 3,
+          "search_terms": [
+            "abdominal",
+            "pain"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-relevant_negatives-4",
+          "chip_text": "no vomiting reported",
+          "order": 4,
+          "search_terms": [
+            "vomiting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "gastro-constipation-exam_findings-1",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-exam_findings-2",
+          "chip_text": "abdominal distension documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "distension",
+            "bloating"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-exam_findings-3",
+          "chip_text": "rectal examination documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "rectal",
+            "PR",
+            "digital"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-exam_findings-4",
+          "chip_text": "general appearance documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "appearance"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-exam_findings-5",
+          "chip_text": "vitals documented if measured",
+          "order": 5,
+          "search_terms": [
+            "vitals",
+            "BP"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "gastro-constipation-red_flags-1",
+          "chip_text": "new onset after age 50",
+          "order": 1,
+          "search_terms": [
+            "new",
+            "onset",
+            "age"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-red_flags-2",
+          "chip_text": "rectal bleeding with constipation",
+          "order": 2,
+          "search_terms": [
+            "bleeding",
+            "PR"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-red_flags-3",
+          "chip_text": "unexplained weight loss",
+          "order": 3,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-red_flags-4",
+          "chip_text": "family history of colorectal cancer",
+          "order": 4,
+          "search_terms": [
+            "family",
+            "CRC"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-red_flags-5",
+          "chip_text": "acute abdominal distension",
+          "order": 5,
+          "search_terms": [
+            "acute",
+            "distension",
+            "obstruction"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "gastro-constipation-investigations-1",
+          "chip_text": "blood tests reviewed if ordered",
+          "order": 1,
+          "search_terms": [
+            "blood",
+            "FBC",
+            "TFT",
+            "calcium"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-investigations-2",
+          "chip_text": "previous gastroenterology records reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-investigations-3",
+          "chip_text": "thyroid function reviewed if ordered",
+          "order": 3,
+          "search_terms": [
+            "TFT",
+            "thyroid"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "gastro-constipation-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-plan_phrases-2",
+          "chip_text": "lifestyle and dietary advice documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "lifestyle",
+            "fibre",
+            "fluid"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-plan_phrases-3",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "laxative",
+            "medication"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-plan_phrases-4",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 4,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-plan_phrases-6",
+          "chip_text": "referral documented if clinician decided",
+          "order": 6,
+          "search_terms": [
+            "referral",
+            "gastroenterology"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "gastro-constipation-follow_up-1",
+          "chip_text": "2-4 weeks",
+          "order": 1,
+          "search_terms": [
+            "two",
+            "four",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-follow_up-2",
+          "chip_text": "4-6 weeks",
+          "order": 2,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-constipation-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ]
+    },
+    "gastro-diarrhea": {
+      "symptoms": [
+        {
+          "chip_id": "gastro-diarrhea-symptoms-1",
+          "chip_text": "diarrhoea",
+          "order": 1,
+          "search_terms": [
+            "diarrhoea",
+            "diarrhea",
+            "loose stools"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-symptoms-2",
+          "chip_text": "onset and duration documented",
+          "order": 2,
+          "search_terms": [
+            "onset",
+            "duration",
+            "acute",
+            "chronic"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-symptoms-3",
+          "chip_text": "frequency documented",
+          "order": 3,
+          "search_terms": [
+            "frequency",
+            "how often"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-symptoms-4",
+          "chip_text": "stool character documented",
+          "order": 4,
+          "search_terms": [
+            "character",
+            "watery",
+            "bloody"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-symptoms-5",
+          "chip_text": "urgency reviewed",
+          "order": 5,
+          "search_terms": [
+            "urgency",
+            "bowel"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-symptoms-6",
+          "chip_text": "associated abdominal pain reviewed",
+          "order": 6,
+          "search_terms": [
+            "abdominal",
+            "pain",
+            "cramping"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-symptoms-7",
+          "chip_text": "nausea or vomiting reviewed",
+          "order": 7,
+          "search_terms": [
+            "nausea",
+            "vomiting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-symptoms-8",
+          "chip_text": "fever reviewed",
+          "order": 8,
+          "search_terms": [
+            "fever",
+            "temperature"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-symptoms-9",
+          "chip_text": "travel history reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "travel",
+            "foreign"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-symptoms-10",
+          "chip_text": "medication history reviewed if relevant",
+          "order": 10,
+          "search_terms": [
+            "medication",
+            "antibiotic"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-symptoms-11",
+          "chip_text": "family history of IBD reviewed if relevant",
+          "order": 11,
+          "search_terms": [
+            "IBD",
+            "Crohn",
+            "colitis"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "gastro-diarrhea-relevant_negatives-1",
+          "chip_text": "no rectal bleeding reported",
+          "order": 1,
+          "search_terms": [
+            "rectal",
+            "bleeding",
+            "PR"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-relevant_negatives-2",
+          "chip_text": "no unintentional weight loss reported",
+          "order": 2,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-relevant_negatives-3",
+          "chip_text": "no nocturnal symptoms reported if applicable",
+          "order": 3,
+          "search_terms": [
+            "nocturnal",
+            "night"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "gastro-diarrhea-exam_findings-1",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-exam_findings-2",
+          "chip_text": "abdominal tenderness documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "tenderness"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-exam_findings-3",
+          "chip_text": "vitals documented if measured",
+          "order": 3,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse",
+            "temp"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-exam_findings-4",
+          "chip_text": "general appearance documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "appearance"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-exam_findings-5",
+          "chip_text": "hydration assessment documented if assessed",
+          "order": 5,
+          "search_terms": [
+            "hydration",
+            "mucous",
+            "turgor"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-exam_findings-6",
+          "chip_text": "rectal examination documented if assessed",
+          "order": 6,
+          "search_terms": [
+            "rectal",
+            "PR"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "gastro-diarrhea-red_flags-1",
+          "chip_text": "bloody diarrhoea",
+          "order": 1,
+          "search_terms": [
+            "bloody",
+            "dysentery"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-red_flags-2",
+          "chip_text": "severe dehydration",
+          "order": 2,
+          "search_terms": [
+            "dehydration",
+            "dry",
+            "turgor"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-red_flags-3",
+          "chip_text": "persistent diarrhoea over 6 weeks",
+          "order": 3,
+          "search_terms": [
+            "persistent",
+            "chronic"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-red_flags-4",
+          "chip_text": "unexplained weight loss",
+          "order": 4,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-red_flags-5",
+          "chip_text": "nocturnal symptoms",
+          "order": 5,
+          "search_terms": [
+            "nocturnal",
+            "night"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "gastro-diarrhea-investigations-1",
+          "chip_text": "stool studies reviewed if ordered",
+          "order": 1,
+          "search_terms": [
+            "stool",
+            "culture",
+            "MC+S"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-investigations-2",
+          "chip_text": "blood tests reviewed if ordered",
+          "order": 2,
+          "search_terms": [
+            "blood",
+            "FBC",
+            "CRP",
+            "U+E"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-investigations-3",
+          "chip_text": "previous records reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "gastro-diarrhea-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-plan_phrases-2",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "gastroenterology"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-plan_phrases-5",
+          "chip_text": "dietary advice documented if discussed",
+          "order": 5,
+          "search_terms": [
+            "diet",
+            "BRAT",
+            "avoid"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "gastro-diarrhea-follow_up-1",
+          "chip_text": "1-2 weeks",
+          "order": 1,
+          "search_terms": [
+            "one",
+            "two",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-follow_up-2",
+          "chip_text": "2-4 weeks",
+          "order": 2,
+          "search_terms": [
+            "two",
+            "four",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-diarrhea-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ]
+    },
+    "gastro-dysphagia": {
+      "symptoms": [
+        {
+          "chip_id": "gastro-dysphagia-symptoms-1",
+          "chip_text": "dysphagia",
+          "order": 1,
+          "search_terms": [
+            "dysphagia",
+            "swallowing",
+            "difficulty"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-symptoms-2",
+          "chip_text": "onset and duration documented",
+          "order": 2,
+          "search_terms": [
+            "onset",
+            "duration"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-symptoms-3",
+          "chip_text": "progressive or intermittent documented",
+          "order": 3,
+          "search_terms": [
+            "progressive",
+            "intermittent"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-symptoms-4",
+          "chip_text": "solids versus liquids documented",
+          "order": 4,
+          "search_terms": [
+            "solids",
+            "liquids",
+            "both"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-symptoms-5",
+          "chip_text": "associated pain reviewed",
+          "order": 5,
+          "search_terms": [
+            "pain",
+            "odynophagia"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-symptoms-6",
+          "chip_text": "weight loss reviewed",
+          "order": 6,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-symptoms-7",
+          "chip_text": "regurgitation reviewed",
+          "order": 7,
+          "search_terms": [
+            "regurgitation",
+            "food",
+            "coming back"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-symptoms-8",
+          "chip_text": "choking or aspiration reviewed",
+          "order": 8,
+          "search_terms": [
+            "choking",
+            "aspiration",
+            "cough"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-symptoms-9",
+          "chip_text": "medication history reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "medication",
+            "NSAID",
+            "bisphosphonate"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "gastro-dysphagia-relevant_negatives-1",
+          "chip_text": "no weight loss reported if applicable",
+          "order": 1,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-relevant_negatives-2",
+          "chip_text": "no haematemesis reported",
+          "order": 2,
+          "search_terms": [
+            "hematemesis",
+            "blood"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-relevant_negatives-3",
+          "chip_text": "no persistent vomiting reported",
+          "order": 3,
+          "search_terms": [
+            "vomiting",
+            "regurgitation"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-relevant_negatives-4",
+          "chip_text": "no hoarseness reported if relevant",
+          "order": 4,
+          "search_terms": [
+            "hoarseness",
+            "voice"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-relevant_negatives-5",
+          "chip_text": "no neurological symptoms reported if relevant",
+          "order": 5,
+          "search_terms": [
+            "neurological",
+            "CVA",
+            "stroke"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "gastro-dysphagia-exam_findings-1",
+          "chip_text": "general appearance documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "appearance",
+            "nutrition"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-exam_findings-2",
+          "chip_text": "vitals documented if measured",
+          "order": 2,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-exam_findings-3",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-exam_findings-4",
+          "chip_text": "BMI documented if measured",
+          "order": 4,
+          "search_terms": [
+            "BMI",
+            "weight"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "gastro-dysphagia-red_flags-1",
+          "chip_text": "rapidly progressive dysphagia",
+          "order": 1,
+          "search_terms": [
+            "rapid",
+            "progressive"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-red_flags-2",
+          "chip_text": "weight loss with dysphagia",
+          "order": 2,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-red_flags-3",
+          "chip_text": "odynophagia",
+          "order": 3,
+          "search_terms": [
+            "odynophagia",
+            "painful",
+            "swallowing"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-red_flags-4",
+          "chip_text": "age over 50 with new dysphagia",
+          "order": 4,
+          "search_terms": [
+            "age",
+            "over 50",
+            "new"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-red_flags-5",
+          "chip_text": "hoarseness or cervical lymphadenopathy",
+          "order": 5,
+          "search_terms": [
+            "hoarseness",
+            "lymph",
+            "node"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-red_flags-6",
+          "chip_text": "relevant GI family history",
+          "order": 6,
+          "search_terms": [
+            "family",
+            "GI",
+            "cancer"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "gastro-dysphagia-investigations-1",
+          "chip_text": "previous endoscopy report reviewed if available",
+          "order": 1,
+          "search_terms": [
+            "OGD",
+            "EGD",
+            "endoscopy"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-investigations-2",
+          "chip_text": "barium swallow report reviewed if performed",
+          "order": 2,
+          "search_terms": [
+            "barium",
+            "swallow"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-investigations-3",
+          "chip_text": "previous imaging reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "imaging",
+            "CT"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "gastro-dysphagia-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-plan_phrases-2",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "gastroenterology",
+            "OGD"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "gastro-dysphagia-follow_up-1",
+          "chip_text": "2-4 weeks",
+          "order": 1,
+          "search_terms": [
+            "two",
+            "four",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-follow_up-2",
+          "chip_text": "4-6 weeks",
+          "order": 2,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-dysphagia-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ]
+    },
+    "gastro-gerd": {
+      "symptoms": [
+        {
+          "chip_id": "gastro-gerd-symptoms-1",
+          "chip_text": "reflux symptoms",
+          "order": 1,
+          "search_terms": [
+            "reflux",
+            "GERD",
+            "acid"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-symptoms-2",
+          "chip_text": "heartburn",
+          "order": 2,
+          "search_terms": [
+            "heartburn",
+            "burning"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-symptoms-3",
+          "chip_text": "regurgitation",
+          "order": 3,
+          "search_terms": [
+            "regurgitation"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-symptoms-4",
+          "chip_text": "epigastric discomfort",
+          "order": 4,
+          "search_terms": [
+            "epigastric",
+            "discomfort",
+            "pain"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-symptoms-5",
+          "chip_text": "post-prandial symptoms documented",
+          "order": 5,
+          "search_terms": [
+            "postprandial",
+            "after",
+            "meals"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-symptoms-6",
+          "chip_text": "nocturnal symptoms reviewed",
+          "order": 6,
+          "search_terms": [
+            "nocturnal",
+            "night",
+            "lying"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-symptoms-7",
+          "chip_text": "trigger foods reviewed",
+          "order": 7,
+          "search_terms": [
+            "trigger",
+            "food",
+            "spicy",
+            "fatty"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-symptoms-8",
+          "chip_text": "medication use reviewed",
+          "order": 8,
+          "search_terms": [
+            "medication",
+            "PPI",
+            "antacid"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-symptoms-9",
+          "chip_text": "belching reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "belching",
+            "burping"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-symptoms-10",
+          "chip_text": "chest pain reviewed if non-cardiac",
+          "order": 10,
+          "search_terms": [
+            "chest",
+            "pain",
+            "non-cardiac"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "gastro-gerd-relevant_negatives-1",
+          "chip_text": "no dysphagia reported",
+          "order": 1,
+          "search_terms": [
+            "dysphagia",
+            "swallowing"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-relevant_negatives-2",
+          "chip_text": "no odynophagia reported",
+          "order": 2,
+          "search_terms": [
+            "odynophagia",
+            "painful",
+            "swallowing"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-relevant_negatives-3",
+          "chip_text": "no weight loss reported",
+          "order": 3,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-relevant_negatives-4",
+          "chip_text": "no vomiting blood reported",
+          "order": 4,
+          "search_terms": [
+            "vomiting",
+            "blood",
+            "hematemesis"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-relevant_negatives-5",
+          "chip_text": "no black stools reported",
+          "order": 5,
+          "search_terms": [
+            "black",
+            "stools",
+            "melena"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-relevant_negatives-6",
+          "chip_text": "no persistent vomiting reported",
+          "order": 6,
+          "search_terms": [
+            "persistent",
+            "vomiting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "gastro-gerd-exam_findings-1",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-exam_findings-2",
+          "chip_text": "epigastric tenderness documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "epigastric",
+            "tenderness"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-exam_findings-3",
+          "chip_text": "vitals documented if measured",
+          "order": 3,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-exam_findings-4",
+          "chip_text": "general appearance documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "appearance",
+            "well"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-exam_findings-5",
+          "chip_text": "oral examination documented if assessed",
+          "order": 5,
+          "search_terms": [
+            "oral",
+            "dental",
+            "erosion"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "gastro-gerd-red_flags-1",
+          "chip_text": "dysphagia or odynophagia",
+          "order": 1,
+          "search_terms": [
+            "dysphagia",
+            "odynophagia"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-red_flags-2",
+          "chip_text": "unexplained weight loss",
+          "order": 2,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-red_flags-3",
+          "chip_text": "gastrointestinal bleeding",
+          "order": 3,
+          "search_terms": [
+            "bleeding",
+            "hematemesis",
+            "melena"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-red_flags-4",
+          "chip_text": "persistent vomiting",
+          "order": 4,
+          "search_terms": [
+            "vomiting",
+            "persistent"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-red_flags-5",
+          "chip_text": "epigastric mass",
+          "order": 5,
+          "search_terms": [
+            "mass",
+            "epigastric"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-red_flags-6",
+          "chip_text": "iron deficiency anaemia",
+          "order": 6,
+          "search_terms": [
+            "anaemia",
+            "IDA"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-red_flags-7",
+          "chip_text": "family history of Barrett oesophagus if relevant",
+          "order": 7,
+          "search_terms": [
+            "Barrett",
+            "family",
+            "oesophageal"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "gastro-gerd-investigations-1",
+          "chip_text": "previous endoscopy report reviewed if available",
+          "order": 1,
+          "search_terms": [
+            "endoscopy",
+            "OGD",
+            "EGD"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-investigations-2",
+          "chip_text": "previous imaging reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "imaging",
+            "barium"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-investigations-3",
+          "chip_text": "blood tests reviewed if ordered",
+          "order": 3,
+          "search_terms": [
+            "blood",
+            "FBC",
+            "iron"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "gastro-gerd-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-plan_phrases-2",
+          "chip_text": "lifestyle modification discussed if applicable",
+          "order": 2,
+          "search_terms": [
+            "lifestyle",
+            "diet",
+            "weight"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-plan_phrases-3",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "medication",
+            "PPI",
+            "antacid"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-plan_phrases-4",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 4,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "gastro-gerd-follow_up-1",
+          "chip_text": "4-6 weeks",
+          "order": 1,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-follow_up-2",
+          "chip_text": "6-8 weeks",
+          "order": 2,
+          "search_terms": [
+            "six",
+            "eight",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-gerd-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ]
+    },
+    "gastro-ibs-symptoms": {
+      "symptoms": [
+        {
+          "chip_id": "gastro-ibs-symptoms-symptoms-1",
+          "chip_text": "IBS symptoms",
+          "order": 1,
+          "search_terms": [
+            "IBS",
+            "irritable",
+            "bowel"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-symptoms-2",
+          "chip_text": "abdominal pain reviewed",
+          "order": 2,
+          "search_terms": [
+            "abdominal",
+            "pain",
+            "cramping"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-symptoms-3",
+          "chip_text": "bloating reviewed",
+          "order": 3,
+          "search_terms": [
+            "bloating",
+            "distension"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-symptoms-4",
+          "chip_text": "bowel habit pattern documented",
+          "order": 4,
+          "search_terms": [
+            "bowel",
+            "habit",
+            "alternating"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-symptoms-5",
+          "chip_text": "constipation reviewed",
+          "order": 5,
+          "search_terms": [
+            "constipation"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-symptoms-6",
+          "chip_text": "diarrhoea reviewed",
+          "order": 6,
+          "search_terms": [
+            "diarrhoea",
+            "diarrhea"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-symptoms-7",
+          "chip_text": "urgency reviewed",
+          "order": 7,
+          "search_terms": [
+            "urgency",
+            "bowel"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-symptoms-8",
+          "chip_text": "straining reviewed",
+          "order": 8,
+          "search_terms": [
+            "straining",
+            "incomplete",
+            "evacuation"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-symptoms-9",
+          "chip_text": "symptom triggers reviewed",
+          "order": 9,
+          "search_terms": [
+            "trigger",
+            "food",
+            "stress"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-symptoms-10",
+          "chip_text": "mucus in stool reviewed",
+          "order": 10,
+          "search_terms": [
+            "mucus",
+            "slime"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "gastro-ibs-symptoms-relevant_negatives-1",
+          "chip_text": "no rectal bleeding reported",
+          "order": 1,
+          "search_terms": [
+            "rectal",
+            "bleeding",
+            "PR"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-relevant_negatives-2",
+          "chip_text": "no unintentional weight loss reported",
+          "order": 2,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-relevant_negatives-3",
+          "chip_text": "no nocturnal symptoms reported if applicable",
+          "order": 3,
+          "search_terms": [
+            "nocturnal",
+            "night"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-relevant_negatives-4",
+          "chip_text": "no fever reported",
+          "order": 4,
+          "search_terms": [
+            "fever"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "gastro-ibs-symptoms-exam_findings-1",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-exam_findings-2",
+          "chip_text": "abdominal tenderness documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "tenderness"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-exam_findings-3",
+          "chip_text": "general appearance documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "appearance",
+            "well"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-exam_findings-4",
+          "chip_text": "BMI documented if measured",
+          "order": 4,
+          "search_terms": [
+            "BMI",
+            "weight"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-exam_findings-5",
+          "chip_text": "vitals documented if measured",
+          "order": 5,
+          "search_terms": [
+            "vitals",
+            "BP"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "gastro-ibs-symptoms-red_flags-1",
+          "chip_text": "rectal bleeding",
+          "order": 1,
+          "search_terms": [
+            "rectal",
+            "bleeding"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-red_flags-2",
+          "chip_text": "unexplained weight loss",
+          "order": 2,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-red_flags-3",
+          "chip_text": "nocturnal symptoms",
+          "order": 3,
+          "search_terms": [
+            "nocturnal",
+            "night"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-red_flags-4",
+          "chip_text": "family history of colorectal cancer",
+          "order": 4,
+          "search_terms": [
+            "family",
+            "history",
+            "CRC"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-red_flags-5",
+          "chip_text": "onset after age 50",
+          "order": 5,
+          "search_terms": [
+            "age",
+            "older",
+            "new onset"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-red_flags-6",
+          "chip_text": "iron deficiency anaemia",
+          "order": 6,
+          "search_terms": [
+            "anaemia",
+            "IDA"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "gastro-ibs-symptoms-investigations-1",
+          "chip_text": "blood tests reviewed if ordered",
+          "order": 1,
+          "search_terms": [
+            "blood",
+            "FBC",
+            "CRP",
+            "coeliac"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-investigations-2",
+          "chip_text": "stool studies reviewed if ordered",
+          "order": 2,
+          "search_terms": [
+            "stool",
+            "calprotectin",
+            "culture"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-investigations-3",
+          "chip_text": "previous gastroenterology records reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "gastro-ibs-symptoms-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-plan_phrases-2",
+          "chip_text": "lifestyle and dietary modification discussed if applicable",
+          "order": 2,
+          "search_terms": [
+            "lifestyle",
+            "diet",
+            "FODMAP"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-plan_phrases-3",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "medication",
+            "antispasmodic"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-plan_phrases-4",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 4,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-plan_phrases-5",
+          "chip_text": "referral documented if clinician decided",
+          "order": 5,
+          "search_terms": [
+            "referral",
+            "gastroenterology"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-plan_phrases-6",
+          "chip_text": "follow-up documented if arranged",
+          "order": 6,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "gastro-ibs-symptoms-follow_up-1",
+          "chip_text": "4-6 weeks",
+          "order": 1,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-follow_up-2",
+          "chip_text": "6-8 weeks",
+          "order": 2,
+          "search_terms": [
+            "six",
+            "eight",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-ibs-symptoms-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ]
+    },
+    "gastro-jaundice-documentation": {
+      "symptoms": [
+        {
+          "chip_id": "gastro-jaundice-documentation-symptoms-1",
+          "chip_text": "jaundice",
+          "order": 1,
+          "search_terms": [
+            "jaundice",
+            "icterus",
+            "yellow"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-symptoms-2",
+          "chip_text": "onset and duration documented",
+          "order": 2,
+          "search_terms": [
+            "onset",
+            "duration",
+            "acute"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-symptoms-3",
+          "chip_text": "colour of urine and stool reviewed",
+          "order": 3,
+          "search_terms": [
+            "urine",
+            "dark",
+            "stool",
+            "pale"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-symptoms-4",
+          "chip_text": "pruritus reviewed",
+          "order": 4,
+          "search_terms": [
+            "pruritus",
+            "itching"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-symptoms-5",
+          "chip_text": "abdominal pain reviewed",
+          "order": 5,
+          "search_terms": [
+            "abdominal",
+            "pain",
+            "RUQ"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-symptoms-6",
+          "chip_text": "weight loss reviewed",
+          "order": 6,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-symptoms-7",
+          "chip_text": "alcohol history reviewed",
+          "order": 7,
+          "search_terms": [
+            "alcohol"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-symptoms-8",
+          "chip_text": "medication history reviewed if relevant",
+          "order": 8,
+          "search_terms": [
+            "medication",
+            "hepatotoxic"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-symptoms-9",
+          "chip_text": "travel history reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "travel",
+            "hepatitis"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-symptoms-10",
+          "chip_text": "alcohol intake quantified",
+          "order": 10,
+          "search_terms": [
+            "alcohol",
+            "units",
+            "per week"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "gastro-jaundice-documentation-relevant_negatives-1",
+          "chip_text": "no significant abdominal pain reported if applicable",
+          "order": 1,
+          "search_terms": [
+            "pain",
+            "abdominal"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-relevant_negatives-2",
+          "chip_text": "no fever reported if applicable",
+          "order": 2,
+          "search_terms": [
+            "fever"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-relevant_negatives-3",
+          "chip_text": "no haematemesis reported",
+          "order": 3,
+          "search_terms": [
+            "hematemesis",
+            "bleeding"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "gastro-jaundice-documentation-exam_findings-1",
+          "chip_text": "scleral icterus documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "scleral",
+            "icterus",
+            "eyes"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-exam_findings-2",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-exam_findings-3",
+          "chip_text": "hepatomegaly documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "hepatomegaly",
+            "liver"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-exam_findings-4",
+          "chip_text": "vitals documented if measured",
+          "order": 4,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse",
+            "temp"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-exam_findings-5",
+          "chip_text": "signs of chronic liver disease documented if assessed",
+          "order": 5,
+          "search_terms": [
+            "chronic",
+            "stigmata"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "gastro-jaundice-documentation-red_flags-1",
+          "chip_text": "rapidly rising bilirubin",
+          "order": 1,
+          "search_terms": [
+            "rapid",
+            "rising",
+            "bilirubin"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-red_flags-2",
+          "chip_text": "signs of liver failure if assessed",
+          "order": 2,
+          "search_terms": [
+            "liver",
+            "failure",
+            "ascites",
+            "encephalopathy"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-red_flags-3",
+          "chip_text": "right upper quadrant tenderness",
+          "order": 3,
+          "search_terms": [
+            "RUQ",
+            "tenderness"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-red_flags-4",
+          "chip_text": "fever with jaundice",
+          "order": 4,
+          "search_terms": [
+            "fever",
+            "cholangitis"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-red_flags-5",
+          "chip_text": "unexplained weight loss",
+          "order": 5,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-red_flags-6",
+          "chip_text": "palpable gallbladder",
+          "order": 6,
+          "search_terms": [
+            "gallbladder",
+            "palpable",
+            "Courvoisier"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "gastro-jaundice-documentation-investigations-1",
+          "chip_text": "LFT and bilirubin reviewed",
+          "order": 1,
+          "search_terms": [
+            "LFT",
+            "bilirubin",
+            "ALT",
+            "ALP"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-investigations-2",
+          "chip_text": "abdominal imaging reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "ultrasound",
+            "CT",
+            "MRCP"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-investigations-3",
+          "chip_text": "viral hepatitis serology reviewed if ordered",
+          "order": 3,
+          "search_terms": [
+            "hepatitis",
+            "A",
+            "B",
+            "C",
+            "E"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "gastro-jaundice-documentation-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-plan_phrases-2",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "gastroenterology",
+            "hepatology"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "gastro-jaundice-documentation-follow_up-1",
+          "chip_text": "1-2 weeks",
+          "order": 1,
+          "search_terms": [
+            "one",
+            "two",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-follow_up-2",
+          "chip_text": "2-4 weeks",
+          "order": 2,
+          "search_terms": [
+            "two",
+            "four",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-jaundice-documentation-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ]
+    },
+    "gastro-liver-enzyme-review": {
+      "symptoms": [
+        {
+          "chip_id": "gastro-liver-enzyme-review-symptoms-1",
+          "chip_text": "liver enzyme review",
+          "order": 1,
+          "search_terms": [
+            "LFT",
+            "liver",
+            "enzymes"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-symptoms-2",
+          "chip_text": "AST and ALT reviewed",
+          "order": 2,
+          "search_terms": [
+            "AST",
+            "ALT",
+            "transaminases"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-symptoms-3",
+          "chip_text": "ALP and GGT reviewed",
+          "order": 3,
+          "search_terms": [
+            "ALP",
+            "GGT",
+            "cholestatic"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-symptoms-4",
+          "chip_text": "bilirubin reviewed",
+          "order": 4,
+          "search_terms": [
+            "bilirubin",
+            "jaundice"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-symptoms-5",
+          "chip_text": "symptoms reviewed",
+          "order": 5,
+          "search_terms": [
+            "symptoms",
+            "fatigue",
+            "jaundice"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-symptoms-6",
+          "chip_text": "alcohol history reviewed if relevant",
+          "order": 6,
+          "search_terms": [
+            "alcohol",
+            "drinking"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-symptoms-7",
+          "chip_text": "medication history reviewed if relevant",
+          "order": 7,
+          "search_terms": [
+            "medication",
+            "statin",
+            "paracetamol"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-symptoms-8",
+          "chip_text": "fatigue reviewed",
+          "order": 8,
+          "search_terms": [
+            "fatigue",
+            "tiredness"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-symptoms-9",
+          "chip_text": "pruritus reviewed if relevant",
+          "order": 9,
+          "search_terms": [
+            "itching",
+            "pruritus"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "gastro-liver-enzyme-review-relevant_negatives-1",
+          "chip_text": "no jaundice reported",
+          "order": 1,
+          "search_terms": [
+            "jaundice",
+            "yellow"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-relevant_negatives-2",
+          "chip_text": "no abdominal pain reported",
+          "order": 2,
+          "search_terms": [
+            "pain",
+            "RUQ"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "gastro-liver-enzyme-review-exam_findings-1",
+          "chip_text": "vitals documented if measured",
+          "order": 1,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-exam_findings-2",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-exam_findings-3",
+          "chip_text": "hepatomegaly documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "hepatomegaly",
+            "liver",
+            "enlarged"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-exam_findings-4",
+          "chip_text": "jaundice documented if present",
+          "order": 4,
+          "search_terms": [
+            "jaundice",
+            "icterus",
+            "sclera"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-exam_findings-5",
+          "chip_text": "signs of chronic liver disease documented if assessed",
+          "order": 5,
+          "search_terms": [
+            "spider",
+            "naevi",
+            "palmar",
+            "erythema"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "gastro-liver-enzyme-review-red_flags-1",
+          "chip_text": "significant transaminitis",
+          "order": 1,
+          "search_terms": [
+            "transaminitis",
+            "high",
+            "ALT",
+            "AST"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-red_flags-2",
+          "chip_text": "obstructive LFT pattern",
+          "order": 2,
+          "search_terms": [
+            "obstructive",
+            "ALP",
+            "GGT"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-red_flags-3",
+          "chip_text": "jaundice",
+          "order": 3,
+          "search_terms": [
+            "jaundice",
+            "icterus"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-red_flags-4",
+          "chip_text": "right upper quadrant pain",
+          "order": 4,
+          "search_terms": [
+            "RUQ",
+            "pain"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-red_flags-5",
+          "chip_text": "signs of decompensated liver disease",
+          "order": 5,
+          "search_terms": [
+            "ascites",
+            "encephalopathy"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "gastro-liver-enzyme-review-investigations-1",
+          "chip_text": "previous LFT records reviewed if available",
+          "order": 1,
+          "search_terms": [
+            "previous",
+            "LFT",
+            "trend"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-investigations-2",
+          "chip_text": "abdominal imaging reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "ultrasound",
+            "liver",
+            "CT"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-investigations-3",
+          "chip_text": "viral hepatitis serology reviewed if ordered",
+          "order": 3,
+          "search_terms": [
+            "hepatitis",
+            "B",
+            "C",
+            "serology"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "gastro-liver-enzyme-review-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-plan_phrases-2",
+          "chip_text": "repeat testing interval documented if clinician decided",
+          "order": 2,
+          "search_terms": [
+            "repeat",
+            "LFT",
+            "interval"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "gastroenterology",
+            "hepatology"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "gastro-liver-enzyme-review-follow_up-1",
+          "chip_text": "4-6 weeks",
+          "order": 1,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-follow_up-2",
+          "chip_text": "3 months",
+          "order": 2,
+          "search_terms": [
+            "three",
+            "months"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-liver-enzyme-review-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ]
+    },
+    "gastro-post-endoscopy-followup": {
+      "symptoms": [
+        {
+          "chip_id": "gastro-post-endoscopy-followup-symptoms-1",
+          "chip_text": "post-endoscopy follow-up",
+          "order": 1,
+          "search_terms": [
+            "post",
+            "endoscopy",
+            "followup"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-symptoms-2",
+          "chip_text": "procedure tolerance reviewed",
+          "order": 2,
+          "search_terms": [
+            "tolerance",
+            "sedation"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-symptoms-3",
+          "chip_text": "clinical findings reviewed",
+          "order": 3,
+          "search_terms": [
+            "findings",
+            "endoscopy",
+            "result"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-symptoms-4",
+          "chip_text": "biopsy results reviewed if available",
+          "order": 4,
+          "search_terms": [
+            "biopsy",
+            "histology",
+            "result"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-symptoms-5",
+          "chip_text": "symptoms since procedure reviewed",
+          "order": 5,
+          "search_terms": [
+            "symptoms",
+            "recovery"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-symptoms-6",
+          "chip_text": "bleeding or pain reviewed",
+          "order": 6,
+          "search_terms": [
+            "bleeding",
+            "pain",
+            "post",
+            "procedure"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-symptoms-7",
+          "chip_text": "medication adjustment reviewed if applicable",
+          "order": 7,
+          "search_terms": [
+            "medication",
+            "PPI",
+            "change"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-symptoms-8",
+          "chip_text": "diet tolerated since procedure",
+          "order": 8,
+          "search_terms": [
+            "diet",
+            "eating",
+            "tolerance"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-symptoms-9",
+          "chip_text": "return to normal activities reviewed",
+          "order": 9,
+          "search_terms": [
+            "activity",
+            "work",
+            "recovery"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "gastro-post-endoscopy-followup-relevant_negatives-1",
+          "chip_text": "no post-procedure bleeding reported",
+          "order": 1,
+          "search_terms": [
+            "bleeding",
+            "post",
+            "procedure"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-relevant_negatives-2",
+          "chip_text": "no post-procedure pain reported",
+          "order": 2,
+          "search_terms": [
+            "pain",
+            "after",
+            "scope"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "gastro-post-endoscopy-followup-exam_findings-1",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-exam_findings-2",
+          "chip_text": "vitals documented if measured",
+          "order": 2,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-exam_findings-3",
+          "chip_text": "general appearance documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "appearance"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-exam_findings-4",
+          "chip_text": "abdominal tenderness documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "tenderness",
+            "guarding"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "gastro-post-endoscopy-followup-red_flags-1",
+          "chip_text": "significant post-procedure bleeding",
+          "order": 1,
+          "search_terms": [
+            "post",
+            "procedure",
+            "bleeding"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-red_flags-2",
+          "chip_text": "unexplained abdominal pain after procedure",
+          "order": 2,
+          "search_terms": [
+            "pain",
+            "after",
+            "scope"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-red_flags-3",
+          "chip_text": "perforation signs if suspected",
+          "order": 3,
+          "search_terms": [
+            "perforation",
+            "peritonitis"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "gastro-post-endoscopy-followup-investigations-1",
+          "chip_text": "endoscopy report reviewed if available",
+          "order": 1,
+          "search_terms": [
+            "endoscopy",
+            "OGD",
+            "colonoscopy"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-investigations-2",
+          "chip_text": "histology results reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "histology",
+            "biopsy",
+            "pathology"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-investigations-3",
+          "chip_text": "previous records reviewed if available",
+          "order": 3,
+          "search_terms": [
+            "previous",
+            "records"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "gastro-post-endoscopy-followup-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-plan_phrases-2",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 2,
+          "search_terms": [
+            "medication",
+            "PPI",
+            "change"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-plan_phrases-3",
+          "chip_text": "follow-up interval for repeat endoscopy documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "repeat",
+            "scope",
+            "interval"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-plan_phrases-4",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 4,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-plan_phrases-6",
+          "chip_text": "referral documented if clinician decided",
+          "order": 6,
+          "search_terms": [
+            "referral",
+            "follow-up"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "gastro-post-endoscopy-followup-follow_up-1",
+          "chip_text": "4-6 weeks",
+          "order": 1,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-follow_up-2",
+          "chip_text": "3-6 months",
+          "order": 2,
+          "search_terms": [
+            "three",
+            "six",
+            "months"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-follow_up-3",
+          "chip_text": "1 year if surveillance needed",
+          "order": 3,
+          "search_terms": [
+            "one",
+            "year",
+            "surveillance"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-follow_up-4",
+          "chip_text": "sooner if symptoms recur",
+          "order": 4,
+          "search_terms": [
+            "sooner",
+            "recurrence"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-post-endoscopy-followup-follow_up-5",
+          "chip_text": "PRN",
+          "order": 5,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ]
+    },
+    "gastro-rectal-bleeding": {
+      "symptoms": [
+        {
+          "chip_id": "gastro-rectal-bleeding-symptoms-1",
+          "chip_text": "rectal bleeding",
+          "order": 1,
+          "search_terms": [
+            "rectal",
+            "bleeding",
+            "PR",
+            "blood"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-symptoms-2",
+          "chip_text": "amount and colour documented",
+          "order": 2,
+          "search_terms": [
+            "amount",
+            "colour",
+            "bright",
+            "dark"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-symptoms-3",
+          "chip_text": "frequency documented",
+          "order": 3,
+          "search_terms": [
+            "frequency",
+            "how often"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-symptoms-4",
+          "chip_text": "associated pain reviewed",
+          "order": 4,
+          "search_terms": [
+            "pain",
+            "anal"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-symptoms-5",
+          "chip_text": "bowel habit change reviewed",
+          "order": 5,
+          "search_terms": [
+            "bowel",
+            "habit",
+            "change"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-symptoms-6",
+          "chip_text": "weight loss reviewed",
+          "order": 6,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-symptoms-7",
+          "chip_text": "family history of colorectal cancer reviewed",
+          "order": 7,
+          "search_terms": [
+            "family",
+            "CRC",
+            "bowel cancer"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-symptoms-8",
+          "chip_text": "anticoagulant use reviewed if relevant",
+          "order": 8,
+          "search_terms": [
+            "anticoagulant",
+            "aspirin",
+            "warfarin"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-symptoms-9",
+          "chip_text": "anal symptoms reviewed",
+          "order": 9,
+          "search_terms": [
+            "anal",
+            "pain",
+            "itching",
+            "lump"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-symptoms-10",
+          "chip_text": "previous colonoscopy history reviewed",
+          "order": 10,
+          "search_terms": [
+            "colonoscopy",
+            "screening"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "gastro-rectal-bleeding-relevant_negatives-1",
+          "chip_text": "no melena reported if relevant",
+          "order": 1,
+          "search_terms": [
+            "melena",
+            "black",
+            "tarry"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-relevant_negatives-2",
+          "chip_text": "no haematemesis reported",
+          "order": 2,
+          "search_terms": [
+            "hematemesis",
+            "vomiting",
+            "blood"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-relevant_negatives-3",
+          "chip_text": "no significant weight loss reported if applicable",
+          "order": 3,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-relevant_negatives-4",
+          "chip_text": "no abdominal mass reported",
+          "order": 4,
+          "search_terms": [
+            "mass",
+            "palpable"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "gastro-rectal-bleeding-exam_findings-1",
+          "chip_text": "abdominal examination documented if assessed",
+          "order": 1,
+          "search_terms": [
+            "abdominal",
+            "exam"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-exam_findings-2",
+          "chip_text": "rectal examination documented if assessed",
+          "order": 2,
+          "search_terms": [
+            "rectal",
+            "PR",
+            "DRE"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-exam_findings-3",
+          "chip_text": "vitals documented if measured",
+          "order": 3,
+          "search_terms": [
+            "vitals",
+            "BP",
+            "pulse"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-exam_findings-4",
+          "chip_text": "general appearance documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "appearance",
+            "pale"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-exam_findings-5",
+          "chip_text": "anal inspection documented if assessed",
+          "order": 5,
+          "search_terms": [
+            "anal",
+            "fissure",
+            "haemorrhoid"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "gastro-rectal-bleeding-red_flags-1",
+          "chip_text": "haemodynamic instability if assessed",
+          "order": 1,
+          "search_terms": [
+            "haemodynamic",
+            "unstable",
+            "BP"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-red_flags-2",
+          "chip_text": "significant or persistent bleeding",
+          "order": 2,
+          "search_terms": [
+            "persistent",
+            "significant"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-red_flags-3",
+          "chip_text": "weight loss with rectal bleeding",
+          "order": 3,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-red_flags-4",
+          "chip_text": "family history of colorectal cancer",
+          "order": 4,
+          "search_terms": [
+            "family",
+            "CRC"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-red_flags-5",
+          "chip_text": "age over 50 with new bleeding",
+          "order": 5,
+          "search_terms": [
+            "age",
+            "over 50",
+            "new"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-red_flags-6",
+          "chip_text": "change in bowel habit with bleeding",
+          "order": 6,
+          "search_terms": [
+            "change",
+            "bowel",
+            "habit"
+          ],
+          "tags": [
+            "gastroenterology",
+            "high_safety"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "gastro-rectal-bleeding-investigations-1",
+          "chip_text": "blood tests reviewed if ordered",
+          "order": 1,
+          "search_terms": [
+            "blood",
+            "FBC",
+            "coagulation",
+            "iron"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-investigations-2",
+          "chip_text": "previous endoscopy reports reviewed if available",
+          "order": 2,
+          "search_terms": [
+            "colonoscopy",
+            "sigmoidoscopy"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "gastro-rectal-bleeding-plan_phrases-1",
+          "chip_text": "clinician-entered plan documented",
+          "order": 1,
+          "search_terms": [
+            "plan",
+            "management"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-plan_phrases-2",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 2,
+          "search_terms": [
+            "safety",
+            "netting"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-plan_phrases-3",
+          "chip_text": "referral documented if clinician decided",
+          "order": 3,
+          "search_terms": [
+            "referral",
+            "gastroenterology",
+            "colonoscopy"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-plan_phrases-4",
+          "chip_text": "follow-up documented if arranged",
+          "order": 4,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "gastro-rectal-bleeding-follow_up-1",
+          "chip_text": "2-4 weeks",
+          "order": 1,
+          "search_terms": [
+            "two",
+            "four",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-follow_up-2",
+          "chip_text": "4-6 weeks",
+          "order": 2,
+          "search_terms": [
+            "four",
+            "six",
+            "weeks"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-follow_up-3",
+          "chip_text": "sooner if worsening",
+          "order": 3,
+          "search_terms": [
+            "sooner",
+            "worsening"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-follow_up-4",
+          "chip_text": "PRN",
+          "order": 4,
+          "search_terms": [
+            "PRN",
+            "as needed"
+          ],
+          "tags": [
+            "gastroenterology"
+          ]
+        },
+        {
+          "chip_id": "gastro-rectal-bleeding-follow_up-5",
+          "chip_text": "sooner if bleeding increases",
+          "order": 5,
+          "search_terms": [
+            "sooner",
+            "heavy"
+          ],
+          "tags": [
+            "gastroenterology"
           ]
         }
       ]
@@ -110676,7 +120228,8 @@
           "order": 8,
           "search_terms": [
             "inhaler",
-            "puffer"
+            "puffer",
+            "use"
           ],
           "tags": [
             "respiratory"
@@ -110702,6 +120255,19 @@
           "search_terms": [
             "occupational",
             "work"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-asthma-followup-symptoms-11",
+          "chip_text": "asthma control level documented if assessed",
+          "order": 11,
+          "search_terms": [
+            "control",
+            "ACT",
+            "validated"
           ],
           "tags": [
             "respiratory"
@@ -110774,12 +120340,12 @@
       "exam_findings": [
         {
           "chip_id": "resp-asthma-followup-exam_findings-1",
-          "chip_text": "vitals documented if measured",
+          "chip_text": "respiratory rate documented if measured",
           "order": 1,
           "search_terms": [
-            "vitals",
-            "O2 sat",
-            "saturation"
+            "RR",
+            "respiratory",
+            "rate"
           ],
           "tags": [
             "respiratory"
@@ -110787,8 +120353,34 @@
         },
         {
           "chip_id": "resp-asthma-followup-exam_findings-2",
-          "chip_text": "chest auscultation documented if assessed",
+          "chip_text": "oxygen saturation documented if measured",
           "order": 2,
+          "search_terms": [
+            "oxygen",
+            "SpO2",
+            "saturations"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-asthma-followup-exam_findings-3",
+          "chip_text": "work of breathing documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "work",
+            "breathing",
+            "accessory"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-asthma-followup-exam_findings-4",
+          "chip_text": "chest auscultation documented if assessed",
+          "order": 4,
           "search_terms": [
             "auscultation",
             "chest",
@@ -110799,9 +120391,9 @@
           ]
         },
         {
-          "chip_id": "resp-asthma-followup-exam_findings-3",
+          "chip_id": "resp-asthma-followup-exam_findings-5",
           "chip_text": "wheeze documented if assessed",
-          "order": 3,
+          "order": 5,
           "search_terms": [
             "wheeze",
             "expiratory"
@@ -110811,32 +120403,8 @@
           ]
         },
         {
-          "chip_id": "resp-asthma-followup-exam_findings-4",
-          "chip_text": "air entry documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "air",
-            "entry"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-exam_findings-5",
-          "chip_text": "accessory muscle use documented if assessed",
-          "order": 5,
-          "search_terms": [
-            "accessory",
-            "muscles"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
           "chip_id": "resp-asthma-followup-exam_findings-6",
-          "chip_text": "peak flow documented if measured",
+          "chip_text": "peak flow recorded if measured",
           "order": 6,
           "search_terms": [
             "peak",
@@ -110849,12 +120417,12 @@
         },
         {
           "chip_id": "resp-asthma-followup-exam_findings-7",
-          "chip_text": "oxygen saturation documented if measured",
+          "chip_text": "air entry documented if assessed",
           "order": 7,
           "search_terms": [
-            "oxygen",
-            "saturation",
-            "SpO2"
+            "air",
+            "entry",
+            "bilateral"
           ],
           "tags": [
             "respiratory"
@@ -110862,21 +120430,8 @@
         },
         {
           "chip_id": "resp-asthma-followup-exam_findings-8",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 8,
-          "search_terms": [
-            "respiratory",
-            "rate",
-            "RR"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-exam_findings-9",
           "chip_text": "chest expansion documented if assessed",
-          "order": 9,
+          "order": 8,
           "search_terms": [
             "expansion",
             "symmetry"
@@ -110886,16 +120441,83 @@
           ]
         }
       ],
-      "red_flags": [],
+      "red_flags": [
+        {
+          "chip_id": "resp-asthma-followup-red_flags-1",
+          "chip_text": "severe breathlessness",
+          "order": 1,
+          "search_terms": [
+            "severe",
+            "breathlessness"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-asthma-followup-red_flags-2",
+          "chip_text": "reduced oxygen saturation if documented",
+          "order": 2,
+          "search_terms": [
+            "reduced",
+            "oxygen",
+            "desaturation"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-asthma-followup-red_flags-3",
+          "chip_text": "inability to speak full sentences if assessed",
+          "order": 3,
+          "search_terms": [
+            "speak",
+            "sentences"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-asthma-followup-red_flags-4",
+          "chip_text": "cyanosis",
+          "order": 4,
+          "search_terms": [
+            "cyanosis",
+            "blue"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-asthma-followup-red_flags-5",
+          "chip_text": "altered consciousness",
+          "order": 5,
+          "search_terms": [
+            "consciousness",
+            "confusion"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        }
+      ],
       "investigations": [
         {
           "chip_id": "resp-asthma-followup-investigations-1",
-          "chip_text": "peak flow diary reviewed if available",
+          "chip_text": "peak flow recorded if measured",
           "order": 1,
           "search_terms": [
             "peak",
             "flow",
-            "diary"
+            "PEFR"
           ],
           "tags": [
             "respiratory"
@@ -110903,20 +120525,8 @@
         },
         {
           "chip_id": "resp-asthma-followup-investigations-2",
-          "chip_text": "inhaler technique reviewed if assessed",
+          "chip_text": "spirometry reviewed if available",
           "order": 2,
-          "search_terms": [
-            "inhaler",
-            "technique"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-investigations-3",
-          "chip_text": "spirometry report reviewed if available",
-          "order": 3,
           "search_terms": [
             "spirometry",
             "PFT"
@@ -110926,13 +120536,24 @@
           ]
         },
         {
+          "chip_id": "resp-asthma-followup-investigations-3",
+          "chip_text": "oxygen saturation recorded if measured",
+          "order": 3,
+          "search_terms": [
+            "oxygen",
+            "SpO2"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
           "chip_id": "resp-asthma-followup-investigations-4",
-          "chip_text": "previous asthma action plan reviewed if available",
+          "chip_text": "previous respiratory records reviewed if available",
           "order": 4,
           "search_terms": [
-            "action",
-            "plan",
-            "asthma"
+            "previous",
+            "records"
           ],
           "tags": [
             "respiratory"
@@ -110954,8 +120575,20 @@
         },
         {
           "chip_id": "resp-asthma-followup-plan_phrases-2",
-          "chip_text": "medication plan documented if clinician decided",
+          "chip_text": "inhaler technique reviewed if discussed",
           "order": 2,
+          "search_terms": [
+            "inhaler",
+            "technique"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-asthma-followup-plan_phrases-3",
+          "chip_text": "medication plan documented if clinician decided",
+          "order": 3,
           "search_terms": [
             "medication",
             "inhaler",
@@ -110966,24 +120599,12 @@
           ]
         },
         {
-          "chip_id": "resp-asthma-followup-plan_phrases-3",
-          "chip_text": "inhaler technique review documented if assessed",
-          "order": 3,
-          "search_terms": [
-            "inhaler",
-            "technique"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
           "chip_id": "resp-asthma-followup-plan_phrases-4",
-          "chip_text": "asthma action plan reviewed if applicable",
+          "chip_text": "trigger advice documented if discussed",
           "order": 4,
           "search_terms": [
-            "action",
-            "plan"
+            "trigger",
+            "advice"
           ],
           "tags": [
             "respiratory"
@@ -110991,11 +120612,23 @@
         },
         {
           "chip_id": "resp-asthma-followup-plan_phrases-5",
-          "chip_text": "referral documented if clinician decided",
+          "chip_text": "safety-netting documented if discussed",
           "order": 5,
           "search_terms": [
-            "referral",
+            "safety",
+            "netting"
+          ],
+          "tags": [
             "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-asthma-followup-plan_phrases-6",
+          "chip_text": "follow-up documented if arranged",
+          "order": 6,
+          "search_terms": [
+            "follow",
+            "up"
           ],
           "tags": [
             "respiratory"
@@ -111005,20 +120638,8 @@
       "follow_up": [
         {
           "chip_id": "resp-asthma-followup-follow_up-1",
-          "chip_text": "follow-up documented if arranged",
-          "order": 1,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-follow_up-2",
           "chip_text": "1-3 months",
-          "order": 2,
+          "order": 1,
           "search_terms": [
             "one",
             "three",
@@ -111029,9 +120650,9 @@
           ]
         },
         {
-          "chip_id": "resp-asthma-followup-follow_up-3",
+          "chip_id": "resp-asthma-followup-follow_up-2",
           "chip_text": "3-6 months if stable",
-          "order": 3,
+          "order": 2,
           "search_terms": [
             "three",
             "six"
@@ -111041,9 +120662,9 @@
           ]
         },
         {
-          "chip_id": "resp-asthma-followup-follow_up-4",
+          "chip_id": "resp-asthma-followup-follow_up-3",
           "chip_text": "sooner if worsening",
-          "order": 4,
+          "order": 3,
           "search_terms": [
             "sooner",
             "worsening"
@@ -111053,9 +120674,9 @@
           ]
         },
         {
-          "chip_id": "resp-asthma-followup-follow_up-5",
+          "chip_id": "resp-asthma-followup-follow_up-4",
           "chip_text": "PRN",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "PRN",
             "as needed"
@@ -111074,7 +120695,8 @@
           "order": 1,
           "search_terms": [
             "chronic",
-            "cough"
+            "cough",
+            "persistent"
           ],
           "tags": [
             "respiratory"
@@ -111094,7 +120716,7 @@
         },
         {
           "chip_id": "resp-chronic-cough-symptoms-3",
-          "chip_text": "dry versus productive documented",
+          "chip_text": "dry or productive character documented",
           "order": 3,
           "search_terms": [
             "dry",
@@ -111107,12 +120729,12 @@
         },
         {
           "chip_id": "resp-chronic-cough-symptoms-4",
-          "chip_text": "timing and pattern reviewed",
+          "chip_text": "sputum context reviewed",
           "order": 4,
           "search_terms": [
-            "timing",
-            "nocturnal",
-            "morning"
+            "sputum",
+            "phlegm",
+            "color"
           ],
           "tags": [
             "respiratory"
@@ -111120,12 +120742,12 @@
         },
         {
           "chip_id": "resp-chronic-cough-symptoms-5",
-          "chip_text": "triggers reviewed",
+          "chip_text": "nocturnal or positional pattern reviewed",
           "order": 5,
           "search_terms": [
-            "trigger",
-            "asthma",
-            "reflux"
+            "nocturnal",
+            "positional",
+            "lying"
           ],
           "tags": [
             "respiratory"
@@ -111133,12 +120755,12 @@
         },
         {
           "chip_id": "resp-chronic-cough-symptoms-6",
-          "chip_text": "associated symptoms reviewed",
+          "chip_text": "trigger or exposure context reviewed",
           "order": 6,
           "search_terms": [
-            "nasal",
-            "sinus",
-            "fever"
+            "trigger",
+            "asthma",
+            "allergy"
           ],
           "tags": [
             "respiratory"
@@ -111146,11 +120768,12 @@
         },
         {
           "chip_id": "resp-chronic-cough-symptoms-7",
-          "chip_text": "smoking history reviewed if relevant",
+          "chip_text": "reflux or postnasal drip context reviewed",
           "order": 7,
           "search_terms": [
-            "smoking",
-            "cigarettes"
+            "reflux",
+            "GORD",
+            "postnasal"
           ],
           "tags": [
             "respiratory"
@@ -111162,7 +120785,8 @@
           "order": 8,
           "search_terms": [
             "ACE",
-            "inhibitor"
+            "inhibitor",
+            "medication"
           ],
           "tags": [
             "respiratory"
@@ -111170,11 +120794,11 @@
         },
         {
           "chip_id": "resp-chronic-cough-symptoms-9",
-          "chip_text": "impact on sleep reviewed",
+          "chip_text": "smoking history reviewed if relevant",
           "order": 9,
           "search_terms": [
-            "sleep",
-            "quality"
+            "smoking",
+            "cigarettes"
           ],
           "tags": [
             "respiratory"
@@ -111182,12 +120806,12 @@
         },
         {
           "chip_id": "resp-chronic-cough-symptoms-10",
-          "chip_text": "post-nasal drip symptoms reviewed if relevant",
+          "chip_text": "previous investigations reviewed if available",
           "order": 10,
           "search_terms": [
-            "postnasal",
-            "drip",
-            "PND"
+            "previous",
+            "CXR",
+            "spirometry"
           ],
           "tags": [
             "respiratory"
@@ -111209,19 +120833,8 @@
         },
         {
           "chip_id": "resp-chronic-cough-relevant_negatives-2",
-          "chip_text": "no fever reported",
+          "chip_text": "no weight loss reported",
           "order": 2,
-          "search_terms": [
-            "fever"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-relevant_negatives-3",
-          "chip_text": "no weight loss reported if relevant",
-          "order": 3,
           "search_terms": [
             "weight",
             "loss"
@@ -111231,24 +120844,13 @@
           ]
         },
         {
-          "chip_id": "resp-chronic-cough-relevant_negatives-4",
-          "chip_text": "no shortness of breath reported if applicable",
-          "order": 4,
+          "chip_id": "resp-chronic-cough-relevant_negatives-3",
+          "chip_text": "no fever or night sweats reported",
+          "order": 3,
           "search_terms": [
-            "SOB",
-            "breathlessness"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-relevant_negatives-5",
-          "chip_text": "no dysphagia reported if applicable",
-          "order": 5,
-          "search_terms": [
-            "dysphagia",
-            "swallowing"
+            "fever",
+            "sweats",
+            "TB"
           ],
           "tags": [
             "respiratory"
@@ -111258,20 +120860,8 @@
       "exam_findings": [
         {
           "chip_id": "resp-chronic-cough-exam_findings-1",
-          "chip_text": "vitals documented if measured",
-          "order": 1,
-          "search_terms": [
-            "vitals",
-            "O2 sat"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-exam_findings-2",
           "chip_text": "chest auscultation documented if assessed",
-          "order": 2,
+          "order": 1,
           "search_terms": [
             "auscultation",
             "chest"
@@ -111281,9 +120871,9 @@
           ]
         },
         {
-          "chip_id": "resp-chronic-cough-exam_findings-3",
+          "chip_id": "resp-chronic-cough-exam_findings-2",
           "chip_text": "oropharynx documented if assessed",
-          "order": 3,
+          "order": 2,
           "search_terms": [
             "oropharynx",
             "throat"
@@ -111293,12 +120883,11 @@
           ]
         },
         {
-          "chip_id": "resp-chronic-cough-exam_findings-4",
+          "chip_id": "resp-chronic-cough-exam_findings-3",
           "chip_text": "nasal examination documented if relevant",
-          "order": 4,
+          "order": 3,
           "search_terms": [
             "nasal",
-            "nose",
             "postnasal"
           ],
           "tags": [
@@ -111306,12 +120895,24 @@
           ]
         },
         {
-          "chip_id": "resp-chronic-cough-exam_findings-5",
+          "chip_id": "resp-chronic-cough-exam_findings-4",
           "chip_text": "oxygen saturation documented if measured",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "oxygen",
             "SpO2"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-chronic-cough-exam_findings-5",
+          "chip_text": "respiratory rate documented if measured",
+          "order": 5,
+          "search_terms": [
+            "RR",
+            "respiratory"
           ],
           "tags": [
             "respiratory"
@@ -111321,22 +120922,8 @@
       "red_flags": [
         {
           "chip_id": "resp-chronic-cough-red_flags-1",
-          "chip_text": "chronic cough red flags",
-          "order": 1,
-          "search_terms": [
-            "chronic",
-            "cough",
-            "red flags"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-red_flags-2",
           "chip_text": "hemoptysis",
-          "order": 2,
+          "order": 1,
           "search_terms": [
             "hemoptysis",
             "blood"
@@ -111347,9 +120934,9 @@
           ]
         },
         {
-          "chip_id": "resp-chronic-cough-red_flags-3",
+          "chip_id": "resp-chronic-cough-red_flags-2",
           "chip_text": "unexplained weight loss",
-          "order": 3,
+          "order": 2,
           "search_terms": [
             "weight",
             "loss"
@@ -111360,9 +120947,9 @@
           ]
         },
         {
-          "chip_id": "resp-chronic-cough-red_flags-4",
+          "chip_id": "resp-chronic-cough-red_flags-3",
           "chip_text": "fever or night sweats",
-          "order": 4,
+          "order": 3,
           "search_terms": [
             "fever",
             "sweats",
@@ -111374,9 +120961,9 @@
           ]
         },
         {
-          "chip_id": "resp-chronic-cough-red_flags-5",
+          "chip_id": "resp-chronic-cough-red_flags-4",
           "chip_text": "voice change or stridor",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "voice",
             "stridor"
@@ -111387,13 +120974,26 @@
           ]
         },
         {
-          "chip_id": "resp-chronic-cough-red_flags-6",
+          "chip_id": "resp-chronic-cough-red_flags-5",
           "chip_text": "smoker over 45 with new cough",
-          "order": 6,
+          "order": 5,
           "search_terms": [
             "smoker",
             "age",
-            "over 45"
+            "45"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-chronic-cough-red_flags-6",
+          "chip_text": "persistent localized abnormality",
+          "order": 6,
+          "search_terms": [
+            "localized",
+            "focal"
           ],
           "tags": [
             "respiratory",
@@ -111404,12 +121004,13 @@
       "investigations": [
         {
           "chip_id": "resp-chronic-cough-investigations-1",
-          "chip_text": "CXR reviewed if performed",
+          "chip_text": "chest imaging reviewed if available",
           "order": 1,
           "search_terms": [
             "CXR",
             "chest",
-            "X-ray"
+            "X-ray",
+            "CT"
           ],
           "tags": [
             "respiratory"
@@ -111417,10 +121018,11 @@
         },
         {
           "chip_id": "resp-chronic-cough-investigations-2",
-          "chip_text": "spirometry reviewed if performed",
+          "chip_text": "spirometry reviewed if available",
           "order": 2,
           "search_terms": [
-            "spirometry"
+            "spirometry",
+            "PFT"
           ],
           "tags": [
             "respiratory"
@@ -111428,10 +121030,11 @@
         },
         {
           "chip_id": "resp-chronic-cough-investigations-3",
-          "chip_text": "previous imaging reviewed if available",
+          "chip_text": "laryngoscopy referral discussed if relevant",
           "order": 3,
           "search_terms": [
-            "imaging"
+            "ENT",
+            "laryngoscopy"
           ],
           "tags": [
             "respiratory"
@@ -111482,6 +121085,19 @@
           "search_terms": [
             "follow",
             "up"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-chronic-cough-plan_phrases-5",
+          "chip_text": "trial of inhaled therapy discussed if applicable",
+          "order": 5,
+          "search_terms": [
+            "inhaler",
+            "trial",
+            "treatment"
           ],
           "tags": [
             "respiratory"
@@ -111557,10 +121173,12 @@
         },
         {
           "chip_id": "resp-copd-followup-symptoms-2",
-          "chip_text": "cough reviewed",
+          "chip_text": "dyspnea reviewed",
           "order": 2,
           "search_terms": [
-            "cough"
+            "dyspnea",
+            "SOB",
+            "breathlessness"
           ],
           "tags": [
             "respiratory"
@@ -111568,9 +121186,10 @@
         },
         {
           "chip_id": "resp-copd-followup-symptoms-3",
-          "chip_text": "sputum reviewed",
+          "chip_text": "cough and sputum reviewed",
           "order": 3,
           "search_terms": [
+            "cough",
             "sputum",
             "phlegm"
           ],
@@ -111580,11 +121199,11 @@
         },
         {
           "chip_id": "resp-copd-followup-symptoms-4",
-          "chip_text": "shortness of breath reviewed",
+          "chip_text": "exacerbation history reviewed",
           "order": 4,
           "search_terms": [
-            "SOB",
-            "breathlessness"
+            "exacerbation",
+            "flare"
           ],
           "tags": [
             "respiratory"
@@ -111605,32 +121224,8 @@
         },
         {
           "chip_id": "resp-copd-followup-symptoms-6",
-          "chip_text": "nocturnal symptoms reviewed",
-          "order": 6,
-          "search_terms": [
-            "nocturnal",
-            "night"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-symptoms-7",
-          "chip_text": "exacerbation history reviewed",
-          "order": 7,
-          "search_terms": [
-            "exacerbation",
-            "flare"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-symptoms-8",
           "chip_text": "inhaler use reviewed",
-          "order": 8,
+          "order": 6,
           "search_terms": [
             "inhaler",
             "puffer"
@@ -111640,9 +121235,9 @@
           ]
         },
         {
-          "chip_id": "resp-copd-followup-symptoms-9",
-          "chip_text": "smoking history reviewed if relevant",
-          "order": 9,
+          "chip_id": "resp-copd-followup-symptoms-7",
+          "chip_text": "smoking history reviewed",
+          "order": 7,
           "search_terms": [
             "smoking",
             "cigarettes"
@@ -111652,13 +121247,38 @@
           ]
         },
         {
+          "chip_id": "resp-copd-followup-symptoms-8",
+          "chip_text": "nocturnal symptoms reviewed",
+          "order": 8,
+          "search_terms": [
+            "nocturnal",
+            "night"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-copd-followup-symptoms-9",
+          "chip_text": "functional impact reviewed",
+          "order": 9,
+          "search_terms": [
+            "ADL",
+            "daily",
+            "function"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
           "chip_id": "resp-copd-followup-symptoms-10",
-          "chip_text": "impact on everyday activities reviewed",
+          "chip_text": "sputum color change reviewed if relevant",
           "order": 10,
           "search_terms": [
-            "daily",
-            "ADL",
-            "activities"
+            "sputum",
+            "color",
+            "purulence"
           ],
           "tags": [
             "respiratory"
@@ -111668,20 +121288,8 @@
       "relevant_negatives": [
         {
           "chip_id": "resp-copd-followup-relevant_negatives-1",
-          "chip_text": "no hemoptysis reported",
-          "order": 1,
-          "search_terms": [
-            "hemoptysis",
-            "blood"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-relevant_negatives-2",
           "chip_text": "no chest pain reported",
-          "order": 2,
+          "order": 1,
           "search_terms": [
             "chest",
             "pain"
@@ -111691,35 +121299,23 @@
           ]
         },
         {
+          "chip_id": "resp-copd-followup-relevant_negatives-2",
+          "chip_text": "no hemoptysis reported",
+          "order": 2,
+          "search_terms": [
+            "hemoptysis",
+            "blood"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
           "chip_id": "resp-copd-followup-relevant_negatives-3",
-          "chip_text": "no recent hospital attendance reported if applicable",
+          "chip_text": "no fever reported if relevant",
           "order": 3,
           "search_terms": [
-            "hospital",
-            "admission"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-relevant_negatives-4",
-          "chip_text": "no fever reported if relevant",
-          "order": 4,
-          "search_terms": [
             "fever"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-relevant_negatives-5",
-          "chip_text": "no increase in sputum purulence reported if applicable",
-          "order": 5,
-          "search_terms": [
-            "sputum",
-            "purulence"
           ],
           "tags": [
             "respiratory"
@@ -111729,11 +121325,11 @@
       "exam_findings": [
         {
           "chip_id": "resp-copd-followup-exam_findings-1",
-          "chip_text": "vitals documented if measured",
+          "chip_text": "oxygen saturation documented if measured",
           "order": 1,
           "search_terms": [
-            "vitals",
-            "O2 sat"
+            "oxygen",
+            "SpO2"
           ],
           "tags": [
             "respiratory"
@@ -111753,10 +121349,11 @@
         },
         {
           "chip_id": "resp-copd-followup-exam_findings-3",
-          "chip_text": "wheeze documented if assessed",
+          "chip_text": "respiratory rate documented if measured",
           "order": 3,
           "search_terms": [
-            "wheeze"
+            "RR",
+            "respiratory"
           ],
           "tags": [
             "respiratory"
@@ -111764,11 +121361,12 @@
         },
         {
           "chip_id": "resp-copd-followup-exam_findings-4",
-          "chip_text": "air entry documented if assessed",
+          "chip_text": "peripheral oedema documented if assessed",
           "order": 4,
           "search_terms": [
-            "air",
-            "entry"
+            "oedema",
+            "ankle",
+            "JVP"
           ],
           "tags": [
             "respiratory"
@@ -111776,32 +121374,8 @@
         },
         {
           "chip_id": "resp-copd-followup-exam_findings-5",
-          "chip_text": "oxygen saturation documented if measured",
-          "order": 5,
-          "search_terms": [
-            "oxygen",
-            "SpO2"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-exam_findings-6",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 6,
-          "search_terms": [
-            "respiratory",
-            "rate"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-exam_findings-7",
           "chip_text": "accessory muscle use documented if assessed",
-          "order": 7,
+          "order": 5,
           "search_terms": [
             "accessory",
             "muscles"
@@ -111811,29 +121385,81 @@
           ]
         },
         {
-          "chip_id": "resp-copd-followup-exam_findings-8",
-          "chip_text": "peripheral oedema documented if assessed",
-          "order": 8,
+          "chip_id": "resp-copd-followup-exam_findings-6",
+          "chip_text": "chest percussion documented if assessed",
+          "order": 6,
           "search_terms": [
-            "oedema",
-            "edema",
-            "ankle"
+            "percussion",
+            "hyperinflation"
           ],
           "tags": [
             "respiratory"
           ]
         }
       ],
-      "red_flags": [],
+      "red_flags": [
+        {
+          "chip_id": "resp-copd-followup-red_flags-1",
+          "chip_text": "severe breathlessness at rest",
+          "order": 1,
+          "search_terms": [
+            "severe",
+            "breathlessness"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-copd-followup-red_flags-2",
+          "chip_text": "reduced oxygen saturation if documented",
+          "order": 2,
+          "search_terms": [
+            "reduced",
+            "oxygen"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-copd-followup-red_flags-3",
+          "chip_text": "cyanosis",
+          "order": 3,
+          "search_terms": [
+            "cyanosis"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-copd-followup-red_flags-4",
+          "chip_text": "signs of cor pulmonale if assessed",
+          "order": 4,
+          "search_terms": [
+            "cor",
+            "pulmonale",
+            "oedema"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        }
+      ],
       "investigations": [
         {
           "chip_id": "resp-copd-followup-investigations-1",
-          "chip_text": "spirometry report reviewed if available",
+          "chip_text": "spirometry reviewed if available",
           "order": 1,
           "search_terms": [
             "spirometry",
-            "PFT",
-            "FEV1"
+            "FEV1",
+            "PFT"
           ],
           "tags": [
             "respiratory"
@@ -111841,11 +121467,11 @@
         },
         {
           "chip_id": "resp-copd-followup-investigations-2",
-          "chip_text": "oxygen assessment reviewed if applicable",
+          "chip_text": "previous respiratory records reviewed if available",
           "order": 2,
           "search_terms": [
-            "oxygen",
-            "O2"
+            "previous",
+            "records"
           ],
           "tags": [
             "respiratory"
@@ -111853,23 +121479,11 @@
         },
         {
           "chip_id": "resp-copd-followup-investigations-3",
-          "chip_text": "previous discharge summary reviewed if available",
+          "chip_text": "oxygen assessment reviewed if applicable",
           "order": 3,
           "search_terms": [
-            "discharge",
-            "summary"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-investigations-4",
-          "chip_text": "smoking cessation support discussed if relevant",
-          "order": 4,
-          "search_terms": [
-            "smoking",
-            "cessation"
+            "oxygen",
+            "O2"
           ],
           "tags": [
             "respiratory"
@@ -111903,11 +121517,11 @@
         },
         {
           "chip_id": "resp-copd-followup-plan_phrases-3",
-          "chip_text": "pulmonary rehabilitation discussed if applicable",
+          "chip_text": "smoking cessation advice documented if discussed",
           "order": 3,
           "search_terms": [
-            "pulmonary",
-            "rehab"
+            "cessation",
+            "smoking"
           ],
           "tags": [
             "respiratory"
@@ -111915,11 +121529,11 @@
         },
         {
           "chip_id": "resp-copd-followup-plan_phrases-4",
-          "chip_text": "referral documented if clinician decided",
+          "chip_text": "pulmonary rehabilitation discussed if applicable",
           "order": 4,
           "search_terms": [
-            "referral",
-            "respiratory"
+            "pulmonary",
+            "rehab"
           ],
           "tags": [
             "respiratory"
@@ -111937,13 +121551,11 @@
           "tags": [
             "respiratory"
           ]
-        }
-      ],
-      "follow_up": [
+        },
         {
-          "chip_id": "resp-copd-followup-follow_up-1",
+          "chip_id": "resp-copd-followup-plan_phrases-6",
           "chip_text": "follow-up documented if arranged",
-          "order": 1,
+          "order": 6,
           "search_terms": [
             "follow",
             "up"
@@ -111953,9 +121565,23 @@
           ]
         },
         {
-          "chip_id": "resp-copd-followup-follow_up-2",
+          "chip_id": "resp-copd-followup-plan_phrases-7",
+          "chip_text": "referral documented if clinician decided",
+          "order": 7,
+          "search_terms": [
+            "referral",
+            "respiratory"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "resp-copd-followup-follow_up-1",
           "chip_text": "3-6 months",
-          "order": 2,
+          "order": 1,
           "search_terms": [
             "three",
             "six",
@@ -111966,9 +121592,9 @@
           ]
         },
         {
-          "chip_id": "resp-copd-followup-follow_up-3",
+          "chip_id": "resp-copd-followup-follow_up-2",
           "chip_text": "6-12 months if stable",
-          "order": 3,
+          "order": 2,
           "search_terms": [
             "six",
             "twelve"
@@ -111978,9 +121604,9 @@
           ]
         },
         {
-          "chip_id": "resp-copd-followup-follow_up-4",
+          "chip_id": "resp-copd-followup-follow_up-3",
           "chip_text": "sooner if worsening",
-          "order": 4,
+          "order": 3,
           "search_terms": [
             "sooner",
             "worsening"
@@ -111990,12 +121616,24 @@
           ]
         },
         {
-          "chip_id": "resp-copd-followup-follow_up-5",
+          "chip_id": "resp-copd-followup-follow_up-4",
           "chip_text": "PRN",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "PRN",
             "as needed"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-copd-followup-follow_up-5",
+          "chip_text": "sooner if exacerbation",
+          "order": 5,
+          "search_terms": [
+            "exacerbation",
+            "flare"
           ],
           "tags": [
             "respiratory"
@@ -112020,10 +121658,11 @@
         },
         {
           "chip_id": "resp-dyspnea-symptoms-2",
-          "chip_text": "onset documented",
+          "chip_text": "onset and duration documented",
           "order": 2,
           "search_terms": [
             "onset",
+            "duration",
             "acute",
             "gradual"
           ],
@@ -112033,23 +121672,11 @@
         },
         {
           "chip_id": "resp-dyspnea-symptoms-3",
-          "chip_text": "duration and progression documented",
+          "chip_text": "exertional versus rest symptoms documented",
           "order": 3,
           "search_terms": [
-            "duration",
-            "progression"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-symptoms-4",
-          "chip_text": "exertional relation documented",
-          "order": 4,
-          "search_terms": [
             "exertional",
-            "MRC",
+            "rest",
             "activity"
           ],
           "tags": [
@@ -112057,13 +121684,26 @@
           ]
         },
         {
+          "chip_id": "resp-dyspnea-symptoms-4",
+          "chip_text": "MRC dyspnea grade documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "MRC",
+            "grade",
+            "scale"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
           "chip_id": "resp-dyspnea-symptoms-5",
-          "chip_text": "positional symptoms reviewed",
+          "chip_text": "orthopnea and PND reviewed",
           "order": 5,
           "search_terms": [
-            "positional",
             "orthopnea",
-            "PND"
+            "PND",
+            "lying flat"
           ],
           "tags": [
             "respiratory"
@@ -112071,12 +121711,13 @@
         },
         {
           "chip_id": "resp-dyspnea-symptoms-6",
-          "chip_text": "associated symptoms reviewed",
+          "chip_text": "cough, wheeze and chest pain reviewed",
           "order": 6,
           "search_terms": [
             "cough",
             "wheeze",
-            "chest"
+            "chest",
+            "pain"
           ],
           "tags": [
             "respiratory"
@@ -112084,8 +121725,21 @@
         },
         {
           "chip_id": "resp-dyspnea-symptoms-7",
-          "chip_text": "nocturnal symptoms reviewed",
+          "chip_text": "leg swelling reviewed",
           "order": 7,
+          "search_terms": [
+            "leg",
+            "ankle",
+            "oedema"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-dyspnea-symptoms-8",
+          "chip_text": "nocturnal symptoms reviewed",
+          "order": 8,
           "search_terms": [
             "nocturnal",
             "night"
@@ -112095,13 +121749,13 @@
           ]
         },
         {
-          "chip_id": "resp-dyspnea-symptoms-8",
-          "chip_text": "functional impairment documented",
-          "order": 8,
+          "chip_id": "resp-dyspnea-symptoms-9",
+          "chip_text": "functional limitation documented",
+          "order": 9,
           "search_terms": [
             "functional",
-            "MRC",
-            "dyspnea scale"
+            "limitation",
+            "ADL"
           ],
           "tags": [
             "respiratory"
@@ -112123,31 +121777,8 @@
         },
         {
           "chip_id": "resp-dyspnea-relevant_negatives-2",
-          "chip_text": "no hemoptysis reported",
-          "order": 2,
-          "search_terms": [
-            "hemoptysis",
-            "blood"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-relevant_negatives-3",
-          "chip_text": "no fever reported",
-          "order": 3,
-          "search_terms": [
-            "fever"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-relevant_negatives-4",
           "chip_text": "no syncope reported",
-          "order": 4,
+          "order": 2,
           "search_terms": [
             "syncope",
             "faint"
@@ -112157,13 +121788,23 @@
           ]
         },
         {
-          "chip_id": "resp-dyspnea-relevant_negatives-5",
-          "chip_text": "no ankle swelling reported if relevant",
-          "order": 5,
+          "chip_id": "resp-dyspnea-relevant_negatives-3",
+          "chip_text": "no hemoptysis reported",
+          "order": 3,
           "search_terms": [
-            "ankle",
-            "oedema",
-            "edema"
+            "hemoptysis",
+            "blood"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-dyspnea-relevant_negatives-4",
+          "chip_text": "no fever reported",
+          "order": 4,
+          "search_terms": [
+            "fever"
           ],
           "tags": [
             "respiratory"
@@ -112173,58 +121814,8 @@
       "exam_findings": [
         {
           "chip_id": "resp-dyspnea-exam_findings-1",
-          "chip_text": "vitals documented if measured",
-          "order": 1,
-          "search_terms": [
-            "vitals",
-            "O2 sat",
-            "RR"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-exam_findings-2",
-          "chip_text": "chest auscultation documented if assessed",
-          "order": 2,
-          "search_terms": [
-            "auscultation",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-exam_findings-3",
-          "chip_text": "wheeze or crackles documented if assessed",
-          "order": 3,
-          "search_terms": [
-            "wheeze",
-            "crackles",
-            "crepitations"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-exam_findings-4",
-          "chip_text": "air entry documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "air",
-            "entry"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-exam_findings-5",
           "chip_text": "oxygen saturation documented if measured",
-          "order": 5,
+          "order": 1,
           "search_terms": [
             "oxygen",
             "SpO2"
@@ -112234,33 +121825,46 @@
           ]
         },
         {
-          "chip_id": "resp-dyspnea-exam_findings-6",
+          "chip_id": "resp-dyspnea-exam_findings-2",
           "chip_text": "respiratory rate documented if measured",
-          "order": 6,
+          "order": 2,
           "search_terms": [
-            "respiratory",
-            "rate"
+            "RR",
+            "respiratory"
           ],
           "tags": [
             "respiratory"
           ]
         },
         {
-          "chip_id": "resp-dyspnea-exam_findings-7",
-          "chip_text": "accessory muscle use documented if assessed",
-          "order": 7,
+          "chip_id": "resp-dyspnea-exam_findings-3",
+          "chip_text": "work of breathing documented if assessed",
+          "order": 3,
           "search_terms": [
-            "accessory",
-            "muscles"
+            "work",
+            "breathing",
+            "accessory"
           ],
           "tags": [
             "respiratory"
           ]
         },
         {
-          "chip_id": "resp-dyspnea-exam_findings-8",
+          "chip_id": "resp-dyspnea-exam_findings-4",
+          "chip_text": "chest auscultation documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "auscultation",
+            "chest"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-dyspnea-exam_findings-5",
           "chip_text": "peripheral oedema documented if assessed",
-          "order": 8,
+          "order": 5,
           "search_terms": [
             "oedema",
             "ankle",
@@ -112271,12 +121875,25 @@
           ]
         },
         {
-          "chip_id": "resp-dyspnea-exam_findings-9",
+          "chip_id": "resp-dyspnea-exam_findings-6",
           "chip_text": "tracheal position documented if assessed",
-          "order": 9,
+          "order": 6,
           "search_terms": [
             "trachea",
             "deviation"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-dyspnea-exam_findings-7",
+          "chip_text": "peak flow recorded if measured",
+          "order": 7,
+          "search_terms": [
+            "peak",
+            "flow",
+            "PEFR"
           ],
           "tags": [
             "respiratory"
@@ -112286,12 +121903,11 @@
       "red_flags": [
         {
           "chip_id": "resp-dyspnea-red_flags-1",
-          "chip_text": "acute severe dyspnea",
+          "chip_text": "severe respiratory distress",
           "order": 1,
           "search_terms": [
-            "acute",
             "severe",
-            "respiratory distress"
+            "distress"
           ],
           "tags": [
             "respiratory",
@@ -112300,34 +121916,8 @@
         },
         {
           "chip_id": "resp-dyspnea-red_flags-2",
-          "chip_text": "stridor",
-          "order": 2,
-          "search_terms": [
-            "stridor",
-            "upper airway"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-red_flags-3",
-          "chip_text": "cyanosis",
-          "order": 3,
-          "search_terms": [
-            "cyanosis",
-            "blue"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-red_flags-4",
           "chip_text": "oxygen saturation below baseline",
-          "order": 4,
+          "order": 2,
           "search_terms": [
             "low",
             "oxygen",
@@ -112339,12 +121929,37 @@
           ]
         },
         {
+          "chip_id": "resp-dyspnea-red_flags-3",
+          "chip_text": "cyanosis",
+          "order": 3,
+          "search_terms": [
+            "cyanosis"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-dyspnea-red_flags-4",
+          "chip_text": "inability to speak full sentences",
+          "order": 4,
+          "search_terms": [
+            "speak",
+            "sentences"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
           "chip_id": "resp-dyspnea-red_flags-5",
-          "chip_text": "signs of airway obstruction",
+          "chip_text": "stridor",
           "order": 5,
           "search_terms": [
-            "airway",
-            "obstruction"
+            "stridor",
+            "upper airway"
           ],
           "tags": [
             "respiratory",
@@ -112369,12 +121984,11 @@
       "investigations": [
         {
           "chip_id": "resp-dyspnea-investigations-1",
-          "chip_text": "CXR reviewed if performed",
+          "chip_text": "ECG reviewed if performed",
           "order": 1,
           "search_terms": [
-            "CXR",
-            "chest",
-            "X-ray"
+            "ECG",
+            "EKG"
           ],
           "tags": [
             "respiratory"
@@ -112382,11 +121996,13 @@
         },
         {
           "chip_id": "resp-dyspnea-investigations-2",
-          "chip_text": "ECG reviewed if performed",
+          "chip_text": "chest imaging reviewed if available",
           "order": 2,
           "search_terms": [
-            "ECG",
-            "EKG"
+            "CXR",
+            "chest",
+            "X-ray",
+            "CT"
           ],
           "tags": [
             "respiratory"
@@ -112399,7 +122015,8 @@
           "search_terms": [
             "blood",
             "labs",
-            "BNP"
+            "BNP",
+            "D-dimer"
           ],
           "tags": [
             "respiratory"
@@ -112407,10 +122024,12 @@
         },
         {
           "chip_id": "resp-dyspnea-investigations-4",
-          "chip_text": "previous imaging reviewed if available",
+          "chip_text": "previous PFT reviewed if available",
           "order": 4,
           "search_terms": [
-            "imaging"
+            "PFT",
+            "FEV1",
+            "FVC"
           ],
           "tags": [
             "respiratory"
@@ -112538,23 +122157,11 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-symptoms-2",
-          "chip_text": "onset documented",
+          "chip_text": "amount documented",
           "order": 2,
           "search_terms": [
-            "onset",
-            "timing"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-symptoms-3",
-          "chip_text": "volume documented",
-          "order": 3,
-          "search_terms": [
-            "volume",
             "amount",
+            "volume",
             "quantity"
           ],
           "tags": [
@@ -112562,12 +122169,25 @@
           ]
         },
         {
+          "chip_id": "resp-hemoptysis-documentation-symptoms-3",
+          "chip_text": "color and context documented",
+          "order": 3,
+          "search_terms": [
+            "color",
+            "frank",
+            "streaked"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
           "chip_id": "resp-hemoptysis-documentation-symptoms-4",
-          "chip_text": "frequency documented",
+          "chip_text": "cough and sputum reviewed",
           "order": 4,
           "search_terms": [
-            "frequency",
-            "how often"
+            "cough",
+            "sputum"
           ],
           "tags": [
             "respiratory"
@@ -112575,10 +122195,12 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-symptoms-5",
-          "chip_text": "associated cough reviewed",
+          "chip_text": "chest pain and dyspnea reviewed",
           "order": 5,
           "search_terms": [
-            "cough"
+            "chest",
+            "pain",
+            "dyspnea"
           ],
           "tags": [
             "respiratory"
@@ -112586,11 +122208,13 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-symptoms-6",
-          "chip_text": "associated chest pain reviewed",
+          "chip_text": "fever, night sweats and weight loss reviewed",
           "order": 6,
           "search_terms": [
-            "chest",
-            "pain"
+            "fever",
+            "sweats",
+            "weight",
+            "TB"
           ],
           "tags": [
             "respiratory"
@@ -112598,10 +122222,11 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-symptoms-7",
-          "chip_text": "fever reviewed",
+          "chip_text": "smoking history reviewed",
           "order": 7,
           "search_terms": [
-            "fever"
+            "smoking",
+            "cigarettes"
           ],
           "tags": [
             "respiratory"
@@ -112609,19 +122234,8 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-symptoms-8",
-          "chip_text": "smoking history reviewed if relevant",
-          "order": 8,
-          "search_terms": [
-            "smoking"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-symptoms-9",
           "chip_text": "anticoagulant use reviewed if relevant",
-          "order": 9,
+          "order": 8,
           "search_terms": [
             "anticoagulant",
             "warfarin",
@@ -112632,9 +122246,9 @@
           ]
         },
         {
-          "chip_id": "resp-hemoptysis-documentation-symptoms-10",
+          "chip_id": "resp-hemoptysis-documentation-symptoms-9",
           "chip_text": "prior episodes reviewed if applicable",
-          "order": 10,
+          "order": 9,
           "search_terms": [
             "prior",
             "previous",
@@ -112648,11 +122262,12 @@
       "relevant_negatives": [
         {
           "chip_id": "resp-hemoptysis-documentation-relevant_negatives-1",
-          "chip_text": "no weight loss reported if relevant",
+          "chip_text": "no massive bleeding reported if documented",
           "order": 1,
           "search_terms": [
-            "weight",
-            "loss"
+            "massive",
+            "large",
+            "volume"
           ],
           "tags": [
             "respiratory"
@@ -112660,12 +122275,11 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-relevant_negatives-2",
-          "chip_text": "no fever or night sweats reported if applicable",
+          "chip_text": "no severe breathlessness reported",
           "order": 2,
           "search_terms": [
-            "fever",
-            "sweats",
-            "TB"
+            "severe",
+            "breathlessness"
           ],
           "tags": [
             "respiratory"
@@ -112676,7 +122290,8 @@
           "chip_text": "no chest trauma reported",
           "order": 3,
           "search_terms": [
-            "trauma"
+            "trauma",
+            "injury"
           ],
           "tags": [
             "respiratory"
@@ -112684,11 +122299,11 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-relevant_negatives-4",
-          "chip_text": "no anticoagulant or antiplatelet reported if relevant",
+          "chip_text": "no TB symptoms reported if applicable",
           "order": 4,
           "search_terms": [
-            "anticoagulant",
-            "antiplatelet"
+            "TB",
+            "tuberculosis"
           ],
           "tags": [
             "respiratory"
@@ -112703,7 +122318,7 @@
           "search_terms": [
             "vitals",
             "BP",
-            "O2 sat"
+            "pulse"
           ],
           "tags": [
             "respiratory"
@@ -112723,8 +122338,20 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-exam_findings-3",
-          "chip_text": "oropharynx documented if assessed",
+          "chip_text": "oxygen saturation documented if measured",
           "order": 3,
+          "search_terms": [
+            "oxygen",
+            "SpO2"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-hemoptysis-documentation-exam_findings-4",
+          "chip_text": "oropharynx documented if assessed",
+          "order": 4,
           "search_terms": [
             "oropharynx",
             "throat"
@@ -112734,12 +122361,12 @@
           ]
         },
         {
-          "chip_id": "resp-hemoptysis-documentation-exam_findings-4",
-          "chip_text": "nasal examination documented if relevant",
-          "order": 4,
+          "chip_id": "resp-hemoptysis-documentation-exam_findings-5",
+          "chip_text": "respiratory rate documented if measured",
+          "order": 5,
           "search_terms": [
-            "nasal",
-            "epistaxis"
+            "RR",
+            "respiratory"
           ],
           "tags": [
             "respiratory"
@@ -112749,11 +122376,12 @@
       "red_flags": [
         {
           "chip_id": "resp-hemoptysis-documentation-red_flags-1",
-          "chip_text": "hemoptysis red flags",
+          "chip_text": "massive hemoptysis",
           "order": 1,
           "search_terms": [
-            "hemoptysis",
-            "red flags"
+            "massive",
+            "large",
+            "volume"
           ],
           "tags": [
             "respiratory",
@@ -112762,11 +122390,12 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-red_flags-2",
-          "chip_text": "massive hemoptysis",
+          "chip_text": "constitutional symptoms with hemoptysis",
           "order": 2,
           "search_terms": [
-            "massive",
-            "large volume"
+            "weight",
+            "fever",
+            "sweats"
           ],
           "tags": [
             "respiratory",
@@ -112775,26 +122404,10 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-red_flags-3",
-          "chip_text": "constitutional symptoms",
+          "chip_text": "known malignancy risk with new hemoptysis",
           "order": 3,
           "search_terms": [
-            "weight",
-            "loss",
-            "fever",
-            "night sweats"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-red_flags-4",
-          "chip_text": "known malignancy risk",
-          "order": 4,
-          "search_terms": [
             "malignancy",
-            "cancer",
             "smoker"
           ],
           "tags": [
@@ -112803,12 +122416,12 @@
           ]
         },
         {
-          "chip_id": "resp-hemoptysis-documentation-red_flags-5",
-          "chip_text": "on anticoagulation",
-          "order": 5,
+          "chip_id": "resp-hemoptysis-documentation-red_flags-4",
+          "chip_text": "on anticoagulation with new hemoptysis",
+          "order": 4,
           "search_terms": [
             "anticoagulant",
-            "warfarin"
+            "INR"
           ],
           "tags": [
             "respiratory",
@@ -112819,12 +122432,12 @@
       "investigations": [
         {
           "chip_id": "resp-hemoptysis-documentation-investigations-1",
-          "chip_text": "CXR reviewed if performed",
+          "chip_text": "chest imaging reviewed if available",
           "order": 1,
           "search_terms": [
             "CXR",
-            "chest",
-            "X-ray"
+            "CT",
+            "chest"
           ],
           "tags": [
             "respiratory"
@@ -112832,11 +122445,12 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-investigations-2",
-          "chip_text": "CT chest reviewed if performed",
+          "chip_text": "blood tests reviewed if ordered",
           "order": 2,
           "search_terms": [
-            "CT",
-            "chest"
+            "blood",
+            "labs",
+            "coagulation"
           ],
           "tags": [
             "respiratory"
@@ -112850,30 +122464,6 @@
             "sputum",
             "culture",
             "AFB"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-investigations-4",
-          "chip_text": "coagulation profile reviewed if ordered",
-          "order": 4,
-          "search_terms": [
-            "INR",
-            "coagulation"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-investigations-5",
-          "chip_text": "bronchoscopy report reviewed if performed",
-          "order": 5,
-          "search_terms": [
-            "bronchoscopy",
-            "scope"
           ],
           "tags": [
             "respiratory"
@@ -112907,11 +122497,11 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-plan_phrases-3",
-          "chip_text": "referral documented if clinician decided",
+          "chip_text": "follow-up documented if clinician decided",
           "order": 3,
           "search_terms": [
-            "referral",
-            "respiratory"
+            "follow",
+            "up"
           ],
           "tags": [
             "respiratory"
@@ -112919,11 +122509,11 @@
         },
         {
           "chip_id": "resp-hemoptysis-documentation-plan_phrases-4",
-          "chip_text": "follow-up documented if arranged",
+          "chip_text": "referral documented if clinician decided",
           "order": 4,
           "search_terms": [
-            "follow",
-            "up"
+            "referral",
+            "respiratory"
           ],
           "tags": [
             "respiratory"
@@ -112980,6 +122570,18 @@
           "tags": [
             "respiratory"
           ]
+        },
+        {
+          "chip_id": "resp-hemoptysis-documentation-follow_up-5",
+          "chip_text": "sooner if bleeding recurs",
+          "order": 5,
+          "search_terms": [
+            "bleeding",
+            "recurrent"
+          ],
+          "tags": [
+            "respiratory"
+          ]
         }
       ]
     },
@@ -112999,10 +122601,11 @@
         },
         {
           "chip_id": "resp-pneumonia-followup-symptoms-2",
-          "chip_text": "cough reviewed",
+          "chip_text": "symptom progress reviewed",
           "order": 2,
           "search_terms": [
-            "cough"
+            "symptom",
+            "progress"
           ],
           "tags": [
             "respiratory"
@@ -113010,9 +122613,10 @@
         },
         {
           "chip_id": "resp-pneumonia-followup-symptoms-3",
-          "chip_text": "sputum reviewed",
+          "chip_text": "cough and sputum reviewed",
           "order": 3,
           "search_terms": [
+            "cough",
             "sputum",
             "phlegm"
           ],
@@ -113034,10 +122638,10 @@
         },
         {
           "chip_id": "resp-pneumonia-followup-symptoms-5",
-          "chip_text": "breathing reviewed",
+          "chip_text": "dyspnea reviewed",
           "order": 5,
           "search_terms": [
-            "breathing",
+            "dyspnea",
             "SOB"
           ],
           "tags": [
@@ -113046,12 +122650,12 @@
         },
         {
           "chip_id": "resp-pneumonia-followup-symptoms-6",
-          "chip_text": "chest pain reviewed",
+          "chip_text": "functional recovery reviewed",
           "order": 6,
           "search_terms": [
-            "chest",
-            "pain",
-            "pleuritic"
+            "functional",
+            "recovery",
+            "energy"
           ],
           "tags": [
             "respiratory"
@@ -113059,20 +122663,8 @@
         },
         {
           "chip_id": "resp-pneumonia-followup-symptoms-7",
-          "chip_text": "energy level and function reviewed",
+          "chip_text": "medication and adherence context reviewed if relevant",
           "order": 7,
-          "search_terms": [
-            "energy",
-            "functional"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-symptoms-8",
-          "chip_text": "medication adherence discussed",
-          "order": 8,
           "search_terms": [
             "adherence",
             "antibiotics"
@@ -113082,9 +122674,9 @@
           ]
         },
         {
-          "chip_id": "resp-pneumonia-followup-symptoms-9",
+          "chip_id": "resp-pneumonia-followup-symptoms-8",
           "chip_text": "appetite and hydration reviewed",
-          "order": 9,
+          "order": 8,
           "search_terms": [
             "appetite",
             "hydration"
@@ -113094,20 +122686,9 @@
           ]
         },
         {
-          "chip_id": "resp-pneumonia-followup-symptoms-10",
-          "chip_text": "mobility reviewed if relevant",
-          "order": 10,
-          "search_terms": [
-            "mobility"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-symptoms-11",
+          "chip_id": "resp-pneumonia-followup-symptoms-9",
           "chip_text": "residual chest pain reviewed",
-          "order": 11,
+          "order": 9,
           "search_terms": [
             "chest",
             "pain",
@@ -113121,11 +122702,11 @@
       "relevant_negatives": [
         {
           "chip_id": "resp-pneumonia-followup-relevant_negatives-1",
-          "chip_text": "no hemoptysis reported",
+          "chip_text": "no worsening breathlessness reported",
           "order": 1,
           "search_terms": [
-            "hemoptysis",
-            "blood"
+            "worsening",
+            "breathlessness"
           ],
           "tags": [
             "respiratory"
@@ -113133,11 +122714,23 @@
         },
         {
           "chip_id": "resp-pneumonia-followup-relevant_negatives-2",
-          "chip_text": "no chest pain reported",
+          "chip_text": "no persistent fever reported",
           "order": 2,
           "search_terms": [
-            "chest",
-            "pain"
+            "persistent",
+            "fever"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-pneumonia-followup-relevant_negatives-3",
+          "chip_text": "no hemoptysis reported",
+          "order": 3,
+          "search_terms": [
+            "hemoptysis",
+            "blood"
           ],
           "tags": [
             "respiratory"
@@ -113147,12 +122740,11 @@
       "exam_findings": [
         {
           "chip_id": "resp-pneumonia-followup-exam_findings-1",
-          "chip_text": "vitals documented if measured",
+          "chip_text": "oxygen saturation documented if measured",
           "order": 1,
           "search_terms": [
-            "vitals",
-            "O2 sat",
-            "RR"
+            "oxygen",
+            "SpO2"
           ],
           "tags": [
             "respiratory"
@@ -113175,8 +122767,8 @@
           "chip_text": "respiratory rate documented if measured",
           "order": 3,
           "search_terms": [
-            "respiratory",
-            "rate"
+            "RR",
+            "respiratory"
           ],
           "tags": [
             "respiratory"
@@ -113184,20 +122776,8 @@
         },
         {
           "chip_id": "resp-pneumonia-followup-exam_findings-4",
-          "chip_text": "oxygen saturation documented if measured",
-          "order": 4,
-          "search_terms": [
-            "oxygen",
-            "SpO2"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-exam_findings-5",
           "chip_text": "temperature documented if measured",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "temperature",
             "fever"
@@ -113207,9 +122787,9 @@
           ]
         },
         {
-          "chip_id": "resp-pneumonia-followup-exam_findings-6",
+          "chip_id": "resp-pneumonia-followup-exam_findings-5",
           "chip_text": "chest percussion documented if assessed",
-          "order": 6,
+          "order": 5,
           "search_terms": [
             "percussion",
             "dullness"
@@ -113225,11 +122805,13 @@
           "chip_text": "persistent or recurrent fever",
           "order": 1,
           "search_terms": [
+            "persistent",
             "fever",
             "recurrent"
           ],
           "tags": [
-            "respiratory"
+            "respiratory",
+            "high_safety"
           ]
         },
         {
@@ -113237,22 +122819,51 @@
           "chip_text": "worsening dyspnea",
           "order": 2,
           "search_terms": [
-            "dyspnea",
-            "SOB"
+            "worsening",
+            "dyspnea"
           ],
           "tags": [
-            "respiratory"
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-pneumonia-followup-red_flags-3",
+          "chip_text": "persistent focal chest signs",
+          "order": 3,
+          "search_terms": [
+            "focal",
+            "chest",
+            "signs"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-pneumonia-followup-red_flags-4",
+          "chip_text": "incomplete resolution on imaging if performed",
+          "order": 4,
+          "search_terms": [
+            "incomplete",
+            "resolution"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
           ]
         }
       ],
       "investigations": [
         {
           "chip_id": "resp-pneumonia-followup-investigations-1",
-          "chip_text": "CXR reviewed if performed",
+          "chip_text": "chest imaging reviewed if available",
           "order": 1,
           "search_terms": [
             "CXR",
-            "chest"
+            "chest",
+            "X-ray"
           ],
           "tags": [
             "respiratory"
@@ -113266,18 +122877,6 @@
             "blood",
             "labs",
             "CRP"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-investigations-3",
-          "chip_text": "discharge summary reviewed if available",
-          "order": 3,
-          "search_terms": [
-            "discharge",
-            "summary"
           ],
           "tags": [
             "respiratory"
@@ -113336,8 +122935,20 @@
         },
         {
           "chip_id": "resp-pneumonia-followup-plan_phrases-5",
-          "chip_text": "chest physiotherapy discussed if applicable",
+          "chip_text": "follow-up documented if arranged",
           "order": 5,
+          "search_terms": [
+            "follow",
+            "up"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-pneumonia-followup-plan_phrases-6",
+          "chip_text": "chest physiotherapy discussed if applicable",
+          "order": 6,
           "search_terms": [
             "physiotherapy",
             "chest"
@@ -113350,20 +122961,8 @@
       "follow_up": [
         {
           "chip_id": "resp-pneumonia-followup-follow_up-1",
-          "chip_text": "follow-up documented if arranged",
-          "order": 1,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-follow_up-2",
           "chip_text": "4-6 weeks",
-          "order": 2,
+          "order": 1,
           "search_terms": [
             "four",
             "six",
@@ -113374,22 +122973,22 @@
           ]
         },
         {
-          "chip_id": "resp-pneumonia-followup-follow_up-3",
-          "chip_text": "6-8 weeks if CXR follow-up needed",
-          "order": 3,
+          "chip_id": "resp-pneumonia-followup-follow_up-2",
+          "chip_text": "6-8 weeks if imaging follow-up needed",
+          "order": 2,
           "search_terms": [
             "six",
             "eight",
-            "weeks"
+            "CXR"
           ],
           "tags": [
             "respiratory"
           ]
         },
         {
-          "chip_id": "resp-pneumonia-followup-follow_up-4",
+          "chip_id": "resp-pneumonia-followup-follow_up-3",
           "chip_text": "sooner if not improving",
-          "order": 4,
+          "order": 3,
           "search_terms": [
             "sooner",
             "worsening"
@@ -113399,12 +122998,24 @@
           ]
         },
         {
-          "chip_id": "resp-pneumonia-followup-follow_up-5",
+          "chip_id": "resp-pneumonia-followup-follow_up-4",
           "chip_text": "PRN",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "PRN",
             "as needed"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-pneumonia-followup-follow_up-5",
+          "chip_text": "sooner if fever recurs",
+          "order": 5,
+          "search_terms": [
+            "fever",
+            "recurrent"
           ],
           "tags": [
             "respiratory"
@@ -113429,9 +123040,10 @@
         },
         {
           "chip_id": "resp-pulmonary-function-review-symptoms-2",
-          "chip_text": "FEV1 reviewed",
+          "chip_text": "spirometry reviewed",
           "order": 2,
           "search_terms": [
+            "spirometry",
             "FEV1",
             "FVC"
           ],
@@ -113441,19 +123053,8 @@
         },
         {
           "chip_id": "resp-pulmonary-function-review-symptoms-3",
-          "chip_text": "FVC reviewed",
+          "chip_text": "FEV1 and FVC context reviewed if documented",
           "order": 3,
-          "search_terms": [
-            "FVC"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-4",
-          "chip_text": "FEV1/FVC ratio reviewed",
-          "order": 4,
           "search_terms": [
             "FEV1",
             "FVC",
@@ -113464,12 +123065,24 @@
           ]
         },
         {
+          "chip_id": "resp-pulmonary-function-review-symptoms-4",
+          "chip_text": "symptom correlation documented",
+          "order": 4,
+          "search_terms": [
+            "symptom",
+            "correlation"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
           "chip_id": "resp-pulmonary-function-review-symptoms-5",
-          "chip_text": "obstructive versus restrictive pattern documented",
+          "chip_text": "inhaler and medication use reviewed if relevant",
           "order": 5,
           "search_terms": [
-            "obstructive",
-            "restrictive"
+            "inhaler",
+            "medication"
           ],
           "tags": [
             "respiratory"
@@ -113477,11 +123090,11 @@
         },
         {
           "chip_id": "resp-pulmonary-function-review-symptoms-6",
-          "chip_text": "bronchodilator response reviewed if performed",
+          "chip_text": "smoking history reviewed",
           "order": 6,
           "search_terms": [
-            "bronchodilator",
-            "reversibility"
+            "smoking",
+            "cigarettes"
           ],
           "tags": [
             "respiratory"
@@ -113489,20 +123102,8 @@
         },
         {
           "chip_id": "resp-pulmonary-function-review-symptoms-7",
-          "chip_text": "DLCO reviewed if available",
-          "order": 7,
-          "search_terms": [
-            "DLCO",
-            "diffusion"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-8",
           "chip_text": "previous PFT comparison documented if available",
-          "order": 8,
+          "order": 7,
           "search_terms": [
             "previous",
             "prior",
@@ -113513,36 +123114,24 @@
           ]
         },
         {
+          "chip_id": "resp-pulmonary-function-review-symptoms-8",
+          "chip_text": "bronchodilator response reviewed if performed",
+          "order": 8,
+          "search_terms": [
+            "bronchodilator",
+            "reversibility"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
           "chip_id": "resp-pulmonary-function-review-symptoms-9",
-          "chip_text": "clinical context documented",
+          "chip_text": "DLCO reviewed if available",
           "order": 9,
           "search_terms": [
-            "clinical",
-            "context"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-10",
-          "chip_text": "symptom correlation with PFT documented",
-          "order": 10,
-          "search_terms": [
-            "symptom",
-            "correlation"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-11",
-          "chip_text": "TLC reviewed if available",
-          "order": 11,
-          "search_terms": [
-            "TLC",
-            "total lung capacity"
+            "DLCO",
+            "diffusion"
           ],
           "tags": [
             "respiratory"
@@ -113552,10 +123141,22 @@
       "relevant_negatives": [
         {
           "chip_id": "resp-pulmonary-function-review-relevant_negatives-1",
-          "chip_text": "no acute change in symptoms reported",
+          "chip_text": "no acute respiratory distress reported",
           "order": 1,
           "search_terms": [
             "acute",
+            "distress"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-pulmonary-function-review-relevant_negatives-2",
+          "chip_text": "no significant symptom change reported if applicable",
+          "order": 2,
+          "search_terms": [
+            "symptom",
             "change"
           ],
           "tags": [
@@ -113566,11 +123167,11 @@
       "exam_findings": [
         {
           "chip_id": "resp-pulmonary-function-review-exam_findings-1",
-          "chip_text": "clinical correlation documented",
+          "chip_text": "oxygen saturation documented if measured",
           "order": 1,
           "search_terms": [
-            "clinical",
-            "correlation"
+            "oxygen",
+            "SpO2"
           ],
           "tags": [
             "respiratory"
@@ -113581,7 +123182,8 @@
           "chip_text": "chest auscultation documented if assessed",
           "order": 2,
           "search_terms": [
-            "auscultation"
+            "auscultation",
+            "chest"
           ],
           "tags": [
             "respiratory"
@@ -113589,11 +123191,11 @@
         },
         {
           "chip_id": "resp-pulmonary-function-review-exam_findings-3",
-          "chip_text": "oxygen saturation documented if measured",
+          "chip_text": "clinical correlation documented",
           "order": 3,
           "search_terms": [
-            "oxygen",
-            "SpO2"
+            "clinical",
+            "correlation"
           ],
           "tags": [
             "respiratory"
@@ -113601,20 +123203,8 @@
         },
         {
           "chip_id": "resp-pulmonary-function-review-exam_findings-4",
-          "chip_text": "vitals documented if measured",
-          "order": 4,
-          "search_terms": [
-            "vitals",
-            "O2 sat"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-exam_findings-5",
           "chip_text": "respiratory rate documented if measured",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "RR",
             "respiratory"
@@ -113622,21 +123212,50 @@
           "tags": [
             "respiratory"
           ]
-        },
+        }
+      ],
+      "red_flags": [
         {
-          "chip_id": "resp-pulmonary-function-review-exam_findings-6",
-          "chip_text": "BMI documented if measured",
-          "order": 6,
+          "chip_id": "resp-pulmonary-function-review-red_flags-1",
+          "chip_text": "significant decline in FEV1",
+          "order": 1,
           "search_terms": [
-            "BMI",
-            "weight"
+            "decline",
+            "FEV1"
           ],
           "tags": [
-            "respiratory"
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-pulmonary-function-review-red_flags-2",
+          "chip_text": "worsening symptoms with declining PFT",
+          "order": 2,
+          "search_terms": [
+            "worsening",
+            "symptoms"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-pulmonary-function-review-red_flags-3",
+          "chip_text": "new obstruction or restriction pattern",
+          "order": 3,
+          "search_terms": [
+            "new",
+            "obstruction",
+            "restriction"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
           ]
         }
       ],
-      "red_flags": [],
       "investigations": [
         {
           "chip_id": "resp-pulmonary-function-review-investigations-1",
@@ -113652,21 +123271,10 @@
         },
         {
           "chip_id": "resp-pulmonary-function-review-investigations-2",
-          "chip_text": "CXR reviewed if performed",
+          "chip_text": "chest imaging reviewed if available",
           "order": 2,
           "search_terms": [
             "CXR",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-investigations-3",
-          "chip_text": "CT chest reviewed if available",
-          "order": 3,
-          "search_terms": [
             "CT",
             "chest"
           ],
@@ -113675,27 +123283,13 @@
           ]
         },
         {
-          "chip_id": "resp-pulmonary-function-review-investigations-4",
+          "chip_id": "resp-pulmonary-function-review-investigations-3",
           "chip_text": "blood gas reviewed if performed",
-          "order": 4,
+          "order": 3,
           "search_terms": [
             "blood",
             "gas",
             "ABG"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-investigations-5",
-          "chip_text": "6-minute walk test reviewed if performed",
-          "order": 5,
-          "search_terms": [
-            "six",
-            "minute",
-            "walk",
-            "6MWT"
           ],
           "tags": [
             "respiratory"
@@ -113741,20 +123335,8 @@
         },
         {
           "chip_id": "resp-pulmonary-function-review-plan_phrases-4",
-          "chip_text": "follow-up documented if arranged",
-          "order": 4,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-plan_phrases-5",
           "chip_text": "PFT follow-up interval documented if clinician decided",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "PFT",
             "interval",
@@ -113765,24 +123347,24 @@
           ]
         },
         {
-          "chip_id": "resp-pulmonary-function-review-plan_phrases-6",
-          "chip_text": "spirometry monitor plan documented if clinician decided",
-          "order": 6,
+          "chip_id": "resp-pulmonary-function-review-plan_phrases-5",
+          "chip_text": "follow-up documented if arranged",
+          "order": 5,
           "search_terms": [
-            "spirometry",
-            "monitor"
+            "follow",
+            "up"
           ],
           "tags": [
             "respiratory"
           ]
         },
         {
-          "chip_id": "resp-pulmonary-function-review-plan_phrases-7",
-          "chip_text": "safety-netting documented if discussed",
-          "order": 7,
+          "chip_id": "resp-pulmonary-function-review-plan_phrases-6",
+          "chip_text": "spirometry monitoring plan documented if clinician decided",
+          "order": 6,
           "search_terms": [
-            "safety",
-            "netting"
+            "spirometry",
+            "monitor"
           ],
           "tags": [
             "respiratory"
@@ -113846,21 +123428,8 @@
       "symptoms": [
         {
           "chip_id": "resp-sleep-apnea-symptoms-symptoms-1",
-          "chip_text": "sleep apnea symptoms",
+          "chip_text": "snoring",
           "order": 1,
-          "search_terms": [
-            "sleep",
-            "apnea",
-            "OSA"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-2",
-          "chip_text": "snoring reviewed",
-          "order": 2,
           "search_terms": [
             "snoring"
           ],
@@ -113869,12 +123438,12 @@
           ]
         },
         {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-3",
-          "chip_text": "witnessed apnoeas reviewed",
-          "order": 3,
+          "chip_id": "resp-sleep-apnea-symptoms-symptoms-2",
+          "chip_text": "witnessed apneas reviewed",
+          "order": 2,
           "search_terms": [
-            "apnoea",
             "apnea",
+            "apnoea",
             "witnessed"
           ],
           "tags": [
@@ -113882,21 +123451,22 @@
           ]
         },
         {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-4",
+          "chip_id": "resp-sleep-apnea-symptoms-symptoms-3",
           "chip_text": "daytime sleepiness reviewed",
-          "order": 4,
+          "order": 3,
           "search_terms": [
             "sleepiness",
-            "Epworth"
+            "Epworth",
+            "drowsy"
           ],
           "tags": [
             "respiratory"
           ]
         },
         {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-5",
-          "chip_text": "morning headache reviewed",
-          "order": 5,
+          "chip_id": "resp-sleep-apnea-symptoms-symptoms-4",
+          "chip_text": "morning headaches reviewed",
+          "order": 4,
           "search_terms": [
             "morning",
             "headache"
@@ -113906,9 +123476,47 @@
           ]
         },
         {
+          "chip_id": "resp-sleep-apnea-symptoms-symptoms-5",
+          "chip_text": "concentration issues reviewed",
+          "order": 5,
+          "search_terms": [
+            "concentration",
+            "focus"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
           "chip_id": "resp-sleep-apnea-symptoms-symptoms-6",
-          "chip_text": "nocturnal choking reviewed",
+          "chip_text": "sleep quality reviewed",
           "order": 6,
+          "search_terms": [
+            "sleep",
+            "quality",
+            "restless"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-sleep-apnea-symptoms-symptoms-7",
+          "chip_text": "weight and BMI context reviewed if relevant",
+          "order": 7,
+          "search_terms": [
+            "weight",
+            "BMI",
+            "obesity"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-sleep-apnea-symptoms-symptoms-8",
+          "chip_text": "nocturnal choking reviewed",
+          "order": 8,
           "search_terms": [
             "choking",
             "gasping"
@@ -113918,47 +123526,13 @@
           ]
         },
         {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-7",
-          "chip_text": "nocturia reviewed if relevant",
-          "order": 7,
-          "search_terms": [
-            "nocturia"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-8",
-          "chip_text": "fatigue and concentration reviewed",
-          "order": 8,
-          "search_terms": [
-            "fatigue",
-            "concentration"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
           "chip_id": "resp-sleep-apnea-symptoms-symptoms-9",
-          "chip_text": "relationship to sleep position reviewed if relevant",
+          "chip_text": "partner report documented if available",
           "order": 9,
           "search_terms": [
-            "position",
-            "sleep"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-10",
-          "chip_text": "partner or bed partner report documented if available",
-          "order": 10,
-          "search_terms": [
             "partner",
-            "witness"
+            "witness",
+            "bed"
           ],
           "tags": [
             "respiratory"
@@ -113968,11 +123542,11 @@
       "relevant_negatives": [
         {
           "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-1",
-          "chip_text": "no witnessed apnoea reported if applicable",
+          "chip_text": "no syncope reported",
           "order": 1,
           "search_terms": [
-            "apnoea",
-            "witnessed"
+            "syncope",
+            "faint"
           ],
           "tags": [
             "respiratory"
@@ -113980,11 +123554,11 @@
         },
         {
           "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-2",
-          "chip_text": "no excessive daytime sleepiness reported if applicable",
+          "chip_text": "no acute respiratory distress reported",
           "order": 2,
           "search_terms": [
-            "sleepiness",
-            "daytime"
+            "acute",
+            "distress"
           ],
           "tags": [
             "respiratory"
@@ -113992,23 +123566,11 @@
         },
         {
           "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-3",
-          "chip_text": "no morning headache reported",
+          "chip_text": "no nocturnal seizures reported if applicable",
           "order": 3,
           "search_terms": [
-            "morning",
-            "headache"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-4",
-          "chip_text": "no nocturnal choking reported if applicable",
-          "order": 4,
-          "search_terms": [
-            "choking",
-            "gasping"
+            "seizure",
+            "fits"
           ],
           "tags": [
             "respiratory"
@@ -114018,11 +123580,12 @@
       "exam_findings": [
         {
           "chip_id": "resp-sleep-apnea-symptoms-exam_findings-1",
-          "chip_text": "vitals documented if measured",
+          "chip_text": "BMI documented if measured",
           "order": 1,
           "search_terms": [
-            "vitals",
-            "BP"
+            "BMI",
+            "weight",
+            "height"
           ],
           "tags": [
             "respiratory"
@@ -114030,11 +123593,12 @@
         },
         {
           "chip_id": "resp-sleep-apnea-symptoms-exam_findings-2",
-          "chip_text": "BMI documented if measured",
+          "chip_text": "blood pressure documented if measured",
           "order": 2,
           "search_terms": [
-            "BMI",
-            "weight"
+            "BP",
+            "blood",
+            "pressure"
           ],
           "tags": [
             "respiratory"
@@ -114046,7 +123610,7 @@
           "order": 3,
           "search_terms": [
             "neck",
-            "collar size"
+            "collar"
           ],
           "tags": [
             "respiratory"
@@ -114066,39 +123630,80 @@
         },
         {
           "chip_id": "resp-sleep-apnea-symptoms-exam_findings-5",
-          "chip_text": "nasal examination documented if relevant",
+          "chip_text": "oxygen saturation study reviewed if performed",
           "order": 5,
           "search_terms": [
-            "nasal",
-            "obstruction"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-exam_findings-6",
-          "chip_text": "blood pressure documented if measured",
-          "order": 6,
-          "search_terms": [
-            "BP",
-            "blood",
-            "pressure"
+            "oximetry",
+            "nocturnal"
           ],
           "tags": [
             "respiratory"
           ]
         }
       ],
-      "red_flags": [],
+      "red_flags": [
+        {
+          "chip_id": "resp-sleep-apnea-symptoms-red_flags-1",
+          "chip_text": "severe daytime somnolence",
+          "order": 1,
+          "search_terms": [
+            "severe",
+            "somnolence"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-sleep-apnea-symptoms-red_flags-2",
+          "chip_text": "observed apnoeas with desaturation",
+          "order": 2,
+          "search_terms": [
+            "apnea",
+            "desaturation"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-sleep-apnea-symptoms-red_flags-3",
+          "chip_text": "respiratory failure signs if suspected",
+          "order": 3,
+          "search_terms": [
+            "respiratory",
+            "failure"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-sleep-apnea-symptoms-red_flags-4",
+          "chip_text": "driving safety concern if present",
+          "order": 4,
+          "search_terms": [
+            "driving",
+            "safety"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        }
+      ],
       "investigations": [
         {
           "chip_id": "resp-sleep-apnea-symptoms-investigations-1",
-          "chip_text": "Epworth Sleepiness Scale score documented if assessed",
+          "chip_text": "Epworth score reviewed if completed",
           "order": 1,
           "search_terms": [
             "Epworth",
-            "ESS"
+            "ESS",
+            "sleepiness"
           ],
           "tags": [
             "respiratory"
@@ -114119,24 +123724,11 @@
         },
         {
           "chip_id": "resp-sleep-apnea-symptoms-investigations-3",
-          "chip_text": "previous sleep clinic notes reviewed if available",
+          "chip_text": "oxygen saturation study reviewed if performed",
           "order": 3,
           "search_terms": [
-            "sleep",
-            "clinic"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-investigations-4",
-          "chip_text": "home sleep study reviewed if performed",
-          "order": 4,
-          "search_terms": [
-            "home",
-            "sleep",
-            "study"
+            "oxygen",
+            "oximetry"
           ],
           "tags": [
             "respiratory"
@@ -114158,44 +123750,8 @@
         },
         {
           "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-2",
-          "chip_text": "lifestyle modification discussed if applicable",
-          "order": 2,
-          "search_terms": [
-            "lifestyle",
-            "weight"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-3",
-          "chip_text": "CPAP therapy discussed if applicable",
-          "order": 3,
-          "search_terms": [
-            "CPAP",
-            "machine"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-4",
-          "chip_text": "driving advice documented if clinician discussed",
-          "order": 4,
-          "search_terms": [
-            "driving",
-            "DVLA"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-5",
           "chip_text": "referral documented if clinician decided",
-          "order": 5,
+          "order": 2,
           "search_terms": [
             "referral",
             "sleep",
@@ -114206,23 +123762,46 @@
           ]
         },
         {
-          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-6",
-          "chip_text": "weight management discussed if applicable",
-          "order": 6,
+          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-3",
+          "chip_text": "driving advice documented if clinician discussed",
+          "order": 3,
           "search_terms": [
-            "weight",
-            "diet"
+            "driving",
+            "DVLA"
           ],
           "tags": [
             "respiratory"
           ]
-        }
-      ],
-      "follow_up": [
+        },
         {
-          "chip_id": "resp-sleep-apnea-symptoms-follow_up-1",
+          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-4",
+          "chip_text": "weight management discussed if applicable",
+          "order": 4,
+          "search_terms": [
+            "weight",
+            "diet",
+            "lifestyle"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-5",
+          "chip_text": "CPAP therapy discussed if applicable",
+          "order": 5,
+          "search_terms": [
+            "CPAP",
+            "machine"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-6",
           "chip_text": "follow-up documented if arranged",
-          "order": 1,
+          "order": 6,
           "search_terms": [
             "follow",
             "up"
@@ -114232,9 +123811,24 @@
           ]
         },
         {
-          "chip_id": "resp-sleep-apnea-symptoms-follow_up-2",
+          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-7",
+          "chip_text": "sleep hygiene advice documented if discussed",
+          "order": 7,
+          "search_terms": [
+            "sleep",
+            "hygiene",
+            "advice"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "resp-sleep-apnea-symptoms-follow_up-1",
           "chip_text": "3-6 months",
-          "order": 2,
+          "order": 1,
           "search_terms": [
             "three",
             "six",
@@ -114245,9 +123839,9 @@
           ]
         },
         {
-          "chip_id": "resp-sleep-apnea-symptoms-follow_up-3",
+          "chip_id": "resp-sleep-apnea-symptoms-follow_up-2",
           "chip_text": "6-12 months if stable",
-          "order": 3,
+          "order": 2,
           "search_terms": [
             "six",
             "twelve"
@@ -114257,9 +123851,9 @@
           ]
         },
         {
-          "chip_id": "resp-sleep-apnea-symptoms-follow_up-4",
+          "chip_id": "resp-sleep-apnea-symptoms-follow_up-3",
           "chip_text": "sooner if worsening",
-          "order": 4,
+          "order": 3,
           "search_terms": [
             "sooner",
             "worsening"
@@ -114269,9 +123863,9 @@
           ]
         },
         {
-          "chip_id": "resp-sleep-apnea-symptoms-follow_up-5",
+          "chip_id": "resp-sleep-apnea-symptoms-follow_up-4",
           "chip_text": "PRN",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "PRN",
             "as needed"
@@ -114286,10 +123880,11 @@
       "symptoms": [
         {
           "chip_id": "resp-smoking-history-note-symptoms-1",
-          "chip_text": "smoking history note",
+          "chip_text": "smoking history documented",
           "order": 1,
           "search_terms": [
             "smoking",
+            "tobacco",
             "history"
           ],
           "tags": [
@@ -114298,13 +123893,13 @@
         },
         {
           "chip_id": "resp-smoking-history-note-symptoms-2",
-          "chip_text": "current smoking pattern documented",
+          "chip_text": "cigarettes per day documented",
           "order": 2,
           "search_terms": [
-            "current",
-            "former",
-            "never",
-            "pack years"
+            "cigarettes",
+            "per",
+            "day",
+            "quantity"
           ],
           "tags": [
             "respiratory"
@@ -114312,8 +123907,20 @@
         },
         {
           "chip_id": "resp-smoking-history-note-symptoms-3",
-          "chip_text": "pack years documented",
+          "chip_text": "years smoked documented",
           "order": 3,
+          "search_terms": [
+            "years",
+            "duration"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-smoking-history-note-symptoms-4",
+          "chip_text": "pack years documented if calculated",
+          "order": 4,
           "search_terms": [
             "pack",
             "years"
@@ -114323,21 +123930,60 @@
           ]
         },
         {
-          "chip_id": "resp-smoking-history-note-symptoms-4",
-          "chip_text": "age when started documented if relevant",
-          "order": 4,
+          "chip_id": "resp-smoking-history-note-symptoms-5",
+          "chip_text": "ex-smoker history documented if relevant",
+          "order": 5,
           "search_terms": [
-            "age",
-            "started"
+            "ex-smoker",
+            "former",
+            "quit"
           ],
           "tags": [
             "respiratory"
           ]
         },
         {
-          "chip_id": "resp-smoking-history-note-symptoms-5",
-          "chip_text": "quit attempts reviewed if applicable",
-          "order": 5,
+          "chip_id": "resp-smoking-history-note-symptoms-6",
+          "chip_text": "passive smoke exposure reviewed",
+          "order": 6,
+          "search_terms": [
+            "passive",
+            "secondhand"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-smoking-history-note-symptoms-7",
+          "chip_text": "occupational exposure reviewed if relevant",
+          "order": 7,
+          "search_terms": [
+            "occupational",
+            "work",
+            "exposure"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-smoking-history-note-symptoms-8",
+          "chip_text": "respiratory symptoms reviewed",
+          "order": 8,
+          "search_terms": [
+            "cough",
+            "wheeze",
+            "SOB"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-smoking-history-note-symptoms-9",
+          "chip_text": "previous quit attempts reviewed if applicable",
+          "order": 9,
           "search_terms": [
             "quit",
             "cessation",
@@ -114348,63 +123994,13 @@
           ]
         },
         {
-          "chip_id": "resp-smoking-history-note-symptoms-6",
-          "chip_text": "previous cessation methods reviewed",
-          "order": 6,
-          "search_terms": [
-            "cessation",
-            "NRT",
-            "varenicline"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-7",
-          "chip_text": "motivation to quit reviewed if applicable",
-          "order": 7,
-          "search_terms": [
-            "motivation",
-            "ready"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-8",
-          "chip_text": "passive smoke exposure reviewed if relevant",
-          "order": 8,
-          "search_terms": [
-            "passive",
-            "secondhand"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-9",
-          "chip_text": "type of tobacco use documented",
-          "order": 9,
-          "search_terms": [
-            "tobacco",
-            "cigarettes",
-            "shisha"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
           "chip_id": "resp-smoking-history-note-symptoms-10",
-          "chip_text": "amount used per day documented",
+          "chip_text": "motivation to quit reviewed if current smoker",
           "order": 10,
           "search_terms": [
-            "daily",
-            "per day",
-            "quantity"
+            "motivation",
+            "ready",
+            "change"
           ],
           "tags": [
             "respiratory"
@@ -114412,20 +124008,8 @@
         },
         {
           "chip_id": "resp-smoking-history-note-symptoms-11",
-          "chip_text": "previous quit duration documented if applicable",
+          "chip_text": "barriers to quitting discussed if applicable",
           "order": 11,
-          "search_terms": [
-            "quit",
-            "duration"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-12",
-          "chip_text": "barriers to quitting reviewed if applicable",
-          "order": 12,
           "search_terms": [
             "barriers",
             "difficulty"
@@ -114438,10 +124022,11 @@
       "relevant_negatives": [
         {
           "chip_id": "resp-smoking-history-note-relevant_negatives-1",
-          "chip_text": "no cough reported if applicable",
+          "chip_text": "no hemoptysis reported if applicable",
           "order": 1,
           "search_terms": [
-            "cough"
+            "hemoptysis",
+            "blood"
           ],
           "tags": [
             "respiratory"
@@ -114449,11 +124034,23 @@
         },
         {
           "chip_id": "resp-smoking-history-note-relevant_negatives-2",
-          "chip_text": "no shortness of breath reported if applicable",
+          "chip_text": "no unexplained weight loss reported if applicable",
           "order": 2,
           "search_terms": [
-            "SOB",
-            "breathlessness"
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-smoking-history-note-relevant_negatives-3",
+          "chip_text": "no respiratory symptoms reported if applicable",
+          "order": 3,
+          "search_terms": [
+            "cough",
+            "wheeze"
           ],
           "tags": [
             "respiratory"
@@ -114463,11 +124060,11 @@
       "exam_findings": [
         {
           "chip_id": "resp-smoking-history-note-exam_findings-1",
-          "chip_text": "vitals documented if measured",
+          "chip_text": "chest exam documented if assessed",
           "order": 1,
           "search_terms": [
-            "vitals",
-            "BP"
+            "chest",
+            "auscultation"
           ],
           "tags": [
             "respiratory"
@@ -114475,57 +124072,8 @@
         },
         {
           "chip_id": "resp-smoking-history-note-exam_findings-2",
-          "chip_text": "BMI documented if measured",
-          "order": 2,
-          "search_terms": [
-            "BMI",
-            "weight"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-exam_findings-3",
-          "chip_text": "chest auscultation documented if assessed",
-          "order": 3,
-          "search_terms": [
-            "auscultation",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-exam_findings-4",
-          "chip_text": "peripheral signs documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "peripheral",
-            "clubbing",
-            "cyanosis"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-exam_findings-5",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 5,
-          "search_terms": [
-            "RR",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-exam_findings-6",
           "chip_text": "oxygen saturation documented if measured",
-          "order": 6,
+          "order": 2,
           "search_terms": [
             "oxygen",
             "SpO2"
@@ -114535,28 +124083,105 @@
           ]
         },
         {
-          "chip_id": "resp-smoking-history-note-exam_findings-7",
+          "chip_id": "resp-smoking-history-note-exam_findings-3",
           "chip_text": "oral examination documented if assessed",
-          "order": 7,
+          "order": 3,
           "search_terms": [
             "oral",
-            "mouth",
-            "smoker"
+            "mouth"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-smoking-history-note-exam_findings-4",
+          "chip_text": "respiratory rate documented if measured",
+          "order": 4,
+          "search_terms": [
+            "RR",
+            "respiratory"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-smoking-history-note-exam_findings-5",
+          "chip_text": "blood pressure documented if measured",
+          "order": 5,
+          "search_terms": [
+            "BP",
+            "blood",
+            "pressure"
           ],
           "tags": [
             "respiratory"
           ]
         }
       ],
-      "red_flags": [],
+      "red_flags": [
+        {
+          "chip_id": "resp-smoking-history-note-red_flags-1",
+          "chip_text": "new cough with smoking history",
+          "order": 1,
+          "search_terms": [
+            "new",
+            "cough",
+            "smoker"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-smoking-history-note-red_flags-2",
+          "chip_text": "hemoptysis in smoker",
+          "order": 2,
+          "search_terms": [
+            "hemoptysis",
+            "smoker"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-smoking-history-note-red_flags-3",
+          "chip_text": "unexplained weight loss in smoker",
+          "order": 3,
+          "search_terms": [
+            "weight",
+            "loss"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        }
+      ],
       "investigations": [
         {
           "chip_id": "resp-smoking-history-note-investigations-1",
-          "chip_text": "CO monitoring discussed if available",
+          "chip_text": "chest imaging reviewed if available",
           "order": 1,
           "search_terms": [
-            "CO",
-            "carbon monoxide"
+            "CXR",
+            "chest"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-smoking-history-note-investigations-2",
+          "chip_text": "spirometry reviewed if performed",
+          "order": 2,
+          "search_terms": [
+            "spirometry",
+            "PFT"
           ],
           "tags": [
             "respiratory"
@@ -114578,11 +124203,11 @@
         },
         {
           "chip_id": "resp-smoking-history-note-plan_phrases-2",
-          "chip_text": "smoking cessation counselling documented if discussed",
+          "chip_text": "smoking cessation advice documented if discussed",
           "order": 2,
           "search_terms": [
             "cessation",
-            "counselling"
+            "advice"
           ],
           "tags": [
             "respiratory"
@@ -114590,13 +124215,12 @@
         },
         {
           "chip_id": "resp-smoking-history-note-plan_phrases-3",
-          "chip_text": "NRT or pharmacotherapy plan documented if clinician decided",
+          "chip_text": "cessation support referral documented if clinician decided",
           "order": 3,
           "search_terms": [
-            "NRT",
-            "patch",
-            "gum",
-            "varenicline"
+            "referral",
+            "cessation",
+            "stop smoking"
           ],
           "tags": [
             "respiratory"
@@ -114604,20 +124228,8 @@
         },
         {
           "chip_id": "resp-smoking-history-note-plan_phrases-4",
-          "chip_text": "referral to smoking cessation service documented if clinician decided",
-          "order": 4,
-          "search_terms": [
-            "cessation",
-            "service"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-plan_phrases-5",
           "chip_text": "follow-up documented if arranged",
-          "order": 5,
+          "order": 4,
           "search_terms": [
             "follow",
             "up"
@@ -114627,37 +124239,13 @@
           ]
         },
         {
-          "chip_id": "resp-smoking-history-note-plan_phrases-6",
-          "chip_text": "behavioural support discussed if applicable",
-          "order": 6,
-          "search_terms": [
-            "behavioural",
-            "support"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-plan_phrases-7",
-          "chip_text": "nicotine replacement therapy plan documented if clinician decided",
-          "order": 7,
+          "chip_id": "resp-smoking-history-note-plan_phrases-5",
+          "chip_text": "NRT or pharmacotherapy plan documented if clinician decided",
+          "order": 5,
           "search_terms": [
             "NRT",
-            "nicotine",
-            "patch"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-plan_phrases-8",
-          "chip_text": "relapse prevention discussed if applicable",
-          "order": 8,
-          "search_terms": [
-            "relapse",
-            "prevention"
+            "patch",
+            "varenicline"
           ],
           "tags": [
             "respiratory"
@@ -114733,11 +124321,11 @@
         },
         {
           "chip_id": "resp-wheeze-symptoms-2",
-          "chip_text": "onset documented",
+          "chip_text": "duration documented",
           "order": 2,
           "search_terms": [
-            "onset",
-            "timing"
+            "duration",
+            "how long"
           ],
           "tags": [
             "respiratory"
@@ -114745,11 +124333,11 @@
         },
         {
           "chip_id": "resp-wheeze-symptoms-3",
-          "chip_text": "frequency documented",
+          "chip_text": "episodic pattern reviewed",
           "order": 3,
           "search_terms": [
-            "frequency",
-            "how often"
+            "episodic",
+            "intermittent"
           ],
           "tags": [
             "respiratory"
@@ -114770,10 +124358,10 @@
         },
         {
           "chip_id": "resp-wheeze-symptoms-5",
-          "chip_text": "associated dyspnea reviewed",
+          "chip_text": "cough and shortness of breath reviewed",
           "order": 5,
           "search_terms": [
-            "dyspnea",
+            "cough",
             "SOB"
           ],
           "tags": [
@@ -114782,8 +124370,32 @@
         },
         {
           "chip_id": "resp-wheeze-symptoms-6",
-          "chip_text": "nocturnal symptoms reviewed",
+          "chip_text": "chest tightness reviewed",
           "order": 6,
+          "search_terms": [
+            "chest",
+            "tightness"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-wheeze-symptoms-7",
+          "chip_text": "inhaler use reviewed if relevant",
+          "order": 7,
+          "search_terms": [
+            "inhaler",
+            "puffer"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-wheeze-symptoms-8",
+          "chip_text": "nocturnal symptoms reviewed",
+          "order": 8,
           "search_terms": [
             "nocturnal",
             "night"
@@ -114793,39 +124405,12 @@
           ]
         },
         {
-          "chip_id": "resp-wheeze-symptoms-7",
-          "chip_text": "temporal pattern documented",
-          "order": 7,
-          "search_terms": [
-            "pattern",
-            "episodic",
-            "persistent"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-symptoms-8",
-          "chip_text": "response to bronchodilator reviewed",
-          "order": 8,
-          "search_terms": [
-            "response",
-            "bronchodilator",
-            "inhaler"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
           "chip_id": "resp-wheeze-symptoms-9",
-          "chip_text": "vocal cord dysfunction considered if relevant",
+          "chip_text": "response to bronchodilator reviewed if applicable",
           "order": 9,
           "search_terms": [
-            "vocal",
-            "cord",
-            "VCD"
+            "response",
+            "bronchodilator"
           ],
           "tags": [
             "respiratory"
@@ -114835,11 +124420,11 @@
       "relevant_negatives": [
         {
           "chip_id": "resp-wheeze-relevant_negatives-1",
-          "chip_text": "no stridor reported",
+          "chip_text": "no severe breathlessness reported",
           "order": 1,
           "search_terms": [
-            "stridor",
-            "upper airway"
+            "severe",
+            "breathlessness"
           ],
           "tags": [
             "respiratory"
@@ -114847,20 +124432,8 @@
         },
         {
           "chip_id": "resp-wheeze-relevant_negatives-2",
-          "chip_text": "no hemoptysis reported",
-          "order": 2,
-          "search_terms": [
-            "hemoptysis",
-            "blood"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-relevant_negatives-3",
           "chip_text": "no chest pain reported",
-          "order": 3,
+          "order": 2,
           "search_terms": [
             "chest",
             "pain"
@@ -114870,23 +124443,24 @@
           ]
         },
         {
-          "chip_id": "resp-wheeze-relevant_negatives-4",
-          "chip_text": "no fever reported",
-          "order": 4,
+          "chip_id": "resp-wheeze-relevant_negatives-3",
+          "chip_text": "no hemoptysis reported",
+          "order": 3,
           "search_terms": [
-            "fever"
+            "hemoptysis",
+            "blood"
           ],
           "tags": [
             "respiratory"
           ]
         },
         {
-          "chip_id": "resp-wheeze-relevant_negatives-6",
-          "chip_text": "no choking or foreign body sensation reported",
-          "order": 6,
+          "chip_id": "resp-wheeze-relevant_negatives-4",
+          "chip_text": "no stridor reported",
+          "order": 4,
           "search_terms": [
-            "choking",
-            "foreign"
+            "stridor",
+            "upper airway"
           ],
           "tags": [
             "respiratory"
@@ -114896,11 +124470,11 @@
       "exam_findings": [
         {
           "chip_id": "resp-wheeze-exam_findings-1",
-          "chip_text": "vitals documented if measured",
+          "chip_text": "respiratory rate documented if measured",
           "order": 1,
           "search_terms": [
-            "vitals",
-            "O2 sat"
+            "RR",
+            "respiratory"
           ],
           "tags": [
             "respiratory"
@@ -114908,56 +124482,8 @@
         },
         {
           "chip_id": "resp-wheeze-exam_findings-2",
-          "chip_text": "chest auscultation documented if assessed",
-          "order": 2,
-          "search_terms": [
-            "auscultation",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-exam_findings-3",
-          "chip_text": "wheeze character documented if assessed",
-          "order": 3,
-          "search_terms": [
-            "expiratory",
-            "inspiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-exam_findings-4",
-          "chip_text": "air entry documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "air",
-            "entry"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-exam_findings-5",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 5,
-          "search_terms": [
-            "respiratory",
-            "rate"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-exam_findings-6",
           "chip_text": "oxygen saturation documented if measured",
-          "order": 6,
+          "order": 2,
           "search_terms": [
             "oxygen",
             "SpO2"
@@ -114967,9 +124493,46 @@
           ]
         },
         {
-          "chip_id": "resp-wheeze-exam_findings-7",
-          "chip_text": "peak flow documented if measured",
-          "order": 7,
+          "chip_id": "resp-wheeze-exam_findings-3",
+          "chip_text": "wheeze documented if assessed",
+          "order": 3,
+          "search_terms": [
+            "wheeze",
+            "expiratory",
+            "inspiratory"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-wheeze-exam_findings-4",
+          "chip_text": "chest auscultation documented if assessed",
+          "order": 4,
+          "search_terms": [
+            "auscultation",
+            "chest"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-wheeze-exam_findings-5",
+          "chip_text": "air entry documented if assessed",
+          "order": 5,
+          "search_terms": [
+            "air",
+            "entry"
+          ],
+          "tags": [
+            "respiratory"
+          ]
+        },
+        {
+          "chip_id": "resp-wheeze-exam_findings-6",
+          "chip_text": "peak flow recorded if measured",
+          "order": 6,
           "search_terms": [
             "peak",
             "flow",
@@ -114980,27 +124543,81 @@
           ]
         },
         {
-          "chip_id": "resp-wheeze-exam_findings-8",
-          "chip_text": "pulsus paradoxus documented if measured",
-          "order": 8,
+          "chip_id": "resp-wheeze-exam_findings-7",
+          "chip_text": "work of breathing documented if assessed",
+          "order": 7,
           "search_terms": [
-            "pulsus",
-            "paradoxus"
+            "work",
+            "breathing"
           ],
           "tags": [
             "respiratory"
           ]
         }
       ],
-      "red_flags": [],
+      "red_flags": [
+        {
+          "chip_id": "resp-wheeze-red_flags-1",
+          "chip_text": "severe breathlessness or respiratory distress",
+          "order": 1,
+          "search_terms": [
+            "severe",
+            "distress"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-wheeze-red_flags-2",
+          "chip_text": "oxygen saturation below baseline",
+          "order": 2,
+          "search_terms": [
+            "low",
+            "oxygen"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-wheeze-red_flags-3",
+          "chip_text": "silent chest",
+          "order": 3,
+          "search_terms": [
+            "silent",
+            "chest",
+            "no wheeze"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        },
+        {
+          "chip_id": "resp-wheeze-red_flags-4",
+          "chip_text": "cyanosis",
+          "order": 4,
+          "search_terms": [
+            "cyanosis"
+          ],
+          "tags": [
+            "respiratory",
+            "high_safety"
+          ]
+        }
+      ],
       "investigations": [
         {
           "chip_id": "resp-wheeze-investigations-1",
-          "chip_text": "CXR reviewed if performed",
+          "chip_text": "peak flow recorded if measured",
           "order": 1,
           "search_terms": [
-            "CXR",
-            "chest"
+            "peak",
+            "flow",
+            "PEFR"
           ],
           "tags": [
             "respiratory"
@@ -115008,21 +124625,8 @@
         },
         {
           "chip_id": "resp-wheeze-investigations-2",
-          "chip_text": "peak flow diary reviewed if available",
+          "chip_text": "spirometry reviewed if available",
           "order": 2,
-          "search_terms": [
-            "peak",
-            "flow",
-            "diary"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-investigations-3",
-          "chip_text": "spirometry reviewed if performed",
-          "order": 3,
           "search_terms": [
             "spirometry",
             "PFT"
@@ -115071,11 +124675,11 @@
         },
         {
           "chip_id": "resp-wheeze-plan_phrases-4",
-          "chip_text": "referral documented if clinician decided",
+          "chip_text": "follow-up documented if arranged",
           "order": 4,
           "search_terms": [
-            "referral",
-            "respiratory"
+            "follow",
+            "up"
           ],
           "tags": [
             "respiratory"
@@ -115083,7 +124687,7 @@
         },
         {
           "chip_id": "resp-wheeze-plan_phrases-5",
-          "chip_text": "symptom diary recommended if discussed",
+          "chip_text": "symptom diary discussed if applicable",
           "order": 5,
           "search_terms": [
             "diary",

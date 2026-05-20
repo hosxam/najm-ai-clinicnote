@@ -4198,3 +4198,364 @@ resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function
 resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-exam_findings-4,exam_findings,respiratory rate documented if measured,4,"RR, respiratory",respiratory
 resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-investigations-3,investigations,blood gas reviewed if performed,3,"blood, gas, ABG",respiratory
 resp-pulmonary-function-review,Respiratory / Pulmonology,resp-pulmonary-function-review-plan_phrases-6,plan_phrases,spirometry monitoring plan documented if clinician decided,6,"spirometry, monitor",respiratory
+gastro-gerd,Gastroenterology,gastro-gerd-symptoms-1,symptoms,reflux symptoms,1,"reflux, GERD, acid",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-symptoms-2,symptoms,heartburn,2,"heartburn, burning",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-symptoms-3,symptoms,regurgitation,3,regurgitation,gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-symptoms-4,symptoms,epigastric discomfort,4,"epigastric, discomfort, pain",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-symptoms-5,symptoms,post-prandial symptoms documented,5,"postprandial, after, meals",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-symptoms-6,symptoms,nocturnal symptoms reviewed,6,"nocturnal, night, lying",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-symptoms-7,symptoms,trigger foods reviewed,7,"trigger, food, spicy, fatty",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-symptoms-8,symptoms,medication use reviewed,8,"medication, PPI, antacid",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-relevant_negatives-1,relevant_negatives,no dysphagia reported,1,"dysphagia, swallowing",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-relevant_negatives-2,relevant_negatives,no odynophagia reported,2,"odynophagia, painful, swallowing",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-relevant_negatives-3,relevant_negatives,no weight loss reported,3,"weight, loss",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-relevant_negatives-4,relevant_negatives,no vomiting blood reported,4,"vomiting, blood, hematemesis",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-relevant_negatives-5,relevant_negatives,no black stools reported,5,"black, stools, melena",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-relevant_negatives-6,relevant_negatives,no persistent vomiting reported,6,"persistent, vomiting",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, exam",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-exam_findings-2,exam_findings,epigastric tenderness documented if assessed,2,"epigastric, tenderness",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-exam_findings-3,exam_findings,vitals documented if measured,3,"vitals, BP, pulse",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-exam_findings-4,exam_findings,general appearance documented if assessed,4,"appearance, well",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-red_flags-1,red_flags,dysphagia or odynophagia,1,"dysphagia, odynophagia","gastroenterology,high_safety"
+gastro-gerd,Gastroenterology,gastro-gerd-red_flags-2,red_flags,unexplained weight loss,2,"weight, loss","gastroenterology,high_safety"
+gastro-gerd,Gastroenterology,gastro-gerd-red_flags-3,red_flags,gastrointestinal bleeding,3,"bleeding, hematemesis, melena","gastroenterology,high_safety"
+gastro-gerd,Gastroenterology,gastro-gerd-red_flags-4,red_flags,persistent vomiting,4,"vomiting, persistent","gastroenterology,high_safety"
+gastro-gerd,Gastroenterology,gastro-gerd-red_flags-5,red_flags,epigastric mass,5,"mass, epigastric","gastroenterology,high_safety"
+gastro-gerd,Gastroenterology,gastro-gerd-red_flags-6,red_flags,iron deficiency anaemia,6,"anaemia, IDA","gastroenterology,high_safety"
+gastro-gerd,Gastroenterology,gastro-gerd-investigations-1,investigations,previous endoscopy report reviewed if available,1,"endoscopy, OGD, EGD",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-investigations-2,investigations,previous imaging reviewed if available,2,"imaging, barium",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-investigations-3,investigations,blood tests reviewed if ordered,3,"blood, FBC, iron",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-plan_phrases-2,plan_phrases,lifestyle modification discussed if applicable,2,"lifestyle, diet, weight",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-plan_phrases-3,plan_phrases,medication plan documented if clinician decided,3,"medication, PPI, antacid",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-plan_phrases-4,plan_phrases,safety-netting documented if discussed,4,"safety, netting",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-follow_up-1,follow_up,4-6 weeks,1,"four, six, weeks",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-follow_up-2,follow_up,6-8 weeks,2,"six, eight, weeks",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-follow_up-4,follow_up,PRN,4,"PRN, as needed",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-symptoms-1,symptoms,abdominal pain,1,"abdominal, pain, stomach ache",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-symptoms-2,symptoms,location documented,2,"location, site, quadrant",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-symptoms-3,symptoms,onset and duration documented,3,"onset, duration",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-symptoms-4,symptoms,character documented,4,"character, colicky, sharp, dull",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-symptoms-5,symptoms,severity documented,5,"severity, intensity",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-symptoms-6,symptoms,radiation reviewed,6,"radiation, referred",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-symptoms-7,symptoms,aggravating and relieving factors reviewed,7,"aggrevating, relieving, food",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-symptoms-8,symptoms,associated nausea or vomiting reviewed,8,"nausea, vomiting",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-symptoms-9,symptoms,bowel habit reviewed,9,"bowel, habit, stool",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-relevant_negatives-1,relevant_negatives,no fever reported,1,"fever, temperature",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-relevant_negatives-2,relevant_negatives,no vomiting blood reported,2,"hematemesis, blood",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-relevant_negatives-3,relevant_negatives,no black stools reported,3,"melena, black, stool",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-relevant_negatives-4,relevant_negatives,no unintentional weight loss reported,4,"weight, loss",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-relevant_negatives-5,relevant_negatives,no jaundice reported,5,"jaundice, yellow",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, exam, palpation",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-exam_findings-2,exam_findings,tenderness documented if assessed,2,"tenderness, guarding",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-exam_findings-3,exam_findings,bowel sounds documented if assessed,3,"bowel, sounds",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-exam_findings-4,exam_findings,vitals documented if measured,4,"vitals, BP, pulse, temp",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-exam_findings-5,exam_findings,general appearance documented if assessed,5,"appearance, distress",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-red_flags-1,red_flags,severe or worsening pain,1,"severe, worsening","gastroenterology,high_safety"
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-red_flags-2,red_flags,peritoneal signs if assessed,2,"peritoneal, guarding, rigidity","gastroenterology,high_safety"
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-red_flags-3,red_flags,haematemesis or melena,3,"hematemesis, melena, bleeding","gastroenterology,high_safety"
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-red_flags-4,red_flags,unexplained weight loss,4,"weight, loss","gastroenterology,high_safety"
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-red_flags-5,red_flags,jaundice,5,"jaundice, icterus","gastroenterology,high_safety"
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-red_flags-6,red_flags,abdominal mass,6,"mass, palpable","gastroenterology,high_safety"
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-red_flags-7,red_flags,fever with abdominal pain,7,"fever, infection","gastroenterology,high_safety"
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-investigations-1,investigations,blood tests reviewed if ordered,1,"blood, FBC, LFT, CRP",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-investigations-2,investigations,abdominal imaging reviewed if available,2,"ultrasound, CT, X-ray",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-investigations-3,investigations,previous gastroenterology records reviewed if available,3,"previous, records",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, gastroenterology",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-follow_up-1,follow_up,1-2 weeks,1,"one, two, weeks",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-follow_up-2,follow_up,2-4 weeks,2,"two, four, weeks",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-follow_up-4,follow_up,PRN,4,"PRN, as needed",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-symptoms-1,symptoms,IBS symptoms,1,"IBS, irritable, bowel",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-symptoms-2,symptoms,abdominal pain reviewed,2,"abdominal, pain, cramping",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-symptoms-3,symptoms,bloating reviewed,3,"bloating, distension",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-symptoms-4,symptoms,bowel habit pattern documented,4,"bowel, habit, alternating",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-symptoms-5,symptoms,constipation reviewed,5,constipation,gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-symptoms-6,symptoms,diarrhoea reviewed,6,"diarrhoea, diarrhea",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-symptoms-7,symptoms,urgency reviewed,7,"urgency, bowel",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-symptoms-8,symptoms,straining reviewed,8,"straining, incomplete, evacuation",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-symptoms-9,symptoms,symptom triggers reviewed,9,"trigger, food, stress",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-relevant_negatives-1,relevant_negatives,no rectal bleeding reported,1,"rectal, bleeding, PR",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-relevant_negatives-2,relevant_negatives,no unintentional weight loss reported,2,"weight, loss",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-relevant_negatives-3,relevant_negatives,no nocturnal symptoms reported if applicable,3,"nocturnal, night",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-relevant_negatives-4,relevant_negatives,no fever reported,4,fever,gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, exam",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-exam_findings-2,exam_findings,abdominal tenderness documented if assessed,2,tenderness,gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-exam_findings-3,exam_findings,general appearance documented if assessed,3,"appearance, well",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-exam_findings-4,exam_findings,BMI documented if measured,4,"BMI, weight",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-red_flags-1,red_flags,rectal bleeding,1,"rectal, bleeding","gastroenterology,high_safety"
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-red_flags-2,red_flags,unexplained weight loss,2,"weight, loss","gastroenterology,high_safety"
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-red_flags-3,red_flags,nocturnal symptoms,3,"nocturnal, night","gastroenterology,high_safety"
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-red_flags-4,red_flags,family history of colorectal cancer,4,"family, history, CRC","gastroenterology,high_safety"
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-red_flags-5,red_flags,onset after age 50,5,"age, older, new onset","gastroenterology,high_safety"
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-red_flags-6,red_flags,iron deficiency anaemia,6,"anaemia, IDA","gastroenterology,high_safety"
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-investigations-1,investigations,blood tests reviewed if ordered,1,"blood, FBC, CRP, coeliac",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-investigations-2,investigations,stool studies reviewed if ordered,2,"stool, calprotectin, culture",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-investigations-3,investigations,previous gastroenterology records reviewed if available,3,"previous, records",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-plan_phrases-2,plan_phrases,lifestyle and dietary modification discussed if applicable,2,"lifestyle, diet, FODMAP",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-plan_phrases-3,plan_phrases,medication plan documented if clinician decided,3,"medication, antispasmodic",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-plan_phrases-4,plan_phrases,safety-netting documented if discussed,4,"safety, netting",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-plan_phrases-5,plan_phrases,referral documented if clinician decided,5,"referral, gastroenterology",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-follow_up-1,follow_up,4-6 weeks,1,"four, six, weeks",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-follow_up-2,follow_up,6-8 weeks,2,"six, eight, weeks",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-follow_up-4,follow_up,PRN,4,"PRN, as needed",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-symptoms-1,symptoms,constipation,1,constipation,gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-symptoms-2,symptoms,bowel frequency documented,2,"frequency, how often, bowel",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-symptoms-3,symptoms,stool consistency documented,3,"consistency, Bristol, hard",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-symptoms-4,symptoms,straining documented,4,"straining, difficulty",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-symptoms-5,symptoms,sensation of incomplete evacuation reviewed,5,"incomplete, evacuation",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-symptoms-6,symptoms,laxative use reviewed,6,"laxative, medication",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-symptoms-7,symptoms,dietary fibre and fluid intake reviewed,7,"fibre, fluid, water",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-symptoms-8,symptoms,impact on everyday life documented,8,"impact, daily, QOL",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-relevant_negatives-1,relevant_negatives,no rectal bleeding reported,1,"rectal, bleeding",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-relevant_negatives-2,relevant_negatives,no unintentional weight loss reported,2,"weight, loss",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-relevant_negatives-3,relevant_negatives,no abdominal pain reported if applicable,3,"abdominal, pain",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-relevant_negatives-4,relevant_negatives,no vomiting reported,4,vomiting,gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, exam",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-exam_findings-2,exam_findings,abdominal distension documented if assessed,2,"distension, bloating",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-exam_findings-3,exam_findings,rectal examination documented if assessed,3,"rectal, PR, digital",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-exam_findings-4,exam_findings,general appearance documented if assessed,4,appearance,gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-red_flags-1,red_flags,new onset after age 50,1,"new, onset, age","gastroenterology,high_safety"
+gastro-constipation,Gastroenterology,gastro-constipation-red_flags-2,red_flags,rectal bleeding with constipation,2,"bleeding, PR","gastroenterology,high_safety"
+gastro-constipation,Gastroenterology,gastro-constipation-red_flags-3,red_flags,unexplained weight loss,3,"weight, loss","gastroenterology,high_safety"
+gastro-constipation,Gastroenterology,gastro-constipation-red_flags-4,red_flags,family history of colorectal cancer,4,"family, CRC","gastroenterology,high_safety"
+gastro-constipation,Gastroenterology,gastro-constipation-red_flags-5,red_flags,acute abdominal distension,5,"acute, distension, obstruction","gastroenterology,high_safety"
+gastro-constipation,Gastroenterology,gastro-constipation-investigations-1,investigations,blood tests reviewed if ordered,1,"blood, FBC, TFT, calcium",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-investigations-2,investigations,previous gastroenterology records reviewed if available,2,"previous, records",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-plan_phrases-2,plan_phrases,lifestyle and dietary advice documented if discussed,2,"lifestyle, fibre, fluid",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-plan_phrases-3,plan_phrases,medication plan documented if clinician decided,3,"laxative, medication",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-plan_phrases-4,plan_phrases,safety-netting documented if discussed,4,"safety, netting",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-follow_up-1,follow_up,2-4 weeks,1,"two, four, weeks",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-follow_up-2,follow_up,4-6 weeks,2,"four, six, weeks",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-follow_up-4,follow_up,PRN,4,"PRN, as needed",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-symptoms-1,symptoms,diarrhoea,1,"diarrhoea, diarrhea, loose stools",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-symptoms-2,symptoms,onset and duration documented,2,"onset, duration, acute, chronic",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-symptoms-3,symptoms,frequency documented,3,"frequency, how often",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-symptoms-4,symptoms,stool character documented,4,"character, watery, bloody",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-symptoms-5,symptoms,urgency reviewed,5,"urgency, bowel",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-symptoms-6,symptoms,associated abdominal pain reviewed,6,"abdominal, pain, cramping",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-symptoms-7,symptoms,nausea or vomiting reviewed,7,"nausea, vomiting",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-symptoms-8,symptoms,fever reviewed,8,"fever, temperature",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-symptoms-9,symptoms,travel history reviewed if relevant,9,"travel, foreign",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-symptoms-10,symptoms,medication history reviewed if relevant,10,"medication, antibiotic",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-relevant_negatives-1,relevant_negatives,no rectal bleeding reported,1,"rectal, bleeding, PR",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-relevant_negatives-2,relevant_negatives,no unintentional weight loss reported,2,"weight, loss",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-relevant_negatives-3,relevant_negatives,no nocturnal symptoms reported if applicable,3,"nocturnal, night",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, exam",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-exam_findings-2,exam_findings,abdominal tenderness documented if assessed,2,tenderness,gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-exam_findings-3,exam_findings,vitals documented if measured,3,"vitals, BP, pulse, temp",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-exam_findings-4,exam_findings,general appearance documented if assessed,4,appearance,gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-exam_findings-5,exam_findings,hydration assessment documented if assessed,5,"hydration, mucous, turgor",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-red_flags-1,red_flags,bloody diarrhoea,1,"bloody, dysentery","gastroenterology,high_safety"
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-red_flags-2,red_flags,severe dehydration,2,"dehydration, dry, turgor","gastroenterology,high_safety"
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-red_flags-3,red_flags,persistent diarrhoea over 6 weeks,3,"persistent, chronic","gastroenterology,high_safety"
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-red_flags-4,red_flags,unexplained weight loss,4,"weight, loss","gastroenterology,high_safety"
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-red_flags-5,red_flags,nocturnal symptoms,5,"nocturnal, night","gastroenterology,high_safety"
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-investigations-1,investigations,stool studies reviewed if ordered,1,"stool, culture, MC+S",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-investigations-2,investigations,blood tests reviewed if ordered,2,"blood, FBC, CRP, U+E",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-investigations-3,investigations,previous records reviewed if available,3,"previous, records",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, gastroenterology",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-follow_up-1,follow_up,1-2 weeks,1,"one, two, weeks",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-follow_up-2,follow_up,2-4 weeks,2,"two, four, weeks",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-follow_up-4,follow_up,PRN,4,"PRN, as needed",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-symptoms-1,symptoms,rectal bleeding,1,"rectal, bleeding, PR, blood",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-symptoms-2,symptoms,amount and colour documented,2,"amount, colour, bright, dark",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-symptoms-3,symptoms,frequency documented,3,"frequency, how often",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-symptoms-4,symptoms,associated pain reviewed,4,"pain, anal",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-symptoms-5,symptoms,bowel habit change reviewed,5,"bowel, habit, change",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-symptoms-6,symptoms,weight loss reviewed,6,"weight, loss",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-symptoms-7,symptoms,family history of colorectal cancer reviewed,7,"family, CRC, bowel cancer",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-symptoms-8,symptoms,anticoagulant use reviewed if relevant,8,"anticoagulant, aspirin, warfarin",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-relevant_negatives-1,relevant_negatives,no melena reported if relevant,1,"melena, black, tarry",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-relevant_negatives-2,relevant_negatives,no haematemesis reported,2,"hematemesis, vomiting, blood",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-relevant_negatives-3,relevant_negatives,no significant weight loss reported if applicable,3,"weight, loss",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-relevant_negatives-4,relevant_negatives,no abdominal mass reported,4,"mass, palpable",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, exam",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-exam_findings-2,exam_findings,rectal examination documented if assessed,2,"rectal, PR, DRE",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-exam_findings-3,exam_findings,vitals documented if measured,3,"vitals, BP, pulse",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-exam_findings-4,exam_findings,general appearance documented if assessed,4,"appearance, pale",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-red_flags-1,red_flags,haemodynamic instability if assessed,1,"haemodynamic, unstable, BP","gastroenterology,high_safety"
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-red_flags-2,red_flags,significant or persistent bleeding,2,"persistent, significant","gastroenterology,high_safety"
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-red_flags-3,red_flags,weight loss with rectal bleeding,3,"weight, loss","gastroenterology,high_safety"
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-red_flags-4,red_flags,family history of colorectal cancer,4,"family, CRC","gastroenterology,high_safety"
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-red_flags-5,red_flags,age over 50 with new bleeding,5,"age, over 50, new","gastroenterology,high_safety"
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-red_flags-6,red_flags,change in bowel habit with bleeding,6,"change, bowel, habit","gastroenterology,high_safety"
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-investigations-1,investigations,blood tests reviewed if ordered,1,"blood, FBC, coagulation, iron",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-investigations-2,investigations,previous endoscopy reports reviewed if available,2,"colonoscopy, sigmoidoscopy",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, gastroenterology, colonoscopy",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-follow_up-1,follow_up,2-4 weeks,1,"two, four, weeks",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-follow_up-2,follow_up,4-6 weeks,2,"four, six, weeks",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-follow_up-4,follow_up,PRN,4,"PRN, as needed",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-symptoms-1,symptoms,liver enzyme review,1,"LFT, liver, enzymes",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-symptoms-2,symptoms,AST and ALT reviewed,2,"AST, ALT, transaminases",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-symptoms-3,symptoms,ALP and GGT reviewed,3,"ALP, GGT, cholestatic",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-symptoms-4,symptoms,bilirubin reviewed,4,"bilirubin, jaundice",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-symptoms-5,symptoms,symptoms reviewed,5,"symptoms, fatigue, jaundice",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-symptoms-6,symptoms,alcohol history reviewed if relevant,6,"alcohol, drinking",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-symptoms-7,symptoms,medication history reviewed if relevant,7,"medication, statin, paracetamol",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-exam_findings-1,exam_findings,vitals documented if measured,1,"vitals, BP, pulse",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-exam_findings-2,exam_findings,abdominal examination documented if assessed,2,"abdominal, exam",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-exam_findings-3,exam_findings,hepatomegaly documented if assessed,3,"hepatomegaly, liver, enlarged",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-exam_findings-4,exam_findings,jaundice documented if present,4,"jaundice, icterus, sclera",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-red_flags-1,red_flags,significant transaminitis,1,"transaminitis, high, ALT, AST","gastroenterology,high_safety"
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-red_flags-2,red_flags,obstructive LFT pattern,2,"obstructive, ALP, GGT","gastroenterology,high_safety"
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-red_flags-3,red_flags,jaundice,3,"jaundice, icterus","gastroenterology,high_safety"
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-red_flags-4,red_flags,right upper quadrant pain,4,"RUQ, pain","gastroenterology,high_safety"
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-investigations-1,investigations,previous LFT records reviewed if available,1,"previous, LFT, trend",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-investigations-2,investigations,abdominal imaging reviewed if available,2,"ultrasound, liver, CT",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-investigations-3,investigations,viral hepatitis serology reviewed if ordered,3,"hepatitis, B, C, serology",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-plan_phrases-2,plan_phrases,repeat testing interval documented if clinician decided,2,"repeat, LFT, interval",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, gastroenterology, hepatology",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-follow_up-1,follow_up,4-6 weeks,1,"four, six, weeks",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-follow_up-2,follow_up,3 months,2,"three, months",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-follow_up-4,follow_up,PRN,4,"PRN, as needed",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-symptoms-1,symptoms,jaundice,1,"jaundice, icterus, yellow",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-symptoms-2,symptoms,onset and duration documented,2,"onset, duration, acute",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-symptoms-3,symptoms,colour of urine and stool reviewed,3,"urine, dark, stool, pale",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-symptoms-4,symptoms,pruritus reviewed,4,"pruritus, itching",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-symptoms-5,symptoms,abdominal pain reviewed,5,"abdominal, pain, RUQ",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-symptoms-6,symptoms,weight loss reviewed,6,"weight, loss",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-symptoms-7,symptoms,alcohol history reviewed,7,alcohol,gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-symptoms-8,symptoms,medication history reviewed if relevant,8,"medication, hepatotoxic",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-symptoms-9,symptoms,travel history reviewed if relevant,9,"travel, hepatitis",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-relevant_negatives-1,relevant_negatives,no significant abdominal pain reported if applicable,1,"pain, abdominal",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-relevant_negatives-2,relevant_negatives,no fever reported if applicable,2,fever,gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-relevant_negatives-3,relevant_negatives,no haematemesis reported,3,"hematemesis, bleeding",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-exam_findings-1,exam_findings,scleral icterus documented if assessed,1,"scleral, icterus, eyes",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-exam_findings-2,exam_findings,abdominal examination documented if assessed,2,"abdominal, exam",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-exam_findings-3,exam_findings,hepatomegaly documented if assessed,3,"hepatomegaly, liver",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-exam_findings-4,exam_findings,vitals documented if measured,4,"vitals, BP, pulse, temp",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-red_flags-1,red_flags,rapidly rising bilirubin,1,"rapid, rising, bilirubin","gastroenterology,high_safety"
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-red_flags-2,red_flags,signs of liver failure if assessed,2,"liver, failure, ascites, encephalopathy","gastroenterology,high_safety"
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-red_flags-3,red_flags,right upper quadrant tenderness,3,"RUQ, tenderness","gastroenterology,high_safety"
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-red_flags-4,red_flags,fever with jaundice,4,"fever, cholangitis","gastroenterology,high_safety"
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-red_flags-5,red_flags,unexplained weight loss,5,"weight, loss","gastroenterology,high_safety"
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-red_flags-6,red_flags,palpable gallbladder,6,"gallbladder, palpable, Courvoisier","gastroenterology,high_safety"
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-investigations-1,investigations,LFT and bilirubin reviewed,1,"LFT, bilirubin, ALT, ALP",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-investigations-2,investigations,abdominal imaging reviewed if available,2,"ultrasound, CT, MRCP",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-investigations-3,investigations,viral hepatitis serology reviewed if ordered,3,"hepatitis, A, B, C, E",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, gastroenterology, hepatology",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-follow_up-1,follow_up,1-2 weeks,1,"one, two, weeks",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-follow_up-2,follow_up,2-4 weeks,2,"two, four, weeks",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-follow_up-4,follow_up,PRN,4,"PRN, as needed",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-symptoms-1,symptoms,dysphagia,1,"dysphagia, swallowing, difficulty",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-symptoms-2,symptoms,onset and duration documented,2,"onset, duration",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-symptoms-3,symptoms,progressive or intermittent documented,3,"progressive, intermittent",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-symptoms-4,symptoms,solids versus liquids documented,4,"solids, liquids, both",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-symptoms-5,symptoms,associated pain reviewed,5,"pain, odynophagia",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-symptoms-6,symptoms,weight loss reviewed,6,"weight, loss",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-symptoms-7,symptoms,regurgitation reviewed,7,"regurgitation, food, coming back",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-symptoms-8,symptoms,choking or aspiration reviewed,8,"choking, aspiration, cough",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-relevant_negatives-1,relevant_negatives,no weight loss reported if applicable,1,"weight, loss",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-relevant_negatives-2,relevant_negatives,no haematemesis reported,2,"hematemesis, blood",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-relevant_negatives-3,relevant_negatives,no persistent vomiting reported,3,"vomiting, regurgitation",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-relevant_negatives-4,relevant_negatives,no hoarseness reported if relevant,4,"hoarseness, voice",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-exam_findings-1,exam_findings,general appearance documented if assessed,1,"appearance, nutrition",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-exam_findings-2,exam_findings,vitals documented if measured,2,"vitals, BP, pulse",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-exam_findings-3,exam_findings,abdominal examination documented if assessed,3,"abdominal, exam",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-exam_findings-4,exam_findings,BMI documented if measured,4,"BMI, weight",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-red_flags-1,red_flags,rapidly progressive dysphagia,1,"rapid, progressive","gastroenterology,high_safety"
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-red_flags-2,red_flags,weight loss with dysphagia,2,"weight, loss","gastroenterology,high_safety"
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-red_flags-3,red_flags,odynophagia,3,"odynophagia, painful, swallowing","gastroenterology,high_safety"
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-red_flags-4,red_flags,age over 50 with new dysphagia,4,"age, over 50, new","gastroenterology,high_safety"
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-red_flags-5,red_flags,hoarseness or cervical lymphadenopathy,5,"hoarseness, lymph, node","gastroenterology,high_safety"
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-red_flags-6,red_flags,relevant GI family history,6,"family, GI, cancer","gastroenterology,high_safety"
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-investigations-1,investigations,previous endoscopy report reviewed if available,1,"OGD, EGD, endoscopy",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-investigations-2,investigations,barium swallow report reviewed if performed,2,"barium, swallow",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-investigations-3,investigations,previous imaging reviewed if available,3,"imaging, CT",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-plan_phrases-2,plan_phrases,safety-netting documented if discussed,2,"safety, netting",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-plan_phrases-3,plan_phrases,referral documented if clinician decided,3,"referral, gastroenterology, OGD",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-plan_phrases-4,plan_phrases,follow-up documented if arranged,4,"follow, up",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-follow_up-1,follow_up,2-4 weeks,1,"two, four, weeks",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-follow_up-2,follow_up,4-6 weeks,2,"four, six, weeks",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-follow_up-3,follow_up,sooner if worsening,3,"sooner, worsening",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-follow_up-4,follow_up,PRN,4,"PRN, as needed",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-symptoms-1,symptoms,post-endoscopy follow-up,1,"post, endoscopy, followup",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-symptoms-2,symptoms,procedure tolerance reviewed,2,"tolerance, sedation",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-symptoms-3,symptoms,clinical findings reviewed,3,"findings, endoscopy, result",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-symptoms-4,symptoms,biopsy results reviewed if available,4,"biopsy, histology, result",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-symptoms-5,symptoms,symptoms since procedure reviewed,5,"symptoms, recovery",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-symptoms-6,symptoms,bleeding or pain reviewed,6,"bleeding, pain, post, procedure",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-symptoms-7,symptoms,medication adjustment reviewed if applicable,7,"medication, PPI, change",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-exam_findings-1,exam_findings,abdominal examination documented if assessed,1,"abdominal, exam",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-exam_findings-2,exam_findings,vitals documented if measured,2,"vitals, BP, pulse",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-exam_findings-3,exam_findings,general appearance documented if assessed,3,appearance,gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-red_flags-1,red_flags,significant post-procedure bleeding,1,"post, procedure, bleeding","gastroenterology,high_safety"
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-red_flags-2,red_flags,unexplained abdominal pain after procedure,2,"pain, after, scope","gastroenterology,high_safety"
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-red_flags-3,red_flags,perforation signs if suspected,3,"perforation, peritonitis","gastroenterology,high_safety"
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-investigations-1,investigations,endoscopy report reviewed if available,1,"endoscopy, OGD, colonoscopy",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-investigations-2,investigations,histology results reviewed if available,2,"histology, biopsy, pathology",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-investigations-3,investigations,previous records reviewed if available,3,"previous, records",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-plan_phrases-1,plan_phrases,clinician-entered plan documented,1,"plan, management",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-plan_phrases-2,plan_phrases,medication plan documented if clinician decided,2,"medication, PPI, change",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-plan_phrases-3,plan_phrases,follow-up interval for repeat endoscopy documented if clinician decided,3,"repeat, scope, interval",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-plan_phrases-4,plan_phrases,safety-netting documented if discussed,4,"safety, netting",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-plan_phrases-5,plan_phrases,follow-up documented if arranged,5,"follow, up",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-follow_up-1,follow_up,4-6 weeks,1,"four, six, weeks",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-follow_up-2,follow_up,3-6 months,2,"three, six, months",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-follow_up-3,follow_up,1 year if surveillance needed,3,"one, year, surveillance",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-follow_up-4,follow_up,sooner if symptoms recur,4,"sooner, recurrence",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-follow_up-5,follow_up,PRN,5,"PRN, as needed",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-symptoms-9,symptoms,belching reviewed if relevant,9,"belching, burping",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-symptoms-10,symptoms,chest pain reviewed if non-cardiac,10,"chest, pain, non-cardiac",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-exam_findings-5,exam_findings,oral examination documented if assessed,5,"oral, dental, erosion",gastroenterology
+gastro-gerd,Gastroenterology,gastro-gerd-red_flags-7,red_flags,family history of Barrett oesophagus if relevant,7,"Barrett, family, oesophageal",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-symptoms-10,symptoms,previous abdominal surgery reviewed,10,"surgery, previous, scar",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-relevant_negatives-6,relevant_negatives,no abdominal surgery history reported if relevant,6,"surgery, scar",gastroenterology
+gastro-abdominal-pain,Gastroenterology,gastro-abdominal-pain-exam_findings-6,exam_findings,abdominal distension documented if assessed,6,"distension, bloating",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-symptoms-10,symptoms,mucus in stool reviewed,10,"mucus, slime",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-exam_findings-5,exam_findings,vitals documented if measured,5,"vitals, BP",gastroenterology
+gastro-ibs-symptoms,Gastroenterology,gastro-ibs-symptoms-plan_phrases-6,plan_phrases,follow-up documented if arranged,6,"follow, up",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-symptoms-9,symptoms,abdominal pain or bloating reviewed,9,"pain, bloating",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-exam_findings-5,exam_findings,vitals documented if measured,5,"vitals, BP",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-investigations-3,investigations,thyroid function reviewed if ordered,3,"TFT, thyroid",gastroenterology
+gastro-constipation,Gastroenterology,gastro-constipation-plan_phrases-6,plan_phrases,referral documented if clinician decided,6,"referral, gastroenterology",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-symptoms-11,symptoms,family history of IBD reviewed if relevant,11,"IBD, Crohn, colitis",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-exam_findings-6,exam_findings,rectal examination documented if assessed,6,"rectal, PR",gastroenterology
+gastro-diarrhea,Gastroenterology,gastro-diarrhea-plan_phrases-5,plan_phrases,dietary advice documented if discussed,5,"diet, BRAT, avoid",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-symptoms-9,symptoms,anal symptoms reviewed,9,"anal, pain, itching, lump",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-symptoms-10,symptoms,previous colonoscopy history reviewed,10,"colonoscopy, screening",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-exam_findings-5,exam_findings,anal inspection documented if assessed,5,"anal, fissure, haemorrhoid",gastroenterology
+gastro-rectal-bleeding,Gastroenterology,gastro-rectal-bleeding-follow_up-5,follow_up,sooner if bleeding increases,5,"sooner, heavy",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-symptoms-8,symptoms,fatigue reviewed,8,"fatigue, tiredness",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-symptoms-9,symptoms,pruritus reviewed if relevant,9,"itching, pruritus",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-relevant_negatives-1,relevant_negatives,no jaundice reported,1,"jaundice, yellow",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-relevant_negatives-2,relevant_negatives,no abdominal pain reported,2,"pain, RUQ",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-exam_findings-5,exam_findings,signs of chronic liver disease documented if assessed,5,"spider, naevi, palmar, erythema",gastroenterology
+gastro-liver-enzyme-review,Gastroenterology,gastro-liver-enzyme-review-red_flags-5,red_flags,signs of decompensated liver disease,5,"ascites, encephalopathy",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-symptoms-10,symptoms,alcohol intake quantified,10,"alcohol, units, per week",gastroenterology
+gastro-jaundice-documentation,Gastroenterology,gastro-jaundice-documentation-exam_findings-5,exam_findings,signs of chronic liver disease documented if assessed,5,"chronic, stigmata",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-symptoms-9,symptoms,medication history reviewed if relevant,9,"medication, NSAID, bisphosphonate",gastroenterology
+gastro-dysphagia,Gastroenterology,gastro-dysphagia-relevant_negatives-5,relevant_negatives,no neurological symptoms reported if relevant,5,"neurological, CVA, stroke",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-symptoms-8,symptoms,diet tolerated since procedure,8,"diet, eating, tolerance",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-symptoms-9,symptoms,return to normal activities reviewed,9,"activity, work, recovery",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-relevant_negatives-1,relevant_negatives,no post-procedure bleeding reported,1,"bleeding, post, procedure",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-relevant_negatives-2,relevant_negatives,no post-procedure pain reported,2,"pain, after, scope",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-exam_findings-4,exam_findings,abdominal tenderness documented if assessed,4,"tenderness, guarding",gastroenterology
+gastro-post-endoscopy-followup,Gastroenterology,gastro-post-endoscopy-followup-plan_phrases-6,plan_phrases,referral documented if clinician decided,6,"referral, follow-up",gastroenterology
