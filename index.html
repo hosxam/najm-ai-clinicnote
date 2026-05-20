@@ -6660,7 +6660,7 @@ footer a{color:#d9e4f2}
 
 
 
-<p class="section-sub">Choose a specialty to see its predefined Speed Types and prompts</p>
+<p class="section-sub">Choose a specialty to see its predefined Speed Types and prompts</p><p style="font-size:12px;color:var(--gray-500);margin:0 0 16px">15 specialties available in the workflow selector.</p>
 
 
 
@@ -6726,7 +6726,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='gen';upVT();upP();},100)"><div class="card-icon">GP</div><h3>General Medicine / GP</h3><p>Fever, cough, headaches, abdominal pain, diabetes and hypertension follow-ups, fatigue, general consultations.</p></div>
+<div class="card" onclick="showPage('speed');setTimeout(function(){var s=document.getElementById('speedSpecialty');s.value='gen';upVT();upP();},100)"><div class="card-icon">GP</div><h3>General Medicine / GP</h3><p>Fever, cough, headaches, abdominal pain, diabetes and hypertension follow-ups, fatigue, general consultations.</p></div>
 
 
 
@@ -6741,7 +6741,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='ortho';upVT();upP();},100)"><div class="card-icon">MSK</div><h3>Orthopedics / MSK</h3><p>Knee and low back pain, shoulder and neck pain, fracture and post-op follow-ups.</p></div>
+<div class="card" onclick="showPage('speed');setTimeout(function(){var s=document.getElementById('speedSpecialty');s.value='ortho';upVT();upP();},100)"><div class="card-icon">MSK</div><h3>Orthopedics / MSK</h3><p>Knee and low back pain, shoulder and neck pain, fracture and post-op follow-ups.</p></div>
 
 
 
@@ -6756,7 +6756,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='peds';upVT();upP();},100)"><div class="card-icon">PED</div><h3>Pediatrics</h3><p>Fever, cough/cold, vomiting/diarrhea, rash, poor feeding, and pediatric follow-ups.</p></div>
+<div class="card" onclick="showPage('speed');setTimeout(function(){var s=document.getElementById('speedSpecialty');s.value='peds';upVT();upP();},100)"><div class="card-icon">PED</div><h3>Pediatrics</h3><p>Fever, cough/cold, vomiting/diarrhea, rash, poor feeding, and pediatric follow-ups.</p></div>
 
 
 
@@ -6771,7 +6771,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='ent';upVT();upP();},100)"><div class="card-icon">ENT</div><h3>ENT</h3><p>Sore throat, ear pain, nasal congestion, dizziness, hearing complaints.</p></div>
+<div class="card" onclick="showPage('speed');setTimeout(function(){var s=document.getElementById('speedSpecialty');s.value='ent';upVT();upP();},100)"><div class="card-icon">ENT</div><h3>ENT</h3><p>Sore throat, ear pain, nasal congestion, dizziness, hearing complaints.</p></div>
 
 
 
@@ -6786,7 +6786,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='derm';upVT();upP();},100)"><div class="card-icon">DERM</div><h3>Dermatology</h3><p>Rash, acne, eczema, fungal infections, wound reviews.</p></div>
+<div class="card" onclick="showPage('speed');setTimeout(function(){var s=document.getElementById('speedSpecialty');s.value='derm';upVT();upP();},100)"><div class="card-icon">DERM</div><h3>Dermatology</h3><p>Rash, acne, eczema, fungal infections, wound reviews.</p></div>
 
 
 
@@ -6801,7 +6801,7 @@ footer a{color:#d9e4f2}
 
 
 
-<div class="card" onclick="showPage('opd');setTimeout(function(){var s=document.getElementById('specialty');s.value='obgyn';upVT();upP();},100)"><div class="card-icon">OB</div><h3>OB/GYN</h3><p>Antenatal follow-ups, irregular bleeding, pelvic pain, discharge, contraception counseling.</p></div>
+<div class="card" onclick="showPage('speed');setTimeout(function(){var s=document.getElementById('speedSpecialty');s.value='obgyn';upVT();upP();},100)"><div class="card-icon">OB</div><h3>OB/GYN</h3><p>Antenatal follow-ups, irregular bleeding, pelvic pain, discharge, contraception counseling.</p></div>
 
 
 
@@ -10964,7 +10964,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<div><h2>OPD Builder</h2><p>Enter your de-identified note and generate structured clinical outputs.</p></div>
+<div style="display:none"><h2>OPD Builder (legacy)</h2><p>Legacy fallback interface.</p></div>
 
 
 
@@ -11504,7 +11504,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<div class="form-group"><label for="clinicalNote">Rough de-identified note</label><textarea id="clinicalNote" class="code" placeholder="Enter a de-identified clinical note. No patient names or IDs." oninput="checkPHI()"></textarea></div>
+<div class="form-group"><label for="clinicalNote">De-identified clinical note (legacy)</label><textarea id="clinicalNote" class="code" placeholder="Enter a de-identified clinical note. No patient names or IDs." oninput="checkPHI()"></textarea></div>
 
 
 
@@ -11924,7 +11924,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<div id="outputBox" class="output-body"><span class="placeholder">Select a specialty and visit type, enter your de-identified note, then click a generate button to create structured output.</span></div>
+<div id="outputBox" class="output-body"><span class="placeholder">Select a specialty and visit type, enter your de-identified note, then generate structured output.</span></div>
 
 
 
@@ -21233,7 +21233,7 @@ function gInst(lang){var dc="Najm AI ClinicNote is an educational/productivity d
 
 
 
-function clearOutput(){document.getElementById("outputBox").innerHTML="<span class=\"placeholder\">Select a specialty and visit type, enter your de-identified note, then click a generate button to create structured output.</span>"}
+function clearOutput(){document.getElementById("outputBox").innerHTML="<span class=\"placeholder\">Select a specialty and visit type, enter your de-identified note, then generate structured output.</span>"}
 
 
 
