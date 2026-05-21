@@ -109,6 +109,17 @@ function loadCalculatorTools() {
     parseInt,
     isNaN
   };
+  context.window.calculateGCS = params => {
+    const eye = Number(params.eyeOpening);
+    const verbal = Number(params.verbal);
+    const motor = Number(params.motor);
+    const score = eye + verbal + motor;
+    return {
+      score,
+      interpretation: `GCS ${score}/15 - documentation support only.`,
+      safetyNotice: "Score calculated for documentation support only. Clinician interpretation required."
+    };
+  };
   const source = fs.readFileSync(path.join(ROOT, "calculator-tools.js"), "utf8");
   vm.runInNewContext(source, context, { filename: "calculator-tools.js" });
   return {
@@ -134,6 +145,8 @@ const uiCases = {
       low.setValue("calc-nyha-grade", "");
       const result = low.api.calculateFromUI("nyha");
       assertEqual(result.ok, false, "nyha invalid", "ok");
+      low.setValue("calc-nyha-grade", "2.5");
+      assertEqual(low.api.calculateFromUI("nyha").ok, false, "nyha decimal invalid", "ok");
     }
   },
   killip: {
@@ -147,6 +160,26 @@ const uiCases = {
       low.setValue("calc-killip-class", "");
       const result = low.api.calculateFromUI("killip");
       assertEqual(result.ok, false, "killip invalid", "ok");
+      low.setValue("calc-killip-class", "3.5");
+      assertEqual(low.api.calculateFromUI("killip").ok, false, "killip decimal invalid", "ok");
+    }
+  },
+  gcs: {
+    set: () => {
+      low.setValue("calc-gcs-eye", "4");
+      low.setValue("calc-gcs-verbal", "5");
+      low.setValue("calc-gcs-motor", "6");
+    },
+    verify: result => {
+      assertEqual(result.ok, true, "gcs ui", "ok");
+      assertEqual(result.value, 15, "gcs ui", "value");
+      assert(/15\/15/.test(result.text), "gcs ui", "expected 15/15 text");
+    },
+    invalid: () => {
+      low.setValue("calc-gcs-eye", "4.5");
+      low.setValue("calc-gcs-verbal", "5");
+      low.setValue("calc-gcs-motor", "6");
+      assertEqual(low.api.calculateFromUI("gcs").ok, false, "gcs ui decimal invalid", "ok");
     }
   },
   sirs: {
@@ -286,15 +319,22 @@ const cases = {
       assertEqual(result.ok, true, "phq_2", "ok");
       assertEqual(result.value, 3, "phq_2", "value");
     },
-    invalid: () => assertEqual(low.api.calculatePHQ2(4, 1).ok, false, "phq_2 invalid", "ok")
+    invalid: () => {
+      assertEqual(low.api.calculatePHQ2(4, 1).ok, false, "phq_2 invalid", "ok");
+      assertEqual(low.api.calculatePHQ2(1.5, 1).ok, false, "phq_2 decimal invalid", "ok");
+    }
   },
   phq_9: {
     run: () => low.api.calculatePHQ9([0, 1, 2, 3, 0, 1, 2, 3, 1]),
     verify: result => {
       assertEqual(result.ok, true, "phq_9", "ok");
       assertEqual(result.value, 13, "phq_9", "value");
+      assert(/Item 9 was marked above 0/.test(result.text), "phq_9", "expected item 9 review note");
     },
-    invalid: () => assertEqual(low.api.calculatePHQ9([1, 2]).ok, false, "phq_9 invalid", "ok")
+    invalid: () => {
+      assertEqual(low.api.calculatePHQ9([1, 2]).ok, false, "phq_9 invalid", "ok");
+      assertEqual(low.api.calculatePHQ9([0, 1, 2, 3, 0, 1, 2, 3, 1.5]).ok, false, "phq_9 decimal invalid", "ok");
+    }
   },
   gad_7: {
     run: () => low.api.calculateGAD7([0, 1, 2, 3, 0, 1, 2]),
@@ -302,7 +342,10 @@ const cases = {
       assertEqual(result.ok, true, "gad_7", "ok");
       assertEqual(result.value, 9, "gad_7", "value");
     },
-    invalid: () => assertEqual(low.api.calculateGAD7([1, 2]).ok, false, "gad_7 invalid", "ok")
+    invalid: () => {
+      assertEqual(low.api.calculateGAD7([1, 2]).ok, false, "gad_7 invalid", "ok");
+      assertEqual(low.api.calculateGAD7([0, 1, 2, 3, 0, 1, 2.5]).ok, false, "gad_7 decimal invalid", "ok");
+    }
   },
   epworth_sleepiness_scale: {
     run: () => low.api.calculateEpworth([0, 1, 2, 3, 0, 1, 2, 3]),
@@ -310,7 +353,10 @@ const cases = {
       assertEqual(result.ok, true, "epworth_sleepiness_scale", "ok");
       assertEqual(result.value, 12, "epworth_sleepiness_scale", "value");
     },
-    invalid: () => assertEqual(low.api.calculateEpworth([1, 2]).ok, false, "epworth_sleepiness_scale invalid", "ok")
+    invalid: () => {
+      assertEqual(low.api.calculateEpworth([1, 2]).ok, false, "epworth_sleepiness_scale invalid", "ok");
+      assertEqual(low.api.calculateEpworth([0, 1, 2, 3, 0, 1, 2, 3.5]).ok, false, "epworth_sleepiness_scale decimal invalid", "ok");
+    }
   },
   ipss: {
     run: () => low.api.calculateIPSS([1, 2, 3, 4, 0, 1, 2]),
@@ -318,7 +364,10 @@ const cases = {
       assertEqual(result.ok, true, "ipss", "ok");
       assertEqual(result.value, 13, "ipss", "value");
     },
-    invalid: () => assertEqual(low.api.calculateIPSS([1, 2]).ok, false, "ipss invalid", "ok")
+    invalid: () => {
+      assertEqual(low.api.calculateIPSS([1, 2]).ok, false, "ipss invalid", "ok");
+      assertEqual(low.api.calculateIPSS([1, 2, 3, 4, 0, 1, 2.5]).ok, false, "ipss decimal invalid", "ok");
+    }
   },
   nyha: uiCases.nyha,
   killip: uiCases.killip,
@@ -379,8 +428,13 @@ const cases = {
     verify: result => {
       assertEqual(result.score, 15, "gcs", "score");
       assert(/15\/15/.test(result.interpretation), "gcs", "expected 15/15 text");
+      uiCases.gcs.set();
+      uiCases.gcs.verify(low.api.calculateFromUI("gcs"));
     },
-    invalid: () => assertEqual(high.calculateGCS({ eyeOpening: 99, verbal: -1, motor: 0 }).score, 6, "gcs invalid", "clamped score")
+    invalid: () => {
+      assertEqual(high.calculateGCS({ eyeOpening: 99, verbal: -1, motor: 0 }).score, 6, "gcs invalid", "clamped score");
+      uiCases.gcs.invalid();
+    }
   },
   mcisaac: {
     run: () => high.calculateMcIsaac({ feverGT38: true, tonsillarExudate: true, tenderCervicalNodes: false, noCough: true, age: 10 }),

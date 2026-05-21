@@ -1,6 +1,6 @@
 // GENERATED_CLINICAL_DATA.js — Najm AI ClinicNote
 // Auto-generated. Do not edit manually.
-// Generated: 2026-05-20 16:13:47
+// Generated: 2026-05-21 07:14:32
 // Source: /data JSON files (validated)
 
 (function() {
@@ -42,7 +42,7 @@
   var data = {
   "metadata": {
     "version": "v2",
-    "generated_at": "2026-05-20 16:13:47",
+    "generated_at": "2026-05-21 07:14:32",
     "source": "validated_json_dataset (data/ CSVs -> JSON, commit 262c021)",
     "warning": "Documentation support only. Clinician review required.",
     "description": "Najm AI ClinicNote clinical data bundle. Built from /data JSON files."
@@ -164884,23 +164884,23 @@
       "clinical_context": "May be relevant when documenting dyspnea impact.",
       "risk_level": "low",
       "implementation_status": "implemented",
-      "source_status": "needs_source_review",
-      "formula_status": "not_implemented",
+      "source_status": "verified_later",
+      "formula_status": "implemented",
       "input_fields": [
         {
-          "field_id": "dyspnea_description",
-          "label": "Dyspnea functional description",
+          "field_id": "mrc_grade",
+          "label": "MRC dyspnea grade",
           "input_type": "select",
           "units": null,
           "required": true,
           "allowed_values": [
-            "clinician-entered option 1",
-            "clinician-entered option 2",
-            "clinician-entered option 3",
-            "clinician-entered option 4",
-            "clinician-entered option 5"
+            "1 = Not troubled by breathlessness except on strenuous exercise",
+            "2 = Short of breath when hurrying on level ground or walking up a slight hill",
+            "3 = Walks slower than people of the same age because of breathlessness or stops for breath when walking at own pace",
+            "4 = Stops for breath after about 100 meters or after a few minutes on level ground",
+            "5 = Too breathless to leave the house or breathless when dressing/undressing"
           ],
-          "safety_note": "Option wording requires source review before implementation."
+          "safety_note": "Documentation support only. Clinician interpretation required."
         }
       ],
       "output_fields": [
@@ -164912,7 +164912,7 @@
         }
       ],
       "interpretation_mode": "clinician_interpreted_no_recommendation",
-      "safety_note": "Registry only. Scale wording and source version are not implemented.",
+      "safety_note": "MRC dyspnea grade documents symptom burden. It does not establish diagnosis or direct treatment.",
       "display_conditions": [
         "Show only when breathlessness impact is being documented."
       ],
@@ -164934,32 +164934,36 @@
       "clinical_context": "May be relevant for mental health documentation after source review.",
       "risk_level": "low",
       "implementation_status": "implemented",
-      "source_status": "needs_source_review",
-      "formula_status": "not_implemented",
+      "source_status": "verified_later",
+      "formula_status": "implemented",
       "input_fields": [
         {
           "field_id": "interest_response",
-          "label": "Interest or pleasure response",
+          "label": "Little interest or pleasure in doing things",
           "input_type": "select",
           "units": null,
           "required": true,
           "allowed_values": [
-            "not entered",
-            "response option requires source review"
+            "0 = Not at all",
+            "1 = Several days",
+            "2 = More than half the days",
+            "3 = Nearly every day"
           ],
-          "safety_note": "Question wording and response values require source review."
+          "safety_note": "Documentation support only. Clinician interpretation required."
         },
         {
           "field_id": "mood_response",
-          "label": "Mood response",
+          "label": "Feeling down, depressed, or hopeless",
           "input_type": "select",
           "units": null,
           "required": true,
           "allowed_values": [
-            "not entered",
-            "response option requires source review"
+            "0 = Not at all",
+            "1 = Several days",
+            "2 = More than half the days",
+            "3 = Nearly every day"
           ],
-          "safety_note": "Question wording and response values require source review."
+          "safety_note": "Documentation support only. Clinician interpretation required."
         }
       ],
       "output_fields": [
@@ -164971,7 +164975,7 @@
         }
       ],
       "interpretation_mode": "clinician_interpreted_no_recommendation",
-      "safety_note": "Registry only. Not a diagnosis tool and no scoring is implemented.",
+      "safety_note": "PHQ-2 output is documentation support only. Clinician interpretation required.",
       "display_conditions": [
         "Show only when a clinician chooses to document mood screening."
       ],
@@ -164993,27 +164997,22 @@
       "clinical_context": "May be relevant when documenting a structured mood questionnaire.",
       "risk_level": "low",
       "implementation_status": "implemented",
-      "source_status": "needs_source_review",
-      "formula_status": "not_implemented",
+      "source_status": "verified_later",
+      "formula_status": "implemented",
       "input_fields": [
         {
-          "field_id": "phq_9_responses",
+          "field_id": "phq_9_items",
           "label": "PHQ-9 item responses",
           "input_type": "multi_select",
           "units": null,
           "required": true,
           "allowed_values": [
-            "responses require source review before implementation"
+            "0 = Not at all",
+            "1 = Several days",
+            "2 = More than half the days",
+            "3 = Nearly every day"
           ],
-          "safety_note": "Item wording and response values require source review."
-        },
-        {
-          "field_id": "self_harm_item_context",
-          "label": "Self-harm item context if clinician-entered",
-          "input_type": "text",
-          "units": null,
-          "required": false,
-          "safety_note": "Sensitive item; future implementation must preserve clinician control and local safety process."
+          "safety_note": "Item 9 above 0 requires clinician review and local protocol."
         }
       ],
       "output_fields": [
@@ -165025,7 +165024,7 @@
         }
       ],
       "interpretation_mode": "clinician_interpreted_no_recommendation",
-      "safety_note": "Registry only. No scoring, severity label, or action advice is implemented.",
+      "safety_note": "PHQ-9 output is documentation support only. Clinician interpretation required. Item 9 above 0 requires clinician review and local protocol.",
       "display_conditions": [
         "Show only when a clinician chooses to document PHQ-9 responses."
       ],
@@ -165047,19 +165046,22 @@
       "clinical_context": "May be relevant when documenting anxiety symptom screening.",
       "risk_level": "low",
       "implementation_status": "implemented",
-      "source_status": "needs_source_review",
-      "formula_status": "not_implemented",
+      "source_status": "verified_later",
+      "formula_status": "implemented",
       "input_fields": [
         {
-          "field_id": "gad_7_responses",
+          "field_id": "gad_7_items",
           "label": "GAD-7 item responses",
           "input_type": "multi_select",
           "units": null,
           "required": true,
           "allowed_values": [
-            "responses require source review before implementation"
+            "0 = Not at all",
+            "1 = Several days",
+            "2 = More than half the days",
+            "3 = Nearly every day"
           ],
-          "safety_note": "Item wording and response values require source review."
+          "safety_note": "Documentation support only. Clinician interpretation required."
         }
       ],
       "output_fields": [
@@ -165071,7 +165073,7 @@
         }
       ],
       "interpretation_mode": "clinician_interpreted_no_recommendation",
-      "safety_note": "Registry only. No scoring or action advice is implemented.",
+      "safety_note": "GAD-7 output is documentation support only. Clinician interpretation required.",
       "display_conditions": [
         "Show only when a clinician chooses to document GAD-7 responses."
       ],
@@ -165094,19 +165096,22 @@
       "clinical_context": "May be relevant when documenting sleepiness symptoms.",
       "risk_level": "low",
       "implementation_status": "implemented",
-      "source_status": "needs_source_review",
-      "formula_status": "not_implemented",
+      "source_status": "verified_later",
+      "formula_status": "implemented",
       "input_fields": [
         {
-          "field_id": "epworth_responses",
-          "label": "Epworth item responses",
+          "field_id": "epworth_items",
+          "label": "Epworth situation responses",
           "input_type": "multi_select",
           "units": null,
           "required": true,
           "allowed_values": [
-            "responses require source review before implementation"
+            "0 = Would never doze",
+            "1 = Slight chance of dozing",
+            "2 = Moderate chance of dozing",
+            "3 = High chance of dozing"
           ],
-          "safety_note": "Item wording and response values require source review."
+          "safety_note": "Documentation support only. Clinician interpretation required."
         }
       ],
       "output_fields": [
@@ -165118,7 +165123,7 @@
         }
       ],
       "interpretation_mode": "clinician_interpreted_no_recommendation",
-      "safety_note": "Registry only. No scoring or advice is implemented.",
+      "safety_note": "Epworth output is documentation support only. Clinician interpretation required.",
       "display_conditions": [
         "Show only when sleepiness questionnaire documentation is clinician-selected."
       ],
@@ -165138,30 +165143,24 @@
       "clinical_context": "May be relevant for future lower urinary tract symptom workflows.",
       "risk_level": "low",
       "implementation_status": "implemented",
-      "source_status": "needs_source_review",
-      "formula_status": "not_implemented",
+      "source_status": "verified_later",
+      "formula_status": "implemented",
       "input_fields": [
         {
-          "field_id": "ipss_responses",
-          "label": "IPSS item responses",
+          "field_id": "ipss_items",
+          "label": "IPSS symptom responses",
           "input_type": "multi_select",
           "units": null,
           "required": true,
           "allowed_values": [
-            "responses require source review before implementation"
+            "0 = Not at all",
+            "1 = Less than 1 time in 5",
+            "2 = Less than half the time",
+            "3 = About half the time",
+            "4 = More than half the time",
+            "5 = Almost always"
           ],
-          "safety_note": "Item wording and response values require source review."
-        },
-        {
-          "field_id": "quality_of_life_response",
-          "label": "Quality of life response",
-          "input_type": "select",
-          "units": null,
-          "required": false,
-          "allowed_values": [
-            "response options require source review before implementation"
-          ],
-          "safety_note": "Response wording requires source review."
+          "safety_note": "Documentation support only. Clinician interpretation required."
         }
       ],
       "output_fields": [
@@ -165173,7 +165172,7 @@
         }
       ],
       "interpretation_mode": "clinician_interpreted_no_recommendation",
-      "safety_note": "Registry only. No scoring, diagnosis, or treatment advice is implemented.",
+      "safety_note": "IPSS output is documentation support only. Clinician interpretation required.",
       "display_conditions": [
         "Show only when urinary symptom questionnaire documentation is clinician-selected."
       ],
@@ -165722,16 +165721,22 @@
       "clinical_context": "Heart failure or dyspnea workflow.",
       "risk_level": "low",
       "implementation_status": "implemented",
-      "source_status": "needs_source_review",
-      "formula_status": "not_implemented",
+      "source_status": "verified_later",
+      "formula_status": "implemented",
       "input_fields": [
         {
-          "field_id": "nyha_grade",
-          "label": "NYHA grade (1-4)",
-          "input_type": "number",
-          "units": "",
+          "field_id": "nyha_class",
+          "label": "NYHA functional class",
+          "input_type": "select",
+          "units": null,
           "required": true,
-          "safety_note": "Clinician-entered value only."
+          "allowed_values": [
+            "Class I = No limitation of physical activity",
+            "Class II = Slight limitation of physical activity",
+            "Class III = Marked limitation of physical activity",
+            "Class IV = Symptoms at rest or unable to carry on physical activity without discomfort"
+          ],
+          "safety_note": "Documentation support only. Clinician interpretation required."
         }
       ],
       "output_fields": [
@@ -165765,16 +165770,22 @@
       "clinical_context": "Chest pain or acute cardiac workflow.",
       "risk_level": "low",
       "implementation_status": "implemented",
-      "source_status": "needs_source_review",
-      "formula_status": "not_implemented",
+      "source_status": "verified_later",
+      "formula_status": "implemented",
       "input_fields": [
         {
           "field_id": "killip_class",
-          "label": "Killip class (1-4)",
-          "input_type": "number",
-          "units": "",
+          "label": "Killip class",
+          "input_type": "select",
+          "units": null,
           "required": true,
-          "safety_note": "Clinician-entered value only."
+          "allowed_values": [
+            "Class I = No clinical signs of heart failure",
+            "Class II = Signs of heart failure documented",
+            "Class III = Pulmonary edema documented",
+            "Class IV = Cardiogenic shock documented"
+          ],
+          "safety_note": "Documentation support only. Clinician interpretation required."
         }
       ],
       "output_fields": [
@@ -166332,32 +166343,53 @@
       "clinical_context": "Head injury, seizure, or altered consciousness workflow.",
       "risk_level": "high",
       "implementation_status": "implemented",
-      "source_status": "needs_source_review",
+      "source_status": "verified_later",
       "formula_status": "implemented",
       "input_fields": [
         {
-          "field_id": "eye_pening",
-          "label": "Eye opening (1-4)",
-          "input_type": "number",
-          "units": "",
+          "field_id": "eye_opening",
+          "label": "Eye opening",
+          "input_type": "select",
+          "units": null,
           "required": true,
-          "safety_note": "Clinician-entered value only."
+          "allowed_values": [
+            "4 = Spontaneous",
+            "3 = To speech",
+            "2 = To pain",
+            "1 = None"
+          ],
+          "safety_note": "Documentation support only. Clinician interpretation required."
         },
         {
-          "field_id": "verbal",
-          "label": "Verbal response (1-5)",
-          "input_type": "number",
-          "units": "",
+          "field_id": "verbal_response",
+          "label": "Verbal response",
+          "input_type": "select",
+          "units": null,
           "required": true,
-          "safety_note": "Clinician-entered value only."
+          "allowed_values": [
+            "5 = Oriented",
+            "4 = Confused",
+            "3 = Inappropriate words",
+            "2 = Incomprehensible sounds",
+            "1 = None"
+          ],
+          "safety_note": "Documentation support only. Clinician interpretation required."
         },
         {
-          "field_id": "motor",
-          "label": "Motor response (1-6)",
-          "input_type": "number",
-          "units": "",
+          "field_id": "motor_response",
+          "label": "Motor response",
+          "input_type": "select",
+          "units": null,
           "required": true,
-          "safety_note": "Clinician-entered value only."
+          "allowed_values": [
+            "6 = Obeys commands",
+            "5 = Localizes pain",
+            "4 = Withdraws from pain",
+            "3 = Abnormal flexion",
+            "2 = Extension",
+            "1 = None"
+          ],
+          "safety_note": "Documentation support only. Clinician interpretation required."
         }
       ],
       "output_fields": [
@@ -166369,7 +166401,7 @@
         }
       ],
       "interpretation_mode": "score",
-      "safety_note": "Score calculated for documentation support only. Clinician interpretation required.",
+      "safety_note": "GCS output is documentation support only. Clinician interpretation required.",
       "display_conditions": [],
       "review_required": true
     },

@@ -2,12 +2,104 @@
   "use strict";
 
   var MRC_OPTIONS = {
-    "1": "Breathless only with strenuous exercise",
+    "1": "Not troubled by breathlessness except on strenuous exercise",
     "2": "Short of breath when hurrying on level ground or walking up a slight hill",
     "3": "Walks slower than people of the same age because of breathlessness or stops for breath when walking at own pace",
     "4": "Stops for breath after about 100 meters or after a few minutes on level ground",
     "5": "Too breathless to leave the house or breathless when dressing/undressing"
   };
+
+  var FREQUENCY_0_3_OPTIONS = [
+    { value: "0", label: "0 = Not at all" },
+    { value: "1", label: "1 = Several days" },
+    { value: "2", label: "2 = More than half the days" },
+    { value: "3", label: "3 = Nearly every day" }
+  ];
+
+  var DOZE_0_3_OPTIONS = [
+    { value: "0", label: "0 = Would never doze" },
+    { value: "1", label: "1 = Slight chance of dozing" },
+    { value: "2", label: "2 = Moderate chance of dozing" },
+    { value: "3", label: "3 = High chance of dozing" }
+  ];
+
+  var IPSS_0_5_OPTIONS = [
+    { value: "0", label: "0 = Not at all" },
+    { value: "1", label: "1 = Less than 1 time in 5" },
+    { value: "2", label: "2 = Less than half the time" },
+    { value: "3", label: "3 = About half the time" },
+    { value: "4", label: "4 = More than half the time" },
+    { value: "5", label: "5 = Almost always" }
+  ];
+
+  var NYHA_OPTIONS = [
+    { value: "1", label: "Class I = No limitation of physical activity" },
+    { value: "2", label: "Class II = Slight limitation of physical activity" },
+    { value: "3", label: "Class III = Marked limitation of physical activity" },
+    { value: "4", label: "Class IV = Symptoms at rest or unable to carry on physical activity without discomfort" }
+  ];
+
+  var KILLIP_OPTIONS = [
+    { value: "1", label: "Class I = No clinical signs of heart failure" },
+    { value: "2", label: "Class II = Rales or crackles, S3, or elevated jugular venous pressure documented" },
+    { value: "3", label: "Class III = Pulmonary edema documented" },
+    { value: "4", label: "Class IV = Cardiogenic shock documented" }
+  ];
+
+  var GCS_EYE_OPTIONS = [
+    { value: "4", label: "4 = Eyes open spontaneously" },
+    { value: "3", label: "3 = Eyes open to speech" },
+    { value: "2", label: "2 = Eyes open to pain" },
+    { value: "1", label: "1 = No eye opening" }
+  ];
+
+  var GCS_VERBAL_OPTIONS = [
+    { value: "5", label: "5 = Oriented" },
+    { value: "4", label: "4 = Confused conversation" },
+    { value: "3", label: "3 = Inappropriate words" },
+    { value: "2", label: "2 = Incomprehensible sounds" },
+    { value: "1", label: "1 = No verbal response" }
+  ];
+
+  var GCS_MOTOR_OPTIONS = [
+    { value: "6", label: "6 = Obeys commands" },
+    { value: "5", label: "5 = Localizes pain" },
+    { value: "4", label: "4 = Withdraws from pain" },
+    { value: "3", label: "3 = Abnormal flexion to pain" },
+    { value: "2", label: "2 = Extension to pain" },
+    { value: "1", label: "1 = No motor response" }
+  ];
+
+  var PHQ2_ITEMS = [
+    "Little interest or pleasure in doing things",
+    "Feeling down, depressed, or hopeless"
+  ];
+
+  var PHQ9_ITEMS = [
+    "Little interest or pleasure in doing things",
+    "Feeling down, depressed, or hopeless",
+    "Trouble falling or staying asleep, or sleeping too much",
+    "Feeling tired or having little energy",
+    "Poor appetite or overeating",
+    "Feeling bad about yourself, or that you are a failure or have let yourself or your family down",
+    "Trouble concentrating on things, such as reading or watching television",
+    "Moving or speaking so slowly that other people could have noticed, or being so fidgety/restless that you move around more than usual",
+    "Thoughts that you would be better off dead, or of hurting yourself in some way"
+  ];
+
+  var GAD7_ITEMS = [
+    "Feeling nervous, anxious, or on edge",
+    "Not being able to stop or control worrying",
+    "Worrying too much about different things",
+    "Trouble relaxing",
+    "Being so restless that it is hard to sit still",
+    "Becoming easily annoyed or irritable",
+    "Feeling afraid as if something awful might happen"
+  ];
+
+  var EPWORTH_ITEMS = ["Sitting and reading", "Watching TV", "Sitting inactive in public", "Passenger in car for 1 hour", "Lying down in afternoon", "Sitting and talking", "Sitting quietly after lunch", "Car stopped in traffic"];
+
+  var IPSS_ITEMS = ["Incomplete emptying", "Frequency", "Intermittency", "Urgency", "Weak stream", "Straining", "Nocturia"];
 
   var calculators = [
     { id: "bmi", name: "BMI" },
@@ -15,8 +107,14 @@
     { id: "mean_arterial_pressure", name: "Mean arterial pressure" },
     { id: "shock_index", name: "Shock index" },
     { id: "mrc_dyspnea_scale", name: "MRC dyspnea scale" },
+    { id: "phq_2", name: "PHQ-2" },
+    { id: "phq_9", name: "PHQ-9" },
+    { id: "gad_7", name: "GAD-7" },
+    { id: "epworth_sleepiness_scale", name: "Epworth Sleepiness Scale" },
+    { id: "ipss", name: "IPSS" },
     { id: "nyha", name: "NYHA functional class" },
     { id: "killip", name: "Killip classification" },
+    { id: "gcs", name: "Glasgow Coma Scale" },
     { id: "sirs", name: "SIRS criteria" },
     { id: "qsofa", name: "qSOFA" },
     { id: "fib4", name: "FIB-4 index" },
@@ -32,6 +130,36 @@
   function roundTo(value, places) {
     var factor = Math.pow(10, places);
     return Math.round(value * factor) / factor;
+  }
+
+  function strictInteger(value, min, max) {
+    var text = String(value === undefined || value === null ? "" : value).trim();
+    if (!/^-?\d+$/.test(text)) return null;
+    var numberValue = Number(text);
+    if (!Number.isInteger(numberValue) || numberValue < min || numberValue > max) return null;
+    return numberValue;
+  }
+
+  function collectSelectSeries(prefix, count) {
+    var values = [];
+    for (var i = 1; i <= count; i++) {
+      var el = byId(prefix + i);
+      values.push(el ? el.value : "");
+    }
+    return values;
+  }
+
+  function sumResponses(scores, count, min, max, label) {
+    if (!Array.isArray(scores) || scores.length !== count) {
+      return { ok: false, error: "Select a response for each " + label + " item." };
+    }
+    var sum = 0;
+    for (var i = 0; i < count; i++) {
+      var v = strictInteger(scores[i], min, max);
+      if (v === null) return { ok: false, error: "Each " + label + " response must be " + min + "-" + max + "." };
+      sum += v;
+    }
+    return { ok: true, value: sum };
   }
 
   function calculateBMI(heightCm, weightKg) {
@@ -122,93 +250,62 @@
 
   // ---- PHQ-2 (low-risk screening tool) ----
   function calculatePHQ2(q1, q2) {
-    var v1 = parseInt(q1, 10);
-    var v2 = parseInt(q2, 10);
-    if (isNaN(v1) || isNaN(v2) || v1 < 0 || v1 > 3 || v2 < 0 || v2 > 3) {
+    var v1 = strictInteger(q1, 0, 3);
+    var v2 = strictInteger(q2, 0, 3);
+    if (v1 === null || v2 === null) {
       return { ok: false, error: "Select a response (0-3) for each PHQ-2 question." };
     }
     var score = v1 + v2;
-    var interpretation = score >= 3 ? "Positive screen (score " + score + "). Further clinical assessment may be indicated." : "Score " + score + ". Below screening threshold.";
     return {
       ok: true, calculatorId: "phq_2", value: score,
-      text: "PHQ-2 score: " + score + ". " + interpretation + ".",
-      safetyNote: "PHQ-2 is a screening tool only. It does not diagnose depression. Positive screens require clinical assessment. Not a crisis tool."
+      text: "PHQ-2 score: " + score + " / 6.",
+      safetyNote: "Documentation support only. Clinician interpretation required."
     };
   }
 
   // ---- PHQ-9 (low-risk screening tool) ----
   function calculatePHQ9(scores) {
-    if (!Array.isArray(scores) || scores.length !== 9) {
-      return { ok: false, error: "Enter all 9 PHQ-9 responses (0-3 each)." };
-    }
-    var sum = 0;
-    for (var i = 0; i < 9; i++) {
-      var v = parseInt(scores[i], 10);
-      if (isNaN(v) || v < 0 || v > 3) return { ok: false, error: "Each PHQ-9 response must be 0-3." };
-      sum += v;
-    }
-    var severity = sum <= 4 ? "minimal" : sum <= 9 ? "mild" : sum <= 14 ? "moderate" : sum <= 19 ? "moderately severe" : "severe";
+    var summed = sumResponses(scores, 9, 0, 3, "PHQ-9");
+    if (!summed.ok) return summed;
+    var item9 = strictInteger(scores[8], 0, 3);
+    var item9Note = item9 > 0 ? " Item 9 was marked above 0. This requires clinician review and local protocol." : "";
     return {
-      ok: true, calculatorId: "phq_9", value: sum,
-      text: "PHQ-9 score: " + sum + " (" + severity + " depression severity).",
-      safetyNote: "PHQ-9 is a screening tool only. It does not diagnose depression or assess suicide risk. Clinical assessment required. Not a crisis tool."
+      ok: true, calculatorId: "phq_9", value: summed.value,
+      text: "PHQ-9 score: " + summed.value + " / 27." + item9Note,
+      safetyNote: "Documentation support only. Clinician interpretation required."
     };
   }
 
   // ---- GAD-7 (low-risk screening tool) ----
   function calculateGAD7(scores) {
-    if (!Array.isArray(scores) || scores.length !== 7) {
-      return { ok: false, error: "Enter all 7 GAD-7 responses (0-3 each)." };
-    }
-    var sum = 0;
-    for (var i = 0; i < 7; i++) {
-      var v = parseInt(scores[i], 10);
-      if (isNaN(v) || v < 0 || v > 3) return { ok: false, error: "Each GAD-7 response must be 0-3." };
-      sum += v;
-    }
-    var severity = sum <= 4 ? "minimal" : sum <= 9 ? "mild" : sum <= 14 ? "moderate" : "severe";
+    var summed = sumResponses(scores, 7, 0, 3, "GAD-7");
+    if (!summed.ok) return summed;
     return {
-      ok: true, calculatorId: "gad_7", value: sum,
-      text: "GAD-7 score: " + sum + " (" + severity + " anxiety severity).",
-      safetyNote: "GAD-7 is a screening tool only. It does not diagnose anxiety disorders. Clinical assessment required."
+      ok: true, calculatorId: "gad_7", value: summed.value,
+      text: "GAD-7 score: " + summed.value + " / 21.",
+      safetyNote: "Documentation support only. Clinician interpretation required."
     };
   }
 
   // ---- Epworth Sleepiness Scale (low-risk screening tool) ----
   function calculateEpworth(scores) {
-    if (!Array.isArray(scores) || scores.length !== 8) {
-      return { ok: false, error: "Enter all 8 Epworth responses (0-3 each)." };
-    }
-    var sum = 0;
-    for (var i = 0; i < 8; i++) {
-      var v = parseInt(scores[i], 10);
-      if (isNaN(v) || v < 0 || v > 3) return { ok: false, error: "Each Epworth response must be 0-3." };
-      sum += v;
-    }
-    var interpretation = sum <= 10 ? "Normal daytime sleepiness." : sum <= 15 ? "Mild to moderate excessive daytime sleepiness." : "Severe excessive daytime sleepiness.";
+    var summed = sumResponses(scores, 8, 0, 3, "Epworth");
+    if (!summed.ok) return summed;
     return {
-      ok: true, calculatorId: "epworth_sleepiness_scale", value: sum,
-      text: "Epworth score: " + sum + ". " + interpretation + ".",
-      safetyNote: "Epworth is a screening tool only. It does not diagnose sleep disorders. Clinical assessment required."
+      ok: true, calculatorId: "epworth_sleepiness_scale", value: summed.value,
+      text: "Epworth Sleepiness Scale score: " + summed.value + " / 24.",
+      safetyNote: "Documentation support only. Clinician interpretation required."
     };
   }
 
   // ---- IPSS (low-risk documentation tool) ----
   function calculateIPSS(scores) {
-    if (!Array.isArray(scores) || scores.length !== 7) {
-      return { ok: false, error: "Enter all 7 IPSS responses." };
-    }
-    var sum = 0;
-    for (var i = 0; i < 7; i++) {
-      var v = parseInt(scores[i], 10);
-      if (isNaN(v) || v < 0 || v > 5) return { ok: false, error: "Each IPSS response must be 0-5." };
-      sum += v;
-    }
-    var severity = sum <= 7 ? "mild" : sum <= 19 ? "moderate" : "severe";
+    var summed = sumResponses(scores, 7, 0, 5, "IPSS");
+    if (!summed.ok) return summed;
     return {
-      ok: true, calculatorId: "ipss", value: sum,
-      text: "IPSS score: " + sum + " (" + severity + " symptoms).",
-      safetyNote: "IPSS is a symptom documentation tool only. It does not diagnose prostate conditions. Clinical assessment required."
+      ok: true, calculatorId: "ipss", value: summed.value,
+      text: "IPSS score: " + summed.value + " / 35.",
+      safetyNote: "Documentation support only. Clinician interpretation required."
     };
   }
 
@@ -247,10 +344,32 @@
       result = calculateShockIndex(byId("calc-shock-hr").value, byId("calc-shock-sbp").value);
     } else if (calculatorId === "mrc_dyspnea_scale") {
       result = classifyMRCDyspnea(byId("calc-mrc-grade").value);
+    } else if (calculatorId === "phq_2") {
+      result = calculatePHQ2(byId("calc-phq2-q1").value, byId("calc-phq2-q2").value);
+    } else if (calculatorId === "phq_9") {
+      result = calculatePHQ9(collectSelectSeries("calc-phq9-q", 9));
+    } else if (calculatorId === "gad_7") {
+      result = calculateGAD7(collectSelectSeries("calc-gad7-q", 7));
+    } else if (calculatorId === "epworth_sleepiness_scale") {
+      result = calculateEpworth(collectSelectSeries("calc-epworth-q", 8));
+    } else if (calculatorId === "ipss") {
+      result = calculateIPSS(collectSelectSeries("calc-ipss-q", 7));
     } else if (calculatorId === "nyha") {
-      result = calculateNYHA(Number(byId("calc-nyha-grade").value));
+      result = calculateNYHA(byId("calc-nyha-grade").value);
     } else if (calculatorId === "killip") {
-      result = calculateKillip(Number(byId("calc-killip-class").value));
+      result = calculateKillip(byId("calc-killip-class").value);
+    } else if (calculatorId === "gcs") {
+      var eye = strictInteger(byId("calc-gcs-eye").value, 1, 4);
+      var verbal = strictInteger(byId("calc-gcs-verbal").value, 1, 5);
+      var motor = strictInteger(byId("calc-gcs-motor").value, 1, 6);
+      if (eye === null || verbal === null || motor === null) {
+        result = { ok: false, error: "Select Eye, Verbal, and Motor GCS responses." };
+      } else if (typeof window.calculateGCS === "function") {
+        var gcs = window.calculateGCS({ eyeOpening: eye, verbal: verbal, motor: motor });
+        result = { ok: true, calculatorId: "gcs", value: gcs.score, text: gcs.interpretation, safetyNote: gcs.safetyNotice };
+      } else {
+        result = { ok: false, error: "GCS calculator is not available." };
+      }
     } else if (calculatorId === "sirs") {
       var _t=Number(byId("calc-sirs-temp").value)||undefined;
       var _h=Number(byId("calc-sirs-hr").value)||undefined;
@@ -318,17 +437,17 @@
   // -- NYHA Functional Classification --
   function calculateNYHA(grade) {
     var grades = {1:'Class I: No limitation of physical activity.',2:'Class II: Slight limitation of physical activity.',3:'Class III: Marked limitation of physical activity.',4:'Class IV: Unable to carry on any physical activity without discomfort.'};
-    var g=Number(grade);
-    if(!g||g<1||g>4)return{ok:false,error:"Select NYHA grade (1-4)."};
-    return{ok:true,calculatorId:"nyha",value:g,text:"NYHA functional class: "+grades[g]+".",safetyNote:"NYHA class is a documentation tool. Does not establish diagnosis or treatment."};
+    var g=strictInteger(grade,1,4);
+    if(g===null)return{ok:false,error:"Select NYHA class (1-4)."};
+    return{ok:true,calculatorId:"nyha",value:g,text:"NYHA functional class: "+grades[g],safetyNote:"Documentation support only. Clinician interpretation required."};
   }
 
   // -- Killip Classification --
   function calculateKillip(killipClass) {
     var classes = {1:'Class I: No clinical signs of heart failure.',2:'Class II: Signs of heart failure.',3:'Class III: Acute pulmonary oedema.',4:'Class IV: Cardiogenic shock.'};
-    var k=Number(killipClass);
-    if(!k||k<1||k>4)return{ok:false,error:"Select Killip class (1-4)."};
-    return{ok:true,calculatorId:"killip",value:k,text:"Killip class: "+classes[k]+".",safetyNote:"Killip class documents clinical severity. Does not determine management."};
+    var k=strictInteger(killipClass,1,4);
+    if(k===null)return{ok:false,error:"Select Killip class (1-4)."};
+    return{ok:true,calculatorId:"killip",value:k,text:"Killip class: "+classes[k],safetyNote:"Documentation support only. Clinician interpretation required."};
   }
 
   // -- SIRS Criteria --
@@ -363,6 +482,114 @@
     var total=bPts+aPts+iPts+ascPts+encPts;
     var cls=total<=6?"Child-Pugh A":total<=9?"Child-Pugh B":"Child-Pugh C";
     return{ok:true,calculatorId:"child_pugh",value:total,text:"Child-Pugh: "+total+" ("+cls+").",safetyNote:"Child-Pugh score documents liver disease severity. Does not determine management. Clinical assessment required."};
+  }
+
+  function escapeHtml(value) {
+    return String(value || "").replace(/[&<>"']/g, function(ch) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" }[ch];
+    });
+  }
+
+  function optionHtml(options) {
+    var html = '<option value="">Select</option>';
+    for (var i = 0; i < options.length; i++) {
+      html += '<option value="' + escapeHtml(options[i].value) + '">' + escapeHtml(options[i].label) + '</option>';
+    }
+    return html;
+  }
+
+  function questionFields(prefix, items, options) {
+    var html = "";
+    for (var i = 0; i < items.length; i++) {
+      var id = prefix + (i + 1);
+      html += '<div class="form-group"><label for="' + id + '">' + (i + 1) + '. ' + escapeHtml(items[i]) + '</label><select id="' + id + '">' + optionHtml(options) + '</select></div>';
+    }
+    return html;
+  }
+
+  function renderSelectField(id, label, options) {
+    return '<div class="form-group"><label for="' + id + '">' + escapeHtml(label) + '</label><select id="' + id + '">' + optionHtml(options) + '</select></div>';
+  }
+
+  function renderCalculatorCard(calc) {
+    var meta = getCalculatorCardMeta(calc.id);
+    if (!meta) return "";
+    return '<article class="calculator-card" data-calculator-card="' + escapeHtml(calc.id) + '">' +
+      '<h3>' + escapeHtml(calc.name) + '</h3>' +
+      '<p>' + escapeHtml(meta.description) + '</p>' +
+      '<div class="calculator-fields" style="grid-template-columns:1fr">' + meta.fields + '</div>' +
+      '<div class="calculator-actions">' +
+      '<button class="btn btn-primary btn-sm" type="button" onclick="ClinicNoteCalculators.calculateFromUI(&quot;' + escapeHtml(calc.id) + '&quot;)">Calculate</button>' +
+      '<button class="btn btn-outline btn-sm" type="button" onclick="ClinicNoteCalculators.copyCalculatorResult(&quot;' + escapeHtml(calc.id) + '&quot;)">Copy Result</button>' +
+      '<button class="btn btn-ghost btn-sm" type="button" onclick="ClinicNoteCalculators.clearCalculatorInputs(&quot;' + escapeHtml(calc.id) + '&quot;)">Clear</button>' +
+      '</div>' +
+      '<div id="calcResult-' + escapeHtml(calc.id) + '" class="calculator-result" role="status" aria-live="polite">Result will appear here.</div>' +
+      '<div class="calculator-safety">' + escapeHtml(meta.safety) + '</div>' +
+      '</article>';
+  }
+
+  function getCalculatorCardMeta(calculatorId) {
+    var support = "Documentation support only. Clinician interpretation required.";
+    var map = {
+      phq_2: {
+        description: "Two-item mood screening documentation from clinician-entered responses.",
+        fields: '<p class="calculator-safety">Over the last 2 weeks, how often has the patient been bothered by:</p>' + questionFields("calc-phq2-q", PHQ2_ITEMS, FREQUENCY_0_3_OPTIONS),
+        safety: support
+      },
+      phq_9: {
+        description: "Nine-item mood questionnaire documentation from clinician-entered responses.",
+        fields: '<p class="calculator-safety">Over the last 2 weeks, how often has the patient been bothered by:</p>' + questionFields("calc-phq9-q", PHQ9_ITEMS, FREQUENCY_0_3_OPTIONS),
+        safety: "Item 9 requires clinician review and local protocol if marked above 0."
+      },
+      gad_7: {
+        description: "Seven-item anxiety questionnaire documentation from clinician-entered responses.",
+        fields: '<p class="calculator-safety">Over the last 2 weeks, how often has the patient been bothered by:</p>' + questionFields("calc-gad7-q", GAD7_ITEMS, FREQUENCY_0_3_OPTIONS),
+        safety: support
+      },
+      epworth_sleepiness_scale: {
+        description: "Sleepiness questionnaire documentation from clinician-entered situation responses.",
+        fields: '<p class="calculator-safety">How likely is the patient to doze off or fall asleep in these situations?</p>' + questionFields("calc-epworth-q", EPWORTH_ITEMS, DOZE_0_3_OPTIONS),
+        safety: support
+      },
+      ipss: {
+        description: "Urinary symptom score documentation from clinician-entered symptom responses.",
+        fields: '<p class="calculator-safety">Over the past month, how often has the patient had:</p>' + questionFields("calc-ipss-q", IPSS_ITEMS, IPSS_0_5_OPTIONS),
+        safety: support
+      },
+      nyha: {
+        description: "Functional class documentation with class descriptions.",
+        fields: renderSelectField("calc-nyha-grade", "NYHA functional class", NYHA_OPTIONS),
+        safety: support
+      },
+      killip: {
+        description: "Killip class documentation with class descriptions.",
+        fields: renderSelectField("calc-killip-class", "Killip class", KILLIP_OPTIONS),
+        safety: support
+      },
+      gcs: {
+        description: "Glasgow Coma Scale documentation from Eye, Verbal, and Motor responses.",
+        fields: renderSelectField("calc-gcs-eye", "Eye opening", GCS_EYE_OPTIONS) + renderSelectField("calc-gcs-verbal", "Verbal response", GCS_VERBAL_OPTIONS) + renderSelectField("calc-gcs-motor", "Motor response", GCS_MOTOR_OPTIONS),
+        safety: support
+      }
+    };
+    return map[calculatorId] || null;
+  }
+
+  function mountMissingCalculatorCards() {
+    var grid = document.querySelector(".calculator-grid");
+    if (!grid) return;
+    for (var i = 0; i < calculators.length; i++) {
+      var calc = calculators[i];
+      if (!getCalculatorCardMeta(calc.id)) continue;
+      if (document.querySelector('[data-calculator-card="' + calc.id + '"]')) continue;
+      grid.insertAdjacentHTML("beforeend", renderCalculatorCard(calc));
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", mountMissingCalculatorCards);
+  } else {
+    mountMissingCalculatorCards();
   }
 
 
