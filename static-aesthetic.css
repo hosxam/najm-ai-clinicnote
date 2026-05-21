@@ -168,3 +168,32 @@ pre{
 }
 .btn{background:var(--cn-primary)!important;border-color:var(--cn-primary)!important;box-shadow:0 0 30px rgba(45,212,191,.2)!important}
 .btn:hover{background:#5eead4!important;box-shadow:0 0 54px rgba(45,212,191,.32)!important}
+
+/* Controlled dark aesthetic polish: consistent typography and calmer premium contrast. */
+:root{
+  --cn-primary:#2dd4bf;
+  --cn-primary-dark:#14b8a6;
+  --cn-text:#f8fafc;
+  --cn-text-soft:#cbd5e1;
+  --cn-muted:#94a3b8;
+  --cn-surface:#111c2e;
+  --cn-surface-soft:#17233a;
+}
+body,h1,h2,h3,.brand,.btn,input,textarea,select,button{
+  font-family:"Inter",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  font-stretch:100%;
+  transform:none!important;
+}
+h1,h2,h3{
+  font-weight:780!important;
+  letter-spacing:-.035em!important;
+  text-shadow:none!important;
+}
+.brand{font-weight:760!important;letter-spacing:-.018em!important}
+.card,.feedback-card,.safety{
+  background:linear-gradient(180deg,rgba(17,28,46,.94),rgba(15,23,42,.88))!important;
+}
+pre{
+  background:linear-gradient(180deg,#08111f,#050a13)!important;
+  color:#edfaff!important;
+}
