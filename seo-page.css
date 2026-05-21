@@ -129,7 +129,8 @@ footer a:hover{color:var(--accent-primary)!important}
   .nav-links{gap:6px}
   .nav-links a{padding:8px 10px}
   .hero-inner{padding:48px 18px 36px}
-  .card,.feedback-card,.safety{padding:18px;min-width:0;max-width:100%;overflow-wrap:anywhere}
+  .card,.feedback-card,.safety{padding:18px;min-width:0;max-width:100%;overflow-wrap:break-word;word-break:normal;hyphens:auto}
+  button,.btn,.nav-link,.resource-link,.seo-link,.badge{min-width:0;max-width:100%;overflow-wrap:break-word;word-break:normal;hyphens:auto;white-space:normal}
   .cta-row{display:grid;grid-template-columns:1fr;gap:10px}
   .btn{justify-content:center;text-align:center;min-height:44px;width:100%}
 }

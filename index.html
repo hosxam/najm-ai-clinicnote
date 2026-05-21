@@ -7367,6 +7367,94 @@ footer{background:var(--surface);border-top:1px solid var(--border)}
 a{color:var(--cyan)}
 a:hover{color:var(--primary-light)}
 #page-home .stats,section .stats{background:transparent!important;border:none!important;box-shadow:none!important}
+/* Production UX bugfix: prevent narrow mobile labels from breaking into vertical words. */
+@media(max-width:640px){
+  nav,
+  .site-nav{
+    z-index:6000!important;
+  }
+  [data-mobile-menu]:not(.is-open){
+    display:none;
+  }
+  .nav-links.open,
+  [data-mobile-menu].is-open{
+    display:flex!important;
+    flex-direction:column;
+    z-index:6001!important;
+    pointer-events:auto;
+  }
+  button,
+  .btn,
+  .nav-link,
+  .nav-links a,
+  .resource-card,
+  .resource-link,
+  .chip,
+  .badge,
+  .trust-badge,
+  .tab-button,
+  .output-tab,
+  .v4-out-tab,
+  .calculator-card,
+  .calculator-card label,
+  .example-card,
+  .product-item,
+  .feedback-panel,
+  .feedback-card,
+  .why-faster,
+  .status-bar,
+  .hero-stat,
+  .form-group label,
+  .speed-section-title,
+  .v4-calc-input-row label,
+  .v4-field-label,
+  .two-col,
+  .two-col>div,
+  .speed-mode-box,
+  #v2SearchArea,
+  #v2SearchArea>div,
+  #v2ChipGroups,
+  #v2ChipGroups .speed-section,
+  .output-card,
+  #v4EncounterBuilderPanel{
+    min-width:0!important;
+    max-width:100%!important;
+    word-break:normal!important;
+    overflow-wrap:break-word!important;
+    hyphens:auto;
+    white-space:normal;
+  }
+  .documentation-resources-grid,
+  .resource-grid,
+  .seo-links-grid,
+  .examples-grid,
+  .calculator-grid,
+  .calculator-fields,
+  .feedback-card-grid,
+  .card-grid,
+  .product-row{
+    grid-template-columns:1fr!important;
+  }
+  .chip,
+  .badge,
+  .trust-badge,
+  .tab-button,
+  .output-tab,
+  .v4-out-tab{
+    max-width:100%;
+  }
+  .output-body,
+  .v4-output-box,
+  .v4-output-text,
+  .calculator-result,
+  .example-block pre,
+  pre{
+    white-space:pre-wrap!important;
+    word-break:normal!important;
+    overflow-wrap:break-word!important;
+    overflow-x:auto;
+  }
+}
 </style>
 
 </head>
@@ -7489,7 +7577,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<button class="nav-toggle" id="navToggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
+<button class="nav-toggle" id="navToggle" data-mobile-menu-button aria-label="Toggle menu" aria-expanded="false" type="button">&#9776;</button>
 <button id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme"><span id="themeIcon">&#9790;</span></button>
 
 
@@ -7505,7 +7593,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<div class="nav-links" id="navLinks">
+<div class="nav-links" id="navLinks" data-mobile-menu>
 
 
 
@@ -22235,7 +22323,7 @@ var SD=(function(){
 
 
 
-function showPage(pageId){if(pageId==="calculators"&&!isCalculatorToolsEnabled())pageId="speed";if(window.location.hash!=="#"+pageId&&!window._ignoreHash){window._ignoreHash=true;window.location.hash=pageId;window._ignoreHash=false}var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)el.classList.remove("open");if(pageId==="speed"){populateSpeedSpecialty();var sh=document.querySelectorAll(".v4-speed-output-hidden");for(var si=0;si<sh.length;si++){sh[si].classList.remove("v4-speed-output-hidden")}}if(pageId==="report"){initMedicalReportModule()}var speedHidden=document.querySelectorAll(".v4-speed-output-hidden");if(pageId!=="advanced-encounter"&&speedHidden.length){for(var si=0;si<speedHidden.length;si++){speedHidden[si].classList.remove("v4-speed-output-hidden")}}}
+function showPage(pageId,options){options=options||{};if(pageId==="calculators"&&!isCalculatorToolsEnabled())pageId="speed";if(!options.skipHash&&window.location.hash!=="#"+pageId&&!window._ignoreHash){window._ignoreHash=true;window.location.hash=pageId;window._ignoreHash=false}var pages=document.querySelectorAll(".page");for(var i=0;i<pages.length;i++){pages[i].classList.remove("active")}var target=document.getElementById("page-"+pageId);if(target)target.classList.add("active");var links=document.querySelectorAll(".nav-links a[data-page]");for(var i=0;i<links.length;i++){links[i].classList.remove("active");if(links[i].getAttribute("data-page")===pageId){links[i].classList.add("active")}}var el=document.getElementById("navLinks");if(el)setMobileNavOpen(false);if(pageId==="speed"){populateSpeedSpecialty();var sh=document.querySelectorAll(".v4-speed-output-hidden");for(var si=0;si<sh.length;si++){sh[si].classList.remove("v4-speed-output-hidden")}}if(pageId==="report"){initMedicalReportModule()}var speedHidden=document.querySelectorAll(".v4-speed-output-hidden");if(pageId!=="advanced-encounter"&&speedHidden.length){for(var si=0;si<speedHidden.length;si++){speedHidden[si].classList.remove("v4-speed-output-hidden")}}}
 window.addEventListener("hashchange",function(){var id=window.location.hash.replace("#","")||"home";if(document.getElementById("page-"+id))showPage(id)});
 function goToSpecialty(spec){showPage("speed");requestAnimationFrame(function(){var s=document.getElementById("speedSpecialty");if(s){s.value=spec;upVT();upP()}})}
 
@@ -31057,7 +31145,12 @@ window.renderClinicNoteFormActions = renderClinicNoteFormActions;
 
 
 
-document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();var launchParams=new URLSearchParams(window.location.search);var hashId=window.location.hash.replace("#","");showPage(hashId&&document.getElementById("page-"+hashId)?hashId:window.CLINICNOTE_ROUTE_MODE==="advanced"||launchParams.get("v4")==="encounter2"?"advanced-encounter":(isCalculatorToolsEnabled()?'calculators':(isReportModuleEnabled()?'report':(window.CLINICNOTE_DATA_MODE==='v2'?'speed':'home'))));buildPresets();renderClinicNoteFormActions();document.getElementById("navToggle").addEventListener("click",function(){document.getElementById("navLinks").classList.toggle("open")});window.addEventListener("resize",function(){if(window.innerWidth>640){document.getElementById("navLinks").classList.remove("open")}});applySavedTheme()})
+function resolveInitialPage(){var launchParams=new URLSearchParams(window.location.search);var hashId=window.location.hash.replace("#","");if(hashId&&document.getElementById("page-"+hashId))return hashId;if(window.CLINICNOTE_ROUTE_MODE==="advanced"||launchParams.get("v4")==="encounter2")return"advanced-encounter";return isCalculatorToolsEnabled()?'calculators':(isReportModuleEnabled()?'report':((launchParams.get("speed")==="off"||launchParams.get("speed")==="on"||launchParams.get("data")==="v1")?'speed':'home'))}
+function getMobileNavElements(){return{nav:document.querySelector("[data-mobile-menu]")||document.getElementById("navLinks"),btn:document.querySelector("[data-mobile-menu-button]")||document.getElementById("navToggle")}}
+function setMobileNavOpen(open){var els=getMobileNavElements();if(els.nav){els.nav.classList.toggle("is-open",!!open);els.nav.classList.toggle("open",!!open)}if(els.btn)els.btn.setAttribute("aria-expanded",open?"true":"false")}
+function toggleMobileNav(){var els=getMobileNavElements();setMobileNavOpen(!(els.nav&&(els.nav.classList.contains("is-open")||els.nav.classList.contains("open"))))}
+function bindMobileNav(){if(window._clinicnoteMobileNavBound)return;window._clinicnoteMobileNavBound=true;var els=getMobileNavElements();var btn=els.btn;var nav=els.nav;if(btn&&nav){btn.addEventListener("click",function(e){e.preventDefault();e.stopPropagation();toggleMobileNav()});nav.querySelectorAll("a,button").forEach(function(item){item.addEventListener("click",function(){setMobileNavOpen(false)})})}document.addEventListener("keydown",function(e){if(e.key==="Escape")setMobileNavOpen(false)});document.addEventListener("click",function(e){var current=getMobileNavElements();if(current.nav&&(current.nav.classList.contains("is-open")||current.nav.classList.contains("open"))&&!current.nav.contains(e.target)&&(!current.btn||!current.btn.contains(e.target)))setMobileNavOpen(false)})}
+document.addEventListener("DOMContentLoaded",function(){initMedicalReportModule();showPage(resolveInitialPage(),{skipHash:true});buildPresets();renderClinicNoteFormActions();bindMobileNav();window.addEventListener("resize",function(){if(window.innerWidth>768){setMobileNavOpen(false)}});applySavedTheme()})
 function toggleTheme(){var isLight=document.documentElement.getAttribute("data-theme")==="light";var newTheme=isLight?"dark":"light";document.documentElement.setAttribute("data-theme",newTheme);try{localStorage.setItem("clinicnote-theme",newTheme)}catch(e){}document.getElementById("themeIcon").innerHTML=newTheme==="light"?"☀":"☾"}
 function applySavedTheme(){try{var saved=localStorage.getItem("clinicnote-theme");if(saved){document.documentElement.setAttribute("data-theme",saved);if(document.getElementById("themeIcon"))document.getElementById("themeIcon").innerHTML=saved==="light"?"☀":"☾"}}catch(e){}}
 </script>
