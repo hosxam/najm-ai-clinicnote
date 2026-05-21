@@ -7091,7 +7091,7 @@ html[data-theme="light"] #page-home .hero-stats{margin-left:auto!important;margi
 <!-- Najm AI Theme Effects -->
 <style>
 #bg-canvas{position:fixed;inset:0;z-index:0;pointer-events:none}
-.hero-orbs{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.hero-orbs{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
 .orb{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none}
 .orb1{width:600px;height:400px;background:radial-gradient(ellipse,rgba(0,201,228,0.09),transparent 70%);top:-60px;left:50%;transform:translateX(-50%);animation:float1 9s ease-in-out infinite}
 .orb2{width:300px;height:300px;background:radial-gradient(ellipse,rgba(139,92,246,0.08),transparent 70%);bottom:80px;right:-60px;animation:float2 11s ease-in-out infinite}
@@ -7211,7 +7211,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<body><canvas id="bg-canvas"></canvas><div class="safety-banner">Do not enter patient names, IDs, or contact information. ClinicNote by Najm AI does not store or transmit any data.</div>
+<body><canvas id="bg-canvas"></canvas><div class="hero-orbs"><div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div></div><div class="safety-banner">Do not enter patient names, IDs, or contact information. ClinicNote by Najm AI does not store or transmit any data.</div>
 
 
 
@@ -7354,7 +7354,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<a href="/?v4=encounter2">Advanced Mode</a>
+<a href="./advanced/">Advanced Mode</a>
 
 
 
@@ -7372,7 +7372,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<a href="/#calculator">Calculator Tools</a>
+<a href="./calculators/">Calculator Tools</a>
 
 
 
@@ -7437,7 +7437,7 @@ a:hover{color:var(--primary-light)}
 
 <a class="nav-mobile-only" href="./changelog/">Changelog</a>
 
-<a class="nav-cta" href="/?v4=encounter2">Start Advanced Mode</a>
+<a class="nav-cta" href="./advanced/">Start Advanced Mode</a>
 
 
 
@@ -7526,7 +7526,6 @@ a:hover{color:var(--primary-light)}
 
 
 <section class="hero reveal">
-<div class="hero-orbs"><div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div></div>
 
 
 
@@ -7723,7 +7722,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<button class="btn btn-outline" onclick="window.location.href='/?v4=encounter2'">Start Advanced Mode</button>
+<button class="btn btn-outline" onclick="window.location.href='?v4=encounter2'">Start Advanced Mode</button>
           <p style="font-size:12px;color:var(--gray-500);margin:2px auto 0;line-height:1.5;flex-basis:100%;max-width:560px;text-align:center;order:4">Advanced Mode opens a structured Step 1-6 workflow for fuller encounter drafts.</p>
           <button class="btn btn-outline" onclick="showPage('report')">Medical Report Draft</button>
 
@@ -8209,7 +8208,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<div class="card" onclick="window.location.href='/?v4=encounter2'" style="cursor:pointer;border:2px solid var(--primary);">
+<div class="card" onclick="window.location.href='?v4=encounter2'" style="cursor:pointer;border:2px solid var(--primary);">
 
 
 
@@ -8488,7 +8487,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<div class="product-item launched" style="border-color:var(--amber);background:#fffbeb"><h4>Advanced Mode <span class="badge badge-new" style="background:var(--amber);color:#fff;margin-left:8px;font-size:9px;padding:2px 6px;border-radius:4px">New</span></h4><p>Need a fuller note? Advanced Mode opens a structured Step 1-6 workflow for fuller encounter drafts.</p><button class="btn btn-outline btn-xs" onclick="window.location.href='/?v4=encounter2'" style="margin-top:10px">Open Advanced Mode</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">Use de-identified information only. Advanced Mode outputs are clinician-reviewed drafts.</p></div>
+<div class="product-item launched" style="border-color:var(--amber);background:#fffbeb"><h4>Advanced Mode <span class="badge badge-new" style="background:var(--amber);color:#fff;margin-left:8px;font-size:9px;padding:2px 6px;border-radius:4px">New</span></h4><p>Need a fuller note? Advanced Mode opens a structured Step 1-6 workflow for fuller encounter drafts.</p><button class="btn btn-outline btn-xs" onclick="window.location.href='?v4=encounter2'" style="margin-top:10px">Open Advanced Mode</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">Use de-identified information only. Advanced Mode outputs are clinician-reviewed drafts.</p></div>
 
 
 
@@ -9638,7 +9637,7 @@ Safety-netting: When to present to maternity triage discussed.</pre></div>
 
 
 
-<div><h2>OPD Speed Mode</h2><p>Select quick findings, customize with your input, and generate all outputs with one click. <a href="/?v4=encounter2" style="font-size:11px;color:var(--amber);margin-left:12px;white-space:nowrap">Need a fuller note? Try Advanced Mode &#8599;</a></p></div>
+<div><h2>OPD Speed Mode</h2><p>Select quick findings, customize with your input, and generate all outputs with one click. <a href="?v4=encounter2" style="font-size:11px;color:var(--amber);margin-left:12px;white-space:nowrap">Need a fuller note? Try Advanced Mode &#8599;</a></p></div>
 
 
 
