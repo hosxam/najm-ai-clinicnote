@@ -7092,12 +7092,20 @@ html[data-theme="light"] #page-home .hero-stats{margin-left:auto!important;margi
 <style>
 #bg-canvas{position:fixed;inset:0;z-index:0;pointer-events:none}
 .hero-orbs{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0;opacity:1!important;display:block!important;visibility:visible!important}
-.orb{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none}
-.orb1{width:700px;height:450px;background:radial-gradient(ellipse,rgba(0,201,228,0.25),rgba(0,201,228,0.05) 50%,transparent 70%);top:-80px;left:50%;transform:translateX(-50%);animation:float1 9s ease-in-out infinite}
-.orb2{width:400px;height:400px;background:radial-gradient(ellipse,rgba(139,92,246,0.22),rgba(139,92,246,0.04) 50%,transparent 70%);bottom:60px;right:-80px;animation:float2 11s ease-in-out infinite}
-.orb3{width:280px;height:280px;background:radial-gradient(ellipse,rgba(245,158,11,0.20),rgba(245,158,11,0.04) 50%,transparent 70%);top:160px;left:-60px;animation:float2 13s ease-in-out infinite reverse}
-@keyframes float1{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-20px)}}
-@keyframes float2{0%,100%{transform:translateY(0)}50%{transform:translateY(-18px)}}
+.orb{position:absolute;border-radius:50%;pointer-events:none;will-change:transform,opacity}
+.orb1{width:700px;height:450px;background:radial-gradient(ellipse,rgba(0,201,228,0.30),rgba(0,201,228,0.06) 50%,transparent 70%);top:-80px;left:50%;transform:translateX(-50%);filter:blur(100px);animation:float1 9s ease-in-out infinite}
+.orb2{width:400px;height:400px;background:radial-gradient(ellipse,rgba(139,92,246,0.27),rgba(139,92,246,0.05) 50%,transparent 70%);bottom:60px;right:-80px;filter:blur(100px);animation:float2 11s ease-in-out infinite}
+.orb3{width:280px;height:280px;background:radial-gradient(ellipse,rgba(245,158,11,0.25),rgba(245,158,11,0.05) 50%,transparent 70%);top:160px;left:-60px;filter:blur(100px);animation:float2 13s ease-in-out infinite reverse}
+.orb4{width:500px;height:350px;background:radial-gradient(ellipse,rgba(0,201,228,0.22),rgba(0,201,228,0.04) 50%,transparent 70%);top:40%;left:20%;filter:blur(110px);animation:float3 15s ease-in-out infinite}
+.orb5{width:320px;height:320px;background:radial-gradient(ellipse,rgba(139,92,246,0.20),rgba(139,92,246,0.04) 50%,transparent 70%);top:10%;right:10%;filter:blur(100px);animation:float4 12s ease-in-out infinite}
+.orb6{width:450px;height:300px;background:radial-gradient(ellipse,rgba(245,158,11,0.18),rgba(245,158,11,0.03) 50%,transparent 70%);bottom:30%;left:5%;filter:blur(110px);animation:float1 14s ease-in-out infinite}
+.orb7{width:250px;height:250px;background:radial-gradient(ellipse,rgba(0,201,228,0.20),transparent 70%);top:70%;right:25%;filter:blur(90px);animation:float3 10s ease-in-out infinite reverse}
+.orb8{width:380px;height:380px;background:radial-gradient(ellipse,rgba(139,92,246,0.18),transparent 70%);top:5%;left:5%;filter:blur(100px);animation:float4 16s ease-in-out infinite}
+.orb9{width:200px;height:200px;background:radial-gradient(ellipse,rgba(245,158,11,0.22),transparent 70%);bottom:15%;right:15%;filter:blur(80px);animation:float2 8s ease-in-out infinite reverse}
+@keyframes float1{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-25px)}}
+@keyframes float2{0%,100%{transform:translateY(0)}50%{transform:translateY(-22px)}}
+@keyframes float3{0%,100%{transform:translate(0,0)}50%{transform:translate(20px,-20px)}}
+@keyframes float4{0%,100%{transform:translate(0,0)}50%{transform:translate(-15px,25px)}}
 .hero-pill{display:inline-flex;align-items:center;gap:7px;padding:5px 14px;border-radius:100px;background:var(--cyan-subtle);border:1px solid rgba(0,201,228,0.18);font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);margin-bottom:24px}
 .pill-dot{width:5px;height:5px;border-radius:50%;background:var(--cyan);animation:pulse 2s ease infinite}
 h1 em{font-style:italic;background:linear-gradient(135deg,var(--cyan) 0%,#7EB8FF 60%,#B4A0FF 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
@@ -7211,7 +7219,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<body><canvas id="bg-canvas"></canvas><div class="hero-orbs"><div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div></div><div class="safety-banner">Do not enter patient names, IDs, or contact information. ClinicNote by Najm AI does not store or transmit any data.</div>
+<body><canvas id="bg-canvas"></canvas><div class="hero-orbs"><div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div><div class="orb orb4"></div><div class="orb orb5"></div><div class="orb orb6"></div><div class="orb orb7"></div><div class="orb orb8"></div><div class="orb orb9"></div></div><div class="safety-banner">Do not enter patient names, IDs, or contact information. ClinicNote by Najm AI does not store or transmit any data.</div>
 
 
 
