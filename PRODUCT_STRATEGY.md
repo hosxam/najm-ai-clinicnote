@@ -83,13 +83,11 @@ These are non-negotiable:
 
 ## Monetization Plan
 
-| Tier | Price | Features |
-|------|-------|----------|
-| Free MVP (launch) | $0 | Basic OPD builder, referral builder, patient instructions, all specialties |
-| Early access lifetime | $19 | All future Pro features forever |
-| Pro (future) | $5/mo | More specialties, PDF/Word export, clinic branding, saved templates |
+ClinicNote is free forever. There is no paid tier, no waitlist, no early-access fee, no subscription. The product exists to be useful to doctors and medical students, and the experience must not be cluttered with pricing.
 
-Revenue goal: Pre-sell 50 early access licenses ($950) to validate demand before building Pro.
+The longer-term commercial direction sits in a separate product, **Najm AI Scribe**, currently in research and pilot at NMC Royal Hospital DIP, Dubai. ClinicNote is a free portfolio and distribution asset that supports Scribe development through real-world feedback from working clinicians.
+
+Doctors interested in following Scribe can join an email update list (a Google Form). No paid commitment is asked of any ClinicNote user.
 
 ## Future Path Toward AI Scribe Research
 

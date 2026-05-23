@@ -71,7 +71,7 @@ Doctor-builder, practical, honest, no hype. Write as someone building a clinic t
 ### 20. The next 90 days for ClinicNote
 "Phase 1 (done): MVP launches with 6 specialties, OPD builder, referral builder, instructions.
 Phase 2 (current): 200 weekly users, feedback collection, feature prioritization.
-Phase 3 (next): Pro features: PDF export, custom templates, clinic branding.
+Phase 3 (next): Workflow expansion, deeper chip coverage, Arabic patient instructions, accessibility polish.
 Phase 4 (future): Research into AI scribe infrastructure for institutional settings."
 
 ## Posting schedule
