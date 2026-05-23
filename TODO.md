@@ -22,7 +22,6 @@
 - [ ] Add more specialties: cardiology, neurology, psychiatry, ophthalmology
 - [ ] Add general surgery visit types
 - [ ] Add obstetrics (beyond antenatal) and gynecology surgery follow-ups
-- [ ] Build Pro waitlist landing page
 - [ ] Add PDF export (using browser print-to-PDF or pdf-lib)
 - [ ] Add Word export (using HTML-to-DOC approach)
 - [ ] Add custom template saving (localStorage)

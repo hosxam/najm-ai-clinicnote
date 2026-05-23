@@ -1,74 +1,45 @@
 # Najm AI ClinicNote — Product Page Copy
 
-## Free MVP (index.html hero and value props)
+## Homepage hero
 
-### Hero
-**Headline**: OPD notes, structured in seconds.
-**Subheadline**: Turn rough de-identified doctor notes into SOAP notes, short EMR notes, referral letters, and patient instructions.
-**CTA**: Try ClinicNote (links to OPD Builder)
+**Headline:** OPD notes, structured in seconds.
+**Subheadline:** Tap chips that match what you found. ClinicNote turns them into a clean SOAP note, short EMR note, referral letter, follow-up, and patient instructions in one click.
+**Primary CTA:** Quick OPD Mode
+**Secondary CTA:** Start Advanced Mode
 
-### Value propositions
+## Value props
 
-**Built for every OPD specialty**
-Six specialty presets with visit-type documentation prompts. General Medicine, Orthopedics, Pediatrics, ENT, Dermatology, OB/GYN. Each with context-aware prompts relevant to the encounter.
+### Built for every OPD specialty
+150 workflows across 15 specialties — General Medicine, Cardiology, Pediatrics, OB/GYN, Orthopedics/MSK, Neurology, Respiratory, Gastroenterology, Endocrinology, Urology/Nephrology, ENT, Dermatology, Ophthalmology, Psychiatry, and Emergency / Urgent Care. Each workflow has its own chip set for symptoms, relevant negatives, exam findings, red flags, investigations, plan phrases, and follow-up.
 
-**No prompt engineering required**
-Click your specialty and visit type. Type or paste your note. Click a format button. Done. No "write a SOAP note for..." prompt needed.
+### No prompt engineering required
+Pick a specialty and workflow. Tap chips. Click Generate. Done. No "write me a SOAP note for…" prompt to construct, no AI to coax into the right structure.
 
-**Privacy-first by design**
-ClinicNote runs entirely in your browser. No data is sent to any server. Page refresh clears all content. No PHI handling because the app never sees your patients' names or IDs.
+### Privacy by design
+ClinicNote runs entirely in your browser. No clinical text leaves your device. No login, no patient data storage, no third-party trackers. Two narrow exceptions are disclosed openly on the Privacy page (theme preference saved locally, Google Fonts loaded from Google's CDN). Nothing else.
 
-**Not an AI scribe**
-ClinicNote does not record audio, does not process speech, does not generate diagnoses or treatment plans. It structures what you write. You remain responsible for all clinical content.
+### Not an AI scribe
+ClinicNote does not record audio, does not process speech, does not generate diagnoses, and does not recommend treatment. It structures what you write. The clinician remains responsible for every clinical decision.
 
-**Doctor-reviewed always**
-Every output is an assistant-formatted version of your own clinical content. You review, edit, and approve everything before it enters the medical record.
+### Doctor-controlled, doctor-reviewed
+Every output is a draft built from your chip selections and free-text. Review, edit, and approve every output before it enters a medical record. The tool provides structure, not clinical judgment.
 
-## ClinicNote Pro Waitlist (future page)
+## Who it is for
 
-**Headline**: Get early access to Pro features, one-time price.
-**Subheadline**: ClinicNote Pro is in development. Lock in lifetime access for a single payment.
+- **Doctors** in busy OPD clinics who want to spend more of the consultation looking at the patient and less of it typing.
+- **Medical students and interns** who want a built-in framework so no history component gets forgotten during a presentation.
+- **Locum and clinic staff** who need fast portable note structure without signing up for an EMR.
 
-### Features coming in Pro
-- PDF and Word export with clean formatting
-- Additional specialties (cardiology, neurology, psych, ophthalmology)
-- Saved custom templates (stored locally, not in the cloud)
-- Advanced documentation prompts for complex cases
-- Medico-legal documentation checklist
-- Bilingual Arabic/English output
-- Clinic branding on all outputs
+## Why this exists
 
-### CTA
-**Get early access lifetime: $19**
-One payment. No subscription. All future Pro features included forever.
+ClinicNote is built by [Hossam Abdelmageed](https://www.linkedin.com/in/hossam-abdelmageed-a8b50317a/), medical intern at NMC Royal Hospital DIP, Dubai. It grew out of the everyday reality of OPD shifts — clinically obvious encounters slowed down by minutes of typing, abbreviations, and repeated structure. ClinicNote is what I wish I had on my own first rotation.
 
-### Scarcity (honest, not manufactured)
-Early access is a thank-you to early supporters. It funds development of features that the community requests. Price may increase as more features are built.
+## What is next: Najm AI Scribe
 
-## Early Access Lifetime Deal (landing page)
+Najm AI Scribe is a separate product currently in research and being piloted at NMC Royal Hospital DIP, Dubai. It is a full ambient documentation system for clinics. ClinicNote stays free forever. Scribe is the next step.
 
-### Headline
-Lock in ClinicNote Pro for life at $19.
+If you want to know when Scribe launches, join the email list. No spam, no patient data.
 
-### Body
-You already use ClinicNote for daily OPD notes. You know it saves time. Pro makes it even faster with export, templates, and more specialties.
+## Feedback footer
 
-$19 is a one-time payment for all future Pro features. No subscription. No surprise charges. This is how early supporters help shape the product direction.
-
-### What you get
-- All current ClinicNote features
-- All future Pro features (PDF export, custom templates, clinic branding, additional specialties)
-- Lifetime access at the $19 price point
-- Priority feature requests
-
-### CTA
-**Get lifetime access - $19**
-
-### Fine print
-This is a pre-launch offer for a product in active development. Pro features will be delivered incrementally as they are built. Your $19 supports continued development and server costs (minimal as they are). Refunds available within 30 days if Pro does not meet expectations after launch.
-
-## Email signup (simple form in footer)
-
-**Stay updated**
-Get notified when new specialties and features are added. No spam, no weekly newsletters, just product updates.
-[Email input] [Subscribe]
+The fastest way to suggest a workflow, report a bug, or just talk about the product is WhatsApp at [+971 50 249 5662](https://wa.me/971502495662). For structured feedback, the [feedback page](../feedback/) has Google Form links.

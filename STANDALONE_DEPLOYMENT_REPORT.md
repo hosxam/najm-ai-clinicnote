@@ -10,7 +10,6 @@
 | TODO.md | Same source | No changes needed |
 | PRODUCT_STRATEGY.md | Same source | No changes needed |
 | SAFETY_AND_COMPLIANCE.md | Same source | No changes needed |
-| MONETIZATION_PLAN.md | Same source | No changes needed |
 | PRODUCT_PAGE_COPY.md | Same source | No changes needed |
 | LINKEDIN_CONTENT_SYSTEM.md | Same source | No changes needed |
 | FINAL_REPORT.md | Same source | No changes needed |
