@@ -114,7 +114,7 @@ main{max-width:1080px}
 .card:hover,.feedback-card:hover{transform:translateY(-2px);border-color:var(--bg-border-bright)!important;box-shadow:var(--shadow-lg)!important}
 .card:hover::after,.feedback-card:hover::after{opacity:1}
 .example h3{color:var(--accent-primary)!important}
-pre,code,.example pre{background:#060A12!important;color:var(--text-primary)!important;border:1px solid var(--bg-border)!important;border-radius:var(--radius-lg)!important;font-family:var(--font-mono)!important;line-height:1.7;padding:16px;overflow:auto}
+pre,.example pre{background:#060A12!important;color:var(--text-primary)!important;border:1px solid var(--bg-border)!important;border-radius:var(--radius-lg)!important;font-family:var(--font-mono)!important;line-height:1.7;padding:16px;overflow:auto}
 .safety{background:rgba(245,158,11,.1)!important;border-color:rgba(245,158,11,.3)!important;color:#FCD34D!important}
 .btn{background:var(--accent-primary)!important;border-color:var(--accent-primary)!important;color:var(--text-inverse)!important;border-radius:var(--radius-lg)!important;box-shadow:0 0 24px var(--accent-primary-glow)!important;font-weight:800;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
 .btn:hover{background:#00D9F5!important;color:var(--text-inverse)!important;transform:translateY(-1px);box-shadow:0 0 40px rgba(0,201,228,.3)!important}
@@ -200,7 +200,7 @@ h1{letter-spacing:-.055em}
   pointer-events:none;
 }
 .badge{background:rgba(17,28,46,.9)!important;border-color:rgba(148,163,184,.18)!important}
-pre,code,.example pre{
+pre,.example pre{
   background:linear-gradient(180deg,#07101d,#050913)!important;
   border-color:rgba(45,212,191,.2)!important;
   color:#e6f8ff!important;
@@ -234,7 +234,24 @@ h1,h2,h3{
 .card,.feedback-card,.example,.related a,details{
   background:linear-gradient(180deg,rgba(17,28,46,.94),rgba(15,23,42,.88))!important;
 }
-pre,code,.example pre{
+pre,.example pre{
   background:linear-gradient(180deg,#08111f,#050a13)!important;
   color:#edfaff!important;
+}
+
+
+/* Inline <code> styling. Compact pill that flows with surrounding paragraph text without crowding neighbouring lines. Block-level <pre> retains its full code-block styling above. */
+code{
+  display:inline!important;
+  background:rgba(45,212,191,.1)!important;
+  color:#edfaff!important;
+  border:1px solid rgba(45,212,191,.28)!important;
+  border-radius:5px!important;
+  padding:1px 6px!important;
+  font-family:var(--font-mono)!important;
+  font-size:.88em!important;
+  line-height:inherit!important;
+  white-space:nowrap!important;
+  overflow:visible!important;
+  vertical-align:baseline!important;
 }
