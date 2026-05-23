@@ -93,10 +93,12 @@ Ranked by (usefulness impact + safety risk) / implementation difficulty.
 
 ## Priority: Do Not Build Yet
 
-### 14. Monetization / Waitlist
-- Do not add paywalls or waitlist until doctor feedback confirms real willingness to pay
-- Add a simple email collection form only in exchange for "early access to new features"
-- **When to revisit**: After 10+ doctor testing sessions
+### 14. Monetization
+
+- ClinicNote stays free forever. No paywall, no premium tier, no early-access fee.
+- The homepage carries one email signup for the separate **Najm AI Scribe** product (full ambient documentation, in research and pilot at NMC Royal Hospital DIP, Dubai).
+- Do not introduce ClinicNote pricing or paid features at any point. The product's role is to be useful and to support Scribe through real-world clinician feedback.
+- **When to revisit**: never for ClinicNote pricing. Scribe pricing is a separate decision tied to that product's own pilot results.
 
 ### 15. AI-generated suggestions (LLM integration)
 - Currently output is template-based from chips. Adding LLM would:

@@ -33,14 +33,19 @@ Najm AI ClinicNote is a browser-based clinical documentation tool designed to he
 ## Privacy / Safety
 
 - No login required
-- No patient data stored (no localStorage, no sessionStorage, no cookies)
-- No data sent to external servers (no fetch, XHR, beacon, WebSocket)
-- All data is ephemeral in browser memory
+- No clinical text leaves your device
+- No backend patient data storage (no database, no server-side processing of clinical content)
+- No cookies for tracking
+- No third-party analytics or trackers (no Google Analytics, no Facebook Pixel)
+- One `localStorage` key for theme preference (light/dark) — disclosed openly on the Privacy page
+- Google Fonts loaded from Google's CDN for typography — disclosed openly on the Privacy page
+- Click-out feedback links open Google Forms in a new tab — disclosed openly on the Privacy page
+- Workflow JSON loaded from same-origin static files (no third-party network calls for clinical data)
 - Export uses Blob + object URL only (no upload)
 - Print uses browser print API (no network)
 - Clinical text never appended to form URLs
 - Review footer included on all outputs
-- PHI warning on Medical Report Draft
+- PHI warning on Speed Mode and Medical Report Draft
 
 ## Known Limitations
 

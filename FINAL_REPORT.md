@@ -11,8 +11,7 @@ Najm AI ClinicNote is a doctor-controlled OPD documentation assistant. This MVP 
 | PRODUCT_STRATEGY.md | 1 | Product strategy, differentiation, brand architecture |
 | SAFETY_AND_COMPLIANCE.md | 2 | Safety rules, disclaimers, regulatory notes |
 | index.html | 3-7 | Full static web app (7 pages + 3 tools) |
-| MONETIZATION_PLAN.md | 8 | Pricing tiers, revenue model, go-to-market |
-| PRODUCT_PAGE_COPY.md | 8 | Marketing copy for MVP, Pro waitlist, early access |
+| PRODUCT_PAGE_COPY.md | 8 | Marketing copy for the homepage and sub-pages |
 | LINKEDIN_CONTENT_SYSTEM.md | 9 | 20 LinkedIn posts + publishing schedule |
 | README.md | 10 | Project overview, quick start, safety info |
 | DEPLOYMENT.md | 10 | GitHub Pages and other deployment options |
@@ -61,11 +60,7 @@ Najm AI ClinicNote is a doctor-controlled OPD documentation assistant. This MVP 
 
 ## Monetization Potential
 
-- Free MVP builds adoption (zero friction)
-- Early access lifetime at $19 (one-time revenue)
-- Pro at $5/month (future recurring revenue)
-- Target: 50 early access purchases ($950) in first 90 days
-- Zero server costs (in-browser app)
+ClinicNote itself is free forever. Its commercial role is as a portfolio and distribution asset for the separate Najm AI Scribe product (full ambient documentation, currently in research and pilot at NMC Royal Hospital DIP, Dubai). Doctors who use ClinicNote daily and trust it become the natural early audience for Scribe when it launches; their email signups are the only "list" the project maintains.
 
 ## What Still Requires Manual Work
 
@@ -74,7 +69,7 @@ Najm AI ClinicNote is a doctor-controlled OPD documentation assistant. This MVP 
 - Reviewing Arabic translations with a native speaker
 - Testing the HTML file for JS bugs
 - Adding more specialties and visit types
-- Building Pro features (PDF export, custom templates, clinic branding)
+- Refining workflow chips with feedback from clinicians and medical students
 
 ## Commit Status
 
