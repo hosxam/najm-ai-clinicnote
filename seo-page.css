@@ -139,7 +139,7 @@ footer a:hover{color:var(--accent-primary)!important}
   .nav{align-items:flex-start}
   .nav-links{width:100%;gap:6px}
   .nav-links a{min-height:42px;display:inline-flex;align-items:center}
-  pre,.example pre{font-size:11px;padding:12px}
+  pre,.example pre{font-size:13px;padding:12px}
 }
 
 /* Premium dark healthtech static page polish. Visual-only. */
@@ -254,4 +254,69 @@ code{
   white-space:nowrap!important;
   overflow:visible!important;
   vertical-align:baseline!important;
+}
+
+
+
+/* SEO mobile nav. Hamburger toggle injected by seo-page-mobile-nav.js.
+   Hidden above 720px; the existing .nav-links row stays inline as today.
+   At <=720px it becomes a tappable hamburger and .nav-links collapses
+   into a drawer that slides open under the header. */
+.seo-mobile-nav-toggle{
+  display:none;
+  width:44px;
+  height:44px;
+  padding:0;
+  margin-left:auto;
+  background:transparent;
+  border:1px solid var(--bg-border,rgba(148,163,184,.18));
+  border-radius:8px;
+  cursor:pointer;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  color:inherit;
+}
+.seo-mobile-nav-toggle:focus-visible{
+  outline:2px solid var(--accent-primary,#2dd4bf);
+  outline-offset:2px;
+}
+.seo-mobile-nav-toggle-bar{
+  display:block;
+  width:20px;
+  height:2px;
+  background:currentColor;
+  border-radius:2px;
+  transition:transform .2s ease,opacity .2s ease;
+}
+.seo-mobile-nav-toggle.open .seo-mobile-nav-toggle-bar:nth-child(1){
+  transform:translateY(7px) rotate(45deg);
+}
+.seo-mobile-nav-toggle.open .seo-mobile-nav-toggle-bar:nth-child(2){
+  opacity:0;
+}
+.seo-mobile-nav-toggle.open .seo-mobile-nav-toggle-bar:nth-child(3){
+  transform:translateY(-7px) rotate(-45deg);
+}
+@media(max-width:720px){
+  .seo-mobile-nav-toggle{display:inline-flex}
+  .top .nav{flex-wrap:nowrap;align-items:center}
+  .top .nav-links{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    gap:0;
+    padding:8px 0 4px;
+    border-top:1px solid var(--bg-border,rgba(148,163,184,.18));
+    margin-top:10px;
+  }
+  .top .nav-links.open{display:flex}
+  .top .nav-links a{
+    display:block;
+    width:100%;
+    padding:12px 4px;
+    min-height:44px;
+    border-radius:6px;
+  }
 }
