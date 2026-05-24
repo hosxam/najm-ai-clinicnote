@@ -53414,104 +53414,114 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 8,
-        "relevant_negatives": 5,
-        "exam_findings": 5,
-        "red_flags": 6,
-        "investigations": 4,
-        "plan_phrases": 5,
-        "follow_up": 3
+        "symptoms": 14,
+        "relevant_negatives": 10,
+        "exam_findings": 11,
+        "red_flags": 12,
+        "investigations": 10,
+        "plan_phrases": 11,
+        "follow_up": 6
       },
-      "total_chips": 36,
+      "total_chips": 74,
       "chips": {
         "symptoms": [
           {
             "chip_id": "cardio-chest-pain-symptoms-1",
             "chip_text": "chest pain",
             "order": 1,
-            "search_terms": [
-              "chest"
-            ],
-            "tags": [
-              "pain"
-            ]
+            "search_terms": ["chest"],
+            "tags": ["pain"]
           },
           {
             "chip_id": "cardio-chest-pain-symptoms-2",
             "chip_text": "chest tightness",
             "order": 2,
-            "search_terms": [
-              "chest"
-            ],
-            "tags": [
-              "tightness"
-            ]
+            "search_terms": ["chest"],
+            "tags": ["tightness"]
           },
           {
             "chip_id": "cardio-chest-pain-symptoms-3",
             "chip_text": "pressure-like discomfort",
             "order": 3,
-            "search_terms": [
-              "pressure-like"
-            ],
-            "tags": [
-              "discomfort"
-            ]
+            "search_terms": ["pressure-like"],
+            "tags": ["discomfort"]
           },
           {
             "chip_id": "cardio-chest-pain-symptoms-4",
-            "chip_text": "exertional relation documented",
+            "chip_text": "burning chest pain",
             "order": 4,
-            "search_terms": [
-              "exertional"
-            ],
-            "tags": [
-              "relation"
-            ]
+            "search_terms": ["burning"],
+            "tags": ["chest"]
           },
           {
             "chip_id": "cardio-chest-pain-symptoms-5",
-            "chip_text": "radiation reviewed",
+            "chip_text": "sharp or stabbing pain",
             "order": 5,
-            "search_terms": [
-              "radiation"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["sharp"],
+            "tags": ["or"]
           },
           {
             "chip_id": "cardio-chest-pain-symptoms-6",
-            "chip_text": "associated sweating or nausea reviewed",
+            "chip_text": "pain duration documented",
             "order": 6,
-            "search_terms": [
-              "associated"
-            ],
-            "tags": [
-              "sweating"
-            ]
+            "search_terms": ["pain"],
+            "tags": ["duration"]
           },
           {
             "chip_id": "cardio-chest-pain-symptoms-7",
-            "chip_text": "shortness of breath reviewed",
+            "chip_text": "exertional onset documented",
             "order": 7,
-            "search_terms": [
-              "shortness"
-            ],
-            "tags": [
-              "of"
-            ]
+            "search_terms": ["exertional"],
+            "tags": ["onset"]
           },
           {
             "chip_id": "cardio-chest-pain-symptoms-8",
-            "chip_text": "risk factors reviewed",
+            "chip_text": "pain at rest documented",
             "order": 8,
-            "search_terms": [
-              "risk"
-            ],
-            "tags": [
-              "factors"
-            ]
+            "search_terms": ["pain"],
+            "tags": ["at"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-symptoms-9",
+            "chip_text": "radiation to arm, jaw or back reviewed",
+            "order": 9,
+            "search_terms": ["radiation"],
+            "tags": ["to"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-symptoms-10",
+            "chip_text": "diaphoresis or nausea reviewed",
+            "order": 10,
+            "search_terms": ["diaphoresis"],
+            "tags": ["or"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-symptoms-11",
+            "chip_text": "dyspnea associated with pain reviewed",
+            "order": 11,
+            "search_terms": ["dyspnea"],
+            "tags": ["associated"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-symptoms-12",
+            "chip_text": "syncope or presyncope reviewed",
+            "order": 12,
+            "search_terms": ["syncope"],
+            "tags": ["or"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-symptoms-13",
+            "chip_text": "palpitations reviewed",
+            "order": 13,
+            "search_terms": ["palpitations"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-symptoms-14",
+            "chip_text": "cardiac risk factors reviewed",
+            "order": 14,
+            "search_terms": ["cardiac"],
+            "tags": ["risk"]
           }
         ],
         "relevant_negatives": [
@@ -53519,56 +53529,71 @@
             "chip_id": "cardio-chest-pain-relevant_negatives-1",
             "chip_text": "no syncope reported",
             "order": 1,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "syncope"
-            ]
+            "search_terms": ["no"],
+            "tags": ["syncope"]
           },
           {
             "chip_id": "cardio-chest-pain-relevant_negatives-2",
             "chip_text": "no shortness of breath reported",
             "order": 2,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "shortness"
-            ]
+            "search_terms": ["no"],
+            "tags": ["shortness"]
           },
           {
             "chip_id": "cardio-chest-pain-relevant_negatives-3",
             "chip_text": "no palpitations reported",
             "order": 3,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "palpitations"
-            ]
+            "search_terms": ["no"],
+            "tags": ["palpitations"]
           },
           {
             "chip_id": "cardio-chest-pain-relevant_negatives-4",
-            "chip_text": "no focal neurological symptoms reported",
+            "chip_text": "no severe persistent pain reported",
             "order": 4,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "focal"
-            ]
+            "search_terms": ["no"],
+            "tags": ["severe"]
           },
           {
             "chip_id": "cardio-chest-pain-relevant_negatives-5",
-            "chip_text": "no severe persistent pain reported",
+            "chip_text": "no focal neurological symptoms reported",
             "order": 5,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "severe"
-            ]
+            "search_terms": ["no"],
+            "tags": ["focal"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-relevant_negatives-6",
+            "chip_text": "no tearing or migrating pain reported",
+            "order": 6,
+            "search_terms": ["no"],
+            "tags": ["tearing"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-relevant_negatives-7",
+            "chip_text": "no pleuritic pain reported",
+            "order": 7,
+            "search_terms": ["no"],
+            "tags": ["pleuritic"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-relevant_negatives-8",
+            "chip_text": "no calf swelling or recent immobility reported",
+            "order": 8,
+            "search_terms": ["no"],
+            "tags": ["calf"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-relevant_negatives-9",
+            "chip_text": "no positional or postprandial relation reported",
+            "order": 9,
+            "search_terms": ["no"],
+            "tags": ["positional"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-relevant_negatives-10",
+            "chip_text": "no chest wall tenderness on palpation",
+            "order": 10,
+            "search_terms": ["no"],
+            "tags": ["chest"]
           }
         ],
         "exam_findings": [
@@ -53576,170 +53601,236 @@
             "chip_id": "cardio-chest-pain-exam_findings-1",
             "chip_text": "vital signs documented if measured",
             "order": 1,
-            "search_terms": [
-              "vital"
-            ],
-            "tags": [
-              "signs"
-            ]
+            "search_terms": ["vital"],
+            "tags": ["signs"]
           },
           {
             "chip_id": "cardio-chest-pain-exam_findings-2",
-            "chip_text": "cardiovascular exam documented if assessed",
+            "chip_text": "blood pressure both arms if measured",
             "order": 2,
-            "search_terms": [
-              "cardiovascular"
-            ],
-            "tags": [
-              "exam"
-            ]
+            "search_terms": ["blood"],
+            "tags": ["pressure"]
           },
           {
             "chip_id": "cardio-chest-pain-exam_findings-3",
-            "chip_text": "respiratory exam documented if assessed",
+            "chip_text": "oxygen saturation documented if measured",
             "order": 3,
-            "search_terms": [
-              "respiratory"
-            ],
-            "tags": [
-              "exam"
-            ]
+            "search_terms": ["oxygen"],
+            "tags": ["saturation"]
           },
           {
             "chip_id": "cardio-chest-pain-exam_findings-4",
-            "chip_text": "chest wall tenderness documented if assessed",
+            "chip_text": "cardiovascular exam documented if assessed",
             "order": 4,
-            "search_terms": [
-              "chest"
-            ],
-            "tags": [
-              "wall"
-            ]
+            "search_terms": ["cardiovascular"],
+            "tags": ["exam"]
           },
           {
             "chip_id": "cardio-chest-pain-exam_findings-5",
-            "chip_text": "peripheral perfusion documented if assessed",
+            "chip_text": "murmur or rub documented if heard",
             "order": 5,
-            "search_terms": [
-              "peripheral"
-            ],
-            "tags": [
-              "perfusion"
-            ]
+            "search_terms": ["murmur"],
+            "tags": ["or"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-exam_findings-6",
+            "chip_text": "JVP documented if assessed",
+            "order": 6,
+            "search_terms": ["JVP"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-exam_findings-7",
+            "chip_text": "respiratory exam documented if assessed",
+            "order": 7,
+            "search_terms": ["respiratory"],
+            "tags": ["exam"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-exam_findings-8",
+            "chip_text": "chest wall tenderness documented if assessed",
+            "order": 8,
+            "search_terms": ["chest"],
+            "tags": ["wall"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-exam_findings-9",
+            "chip_text": "peripheral perfusion documented if assessed",
+            "order": 9,
+            "search_terms": ["peripheral"],
+            "tags": ["perfusion"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-exam_findings-10",
+            "chip_text": "pulse symmetry documented if assessed",
+            "order": 10,
+            "search_terms": ["pulse"],
+            "tags": ["symmetry"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-exam_findings-11",
+            "chip_text": "calf or leg findings documented if assessed",
+            "order": 11,
+            "search_terms": ["calf"],
+            "tags": ["or"]
           }
         ],
         "red_flags": [
           {
             "chip_id": "cardio-chest-pain-red_flags-1",
-            "chip_text": "exertional chest pain",
+            "chip_text": "crushing pain over 20 minutes",
             "order": 1,
-            "search_terms": [
-              "exertional"
-            ],
-            "tags": [
-              "chest"
-            ]
+            "search_terms": ["crushing"],
+            "tags": ["pain"]
           },
           {
             "chip_id": "cardio-chest-pain-red_flags-2",
-            "chip_text": "syncope",
+            "chip_text": "pain not relieved by rest or nitrates",
             "order": 2,
-            "search_terms": [
-              "syncope"
-            ],
-            "tags": [
-              "cardiology"
-            ]
+            "search_terms": ["pain"],
+            "tags": ["not"]
           },
           {
             "chip_id": "cardio-chest-pain-red_flags-3",
-            "chip_text": "severe persistent pain",
+            "chip_text": "exertional chest pain",
             "order": 3,
-            "search_terms": [
-              "severe"
-            ],
-            "tags": [
-              "persistent"
-            ]
+            "search_terms": ["exertional"],
+            "tags": ["chest"]
           },
           {
             "chip_id": "cardio-chest-pain-red_flags-4",
-            "chip_text": "abnormal vitals",
+            "chip_text": "syncope with chest pain",
             "order": 4,
-            "search_terms": [
-              "abnormal"
-            ],
-            "tags": [
-              "vitals"
-            ]
+            "search_terms": ["syncope"],
+            "tags": ["with"]
           },
           {
             "chip_id": "cardio-chest-pain-red_flags-5",
-            "chip_text": "associated shortness of breath",
+            "chip_text": "diaphoresis with chest pain",
             "order": 5,
-            "search_terms": [
-              "associated"
-            ],
-            "tags": [
-              "shortness"
-            ]
+            "search_terms": ["diaphoresis"],
+            "tags": ["with"]
           },
           {
             "chip_id": "cardio-chest-pain-red_flags-6",
-            "chip_text": "diaphoresis",
+            "chip_text": "new onset dyspnea with chest pain",
             "order": 6,
-            "search_terms": [
-              "diaphoresis"
-            ],
-            "tags": [
-              "cardiology"
-            ]
+            "search_terms": ["new"],
+            "tags": ["onset"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-red_flags-7",
+            "chip_text": "hemodynamic instability",
+            "order": 7,
+            "search_terms": ["hemodynamic"],
+            "tags": ["instability"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-red_flags-8",
+            "chip_text": "hypoxia under 94 percent",
+            "order": 8,
+            "search_terms": ["hypoxia"],
+            "tags": ["under"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-red_flags-9",
+            "chip_text": "tearing or migrating pain",
+            "order": 9,
+            "search_terms": ["tearing"],
+            "tags": ["or"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-red_flags-10",
+            "chip_text": "asymmetric blood pressure",
+            "order": 10,
+            "search_terms": ["asymmetric"],
+            "tags": ["blood"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-red_flags-11",
+            "chip_text": "new murmur or pericardial rub",
+            "order": 11,
+            "search_terms": ["new"],
+            "tags": ["murmur"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-red_flags-12",
+            "chip_text": "high-risk ECG features documented",
+            "order": 12,
+            "search_terms": ["high-risk"],
+            "tags": ["ECG"]
           }
         ],
         "investigations": [
           {
             "chip_id": "cardio-chest-pain-investigations-1",
-            "chip_text": "ECG reviewed if performed",
+            "chip_text": "12-lead ECG reviewed if performed",
             "order": 1,
-            "search_terms": [
-              "ECG"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["12-lead"],
+            "tags": ["ECG"]
           },
           {
             "chip_id": "cardio-chest-pain-investigations-2",
-            "chip_text": "troponin reviewed if ordered",
+            "chip_text": "serial high-sensitivity troponin reviewed",
             "order": 2,
-            "search_terms": [
-              "troponin"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["serial"],
+            "tags": ["high-sensitivity"]
           },
           {
             "chip_id": "cardio-chest-pain-investigations-3",
-            "chip_text": "chest imaging reviewed if available",
+            "chip_text": "chest X-ray reviewed if performed",
             "order": 3,
-            "search_terms": [
-              "chest"
-            ],
-            "tags": [
-              "imaging"
-            ]
+            "search_terms": ["chest"],
+            "tags": ["X-ray"]
           },
           {
             "chip_id": "cardio-chest-pain-investigations-4",
-            "chip_text": "blood tests reviewed if ordered",
+            "chip_text": "bedside echo reviewed if performed",
             "order": 4,
-            "search_terms": [
-              "blood"
-            ],
-            "tags": [
-              "tests"
-            ]
+            "search_terms": ["bedside"],
+            "tags": ["echo"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-investigations-5",
+            "chip_text": "renal function and electrolytes reviewed",
+            "order": 5,
+            "search_terms": ["renal"],
+            "tags": ["function"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-investigations-6",
+            "chip_text": "lipid profile reviewed if ordered",
+            "order": 6,
+            "search_terms": ["lipid"],
+            "tags": ["profile"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-investigations-7",
+            "chip_text": "D-dimer reviewed if ordered",
+            "order": 7,
+            "search_terms": ["D-dimer"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-investigations-8",
+            "chip_text": "CTPA reviewed if performed",
+            "order": 8,
+            "search_terms": ["CTPA"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-investigations-9",
+            "chip_text": "CT aortogram reviewed if performed",
+            "order": 9,
+            "search_terms": ["CT"],
+            "tags": ["aortogram"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-investigations-10",
+            "chip_text": "CT coronary angiogram reviewed if performed",
+            "order": 10,
+            "search_terms": ["CT"],
+            "tags": ["coronary"]
           }
         ],
         "plan_phrases": [
@@ -53747,91 +53838,122 @@
             "chip_id": "cardio-chest-pain-plan_phrases-1",
             "chip_text": "clinician-entered plan documented",
             "order": 1,
-            "search_terms": [
-              "clinician-entered"
-            ],
-            "tags": [
-              "plan"
-            ]
+            "search_terms": ["clinician-entered"],
+            "tags": ["plan"]
           },
           {
             "chip_id": "cardio-chest-pain-plan_phrases-2",
-            "chip_text": "safety-netting documented if discussed",
+            "chip_text": "risk score documented if calculated",
             "order": 2,
-            "search_terms": [
-              "safety-netting"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["risk"],
+            "tags": ["score"]
           },
           {
             "chip_id": "cardio-chest-pain-plan_phrases-3",
-            "chip_text": "investigation follow-up documented if arranged",
+            "chip_text": "rule-out pathway documented if used",
             "order": 3,
-            "search_terms": [
-              "investigation"
-            ],
-            "tags": [
-              "follow-up"
-            ]
+            "search_terms": ["rule-out"],
+            "tags": ["pathway"]
           },
           {
             "chip_id": "cardio-chest-pain-plan_phrases-4",
-            "chip_text": "referral or escalation documented if clinician decided",
+            "chip_text": "continuous monitoring documented if started",
             "order": 4,
-            "search_terms": [
-              "referral"
-            ],
-            "tags": [
-              "or"
-            ]
+            "search_terms": ["continuous"],
+            "tags": ["monitoring"]
           },
           {
             "chip_id": "cardio-chest-pain-plan_phrases-5",
-            "chip_text": "follow-up documented if arranged",
+            "chip_text": "cardiology referral documented if clinician decided",
             "order": 5,
-            "search_terms": [
-              "follow-up"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["cardiology"],
+            "tags": ["referral"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-plan_phrases-6",
+            "chip_text": "admission decision documented if made",
+            "order": 6,
+            "search_terms": ["admission"],
+            "tags": ["decision"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-plan_phrases-7",
+            "chip_text": "safety-netting documented if discussed",
+            "order": 7,
+            "search_terms": ["safety-netting"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-plan_phrases-8",
+            "chip_text": "investigation follow-up documented if arranged",
+            "order": 8,
+            "search_terms": ["investigation"],
+            "tags": ["follow-up"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-plan_phrases-9",
+            "chip_text": "medication review documented if clinician decided",
+            "order": 9,
+            "search_terms": ["medication"],
+            "tags": ["review"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-plan_phrases-10",
+            "chip_text": "risk factor counselling documented if discussed",
+            "order": 10,
+            "search_terms": ["risk"],
+            "tags": ["factor"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-plan_phrases-11",
+            "chip_text": "follow-up documented if arranged",
+            "order": 11,
+            "search_terms": ["follow-up"],
+            "tags": ["documented"]
           }
         ],
         "follow_up": [
           {
             "chip_id": "cardio-chest-pain-follow_up-1",
-            "chip_text": "follow-up in 1-2 weeks if arranged",
+            "chip_text": "return immediately if symptoms worsen",
             "order": 1,
-            "search_terms": [
-              "follow-up"
-            ],
-            "tags": [
-              "in"
-            ]
+            "search_terms": ["return"],
+            "tags": ["immediately"]
           },
           {
             "chip_id": "cardio-chest-pain-follow_up-2",
-            "chip_text": "return sooner if symptoms worsen",
+            "chip_text": "follow-up in 1 to 2 weeks if arranged",
             "order": 2,
-            "search_terms": [
-              "return"
-            ],
-            "tags": [
-              "sooner"
-            ]
+            "search_terms": ["follow-up"],
+            "tags": ["in"]
           },
           {
             "chip_id": "cardio-chest-pain-follow_up-3",
-            "chip_text": "cardiology follow-up documented if arranged",
+            "chip_text": "rapid access chest pain clinic if referred",
             "order": 3,
-            "search_terms": [
-              "cardiology"
-            ],
-            "tags": [
-              "follow-up"
-            ]
+            "search_terms": ["rapid"],
+            "tags": ["access"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-follow_up-4",
+            "chip_text": "cardiology follow-up documented if arranged",
+            "order": 4,
+            "search_terms": ["cardiology"],
+            "tags": ["follow-up"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-follow_up-5",
+            "chip_text": "ambulatory ECG monitoring if arranged",
+            "order": 5,
+            "search_terms": ["ambulatory"],
+            "tags": ["ECG"]
+          },
+          {
+            "chip_id": "cardio-chest-pain-follow_up-6",
+            "chip_text": "cardiac rehabilitation referral if arranged",
+            "order": 6,
+            "search_terms": ["cardiac"],
+            "tags": ["rehabilitation"]
           }
         ]
       },
@@ -82320,89 +82442,99 @@
           "chip_id": "cardio-chest-pain-symptoms-1",
           "chip_text": "chest pain",
           "order": 1,
-          "search_terms": [
-            "chest"
-          ],
-          "tags": [
-            "pain"
-          ]
+          "search_terms": ["chest"],
+          "tags": ["pain"]
         },
         {
           "chip_id": "cardio-chest-pain-symptoms-2",
           "chip_text": "chest tightness",
           "order": 2,
-          "search_terms": [
-            "chest"
-          ],
-          "tags": [
-            "tightness"
-          ]
+          "search_terms": ["chest"],
+          "tags": ["tightness"]
         },
         {
           "chip_id": "cardio-chest-pain-symptoms-3",
           "chip_text": "pressure-like discomfort",
           "order": 3,
-          "search_terms": [
-            "pressure-like"
-          ],
-          "tags": [
-            "discomfort"
-          ]
+          "search_terms": ["pressure-like"],
+          "tags": ["discomfort"]
         },
         {
           "chip_id": "cardio-chest-pain-symptoms-4",
-          "chip_text": "exertional relation documented",
+          "chip_text": "burning chest pain",
           "order": 4,
-          "search_terms": [
-            "exertional"
-          ],
-          "tags": [
-            "relation"
-          ]
+          "search_terms": ["burning"],
+          "tags": ["chest"]
         },
         {
           "chip_id": "cardio-chest-pain-symptoms-5",
-          "chip_text": "radiation reviewed",
+          "chip_text": "sharp or stabbing pain",
           "order": 5,
-          "search_terms": [
-            "radiation"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["sharp"],
+          "tags": ["or"]
         },
         {
           "chip_id": "cardio-chest-pain-symptoms-6",
-          "chip_text": "associated sweating or nausea reviewed",
+          "chip_text": "pain duration documented",
           "order": 6,
-          "search_terms": [
-            "associated"
-          ],
-          "tags": [
-            "sweating"
-          ]
+          "search_terms": ["pain"],
+          "tags": ["duration"]
         },
         {
           "chip_id": "cardio-chest-pain-symptoms-7",
-          "chip_text": "shortness of breath reviewed",
+          "chip_text": "exertional onset documented",
           "order": 7,
-          "search_terms": [
-            "shortness"
-          ],
-          "tags": [
-            "of"
-          ]
+          "search_terms": ["exertional"],
+          "tags": ["onset"]
         },
         {
           "chip_id": "cardio-chest-pain-symptoms-8",
-          "chip_text": "risk factors reviewed",
+          "chip_text": "pain at rest documented",
           "order": 8,
-          "search_terms": [
-            "risk"
-          ],
-          "tags": [
-            "factors"
-          ]
+          "search_terms": ["pain"],
+          "tags": ["at"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-symptoms-9",
+          "chip_text": "radiation to arm, jaw or back reviewed",
+          "order": 9,
+          "search_terms": ["radiation"],
+          "tags": ["to"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-symptoms-10",
+          "chip_text": "diaphoresis or nausea reviewed",
+          "order": 10,
+          "search_terms": ["diaphoresis"],
+          "tags": ["or"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-symptoms-11",
+          "chip_text": "dyspnea associated with pain reviewed",
+          "order": 11,
+          "search_terms": ["dyspnea"],
+          "tags": ["associated"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-symptoms-12",
+          "chip_text": "syncope or presyncope reviewed",
+          "order": 12,
+          "search_terms": ["syncope"],
+          "tags": ["or"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-symptoms-13",
+          "chip_text": "palpitations reviewed",
+          "order": 13,
+          "search_terms": ["palpitations"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-symptoms-14",
+          "chip_text": "cardiac risk factors reviewed",
+          "order": 14,
+          "search_terms": ["cardiac"],
+          "tags": ["risk"]
         }
       ],
       "relevant_negatives": [
@@ -82410,56 +82542,71 @@
           "chip_id": "cardio-chest-pain-relevant_negatives-1",
           "chip_text": "no syncope reported",
           "order": 1,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "syncope"
-          ]
+          "search_terms": ["no"],
+          "tags": ["syncope"]
         },
         {
           "chip_id": "cardio-chest-pain-relevant_negatives-2",
           "chip_text": "no shortness of breath reported",
           "order": 2,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "shortness"
-          ]
+          "search_terms": ["no"],
+          "tags": ["shortness"]
         },
         {
           "chip_id": "cardio-chest-pain-relevant_negatives-3",
           "chip_text": "no palpitations reported",
           "order": 3,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "palpitations"
-          ]
+          "search_terms": ["no"],
+          "tags": ["palpitations"]
         },
         {
           "chip_id": "cardio-chest-pain-relevant_negatives-4",
-          "chip_text": "no focal neurological symptoms reported",
+          "chip_text": "no severe persistent pain reported",
           "order": 4,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "focal"
-          ]
+          "search_terms": ["no"],
+          "tags": ["severe"]
         },
         {
           "chip_id": "cardio-chest-pain-relevant_negatives-5",
-          "chip_text": "no severe persistent pain reported",
+          "chip_text": "no focal neurological symptoms reported",
           "order": 5,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "severe"
-          ]
+          "search_terms": ["no"],
+          "tags": ["focal"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-relevant_negatives-6",
+          "chip_text": "no tearing or migrating pain reported",
+          "order": 6,
+          "search_terms": ["no"],
+          "tags": ["tearing"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-relevant_negatives-7",
+          "chip_text": "no pleuritic pain reported",
+          "order": 7,
+          "search_terms": ["no"],
+          "tags": ["pleuritic"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-relevant_negatives-8",
+          "chip_text": "no calf swelling or recent immobility reported",
+          "order": 8,
+          "search_terms": ["no"],
+          "tags": ["calf"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-relevant_negatives-9",
+          "chip_text": "no positional or postprandial relation reported",
+          "order": 9,
+          "search_terms": ["no"],
+          "tags": ["positional"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-relevant_negatives-10",
+          "chip_text": "no chest wall tenderness on palpation",
+          "order": 10,
+          "search_terms": ["no"],
+          "tags": ["chest"]
         }
       ],
       "exam_findings": [
@@ -82467,170 +82614,236 @@
           "chip_id": "cardio-chest-pain-exam_findings-1",
           "chip_text": "vital signs documented if measured",
           "order": 1,
-          "search_terms": [
-            "vital"
-          ],
-          "tags": [
-            "signs"
-          ]
+          "search_terms": ["vital"],
+          "tags": ["signs"]
         },
         {
           "chip_id": "cardio-chest-pain-exam_findings-2",
-          "chip_text": "cardiovascular exam documented if assessed",
+          "chip_text": "blood pressure both arms if measured",
           "order": 2,
-          "search_terms": [
-            "cardiovascular"
-          ],
-          "tags": [
-            "exam"
-          ]
+          "search_terms": ["blood"],
+          "tags": ["pressure"]
         },
         {
           "chip_id": "cardio-chest-pain-exam_findings-3",
-          "chip_text": "respiratory exam documented if assessed",
+          "chip_text": "oxygen saturation documented if measured",
           "order": 3,
-          "search_terms": [
-            "respiratory"
-          ],
-          "tags": [
-            "exam"
-          ]
+          "search_terms": ["oxygen"],
+          "tags": ["saturation"]
         },
         {
           "chip_id": "cardio-chest-pain-exam_findings-4",
-          "chip_text": "chest wall tenderness documented if assessed",
+          "chip_text": "cardiovascular exam documented if assessed",
           "order": 4,
-          "search_terms": [
-            "chest"
-          ],
-          "tags": [
-            "wall"
-          ]
+          "search_terms": ["cardiovascular"],
+          "tags": ["exam"]
         },
         {
           "chip_id": "cardio-chest-pain-exam_findings-5",
-          "chip_text": "peripheral perfusion documented if assessed",
+          "chip_text": "murmur or rub documented if heard",
           "order": 5,
-          "search_terms": [
-            "peripheral"
-          ],
-          "tags": [
-            "perfusion"
-          ]
+          "search_terms": ["murmur"],
+          "tags": ["or"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-exam_findings-6",
+          "chip_text": "JVP documented if assessed",
+          "order": 6,
+          "search_terms": ["JVP"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-exam_findings-7",
+          "chip_text": "respiratory exam documented if assessed",
+          "order": 7,
+          "search_terms": ["respiratory"],
+          "tags": ["exam"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-exam_findings-8",
+          "chip_text": "chest wall tenderness documented if assessed",
+          "order": 8,
+          "search_terms": ["chest"],
+          "tags": ["wall"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-exam_findings-9",
+          "chip_text": "peripheral perfusion documented if assessed",
+          "order": 9,
+          "search_terms": ["peripheral"],
+          "tags": ["perfusion"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-exam_findings-10",
+          "chip_text": "pulse symmetry documented if assessed",
+          "order": 10,
+          "search_terms": ["pulse"],
+          "tags": ["symmetry"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-exam_findings-11",
+          "chip_text": "calf or leg findings documented if assessed",
+          "order": 11,
+          "search_terms": ["calf"],
+          "tags": ["or"]
         }
       ],
       "red_flags": [
         {
           "chip_id": "cardio-chest-pain-red_flags-1",
-          "chip_text": "exertional chest pain",
+          "chip_text": "crushing pain over 20 minutes",
           "order": 1,
-          "search_terms": [
-            "exertional"
-          ],
-          "tags": [
-            "chest"
-          ]
+          "search_terms": ["crushing"],
+          "tags": ["pain"]
         },
         {
           "chip_id": "cardio-chest-pain-red_flags-2",
-          "chip_text": "syncope",
+          "chip_text": "pain not relieved by rest or nitrates",
           "order": 2,
-          "search_terms": [
-            "syncope"
-          ],
-          "tags": [
-            "cardiology"
-          ]
+          "search_terms": ["pain"],
+          "tags": ["not"]
         },
         {
           "chip_id": "cardio-chest-pain-red_flags-3",
-          "chip_text": "severe persistent pain",
+          "chip_text": "exertional chest pain",
           "order": 3,
-          "search_terms": [
-            "severe"
-          ],
-          "tags": [
-            "persistent"
-          ]
+          "search_terms": ["exertional"],
+          "tags": ["chest"]
         },
         {
           "chip_id": "cardio-chest-pain-red_flags-4",
-          "chip_text": "abnormal vitals",
+          "chip_text": "syncope with chest pain",
           "order": 4,
-          "search_terms": [
-            "abnormal"
-          ],
-          "tags": [
-            "vitals"
-          ]
+          "search_terms": ["syncope"],
+          "tags": ["with"]
         },
         {
           "chip_id": "cardio-chest-pain-red_flags-5",
-          "chip_text": "associated shortness of breath",
+          "chip_text": "diaphoresis with chest pain",
           "order": 5,
-          "search_terms": [
-            "associated"
-          ],
-          "tags": [
-            "shortness"
-          ]
+          "search_terms": ["diaphoresis"],
+          "tags": ["with"]
         },
         {
           "chip_id": "cardio-chest-pain-red_flags-6",
-          "chip_text": "diaphoresis",
+          "chip_text": "new onset dyspnea with chest pain",
           "order": 6,
-          "search_terms": [
-            "diaphoresis"
-          ],
-          "tags": [
-            "cardiology"
-          ]
+          "search_terms": ["new"],
+          "tags": ["onset"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-red_flags-7",
+          "chip_text": "hemodynamic instability",
+          "order": 7,
+          "search_terms": ["hemodynamic"],
+          "tags": ["instability"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-red_flags-8",
+          "chip_text": "hypoxia under 94 percent",
+          "order": 8,
+          "search_terms": ["hypoxia"],
+          "tags": ["under"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-red_flags-9",
+          "chip_text": "tearing or migrating pain",
+          "order": 9,
+          "search_terms": ["tearing"],
+          "tags": ["or"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-red_flags-10",
+          "chip_text": "asymmetric blood pressure",
+          "order": 10,
+          "search_terms": ["asymmetric"],
+          "tags": ["blood"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-red_flags-11",
+          "chip_text": "new murmur or pericardial rub",
+          "order": 11,
+          "search_terms": ["new"],
+          "tags": ["murmur"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-red_flags-12",
+          "chip_text": "high-risk ECG features documented",
+          "order": 12,
+          "search_terms": ["high-risk"],
+          "tags": ["ECG"]
         }
       ],
       "investigations": [
         {
           "chip_id": "cardio-chest-pain-investigations-1",
-          "chip_text": "ECG reviewed if performed",
+          "chip_text": "12-lead ECG reviewed if performed",
           "order": 1,
-          "search_terms": [
-            "ECG"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["12-lead"],
+          "tags": ["ECG"]
         },
         {
           "chip_id": "cardio-chest-pain-investigations-2",
-          "chip_text": "troponin reviewed if ordered",
+          "chip_text": "serial high-sensitivity troponin reviewed",
           "order": 2,
-          "search_terms": [
-            "troponin"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["serial"],
+          "tags": ["high-sensitivity"]
         },
         {
           "chip_id": "cardio-chest-pain-investigations-3",
-          "chip_text": "chest imaging reviewed if available",
+          "chip_text": "chest X-ray reviewed if performed",
           "order": 3,
-          "search_terms": [
-            "chest"
-          ],
-          "tags": [
-            "imaging"
-          ]
+          "search_terms": ["chest"],
+          "tags": ["X-ray"]
         },
         {
           "chip_id": "cardio-chest-pain-investigations-4",
-          "chip_text": "blood tests reviewed if ordered",
+          "chip_text": "bedside echo reviewed if performed",
           "order": 4,
-          "search_terms": [
-            "blood"
-          ],
-          "tags": [
-            "tests"
-          ]
+          "search_terms": ["bedside"],
+          "tags": ["echo"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-investigations-5",
+          "chip_text": "renal function and electrolytes reviewed",
+          "order": 5,
+          "search_terms": ["renal"],
+          "tags": ["function"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-investigations-6",
+          "chip_text": "lipid profile reviewed if ordered",
+          "order": 6,
+          "search_terms": ["lipid"],
+          "tags": ["profile"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-investigations-7",
+          "chip_text": "D-dimer reviewed if ordered",
+          "order": 7,
+          "search_terms": ["D-dimer"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-investigations-8",
+          "chip_text": "CTPA reviewed if performed",
+          "order": 8,
+          "search_terms": ["CTPA"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-investigations-9",
+          "chip_text": "CT aortogram reviewed if performed",
+          "order": 9,
+          "search_terms": ["CT"],
+          "tags": ["aortogram"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-investigations-10",
+          "chip_text": "CT coronary angiogram reviewed if performed",
+          "order": 10,
+          "search_terms": ["CT"],
+          "tags": ["coronary"]
         }
       ],
       "plan_phrases": [
@@ -82638,91 +82851,122 @@
           "chip_id": "cardio-chest-pain-plan_phrases-1",
           "chip_text": "clinician-entered plan documented",
           "order": 1,
-          "search_terms": [
-            "clinician-entered"
-          ],
-          "tags": [
-            "plan"
-          ]
+          "search_terms": ["clinician-entered"],
+          "tags": ["plan"]
         },
         {
           "chip_id": "cardio-chest-pain-plan_phrases-2",
-          "chip_text": "safety-netting documented if discussed",
+          "chip_text": "risk score documented if calculated",
           "order": 2,
-          "search_terms": [
-            "safety-netting"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["risk"],
+          "tags": ["score"]
         },
         {
           "chip_id": "cardio-chest-pain-plan_phrases-3",
-          "chip_text": "investigation follow-up documented if arranged",
+          "chip_text": "rule-out pathway documented if used",
           "order": 3,
-          "search_terms": [
-            "investigation"
-          ],
-          "tags": [
-            "follow-up"
-          ]
+          "search_terms": ["rule-out"],
+          "tags": ["pathway"]
         },
         {
           "chip_id": "cardio-chest-pain-plan_phrases-4",
-          "chip_text": "referral or escalation documented if clinician decided",
+          "chip_text": "continuous monitoring documented if started",
           "order": 4,
-          "search_terms": [
-            "referral"
-          ],
-          "tags": [
-            "or"
-          ]
+          "search_terms": ["continuous"],
+          "tags": ["monitoring"]
         },
         {
           "chip_id": "cardio-chest-pain-plan_phrases-5",
-          "chip_text": "follow-up documented if arranged",
+          "chip_text": "cardiology referral documented if clinician decided",
           "order": 5,
-          "search_terms": [
-            "follow-up"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["cardiology"],
+          "tags": ["referral"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-plan_phrases-6",
+          "chip_text": "admission decision documented if made",
+          "order": 6,
+          "search_terms": ["admission"],
+          "tags": ["decision"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-plan_phrases-7",
+          "chip_text": "safety-netting documented if discussed",
+          "order": 7,
+          "search_terms": ["safety-netting"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-plan_phrases-8",
+          "chip_text": "investigation follow-up documented if arranged",
+          "order": 8,
+          "search_terms": ["investigation"],
+          "tags": ["follow-up"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-plan_phrases-9",
+          "chip_text": "medication review documented if clinician decided",
+          "order": 9,
+          "search_terms": ["medication"],
+          "tags": ["review"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-plan_phrases-10",
+          "chip_text": "risk factor counselling documented if discussed",
+          "order": 10,
+          "search_terms": ["risk"],
+          "tags": ["factor"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-plan_phrases-11",
+          "chip_text": "follow-up documented if arranged",
+          "order": 11,
+          "search_terms": ["follow-up"],
+          "tags": ["documented"]
         }
       ],
       "follow_up": [
         {
           "chip_id": "cardio-chest-pain-follow_up-1",
-          "chip_text": "follow-up in 1-2 weeks if arranged",
+          "chip_text": "return immediately if symptoms worsen",
           "order": 1,
-          "search_terms": [
-            "follow-up"
-          ],
-          "tags": [
-            "in"
-          ]
+          "search_terms": ["return"],
+          "tags": ["immediately"]
         },
         {
           "chip_id": "cardio-chest-pain-follow_up-2",
-          "chip_text": "return sooner if symptoms worsen",
+          "chip_text": "follow-up in 1 to 2 weeks if arranged",
           "order": 2,
-          "search_terms": [
-            "return"
-          ],
-          "tags": [
-            "sooner"
-          ]
+          "search_terms": ["follow-up"],
+          "tags": ["in"]
         },
         {
           "chip_id": "cardio-chest-pain-follow_up-3",
-          "chip_text": "cardiology follow-up documented if arranged",
+          "chip_text": "rapid access chest pain clinic if referred",
           "order": 3,
-          "search_terms": [
-            "cardiology"
-          ],
-          "tags": [
-            "follow-up"
-          ]
+          "search_terms": ["rapid"],
+          "tags": ["access"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-follow_up-4",
+          "chip_text": "cardiology follow-up documented if arranged",
+          "order": 4,
+          "search_terms": ["cardiology"],
+          "tags": ["follow-up"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-follow_up-5",
+          "chip_text": "ambulatory ECG monitoring if arranged",
+          "order": 5,
+          "search_terms": ["ambulatory"],
+          "tags": ["ECG"]
+        },
+        {
+          "chip_id": "cardio-chest-pain-follow_up-6",
+          "chip_text": "cardiac rehabilitation referral if arranged",
+          "order": 6,
+          "search_terms": ["cardiac"],
+          "tags": ["rehabilitation"]
         }
       ]
     },
