@@ -830,10 +830,11 @@
         "section_label": "General appearance and activity",
         "display_order": 1,
         "applicable_workflow_ids": [
-          "peds-fever",
+          "peds-fever-child",
           "peds-cough",
           "peds-rash",
-          "peds-poor-feeding"
+          "peds-poor-feeding",
+          "peds-fever-infant"
         ],
         "applicable_complaints": [
           "pediatric fever",
@@ -877,9 +878,10 @@
         "section_label": "Hydration, feeding, and urine output",
         "display_order": 2,
         "applicable_workflow_ids": [
-          "peds-fever",
+          "peds-fever-child",
           "peds-vomiting-diarrhea",
-          "peds-poor-feeding"
+          "peds-poor-feeding",
+          "peds-fever-infant"
         ],
         "applicable_complaints": [
           "pediatric fever",
@@ -932,7 +934,8 @@
         "display_order": 3,
         "applicable_workflow_ids": [
           "peds-cough",
-          "peds-fever"
+          "peds-fever-child",
+          "peds-fever-infant"
         ],
         "applicable_complaints": [
           "pediatric cough",
@@ -983,8 +986,9 @@
         "section_label": "Temperature and rash documentation",
         "display_order": 4,
         "applicable_workflow_ids": [
-          "peds-fever",
-          "peds-rash"
+          "peds-fever-child",
+          "peds-rash",
+          "peds-fever-infant"
         ],
         "applicable_complaints": [
           "pediatric fever",

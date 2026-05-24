@@ -960,16 +960,16 @@
     ]
   },
   {
-    "workflow_id": "peds-fever",
+    "workflow_id": "peds-fever-child",
     "specialty_id": "Pediatrics",
-    "chief_complaint": "Fever",
+    "chief_complaint": "Fever in child (>3 months)",
     "chief_complaint_aliases": [],
-    "diagnosis": "Viral fever",
+    "diagnosis": "Viral fever in child",
     "diagnosis_aliases": [],
     "history_layout_id": "Pediatrics",
     "filters": {
       "age_min_months": 3,
-      "age_max_years": null,
+      "age_max_years": 12,
       "sex": null
     },
     "icd_metadata": {
@@ -8159,6 +8159,62 @@
       {
         "group": "follow_up",
         "order": 5,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "peds-fever-infant",
+    "specialty_id": "Pediatrics",
+    "chief_complaint": "Fever in infant (<3 months)",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Fever in infant (sepsis workup)",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Pediatrics",
+    "filters": {
+      "age_min_months": 0,
+      "age_max_years": 0.25,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "R50.9",
+      "icd_label": "Fever",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
         "prompt": "Follow-up interval"
       }
     ],

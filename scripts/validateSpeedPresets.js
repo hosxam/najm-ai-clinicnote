@@ -74,7 +74,7 @@ const disallowedPhrases = [
 ];
 
 const highRiskPositiveSymptomPattern = /\b(suicidal|self-harm|harm to others|vision loss|reduced vision|severe eye pain|chemical exposure|stridor|drooling|facial weakness|mastoid swelling|heavy bleeding|unstable|peritoneal|saddle anesthesia|respiratory distress|cyanosis|non-blanching|mucosal involvement|facial or lip swelling|skin peeling|immunocompromised)\b/i;
-const expectedPresetCount = 150;
+const expectedPresetCount = 151;
 const warnAboveTotalChips = 25;
 
 function readJson(filePath) {

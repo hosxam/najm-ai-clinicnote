@@ -171,8 +171,8 @@
     "review_required": true
   },
   {
-    "workflow_id": "peds-fever",
-    "workflow_display_name": "Paediatric Fever",
+    "workflow_id": "peds-fever-child",
+    "workflow_display_name": "Paediatric Fever (>3 months)",
     "investigation_groups": [
       {
         "group_id": "bedside",
@@ -6631,6 +6631,61 @@
             "required_level": "conditional",
             "source_status": "draft",
             "note_text": "ECG reviewed."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-fever-infant",
+    "workflow_display_name": "Infant Fever (<3 months) — Sepsis Workup",
+    "investigation_groups": [
+      {
+        "group_id": "bedside",
+        "group_label": "Bedside / vitals",
+        "options": [
+          {
+            "option_id": "temperature_recorded",
+            "option_text": "Temperature recorded if measured.",
+            "required_level": "workflow_specific",
+            "source_status": "draft",
+            "note_text": "Blood pressure recorded."
+          }
+        ]
+      },
+      {
+        "group_id": "lab",
+        "group_label": "Laboratory",
+        "options": [
+          {
+            "option_id": "urine_dip_reviewed",
+            "option_text": "Urine dip reviewed if done.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Urine dip reviewed."
+          },
+          {
+            "option_id": "cbc_reviewed",
+            "option_text": "CBC reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CBC reviewed."
+          },
+          {
+            "option_id": "crp_reviewed",
+            "option_text": "CRP reviewed if ordered.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "CRP reviewed."
+          },
+          {
+            "option_id": "cultures_reviewed",
+            "option_text": "Cultures reviewed if available.",
+            "required_level": "conditional",
+            "source_status": "draft",
+            "note_text": "Cultures reviewed."
           }
         ]
       }

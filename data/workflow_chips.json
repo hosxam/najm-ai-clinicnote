@@ -85939,11 +85939,11 @@
     ]
   },
   {
-    "workflow_id": "peds-fever",
+    "workflow_id": "peds-fever-child",
     "specialty_id": "Pediatrics",
     "chips": [
       {
-        "chip_id": "peds-fever-symptoms-1",
+        "chip_id": "peds-fever-child-symptoms-1",
         "group": "symptoms",
         "chip_text": "fever 39.2°C 2 days",
         "order": 1,
@@ -85955,7 +85955,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-symptoms-2",
+        "chip_id": "peds-fever-child-symptoms-2",
         "group": "symptoms",
         "chip_text": "irritable but consolable",
         "order": 2,
@@ -85967,7 +85967,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-symptoms-3",
+        "chip_id": "peds-fever-child-symptoms-3",
         "group": "symptoms",
         "chip_text": "reduced oral intake",
         "order": 3,
@@ -85979,7 +85979,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-symptoms-4",
+        "chip_id": "peds-fever-child-symptoms-4",
         "group": "symptoms",
         "chip_text": "no rash",
         "order": 4,
@@ -85991,7 +85991,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-symptoms-5",
+        "chip_id": "peds-fever-child-symptoms-5",
         "group": "symptoms",
         "chip_text": "runny nose clear",
         "order": 5,
@@ -86003,7 +86003,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-symptoms-6",
+        "chip_id": "peds-fever-child-symptoms-6",
         "group": "symptoms",
         "chip_text": "mild cough dry",
         "order": 6,
@@ -86015,7 +86015,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-symptoms-7",
+        "chip_id": "peds-fever-child-symptoms-7",
         "group": "symptoms",
         "chip_text": "no vomiting",
         "order": 7,
@@ -86027,7 +86027,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-symptoms-8",
+        "chip_id": "peds-fever-child-symptoms-8",
         "group": "symptoms",
         "chip_text": "wet nappies reduced (4 today vs usual 6)",
         "order": 8,
@@ -86039,7 +86039,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-symptoms-9",
+        "chip_id": "peds-fever-child-symptoms-9",
         "group": "symptoms",
         "chip_text": "no rigors",
         "order": 9,
@@ -86051,7 +86051,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-symptoms-10",
+        "chip_id": "peds-fever-child-symptoms-10",
         "group": "symptoms",
         "chip_text": "sleeping more than usual",
         "order": 10,
@@ -86063,7 +86063,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-symptoms-11",
+        "chip_id": "peds-fever-child-symptoms-11",
         "group": "symptoms",
         "chip_text": "age 18 months",
         "order": 11,
@@ -86075,7 +86075,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-symptoms-12",
+        "chip_id": "peds-fever-child-symptoms-12",
         "group": "symptoms",
         "chip_text": "no sick contacts at nursery",
         "order": 12,
@@ -86087,7 +86087,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-relevant_negatives-1",
+        "chip_id": "peds-fever-child-relevant_negatives-1",
         "group": "relevant_negatives",
         "chip_text": "no rash (non-blanching checked)",
         "order": 1,
@@ -86099,7 +86099,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-relevant_negatives-2",
+        "chip_id": "peds-fever-child-relevant_negatives-2",
         "group": "relevant_negatives",
         "chip_text": "no neck stiffness",
         "order": 2,
@@ -86111,7 +86111,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-relevant_negatives-3",
+        "chip_id": "peds-fever-child-relevant_negatives-3",
         "group": "relevant_negatives",
         "chip_text": "no bulging fontanelle",
         "order": 3,
@@ -86123,7 +86123,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-relevant_negatives-4",
+        "chip_id": "peds-fever-child-relevant_negatives-4",
         "group": "relevant_negatives",
         "chip_text": "no seizures",
         "order": 4,
@@ -86135,7 +86135,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-relevant_negatives-5",
+        "chip_id": "peds-fever-child-relevant_negatives-5",
         "group": "relevant_negatives",
         "chip_text": "no photophobia",
         "order": 5,
@@ -86147,7 +86147,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-relevant_negatives-6",
+        "chip_id": "peds-fever-child-relevant_negatives-6",
         "group": "relevant_negatives",
         "chip_text": "no limb pain or refusal to weight-bear",
         "order": 6,
@@ -86159,7 +86159,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-relevant_negatives-7",
+        "chip_id": "peds-fever-child-relevant_negatives-7",
         "group": "relevant_negatives",
         "chip_text": "no ear pulling",
         "order": 7,
@@ -86171,7 +86171,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-relevant_negatives-8",
+        "chip_id": "peds-fever-child-relevant_negatives-8",
         "group": "relevant_negatives",
         "chip_text": "no dysuria or offensive urine",
         "order": 8,
@@ -86183,7 +86183,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-relevant_negatives-9",
+        "chip_id": "peds-fever-child-relevant_negatives-9",
         "group": "relevant_negatives",
         "chip_text": "no travel history",
         "order": 9,
@@ -86195,7 +86195,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-exam_findings-1",
+        "chip_id": "peds-fever-child-exam_findings-1",
         "group": "exam_findings",
         "chip_text": "temp 38.8°C, HR 140, RR 30, SpO2 98% RA",
         "order": 1,
@@ -86207,7 +86207,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-exam_findings-2",
+        "chip_id": "peds-fever-child-exam_findings-2",
         "group": "exam_findings",
         "chip_text": "weight 12kg (50th centile)",
         "order": 2,
@@ -86219,7 +86219,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-exam_findings-3",
+        "chip_id": "peds-fever-child-exam_findings-3",
         "group": "exam_findings",
         "chip_text": "alert, interactive, smiling",
         "order": 3,
@@ -86231,7 +86231,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-exam_findings-4",
+        "chip_id": "peds-fever-child-exam_findings-4",
         "group": "exam_findings",
         "chip_text": "well-perfused, CRT <2s",
         "order": 4,
@@ -86243,7 +86243,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-exam_findings-5",
+        "chip_id": "peds-fever-child-exam_findings-5",
         "group": "exam_findings",
         "chip_text": "no rash",
         "order": 5,
@@ -86255,7 +86255,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-exam_findings-6",
+        "chip_id": "peds-fever-child-exam_findings-6",
         "group": "exam_findings",
         "chip_text": "anterior fontanelle flat",
         "order": 6,
@@ -86267,7 +86267,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-exam_findings-7",
+        "chip_id": "peds-fever-child-exam_findings-7",
         "group": "exam_findings",
         "chip_text": "ENT: TMs clear bilat, throat mildly erythematous",
         "order": 7,
@@ -86279,7 +86279,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-exam_findings-8",
+        "chip_id": "peds-fever-child-exam_findings-8",
         "group": "exam_findings",
         "chip_text": "chest clear, no recession",
         "order": 8,
@@ -86291,7 +86291,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-exam_findings-9",
+        "chip_id": "peds-fever-child-exam_findings-9",
         "group": "exam_findings",
         "chip_text": "abdomen soft, no organomegaly",
         "order": 9,
@@ -86303,7 +86303,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-exam_findings-10",
+        "chip_id": "peds-fever-child-exam_findings-10",
         "group": "exam_findings",
         "chip_text": "no lymphadenopathy",
         "order": 10,
@@ -86315,7 +86315,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-exam_findings-11",
+        "chip_id": "peds-fever-child-exam_findings-11",
         "group": "exam_findings",
         "chip_text": "no joint swelling or erythema",
         "order": 11,
@@ -86327,7 +86327,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-exam_findings-12",
+        "chip_id": "peds-fever-child-exam_findings-12",
         "group": "exam_findings",
         "chip_text": "NICE traffic light: GREEN (low risk)",
         "order": 12,
@@ -86339,7 +86339,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-red_flags-1",
+        "chip_id": "peds-fever-child-red_flags-1",
         "group": "red_flags",
         "chip_text": "non-blanching rash (meningococcal sepsis)",
         "order": 1,
@@ -86351,7 +86351,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-red_flags-2",
+        "chip_id": "peds-fever-child-red_flags-2",
         "group": "red_flags",
         "chip_text": "bulging fontanelle + fever (meningitis)",
         "order": 2,
@@ -86363,7 +86363,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-red_flags-3",
+        "chip_id": "peds-fever-child-red_flags-3",
         "group": "red_flags",
         "chip_text": "inconsolable crying or high-pitched cry",
         "order": 3,
@@ -86375,7 +86375,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-red_flags-4",
+        "chip_id": "peds-fever-child-red_flags-4",
         "group": "red_flags",
         "chip_text": "mottled/pale/blue colour",
         "order": 4,
@@ -86387,7 +86387,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-red_flags-5",
+        "chip_id": "peds-fever-child-red_flags-5",
         "group": "red_flags",
         "chip_text": "age <3 months + fever >38°C",
         "order": 5,
@@ -86399,7 +86399,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-red_flags-6",
+        "chip_id": "peds-fever-child-red_flags-6",
         "group": "red_flags",
         "chip_text": "no wet nappy >12hrs (severe dehydration)",
         "order": 6,
@@ -86411,7 +86411,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-red_flags-7",
+        "chip_id": "peds-fever-child-red_flags-7",
         "group": "red_flags",
         "chip_text": "seizure with fever (febrile convulsion)",
         "order": 7,
@@ -86423,7 +86423,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-investigations-1",
+        "chip_id": "peds-fever-child-investigations-1",
         "group": "investigations",
         "chip_text": "urine dip (clean catch): negative",
         "order": 1,
@@ -86435,7 +86435,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-investigations-2",
+        "chip_id": "peds-fever-child-investigations-2",
         "group": "investigations",
         "chip_text": "CRP 15 mg/L (mild)",
         "order": 2,
@@ -86447,7 +86447,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-investigations-3",
+        "chip_id": "peds-fever-child-investigations-3",
         "group": "investigations",
         "chip_text": "FBC: WCC 12.5, neutrophils 8.2",
         "order": 3,
@@ -86459,7 +86459,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-investigations-4",
+        "chip_id": "peds-fever-child-investigations-4",
         "group": "investigations",
         "chip_text": "blood culture: sent",
         "order": 4,
@@ -86471,7 +86471,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-investigations-5",
+        "chip_id": "peds-fever-child-investigations-5",
         "group": "investigations",
         "chip_text": "chest XR: not indicated (no respiratory signs)",
         "order": 5,
@@ -86483,7 +86483,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-investigations-6",
+        "chip_id": "peds-fever-child-investigations-6",
         "group": "investigations",
         "chip_text": "LP: not indicated (well-appearing, >3 months)",
         "order": 6,
@@ -86495,7 +86495,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-1",
+        "chip_id": "peds-fever-child-plan_phrases-1",
         "group": "plan_phrases",
         "chip_text": "paracetamol/kg QDS PRN",
         "order": 1,
@@ -86507,7 +86507,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-2",
+        "chip_id": "peds-fever-child-plan_phrases-2",
         "group": "plan_phrases",
         "chip_text": "ibuprofen/kg TDS PRN",
         "order": 2,
@@ -86519,7 +86519,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-3",
+        "chip_id": "peds-fever-child-plan_phrases-3",
         "group": "plan_phrases",
         "chip_text": "encourage oral fluids: small frequent sips",
         "order": 3,
@@ -86531,7 +86531,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-4",
+        "chip_id": "peds-fever-child-plan_phrases-4",
         "group": "plan_phrases",
         "chip_text": "safety-net advice given to parents",
         "order": 4,
@@ -86543,7 +86543,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-5",
+        "chip_id": "peds-fever-child-plan_phrases-5",
         "group": "plan_phrases",
         "chip_text": "fever fact sheet provided",
         "order": 5,
@@ -86555,7 +86555,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-6",
+        "chip_id": "peds-fever-child-plan_phrases-6",
         "group": "plan_phrases",
         "chip_text": "do not over-wrap child",
         "order": 6,
@@ -86567,7 +86567,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-7",
+        "chip_id": "peds-fever-child-plan_phrases-7",
         "group": "plan_phrases",
         "chip_text": "viral illness most likely: supportive care",
         "order": 7,
@@ -86579,7 +86579,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-8",
+        "chip_id": "peds-fever-child-plan_phrases-8",
         "group": "plan_phrases",
         "chip_text": "return if: non-blanching rash, drowsy, not drinking, fits",
         "order": 8,
@@ -86591,7 +86591,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-follow_up-1",
+        "chip_id": "peds-fever-child-follow_up-1",
         "group": "follow_up",
         "chip_text": "review 48hrs if fever persists",
         "order": 1,
@@ -86603,7 +86603,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-follow_up-2",
+        "chip_id": "peds-fever-child-follow_up-2",
         "group": "follow_up",
         "chip_text": "ED if red flag symptoms",
         "order": 2,
@@ -86615,7 +86615,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-follow_up-3",
+        "chip_id": "peds-fever-child-follow_up-3",
         "group": "follow_up",
         "chip_text": "GP next day if not improving",
         "order": 3,
@@ -86627,7 +86627,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-follow_up-4",
+        "chip_id": "peds-fever-child-follow_up-4",
         "group": "follow_up",
         "chip_text": "call 111 if concerned overnight",
         "order": 4,
@@ -86639,7 +86639,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-9",
+        "chip_id": "peds-fever-child-plan_phrases-9",
         "group": "plan_phrases",
         "chip_text": "paracetamol suspension PRN",
         "order": 9,
@@ -86652,7 +86652,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-10",
+        "chip_id": "peds-fever-child-plan_phrases-10",
         "group": "plan_phrases",
         "chip_text": "ibuprofen suspension PRN",
         "order": 10,
@@ -86665,7 +86665,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-11",
+        "chip_id": "peds-fever-child-plan_phrases-11",
         "group": "plan_phrases",
         "chip_text": "oral rehydration solution",
         "order": 11,
@@ -86678,7 +86678,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-12",
+        "chip_id": "peds-fever-child-plan_phrases-12",
         "group": "plan_phrases",
         "chip_text": "amoxicillin suspension",
         "order": 12,
@@ -86691,7 +86691,7 @@
         ]
       },
       {
-        "chip_id": "peds-fever-plan_phrases-13",
+        "chip_id": "peds-fever-child-plan_phrases-13",
         "group": "plan_phrases",
         "chip_text": "saline nasal drops",
         "order": 13,
@@ -116205,6 +116205,1068 @@
         ],
         "tags": [
           "medication"
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "peds-fever-infant",
+    "specialty_id": "Pediatrics",
+    "chips": [
+      {
+        "chip_id": "peds-fever-infant-symptoms-1",
+        "group": "symptoms",
+        "chip_text": "fever ≥38°C in infant <3 months",
+        "order": 1,
+        "search_terms": [
+          "fever"
+        ],
+        "tags": [
+          "≥38°c"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-2",
+        "group": "symptoms",
+        "chip_text": "fever >24 hours",
+        "order": 2,
+        "search_terms": [
+          "fever"
+        ],
+        "tags": [
+          ">24"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-3",
+        "group": "symptoms",
+        "chip_text": "reduced feeding",
+        "order": 3,
+        "search_terms": [
+          "reduced"
+        ],
+        "tags": [
+          "feeding"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-4",
+        "group": "symptoms",
+        "chip_text": "lethargy or unusual sleepiness",
+        "order": 4,
+        "search_terms": [
+          "lethargy"
+        ],
+        "tags": [
+          "or"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-5",
+        "group": "symptoms",
+        "chip_text": "irritability when handled",
+        "order": 5,
+        "search_terms": [
+          "irritability"
+        ],
+        "tags": [
+          "when"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-6",
+        "group": "symptoms",
+        "chip_text": "reduced wet nappies",
+        "order": 6,
+        "search_terms": [
+          "reduced"
+        ],
+        "tags": [
+          "wet"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-7",
+        "group": "symptoms",
+        "chip_text": "vomiting",
+        "order": 7,
+        "search_terms": [
+          "vomiting"
+        ],
+        "tags": [
+          "vomiting"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-8",
+        "group": "symptoms",
+        "chip_text": "diarrhea",
+        "order": 8,
+        "search_terms": [
+          "diarrhea"
+        ],
+        "tags": [
+          "diarrhea"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-9",
+        "group": "symptoms",
+        "chip_text": "rash",
+        "order": 9,
+        "search_terms": [
+          "rash"
+        ],
+        "tags": [
+          "rash"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-10",
+        "group": "symptoms",
+        "chip_text": "rapid breathing",
+        "order": 10,
+        "search_terms": [
+          "rapid"
+        ],
+        "tags": [
+          "breathing"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-11",
+        "group": "symptoms",
+        "chip_text": "unusual cry (high-pitched, weak)",
+        "order": 11,
+        "search_terms": [
+          "unusual"
+        ],
+        "tags": [
+          "cry"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-12",
+        "group": "symptoms",
+        "chip_text": "parental concern",
+        "order": 12,
+        "search_terms": [
+          "parental"
+        ],
+        "tags": [
+          "concern"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-13",
+        "group": "symptoms",
+        "chip_text": "not been their usual self",
+        "order": 13,
+        "search_terms": [
+          "not"
+        ],
+        "tags": [
+          "been"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-symptoms-14",
+        "group": "symptoms",
+        "chip_text": "fewer than 3 wet nappies in 24h",
+        "order": 14,
+        "search_terms": [
+          "fewer"
+        ],
+        "tags": [
+          "than"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-relevant_negatives-1",
+        "group": "relevant_negatives",
+        "chip_text": "no apnea",
+        "order": 1,
+        "search_terms": [
+          "no"
+        ],
+        "tags": [
+          "apnea"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-relevant_negatives-2",
+        "group": "relevant_negatives",
+        "chip_text": "no cyanosis",
+        "order": 2,
+        "search_terms": [
+          "no"
+        ],
+        "tags": [
+          "cyanosis"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-relevant_negatives-3",
+        "group": "relevant_negatives",
+        "chip_text": "no seizures",
+        "order": 3,
+        "search_terms": [
+          "no"
+        ],
+        "tags": [
+          "seizures"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-relevant_negatives-4",
+        "group": "relevant_negatives",
+        "chip_text": "no non-blanching rash",
+        "order": 4,
+        "search_terms": [
+          "no"
+        ],
+        "tags": [
+          "non-blanching"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-relevant_negatives-5",
+        "group": "relevant_negatives",
+        "chip_text": "no bulging fontanelle (assessed)",
+        "order": 5,
+        "search_terms": [
+          "no"
+        ],
+        "tags": [
+          "bulging"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-relevant_negatives-6",
+        "group": "relevant_negatives",
+        "chip_text": "no obvious source of infection on exam",
+        "order": 6,
+        "search_terms": [
+          "no"
+        ],
+        "tags": [
+          "obvious"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-relevant_negatives-7",
+        "group": "relevant_negatives",
+        "chip_text": "no recent travel",
+        "order": 7,
+        "search_terms": [
+          "no"
+        ],
+        "tags": [
+          "recent"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-relevant_negatives-8",
+        "group": "relevant_negatives",
+        "chip_text": "mother had no GBS positive in pregnancy",
+        "order": 8,
+        "search_terms": [
+          "mother"
+        ],
+        "tags": [
+          "had"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-relevant_negatives-9",
+        "group": "relevant_negatives",
+        "chip_text": "no maternal fever or infection peripartum",
+        "order": 9,
+        "search_terms": [
+          "no"
+        ],
+        "tags": [
+          "maternal"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-1",
+        "group": "exam_findings",
+        "chip_text": "temp ≥38°C confirmed",
+        "order": 1,
+        "search_terms": [
+          "temp"
+        ],
+        "tags": [
+          "≥38°c"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-2",
+        "group": "exam_findings",
+        "chip_text": "HR appropriate for age",
+        "order": 2,
+        "search_terms": [
+          "hr"
+        ],
+        "tags": [
+          "appropriate"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-3",
+        "group": "exam_findings",
+        "chip_text": "RR appropriate for age",
+        "order": 3,
+        "search_terms": [
+          "rr"
+        ],
+        "tags": [
+          "appropriate"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-4",
+        "group": "exam_findings",
+        "chip_text": "SpO2 documented",
+        "order": 4,
+        "search_terms": [
+          "spo2"
+        ],
+        "tags": [
+          "documented"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-5",
+        "group": "exam_findings",
+        "chip_text": "CRT <2 seconds",
+        "order": 5,
+        "search_terms": [
+          "crt"
+        ],
+        "tags": [
+          "<2"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-6",
+        "group": "exam_findings",
+        "chip_text": "CRT 2-3 seconds",
+        "order": 6,
+        "search_terms": [
+          "crt"
+        ],
+        "tags": [
+          "2-3"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-7",
+        "group": "exam_findings",
+        "chip_text": "CRT >3 seconds",
+        "order": 7,
+        "search_terms": [
+          "crt"
+        ],
+        "tags": [
+          ">3"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-8",
+        "group": "exam_findings",
+        "chip_text": "anterior fontanelle: flat, soft",
+        "order": 8,
+        "search_terms": [
+          "anterior"
+        ],
+        "tags": [
+          "fontanelle:"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-9",
+        "group": "exam_findings",
+        "chip_text": "fontanelle: bulging",
+        "order": 9,
+        "search_terms": [
+          "fontanelle:"
+        ],
+        "tags": [
+          "bulging"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-10",
+        "group": "exam_findings",
+        "chip_text": "fontanelle: sunken",
+        "order": 10,
+        "search_terms": [
+          "fontanelle:"
+        ],
+        "tags": [
+          "sunken"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-11",
+        "group": "exam_findings",
+        "chip_text": "alert and responsive",
+        "order": 11,
+        "search_terms": [
+          "alert"
+        ],
+        "tags": [
+          "and"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-12",
+        "group": "exam_findings",
+        "chip_text": "lethargic, drowsy",
+        "order": 12,
+        "search_terms": [
+          "lethargic,"
+        ],
+        "tags": [
+          "drowsy"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-13",
+        "group": "exam_findings",
+        "chip_text": "irritable, inconsolable",
+        "order": 13,
+        "search_terms": [
+          "irritable,"
+        ],
+        "tags": [
+          "inconsolable"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-14",
+        "group": "exam_findings",
+        "chip_text": "pale or mottled",
+        "order": 14,
+        "search_terms": [
+          "pale"
+        ],
+        "tags": [
+          "or"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-15",
+        "group": "exam_findings",
+        "chip_text": "cyanosis",
+        "order": 15,
+        "search_terms": [
+          "cyanosis"
+        ],
+        "tags": [
+          "cyanosis"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-16",
+        "group": "exam_findings",
+        "chip_text": "rash: blanching",
+        "order": 16,
+        "search_terms": [
+          "rash:"
+        ],
+        "tags": [
+          "blanching"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-17",
+        "group": "exam_findings",
+        "chip_text": "rash: non-blanching",
+        "order": 17,
+        "search_terms": [
+          "rash:"
+        ],
+        "tags": [
+          "non-blanching"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-18",
+        "group": "exam_findings",
+        "chip_text": "no rash",
+        "order": 18,
+        "search_terms": [
+          "no"
+        ],
+        "tags": [
+          "rash"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-19",
+        "group": "exam_findings",
+        "chip_text": "chest: clear, no recession",
+        "order": 19,
+        "search_terms": [
+          "chest:"
+        ],
+        "tags": [
+          "clear,"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-20",
+        "group": "exam_findings",
+        "chip_text": "chest: subcostal/intercostal recession",
+        "order": 20,
+        "search_terms": [
+          "chest:"
+        ],
+        "tags": [
+          "subcostal/intercostal"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-21",
+        "group": "exam_findings",
+        "chip_text": "abdomen: soft, no organomegaly",
+        "order": 21,
+        "search_terms": [
+          "abdomen:"
+        ],
+        "tags": [
+          "soft,"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-22",
+        "group": "exam_findings",
+        "chip_text": "NICE traffic light: RED (high risk)",
+        "order": 22,
+        "search_terms": [
+          "nice"
+        ],
+        "tags": [
+          "traffic"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-exam_findings-23",
+        "group": "exam_findings",
+        "chip_text": "NICE traffic light: AMBER (intermediate risk)",
+        "order": 23,
+        "search_terms": [
+          "nice"
+        ],
+        "tags": [
+          "traffic"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-red_flags-1",
+        "group": "red_flags",
+        "chip_text": "AGE <3 MONTHS WITH FEVER ≥38°C — ALWAYS REFER",
+        "order": 1,
+        "search_terms": [
+          "age"
+        ],
+        "tags": [
+          "<3"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-red_flags-2",
+        "group": "red_flags",
+        "chip_text": "mottled, pale, blue, or ashen",
+        "order": 2,
+        "search_terms": [
+          "mottled,"
+        ],
+        "tags": [
+          "pale,"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-red_flags-3",
+        "group": "red_flags",
+        "chip_text": "lethargy or decreased level of consciousness",
+        "order": 3,
+        "search_terms": [
+          "lethargy"
+        ],
+        "tags": [
+          "or"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-red_flags-4",
+        "group": "red_flags",
+        "chip_text": "high-pitched or weak continuous cry",
+        "order": 4,
+        "search_terms": [
+          "high-pitched"
+        ],
+        "tags": [
+          "or"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-red_flags-5",
+        "group": "red_flags",
+        "chip_text": "apnea or grunting",
+        "order": 5,
+        "search_terms": [
+          "apnea"
+        ],
+        "tags": [
+          "or"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-red_flags-6",
+        "group": "red_flags",
+        "chip_text": "severe respiratory distress (severe recession, RR >60)",
+        "order": 6,
+        "search_terms": [
+          "severe"
+        ],
+        "tags": [
+          "respiratory"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-red_flags-7",
+        "group": "red_flags",
+        "chip_text": "reduced skin turgor",
+        "order": 7,
+        "search_terms": [
+          "reduced"
+        ],
+        "tags": [
+          "skin"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-red_flags-8",
+        "group": "red_flags",
+        "chip_text": "bulging fontanelle",
+        "order": 8,
+        "search_terms": [
+          "bulging"
+        ],
+        "tags": [
+          "fontanelle"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-red_flags-9",
+        "group": "red_flags",
+        "chip_text": "non-blanching rash",
+        "order": 9,
+        "search_terms": [
+          "non-blanching"
+        ],
+        "tags": [
+          "rash"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-red_flags-10",
+        "group": "red_flags",
+        "chip_text": "seizures (febrile or otherwise)",
+        "order": 10,
+        "search_terms": [
+          "seizures"
+        ],
+        "tags": [
+          "(febrile"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-red_flags-11",
+        "group": "red_flags",
+        "chip_text": "bilious vomiting",
+        "order": 11,
+        "search_terms": [
+          "bilious"
+        ],
+        "tags": [
+          "vomiting"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-red_flags-12",
+        "group": "red_flags",
+        "chip_text": "temperature ≥39°C if 3-6 months",
+        "order": 12,
+        "search_terms": [
+          "temperature"
+        ],
+        "tags": [
+          "≥39°c"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-investigations-1",
+        "group": "investigations",
+        "chip_text": "urine dip + MSU sent",
+        "order": 1,
+        "search_terms": [
+          "urine"
+        ],
+        "tags": [
+          "dip"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-investigations-2",
+        "group": "investigations",
+        "chip_text": "FBC: WCC documented",
+        "order": 2,
+        "search_terms": [
+          "fbc:"
+        ],
+        "tags": [
+          "wcc"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-investigations-3",
+        "group": "investigations",
+        "chip_text": "CRP documented",
+        "order": 3,
+        "search_terms": [
+          "crp"
+        ],
+        "tags": [
+          "documented"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-investigations-4",
+        "group": "investigations",
+        "chip_text": "blood culture: sent",
+        "order": 4,
+        "search_terms": [
+          "blood"
+        ],
+        "tags": [
+          "culture:"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-investigations-5",
+        "group": "investigations",
+        "chip_text": "venous blood gas",
+        "order": 5,
+        "search_terms": [
+          "venous"
+        ],
+        "tags": [
+          "blood"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-investigations-6",
+        "group": "investigations",
+        "chip_text": "glucose checked",
+        "order": 6,
+        "search_terms": [
+          "glucose"
+        ],
+        "tags": [
+          "checked"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-investigations-7",
+        "group": "investigations",
+        "chip_text": "CXR: performed",
+        "order": 7,
+        "search_terms": [
+          "cxr:"
+        ],
+        "tags": [
+          "performed"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-investigations-8",
+        "group": "investigations",
+        "chip_text": "LP: performed (full septic screen)",
+        "order": 8,
+        "search_terms": [
+          "lp:"
+        ],
+        "tags": [
+          "performed"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-investigations-9",
+        "group": "investigations",
+        "chip_text": "lumbar puncture: deferred",
+        "order": 9,
+        "search_terms": [
+          "lumbar"
+        ],
+        "tags": [
+          "puncture:"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-investigations-10",
+        "group": "investigations",
+        "chip_text": "viral PCR (RSV, influenza)",
+        "order": 10,
+        "search_terms": [
+          "viral"
+        ],
+        "tags": [
+          "pcr"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-investigations-11",
+        "group": "investigations",
+        "chip_text": "group B strep PCR (<28 days)",
+        "order": 11,
+        "search_terms": [
+          "group"
+        ],
+        "tags": [
+          "b"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-investigations-12",
+        "group": "investigations",
+        "chip_text": "electrolytes and renal function",
+        "order": 12,
+        "search_terms": [
+          "electrolytes"
+        ],
+        "tags": [
+          "and"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-plan_phrases-1",
+        "group": "plan_phrases",
+        "chip_text": "paediatric admission for septic screen",
+        "order": 1,
+        "search_terms": [
+          "admit"
+        ],
+        "tags": [
+          "for"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-plan_phrases-2",
+        "group": "plan_phrases",
+        "chip_text": "IV antibiotics empirical (per local protocol)",
+        "order": 2,
+        "search_terms": [
+          "iv"
+        ],
+        "tags": [
+          "antibiotics"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-plan_phrases-3",
+        "group": "plan_phrases",
+        "chip_text": "IV access established",
+        "order": 3,
+        "search_terms": [
+          "iv"
+        ],
+        "tags": [
+          "access"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-plan_phrases-4",
+        "group": "plan_phrases",
+        "chip_text": "fluid resuscitation if shocked",
+        "order": 4,
+        "search_terms": [
+          "fluid"
+        ],
+        "tags": [
+          "resuscitation"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-plan_phrases-5",
+        "group": "plan_phrases",
+        "chip_text": "paediatric registrar review immediate",
+        "order": 5,
+        "search_terms": [
+          "paediatric"
+        ],
+        "tags": [
+          "registrar"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-plan_phrases-6",
+        "group": "plan_phrases",
+        "chip_text": "discuss with paediatric consultant on call",
+        "order": 6,
+        "search_terms": [
+          "discuss"
+        ],
+        "tags": [
+          "with"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-plan_phrases-7",
+        "group": "plan_phrases",
+        "chip_text": "paediatric ED transfer if not on site",
+        "order": 7,
+        "search_terms": [
+          "transfer"
+        ],
+        "tags": [
+          "to"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-plan_phrases-8",
+        "group": "plan_phrases",
+        "chip_text": "NICE NG143 followed (fever <5 years)",
+        "order": 8,
+        "search_terms": [
+          "nice"
+        ],
+        "tags": [
+          "ng143"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-plan_phrases-9",
+        "group": "plan_phrases",
+        "chip_text": "monitoring: continuous SpO2, NEWS-Peds",
+        "order": 9,
+        "search_terms": [
+          "monitoring:"
+        ],
+        "tags": [
+          "continuous"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-plan_phrases-10",
+        "group": "plan_phrases",
+        "chip_text": "parents informed of admission plan",
+        "order": 10,
+        "search_terms": [
+          "parents"
+        ],
+        "tags": [
+          "informed"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-plan_phrases-11",
+        "group": "plan_phrases",
+        "chip_text": "safety-net advice given",
+        "order": 11,
+        "search_terms": [
+          "safety-net"
+        ],
+        "tags": [
+          "advice"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-plan_phrases-12",
+        "group": "plan_phrases",
+        "chip_text": "NPO until paediatric review",
+        "order": 12,
+        "search_terms": [
+          "npo"
+        ],
+        "tags": [
+          "until"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-follow_up-1",
+        "group": "follow_up",
+        "chip_text": "paediatric admission planned",
+        "order": 1,
+        "search_terms": [
+          "admit"
+        ],
+        "tags": [
+          "to"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-follow_up-2",
+        "group": "follow_up",
+        "chip_text": "PICU referral if shocked or unstable",
+        "order": 2,
+        "search_terms": [
+          "picu"
+        ],
+        "tags": [
+          "referral"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-follow_up-3",
+        "group": "follow_up",
+        "chip_text": "review with consultant within 1 hour",
+        "order": 3,
+        "search_terms": [
+          "review"
+        ],
+        "tags": [
+          "with"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-follow_up-4",
+        "group": "follow_up",
+        "chip_text": "follow-up after discharge in paediatric clinic",
+        "order": 4,
+        "search_terms": [
+          "follow-up"
+        ],
+        "tags": [
+          "after"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-follow_up-5",
+        "group": "follow_up",
+        "chip_text": "GP follow-up post-discharge",
+        "order": 5,
+        "search_terms": [
+          "gp"
+        ],
+        "tags": [
+          "follow-up"
+        ]
+      },
+      {
+        "chip_id": "peds-fever-infant-follow_up-6",
+        "group": "follow_up",
+        "chip_text": "ED return immediately if any deterioration",
+        "order": 6,
+        "search_terms": [
+          "ed"
+        ],
+        "tags": [
+          "return"
         ]
       }
     ]

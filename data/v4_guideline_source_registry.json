@@ -7,8 +7,13 @@
     "source_type": "guideline",
     "source_url": "https://www.nice.org.uk/guidance/ng59",
     "topic_area": "Low back pain",
-    "related_specialties": ["Orthopedics / MSK", "General Medicine / GP"],
-    "related_workflow_ids": ["msk-low-back-pain"],
+    "related_specialties": [
+      "Orthopedics / MSK",
+      "General Medicine / GP"
+    ],
+    "related_workflow_ids": [
+      "msk-low-back-pain"
+    ],
     "version_or_publication_date": "2016-11 (updated 2020-12)",
     "last_checked_date": "2026-05-19",
     "source_status": "needs_review",
@@ -24,8 +29,13 @@
     "source_type": "guideline",
     "source_url": "https://www.nice.org.uk/guidance/ng143",
     "topic_area": "Fever in children",
-    "related_specialties": ["Pediatrics"],
-    "related_workflow_ids": ["peds-fever"],
+    "related_specialties": [
+      "Pediatrics"
+    ],
+    "related_workflow_ids": [
+      "peds-fever-child",
+      "peds-fever-infant"
+    ],
     "version_or_publication_date": "2019-11 (updated 2021-11)",
     "last_checked_date": "2026-05-19",
     "source_status": "needs_review",
@@ -41,8 +51,12 @@
     "source_type": "guideline",
     "source_url": "https://www.nice.org.uk/guidance/ng95",
     "topic_area": "Chest pain",
-    "related_specialties": ["General Medicine / GP"],
-    "related_workflow_ids": ["gp-chest-pain"],
+    "related_specialties": [
+      "General Medicine / GP"
+    ],
+    "related_workflow_ids": [
+      "gp-chest-pain"
+    ],
     "version_or_publication_date": "2010-03 (updated 2023-05)",
     "last_checked_date": "2026-05-19",
     "source_status": "needs_review",
@@ -58,8 +72,12 @@
     "source_type": "guideline",
     "source_url": "https://www.nice.org.uk/guidance/ng17",
     "topic_area": "Diabetes",
-    "related_specialties": ["General Medicine / GP"],
-    "related_workflow_ids": ["gp-diabetes-followup"],
+    "related_specialties": [
+      "General Medicine / GP"
+    ],
+    "related_workflow_ids": [
+      "gp-diabetes-followup"
+    ],
     "version_or_publication_date": "2015-08 (updated 2022-06)",
     "last_checked_date": "2026-05-19",
     "source_status": "needs_review",
@@ -75,8 +93,12 @@
     "source_type": "guideline",
     "source_url": "https://www.nice.org.uk/guidance/ng136",
     "topic_area": "Hypertension",
-    "related_specialties": ["General Medicine / GP"],
-    "related_workflow_ids": ["gp-hypertension-followup"],
+    "related_specialties": [
+      "General Medicine / GP"
+    ],
+    "related_workflow_ids": [
+      "gp-hypertension-followup"
+    ],
     "version_or_publication_date": "2019-08 (updated 2023-11)",
     "last_checked_date": "2026-05-19",
     "source_status": "needs_review",
@@ -92,8 +114,18 @@
     "source_type": "guideline",
     "source_url": null,
     "topic_area": "Antimicrobial prescribing",
-    "related_specialties": ["General Medicine / GP", "Pediatrics", "ENT"],
-    "related_workflow_ids": ["gp-fever-urti", "gp-sore-throat", "gp-cough", "peds-fever"],
+    "related_specialties": [
+      "General Medicine / GP",
+      "Pediatrics",
+      "ENT"
+    ],
+    "related_workflow_ids": [
+      "gp-fever-urti",
+      "gp-sore-throat",
+      "gp-cough",
+      "peds-fever-child",
+      "peds-fever-infant"
+    ],
     "version_or_publication_date": "various",
     "last_checked_date": "2026-05-19",
     "source_status": "unverified",
@@ -109,8 +141,12 @@
     "source_type": "guideline",
     "source_url": "https://www.nice.org.uk/guidance/ng201",
     "topic_area": "Antenatal care",
-    "related_specialties": ["OB/GYN"],
-    "related_workflow_ids": ["obgyn-antenatal-followup"],
+    "related_specialties": [
+      "OB/GYN"
+    ],
+    "related_workflow_ids": [
+      "obgyn-antenatal-followup"
+    ],
     "version_or_publication_date": "2021-08",
     "last_checked_date": "2026-05-19",
     "source_status": "needs_review",
@@ -126,7 +162,9 @@
     "source_type": "local_policy_reference",
     "source_url": null,
     "topic_area": "General UAE clinical policy",
-    "related_specialties": ["General Medicine / GP"],
+    "related_specialties": [
+      "General Medicine / GP"
+    ],
     "related_workflow_ids": [],
     "version_or_publication_date": "not verified",
     "last_checked_date": "2026-05-19",
@@ -143,7 +181,9 @@
     "source_type": "local_policy_reference",
     "source_url": null,
     "topic_area": "Dubai clinical policy",
-    "related_specialties": ["General Medicine / GP"],
+    "related_specialties": [
+      "General Medicine / GP"
+    ],
     "related_workflow_ids": [],
     "version_or_publication_date": "not verified",
     "last_checked_date": "2026-05-19",
@@ -160,7 +200,10 @@
     "source_type": "scoring_tool_source",
     "source_url": null,
     "topic_area": "BMI calculator source",
-    "related_specialties": ["General Medicine / GP", "Pediatrics"],
+    "related_specialties": [
+      "General Medicine / GP",
+      "Pediatrics"
+    ],
     "related_workflow_ids": [],
     "version_or_publication_date": "1995",
     "last_checked_date": "2026-05-19",
@@ -177,7 +220,9 @@
     "source_type": "scoring_tool_source",
     "source_url": null,
     "topic_area": "Dyspnoea assessment",
-    "related_specialties": ["General Medicine / GP"],
+    "related_specialties": [
+      "General Medicine / GP"
+    ],
     "related_workflow_ids": [],
     "version_or_publication_date": "1959",
     "last_checked_date": "2026-05-19",
@@ -194,8 +239,13 @@
     "source_type": "scoring_tool_source",
     "source_url": null,
     "topic_area": "Depression screening",
-    "related_specialties": ["Psychiatry / Mental Health", "General Medicine / GP"],
-    "related_workflow_ids": ["psych-low-mood"],
+    "related_specialties": [
+      "Psychiatry / Mental Health",
+      "General Medicine / GP"
+    ],
+    "related_workflow_ids": [
+      "psych-low-mood"
+    ],
     "version_or_publication_date": "2001",
     "last_checked_date": "2026-05-19",
     "source_status": "needs_review",
@@ -211,8 +261,13 @@
     "source_type": "scoring_tool_source",
     "source_url": null,
     "topic_area": "Anxiety screening",
-    "related_specialties": ["Psychiatry / Mental Health", "General Medicine / GP"],
-    "related_workflow_ids": ["psych-anxiety"],
+    "related_specialties": [
+      "Psychiatry / Mental Health",
+      "General Medicine / GP"
+    ],
+    "related_workflow_ids": [
+      "psych-anxiety"
+    ],
     "version_or_publication_date": "2006",
     "last_checked_date": "2026-05-19",
     "source_status": "needs_review",

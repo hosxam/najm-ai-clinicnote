@@ -294,8 +294,8 @@
     "review_required": true
   },
   {
-    "workflow_id": "peds-fever",
-    "workflow_display_name": "Paediatric Fever",
+    "workflow_id": "peds-fever-child",
+    "workflow_display_name": "Paediatric Fever (>3 months)",
     "exam_groups": [
       {
         "group_id": "general_assessment",
@@ -12716,6 +12716,174 @@
       }
     ],
     "safety_note": "Document only if assessed.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-fever-infant",
+    "workflow_display_name": "Infant Fever (<3 months) — Sepsis Workup",
+    "exam_groups": [
+      {
+        "group_id": "general_assessment",
+        "group_label": "General assessment",
+        "display_order": 1,
+        "safety_note": "Document only if assessed. general appearance is a clinician observation. Do not specify findings not assessed.",
+        "prompts": [
+          {
+            "prompt_id": "general_appearance_activity",
+            "prompt_text": "General appearance and activity level documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "hydration_status",
+            "prompt_text": "Hydration status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "capillary_refill",
+            "prompt_text": "Capillary refill documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "urine_output_context",
+            "prompt_text": "Urine output context documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "vitals",
+        "group_label": "Vital signs",
+        "display_order": 2,
+        "safety_note": "Document only if assessed. vital signs should be entered by the clinician. Do not invent values.",
+        "prompts": [
+          {
+            "prompt_id": "temperature",
+            "prompt_text": "Temperature documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "heart_rate",
+            "prompt_text": "Heart rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "respiratory_rate",
+            "prompt_text": "Respiratory rate documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "oxygen_saturation",
+            "prompt_text": "Oxygen saturation documented if measured.",
+            "documentation_style": "if_measured",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "ent_exam",
+        "group_label": "ENT examination",
+        "display_order": 3,
+        "safety_note": "Document only if assessed. eNT findings only if assessed. Do not imply examination was performed without clinician documentation.",
+        "prompts": [
+          {
+            "prompt_id": "throat_exam",
+            "prompt_text": "Throat examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "otoscopy",
+            "prompt_text": "Otoscopy documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "cervical_nodes",
+            "prompt_text": "Cervical lymphadenopathy documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "respiratory_exam",
+        "group_label": "Respiratory examination",
+        "display_order": 4,
+        "safety_note": "Document only if assessed. chest findings only if assessed. Do not specify auscultation findings without clinician entry.",
+        "prompts": [
+          {
+            "prompt_id": "respiratory_effort",
+            "prompt_text": "Respiratory effort documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "workflow_specific"
+          },
+          {
+            "prompt_id": "chest_auscultation",
+            "prompt_text": "Chest auscultation documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "abdominal_exam",
+        "group_label": "Abdominal examination",
+        "display_order": 5,
+        "safety_note": "Document only if assessed. abdominal findings only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "abdominal_exam",
+            "prompt_text": "Abdominal examination documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rash_assessment",
+        "group_label": "Rash assessment",
+        "display_order": 6,
+        "safety_note": "Document only if assessed. rash findings only if assessed. Do not imply non-blanching rash without clinician confirmation.",
+        "prompts": [
+          {
+            "prompt_id": "skin_rash",
+            "prompt_text": "Skin rash documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "non_blanching_rash",
+            "prompt_text": "Non-blanching rash documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional",
+            "warning": "Non-blanching rash should be documented only if specifically assessed and confirmed by the clinician."
+          }
+        ]
+      },
+      {
+        "group_id": "parent_report",
+        "group_label": "Parent or guardian report context",
+        "display_order": 7,
+        "safety_note": "Document only if assessed. parent report context should be documented only as reported. Do not add clinical interpretation.",
+        "prompts": [
+          {
+            "prompt_id": "parent_report_context",
+            "prompt_text": "Parent or guardian report context documented if relevant.",
+            "documentation_style": "if_relevant",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "named_tests": [],
+    "safety_note": "Document only if assessed. These prompts support paediatric fever examination documentation, not examination instructions.",
     "review_required": true
   }
 ]

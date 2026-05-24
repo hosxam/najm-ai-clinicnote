@@ -90,8 +90,8 @@
     "review_required": true
   },
   {
-    "workflow_id": "peds-fever",
-    "workflow_display_name": "Paediatric Fever",
+    "workflow_id": "peds-fever-child",
+    "workflow_display_name": "Paediatric Fever (>3 months)",
     "default_history_draft": "Parent/guardian reports fever in a [age] for [duration]. [Temperature pattern if reported]. [Feeding and oral intake status]. [Activity level and alertness]. [Urine output]. [Associated symptoms: cough, rhinorrhoea, vomiting, diarrhoea, rash if any]. [Relevant negatives reviewed]. [Additional history].",
     "editable_placeholders": [
       "[age]",
@@ -4417,6 +4417,39 @@
       "ice"
     ],
     "safety_note": "Editable documentation draft only. Keep only details assessed or discussed by the clinician.",
+    "review_required": true
+  },
+  {
+    "workflow_id": "peds-fever-infant",
+    "workflow_display_name": "Infant Fever (<3 months) — Sepsis Workup",
+    "default_history_draft": "Parent/guardian reports fever in an infant aged [age in days/weeks] for [duration]. Temperature [highest measured]. Feeding pattern: [describe]. Wet nappies in 24h: [number]. Activity and alertness: [describe]. Maternal/perinatal history: [GBS status, prematurity, complications]. Recent contact with sick individuals: [yes/no]. [Additional history].",
+    "editable_placeholders": [
+      "[age]",
+      "[duration]",
+      "[Temperature pattern if reported]",
+      "[Feeding and oral intake status]",
+      "[Activity level and alertness]",
+      "[Urine output]",
+      "[Associated symptoms]",
+      "[Relevant negatives reviewed]",
+      "[Additional history]"
+    ],
+    "linked_autofill_groups": [
+      "symptoms",
+      "relevant_negatives",
+      "red_flags",
+      "follow_up"
+    ],
+    "optional_full_history_sections": [
+      "age_source",
+      "fever_prompts",
+      "respiratory_prompts",
+      "feeding",
+      "pmh_drug_allergy",
+      "family_social_safeguarding",
+      "parent_child_ice"
+    ],
+    "safety_note": "Editable documentation draft only. Paediatric safeguarding and safety concerns require clinician judgment and local protocol.",
     "review_required": true
   }
 ]

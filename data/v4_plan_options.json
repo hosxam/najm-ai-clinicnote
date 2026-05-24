@@ -305,8 +305,8 @@
     "source_status": "draft"
   },
   {
-    "workflow_id": "peds-fever",
-    "workflow_display_name": "Paediatric Fever",
+    "workflow_id": "peds-fever-child",
+    "workflow_display_name": "Paediatric Fever (>3 months)",
     "plan_option_groups": [
       {
         "group_id": "parent_advice",
@@ -12588,6 +12588,99 @@
       }
     ],
     "safety_note": "Documentation prompts only. No treatment recommendations.",
+    "review_required": true,
+    "source_status": "draft"
+  },
+  {
+    "workflow_id": "peds-fever-infant",
+    "workflow_display_name": "Infant Fever (<3 months) — Sepsis Workup",
+    "plan_option_groups": [
+      {
+        "group_id": "parent_advice",
+        "group_label": "Parent advice",
+        "options": [
+          {
+            "option_id": "peds_fever_parent_advice",
+            "option_text": "Parent or guardian advice documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4J-4 Emergency batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Advice only. Use only if discussed.",
+            "note_text": "Parent or guardian advice discussed."
+          },
+          {
+            "option_id": "peds_fever_hydration_feeding",
+            "option_text": "Hydration and feeding advice documented if discussed.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4J-4 Emergency batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Advice only. Use only if discussed.",
+            "note_text": "Hydration and feeding advised."
+          }
+        ]
+      },
+      {
+        "group_id": "medication_plan",
+        "group_label": "Medication plan",
+        "options": [
+          {
+            "option_id": "peds_fever_antipyretic",
+            "option_text": "Antipyretic plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4J-4 Emergency batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Medication choice and dosing by clinician.",
+            "note_text": "Antipyretic planned."
+          },
+          {
+            "option_id": "peds_fever_antibiotic",
+            "option_text": "Antibiotic plan documented if clinician decided.",
+            "option_category": "patient_instruction_documentation",
+            "source_status": "draft",
+            "source_reference": "V4J-4 Emergency batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Antibiotic use by clinician decision only.",
+            "note_text": "Antibiotic planned."
+          }
+        ]
+      },
+      {
+        "group_id": "safety_netting",
+        "group_label": "Safety netting",
+        "options": [
+          {
+            "option_id": "peds_fever_return_precautions",
+            "option_text": "Return precautions documented if discussed.",
+            "option_category": "safety_netting",
+            "source_status": "draft",
+            "source_reference": "V4J-4 Emergency batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Safety netting only. Use only if discussed.",
+            "note_text": "Return precautions discussed."
+          }
+        ]
+      },
+      {
+        "group_id": "follow_up",
+        "group_label": "Follow-up",
+        "options": [
+          {
+            "option_id": "peds_fever_follow_up",
+            "option_text": "Follow-up arranged documented if clinician decided.",
+            "option_category": "follow_up",
+            "source_status": "draft",
+            "source_reference": "V4J-4 Emergency batch",
+            "clinician_confirmation_required": true,
+            "safety_note": "Follow-up documentation only.",
+            "note_text": "Follow-up arranged."
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true,
     "source_status": "draft"
   }

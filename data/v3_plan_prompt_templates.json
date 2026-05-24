@@ -876,10 +876,11 @@
         "section_label": "Parent or guardian advice documented",
         "display_order": 1,
         "applicable_workflow_ids": [
-          "peds-fever",
+          "peds-fever-child",
           "peds-cough",
           "peds-rash",
-          "peds-poor-feeding"
+          "peds-poor-feeding",
+          "peds-fever-infant"
         ],
         "applicable_complaints": [
           "pediatric fever",
@@ -931,9 +932,10 @@
         "section_label": "Hydration and feeding advice documented",
         "display_order": 2,
         "applicable_workflow_ids": [
-          "peds-fever",
+          "peds-fever-child",
           "peds-vomiting-diarrhea",
-          "peds-poor-feeding"
+          "peds-poor-feeding",
+          "peds-fever-infant"
         ],
         "applicable_complaints": [
           "pediatric fever",
@@ -984,10 +986,11 @@
         "section_label": "Safety-netting documented",
         "display_order": 3,
         "applicable_workflow_ids": [
-          "peds-fever",
+          "peds-fever-child",
           "peds-cough",
           "peds-rash",
-          "peds-vomiting-diarrhea"
+          "peds-vomiting-diarrhea",
+          "peds-fever-infant"
         ],
         "applicable_complaints": [
           "pediatric fever",

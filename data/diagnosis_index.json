@@ -19,7 +19,8 @@
       ],
       "workflow_ids": [
         "gp-fever-urti",
-        "peds-fever"
+        "peds-fever-child",
+        "peds-fever-infant"
       ],
       "icd_metadata": {
         "icd_system": null,
@@ -856,8 +857,9 @@
         "General Medicine / GP"
       ],
       "workflow_ids": [
-        "peds-fever",
-        "gp-fever-urti"
+        "peds-fever-child",
+        "gp-fever-urti",
+        "peds-fever-infant"
       ],
       "icd_metadata": {
         "icd_system": null,
@@ -879,7 +881,8 @@
         "Pediatrics"
       ],
       "workflow_ids": [
-        "peds-fever"
+        "peds-fever-child",
+        "peds-fever-infant"
       ],
       "icd_metadata": {
         "icd_system": "ICD-10-CM",
@@ -4602,7 +4605,8 @@
         "Pediatrics"
       ],
       "workflow_ids": [
-        "peds-fever"
+        "peds-fever-child",
+        "peds-fever-infant"
       ],
       "icd_metadata": {
         "icd_system": null,
@@ -4625,7 +4629,8 @@
         "Pediatrics"
       ],
       "workflow_ids": [
-        "peds-fever"
+        "peds-fever-child",
+        "peds-fever-infant"
       ],
       "icd_metadata": {
         "icd_system": null,

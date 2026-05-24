@@ -988,8 +988,8 @@
     "preset_version": "1.0.0"
   },
   {
-    "workflow_id": "peds-fever",
-    "preset_name": "Pediatric fever quick start",
+    "workflow_id": "peds-fever-child",
+    "preset_name": "Pediatric fever (>3 months) quick start",
     "specialty": "Pediatrics",
     "default_duration_options": [
       "today",
@@ -8243,6 +8243,61 @@
       "additional history"
     ],
     "safety_note": "Defaults are suggestions only. Keep only items personally assessed or discussed; remove anything not confirmed. Doctor-entered impression and plan are required before generation.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "peds-fever-infant",
+    "preset_name": "Infant fever (<3 months) — sepsis workup",
+    "specialty": "Pediatrics",
+    "default_duration_options": [
+      "today",
+      "1-3 days",
+      "3-7 days",
+      "more than 1 week"
+    ],
+    "prechecked_symptoms": [
+      "fever ≥38°C in infant <3 months",
+      "fever >24 hours",
+      "reduced feeding",
+      "lethargy or unusual sleepiness",
+      "irritability when handled"
+    ],
+    "prechecked_relevant_negatives": [
+      "no apnea",
+      "no cyanosis",
+      "no seizures",
+      "no non-blanching rash"
+    ],
+    "prechecked_exam_findings": [
+      "temp ≥38°C confirmed",
+      "HR appropriate for age",
+      "RR appropriate for age",
+      "SpO2 documented"
+    ],
+    "prechecked_investigations": [
+      "urine dip + MSU sent",
+      "FBC: WCC documented",
+      "CRP documented"
+    ],
+    "prechecked_plan_phrases": [
+      "paediatric admission for septic screen",
+      "IV antibiotics empirical (per local protocol)",
+      "IV access established",
+      "fluid resuscitation if shocked"
+    ],
+    "prechecked_follow_up": [
+      "paediatric admission planned",
+      "PICU referral if shocked or unstable"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "CRITICAL: Infants <3 months with fever ≥38°C require immediate hospital assessment for sepsis workup. This workflow assists documentation only — clinical decision is the doctor's.",
     "review_required": true,
     "preset_version": "1.0.0"
   }
