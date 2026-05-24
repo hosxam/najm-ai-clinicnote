@@ -1,5 +1,5 @@
 /*
- * ClinicNote chip persistence (Step 2 — revised).
+ * ClinicNote chip persistence (revised).
  *
  * Persists chip selections per specialty+visitType so switching workflows
  * and coming back restores your previous selections. Uses localStorage
@@ -32,8 +32,6 @@
   }
 
   // --- State tracking ---
-  // We track the "last active" specialty+visitType so we can save
-  // BEFORE the UI wipes the chips on navigation.
   var lastSpecialty = "";
   var lastVisitType = "";
 
@@ -73,7 +71,6 @@
     safeSetItem(key, JSON.stringify(data));
   }
 
-  // Save the current visible state under lastSpecialty/lastVisitType
   function saveCurrentState() {
     if (!lastSpecialty || !lastVisitType) return;
     var sel = readSelections();
@@ -104,13 +101,11 @@
       var container = document.getElementById(id);
       if (!container) continue;
 
-      // Build a lookup of wanted chip texts
       var wanted = {};
       for (var w = 0; w < selections[id].length; w++) {
         wanted[selections[id][w].trim().toLowerCase()] = true;
       }
 
-      // Apply .selected to matching chips
       var chips = container.querySelectorAll(".chip");
       for (var c = 0; c < chips.length; c++) {
         var label = (chips[c].textContent || "").trim().toLowerCase();
@@ -121,14 +116,11 @@
       }
     }
 
-    // Update tracking
     lastSpecialty = specialty;
     lastVisitType = visitType;
   }
 
-  // --- Hook into the app's workflow ---
-
-  // 1. Save on every chip click (debounced)
+  // --- Chip click: save after selection ---
   var saveTimer = null;
   function debouncedSave() {
     if (saveTimer) clearTimeout(saveTimer);
@@ -137,7 +129,7 @@
       lastSpecialty = getCurrentSpecialty();
       lastVisitType = getCurrentVisitType();
       saveCurrentState();
-    }, 150);
+    }, 200);
   }
 
   document.addEventListener("click", function (e) {
@@ -148,77 +140,95 @@
     }
   }, true);
 
-  // 2. Hook loadSpeedVisit — after chips render, restore saved state.
-  //    We wrap the global function so we run after fillChips() completes.
-  function hookLoadSpeedVisit() {
-    if (typeof window.loadSpeedVisit !== "function") return false;
-    if (window.loadSpeedVisit._chipPersistHooked) return true;
+  // --- MutationObserver: detect when chips are rendered ---
+  // This is the reliable way to know when fillChips() has run,
+  // regardless of how loadSpeedVisit is called (inline onchange, etc.)
+  var speedContent = null;
+  var observer = null;
 
-    var original = window.loadSpeedVisit;
-    window.loadSpeedVisit = function () {
-      // Before loading new visit, save current selections
-      saveCurrentState();
+  function setupObserver() {
+    speedContent = document.getElementById("speedContent");
+    if (!speedContent) return;
 
-      // Call original (renders new chips)
-      original.apply(this, arguments);
+    observer = new MutationObserver(function () {
+      // Chips just changed (fillChips was called).
+      // Wait a tick for the DOM to settle, then restore.
+      var newSpecialty = getCurrentSpecialty();
+      var newVisitType = getCurrentVisitType();
 
-      // Update tracking to new state
-      lastSpecialty = getCurrentSpecialty();
-      lastVisitType = getCurrentVisitType();
+      if (newSpecialty && newVisitType) {
+        // Update tracking
+        lastSpecialty = newSpecialty;
+        lastVisitType = newVisitType;
+        // Restore after a brief delay
+        setTimeout(restoreCurrentState, 60);
+      }
+    });
 
-      // Restore after a brief delay (chips just rendered via fillChips)
-      setTimeout(restoreCurrentState, 50);
-    };
-    window.loadSpeedVisit._chipPersistHooked = true;
-    return true;
+    observer.observe(speedContent, { childList: true, subtree: true });
   }
 
-  // 3. Hook loadSpeedSpecialty — save before specialty wipes chips
-  function hookLoadSpeedSpecialty() {
-    if (typeof window.loadSpeedSpecialty !== "function") return false;
-    if (window.loadSpeedSpecialty._chipPersistHooked) return true;
+  // --- Specialty change: save before chips are wiped ---
+  // Use capturing phase to fire BEFORE the onchange handler runs loadSpeedSpecialty
+  var specialtyEl = null;
 
-    var original = window.loadSpeedSpecialty;
-    window.loadSpeedSpecialty = function () {
-      // Save current state before the specialty change wipes everything
+  function setupSpecialtyListener() {
+    specialtyEl = document.getElementById("speedSpecialty");
+    if (!specialtyEl) return;
+
+    // mousedown/pointerdown fires BEFORE the value changes
+    specialtyEl.addEventListener("mousedown", function () {
       saveCurrentState();
-      // Call original
-      original.apply(this, arguments);
-      // Update tracking (visit type is now empty)
-      lastSpecialty = getCurrentSpecialty();
-      lastVisitType = "";
-    };
-    window.loadSpeedSpecialty._chipPersistHooked = true;
-    return true;
+    });
+    specialtyEl.addEventListener("touchstart", function () {
+      saveCurrentState();
+    });
+    // Also save on focus (covers keyboard navigation)
+    specialtyEl.addEventListener("focus", function () {
+      saveCurrentState();
+    });
   }
 
-  // Try hooking immediately and retry if functions aren't defined yet
-  var hookAttempts = 0;
-  (function tryHook() {
-    var a = hookLoadSpeedVisit();
-    var b = hookLoadSpeedSpecialty();
-    if ((!a || !b) && ++hookAttempts < 30) {
-      setTimeout(tryHook, 200);
-    }
-  })();
+  // --- Visit type change: save old state before new chips load ---
+  var visitTypeEl = null;
 
-  // 4. On initial page load, restore if a workflow is already selected
-  function initialRestore() {
+  function setupVisitTypeListener() {
+    visitTypeEl = document.getElementById("speedVisitType");
+    if (!visitTypeEl) return;
+
+    visitTypeEl.addEventListener("mousedown", function () {
+      saveCurrentState();
+    });
+    visitTypeEl.addEventListener("touchstart", function () {
+      saveCurrentState();
+    });
+    visitTypeEl.addEventListener("focus", function () {
+      saveCurrentState();
+    });
+  }
+
+  // --- Initialize ---
+  function init() {
     lastSpecialty = getCurrentSpecialty();
     lastVisitType = getCurrentVisitType();
+
+    setupObserver();
+    setupSpecialtyListener();
+    setupVisitTypeListener();
+
+    // If a workflow is already loaded, restore
     if (lastSpecialty && lastVisitType) {
       setTimeout(restoreCurrentState, 300);
-      setTimeout(restoreCurrentState, 1000);
     }
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initialRestore);
+    document.addEventListener("DOMContentLoaded", init);
   } else {
-    initialRestore();
+    init();
   }
 
-  // 5. Save before page unload
+  // Save before page unload
   window.addEventListener("beforeunload", function () {
     saveCurrentState();
   });
