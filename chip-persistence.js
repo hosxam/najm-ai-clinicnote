@@ -173,14 +173,9 @@
       saveTimer = null;
       lastSpecialty = getCurrentSpecialty();
       lastVisitType = getCurrentVisitType();
-      console.log("[chip-persist] saving for:", lastSpecialty, "|", lastVisitType);
       var sel = readSelections();
-      console.log("[chip-persist] selections:", sel);
       if (sel) {
         saveFor(lastSpecialty, lastVisitType, sel);
-        console.log("[chip-persist] saved OK");
-      } else {
-        console.log("[chip-persist] nothing to save (no selections found)");
       }
     }, 300);
   }
@@ -189,7 +184,6 @@
     var t = e.target;
     if (!t || !t.classList) return;
     if (t.classList.contains("chip") || (t.closest && t.closest(".chip"))) {
-      console.log("[chip-persist] chip clicked, scheduling save");
       debouncedSave();
     }
   }, true);
@@ -210,20 +204,17 @@
     observer = new MutationObserver(function () {
       var newSpecialty = getCurrentSpecialty();
       var newVisitType = getCurrentVisitType();
-      console.log("[chip-persist] DOM mutation detected, specialty:", newSpecialty, "visit:", newVisitType);
 
       if (newSpecialty && newVisitType) {
         lastSpecialty = newSpecialty;
         lastVisitType = newVisitType;
         setTimeout(function () {
-          console.log("[chip-persist] attempting restore for:", newSpecialty, "|", newVisitType);
           restoreCurrentState();
         }, 60);
       }
     });
 
     observer.observe(target, { childList: true, subtree: true });
-    console.log("[chip-persist] observer attached to:", target.id);
   }
 
   // --- Specialty change: save before chips are wiped ---
@@ -269,8 +260,6 @@
   function init() {
     lastSpecialty = getCurrentSpecialty();
     lastVisitType = getCurrentVisitType();
-    console.log("[chip-persist] init, specialty:", lastSpecialty, "visit:", lastVisitType);
-    console.log("[chip-persist] speedContent element:", !!document.getElementById("speedContent"));
 
     setupObserver();
     setupSpecialtyListener();
