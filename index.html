@@ -6968,6 +6968,39 @@ html:not([data-theme="light"]) .product-item.launched{
   background:var(--bg-surface,#111c2e)!important;
   border-color:rgba(245,158,11,0.3)!important;
 }
+/* === V4 Advanced Mode dark overrides (in index.html to avoid JS cache issues) === */
+html:not([data-theme="light"]) .v4-stepper,
+html:not([data-theme="light"]) .v4-nav,
+html:not([data-theme="light"]) .v4-sidebar-inner,
+html:not([data-theme="light"]) .v4-step-content,
+html:not([data-theme="light"]) .v4-calc-card,
+html:not([data-theme="light"]) .v4-out-tab,
+html:not([data-theme="light"]) .v4-output-tabs button{background:var(--bg-surface,#111c2e)!important;border-color:var(--bg-border,rgba(148,163,184,.18))!important;color:var(--text-primary,#f8fafc)!important}
+html:not([data-theme="light"]) .v4-select,
+html:not([data-theme="light"]) .v4-search-input,
+html:not([data-theme="light"]) .v4-custom-entry-input,
+html:not([data-theme="light"]) .v4-hist-fields,
+html:not([data-theme="light"]) .v4-wf-info,
+html:not([data-theme="light"]) .v4-guidance,
+html:not([data-theme="light"]) .v4-chip-group-header,
+html:not([data-theme="light"]) .v4-exam-group-header,
+html:not([data-theme="light"]) .v4-calc-result,
+html:not([data-theme="light"]) .v4-hist-preview{background:var(--bg-elevated,#17233a)!important;border-color:var(--bg-border,rgba(148,163,184,.18))!important;color:var(--text-primary,#f8fafc)!important}
+html:not([data-theme="light"]) .v4-select option{background:var(--bg-surface,#111c2e)!important;color:var(--text-primary,#f8fafc)!important}
+html:not([data-theme="light"]) .v4-chip-btn{background:var(--bg-elevated,#17233a)!important;border-color:var(--bg-border)!important;color:var(--text-secondary,#cbd5e1)!important;box-shadow:none!important}
+html:not([data-theme="light"]) .v4-chip-btn.active{background:var(--accent-primary,#14b8a6)!important;color:#fff!important;border-color:var(--accent-primary)!important;box-shadow:0 0 12px rgba(20,184,166,.2)!important}
+html:not([data-theme="light"]) .v4-output-box{background:#060A12!important;border-color:rgba(20,184,166,.2)!important;color:var(--text-primary)!important}
+html:not([data-theme="light"]) .v4-s-indicator{color:var(--text-tertiary,#94a3b8)!important;border-color:var(--bg-border)!important}
+html:not([data-theme="light"]) .v4-s-indicator.active{background:rgba(20,184,166,0.1)!important;color:var(--accent-primary,#14b8a6)!important}
+html:not([data-theme="light"]) .v4-s-num{background:var(--bg-elevated,#17233a)!important;color:var(--text-secondary)!important}
+html:not([data-theme="light"]) .v4-btn-outline{background:transparent!important;color:var(--accent-primary,#14b8a6)!important;border-color:var(--accent-primary)!important}
+html:not([data-theme="light"]) .v4-btn-ghost{background:transparent!important;color:var(--text-secondary)!important;border-color:var(--bg-border)!important}
+html:not([data-theme="light"]) .v4-step-h,.v4-sub-h{color:var(--text-primary)!important}
+html:not([data-theme="light"]) .v4-step-d,.v4-field-note,.v4-sidebar-empty,.v4-calc-desc,.v4-step-info{color:var(--text-secondary)!important}
+html:not([data-theme="light"]) .v4-field-label,.v4-cg-count,.v4-pog-label,.v4-inv-group-header,.v4-collapse-summary{color:var(--text-tertiary,#94a3b8)!important}
+html:not([data-theme="light"]) .v4-chip-group,.v4-exam-group,.v4-inv-group,.v4-collapse{border-color:var(--bg-border)!important}
+html:not([data-theme="light"]) .v4-exam-prompt,.v4-inv-opt,.v4-plan-opt,.v4-calc-input-row{color:var(--text-secondary)!important}
+html:not([data-theme="light"]) .v4-out-tab.active{background:var(--accent-primary,#14b8a6)!important;color:#fff!important;border-color:var(--accent-primary)!important}
 
 /* === LIGHT THEME OVERRIDE (toggled via data-theme="light" on html) === */
 html[data-theme="light"]{
