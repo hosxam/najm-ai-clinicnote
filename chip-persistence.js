@@ -128,7 +128,15 @@
       saveTimer = null;
       lastSpecialty = getCurrentSpecialty();
       lastVisitType = getCurrentVisitType();
-      saveCurrentState();
+      console.log("[chip-persist] saving for:", lastSpecialty, "|", lastVisitType);
+      var sel = readSelections();
+      console.log("[chip-persist] selections:", sel);
+      if (sel) {
+        saveFor(lastSpecialty, lastVisitType, sel);
+        console.log("[chip-persist] saved OK");
+      } else {
+        console.log("[chip-persist] nothing to save (no selections found)");
+      }
     }, 200);
   }
 
@@ -136,6 +144,7 @@
     var t = e.target;
     if (!t || !t.classList) return;
     if (t.classList.contains("chip") || (t.closest && t.closest(".chip"))) {
+      console.log("[chip-persist] chip clicked, scheduling save");
       debouncedSave();
     }
   }, true);
@@ -151,17 +160,17 @@
     if (!speedContent) return;
 
     observer = new MutationObserver(function () {
-      // Chips just changed (fillChips was called).
-      // Wait a tick for the DOM to settle, then restore.
       var newSpecialty = getCurrentSpecialty();
       var newVisitType = getCurrentVisitType();
+      console.log("[chip-persist] DOM mutation detected, specialty:", newSpecialty, "visit:", newVisitType);
 
       if (newSpecialty && newVisitType) {
-        // Update tracking
         lastSpecialty = newSpecialty;
         lastVisitType = newVisitType;
-        // Restore after a brief delay
-        setTimeout(restoreCurrentState, 60);
+        setTimeout(function () {
+          console.log("[chip-persist] attempting restore for:", newSpecialty, "|", newVisitType);
+          restoreCurrentState();
+        }, 60);
       }
     });
 
@@ -211,12 +220,13 @@
   function init() {
     lastSpecialty = getCurrentSpecialty();
     lastVisitType = getCurrentVisitType();
+    console.log("[chip-persist] init, specialty:", lastSpecialty, "visit:", lastVisitType);
+    console.log("[chip-persist] speedContent element:", !!document.getElementById("speedContent"));
 
     setupObserver();
     setupSpecialtyListener();
     setupVisitTypeListener();
 
-    // If a workflow is already loaded, restore
     if (lastSpecialty && lastVisitType) {
       setTimeout(restoreCurrentState, 300);
     }
