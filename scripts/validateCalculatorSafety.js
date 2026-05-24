@@ -101,10 +101,11 @@ if (!fs.existsSync(INDEX_PATH)) {
   assert(index.includes('calculator-high-impact.js'), 'index.html must include calculator-high-impact.js.');
   assert(index.includes('calculator-active-ui.js'), 'index.html must include calculator-active-ui.js.');
   assert(index.includes('id="page-calculators"'), 'index.html must include calculator page.');
-  assert(index.includes('get("calc") === "v1"'), 'index.html must require calc=v1 feature flag.');
+  assert(index.includes('get("calc") === "v1"'), 'index.html must read the ?calc=v1 routing signal (calculators auto-land alias).');
+  assert(index.includes('get("legacy") !== "1"'), 'index.html must support the ?legacy=1 kill-switch (Step 2 promotion of calculators to always-on).');
   assert(!index.includes('id="calculatorNavLink"'), 'hidden duplicate calculator nav link must not be present.');
   assert(index.includes('href="./calculators/">Calculator Tools</a>'), 'public calculator nav must use the clean Calculator Tools link.');
-  assert(index.includes('isCalculatorToolsEnabled()?\'calculators\''), 'startup routing must only show calculators when feature flag is enabled.');
+  assert(index.includes('isCalculatorRouteRequested()?\'calculators\''), 'startup routing must auto-route to calculators only when ?calc=v1 explicit signal is present.');
 }
 
 if (errors.length) {
