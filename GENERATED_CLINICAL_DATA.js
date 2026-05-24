@@ -54023,170 +54023,451 @@
         "symptoms": [
           {
             "chip_id": "cardio-palpitations-symptoms-1",
-            "chip_text": "palpitations",
+            "chip_text": "palpitations intermittent",
             "order": 1,
-            "search_terms": [
-              "palpitations"
-            ],
-            "tags": [
-              "cardiology"
-            ]
+            "search_terms": ["palpitations"],
+            "tags": ["intermittent"]
           },
           {
             "chip_id": "cardio-palpitations-symptoms-2",
-            "chip_text": "onset or duration documented",
+            "chip_text": "palpitations sustained",
             "order": 2,
-            "search_terms": [
-              "onset"
-            ],
-            "tags": [
-              "or"
-            ]
+            "search_terms": ["palpitations"],
+            "tags": ["sustained"]
           },
           {
             "chip_id": "cardio-palpitations-symptoms-3",
-            "chip_text": "regularity reviewed",
+            "chip_text": "regular rhythm felt",
             "order": 3,
-            "search_terms": [
-              "regularity"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["regular"],
+            "tags": ["rhythm"]
           },
           {
             "chip_id": "cardio-palpitations-symptoms-4",
-            "chip_text": "triggers reviewed",
+            "chip_text": "irregular rhythm felt",
             "order": 4,
-            "search_terms": [
-              "triggers"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["irregular"],
+            "tags": ["rhythm"]
           },
           {
             "chip_id": "cardio-palpitations-symptoms-5",
-            "chip_text": "chest pain or SOB or syncope reviewed",
+            "chip_text": "onset sudden",
             "order": 5,
-            "search_terms": [
-              "chest"
-            ],
-            "tags": [
-              "pain"
-            ]
+            "search_terms": ["onset"],
+            "tags": ["sudden"]
           },
           {
             "chip_id": "cardio-palpitations-symptoms-6",
-            "chip_text": "caffeine or stimulant history reviewed",
+            "chip_text": "onset gradual",
             "order": 6,
-            "search_terms": [
-              "caffeine"
-            ],
-            "tags": [
-              "or"
-            ]
+            "search_terms": ["onset"],
+            "tags": ["gradual"]
+          },
+          {
+            "chip_id": "cardio-palpitations-symptoms-7",
+            "chip_text": "duration seconds",
+            "order": 7,
+            "search_terms": ["duration"],
+            "tags": ["seconds"]
+          },
+          {
+            "chip_id": "cardio-palpitations-symptoms-8",
+            "chip_text": "duration minutes",
+            "order": 8,
+            "search_terms": ["duration"],
+            "tags": ["minutes"]
+          },
+          {
+            "chip_id": "cardio-palpitations-symptoms-9",
+            "chip_text": "duration hours",
+            "order": 9,
+            "search_terms": ["duration"],
+            "tags": ["hours"]
+          },
+          {
+            "chip_id": "cardio-palpitations-symptoms-10",
+            "chip_text": "triggered by caffeine",
+            "order": 10,
+            "search_terms": ["triggered"],
+            "tags": ["by"]
+          },
+          {
+            "chip_id": "cardio-palpitations-symptoms-11",
+            "chip_text": "triggered by exercise",
+            "order": 11,
+            "search_terms": ["triggered"],
+            "tags": ["by"]
+          },
+          {
+            "chip_id": "cardio-palpitations-symptoms-12",
+            "chip_text": "triggered by stress",
+            "order": 12,
+            "search_terms": ["triggered"],
+            "tags": ["by"]
+          },
+          {
+            "chip_id": "cardio-palpitations-symptoms-13",
+            "chip_text": "associated chest pain",
+            "order": 13,
+            "search_terms": ["associated"],
+            "tags": ["chest"]
+          },
+          {
+            "chip_id": "cardio-palpitations-symptoms-14",
+            "chip_text": "associated SOB",
+            "order": 14,
+            "search_terms": ["associated"],
+            "tags": ["SOB"]
+          },
+          {
+            "chip_id": "cardio-palpitations-symptoms-15",
+            "chip_text": "associated dizziness",
+            "order": 15,
+            "search_terms": ["associated"],
+            "tags": ["dizziness"]
+          },
+          {
+            "chip_id": "cardio-palpitations-symptoms-16",
+            "chip_text": "associated syncope",
+            "order": 16,
+            "search_terms": ["associated"],
+            "tags": ["syncope"]
+          },
+          {
+            "chip_id": "cardio-palpitations-symptoms-17",
+            "chip_text": "no associated symptoms",
+            "order": 17,
+            "search_terms": ["no"],
+            "tags": ["associated"]
           }
         ],
         "relevant_negatives": [
           {
             "chip_id": "cardio-palpitations-relevant_negatives-1",
-            "chip_text": "no syncope reported",
+            "chip_text": "no syncope",
             "order": 1,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "syncope"
-            ]
+            "search_terms": ["no"],
+            "tags": ["syncope"]
           },
           {
             "chip_id": "cardio-palpitations-relevant_negatives-2",
-            "chip_text": "no chest pain reported",
+            "chip_text": "no chest pain",
             "order": 2,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "chest"
-            ]
+            "search_terms": ["no"],
+            "tags": ["chest"]
+          },
+          {
+            "chip_id": "cardio-palpitations-relevant_negatives-3",
+            "chip_text": "no SOB",
+            "order": 3,
+            "search_terms": ["no"],
+            "tags": ["SOB"]
+          },
+          {
+            "chip_id": "cardio-palpitations-relevant_negatives-4",
+            "chip_text": "no presyncope",
+            "order": 4,
+            "search_terms": ["no"],
+            "tags": ["presyncope"]
+          },
+          {
+            "chip_id": "cardio-palpitations-relevant_negatives-5",
+            "chip_text": "no hemodynamic compromise",
+            "order": 5,
+            "search_terms": ["no"],
+            "tags": ["hemodynamic"]
+          },
+          {
+            "chip_id": "cardio-palpitations-relevant_negatives-6",
+            "chip_text": "no thyroid symptoms",
+            "order": 6,
+            "search_terms": ["no"],
+            "tags": ["thyroid"]
+          },
+          {
+            "chip_id": "cardio-palpitations-relevant_negatives-7",
+            "chip_text": "no stimulant use",
+            "order": 7,
+            "search_terms": ["no"],
+            "tags": ["stimulant"]
           }
         ],
         "exam_findings": [
           {
             "chip_id": "cardio-palpitations-exam_findings-1",
-            "chip_text": "vital signs documented if measured",
+            "chip_text": "HR documented",
             "order": 1,
-            "search_terms": [
-              "vital"
-            ],
-            "tags": [
-              "signs"
-            ]
+            "search_terms": ["HR"],
+            "tags": ["documented"]
           },
           {
             "chip_id": "cardio-palpitations-exam_findings-2",
-            "chip_text": "pulse or rhythm documented if assessed",
+            "chip_text": "rhythm regular",
             "order": 2,
-            "search_terms": [
-              "pulse"
-            ],
-            "tags": [
-              "or"
-            ]
+            "search_terms": ["rhythm"],
+            "tags": ["regular"]
+          },
+          {
+            "chip_id": "cardio-palpitations-exam_findings-3",
+            "chip_text": "rhythm irregular",
+            "order": 3,
+            "search_terms": ["rhythm"],
+            "tags": ["irregular"]
+          },
+          {
+            "chip_id": "cardio-palpitations-exam_findings-4",
+            "chip_text": "BP documented",
+            "order": 4,
+            "search_terms": ["BP"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-palpitations-exam_findings-5",
+            "chip_text": "thyroid not enlarged",
+            "order": 5,
+            "search_terms": ["thyroid"],
+            "tags": ["not"]
+          },
+          {
+            "chip_id": "cardio-palpitations-exam_findings-6",
+            "chip_text": "cardiovascular exam normal",
+            "order": 6,
+            "search_terms": ["cardiovascular"],
+            "tags": ["exam"]
+          },
+          {
+            "chip_id": "cardio-palpitations-exam_findings-7",
+            "chip_text": "no signs of heart failure",
+            "order": 7,
+            "search_terms": ["no"],
+            "tags": ["signs"]
           }
         ],
-        "red_flags": [],
+        "red_flags": [
+          {
+            "chip_id": "cardio-palpitations-red_flags-1",
+            "chip_text": "syncope with palpitations",
+            "order": 1,
+            "search_terms": ["syncope"],
+            "tags": ["with"]
+          },
+          {
+            "chip_id": "cardio-palpitations-red_flags-2",
+            "chip_text": "hemodynamic instability",
+            "order": 2,
+            "search_terms": ["hemodynamic"],
+            "tags": ["instability"]
+          },
+          {
+            "chip_id": "cardio-palpitations-red_flags-3",
+            "chip_text": "sustained wide-complex tachycardia",
+            "order": 3,
+            "search_terms": ["sustained"],
+            "tags": ["wide-complex"]
+          },
+          {
+            "chip_id": "cardio-palpitations-red_flags-4",
+            "chip_text": "family history of SCD",
+            "order": 4,
+            "search_terms": ["family"],
+            "tags": ["history"]
+          },
+          {
+            "chip_id": "cardio-palpitations-red_flags-5",
+            "chip_text": "structural heart disease known",
+            "order": 5,
+            "search_terms": ["structural"],
+            "tags": ["heart"]
+          },
+          {
+            "chip_id": "cardio-palpitations-red_flags-6",
+            "chip_text": "palpitations with exertion only",
+            "order": 6,
+            "search_terms": ["palpitations"],
+            "tags": ["with"]
+          }
+        ],
         "investigations": [
           {
             "chip_id": "cardio-palpitations-investigations-1",
-            "chip_text": "ECG reviewed if performed",
+            "chip_text": "ECG: NSR",
             "order": 1,
-            "search_terms": [
-              "ECG"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["ECG:"],
+            "tags": ["NSR"]
           },
           {
             "chip_id": "cardio-palpitations-investigations-2",
-            "chip_text": "thyroid function or electrolytes reviewed if ordered",
+            "chip_text": "ECG: AF",
             "order": 2,
-            "search_terms": [
-              "thyroid"
-            ],
-            "tags": [
-              "function"
-            ]
+            "search_terms": ["ECG:"],
+            "tags": ["AF"]
+          },
+          {
+            "chip_id": "cardio-palpitations-investigations-3",
+            "chip_text": "ECG: SVT",
+            "order": 3,
+            "search_terms": ["ECG:"],
+            "tags": ["SVT"]
+          },
+          {
+            "chip_id": "cardio-palpitations-investigations-4",
+            "chip_text": "ECG: ectopics",
+            "order": 4,
+            "search_terms": ["ECG:"],
+            "tags": ["ectopics"]
+          },
+          {
+            "chip_id": "cardio-palpitations-investigations-5",
+            "chip_text": "ECG: pre-excitation (WPW)",
+            "order": 5,
+            "search_terms": ["ECG:"],
+            "tags": ["pre-excitation"]
+          },
+          {
+            "chip_id": "cardio-palpitations-investigations-6",
+            "chip_text": "ECG: prolonged QTc",
+            "order": 6,
+            "search_terms": ["ECG:"],
+            "tags": ["prolonged"]
+          },
+          {
+            "chip_id": "cardio-palpitations-investigations-7",
+            "chip_text": "Holter arranged",
+            "order": 7,
+            "search_terms": ["Holter"],
+            "tags": ["arranged"]
+          },
+          {
+            "chip_id": "cardio-palpitations-investigations-8",
+            "chip_text": "event recorder arranged",
+            "order": 8,
+            "search_terms": ["event"],
+            "tags": ["recorder"]
+          },
+          {
+            "chip_id": "cardio-palpitations-investigations-9",
+            "chip_text": "TFTs reviewed",
+            "order": 9,
+            "search_terms": ["TFTs"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-palpitations-investigations-10",
+            "chip_text": "electrolytes reviewed",
+            "order": 10,
+            "search_terms": ["electrolytes"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-palpitations-investigations-11",
+            "chip_text": "echo reviewed",
+            "order": 11,
+            "search_terms": ["echo"],
+            "tags": ["reviewed"]
           }
         ],
         "plan_phrases": [
           {
             "chip_id": "cardio-palpitations-plan_phrases-1",
-            "chip_text": "follow-up documented if arranged",
+            "chip_text": "reassurance — benign ectopics",
             "order": 1,
-            "search_terms": [
-              "follow-up"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["reassurance"],
+            "tags": ["—"]
           },
           {
             "chip_id": "cardio-palpitations-plan_phrases-2",
-            "chip_text": "monitoring or referral documented if clinician decided",
+            "chip_text": "caffeine reduction advised",
             "order": 2,
-            "search_terms": [
-              "monitoring"
-            ],
-            "tags": [
-              "or"
-            ]
+            "search_terms": ["caffeine"],
+            "tags": ["reduction"]
+          },
+          {
+            "chip_id": "cardio-palpitations-plan_phrases-3",
+            "chip_text": "Holter monitoring arranged",
+            "order": 3,
+            "search_terms": ["Holter"],
+            "tags": ["monitoring"]
+          },
+          {
+            "chip_id": "cardio-palpitations-plan_phrases-4",
+            "chip_text": "cardiology referral arranged",
+            "order": 4,
+            "search_terms": ["cardiology"],
+            "tags": ["referral"]
+          },
+          {
+            "chip_id": "cardio-palpitations-plan_phrases-5",
+            "chip_text": "rate control discussed",
+            "order": 5,
+            "search_terms": ["rate"],
+            "tags": ["control"]
+          },
+          {
+            "chip_id": "cardio-palpitations-plan_phrases-6",
+            "chip_text": "rhythm control discussed",
+            "order": 6,
+            "search_terms": ["rhythm"],
+            "tags": ["control"]
+          },
+          {
+            "chip_id": "cardio-palpitations-plan_phrases-7",
+            "chip_text": "anticoagulation discussed if AF",
+            "order": 7,
+            "search_terms": ["anticoagulation"],
+            "tags": ["discussed"]
+          },
+          {
+            "chip_id": "cardio-palpitations-plan_phrases-8",
+            "chip_text": "medication review documented",
+            "order": 8,
+            "search_terms": ["medication"],
+            "tags": ["review"]
+          },
+          {
+            "chip_id": "cardio-palpitations-plan_phrases-9",
+            "chip_text": "follow-up arranged",
+            "order": 9,
+            "search_terms": ["follow-up"],
+            "tags": ["arranged"]
           }
         ],
-        "follow_up": []
-      },
+        "follow_up": [
+          {
+            "chip_id": "cardio-palpitations-follow_up-1",
+            "chip_text": "follow-up after Holter results",
+            "order": 1,
+            "search_terms": ["follow-up"],
+            "tags": ["after"]
+          },
+          {
+            "chip_id": "cardio-palpitations-follow_up-2",
+            "chip_text": "cardiology OPD follow-up",
+            "order": 2,
+            "search_terms": ["cardiology"],
+            "tags": ["OPD"]
+          },
+          {
+            "chip_id": "cardio-palpitations-follow_up-3",
+            "chip_text": "return if syncope or sustained palpitations",
+            "order": 3,
+            "search_terms": ["return"],
+            "tags": ["if"]
+          },
+          {
+            "chip_id": "cardio-palpitations-follow_up-4",
+            "chip_text": "return if chest pain",
+            "order": 4,
+            "search_terms": ["return"],
+            "tags": ["if"]
+          },
+          {
+            "chip_id": "cardio-palpitations-follow_up-5",
+            "chip_text": "GP follow-up in 2 weeks",
+            "order": 5,
+            "search_terms": ["GP"],
+            "tags": ["follow-up"]
+          }
+        ]
       "chief_complaint_aliases": [
         "palpitations",
         "irregular heartbeat",
@@ -54247,181 +54528,402 @@
         "symptoms": [
           {
             "chip_id": "cardio-hypertension-followup-symptoms-1",
-            "chip_text": "hypertension follow-up",
+            "chip_text": "asymptomatic",
             "order": 1,
-            "search_terms": [
-              "hypertension"
-            ],
-            "tags": [
-              "follow-up"
-            ]
+            "search_terms": ["asymptomatic"],
+            "tags": ["asymptomatic"]
           },
           {
             "chip_id": "cardio-hypertension-followup-symptoms-2",
-            "chip_text": "home BP readings reviewed",
+            "chip_text": "headache",
             "order": 2,
-            "search_terms": [
-              "home"
-            ],
-            "tags": [
-              "BP"
-            ]
+            "search_terms": ["headache"],
+            "tags": ["headache"]
           },
           {
             "chip_id": "cardio-hypertension-followup-symptoms-3",
-            "chip_text": "medication adherence discussed",
+            "chip_text": "visual disturbance",
             "order": 3,
-            "search_terms": [
-              "medication"
-            ],
-            "tags": [
-              "adherence"
-            ]
+            "search_terms": ["visual"],
+            "tags": ["disturbance"]
           },
           {
             "chip_id": "cardio-hypertension-followup-symptoms-4",
-            "chip_text": "lifestyle context reviewed",
+            "chip_text": "chest pain",
             "order": 4,
-            "search_terms": [
-              "lifestyle"
-            ],
-            "tags": [
-              "context"
-            ]
+            "search_terms": ["chest"],
+            "tags": ["pain"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-symptoms-5",
+            "chip_text": "dyspnea on exertion",
+            "order": 5,
+            "search_terms": ["dyspnea"],
+            "tags": ["on"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-symptoms-6",
+            "chip_text": "epistaxis",
+            "order": 6,
+            "search_terms": ["epistaxis"],
+            "tags": ["epistaxis"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-symptoms-7",
+            "chip_text": "home BP readings reviewed",
+            "order": 7,
+            "search_terms": ["home"],
+            "tags": ["BP"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-symptoms-8",
+            "chip_text": "home BP average documented",
+            "order": 8,
+            "search_terms": ["home"],
+            "tags": ["BP"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-symptoms-9",
+            "chip_text": "medication adherence confirmed",
+            "order": 9,
+            "search_terms": ["medication"],
+            "tags": ["adherence"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-symptoms-10",
+            "chip_text": "medication side effects reported",
+            "order": 10,
+            "search_terms": ["medication"],
+            "tags": ["side"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-symptoms-11",
+            "chip_text": "lifestyle modifications discussed",
+            "order": 11,
+            "search_terms": ["lifestyle"],
+            "tags": ["modifications"]
           }
         ],
         "relevant_negatives": [
           {
             "chip_id": "cardio-hypertension-followup-relevant_negatives-1",
-            "chip_text": "no chest pain reported",
+            "chip_text": "no headache",
             "order": 1,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "chest"
-            ]
+            "search_terms": ["no"],
+            "tags": ["headache"]
           },
           {
             "chip_id": "cardio-hypertension-followup-relevant_negatives-2",
-            "chip_text": "no shortness of breath reported",
+            "chip_text": "no visual symptoms",
             "order": 2,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "shortness"
-            ]
+            "search_terms": ["no"],
+            "tags": ["visual"]
           },
           {
             "chip_id": "cardio-hypertension-followup-relevant_negatives-3",
-            "chip_text": "no visual symptoms reported",
+            "chip_text": "no chest pain",
             "order": 3,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "visual"
-            ]
+            "search_terms": ["no"],
+            "tags": ["chest"]
           },
           {
             "chip_id": "cardio-hypertension-followup-relevant_negatives-4",
-            "chip_text": "no focal neurological symptoms reported",
+            "chip_text": "no SOB",
             "order": 4,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "focal"
-            ]
+            "search_terms": ["no"],
+            "tags": ["SOB"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-relevant_negatives-5",
+            "chip_text": "no focal neurology",
+            "order": 5,
+            "search_terms": ["no"],
+            "tags": ["focal"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-relevant_negatives-6",
+            "chip_text": "no epistaxis",
+            "order": 6,
+            "search_terms": ["no"],
+            "tags": ["epistaxis"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-relevant_negatives-7",
+            "chip_text": "no medication side effects",
+            "order": 7,
+            "search_terms": ["no"],
+            "tags": ["medication"]
           }
         ],
         "exam_findings": [
           {
             "chip_id": "cardio-hypertension-followup-exam_findings-1",
-            "chip_text": "blood pressure documented if measured",
+            "chip_text": "BP sitting: documented",
             "order": 1,
-            "search_terms": [
-              "blood"
-            ],
-            "tags": [
-              "pressure"
-            ]
+            "search_terms": ["BP"],
+            "tags": ["sitting:"]
           },
           {
             "chip_id": "cardio-hypertension-followup-exam_findings-2",
-            "chip_text": "cardiovascular exam documented if assessed",
+            "chip_text": "BP standing: documented",
             "order": 2,
-            "search_terms": [
-              "cardiovascular"
-            ],
-            "tags": [
-              "exam"
-            ]
+            "search_terms": ["BP"],
+            "tags": ["standing:"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-exam_findings-3",
+            "chip_text": "HR documented",
+            "order": 3,
+            "search_terms": ["HR"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-exam_findings-4",
+            "chip_text": "BMI documented",
+            "order": 4,
+            "search_terms": ["BMI"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-exam_findings-5",
+            "chip_text": "fundoscopy normal",
+            "order": 5,
+            "search_terms": ["fundoscopy"],
+            "tags": ["normal"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-exam_findings-6",
+            "chip_text": "fundoscopy not performed",
+            "order": 6,
+            "search_terms": ["fundoscopy"],
+            "tags": ["not"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-exam_findings-7",
+            "chip_text": "cardiovascular exam normal",
+            "order": 7,
+            "search_terms": ["cardiovascular"],
+            "tags": ["exam"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-exam_findings-8",
+            "chip_text": "peripheral pulses intact",
+            "order": 8,
+            "search_terms": ["peripheral"],
+            "tags": ["pulses"]
           }
         ],
-        "red_flags": [],
+        "red_flags": [
+          {
+            "chip_id": "cardio-hypertension-followup-red_flags-1",
+            "chip_text": "BP >180/120",
+            "order": 1,
+            "search_terms": ["BP"],
+            "tags": [">180/120"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-red_flags-2",
+            "chip_text": "hypertensive urgency",
+            "order": 2,
+            "search_terms": ["hypertensive"],
+            "tags": ["urgency"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-red_flags-3",
+            "chip_text": "new visual loss",
+            "order": 3,
+            "search_terms": ["new"],
+            "tags": ["visual"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-red_flags-4",
+            "chip_text": "new focal neurology",
+            "order": 4,
+            "search_terms": ["new"],
+            "tags": ["focal"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-red_flags-5",
+            "chip_text": "acute chest pain with HTN",
+            "order": 5,
+            "search_terms": ["acute"],
+            "tags": ["chest"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-red_flags-6",
+            "chip_text": "papilledema",
+            "order": 6,
+            "search_terms": ["papilledema"],
+            "tags": ["papilledema"]
+          }
+        ],
         "investigations": [
           {
             "chip_id": "cardio-hypertension-followup-investigations-1",
-            "chip_text": "renal function reviewed if ordered",
+            "chip_text": "U&E reviewed",
             "order": 1,
-            "search_terms": [
-              "renal"
-            ],
-            "tags": [
-              "function"
-            ]
+            "search_terms": ["U&E"],
+            "tags": ["reviewed"]
           },
           {
             "chip_id": "cardio-hypertension-followup-investigations-2",
-            "chip_text": "urine ACR reviewed if ordered",
+            "chip_text": "eGFR documented",
             "order": 2,
-            "search_terms": [
-              "urine"
-            ],
-            "tags": [
-              "ACR"
-            ]
+            "search_terms": ["eGFR"],
+            "tags": ["documented"]
           },
           {
             "chip_id": "cardio-hypertension-followup-investigations-3",
-            "chip_text": "lipid profile reviewed if ordered",
+            "chip_text": "urine ACR reviewed",
             "order": 3,
-            "search_terms": [
-              "lipid"
-            ],
-            "tags": [
-              "profile"
-            ]
+            "search_terms": ["urine"],
+            "tags": ["ACR"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-investigations-4",
+            "chip_text": "lipid profile reviewed",
+            "order": 4,
+            "search_terms": ["lipid"],
+            "tags": ["profile"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-investigations-5",
+            "chip_text": "HbA1c reviewed",
+            "order": 5,
+            "search_terms": ["HbA1c"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-investigations-6",
+            "chip_text": "ECG reviewed",
+            "order": 6,
+            "search_terms": ["ECG"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-investigations-7",
+            "chip_text": "echo reviewed if ordered",
+            "order": 7,
+            "search_terms": ["echo"],
+            "tags": ["reviewed"]
           }
         ],
         "plan_phrases": [
           {
             "chip_id": "cardio-hypertension-followup-plan_phrases-1",
-            "chip_text": "medication review documented if clinician decided",
+            "chip_text": "target BP discussed",
             "order": 1,
-            "search_terms": [
-              "medication"
-            ],
-            "tags": [
-              "review"
-            ]
+            "search_terms": ["target"],
+            "tags": ["BP"]
           },
           {
             "chip_id": "cardio-hypertension-followup-plan_phrases-2",
-            "chip_text": "follow-up documented if arranged",
+            "chip_text": "antihypertensive continued",
             "order": 2,
-            "search_terms": [
-              "follow-up"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["antihypertensive"],
+            "tags": ["continued"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-plan_phrases-3",
+            "chip_text": "antihypertensive dose increased",
+            "order": 3,
+            "search_terms": ["antihypertensive"],
+            "tags": ["dose"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-plan_phrases-4",
+            "chip_text": "new agent added",
+            "order": 4,
+            "search_terms": ["new"],
+            "tags": ["agent"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-plan_phrases-5",
+            "chip_text": "lifestyle advice: salt reduction",
+            "order": 5,
+            "search_terms": ["lifestyle"],
+            "tags": ["advice:"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-plan_phrases-6",
+            "chip_text": "lifestyle advice: exercise",
+            "order": 6,
+            "search_terms": ["lifestyle"],
+            "tags": ["advice:"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-plan_phrases-7",
+            "chip_text": "lifestyle advice: weight management",
+            "order": 7,
+            "search_terms": ["lifestyle"],
+            "tags": ["advice:"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-plan_phrases-8",
+            "chip_text": "QRISK reviewed",
+            "order": 8,
+            "search_terms": ["QRISK"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-plan_phrases-9",
+            "chip_text": "medication review documented",
+            "order": 9,
+            "search_terms": ["medication"],
+            "tags": ["review"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-plan_phrases-10",
+            "chip_text": "follow-up arranged",
+            "order": 10,
+            "search_terms": ["follow-up"],
+            "tags": ["arranged"]
           }
         ],
-        "follow_up": []
-      },
+        "follow_up": [
+          {
+            "chip_id": "cardio-hypertension-followup-follow_up-1",
+            "chip_text": "follow-up in 2 weeks",
+            "order": 1,
+            "search_terms": ["follow-up"],
+            "tags": ["in"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-follow_up-2",
+            "chip_text": "follow-up in 4 weeks",
+            "order": 2,
+            "search_terms": ["follow-up"],
+            "tags": ["in"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-follow_up-3",
+            "chip_text": "follow-up in 3 months",
+            "order": 3,
+            "search_terms": ["follow-up"],
+            "tags": ["in"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-follow_up-4",
+            "chip_text": "annual review due",
+            "order": 4,
+            "search_terms": ["annual"],
+            "tags": ["review"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-follow_up-5",
+            "chip_text": "return if headache or visual symptoms",
+            "order": 5,
+            "search_terms": ["return"],
+            "tags": ["if"]
+          },
+          {
+            "chip_id": "cardio-hypertension-followup-follow_up-6",
+            "chip_text": "home BP diary to bring next visit",
+            "order": 6,
+            "search_terms": ["home"],
+            "tags": ["BP"]
+          }
+        ]
       "chief_complaint_aliases": [
         "hypertension follow-up",
         "BP check",
@@ -54484,192 +54986,458 @@
         "symptoms": [
           {
             "chip_id": "cardio-heart-failure-followup-symptoms-1",
-            "chip_text": "heart failure follow-up",
+            "chip_text": "NYHA class I",
             "order": 1,
-            "search_terms": [
-              "heart"
-            ],
-            "tags": [
-              "failure"
-            ]
+            "search_terms": ["NYHA"],
+            "tags": ["class"]
           },
           {
             "chip_id": "cardio-heart-failure-followup-symptoms-2",
-            "chip_text": "dyspnea reviewed",
+            "chip_text": "NYHA class II",
             "order": 2,
-            "search_terms": [
-              "dyspnea"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["NYHA"],
+            "tags": ["class"]
           },
           {
             "chip_id": "cardio-heart-failure-followup-symptoms-3",
-            "chip_text": "orthopnea or PND reviewed",
+            "chip_text": "NYHA class III",
             "order": 3,
-            "search_terms": [
-              "orthopnea"
-            ],
-            "tags": [
-              "or"
-            ]
+            "search_terms": ["NYHA"],
+            "tags": ["class"]
           },
           {
             "chip_id": "cardio-heart-failure-followup-symptoms-4",
-            "chip_text": "edema reviewed",
+            "chip_text": "NYHA class IV",
             "order": 4,
-            "search_terms": [
-              "edema"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["NYHA"],
+            "tags": ["class"]
           },
           {
             "chip_id": "cardio-heart-failure-followup-symptoms-5",
-            "chip_text": "weight change reviewed",
+            "chip_text": "dyspnea stable",
             "order": 5,
-            "search_terms": [
-              "weight"
-            ],
-            "tags": [
-              "change"
-            ]
+            "search_terms": ["dyspnea"],
+            "tags": ["stable"]
           },
           {
             "chip_id": "cardio-heart-failure-followup-symptoms-6",
-            "chip_text": "medication adherence discussed",
+            "chip_text": "dyspnea worsening",
             "order": 6,
-            "search_terms": [
-              "medication"
-            ],
-            "tags": [
-              "adherence"
-            ]
+            "search_terms": ["dyspnea"],
+            "tags": ["worsening"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-symptoms-7",
+            "chip_text": "orthopnea present",
+            "order": 7,
+            "search_terms": ["orthopnea"],
+            "tags": ["present"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-symptoms-8",
+            "chip_text": "PND present",
+            "order": 8,
+            "search_terms": ["PND"],
+            "tags": ["present"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-symptoms-9",
+            "chip_text": "weight gain documented",
+            "order": 9,
+            "search_terms": ["weight"],
+            "tags": ["gain"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-symptoms-10",
+            "chip_text": "weight stable",
+            "order": 10,
+            "search_terms": ["weight"],
+            "tags": ["stable"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-symptoms-11",
+            "chip_text": "edema worsening",
+            "order": 11,
+            "search_terms": ["edema"],
+            "tags": ["worsening"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-symptoms-12",
+            "chip_text": "edema improving",
+            "order": 12,
+            "search_terms": ["edema"],
+            "tags": ["improving"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-symptoms-13",
+            "chip_text": "exercise tolerance stable",
+            "order": 13,
+            "search_terms": ["exercise"],
+            "tags": ["tolerance"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-symptoms-14",
+            "chip_text": "exercise tolerance reduced",
+            "order": 14,
+            "search_terms": ["exercise"],
+            "tags": ["tolerance"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-symptoms-15",
+            "chip_text": "medication adherence confirmed",
+            "order": 15,
+            "search_terms": ["medication"],
+            "tags": ["adherence"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-symptoms-16",
+            "chip_text": "medication non-adherence noted",
+            "order": 16,
+            "search_terms": ["medication"],
+            "tags": ["non-adherence"]
           }
         ],
         "relevant_negatives": [
           {
             "chip_id": "cardio-heart-failure-followup-relevant_negatives-1",
-            "chip_text": "no chest pain reported",
+            "chip_text": "no chest pain",
             "order": 1,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "chest"
-            ]
+            "search_terms": ["no"],
+            "tags": ["chest"]
           },
           {
             "chip_id": "cardio-heart-failure-followup-relevant_negatives-2",
-            "chip_text": "no syncope reported",
+            "chip_text": "no syncope",
             "order": 2,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "syncope"
-            ]
+            "search_terms": ["no"],
+            "tags": ["syncope"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-relevant_negatives-3",
+            "chip_text": "no palpitations",
+            "order": 3,
+            "search_terms": ["no"],
+            "tags": ["palpitations"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-relevant_negatives-4",
+            "chip_text": "no new edema",
+            "order": 4,
+            "search_terms": ["no"],
+            "tags": ["new"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-relevant_negatives-5",
+            "chip_text": "no orthopnea",
+            "order": 5,
+            "search_terms": ["no"],
+            "tags": ["orthopnea"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-relevant_negatives-6",
+            "chip_text": "no weight gain",
+            "order": 6,
+            "search_terms": ["no"],
+            "tags": ["weight"]
           }
         ],
         "exam_findings": [
           {
             "chip_id": "cardio-heart-failure-followup-exam_findings-1",
-            "chip_text": "vital signs documented if measured",
+            "chip_text": "BP documented",
             "order": 1,
-            "search_terms": [
-              "vital"
-            ],
-            "tags": [
-              "signs"
-            ]
+            "search_terms": ["BP"],
+            "tags": ["documented"]
           },
           {
             "chip_id": "cardio-heart-failure-followup-exam_findings-2",
-            "chip_text": "edema documented if assessed",
+            "chip_text": "HR documented",
             "order": 2,
-            "search_terms": [
-              "edema"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["HR"],
+            "tags": ["documented"]
           },
           {
             "chip_id": "cardio-heart-failure-followup-exam_findings-3",
-            "chip_text": "chest auscultation documented if assessed",
+            "chip_text": "weight documented",
             "order": 3,
-            "search_terms": [
-              "chest"
-            ],
-            "tags": [
-              "auscultation"
-            ]
+            "search_terms": ["weight"],
+            "tags": ["documented"]
           },
           {
             "chip_id": "cardio-heart-failure-followup-exam_findings-4",
-            "chip_text": "JVP documented if assessed",
+            "chip_text": "JVP elevated",
             "order": 4,
-            "search_terms": [
-              "JVP"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["JVP"],
+            "tags": ["elevated"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-exam_findings-5",
+            "chip_text": "JVP normal",
+            "order": 5,
+            "search_terms": ["JVP"],
+            "tags": ["normal"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-exam_findings-6",
+            "chip_text": "bilateral pitting edema",
+            "order": 6,
+            "search_terms": ["bilateral"],
+            "tags": ["pitting"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-exam_findings-7",
+            "chip_text": "no peripheral edema",
+            "order": 7,
+            "search_terms": ["no"],
+            "tags": ["peripheral"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-exam_findings-8",
+            "chip_text": "chest: basal creps",
+            "order": 8,
+            "search_terms": ["chest:"],
+            "tags": ["basal"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-exam_findings-9",
+            "chip_text": "chest: clear",
+            "order": 9,
+            "search_terms": ["chest:"],
+            "tags": ["clear"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-exam_findings-10",
+            "chip_text": "S3 gallop present",
+            "order": 10,
+            "search_terms": ["S3"],
+            "tags": ["gallop"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-exam_findings-11",
+            "chip_text": "heart sounds normal",
+            "order": 11,
+            "search_terms": ["heart"],
+            "tags": ["sounds"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-exam_findings-12",
+            "chip_text": "hepatomegaly present",
+            "order": 12,
+            "search_terms": ["hepatomegaly"],
+            "tags": ["present"]
           }
         ],
-        "red_flags": [],
+        "red_flags": [
+          {
+            "chip_id": "cardio-heart-failure-followup-red_flags-1",
+            "chip_text": "acute decompensation",
+            "order": 1,
+            "search_terms": ["acute"],
+            "tags": ["decompensation"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-red_flags-2",
+            "chip_text": "SpO2 below 92%",
+            "order": 2,
+            "search_terms": ["SpO2"],
+            "tags": ["below"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-red_flags-3",
+            "chip_text": "hypotension",
+            "order": 3,
+            "search_terms": ["hypotension"],
+            "tags": ["hypotension"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-red_flags-4",
+            "chip_text": "new AF",
+            "order": 4,
+            "search_terms": ["new"],
+            "tags": ["AF"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-red_flags-5",
+            "chip_text": "syncope",
+            "order": 5,
+            "search_terms": ["syncope"],
+            "tags": ["syncope"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-red_flags-6",
+            "chip_text": "anuria or oliguria",
+            "order": 6,
+            "search_terms": ["anuria"],
+            "tags": ["or"]
+          }
+        ],
         "investigations": [
           {
             "chip_id": "cardio-heart-failure-followup-investigations-1",
-            "chip_text": "renal function reviewed if ordered",
+            "chip_text": "BNP or NT-proBNP reviewed",
             "order": 1,
-            "search_terms": [
-              "renal"
-            ],
-            "tags": [
-              "function"
-            ]
+            "search_terms": ["BNP"],
+            "tags": ["or"]
           },
           {
             "chip_id": "cardio-heart-failure-followup-investigations-2",
-            "chip_text": "electrolytes reviewed if ordered",
+            "chip_text": "renal function reviewed",
             "order": 2,
-            "search_terms": [
-              "electrolytes"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["renal"],
+            "tags": ["function"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-investigations-3",
+            "chip_text": "electrolytes reviewed",
+            "order": 3,
+            "search_terms": ["electrolytes"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-investigations-4",
+            "chip_text": "eGFR documented",
+            "order": 4,
+            "search_terms": ["eGFR"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-investigations-5",
+            "chip_text": "echo reviewed",
+            "order": 5,
+            "search_terms": ["echo"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-investigations-6",
+            "chip_text": "ECG reviewed",
+            "order": 6,
+            "search_terms": ["ECG"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-investigations-7",
+            "chip_text": "iron studies reviewed",
+            "order": 7,
+            "search_terms": ["iron"],
+            "tags": ["studies"]
           }
         ],
         "plan_phrases": [
           {
             "chip_id": "cardio-heart-failure-followup-plan_phrases-1",
-            "chip_text": "follow-up documented if arranged",
+            "chip_text": "diuretic dose adjusted",
             "order": 1,
-            "search_terms": [
-              "follow-up"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["diuretic"],
+            "tags": ["dose"]
           },
           {
             "chip_id": "cardio-heart-failure-followup-plan_phrases-2",
-            "chip_text": "medication review documented if clinician decided",
+            "chip_text": "ACEi/ARB continued",
             "order": 2,
-            "search_terms": [
-              "medication"
-            ],
-            "tags": [
-              "review"
-            ]
+            "search_terms": ["ACEi/ARB"],
+            "tags": ["continued"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-plan_phrases-3",
+            "chip_text": "beta-blocker continued",
+            "order": 3,
+            "search_terms": ["beta-blocker"],
+            "tags": ["continued"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-plan_phrases-4",
+            "chip_text": "MRA continued",
+            "order": 4,
+            "search_terms": ["MRA"],
+            "tags": ["continued"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-plan_phrases-5",
+            "chip_text": "SGLT2i continued",
+            "order": 5,
+            "search_terms": ["SGLT2i"],
+            "tags": ["continued"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-plan_phrases-6",
+            "chip_text": "fluid restriction advised",
+            "order": 6,
+            "search_terms": ["fluid"],
+            "tags": ["restriction"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-plan_phrases-7",
+            "chip_text": "salt restriction advised",
+            "order": 7,
+            "search_terms": ["salt"],
+            "tags": ["restriction"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-plan_phrases-8",
+            "chip_text": "daily weight monitoring advised",
+            "order": 8,
+            "search_terms": ["daily"],
+            "tags": ["weight"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-plan_phrases-9",
+            "chip_text": "cardiology follow-up arranged",
+            "order": 9,
+            "search_terms": ["cardiology"],
+            "tags": ["follow-up"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-plan_phrases-10",
+            "chip_text": "medication review documented",
+            "order": 10,
+            "search_terms": ["medication"],
+            "tags": ["review"]
           }
         ],
-        "follow_up": []
-      },
+        "follow_up": [
+          {
+            "chip_id": "cardio-heart-failure-followup-follow_up-1",
+            "chip_text": "follow-up in 1 week",
+            "order": 1,
+            "search_terms": ["follow-up"],
+            "tags": ["in"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-follow_up-2",
+            "chip_text": "follow-up in 2 weeks",
+            "order": 2,
+            "search_terms": ["follow-up"],
+            "tags": ["in"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-follow_up-3",
+            "chip_text": "follow-up in 4 weeks",
+            "order": 3,
+            "search_terms": ["follow-up"],
+            "tags": ["in"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-follow_up-4",
+            "chip_text": "return if weight gain >2kg in 3 days",
+            "order": 4,
+            "search_terms": ["return"],
+            "tags": ["if"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-follow_up-5",
+            "chip_text": "return if worsening SOB",
+            "order": 5,
+            "search_terms": ["return"],
+            "tags": ["if"]
+          },
+          {
+            "chip_id": "cardio-heart-failure-followup-follow_up-6",
+            "chip_text": "heart failure nurse follow-up",
+            "order": 6,
+            "search_terms": ["heart"],
+            "tags": ["failure"]
+          }
+        ]
       "chief_complaint_aliases": [
         "heart failure follow-up",
         "HF review",
@@ -54728,137 +55496,323 @@
         "symptoms": [
           {
             "chip_id": "cardio-ecg-review-symptoms-1",
-            "chip_text": "ECG review",
+            "chip_text": "ECG performed for chest pain",
             "order": 1,
-            "search_terms": [
-              "ECG"
-            ],
-            "tags": [
-              "review"
-            ]
+            "search_terms": ["ECG"],
+            "tags": ["performed"]
           },
           {
             "chip_id": "cardio-ecg-review-symptoms-2",
-            "chip_text": "reason for ECG documented",
+            "chip_text": "ECG performed for palpitations",
             "order": 2,
-            "search_terms": [
-              "reason"
-            ],
-            "tags": [
-              "for"
-            ]
+            "search_terms": ["ECG"],
+            "tags": ["performed"]
           },
           {
             "chip_id": "cardio-ecg-review-symptoms-3",
-            "chip_text": "symptoms reviewed",
+            "chip_text": "ECG performed for syncope",
             "order": 3,
-            "search_terms": [
-              "symptoms"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["ECG"],
+            "tags": ["performed"]
           },
           {
             "chip_id": "cardio-ecg-review-symptoms-4",
-            "chip_text": "previous ECG compared if available",
+            "chip_text": "ECG performed for SOB",
             "order": 4,
-            "search_terms": [
-              "previous"
-            ],
-            "tags": [
-              "ECG"
-            ]
+            "search_terms": ["ECG"],
+            "tags": ["performed"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-symptoms-5",
+            "chip_text": "ECG performed pre-operative",
+            "order": 5,
+            "search_terms": ["ECG"],
+            "tags": ["performed"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-symptoms-6",
+            "chip_text": "ECG routine screening",
+            "order": 6,
+            "search_terms": ["ECG"],
+            "tags": ["routine"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-symptoms-7",
+            "chip_text": "previous ECG available for comparison",
+            "order": 7,
+            "search_terms": ["previous"],
+            "tags": ["ECG"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-symptoms-8",
+            "chip_text": "no previous ECG available",
+            "order": 8,
+            "search_terms": ["no"],
+            "tags": ["previous"]
           }
         ],
         "relevant_negatives": [
           {
             "chip_id": "cardio-ecg-review-relevant_negatives-1",
-            "chip_text": "no chest pain reported",
+            "chip_text": "no chest pain at time of ECG",
             "order": 1,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "chest"
-            ]
+            "search_terms": ["no"],
+            "tags": ["chest"]
           },
           {
             "chip_id": "cardio-ecg-review-relevant_negatives-2",
-            "chip_text": "no syncope reported",
+            "chip_text": "no palpitations at time of ECG",
             "order": 2,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "syncope"
-            ]
+            "search_terms": ["no"],
+            "tags": ["palpitations"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-relevant_negatives-3",
+            "chip_text": "no syncope",
+            "order": 3,
+            "search_terms": ["no"],
+            "tags": ["syncope"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-relevant_negatives-4",
+            "chip_text": "no dyspnea",
+            "order": 4,
+            "search_terms": ["no"],
+            "tags": ["dyspnea"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-relevant_negatives-5",
+            "chip_text": "asymptomatic at time of recording",
+            "order": 5,
+            "search_terms": ["asymptomatic"],
+            "tags": ["at"]
           }
         ],
         "exam_findings": [
           {
             "chip_id": "cardio-ecg-review-exam_findings-1",
-            "chip_text": "vital signs documented if measured",
+            "chip_text": "HR on ECG documented",
             "order": 1,
-            "search_terms": [
-              "vital"
-            ],
-            "tags": [
-              "signs"
-            ]
+            "search_terms": ["HR"],
+            "tags": ["on"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-exam_findings-2",
+            "chip_text": "rhythm regular",
+            "order": 2,
+            "search_terms": ["rhythm"],
+            "tags": ["regular"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-exam_findings-3",
+            "chip_text": "rhythm irregular",
+            "order": 3,
+            "search_terms": ["rhythm"],
+            "tags": ["irregular"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-exam_findings-4",
+            "chip_text": "BP documented",
+            "order": 4,
+            "search_terms": ["BP"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-exam_findings-5",
+            "chip_text": "patient stable during recording",
+            "order": 5,
+            "search_terms": ["patient"],
+            "tags": ["stable"]
           }
         ],
-        "red_flags": [],
         "investigations": [
           {
             "chip_id": "cardio-ecg-review-investigations-1",
-            "chip_text": "ECG reviewed",
+            "chip_text": "ECG: normal sinus rhythm",
             "order": 1,
-            "search_terms": [
-              "ECG"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["ECG:"],
+            "tags": ["normal"]
           },
           {
             "chip_id": "cardio-ecg-review-investigations-2",
-            "chip_text": "clinician-entered interpretation documented",
+            "chip_text": "ECG: sinus tachycardia",
             "order": 2,
-            "search_terms": [
-              "clinician-entered"
-            ],
-            "tags": [
-              "interpretation"
-            ]
+            "search_terms": ["ECG:"],
+            "tags": ["sinus"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-investigations-3",
+            "chip_text": "ECG: sinus bradycardia",
+            "order": 3,
+            "search_terms": ["ECG:"],
+            "tags": ["sinus"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-investigations-4",
+            "chip_text": "ECG: atrial fibrillation",
+            "order": 4,
+            "search_terms": ["ECG:"],
+            "tags": ["atrial"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-investigations-5",
+            "chip_text": "ECG: atrial flutter",
+            "order": 5,
+            "search_terms": ["ECG:"],
+            "tags": ["atrial"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-investigations-6",
+            "chip_text": "ECG: ST elevation",
+            "order": 6,
+            "search_terms": ["ECG:"],
+            "tags": ["ST"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-investigations-7",
+            "chip_text": "ECG: ST depression",
+            "order": 7,
+            "search_terms": ["ECG:"],
+            "tags": ["ST"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-investigations-8",
+            "chip_text": "ECG: T-wave inversion",
+            "order": 8,
+            "search_terms": ["ECG:"],
+            "tags": ["T-wave"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-investigations-9",
+            "chip_text": "ECG: prolonged QTc",
+            "order": 9,
+            "search_terms": ["ECG:"],
+            "tags": ["prolonged"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-investigations-10",
+            "chip_text": "ECG: LBBB",
+            "order": 10,
+            "search_terms": ["ECG:"],
+            "tags": ["LBBB"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-investigations-11",
+            "chip_text": "ECG: RBBB",
+            "order": 11,
+            "search_terms": ["ECG:"],
+            "tags": ["RBBB"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-investigations-12",
+            "chip_text": "ECG: LVH criteria",
+            "order": 12,
+            "search_terms": ["ECG:"],
+            "tags": ["LVH"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-investigations-13",
+            "chip_text": "ECG: no acute ischemic changes",
+            "order": 13,
+            "search_terms": ["ECG:"],
+            "tags": ["no"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-investigations-14",
+            "chip_text": "ECG: unchanged from previous",
+            "order": 14,
+            "search_terms": ["ECG:"],
+            "tags": ["unchanged"]
           }
         ],
         "plan_phrases": [
           {
             "chip_id": "cardio-ecg-review-plan_phrases-1",
-            "chip_text": "follow-up plan documented",
+            "chip_text": "no acute changes — reassure",
             "order": 1,
-            "search_terms": [
-              "follow-up"
-            ],
-            "tags": [
-              "plan"
-            ]
+            "search_terms": ["no"],
+            "tags": ["acute"]
           },
           {
             "chip_id": "cardio-ecg-review-plan_phrases-2",
-            "chip_text": "referral documented if clinician decided",
+            "chip_text": "repeat ECG if symptoms recur",
             "order": 2,
-            "search_terms": [
-              "referral"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["repeat"],
+            "tags": ["ECG"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-plan_phrases-3",
+            "chip_text": "cardiology referral for abnormal finding",
+            "order": 3,
+            "search_terms": ["cardiology"],
+            "tags": ["referral"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-plan_phrases-4",
+            "chip_text": "serial ECGs ordered",
+            "order": 4,
+            "search_terms": ["serial"],
+            "tags": ["ECGs"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-plan_phrases-5",
+            "chip_text": "troponin ordered",
+            "order": 5,
+            "search_terms": ["troponin"],
+            "tags": ["ordered"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-plan_phrases-6",
+            "chip_text": "echo referral documented",
+            "order": 6,
+            "search_terms": ["echo"],
+            "tags": ["referral"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-plan_phrases-7",
+            "chip_text": "follow-up with GP",
+            "order": 7,
+            "search_terms": ["follow-up"],
+            "tags": ["with"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-plan_phrases-8",
+            "chip_text": "urgent cardiology review",
+            "order": 8,
+            "search_terms": ["urgent"],
+            "tags": ["cardiology"]
           }
         ],
-        "follow_up": []
-      },
+        "follow_up": [
+          {
+            "chip_id": "cardio-ecg-review-follow_up-1",
+            "chip_text": "repeat ECG in 24h if indicated",
+            "order": 1,
+            "search_terms": ["repeat"],
+            "tags": ["ECG"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-follow_up-2",
+            "chip_text": "cardiology OPD follow-up",
+            "order": 2,
+            "search_terms": ["cardiology"],
+            "tags": ["OPD"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-follow_up-3",
+            "chip_text": "return if chest pain or syncope",
+            "order": 3,
+            "search_terms": ["return"],
+            "tags": ["if"]
+          },
+          {
+            "chip_id": "cardio-ecg-review-follow_up-4",
+            "chip_text": "GP follow-up in 1 week",
+            "order": 4,
+            "search_terms": ["GP"],
+            "tags": ["follow-up"]
+          }
+        ]
       "chief_complaint_aliases": [
         "ECG review",
         "EKG check",
@@ -54921,181 +55875,479 @@
         "symptoms": [
           {
             "chip_id": "cardio-dyspnea-symptoms-1",
-            "chip_text": "dyspnea",
+            "chip_text": "dyspnea at rest",
             "order": 1,
-            "search_terms": [
-              "dyspnea"
-            ],
-            "tags": [
-              "cardiology"
-            ]
+            "search_terms": ["dyspnea"],
+            "tags": ["at"]
           },
           {
             "chip_id": "cardio-dyspnea-symptoms-2",
-            "chip_text": "exertional symptoms documented",
+            "chip_text": "dyspnea on exertion",
             "order": 2,
-            "search_terms": [
-              "exertional"
-            ],
-            "tags": [
-              "symptoms"
-            ]
+            "search_terms": ["dyspnea"],
+            "tags": ["on"]
           },
           {
             "chip_id": "cardio-dyspnea-symptoms-3",
-            "chip_text": "orthopnea or PND reviewed",
+            "chip_text": "orthopnea",
             "order": 3,
-            "search_terms": [
-              "orthopnea"
-            ],
-            "tags": [
-              "or"
-            ]
+            "search_terms": ["orthopnea"],
+            "tags": ["orthopnea"]
           },
           {
             "chip_id": "cardio-dyspnea-symptoms-4",
-            "chip_text": "chest pain reviewed",
+            "chip_text": "PND",
             "order": 4,
-            "search_terms": [
-              "chest"
-            ],
-            "tags": [
-              "pain"
-            ]
+            "search_terms": ["PND"],
+            "tags": ["PND"]
           },
           {
             "chip_id": "cardio-dyspnea-symptoms-5",
-            "chip_text": "cough or wheeze reviewed",
+            "chip_text": "chest tightness with dyspnea",
             "order": 5,
-            "search_terms": [
-              "cough"
-            ],
-            "tags": [
-              "or"
-            ]
+            "search_terms": ["chest"],
+            "tags": ["tightness"]
           },
           {
             "chip_id": "cardio-dyspnea-symptoms-6",
-            "chip_text": "leg swelling reviewed",
+            "chip_text": "cough productive",
             "order": 6,
-            "search_terms": [
-              "leg"
-            ],
-            "tags": [
-              "swelling"
-            ]
+            "search_terms": ["cough"],
+            "tags": ["productive"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-symptoms-7",
+            "chip_text": "cough dry",
+            "order": 7,
+            "search_terms": ["cough"],
+            "tags": ["dry"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-symptoms-8",
+            "chip_text": "wheeze",
+            "order": 8,
+            "search_terms": ["wheeze"],
+            "tags": ["wheeze"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-symptoms-9",
+            "chip_text": "leg swelling bilateral",
+            "order": 9,
+            "search_terms": ["leg"],
+            "tags": ["swelling"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-symptoms-10",
+            "chip_text": "leg swelling unilateral",
+            "order": 10,
+            "search_terms": ["leg"],
+            "tags": ["swelling"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-symptoms-11",
+            "chip_text": "sudden onset",
+            "order": 11,
+            "search_terms": ["sudden"],
+            "tags": ["onset"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-symptoms-12",
+            "chip_text": "gradual onset",
+            "order": 12,
+            "search_terms": ["gradual"],
+            "tags": ["onset"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-symptoms-13",
+            "chip_text": "worsening over days",
+            "order": 13,
+            "search_terms": ["worsening"],
+            "tags": ["over"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-symptoms-14",
+            "chip_text": "associated palpitations",
+            "order": 14,
+            "search_terms": ["associated"],
+            "tags": ["palpitations"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-symptoms-15",
+            "chip_text": "exercise tolerance reduced",
+            "order": 15,
+            "search_terms": ["exercise"],
+            "tags": ["tolerance"]
           }
         ],
         "relevant_negatives": [
           {
             "chip_id": "cardio-dyspnea-relevant_negatives-1",
-            "chip_text": "no chest pain reported",
+            "chip_text": "no chest pain",
             "order": 1,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "chest"
-            ]
+            "search_terms": ["no"],
+            "tags": ["chest"]
           },
           {
             "chip_id": "cardio-dyspnea-relevant_negatives-2",
-            "chip_text": "no syncope reported",
+            "chip_text": "no syncope",
             "order": 2,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "syncope"
-            ]
+            "search_terms": ["no"],
+            "tags": ["syncope"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-relevant_negatives-3",
+            "chip_text": "no hemoptysis",
+            "order": 3,
+            "search_terms": ["no"],
+            "tags": ["hemoptysis"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-relevant_negatives-4",
+            "chip_text": "no fever",
+            "order": 4,
+            "search_terms": ["no"],
+            "tags": ["fever"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-relevant_negatives-5",
+            "chip_text": "no orthopnea",
+            "order": 5,
+            "search_terms": ["no"],
+            "tags": ["orthopnea"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-relevant_negatives-6",
+            "chip_text": "no PND",
+            "order": 6,
+            "search_terms": ["no"],
+            "tags": ["PND"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-relevant_negatives-7",
+            "chip_text": "no calf swelling",
+            "order": 7,
+            "search_terms": ["no"],
+            "tags": ["calf"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-relevant_negatives-8",
+            "chip_text": "no recent immobility",
+            "order": 8,
+            "search_terms": ["no"],
+            "tags": ["recent"]
           }
         ],
         "exam_findings": [
           {
             "chip_id": "cardio-dyspnea-exam_findings-1",
-            "chip_text": "vital signs documented if measured",
+            "chip_text": "RR documented",
             "order": 1,
-            "search_terms": [
-              "vital"
-            ],
-            "tags": [
-              "signs"
-            ]
+            "search_terms": ["RR"],
+            "tags": ["documented"]
           },
           {
             "chip_id": "cardio-dyspnea-exam_findings-2",
-            "chip_text": "oxygen saturation documented if measured",
+            "chip_text": "SpO2 documented",
             "order": 2,
-            "search_terms": [
-              "oxygen"
-            ],
-            "tags": [
-              "saturation"
-            ]
+            "search_terms": ["SpO2"],
+            "tags": ["documented"]
           },
           {
             "chip_id": "cardio-dyspnea-exam_findings-3",
-            "chip_text": "chest auscultation documented if assessed",
+            "chip_text": "BP documented",
             "order": 3,
-            "search_terms": [
-              "chest"
-            ],
-            "tags": [
-              "auscultation"
-            ]
+            "search_terms": ["BP"],
+            "tags": ["documented"]
           },
           {
             "chip_id": "cardio-dyspnea-exam_findings-4",
-            "chip_text": "edema documented if assessed",
+            "chip_text": "HR documented",
             "order": 4,
-            "search_terms": [
-              "edema"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["HR"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-exam_findings-5",
+            "chip_text": "chest: bilateral basal creps",
+            "order": 5,
+            "search_terms": ["chest:"],
+            "tags": ["bilateral"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-exam_findings-6",
+            "chip_text": "chest: wheeze bilateral",
+            "order": 6,
+            "search_terms": ["chest:"],
+            "tags": ["wheeze"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-exam_findings-7",
+            "chip_text": "chest: clear bilaterally",
+            "order": 7,
+            "search_terms": ["chest:"],
+            "tags": ["clear"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-exam_findings-8",
+            "chip_text": "JVP elevated",
+            "order": 8,
+            "search_terms": ["JVP"],
+            "tags": ["elevated"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-exam_findings-9",
+            "chip_text": "JVP normal",
+            "order": 9,
+            "search_terms": ["JVP"],
+            "tags": ["normal"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-exam_findings-10",
+            "chip_text": "peripheral edema present",
+            "order": 10,
+            "search_terms": ["peripheral"],
+            "tags": ["edema"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-exam_findings-11",
+            "chip_text": "peripheral edema absent",
+            "order": 11,
+            "search_terms": ["peripheral"],
+            "tags": ["edema"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-exam_findings-12",
+            "chip_text": "heart sounds: S3 gallop",
+            "order": 12,
+            "search_terms": ["heart"],
+            "tags": ["sounds:"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-exam_findings-13",
+            "chip_text": "heart sounds: normal S1 S2",
+            "order": 13,
+            "search_terms": ["heart"],
+            "tags": ["sounds:"]
           }
         ],
-        "red_flags": [],
+        "red_flags": [
+          {
+            "chip_id": "cardio-dyspnea-red_flags-1",
+            "chip_text": "SpO2 below 92%",
+            "order": 1,
+            "search_terms": ["SpO2"],
+            "tags": ["below"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-red_flags-2",
+            "chip_text": "respiratory distress at rest",
+            "order": 2,
+            "search_terms": ["respiratory"],
+            "tags": ["distress"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-red_flags-3",
+            "chip_text": "hemodynamic instability",
+            "order": 3,
+            "search_terms": ["hemodynamic"],
+            "tags": ["instability"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-red_flags-4",
+            "chip_text": "stridor",
+            "order": 4,
+            "search_terms": ["stridor"],
+            "tags": ["stridor"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-red_flags-5",
+            "chip_text": "cyanosis",
+            "order": 5,
+            "search_terms": ["cyanosis"],
+            "tags": ["cyanosis"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-red_flags-6",
+            "chip_text": "unable to speak full sentences",
+            "order": 6,
+            "search_terms": ["unable"],
+            "tags": ["to"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-red_flags-7",
+            "chip_text": "silent chest",
+            "order": 7,
+            "search_terms": ["silent"],
+            "tags": ["chest"]
+          }
+        ],
         "investigations": [
           {
             "chip_id": "cardio-dyspnea-investigations-1",
-            "chip_text": "ECG reviewed if performed",
+            "chip_text": "ECG: NSR",
             "order": 1,
-            "search_terms": [
-              "ECG"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["ECG:"],
+            "tags": ["NSR"]
           },
           {
             "chip_id": "cardio-dyspnea-investigations-2",
-            "chip_text": "chest imaging reviewed if available",
+            "chip_text": "ECG: AF",
             "order": 2,
-            "search_terms": [
-              "chest"
-            ],
-            "tags": [
-              "imaging"
-            ]
+            "search_terms": ["ECG:"],
+            "tags": ["AF"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-investigations-3",
+            "chip_text": "ECG: tachycardia",
+            "order": 3,
+            "search_terms": ["ECG:"],
+            "tags": ["tachycardia"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-investigations-4",
+            "chip_text": "CXR: pulmonary edema",
+            "order": 4,
+            "search_terms": ["CXR:"],
+            "tags": ["pulmonary"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-investigations-5",
+            "chip_text": "CXR: clear lung fields",
+            "order": 5,
+            "search_terms": ["CXR:"],
+            "tags": ["clear"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-investigations-6",
+            "chip_text": "CXR: pleural effusion",
+            "order": 6,
+            "search_terms": ["CXR:"],
+            "tags": ["pleural"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-investigations-7",
+            "chip_text": "BNP or NT-proBNP reviewed",
+            "order": 7,
+            "search_terms": ["BNP"],
+            "tags": ["or"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-investigations-8",
+            "chip_text": "troponin reviewed",
+            "order": 8,
+            "search_terms": ["troponin"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-investigations-9",
+            "chip_text": "ABG reviewed",
+            "order": 9,
+            "search_terms": ["ABG"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-investigations-10",
+            "chip_text": "D-dimer reviewed if ordered",
+            "order": 10,
+            "search_terms": ["D-dimer"],
+            "tags": ["reviewed"]
           }
         ],
         "plan_phrases": [
           {
             "chip_id": "cardio-dyspnea-plan_phrases-1",
-            "chip_text": "follow-up documented if arranged",
+            "chip_text": "oxygen therapy documented if started",
             "order": 1,
-            "search_terms": [
-              "follow-up"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["oxygen"],
+            "tags": ["therapy"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-plan_phrases-2",
+            "chip_text": "diuretic response documented",
+            "order": 2,
+            "search_terms": ["diuretic"],
+            "tags": ["response"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-plan_phrases-3",
+            "chip_text": "cardiology referral documented",
+            "order": 3,
+            "search_terms": ["cardiology"],
+            "tags": ["referral"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-plan_phrases-4",
+            "chip_text": "admission decision documented",
+            "order": 4,
+            "search_terms": ["admission"],
+            "tags": ["decision"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-plan_phrases-5",
+            "chip_text": "safety-netting discussed",
+            "order": 5,
+            "search_terms": ["safety-netting"],
+            "tags": ["discussed"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-plan_phrases-6",
+            "chip_text": "medication review documented",
+            "order": 6,
+            "search_terms": ["medication"],
+            "tags": ["review"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-plan_phrases-7",
+            "chip_text": "follow-up in 1 week",
+            "order": 7,
+            "search_terms": ["follow-up"],
+            "tags": ["in"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-plan_phrases-8",
+            "chip_text": "follow-up in 2 weeks",
+            "order": 8,
+            "search_terms": ["follow-up"],
+            "tags": ["in"]
           }
         ],
-        "follow_up": []
-      },
+        "follow_up": [
+          {
+            "chip_id": "cardio-dyspnea-follow_up-1",
+            "chip_text": "return immediately if worsening SOB",
+            "order": 1,
+            "search_terms": ["return"],
+            "tags": ["immediately"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-follow_up-2",
+            "chip_text": "return if new chest pain",
+            "order": 2,
+            "search_terms": ["return"],
+            "tags": ["if"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-follow_up-3",
+            "chip_text": "cardiology follow-up arranged",
+            "order": 3,
+            "search_terms": ["cardiology"],
+            "tags": ["follow-up"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-follow_up-4",
+            "chip_text": "repeat CXR if arranged",
+            "order": 4,
+            "search_terms": ["repeat"],
+            "tags": ["CXR"]
+          },
+          {
+            "chip_id": "cardio-dyspnea-follow_up-5",
+            "chip_text": "weight monitoring daily advised",
+            "order": 5,
+            "search_terms": ["weight"],
+            "tags": ["monitoring"]
+          }
+        ]
       "chief_complaint_aliases": [
         "dyspnea",
         "shortness of breath",
@@ -55154,170 +56406,309 @@
         "symptoms": [
           {
             "chip_id": "cardio-lipid-followup-symptoms-1",
-            "chip_text": "lipid follow-up",
+            "chip_text": "asymptomatic",
             "order": 1,
-            "search_terms": [
-              "lipid"
-            ],
-            "tags": [
-              "follow-up"
-            ]
+            "search_terms": ["asymptomatic"],
+            "tags": ["asymptomatic"]
           },
           {
             "chip_id": "cardio-lipid-followup-symptoms-2",
-            "chip_text": "lipid profile reviewed",
+            "chip_text": "statin tolerability reviewed",
             "order": 2,
-            "search_terms": [
-              "lipid"
-            ],
-            "tags": [
-              "profile"
-            ]
+            "search_terms": ["statin"],
+            "tags": ["tolerability"]
           },
           {
             "chip_id": "cardio-lipid-followup-symptoms-3",
-            "chip_text": "cardiovascular risk context documented",
+            "chip_text": "myalgia reported",
             "order": 3,
-            "search_terms": [
-              "cardiovascular"
-            ],
-            "tags": [
-              "risk"
-            ]
+            "search_terms": ["myalgia"],
+            "tags": ["reported"]
           },
           {
             "chip_id": "cardio-lipid-followup-symptoms-4",
-            "chip_text": "lifestyle context reviewed",
+            "chip_text": "no muscle symptoms",
             "order": 4,
-            "search_terms": [
-              "lifestyle"
-            ],
-            "tags": [
-              "context"
-            ]
+            "search_terms": ["no"],
+            "tags": ["muscle"]
           },
           {
             "chip_id": "cardio-lipid-followup-symptoms-5",
-            "chip_text": "medication adherence discussed",
+            "chip_text": "medication adherence confirmed",
             "order": 5,
-            "search_terms": [
-              "medication"
-            ],
-            "tags": [
-              "adherence"
-            ]
+            "search_terms": ["medication"],
+            "tags": ["adherence"]
           },
           {
             "chip_id": "cardio-lipid-followup-symptoms-6",
-            "chip_text": "side effects reviewed if relevant",
+            "chip_text": "lifestyle reviewed",
             "order": 6,
-            "search_terms": [
-              "side"
-            ],
-            "tags": [
-              "effects"
-            ]
+            "search_terms": ["lifestyle"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-symptoms-7",
+            "chip_text": "cardiovascular risk context documented",
+            "order": 7,
+            "search_terms": ["cardiovascular"],
+            "tags": ["risk"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-symptoms-8",
+            "chip_text": "family history of premature CVD",
+            "order": 8,
+            "search_terms": ["family"],
+            "tags": ["history"]
           }
         ],
         "relevant_negatives": [
           {
             "chip_id": "cardio-lipid-followup-relevant_negatives-1",
-            "chip_text": "no chest pain reported",
+            "chip_text": "no muscle pain",
             "order": 1,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "chest"
-            ]
+            "search_terms": ["no"],
+            "tags": ["muscle"]
           },
           {
             "chip_id": "cardio-lipid-followup-relevant_negatives-2",
-            "chip_text": "no medication side effects reported",
+            "chip_text": "no weakness",
             "order": 2,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "medication"
-            ]
+            "search_terms": ["no"],
+            "tags": ["weakness"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-relevant_negatives-3",
+            "chip_text": "no dark urine",
+            "order": 3,
+            "search_terms": ["no"],
+            "tags": ["dark"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-relevant_negatives-4",
+            "chip_text": "no chest pain",
+            "order": 4,
+            "search_terms": ["no"],
+            "tags": ["chest"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-relevant_negatives-5",
+            "chip_text": "no new symptoms",
+            "order": 5,
+            "search_terms": ["no"],
+            "tags": ["new"]
           }
         ],
         "exam_findings": [
           {
             "chip_id": "cardio-lipid-followup-exam_findings-1",
-            "chip_text": "vital signs documented if measured",
+            "chip_text": "BP documented",
             "order": 1,
-            "search_terms": [
-              "vital"
-            ],
-            "tags": [
-              "signs"
-            ]
+            "search_terms": ["BP"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-exam_findings-2",
+            "chip_text": "BMI documented",
+            "order": 2,
+            "search_terms": ["BMI"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-exam_findings-3",
+            "chip_text": "weight documented",
+            "order": 3,
+            "search_terms": ["weight"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-exam_findings-4",
+            "chip_text": "xanthelasma absent",
+            "order": 4,
+            "search_terms": ["xanthelasma"],
+            "tags": ["absent"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-exam_findings-5",
+            "chip_text": "tendon xanthomata absent",
+            "order": 5,
+            "search_terms": ["tendon"],
+            "tags": ["xanthomata"]
           }
         ],
-        "red_flags": [],
         "investigations": [
           {
             "chip_id": "cardio-lipid-followup-investigations-1",
-            "chip_text": "liver function reviewed if ordered",
+            "chip_text": "total cholesterol documented",
             "order": 1,
-            "search_terms": [
-              "liver"
-            ],
-            "tags": [
-              "function"
-            ]
+            "search_terms": ["total"],
+            "tags": ["cholesterol"]
           },
           {
             "chip_id": "cardio-lipid-followup-investigations-2",
-            "chip_text": "HbA1c or glucose reviewed if ordered",
+            "chip_text": "LDL documented",
             "order": 2,
-            "search_terms": [
-              "HbA1c"
-            ],
-            "tags": [
-              "or"
-            ]
+            "search_terms": ["LDL"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-investigations-3",
+            "chip_text": "HDL documented",
+            "order": 3,
+            "search_terms": ["HDL"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-investigations-4",
+            "chip_text": "triglycerides documented",
+            "order": 4,
+            "search_terms": ["triglycerides"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-investigations-5",
+            "chip_text": "non-HDL cholesterol documented",
+            "order": 5,
+            "search_terms": ["non-HDL"],
+            "tags": ["cholesterol"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-investigations-6",
+            "chip_text": "LFTs reviewed",
+            "order": 6,
+            "search_terms": ["LFTs"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-investigations-7",
+            "chip_text": "CK reviewed if muscle symptoms",
+            "order": 7,
+            "search_terms": ["CK"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-investigations-8",
+            "chip_text": "HbA1c reviewed",
+            "order": 8,
+            "search_terms": ["HbA1c"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-investigations-9",
+            "chip_text": "eGFR documented",
+            "order": 9,
+            "search_terms": ["eGFR"],
+            "tags": ["documented"]
           }
         ],
         "plan_phrases": [
           {
             "chip_id": "cardio-lipid-followup-plan_phrases-1",
-            "chip_text": "lifestyle advice documented if discussed",
+            "chip_text": "statin continued",
             "order": 1,
-            "search_terms": [
-              "lifestyle"
-            ],
-            "tags": [
-              "advice"
-            ]
+            "search_terms": ["statin"],
+            "tags": ["continued"]
           },
           {
             "chip_id": "cardio-lipid-followup-plan_phrases-2",
-            "chip_text": "medication review documented if clinician decided",
+            "chip_text": "statin dose increased",
             "order": 2,
-            "search_terms": [
-              "medication"
-            ],
-            "tags": [
-              "review"
-            ]
+            "search_terms": ["statin"],
+            "tags": ["dose"]
           },
           {
             "chip_id": "cardio-lipid-followup-plan_phrases-3",
-            "chip_text": "follow-up documented if arranged",
+            "chip_text": "statin switched due to side effects",
             "order": 3,
-            "search_terms": [
-              "follow-up"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["statin"],
+            "tags": ["switched"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-plan_phrases-4",
+            "chip_text": "ezetimibe added",
+            "order": 4,
+            "search_terms": ["ezetimibe"],
+            "tags": ["added"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-plan_phrases-5",
+            "chip_text": "PCSK9i discussed if refractory",
+            "order": 5,
+            "search_terms": ["PCSK9i"],
+            "tags": ["discussed"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-plan_phrases-6",
+            "chip_text": "lifestyle advice: diet",
+            "order": 6,
+            "search_terms": ["lifestyle"],
+            "tags": ["advice:"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-plan_phrases-7",
+            "chip_text": "lifestyle advice: exercise",
+            "order": 7,
+            "search_terms": ["lifestyle"],
+            "tags": ["advice:"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-plan_phrases-8",
+            "chip_text": "QRISK score documented",
+            "order": 8,
+            "search_terms": ["QRISK"],
+            "tags": ["score"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-plan_phrases-9",
+            "chip_text": "target LDL discussed",
+            "order": 9,
+            "search_terms": ["target"],
+            "tags": ["LDL"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-plan_phrases-10",
+            "chip_text": "medication review documented",
+            "order": 10,
+            "search_terms": ["medication"],
+            "tags": ["review"]
           }
         ],
-        "follow_up": []
-      },
+        "follow_up": [
+          {
+            "chip_id": "cardio-lipid-followup-follow_up-1",
+            "chip_text": "repeat lipids in 3 months",
+            "order": 1,
+            "search_terms": ["repeat"],
+            "tags": ["lipids"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-follow_up-2",
+            "chip_text": "follow-up in 3 months",
+            "order": 2,
+            "search_terms": ["follow-up"],
+            "tags": ["in"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-follow_up-3",
+            "chip_text": "annual cardiovascular review",
+            "order": 3,
+            "search_terms": ["annual"],
+            "tags": ["cardiovascular"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-follow_up-4",
+            "chip_text": "return if muscle pain or weakness",
+            "order": 4,
+            "search_terms": ["return"],
+            "tags": ["if"]
+          },
+          {
+            "chip_id": "cardio-lipid-followup-follow_up-5",
+            "chip_text": "dietitian referral if appropriate",
+            "order": 5,
+            "search_terms": ["dietitian"],
+            "tags": ["referral"]
+          }
+        ]
       "chief_complaint_aliases": [
         "lipid follow-up",
         "cholesterol check",
@@ -55376,159 +56767,395 @@
         "symptoms": [
           {
             "chip_id": "cardio-post-pci-followup-symptoms-1",
-            "chip_text": "post-PCI follow-up",
+            "chip_text": "asymptomatic post-PCI",
             "order": 1,
-            "search_terms": [
-              "post-PCI"
-            ],
-            "tags": [
-              "follow-up"
-            ]
+            "search_terms": ["asymptomatic"],
+            "tags": ["post-PCI"]
           },
           {
             "chip_id": "cardio-post-pci-followup-symptoms-2",
-            "chip_text": "chest pain symptoms reviewed",
+            "chip_text": "chest pain recurrence",
             "order": 2,
-            "search_terms": [
-              "chest"
-            ],
-            "tags": [
-              "pain"
-            ]
+            "search_terms": ["chest"],
+            "tags": ["pain"]
           },
           {
             "chip_id": "cardio-post-pci-followup-symptoms-3",
-            "chip_text": "dyspnea reviewed",
+            "chip_text": "exertional chest pain",
             "order": 3,
-            "search_terms": [
-              "dyspnea"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["exertional"],
+            "tags": ["chest"]
           },
           {
             "chip_id": "cardio-post-pci-followup-symptoms-4",
-            "chip_text": "medication adherence discussed",
+            "chip_text": "dyspnea on exertion",
             "order": 4,
-            "search_terms": [
-              "medication"
-            ],
-            "tags": [
-              "adherence"
-            ]
+            "search_terms": ["dyspnea"],
+            "tags": ["on"]
           },
           {
             "chip_id": "cardio-post-pci-followup-symptoms-5",
-            "chip_text": "bleeding symptoms reviewed if relevant",
+            "chip_text": "exercise tolerance improved",
             "order": 5,
-            "search_terms": [
-              "bleeding"
-            ],
-            "tags": [
-              "symptoms"
-            ]
+            "search_terms": ["exercise"],
+            "tags": ["tolerance"]
           },
           {
             "chip_id": "cardio-post-pci-followup-symptoms-6",
-            "chip_text": "exercise tolerance reviewed",
+            "chip_text": "exercise tolerance unchanged",
             "order": 6,
-            "search_terms": [
-              "exercise"
-            ],
-            "tags": [
-              "tolerance"
-            ]
+            "search_terms": ["exercise"],
+            "tags": ["tolerance"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-symptoms-7",
+            "chip_text": "access site pain",
+            "order": 7,
+            "search_terms": ["access"],
+            "tags": ["site"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-symptoms-8",
+            "chip_text": "access site bruising",
+            "order": 8,
+            "search_terms": ["access"],
+            "tags": ["site"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-symptoms-9",
+            "chip_text": "medication adherence confirmed",
+            "order": 9,
+            "search_terms": ["medication"],
+            "tags": ["adherence"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-symptoms-10",
+            "chip_text": "DAPT adherence confirmed",
+            "order": 10,
+            "search_terms": ["DAPT"],
+            "tags": ["adherence"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-symptoms-11",
+            "chip_text": "bleeding symptoms reviewed",
+            "order": 11,
+            "search_terms": ["bleeding"],
+            "tags": ["symptoms"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-symptoms-12",
+            "chip_text": "no bleeding symptoms",
+            "order": 12,
+            "search_terms": ["no"],
+            "tags": ["bleeding"]
           }
         ],
         "relevant_negatives": [
           {
             "chip_id": "cardio-post-pci-followup-relevant_negatives-1",
-            "chip_text": "no chest pain reported",
+            "chip_text": "no chest pain",
             "order": 1,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "chest"
-            ]
+            "search_terms": ["no"],
+            "tags": ["chest"]
           },
           {
             "chip_id": "cardio-post-pci-followup-relevant_negatives-2",
-            "chip_text": "no shortness of breath reported",
+            "chip_text": "no SOB",
             "order": 2,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "shortness"
-            ]
+            "search_terms": ["no"],
+            "tags": ["SOB"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-relevant_negatives-3",
+            "chip_text": "no access site complications",
+            "order": 3,
+            "search_terms": ["no"],
+            "tags": ["access"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-relevant_negatives-4",
+            "chip_text": "no bleeding",
+            "order": 4,
+            "search_terms": ["no"],
+            "tags": ["bleeding"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-relevant_negatives-5",
+            "chip_text": "no bruising",
+            "order": 5,
+            "search_terms": ["no"],
+            "tags": ["bruising"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-relevant_negatives-6",
+            "chip_text": "no palpitations",
+            "order": 6,
+            "search_terms": ["no"],
+            "tags": ["palpitations"]
           }
         ],
         "exam_findings": [
           {
             "chip_id": "cardio-post-pci-followup-exam_findings-1",
-            "chip_text": "vital signs documented if measured",
+            "chip_text": "BP documented",
             "order": 1,
-            "search_terms": [
-              "vital"
-            ],
-            "tags": [
-              "signs"
-            ]
+            "search_terms": ["BP"],
+            "tags": ["documented"]
           },
           {
             "chip_id": "cardio-post-pci-followup-exam_findings-2",
-            "chip_text": "cardiovascular exam documented if assessed",
+            "chip_text": "HR documented",
             "order": 2,
-            "search_terms": [
-              "cardiovascular"
-            ],
-            "tags": [
-              "exam"
-            ]
+            "search_terms": ["HR"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-exam_findings-3",
+            "chip_text": "access site: healed",
+            "order": 3,
+            "search_terms": ["access"],
+            "tags": ["site:"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-exam_findings-4",
+            "chip_text": "access site: hematoma",
+            "order": 4,
+            "search_terms": ["access"],
+            "tags": ["site:"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-exam_findings-5",
+            "chip_text": "cardiovascular exam normal",
+            "order": 5,
+            "search_terms": ["cardiovascular"],
+            "tags": ["exam"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-exam_findings-6",
+            "chip_text": "no new murmur",
+            "order": 6,
+            "search_terms": ["no"],
+            "tags": ["new"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-exam_findings-7",
+            "chip_text": "peripheral pulses intact",
+            "order": 7,
+            "search_terms": ["peripheral"],
+            "tags": ["pulses"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-exam_findings-8",
+            "chip_text": "no peripheral edema",
+            "order": 8,
+            "search_terms": ["no"],
+            "tags": ["peripheral"]
           }
         ],
-        "red_flags": [],
+        "red_flags": [
+          {
+            "chip_id": "cardio-post-pci-followup-red_flags-1",
+            "chip_text": "recurrent chest pain at rest",
+            "order": 1,
+            "search_terms": ["recurrent"],
+            "tags": ["chest"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-red_flags-2",
+            "chip_text": "access site expanding hematoma",
+            "order": 2,
+            "search_terms": ["access"],
+            "tags": ["site"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-red_flags-3",
+            "chip_text": "new ST changes on ECG",
+            "order": 3,
+            "search_terms": ["new"],
+            "tags": ["ST"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-red_flags-4",
+            "chip_text": "hemodynamic instability",
+            "order": 4,
+            "search_terms": ["hemodynamic"],
+            "tags": ["instability"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-red_flags-5",
+            "chip_text": "major bleeding",
+            "order": 5,
+            "search_terms": ["major"],
+            "tags": ["bleeding"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-red_flags-6",
+            "chip_text": "stent thrombosis suspected",
+            "order": 6,
+            "search_terms": ["stent"],
+            "tags": ["thrombosis"]
+          }
+        ],
         "investigations": [
           {
             "chip_id": "cardio-post-pci-followup-investigations-1",
-            "chip_text": "ECG reviewed if performed",
+            "chip_text": "ECG reviewed",
             "order": 1,
-            "search_terms": [
-              "ECG"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["ECG"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-investigations-2",
+            "chip_text": "lipid profile reviewed",
+            "order": 2,
+            "search_terms": ["lipid"],
+            "tags": ["profile"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-investigations-3",
+            "chip_text": "HbA1c reviewed",
+            "order": 3,
+            "search_terms": ["HbA1c"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-investigations-4",
+            "chip_text": "renal function reviewed",
+            "order": 4,
+            "search_terms": ["renal"],
+            "tags": ["function"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-investigations-5",
+            "chip_text": "FBC reviewed",
+            "order": 5,
+            "search_terms": ["FBC"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-investigations-6",
+            "chip_text": "echo reviewed if ordered",
+            "order": 6,
+            "search_terms": ["echo"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-investigations-7",
+            "chip_text": "stress test reviewed if ordered",
+            "order": 7,
+            "search_terms": ["stress"],
+            "tags": ["test"]
           }
         ],
         "plan_phrases": [
           {
             "chip_id": "cardio-post-pci-followup-plan_phrases-1",
-            "chip_text": "medication review documented if clinician decided",
+            "chip_text": "DAPT continued as planned",
             "order": 1,
-            "search_terms": [
-              "medication"
-            ],
-            "tags": [
-              "review"
-            ]
+            "search_terms": ["DAPT"],
+            "tags": ["continued"]
           },
           {
             "chip_id": "cardio-post-pci-followup-plan_phrases-2",
-            "chip_text": "cardiac follow-up documented if arranged",
+            "chip_text": "DAPT duration discussed",
             "order": 2,
-            "search_terms": [
-              "cardiac"
-            ],
-            "tags": [
-              "follow-up"
-            ]
+            "search_terms": ["DAPT"],
+            "tags": ["duration"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-plan_phrases-3",
+            "chip_text": "statin high-intensity continued",
+            "order": 3,
+            "search_terms": ["statin"],
+            "tags": ["high-intensity"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-plan_phrases-4",
+            "chip_text": "ACEi/ARB continued",
+            "order": 4,
+            "search_terms": ["ACEi/ARB"],
+            "tags": ["continued"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-plan_phrases-5",
+            "chip_text": "beta-blocker continued",
+            "order": 5,
+            "search_terms": ["beta-blocker"],
+            "tags": ["continued"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-plan_phrases-6",
+            "chip_text": "cardiac rehabilitation referral",
+            "order": 6,
+            "search_terms": ["cardiac"],
+            "tags": ["rehabilitation"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-plan_phrases-7",
+            "chip_text": "lifestyle modification discussed",
+            "order": 7,
+            "search_terms": ["lifestyle"],
+            "tags": ["modification"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-plan_phrases-8",
+            "chip_text": "smoking cessation discussed",
+            "order": 8,
+            "search_terms": ["smoking"],
+            "tags": ["cessation"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-plan_phrases-9",
+            "chip_text": "target LDL <1.4 discussed",
+            "order": 9,
+            "search_terms": ["target"],
+            "tags": ["LDL"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-plan_phrases-10",
+            "chip_text": "medication review documented",
+            "order": 10,
+            "search_terms": ["medication"],
+            "tags": ["review"]
           }
         ],
-        "follow_up": []
-      },
+        "follow_up": [
+          {
+            "chip_id": "cardio-post-pci-followup-follow_up-1",
+            "chip_text": "cardiology follow-up in 4 weeks",
+            "order": 1,
+            "search_terms": ["cardiology"],
+            "tags": ["follow-up"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-follow_up-2",
+            "chip_text": "cardiology follow-up in 3 months",
+            "order": 2,
+            "search_terms": ["cardiology"],
+            "tags": ["follow-up"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-follow_up-3",
+            "chip_text": "annual cardiovascular review",
+            "order": 3,
+            "search_terms": ["annual"],
+            "tags": ["cardiovascular"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-follow_up-4",
+            "chip_text": "return if chest pain recurs",
+            "order": 4,
+            "search_terms": ["return"],
+            "tags": ["if"]
+          },
+          {
+            "chip_id": "cardio-post-pci-followup-follow_up-5",
+            "chip_text": "return if bleeding or bruising",
+            "order": 5,
+            "search_terms": ["return"],
+            "tags": ["if"]
+          }
+        ]
       "chief_complaint_aliases": [
         "post-PCI",
         "stent follow-up",
@@ -55591,181 +57218,549 @@
         "symptoms": [
           {
             "chip_id": "cardio-syncope-symptoms-1",
-            "chip_text": "syncope",
+            "chip_text": "syncope single episode",
             "order": 1,
-            "search_terms": [
-              "syncope"
-            ],
-            "tags": [
-              "cardiology"
-            ]
+            "search_terms": ["syncope"],
+            "tags": ["single"]
           },
           {
             "chip_id": "cardio-syncope-symptoms-2",
-            "chip_text": "prodrome documented",
+            "chip_text": "syncope recurrent",
             "order": 2,
-            "search_terms": [
-              "prodrome"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["syncope"],
+            "tags": ["recurrent"]
           },
           {
             "chip_id": "cardio-syncope-symptoms-3",
-            "chip_text": "position documented",
+            "chip_text": "prodrome: lightheaded",
             "order": 3,
-            "search_terms": [
-              "position"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["prodrome:"],
+            "tags": ["lightheaded"]
           },
           {
             "chip_id": "cardio-syncope-symptoms-4",
-            "chip_text": "duration of LOC documented if known",
+            "chip_text": "prodrome: nausea",
             "order": 4,
-            "search_terms": [
-              "duration"
-            ],
-            "tags": [
-              "of"
-            ]
+            "search_terms": ["prodrome:"],
+            "tags": ["nausea"]
           },
           {
             "chip_id": "cardio-syncope-symptoms-5",
-            "chip_text": "witnessed event reviewed if available",
+            "chip_text": "prodrome: visual dimming",
             "order": 5,
-            "search_terms": [
-              "witnessed"
-            ],
-            "tags": [
-              "event"
-            ]
+            "search_terms": ["prodrome:"],
+            "tags": ["visual"]
           },
           {
             "chip_id": "cardio-syncope-symptoms-6",
-            "chip_text": "palpitations or chest pain or SOB reviewed",
+            "chip_text": "prodrome: none (no warning)",
             "order": 6,
-            "search_terms": [
-              "palpitations"
-            ],
-            "tags": [
-              "or"
-            ]
+            "search_terms": ["prodrome:"],
+            "tags": ["none"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-7",
+            "chip_text": "position: standing",
+            "order": 7,
+            "search_terms": ["position:"],
+            "tags": ["standing"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-8",
+            "chip_text": "position: sitting",
+            "order": 8,
+            "search_terms": ["position:"],
+            "tags": ["sitting"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-9",
+            "chip_text": "position: supine",
+            "order": 9,
+            "search_terms": ["position:"],
+            "tags": ["supine"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-10",
+            "chip_text": "duration LOC: seconds",
+            "order": 10,
+            "search_terms": ["duration"],
+            "tags": ["LOC:"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-11",
+            "chip_text": "duration LOC: minutes",
+            "order": 11,
+            "search_terms": ["duration"],
+            "tags": ["LOC:"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-12",
+            "chip_text": "witnessed: tonic-clonic movements",
+            "order": 12,
+            "search_terms": ["witnessed:"],
+            "tags": ["tonic-clonic"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-13",
+            "chip_text": "witnessed: pallor",
+            "order": 13,
+            "search_terms": ["witnessed:"],
+            "tags": ["pallor"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-14",
+            "chip_text": "witnessed: rapid recovery",
+            "order": 14,
+            "search_terms": ["witnessed:"],
+            "tags": ["rapid"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-15",
+            "chip_text": "post-event confusion",
+            "order": 15,
+            "search_terms": ["post-event"],
+            "tags": ["confusion"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-16",
+            "chip_text": "post-event rapid orientation",
+            "order": 16,
+            "search_terms": ["post-event"],
+            "tags": ["rapid"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-17",
+            "chip_text": "triggered by prolonged standing",
+            "order": 17,
+            "search_terms": ["triggered"],
+            "tags": ["by"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-18",
+            "chip_text": "triggered by Valsalva",
+            "order": 18,
+            "search_terms": ["triggered"],
+            "tags": ["by"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-19",
+            "chip_text": "triggered by exertion",
+            "order": 19,
+            "search_terms": ["triggered"],
+            "tags": ["by"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-20",
+            "chip_text": "associated chest pain",
+            "order": 20,
+            "search_terms": ["associated"],
+            "tags": ["chest"]
+          },
+          {
+            "chip_id": "cardio-syncope-symptoms-21",
+            "chip_text": "associated palpitations",
+            "order": 21,
+            "search_terms": ["associated"],
+            "tags": ["palpitations"]
           }
         ],
         "relevant_negatives": [
           {
             "chip_id": "cardio-syncope-relevant_negatives-1",
-            "chip_text": "no chest pain reported",
+            "chip_text": "no chest pain",
             "order": 1,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "chest"
-            ]
+            "search_terms": ["no"],
+            "tags": ["chest"]
           },
           {
             "chip_id": "cardio-syncope-relevant_negatives-2",
-            "chip_text": "no focal neurological symptoms reported",
+            "chip_text": "no palpitations",
             "order": 2,
-            "search_terms": [
-              "no"
-            ],
-            "tags": [
-              "focal"
-            ]
+            "search_terms": ["no"],
+            "tags": ["palpitations"]
+          },
+          {
+            "chip_id": "cardio-syncope-relevant_negatives-3",
+            "chip_text": "no tongue bite",
+            "order": 3,
+            "search_terms": ["no"],
+            "tags": ["tongue"]
+          },
+          {
+            "chip_id": "cardio-syncope-relevant_negatives-4",
+            "chip_text": "no incontinence",
+            "order": 4,
+            "search_terms": ["no"],
+            "tags": ["incontinence"]
+          },
+          {
+            "chip_id": "cardio-syncope-relevant_negatives-5",
+            "chip_text": "no post-ictal confusion",
+            "order": 5,
+            "search_terms": ["no"],
+            "tags": ["post-ictal"]
+          },
+          {
+            "chip_id": "cardio-syncope-relevant_negatives-6",
+            "chip_text": "no focal neurology",
+            "order": 6,
+            "search_terms": ["no"],
+            "tags": ["focal"]
+          },
+          {
+            "chip_id": "cardio-syncope-relevant_negatives-7",
+            "chip_text": "no headache",
+            "order": 7,
+            "search_terms": ["no"],
+            "tags": ["headache"]
+          },
+          {
+            "chip_id": "cardio-syncope-relevant_negatives-8",
+            "chip_text": "no aura",
+            "order": 8,
+            "search_terms": ["no"],
+            "tags": ["aura"]
           }
         ],
         "exam_findings": [
           {
             "chip_id": "cardio-syncope-exam_findings-1",
-            "chip_text": "vital signs documented if measured",
+            "chip_text": "BP supine documented",
             "order": 1,
-            "search_terms": [
-              "vital"
-            ],
-            "tags": [
-              "signs"
-            ]
+            "search_terms": ["BP"],
+            "tags": ["supine"]
           },
           {
             "chip_id": "cardio-syncope-exam_findings-2",
-            "chip_text": "orthostatic BP documented if measured",
+            "chip_text": "BP standing documented",
             "order": 2,
-            "search_terms": [
-              "orthostatic"
-            ],
-            "tags": [
-              "BP"
-            ]
+            "search_terms": ["BP"],
+            "tags": ["standing"]
           },
           {
             "chip_id": "cardio-syncope-exam_findings-3",
-            "chip_text": "cardiovascular exam documented if assessed",
+            "chip_text": "orthostatic drop present",
             "order": 3,
-            "search_terms": [
-              "cardiovascular"
-            ],
-            "tags": [
-              "exam"
-            ]
+            "search_terms": ["orthostatic"],
+            "tags": ["drop"]
           },
           {
             "chip_id": "cardio-syncope-exam_findings-4",
-            "chip_text": "neurological screen documented if assessed",
+            "chip_text": "orthostatic drop absent",
             "order": 4,
-            "search_terms": [
-              "neurological"
-            ],
-            "tags": [
-              "screen"
-            ]
+            "search_terms": ["orthostatic"],
+            "tags": ["drop"]
+          },
+          {
+            "chip_id": "cardio-syncope-exam_findings-5",
+            "chip_text": "HR documented",
+            "order": 5,
+            "search_terms": ["HR"],
+            "tags": ["documented"]
+          },
+          {
+            "chip_id": "cardio-syncope-exam_findings-6",
+            "chip_text": "rhythm regular",
+            "order": 6,
+            "search_terms": ["rhythm"],
+            "tags": ["regular"]
+          },
+          {
+            "chip_id": "cardio-syncope-exam_findings-7",
+            "chip_text": "cardiovascular exam normal",
+            "order": 7,
+            "search_terms": ["cardiovascular"],
+            "tags": ["exam"]
+          },
+          {
+            "chip_id": "cardio-syncope-exam_findings-8",
+            "chip_text": "murmur present",
+            "order": 8,
+            "search_terms": ["murmur"],
+            "tags": ["present"]
+          },
+          {
+            "chip_id": "cardio-syncope-exam_findings-9",
+            "chip_text": "neurological exam normal",
+            "order": 9,
+            "search_terms": ["neurological"],
+            "tags": ["exam"]
+          },
+          {
+            "chip_id": "cardio-syncope-exam_findings-10",
+            "chip_text": "no focal deficit",
+            "order": 10,
+            "search_terms": ["no"],
+            "tags": ["focal"]
+          },
+          {
+            "chip_id": "cardio-syncope-exam_findings-11",
+            "chip_text": "tongue: no bite marks",
+            "order": 11,
+            "search_terms": ["tongue:"],
+            "tags": ["no"]
+          },
+          {
+            "chip_id": "cardio-syncope-exam_findings-12",
+            "chip_text": "no injuries from fall",
+            "order": 12,
+            "search_terms": ["no"],
+            "tags": ["injuries"]
           }
         ],
-        "red_flags": [],
+        "red_flags": [
+          {
+            "chip_id": "cardio-syncope-red_flags-1",
+            "chip_text": "syncope during exertion",
+            "order": 1,
+            "search_terms": ["syncope"],
+            "tags": ["during"]
+          },
+          {
+            "chip_id": "cardio-syncope-red_flags-2",
+            "chip_text": "syncope while supine",
+            "order": 2,
+            "search_terms": ["syncope"],
+            "tags": ["while"]
+          },
+          {
+            "chip_id": "cardio-syncope-red_flags-3",
+            "chip_text": "no prodrome",
+            "order": 3,
+            "search_terms": ["no"],
+            "tags": ["prodrome"]
+          },
+          {
+            "chip_id": "cardio-syncope-red_flags-4",
+            "chip_text": "family history of SCD",
+            "order": 4,
+            "search_terms": ["family"],
+            "tags": ["history"]
+          },
+          {
+            "chip_id": "cardio-syncope-red_flags-5",
+            "chip_text": "known structural heart disease",
+            "order": 5,
+            "search_terms": ["known"],
+            "tags": ["structural"]
+          },
+          {
+            "chip_id": "cardio-syncope-red_flags-6",
+            "chip_text": "new murmur",
+            "order": 6,
+            "search_terms": ["new"],
+            "tags": ["murmur"]
+          },
+          {
+            "chip_id": "cardio-syncope-red_flags-7",
+            "chip_text": "abnormal ECG",
+            "order": 7,
+            "search_terms": ["abnormal"],
+            "tags": ["ECG"]
+          },
+          {
+            "chip_id": "cardio-syncope-red_flags-8",
+            "chip_text": "recurrent syncope",
+            "order": 8,
+            "search_terms": ["recurrent"],
+            "tags": ["syncope"]
+          },
+          {
+            "chip_id": "cardio-syncope-red_flags-9",
+            "chip_text": "significant injury from fall",
+            "order": 9,
+            "search_terms": ["significant"],
+            "tags": ["injury"]
+          }
+        ],
         "investigations": [
           {
             "chip_id": "cardio-syncope-investigations-1",
-            "chip_text": "ECG reviewed if performed",
+            "chip_text": "ECG: NSR",
             "order": 1,
-            "search_terms": [
-              "ECG"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["ECG:"],
+            "tags": ["NSR"]
           },
           {
             "chip_id": "cardio-syncope-investigations-2",
-            "chip_text": "glucose checked if performed",
+            "chip_text": "ECG: bradycardia",
             "order": 2,
-            "search_terms": [
-              "glucose"
-            ],
-            "tags": [
-              "checked"
-            ]
+            "search_terms": ["ECG:"],
+            "tags": ["bradycardia"]
+          },
+          {
+            "chip_id": "cardio-syncope-investigations-3",
+            "chip_text": "ECG: prolonged QTc",
+            "order": 3,
+            "search_terms": ["ECG:"],
+            "tags": ["prolonged"]
+          },
+          {
+            "chip_id": "cardio-syncope-investigations-4",
+            "chip_text": "ECG: Brugada pattern",
+            "order": 4,
+            "search_terms": ["ECG:"],
+            "tags": ["Brugada"]
+          },
+          {
+            "chip_id": "cardio-syncope-investigations-5",
+            "chip_text": "ECG: no conduction abnormality",
+            "order": 5,
+            "search_terms": ["ECG:"],
+            "tags": ["no"]
+          },
+          {
+            "chip_id": "cardio-syncope-investigations-6",
+            "chip_text": "glucose normal",
+            "order": 6,
+            "search_terms": ["glucose"],
+            "tags": ["normal"]
+          },
+          {
+            "chip_id": "cardio-syncope-investigations-7",
+            "chip_text": "glucose low",
+            "order": 7,
+            "search_terms": ["glucose"],
+            "tags": ["low"]
+          },
+          {
+            "chip_id": "cardio-syncope-investigations-8",
+            "chip_text": "lying-standing BP documented",
+            "order": 8,
+            "search_terms": ["lying-standing"],
+            "tags": ["BP"]
+          },
+          {
+            "chip_id": "cardio-syncope-investigations-9",
+            "chip_text": "echo reviewed if ordered",
+            "order": 9,
+            "search_terms": ["echo"],
+            "tags": ["reviewed"]
+          },
+          {
+            "chip_id": "cardio-syncope-investigations-10",
+            "chip_text": "Holter arranged",
+            "order": 10,
+            "search_terms": ["Holter"],
+            "tags": ["arranged"]
+          },
+          {
+            "chip_id": "cardio-syncope-investigations-11",
+            "chip_text": "tilt table test discussed",
+            "order": 11,
+            "search_terms": ["tilt"],
+            "tags": ["table"]
           }
         ],
         "plan_phrases": [
           {
             "chip_id": "cardio-syncope-plan_phrases-1",
-            "chip_text": "follow-up documented if arranged",
+            "chip_text": "vasovagal syncope — reassure",
             "order": 1,
-            "search_terms": [
-              "follow-up"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["vasovagal"],
+            "tags": ["syncope"]
+          },
+          {
+            "chip_id": "cardio-syncope-plan_phrases-2",
+            "chip_text": "driving advice discussed",
+            "order": 2,
+            "search_terms": ["driving"],
+            "tags": ["advice"]
+          },
+          {
+            "chip_id": "cardio-syncope-plan_phrases-3",
+            "chip_text": "falls risk assessment documented",
+            "order": 3,
+            "search_terms": ["falls"],
+            "tags": ["risk"]
+          },
+          {
+            "chip_id": "cardio-syncope-plan_phrases-4",
+            "chip_text": "cardiology referral arranged",
+            "order": 4,
+            "search_terms": ["cardiology"],
+            "tags": ["referral"]
+          },
+          {
+            "chip_id": "cardio-syncope-plan_phrases-5",
+            "chip_text": "neurology referral if seizure suspected",
+            "order": 5,
+            "search_terms": ["neurology"],
+            "tags": ["referral"]
+          },
+          {
+            "chip_id": "cardio-syncope-plan_phrases-6",
+            "chip_text": "Holter monitoring arranged",
+            "order": 6,
+            "search_terms": ["Holter"],
+            "tags": ["monitoring"]
+          },
+          {
+            "chip_id": "cardio-syncope-plan_phrases-7",
+            "chip_text": "echo referral arranged",
+            "order": 7,
+            "search_terms": ["echo"],
+            "tags": ["referral"]
+          },
+          {
+            "chip_id": "cardio-syncope-plan_phrases-8",
+            "chip_text": "medication review for hypotension",
+            "order": 8,
+            "search_terms": ["medication"],
+            "tags": ["review"]
+          },
+          {
+            "chip_id": "cardio-syncope-plan_phrases-9",
+            "chip_text": "safety-netting discussed",
+            "order": 9,
+            "search_terms": ["safety-netting"],
+            "tags": ["discussed"]
           }
         ],
-        "follow_up": []
-      },
+        "follow_up": [
+          {
+            "chip_id": "cardio-syncope-follow_up-1",
+            "chip_text": "follow-up after investigations",
+            "order": 1,
+            "search_terms": ["follow-up"],
+            "tags": ["after"]
+          },
+          {
+            "chip_id": "cardio-syncope-follow_up-2",
+            "chip_text": "cardiology OPD follow-up",
+            "order": 2,
+            "search_terms": ["cardiology"],
+            "tags": ["OPD"]
+          },
+          {
+            "chip_id": "cardio-syncope-follow_up-3",
+            "chip_text": "return immediately if recurrent syncope",
+            "order": 3,
+            "search_terms": ["return"],
+            "tags": ["immediately"]
+          },
+          {
+            "chip_id": "cardio-syncope-follow_up-4",
+            "chip_text": "return if chest pain or palpitations",
+            "order": 4,
+            "search_terms": ["return"],
+            "tags": ["if"]
+          },
+          {
+            "chip_id": "cardio-syncope-follow_up-5",
+            "chip_text": "GP follow-up in 1 week",
+            "order": 5,
+            "search_terms": ["GP"],
+            "tags": ["follow-up"]
+          },
+          {
+            "chip_id": "cardio-syncope-follow_up-6",
+            "chip_text": "driving advice reiterated",
+            "order": 6,
+            "search_terms": ["driving"],
+            "tags": ["advice"]
+          }
+        ]
       "chief_complaint_aliases": [
         "syncope",
         "fainting",
@@ -55824,180 +57819,393 @@
         "symptoms": [
           {
             "chip_id": "cardio-murmur-documentation-symptoms-1",
-            "chip_text": "murmur documentation",
+            "chip_text": "murmur incidental finding",
             "order": 1,
-            "search_terms": [
-              "murmur"
-            ],
-            "tags": [
-              "documentation"
-            ]
+            "search_terms": ["murmur"],
+            "tags": ["incidental"]
           },
           {
             "chip_id": "cardio-murmur-documentation-symptoms-2",
-            "chip_text": "incidental murmur context",
+            "chip_text": "murmur known — follow-up",
             "order": 2,
-            "search_terms": [
-              "incidental"
-            ],
-            "tags": [
-              "murmur"
-            ]
+            "search_terms": ["murmur"],
+            "tags": ["known"]
           },
           {
             "chip_id": "cardio-murmur-documentation-symptoms-3",
-            "chip_text": "symptoms reviewed",
+            "chip_text": "asymptomatic",
             "order": 3,
-            "search_terms": [
-              "symptoms"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["asymptomatic"],
+            "tags": ["asymptomatic"]
           },
           {
             "chip_id": "cardio-murmur-documentation-symptoms-4",
-            "chip_text": "exertional symptoms reviewed",
+            "chip_text": "exertional dyspnea",
             "order": 4,
-            "search_terms": [
-              "exertional"
-            ],
-            "tags": [
-              "symptoms"
-            ]
+            "search_terms": ["exertional"],
+            "tags": ["dyspnea"]
           },
           {
             "chip_id": "cardio-murmur-documentation-symptoms-5",
-            "chip_text": "syncope reviewed",
+            "chip_text": "exertional chest pain",
             "order": 5,
-            "search_terms": [
-              "syncope"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["exertional"],
+            "tags": ["chest"]
           },
           {
             "chip_id": "cardio-murmur-documentation-symptoms-6",
-            "chip_text": "family history reviewed if relevant",
+            "chip_text": "syncope or presyncope",
             "order": 6,
-            "search_terms": [
-              "family"
-            ],
-            "tags": [
-              "history"
-            ]
+            "search_terms": ["syncope"],
+            "tags": ["or"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-symptoms-7",
+            "chip_text": "palpitations",
+            "order": 7,
+            "search_terms": ["palpitations"],
+            "tags": ["palpitations"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-symptoms-8",
+            "chip_text": "reduced exercise tolerance",
+            "order": 8,
+            "search_terms": ["reduced"],
+            "tags": ["exercise"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-symptoms-9",
+            "chip_text": "family history of valve disease",
+            "order": 9,
+            "search_terms": ["family"],
+            "tags": ["history"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-symptoms-10",
+            "chip_text": "history of rheumatic fever",
+            "order": 10,
+            "search_terms": ["history"],
+            "tags": ["of"]
           }
         ],
-        "relevant_negatives": [],
+        "relevant_negatives": [
+          {
+            "chip_id": "cardio-murmur-documentation-relevant_negatives-1",
+            "chip_text": "no exertional symptoms",
+            "order": 1,
+            "search_terms": ["no"],
+            "tags": ["exertional"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-relevant_negatives-2",
+            "chip_text": "no syncope",
+            "order": 2,
+            "search_terms": ["no"],
+            "tags": ["syncope"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-relevant_negatives-3",
+            "chip_text": "no chest pain",
+            "order": 3,
+            "search_terms": ["no"],
+            "tags": ["chest"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-relevant_negatives-4",
+            "chip_text": "no palpitations",
+            "order": 4,
+            "search_terms": ["no"],
+            "tags": ["palpitations"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-relevant_negatives-5",
+            "chip_text": "no orthopnea",
+            "order": 5,
+            "search_terms": ["no"],
+            "tags": ["orthopnea"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-relevant_negatives-6",
+            "chip_text": "no peripheral edema",
+            "order": 6,
+            "search_terms": ["no"],
+            "tags": ["peripheral"]
+          }
+        ],
         "exam_findings": [
           {
             "chip_id": "cardio-murmur-documentation-exam_findings-1",
-            "chip_text": "vital signs documented if measured",
+            "chip_text": "systolic murmur",
             "order": 1,
-            "search_terms": [
-              "vital"
-            ],
-            "tags": [
-              "signs"
-            ]
+            "search_terms": ["systolic"],
+            "tags": ["murmur"]
           },
           {
             "chip_id": "cardio-murmur-documentation-exam_findings-2",
-            "chip_text": "cardiac auscultation documented if assessed",
+            "chip_text": "diastolic murmur",
             "order": 2,
-            "search_terms": [
-              "cardiac"
-            ],
-            "tags": [
-              "auscultation"
-            ]
+            "search_terms": ["diastolic"],
+            "tags": ["murmur"]
           },
           {
             "chip_id": "cardio-murmur-documentation-exam_findings-3",
-            "chip_text": "murmur timing documented if assessed",
+            "chip_text": "pansystolic murmur",
             "order": 3,
-            "search_terms": [
-              "murmur"
-            ],
-            "tags": [
-              "timing"
-            ]
+            "search_terms": ["pansystolic"],
+            "tags": ["murmur"]
           },
           {
             "chip_id": "cardio-murmur-documentation-exam_findings-4",
-            "chip_text": "murmur location or radiation documented if assessed",
+            "chip_text": "ejection systolic murmur",
             "order": 4,
-            "search_terms": [
-              "murmur"
-            ],
-            "tags": [
-              "location"
-            ]
+            "search_terms": ["ejection"],
+            "tags": ["systolic"]
           },
           {
             "chip_id": "cardio-murmur-documentation-exam_findings-5",
-            "chip_text": "peripheral signs documented if assessed",
+            "chip_text": "murmur grade documented",
             "order": 5,
-            "search_terms": [
-              "peripheral"
-            ],
-            "tags": [
-              "signs"
-            ]
+            "search_terms": ["murmur"],
+            "tags": ["grade"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-6",
+            "chip_text": "loudest at apex",
+            "order": 6,
+            "search_terms": ["loudest"],
+            "tags": ["at"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-7",
+            "chip_text": "loudest at aortic area",
+            "order": 7,
+            "search_terms": ["loudest"],
+            "tags": ["at"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-8",
+            "chip_text": "loudest at LLSE",
+            "order": 8,
+            "search_terms": ["loudest"],
+            "tags": ["at"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-9",
+            "chip_text": "radiation to carotids",
+            "order": 9,
+            "search_terms": ["radiation"],
+            "tags": ["to"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-10",
+            "chip_text": "radiation to axilla",
+            "order": 10,
+            "search_terms": ["radiation"],
+            "tags": ["to"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-11",
+            "chip_text": "no radiation",
+            "order": 11,
+            "search_terms": ["no"],
+            "tags": ["radiation"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-12",
+            "chip_text": "S1 S2 normal",
+            "order": 12,
+            "search_terms": ["S1"],
+            "tags": ["S2"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-13",
+            "chip_text": "S3 present",
+            "order": 13,
+            "search_terms": ["S3"],
+            "tags": ["present"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-14",
+            "chip_text": "S4 present",
+            "order": 14,
+            "search_terms": ["S4"],
+            "tags": ["present"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-15",
+            "chip_text": "thrill palpable",
+            "order": 15,
+            "search_terms": ["thrill"],
+            "tags": ["palpable"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-16",
+            "chip_text": "no thrill",
+            "order": 16,
+            "search_terms": ["no"],
+            "tags": ["thrill"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-17",
+            "chip_text": "JVP normal",
+            "order": 17,
+            "search_terms": ["JVP"],
+            "tags": ["normal"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-exam_findings-18",
+            "chip_text": "peripheral edema absent",
+            "order": 18,
+            "search_terms": ["peripheral"],
+            "tags": ["edema"]
           }
         ],
-        "red_flags": [],
         "investigations": [
           {
             "chip_id": "cardio-murmur-documentation-investigations-1",
-            "chip_text": "ECG reviewed if performed",
+            "chip_text": "ECG reviewed",
             "order": 1,
-            "search_terms": [
-              "ECG"
-            ],
-            "tags": [
-              "reviewed"
-            ]
+            "search_terms": ["ECG"],
+            "tags": ["reviewed"]
           },
           {
             "chip_id": "cardio-murmur-documentation-investigations-2",
-            "chip_text": "echo report reviewed if available",
+            "chip_text": "echo: normal valves",
             "order": 2,
-            "search_terms": [
-              "echo"
-            ],
-            "tags": [
-              "report"
-            ]
+            "search_terms": ["echo:"],
+            "tags": ["normal"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-investigations-3",
+            "chip_text": "echo: AS mild/mod/severe",
+            "order": 3,
+            "search_terms": ["echo:"],
+            "tags": ["AS"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-investigations-4",
+            "chip_text": "echo: MR mild/mod/severe",
+            "order": 4,
+            "search_terms": ["echo:"],
+            "tags": ["MR"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-investigations-5",
+            "chip_text": "echo: TR mild/mod/severe",
+            "order": 5,
+            "search_terms": ["echo:"],
+            "tags": ["TR"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-investigations-6",
+            "chip_text": "echo: normal LV function",
+            "order": 6,
+            "search_terms": ["echo:"],
+            "tags": ["normal"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-investigations-7",
+            "chip_text": "echo: LV impairment",
+            "order": 7,
+            "search_terms": ["echo:"],
+            "tags": ["LV"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-investigations-8",
+            "chip_text": "CXR reviewed",
+            "order": 8,
+            "search_terms": ["CXR"],
+            "tags": ["reviewed"]
           }
         ],
         "plan_phrases": [
           {
             "chip_id": "cardio-murmur-documentation-plan_phrases-1",
-            "chip_text": "referral documented if clinician decided",
+            "chip_text": "benign flow murmur — reassure",
             "order": 1,
-            "search_terms": [
-              "referral"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["benign"],
+            "tags": ["flow"]
           },
           {
             "chip_id": "cardio-murmur-documentation-plan_phrases-2",
-            "chip_text": "follow-up documented if arranged",
+            "chip_text": "echo referral arranged",
             "order": 2,
-            "search_terms": [
-              "follow-up"
-            ],
-            "tags": [
-              "documented"
-            ]
+            "search_terms": ["echo"],
+            "tags": ["referral"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-plan_phrases-3",
+            "chip_text": "cardiology referral arranged",
+            "order": 3,
+            "search_terms": ["cardiology"],
+            "tags": ["referral"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-plan_phrases-4",
+            "chip_text": "valve surveillance follow-up",
+            "order": 4,
+            "search_terms": ["valve"],
+            "tags": ["surveillance"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-plan_phrases-5",
+            "chip_text": "endocarditis prophylaxis discussed if indicated",
+            "order": 5,
+            "search_terms": ["endocarditis"],
+            "tags": ["prophylaxis"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-plan_phrases-6",
+            "chip_text": "activity advice documented",
+            "order": 6,
+            "search_terms": ["activity"],
+            "tags": ["advice"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-plan_phrases-7",
+            "chip_text": "follow-up arranged",
+            "order": 7,
+            "search_terms": ["follow-up"],
+            "tags": ["arranged"]
           }
         ],
-        "follow_up": []
-      },
+        "follow_up": [
+          {
+            "chip_id": "cardio-murmur-documentation-follow_up-1",
+            "chip_text": "echo follow-up in 6 months",
+            "order": 1,
+            "search_terms": ["echo"],
+            "tags": ["follow-up"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-follow_up-2",
+            "chip_text": "echo follow-up in 12 months",
+            "order": 2,
+            "search_terms": ["echo"],
+            "tags": ["follow-up"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-follow_up-3",
+            "chip_text": "cardiology OPD follow-up",
+            "order": 3,
+            "search_terms": ["cardiology"],
+            "tags": ["OPD"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-follow_up-4",
+            "chip_text": "return if new symptoms",
+            "order": 4,
+            "search_terms": ["return"],
+            "tags": ["if"]
+          },
+          {
+            "chip_id": "cardio-murmur-documentation-follow_up-5",
+            "chip_text": "annual review",
+            "order": 5,
+            "search_terms": ["annual"],
+            "tags": ["review"]
+          }
+        ]
       "chief_complaint_aliases": [
         "heart murmur",
         "cardiac murmur",
@@ -82974,1535 +85182,3743 @@
       "symptoms": [
         {
           "chip_id": "cardio-dyspnea-symptoms-1",
-          "chip_text": "dyspnea",
+          "chip_text": "dyspnea at rest",
           "order": 1,
-          "search_terms": [
-            "dyspnea"
-          ],
-          "tags": [
-            "cardiology"
-          ]
+          "search_terms": ["dyspnea"],
+          "tags": ["at"]
         },
         {
           "chip_id": "cardio-dyspnea-symptoms-2",
-          "chip_text": "exertional symptoms documented",
+          "chip_text": "dyspnea on exertion",
           "order": 2,
-          "search_terms": [
-            "exertional"
-          ],
-          "tags": [
-            "symptoms"
-          ]
+          "search_terms": ["dyspnea"],
+          "tags": ["on"]
         },
         {
           "chip_id": "cardio-dyspnea-symptoms-3",
-          "chip_text": "orthopnea or PND reviewed",
+          "chip_text": "orthopnea",
           "order": 3,
-          "search_terms": [
-            "orthopnea"
-          ],
-          "tags": [
-            "or"
-          ]
+          "search_terms": ["orthopnea"],
+          "tags": ["orthopnea"]
         },
         {
           "chip_id": "cardio-dyspnea-symptoms-4",
-          "chip_text": "chest pain reviewed",
+          "chip_text": "PND",
           "order": 4,
-          "search_terms": [
-            "chest"
-          ],
-          "tags": [
-            "pain"
-          ]
+          "search_terms": ["PND"],
+          "tags": ["PND"]
         },
         {
           "chip_id": "cardio-dyspnea-symptoms-5",
-          "chip_text": "cough or wheeze reviewed",
+          "chip_text": "chest tightness with dyspnea",
           "order": 5,
-          "search_terms": [
-            "cough"
-          ],
-          "tags": [
-            "or"
-          ]
+          "search_terms": ["chest"],
+          "tags": ["tightness"]
         },
         {
           "chip_id": "cardio-dyspnea-symptoms-6",
-          "chip_text": "leg swelling reviewed",
+          "chip_text": "cough productive",
           "order": 6,
-          "search_terms": [
-            "leg"
-          ],
-          "tags": [
-            "swelling"
-          ]
+          "search_terms": ["cough"],
+          "tags": ["productive"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-symptoms-7",
+          "chip_text": "cough dry",
+          "order": 7,
+          "search_terms": ["cough"],
+          "tags": ["dry"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-symptoms-8",
+          "chip_text": "wheeze",
+          "order": 8,
+          "search_terms": ["wheeze"],
+          "tags": ["wheeze"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-symptoms-9",
+          "chip_text": "leg swelling bilateral",
+          "order": 9,
+          "search_terms": ["leg"],
+          "tags": ["swelling"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-symptoms-10",
+          "chip_text": "leg swelling unilateral",
+          "order": 10,
+          "search_terms": ["leg"],
+          "tags": ["swelling"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-symptoms-11",
+          "chip_text": "sudden onset",
+          "order": 11,
+          "search_terms": ["sudden"],
+          "tags": ["onset"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-symptoms-12",
+          "chip_text": "gradual onset",
+          "order": 12,
+          "search_terms": ["gradual"],
+          "tags": ["onset"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-symptoms-13",
+          "chip_text": "worsening over days",
+          "order": 13,
+          "search_terms": ["worsening"],
+          "tags": ["over"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-symptoms-14",
+          "chip_text": "associated palpitations",
+          "order": 14,
+          "search_terms": ["associated"],
+          "tags": ["palpitations"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-symptoms-15",
+          "chip_text": "exercise tolerance reduced",
+          "order": 15,
+          "search_terms": ["exercise"],
+          "tags": ["tolerance"]
         }
       ],
       "relevant_negatives": [
         {
           "chip_id": "cardio-dyspnea-relevant_negatives-1",
-          "chip_text": "no chest pain reported",
+          "chip_text": "no chest pain",
           "order": 1,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "chest"
-          ]
+          "search_terms": ["no"],
+          "tags": ["chest"]
         },
         {
           "chip_id": "cardio-dyspnea-relevant_negatives-2",
-          "chip_text": "no syncope reported",
+          "chip_text": "no syncope",
           "order": 2,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "syncope"
-          ]
+          "search_terms": ["no"],
+          "tags": ["syncope"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-relevant_negatives-3",
+          "chip_text": "no hemoptysis",
+          "order": 3,
+          "search_terms": ["no"],
+          "tags": ["hemoptysis"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-relevant_negatives-4",
+          "chip_text": "no fever",
+          "order": 4,
+          "search_terms": ["no"],
+          "tags": ["fever"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-relevant_negatives-5",
+          "chip_text": "no orthopnea",
+          "order": 5,
+          "search_terms": ["no"],
+          "tags": ["orthopnea"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-relevant_negatives-6",
+          "chip_text": "no PND",
+          "order": 6,
+          "search_terms": ["no"],
+          "tags": ["PND"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-relevant_negatives-7",
+          "chip_text": "no calf swelling",
+          "order": 7,
+          "search_terms": ["no"],
+          "tags": ["calf"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-relevant_negatives-8",
+          "chip_text": "no recent immobility",
+          "order": 8,
+          "search_terms": ["no"],
+          "tags": ["recent"]
         }
       ],
       "exam_findings": [
         {
           "chip_id": "cardio-dyspnea-exam_findings-1",
-          "chip_text": "vital signs documented if measured",
+          "chip_text": "RR documented",
           "order": 1,
-          "search_terms": [
-            "vital"
-          ],
-          "tags": [
-            "signs"
-          ]
+          "search_terms": ["RR"],
+          "tags": ["documented"]
         },
         {
           "chip_id": "cardio-dyspnea-exam_findings-2",
-          "chip_text": "oxygen saturation documented if measured",
+          "chip_text": "SpO2 documented",
           "order": 2,
-          "search_terms": [
-            "oxygen"
-          ],
-          "tags": [
-            "saturation"
-          ]
+          "search_terms": ["SpO2"],
+          "tags": ["documented"]
         },
         {
           "chip_id": "cardio-dyspnea-exam_findings-3",
-          "chip_text": "chest auscultation documented if assessed",
+          "chip_text": "BP documented",
           "order": 3,
-          "search_terms": [
-            "chest"
-          ],
-          "tags": [
-            "auscultation"
-          ]
+          "search_terms": ["BP"],
+          "tags": ["documented"]
         },
         {
           "chip_id": "cardio-dyspnea-exam_findings-4",
-          "chip_text": "edema documented if assessed",
+          "chip_text": "HR documented",
           "order": 4,
-          "search_terms": [
-            "edema"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["HR"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-exam_findings-5",
+          "chip_text": "chest: bilateral basal creps",
+          "order": 5,
+          "search_terms": ["chest:"],
+          "tags": ["bilateral"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-exam_findings-6",
+          "chip_text": "chest: wheeze bilateral",
+          "order": 6,
+          "search_terms": ["chest:"],
+          "tags": ["wheeze"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-exam_findings-7",
+          "chip_text": "chest: clear bilaterally",
+          "order": 7,
+          "search_terms": ["chest:"],
+          "tags": ["clear"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-exam_findings-8",
+          "chip_text": "JVP elevated",
+          "order": 8,
+          "search_terms": ["JVP"],
+          "tags": ["elevated"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-exam_findings-9",
+          "chip_text": "JVP normal",
+          "order": 9,
+          "search_terms": ["JVP"],
+          "tags": ["normal"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-exam_findings-10",
+          "chip_text": "peripheral edema present",
+          "order": 10,
+          "search_terms": ["peripheral"],
+          "tags": ["edema"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-exam_findings-11",
+          "chip_text": "peripheral edema absent",
+          "order": 11,
+          "search_terms": ["peripheral"],
+          "tags": ["edema"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-exam_findings-12",
+          "chip_text": "heart sounds: S3 gallop",
+          "order": 12,
+          "search_terms": ["heart"],
+          "tags": ["sounds:"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-exam_findings-13",
+          "chip_text": "heart sounds: normal S1 S2",
+          "order": 13,
+          "search_terms": ["heart"],
+          "tags": ["sounds:"]
         }
       ],
-      "red_flags": [],
+      "red_flags": [
+        {
+          "chip_id": "cardio-dyspnea-red_flags-1",
+          "chip_text": "SpO2 below 92%",
+          "order": 1,
+          "search_terms": ["SpO2"],
+          "tags": ["below"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-red_flags-2",
+          "chip_text": "respiratory distress at rest",
+          "order": 2,
+          "search_terms": ["respiratory"],
+          "tags": ["distress"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-red_flags-3",
+          "chip_text": "hemodynamic instability",
+          "order": 3,
+          "search_terms": ["hemodynamic"],
+          "tags": ["instability"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-red_flags-4",
+          "chip_text": "stridor",
+          "order": 4,
+          "search_terms": ["stridor"],
+          "tags": ["stridor"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-red_flags-5",
+          "chip_text": "cyanosis",
+          "order": 5,
+          "search_terms": ["cyanosis"],
+          "tags": ["cyanosis"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-red_flags-6",
+          "chip_text": "unable to speak full sentences",
+          "order": 6,
+          "search_terms": ["unable"],
+          "tags": ["to"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-red_flags-7",
+          "chip_text": "silent chest",
+          "order": 7,
+          "search_terms": ["silent"],
+          "tags": ["chest"]
+        }
+      ],
       "investigations": [
         {
           "chip_id": "cardio-dyspnea-investigations-1",
-          "chip_text": "ECG reviewed if performed",
+          "chip_text": "ECG: NSR",
           "order": 1,
-          "search_terms": [
-            "ECG"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["ECG:"],
+          "tags": ["NSR"]
         },
         {
           "chip_id": "cardio-dyspnea-investigations-2",
-          "chip_text": "chest imaging reviewed if available",
+          "chip_text": "ECG: AF",
           "order": 2,
-          "search_terms": [
-            "chest"
-          ],
-          "tags": [
-            "imaging"
-          ]
+          "search_terms": ["ECG:"],
+          "tags": ["AF"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-investigations-3",
+          "chip_text": "ECG: tachycardia",
+          "order": 3,
+          "search_terms": ["ECG:"],
+          "tags": ["tachycardia"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-investigations-4",
+          "chip_text": "CXR: pulmonary edema",
+          "order": 4,
+          "search_terms": ["CXR:"],
+          "tags": ["pulmonary"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-investigations-5",
+          "chip_text": "CXR: clear lung fields",
+          "order": 5,
+          "search_terms": ["CXR:"],
+          "tags": ["clear"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-investigations-6",
+          "chip_text": "CXR: pleural effusion",
+          "order": 6,
+          "search_terms": ["CXR:"],
+          "tags": ["pleural"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-investigations-7",
+          "chip_text": "BNP or NT-proBNP reviewed",
+          "order": 7,
+          "search_terms": ["BNP"],
+          "tags": ["or"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-investigations-8",
+          "chip_text": "troponin reviewed",
+          "order": 8,
+          "search_terms": ["troponin"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-investigations-9",
+          "chip_text": "ABG reviewed",
+          "order": 9,
+          "search_terms": ["ABG"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-investigations-10",
+          "chip_text": "D-dimer reviewed if ordered",
+          "order": 10,
+          "search_terms": ["D-dimer"],
+          "tags": ["reviewed"]
         }
       ],
       "plan_phrases": [
         {
           "chip_id": "cardio-dyspnea-plan_phrases-1",
-          "chip_text": "follow-up documented if arranged",
+          "chip_text": "oxygen therapy documented if started",
           "order": 1,
-          "search_terms": [
-            "follow-up"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["oxygen"],
+          "tags": ["therapy"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-plan_phrases-2",
+          "chip_text": "diuretic response documented",
+          "order": 2,
+          "search_terms": ["diuretic"],
+          "tags": ["response"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-plan_phrases-3",
+          "chip_text": "cardiology referral documented",
+          "order": 3,
+          "search_terms": ["cardiology"],
+          "tags": ["referral"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-plan_phrases-4",
+          "chip_text": "admission decision documented",
+          "order": 4,
+          "search_terms": ["admission"],
+          "tags": ["decision"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-plan_phrases-5",
+          "chip_text": "safety-netting discussed",
+          "order": 5,
+          "search_terms": ["safety-netting"],
+          "tags": ["discussed"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-plan_phrases-6",
+          "chip_text": "medication review documented",
+          "order": 6,
+          "search_terms": ["medication"],
+          "tags": ["review"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-plan_phrases-7",
+          "chip_text": "follow-up in 1 week",
+          "order": 7,
+          "search_terms": ["follow-up"],
+          "tags": ["in"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-plan_phrases-8",
+          "chip_text": "follow-up in 2 weeks",
+          "order": 8,
+          "search_terms": ["follow-up"],
+          "tags": ["in"]
         }
       ],
-      "follow_up": []
-    },
+      "follow_up": [
+        {
+          "chip_id": "cardio-dyspnea-follow_up-1",
+          "chip_text": "return immediately if worsening SOB",
+          "order": 1,
+          "search_terms": ["return"],
+          "tags": ["immediately"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-follow_up-2",
+          "chip_text": "return if new chest pain",
+          "order": 2,
+          "search_terms": ["return"],
+          "tags": ["if"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-follow_up-3",
+          "chip_text": "cardiology follow-up arranged",
+          "order": 3,
+          "search_terms": ["cardiology"],
+          "tags": ["follow-up"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-follow_up-4",
+          "chip_text": "repeat CXR if arranged",
+          "order": 4,
+          "search_terms": ["repeat"],
+          "tags": ["CXR"]
+        },
+        {
+          "chip_id": "cardio-dyspnea-follow_up-5",
+          "chip_text": "weight monitoring daily advised",
+          "order": 5,
+          "search_terms": ["weight"],
+          "tags": ["monitoring"]
+        }
+      ]
     "cardio-ecg-review": {
       "symptoms": [
         {
           "chip_id": "cardio-ecg-review-symptoms-1",
-          "chip_text": "ECG review",
+          "chip_text": "ECG performed for chest pain",
           "order": 1,
-          "search_terms": [
-            "ECG"
-          ],
-          "tags": [
-            "review"
-          ]
+          "search_terms": ["ECG"],
+          "tags": ["performed"]
         },
         {
           "chip_id": "cardio-ecg-review-symptoms-2",
-          "chip_text": "reason for ECG documented",
+          "chip_text": "ECG performed for palpitations",
           "order": 2,
-          "search_terms": [
-            "reason"
-          ],
-          "tags": [
-            "for"
-          ]
+          "search_terms": ["ECG"],
+          "tags": ["performed"]
         },
         {
           "chip_id": "cardio-ecg-review-symptoms-3",
-          "chip_text": "symptoms reviewed",
+          "chip_text": "ECG performed for syncope",
           "order": 3,
-          "search_terms": [
-            "symptoms"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["ECG"],
+          "tags": ["performed"]
         },
         {
           "chip_id": "cardio-ecg-review-symptoms-4",
-          "chip_text": "previous ECG compared if available",
+          "chip_text": "ECG performed for SOB",
           "order": 4,
-          "search_terms": [
-            "previous"
-          ],
-          "tags": [
-            "ECG"
-          ]
+          "search_terms": ["ECG"],
+          "tags": ["performed"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-symptoms-5",
+          "chip_text": "ECG performed pre-operative",
+          "order": 5,
+          "search_terms": ["ECG"],
+          "tags": ["performed"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-symptoms-6",
+          "chip_text": "ECG routine screening",
+          "order": 6,
+          "search_terms": ["ECG"],
+          "tags": ["routine"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-symptoms-7",
+          "chip_text": "previous ECG available for comparison",
+          "order": 7,
+          "search_terms": ["previous"],
+          "tags": ["ECG"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-symptoms-8",
+          "chip_text": "no previous ECG available",
+          "order": 8,
+          "search_terms": ["no"],
+          "tags": ["previous"]
         }
       ],
       "relevant_negatives": [
         {
           "chip_id": "cardio-ecg-review-relevant_negatives-1",
-          "chip_text": "no chest pain reported",
+          "chip_text": "no chest pain at time of ECG",
           "order": 1,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "chest"
-          ]
+          "search_terms": ["no"],
+          "tags": ["chest"]
         },
         {
           "chip_id": "cardio-ecg-review-relevant_negatives-2",
-          "chip_text": "no syncope reported",
+          "chip_text": "no palpitations at time of ECG",
           "order": 2,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "syncope"
-          ]
+          "search_terms": ["no"],
+          "tags": ["palpitations"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-relevant_negatives-3",
+          "chip_text": "no syncope",
+          "order": 3,
+          "search_terms": ["no"],
+          "tags": ["syncope"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-relevant_negatives-4",
+          "chip_text": "no dyspnea",
+          "order": 4,
+          "search_terms": ["no"],
+          "tags": ["dyspnea"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-relevant_negatives-5",
+          "chip_text": "asymptomatic at time of recording",
+          "order": 5,
+          "search_terms": ["asymptomatic"],
+          "tags": ["at"]
         }
       ],
       "exam_findings": [
         {
           "chip_id": "cardio-ecg-review-exam_findings-1",
-          "chip_text": "vital signs documented if measured",
+          "chip_text": "HR on ECG documented",
           "order": 1,
-          "search_terms": [
-            "vital"
-          ],
-          "tags": [
-            "signs"
-          ]
+          "search_terms": ["HR"],
+          "tags": ["on"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-exam_findings-2",
+          "chip_text": "rhythm regular",
+          "order": 2,
+          "search_terms": ["rhythm"],
+          "tags": ["regular"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-exam_findings-3",
+          "chip_text": "rhythm irregular",
+          "order": 3,
+          "search_terms": ["rhythm"],
+          "tags": ["irregular"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-exam_findings-4",
+          "chip_text": "BP documented",
+          "order": 4,
+          "search_terms": ["BP"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-exam_findings-5",
+          "chip_text": "patient stable during recording",
+          "order": 5,
+          "search_terms": ["patient"],
+          "tags": ["stable"]
         }
       ],
-      "red_flags": [],
       "investigations": [
         {
           "chip_id": "cardio-ecg-review-investigations-1",
-          "chip_text": "ECG reviewed",
+          "chip_text": "ECG: normal sinus rhythm",
           "order": 1,
-          "search_terms": [
-            "ECG"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["ECG:"],
+          "tags": ["normal"]
         },
         {
           "chip_id": "cardio-ecg-review-investigations-2",
-          "chip_text": "clinician-entered interpretation documented",
+          "chip_text": "ECG: sinus tachycardia",
           "order": 2,
-          "search_terms": [
-            "clinician-entered"
-          ],
-          "tags": [
-            "interpretation"
-          ]
+          "search_terms": ["ECG:"],
+          "tags": ["sinus"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-investigations-3",
+          "chip_text": "ECG: sinus bradycardia",
+          "order": 3,
+          "search_terms": ["ECG:"],
+          "tags": ["sinus"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-investigations-4",
+          "chip_text": "ECG: atrial fibrillation",
+          "order": 4,
+          "search_terms": ["ECG:"],
+          "tags": ["atrial"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-investigations-5",
+          "chip_text": "ECG: atrial flutter",
+          "order": 5,
+          "search_terms": ["ECG:"],
+          "tags": ["atrial"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-investigations-6",
+          "chip_text": "ECG: ST elevation",
+          "order": 6,
+          "search_terms": ["ECG:"],
+          "tags": ["ST"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-investigations-7",
+          "chip_text": "ECG: ST depression",
+          "order": 7,
+          "search_terms": ["ECG:"],
+          "tags": ["ST"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-investigations-8",
+          "chip_text": "ECG: T-wave inversion",
+          "order": 8,
+          "search_terms": ["ECG:"],
+          "tags": ["T-wave"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-investigations-9",
+          "chip_text": "ECG: prolonged QTc",
+          "order": 9,
+          "search_terms": ["ECG:"],
+          "tags": ["prolonged"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-investigations-10",
+          "chip_text": "ECG: LBBB",
+          "order": 10,
+          "search_terms": ["ECG:"],
+          "tags": ["LBBB"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-investigations-11",
+          "chip_text": "ECG: RBBB",
+          "order": 11,
+          "search_terms": ["ECG:"],
+          "tags": ["RBBB"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-investigations-12",
+          "chip_text": "ECG: LVH criteria",
+          "order": 12,
+          "search_terms": ["ECG:"],
+          "tags": ["LVH"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-investigations-13",
+          "chip_text": "ECG: no acute ischemic changes",
+          "order": 13,
+          "search_terms": ["ECG:"],
+          "tags": ["no"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-investigations-14",
+          "chip_text": "ECG: unchanged from previous",
+          "order": 14,
+          "search_terms": ["ECG:"],
+          "tags": ["unchanged"]
         }
       ],
       "plan_phrases": [
         {
           "chip_id": "cardio-ecg-review-plan_phrases-1",
-          "chip_text": "follow-up plan documented",
+          "chip_text": "no acute changes — reassure",
           "order": 1,
-          "search_terms": [
-            "follow-up"
-          ],
-          "tags": [
-            "plan"
-          ]
+          "search_terms": ["no"],
+          "tags": ["acute"]
         },
         {
           "chip_id": "cardio-ecg-review-plan_phrases-2",
-          "chip_text": "referral documented if clinician decided",
+          "chip_text": "repeat ECG if symptoms recur",
           "order": 2,
-          "search_terms": [
-            "referral"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["repeat"],
+          "tags": ["ECG"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-plan_phrases-3",
+          "chip_text": "cardiology referral for abnormal finding",
+          "order": 3,
+          "search_terms": ["cardiology"],
+          "tags": ["referral"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-plan_phrases-4",
+          "chip_text": "serial ECGs ordered",
+          "order": 4,
+          "search_terms": ["serial"],
+          "tags": ["ECGs"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-plan_phrases-5",
+          "chip_text": "troponin ordered",
+          "order": 5,
+          "search_terms": ["troponin"],
+          "tags": ["ordered"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-plan_phrases-6",
+          "chip_text": "echo referral documented",
+          "order": 6,
+          "search_terms": ["echo"],
+          "tags": ["referral"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-plan_phrases-7",
+          "chip_text": "follow-up with GP",
+          "order": 7,
+          "search_terms": ["follow-up"],
+          "tags": ["with"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-plan_phrases-8",
+          "chip_text": "urgent cardiology review",
+          "order": 8,
+          "search_terms": ["urgent"],
+          "tags": ["cardiology"]
         }
       ],
-      "follow_up": []
-    },
+      "follow_up": [
+        {
+          "chip_id": "cardio-ecg-review-follow_up-1",
+          "chip_text": "repeat ECG in 24h if indicated",
+          "order": 1,
+          "search_terms": ["repeat"],
+          "tags": ["ECG"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-follow_up-2",
+          "chip_text": "cardiology OPD follow-up",
+          "order": 2,
+          "search_terms": ["cardiology"],
+          "tags": ["OPD"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-follow_up-3",
+          "chip_text": "return if chest pain or syncope",
+          "order": 3,
+          "search_terms": ["return"],
+          "tags": ["if"]
+        },
+        {
+          "chip_id": "cardio-ecg-review-follow_up-4",
+          "chip_text": "GP follow-up in 1 week",
+          "order": 4,
+          "search_terms": ["GP"],
+          "tags": ["follow-up"]
+        }
+      ]
     "cardio-heart-failure-followup": {
       "symptoms": [
         {
           "chip_id": "cardio-heart-failure-followup-symptoms-1",
-          "chip_text": "heart failure follow-up",
+          "chip_text": "NYHA class I",
           "order": 1,
-          "search_terms": [
-            "heart"
-          ],
-          "tags": [
-            "failure"
-          ]
+          "search_terms": ["NYHA"],
+          "tags": ["class"]
         },
         {
           "chip_id": "cardio-heart-failure-followup-symptoms-2",
-          "chip_text": "dyspnea reviewed",
+          "chip_text": "NYHA class II",
           "order": 2,
-          "search_terms": [
-            "dyspnea"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["NYHA"],
+          "tags": ["class"]
         },
         {
           "chip_id": "cardio-heart-failure-followup-symptoms-3",
-          "chip_text": "orthopnea or PND reviewed",
+          "chip_text": "NYHA class III",
           "order": 3,
-          "search_terms": [
-            "orthopnea"
-          ],
-          "tags": [
-            "or"
-          ]
+          "search_terms": ["NYHA"],
+          "tags": ["class"]
         },
         {
           "chip_id": "cardio-heart-failure-followup-symptoms-4",
-          "chip_text": "edema reviewed",
+          "chip_text": "NYHA class IV",
           "order": 4,
-          "search_terms": [
-            "edema"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["NYHA"],
+          "tags": ["class"]
         },
         {
           "chip_id": "cardio-heart-failure-followup-symptoms-5",
-          "chip_text": "weight change reviewed",
+          "chip_text": "dyspnea stable",
           "order": 5,
-          "search_terms": [
-            "weight"
-          ],
-          "tags": [
-            "change"
-          ]
+          "search_terms": ["dyspnea"],
+          "tags": ["stable"]
         },
         {
           "chip_id": "cardio-heart-failure-followup-symptoms-6",
-          "chip_text": "medication adherence discussed",
+          "chip_text": "dyspnea worsening",
           "order": 6,
-          "search_terms": [
-            "medication"
-          ],
-          "tags": [
-            "adherence"
-          ]
+          "search_terms": ["dyspnea"],
+          "tags": ["worsening"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-symptoms-7",
+          "chip_text": "orthopnea present",
+          "order": 7,
+          "search_terms": ["orthopnea"],
+          "tags": ["present"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-symptoms-8",
+          "chip_text": "PND present",
+          "order": 8,
+          "search_terms": ["PND"],
+          "tags": ["present"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-symptoms-9",
+          "chip_text": "weight gain documented",
+          "order": 9,
+          "search_terms": ["weight"],
+          "tags": ["gain"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-symptoms-10",
+          "chip_text": "weight stable",
+          "order": 10,
+          "search_terms": ["weight"],
+          "tags": ["stable"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-symptoms-11",
+          "chip_text": "edema worsening",
+          "order": 11,
+          "search_terms": ["edema"],
+          "tags": ["worsening"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-symptoms-12",
+          "chip_text": "edema improving",
+          "order": 12,
+          "search_terms": ["edema"],
+          "tags": ["improving"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-symptoms-13",
+          "chip_text": "exercise tolerance stable",
+          "order": 13,
+          "search_terms": ["exercise"],
+          "tags": ["tolerance"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-symptoms-14",
+          "chip_text": "exercise tolerance reduced",
+          "order": 14,
+          "search_terms": ["exercise"],
+          "tags": ["tolerance"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-symptoms-15",
+          "chip_text": "medication adherence confirmed",
+          "order": 15,
+          "search_terms": ["medication"],
+          "tags": ["adherence"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-symptoms-16",
+          "chip_text": "medication non-adherence noted",
+          "order": 16,
+          "search_terms": ["medication"],
+          "tags": ["non-adherence"]
         }
       ],
       "relevant_negatives": [
         {
           "chip_id": "cardio-heart-failure-followup-relevant_negatives-1",
-          "chip_text": "no chest pain reported",
+          "chip_text": "no chest pain",
           "order": 1,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "chest"
-          ]
+          "search_terms": ["no"],
+          "tags": ["chest"]
         },
         {
           "chip_id": "cardio-heart-failure-followup-relevant_negatives-2",
-          "chip_text": "no syncope reported",
+          "chip_text": "no syncope",
           "order": 2,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "syncope"
-          ]
+          "search_terms": ["no"],
+          "tags": ["syncope"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-relevant_negatives-3",
+          "chip_text": "no palpitations",
+          "order": 3,
+          "search_terms": ["no"],
+          "tags": ["palpitations"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-relevant_negatives-4",
+          "chip_text": "no new edema",
+          "order": 4,
+          "search_terms": ["no"],
+          "tags": ["new"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-relevant_negatives-5",
+          "chip_text": "no orthopnea",
+          "order": 5,
+          "search_terms": ["no"],
+          "tags": ["orthopnea"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-relevant_negatives-6",
+          "chip_text": "no weight gain",
+          "order": 6,
+          "search_terms": ["no"],
+          "tags": ["weight"]
         }
       ],
       "exam_findings": [
         {
           "chip_id": "cardio-heart-failure-followup-exam_findings-1",
-          "chip_text": "vital signs documented if measured",
+          "chip_text": "BP documented",
           "order": 1,
-          "search_terms": [
-            "vital"
-          ],
-          "tags": [
-            "signs"
-          ]
+          "search_terms": ["BP"],
+          "tags": ["documented"]
         },
         {
           "chip_id": "cardio-heart-failure-followup-exam_findings-2",
-          "chip_text": "edema documented if assessed",
+          "chip_text": "HR documented",
           "order": 2,
-          "search_terms": [
-            "edema"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["HR"],
+          "tags": ["documented"]
         },
         {
           "chip_id": "cardio-heart-failure-followup-exam_findings-3",
-          "chip_text": "chest auscultation documented if assessed",
+          "chip_text": "weight documented",
           "order": 3,
-          "search_terms": [
-            "chest"
-          ],
-          "tags": [
-            "auscultation"
-          ]
+          "search_terms": ["weight"],
+          "tags": ["documented"]
         },
         {
           "chip_id": "cardio-heart-failure-followup-exam_findings-4",
-          "chip_text": "JVP documented if assessed",
+          "chip_text": "JVP elevated",
           "order": 4,
-          "search_terms": [
-            "JVP"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["JVP"],
+          "tags": ["elevated"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-exam_findings-5",
+          "chip_text": "JVP normal",
+          "order": 5,
+          "search_terms": ["JVP"],
+          "tags": ["normal"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-exam_findings-6",
+          "chip_text": "bilateral pitting edema",
+          "order": 6,
+          "search_terms": ["bilateral"],
+          "tags": ["pitting"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-exam_findings-7",
+          "chip_text": "no peripheral edema",
+          "order": 7,
+          "search_terms": ["no"],
+          "tags": ["peripheral"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-exam_findings-8",
+          "chip_text": "chest: basal creps",
+          "order": 8,
+          "search_terms": ["chest:"],
+          "tags": ["basal"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-exam_findings-9",
+          "chip_text": "chest: clear",
+          "order": 9,
+          "search_terms": ["chest:"],
+          "tags": ["clear"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-exam_findings-10",
+          "chip_text": "S3 gallop present",
+          "order": 10,
+          "search_terms": ["S3"],
+          "tags": ["gallop"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-exam_findings-11",
+          "chip_text": "heart sounds normal",
+          "order": 11,
+          "search_terms": ["heart"],
+          "tags": ["sounds"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-exam_findings-12",
+          "chip_text": "hepatomegaly present",
+          "order": 12,
+          "search_terms": ["hepatomegaly"],
+          "tags": ["present"]
         }
       ],
-      "red_flags": [],
+      "red_flags": [
+        {
+          "chip_id": "cardio-heart-failure-followup-red_flags-1",
+          "chip_text": "acute decompensation",
+          "order": 1,
+          "search_terms": ["acute"],
+          "tags": ["decompensation"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-red_flags-2",
+          "chip_text": "SpO2 below 92%",
+          "order": 2,
+          "search_terms": ["SpO2"],
+          "tags": ["below"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-red_flags-3",
+          "chip_text": "hypotension",
+          "order": 3,
+          "search_terms": ["hypotension"],
+          "tags": ["hypotension"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-red_flags-4",
+          "chip_text": "new AF",
+          "order": 4,
+          "search_terms": ["new"],
+          "tags": ["AF"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-red_flags-5",
+          "chip_text": "syncope",
+          "order": 5,
+          "search_terms": ["syncope"],
+          "tags": ["syncope"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-red_flags-6",
+          "chip_text": "anuria or oliguria",
+          "order": 6,
+          "search_terms": ["anuria"],
+          "tags": ["or"]
+        }
+      ],
       "investigations": [
         {
           "chip_id": "cardio-heart-failure-followup-investigations-1",
-          "chip_text": "renal function reviewed if ordered",
+          "chip_text": "BNP or NT-proBNP reviewed",
           "order": 1,
-          "search_terms": [
-            "renal"
-          ],
-          "tags": [
-            "function"
-          ]
+          "search_terms": ["BNP"],
+          "tags": ["or"]
         },
         {
           "chip_id": "cardio-heart-failure-followup-investigations-2",
-          "chip_text": "electrolytes reviewed if ordered",
+          "chip_text": "renal function reviewed",
           "order": 2,
-          "search_terms": [
-            "electrolytes"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["renal"],
+          "tags": ["function"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-investigations-3",
+          "chip_text": "electrolytes reviewed",
+          "order": 3,
+          "search_terms": ["electrolytes"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-investigations-4",
+          "chip_text": "eGFR documented",
+          "order": 4,
+          "search_terms": ["eGFR"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-investigations-5",
+          "chip_text": "echo reviewed",
+          "order": 5,
+          "search_terms": ["echo"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-investigations-6",
+          "chip_text": "ECG reviewed",
+          "order": 6,
+          "search_terms": ["ECG"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-investigations-7",
+          "chip_text": "iron studies reviewed",
+          "order": 7,
+          "search_terms": ["iron"],
+          "tags": ["studies"]
         }
       ],
       "plan_phrases": [
         {
           "chip_id": "cardio-heart-failure-followup-plan_phrases-1",
-          "chip_text": "follow-up documented if arranged",
+          "chip_text": "diuretic dose adjusted",
           "order": 1,
-          "search_terms": [
-            "follow-up"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["diuretic"],
+          "tags": ["dose"]
         },
         {
           "chip_id": "cardio-heart-failure-followup-plan_phrases-2",
-          "chip_text": "medication review documented if clinician decided",
+          "chip_text": "ACEi/ARB continued",
           "order": 2,
-          "search_terms": [
-            "medication"
-          ],
-          "tags": [
-            "review"
-          ]
+          "search_terms": ["ACEi/ARB"],
+          "tags": ["continued"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-plan_phrases-3",
+          "chip_text": "beta-blocker continued",
+          "order": 3,
+          "search_terms": ["beta-blocker"],
+          "tags": ["continued"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-plan_phrases-4",
+          "chip_text": "MRA continued",
+          "order": 4,
+          "search_terms": ["MRA"],
+          "tags": ["continued"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-plan_phrases-5",
+          "chip_text": "SGLT2i continued",
+          "order": 5,
+          "search_terms": ["SGLT2i"],
+          "tags": ["continued"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-plan_phrases-6",
+          "chip_text": "fluid restriction advised",
+          "order": 6,
+          "search_terms": ["fluid"],
+          "tags": ["restriction"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-plan_phrases-7",
+          "chip_text": "salt restriction advised",
+          "order": 7,
+          "search_terms": ["salt"],
+          "tags": ["restriction"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-plan_phrases-8",
+          "chip_text": "daily weight monitoring advised",
+          "order": 8,
+          "search_terms": ["daily"],
+          "tags": ["weight"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-plan_phrases-9",
+          "chip_text": "cardiology follow-up arranged",
+          "order": 9,
+          "search_terms": ["cardiology"],
+          "tags": ["follow-up"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-plan_phrases-10",
+          "chip_text": "medication review documented",
+          "order": 10,
+          "search_terms": ["medication"],
+          "tags": ["review"]
         }
       ],
-      "follow_up": []
-    },
+      "follow_up": [
+        {
+          "chip_id": "cardio-heart-failure-followup-follow_up-1",
+          "chip_text": "follow-up in 1 week",
+          "order": 1,
+          "search_terms": ["follow-up"],
+          "tags": ["in"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-follow_up-2",
+          "chip_text": "follow-up in 2 weeks",
+          "order": 2,
+          "search_terms": ["follow-up"],
+          "tags": ["in"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-follow_up-3",
+          "chip_text": "follow-up in 4 weeks",
+          "order": 3,
+          "search_terms": ["follow-up"],
+          "tags": ["in"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-follow_up-4",
+          "chip_text": "return if weight gain >2kg in 3 days",
+          "order": 4,
+          "search_terms": ["return"],
+          "tags": ["if"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-follow_up-5",
+          "chip_text": "return if worsening SOB",
+          "order": 5,
+          "search_terms": ["return"],
+          "tags": ["if"]
+        },
+        {
+          "chip_id": "cardio-heart-failure-followup-follow_up-6",
+          "chip_text": "heart failure nurse follow-up",
+          "order": 6,
+          "search_terms": ["heart"],
+          "tags": ["failure"]
+        }
+      ]
     "cardio-hypertension-followup": {
       "symptoms": [
         {
           "chip_id": "cardio-hypertension-followup-symptoms-1",
-          "chip_text": "hypertension follow-up",
+          "chip_text": "asymptomatic",
           "order": 1,
-          "search_terms": [
-            "hypertension"
-          ],
-          "tags": [
-            "follow-up"
-          ]
+          "search_terms": ["asymptomatic"],
+          "tags": ["asymptomatic"]
         },
         {
           "chip_id": "cardio-hypertension-followup-symptoms-2",
-          "chip_text": "home BP readings reviewed",
+          "chip_text": "headache",
           "order": 2,
-          "search_terms": [
-            "home"
-          ],
-          "tags": [
-            "BP"
-          ]
+          "search_terms": ["headache"],
+          "tags": ["headache"]
         },
         {
           "chip_id": "cardio-hypertension-followup-symptoms-3",
-          "chip_text": "medication adherence discussed",
+          "chip_text": "visual disturbance",
           "order": 3,
-          "search_terms": [
-            "medication"
-          ],
-          "tags": [
-            "adherence"
-          ]
+          "search_terms": ["visual"],
+          "tags": ["disturbance"]
         },
         {
           "chip_id": "cardio-hypertension-followup-symptoms-4",
-          "chip_text": "lifestyle context reviewed",
+          "chip_text": "chest pain",
           "order": 4,
-          "search_terms": [
-            "lifestyle"
-          ],
-          "tags": [
-            "context"
-          ]
+          "search_terms": ["chest"],
+          "tags": ["pain"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-symptoms-5",
+          "chip_text": "dyspnea on exertion",
+          "order": 5,
+          "search_terms": ["dyspnea"],
+          "tags": ["on"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-symptoms-6",
+          "chip_text": "epistaxis",
+          "order": 6,
+          "search_terms": ["epistaxis"],
+          "tags": ["epistaxis"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-symptoms-7",
+          "chip_text": "home BP readings reviewed",
+          "order": 7,
+          "search_terms": ["home"],
+          "tags": ["BP"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-symptoms-8",
+          "chip_text": "home BP average documented",
+          "order": 8,
+          "search_terms": ["home"],
+          "tags": ["BP"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-symptoms-9",
+          "chip_text": "medication adherence confirmed",
+          "order": 9,
+          "search_terms": ["medication"],
+          "tags": ["adherence"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-symptoms-10",
+          "chip_text": "medication side effects reported",
+          "order": 10,
+          "search_terms": ["medication"],
+          "tags": ["side"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-symptoms-11",
+          "chip_text": "lifestyle modifications discussed",
+          "order": 11,
+          "search_terms": ["lifestyle"],
+          "tags": ["modifications"]
         }
       ],
       "relevant_negatives": [
         {
           "chip_id": "cardio-hypertension-followup-relevant_negatives-1",
-          "chip_text": "no chest pain reported",
+          "chip_text": "no headache",
           "order": 1,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "chest"
-          ]
+          "search_terms": ["no"],
+          "tags": ["headache"]
         },
         {
           "chip_id": "cardio-hypertension-followup-relevant_negatives-2",
-          "chip_text": "no shortness of breath reported",
+          "chip_text": "no visual symptoms",
           "order": 2,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "shortness"
-          ]
+          "search_terms": ["no"],
+          "tags": ["visual"]
         },
         {
           "chip_id": "cardio-hypertension-followup-relevant_negatives-3",
-          "chip_text": "no visual symptoms reported",
+          "chip_text": "no chest pain",
           "order": 3,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "visual"
-          ]
+          "search_terms": ["no"],
+          "tags": ["chest"]
         },
         {
           "chip_id": "cardio-hypertension-followup-relevant_negatives-4",
-          "chip_text": "no focal neurological symptoms reported",
+          "chip_text": "no SOB",
           "order": 4,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "focal"
-          ]
+          "search_terms": ["no"],
+          "tags": ["SOB"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-relevant_negatives-5",
+          "chip_text": "no focal neurology",
+          "order": 5,
+          "search_terms": ["no"],
+          "tags": ["focal"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-relevant_negatives-6",
+          "chip_text": "no epistaxis",
+          "order": 6,
+          "search_terms": ["no"],
+          "tags": ["epistaxis"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-relevant_negatives-7",
+          "chip_text": "no medication side effects",
+          "order": 7,
+          "search_terms": ["no"],
+          "tags": ["medication"]
         }
       ],
       "exam_findings": [
         {
           "chip_id": "cardio-hypertension-followup-exam_findings-1",
-          "chip_text": "blood pressure documented if measured",
+          "chip_text": "BP sitting: documented",
           "order": 1,
-          "search_terms": [
-            "blood"
-          ],
-          "tags": [
-            "pressure"
-          ]
+          "search_terms": ["BP"],
+          "tags": ["sitting:"]
         },
         {
           "chip_id": "cardio-hypertension-followup-exam_findings-2",
-          "chip_text": "cardiovascular exam documented if assessed",
+          "chip_text": "BP standing: documented",
           "order": 2,
-          "search_terms": [
-            "cardiovascular"
-          ],
-          "tags": [
-            "exam"
-          ]
+          "search_terms": ["BP"],
+          "tags": ["standing:"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-exam_findings-3",
+          "chip_text": "HR documented",
+          "order": 3,
+          "search_terms": ["HR"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-exam_findings-4",
+          "chip_text": "BMI documented",
+          "order": 4,
+          "search_terms": ["BMI"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-exam_findings-5",
+          "chip_text": "fundoscopy normal",
+          "order": 5,
+          "search_terms": ["fundoscopy"],
+          "tags": ["normal"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-exam_findings-6",
+          "chip_text": "fundoscopy not performed",
+          "order": 6,
+          "search_terms": ["fundoscopy"],
+          "tags": ["not"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-exam_findings-7",
+          "chip_text": "cardiovascular exam normal",
+          "order": 7,
+          "search_terms": ["cardiovascular"],
+          "tags": ["exam"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-exam_findings-8",
+          "chip_text": "peripheral pulses intact",
+          "order": 8,
+          "search_terms": ["peripheral"],
+          "tags": ["pulses"]
         }
       ],
-      "red_flags": [],
+      "red_flags": [
+        {
+          "chip_id": "cardio-hypertension-followup-red_flags-1",
+          "chip_text": "BP >180/120",
+          "order": 1,
+          "search_terms": ["BP"],
+          "tags": [">180/120"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-red_flags-2",
+          "chip_text": "hypertensive urgency",
+          "order": 2,
+          "search_terms": ["hypertensive"],
+          "tags": ["urgency"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-red_flags-3",
+          "chip_text": "new visual loss",
+          "order": 3,
+          "search_terms": ["new"],
+          "tags": ["visual"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-red_flags-4",
+          "chip_text": "new focal neurology",
+          "order": 4,
+          "search_terms": ["new"],
+          "tags": ["focal"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-red_flags-5",
+          "chip_text": "acute chest pain with HTN",
+          "order": 5,
+          "search_terms": ["acute"],
+          "tags": ["chest"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-red_flags-6",
+          "chip_text": "papilledema",
+          "order": 6,
+          "search_terms": ["papilledema"],
+          "tags": ["papilledema"]
+        }
+      ],
       "investigations": [
         {
           "chip_id": "cardio-hypertension-followup-investigations-1",
-          "chip_text": "renal function reviewed if ordered",
+          "chip_text": "U&E reviewed",
           "order": 1,
-          "search_terms": [
-            "renal"
-          ],
-          "tags": [
-            "function"
-          ]
+          "search_terms": ["U&E"],
+          "tags": ["reviewed"]
         },
         {
           "chip_id": "cardio-hypertension-followup-investigations-2",
-          "chip_text": "urine ACR reviewed if ordered",
+          "chip_text": "eGFR documented",
           "order": 2,
-          "search_terms": [
-            "urine"
-          ],
-          "tags": [
-            "ACR"
-          ]
+          "search_terms": ["eGFR"],
+          "tags": ["documented"]
         },
         {
           "chip_id": "cardio-hypertension-followup-investigations-3",
-          "chip_text": "lipid profile reviewed if ordered",
+          "chip_text": "urine ACR reviewed",
           "order": 3,
-          "search_terms": [
-            "lipid"
-          ],
-          "tags": [
-            "profile"
-          ]
+          "search_terms": ["urine"],
+          "tags": ["ACR"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-investigations-4",
+          "chip_text": "lipid profile reviewed",
+          "order": 4,
+          "search_terms": ["lipid"],
+          "tags": ["profile"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-investigations-5",
+          "chip_text": "HbA1c reviewed",
+          "order": 5,
+          "search_terms": ["HbA1c"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-investigations-6",
+          "chip_text": "ECG reviewed",
+          "order": 6,
+          "search_terms": ["ECG"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-investigations-7",
+          "chip_text": "echo reviewed if ordered",
+          "order": 7,
+          "search_terms": ["echo"],
+          "tags": ["reviewed"]
         }
       ],
       "plan_phrases": [
         {
           "chip_id": "cardio-hypertension-followup-plan_phrases-1",
-          "chip_text": "medication review documented if clinician decided",
+          "chip_text": "target BP discussed",
           "order": 1,
-          "search_terms": [
-            "medication"
-          ],
-          "tags": [
-            "review"
-          ]
+          "search_terms": ["target"],
+          "tags": ["BP"]
         },
         {
           "chip_id": "cardio-hypertension-followup-plan_phrases-2",
-          "chip_text": "follow-up documented if arranged",
+          "chip_text": "antihypertensive continued",
           "order": 2,
-          "search_terms": [
-            "follow-up"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["antihypertensive"],
+          "tags": ["continued"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-plan_phrases-3",
+          "chip_text": "antihypertensive dose increased",
+          "order": 3,
+          "search_terms": ["antihypertensive"],
+          "tags": ["dose"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-plan_phrases-4",
+          "chip_text": "new agent added",
+          "order": 4,
+          "search_terms": ["new"],
+          "tags": ["agent"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-plan_phrases-5",
+          "chip_text": "lifestyle advice: salt reduction",
+          "order": 5,
+          "search_terms": ["lifestyle"],
+          "tags": ["advice:"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-plan_phrases-6",
+          "chip_text": "lifestyle advice: exercise",
+          "order": 6,
+          "search_terms": ["lifestyle"],
+          "tags": ["advice:"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-plan_phrases-7",
+          "chip_text": "lifestyle advice: weight management",
+          "order": 7,
+          "search_terms": ["lifestyle"],
+          "tags": ["advice:"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-plan_phrases-8",
+          "chip_text": "QRISK reviewed",
+          "order": 8,
+          "search_terms": ["QRISK"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-plan_phrases-9",
+          "chip_text": "medication review documented",
+          "order": 9,
+          "search_terms": ["medication"],
+          "tags": ["review"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-plan_phrases-10",
+          "chip_text": "follow-up arranged",
+          "order": 10,
+          "search_terms": ["follow-up"],
+          "tags": ["arranged"]
         }
       ],
-      "follow_up": []
-    },
+      "follow_up": [
+        {
+          "chip_id": "cardio-hypertension-followup-follow_up-1",
+          "chip_text": "follow-up in 2 weeks",
+          "order": 1,
+          "search_terms": ["follow-up"],
+          "tags": ["in"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-follow_up-2",
+          "chip_text": "follow-up in 4 weeks",
+          "order": 2,
+          "search_terms": ["follow-up"],
+          "tags": ["in"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-follow_up-3",
+          "chip_text": "follow-up in 3 months",
+          "order": 3,
+          "search_terms": ["follow-up"],
+          "tags": ["in"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-follow_up-4",
+          "chip_text": "annual review due",
+          "order": 4,
+          "search_terms": ["annual"],
+          "tags": ["review"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-follow_up-5",
+          "chip_text": "return if headache or visual symptoms",
+          "order": 5,
+          "search_terms": ["return"],
+          "tags": ["if"]
+        },
+        {
+          "chip_id": "cardio-hypertension-followup-follow_up-6",
+          "chip_text": "home BP diary to bring next visit",
+          "order": 6,
+          "search_terms": ["home"],
+          "tags": ["BP"]
+        }
+      ]
     "cardio-lipid-followup": {
       "symptoms": [
         {
           "chip_id": "cardio-lipid-followup-symptoms-1",
-          "chip_text": "lipid follow-up",
+          "chip_text": "asymptomatic",
           "order": 1,
-          "search_terms": [
-            "lipid"
-          ],
-          "tags": [
-            "follow-up"
-          ]
+          "search_terms": ["asymptomatic"],
+          "tags": ["asymptomatic"]
         },
         {
           "chip_id": "cardio-lipid-followup-symptoms-2",
-          "chip_text": "lipid profile reviewed",
+          "chip_text": "statin tolerability reviewed",
           "order": 2,
-          "search_terms": [
-            "lipid"
-          ],
-          "tags": [
-            "profile"
-          ]
+          "search_terms": ["statin"],
+          "tags": ["tolerability"]
         },
         {
           "chip_id": "cardio-lipid-followup-symptoms-3",
-          "chip_text": "cardiovascular risk context documented",
+          "chip_text": "myalgia reported",
           "order": 3,
-          "search_terms": [
-            "cardiovascular"
-          ],
-          "tags": [
-            "risk"
-          ]
+          "search_terms": ["myalgia"],
+          "tags": ["reported"]
         },
         {
           "chip_id": "cardio-lipid-followup-symptoms-4",
-          "chip_text": "lifestyle context reviewed",
+          "chip_text": "no muscle symptoms",
           "order": 4,
-          "search_terms": [
-            "lifestyle"
-          ],
-          "tags": [
-            "context"
-          ]
+          "search_terms": ["no"],
+          "tags": ["muscle"]
         },
         {
           "chip_id": "cardio-lipid-followup-symptoms-5",
-          "chip_text": "medication adherence discussed",
+          "chip_text": "medication adherence confirmed",
           "order": 5,
-          "search_terms": [
-            "medication"
-          ],
-          "tags": [
-            "adherence"
-          ]
+          "search_terms": ["medication"],
+          "tags": ["adherence"]
         },
         {
           "chip_id": "cardio-lipid-followup-symptoms-6",
-          "chip_text": "side effects reviewed if relevant",
+          "chip_text": "lifestyle reviewed",
           "order": 6,
-          "search_terms": [
-            "side"
-          ],
-          "tags": [
-            "effects"
-          ]
+          "search_terms": ["lifestyle"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-symptoms-7",
+          "chip_text": "cardiovascular risk context documented",
+          "order": 7,
+          "search_terms": ["cardiovascular"],
+          "tags": ["risk"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-symptoms-8",
+          "chip_text": "family history of premature CVD",
+          "order": 8,
+          "search_terms": ["family"],
+          "tags": ["history"]
         }
       ],
       "relevant_negatives": [
         {
           "chip_id": "cardio-lipid-followup-relevant_negatives-1",
-          "chip_text": "no chest pain reported",
+          "chip_text": "no muscle pain",
           "order": 1,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "chest"
-          ]
+          "search_terms": ["no"],
+          "tags": ["muscle"]
         },
         {
           "chip_id": "cardio-lipid-followup-relevant_negatives-2",
-          "chip_text": "no medication side effects reported",
+          "chip_text": "no weakness",
           "order": 2,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "medication"
-          ]
+          "search_terms": ["no"],
+          "tags": ["weakness"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-relevant_negatives-3",
+          "chip_text": "no dark urine",
+          "order": 3,
+          "search_terms": ["no"],
+          "tags": ["dark"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-relevant_negatives-4",
+          "chip_text": "no chest pain",
+          "order": 4,
+          "search_terms": ["no"],
+          "tags": ["chest"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-relevant_negatives-5",
+          "chip_text": "no new symptoms",
+          "order": 5,
+          "search_terms": ["no"],
+          "tags": ["new"]
         }
       ],
       "exam_findings": [
         {
           "chip_id": "cardio-lipid-followup-exam_findings-1",
-          "chip_text": "vital signs documented if measured",
+          "chip_text": "BP documented",
           "order": 1,
-          "search_terms": [
-            "vital"
-          ],
-          "tags": [
-            "signs"
-          ]
+          "search_terms": ["BP"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-exam_findings-2",
+          "chip_text": "BMI documented",
+          "order": 2,
+          "search_terms": ["BMI"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-exam_findings-3",
+          "chip_text": "weight documented",
+          "order": 3,
+          "search_terms": ["weight"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-exam_findings-4",
+          "chip_text": "xanthelasma absent",
+          "order": 4,
+          "search_terms": ["xanthelasma"],
+          "tags": ["absent"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-exam_findings-5",
+          "chip_text": "tendon xanthomata absent",
+          "order": 5,
+          "search_terms": ["tendon"],
+          "tags": ["xanthomata"]
         }
       ],
-      "red_flags": [],
       "investigations": [
         {
           "chip_id": "cardio-lipid-followup-investigations-1",
-          "chip_text": "liver function reviewed if ordered",
+          "chip_text": "total cholesterol documented",
           "order": 1,
-          "search_terms": [
-            "liver"
-          ],
-          "tags": [
-            "function"
-          ]
+          "search_terms": ["total"],
+          "tags": ["cholesterol"]
         },
         {
           "chip_id": "cardio-lipid-followup-investigations-2",
-          "chip_text": "HbA1c or glucose reviewed if ordered",
+          "chip_text": "LDL documented",
           "order": 2,
-          "search_terms": [
-            "HbA1c"
-          ],
-          "tags": [
-            "or"
-          ]
+          "search_terms": ["LDL"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-investigations-3",
+          "chip_text": "HDL documented",
+          "order": 3,
+          "search_terms": ["HDL"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-investigations-4",
+          "chip_text": "triglycerides documented",
+          "order": 4,
+          "search_terms": ["triglycerides"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-investigations-5",
+          "chip_text": "non-HDL cholesterol documented",
+          "order": 5,
+          "search_terms": ["non-HDL"],
+          "tags": ["cholesterol"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-investigations-6",
+          "chip_text": "LFTs reviewed",
+          "order": 6,
+          "search_terms": ["LFTs"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-investigations-7",
+          "chip_text": "CK reviewed if muscle symptoms",
+          "order": 7,
+          "search_terms": ["CK"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-investigations-8",
+          "chip_text": "HbA1c reviewed",
+          "order": 8,
+          "search_terms": ["HbA1c"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-investigations-9",
+          "chip_text": "eGFR documented",
+          "order": 9,
+          "search_terms": ["eGFR"],
+          "tags": ["documented"]
         }
       ],
       "plan_phrases": [
         {
           "chip_id": "cardio-lipid-followup-plan_phrases-1",
-          "chip_text": "lifestyle advice documented if discussed",
+          "chip_text": "statin continued",
           "order": 1,
-          "search_terms": [
-            "lifestyle"
-          ],
-          "tags": [
-            "advice"
-          ]
+          "search_terms": ["statin"],
+          "tags": ["continued"]
         },
         {
           "chip_id": "cardio-lipid-followup-plan_phrases-2",
-          "chip_text": "medication review documented if clinician decided",
+          "chip_text": "statin dose increased",
           "order": 2,
-          "search_terms": [
-            "medication"
-          ],
-          "tags": [
-            "review"
-          ]
+          "search_terms": ["statin"],
+          "tags": ["dose"]
         },
         {
           "chip_id": "cardio-lipid-followup-plan_phrases-3",
-          "chip_text": "follow-up documented if arranged",
+          "chip_text": "statin switched due to side effects",
           "order": 3,
-          "search_terms": [
-            "follow-up"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["statin"],
+          "tags": ["switched"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-plan_phrases-4",
+          "chip_text": "ezetimibe added",
+          "order": 4,
+          "search_terms": ["ezetimibe"],
+          "tags": ["added"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-plan_phrases-5",
+          "chip_text": "PCSK9i discussed if refractory",
+          "order": 5,
+          "search_terms": ["PCSK9i"],
+          "tags": ["discussed"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-plan_phrases-6",
+          "chip_text": "lifestyle advice: diet",
+          "order": 6,
+          "search_terms": ["lifestyle"],
+          "tags": ["advice:"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-plan_phrases-7",
+          "chip_text": "lifestyle advice: exercise",
+          "order": 7,
+          "search_terms": ["lifestyle"],
+          "tags": ["advice:"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-plan_phrases-8",
+          "chip_text": "QRISK score documented",
+          "order": 8,
+          "search_terms": ["QRISK"],
+          "tags": ["score"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-plan_phrases-9",
+          "chip_text": "target LDL discussed",
+          "order": 9,
+          "search_terms": ["target"],
+          "tags": ["LDL"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-plan_phrases-10",
+          "chip_text": "medication review documented",
+          "order": 10,
+          "search_terms": ["medication"],
+          "tags": ["review"]
         }
       ],
-      "follow_up": []
-    },
+      "follow_up": [
+        {
+          "chip_id": "cardio-lipid-followup-follow_up-1",
+          "chip_text": "repeat lipids in 3 months",
+          "order": 1,
+          "search_terms": ["repeat"],
+          "tags": ["lipids"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-follow_up-2",
+          "chip_text": "follow-up in 3 months",
+          "order": 2,
+          "search_terms": ["follow-up"],
+          "tags": ["in"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-follow_up-3",
+          "chip_text": "annual cardiovascular review",
+          "order": 3,
+          "search_terms": ["annual"],
+          "tags": ["cardiovascular"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-follow_up-4",
+          "chip_text": "return if muscle pain or weakness",
+          "order": 4,
+          "search_terms": ["return"],
+          "tags": ["if"]
+        },
+        {
+          "chip_id": "cardio-lipid-followup-follow_up-5",
+          "chip_text": "dietitian referral if appropriate",
+          "order": 5,
+          "search_terms": ["dietitian"],
+          "tags": ["referral"]
+        }
+      ]
     "cardio-murmur-documentation": {
       "symptoms": [
         {
           "chip_id": "cardio-murmur-documentation-symptoms-1",
-          "chip_text": "murmur documentation",
+          "chip_text": "murmur incidental finding",
           "order": 1,
-          "search_terms": [
-            "murmur"
-          ],
-          "tags": [
-            "documentation"
-          ]
+          "search_terms": ["murmur"],
+          "tags": ["incidental"]
         },
         {
           "chip_id": "cardio-murmur-documentation-symptoms-2",
-          "chip_text": "incidental murmur context",
+          "chip_text": "murmur known — follow-up",
           "order": 2,
-          "search_terms": [
-            "incidental"
-          ],
-          "tags": [
-            "murmur"
-          ]
+          "search_terms": ["murmur"],
+          "tags": ["known"]
         },
         {
           "chip_id": "cardio-murmur-documentation-symptoms-3",
-          "chip_text": "symptoms reviewed",
+          "chip_text": "asymptomatic",
           "order": 3,
-          "search_terms": [
-            "symptoms"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["asymptomatic"],
+          "tags": ["asymptomatic"]
         },
         {
           "chip_id": "cardio-murmur-documentation-symptoms-4",
-          "chip_text": "exertional symptoms reviewed",
+          "chip_text": "exertional dyspnea",
           "order": 4,
-          "search_terms": [
-            "exertional"
-          ],
-          "tags": [
-            "symptoms"
-          ]
+          "search_terms": ["exertional"],
+          "tags": ["dyspnea"]
         },
         {
           "chip_id": "cardio-murmur-documentation-symptoms-5",
-          "chip_text": "syncope reviewed",
+          "chip_text": "exertional chest pain",
           "order": 5,
-          "search_terms": [
-            "syncope"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["exertional"],
+          "tags": ["chest"]
         },
         {
           "chip_id": "cardio-murmur-documentation-symptoms-6",
-          "chip_text": "family history reviewed if relevant",
+          "chip_text": "syncope or presyncope",
           "order": 6,
-          "search_terms": [
-            "family"
-          ],
-          "tags": [
-            "history"
-          ]
+          "search_terms": ["syncope"],
+          "tags": ["or"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-symptoms-7",
+          "chip_text": "palpitations",
+          "order": 7,
+          "search_terms": ["palpitations"],
+          "tags": ["palpitations"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-symptoms-8",
+          "chip_text": "reduced exercise tolerance",
+          "order": 8,
+          "search_terms": ["reduced"],
+          "tags": ["exercise"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-symptoms-9",
+          "chip_text": "family history of valve disease",
+          "order": 9,
+          "search_terms": ["family"],
+          "tags": ["history"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-symptoms-10",
+          "chip_text": "history of rheumatic fever",
+          "order": 10,
+          "search_terms": ["history"],
+          "tags": ["of"]
         }
       ],
-      "relevant_negatives": [],
+      "relevant_negatives": [
+        {
+          "chip_id": "cardio-murmur-documentation-relevant_negatives-1",
+          "chip_text": "no exertional symptoms",
+          "order": 1,
+          "search_terms": ["no"],
+          "tags": ["exertional"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-relevant_negatives-2",
+          "chip_text": "no syncope",
+          "order": 2,
+          "search_terms": ["no"],
+          "tags": ["syncope"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-relevant_negatives-3",
+          "chip_text": "no chest pain",
+          "order": 3,
+          "search_terms": ["no"],
+          "tags": ["chest"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-relevant_negatives-4",
+          "chip_text": "no palpitations",
+          "order": 4,
+          "search_terms": ["no"],
+          "tags": ["palpitations"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-relevant_negatives-5",
+          "chip_text": "no orthopnea",
+          "order": 5,
+          "search_terms": ["no"],
+          "tags": ["orthopnea"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-relevant_negatives-6",
+          "chip_text": "no peripheral edema",
+          "order": 6,
+          "search_terms": ["no"],
+          "tags": ["peripheral"]
+        }
+      ],
       "exam_findings": [
         {
           "chip_id": "cardio-murmur-documentation-exam_findings-1",
-          "chip_text": "vital signs documented if measured",
+          "chip_text": "systolic murmur",
           "order": 1,
-          "search_terms": [
-            "vital"
-          ],
-          "tags": [
-            "signs"
-          ]
+          "search_terms": ["systolic"],
+          "tags": ["murmur"]
         },
         {
           "chip_id": "cardio-murmur-documentation-exam_findings-2",
-          "chip_text": "cardiac auscultation documented if assessed",
+          "chip_text": "diastolic murmur",
           "order": 2,
-          "search_terms": [
-            "cardiac"
-          ],
-          "tags": [
-            "auscultation"
-          ]
+          "search_terms": ["diastolic"],
+          "tags": ["murmur"]
         },
         {
           "chip_id": "cardio-murmur-documentation-exam_findings-3",
-          "chip_text": "murmur timing documented if assessed",
+          "chip_text": "pansystolic murmur",
           "order": 3,
-          "search_terms": [
-            "murmur"
-          ],
-          "tags": [
-            "timing"
-          ]
+          "search_terms": ["pansystolic"],
+          "tags": ["murmur"]
         },
         {
           "chip_id": "cardio-murmur-documentation-exam_findings-4",
-          "chip_text": "murmur location or radiation documented if assessed",
+          "chip_text": "ejection systolic murmur",
           "order": 4,
-          "search_terms": [
-            "murmur"
-          ],
-          "tags": [
-            "location"
-          ]
+          "search_terms": ["ejection"],
+          "tags": ["systolic"]
         },
         {
           "chip_id": "cardio-murmur-documentation-exam_findings-5",
-          "chip_text": "peripheral signs documented if assessed",
+          "chip_text": "murmur grade documented",
           "order": 5,
-          "search_terms": [
-            "peripheral"
-          ],
-          "tags": [
-            "signs"
-          ]
+          "search_terms": ["murmur"],
+          "tags": ["grade"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-6",
+          "chip_text": "loudest at apex",
+          "order": 6,
+          "search_terms": ["loudest"],
+          "tags": ["at"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-7",
+          "chip_text": "loudest at aortic area",
+          "order": 7,
+          "search_terms": ["loudest"],
+          "tags": ["at"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-8",
+          "chip_text": "loudest at LLSE",
+          "order": 8,
+          "search_terms": ["loudest"],
+          "tags": ["at"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-9",
+          "chip_text": "radiation to carotids",
+          "order": 9,
+          "search_terms": ["radiation"],
+          "tags": ["to"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-10",
+          "chip_text": "radiation to axilla",
+          "order": 10,
+          "search_terms": ["radiation"],
+          "tags": ["to"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-11",
+          "chip_text": "no radiation",
+          "order": 11,
+          "search_terms": ["no"],
+          "tags": ["radiation"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-12",
+          "chip_text": "S1 S2 normal",
+          "order": 12,
+          "search_terms": ["S1"],
+          "tags": ["S2"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-13",
+          "chip_text": "S3 present",
+          "order": 13,
+          "search_terms": ["S3"],
+          "tags": ["present"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-14",
+          "chip_text": "S4 present",
+          "order": 14,
+          "search_terms": ["S4"],
+          "tags": ["present"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-15",
+          "chip_text": "thrill palpable",
+          "order": 15,
+          "search_terms": ["thrill"],
+          "tags": ["palpable"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-16",
+          "chip_text": "no thrill",
+          "order": 16,
+          "search_terms": ["no"],
+          "tags": ["thrill"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-17",
+          "chip_text": "JVP normal",
+          "order": 17,
+          "search_terms": ["JVP"],
+          "tags": ["normal"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-exam_findings-18",
+          "chip_text": "peripheral edema absent",
+          "order": 18,
+          "search_terms": ["peripheral"],
+          "tags": ["edema"]
         }
       ],
-      "red_flags": [],
       "investigations": [
         {
           "chip_id": "cardio-murmur-documentation-investigations-1",
-          "chip_text": "ECG reviewed if performed",
+          "chip_text": "ECG reviewed",
           "order": 1,
-          "search_terms": [
-            "ECG"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["ECG"],
+          "tags": ["reviewed"]
         },
         {
           "chip_id": "cardio-murmur-documentation-investigations-2",
-          "chip_text": "echo report reviewed if available",
+          "chip_text": "echo: normal valves",
           "order": 2,
-          "search_terms": [
-            "echo"
-          ],
-          "tags": [
-            "report"
-          ]
+          "search_terms": ["echo:"],
+          "tags": ["normal"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-investigations-3",
+          "chip_text": "echo: AS mild/mod/severe",
+          "order": 3,
+          "search_terms": ["echo:"],
+          "tags": ["AS"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-investigations-4",
+          "chip_text": "echo: MR mild/mod/severe",
+          "order": 4,
+          "search_terms": ["echo:"],
+          "tags": ["MR"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-investigations-5",
+          "chip_text": "echo: TR mild/mod/severe",
+          "order": 5,
+          "search_terms": ["echo:"],
+          "tags": ["TR"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-investigations-6",
+          "chip_text": "echo: normal LV function",
+          "order": 6,
+          "search_terms": ["echo:"],
+          "tags": ["normal"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-investigations-7",
+          "chip_text": "echo: LV impairment",
+          "order": 7,
+          "search_terms": ["echo:"],
+          "tags": ["LV"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-investigations-8",
+          "chip_text": "CXR reviewed",
+          "order": 8,
+          "search_terms": ["CXR"],
+          "tags": ["reviewed"]
         }
       ],
       "plan_phrases": [
         {
           "chip_id": "cardio-murmur-documentation-plan_phrases-1",
-          "chip_text": "referral documented if clinician decided",
+          "chip_text": "benign flow murmur — reassure",
           "order": 1,
-          "search_terms": [
-            "referral"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["benign"],
+          "tags": ["flow"]
         },
         {
           "chip_id": "cardio-murmur-documentation-plan_phrases-2",
-          "chip_text": "follow-up documented if arranged",
+          "chip_text": "echo referral arranged",
           "order": 2,
-          "search_terms": [
-            "follow-up"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["echo"],
+          "tags": ["referral"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-plan_phrases-3",
+          "chip_text": "cardiology referral arranged",
+          "order": 3,
+          "search_terms": ["cardiology"],
+          "tags": ["referral"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-plan_phrases-4",
+          "chip_text": "valve surveillance follow-up",
+          "order": 4,
+          "search_terms": ["valve"],
+          "tags": ["surveillance"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-plan_phrases-5",
+          "chip_text": "endocarditis prophylaxis discussed if indicated",
+          "order": 5,
+          "search_terms": ["endocarditis"],
+          "tags": ["prophylaxis"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-plan_phrases-6",
+          "chip_text": "activity advice documented",
+          "order": 6,
+          "search_terms": ["activity"],
+          "tags": ["advice"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-plan_phrases-7",
+          "chip_text": "follow-up arranged",
+          "order": 7,
+          "search_terms": ["follow-up"],
+          "tags": ["arranged"]
         }
       ],
-      "follow_up": []
-    },
+      "follow_up": [
+        {
+          "chip_id": "cardio-murmur-documentation-follow_up-1",
+          "chip_text": "echo follow-up in 6 months",
+          "order": 1,
+          "search_terms": ["echo"],
+          "tags": ["follow-up"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-follow_up-2",
+          "chip_text": "echo follow-up in 12 months",
+          "order": 2,
+          "search_terms": ["echo"],
+          "tags": ["follow-up"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-follow_up-3",
+          "chip_text": "cardiology OPD follow-up",
+          "order": 3,
+          "search_terms": ["cardiology"],
+          "tags": ["OPD"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-follow_up-4",
+          "chip_text": "return if new symptoms",
+          "order": 4,
+          "search_terms": ["return"],
+          "tags": ["if"]
+        },
+        {
+          "chip_id": "cardio-murmur-documentation-follow_up-5",
+          "chip_text": "annual review",
+          "order": 5,
+          "search_terms": ["annual"],
+          "tags": ["review"]
+        }
+      ]
     "cardio-palpitations": {
       "symptoms": [
         {
           "chip_id": "cardio-palpitations-symptoms-1",
-          "chip_text": "palpitations",
+          "chip_text": "palpitations intermittent",
           "order": 1,
-          "search_terms": [
-            "palpitations"
-          ],
-          "tags": [
-            "cardiology"
-          ]
+          "search_terms": ["palpitations"],
+          "tags": ["intermittent"]
         },
         {
           "chip_id": "cardio-palpitations-symptoms-2",
-          "chip_text": "onset or duration documented",
+          "chip_text": "palpitations sustained",
           "order": 2,
-          "search_terms": [
-            "onset"
-          ],
-          "tags": [
-            "or"
-          ]
+          "search_terms": ["palpitations"],
+          "tags": ["sustained"]
         },
         {
           "chip_id": "cardio-palpitations-symptoms-3",
-          "chip_text": "regularity reviewed",
+          "chip_text": "regular rhythm felt",
           "order": 3,
-          "search_terms": [
-            "regularity"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["regular"],
+          "tags": ["rhythm"]
         },
         {
           "chip_id": "cardio-palpitations-symptoms-4",
-          "chip_text": "triggers reviewed",
+          "chip_text": "irregular rhythm felt",
           "order": 4,
-          "search_terms": [
-            "triggers"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["irregular"],
+          "tags": ["rhythm"]
         },
         {
           "chip_id": "cardio-palpitations-symptoms-5",
-          "chip_text": "chest pain or SOB or syncope reviewed",
+          "chip_text": "onset sudden",
           "order": 5,
-          "search_terms": [
-            "chest"
-          ],
-          "tags": [
-            "pain"
-          ]
+          "search_terms": ["onset"],
+          "tags": ["sudden"]
         },
         {
           "chip_id": "cardio-palpitations-symptoms-6",
-          "chip_text": "caffeine or stimulant history reviewed",
+          "chip_text": "onset gradual",
           "order": 6,
-          "search_terms": [
-            "caffeine"
-          ],
-          "tags": [
-            "or"
-          ]
+          "search_terms": ["onset"],
+          "tags": ["gradual"]
+        },
+        {
+          "chip_id": "cardio-palpitations-symptoms-7",
+          "chip_text": "duration seconds",
+          "order": 7,
+          "search_terms": ["duration"],
+          "tags": ["seconds"]
+        },
+        {
+          "chip_id": "cardio-palpitations-symptoms-8",
+          "chip_text": "duration minutes",
+          "order": 8,
+          "search_terms": ["duration"],
+          "tags": ["minutes"]
+        },
+        {
+          "chip_id": "cardio-palpitations-symptoms-9",
+          "chip_text": "duration hours",
+          "order": 9,
+          "search_terms": ["duration"],
+          "tags": ["hours"]
+        },
+        {
+          "chip_id": "cardio-palpitations-symptoms-10",
+          "chip_text": "triggered by caffeine",
+          "order": 10,
+          "search_terms": ["triggered"],
+          "tags": ["by"]
+        },
+        {
+          "chip_id": "cardio-palpitations-symptoms-11",
+          "chip_text": "triggered by exercise",
+          "order": 11,
+          "search_terms": ["triggered"],
+          "tags": ["by"]
+        },
+        {
+          "chip_id": "cardio-palpitations-symptoms-12",
+          "chip_text": "triggered by stress",
+          "order": 12,
+          "search_terms": ["triggered"],
+          "tags": ["by"]
+        },
+        {
+          "chip_id": "cardio-palpitations-symptoms-13",
+          "chip_text": "associated chest pain",
+          "order": 13,
+          "search_terms": ["associated"],
+          "tags": ["chest"]
+        },
+        {
+          "chip_id": "cardio-palpitations-symptoms-14",
+          "chip_text": "associated SOB",
+          "order": 14,
+          "search_terms": ["associated"],
+          "tags": ["SOB"]
+        },
+        {
+          "chip_id": "cardio-palpitations-symptoms-15",
+          "chip_text": "associated dizziness",
+          "order": 15,
+          "search_terms": ["associated"],
+          "tags": ["dizziness"]
+        },
+        {
+          "chip_id": "cardio-palpitations-symptoms-16",
+          "chip_text": "associated syncope",
+          "order": 16,
+          "search_terms": ["associated"],
+          "tags": ["syncope"]
+        },
+        {
+          "chip_id": "cardio-palpitations-symptoms-17",
+          "chip_text": "no associated symptoms",
+          "order": 17,
+          "search_terms": ["no"],
+          "tags": ["associated"]
         }
       ],
       "relevant_negatives": [
         {
           "chip_id": "cardio-palpitations-relevant_negatives-1",
-          "chip_text": "no syncope reported",
+          "chip_text": "no syncope",
           "order": 1,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "syncope"
-          ]
+          "search_terms": ["no"],
+          "tags": ["syncope"]
         },
         {
           "chip_id": "cardio-palpitations-relevant_negatives-2",
-          "chip_text": "no chest pain reported",
+          "chip_text": "no chest pain",
           "order": 2,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "chest"
-          ]
+          "search_terms": ["no"],
+          "tags": ["chest"]
+        },
+        {
+          "chip_id": "cardio-palpitations-relevant_negatives-3",
+          "chip_text": "no SOB",
+          "order": 3,
+          "search_terms": ["no"],
+          "tags": ["SOB"]
+        },
+        {
+          "chip_id": "cardio-palpitations-relevant_negatives-4",
+          "chip_text": "no presyncope",
+          "order": 4,
+          "search_terms": ["no"],
+          "tags": ["presyncope"]
+        },
+        {
+          "chip_id": "cardio-palpitations-relevant_negatives-5",
+          "chip_text": "no hemodynamic compromise",
+          "order": 5,
+          "search_terms": ["no"],
+          "tags": ["hemodynamic"]
+        },
+        {
+          "chip_id": "cardio-palpitations-relevant_negatives-6",
+          "chip_text": "no thyroid symptoms",
+          "order": 6,
+          "search_terms": ["no"],
+          "tags": ["thyroid"]
+        },
+        {
+          "chip_id": "cardio-palpitations-relevant_negatives-7",
+          "chip_text": "no stimulant use",
+          "order": 7,
+          "search_terms": ["no"],
+          "tags": ["stimulant"]
         }
       ],
       "exam_findings": [
         {
           "chip_id": "cardio-palpitations-exam_findings-1",
-          "chip_text": "vital signs documented if measured",
+          "chip_text": "HR documented",
           "order": 1,
-          "search_terms": [
-            "vital"
-          ],
-          "tags": [
-            "signs"
-          ]
+          "search_terms": ["HR"],
+          "tags": ["documented"]
         },
         {
           "chip_id": "cardio-palpitations-exam_findings-2",
-          "chip_text": "pulse or rhythm documented if assessed",
+          "chip_text": "rhythm regular",
           "order": 2,
-          "search_terms": [
-            "pulse"
-          ],
-          "tags": [
-            "or"
-          ]
+          "search_terms": ["rhythm"],
+          "tags": ["regular"]
+        },
+        {
+          "chip_id": "cardio-palpitations-exam_findings-3",
+          "chip_text": "rhythm irregular",
+          "order": 3,
+          "search_terms": ["rhythm"],
+          "tags": ["irregular"]
+        },
+        {
+          "chip_id": "cardio-palpitations-exam_findings-4",
+          "chip_text": "BP documented",
+          "order": 4,
+          "search_terms": ["BP"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-palpitations-exam_findings-5",
+          "chip_text": "thyroid not enlarged",
+          "order": 5,
+          "search_terms": ["thyroid"],
+          "tags": ["not"]
+        },
+        {
+          "chip_id": "cardio-palpitations-exam_findings-6",
+          "chip_text": "cardiovascular exam normal",
+          "order": 6,
+          "search_terms": ["cardiovascular"],
+          "tags": ["exam"]
+        },
+        {
+          "chip_id": "cardio-palpitations-exam_findings-7",
+          "chip_text": "no signs of heart failure",
+          "order": 7,
+          "search_terms": ["no"],
+          "tags": ["signs"]
         }
       ],
-      "red_flags": [],
+      "red_flags": [
+        {
+          "chip_id": "cardio-palpitations-red_flags-1",
+          "chip_text": "syncope with palpitations",
+          "order": 1,
+          "search_terms": ["syncope"],
+          "tags": ["with"]
+        },
+        {
+          "chip_id": "cardio-palpitations-red_flags-2",
+          "chip_text": "hemodynamic instability",
+          "order": 2,
+          "search_terms": ["hemodynamic"],
+          "tags": ["instability"]
+        },
+        {
+          "chip_id": "cardio-palpitations-red_flags-3",
+          "chip_text": "sustained wide-complex tachycardia",
+          "order": 3,
+          "search_terms": ["sustained"],
+          "tags": ["wide-complex"]
+        },
+        {
+          "chip_id": "cardio-palpitations-red_flags-4",
+          "chip_text": "family history of SCD",
+          "order": 4,
+          "search_terms": ["family"],
+          "tags": ["history"]
+        },
+        {
+          "chip_id": "cardio-palpitations-red_flags-5",
+          "chip_text": "structural heart disease known",
+          "order": 5,
+          "search_terms": ["structural"],
+          "tags": ["heart"]
+        },
+        {
+          "chip_id": "cardio-palpitations-red_flags-6",
+          "chip_text": "palpitations with exertion only",
+          "order": 6,
+          "search_terms": ["palpitations"],
+          "tags": ["with"]
+        }
+      ],
       "investigations": [
         {
           "chip_id": "cardio-palpitations-investigations-1",
-          "chip_text": "ECG reviewed if performed",
+          "chip_text": "ECG: NSR",
           "order": 1,
-          "search_terms": [
-            "ECG"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["ECG:"],
+          "tags": ["NSR"]
         },
         {
           "chip_id": "cardio-palpitations-investigations-2",
-          "chip_text": "thyroid function or electrolytes reviewed if ordered",
+          "chip_text": "ECG: AF",
           "order": 2,
-          "search_terms": [
-            "thyroid"
-          ],
-          "tags": [
-            "function"
-          ]
+          "search_terms": ["ECG:"],
+          "tags": ["AF"]
+        },
+        {
+          "chip_id": "cardio-palpitations-investigations-3",
+          "chip_text": "ECG: SVT",
+          "order": 3,
+          "search_terms": ["ECG:"],
+          "tags": ["SVT"]
+        },
+        {
+          "chip_id": "cardio-palpitations-investigations-4",
+          "chip_text": "ECG: ectopics",
+          "order": 4,
+          "search_terms": ["ECG:"],
+          "tags": ["ectopics"]
+        },
+        {
+          "chip_id": "cardio-palpitations-investigations-5",
+          "chip_text": "ECG: pre-excitation (WPW)",
+          "order": 5,
+          "search_terms": ["ECG:"],
+          "tags": ["pre-excitation"]
+        },
+        {
+          "chip_id": "cardio-palpitations-investigations-6",
+          "chip_text": "ECG: prolonged QTc",
+          "order": 6,
+          "search_terms": ["ECG:"],
+          "tags": ["prolonged"]
+        },
+        {
+          "chip_id": "cardio-palpitations-investigations-7",
+          "chip_text": "Holter arranged",
+          "order": 7,
+          "search_terms": ["Holter"],
+          "tags": ["arranged"]
+        },
+        {
+          "chip_id": "cardio-palpitations-investigations-8",
+          "chip_text": "event recorder arranged",
+          "order": 8,
+          "search_terms": ["event"],
+          "tags": ["recorder"]
+        },
+        {
+          "chip_id": "cardio-palpitations-investigations-9",
+          "chip_text": "TFTs reviewed",
+          "order": 9,
+          "search_terms": ["TFTs"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-palpitations-investigations-10",
+          "chip_text": "electrolytes reviewed",
+          "order": 10,
+          "search_terms": ["electrolytes"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-palpitations-investigations-11",
+          "chip_text": "echo reviewed",
+          "order": 11,
+          "search_terms": ["echo"],
+          "tags": ["reviewed"]
         }
       ],
       "plan_phrases": [
         {
           "chip_id": "cardio-palpitations-plan_phrases-1",
-          "chip_text": "follow-up documented if arranged",
+          "chip_text": "reassurance — benign ectopics",
           "order": 1,
-          "search_terms": [
-            "follow-up"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["reassurance"],
+          "tags": ["—"]
         },
         {
           "chip_id": "cardio-palpitations-plan_phrases-2",
-          "chip_text": "monitoring or referral documented if clinician decided",
+          "chip_text": "caffeine reduction advised",
           "order": 2,
-          "search_terms": [
-            "monitoring"
-          ],
-          "tags": [
-            "or"
-          ]
+          "search_terms": ["caffeine"],
+          "tags": ["reduction"]
+        },
+        {
+          "chip_id": "cardio-palpitations-plan_phrases-3",
+          "chip_text": "Holter monitoring arranged",
+          "order": 3,
+          "search_terms": ["Holter"],
+          "tags": ["monitoring"]
+        },
+        {
+          "chip_id": "cardio-palpitations-plan_phrases-4",
+          "chip_text": "cardiology referral arranged",
+          "order": 4,
+          "search_terms": ["cardiology"],
+          "tags": ["referral"]
+        },
+        {
+          "chip_id": "cardio-palpitations-plan_phrases-5",
+          "chip_text": "rate control discussed",
+          "order": 5,
+          "search_terms": ["rate"],
+          "tags": ["control"]
+        },
+        {
+          "chip_id": "cardio-palpitations-plan_phrases-6",
+          "chip_text": "rhythm control discussed",
+          "order": 6,
+          "search_terms": ["rhythm"],
+          "tags": ["control"]
+        },
+        {
+          "chip_id": "cardio-palpitations-plan_phrases-7",
+          "chip_text": "anticoagulation discussed if AF",
+          "order": 7,
+          "search_terms": ["anticoagulation"],
+          "tags": ["discussed"]
+        },
+        {
+          "chip_id": "cardio-palpitations-plan_phrases-8",
+          "chip_text": "medication review documented",
+          "order": 8,
+          "search_terms": ["medication"],
+          "tags": ["review"]
+        },
+        {
+          "chip_id": "cardio-palpitations-plan_phrases-9",
+          "chip_text": "follow-up arranged",
+          "order": 9,
+          "search_terms": ["follow-up"],
+          "tags": ["arranged"]
         }
       ],
-      "follow_up": []
-    },
+      "follow_up": [
+        {
+          "chip_id": "cardio-palpitations-follow_up-1",
+          "chip_text": "follow-up after Holter results",
+          "order": 1,
+          "search_terms": ["follow-up"],
+          "tags": ["after"]
+        },
+        {
+          "chip_id": "cardio-palpitations-follow_up-2",
+          "chip_text": "cardiology OPD follow-up",
+          "order": 2,
+          "search_terms": ["cardiology"],
+          "tags": ["OPD"]
+        },
+        {
+          "chip_id": "cardio-palpitations-follow_up-3",
+          "chip_text": "return if syncope or sustained palpitations",
+          "order": 3,
+          "search_terms": ["return"],
+          "tags": ["if"]
+        },
+        {
+          "chip_id": "cardio-palpitations-follow_up-4",
+          "chip_text": "return if chest pain",
+          "order": 4,
+          "search_terms": ["return"],
+          "tags": ["if"]
+        },
+        {
+          "chip_id": "cardio-palpitations-follow_up-5",
+          "chip_text": "GP follow-up in 2 weeks",
+          "order": 5,
+          "search_terms": ["GP"],
+          "tags": ["follow-up"]
+        }
+      ]
     "cardio-post-pci-followup": {
       "symptoms": [
         {
           "chip_id": "cardio-post-pci-followup-symptoms-1",
-          "chip_text": "post-PCI follow-up",
+          "chip_text": "asymptomatic post-PCI",
           "order": 1,
-          "search_terms": [
-            "post-PCI"
-          ],
-          "tags": [
-            "follow-up"
-          ]
+          "search_terms": ["asymptomatic"],
+          "tags": ["post-PCI"]
         },
         {
           "chip_id": "cardio-post-pci-followup-symptoms-2",
-          "chip_text": "chest pain symptoms reviewed",
+          "chip_text": "chest pain recurrence",
           "order": 2,
-          "search_terms": [
-            "chest"
-          ],
-          "tags": [
-            "pain"
-          ]
+          "search_terms": ["chest"],
+          "tags": ["pain"]
         },
         {
           "chip_id": "cardio-post-pci-followup-symptoms-3",
-          "chip_text": "dyspnea reviewed",
+          "chip_text": "exertional chest pain",
           "order": 3,
-          "search_terms": [
-            "dyspnea"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["exertional"],
+          "tags": ["chest"]
         },
         {
           "chip_id": "cardio-post-pci-followup-symptoms-4",
-          "chip_text": "medication adherence discussed",
+          "chip_text": "dyspnea on exertion",
           "order": 4,
-          "search_terms": [
-            "medication"
-          ],
-          "tags": [
-            "adherence"
-          ]
+          "search_terms": ["dyspnea"],
+          "tags": ["on"]
         },
         {
           "chip_id": "cardio-post-pci-followup-symptoms-5",
-          "chip_text": "bleeding symptoms reviewed if relevant",
+          "chip_text": "exercise tolerance improved",
           "order": 5,
-          "search_terms": [
-            "bleeding"
-          ],
-          "tags": [
-            "symptoms"
-          ]
+          "search_terms": ["exercise"],
+          "tags": ["tolerance"]
         },
         {
           "chip_id": "cardio-post-pci-followup-symptoms-6",
-          "chip_text": "exercise tolerance reviewed",
+          "chip_text": "exercise tolerance unchanged",
           "order": 6,
-          "search_terms": [
-            "exercise"
-          ],
-          "tags": [
-            "tolerance"
-          ]
+          "search_terms": ["exercise"],
+          "tags": ["tolerance"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-symptoms-7",
+          "chip_text": "access site pain",
+          "order": 7,
+          "search_terms": ["access"],
+          "tags": ["site"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-symptoms-8",
+          "chip_text": "access site bruising",
+          "order": 8,
+          "search_terms": ["access"],
+          "tags": ["site"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-symptoms-9",
+          "chip_text": "medication adherence confirmed",
+          "order": 9,
+          "search_terms": ["medication"],
+          "tags": ["adherence"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-symptoms-10",
+          "chip_text": "DAPT adherence confirmed",
+          "order": 10,
+          "search_terms": ["DAPT"],
+          "tags": ["adherence"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-symptoms-11",
+          "chip_text": "bleeding symptoms reviewed",
+          "order": 11,
+          "search_terms": ["bleeding"],
+          "tags": ["symptoms"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-symptoms-12",
+          "chip_text": "no bleeding symptoms",
+          "order": 12,
+          "search_terms": ["no"],
+          "tags": ["bleeding"]
         }
       ],
       "relevant_negatives": [
         {
           "chip_id": "cardio-post-pci-followup-relevant_negatives-1",
-          "chip_text": "no chest pain reported",
+          "chip_text": "no chest pain",
           "order": 1,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "chest"
-          ]
+          "search_terms": ["no"],
+          "tags": ["chest"]
         },
         {
           "chip_id": "cardio-post-pci-followup-relevant_negatives-2",
-          "chip_text": "no shortness of breath reported",
+          "chip_text": "no SOB",
           "order": 2,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "shortness"
-          ]
+          "search_terms": ["no"],
+          "tags": ["SOB"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-relevant_negatives-3",
+          "chip_text": "no access site complications",
+          "order": 3,
+          "search_terms": ["no"],
+          "tags": ["access"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-relevant_negatives-4",
+          "chip_text": "no bleeding",
+          "order": 4,
+          "search_terms": ["no"],
+          "tags": ["bleeding"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-relevant_negatives-5",
+          "chip_text": "no bruising",
+          "order": 5,
+          "search_terms": ["no"],
+          "tags": ["bruising"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-relevant_negatives-6",
+          "chip_text": "no palpitations",
+          "order": 6,
+          "search_terms": ["no"],
+          "tags": ["palpitations"]
         }
       ],
       "exam_findings": [
         {
           "chip_id": "cardio-post-pci-followup-exam_findings-1",
-          "chip_text": "vital signs documented if measured",
+          "chip_text": "BP documented",
           "order": 1,
-          "search_terms": [
-            "vital"
-          ],
-          "tags": [
-            "signs"
-          ]
+          "search_terms": ["BP"],
+          "tags": ["documented"]
         },
         {
           "chip_id": "cardio-post-pci-followup-exam_findings-2",
-          "chip_text": "cardiovascular exam documented if assessed",
+          "chip_text": "HR documented",
           "order": 2,
-          "search_terms": [
-            "cardiovascular"
-          ],
-          "tags": [
-            "exam"
-          ]
+          "search_terms": ["HR"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-exam_findings-3",
+          "chip_text": "access site: healed",
+          "order": 3,
+          "search_terms": ["access"],
+          "tags": ["site:"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-exam_findings-4",
+          "chip_text": "access site: hematoma",
+          "order": 4,
+          "search_terms": ["access"],
+          "tags": ["site:"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-exam_findings-5",
+          "chip_text": "cardiovascular exam normal",
+          "order": 5,
+          "search_terms": ["cardiovascular"],
+          "tags": ["exam"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-exam_findings-6",
+          "chip_text": "no new murmur",
+          "order": 6,
+          "search_terms": ["no"],
+          "tags": ["new"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-exam_findings-7",
+          "chip_text": "peripheral pulses intact",
+          "order": 7,
+          "search_terms": ["peripheral"],
+          "tags": ["pulses"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-exam_findings-8",
+          "chip_text": "no peripheral edema",
+          "order": 8,
+          "search_terms": ["no"],
+          "tags": ["peripheral"]
         }
       ],
-      "red_flags": [],
+      "red_flags": [
+        {
+          "chip_id": "cardio-post-pci-followup-red_flags-1",
+          "chip_text": "recurrent chest pain at rest",
+          "order": 1,
+          "search_terms": ["recurrent"],
+          "tags": ["chest"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-red_flags-2",
+          "chip_text": "access site expanding hematoma",
+          "order": 2,
+          "search_terms": ["access"],
+          "tags": ["site"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-red_flags-3",
+          "chip_text": "new ST changes on ECG",
+          "order": 3,
+          "search_terms": ["new"],
+          "tags": ["ST"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-red_flags-4",
+          "chip_text": "hemodynamic instability",
+          "order": 4,
+          "search_terms": ["hemodynamic"],
+          "tags": ["instability"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-red_flags-5",
+          "chip_text": "major bleeding",
+          "order": 5,
+          "search_terms": ["major"],
+          "tags": ["bleeding"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-red_flags-6",
+          "chip_text": "stent thrombosis suspected",
+          "order": 6,
+          "search_terms": ["stent"],
+          "tags": ["thrombosis"]
+        }
+      ],
       "investigations": [
         {
           "chip_id": "cardio-post-pci-followup-investigations-1",
-          "chip_text": "ECG reviewed if performed",
+          "chip_text": "ECG reviewed",
           "order": 1,
-          "search_terms": [
-            "ECG"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["ECG"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-investigations-2",
+          "chip_text": "lipid profile reviewed",
+          "order": 2,
+          "search_terms": ["lipid"],
+          "tags": ["profile"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-investigations-3",
+          "chip_text": "HbA1c reviewed",
+          "order": 3,
+          "search_terms": ["HbA1c"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-investigations-4",
+          "chip_text": "renal function reviewed",
+          "order": 4,
+          "search_terms": ["renal"],
+          "tags": ["function"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-investigations-5",
+          "chip_text": "FBC reviewed",
+          "order": 5,
+          "search_terms": ["FBC"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-investigations-6",
+          "chip_text": "echo reviewed if ordered",
+          "order": 6,
+          "search_terms": ["echo"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-investigations-7",
+          "chip_text": "stress test reviewed if ordered",
+          "order": 7,
+          "search_terms": ["stress"],
+          "tags": ["test"]
         }
       ],
       "plan_phrases": [
         {
           "chip_id": "cardio-post-pci-followup-plan_phrases-1",
-          "chip_text": "medication review documented if clinician decided",
+          "chip_text": "DAPT continued as planned",
           "order": 1,
-          "search_terms": [
-            "medication"
-          ],
-          "tags": [
-            "review"
-          ]
+          "search_terms": ["DAPT"],
+          "tags": ["continued"]
         },
         {
           "chip_id": "cardio-post-pci-followup-plan_phrases-2",
-          "chip_text": "cardiac follow-up documented if arranged",
+          "chip_text": "DAPT duration discussed",
           "order": 2,
-          "search_terms": [
-            "cardiac"
-          ],
-          "tags": [
-            "follow-up"
-          ]
+          "search_terms": ["DAPT"],
+          "tags": ["duration"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-plan_phrases-3",
+          "chip_text": "statin high-intensity continued",
+          "order": 3,
+          "search_terms": ["statin"],
+          "tags": ["high-intensity"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-plan_phrases-4",
+          "chip_text": "ACEi/ARB continued",
+          "order": 4,
+          "search_terms": ["ACEi/ARB"],
+          "tags": ["continued"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-plan_phrases-5",
+          "chip_text": "beta-blocker continued",
+          "order": 5,
+          "search_terms": ["beta-blocker"],
+          "tags": ["continued"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-plan_phrases-6",
+          "chip_text": "cardiac rehabilitation referral",
+          "order": 6,
+          "search_terms": ["cardiac"],
+          "tags": ["rehabilitation"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-plan_phrases-7",
+          "chip_text": "lifestyle modification discussed",
+          "order": 7,
+          "search_terms": ["lifestyle"],
+          "tags": ["modification"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-plan_phrases-8",
+          "chip_text": "smoking cessation discussed",
+          "order": 8,
+          "search_terms": ["smoking"],
+          "tags": ["cessation"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-plan_phrases-9",
+          "chip_text": "target LDL <1.4 discussed",
+          "order": 9,
+          "search_terms": ["target"],
+          "tags": ["LDL"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-plan_phrases-10",
+          "chip_text": "medication review documented",
+          "order": 10,
+          "search_terms": ["medication"],
+          "tags": ["review"]
         }
       ],
-      "follow_up": []
-    },
+      "follow_up": [
+        {
+          "chip_id": "cardio-post-pci-followup-follow_up-1",
+          "chip_text": "cardiology follow-up in 4 weeks",
+          "order": 1,
+          "search_terms": ["cardiology"],
+          "tags": ["follow-up"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-follow_up-2",
+          "chip_text": "cardiology follow-up in 3 months",
+          "order": 2,
+          "search_terms": ["cardiology"],
+          "tags": ["follow-up"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-follow_up-3",
+          "chip_text": "annual cardiovascular review",
+          "order": 3,
+          "search_terms": ["annual"],
+          "tags": ["cardiovascular"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-follow_up-4",
+          "chip_text": "return if chest pain recurs",
+          "order": 4,
+          "search_terms": ["return"],
+          "tags": ["if"]
+        },
+        {
+          "chip_id": "cardio-post-pci-followup-follow_up-5",
+          "chip_text": "return if bleeding or bruising",
+          "order": 5,
+          "search_terms": ["return"],
+          "tags": ["if"]
+        }
+      ]
     "cardio-syncope": {
       "symptoms": [
         {
           "chip_id": "cardio-syncope-symptoms-1",
-          "chip_text": "syncope",
+          "chip_text": "syncope single episode",
           "order": 1,
-          "search_terms": [
-            "syncope"
-          ],
-          "tags": [
-            "cardiology"
-          ]
+          "search_terms": ["syncope"],
+          "tags": ["single"]
         },
         {
           "chip_id": "cardio-syncope-symptoms-2",
-          "chip_text": "prodrome documented",
+          "chip_text": "syncope recurrent",
           "order": 2,
-          "search_terms": [
-            "prodrome"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["syncope"],
+          "tags": ["recurrent"]
         },
         {
           "chip_id": "cardio-syncope-symptoms-3",
-          "chip_text": "position documented",
+          "chip_text": "prodrome: lightheaded",
           "order": 3,
-          "search_terms": [
-            "position"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["prodrome:"],
+          "tags": ["lightheaded"]
         },
         {
           "chip_id": "cardio-syncope-symptoms-4",
-          "chip_text": "duration of LOC documented if known",
+          "chip_text": "prodrome: nausea",
           "order": 4,
-          "search_terms": [
-            "duration"
-          ],
-          "tags": [
-            "of"
-          ]
+          "search_terms": ["prodrome:"],
+          "tags": ["nausea"]
         },
         {
           "chip_id": "cardio-syncope-symptoms-5",
-          "chip_text": "witnessed event reviewed if available",
+          "chip_text": "prodrome: visual dimming",
           "order": 5,
-          "search_terms": [
-            "witnessed"
-          ],
-          "tags": [
-            "event"
-          ]
+          "search_terms": ["prodrome:"],
+          "tags": ["visual"]
         },
         {
           "chip_id": "cardio-syncope-symptoms-6",
-          "chip_text": "palpitations or chest pain or SOB reviewed",
+          "chip_text": "prodrome: none (no warning)",
           "order": 6,
-          "search_terms": [
-            "palpitations"
-          ],
-          "tags": [
-            "or"
-          ]
+          "search_terms": ["prodrome:"],
+          "tags": ["none"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-7",
+          "chip_text": "position: standing",
+          "order": 7,
+          "search_terms": ["position:"],
+          "tags": ["standing"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-8",
+          "chip_text": "position: sitting",
+          "order": 8,
+          "search_terms": ["position:"],
+          "tags": ["sitting"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-9",
+          "chip_text": "position: supine",
+          "order": 9,
+          "search_terms": ["position:"],
+          "tags": ["supine"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-10",
+          "chip_text": "duration LOC: seconds",
+          "order": 10,
+          "search_terms": ["duration"],
+          "tags": ["LOC:"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-11",
+          "chip_text": "duration LOC: minutes",
+          "order": 11,
+          "search_terms": ["duration"],
+          "tags": ["LOC:"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-12",
+          "chip_text": "witnessed: tonic-clonic movements",
+          "order": 12,
+          "search_terms": ["witnessed:"],
+          "tags": ["tonic-clonic"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-13",
+          "chip_text": "witnessed: pallor",
+          "order": 13,
+          "search_terms": ["witnessed:"],
+          "tags": ["pallor"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-14",
+          "chip_text": "witnessed: rapid recovery",
+          "order": 14,
+          "search_terms": ["witnessed:"],
+          "tags": ["rapid"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-15",
+          "chip_text": "post-event confusion",
+          "order": 15,
+          "search_terms": ["post-event"],
+          "tags": ["confusion"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-16",
+          "chip_text": "post-event rapid orientation",
+          "order": 16,
+          "search_terms": ["post-event"],
+          "tags": ["rapid"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-17",
+          "chip_text": "triggered by prolonged standing",
+          "order": 17,
+          "search_terms": ["triggered"],
+          "tags": ["by"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-18",
+          "chip_text": "triggered by Valsalva",
+          "order": 18,
+          "search_terms": ["triggered"],
+          "tags": ["by"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-19",
+          "chip_text": "triggered by exertion",
+          "order": 19,
+          "search_terms": ["triggered"],
+          "tags": ["by"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-20",
+          "chip_text": "associated chest pain",
+          "order": 20,
+          "search_terms": ["associated"],
+          "tags": ["chest"]
+        },
+        {
+          "chip_id": "cardio-syncope-symptoms-21",
+          "chip_text": "associated palpitations",
+          "order": 21,
+          "search_terms": ["associated"],
+          "tags": ["palpitations"]
         }
       ],
       "relevant_negatives": [
         {
           "chip_id": "cardio-syncope-relevant_negatives-1",
-          "chip_text": "no chest pain reported",
+          "chip_text": "no chest pain",
           "order": 1,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "chest"
-          ]
+          "search_terms": ["no"],
+          "tags": ["chest"]
         },
         {
           "chip_id": "cardio-syncope-relevant_negatives-2",
-          "chip_text": "no focal neurological symptoms reported",
+          "chip_text": "no palpitations",
           "order": 2,
-          "search_terms": [
-            "no"
-          ],
-          "tags": [
-            "focal"
-          ]
+          "search_terms": ["no"],
+          "tags": ["palpitations"]
+        },
+        {
+          "chip_id": "cardio-syncope-relevant_negatives-3",
+          "chip_text": "no tongue bite",
+          "order": 3,
+          "search_terms": ["no"],
+          "tags": ["tongue"]
+        },
+        {
+          "chip_id": "cardio-syncope-relevant_negatives-4",
+          "chip_text": "no incontinence",
+          "order": 4,
+          "search_terms": ["no"],
+          "tags": ["incontinence"]
+        },
+        {
+          "chip_id": "cardio-syncope-relevant_negatives-5",
+          "chip_text": "no post-ictal confusion",
+          "order": 5,
+          "search_terms": ["no"],
+          "tags": ["post-ictal"]
+        },
+        {
+          "chip_id": "cardio-syncope-relevant_negatives-6",
+          "chip_text": "no focal neurology",
+          "order": 6,
+          "search_terms": ["no"],
+          "tags": ["focal"]
+        },
+        {
+          "chip_id": "cardio-syncope-relevant_negatives-7",
+          "chip_text": "no headache",
+          "order": 7,
+          "search_terms": ["no"],
+          "tags": ["headache"]
+        },
+        {
+          "chip_id": "cardio-syncope-relevant_negatives-8",
+          "chip_text": "no aura",
+          "order": 8,
+          "search_terms": ["no"],
+          "tags": ["aura"]
         }
       ],
       "exam_findings": [
         {
           "chip_id": "cardio-syncope-exam_findings-1",
-          "chip_text": "vital signs documented if measured",
+          "chip_text": "BP supine documented",
           "order": 1,
-          "search_terms": [
-            "vital"
-          ],
-          "tags": [
-            "signs"
-          ]
+          "search_terms": ["BP"],
+          "tags": ["supine"]
         },
         {
           "chip_id": "cardio-syncope-exam_findings-2",
-          "chip_text": "orthostatic BP documented if measured",
+          "chip_text": "BP standing documented",
           "order": 2,
-          "search_terms": [
-            "orthostatic"
-          ],
-          "tags": [
-            "BP"
-          ]
+          "search_terms": ["BP"],
+          "tags": ["standing"]
         },
         {
           "chip_id": "cardio-syncope-exam_findings-3",
-          "chip_text": "cardiovascular exam documented if assessed",
+          "chip_text": "orthostatic drop present",
           "order": 3,
-          "search_terms": [
-            "cardiovascular"
-          ],
-          "tags": [
-            "exam"
-          ]
+          "search_terms": ["orthostatic"],
+          "tags": ["drop"]
         },
         {
           "chip_id": "cardio-syncope-exam_findings-4",
-          "chip_text": "neurological screen documented if assessed",
+          "chip_text": "orthostatic drop absent",
           "order": 4,
-          "search_terms": [
-            "neurological"
-          ],
-          "tags": [
-            "screen"
-          ]
+          "search_terms": ["orthostatic"],
+          "tags": ["drop"]
+        },
+        {
+          "chip_id": "cardio-syncope-exam_findings-5",
+          "chip_text": "HR documented",
+          "order": 5,
+          "search_terms": ["HR"],
+          "tags": ["documented"]
+        },
+        {
+          "chip_id": "cardio-syncope-exam_findings-6",
+          "chip_text": "rhythm regular",
+          "order": 6,
+          "search_terms": ["rhythm"],
+          "tags": ["regular"]
+        },
+        {
+          "chip_id": "cardio-syncope-exam_findings-7",
+          "chip_text": "cardiovascular exam normal",
+          "order": 7,
+          "search_terms": ["cardiovascular"],
+          "tags": ["exam"]
+        },
+        {
+          "chip_id": "cardio-syncope-exam_findings-8",
+          "chip_text": "murmur present",
+          "order": 8,
+          "search_terms": ["murmur"],
+          "tags": ["present"]
+        },
+        {
+          "chip_id": "cardio-syncope-exam_findings-9",
+          "chip_text": "neurological exam normal",
+          "order": 9,
+          "search_terms": ["neurological"],
+          "tags": ["exam"]
+        },
+        {
+          "chip_id": "cardio-syncope-exam_findings-10",
+          "chip_text": "no focal deficit",
+          "order": 10,
+          "search_terms": ["no"],
+          "tags": ["focal"]
+        },
+        {
+          "chip_id": "cardio-syncope-exam_findings-11",
+          "chip_text": "tongue: no bite marks",
+          "order": 11,
+          "search_terms": ["tongue:"],
+          "tags": ["no"]
+        },
+        {
+          "chip_id": "cardio-syncope-exam_findings-12",
+          "chip_text": "no injuries from fall",
+          "order": 12,
+          "search_terms": ["no"],
+          "tags": ["injuries"]
         }
       ],
-      "red_flags": [],
+      "red_flags": [
+        {
+          "chip_id": "cardio-syncope-red_flags-1",
+          "chip_text": "syncope during exertion",
+          "order": 1,
+          "search_terms": ["syncope"],
+          "tags": ["during"]
+        },
+        {
+          "chip_id": "cardio-syncope-red_flags-2",
+          "chip_text": "syncope while supine",
+          "order": 2,
+          "search_terms": ["syncope"],
+          "tags": ["while"]
+        },
+        {
+          "chip_id": "cardio-syncope-red_flags-3",
+          "chip_text": "no prodrome",
+          "order": 3,
+          "search_terms": ["no"],
+          "tags": ["prodrome"]
+        },
+        {
+          "chip_id": "cardio-syncope-red_flags-4",
+          "chip_text": "family history of SCD",
+          "order": 4,
+          "search_terms": ["family"],
+          "tags": ["history"]
+        },
+        {
+          "chip_id": "cardio-syncope-red_flags-5",
+          "chip_text": "known structural heart disease",
+          "order": 5,
+          "search_terms": ["known"],
+          "tags": ["structural"]
+        },
+        {
+          "chip_id": "cardio-syncope-red_flags-6",
+          "chip_text": "new murmur",
+          "order": 6,
+          "search_terms": ["new"],
+          "tags": ["murmur"]
+        },
+        {
+          "chip_id": "cardio-syncope-red_flags-7",
+          "chip_text": "abnormal ECG",
+          "order": 7,
+          "search_terms": ["abnormal"],
+          "tags": ["ECG"]
+        },
+        {
+          "chip_id": "cardio-syncope-red_flags-8",
+          "chip_text": "recurrent syncope",
+          "order": 8,
+          "search_terms": ["recurrent"],
+          "tags": ["syncope"]
+        },
+        {
+          "chip_id": "cardio-syncope-red_flags-9",
+          "chip_text": "significant injury from fall",
+          "order": 9,
+          "search_terms": ["significant"],
+          "tags": ["injury"]
+        }
+      ],
       "investigations": [
         {
           "chip_id": "cardio-syncope-investigations-1",
-          "chip_text": "ECG reviewed if performed",
+          "chip_text": "ECG: NSR",
           "order": 1,
-          "search_terms": [
-            "ECG"
-          ],
-          "tags": [
-            "reviewed"
-          ]
+          "search_terms": ["ECG:"],
+          "tags": ["NSR"]
         },
         {
           "chip_id": "cardio-syncope-investigations-2",
-          "chip_text": "glucose checked if performed",
+          "chip_text": "ECG: bradycardia",
           "order": 2,
-          "search_terms": [
-            "glucose"
-          ],
-          "tags": [
-            "checked"
-          ]
+          "search_terms": ["ECG:"],
+          "tags": ["bradycardia"]
+        },
+        {
+          "chip_id": "cardio-syncope-investigations-3",
+          "chip_text": "ECG: prolonged QTc",
+          "order": 3,
+          "search_terms": ["ECG:"],
+          "tags": ["prolonged"]
+        },
+        {
+          "chip_id": "cardio-syncope-investigations-4",
+          "chip_text": "ECG: Brugada pattern",
+          "order": 4,
+          "search_terms": ["ECG:"],
+          "tags": ["Brugada"]
+        },
+        {
+          "chip_id": "cardio-syncope-investigations-5",
+          "chip_text": "ECG: no conduction abnormality",
+          "order": 5,
+          "search_terms": ["ECG:"],
+          "tags": ["no"]
+        },
+        {
+          "chip_id": "cardio-syncope-investigations-6",
+          "chip_text": "glucose normal",
+          "order": 6,
+          "search_terms": ["glucose"],
+          "tags": ["normal"]
+        },
+        {
+          "chip_id": "cardio-syncope-investigations-7",
+          "chip_text": "glucose low",
+          "order": 7,
+          "search_terms": ["glucose"],
+          "tags": ["low"]
+        },
+        {
+          "chip_id": "cardio-syncope-investigations-8",
+          "chip_text": "lying-standing BP documented",
+          "order": 8,
+          "search_terms": ["lying-standing"],
+          "tags": ["BP"]
+        },
+        {
+          "chip_id": "cardio-syncope-investigations-9",
+          "chip_text": "echo reviewed if ordered",
+          "order": 9,
+          "search_terms": ["echo"],
+          "tags": ["reviewed"]
+        },
+        {
+          "chip_id": "cardio-syncope-investigations-10",
+          "chip_text": "Holter arranged",
+          "order": 10,
+          "search_terms": ["Holter"],
+          "tags": ["arranged"]
+        },
+        {
+          "chip_id": "cardio-syncope-investigations-11",
+          "chip_text": "tilt table test discussed",
+          "order": 11,
+          "search_terms": ["tilt"],
+          "tags": ["table"]
         }
       ],
       "plan_phrases": [
         {
           "chip_id": "cardio-syncope-plan_phrases-1",
-          "chip_text": "follow-up documented if arranged",
+          "chip_text": "vasovagal syncope — reassure",
           "order": 1,
-          "search_terms": [
-            "follow-up"
-          ],
-          "tags": [
-            "documented"
-          ]
+          "search_terms": ["vasovagal"],
+          "tags": ["syncope"]
+        },
+        {
+          "chip_id": "cardio-syncope-plan_phrases-2",
+          "chip_text": "driving advice discussed",
+          "order": 2,
+          "search_terms": ["driving"],
+          "tags": ["advice"]
+        },
+        {
+          "chip_id": "cardio-syncope-plan_phrases-3",
+          "chip_text": "falls risk assessment documented",
+          "order": 3,
+          "search_terms": ["falls"],
+          "tags": ["risk"]
+        },
+        {
+          "chip_id": "cardio-syncope-plan_phrases-4",
+          "chip_text": "cardiology referral arranged",
+          "order": 4,
+          "search_terms": ["cardiology"],
+          "tags": ["referral"]
+        },
+        {
+          "chip_id": "cardio-syncope-plan_phrases-5",
+          "chip_text": "neurology referral if seizure suspected",
+          "order": 5,
+          "search_terms": ["neurology"],
+          "tags": ["referral"]
+        },
+        {
+          "chip_id": "cardio-syncope-plan_phrases-6",
+          "chip_text": "Holter monitoring arranged",
+          "order": 6,
+          "search_terms": ["Holter"],
+          "tags": ["monitoring"]
+        },
+        {
+          "chip_id": "cardio-syncope-plan_phrases-7",
+          "chip_text": "echo referral arranged",
+          "order": 7,
+          "search_terms": ["echo"],
+          "tags": ["referral"]
+        },
+        {
+          "chip_id": "cardio-syncope-plan_phrases-8",
+          "chip_text": "medication review for hypotension",
+          "order": 8,
+          "search_terms": ["medication"],
+          "tags": ["review"]
+        },
+        {
+          "chip_id": "cardio-syncope-plan_phrases-9",
+          "chip_text": "safety-netting discussed",
+          "order": 9,
+          "search_terms": ["safety-netting"],
+          "tags": ["discussed"]
         }
       ],
-      "follow_up": []
-    },
+      "follow_up": [
+        {
+          "chip_id": "cardio-syncope-follow_up-1",
+          "chip_text": "follow-up after investigations",
+          "order": 1,
+          "search_terms": ["follow-up"],
+          "tags": ["after"]
+        },
+        {
+          "chip_id": "cardio-syncope-follow_up-2",
+          "chip_text": "cardiology OPD follow-up",
+          "order": 2,
+          "search_terms": ["cardiology"],
+          "tags": ["OPD"]
+        },
+        {
+          "chip_id": "cardio-syncope-follow_up-3",
+          "chip_text": "return immediately if recurrent syncope",
+          "order": 3,
+          "search_terms": ["return"],
+          "tags": ["immediately"]
+        },
+        {
+          "chip_id": "cardio-syncope-follow_up-4",
+          "chip_text": "return if chest pain or palpitations",
+          "order": 4,
+          "search_terms": ["return"],
+          "tags": ["if"]
+        },
+        {
+          "chip_id": "cardio-syncope-follow_up-5",
+          "chip_text": "GP follow-up in 1 week",
+          "order": 5,
+          "search_terms": ["GP"],
+          "tags": ["follow-up"]
+        },
+        {
+          "chip_id": "cardio-syncope-follow_up-6",
+          "chip_text": "driving advice reiterated",
+          "order": 6,
+          "search_terms": ["driving"],
+          "tags": ["advice"]
+        }
+      ]
     "derm-acne": {
       "symptoms": [
         {
