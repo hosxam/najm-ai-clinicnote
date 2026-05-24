@@ -6862,6 +6862,113 @@ h1,h2,h3,h4,.brand-name,.section-title,.page-header h2,.hero h1,.hero-stat .num,
 html[data-theme="light"] #themeToggle{color:#92400e;border-color:rgba(146,64,14,.25)}
 html[data-theme="light"] #themeToggle:hover{border-color:#d97706;color:#d97706;background:rgba(217,119,6,.08)}
 @media(max-width:640px){#themeToggle{margin-left:auto;margin-right:8px}}
+
+/* === Comprehensive dark theme: catch remaining white backgrounds === */
+html:not([data-theme="light"]) .btn-outline,
+html:not([data-theme="light"]) .btn-ghost,
+html:not([data-theme="light"]) .step-card,
+html:not([data-theme="light"]) .trust-strip,
+html:not([data-theme="light"]) .presets-card,
+html:not([data-theme="light"]) .why-faster,
+html:not([data-theme="light"]) .safety-section,
+html:not([data-theme="light"]) .hero,
+html:not([data-theme="light"]) .trust-badge,
+html:not([data-theme="light"]) .example-card,
+html:not([data-theme="light"]) .feedback-panel,
+html:not([data-theme="light"]) .feedback-card,
+html:not([data-theme="light"]) .feedback-cta-inline,
+html:not([data-theme="light"]) .resource-link,
+html:not([data-theme="light"]) .calculator-card,
+html:not([data-theme="light"]) .output-header,
+html:not([data-theme="light"]) .output-actions,
+html:not([data-theme="light"]) .output-footer,
+html:not([data-theme="light"]) .hero-stat,
+html:not([data-theme="light"]) .v4-s-indicator,
+html:not([data-theme="light"]) .v4-step-content,
+html:not([data-theme="light"]) .v4-sidebar-inner,
+html:not([data-theme="light"]) .v4-custom-entry-input,
+html:not([data-theme="light"]) .v4-btn-ghost,
+html:not([data-theme="light"]) .v4-summary-card,
+html:not([data-theme="light"]) .v4-output-tabs button,
+html:not([data-theme="light"]) #v4EncounterBuilderPanel,
+html:not([data-theme="light"]) #v2SearchResults,
+html:not([data-theme="light"]) #v2SearchArea>div,
+html:not([data-theme="light"]) #v2HistoryContent,
+html:not([data-theme="light"]) #v3HistoryPreviewPanel,
+html:not([data-theme="light"]) #v3ExamPreviewPanel,
+html:not([data-theme="light"]) #v3PlanPreviewPanel,
+html:not([data-theme="light"]) #v3CalculatorSuggestionsPanel,
+html:not([data-theme="light"]) #v3HistoryEditPanel,
+html:not([data-theme="light"]) #v3ExamEditPanel,
+html:not([data-theme="light"]) #v3PlanEditPanel,
+html:not([data-theme="light"]) .v3-history-prompts li,
+html:not([data-theme="light"]) .v3-edit-field,
+html:not([data-theme="light"]) .nav-toggle,
+html:not([data-theme="light"]) .status-bar,
+html:not([data-theme="light"]) .product-item.launched,
+html:not([data-theme="light"]) .safety-banner{
+  background:var(--bg-surface,#111c2e)!important;
+  border-color:var(--bg-border,rgba(148,163,184,.18))!important;
+  color:var(--text-primary,#f8fafc)!important;
+}
+html:not([data-theme="light"]) .btn-outline{
+  background:transparent!important;
+  border-color:var(--bg-border-bright,rgba(20,184,166,.35))!important;
+  color:var(--text-primary,#f8fafc)!important;
+}
+html:not([data-theme="light"]) .btn-ghost{
+  background:transparent!important;
+  border-color:transparent!important;
+  color:var(--text-secondary,#cbd5e1)!important;
+}
+html:not([data-theme="light"]) .trust-strip{
+  background:var(--bg,#07111f)!important;
+  border-color:var(--bg-border)!important;
+}
+html:not([data-theme="light"]) .hero{
+  background:var(--bg,#07111f)!important;
+  border-color:var(--bg-border)!important;
+}
+html:not([data-theme="light"]) .safety-banner{
+  background:rgba(245,158,11,0.08)!important;
+  border-color:rgba(245,158,11,0.25)!important;
+  color:#FCD34D!important;
+}
+html:not([data-theme="light"]) .trust-badge{
+  background:var(--bg-elevated,#17233a)!important;
+  border-color:var(--bg-border)!important;
+  color:var(--text-secondary)!important;
+}
+html:not([data-theme="light"]) .form-group select,
+html:not([data-theme="light"]) .form-group input,
+html:not([data-theme="light"]) .form-group textarea,
+html:not([data-theme="light"]) .v4-field input,
+html:not([data-theme="light"]) .v4-field textarea,
+html:not([data-theme="light"]) .v4-field select,
+html:not([data-theme="light"]) .v4-select,
+html:not([data-theme="light"]) .v4-search-input,
+html:not([data-theme="light"]) .v4-textarea,
+html:not([data-theme="light"]) .v3-history-controls select,
+html:not([data-theme="light"]) .v3-edit-field input,
+html:not([data-theme="light"]) .v3-edit-field textarea,
+html:not([data-theme="light"]) .v3-edit-field select,
+html:not([data-theme="light"]) [data-v2-custom-input]{
+  background:var(--bg-elevated,#17233a)!important;
+  border-color:var(--bg-border)!important;
+  color:var(--text-primary)!important;
+}
+html:not([data-theme="light"]) .chip,
+html:not([data-theme="light"]) .v4-chip-btn,
+html:not([data-theme="light"]) .v4-section-chip{
+  background:var(--bg-elevated,#17233a)!important;
+  border-color:var(--bg-border)!important;
+  color:var(--text-secondary)!important;
+}
+html:not([data-theme="light"]) .product-item.launched{
+  background:var(--bg-surface,#111c2e)!important;
+  border-color:rgba(245,158,11,0.3)!important;
+}
+
 /* === LIGHT THEME OVERRIDE (toggled via data-theme="light" on html) === */
 html[data-theme="light"]{
   --bg:#f4f7f5;
@@ -8784,7 +8891,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<div class="product-item launched" style="border-color:var(--amber);background:#fffbeb"><h4>Advanced Mode <span class="badge badge-new" style="background:var(--amber);color:#fff;margin-left:8px;font-size:9px;padding:2px 6px;border-radius:4px">New</span></h4><p>Need a fuller note? Advanced Mode opens a structured Step 1-6 workflow for fuller encounter drafts.</p><button class="btn btn-outline btn-xs" onclick="showPage('advanced-encounter')" style="margin-top:10px">Open Advanced Mode</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">Use de-identified information only. Advanced Mode outputs are clinician-reviewed drafts.</p></div>
+<div class="product-item launched" style="border-color:var(--amber);background:var(--bg-surface,#fffbeb)"><h4>Advanced Mode <span class="badge badge-new" style="background:var(--amber);color:#fff;margin-left:8px;font-size:9px;padding:2px 6px;border-radius:4px">New</span></h4><p>Need a fuller note? Advanced Mode opens a structured Step 1-6 workflow for fuller encounter drafts.</p><button class="btn btn-outline btn-xs" onclick="showPage('advanced-encounter')" style="margin-top:10px">Open Advanced Mode</button><p style="font-size:10px;color:var(--gray-400);margin-top:8px;line-height:1.4">Use de-identified information only. Advanced Mode outputs are clinician-reviewed drafts.</p></div>
 
 
 
