@@ -294,43 +294,43 @@
       {
         "chip_id": "cardio-chest-pain-exam_findings-1",
         "group": "exam_findings",
-        "chip_text": "vital signs documented if measured",
+        "chip_text": "BP, HR, RR, SpO2, temp documented",
         "order": 1,
         "search_terms": [
-          "vital"
+          "BP,"
         ],
         "tags": [
-          "signs"
+          "HR,"
         ]
       },
       {
         "chip_id": "cardio-chest-pain-exam_findings-2",
         "group": "exam_findings",
-        "chip_text": "blood pressure both arms if measured",
+        "chip_text": "BP both arms documented",
         "order": 2,
         "search_terms": [
-          "blood"
+          "BP"
         ],
         "tags": [
-          "pressure"
+          "both"
         ]
       },
       {
         "chip_id": "cardio-chest-pain-exam_findings-3",
         "group": "exam_findings",
-        "chip_text": "oxygen saturation documented if measured",
+        "chip_text": "SpO2 documented",
         "order": 3,
         "search_terms": [
-          "oxygen"
+          "SpO2"
         ],
         "tags": [
-          "saturation"
+          "documented"
         ]
       },
       {
         "chip_id": "cardio-chest-pain-exam_findings-4",
         "group": "exam_findings",
-        "chip_text": "cardiovascular exam documented if assessed",
+        "chip_text": "cardiovascular exam normal",
         "order": 4,
         "search_terms": [
           "cardiovascular"
@@ -354,43 +354,43 @@
       {
         "chip_id": "cardio-chest-pain-exam_findings-6",
         "group": "exam_findings",
-        "chip_text": "JVP documented if assessed",
+        "chip_text": "JVP normal",
         "order": 6,
         "search_terms": [
           "JVP"
         ],
         "tags": [
-          "documented"
+          "normal"
         ]
       },
       {
         "chip_id": "cardio-chest-pain-exam_findings-7",
         "group": "exam_findings",
-        "chip_text": "respiratory exam documented if assessed",
+        "chip_text": "chest clear bilaterally",
         "order": 7,
         "search_terms": [
-          "respiratory"
+          "chest"
         ],
         "tags": [
-          "exam"
+          "clear"
         ]
       },
       {
         "chip_id": "cardio-chest-pain-exam_findings-8",
         "group": "exam_findings",
-        "chip_text": "chest wall tenderness documented if assessed",
+        "chip_text": "no chest wall tenderness",
         "order": 8,
         "search_terms": [
-          "chest"
+          "no"
         ],
         "tags": [
-          "wall"
+          "chest"
         ]
       },
       {
         "chip_id": "cardio-chest-pain-exam_findings-9",
         "group": "exam_findings",
-        "chip_text": "peripheral perfusion documented if assessed",
+        "chip_text": "peripheral perfusion normal",
         "order": 9,
         "search_terms": [
           "peripheral"
@@ -402,25 +402,25 @@
       {
         "chip_id": "cardio-chest-pain-exam_findings-10",
         "group": "exam_findings",
-        "chip_text": "pulse symmetry documented if assessed",
+        "chip_text": "pulses symmetrical",
         "order": 10,
         "search_terms": [
-          "pulse"
+          "pulses"
         ],
         "tags": [
-          "symmetry"
+          "symmetrical"
         ]
       },
       {
         "chip_id": "cardio-chest-pain-exam_findings-11",
         "group": "exam_findings",
-        "chip_text": "calf or leg findings documented if assessed",
+        "chip_text": "calves soft non-tender",
         "order": 11,
         "search_terms": [
-          "calf"
+          "calves"
         ],
         "tags": [
-          "or"
+          "soft"
         ]
       },
       {
@@ -570,7 +570,7 @@
       {
         "chip_id": "cardio-chest-pain-investigations-1",
         "group": "investigations",
-        "chip_text": "12-lead ECG reviewed if performed",
+        "chip_text": "12-lead ECG reviewed",
         "order": 1,
         "search_terms": [
           "12-lead"
@@ -594,19 +594,19 @@
       {
         "chip_id": "cardio-chest-pain-investigations-3",
         "group": "investigations",
-        "chip_text": "chest X-ray reviewed if performed",
+        "chip_text": "CXR reviewed",
         "order": 3,
         "search_terms": [
-          "chest"
+          "CXR"
         ],
         "tags": [
-          "X-ray"
+          "reviewed"
         ]
       },
       {
         "chip_id": "cardio-chest-pain-investigations-4",
         "group": "investigations",
-        "chip_text": "bedside echo reviewed if performed",
+        "chip_text": "bedside echo reviewed",
         "order": 4,
         "search_terms": [
           "bedside"
@@ -654,7 +654,7 @@
       {
         "chip_id": "cardio-chest-pain-investigations-8",
         "group": "investigations",
-        "chip_text": "CTPA reviewed if performed",
+        "chip_text": "CTPA reviewed",
         "order": 8,
         "search_terms": [
           "CTPA"
@@ -666,7 +666,7 @@
       {
         "chip_id": "cardio-chest-pain-investigations-9",
         "group": "investigations",
-        "chip_text": "CT aortogram reviewed if performed",
+        "chip_text": "CT aortogram reviewed",
         "order": 9,
         "search_terms": [
           "CT"
@@ -678,25 +678,25 @@
       {
         "chip_id": "cardio-chest-pain-investigations-10",
         "group": "investigations",
-        "chip_text": "CT coronary angiogram reviewed if performed",
+        "chip_text": "CTCA reviewed",
         "order": 10,
         "search_terms": [
-          "CT"
+          "CTCA"
         ],
         "tags": [
-          "coronary"
+          "reviewed"
         ]
       },
       {
         "chip_id": "cardio-chest-pain-plan_phrases-1",
         "group": "plan_phrases",
-        "chip_text": "clinician-entered plan documented",
+        "chip_text": "plan documented",
         "order": 1,
         "search_terms": [
-          "clinician-entered"
+          "plan"
         ],
         "tags": [
-          "plan"
+          "documented"
         ]
       },
       {
@@ -774,7 +774,7 @@
       {
         "chip_id": "cardio-chest-pain-plan_phrases-8",
         "group": "plan_phrases",
-        "chip_text": "investigation follow-up documented if arranged",
+        "chip_text": "investigation follow-up arranged",
         "order": 8,
         "search_terms": [
           "investigation"
@@ -810,13 +810,13 @@
       {
         "chip_id": "cardio-chest-pain-plan_phrases-11",
         "group": "plan_phrases",
-        "chip_text": "follow-up documented if arranged",
+        "chip_text": "follow-up arranged",
         "order": 11,
         "search_terms": [
           "follow-up"
         ],
         "tags": [
-          "documented"
+          "arranged"
         ]
       },
       {
@@ -834,7 +834,7 @@
       {
         "chip_id": "cardio-chest-pain-follow_up-2",
         "group": "follow_up",
-        "chip_text": "follow-up in 1 to 2 weeks if arranged",
+        "chip_text": "follow-up in 1-2 weeks",
         "order": 2,
         "search_terms": [
           "follow-up"
@@ -858,7 +858,7 @@
       {
         "chip_id": "cardio-chest-pain-follow_up-4",
         "group": "follow_up",
-        "chip_text": "cardiology follow-up documented if arranged",
+        "chip_text": "cardiology follow-up arranged",
         "order": 4,
         "search_terms": [
           "cardiology"
@@ -870,7 +870,7 @@
       {
         "chip_id": "cardio-chest-pain-follow_up-5",
         "group": "follow_up",
-        "chip_text": "ambulatory ECG monitoring if arranged",
+        "chip_text": "ambulatory ECG monitoring arranged",
         "order": 5,
         "search_terms": [
           "ambulatory"
@@ -882,13 +882,13 @@
       {
         "chip_id": "cardio-chest-pain-follow_up-6",
         "group": "follow_up",
-        "chip_text": "cardiac rehabilitation referral if arranged",
+        "chip_text": "cardiac rehab referral arranged",
         "order": 6,
         "search_terms": [
           "cardiac"
         ],
         "tags": [
-          "rehabilitation"
+          "rehab"
         ]
       }
     ]
@@ -1668,7 +1668,7 @@
       {
         "chip_id": "cardio-dyspnea-follow_up-4",
         "group": "follow_up",
-        "chip_text": "repeat CXR if arranged",
+        "chip_text": "repeat CXR arranged",
         "order": 4,
         "search_terms": [
           "repeat"
