@@ -570,7 +570,7 @@ function v2loadSpeedPresets() {
     console.warn("Najm AI: Autofill defaults cannot load because fetch is unavailable.");
     return Promise.resolve(null);
   }
-  v2SpeedPresetLoadPromise = fetch("./data/speed_presets.json?v=autofill-toggle", { cache: "no-store" })
+  v2SpeedPresetLoadPromise = fetch("./data/speed_presets.json?v=v7-autofill-defaults", { cache: "no-store" })
     .then(function(resp) {
       if (!resp.ok) throw new Error("HTTP " + resp.status);
       return resp.json();

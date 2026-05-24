@@ -120835,13 +120835,13 @@
             },
             {
                 "chip_id": "derm-acne-plan_phrases-2",
-                "chip_text": "lymecycline 408mg OD × 12 weeks",
+                "chip_text": "lymecycline OD × 12 weeks",
                 "order": 2,
                 "search_terms": [
                     "lymecycline"
                 ],
                 "tags": [
-                    "408mg"
+                    "OD"
                 ]
             },
             {
@@ -121350,13 +121350,13 @@
             },
             {
                 "chip_id": "derm-eczema-investigations-3",
-                "chip_text": "IgE 420 IU/mL (atopic)",
+                "chip_text": "IgE/mL (atopic)",
                 "order": 3,
                 "search_terms": [
-                    "IgE"
+                    "IgE/mL"
                 ],
                 "tags": [
-                    "420"
+                    "(atopic)"
                 ]
             },
             {
@@ -121429,7 +121429,7 @@
             },
             {
                 "chip_id": "derm-eczema-plan_phrases-5",
-                "chip_text": "antihistamine: cetirizine 10mg ON for itch",
+                "chip_text": "antihistamine: cetirizine ON for itch",
                 "order": 5,
                 "search_terms": [
                     "antihistamine:"
@@ -122023,7 +122023,7 @@
             },
             {
                 "chip_id": "derm-fungal-infection-plan_phrases-7",
-                "chip_text": "oral terbinafine 250mg OD × 2 weeks if extensive",
+                "chip_text": "oral terbinafine OD × 2 weeks if extensive",
                 "order": 7,
                 "search_terms": [
                     "oral"
@@ -122572,7 +122572,7 @@
             },
             {
                 "chip_id": "derm-hair-loss-plan_phrases-2",
-                "chip_text": "ferrous fumarate 210mg OD (ferritin <30)",
+                "chip_text": "ferrous fumarate OD (ferritin <30)",
                 "order": 2,
                 "search_terms": [
                     "ferrous"
@@ -122583,7 +122583,7 @@
             },
             {
                 "chip_id": "derm-hair-loss-plan_phrases-3",
-                "chip_text": "vitamin D 3000IU OD × 12 weeks",
+                "chip_text": "vitamin D OD × 12 weeks",
                 "order": 3,
                 "search_terms": [
                     "vitamin"
@@ -123187,13 +123187,13 @@
             },
             {
                 "chip_id": "derm-rash-plan_phrases-2",
-                "chip_text": "cetirizine 10mg OD for itch",
+                "chip_text": "cetirizine OD for itch",
                 "order": 2,
                 "search_terms": [
                     "cetirizine"
                 ],
                 "tags": [
-                    "10mg"
+                    "OD"
                 ]
             },
             {
@@ -124330,18 +124330,18 @@
         "plan_phrases": [
             {
                 "chip_id": "derm-urticaria-plan_phrases-1",
-                "chip_text": "cetirizine 10mg OD (up-dose to 20mg if needed)",
+                "chip_text": "cetirizine OD (up-dose to if needed)",
                 "order": 1,
                 "search_terms": [
                     "cetirizine"
                 ],
                 "tags": [
-                    "10mg"
+                    "OD"
                 ]
             },
             {
                 "chip_id": "derm-urticaria-plan_phrases-2",
-                "chip_text": "add ranitidine 150mg BD (H2 blocker)",
+                "chip_text": "add ranitidine BD (H2 blocker)",
                 "order": 2,
                 "search_terms": [
                     "add"
@@ -124374,7 +124374,7 @@
             },
             {
                 "chip_id": "derm-urticaria-plan_phrases-5",
-                "chip_text": "if refractory: montelukast 10mg ON trial",
+                "chip_text": "if refractory: montelukast ON trial",
                 "order": 5,
                 "search_terms": [
                     "if"
@@ -126528,7 +126528,7 @@
         "plan_phrases": [
             {
                 "chip_id": "endo-diabetes-followup-pp1",
-                "chip_text": "continue metformin 1g BD",
+                "chip_text": "continue metformin BD",
                 "order": 1,
                 "search_terms": [
                     "continue"
@@ -126539,7 +126539,7 @@
             },
             {
                 "chip_id": "endo-diabetes-followup-pp2",
-                "chip_text": "add SGLT2i empagliflozin 10mg",
+                "chip_text": "add SGLT2i empagliflozin",
                 "order": 2,
                 "search_terms": [
                     "add"
@@ -126550,7 +126550,7 @@
             },
             {
                 "chip_id": "endo-diabetes-followup-pp3",
-                "chip_text": "add GLP-1 RA semaglutide 0.5mg weekly",
+                "chip_text": "add GLP-1 RA semaglutide weekly",
                 "order": 3,
                 "search_terms": [
                     "add"
@@ -126561,7 +126561,7 @@
             },
             {
                 "chip_id": "endo-diabetes-followup-pp4",
-                "chip_text": "titrate GLP-1 to 1mg",
+                "chip_text": "titrate GLP-1 to",
                 "order": 4,
                 "search_terms": [
                     "titrate"
@@ -126572,7 +126572,7 @@
             },
             {
                 "chip_id": "endo-diabetes-followup-pp5",
-                "chip_text": "start basal insulin glargine 10 units nocte",
+                "chip_text": "start basal insulin glargine nocte",
                 "order": 5,
                 "search_terms": [
                     "start"
@@ -127408,7 +127408,7 @@
         "plan_phrases": [
             {
                 "chip_id": "endo-hyperthyroidism-followup-pp1",
-                "chip_text": "continue carbimazole 20mg OD (titration regimen)",
+                "chip_text": "continue carbimazole OD (titration regimen)",
                 "order": 1,
                 "search_terms": [
                     "continue"
@@ -127419,7 +127419,7 @@
             },
             {
                 "chip_id": "endo-hyperthyroidism-followup-pp2",
-                "chip_text": "reduce carbimazole to 10mg OD",
+                "chip_text": "reduce carbimazole to OD",
                 "order": 2,
                 "search_terms": [
                     "reduce"
@@ -127430,7 +127430,7 @@
             },
             {
                 "chip_id": "endo-hyperthyroidism-followup-pp3",
-                "chip_text": "block-and-replace: carbimazole 40mg + levothyroxine 100mcg",
+                "chip_text": "block-and-replace: carbimazole + levothyroxine",
                 "order": 3,
                 "search_terms": [
                     "block-and-replace:"
@@ -127441,13 +127441,13 @@
             },
             {
                 "chip_id": "endo-hyperthyroidism-followup-pp4",
-                "chip_text": "propranolol 40mg TDS for symptom control",
+                "chip_text": "propranolol TDS for symptom control",
                 "order": 4,
                 "search_terms": [
                     "propranolol"
                 ],
                 "tags": [
-                    "40mg"
+                    "TDS"
                 ]
             },
             {
@@ -127507,13 +127507,13 @@
             },
             {
                 "chip_id": "endo-hyperthyroidism-followup-pp10",
-                "chip_text": "selenium 200mcg OD for mild eye disease",
+                "chip_text": "selenium OD for mild eye disease",
                 "order": 10,
                 "search_terms": [
                     "selenium"
                 ],
                 "tags": [
-                    "200mcg"
+                    "OD"
                 ]
             },
             {
@@ -128979,7 +128979,7 @@
         "plan_phrases": [
             {
                 "chip_id": "endo-hypothyroidism-followup-pp1",
-                "chip_text": "continue levothyroxine 100mcg OD",
+                "chip_text": "continue levothyroxine OD",
                 "order": 1,
                 "search_terms": [
                     "continue"
@@ -128990,7 +128990,7 @@
             },
             {
                 "chip_id": "endo-hypothyroidism-followup-pp2",
-                "chip_text": "increase levothyroxine to 125mcg",
+                "chip_text": "increase levothyroxine to",
                 "order": 2,
                 "search_terms": [
                     "increase"
@@ -129001,7 +129001,7 @@
             },
             {
                 "chip_id": "endo-hypothyroidism-followup-pp3",
-                "chip_text": "increase levothyroxine to 150mcg",
+                "chip_text": "increase levothyroxine to",
                 "order": 3,
                 "search_terms": [
                     "increase"
@@ -129012,7 +129012,7 @@
             },
             {
                 "chip_id": "endo-hypothyroidism-followup-pp4",
-                "chip_text": "reduce levothyroxine to 75mcg",
+                "chip_text": "reduce levothyroxine to",
                 "order": 4,
                 "search_terms": [
                     "reduce"
@@ -129781,18 +129781,18 @@
             },
             {
                 "chip_id": "endo-obesity-counseling-documentation-pp5",
-                "chip_text": "orlistat 120mg TDS with meals",
+                "chip_text": "orlistat TDS with meals",
                 "order": 5,
                 "search_terms": [
                     "orlistat"
                 ],
                 "tags": [
-                    "120mg"
+                    "TDS"
                 ]
             },
             {
                 "chip_id": "endo-obesity-counseling-documentation-pp6",
-                "chip_text": "GLP-1 RA semaglutide 2.4mg weekly (weight management)",
+                "chip_text": "GLP-1 RA semaglutide weekly (weight management)",
                 "order": 6,
                 "search_terms": [
                     "GLP-1"
@@ -130484,7 +130484,7 @@
         "plan_phrases": [
             {
                 "chip_id": "endo-osteoporosis-followup-pp1",
-                "chip_text": "continue alendronate 70mg weekly",
+                "chip_text": "continue alendronate weekly",
                 "order": 1,
                 "search_terms": [
                     "continue"
@@ -130506,7 +130506,7 @@
             },
             {
                 "chip_id": "endo-osteoporosis-followup-pp3",
-                "chip_text": "switch to denosumab 60mg 6-monthly",
+                "chip_text": "switch to denosumab 6-monthly",
                 "order": 3,
                 "search_terms": [
                     "switch"
@@ -130517,7 +130517,7 @@
             },
             {
                 "chip_id": "endo-osteoporosis-followup-pp4",
-                "chip_text": "start zoledronic acid 5mg IV annual",
+                "chip_text": "start zoledronic acid IV annual",
                 "order": 4,
                 "search_terms": [
                     "start"
@@ -130528,18 +130528,18 @@
             },
             {
                 "chip_id": "endo-osteoporosis-followup-pp5",
-                "chip_text": "calcium 1000mg + vitamin D 800IU daily",
+                "chip_text": "calcium + vitamin D daily",
                 "order": 5,
                 "search_terms": [
                     "calcium"
                 ],
                 "tags": [
-                    "1000mg"
+                    "+"
                 ]
             },
             {
                 "chip_id": "endo-osteoporosis-followup-pp6",
-                "chip_text": "increase vitamin D to 3000IU/day",
+                "chip_text": "increase vitamin D to/day",
                 "order": 6,
                 "search_terms": [
                     "increase"
@@ -131342,13 +131342,13 @@
             },
             {
                 "chip_id": "endo-pcos-metabolic-review-pp2",
-                "chip_text": "metformin 500mg BD (insulin resistance)",
+                "chip_text": "metformin BD (insulin resistance)",
                 "order": 2,
                 "search_terms": [
                     "metformin"
                 ],
                 "tags": [
-                    "500mg"
+                    "BD"
                 ]
             },
             {
@@ -131364,13 +131364,13 @@
             },
             {
                 "chip_id": "endo-pcos-metabolic-review-pp4",
-                "chip_text": "spironolactone 50mg OD for hirsutism (if not planning pregnancy)",
+                "chip_text": "spironolactone OD for hirsutism (if not planning pregnancy)",
                 "order": 4,
                 "search_terms": [
                     "spironolactone"
                 ],
                 "tags": [
-                    "50mg"
+                    "OD"
                 ]
             },
             {
@@ -132145,13 +132145,13 @@
         "plan_phrases": [
             {
                 "chip_id": "endo-pituitary-symptoms-documentation-pp1",
-                "chip_text": "cabergoline 0.5mg twice weekly (prolactinoma)",
+                "chip_text": "cabergoline twice weekly (prolactinoma)",
                 "order": 1,
                 "search_terms": [
                     "cabergoline"
                 ],
                 "tags": [
-                    "0.5mg"
+                    "twice"
                 ]
             },
             {
@@ -132178,7 +132178,7 @@
             },
             {
                 "chip_id": "endo-pituitary-symptoms-documentation-pp4",
-                "chip_text": "hydrocortisone replacement 10mg AM + 5mg PM",
+                "chip_text": "hydrocortisone replacement AM + PM",
                 "order": 4,
                 "search_terms": [
                     "hydrocortisone"
@@ -133640,7 +133640,7 @@
         "plan_phrases": [
             {
                 "chip_id": "ent-dizziness-vertigo-plan_phrases-1",
-                "chip_text": "right posterior canal BPPV diagnosed",
+                "chip_text": "right posterior canal BPPV identified",
                 "order": 1,
                 "search_terms": [
                     "right"
@@ -133695,13 +133695,13 @@
             },
             {
                 "chip_id": "ent-dizziness-vertigo-plan_phrases-6",
-                "chip_text": "prochlorperazine 5mg TDS PRN (short-term only, max 1 week)",
+                "chip_text": "prochlorperazine TDS PRN (short-term only, max 1 week)",
                 "order": 6,
                 "search_terms": [
                     "prochlorperazine"
                 ],
                 "tags": [
-                    "5mg"
+                    "TDS"
                 ]
             },
             {
@@ -134211,29 +134211,29 @@
             },
             {
                 "chip_id": "ent-ear-pain-plan_phrases-2",
-                "chip_text": "paracetamol 15mg/kg QDS (child)",
+                "chip_text": "paracetamol/kg QDS (child)",
                 "order": 2,
                 "search_terms": [
-                    "paracetamol"
+                    "paracetamol/kg"
                 ],
                 "tags": [
-                    "15mg/kg"
+                    "QDS"
                 ]
             },
             {
                 "chip_id": "ent-ear-pain-plan_phrases-3",
-                "chip_text": "ibuprofen 10mg/kg TDS (child)",
+                "chip_text": "ibuprofen/kg TDS (child)",
                 "order": 3,
                 "search_terms": [
-                    "ibuprofen"
+                    "ibuprofen/kg"
                 ],
                 "tags": [
-                    "10mg/kg"
+                    "TDS"
                 ]
             },
             {
                 "chip_id": "ent-ear-pain-plan_phrases-4",
-                "chip_text": "delayed antibiotic prescription: amoxicillin 40mg/kg/day TDS × 5 days",
+                "chip_text": "delayed antibiotic prescription: amoxicillin/kg/day TDS × 5 days",
                 "order": 4,
                 "search_terms": [
                     "delayed"
@@ -135274,13 +135274,13 @@
             },
             {
                 "chip_id": "ent-nasal-congestion-investigations-3",
-                "chip_text": "total IgE 280 IU/mL",
+                "chip_text": "total IgE/mL",
                 "order": 3,
                 "search_terms": [
                     "total"
                 ],
                 "tags": [
-                    "IgE"
+                    "IgE/mL"
                 ]
             },
             {
@@ -135342,13 +135342,13 @@
             },
             {
                 "chip_id": "ent-nasal-congestion-plan_phrases-4",
-                "chip_text": "cetirizine 10mg OD during pollen season",
+                "chip_text": "cetirizine OD during pollen season",
                 "order": 4,
                 "search_terms": [
                     "cetirizine"
                 ],
                 "tags": [
-                    "10mg"
+                    "OD"
                 ]
             },
             {
@@ -135870,13 +135870,13 @@
             },
             {
                 "chip_id": "ent-sinus-symptoms-plan_phrases-2",
-                "chip_text": "amoxicillin 500mg TDS × 7 days",
+                "chip_text": "amoxicillin TDS × 7 days",
                 "order": 2,
                 "search_terms": [
                     "amoxicillin"
                 ],
                 "tags": [
-                    "500mg"
+                    "TDS"
                 ]
             },
             {
@@ -136453,35 +136453,35 @@
         "plan_phrases": [
             {
                 "chip_id": "ent-sore-throat-plan_phrases-1",
-                "chip_text": "phenoxymethylpenicillin 500mg QDS × 10 days",
+                "chip_text": "phenoxymethylpenicillin QDS × 10 days",
                 "order": 1,
                 "search_terms": [
                     "phenoxymethylpenicillin"
                 ],
                 "tags": [
-                    "500mg"
+                    "QDS"
                 ]
             },
             {
                 "chip_id": "ent-sore-throat-plan_phrases-2",
-                "chip_text": "paracetamol 1g QDS",
+                "chip_text": "paracetamol QDS",
                 "order": 2,
                 "search_terms": [
                     "paracetamol"
                 ],
                 "tags": [
-                    "1g"
+                    "QDS"
                 ]
             },
             {
                 "chip_id": "ent-sore-throat-plan_phrases-3",
-                "chip_text": "ibuprofen 400mg TDS",
+                "chip_text": "ibuprofen TDS",
                 "order": 3,
                 "search_terms": [
                     "ibuprofen"
                 ],
                 "tags": [
-                    "400mg"
+                    "TDS"
                 ]
             },
             {
@@ -138463,7 +138463,7 @@
         "plan_phrases": [
             {
                 "chip_id": "gastro-abdominal-pain-pp1",
-                "chip_text": "PPI omeprazole 20mg BD x4wk",
+                "chip_text": "PPI omeprazole BD x4wk",
                 "order": 1,
                 "search_terms": [
                     "PPI"
@@ -139244,13 +139244,13 @@
         "plan_phrases": [
             {
                 "chip_id": "gastro-constipation-pp1",
-                "chip_text": "fibre target 30g/day",
+                "chip_text": "fibre target/day",
                 "order": 1,
                 "search_terms": [
                     "fibre"
                 ],
                 "tags": [
-                    "target"
+                    "target/day"
                 ]
             },
             {
@@ -139277,24 +139277,24 @@
             },
             {
                 "chip_id": "gastro-constipation-pp4",
-                "chip_text": "bisacodyl 10mg PRN",
+                "chip_text": "bisacodyl PRN",
                 "order": 4,
                 "search_terms": [
                     "bisacodyl"
                 ],
                 "tags": [
-                    "10mg"
+                    "PRN"
                 ]
             },
             {
                 "chip_id": "gastro-constipation-pp5",
-                "chip_text": "prucalopride 2mg OD (slow transit)",
+                "chip_text": "prucalopride OD (slow transit)",
                 "order": 5,
                 "search_terms": [
                     "prucalopride"
                 ],
                 "tags": [
-                    "2mg"
+                    "OD"
                 ]
             },
             {
@@ -140069,24 +140069,24 @@
         "plan_phrases": [
             {
                 "chip_id": "gastro-diarrhea-pp1",
-                "chip_text": "loperamide 2mg PRN",
+                "chip_text": "loperamide PRN",
                 "order": 1,
                 "search_terms": [
                     "loperamide"
                 ],
                 "tags": [
-                    "2mg"
+                    "PRN"
                 ]
             },
             {
                 "chip_id": "gastro-diarrhea-pp2",
-                "chip_text": "cholestyramine 4g OD trial (BAM)",
+                "chip_text": "cholestyramine OD trial (BAM)",
                 "order": 2,
                 "search_terms": [
                     "cholestyramine"
                 ],
                 "tags": [
-                    "4g"
+                    "OD"
                 ]
             },
             {
@@ -140102,13 +140102,13 @@
             },
             {
                 "chip_id": "gastro-diarrhea-pp4",
-                "chip_text": "mesalazine 2.4g OD (UC)",
+                "chip_text": "mesalazine OD (UC)",
                 "order": 4,
                 "search_terms": [
                     "mesalazine"
                 ],
                 "tags": [
-                    "2.4g"
+                    "OD"
                 ]
             },
             {
@@ -141630,7 +141630,7 @@
         "plan_phrases": [
             {
                 "chip_id": "gastro-gerd-pp1",
-                "chip_text": "PPI omeprazole 20mg OD",
+                "chip_text": "PPI omeprazole OD",
                 "order": 1,
                 "search_terms": [
                     "PPI"
@@ -141641,7 +141641,7 @@
             },
             {
                 "chip_id": "gastro-gerd-pp2",
-                "chip_text": "PPI omeprazole 40mg OD (step up)",
+                "chip_text": "PPI omeprazole OD (step up)",
                 "order": 2,
                 "search_terms": [
                     "PPI"
@@ -141652,7 +141652,7 @@
             },
             {
                 "chip_id": "gastro-gerd-pp3",
-                "chip_text": "PPI esomeprazole 40mg OD",
+                "chip_text": "PPI esomeprazole OD",
                 "order": 3,
                 "search_terms": [
                     "PPI"
@@ -142433,24 +142433,24 @@
             },
             {
                 "chip_id": "gastro-ibs-symptoms-pp4",
-                "chip_text": "mebeverine 135mg TDS",
+                "chip_text": "mebeverine TDS",
                 "order": 4,
                 "search_terms": [
                     "mebeverine"
                 ],
                 "tags": [
-                    "135mg"
+                    "TDS"
                 ]
             },
             {
                 "chip_id": "gastro-ibs-symptoms-pp5",
-                "chip_text": "amitriptyline 10mg nocte (gut-brain axis)",
+                "chip_text": "amitriptyline nocte (gut-brain axis)",
                 "order": 5,
                 "search_terms": [
                     "amitriptyline"
                 ],
                 "tags": [
-                    "10mg"
+                    "nocte"
                 ]
             },
             {
@@ -142466,13 +142466,13 @@
             },
             {
                 "chip_id": "gastro-ibs-symptoms-pp7",
-                "chip_text": "linaclotide 290mcg OD (IBS-C refractory)",
+                "chip_text": "linaclotide OD (IBS-C refractory)",
                 "order": 7,
                 "search_terms": [
                     "linaclotide"
                 ],
                 "tags": [
-                    "290mcg"
+                    "OD"
                 ]
             },
             {
@@ -143314,7 +143314,7 @@
             },
             {
                 "chip_id": "gastro-jaundice-documentation-pp8",
-                "chip_text": "vitamin K 10mg IV if coagulopathy",
+                "chip_text": "vitamin K IV if coagulopathy",
                 "order": 8,
                 "search_terms": [
                     "vitamin"
@@ -146325,7 +146325,7 @@
         "plan_phrases": [
             {
                 "chip_id": "gp-abdominal-pain-pp1",
-                "chip_text": "PPI trial omeprazole 20mg OD x4wk",
+                "chip_text": "PPI trial omeprazole OD x4wk",
                 "order": 1,
                 "search_terms": [
                     "PPI"
@@ -147117,13 +147117,13 @@
             },
             {
                 "chip_id": "gp-chest-pain-pp2",
-                "chip_text": "aspirin 300mg stat given",
+                "chip_text": "aspirin stat given",
                 "order": 2,
                 "search_terms": [
                     "aspirin"
                 ],
                 "tags": [
-                    "300mg"
+                    "stat"
                 ]
             },
             {
@@ -147161,7 +147161,7 @@
             },
             {
                 "chip_id": "gp-chest-pain-pp6",
-                "chip_text": "start statin atorvastatin 20mg",
+                "chip_text": "start statin atorvastatin",
                 "order": 6,
                 "search_terms": [
                     "start"
@@ -147766,7 +147766,7 @@
         "plan_phrases": [
             {
                 "chip_id": "gp-constipation-pp1",
-                "chip_text": "increase fibre 25-30g/day",
+                "chip_text": "increase fibre 25-/day",
                 "order": 1,
                 "search_terms": [
                     "increase"
@@ -147799,13 +147799,13 @@
             },
             {
                 "chip_id": "gp-constipation-pp4",
-                "chip_text": "senna 15mg nocte if needed",
+                "chip_text": "senna nocte if needed",
                 "order": 4,
                 "search_terms": [
                     "senna"
                 ],
                 "tags": [
-                    "15mg"
+                    "nocte"
                 ]
             },
             {
@@ -148502,13 +148502,13 @@
             },
             {
                 "chip_id": "gp-cough-pp3",
-                "chip_text": "amoxicillin 500mg TDS x5d",
+                "chip_text": "amoxicillin TDS x5d",
                 "order": 3,
                 "search_terms": [
                     "amoxicillin"
                 ],
                 "tags": [
-                    "500mg"
+                    "TDS"
                 ]
             },
             {
@@ -149239,7 +149239,7 @@
         "plan_phrases": [
             {
                 "chip_id": "gp-diabetes-followup-pp1",
-                "chip_text": "continue metformin 1g BD",
+                "chip_text": "continue metformin BD",
                 "order": 1,
                 "search_terms": [
                     "continue"
@@ -149250,7 +149250,7 @@
             },
             {
                 "chip_id": "gp-diabetes-followup-pp2",
-                "chip_text": "increase metformin to 1g BD",
+                "chip_text": "increase metformin to BD",
                 "order": 2,
                 "search_terms": [
                     "increase"
@@ -149261,7 +149261,7 @@
             },
             {
                 "chip_id": "gp-diabetes-followup-pp3",
-                "chip_text": "add gliclazide 40mg OD",
+                "chip_text": "add gliclazide OD",
                 "order": 3,
                 "search_terms": [
                     "add"
@@ -149272,7 +149272,7 @@
             },
             {
                 "chip_id": "gp-diabetes-followup-pp4",
-                "chip_text": "add SGLT2i empagliflozin 10mg",
+                "chip_text": "add SGLT2i empagliflozin",
                 "order": 4,
                 "search_terms": [
                     "add"
@@ -149283,7 +149283,7 @@
             },
             {
                 "chip_id": "gp-diabetes-followup-pp5",
-                "chip_text": "start statin atorvastatin 20mg",
+                "chip_text": "start statin atorvastatin",
                 "order": 5,
                 "search_terms": [
                     "start"
@@ -150009,13 +150009,13 @@
             },
             {
                 "chip_id": "gp-diarrhea-pp2",
-                "chip_text": "loperamide 2mg PRN max 8/day",
+                "chip_text": "loperamide PRN max 8/day",
                 "order": 2,
                 "search_terms": [
                     "loperamide"
                 ],
                 "tags": [
-                    "2mg"
+                    "PRN"
                 ]
             },
             {
@@ -150734,24 +150734,24 @@
             },
             {
                 "chip_id": "gp-dizziness-pp3",
-                "chip_text": "betahistine 16mg TDS",
+                "chip_text": "betahistine TDS",
                 "order": 3,
                 "search_terms": [
                     "betahistine"
                 ],
                 "tags": [
-                    "16mg"
+                    "TDS"
                 ]
             },
             {
                 "chip_id": "gp-dizziness-pp4",
-                "chip_text": "prochlorperazine 5mg TDS short course",
+                "chip_text": "prochlorperazine TDS short course",
                 "order": 4,
                 "search_terms": [
                     "prochlorperazine"
                 ],
                 "tags": [
-                    "5mg"
+                    "TDS"
                 ]
             },
             {
@@ -151360,7 +151360,7 @@
         "plan_phrases": [
             {
                 "chip_id": "gp-dyslipidemia-followup-pp1",
-                "chip_text": "continue atorvastatin 20mg",
+                "chip_text": "continue atorvastatin",
                 "order": 1,
                 "search_terms": [
                     "continue"
@@ -151371,7 +151371,7 @@
             },
             {
                 "chip_id": "gp-dyslipidemia-followup-pp2",
-                "chip_text": "increase atorvastatin to 40mg",
+                "chip_text": "increase atorvastatin to",
                 "order": 2,
                 "search_terms": [
                     "increase"
@@ -151382,7 +151382,7 @@
             },
             {
                 "chip_id": "gp-dyslipidemia-followup-pp3",
-                "chip_text": "increase atorvastatin to 80mg",
+                "chip_text": "increase atorvastatin to",
                 "order": 3,
                 "search_terms": [
                     "increase"
@@ -151393,7 +151393,7 @@
             },
             {
                 "chip_id": "gp-dyslipidemia-followup-pp4",
-                "chip_text": "switch to rosuvastatin 10mg",
+                "chip_text": "switch to rosuvastatin",
                 "order": 4,
                 "search_terms": [
                     "switch"
@@ -151404,7 +151404,7 @@
             },
             {
                 "chip_id": "gp-dyslipidemia-followup-pp5",
-                "chip_text": "add ezetimibe 10mg",
+                "chip_text": "add ezetimibe",
                 "order": 5,
                 "search_terms": [
                     "add"
@@ -152185,7 +152185,7 @@
         "plan_phrases": [
             {
                 "chip_id": "gp-fatigue-pp1",
-                "chip_text": "iron replacement ferrous fumarate 210mg BD",
+                "chip_text": "iron replacement ferrous fumarate BD",
                 "order": 1,
                 "search_terms": [
                     "iron"
@@ -152196,7 +152196,7 @@
             },
             {
                 "chip_id": "gp-fatigue-pp2",
-                "chip_text": "start levothyroxine 50mcg",
+                "chip_text": "start levothyroxine",
                 "order": 2,
                 "search_terms": [
                     "start"
@@ -152965,24 +152965,24 @@
         "plan_phrases": [
             {
                 "chip_id": "gp-fever-urti-pp1",
-                "chip_text": "paracetamol 1g QDS PRN",
+                "chip_text": "paracetamol QDS PRN",
                 "order": 1,
                 "search_terms": [
                     "paracetamol"
                 ],
                 "tags": [
-                    "1g"
+                    "QDS"
                 ]
             },
             {
                 "chip_id": "gp-fever-urti-pp2",
-                "chip_text": "ibuprofen 400mg TDS with food",
+                "chip_text": "ibuprofen TDS with food",
                 "order": 2,
                 "search_terms": [
                     "ibuprofen"
                 ],
                 "tags": [
-                    "400mg"
+                    "TDS"
                 ]
             },
             {
@@ -153009,13 +153009,13 @@
             },
             {
                 "chip_id": "gp-fever-urti-pp5",
-                "chip_text": "phenoxymethylpenicillin 500mg QDS x10d (strep)",
+                "chip_text": "phenoxymethylpenicillin QDS x10d (strep)",
                 "order": 5,
                 "search_terms": [
                     "phenoxymethylpenicillin"
                 ],
                 "tags": [
-                    "500mg"
+                    "QDS"
                 ]
             },
             {
@@ -153735,29 +153735,29 @@
         "plan_phrases": [
             {
                 "chip_id": "gp-headache-pp1",
-                "chip_text": "paracetamol 1g PRN max QDS",
+                "chip_text": "paracetamol PRN max QDS",
                 "order": 1,
                 "search_terms": [
                     "paracetamol"
                 ],
                 "tags": [
-                    "1g"
+                    "PRN"
                 ]
             },
             {
                 "chip_id": "gp-headache-pp2",
-                "chip_text": "ibuprofen 400mg PRN",
+                "chip_text": "ibuprofen PRN",
                 "order": 2,
                 "search_terms": [
                     "ibuprofen"
                 ],
                 "tags": [
-                    "400mg"
+                    "PRN"
                 ]
             },
             {
                 "chip_id": "gp-headache-pp3",
-                "chip_text": "triptan sumatriptan 50mg for migraine",
+                "chip_text": "triptan sumatriptan for migraine",
                 "order": 3,
                 "search_terms": [
                     "triptan"
@@ -153768,24 +153768,24 @@
             },
             {
                 "chip_id": "gp-headache-pp4",
-                "chip_text": "propranolol 40mg BD prophylaxis",
+                "chip_text": "propranolol BD prophylaxis",
                 "order": 4,
                 "search_terms": [
                     "propranolol"
                 ],
                 "tags": [
-                    "40mg"
+                    "BD"
                 ]
             },
             {
                 "chip_id": "gp-headache-pp5",
-                "chip_text": "amitriptyline 10mg nocte prophylaxis",
+                "chip_text": "amitriptyline nocte prophylaxis",
                 "order": 5,
                 "search_terms": [
                     "amitriptyline"
                 ],
                 "tags": [
-                    "10mg"
+                    "nocte"
                 ]
             },
             {
@@ -154494,7 +154494,7 @@
         "plan_phrases": [
             {
                 "chip_id": "gp-hypertension-followup-pp1",
-                "chip_text": "continue amlodipine 5mg OD",
+                "chip_text": "continue amlodipine OD",
                 "order": 1,
                 "search_terms": [
                     "continue"
@@ -154505,7 +154505,7 @@
             },
             {
                 "chip_id": "gp-hypertension-followup-pp2",
-                "chip_text": "increase amlodipine to 10mg",
+                "chip_text": "increase amlodipine to",
                 "order": 2,
                 "search_terms": [
                     "increase"
@@ -154516,7 +154516,7 @@
             },
             {
                 "chip_id": "gp-hypertension-followup-pp3",
-                "chip_text": "add ramipril 2.5mg OD",
+                "chip_text": "add ramipril OD",
                 "order": 3,
                 "search_terms": [
                     "add"
@@ -154527,7 +154527,7 @@
             },
             {
                 "chip_id": "gp-hypertension-followup-pp4",
-                "chip_text": "increase ramipril to 5mg",
+                "chip_text": "increase ramipril to",
                 "order": 4,
                 "search_terms": [
                     "increase"
@@ -154538,7 +154538,7 @@
             },
             {
                 "chip_id": "gp-hypertension-followup-pp5",
-                "chip_text": "add indapamide 2.5mg OD",
+                "chip_text": "add indapamide OD",
                 "order": 5,
                 "search_terms": [
                     "add"
@@ -154560,7 +154560,7 @@
             },
             {
                 "chip_id": "gp-hypertension-followup-pp7",
-                "chip_text": "lifestyle: reduce salt <6g/day",
+                "chip_text": "lifestyle: reduce salt </day",
                 "order": 7,
                 "search_terms": [
                     "lifestyle:"
@@ -155956,35 +155956,35 @@
         "plan_phrases": [
             {
                 "chip_id": "gp-nausea-pp1",
-                "chip_text": "metoclopramide 10mg TDS x5d",
+                "chip_text": "metoclopramide TDS x5d",
                 "order": 1,
                 "search_terms": [
                     "metoclopramide"
                 ],
                 "tags": [
-                    "10mg"
+                    "TDS"
                 ]
             },
             {
                 "chip_id": "gp-nausea-pp2",
-                "chip_text": "ondansetron 4mg PRN",
+                "chip_text": "ondansetron PRN",
                 "order": 2,
                 "search_terms": [
                     "ondansetron"
                 ],
                 "tags": [
-                    "4mg"
+                    "PRN"
                 ]
             },
             {
                 "chip_id": "gp-nausea-pp3",
-                "chip_text": "cyclizine 50mg TDS",
+                "chip_text": "cyclizine TDS",
                 "order": 3,
                 "search_terms": [
                     "cyclizine"
                 ],
                 "tags": [
-                    "50mg"
+                    "TDS"
                 ]
             },
             {
@@ -156769,7 +156769,7 @@
             },
             {
                 "chip_id": "gp-palpitations-pp5",
-                "chip_text": "start bisoprolol 2.5mg OD for rate control",
+                "chip_text": "start bisoprolol OD for rate control",
                 "order": 5,
                 "search_terms": [
                     "start"
@@ -157571,7 +157571,7 @@
             },
             {
                 "chip_id": "gp-shortness-of-breath-pp2",
-                "chip_text": "start ICS beclometasone 200mcg BD",
+                "chip_text": "start ICS beclometasone BD",
                 "order": 2,
                 "search_terms": [
                     "start"
@@ -157593,13 +157593,13 @@
             },
             {
                 "chip_id": "gp-shortness-of-breath-pp4",
-                "chip_text": "furosemide 40mg OD for fluid overload",
+                "chip_text": "furosemide OD for fluid overload",
                 "order": 4,
                 "search_terms": [
                     "furosemide"
                 ],
                 "tags": [
-                    "40mg"
+                    "OD"
                 ]
             },
             {
@@ -158308,24 +158308,24 @@
             },
             {
                 "chip_id": "gp-sore-throat-pp2",
-                "chip_text": "ibuprofen 400mg TDS",
+                "chip_text": "ibuprofen TDS",
                 "order": 2,
                 "search_terms": [
                     "ibuprofen"
                 ],
                 "tags": [
-                    "400mg"
+                    "TDS"
                 ]
             },
             {
                 "chip_id": "gp-sore-throat-pp3",
-                "chip_text": "phenoxymethylpenicillin 500mg QDS x10d",
+                "chip_text": "phenoxymethylpenicillin QDS x10d",
                 "order": 3,
                 "search_terms": [
                     "phenoxymethylpenicillin"
                 ],
                 "tags": [
-                    "500mg"
+                    "QDS"
                 ]
             },
             {
@@ -159088,7 +159088,7 @@
         "plan_phrases": [
             {
                 "chip_id": "gp-thyroid-followup-pp1",
-                "chip_text": "continue levothyroxine 100mcg OD",
+                "chip_text": "continue levothyroxine OD",
                 "order": 1,
                 "search_terms": [
                     "continue"
@@ -159099,7 +159099,7 @@
             },
             {
                 "chip_id": "gp-thyroid-followup-pp2",
-                "chip_text": "increase levothyroxine to 125mcg",
+                "chip_text": "increase levothyroxine to",
                 "order": 2,
                 "search_terms": [
                     "increase"
@@ -159110,7 +159110,7 @@
             },
             {
                 "chip_id": "gp-thyroid-followup-pp3",
-                "chip_text": "reduce levothyroxine to 75mcg",
+                "chip_text": "reduce levothyroxine to",
                 "order": 3,
                 "search_terms": [
                     "reduce"
@@ -159121,7 +159121,7 @@
             },
             {
                 "chip_id": "gp-thyroid-followup-pp4",
-                "chip_text": "start carbimazole 20mg OD",
+                "chip_text": "start carbimazole OD",
                 "order": 4,
                 "search_terms": [
                     "start"
@@ -159802,35 +159802,35 @@
         "plan_phrases": [
             {
                 "chip_id": "msk-acute-sprain-plan_phrases-1",
-                "chip_text": "colchicine 500mcg BD until flare resolves (max 3 days)",
+                "chip_text": "colchicine BD until flare resolves (max 3 days)",
                 "order": 1,
                 "search_terms": [
                     "colchicine"
                 ],
                 "tags": [
-                    "500mcg"
+                    "BD"
                 ]
             },
             {
                 "chip_id": "msk-acute-sprain-plan_phrases-2",
-                "chip_text": "naproxen 500mg BD alternative if colchicine CI",
+                "chip_text": "naproxen BD alternative if colchicine CI",
                 "order": 2,
                 "search_terms": [
                     "naproxen"
                 ],
                 "tags": [
-                    "500mg"
+                    "BD"
                 ]
             },
             {
                 "chip_id": "msk-acute-sprain-plan_phrases-3",
-                "chip_text": "prednisolone 30mg OD 5 days if NSAID/colchicine CI",
+                "chip_text": "prednisolone OD 5 days if NSAID/colchicine CI",
                 "order": 3,
                 "search_terms": [
                     "prednisolone"
                 ],
                 "tags": [
-                    "30mg"
+                    "OD"
                 ]
             },
             {
@@ -160517,13 +160517,13 @@
             },
             {
                 "chip_id": "msk-ankle-pain-plan_phrases-3",
-                "chip_text": "ibuprofen 400mg TDS 5 days",
+                "chip_text": "ibuprofen TDS 5 days",
                 "order": 3,
                 "search_terms": [
                     "ibuprofen"
                 ],
                 "tags": [
-                    "400mg"
+                    "TDS"
                 ]
             },
             {
@@ -161221,7 +161221,7 @@
             },
             {
                 "chip_id": "msk-fracture-followup-plan_phrases-6",
-                "chip_text": "vitamin D 1000IU daily",
+                "chip_text": "vitamin D daily",
                 "order": 6,
                 "search_terms": [
                     "vitamin"
@@ -161232,13 +161232,13 @@
             },
             {
                 "chip_id": "msk-fracture-followup-plan_phrases-7",
-                "chip_text": "calcium 1000mg daily",
+                "chip_text": "calcium daily",
                 "order": 7,
                 "search_terms": [
                     "calcium"
                 ],
                 "tags": [
-                    "1000mg"
+                    "daily"
                 ]
             },
             {
@@ -161903,13 +161903,13 @@
         "plan_phrases": [
             {
                 "chip_id": "msk-hip-pain-plan_phrases-1",
-                "chip_text": "paracetamol 1g QDS regular",
+                "chip_text": "paracetamol QDS regular",
                 "order": 1,
                 "search_terms": [
                     "paracetamol"
                 ],
                 "tags": [
-                    "1g"
+                    "QDS"
                 ]
             },
             {
@@ -162629,13 +162629,13 @@
             },
             {
                 "chip_id": "msk-knee-pain-plan_phrases-2",
-                "chip_text": "ibuprofen 400mg TDS 5 days",
+                "chip_text": "ibuprofen TDS 5 days",
                 "order": 2,
                 "search_terms": [
                     "ibuprofen"
                 ],
                 "tags": [
-                    "400mg"
+                    "TDS"
                 ]
             },
             {
@@ -163355,13 +163355,13 @@
         "plan_phrases": [
             {
                 "chip_id": "msk-low-back-pain-plan_phrases-1",
-                "chip_text": "paracetamol 1g QDS + ibuprofen 400mg TDS with food",
+                "chip_text": "paracetamol QDS + ibuprofen TDS with food",
                 "order": 1,
                 "search_terms": [
                     "paracetamol"
                 ],
                 "tags": [
-                    "1g"
+                    "QDS"
                 ]
             },
             {
@@ -164060,24 +164060,24 @@
         "plan_phrases": [
             {
                 "chip_id": "msk-neck-pain-plan_phrases-1",
-                "chip_text": "naproxen 500mg BD 10 days",
+                "chip_text": "naproxen BD 10 days",
                 "order": 1,
                 "search_terms": [
                     "naproxen"
                 ],
                 "tags": [
-                    "500mg"
+                    "BD"
                 ]
             },
             {
                 "chip_id": "msk-neck-pain-plan_phrases-2",
-                "chip_text": "amitriptyline 10mg nocte for neuropathic pain",
+                "chip_text": "amitriptyline nocte for neuropathic pain",
                 "order": 2,
                 "search_terms": [
                     "amitriptyline"
                 ],
                 "tags": [
-                    "10mg"
+                    "nocte"
                 ]
             },
             {
@@ -164765,13 +164765,13 @@
         "plan_phrases": [
             {
                 "chip_id": "msk-osteoarthritis-followup-plan_phrases-1",
-                "chip_text": "paracetamol 1g QDS continue",
+                "chip_text": "paracetamol QDS continue",
                 "order": 1,
                 "search_terms": [
                     "paracetamol"
                 ],
                 "tags": [
-                    "1g"
+                    "QDS"
                 ]
             },
             {
@@ -166139,13 +166139,13 @@
         "plan_phrases": [
             {
                 "chip_id": "msk-shoulder-pain-plan_phrases-1",
-                "chip_text": "naproxen 500mg BD 2 weeks with PPI cover",
+                "chip_text": "naproxen BD 2 weeks with PPI cover",
                 "order": 1,
                 "search_terms": [
                     "naproxen"
                 ],
                 "tags": [
-                    "500mg"
+                    "BD"
                 ]
             },
             {
@@ -168119,7 +168119,7 @@
         "plan_phrases": [
             {
                 "chip_id": "neph-ckd-followup-plan_phrases-1",
-                "chip_text": "continue ramipril 10mg OD",
+                "chip_text": "continue ramipril OD",
                 "order": 1,
                 "search_terms": [
                     "continue"
@@ -168130,13 +168130,13 @@
             },
             {
                 "chip_id": "neph-ckd-followup-plan_phrases-2",
-                "chip_text": "dapagliflozin 10mg OD continued",
+                "chip_text": "dapagliflozin OD continued",
                 "order": 2,
                 "search_terms": [
                     "dapagliflozin"
                 ],
                 "tags": [
-                    "10mg"
+                    "OD"
                 ]
             },
             {
@@ -169350,7 +169350,7 @@
             },
             {
                 "chip_id": "neph-proteinuria-plan_phrases-2",
-                "chip_text": "start ramipril 2.5mg OD (titrate to max)",
+                "chip_text": "start ramipril OD (titrate to max)",
                 "order": 2,
                 "search_terms": [
                     "start"
@@ -169361,13 +169361,13 @@
             },
             {
                 "chip_id": "neph-proteinuria-plan_phrases-3",
-                "chip_text": "furosemide 40mg OD for oedema",
+                "chip_text": "furosemide OD for oedema",
                 "order": 3,
                 "search_terms": [
                     "furosemide"
                 ],
                 "tags": [
-                    "40mg"
+                    "OD"
                 ]
             },
             {
@@ -169394,7 +169394,7 @@
             },
             {
                 "chip_id": "neph-proteinuria-plan_phrases-6",
-                "chip_text": "statin started (atorvastatin 20mg)",
+                "chip_text": "statin started (atorvastatin)",
                 "order": 6,
                 "search_terms": [
                     "statin"
@@ -170350,24 +170350,24 @@
             },
             {
                 "chip_id": "neuro-dizziness-plan_phrases-4",
-                "chip_text": "betahistine 16mg TDS",
+                "chip_text": "betahistine TDS",
                 "order": 4,
                 "search_terms": [
                     "betahistine"
                 ],
                 "tags": [
-                    "16mg"
+                    "TDS"
                 ]
             },
             {
                 "chip_id": "neuro-dizziness-plan_phrases-5",
-                "chip_text": "prochlorperazine 5mg TDS short course",
+                "chip_text": "prochlorperazine TDS short course",
                 "order": 5,
                 "search_terms": [
                     "prochlorperazine"
                 ],
                 "tags": [
-                    "5mg"
+                    "TDS"
                 ]
             },
             {
@@ -171383,35 +171383,35 @@
         "plan_phrases": [
             {
                 "chip_id": "neuro-headache-plan_phrases-1",
-                "chip_text": "paracetamol 1g QDS",
+                "chip_text": "paracetamol QDS",
                 "order": 1,
                 "search_terms": [
                     "paracetamol"
                 ],
                 "tags": [
-                    "1g"
+                    "QDS"
                 ]
             },
             {
                 "chip_id": "neuro-headache-plan_phrases-2",
-                "chip_text": "ibuprofen 400mg TDS",
+                "chip_text": "ibuprofen TDS",
                 "order": 2,
                 "search_terms": [
                     "ibuprofen"
                 ],
                 "tags": [
-                    "400mg"
+                    "TDS"
                 ]
             },
             {
                 "chip_id": "neuro-headache-plan_phrases-3",
-                "chip_text": "sumatriptan 50mg PRN",
+                "chip_text": "sumatriptan PRN",
                 "order": 3,
                 "search_terms": [
                     "sumatriptan"
                 ],
                 "tags": [
-                    "50mg"
+                    "PRN"
                 ]
             },
             {
@@ -172483,13 +172483,13 @@
             },
             {
                 "chip_id": "neuro-memory-concern-plan_phrases-7",
-                "chip_text": "donepezil 5mg OD started",
+                "chip_text": "donepezil OD started",
                 "order": 7,
                 "search_terms": [
                     "donepezil"
                 ],
                 "tags": [
-                    "5mg"
+                    "OD"
                 ]
             },
             {
@@ -173274,18 +173274,18 @@
         "plan_phrases": [
             {
                 "chip_id": "neuro-migraine-followup-plan_phrases-1",
-                "chip_text": "topiramate 25mg OD started",
+                "chip_text": "topiramate OD started",
                 "order": 1,
                 "search_terms": [
                     "topiramate"
                 ],
                 "tags": [
-                    "25mg"
+                    "OD"
                 ]
             },
             {
                 "chip_id": "neuro-migraine-followup-plan_phrases-2",
-                "chip_text": "topiramate increased to 50mg OD",
+                "chip_text": "topiramate increased to OD",
                 "order": 2,
                 "search_terms": [
                     "topiramate"
@@ -173296,18 +173296,18 @@
             },
             {
                 "chip_id": "neuro-migraine-followup-plan_phrases-3",
-                "chip_text": "propranolol 40mg BD started",
+                "chip_text": "propranolol BD started",
                 "order": 3,
                 "search_terms": [
                     "propranolol"
                 ],
                 "tags": [
-                    "40mg"
+                    "BD"
                 ]
             },
             {
                 "chip_id": "neuro-migraine-followup-plan_phrases-4",
-                "chip_text": "propranolol increased to 80mg BD",
+                "chip_text": "propranolol increased to BD",
                 "order": 4,
                 "search_terms": [
                     "propranolol"
@@ -173318,18 +173318,18 @@
             },
             {
                 "chip_id": "neuro-migraine-followup-plan_phrases-5",
-                "chip_text": "amitriptyline 10mg ON started",
+                "chip_text": "amitriptyline ON started",
                 "order": 5,
                 "search_terms": [
                     "amitriptyline"
                 ],
                 "tags": [
-                    "10mg"
+                    "ON"
                 ]
             },
             {
                 "chip_id": "neuro-migraine-followup-plan_phrases-6",
-                "chip_text": "amitriptyline increased to 25mg ON",
+                "chip_text": "amitriptyline increased to ON",
                 "order": 6,
                 "search_terms": [
                     "amitriptyline"
@@ -173340,13 +173340,13 @@
             },
             {
                 "chip_id": "neuro-migraine-followup-plan_phrases-7",
-                "chip_text": "candesartan 8mg OD started",
+                "chip_text": "candesartan OD started",
                 "order": 7,
                 "search_terms": [
                     "candesartan"
                 ],
                 "tags": [
-                    "8mg"
+                    "OD"
                 ]
             },
             {
@@ -173373,7 +173373,7 @@
             },
             {
                 "chip_id": "neuro-migraine-followup-plan_phrases-10",
-                "chip_text": "triptan changed to rizatriptan 10mg",
+                "chip_text": "triptan changed to rizatriptan",
                 "order": 10,
                 "search_terms": [
                     "triptan"
@@ -174297,18 +174297,18 @@
         "plan_phrases": [
             {
                 "chip_id": "neuro-neuropathy-followup-plan_phrases-1",
-                "chip_text": "amitriptyline 10mg ON",
+                "chip_text": "amitriptyline ON",
                 "order": 1,
                 "search_terms": [
                     "amitriptyline"
                 ],
                 "tags": [
-                    "10mg"
+                    "ON"
                 ]
             },
             {
                 "chip_id": "neuro-neuropathy-followup-plan_phrases-2",
-                "chip_text": "amitriptyline increased to 25mg ON",
+                "chip_text": "amitriptyline increased to ON",
                 "order": 2,
                 "search_terms": [
                     "amitriptyline"
@@ -174319,18 +174319,18 @@
             },
             {
                 "chip_id": "neuro-neuropathy-followup-plan_phrases-3",
-                "chip_text": "gabapentin 300mg TDS",
+                "chip_text": "gabapentin TDS",
                 "order": 3,
                 "search_terms": [
                     "gabapentin"
                 ],
                 "tags": [
-                    "300mg"
+                    "TDS"
                 ]
             },
             {
                 "chip_id": "neuro-neuropathy-followup-plan_phrases-4",
-                "chip_text": "gabapentin increased to 600mg TDS",
+                "chip_text": "gabapentin increased to TDS",
                 "order": 4,
                 "search_terms": [
                     "gabapentin"
@@ -174341,18 +174341,18 @@
             },
             {
                 "chip_id": "neuro-neuropathy-followup-plan_phrases-5",
-                "chip_text": "pregabalin 75mg BD",
+                "chip_text": "pregabalin BD",
                 "order": 5,
                 "search_terms": [
                     "pregabalin"
                 ],
                 "tags": [
-                    "75mg"
+                    "BD"
                 ]
             },
             {
                 "chip_id": "neuro-neuropathy-followup-plan_phrases-6",
-                "chip_text": "pregabalin increased to 150mg BD",
+                "chip_text": "pregabalin increased to BD",
                 "order": 6,
                 "search_terms": [
                     "pregabalin"
@@ -174363,13 +174363,13 @@
             },
             {
                 "chip_id": "neuro-neuropathy-followup-plan_phrases-7",
-                "chip_text": "duloxetine 60mg OD",
+                "chip_text": "duloxetine OD",
                 "order": 7,
                 "search_terms": [
                     "duloxetine"
                 ],
                 "tags": [
-                    "60mg"
+                    "OD"
                 ]
             },
             {
@@ -175452,13 +175452,13 @@
             },
             {
                 "chip_id": "neuro-numbness-tingling-plan_phrases-8",
-                "chip_text": "gabapentin 300mg TDS started",
+                "chip_text": "gabapentin TDS started",
                 "order": 8,
                 "search_terms": [
                     "gabapentin"
                 ],
                 "tags": [
-                    "300mg"
+                    "TDS"
                 ]
             },
             {
@@ -176309,18 +176309,18 @@
         "plan_phrases": [
             {
                 "chip_id": "neuro-seizure-followup-plan_phrases-1",
-                "chip_text": "levetiracetam 500mg BD continued",
+                "chip_text": "levetiracetam BD continued",
                 "order": 1,
                 "search_terms": [
                     "levetiracetam"
                 ],
                 "tags": [
-                    "500mg"
+                    "BD"
                 ]
             },
             {
                 "chip_id": "neuro-seizure-followup-plan_phrases-2",
-                "chip_text": "levetiracetam increased to 750mg BD",
+                "chip_text": "levetiracetam increased to BD",
                 "order": 2,
                 "search_terms": [
                     "levetiracetam"
@@ -176331,18 +176331,18 @@
             },
             {
                 "chip_id": "neuro-seizure-followup-plan_phrases-3",
-                "chip_text": "lamotrigine 100mg BD continued",
+                "chip_text": "lamotrigine BD continued",
                 "order": 3,
                 "search_terms": [
                     "lamotrigine"
                 ],
                 "tags": [
-                    "100mg"
+                    "BD"
                 ]
             },
             {
                 "chip_id": "neuro-seizure-followup-plan_phrases-4",
-                "chip_text": "lamotrigine increased to 150mg BD",
+                "chip_text": "lamotrigine increased to BD",
                 "order": 4,
                 "search_terms": [
                     "lamotrigine"
@@ -176353,18 +176353,18 @@
             },
             {
                 "chip_id": "neuro-seizure-followup-plan_phrases-5",
-                "chip_text": "valproate 500mg BD continued",
+                "chip_text": "valproate BD continued",
                 "order": 5,
                 "search_terms": [
                     "valproate"
                 ],
                 "tags": [
-                    "500mg"
+                    "BD"
                 ]
             },
             {
                 "chip_id": "neuro-seizure-followup-plan_phrases-6",
-                "chip_text": "valproate increased to 600mg BD",
+                "chip_text": "valproate increased to BD",
                 "order": 6,
                 "search_terms": [
                     "valproate"
@@ -176375,13 +176375,13 @@
             },
             {
                 "chip_id": "neuro-seizure-followup-plan_phrases-7",
-                "chip_text": "carbamazepine 200mg BD continued",
+                "chip_text": "carbamazepine BD continued",
                 "order": 7,
                 "search_terms": [
                     "carbamazepine"
                 ],
                 "tags": [
-                    "200mg"
+                    "BD"
                 ]
             },
             {
@@ -176452,7 +176452,7 @@
             },
             {
                 "chip_id": "neuro-seizure-followup-plan_phrases-14",
-                "chip_text": "folic acid 5mg if planning pregnancy",
+                "chip_text": "folic acid if planning pregnancy",
                 "order": 14,
                 "search_terms": [
                     "folic"
@@ -177419,24 +177419,24 @@
         "plan_phrases": [
             {
                 "chip_id": "neuro-stroke-tia-followup-plan_phrases-1",
-                "chip_text": "aspirin 75mg OD continued",
+                "chip_text": "aspirin OD continued",
                 "order": 1,
                 "search_terms": [
                     "aspirin"
                 ],
                 "tags": [
-                    "75mg"
+                    "OD"
                 ]
             },
             {
                 "chip_id": "neuro-stroke-tia-followup-plan_phrases-2",
-                "chip_text": "clopidogrel 75mg OD continued",
+                "chip_text": "clopidogrel OD continued",
                 "order": 2,
                 "search_terms": [
                     "clopidogrel"
                 ],
                 "tags": [
-                    "75mg"
+                    "OD"
                 ]
             },
             {
@@ -177452,35 +177452,35 @@
             },
             {
                 "chip_id": "neuro-stroke-tia-followup-plan_phrases-4",
-                "chip_text": "apixaban 5mg BD started",
+                "chip_text": "apixaban BD started",
                 "order": 4,
                 "search_terms": [
                     "apixaban"
                 ],
                 "tags": [
-                    "5mg"
+                    "BD"
                 ]
             },
             {
                 "chip_id": "neuro-stroke-tia-followup-plan_phrases-5",
-                "chip_text": "atorvastatin 80mg OD",
+                "chip_text": "atorvastatin OD",
                 "order": 5,
                 "search_terms": [
                     "atorvastatin"
                 ],
                 "tags": [
-                    "80mg"
+                    "OD"
                 ]
             },
             {
                 "chip_id": "neuro-stroke-tia-followup-plan_phrases-6",
-                "chip_text": "atorvastatin 40mg OD",
+                "chip_text": "atorvastatin OD",
                 "order": 6,
                 "search_terms": [
                     "atorvastatin"
                 ],
                 "tags": [
-                    "40mg"
+                    "OD"
                 ]
             },
             {
@@ -178519,18 +178519,18 @@
         "plan_phrases": [
             {
                 "chip_id": "neuro-tremor-plan_phrases-1",
-                "chip_text": "propranolol 40mg BD started",
+                "chip_text": "propranolol BD started",
                 "order": 1,
                 "search_terms": [
                     "propranolol"
                 ],
                 "tags": [
-                    "40mg"
+                    "BD"
                 ]
             },
             {
                 "chip_id": "neuro-tremor-plan_phrases-2",
-                "chip_text": "propranolol increased to 80mg BD",
+                "chip_text": "propranolol increased to BD",
                 "order": 2,
                 "search_terms": [
                     "propranolol"
@@ -178541,13 +178541,13 @@
             },
             {
                 "chip_id": "neuro-tremor-plan_phrases-3",
-                "chip_text": "primidone 62.5mg ON started",
+                "chip_text": "primidone ON started",
                 "order": 3,
                 "search_terms": [
                     "primidone"
                 ],
                 "tags": [
-                    "62.5mg"
+                    "ON"
                 ]
             },
             {
@@ -178607,13 +178607,13 @@
             },
             {
                 "chip_id": "neuro-tremor-plan_phrases-9",
-                "chip_text": "co-beneldopa 62.5mg TDS started",
+                "chip_text": "co-beneldopa TDS started",
                 "order": 9,
                 "search_terms": [
                     "co-beneldopa"
                 ],
                 "tags": [
-                    "62.5mg"
+                    "TDS"
                 ]
             },
             {
@@ -180396,7 +180396,7 @@
             },
             {
                 "chip_id": "obgyn-antenatal-followup-investigations-3",
-                "chip_text": "anti-D given (Rh negative mother): 1500IU IM",
+                "chip_text": "anti-D given (Rh negative mother): IM",
                 "order": 3,
                 "search_terms": [
                     "anti-D"
@@ -180464,7 +180464,7 @@
             },
             {
                 "chip_id": "obgyn-antenatal-followup-plan_phrases-3",
-                "chip_text": "iron supplement: ferrous sulphate 200mg OD (ferritin borderline)",
+                "chip_text": "iron supplement: ferrous sulphate OD (ferritin borderline)",
                 "order": 3,
                 "search_terms": [
                     "iron"
@@ -181145,7 +181145,7 @@
             },
             {
                 "chip_id": "obgyn-contraception-plan_phrases-3",
-                "chip_text": "Microgynon 30 prescribed: 3 months supply",
+                "chip_text": "Microgynon 30 discussed",
                 "order": 3,
                 "search_terms": [
                     "Microgynon"
@@ -181804,13 +181804,13 @@
             },
             {
                 "chip_id": "obgyn-dysmenorrhea-plan_phrases-2",
-                "chip_text": "naproxen 500mg BD starting day before expected period",
+                "chip_text": "naproxen BD starting day before expected period",
                 "order": 2,
                 "search_terms": [
                     "naproxen"
                 ],
                 "tags": [
-                    "500mg"
+                    "BD"
                 ]
             },
             {
@@ -182475,7 +182475,7 @@
             },
             {
                 "chip_id": "obgyn-early-pregnancy-plan_phrases-2",
-                "chip_text": "folic acid 400mcg daily continue until 12 weeks",
+                "chip_text": "folic acid daily continue until 12 weeks",
                 "order": 2,
                 "search_terms": [
                     "folic"
@@ -182486,7 +182486,7 @@
             },
             {
                 "chip_id": "obgyn-early-pregnancy-plan_phrases-3",
-                "chip_text": "vitamin D 10mcg (400IU) daily throughout pregnancy",
+                "chip_text": "vitamin D daily throughout pregnancy",
                 "order": 3,
                 "search_terms": [
                     "vitamin"
@@ -182783,13 +182783,13 @@
             },
             {
                 "chip_id": "obgyn-fertility-symptoms-10",
-                "chip_text": "alcohol: 4 units/week",
+                "chip_text": "alcohol:/week",
                 "order": 10,
                 "search_terms": [
-                    "alcohol:"
+                    "alcohol:/week"
                 ],
                 "tags": [
-                    "4"
+                    "alcohol:/week"
                 ]
             },
             {
@@ -183132,7 +183132,7 @@
             },
             {
                 "chip_id": "obgyn-fertility-investigations-7",
-                "chip_text": "semen analysis: volume 3ml, count 45M/ml, motility 55%, morphology 5% (normal WHO)",
+                "chip_text": "semen analysis: volume, count 45M/ml, motility 55%, morphology 5% (normal WHO)",
                 "order": 7,
                 "search_terms": [
                     "semen"
@@ -183178,7 +183178,7 @@
             },
             {
                 "chip_id": "obgyn-fertility-plan_phrases-3",
-                "chip_text": "folic acid 400mcg daily",
+                "chip_text": "folic acid daily",
                 "order": 3,
                 "search_terms": [
                     "folic"
@@ -183815,7 +183815,7 @@
         "plan_phrases": [
             {
                 "chip_id": "obgyn-irregular-bleeding-plan_phrases-1",
-                "chip_text": "iron replacement: ferrous sulphate 200mg BD with vitamin C",
+                "chip_text": "iron replacement: ferrous sulphate BD with vitamin C",
                 "order": 1,
                 "search_terms": [
                     "iron"
@@ -183826,7 +183826,7 @@
             },
             {
                 "chip_id": "obgyn-irregular-bleeding-plan_phrases-2",
-                "chip_text": "tranexamic acid 1g TDS during menses",
+                "chip_text": "tranexamic acid TDS during menses",
                 "order": 2,
                 "search_terms": [
                     "tranexamic"
@@ -183837,7 +183837,7 @@
             },
             {
                 "chip_id": "obgyn-irregular-bleeding-plan_phrases-3",
-                "chip_text": "mefenamic acid 500mg TDS during menses",
+                "chip_text": "mefenamic acid TDS during menses",
                 "order": 3,
                 "search_terms": [
                     "mefenamic"
@@ -184486,7 +184486,7 @@
             },
             {
                 "chip_id": "obgyn-menopause-plan_phrases-3",
-                "chip_text": "sequential combined HRT started: estradiol 1mg + norethisterone 5mg cyclical",
+                "chip_text": "sequential combined HRT started: estradiol + norethisterone cyclical",
                 "order": 3,
                 "search_terms": [
                     "sequential"
@@ -184497,7 +184497,7 @@
             },
             {
                 "chip_id": "obgyn-menopause-plan_phrases-4",
-                "chip_text": "topical vaginal estrogen: Vagifem 10mcg twice weekly",
+                "chip_text": "topical vaginal estrogen: Vagifem twice weekly",
                 "order": 4,
                 "search_terms": [
                     "topical"
@@ -185179,13 +185179,13 @@
             },
             {
                 "chip_id": "obgyn-pelvic-pain-plan_phrases-3",
-                "chip_text": "naproxen 500mg BD during flares",
+                "chip_text": "naproxen BD during flares",
                 "order": 3,
                 "search_terms": [
                     "naproxen"
                 ],
                 "tags": [
-                    "500mg"
+                    "BD"
                 ]
             },
             {
@@ -185223,7 +185223,7 @@
             },
             {
                 "chip_id": "obgyn-pelvic-pain-plan_phrases-7",
-                "chip_text": "pain management: consider amitriptyline 10mg nocte",
+                "chip_text": "pain management: consider amitriptyline nocte",
                 "order": 7,
                 "search_terms": [
                     "pain"
@@ -186609,13 +186609,13 @@
             },
             {
                 "chip_id": "obgyn-vaginal-discharge-plan_phrases-5",
-                "chip_text": "metformin 500mg BD (insulin sensitiser, off-label for PCOS)",
+                "chip_text": "metformin BD (insulin sensitiser, off-label for PCOS)",
                 "order": 5,
                 "search_terms": [
                     "metformin"
                 ],
                 "tags": [
-                    "500mg"
+                    "BD"
                 ]
             },
             {
@@ -188948,7 +188948,7 @@
         "plan_phrases": [
             {
                 "chip_id": "ophth-eye-trauma-plan_phrases-1",
-                "chip_text": "corneal foreign body removed under slit lamp with needle (25G)",
+                "chip_text": "corneal foreign body removed under slit lamp with needle",
                 "order": 1,
                 "search_terms": [
                     "corneal"
@@ -192948,24 +192948,24 @@
             },
             {
                 "chip_id": "peds-ear-pain-plan_phrases-2",
-                "chip_text": "paracetamol 15mg/kg QDS (240mg)",
+                "chip_text": "paracetamol/kg QDS",
                 "order": 2,
                 "search_terms": [
-                    "paracetamol"
+                    "paracetamol/kg"
                 ],
                 "tags": [
-                    "15mg/kg"
+                    "QDS"
                 ]
             },
             {
                 "chip_id": "peds-ear-pain-plan_phrases-3",
-                "chip_text": "ibuprofen 10mg/kg TDS (160mg)",
+                "chip_text": "ibuprofen/kg TDS",
                 "order": 3,
                 "search_terms": [
-                    "ibuprofen"
+                    "ibuprofen/kg"
                 ],
                 "tags": [
-                    "10mg/kg"
+                    "TDS"
                 ]
             },
             {
@@ -192981,7 +192981,7 @@
             },
             {
                 "chip_id": "peds-ear-pain-plan_phrases-5",
-                "chip_text": "delayed antibiotic prescription: amoxicillin 40mg/kg/day TDS if not improving 48hrs",
+                "chip_text": "delayed antibiotic prescription: amoxicillin/kg/day TDS if not improving 48hrs",
                 "order": 5,
                 "search_terms": [
                     "delayed"
@@ -193651,24 +193651,24 @@
         "plan_phrases": [
             {
                 "chip_id": "peds-fever-plan_phrases-1",
-                "chip_text": "paracetamol 15mg/kg QDS PRN (180mg)",
+                "chip_text": "paracetamol/kg QDS PRN",
                 "order": 1,
                 "search_terms": [
-                    "paracetamol"
+                    "paracetamol/kg"
                 ],
                 "tags": [
-                    "15mg/kg"
+                    "QDS"
                 ]
             },
             {
                 "chip_id": "peds-fever-plan_phrases-2",
-                "chip_text": "ibuprofen 10mg/kg TDS PRN (120mg)",
+                "chip_text": "ibuprofen/kg TDS PRN",
                 "order": 2,
                 "search_terms": [
-                    "ibuprofen"
+                    "ibuprofen/kg"
                 ],
                 "tags": [
-                    "10mg/kg"
+                    "TDS"
                 ]
             },
             {
@@ -193948,13 +193948,13 @@
             },
             {
                 "chip_id": "peds-growth-concern-symptoms-10",
-                "chip_text": "drinks 500ml milk daily",
+                "chip_text": "drinks milk daily",
                 "order": 10,
                 "search_terms": [
                     "drinks"
                 ],
                 "tags": [
-                    "500ml"
+                    "milk"
                 ]
             },
             {
@@ -194387,7 +194387,7 @@
         "plan_phrases": [
             {
                 "chip_id": "peds-growth-concern-plan_phrases-1",
-                "chip_text": "iron deficiency identified: ferrous fumarate 5mg/kg/day",
+                "chip_text": "iron deficiency identified: ferrous fumarate/kg/day",
                 "order": 1,
                 "search_terms": [
                     "iron"
@@ -194398,7 +194398,7 @@
             },
             {
                 "chip_id": "peds-growth-concern-plan_phrases-2",
-                "chip_text": "vitamin D 400IU daily",
+                "chip_text": "vitamin D daily",
                 "order": 2,
                 "search_terms": [
                     "vitamin"
@@ -194442,7 +194442,7 @@
             },
             {
                 "chip_id": "peds-growth-concern-plan_phrases-6",
-                "chip_text": "reduce milk to 300ml/day (displacing solids)",
+                "chip_text": "reduce milk to/day (displacing solids)",
                 "order": 6,
                 "search_terms": [
                     "reduce"
@@ -195749,13 +195749,13 @@
             },
             {
                 "chip_id": "peds-rash-plan_phrases-3",
-                "chip_text": "chlorphenamine 1mg BD (age-appropriate dose)",
+                "chip_text": "chlorphenamine BD (age-appropriate dose)",
                 "order": 3,
                 "search_terms": [
                     "chlorphenamine"
                 ],
                 "tags": [
-                    "1mg"
+                    "BD"
                 ]
             },
             {
@@ -196226,7 +196226,7 @@
             },
             {
                 "chip_id": "peds-routine-followup-exam_findings-8",
-                "chip_text": "feeding observed: taking 60ml over 20min (usually 180ml in 10min)",
+                "chip_text": "feeding observed: taking over 20min (usually in 10min)",
                 "order": 8,
                 "search_terms": [
                     "feeding"
@@ -196419,7 +196419,7 @@
             },
             {
                 "chip_id": "peds-routine-followup-plan_phrases-3",
-                "chip_text": "small frequent feeds: offer 60ml every 2hrs",
+                "chip_text": "small frequent feeds: offer every 2hrs",
                 "order": 3,
                 "search_terms": [
                     "small"
@@ -197111,13 +197111,13 @@
             },
             {
                 "chip_id": "peds-school-note-plan_phrases-2",
-                "chip_text": "cefalexin 12.5mg/kg BD 7 days (250mg BD)",
+                "chip_text": "cefalexin/kg BD 7 days ( BD)",
                 "order": 2,
                 "search_terms": [
-                    "cefalexin"
+                    "cefalexin/kg"
                 ],
                 "tags": [
-                    "12.5mg/kg"
+                    "BD"
                 ]
             },
             {
@@ -198462,7 +198462,7 @@
         "plan_phrases": [
             {
                 "chip_id": "peds-vomiting-diarrhea-plan_phrases-1",
-                "chip_text": "oral rehydration: Dioralyte 5ml every 5min for 4hrs",
+                "chip_text": "oral rehydration: Dioralyte every 5min for 4hrs",
                 "order": 1,
                 "search_terms": [
                     "oral"
@@ -199064,13 +199064,13 @@
             },
             {
                 "chip_id": "psych-anxiety-investigations-7",
-                "chip_text": "alcohol: 8 units/week",
+                "chip_text": "alcohol:/week",
                 "order": 7,
                 "search_terms": [
-                    "alcohol:"
+                    "alcohol:/week"
                 ],
                 "tags": [
-                    "8"
+                    "alcohol:/week"
                 ]
             }
         ],
@@ -199088,13 +199088,13 @@
             },
             {
                 "chip_id": "psych-anxiety-plan_phrases-2",
-                "chip_text": "sertraline 50mg OD started (first-line SSRI for GAD)",
+                "chip_text": "sertraline OD started (first-line SSRI for GAD)",
                 "order": 2,
                 "search_terms": [
                     "sertraline"
                 ],
                 "tags": [
-                    "50mg"
+                    "OD"
                 ]
             },
             {
@@ -199272,7 +199272,7 @@
             },
             {
                 "chip_id": "psych-anxiety-follow_up-3",
-                "chip_text": "increase sertraline to 100mg if inadequate response at 4-6 weeks",
+                "chip_text": "increase sertraline to if inadequate response at 4-6 weeks",
                 "order": 3,
                 "search_terms": [
                     "increase"
@@ -199726,13 +199726,13 @@
         "plan_phrases": [
             {
                 "chip_id": "psych-low-mood-plan_phrases-1",
-                "chip_text": "sertraline 50mg OD started",
+                "chip_text": "sertraline OD started",
                 "order": 1,
                 "search_terms": [
                     "sertraline"
                 ],
                 "tags": [
-                    "50mg"
+                    "OD"
                 ]
             },
             {
@@ -199814,7 +199814,7 @@
             },
             {
                 "chip_id": "psych-low-mood-plan_phrases-9",
-                "chip_text": "vitamin D 1000IU OD supplementation",
+                "chip_text": "vitamin D OD supplementation",
                 "order": 9,
                 "search_terms": [
                     "vitamin"
@@ -199921,7 +199921,7 @@
             },
             {
                 "chip_id": "psych-low-mood-follow_up-3",
-                "chip_text": "increase sertraline to 100mg if partial response at 4 weeks",
+                "chip_text": "increase sertraline to if partial response at 4 weeks",
                 "order": 3,
                 "search_terms": [
                     "increase"
@@ -199947,7 +199947,7 @@
         "symptoms": [
             {
                 "chip_id": "psych-medication-followup-symptoms-1",
-                "chip_text": "on sertraline 100mg OD for 8 weeks",
+                "chip_text": "on sertraline OD for 8 weeks",
                 "order": 1,
                 "search_terms": [
                     "on"
@@ -200364,7 +200364,7 @@
         "plan_phrases": [
             {
                 "chip_id": "psych-medication-followup-plan_phrases-1",
-                "chip_text": "partial response to sertraline 100mg — increase to 150mg OD",
+                "chip_text": "partial response to sertraline — increase to OD",
                 "order": 1,
                 "search_terms": [
                     "partial"
@@ -201024,13 +201024,13 @@
             },
             {
                 "chip_id": "psych-panic-symptoms-plan_phrases-2",
-                "chip_text": "sertraline 25mg OD (start low, increase to 50mg after 1 week)",
+                "chip_text": "sertraline OD (start low, increase to after 1 week)",
                 "order": 2,
                 "search_terms": [
                     "sertraline"
                 ],
                 "tags": [
-                    "25mg"
+                    "OD"
                 ]
             },
             {
@@ -201185,7 +201185,7 @@
             },
             {
                 "chip_id": "psych-panic-symptoms-follow_up-2",
-                "chip_text": "increase sertraline to 50mg at 1 week",
+                "chip_text": "increase sertraline to at 1 week",
                 "order": 2,
                 "search_terms": [
                     "increase"
@@ -202331,7 +202331,7 @@
             },
             {
                 "chip_id": "psych-stress-symptoms-plan_phrases-6",
-                "chip_text": "reduce alcohol (currently 14 units/week)",
+                "chip_text": "reduce alcohol (currently/week)",
                 "order": 6,
                 "search_terms": [
                     "reduce"
@@ -206352,14 +206352,13 @@
         "red_flags": [
             {
                 "chip_id": "resp-hemoptysis-documentation-red_flags-1",
-                "chip_text": "massive hemoptysis >200mL/24h",
+                "chip_text": "massive hemoptysis >/24h",
                 "order": 1,
                 "search_terms": [
                     "massive"
                 ],
                 "tags": [
-                    "respiratory",
-                    "high_safety"
+                    "hemoptysis"
                 ]
             },
             {
@@ -210045,7 +210044,7 @@
             },
             {
                 "chip_id": "resp-smoking-history-note-plan_phrases-2",
-                "chip_text": "varenicline (Champix) prescribed",
+                "chip_text": "varenicline (Champix) discussed",
                 "order": 2,
                 "search_terms": [
                     "varenicline"
@@ -210899,13 +210898,13 @@
         "plan_phrases": [
             {
                 "chip_id": "resp-wheeze-plan_phrases-1",
-                "chip_text": "nebulised salbutamol 5mg",
+                "chip_text": "nebulised salbutamol",
                 "order": 1,
                 "search_terms": [
                     "nebulised"
                 ],
                 "tags": [
-                    "respiratory"
+                    "salbutamol"
                 ]
             },
             {
@@ -210921,13 +210920,13 @@
             },
             {
                 "chip_id": "resp-wheeze-plan_phrases-3",
-                "chip_text": "oral prednisolone 40mg 5 days",
+                "chip_text": "oral prednisolone 5 days",
                 "order": 3,
                 "search_terms": [
                     "oral"
                 ],
                 "tags": [
-                    "respiratory"
+                    "prednisolone"
                 ]
             },
             {
@@ -211636,29 +211635,29 @@
             },
             {
                 "chip_id": "urgent-abdominal-pain-plan_phrases-4",
-                "chip_text": "paracetamol 1g IV",
+                "chip_text": "paracetamol IV",
                 "order": 4,
                 "search_terms": [
                     "paracetamol"
                 ],
                 "tags": [
-                    "1g"
+                    "IV"
                 ]
             },
             {
                 "chip_id": "urgent-abdominal-pain-plan_phrases-5",
-                "chip_text": "morphine 5mg IV titrated",
+                "chip_text": "morphine IV titrated",
                 "order": 5,
                 "search_terms": [
                     "morphine"
                 ],
                 "tags": [
-                    "5mg"
+                    "IV"
                 ]
             },
             {
                 "chip_id": "urgent-abdominal-pain-plan_phrases-6",
-                "chip_text": "antiemetic ondansetron 4mg IV",
+                "chip_text": "antiemetic ondansetron IV",
                 "order": 6,
                 "search_terms": [
                     "antiemetic"
@@ -212230,7 +212229,7 @@
         "plan_phrases": [
             {
                 "chip_id": "urgent-allergic-reaction-plan_phrases-1",
-                "chip_text": "IM adrenaline 0.5mg (1:1000) given",
+                "chip_text": "IM adrenaline (1:1000) given",
                 "order": 1,
                 "search_terms": [
                     "IM"
@@ -212252,7 +212251,7 @@
             },
             {
                 "chip_id": "urgent-allergic-reaction-plan_phrases-3",
-                "chip_text": "IV fluid bolus 500mL NS stat",
+                "chip_text": "IV fluid bolus NS stat",
                 "order": 3,
                 "search_terms": [
                     "IV"
@@ -212263,29 +212262,29 @@
             },
             {
                 "chip_id": "urgent-allergic-reaction-plan_phrases-4",
-                "chip_text": "chlorphenamine 10mg IV",
+                "chip_text": "chlorphenamine IV",
                 "order": 4,
                 "search_terms": [
                     "chlorphenamine"
                 ],
                 "tags": [
-                    "10mg"
+                    "IV"
                 ]
             },
             {
                 "chip_id": "urgent-allergic-reaction-plan_phrases-5",
-                "chip_text": "hydrocortisone 200mg IV",
+                "chip_text": "hydrocortisone IV",
                 "order": 5,
                 "search_terms": [
                     "hydrocortisone"
                 ],
                 "tags": [
-                    "200mg"
+                    "IV"
                 ]
             },
             {
                 "chip_id": "urgent-allergic-reaction-plan_phrases-6",
-                "chip_text": "nebulised salbutamol 5mg",
+                "chip_text": "nebulised salbutamol",
                 "order": 6,
                 "search_terms": [
                     "nebulised"
@@ -212879,13 +212878,13 @@
             },
             {
                 "chip_id": "urgent-burn-assessment-plan_phrases-4",
-                "chip_text": "ibuprofen 400mg TDS + paracetamol 1g QDS",
+                "chip_text": "ibuprofen TDS + paracetamol QDS",
                 "order": 4,
                 "search_terms": [
                     "ibuprofen"
                 ],
                 "tags": [
-                    "400mg"
+                    "TDS"
                 ]
             },
             {
@@ -213505,35 +213504,35 @@
             },
             {
                 "chip_id": "urgent-chest-pain-plan_phrases-2",
-                "chip_text": "aspirin 300mg PO stat",
+                "chip_text": "aspirin PO stat",
                 "order": 2,
                 "search_terms": [
                     "aspirin"
                 ],
                 "tags": [
-                    "300mg"
+                    "PO"
                 ]
             },
             {
                 "chip_id": "urgent-chest-pain-plan_phrases-3",
-                "chip_text": "ticagrelor 180mg PO stat",
+                "chip_text": "ticagrelor PO stat",
                 "order": 3,
                 "search_terms": [
                     "ticagrelor"
                 ],
                 "tags": [
-                    "180mg"
+                    "PO"
                 ]
             },
             {
                 "chip_id": "urgent-chest-pain-plan_phrases-4",
-                "chip_text": "morphine 5mg IV + metoclopramide 10mg IV",
+                "chip_text": "morphine IV + metoclopramide IV",
                 "order": 4,
                 "search_terms": [
                     "morphine"
                 ],
                 "tags": [
-                    "5mg"
+                    "IV"
                 ]
             },
             {
@@ -214051,7 +214050,7 @@
             },
             {
                 "chip_id": "urgent-fever-suspected-infection-red_flags-7",
-                "chip_text": "urine output <0.5 mL/kg/h",
+                "chip_text": "urine output </kg/h",
                 "order": 7,
                 "search_terms": [
                     "urine"
@@ -214176,7 +214175,7 @@
             },
             {
                 "chip_id": "urgent-fever-suspected-infection-plan_phrases-2",
-                "chip_text": "IV co-amoxiclav 1.2g + clarithromycin 500mg IV",
+                "chip_text": "IV co-amoxiclav + clarithromycin IV",
                 "order": 2,
                 "search_terms": [
                     "IV"
@@ -214187,7 +214186,7 @@
             },
             {
                 "chip_id": "urgent-fever-suspected-infection-plan_phrases-3",
-                "chip_text": "IV fluid bolus 500mL NS stat (repeat if BP <90)",
+                "chip_text": "IV fluid bolus NS stat (repeat if BP <90)",
                 "order": 3,
                 "search_terms": [
                     "IV"
@@ -214836,7 +214835,7 @@
             },
             {
                 "chip_id": "urgent-head-injury-plan_phrases-5",
-                "chip_text": "analgesia: paracetamol 1g QDS (avoid NSAIDs)",
+                "chip_text": "analgesia: paracetamol QDS (avoid NSAIDs)",
                 "order": 5,
                 "search_terms": [
                     "analgesia:"
@@ -215374,24 +215373,24 @@
             },
             {
                 "chip_id": "urgent-minor-trauma-plan_phrases-4",
-                "chip_text": "ibuprofen 400mg TDS with food × 5 days",
+                "chip_text": "ibuprofen TDS with food × 5 days",
                 "order": 4,
                 "search_terms": [
                     "ibuprofen"
                 ],
                 "tags": [
-                    "400mg"
+                    "TDS"
                 ]
             },
             {
                 "chip_id": "urgent-minor-trauma-plan_phrases-5",
-                "chip_text": "paracetamol 1g QDS",
+                "chip_text": "paracetamol QDS",
                 "order": 5,
                 "search_terms": [
                     "paracetamol"
                 ],
                 "tags": [
-                    "1g"
+                    "QDS"
                 ]
             },
             {
@@ -215956,7 +215955,7 @@
         "plan_phrases": [
             {
                 "chip_id": "urgent-shortness-of-breath-plan_phrases-1",
-                "chip_text": "anticoagulation: apixaban 10mg BD × 7 days then 5mg BD",
+                "chip_text": "anticoagulation: apixaban BD × 7 days then BD",
                 "order": 1,
                 "search_terms": [
                     "anticoagulation:"
@@ -215978,7 +215977,7 @@
             },
             {
                 "chip_id": "urgent-shortness-of-breath-plan_phrases-3",
-                "chip_text": "analgesia: paracetamol 1g QDS",
+                "chip_text": "analgesia: paracetamol QDS",
                 "order": 3,
                 "search_terms": [
                     "analgesia:"
@@ -217132,7 +217131,7 @@
         "plan_phrases": [
             {
                 "chip_id": "urgent-wound-care-laceration-plan_phrases-1",
-                "chip_text": "wound irrigated with NS 500mL",
+                "chip_text": "wound irrigated with NS",
                 "order": 1,
                 "search_terms": [
                     "wound"
@@ -217154,7 +217153,7 @@
             },
             {
                 "chip_id": "urgent-wound-care-laceration-plan_phrases-3",
-                "chip_text": "LA: lidocaine 1% 5mL infiltrated",
+                "chip_text": "LA: lidocaine 1% infiltrated",
                 "order": 3,
                 "search_terms": [
                     "LA:"
@@ -217736,13 +217735,13 @@
         "plan_phrases": [
             {
                 "chip_id": "uro-dysuria-uti-symptoms-plan_phrases-1",
-                "chip_text": "nitrofurantoin 100mg BD 5 days",
+                "chip_text": "nitrofurantoin BD 5 days",
                 "order": 1,
                 "search_terms": [
                     "nitrofurantoin"
                 ],
                 "tags": [
-                    "100mg"
+                    "BD"
                 ]
             },
             {
@@ -218329,35 +218328,35 @@
         "plan_phrases": [
             {
                 "chip_id": "uro-flank-pain-plan_phrases-1",
-                "chip_text": "diclofenac 75mg IM stat",
+                "chip_text": "diclofenac IM stat",
                 "order": 1,
                 "search_terms": [
                     "diclofenac"
                 ],
                 "tags": [
-                    "75mg"
+                    "IM"
                 ]
             },
             {
                 "chip_id": "uro-flank-pain-plan_phrases-2",
-                "chip_text": "ondansetron 4mg IV for nausea",
+                "chip_text": "ondansetron IV for nausea",
                 "order": 2,
                 "search_terms": [
                     "ondansetron"
                 ],
                 "tags": [
-                    "4mg"
+                    "IV"
                 ]
             },
             {
                 "chip_id": "uro-flank-pain-plan_phrases-3",
-                "chip_text": "tamsulosin 400mcg OD (MET)",
+                "chip_text": "tamsulosin OD (MET)",
                 "order": 3,
                 "search_terms": [
                     "tamsulosin"
                 ],
                 "tags": [
-                    "400mcg"
+                    "OD"
                 ]
             },
             {
@@ -218384,13 +218383,13 @@
             },
             {
                 "chip_id": "uro-flank-pain-plan_phrases-6",
-                "chip_text": "paracetamol 1g QDS regular",
+                "chip_text": "paracetamol QDS regular",
                 "order": 6,
                 "search_terms": [
                     "paracetamol"
                 ],
                 "tags": [
-                    "1g"
+                    "QDS"
                 ]
             },
             {
@@ -218822,7 +218821,7 @@
             },
             {
                 "chip_id": "uro-frequency-urgency-investigations-2",
-                "chip_text": "post-void residual 30 mL",
+                "chip_text": "post-void residual",
                 "order": 2,
                 "search_terms": [
                     "post-void"
@@ -218833,7 +218832,7 @@
             },
             {
                 "chip_id": "uro-frequency-urgency-investigations-3",
-                "chip_text": "bladder diary: 12 voids/day, max volume 180 mL",
+                "chip_text": "bladder diary: 12 voids/day, max volume",
                 "order": 3,
                 "search_terms": [
                     "bladder"
@@ -218923,13 +218922,13 @@
             },
             {
                 "chip_id": "uro-frequency-urgency-plan_phrases-5",
-                "chip_text": "solifenacin 5mg OD if retraining fails",
+                "chip_text": "solifenacin OD if retraining fails",
                 "order": 5,
                 "search_terms": [
                     "solifenacin"
                 ],
                 "tags": [
-                    "5mg"
+                    "OD"
                 ]
             },
             {
@@ -219986,7 +219985,7 @@
             },
             {
                 "chip_id": "uro-luts-bph-investigations-4",
-                "chip_text": "post-void residual 120 mL",
+                "chip_text": "post-void residual",
                 "order": 4,
                 "search_terms": [
                     "post-void"
@@ -219997,7 +219996,7 @@
             },
             {
                 "chip_id": "uro-luts-bph-investigations-5",
-                "chip_text": "flow rate: Qmax 10 mL/s",
+                "chip_text": "flow rate: Qmax/s",
                 "order": 5,
                 "search_terms": [
                     "flow"
@@ -220032,13 +220031,13 @@
         "plan_phrases": [
             {
                 "chip_id": "uro-luts-bph-plan_phrases-1",
-                "chip_text": "tamsulosin 400mcg ON started",
+                "chip_text": "tamsulosin ON started",
                 "order": 1,
                 "search_terms": [
                     "tamsulosin"
                 ],
                 "tags": [
-                    "400mcg"
+                    "ON"
                 ]
             },
             {
@@ -220076,13 +220075,13 @@
             },
             {
                 "chip_id": "uro-luts-bph-plan_phrases-5",
-                "chip_text": "finasteride 5mg OD if prostate >30g",
+                "chip_text": "finasteride OD if prostate >",
                 "order": 5,
                 "search_terms": [
                     "finasteride"
                 ],
                 "tags": [
-                    "5mg"
+                    "OD"
                 ]
             },
             {
@@ -221050,7 +221049,7 @@
             },
             {
                 "chip_id": "uro-urinary-retention-documentation-red_flags-6",
-                "chip_text": "bladder volume >1000mL",
+                "chip_text": "bladder volume >",
                 "order": 6,
                 "search_terms": [
                     "bladder"
@@ -221063,7 +221062,7 @@
         "investigations": [
             {
                 "chip_id": "uro-urinary-retention-documentation-investigations-1",
-                "chip_text": "bladder scan: 850mL residual",
+                "chip_text": "bladder scan: residual",
                 "order": 1,
                 "search_terms": [
                     "bladder"
@@ -221074,7 +221073,7 @@
             },
             {
                 "chip_id": "uro-urinary-retention-documentation-investigations-2",
-                "chip_text": "catheter inserted: 900mL drained",
+                "chip_text": "catheter inserted: drained",
                 "order": 2,
                 "search_terms": [
                     "catheter"
@@ -221153,7 +221152,7 @@
             },
             {
                 "chip_id": "uro-urinary-retention-documentation-plan_phrases-2",
-                "chip_text": "initial drainage clamped after 500mL (prevent decompression haematuria)",
+                "chip_text": "initial drainage clamped after (prevent decompression haematuria)",
                 "order": 2,
                 "search_terms": [
                     "initial"
@@ -221164,13 +221163,13 @@
             },
             {
                 "chip_id": "uro-urinary-retention-documentation-plan_phrases-3",
-                "chip_text": "tamsulosin 400mcg OD started/continued",
+                "chip_text": "tamsulosin OD started/continued",
                 "order": 3,
                 "search_terms": [
                     "tamsulosin"
                 ],
                 "tags": [
-                    "400mcg"
+                    "OD"
                 ]
             },
             {

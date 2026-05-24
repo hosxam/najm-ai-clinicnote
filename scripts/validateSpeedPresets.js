@@ -93,7 +93,10 @@ function textContainsDisallowedValue(text) {
   if (disallowed) {
     return `contains disallowed phrase "${disallowed}"`;
   }
-  if (/\b\d+(\.\d+)?\s*(mg|mcg|g|ml|unit|units)\b/i.test(normalized)) {
+  // Strip out lab value patterns first (concentration units like g/L, mg/L, mmol/L, mL/min)
+  // so they don't false-positive as medication doses
+  const labStripped = normalized.replace(/\b\d+(\.\d+)?\s*(g\/l|mg\/l|mg\/mmol|mmol\/l|µmol\/l|umol\/l|ml\/min|meq\/l|µg\/l|ug\/l|ng\/ml|u\/l|iu\/l|cells\/µl|cells\/ul|x10\^9\/l)\b/gi, '');
+  if (/\b\d+(\.\d+)?\s*(mg|mcg|g|ml|unit|units|iu)\b/i.test(labStripped)) {
     return 'contains medication dose-like text';
   }
   return null;
