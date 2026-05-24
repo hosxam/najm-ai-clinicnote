@@ -48,15 +48,33 @@
   function readSelections() {
     var out = {};
     var hasAny = false;
-    for (var i = 0; i < V2_CONTAINERS.length; i++) {
-      var id = V2_CONTAINERS[i];
-      var container = document.getElementById(id);
-      if (!container) continue;
-      var selected = container.querySelectorAll(".chip.selected, .chip[aria-pressed='true']");
+
+    // V2 mode: chips live inside #v2ChipGroups with data-container attributes
+    var v2Area = document.getElementById("v2ChipGroups");
+    if (v2Area && v2Area.style.display !== "none") {
+      var selected = v2Area.querySelectorAll(".chip.selected");
+      for (var i = 0; i < selected.length; i++) {
+        var container = selected[i].getAttribute("data-container") || "unknown";
+        var txt = (selected[i].textContent || "").trim();
+        if (txt) {
+          if (!out[container]) out[container] = [];
+          out[container].push(txt);
+          hasAny = true;
+        }
+      }
+      return hasAny ? out : null;
+    }
+
+    // Fallback: legacy v1 mode with individual containers
+    for (var j = 0; j < V2_CONTAINERS.length; j++) {
+      var id = V2_CONTAINERS[j];
+      var container2 = document.getElementById(id);
+      if (!container2) continue;
+      var sel = container2.querySelectorAll(".chip.selected");
       var arr = [];
-      for (var j = 0; j < selected.length; j++) {
-        var txt = (selected[j].textContent || "").trim();
-        if (txt) { arr.push(txt); hasAny = true; }
+      for (var k = 0; k < sel.length; k++) {
+        var t = (sel[k].textContent || "").trim();
+        if (t) { arr.push(t); hasAny = true; }
       }
       if (arr.length) out[id] = arr;
     }
@@ -95,21 +113,48 @@
     if (Date.now() - data.ts > EXPIRY_MS) return;
 
     var selections = data.selections;
-    for (var i = 0; i < V2_CONTAINERS.length; i++) {
-      var id = V2_CONTAINERS[i];
+
+    // V2 mode: chips live inside #v2ChipGroups with data-container attributes
+    var v2Area = document.getElementById("v2ChipGroups");
+    if (v2Area && v2Area.style.display !== "none") {
+      var allChips = v2Area.querySelectorAll(".chip");
+      for (var i = 0; i < allChips.length; i++) {
+        var container = allChips[i].getAttribute("data-container") || "unknown";
+        var label = (allChips[i].textContent || "").trim().toLowerCase();
+        if (selections[container]) {
+          for (var s = 0; s < selections[container].length; s++) {
+            if (selections[container][s].trim().toLowerCase() === label) {
+              allChips[i].classList.add("selected");
+              break;
+            }
+          }
+        }
+      }
+      // Update count display
+      if (typeof updateSelectedCount === "function") {
+        try { updateSelectedCount(); } catch (e) {}
+      }
+      lastSpecialty = specialty;
+      lastVisitType = visitType;
+      return;
+    }
+
+    // Fallback: legacy v1 containers
+    for (var j = 0; j < V2_CONTAINERS.length; j++) {
+      var id = V2_CONTAINERS[j];
       if (!selections[id] || !selections[id].length) continue;
-      var container = document.getElementById(id);
-      if (!container) continue;
+      var cont = document.getElementById(id);
+      if (!cont) continue;
 
       var wanted = {};
       for (var w = 0; w < selections[id].length; w++) {
         wanted[selections[id][w].trim().toLowerCase()] = true;
       }
 
-      var chips = container.querySelectorAll(".chip");
+      var chips = cont.querySelectorAll(".chip");
       for (var c = 0; c < chips.length; c++) {
-        var label = (chips[c].textContent || "").trim().toLowerCase();
-        if (wanted[label]) {
+        var lbl = (chips[c].textContent || "").trim().toLowerCase();
+        if (wanted[lbl]) {
           chips[c].classList.add("selected");
           chips[c].setAttribute("aria-pressed", "true");
         }
@@ -137,7 +182,7 @@
       } else {
         console.log("[chip-persist] nothing to save (no selections found)");
       }
-    }, 200);
+    }, 300);
   }
 
   document.addEventListener("click", function (e) {
@@ -156,8 +201,11 @@
   var observer = null;
 
   function setupObserver() {
-    speedContent = document.getElementById("speedContent");
-    if (!speedContent) return;
+    // Watch v2ChipGroups (the actual chip container in v2 mode)
+    var v2Area = document.getElementById("v2ChipGroups");
+    var speedContent = document.getElementById("speedContent");
+    var target = v2Area || speedContent;
+    if (!target) return;
 
     observer = new MutationObserver(function () {
       var newSpecialty = getCurrentSpecialty();
@@ -174,7 +222,8 @@
       }
     });
 
-    observer.observe(speedContent, { childList: true, subtree: true });
+    observer.observe(target, { childList: true, subtree: true });
+    console.log("[chip-persist] observer attached to:", target.id);
   }
 
   // --- Specialty change: save before chips are wiped ---
