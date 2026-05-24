@@ -798,14 +798,16 @@ function v2renderChipButton(chip, group, containerId) {
   var chipText = typeof chip === "string" ? chip : (chip.chip_text || "");
   if (!chipText) return null;
   var warning = typeof chip === "object" ? (chip.warning || "") : "";
+  var isRedFlag = group === "red_flags";
   var b = document.createElement("button");
-  b.className = "chip" + (group === "red_flags" ? " chip-redflag" : "");
+  b.className = "chip" + (isRedFlag ? " chip-redflag" : "");
   b.type = "button";
   b.textContent = chipText;
   b.setAttribute("data-name", chipText.toLowerCase());
   b.setAttribute("data-value", chipText);
   b.setAttribute("data-container", containerId);
   b.setAttribute("data-v2-group", group);
+  if (isRedFlag) b.setAttribute("data-redflag", "1");
   if (warning) {
     b.title = warning;
     b.style.textDecoration = "underline dotted";
@@ -813,7 +815,9 @@ function v2renderChipButton(chip, group, containerId) {
   }
   b.onclick = function() {
     this.classList.toggle("selected");
+    this.setAttribute("aria-pressed", this.classList.contains("selected") ? "true" : "false");
     updateSelectedCount();
+    if (typeof window.updateRedFlagBanner === "function") window.updateRedFlagBanner();
   };
   return b;
 }
