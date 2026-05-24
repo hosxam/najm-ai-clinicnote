@@ -83,10 +83,14 @@ function loadCalculatorTools() {
     return {
       value,
       textContent: "",
+      innerHTML: "",
+      style: {},
       attrs: {},
+      children: [],
       setAttribute(name, val) { this.attrs[name] = val; },
       getAttribute(name) { return this.attrs[name]; },
-      classList: { add() {}, remove() {} }
+      classList: { add() {}, remove() {} },
+      appendChild(child) { this.children.push(child); return child; }
     };
   }
   const document = {
@@ -443,6 +447,84 @@ const cases = {
       assert(/High/.test(result.risk), "mcisaac", "expected high label");
     },
     invalid: () => assertEqual(typeof high.calculateMcIsaac({}).score, "number", "mcisaac missing", "score type")
+  },
+  cha2ds2_vasc: {
+    run: () => high.calculateCHA2DS2VASc({ chf: true, hypertension: true, age75plus: false, diabetes: false, strokeOrTia: false, vascularDisease: false, age65to74: true, female: true }),
+    verify: result => {
+      assertEqual(result.score, 4, "cha2ds2_vasc", "score");
+      assert(/Moderate/.test(result.risk), "cha2ds2_vasc", "expected moderate-high risk label");
+      assert(/CHA2DS2-VASc score 4\/9/.test(result.interpretation), "cha2ds2_vasc", "expected score/9 text");
+      // 0 score case
+      const zero = high.calculateCHA2DS2VASc({});
+      assertEqual(zero.score, 0, "cha2ds2_vasc zero", "score");
+      assert(/Low/.test(zero.risk), "cha2ds2_vasc zero", "expected low risk for 0");
+      // 1 score case
+      const one = high.calculateCHA2DS2VASc({ female: true });
+      assertEqual(one.score, 1, "cha2ds2_vasc one", "score");
+      assert(/Low.{0,3}moderate/i.test(one.risk), "cha2ds2_vasc one", "expected low-moderate risk for 1");
+      // Max score
+      const nine = high.calculateCHA2DS2VASc({ chf: true, hypertension: true, age75plus: true, diabetes: true, strokeOrTia: true, vascularDisease: true, age65to74: true, female: true });
+      assertEqual(nine.score, 9, "cha2ds2_vasc max", "score");
+    },
+    invalid: () => assertEqual(typeof high.calculateCHA2DS2VASc({}).score, "number", "cha2ds2_vasc missing", "score type")
+  },
+  has_bled: {
+    run: () => high.calculateHASBLED({ hypertensionUncontrolled: true, abnormalRenalFunction: false, abnormalLiverFunction: false, strokeHistory: true, bleedingHistory: false, labileINR: false, ageGT65: true, drugsAlcohol: false, drugsAlcoholBoth: false }),
+    verify: result => {
+      assertEqual(result.score, 3, "has_bled", "score");
+      assert(/High risk/.test(result.risk), "has_bled", "expected high risk label");
+      assert(/HAS-BLED score 3\/9/.test(result.interpretation), "has_bled", "expected score/9 text");
+      // Low risk case
+      const low = high.calculateHASBLED({ ageGT65: true });
+      assertEqual(low.score, 1, "has_bled low", "score");
+      assert(/Low risk/.test(low.risk), "has_bled low", "expected low risk label");
+      // Max with both drugs+alcohol
+      const max = high.calculateHASBLED({ hypertensionUncontrolled: true, abnormalRenalFunction: true, abnormalLiverFunction: true, strokeHistory: true, bleedingHistory: true, labileINR: true, ageGT65: true, drugsAlcohol: true, drugsAlcoholBoth: true });
+      assertEqual(max.score, 9, "has_bled max", "score");
+    },
+    invalid: () => assertEqual(typeof high.calculateHASBLED({}).score, "number", "has_bled missing", "score type")
+  },
+  egfr_ckd_epi: {
+    run: () => high.calculateEGFR({ creatinine: 88.4, age: 60, female: false }),
+    verify: result => {
+      assertApprox(result.score, 86, 2, "egfr_ckd_epi", "value");
+      assert(/CKD stage G2/.test(result.risk), "egfr_ckd_epi", "expected G2 stage");
+      assert(/eGFR/.test(result.interpretation), "egfr_ckd_epi", "expected eGFR text");
+      // Female 50yo Cr ~62 µmol/L (≈0.7 mg/dL) → high normal
+      const fem = high.calculateEGFR({ creatinine: 61.88, age: 50, female: true });
+      assertApprox(fem.score, 105, 3, "egfr_ckd_epi female", "value");
+      assert(/G1/.test(fem.risk), "egfr_ckd_epi female", "expected G1 stage");
+      // Severe CKD: 70y/F Cr=265 µmol/L (≈3 mg/dL)
+      const severe = high.calculateEGFR({ creatinine: 265.2, age: 70, female: true });
+      assert(severe.score < 30, "egfr_ckd_epi severe", "expected eGFR <30");
+      assert(/G4/.test(severe.risk), "egfr_ckd_epi severe", "expected G4 stage");
+    },
+    invalid: () => {
+      const bad = high.calculateEGFR({ creatinine: 0, age: 60, female: false });
+      assertEqual(bad.score, null, "egfr_ckd_epi invalid", "score");
+      const bad2 = high.calculateEGFR({});
+      assertEqual(bad2.score, null, "egfr_ckd_epi missing", "score");
+    }
+  },
+  news2: {
+    run: () => high.calculateNEWS2({ respiratoryRate: 16, spo2: 98, onSupplementalO2: false, temperature: 37, systolicBP: 120, heartRate: 75, consciousness: 'alert', hypercapnicTarget: false }),
+    verify: result => {
+      assertEqual(result.score, 0, "news2", "score");
+      assert(/Low/.test(result.risk), "news2", "expected low risk");
+      // High-risk case
+      const highCase = high.calculateNEWS2({ respiratoryRate: 28, spo2: 88, onSupplementalO2: true, temperature: 39.2, systolicBP: 85, heartRate: 135, consciousness: 'confused', hypercapnicTarget: false });
+      assert(highCase.score >= 7, "news2 high", "expected score >=7");
+      assert(/High/.test(highCase.risk), "news2 high", "expected high risk");
+      // Single param=3 → medium
+      const singleThree = high.calculateNEWS2({ respiratoryRate: 16, spo2: 98, onSupplementalO2: false, temperature: 37, systolicBP: 120, heartRate: 135, consciousness: 'alert', hypercapnicTarget: false });
+      assertEqual(singleThree.score, 3, "news2 single 3", "score");
+      assert(/Medium/.test(singleThree.risk), "news2 single 3", "expected medium risk when any single param=3");
+      // Medium 5+
+      const med = high.calculateNEWS2({ respiratoryRate: 22, spo2: 94, onSupplementalO2: false, temperature: 38.5, systolicBP: 105, heartRate: 95, consciousness: 'alert', hypercapnicTarget: false });
+      assert(med.score >= 5, "news2 medium", "expected score >=5");
+      assert(/Medium/.test(med.risk), "news2 medium", "expected medium risk");
+    },
+    invalid: () => assertEqual(typeof high.calculateNEWS2({}).score, "number", "news2 missing", "score type")
   }
 };
 

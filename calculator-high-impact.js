@@ -302,6 +302,277 @@ function calculateMcIsaac(params) {
 }
 
 // ──────────────────────────────────────────────
+// 9. CHA2DS2-VASc (0‑9)
+//    Lip et al. 2010 (validated in atrial fibrillation)
+// ──────────────────────────────────────────────
+function calculateCHA2DS2VASc(params) {
+  const {
+    chf,             // +1 Congestive heart failure
+    hypertension,    // +1
+    age75plus,       // +2 Age ≥75
+    diabetes,        // +1
+    strokeOrTia,     // +2 Previous stroke/TIA/thromboembolism
+    vascularDisease, // +1 MI, PAD, aortic plaque
+    age65to74,       // +1
+    female           // +1 (sex category)
+  } = params;
+
+  let score = 0;
+  if (chf) score += 1;
+  if (hypertension) score += 1;
+  if (age75plus) score += 2;
+  if (diabetes) score += 1;
+  if (strokeOrTia) score += 2;
+  if (vascularDisease) score += 1;
+  if (age65to74) score += 1;
+  if (female) score += 1;
+
+  // Clamp to 0‑9 (note: age75plus and age65to74 should not both be set)
+  if (score > 9) score = 9;
+  if (score < 0) score = 0;
+
+  let risk;
+  if (score === 0) risk = 'Low (no anticoagulation)';
+  else if (score === 1) risk = 'Low‑moderate (consider anticoagulation, especially if female=1 only, no anticoag)';
+  else risk = 'Moderate‑high (anticoagulation indicated)';
+
+  const safetyNotice = 'Score calculated for documentation support only. Anticoagulation decision requires clinician judgement and risk‑benefit assessment.';
+
+  return {
+    score,
+    label: 'CHA2DS2-VASc',
+    risk,
+    interpretation: `CHA2DS2-VASc score ${score}/9 — ${risk}. Anticoagulation decision per local protocol.`,
+    safetyNotice
+  };
+}
+
+// ──────────────────────────────────────────────
+// 10. HAS-BLED (0‑9)
+//     Pisters et al. 2010
+// ──────────────────────────────────────────────
+function calculateHASBLED(params) {
+  const {
+    hypertensionUncontrolled, // +1 (SBP >160)
+    abnormalRenalFunction,    // +1 (Cr ≥200 µmol/L or dialysis)
+    abnormalLiverFunction,    // +1
+    strokeHistory,            // +1
+    bleedingHistory,          // +1
+    labileINR,                // +1
+    ageGT65,                  // +1
+    drugsAlcohol,             // +1 (antiplatelets/NSAIDs OR alcohol)
+    drugsAlcoholBoth          // +1 (additional point if BOTH drugs AND alcohol)
+  } = params;
+
+  let score = 0;
+  if (hypertensionUncontrolled) score += 1;
+  if (abnormalRenalFunction) score += 1;
+  if (abnormalLiverFunction) score += 1;
+  if (strokeHistory) score += 1;
+  if (bleedingHistory) score += 1;
+  if (labileINR) score += 1;
+  if (ageGT65) score += 1;
+  if (drugsAlcohol) score += 1;
+  if (drugsAlcoholBoth) score += 1;
+
+  if (score > 9) score = 9;
+  if (score < 0) score = 0;
+
+  let risk;
+  if (score <= 2) risk = 'Low risk';
+  else risk = 'High risk (caution with anticoagulation, address modifiable risk factors)';
+
+  const safetyNotice = 'Score calculated for documentation support only. Anticoagulation decision requires clinician judgement and risk‑benefit assessment.';
+
+  return {
+    score,
+    label: 'HAS-BLED',
+    risk,
+    interpretation: `HAS-BLED score ${score}/9 — ${risk}. Address modifiable bleeding risk factors.`,
+    safetyNotice
+  };
+}
+
+// ──────────────────────────────────────────────
+// 11. eGFR (CKD-EPI 2021, race‑free)
+//     Inker et al. 2021, NEJM
+// ──────────────────────────────────────────────
+function calculateEGFR(params) {
+  const {
+    creatinine, // µmol/L
+    age,        // years
+    female      // boolean
+  } = params;
+
+  const cr = Number(creatinine);
+  const yr = Number(age);
+  if (!Number.isFinite(cr) || cr <= 0 || !Number.isFinite(yr) || yr < 0) {
+    return {
+      score: null,
+      label: 'eGFR (CKD-EPI 2021)',
+      risk: 'Insufficient input',
+      interpretation: 'eGFR could not be calculated. Provide a positive creatinine and age.',
+      safetyNotice: 'eGFR is an estimate for documentation support only; clinician interpretation required. Acute kidney injury, extremes of body size, or rapidly changing creatinine reduce accuracy.'
+    };
+  }
+
+  // Convert µmol/L to mg/dL
+  const crMgDl = cr / 88.4;
+
+  let k, alpha, multiplier;
+  if (female) {
+    k = 0.7;
+    alpha = -0.241;
+    multiplier = 1.012;
+  } else {
+    k = 0.9;
+    alpha = -0.302;
+    multiplier = 1.0;
+  }
+
+  const ratio = crMgDl / k;
+  const minVal = Math.min(ratio, 1);
+  const maxVal = Math.max(ratio, 1);
+  const egfrRaw = 142 * Math.pow(minVal, alpha) * Math.pow(maxVal, -1.200) * Math.pow(0.9938, yr) * multiplier;
+  const egfr = Math.round(egfrRaw);
+
+  let stage, description;
+  if (egfr >= 90) { stage = 'G1'; description = 'normal/high'; }
+  else if (egfr >= 60) { stage = 'G2'; description = 'mildly decreased'; }
+  else if (egfr >= 45) { stage = 'G3a'; description = 'mild‑moderate'; }
+  else if (egfr >= 30) { stage = 'G3b'; description = 'moderate‑severe'; }
+  else if (egfr >= 15) { stage = 'G4'; description = 'severely decreased'; }
+  else { stage = 'G5'; description = 'kidney failure'; }
+
+  const safetyNotice = 'eGFR is an estimate for documentation support only; clinician interpretation required. Acute kidney injury, extremes of body size, or rapidly changing creatinine reduce accuracy.';
+
+  return {
+    score: egfr,
+    label: 'eGFR (CKD-EPI 2021)',
+    risk: `CKD stage ${stage} (${description})`,
+    interpretation: `eGFR ${egfr} mL/min/1.73m² — CKD stage ${stage} (${description}). Albuminuria adds risk stratification.`,
+    safetyNotice
+  };
+}
+
+// ──────────────────────────────────────────────
+// 12. NEWS2 (National Early Warning Score 2)
+//     Royal College of Physicians 2017
+// ──────────────────────────────────────────────
+function calculateNEWS2(params) {
+  const {
+    respiratoryRate,     // breaths/min
+    spo2,                // %
+    onSupplementalO2,    // boolean
+    temperature,         // °C
+    systolicBP,          // mmHg
+    heartRate,           // bpm
+    consciousness,       // 'alert' | 'confused' | other
+    hypercapnicTarget    // boolean — use Scale 2 thresholds for SpO2
+  } = params;
+
+  function rrPoints(rr) {
+    if (!Number.isFinite(rr)) return 0;
+    if (rr <= 8) return 3;
+    if (rr <= 11) return 1;
+    if (rr <= 20) return 0;
+    if (rr <= 24) return 2;
+    return 3;
+  }
+
+  function spo2Scale1Points(o2) {
+    if (!Number.isFinite(o2)) return 0;
+    if (o2 <= 91) return 3;
+    if (o2 <= 93) return 2;
+    if (o2 <= 95) return 1;
+    return 0;
+  }
+
+  function spo2Scale2Points(o2, onO2) {
+    if (!Number.isFinite(o2)) return 0;
+    if (o2 <= 83) return 3;
+    if (o2 <= 85) return 2;
+    if (o2 <= 87) return 1;
+    if (o2 <= 92) return 0;
+    // 93+ : depends on supplemental O2
+    if (!onO2) return 0;
+    if (o2 <= 94) return 1;
+    if (o2 <= 96) return 2;
+    return 3;
+  }
+
+  function tempPoints(t) {
+    if (!Number.isFinite(t)) return 0;
+    if (t <= 35.0) return 3;
+    if (t <= 36.0) return 1;
+    if (t <= 38.0) return 0;
+    if (t <= 39.0) return 1;
+    return 2;
+  }
+
+  function sbpPoints(sbp) {
+    if (!Number.isFinite(sbp)) return 0;
+    if (sbp <= 90) return 3;
+    if (sbp <= 100) return 2;
+    if (sbp <= 110) return 1;
+    if (sbp <= 219) return 0;
+    return 3;
+  }
+
+  function hrPoints(hr) {
+    if (!Number.isFinite(hr)) return 0;
+    if (hr <= 40) return 3;
+    if (hr <= 50) return 1;
+    if (hr <= 90) return 0;
+    if (hr <= 110) return 1;
+    if (hr <= 130) return 2;
+    return 3;
+  }
+
+  const rr = Number(respiratoryRate);
+  const o2 = Number(spo2);
+  const t = Number(temperature);
+  const sbp = Number(systolicBP);
+  const hr = Number(heartRate);
+
+  const pRR = rrPoints(rr);
+  const pO2 = hypercapnicTarget
+    ? spo2Scale2Points(o2, !!onSupplementalO2)
+    : spo2Scale1Points(o2);
+  const pSupp = onSupplementalO2 ? 2 : 0;
+  const pTemp = tempPoints(t);
+  const pSbp = sbpPoints(sbp);
+  const pHr = hrPoints(hr);
+  const pCons = (consciousness && String(consciousness).toLowerCase() !== 'alert') ? 3 : 0;
+
+  const total = pRR + pO2 + pSupp + pTemp + pSbp + pHr + pCons;
+  const components = [pRR, pO2, pSupp, pTemp, pSbp, pHr, pCons];
+  const anySingleThree = components.some(function(p){ return p === 3; });
+
+  let risk, action;
+  if (total >= 7) {
+    risk = 'High';
+    action = 'Emergency clinical review; consider critical care';
+  } else if (total >= 5 || anySingleThree) {
+    risk = 'Medium';
+    action = 'Urgent clinical review';
+  } else {
+    risk = 'Low';
+    action = 'Ward observation';
+  }
+
+  const safetyNotice = 'Single time‑point score. Trend matters more than absolute value. Local protocol applies.';
+
+  return {
+    score: total,
+    label: 'NEWS2',
+    risk,
+    interpretation: `NEWS2 score ${total}/20 — ${risk} risk. ${action}.`,
+    safetyNotice
+  };
+}
+
+// ──────────────────────────────────────────────
 // Registry
 // ──────────────────────────────────────────────
 const CALCULATOR_REGISTRY = [
@@ -410,6 +681,66 @@ const CALCULATOR_REGISTRY = [
       { name: 'age', type: 'number', min: 0, max: 120, label: 'Age (years)' }
     ],
     fn: calculateMcIsaac
+  },
+  {
+    id: 'cha2ds2_vasc',
+    name: 'CHA2DS2-VASc',
+    category: 'Cardiology',
+    inputFields: [
+      { name: 'chf', type: 'boolean', label: 'Congestive heart failure' },
+      { name: 'hypertension', type: 'boolean', label: 'Hypertension' },
+      { name: 'age75plus', type: 'boolean', label: 'Age ≥75' },
+      { name: 'diabetes', type: 'boolean', label: 'Diabetes' },
+      { name: 'strokeOrTia', type: 'boolean', label: 'Previous stroke / TIA / thromboembolism' },
+      { name: 'vascularDisease', type: 'boolean', label: 'Vascular disease (MI, PAD, aortic plaque)' },
+      { name: 'age65to74', type: 'boolean', label: 'Age 65‑74' },
+      { name: 'female', type: 'boolean', label: 'Female sex' }
+    ],
+    fn: calculateCHA2DS2VASc
+  },
+  {
+    id: 'has_bled',
+    name: 'HAS-BLED',
+    category: 'Cardiology / Hematology',
+    inputFields: [
+      { name: 'hypertensionUncontrolled', type: 'boolean', label: 'Uncontrolled hypertension (SBP >160)' },
+      { name: 'abnormalRenalFunction', type: 'boolean', label: 'Abnormal renal function (Cr ≥200 µmol/L or dialysis)' },
+      { name: 'abnormalLiverFunction', type: 'boolean', label: 'Abnormal liver function' },
+      { name: 'strokeHistory', type: 'boolean', label: 'History of stroke' },
+      { name: 'bleedingHistory', type: 'boolean', label: 'History of major bleeding or predisposition' },
+      { name: 'labileINR', type: 'boolean', label: 'Labile INR' },
+      { name: 'ageGT65', type: 'boolean', label: 'Age >65' },
+      { name: 'drugsAlcohol', type: 'boolean', label: 'Drugs (antiplatelets/NSAIDs) or alcohol' },
+      { name: 'drugsAlcoholBoth', type: 'boolean', label: 'BOTH drugs and alcohol (additional point)' }
+    ],
+    fn: calculateHASBLED
+  },
+  {
+    id: 'egfr_ckd_epi',
+    name: 'eGFR (CKD-EPI 2021)',
+    category: 'Nephrology',
+    inputFields: [
+      { name: 'creatinine', type: 'number', min: 1, max: 2000, label: 'Serum creatinine (µmol/L)' },
+      { name: 'age', type: 'number', min: 0, max: 120, label: 'Age (years)' },
+      { name: 'female', type: 'boolean', label: 'Female sex' }
+    ],
+    fn: calculateEGFR
+  },
+  {
+    id: 'news2',
+    name: 'NEWS2',
+    category: 'General / Acute Medicine',
+    inputFields: [
+      { name: 'respiratoryRate', type: 'number', min: 0, max: 80, label: 'Respiratory rate (breaths/min)' },
+      { name: 'spo2', type: 'number', min: 50, max: 100, label: 'SpO2 (%)' },
+      { name: 'onSupplementalO2', type: 'boolean', label: 'On supplemental oxygen' },
+      { name: 'temperature', type: 'number', min: 25, max: 45, label: 'Temperature (°C)' },
+      { name: 'systolicBP', type: 'number', min: 30, max: 300, label: 'Systolic BP (mmHg)' },
+      { name: 'heartRate', type: 'number', min: 0, max: 250, label: 'Heart rate (bpm)' },
+      { name: 'consciousness', type: 'select', options: ['alert', 'confused'], label: 'Consciousness (AVPU/CVPU)' },
+      { name: 'hypercapnicTarget', type: 'boolean', label: 'Hypercapnic target (use SpO2 Scale 2)' }
+    ],
+    fn: calculateNEWS2
   }
 ];
 
@@ -424,6 +755,10 @@ if (typeof module !== 'undefined' && module.exports) {
     calculateWellsPE,
     calculateGCS,
     calculateMcIsaac,
+    calculateCHA2DS2VASc,
+    calculateHASBLED,
+    calculateEGFR,
+    calculateNEWS2,
     CALCULATOR_REGISTRY
   };
 } else if (typeof window !== 'undefined') {
@@ -435,5 +770,9 @@ if (typeof module !== 'undefined' && module.exports) {
   window.calculateWellsPE = calculateWellsPE;
   window.calculateGCS = calculateGCS;
   window.calculateMcIsaac = calculateMcIsaac;
+  window.calculateCHA2DS2VASc = calculateCHA2DS2VASc;
+  window.calculateHASBLED = calculateHASBLED;
+  window.calculateEGFR = calculateEGFR;
+  window.calculateNEWS2 = calculateNEWS2;
   window.CALCULATOR_REGISTRY = CALCULATOR_REGISTRY;
 }

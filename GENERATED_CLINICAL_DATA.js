@@ -236853,23 +236853,76 @@
       "related_workflow_ids": [
         "gp-palpitations"
       ],
-      "purpose": "Registry placeholder for future clinician-entered thromboembolic risk documentation.",
-      "clinical_context": "May be relevant for future atrial fibrillation documentation after source review.",
+      "purpose": "Documentation support for CHA2DS2-VASc score from clinician-entered risk components.",
+      "clinical_context": "Atrial fibrillation stroke risk documentation context. Anticoagulation decision is clinician-led.",
       "risk_level": "high",
-      "implementation_status": "registry_only",
+      "implementation_status": "implemented",
       "source_status": "needs_source_review",
-      "formula_status": "not_implemented",
+      "formula_status": "implemented",
       "input_fields": [
         {
-          "field_id": "risk_components",
-          "label": "Risk components",
-          "input_type": "multi_select",
+          "field_id": "chf",
+          "label": "Congestive heart failure",
+          "input_type": "boolean",
           "units": null,
           "required": true,
-          "allowed_values": [
-            "components require source review before implementation"
-          ],
-          "safety_note": "Component definitions require source verification."
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "hypertension",
+          "label": "Hypertension",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "age75plus",
+          "label": "Age >=75 (2 points)",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "diabetes",
+          "label": "Diabetes",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "stroke_or_tia",
+          "label": "Previous stroke / TIA / thromboembolism (2 points)",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "vascular_disease",
+          "label": "Vascular disease (MI, PAD, aortic plaque)",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "age65to74",
+          "label": "Age 65-74",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "female",
+          "label": "Female sex",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
         }
       ],
       "output_fields": [
@@ -236877,13 +236930,13 @@
           "field_id": "cha2ds2_vasc_score",
           "label": "CHA2DS2-VASc score",
           "output_type": "score",
-          "safety_note": "Future output must not recommend anticoagulation or treatment."
+          "safety_note": "Score calculated for documentation support only. Anticoagulation decision requires clinician judgement and risk-benefit assessment."
         }
       ],
-      "interpretation_mode": "clinician_interpreted_no_recommendation",
-      "safety_note": "High-risk registry item. No treatment advice is implemented.",
+      "interpretation_mode": "score",
+      "safety_note": "Score calculated for documentation support only. Anticoagulation decision requires clinician judgement and risk-benefit assessment.",
       "display_conditions": [
-        "Show only in future reviewed atrial fibrillation documentation context."
+        "Show in atrial fibrillation documentation context."
       ],
       "review_required": true
     },
@@ -236899,23 +236952,84 @@
       "related_workflow_ids": [
         "gp-palpitations"
       ],
-      "purpose": "Registry placeholder for future clinician-entered bleeding risk documentation.",
-      "clinical_context": "May be relevant for future anticoagulation documentation after source review.",
+      "purpose": "Documentation support for HAS-BLED bleeding risk score from clinician-entered components.",
+      "clinical_context": "Anticoagulation bleeding risk documentation context. Clinician interpretation required.",
       "risk_level": "high",
-      "implementation_status": "registry_only",
+      "implementation_status": "implemented",
       "source_status": "needs_source_review",
-      "formula_status": "not_implemented",
+      "formula_status": "implemented",
       "input_fields": [
         {
-          "field_id": "bleeding_risk_components",
-          "label": "Bleeding risk components",
-          "input_type": "multi_select",
+          "field_id": "hypertension_uncontrolled",
+          "label": "Uncontrolled hypertension (SBP >160)",
+          "input_type": "boolean",
           "units": null,
           "required": true,
-          "allowed_values": [
-            "components require source review before implementation"
-          ],
-          "safety_note": "Component definitions require source verification."
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "abnormal_renal_function",
+          "label": "Abnormal renal function (Cr >=200 umol/L or dialysis)",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "abnormal_liver_function",
+          "label": "Abnormal liver function",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "stroke_history",
+          "label": "History of stroke",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "bleeding_history",
+          "label": "History of major bleeding or predisposition",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "labile_inr",
+          "label": "Labile INR",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "age_gt65",
+          "label": "Age >65",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "drugs_alcohol",
+          "label": "Drugs (antiplatelets/NSAIDs) or alcohol",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "drugs_alcohol_both",
+          "label": "BOTH drugs and alcohol (additional point)",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
         }
       ],
       "output_fields": [
@@ -236923,13 +237037,13 @@
           "field_id": "has_bled_score",
           "label": "HAS-BLED score",
           "output_type": "score",
-          "safety_note": "Future output requires clinician interpretation and does not provide treatment advice."
+          "safety_note": "Score calculated for documentation support only. Anticoagulation decision requires clinician judgement and risk-benefit assessment."
         }
       ],
-      "interpretation_mode": "clinician_interpreted_no_recommendation",
-      "safety_note": "High-risk registry item. No treatment or medication advice is implemented.",
+      "interpretation_mode": "score",
+      "safety_note": "Score calculated for documentation support only. Anticoagulation decision requires clinician judgement and risk-benefit assessment.",
       "display_conditions": [
-        "Show only in future reviewed bleeding risk documentation context."
+        "Show in anticoagulation review or bleeding risk documentation context."
       ],
       "review_required": true
     },
@@ -237084,23 +237198,80 @@
         "gp-fever-urti",
         "gp-shortness-of-breath"
       ],
-      "purpose": "Registry placeholder for future clinician-entered acute observation score documentation.",
-      "clinical_context": "May be relevant for future urgent-care workflows after source review.",
+      "purpose": "Documentation support for the National Early Warning Score 2 from clinician-entered observations.",
+      "clinical_context": "Acute observation documentation context. Local escalation policy governs response.",
       "risk_level": "high",
-      "implementation_status": "registry_only",
+      "implementation_status": "implemented",
       "source_status": "needs_source_review",
-      "formula_status": "not_implemented",
+      "formula_status": "implemented",
       "input_fields": [
         {
-          "field_id": "news2_observations",
-          "label": "NEWS2 observation components",
-          "input_type": "multi_select",
+          "field_id": "respiratory_rate",
+          "label": "Respiratory rate",
+          "input_type": "number",
+          "units": "breaths/min",
+          "required": true,
+          "safety_note": "Clinician-entered observation value only."
+        },
+        {
+          "field_id": "spo2",
+          "label": "SpO2",
+          "input_type": "number",
+          "units": "%",
+          "required": true,
+          "safety_note": "Clinician-entered observation value only."
+        },
+        {
+          "field_id": "on_supplemental_o2",
+          "label": "On supplemental oxygen",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "temperature",
+          "label": "Temperature",
+          "input_type": "number",
+          "units": "C",
+          "required": true,
+          "safety_note": "Clinician-entered observation value only."
+        },
+        {
+          "field_id": "systolic_bp",
+          "label": "Systolic blood pressure",
+          "input_type": "number",
+          "units": "mmHg",
+          "required": true,
+          "safety_note": "Clinician-entered observation value only."
+        },
+        {
+          "field_id": "heart_rate",
+          "label": "Heart rate",
+          "input_type": "number",
+          "units": "bpm",
+          "required": true,
+          "safety_note": "Clinician-entered observation value only."
+        },
+        {
+          "field_id": "consciousness",
+          "label": "Consciousness (AVPU/CVPU)",
+          "input_type": "select",
           "units": null,
           "required": true,
           "allowed_values": [
-            "components require source review before implementation"
+            "alert",
+            "confused"
           ],
-          "safety_note": "Observation component definitions require source verification."
+          "safety_note": "Clinician-entered value only."
+        },
+        {
+          "field_id": "hypercapnic_target",
+          "label": "Hypercapnic target (use SpO2 Scale 2)",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
         }
       ],
       "output_fields": [
@@ -237108,13 +237279,13 @@
           "field_id": "news2_score",
           "label": "NEWS2 score",
           "output_type": "score",
-          "safety_note": "Future output requires clinician interpretation and local escalation policy."
+          "safety_note": "Single time-point score. Trend matters more than absolute value. Local protocol applies."
         }
       ],
-      "interpretation_mode": "clinician_interpreted_no_recommendation",
-      "safety_note": "High-risk registry item. No escalation or disposition advice is implemented.",
+      "interpretation_mode": "score",
+      "safety_note": "Single time-point score. Trend matters more than absolute value. Local protocol applies.",
       "display_conditions": [
-        "Show only in future reviewed acute observation documentation context."
+        "Show in acute observation documentation context."
       ],
       "review_required": true
     },
@@ -238049,6 +238220,70 @@
       ],
       "interpretation_mode": "score",
       "safety_note": "Score calculated for documentation support only. Clinician interpretation required.",
+      "display_conditions": [],
+      "review_required": true
+    },
+    "egfr_ckd_epi": {
+      "calculator_id": "egfr_ckd_epi",
+      "calculator_name": "eGFR (CKD-EPI 2021)",
+      "specialty": "Nephrology",
+      "related_complaints": [
+        "kidney function review",
+        "chronic kidney disease",
+        "acute kidney injury context"
+      ],
+      "related_workflow_ids": [
+        "gp-diabetes-followup",
+        "gp-hypertension-followup"
+      ],
+      "purpose": "Documentation support for race-free CKD-EPI 2021 estimated GFR from clinician-entered creatinine, age, and sex.",
+      "clinical_context": "Renal function documentation context. Clinician interpretation required.",
+      "risk_level": "medium",
+      "implementation_status": "implemented",
+      "source_status": "needs_source_review",
+      "formula_status": "implemented",
+      "input_fields": [
+        {
+          "field_id": "creatinine",
+          "label": "Serum creatinine",
+          "input_type": "number",
+          "units": "umol/L",
+          "required": true,
+          "safety_note": "Clinician-entered laboratory value only."
+        },
+        {
+          "field_id": "age",
+          "label": "Age",
+          "input_type": "number",
+          "units": "years",
+          "required": true,
+          "safety_note": "Clinician-entered age only. No date of birth should be entered."
+        },
+        {
+          "field_id": "female",
+          "label": "Female sex",
+          "input_type": "boolean",
+          "units": null,
+          "required": true,
+          "safety_note": "Clinician-entered value only."
+        }
+      ],
+      "output_fields": [
+        {
+          "field_id": "egfr_value",
+          "label": "Estimated GFR (mL/min/1.73m^2)",
+          "output_type": "number",
+          "safety_note": "eGFR is an estimate for documentation support only; clinician interpretation required. Acute kidney injury, extremes of body size, or rapidly changing creatinine reduce accuracy."
+        },
+        {
+          "field_id": "ckd_stage",
+          "label": "CKD stage",
+          "output_type": "category",
+          "safety_note": "Stage labelling supports documentation only; clinician interpretation required."
+        }
+      ],
+      "interpretation_mode": "score",
+      "safety_note": "eGFR is an estimate for documentation support only; clinician interpretation required. Acute kidney injury, extremes of body size, or rapidly changing creatinine reduce accuracy.",
       "display_conditions": [],
       "review_required": true
     }
