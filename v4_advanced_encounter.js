@@ -1,8 +1,26 @@
 (function() {
   'use strict';
 
-  var params = new URLSearchParams(window.location.search);
-  if (params.get('v4') !== 'encounter2' && window.location.hash !== '#advanced-encounter') return;
+  // Activation: Advanced Mode runs only when the user explicitly navigates to it.
+  // Triggers: ?v4=encounter2 (legacy URL), #advanced-encounter, or #v4
+  function shouldActivate() {
+    var p = new URLSearchParams(window.location.search);
+    if (p.get('v4') === 'encounter2') return true;
+    var h = window.location.hash;
+    if (h === '#advanced-encounter' || h === '#v4') return true;
+    return false;
+  }
+  if (!shouldActivate()) {
+    // Listen for later navigation to Advanced Mode (e.g. via showPage)
+    window.addEventListener('hashchange', function() {
+      if (shouldActivate() && !window._v4Activated) {
+        window._v4Activated = true;
+        bootV4();
+      }
+    });
+    return;
+  }
+  window._v4Activated = true;
 
   // ================================================================
   //  GLOBAL V4 ENCOUNTER STATE (single source of truth)
@@ -2170,15 +2188,17 @@ function fillCalcDropdown() {
     });
   }
 
-  // ================================================================
-  //  STYLES
-  // ================================================================
-  var style = document.createElement('style');
-  style.textContent = V4_STYLES();
-  document.head.appendChild(style);
+  function bootV4() {
+    var style = document.createElement('style');
+    style.textContent = V4_STYLES();
+    document.head.appendChild(style);
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+    else init();
+  }
+
+  // Boot now if we're activating immediately
+  bootV4();
 
   function V4_STYLES() {
     return `
