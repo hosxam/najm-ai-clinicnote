@@ -2,7 +2,7 @@
   'use strict';
 
   var params = new URLSearchParams(window.location.search);
-  if (params.get('v4') !== 'encounter2') return;
+  if (params.get('v4') !== 'encounter2' && window.location.hash !== '#advanced-encounter') return;
 
   // ================================================================
   //  GLOBAL V4 ENCOUNTER STATE (single source of truth)
@@ -969,7 +969,8 @@
   }
 
   // ================================================================
-  //  MANUAL CALCULATOR SEARCH (Step 5)function fillCalcDropdown() {
+  //  MANUAL CALCULATOR SEARCH (Step 5)
+function fillCalcDropdown() {
     var opts = [];
     var skipIds = {};
     if (state.selectedWorkflowId) {

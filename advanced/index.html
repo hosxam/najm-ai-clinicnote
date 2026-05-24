@@ -6,59 +6,10 @@
 <title>Opening Advanced Mode | Najm AI ClinicNote</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<meta http-equiv="refresh" content="0; url=../?v4=encounter2">
-<script>
-(function () {
-  var target = new URL("../", window.location.href);
-  var incoming = new URLSearchParams(window.location.search);
-  var outgoing = new URLSearchParams();
-  outgoing.set("v4", "encounter2");
-  incoming.forEach(function (value, key) {
-    if (key !== "v4") outgoing.append(key, value);
-  });
-  target.search = outgoing.toString();
-  window.location.replace(target.href);
-})();
-</script>
-<style>
-body {
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #0f172a;
-  background: #f8fafc;
-  margin: 0;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: 24px;
-}
-.redirect-card {
-  max-width: 480px;
-  background: #fff;
-  border: 1px solid #dbe3ea;
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-}
-h1 {
-  font-size: 22px;
-  margin: 0 0 8px;
-}
-p {
-  margin: 0 0 14px;
-  color: #475569;
-  line-height: 1.6;
-}
-a {
-  color: #0f766e;
-  font-weight: 700;
-}
-</style>
+<meta http-equiv="refresh" content="0; url=../#advanced-encounter">
+<script>window.location.replace("../#advanced-encounter");</script>
 </head>
 <body>
-<main class="redirect-card">
-  <h1>Opening Advanced Mode</h1>
-  <p>Advanced Mode is loading. If it does not open automatically, use the link below.</p>
-  <p><a href="../?v4=encounter2">Open Advanced Mode</a></p>
-</main>
+<p>Opening Advanced Mode... <a href="../#advanced-encounter">Click here if not redirected</a></p>
 </body>
 </html>
