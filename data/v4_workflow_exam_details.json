@@ -12885,5 +12885,209 @@
     "named_tests": [],
     "safety_note": "Document only if assessed. These prompts support paediatric fever examination documentation, not examination instructions.",
     "review_required": true
+  },
+  {
+    "workflow_id": "urgent-anaphylaxis",
+    "exam_groups": [
+      {
+        "group_id": "vitals_urgent-allergic-reaction",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "vitals_urgent-allergic-reaction",
+            "prompt_text": "Vital signs documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rash_urgent-allergic-reaction",
+        "group_label": "Rash and swelling",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "rash_doc_urgent-allergic-reaction",
+            "prompt_text": "Rash documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "rash_dist_urgent-allergic-reaction",
+            "prompt_text": "Rash distribution documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "angioedema_urgent-allergic-reaction",
+            "prompt_text": "Angioedema documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "resp_urgent-allergic-reaction",
+        "group_label": "Respiratory and airway",
+        "display_order": 3,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "resp_status_urgent-allergic-reaction",
+            "prompt_text": "Respiratory status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "airway_urgent-allergic-reaction",
+            "prompt_text": "Airway status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "Anaphylaxis"
+  },
+  {
+    "workflow_id": "urgent-dka",
+    "exam_groups": [
+      {
+        "group_id": "vitals_urgent-allergic-reaction",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "vitals_urgent-allergic-reaction",
+            "prompt_text": "Vital signs documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rash_urgent-allergic-reaction",
+        "group_label": "Rash and swelling",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "rash_doc_urgent-allergic-reaction",
+            "prompt_text": "Rash documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "rash_dist_urgent-allergic-reaction",
+            "prompt_text": "Rash distribution documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "angioedema_urgent-allergic-reaction",
+            "prompt_text": "Angioedema documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "resp_urgent-allergic-reaction",
+        "group_label": "Respiratory and airway",
+        "display_order": 3,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "resp_status_urgent-allergic-reaction",
+            "prompt_text": "Respiratory status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "airway_urgent-allergic-reaction",
+            "prompt_text": "Airway status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "DKA Documentation"
+  },
+  {
+    "workflow_id": "derm-skin-cancer-2ww",
+    "exam_groups": [
+      {
+        "group_id": "vitals_urgent-allergic-reaction",
+        "group_label": "Vital signs",
+        "display_order": 1,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "vitals_urgent-allergic-reaction",
+            "prompt_text": "Vital signs documented if measured.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "rash_urgent-allergic-reaction",
+        "group_label": "Rash and swelling",
+        "display_order": 2,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "rash_doc_urgent-allergic-reaction",
+            "prompt_text": "Rash documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "rash_dist_urgent-allergic-reaction",
+            "prompt_text": "Rash distribution documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "angioedema_urgent-allergic-reaction",
+            "prompt_text": "Angioedema documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      },
+      {
+        "group_id": "resp_urgent-allergic-reaction",
+        "group_label": "Respiratory and airway",
+        "display_order": 3,
+        "safety_note": "Document only if assessed.",
+        "prompts": [
+          {
+            "prompt_id": "resp_status_urgent-allergic-reaction",
+            "prompt_text": "Respiratory status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          },
+          {
+            "prompt_id": "airway_urgent-allergic-reaction",
+            "prompt_text": "Airway status documented if assessed.",
+            "documentation_style": "documented_if_assessed",
+            "required_level": "conditional"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Document only if assessed. No treatment or triage recommendations. Clinician review required. Local protocol applies.",
+    "review_required": true,
+    "workflow_display_name": "Skin Cancer 2WW Referral"
   }
 ]

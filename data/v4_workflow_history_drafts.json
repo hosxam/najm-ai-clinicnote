@@ -4451,5 +4451,65 @@
     ],
     "safety_note": "Editable documentation draft only. Paediatric safeguarding and safety concerns require clinician judgment and local protocol.",
     "review_required": true
+  },
+  {
+    "workflow_id": "urgent-anaphylaxis",
+    "workflow_display_name": "Anaphylaxis",
+    "default_history_draft": "Patient presented with suspected anaphylaxis. Trigger: [trigger]. Time from exposure to symptoms: [time]. Symptoms: airway [airway status], breathing [breathing status], circulation [circulatory status], skin [skin findings], GI [GI symptoms]. Previous anaphylaxis: [yes/no]. Known allergies: [allergies]. Asthma: [yes/no]. Current medications including beta-blockers and ACEi: [medications]. Witnessed by: [witness]. [Additional context].",
+    "editable_placeholders": [],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No emergency treatment or medication instructions.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
+  },
+  {
+    "workflow_id": "urgent-dka",
+    "workflow_display_name": "DKA Documentation",
+    "default_history_draft": "Patient presented with suspected DKA. Known diabetic: [yes/no]. Type of diabetes: [type]. Polyuria/polydipsia onset: [duration]. Recent illness/infection: [trigger]. Insulin adherence: [adherence]. SGLT2 inhibitor use: [SGLT2]. Vomiting: [yes/no]. GCS: [GCS]. Capillary glucose: [glucose]. Capillary ketones: [ketones]. Last HbA1c: [HbA1c]. [Relevant negatives reviewed]. [Additional context].",
+    "editable_placeholders": [],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No emergency treatment or medication instructions.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
+  },
+  {
+    "workflow_id": "derm-skin-cancer-2ww",
+    "workflow_display_name": "Skin Cancer 2WW Referral",
+    "default_history_draft": "Patient presented with concerning skin lesion. Site: [site]. Onset: [duration]. Changes noted: [changes - size/colour/border/itch/bleed]. ABCDE assessment: A [asymmetry], B [border], C [colour], D [diameter], E [evolving]. Risk factors: fair skin [yes/no], frequent sun exposure [yes/no], previous skin cancer [yes/no], family history [yes/no], immunosuppression [yes/no]. Photographed: [yes/no]. Dermoscopy: [findings]. [Relevant negatives]. [Additional context].",
+    "editable_placeholders": [],
+    "optional_full_history_sections": [
+      "surgical history",
+      "medications",
+      "allergies",
+      "social history"
+    ],
+    "safety_note": "Documentation prompts only. No emergency treatment or medication instructions.",
+    "review_required": true,
+    "linked_autofill_groups": [
+      "symptoms",
+      "exam_findings",
+      "plan_phrases",
+      "follow_up"
+    ]
   }
 ]

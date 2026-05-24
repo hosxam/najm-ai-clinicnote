@@ -1,6 +1,6 @@
 // GENERATED_CLINICAL_DATA.js — Najm AI ClinicNote
 // Auto-generated. Do not edit manually.
-// Generated: 2026-05-24 17:07:44
+// Generated: 2026-05-24 17:28:51
 // Source: /data JSON files (validated)
 
 (function() {
@@ -42,26 +42,26 @@
   var data = {
   "metadata": {
     "version": "v2",
-    "generated_at": "2026-05-24 17:07:44",
+    "generated_at": "2026-05-24 17:28:51",
     "source": "validated_json_dataset (data/ CSVs -> JSON, commit 262c021)",
     "warning": "Documentation support only. Clinician review required.",
     "description": "Najm AI ClinicNote clinical data bundle. Built from /data JSON files."
   },
   "stats": {
     "specialty_count": 14,
-    "workflow_count": 151,
-    "chip_count": 9622,
+    "workflow_count": 154,
+    "chip_count": 9876,
     "diagnosis_index_count": 423,
     "report_template_count": 7,
     "history_layout_count": 14,
     "chip_group_counts": {
-      "symptoms": 1775,
-      "relevant_negatives": 1181,
-      "exam_findings": 1524,
-      "red_flags": 941,
-      "investigations": 1269,
-      "plan_phrases": 2220,
-      "follow_up": 712
+      "symptoms": 1835,
+      "relevant_negatives": 1201,
+      "exam_findings": 1581,
+      "red_flags": 965,
+      "investigations": 1299,
+      "plan_phrases": 2263,
+      "follow_up": 732
     },
     "workflow_chip_min": 47,
     "workflow_chip_max": 103,
@@ -71,10 +71,10 @@
       "OB/GYN": 10,
       "Orthopedics / MSK": 12,
       "ENT": 8,
-      "Dermatology": 8,
+      "Dermatology": 9,
       "Ophthalmology": 6,
       "Psychiatry / Mental Health": 6,
-      "Emergency / Urgent Care": 10,
+      "Emergency / Urgent Care": 12,
       "Cardiology": 10,
       "Neurology": 10,
       "Respiratory / Pulmonology": 10,
@@ -1926,7 +1926,7 @@
       "specialty_id": "Dermatology",
       "display_name": "Dermatology",
       "icon": null,
-      "workflow_count": 8,
+      "workflow_count": 9,
       "history_layout_id": "Dermatology",
       "workflows": [
         {
@@ -2164,6 +2164,35 @@
             "icd_system": null,
             "icd_code": null,
             "icd_label": null,
+            "icd_verified": false,
+            "icd_source": null
+          }
+        },
+        {
+          "workflow_id": "derm-skin-cancer-2ww",
+          "chief_complaint": "Suspected skin cancer (2-week wait)",
+          "diagnosis": "Suspected skin cancer pending dermatology review",
+          "display_name": "Suspected skin cancer (2-week wait) / Suspected skin cancer pending dermatology review",
+          "chip_groups": [
+            "symptoms",
+            "relevant_negatives",
+            "exam_findings",
+            "red_flags",
+            "plan_phrases",
+            "follow_up"
+          ],
+          "min_sections": [
+            "hpi"
+          ],
+          "filters": {
+            "age_min_months": null,
+            "age_max_years": null,
+            "sex": null
+          },
+          "icd_metadata": {
+            "icd_system": "ICD-10-CM",
+            "icd_code": "D48.5",
+            "icd_label": "Neoplasm of uncertain behavior of skin",
             "icd_verified": false,
             "icd_source": null
           }
@@ -123948,6 +123977,3001 @@
         "viral pyrexia",
         "febrile illness"
       ]
+    },
+    "urgent-anaphylaxis": {
+      "workflow_id": "urgent-anaphylaxis",
+      "display_name": "Anaphylaxis / Anaphylactic reaction",
+      "specialty": "Emergency / Urgent Care",
+      "chief_complaint": "Anaphylaxis",
+      "diagnosis": "Anaphylactic reaction",
+      "diagnosis_label": "Anaphylactic reaction",
+      "history_layout_id": "General Medicine / GP",
+      "filters": {
+        "age_min_months": null,
+        "age_max_years": null,
+        "sex": null
+      },
+      "chip_groups": [
+        "symptoms",
+        "relevant_negatives",
+        "exam_findings",
+        "red_flags",
+        "plan_phrases",
+        "follow_up"
+      ],
+      "group_prompts": {
+        "symptoms": "Select symptoms present",
+        "relevant_negatives": "Select negatives ruled out",
+        "exam_findings": "Select examination findings",
+        "red_flags": "Red flags discussed with patient",
+        "plan_phrases": "Select plan items",
+        "follow_up": "Follow-up interval"
+      },
+      "min_sections": [
+        "hpi"
+      ],
+      "synonyms": [],
+      "icd": {
+        "system": "ICD-10-CM",
+        "code": "T78.2",
+        "label": "Anaphylactic shock, unspecified",
+        "verified": false,
+        "source": null
+      },
+      "chip_counts": {
+        "symptoms": 23,
+        "relevant_negatives": 7,
+        "exam_findings": 18,
+        "red_flags": 8,
+        "investigations": 9,
+        "plan_phrases": 15,
+        "follow_up": 6
+      },
+      "total_chips": 86,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-1",
+            "chip_text": "sudden onset airway compromise",
+            "order": 1,
+            "search_terms": [
+              "sudden"
+            ],
+            "tags": [
+              "onset"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-2",
+            "chip_text": "lip and tongue swelling",
+            "order": 2,
+            "search_terms": [
+              "lip"
+            ],
+            "tags": [
+              "and"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-3",
+            "chip_text": "tongue swelling causing dysarthria",
+            "order": 3,
+            "search_terms": [
+              "tongue"
+            ],
+            "tags": [
+              "swelling"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-4",
+            "chip_text": "difficulty swallowing",
+            "order": 4,
+            "search_terms": [
+              "difficulty"
+            ],
+            "tags": [
+              "swallowing"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-5",
+            "chip_text": "stridor",
+            "order": 5,
+            "search_terms": [
+              "stridor"
+            ],
+            "tags": [
+              "stridor"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-6",
+            "chip_text": "hoarse voice",
+            "order": 6,
+            "search_terms": [
+              "hoarse"
+            ],
+            "tags": [
+              "voice"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-7",
+            "chip_text": "severe SOB at rest",
+            "order": 7,
+            "search_terms": [
+              "severe"
+            ],
+            "tags": [
+              "sob"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-8",
+            "chip_text": "wheeze and tight chest",
+            "order": 8,
+            "search_terms": [
+              "wheeze"
+            ],
+            "tags": [
+              "and"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-9",
+            "chip_text": "feeling of impending doom",
+            "order": 9,
+            "search_terms": [
+              "feeling"
+            ],
+            "tags": [
+              "of"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-10",
+            "chip_text": "collapse",
+            "order": 10,
+            "search_terms": [
+              "collapse"
+            ],
+            "tags": [
+              "collapse"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-11",
+            "chip_text": "syncope",
+            "order": 11,
+            "search_terms": [
+              "syncope"
+            ],
+            "tags": [
+              "syncope"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-12",
+            "chip_text": "urticarial rash widespread",
+            "order": 12,
+            "search_terms": [
+              "urticarial"
+            ],
+            "tags": [
+              "rash"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-13",
+            "chip_text": "flushing",
+            "order": 13,
+            "search_terms": [
+              "flushing"
+            ],
+            "tags": [
+              "flushing"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-14",
+            "chip_text": "angioedema",
+            "order": 14,
+            "search_terms": [
+              "angioedema"
+            ],
+            "tags": [
+              "angioedema"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-15",
+            "chip_text": "abdominal pain and vomiting",
+            "order": 15,
+            "search_terms": [
+              "abdominal"
+            ],
+            "tags": [
+              "pain"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-16",
+            "chip_text": "incontinence",
+            "order": 16,
+            "search_terms": [
+              "incontinence"
+            ],
+            "tags": [
+              "incontinence"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-17",
+            "chip_text": "trigger: known food allergen",
+            "order": 17,
+            "search_terms": [
+              "trigger:"
+            ],
+            "tags": [
+              "known"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-18",
+            "chip_text": "trigger: insect sting",
+            "order": 18,
+            "search_terms": [
+              "trigger:"
+            ],
+            "tags": [
+              "insect"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-19",
+            "chip_text": "trigger: medication",
+            "order": 19,
+            "search_terms": [
+              "trigger:"
+            ],
+            "tags": [
+              "medication"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-20",
+            "chip_text": "trigger: contrast media",
+            "order": 20,
+            "search_terms": [
+              "trigger:"
+            ],
+            "tags": [
+              "contrast"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-21",
+            "chip_text": "symptoms within 30 minutes of exposure",
+            "order": 21,
+            "search_terms": [
+              "symptoms"
+            ],
+            "tags": [
+              "within"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-22",
+            "chip_text": "previous anaphylaxis history",
+            "order": 22,
+            "search_terms": [
+              "previous"
+            ],
+            "tags": [
+              "anaphylaxis"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-symptoms-23",
+            "chip_text": "asthmatic — known severe asthma",
+            "order": 23,
+            "search_terms": [
+              "asthmatic"
+            ],
+            "tags": [
+              "—"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "urgent-anaphylaxis-relevant_negatives-1",
+            "chip_text": "no isolated urticaria without systemic features",
+            "order": 1,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "isolated"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-relevant_negatives-2",
+            "chip_text": "no known mucosal involvement",
+            "order": 2,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "known"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-relevant_negatives-3",
+            "chip_text": "no prior similar reaction",
+            "order": 3,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "prior"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-relevant_negatives-4",
+            "chip_text": "no current beta-blocker use",
+            "order": 4,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "current"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-relevant_negatives-5",
+            "chip_text": "no current ACEi use",
+            "order": 5,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "current"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-relevant_negatives-6",
+            "chip_text": "no preceding viral illness",
+            "order": 6,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "preceding"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-relevant_negatives-7",
+            "chip_text": "no recent NSAID exposure",
+            "order": 7,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "recent"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-1",
+            "chip_text": "BP <90/60 (hypotensive)",
+            "order": 1,
+            "search_terms": [
+              "bp"
+            ],
+            "tags": [
+              "<90/60"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-2",
+            "chip_text": "BP 90-110 systolic (borderline)",
+            "order": 2,
+            "search_terms": [
+              "bp"
+            ],
+            "tags": [
+              "90-110"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-3",
+            "chip_text": "HR >120 bpm",
+            "order": 3,
+            "search_terms": [
+              "hr"
+            ],
+            "tags": [
+              ">120"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-4",
+            "chip_text": "SpO2 <94% on RA",
+            "order": 4,
+            "search_terms": [
+              "spo2"
+            ],
+            "tags": [
+              "<94%"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-5",
+            "chip_text": "SpO2 92% on RA",
+            "order": 5,
+            "search_terms": [
+              "spo2"
+            ],
+            "tags": [
+              "92%"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-6",
+            "chip_text": "RR >25/min",
+            "order": 6,
+            "search_terms": [
+              "rr"
+            ],
+            "tags": [
+              ">25/min"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-7",
+            "chip_text": "audible stridor",
+            "order": 7,
+            "search_terms": [
+              "audible"
+            ],
+            "tags": [
+              "stridor"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-8",
+            "chip_text": "silent chest (severe bronchospasm)",
+            "order": 8,
+            "search_terms": [
+              "silent"
+            ],
+            "tags": [
+              "chest"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-9",
+            "chip_text": "expiratory wheeze bilateral",
+            "order": 9,
+            "search_terms": [
+              "expiratory"
+            ],
+            "tags": [
+              "wheeze"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-10",
+            "chip_text": "tongue swollen and protruding",
+            "order": 10,
+            "search_terms": [
+              "tongue"
+            ],
+            "tags": [
+              "swollen"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-11",
+            "chip_text": "lip swelling — cannot close mouth",
+            "order": 11,
+            "search_terms": [
+              "lip"
+            ],
+            "tags": [
+              "swelling"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-12",
+            "chip_text": "urticarial rash trunk and limbs",
+            "order": 12,
+            "search_terms": [
+              "urticarial"
+            ],
+            "tags": [
+              "rash"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-13",
+            "chip_text": "facial flushing",
+            "order": 13,
+            "search_terms": [
+              "facial"
+            ],
+            "tags": [
+              "flushing"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-14",
+            "chip_text": "GCS 15/15",
+            "order": 14,
+            "search_terms": [
+              "gcs"
+            ],
+            "tags": [
+              "15/15"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-15",
+            "chip_text": "GCS 13-14/15 (drowsy)",
+            "order": 15,
+            "search_terms": [
+              "gcs"
+            ],
+            "tags": [
+              "13-14/15"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-16",
+            "chip_text": "capillary refill >3 seconds",
+            "order": 16,
+            "search_terms": [
+              "capillary"
+            ],
+            "tags": [
+              "refill"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-17",
+            "chip_text": "cyanosis peripheral",
+            "order": 17,
+            "search_terms": [
+              "cyanosis"
+            ],
+            "tags": [
+              "peripheral"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-exam_findings-18",
+            "chip_text": "cyanosis central",
+            "order": 18,
+            "search_terms": [
+              "cyanosis"
+            ],
+            "tags": [
+              "central"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "urgent-anaphylaxis-red_flags-1",
+            "chip_text": "AIRWAY COMPROMISE — call anaesthetist",
+            "order": 1,
+            "search_terms": [
+              "airway"
+            ],
+            "tags": [
+              "compromise"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-red_flags-2",
+            "chip_text": "BP <90 systolic — circulatory failure",
+            "order": 2,
+            "search_terms": [
+              "bp"
+            ],
+            "tags": [
+              "<90"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-red_flags-3",
+            "chip_text": "persistent hypotension despite adrenaline",
+            "order": 3,
+            "search_terms": [
+              "persistent"
+            ],
+            "tags": [
+              "hypotension"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-red_flags-4",
+            "chip_text": "biphasic reaction risk (asthma + anaphylaxis)",
+            "order": 4,
+            "search_terms": [
+              "biphasic"
+            ],
+            "tags": [
+              "reaction"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-red_flags-5",
+            "chip_text": "history of severe asthma + anaphylaxis",
+            "order": 5,
+            "search_terms": [
+              "history"
+            ],
+            "tags": [
+              "of"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-red_flags-6",
+            "chip_text": "pregnancy + anaphylaxis",
+            "order": 6,
+            "search_terms": [
+              "pregnancy"
+            ],
+            "tags": [
+              "+"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-red_flags-7",
+            "chip_text": "cardiac arrest peri-presentation",
+            "order": 7,
+            "search_terms": [
+              "cardiac"
+            ],
+            "tags": [
+              "arrest"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-red_flags-8",
+            "chip_text": "failure to respond to two doses of adrenaline",
+            "order": 8,
+            "search_terms": [
+              "failure"
+            ],
+            "tags": [
+              "to"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "urgent-anaphylaxis-investigations-1",
+            "chip_text": "mast cell tryptase: baseline (now), 1-2hr, 24hr",
+            "order": 1,
+            "search_terms": [
+              "mast"
+            ],
+            "tags": [
+              "cell"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-investigations-2",
+            "chip_text": "ECG: sinus tachycardia",
+            "order": 2,
+            "search_terms": [
+              "ecg:"
+            ],
+            "tags": [
+              "sinus"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-investigations-3",
+            "chip_text": "ECG: ischaemic changes",
+            "order": 3,
+            "search_terms": [
+              "ecg:"
+            ],
+            "tags": [
+              "ischaemic"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-investigations-4",
+            "chip_text": "ABG: type 1 respiratory failure",
+            "order": 4,
+            "search_terms": [
+              "abg:"
+            ],
+            "tags": [
+              "type"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-investigations-5",
+            "chip_text": "glucose: documented",
+            "order": 5,
+            "search_terms": [
+              "glucose:"
+            ],
+            "tags": [
+              "documented"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-investigations-6",
+            "chip_text": "FBC, U&Es, CRP: sent",
+            "order": 6,
+            "search_terms": [
+              "fbc,"
+            ],
+            "tags": [
+              "u&es,"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-investigations-7",
+            "chip_text": "troponin if cardiac symptoms",
+            "order": 7,
+            "search_terms": [
+              "troponin"
+            ],
+            "tags": [
+              "if"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-investigations-8",
+            "chip_text": "CXR if respiratory symptoms",
+            "order": 8,
+            "search_terms": [
+              "cxr"
+            ],
+            "tags": [
+              "if"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-investigations-9",
+            "chip_text": "allergy referral arranged (immunology clinic)",
+            "order": 9,
+            "search_terms": [
+              "allergy"
+            ],
+            "tags": [
+              "referral"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-1",
+            "chip_text": "IM adrenaline thigh given per local protocol",
+            "order": 1,
+            "search_terms": [
+              "im"
+            ],
+            "tags": [
+              "adrenaline"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-2",
+            "chip_text": "IM adrenaline repeat at 5 minutes if no improvement",
+            "order": 2,
+            "search_terms": [
+              "im"
+            ],
+            "tags": [
+              "adrenaline"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-3",
+            "chip_text": "high-flow oxygen via non-rebreather",
+            "order": 3,
+            "search_terms": [
+              "high-flow"
+            ],
+            "tags": [
+              "oxygen"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-4",
+            "chip_text": "IV access established",
+            "order": 4,
+            "search_terms": [
+              "iv"
+            ],
+            "tags": [
+              "access"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-5",
+            "chip_text": "fluid resuscitation per protocol",
+            "order": 5,
+            "search_terms": [
+              "fluid"
+            ],
+            "tags": [
+              "resuscitation"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-6",
+            "chip_text": "IV antihistamine given per protocol",
+            "order": 6,
+            "search_terms": [
+              "iv"
+            ],
+            "tags": [
+              "antihistamine"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-7",
+            "chip_text": "IV hydrocortisone given per protocol",
+            "order": 7,
+            "search_terms": [
+              "iv"
+            ],
+            "tags": [
+              "hydrocortisone"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-8",
+            "chip_text": "salbutamol nebuliser for bronchospasm",
+            "order": 8,
+            "search_terms": [
+              "salbutamol"
+            ],
+            "tags": [
+              "nebuliser"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-9",
+            "chip_text": "continuous monitoring established",
+            "order": 9,
+            "search_terms": [
+              "continuous"
+            ],
+            "tags": [
+              "monitoring"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-10",
+            "chip_text": "ED admission for observation",
+            "order": 10,
+            "search_terms": [
+              "ed"
+            ],
+            "tags": [
+              "admission"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-11",
+            "chip_text": "allergy clinic referral arranged",
+            "order": 11,
+            "search_terms": [
+              "allergy"
+            ],
+            "tags": [
+              "clinic"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-12",
+            "chip_text": "auto-injector pen prescribed and training provided",
+            "order": 12,
+            "search_terms": [
+              "auto-injector"
+            ],
+            "tags": [
+              "pen"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-13",
+            "chip_text": "anaphylaxis action plan provided to patient",
+            "order": 13,
+            "search_terms": [
+              "anaphylaxis"
+            ],
+            "tags": [
+              "action"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-14",
+            "chip_text": "medical alert bracelet recommended",
+            "order": 14,
+            "search_terms": [
+              "medical"
+            ],
+            "tags": [
+              "alert"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-plan_phrases-15",
+            "chip_text": "trigger avoidance counselling documented",
+            "order": 15,
+            "search_terms": [
+              "trigger"
+            ],
+            "tags": [
+              "avoidance"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "urgent-anaphylaxis-follow_up-1",
+            "chip_text": "observation 6-12 hours minimum",
+            "order": 1,
+            "search_terms": [
+              "observation"
+            ],
+            "tags": [
+              "6-12"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-follow_up-2",
+            "chip_text": "observation 24 hours if biphasic risk",
+            "order": 2,
+            "search_terms": [
+              "observation"
+            ],
+            "tags": [
+              "24"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-follow_up-3",
+            "chip_text": "allergy/immunology clinic referral within 4 weeks",
+            "order": 3,
+            "search_terms": [
+              "allergy/immunology"
+            ],
+            "tags": [
+              "clinic"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-follow_up-4",
+            "chip_text": "GP follow-up within 1 week",
+            "order": 4,
+            "search_terms": [
+              "gp"
+            ],
+            "tags": [
+              "follow-up"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-follow_up-5",
+            "chip_text": "auto-injector training appointment arranged",
+            "order": 5,
+            "search_terms": [
+              "auto-injector"
+            ],
+            "tags": [
+              "training"
+            ]
+          },
+          {
+            "chip_id": "urgent-anaphylaxis-follow_up-6",
+            "chip_text": "return immediately if symptoms recur",
+            "order": 6,
+            "search_terms": [
+              "return"
+            ],
+            "tags": [
+              "immediately"
+            ]
+          }
+        ]
+      }
+    },
+    "urgent-dka": {
+      "workflow_id": "urgent-dka",
+      "display_name": "Diabetic ketoacidosis (DKA) / Diabetic ketoacidosis",
+      "specialty": "Emergency / Urgent Care",
+      "chief_complaint": "Diabetic ketoacidosis (DKA)",
+      "diagnosis": "Diabetic ketoacidosis",
+      "diagnosis_label": "Diabetic ketoacidosis",
+      "history_layout_id": "General Medicine / GP",
+      "filters": {
+        "age_min_months": null,
+        "age_max_years": null,
+        "sex": null
+      },
+      "chip_groups": [
+        "symptoms",
+        "relevant_negatives",
+        "exam_findings",
+        "red_flags",
+        "plan_phrases",
+        "follow_up"
+      ],
+      "group_prompts": {
+        "symptoms": "Select symptoms present",
+        "relevant_negatives": "Select negatives ruled out",
+        "exam_findings": "Select examination findings",
+        "red_flags": "Red flags discussed with patient",
+        "plan_phrases": "Select plan items",
+        "follow_up": "Follow-up interval"
+      },
+      "min_sections": [
+        "hpi"
+      ],
+      "synonyms": [],
+      "icd": {
+        "system": "ICD-10-CM",
+        "code": "E11.10",
+        "label": "Type 2 diabetes mellitus with ketoacidosis without coma",
+        "verified": false,
+        "source": null
+      },
+      "chip_counts": {
+        "symptoms": 17,
+        "relevant_negatives": 7,
+        "exam_findings": 16,
+        "red_flags": 8,
+        "investigations": 15,
+        "plan_phrases": 17,
+        "follow_up": 8
+      },
+      "total_chips": 88,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "urgent-dka-symptoms-1",
+            "chip_text": "polyuria for days",
+            "order": 1,
+            "search_terms": [
+              "polyuria"
+            ],
+            "tags": [
+              "for"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-2",
+            "chip_text": "polydipsia",
+            "order": 2,
+            "search_terms": [
+              "polydipsia"
+            ],
+            "tags": [
+              "polydipsia"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-3",
+            "chip_text": "weight loss recent",
+            "order": 3,
+            "search_terms": [
+              "weight"
+            ],
+            "tags": [
+              "loss"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-4",
+            "chip_text": "nausea",
+            "order": 4,
+            "search_terms": [
+              "nausea"
+            ],
+            "tags": [
+              "nausea"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-5",
+            "chip_text": "vomiting persistent",
+            "order": 5,
+            "search_terms": [
+              "vomiting"
+            ],
+            "tags": [
+              "persistent"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-6",
+            "chip_text": "abdominal pain (especially in children)",
+            "order": 6,
+            "search_terms": [
+              "abdominal"
+            ],
+            "tags": [
+              "pain"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-7",
+            "chip_text": "fruity breath odour",
+            "order": 7,
+            "search_terms": [
+              "fruity"
+            ],
+            "tags": [
+              "breath"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-8",
+            "chip_text": "lethargy",
+            "order": 8,
+            "search_terms": [
+              "lethargy"
+            ],
+            "tags": [
+              "lethargy"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-9",
+            "chip_text": "confusion",
+            "order": 9,
+            "search_terms": [
+              "confusion"
+            ],
+            "tags": [
+              "confusion"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-10",
+            "chip_text": "reduced GCS",
+            "order": 10,
+            "search_terms": [
+              "reduced"
+            ],
+            "tags": [
+              "gcs"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-11",
+            "chip_text": "recent illness or infection trigger",
+            "order": 11,
+            "search_terms": [
+              "recent"
+            ],
+            "tags": [
+              "illness"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-12",
+            "chip_text": "missed insulin doses",
+            "order": 12,
+            "search_terms": [
+              "missed"
+            ],
+            "tags": [
+              "insulin"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-13",
+            "chip_text": "new diagnosis of diabetes (T1DM)",
+            "order": 13,
+            "search_terms": [
+              "new"
+            ],
+            "tags": [
+              "diagnosis"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-14",
+            "chip_text": "pump failure",
+            "order": 14,
+            "search_terms": [
+              "pump"
+            ],
+            "tags": [
+              "failure"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-15",
+            "chip_text": "recent corticosteroid use",
+            "order": 15,
+            "search_terms": [
+              "recent"
+            ],
+            "tags": [
+              "corticosteroid"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-16",
+            "chip_text": "pregnancy",
+            "order": 16,
+            "search_terms": [
+              "pregnancy"
+            ],
+            "tags": [
+              "pregnancy"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-symptoms-17",
+            "chip_text": "recent surgery",
+            "order": 17,
+            "search_terms": [
+              "recent"
+            ],
+            "tags": [
+              "surgery"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "urgent-dka-relevant_negatives-1",
+            "chip_text": "no chest pain",
+            "order": 1,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "chest"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-relevant_negatives-2",
+            "chip_text": "no focal neurology",
+            "order": 2,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "focal"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-relevant_negatives-3",
+            "chip_text": "no severe headache",
+            "order": 3,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "severe"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-relevant_negatives-4",
+            "chip_text": "no signs of meningism",
+            "order": 4,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "signs"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-relevant_negatives-5",
+            "chip_text": "no cardiogenic features",
+            "order": 5,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "cardiogenic"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-relevant_negatives-6",
+            "chip_text": "no recent insulin dose change documented",
+            "order": 6,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "recent"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-relevant_negatives-7",
+            "chip_text": "not on SGLT2 inhibitor (euDKA risk)",
+            "order": 7,
+            "search_terms": [
+              "not"
+            ],
+            "tags": [
+              "on"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "urgent-dka-exam_findings-1",
+            "chip_text": "GCS 15/15",
+            "order": 1,
+            "search_terms": [
+              "gcs"
+            ],
+            "tags": [
+              "15/15"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-2",
+            "chip_text": "GCS 13-14/15",
+            "order": 2,
+            "search_terms": [
+              "gcs"
+            ],
+            "tags": [
+              "13-14/15"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-3",
+            "chip_text": "GCS <13 — reduced consciousness",
+            "order": 3,
+            "search_terms": [
+              "gcs"
+            ],
+            "tags": [
+              "<13"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-4",
+            "chip_text": "BP 110/70",
+            "order": 4,
+            "search_terms": [
+              "bp"
+            ],
+            "tags": [
+              "110/70"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-5",
+            "chip_text": "BP <90/60 (shock)",
+            "order": 5,
+            "search_terms": [
+              "bp"
+            ],
+            "tags": [
+              "<90/60"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-6",
+            "chip_text": "HR 110 bpm",
+            "order": 6,
+            "search_terms": [
+              "hr"
+            ],
+            "tags": [
+              "110"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-7",
+            "chip_text": "HR >120 bpm",
+            "order": 7,
+            "search_terms": [
+              "hr"
+            ],
+            "tags": [
+              ">120"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-8",
+            "chip_text": "RR 22-30 (Kussmaul breathing)",
+            "order": 8,
+            "search_terms": [
+              "rr"
+            ],
+            "tags": [
+              "22-30"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-9",
+            "chip_text": "temperature 36.8°C",
+            "order": 9,
+            "search_terms": [
+              "temperature"
+            ],
+            "tags": [
+              "36.8°c"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-10",
+            "chip_text": "temperature >38°C (infection trigger)",
+            "order": 10,
+            "search_terms": [
+              "temperature"
+            ],
+            "tags": [
+              ">38°c"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-11",
+            "chip_text": "dry mucous membranes",
+            "order": 11,
+            "search_terms": [
+              "dry"
+            ],
+            "tags": [
+              "mucous"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-12",
+            "chip_text": "reduced skin turgor",
+            "order": 12,
+            "search_terms": [
+              "reduced"
+            ],
+            "tags": [
+              "skin"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-13",
+            "chip_text": "capillary refill >3 seconds",
+            "order": 13,
+            "search_terms": [
+              "capillary"
+            ],
+            "tags": [
+              "refill"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-14",
+            "chip_text": "abdomen: tender, possible pseudoperitonitis",
+            "order": 14,
+            "search_terms": [
+              "abdomen:"
+            ],
+            "tags": [
+              "tender,"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-15",
+            "chip_text": "no focal neurology",
+            "order": 15,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "focal"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-exam_findings-16",
+            "chip_text": "fruity (acetone) breath",
+            "order": 16,
+            "search_terms": [
+              "fruity"
+            ],
+            "tags": [
+              "(acetone)"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "urgent-dka-red_flags-1",
+            "chip_text": "GCS <12 — secure airway",
+            "order": 1,
+            "search_terms": [
+              "gcs"
+            ],
+            "tags": [
+              "<12"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-red_flags-2",
+            "chip_text": "BP <90/60 — shock",
+            "order": 2,
+            "search_terms": [
+              "bp"
+            ],
+            "tags": [
+              "<90/60"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-red_flags-3",
+            "chip_text": "severe acidosis (pH <7.0)",
+            "order": 3,
+            "search_terms": [
+              "severe"
+            ],
+            "tags": [
+              "acidosis"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-red_flags-4",
+            "chip_text": "potassium <3.5 mmol/L (must replace before insulin)",
+            "order": 4,
+            "search_terms": [
+              "potassium"
+            ],
+            "tags": [
+              "<3.5"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-red_flags-5",
+            "chip_text": "cerebral oedema in children (pediatric DKA)",
+            "order": 5,
+            "search_terms": [
+              "cerebral"
+            ],
+            "tags": [
+              "oedema"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-red_flags-6",
+            "chip_text": "persistent vomiting + dehydration",
+            "order": 6,
+            "search_terms": [
+              "persistent"
+            ],
+            "tags": [
+              "vomiting"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-red_flags-7",
+            "chip_text": "concurrent MI or sepsis",
+            "order": 7,
+            "search_terms": [
+              "concurrent"
+            ],
+            "tags": [
+              "mi"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-red_flags-8",
+            "chip_text": "pregnancy + DKA",
+            "order": 8,
+            "search_terms": [
+              "pregnancy"
+            ],
+            "tags": [
+              "+"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "urgent-dka-investigations-1",
+            "chip_text": "capillary glucose: >11.0 mmol/L (or known DM)",
+            "order": 1,
+            "search_terms": [
+              "capillary"
+            ],
+            "tags": [
+              "glucose:"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-2",
+            "chip_text": "capillary ketones: >3.0 mmol/L",
+            "order": 2,
+            "search_terms": [
+              "capillary"
+            ],
+            "tags": [
+              "ketones:"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-3",
+            "chip_text": "urine dip: ketones ++++ glucose ++++",
+            "order": 3,
+            "search_terms": [
+              "urine"
+            ],
+            "tags": [
+              "dip:"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-4",
+            "chip_text": "venous blood gas: pH <7.30, HCO3 <15",
+            "order": 4,
+            "search_terms": [
+              "venous"
+            ],
+            "tags": [
+              "blood"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-5",
+            "chip_text": "venous blood gas: pH <7.0 (severe)",
+            "order": 5,
+            "search_terms": [
+              "venous"
+            ],
+            "tags": [
+              "blood"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-6",
+            "chip_text": "U&Es: K+, Na+, urea, creatinine",
+            "order": 6,
+            "search_terms": [
+              "u&es:"
+            ],
+            "tags": [
+              "k+,"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-7",
+            "chip_text": "serum osmolality",
+            "order": 7,
+            "search_terms": [
+              "serum"
+            ],
+            "tags": [
+              "osmolality"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-8",
+            "chip_text": "FBC: WCC elevated (stress/infection)",
+            "order": 8,
+            "search_terms": [
+              "fbc:"
+            ],
+            "tags": [
+              "wcc"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-9",
+            "chip_text": "CRP if infection suspected",
+            "order": 9,
+            "search_terms": [
+              "crp"
+            ],
+            "tags": [
+              "if"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-10",
+            "chip_text": "lactate",
+            "order": 10,
+            "search_terms": [
+              "lactate"
+            ],
+            "tags": [
+              "lactate"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-11",
+            "chip_text": "ECG: T-wave changes if hypokalaemia",
+            "order": 11,
+            "search_terms": [
+              "ecg:"
+            ],
+            "tags": [
+              "t-wave"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-12",
+            "chip_text": "CXR if respiratory symptoms",
+            "order": 12,
+            "search_terms": [
+              "cxr"
+            ],
+            "tags": [
+              "if"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-13",
+            "chip_text": "urine culture (UTI common trigger)",
+            "order": 13,
+            "search_terms": [
+              "urine"
+            ],
+            "tags": [
+              "culture"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-14",
+            "chip_text": "troponin if chest pain or T2DM elderly",
+            "order": 14,
+            "search_terms": [
+              "troponin"
+            ],
+            "tags": [
+              "if"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-investigations-15",
+            "chip_text": "HbA1c at presentation",
+            "order": 15,
+            "search_terms": [
+              "hba1c"
+            ],
+            "tags": [
+              "at"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "urgent-dka-plan_phrases-1",
+            "chip_text": "DKA pathway initiated per local protocol",
+            "order": 1,
+            "search_terms": [
+              "dka"
+            ],
+            "tags": [
+              "pathway"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-2",
+            "chip_text": "IV access x2 large bore",
+            "order": 2,
+            "search_terms": [
+              "iv"
+            ],
+            "tags": [
+              "access"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-3",
+            "chip_text": "fluid resuscitation IV per protocol",
+            "order": 3,
+            "search_terms": [
+              "fluid"
+            ],
+            "tags": [
+              "resuscitation"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-4",
+            "chip_text": "fixed-rate IV insulin infusion per protocol",
+            "order": 4,
+            "search_terms": [
+              "fixed-rate"
+            ],
+            "tags": [
+              "iv"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-5",
+            "chip_text": "IV potassium replacement per protocol",
+            "order": 5,
+            "search_terms": [
+              "iv"
+            ],
+            "tags": [
+              "potassium"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-6",
+            "chip_text": "monitor capillary blood glucose hourly",
+            "order": 6,
+            "search_terms": [
+              "monitor"
+            ],
+            "tags": [
+              "capillary"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-7",
+            "chip_text": "monitor capillary ketones 1-2 hourly",
+            "order": 7,
+            "search_terms": [
+              "monitor"
+            ],
+            "tags": [
+              "capillary"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-8",
+            "chip_text": "monitor VBG and U&Es 2 hourly initially",
+            "order": 8,
+            "search_terms": [
+              "monitor"
+            ],
+            "tags": [
+              "vbg"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-9",
+            "chip_text": "NG tube if vomiting or reduced GCS",
+            "order": 9,
+            "search_terms": [
+              "ng"
+            ],
+            "tags": [
+              "tube"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-10",
+            "chip_text": "urinary catheter for fluid balance",
+            "order": 10,
+            "search_terms": [
+              "urinary"
+            ],
+            "tags": [
+              "catheter"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-11",
+            "chip_text": "continuous cardiac monitoring",
+            "order": 11,
+            "search_terms": [
+              "continuous"
+            ],
+            "tags": [
+              "cardiac"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-12",
+            "chip_text": "admit to HDU if severe",
+            "order": 12,
+            "search_terms": [
+              "admit"
+            ],
+            "tags": [
+              "to"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-13",
+            "chip_text": "admit to ITU if shocked or unconscious",
+            "order": 13,
+            "search_terms": [
+              "admit"
+            ],
+            "tags": [
+              "to"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-14",
+            "chip_text": "diabetes specialist nurse referral",
+            "order": 14,
+            "search_terms": [
+              "diabetes"
+            ],
+            "tags": [
+              "specialist"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-15",
+            "chip_text": "precipitant cause investigated and treated",
+            "order": 15,
+            "search_terms": [
+              "precipitant"
+            ],
+            "tags": [
+              "cause"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-16",
+            "chip_text": "insulin regimen review on recovery",
+            "order": 16,
+            "search_terms": [
+              "insulin"
+            ],
+            "tags": [
+              "regimen"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-plan_phrases-17",
+            "chip_text": "patient education on sick day rules",
+            "order": 17,
+            "search_terms": [
+              "patient"
+            ],
+            "tags": [
+              "education"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "urgent-dka-follow_up-1",
+            "chip_text": "HDU/ITU admission planned if severe",
+            "order": 1,
+            "search_terms": [
+              "admit"
+            ],
+            "tags": [
+              "to"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-follow_up-2",
+            "chip_text": "medical ward admission planned if mild-moderate",
+            "order": 2,
+            "search_terms": [
+              "admit"
+            ],
+            "tags": [
+              "to"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-follow_up-3",
+            "chip_text": "diabetes team review within 24 hours",
+            "order": 3,
+            "search_terms": [
+              "diabetes"
+            ],
+            "tags": [
+              "team"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-follow_up-4",
+            "chip_text": "sick day rules education before discharge",
+            "order": 4,
+            "search_terms": [
+              "sick"
+            ],
+            "tags": [
+              "day"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-follow_up-5",
+            "chip_text": "GP follow-up in 1 week",
+            "order": 5,
+            "search_terms": [
+              "gp"
+            ],
+            "tags": [
+              "follow-up"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-follow_up-6",
+            "chip_text": "diabetes nurse follow-up appointment",
+            "order": 6,
+            "search_terms": [
+              "diabetes"
+            ],
+            "tags": [
+              "nurse"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-follow_up-7",
+            "chip_text": "home glucose and ketone meters arranged",
+            "order": 7,
+            "search_terms": [
+              "home"
+            ],
+            "tags": [
+              "glucose"
+            ]
+          },
+          {
+            "chip_id": "urgent-dka-follow_up-8",
+            "chip_text": "return immediately if vomiting or ketones rising",
+            "order": 8,
+            "search_terms": [
+              "return"
+            ],
+            "tags": [
+              "immediately"
+            ]
+          }
+        ]
+      }
+    },
+    "derm-skin-cancer-2ww": {
+      "workflow_id": "derm-skin-cancer-2ww",
+      "display_name": "Suspected skin cancer (2-week wait) / Suspected skin cancer pending dermatology review",
+      "specialty": "Dermatology",
+      "chief_complaint": "Suspected skin cancer (2-week wait)",
+      "diagnosis": "Suspected skin cancer pending dermatology review",
+      "diagnosis_label": "Suspected skin cancer pending dermatology review",
+      "history_layout_id": "Dermatology",
+      "filters": {
+        "age_min_months": null,
+        "age_max_years": null,
+        "sex": null
+      },
+      "chip_groups": [
+        "symptoms",
+        "relevant_negatives",
+        "exam_findings",
+        "red_flags",
+        "plan_phrases",
+        "follow_up"
+      ],
+      "group_prompts": {
+        "symptoms": "Select symptoms present",
+        "relevant_negatives": "Select negatives ruled out",
+        "exam_findings": "Select examination findings",
+        "red_flags": "Red flags discussed with patient",
+        "plan_phrases": "Select plan items",
+        "follow_up": "Follow-up interval"
+      },
+      "min_sections": [
+        "hpi"
+      ],
+      "synonyms": [],
+      "icd": {
+        "system": "ICD-10-CM",
+        "code": "D48.5",
+        "label": "Neoplasm of uncertain behavior of skin",
+        "verified": false,
+        "source": null
+      },
+      "chip_counts": {
+        "symptoms": 20,
+        "relevant_negatives": 6,
+        "exam_findings": 23,
+        "red_flags": 8,
+        "investigations": 6,
+        "plan_phrases": 11,
+        "follow_up": 6
+      },
+      "total_chips": 80,
+      "chips": {
+        "symptoms": [
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-1",
+            "chip_text": "changing pigmented lesion",
+            "order": 1,
+            "search_terms": [
+              "changing"
+            ],
+            "tags": [
+              "pigmented"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-2",
+            "chip_text": "lesion increasing in size",
+            "order": 2,
+            "search_terms": [
+              "lesion"
+            ],
+            "tags": [
+              "increasing"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-3",
+            "chip_text": "lesion changing colour",
+            "order": 3,
+            "search_terms": [
+              "lesion"
+            ],
+            "tags": [
+              "changing"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-4",
+            "chip_text": "lesion irregular borders developing",
+            "order": 4,
+            "search_terms": [
+              "lesion"
+            ],
+            "tags": [
+              "irregular"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-5",
+            "chip_text": "itchy lesion",
+            "order": 5,
+            "search_terms": [
+              "itchy"
+            ],
+            "tags": [
+              "lesion"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-6",
+            "chip_text": "bleeding lesion",
+            "order": 6,
+            "search_terms": [
+              "bleeding"
+            ],
+            "tags": [
+              "lesion"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-7",
+            "chip_text": "ulcerated lesion",
+            "order": 7,
+            "search_terms": [
+              "ulcerated"
+            ],
+            "tags": [
+              "lesion"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-8",
+            "chip_text": "crusting lesion not healing",
+            "order": 8,
+            "search_terms": [
+              "crusting"
+            ],
+            "tags": [
+              "lesion"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-9",
+            "chip_text": "new pigmented lesion in adult",
+            "order": 9,
+            "search_terms": [
+              "new"
+            ],
+            "tags": [
+              "pigmented"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-10",
+            "chip_text": "history of previous melanoma",
+            "order": 10,
+            "search_terms": [
+              "history"
+            ],
+            "tags": [
+              "of"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-11",
+            "chip_text": "family history of melanoma",
+            "order": 11,
+            "search_terms": [
+              "family"
+            ],
+            "tags": [
+              "history"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-12",
+            "chip_text": "multiple (>50) atypical naevi",
+            "order": 12,
+            "search_terms": [
+              "multiple"
+            ],
+            "tags": [
+              "(>50)"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-13",
+            "chip_text": "frequent sunburn history",
+            "order": 13,
+            "search_terms": [
+              "frequent"
+            ],
+            "tags": [
+              "sunburn"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-14",
+            "chip_text": "sunbed use",
+            "order": 14,
+            "search_terms": [
+              "sunbed"
+            ],
+            "tags": [
+              "use"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-15",
+            "chip_text": "fair skin (Fitzpatrick I-II)",
+            "order": 15,
+            "search_terms": [
+              "fair"
+            ],
+            "tags": [
+              "skin"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-16",
+            "chip_text": "immunosuppression",
+            "order": 16,
+            "search_terms": [
+              "immunosuppression"
+            ],
+            "tags": [
+              "immunosuppression"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-17",
+            "chip_text": "previous skin cancer history",
+            "order": 17,
+            "search_terms": [
+              "previous"
+            ],
+            "tags": [
+              "skin"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-18",
+            "chip_text": "duration: weeks",
+            "order": 18,
+            "search_terms": [
+              "duration:"
+            ],
+            "tags": [
+              "weeks"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-19",
+            "chip_text": "duration: months",
+            "order": 19,
+            "search_terms": [
+              "duration:"
+            ],
+            "tags": [
+              "months"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-symptoms-20",
+            "chip_text": "duration: >6 months",
+            "order": 20,
+            "search_terms": [
+              "duration:"
+            ],
+            "tags": [
+              ">6"
+            ]
+          }
+        ],
+        "relevant_negatives": [
+          {
+            "chip_id": "derm-skin-cancer-2ww-relevant_negatives-1",
+            "chip_text": "no other suspicious lesions",
+            "order": 1,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "other"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-relevant_negatives-2",
+            "chip_text": "no lymphadenopathy",
+            "order": 2,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "lymphadenopathy"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-relevant_negatives-3",
+            "chip_text": "no known melanoma",
+            "order": 3,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "known"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-relevant_negatives-4",
+            "chip_text": "no immunosuppression",
+            "order": 4,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "immunosuppression"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-relevant_negatives-5",
+            "chip_text": "no significant systemic symptoms",
+            "order": 5,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "significant"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-relevant_negatives-6",
+            "chip_text": "no constitutional symptoms (weight loss, fatigue)",
+            "order": 6,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "constitutional"
+            ]
+          }
+        ],
+        "exam_findings": [
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-1",
+            "chip_text": "lesion location: documented (anatomical site)",
+            "order": 1,
+            "search_terms": [
+              "lesion"
+            ],
+            "tags": [
+              "location:"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-2",
+            "chip_text": "lesion size: ___ mm x ___ mm",
+            "order": 2,
+            "search_terms": [
+              "lesion"
+            ],
+            "tags": [
+              "size:"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-3",
+            "chip_text": "asymmetry present (A of ABCDE)",
+            "order": 3,
+            "search_terms": [
+              "asymmetry"
+            ],
+            "tags": [
+              "present"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-4",
+            "chip_text": "border irregularity (B of ABCDE)",
+            "order": 4,
+            "search_terms": [
+              "border"
+            ],
+            "tags": [
+              "irregularity"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-5",
+            "chip_text": "colour variation (C of ABCDE)",
+            "order": 5,
+            "search_terms": [
+              "colour"
+            ],
+            "tags": [
+              "variation"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-6",
+            "chip_text": "diameter >6mm (D of ABCDE)",
+            "order": 6,
+            "search_terms": [
+              "diameter"
+            ],
+            "tags": [
+              ">6mm"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-7",
+            "chip_text": "evolving / changing (E of ABCDE)",
+            "order": 7,
+            "search_terms": [
+              "evolving"
+            ],
+            "tags": [
+              "/"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-8",
+            "chip_text": "pigmented brown/black",
+            "order": 8,
+            "search_terms": [
+              "pigmented"
+            ],
+            "tags": [
+              "brown/black"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-9",
+            "chip_text": "pigmented blue-grey areas",
+            "order": 9,
+            "search_terms": [
+              "pigmented"
+            ],
+            "tags": [
+              "blue-grey"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-10",
+            "chip_text": "pearly papule with telangiectasia (BCC)",
+            "order": 10,
+            "search_terms": [
+              "pearly"
+            ],
+            "tags": [
+              "papule"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-11",
+            "chip_text": "rolled edge with central ulceration (BCC)",
+            "order": 11,
+            "search_terms": [
+              "rolled"
+            ],
+            "tags": [
+              "edge"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-12",
+            "chip_text": "scaly erythematous plaque (SCC/AK)",
+            "order": 12,
+            "search_terms": [
+              "scaly"
+            ],
+            "tags": [
+              "erythematous"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-13",
+            "chip_text": "keratin horn",
+            "order": 13,
+            "search_terms": [
+              "keratin"
+            ],
+            "tags": [
+              "horn"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-14",
+            "chip_text": "rapid growth (weeks)",
+            "order": 14,
+            "search_terms": [
+              "rapid"
+            ],
+            "tags": [
+              "growth"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-15",
+            "chip_text": "satellite lesions",
+            "order": 15,
+            "search_terms": [
+              "satellite"
+            ],
+            "tags": [
+              "lesions"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-16",
+            "chip_text": "palpable",
+            "order": 16,
+            "search_terms": [
+              "palpable"
+            ],
+            "tags": [
+              "palpable"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-17",
+            "chip_text": "hard induration",
+            "order": 17,
+            "search_terms": [
+              "hard"
+            ],
+            "tags": [
+              "induration"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-18",
+            "chip_text": "no lymphadenopathy regional",
+            "order": 18,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "lymphadenopathy"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-19",
+            "chip_text": "lymphadenopathy regional present",
+            "order": 19,
+            "search_terms": [
+              "lymphadenopathy"
+            ],
+            "tags": [
+              "regional"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-20",
+            "chip_text": "photographed for record (with consent)",
+            "order": 20,
+            "search_terms": [
+              "photographed"
+            ],
+            "tags": [
+              "for"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-21",
+            "chip_text": "dermoscopy performed",
+            "order": 21,
+            "search_terms": [
+              "dermoscopy"
+            ],
+            "tags": [
+              "performed"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-22",
+            "chip_text": "dermoscopy findings: melanocytic atypia",
+            "order": 22,
+            "search_terms": [
+              "dermoscopy"
+            ],
+            "tags": [
+              "findings:"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-exam_findings-23",
+            "chip_text": "dermoscopy findings: non-melanocytic",
+            "order": 23,
+            "search_terms": [
+              "dermoscopy"
+            ],
+            "tags": [
+              "findings:"
+            ]
+          }
+        ],
+        "red_flags": [
+          {
+            "chip_id": "derm-skin-cancer-2ww-red_flags-1",
+            "chip_text": "7-point checklist score ≥3",
+            "order": 1,
+            "search_terms": [
+              "7-point"
+            ],
+            "tags": [
+              "checklist"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-red_flags-2",
+            "chip_text": "rapid growth in weeks (suspect SCC or melanoma)",
+            "order": 2,
+            "search_terms": [
+              "rapid"
+            ],
+            "tags": [
+              "growth"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-red_flags-3",
+            "chip_text": "ulceration with bleeding",
+            "order": 3,
+            "search_terms": [
+              "ulceration"
+            ],
+            "tags": [
+              "with"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-red_flags-4",
+            "chip_text": "lymph node involvement",
+            "order": 4,
+            "search_terms": [
+              "lymph"
+            ],
+            "tags": [
+              "node"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-red_flags-5",
+            "chip_text": "in-transit metastases",
+            "order": 5,
+            "search_terms": [
+              "in-transit"
+            ],
+            "tags": [
+              "metastases"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-red_flags-6",
+            "chip_text": "new pigmented lesion >40 years old",
+            "order": 6,
+            "search_terms": [
+              "new"
+            ],
+            "tags": [
+              "pigmented"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-red_flags-7",
+            "chip_text": "changing lesion in pregnancy",
+            "order": 7,
+            "search_terms": [
+              "changing"
+            ],
+            "tags": [
+              "lesion"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-red_flags-8",
+            "chip_text": "lesion >7mm + 1 minor criterion",
+            "order": 8,
+            "search_terms": [
+              "lesion"
+            ],
+            "tags": [
+              ">7mm"
+            ]
+          }
+        ],
+        "investigations": [
+          {
+            "chip_id": "derm-skin-cancer-2ww-investigations-1",
+            "chip_text": "clinical photograph: taken with consent",
+            "order": 1,
+            "search_terms": [
+              "clinical"
+            ],
+            "tags": [
+              "photograph:"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-investigations-2",
+            "chip_text": "dermoscopy: performed and described",
+            "order": 2,
+            "search_terms": [
+              "dermoscopy:"
+            ],
+            "tags": [
+              "performed"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-investigations-3",
+            "chip_text": "skin biopsy: not performed in primary care",
+            "order": 3,
+            "search_terms": [
+              "skin"
+            ],
+            "tags": [
+              "biopsy:"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-investigations-4",
+            "chip_text": "lymph node ultrasound: arranged if palpable",
+            "order": 4,
+            "search_terms": [
+              "lymph"
+            ],
+            "tags": [
+              "node"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-investigations-5",
+            "chip_text": "full skin examination: completed",
+            "order": 5,
+            "search_terms": [
+              "full"
+            ],
+            "tags": [
+              "skin"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-investigations-6",
+            "chip_text": "review of relevant history (sun exposure, immunosuppression)",
+            "order": 6,
+            "search_terms": [
+              "review"
+            ],
+            "tags": [
+              "of"
+            ]
+          }
+        ],
+        "plan_phrases": [
+          {
+            "chip_id": "derm-skin-cancer-2ww-plan_phrases-1",
+            "chip_text": "2-week wait dermatology referral submitted",
+            "order": 1,
+            "search_terms": [
+              "2-week"
+            ],
+            "tags": [
+              "wait"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-plan_phrases-2",
+            "chip_text": "urgent suspected cancer referral pathway",
+            "order": 2,
+            "search_terms": [
+              "urgent"
+            ],
+            "tags": [
+              "suspected"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-plan_phrases-3",
+            "chip_text": "patient counselled about referral and timeline",
+            "order": 3,
+            "search_terms": [
+              "patient"
+            ],
+            "tags": [
+              "counselled"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-plan_phrases-4",
+            "chip_text": "patient given written information about 2WW",
+            "order": 4,
+            "search_terms": [
+              "patient"
+            ],
+            "tags": [
+              "given"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-plan_phrases-5",
+            "chip_text": "photograph documented in records (with consent)",
+            "order": 5,
+            "search_terms": [
+              "photograph"
+            ],
+            "tags": [
+              "documented"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-plan_phrases-6",
+            "chip_text": "no biopsy in primary care (refer for specialist excision)",
+            "order": 6,
+            "search_terms": [
+              "no"
+            ],
+            "tags": [
+              "biopsy"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-plan_phrases-7",
+            "chip_text": "sun protection advice given",
+            "order": 7,
+            "search_terms": [
+              "sun"
+            ],
+            "tags": [
+              "protection"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-plan_phrases-8",
+            "chip_text": "self-examination education provided",
+            "order": 8,
+            "search_terms": [
+              "self-examination"
+            ],
+            "tags": [
+              "education"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-plan_phrases-9",
+            "chip_text": "safety-netting documented",
+            "order": 9,
+            "search_terms": [
+              "safety-netting"
+            ],
+            "tags": [
+              "documented"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-plan_phrases-10",
+            "chip_text": "GP letter to dermatology completed",
+            "order": 10,
+            "search_terms": [
+              "gp"
+            ],
+            "tags": [
+              "letter"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-plan_phrases-11",
+            "chip_text": "patient asked to attend appointment within 2 weeks",
+            "order": 11,
+            "search_terms": [
+              "patient"
+            ],
+            "tags": [
+              "asked"
+            ]
+          }
+        ],
+        "follow_up": [
+          {
+            "chip_id": "derm-skin-cancer-2ww-follow_up-1",
+            "chip_text": "dermatology appointment within 2 weeks (NHS standard)",
+            "order": 1,
+            "search_terms": [
+              "dermatology"
+            ],
+            "tags": [
+              "appointment"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-follow_up-2",
+            "chip_text": "GP follow-up after dermatology review",
+            "order": 2,
+            "search_terms": [
+              "gp"
+            ],
+            "tags": [
+              "follow-up"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-follow_up-3",
+            "chip_text": "urgent contact if lesion changes before appointment",
+            "order": 3,
+            "search_terms": [
+              "urgent"
+            ],
+            "tags": [
+              "contact"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-follow_up-4",
+            "chip_text": "biopsy result review with dermatologist",
+            "order": 4,
+            "search_terms": [
+              "biopsy"
+            ],
+            "tags": [
+              "result"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-follow_up-5",
+            "chip_text": "long-term skin surveillance if biopsy positive",
+            "order": 5,
+            "search_terms": [
+              "long-term"
+            ],
+            "tags": [
+              "skin"
+            ]
+          },
+          {
+            "chip_id": "derm-skin-cancer-2ww-follow_up-6",
+            "chip_text": "return if new suspicious lesion",
+            "order": 6,
+            "search_terms": [
+              "return"
+            ],
+            "tags": [
+              "if"
+            ]
+          }
+        ]
+      }
     }
   },
   "workflowsBySpecialty": {
@@ -124030,7 +127054,8 @@
       "derm-urticaria",
       "derm-wound-review",
       "derm-skin-lesion-review",
-      "derm-hair-loss"
+      "derm-hair-loss",
+      "derm-skin-cancer-2ww"
     ],
     "Ophthalmology": [
       "ophth-red-eye",
@@ -124058,7 +127083,9 @@
       "urgent-shortness-of-breath",
       "urgent-abdominal-pain",
       "urgent-syncope",
-      "urgent-fever-suspected-infection"
+      "urgent-fever-suspected-infection",
+      "urgent-anaphylaxis",
+      "urgent-dka"
     ],
     "Cardiology": [
       "cardio-chest-pain",
@@ -233287,6 +236314,2848 @@
           ],
           "tags": [
             "return"
+          ]
+        }
+      ]
+    },
+    "urgent-anaphylaxis": {
+      "symptoms": [
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-1",
+          "chip_text": "sudden onset airway compromise",
+          "order": 1,
+          "search_terms": [
+            "sudden"
+          ],
+          "tags": [
+            "onset"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-2",
+          "chip_text": "lip and tongue swelling",
+          "order": 2,
+          "search_terms": [
+            "lip"
+          ],
+          "tags": [
+            "and"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-3",
+          "chip_text": "tongue swelling causing dysarthria",
+          "order": 3,
+          "search_terms": [
+            "tongue"
+          ],
+          "tags": [
+            "swelling"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-4",
+          "chip_text": "difficulty swallowing",
+          "order": 4,
+          "search_terms": [
+            "difficulty"
+          ],
+          "tags": [
+            "swallowing"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-5",
+          "chip_text": "stridor",
+          "order": 5,
+          "search_terms": [
+            "stridor"
+          ],
+          "tags": [
+            "stridor"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-6",
+          "chip_text": "hoarse voice",
+          "order": 6,
+          "search_terms": [
+            "hoarse"
+          ],
+          "tags": [
+            "voice"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-7",
+          "chip_text": "severe SOB at rest",
+          "order": 7,
+          "search_terms": [
+            "severe"
+          ],
+          "tags": [
+            "sob"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-8",
+          "chip_text": "wheeze and tight chest",
+          "order": 8,
+          "search_terms": [
+            "wheeze"
+          ],
+          "tags": [
+            "and"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-9",
+          "chip_text": "feeling of impending doom",
+          "order": 9,
+          "search_terms": [
+            "feeling"
+          ],
+          "tags": [
+            "of"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-10",
+          "chip_text": "collapse",
+          "order": 10,
+          "search_terms": [
+            "collapse"
+          ],
+          "tags": [
+            "collapse"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-11",
+          "chip_text": "syncope",
+          "order": 11,
+          "search_terms": [
+            "syncope"
+          ],
+          "tags": [
+            "syncope"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-12",
+          "chip_text": "urticarial rash widespread",
+          "order": 12,
+          "search_terms": [
+            "urticarial"
+          ],
+          "tags": [
+            "rash"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-13",
+          "chip_text": "flushing",
+          "order": 13,
+          "search_terms": [
+            "flushing"
+          ],
+          "tags": [
+            "flushing"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-14",
+          "chip_text": "angioedema",
+          "order": 14,
+          "search_terms": [
+            "angioedema"
+          ],
+          "tags": [
+            "angioedema"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-15",
+          "chip_text": "abdominal pain and vomiting",
+          "order": 15,
+          "search_terms": [
+            "abdominal"
+          ],
+          "tags": [
+            "pain"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-16",
+          "chip_text": "incontinence",
+          "order": 16,
+          "search_terms": [
+            "incontinence"
+          ],
+          "tags": [
+            "incontinence"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-17",
+          "chip_text": "trigger: known food allergen",
+          "order": 17,
+          "search_terms": [
+            "trigger:"
+          ],
+          "tags": [
+            "known"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-18",
+          "chip_text": "trigger: insect sting",
+          "order": 18,
+          "search_terms": [
+            "trigger:"
+          ],
+          "tags": [
+            "insect"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-19",
+          "chip_text": "trigger: medication",
+          "order": 19,
+          "search_terms": [
+            "trigger:"
+          ],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-20",
+          "chip_text": "trigger: contrast media",
+          "order": 20,
+          "search_terms": [
+            "trigger:"
+          ],
+          "tags": [
+            "contrast"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-21",
+          "chip_text": "symptoms within 30 minutes of exposure",
+          "order": 21,
+          "search_terms": [
+            "symptoms"
+          ],
+          "tags": [
+            "within"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-22",
+          "chip_text": "previous anaphylaxis history",
+          "order": 22,
+          "search_terms": [
+            "previous"
+          ],
+          "tags": [
+            "anaphylaxis"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-symptoms-23",
+          "chip_text": "asthmatic — known severe asthma",
+          "order": 23,
+          "search_terms": [
+            "asthmatic"
+          ],
+          "tags": [
+            "—"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "urgent-anaphylaxis-relevant_negatives-1",
+          "chip_text": "no isolated urticaria without systemic features",
+          "order": 1,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "isolated"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-relevant_negatives-2",
+          "chip_text": "no known mucosal involvement",
+          "order": 2,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "known"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-relevant_negatives-3",
+          "chip_text": "no prior similar reaction",
+          "order": 3,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "prior"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-relevant_negatives-4",
+          "chip_text": "no current beta-blocker use",
+          "order": 4,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "current"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-relevant_negatives-5",
+          "chip_text": "no current ACEi use",
+          "order": 5,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "current"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-relevant_negatives-6",
+          "chip_text": "no preceding viral illness",
+          "order": 6,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "preceding"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-relevant_negatives-7",
+          "chip_text": "no recent NSAID exposure",
+          "order": 7,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "recent"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-1",
+          "chip_text": "BP <90/60 (hypotensive)",
+          "order": 1,
+          "search_terms": [
+            "bp"
+          ],
+          "tags": [
+            "<90/60"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-2",
+          "chip_text": "BP 90-110 systolic (borderline)",
+          "order": 2,
+          "search_terms": [
+            "bp"
+          ],
+          "tags": [
+            "90-110"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-3",
+          "chip_text": "HR >120 bpm",
+          "order": 3,
+          "search_terms": [
+            "hr"
+          ],
+          "tags": [
+            ">120"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-4",
+          "chip_text": "SpO2 <94% on RA",
+          "order": 4,
+          "search_terms": [
+            "spo2"
+          ],
+          "tags": [
+            "<94%"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-5",
+          "chip_text": "SpO2 92% on RA",
+          "order": 5,
+          "search_terms": [
+            "spo2"
+          ],
+          "tags": [
+            "92%"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-6",
+          "chip_text": "RR >25/min",
+          "order": 6,
+          "search_terms": [
+            "rr"
+          ],
+          "tags": [
+            ">25/min"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-7",
+          "chip_text": "audible stridor",
+          "order": 7,
+          "search_terms": [
+            "audible"
+          ],
+          "tags": [
+            "stridor"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-8",
+          "chip_text": "silent chest (severe bronchospasm)",
+          "order": 8,
+          "search_terms": [
+            "silent"
+          ],
+          "tags": [
+            "chest"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-9",
+          "chip_text": "expiratory wheeze bilateral",
+          "order": 9,
+          "search_terms": [
+            "expiratory"
+          ],
+          "tags": [
+            "wheeze"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-10",
+          "chip_text": "tongue swollen and protruding",
+          "order": 10,
+          "search_terms": [
+            "tongue"
+          ],
+          "tags": [
+            "swollen"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-11",
+          "chip_text": "lip swelling — cannot close mouth",
+          "order": 11,
+          "search_terms": [
+            "lip"
+          ],
+          "tags": [
+            "swelling"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-12",
+          "chip_text": "urticarial rash trunk and limbs",
+          "order": 12,
+          "search_terms": [
+            "urticarial"
+          ],
+          "tags": [
+            "rash"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-13",
+          "chip_text": "facial flushing",
+          "order": 13,
+          "search_terms": [
+            "facial"
+          ],
+          "tags": [
+            "flushing"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-14",
+          "chip_text": "GCS 15/15",
+          "order": 14,
+          "search_terms": [
+            "gcs"
+          ],
+          "tags": [
+            "15/15"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-15",
+          "chip_text": "GCS 13-14/15 (drowsy)",
+          "order": 15,
+          "search_terms": [
+            "gcs"
+          ],
+          "tags": [
+            "13-14/15"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-16",
+          "chip_text": "capillary refill >3 seconds",
+          "order": 16,
+          "search_terms": [
+            "capillary"
+          ],
+          "tags": [
+            "refill"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-17",
+          "chip_text": "cyanosis peripheral",
+          "order": 17,
+          "search_terms": [
+            "cyanosis"
+          ],
+          "tags": [
+            "peripheral"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-exam_findings-18",
+          "chip_text": "cyanosis central",
+          "order": 18,
+          "search_terms": [
+            "cyanosis"
+          ],
+          "tags": [
+            "central"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "urgent-anaphylaxis-red_flags-1",
+          "chip_text": "AIRWAY COMPROMISE — call anaesthetist",
+          "order": 1,
+          "search_terms": [
+            "airway"
+          ],
+          "tags": [
+            "compromise"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-red_flags-2",
+          "chip_text": "BP <90 systolic — circulatory failure",
+          "order": 2,
+          "search_terms": [
+            "bp"
+          ],
+          "tags": [
+            "<90"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-red_flags-3",
+          "chip_text": "persistent hypotension despite adrenaline",
+          "order": 3,
+          "search_terms": [
+            "persistent"
+          ],
+          "tags": [
+            "hypotension"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-red_flags-4",
+          "chip_text": "biphasic reaction risk (asthma + anaphylaxis)",
+          "order": 4,
+          "search_terms": [
+            "biphasic"
+          ],
+          "tags": [
+            "reaction"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-red_flags-5",
+          "chip_text": "history of severe asthma + anaphylaxis",
+          "order": 5,
+          "search_terms": [
+            "history"
+          ],
+          "tags": [
+            "of"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-red_flags-6",
+          "chip_text": "pregnancy + anaphylaxis",
+          "order": 6,
+          "search_terms": [
+            "pregnancy"
+          ],
+          "tags": [
+            "+"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-red_flags-7",
+          "chip_text": "cardiac arrest peri-presentation",
+          "order": 7,
+          "search_terms": [
+            "cardiac"
+          ],
+          "tags": [
+            "arrest"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-red_flags-8",
+          "chip_text": "failure to respond to two doses of adrenaline",
+          "order": 8,
+          "search_terms": [
+            "failure"
+          ],
+          "tags": [
+            "to"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "urgent-anaphylaxis-investigations-1",
+          "chip_text": "mast cell tryptase: baseline (now), 1-2hr, 24hr",
+          "order": 1,
+          "search_terms": [
+            "mast"
+          ],
+          "tags": [
+            "cell"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-investigations-2",
+          "chip_text": "ECG: sinus tachycardia",
+          "order": 2,
+          "search_terms": [
+            "ecg:"
+          ],
+          "tags": [
+            "sinus"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-investigations-3",
+          "chip_text": "ECG: ischaemic changes",
+          "order": 3,
+          "search_terms": [
+            "ecg:"
+          ],
+          "tags": [
+            "ischaemic"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-investigations-4",
+          "chip_text": "ABG: type 1 respiratory failure",
+          "order": 4,
+          "search_terms": [
+            "abg:"
+          ],
+          "tags": [
+            "type"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-investigations-5",
+          "chip_text": "glucose: documented",
+          "order": 5,
+          "search_terms": [
+            "glucose:"
+          ],
+          "tags": [
+            "documented"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-investigations-6",
+          "chip_text": "FBC, U&Es, CRP: sent",
+          "order": 6,
+          "search_terms": [
+            "fbc,"
+          ],
+          "tags": [
+            "u&es,"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-investigations-7",
+          "chip_text": "troponin if cardiac symptoms",
+          "order": 7,
+          "search_terms": [
+            "troponin"
+          ],
+          "tags": [
+            "if"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-investigations-8",
+          "chip_text": "CXR if respiratory symptoms",
+          "order": 8,
+          "search_terms": [
+            "cxr"
+          ],
+          "tags": [
+            "if"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-investigations-9",
+          "chip_text": "allergy referral arranged (immunology clinic)",
+          "order": 9,
+          "search_terms": [
+            "allergy"
+          ],
+          "tags": [
+            "referral"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-1",
+          "chip_text": "IM adrenaline thigh given per local protocol",
+          "order": 1,
+          "search_terms": [
+            "im"
+          ],
+          "tags": [
+            "adrenaline"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-2",
+          "chip_text": "IM adrenaline repeat at 5 minutes if no improvement",
+          "order": 2,
+          "search_terms": [
+            "im"
+          ],
+          "tags": [
+            "adrenaline"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-3",
+          "chip_text": "high-flow oxygen via non-rebreather",
+          "order": 3,
+          "search_terms": [
+            "high-flow"
+          ],
+          "tags": [
+            "oxygen"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-4",
+          "chip_text": "IV access established",
+          "order": 4,
+          "search_terms": [
+            "iv"
+          ],
+          "tags": [
+            "access"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-5",
+          "chip_text": "fluid resuscitation per protocol",
+          "order": 5,
+          "search_terms": [
+            "fluid"
+          ],
+          "tags": [
+            "resuscitation"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-6",
+          "chip_text": "IV antihistamine given per protocol",
+          "order": 6,
+          "search_terms": [
+            "iv"
+          ],
+          "tags": [
+            "antihistamine"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-7",
+          "chip_text": "IV hydrocortisone given per protocol",
+          "order": 7,
+          "search_terms": [
+            "iv"
+          ],
+          "tags": [
+            "hydrocortisone"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-8",
+          "chip_text": "salbutamol nebuliser for bronchospasm",
+          "order": 8,
+          "search_terms": [
+            "salbutamol"
+          ],
+          "tags": [
+            "nebuliser"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-9",
+          "chip_text": "continuous monitoring established",
+          "order": 9,
+          "search_terms": [
+            "continuous"
+          ],
+          "tags": [
+            "monitoring"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-10",
+          "chip_text": "ED admission for observation",
+          "order": 10,
+          "search_terms": [
+            "ed"
+          ],
+          "tags": [
+            "admission"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-11",
+          "chip_text": "allergy clinic referral arranged",
+          "order": 11,
+          "search_terms": [
+            "allergy"
+          ],
+          "tags": [
+            "clinic"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-12",
+          "chip_text": "auto-injector pen prescribed and training provided",
+          "order": 12,
+          "search_terms": [
+            "auto-injector"
+          ],
+          "tags": [
+            "pen"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-13",
+          "chip_text": "anaphylaxis action plan provided to patient",
+          "order": 13,
+          "search_terms": [
+            "anaphylaxis"
+          ],
+          "tags": [
+            "action"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-14",
+          "chip_text": "medical alert bracelet recommended",
+          "order": 14,
+          "search_terms": [
+            "medical"
+          ],
+          "tags": [
+            "alert"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-plan_phrases-15",
+          "chip_text": "trigger avoidance counselling documented",
+          "order": 15,
+          "search_terms": [
+            "trigger"
+          ],
+          "tags": [
+            "avoidance"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "urgent-anaphylaxis-follow_up-1",
+          "chip_text": "observation 6-12 hours minimum",
+          "order": 1,
+          "search_terms": [
+            "observation"
+          ],
+          "tags": [
+            "6-12"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-follow_up-2",
+          "chip_text": "observation 24 hours if biphasic risk",
+          "order": 2,
+          "search_terms": [
+            "observation"
+          ],
+          "tags": [
+            "24"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-follow_up-3",
+          "chip_text": "allergy/immunology clinic referral within 4 weeks",
+          "order": 3,
+          "search_terms": [
+            "allergy/immunology"
+          ],
+          "tags": [
+            "clinic"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-follow_up-4",
+          "chip_text": "GP follow-up within 1 week",
+          "order": 4,
+          "search_terms": [
+            "gp"
+          ],
+          "tags": [
+            "follow-up"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-follow_up-5",
+          "chip_text": "auto-injector training appointment arranged",
+          "order": 5,
+          "search_terms": [
+            "auto-injector"
+          ],
+          "tags": [
+            "training"
+          ]
+        },
+        {
+          "chip_id": "urgent-anaphylaxis-follow_up-6",
+          "chip_text": "return immediately if symptoms recur",
+          "order": 6,
+          "search_terms": [
+            "return"
+          ],
+          "tags": [
+            "immediately"
+          ]
+        }
+      ]
+    },
+    "urgent-dka": {
+      "symptoms": [
+        {
+          "chip_id": "urgent-dka-symptoms-1",
+          "chip_text": "polyuria for days",
+          "order": 1,
+          "search_terms": [
+            "polyuria"
+          ],
+          "tags": [
+            "for"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-2",
+          "chip_text": "polydipsia",
+          "order": 2,
+          "search_terms": [
+            "polydipsia"
+          ],
+          "tags": [
+            "polydipsia"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-3",
+          "chip_text": "weight loss recent",
+          "order": 3,
+          "search_terms": [
+            "weight"
+          ],
+          "tags": [
+            "loss"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-4",
+          "chip_text": "nausea",
+          "order": 4,
+          "search_terms": [
+            "nausea"
+          ],
+          "tags": [
+            "nausea"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-5",
+          "chip_text": "vomiting persistent",
+          "order": 5,
+          "search_terms": [
+            "vomiting"
+          ],
+          "tags": [
+            "persistent"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-6",
+          "chip_text": "abdominal pain (especially in children)",
+          "order": 6,
+          "search_terms": [
+            "abdominal"
+          ],
+          "tags": [
+            "pain"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-7",
+          "chip_text": "fruity breath odour",
+          "order": 7,
+          "search_terms": [
+            "fruity"
+          ],
+          "tags": [
+            "breath"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-8",
+          "chip_text": "lethargy",
+          "order": 8,
+          "search_terms": [
+            "lethargy"
+          ],
+          "tags": [
+            "lethargy"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-9",
+          "chip_text": "confusion",
+          "order": 9,
+          "search_terms": [
+            "confusion"
+          ],
+          "tags": [
+            "confusion"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-10",
+          "chip_text": "reduced GCS",
+          "order": 10,
+          "search_terms": [
+            "reduced"
+          ],
+          "tags": [
+            "gcs"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-11",
+          "chip_text": "recent illness or infection trigger",
+          "order": 11,
+          "search_terms": [
+            "recent"
+          ],
+          "tags": [
+            "illness"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-12",
+          "chip_text": "missed insulin doses",
+          "order": 12,
+          "search_terms": [
+            "missed"
+          ],
+          "tags": [
+            "insulin"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-13",
+          "chip_text": "new diagnosis of diabetes (T1DM)",
+          "order": 13,
+          "search_terms": [
+            "new"
+          ],
+          "tags": [
+            "diagnosis"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-14",
+          "chip_text": "pump failure",
+          "order": 14,
+          "search_terms": [
+            "pump"
+          ],
+          "tags": [
+            "failure"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-15",
+          "chip_text": "recent corticosteroid use",
+          "order": 15,
+          "search_terms": [
+            "recent"
+          ],
+          "tags": [
+            "corticosteroid"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-16",
+          "chip_text": "pregnancy",
+          "order": 16,
+          "search_terms": [
+            "pregnancy"
+          ],
+          "tags": [
+            "pregnancy"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-symptoms-17",
+          "chip_text": "recent surgery",
+          "order": 17,
+          "search_terms": [
+            "recent"
+          ],
+          "tags": [
+            "surgery"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "urgent-dka-relevant_negatives-1",
+          "chip_text": "no chest pain",
+          "order": 1,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "chest"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-relevant_negatives-2",
+          "chip_text": "no focal neurology",
+          "order": 2,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "focal"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-relevant_negatives-3",
+          "chip_text": "no severe headache",
+          "order": 3,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "severe"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-relevant_negatives-4",
+          "chip_text": "no signs of meningism",
+          "order": 4,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "signs"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-relevant_negatives-5",
+          "chip_text": "no cardiogenic features",
+          "order": 5,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "cardiogenic"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-relevant_negatives-6",
+          "chip_text": "no recent insulin dose change documented",
+          "order": 6,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "recent"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-relevant_negatives-7",
+          "chip_text": "not on SGLT2 inhibitor (euDKA risk)",
+          "order": 7,
+          "search_terms": [
+            "not"
+          ],
+          "tags": [
+            "on"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "urgent-dka-exam_findings-1",
+          "chip_text": "GCS 15/15",
+          "order": 1,
+          "search_terms": [
+            "gcs"
+          ],
+          "tags": [
+            "15/15"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-2",
+          "chip_text": "GCS 13-14/15",
+          "order": 2,
+          "search_terms": [
+            "gcs"
+          ],
+          "tags": [
+            "13-14/15"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-3",
+          "chip_text": "GCS <13 — reduced consciousness",
+          "order": 3,
+          "search_terms": [
+            "gcs"
+          ],
+          "tags": [
+            "<13"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-4",
+          "chip_text": "BP 110/70",
+          "order": 4,
+          "search_terms": [
+            "bp"
+          ],
+          "tags": [
+            "110/70"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-5",
+          "chip_text": "BP <90/60 (shock)",
+          "order": 5,
+          "search_terms": [
+            "bp"
+          ],
+          "tags": [
+            "<90/60"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-6",
+          "chip_text": "HR 110 bpm",
+          "order": 6,
+          "search_terms": [
+            "hr"
+          ],
+          "tags": [
+            "110"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-7",
+          "chip_text": "HR >120 bpm",
+          "order": 7,
+          "search_terms": [
+            "hr"
+          ],
+          "tags": [
+            ">120"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-8",
+          "chip_text": "RR 22-30 (Kussmaul breathing)",
+          "order": 8,
+          "search_terms": [
+            "rr"
+          ],
+          "tags": [
+            "22-30"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-9",
+          "chip_text": "temperature 36.8°C",
+          "order": 9,
+          "search_terms": [
+            "temperature"
+          ],
+          "tags": [
+            "36.8°c"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-10",
+          "chip_text": "temperature >38°C (infection trigger)",
+          "order": 10,
+          "search_terms": [
+            "temperature"
+          ],
+          "tags": [
+            ">38°c"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-11",
+          "chip_text": "dry mucous membranes",
+          "order": 11,
+          "search_terms": [
+            "dry"
+          ],
+          "tags": [
+            "mucous"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-12",
+          "chip_text": "reduced skin turgor",
+          "order": 12,
+          "search_terms": [
+            "reduced"
+          ],
+          "tags": [
+            "skin"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-13",
+          "chip_text": "capillary refill >3 seconds",
+          "order": 13,
+          "search_terms": [
+            "capillary"
+          ],
+          "tags": [
+            "refill"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-14",
+          "chip_text": "abdomen: tender, possible pseudoperitonitis",
+          "order": 14,
+          "search_terms": [
+            "abdomen:"
+          ],
+          "tags": [
+            "tender,"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-15",
+          "chip_text": "no focal neurology",
+          "order": 15,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "focal"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-exam_findings-16",
+          "chip_text": "fruity (acetone) breath",
+          "order": 16,
+          "search_terms": [
+            "fruity"
+          ],
+          "tags": [
+            "(acetone)"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "urgent-dka-red_flags-1",
+          "chip_text": "GCS <12 — secure airway",
+          "order": 1,
+          "search_terms": [
+            "gcs"
+          ],
+          "tags": [
+            "<12"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-red_flags-2",
+          "chip_text": "BP <90/60 — shock",
+          "order": 2,
+          "search_terms": [
+            "bp"
+          ],
+          "tags": [
+            "<90/60"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-red_flags-3",
+          "chip_text": "severe acidosis (pH <7.0)",
+          "order": 3,
+          "search_terms": [
+            "severe"
+          ],
+          "tags": [
+            "acidosis"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-red_flags-4",
+          "chip_text": "potassium <3.5 mmol/L (must replace before insulin)",
+          "order": 4,
+          "search_terms": [
+            "potassium"
+          ],
+          "tags": [
+            "<3.5"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-red_flags-5",
+          "chip_text": "cerebral oedema in children (pediatric DKA)",
+          "order": 5,
+          "search_terms": [
+            "cerebral"
+          ],
+          "tags": [
+            "oedema"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-red_flags-6",
+          "chip_text": "persistent vomiting + dehydration",
+          "order": 6,
+          "search_terms": [
+            "persistent"
+          ],
+          "tags": [
+            "vomiting"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-red_flags-7",
+          "chip_text": "concurrent MI or sepsis",
+          "order": 7,
+          "search_terms": [
+            "concurrent"
+          ],
+          "tags": [
+            "mi"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-red_flags-8",
+          "chip_text": "pregnancy + DKA",
+          "order": 8,
+          "search_terms": [
+            "pregnancy"
+          ],
+          "tags": [
+            "+"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "urgent-dka-investigations-1",
+          "chip_text": "capillary glucose: >11.0 mmol/L (or known DM)",
+          "order": 1,
+          "search_terms": [
+            "capillary"
+          ],
+          "tags": [
+            "glucose:"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-2",
+          "chip_text": "capillary ketones: >3.0 mmol/L",
+          "order": 2,
+          "search_terms": [
+            "capillary"
+          ],
+          "tags": [
+            "ketones:"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-3",
+          "chip_text": "urine dip: ketones ++++ glucose ++++",
+          "order": 3,
+          "search_terms": [
+            "urine"
+          ],
+          "tags": [
+            "dip:"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-4",
+          "chip_text": "venous blood gas: pH <7.30, HCO3 <15",
+          "order": 4,
+          "search_terms": [
+            "venous"
+          ],
+          "tags": [
+            "blood"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-5",
+          "chip_text": "venous blood gas: pH <7.0 (severe)",
+          "order": 5,
+          "search_terms": [
+            "venous"
+          ],
+          "tags": [
+            "blood"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-6",
+          "chip_text": "U&Es: K+, Na+, urea, creatinine",
+          "order": 6,
+          "search_terms": [
+            "u&es:"
+          ],
+          "tags": [
+            "k+,"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-7",
+          "chip_text": "serum osmolality",
+          "order": 7,
+          "search_terms": [
+            "serum"
+          ],
+          "tags": [
+            "osmolality"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-8",
+          "chip_text": "FBC: WCC elevated (stress/infection)",
+          "order": 8,
+          "search_terms": [
+            "fbc:"
+          ],
+          "tags": [
+            "wcc"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-9",
+          "chip_text": "CRP if infection suspected",
+          "order": 9,
+          "search_terms": [
+            "crp"
+          ],
+          "tags": [
+            "if"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-10",
+          "chip_text": "lactate",
+          "order": 10,
+          "search_terms": [
+            "lactate"
+          ],
+          "tags": [
+            "lactate"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-11",
+          "chip_text": "ECG: T-wave changes if hypokalaemia",
+          "order": 11,
+          "search_terms": [
+            "ecg:"
+          ],
+          "tags": [
+            "t-wave"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-12",
+          "chip_text": "CXR if respiratory symptoms",
+          "order": 12,
+          "search_terms": [
+            "cxr"
+          ],
+          "tags": [
+            "if"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-13",
+          "chip_text": "urine culture (UTI common trigger)",
+          "order": 13,
+          "search_terms": [
+            "urine"
+          ],
+          "tags": [
+            "culture"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-14",
+          "chip_text": "troponin if chest pain or T2DM elderly",
+          "order": 14,
+          "search_terms": [
+            "troponin"
+          ],
+          "tags": [
+            "if"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-investigations-15",
+          "chip_text": "HbA1c at presentation",
+          "order": 15,
+          "search_terms": [
+            "hba1c"
+          ],
+          "tags": [
+            "at"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "urgent-dka-plan_phrases-1",
+          "chip_text": "DKA pathway initiated per local protocol",
+          "order": 1,
+          "search_terms": [
+            "dka"
+          ],
+          "tags": [
+            "pathway"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-2",
+          "chip_text": "IV access x2 large bore",
+          "order": 2,
+          "search_terms": [
+            "iv"
+          ],
+          "tags": [
+            "access"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-3",
+          "chip_text": "fluid resuscitation IV per protocol",
+          "order": 3,
+          "search_terms": [
+            "fluid"
+          ],
+          "tags": [
+            "resuscitation"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-4",
+          "chip_text": "fixed-rate IV insulin infusion per protocol",
+          "order": 4,
+          "search_terms": [
+            "fixed-rate"
+          ],
+          "tags": [
+            "iv"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-5",
+          "chip_text": "IV potassium replacement per protocol",
+          "order": 5,
+          "search_terms": [
+            "iv"
+          ],
+          "tags": [
+            "potassium"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-6",
+          "chip_text": "monitor capillary blood glucose hourly",
+          "order": 6,
+          "search_terms": [
+            "monitor"
+          ],
+          "tags": [
+            "capillary"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-7",
+          "chip_text": "monitor capillary ketones 1-2 hourly",
+          "order": 7,
+          "search_terms": [
+            "monitor"
+          ],
+          "tags": [
+            "capillary"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-8",
+          "chip_text": "monitor VBG and U&Es 2 hourly initially",
+          "order": 8,
+          "search_terms": [
+            "monitor"
+          ],
+          "tags": [
+            "vbg"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-9",
+          "chip_text": "NG tube if vomiting or reduced GCS",
+          "order": 9,
+          "search_terms": [
+            "ng"
+          ],
+          "tags": [
+            "tube"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-10",
+          "chip_text": "urinary catheter for fluid balance",
+          "order": 10,
+          "search_terms": [
+            "urinary"
+          ],
+          "tags": [
+            "catheter"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-11",
+          "chip_text": "continuous cardiac monitoring",
+          "order": 11,
+          "search_terms": [
+            "continuous"
+          ],
+          "tags": [
+            "cardiac"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-12",
+          "chip_text": "admit to HDU if severe",
+          "order": 12,
+          "search_terms": [
+            "admit"
+          ],
+          "tags": [
+            "to"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-13",
+          "chip_text": "admit to ITU if shocked or unconscious",
+          "order": 13,
+          "search_terms": [
+            "admit"
+          ],
+          "tags": [
+            "to"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-14",
+          "chip_text": "diabetes specialist nurse referral",
+          "order": 14,
+          "search_terms": [
+            "diabetes"
+          ],
+          "tags": [
+            "specialist"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-15",
+          "chip_text": "precipitant cause investigated and treated",
+          "order": 15,
+          "search_terms": [
+            "precipitant"
+          ],
+          "tags": [
+            "cause"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-16",
+          "chip_text": "insulin regimen review on recovery",
+          "order": 16,
+          "search_terms": [
+            "insulin"
+          ],
+          "tags": [
+            "regimen"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-plan_phrases-17",
+          "chip_text": "patient education on sick day rules",
+          "order": 17,
+          "search_terms": [
+            "patient"
+          ],
+          "tags": [
+            "education"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "urgent-dka-follow_up-1",
+          "chip_text": "HDU/ITU admission planned if severe",
+          "order": 1,
+          "search_terms": [
+            "admit"
+          ],
+          "tags": [
+            "to"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-follow_up-2",
+          "chip_text": "medical ward admission planned if mild-moderate",
+          "order": 2,
+          "search_terms": [
+            "admit"
+          ],
+          "tags": [
+            "to"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-follow_up-3",
+          "chip_text": "diabetes team review within 24 hours",
+          "order": 3,
+          "search_terms": [
+            "diabetes"
+          ],
+          "tags": [
+            "team"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-follow_up-4",
+          "chip_text": "sick day rules education before discharge",
+          "order": 4,
+          "search_terms": [
+            "sick"
+          ],
+          "tags": [
+            "day"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-follow_up-5",
+          "chip_text": "GP follow-up in 1 week",
+          "order": 5,
+          "search_terms": [
+            "gp"
+          ],
+          "tags": [
+            "follow-up"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-follow_up-6",
+          "chip_text": "diabetes nurse follow-up appointment",
+          "order": 6,
+          "search_terms": [
+            "diabetes"
+          ],
+          "tags": [
+            "nurse"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-follow_up-7",
+          "chip_text": "home glucose and ketone meters arranged",
+          "order": 7,
+          "search_terms": [
+            "home"
+          ],
+          "tags": [
+            "glucose"
+          ]
+        },
+        {
+          "chip_id": "urgent-dka-follow_up-8",
+          "chip_text": "return immediately if vomiting or ketones rising",
+          "order": 8,
+          "search_terms": [
+            "return"
+          ],
+          "tags": [
+            "immediately"
+          ]
+        }
+      ]
+    },
+    "derm-skin-cancer-2ww": {
+      "symptoms": [
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-1",
+          "chip_text": "changing pigmented lesion",
+          "order": 1,
+          "search_terms": [
+            "changing"
+          ],
+          "tags": [
+            "pigmented"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-2",
+          "chip_text": "lesion increasing in size",
+          "order": 2,
+          "search_terms": [
+            "lesion"
+          ],
+          "tags": [
+            "increasing"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-3",
+          "chip_text": "lesion changing colour",
+          "order": 3,
+          "search_terms": [
+            "lesion"
+          ],
+          "tags": [
+            "changing"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-4",
+          "chip_text": "lesion irregular borders developing",
+          "order": 4,
+          "search_terms": [
+            "lesion"
+          ],
+          "tags": [
+            "irregular"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-5",
+          "chip_text": "itchy lesion",
+          "order": 5,
+          "search_terms": [
+            "itchy"
+          ],
+          "tags": [
+            "lesion"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-6",
+          "chip_text": "bleeding lesion",
+          "order": 6,
+          "search_terms": [
+            "bleeding"
+          ],
+          "tags": [
+            "lesion"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-7",
+          "chip_text": "ulcerated lesion",
+          "order": 7,
+          "search_terms": [
+            "ulcerated"
+          ],
+          "tags": [
+            "lesion"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-8",
+          "chip_text": "crusting lesion not healing",
+          "order": 8,
+          "search_terms": [
+            "crusting"
+          ],
+          "tags": [
+            "lesion"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-9",
+          "chip_text": "new pigmented lesion in adult",
+          "order": 9,
+          "search_terms": [
+            "new"
+          ],
+          "tags": [
+            "pigmented"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-10",
+          "chip_text": "history of previous melanoma",
+          "order": 10,
+          "search_terms": [
+            "history"
+          ],
+          "tags": [
+            "of"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-11",
+          "chip_text": "family history of melanoma",
+          "order": 11,
+          "search_terms": [
+            "family"
+          ],
+          "tags": [
+            "history"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-12",
+          "chip_text": "multiple (>50) atypical naevi",
+          "order": 12,
+          "search_terms": [
+            "multiple"
+          ],
+          "tags": [
+            "(>50)"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-13",
+          "chip_text": "frequent sunburn history",
+          "order": 13,
+          "search_terms": [
+            "frequent"
+          ],
+          "tags": [
+            "sunburn"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-14",
+          "chip_text": "sunbed use",
+          "order": 14,
+          "search_terms": [
+            "sunbed"
+          ],
+          "tags": [
+            "use"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-15",
+          "chip_text": "fair skin (Fitzpatrick I-II)",
+          "order": 15,
+          "search_terms": [
+            "fair"
+          ],
+          "tags": [
+            "skin"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-16",
+          "chip_text": "immunosuppression",
+          "order": 16,
+          "search_terms": [
+            "immunosuppression"
+          ],
+          "tags": [
+            "immunosuppression"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-17",
+          "chip_text": "previous skin cancer history",
+          "order": 17,
+          "search_terms": [
+            "previous"
+          ],
+          "tags": [
+            "skin"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-18",
+          "chip_text": "duration: weeks",
+          "order": 18,
+          "search_terms": [
+            "duration:"
+          ],
+          "tags": [
+            "weeks"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-19",
+          "chip_text": "duration: months",
+          "order": 19,
+          "search_terms": [
+            "duration:"
+          ],
+          "tags": [
+            "months"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-symptoms-20",
+          "chip_text": "duration: >6 months",
+          "order": 20,
+          "search_terms": [
+            "duration:"
+          ],
+          "tags": [
+            ">6"
+          ]
+        }
+      ],
+      "relevant_negatives": [
+        {
+          "chip_id": "derm-skin-cancer-2ww-relevant_negatives-1",
+          "chip_text": "no other suspicious lesions",
+          "order": 1,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "other"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-relevant_negatives-2",
+          "chip_text": "no lymphadenopathy",
+          "order": 2,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "lymphadenopathy"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-relevant_negatives-3",
+          "chip_text": "no known melanoma",
+          "order": 3,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "known"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-relevant_negatives-4",
+          "chip_text": "no immunosuppression",
+          "order": 4,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "immunosuppression"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-relevant_negatives-5",
+          "chip_text": "no significant systemic symptoms",
+          "order": 5,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "significant"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-relevant_negatives-6",
+          "chip_text": "no constitutional symptoms (weight loss, fatigue)",
+          "order": 6,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "constitutional"
+          ]
+        }
+      ],
+      "exam_findings": [
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-1",
+          "chip_text": "lesion location: documented (anatomical site)",
+          "order": 1,
+          "search_terms": [
+            "lesion"
+          ],
+          "tags": [
+            "location:"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-2",
+          "chip_text": "lesion size: ___ mm x ___ mm",
+          "order": 2,
+          "search_terms": [
+            "lesion"
+          ],
+          "tags": [
+            "size:"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-3",
+          "chip_text": "asymmetry present (A of ABCDE)",
+          "order": 3,
+          "search_terms": [
+            "asymmetry"
+          ],
+          "tags": [
+            "present"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-4",
+          "chip_text": "border irregularity (B of ABCDE)",
+          "order": 4,
+          "search_terms": [
+            "border"
+          ],
+          "tags": [
+            "irregularity"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-5",
+          "chip_text": "colour variation (C of ABCDE)",
+          "order": 5,
+          "search_terms": [
+            "colour"
+          ],
+          "tags": [
+            "variation"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-6",
+          "chip_text": "diameter >6mm (D of ABCDE)",
+          "order": 6,
+          "search_terms": [
+            "diameter"
+          ],
+          "tags": [
+            ">6mm"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-7",
+          "chip_text": "evolving / changing (E of ABCDE)",
+          "order": 7,
+          "search_terms": [
+            "evolving"
+          ],
+          "tags": [
+            "/"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-8",
+          "chip_text": "pigmented brown/black",
+          "order": 8,
+          "search_terms": [
+            "pigmented"
+          ],
+          "tags": [
+            "brown/black"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-9",
+          "chip_text": "pigmented blue-grey areas",
+          "order": 9,
+          "search_terms": [
+            "pigmented"
+          ],
+          "tags": [
+            "blue-grey"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-10",
+          "chip_text": "pearly papule with telangiectasia (BCC)",
+          "order": 10,
+          "search_terms": [
+            "pearly"
+          ],
+          "tags": [
+            "papule"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-11",
+          "chip_text": "rolled edge with central ulceration (BCC)",
+          "order": 11,
+          "search_terms": [
+            "rolled"
+          ],
+          "tags": [
+            "edge"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-12",
+          "chip_text": "scaly erythematous plaque (SCC/AK)",
+          "order": 12,
+          "search_terms": [
+            "scaly"
+          ],
+          "tags": [
+            "erythematous"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-13",
+          "chip_text": "keratin horn",
+          "order": 13,
+          "search_terms": [
+            "keratin"
+          ],
+          "tags": [
+            "horn"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-14",
+          "chip_text": "rapid growth (weeks)",
+          "order": 14,
+          "search_terms": [
+            "rapid"
+          ],
+          "tags": [
+            "growth"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-15",
+          "chip_text": "satellite lesions",
+          "order": 15,
+          "search_terms": [
+            "satellite"
+          ],
+          "tags": [
+            "lesions"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-16",
+          "chip_text": "palpable",
+          "order": 16,
+          "search_terms": [
+            "palpable"
+          ],
+          "tags": [
+            "palpable"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-17",
+          "chip_text": "hard induration",
+          "order": 17,
+          "search_terms": [
+            "hard"
+          ],
+          "tags": [
+            "induration"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-18",
+          "chip_text": "no lymphadenopathy regional",
+          "order": 18,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "lymphadenopathy"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-19",
+          "chip_text": "lymphadenopathy regional present",
+          "order": 19,
+          "search_terms": [
+            "lymphadenopathy"
+          ],
+          "tags": [
+            "regional"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-20",
+          "chip_text": "photographed for record (with consent)",
+          "order": 20,
+          "search_terms": [
+            "photographed"
+          ],
+          "tags": [
+            "for"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-21",
+          "chip_text": "dermoscopy performed",
+          "order": 21,
+          "search_terms": [
+            "dermoscopy"
+          ],
+          "tags": [
+            "performed"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-22",
+          "chip_text": "dermoscopy findings: melanocytic atypia",
+          "order": 22,
+          "search_terms": [
+            "dermoscopy"
+          ],
+          "tags": [
+            "findings:"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-exam_findings-23",
+          "chip_text": "dermoscopy findings: non-melanocytic",
+          "order": 23,
+          "search_terms": [
+            "dermoscopy"
+          ],
+          "tags": [
+            "findings:"
+          ]
+        }
+      ],
+      "red_flags": [
+        {
+          "chip_id": "derm-skin-cancer-2ww-red_flags-1",
+          "chip_text": "7-point checklist score ≥3",
+          "order": 1,
+          "search_terms": [
+            "7-point"
+          ],
+          "tags": [
+            "checklist"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-red_flags-2",
+          "chip_text": "rapid growth in weeks (suspect SCC or melanoma)",
+          "order": 2,
+          "search_terms": [
+            "rapid"
+          ],
+          "tags": [
+            "growth"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-red_flags-3",
+          "chip_text": "ulceration with bleeding",
+          "order": 3,
+          "search_terms": [
+            "ulceration"
+          ],
+          "tags": [
+            "with"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-red_flags-4",
+          "chip_text": "lymph node involvement",
+          "order": 4,
+          "search_terms": [
+            "lymph"
+          ],
+          "tags": [
+            "node"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-red_flags-5",
+          "chip_text": "in-transit metastases",
+          "order": 5,
+          "search_terms": [
+            "in-transit"
+          ],
+          "tags": [
+            "metastases"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-red_flags-6",
+          "chip_text": "new pigmented lesion >40 years old",
+          "order": 6,
+          "search_terms": [
+            "new"
+          ],
+          "tags": [
+            "pigmented"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-red_flags-7",
+          "chip_text": "changing lesion in pregnancy",
+          "order": 7,
+          "search_terms": [
+            "changing"
+          ],
+          "tags": [
+            "lesion"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-red_flags-8",
+          "chip_text": "lesion >7mm + 1 minor criterion",
+          "order": 8,
+          "search_terms": [
+            "lesion"
+          ],
+          "tags": [
+            ">7mm"
+          ]
+        }
+      ],
+      "investigations": [
+        {
+          "chip_id": "derm-skin-cancer-2ww-investigations-1",
+          "chip_text": "clinical photograph: taken with consent",
+          "order": 1,
+          "search_terms": [
+            "clinical"
+          ],
+          "tags": [
+            "photograph:"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-investigations-2",
+          "chip_text": "dermoscopy: performed and described",
+          "order": 2,
+          "search_terms": [
+            "dermoscopy:"
+          ],
+          "tags": [
+            "performed"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-investigations-3",
+          "chip_text": "skin biopsy: not performed in primary care",
+          "order": 3,
+          "search_terms": [
+            "skin"
+          ],
+          "tags": [
+            "biopsy:"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-investigations-4",
+          "chip_text": "lymph node ultrasound: arranged if palpable",
+          "order": 4,
+          "search_terms": [
+            "lymph"
+          ],
+          "tags": [
+            "node"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-investigations-5",
+          "chip_text": "full skin examination: completed",
+          "order": 5,
+          "search_terms": [
+            "full"
+          ],
+          "tags": [
+            "skin"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-investigations-6",
+          "chip_text": "review of relevant history (sun exposure, immunosuppression)",
+          "order": 6,
+          "search_terms": [
+            "review"
+          ],
+          "tags": [
+            "of"
+          ]
+        }
+      ],
+      "plan_phrases": [
+        {
+          "chip_id": "derm-skin-cancer-2ww-plan_phrases-1",
+          "chip_text": "2-week wait dermatology referral submitted",
+          "order": 1,
+          "search_terms": [
+            "2-week"
+          ],
+          "tags": [
+            "wait"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-plan_phrases-2",
+          "chip_text": "urgent suspected cancer referral pathway",
+          "order": 2,
+          "search_terms": [
+            "urgent"
+          ],
+          "tags": [
+            "suspected"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-plan_phrases-3",
+          "chip_text": "patient counselled about referral and timeline",
+          "order": 3,
+          "search_terms": [
+            "patient"
+          ],
+          "tags": [
+            "counselled"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-plan_phrases-4",
+          "chip_text": "patient given written information about 2WW",
+          "order": 4,
+          "search_terms": [
+            "patient"
+          ],
+          "tags": [
+            "given"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-plan_phrases-5",
+          "chip_text": "photograph documented in records (with consent)",
+          "order": 5,
+          "search_terms": [
+            "photograph"
+          ],
+          "tags": [
+            "documented"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-plan_phrases-6",
+          "chip_text": "no biopsy in primary care (refer for specialist excision)",
+          "order": 6,
+          "search_terms": [
+            "no"
+          ],
+          "tags": [
+            "biopsy"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-plan_phrases-7",
+          "chip_text": "sun protection advice given",
+          "order": 7,
+          "search_terms": [
+            "sun"
+          ],
+          "tags": [
+            "protection"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-plan_phrases-8",
+          "chip_text": "self-examination education provided",
+          "order": 8,
+          "search_terms": [
+            "self-examination"
+          ],
+          "tags": [
+            "education"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-plan_phrases-9",
+          "chip_text": "safety-netting documented",
+          "order": 9,
+          "search_terms": [
+            "safety-netting"
+          ],
+          "tags": [
+            "documented"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-plan_phrases-10",
+          "chip_text": "GP letter to dermatology completed",
+          "order": 10,
+          "search_terms": [
+            "gp"
+          ],
+          "tags": [
+            "letter"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-plan_phrases-11",
+          "chip_text": "patient asked to attend appointment within 2 weeks",
+          "order": 11,
+          "search_terms": [
+            "patient"
+          ],
+          "tags": [
+            "asked"
+          ]
+        }
+      ],
+      "follow_up": [
+        {
+          "chip_id": "derm-skin-cancer-2ww-follow_up-1",
+          "chip_text": "dermatology appointment within 2 weeks (NHS standard)",
+          "order": 1,
+          "search_terms": [
+            "dermatology"
+          ],
+          "tags": [
+            "appointment"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-follow_up-2",
+          "chip_text": "GP follow-up after dermatology review",
+          "order": 2,
+          "search_terms": [
+            "gp"
+          ],
+          "tags": [
+            "follow-up"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-follow_up-3",
+          "chip_text": "urgent contact if lesion changes before appointment",
+          "order": 3,
+          "search_terms": [
+            "urgent"
+          ],
+          "tags": [
+            "contact"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-follow_up-4",
+          "chip_text": "biopsy result review with dermatologist",
+          "order": 4,
+          "search_terms": [
+            "biopsy"
+          ],
+          "tags": [
+            "result"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-follow_up-5",
+          "chip_text": "long-term skin surveillance if biopsy positive",
+          "order": 5,
+          "search_terms": [
+            "long-term"
+          ],
+          "tags": [
+            "skin"
+          ]
+        },
+        {
+          "chip_id": "derm-skin-cancer-2ww-follow_up-6",
+          "chip_text": "return if new suspicious lesion",
+          "order": 6,
+          "search_terms": [
+            "return"
+          ],
+          "tags": [
+            "if"
           ]
         }
       ]

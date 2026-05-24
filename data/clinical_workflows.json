@@ -8221,5 +8221,173 @@
     "min_sections": [
       "hpi"
     ]
+  },
+  {
+    "workflow_id": "urgent-anaphylaxis",
+    "specialty_id": "Emergency / Urgent Care",
+    "chief_complaint": "Anaphylaxis",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Anaphylactic reaction",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "T78.2",
+      "icd_label": "Anaphylactic shock, unspecified",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "urgent-dka",
+    "specialty_id": "Emergency / Urgent Care",
+    "chief_complaint": "Diabetic ketoacidosis (DKA)",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Diabetic ketoacidosis",
+    "diagnosis_aliases": [],
+    "history_layout_id": "General Medicine / GP",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "E11.10",
+      "icd_label": "Type 2 diabetes mellitus with ketoacidosis without coma",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
+  },
+  {
+    "workflow_id": "derm-skin-cancer-2ww",
+    "specialty_id": "Dermatology",
+    "chief_complaint": "Suspected skin cancer (2-week wait)",
+    "chief_complaint_aliases": [],
+    "diagnosis": "Suspected skin cancer pending dermatology review",
+    "diagnosis_aliases": [],
+    "history_layout_id": "Dermatology",
+    "filters": {
+      "age_min_months": null,
+      "age_max_years": null,
+      "sex": null
+    },
+    "icd_metadata": {
+      "icd_system": "ICD-10-CM",
+      "icd_code": "D48.5",
+      "icd_label": "Neoplasm of uncertain behavior of skin",
+      "icd_verified": false,
+      "icd_source": null
+    },
+    "chip_groups": [
+      {
+        "group": "symptoms",
+        "order": 1,
+        "prompt": "Select symptoms present"
+      },
+      {
+        "group": "relevant_negatives",
+        "order": 2,
+        "prompt": "Select negatives ruled out"
+      },
+      {
+        "group": "exam_findings",
+        "order": 3,
+        "prompt": "Select examination findings"
+      },
+      {
+        "group": "red_flags",
+        "order": 4,
+        "prompt": "Red flags discussed with patient"
+      },
+      {
+        "group": "plan_phrases",
+        "order": 5,
+        "prompt": "Select plan items"
+      },
+      {
+        "group": "follow_up",
+        "order": 6,
+        "prompt": "Follow-up interval"
+      }
+    ],
+    "min_sections": [
+      "hpi"
+    ]
   }
 ]

@@ -8300,5 +8300,169 @@
     "safety_note": "CRITICAL: Infants <3 months with fever ≥38°C require immediate hospital assessment for sepsis workup. This workflow assists documentation only — clinical decision is the doctor's.",
     "review_required": true,
     "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "urgent-anaphylaxis",
+    "preset_name": "Anaphylaxis quick start",
+    "specialty": "Emergency / Urgent Care",
+    "default_duration_options": [
+      "within 1 hour",
+      "1-3 hours",
+      "3-12 hours",
+      "today",
+      "recent days"
+    ],
+    "prechecked_symptoms": [
+      "lip and tongue swelling",
+      "tongue swelling causing dysarthria",
+      "difficulty swallowing"
+    ],
+    "prechecked_relevant_negatives": [
+      "no isolated urticaria without systemic features",
+      "no known mucosal involvement",
+      "no prior similar reaction",
+      "no current beta-blocker use"
+    ],
+    "prechecked_exam_findings": [
+      "BP 90-110 systolic (borderline)",
+      "HR >120 bpm",
+      "SpO2 <94% on RA"
+    ],
+    "prechecked_investigations": [
+      "mast cell tryptase: baseline (now), 1-2hr, 24hr",
+      "ECG: sinus tachycardia",
+      "ECG: ischaemic changes"
+    ],
+    "prechecked_plan_phrases": [
+      "IM adrenaline thigh given per local protocol",
+      "IM adrenaline repeat at 5 minutes if no improvement",
+      "high-flow oxygen via non-rebreather",
+      "IV access established"
+    ],
+    "prechecked_follow_up": [
+      "observation 6-12 hours minimum",
+      "observation 24 hours if biphasic risk"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. This is a documentation tool — emergency clinical decisions remain the doctor's. Keep only items personally assessed; remove anything not confirmed.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "urgent-dka",
+    "preset_name": "DKA Documentation quick start",
+    "specialty": "Emergency / Urgent Care",
+    "default_duration_options": [
+      "within 1 hour",
+      "1-3 hours",
+      "3-12 hours",
+      "today",
+      "recent days"
+    ],
+    "prechecked_symptoms": [
+      "polyuria for days",
+      "polydipsia",
+      "weight loss recent",
+      "nausea",
+      "vomiting persistent"
+    ],
+    "prechecked_relevant_negatives": [
+      "no chest pain",
+      "no focal neurology",
+      "no severe headache",
+      "no signs of meningism"
+    ],
+    "prechecked_exam_findings": [
+      "GCS 15/15",
+      "GCS 13-14/15",
+      "BP 110/70"
+    ],
+    "prechecked_investigations": [
+      "capillary glucose: >11.0 mmol/L (or known DM)",
+      "capillary ketones: >3.0 mmol/L",
+      "urine dip: ketones ++++ glucose ++++"
+    ],
+    "prechecked_plan_phrases": [
+      "DKA pathway initiated per local protocol",
+      "IV access x2 large bore",
+      "fluid resuscitation IV per protocol",
+      "fixed-rate IV insulin infusion per protocol"
+    ],
+    "prechecked_follow_up": [
+      "HDU/ITU admission planned if severe",
+      "medical ward admission planned if mild-moderate"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. This is a documentation tool — emergency clinical decisions remain the doctor's. Keep only items personally assessed; remove anything not confirmed.",
+    "review_required": true,
+    "preset_version": "1.0.0"
+  },
+  {
+    "workflow_id": "derm-skin-cancer-2ww",
+    "preset_name": "Skin Cancer 2WW Referral quick start",
+    "specialty": "Dermatology",
+    "default_duration_options": [
+      "within 1 hour",
+      "1-3 hours",
+      "3-12 hours",
+      "today",
+      "recent days"
+    ],
+    "prechecked_symptoms": [
+      "changing pigmented lesion",
+      "lesion increasing in size",
+      "lesion changing colour",
+      "lesion irregular borders developing",
+      "itchy lesion"
+    ],
+    "prechecked_relevant_negatives": [
+      "no other suspicious lesions",
+      "no lymphadenopathy",
+      "no known melanoma",
+      "no immunosuppression"
+    ],
+    "prechecked_exam_findings": [
+      "lesion location: documented (anatomical site)",
+      "lesion size: ___ mm x ___ mm",
+      "asymmetry present (A of ABCDE)",
+      "border irregularity (B of ABCDE)"
+    ],
+    "prechecked_investigations": [
+      "clinical photograph: taken with consent",
+      "dermoscopy: performed and described",
+      "skin biopsy: not performed in primary care"
+    ],
+    "prechecked_plan_phrases": [
+      "2-week wait dermatology referral submitted",
+      "urgent suspected cancer referral pathway",
+      "patient counselled about referral and timeline",
+      "patient given written information about 2WW"
+    ],
+    "prechecked_follow_up": [
+      "dermatology appointment within 2 weeks (NHS standard)",
+      "GP follow-up after dermatology review"
+    ],
+    "collapsed_optional_sections": [
+      "exam",
+      "investigations",
+      "referral",
+      "follow-up",
+      "additional history"
+    ],
+    "safety_note": "Defaults are suggestions only. This is a documentation tool — emergency clinical decisions remain the doctor's. Keep only items personally assessed; remove anything not confirmed.",
+    "review_required": true,
+    "preset_version": "1.0.0"
   }
 ]

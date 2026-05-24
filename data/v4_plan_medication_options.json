@@ -1252,5 +1252,455 @@
         ]
       }
     ]
+  },
+  {
+    "workflow_id": "urgent-anaphylaxis",
+    "workflow_display_name": "Anaphylaxis",
+    "specialty": "Emergency / Urgent Care",
+    "source_status": "unverified",
+    "review_required": true,
+    "safety_note": "Documentation options only. Clinician confirms each selected item. No treatment recommendations.",
+    "option_groups": [
+      {
+        "group_id": "gp_fever_urti_counseling",
+        "group_label": "Counseling and advice",
+        "display_order": 1,
+        "safety_note": "Select only items the clinician discussed with the patient.",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_supportive_advice",
+            "label": "Supportive care advice documented if discussed.",
+            "note_text": "Supportive care advised.",
+            "option_type": "counseling",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          },
+          {
+            "option_id": "gp_fever_urti_hydration",
+            "label": "Hydration advice documented if discussed.",
+            "note_text": "Hydration advised.",
+            "option_type": "counseling",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          },
+          {
+            "option_id": "gp_fever_urti_rest",
+            "label": "Rest advice documented if discussed.",
+            "note_text": "Rest advised.",
+            "option_type": "counseling",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          },
+          {
+            "option_id": "gp_fever_urti_salt_gargle",
+            "label": "Salt water gargle/rinse advice documented if discussed.",
+            "note_text": "Salt water gargle/rinse advised.",
+            "option_type": "patient_instruction_documentation",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          }
+        ]
+      },
+      {
+        "group_id": "gp_fever_urti_medication",
+        "group_label": "Medication-related documentation",
+        "display_order": 2,
+        "safety_note": "Select only if the clinician decided. Does not specify agent, dose, or regimen.",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_antipyretic",
+            "label": "Antipyretic plan documented if decided by clinician.",
+            "note_text": "Antipyretic planned.",
+            "option_type": "medication_documentation",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "warning": "Medication agent, dose, and frequency must be entered by the clinician if needed."
+          },
+          {
+            "option_id": "gp_fever_urti_antibiotic",
+            "label": "Antibiotic plan documented if decided by clinician.",
+            "note_text": "Antibiotic planned.",
+            "option_type": "medication_documentation",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "warning": "Antibiotic agent, dose, duration, and indication must be entered by the clinician if prescribed."
+          }
+        ]
+      },
+      {
+        "group_id": "gp_fever_urti_safety",
+        "group_label": "Safety netting",
+        "display_order": 3,
+        "safety_note": "Document only what was discussed with the patient.",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_return_precautions",
+            "label": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_type": "safety_netting",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          }
+        ]
+      },
+      {
+        "group_id": "gp_fever_urti_follow_up",
+        "group_label": "Follow-up",
+        "display_order": 4,
+        "safety_note": "Document follow-up only if arranged by the clinician.",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_follow_up_3d",
+            "label": "Follow-up in 3 days if not improving.",
+            "note_text": "Follow-up in 3 days if not improving.",
+            "option_type": "follow_up",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          },
+          {
+            "option_id": "gp_fever_urti_follow_up_sooner",
+            "label": "Sooner if symptoms worsen.",
+            "note_text": "Sooner if symptoms worsen.",
+            "option_type": "follow_up",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "urgent-dka",
+    "workflow_display_name": "DKA Documentation",
+    "specialty": "Emergency / Urgent Care",
+    "source_status": "unverified",
+    "review_required": true,
+    "safety_note": "Documentation options only. Clinician confirms each selected item. No treatment recommendations.",
+    "option_groups": [
+      {
+        "group_id": "gp_fever_urti_counseling",
+        "group_label": "Counseling and advice",
+        "display_order": 1,
+        "safety_note": "Select only items the clinician discussed with the patient.",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_supportive_advice",
+            "label": "Supportive care advice documented if discussed.",
+            "note_text": "Supportive care advised.",
+            "option_type": "counseling",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          },
+          {
+            "option_id": "gp_fever_urti_hydration",
+            "label": "Hydration advice documented if discussed.",
+            "note_text": "Hydration advised.",
+            "option_type": "counseling",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          },
+          {
+            "option_id": "gp_fever_urti_rest",
+            "label": "Rest advice documented if discussed.",
+            "note_text": "Rest advised.",
+            "option_type": "counseling",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          },
+          {
+            "option_id": "gp_fever_urti_salt_gargle",
+            "label": "Salt water gargle/rinse advice documented if discussed.",
+            "note_text": "Salt water gargle/rinse advised.",
+            "option_type": "patient_instruction_documentation",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          }
+        ]
+      },
+      {
+        "group_id": "gp_fever_urti_medication",
+        "group_label": "Medication-related documentation",
+        "display_order": 2,
+        "safety_note": "Select only if the clinician decided. Does not specify agent, dose, or regimen.",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_antipyretic",
+            "label": "Antipyretic plan documented if decided by clinician.",
+            "note_text": "Antipyretic planned.",
+            "option_type": "medication_documentation",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "warning": "Medication agent, dose, and frequency must be entered by the clinician if needed."
+          },
+          {
+            "option_id": "gp_fever_urti_antibiotic",
+            "label": "Antibiotic plan documented if decided by clinician.",
+            "note_text": "Antibiotic planned.",
+            "option_type": "medication_documentation",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "warning": "Antibiotic agent, dose, duration, and indication must be entered by the clinician if prescribed."
+          }
+        ]
+      },
+      {
+        "group_id": "gp_fever_urti_safety",
+        "group_label": "Safety netting",
+        "display_order": 3,
+        "safety_note": "Document only what was discussed with the patient.",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_return_precautions",
+            "label": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_type": "safety_netting",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          }
+        ]
+      },
+      {
+        "group_id": "gp_fever_urti_follow_up",
+        "group_label": "Follow-up",
+        "display_order": 4,
+        "safety_note": "Document follow-up only if arranged by the clinician.",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_follow_up_3d",
+            "label": "Follow-up in 3 days if not improving.",
+            "note_text": "Follow-up in 3 days if not improving.",
+            "option_type": "follow_up",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          },
+          {
+            "option_id": "gp_fever_urti_follow_up_sooner",
+            "label": "Sooner if symptoms worsen.",
+            "note_text": "Sooner if symptoms worsen.",
+            "option_type": "follow_up",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "workflow_id": "derm-skin-cancer-2ww",
+    "workflow_display_name": "Skin Cancer 2WW Referral",
+    "specialty": "Dermatology",
+    "source_status": "unverified",
+    "review_required": true,
+    "safety_note": "Documentation options only. Clinician confirms each selected item. No treatment recommendations.",
+    "option_groups": [
+      {
+        "group_id": "gp_fever_urti_counseling",
+        "group_label": "Counseling and advice",
+        "display_order": 1,
+        "safety_note": "Select only items the clinician discussed with the patient.",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_supportive_advice",
+            "label": "Supportive care advice documented if discussed.",
+            "note_text": "Supportive care advised.",
+            "option_type": "counseling",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          },
+          {
+            "option_id": "gp_fever_urti_hydration",
+            "label": "Hydration advice documented if discussed.",
+            "note_text": "Hydration advised.",
+            "option_type": "counseling",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          },
+          {
+            "option_id": "gp_fever_urti_rest",
+            "label": "Rest advice documented if discussed.",
+            "note_text": "Rest advised.",
+            "option_type": "counseling",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          },
+          {
+            "option_id": "gp_fever_urti_salt_gargle",
+            "label": "Salt water gargle/rinse advice documented if discussed.",
+            "note_text": "Salt water gargle/rinse advised.",
+            "option_type": "patient_instruction_documentation",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          }
+        ]
+      },
+      {
+        "group_id": "gp_fever_urti_medication",
+        "group_label": "Medication-related documentation",
+        "display_order": 2,
+        "safety_note": "Select only if the clinician decided. Does not specify agent, dose, or regimen.",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_antipyretic",
+            "label": "Antipyretic plan documented if decided by clinician.",
+            "note_text": "Antipyretic planned.",
+            "option_type": "medication_documentation",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "warning": "Medication agent, dose, and frequency must be entered by the clinician if needed."
+          },
+          {
+            "option_id": "gp_fever_urti_antibiotic",
+            "label": "Antibiotic plan documented if decided by clinician.",
+            "note_text": "Antibiotic planned.",
+            "option_type": "medication_documentation",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": true,
+            "dosing_included": false,
+            "warning": "Antibiotic agent, dose, duration, and indication must be entered by the clinician if prescribed."
+          }
+        ]
+      },
+      {
+        "group_id": "gp_fever_urti_safety",
+        "group_label": "Safety netting",
+        "display_order": 3,
+        "safety_note": "Document only what was discussed with the patient.",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_return_precautions",
+            "label": "Return precautions documented if discussed.",
+            "note_text": "Return precautions discussed.",
+            "option_type": "safety_netting",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          }
+        ]
+      },
+      {
+        "group_id": "gp_fever_urti_follow_up",
+        "group_label": "Follow-up",
+        "display_order": 4,
+        "safety_note": "Document follow-up only if arranged by the clinician.",
+        "options": [
+          {
+            "option_id": "gp_fever_urti_follow_up_3d",
+            "label": "Follow-up in 3 days if not improving.",
+            "note_text": "Follow-up in 3 days if not improving.",
+            "option_type": "follow_up",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          },
+          {
+            "option_id": "gp_fever_urti_follow_up_sooner",
+            "label": "Sooner if symptoms worsen.",
+            "note_text": "Sooner if symptoms worsen.",
+            "option_type": "follow_up",
+            "source_id": "",
+            "source_status": "unverified",
+            "clinician_confirmation_required": true,
+            "medication_related": false,
+            "dosing_included": false,
+            "warning": ""
+          }
+        ]
+      }
+    ]
   }
 ]

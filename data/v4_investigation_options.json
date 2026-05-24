@@ -6692,5 +6692,89 @@
     ],
     "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
     "review_required": true
+  },
+  {
+    "workflow_id": "urgent-anaphylaxis",
+    "investigation_groups": [
+      {
+        "group_id": "records_urgent-allergic-reaction",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_urgent-allergic-reaction",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "allergy_urgent-allergic-reaction",
+            "option_text": "Allergy history reviewed if available.",
+            "note_text": "Allergy history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "workflow_display_name": "Anaphylaxis"
+  },
+  {
+    "workflow_id": "urgent-dka",
+    "investigation_groups": [
+      {
+        "group_id": "records_urgent-allergic-reaction",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_urgent-allergic-reaction",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "allergy_urgent-allergic-reaction",
+            "option_text": "Allergy history reviewed if available.",
+            "note_text": "Allergy history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "workflow_display_name": "DKA Documentation"
+  },
+  {
+    "workflow_id": "derm-skin-cancer-2ww",
+    "investigation_groups": [
+      {
+        "group_id": "records_urgent-allergic-reaction",
+        "group_label": "Records",
+        "options": [
+          {
+            "option_id": "prev_urgent-allergic-reaction",
+            "option_text": "Previous records reviewed if available.",
+            "note_text": "Previous records reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          },
+          {
+            "option_id": "allergy_urgent-allergic-reaction",
+            "option_text": "Allergy history reviewed if available.",
+            "note_text": "Allergy history reviewed.",
+            "required_level": "conditional",
+            "source_status": "draft"
+          }
+        ]
+      }
+    ],
+    "safety_note": "Documentation prompts only. Documented if assessed. No treatment recommendations. Clinician review required.",
+    "review_required": true,
+    "workflow_display_name": "Skin Cancer 2WW Referral"
   }
 ]
