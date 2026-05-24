@@ -13,27 +13,138 @@
 <meta property="og:url" content="https://hosxam.github.io/najm-ai-clinicnote/free-soap-note-generator/">
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="../seo-page.css?v=dark-futurism">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this SOAP note generator free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. ClinicNote is available as a free browser-based documentation tool. There is no subscription, no trial period, and no hidden fees. The tool runs entirely in your browser and is designed for doctors who need a quick way to structure SOAP note drafts without committing to expensive EMR add-ons."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to log in or create an account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. ClinicNote does not require login, registration, or account creation. You can open the tool and start generating SOAP note drafts immediately. This design choice prioritizes speed and privacy — there is no user tracking or profile storage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does ClinicNote store patient data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. ClinicNote is designed for de-identified use and does not provide backend patient data storage. The tool processes information in the browser session only. Once you close or refresh the page, the data is not retained on any server. You should never enter patient identifiers such as names, MRNs, or Emirates ID numbers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use this for real clinical documentation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only as a documentation draft tool using de-identified details. A licensed clinician must review, edit, and approve any output before incorporating it into official medical records. ClinicNote is a structuring aid, not a certified medical documentation system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does ClinicNote diagnose or recommend treatment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. ClinicNote structures doctor-entered details into SOAP format and does not provide diagnosis, differential diagnosis suggestions, or treatment recommendations. The Assessment and Plan sections reflect exactly what the clinician enters — the tool does not add clinical reasoning of its own."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I use SOAP format instead of other note formats?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SOAP format is ideal for initial consultations, follow-up visits where you need to document interval changes, and any encounter where you want a clear separation between subjective complaints, objective findings, your clinical assessment, and the management plan. It is less suited for brief procedure notes or discharge summaries, where other formats may be more appropriate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do the chips map to SOAP sections?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In ClinicNote, chips are grouped by clinical category. History and symptom chips populate the Subjective section. Examination finding chips populate the Objective section. The clinician's selected impression chips map to the Assessment, and management or follow-up chips map to the Plan. You can also add free-text entries to any section for details not covered by the available chips."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Najm AI ClinicNote - SOAP Note Generator",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Web browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Free browser-based SOAP note generator that helps doctors structure de-identified clinical details into Subjective, Objective, Assessment, and Plan format drafts for clinician review.",
+  "url": "https://hosxam.github.io/najm-ai-clinicnote/free-soap-note-generator/",
+  "author": {
+    "@type": "Person",
+    "name": "Hossam Abdelmageed"
+  }
+}
+</script>
 </head>
 <body>
 <header class="top"><div class="nav"><a class="brand" href="../">Najm AI ClinicNote</a><div class="nav-links"><a href="../opd-note-generator/">OPD notes</a><a href="../medical-report-draft-generator/">Report drafts</a><a href="../privacy/">Privacy</a><a href="../safety/">Safety</a></div></div></header>
 <section class="hero"><div class="hero-inner"><div class="eyebrow">SOAP note documentation draft</div><h1>Free SOAP Note Generator for Doctors</h1><p class="lead">ClinicNote helps doctors turn doctor-entered de-identified clinical details into a structured SOAP note draft for clinician review. It is browser-based, requires no login, and does not use audio recording or patient data storage.</p><div class="badges"><span class="badge">No login</span><span class="badge">No audio</span><span class="badge">No storage</span><span class="badge">Clinician review required</span></div></div></section>
 <main>
 <div class="grid"><section class="card"><h2>Who this is for</h2><p>This page is for doctors and clinical teams who want a quick way to structure de-identified consultation details into a SOAP note draft.</p><p>ClinicNote does not diagnose, recommend treatment, or replace clinician judgment. It structures what the clinician enters.</p></section><section class="card"><h2>What it generates</h2><ul><li>Subjective section from doctor-entered symptoms and relevant negatives</li><li>Objective section from documented examination and investigations</li><li>Assessment from the doctor-entered impression</li><li>Plan from the doctor-entered plan and follow-up details</li></ul></section></div>
-<section class="card"><h2>Fictional example</h2><p class="example-disclaimer">Fictional and de-identified. Do not enter patient identifiers.</p><div class="example"><h3>Clinician-entered input</h3><pre>Fever and cough for several days. Sore throat. No shortness of breath. No chest pain. Chest clear on auscultation. Impression: Viral URTI. Plan: supportive care, fluids encouraged, antipyretic advised. Follow-up if symptoms worsen.</pre></div><div class="example"><h3>Generated SOAP output example</h3><pre>SUBJECTIVE:
-Fever, cough, sore throat. No shortness of breath. No chest pain.
+
+<section class="card"><h2>How it works: the chip-based workflow</h2><p>ClinicNote uses a chip-based input system designed to minimize typing while maintaining clinical accuracy. Instead of writing free-text paragraphs from scratch, you search for a clinical workflow (for example, "URTI" or "hypertension follow-up") and the tool presents pre-built chips organized by SOAP section.</p><p>For the <strong>Subjective</strong> section, you select symptom chips such as "fever," "productive cough," or "sore throat," along with relevant negative chips like "no shortness of breath" and "no chest pain." These chips are curated from common clinical presentations and map directly to the S section of your note.</p><p>The <strong>Objective</strong> section works similarly — you select examination finding chips such as "chest clear on auscultation," "throat erythematous," or "no cervical lymphadenopathy." Investigation results can be added as free text or selected from available options.</p><p>For <strong>Assessment</strong>, you select or type your clinical impression. The tool does not suggest diagnoses — it structures what you enter. The <strong>Plan</strong> section offers management chips like "antipyretic advised," "fluids encouraged," or "follow-up in 5 days," which you select based on your clinical decision.</p><p>The entire process takes under 60 seconds for a straightforward consultation. You review the generated draft, make any edits, and copy it to your EMR or documentation system.</p></section>
+
+<section class="card"><h2>When to use SOAP format</h2><p>The SOAP note format (Subjective, Objective, Assessment, Plan) remains one of the most widely taught and used documentation structures in clinical medicine. It is particularly well-suited for initial consultations where you need to document a complete clinical picture, follow-up visits where interval history matters, and any encounter where clear separation between patient-reported symptoms and clinician-observed findings is important.</p><p>SOAP format works well in general practice, internal medicine, pediatrics, and most outpatient specialties. It provides a logical flow that other clinicians can quickly scan — they know exactly where to find the presenting complaint, what was found on examination, what you think is going on, and what you plan to do about it.</p><p>However, SOAP is not always the best choice. For brief procedure notes, a focused procedural template is more appropriate. For discharge summaries, a structured discharge format with medication reconciliation is preferred. For emergency department encounters with multiple problems, a problem-oriented format may serve better. ClinicNote also supports short EMR notes and other formats for these situations.</p><p>Common SOAP mistakes include mixing subjective and objective information (putting examination findings in the S section), writing vague assessments without supporting reasoning, and creating plans that do not clearly link back to the assessment. The chip-based system helps avoid these errors by keeping each section's content in its proper place.</p></section>
+
+<section class="card"><h2>What makes ClinicNote different</h2><p>Unlike dictation-based tools that require audio recording and transcription, ClinicNote works entirely through structured input. This means no microphone access, no background listening, and no audio files stored anywhere. For clinicians working in shared clinic spaces or multilingual environments common across the UAE and Gulf region, this removes a significant privacy and practical barrier.</p><p>ClinicNote is also not an AI that "listens" to your consultation and generates notes autonomously. Every piece of clinical information in the output comes from what you explicitly select or type. This keeps the clinician in full control and avoids the hallucination risks associated with generative AI transcription tools. The tool structures — it does not invent.</p><p>There is no subscription model, no per-note fee, and no vendor lock-in. The tool runs in your browser, works on mobile and desktop, and requires no installation or IT department approval.</p></section>
+
+<section class="card"><h2>Fictional example</h2><p class="example-disclaimer">Fictional and de-identified. Do not enter patient identifiers.</p><div class="example"><h3>Clinician-entered input (chip selections)</h3><pre>Workflow: URTI
+Symptoms selected: fever for 3 days, productive cough, sore throat, nasal congestion
+Negatives selected: no shortness of breath, no chest pain, no wheezing
+Exam chips: throat erythematous, tonsils not enlarged, chest clear bilaterally, no cervical lymphadenopathy
+Vitals entered: temp 37.8, HR 88, RR 16, SpO2 98%
+Impression: Viral upper respiratory tract infection
+Plan chips: supportive care, oral fluids encouraged, paracetamol 500mg PRN for fever, rest advised
+Follow-up: return if symptoms worsen or persist beyond 5 days</pre></div><div class="example"><h3>Generated SOAP output</h3><pre>SUBJECTIVE:
+Chief complaint: Fever, productive cough, and sore throat for 3 days.
+Associated symptoms: Nasal congestion.
+Pertinent negatives: No shortness of breath. No chest pain. No wheezing.
+No recent travel. No sick contacts reported.
 
 OBJECTIVE:
-Chest clear on auscultation.
+Vitals: Temp 37.8°C, HR 88 bpm, RR 16/min, SpO2 98% on room air.
+ENT: Throat erythematous. Tonsils not enlarged.
+Respiratory: Chest clear bilaterally on auscultation.
+Lymph nodes: No cervical lymphadenopathy.
 
 ASSESSMENT:
-Viral URTI.
+Viral upper respiratory tract infection.
 
 PLAN:
-Supportive care, fluids encouraged, antipyretic advised.
-Follow-up if symptoms persist or worsen.</pre></div></section>
+1. Supportive care — rest and oral fluids encouraged.
+2. Paracetamol 500mg PRN for fever and discomfort.
+3. No antibiotics indicated at this time.
+4. Return if symptoms worsen or persist beyond 5 days.
+5. Patient advised on red flag symptoms (difficulty breathing, high persistent fever).</pre></div></section>
+
 <section class="safety"><strong>Safety and privacy note:</strong> Use de-identified doctor-entered details only. Do not enter names, MRNs, phone numbers, exact dates of birth, Emirates ID, addresses, or other patient identifiers. Outputs are documentation drafts and require clinician review before use.</section>
+
 <section class="card"><h2>Related tools</h2><div class="related"><a href="../opd-note-generator/">OPD note generator</a><a href="../referral-letter-generator-for-doctors/">Referral letter generator</a><a href="../patient-instructions-generator/">Patient instructions generator</a><a href="../medical-report-draft-generator/">Medical report draft generator</a></div></section>
-<section class="card faq"><h2>FAQ</h2><details><summary>Is this free?</summary><p>Yes. ClinicNote is available as a free browser-based documentation tool.</p></details><details><summary>Do I need to log in?</summary><p>No. The current site does not require login or accounts.</p></details><details><summary>Does ClinicNote store patient data?</summary><p>No. It is designed for de-identified use and does not provide backend patient data storage.</p></details><details><summary>Can I use this for real clinical work?</summary><p>Only as a documentation draft tool using de-identified details. A licensed clinician must review, edit, and approve any output before use.</p></details><details><summary>Does it diagnose or recommend treatment?</summary><p>No. It structures doctor-entered details and does not provide diagnosis or treatment advice.</p></details></section>
+
+<section class="card faq"><h2>FAQ</h2><details><summary>Is this SOAP note generator free?</summary><p>Yes. ClinicNote is available as a free browser-based documentation tool. There is no subscription, no trial period, and no hidden fees. The tool runs entirely in your browser and is designed for doctors who need a quick way to structure SOAP note drafts without committing to expensive EMR add-ons.</p></details><details><summary>Do I need to log in or create an account?</summary><p>No. ClinicNote does not require login, registration, or account creation. You can open the tool and start generating SOAP note drafts immediately. This design choice prioritizes speed and privacy — there is no user tracking or profile storage.</p></details><details><summary>Does ClinicNote store patient data?</summary><p>No. ClinicNote is designed for de-identified use and does not provide backend patient data storage. The tool processes information in the browser session only. Once you close or refresh the page, the data is not retained on any server. You should never enter patient identifiers such as names, MRNs, or Emirates ID numbers.</p></details><details><summary>Can I use this for real clinical documentation?</summary><p>Only as a documentation draft tool using de-identified details. A licensed clinician must review, edit, and approve any output before incorporating it into official medical records. ClinicNote is a structuring aid, not a certified medical documentation system.</p></details><details><summary>Does ClinicNote diagnose or recommend treatment?</summary><p>No. ClinicNote structures doctor-entered details into SOAP format and does not provide diagnosis, differential diagnosis suggestions, or treatment recommendations. The Assessment and Plan sections reflect exactly what the clinician enters — the tool does not add clinical reasoning of its own.</p></details><details><summary>When should I use SOAP format instead of other note formats?</summary><p>SOAP format is ideal for initial consultations, follow-up visits where you need to document interval changes, and any encounter where you want a clear separation between subjective complaints, objective findings, your clinical assessment, and the management plan. It is less suited for brief procedure notes or discharge summaries, where other formats may be more appropriate.</p></details><details><summary>How do the chips map to SOAP sections?</summary><p>In ClinicNote, chips are grouped by clinical category. History and symptom chips populate the Subjective section. Examination finding chips populate the Objective section. The clinician's selected impression chips map to the Assessment, and management or follow-up chips map to the Plan. You can also add free-text entries to any section for details not covered by the available chips.</p></details></section>
+
 <div class="cta-row"><a class="btn" href="../">Open in ClinicNote</a><a class="btn secondary" href="../feedback/">Missing a template? Suggest one.</a></div>
 </main>
 <footer><a href="../">Main app</a> | <a href="../privacy/">Privacy</a> | <a href="../safety/">Safety</a> | <a href="../feedback/">Feedback</a> | <a href="https://wa.me/971502495662" target="_blank" rel="noopener noreferrer">WhatsApp</a><br>Built by Hossam Abdelmageed in Dubai. ClinicNote is a documentation assistance tool. Not a medical device.</footer>
