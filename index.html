@@ -330,6 +330,13 @@
 
 <style>
 
+/* Accessibility: skip-to-content link */
+.skip-link{position:absolute;top:-100px;left:0;background:var(--primary,#0f766e);color:#fff;padding:12px 24px;z-index:9999;font-size:14px;font-weight:600;border-radius:0 0 8px 0;transition:top .2s}
+.skip-link:focus{top:0}
+
+/* Accessibility: global focus-visible ring */
+*:focus-visible{outline:2px solid var(--cyan,#14b8a6);outline-offset:2px}
+
 
 
 
@@ -1016,7 +1023,7 @@ nav{background:rgba(5,8,15,0.85);-webkit-backdrop-filter:blur(20px);backdrop-fil
 
 
 
-.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.chip:focus-visible,.output-tab:focus-visible{outline:3px solid rgba(15,118,110,.28);outline-offset:2px}
+.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.chip:focus-visible,.output-tab:focus-visible{outline:2px solid var(--cyan,#14b8a6);outline-offset:2px}
 
 
 
@@ -1406,7 +1413,7 @@ nav{background:rgba(5,8,15,0.85);-webkit-backdrop-filter:blur(20px);backdrop-fil
 
 
 
-.form-group select:focus,.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
+.form-group select:focus,.form-group input:focus,.form-group textarea:focus{outline:2px solid var(--cyan,#14b8a6);outline-offset:2px;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-glow)}
 
 
 
@@ -3429,7 +3436,7 @@ nav{background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(195,204,215,0
 
 
 
-#v2WorkflowSearchInput:focus{outline:none!important;border-color:var(--primary)!important;box-shadow:0 0 0 3px var(--primary-glow)!important;background:#fff!important}
+#v2WorkflowSearchInput:focus{outline:2px solid var(--cyan,#14b8a6)!important;outline-offset:2px;border-color:var(--primary)!important;box-shadow:0 0 0 3px var(--primary-glow)!important;background:#fff!important}
 
 
 
@@ -3489,7 +3496,7 @@ nav{background:rgba(255,255,255,0.96);border-bottom:1px solid rgba(195,204,215,0
 
 
 
-.form-group select:focus,.form-group input:focus,.form-group textarea:focus,.speed-section input:focus,.speed-section textarea:focus{outline:none;border-color:var(--primary)!important;box-shadow:0 0 0 3px var(--primary-glow)!important}
+.form-group select:focus,.form-group input:focus,.form-group textarea:focus,.speed-section input:focus,.speed-section textarea:focus{outline:2px solid var(--cyan,#14b8a6);outline-offset:2px;border-color:var(--primary)!important;box-shadow:0 0 0 3px var(--primary-glow)!important}
 
 
 
@@ -5980,7 +5987,7 @@ nav{background:rgba(7,11,20,.86)!important;border-bottom:1px solid var(--bg-bord
 .card:hover,.feature-card:hover,.tool-card:hover,.product-item:hover,.calculator-card:hover{transform:translateY(-2px);border-color:var(--bg-border-bright)!important;box-shadow:var(--shadow-lg)!important}
 .card:hover::after,.feature-card:hover::after,.tool-card:hover::after,.product-item:hover::after,.calculator-card:hover::after{opacity:1}
 .card p,.product-item p,.trust-item p,.page-header p,.form-note,.speed-tip,.output-footer,.calculator-safety,.note-phi-warn{color:var(--text-secondary)!important}
-input[type="text"],input[type="email"],input[type="number"],input[type="search"],textarea,select,.input-field,.form-group input,.form-group textarea,.form-group select,.speed-section input,.speed-section textarea,.calculator-fields input,.calculator-fields select{background:var(--bg-elevated)!important;border:1px solid var(--bg-border)!important;border-radius:var(--radius-lg)!important;color:var(--text-primary)!important;font-family:var(--font-body)!important;outline:none!important;transition:border-color var(--transition-fast),box-shadow var(--transition-fast),background var(--transition-fast)}
+input[type="text"],input[type="email"],input[type="number"],input[type="search"],textarea,select,.input-field,.form-group input,.form-group textarea,.form-group select,.speed-section input,.speed-section textarea,.calculator-fields input,.calculator-fields select{background:var(--bg-elevated)!important;border:1px solid var(--bg-border)!important;border-radius:var(--radius-lg)!important;color:var(--text-primary)!important;font-family:var(--font-body)!important;transition:border-color var(--transition-fast),box-shadow var(--transition-fast),background var(--transition-fast)}
 input::placeholder,textarea::placeholder{color:var(--text-tertiary)!important}
 input:hover,textarea:hover,select:hover{border-color:var(--bg-border-bright)!important}
 input:focus,textarea:focus,select:focus{border-color:var(--accent-primary-dim)!important;box-shadow:0 0 0 3px var(--accent-primary-glow)!important}
@@ -7121,7 +7128,7 @@ footer{background:var(--surface);border-top:1px solid var(--border)}
 .wl-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent)}
 .wl-card h2{font-family:var(--ff-head);font-size:2.4rem;font-weight:600;letter-spacing:-.01em;line-height:1.15;margin-bottom:10px}
 .wl-card p{color:var(--text2);font-size:.82rem;margin-bottom:24px;line-height:1.7}
-.wl-input{background:var(--elevated);border:1px solid var(--border-b);border-radius:10px;padding:10px 14px;color:var(--text);font-family:var(--ff-body);font-size:.8rem;outline:none;transition:.2s}
+.wl-input{background:var(--elevated);border:1px solid var(--border-b);border-radius:10px;padding:10px 14px;color:var(--text);font-family:var(--ff-body);font-size:.8rem;transition:.2s}
 .wl-input:focus{border-color:var(--cyan-dim);box-shadow:0 0 0 3px var(--cyan-glow)}
 .wl-input::placeholder{color:var(--text3)}
 .safety-banner{background:rgba(239,68,68,0.07)!important;border-bottom:2px solid rgba(239,68,68,0.18)!important;color:#EF4444!important}
@@ -7255,7 +7262,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<body><canvas id="bg-canvas"></canvas><div class="hero-orbs"><div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div><div class="orb orb4"></div><div class="orb orb5"></div><div class="orb orb6"></div><div class="orb orb7"></div><div class="orb orb8"></div><div class="orb orb9"></div></div><div class="safety-banner">Do not enter patient names, IDs, or contact information. ClinicNote by Najm AI does not store or transmit any data.</div>
+<body><a href="#main-content" class="skip-link">Skip to main content</a><canvas id="bg-canvas"></canvas><div class="hero-orbs"><div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div><div class="orb orb4"></div><div class="orb orb5"></div><div class="orb orb6"></div><div class="orb orb7"></div><div class="orb orb8"></div><div class="orb orb9"></div></div><div class="safety-banner">Do not enter patient names, IDs, or contact information. ClinicNote by Najm AI does not store or transmit any data.</div>
 
 
 
@@ -7270,7 +7277,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<nav>
+<nav role="navigation" aria-label="Main navigation">
 
 
 
@@ -7539,7 +7546,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<div class="container">
+<div class="container" id="main-content">
 
 
 
@@ -12018,7 +12025,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<div class="output-header">
+<div class="output-header" role="tablist" aria-label="Output format tabs">
 
 
 
@@ -12033,7 +12040,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<button class="output-tab active" onclick="switchSpeedTab('emr')">EMR</button>
+<button class="output-tab active" role="tab" aria-selected="true" onclick="switchSpeedTab('emr')">EMR</button>
 
 
 
@@ -12048,7 +12055,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<button class="output-tab" onclick="switchSpeedTab('soap')">SOAP</button>
+<button class="output-tab" role="tab" aria-selected="false" onclick="switchSpeedTab('soap')">SOAP</button>
 
 
 
@@ -12063,7 +12070,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<button class="output-tab" onclick="switchSpeedTab('fup')">Follow-up</button>
+<button class="output-tab" role="tab" aria-selected="false" onclick="switchSpeedTab('fup')">Follow-up</button>
 
 
 
@@ -12078,7 +12085,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<button class="output-tab" onclick="switchSpeedTab('ref')">Referral</button>
+<button class="output-tab" role="tab" aria-selected="false" onclick="switchSpeedTab('ref')">Referral</button>
 
 
 
@@ -12093,7 +12100,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<button class="output-tab" onclick="switchSpeedTab('inst')">Instructions</button>
+<button class="output-tab" role="tab" aria-selected="false" onclick="switchSpeedTab('inst')">Instructions</button>
 
 
 
@@ -13413,7 +13420,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<div class="output-header">
+<div class="output-header" role="tablist" aria-label="Output format tabs">
 
 
 
@@ -13428,7 +13435,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<button class="output-tab active" onclick="switchTab('opd','soap')" data-output-tab="soap">SOAP</button>
+<button class="output-tab active" role="tab" aria-selected="true" onclick="switchTab('opd','soap')" data-output-tab="soap">SOAP</button>
 
 
 
@@ -13443,7 +13450,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<button class="output-tab" onclick="switchTab('opd','emr')" data-output-tab="emr">EMR</button>
+<button class="output-tab" role="tab" aria-selected="false" onclick="switchTab('opd','emr')" data-output-tab="emr">EMR</button>
 
 
 
@@ -13458,7 +13465,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<button class="output-tab" onclick="switchTab('opd','fup')" data-output-tab="fup">Follow-up</button>
+<button class="output-tab" role="tab" aria-selected="false" onclick="switchTab('opd','fup')" data-output-tab="fup">Follow-up</button>
 
 
 
@@ -13473,7 +13480,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<button class="output-tab" onclick="switchTab('opd','ref')" data-output-tab="ref">Referral</button>
+<button class="output-tab" role="tab" aria-selected="false" onclick="switchTab('opd','ref')" data-output-tab="ref">Referral</button>
 
 
 
@@ -13488,7 +13495,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 
-<button class="output-tab" onclick="switchTab('opd','pt')" data-output-tab="pt">Instructions</button>
+<button class="output-tab" role="tab" aria-selected="false" onclick="switchTab('opd','pt')" data-output-tab="pt">Instructions</button>
 
 
 
@@ -24228,7 +24235,22 @@ function fillChips(containerId,items,type){
 
 
 
-    b.onclick=function(){this.classList.toggle("selected");updateSelectedCount()};
+    b.setAttribute("aria-pressed","false");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    b.onclick=function(){this.classList.toggle("selected");this.setAttribute("aria-pressed",this.classList.contains("selected")?"true":"false");updateSelectedCount()};
 
 
 

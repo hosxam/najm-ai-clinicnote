@@ -306,7 +306,8 @@ function v2fillChipsWithWarnings(containerId, chipGroupName, v2wfData) {
     b.textContent = chipText;
     b.setAttribute("data-name", chipText.toLowerCase());
     b.type = "button";
-    b.onclick = function(){ this.classList.toggle("selected"); updateSelectedCount(); };
+    b.setAttribute("aria-pressed", "false");
+    b.onclick = function(){ this.classList.toggle("selected"); this.setAttribute("aria-pressed", this.classList.contains("selected") ? "true" : "false"); updateSelectedCount(); };
     if (warning) {
       b.title = warning;
       b.style.textDecoration = "underline dotted";
