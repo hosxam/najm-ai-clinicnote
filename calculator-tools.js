@@ -327,7 +327,38 @@
       return;
     }
     var output = result.text + "\n" + result.safetyNote;
-    el.textContent = output;
+    // Render result text + actions as DOM (not HTML) for safety
+    el.innerHTML = "";
+    var pre = document.createElement("div");
+    pre.style.whiteSpace = "pre-wrap";
+    pre.style.marginBottom = "10px";
+    pre.textContent = output;
+    el.appendChild(pre);
+    var actions = document.createElement("div");
+    actions.style.display = "flex";
+    actions.style.gap = "8px";
+    actions.style.flexWrap = "wrap";
+    var insertBtn = document.createElement("button");
+    insertBtn.type = "button";
+    insertBtn.className = "btn btn-outline btn-sm";
+    insertBtn.textContent = "Insert into Speed Mode note";
+    insertBtn.style.fontSize = "11px";
+    insertBtn.onclick = function() {
+      try {
+        var target = document.getElementById("speedImpression") || document.getElementById("clinicalNote");
+        if (target) {
+          var current = (target.value || "").replace(/\s+$/, "");
+          target.value = (current ? current + "\n\n" : "") + result.text;
+          target.dispatchEvent(new Event("input", { bubbles: true }));
+          insertBtn.textContent = "✓ Inserted";
+          setTimeout(function() { insertBtn.textContent = "Insert into Speed Mode note"; }, 2000);
+        } else {
+          alert("Open Quick OPD Mode first, then come back to insert.");
+        }
+      } catch(e) {}
+    };
+    actions.appendChild(insertBtn);
+    el.appendChild(actions);
     el.setAttribute("data-result-text", output);
     el.classList.remove("calc-result-error");
   }

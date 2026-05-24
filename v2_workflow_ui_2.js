@@ -307,7 +307,8 @@ function v2fillChipsWithWarnings(containerId, chipGroupName, v2wfData) {
     b.setAttribute("data-name", chipText.toLowerCase());
     b.type = "button";
     b.setAttribute("aria-pressed", "false");
-    b.onclick = function(){ this.classList.toggle("selected"); this.setAttribute("aria-pressed", this.classList.contains("selected") ? "true" : "false"); updateSelectedCount(); };
+    if (isRedFlag) b.setAttribute("data-redflag", "1");
+    b.onclick = function(){ this.classList.toggle("selected"); this.setAttribute("aria-pressed", this.classList.contains("selected") ? "true" : "false"); updateSelectedCount(); if (typeof window.updateRedFlagBanner === "function") window.updateRedFlagBanner(); };
     if (warning) {
       b.title = warning;
       b.style.textDecoration = "underline dotted";

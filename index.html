@@ -1475,6 +1475,20 @@ textarea.code{font-family:var(--font-mono);font-size:12px;min-height:80px;resize
 
 
 .note-phi-warn{background:var(--amber-bg);border:1px solid var(--amber-border);color:var(--gray-700);padding:8px 12px;border-radius:8px;font-size:11px;font-weight:500;margin-bottom:8px;line-height:1.4}
+.redflag-banner{background:rgba(239,68,68,0.1);border:2px solid rgba(239,68,68,0.4);border-left:6px solid #EF4444;color:var(--gray-800,#1f2937);padding:12px 16px;border-radius:10px;margin:12px 0;display:flex;gap:12px;align-items:flex-start;font-size:13px;line-height:1.5}
+.redflag-banner-icon{font-size:20px;color:#EF4444;flex-shrink:0;line-height:1}
+.redflag-banner-text{flex:1}
+.redflag-banner-text strong{color:#DC2626;display:block;margin-bottom:4px;font-weight:700}
+.redflag-banner-text #speedRedFlagList,.redflag-banner-text #v4RedFlagList{display:block;margin:4px 0;color:#7F1D1D;font-style:italic;font-size:12px}
+.redflag-banner-dismiss{background:none;border:none;color:#DC2626;font-size:24px;cursor:pointer;line-height:1;padding:0 4px;align-self:flex-start;font-weight:300}
+.redflag-banner-dismiss:hover{color:#7F1D1D}
+.btn-inaccuracy-link{display:inline-flex;align-items:center;font-size:11px;color:var(--gray-500,#6b7280);text-decoration:underline dotted;text-underline-offset:3px;padding:6px 10px;cursor:pointer;background:none;border:none;font-family:inherit}
+.btn-inaccuracy-link:hover{color:var(--amber,#F59E0B);text-decoration-style:solid}
+html[data-theme="dark"] .btn-inaccuracy-link,html:not([data-theme="light"]) .btn-inaccuracy-link{color:var(--text-tertiary,#5E7E9A)}
+html[data-theme="dark"] .btn-inaccuracy-link:hover,html:not([data-theme="light"]) .btn-inaccuracy-link:hover{color:#FCD34D}
+html[data-theme="dark"] .redflag-banner,html:not([data-theme="light"]) .redflag-banner{background:rgba(239,68,68,0.12);border-color:rgba(239,68,68,0.5);color:#FCA5A5}
+html[data-theme="dark"] .redflag-banner-text strong,html:not([data-theme="light"]) .redflag-banner-text strong{color:#FCA5A5}
+html[data-theme="dark"] .redflag-banner-text #speedRedFlagList,html:not([data-theme="light"]) .redflag-banner-text #speedRedFlagList,html:not([data-theme="light"]) .redflag-banner-text #v4RedFlagList{color:#FECACA}
 
 
 
@@ -10516,6 +10530,15 @@ Safety-netting: When to present to maternity triage discussed.</pre></div>
 
 
 <div id="speedContent" style="display:none">
+<div id="speedRedFlagBanner" class="redflag-banner" style="display:none" role="alert" aria-live="polite">
+  <div class="redflag-banner-icon">⚠</div>
+  <div class="redflag-banner-text">
+    <strong>Red flag(s) selected.</strong>
+    <span id="speedRedFlagList"></span>
+    Confirm urgent referral pathway, escalation, or safety-netting before generating note.
+  </div>
+  <button type="button" class="redflag-banner-dismiss" onclick="document.getElementById('speedRedFlagBanner').style.display='none'" aria-label="Dismiss">×</button>
+</div>
 
 
 
@@ -12451,6 +12474,7 @@ Choose symptoms, negatives, exam findings, and plan phrases from quick-select ch
 
 
 <button class="btn btn-ghost btn-xs" onclick="clearSpeedOutput()">Clear Output</button>
+<a class="btn-inaccuracy-link" href="#" onclick="event.preventDefault();window.reportClinicalInaccuracy()" title="Report a clinical inaccuracy in this workflow">Report inaccuracy</a>
 
 
 
@@ -24480,7 +24504,7 @@ function fillChips(containerId,items,type){
 
 
 
-    b.onclick=function(){this.classList.toggle("selected");this.setAttribute("aria-pressed",this.classList.contains("selected")?"true":"false");updateSelectedCount()};
+    b.onclick=function(){this.classList.toggle("selected");this.setAttribute("aria-pressed",this.classList.contains("selected")?"true":"false");updateSelectedCount();if(typeof window.updateRedFlagBanner==="function")window.updateRedFlagBanner()};
 
 
 
@@ -25004,6 +25028,57 @@ function addCustom(type){
 
 
 
+
+function updateRedFlagBanner(){
+  var banner = document.getElementById("speedRedFlagBanner");
+  var list = document.getElementById("speedRedFlagList");
+  if(!banner || !list) return;
+  var rfContainer = document.getElementById("speedRedFlags");
+  var v2Container = document.getElementById("v2ChipGroups");
+  var selectedRedFlags = [];
+  if(rfContainer){
+    var sel1 = rfContainer.querySelectorAll(".chip.selected");
+    for(var i=0;i<sel1.length;i++){
+      var t = (sel1[i].textContent||"").trim();
+      if(t) selectedRedFlags.push(t);
+    }
+  }
+  if(v2Container){
+    var sel2 = v2Container.querySelectorAll(".chip.selected[data-redflag='1'], .chip-redflag.selected");
+    for(var j=0;j<sel2.length;j++){
+      var t2 = (sel2[j].textContent||"").trim();
+      if(t2 && selectedRedFlags.indexOf(t2)<0) selectedRedFlags.push(t2);
+    }
+  }
+  if(selectedRedFlags.length>0){
+    list.textContent = selectedRedFlags.slice(0,3).join(" · ") + (selectedRedFlags.length>3 ? " (+"+(selectedRedFlags.length-3)+" more)" : "");
+    banner.style.display = "flex";
+  } else {
+    banner.style.display = "none";
+  }
+}
+window.updateRedFlagBanner = updateRedFlagBanner;
+
+function reportClinicalInaccuracy(){
+  // Capture current workflow context (no PHI — only the workflow ID and selected chip text)
+  var specialty = "";
+  var visit = "";
+  var s = document.getElementById("speedSpecialty");
+  var v = document.getElementById("speedVisitType");
+  if(s) specialty = s.value || "";
+  if(v) visit = v.value || "";
+  var ctx = "Specialty: " + (specialty||"(none)") + " | Workflow: " + (visit||"(none)");
+  // Open the bugReport form in a new tab
+  var url = (window.CLINICNOTE_FORMS && window.CLINICNOTE_FORMS.bugReport) || "https://forms.gle/sZDastnm65R6R7Xv7";
+  // Show a brief confirmation with the context the user can paste
+  try {
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText("Clinical inaccuracy report — " + ctx + "\n\n[Describe the issue here. Do not include patient identifiers.]");
+    }
+  } catch(e) {}
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+window.reportClinicalInaccuracy = reportClinicalInaccuracy;
 
 function updateSelectedCount(){
 
