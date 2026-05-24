@@ -70975,563 +70975,819 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 11,
-        "relevant_negatives": 5,
-        "exam_findings": 8,
-        "red_flags": 5,
-        "investigations": 4,
-        "plan_phrases": 6,
-        "follow_up": 4
+              "symptoms": 12,
+              "relevant_negatives": 8,
+              "exam_findings": 14,
+              "red_flags": 8,
+              "investigations": 11,
+              "plan_phrases": 12,
+              "follow_up": 6
       },
-      "total_chips": 43,
+      "total_chips": 71,
       "chips": {
-        "symptoms": [
-          {
-            "chip_id": "resp-asthma-followup-symptoms-1",
-            "chip_text": "asthma follow-up",
-            "order": 1,
-            "search_terms": [
-              "asthma",
-              "followup"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-symptoms-2",
-            "chip_text": "cough reviewed",
-            "order": 2,
-            "search_terms": [
-              "cough"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-symptoms-3",
-            "chip_text": "wheeze reviewed",
-            "order": 3,
-            "search_terms": [
-              "wheeze"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-symptoms-4",
-            "chip_text": "shortness of breath reviewed",
-            "order": 4,
-            "search_terms": [
-              "SOB",
-              "breathlessness"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-symptoms-5",
-            "chip_text": "nocturnal symptoms reviewed",
-            "order": 5,
-            "search_terms": [
-              "nocturnal",
-              "night"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-symptoms-6",
-            "chip_text": "exercise symptoms reviewed",
-            "order": 6,
-            "search_terms": [
-              "exercise",
-              "exertion"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-symptoms-7",
-            "chip_text": "trigger pattern reviewed",
-            "order": 7,
-            "search_terms": [
-              "trigger",
-              "allergen"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-symptoms-8",
-            "chip_text": "inhaler use reviewed",
-            "order": 8,
-            "search_terms": [
-              "inhaler",
-              "puffer",
-              "use"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-symptoms-9",
-            "chip_text": "recent exacerbation history reviewed",
-            "order": 9,
-            "search_terms": [
-              "exacerbation",
-              "flare",
-              "attack"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-symptoms-10",
-            "chip_text": "occupational exposure reviewed if relevant",
-            "order": 10,
-            "search_terms": [
-              "occupational",
-              "work"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-symptoms-11",
-            "chip_text": "asthma control level documented if assessed",
-            "order": 11,
-            "search_terms": [
-              "control",
-              "ACT",
-              "validated"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "relevant_negatives": [
-          {
-            "chip_id": "resp-asthma-followup-relevant_negatives-1",
-            "chip_text": "no severe breathlessness reported",
-            "order": 1,
-            "search_terms": [
-              "severe",
-              "breathlessness"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-relevant_negatives-2",
-            "chip_text": "no chest pain reported",
-            "order": 2,
-            "search_terms": [
-              "chest",
-              "pain"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-relevant_negatives-3",
-            "chip_text": "no hemoptysis reported",
-            "order": 3,
-            "search_terms": [
-              "hemoptysis",
-              "blood"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-relevant_negatives-4",
-            "chip_text": "no syncope reported",
-            "order": 4,
-            "search_terms": [
-              "syncope",
-              "faint"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-relevant_negatives-5",
-            "chip_text": "no recent hospital attendance reported if applicable",
-            "order": 5,
-            "search_terms": [
-              "hospital",
-              "ED",
-              "attendance"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "exam_findings": [
-          {
-            "chip_id": "resp-asthma-followup-exam_findings-1",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 1,
-            "search_terms": [
-              "RR",
-              "respiratory",
-              "rate"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-exam_findings-2",
-            "chip_text": "oxygen saturation documented if measured",
-            "order": 2,
-            "search_terms": [
-              "oxygen",
-              "SpO2",
-              "saturations"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-exam_findings-3",
-            "chip_text": "work of breathing documented if assessed",
-            "order": 3,
-            "search_terms": [
-              "work",
-              "breathing",
-              "accessory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-exam_findings-4",
-            "chip_text": "chest auscultation documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "auscultation",
-              "chest",
-              "breath sounds"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-exam_findings-5",
-            "chip_text": "wheeze documented if assessed",
-            "order": 5,
-            "search_terms": [
-              "wheeze",
-              "expiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-exam_findings-6",
-            "chip_text": "peak flow recorded if measured",
-            "order": 6,
-            "search_terms": [
-              "peak",
-              "flow",
-              "PEFR"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-exam_findings-7",
-            "chip_text": "air entry documented if assessed",
-            "order": 7,
-            "search_terms": [
-              "air",
-              "entry",
-              "bilateral"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-exam_findings-8",
-            "chip_text": "chest expansion documented if assessed",
-            "order": 8,
-            "search_terms": [
-              "expansion",
-              "symmetry"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "red_flags": [
-          {
-            "chip_id": "resp-asthma-followup-red_flags-1",
-            "chip_text": "severe breathlessness",
-            "order": 1,
-            "search_terms": [
-              "severe",
-              "breathlessness"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-red_flags-2",
-            "chip_text": "reduced oxygen saturation if documented",
-            "order": 2,
-            "search_terms": [
-              "reduced",
-              "oxygen",
-              "desaturation"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-red_flags-3",
-            "chip_text": "inability to speak full sentences if assessed",
-            "order": 3,
-            "search_terms": [
-              "speak",
-              "sentences"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-red_flags-4",
-            "chip_text": "cyanosis",
-            "order": 4,
-            "search_terms": [
-              "cyanosis",
-              "blue"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-red_flags-5",
-            "chip_text": "altered consciousness",
-            "order": 5,
-            "search_terms": [
-              "consciousness",
-              "confusion"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          }
-        ],
-        "investigations": [
-          {
-            "chip_id": "resp-asthma-followup-investigations-1",
-            "chip_text": "peak flow recorded if measured",
-            "order": 1,
-            "search_terms": [
-              "peak",
-              "flow",
-              "PEFR"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-investigations-2",
-            "chip_text": "spirometry reviewed if available",
-            "order": 2,
-            "search_terms": [
-              "spirometry",
-              "PFT"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-investigations-3",
-            "chip_text": "oxygen saturation recorded if measured",
-            "order": 3,
-            "search_terms": [
-              "oxygen",
-              "SpO2"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-investigations-4",
-            "chip_text": "previous respiratory records reviewed if available",
-            "order": 4,
-            "search_terms": [
-              "previous",
-              "records"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "plan_phrases": [
-          {
-            "chip_id": "resp-asthma-followup-plan_phrases-1",
-            "chip_text": "clinician-entered plan documented",
-            "order": 1,
-            "search_terms": [
-              "plan",
-              "management"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-plan_phrases-2",
-            "chip_text": "inhaler technique reviewed if discussed",
-            "order": 2,
-            "search_terms": [
-              "inhaler",
-              "technique"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-plan_phrases-3",
-            "chip_text": "medication plan documented if clinician decided",
-            "order": 3,
-            "search_terms": [
-              "medication",
-              "inhaler",
-              "preventer"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-plan_phrases-4",
-            "chip_text": "trigger advice documented if discussed",
-            "order": 4,
-            "search_terms": [
-              "trigger",
-              "advice"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-plan_phrases-5",
-            "chip_text": "safety-netting documented if discussed",
-            "order": 5,
-            "search_terms": [
-              "safety",
-              "netting"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-plan_phrases-6",
-            "chip_text": "follow-up documented if arranged",
-            "order": 6,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "follow_up": [
-          {
-            "chip_id": "resp-asthma-followup-follow_up-1",
-            "chip_text": "1-3 months",
-            "order": 1,
-            "search_terms": [
-              "one",
-              "three",
-              "months"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-follow_up-2",
-            "chip_text": "3-6 months if stable",
-            "order": 2,
-            "search_terms": [
-              "three",
-              "six"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-follow_up-3",
-            "chip_text": "sooner if worsening",
-            "order": 3,
-            "search_terms": [
-              "sooner",
-              "worsening"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-asthma-followup-follow_up-4",
-            "chip_text": "PRN",
-            "order": 4,
-            "search_terms": [
-              "PRN",
-              "as needed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ]
+              "symptoms": [
+                      {
+                              "chip_id": "resp-asthma-followup-symptoms-1",
+                              "chip_text": "dry cough worse at night",
+                              "order": 1,
+                              "search_terms": [
+                                      "dry"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-symptoms-2",
+                              "chip_text": "wheeze on exertion",
+                              "order": 2,
+                              "search_terms": [
+                                      "wheeze"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-symptoms-3",
+                              "chip_text": "chest tightness AM",
+                              "order": 3,
+                              "search_terms": [
+                                      "chest"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-symptoms-4",
+                              "chip_text": "nocturnal awakening 2x/week",
+                              "order": 4,
+                              "search_terms": [
+                                      "nocturnal"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-symptoms-5",
+                              "chip_text": "exercise-induced SOB",
+                              "order": 5,
+                              "search_terms": [
+                                      "exercise-induced"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-symptoms-6",
+                              "chip_text": "cough with cold air exposure",
+                              "order": 6,
+                              "search_terms": [
+                                      "cough"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-symptoms-7",
+                              "chip_text": "seasonal worsening spring",
+                              "order": 7,
+                              "search_terms": [
+                                      "seasonal"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-symptoms-8",
+                              "chip_text": "triggered by dust/pets",
+                              "order": 8,
+                              "search_terms": [
+                                      "triggered"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-symptoms-9",
+                              "chip_text": "SABA use 3x/week",
+                              "order": 9,
+                              "search_terms": [
+                                      "SABA"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-symptoms-10",
+                              "chip_text": "missed work/school due to symptoms",
+                              "order": 10,
+                              "search_terms": [
+                                      "missed"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-symptoms-11",
+                              "chip_text": "symptoms daily",
+                              "order": 11,
+                              "search_terms": [
+                                      "symptoms"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-symptoms-12",
+                              "chip_text": "symptoms intermittent",
+                              "order": 12,
+                              "search_terms": [
+                                      "symptoms"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "relevant_negatives": [
+                      {
+                              "chip_id": "resp-asthma-followup-relevant_negatives-1",
+                              "chip_text": "no hemoptysis",
+                              "order": 1,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-relevant_negatives-2",
+                              "chip_text": "no chest pain",
+                              "order": 2,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-relevant_negatives-3",
+                              "chip_text": "no fever",
+                              "order": 3,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-relevant_negatives-4",
+                              "chip_text": "no weight loss",
+                              "order": 4,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-relevant_negatives-5",
+                              "chip_text": "no orthopnea",
+                              "order": 5,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-relevant_negatives-6",
+                              "chip_text": "no ankle swelling",
+                              "order": 6,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-relevant_negatives-7",
+                              "chip_text": "no syncope",
+                              "order": 7,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-relevant_negatives-8",
+                              "chip_text": "no stridor",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "exam_findings": [
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-1",
+                              "chip_text": "SpO2 98% on RA",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-2",
+                              "chip_text": "SpO2 95% on RA",
+                              "order": 2,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-3",
+                              "chip_text": "SpO2 92% on RA",
+                              "order": 3,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-4",
+                              "chip_text": "RR 16/min",
+                              "order": 4,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-5",
+                              "chip_text": "RR 22/min",
+                              "order": 5,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-6",
+                              "chip_text": "chest: bilateral wheeze",
+                              "order": 6,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-7",
+                              "chip_text": "chest: end-expiratory wheeze",
+                              "order": 7,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-8",
+                              "chip_text": "chest: clear bilaterally",
+                              "order": 8,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-9",
+                              "chip_text": "good air entry throughout",
+                              "order": 9,
+                              "search_terms": [
+                                      "good"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-10",
+                              "chip_text": "prolonged expiratory phase",
+                              "order": 10,
+                              "search_terms": [
+                                      "prolonged"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-11",
+                              "chip_text": "no accessory muscle use",
+                              "order": 11,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-12",
+                              "chip_text": "peak flow 450 L/min",
+                              "order": 12,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-13",
+                              "chip_text": "peak flow 350 L/min",
+                              "order": 13,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-exam_findings-14",
+                              "chip_text": "peak flow 250 L/min",
+                              "order": 14,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "red_flags": [
+                      {
+                              "chip_id": "resp-asthma-followup-red_flags-1",
+                              "chip_text": "SpO2 <92% on RA",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-red_flags-2",
+                              "chip_text": "silent chest on auscultation",
+                              "order": 2,
+                              "search_terms": [
+                                      "silent"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-red_flags-3",
+                              "chip_text": "unable to complete sentences",
+                              "order": 3,
+                              "search_terms": [
+                                      "unable"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-red_flags-4",
+                              "chip_text": "RR >30/min",
+                              "order": 4,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-red_flags-5",
+                              "chip_text": "accessory muscle use at rest",
+                              "order": 5,
+                              "search_terms": [
+                                      "accessory"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-red_flags-6",
+                              "chip_text": "cyanosis",
+                              "order": 6,
+                              "search_terms": [
+                                      "cyanosis"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-red_flags-7",
+                              "chip_text": "altered consciousness",
+                              "order": 7,
+                              "search_terms": [
+                                      "altered"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-red_flags-8",
+                              "chip_text": "peak flow <33% predicted",
+                              "order": 8,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      }
+              ],
+              "investigations": [
+                      {
+                              "chip_id": "resp-asthma-followup-investigations-1",
+                              "chip_text": "peak flow: green zone >80%",
+                              "order": 1,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-investigations-2",
+                              "chip_text": "peak flow: amber zone 50-80%",
+                              "order": 2,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-investigations-3",
+                              "chip_text": "peak flow: red zone <50%",
+                              "order": 3,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-investigations-4",
+                              "chip_text": "spirometry: FEV1/FVC <0.7",
+                              "order": 4,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-investigations-5",
+                              "chip_text": "spirometry: FEV1 85% predicted",
+                              "order": 5,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-investigations-6",
+                              "chip_text": "spirometry: positive reversibility",
+                              "order": 6,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-investigations-7",
+                              "chip_text": "FeNO elevated >40 ppb",
+                              "order": 7,
+                              "search_terms": [
+                                      "FeNO"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-investigations-8",
+                              "chip_text": "CXR: hyperinflated",
+                              "order": 8,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-investigations-9",
+                              "chip_text": "CXR: normal",
+                              "order": 9,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-investigations-10",
+                              "chip_text": "IgE total elevated",
+                              "order": 10,
+                              "search_terms": [
+                                      "IgE"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-investigations-11",
+                              "chip_text": "blood eosinophils raised",
+                              "order": 11,
+                              "search_terms": [
+                                      "blood"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "plan_phrases": [
+                      {
+                              "chip_id": "resp-asthma-followup-plan_phrases-1",
+                              "chip_text": "step up to ICS/LABA combination",
+                              "order": 1,
+                              "search_terms": [
+                                      "step"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-plan_phrases-2",
+                              "chip_text": "continue current ICS dose",
+                              "order": 2,
+                              "search_terms": [
+                                      "continue"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-plan_phrases-3",
+                              "chip_text": "step down ICS after 3 months stable",
+                              "order": 3,
+                              "search_terms": [
+                                      "step"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-plan_phrases-4",
+                              "chip_text": "add LTRA trial",
+                              "order": 4,
+                              "search_terms": [
+                                      "add"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-plan_phrases-5",
+                              "chip_text": "inhaler technique reviewed and corrected",
+                              "order": 5,
+                              "search_terms": [
+                                      "inhaler"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-plan_phrases-6",
+                              "chip_text": "spacer device provided",
+                              "order": 6,
+                              "search_terms": [
+                                      "spacer"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-plan_phrases-7",
+                              "chip_text": "written asthma action plan given",
+                              "order": 7,
+                              "search_terms": [
+                                      "written"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-plan_phrases-8",
+                              "chip_text": "trigger avoidance advice given",
+                              "order": 8,
+                              "search_terms": [
+                                      "trigger"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-plan_phrases-9",
+                              "chip_text": "smoking cessation discussed",
+                              "order": 9,
+                              "search_terms": [
+                                      "smoking"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-plan_phrases-10",
+                              "chip_text": "refer to asthma nurse",
+                              "order": 10,
+                              "search_terms": [
+                                      "refer"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-plan_phrases-11",
+                              "chip_text": "oral prednisolone rescue course",
+                              "order": 11,
+                              "search_terms": [
+                                      "oral"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-plan_phrases-12",
+                              "chip_text": "annual flu vaccine advised",
+                              "order": 12,
+                              "search_terms": [
+                                      "annual"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "follow_up": [
+                      {
+                              "chip_id": "resp-asthma-followup-follow_up-1",
+                              "chip_text": "review 2 weeks post-exacerbation",
+                              "order": 1,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-follow_up-2",
+                              "chip_text": "routine review 3 months",
+                              "order": 2,
+                              "search_terms": [
+                                      "routine"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-follow_up-3",
+                              "chip_text": "review 6 months if stable",
+                              "order": 3,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-follow_up-4",
+                              "chip_text": "urgent review if worsening",
+                              "order": 4,
+                              "search_terms": [
+                                      "urgent"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-follow_up-5",
+                              "chip_text": "annual asthma review booked",
+                              "order": 5,
+                              "search_terms": [
+                                      "annual"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-asthma-followup-follow_up-6",
+                              "chip_text": "PRN",
+                              "order": 6,
+                              "search_terms": [
+                                      "PRN"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ]
       },
       "chief_complaint_aliases": [
         "asthma follow-up",
@@ -71580,498 +71836,841 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 10,
-        "relevant_negatives": 3,
-        "exam_findings": 6,
-        "red_flags": 4,
-        "investigations": 3,
-        "plan_phrases": 7,
-        "follow_up": 5
+              "symptoms": 12,
+              "relevant_negatives": 8,
+              "exam_findings": 14,
+              "red_flags": 8,
+              "investigations": 13,
+              "plan_phrases": 12,
+              "follow_up": 6
       },
-      "total_chips": 38,
+      "total_chips": 73,
       "chips": {
-        "symptoms": [
-          {
-            "chip_id": "resp-copd-followup-symptoms-1",
-            "chip_text": "COPD follow-up",
-            "order": 1,
-            "search_terms": [
-              "COPD",
-              "followup"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-symptoms-2",
-            "chip_text": "dyspnea reviewed",
-            "order": 2,
-            "search_terms": [
-              "dyspnea",
-              "SOB",
-              "breathlessness"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-symptoms-3",
-            "chip_text": "cough and sputum reviewed",
-            "order": 3,
-            "search_terms": [
-              "cough",
-              "sputum",
-              "phlegm"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-symptoms-4",
-            "chip_text": "exacerbation history reviewed",
-            "order": 4,
-            "search_terms": [
-              "exacerbation",
-              "flare"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-symptoms-5",
-            "chip_text": "exercise tolerance reviewed",
-            "order": 5,
-            "search_terms": [
-              "exercise",
-              "tolerance",
-              "MRC"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-symptoms-6",
-            "chip_text": "inhaler use reviewed",
-            "order": 6,
-            "search_terms": [
-              "inhaler",
-              "puffer"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-symptoms-7",
-            "chip_text": "smoking history reviewed",
-            "order": 7,
-            "search_terms": [
-              "smoking",
-              "cigarettes"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-symptoms-8",
-            "chip_text": "nocturnal symptoms reviewed",
-            "order": 8,
-            "search_terms": [
-              "nocturnal",
-              "night"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-symptoms-9",
-            "chip_text": "functional impact reviewed",
-            "order": 9,
-            "search_terms": [
-              "ADL",
-              "daily",
-              "function"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-symptoms-10",
-            "chip_text": "sputum color change reviewed if relevant",
-            "order": 10,
-            "search_terms": [
-              "sputum",
-              "color",
-              "purulence"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "relevant_negatives": [
-          {
-            "chip_id": "resp-copd-followup-relevant_negatives-1",
-            "chip_text": "no chest pain reported",
-            "order": 1,
-            "search_terms": [
-              "chest",
-              "pain"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-relevant_negatives-2",
-            "chip_text": "no hemoptysis reported",
-            "order": 2,
-            "search_terms": [
-              "hemoptysis",
-              "blood"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-relevant_negatives-3",
-            "chip_text": "no fever reported if relevant",
-            "order": 3,
-            "search_terms": [
-              "fever"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "exam_findings": [
-          {
-            "chip_id": "resp-copd-followup-exam_findings-1",
-            "chip_text": "oxygen saturation documented if measured",
-            "order": 1,
-            "search_terms": [
-              "oxygen",
-              "SpO2"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-exam_findings-2",
-            "chip_text": "chest auscultation documented if assessed",
-            "order": 2,
-            "search_terms": [
-              "auscultation",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-exam_findings-3",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 3,
-            "search_terms": [
-              "RR",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-exam_findings-4",
-            "chip_text": "peripheral oedema documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "oedema",
-              "ankle",
-              "JVP"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-exam_findings-5",
-            "chip_text": "accessory muscle use documented if assessed",
-            "order": 5,
-            "search_terms": [
-              "accessory",
-              "muscles"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-exam_findings-6",
-            "chip_text": "chest percussion documented if assessed",
-            "order": 6,
-            "search_terms": [
-              "percussion",
-              "hyperinflation"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "red_flags": [
-          {
-            "chip_id": "resp-copd-followup-red_flags-1",
-            "chip_text": "severe breathlessness at rest",
-            "order": 1,
-            "search_terms": [
-              "severe",
-              "breathlessness"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-red_flags-2",
-            "chip_text": "reduced oxygen saturation if documented",
-            "order": 2,
-            "search_terms": [
-              "reduced",
-              "oxygen"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-red_flags-3",
-            "chip_text": "cyanosis",
-            "order": 3,
-            "search_terms": [
-              "cyanosis"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-red_flags-4",
-            "chip_text": "signs of cor pulmonale if assessed",
-            "order": 4,
-            "search_terms": [
-              "cor",
-              "pulmonale",
-              "oedema"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          }
-        ],
-        "investigations": [
-          {
-            "chip_id": "resp-copd-followup-investigations-1",
-            "chip_text": "spirometry reviewed if available",
-            "order": 1,
-            "search_terms": [
-              "spirometry",
-              "FEV1",
-              "PFT"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-investigations-2",
-            "chip_text": "previous respiratory records reviewed if available",
-            "order": 2,
-            "search_terms": [
-              "previous",
-              "records"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-investigations-3",
-            "chip_text": "oxygen assessment reviewed if applicable",
-            "order": 3,
-            "search_terms": [
-              "oxygen",
-              "O2"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "plan_phrases": [
-          {
-            "chip_id": "resp-copd-followup-plan_phrases-1",
-            "chip_text": "clinician-entered plan documented",
-            "order": 1,
-            "search_terms": [
-              "plan",
-              "management"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-plan_phrases-2",
-            "chip_text": "medication plan documented if clinician decided",
-            "order": 2,
-            "search_terms": [
-              "medication",
-              "inhaler"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-plan_phrases-3",
-            "chip_text": "smoking cessation advice documented if discussed",
-            "order": 3,
-            "search_terms": [
-              "cessation",
-              "smoking"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-plan_phrases-4",
-            "chip_text": "pulmonary rehabilitation discussed if applicable",
-            "order": 4,
-            "search_terms": [
-              "pulmonary",
-              "rehab"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-plan_phrases-5",
-            "chip_text": "vaccination history reviewed if relevant",
-            "order": 5,
-            "search_terms": [
-              "vaccination",
-              "flu",
-              "pneumonia"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-plan_phrases-6",
-            "chip_text": "follow-up documented if arranged",
-            "order": 6,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-plan_phrases-7",
-            "chip_text": "referral documented if clinician decided",
-            "order": 7,
-            "search_terms": [
-              "referral",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "follow_up": [
-          {
-            "chip_id": "resp-copd-followup-follow_up-1",
-            "chip_text": "3-6 months",
-            "order": 1,
-            "search_terms": [
-              "three",
-              "six",
-              "months"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-follow_up-2",
-            "chip_text": "6-12 months if stable",
-            "order": 2,
-            "search_terms": [
-              "six",
-              "twelve"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-follow_up-3",
-            "chip_text": "sooner if worsening",
-            "order": 3,
-            "search_terms": [
-              "sooner",
-              "worsening"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-follow_up-4",
-            "chip_text": "PRN",
-            "order": 4,
-            "search_terms": [
-              "PRN",
-              "as needed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-copd-followup-follow_up-5",
-            "chip_text": "sooner if exacerbation",
-            "order": 5,
-            "search_terms": [
-              "exacerbation",
-              "flare"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ]
+              "symptoms": [
+                      {
+                              "chip_id": "resp-copd-followup-symptoms-1",
+                              "chip_text": "productive cough daily",
+                              "order": 1,
+                              "search_terms": [
+                                      "productive"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-symptoms-2",
+                              "chip_text": "sputum: white/mucoid",
+                              "order": 2,
+                              "search_terms": [
+                                      "sputum:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-symptoms-3",
+                              "chip_text": "sputum: green/purulent",
+                              "order": 3,
+                              "search_terms": [
+                                      "sputum:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-symptoms-4",
+                              "chip_text": "SOB on exertion MRC grade 2",
+                              "order": 4,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-symptoms-5",
+                              "chip_text": "SOB at rest MRC grade 4",
+                              "order": 5,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-symptoms-6",
+                              "chip_text": "MRC grade 3: stops after 100m",
+                              "order": 6,
+                              "search_terms": [
+                                      "MRC"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-symptoms-7",
+                              "chip_text": "wheeze persistent",
+                              "order": 7,
+                              "search_terms": [
+                                      "wheeze"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-symptoms-8",
+                              "chip_text": "reduced exercise tolerance",
+                              "order": 8,
+                              "search_terms": [
+                                      "reduced"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-symptoms-9",
+                              "chip_text": "exacerbation 2x past year",
+                              "order": 9,
+                              "search_terms": [
+                                      "exacerbation"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-symptoms-10",
+                              "chip_text": "exacerbation requiring admission",
+                              "order": 10,
+                              "search_terms": [
+                                      "exacerbation"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-symptoms-11",
+                              "chip_text": "morning symptoms predominant",
+                              "order": 11,
+                              "search_terms": [
+                                      "morning"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-symptoms-12",
+                              "chip_text": "ankle swelling noted",
+                              "order": 12,
+                              "search_terms": [
+                                      "ankle"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "relevant_negatives": [
+                      {
+                              "chip_id": "resp-copd-followup-relevant_negatives-1",
+                              "chip_text": "no hemoptysis",
+                              "order": 1,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-relevant_negatives-2",
+                              "chip_text": "no chest pain",
+                              "order": 2,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-relevant_negatives-3",
+                              "chip_text": "no fever",
+                              "order": 3,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-relevant_negatives-4",
+                              "chip_text": "no weight loss",
+                              "order": 4,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-relevant_negatives-5",
+                              "chip_text": "no orthopnea",
+                              "order": 5,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-relevant_negatives-6",
+                              "chip_text": "no syncope",
+                              "order": 6,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-relevant_negatives-7",
+                              "chip_text": "no new ankle swelling",
+                              "order": 7,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-relevant_negatives-8",
+                              "chip_text": "no night sweats",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "exam_findings": [
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-1",
+                              "chip_text": "SpO2 94% on RA",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-2",
+                              "chip_text": "SpO2 90% on RA",
+                              "order": 2,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-3",
+                              "chip_text": "SpO2 88% on RA",
+                              "order": 3,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-4",
+                              "chip_text": "RR 20/min",
+                              "order": 4,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-5",
+                              "chip_text": "RR 26/min",
+                              "order": 5,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-6",
+                              "chip_text": "barrel chest",
+                              "order": 6,
+                              "search_terms": [
+                                      "barrel"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-7",
+                              "chip_text": "chest: scattered wheeze bilaterally",
+                              "order": 7,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-8",
+                              "chip_text": "chest: reduced air entry bases",
+                              "order": 8,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-9",
+                              "chip_text": "chest: coarse crackles right base",
+                              "order": 9,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-10",
+                              "chip_text": "pursed lip breathing",
+                              "order": 10,
+                              "search_terms": [
+                                      "pursed"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-11",
+                              "chip_text": "accessory muscle use",
+                              "order": 11,
+                              "search_terms": [
+                                      "accessory"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-12",
+                              "chip_text": "BMI 22",
+                              "order": 12,
+                              "search_terms": [
+                                      "BMI"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-13",
+                              "chip_text": "peripheral oedema absent",
+                              "order": 13,
+                              "search_terms": [
+                                      "peripheral"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-exam_findings-14",
+                              "chip_text": "JVP not raised",
+                              "order": 14,
+                              "search_terms": [
+                                      "JVP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "red_flags": [
+                      {
+                              "chip_id": "resp-copd-followup-red_flags-1",
+                              "chip_text": "SpO2 <88% on RA",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-red_flags-2",
+                              "chip_text": "acute CO2 retention: drowsy/confused",
+                              "order": 2,
+                              "search_terms": [
+                                      "acute"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-red_flags-3",
+                              "chip_text": "RR >30/min",
+                              "order": 3,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-red_flags-4",
+                              "chip_text": "new onset cor pulmonale signs",
+                              "order": 4,
+                              "search_terms": [
+                                      "new"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-red_flags-5",
+                              "chip_text": "massive hemoptysis",
+                              "order": 5,
+                              "search_terms": [
+                                      "massive"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-red_flags-6",
+                              "chip_text": "acute chest pain with SOB",
+                              "order": 6,
+                              "search_terms": [
+                                      "acute"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-red_flags-7",
+                              "chip_text": "unable to speak in sentences",
+                              "order": 7,
+                              "search_terms": [
+                                      "unable"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-red_flags-8",
+                              "chip_text": "cyanosis at rest",
+                              "order": 8,
+                              "search_terms": [
+                                      "cyanosis"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      }
+              ],
+              "investigations": [
+                      {
+                              "chip_id": "resp-copd-followup-investigations-1",
+                              "chip_text": "spirometry: FEV1 65% predicted",
+                              "order": 1,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-investigations-2",
+                              "chip_text": "spirometry: FEV1 45% predicted",
+                              "order": 2,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-investigations-3",
+                              "chip_text": "spirometry: FEV1 30% predicted",
+                              "order": 3,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-investigations-4",
+                              "chip_text": "FEV1/FVC 0.62",
+                              "order": 4,
+                              "search_terms": [
+                                      "FEV1/FVC"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-investigations-5",
+                              "chip_text": "GOLD stage II (moderate)",
+                              "order": 5,
+                              "search_terms": [
+                                      "GOLD"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-investigations-6",
+                              "chip_text": "GOLD stage III (severe)",
+                              "order": 6,
+                              "search_terms": [
+                                      "GOLD"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-investigations-7",
+                              "chip_text": "CXR: hyperinflated lungs",
+                              "order": 7,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-investigations-8",
+                              "chip_text": "CXR: flattened diaphragms",
+                              "order": 8,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-investigations-9",
+                              "chip_text": "ABG: pH 7.38 pCO2 6.2",
+                              "order": 9,
+                              "search_terms": [
+                                      "ABG:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-investigations-10",
+                              "chip_text": "ABG: type 2 respiratory failure",
+                              "order": 10,
+                              "search_terms": [
+                                      "ABG:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-investigations-11",
+                              "chip_text": "sputum culture: H. influenzae",
+                              "order": 11,
+                              "search_terms": [
+                                      "sputum"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-investigations-12",
+                              "chip_text": "FBC: polycythaemia",
+                              "order": 12,
+                              "search_terms": [
+                                      "FBC:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-investigations-13",
+                              "chip_text": "BNP normal",
+                              "order": 13,
+                              "search_terms": [
+                                      "BNP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "plan_phrases": [
+                      {
+                              "chip_id": "resp-copd-followup-plan_phrases-1",
+                              "chip_text": "continue LAMA inhaler",
+                              "order": 1,
+                              "search_terms": [
+                                      "continue"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-plan_phrases-2",
+                              "chip_text": "add LABA/ICS combination",
+                              "order": 2,
+                              "search_terms": [
+                                      "add"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-plan_phrases-3",
+                              "chip_text": "triple therapy initiated",
+                              "order": 3,
+                              "search_terms": [
+                                      "triple"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-plan_phrases-4",
+                              "chip_text": "pulmonary rehab referral",
+                              "order": 4,
+                              "search_terms": [
+                                      "pulmonary"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-plan_phrases-5",
+                              "chip_text": "smoking cessation: NRT offered",
+                              "order": 5,
+                              "search_terms": [
+                                      "smoking"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-plan_phrases-6",
+                              "chip_text": "home oxygen assessment referral",
+                              "order": 6,
+                              "search_terms": [
+                                      "home"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-plan_phrases-7",
+                              "chip_text": "rescue pack: antibiotics + prednisolone",
+                              "order": 7,
+                              "search_terms": [
+                                      "rescue"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-plan_phrases-8",
+                              "chip_text": "annual flu + pneumococcal vaccine",
+                              "order": 8,
+                              "search_terms": [
+                                      "annual"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-plan_phrases-9",
+                              "chip_text": "self-management plan reviewed",
+                              "order": 9,
+                              "search_terms": [
+                                      "self-management"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-plan_phrases-10",
+                              "chip_text": "mucolytic trial started",
+                              "order": 10,
+                              "search_terms": [
+                                      "mucolytic"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-plan_phrases-11",
+                              "chip_text": "palliative care discussion if appropriate",
+                              "order": 11,
+                              "search_terms": [
+                                      "palliative"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-plan_phrases-12",
+                              "chip_text": "dietitian referral for low BMI",
+                              "order": 12,
+                              "search_terms": [
+                                      "dietitian"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "follow_up": [
+                      {
+                              "chip_id": "resp-copd-followup-follow_up-1",
+                              "chip_text": "review 2 weeks post-exacerbation",
+                              "order": 1,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-follow_up-2",
+                              "chip_text": "routine review 3 months",
+                              "order": 2,
+                              "search_terms": [
+                                      "routine"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-follow_up-3",
+                              "chip_text": "review 6 months if stable",
+                              "order": 3,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-follow_up-4",
+                              "chip_text": "urgent review if worsening",
+                              "order": 4,
+                              "search_terms": [
+                                      "urgent"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-follow_up-5",
+                              "chip_text": "annual COPD review booked",
+                              "order": 5,
+                              "search_terms": [
+                                      "annual"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-copd-followup-follow_up-6",
+                              "chip_text": "PRN",
+                              "order": 6,
+                              "search_terms": [
+                                      "PRN"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ]
       },
       "chief_complaint_aliases": [
         "COPD follow-up",
@@ -72122,484 +72721,764 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 10,
-        "relevant_negatives": 3,
-        "exam_findings": 5,
-        "red_flags": 6,
-        "investigations": 3,
-        "plan_phrases": 5,
-        "follow_up": 4
+              "symptoms": 12,
+              "relevant_negatives": 8,
+              "exam_findings": 10,
+              "red_flags": 8,
+              "investigations": 10,
+              "plan_phrases": 12,
+              "follow_up": 6
       },
-      "total_chips": 36,
+      "total_chips": 66,
       "chips": {
-        "symptoms": [
-          {
-            "chip_id": "resp-chronic-cough-symptoms-1",
-            "chip_text": "chronic cough",
-            "order": 1,
-            "search_terms": [
-              "chronic",
-              "cough",
-              "persistent"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-symptoms-2",
-            "chip_text": "duration documented",
-            "order": 2,
-            "search_terms": [
-              "duration",
-              "how long"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-symptoms-3",
-            "chip_text": "dry or productive character documented",
-            "order": 3,
-            "search_terms": [
-              "dry",
-              "productive",
-              "sputum"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-symptoms-4",
-            "chip_text": "sputum context reviewed",
-            "order": 4,
-            "search_terms": [
-              "sputum",
-              "phlegm",
-              "color"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-symptoms-5",
-            "chip_text": "nocturnal or positional pattern reviewed",
-            "order": 5,
-            "search_terms": [
-              "nocturnal",
-              "positional",
-              "lying"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-symptoms-6",
-            "chip_text": "trigger or exposure context reviewed",
-            "order": 6,
-            "search_terms": [
-              "trigger",
-              "asthma",
-              "allergy"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-symptoms-7",
-            "chip_text": "reflux or postnasal drip context reviewed",
-            "order": 7,
-            "search_terms": [
-              "reflux",
-              "GORD",
-              "postnasal"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-symptoms-8",
-            "chip_text": "medication history reviewed if relevant",
-            "order": 8,
-            "search_terms": [
-              "ACE",
-              "inhibitor",
-              "medication"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-symptoms-9",
-            "chip_text": "smoking history reviewed if relevant",
-            "order": 9,
-            "search_terms": [
-              "smoking",
-              "cigarettes"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-symptoms-10",
-            "chip_text": "previous investigations reviewed if available",
-            "order": 10,
-            "search_terms": [
-              "previous",
-              "CXR",
-              "spirometry"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "relevant_negatives": [
-          {
-            "chip_id": "resp-chronic-cough-relevant_negatives-1",
-            "chip_text": "no hemoptysis reported",
-            "order": 1,
-            "search_terms": [
-              "hemoptysis",
-              "blood"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-relevant_negatives-2",
-            "chip_text": "no weight loss reported",
-            "order": 2,
-            "search_terms": [
-              "weight",
-              "loss"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-relevant_negatives-3",
-            "chip_text": "no fever or night sweats reported",
-            "order": 3,
-            "search_terms": [
-              "fever",
-              "sweats",
-              "TB"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "exam_findings": [
-          {
-            "chip_id": "resp-chronic-cough-exam_findings-1",
-            "chip_text": "chest auscultation documented if assessed",
-            "order": 1,
-            "search_terms": [
-              "auscultation",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-exam_findings-2",
-            "chip_text": "oropharynx documented if assessed",
-            "order": 2,
-            "search_terms": [
-              "oropharynx",
-              "throat"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-exam_findings-3",
-            "chip_text": "nasal examination documented if relevant",
-            "order": 3,
-            "search_terms": [
-              "nasal",
-              "postnasal"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-exam_findings-4",
-            "chip_text": "oxygen saturation documented if measured",
-            "order": 4,
-            "search_terms": [
-              "oxygen",
-              "SpO2"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-exam_findings-5",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 5,
-            "search_terms": [
-              "RR",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "red_flags": [
-          {
-            "chip_id": "resp-chronic-cough-red_flags-1",
-            "chip_text": "hemoptysis",
-            "order": 1,
-            "search_terms": [
-              "hemoptysis",
-              "blood"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-red_flags-2",
-            "chip_text": "unexplained weight loss",
-            "order": 2,
-            "search_terms": [
-              "weight",
-              "loss"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-red_flags-3",
-            "chip_text": "fever or night sweats",
-            "order": 3,
-            "search_terms": [
-              "fever",
-              "sweats",
-              "TB"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-red_flags-4",
-            "chip_text": "voice change or stridor",
-            "order": 4,
-            "search_terms": [
-              "voice",
-              "stridor"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-red_flags-5",
-            "chip_text": "smoker over 45 with new cough",
-            "order": 5,
-            "search_terms": [
-              "smoker",
-              "age",
-              "45"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-red_flags-6",
-            "chip_text": "persistent localized abnormality",
-            "order": 6,
-            "search_terms": [
-              "localized",
-              "focal"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          }
-        ],
-        "investigations": [
-          {
-            "chip_id": "resp-chronic-cough-investigations-1",
-            "chip_text": "chest imaging reviewed if available",
-            "order": 1,
-            "search_terms": [
-              "CXR",
-              "chest",
-              "X-ray",
-              "CT"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-investigations-2",
-            "chip_text": "spirometry reviewed if available",
-            "order": 2,
-            "search_terms": [
-              "spirometry",
-              "PFT"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-investigations-3",
-            "chip_text": "laryngoscopy referral discussed if relevant",
-            "order": 3,
-            "search_terms": [
-              "ENT",
-              "laryngoscopy"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "plan_phrases": [
-          {
-            "chip_id": "resp-chronic-cough-plan_phrases-1",
-            "chip_text": "clinician-entered plan documented",
-            "order": 1,
-            "search_terms": [
-              "plan",
-              "management"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-plan_phrases-2",
-            "chip_text": "safety-netting documented if discussed",
-            "order": 2,
-            "search_terms": [
-              "safety",
-              "netting"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-plan_phrases-3",
-            "chip_text": "referral documented if clinician decided",
-            "order": 3,
-            "search_terms": [
-              "referral",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-plan_phrases-4",
-            "chip_text": "follow-up documented if arranged",
-            "order": 4,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-plan_phrases-5",
-            "chip_text": "trial of inhaled therapy discussed if applicable",
-            "order": 5,
-            "search_terms": [
-              "inhaler",
-              "trial",
-              "treatment"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "follow_up": [
-          {
-            "chip_id": "resp-chronic-cough-follow_up-1",
-            "chip_text": "2-4 weeks",
-            "order": 1,
-            "search_terms": [
-              "two",
-              "four",
-              "weeks"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-follow_up-2",
-            "chip_text": "4-6 weeks",
-            "order": 2,
-            "search_terms": [
-              "four",
-              "six",
-              "weeks"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-follow_up-3",
-            "chip_text": "sooner if worsening",
-            "order": 3,
-            "search_terms": [
-              "sooner",
-              "worsening"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-chronic-cough-follow_up-4",
-            "chip_text": "PRN",
-            "order": 4,
-            "search_terms": [
-              "PRN",
-              "as needed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ]
+              "symptoms": [
+                      {
+                              "chip_id": "resp-chronic-cough-symptoms-1",
+                              "chip_text": "cough >8 weeks duration",
+                              "order": 1,
+                              "search_terms": [
+                                      "cough"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-symptoms-2",
+                              "chip_text": "cough dry/non-productive",
+                              "order": 2,
+                              "search_terms": [
+                                      "cough"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-symptoms-3",
+                              "chip_text": "cough productive: white sputum",
+                              "order": 3,
+                              "search_terms": [
+                                      "cough"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-symptoms-4",
+                              "chip_text": "cough worse at night",
+                              "order": 4,
+                              "search_terms": [
+                                      "cough"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-symptoms-5",
+                              "chip_text": "cough post-nasal drip sensation",
+                              "order": 5,
+                              "search_terms": [
+                                      "cough"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-symptoms-6",
+                              "chip_text": "cough with meals/lying flat",
+                              "order": 6,
+                              "search_terms": [
+                                      "cough"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-symptoms-7",
+                              "chip_text": "cough triggered by cold air",
+                              "order": 7,
+                              "search_terms": [
+                                      "cough"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-symptoms-8",
+                              "chip_text": "cough with throat clearing",
+                              "order": 8,
+                              "search_terms": [
+                                      "cough"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-symptoms-9",
+                              "chip_text": "associated wheeze",
+                              "order": 9,
+                              "search_terms": [
+                                      "associated"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-symptoms-10",
+                              "chip_text": "associated heartburn/reflux",
+                              "order": 10,
+                              "search_terms": [
+                                      "associated"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-symptoms-11",
+                              "chip_text": "post-infectious onset",
+                              "order": 11,
+                              "search_terms": [
+                                      "post-infectious"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-symptoms-12",
+                              "chip_text": "ACE inhibitor use",
+                              "order": 12,
+                              "search_terms": [
+                                      "ACE"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "relevant_negatives": [
+                      {
+                              "chip_id": "resp-chronic-cough-relevant_negatives-1",
+                              "chip_text": "no hemoptysis",
+                              "order": 1,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-relevant_negatives-2",
+                              "chip_text": "no weight loss",
+                              "order": 2,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-relevant_negatives-3",
+                              "chip_text": "no fever",
+                              "order": 3,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-relevant_negatives-4",
+                              "chip_text": "no night sweats",
+                              "order": 4,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-relevant_negatives-5",
+                              "chip_text": "no TB contacts",
+                              "order": 5,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-relevant_negatives-6",
+                              "chip_text": "no dysphagia",
+                              "order": 6,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-relevant_negatives-7",
+                              "chip_text": "no voice change",
+                              "order": 7,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-relevant_negatives-8",
+                              "chip_text": "no chest pain",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "exam_findings": [
+                      {
+                              "chip_id": "resp-chronic-cough-exam_findings-1",
+                              "chip_text": "SpO2 98% on RA",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-exam_findings-2",
+                              "chip_text": "SpO2 96% on RA",
+                              "order": 2,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-exam_findings-3",
+                              "chip_text": "RR 16/min",
+                              "order": 3,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-exam_findings-4",
+                              "chip_text": "chest: clear bilaterally",
+                              "order": 4,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-exam_findings-5",
+                              "chip_text": "chest: scattered wheeze",
+                              "order": 5,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-exam_findings-6",
+                              "chip_text": "nasal mucosa boggy/pale",
+                              "order": 6,
+                              "search_terms": [
+                                      "nasal"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-exam_findings-7",
+                              "chip_text": "cobblestone pharynx",
+                              "order": 7,
+                              "search_terms": [
+                                      "cobblestone"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-exam_findings-8",
+                              "chip_text": "no cervical lymphadenopathy",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-exam_findings-9",
+                              "chip_text": "no clubbing",
+                              "order": 9,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-exam_findings-10",
+                              "chip_text": "peak flow 420 L/min normal",
+                              "order": 10,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "red_flags": [
+                      {
+                              "chip_id": "resp-chronic-cough-red_flags-1",
+                              "chip_text": "hemoptysis",
+                              "order": 1,
+                              "search_terms": [
+                                      "hemoptysis"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-red_flags-2",
+                              "chip_text": "unexplained weight loss >5%",
+                              "order": 2,
+                              "search_terms": [
+                                      "unexplained"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-red_flags-3",
+                              "chip_text": "new hoarseness >3 weeks",
+                              "order": 3,
+                              "search_terms": [
+                                      "new"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-red_flags-4",
+                              "chip_text": "stridor",
+                              "order": 4,
+                              "search_terms": [
+                                      "stridor"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-red_flags-5",
+                              "chip_text": "massive hemoptysis",
+                              "order": 5,
+                              "search_terms": [
+                                      "massive"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-red_flags-6",
+                              "chip_text": "CXR mass/nodule",
+                              "order": 6,
+                              "search_terms": [
+                                      "CXR"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-red_flags-7",
+                              "chip_text": "smoker >20 pack-years with new cough",
+                              "order": 7,
+                              "search_terms": [
+                                      "smoker"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-red_flags-8",
+                              "chip_text": "progressive SOB",
+                              "order": 8,
+                              "search_terms": [
+                                      "progressive"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      }
+              ],
+              "investigations": [
+                      {
+                              "chip_id": "resp-chronic-cough-investigations-1",
+                              "chip_text": "CXR: normal",
+                              "order": 1,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-investigations-2",
+                              "chip_text": "CXR: hilar prominence",
+                              "order": 2,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-investigations-3",
+                              "chip_text": "CXR: apical opacity",
+                              "order": 3,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-investigations-4",
+                              "chip_text": "spirometry: normal",
+                              "order": 4,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-investigations-5",
+                              "chip_text": "spirometry: obstructive pattern",
+                              "order": 5,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-investigations-6",
+                              "chip_text": "FeNO 55 ppb (elevated)",
+                              "order": 6,
+                              "search_terms": [
+                                      "FeNO"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-investigations-7",
+                              "chip_text": "sputum cytology: eosinophils",
+                              "order": 7,
+                              "search_terms": [
+                                      "sputum"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-investigations-8",
+                              "chip_text": "CT thorax: bronchiectasis",
+                              "order": 8,
+                              "search_terms": [
+                                      "CT"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-investigations-9",
+                              "chip_text": "pH study: acid reflux confirmed",
+                              "order": 9,
+                              "search_terms": [
+                                      "pH"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-investigations-10",
+                              "chip_text": "methacholine challenge: positive",
+                              "order": 10,
+                              "search_terms": [
+                                      "methacholine"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "plan_phrases": [
+                      {
+                              "chip_id": "resp-chronic-cough-plan_phrases-1",
+                              "chip_text": "trial ICS for eosinophilic cough",
+                              "order": 1,
+                              "search_terms": [
+                                      "trial"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-plan_phrases-2",
+                              "chip_text": "PPI trial for reflux cough",
+                              "order": 2,
+                              "search_terms": [
+                                      "PPI"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-plan_phrases-3",
+                              "chip_text": "nasal steroid spray for post-nasal drip",
+                              "order": 3,
+                              "search_terms": [
+                                      "nasal"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-plan_phrases-4",
+                              "chip_text": "stop ACE inhibitor, switch to ARB",
+                              "order": 4,
+                              "search_terms": [
+                                      "stop"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-plan_phrases-5",
+                              "chip_text": "speech therapy referral for habit cough",
+                              "order": 5,
+                              "search_terms": [
+                                      "speech"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-plan_phrases-6",
+                              "chip_text": "antihistamine trial",
+                              "order": 6,
+                              "search_terms": [
+                                      "antihistamine"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-plan_phrases-7",
+                              "chip_text": "refer respiratory if no response 8 weeks",
+                              "order": 7,
+                              "search_terms": [
+                                      "refer"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-plan_phrases-8",
+                              "chip_text": "chest CT if CXR abnormal",
+                              "order": 8,
+                              "search_terms": [
+                                      "chest"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-plan_phrases-9",
+                              "chip_text": "urgent 2-week-wait if malignancy suspected",
+                              "order": 9,
+                              "search_terms": [
+                                      "urgent"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-plan_phrases-10",
+                              "chip_text": "smoking cessation advice",
+                              "order": 10,
+                              "search_terms": [
+                                      "smoking"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-plan_phrases-11",
+                              "chip_text": "cough suppressant short-term",
+                              "order": 11,
+                              "search_terms": [
+                                      "cough"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-plan_phrases-12",
+                              "chip_text": "reassurance: post-viral cough resolves 8-12 weeks",
+                              "order": 12,
+                              "search_terms": [
+                                      "reassurance:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "follow_up": [
+                      {
+                              "chip_id": "resp-chronic-cough-follow_up-1",
+                              "chip_text": "review 4 weeks after treatment trial",
+                              "order": 1,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-follow_up-2",
+                              "chip_text": "review 8 weeks if persistent",
+                              "order": 2,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-follow_up-3",
+                              "chip_text": "urgent review if hemoptysis",
+                              "order": 3,
+                              "search_terms": [
+                                      "urgent"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-follow_up-4",
+                              "chip_text": "annual review if chronic",
+                              "order": 4,
+                              "search_terms": [
+                                      "annual"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-follow_up-5",
+                              "chip_text": "PRN",
+                              "order": 5,
+                              "search_terms": [
+                                      "PRN"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-chronic-cough-follow_up-6",
+                              "chip_text": "telephone review 2 weeks",
+                              "order": 6,
+                              "search_terms": [
+                                      "telephone"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ]
       },
       "chief_complaint_aliases": [
         "chronic cough",
@@ -72651,513 +73530,841 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 9,
-        "relevant_negatives": 4,
-        "exam_findings": 7,
-        "red_flags": 6,
-        "investigations": 4,
-        "plan_phrases": 4,
-        "follow_up": 4
+              "symptoms": 12,
+              "relevant_negatives": 8,
+              "exam_findings": 14,
+              "red_flags": 8,
+              "investigations": 13,
+              "plan_phrases": 12,
+              "follow_up": 6
       },
-      "total_chips": 38,
+      "total_chips": 73,
       "chips": {
-        "symptoms": [
-          {
-            "chip_id": "resp-dyspnea-symptoms-1",
-            "chip_text": "dyspnea",
-            "order": 1,
-            "search_terms": [
-              "dyspnea",
-              "SOB",
-              "breathlessness"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-symptoms-2",
-            "chip_text": "onset and duration documented",
-            "order": 2,
-            "search_terms": [
-              "onset",
-              "duration",
-              "acute",
-              "gradual"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-symptoms-3",
-            "chip_text": "exertional versus rest symptoms documented",
-            "order": 3,
-            "search_terms": [
-              "exertional",
-              "rest",
-              "activity"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-symptoms-4",
-            "chip_text": "MRC dyspnea grade documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "MRC",
-              "grade",
-              "scale"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-symptoms-5",
-            "chip_text": "orthopnea and PND reviewed",
-            "order": 5,
-            "search_terms": [
-              "orthopnea",
-              "PND",
-              "lying flat"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-symptoms-6",
-            "chip_text": "cough, wheeze and chest pain reviewed",
-            "order": 6,
-            "search_terms": [
-              "cough",
-              "wheeze",
-              "chest",
-              "pain"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-symptoms-7",
-            "chip_text": "leg swelling reviewed",
-            "order": 7,
-            "search_terms": [
-              "leg",
-              "ankle",
-              "oedema"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-symptoms-8",
-            "chip_text": "nocturnal symptoms reviewed",
-            "order": 8,
-            "search_terms": [
-              "nocturnal",
-              "night"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-symptoms-9",
-            "chip_text": "functional limitation documented",
-            "order": 9,
-            "search_terms": [
-              "functional",
-              "limitation",
-              "ADL"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "relevant_negatives": [
-          {
-            "chip_id": "resp-dyspnea-relevant_negatives-1",
-            "chip_text": "no chest pain reported",
-            "order": 1,
-            "search_terms": [
-              "chest",
-              "pain"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-relevant_negatives-2",
-            "chip_text": "no syncope reported",
-            "order": 2,
-            "search_terms": [
-              "syncope",
-              "faint"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-relevant_negatives-3",
-            "chip_text": "no hemoptysis reported",
-            "order": 3,
-            "search_terms": [
-              "hemoptysis",
-              "blood"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-relevant_negatives-4",
-            "chip_text": "no fever reported",
-            "order": 4,
-            "search_terms": [
-              "fever"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "exam_findings": [
-          {
-            "chip_id": "resp-dyspnea-exam_findings-1",
-            "chip_text": "oxygen saturation documented if measured",
-            "order": 1,
-            "search_terms": [
-              "oxygen",
-              "SpO2"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-exam_findings-2",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 2,
-            "search_terms": [
-              "RR",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-exam_findings-3",
-            "chip_text": "work of breathing documented if assessed",
-            "order": 3,
-            "search_terms": [
-              "work",
-              "breathing",
-              "accessory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-exam_findings-4",
-            "chip_text": "chest auscultation documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "auscultation",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-exam_findings-5",
-            "chip_text": "peripheral oedema documented if assessed",
-            "order": 5,
-            "search_terms": [
-              "oedema",
-              "ankle",
-              "JVP"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-exam_findings-6",
-            "chip_text": "tracheal position documented if assessed",
-            "order": 6,
-            "search_terms": [
-              "trachea",
-              "deviation"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-exam_findings-7",
-            "chip_text": "peak flow recorded if measured",
-            "order": 7,
-            "search_terms": [
-              "peak",
-              "flow",
-              "PEFR"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "red_flags": [
-          {
-            "chip_id": "resp-dyspnea-red_flags-1",
-            "chip_text": "severe respiratory distress",
-            "order": 1,
-            "search_terms": [
-              "severe",
-              "distress"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-red_flags-2",
-            "chip_text": "oxygen saturation below baseline",
-            "order": 2,
-            "search_terms": [
-              "low",
-              "oxygen",
-              "desaturation"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-red_flags-3",
-            "chip_text": "cyanosis",
-            "order": 3,
-            "search_terms": [
-              "cyanosis"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-red_flags-4",
-            "chip_text": "inability to speak full sentences",
-            "order": 4,
-            "search_terms": [
-              "speak",
-              "sentences"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-red_flags-5",
-            "chip_text": "stridor",
-            "order": 5,
-            "search_terms": [
-              "stridor",
-              "upper airway"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-red_flags-6",
-            "chip_text": "unilateral chest signs",
-            "order": 6,
-            "search_terms": [
-              "unilateral",
-              "pneumothorax",
-              "effusion"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          }
-        ],
-        "investigations": [
-          {
-            "chip_id": "resp-dyspnea-investigations-1",
-            "chip_text": "ECG reviewed if performed",
-            "order": 1,
-            "search_terms": [
-              "ECG",
-              "EKG"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-investigations-2",
-            "chip_text": "chest imaging reviewed if available",
-            "order": 2,
-            "search_terms": [
-              "CXR",
-              "chest",
-              "X-ray",
-              "CT"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-investigations-3",
-            "chip_text": "blood tests reviewed if ordered",
-            "order": 3,
-            "search_terms": [
-              "blood",
-              "labs",
-              "BNP",
-              "D-dimer"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-investigations-4",
-            "chip_text": "previous PFT reviewed if available",
-            "order": 4,
-            "search_terms": [
-              "PFT",
-              "FEV1",
-              "FVC"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "plan_phrases": [
-          {
-            "chip_id": "resp-dyspnea-plan_phrases-1",
-            "chip_text": "clinician-entered plan documented",
-            "order": 1,
-            "search_terms": [
-              "plan",
-              "management"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-plan_phrases-2",
-            "chip_text": "safety-netting documented if discussed",
-            "order": 2,
-            "search_terms": [
-              "safety",
-              "netting"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-plan_phrases-3",
-            "chip_text": "referral documented if clinician decided",
-            "order": 3,
-            "search_terms": [
-              "referral",
-              "respiratory",
-              "cardiology"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-plan_phrases-4",
-            "chip_text": "follow-up documented if arranged",
-            "order": 4,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "follow_up": [
-          {
-            "chip_id": "resp-dyspnea-follow_up-1",
-            "chip_text": "1-2 weeks",
-            "order": 1,
-            "search_terms": [
-              "one",
-              "two",
-              "weeks"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-follow_up-2",
-            "chip_text": "2-4 weeks",
-            "order": 2,
-            "search_terms": [
-              "two",
-              "four",
-              "weeks"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-follow_up-3",
-            "chip_text": "sooner if worsening",
-            "order": 3,
-            "search_terms": [
-              "sooner",
-              "worsening"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-dyspnea-follow_up-4",
-            "chip_text": "PRN",
-            "order": 4,
-            "search_terms": [
-              "PRN",
-              "as needed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ]
+              "symptoms": [
+                      {
+                              "chip_id": "resp-dyspnea-symptoms-1",
+                              "chip_text": "SOB on exertion: 50m flat",
+                              "order": 1,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-symptoms-2",
+                              "chip_text": "SOB on exertion: 1 flight stairs",
+                              "order": 2,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-symptoms-3",
+                              "chip_text": "SOB at rest",
+                              "order": 3,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-symptoms-4",
+                              "chip_text": "orthopnea: 3 pillows",
+                              "order": 4,
+                              "search_terms": [
+                                      "orthopnea:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-symptoms-5",
+                              "chip_text": "PND present",
+                              "order": 5,
+                              "search_terms": [
+                                      "PND"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-symptoms-6",
+                              "chip_text": "SOB acute onset",
+                              "order": 6,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-symptoms-7",
+                              "chip_text": "SOB gradual over weeks",
+                              "order": 7,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-symptoms-8",
+                              "chip_text": "SOB with wheeze",
+                              "order": 8,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-symptoms-9",
+                              "chip_text": "SOB with chest pain",
+                              "order": 9,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-symptoms-10",
+                              "chip_text": "SOB with cough",
+                              "order": 10,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-symptoms-11",
+                              "chip_text": "SOB worse lying flat",
+                              "order": 11,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-symptoms-12",
+                              "chip_text": "exercise tolerance reduced from baseline",
+                              "order": 12,
+                              "search_terms": [
+                                      "exercise"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "relevant_negatives": [
+                      {
+                              "chip_id": "resp-dyspnea-relevant_negatives-1",
+                              "chip_text": "no chest pain",
+                              "order": 1,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-relevant_negatives-2",
+                              "chip_text": "no palpitations",
+                              "order": 2,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-relevant_negatives-3",
+                              "chip_text": "no leg swelling",
+                              "order": 3,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-relevant_negatives-4",
+                              "chip_text": "no hemoptysis",
+                              "order": 4,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-relevant_negatives-5",
+                              "chip_text": "no fever",
+                              "order": 5,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-relevant_negatives-6",
+                              "chip_text": "no calf pain/swelling",
+                              "order": 6,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-relevant_negatives-7",
+                              "chip_text": "no weight loss",
+                              "order": 7,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-relevant_negatives-8",
+                              "chip_text": "no orthopnea",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "exam_findings": [
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-1",
+                              "chip_text": "SpO2 96% on RA",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-2",
+                              "chip_text": "SpO2 93% on RA",
+                              "order": 2,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-3",
+                              "chip_text": "SpO2 89% on RA",
+                              "order": 3,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-4",
+                              "chip_text": "RR 22/min",
+                              "order": 4,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-5",
+                              "chip_text": "RR 28/min",
+                              "order": 5,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-6",
+                              "chip_text": "HR 105 bpm",
+                              "order": 6,
+                              "search_terms": [
+                                      "HR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-7",
+                              "chip_text": "chest: bilateral basal crackles",
+                              "order": 7,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-8",
+                              "chip_text": "chest: wheeze throughout",
+                              "order": 8,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-9",
+                              "chip_text": "chest: clear bilaterally",
+                              "order": 9,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-10",
+                              "chip_text": "JVP raised 6cm",
+                              "order": 10,
+                              "search_terms": [
+                                      "JVP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-11",
+                              "chip_text": "peripheral oedema to mid-shin",
+                              "order": 11,
+                              "search_terms": [
+                                      "peripheral"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-12",
+                              "chip_text": "no calf tenderness",
+                              "order": 12,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-13",
+                              "chip_text": "BMI 35",
+                              "order": 13,
+                              "search_terms": [
+                                      "BMI"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-exam_findings-14",
+                              "chip_text": "trachea central",
+                              "order": 14,
+                              "search_terms": [
+                                      "trachea"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "red_flags": [
+                      {
+                              "chip_id": "resp-dyspnea-red_flags-1",
+                              "chip_text": "SpO2 <90% on RA",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-red_flags-2",
+                              "chip_text": "stridor",
+                              "order": 2,
+                              "search_terms": [
+                                      "stridor"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-red_flags-3",
+                              "chip_text": "acute onset with pleuritic pain (? PE)",
+                              "order": 3,
+                              "search_terms": [
+                                      "acute"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-red_flags-4",
+                              "chip_text": "hypotension with SOB",
+                              "order": 4,
+                              "search_terms": [
+                                      "hypotension"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-red_flags-5",
+                              "chip_text": "massive hemoptysis",
+                              "order": 5,
+                              "search_terms": [
+                                      "massive"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-red_flags-6",
+                              "chip_text": "tension pneumothorax signs",
+                              "order": 6,
+                              "search_terms": [
+                                      "tension"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-red_flags-7",
+                              "chip_text": "anaphylaxis: urticaria + wheeze + hypotension",
+                              "order": 7,
+                              "search_terms": [
+                                      "anaphylaxis:"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-red_flags-8",
+                              "chip_text": "unable to speak in sentences",
+                              "order": 8,
+                              "search_terms": [
+                                      "unable"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      }
+              ],
+              "investigations": [
+                      {
+                              "chip_id": "resp-dyspnea-investigations-1",
+                              "chip_text": "CXR: pulmonary oedema",
+                              "order": 1,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-investigations-2",
+                              "chip_text": "CXR: bilateral effusions",
+                              "order": 2,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-investigations-3",
+                              "chip_text": "CXR: hyperinflated",
+                              "order": 3,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-investigations-4",
+                              "chip_text": "CXR: normal",
+                              "order": 4,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-investigations-5",
+                              "chip_text": "ABG: type 1 respiratory failure",
+                              "order": 5,
+                              "search_terms": [
+                                      "ABG:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-investigations-6",
+                              "chip_text": "ABG: pH 7.35 pO2 7.8 pCO2 5.1",
+                              "order": 6,
+                              "search_terms": [
+                                      "ABG:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-investigations-7",
+                              "chip_text": "BNP 850 pg/mL (elevated)",
+                              "order": 7,
+                              "search_terms": [
+                                      "BNP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-investigations-8",
+                              "chip_text": "BNP normal <100",
+                              "order": 8,
+                              "search_terms": [
+                                      "BNP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-investigations-9",
+                              "chip_text": "D-dimer elevated",
+                              "order": 9,
+                              "search_terms": [
+                                      "D-dimer"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-investigations-10",
+                              "chip_text": "CTPA: PE confirmed",
+                              "order": 10,
+                              "search_terms": [
+                                      "CTPA:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-investigations-11",
+                              "chip_text": "spirometry: restrictive pattern",
+                              "order": 11,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-investigations-12",
+                              "chip_text": "ECG: sinus tachycardia",
+                              "order": 12,
+                              "search_terms": [
+                                      "ECG:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-investigations-13",
+                              "chip_text": "Hb 85 g/L (anaemia)",
+                              "order": 13,
+                              "search_terms": [
+                                      "Hb"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "plan_phrases": [
+                      {
+                              "chip_id": "resp-dyspnea-plan_phrases-1",
+                              "chip_text": "oxygen to target SpO2 94-98%",
+                              "order": 1,
+                              "search_terms": [
+                                      "oxygen"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-plan_phrases-2",
+                              "chip_text": "oxygen to target SpO2 88-92% (COPD)",
+                              "order": 2,
+                              "search_terms": [
+                                      "oxygen"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-plan_phrases-3",
+                              "chip_text": "IV furosemide for pulmonary oedema",
+                              "order": 3,
+                              "search_terms": [
+                                      "IV"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-plan_phrases-4",
+                              "chip_text": "nebulised salbutamol",
+                              "order": 4,
+                              "search_terms": [
+                                      "nebulised"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-plan_phrases-5",
+                              "chip_text": "anticoagulation for confirmed PE",
+                              "order": 5,
+                              "search_terms": [
+                                      "anticoagulation"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-plan_phrases-6",
+                              "chip_text": "refer cardiology if cardiac cause",
+                              "order": 6,
+                              "search_terms": [
+                                      "refer"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-plan_phrases-7",
+                              "chip_text": "refer respiratory for further investigation",
+                              "order": 7,
+                              "search_terms": [
+                                      "refer"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-plan_phrases-8",
+                              "chip_text": "trial diuretics",
+                              "order": 8,
+                              "search_terms": [
+                                      "trial"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-plan_phrases-9",
+                              "chip_text": "CTPA if PE suspected",
+                              "order": 9,
+                              "search_terms": [
+                                      "CTPA"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-plan_phrases-10",
+                              "chip_text": "echocardiogram requested",
+                              "order": 10,
+                              "search_terms": [
+                                      "echocardiogram"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-plan_phrases-11",
+                              "chip_text": "blood transfusion if symptomatic anaemia",
+                              "order": 11,
+                              "search_terms": [
+                                      "blood"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-plan_phrases-12",
+                              "chip_text": "admit if SpO2 <92% on RA",
+                              "order": 12,
+                              "search_terms": [
+                                      "admit"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "follow_up": [
+                      {
+                              "chip_id": "resp-dyspnea-follow_up-1",
+                              "chip_text": "review 24-48h if acute",
+                              "order": 1,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-follow_up-2",
+                              "chip_text": "review 2 weeks post-treatment",
+                              "order": 2,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-follow_up-3",
+                              "chip_text": "urgent review if worsening",
+                              "order": 3,
+                              "search_terms": [
+                                      "urgent"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-follow_up-4",
+                              "chip_text": "cardiology follow-up 4 weeks",
+                              "order": 4,
+                              "search_terms": [
+                                      "cardiology"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-follow_up-5",
+                              "chip_text": "respiratory clinic 6 weeks",
+                              "order": 5,
+                              "search_terms": [
+                                      "respiratory"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-dyspnea-follow_up-6",
+                              "chip_text": "PRN",
+                              "order": 6,
+                              "search_terms": [
+                                      "PRN"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ]
       },
       "chief_complaint_aliases": [
         "dyspnea",
@@ -73206,461 +74413,819 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 9,
-        "relevant_negatives": 4,
-        "exam_findings": 7,
-        "red_flags": 4,
-        "investigations": 2,
-        "plan_phrases": 5,
-        "follow_up": 4
+              "symptoms": 12,
+              "relevant_negatives": 8,
+              "exam_findings": 14,
+              "red_flags": 8,
+              "investigations": 11,
+              "plan_phrases": 12,
+              "follow_up": 6
       },
-      "total_chips": 35,
+      "total_chips": 71,
       "chips": {
-        "symptoms": [
-          {
-            "chip_id": "resp-wheeze-symptoms-1",
-            "chip_text": "wheeze",
-            "order": 1,
-            "search_terms": [
-              "wheeze",
-              "whistling"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-symptoms-2",
-            "chip_text": "duration documented",
-            "order": 2,
-            "search_terms": [
-              "duration",
-              "how long"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-symptoms-3",
-            "chip_text": "episodic pattern reviewed",
-            "order": 3,
-            "search_terms": [
-              "episodic",
-              "intermittent"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-symptoms-4",
-            "chip_text": "triggers reviewed",
-            "order": 4,
-            "search_terms": [
-              "trigger",
-              "allergen",
-              "exercise"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-symptoms-5",
-            "chip_text": "cough and shortness of breath reviewed",
-            "order": 5,
-            "search_terms": [
-              "cough",
-              "SOB"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-symptoms-6",
-            "chip_text": "chest tightness reviewed",
-            "order": 6,
-            "search_terms": [
-              "chest",
-              "tightness"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-symptoms-7",
-            "chip_text": "inhaler use reviewed if relevant",
-            "order": 7,
-            "search_terms": [
-              "inhaler",
-              "puffer"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-symptoms-8",
-            "chip_text": "nocturnal symptoms reviewed",
-            "order": 8,
-            "search_terms": [
-              "nocturnal",
-              "night"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-symptoms-9",
-            "chip_text": "response to bronchodilator reviewed if applicable",
-            "order": 9,
-            "search_terms": [
-              "response",
-              "bronchodilator"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "relevant_negatives": [
-          {
-            "chip_id": "resp-wheeze-relevant_negatives-1",
-            "chip_text": "no severe breathlessness reported",
-            "order": 1,
-            "search_terms": [
-              "severe",
-              "breathlessness"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-relevant_negatives-2",
-            "chip_text": "no chest pain reported",
-            "order": 2,
-            "search_terms": [
-              "chest",
-              "pain"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-relevant_negatives-3",
-            "chip_text": "no hemoptysis reported",
-            "order": 3,
-            "search_terms": [
-              "hemoptysis",
-              "blood"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-relevant_negatives-4",
-            "chip_text": "no stridor reported",
-            "order": 4,
-            "search_terms": [
-              "stridor",
-              "upper airway"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "exam_findings": [
-          {
-            "chip_id": "resp-wheeze-exam_findings-1",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 1,
-            "search_terms": [
-              "RR",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-exam_findings-2",
-            "chip_text": "oxygen saturation documented if measured",
-            "order": 2,
-            "search_terms": [
-              "oxygen",
-              "SpO2"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-exam_findings-3",
-            "chip_text": "wheeze documented if assessed",
-            "order": 3,
-            "search_terms": [
-              "wheeze",
-              "expiratory",
-              "inspiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-exam_findings-4",
-            "chip_text": "chest auscultation documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "auscultation",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-exam_findings-5",
-            "chip_text": "air entry documented if assessed",
-            "order": 5,
-            "search_terms": [
-              "air",
-              "entry"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-exam_findings-6",
-            "chip_text": "peak flow recorded if measured",
-            "order": 6,
-            "search_terms": [
-              "peak",
-              "flow",
-              "PEFR"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-exam_findings-7",
-            "chip_text": "work of breathing documented if assessed",
-            "order": 7,
-            "search_terms": [
-              "work",
-              "breathing"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "red_flags": [
-          {
-            "chip_id": "resp-wheeze-red_flags-1",
-            "chip_text": "severe breathlessness or respiratory distress",
-            "order": 1,
-            "search_terms": [
-              "severe",
-              "distress"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-red_flags-2",
-            "chip_text": "oxygen saturation below baseline",
-            "order": 2,
-            "search_terms": [
-              "low",
-              "oxygen"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-red_flags-3",
-            "chip_text": "silent chest",
-            "order": 3,
-            "search_terms": [
-              "silent",
-              "chest",
-              "no wheeze"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-red_flags-4",
-            "chip_text": "cyanosis",
-            "order": 4,
-            "search_terms": [
-              "cyanosis"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          }
-        ],
-        "investigations": [
-          {
-            "chip_id": "resp-wheeze-investigations-1",
-            "chip_text": "peak flow recorded if measured",
-            "order": 1,
-            "search_terms": [
-              "peak",
-              "flow",
-              "PEFR"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-investigations-2",
-            "chip_text": "spirometry reviewed if available",
-            "order": 2,
-            "search_terms": [
-              "spirometry",
-              "PFT"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "plan_phrases": [
-          {
-            "chip_id": "resp-wheeze-plan_phrases-1",
-            "chip_text": "clinician-entered plan documented",
-            "order": 1,
-            "search_terms": [
-              "plan",
-              "management"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-plan_phrases-2",
-            "chip_text": "medication plan documented if clinician decided",
-            "order": 2,
-            "search_terms": [
-              "medication",
-              "inhaler"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-plan_phrases-3",
-            "chip_text": "safety-netting documented if discussed",
-            "order": 3,
-            "search_terms": [
-              "safety",
-              "netting"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-plan_phrases-4",
-            "chip_text": "follow-up documented if arranged",
-            "order": 4,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-plan_phrases-5",
-            "chip_text": "symptom diary discussed if applicable",
-            "order": 5,
-            "search_terms": [
-              "diary",
-              "peak",
-              "flow"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "follow_up": [
-          {
-            "chip_id": "resp-wheeze-follow_up-1",
-            "chip_text": "1-2 weeks",
-            "order": 1,
-            "search_terms": [
-              "one",
-              "two",
-              "weeks"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-follow_up-2",
-            "chip_text": "2-4 weeks",
-            "order": 2,
-            "search_terms": [
-              "two",
-              "four",
-              "weeks"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-follow_up-3",
-            "chip_text": "sooner if worsening",
-            "order": 3,
-            "search_terms": [
-              "sooner",
-              "worsening"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-wheeze-follow_up-4",
-            "chip_text": "PRN",
-            "order": 4,
-            "search_terms": [
-              "PRN",
-              "as needed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ]
+              "symptoms": [
+                      {
+                              "chip_id": "resp-wheeze-symptoms-1",
+                              "chip_text": "wheeze bilateral",
+                              "order": 1,
+                              "search_terms": [
+                                      "wheeze"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-symptoms-2",
+                              "chip_text": "wheeze worse at night",
+                              "order": 2,
+                              "search_terms": [
+                                      "wheeze"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-symptoms-3",
+                              "chip_text": "wheeze with exertion",
+                              "order": 3,
+                              "search_terms": [
+                                      "wheeze"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-symptoms-4",
+                              "chip_text": "wheeze acute onset",
+                              "order": 4,
+                              "search_terms": [
+                                      "wheeze"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-symptoms-5",
+                              "chip_text": "wheeze with URTI",
+                              "order": 5,
+                              "search_terms": [
+                                      "wheeze"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-symptoms-6",
+                              "chip_text": "wheeze with chest tightness",
+                              "order": 6,
+                              "search_terms": [
+                                      "wheeze"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-symptoms-7",
+                              "chip_text": "wheeze episodic",
+                              "order": 7,
+                              "search_terms": [
+                                      "wheeze"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-symptoms-8",
+                              "chip_text": "wheeze persistent daily",
+                              "order": 8,
+                              "search_terms": [
+                                      "wheeze"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-symptoms-9",
+                              "chip_text": "associated cough productive",
+                              "order": 9,
+                              "search_terms": [
+                                      "associated"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-symptoms-10",
+                              "chip_text": "associated SOB",
+                              "order": 10,
+                              "search_terms": [
+                                      "associated"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-symptoms-11",
+                              "chip_text": "triggered by allergens",
+                              "order": 11,
+                              "search_terms": [
+                                      "triggered"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-symptoms-12",
+                              "chip_text": "triggered by exercise/cold air",
+                              "order": 12,
+                              "search_terms": [
+                                      "triggered"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "relevant_negatives": [
+                      {
+                              "chip_id": "resp-wheeze-relevant_negatives-1",
+                              "chip_text": "no stridor",
+                              "order": 1,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-relevant_negatives-2",
+                              "chip_text": "no hemoptysis",
+                              "order": 2,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-relevant_negatives-3",
+                              "chip_text": "no chest pain",
+                              "order": 3,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-relevant_negatives-4",
+                              "chip_text": "no fever",
+                              "order": 4,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-relevant_negatives-5",
+                              "chip_text": "no foreign body aspiration history",
+                              "order": 5,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-relevant_negatives-6",
+                              "chip_text": "no anaphylaxis symptoms",
+                              "order": 6,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-relevant_negatives-7",
+                              "chip_text": "no voice change",
+                              "order": 7,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-relevant_negatives-8",
+                              "chip_text": "no dysphagia",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "exam_findings": [
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-1",
+                              "chip_text": "SpO2 97% on RA",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-2",
+                              "chip_text": "SpO2 94% on RA",
+                              "order": 2,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-3",
+                              "chip_text": "SpO2 91% on RA",
+                              "order": 3,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-4",
+                              "chip_text": "RR 20/min",
+                              "order": 4,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-5",
+                              "chip_text": "RR 26/min",
+                              "order": 5,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-6",
+                              "chip_text": "chest: bilateral expiratory wheeze",
+                              "order": 6,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-7",
+                              "chip_text": "chest: monophonic wheeze left",
+                              "order": 7,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-8",
+                              "chip_text": "chest: polyphonic wheeze bilateral",
+                              "order": 8,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-9",
+                              "chip_text": "chest: silent chest (ominous)",
+                              "order": 9,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-10",
+                              "chip_text": "good air entry bilaterally",
+                              "order": 10,
+                              "search_terms": [
+                                      "good"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-11",
+                              "chip_text": "no accessory muscle use",
+                              "order": 11,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-12",
+                              "chip_text": "prolonged expiratory phase",
+                              "order": 12,
+                              "search_terms": [
+                                      "prolonged"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-13",
+                              "chip_text": "peak flow 380 L/min",
+                              "order": 13,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-exam_findings-14",
+                              "chip_text": "peak flow 200 L/min",
+                              "order": 14,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "red_flags": [
+                      {
+                              "chip_id": "resp-wheeze-red_flags-1",
+                              "chip_text": "silent chest",
+                              "order": 1,
+                              "search_terms": [
+                                      "silent"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-red_flags-2",
+                              "chip_text": "SpO2 <92% on RA",
+                              "order": 2,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-red_flags-3",
+                              "chip_text": "unable to complete sentences",
+                              "order": 3,
+                              "search_terms": [
+                                      "unable"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-red_flags-4",
+                              "chip_text": "RR >30/min",
+                              "order": 4,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-red_flags-5",
+                              "chip_text": "stridor (upper airway obstruction)",
+                              "order": 5,
+                              "search_terms": [
+                                      "stridor"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-red_flags-6",
+                              "chip_text": "anaphylaxis: wheeze + hypotension + rash",
+                              "order": 6,
+                              "search_terms": [
+                                      "anaphylaxis:"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-red_flags-7",
+                              "chip_text": "fixed monophonic wheeze (? endobronchial lesion)",
+                              "order": 7,
+                              "search_terms": [
+                                      "fixed"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-red_flags-8",
+                              "chip_text": "acute onset with aspiration history",
+                              "order": 8,
+                              "search_terms": [
+                                      "acute"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      }
+              ],
+              "investigations": [
+                      {
+                              "chip_id": "resp-wheeze-investigations-1",
+                              "chip_text": "peak flow: 85% predicted (mild)",
+                              "order": 1,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-investigations-2",
+                              "chip_text": "peak flow: 55% predicted (moderate)",
+                              "order": 2,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-investigations-3",
+                              "chip_text": "peak flow: 30% predicted (severe)",
+                              "order": 3,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-investigations-4",
+                              "chip_text": "spirometry: obstructive with reversibility",
+                              "order": 4,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-investigations-5",
+                              "chip_text": "spirometry: fixed obstruction",
+                              "order": 5,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-investigations-6",
+                              "chip_text": "CXR: hyperinflated",
+                              "order": 6,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-investigations-7",
+                              "chip_text": "CXR: normal",
+                              "order": 7,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-investigations-8",
+                              "chip_text": "CXR: foreign body suspected",
+                              "order": 8,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-investigations-9",
+                              "chip_text": "FeNO 48 ppb elevated",
+                              "order": 9,
+                              "search_terms": [
+                                      "FeNO"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-investigations-10",
+                              "chip_text": "blood eosinophils 0.6 x10^9/L",
+                              "order": 10,
+                              "search_terms": [
+                                      "blood"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-investigations-11",
+                              "chip_text": "IgE elevated",
+                              "order": 11,
+                              "search_terms": [
+                                      "IgE"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "plan_phrases": [
+                      {
+                              "chip_id": "resp-wheeze-plan_phrases-1",
+                              "chip_text": "nebulised salbutamol 5mg",
+                              "order": 1,
+                              "search_terms": [
+                                      "nebulised"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-plan_phrases-2",
+                              "chip_text": "salbutamol MDI via spacer",
+                              "order": 2,
+                              "search_terms": [
+                                      "salbutamol"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-plan_phrases-3",
+                              "chip_text": "oral prednisolone 40mg 5 days",
+                              "order": 3,
+                              "search_terms": [
+                                      "oral"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-plan_phrases-4",
+                              "chip_text": "start ICS preventer",
+                              "order": 4,
+                              "search_terms": [
+                                      "start"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-plan_phrases-5",
+                              "chip_text": "step up to ICS/LABA",
+                              "order": 5,
+                              "search_terms": [
+                                      "step"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-plan_phrases-6",
+                              "chip_text": "ipratropium nebuliser added",
+                              "order": 6,
+                              "search_terms": [
+                                      "ipratropium"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-plan_phrases-7",
+                              "chip_text": "oxygen to maintain SpO2 94-98%",
+                              "order": 7,
+                              "search_terms": [
+                                      "oxygen"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-plan_phrases-8",
+                              "chip_text": "admit if severe/life-threatening",
+                              "order": 8,
+                              "search_terms": [
+                                      "admit"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-plan_phrases-9",
+                              "chip_text": "asthma action plan provided",
+                              "order": 9,
+                              "search_terms": [
+                                      "asthma"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-plan_phrases-10",
+                              "chip_text": "allergen avoidance advice",
+                              "order": 10,
+                              "search_terms": [
+                                      "allergen"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-plan_phrases-11",
+                              "chip_text": "smoking cessation if applicable",
+                              "order": 11,
+                              "search_terms": [
+                                      "smoking"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-plan_phrases-12",
+                              "chip_text": "bronchoscopy if fixed wheeze",
+                              "order": 12,
+                              "search_terms": [
+                                      "bronchoscopy"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "follow_up": [
+                      {
+                              "chip_id": "resp-wheeze-follow_up-1",
+                              "chip_text": "review 48h post-acute",
+                              "order": 1,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-follow_up-2",
+                              "chip_text": "GP review 1 week",
+                              "order": 2,
+                              "search_terms": [
+                                      "GP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-follow_up-3",
+                              "chip_text": "respiratory clinic if recurrent",
+                              "order": 3,
+                              "search_terms": [
+                                      "respiratory"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-follow_up-4",
+                              "chip_text": "urgent review if worsening",
+                              "order": 4,
+                              "search_terms": [
+                                      "urgent"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-follow_up-5",
+                              "chip_text": "peak flow diary 2 weeks",
+                              "order": 5,
+                              "search_terms": [
+                                      "peak"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-wheeze-follow_up-6",
+                              "chip_text": "PRN",
+                              "order": 6,
+                              "search_terms": [
+                                      "PRN"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ]
       },
       "chief_complaint_aliases": [
         "wheeze",
@@ -73707,452 +75272,830 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 9,
-        "relevant_negatives": 3,
-        "exam_findings": 5,
-        "red_flags": 4,
-        "investigations": 2,
-        "plan_phrases": 6,
-        "follow_up": 5
+              "symptoms": 12,
+              "relevant_negatives": 8,
+              "exam_findings": 14,
+              "red_flags": 8,
+              "investigations": 12,
+              "plan_phrases": 12,
+              "follow_up": 6
       },
-      "total_chips": 34,
+      "total_chips": 72,
       "chips": {
-        "symptoms": [
-          {
-            "chip_id": "resp-pneumonia-followup-symptoms-1",
-            "chip_text": "pneumonia follow-up",
-            "order": 1,
-            "search_terms": [
-              "pneumonia",
-              "followup"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-symptoms-2",
-            "chip_text": "symptom progress reviewed",
-            "order": 2,
-            "search_terms": [
-              "symptom",
-              "progress"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-symptoms-3",
-            "chip_text": "cough and sputum reviewed",
-            "order": 3,
-            "search_terms": [
-              "cough",
-              "sputum",
-              "phlegm"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-symptoms-4",
-            "chip_text": "fever reviewed",
-            "order": 4,
-            "search_terms": [
-              "fever",
-              "temperature"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-symptoms-5",
-            "chip_text": "dyspnea reviewed",
-            "order": 5,
-            "search_terms": [
-              "dyspnea",
-              "SOB"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-symptoms-6",
-            "chip_text": "functional recovery reviewed",
-            "order": 6,
-            "search_terms": [
-              "functional",
-              "recovery",
-              "energy"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-symptoms-7",
-            "chip_text": "medication and adherence context reviewed if relevant",
-            "order": 7,
-            "search_terms": [
-              "adherence",
-              "antibiotics"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-symptoms-8",
-            "chip_text": "appetite and hydration reviewed",
-            "order": 8,
-            "search_terms": [
-              "appetite",
-              "hydration"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-symptoms-9",
-            "chip_text": "residual chest pain reviewed",
-            "order": 9,
-            "search_terms": [
-              "chest",
-              "pain",
-              "pleuritic"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "relevant_negatives": [
-          {
-            "chip_id": "resp-pneumonia-followup-relevant_negatives-1",
-            "chip_text": "no worsening breathlessness reported",
-            "order": 1,
-            "search_terms": [
-              "worsening",
-              "breathlessness"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-relevant_negatives-2",
-            "chip_text": "no persistent fever reported",
-            "order": 2,
-            "search_terms": [
-              "persistent",
-              "fever"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-relevant_negatives-3",
-            "chip_text": "no hemoptysis reported",
-            "order": 3,
-            "search_terms": [
-              "hemoptysis",
-              "blood"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "exam_findings": [
-          {
-            "chip_id": "resp-pneumonia-followup-exam_findings-1",
-            "chip_text": "oxygen saturation documented if measured",
-            "order": 1,
-            "search_terms": [
-              "oxygen",
-              "SpO2"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-exam_findings-2",
-            "chip_text": "chest auscultation documented if assessed",
-            "order": 2,
-            "search_terms": [
-              "auscultation",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-exam_findings-3",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 3,
-            "search_terms": [
-              "RR",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-exam_findings-4",
-            "chip_text": "temperature documented if measured",
-            "order": 4,
-            "search_terms": [
-              "temperature",
-              "fever"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-exam_findings-5",
-            "chip_text": "chest percussion documented if assessed",
-            "order": 5,
-            "search_terms": [
-              "percussion",
-              "dullness"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "red_flags": [
-          {
-            "chip_id": "resp-pneumonia-followup-red_flags-1",
-            "chip_text": "persistent or recurrent fever",
-            "order": 1,
-            "search_terms": [
-              "persistent",
-              "fever",
-              "recurrent"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-red_flags-2",
-            "chip_text": "worsening dyspnea",
-            "order": 2,
-            "search_terms": [
-              "worsening",
-              "dyspnea"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-red_flags-3",
-            "chip_text": "persistent focal chest signs",
-            "order": 3,
-            "search_terms": [
-              "focal",
-              "chest",
-              "signs"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-red_flags-4",
-            "chip_text": "incomplete resolution on imaging if performed",
-            "order": 4,
-            "search_terms": [
-              "incomplete",
-              "resolution"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          }
-        ],
-        "investigations": [
-          {
-            "chip_id": "resp-pneumonia-followup-investigations-1",
-            "chip_text": "chest imaging reviewed if available",
-            "order": 1,
-            "search_terms": [
-              "CXR",
-              "chest",
-              "X-ray"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-investigations-2",
-            "chip_text": "blood tests reviewed if ordered",
-            "order": 2,
-            "search_terms": [
-              "blood",
-              "labs",
-              "CRP"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "plan_phrases": [
-          {
-            "chip_id": "resp-pneumonia-followup-plan_phrases-1",
-            "chip_text": "clinician-entered plan documented",
-            "order": 1,
-            "search_terms": [
-              "plan",
-              "management"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-plan_phrases-2",
-            "chip_text": "safety-netting documented if discussed",
-            "order": 2,
-            "search_terms": [
-              "safety",
-              "netting"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-plan_phrases-3",
-            "chip_text": "follow-up imaging documented if clinician decided",
-            "order": 3,
-            "search_terms": [
-              "follow",
-              "up",
-              "CXR"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-plan_phrases-4",
-            "chip_text": "referral documented if clinician decided",
-            "order": 4,
-            "search_terms": [
-              "referral",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-plan_phrases-5",
-            "chip_text": "follow-up documented if arranged",
-            "order": 5,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-plan_phrases-6",
-            "chip_text": "chest physiotherapy discussed if applicable",
-            "order": 6,
-            "search_terms": [
-              "physiotherapy",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "follow_up": [
-          {
-            "chip_id": "resp-pneumonia-followup-follow_up-1",
-            "chip_text": "4-6 weeks",
-            "order": 1,
-            "search_terms": [
-              "four",
-              "six",
-              "weeks"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-follow_up-2",
-            "chip_text": "6-8 weeks if imaging follow-up needed",
-            "order": 2,
-            "search_terms": [
-              "six",
-              "eight",
-              "CXR"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-follow_up-3",
-            "chip_text": "sooner if not improving",
-            "order": 3,
-            "search_terms": [
-              "sooner",
-              "worsening"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-follow_up-4",
-            "chip_text": "PRN",
-            "order": 4,
-            "search_terms": [
-              "PRN",
-              "as needed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pneumonia-followup-follow_up-5",
-            "chip_text": "sooner if fever recurs",
-            "order": 5,
-            "search_terms": [
-              "fever",
-              "recurrent"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ]
+              "symptoms": [
+                      {
+                              "chip_id": "resp-pneumonia-followup-symptoms-1",
+                              "chip_text": "productive cough 5 days",
+                              "order": 1,
+                              "search_terms": [
+                                      "productive"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-symptoms-2",
+                              "chip_text": "sputum: rusty/blood-tinged",
+                              "order": 2,
+                              "search_terms": [
+                                      "sputum:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-symptoms-3",
+                              "chip_text": "sputum: green purulent",
+                              "order": 3,
+                              "search_terms": [
+                                      "sputum:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-symptoms-4",
+                              "chip_text": "fever 38.5°C",
+                              "order": 4,
+                              "search_terms": [
+                                      "fever"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-symptoms-5",
+                              "chip_text": "rigors",
+                              "order": 5,
+                              "search_terms": [
+                                      "rigors"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-symptoms-6",
+                              "chip_text": "pleuritic chest pain right side",
+                              "order": 6,
+                              "search_terms": [
+                                      "pleuritic"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-symptoms-7",
+                              "chip_text": "SOB progressive over 3 days",
+                              "order": 7,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-symptoms-8",
+                              "chip_text": "malaise and anorexia",
+                              "order": 8,
+                              "search_terms": [
+                                      "malaise"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-symptoms-9",
+                              "chip_text": "confusion (new onset)",
+                              "order": 9,
+                              "search_terms": [
+                                      "confusion"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-symptoms-10",
+                              "chip_text": "myalgia",
+                              "order": 10,
+                              "search_terms": [
+                                      "myalgia"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-symptoms-11",
+                              "chip_text": "preceded by URTI",
+                              "order": 11,
+                              "search_terms": [
+                                      "preceded"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-symptoms-12",
+                              "chip_text": "night sweats",
+                              "order": 12,
+                              "search_terms": [
+                                      "night"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "relevant_negatives": [
+                      {
+                              "chip_id": "resp-pneumonia-followup-relevant_negatives-1",
+                              "chip_text": "no hemoptysis",
+                              "order": 1,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-relevant_negatives-2",
+                              "chip_text": "no weight loss >3 months",
+                              "order": 2,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-relevant_negatives-3",
+                              "chip_text": "no TB contacts",
+                              "order": 3,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-relevant_negatives-4",
+                              "chip_text": "no recent travel",
+                              "order": 4,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-relevant_negatives-5",
+                              "chip_text": "no immunosuppression",
+                              "order": 5,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-relevant_negatives-6",
+                              "chip_text": "no aspiration risk",
+                              "order": 6,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-relevant_negatives-7",
+                              "chip_text": "no leg swelling/DVT symptoms",
+                              "order": 7,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-relevant_negatives-8",
+                              "chip_text": "no rash",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "exam_findings": [
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-1",
+                              "chip_text": "SpO2 94% on RA",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-2",
+                              "chip_text": "SpO2 91% on RA",
+                              "order": 2,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-3",
+                              "chip_text": "SpO2 88% on RA",
+                              "order": 3,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-4",
+                              "chip_text": "temp 38.8°C",
+                              "order": 4,
+                              "search_terms": [
+                                      "temp"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-5",
+                              "chip_text": "RR 24/min",
+                              "order": 5,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-6",
+                              "chip_text": "RR 30/min",
+                              "order": 6,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-7",
+                              "chip_text": "HR 110 bpm",
+                              "order": 7,
+                              "search_terms": [
+                                      "HR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-8",
+                              "chip_text": "BP 100/60 mmHg",
+                              "order": 8,
+                              "search_terms": [
+                                      "BP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-9",
+                              "chip_text": "chest: bronchial breathing right base",
+                              "order": 9,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-10",
+                              "chip_text": "chest: crackles right lower zone",
+                              "order": 10,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-11",
+                              "chip_text": "chest: dullness to percussion left base",
+                              "order": 11,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-12",
+                              "chip_text": "reduced air entry left base",
+                              "order": 12,
+                              "search_terms": [
+                                      "reduced"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-13",
+                              "chip_text": "tactile vocal fremitus increased",
+                              "order": 13,
+                              "search_terms": [
+                                      "tactile"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-exam_findings-14",
+                              "chip_text": "confused: AMT 7/10",
+                              "order": 14,
+                              "search_terms": [
+                                      "confused:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "red_flags": [
+                      {
+                              "chip_id": "resp-pneumonia-followup-red_flags-1",
+                              "chip_text": "CURB-65 score ≥3",
+                              "order": 1,
+                              "search_terms": [
+                                      "CURB-65"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-red_flags-2",
+                              "chip_text": "SpO2 <92% on RA",
+                              "order": 2,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-red_flags-3",
+                              "chip_text": "systolic BP <90 mmHg",
+                              "order": 3,
+                              "search_terms": [
+                                      "systolic"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-red_flags-4",
+                              "chip_text": "RR >30/min",
+                              "order": 4,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-red_flags-5",
+                              "chip_text": "new confusion",
+                              "order": 5,
+                              "search_terms": [
+                                      "new"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-red_flags-6",
+                              "chip_text": "bilateral/multilobar involvement",
+                              "order": 6,
+                              "search_terms": [
+                                      "bilateral/multilobar"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-red_flags-7",
+                              "chip_text": "empyema suspected",
+                              "order": 7,
+                              "search_terms": [
+                                      "empyema"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-red_flags-8",
+                              "chip_text": "sepsis: lactate >2",
+                              "order": 8,
+                              "search_terms": [
+                                      "sepsis:"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      }
+              ],
+              "investigations": [
+                      {
+                              "chip_id": "resp-pneumonia-followup-investigations-1",
+                              "chip_text": "CXR: right lower lobe consolidation",
+                              "order": 1,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-investigations-2",
+                              "chip_text": "CXR: left basal opacity",
+                              "order": 2,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-investigations-3",
+                              "chip_text": "CXR: bilateral patchy infiltrates",
+                              "order": 3,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-investigations-4",
+                              "chip_text": "CXR: parapneumonic effusion",
+                              "order": 4,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-investigations-5",
+                              "chip_text": "WCC 18.5 x10^9/L",
+                              "order": 5,
+                              "search_terms": [
+                                      "WCC"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-investigations-6",
+                              "chip_text": "CRP 185 mg/L",
+                              "order": 6,
+                              "search_terms": [
+                                      "CRP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-investigations-7",
+                              "chip_text": "procalcitonin elevated",
+                              "order": 7,
+                              "search_terms": [
+                                      "procalcitonin"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-investigations-8",
+                              "chip_text": "U&E: urea 8.2 mmol/L",
+                              "order": 8,
+                              "search_terms": [
+                                      "U&E:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-investigations-9",
+                              "chip_text": "blood cultures: pending",
+                              "order": 9,
+                              "search_terms": [
+                                      "blood"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-investigations-10",
+                              "chip_text": "sputum MC&S: Strep pneumoniae",
+                              "order": 10,
+                              "search_terms": [
+                                      "sputum"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-investigations-11",
+                              "chip_text": "lactate 1.8 mmol/L",
+                              "order": 11,
+                              "search_terms": [
+                                      "lactate"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-investigations-12",
+                              "chip_text": "CURB-65 score 2",
+                              "order": 12,
+                              "search_terms": [
+                                      "CURB-65"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "plan_phrases": [
+                      {
+                              "chip_id": "resp-pneumonia-followup-plan_phrases-1",
+                              "chip_text": "oral amoxicillin started",
+                              "order": 1,
+                              "search_terms": [
+                                      "oral"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-plan_phrases-2",
+                              "chip_text": "oral doxycycline if penicillin allergy",
+                              "order": 2,
+                              "search_terms": [
+                                      "oral"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-plan_phrases-3",
+                              "chip_text": "IV co-amoxiclav for CURB-65 ≥3",
+                              "order": 3,
+                              "search_terms": [
+                                      "IV"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-plan_phrases-4",
+                              "chip_text": "add clarithromycin for atypical cover",
+                              "order": 4,
+                              "search_terms": [
+                                      "add"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-plan_phrases-5",
+                              "chip_text": "oxygen target SpO2 94-98%",
+                              "order": 5,
+                              "search_terms": [
+                                      "oxygen"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-plan_phrases-6",
+                              "chip_text": "IV fluids for dehydration",
+                              "order": 6,
+                              "search_terms": [
+                                      "IV"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-plan_phrases-7",
+                              "chip_text": "repeat CXR 6 weeks to confirm resolution",
+                              "order": 7,
+                              "search_terms": [
+                                      "repeat"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-plan_phrases-8",
+                              "chip_text": "switch IV to oral at 48h if improving",
+                              "order": 8,
+                              "search_terms": [
+                                      "switch"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-plan_phrases-9",
+                              "chip_text": "VTE prophylaxis if admitted",
+                              "order": 9,
+                              "search_terms": [
+                                      "VTE"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-plan_phrases-10",
+                              "chip_text": "escalate if no improvement 48h",
+                              "order": 10,
+                              "search_terms": [
+                                      "escalate"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-plan_phrases-11",
+                              "chip_text": "smoking cessation advice",
+                              "order": 11,
+                              "search_terms": [
+                                      "smoking"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-plan_phrases-12",
+                              "chip_text": "pneumococcal vaccine if not given",
+                              "order": 12,
+                              "search_terms": [
+                                      "pneumococcal"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "follow_up": [
+                      {
+                              "chip_id": "resp-pneumonia-followup-follow_up-1",
+                              "chip_text": "review 48h if not improving",
+                              "order": 1,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-follow_up-2",
+                              "chip_text": "repeat CXR 6 weeks",
+                              "order": 2,
+                              "search_terms": [
+                                      "repeat"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-follow_up-3",
+                              "chip_text": "GP review 1 week post-discharge",
+                              "order": 3,
+                              "search_terms": [
+                                      "GP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-follow_up-4",
+                              "chip_text": "urgent review if deteriorating",
+                              "order": 4,
+                              "search_terms": [
+                                      "urgent"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-follow_up-5",
+                              "chip_text": "consider CT if non-resolving",
+                              "order": 5,
+                              "search_terms": [
+                                      "consider"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pneumonia-followup-follow_up-6",
+                              "chip_text": "PRN",
+                              "order": 6,
+                              "search_terms": [
+                                      "PRN"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ]
       },
       "chief_complaint_aliases": [
         "pneumonia follow-up",
@@ -74201,466 +76144,808 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 9,
-        "relevant_negatives": 3,
-        "exam_findings": 5,
-        "red_flags": 4,
-        "investigations": 3,
-        "plan_phrases": 7,
-        "follow_up": 4
+              "symptoms": 12,
+              "relevant_negatives": 8,
+              "exam_findings": 13,
+              "red_flags": 8,
+              "investigations": 11,
+              "plan_phrases": 12,
+              "follow_up": 6
       },
-      "total_chips": 35,
+      "total_chips": 70,
       "chips": {
-        "symptoms": [
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-1",
-            "chip_text": "snoring",
-            "order": 1,
-            "search_terms": [
-              "snoring"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-2",
-            "chip_text": "witnessed apneas reviewed",
-            "order": 2,
-            "search_terms": [
-              "apnea",
-              "apnoea",
-              "witnessed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-3",
-            "chip_text": "daytime sleepiness reviewed",
-            "order": 3,
-            "search_terms": [
-              "sleepiness",
-              "Epworth",
-              "drowsy"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-4",
-            "chip_text": "morning headaches reviewed",
-            "order": 4,
-            "search_terms": [
-              "morning",
-              "headache"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-5",
-            "chip_text": "concentration issues reviewed",
-            "order": 5,
-            "search_terms": [
-              "concentration",
-              "focus"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-6",
-            "chip_text": "sleep quality reviewed",
-            "order": 6,
-            "search_terms": [
-              "sleep",
-              "quality",
-              "restless"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-7",
-            "chip_text": "weight and BMI context reviewed if relevant",
-            "order": 7,
-            "search_terms": [
-              "weight",
-              "BMI",
-              "obesity"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-8",
-            "chip_text": "nocturnal choking reviewed",
-            "order": 8,
-            "search_terms": [
-              "choking",
-              "gasping"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-symptoms-9",
-            "chip_text": "partner report documented if available",
-            "order": 9,
-            "search_terms": [
-              "partner",
-              "witness",
-              "bed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "relevant_negatives": [
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-1",
-            "chip_text": "no syncope reported",
-            "order": 1,
-            "search_terms": [
-              "syncope",
-              "faint"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-2",
-            "chip_text": "no acute respiratory distress reported",
-            "order": 2,
-            "search_terms": [
-              "acute",
-              "distress"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-3",
-            "chip_text": "no nocturnal seizures reported if applicable",
-            "order": 3,
-            "search_terms": [
-              "seizure",
-              "fits"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "exam_findings": [
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-exam_findings-1",
-            "chip_text": "BMI documented if measured",
-            "order": 1,
-            "search_terms": [
-              "BMI",
-              "weight",
-              "height"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-exam_findings-2",
-            "chip_text": "blood pressure documented if measured",
-            "order": 2,
-            "search_terms": [
-              "BP",
-              "blood",
-              "pressure"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-exam_findings-3",
-            "chip_text": "neck circumference documented if measured",
-            "order": 3,
-            "search_terms": [
-              "neck",
-              "collar"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-exam_findings-4",
-            "chip_text": "oropharyngeal examination documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "oropharyngeal",
-              "Mallampati"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-exam_findings-5",
-            "chip_text": "oxygen saturation study reviewed if performed",
-            "order": 5,
-            "search_terms": [
-              "oximetry",
-              "nocturnal"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "red_flags": [
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-red_flags-1",
-            "chip_text": "severe daytime somnolence",
-            "order": 1,
-            "search_terms": [
-              "severe",
-              "somnolence"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-red_flags-2",
-            "chip_text": "observed apnoeas with desaturation",
-            "order": 2,
-            "search_terms": [
-              "apnea",
-              "desaturation"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-red_flags-3",
-            "chip_text": "respiratory failure signs if suspected",
-            "order": 3,
-            "search_terms": [
-              "respiratory",
-              "failure"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-red_flags-4",
-            "chip_text": "driving safety concern if present",
-            "order": 4,
-            "search_terms": [
-              "driving",
-              "safety"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          }
-        ],
-        "investigations": [
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-investigations-1",
-            "chip_text": "Epworth score reviewed if completed",
-            "order": 1,
-            "search_terms": [
-              "Epworth",
-              "ESS",
-              "sleepiness"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-investigations-2",
-            "chip_text": "sleep study report reviewed if available",
-            "order": 2,
-            "search_terms": [
-              "sleep",
-              "study",
-              "polysomnography"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-investigations-3",
-            "chip_text": "oxygen saturation study reviewed if performed",
-            "order": 3,
-            "search_terms": [
-              "oxygen",
-              "oximetry"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "plan_phrases": [
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-1",
-            "chip_text": "clinician-entered plan documented",
-            "order": 1,
-            "search_terms": [
-              "plan",
-              "management"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-2",
-            "chip_text": "referral documented if clinician decided",
-            "order": 2,
-            "search_terms": [
-              "referral",
-              "sleep",
-              "clinic"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-3",
-            "chip_text": "driving advice documented if clinician discussed",
-            "order": 3,
-            "search_terms": [
-              "driving",
-              "DVLA"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-4",
-            "chip_text": "weight management discussed if applicable",
-            "order": 4,
-            "search_terms": [
-              "weight",
-              "diet",
-              "lifestyle"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-5",
-            "chip_text": "CPAP therapy discussed if applicable",
-            "order": 5,
-            "search_terms": [
-              "CPAP",
-              "machine"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-6",
-            "chip_text": "follow-up documented if arranged",
-            "order": 6,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-7",
-            "chip_text": "sleep hygiene advice documented if discussed",
-            "order": 7,
-            "search_terms": [
-              "sleep",
-              "hygiene",
-              "advice"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "follow_up": [
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-follow_up-1",
-            "chip_text": "3-6 months",
-            "order": 1,
-            "search_terms": [
-              "three",
-              "six",
-              "months"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-follow_up-2",
-            "chip_text": "6-12 months if stable",
-            "order": 2,
-            "search_terms": [
-              "six",
-              "twelve"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-follow_up-3",
-            "chip_text": "sooner if worsening",
-            "order": 3,
-            "search_terms": [
-              "sooner",
-              "worsening"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-sleep-apnea-symptoms-follow_up-4",
-            "chip_text": "PRN",
-            "order": 4,
-            "search_terms": [
-              "PRN",
-              "as needed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ]
+              "symptoms": [
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-symptoms-1",
+                              "chip_text": "loud snoring nightly",
+                              "order": 1,
+                              "search_terms": [
+                                      "loud"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-symptoms-2",
+                              "chip_text": "witnessed apneas by partner",
+                              "order": 2,
+                              "search_terms": [
+                                      "witnessed"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-symptoms-3",
+                              "chip_text": "excessive daytime sleepiness",
+                              "order": 3,
+                              "search_terms": [
+                                      "excessive"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-symptoms-4",
+                              "chip_text": "Epworth score 14/24",
+                              "order": 4,
+                              "search_terms": [
+                                      "Epworth"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-symptoms-5",
+                              "chip_text": "Epworth score 18/24",
+                              "order": 5,
+                              "search_terms": [
+                                      "Epworth"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-symptoms-6",
+                              "chip_text": "unrefreshing sleep",
+                              "order": 6,
+                              "search_terms": [
+                                      "unrefreshing"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-symptoms-7",
+                              "chip_text": "morning headaches",
+                              "order": 7,
+                              "search_terms": [
+                                      "morning"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-symptoms-8",
+                              "chip_text": "nocturia 3x/night",
+                              "order": 8,
+                              "search_terms": [
+                                      "nocturia"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-symptoms-9",
+                              "chip_text": "poor concentration daytime",
+                              "order": 9,
+                              "search_terms": [
+                                      "poor"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-symptoms-10",
+                              "chip_text": "near-miss driving incident",
+                              "order": 10,
+                              "search_terms": [
+                                      "near-miss"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-symptoms-11",
+                              "chip_text": "STOP-BANG score 5/8",
+                              "order": 11,
+                              "search_terms": [
+                                      "STOP-BANG"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-symptoms-12",
+                              "chip_text": "choking/gasping episodes at night",
+                              "order": 12,
+                              "search_terms": [
+                                      "choking/gasping"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "relevant_negatives": [
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-1",
+                              "chip_text": "no chest pain",
+                              "order": 1,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-2",
+                              "chip_text": "no SOB at rest",
+                              "order": 2,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-3",
+                              "chip_text": "no leg swelling",
+                              "order": 3,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-4",
+                              "chip_text": "no hypothyroid symptoms",
+                              "order": 4,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-5",
+                              "chip_text": "no alcohol excess",
+                              "order": 5,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-6",
+                              "chip_text": "no sedative use",
+                              "order": 6,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-7",
+                              "chip_text": "no nasal obstruction",
+                              "order": 7,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-8",
+                              "chip_text": "no restless legs",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "exam_findings": [
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-1",
+                              "chip_text": "BMI 34",
+                              "order": 1,
+                              "search_terms": [
+                                      "BMI"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-2",
+                              "chip_text": "BMI 38",
+                              "order": 2,
+                              "search_terms": [
+                                      "BMI"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-3",
+                              "chip_text": "BMI 42",
+                              "order": 3,
+                              "search_terms": [
+                                      "BMI"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-4",
+                              "chip_text": "neck circumference 44cm",
+                              "order": 4,
+                              "search_terms": [
+                                      "neck"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-5",
+                              "chip_text": "neck circumference 48cm",
+                              "order": 5,
+                              "search_terms": [
+                                      "neck"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-6",
+                              "chip_text": "Mallampati grade III",
+                              "order": 6,
+                              "search_terms": [
+                                      "Mallampati"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-7",
+                              "chip_text": "Mallampati grade IV",
+                              "order": 7,
+                              "search_terms": [
+                                      "Mallampati"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-8",
+                              "chip_text": "retrognathia noted",
+                              "order": 8,
+                              "search_terms": [
+                                      "retrognathia"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-9",
+                              "chip_text": "nasal septum deviated",
+                              "order": 9,
+                              "search_terms": [
+                                      "nasal"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-10",
+                              "chip_text": "tonsillar hypertrophy grade 2",
+                              "order": 10,
+                              "search_terms": [
+                                      "tonsillar"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-11",
+                              "chip_text": "BP 155/95 mmHg",
+                              "order": 11,
+                              "search_terms": [
+                                      "BP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-12",
+                              "chip_text": "SpO2 95% on RA",
+                              "order": 12,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-exam_findings-13",
+                              "chip_text": "HR 78 bpm regular",
+                              "order": 13,
+                              "search_terms": [
+                                      "HR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "red_flags": [
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-red_flags-1",
+                              "chip_text": "Epworth >15 with driving",
+                              "order": 1,
+                              "search_terms": [
+                                      "Epworth"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-red_flags-2",
+                              "chip_text": "SpO2 <90% awake",
+                              "order": 2,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-red_flags-3",
+                              "chip_text": "obesity hypoventilation: daytime hypercapnia",
+                              "order": 3,
+                              "search_terms": [
+                                      "obesity"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-red_flags-4",
+                              "chip_text": "uncontrolled hypertension with OSA",
+                              "order": 4,
+                              "search_terms": [
+                                      "uncontrolled"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-red_flags-5",
+                              "chip_text": "near-miss RTA due to sleepiness",
+                              "order": 5,
+                              "search_terms": [
+                                      "near-miss"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-red_flags-6",
+                              "chip_text": "cor pulmonale signs",
+                              "order": 6,
+                              "search_terms": [
+                                      "cor"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-red_flags-7",
+                              "chip_text": "nocturnal arrhythmia suspected",
+                              "order": 7,
+                              "search_terms": [
+                                      "nocturnal"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-red_flags-8",
+                              "chip_text": "central apneas on history (Cheyne-Stokes)",
+                              "order": 8,
+                              "search_terms": [
+                                      "central"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      }
+              ],
+              "investigations": [
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-investigations-1",
+                              "chip_text": "home sleep study: AHI 18/hr (moderate)",
+                              "order": 1,
+                              "search_terms": [
+                                      "home"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-investigations-2",
+                              "chip_text": "home sleep study: AHI 35/hr (severe)",
+                              "order": 2,
+                              "search_terms": [
+                                      "home"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-investigations-3",
+                              "chip_text": "home sleep study: AHI 8/hr (mild)",
+                              "order": 3,
+                              "search_terms": [
+                                      "home"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-investigations-4",
+                              "chip_text": "overnight oximetry: ODI 22",
+                              "order": 4,
+                              "search_terms": [
+                                      "overnight"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-investigations-5",
+                              "chip_text": "overnight oximetry: mean SpO2 91%",
+                              "order": 5,
+                              "search_terms": [
+                                      "overnight"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-investigations-6",
+                              "chip_text": "ABG: normal",
+                              "order": 6,
+                              "search_terms": [
+                                      "ABG:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-investigations-7",
+                              "chip_text": "ABG: pCO2 6.8 (hypercapnia)",
+                              "order": 7,
+                              "search_terms": [
+                                      "ABG:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-investigations-8",
+                              "chip_text": "TFTs: normal",
+                              "order": 8,
+                              "search_terms": [
+                                      "TFTs:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-investigations-9",
+                              "chip_text": "HbA1c 48 mmol/mol",
+                              "order": 9,
+                              "search_terms": [
+                                      "HbA1c"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-investigations-10",
+                              "chip_text": "ECG: LVH pattern",
+                              "order": 10,
+                              "search_terms": [
+                                      "ECG:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-investigations-11",
+                              "chip_text": "FBC: polycythaemia",
+                              "order": 11,
+                              "search_terms": [
+                                      "FBC:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "plan_phrases": [
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-1",
+                              "chip_text": "CPAP trial initiated",
+                              "order": 1,
+                              "search_terms": [
+                                      "CPAP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-2",
+                              "chip_text": "CPAP pressure 10 cmH2O",
+                              "order": 2,
+                              "search_terms": [
+                                      "CPAP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-3",
+                              "chip_text": "CPAP compliance review: 5.2 hrs/night",
+                              "order": 3,
+                              "search_terms": [
+                                      "CPAP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-4",
+                              "chip_text": "mandibular advancement device trial",
+                              "order": 4,
+                              "search_terms": [
+                                      "mandibular"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-5",
+                              "chip_text": "weight loss target 10% body weight",
+                              "order": 5,
+                              "search_terms": [
+                                      "weight"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-6",
+                              "chip_text": "sleep hygiene advice given",
+                              "order": 6,
+                              "search_terms": [
+                                      "sleep"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-7",
+                              "chip_text": "avoid alcohol 4h before bed",
+                              "order": 7,
+                              "search_terms": [
+                                      "avoid"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-8",
+                              "chip_text": "positional therapy: avoid supine",
+                              "order": 8,
+                              "search_terms": [
+                                      "positional"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-9",
+                              "chip_text": "DVLA notification advised (HGV/PSV)",
+                              "order": 9,
+                              "search_terms": [
+                                      "DVLA"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-10",
+                              "chip_text": "ENT referral for tonsillar hypertrophy",
+                              "order": 10,
+                              "search_terms": [
+                                      "ENT"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-11",
+                              "chip_text": "bariatric surgery referral if BMI >40",
+                              "order": 11,
+                              "search_terms": [
+                                      "bariatric"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-12",
+                              "chip_text": "repeat sleep study post-treatment",
+                              "order": 12,
+                              "search_terms": [
+                                      "repeat"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "follow_up": [
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-follow_up-1",
+                              "chip_text": "CPAP review 4 weeks",
+                              "order": 1,
+                              "search_terms": [
+                                      "CPAP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-follow_up-2",
+                              "chip_text": "CPAP compliance check 3 months",
+                              "order": 2,
+                              "search_terms": [
+                                      "CPAP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-follow_up-3",
+                              "chip_text": "annual sleep clinic review",
+                              "order": 3,
+                              "search_terms": [
+                                      "annual"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-follow_up-4",
+                              "chip_text": "urgent review if CPAP intolerance",
+                              "order": 4,
+                              "search_terms": [
+                                      "urgent"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-follow_up-5",
+                              "chip_text": "weight management review 3 months",
+                              "order": 5,
+                              "search_terms": [
+                                      "weight"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-sleep-apnea-symptoms-follow_up-6",
+                              "chip_text": "PRN",
+                              "order": 6,
+                              "search_terms": [
+                                      "PRN"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ]
       },
       "chief_complaint_aliases": [
         "sleep apnea",
@@ -74711,459 +76996,808 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 9,
-        "relevant_negatives": 4,
-        "exam_findings": 5,
-        "red_flags": 4,
-        "investigations": 3,
-        "plan_phrases": 4,
-        "follow_up": 5
+              "symptoms": 12,
+              "relevant_negatives": 8,
+              "exam_findings": 12,
+              "red_flags": 8,
+              "investigations": 12,
+              "plan_phrases": 12,
+              "follow_up": 6
       },
-      "total_chips": 34,
+      "total_chips": 70,
       "chips": {
-        "symptoms": [
-          {
-            "chip_id": "resp-hemoptysis-documentation-symptoms-1",
-            "chip_text": "hemoptysis",
-            "order": 1,
-            "search_terms": [
-              "hemoptysis",
-              "blood",
-              "coughing blood"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-symptoms-2",
-            "chip_text": "amount documented",
-            "order": 2,
-            "search_terms": [
-              "amount",
-              "volume",
-              "quantity"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-symptoms-3",
-            "chip_text": "color and context documented",
-            "order": 3,
-            "search_terms": [
-              "color",
-              "frank",
-              "streaked"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-symptoms-4",
-            "chip_text": "cough and sputum reviewed",
-            "order": 4,
-            "search_terms": [
-              "cough",
-              "sputum"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-symptoms-5",
-            "chip_text": "chest pain and dyspnea reviewed",
-            "order": 5,
-            "search_terms": [
-              "chest",
-              "pain",
-              "dyspnea"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-symptoms-6",
-            "chip_text": "fever, night sweats and weight loss reviewed",
-            "order": 6,
-            "search_terms": [
-              "fever",
-              "sweats",
-              "weight",
-              "TB"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-symptoms-7",
-            "chip_text": "smoking history reviewed",
-            "order": 7,
-            "search_terms": [
-              "smoking",
-              "cigarettes"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-symptoms-8",
-            "chip_text": "anticoagulant use reviewed if relevant",
-            "order": 8,
-            "search_terms": [
-              "anticoagulant",
-              "warfarin",
-              "DOAC"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-symptoms-9",
-            "chip_text": "prior episodes reviewed if applicable",
-            "order": 9,
-            "search_terms": [
-              "prior",
-              "previous",
-              "recurrent"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "relevant_negatives": [
-          {
-            "chip_id": "resp-hemoptysis-documentation-relevant_negatives-1",
-            "chip_text": "no massive bleeding reported if documented",
-            "order": 1,
-            "search_terms": [
-              "massive",
-              "large",
-              "volume"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-relevant_negatives-2",
-            "chip_text": "no severe breathlessness reported",
-            "order": 2,
-            "search_terms": [
-              "severe",
-              "breathlessness"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-relevant_negatives-3",
-            "chip_text": "no chest trauma reported",
-            "order": 3,
-            "search_terms": [
-              "trauma",
-              "injury"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-relevant_negatives-4",
-            "chip_text": "no TB symptoms reported if applicable",
-            "order": 4,
-            "search_terms": [
-              "TB",
-              "tuberculosis"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "exam_findings": [
-          {
-            "chip_id": "resp-hemoptysis-documentation-exam_findings-1",
-            "chip_text": "vitals documented if measured",
-            "order": 1,
-            "search_terms": [
-              "vitals",
-              "BP",
-              "pulse"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-exam_findings-2",
-            "chip_text": "chest auscultation documented if assessed",
-            "order": 2,
-            "search_terms": [
-              "auscultation",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-exam_findings-3",
-            "chip_text": "oxygen saturation documented if measured",
-            "order": 3,
-            "search_terms": [
-              "oxygen",
-              "SpO2"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-exam_findings-4",
-            "chip_text": "oropharynx documented if assessed",
-            "order": 4,
-            "search_terms": [
-              "oropharynx",
-              "throat"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-exam_findings-5",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 5,
-            "search_terms": [
-              "RR",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "red_flags": [
-          {
-            "chip_id": "resp-hemoptysis-documentation-red_flags-1",
-            "chip_text": "massive hemoptysis",
-            "order": 1,
-            "search_terms": [
-              "massive",
-              "large",
-              "volume"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-red_flags-2",
-            "chip_text": "constitutional symptoms with hemoptysis",
-            "order": 2,
-            "search_terms": [
-              "weight",
-              "fever",
-              "sweats"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-red_flags-3",
-            "chip_text": "known malignancy risk with new hemoptysis",
-            "order": 3,
-            "search_terms": [
-              "malignancy",
-              "smoker"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-red_flags-4",
-            "chip_text": "on anticoagulation with new hemoptysis",
-            "order": 4,
-            "search_terms": [
-              "anticoagulant",
-              "INR"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          }
-        ],
-        "investigations": [
-          {
-            "chip_id": "resp-hemoptysis-documentation-investigations-1",
-            "chip_text": "chest imaging reviewed if available",
-            "order": 1,
-            "search_terms": [
-              "CXR",
-              "CT",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-investigations-2",
-            "chip_text": "blood tests reviewed if ordered",
-            "order": 2,
-            "search_terms": [
-              "blood",
-              "labs",
-              "coagulation"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-investigations-3",
-            "chip_text": "sputum studies reviewed if ordered",
-            "order": 3,
-            "search_terms": [
-              "sputum",
-              "culture",
-              "AFB"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "plan_phrases": [
-          {
-            "chip_id": "resp-hemoptysis-documentation-plan_phrases-1",
-            "chip_text": "clinician-entered plan documented",
-            "order": 1,
-            "search_terms": [
-              "plan",
-              "management"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-plan_phrases-2",
-            "chip_text": "safety-netting documented if discussed",
-            "order": 2,
-            "search_terms": [
-              "safety",
-              "netting"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-plan_phrases-3",
-            "chip_text": "follow-up documented if clinician decided",
-            "order": 3,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-plan_phrases-4",
-            "chip_text": "referral documented if clinician decided",
-            "order": 4,
-            "search_terms": [
-              "referral",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "follow_up": [
-          {
-            "chip_id": "resp-hemoptysis-documentation-follow_up-1",
-            "chip_text": "2-4 weeks",
-            "order": 1,
-            "search_terms": [
-              "two",
-              "four",
-              "weeks"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-follow_up-2",
-            "chip_text": "4-6 weeks",
-            "order": 2,
-            "search_terms": [
-              "four",
-              "six",
-              "weeks"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-follow_up-3",
-            "chip_text": "sooner if worsening",
-            "order": 3,
-            "search_terms": [
-              "sooner",
-              "worsening"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-follow_up-4",
-            "chip_text": "PRN",
-            "order": 4,
-            "search_terms": [
-              "PRN",
-              "as needed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-hemoptysis-documentation-follow_up-5",
-            "chip_text": "sooner if bleeding recurs",
-            "order": 5,
-            "search_terms": [
-              "bleeding",
-              "recurrent"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ]
+              "symptoms": [
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-symptoms-1",
+                              "chip_text": "blood-streaked sputum",
+                              "order": 1,
+                              "search_terms": [
+                                      "blood-streaked"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-symptoms-2",
+                              "chip_text": "frank hemoptysis: teaspoon volume",
+                              "order": 2,
+                              "search_terms": [
+                                      "frank"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-symptoms-3",
+                              "chip_text": "hemoptysis: tablespoon volume",
+                              "order": 3,
+                              "search_terms": [
+                                      "hemoptysis:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-symptoms-4",
+                              "chip_text": "hemoptysis daily for 3 days",
+                              "order": 4,
+                              "search_terms": [
+                                      "hemoptysis"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-symptoms-5",
+                              "chip_text": "single episode hemoptysis",
+                              "order": 5,
+                              "search_terms": [
+                                      "single"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-symptoms-6",
+                              "chip_text": "cough with blood-tinged sputum",
+                              "order": 6,
+                              "search_terms": [
+                                      "cough"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-symptoms-7",
+                              "chip_text": "associated SOB",
+                              "order": 7,
+                              "search_terms": [
+                                      "associated"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-symptoms-8",
+                              "chip_text": "associated chest pain",
+                              "order": 8,
+                              "search_terms": [
+                                      "associated"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-symptoms-9",
+                              "chip_text": "associated weight loss",
+                              "order": 9,
+                              "search_terms": [
+                                      "associated"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-symptoms-10",
+                              "chip_text": "associated fever",
+                              "order": 10,
+                              "search_terms": [
+                                      "associated"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-symptoms-11",
+                              "chip_text": "smoker 30 pack-years",
+                              "order": 11,
+                              "search_terms": [
+                                      "smoker"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-symptoms-12",
+                              "chip_text": "recent LRTI",
+                              "order": 12,
+                              "search_terms": [
+                                      "recent"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "relevant_negatives": [
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-relevant_negatives-1",
+                              "chip_text": "no epistaxis (source not nasal)",
+                              "order": 1,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-relevant_negatives-2",
+                              "chip_text": "no haematemesis",
+                              "order": 2,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-relevant_negatives-3",
+                              "chip_text": "no anticoagulant use",
+                              "order": 3,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-relevant_negatives-4",
+                              "chip_text": "no bleeding from gums",
+                              "order": 4,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-relevant_negatives-5",
+                              "chip_text": "no bruising",
+                              "order": 5,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-relevant_negatives-6",
+                              "chip_text": "no TB contacts",
+                              "order": 6,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-relevant_negatives-7",
+                              "chip_text": "no recent travel",
+                              "order": 7,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-relevant_negatives-8",
+                              "chip_text": "no DVT symptoms",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "exam_findings": [
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-exam_findings-1",
+                              "chip_text": "SpO2 97% on RA",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-exam_findings-2",
+                              "chip_text": "SpO2 94% on RA",
+                              "order": 2,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-exam_findings-3",
+                              "chip_text": "RR 18/min",
+                              "order": 3,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-exam_findings-4",
+                              "chip_text": "chest: crackles right upper zone",
+                              "order": 4,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-exam_findings-5",
+                              "chip_text": "chest: clear bilaterally",
+                              "order": 5,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-exam_findings-6",
+                              "chip_text": "chest: bronchial breathing left apex",
+                              "order": 6,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-exam_findings-7",
+                              "chip_text": "no cervical lymphadenopathy",
+                              "order": 7,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-exam_findings-8",
+                              "chip_text": "no clubbing",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-exam_findings-9",
+                              "chip_text": "no pallor",
+                              "order": 9,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-exam_findings-10",
+                              "chip_text": "oropharynx: no bleeding source",
+                              "order": 10,
+                              "search_terms": [
+                                      "oropharynx:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-exam_findings-11",
+                              "chip_text": "HR 88 bpm regular",
+                              "order": 11,
+                              "search_terms": [
+                                      "HR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-exam_findings-12",
+                              "chip_text": "BP 135/82 mmHg",
+                              "order": 12,
+                              "search_terms": [
+                                      "BP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "red_flags": [
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-red_flags-1",
+                              "chip_text": "massive hemoptysis >200mL/24h",
+                              "order": 1,
+                              "search_terms": [
+                                      "massive"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-red_flags-2",
+                              "chip_text": "hemodynamic instability with hemoptysis",
+                              "order": 2,
+                              "search_terms": [
+                                      "hemodynamic"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-red_flags-3",
+                              "chip_text": "SpO2 <92% with hemoptysis",
+                              "order": 3,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-red_flags-4",
+                              "chip_text": "suspected lung malignancy",
+                              "order": 4,
+                              "search_terms": [
+                                      "suspected"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-red_flags-5",
+                              "chip_text": "new hemoptysis in smoker >40 years",
+                              "order": 5,
+                              "search_terms": [
+                                      "new"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-red_flags-6",
+                              "chip_text": "hemoptysis with weight loss",
+                              "order": 6,
+                              "search_terms": [
+                                      "hemoptysis"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-red_flags-7",
+                              "chip_text": "hemoptysis on anticoagulants",
+                              "order": 7,
+                              "search_terms": [
+                                      "hemoptysis"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-red_flags-8",
+                              "chip_text": "respiratory distress",
+                              "order": 8,
+                              "search_terms": [
+                                      "respiratory"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      }
+              ],
+              "investigations": [
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-investigations-1",
+                              "chip_text": "CXR: right upper lobe mass",
+                              "order": 1,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-investigations-2",
+                              "chip_text": "CXR: cavitating lesion",
+                              "order": 2,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-investigations-3",
+                              "chip_text": "CXR: normal",
+                              "order": 3,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-investigations-4",
+                              "chip_text": "CXR: apical fibrosis",
+                              "order": 4,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-investigations-5",
+                              "chip_text": "FBC: Hb 128 g/L",
+                              "order": 5,
+                              "search_terms": [
+                                      "FBC:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-investigations-6",
+                              "chip_text": "coagulation: INR 1.0",
+                              "order": 6,
+                              "search_terms": [
+                                      "coagulation:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-investigations-7",
+                              "chip_text": "sputum AFB: negative x3",
+                              "order": 7,
+                              "search_terms": [
+                                      "sputum"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-investigations-8",
+                              "chip_text": "sputum cytology: sent",
+                              "order": 8,
+                              "search_terms": [
+                                      "sputum"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-investigations-9",
+                              "chip_text": "CT thorax: 3cm spiculated mass RUL",
+                              "order": 9,
+                              "search_terms": [
+                                      "CT"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-investigations-10",
+                              "chip_text": "CT thorax: bronchiectasis",
+                              "order": 10,
+                              "search_terms": [
+                                      "CT"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-investigations-11",
+                              "chip_text": "renal function: normal",
+                              "order": 11,
+                              "search_terms": [
+                                      "renal"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-investigations-12",
+                              "chip_text": "CRP 45 mg/L",
+                              "order": 12,
+                              "search_terms": [
+                                      "CRP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "plan_phrases": [
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-plan_phrases-1",
+                              "chip_text": "urgent 2-week-wait lung cancer pathway",
+                              "order": 1,
+                              "search_terms": [
+                                      "urgent"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-plan_phrases-2",
+                              "chip_text": "CT thorax within 2 weeks",
+                              "order": 2,
+                              "search_terms": [
+                                      "CT"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-plan_phrases-3",
+                              "chip_text": "sputum AFB x3 if TB suspected",
+                              "order": 3,
+                              "search_terms": [
+                                      "sputum"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-plan_phrases-4",
+                              "chip_text": "bronchoscopy referral",
+                              "order": 4,
+                              "search_terms": [
+                                      "bronchoscopy"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-plan_phrases-5",
+                              "chip_text": "stop anticoagulant and discuss with haematology",
+                              "order": 5,
+                              "search_terms": [
+                                      "stop"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-plan_phrases-6",
+                              "chip_text": "tranexamic acid if ongoing",
+                              "order": 6,
+                              "search_terms": [
+                                      "tranexamic"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-plan_phrases-7",
+                              "chip_text": "admit if massive hemoptysis",
+                              "order": 7,
+                              "search_terms": [
+                                      "admit"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-plan_phrases-8",
+                              "chip_text": "interventional radiology if uncontrolled",
+                              "order": 8,
+                              "search_terms": [
+                                      "interventional"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-plan_phrases-9",
+                              "chip_text": "reassure if single episode post-LRTI",
+                              "order": 9,
+                              "search_terms": [
+                                      "reassure"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-plan_phrases-10",
+                              "chip_text": "smoking cessation urgent",
+                              "order": 10,
+                              "search_terms": [
+                                      "smoking"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-plan_phrases-11",
+                              "chip_text": "repeat CXR 6 weeks if initial normal",
+                              "order": 11,
+                              "search_terms": [
+                                      "repeat"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-plan_phrases-12",
+                              "chip_text": "check coagulation screen",
+                              "order": 12,
+                              "search_terms": [
+                                      "check"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "follow_up": [
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-follow_up-1",
+                              "chip_text": "urgent respiratory clinic 2 weeks",
+                              "order": 1,
+                              "search_terms": [
+                                      "urgent"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-follow_up-2",
+                              "chip_text": "review with CT result",
+                              "order": 2,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-follow_up-3",
+                              "chip_text": "review with sputum results",
+                              "order": 3,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-follow_up-4",
+                              "chip_text": "immediate ED if massive hemoptysis",
+                              "order": 4,
+                              "search_terms": [
+                                      "immediate"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-follow_up-5",
+                              "chip_text": "GP review 1 week",
+                              "order": 5,
+                              "search_terms": [
+                                      "GP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-hemoptysis-documentation-follow_up-6",
+                              "chip_text": "PRN",
+                              "order": 6,
+                              "search_terms": [
+                                      "PRN"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ]
       },
       "chief_complaint_aliases": [
         "hemoptysis",
@@ -75208,443 +77842,797 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 11,
-        "relevant_negatives": 3,
-        "exam_findings": 5,
-        "red_flags": 3,
-        "investigations": 2,
-        "plan_phrases": 5,
-        "follow_up": 4
+              "symptoms": 12,
+              "relevant_negatives": 8,
+              "exam_findings": 12,
+              "red_flags": 8,
+              "investigations": 11,
+              "plan_phrases": 12,
+              "follow_up": 6
       },
-      "total_chips": 33,
+      "total_chips": 69,
       "chips": {
-        "symptoms": [
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-1",
-            "chip_text": "smoking history documented",
-            "order": 1,
-            "search_terms": [
-              "smoking",
-              "tobacco",
-              "history"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-2",
-            "chip_text": "cigarettes per day documented",
-            "order": 2,
-            "search_terms": [
-              "cigarettes",
-              "per",
-              "day",
-              "quantity"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-3",
-            "chip_text": "years smoked documented",
-            "order": 3,
-            "search_terms": [
-              "years",
-              "duration"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-4",
-            "chip_text": "pack years documented if calculated",
-            "order": 4,
-            "search_terms": [
-              "pack",
-              "years"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-5",
-            "chip_text": "ex-smoker history documented if relevant",
-            "order": 5,
-            "search_terms": [
-              "ex-smoker",
-              "former",
-              "quit"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-6",
-            "chip_text": "passive smoke exposure reviewed",
-            "order": 6,
-            "search_terms": [
-              "passive",
-              "secondhand"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-7",
-            "chip_text": "occupational exposure reviewed if relevant",
-            "order": 7,
-            "search_terms": [
-              "occupational",
-              "work",
-              "exposure"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-8",
-            "chip_text": "respiratory symptoms reviewed",
-            "order": 8,
-            "search_terms": [
-              "cough",
-              "wheeze",
-              "SOB"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-9",
-            "chip_text": "previous quit attempts reviewed if applicable",
-            "order": 9,
-            "search_terms": [
-              "quit",
-              "cessation",
-              "attempts"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-10",
-            "chip_text": "motivation to quit reviewed if current smoker",
-            "order": 10,
-            "search_terms": [
-              "motivation",
-              "ready",
-              "change"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-symptoms-11",
-            "chip_text": "barriers to quitting discussed if applicable",
-            "order": 11,
-            "search_terms": [
-              "barriers",
-              "difficulty"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "relevant_negatives": [
-          {
-            "chip_id": "resp-smoking-history-note-relevant_negatives-1",
-            "chip_text": "no hemoptysis reported if applicable",
-            "order": 1,
-            "search_terms": [
-              "hemoptysis",
-              "blood"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-relevant_negatives-2",
-            "chip_text": "no unexplained weight loss reported if applicable",
-            "order": 2,
-            "search_terms": [
-              "weight",
-              "loss"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-relevant_negatives-3",
-            "chip_text": "no respiratory symptoms reported if applicable",
-            "order": 3,
-            "search_terms": [
-              "cough",
-              "wheeze"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "exam_findings": [
-          {
-            "chip_id": "resp-smoking-history-note-exam_findings-1",
-            "chip_text": "chest exam documented if assessed",
-            "order": 1,
-            "search_terms": [
-              "chest",
-              "auscultation"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-exam_findings-2",
-            "chip_text": "oxygen saturation documented if measured",
-            "order": 2,
-            "search_terms": [
-              "oxygen",
-              "SpO2"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-exam_findings-3",
-            "chip_text": "oral examination documented if assessed",
-            "order": 3,
-            "search_terms": [
-              "oral",
-              "mouth"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-exam_findings-4",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 4,
-            "search_terms": [
-              "RR",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-exam_findings-5",
-            "chip_text": "blood pressure documented if measured",
-            "order": 5,
-            "search_terms": [
-              "BP",
-              "blood",
-              "pressure"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "red_flags": [
-          {
-            "chip_id": "resp-smoking-history-note-red_flags-1",
-            "chip_text": "new cough with smoking history",
-            "order": 1,
-            "search_terms": [
-              "new",
-              "cough",
-              "smoker"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-red_flags-2",
-            "chip_text": "hemoptysis in smoker",
-            "order": 2,
-            "search_terms": [
-              "hemoptysis",
-              "smoker"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-red_flags-3",
-            "chip_text": "unexplained weight loss in smoker",
-            "order": 3,
-            "search_terms": [
-              "weight",
-              "loss"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          }
-        ],
-        "investigations": [
-          {
-            "chip_id": "resp-smoking-history-note-investigations-1",
-            "chip_text": "chest imaging reviewed if available",
-            "order": 1,
-            "search_terms": [
-              "CXR",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-investigations-2",
-            "chip_text": "spirometry reviewed if performed",
-            "order": 2,
-            "search_terms": [
-              "spirometry",
-              "PFT"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "plan_phrases": [
-          {
-            "chip_id": "resp-smoking-history-note-plan_phrases-1",
-            "chip_text": "clinician-entered plan documented",
-            "order": 1,
-            "search_terms": [
-              "plan",
-              "management"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-plan_phrases-2",
-            "chip_text": "smoking cessation advice documented if discussed",
-            "order": 2,
-            "search_terms": [
-              "cessation",
-              "advice"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-plan_phrases-3",
-            "chip_text": "cessation support referral documented if clinician decided",
-            "order": 3,
-            "search_terms": [
-              "referral",
-              "cessation",
-              "stop smoking"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-plan_phrases-4",
-            "chip_text": "follow-up documented if arranged",
-            "order": 4,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-plan_phrases-5",
-            "chip_text": "NRT or pharmacotherapy plan documented if clinician decided",
-            "order": 5,
-            "search_terms": [
-              "NRT",
-              "patch",
-              "varenicline"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "follow_up": [
-          {
-            "chip_id": "resp-smoking-history-note-follow_up-1",
-            "chip_text": "2-4 weeks",
-            "order": 1,
-            "search_terms": [
-              "two",
-              "four",
-              "weeks"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-follow_up-2",
-            "chip_text": "1-3 months",
-            "order": 2,
-            "search_terms": [
-              "one",
-              "three",
-              "months"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-follow_up-3",
-            "chip_text": "sooner if needed",
-            "order": 3,
-            "search_terms": [
-              "sooner",
-              "needed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-smoking-history-note-follow_up-4",
-            "chip_text": "PRN",
-            "order": 4,
-            "search_terms": [
-              "PRN",
-              "as needed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ]
+              "symptoms": [
+                      {
+                              "chip_id": "resp-smoking-history-note-symptoms-1",
+                              "chip_text": "current smoker 20/day",
+                              "order": 1,
+                              "search_terms": [
+                                      "current"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-symptoms-2",
+                              "chip_text": "current smoker 10/day",
+                              "order": 2,
+                              "search_terms": [
+                                      "current"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-symptoms-3",
+                              "chip_text": "ex-smoker: quit 2 years ago",
+                              "order": 3,
+                              "search_terms": [
+                                      "ex-smoker:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-symptoms-4",
+                              "chip_text": "ex-smoker: quit 6 months ago",
+                              "order": 4,
+                              "search_terms": [
+                                      "ex-smoker:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-symptoms-5",
+                              "chip_text": "30 pack-year history",
+                              "order": 5,
+                              "search_terms": [
+                                      "30"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-symptoms-6",
+                              "chip_text": "15 pack-year history",
+                              "order": 6,
+                              "search_terms": [
+                                      "15"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-symptoms-7",
+                              "chip_text": "vaping: 6 months",
+                              "order": 7,
+                              "search_terms": [
+                                      "vaping:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-symptoms-8",
+                              "chip_text": "shisha use weekly",
+                              "order": 8,
+                              "search_terms": [
+                                      "shisha"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-symptoms-9",
+                              "chip_text": "passive smoke exposure",
+                              "order": 9,
+                              "search_terms": [
+                                      "passive"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-symptoms-10",
+                              "chip_text": "cough: smokers cough daily",
+                              "order": 10,
+                              "search_terms": [
+                                      "cough:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-symptoms-11",
+                              "chip_text": "SOB on exertion new",
+                              "order": 11,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-symptoms-12",
+                              "chip_text": "reduced exercise tolerance",
+                              "order": 12,
+                              "search_terms": [
+                                      "reduced"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "relevant_negatives": [
+                      {
+                              "chip_id": "resp-smoking-history-note-relevant_negatives-1",
+                              "chip_text": "no hemoptysis",
+                              "order": 1,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-relevant_negatives-2",
+                              "chip_text": "no weight loss",
+                              "order": 2,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-relevant_negatives-3",
+                              "chip_text": "no chest pain",
+                              "order": 3,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-relevant_negatives-4",
+                              "chip_text": "no night sweats",
+                              "order": 4,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-relevant_negatives-5",
+                              "chip_text": "no voice change",
+                              "order": 5,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-relevant_negatives-6",
+                              "chip_text": "no dysphagia",
+                              "order": 6,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-relevant_negatives-7",
+                              "chip_text": "no previous quit attempts",
+                              "order": 7,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-relevant_negatives-8",
+                              "chip_text": "no COPD diagnosis",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "exam_findings": [
+                      {
+                              "chip_id": "resp-smoking-history-note-exam_findings-1",
+                              "chip_text": "SpO2 97% on RA",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-exam_findings-2",
+                              "chip_text": "SpO2 95% on RA",
+                              "order": 2,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-exam_findings-3",
+                              "chip_text": "RR 16/min",
+                              "order": 3,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-exam_findings-4",
+                              "chip_text": "chest: clear bilaterally",
+                              "order": 4,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-exam_findings-5",
+                              "chip_text": "chest: scattered wheeze",
+                              "order": 5,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-exam_findings-6",
+                              "chip_text": "tar staining fingers",
+                              "order": 6,
+                              "search_terms": [
+                                      "tar"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-exam_findings-7",
+                              "chip_text": "no clubbing",
+                              "order": 7,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-exam_findings-8",
+                              "chip_text": "no cervical lymphadenopathy",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-exam_findings-9",
+                              "chip_text": "BMI 28",
+                              "order": 9,
+                              "search_terms": [
+                                      "BMI"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-exam_findings-10",
+                              "chip_text": "BP 142/88 mmHg",
+                              "order": 10,
+                              "search_terms": [
+                                      "BP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-exam_findings-11",
+                              "chip_text": "HR 82 bpm regular",
+                              "order": 11,
+                              "search_terms": [
+                                      "HR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-exam_findings-12",
+                              "chip_text": "oral: leukoplakia noted",
+                              "order": 12,
+                              "search_terms": [
+                                      "oral:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "red_flags": [
+                      {
+                              "chip_id": "resp-smoking-history-note-red_flags-1",
+                              "chip_text": "hemoptysis in smoker >40 years",
+                              "order": 1,
+                              "search_terms": [
+                                      "hemoptysis"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-red_flags-2",
+                              "chip_text": "unexplained weight loss",
+                              "order": 2,
+                              "search_terms": [
+                                      "unexplained"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-red_flags-3",
+                              "chip_text": "new persistent hoarseness",
+                              "order": 3,
+                              "search_terms": [
+                                      "new"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-red_flags-4",
+                              "chip_text": "new neck lump",
+                              "order": 4,
+                              "search_terms": [
+                                      "new"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-red_flags-5",
+                              "chip_text": "CXR abnormality",
+                              "order": 5,
+                              "search_terms": [
+                                      "CXR"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-red_flags-6",
+                              "chip_text": "progressive SOB with smoking history",
+                              "order": 6,
+                              "search_terms": [
+                                      "progressive"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-red_flags-7",
+                              "chip_text": "recurrent chest infections",
+                              "order": 7,
+                              "search_terms": [
+                                      "recurrent"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-red_flags-8",
+                              "chip_text": "Pancoast syndrome symptoms",
+                              "order": 8,
+                              "search_terms": [
+                                      "Pancoast"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      }
+              ],
+              "investigations": [
+                      {
+                              "chip_id": "resp-smoking-history-note-investigations-1",
+                              "chip_text": "spirometry: FEV1 78% predicted",
+                              "order": 1,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-investigations-2",
+                              "chip_text": "spirometry: FEV1 55% predicted",
+                              "order": 2,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-investigations-3",
+                              "chip_text": "spirometry: obstructive pattern",
+                              "order": 3,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-investigations-4",
+                              "chip_text": "CXR: normal",
+                              "order": 4,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-investigations-5",
+                              "chip_text": "CXR: hyperinflated",
+                              "order": 5,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-investigations-6",
+                              "chip_text": "CXR: apical mass",
+                              "order": 6,
+                              "search_terms": [
+                                      "CXR:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-investigations-7",
+                              "chip_text": "CO breath test: 18 ppm",
+                              "order": 7,
+                              "search_terms": [
+                                      "CO"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-investigations-8",
+                              "chip_text": "CO breath test: 32 ppm",
+                              "order": 8,
+                              "search_terms": [
+                                      "CO"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-investigations-9",
+                              "chip_text": "cotinine level: positive",
+                              "order": 9,
+                              "search_terms": [
+                                      "cotinine"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-investigations-10",
+                              "chip_text": "lipid profile: elevated",
+                              "order": 10,
+                              "search_terms": [
+                                      "lipid"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-investigations-11",
+                              "chip_text": "HbA1c: 42 mmol/mol",
+                              "order": 11,
+                              "search_terms": [
+                                      "HbA1c:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "plan_phrases": [
+                      {
+                              "chip_id": "resp-smoking-history-note-plan_phrases-1",
+                              "chip_text": "NRT patch + inhalator started",
+                              "order": 1,
+                              "search_terms": [
+                                      "NRT"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-plan_phrases-2",
+                              "chip_text": "varenicline (Champix) prescribed",
+                              "order": 2,
+                              "search_terms": [
+                                      "varenicline"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-plan_phrases-3",
+                              "chip_text": "bupropion considered",
+                              "order": 3,
+                              "search_terms": [
+                                      "bupropion"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-plan_phrases-4",
+                              "chip_text": "quit date set: 2 weeks",
+                              "order": 4,
+                              "search_terms": [
+                                      "quit"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-plan_phrases-5",
+                              "chip_text": "referred to stop smoking service",
+                              "order": 5,
+                              "search_terms": [
+                                      "referred"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-plan_phrases-6",
+                              "chip_text": "motivational interviewing done",
+                              "order": 6,
+                              "search_terms": [
+                                      "motivational"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-plan_phrases-7",
+                              "chip_text": "harm reduction: cut down plan",
+                              "order": 7,
+                              "search_terms": [
+                                      "harm"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-plan_phrases-8",
+                              "chip_text": "e-cigarette switch discussed",
+                              "order": 8,
+                              "search_terms": [
+                                      "e-cigarette"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-plan_phrases-9",
+                              "chip_text": "COPD screening spirometry arranged",
+                              "order": 9,
+                              "search_terms": [
+                                      "COPD"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-plan_phrases-10",
+                              "chip_text": "lung cancer screening discussed if eligible",
+                              "order": 10,
+                              "search_terms": [
+                                      "lung"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-plan_phrases-11",
+                              "chip_text": "CVD risk assessment done",
+                              "order": 11,
+                              "search_terms": [
+                                      "CVD"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-plan_phrases-12",
+                              "chip_text": "dental review advised",
+                              "order": 12,
+                              "search_terms": [
+                                      "dental"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "follow_up": [
+                      {
+                              "chip_id": "resp-smoking-history-note-follow_up-1",
+                              "chip_text": "quit date follow-up 1 week",
+                              "order": 1,
+                              "search_terms": [
+                                      "quit"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-follow_up-2",
+                              "chip_text": "NRT review 2 weeks",
+                              "order": 2,
+                              "search_terms": [
+                                      "NRT"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-follow_up-3",
+                              "chip_text": "review 4 weeks post-quit",
+                              "order": 3,
+                              "search_terms": [
+                                      "review"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-follow_up-4",
+                              "chip_text": "relapse support 3 months",
+                              "order": 4,
+                              "search_terms": [
+                                      "relapse"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-follow_up-5",
+                              "chip_text": "annual lung health check",
+                              "order": 5,
+                              "search_terms": [
+                                      "annual"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-smoking-history-note-follow_up-6",
+                              "chip_text": "PRN",
+                              "order": 6,
+                              "search_terms": [
+                                      "PRN"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ]
       },
       "chief_complaint_aliases": [
         "smoking history",
@@ -75691,415 +78679,819 @@
         "source": null
       },
       "chip_counts": {
-        "symptoms": 9,
-        "relevant_negatives": 2,
-        "exam_findings": 4,
-        "red_flags": 3,
-        "investigations": 3,
-        "plan_phrases": 6,
-        "follow_up": 4
+              "symptoms": 12,
+              "relevant_negatives": 8,
+              "exam_findings": 12,
+              "red_flags": 8,
+              "investigations": 13,
+              "plan_phrases": 12,
+              "follow_up": 6
       },
-      "total_chips": 31,
+      "total_chips": 71,
       "chips": {
-        "symptoms": [
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-1",
-            "chip_text": "pulmonary function review",
-            "order": 1,
-            "search_terms": [
-              "PFT",
-              "pulmonary",
-              "function"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-2",
-            "chip_text": "spirometry reviewed",
-            "order": 2,
-            "search_terms": [
-              "spirometry",
-              "FEV1",
-              "FVC"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-3",
-            "chip_text": "FEV1 and FVC context reviewed if documented",
-            "order": 3,
-            "search_terms": [
-              "FEV1",
-              "FVC",
-              "ratio"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-4",
-            "chip_text": "symptom correlation documented",
-            "order": 4,
-            "search_terms": [
-              "symptom",
-              "correlation"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-5",
-            "chip_text": "inhaler and medication use reviewed if relevant",
-            "order": 5,
-            "search_terms": [
-              "inhaler",
-              "medication"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-6",
-            "chip_text": "smoking history reviewed",
-            "order": 6,
-            "search_terms": [
-              "smoking",
-              "cigarettes"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-7",
-            "chip_text": "previous PFT comparison documented if available",
-            "order": 7,
-            "search_terms": [
-              "previous",
-              "prior",
-              "trend"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-8",
-            "chip_text": "bronchodilator response reviewed if performed",
-            "order": 8,
-            "search_terms": [
-              "bronchodilator",
-              "reversibility"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-symptoms-9",
-            "chip_text": "DLCO reviewed if available",
-            "order": 9,
-            "search_terms": [
-              "DLCO",
-              "diffusion"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "relevant_negatives": [
-          {
-            "chip_id": "resp-pulmonary-function-review-relevant_negatives-1",
-            "chip_text": "no acute respiratory distress reported",
-            "order": 1,
-            "search_terms": [
-              "acute",
-              "distress"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-relevant_negatives-2",
-            "chip_text": "no significant symptom change reported if applicable",
-            "order": 2,
-            "search_terms": [
-              "symptom",
-              "change"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "exam_findings": [
-          {
-            "chip_id": "resp-pulmonary-function-review-exam_findings-1",
-            "chip_text": "oxygen saturation documented if measured",
-            "order": 1,
-            "search_terms": [
-              "oxygen",
-              "SpO2"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-exam_findings-2",
-            "chip_text": "chest auscultation documented if assessed",
-            "order": 2,
-            "search_terms": [
-              "auscultation",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-exam_findings-3",
-            "chip_text": "clinical correlation documented",
-            "order": 3,
-            "search_terms": [
-              "clinical",
-              "correlation"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-exam_findings-4",
-            "chip_text": "respiratory rate documented if measured",
-            "order": 4,
-            "search_terms": [
-              "RR",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "red_flags": [
-          {
-            "chip_id": "resp-pulmonary-function-review-red_flags-1",
-            "chip_text": "significant decline in FEV1",
-            "order": 1,
-            "search_terms": [
-              "decline",
-              "FEV1"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-red_flags-2",
-            "chip_text": "worsening symptoms with declining PFT",
-            "order": 2,
-            "search_terms": [
-              "worsening",
-              "symptoms"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-red_flags-3",
-            "chip_text": "new obstruction or restriction pattern",
-            "order": 3,
-            "search_terms": [
-              "new",
-              "obstruction",
-              "restriction"
-            ],
-            "tags": [
-              "respiratory",
-              "high_safety"
-            ]
-          }
-        ],
-        "investigations": [
-          {
-            "chip_id": "resp-pulmonary-function-review-investigations-1",
-            "chip_text": "previous PFT reports reviewed if available",
-            "order": 1,
-            "search_terms": [
-              "previous",
-              "PFT"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-investigations-2",
-            "chip_text": "chest imaging reviewed if available",
-            "order": 2,
-            "search_terms": [
-              "CXR",
-              "CT",
-              "chest"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-investigations-3",
-            "chip_text": "blood gas reviewed if performed",
-            "order": 3,
-            "search_terms": [
-              "blood",
-              "gas",
-              "ABG"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "plan_phrases": [
-          {
-            "chip_id": "resp-pulmonary-function-review-plan_phrases-1",
-            "chip_text": "clinician-entered plan documented",
-            "order": 1,
-            "search_terms": [
-              "plan",
-              "management"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-plan_phrases-2",
-            "chip_text": "medication plan documented if clinician decided",
-            "order": 2,
-            "search_terms": [
-              "medication",
-              "inhaler"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-plan_phrases-3",
-            "chip_text": "referral documented if clinician decided",
-            "order": 3,
-            "search_terms": [
-              "referral",
-              "respiratory"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-plan_phrases-4",
-            "chip_text": "PFT follow-up interval documented if clinician decided",
-            "order": 4,
-            "search_terms": [
-              "PFT",
-              "interval",
-              "follow"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-plan_phrases-5",
-            "chip_text": "follow-up documented if arranged",
-            "order": 5,
-            "search_terms": [
-              "follow",
-              "up"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-plan_phrases-6",
-            "chip_text": "spirometry monitoring plan documented if clinician decided",
-            "order": 6,
-            "search_terms": [
-              "spirometry",
-              "monitor"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ],
-        "follow_up": [
-          {
-            "chip_id": "resp-pulmonary-function-review-follow_up-1",
-            "chip_text": "3-6 months",
-            "order": 1,
-            "search_terms": [
-              "three",
-              "six",
-              "months"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-follow_up-2",
-            "chip_text": "6-12 months",
-            "order": 2,
-            "search_terms": [
-              "six",
-              "twelve",
-              "months"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-follow_up-3",
-            "chip_text": "sooner if symptomatic change",
-            "order": 3,
-            "search_terms": [
-              "sooner",
-              "change"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          },
-          {
-            "chip_id": "resp-pulmonary-function-review-follow_up-4",
-            "chip_text": "PRN",
-            "order": 4,
-            "search_terms": [
-              "PRN",
-              "as needed"
-            ],
-            "tags": [
-              "respiratory"
-            ]
-          }
-        ]
+              "symptoms": [
+                      {
+                              "chip_id": "resp-pulmonary-function-review-symptoms-1",
+                              "chip_text": "progressive SOB over months",
+                              "order": 1,
+                              "search_terms": [
+                                      "progressive"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-symptoms-2",
+                              "chip_text": "dry cough persistent",
+                              "order": 2,
+                              "search_terms": [
+                                      "dry"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-symptoms-3",
+                              "chip_text": "reduced exercise tolerance",
+                              "order": 3,
+                              "search_terms": [
+                                      "reduced"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-symptoms-4",
+                              "chip_text": "desaturation on exertion",
+                              "order": 4,
+                              "search_terms": [
+                                      "desaturation"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-symptoms-5",
+                              "chip_text": "occupational dust exposure",
+                              "order": 5,
+                              "search_terms": [
+                                      "occupational"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-symptoms-6",
+                              "chip_text": "asbestos exposure history",
+                              "order": 6,
+                              "search_terms": [
+                                      "asbestos"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-symptoms-7",
+                              "chip_text": "connective tissue disease known",
+                              "order": 7,
+                              "search_terms": [
+                                      "connective"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-symptoms-8",
+                              "chip_text": "clubbing noted by patient",
+                              "order": 8,
+                              "search_terms": [
+                                      "clubbing"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-symptoms-9",
+                              "chip_text": "fatigue and weight loss",
+                              "order": 9,
+                              "search_terms": [
+                                      "fatigue"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-symptoms-10",
+                              "chip_text": "fine inspiratory crackles heard previously",
+                              "order": 10,
+                              "search_terms": [
+                                      "fine"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-symptoms-11",
+                              "chip_text": "home oxygen use",
+                              "order": 11,
+                              "search_terms": [
+                                      "home"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-symptoms-12",
+                              "chip_text": "SOB limiting ADLs",
+                              "order": 12,
+                              "search_terms": [
+                                      "SOB"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "relevant_negatives": [
+                      {
+                              "chip_id": "resp-pulmonary-function-review-relevant_negatives-1",
+                              "chip_text": "no hemoptysis",
+                              "order": 1,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-relevant_negatives-2",
+                              "chip_text": "no chest pain",
+                              "order": 2,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-relevant_negatives-3",
+                              "chip_text": "no orthopnea",
+                              "order": 3,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-relevant_negatives-4",
+                              "chip_text": "no fever",
+                              "order": 4,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-relevant_negatives-5",
+                              "chip_text": "no sputum production",
+                              "order": 5,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-relevant_negatives-6",
+                              "chip_text": "no wheeze",
+                              "order": 6,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-relevant_negatives-7",
+                              "chip_text": "no leg swelling",
+                              "order": 7,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-relevant_negatives-8",
+                              "chip_text": "no smoking history",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "exam_findings": [
+                      {
+                              "chip_id": "resp-pulmonary-function-review-exam_findings-1",
+                              "chip_text": "SpO2 95% on RA",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-exam_findings-2",
+                              "chip_text": "SpO2 91% on RA",
+                              "order": 2,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-exam_findings-3",
+                              "chip_text": "SpO2 88% on exertion",
+                              "order": 3,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-exam_findings-4",
+                              "chip_text": "RR 20/min",
+                              "order": 4,
+                              "search_terms": [
+                                      "RR"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-exam_findings-5",
+                              "chip_text": "chest: fine bibasal crackles (velcro)",
+                              "order": 5,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-exam_findings-6",
+                              "chip_text": "chest: clear bilaterally",
+                              "order": 6,
+                              "search_terms": [
+                                      "chest:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-exam_findings-7",
+                              "chip_text": "clubbing present",
+                              "order": 7,
+                              "search_terms": [
+                                      "clubbing"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-exam_findings-8",
+                              "chip_text": "no clubbing",
+                              "order": 8,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-exam_findings-9",
+                              "chip_text": "cyanosis absent",
+                              "order": 9,
+                              "search_terms": [
+                                      "cyanosis"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-exam_findings-10",
+                              "chip_text": "BMI 26",
+                              "order": 10,
+                              "search_terms": [
+                                      "BMI"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-exam_findings-11",
+                              "chip_text": "no peripheral oedema",
+                              "order": 11,
+                              "search_terms": [
+                                      "no"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-exam_findings-12",
+                              "chip_text": "JVP normal",
+                              "order": 12,
+                              "search_terms": [
+                                      "JVP"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "red_flags": [
+                      {
+                              "chip_id": "resp-pulmonary-function-review-red_flags-1",
+                              "chip_text": "SpO2 <88% on exertion",
+                              "order": 1,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-red_flags-2",
+                              "chip_text": "rapid FVC decline >10% in 6 months",
+                              "order": 2,
+                              "search_terms": [
+                                      "rapid"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-red_flags-3",
+                              "chip_text": "new pulmonary hypertension signs",
+                              "order": 3,
+                              "search_terms": [
+                                      "new"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-red_flags-4",
+                              "chip_text": "acute exacerbation of ILD",
+                              "order": 4,
+                              "search_terms": [
+                                      "acute"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-red_flags-5",
+                              "chip_text": "SpO2 <92% at rest on RA",
+                              "order": 5,
+                              "search_terms": [
+                                      "SpO2"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-red_flags-6",
+                              "chip_text": "cor pulmonale signs",
+                              "order": 6,
+                              "search_terms": [
+                                      "cor"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-red_flags-7",
+                              "chip_text": "weight loss >10% in 6 months",
+                              "order": 7,
+                              "search_terms": [
+                                      "weight"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-red_flags-8",
+                              "chip_text": "type 2 respiratory failure",
+                              "order": 8,
+                              "search_terms": [
+                                      "type"
+                              ],
+                              "tags": [
+                                      "respiratory",
+                                      "high_safety"
+                              ]
+                      }
+              ],
+              "investigations": [
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-1",
+                              "chip_text": "spirometry: FVC 68% predicted",
+                              "order": 1,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-2",
+                              "chip_text": "spirometry: FVC 52% predicted",
+                              "order": 2,
+                              "search_terms": [
+                                      "spirometry:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-3",
+                              "chip_text": "FEV1/FVC ratio 0.82 (preserved)",
+                              "order": 3,
+                              "search_terms": [
+                                      "FEV1/FVC"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-4",
+                              "chip_text": "TLCO 55% predicted",
+                              "order": 4,
+                              "search_terms": [
+                                      "TLCO"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-5",
+                              "chip_text": "TLCO 38% predicted",
+                              "order": 5,
+                              "search_terms": [
+                                      "TLCO"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-6",
+                              "chip_text": "HRCT: UIP pattern",
+                              "order": 6,
+                              "search_terms": [
+                                      "HRCT:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-7",
+                              "chip_text": "HRCT: NSIP pattern",
+                              "order": 7,
+                              "search_terms": [
+                                      "HRCT:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-8",
+                              "chip_text": "HRCT: ground glass opacities",
+                              "order": 8,
+                              "search_terms": [
+                                      "HRCT:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-9",
+                              "chip_text": "HRCT: honeycombing basal",
+                              "order": 9,
+                              "search_terms": [
+                                      "HRCT:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-10",
+                              "chip_text": "6MWT: 320m with desaturation to 85%",
+                              "order": 10,
+                              "search_terms": [
+                                      "6MWT:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-11",
+                              "chip_text": "ABG: pO2 9.2 kPa",
+                              "order": 11,
+                              "search_terms": [
+                                      "ABG:"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-12",
+                              "chip_text": "ANA positive",
+                              "order": 12,
+                              "search_terms": [
+                                      "ANA"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-investigations-13",
+                              "chip_text": "rheumatoid factor elevated",
+                              "order": 13,
+                              "search_terms": [
+                                      "rheumatoid"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "plan_phrases": [
+                      {
+                              "chip_id": "resp-pulmonary-function-review-plan_phrases-1",
+                              "chip_text": "refer ILD MDT",
+                              "order": 1,
+                              "search_terms": [
+                                      "refer"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-plan_phrases-2",
+                              "chip_text": "antifibrotic therapy discussion",
+                              "order": 2,
+                              "search_terms": [
+                                      "antifibrotic"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-plan_phrases-3",
+                              "chip_text": "home oxygen assessment",
+                              "order": 3,
+                              "search_terms": [
+                                      "home"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-plan_phrases-4",
+                              "chip_text": "pulmonary rehab referral",
+                              "order": 4,
+                              "search_terms": [
+                                      "pulmonary"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-plan_phrases-5",
+                              "chip_text": "repeat PFTs 3 months",
+                              "order": 5,
+                              "search_terms": [
+                                      "repeat"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-plan_phrases-6",
+                              "chip_text": "immunosuppression if CTD-ILD",
+                              "order": 6,
+                              "search_terms": [
+                                      "immunosuppression"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-plan_phrases-7",
+                              "chip_text": "palliative care referral if advanced",
+                              "order": 7,
+                              "search_terms": [
+                                      "palliative"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-plan_phrases-8",
+                              "chip_text": "lung transplant assessment if eligible",
+                              "order": 8,
+                              "search_terms": [
+                                      "lung"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-plan_phrases-9",
+                              "chip_text": "pneumococcal + flu vaccine",
+                              "order": 9,
+                              "search_terms": [
+                                      "pneumococcal"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-plan_phrases-10",
+                              "chip_text": "avoid further occupational exposure",
+                              "order": 10,
+                              "search_terms": [
+                                      "avoid"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-plan_phrases-11",
+                              "chip_text": "ambulatory oxygen trial",
+                              "order": 11,
+                              "search_terms": [
+                                      "ambulatory"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-plan_phrases-12",
+                              "chip_text": "advance care planning discussion",
+                              "order": 12,
+                              "search_terms": [
+                                      "advance"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ],
+              "follow_up": [
+                      {
+                              "chip_id": "resp-pulmonary-function-review-follow_up-1",
+                              "chip_text": "PFT review 3 months",
+                              "order": 1,
+                              "search_terms": [
+                                      "PFT"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-follow_up-2",
+                              "chip_text": "ILD clinic 6 weeks",
+                              "order": 2,
+                              "search_terms": [
+                                      "ILD"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-follow_up-3",
+                              "chip_text": "urgent review if acute deterioration",
+                              "order": 3,
+                              "search_terms": [
+                                      "urgent"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-follow_up-4",
+                              "chip_text": "annual CT if stable",
+                              "order": 4,
+                              "search_terms": [
+                                      "annual"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-follow_up-5",
+                              "chip_text": "MDT outcome review 4 weeks",
+                              "order": 5,
+                              "search_terms": [
+                                      "MDT"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      },
+                      {
+                              "chip_id": "resp-pulmonary-function-review-follow_up-6",
+                              "chip_text": "PRN",
+                              "order": 6,
+                              "search_terms": [
+                                      "PRN"
+                              ],
+                              "tags": [
+                                      "respiratory"
+                              ]
+                      }
+              ]
       },
       "chief_complaint_aliases": [
         "PFT review",
@@ -156204,4618 +159596,8010 @@
       ]
     },
     "resp-asthma-followup": {
-      "symptoms": [
-        {
-          "chip_id": "resp-asthma-followup-symptoms-1",
-          "chip_text": "asthma follow-up",
-          "order": 1,
-          "search_terms": [
-            "asthma",
-            "followup"
+          "symptoms": [
+                {
+                      "chip_id": "resp-asthma-followup-symptoms-1",
+                      "chip_text": "dry cough worse at night",
+                      "order": 1,
+                      "search_terms": [
+                            "dry"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-symptoms-2",
+                      "chip_text": "wheeze on exertion",
+                      "order": 2,
+                      "search_terms": [
+                            "wheeze"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-symptoms-3",
+                      "chip_text": "chest tightness AM",
+                      "order": 3,
+                      "search_terms": [
+                            "chest"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-symptoms-4",
+                      "chip_text": "nocturnal awakening 2x/week",
+                      "order": 4,
+                      "search_terms": [
+                            "nocturnal"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-symptoms-5",
+                      "chip_text": "exercise-induced SOB",
+                      "order": 5,
+                      "search_terms": [
+                            "exercise-induced"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-symptoms-6",
+                      "chip_text": "cough with cold air exposure",
+                      "order": 6,
+                      "search_terms": [
+                            "cough"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-symptoms-7",
+                      "chip_text": "seasonal worsening spring",
+                      "order": 7,
+                      "search_terms": [
+                            "seasonal"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-symptoms-8",
+                      "chip_text": "triggered by dust/pets",
+                      "order": 8,
+                      "search_terms": [
+                            "triggered"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-symptoms-9",
+                      "chip_text": "SABA use 3x/week",
+                      "order": 9,
+                      "search_terms": [
+                            "SABA"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-symptoms-10",
+                      "chip_text": "missed work/school due to symptoms",
+                      "order": 10,
+                      "search_terms": [
+                            "missed"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-symptoms-11",
+                      "chip_text": "symptoms daily",
+                      "order": 11,
+                      "search_terms": [
+                            "symptoms"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-symptoms-12",
+                      "chip_text": "symptoms intermittent",
+                      "order": 12,
+                      "search_terms": [
+                            "symptoms"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-symptoms-2",
-          "chip_text": "cough reviewed",
-          "order": 2,
-          "search_terms": [
-            "cough"
+          "relevant_negatives": [
+                {
+                      "chip_id": "resp-asthma-followup-relevant_negatives-1",
+                      "chip_text": "no hemoptysis",
+                      "order": 1,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-relevant_negatives-2",
+                      "chip_text": "no chest pain",
+                      "order": 2,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-relevant_negatives-3",
+                      "chip_text": "no fever",
+                      "order": 3,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-relevant_negatives-4",
+                      "chip_text": "no weight loss",
+                      "order": 4,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-relevant_negatives-5",
+                      "chip_text": "no orthopnea",
+                      "order": 5,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-relevant_negatives-6",
+                      "chip_text": "no ankle swelling",
+                      "order": 6,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-relevant_negatives-7",
+                      "chip_text": "no syncope",
+                      "order": 7,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-relevant_negatives-8",
+                      "chip_text": "no stridor",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-symptoms-3",
-          "chip_text": "wheeze reviewed",
-          "order": 3,
-          "search_terms": [
-            "wheeze"
+          "exam_findings": [
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-1",
+                      "chip_text": "SpO2 98% on RA",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-2",
+                      "chip_text": "SpO2 95% on RA",
+                      "order": 2,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-3",
+                      "chip_text": "SpO2 92% on RA",
+                      "order": 3,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-4",
+                      "chip_text": "RR 16/min",
+                      "order": 4,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-5",
+                      "chip_text": "RR 22/min",
+                      "order": 5,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-6",
+                      "chip_text": "chest: bilateral wheeze",
+                      "order": 6,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-7",
+                      "chip_text": "chest: end-expiratory wheeze",
+                      "order": 7,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-8",
+                      "chip_text": "chest: clear bilaterally",
+                      "order": 8,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-9",
+                      "chip_text": "good air entry throughout",
+                      "order": 9,
+                      "search_terms": [
+                            "good"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-10",
+                      "chip_text": "prolonged expiratory phase",
+                      "order": 10,
+                      "search_terms": [
+                            "prolonged"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-11",
+                      "chip_text": "no accessory muscle use",
+                      "order": 11,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-12",
+                      "chip_text": "peak flow 450 L/min",
+                      "order": 12,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-13",
+                      "chip_text": "peak flow 350 L/min",
+                      "order": 13,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-exam_findings-14",
+                      "chip_text": "peak flow 250 L/min",
+                      "order": 14,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-symptoms-4",
-          "chip_text": "shortness of breath reviewed",
-          "order": 4,
-          "search_terms": [
-            "SOB",
-            "breathlessness"
+          "red_flags": [
+                {
+                      "chip_id": "resp-asthma-followup-red_flags-1",
+                      "chip_text": "SpO2 <92% on RA",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-red_flags-2",
+                      "chip_text": "silent chest on auscultation",
+                      "order": 2,
+                      "search_terms": [
+                            "silent"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-red_flags-3",
+                      "chip_text": "unable to complete sentences",
+                      "order": 3,
+                      "search_terms": [
+                            "unable"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-red_flags-4",
+                      "chip_text": "RR >30/min",
+                      "order": 4,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-red_flags-5",
+                      "chip_text": "accessory muscle use at rest",
+                      "order": 5,
+                      "search_terms": [
+                            "accessory"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-red_flags-6",
+                      "chip_text": "cyanosis",
+                      "order": 6,
+                      "search_terms": [
+                            "cyanosis"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-red_flags-7",
+                      "chip_text": "altered consciousness",
+                      "order": 7,
+                      "search_terms": [
+                            "altered"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-red_flags-8",
+                      "chip_text": "peak flow <33% predicted",
+                      "order": 8,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-symptoms-5",
-          "chip_text": "nocturnal symptoms reviewed",
-          "order": 5,
-          "search_terms": [
-            "nocturnal",
-            "night"
+          "investigations": [
+                {
+                      "chip_id": "resp-asthma-followup-investigations-1",
+                      "chip_text": "peak flow: green zone >80%",
+                      "order": 1,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-investigations-2",
+                      "chip_text": "peak flow: amber zone 50-80%",
+                      "order": 2,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-investigations-3",
+                      "chip_text": "peak flow: red zone <50%",
+                      "order": 3,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-investigations-4",
+                      "chip_text": "spirometry: FEV1/FVC <0.7",
+                      "order": 4,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-investigations-5",
+                      "chip_text": "spirometry: FEV1 85% predicted",
+                      "order": 5,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-investigations-6",
+                      "chip_text": "spirometry: positive reversibility",
+                      "order": 6,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-investigations-7",
+                      "chip_text": "FeNO elevated >40 ppb",
+                      "order": 7,
+                      "search_terms": [
+                            "FeNO"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-investigations-8",
+                      "chip_text": "CXR: hyperinflated",
+                      "order": 8,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-investigations-9",
+                      "chip_text": "CXR: normal",
+                      "order": 9,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-investigations-10",
+                      "chip_text": "IgE total elevated",
+                      "order": 10,
+                      "search_terms": [
+                            "IgE"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-investigations-11",
+                      "chip_text": "blood eosinophils raised",
+                      "order": 11,
+                      "search_terms": [
+                            "blood"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-symptoms-6",
-          "chip_text": "exercise symptoms reviewed",
-          "order": 6,
-          "search_terms": [
-            "exercise",
-            "exertion"
+          "plan_phrases": [
+                {
+                      "chip_id": "resp-asthma-followup-plan_phrases-1",
+                      "chip_text": "step up to ICS/LABA combination",
+                      "order": 1,
+                      "search_terms": [
+                            "step"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-plan_phrases-2",
+                      "chip_text": "continue current ICS dose",
+                      "order": 2,
+                      "search_terms": [
+                            "continue"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-plan_phrases-3",
+                      "chip_text": "step down ICS after 3 months stable",
+                      "order": 3,
+                      "search_terms": [
+                            "step"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-plan_phrases-4",
+                      "chip_text": "add LTRA trial",
+                      "order": 4,
+                      "search_terms": [
+                            "add"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-plan_phrases-5",
+                      "chip_text": "inhaler technique reviewed and corrected",
+                      "order": 5,
+                      "search_terms": [
+                            "inhaler"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-plan_phrases-6",
+                      "chip_text": "spacer device provided",
+                      "order": 6,
+                      "search_terms": [
+                            "spacer"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-plan_phrases-7",
+                      "chip_text": "written asthma action plan given",
+                      "order": 7,
+                      "search_terms": [
+                            "written"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-plan_phrases-8",
+                      "chip_text": "trigger avoidance advice given",
+                      "order": 8,
+                      "search_terms": [
+                            "trigger"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-plan_phrases-9",
+                      "chip_text": "smoking cessation discussed",
+                      "order": 9,
+                      "search_terms": [
+                            "smoking"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-plan_phrases-10",
+                      "chip_text": "refer to asthma nurse",
+                      "order": 10,
+                      "search_terms": [
+                            "refer"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-plan_phrases-11",
+                      "chip_text": "oral prednisolone rescue course",
+                      "order": 11,
+                      "search_terms": [
+                            "oral"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-plan_phrases-12",
+                      "chip_text": "annual flu vaccine advised",
+                      "order": 12,
+                      "search_terms": [
+                            "annual"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
+          "follow_up": [
+                {
+                      "chip_id": "resp-asthma-followup-follow_up-1",
+                      "chip_text": "review 2 weeks post-exacerbation",
+                      "order": 1,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-follow_up-2",
+                      "chip_text": "routine review 3 months",
+                      "order": 2,
+                      "search_terms": [
+                            "routine"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-follow_up-3",
+                      "chip_text": "review 6 months if stable",
+                      "order": 3,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-follow_up-4",
+                      "chip_text": "urgent review if worsening",
+                      "order": 4,
+                      "search_terms": [
+                            "urgent"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-follow_up-5",
+                      "chip_text": "annual asthma review booked",
+                      "order": 5,
+                      "search_terms": [
+                            "annual"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-asthma-followup-follow_up-6",
+                      "chip_text": "PRN",
+                      "order": 6,
+                      "search_terms": [
+                            "PRN"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-symptoms-7",
-          "chip_text": "trigger pattern reviewed",
-          "order": 7,
-          "search_terms": [
-            "trigger",
-            "allergen"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-symptoms-8",
-          "chip_text": "inhaler use reviewed",
-          "order": 8,
-          "search_terms": [
-            "inhaler",
-            "puffer",
-            "use"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-symptoms-9",
-          "chip_text": "recent exacerbation history reviewed",
-          "order": 9,
-          "search_terms": [
-            "exacerbation",
-            "flare",
-            "attack"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-symptoms-10",
-          "chip_text": "occupational exposure reviewed if relevant",
-          "order": 10,
-          "search_terms": [
-            "occupational",
-            "work"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-symptoms-11",
-          "chip_text": "asthma control level documented if assessed",
-          "order": 11,
-          "search_terms": [
-            "control",
-            "ACT",
-            "validated"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "relevant_negatives": [
-        {
-          "chip_id": "resp-asthma-followup-relevant_negatives-1",
-          "chip_text": "no severe breathlessness reported",
-          "order": 1,
-          "search_terms": [
-            "severe",
-            "breathlessness"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-relevant_negatives-2",
-          "chip_text": "no chest pain reported",
-          "order": 2,
-          "search_terms": [
-            "chest",
-            "pain"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-relevant_negatives-3",
-          "chip_text": "no hemoptysis reported",
-          "order": 3,
-          "search_terms": [
-            "hemoptysis",
-            "blood"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-relevant_negatives-4",
-          "chip_text": "no syncope reported",
-          "order": 4,
-          "search_terms": [
-            "syncope",
-            "faint"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-relevant_negatives-5",
-          "chip_text": "no recent hospital attendance reported if applicable",
-          "order": 5,
-          "search_terms": [
-            "hospital",
-            "ED",
-            "attendance"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "exam_findings": [
-        {
-          "chip_id": "resp-asthma-followup-exam_findings-1",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 1,
-          "search_terms": [
-            "RR",
-            "respiratory",
-            "rate"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-exam_findings-2",
-          "chip_text": "oxygen saturation documented if measured",
-          "order": 2,
-          "search_terms": [
-            "oxygen",
-            "SpO2",
-            "saturations"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-exam_findings-3",
-          "chip_text": "work of breathing documented if assessed",
-          "order": 3,
-          "search_terms": [
-            "work",
-            "breathing",
-            "accessory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-exam_findings-4",
-          "chip_text": "chest auscultation documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "auscultation",
-            "chest",
-            "breath sounds"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-exam_findings-5",
-          "chip_text": "wheeze documented if assessed",
-          "order": 5,
-          "search_terms": [
-            "wheeze",
-            "expiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-exam_findings-6",
-          "chip_text": "peak flow recorded if measured",
-          "order": 6,
-          "search_terms": [
-            "peak",
-            "flow",
-            "PEFR"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-exam_findings-7",
-          "chip_text": "air entry documented if assessed",
-          "order": 7,
-          "search_terms": [
-            "air",
-            "entry",
-            "bilateral"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-exam_findings-8",
-          "chip_text": "chest expansion documented if assessed",
-          "order": 8,
-          "search_terms": [
-            "expansion",
-            "symmetry"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "red_flags": [
-        {
-          "chip_id": "resp-asthma-followup-red_flags-1",
-          "chip_text": "severe breathlessness",
-          "order": 1,
-          "search_terms": [
-            "severe",
-            "breathlessness"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-red_flags-2",
-          "chip_text": "reduced oxygen saturation if documented",
-          "order": 2,
-          "search_terms": [
-            "reduced",
-            "oxygen",
-            "desaturation"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-red_flags-3",
-          "chip_text": "inability to speak full sentences if assessed",
-          "order": 3,
-          "search_terms": [
-            "speak",
-            "sentences"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-red_flags-4",
-          "chip_text": "cyanosis",
-          "order": 4,
-          "search_terms": [
-            "cyanosis",
-            "blue"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-red_flags-5",
-          "chip_text": "altered consciousness",
-          "order": 5,
-          "search_terms": [
-            "consciousness",
-            "confusion"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        }
-      ],
-      "investigations": [
-        {
-          "chip_id": "resp-asthma-followup-investigations-1",
-          "chip_text": "peak flow recorded if measured",
-          "order": 1,
-          "search_terms": [
-            "peak",
-            "flow",
-            "PEFR"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-investigations-2",
-          "chip_text": "spirometry reviewed if available",
-          "order": 2,
-          "search_terms": [
-            "spirometry",
-            "PFT"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-investigations-3",
-          "chip_text": "oxygen saturation recorded if measured",
-          "order": 3,
-          "search_terms": [
-            "oxygen",
-            "SpO2"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-investigations-4",
-          "chip_text": "previous respiratory records reviewed if available",
-          "order": 4,
-          "search_terms": [
-            "previous",
-            "records"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "plan_phrases": [
-        {
-          "chip_id": "resp-asthma-followup-plan_phrases-1",
-          "chip_text": "clinician-entered plan documented",
-          "order": 1,
-          "search_terms": [
-            "plan",
-            "management"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-plan_phrases-2",
-          "chip_text": "inhaler technique reviewed if discussed",
-          "order": 2,
-          "search_terms": [
-            "inhaler",
-            "technique"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-plan_phrases-3",
-          "chip_text": "medication plan documented if clinician decided",
-          "order": 3,
-          "search_terms": [
-            "medication",
-            "inhaler",
-            "preventer"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-plan_phrases-4",
-          "chip_text": "trigger advice documented if discussed",
-          "order": 4,
-          "search_terms": [
-            "trigger",
-            "advice"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-plan_phrases-5",
-          "chip_text": "safety-netting documented if discussed",
-          "order": 5,
-          "search_terms": [
-            "safety",
-            "netting"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-plan_phrases-6",
-          "chip_text": "follow-up documented if arranged",
-          "order": 6,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "follow_up": [
-        {
-          "chip_id": "resp-asthma-followup-follow_up-1",
-          "chip_text": "1-3 months",
-          "order": 1,
-          "search_terms": [
-            "one",
-            "three",
-            "months"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-follow_up-2",
-          "chip_text": "3-6 months if stable",
-          "order": 2,
-          "search_terms": [
-            "three",
-            "six"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-follow_up-3",
-          "chip_text": "sooner if worsening",
-          "order": 3,
-          "search_terms": [
-            "sooner",
-            "worsening"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-asthma-followup-follow_up-4",
-          "chip_text": "PRN",
-          "order": 4,
-          "search_terms": [
-            "PRN",
-            "as needed"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ]
     },
     "resp-chronic-cough": {
-      "symptoms": [
-        {
-          "chip_id": "resp-chronic-cough-symptoms-1",
-          "chip_text": "chronic cough",
-          "order": 1,
-          "search_terms": [
-            "chronic",
-            "cough",
-            "persistent"
+          "symptoms": [
+                {
+                      "chip_id": "resp-chronic-cough-symptoms-1",
+                      "chip_text": "cough >8 weeks duration",
+                      "order": 1,
+                      "search_terms": [
+                            "cough"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-symptoms-2",
+                      "chip_text": "cough dry/non-productive",
+                      "order": 2,
+                      "search_terms": [
+                            "cough"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-symptoms-3",
+                      "chip_text": "cough productive: white sputum",
+                      "order": 3,
+                      "search_terms": [
+                            "cough"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-symptoms-4",
+                      "chip_text": "cough worse at night",
+                      "order": 4,
+                      "search_terms": [
+                            "cough"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-symptoms-5",
+                      "chip_text": "cough post-nasal drip sensation",
+                      "order": 5,
+                      "search_terms": [
+                            "cough"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-symptoms-6",
+                      "chip_text": "cough with meals/lying flat",
+                      "order": 6,
+                      "search_terms": [
+                            "cough"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-symptoms-7",
+                      "chip_text": "cough triggered by cold air",
+                      "order": 7,
+                      "search_terms": [
+                            "cough"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-symptoms-8",
+                      "chip_text": "cough with throat clearing",
+                      "order": 8,
+                      "search_terms": [
+                            "cough"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-symptoms-9",
+                      "chip_text": "associated wheeze",
+                      "order": 9,
+                      "search_terms": [
+                            "associated"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-symptoms-10",
+                      "chip_text": "associated heartburn/reflux",
+                      "order": 10,
+                      "search_terms": [
+                            "associated"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-symptoms-11",
+                      "chip_text": "post-infectious onset",
+                      "order": 11,
+                      "search_terms": [
+                            "post-infectious"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-symptoms-12",
+                      "chip_text": "ACE inhibitor use",
+                      "order": 12,
+                      "search_terms": [
+                            "ACE"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-symptoms-2",
-          "chip_text": "duration documented",
-          "order": 2,
-          "search_terms": [
-            "duration",
-            "how long"
+          "relevant_negatives": [
+                {
+                      "chip_id": "resp-chronic-cough-relevant_negatives-1",
+                      "chip_text": "no hemoptysis",
+                      "order": 1,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-relevant_negatives-2",
+                      "chip_text": "no weight loss",
+                      "order": 2,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-relevant_negatives-3",
+                      "chip_text": "no fever",
+                      "order": 3,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-relevant_negatives-4",
+                      "chip_text": "no night sweats",
+                      "order": 4,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-relevant_negatives-5",
+                      "chip_text": "no TB contacts",
+                      "order": 5,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-relevant_negatives-6",
+                      "chip_text": "no dysphagia",
+                      "order": 6,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-relevant_negatives-7",
+                      "chip_text": "no voice change",
+                      "order": 7,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-relevant_negatives-8",
+                      "chip_text": "no chest pain",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-symptoms-3",
-          "chip_text": "dry or productive character documented",
-          "order": 3,
-          "search_terms": [
-            "dry",
-            "productive",
-            "sputum"
+          "exam_findings": [
+                {
+                      "chip_id": "resp-chronic-cough-exam_findings-1",
+                      "chip_text": "SpO2 98% on RA",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-exam_findings-2",
+                      "chip_text": "SpO2 96% on RA",
+                      "order": 2,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-exam_findings-3",
+                      "chip_text": "RR 16/min",
+                      "order": 3,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-exam_findings-4",
+                      "chip_text": "chest: clear bilaterally",
+                      "order": 4,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-exam_findings-5",
+                      "chip_text": "chest: scattered wheeze",
+                      "order": 5,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-exam_findings-6",
+                      "chip_text": "nasal mucosa boggy/pale",
+                      "order": 6,
+                      "search_terms": [
+                            "nasal"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-exam_findings-7",
+                      "chip_text": "cobblestone pharynx",
+                      "order": 7,
+                      "search_terms": [
+                            "cobblestone"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-exam_findings-8",
+                      "chip_text": "no cervical lymphadenopathy",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-exam_findings-9",
+                      "chip_text": "no clubbing",
+                      "order": 9,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-exam_findings-10",
+                      "chip_text": "peak flow 420 L/min normal",
+                      "order": 10,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-symptoms-4",
-          "chip_text": "sputum context reviewed",
-          "order": 4,
-          "search_terms": [
-            "sputum",
-            "phlegm",
-            "color"
+          "red_flags": [
+                {
+                      "chip_id": "resp-chronic-cough-red_flags-1",
+                      "chip_text": "hemoptysis",
+                      "order": 1,
+                      "search_terms": [
+                            "hemoptysis"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-red_flags-2",
+                      "chip_text": "unexplained weight loss >5%",
+                      "order": 2,
+                      "search_terms": [
+                            "unexplained"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-red_flags-3",
+                      "chip_text": "new hoarseness >3 weeks",
+                      "order": 3,
+                      "search_terms": [
+                            "new"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-red_flags-4",
+                      "chip_text": "stridor",
+                      "order": 4,
+                      "search_terms": [
+                            "stridor"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-red_flags-5",
+                      "chip_text": "massive hemoptysis",
+                      "order": 5,
+                      "search_terms": [
+                            "massive"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-red_flags-6",
+                      "chip_text": "CXR mass/nodule",
+                      "order": 6,
+                      "search_terms": [
+                            "CXR"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-red_flags-7",
+                      "chip_text": "smoker >20 pack-years with new cough",
+                      "order": 7,
+                      "search_terms": [
+                            "smoker"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-red_flags-8",
+                      "chip_text": "progressive SOB",
+                      "order": 8,
+                      "search_terms": [
+                            "progressive"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-symptoms-5",
-          "chip_text": "nocturnal or positional pattern reviewed",
-          "order": 5,
-          "search_terms": [
-            "nocturnal",
-            "positional",
-            "lying"
+          "investigations": [
+                {
+                      "chip_id": "resp-chronic-cough-investigations-1",
+                      "chip_text": "CXR: normal",
+                      "order": 1,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-investigations-2",
+                      "chip_text": "CXR: hilar prominence",
+                      "order": 2,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-investigations-3",
+                      "chip_text": "CXR: apical opacity",
+                      "order": 3,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-investigations-4",
+                      "chip_text": "spirometry: normal",
+                      "order": 4,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-investigations-5",
+                      "chip_text": "spirometry: obstructive pattern",
+                      "order": 5,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-investigations-6",
+                      "chip_text": "FeNO 55 ppb (elevated)",
+                      "order": 6,
+                      "search_terms": [
+                            "FeNO"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-investigations-7",
+                      "chip_text": "sputum cytology: eosinophils",
+                      "order": 7,
+                      "search_terms": [
+                            "sputum"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-investigations-8",
+                      "chip_text": "CT thorax: bronchiectasis",
+                      "order": 8,
+                      "search_terms": [
+                            "CT"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-investigations-9",
+                      "chip_text": "pH study: acid reflux confirmed",
+                      "order": 9,
+                      "search_terms": [
+                            "pH"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-investigations-10",
+                      "chip_text": "methacholine challenge: positive",
+                      "order": 10,
+                      "search_terms": [
+                            "methacholine"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-symptoms-6",
-          "chip_text": "trigger or exposure context reviewed",
-          "order": 6,
-          "search_terms": [
-            "trigger",
-            "asthma",
-            "allergy"
+          "plan_phrases": [
+                {
+                      "chip_id": "resp-chronic-cough-plan_phrases-1",
+                      "chip_text": "trial ICS for eosinophilic cough",
+                      "order": 1,
+                      "search_terms": [
+                            "trial"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-plan_phrases-2",
+                      "chip_text": "PPI trial for reflux cough",
+                      "order": 2,
+                      "search_terms": [
+                            "PPI"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-plan_phrases-3",
+                      "chip_text": "nasal steroid spray for post-nasal drip",
+                      "order": 3,
+                      "search_terms": [
+                            "nasal"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-plan_phrases-4",
+                      "chip_text": "stop ACE inhibitor, switch to ARB",
+                      "order": 4,
+                      "search_terms": [
+                            "stop"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-plan_phrases-5",
+                      "chip_text": "speech therapy referral for habit cough",
+                      "order": 5,
+                      "search_terms": [
+                            "speech"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-plan_phrases-6",
+                      "chip_text": "antihistamine trial",
+                      "order": 6,
+                      "search_terms": [
+                            "antihistamine"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-plan_phrases-7",
+                      "chip_text": "refer respiratory if no response 8 weeks",
+                      "order": 7,
+                      "search_terms": [
+                            "refer"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-plan_phrases-8",
+                      "chip_text": "chest CT if CXR abnormal",
+                      "order": 8,
+                      "search_terms": [
+                            "chest"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-plan_phrases-9",
+                      "chip_text": "urgent 2-week-wait if malignancy suspected",
+                      "order": 9,
+                      "search_terms": [
+                            "urgent"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-plan_phrases-10",
+                      "chip_text": "smoking cessation advice",
+                      "order": 10,
+                      "search_terms": [
+                            "smoking"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-plan_phrases-11",
+                      "chip_text": "cough suppressant short-term",
+                      "order": 11,
+                      "search_terms": [
+                            "cough"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-plan_phrases-12",
+                      "chip_text": "reassurance: post-viral cough resolves 8-12 weeks",
+                      "order": 12,
+                      "search_terms": [
+                            "reassurance:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
+          "follow_up": [
+                {
+                      "chip_id": "resp-chronic-cough-follow_up-1",
+                      "chip_text": "review 4 weeks after treatment trial",
+                      "order": 1,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-follow_up-2",
+                      "chip_text": "review 8 weeks if persistent",
+                      "order": 2,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-follow_up-3",
+                      "chip_text": "urgent review if hemoptysis",
+                      "order": 3,
+                      "search_terms": [
+                            "urgent"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-follow_up-4",
+                      "chip_text": "annual review if chronic",
+                      "order": 4,
+                      "search_terms": [
+                            "annual"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-follow_up-5",
+                      "chip_text": "PRN",
+                      "order": 5,
+                      "search_terms": [
+                            "PRN"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-chronic-cough-follow_up-6",
+                      "chip_text": "telephone review 2 weeks",
+                      "order": 6,
+                      "search_terms": [
+                            "telephone"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-symptoms-7",
-          "chip_text": "reflux or postnasal drip context reviewed",
-          "order": 7,
-          "search_terms": [
-            "reflux",
-            "GORD",
-            "postnasal"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-symptoms-8",
-          "chip_text": "medication history reviewed if relevant",
-          "order": 8,
-          "search_terms": [
-            "ACE",
-            "inhibitor",
-            "medication"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-symptoms-9",
-          "chip_text": "smoking history reviewed if relevant",
-          "order": 9,
-          "search_terms": [
-            "smoking",
-            "cigarettes"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-symptoms-10",
-          "chip_text": "previous investigations reviewed if available",
-          "order": 10,
-          "search_terms": [
-            "previous",
-            "CXR",
-            "spirometry"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "relevant_negatives": [
-        {
-          "chip_id": "resp-chronic-cough-relevant_negatives-1",
-          "chip_text": "no hemoptysis reported",
-          "order": 1,
-          "search_terms": [
-            "hemoptysis",
-            "blood"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-relevant_negatives-2",
-          "chip_text": "no weight loss reported",
-          "order": 2,
-          "search_terms": [
-            "weight",
-            "loss"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-relevant_negatives-3",
-          "chip_text": "no fever or night sweats reported",
-          "order": 3,
-          "search_terms": [
-            "fever",
-            "sweats",
-            "TB"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "exam_findings": [
-        {
-          "chip_id": "resp-chronic-cough-exam_findings-1",
-          "chip_text": "chest auscultation documented if assessed",
-          "order": 1,
-          "search_terms": [
-            "auscultation",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-exam_findings-2",
-          "chip_text": "oropharynx documented if assessed",
-          "order": 2,
-          "search_terms": [
-            "oropharynx",
-            "throat"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-exam_findings-3",
-          "chip_text": "nasal examination documented if relevant",
-          "order": 3,
-          "search_terms": [
-            "nasal",
-            "postnasal"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-exam_findings-4",
-          "chip_text": "oxygen saturation documented if measured",
-          "order": 4,
-          "search_terms": [
-            "oxygen",
-            "SpO2"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-exam_findings-5",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 5,
-          "search_terms": [
-            "RR",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "red_flags": [
-        {
-          "chip_id": "resp-chronic-cough-red_flags-1",
-          "chip_text": "hemoptysis",
-          "order": 1,
-          "search_terms": [
-            "hemoptysis",
-            "blood"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-red_flags-2",
-          "chip_text": "unexplained weight loss",
-          "order": 2,
-          "search_terms": [
-            "weight",
-            "loss"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-red_flags-3",
-          "chip_text": "fever or night sweats",
-          "order": 3,
-          "search_terms": [
-            "fever",
-            "sweats",
-            "TB"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-red_flags-4",
-          "chip_text": "voice change or stridor",
-          "order": 4,
-          "search_terms": [
-            "voice",
-            "stridor"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-red_flags-5",
-          "chip_text": "smoker over 45 with new cough",
-          "order": 5,
-          "search_terms": [
-            "smoker",
-            "age",
-            "45"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-red_flags-6",
-          "chip_text": "persistent localized abnormality",
-          "order": 6,
-          "search_terms": [
-            "localized",
-            "focal"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        }
-      ],
-      "investigations": [
-        {
-          "chip_id": "resp-chronic-cough-investigations-1",
-          "chip_text": "chest imaging reviewed if available",
-          "order": 1,
-          "search_terms": [
-            "CXR",
-            "chest",
-            "X-ray",
-            "CT"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-investigations-2",
-          "chip_text": "spirometry reviewed if available",
-          "order": 2,
-          "search_terms": [
-            "spirometry",
-            "PFT"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-investigations-3",
-          "chip_text": "laryngoscopy referral discussed if relevant",
-          "order": 3,
-          "search_terms": [
-            "ENT",
-            "laryngoscopy"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "plan_phrases": [
-        {
-          "chip_id": "resp-chronic-cough-plan_phrases-1",
-          "chip_text": "clinician-entered plan documented",
-          "order": 1,
-          "search_terms": [
-            "plan",
-            "management"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-plan_phrases-2",
-          "chip_text": "safety-netting documented if discussed",
-          "order": 2,
-          "search_terms": [
-            "safety",
-            "netting"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-plan_phrases-3",
-          "chip_text": "referral documented if clinician decided",
-          "order": 3,
-          "search_terms": [
-            "referral",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-plan_phrases-4",
-          "chip_text": "follow-up documented if arranged",
-          "order": 4,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-plan_phrases-5",
-          "chip_text": "trial of inhaled therapy discussed if applicable",
-          "order": 5,
-          "search_terms": [
-            "inhaler",
-            "trial",
-            "treatment"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "follow_up": [
-        {
-          "chip_id": "resp-chronic-cough-follow_up-1",
-          "chip_text": "2-4 weeks",
-          "order": 1,
-          "search_terms": [
-            "two",
-            "four",
-            "weeks"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-follow_up-2",
-          "chip_text": "4-6 weeks",
-          "order": 2,
-          "search_terms": [
-            "four",
-            "six",
-            "weeks"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-follow_up-3",
-          "chip_text": "sooner if worsening",
-          "order": 3,
-          "search_terms": [
-            "sooner",
-            "worsening"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-chronic-cough-follow_up-4",
-          "chip_text": "PRN",
-          "order": 4,
-          "search_terms": [
-            "PRN",
-            "as needed"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ]
     },
     "resp-copd-followup": {
-      "symptoms": [
-        {
-          "chip_id": "resp-copd-followup-symptoms-1",
-          "chip_text": "COPD follow-up",
-          "order": 1,
-          "search_terms": [
-            "COPD",
-            "followup"
+          "symptoms": [
+                {
+                      "chip_id": "resp-copd-followup-symptoms-1",
+                      "chip_text": "productive cough daily",
+                      "order": 1,
+                      "search_terms": [
+                            "productive"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-symptoms-2",
+                      "chip_text": "sputum: white/mucoid",
+                      "order": 2,
+                      "search_terms": [
+                            "sputum:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-symptoms-3",
+                      "chip_text": "sputum: green/purulent",
+                      "order": 3,
+                      "search_terms": [
+                            "sputum:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-symptoms-4",
+                      "chip_text": "SOB on exertion MRC grade 2",
+                      "order": 4,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-symptoms-5",
+                      "chip_text": "SOB at rest MRC grade 4",
+                      "order": 5,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-symptoms-6",
+                      "chip_text": "MRC grade 3: stops after 100m",
+                      "order": 6,
+                      "search_terms": [
+                            "MRC"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-symptoms-7",
+                      "chip_text": "wheeze persistent",
+                      "order": 7,
+                      "search_terms": [
+                            "wheeze"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-symptoms-8",
+                      "chip_text": "reduced exercise tolerance",
+                      "order": 8,
+                      "search_terms": [
+                            "reduced"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-symptoms-9",
+                      "chip_text": "exacerbation 2x past year",
+                      "order": 9,
+                      "search_terms": [
+                            "exacerbation"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-symptoms-10",
+                      "chip_text": "exacerbation requiring admission",
+                      "order": 10,
+                      "search_terms": [
+                            "exacerbation"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-symptoms-11",
+                      "chip_text": "morning symptoms predominant",
+                      "order": 11,
+                      "search_terms": [
+                            "morning"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-symptoms-12",
+                      "chip_text": "ankle swelling noted",
+                      "order": 12,
+                      "search_terms": [
+                            "ankle"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-symptoms-2",
-          "chip_text": "dyspnea reviewed",
-          "order": 2,
-          "search_terms": [
-            "dyspnea",
-            "SOB",
-            "breathlessness"
+          "relevant_negatives": [
+                {
+                      "chip_id": "resp-copd-followup-relevant_negatives-1",
+                      "chip_text": "no hemoptysis",
+                      "order": 1,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-relevant_negatives-2",
+                      "chip_text": "no chest pain",
+                      "order": 2,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-relevant_negatives-3",
+                      "chip_text": "no fever",
+                      "order": 3,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-relevant_negatives-4",
+                      "chip_text": "no weight loss",
+                      "order": 4,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-relevant_negatives-5",
+                      "chip_text": "no orthopnea",
+                      "order": 5,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-relevant_negatives-6",
+                      "chip_text": "no syncope",
+                      "order": 6,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-relevant_negatives-7",
+                      "chip_text": "no new ankle swelling",
+                      "order": 7,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-relevant_negatives-8",
+                      "chip_text": "no night sweats",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-symptoms-3",
-          "chip_text": "cough and sputum reviewed",
-          "order": 3,
-          "search_terms": [
-            "cough",
-            "sputum",
-            "phlegm"
+          "exam_findings": [
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-1",
+                      "chip_text": "SpO2 94% on RA",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-2",
+                      "chip_text": "SpO2 90% on RA",
+                      "order": 2,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-3",
+                      "chip_text": "SpO2 88% on RA",
+                      "order": 3,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-4",
+                      "chip_text": "RR 20/min",
+                      "order": 4,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-5",
+                      "chip_text": "RR 26/min",
+                      "order": 5,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-6",
+                      "chip_text": "barrel chest",
+                      "order": 6,
+                      "search_terms": [
+                            "barrel"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-7",
+                      "chip_text": "chest: scattered wheeze bilaterally",
+                      "order": 7,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-8",
+                      "chip_text": "chest: reduced air entry bases",
+                      "order": 8,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-9",
+                      "chip_text": "chest: coarse crackles right base",
+                      "order": 9,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-10",
+                      "chip_text": "pursed lip breathing",
+                      "order": 10,
+                      "search_terms": [
+                            "pursed"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-11",
+                      "chip_text": "accessory muscle use",
+                      "order": 11,
+                      "search_terms": [
+                            "accessory"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-12",
+                      "chip_text": "BMI 22",
+                      "order": 12,
+                      "search_terms": [
+                            "BMI"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-13",
+                      "chip_text": "peripheral oedema absent",
+                      "order": 13,
+                      "search_terms": [
+                            "peripheral"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-exam_findings-14",
+                      "chip_text": "JVP not raised",
+                      "order": 14,
+                      "search_terms": [
+                            "JVP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-symptoms-4",
-          "chip_text": "exacerbation history reviewed",
-          "order": 4,
-          "search_terms": [
-            "exacerbation",
-            "flare"
+          "red_flags": [
+                {
+                      "chip_id": "resp-copd-followup-red_flags-1",
+                      "chip_text": "SpO2 <88% on RA",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-red_flags-2",
+                      "chip_text": "acute CO2 retention: drowsy/confused",
+                      "order": 2,
+                      "search_terms": [
+                            "acute"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-red_flags-3",
+                      "chip_text": "RR >30/min",
+                      "order": 3,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-red_flags-4",
+                      "chip_text": "new onset cor pulmonale signs",
+                      "order": 4,
+                      "search_terms": [
+                            "new"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-red_flags-5",
+                      "chip_text": "massive hemoptysis",
+                      "order": 5,
+                      "search_terms": [
+                            "massive"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-red_flags-6",
+                      "chip_text": "acute chest pain with SOB",
+                      "order": 6,
+                      "search_terms": [
+                            "acute"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-red_flags-7",
+                      "chip_text": "unable to speak in sentences",
+                      "order": 7,
+                      "search_terms": [
+                            "unable"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-red_flags-8",
+                      "chip_text": "cyanosis at rest",
+                      "order": 8,
+                      "search_terms": [
+                            "cyanosis"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-symptoms-5",
-          "chip_text": "exercise tolerance reviewed",
-          "order": 5,
-          "search_terms": [
-            "exercise",
-            "tolerance",
-            "MRC"
+          "investigations": [
+                {
+                      "chip_id": "resp-copd-followup-investigations-1",
+                      "chip_text": "spirometry: FEV1 65% predicted",
+                      "order": 1,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-investigations-2",
+                      "chip_text": "spirometry: FEV1 45% predicted",
+                      "order": 2,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-investigations-3",
+                      "chip_text": "spirometry: FEV1 30% predicted",
+                      "order": 3,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-investigations-4",
+                      "chip_text": "FEV1/FVC 0.62",
+                      "order": 4,
+                      "search_terms": [
+                            "FEV1/FVC"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-investigations-5",
+                      "chip_text": "GOLD stage II (moderate)",
+                      "order": 5,
+                      "search_terms": [
+                            "GOLD"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-investigations-6",
+                      "chip_text": "GOLD stage III (severe)",
+                      "order": 6,
+                      "search_terms": [
+                            "GOLD"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-investigations-7",
+                      "chip_text": "CXR: hyperinflated lungs",
+                      "order": 7,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-investigations-8",
+                      "chip_text": "CXR: flattened diaphragms",
+                      "order": 8,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-investigations-9",
+                      "chip_text": "ABG: pH 7.38 pCO2 6.2",
+                      "order": 9,
+                      "search_terms": [
+                            "ABG:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-investigations-10",
+                      "chip_text": "ABG: type 2 respiratory failure",
+                      "order": 10,
+                      "search_terms": [
+                            "ABG:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-investigations-11",
+                      "chip_text": "sputum culture: H. influenzae",
+                      "order": 11,
+                      "search_terms": [
+                            "sputum"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-investigations-12",
+                      "chip_text": "FBC: polycythaemia",
+                      "order": 12,
+                      "search_terms": [
+                            "FBC:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-investigations-13",
+                      "chip_text": "BNP normal",
+                      "order": 13,
+                      "search_terms": [
+                            "BNP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-symptoms-6",
-          "chip_text": "inhaler use reviewed",
-          "order": 6,
-          "search_terms": [
-            "inhaler",
-            "puffer"
+          "plan_phrases": [
+                {
+                      "chip_id": "resp-copd-followup-plan_phrases-1",
+                      "chip_text": "continue LAMA inhaler",
+                      "order": 1,
+                      "search_terms": [
+                            "continue"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-plan_phrases-2",
+                      "chip_text": "add LABA/ICS combination",
+                      "order": 2,
+                      "search_terms": [
+                            "add"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-plan_phrases-3",
+                      "chip_text": "triple therapy initiated",
+                      "order": 3,
+                      "search_terms": [
+                            "triple"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-plan_phrases-4",
+                      "chip_text": "pulmonary rehab referral",
+                      "order": 4,
+                      "search_terms": [
+                            "pulmonary"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-plan_phrases-5",
+                      "chip_text": "smoking cessation: NRT offered",
+                      "order": 5,
+                      "search_terms": [
+                            "smoking"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-plan_phrases-6",
+                      "chip_text": "home oxygen assessment referral",
+                      "order": 6,
+                      "search_terms": [
+                            "home"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-plan_phrases-7",
+                      "chip_text": "rescue pack: antibiotics + prednisolone",
+                      "order": 7,
+                      "search_terms": [
+                            "rescue"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-plan_phrases-8",
+                      "chip_text": "annual flu + pneumococcal vaccine",
+                      "order": 8,
+                      "search_terms": [
+                            "annual"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-plan_phrases-9",
+                      "chip_text": "self-management plan reviewed",
+                      "order": 9,
+                      "search_terms": [
+                            "self-management"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-plan_phrases-10",
+                      "chip_text": "mucolytic trial started",
+                      "order": 10,
+                      "search_terms": [
+                            "mucolytic"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-plan_phrases-11",
+                      "chip_text": "palliative care discussion if appropriate",
+                      "order": 11,
+                      "search_terms": [
+                            "palliative"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-plan_phrases-12",
+                      "chip_text": "dietitian referral for low BMI",
+                      "order": 12,
+                      "search_terms": [
+                            "dietitian"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
+          "follow_up": [
+                {
+                      "chip_id": "resp-copd-followup-follow_up-1",
+                      "chip_text": "review 2 weeks post-exacerbation",
+                      "order": 1,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-follow_up-2",
+                      "chip_text": "routine review 3 months",
+                      "order": 2,
+                      "search_terms": [
+                            "routine"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-follow_up-3",
+                      "chip_text": "review 6 months if stable",
+                      "order": 3,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-follow_up-4",
+                      "chip_text": "urgent review if worsening",
+                      "order": 4,
+                      "search_terms": [
+                            "urgent"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-follow_up-5",
+                      "chip_text": "annual COPD review booked",
+                      "order": 5,
+                      "search_terms": [
+                            "annual"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-copd-followup-follow_up-6",
+                      "chip_text": "PRN",
+                      "order": 6,
+                      "search_terms": [
+                            "PRN"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ]
-        },
-        {
-          "chip_id": "resp-copd-followup-symptoms-7",
-          "chip_text": "smoking history reviewed",
-          "order": 7,
-          "search_terms": [
-            "smoking",
-            "cigarettes"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-symptoms-8",
-          "chip_text": "nocturnal symptoms reviewed",
-          "order": 8,
-          "search_terms": [
-            "nocturnal",
-            "night"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-symptoms-9",
-          "chip_text": "functional impact reviewed",
-          "order": 9,
-          "search_terms": [
-            "ADL",
-            "daily",
-            "function"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-symptoms-10",
-          "chip_text": "sputum color change reviewed if relevant",
-          "order": 10,
-          "search_terms": [
-            "sputum",
-            "color",
-            "purulence"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "relevant_negatives": [
-        {
-          "chip_id": "resp-copd-followup-relevant_negatives-1",
-          "chip_text": "no chest pain reported",
-          "order": 1,
-          "search_terms": [
-            "chest",
-            "pain"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-relevant_negatives-2",
-          "chip_text": "no hemoptysis reported",
-          "order": 2,
-          "search_terms": [
-            "hemoptysis",
-            "blood"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-relevant_negatives-3",
-          "chip_text": "no fever reported if relevant",
-          "order": 3,
-          "search_terms": [
-            "fever"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "exam_findings": [
-        {
-          "chip_id": "resp-copd-followup-exam_findings-1",
-          "chip_text": "oxygen saturation documented if measured",
-          "order": 1,
-          "search_terms": [
-            "oxygen",
-            "SpO2"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-exam_findings-2",
-          "chip_text": "chest auscultation documented if assessed",
-          "order": 2,
-          "search_terms": [
-            "auscultation",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-exam_findings-3",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 3,
-          "search_terms": [
-            "RR",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-exam_findings-4",
-          "chip_text": "peripheral oedema documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "oedema",
-            "ankle",
-            "JVP"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-exam_findings-5",
-          "chip_text": "accessory muscle use documented if assessed",
-          "order": 5,
-          "search_terms": [
-            "accessory",
-            "muscles"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-exam_findings-6",
-          "chip_text": "chest percussion documented if assessed",
-          "order": 6,
-          "search_terms": [
-            "percussion",
-            "hyperinflation"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "red_flags": [
-        {
-          "chip_id": "resp-copd-followup-red_flags-1",
-          "chip_text": "severe breathlessness at rest",
-          "order": 1,
-          "search_terms": [
-            "severe",
-            "breathlessness"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-red_flags-2",
-          "chip_text": "reduced oxygen saturation if documented",
-          "order": 2,
-          "search_terms": [
-            "reduced",
-            "oxygen"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-red_flags-3",
-          "chip_text": "cyanosis",
-          "order": 3,
-          "search_terms": [
-            "cyanosis"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-red_flags-4",
-          "chip_text": "signs of cor pulmonale if assessed",
-          "order": 4,
-          "search_terms": [
-            "cor",
-            "pulmonale",
-            "oedema"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        }
-      ],
-      "investigations": [
-        {
-          "chip_id": "resp-copd-followup-investigations-1",
-          "chip_text": "spirometry reviewed if available",
-          "order": 1,
-          "search_terms": [
-            "spirometry",
-            "FEV1",
-            "PFT"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-investigations-2",
-          "chip_text": "previous respiratory records reviewed if available",
-          "order": 2,
-          "search_terms": [
-            "previous",
-            "records"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-investigations-3",
-          "chip_text": "oxygen assessment reviewed if applicable",
-          "order": 3,
-          "search_terms": [
-            "oxygen",
-            "O2"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "plan_phrases": [
-        {
-          "chip_id": "resp-copd-followup-plan_phrases-1",
-          "chip_text": "clinician-entered plan documented",
-          "order": 1,
-          "search_terms": [
-            "plan",
-            "management"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-plan_phrases-2",
-          "chip_text": "medication plan documented if clinician decided",
-          "order": 2,
-          "search_terms": [
-            "medication",
-            "inhaler"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-plan_phrases-3",
-          "chip_text": "smoking cessation advice documented if discussed",
-          "order": 3,
-          "search_terms": [
-            "cessation",
-            "smoking"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-plan_phrases-4",
-          "chip_text": "pulmonary rehabilitation discussed if applicable",
-          "order": 4,
-          "search_terms": [
-            "pulmonary",
-            "rehab"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-plan_phrases-5",
-          "chip_text": "vaccination history reviewed if relevant",
-          "order": 5,
-          "search_terms": [
-            "vaccination",
-            "flu",
-            "pneumonia"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-plan_phrases-6",
-          "chip_text": "follow-up documented if arranged",
-          "order": 6,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-plan_phrases-7",
-          "chip_text": "referral documented if clinician decided",
-          "order": 7,
-          "search_terms": [
-            "referral",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "follow_up": [
-        {
-          "chip_id": "resp-copd-followup-follow_up-1",
-          "chip_text": "3-6 months",
-          "order": 1,
-          "search_terms": [
-            "three",
-            "six",
-            "months"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-follow_up-2",
-          "chip_text": "6-12 months if stable",
-          "order": 2,
-          "search_terms": [
-            "six",
-            "twelve"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-follow_up-3",
-          "chip_text": "sooner if worsening",
-          "order": 3,
-          "search_terms": [
-            "sooner",
-            "worsening"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-follow_up-4",
-          "chip_text": "PRN",
-          "order": 4,
-          "search_terms": [
-            "PRN",
-            "as needed"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-copd-followup-follow_up-5",
-          "chip_text": "sooner if exacerbation",
-          "order": 5,
-          "search_terms": [
-            "exacerbation",
-            "flare"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ]
     },
     "resp-dyspnea": {
-      "symptoms": [
-        {
-          "chip_id": "resp-dyspnea-symptoms-1",
-          "chip_text": "dyspnea",
-          "order": 1,
-          "search_terms": [
-            "dyspnea",
-            "SOB",
-            "breathlessness"
+          "symptoms": [
+                {
+                      "chip_id": "resp-dyspnea-symptoms-1",
+                      "chip_text": "SOB on exertion: 50m flat",
+                      "order": 1,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-symptoms-2",
+                      "chip_text": "SOB on exertion: 1 flight stairs",
+                      "order": 2,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-symptoms-3",
+                      "chip_text": "SOB at rest",
+                      "order": 3,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-symptoms-4",
+                      "chip_text": "orthopnea: 3 pillows",
+                      "order": 4,
+                      "search_terms": [
+                            "orthopnea:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-symptoms-5",
+                      "chip_text": "PND present",
+                      "order": 5,
+                      "search_terms": [
+                            "PND"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-symptoms-6",
+                      "chip_text": "SOB acute onset",
+                      "order": 6,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-symptoms-7",
+                      "chip_text": "SOB gradual over weeks",
+                      "order": 7,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-symptoms-8",
+                      "chip_text": "SOB with wheeze",
+                      "order": 8,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-symptoms-9",
+                      "chip_text": "SOB with chest pain",
+                      "order": 9,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-symptoms-10",
+                      "chip_text": "SOB with cough",
+                      "order": 10,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-symptoms-11",
+                      "chip_text": "SOB worse lying flat",
+                      "order": 11,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-symptoms-12",
+                      "chip_text": "exercise tolerance reduced from baseline",
+                      "order": 12,
+                      "search_terms": [
+                            "exercise"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-symptoms-2",
-          "chip_text": "onset and duration documented",
-          "order": 2,
-          "search_terms": [
-            "onset",
-            "duration",
-            "acute",
-            "gradual"
+          "relevant_negatives": [
+                {
+                      "chip_id": "resp-dyspnea-relevant_negatives-1",
+                      "chip_text": "no chest pain",
+                      "order": 1,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-relevant_negatives-2",
+                      "chip_text": "no palpitations",
+                      "order": 2,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-relevant_negatives-3",
+                      "chip_text": "no leg swelling",
+                      "order": 3,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-relevant_negatives-4",
+                      "chip_text": "no hemoptysis",
+                      "order": 4,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-relevant_negatives-5",
+                      "chip_text": "no fever",
+                      "order": 5,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-relevant_negatives-6",
+                      "chip_text": "no calf pain/swelling",
+                      "order": 6,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-relevant_negatives-7",
+                      "chip_text": "no weight loss",
+                      "order": 7,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-relevant_negatives-8",
+                      "chip_text": "no orthopnea",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-symptoms-3",
-          "chip_text": "exertional versus rest symptoms documented",
-          "order": 3,
-          "search_terms": [
-            "exertional",
-            "rest",
-            "activity"
+          "exam_findings": [
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-1",
+                      "chip_text": "SpO2 96% on RA",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-2",
+                      "chip_text": "SpO2 93% on RA",
+                      "order": 2,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-3",
+                      "chip_text": "SpO2 89% on RA",
+                      "order": 3,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-4",
+                      "chip_text": "RR 22/min",
+                      "order": 4,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-5",
+                      "chip_text": "RR 28/min",
+                      "order": 5,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-6",
+                      "chip_text": "HR 105 bpm",
+                      "order": 6,
+                      "search_terms": [
+                            "HR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-7",
+                      "chip_text": "chest: bilateral basal crackles",
+                      "order": 7,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-8",
+                      "chip_text": "chest: wheeze throughout",
+                      "order": 8,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-9",
+                      "chip_text": "chest: clear bilaterally",
+                      "order": 9,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-10",
+                      "chip_text": "JVP raised 6cm",
+                      "order": 10,
+                      "search_terms": [
+                            "JVP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-11",
+                      "chip_text": "peripheral oedema to mid-shin",
+                      "order": 11,
+                      "search_terms": [
+                            "peripheral"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-12",
+                      "chip_text": "no calf tenderness",
+                      "order": 12,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-13",
+                      "chip_text": "BMI 35",
+                      "order": 13,
+                      "search_terms": [
+                            "BMI"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-exam_findings-14",
+                      "chip_text": "trachea central",
+                      "order": 14,
+                      "search_terms": [
+                            "trachea"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-symptoms-4",
-          "chip_text": "MRC dyspnea grade documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "MRC",
-            "grade",
-            "scale"
+          "red_flags": [
+                {
+                      "chip_id": "resp-dyspnea-red_flags-1",
+                      "chip_text": "SpO2 <90% on RA",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-red_flags-2",
+                      "chip_text": "stridor",
+                      "order": 2,
+                      "search_terms": [
+                            "stridor"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-red_flags-3",
+                      "chip_text": "acute onset with pleuritic pain (? PE)",
+                      "order": 3,
+                      "search_terms": [
+                            "acute"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-red_flags-4",
+                      "chip_text": "hypotension with SOB",
+                      "order": 4,
+                      "search_terms": [
+                            "hypotension"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-red_flags-5",
+                      "chip_text": "massive hemoptysis",
+                      "order": 5,
+                      "search_terms": [
+                            "massive"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-red_flags-6",
+                      "chip_text": "tension pneumothorax signs",
+                      "order": 6,
+                      "search_terms": [
+                            "tension"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-red_flags-7",
+                      "chip_text": "anaphylaxis: urticaria + wheeze + hypotension",
+                      "order": 7,
+                      "search_terms": [
+                            "anaphylaxis:"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-red_flags-8",
+                      "chip_text": "unable to speak in sentences",
+                      "order": 8,
+                      "search_terms": [
+                            "unable"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-symptoms-5",
-          "chip_text": "orthopnea and PND reviewed",
-          "order": 5,
-          "search_terms": [
-            "orthopnea",
-            "PND",
-            "lying flat"
+          "investigations": [
+                {
+                      "chip_id": "resp-dyspnea-investigations-1",
+                      "chip_text": "CXR: pulmonary oedema",
+                      "order": 1,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-investigations-2",
+                      "chip_text": "CXR: bilateral effusions",
+                      "order": 2,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-investigations-3",
+                      "chip_text": "CXR: hyperinflated",
+                      "order": 3,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-investigations-4",
+                      "chip_text": "CXR: normal",
+                      "order": 4,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-investigations-5",
+                      "chip_text": "ABG: type 1 respiratory failure",
+                      "order": 5,
+                      "search_terms": [
+                            "ABG:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-investigations-6",
+                      "chip_text": "ABG: pH 7.35 pO2 7.8 pCO2 5.1",
+                      "order": 6,
+                      "search_terms": [
+                            "ABG:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-investigations-7",
+                      "chip_text": "BNP 850 pg/mL (elevated)",
+                      "order": 7,
+                      "search_terms": [
+                            "BNP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-investigations-8",
+                      "chip_text": "BNP normal <100",
+                      "order": 8,
+                      "search_terms": [
+                            "BNP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-investigations-9",
+                      "chip_text": "D-dimer elevated",
+                      "order": 9,
+                      "search_terms": [
+                            "D-dimer"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-investigations-10",
+                      "chip_text": "CTPA: PE confirmed",
+                      "order": 10,
+                      "search_terms": [
+                            "CTPA:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-investigations-11",
+                      "chip_text": "spirometry: restrictive pattern",
+                      "order": 11,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-investigations-12",
+                      "chip_text": "ECG: sinus tachycardia",
+                      "order": 12,
+                      "search_terms": [
+                            "ECG:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-investigations-13",
+                      "chip_text": "Hb 85 g/L (anaemia)",
+                      "order": 13,
+                      "search_terms": [
+                            "Hb"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-symptoms-6",
-          "chip_text": "cough, wheeze and chest pain reviewed",
-          "order": 6,
-          "search_terms": [
-            "cough",
-            "wheeze",
-            "chest",
-            "pain"
+          "plan_phrases": [
+                {
+                      "chip_id": "resp-dyspnea-plan_phrases-1",
+                      "chip_text": "oxygen to target SpO2 94-98%",
+                      "order": 1,
+                      "search_terms": [
+                            "oxygen"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-plan_phrases-2",
+                      "chip_text": "oxygen to target SpO2 88-92% (COPD)",
+                      "order": 2,
+                      "search_terms": [
+                            "oxygen"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-plan_phrases-3",
+                      "chip_text": "IV furosemide for pulmonary oedema",
+                      "order": 3,
+                      "search_terms": [
+                            "IV"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-plan_phrases-4",
+                      "chip_text": "nebulised salbutamol",
+                      "order": 4,
+                      "search_terms": [
+                            "nebulised"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-plan_phrases-5",
+                      "chip_text": "anticoagulation for confirmed PE",
+                      "order": 5,
+                      "search_terms": [
+                            "anticoagulation"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-plan_phrases-6",
+                      "chip_text": "refer cardiology if cardiac cause",
+                      "order": 6,
+                      "search_terms": [
+                            "refer"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-plan_phrases-7",
+                      "chip_text": "refer respiratory for further investigation",
+                      "order": 7,
+                      "search_terms": [
+                            "refer"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-plan_phrases-8",
+                      "chip_text": "trial diuretics",
+                      "order": 8,
+                      "search_terms": [
+                            "trial"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-plan_phrases-9",
+                      "chip_text": "CTPA if PE suspected",
+                      "order": 9,
+                      "search_terms": [
+                            "CTPA"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-plan_phrases-10",
+                      "chip_text": "echocardiogram requested",
+                      "order": 10,
+                      "search_terms": [
+                            "echocardiogram"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-plan_phrases-11",
+                      "chip_text": "blood transfusion if symptomatic anaemia",
+                      "order": 11,
+                      "search_terms": [
+                            "blood"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-plan_phrases-12",
+                      "chip_text": "admit if SpO2 <92% on RA",
+                      "order": 12,
+                      "search_terms": [
+                            "admit"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
+          "follow_up": [
+                {
+                      "chip_id": "resp-dyspnea-follow_up-1",
+                      "chip_text": "review 24-48h if acute",
+                      "order": 1,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-follow_up-2",
+                      "chip_text": "review 2 weeks post-treatment",
+                      "order": 2,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-follow_up-3",
+                      "chip_text": "urgent review if worsening",
+                      "order": 3,
+                      "search_terms": [
+                            "urgent"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-follow_up-4",
+                      "chip_text": "cardiology follow-up 4 weeks",
+                      "order": 4,
+                      "search_terms": [
+                            "cardiology"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-follow_up-5",
+                      "chip_text": "respiratory clinic 6 weeks",
+                      "order": 5,
+                      "search_terms": [
+                            "respiratory"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-dyspnea-follow_up-6",
+                      "chip_text": "PRN",
+                      "order": 6,
+                      "search_terms": [
+                            "PRN"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ]
-        },
-        {
-          "chip_id": "resp-dyspnea-symptoms-7",
-          "chip_text": "leg swelling reviewed",
-          "order": 7,
-          "search_terms": [
-            "leg",
-            "ankle",
-            "oedema"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-symptoms-8",
-          "chip_text": "nocturnal symptoms reviewed",
-          "order": 8,
-          "search_terms": [
-            "nocturnal",
-            "night"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-symptoms-9",
-          "chip_text": "functional limitation documented",
-          "order": 9,
-          "search_terms": [
-            "functional",
-            "limitation",
-            "ADL"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "relevant_negatives": [
-        {
-          "chip_id": "resp-dyspnea-relevant_negatives-1",
-          "chip_text": "no chest pain reported",
-          "order": 1,
-          "search_terms": [
-            "chest",
-            "pain"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-relevant_negatives-2",
-          "chip_text": "no syncope reported",
-          "order": 2,
-          "search_terms": [
-            "syncope",
-            "faint"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-relevant_negatives-3",
-          "chip_text": "no hemoptysis reported",
-          "order": 3,
-          "search_terms": [
-            "hemoptysis",
-            "blood"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-relevant_negatives-4",
-          "chip_text": "no fever reported",
-          "order": 4,
-          "search_terms": [
-            "fever"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "exam_findings": [
-        {
-          "chip_id": "resp-dyspnea-exam_findings-1",
-          "chip_text": "oxygen saturation documented if measured",
-          "order": 1,
-          "search_terms": [
-            "oxygen",
-            "SpO2"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-exam_findings-2",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 2,
-          "search_terms": [
-            "RR",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-exam_findings-3",
-          "chip_text": "work of breathing documented if assessed",
-          "order": 3,
-          "search_terms": [
-            "work",
-            "breathing",
-            "accessory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-exam_findings-4",
-          "chip_text": "chest auscultation documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "auscultation",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-exam_findings-5",
-          "chip_text": "peripheral oedema documented if assessed",
-          "order": 5,
-          "search_terms": [
-            "oedema",
-            "ankle",
-            "JVP"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-exam_findings-6",
-          "chip_text": "tracheal position documented if assessed",
-          "order": 6,
-          "search_terms": [
-            "trachea",
-            "deviation"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-exam_findings-7",
-          "chip_text": "peak flow recorded if measured",
-          "order": 7,
-          "search_terms": [
-            "peak",
-            "flow",
-            "PEFR"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "red_flags": [
-        {
-          "chip_id": "resp-dyspnea-red_flags-1",
-          "chip_text": "severe respiratory distress",
-          "order": 1,
-          "search_terms": [
-            "severe",
-            "distress"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-red_flags-2",
-          "chip_text": "oxygen saturation below baseline",
-          "order": 2,
-          "search_terms": [
-            "low",
-            "oxygen",
-            "desaturation"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-red_flags-3",
-          "chip_text": "cyanosis",
-          "order": 3,
-          "search_terms": [
-            "cyanosis"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-red_flags-4",
-          "chip_text": "inability to speak full sentences",
-          "order": 4,
-          "search_terms": [
-            "speak",
-            "sentences"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-red_flags-5",
-          "chip_text": "stridor",
-          "order": 5,
-          "search_terms": [
-            "stridor",
-            "upper airway"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-red_flags-6",
-          "chip_text": "unilateral chest signs",
-          "order": 6,
-          "search_terms": [
-            "unilateral",
-            "pneumothorax",
-            "effusion"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        }
-      ],
-      "investigations": [
-        {
-          "chip_id": "resp-dyspnea-investigations-1",
-          "chip_text": "ECG reviewed if performed",
-          "order": 1,
-          "search_terms": [
-            "ECG",
-            "EKG"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-investigations-2",
-          "chip_text": "chest imaging reviewed if available",
-          "order": 2,
-          "search_terms": [
-            "CXR",
-            "chest",
-            "X-ray",
-            "CT"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-investigations-3",
-          "chip_text": "blood tests reviewed if ordered",
-          "order": 3,
-          "search_terms": [
-            "blood",
-            "labs",
-            "BNP",
-            "D-dimer"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-investigations-4",
-          "chip_text": "previous PFT reviewed if available",
-          "order": 4,
-          "search_terms": [
-            "PFT",
-            "FEV1",
-            "FVC"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "plan_phrases": [
-        {
-          "chip_id": "resp-dyspnea-plan_phrases-1",
-          "chip_text": "clinician-entered plan documented",
-          "order": 1,
-          "search_terms": [
-            "plan",
-            "management"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-plan_phrases-2",
-          "chip_text": "safety-netting documented if discussed",
-          "order": 2,
-          "search_terms": [
-            "safety",
-            "netting"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-plan_phrases-3",
-          "chip_text": "referral documented if clinician decided",
-          "order": 3,
-          "search_terms": [
-            "referral",
-            "respiratory",
-            "cardiology"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-plan_phrases-4",
-          "chip_text": "follow-up documented if arranged",
-          "order": 4,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "follow_up": [
-        {
-          "chip_id": "resp-dyspnea-follow_up-1",
-          "chip_text": "1-2 weeks",
-          "order": 1,
-          "search_terms": [
-            "one",
-            "two",
-            "weeks"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-follow_up-2",
-          "chip_text": "2-4 weeks",
-          "order": 2,
-          "search_terms": [
-            "two",
-            "four",
-            "weeks"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-follow_up-3",
-          "chip_text": "sooner if worsening",
-          "order": 3,
-          "search_terms": [
-            "sooner",
-            "worsening"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-dyspnea-follow_up-4",
-          "chip_text": "PRN",
-          "order": 4,
-          "search_terms": [
-            "PRN",
-            "as needed"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ]
     },
     "resp-hemoptysis-documentation": {
-      "symptoms": [
-        {
-          "chip_id": "resp-hemoptysis-documentation-symptoms-1",
-          "chip_text": "hemoptysis",
-          "order": 1,
-          "search_terms": [
-            "hemoptysis",
-            "blood",
-            "coughing blood"
+          "symptoms": [
+                {
+                      "chip_id": "resp-hemoptysis-documentation-symptoms-1",
+                      "chip_text": "blood-streaked sputum",
+                      "order": 1,
+                      "search_terms": [
+                            "blood-streaked"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-symptoms-2",
+                      "chip_text": "frank hemoptysis: teaspoon volume",
+                      "order": 2,
+                      "search_terms": [
+                            "frank"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-symptoms-3",
+                      "chip_text": "hemoptysis: tablespoon volume",
+                      "order": 3,
+                      "search_terms": [
+                            "hemoptysis:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-symptoms-4",
+                      "chip_text": "hemoptysis daily for 3 days",
+                      "order": 4,
+                      "search_terms": [
+                            "hemoptysis"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-symptoms-5",
+                      "chip_text": "single episode hemoptysis",
+                      "order": 5,
+                      "search_terms": [
+                            "single"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-symptoms-6",
+                      "chip_text": "cough with blood-tinged sputum",
+                      "order": 6,
+                      "search_terms": [
+                            "cough"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-symptoms-7",
+                      "chip_text": "associated SOB",
+                      "order": 7,
+                      "search_terms": [
+                            "associated"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-symptoms-8",
+                      "chip_text": "associated chest pain",
+                      "order": 8,
+                      "search_terms": [
+                            "associated"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-symptoms-9",
+                      "chip_text": "associated weight loss",
+                      "order": 9,
+                      "search_terms": [
+                            "associated"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-symptoms-10",
+                      "chip_text": "associated fever",
+                      "order": 10,
+                      "search_terms": [
+                            "associated"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-symptoms-11",
+                      "chip_text": "smoker 30 pack-years",
+                      "order": 11,
+                      "search_terms": [
+                            "smoker"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-symptoms-12",
+                      "chip_text": "recent LRTI",
+                      "order": 12,
+                      "search_terms": [
+                            "recent"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-symptoms-2",
-          "chip_text": "amount documented",
-          "order": 2,
-          "search_terms": [
-            "amount",
-            "volume",
-            "quantity"
+          "relevant_negatives": [
+                {
+                      "chip_id": "resp-hemoptysis-documentation-relevant_negatives-1",
+                      "chip_text": "no epistaxis (source not nasal)",
+                      "order": 1,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-relevant_negatives-2",
+                      "chip_text": "no haematemesis",
+                      "order": 2,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-relevant_negatives-3",
+                      "chip_text": "no anticoagulant use",
+                      "order": 3,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-relevant_negatives-4",
+                      "chip_text": "no bleeding from gums",
+                      "order": 4,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-relevant_negatives-5",
+                      "chip_text": "no bruising",
+                      "order": 5,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-relevant_negatives-6",
+                      "chip_text": "no TB contacts",
+                      "order": 6,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-relevant_negatives-7",
+                      "chip_text": "no recent travel",
+                      "order": 7,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-relevant_negatives-8",
+                      "chip_text": "no DVT symptoms",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-symptoms-3",
-          "chip_text": "color and context documented",
-          "order": 3,
-          "search_terms": [
-            "color",
-            "frank",
-            "streaked"
+          "exam_findings": [
+                {
+                      "chip_id": "resp-hemoptysis-documentation-exam_findings-1",
+                      "chip_text": "SpO2 97% on RA",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-exam_findings-2",
+                      "chip_text": "SpO2 94% on RA",
+                      "order": 2,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-exam_findings-3",
+                      "chip_text": "RR 18/min",
+                      "order": 3,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-exam_findings-4",
+                      "chip_text": "chest: crackles right upper zone",
+                      "order": 4,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-exam_findings-5",
+                      "chip_text": "chest: clear bilaterally",
+                      "order": 5,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-exam_findings-6",
+                      "chip_text": "chest: bronchial breathing left apex",
+                      "order": 6,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-exam_findings-7",
+                      "chip_text": "no cervical lymphadenopathy",
+                      "order": 7,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-exam_findings-8",
+                      "chip_text": "no clubbing",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-exam_findings-9",
+                      "chip_text": "no pallor",
+                      "order": 9,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-exam_findings-10",
+                      "chip_text": "oropharynx: no bleeding source",
+                      "order": 10,
+                      "search_terms": [
+                            "oropharynx:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-exam_findings-11",
+                      "chip_text": "HR 88 bpm regular",
+                      "order": 11,
+                      "search_terms": [
+                            "HR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-exam_findings-12",
+                      "chip_text": "BP 135/82 mmHg",
+                      "order": 12,
+                      "search_terms": [
+                            "BP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-symptoms-4",
-          "chip_text": "cough and sputum reviewed",
-          "order": 4,
-          "search_terms": [
-            "cough",
-            "sputum"
+          "red_flags": [
+                {
+                      "chip_id": "resp-hemoptysis-documentation-red_flags-1",
+                      "chip_text": "massive hemoptysis >200mL/24h",
+                      "order": 1,
+                      "search_terms": [
+                            "massive"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-red_flags-2",
+                      "chip_text": "hemodynamic instability with hemoptysis",
+                      "order": 2,
+                      "search_terms": [
+                            "hemodynamic"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-red_flags-3",
+                      "chip_text": "SpO2 <92% with hemoptysis",
+                      "order": 3,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-red_flags-4",
+                      "chip_text": "suspected lung malignancy",
+                      "order": 4,
+                      "search_terms": [
+                            "suspected"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-red_flags-5",
+                      "chip_text": "new hemoptysis in smoker >40 years",
+                      "order": 5,
+                      "search_terms": [
+                            "new"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-red_flags-6",
+                      "chip_text": "hemoptysis with weight loss",
+                      "order": 6,
+                      "search_terms": [
+                            "hemoptysis"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-red_flags-7",
+                      "chip_text": "hemoptysis on anticoagulants",
+                      "order": 7,
+                      "search_terms": [
+                            "hemoptysis"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-red_flags-8",
+                      "chip_text": "respiratory distress",
+                      "order": 8,
+                      "search_terms": [
+                            "respiratory"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-symptoms-5",
-          "chip_text": "chest pain and dyspnea reviewed",
-          "order": 5,
-          "search_terms": [
-            "chest",
-            "pain",
-            "dyspnea"
+          "investigations": [
+                {
+                      "chip_id": "resp-hemoptysis-documentation-investigations-1",
+                      "chip_text": "CXR: right upper lobe mass",
+                      "order": 1,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-investigations-2",
+                      "chip_text": "CXR: cavitating lesion",
+                      "order": 2,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-investigations-3",
+                      "chip_text": "CXR: normal",
+                      "order": 3,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-investigations-4",
+                      "chip_text": "CXR: apical fibrosis",
+                      "order": 4,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-investigations-5",
+                      "chip_text": "FBC: Hb 128 g/L",
+                      "order": 5,
+                      "search_terms": [
+                            "FBC:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-investigations-6",
+                      "chip_text": "coagulation: INR 1.0",
+                      "order": 6,
+                      "search_terms": [
+                            "coagulation:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-investigations-7",
+                      "chip_text": "sputum AFB: negative x3",
+                      "order": 7,
+                      "search_terms": [
+                            "sputum"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-investigations-8",
+                      "chip_text": "sputum cytology: sent",
+                      "order": 8,
+                      "search_terms": [
+                            "sputum"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-investigations-9",
+                      "chip_text": "CT thorax: 3cm spiculated mass RUL",
+                      "order": 9,
+                      "search_terms": [
+                            "CT"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-investigations-10",
+                      "chip_text": "CT thorax: bronchiectasis",
+                      "order": 10,
+                      "search_terms": [
+                            "CT"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-investigations-11",
+                      "chip_text": "renal function: normal",
+                      "order": 11,
+                      "search_terms": [
+                            "renal"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-investigations-12",
+                      "chip_text": "CRP 45 mg/L",
+                      "order": 12,
+                      "search_terms": [
+                            "CRP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-symptoms-6",
-          "chip_text": "fever, night sweats and weight loss reviewed",
-          "order": 6,
-          "search_terms": [
-            "fever",
-            "sweats",
-            "weight",
-            "TB"
+          "plan_phrases": [
+                {
+                      "chip_id": "resp-hemoptysis-documentation-plan_phrases-1",
+                      "chip_text": "urgent 2-week-wait lung cancer pathway",
+                      "order": 1,
+                      "search_terms": [
+                            "urgent"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-plan_phrases-2",
+                      "chip_text": "CT thorax within 2 weeks",
+                      "order": 2,
+                      "search_terms": [
+                            "CT"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-plan_phrases-3",
+                      "chip_text": "sputum AFB x3 if TB suspected",
+                      "order": 3,
+                      "search_terms": [
+                            "sputum"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-plan_phrases-4",
+                      "chip_text": "bronchoscopy referral",
+                      "order": 4,
+                      "search_terms": [
+                            "bronchoscopy"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-plan_phrases-5",
+                      "chip_text": "stop anticoagulant and discuss with haematology",
+                      "order": 5,
+                      "search_terms": [
+                            "stop"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-plan_phrases-6",
+                      "chip_text": "tranexamic acid if ongoing",
+                      "order": 6,
+                      "search_terms": [
+                            "tranexamic"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-plan_phrases-7",
+                      "chip_text": "admit if massive hemoptysis",
+                      "order": 7,
+                      "search_terms": [
+                            "admit"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-plan_phrases-8",
+                      "chip_text": "interventional radiology if uncontrolled",
+                      "order": 8,
+                      "search_terms": [
+                            "interventional"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-plan_phrases-9",
+                      "chip_text": "reassure if single episode post-LRTI",
+                      "order": 9,
+                      "search_terms": [
+                            "reassure"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-plan_phrases-10",
+                      "chip_text": "smoking cessation urgent",
+                      "order": 10,
+                      "search_terms": [
+                            "smoking"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-plan_phrases-11",
+                      "chip_text": "repeat CXR 6 weeks if initial normal",
+                      "order": 11,
+                      "search_terms": [
+                            "repeat"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-plan_phrases-12",
+                      "chip_text": "check coagulation screen",
+                      "order": 12,
+                      "search_terms": [
+                            "check"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
+          "follow_up": [
+                {
+                      "chip_id": "resp-hemoptysis-documentation-follow_up-1",
+                      "chip_text": "urgent respiratory clinic 2 weeks",
+                      "order": 1,
+                      "search_terms": [
+                            "urgent"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-follow_up-2",
+                      "chip_text": "review with CT result",
+                      "order": 2,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-follow_up-3",
+                      "chip_text": "review with sputum results",
+                      "order": 3,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-follow_up-4",
+                      "chip_text": "immediate ED if massive hemoptysis",
+                      "order": 4,
+                      "search_terms": [
+                            "immediate"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-follow_up-5",
+                      "chip_text": "GP review 1 week",
+                      "order": 5,
+                      "search_terms": [
+                            "GP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-hemoptysis-documentation-follow_up-6",
+                      "chip_text": "PRN",
+                      "order": 6,
+                      "search_terms": [
+                            "PRN"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-symptoms-7",
-          "chip_text": "smoking history reviewed",
-          "order": 7,
-          "search_terms": [
-            "smoking",
-            "cigarettes"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-symptoms-8",
-          "chip_text": "anticoagulant use reviewed if relevant",
-          "order": 8,
-          "search_terms": [
-            "anticoagulant",
-            "warfarin",
-            "DOAC"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-symptoms-9",
-          "chip_text": "prior episodes reviewed if applicable",
-          "order": 9,
-          "search_terms": [
-            "prior",
-            "previous",
-            "recurrent"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "relevant_negatives": [
-        {
-          "chip_id": "resp-hemoptysis-documentation-relevant_negatives-1",
-          "chip_text": "no massive bleeding reported if documented",
-          "order": 1,
-          "search_terms": [
-            "massive",
-            "large",
-            "volume"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-relevant_negatives-2",
-          "chip_text": "no severe breathlessness reported",
-          "order": 2,
-          "search_terms": [
-            "severe",
-            "breathlessness"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-relevant_negatives-3",
-          "chip_text": "no chest trauma reported",
-          "order": 3,
-          "search_terms": [
-            "trauma",
-            "injury"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-relevant_negatives-4",
-          "chip_text": "no TB symptoms reported if applicable",
-          "order": 4,
-          "search_terms": [
-            "TB",
-            "tuberculosis"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "exam_findings": [
-        {
-          "chip_id": "resp-hemoptysis-documentation-exam_findings-1",
-          "chip_text": "vitals documented if measured",
-          "order": 1,
-          "search_terms": [
-            "vitals",
-            "BP",
-            "pulse"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-exam_findings-2",
-          "chip_text": "chest auscultation documented if assessed",
-          "order": 2,
-          "search_terms": [
-            "auscultation",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-exam_findings-3",
-          "chip_text": "oxygen saturation documented if measured",
-          "order": 3,
-          "search_terms": [
-            "oxygen",
-            "SpO2"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-exam_findings-4",
-          "chip_text": "oropharynx documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "oropharynx",
-            "throat"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-exam_findings-5",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 5,
-          "search_terms": [
-            "RR",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "red_flags": [
-        {
-          "chip_id": "resp-hemoptysis-documentation-red_flags-1",
-          "chip_text": "massive hemoptysis",
-          "order": 1,
-          "search_terms": [
-            "massive",
-            "large",
-            "volume"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-red_flags-2",
-          "chip_text": "constitutional symptoms with hemoptysis",
-          "order": 2,
-          "search_terms": [
-            "weight",
-            "fever",
-            "sweats"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-red_flags-3",
-          "chip_text": "known malignancy risk with new hemoptysis",
-          "order": 3,
-          "search_terms": [
-            "malignancy",
-            "smoker"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-red_flags-4",
-          "chip_text": "on anticoagulation with new hemoptysis",
-          "order": 4,
-          "search_terms": [
-            "anticoagulant",
-            "INR"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        }
-      ],
-      "investigations": [
-        {
-          "chip_id": "resp-hemoptysis-documentation-investigations-1",
-          "chip_text": "chest imaging reviewed if available",
-          "order": 1,
-          "search_terms": [
-            "CXR",
-            "CT",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-investigations-2",
-          "chip_text": "blood tests reviewed if ordered",
-          "order": 2,
-          "search_terms": [
-            "blood",
-            "labs",
-            "coagulation"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-investigations-3",
-          "chip_text": "sputum studies reviewed if ordered",
-          "order": 3,
-          "search_terms": [
-            "sputum",
-            "culture",
-            "AFB"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "plan_phrases": [
-        {
-          "chip_id": "resp-hemoptysis-documentation-plan_phrases-1",
-          "chip_text": "clinician-entered plan documented",
-          "order": 1,
-          "search_terms": [
-            "plan",
-            "management"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-plan_phrases-2",
-          "chip_text": "safety-netting documented if discussed",
-          "order": 2,
-          "search_terms": [
-            "safety",
-            "netting"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-plan_phrases-3",
-          "chip_text": "follow-up documented if clinician decided",
-          "order": 3,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-plan_phrases-4",
-          "chip_text": "referral documented if clinician decided",
-          "order": 4,
-          "search_terms": [
-            "referral",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "follow_up": [
-        {
-          "chip_id": "resp-hemoptysis-documentation-follow_up-1",
-          "chip_text": "2-4 weeks",
-          "order": 1,
-          "search_terms": [
-            "two",
-            "four",
-            "weeks"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-follow_up-2",
-          "chip_text": "4-6 weeks",
-          "order": 2,
-          "search_terms": [
-            "four",
-            "six",
-            "weeks"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-follow_up-3",
-          "chip_text": "sooner if worsening",
-          "order": 3,
-          "search_terms": [
-            "sooner",
-            "worsening"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-follow_up-4",
-          "chip_text": "PRN",
-          "order": 4,
-          "search_terms": [
-            "PRN",
-            "as needed"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-hemoptysis-documentation-follow_up-5",
-          "chip_text": "sooner if bleeding recurs",
-          "order": 5,
-          "search_terms": [
-            "bleeding",
-            "recurrent"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ]
     },
     "resp-pneumonia-followup": {
-      "symptoms": [
-        {
-          "chip_id": "resp-pneumonia-followup-symptoms-1",
-          "chip_text": "pneumonia follow-up",
-          "order": 1,
-          "search_terms": [
-            "pneumonia",
-            "followup"
+          "symptoms": [
+                {
+                      "chip_id": "resp-pneumonia-followup-symptoms-1",
+                      "chip_text": "productive cough 5 days",
+                      "order": 1,
+                      "search_terms": [
+                            "productive"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-symptoms-2",
+                      "chip_text": "sputum: rusty/blood-tinged",
+                      "order": 2,
+                      "search_terms": [
+                            "sputum:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-symptoms-3",
+                      "chip_text": "sputum: green purulent",
+                      "order": 3,
+                      "search_terms": [
+                            "sputum:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-symptoms-4",
+                      "chip_text": "fever 38.5°C",
+                      "order": 4,
+                      "search_terms": [
+                            "fever"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-symptoms-5",
+                      "chip_text": "rigors",
+                      "order": 5,
+                      "search_terms": [
+                            "rigors"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-symptoms-6",
+                      "chip_text": "pleuritic chest pain right side",
+                      "order": 6,
+                      "search_terms": [
+                            "pleuritic"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-symptoms-7",
+                      "chip_text": "SOB progressive over 3 days",
+                      "order": 7,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-symptoms-8",
+                      "chip_text": "malaise and anorexia",
+                      "order": 8,
+                      "search_terms": [
+                            "malaise"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-symptoms-9",
+                      "chip_text": "confusion (new onset)",
+                      "order": 9,
+                      "search_terms": [
+                            "confusion"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-symptoms-10",
+                      "chip_text": "myalgia",
+                      "order": 10,
+                      "search_terms": [
+                            "myalgia"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-symptoms-11",
+                      "chip_text": "preceded by URTI",
+                      "order": 11,
+                      "search_terms": [
+                            "preceded"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-symptoms-12",
+                      "chip_text": "night sweats",
+                      "order": 12,
+                      "search_terms": [
+                            "night"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-symptoms-2",
-          "chip_text": "symptom progress reviewed",
-          "order": 2,
-          "search_terms": [
-            "symptom",
-            "progress"
+          "relevant_negatives": [
+                {
+                      "chip_id": "resp-pneumonia-followup-relevant_negatives-1",
+                      "chip_text": "no hemoptysis",
+                      "order": 1,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-relevant_negatives-2",
+                      "chip_text": "no weight loss >3 months",
+                      "order": 2,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-relevant_negatives-3",
+                      "chip_text": "no TB contacts",
+                      "order": 3,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-relevant_negatives-4",
+                      "chip_text": "no recent travel",
+                      "order": 4,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-relevant_negatives-5",
+                      "chip_text": "no immunosuppression",
+                      "order": 5,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-relevant_negatives-6",
+                      "chip_text": "no aspiration risk",
+                      "order": 6,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-relevant_negatives-7",
+                      "chip_text": "no leg swelling/DVT symptoms",
+                      "order": 7,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-relevant_negatives-8",
+                      "chip_text": "no rash",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-symptoms-3",
-          "chip_text": "cough and sputum reviewed",
-          "order": 3,
-          "search_terms": [
-            "cough",
-            "sputum",
-            "phlegm"
+          "exam_findings": [
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-1",
+                      "chip_text": "SpO2 94% on RA",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-2",
+                      "chip_text": "SpO2 91% on RA",
+                      "order": 2,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-3",
+                      "chip_text": "SpO2 88% on RA",
+                      "order": 3,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-4",
+                      "chip_text": "temp 38.8°C",
+                      "order": 4,
+                      "search_terms": [
+                            "temp"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-5",
+                      "chip_text": "RR 24/min",
+                      "order": 5,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-6",
+                      "chip_text": "RR 30/min",
+                      "order": 6,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-7",
+                      "chip_text": "HR 110 bpm",
+                      "order": 7,
+                      "search_terms": [
+                            "HR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-8",
+                      "chip_text": "BP 100/60 mmHg",
+                      "order": 8,
+                      "search_terms": [
+                            "BP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-9",
+                      "chip_text": "chest: bronchial breathing right base",
+                      "order": 9,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-10",
+                      "chip_text": "chest: crackles right lower zone",
+                      "order": 10,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-11",
+                      "chip_text": "chest: dullness to percussion left base",
+                      "order": 11,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-12",
+                      "chip_text": "reduced air entry left base",
+                      "order": 12,
+                      "search_terms": [
+                            "reduced"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-13",
+                      "chip_text": "tactile vocal fremitus increased",
+                      "order": 13,
+                      "search_terms": [
+                            "tactile"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-exam_findings-14",
+                      "chip_text": "confused: AMT 7/10",
+                      "order": 14,
+                      "search_terms": [
+                            "confused:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-symptoms-4",
-          "chip_text": "fever reviewed",
-          "order": 4,
-          "search_terms": [
-            "fever",
-            "temperature"
+          "red_flags": [
+                {
+                      "chip_id": "resp-pneumonia-followup-red_flags-1",
+                      "chip_text": "CURB-65 score ≥3",
+                      "order": 1,
+                      "search_terms": [
+                            "CURB-65"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-red_flags-2",
+                      "chip_text": "SpO2 <92% on RA",
+                      "order": 2,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-red_flags-3",
+                      "chip_text": "systolic BP <90 mmHg",
+                      "order": 3,
+                      "search_terms": [
+                            "systolic"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-red_flags-4",
+                      "chip_text": "RR >30/min",
+                      "order": 4,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-red_flags-5",
+                      "chip_text": "new confusion",
+                      "order": 5,
+                      "search_terms": [
+                            "new"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-red_flags-6",
+                      "chip_text": "bilateral/multilobar involvement",
+                      "order": 6,
+                      "search_terms": [
+                            "bilateral/multilobar"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-red_flags-7",
+                      "chip_text": "empyema suspected",
+                      "order": 7,
+                      "search_terms": [
+                            "empyema"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-red_flags-8",
+                      "chip_text": "sepsis: lactate >2",
+                      "order": 8,
+                      "search_terms": [
+                            "sepsis:"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-symptoms-5",
-          "chip_text": "dyspnea reviewed",
-          "order": 5,
-          "search_terms": [
-            "dyspnea",
-            "SOB"
+          "investigations": [
+                {
+                      "chip_id": "resp-pneumonia-followup-investigations-1",
+                      "chip_text": "CXR: right lower lobe consolidation",
+                      "order": 1,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-investigations-2",
+                      "chip_text": "CXR: left basal opacity",
+                      "order": 2,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-investigations-3",
+                      "chip_text": "CXR: bilateral patchy infiltrates",
+                      "order": 3,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-investigations-4",
+                      "chip_text": "CXR: parapneumonic effusion",
+                      "order": 4,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-investigations-5",
+                      "chip_text": "WCC 18.5 x10^9/L",
+                      "order": 5,
+                      "search_terms": [
+                            "WCC"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-investigations-6",
+                      "chip_text": "CRP 185 mg/L",
+                      "order": 6,
+                      "search_terms": [
+                            "CRP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-investigations-7",
+                      "chip_text": "procalcitonin elevated",
+                      "order": 7,
+                      "search_terms": [
+                            "procalcitonin"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-investigations-8",
+                      "chip_text": "U&E: urea 8.2 mmol/L",
+                      "order": 8,
+                      "search_terms": [
+                            "U&E:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-investigations-9",
+                      "chip_text": "blood cultures: pending",
+                      "order": 9,
+                      "search_terms": [
+                            "blood"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-investigations-10",
+                      "chip_text": "sputum MC&S: Strep pneumoniae",
+                      "order": 10,
+                      "search_terms": [
+                            "sputum"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-investigations-11",
+                      "chip_text": "lactate 1.8 mmol/L",
+                      "order": 11,
+                      "search_terms": [
+                            "lactate"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-investigations-12",
+                      "chip_text": "CURB-65 score 2",
+                      "order": 12,
+                      "search_terms": [
+                            "CURB-65"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-symptoms-6",
-          "chip_text": "functional recovery reviewed",
-          "order": 6,
-          "search_terms": [
-            "functional",
-            "recovery",
-            "energy"
+          "plan_phrases": [
+                {
+                      "chip_id": "resp-pneumonia-followup-plan_phrases-1",
+                      "chip_text": "oral amoxicillin started",
+                      "order": 1,
+                      "search_terms": [
+                            "oral"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-plan_phrases-2",
+                      "chip_text": "oral doxycycline if penicillin allergy",
+                      "order": 2,
+                      "search_terms": [
+                            "oral"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-plan_phrases-3",
+                      "chip_text": "IV co-amoxiclav for CURB-65 ≥3",
+                      "order": 3,
+                      "search_terms": [
+                            "IV"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-plan_phrases-4",
+                      "chip_text": "add clarithromycin for atypical cover",
+                      "order": 4,
+                      "search_terms": [
+                            "add"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-plan_phrases-5",
+                      "chip_text": "oxygen target SpO2 94-98%",
+                      "order": 5,
+                      "search_terms": [
+                            "oxygen"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-plan_phrases-6",
+                      "chip_text": "IV fluids for dehydration",
+                      "order": 6,
+                      "search_terms": [
+                            "IV"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-plan_phrases-7",
+                      "chip_text": "repeat CXR 6 weeks to confirm resolution",
+                      "order": 7,
+                      "search_terms": [
+                            "repeat"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-plan_phrases-8",
+                      "chip_text": "switch IV to oral at 48h if improving",
+                      "order": 8,
+                      "search_terms": [
+                            "switch"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-plan_phrases-9",
+                      "chip_text": "VTE prophylaxis if admitted",
+                      "order": 9,
+                      "search_terms": [
+                            "VTE"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-plan_phrases-10",
+                      "chip_text": "escalate if no improvement 48h",
+                      "order": 10,
+                      "search_terms": [
+                            "escalate"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-plan_phrases-11",
+                      "chip_text": "smoking cessation advice",
+                      "order": 11,
+                      "search_terms": [
+                            "smoking"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-plan_phrases-12",
+                      "chip_text": "pneumococcal vaccine if not given",
+                      "order": 12,
+                      "search_terms": [
+                            "pneumococcal"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
+          "follow_up": [
+                {
+                      "chip_id": "resp-pneumonia-followup-follow_up-1",
+                      "chip_text": "review 48h if not improving",
+                      "order": 1,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-follow_up-2",
+                      "chip_text": "repeat CXR 6 weeks",
+                      "order": 2,
+                      "search_terms": [
+                            "repeat"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-follow_up-3",
+                      "chip_text": "GP review 1 week post-discharge",
+                      "order": 3,
+                      "search_terms": [
+                            "GP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-follow_up-4",
+                      "chip_text": "urgent review if deteriorating",
+                      "order": 4,
+                      "search_terms": [
+                            "urgent"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-follow_up-5",
+                      "chip_text": "consider CT if non-resolving",
+                      "order": 5,
+                      "search_terms": [
+                            "consider"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pneumonia-followup-follow_up-6",
+                      "chip_text": "PRN",
+                      "order": 6,
+                      "search_terms": [
+                            "PRN"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-symptoms-7",
-          "chip_text": "medication and adherence context reviewed if relevant",
-          "order": 7,
-          "search_terms": [
-            "adherence",
-            "antibiotics"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-symptoms-8",
-          "chip_text": "appetite and hydration reviewed",
-          "order": 8,
-          "search_terms": [
-            "appetite",
-            "hydration"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-symptoms-9",
-          "chip_text": "residual chest pain reviewed",
-          "order": 9,
-          "search_terms": [
-            "chest",
-            "pain",
-            "pleuritic"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "relevant_negatives": [
-        {
-          "chip_id": "resp-pneumonia-followup-relevant_negatives-1",
-          "chip_text": "no worsening breathlessness reported",
-          "order": 1,
-          "search_terms": [
-            "worsening",
-            "breathlessness"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-relevant_negatives-2",
-          "chip_text": "no persistent fever reported",
-          "order": 2,
-          "search_terms": [
-            "persistent",
-            "fever"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-relevant_negatives-3",
-          "chip_text": "no hemoptysis reported",
-          "order": 3,
-          "search_terms": [
-            "hemoptysis",
-            "blood"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "exam_findings": [
-        {
-          "chip_id": "resp-pneumonia-followup-exam_findings-1",
-          "chip_text": "oxygen saturation documented if measured",
-          "order": 1,
-          "search_terms": [
-            "oxygen",
-            "SpO2"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-exam_findings-2",
-          "chip_text": "chest auscultation documented if assessed",
-          "order": 2,
-          "search_terms": [
-            "auscultation",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-exam_findings-3",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 3,
-          "search_terms": [
-            "RR",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-exam_findings-4",
-          "chip_text": "temperature documented if measured",
-          "order": 4,
-          "search_terms": [
-            "temperature",
-            "fever"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-exam_findings-5",
-          "chip_text": "chest percussion documented if assessed",
-          "order": 5,
-          "search_terms": [
-            "percussion",
-            "dullness"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "red_flags": [
-        {
-          "chip_id": "resp-pneumonia-followup-red_flags-1",
-          "chip_text": "persistent or recurrent fever",
-          "order": 1,
-          "search_terms": [
-            "persistent",
-            "fever",
-            "recurrent"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-red_flags-2",
-          "chip_text": "worsening dyspnea",
-          "order": 2,
-          "search_terms": [
-            "worsening",
-            "dyspnea"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-red_flags-3",
-          "chip_text": "persistent focal chest signs",
-          "order": 3,
-          "search_terms": [
-            "focal",
-            "chest",
-            "signs"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-red_flags-4",
-          "chip_text": "incomplete resolution on imaging if performed",
-          "order": 4,
-          "search_terms": [
-            "incomplete",
-            "resolution"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        }
-      ],
-      "investigations": [
-        {
-          "chip_id": "resp-pneumonia-followup-investigations-1",
-          "chip_text": "chest imaging reviewed if available",
-          "order": 1,
-          "search_terms": [
-            "CXR",
-            "chest",
-            "X-ray"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-investigations-2",
-          "chip_text": "blood tests reviewed if ordered",
-          "order": 2,
-          "search_terms": [
-            "blood",
-            "labs",
-            "CRP"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "plan_phrases": [
-        {
-          "chip_id": "resp-pneumonia-followup-plan_phrases-1",
-          "chip_text": "clinician-entered plan documented",
-          "order": 1,
-          "search_terms": [
-            "plan",
-            "management"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-plan_phrases-2",
-          "chip_text": "safety-netting documented if discussed",
-          "order": 2,
-          "search_terms": [
-            "safety",
-            "netting"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-plan_phrases-3",
-          "chip_text": "follow-up imaging documented if clinician decided",
-          "order": 3,
-          "search_terms": [
-            "follow",
-            "up",
-            "CXR"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-plan_phrases-4",
-          "chip_text": "referral documented if clinician decided",
-          "order": 4,
-          "search_terms": [
-            "referral",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-plan_phrases-5",
-          "chip_text": "follow-up documented if arranged",
-          "order": 5,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-plan_phrases-6",
-          "chip_text": "chest physiotherapy discussed if applicable",
-          "order": 6,
-          "search_terms": [
-            "physiotherapy",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "follow_up": [
-        {
-          "chip_id": "resp-pneumonia-followup-follow_up-1",
-          "chip_text": "4-6 weeks",
-          "order": 1,
-          "search_terms": [
-            "four",
-            "six",
-            "weeks"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-follow_up-2",
-          "chip_text": "6-8 weeks if imaging follow-up needed",
-          "order": 2,
-          "search_terms": [
-            "six",
-            "eight",
-            "CXR"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-follow_up-3",
-          "chip_text": "sooner if not improving",
-          "order": 3,
-          "search_terms": [
-            "sooner",
-            "worsening"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-follow_up-4",
-          "chip_text": "PRN",
-          "order": 4,
-          "search_terms": [
-            "PRN",
-            "as needed"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pneumonia-followup-follow_up-5",
-          "chip_text": "sooner if fever recurs",
-          "order": 5,
-          "search_terms": [
-            "fever",
-            "recurrent"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ]
     },
     "resp-pulmonary-function-review": {
-      "symptoms": [
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-1",
-          "chip_text": "pulmonary function review",
-          "order": 1,
-          "search_terms": [
-            "PFT",
-            "pulmonary",
-            "function"
+          "symptoms": [
+                {
+                      "chip_id": "resp-pulmonary-function-review-symptoms-1",
+                      "chip_text": "progressive SOB over months",
+                      "order": 1,
+                      "search_terms": [
+                            "progressive"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-symptoms-2",
+                      "chip_text": "dry cough persistent",
+                      "order": 2,
+                      "search_terms": [
+                            "dry"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-symptoms-3",
+                      "chip_text": "reduced exercise tolerance",
+                      "order": 3,
+                      "search_terms": [
+                            "reduced"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-symptoms-4",
+                      "chip_text": "desaturation on exertion",
+                      "order": 4,
+                      "search_terms": [
+                            "desaturation"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-symptoms-5",
+                      "chip_text": "occupational dust exposure",
+                      "order": 5,
+                      "search_terms": [
+                            "occupational"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-symptoms-6",
+                      "chip_text": "asbestos exposure history",
+                      "order": 6,
+                      "search_terms": [
+                            "asbestos"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-symptoms-7",
+                      "chip_text": "connective tissue disease known",
+                      "order": 7,
+                      "search_terms": [
+                            "connective"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-symptoms-8",
+                      "chip_text": "clubbing noted by patient",
+                      "order": 8,
+                      "search_terms": [
+                            "clubbing"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-symptoms-9",
+                      "chip_text": "fatigue and weight loss",
+                      "order": 9,
+                      "search_terms": [
+                            "fatigue"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-symptoms-10",
+                      "chip_text": "fine inspiratory crackles heard previously",
+                      "order": 10,
+                      "search_terms": [
+                            "fine"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-symptoms-11",
+                      "chip_text": "home oxygen use",
+                      "order": 11,
+                      "search_terms": [
+                            "home"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-symptoms-12",
+                      "chip_text": "SOB limiting ADLs",
+                      "order": 12,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-2",
-          "chip_text": "spirometry reviewed",
-          "order": 2,
-          "search_terms": [
-            "spirometry",
-            "FEV1",
-            "FVC"
+          "relevant_negatives": [
+                {
+                      "chip_id": "resp-pulmonary-function-review-relevant_negatives-1",
+                      "chip_text": "no hemoptysis",
+                      "order": 1,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-relevant_negatives-2",
+                      "chip_text": "no chest pain",
+                      "order": 2,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-relevant_negatives-3",
+                      "chip_text": "no orthopnea",
+                      "order": 3,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-relevant_negatives-4",
+                      "chip_text": "no fever",
+                      "order": 4,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-relevant_negatives-5",
+                      "chip_text": "no sputum production",
+                      "order": 5,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-relevant_negatives-6",
+                      "chip_text": "no wheeze",
+                      "order": 6,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-relevant_negatives-7",
+                      "chip_text": "no leg swelling",
+                      "order": 7,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-relevant_negatives-8",
+                      "chip_text": "no smoking history",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-3",
-          "chip_text": "FEV1 and FVC context reviewed if documented",
-          "order": 3,
-          "search_terms": [
-            "FEV1",
-            "FVC",
-            "ratio"
+          "exam_findings": [
+                {
+                      "chip_id": "resp-pulmonary-function-review-exam_findings-1",
+                      "chip_text": "SpO2 95% on RA",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-exam_findings-2",
+                      "chip_text": "SpO2 91% on RA",
+                      "order": 2,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-exam_findings-3",
+                      "chip_text": "SpO2 88% on exertion",
+                      "order": 3,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-exam_findings-4",
+                      "chip_text": "RR 20/min",
+                      "order": 4,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-exam_findings-5",
+                      "chip_text": "chest: fine bibasal crackles (velcro)",
+                      "order": 5,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-exam_findings-6",
+                      "chip_text": "chest: clear bilaterally",
+                      "order": 6,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-exam_findings-7",
+                      "chip_text": "clubbing present",
+                      "order": 7,
+                      "search_terms": [
+                            "clubbing"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-exam_findings-8",
+                      "chip_text": "no clubbing",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-exam_findings-9",
+                      "chip_text": "cyanosis absent",
+                      "order": 9,
+                      "search_terms": [
+                            "cyanosis"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-exam_findings-10",
+                      "chip_text": "BMI 26",
+                      "order": 10,
+                      "search_terms": [
+                            "BMI"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-exam_findings-11",
+                      "chip_text": "no peripheral oedema",
+                      "order": 11,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-exam_findings-12",
+                      "chip_text": "JVP normal",
+                      "order": 12,
+                      "search_terms": [
+                            "JVP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-4",
-          "chip_text": "symptom correlation documented",
-          "order": 4,
-          "search_terms": [
-            "symptom",
-            "correlation"
+          "red_flags": [
+                {
+                      "chip_id": "resp-pulmonary-function-review-red_flags-1",
+                      "chip_text": "SpO2 <88% on exertion",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-red_flags-2",
+                      "chip_text": "rapid FVC decline >10% in 6 months",
+                      "order": 2,
+                      "search_terms": [
+                            "rapid"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-red_flags-3",
+                      "chip_text": "new pulmonary hypertension signs",
+                      "order": 3,
+                      "search_terms": [
+                            "new"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-red_flags-4",
+                      "chip_text": "acute exacerbation of ILD",
+                      "order": 4,
+                      "search_terms": [
+                            "acute"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-red_flags-5",
+                      "chip_text": "SpO2 <92% at rest on RA",
+                      "order": 5,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-red_flags-6",
+                      "chip_text": "cor pulmonale signs",
+                      "order": 6,
+                      "search_terms": [
+                            "cor"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-red_flags-7",
+                      "chip_text": "weight loss >10% in 6 months",
+                      "order": 7,
+                      "search_terms": [
+                            "weight"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-red_flags-8",
+                      "chip_text": "type 2 respiratory failure",
+                      "order": 8,
+                      "search_terms": [
+                            "type"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-5",
-          "chip_text": "inhaler and medication use reviewed if relevant",
-          "order": 5,
-          "search_terms": [
-            "inhaler",
-            "medication"
+          "investigations": [
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-1",
+                      "chip_text": "spirometry: FVC 68% predicted",
+                      "order": 1,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-2",
+                      "chip_text": "spirometry: FVC 52% predicted",
+                      "order": 2,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-3",
+                      "chip_text": "FEV1/FVC ratio 0.82 (preserved)",
+                      "order": 3,
+                      "search_terms": [
+                            "FEV1/FVC"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-4",
+                      "chip_text": "TLCO 55% predicted",
+                      "order": 4,
+                      "search_terms": [
+                            "TLCO"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-5",
+                      "chip_text": "TLCO 38% predicted",
+                      "order": 5,
+                      "search_terms": [
+                            "TLCO"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-6",
+                      "chip_text": "HRCT: UIP pattern",
+                      "order": 6,
+                      "search_terms": [
+                            "HRCT:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-7",
+                      "chip_text": "HRCT: NSIP pattern",
+                      "order": 7,
+                      "search_terms": [
+                            "HRCT:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-8",
+                      "chip_text": "HRCT: ground glass opacities",
+                      "order": 8,
+                      "search_terms": [
+                            "HRCT:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-9",
+                      "chip_text": "HRCT: honeycombing basal",
+                      "order": 9,
+                      "search_terms": [
+                            "HRCT:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-10",
+                      "chip_text": "6MWT: 320m with desaturation to 85%",
+                      "order": 10,
+                      "search_terms": [
+                            "6MWT:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-11",
+                      "chip_text": "ABG: pO2 9.2 kPa",
+                      "order": 11,
+                      "search_terms": [
+                            "ABG:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-12",
+                      "chip_text": "ANA positive",
+                      "order": 12,
+                      "search_terms": [
+                            "ANA"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-investigations-13",
+                      "chip_text": "rheumatoid factor elevated",
+                      "order": 13,
+                      "search_terms": [
+                            "rheumatoid"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-6",
-          "chip_text": "smoking history reviewed",
-          "order": 6,
-          "search_terms": [
-            "smoking",
-            "cigarettes"
+          "plan_phrases": [
+                {
+                      "chip_id": "resp-pulmonary-function-review-plan_phrases-1",
+                      "chip_text": "refer ILD MDT",
+                      "order": 1,
+                      "search_terms": [
+                            "refer"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-plan_phrases-2",
+                      "chip_text": "antifibrotic therapy discussion",
+                      "order": 2,
+                      "search_terms": [
+                            "antifibrotic"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-plan_phrases-3",
+                      "chip_text": "home oxygen assessment",
+                      "order": 3,
+                      "search_terms": [
+                            "home"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-plan_phrases-4",
+                      "chip_text": "pulmonary rehab referral",
+                      "order": 4,
+                      "search_terms": [
+                            "pulmonary"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-plan_phrases-5",
+                      "chip_text": "repeat PFTs 3 months",
+                      "order": 5,
+                      "search_terms": [
+                            "repeat"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-plan_phrases-6",
+                      "chip_text": "immunosuppression if CTD-ILD",
+                      "order": 6,
+                      "search_terms": [
+                            "immunosuppression"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-plan_phrases-7",
+                      "chip_text": "palliative care referral if advanced",
+                      "order": 7,
+                      "search_terms": [
+                            "palliative"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-plan_phrases-8",
+                      "chip_text": "lung transplant assessment if eligible",
+                      "order": 8,
+                      "search_terms": [
+                            "lung"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-plan_phrases-9",
+                      "chip_text": "pneumococcal + flu vaccine",
+                      "order": 9,
+                      "search_terms": [
+                            "pneumococcal"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-plan_phrases-10",
+                      "chip_text": "avoid further occupational exposure",
+                      "order": 10,
+                      "search_terms": [
+                            "avoid"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-plan_phrases-11",
+                      "chip_text": "ambulatory oxygen trial",
+                      "order": 11,
+                      "search_terms": [
+                            "ambulatory"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-plan_phrases-12",
+                      "chip_text": "advance care planning discussion",
+                      "order": 12,
+                      "search_terms": [
+                            "advance"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
+          "follow_up": [
+                {
+                      "chip_id": "resp-pulmonary-function-review-follow_up-1",
+                      "chip_text": "PFT review 3 months",
+                      "order": 1,
+                      "search_terms": [
+                            "PFT"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-follow_up-2",
+                      "chip_text": "ILD clinic 6 weeks",
+                      "order": 2,
+                      "search_terms": [
+                            "ILD"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-follow_up-3",
+                      "chip_text": "urgent review if acute deterioration",
+                      "order": 3,
+                      "search_terms": [
+                            "urgent"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-follow_up-4",
+                      "chip_text": "annual CT if stable",
+                      "order": 4,
+                      "search_terms": [
+                            "annual"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-follow_up-5",
+                      "chip_text": "MDT outcome review 4 weeks",
+                      "order": 5,
+                      "search_terms": [
+                            "MDT"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-pulmonary-function-review-follow_up-6",
+                      "chip_text": "PRN",
+                      "order": 6,
+                      "search_terms": [
+                            "PRN"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-7",
-          "chip_text": "previous PFT comparison documented if available",
-          "order": 7,
-          "search_terms": [
-            "previous",
-            "prior",
-            "trend"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-8",
-          "chip_text": "bronchodilator response reviewed if performed",
-          "order": 8,
-          "search_terms": [
-            "bronchodilator",
-            "reversibility"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-symptoms-9",
-          "chip_text": "DLCO reviewed if available",
-          "order": 9,
-          "search_terms": [
-            "DLCO",
-            "diffusion"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "relevant_negatives": [
-        {
-          "chip_id": "resp-pulmonary-function-review-relevant_negatives-1",
-          "chip_text": "no acute respiratory distress reported",
-          "order": 1,
-          "search_terms": [
-            "acute",
-            "distress"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-relevant_negatives-2",
-          "chip_text": "no significant symptom change reported if applicable",
-          "order": 2,
-          "search_terms": [
-            "symptom",
-            "change"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "exam_findings": [
-        {
-          "chip_id": "resp-pulmonary-function-review-exam_findings-1",
-          "chip_text": "oxygen saturation documented if measured",
-          "order": 1,
-          "search_terms": [
-            "oxygen",
-            "SpO2"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-exam_findings-2",
-          "chip_text": "chest auscultation documented if assessed",
-          "order": 2,
-          "search_terms": [
-            "auscultation",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-exam_findings-3",
-          "chip_text": "clinical correlation documented",
-          "order": 3,
-          "search_terms": [
-            "clinical",
-            "correlation"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-exam_findings-4",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 4,
-          "search_terms": [
-            "RR",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "red_flags": [
-        {
-          "chip_id": "resp-pulmonary-function-review-red_flags-1",
-          "chip_text": "significant decline in FEV1",
-          "order": 1,
-          "search_terms": [
-            "decline",
-            "FEV1"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-red_flags-2",
-          "chip_text": "worsening symptoms with declining PFT",
-          "order": 2,
-          "search_terms": [
-            "worsening",
-            "symptoms"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-red_flags-3",
-          "chip_text": "new obstruction or restriction pattern",
-          "order": 3,
-          "search_terms": [
-            "new",
-            "obstruction",
-            "restriction"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        }
-      ],
-      "investigations": [
-        {
-          "chip_id": "resp-pulmonary-function-review-investigations-1",
-          "chip_text": "previous PFT reports reviewed if available",
-          "order": 1,
-          "search_terms": [
-            "previous",
-            "PFT"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-investigations-2",
-          "chip_text": "chest imaging reviewed if available",
-          "order": 2,
-          "search_terms": [
-            "CXR",
-            "CT",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-investigations-3",
-          "chip_text": "blood gas reviewed if performed",
-          "order": 3,
-          "search_terms": [
-            "blood",
-            "gas",
-            "ABG"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "plan_phrases": [
-        {
-          "chip_id": "resp-pulmonary-function-review-plan_phrases-1",
-          "chip_text": "clinician-entered plan documented",
-          "order": 1,
-          "search_terms": [
-            "plan",
-            "management"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-plan_phrases-2",
-          "chip_text": "medication plan documented if clinician decided",
-          "order": 2,
-          "search_terms": [
-            "medication",
-            "inhaler"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-plan_phrases-3",
-          "chip_text": "referral documented if clinician decided",
-          "order": 3,
-          "search_terms": [
-            "referral",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-plan_phrases-4",
-          "chip_text": "PFT follow-up interval documented if clinician decided",
-          "order": 4,
-          "search_terms": [
-            "PFT",
-            "interval",
-            "follow"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-plan_phrases-5",
-          "chip_text": "follow-up documented if arranged",
-          "order": 5,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-plan_phrases-6",
-          "chip_text": "spirometry monitoring plan documented if clinician decided",
-          "order": 6,
-          "search_terms": [
-            "spirometry",
-            "monitor"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "follow_up": [
-        {
-          "chip_id": "resp-pulmonary-function-review-follow_up-1",
-          "chip_text": "3-6 months",
-          "order": 1,
-          "search_terms": [
-            "three",
-            "six",
-            "months"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-follow_up-2",
-          "chip_text": "6-12 months",
-          "order": 2,
-          "search_terms": [
-            "six",
-            "twelve",
-            "months"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-follow_up-3",
-          "chip_text": "sooner if symptomatic change",
-          "order": 3,
-          "search_terms": [
-            "sooner",
-            "change"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-pulmonary-function-review-follow_up-4",
-          "chip_text": "PRN",
-          "order": 4,
-          "search_terms": [
-            "PRN",
-            "as needed"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ]
     },
     "resp-sleep-apnea-symptoms": {
-      "symptoms": [
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-1",
-          "chip_text": "snoring",
-          "order": 1,
-          "search_terms": [
-            "snoring"
+          "symptoms": [
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-symptoms-1",
+                      "chip_text": "loud snoring nightly",
+                      "order": 1,
+                      "search_terms": [
+                            "loud"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-symptoms-2",
+                      "chip_text": "witnessed apneas by partner",
+                      "order": 2,
+                      "search_terms": [
+                            "witnessed"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-symptoms-3",
+                      "chip_text": "excessive daytime sleepiness",
+                      "order": 3,
+                      "search_terms": [
+                            "excessive"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-symptoms-4",
+                      "chip_text": "Epworth score 14/24",
+                      "order": 4,
+                      "search_terms": [
+                            "Epworth"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-symptoms-5",
+                      "chip_text": "Epworth score 18/24",
+                      "order": 5,
+                      "search_terms": [
+                            "Epworth"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-symptoms-6",
+                      "chip_text": "unrefreshing sleep",
+                      "order": 6,
+                      "search_terms": [
+                            "unrefreshing"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-symptoms-7",
+                      "chip_text": "morning headaches",
+                      "order": 7,
+                      "search_terms": [
+                            "morning"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-symptoms-8",
+                      "chip_text": "nocturia 3x/night",
+                      "order": 8,
+                      "search_terms": [
+                            "nocturia"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-symptoms-9",
+                      "chip_text": "poor concentration daytime",
+                      "order": 9,
+                      "search_terms": [
+                            "poor"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-symptoms-10",
+                      "chip_text": "near-miss driving incident",
+                      "order": 10,
+                      "search_terms": [
+                            "near-miss"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-symptoms-11",
+                      "chip_text": "STOP-BANG score 5/8",
+                      "order": 11,
+                      "search_terms": [
+                            "STOP-BANG"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-symptoms-12",
+                      "chip_text": "choking/gasping episodes at night",
+                      "order": 12,
+                      "search_terms": [
+                            "choking/gasping"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-2",
-          "chip_text": "witnessed apneas reviewed",
-          "order": 2,
-          "search_terms": [
-            "apnea",
-            "apnoea",
-            "witnessed"
+          "relevant_negatives": [
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-1",
+                      "chip_text": "no chest pain",
+                      "order": 1,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-2",
+                      "chip_text": "no SOB at rest",
+                      "order": 2,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-3",
+                      "chip_text": "no leg swelling",
+                      "order": 3,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-4",
+                      "chip_text": "no hypothyroid symptoms",
+                      "order": 4,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-5",
+                      "chip_text": "no alcohol excess",
+                      "order": 5,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-6",
+                      "chip_text": "no sedative use",
+                      "order": 6,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-7",
+                      "chip_text": "no nasal obstruction",
+                      "order": 7,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-8",
+                      "chip_text": "no restless legs",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-3",
-          "chip_text": "daytime sleepiness reviewed",
-          "order": 3,
-          "search_terms": [
-            "sleepiness",
-            "Epworth",
-            "drowsy"
+          "exam_findings": [
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-1",
+                      "chip_text": "BMI 34",
+                      "order": 1,
+                      "search_terms": [
+                            "BMI"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-2",
+                      "chip_text": "BMI 38",
+                      "order": 2,
+                      "search_terms": [
+                            "BMI"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-3",
+                      "chip_text": "BMI 42",
+                      "order": 3,
+                      "search_terms": [
+                            "BMI"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-4",
+                      "chip_text": "neck circumference 44cm",
+                      "order": 4,
+                      "search_terms": [
+                            "neck"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-5",
+                      "chip_text": "neck circumference 48cm",
+                      "order": 5,
+                      "search_terms": [
+                            "neck"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-6",
+                      "chip_text": "Mallampati grade III",
+                      "order": 6,
+                      "search_terms": [
+                            "Mallampati"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-7",
+                      "chip_text": "Mallampati grade IV",
+                      "order": 7,
+                      "search_terms": [
+                            "Mallampati"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-8",
+                      "chip_text": "retrognathia noted",
+                      "order": 8,
+                      "search_terms": [
+                            "retrognathia"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-9",
+                      "chip_text": "nasal septum deviated",
+                      "order": 9,
+                      "search_terms": [
+                            "nasal"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-10",
+                      "chip_text": "tonsillar hypertrophy grade 2",
+                      "order": 10,
+                      "search_terms": [
+                            "tonsillar"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-11",
+                      "chip_text": "BP 155/95 mmHg",
+                      "order": 11,
+                      "search_terms": [
+                            "BP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-12",
+                      "chip_text": "SpO2 95% on RA",
+                      "order": 12,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-exam_findings-13",
+                      "chip_text": "HR 78 bpm regular",
+                      "order": 13,
+                      "search_terms": [
+                            "HR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-4",
-          "chip_text": "morning headaches reviewed",
-          "order": 4,
-          "search_terms": [
-            "morning",
-            "headache"
+          "red_flags": [
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-red_flags-1",
+                      "chip_text": "Epworth >15 with driving",
+                      "order": 1,
+                      "search_terms": [
+                            "Epworth"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-red_flags-2",
+                      "chip_text": "SpO2 <90% awake",
+                      "order": 2,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-red_flags-3",
+                      "chip_text": "obesity hypoventilation: daytime hypercapnia",
+                      "order": 3,
+                      "search_terms": [
+                            "obesity"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-red_flags-4",
+                      "chip_text": "uncontrolled hypertension with OSA",
+                      "order": 4,
+                      "search_terms": [
+                            "uncontrolled"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-red_flags-5",
+                      "chip_text": "near-miss RTA due to sleepiness",
+                      "order": 5,
+                      "search_terms": [
+                            "near-miss"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-red_flags-6",
+                      "chip_text": "cor pulmonale signs",
+                      "order": 6,
+                      "search_terms": [
+                            "cor"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-red_flags-7",
+                      "chip_text": "nocturnal arrhythmia suspected",
+                      "order": 7,
+                      "search_terms": [
+                            "nocturnal"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-red_flags-8",
+                      "chip_text": "central apneas on history (Cheyne-Stokes)",
+                      "order": 8,
+                      "search_terms": [
+                            "central"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-5",
-          "chip_text": "concentration issues reviewed",
-          "order": 5,
-          "search_terms": [
-            "concentration",
-            "focus"
+          "investigations": [
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-investigations-1",
+                      "chip_text": "home sleep study: AHI 18/hr (moderate)",
+                      "order": 1,
+                      "search_terms": [
+                            "home"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-investigations-2",
+                      "chip_text": "home sleep study: AHI 35/hr (severe)",
+                      "order": 2,
+                      "search_terms": [
+                            "home"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-investigations-3",
+                      "chip_text": "home sleep study: AHI 8/hr (mild)",
+                      "order": 3,
+                      "search_terms": [
+                            "home"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-investigations-4",
+                      "chip_text": "overnight oximetry: ODI 22",
+                      "order": 4,
+                      "search_terms": [
+                            "overnight"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-investigations-5",
+                      "chip_text": "overnight oximetry: mean SpO2 91%",
+                      "order": 5,
+                      "search_terms": [
+                            "overnight"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-investigations-6",
+                      "chip_text": "ABG: normal",
+                      "order": 6,
+                      "search_terms": [
+                            "ABG:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-investigations-7",
+                      "chip_text": "ABG: pCO2 6.8 (hypercapnia)",
+                      "order": 7,
+                      "search_terms": [
+                            "ABG:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-investigations-8",
+                      "chip_text": "TFTs: normal",
+                      "order": 8,
+                      "search_terms": [
+                            "TFTs:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-investigations-9",
+                      "chip_text": "HbA1c 48 mmol/mol",
+                      "order": 9,
+                      "search_terms": [
+                            "HbA1c"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-investigations-10",
+                      "chip_text": "ECG: LVH pattern",
+                      "order": 10,
+                      "search_terms": [
+                            "ECG:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-investigations-11",
+                      "chip_text": "FBC: polycythaemia",
+                      "order": 11,
+                      "search_terms": [
+                            "FBC:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-6",
-          "chip_text": "sleep quality reviewed",
-          "order": 6,
-          "search_terms": [
-            "sleep",
-            "quality",
-            "restless"
+          "plan_phrases": [
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-1",
+                      "chip_text": "CPAP trial initiated",
+                      "order": 1,
+                      "search_terms": [
+                            "CPAP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-2",
+                      "chip_text": "CPAP pressure 10 cmH2O",
+                      "order": 2,
+                      "search_terms": [
+                            "CPAP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-3",
+                      "chip_text": "CPAP compliance review: 5.2 hrs/night",
+                      "order": 3,
+                      "search_terms": [
+                            "CPAP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-4",
+                      "chip_text": "mandibular advancement device trial",
+                      "order": 4,
+                      "search_terms": [
+                            "mandibular"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-5",
+                      "chip_text": "weight loss target 10% body weight",
+                      "order": 5,
+                      "search_terms": [
+                            "weight"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-6",
+                      "chip_text": "sleep hygiene advice given",
+                      "order": 6,
+                      "search_terms": [
+                            "sleep"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-7",
+                      "chip_text": "avoid alcohol 4h before bed",
+                      "order": 7,
+                      "search_terms": [
+                            "avoid"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-8",
+                      "chip_text": "positional therapy: avoid supine",
+                      "order": 8,
+                      "search_terms": [
+                            "positional"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-9",
+                      "chip_text": "DVLA notification advised (HGV/PSV)",
+                      "order": 9,
+                      "search_terms": [
+                            "DVLA"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-10",
+                      "chip_text": "ENT referral for tonsillar hypertrophy",
+                      "order": 10,
+                      "search_terms": [
+                            "ENT"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-11",
+                      "chip_text": "bariatric surgery referral if BMI >40",
+                      "order": 11,
+                      "search_terms": [
+                            "bariatric"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-12",
+                      "chip_text": "repeat sleep study post-treatment",
+                      "order": 12,
+                      "search_terms": [
+                            "repeat"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
+          "follow_up": [
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-follow_up-1",
+                      "chip_text": "CPAP review 4 weeks",
+                      "order": 1,
+                      "search_terms": [
+                            "CPAP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-follow_up-2",
+                      "chip_text": "CPAP compliance check 3 months",
+                      "order": 2,
+                      "search_terms": [
+                            "CPAP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-follow_up-3",
+                      "chip_text": "annual sleep clinic review",
+                      "order": 3,
+                      "search_terms": [
+                            "annual"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-follow_up-4",
+                      "chip_text": "urgent review if CPAP intolerance",
+                      "order": 4,
+                      "search_terms": [
+                            "urgent"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-follow_up-5",
+                      "chip_text": "weight management review 3 months",
+                      "order": 5,
+                      "search_terms": [
+                            "weight"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-sleep-apnea-symptoms-follow_up-6",
+                      "chip_text": "PRN",
+                      "order": 6,
+                      "search_terms": [
+                            "PRN"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-7",
-          "chip_text": "weight and BMI context reviewed if relevant",
-          "order": 7,
-          "search_terms": [
-            "weight",
-            "BMI",
-            "obesity"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-8",
-          "chip_text": "nocturnal choking reviewed",
-          "order": 8,
-          "search_terms": [
-            "choking",
-            "gasping"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-symptoms-9",
-          "chip_text": "partner report documented if available",
-          "order": 9,
-          "search_terms": [
-            "partner",
-            "witness",
-            "bed"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "relevant_negatives": [
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-1",
-          "chip_text": "no syncope reported",
-          "order": 1,
-          "search_terms": [
-            "syncope",
-            "faint"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-2",
-          "chip_text": "no acute respiratory distress reported",
-          "order": 2,
-          "search_terms": [
-            "acute",
-            "distress"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-relevant_negatives-3",
-          "chip_text": "no nocturnal seizures reported if applicable",
-          "order": 3,
-          "search_terms": [
-            "seizure",
-            "fits"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "exam_findings": [
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-exam_findings-1",
-          "chip_text": "BMI documented if measured",
-          "order": 1,
-          "search_terms": [
-            "BMI",
-            "weight",
-            "height"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-exam_findings-2",
-          "chip_text": "blood pressure documented if measured",
-          "order": 2,
-          "search_terms": [
-            "BP",
-            "blood",
-            "pressure"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-exam_findings-3",
-          "chip_text": "neck circumference documented if measured",
-          "order": 3,
-          "search_terms": [
-            "neck",
-            "collar"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-exam_findings-4",
-          "chip_text": "oropharyngeal examination documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "oropharyngeal",
-            "Mallampati"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-exam_findings-5",
-          "chip_text": "oxygen saturation study reviewed if performed",
-          "order": 5,
-          "search_terms": [
-            "oximetry",
-            "nocturnal"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "red_flags": [
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-red_flags-1",
-          "chip_text": "severe daytime somnolence",
-          "order": 1,
-          "search_terms": [
-            "severe",
-            "somnolence"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-red_flags-2",
-          "chip_text": "observed apnoeas with desaturation",
-          "order": 2,
-          "search_terms": [
-            "apnea",
-            "desaturation"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-red_flags-3",
-          "chip_text": "respiratory failure signs if suspected",
-          "order": 3,
-          "search_terms": [
-            "respiratory",
-            "failure"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-red_flags-4",
-          "chip_text": "driving safety concern if present",
-          "order": 4,
-          "search_terms": [
-            "driving",
-            "safety"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        }
-      ],
-      "investigations": [
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-investigations-1",
-          "chip_text": "Epworth score reviewed if completed",
-          "order": 1,
-          "search_terms": [
-            "Epworth",
-            "ESS",
-            "sleepiness"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-investigations-2",
-          "chip_text": "sleep study report reviewed if available",
-          "order": 2,
-          "search_terms": [
-            "sleep",
-            "study",
-            "polysomnography"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-investigations-3",
-          "chip_text": "oxygen saturation study reviewed if performed",
-          "order": 3,
-          "search_terms": [
-            "oxygen",
-            "oximetry"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "plan_phrases": [
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-1",
-          "chip_text": "clinician-entered plan documented",
-          "order": 1,
-          "search_terms": [
-            "plan",
-            "management"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-2",
-          "chip_text": "referral documented if clinician decided",
-          "order": 2,
-          "search_terms": [
-            "referral",
-            "sleep",
-            "clinic"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-3",
-          "chip_text": "driving advice documented if clinician discussed",
-          "order": 3,
-          "search_terms": [
-            "driving",
-            "DVLA"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-4",
-          "chip_text": "weight management discussed if applicable",
-          "order": 4,
-          "search_terms": [
-            "weight",
-            "diet",
-            "lifestyle"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-5",
-          "chip_text": "CPAP therapy discussed if applicable",
-          "order": 5,
-          "search_terms": [
-            "CPAP",
-            "machine"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-6",
-          "chip_text": "follow-up documented if arranged",
-          "order": 6,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-plan_phrases-7",
-          "chip_text": "sleep hygiene advice documented if discussed",
-          "order": 7,
-          "search_terms": [
-            "sleep",
-            "hygiene",
-            "advice"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "follow_up": [
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-follow_up-1",
-          "chip_text": "3-6 months",
-          "order": 1,
-          "search_terms": [
-            "three",
-            "six",
-            "months"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-follow_up-2",
-          "chip_text": "6-12 months if stable",
-          "order": 2,
-          "search_terms": [
-            "six",
-            "twelve"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-follow_up-3",
-          "chip_text": "sooner if worsening",
-          "order": 3,
-          "search_terms": [
-            "sooner",
-            "worsening"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-sleep-apnea-symptoms-follow_up-4",
-          "chip_text": "PRN",
-          "order": 4,
-          "search_terms": [
-            "PRN",
-            "as needed"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ]
     },
     "resp-smoking-history-note": {
-      "symptoms": [
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-1",
-          "chip_text": "smoking history documented",
-          "order": 1,
-          "search_terms": [
-            "smoking",
-            "tobacco",
-            "history"
+          "symptoms": [
+                {
+                      "chip_id": "resp-smoking-history-note-symptoms-1",
+                      "chip_text": "current smoker 20/day",
+                      "order": 1,
+                      "search_terms": [
+                            "current"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-symptoms-2",
+                      "chip_text": "current smoker 10/day",
+                      "order": 2,
+                      "search_terms": [
+                            "current"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-symptoms-3",
+                      "chip_text": "ex-smoker: quit 2 years ago",
+                      "order": 3,
+                      "search_terms": [
+                            "ex-smoker:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-symptoms-4",
+                      "chip_text": "ex-smoker: quit 6 months ago",
+                      "order": 4,
+                      "search_terms": [
+                            "ex-smoker:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-symptoms-5",
+                      "chip_text": "30 pack-year history",
+                      "order": 5,
+                      "search_terms": [
+                            "30"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-symptoms-6",
+                      "chip_text": "15 pack-year history",
+                      "order": 6,
+                      "search_terms": [
+                            "15"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-symptoms-7",
+                      "chip_text": "vaping: 6 months",
+                      "order": 7,
+                      "search_terms": [
+                            "vaping:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-symptoms-8",
+                      "chip_text": "shisha use weekly",
+                      "order": 8,
+                      "search_terms": [
+                            "shisha"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-symptoms-9",
+                      "chip_text": "passive smoke exposure",
+                      "order": 9,
+                      "search_terms": [
+                            "passive"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-symptoms-10",
+                      "chip_text": "cough: smokers cough daily",
+                      "order": 10,
+                      "search_terms": [
+                            "cough:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-symptoms-11",
+                      "chip_text": "SOB on exertion new",
+                      "order": 11,
+                      "search_terms": [
+                            "SOB"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-symptoms-12",
+                      "chip_text": "reduced exercise tolerance",
+                      "order": 12,
+                      "search_terms": [
+                            "reduced"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-2",
-          "chip_text": "cigarettes per day documented",
-          "order": 2,
-          "search_terms": [
-            "cigarettes",
-            "per",
-            "day",
-            "quantity"
+          "relevant_negatives": [
+                {
+                      "chip_id": "resp-smoking-history-note-relevant_negatives-1",
+                      "chip_text": "no hemoptysis",
+                      "order": 1,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-relevant_negatives-2",
+                      "chip_text": "no weight loss",
+                      "order": 2,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-relevant_negatives-3",
+                      "chip_text": "no chest pain",
+                      "order": 3,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-relevant_negatives-4",
+                      "chip_text": "no night sweats",
+                      "order": 4,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-relevant_negatives-5",
+                      "chip_text": "no voice change",
+                      "order": 5,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-relevant_negatives-6",
+                      "chip_text": "no dysphagia",
+                      "order": 6,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-relevant_negatives-7",
+                      "chip_text": "no previous quit attempts",
+                      "order": 7,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-relevant_negatives-8",
+                      "chip_text": "no COPD diagnosis",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-3",
-          "chip_text": "years smoked documented",
-          "order": 3,
-          "search_terms": [
-            "years",
-            "duration"
+          "exam_findings": [
+                {
+                      "chip_id": "resp-smoking-history-note-exam_findings-1",
+                      "chip_text": "SpO2 97% on RA",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-exam_findings-2",
+                      "chip_text": "SpO2 95% on RA",
+                      "order": 2,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-exam_findings-3",
+                      "chip_text": "RR 16/min",
+                      "order": 3,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-exam_findings-4",
+                      "chip_text": "chest: clear bilaterally",
+                      "order": 4,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-exam_findings-5",
+                      "chip_text": "chest: scattered wheeze",
+                      "order": 5,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-exam_findings-6",
+                      "chip_text": "tar staining fingers",
+                      "order": 6,
+                      "search_terms": [
+                            "tar"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-exam_findings-7",
+                      "chip_text": "no clubbing",
+                      "order": 7,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-exam_findings-8",
+                      "chip_text": "no cervical lymphadenopathy",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-exam_findings-9",
+                      "chip_text": "BMI 28",
+                      "order": 9,
+                      "search_terms": [
+                            "BMI"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-exam_findings-10",
+                      "chip_text": "BP 142/88 mmHg",
+                      "order": 10,
+                      "search_terms": [
+                            "BP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-exam_findings-11",
+                      "chip_text": "HR 82 bpm regular",
+                      "order": 11,
+                      "search_terms": [
+                            "HR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-exam_findings-12",
+                      "chip_text": "oral: leukoplakia noted",
+                      "order": 12,
+                      "search_terms": [
+                            "oral:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-4",
-          "chip_text": "pack years documented if calculated",
-          "order": 4,
-          "search_terms": [
-            "pack",
-            "years"
+          "red_flags": [
+                {
+                      "chip_id": "resp-smoking-history-note-red_flags-1",
+                      "chip_text": "hemoptysis in smoker >40 years",
+                      "order": 1,
+                      "search_terms": [
+                            "hemoptysis"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-red_flags-2",
+                      "chip_text": "unexplained weight loss",
+                      "order": 2,
+                      "search_terms": [
+                            "unexplained"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-red_flags-3",
+                      "chip_text": "new persistent hoarseness",
+                      "order": 3,
+                      "search_terms": [
+                            "new"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-red_flags-4",
+                      "chip_text": "new neck lump",
+                      "order": 4,
+                      "search_terms": [
+                            "new"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-red_flags-5",
+                      "chip_text": "CXR abnormality",
+                      "order": 5,
+                      "search_terms": [
+                            "CXR"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-red_flags-6",
+                      "chip_text": "progressive SOB with smoking history",
+                      "order": 6,
+                      "search_terms": [
+                            "progressive"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-red_flags-7",
+                      "chip_text": "recurrent chest infections",
+                      "order": 7,
+                      "search_terms": [
+                            "recurrent"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-red_flags-8",
+                      "chip_text": "Pancoast syndrome symptoms",
+                      "order": 8,
+                      "search_terms": [
+                            "Pancoast"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-5",
-          "chip_text": "ex-smoker history documented if relevant",
-          "order": 5,
-          "search_terms": [
-            "ex-smoker",
-            "former",
-            "quit"
+          "investigations": [
+                {
+                      "chip_id": "resp-smoking-history-note-investigations-1",
+                      "chip_text": "spirometry: FEV1 78% predicted",
+                      "order": 1,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-investigations-2",
+                      "chip_text": "spirometry: FEV1 55% predicted",
+                      "order": 2,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-investigations-3",
+                      "chip_text": "spirometry: obstructive pattern",
+                      "order": 3,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-investigations-4",
+                      "chip_text": "CXR: normal",
+                      "order": 4,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-investigations-5",
+                      "chip_text": "CXR: hyperinflated",
+                      "order": 5,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-investigations-6",
+                      "chip_text": "CXR: apical mass",
+                      "order": 6,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-investigations-7",
+                      "chip_text": "CO breath test: 18 ppm",
+                      "order": 7,
+                      "search_terms": [
+                            "CO"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-investigations-8",
+                      "chip_text": "CO breath test: 32 ppm",
+                      "order": 8,
+                      "search_terms": [
+                            "CO"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-investigations-9",
+                      "chip_text": "cotinine level: positive",
+                      "order": 9,
+                      "search_terms": [
+                            "cotinine"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-investigations-10",
+                      "chip_text": "lipid profile: elevated",
+                      "order": 10,
+                      "search_terms": [
+                            "lipid"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-investigations-11",
+                      "chip_text": "HbA1c: 42 mmol/mol",
+                      "order": 11,
+                      "search_terms": [
+                            "HbA1c:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-6",
-          "chip_text": "passive smoke exposure reviewed",
-          "order": 6,
-          "search_terms": [
-            "passive",
-            "secondhand"
+          "plan_phrases": [
+                {
+                      "chip_id": "resp-smoking-history-note-plan_phrases-1",
+                      "chip_text": "NRT patch + inhalator started",
+                      "order": 1,
+                      "search_terms": [
+                            "NRT"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-plan_phrases-2",
+                      "chip_text": "varenicline (Champix) prescribed",
+                      "order": 2,
+                      "search_terms": [
+                            "varenicline"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-plan_phrases-3",
+                      "chip_text": "bupropion considered",
+                      "order": 3,
+                      "search_terms": [
+                            "bupropion"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-plan_phrases-4",
+                      "chip_text": "quit date set: 2 weeks",
+                      "order": 4,
+                      "search_terms": [
+                            "quit"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-plan_phrases-5",
+                      "chip_text": "referred to stop smoking service",
+                      "order": 5,
+                      "search_terms": [
+                            "referred"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-plan_phrases-6",
+                      "chip_text": "motivational interviewing done",
+                      "order": 6,
+                      "search_terms": [
+                            "motivational"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-plan_phrases-7",
+                      "chip_text": "harm reduction: cut down plan",
+                      "order": 7,
+                      "search_terms": [
+                            "harm"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-plan_phrases-8",
+                      "chip_text": "e-cigarette switch discussed",
+                      "order": 8,
+                      "search_terms": [
+                            "e-cigarette"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-plan_phrases-9",
+                      "chip_text": "COPD screening spirometry arranged",
+                      "order": 9,
+                      "search_terms": [
+                            "COPD"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-plan_phrases-10",
+                      "chip_text": "lung cancer screening discussed if eligible",
+                      "order": 10,
+                      "search_terms": [
+                            "lung"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-plan_phrases-11",
+                      "chip_text": "CVD risk assessment done",
+                      "order": 11,
+                      "search_terms": [
+                            "CVD"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-plan_phrases-12",
+                      "chip_text": "dental review advised",
+                      "order": 12,
+                      "search_terms": [
+                            "dental"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
+          "follow_up": [
+                {
+                      "chip_id": "resp-smoking-history-note-follow_up-1",
+                      "chip_text": "quit date follow-up 1 week",
+                      "order": 1,
+                      "search_terms": [
+                            "quit"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-follow_up-2",
+                      "chip_text": "NRT review 2 weeks",
+                      "order": 2,
+                      "search_terms": [
+                            "NRT"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-follow_up-3",
+                      "chip_text": "review 4 weeks post-quit",
+                      "order": 3,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-follow_up-4",
+                      "chip_text": "relapse support 3 months",
+                      "order": 4,
+                      "search_terms": [
+                            "relapse"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-follow_up-5",
+                      "chip_text": "annual lung health check",
+                      "order": 5,
+                      "search_terms": [
+                            "annual"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-smoking-history-note-follow_up-6",
+                      "chip_text": "PRN",
+                      "order": 6,
+                      "search_terms": [
+                            "PRN"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-7",
-          "chip_text": "occupational exposure reviewed if relevant",
-          "order": 7,
-          "search_terms": [
-            "occupational",
-            "work",
-            "exposure"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-8",
-          "chip_text": "respiratory symptoms reviewed",
-          "order": 8,
-          "search_terms": [
-            "cough",
-            "wheeze",
-            "SOB"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-9",
-          "chip_text": "previous quit attempts reviewed if applicable",
-          "order": 9,
-          "search_terms": [
-            "quit",
-            "cessation",
-            "attempts"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-10",
-          "chip_text": "motivation to quit reviewed if current smoker",
-          "order": 10,
-          "search_terms": [
-            "motivation",
-            "ready",
-            "change"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-symptoms-11",
-          "chip_text": "barriers to quitting discussed if applicable",
-          "order": 11,
-          "search_terms": [
-            "barriers",
-            "difficulty"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "relevant_negatives": [
-        {
-          "chip_id": "resp-smoking-history-note-relevant_negatives-1",
-          "chip_text": "no hemoptysis reported if applicable",
-          "order": 1,
-          "search_terms": [
-            "hemoptysis",
-            "blood"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-relevant_negatives-2",
-          "chip_text": "no unexplained weight loss reported if applicable",
-          "order": 2,
-          "search_terms": [
-            "weight",
-            "loss"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-relevant_negatives-3",
-          "chip_text": "no respiratory symptoms reported if applicable",
-          "order": 3,
-          "search_terms": [
-            "cough",
-            "wheeze"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "exam_findings": [
-        {
-          "chip_id": "resp-smoking-history-note-exam_findings-1",
-          "chip_text": "chest exam documented if assessed",
-          "order": 1,
-          "search_terms": [
-            "chest",
-            "auscultation"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-exam_findings-2",
-          "chip_text": "oxygen saturation documented if measured",
-          "order": 2,
-          "search_terms": [
-            "oxygen",
-            "SpO2"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-exam_findings-3",
-          "chip_text": "oral examination documented if assessed",
-          "order": 3,
-          "search_terms": [
-            "oral",
-            "mouth"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-exam_findings-4",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 4,
-          "search_terms": [
-            "RR",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-exam_findings-5",
-          "chip_text": "blood pressure documented if measured",
-          "order": 5,
-          "search_terms": [
-            "BP",
-            "blood",
-            "pressure"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "red_flags": [
-        {
-          "chip_id": "resp-smoking-history-note-red_flags-1",
-          "chip_text": "new cough with smoking history",
-          "order": 1,
-          "search_terms": [
-            "new",
-            "cough",
-            "smoker"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-red_flags-2",
-          "chip_text": "hemoptysis in smoker",
-          "order": 2,
-          "search_terms": [
-            "hemoptysis",
-            "smoker"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-red_flags-3",
-          "chip_text": "unexplained weight loss in smoker",
-          "order": 3,
-          "search_terms": [
-            "weight",
-            "loss"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        }
-      ],
-      "investigations": [
-        {
-          "chip_id": "resp-smoking-history-note-investigations-1",
-          "chip_text": "chest imaging reviewed if available",
-          "order": 1,
-          "search_terms": [
-            "CXR",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-investigations-2",
-          "chip_text": "spirometry reviewed if performed",
-          "order": 2,
-          "search_terms": [
-            "spirometry",
-            "PFT"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "plan_phrases": [
-        {
-          "chip_id": "resp-smoking-history-note-plan_phrases-1",
-          "chip_text": "clinician-entered plan documented",
-          "order": 1,
-          "search_terms": [
-            "plan",
-            "management"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-plan_phrases-2",
-          "chip_text": "smoking cessation advice documented if discussed",
-          "order": 2,
-          "search_terms": [
-            "cessation",
-            "advice"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-plan_phrases-3",
-          "chip_text": "cessation support referral documented if clinician decided",
-          "order": 3,
-          "search_terms": [
-            "referral",
-            "cessation",
-            "stop smoking"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-plan_phrases-4",
-          "chip_text": "follow-up documented if arranged",
-          "order": 4,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-plan_phrases-5",
-          "chip_text": "NRT or pharmacotherapy plan documented if clinician decided",
-          "order": 5,
-          "search_terms": [
-            "NRT",
-            "patch",
-            "varenicline"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "follow_up": [
-        {
-          "chip_id": "resp-smoking-history-note-follow_up-1",
-          "chip_text": "2-4 weeks",
-          "order": 1,
-          "search_terms": [
-            "two",
-            "four",
-            "weeks"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-follow_up-2",
-          "chip_text": "1-3 months",
-          "order": 2,
-          "search_terms": [
-            "one",
-            "three",
-            "months"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-follow_up-3",
-          "chip_text": "sooner if needed",
-          "order": 3,
-          "search_terms": [
-            "sooner",
-            "needed"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-smoking-history-note-follow_up-4",
-          "chip_text": "PRN",
-          "order": 4,
-          "search_terms": [
-            "PRN",
-            "as needed"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ]
     },
     "resp-wheeze": {
-      "symptoms": [
-        {
-          "chip_id": "resp-wheeze-symptoms-1",
-          "chip_text": "wheeze",
-          "order": 1,
-          "search_terms": [
-            "wheeze",
-            "whistling"
+          "symptoms": [
+                {
+                      "chip_id": "resp-wheeze-symptoms-1",
+                      "chip_text": "wheeze bilateral",
+                      "order": 1,
+                      "search_terms": [
+                            "wheeze"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-symptoms-2",
+                      "chip_text": "wheeze worse at night",
+                      "order": 2,
+                      "search_terms": [
+                            "wheeze"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-symptoms-3",
+                      "chip_text": "wheeze with exertion",
+                      "order": 3,
+                      "search_terms": [
+                            "wheeze"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-symptoms-4",
+                      "chip_text": "wheeze acute onset",
+                      "order": 4,
+                      "search_terms": [
+                            "wheeze"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-symptoms-5",
+                      "chip_text": "wheeze with URTI",
+                      "order": 5,
+                      "search_terms": [
+                            "wheeze"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-symptoms-6",
+                      "chip_text": "wheeze with chest tightness",
+                      "order": 6,
+                      "search_terms": [
+                            "wheeze"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-symptoms-7",
+                      "chip_text": "wheeze episodic",
+                      "order": 7,
+                      "search_terms": [
+                            "wheeze"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-symptoms-8",
+                      "chip_text": "wheeze persistent daily",
+                      "order": 8,
+                      "search_terms": [
+                            "wheeze"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-symptoms-9",
+                      "chip_text": "associated cough productive",
+                      "order": 9,
+                      "search_terms": [
+                            "associated"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-symptoms-10",
+                      "chip_text": "associated SOB",
+                      "order": 10,
+                      "search_terms": [
+                            "associated"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-symptoms-11",
+                      "chip_text": "triggered by allergens",
+                      "order": 11,
+                      "search_terms": [
+                            "triggered"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-symptoms-12",
+                      "chip_text": "triggered by exercise/cold air",
+                      "order": 12,
+                      "search_terms": [
+                            "triggered"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-symptoms-2",
-          "chip_text": "duration documented",
-          "order": 2,
-          "search_terms": [
-            "duration",
-            "how long"
+          "relevant_negatives": [
+                {
+                      "chip_id": "resp-wheeze-relevant_negatives-1",
+                      "chip_text": "no stridor",
+                      "order": 1,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-relevant_negatives-2",
+                      "chip_text": "no hemoptysis",
+                      "order": 2,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-relevant_negatives-3",
+                      "chip_text": "no chest pain",
+                      "order": 3,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-relevant_negatives-4",
+                      "chip_text": "no fever",
+                      "order": 4,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-relevant_negatives-5",
+                      "chip_text": "no foreign body aspiration history",
+                      "order": 5,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-relevant_negatives-6",
+                      "chip_text": "no anaphylaxis symptoms",
+                      "order": 6,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-relevant_negatives-7",
+                      "chip_text": "no voice change",
+                      "order": 7,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-relevant_negatives-8",
+                      "chip_text": "no dysphagia",
+                      "order": 8,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-symptoms-3",
-          "chip_text": "episodic pattern reviewed",
-          "order": 3,
-          "search_terms": [
-            "episodic",
-            "intermittent"
+          "exam_findings": [
+                {
+                      "chip_id": "resp-wheeze-exam_findings-1",
+                      "chip_text": "SpO2 97% on RA",
+                      "order": 1,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-2",
+                      "chip_text": "SpO2 94% on RA",
+                      "order": 2,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-3",
+                      "chip_text": "SpO2 91% on RA",
+                      "order": 3,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-4",
+                      "chip_text": "RR 20/min",
+                      "order": 4,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-5",
+                      "chip_text": "RR 26/min",
+                      "order": 5,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-6",
+                      "chip_text": "chest: bilateral expiratory wheeze",
+                      "order": 6,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-7",
+                      "chip_text": "chest: monophonic wheeze left",
+                      "order": 7,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-8",
+                      "chip_text": "chest: polyphonic wheeze bilateral",
+                      "order": 8,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-9",
+                      "chip_text": "chest: silent chest (ominous)",
+                      "order": 9,
+                      "search_terms": [
+                            "chest:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-10",
+                      "chip_text": "good air entry bilaterally",
+                      "order": 10,
+                      "search_terms": [
+                            "good"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-11",
+                      "chip_text": "no accessory muscle use",
+                      "order": 11,
+                      "search_terms": [
+                            "no"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-12",
+                      "chip_text": "prolonged expiratory phase",
+                      "order": 12,
+                      "search_terms": [
+                            "prolonged"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-13",
+                      "chip_text": "peak flow 380 L/min",
+                      "order": 13,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-exam_findings-14",
+                      "chip_text": "peak flow 200 L/min",
+                      "order": 14,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-symptoms-4",
-          "chip_text": "triggers reviewed",
-          "order": 4,
-          "search_terms": [
-            "trigger",
-            "allergen",
-            "exercise"
+          "red_flags": [
+                {
+                      "chip_id": "resp-wheeze-red_flags-1",
+                      "chip_text": "silent chest",
+                      "order": 1,
+                      "search_terms": [
+                            "silent"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-red_flags-2",
+                      "chip_text": "SpO2 <92% on RA",
+                      "order": 2,
+                      "search_terms": [
+                            "SpO2"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-red_flags-3",
+                      "chip_text": "unable to complete sentences",
+                      "order": 3,
+                      "search_terms": [
+                            "unable"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-red_flags-4",
+                      "chip_text": "RR >30/min",
+                      "order": 4,
+                      "search_terms": [
+                            "RR"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-red_flags-5",
+                      "chip_text": "stridor (upper airway obstruction)",
+                      "order": 5,
+                      "search_terms": [
+                            "stridor"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-red_flags-6",
+                      "chip_text": "anaphylaxis: wheeze + hypotension + rash",
+                      "order": 6,
+                      "search_terms": [
+                            "anaphylaxis:"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-red_flags-7",
+                      "chip_text": "fixed monophonic wheeze (? endobronchial lesion)",
+                      "order": 7,
+                      "search_terms": [
+                            "fixed"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-red_flags-8",
+                      "chip_text": "acute onset with aspiration history",
+                      "order": 8,
+                      "search_terms": [
+                            "acute"
+                      ],
+                      "tags": [
+                            "respiratory",
+                            "high_safety"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-symptoms-5",
-          "chip_text": "cough and shortness of breath reviewed",
-          "order": 5,
-          "search_terms": [
-            "cough",
-            "SOB"
+          "investigations": [
+                {
+                      "chip_id": "resp-wheeze-investigations-1",
+                      "chip_text": "peak flow: 85% predicted (mild)",
+                      "order": 1,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-investigations-2",
+                      "chip_text": "peak flow: 55% predicted (moderate)",
+                      "order": 2,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-investigations-3",
+                      "chip_text": "peak flow: 30% predicted (severe)",
+                      "order": 3,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-investigations-4",
+                      "chip_text": "spirometry: obstructive with reversibility",
+                      "order": 4,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-investigations-5",
+                      "chip_text": "spirometry: fixed obstruction",
+                      "order": 5,
+                      "search_terms": [
+                            "spirometry:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-investigations-6",
+                      "chip_text": "CXR: hyperinflated",
+                      "order": 6,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-investigations-7",
+                      "chip_text": "CXR: normal",
+                      "order": 7,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-investigations-8",
+                      "chip_text": "CXR: foreign body suspected",
+                      "order": 8,
+                      "search_terms": [
+                            "CXR:"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-investigations-9",
+                      "chip_text": "FeNO 48 ppb elevated",
+                      "order": 9,
+                      "search_terms": [
+                            "FeNO"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-investigations-10",
+                      "chip_text": "blood eosinophils 0.6 x10^9/L",
+                      "order": 10,
+                      "search_terms": [
+                            "blood"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-investigations-11",
+                      "chip_text": "IgE elevated",
+                      "order": 11,
+                      "search_terms": [
+                            "IgE"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-symptoms-6",
-          "chip_text": "chest tightness reviewed",
-          "order": 6,
-          "search_terms": [
-            "chest",
-            "tightness"
+          "plan_phrases": [
+                {
+                      "chip_id": "resp-wheeze-plan_phrases-1",
+                      "chip_text": "nebulised salbutamol 5mg",
+                      "order": 1,
+                      "search_terms": [
+                            "nebulised"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-plan_phrases-2",
+                      "chip_text": "salbutamol MDI via spacer",
+                      "order": 2,
+                      "search_terms": [
+                            "salbutamol"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-plan_phrases-3",
+                      "chip_text": "oral prednisolone 40mg 5 days",
+                      "order": 3,
+                      "search_terms": [
+                            "oral"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-plan_phrases-4",
+                      "chip_text": "start ICS preventer",
+                      "order": 4,
+                      "search_terms": [
+                            "start"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-plan_phrases-5",
+                      "chip_text": "step up to ICS/LABA",
+                      "order": 5,
+                      "search_terms": [
+                            "step"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-plan_phrases-6",
+                      "chip_text": "ipratropium nebuliser added",
+                      "order": 6,
+                      "search_terms": [
+                            "ipratropium"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-plan_phrases-7",
+                      "chip_text": "oxygen to maintain SpO2 94-98%",
+                      "order": 7,
+                      "search_terms": [
+                            "oxygen"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-plan_phrases-8",
+                      "chip_text": "admit if severe/life-threatening",
+                      "order": 8,
+                      "search_terms": [
+                            "admit"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-plan_phrases-9",
+                      "chip_text": "asthma action plan provided",
+                      "order": 9,
+                      "search_terms": [
+                            "asthma"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-plan_phrases-10",
+                      "chip_text": "allergen avoidance advice",
+                      "order": 10,
+                      "search_terms": [
+                            "allergen"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-plan_phrases-11",
+                      "chip_text": "smoking cessation if applicable",
+                      "order": 11,
+                      "search_terms": [
+                            "smoking"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-plan_phrases-12",
+                      "chip_text": "bronchoscopy if fixed wheeze",
+                      "order": 12,
+                      "search_terms": [
+                            "bronchoscopy"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ],
-          "tags": [
-            "respiratory"
+          "follow_up": [
+                {
+                      "chip_id": "resp-wheeze-follow_up-1",
+                      "chip_text": "review 48h post-acute",
+                      "order": 1,
+                      "search_terms": [
+                            "review"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-follow_up-2",
+                      "chip_text": "GP review 1 week",
+                      "order": 2,
+                      "search_terms": [
+                            "GP"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-follow_up-3",
+                      "chip_text": "respiratory clinic if recurrent",
+                      "order": 3,
+                      "search_terms": [
+                            "respiratory"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-follow_up-4",
+                      "chip_text": "urgent review if worsening",
+                      "order": 4,
+                      "search_terms": [
+                            "urgent"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-follow_up-5",
+                      "chip_text": "peak flow diary 2 weeks",
+                      "order": 5,
+                      "search_terms": [
+                            "peak"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                },
+                {
+                      "chip_id": "resp-wheeze-follow_up-6",
+                      "chip_text": "PRN",
+                      "order": 6,
+                      "search_terms": [
+                            "PRN"
+                      ],
+                      "tags": [
+                            "respiratory"
+                      ]
+                }
           ]
-        },
-        {
-          "chip_id": "resp-wheeze-symptoms-7",
-          "chip_text": "inhaler use reviewed if relevant",
-          "order": 7,
-          "search_terms": [
-            "inhaler",
-            "puffer"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-symptoms-8",
-          "chip_text": "nocturnal symptoms reviewed",
-          "order": 8,
-          "search_terms": [
-            "nocturnal",
-            "night"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-symptoms-9",
-          "chip_text": "response to bronchodilator reviewed if applicable",
-          "order": 9,
-          "search_terms": [
-            "response",
-            "bronchodilator"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "relevant_negatives": [
-        {
-          "chip_id": "resp-wheeze-relevant_negatives-1",
-          "chip_text": "no severe breathlessness reported",
-          "order": 1,
-          "search_terms": [
-            "severe",
-            "breathlessness"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-relevant_negatives-2",
-          "chip_text": "no chest pain reported",
-          "order": 2,
-          "search_terms": [
-            "chest",
-            "pain"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-relevant_negatives-3",
-          "chip_text": "no hemoptysis reported",
-          "order": 3,
-          "search_terms": [
-            "hemoptysis",
-            "blood"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-relevant_negatives-4",
-          "chip_text": "no stridor reported",
-          "order": 4,
-          "search_terms": [
-            "stridor",
-            "upper airway"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "exam_findings": [
-        {
-          "chip_id": "resp-wheeze-exam_findings-1",
-          "chip_text": "respiratory rate documented if measured",
-          "order": 1,
-          "search_terms": [
-            "RR",
-            "respiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-exam_findings-2",
-          "chip_text": "oxygen saturation documented if measured",
-          "order": 2,
-          "search_terms": [
-            "oxygen",
-            "SpO2"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-exam_findings-3",
-          "chip_text": "wheeze documented if assessed",
-          "order": 3,
-          "search_terms": [
-            "wheeze",
-            "expiratory",
-            "inspiratory"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-exam_findings-4",
-          "chip_text": "chest auscultation documented if assessed",
-          "order": 4,
-          "search_terms": [
-            "auscultation",
-            "chest"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-exam_findings-5",
-          "chip_text": "air entry documented if assessed",
-          "order": 5,
-          "search_terms": [
-            "air",
-            "entry"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-exam_findings-6",
-          "chip_text": "peak flow recorded if measured",
-          "order": 6,
-          "search_terms": [
-            "peak",
-            "flow",
-            "PEFR"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-exam_findings-7",
-          "chip_text": "work of breathing documented if assessed",
-          "order": 7,
-          "search_terms": [
-            "work",
-            "breathing"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "red_flags": [
-        {
-          "chip_id": "resp-wheeze-red_flags-1",
-          "chip_text": "severe breathlessness or respiratory distress",
-          "order": 1,
-          "search_terms": [
-            "severe",
-            "distress"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-red_flags-2",
-          "chip_text": "oxygen saturation below baseline",
-          "order": 2,
-          "search_terms": [
-            "low",
-            "oxygen"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-red_flags-3",
-          "chip_text": "silent chest",
-          "order": 3,
-          "search_terms": [
-            "silent",
-            "chest",
-            "no wheeze"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-red_flags-4",
-          "chip_text": "cyanosis",
-          "order": 4,
-          "search_terms": [
-            "cyanosis"
-          ],
-          "tags": [
-            "respiratory",
-            "high_safety"
-          ]
-        }
-      ],
-      "investigations": [
-        {
-          "chip_id": "resp-wheeze-investigations-1",
-          "chip_text": "peak flow recorded if measured",
-          "order": 1,
-          "search_terms": [
-            "peak",
-            "flow",
-            "PEFR"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-investigations-2",
-          "chip_text": "spirometry reviewed if available",
-          "order": 2,
-          "search_terms": [
-            "spirometry",
-            "PFT"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "plan_phrases": [
-        {
-          "chip_id": "resp-wheeze-plan_phrases-1",
-          "chip_text": "clinician-entered plan documented",
-          "order": 1,
-          "search_terms": [
-            "plan",
-            "management"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-plan_phrases-2",
-          "chip_text": "medication plan documented if clinician decided",
-          "order": 2,
-          "search_terms": [
-            "medication",
-            "inhaler"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-plan_phrases-3",
-          "chip_text": "safety-netting documented if discussed",
-          "order": 3,
-          "search_terms": [
-            "safety",
-            "netting"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-plan_phrases-4",
-          "chip_text": "follow-up documented if arranged",
-          "order": 4,
-          "search_terms": [
-            "follow",
-            "up"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-plan_phrases-5",
-          "chip_text": "symptom diary discussed if applicable",
-          "order": 5,
-          "search_terms": [
-            "diary",
-            "peak",
-            "flow"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ],
-      "follow_up": [
-        {
-          "chip_id": "resp-wheeze-follow_up-1",
-          "chip_text": "1-2 weeks",
-          "order": 1,
-          "search_terms": [
-            "one",
-            "two",
-            "weeks"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-follow_up-2",
-          "chip_text": "2-4 weeks",
-          "order": 2,
-          "search_terms": [
-            "two",
-            "four",
-            "weeks"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-follow_up-3",
-          "chip_text": "sooner if worsening",
-          "order": 3,
-          "search_terms": [
-            "sooner",
-            "worsening"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        },
-        {
-          "chip_id": "resp-wheeze-follow_up-4",
-          "chip_text": "PRN",
-          "order": 4,
-          "search_terms": [
-            "PRN",
-            "as needed"
-          ],
-          "tags": [
-            "respiratory"
-          ]
-        }
-      ]
     },
     "urgent-abdominal-pain": {
       "symptoms": [
