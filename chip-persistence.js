@@ -20,7 +20,7 @@
 (function () {
   "use strict";
 
-  var KEY = "clinicnote-chips-v1";
+  var KEY_PREFIX = "clinicnote-chips-";
   var EXPIRY_MS = 24 * 60 * 60 * 1000; // 24 hours
   var V2_CONTAINERS = [
     "speedSymptoms",
@@ -32,14 +32,15 @@
   ];
   var SAVE_DEBOUNCE_MS = 80;
 
+  function getKey() { return KEY_PREFIX + getCurrentWorkflowKey(); }
   function safeGet() {
-    try { return localStorage.getItem(KEY); } catch (e) { return null; }
+    try { return localStorage.getItem(getKey()); } catch (e) { return null; }
   }
   function safeSet(value) {
-    try { localStorage.setItem(KEY, value); } catch (e) {}
+    try { localStorage.setItem(getKey(), value); } catch (e) {}
   }
   function safeRemove() {
-    try { localStorage.removeItem(KEY); } catch (e) {}
+    try { localStorage.removeItem(getKey()); } catch (e) {}
   }
 
   function getCurrentWorkflowKey() {
@@ -103,8 +104,6 @@
     try { data = JSON.parse(raw); } catch (e) { safeRemove(); return; }
     if (!data || typeof data.ts !== "number") { safeRemove(); return; }
     if (Date.now() - data.ts > EXPIRY_MS) { safeRemove(); return; }
-    // Different workflow -> skip restore but keep stored state for the matching workflow
-    if (data.workflow && data.workflow !== getCurrentWorkflowKey()) return;
 
     // Restore v2 chips by re-applying .selected class on text-matched chips.
     var v2 = data.v2 || {};
@@ -199,10 +198,16 @@
     }
   })();
 
-  // Workflow change clears stale state (specialty switch).
+  // Workflow change: save current state under the old workflow key before switching.
   document.addEventListener("change", function (e) {
     if (e.target && e.target.id === "speedSpecialty") {
-      safeRemove();
+      // Force an immediate save of the current state (old specialty) before the UI resets.
+      if (saveTimer) clearTimeout(saveTimer);
+      saveTimer = null;
+      try { safeSet(JSON.stringify(snapshot())); } catch (ex) {}
+      // After the new chips render, restore any saved state for the new workflow.
+      setTimeout(restore, 800);
+      setTimeout(restore, 1800);
     }
   }, true);
 
