@@ -20896,6 +20896,34 @@ window.cleanOutputPhrase = cleanOutputPhrase;
 
 window.cleanOutputPhraseList = cleanOutputPhraseList;
 
+function cleanFinalDraftText(text) {
+  var marker = /\[[^\]\n]*(?:not documented|not requested\/documented|doctor impression not documented|doctor plan not documented|date to be entered by clinician|clinician review\/signature required)[^\]\n]*\]/gi;
+  var sectionHeading = /^(?:SUBJECTIVE|OBJECTIVE|ASSESSMENT|PLAN|HISTORY|EXAMINATION(?:\s*\/\s*INVESTIGATIONS)?|IMPRESSION|CURRENT IMPRESSION|WORKING IMPRESSION|CURRENT CLINICIAN-ENTERED PLAN|CLINICIAN-ENTERED PLAN|ADVICE\s*\/\s*PLAN DISCUSSED|DOCTOR ADVICE\s*\/\s*PLAN|SIGNATURE\s*\/\s*REVIEW):\s*$/i;
+  var lines = String(text || "").split(/\r?\n/).map(function(line) {
+    var hadMarker = marker.test(line);
+    marker.lastIndex = 0;
+    var cleaned = line.replace(marker, "");
+    cleaned = cleaned.replace(/\s+([,.;])/g, "$1");
+    cleaned = cleaned.replace(/:\s*\.\s*/g, ": ");
+    cleaned = cleaned.replace(/\s*\/\s*(?=\.|$)/g, "");
+    cleaned = cleaned.replace(/\/\s*\./g, ".");
+    cleaned = cleaned.replace(/\.{2,}/g, ".");
+    cleaned = cleaned.replace(/[ \t]+$/g, "");
+    if (hadMarker && /^\s*(?:[-*]\s*)?[A-Za-z][A-Za-z /()&-]*:\s*[.,;/-]*\s*$/.test(cleaned) && !sectionHeading.test(cleaned.trim())) return "";
+    return cleaned;
+  });
+  for (var i = 0; i < lines.length; i++) {
+    if (!sectionHeading.test(lines[i].trim())) continue;
+    var next = i + 1;
+    while (next < lines.length && !lines[next].trim()) next++;
+    if (next >= lines.length || sectionHeading.test(lines[next].trim()) || /^---+$/.test(lines[next].trim())) {
+      lines[i] = "";
+    }
+  }
+  return lines.join("\n").replace(/(:\n)\n+/g, "$1").replace(/\n{3,}/g, "\n\n").trim();
+}
+window.cleanFinalDraftText = cleanFinalDraftText;
+
 
 
 
@@ -22891,7 +22919,7 @@ function reportVal(id){var el=document.getElementById(id);if(!el)return"";return
 
 
 
-function reportTextOrMissing(value){var cleaned=cleanOutputPhrase(value);return cleaned&&cleaned.trim()?cleaned.trim():"[not documented]"}
+function reportTextOrMissing(value){var cleaned=cleanOutputPhrase(value);return cleaned&&cleaned.trim()?cleaned.trim():""}
 
 
 
@@ -22936,7 +22964,7 @@ function checkReportPHI(){var ids=["medicalReportNotes","medicalReportPurpose","
 
 
 
-function medicalReportVariables(config){var notes=reportTextOrMissing(reportVal("medicalReportNotes"));var purpose=reportTextOrMissing(reportVal("medicalReportPurpose"));var impression=reportTextOrMissing(reportVal("medicalReportImpression"));var plan=reportTextOrMissing(reportVal("medicalReportPlan"));var status=reportTextOrMissing(reportVal("medicalReportStatus"));var follow=reportTextOrMissing(reportVal("medicalReportFollowup"));var clinician=reportTextOrMissing(reportVal("medicalReportClinician"))==="[not documented]"?"[clinician review/signature required]":reportTextOrMissing(reportVal("medicalReportClinician"));var date=reportTextOrMissing(reportVal("medicalReportDate"))==="[not documented]"?"[date to be entered by clinician]":reportTextOrMissing(reportVal("medicalReportDate"));var vars={};vars.report_title=config.label;vars.reason_text=purpose;vars.purpose_text=purpose;vars.encounter_summary_text=notes;vars.presenting_problem_text=notes;vars.symptoms=notes;vars.symptoms_text=notes;vars.duration="[not documented]";vars.negatives="[not documented]";vars.exam="[not documented]";vars.investigations="[not documented]";vars.red_flags="[not documented]";vars.impression=impression;vars.diagnosis_text=impression;vars.plan=plan;vars.current_management_text=plan;vars.management_text=plan;vars.medication_instructions_text=plan;vars.instructions_text=plan;vars.clinical_course_text=notes;vars.procedures_text=config.id==="procedure"?notes:"[not documented]";vars.discharge_plan_text=follow;vars.follow_up_text=follow;vars.functional_status_text=status;vars.functional_limitation_text=status;vars.restriction_text=status;vars.urgency_text="[not documented]";vars.visit_date=date;vars.date=date;vars.clinician_name=clinician;vars.limitations_text=MEDICAL_REPORT_REVIEW_FOOTER;return vars}
+function medicalReportVariables(config){var notes=reportTextOrMissing(reportVal("medicalReportNotes"));var purpose=reportTextOrMissing(reportVal("medicalReportPurpose"));var impression=reportTextOrMissing(reportVal("medicalReportImpression"));var plan=reportTextOrMissing(reportVal("medicalReportPlan"));var status=reportTextOrMissing(reportVal("medicalReportStatus"));var follow=reportTextOrMissing(reportVal("medicalReportFollowup"));var clinician=reportTextOrMissing(reportVal("medicalReportClinician"));var date=reportTextOrMissing(reportVal("medicalReportDate"));var vars={};vars.report_title=config.label;vars.reason_text=purpose;vars.purpose_text=purpose;vars.encounter_summary_text=notes;vars.presenting_problem_text=notes;vars.symptoms=notes;vars.symptoms_text=notes;vars.duration="";vars.negatives="";vars.exam="";vars.investigations="";vars.red_flags="";vars.impression=impression;vars.diagnosis_text=impression;vars.plan=plan;vars.current_management_text=plan;vars.management_text=plan;vars.medication_instructions_text=plan;vars.instructions_text=plan;vars.clinical_course_text=notes;vars.procedures_text=config.id==="procedure"?notes:"";vars.discharge_plan_text=follow;vars.follow_up_text=follow;vars.functional_status_text=status;vars.functional_limitation_text=status;vars.restriction_text=status;vars.urgency_text="";vars.visit_date=date;vars.date=date;vars.clinician_name=clinician;vars.limitations_text=MEDICAL_REPORT_REVIEW_FOOTER;return vars}
 
 
 
@@ -22951,7 +22979,9 @@ function medicalReportVariables(config){var notes=reportTextOrMissing(reportVal(
 
 
 
-function renderReportTemplateText(template,config,vars){var sections=(template&&template.sections?template.sections.slice():[]).sort(function(a,b){return(a.order||0)-(b.order||0)});var out=config.label.toUpperCase()+"\n\n";out+="Purpose:\n"+vars.reason_text+"\n\n";for(var i=0;i<sections.length;i++){var s=sections[i];var title=s.display_name||s.section_id||"Section";var content=s.content_template||"";if(s.section_id==="header"){content="Report type: "+config.label+"\nPurpose: "+vars.reason_text+"\nDate: "+vars.date}else{content=content.replace(/\{\{([^}]+)\}\}/g,function(_,name){return reportTextOrMissing(vars[name.trim()]||"")})}content=content.replace(/\bHeader\b/g,config.label).trim();if(!content)content="[not documented]";out+=title+":\n"+content+"\n\n"}out+="Clinician review statement:\n"+MEDICAL_REPORT_REVIEW_FOOTER+"\n";return out}
+function reportSectionHasContent(section,vars){if(!section.variables||!section.variables.length)return true;for(var i=0;i<section.variables.length;i++){if(reportTextOrMissing(vars[section.variables[i].variable_name]||""))return true}return false}
+function cleanReportSectionContent(content){var lines=String(content||"").split(/\r?\n/);var kept=[];for(var i=0;i<lines.length;i++){var line=lines[i].replace(/\s+([,.;])/g,"$1").replace(/\s*\/\s*(?=\.|$)/g,"").replace(/\/\s*\./g,".").replace(/:\s*\.\s*$/g,":").trim();if(!line||/^[-]+$/.test(line)||/^[A-Za-z][A-Za-z /()&-]*:\s*$/.test(line))continue;kept.push(line)}return kept.join("\n")}
+function renderReportTemplateText(template,config,vars){var sections=(template&&template.sections?template.sections.slice():[]).sort(function(a,b){return(a.order||0)-(b.order||0)});var out=config.label.toUpperCase()+"\n\n";if(vars.reason_text)out+="Purpose:\n"+vars.reason_text+"\n\n";for(var i=0;i<sections.length;i++){var s=sections[i];var title=s.display_name||s.section_id||"Section";var content=s.content_template||"";if(s.section_id==="header"){content="Report type: "+config.label+(vars.reason_text?"\nPurpose: "+vars.reason_text:"")+(vars.date?"\nDate: "+vars.date:"")}else{if(!reportSectionHasContent(s,vars))continue;content=content.replace(/\{\{([^}]+)\}\}/g,function(_,name){return reportTextOrMissing(vars[name.trim()]||"")})}content=cleanReportSectionContent(content.replace(/\bHeader\b/g,config.label));if(content)out+=title+":\n"+content+"\n\n"}out+="Clinician review statement:\n"+MEDICAL_REPORT_REVIEW_FOOTER+"\n";return cleanFinalDraftText(out)}
 
 
 
@@ -23311,6 +23341,9 @@ function gInst(lang){var dc="Najm AI ClinicNote is an educational/productivity d
 
 
 
+var originalLegacyOpdGenerate=gO;gO=function(type){originalLegacyOpdGenerate(type);var box=document.getElementById("outputBox");if(box)box.textContent=cleanFinalDraftText(box.innerText||box.textContent||"")};
+var originalLegacyReferralGenerate=gRef;gRef=function(type){originalLegacyReferralGenerate(type);var box=document.getElementById("refOutputBox");if(box)box.textContent=cleanFinalDraftText(box.innerText||box.textContent||"")};
+var originalLegacyInstructionGenerate=gInst;gInst=function(lang){originalLegacyInstructionGenerate(lang);var box=document.getElementById("instOutputBox");if(box)box.textContent=cleanFinalDraftText(box.innerText||box.textContent||"")};
 function clearOutput(){document.getElementById("outputBox").innerHTML="<span class=\"placeholder\">Select a specialty and visit type, enter your de-identified note, then generate structured output.</span>"}
 
 
@@ -27818,7 +27851,13 @@ function generateAllOutputs(){
 
 
 
-  window._speedOutputs = {emr:emr, soap:soap, fup:fupNote, ref:refNote, inst:inst};
+  window._speedOutputs = {
+    emr: cleanFinalDraftText(emr),
+    soap: cleanFinalDraftText(soap),
+    fup: cleanFinalDraftText(fupNote),
+    ref: cleanFinalDraftText(refNote),
+    inst: cleanFinalDraftText(inst)
+  };
 
 
 

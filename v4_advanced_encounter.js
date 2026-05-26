@@ -822,7 +822,7 @@
     // Impression
     h += '<div class="v4-plan-row"><label class="v4-field-label">Doctor Impression</label>';
     h += '<textarea class="v4-textarea v4-textarea-med" id="v4Impression" oninput="window._v4UpdateImp(this.value)" placeholder="Enter your impression or assessment. Free text only.">' + esc(state.impression) + '</textarea>';
-    if (!state.impression) h += '<p class="v4-field-note" style="color:#b45309">Doctor-entered impression is empty. Assessment section will show [not documented].</p>';
+    if (!state.impression) h += '<p class="v4-field-note" style="color:#b45309">Doctor-entered impression is empty. Assessment will be omitted from the generated draft.</p>';
     h += '</div>';
 
     // Plan options as Plan Assist
@@ -851,7 +851,7 @@
     // Doctor plan text
     h += '<div class="v4-plan-row"><label class="v4-field-label">Doctor Plan (free text)</label>';
     h += '<textarea class="v4-textarea v4-textarea-med" id="v4PlanText" oninput="window._v4UpdatePlan(this.value)" placeholder="Medication names/doses should be entered by the clinician if needed.">' + esc(state.planText) + '</textarea>';
-    if (!state.planText && countPlan() === 0) h += '<p class="v4-field-note" style="color:#b45309">No plan entered. Plan section will show [not documented] unless Plan Assist items are selected.</p>';
+    if (!state.planText && countPlan() === 0) h += '<p class="v4-field-note" style="color:#b45309">No plan entered. Plan will be omitted unless Plan Assist items are selected.</p>';
     h += '</div>';
 
     h += '<div class="v4-step-actions">';
@@ -1310,7 +1310,7 @@ function fillCalcDropdown() {
   //  V4 NOTE MODEL (single structured note model, replaces regex pipeline)
   // ================================================================
 
-  var V4_FOOTER = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
+  var V4_FOOTER = '\n\n---\nDraft generated from clinician-entered information. Review and approve before use.\n';
 
   function buildV4NoteModel(rawState) {
     return {
@@ -1738,16 +1738,23 @@ function fillCalcDropdown() {
   // ================================================================
   //  BUILD ADVANCED DRAFT (reads from V4_ENCOUNTER_STATE via collectRawState)
   // ================================================================
+  function finalAdvancedDraftText(text) {
+    if (typeof window.cleanFinalDraftText === 'function') return window.cleanFinalDraftText(text);
+    return String(text || '').replace(/\[[^\]\n]*(?:not documented|not requested\/documented)[^\]\n]*\]/gi, '').replace(/\n{3,}/g, '\n\n').trim();
+  }
+
   function buildAdvancedDraft(tabId) {
     var raw = collectRawState();
     var model = normalizeV4SelectionsToNoteModel(raw);
+    var draft = '';
     switch (tabId) {
-      case 'adv-emr': return renderV4EMR(model);
-      case 'adv-soap': return renderV4SOAP(model);
-      case 'adv-ref': return renderV4Referral(model);
-      case 'adv-inst': return renderV4Instructions(model);
-      default: return 'Select an output format.';
+      case 'adv-emr': draft = renderV4EMR(model); break;
+      case 'adv-soap': draft = renderV4SOAP(model); break;
+      case 'adv-ref': draft = renderV4Referral(model); break;
+      case 'adv-inst': draft = renderV4Instructions(model); break;
+      default: draft = 'Select an output format.';
     }
+    return finalAdvancedDraftText(draft);
   }
 
   // ================================================================

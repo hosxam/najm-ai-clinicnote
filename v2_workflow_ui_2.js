@@ -1368,6 +1368,13 @@ function v2clearAllSelections() {
   if (seekHelpItems.length) outputs.inst += "When to seek help:\n" + seekHelpItems.join(", ") + "\n\n";
   outputs.inst += "Follow-up: " + (followup || "[not documented]") + "\n";
 
+  if (typeof cleanFinalDraftText === "function") {
+    for (var outputKey in outputs) {
+      if (Object.prototype.hasOwnProperty.call(outputs, outputKey)) {
+        outputs[outputKey] = cleanFinalDraftText(outputs[outputKey]);
+      }
+    }
+  }
   window._speedOutputs = outputs;
   window._activeSpeedTab = window._activeSpeedTab || "emr";
   renderSpeedOutput(window._activeSpeedTab);

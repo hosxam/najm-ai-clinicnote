@@ -22,7 +22,7 @@ var src = fs.readFileSync(path.join(__dirname, '..', 'v4_advanced_encounter.js')
 // ================================================================
 // Replicated from v4_advanced_encounter.js for test isolation
 // ================================================================
-var V4_FOOTER = '\n\n---\n[Draft generated from clinician-entered information. Review and approve before use.]\n';
+var V4_FOOTER = '\n\n---\nDraft generated from clinician-entered information. Review and approve before use.\n';
 
 function transformPromptToNoteText(text) {
   if (!text) return '';
@@ -75,7 +75,7 @@ function normalizeV4SelectionsToNoteModel(state) {
   m.objective.investigations = (chips.investigations || []).map(transformPromptToNoteText).filter(Boolean);
 
   // Assessment
-  m.assessment.impression = state.impression || '[not documented]';
+  m.assessment.impression = state.impression || '';
 
   // Plan
   var planChips = (chips.planPhrases || []).map(transformPromptToNoteText).filter(Boolean);
@@ -114,7 +114,7 @@ function renderSubjective(model) {
     var noPeriodNegs = s.relevantNegatives.map(function(n) { return n.replace(/\.\s*$/, ''); });
     parts.push('Relevant negatives include ' + noPeriodNegs.join(', ') + '.');
   }
-  return parts.join(' ') || '[not documented]';
+  return parts.join(' ');
 }
 
 function renderObjective(model) {
@@ -122,7 +122,7 @@ function renderObjective(model) {
   var lines = [];
   lines = lines.concat(obj.examFindings);
   lines = lines.concat(obj.investigations);
-  return lines.length ? lines.join('\n') : '[not documented]';
+  return lines.length ? lines.join('\n') : '';
 }
 
 function renderPlan(model) {
@@ -153,7 +153,7 @@ function renderPlan(model) {
   fup = fup.replace(/^(\d+\s+\w+\s+if\s+not\s+improving),\s*(sooner\s+if\s+)/i, '$1, or $2');
   if (fup) lines.push(fup + '.');
 
-  return lines.length ? lines.join('\n') : '[not documented]';
+  return lines.length ? lines.join('\n') : '';
 }
 
 function renderV4SOAP(model) {
@@ -161,11 +161,12 @@ function renderV4SOAP(model) {
   var obj = renderObjective(model);
   var ass = model.assessment.impression;
   var plan = renderPlan(model);
-  return 'SOAP NOTE\n========================================\n\n' +
-    'SUBJECTIVE:\n' + subj + '\n\n' +
-    'OBJECTIVE:\n' + obj + '\n\n' +
-    'ASSESSMENT:\n' + ass + '\n\n' +
-    'PLAN:\n' + plan + '\n' + V4_FOOTER;
+  var output = 'SOAP NOTE\n========================================\n\n';
+  if (subj) output += 'SUBJECTIVE:\n' + subj + '\n\n';
+  if (obj) output += 'OBJECTIVE:\n' + obj + '\n\n';
+  if (ass) output += 'ASSESSMENT:\n' + ass + '\n\n';
+  if (plan) output += 'PLAN:\n' + plan + '\n';
+  return output + V4_FOOTER;
 }
 
 // ================================================================
@@ -176,7 +177,6 @@ var goldenFeverURTI = 'SOAP NOTE\n========================================\n\n' 
   'Patient presents with a 3-day history of fever, cough, sore throat, runny nose, nasal congestion, body aches, and barking cough. Relevant negatives include no shortness of breath, no chest pain, no neck stiffness, no persistent vomiting, and no confusion.\n\n' +
   'OBJECTIVE:\n' +
   'Throat congested.\nChest clear on auscultation.\nNo respiratory distress.\nHydration adequate.\n\n' +
-  'ASSESSMENT:\n[not documented]\n\n' +
   'PLAN:\n' +
   'Supportive care advised.\nHydration and rest advised.\nReturn precautions discussed.\nFollow-up in 3 days if not improving, or sooner if worsening.\n' +
   V4_FOOTER;
@@ -228,6 +228,7 @@ function testGoldenFeverURTI() {
 // REGRESSION TESTS
 // ================================================================
 var BANNED_PATTERNS = [
+  /\[[^\]\n]*(?:not documented|doctor impression not documented|doctor plan not documented)[^\]\n]*\]/i,
   /documented if assessed/i,
   /documented if measured/i,
   /documented if discussed/i,
