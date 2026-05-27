@@ -6188,6 +6188,25 @@ footer a:hover{color:var(--accent-primary)!important}
   .v4-nav-right{display:grid!important;grid-template-columns:1fr;gap:10px!important}
   .v4-calc-input-row{display:grid!important;grid-template-columns:1fr!important;align-items:stretch!important}
   .v4-calc-input-row input,.v4-calc-input-row select{width:100%!important;margin-left:0!important}
+  .v4-plan-opt{
+    flex-wrap:wrap;
+    align-items:flex-start;
+    row-gap:6px;
+  }
+  .v4-plan-opt .v4-po-text{
+    flex:1 1 calc(100% - 28px);
+    min-width:0;
+    overflow-wrap:break-word;
+    word-break:normal;
+  }
+  .v4-plan-opt .v4-po-cat{
+    margin-left:24px;
+    max-width:calc(100% - 24px);
+    white-space:normal;
+    overflow-wrap:break-word;
+    word-break:normal;
+    line-height:1.25;
+  }
 }
 @media(max-width:480px){
   .hero-stats{grid-template-columns:1fr!important}
@@ -6974,8 +6993,14 @@ html:not([data-theme="light"]) .v4-nav,
 html:not([data-theme="light"]) .v4-sidebar-inner,
 html:not([data-theme="light"]) .v4-step-content,
 html:not([data-theme="light"]) .v4-calc-card,
+html:not([data-theme="light"]) .v4-pog,
 html:not([data-theme="light"]) .v4-out-tab,
 html:not([data-theme="light"]) .v4-output-tabs button{background:var(--bg-surface,#111c2e)!important;border-color:rgba(148,163,184,.08)!important;color:var(--text-primary,#f8fafc)!important}
+html:not([data-theme="light"]) .v4-wf-search{
+  background:var(--bg-elevated,#17233a)!important;
+  border:1px solid var(--bg-border,rgba(148,163,184,.18))!important;
+  color:var(--text-primary,#f8fafc)!important;
+}
 html:not([data-theme="light"]) .v4-select,
 html:not([data-theme="light"]) .v4-search-input,
 html:not([data-theme="light"]) .v4-custom-entry-input,
@@ -6998,8 +7023,49 @@ html:not([data-theme="light"]) .v4-btn-ghost{background:transparent!important;co
 html:not([data-theme="light"]) .v4-step-h,.v4-sub-h{color:var(--text-primary)!important}
 html:not([data-theme="light"]) .v4-step-d,.v4-field-note,.v4-sidebar-empty,.v4-calc-desc,.v4-step-info{color:var(--text-secondary)!important}
 html:not([data-theme="light"]) .v4-field-label,.v4-cg-count,.v4-pog-label,.v4-inv-group-header,.v4-collapse-summary{color:var(--text-tertiary,#94a3b8)!important}
+html:not([data-theme="light"]) .v4-count-pill{
+  background:var(--bg-surface,#111c2e)!important;
+  border:1px solid var(--bg-border,rgba(148,163,184,.18))!important;
+  color:var(--text-secondary,#cbd5e1)!important;
+}
 html:not([data-theme="light"]) .v4-chip-group,.v4-exam-group,.v4-inv-group,.v4-collapse{border-color:var(--bg-border)!important}
 html:not([data-theme="light"]) .v4-exam-prompt,.v4-inv-opt,.v4-plan-opt,.v4-calc-input-row{color:var(--text-secondary)!important}
+html:not([data-theme="light"]) .v4-step summary,
+html:not([data-theme="light"]) .v4-pill,
+html:not([data-theme="light"]) .v4-pog,
+html:not([data-theme="light"]) .v4-plan-opt,
+html:not([data-theme="light"]) .v4-exam-prompt,
+html:not([data-theme="light"]) .v4-inv-opt{
+  background:var(--bg-elevated,#17233a)!important;
+  border-color:var(--bg-border,rgba(148,163,184,.18))!important;
+  color:var(--text-secondary,#cbd5e1)!important;
+}
+html:not([data-theme="light"]) .v4-plan-opt:hover,
+html:not([data-theme="light"]) .v4-exam-prompt:hover,
+html:not([data-theme="light"]) .v4-inv-opt:hover{
+  background:var(--bg-hover,#20304d)!important;
+}
+html:not([data-theme="light"]) .v4-plan-opt.checked,
+html:not([data-theme="light"]) .v4-exam-prompt.checked,
+html:not([data-theme="light"]) .v4-inv-opt.checked{
+  background:rgba(20,184,166,.12)!important;
+  border-color:rgba(20,184,166,.35)!important;
+}
+html:not([data-theme="light"]) .v4-calc-input-row input,
+html:not([data-theme="light"]) .v4-calc-input-row select{
+  background:var(--bg-elevated,#17233a)!important;
+  border-color:var(--bg-border,rgba(148,163,184,.18))!important;
+  color:var(--text-primary,#f8fafc)!important;
+}
+html:not([data-theme="light"]) .v4-calc-actions .v4-btn:not(.v4-btn-ghost){
+  background:var(--bg-elevated,#17233a)!important;
+  border:1px solid var(--bg-border-bright,rgba(20,184,166,.35))!important;
+  color:var(--text-primary,#f8fafc)!important;
+}
+html:not([data-theme="light"]) .v4-calc-actions .v4-btn:not(.v4-btn-ghost):hover{
+  background:var(--bg-hover,#20304d)!important;
+  border-color:var(--accent-primary,#14b8a6)!important;
+}
 html:not([data-theme="light"]) .v4-out-tab.active{background:var(--accent-primary,#14b8a6)!important;color:#fff!important;border-color:var(--accent-primary)!important}
 
 /* === LIGHT THEME OVERRIDE (toggled via data-theme="light" on html) === */
