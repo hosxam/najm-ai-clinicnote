@@ -1,0 +1,8 @@
+{
+  "name": "najm-ai-clinicnote",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/testCalculatorOutputs.js && node scripts/testFinalDraftPlaceholderOutputs.js && node scripts/testAutofillMedicationSafety.js && node scripts/testV4GoldenOutputs.js",
+    "qa": "node scripts/runRepoQA.js"
+  }
+}

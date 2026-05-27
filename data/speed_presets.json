@@ -34,10 +34,10 @@
       "CRP: 15"
     ],
     "prechecked_plan_phrases": [
-      "paracetamol QDS PRN",
-      "ibuprofen TDS with food",
       "honey and lemon for cough",
-      "saline nasal rinse"
+      "saline nasal rinse",
+      "hydration advice",
+      "safety-net: return if worsening after 7d"
     ],
     "prechecked_follow_up": [
       "self-care: no routine follow-up",
@@ -89,9 +89,6 @@
       "CXR: hilar mass"
     ],
     "prechecked_plan_phrases": [
-      "simple linctus PRN",
-      "trial inhaled salbutamol PRN",
-      "amoxicillin TDS x5d",
       "nasal steroid spray for PND"
     ],
     "prechecked_follow_up": [
@@ -145,8 +142,6 @@
     ],
     "prechecked_plan_phrases": [
       "paracetamol gargle + swallow",
-      "ibuprofen TDS",
-      "phenoxymethylpenicillin QDS x10d",
       "delayed script: use if not better 3d"
     ],
     "prechecked_follow_up": [
@@ -199,10 +194,7 @@
       "ESR: 65 elevated (GCA?)"
     ],
     "prechecked_plan_phrases": [
-      "paracetamol PRN max QDS",
-      "ibuprofen PRN",
-      "triptan sumatriptan for migraine",
-      "propranolol BD prophylaxis"
+      "triptan sumatriptan for migraine"
     ],
     "prechecked_follow_up": [
       "review 4 weeks with diary",
@@ -255,9 +247,7 @@
     ],
     "prechecked_plan_phrases": [
       "Epley manoeuvre performed",
-      "Brandt-Daroff exercises taught",
-      "betahistine TDS",
-      "prochlorperazine TDS short course"
+      "Brandt-Daroff exercises taught"
     ],
     "prechecked_follow_up": [
       "review 2 weeks",
@@ -309,9 +299,6 @@
       "ferritin: 8 low"
     ],
     "prechecked_plan_phrases": [
-      "iron replacement ferrous fumarate BD",
-      "start levothyroxine",
-      "B12 injections loading dose",
       "sleep hygiene advice given"
     ],
     "prechecked_follow_up": [
@@ -364,8 +351,6 @@
       "CRP: 12"
     ],
     "prechecked_plan_phrases": [
-      "PPI trial omeprazole OD x4wk",
-      "antacid PRN",
       "dietary advice: small frequent meals",
       "avoid NSAIDs"
     ],
@@ -419,9 +404,6 @@
       "U&E: normal"
     ],
     "prechecked_plan_phrases": [
-      "metoclopramide TDS x5d",
-      "ondansetron PRN",
-      "cyclizine TDS",
       "small frequent meals"
     ],
     "prechecked_follow_up": [
@@ -475,7 +457,6 @@
     ],
     "prechecked_plan_phrases": [
       "oral rehydration solution",
-      "loperamide PRN max 8/day",
       "avoid dairy 48 hours",
       "hand hygiene advice"
     ],
@@ -530,9 +511,7 @@
     ],
     "prechecked_plan_phrases": [
       "increase fibre 25-/day",
-      "increase fluids 2L/day",
-      "macrogol 1 sachet BD",
-      "senna nocte if needed"
+      "increase fluids 2L/day"
     ],
     "prechecked_follow_up": [
       "review 2 weeks",
@@ -584,8 +563,6 @@
       "troponin: <14 normal"
     ],
     "prechecked_plan_phrases": [
-      "GTN spray PRN if recurs",
-      "aspirin stat given",
       "refer A&E immediately",
       "urgent cardiology referral"
     ],
@@ -693,12 +670,7 @@
       "CXR: bilateral pleural effusions",
       "CXR: hyperinflation"
     ],
-    "prechecked_plan_phrases": [
-      "salbutamol inhaler 2 puffs PRN",
-      "start ICS beclometasone BD",
-      "start LABA/ICS combination",
-      "furosemide OD for fluid overload"
-    ],
+    "prechecked_plan_phrases": [],
     "prechecked_follow_up": [
       "review 2 weeks",
       "review 4 weeks post-treatment"
@@ -747,12 +719,7 @@
       "ABPM: mean 148/92",
       "U&E: normal"
     ],
-    "prechecked_plan_phrases": [
-      "continue amlodipine OD",
-      "increase amlodipine to",
-      "add ramipril OD",
-      "increase ramipril to"
-    ],
+    "prechecked_plan_phrases": [],
     "prechecked_follow_up": [
       "review 4 weeks post-titration",
       "review 3 months stable"
@@ -801,12 +768,7 @@
       "HbA1c 53 (7.0%)",
       "HbA1c 58 (7.5%)"
     ],
-    "prechecked_plan_phrases": [
-      "continue metformin BD",
-      "increase metformin to BD",
-      "add gliclazide OD",
-      "add SGLT2i empagliflozin"
-    ],
+    "prechecked_plan_phrases": [],
     "prechecked_follow_up": [
       "review 3 months with HbA1c",
       "review 6 months"
@@ -856,12 +818,7 @@
       "TSH 5.8 (slightly elevated)",
       "TSH 12.5 (undertreated)"
     ],
-    "prechecked_plan_phrases": [
-      "continue levothyroxine OD",
-      "increase levothyroxine to",
-      "reduce levothyroxine to",
-      "start carbimazole OD"
-    ],
+    "prechecked_plan_phrases": [],
     "prechecked_follow_up": [
       "repeat TFTs 6-8 weeks",
       "review 3 months"
@@ -1022,8 +979,6 @@
       "FBC: WCC 12.5, neutrophils 8.2"
     ],
     "prechecked_plan_phrases": [
-      "paracetamol/kg QDS PRN",
-      "ibuprofen/kg TDS PRN",
       "encourage oral fluids: small frequent sips",
       "safety-net advice given to parents"
     ],
@@ -1079,8 +1034,7 @@
     "prechecked_plan_phrases": [
       "viral URTI: self-limiting 7-10 days",
       "honey (>1yr) for cough at bedtime",
-      "saline nasal drops before feeds",
-      "paracetamol PRN for discomfort"
+      "saline nasal drops before feeds"
     ],
     "prechecked_follow_up": [
       "review if cough >3 weeks",
@@ -1189,7 +1143,6 @@
     "prechecked_plan_phrases": [
       "varicella confirmed clinically",
       "calamine lotion for itch",
-      "chlorphenamine BD (age-appropriate dose)",
       "paracetamol for fever (avoid ibuprofen in varicella)"
     ],
     "prechecked_follow_up": [
@@ -1298,8 +1251,6 @@
     ],
     "prechecked_plan_phrases": [
       "acute otitis media right ear",
-      "paracetamol/kg QDS",
-      "ibuprofen/kg TDS",
       "warm compress to ear for comfort"
     ],
     "prechecked_follow_up": [
@@ -1462,9 +1413,6 @@
       "immunisation history verified on system"
     ],
     "prechecked_plan_phrases": [
-      "MMR 1st dose given: right thigh IM",
-      "Hib/MenC booster given: left thigh IM",
-      "PCV booster given: left thigh IM (different site)",
       "batch numbers recorded in red book and system"
     ],
     "prechecked_follow_up": [
@@ -1517,8 +1465,6 @@
       "coeliac screen tTG: negative"
     ],
     "prechecked_plan_phrases": [
-      "iron deficiency identified: ferrous fumarate/kg/day",
-      "vitamin D daily",
       "dietary review with dietitian",
       "food diary 1 week"
     ],
@@ -1628,7 +1574,6 @@
     ],
     "prechecked_plan_phrases": [
       "lower UTI with fever: treat as possible upper UTI given age",
-      "cefalexin/kg BD 7 days ( BD)",
       "encourage oral fluids",
       "regular voiding: every 2-3hrs"
     ],
@@ -1683,8 +1628,6 @@
     ],
     "prechecked_plan_phrases": [
       "routine 28-week bloods taken today",
-      "anti-D administered (Rh negative)",
-      "iron supplement: ferrous sulphate OD (ferritin borderline)",
       "fetal movement awareness reinforced: contact if reduced"
     ],
     "prechecked_follow_up": [
@@ -1739,7 +1682,6 @@
     "prechecked_plan_phrases": [
       "suspected endometriosis: clinical + imaging consistent",
       "COCP continuous (no pill-free interval) for symptom control",
-      "naproxen BD during flares",
       "gynaecology referral: fertility + endometriosis"
     ],
     "prechecked_follow_up": [
@@ -1792,9 +1734,6 @@
       "TFT: normal"
     ],
     "prechecked_plan_phrases": [
-      "iron replacement: ferrous sulphate BD with vitamin C",
-      "tranexamic acid TDS during menses",
-      "mefenamic acid TDS during menses",
       "Mirena IUS discussed as first-line long-term: patient considering"
     ],
     "prechecked_follow_up": [
@@ -1958,7 +1897,6 @@
     ],
     "prechecked_plan_phrases": [
       "primary dysmenorrhoea: reassurance given",
-      "naproxen BD starting day before expected period",
       "start 2 days before menses, continue 3 days",
       "heat pad to lower abdomen"
     ],
@@ -2069,7 +2007,6 @@
     "prechecked_plan_phrases": [
       "early pregnancy confirmed: congratulations",
       "folic acid daily continue until 12 weeks",
-      "vitamin D daily throughout pregnancy",
       "booking appointment arranged with midwife"
     ],
     "prechecked_follow_up": [
@@ -2232,7 +2169,6 @@
       "ESR 8 mm/hr"
     ],
     "prechecked_plan_phrases": [
-      "paracetamol QDS + ibuprofen TDS with food",
       "avoid prolonged sitting >30min",
       "McKenzie extension exercises",
       "physiotherapy referral sent"
@@ -2287,8 +2223,6 @@
       "NCS/EMG: C6 radiculopathy right"
     ],
     "prechecked_plan_phrases": [
-      "naproxen BD 10 days",
-      "amitriptyline nocte for neuropathic pain",
       "cervical collar NOT recommended",
       "ergonomic workstation review"
     ],
@@ -2343,7 +2277,6 @@
     ],
     "prechecked_plan_phrases": [
       "RICE protocol: rest, ice 20min QDS, compression, elevation",
-      "ibuprofen TDS 5 days",
       "crutches partial weight-bearing",
       "tubigrip support"
     ],
@@ -2397,7 +2330,6 @@
       "MRI shoulder: partial thickness rotator cuff tear"
     ],
     "prechecked_plan_phrases": [
-      "naproxen BD 2 weeks with PPI cover",
       "pendulum exercises start immediately",
       "avoid overhead activities",
       "physiotherapy referral: rotator cuff programme"
@@ -2452,7 +2384,6 @@
       "FBC normal"
     ],
     "prechecked_plan_phrases": [
-      "paracetamol QDS regular",
       "topical NSAID to groin",
       "weight loss advice: target BMI <25",
       "walking stick opposite hand"
@@ -2509,7 +2440,6 @@
     "prechecked_plan_phrases": [
       "RICE: ice 20min every 2hrs first 48hrs",
       "tubigrip compression",
-      "ibuprofen TDS 5 days",
       "crutches if unable to weight-bear"
     ],
     "prechecked_follow_up": [
@@ -2564,8 +2494,7 @@
     "prechecked_plan_phrases": [
       "wrist splint neutral position nocte",
       "ergonomic keyboard advice",
-      "avoid repetitive wrist flexion",
-      "steroid injection offered: declined"
+      "avoid repetitive wrist flexion"
     ],
     "prechecked_follow_up": [
       "review 6 weeks with splint",
@@ -2617,9 +2546,6 @@
       "WCC 11.2"
     ],
     "prechecked_plan_phrases": [
-      "colchicine BD until flare resolves (max 3 days)",
-      "naproxen BD alternative if colchicine CI",
-      "prednisolone OD 5 days if NSAID/colchicine CI",
       "rest and elevate foot"
     ],
     "prechecked_follow_up": [
@@ -2782,8 +2708,6 @@
       "CRP <5"
     ],
     "prechecked_plan_phrases": [
-      "paracetamol QDS continue",
-      "topical diclofenac gel to knees TDS",
       "weight loss target 5kg over 6 months",
       "low-impact exercise: swimming, cycling"
     ],
@@ -2892,10 +2816,7 @@
       "no swab needed (intact TM)"
     ],
     "prechecked_plan_phrases": [
-      "acute otitis media — watchful waiting 48-72h",
-      "paracetamol/kg QDS (child)",
-      "ibuprofen/kg TDS (child)",
-      "delayed antibiotic prescription: amoxicillin/kg/day TDS × 5 days"
+      "acute otitis media — watchful waiting 48-72h"
     ],
     "prechecked_follow_up": [
       "review in 48-72h if not improving",
@@ -3113,9 +3034,7 @@
     ],
     "prechecked_plan_phrases": [
       "stop oxymetazoline (rhinitis medicamentosa developing)",
-      "mometasone nasal spray 2 puffs each nostril OD",
-      "saline nasal rinse BD",
-      "cetirizine OD during pollen season"
+      "saline nasal rinse BD"
     ],
     "prechecked_follow_up": [
       "review in 4-6 weeks",
@@ -3168,8 +3087,6 @@
     ],
     "prechecked_plan_phrases": [
       "acute bacterial sinusitis — symptoms >10 days",
-      "amoxicillin TDS × 7 days",
-      "mometasone nasal spray 2 puffs each nostril OD",
       "saline nasal irrigation BD"
     ],
     "prechecked_follow_up": [
@@ -3222,9 +3139,6 @@
       "no blood tests needed for uncomplicated tonsillitis"
     ],
     "prechecked_plan_phrases": [
-      "phenoxymethylpenicillin QDS × 10 days",
-      "paracetamol QDS",
-      "ibuprofen TDS",
       "salt water gargles"
     ],
     "prechecked_follow_up": [
@@ -3332,7 +3246,6 @@
     ],
     "prechecked_plan_phrases": [
       "likely drug eruption (amoxicillin) — stop antibiotic",
-      "cetirizine OD for itch",
       "emollient for dry skin",
       "document drug allergy: amoxicillin — maculopapular rash"
     ],
@@ -3387,7 +3300,6 @@
     ],
     "prechecked_plan_phrases": [
       "adapalene 0.1% gel ON (pea-sized amount)",
-      "lymecycline OD × 12 weeks",
       "benzoyl peroxide 5% wash AM",
       "non-comedogenic moisturiser and SPF 30"
     ],
@@ -3442,7 +3354,6 @@
     ],
     "prechecked_plan_phrases": [
       "emollient: Cerave cream apply liberally QDS",
-      "betamethasone valerate 0.025% OD to flare areas × 2 weeks",
       "step down to hydrocortisone 1% for face",
       "wet wraps at night for severe itch"
     ],
@@ -3496,7 +3407,6 @@
       "Wood lamp: no fluorescence"
     ],
     "prechecked_plan_phrases": [
-      "terbinafine cream 1% BD × 2 weeks (extend 1 week beyond clearance)",
       "stop hydrocortisone (tinea incognito risk)",
       "keep area dry: cotton underwear",
       "treat athlete foot concurrently (reservoir)"
@@ -3551,8 +3461,6 @@
       "CRP 4 mg/L"
     ],
     "prechecked_plan_phrases": [
-      "cetirizine OD (up-dose to if needed)",
-      "add ranitidine BD (H2 blocker)",
       "avoid known aggravants (heat, tight clothing, alcohol)",
       "urticaria diary to identify triggers"
     ],
@@ -3716,10 +3624,7 @@
       "TSH 3.2 mIU/L (normal)"
     ],
     "prechecked_plan_phrases": [
-      "telogen effluvium secondary to stress — self-limiting over 6-12 months",
-      "ferrous fumarate OD (ferritin <30)",
-      "vitamin D OD × 12 weeks",
-      "minoxidil 2% topical OD for FPHL component"
+      "telogen effluvium secondary to stress — self-limiting over 6-12 months"
     ],
     "prechecked_follow_up": [
       "repeat ferritin in 3 months",
@@ -3772,7 +3677,6 @@
     ],
     "prechecked_plan_phrases": [
       "bacterial conjunctivitis — self-limiting",
-      "chloramphenicol 0.5% drops QDS × 5 days",
       "warm compress and lid hygiene BD",
       "avoid contact lenses until resolved + 24h"
     ],
@@ -3827,8 +3731,6 @@
     ],
     "prechecked_plan_phrases": [
       "anterior uveitis right eye — recurrent, HLA-B27 associated",
-      "dexamethasone 0.1% drops hourly (taper over 6 weeks)",
-      "cyclopentolate 1% TDS (prevent synechiae, pain relief)",
       "IOP check in 1 week (steroid response)"
     ],
     "prechecked_follow_up": [
@@ -3937,7 +3839,6 @@
     ],
     "prechecked_plan_phrases": [
       "bacterial conjunctivitis — likely self-limiting",
-      "chloramphenicol 0.5% drops QDS × 5 days both eyes",
       "lid hygiene: warm compress + cotton bud cleaning BD",
       "hand washing after touching eyes"
     ],
@@ -3993,7 +3894,6 @@
     "prechecked_plan_phrases": [
       "microbial keratitis — contact lens related",
       "corneal scrape taken",
-      "ofloxacin 0.3% drops hourly day and night (first 48h)",
       "no contact lens wear until fully healed + ophthalmology clearance"
     ],
     "prechecked_follow_up": [
@@ -4048,7 +3948,6 @@
     "prechecked_plan_phrases": [
       "corneal foreign body removed under slit lamp with needle",
       "rust ring partially removed (residual — review in 48h)",
-      "chloramphenicol 1% ointment QDS × 5 days",
       "no eye pad (infection risk)"
     ],
     "prechecked_follow_up": [
@@ -4102,7 +4001,6 @@
     ],
     "prechecked_plan_phrases": [
       "generalised anxiety disorder — moderate-severe",
-      "sertraline OD started (first-line SSRI for GAD)",
       "CBT referral via IAPT (high-intensity)",
       "reduce caffeine to ≤2 cups/day"
     ],
@@ -4156,7 +4054,6 @@
       "TFTs: TSH 2.8 mIU/L (normal)"
     ],
     "prechecked_plan_phrases": [
-      "sertraline OD started",
       "counselling referral (CBT via IAPT)",
       "sleep hygiene advice given",
       "exercise prescription: 30 min walk daily"
@@ -4322,7 +4219,6 @@
     ],
     "prechecked_plan_phrases": [
       "panic disorder with developing agoraphobia",
-      "sertraline OD (start low, increase to after 1 week)",
       "CBT referral: panic-focused (interoceptive exposure)",
       "breathing retraining: slow diaphragmatic breathing"
     ],
@@ -4376,7 +4272,6 @@
       "WSAS: 12 (was 28)"
     ],
     "prechecked_plan_phrases": [
-      "partial response to sertraline — increase to OD",
       "continue minimum 6 months after remission (first episode)",
       "sexual dysfunction discussed: options include dose reduction, switching, or augmentation",
       "CBT ongoing — 4 sessions completed"
@@ -4433,8 +4328,7 @@
     "prechecked_plan_phrases": [
       "RICE protocol: rest, ice 20min q2h, compression, elevation",
       "tubigrip double-layer applied",
-      "crutches provided (partial weight-bearing)",
-      "ibuprofen TDS with food × 5 days"
+      "crutches provided (partial weight-bearing)"
     ],
     "prechecked_follow_up": [
       "GP if not improving in 5-7 days",
@@ -4543,8 +4437,7 @@
     "prechecked_plan_phrases": [
       "cool running water applied 20 min (already done)",
       "cling film applied loosely",
-      "Jelonet + gauze dressing applied",
-      "ibuprofen TDS + paracetamol QDS"
+      "Jelonet + gauze dressing applied"
     ],
     "prechecked_follow_up": [
       "practice nurse review in 48 hours for redressing",
@@ -4596,10 +4489,8 @@
       "ECG: sinus tachycardia 112 bpm"
     ],
     "prechecked_plan_phrases": [
-      "IM adrenaline (1:1000) given",
       "high-flow O2 15L via NRB mask",
-      "IV fluid bolus NS stat",
-      "chlorphenamine IV"
+      "IV fluid bolus NS stat"
     ],
     "prechecked_follow_up": [
       "allergy clinic referral",
@@ -4706,10 +4597,7 @@
       "FBC: Hb 138 g/L, WCC 12.4"
     ],
     "prechecked_plan_phrases": [
-      "STEMI pathway activated",
-      "aspirin PO stat",
-      "ticagrelor PO stat",
-      "morphine IV + metoclopramide IV"
+      "STEMI pathway activated"
     ],
     "prechecked_follow_up": [
       "cath lab transfer immediate",
@@ -4761,9 +4649,7 @@
       "ECG: sinus tachycardia, S1Q3T3 pattern"
     ],
     "prechecked_plan_phrases": [
-      "anticoagulation: apixaban BD × 7 days then BD",
       "O2 to maintain SpO2 >94%",
-      "analgesia: paracetamol QDS",
       "compression stocking for DVT leg"
     ],
     "prechecked_follow_up": [
@@ -4818,8 +4704,7 @@
     "prechecked_plan_phrases": [
       "surgical referral: appendicitis",
       "NBM from now",
-      "IV fluids NS 1L over 4h",
-      "paracetamol IV"
+      "IV fluids NS 1L over 4h"
     ],
     "prechecked_follow_up": [
       "theatre today/tomorrow",
@@ -4927,7 +4812,6 @@
     ],
     "prechecked_plan_phrases": [
       "sepsis 6 pathway initiated",
-      "IV co-amoxiclav + clarithromycin IV",
       "IV fluid bolus NS stat (repeat if BP <90)",
       "O2 via Venturi 40%"
     ],
@@ -5092,8 +4976,6 @@
     ],
     "prechecked_plan_phrases": [
       "target BP discussed",
-      "antihypertensive continued",
-      "antihypertensive dose increased",
       "new agent added"
     ],
     "prechecked_follow_up": [
@@ -5146,7 +5028,6 @@
       "electrolytes reviewed"
     ],
     "prechecked_plan_phrases": [
-      "diuretic dose adjusted",
       "ACEi/ARB continued",
       "beta-blocker continued",
       "MRA continued"
@@ -5311,8 +5192,6 @@
       "HDL documented"
     ],
     "prechecked_plan_phrases": [
-      "statin continued",
-      "statin dose increased",
       "statin switched due to side effects",
       "ezetimibe added"
     ],
@@ -5366,9 +5245,7 @@
       "HbA1c reviewed"
     ],
     "prechecked_plan_phrases": [
-      "DAPT continued as planned",
       "DAPT duration discussed",
-      "statin high-intensity continued",
       "ACEi/ARB continued"
     ],
     "prechecked_follow_up": [
@@ -5531,9 +5408,6 @@
       "CT head: space-occupying lesion"
     ],
     "prechecked_plan_phrases": [
-      "paracetamol QDS",
-      "ibuprofen TDS",
-      "sumatriptan PRN",
       "analgesia ladder discussed"
     ],
     "prechecked_follow_up": [
@@ -5585,12 +5459,7 @@
       "medication diary reviewed",
       "MRI brain: normal"
     ],
-    "prechecked_plan_phrases": [
-      "topiramate OD started",
-      "topiramate increased to OD",
-      "propranolol BD started",
-      "propranolol increased to BD"
-    ],
+    "prechecked_plan_phrases": [],
     "prechecked_follow_up": [
       "review 4 weeks",
       "review 6 weeks"
@@ -5640,12 +5509,7 @@
       "drug level: subtherapeutic",
       "drug level: supratherapeutic"
     ],
-    "prechecked_plan_phrases": [
-      "levetiracetam BD continued",
-      "levetiracetam increased to BD",
-      "lamotrigine BD continued",
-      "lamotrigine increased to BD"
-    ],
+    "prechecked_plan_phrases": [],
     "prechecked_follow_up": [
       "review 3 months",
       "review 6 months"
@@ -5698,8 +5562,7 @@
     "prechecked_plan_phrases": [
       "Epley manoeuvre performed",
       "Epley manoeuvre: symptoms resolved",
-      "Brandt-Daroff exercises taught",
-      "betahistine TDS"
+      "Brandt-Daroff exercises taught"
     ],
     "prechecked_follow_up": [
       "review 2 weeks",
@@ -5861,8 +5724,6 @@
       "LFTs normal"
     ],
     "prechecked_plan_phrases": [
-      "propranolol BD started",
-      "propranolol increased to BD",
       "primidone ON started",
       "primidone increased"
     ],
@@ -5916,10 +5777,7 @@
       "NCS: stable from previous"
     ],
     "prechecked_plan_phrases": [
-      "amitriptyline ON",
-      "amitriptyline increased to ON",
-      "gabapentin TDS",
-      "gabapentin increased to TDS"
+      "amitriptyline ON"
     ],
     "prechecked_follow_up": [
       "review 4 weeks",
@@ -5971,10 +5829,7 @@
       "MRI brain: acute infarct"
     ],
     "prechecked_plan_phrases": [
-      "aspirin OD continued",
-      "clopidogrel OD continued",
-      "DAPT 21 days then clopidogrel mono",
-      "apixaban BD started"
+      "DAPT 21 days then clopidogrel mono"
     ],
     "prechecked_follow_up": [
       "review 2 weeks",
@@ -6082,7 +5937,6 @@
     ],
     "prechecked_plan_phrases": [
       "step up to ICS/LABA combination",
-      "continue current ICS dose",
       "step down ICS after 3 months stable",
       "add LTRA trial"
     ],
@@ -6136,9 +5990,6 @@
       "spirometry: FEV1 30% predicted"
     ],
     "prechecked_plan_phrases": [
-      "continue LAMA inhaler",
-      "add LABA/ICS combination",
-      "triple therapy initiated",
       "pulmonary rehab referral"
     ],
     "prechecked_follow_up": [
@@ -6248,7 +6099,6 @@
     "prechecked_plan_phrases": [
       "oxygen to target SpO2 94-98%",
       "oxygen to target SpO2 88-92% (COPD)",
-      "IV furosemide for pulmonary oedema",
       "nebulised salbutamol"
     ],
     "prechecked_follow_up": [
@@ -6303,8 +6153,7 @@
     "prechecked_plan_phrases": [
       "nebulised salbutamol",
       "salbutamol MDI via spacer",
-      "oral prednisolone 5 days",
-      "start ICS preventer"
+      "oral prednisolone 5 days"
     ],
     "prechecked_follow_up": [
       "review 48h post-acute",
@@ -6356,10 +6205,7 @@
       "CXR: bilateral patchy infiltrates"
     ],
     "prechecked_plan_phrases": [
-      "oral amoxicillin started",
-      "oral doxycycline if penicillin allergy",
-      "IV co-amoxiclav for CURB-65 ≥3",
-      "add clarithromycin for atypical cover"
+      "oral doxycycline if penicillin allergy"
     ],
     "prechecked_follow_up": [
       "review 48h if not improving",
@@ -6577,7 +6423,6 @@
     ],
     "prechecked_plan_phrases": [
       "refer ILD MDT",
-      "antifibrotic therapy discussion",
       "home oxygen assessment",
       "pulmonary rehab referral"
     ],
@@ -6630,12 +6475,7 @@
       "OGD: LA grade A oesophagitis",
       "OGD: LA grade C oesophagitis"
     ],
-    "prechecked_plan_phrases": [
-      "PPI omeprazole OD",
-      "PPI omeprazole OD (step up)",
-      "PPI esomeprazole OD",
-      "alginate (Gaviscon Advance) post-meals + nocte"
-    ],
+    "prechecked_plan_phrases": [],
     "prechecked_follow_up": [
       "review 4 weeks on PPI",
       "review 8 weeks: step down trial"
@@ -6686,8 +6526,6 @@
       "LFTs: normal"
     ],
     "prechecked_plan_phrases": [
-      "PPI omeprazole BD x4wk",
-      "H. pylori triple therapy x7d",
       "OGD requested (2-week wait)",
       "OGD requested (routine)"
     ],
@@ -6743,8 +6581,7 @@
     "prechecked_plan_phrases": [
       "low FODMAP diet: dietitian referral",
       "fibre: soluble (ispaghula) preferred",
-      "peppermint oil capsules TDS",
-      "mebeverine TDS"
+      "peppermint oil capsules TDS"
     ],
     "prechecked_follow_up": [
       "review 6 weeks on FODMAP",
@@ -6797,9 +6634,7 @@
     ],
     "prechecked_plan_phrases": [
       "fibre target/day",
-      "fluids 2L/day minimum",
-      "macrogol 2 sachets OD titrate",
-      "bisacodyl PRN"
+      "fluids 2L/day minimum"
     ],
     "prechecked_follow_up": [
       "review 4 weeks",
@@ -6851,10 +6686,7 @@
       "CRP: 5"
     ],
     "prechecked_plan_phrases": [
-      "loperamide PRN",
-      "cholestyramine OD trial (BAM)",
-      "low FODMAP diet trial 6 weeks",
-      "mesalazine OD (UC)"
+      "low FODMAP diet trial 6 weeks"
     ],
     "prechecked_follow_up": [
       "review with calprotectin result",
@@ -6906,7 +6738,6 @@
       "ferritin: 8 low"
     ],
     "prechecked_plan_phrases": [
-      "topical treatment for haemorrhoids (Anusol/GTN)",
       "dietary fibre increase + stool softener",
       "rubber band ligation referral",
       "colonoscopy requested (2-week wait)"
@@ -7126,10 +6957,7 @@
       "OGD: Barrett segment - biopsies taken"
     ],
     "prechecked_plan_phrases": [
-      "histology results discussed",
-      "H. pylori eradication: triple therapy x7d",
-      "continue PPI long-term",
-      "step down PPI to OD"
+      "histology results discussed"
     ],
     "prechecked_follow_up": [
       "review with histology 2 weeks",
@@ -7181,9 +7009,6 @@
       "HbA1c 58 (7.5%)"
     ],
     "prechecked_plan_phrases": [
-      "continue metformin BD",
-      "add SGLT2i empagliflozin",
-      "add GLP-1 RA semaglutide weekly",
       "titrate GLP-1 to"
     ],
     "prechecked_follow_up": [
@@ -7290,12 +7115,7 @@
       "TSH 4.5 fT4 13 (borderline)",
       "TSH 8.2 fT4 11 (undertreated)"
     ],
-    "prechecked_plan_phrases": [
-      "continue levothyroxine OD",
-      "increase levothyroxine to",
-      "increase levothyroxine to",
-      "reduce levothyroxine to"
-    ],
+    "prechecked_plan_phrases": [],
     "prechecked_follow_up": [
       "repeat TFTs 6-8 weeks post-dose change",
       "review 3 months"
@@ -7346,10 +7166,7 @@
       "TSH 2.1 fT4 15 (euthyroid on treatment)"
     ],
     "prechecked_plan_phrases": [
-      "continue carbimazole OD (titration regimen)",
-      "reduce carbimazole to OD",
-      "block-and-replace: carbimazole + levothyroxine",
-      "propranolol TDS for symptom control"
+      "block-and-replace: carbimazole + levothyroxine"
     ],
     "prechecked_follow_up": [
       "TFTs 4-6 weeks",
@@ -7456,8 +7273,6 @@
       "HbA1c 53 (reasonable)"
     ],
     "prechecked_plan_phrases": [
-      "reduce basal insulin by 20%",
-      "reduce sulfonylurea dose",
       "stop sulfonylurea - switch to DPP4i",
       "hypo awareness training (BGAT)"
     ],
@@ -7512,9 +7327,7 @@
     ],
     "prechecked_plan_phrases": [
       "lifestyle: weight loss 5-10% target",
-      "metformin BD (insulin resistance)",
-      "COCP for cycle regulation + anti-androgen effect",
-      "spironolactone OD for hirsutism (if not planning pregnancy)"
+      "COCP for cycle regulation + anti-androgen effect"
     ],
     "prechecked_follow_up": [
       "review 3 months with bloods",
@@ -7731,9 +7544,7 @@
       "urine dipstick: blood trace"
     ],
     "prechecked_plan_phrases": [
-      "nitrofurantoin BD 5 days",
       "increase oral fluids >2L/day",
-      "paracetamol PRN for discomfort",
       "avoid caffeine and alcohol"
     ],
     "prechecked_follow_up": [
@@ -7841,7 +7652,6 @@
       "urinalysis: NAD"
     ],
     "prechecked_plan_phrases": [
-      "tamsulosin ON started",
       "fluid management advice: avoid evening fluids",
       "reduce caffeine intake",
       "bladder training discussed"
@@ -7953,7 +7763,6 @@
     "prechecked_plan_phrases": [
       "urethral catheter 14Fr inserted",
       "initial drainage clamped after (prevent decompression haematuria)",
-      "tamsulosin OD started/continued",
       "TWOC in 48-72 hours"
     ],
     "prechecked_follow_up": [
@@ -8006,9 +7815,6 @@
       "WCC 8.2 ×10⁹/L"
     ],
     "prechecked_plan_phrases": [
-      "diclofenac IM stat",
-      "ondansetron IV for nausea",
-      "tamsulosin OD (MET)",
       "increase fluids >2.5L/day"
     ],
     "prechecked_follow_up": [
@@ -8116,8 +7922,6 @@
       "K+ 5.1 mmol/L"
     ],
     "prechecked_plan_phrases": [
-      "continue ramipril OD",
-      "dapagliflozin OD continued",
       "target BP <130/80 mmHg",
       "low-potassium diet reinforced"
     ],
@@ -8172,8 +7976,6 @@
     ],
     "prechecked_plan_phrases": [
       "urgent nephrology referral",
-      "start ramipril OD (titrate to max)",
-      "furosemide OD for oedema",
       "fluid restrict 1.5L/day"
     ],
     "prechecked_follow_up": [
@@ -8334,8 +8136,6 @@
       "ECG: ischaemic changes"
     ],
     "prechecked_plan_phrases": [
-      "IM adrenaline thigh given per local protocol",
-      "IM adrenaline repeat at 5 minutes if no improvement",
       "high-flow oxygen via non-rebreather",
       "IV access established"
     ],
@@ -8391,8 +8191,7 @@
     "prechecked_plan_phrases": [
       "DKA pathway initiated per local protocol",
       "IV access x2 large bore",
-      "fluid resuscitation IV per protocol",
-      "fixed-rate IV insulin infusion per protocol"
+      "fluid resuscitation IV per protocol"
     ],
     "prechecked_follow_up": [
       "HDU/ITU admission planned if severe",

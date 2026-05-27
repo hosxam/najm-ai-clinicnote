@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * scripts/validate150WorkflowCoverage.js
- * Validates all 150 workflows have full coverage across all systems.
+ * Validates the current workflow registry has full coverage across all systems.
  */
 import * as fs from 'fs';
 import * as path from 'path';
@@ -115,7 +115,7 @@ function main() {
   for (const w of warnings) console.log(`  ⚠️  ${w}`);
 
   if (errors.length) process.exit(1);
-  console.log('\n✅ 150-workflow coverage validated.');
+  console.log(`\n✅ ${workflows.length}-workflow coverage validated.`);
 }
 
 main();

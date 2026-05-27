@@ -408,6 +408,23 @@ var V2_SPEED_PRESET_FIELDS = [
 var v2SpeedPresetLoadPromise = null;
 var v2SpeedPresetApplyToken = 0;
 
+var V2_AUTOFILL_NAMED_MEDICATION_PATTERN = /\b(?:paracetamol|ibuprofen|amoxicillin|phenoxymethylpenicillin|linctus|salbutamol|beclometasone|furosemide|amlodipine|ramipril|metformin|gliclazide|empagliflozin|levothyroxine|carbimazole|omeprazole|antacid|metoclopramide|ondansetron|cyclizine|loperamide|macrogol|senna|gtn|aspirin|betahistine|prochlorperazine|ferrous|cefalexin|calamine|chlorphenamine|cocp|naproxen|tranexamic|mefenamic|diclofenac|colchicine|prednisolone|amitriptyline|mometasone|dexamethasone|cyclopentolate|chloramphenicol|ofloxacin|apixaban|enoxaparin|co-amoxiclav|clarithromycin|sumatriptan|propranolol|topiramate|levetiracetam|lamotrigine|gabapentin|clopidogrel|doxycycline|gaviscon|mesalazine|mebeverine|bisacodyl|semaglutide|spironolactone|nitrofurantoin|tamsulosin|dapagliflozin|insulin|adrenaline|epinephrine|hydrocortisone|terbinafine|minoxidil|morphine|cetirizine|ranitidine|lymecycline|betamethasone|sertraline|oxymetazoline|adapalene|benzoyl|ticagrelor|cholestyramine|anusol|vitamin d|mmr|pcv)\b|hib\/menc/i;
+var V2_AUTOFILL_MEDICATION_CONTEXT_PATTERN = /\b(?:medication|antibiotic|anticoagulation|analgesia|antipyretic|insulin|vaccine|vaccination|anti-d|ppi|ics|laba|lama|dapt|nsaid|steroid|inhaler|antihypertensive|diuretic|statin|sulfonylurea|antifibrotic|triple therapy|h\. pylori eradication|b12 injections)\b/i;
+var V2_AUTOFILL_ADMINISTRATION_PATTERN = /\b(?:qds|tds|bd|od|prn|nocte|stat|daily|weekly|hourly|dose|titrate|titration|started|start|add|continue|continued|increase|increased|reduce|reduced|adjusted|administered|given|prescri(?:be|bed|ption)|therapy|treatment|puffs?|tablets?|sachets?|infusion|injection|iv|im|sc|po|sl)\b|\/kg|\b\d+(?:\.\d+)?\s*(?:mg|mcg|ml|mL|g|%)\b|(?:\bx\s*\d+\s*(?:d|day|days|wk|wks|week|weeks)\b)|(?:×\s*\d+\s*(?:d|day|days|wk|wks|week|weeks)\b)|(?:\bfor\s*\d+\s*(?:d|day|days|wk|wks|week|weeks)\b)/i;
+
+function v2isSafeAutofillSelection(group, value) {
+  var text = String(value || "").trim();
+  if (!text) return false;
+  if (group !== "plan_phrases") return true;
+  if (/^(?:(?:antipyretic|analgesia|symptomatic treatment|medication safety) advice|medication (?:review|adherence|safety) advice) (?:discussed|documented)(?:\.|$)|^analgesia ladder discussed(?:\.|$)/i.test(text)) {
+    return true;
+  }
+  if (!V2_AUTOFILL_ADMINISTRATION_PATTERN.test(text)) return true;
+  return !(V2_AUTOFILL_NAMED_MEDICATION_PATTERN.test(text) || V2_AUTOFILL_MEDICATION_CONTEXT_PATTERN.test(text));
+}
+
+window.clinicNoteIsSafeAutofillSelection = v2isSafeAutofillSelection;
+
 function v2isSpeedPresetMode() {
   if (window.CLINICNOTE_DATA_MODE !== "v2") return false;
   if (typeof window.isSpeedPresetModeEnabled === "function") return window.isSpeedPresetModeEnabled();
@@ -571,7 +588,7 @@ function v2loadSpeedPresets() {
     console.warn("Najm AI: Autofill defaults cannot load because fetch is unavailable.");
     return Promise.resolve(null);
   }
-  v2SpeedPresetLoadPromise = fetch("./data/speed_presets.json?v=v7-autofill-defaults", { cache: "no-store" })
+  v2SpeedPresetLoadPromise = fetch("./data/speed_presets.json?v=v8-autofill-med-safety", { cache: "no-store" })
     .then(function(resp) {
       if (!resp.ok) throw new Error("HTTP " + resp.status);
       return resp.json();
@@ -637,6 +654,7 @@ function v2selectPresetChips(preset) {
     for (var v = 0; v < values.length; v++) {
       var expected = String(values[v] || "").trim();
       if (!expected) continue;
+      if (!v2isSafeAutofillSelection(cfg.group, expected)) continue;
       var buttons = area.querySelectorAll('.chip[data-v2-group="' + cfg.group + '"]');
       var matched = false;
       for (var b = 0; b < buttons.length; b++) {

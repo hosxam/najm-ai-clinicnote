@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { isUnsafeAutofillSelection } = require('./autofillMedicationSafetyRules');
 
 const ROOT = path.resolve(__dirname, '..');
 const PRESETS_PATH = path.join(ROOT, 'data', 'speed_presets.json');
@@ -224,6 +225,9 @@ function main() {
     for (const [field, group] of Object.entries(chipFieldToGroup)) {
       for (const chipText of preset[field] || []) {
         totalReferencedChips += 1;
+        if (isUnsafeAutofillSelection(group, chipText)) {
+          errors.push(`${label}: "${chipText}" must remain clinician-selectable only and cannot be selected by Autofill.`);
+        }
         if (!chipGroups.has(group) || !chipGroups.get(group).has(chipText)) {
           errors.push(`${label}: "${chipText}" in ${field} does not exist in workflow chip group "${group}".`);
         }

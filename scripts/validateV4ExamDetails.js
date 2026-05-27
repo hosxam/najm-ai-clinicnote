@@ -9,7 +9,6 @@ const TARGET_WORKFLOWS = [
   'gp-fever-urti',
   'gp-diabetes-followup',
   'msk-low-back-pain',
-  'peds-fever',
   'obgyn-antenatal-followup'
 ];
 
@@ -97,7 +96,9 @@ function main() {
 
   const details = readJson(DATA_PATH);
   const workflowIds = new Set(readJson(WORKFLOWS_PATH).map(w => w.workflow_id));
+  const pediatricFeverWorkflows = Array.from(workflowIds).filter(id => /^peds-fever(?:-|$)/.test(id));
   if (!Array.isArray(details) || details.length === 0) errors.push('V4 exam details must be a non-empty array.');
+  if (pediatricFeverWorkflows.length === 0) errors.push('No current pediatric fever workflow found in clinical_workflows.json.');
 
   const seen = new Set();
   let promptCount = 0;
@@ -153,7 +154,7 @@ function main() {
   }
 
   // Check all target workflows are present
-  for (const wf of TARGET_WORKFLOWS) {
+  for (const wf of TARGET_WORKFLOWS.concat(pediatricFeverWorkflows)) {
     if (!workflowsFound.has(wf)) errors.push(`Missing target workflow: ${wf}`);
   }
 
