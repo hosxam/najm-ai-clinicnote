@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Najm AI ClinicNote - Global Shell Header Prototype</title>
+  <style>
+    :root{
+      --radius-xl:16px;
+      --radius-lg:12px;
+      --radius-pill:999px;
+      --shadow-light:0 12px 30px rgba(15,23,42,.10);
+      --shadow-dark:0 18px 38px rgba(2,6,23,.55);
+      --c-cyan:#22d3ee;
+      --c-blue:#0ea5e9;
+      --c-slate-900:#0f172a;
+      --c-slate-700:#334155;
+      --c-slate-400:#94a3b8;
+      --c-slate-300:#cbd5e1;
+      --c-white:#ffffff;
+      --font:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:var(--font);overflow-x:hidden;background:#e9eef5;color:#0f172a}
+    .page{padding:24px 16px 48px;max-width:1280px;margin:0 auto}
+    .title{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#64748b;margin:6px 0 14px}
+
+    .stage{border-radius:22px;padding:20px;border:1px solid rgba(15,23,42,.08);margin-bottom:22px;overflow:hidden;position:relative}
+    .stage.light{background:linear-gradient(180deg,#f6f9fc 0%,#ebf2f8 100%)}
+    .stage.dark{background:radial-gradient(circle at 70% -20%,#17345c 0%,#081028 34%,#040b1a 100%);border-color:rgba(148,163,184,.2)}
+
+    /* hook map: nav[role="navigation"] */
+    .shell-nav{width:100%;border-radius:18px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:8px}
+    .stage.light .shell-nav{background:rgba(255,255,255,.70);border:1px solid rgba(15,23,42,.10);box-shadow:var(--shadow-light)}
+    .stage.dark .shell-nav{background:rgba(10,20,39,.72);border:1px solid rgba(148,163,184,.24);box-shadow:var(--shadow-dark)}
+
+    .nav-inner{display:flex;align-items:center;gap:10px;min-height:64px;padding:0 10px;border-radius:14px}
+    .stage.light .nav-inner{background:rgba(255,255,255,.88);border:1px solid rgba(15,23,42,.06)}
+    .stage.dark .nav-inner{background:rgba(8,17,33,.78);border:1px solid rgba(148,163,184,.2)}
+
+    .nav-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto;cursor:pointer}
+    .logo-mark{
+      width:36px;height:36px;display:grid;place-items:center;flex:0 0 36px;
+    }
+    .logo-mark svg{
+      width:32px;height:32px;stroke:currentColor;stroke-width:1.7;fill:none;
+      stroke-linecap:round;stroke-linejoin:round;
+      filter:drop-shadow(0 3px 10px rgba(14,165,233,.24));
+    }
+    .stage.light .logo-mark{color:#0ea5c8}
+    .stage.dark .logo-mark{color:#67e8f9}
+
+    .wordmark{display:flex;align-items:center;gap:8px}
+    .brand{font-size:30px;font-weight:700;line-height:1;letter-spacing:-.02em}
+    .stage.light .brand{color:var(--c-slate-900)}
+    .stage.dark .brand{color:var(--c-white)}
+
+    .pill{font-size:10px;font-weight:700;padding:3px 7px;border-radius:var(--radius-pill);line-height:1}
+    .stage.light .pill{background:rgba(15,23,42,.04);border:1px solid rgba(15,23,42,.10);color:#475569}
+    .stage.dark .pill{background:rgba(30,41,59,.45);border:1px solid rgba(148,163,184,.20);color:#cbd5e1}
+
+    /* hook map: #navLinks + .nav-links a[data-page] */
+    .nav-links{margin-left:auto;display:flex;align-items:center;gap:6px}
+    .nav-link{font-size:13px;font-weight:600;padding:8px 12px;border-radius:11px;border:1px solid transparent;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:8px}
+    .icon{width:15px;height:15px;display:inline-block;opacity:.95;flex:0 0 auto}
+    .icon svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+    .stage.light .nav-link{color:var(--c-slate-700)}
+    .stage.light .nav-link:hover,.stage.light .nav-link.active{background:rgba(15,23,42,.06);border-color:rgba(15,23,42,.09);color:var(--c-slate-900)}
+    .stage.dark .nav-link{color:var(--c-slate-300)}
+    .stage.dark .nav-link:hover,.stage.dark .nav-link.active{background:rgba(148,163,184,.16);border-color:rgba(148,163,184,.22);color:#f8fafc}
+    .nav-link.cta{border-radius:var(--radius-pill);background:linear-gradient(135deg,var(--c-cyan),var(--c-blue));color:#fff !important;padding:8px 14px}
+
+    .controls{display:flex;align-items:center;gap:8px;margin-left:6px}
+
+    /* hook map: #themeToggle + #themeIcon */
+    .theme-switch{
+      width:58px;height:34px;border-radius:999px;position:relative;
+      border:1px solid transparent;padding:0;background:none;display:inline-flex;align-items:center;justify-content:space-between;
+      padding-inline:8px;
+    }
+    .theme-switch .sun,.theme-switch .moon{font-size:12px;line-height:1;z-index:1;opacity:.85}
+    .theme-switch .knob{position:absolute;top:3px;left:3px;width:26px;height:26px;border-radius:50%;background:#fff;box-shadow:0 2px 10px rgba(2,6,23,.25);transition:left .2s ease}
+    .theme-switch.is-dark .knob{left:29px}
+
+    .stage.light .theme-switch{background:rgba(255,255,255,.96);border-color:rgba(15,23,42,.14);color:#0f172a}
+    .stage.light .theme-switch .sun{color:#0ea5e9}
+    .stage.light .theme-switch .moon{color:#94a3b8}
+
+    .stage.dark .theme-switch{background:rgba(15,23,42,.86);border-color:rgba(148,163,184,.28);color:#e2e8f0}
+    .stage.dark .theme-switch .sun{color:#94a3b8}
+    .stage.dark .theme-switch .moon{color:#22d3ee}
+
+    /* hook map: #navToggle */
+    .hamburger{width:36px;height:36px;border-radius:11px;display:none;place-items:center;border:1px solid transparent;font-size:18px;line-height:1}
+    .stage.light .hamburger{background:rgba(255,255,255,.92);border-color:rgba(15,23,42,.12);color:#0f172a}
+    .stage.dark .hamburger{background:rgba(15,23,42,.80);border-color:rgba(148,163,184,.28);color:#e2e8f0}
+
+    .mobile-note{font-size:12px;color:#64748b;margin-top:10px}
+    .stage.dark .mobile-note{color:#94a3b8}
+
+    .mobile-shell{max-width:360px;margin-top:14px;border-radius:16px;padding:8px}
+    .stage.light .mobile-shell{background:rgba(255,255,255,.72);border:1px solid rgba(15,23,42,.10)}
+    .stage.dark .mobile-shell{background:rgba(9,19,35,.84);border:1px solid rgba(148,163,184,.24)}
+    .mobile-bar{display:flex;align-items:center;gap:8px;min-height:56px}
+    .mobile-bar .brand{font-size:18px}
+
+    .mobile-menu{margin-top:8px;border-radius:14px;padding:8px;display:none;flex-direction:column;gap:6px}
+    .mobile-shell.menu-open .mobile-menu{display:flex}
+    .stage.light .mobile-menu{background:#fff;border:1px solid rgba(15,23,42,.12);box-shadow:0 16px 28px rgba(15,23,42,.14)}
+    .stage.dark .mobile-menu{background:rgba(10,20,37,.96);border:1px solid rgba(148,163,184,.24);box-shadow:0 16px 28px rgba(0,0,0,.45)}
+    .mobile-menu .nav-link{width:100%;justify-content:flex-start}
+
+    @media (max-width:980px){
+      .brand{font-size:24px}
+      .nav-link{font-size:12px;padding:8px 10px}
+    }
+    @media (max-width:768px){
+      .nav-links{display:none}
+      .hamburger{display:grid}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="stage light">
+      <h2 class="title">Light Mode Header</h2>
+
+      <!-- maps to nav[role="navigation"] -->
+      <nav class="shell-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+          <div class="nav-logo">
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3.2L13.95 10.05L20.8 12L13.95 13.95L12 20.8L10.05 13.95L3.2 12L10.05 10.05L12 3.2Z" />
+              </svg>
+            </span>
+            <span class="wordmark">
+              <span class="brand">Najm AI ClinicNote</span>
+              <span class="pill">Beta</span>
+            </span>
+          </div>
+
+          <!-- maps to #navLinks -->
+          <div class="nav-links" id="navLinks">
+            <!-- maps to .nav-links a[data-page] -->
+            <a class="nav-link active" data-page="speed" href="#"><span class="icon"><svg viewBox="0 0 24 24"><path d="M8 4h8M6 8h12M6 12h12M6 16h8"/></svg></span>OPD Notes</a>
+            <a class="nav-link" data-page="advanced-encounter" href="#"><span class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6.5 6.5l2.8 2.8M14.7 14.7l2.8 2.8M17.5 6.5l-2.8 2.8M9.3 14.7l-2.8 2.8"/></svg></span>Advanced Mode</a>
+            <a class="nav-link" data-page="calculators" href="#"><span class="icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2M16 15h0"/></svg></span>Calculators</a>
+            <a class="nav-link" data-page="safety" href="#"><span class="icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></span>Safety</a>
+            <a class="nav-link" data-page="feedback" href="#"><span class="icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H8l-4 4V5z"/></svg></span>Feedback</a>
+          </div>
+
+          <div class="controls">
+            <!-- maps to #themeToggle + #themeIcon -->
+            <button class="theme-switch is-light" id="themeToggle" type="button" aria-label="Toggle theme">
+              <span class="sun" id="themeIcon">☀</span>
+              <span class="moon">☾</span>
+              <span class="knob"></span>
+            </button>
+            <!-- maps to #navToggle -->
+            <button class="hamburger" id="navToggle" type="button" aria-label="Toggle menu">☰</button>
+            <a class="nav-link cta" href="#">Open app ↗</a>
+          </div>
+        </div>
+      </nav>
+
+      <p class="mobile-note">Desktop mockup above. Hamburger is intentionally hidden on desktop.</p>
+
+      <div class="mobile-shell menu-open">
+        <div class="mobile-bar">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2L13.95 10.05L20.8 12L13.95 13.95L12 20.8L10.05 13.95L3.2 12L10.05 10.05L12 3.2Z" /></svg>
+          </span>
+          <span class="brand">Najm AI ClinicNote</span>
+          <button class="theme-switch is-light" aria-label="Toggle theme"><span class="sun">☀</span><span class="moon">☾</span><span class="knob"></span></button>
+          <button class="hamburger" aria-label="Toggle menu" style="display:grid">☰</button>
+        </div>
+        <div class="mobile-menu">
+          <a class="nav-link active" data-page="speed" href="#">OPD Notes</a>
+          <a class="nav-link" data-page="advanced-encounter" href="#">Advanced Mode</a>
+          <a class="nav-link" data-page="calculators" href="#">Calculators</a>
+          <a class="nav-link" data-page="safety" href="#">Safety</a>
+          <a class="nav-link" data-page="feedback" href="#">Feedback</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stage dark">
+      <h2 class="title">Dark Mode Header</h2>
+
+      <nav class="shell-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+          <div class="nav-logo">
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3.2L13.95 10.05L20.8 12L13.95 13.95L12 20.8L10.05 13.95L3.2 12L10.05 10.05L12 3.2Z" />
+              </svg>
+            </span>
+            <span class="wordmark">
+              <span class="brand">Najm AI ClinicNote</span>
+              <span class="pill">Beta</span>
+            </span>
+          </div>
+
+          <div class="nav-links" id="navLinks-dark">
+            <a class="nav-link active" data-page="speed" href="#"><span class="icon"><svg viewBox="0 0 24 24"><path d="M8 4h8M6 8h12M6 12h12M6 16h8"/></svg></span>OPD Notes</a>
+            <a class="nav-link" data-page="advanced-encounter" href="#"><span class="icon"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6.5 6.5l2.8 2.8M14.7 14.7l2.8 2.8M17.5 6.5l-2.8 2.8M9.3 14.7l-2.8 2.8"/></svg></span>Advanced Mode</a>
+            <a class="nav-link" data-page="calculators" href="#"><span class="icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2M16 15h0"/></svg></span>Calculators</a>
+            <a class="nav-link" data-page="safety" href="#"><span class="icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></span>Safety</a>
+            <a class="nav-link" data-page="feedback" href="#"><span class="icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H8l-4 4V5z"/></svg></span>Feedback</a>
+          </div>
+
+          <div class="controls">
+            <button class="theme-switch is-dark" id="themeToggle-dark" type="button" aria-label="Toggle theme">
+              <span class="sun" id="themeIcon-dark">☀</span>
+              <span class="moon">☾</span>
+              <span class="knob"></span>
+            </button>
+            <button class="hamburger" id="navToggle-dark" type="button" aria-label="Toggle menu">☰</button>
+            <a class="nav-link cta" href="#">Open app ↗</a>
+          </div>
+        </div>
+      </nav>
+
+      <p class="mobile-note">Dark mobile dropdown mockup below, open state shown.</p>
+
+      <div class="mobile-shell menu-open">
+        <div class="mobile-bar">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2L13.95 10.05L20.8 12L13.95 13.95L12 20.8L10.05 13.95L3.2 12L10.05 10.05L12 3.2Z" /></svg>
+          </span>
+          <span class="brand">Najm AI ClinicNote</span>
+          <button class="theme-switch is-dark" aria-label="Toggle theme"><span class="sun">☀</span><span class="moon">☾</span><span class="knob"></span></button>
+          <button class="hamburger" aria-label="Toggle menu" style="display:grid">☰</button>
+        </div>
+        <div class="mobile-menu">
+          <a class="nav-link active" data-page="speed" href="#">OPD Notes</a>
+          <a class="nav-link" data-page="advanced-encounter" href="#">Advanced Mode</a>
+          <a class="nav-link" data-page="calculators" href="#">Calculators</a>
+          <a class="nav-link" data-page="safety" href="#">Safety</a>
+          <a class="nav-link" data-page="feedback" href="#">Feedback</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
