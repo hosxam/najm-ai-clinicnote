@@ -7597,6 +7597,73 @@ footer{background:var(--surface);border-top:1px solid var(--border)}
 a{color:var(--cyan)}
 a:hover{color:var(--primary-light)}
 #page-home .stats,section .stats{background:transparent!important;border:none!important;box-shadow:none!important}
+
+/* Approved prototype header transplant */
+html body nav[role="navigation"]{position:sticky;top:0;z-index:1000;background:rgba(7,11,20,.78)!important;border-bottom:1px solid rgba(28,43,63,.55)!important;box-shadow:0 7px 18px rgba(0,0,0,.30)!important;backdrop-filter:blur(18px)!important;-webkit-backdrop-filter:blur(18px)!important;overflow-x:clip;flex-wrap:nowrap}
+html[data-theme="light"] body nav[role="navigation"]{background:rgba(255,255,255,.82)!important;border-bottom:1px solid rgba(219,231,228,.55)!important;box-shadow:0 6px 16px rgba(15,23,42,.04)!important;backdrop-filter:blur(16px)!important;-webkit-backdrop-filter:blur(16px)!important}
+
+html body nav[role="navigation"] .nav-inner{position:relative;max-width:1360px;margin:4px auto 2px;padding:0 12px;min-height:68px;min-width:0;display:grid;grid-template-columns:minmax(260px,auto) minmax(0,1fr) auto;grid-template-rows:1fr;align-items:center;column-gap:8px;border-radius:12px;border:0;background:rgba(9,19,35,.76);box-shadow:0 1px 0 rgba(148,163,184,.18) inset,0 8px 16px rgba(0,0,0,.24)}
+html[data-theme="light"] body nav[role="navigation"] .nav-inner{background:rgba(255,255,255,.78);box-shadow:0 1px 0 rgba(255,255,255,.58) inset,0 8px 16px rgba(15,23,42,.05)}
+
+html body nav[role="navigation"] .nav-logo{grid-column:1;display:inline-flex;align-items:center;gap:8px;min-width:0;flex-shrink:0;color:#e2e8f0;white-space:nowrap}
+html[data-theme="light"] body nav[role="navigation"] .nav-logo{color:#0f172a}
+html body nav[role="navigation"] .nav-logo .star{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;flex:0 0 34px;color:#67e8f9!important;background:none!important;border:0!important;box-shadow:none!important;font-size:0}
+html[data-theme="light"] body nav[role="navigation"] .nav-logo .star{color:#0ea5c8!important}
+html body nav[role="navigation"] .nav-logo .star::after{content:none!important}
+html body nav[role="navigation"] .nav-logo .star svg{width:30px;height:30px;stroke:currentColor;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 3px 10px rgba(14,165,233,.24))}
+html body nav[role="navigation"] .brand-copy{display:flex;flex-direction:column;gap:1px;line-height:1.06;min-width:0;white-space:nowrap}
+html body nav[role="navigation"] .brand-name{font-size:14px;font-weight:900;white-space:nowrap;color:inherit}
+html body nav[role="navigation"] .nav-logo .brand-sub{font-size:9px!important;font-weight:650!important;line-height:1.05!important;letter-spacing:.07em!important;text-transform:uppercase!important;font-family:'Plus Jakarta Sans',sans-serif!important;white-space:nowrap}
+html:not([data-theme="light"]) body nav[role="navigation"] .nav-logo .brand-sub{color:#cbd5e1!important}
+html[data-theme="light"] body nav[role="navigation"] .nav-logo .brand-sub{color:#475569!important}
+html body nav[role="navigation"] .brand-beta{font-size:10px;font-weight:700;padding:3px 6px;border-radius:999px;line-height:1;background:rgba(30,41,59,.45);border:1px solid rgba(148,163,184,.20);color:#cbd5e1;white-space:nowrap;flex-shrink:0}
+html[data-theme="light"] body nav[role="navigation"] .brand-beta{background:rgba(15,23,42,.04);border-color:rgba(15,23,42,.10);color:#475569}
+
+html body nav[role="navigation"] #navLinks{grid-column:2;grid-row:1;display:flex;align-items:center;justify-content:center;gap:4px;min-width:0;width:auto;padding:0!important;margin:0;flex:0 1 auto;flex-wrap:nowrap;white-space:nowrap;overflow:visible}
+html body nav[role="navigation"] .nav-links a{font-size:12px;font-weight:600;padding:7px 9px;border-radius:10px;border:1px solid transparent;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:6px;color:#cbd5e1!important;flex:0 0 auto;line-height:1.1}
+html[data-theme="light"] body nav[role="navigation"] .nav-links a{color:#334155!important}
+html body nav[role="navigation"] .nav-links a:hover,html body nav[role="navigation"] .nav-links a.active{background:rgba(148,163,184,.16);border-color:rgba(148,163,184,.22);color:#f8fafc!important}
+html[data-theme="light"] body nav[role="navigation"] .nav-links a:hover,html[data-theme="light"] body nav[role="navigation"] .nav-links a.active{background:rgba(15,23,42,.06);border-color:rgba(15,23,42,.09);color:#0f172a!important}
+html body nav[role="navigation"] .icon{width:14px;height:14px;display:inline-block;opacity:.95;flex:0 0 auto}
+html body nav[role="navigation"] .icon svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+html body nav[role="navigation"] .nav-right{grid-column:3;grid-row:1;display:flex;align-items:center;gap:8px;min-width:max-content;flex-shrink:0;white-space:nowrap}
+html body nav[role="navigation"] #themeToggle{width:56px;height:32px;border-radius:999px;border:1px solid rgba(148,163,184,.28);background:rgba(15,23,42,.86);color:#e2e8f0;display:inline-flex;align-items:center;justify-content:space-between;padding:0 8px;position:relative;flex-shrink:0}
+html[data-theme="light"] body nav[role="navigation"] #themeToggle{background:rgba(255,255,255,.96);border-color:rgba(15,23,42,.14);color:#0f172a}
+html body nav[role="navigation"] #themeToggle .sun,html body nav[role="navigation"] #themeToggle .moon{font-size:12px;line-height:1;z-index:1;opacity:.85}
+html body nav[role="navigation"] #themeToggle .sun{color:#94a3b8}
+html body nav[role="navigation"] #themeToggle .moon{color:#22d3ee}
+html[data-theme="light"] body nav[role="navigation"] #themeToggle .sun{color:#0ea5e9}
+html[data-theme="light"] body nav[role="navigation"] #themeToggle .moon{color:#94a3b8}
+html body nav[role="navigation"] #themeIcon{position:absolute;top:3px;left:27px;width:24px;height:24px;border-radius:50%;background:#0f172a;box-shadow:0 2px 10px rgba(2,6,23,.25);transition:left .2s ease;font-size:0!important;color:transparent!important;line-height:0!important;overflow:hidden}
+html[data-theme="light"] body nav[role="navigation"] #themeIcon{left:3px;background:#fff}
+
+html body nav[role="navigation"] .nav-cta-desktop{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;background:linear-gradient(135deg,#22d3ee,#0ea5e9)!important;color:#fff!important;padding:7px 12px;border:1px solid transparent;box-shadow:0 10px 20px rgba(14,165,233,.26);white-space:nowrap;text-decoration:none;flex-shrink:0;font-size:12px}
+html body nav[role="navigation"] #navLinks .nav-cta-menu{display:none}
+html body nav[role="navigation"] .nav-toggle{display:none}
+
+@media(max-width:1366px){
+  html body nav[role="navigation"] .nav-inner{grid-template-columns:minmax(250px,auto) minmax(0,1fr) auto;column-gap:6px;padding:0 10px}
+  html body nav[role="navigation"] .nav-logo .brand-sub{display:none}
+  html body nav[role="navigation"] .brand-beta{display:none}
+  html body nav[role="navigation"] .nav-links a{font-size:11.5px;padding:7px 8px;gap:5px}
+}
+
+@media(max-width:1179px){
+  html body nav[role="navigation"] .nav-inner{column-gap:8px;padding:0 10px}
+  html body nav[role="navigation"] .nav-cta-desktop{display:none}
+  html body nav[role="navigation"] .nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;font-size:22px}
+  html body nav[role="navigation"] #navLinks{display:none}
+  html body nav[role="navigation"] #navLinks.open,html body nav[role="navigation"] #navLinks.is-open{display:flex!important;grid-column:1 / -1;grid-row:2;margin:8px 0 10px;flex-direction:column;align-items:stretch;gap:6px;padding:10px!important;border-radius:14px;max-height:calc(100vh - 90px);overflow-y:auto;white-space:normal}
+  html[data-theme="light"] body nav[role="navigation"] #navLinks.open,html[data-theme="light"] body nav[role="navigation"] #navLinks.is-open{background:rgba(255,255,255,.98);border:1px solid rgba(15,23,42,.12);box-shadow:0 18px 34px rgba(15,23,42,.16)}
+  html:not([data-theme="light"]) body nav[role="navigation"] #navLinks.open,html:not([data-theme="light"]) body nav[role="navigation"] #navLinks.is-open{background:rgba(10,20,37,.98);border:1px solid rgba(148,163,184,.26);box-shadow:0 18px 34px rgba(0,0,0,.5)}
+  html body nav[role="navigation"] .nav-links a{width:100%;justify-content:flex-start}
+  html body nav[role="navigation"] #navLinks .nav-cta-menu{display:inline-flex;width:100%;justify-content:center}
+}
+
+@media(max-width:768px){
+  html body nav[role="navigation"] .nav-inner{min-height:64px}
+}
 /* Production UX bugfix: prevent narrow mobile labels from breaking into vertical words. */
 @media(max-width:640px){
   nav,
@@ -7775,7 +7842,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<span class="star">N</span>
+<span class="logo-mark star" aria-hidden="true"><svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12 3.2L13.95 10.05L20.8 12L13.95 13.95L12 20.8L10.05 13.95L3.2 12L10.05 10.05L12 3.2Z"></path></svg></span>
 <span class="brand-copy"><span class="brand-name">Najm AI ClinicNote</span><span class="brand-sub">Clinical documentation workspace</span></span>
 <span class="brand-beta">Beta</span>
 
@@ -7807,8 +7874,11 @@ a:hover{color:var(--primary-light)}
 
 
 
+<div class="nav-right">
+<button class="theme-switch is-dark" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme"><span class="sun">&#9728;</span><span class="moon">&#9790;</span><span class="knob" id="themeIcon" aria-hidden="true"></span></button>
+<a class="nav-cta nav-cta-desktop" href="./advanced/">Start Advanced Mode</a>
 <button class="nav-toggle" id="navToggle" data-mobile-menu-button aria-label="Toggle menu" aria-expanded="false" type="button">&#9776;</button>
-<button id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme"><span id="themeIcon">&#9790;</span></button>
+</div>
 
 
 
@@ -7838,7 +7908,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<a data-page="home" onclick="showPage('home')">Home</a>
+<a class="nav-link" data-page="home" onclick="showPage('home')"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10.5L12 4l8 6.5M6.5 9.5V20h11V9.5"/></svg></span>Home</a>
 
 
 
@@ -7853,22 +7923,17 @@ a:hover{color:var(--primary-light)}
 
 
 
-<a data-page="speed" onclick="showPage('speed')">Quick OPD</a>
+<a class="nav-link" data-page="speed" onclick="showPage('speed')"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8M6 8h12M6 12h12M6 16h8"/></svg></span>Quick OPD</a>
 
 
 
 
-<a href="./advanced/">Advanced Mode</a>
+<a class="nav-link" href="./advanced/"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6.5 6.5l2.8 2.8M14.7 14.7l2.8 2.8M17.5 6.5l-2.8 2.8M9.3 14.7l-2.8 2.8"/></svg></span>Advanced Mode</a>
 
 
 
 
-<a id="reportNavLink" data-page="report" onclick="showPage('report')">Medical Report</a>
-
-
-
-
-
+<a class="nav-link" id="reportNavLink" data-page="report" onclick="showPage('report')"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4h10v16H7zM9 8h6M9 12h6M9 16h4"/></svg></span>Medical Report</a>
 
 
 
@@ -7876,7 +7941,12 @@ a:hover{color:var(--primary-light)}
 
 
 
-<a href="./calculators/">Calculator Tools</a>
+
+
+
+
+
+<a class="nav-link" href="./calculators/">Calculator Tools</a>
 
 
 
@@ -7894,7 +7964,7 @@ a:hover{color:var(--primary-light)}
 
 
 
-<a href="./safety/">Safety</a>
+<a class="nav-link" href="./safety/"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg></span>Safety</a>
 
 
 
@@ -7941,7 +8011,7 @@ a:hover{color:var(--primary-light)}
 
 <a class="nav-mobile-only" href="./changelog/">Changelog</a>
 
-<a class="nav-cta" href="./advanced/">Start Advanced Mode</a>
+<a class="nav-cta nav-cta-menu" href="./advanced/">Start Advanced Mode</a>
 
 
 
