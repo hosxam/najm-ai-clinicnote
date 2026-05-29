@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Medical Report Draft V2 Prototype</title>
+<style>
+:root{--bg:#070d18;--surface:#111b30;--surface2:#0f1a2b;--line:#243a5b;--text:#e8effc;--muted:#9db2d3;--teal:#2dd4bf;--cyan:#38bdf8;--blue:#60a5fa}
+*{box-sizing:border-box}html,body{margin:0;padding:0;overflow-x:hidden}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:radial-gradient(1100px 460px at 8% -12%,#1b3d72 0%,transparent 62%),var(--bg);color:var(--text)}
+.wrap{max-width:1160px;margin:0 auto;padding:18px 16px 42px;display:grid;gap:14px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:14px;background:#0f1d34}.brand{font-weight:800}.tiny{font-size:12px;color:var(--muted)}
+.hero{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:22px;padding:22px;background:linear-gradient(155deg,#0f1a2f,#13243f);box-shadow:0 20px 54px rgba(0,0,0,.35)}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(620px 240px at 12% 0%,rgba(56,189,248,.16),transparent 70%),radial-gradient(530px 220px at 88% 22%,rgba(45,212,191,.14),transparent 72%);pointer-events:none}
+h1{margin:0 0 10px;font-size:40px;line-height:1.05;position:relative;z-index:1} .sub{margin:0;max-width:840px;color:var(--muted);line-height:1.66;position:relative;z-index:1}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;position:relative;z-index:1}.b{padding:7px 11px;border-radius:999px;border:1px solid #2b4468;background:#11233f;color:#b8cae6;font-size:12px;font-weight:700}
+.grid{display:grid;grid-template-columns:1.03fr .97fr;gap:14px}
+.panel{border:1px solid #29415f;border-radius:18px;padding:16px;background:linear-gradient(155deg,var(--surface),var(--surface2));box-shadow:0 14px 34px rgba(0,0,0,.32);animation:reveal .45s ease both}
+.k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#91b8ea;font-weight:800;margin-bottom:8px}
+.row{display:grid;gap:10px}.fg label{display:block;font-size:12px;color:#abc1df;margin-bottom:5px}.fg input,.fg select,.fg textarea{width:100%;min-height:42px;border-radius:12px;border:1px solid #2b4264;background:#101d34;color:var(--text);padding:10px 11px}.fg textarea{min-height:126px;line-height:1.6;resize:vertical}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}.btn{min-height:38px;padding:8px 12px;border-radius:10px;border:1px solid #2a4263;background:#12233e;color:#d6e8ff;font-weight:700;cursor:pointer}.btn.p{background:linear-gradient(135deg,#1ab8b2,#2f9af4);border-color:#2ca6ce}.btn.g{background:transparent;color:#a9c0df}
+.doc{position:relative;border:1px solid #2c476b;border-radius:16px;background:#0d182d;overflow:hidden}.doc-h{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-bottom:1px solid #2a4365;background:#10243f}.pill{font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:4px 8px;border:1px solid #2e4868;border-radius:999px;background:#10253f;color:#9fd8ff;font-weight:800}
+.doc-b{padding:14px;min-height:360px}.empty{border:1px dashed #31507a;border-radius:12px;padding:16px;color:var(--muted);background:#0f2038}
+.report{display:none;line-height:1.7;color:#d8e8ff}.report h3{margin:0 0 8px}.note{margin-top:12px;font-size:12px;color:#9ab0ce}
+.status{height:20px;font-size:12px;color:#9fd8ff}
+@keyframes reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:980px){.grid{grid-template-columns:1fr}h1{font-size:34px}}
+@media(prefers-reduced-motion:reduce){.panel{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><div class="brand">Najm AI ClinicNote</div><div class="tiny">Medical Report V2 Prototype</div></div>
+  <section class="hero">
+    <h1>Medical Report Draft</h1>
+    <p class="sub">Draft referral letters, medical summaries, certificates, and structured reports for clinician review.</p>
+    <div class="badges"><span class="b">Clinician review</span><span class="b">No patient storage</span><span class="b">Copy/export ready</span><span class="b">Doctor-controlled</span></div>
+  </section>
+
+  <section class="grid">
+    <div class="panel">
+      <div class="k">Report setup</div>
+      <div class="row">
+        <div class="fg"><label>Report type</label><select id="demoType"><option>Referral summary</option><option>Medical summary</option><option>Certificate draft</option><option>Structured report</option></select></div>
+        <div class="fg"><label>Purpose / context</label><input id="demoPurpose" placeholder="e.g. documentation summary for specialist review" /></div>
+        <div class="fg"><label>Clinical notes (de-identified)</label><textarea id="demoNotes" placeholder="Enter de-identified clinician notes only"></textarea></div>
+        <div class="fg"><label>Recipient / organization (optional)</label><input id="demoRecipient" placeholder="e.g. specialist clinic" /></div>
+      </div>
+      <div class="actions"><button class="btn p" id="genBtn">Generate draft</button></div>
+      <div class="note">Demo prototype only. Draft for clinician review. Do not enter patient-identifiable data.</div>
+    </div>
+
+    <div class="panel">
+      <div class="k">Document preview</div>
+      <div class="doc">
+        <div class="doc-h"><strong>Draft Preview</strong><span class="pill">Clinician review</span></div>
+        <div class="doc-b">
+          <div class="empty" id="emptyState">No draft yet. Select report type, add de-identified context, then click Generate draft.</div>
+          <div class="report" id="demoReport">
+            <h3>Medical Report Draft</h3>
+            <p><strong>Report type:</strong> <span id="outType">-</span></p>
+            <p><strong>Purpose:</strong> <span id="outPurpose">-</span></p>
+            <p><strong>Recipient/organization:</strong> <span id="outRecipient">Not specified</span></p>
+            <p><strong>Draft body:</strong><br><span id="outBody">-</span></p>
+            <p><strong>Safety note:</strong> Draft for clinician review before any use.</p>
+          </div>
+        </div>
+      </div>
+      <div class="actions" style="margin-top:10px"><button class="btn" data-demo="copy">Copy</button><button class="btn" data-demo="export">Export</button><button class="btn g" data-demo="print">Print</button></div>
+      <div class="status" id="demoStatus"></div>
+    </div>
+  </section>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+$('genBtn').addEventListener('click',()=>{
+  const type=$('demoType').value||'Structured report';
+  const purpose=$('demoPurpose').value.trim()||'Clinical documentation support';
+  const notes=$('demoNotes').value.trim()||'De-identified clinician-entered findings and course summary.';
+  const recipient=$('demoRecipient').value.trim()||'Not specified';
+  $('outType').textContent=type;
+  $('outPurpose').textContent=purpose;
+  $('outRecipient').textContent=recipient;
+  $('outBody').textContent='This is a demo-only de-identified draft preview. ' + notes;
+  $('emptyState').style.display='none';
+  $('demoReport').style.display='block';
+  $('demoStatus').textContent='Draft generated (demo).';
+});
+document.querySelectorAll('[data-demo]').forEach(btn=>btn.addEventListener('click',()=>{
+  const a=btn.getAttribute('data-demo');
+  $('demoStatus').textContent = a==='copy'?'Demo: copy action acknowledged.':a==='export'?'Demo: export action acknowledged.':'Demo: print action acknowledged.';
+}));
+</script>
+</body>
+</html>
