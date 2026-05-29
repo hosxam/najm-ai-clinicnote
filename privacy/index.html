@@ -16,61 +16,26 @@
 </head>
 <body>
 <header class="top"><div class="nav"><a class="brand" href="../">Najm AI ClinicNote</a><div class="nav-links"><a href="../advanced/">Advanced Mode</a><a href="../calculators/">Calculator Tools</a><a href="../safety/">Safety</a><a href="../feedback/">Feedback</a></div></div></header>
-<section class="hero"><div class="hero-inner"><div class="eyebrow">Privacy</div><h1>Privacy</h1><p class="lead">ClinicNote is designed for browser-based, de-identified documentation drafting. This page explains exactly what happens on your device, what does not, and the few small exceptions we disclose openly.</p></div></section>
 <main>
+  <div class="trust-page-shell">
+    <section class="trust-hero">
+      <span class="trust-kicker">Privacy</span>
+      <h1>Privacy-first by design</h1>
+      <p class="lead">ClinicNote is built for de-identified drafting and clinician control. It is designed to avoid patient data collection and unnecessary data transfer.</p>
+    </section>
 
-<section class="card">
-<h2>Plain-English summary</h2>
-<p>ClinicNote runs entirely in your browser. We do not log you in. The site has no server-side storage, no tracking, and no third-party analytics; clinical content you enter is never transmitted off your device. A few small preferences (theme and chip selections, both detailed below) are saved on your own device only via <code>localStorage</code>. All technical exceptions are listed below in full.</p>
-</section>
+    <section class="trust-card-grid">
+      <article class="trust-card"><div class="trust-icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></div><h3>No login required</h3><p>Core drafting workflows are available without creating a user account.</p></article>
+      <article class="trust-card"><div class="trust-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="9" rx="7" ry="3"/><path d="M5 9v6c0 1.7 3.1 3 7 3s7-1.3 7-3V9"/></svg></div><h3>No patient data storage</h3><p>No backend patient record storage is provided by ClinicNote.</p></article>
+      <article class="trust-card"><div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M4 10a8 8 0 0 1 16 0v7a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3z"/><path d="m8 8 8 8"/></svg></div><h3>No audio recording</h3><p>No consultation recording or transcription flow is included.</p></article>
+      <article class="trust-card"><div class="trust-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8"/></svg></div><h3>Browser-based drafting</h3><p>Drafting runs in-browser and copied output remains clinician managed.</p></article>
+      <article class="trust-card"><div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 5-3.2 7.8-7 9-3.8-1.2-7-4-7-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Safe feedback links</h3><p>Feedback actions route to external forms with safe open behavior.</p></article>
+      <article class="trust-card"><div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M6 8h12v8H6z"/><path d="M9 11h6M9 14h4"/></svg></div><h3>De-identification reminder</h3><p>Never enter names, MRNs, numbers, addresses, or direct identifiers.</p></article>
+    </section>
 
-<section class="card">
-<h2>What ClinicNote never does</h2>
-<ul>
-<li>No login or user account.</li>
-<li>No audio recording, upload, or transcription.</li>
-<li>No backend patient data storage. The site has no database and no server-side processing.</li>
-<li>No cookies for tracking or identification.</li>
-<li>No third-party advertising or analytics scripts (no Google Analytics, no Facebook Pixel, no tracking SDKs).</li>
-<li>No clinical text is sent to any server. Notes and generated outputs stay in your browser; small chip-selection preferences may be saved locally for up to 24 hours (see &ldquo;What does happen on your device&rdquo; below).</li>
-<li>No call to any AI model. ClinicNote formats your own input; it does not generate clinical content.</li>
-</ul>
-</section>
-
-<section class="card">
-<h2>What does happen on your device</h2>
-<p>To be transparent, here are the small things the site does that involve storage or external requests:</p>
-<ul>
-<li><strong>Theme preference.</strong> If you toggle between dark and light mode, ClinicNote saves a single value (the word <code>dark</code> or <code>light</code>) in your browser's <code>localStorage</code> so the site remembers your choice next visit.</li>
-<li><strong>Chip selections.</strong> ClinicNote saves your toggled chip selections in your browser's <code>localStorage</code> under keys prefixed <code>cn-chips-</code> (one key per specialty and visit type) so they persist when you switch between workflows or reload the page. Stored values are the chip label texts only &mdash; short clinical templates, never patient data. Each entry auto-expires after 24 hours. No generated output, no rough note, and no patient identifier is stored. The PHI warning still applies: only type de-identified clinical templates into custom-entry fields. To clear immediately, run <code>window.ClinicNoteChipPersistence.clear()</code> in your browser console.</li>
-<li><strong>Google Fonts.</strong> The site loads the Inter typeface from Google's CDN (<code>fonts.googleapis.com</code> and <code>fonts.gstatic.com</code>). This means Google sees that you visited a page on this site and serves the font file. No clinical text is included in this request. If you would prefer to block this, your browser's privacy settings or a content-blocker extension can do so without breaking the site.</li>
-<li><strong>Workflow data.</strong> ClinicNote loads its built-in workflow templates from JSON files hosted on the same site. These requests stay on this domain and contain no patient data — they are static reference content shipped with the site.</li>
-<li><strong>Feedback links.</strong> If you click a feedback button (Suggest a Template, Report a Bug, Scribe Updates), a Google Form opens in a new tab. The fact that you clicked is the only signal Google receives. Anything you type in the form is sent to Google as part of that submission, so do not include patient information there.</li>
-</ul>
-</section>
-
-<section class="card">
-<h2>Do not enter patient identifiers</h2>
-<p>Even though no clinical text leaves your browser, you should still avoid entering identifying data. ClinicNote is for de-identified clinical details only. Do not enter patient names, MRNs, phone numbers, exact dates of birth, Emirates ID numbers, addresses, insurance IDs, or any other identifier that could re-identify a person.</p>
-<p>The site has a built-in PHI warning that flashes if it detects common identifier patterns (phone numbers, email addresses, MRN-like strings, "DOB" mentions, Emirates ID format). The warning is a safety net, not a guarantee. You remain responsible for de-identifying input.</p>
-</section>
-
-<section class="card">
-<h2>Clinician review required</h2>
-<p>Every output is a draft. ClinicNote does not diagnose, recommend treatment, or replace clinical judgment. A licensed clinician must review, edit, and approve every output before it is used in clinical practice or entered into any patient record.</p>
-</section>
-
-<section class="card">
-<h2>Regulatory status</h2>
-<p>ClinicNote is not a medical device, not clinical decision support, and not a substitute for professional evaluation. It is a documentation drafting utility. It is not certified by DHA, MOH, FDA, CE, or any regulator, and it does not seek such certification.</p>
-</section>
-
-<section class="card">
-<h2>Contact</h2>
-<p>If you have a privacy question, want to report something that looks wrong, or just want to talk to the person who built this, the fastest channel is WhatsApp at <a href="https://wa.me/971502495662" target="_blank" rel="noopener noreferrer">+971 50 249 5662</a>. You can also use the <a href="../feedback/">feedback page</a> for structured suggestions and bug reports.</p>
-</section>
-
-<div class="cta-row"><a class="btn" href="../">Open ClinicNote</a><a class="btn secondary" href="../safety/">Read Safety</a></div>
+    <div class="trust-warning"><strong>Important:</strong> ClinicNote is for de-identified clinical drafting only. A licensed clinician must review and approve every final output before use.</div>
+    <div class="trust-links"><a class="btn" href="../">Open ClinicNote</a><a class="btn secondary" href="../safety/">Read Safety</a></div>
+  </div>
 </main>
 <footer><a href="../">Main app</a> | <a href="../advanced/">Advanced Mode</a> | <a href="../calculators/">Calculator Tools</a> | <a href="../safety/">Safety</a> | <a href="../feedback/">Feedback</a> | <a href="../changelog/">Changelog</a> | <a href="https://wa.me/971502495662" target="_blank" rel="noopener noreferrer">WhatsApp</a><br>ClinicNote is a documentation assistance tool. Not a medical device.</footer>
 <script defer src="../seo-page-mobile-nav.js"></script></body>

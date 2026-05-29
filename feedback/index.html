@@ -14,45 +14,43 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="../seo-page.css?v=dark-futurism">
-<style>
-.feedback-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:22px}
-.feedback-card{background:var(--bg-surface);border:1px solid var(--bg-border);border-radius:14px;padding:20px;box-shadow:var(--shadow-md)}
-.feedback-card h2{font-size:20px;margin-bottom:8px}
-.feedback-card p{font-size:14px;color:var(--text-secondary);line-height:1.6}
-.form-warning{font-size:13px;font-weight:700;color:var(--accent-secondary);margin:12px 0}
-.form-disabled{opacity:.7;cursor:not-allowed}
-.form-coming-soon{font-size:12px;color:var(--text-tertiary);margin-top:8px}
-@media(max-width:850px){.feedback-grid{grid-template-columns:1fr}}
-</style>
 </head>
 <body>
 <header class="top"><div class="nav"><a class="brand" href="../">Najm AI ClinicNote</a><div class="nav-links"><a href="../advanced/">Advanced Mode</a><a href="../calculators/">Calculator Tools</a><a href="../privacy/">Privacy</a><a href="../safety/">Safety</a></div></div></header>
-<section class="hero"><div class="hero-inner"><div class="eyebrow">Feedback</div><h1>Feedback, template requests, and Scribe interest</h1><p class="lead">Use safe external Google Forms links for non-clinical feedback, template requests, bug reports, and future Najm AI Scribe updates.</p></div></section>
 <main>
-<section class="safety"><strong>Do not submit patient-identifiable information.</strong> Do not include names, MRNs, phone numbers, exact dates of birth, Emirates ID, addresses, insurance IDs, clinical notes, generated outputs, screenshots containing patient data, or consultation recordings.</section>
-<section class="feedback-grid">
-<article class="feedback-card">
-<h2>Suggest a Template</h2>
-<p>Tell us which specialty, complaint, workflow, or output format ClinicNote should support next.</p>
-<div class="form-warning">Do not submit patient-identifiable information.</div>
-<div data-form-key="templateRequest" data-form-label="Suggest a Template" data-form-event="template_request_clicked" data-source-page="feedback_static" data-cta-location="feedback_template_card"></div>
-</article>
-<article class="feedback-card">
-<h2>Report a Bug</h2>
-<p>Report a technical issue without including clinical notes, generated outputs, screenshots with patient data, or identifiers.</p>
-<div class="form-warning">Do not submit patient-identifiable information.</div>
-<div data-form-key="bugReport" data-form-label="Report a Bug" data-form-event="feedback_clicked" data-source-page="feedback_static" data-cta-location="feedback_bug_card"></div>
-</article>
-<article class="feedback-card">
-<h2>Najm AI Scribe Updates</h2>
-<p>Interested in the future Najm AI Scribe? Join the update list.</p>
-<p>Najm AI Scribe is a future product direction. ClinicNote is the free documentation utility available today. Join updates if you want to follow future Scribe development, research, or pilot opportunities.</p>
-<div class="form-warning">Do not submit patient data, consultation recordings, clinical notes, or patient-identifiable information.</div>
-<div data-form-key="scribeInterest" data-form-label="Join Scribe Updates" data-form-event="future_scribe_interest_clicked" data-source-page="feedback_static" data-cta-location="feedback_scribe_card"></div>
-</article>
-</section>
-<section class="card"><h2>Current form status</h2><p>Feedback, bug report, and Scribe update forms are live through external Google Forms. Do not include patient information or clinical content in any form.</p></section>
-<div class="cta-row"><a class="btn" href="../">Open ClinicNote</a><a class="btn secondary" href="../privacy/">Read Privacy</a></div>
+  <div class="trust-page-shell">
+    <section class="trust-hero">
+      <span class="trust-kicker">Feedback</span>
+      <h1>Help shape Najm AI ClinicNote</h1>
+      <p class="lead">Use safe external forms for product feedback, bug reports, and future Scribe updates. Keep submissions fully de-identified.</p>
+    </section>
+
+    <section class="trust-warning"><strong>Do not submit patient-identifiable information.</strong> Do not include names, MRNs, phone numbers, dates of birth, IDs, addresses, insurance IDs, clinical notes, generated outputs, screenshots with patient data, or consultation recordings.</section>
+
+    <section class="trust-actions trust-card-grid">
+      <article class="trust-action-card">
+        <h3>Request a template</h3>
+        <p>Tell us which specialty, complaint, workflow, or output format should be added next.</p>
+        <div class="trust-warning" style="margin-top:12px">No patient-identifiable information.</div>
+        <div data-form-key="templateRequest" data-form-label="Suggest a Template" data-form-event="template_request_clicked" data-source-page="feedback_static" data-cta-location="feedback_template_card"></div>
+      </article>
+      <article class="trust-action-card">
+        <h3>Report a bug</h3>
+        <p>Report technical issues without clinical notes, screenshots with patient data, or identifiers.</p>
+        <div class="trust-warning" style="margin-top:12px">No patient-identifiable information.</div>
+        <div data-form-key="bugReport" data-form-label="Report a Bug" data-form-event="feedback_clicked" data-source-page="feedback_static" data-cta-location="feedback_bug_card"></div>
+      </article>
+      <article class="trust-action-card">
+        <h3>Join Scribe waitlist</h3>
+        <p>Join updates for future Najm AI Scribe research, pilot opportunities, and launch announcements.</p>
+        <div class="trust-warning" style="margin-top:12px">No patient data, no recordings, no clinical notes.</div>
+        <div data-form-key="scribeInterest" data-form-label="Join Scribe Updates" data-form-event="future_scribe_interest_clicked" data-source-page="feedback_static" data-cta-location="feedback_scribe_card"></div>
+      </article>
+    </section>
+
+    <section class="trust-card"><h2>Current form status</h2><p>Feedback, bug report, and Scribe update forms are live through external Google Forms. Do not include patient information or clinical content in any form.</p></section>
+    <div class="trust-links"><a class="btn" href="../">Open ClinicNote</a><a class="btn secondary" href="../privacy/">Read Privacy</a></div>
+  </div>
 </main>
 <footer><a href="../">Main app</a> | <a href="../advanced/">Advanced Mode</a> | <a href="../calculators/">Calculator Tools</a> | <a href="../privacy/">Privacy</a> | <a href="../safety/">Safety</a> | <a href="../changelog/">Changelog</a> | <a href="../feedback/">Feedback</a> | <a href="https://wa.me/971502495662" target="_blank" rel="noopener noreferrer">WhatsApp</a><br>Built by Hossam Abdelmageed in Dubai. ClinicNote is a documentation assistance tool. Not a medical device.</footer>
 <script src="../analytics-safe.js?v=privacy-dry-run"></script>
@@ -60,7 +58,7 @@
 <script>
 function formReady(url){return !!(url&&url.indexOf("PASTE_GOOGLE_FORM_URL_HERE")<0&&/^https:\/\/(docs\.google\.com\/forms\/|forms\.gle\/)/i.test(url))}
 function trackForm(eventName,sourcePage,ctaLocation){if(window.ClinicNoteAnalytics&&typeof window.ClinicNoteAnalytics.trackSafeEvent==="function"){window.ClinicNoteAnalytics.trackSafeEvent(eventName||"feedback_clicked",{source_page:sourcePage||"feedback_static",cta_location:ctaLocation||"unknown",data_mode:"static"})}}
-function renderForms(){var config=window.CLINICNOTE_FORMS||{};var slots=document.querySelectorAll("[data-form-key]");for(var i=0;i<slots.length;i++){var slot=slots[i];var key=slot.getAttribute("data-form-key");var label=slot.getAttribute("data-form-label")||"Open form";var eventName=slot.getAttribute("data-form-event")||"feedback_clicked";var sourcePage=slot.getAttribute("data-source-page")||"feedback_static";var ctaLocation=slot.getAttribute("data-cta-location")||"unknown";var url=config[key]||"";slot.innerHTML="";if(formReady(url)){var a=document.createElement("a");a.className="btn";a.href=url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=label;a.onclick=(function(ev,src,loc){return function(){trackForm(ev,src,loc)}})(eventName,sourcePage,ctaLocation);slot.appendChild(a)}else{var btn=document.createElement("button");btn.className="btn secondary form-disabled";btn.type="button";btn.disabled=true;btn.textContent="Form temporarily unavailable";slot.appendChild(btn);var note=document.createElement("div");note.className="form-coming-soon";note.textContent=label+" is temporarily unavailable. Please try again later.";slot.appendChild(note)}}}
+function renderForms(){var config=window.CLINICNOTE_FORMS||{};var slots=document.querySelectorAll("[data-form-key]");for(var i=0;i<slots.length;i++){var slot=slots[i];var key=slot.getAttribute("data-form-key");var label=slot.getAttribute("data-form-label")||"Open form";var eventName=slot.getAttribute("data-form-event")||"feedback_clicked";var sourcePage=slot.getAttribute("data-source-page")||"feedback_static";var ctaLocation=slot.getAttribute("data-cta-location")||"unknown";var url=config[key]||"";slot.innerHTML="";if(formReady(url)){var a=document.createElement("a");a.className="btn";a.href=url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=label;a.onclick=(function(ev,src,loc){return function(){trackForm(ev,src,loc)}})(eventName,sourcePage,ctaLocation);slot.appendChild(a)}else{var btn=document.createElement("button");btn.className="btn secondary";btn.type="button";btn.disabled=true;btn.textContent="Form temporarily unavailable";slot.appendChild(btn);var note=document.createElement("div");note.className="trust-note";note.style.marginTop="8px";note.textContent=label+" is temporarily unavailable. Please try again later.";slot.appendChild(note)}}}
 document.addEventListener("DOMContentLoaded",renderForms);
 </script>
 <script defer src="../seo-page-mobile-nav.js"></script></body>
